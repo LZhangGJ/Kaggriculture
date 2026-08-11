@@ -83,7 +83,9 @@ def main() -> None:
             env.state.shed[:, :, 0] = args.steps * args.market_quantity + 64
 
     prepare_state()
-    for _ in range(3):
+    # Exercise the no-demand, shop-demand, and town-center phases before timing;
+    # Triton specializes these branches and caches each variant separately.
+    for _ in range(config.town_center_sell_interval + 1):
         env.step(actions)
     env.reset()
     prepare_state()

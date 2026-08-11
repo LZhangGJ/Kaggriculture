@@ -482,6 +482,56 @@ if TRITON_AVAILABLE:
         tl.store(money_ptr + env * 2 + 1, money1, mask=valid_env)
 
 
+    @triton.jit
+    def _town_consume_kernel(
+        market_inventory_ptr,
+        market_prices_ptr,
+        shop_counts_ptr,
+        shop_demand_ptr,
+        base_ptr,
+        scale_ptr,
+        below_func_ptr,
+        below_target_ptr,
+        above_func_ptr,
+        above_target_ptr,
+        env_count,
+        SHOP_ACTIVE: tl.constexpr,
+        CENTER_ACTIVE: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        SHOP_COUNT: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        lane = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = lane < env_count * ITEM_COUNT
+        env = lane // ITEM_COUNT
+        item = lane - env * ITEM_COUNT
+        inventory = tl.load(market_inventory_ptr + lane, mask=valid, other=10000).to(tl.int32)
+
+        if SHOP_ACTIVE:
+            demand = tl.zeros((BLOCK,), tl.int32)
+            for shop in tl.static_range(0, SHOP_COUNT):
+                count = tl.load(shop_counts_ptr + env * SHOP_COUNT + shop, mask=valid, other=0).to(tl.int32)
+                units = tl.load(shop_demand_ptr + shop * ITEM_COUNT + item, mask=valid, other=0).to(tl.int32)
+                demand += count * units
+            inventory -= demand
+        if CENTER_ACTIVE:
+            inventory -= 1
+            inventory += tl.where(item == 8, 1, 0)
+        tl.store(market_inventory_ptr + lane, inventory, mask=valid)
+
+        price = _market_quote(
+            item,
+            inventory,
+            base_ptr,
+            scale_ptr,
+            below_func_ptr,
+            below_target_ptr,
+            above_func_ptr,
+            above_target_ptr,
+        )
+        tl.store(market_prices_ptr + lane, price, mask=valid)
+
+
 def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int, day: int, max_units: int) -> None:
     """Run supported operations for one unit slot on the current CUDA stream."""
     if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
@@ -584,5 +634,31 @@ def run_dynamic_market(state, actions, engine, order: int, rounds: int) -> None:
         MARKET_ORDERS=engine.config.max_market_orders,
         ITEM_COUNT=12,
         SHED_CAPACITY=engine.config.shed_capacity,
+        BLOCK=block,
+    )
+
+
+def run_town_consume(state, engine, *, shop_active: bool, center_active: bool) -> None:
+    """Apply town demand and refresh all product prices in one launch."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 256
+    item_count = 9
+    _town_consume_kernel[(triton.cdiv(engine.num_envs * item_count, block),)](
+        state.market_inventory,
+        state.market_prices,
+        state.shop_counts,
+        engine.shop_demand,
+        engine.market_base,
+        engine.market_t,
+        engine.market_below_func,
+        engine.market_below_target,
+        engine.market_above_func,
+        engine.market_above_target,
+        engine.num_envs,
+        SHOP_ACTIVE=shop_active,
+        CENTER_ACTIVE=center_active,
+        ITEM_COUNT=item_count,
+        SHOP_COUNT=8,
         BLOCK=block,
     )

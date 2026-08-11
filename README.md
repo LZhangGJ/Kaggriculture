@@ -117,15 +117,15 @@ job owned most of the card:
 
 | Batch | Hands/player | Workload | Equivalent 720-turn games/s |
 |---:|---:|---|---:|
-| 16,384 | 16 | all units move, 700-turn run | 9,485.4 |
-| 16,384 | 16 | farmer interacts, all hands move, 700-turn run | 8,049.6 |
+| 16,384 | 16 | all units move, 700-turn run | 10,620.7 |
+| 16,384 | 16 | farmer interacts, all hands move, 700-turn run | 10,354.2 |
 | 16,384 | 16 | movement + one seed order every turn | 2,951.3 |
 | 16,384 | 16 | every unit performs a fused board interaction | 7,699.6 |
 | 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
 | 16,384 | 16 | every unit performs DROP | 1,119.5 |
 | 16,384 | 16 | every unit performs PLACE | 903.5 |
-| 16,384 | 0 | buy 16 dynamically priced products per turn | 2,318.2 |
-| 16,384 | 0 | sell 16 dynamically priced products per turn | 2,400.6 |
+| 16,384 | 0 | buy 16 dynamically priced products per turn | 3,005.4 |
+| 16,384 | 0 | sell 16 dynamically priced products per turn | 3,134.8 |
 
 Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
@@ -135,10 +135,12 @@ variants so they do not inflate the common board kernel. Fixed-price seed and an
 orders are settled in a single exact batch. Dynamically priced product buys and
 sales fuse up to 16 sequential quotes and settlements into one Triton launch while
 preserving the official shared pre-settlement price snapshot for both players. The
-figures measure transitions only and exclude policy-network inference/training.
+town-demand update and all nine price refreshes share one phase-specialized Triton
+launch. The figures measure transitions only and exclude policy-network
+inference/training.
 
 Against the optimized 8-process CPU runner at 57.25 games/s, the long-run movement
-profile is about 166x faster, the mixed profile about 141x faster, and the fused
+profile is about 186x faster, the mixed profile about 181x faster, and the fused
 all-interaction profile about 134x faster. The first invocation JIT-compiles and
 caches Triton kernels; benchmark warm-up excludes this one-time cost. The dynamic
 market kernels can take several minutes to compile for a new fixed batch/configuration,

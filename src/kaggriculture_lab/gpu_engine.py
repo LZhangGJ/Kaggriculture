@@ -26,6 +26,7 @@ from .triton_ops import (
     run_common_interactions,
     run_dynamic_market,
     run_inventory_interactions,
+    run_town_consume,
 )
 
 
@@ -772,7 +773,6 @@ class CudaKaggricultureEnv:
                 continue
             if self.use_triton:
                 run_dynamic_market(s, actions, self, order, dynamic_rounds)
-                self._refresh_prices()
                 continue
             for _ in range(dynamic_rounds):
                 active = remaining > 0
@@ -829,11 +829,18 @@ class CudaKaggricultureEnv:
                     p_remaining = torch.where(p_buy_animal, torch.where(success, p_remaining - 1, torch.zeros_like(p_remaining)), p_remaining)
                     malformed = active[:, player] & ~(p_sell | p_buy_product | p_buy_seed | p_buy_animal)
                     remaining[:, player] = torch.where(malformed, torch.zeros_like(p_remaining), p_remaining)
-            self._refresh_prices()
 
     def _town_consume(self) -> None:
         s = self.state
         cfg = self.config
+        if self.use_triton:
+            run_town_consume(
+                s,
+                self,
+                shop_active=self.step_index % cfg.town_shop_sell_interval == 0,
+                center_active=self.step_index % cfg.town_center_sell_interval == 0,
+            )
+            return
         if self.step_index % cfg.town_shop_sell_interval == 0:
             demand = (s.shop_counts.long().unsqueeze(-1) * self.shop_demand.unsqueeze(0)).sum(dim=1)
             s.market_inventory -= demand.to(s.market_inventory.dtype)
