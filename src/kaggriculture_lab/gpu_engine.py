@@ -24,6 +24,7 @@ from .triton_ops import (
     INVENTORY_UNIT_OPS,
     TRITON_AVAILABLE,
     run_common_interactions,
+    run_dynamic_market,
     run_inventory_interactions,
 )
 
@@ -766,12 +767,15 @@ class CudaKaggricultureEnv:
 
             dynamic_order = (op == M_BUY_PRODUCT) | (op == M_SELL)
             remaining = torch.where(dynamic_order, quantity, torch.zeros_like(quantity))
-            if not remaining.any().item():
+            dynamic_rounds = int(remaining.max().item())
+            if dynamic_rounds == 0:
                 continue
-            for _ in range(cfg.max_market_quantity):
+            if self.use_triton:
+                run_dynamic_market(s, actions, self, order, dynamic_rounds)
+                self._refresh_prices()
+                continue
+            for _ in range(dynamic_rounds):
                 active = remaining > 0
-                if not active.any().item():
-                    break
                 product_arg = arg.clamp(0, len(PRODUCTS) - 1)
                 inventory = s.market_inventory.gather(1, product_arg).reshape(self.num_envs, 2)
                 quoted = torch.zeros_like(s.money)

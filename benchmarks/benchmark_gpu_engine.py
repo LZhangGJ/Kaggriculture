@@ -7,7 +7,18 @@ import time
 
 import torch
 
-from kaggriculture_lab.gpu_engine import CudaKaggricultureEnv, GpuEngineConfig, M_BUY_SEED, U_DIG, U_DROP, U_EAST, U_PICKUP, U_PLACE
+from kaggriculture_lab.gpu_engine import (
+    CudaKaggricultureEnv,
+    GpuEngineConfig,
+    M_BUY_PRODUCT,
+    M_BUY_SEED,
+    M_SELL,
+    U_DIG,
+    U_DROP,
+    U_EAST,
+    U_PICKUP,
+    U_PLACE,
+)
 
 
 def main() -> None:
@@ -17,7 +28,9 @@ def main() -> None:
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--market-quantity", type=int, default=16)
     parser.add_argument(
-        "--profile", choices=("pass", "move", "mixed", "interact", "pickup", "drop", "place", "market"), default="move"
+        "--profile",
+        choices=("pass", "move", "mixed", "interact", "pickup", "drop", "place", "market", "buyproduct", "sell"),
+        default="move",
     )
     parser.add_argument("--hands", type=int, default=0, help="active hired hands per player")
     parser.add_argument("--no-triton", action="store_true", help="disable fused Triton interaction kernels")
@@ -28,11 +41,13 @@ def main() -> None:
     config = GpuEngineConfig(
         max_market_orders=2,
         max_market_quantity=args.market_quantity,
+        starting_money=1_000_000_000 if args.profile == "buyproduct" else 3000,
+        shed_capacity=100_000 if args.profile == "buyproduct" else 100,
         use_triton=not args.no_triton,
     )
     env = CudaKaggricultureEnv(args.envs, device=args.device, config=config)
     actions = env.empty_actions()
-    if args.profile in ("move", "market"):
+    if args.profile in ("move", "market", "buyproduct", "sell"):
         actions.unit_ops[:, :, : args.hands + 1] = U_EAST
     elif args.profile == "mixed":
         actions.unit_ops[:, :, 0] = U_DIG
@@ -48,6 +63,12 @@ def main() -> None:
     if args.profile == "market":
         actions.market_ops[:, :, 0] = M_BUY_SEED
         actions.market_quantities[:, :, 0] = 1
+    elif args.profile == "buyproduct":
+        actions.market_ops[:, :, 0] = M_BUY_PRODUCT
+        actions.market_quantities[:, :, 0] = args.market_quantity
+    elif args.profile == "sell":
+        actions.market_ops[:, :, 0] = M_SELL
+        actions.market_quantities[:, :, 0] = args.market_quantity
     def prepare_state() -> None:
         if args.hands:
             env.state.hands_count.fill_(args.hands)
@@ -58,6 +79,8 @@ def main() -> None:
             env.state.shed[:, :, 0] = config.shed_capacity
         elif args.profile in ("drop", "place"):
             env.state.unit_inventory[:, :, : args.hands + 1, 0] = config.shed_capacity
+        elif args.profile == "sell":
+            env.state.shed[:, :, 0] = args.steps * args.market_quantity + 64
 
     prepare_state()
     for _ in range(3):

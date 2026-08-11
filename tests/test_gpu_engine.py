@@ -16,6 +16,8 @@ from kaggriculture_lab.gpu_engine import (
     EMPTY,
     GpuEngineConfig,
     LOCKED,
+    M_BUY_PRODUCT,
+    M_SELL,
     PASTURE,
     PLANT_BASE,
     PRODUCT_INDEX,
@@ -342,3 +344,41 @@ def test_triton_inventory_and_animal_placement_match_cpu_tensor_engine():
     cpu.step(cpu_place_shed)
     gpu.step(gpu_place_shed)
     compare("place shed")
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_dynamic_market_matches_cpu_tensor_engine():
+    config = GpuEngineConfig(
+        episode_steps=48,
+        starting_money=10_000,
+        weed_spawn_chance=0.0,
+        town_shop_unlock_interval=1000,
+        max_market_orders=2,
+        max_market_quantity=16,
+    )
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[71, 72])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[71, 72])
+    cpu.state.shed[:, :, 0] = 24
+    gpu.state.shed[:, :, 0] = 24
+    cpu.state.shed[:, :, PRODUCT_INDEX["FERTILIZER"]] = 16
+    gpu.state.shed[:, :, PRODUCT_INDEX["FERTILIZER"]] = 16
+
+    def compare(label):
+        for field in fields(type(cpu.state)):
+            expected = getattr(cpu.state, field.name)
+            actual = getattr(gpu.state, field.name).cpu()
+            assert torch.equal(actual, expected), f"{label}: mismatch in {field.name}"
+
+    for step, product in enumerate((0, PRODUCT_INDEX["FERTILIZER"], 0)):
+        cpu_actions, gpu_actions = cpu.empty_actions(), gpu.empty_actions()
+        cpu_actions.market_ops[:, 0, 0] = M_SELL
+        gpu_actions.market_ops[:, 0, 0] = M_SELL
+        cpu_actions.market_ops[:, 1, 0] = M_BUY_PRODUCT
+        gpu_actions.market_ops[:, 1, 0] = M_BUY_PRODUCT
+        cpu_actions.market_args[:, :, 0] = product
+        gpu_actions.market_args[:, :, 0] = product
+        cpu_actions.market_quantities[:, :, 0] = 16
+        gpu_actions.market_quantities[:, :, 0] = 16
+        cpu.step(cpu_actions)
+        gpu.step(gpu_actions)
+        compare(f"dynamic market step {step}")

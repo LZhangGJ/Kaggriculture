@@ -107,7 +107,7 @@ environment is `.venv`, backed by PyTorch 2.5.1 + CUDA 11.8 from the existing
 ```bash
 cd /homes/lzhang/Kaggriculture
 CUDA_VISIBLE_DEVICES=1 PYTHONNOUSERSITE=1 PYTHONPATH=$PWD/src \
-TRITON_CACHE_DIR=/tmp/lzhang-kaggriculture-triton-v4 \
+TRITON_CACHE_DIR=/tmp/lzhang-kaggriculture-triton-v6 \
   .venv/bin/python benchmarks/benchmark_gpu_engine.py \
   --envs 16384 --steps 700 --device cuda --profile mixed --hands 16
 ```
@@ -124,20 +124,25 @@ job owned most of the card:
 | 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
 | 16,384 | 16 | every unit performs DROP | 1,119.5 |
 | 16,384 | 16 | every unit performs PLACE | 903.5 |
+| 16,384 | 0 | buy 16 dynamically priced products per turn | 2,318.2 |
+| 16,384 | 0 | sell 16 dynamically priced products per turn | 2,400.6 |
 
 Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
 FEED, COLLECT, CARE, and PLANT run through one optional Triton kernel per active
 unit slot. DROP, PICKUP, and PLACE use separate operation-specialized Triton
 variants so they do not inflate the common board kernel. Fixed-price seed and animal
-orders are settled in a single exact batch; dynamically priced product buys and
-sales retain per-unit matching. The figures measure transitions only and exclude
-policy-network inference/training.
+orders are settled in a single exact batch. Dynamically priced product buys and
+sales fuse up to 16 sequential quotes and settlements into one Triton launch while
+preserving the official shared pre-settlement price snapshot for both players. The
+figures measure transitions only and exclude policy-network inference/training.
 
 Against the optimized 8-process CPU runner at 57.25 games/s, the long-run movement
 profile is about 166x faster, the mixed profile about 141x faster, and the fused
 all-interaction profile about 134x faster. The first invocation JIT-compiles and
-caches Triton kernels; benchmark warm-up excludes this one-time cost.
+caches Triton kernels; benchmark warm-up excludes this one-time cost. The dynamic
+market kernels can take several minutes to compile for a new fixed batch/configuration,
+so long-running actors should reuse `TRITON_CACHE_DIR`.
 
 ## Verification and benchmark
 

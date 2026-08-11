@@ -280,6 +280,208 @@ if TRITON_AVAILABLE:
                 tl.store(shed_ptr + shed_offset, shed_item + place_amount, mask=place_shed)
 
 
+    @triton.jit
+    def _market_shape(code, x):
+        x = tl.maximum(x, 0.0)
+        return tl.where(code == 0, x, tl.where(code == 1, x * x, tl.where(code == 2, tl.sqrt(x), tl.log(x + 1.0))))
+
+
+    @triton.jit
+    def _market_quote(
+        item,
+        inventory,
+        base_ptr,
+        scale_ptr,
+        below_func_ptr,
+        below_target_ptr,
+        above_func_ptr,
+        above_target_ptr,
+    ):
+        below = inventory < 10000
+        base = tl.load(base_ptr + item).to(tl.float32)
+        scale = tl.load(scale_ptr + item).to(tl.float32)
+        func = tl.where(below, tl.load(below_func_ptr + item), tl.load(above_func_ptr + item))
+        target = tl.where(below, tl.load(below_target_ptr + item), tl.load(above_target_ptr + item)).to(tl.float32)
+        distance = tl.abs(inventory.to(tl.float32) - 10000.0)
+        amplitude = target * base / _market_shape(func, scale)
+        price = tl.where(below, base + amplitude * _market_shape(func, distance), base - amplitude * _market_shape(func, distance))
+        return tl.maximum(tl.floor(price + 0.5), 1.0)
+
+
+    @triton.jit
+    def _dynamic_market_player(
+        env,
+        valid_env,
+        player: tl.constexpr,
+        order: tl.constexpr,
+        quote,
+        remaining,
+        money,
+        shed_total,
+        op_ptr,
+        arg_ptr,
+        market_inventory_ptr,
+        shed_ptr,
+        base_ptr,
+        scale_ptr,
+        below_func_ptr,
+        below_target_ptr,
+        above_func_ptr,
+        above_target_ptr,
+        MARKET_ORDERS: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        SHED_CAPACITY: tl.constexpr,
+    ):
+        action_offset = (env * 2 + player) * MARKET_ORDERS + order
+        op = tl.load(op_ptr + action_offset, mask=valid_env, other=0)
+        arg = tl.load(arg_ptr + action_offset, mask=valid_env, other=0).to(tl.int32)
+        item = tl.maximum(0, tl.minimum(arg, 8))
+        inventory_offset = env * 9 + item
+        inventory = tl.load(market_inventory_ptr + inventory_offset, mask=valid_env, other=10000).to(tl.int32)
+        shed_offset = (env * 2 + player) * ITEM_COUNT + item
+        held = tl.load(shed_ptr + shed_offset, mask=valid_env, other=0).to(tl.int32)
+        active = valid_env & (remaining > 0)
+
+        sell = active & (op == 6) & (arg >= 0) & (arg < 9)
+        sell_success = sell & (held > 0)
+        tl.store(shed_ptr + shed_offset, held - 1, mask=sell_success)
+        inventory_after_sell = inventory + tl.where(sell_success & (quote > 1), 1, 0)
+        tl.store(market_inventory_ptr + inventory_offset, inventory_after_sell, mask=sell_success & (quote > 1))
+        money += tl.where(sell_success, quote, 0.0)
+        shed_total -= tl.where(sell_success, 1, 0)
+        remaining = tl.where(sell, tl.where(sell_success, remaining - 1, 0), remaining)
+
+        inventory = tl.where(sell_success & (quote > 1), inventory_after_sell, inventory)
+        buy = active & (op == 4) & ((arg == 0) | (arg == 8))
+        buy_success = buy & (shed_total < SHED_CAPACITY) & (money >= quote)
+        held_after_sell = held - tl.where(sell_success, 1, 0)
+        tl.store(shed_ptr + shed_offset, held_after_sell + 1, mask=buy_success)
+        tl.store(market_inventory_ptr + inventory_offset, inventory - 1, mask=buy_success)
+        money -= tl.where(buy_success, quote, 0.0)
+        shed_total += tl.where(buy_success, 1, 0)
+        remaining = tl.where(buy, tl.where(buy_success, remaining - 1, 0), remaining)
+        malformed = active & ~sell & ~buy
+        remaining = tl.where(malformed, 0, remaining)
+        return remaining, money, shed_total
+
+
+    @triton.jit
+    def _dynamic_market_kernel(
+        op_ptr,
+        arg_ptr,
+        quantity_ptr,
+        money_ptr,
+        market_inventory_ptr,
+        shed_ptr,
+        base_ptr,
+        scale_ptr,
+        below_func_ptr,
+        below_target_ptr,
+        above_func_ptr,
+        above_target_ptr,
+        env_count,
+        ORDER: tl.constexpr,
+        ROUNDS: tl.constexpr,
+        MARKET_ORDERS: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        SHED_CAPACITY: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        env = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid_env = env < env_count
+        offset0 = (env * 2) * MARKET_ORDERS + ORDER
+        offset1 = (env * 2 + 1) * MARKET_ORDERS + ORDER
+        op0 = tl.load(op_ptr + offset0, mask=valid_env, other=0)
+        op1 = tl.load(op_ptr + offset1, mask=valid_env, other=0)
+        arg0 = tl.load(arg_ptr + offset0, mask=valid_env, other=0).to(tl.int32)
+        arg1 = tl.load(arg_ptr + offset1, mask=valid_env, other=0).to(tl.int32)
+        item0 = tl.maximum(0, tl.minimum(arg0, 8))
+        item1 = tl.maximum(0, tl.minimum(arg1, 8))
+        quantity0 = tl.load(quantity_ptr + offset0, mask=valid_env, other=0).to(tl.int32)
+        quantity1 = tl.load(quantity_ptr + offset1, mask=valid_env, other=0).to(tl.int32)
+        remaining0 = tl.where((op0 == 4) | (op0 == 6), tl.maximum(0, tl.minimum(quantity0, ROUNDS)), 0)
+        remaining1 = tl.where((op1 == 4) | (op1 == 6), tl.maximum(0, tl.minimum(quantity1, ROUNDS)), 0)
+        money0 = tl.load(money_ptr + env * 2, mask=valid_env, other=0.0).to(tl.float32)
+        money1 = tl.load(money_ptr + env * 2 + 1, mask=valid_env, other=0.0).to(tl.float32)
+        shed_total0 = tl.zeros((BLOCK,), tl.int32)
+        shed_total1 = tl.zeros((BLOCK,), tl.int32)
+        for item_index in tl.static_range(0, ITEM_COUNT):
+            shed_total0 += tl.load(shed_ptr + (env * 2) * ITEM_COUNT + item_index, mask=valid_env, other=0).to(tl.int32)
+            shed_total1 += tl.load(shed_ptr + (env * 2 + 1) * ITEM_COUNT + item_index, mask=valid_env, other=0).to(tl.int32)
+
+        for _ in tl.static_range(0, ROUNDS):
+            snapshot0 = tl.load(market_inventory_ptr + env * 9 + item0, mask=valid_env, other=10000).to(tl.int32)
+            snapshot1 = tl.load(market_inventory_ptr + env * 9 + item1, mask=valid_env, other=10000).to(tl.int32)
+            quote0 = _market_quote(
+                item0,
+                snapshot0 - tl.where(op0 == 4, 1, 0),
+                base_ptr,
+                scale_ptr,
+                below_func_ptr,
+                below_target_ptr,
+                above_func_ptr,
+                above_target_ptr,
+            )
+            quote1 = _market_quote(
+                item1,
+                snapshot1 - tl.where(op1 == 4, 1, 0),
+                base_ptr,
+                scale_ptr,
+                below_func_ptr,
+                below_target_ptr,
+                above_func_ptr,
+                above_target_ptr,
+            )
+            remaining0, money0, shed_total0 = _dynamic_market_player(
+                env,
+                valid_env,
+                0,
+                ORDER,
+                quote0,
+                remaining0,
+                money0,
+                shed_total0,
+                op_ptr,
+                arg_ptr,
+                market_inventory_ptr,
+                shed_ptr,
+                base_ptr,
+                scale_ptr,
+                below_func_ptr,
+                below_target_ptr,
+                above_func_ptr,
+                above_target_ptr,
+                MARKET_ORDERS,
+                ITEM_COUNT,
+                SHED_CAPACITY,
+            )
+            remaining1, money1, shed_total1 = _dynamic_market_player(
+                env,
+                valid_env,
+                1,
+                ORDER,
+                quote1,
+                remaining1,
+                money1,
+                shed_total1,
+                op_ptr,
+                arg_ptr,
+                market_inventory_ptr,
+                shed_ptr,
+                base_ptr,
+                scale_ptr,
+                below_func_ptr,
+                below_target_ptr,
+                above_func_ptr,
+                above_target_ptr,
+                MARKET_ORDERS,
+                ITEM_COUNT,
+                SHED_CAPACITY,
+            )
+        tl.store(money_ptr + env * 2, money0, mask=valid_env)
+        tl.store(money_ptr + env * 2 + 1, money1, mask=valid_env)
+
+
 def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int, day: int, max_units: int) -> None:
     """Run supported operations for one unit slot on the current CUDA stream."""
     if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
@@ -354,5 +556,33 @@ def run_inventory_interactions(
         ITEM_COUNT=12,
         SHED_CAPACITY=shed_capacity,
         OP_KIND=op_kind,
+        BLOCK=block,
+    )
+
+
+def run_dynamic_market(state, actions, engine, order: int, rounds: int) -> None:
+    """Run one dynamically priced product order in exact player/unit order."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 128
+    _dynamic_market_kernel[(triton.cdiv(engine.num_envs, block),)](
+        actions.market_ops,
+        actions.market_args,
+        actions.market_quantities,
+        state.money,
+        state.market_inventory,
+        state.shed,
+        engine.market_base,
+        engine.market_t,
+        engine.market_below_func,
+        engine.market_below_target,
+        engine.market_above_func,
+        engine.market_above_target,
+        engine.num_envs,
+        ORDER=order,
+        ROUNDS=rounds,
+        MARKET_ORDERS=engine.config.max_market_orders,
+        ITEM_COUNT=12,
+        SHED_CAPACITY=engine.config.shed_capacity,
         BLOCK=block,
     )
