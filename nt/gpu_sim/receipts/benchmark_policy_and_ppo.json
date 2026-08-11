@@ -1,0 +1,139 @@
+{
+  "backend": "gpu",
+  "compilation_excluded_from_throughput": true,
+  "full_ppo_iteration": [
+    {
+      "batch_size": 256,
+      "compile_and_first_s": 15.450984204000008,
+      "device_memory_stats": {
+        "bytes_in_use": 30946560,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 536870912,
+        "largest_free_block_bytes": 536870912,
+        "num_allocs": 4393,
+        "peak_bytes_in_use": 606701568,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 1088421888,
+        "pool_bytes": 1088421888
+      },
+      "env_transitions_per_s": 17429.11035414595,
+      "loss": -0.38009199500083923,
+      "optimizer_step": 1,
+      "player_samples_per_s": 34858.2207082919,
+      "repetitions": 3,
+      "rollout_steps": 32,
+      "steady_median_s": 0.4700182530000063,
+      "steady_min_s": 0.4694647659999873
+    },
+    {
+      "batch_size": 1024,
+      "compile_and_first_s": 17.65753808400001,
+      "device_memory_stats": {
+        "bytes_in_use": 52971520,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 1615562496,
+        "largest_free_block_bytes": 2147483648,
+        "num_allocs": 6356,
+        "peak_bytes_in_use": 1978401792,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 4309647360,
+        "pool_bytes": 4309647360
+      },
+      "env_transitions_per_s": 57291.46807792441,
+      "loss": -0.36839839816093445,
+      "optimizer_step": 1,
+      "player_samples_per_s": 114582.93615584882,
+      "repetitions": 3,
+      "rollout_steps": 32,
+      "steady_median_s": 0.5719525279999971,
+      "steady_min_s": 0.5655712979999521
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "measured_at": "2026-08-10T18:05:33.047201+00:00",
+  "model": {
+    "hidden_sizes": [
+      128,
+      128
+    ],
+    "observation_size": 3301,
+    "parameter_count": 608029,
+    "policy_market_slots": 2
+  },
+  "policy_plus_sim": [
+    {
+      "batch_size": 256,
+      "compile_and_first_s": 6.884176371000024,
+      "device_memory_stats": {
+        "bytes_in_use": 14416128,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 33554432,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 1517,
+        "peak_bytes_in_use": 100003584,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "env_transitions_per_s": 23659.645794336757,
+      "player_samples_per_s": 47319.29158867351,
+      "repetitions": 3,
+      "rollout_steps": 64,
+      "steady_median_s": 0.6924871209999992,
+      "steady_min_s": 0.6899692749999815,
+      "terminal_step": 64
+    },
+    {
+      "batch_size": 1024,
+      "compile_and_first_s": 6.610468757999996,
+      "device_memory_stats": {
+        "bytes_in_use": 35339520,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 67108864,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 2085,
+        "peak_bytes_in_use": 109924608,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "env_transitions_per_s": 79034.89412162408,
+      "player_samples_per_s": 158069.78824324816,
+      "repetitions": 3,
+      "rollout_steps": 64,
+      "steady_median_s": 0.8292033630000049,
+      "steady_min_s": 0.8126047330000006,
+      "terminal_step": 64
+    },
+    {
+      "batch_size": 4096,
+      "compile_and_first_s": 7.430711879,
+      "device_memory_stats": {
+        "bytes_in_use": 121393664,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 120459264,
+        "largest_free_block_bytes": 268435456,
+        "num_allocs": 2646,
+        "peak_bytes_in_use": 273753344,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 551550976,
+        "pool_bytes": 551550976
+      },
+      "env_transitions_per_s": 188236.02617066613,
+      "player_samples_per_s": 376472.05234133225,
+      "repetitions": 3,
+      "rollout_steps": 64,
+      "steady_median_s": 1.3926345840000067,
+      "steady_min_s": 1.382016913000001,
+      "terminal_step": 64
+    }
+  ],
+  "schema": "kaggriculture_policy_ppo_benchmark_v1",
+  "transition_definition": "one transition advances both players by one turn"
+}

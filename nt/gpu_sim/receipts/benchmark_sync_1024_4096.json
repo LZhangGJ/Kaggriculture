@@ -1,0 +1,78 @@
+{
+  "backend": "gpu",
+  "compilation_excluded_from_throughput": true,
+  "formal_target_env_transitions_per_s": 300000,
+  "formal_target_passed": true,
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "jaxlib": "0.11.0",
+  "measured_at": "2026-08-10T17:31:38.429048+00:00",
+  "minimum_gate_env_transitions_per_s": 50000,
+  "minimum_gate_passed": true,
+  "rows": [
+    {
+      "batch_size": 1024,
+      "compile_and_first_s": 5.177577730000053,
+      "device_memory_stats": {
+        "bytes_in_use": 34381568,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 22013440,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 621,
+        "peak_bytes_in_use": 83785472,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 132120576,
+        "pool_bytes": 132120576
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 618260.8438310085,
+      "player_samples_per_s": 1236521.687662017,
+      "repetitions": 5,
+      "rollout_steps": 64,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 0.1131533139999874,
+      "steady_median_s": 0.1060005670000237,
+      "steady_min_s": 0.10293026000010741,
+      "terminal_step": 64,
+      "transitions_per_run": 65536
+    },
+    {
+      "batch_size": 4096,
+      "compile_and_first_s": 4.398441051999953,
+      "device_memory_stats": {
+        "bytes_in_use": 125470464,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 134217728,
+        "largest_free_block_bytes": 119349248,
+        "num_allocs": 1200,
+        "peak_bytes_in_use": 266336256,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 266338304,
+        "pool_bytes": 266338304
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 1598945.031995169,
+      "player_samples_per_s": 3197890.063990338,
+      "repetitions": 5,
+      "rollout_steps": 64,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 0.16855612599999859,
+      "steady_median_s": 0.1639480999999705,
+      "steady_min_s": 0.16064428300001055,
+      "terminal_step": 64,
+      "transitions_per_run": 262144
+    }
+  ],
+  "schema": "kaggriculture_simulator_benchmark_v1",
+  "transition_definition": "one transition advances both players by one turn"
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-08-10T16:54:34.978307+00:00",
+  "ok": true,
+  "schema": "kaggriculture_reference_trace_receipt_v1",
+  "traces": [
+    {
+      "bytes": 53956,
+      "file_sha256": "aa4f16af7b107bde0b0ded0fc7d920587dfdb7875be24b64d63cbbcfa102cfb3",
+      "frames": 720,
+      "path": "reference\\traces\\pass_pass_seed0.jsonl.gz",
+      "scenario": "pass_pass",
+      "seed": 0,
+      "semantic_sha256": "397e28157d9bf80f55d0ebdb1305c6fe0bde48f102acf6e8d37b019064ae8441",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ],
+      "terminal_status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "bytes": 58786,
+      "file_sha256": "5ec5381ab480f42f4126594b2ee4bf0e8b517db040a1318341d51ef16417b35c",
+      "frames": 720,
+      "path": "reference\\traces\\starter_starter_seed1.jsonl.gz",
+      "scenario": "starter_starter",
+      "seed": 1,
+      "semantic_sha256": "9f36820a084997c9fd92c5c9b33798240a4366da8ae13fa67e8504bd55ef3545",
+      "terminal_reward": [
+        3486.0,
+        3486.0
+      ],
+      "terminal_status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "bytes": 215944,
+      "file_sha256": "b118088c1822902a6dfdb6f7dfa98df6d01cbd94fe385a506b8f2a3135cc06a8",
+      "frames": 720,
+      "path": "reference\\traces\\v16_v16_seed0.jsonl.gz",
+      "scenario": "v16_v16",
+      "seed": 0,
+      "semantic_sha256": "f7533f6de2411bf1afe4735f1567bdb0008f1020c2c2a194ba384393f5b1e6f8",
+      "terminal_reward": [
+        57462.0,
+        57558.0
+      ],
+      "terminal_status": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "backend": "gpu",
+  "compilation_excluded_from_throughput": true,
+  "formal_target_env_transitions_per_s": 300000,
+  "formal_target_passed": false,
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "jaxlib": "0.11.0",
+  "measured_at": "2026-08-10T17:26:37.682993+00:00",
+  "minimum_gate_env_transitions_per_s": 50000,
+  "minimum_gate_passed": true,
+  "rows": [
+    {
+      "batch_size": 256,
+      "compile_and_first_s": 5.174448734999999,
+      "device_memory_stats": {
+        "bytes_in_use": 12327936,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 536870912,
+        "largest_free_block_bytes": 536870912,
+        "num_allocs": 549,
+        "peak_bytes_in_use": 550938880,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 685768704,
+        "pool_bytes": 685768704
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 98816.24066384658,
+      "player_samples_per_s": 197632.48132769315,
+      "repetitions": 3,
+      "rollout_steps": 64,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 0.16946072199999662,
+      "steady_median_s": 0.1658027050000328,
+      "steady_min_s": 0.1638170879999734,
+      "terminal_step": 64,
+      "transitions_per_run": 16384
+    }
+  ],
+  "schema": "kaggriculture_simulator_benchmark_v1",
+  "transition_definition": "one transition advances both players by one turn"
+}

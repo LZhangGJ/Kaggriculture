@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggriculture-jax"
+version = "0.1.0"
+description = "Parity-first batched JAX simulator for Kaggriculture"
+requires-python = ">=3.12"
+dependencies = [
+  "jax>=0.7",
+  "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+train = [
+  "chex",
+  "flax",
+  "optax",
+]
+test = [
+  "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]

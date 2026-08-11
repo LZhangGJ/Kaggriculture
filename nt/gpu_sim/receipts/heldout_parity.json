@@ -1,0 +1,27 @@
+{
+  "backend": "gpu",
+  "comparison_s": 14.897061161000003,
+  "compile_and_execute_s": 6.076474305000001,
+  "device_to_host_transfer_s": 0.3138182580000013,
+  "diagnostics": {
+    "hand_cap_hits": 0,
+    "market_loop_cap_hits": 0,
+    "price_lut_oob": 0
+  },
+  "exact_integer_price_reward_zero_error": true,
+  "frames_compared": 72000,
+  "frames_per_seed": 720,
+  "jax": "0.11.0",
+  "official_package": "kaggle-environments",
+  "official_package_version": "1.32.6",
+  "ok": true,
+  "schema": "kaggriculture_heldout_parity_v1",
+  "seed_count": 100,
+  "seed_first": 10000,
+  "seed_last": 10099,
+  "state_scope": "step/day/hour/status/reward; all farm/tile/unit/private inventory; market inventory/prices; town shops; diagnostic counters",
+  "terminal_steps": [
+    719
+  ],
+  "verified_at": "2026-08-10T18:14:50.561737+00:00"
+}

@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "actual": {
+        "bytes": 39801,
+        "lines": 1073,
+        "sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf"
+      },
+      "exists": true,
+      "expected_bytes": 39801,
+      "expected_lines": 1073,
+      "expected_sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf",
+      "label": "frozen:kaggle_environments/envs/kaggriculture/kaggriculture.py",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\gpu_sim\\reference\\kaggle_environments_1_32_6\\kaggriculture\\kaggriculture.py"
+    },
+    {
+      "actual": {
+        "bytes": 39801,
+        "lines": 1073,
+        "sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf"
+      },
+      "exists": true,
+      "expected_bytes": 39801,
+      "expected_lines": 1073,
+      "expected_sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf",
+      "label": "installed:kaggle_environments/envs/kaggriculture/kaggriculture.py",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\kaggriculture\\kaggriculture.py"
+    },
+    {
+      "actual": {
+        "bytes": 5877,
+        "lines": 138,
+        "sha256": "7f196f4aaf9b4e482fbd61ba4bf19f5cec4da0f81938ece756954035a65c0bb5"
+      },
+      "exists": true,
+      "expected_bytes": 5877,
+      "expected_lines": 138,
+      "expected_sha256": "7f196f4aaf9b4e482fbd61ba4bf19f5cec4da0f81938ece756954035a65c0bb5",
+      "label": "frozen:kaggle_environments/envs/kaggriculture/kaggriculture.json",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\gpu_sim\\reference\\kaggle_environments_1_32_6\\kaggriculture\\kaggriculture.json"
+    },
+    {
+      "actual": {
+        "bytes": 5877,
+        "lines": 138,
+        "sha256": "7f196f4aaf9b4e482fbd61ba4bf19f5cec4da0f81938ece756954035a65c0bb5"
+      },
+      "exists": true,
+      "expected_bytes": 5877,
+      "expected_lines": 138,
+      "expected_sha256": "7f196f4aaf9b4e482fbd61ba4bf19f5cec4da0f81938ece756954035a65c0bb5",
+      "label": "installed:kaggle_environments/envs/kaggriculture/kaggriculture.json",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\kaggriculture\\kaggriculture.json"
+    },
+    {
+      "actual": {
+        "bytes": 25724,
+        "lines": 362,
+        "sha256": "63d0497ca655ea1857a96a3226bed6664a2fa98506d76d1fa14ce9101c5f1d34"
+      },
+      "exists": true,
+      "expected_bytes": 25724,
+      "expected_lines": 362,
+      "expected_sha256": "63d0497ca655ea1857a96a3226bed6664a2fa98506d76d1fa14ce9101c5f1d34",
+      "label": "frozen:kaggle_environments/envs/kaggriculture/README.md",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\gpu_sim\\reference\\kaggle_environments_1_32_6\\kaggriculture\\README.md"
+    },
+    {
+      "actual": {
+        "bytes": 25724,
+        "lines": 362,
+        "sha256": "63d0497ca655ea1857a96a3226bed6664a2fa98506d76d1fa14ce9101c5f1d34"
+      },
+      "exists": true,
+      "expected_bytes": 25724,
+      "expected_lines": 362,
+      "expected_sha256": "63d0497ca655ea1857a96a3226bed6664a2fa98506d76d1fa14ce9101c5f1d34",
+      "label": "installed:kaggle_environments/envs/kaggriculture/README.md",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\kaggriculture\\README.md"
+    },
+    {
+      "actual": {
+        "bytes": 13708,
+        "lines": 287,
+        "sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22"
+      },
+      "exists": true,
+      "expected_bytes": 13708,
+      "expected_lines": 287,
+      "expected_sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22",
+      "label": "frozen:kaggle_environments/envs/kaggriculture/AGENTS.md",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\gpu_sim\\reference\\kaggle_environments_1_32_6\\kaggriculture\\AGENTS.md"
+    },
+    {
+      "actual": {
+        "bytes": 13708,
+        "lines": 287,
+        "sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22"
+      },
+      "exists": true,
+      "expected_bytes": 13708,
+      "expected_lines": 287,
+      "expected_sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22",
+      "label": "installed:kaggle_environments/envs/kaggriculture/AGENTS.md",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\kaggriculture\\AGENTS.md"
+    },
+    {
+      "actual": {
+        "bytes": 30284,
+        "lines": 772,
+        "sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e"
+      },
+      "exists": true,
+      "expected_sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e",
+      "label": "installed:kaggle_environments/core.py",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\core.py"
+    },
+    {
+      "actual": {
+        "bytes": 8090,
+        "lines": 224,
+        "sha256": "9b7682ce9921c8f34080a8be0f7b41598cc12ac7eb14d24e4b707883f25213b6"
+      },
+      "exists": true,
+      "expected_sha256": "9b7682ce9921c8f34080a8be0f7b41598cc12ac7eb14d24e4b707883f25213b6",
+      "label": "installed:kaggle_environments/agent.py",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\agent.py"
+    },
+    {
+      "actual": {
+        "bytes": 8634,
+        "lines": 265,
+        "sha256": "537b627b11784d424147ef57ebb0369b039bf83c9f891e81f10486b1f552334b"
+      },
+      "exists": true,
+      "expected_sha256": "537b627b11784d424147ef57ebb0369b039bf83c9f891e81f10486b1f552334b",
+      "label": "installed:kaggle_environments/utils.py",
+      "ok": true,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages\\kaggle_environments\\utils.py"
+    }
+  ],
+  "expected_package_version": "1.32.6",
+  "installed_package_version": "1.32.6",
+  "manifest": "E:\\ai_coding\\kaggle\\kaggriculture\\gpu_sim\\reference\\manifest.json",
+  "ok": true,
+  "schema": "kaggriculture_reference_verification_v1",
+  "verified_at": "2026-08-10T18:19:45.892814+00:00"
+}

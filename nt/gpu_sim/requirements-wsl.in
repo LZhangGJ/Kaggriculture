@@ -1,0 +1,5 @@
+jax[cuda13]
+flax
+optax
+chex
+pytest

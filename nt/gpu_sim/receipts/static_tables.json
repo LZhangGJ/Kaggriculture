@@ -1,0 +1,62 @@
+{
+  "events": {
+    "days": 30,
+    "development_seeds": [
+      0,
+      127
+    ],
+    "heldout_seeds": [
+      10000,
+      10127
+    ],
+    "max_conditional_weed_draws": 200,
+    "seed_count": 256,
+    "shop_choice_shape": [
+      256,
+      30,
+      201
+    ],
+    "shop_names": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "weed_chance": 0.005,
+    "weed_shape": [
+      256,
+      30,
+      200
+    ]
+  },
+  "generated_at": "2026-08-10T17:08:17.039088+00:00",
+  "market": {
+    "dtype": "int16",
+    "inventory_max": 65535,
+    "inventory_min": -32768,
+    "products": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON",
+      "EGG",
+      "MILK",
+      "WOOL",
+      "FERTILIZER"
+    ],
+    "shape": [
+      9,
+      98304
+    ]
+  },
+  "official_source_sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf",
+  "ok": true,
+  "output": "reference\\static_tables_v1.npz",
+  "output_sha256": "ea7f6c383eae6e20f1803871e860540955c2832c0cfd5ba6b1691982ca053af9",
+  "schema": "kaggriculture_static_tables_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "backend": "gpu",
+  "command": [
+    "/mnt/e/ai_coding/kaggle/kaggriculture/gpu_sim/.venv-wsl/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "completed_at": "2026-08-10T18:19:18.567000+00:00",
+  "devices": [
+    "cuda:0"
+  ],
+  "elapsed_s": 185.14627366399998,
+  "jax": "0.11.0",
+  "ok": true,
+  "output": "...........                                                              [100%]\n11 passed in 182.62s (0:03:02)\n",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "returncode": 0,
+  "schema": "kaggriculture_test_suite_v1"
+}

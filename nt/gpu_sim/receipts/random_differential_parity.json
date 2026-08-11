@@ -1,0 +1,23 @@
+{
+  "backend": "gpu",
+  "comparison_s": 2.5720285110000134,
+  "compile_and_execute_s": 7.513710992,
+  "exact_zero_error": true,
+  "frames_compared": 11520,
+  "frames_per_seed": 720,
+  "jax": "0.11.0",
+  "market_loop_cap_hits": 0,
+  "max_hand_cap_hits": 0,
+  "official_package_version": "1.32.6",
+  "ok": true,
+  "price_lut_oob": 0,
+  "scenario": "state-aware random legal actions plus injected invalid actions",
+  "schema": "kaggriculture_random_differential_parity_v1",
+  "seed_count": 16,
+  "seed_first": 32,
+  "seed_last": 47,
+  "terminal_steps": [
+    719
+  ],
+  "verified_at": "2026-08-10T17:55:22.890492+00:00"
+}
