@@ -19,7 +19,13 @@ try:
 except ImportError as exc:  # pragma: no cover
     raise ImportError("Install the GPU extra with `pip install -e '.[gpu]'`") from exc
 
-from .triton_ops import SUPPORTED_UNIT_OPS, TRITON_AVAILABLE, run_common_interactions
+from .triton_ops import (
+    COMMON_UNIT_OPS,
+    INVENTORY_UNIT_OPS,
+    TRITON_AVAILABLE,
+    run_common_interactions,
+    run_inventory_interactions,
+)
 
 
 # Board codes.
@@ -944,25 +950,40 @@ class CudaKaggricultureEnv:
         active = self.state.unit_active[:, :, :unit_limit]
         interaction = (unit_ops >= U_DROP) & active
         if self.use_triton:
-            supported = torch.zeros_like(interaction)
-            for supported_op in SUPPORTED_UNIT_OPS:
-                supported |= unit_ops == supported_op
+            common = torch.zeros_like(interaction)
+            for supported_op in COMMON_UNIT_OPS:
+                common |= unit_ops == supported_op
+            common &= active
+            inventory_masks = [((unit_ops == supported_op) & active) for supported_op in INVENTORY_UNIT_OPS]
+            inventory = inventory_masks[0] | inventory_masks[1] | inventory_masks[2]
+            supported = common | inventory
             supported &= active
-            supported_by_unit = supported.any(dim=(0, 1))
+            common_by_unit = common.any(dim=(0, 1))
+            inventory_by_kind = [mask.any(dim=(0, 1)) for mask in inventory_masks]
             unsupported_by_unit = (interaction & ~supported).any(dim=(0, 1))
             plant_present = ((unit_ops == U_PLANT) & active).any().reshape(1)
             control = torch.cat(
-                (supported_by_unit, unsupported_by_unit, actions.market_ops.any().reshape(1), plant_present)
+                (
+                    common_by_unit,
+                    *inventory_by_kind,
+                    unsupported_by_unit,
+                    actions.market_ops.any().reshape(1),
+                    plant_present,
+                )
             ).tolist()
-            supported_units = control[:unit_limit]
-            unsupported_units = control[unit_limit : 2 * unit_limit]
+            common_units = control[:unit_limit]
+            inventory_units = [
+                control[(kind + 1) * unit_limit : (kind + 2) * unit_limit] for kind in range(len(INVENTORY_UNIT_OPS))
+            ]
+            unsupported_units = control[4 * unit_limit : 5 * unit_limit]
             has_market_orders = bool(control[-2])
             has_plant_actions = bool(control[-1])
         else:
             unsupported_by_unit = interaction.any(dim=(0, 1))
             control = torch.cat((unsupported_by_unit, actions.market_ops.any().reshape(1))).tolist()
             supported = torch.zeros_like(interaction)
-            supported_units = [False] * unit_limit
+            common_units = [False] * unit_limit
+            inventory_units = [[False] * unit_limit for _ in INVENTORY_UNIT_OPS]
             unsupported_units = control[:unit_limit]
             has_market_orders = bool(control[-1])
             has_plant_actions = False
@@ -984,7 +1005,7 @@ class CudaKaggricultureEnv:
             plant_allowed = torch.zeros_like(active)
 
         for unit in range(unit_limit):
-            if supported_units[unit]:
+            if common_units[unit]:
                 run_common_interactions(
                     self.state,
                     actions.unit_ops,
@@ -994,6 +1015,19 @@ class CudaKaggricultureEnv:
                     day,
                     self.max_units,
                 )
+            for kind, op_kind in enumerate(INVENTORY_UNIT_OPS):
+                if inventory_units[kind][unit]:
+                    run_inventory_interactions(
+                        self.state,
+                        actions.unit_ops,
+                        actions.unit_args,
+                        actions.unit_quantities,
+                        unit,
+                        day,
+                        self.max_units,
+                        self.config.shed_capacity,
+                        op_kind,
+                    )
             if unsupported_units[unit]:
                 active_override = ~supported[:, :, unit] if self.use_triton else None
                 self._step_unit_dense(actions, unit, day, plant_allowed, active_override)

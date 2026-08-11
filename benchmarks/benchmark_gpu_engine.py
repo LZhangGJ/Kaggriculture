@@ -7,7 +7,7 @@ import time
 
 import torch
 
-from kaggriculture_lab.gpu_engine import CudaKaggricultureEnv, GpuEngineConfig, M_BUY_SEED, U_DIG, U_EAST
+from kaggriculture_lab.gpu_engine import CudaKaggricultureEnv, GpuEngineConfig, M_BUY_SEED, U_DIG, U_DROP, U_EAST, U_PICKUP, U_PLACE
 
 
 def main() -> None:
@@ -16,7 +16,9 @@ def main() -> None:
     parser.add_argument("--steps", type=int, default=240)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--market-quantity", type=int, default=16)
-    parser.add_argument("--profile", choices=("pass", "move", "mixed", "interact", "market"), default="move")
+    parser.add_argument(
+        "--profile", choices=("pass", "move", "mixed", "interact", "pickup", "drop", "place", "market"), default="move"
+    )
     parser.add_argument("--hands", type=int, default=0, help="active hired hands per player")
     parser.add_argument("--no-triton", action="store_true", help="disable fused Triton interaction kernels")
     args = parser.parse_args()
@@ -37,18 +39,31 @@ def main() -> None:
         actions.unit_ops[:, :, 1 : args.hands + 1] = U_EAST
     elif args.profile == "interact":
         actions.unit_ops[:, :, : args.hands + 1] = U_DIG
+    elif args.profile == "pickup":
+        actions.unit_ops[:, :, : args.hands + 1] = U_PICKUP
+    elif args.profile == "drop":
+        actions.unit_ops[:, :, : args.hands + 1] = U_DROP
+    elif args.profile == "place":
+        actions.unit_ops[:, :, : args.hands + 1] = U_PLACE
     if args.profile == "market":
         actions.market_ops[:, :, 0] = M_BUY_SEED
         actions.market_quantities[:, :, 0] = 1
-    if args.hands:
-        env.state.hands_count.fill_(args.hands)
-        env.state.unit_active[:, :, : args.hands + 1] = True
+    def prepare_state() -> None:
+        if args.hands:
+            env.state.hands_count.fill_(args.hands)
+            env.state.unit_active[:, :, : args.hands + 1] = True
+        if args.profile in ("pickup", "drop", "place"):
+            env.state.positions[:, :, : args.hands + 1] = 4
+        if args.profile == "pickup":
+            env.state.shed[:, :, 0] = config.shed_capacity
+        elif args.profile in ("drop", "place"):
+            env.state.unit_inventory[:, :, : args.hands + 1, 0] = config.shed_capacity
+
+    prepare_state()
     for _ in range(3):
         env.step(actions)
     env.reset()
-    if args.hands:
-        env.state.hands_count.fill_(args.hands)
-        env.state.unit_active[:, :, : args.hands + 1] = True
+    prepare_state()
     if args.device.startswith("cuda"):
         torch.cuda.synchronize()
     started = time.perf_counter()

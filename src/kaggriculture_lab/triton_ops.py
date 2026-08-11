@@ -15,7 +15,9 @@ except ImportError:  # pragma: no cover - exercised on CPU-only installations
 
 
 TRITON_AVAILABLE = triton is not None
-SUPPORTED_UNIT_OPS = tuple(range(6, 16))  # DIG through PLANT
+COMMON_UNIT_OPS = tuple(range(6, 16))  # DIG through PLANT
+INVENTORY_UNIT_OPS = (5, 16, 17)  # DROP, PICKUP, PLACE
+SUPPORTED_UNIT_OPS = INVENTORY_UNIT_OPS + COMMON_UNIT_OPS
 
 
 if TRITON_AVAILABLE:
@@ -182,6 +184,102 @@ if TRITON_AVAILABLE:
         tl.store(fert_until_ptr + board_offset, -1, mask=plant)
 
 
+    @triton.jit
+    def _inventory_interaction_kernel(
+        op_ptr,
+        arg_ptr,
+        quantity_ptr,
+        active_ptr,
+        position_ptr,
+        tile_ptr,
+        placed_ptr,
+        fed_ptr,
+        cared_ptr,
+        consecutive_ptr,
+        yield_ptr,
+        fert_available_ptr,
+        care_bonus_ptr,
+        inventory_ptr,
+        shed_ptr,
+        unit,
+        day,
+        pair_count,
+        MAX_UNITS: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        SHED_CAPACITY: tl.constexpr,
+        OP_KIND: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        pair = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid_pair = pair < pair_count
+        unit_offset = pair * MAX_UNITS + unit
+        active = tl.load(active_ptr + unit_offset, mask=valid_pair, other=0).to(tl.int1)
+        op = tl.load(op_ptr + unit_offset, mask=valid_pair, other=0)
+        execute = valid_pair & active & (op == OP_KIND)
+        arg = tl.load(arg_ptr + unit_offset, mask=execute, other=0).to(tl.int32)
+        quantity = tl.maximum(tl.load(quantity_ptr + unit_offset, mask=execute, other=1).to(tl.int32), 1)
+
+        position_offset = unit_offset * 2
+        x = tl.load(position_ptr + position_offset, mask=execute, other=0).to(tl.int32)
+        y = tl.load(position_ptr + position_offset + 1, mask=execute, other=0).to(tl.int32)
+        shed_adjacent = ((x == 4) | (x == 5)) & ((y == 4) | (y == 5))
+        inventory_base = unit_offset * ITEM_COUNT
+        shed_base = pair * ITEM_COUNT
+        if OP_KIND == 5:
+            shed_total = tl.zeros((BLOCK,), tl.int32)
+            for item_index in tl.static_range(0, ITEM_COUNT):
+                shed_total += tl.load(shed_ptr + shed_base + item_index, mask=execute, other=0).to(tl.int32)
+            room = tl.maximum(SHED_CAPACITY - shed_total, 0)
+            drop = execute & shed_adjacent
+            for item_index in tl.static_range(0, ITEM_COUNT):
+                source_offset = inventory_base + item_index
+                destination_offset = shed_base + item_index
+                source = tl.load(inventory_ptr + source_offset, mask=execute, other=0).to(tl.int32)
+                destination = tl.load(shed_ptr + destination_offset, mask=execute, other=0).to(tl.int32)
+                amount = tl.where(drop, tl.minimum(source, room), 0)
+                tl.store(inventory_ptr + source_offset, source - amount, mask=drop)
+                tl.store(shed_ptr + destination_offset, destination + amount, mask=drop)
+                room -= amount
+        else:
+            valid_item = (arg >= 0) & (arg < ITEM_COUNT)
+            item = tl.maximum(0, tl.minimum(arg, ITEM_COUNT - 1))
+            inventory_offset = inventory_base + item
+            shed_offset = shed_base + item
+            shed_item = tl.load(shed_ptr + shed_offset, mask=execute, other=0).to(tl.int32)
+            carried = tl.load(inventory_ptr + inventory_offset, mask=execute, other=0).to(tl.int32)
+
+            if OP_KIND == 16:
+                pickup = execute & shed_adjacent & valid_item
+                take = tl.where(pickup, tl.minimum(quantity, shed_item), 0)
+                tl.store(shed_ptr + shed_offset, shed_item - take, mask=pickup)
+                tl.store(inventory_ptr + inventory_offset, carried + take, mask=pickup)
+            else:
+                board_offset = pair * 100 + y * 10 + x
+                tile = tl.load(tile_ptr + board_offset, mask=execute, other=1).to(tl.int32)
+                shed_total = tl.zeros((BLOCK,), tl.int32)
+                for item_index in tl.static_range(0, ITEM_COUNT):
+                    shed_total += tl.load(shed_ptr + shed_base + item_index, mask=execute, other=0).to(tl.int32)
+                room = tl.maximum(SHED_CAPACITY - shed_total, 0)
+                animal_arg = (arg >= 9) & (arg < 12)
+                animal_index = tl.maximum(0, tl.minimum(arg - 9, 2))
+                required_structure = tl.where(animal_index == 0, 8, 9)
+                structure_match = execute & animal_arg & (tile == required_structure)
+                place_animal = structure_match & (carried > 0)
+                tl.store(inventory_ptr + inventory_offset, carried - 1, mask=place_animal)
+                tl.store(tile_ptr + board_offset, 10 + animal_index, mask=place_animal)
+                tl.store(placed_ptr + board_offset, day, mask=place_animal)
+                tl.store(yield_ptr + board_offset, 0, mask=place_animal)
+                tl.store(consecutive_ptr + board_offset, 0, mask=place_animal)
+                tl.store(care_bonus_ptr + board_offset, 0, mask=place_animal)
+                tl.store(fed_ptr + board_offset, 0, mask=place_animal)
+                tl.store(cared_ptr + board_offset, 0, mask=place_animal)
+                tl.store(fert_available_ptr + board_offset, 0, mask=place_animal)
+                place_shed = execute & shed_adjacent & ~structure_match & valid_item
+                place_amount = tl.where(place_shed, tl.minimum(quantity, tl.minimum(carried, room)), 0)
+                tl.store(inventory_ptr + inventory_offset, carried - place_amount, mask=place_shed)
+                tl.store(shed_ptr + shed_offset, shed_item + place_amount, mask=place_shed)
+
+
 def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int, day: int, max_units: int) -> None:
     """Run supported operations for one unit slot on the current CUDA stream."""
     if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
@@ -213,5 +311,48 @@ def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int
         pair_count,
         MAX_UNITS=max_units,
         ITEM_COUNT=12,
+        BLOCK=block,
+    )
+
+
+def run_inventory_interactions(
+    state,
+    unit_ops,
+    unit_args,
+    unit_quantities,
+    unit: int,
+    day: int,
+    max_units: int,
+    shed_capacity: int,
+    op_kind: int,
+) -> None:
+    """Run DROP/PICKUP/PLACE for one unit slot on the current CUDA stream."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    pair_count = unit_ops.shape[0] * unit_ops.shape[1]
+    block = 256
+    _inventory_interaction_kernel[(triton.cdiv(pair_count, block),)](
+        unit_ops,
+        unit_args,
+        unit_quantities,
+        state.unit_active,
+        state.positions,
+        state.tile_type,
+        state.placed_day,
+        state.fed,
+        state.cared,
+        state.consecutive,
+        state.yield_units,
+        state.fertilizer_available,
+        state.pending_care_bonus,
+        state.unit_inventory,
+        state.shed,
+        unit,
+        day,
+        pair_count,
+        MAX_UNITS=max_units,
+        ITEM_COUNT=12,
+        SHED_CAPACITY=shed_capacity,
+        OP_KIND=op_kind,
         BLOCK=block,
     )

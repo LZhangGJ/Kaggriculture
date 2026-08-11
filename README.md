@@ -107,7 +107,7 @@ environment is `.venv`, backed by PyTorch 2.5.1 + CUDA 11.8 from the existing
 ```bash
 cd /homes/lzhang/Kaggriculture
 CUDA_VISIBLE_DEVICES=1 PYTHONNOUSERSITE=1 PYTHONPATH=$PWD/src \
-TRITON_CACHE_DIR=/tmp/lzhang-kaggriculture-triton-v2 \
+TRITON_CACHE_DIR=/tmp/lzhang-kaggriculture-triton-v4 \
   .venv/bin/python benchmarks/benchmark_gpu_engine.py \
   --envs 16384 --steps 700 --device cuda --profile mixed --hands 16
 ```
@@ -121,14 +121,18 @@ job owned most of the card:
 | 16,384 | 16 | farmer interacts, all hands move, 700-turn run | 8,049.6 |
 | 16,384 | 16 | movement + one seed order every turn | 2,951.3 |
 | 16,384 | 16 | every unit performs a fused board interaction | 7,699.6 |
+| 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
+| 16,384 | 16 | every unit performs DROP | 1,119.5 |
+| 16,384 | 16 | every unit performs PLACE | 903.5 |
 
 Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
 FEED, COLLECT, CARE, and PLANT run through one optional Triton kernel per active
-unit slot; DROP, PICKUP, and PLACE retain the verified PyTorch fallback. Fixed-price
-seed and animal orders are settled in a single exact batch; dynamically priced
-product buys and sales retain per-unit matching. The figures measure transitions
-only and exclude policy-network inference/training.
+unit slot. DROP, PICKUP, and PLACE use separate operation-specialized Triton
+variants so they do not inflate the common board kernel. Fixed-price seed and animal
+orders are settled in a single exact batch; dynamically priced product buys and
+sales retain per-unit matching. The figures measure transitions only and exclude
+policy-network inference/training.
 
 Against the optimized 8-process CPU runner at 57.25 games/s, the long-run movement
 profile is about 166x faster, the mixed profile about 141x faster, and the fused

@@ -22,6 +22,10 @@ from kaggriculture_lab.gpu_engine import (
     U_FERTILIZE,
     U_HARVEST,
     U_PLANT,
+    U_BUILD_COOP,
+    U_DROP,
+    U_PICKUP,
+    U_PLACE,
     U_WATER,
     WEED,
     encode_action_dicts,
@@ -269,3 +273,72 @@ def test_triton_crop_lifecycle_matches_cpu_tensor_engine():
     cpu.step(cpu_harvest)
     gpu.step(gpu_harvest)
     compare("harvest")
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_inventory_and_animal_placement_match_cpu_tensor_engine():
+    config = GpuEngineConfig(episode_steps=48, weed_spawn_chance=0.0, town_shop_unlock_interval=1000)
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[61, 62])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[61, 62])
+
+    def compare(label):
+        for field in fields(type(cpu.state)):
+            expected = getattr(cpu.state, field.name)
+            actual = getattr(gpu.state, field.name).cpu()
+            assert torch.equal(actual, expected), f"{label}: mismatch in {field.name}"
+
+    cpu.state.shed[:, :, 0] = 10
+    gpu.state.shed[:, :, 0] = 10
+    cpu_pickup, gpu_pickup = cpu.empty_actions(), gpu.empty_actions()
+    cpu_pickup.unit_ops[:, :, 0] = U_PICKUP
+    gpu_pickup.unit_ops[:, :, 0] = U_PICKUP
+    cpu_pickup.unit_quantities[:, :, 0] = 6
+    gpu_pickup.unit_quantities[:, :, 0] = 6
+    cpu.step(cpu_pickup)
+    gpu.step(gpu_pickup)
+    compare("pickup")
+
+    cpu.state.unit_inventory[:, :, 0, 1:4] = 3
+    gpu.state.unit_inventory[:, :, 0, 1:4] = 3
+    cpu_drop, gpu_drop = cpu.empty_actions(), gpu.empty_actions()
+    cpu_drop.unit_ops[:, :, 0] = U_DROP
+    gpu_drop.unit_ops[:, :, 0] = U_DROP
+    cpu.step(cpu_drop)
+    gpu.step(gpu_drop)
+    compare("drop")
+
+    cpu.state.shed[:, :, 9] = 1
+    gpu.state.shed[:, :, 9] = 1
+    cpu_build, gpu_build = cpu.empty_actions(), gpu.empty_actions()
+    cpu_build.unit_ops[:, :, 0] = U_BUILD_COOP
+    gpu_build.unit_ops[:, :, 0] = U_BUILD_COOP
+    cpu.step(cpu_build)
+    gpu.step(gpu_build)
+    cpu_goose, gpu_goose = cpu.empty_actions(), gpu.empty_actions()
+    cpu_goose.unit_ops[:, :, 0] = U_PICKUP
+    gpu_goose.unit_ops[:, :, 0] = U_PICKUP
+    cpu_goose.unit_args[:, :, 0] = 9
+    gpu_goose.unit_args[:, :, 0] = 9
+    cpu.step(cpu_goose)
+    gpu.step(gpu_goose)
+    cpu_place, gpu_place = cpu.empty_actions(), gpu.empty_actions()
+    cpu_place.unit_ops[:, :, 0] = U_PLACE
+    gpu_place.unit_ops[:, :, 0] = U_PLACE
+    cpu_place.unit_args[:, :, 0] = 9
+    gpu_place.unit_args[:, :, 0] = 9
+    cpu.step(cpu_place)
+    gpu.step(gpu_place)
+    compare("place animal")
+
+    cpu.state.unit_inventory[:, :, 0, 1] = 5
+    gpu.state.unit_inventory[:, :, 0, 1] = 5
+    cpu_place_shed, gpu_place_shed = cpu.empty_actions(), gpu.empty_actions()
+    cpu_place_shed.unit_ops[:, :, 0] = U_PLACE
+    gpu_place_shed.unit_ops[:, :, 0] = U_PLACE
+    cpu_place_shed.unit_args[:, :, 0] = 1
+    gpu_place_shed.unit_args[:, :, 0] = 1
+    cpu_place_shed.unit_quantities[:, :, 0] = 3
+    gpu_place_shed.unit_quantities[:, :, 0] = 3
+    cpu.step(cpu_place_shed)
+    gpu.step(gpu_place_shed)
+    compare("place shed")
