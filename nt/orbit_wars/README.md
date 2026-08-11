@@ -6,7 +6,7 @@
 
 1. [金牌文章覆盖台账](WRITEUP_COVERAGE_LEDGER.md)：确认哪些名次有公开文章，哪些没有。
 2. [迁移共用建模底座](MIGRATION_COMMON_SPEC_ZH.md)：所有方案共用的 Kaggriculture 状态、任务动作、执行器、self-play 和评估定义。
-3. [全部方案比较与推荐顺序](COMPARATIVE_MIGRATION_ANALYSIS_ZH.md)：实现难度、上分潜力、速度、风险和本机推荐顺序。
+3. [全部方案通俗比较与推荐顺序](COMPARATIVE_MIGRATION_ANALYSIS_ZH.md)：每条路线在做什么、如何迁移、首次开发时间、更新一版模型的时间，以及线上 CPU 适配风险。
 4. `sources/`：11 篇官方 writeup 的逐篇来源摘要。
 5. `migrations/`：与 11 篇来源一一对应的 Kaggriculture 迁移方案。
 
