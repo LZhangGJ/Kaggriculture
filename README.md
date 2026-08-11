@@ -11,6 +11,7 @@ research notebooks, and a fast local runner for large self-play experiments.
 - `src/kaggriculture_lab/fast_env.py` — low-overhead CPU training runner
 - `src/kaggriculture_lab/gpu_engine.py` — pure-tensor CUDA transition engine
 - `benchmarks/benchmark_gpu_engine.py` — CUDA transition throughput benchmark
+- `benchmarks/profile_gpu_hotpath.py` — short CPU/CUDA operator-level profiler
 - `tests/test_gpu_engine.py` — stepwise differential tests against the official runner
 
 ## Environment
@@ -108,6 +109,7 @@ environment is `.venv`, backed by PyTorch 2.5.1 + CUDA 11.8 from the existing
 cd /homes/lzhang/Kaggriculture
 CUDA_VISIBLE_DEVICES=1 PYTHONNOUSERSITE=1 PYTHONPATH=$PWD/src \
 TRITON_CACHE_DIR=/tmp/lzhang-kaggriculture-triton-v6 \
+TORCHINDUCTOR_CACHE_DIR=/tmp/lzhang-kaggriculture-inductor-v1 \
   .venv/bin/python benchmarks/benchmark_gpu_engine.py \
   --envs 16384 --steps 700 --device cuda --profile mixed --hands 16
 ```
@@ -117,17 +119,17 @@ job owned most of the card:
 
 | Batch | Initial hands/player | Workload | Equivalent 720-turn games/s |
 |---:|---:|---|---:|
-| 16,384 | 16 | move actions, 700 turns with official daily hand reset | 23,982.7 |
-| 16,384 | 16 | mixed board/move, 700 turns with official daily hand reset | 22,870.9 |
+| 16,384 | 16 | move actions, 700 turns with official daily hand reset | 34,131.1 |
+| 16,384 | 16 | mixed board/move, 700 turns with official daily hand reset | 31,912.7 |
 | 16,384 | 16 | all 17 units move, saturated 23-turn day | 25,935.5 |
 | 16,384 | 16 | farmer interacts and 16 hands move, saturated 23-turn day | 22,166.7 |
 | 16,384 | 16 | movement + one seed order every turn | 2,951.3 |
-| 16,384 | 16 | every unit performs a fused board interaction | 7,699.6 |
+| 16,384 | 16 | every unit performs a board interaction, saturated 23-turn day | 15,367.5 |
 | 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
 | 16,384 | 16 | every unit performs DROP | 1,119.5 |
 | 16,384 | 16 | every unit performs PLACE | 903.5 |
-| 16,384 | 0 | buy 16 dynamically priced products per turn | 3,415.5 |
-| 16,384 | 0 | sell 16 dynamically priced products per turn | 3,548.2 |
+| 16,384 | 0 | buy 16 dynamically priced products per turn | 3,677.4 |
+| 16,384 | 0 | sell 16 dynamically priced products per turn | 3,805.6 |
 
 Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
@@ -142,13 +144,15 @@ launch. Movement, the full-board plant decay scan, and end-of-day board/farm res
 also use fused kernels. The figures measure transitions only and exclude
 policy-network inference/training. Long-run rows retain the official rule that
 hired hands are reset each day; the 23-turn rows isolate a saturated 17-unit day.
+The sparse action classifier is a fixed-shape `torch.compile` graph; use
+`--no-compile-routing` for faster cold starts at lower steady-state throughput.
 
 Against the optimized 8-process CPU runner at 57.25 games/s, the long-run movement
-profile is about 419x faster, the mixed profile about 400x faster, and the fused
-all-interaction profile about 134x faster. The first invocation JIT-compiles and
-caches Triton kernels; benchmark warm-up excludes this one-time cost. The dynamic
-market kernels can take several minutes to compile for a new fixed batch/configuration,
-so long-running actors should reuse `TRITON_CACHE_DIR`.
+profile is about 596x faster, the mixed profile about 557x faster, and the saturated
+all-interaction profile about 268x faster. The first invocation JIT-compiles and
+caches Triton/Inductor kernels; benchmark warm-up excludes this one-time cost. New
+fixed batch/configuration variants can take several minutes to compile, so
+long-running actors should reuse both cache directories shown above.
 
 ## Verification and benchmark
 

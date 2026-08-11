@@ -20,7 +20,6 @@ except ImportError as exc:  # pragma: no cover
     raise ImportError("Install the GPU extra with `pip install -e '.[gpu]'`") from exc
 
 from .triton_ops import (
-    COMMON_UNIT_OPS,
     INVENTORY_UNIT_OPS,
     TRITON_AVAILABLE,
     run_common_interactions,
@@ -92,6 +91,31 @@ MARKET_OP_INDEX = {
 }
 
 
+def _route_actions_tensor(unit_ops: torch.Tensor, active: torch.Tensor, market_ops: torch.Tensor) -> torch.Tensor:
+    """Return compact sparse-dispatch flags; compiled as one fixed-shape graph on CUDA."""
+    common = (unit_ops >= U_DIG) & (unit_ops <= U_PLANT) & active
+    drop = (unit_ops == U_DROP) & active
+    pickup = (unit_ops == U_PICKUP) & active
+    place = (unit_ops == U_PLACE) & active
+    inventory = drop | pickup | place
+    interaction = (unit_ops >= U_DROP) & active
+    unsupported = interaction & ~common & ~inventory
+    return torch.cat(
+        (
+            common.any(dim=(0, 1)),
+            drop.any(dim=(0, 1)),
+            pickup.any(dim=(0, 1)),
+            place.any(dim=(0, 1)),
+            unsupported.any(dim=(0, 1)),
+            market_ops.any().reshape(1),
+            ((unit_ops == U_PLANT) & active).any().reshape(1),
+        )
+    )
+
+
+_compiled_route_actions = torch.compile(_route_actions_tensor, fullgraph=True, dynamic=False)
+
+
 @dataclass(frozen=True)
 class GpuEngineConfig:
     board_size: int = 10
@@ -108,6 +132,7 @@ class GpuEngineConfig:
     town_center_sell_interval: int = 24
     farm_hand_cost_mult: int = 1
     use_triton: bool = True
+    compile_action_routing: bool = True
 
     def __post_init__(self) -> None:
         if self.board_size != 10:
@@ -186,6 +211,7 @@ class CudaKaggricultureEnv:
         self.players = 2
         self.max_units = self.config.max_hands + 1
         self.use_triton = self.config.use_triton and self.device.type == "cuda" and TRITON_AVAILABLE
+        self._route_actions = _compiled_route_actions if self.config.compile_action_routing else _route_actions_tensor
         self.step_index = 0
         self.done = False
         self._setup_constants()
@@ -973,27 +999,7 @@ class CudaKaggricultureEnv:
         active = self.state.unit_active[:, :, :unit_limit]
         interaction = (unit_ops >= U_DROP) & active
         if self.use_triton:
-            common = torch.zeros_like(interaction)
-            for supported_op in COMMON_UNIT_OPS:
-                common |= unit_ops == supported_op
-            common &= active
-            inventory_masks = [((unit_ops == supported_op) & active) for supported_op in INVENTORY_UNIT_OPS]
-            inventory = inventory_masks[0] | inventory_masks[1] | inventory_masks[2]
-            supported = common | inventory
-            supported &= active
-            common_by_unit = common.any(dim=(0, 1))
-            inventory_by_kind = [mask.any(dim=(0, 1)) for mask in inventory_masks]
-            unsupported_by_unit = (interaction & ~supported).any(dim=(0, 1))
-            plant_present = ((unit_ops == U_PLANT) & active).any().reshape(1)
-            control = torch.cat(
-                (
-                    common_by_unit,
-                    *inventory_by_kind,
-                    unsupported_by_unit,
-                    actions.market_ops.any().reshape(1),
-                    plant_present,
-                )
-            ).tolist()
+            control = self._route_actions(unit_ops, active, actions.market_ops).tolist()
             common_units = control[:unit_limit]
             inventory_units = [
                 control[(kind + 1) * unit_limit : (kind + 2) * unit_limit] for kind in range(len(INVENTORY_UNIT_OPS))
@@ -1016,6 +1022,12 @@ class CudaKaggricultureEnv:
         # remain sequential in official unit order, but only for slots that have
         # at least one interaction anywhere in the batch.
         if any(unsupported_units) or has_plant_actions:
+            supported = (
+                ((unit_ops >= U_DIG) & (unit_ops <= U_PLANT))
+                | (unit_ops == U_DROP)
+                | (unit_ops == U_PICKUP)
+                | (unit_ops == U_PLACE)
+            ) & active
             plant = (unit_ops == U_PLANT) & active
             crop = actions.unit_args[:, :, :unit_limit].clamp(0, len(CROPS) - 1)
             one_hot = torch.nn.functional.one_hot(crop, len(CROPS)).to(torch.int16)

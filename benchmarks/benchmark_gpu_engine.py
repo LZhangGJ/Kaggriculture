@@ -34,6 +34,7 @@ def main() -> None:
     )
     parser.add_argument("--hands", type=int, default=0, help="active hired hands per player")
     parser.add_argument("--no-triton", action="store_true", help="disable fused Triton interaction kernels")
+    parser.add_argument("--no-compile-routing", action="store_true", help="skip torch.compile for faster cold start")
     args = parser.parse_args()
     if not 0 <= args.hands <= 16:
         parser.error("--hands must be between 0 and 16")
@@ -44,6 +45,7 @@ def main() -> None:
         starting_money=1_000_000_000 if args.profile == "buyproduct" else 3000,
         shed_capacity=100_000 if args.profile == "buyproduct" else 100,
         use_triton=not args.no_triton,
+        compile_action_routing=not args.no_compile_routing,
     )
     env = CudaKaggricultureEnv(args.envs, device=args.device, config=config)
     actions = env.empty_actions()
@@ -103,7 +105,7 @@ def main() -> None:
     elapsed = time.perf_counter() - started
     joint_turns = args.envs * args.steps
     print(
-        f"device={args.device} triton={env.use_triton} profile={args.profile} "
+        f"device={args.device} triton={env.use_triton} compiled_routing={config.compile_action_routing} profile={args.profile} "
         f"hands={args.hands} envs={args.envs} steps={args.steps}"
     )
     print(f"seconds={elapsed:.4f} joint_turns/s={joint_turns / elapsed:,.0f}")
