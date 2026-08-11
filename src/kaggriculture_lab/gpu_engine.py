@@ -24,8 +24,11 @@ from .triton_ops import (
     INVENTORY_UNIT_OPS,
     TRITON_AVAILABLE,
     run_common_interactions,
+    run_decay_plants,
     run_dynamic_market,
+    run_end_of_day,
     run_inventory_interactions,
+    run_move_units,
     run_town_consume,
 )
 
@@ -350,6 +353,9 @@ class CudaKaggricultureEnv:
     def _move_units_dense(self, actions: TensorActions, unit_limit: int) -> None:
         """Advance every active moving unit in one fixed-shape CUDA operation."""
         s = self.state
+        if self.use_triton:
+            run_move_units(s, actions, unit_limit)
+            return
         op = actions.unit_ops[:, :, :unit_limit]
         active = s.unit_active[:, :, :unit_limit]
         x = s.positions[:, :, :unit_limit, 0].long()
@@ -851,6 +857,9 @@ class CudaKaggricultureEnv:
 
     def _decay_plants(self) -> None:
         s = self.state
+        if self.use_triton:
+            run_decay_plants(s, self.step_index)
+            return
         plant = (s.tile_type >= PLANT_BASE) & (s.tile_type < PLANT_BASE + len(CROPS))
         decay = plant & (s.max_lifespan_step >= 0) & (self.step_index >= s.max_lifespan_step) & (((self.step_index - s.max_lifespan_step) % 2) == 0)
         s.yield_units[decay] -= 1
@@ -869,6 +878,9 @@ class CudaKaggricultureEnv:
     def _end_of_day(self, day: int) -> None:
         s = self.state
         cfg = self.config
+        if self.use_triton:
+            run_end_of_day(s, self, day)
+            return
         next_day = day + 1
         plant = (s.tile_type >= PLANT_BASE) & (s.tile_type < PLANT_BASE + len(CROPS))
         was_watered = s.watered.clone()

@@ -382,3 +382,50 @@ def test_triton_dynamic_market_matches_cpu_tensor_engine():
         cpu.step(cpu_actions)
         gpu.step(gpu_actions)
         compare(f"dynamic market step {step}")
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_end_of_day_matches_cpu_with_weeds_unlocks_and_overflow():
+    config = GpuEngineConfig(
+        episode_steps=16,
+        turns_per_day=4,
+        max_hands=2,
+        shed_capacity=5,
+        weed_spawn_chance=0.25,
+        town_shop_unlock_interval=1,
+    )
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[81, 82])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[81, 82])
+
+    # Producing tomato, dying carrot, producing/cared goose, and escaping cow.
+    cpu.state.tile_type[:, :, 0, 0] = PLANT_BASE + 2
+    cpu.state.planted_day[:, :, 0, 0] = -7
+    cpu.state.watered[:, :, 0, 0] = True
+    cpu.state.fertilized_until_day[:, :, 0, 0] = 0
+    cpu.state.tile_type[:, :, 0, 1] = PLANT_BASE + 1
+    cpu.state.consecutive[:, :, 0, 1] = 1
+    cpu.state.tile_type[:, :, 0, 2] = ANIMAL_BASE
+    cpu.state.placed_day[:, :, 0, 2] = -3
+    cpu.state.fed[:, :, 0, 2] = True
+    cpu.state.cared[:, :, 0, 2] = True
+    cpu.state.pending_care_bonus[:, :, 0, 2] = 2
+    cpu.state.tile_type[:, :, 0, 3] = ANIMAL_BASE + 1
+    cpu.state.consecutive[:, :, 0, 3] = 1
+
+    # Item order must fill the remaining three shed slots with wheat first.
+    cpu.state.shed[:, :, 2] = 2
+    cpu.state.unit_inventory[:, :, :, 0] = 2
+    cpu.state.unit_inventory[:, :, :, 1] = 2
+    cpu.state.unit_active.fill_(True)
+    cpu.state.hands_count.fill_(2)
+    cpu.state.positions.fill_(3)
+    for field in fields(type(cpu.state)):
+        getattr(gpu.state, field.name).copy_(getattr(cpu.state, field.name).cuda())
+
+    cpu.step_index = gpu.step_index = config.turns_per_day - 1
+    cpu.step(cpu.empty_actions())
+    gpu.step(gpu.empty_actions())
+    for field in fields(type(cpu.state)):
+        expected = getattr(cpu.state, field.name)
+        actual = getattr(gpu.state, field.name).cpu()
+        assert torch.equal(actual, expected), f"end-of-day mismatch in {field.name}"

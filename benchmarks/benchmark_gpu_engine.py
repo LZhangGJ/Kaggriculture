@@ -85,7 +85,11 @@ def main() -> None:
     prepare_state()
     # Exercise the no-demand, shop-demand, and town-center phases before timing;
     # Triton specializes these branches and caches each variant separately.
-    for _ in range(config.town_center_sell_interval + 1):
+    warmup_steps = max(
+        config.town_center_sell_interval + 1,
+        config.turns_per_day * config.town_shop_unlock_interval + 1,
+    )
+    for _ in range(warmup_steps):
         env.step(actions)
     env.reset()
     prepare_state()

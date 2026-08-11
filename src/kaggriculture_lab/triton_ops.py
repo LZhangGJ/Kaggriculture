@@ -23,6 +23,30 @@ SUPPORTED_UNIT_OPS = INVENTORY_UNIT_OPS + COMMON_UNIT_OPS
 if TRITON_AVAILABLE:
 
     @triton.jit
+    def _move_units_kernel(
+        op_ptr,
+        active_ptr,
+        position_ptr,
+        unit_count,
+        BLOCK: tl.constexpr,
+    ):
+        unit = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = unit < unit_count
+        op = tl.load(op_ptr + unit, mask=valid, other=0).to(tl.int32)
+        active = tl.load(active_ptr + unit, mask=valid, other=0).to(tl.int1)
+        moving = active & (op >= 1) & (op <= 4)
+        position_offset = unit * 2
+        x = tl.load(position_ptr + position_offset, mask=valid, other=0).to(tl.int32)
+        y = tl.load(position_ptr + position_offset + 1, mask=valid, other=0).to(tl.int32)
+        dx = tl.where(op == 3, 1, 0) - tl.where(op == 4, 1, 0)
+        dy = tl.where(op == 2, 1, 0) - tl.where(op == 1, 1, 0)
+        nx = x + dx
+        ny = y + dy
+        update = moving & (nx >= 0) & (nx < 10) & (ny >= 0) & (ny < 10)
+        tl.store(position_ptr + position_offset, nx, mask=valid & update)
+        tl.store(position_ptr + position_offset + 1, ny, mask=valid & update)
+
+    @triton.jit
     def _common_interaction_kernel(
         op_ptr,
         arg_ptr,
@@ -532,6 +556,220 @@ if TRITON_AVAILABLE:
         tl.store(market_prices_ptr + lane, price, mask=valid)
 
 
+    @triton.jit
+    def _decay_plants_kernel(
+        tile_ptr,
+        planted_ptr,
+        placed_ptr,
+        watered_ptr,
+        fed_ptr,
+        cared_ptr,
+        consecutive_ptr,
+        yield_ptr,
+        max_life_ptr,
+        fert_until_ptr,
+        fert_available_ptr,
+        care_bonus_ptr,
+        cell_count,
+        step,
+        BLOCK: tl.constexpr,
+    ):
+        cell = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = cell < cell_count
+        tile = tl.load(tile_ptr + cell, mask=valid, other=0).to(tl.int32)
+        max_life = tl.load(max_life_ptr + cell, mask=valid, other=-1).to(tl.int32)
+        age = step - max_life
+        decay = valid & (tile >= 3) & (tile < 8) & (max_life >= 0) & (age >= 0) & ((age & 1) == 0)
+        old_yield = tl.load(yield_ptr + cell, mask=decay, other=0).to(tl.int32)
+        new_yield = old_yield - 1
+        weed = decay & (new_yield <= 0)
+
+        tl.store(yield_ptr + cell, tl.where(weed, 0, new_yield), mask=decay)
+        tl.store(tile_ptr + cell, 2, mask=weed)
+        tl.store(planted_ptr + cell, -1, mask=weed)
+        tl.store(placed_ptr + cell, -1, mask=weed)
+        tl.store(max_life_ptr + cell, -1, mask=weed)
+        tl.store(fert_until_ptr + cell, -1, mask=weed)
+        tl.store(watered_ptr + cell, 0, mask=weed)
+        tl.store(fed_ptr + cell, 0, mask=weed)
+        tl.store(cared_ptr + cell, 0, mask=weed)
+        tl.store(fert_available_ptr + cell, 0, mask=weed)
+        tl.store(consecutive_ptr + cell, 0, mask=weed)
+        tl.store(care_bonus_ptr + cell, 0, mask=weed)
+
+
+    @triton.jit
+    def _end_of_day_board_kernel(
+        tile_ptr,
+        planted_ptr,
+        placed_ptr,
+        watered_ptr,
+        fed_ptr,
+        cared_ptr,
+        consecutive_ptr,
+        yield_ptr,
+        max_life_ptr,
+        fert_until_ptr,
+        fert_available_ptr,
+        care_bonus_ptr,
+        episode_seed_ptr,
+        cell_count,
+        day,
+        next_day,
+        weed_chance,
+        TURNS_PER_DAY: tl.constexpr,
+        WEED_ENABLED: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        cell = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = cell < cell_count
+        tile = tl.load(tile_ptr + cell, mask=valid, other=0).to(tl.int32)
+        planted_day = tl.load(planted_ptr + cell, mask=valid, other=-1).to(tl.int32)
+        placed_day = tl.load(placed_ptr + cell, mask=valid, other=-1).to(tl.int32)
+        watered = tl.load(watered_ptr + cell, mask=valid, other=0).to(tl.int1)
+        fed = tl.load(fed_ptr + cell, mask=valid, other=0).to(tl.int1)
+        cared = tl.load(cared_ptr + cell, mask=valid, other=0).to(tl.int1)
+        consecutive = tl.load(consecutive_ptr + cell, mask=valid, other=0).to(tl.int32)
+        held_yield = tl.load(yield_ptr + cell, mask=valid, other=0).to(tl.int32)
+        fert_until = tl.load(fert_until_ptr + cell, mask=valid, other=-1).to(tl.int32)
+        care_bonus = tl.load(care_bonus_ptr + cell, mask=valid, other=0).to(tl.int32)
+
+        plant = valid & (tile >= 3) & (tile < 8)
+        plant_consecutive = tl.where(watered, 0, consecutive + 1)
+        dead = plant & (plant_consecutive >= 2)
+        live_plant = plant & ~dead
+        tl.store(consecutive_ptr + cell, plant_consecutive, mask=plant)
+        tl.store(watered_ptr + cell, 0, mask=plant)
+
+        crop = tl.maximum(0, tl.minimum(tile - 3, 4))
+        crop_first = tl.where(crop == 0, 2, tl.where(crop == 1, 2, tl.where(crop == 2, 8, 10)))
+        crop_interval = tl.where(crop == 2, 1, tl.where(crop == 3, 2, 1))
+        crop_max_yield = tl.where(crop == 0, 6, tl.where((crop >= 1) & (crop <= 3), 4, 6))
+        ongoing = (crop == 2) | (crop == 3)
+        plant_age = next_day - planted_day - crop_first
+        production_count = plant_age // crop_interval + 1
+        produce_plant = (
+            live_plant
+            & ongoing
+            & (plant_age >= 0)
+            & ((plant_age % crop_interval) == 0)
+            & (production_count <= crop_max_yield)
+        )
+        fertilized = watered & (fert_until >= day)
+        plant_yield = tl.minimum(held_yield + tl.where(fertilized, 2, 1), crop_max_yield)
+        tl.store(yield_ptr + cell, plant_yield, mask=produce_plant)
+        last_crop = produce_plant & (production_count == crop_max_yield)
+        tl.store(max_life_ptr + cell, (next_day + 1) * TURNS_PER_DAY, mask=last_crop)
+
+        animal = valid & (tile >= 10) & (tile < 13)
+        animal_index = tl.maximum(0, tl.minimum(tile - 10, 2))
+        animal_consecutive = tl.where(fed, 0, consecutive + 1)
+        escaped = animal & (animal_consecutive >= 2)
+        live_animal = animal & ~escaped
+        tl.store(consecutive_ptr + cell, animal_consecutive, mask=animal)
+
+        animal_first = tl.where(animal_index == 0, 4, tl.where(animal_index == 1, 8, 6))
+        animal_interval = tl.where(animal_index == 0, 1, tl.where(animal_index == 1, 2, 3))
+        animal_max_held = tl.where(animal_index == 0, 4, 6)
+        animal_age = next_day - placed_day - animal_first
+        produce_animal = live_animal & (animal_age >= 0) & ((animal_age % animal_interval) == 0)
+        produced_yield = tl.minimum(held_yield + 1 + tl.where(fed, care_bonus, 0), animal_max_held)
+        tl.store(yield_ptr + cell, produced_yield, mask=produce_animal)
+        bank = live_animal & cared & fed
+        next_bonus = tl.where(produce_animal, 0, care_bonus) + tl.where(bank, 1, 0)
+        tl.store(care_bonus_ptr + cell, next_bonus, mask=live_animal & (produce_animal | bank))
+        tl.store(fert_available_ptr + cell, 1, mask=live_animal)
+        tl.store(fed_ptr + cell, 0, mask=live_animal)
+        tl.store(cared_ptr + cell, 0, mask=live_animal)
+
+        clear = dead | escaped
+        escaped_structure = tl.where(animal_index == 0, 8, 9)
+        tl.store(tile_ptr + cell, tl.where(dead, 2, escaped_structure), mask=clear)
+        tl.store(planted_ptr + cell, -1, mask=clear)
+        tl.store(placed_ptr + cell, -1, mask=clear)
+        tl.store(max_life_ptr + cell, -1, mask=clear)
+        tl.store(fert_until_ptr + cell, -1, mask=clear)
+        tl.store(watered_ptr + cell, 0, mask=clear)
+        tl.store(fed_ptr + cell, 0, mask=clear)
+        tl.store(cared_ptr + cell, 0, mask=clear)
+        tl.store(fert_available_ptr + cell, 0, mask=clear)
+        tl.store(consecutive_ptr + cell, 0, mask=clear)
+        tl.store(yield_ptr + cell, 0, mask=clear)
+        tl.store(care_bonus_ptr + cell, 0, mask=clear)
+
+        if WEED_ENABLED:
+            env = cell // 200
+            board_index = cell - env * 200
+            seed = tl.load(episode_seed_ptr + env, mask=valid, other=0)
+            hashed = (seed * 48271 + board_index * 69621 + day * 1000003 + 12345) % 2147483647
+            uniform = hashed.to(tl.float32) / 2147483647.0
+            spawn = valid & (tile == 0) & (uniform < weed_chance)
+            tl.store(tile_ptr + cell, 2, mask=spawn)
+
+
+    @triton.jit
+    def _end_of_day_reset_kernel(
+        unit_inventory_ptr,
+        shed_ptr,
+        position_ptr,
+        unit_active_ptr,
+        hands_count_ptr,
+        hires_today_ptr,
+        shop_counts_ptr,
+        episode_seed_ptr,
+        pair_count,
+        day,
+        SHED_CAPACITY: tl.constexpr,
+        MAX_UNITS: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        SHOP_COUNT: tl.constexpr,
+        SHOP_UNLOCK: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        pair = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = pair < pair_count
+        shed_total = tl.zeros((BLOCK,), tl.int32)
+        for item in tl.static_range(0, ITEM_COUNT):
+            shed_total += tl.load(shed_ptr + pair * ITEM_COUNT + item, mask=valid, other=0).to(tl.int32)
+
+        for item in tl.static_range(0, ITEM_COUNT):
+            carried = tl.zeros((BLOCK,), tl.int32)
+            for unit in tl.static_range(0, MAX_UNITS):
+                inventory_offset = (pair * MAX_UNITS + unit) * ITEM_COUNT + item
+                carried += tl.load(unit_inventory_ptr + inventory_offset, mask=valid, other=0).to(tl.int32)
+                tl.store(unit_inventory_ptr + inventory_offset, 0, mask=valid)
+            room = tl.maximum(SHED_CAPACITY - shed_total, 0)
+            take = tl.minimum(carried, room)
+            shed_offset = pair * ITEM_COUNT + item
+            old_shed = tl.load(shed_ptr + shed_offset, mask=valid, other=0).to(tl.int32)
+            tl.store(shed_ptr + shed_offset, old_shed + take, mask=valid)
+            shed_total += take
+
+        for unit in tl.static_range(0, MAX_UNITS):
+            unit_offset = pair * MAX_UNITS + unit
+            position_offset = unit_offset * 2
+            farmer = unit == 0
+            tl.store(position_ptr + position_offset, tl.where(farmer, 4, 0), mask=valid)
+            tl.store(position_ptr + position_offset + 1, tl.where(farmer, 4, 0), mask=valid)
+            tl.store(unit_active_ptr + unit_offset, farmer, mask=valid)
+        tl.store(hands_count_ptr + pair, 0, mask=valid)
+        tl.store(hires_today_ptr + pair, 0, mask=valid)
+
+        if SHOP_UNLOCK:
+            player = pair & 1
+            env = pair // 2
+            shop_mask = valid & (player == 0)
+            current = tl.zeros((BLOCK,), tl.int32)
+            for shop in tl.static_range(0, SHOP_COUNT):
+                current += tl.load(shop_counts_ptr + env * SHOP_COUNT + shop, mask=shop_mask, other=0).to(tl.int32)
+            seed = tl.load(episode_seed_ptr + env, mask=shop_mask, other=0)
+            hashed = (seed * 48271 + day * 1000003 + 97531) % 2147483647
+            choice = hashed % SHOP_COUNT
+            offset = env * SHOP_COUNT + choice
+            old_count = tl.load(shop_counts_ptr + offset, mask=shop_mask, other=0).to(tl.int32)
+            tl.store(shop_counts_ptr + offset, old_count + 1, mask=shop_mask & (current < SHOP_COUNT))
+
+
 def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int, day: int, max_units: int) -> None:
     """Run supported operations for one unit slot on the current CUDA stream."""
     if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
@@ -563,6 +801,21 @@ def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int
         pair_count,
         MAX_UNITS=max_units,
         ITEM_COUNT=12,
+        BLOCK=block,
+    )
+
+
+def run_move_units(state, actions, unit_limit: int) -> None:
+    """Advance all active moving units in one launch."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 256
+    unit_count = actions.unit_ops.shape[0] * 2 * unit_limit
+    _move_units_kernel[(triton.cdiv(unit_count, block),)](
+        actions.unit_ops,
+        state.unit_active,
+        state.positions,
+        unit_count,
         BLOCK=block,
     )
 
@@ -661,4 +914,81 @@ def run_town_consume(state, engine, *, shop_active: bool, center_active: bool) -
         ITEM_COUNT=item_count,
         SHOP_COUNT=8,
         BLOCK=block,
+    )
+
+
+def run_decay_plants(state, step: int) -> None:
+    """Fuse the full-board decay scan and weed-field reset into one launch."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 256
+    cell_count = state.tile_type.numel()
+    _decay_plants_kernel[(triton.cdiv(cell_count, block),)](
+        state.tile_type,
+        state.planted_day,
+        state.placed_day,
+        state.watered,
+        state.fed,
+        state.cared,
+        state.consecutive,
+        state.yield_units,
+        state.max_lifespan_step,
+        state.fertilized_until_day,
+        state.fertilizer_available,
+        state.pending_care_bonus,
+        cell_count,
+        step,
+        BLOCK=block,
+    )
+
+
+def run_end_of_day(state, engine, day: int) -> None:
+    """Fuse daily board settlement and farm-hand reset into two launches."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    board_block = 256
+    cell_count = state.tile_type.numel()
+    next_day = day + 1
+    _end_of_day_board_kernel[(triton.cdiv(cell_count, board_block),)](
+        state.tile_type,
+        state.planted_day,
+        state.placed_day,
+        state.watered,
+        state.fed,
+        state.cared,
+        state.consecutive,
+        state.yield_units,
+        state.max_lifespan_step,
+        state.fertilized_until_day,
+        state.fertilizer_available,
+        state.pending_care_bonus,
+        engine.episode_seeds,
+        cell_count,
+        day,
+        next_day,
+        engine.config.weed_spawn_chance,
+        TURNS_PER_DAY=engine.config.turns_per_day,
+        WEED_ENABLED=engine.config.weed_spawn_chance > 0,
+        BLOCK=board_block,
+    )
+
+    reset_block = 128
+    pair_count = engine.num_envs * 2
+    _end_of_day_reset_kernel[(triton.cdiv(pair_count, reset_block),)](
+        state.unit_inventory,
+        state.shed,
+        state.positions,
+        state.unit_active,
+        state.hands_count,
+        state.hires_today,
+        state.shop_counts,
+        engine.episode_seeds,
+        pair_count,
+        day,
+        SHED_CAPACITY=engine.config.shed_capacity,
+        MAX_UNITS=engine.max_units,
+        ITEM_COUNT=12,
+        SHOP_COUNT=8,
+        SHOP_UNLOCK=next_day > 0 and next_day % engine.config.town_shop_unlock_interval == 0,
+        BLOCK=reset_block,
     )
