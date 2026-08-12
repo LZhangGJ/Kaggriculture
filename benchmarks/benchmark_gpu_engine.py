@@ -38,6 +38,7 @@ def main() -> None:
     parser.add_argument("--repeats", type=int, default=1, help="timed repetitions reported by median")
     parser.add_argument("--no-triton", action="store_true", help="disable fused Triton interaction kernels")
     parser.add_argument("--no-compile-routing", action="store_true", help="skip torch.compile for faster cold start")
+    parser.add_argument("--fuse-market-kernel", action="store_true", help="process every market order in one kernel")
     args = parser.parse_args()
     if not 0 <= args.hands <= 16:
         parser.error("--hands must be between 0 and 16")
@@ -53,6 +54,7 @@ def main() -> None:
         shed_capacity=100_000 if args.profile == "buyproduct" else 100,
         use_triton=not args.no_triton,
         compile_action_routing=not args.no_compile_routing,
+        fuse_market_kernel=args.fuse_market_kernel,
     )
     env = CudaKaggricultureEnv(args.envs, device=args.device, config=config)
     actions = env.empty_actions()
@@ -117,7 +119,8 @@ def main() -> None:
     elapsed = statistics.median(elapsed_samples)
     joint_turns = args.envs * args.steps
     print(
-        f"device={args.device} triton={env.use_triton} compiled_routing={config.compile_action_routing} profile={args.profile} "
+        f"device={args.device} triton={env.use_triton} compiled_routing={config.compile_action_routing} "
+        f"fused_market_kernel={config.fuse_market_kernel} profile={args.profile} "
         f"hands={args.hands} envs={args.envs} steps={args.steps} warmup={warmup_steps} repeats={args.repeats}"
     )
     if args.repeats > 1:

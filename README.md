@@ -120,17 +120,17 @@ job owned most of the card:
 
 | Batch | Initial hands/player | Workload | Equivalent 720-turn games/s |
 |---:|---:|---|---:|
-| 16,384 | 16 | move actions, 700 turns with official daily hand reset | 34,131.1 |
+| 16,384 | 0 | move actions, 3x700-turn median | 35,976.1 |
 | 16,384 | 16 | mixed board/move, 700 turns with official daily hand reset | 31,912.7 |
 | 16,384 | 16 | all 17 units move, saturated 23-turn day | 25,935.5 |
 | 16,384 | 16 | farmer interacts and 16 hands move, saturated 23-turn day | 22,166.7 |
-| 16,384 | 0 | one fixed-price seed order every turn | 20,634.4 |
+| 16,384 | 0 | one fixed-price seed order, 3x700-turn median | 31,630.9 |
 | 16,384 | 16 | every unit performs a board interaction, saturated 23-turn day | 15,367.5 |
 | 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
 | 16,384 | 16 | every unit performs DROP | 1,119.5 |
 | 16,384 | 16 | every unit performs PLACE | 903.5 |
-| 16,384 | 0 | buy 16 dynamically priced products per turn | 3,677.4 |
-| 16,384 | 0 | sell 16 dynamically priced products per turn | 3,805.6 |
+| 16,384 | 0 | buy 16 dynamically priced products, 3x700-turn median | 31,379.2 |
+| 16,384 | 0 | sell 16 dynamically priced products, 3x700-turn median | 33,140.2 |
 
 Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
@@ -152,8 +152,24 @@ hired hands are reset each day; the 23-turn rows isolate a saturated 17-unit day
 The sparse action classifier is a fixed-shape `torch.compile` graph; use
 `--no-compile-routing` for faster cold starts at lower steady-state throughput.
 
+For RL workloads bounded to 2 market orders and quantities up to 16, enable the
+single-kernel market interpreter. It processes every fixed and dynamically priced
+order on device in exact order, removing the second market routing transfer while
+leaving no-market turns on the smaller action-routing graph:
+
+```python
+config = GpuEngineConfig(
+    max_market_orders=2,
+    max_market_quantity=16,
+    fuse_market_kernel=True,
+)
+```
+
+The general operation-specialized path remains the default for configurations that
+need quantities above 16. The benchmark equivalent is `--fuse-market-kernel`.
+
 Against the optimized 8-process CPU runner at 57.25 games/s, the long-run movement
-profile is about 596x faster, the mixed profile about 557x faster, and the saturated
+profile is about 628x faster, the mixed profile about 557x faster, and the saturated
 all-interaction profile about 268x faster. The first invocation JIT-compiles and
 caches Triton/Inductor kernels; benchmark warm-up excludes this one-time cost. New
 fixed batch/configuration variants can take several minutes to compile, so

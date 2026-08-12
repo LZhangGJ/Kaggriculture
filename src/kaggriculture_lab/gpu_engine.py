@@ -27,6 +27,7 @@ from .triton_ops import (
     run_dynamic_market,
     run_end_of_day,
     run_fixed_market,
+    run_market_orders,
     run_inventory_interactions,
     run_move_units,
     run_town_consume,
@@ -143,6 +144,7 @@ class GpuEngineConfig:
     farm_hand_cost_mult: int = 1
     use_triton: bool = True
     compile_action_routing: bool = True
+    fuse_market_kernel: bool = False
 
     def __post_init__(self) -> None:
         if self.board_size != 10:
@@ -151,6 +153,8 @@ class GpuEngineConfig:
             raise ValueError("max_hands must be positive")
         if self.max_market_orders <= 0 or self.max_market_quantity <= 0:
             raise ValueError("market bounds must be positive")
+        if self.fuse_market_kernel and self.max_market_quantity > 16:
+            raise ValueError("fuse_market_kernel currently supports max_market_quantity <= 16")
 
 
 @dataclass
@@ -778,6 +782,9 @@ class CudaKaggricultureEnv:
         if has_orders is None:
             has_orders = bool(actions.market_ops.any().item())
         if not has_orders:
+            return
+        if self.use_triton and cfg.fuse_market_kernel:
+            run_market_orders(s, actions, self)
             return
         # Market orders are sparse both by slot and operation kind. This second
         # compact transfer only occurs on market turns and avoids launching every

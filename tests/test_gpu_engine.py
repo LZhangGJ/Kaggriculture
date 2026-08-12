@@ -246,6 +246,57 @@ def test_triton_fixed_market_matches_cpu_tensor_engine_across_orders():
 
 
 @pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_single_kernel_market_matches_cpu_across_fixed_and_dynamic_orders():
+    config = GpuEngineConfig(
+        episode_steps=8,
+        starting_money=10_000,
+        weed_spawn_chance=0.0,
+        town_shop_unlock_interval=1000,
+        max_market_orders=2,
+        max_market_quantity=16,
+        shed_capacity=100,
+        fuse_market_kernel=True,
+    )
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[91, 92])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[91, 92])
+    cpu.state.shed[:, :, 0] = 8
+    gpu.state.shed[:, :, 0] = 8
+
+    steps = (
+        (
+            (((M_HIRE, 0, 1), (M_BUY_SEED, 4, 16)), ((M_BUY_LAND, 0, 1), (M_BUY_ANIMAL, 0, 2))),
+            (((M_BUY_SEED, 2, 7), (M_BUY_ANIMAL, 1, 3)), ((M_HIRE, 0, 1), (M_BUY_LAND, 0, 1))),
+        ),
+        (
+            (((M_HIRE, 0, 1), (M_HIRE, 0, 1)), ((M_BUY_LAND, 0, 1), (M_BUY_LAND, 0, 1))),
+            (((M_BUY_SEED, 1, 3), (M_BUY_SEED, 1, 4)), ((M_BUY_ANIMAL, 2, 2), (M_BUY_ANIMAL, 2, 3))),
+        ),
+        (
+            (((M_SELL, 0, 4), (M_BUY_PRODUCT, 8, 3)), ((M_BUY_PRODUCT, 0, 5), (M_SELL, 0, 2))),
+            (((M_BUY_PRODUCT, 0, 6), (M_SELL, 0, 3)), ((M_SELL, 0, 5), (M_BUY_PRODUCT, 8, 4))),
+        ),
+    )
+
+    for step_index, batch_orders in enumerate(steps):
+        cpu_actions, gpu_actions = cpu.empty_actions(), gpu.empty_actions()
+        for batch, players in enumerate(batch_orders):
+            for player, orders in enumerate(players):
+                for order, (op, arg, quantity) in enumerate(orders):
+                    cpu_actions.market_ops[batch, player, order] = op
+                    cpu_actions.market_args[batch, player, order] = arg
+                    cpu_actions.market_quantities[batch, player, order] = quantity
+                    gpu_actions.market_ops[batch, player, order] = op
+                    gpu_actions.market_args[batch, player, order] = arg
+                    gpu_actions.market_quantities[batch, player, order] = quantity
+        cpu.step(cpu_actions)
+        gpu.step(gpu_actions)
+        for field in fields(type(cpu.state)):
+            expected = getattr(cpu.state, field.name)
+            actual = getattr(gpu.state, field.name).cpu()
+            assert torch.equal(actual, expected), f"single market kernel step {step_index}: mismatch in {field.name}"
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
 def test_triton_common_interactions_match_cpu_tensor_engine():
     config = GpuEngineConfig(
         episode_steps=48,
