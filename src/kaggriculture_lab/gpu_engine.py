@@ -296,6 +296,7 @@ class CudaKaggricultureEnv:
             raise ValueError("CUDA engine seeds must be official 31-bit episode seeds in [0, 2**31)")
         self.step_index = 0
         self.done = False
+        self._has_possible_plants = False
 
         tile_type = torch.full((b, p, h, w), LOCKED, device=device, dtype=torch.int8)
         tile_type[:, :, : h // 2, : w // 2] = EMPTY
@@ -927,6 +928,8 @@ class CudaKaggricultureEnv:
     def _decay_plants(self) -> None:
         s = self.state
         if self.use_triton:
+            if not self._has_possible_plants:
+                return
             run_decay_plants(s, self.step_index)
             return
         plant = (s.tile_type >= PLANT_BASE) & (s.tile_type < PLANT_BASE + len(CROPS))
@@ -953,7 +956,22 @@ class CudaKaggricultureEnv:
             return
 
         if self.use_triton:
-            run_official_daily_random_events(self.state, self, day)
+            unresolved, empty_counts = run_official_daily_random_events(self.state, self, day)
+            if unlock_day and bool(unresolved.any().item()):
+                # The CUDA fast path checks all words left in the first MT
+                # block (at least 224 attempts). Preserve the official
+                # unbounded rejection loop for the astronomically unlikely
+                # all-rejected case.
+                for env_index in unresolved.nonzero().flatten().cpu().tolist():
+                    episode_seed = int(self.episode_seeds[env_index].item())
+                    empty_count = int(empty_counts[env_index].item())
+                    rng = random.Random((episode_seed * 1_000_003) ^ day)
+                    for _ in range(empty_count):
+                        rng.random()
+                    chosen_shop = rng.randrange(len(SHOP_NAMES))
+                    sequence_slot = int(self.state.shop_counts[env_index].sum().item())
+                    self.state.shop_counts[env_index, chosen_shop] += 1
+                    self.state.shop_sequence[env_index, sequence_slot] = chosen_shop
             return
 
         state = self.state
@@ -1152,6 +1170,11 @@ class CudaKaggricultureEnv:
                 self._step_unit_dense(actions, unit, day, plant_allowed, active_override)
         self._process_market(actions, has_market_orders)
         self._town_consume()
+        if self.use_triton and has_plant_actions:
+            # Plants can only enter the board through PLANT. Keep this flag
+            # conservative after the first attempted plant so skipping decay
+            # can never suppress a later legal transition.
+            self._has_possible_plants = True
         self._decay_plants()
         if (self.step_index + 1) % self.config.turns_per_day == 0:
             self._end_of_day(day)
