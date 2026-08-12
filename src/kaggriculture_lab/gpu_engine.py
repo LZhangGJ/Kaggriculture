@@ -26,6 +26,7 @@ from .triton_ops import (
     run_decay_plants,
     run_dynamic_market,
     run_end_of_day,
+    run_fixed_market,
     run_inventory_interactions,
     run_move_units,
     run_town_consume,
@@ -113,7 +114,16 @@ def _route_actions_tensor(unit_ops: torch.Tensor, active: torch.Tensor, market_o
     )
 
 
+def _route_market_tensor(market_ops: torch.Tensor, market_quantities: torch.Tensor) -> torch.Tensor:
+    """Return per-kind flags and dynamic round maxima for the sparse market path."""
+    flags = torch.stack(tuple((market_ops == kind).any(dim=(0, 1)) for kind in range(M_HIRE, M_SELL + 1)))
+    dynamic = (market_ops == M_BUY_PRODUCT) | (market_ops == M_SELL)
+    rounds = torch.where(dynamic, market_quantities, torch.zeros_like(market_quantities)).amax(dim=(0, 1))
+    return torch.cat((flags.to(rounds.dtype), rounds.unsqueeze(0)), dim=0)
+
+
 _compiled_route_actions = torch.compile(_route_actions_tensor, fullgraph=True, dynamic=False)
+_compiled_route_market = torch.compile(_route_market_tensor, fullgraph=True, dynamic=False)
 
 
 @dataclass(frozen=True)
@@ -212,6 +222,7 @@ class CudaKaggricultureEnv:
         self.max_units = self.config.max_hands + 1
         self.use_triton = self.config.use_triton and self.device.type == "cuda" and TRITON_AVAILABLE
         self._route_actions = _compiled_route_actions if self.config.compile_action_routing else _route_actions_tensor
+        self._route_market = _compiled_route_market if self.config.compile_action_routing else _route_market_tensor
         self.step_index = 0
         self.done = False
         self._setup_constants()
@@ -768,39 +779,56 @@ class CudaKaggricultureEnv:
             has_orders = bool(actions.market_ops.any().item())
         if not has_orders:
             return
+        # Market orders are sparse both by slot and operation kind. This second
+        # compact transfer only occurs on market turns and avoids launching every
+        # fixed-price path for every empty/mismatched slot.
+        market_control = (
+            self._route_market(actions.market_ops, actions.market_quantities).tolist() if self.use_triton else None
+        )
         for order in range(cfg.max_market_orders):
             op = actions.market_ops[:, :, order]
             arg = actions.market_args[:, :, order]
-            quantity = actions.market_quantities[:, :, order].clamp(0, cfg.max_market_quantity)
-            self._hire(op == M_HIRE)
-            self._buy_land(op == M_BUY_LAND)
+            if self.use_triton:
+                for fixed_kind in (M_HIRE, M_BUY_LAND, M_BUY_SEED, M_BUY_ANIMAL):
+                    if market_control[fixed_kind - 1][order]:
+                        run_fixed_market(s, actions, self, order, fixed_kind)
+            else:
+                quantity = actions.market_quantities[:, :, order].clamp(0, cfg.max_market_quantity)
+                self._hire(op == M_HIRE)
+                self._buy_land(op == M_BUY_LAND)
 
-            # Seeds and animals have fixed prices, unlike products whose quotes
-            # change after every unit. Their sequential official loop therefore
-            # has an exact closed form and can be settled in one GPU pass.
-            crop = arg.clamp(0, len(CROPS) - 1)
-            seed_cost = self.crop_seed_cost[crop]
-            buy_seed = (op == M_BUY_SEED) & (arg >= 0) & (arg < len(CROPS))
-            seed_units = torch.where(buy_seed, torch.minimum(quantity, s.money // seed_cost), 0)
-            s.money.sub_(seed_units * seed_cost)
-            s.seeds.scatter_add_(2, crop.unsqueeze(-1), seed_units.to(s.seeds.dtype).unsqueeze(-1))
+                # Seeds and animals have fixed prices, unlike products whose
+                # quotes change after every unit. Their sequential official loop
+                # has an exact closed form and can be settled in one tensor pass.
+                crop = arg.clamp(0, len(CROPS) - 1)
+                seed_cost = self.crop_seed_cost[crop]
+                buy_seed = (op == M_BUY_SEED) & (arg >= 0) & (arg < len(CROPS))
+                seed_units = torch.where(buy_seed, torch.minimum(quantity, s.money // seed_cost), 0)
+                s.money.sub_(seed_units * seed_cost)
+                s.seeds.scatter_add_(2, crop.unsqueeze(-1), seed_units.to(s.seeds.dtype).unsqueeze(-1))
 
-            animal = arg.clamp(0, len(ANIMALS) - 1)
-            animal_cost = self.animal_cost[animal]
-            buy_animal = (op == M_BUY_ANIMAL) & (arg >= 0) & (arg < len(ANIMALS))
-            shed_room = (cfg.shed_capacity - s.shed.sum(dim=2).long()).clamp_min(0)
-            animal_units = torch.where(
-                buy_animal,
-                torch.minimum(quantity, torch.minimum(s.money // animal_cost, shed_room)),
-                0,
-            )
-            s.money.sub_(animal_units * animal_cost)
-            animal_item = animal + len(PRODUCTS)
-            s.shed.scatter_add_(2, animal_item.unsqueeze(-1), animal_units.to(s.shed.dtype).unsqueeze(-1))
+                animal = arg.clamp(0, len(ANIMALS) - 1)
+                animal_cost = self.animal_cost[animal]
+                buy_animal = (op == M_BUY_ANIMAL) & (arg >= 0) & (arg < len(ANIMALS))
+                shed_room = (cfg.shed_capacity - s.shed.sum(dim=2).long()).clamp_min(0)
+                animal_units = torch.where(
+                    buy_animal,
+                    torch.minimum(quantity, torch.minimum(s.money // animal_cost, shed_room)),
+                    0,
+                )
+                s.money.sub_(animal_units * animal_cost)
+                animal_item = animal + len(PRODUCTS)
+                s.shed.scatter_add_(2, animal_item.unsqueeze(-1), animal_units.to(s.shed.dtype).unsqueeze(-1))
 
-            dynamic_order = (op == M_BUY_PRODUCT) | (op == M_SELL)
-            remaining = torch.where(dynamic_order, quantity, torch.zeros_like(quantity))
-            dynamic_rounds = int(remaining.max().item())
+            has_dynamic = market_control is None or market_control[M_BUY_PRODUCT - 1][order] or market_control[M_SELL - 1][order]
+            if not has_dynamic:
+                continue
+            if self.use_triton:
+                dynamic_rounds = min(max(int(market_control[M_SELL][order]), 0), cfg.max_market_quantity)
+            else:
+                dynamic_order = (op == M_BUY_PRODUCT) | (op == M_SELL)
+                remaining = torch.where(dynamic_order, quantity, torch.zeros_like(quantity))
+                dynamic_rounds = int(remaining.max().item())
             if dynamic_rounds == 0:
                 continue
             if self.use_triton:

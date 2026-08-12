@@ -305,6 +305,132 @@ if TRITON_AVAILABLE:
 
 
     @triton.jit
+    def _fixed_market_kernel(
+        op_ptr,
+        arg_ptr,
+        quantity_ptr,
+        money_ptr,
+        position_ptr,
+        active_ptr,
+        hands_count_ptr,
+        hires_today_ptr,
+        unit_inventory_ptr,
+        unlocked_count_ptr,
+        tile_ptr,
+        shed_ptr,
+        seeds_ptr,
+        hire_cost_ptr,
+        land_price_ptr,
+        seed_cost_ptr,
+        animal_cost_ptr,
+        pair_count,
+        ORDER: tl.constexpr,
+        OP_KIND: tl.constexpr,
+        MARKET_ORDERS: tl.constexpr,
+        MAX_QUANTITY: tl.constexpr,
+        MAX_UNITS: tl.constexpr,
+        ITEM_COUNT: tl.constexpr,
+        CROP_COUNT: tl.constexpr,
+        ANIMAL_COUNT: tl.constexpr,
+        SHED_CAPACITY: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        pair = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid_pair = pair < pair_count
+        action_offset = pair * MARKET_ORDERS + ORDER
+        op = tl.load(op_ptr + action_offset, mask=valid_pair, other=0).to(tl.int32)
+        execute = valid_pair & (op == OP_KIND)
+        money = tl.load(money_ptr + pair, mask=execute, other=0.0).to(tl.float32)
+
+        if OP_KIND == 1:  # HIRE
+            hands = tl.load(hands_count_ptr + pair, mask=execute, other=MAX_UNITS).to(tl.int32)
+            hires = tl.load(hires_today_ptr + pair, mask=execute, other=MAX_UNITS).to(tl.int32)
+            hire_index = tl.maximum(0, tl.minimum(hires, MAX_UNITS - 1))
+            cost = tl.load(hire_cost_ptr + hire_index, mask=execute, other=0.0).to(tl.float32)
+            can_hire = execute & (hands < MAX_UNITS - 1) & (money >= cost)
+
+            occupancy0 = tl.zeros((BLOCK,), tl.int32)
+            occupancy1 = tl.zeros((BLOCK,), tl.int32)
+            occupancy2 = tl.zeros((BLOCK,), tl.int32)
+            occupancy3 = tl.zeros((BLOCK,), tl.int32)
+            for unit in tl.static_range(0, MAX_UNITS):
+                unit_offset = pair * MAX_UNITS + unit
+                active = tl.load(active_ptr + unit_offset, mask=can_hire, other=0).to(tl.int1)
+                position_offset = unit_offset * 2
+                x = tl.load(position_ptr + position_offset, mask=can_hire, other=0).to(tl.int32)
+                y = tl.load(position_ptr + position_offset + 1, mask=can_hire, other=0).to(tl.int32)
+                occupancy0 += active & (x == 4) & (y == 4)
+                occupancy1 += active & (x == 5) & (y == 4)
+                occupancy2 += active & (x == 4) & (y == 5)
+                occupancy3 += active & (x == 5) & (y == 5)
+
+            choose0 = (occupancy0 <= occupancy1) & (occupancy0 <= occupancy2) & (occupancy0 <= occupancy3)
+            choose1 = ~choose0 & (occupancy1 <= occupancy2) & (occupancy1 <= occupancy3)
+            choose2 = ~choose0 & ~choose1 & (occupancy2 <= occupancy3)
+            x = tl.where(choose0 | choose2, 4, 5)
+            y = tl.where(choose0 | choose1, 4, 5)
+            slot = tl.minimum(hands + 1, MAX_UNITS - 1)
+            unit_offset = pair * MAX_UNITS + slot
+            position_offset = unit_offset * 2
+            tl.store(position_ptr + position_offset, x, mask=can_hire)
+            tl.store(position_ptr + position_offset + 1, y, mask=can_hire)
+            tl.store(active_ptr + unit_offset, 1, mask=can_hire)
+            for item in tl.static_range(0, ITEM_COUNT):
+                tl.store(unit_inventory_ptr + unit_offset * ITEM_COUNT + item, 0, mask=can_hire)
+            tl.store(hands_count_ptr + pair, hands + 1, mask=can_hire)
+            tl.store(hires_today_ptr + pair, hires + 1, mask=can_hire)
+            tl.store(money_ptr + pair, money - cost, mask=can_hire)
+
+        elif OP_KIND == 2:  # BUY_LAND
+            unlocked = tl.load(unlocked_count_ptr + pair, mask=execute, other=4).to(tl.int32)
+            stage = tl.maximum(0, tl.minimum(unlocked - 1, 3))
+            cost = tl.load(land_price_ptr + stage, mask=execute, other=0.0).to(tl.float32)
+            can_buy = execute & (unlocked < 4) & (money >= cost)
+            y_base = tl.where(stage == 0, 0, 5)
+            x_base = tl.where(stage == 1, 0, 5)
+            for cell in tl.static_range(0, 25):
+                y = y_base + cell // 5
+                x = x_base + cell % 5
+                board_offset = pair * 100 + y * 10 + x
+                tile = tl.load(tile_ptr + board_offset, mask=can_buy, other=0).to(tl.int32)
+                tl.store(tile_ptr + board_offset, 0, mask=can_buy & (tile == 1))
+            tl.store(unlocked_count_ptr + pair, unlocked + 1, mask=can_buy)
+            tl.store(money_ptr + pair, money - cost, mask=can_buy)
+
+        elif OP_KIND == 3:  # BUY_SEED
+            arg = tl.load(arg_ptr + action_offset, mask=execute, other=-1).to(tl.int32)
+            quantity = tl.load(quantity_ptr + action_offset, mask=execute, other=0).to(tl.int32)
+            quantity = tl.maximum(0, tl.minimum(quantity, MAX_QUANTITY))
+            valid_crop = execute & (arg >= 0) & (arg < CROP_COUNT)
+            crop = tl.maximum(0, tl.minimum(arg, CROP_COUNT - 1))
+            cost = tl.load(seed_cost_ptr + crop, mask=valid_crop, other=1.0).to(tl.float32)
+            affordable = tl.floor(money / cost).to(tl.int32)
+            units = tl.minimum(quantity, affordable)
+            seed_offset = pair * CROP_COUNT + crop
+            seeds = tl.load(seeds_ptr + seed_offset, mask=valid_crop, other=0).to(tl.int32)
+            tl.store(seeds_ptr + seed_offset, seeds + units, mask=valid_crop)
+            tl.store(money_ptr + pair, money - units.to(tl.float32) * cost, mask=valid_crop)
+
+        elif OP_KIND == 5:  # BUY_ANIMAL
+            arg = tl.load(arg_ptr + action_offset, mask=execute, other=-1).to(tl.int32)
+            quantity = tl.load(quantity_ptr + action_offset, mask=execute, other=0).to(tl.int32)
+            quantity = tl.maximum(0, tl.minimum(quantity, MAX_QUANTITY))
+            valid_animal = execute & (arg >= 0) & (arg < ANIMAL_COUNT)
+            animal = tl.maximum(0, tl.minimum(arg, ANIMAL_COUNT - 1))
+            cost = tl.load(animal_cost_ptr + animal, mask=valid_animal, other=1.0).to(tl.float32)
+            shed_total = tl.zeros((BLOCK,), tl.int32)
+            for item in tl.static_range(0, ITEM_COUNT):
+                shed_total += tl.load(shed_ptr + pair * ITEM_COUNT + item, mask=valid_animal, other=0).to(tl.int32)
+            room = tl.maximum(SHED_CAPACITY - shed_total, 0)
+            affordable = tl.floor(money / cost).to(tl.int32)
+            units = tl.minimum(quantity, tl.minimum(affordable, room))
+            shed_offset = pair * ITEM_COUNT + 9 + animal
+            held = tl.load(shed_ptr + shed_offset, mask=valid_animal, other=0).to(tl.int32)
+            tl.store(shed_ptr + shed_offset, held + units, mask=valid_animal)
+            tl.store(money_ptr + pair, money - units.to(tl.float32) * cost, mask=valid_animal)
+
+
+    @triton.jit
     def _market_shape(code, x):
         x = tl.maximum(x, 0.0)
         return tl.where(code == 0, x, tl.where(code == 1, x * x, tl.where(code == 2, tl.sqrt(x), tl.log(x + 1.0))))
@@ -886,6 +1012,44 @@ def run_dynamic_market(state, actions, engine, order: int, rounds: int) -> None:
         ROUNDS=rounds,
         MARKET_ORDERS=engine.config.max_market_orders,
         ITEM_COUNT=12,
+        SHED_CAPACITY=engine.config.shed_capacity,
+        BLOCK=block,
+    )
+
+
+def run_fixed_market(state, actions, engine, order: int, op_kind: int) -> None:
+    """Run one fixed-price/structural market operation in a single launch."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 256
+    pair_count = engine.num_envs * 2
+    _fixed_market_kernel[(triton.cdiv(pair_count, block),)](
+        actions.market_ops,
+        actions.market_args,
+        actions.market_quantities,
+        state.money,
+        state.positions,
+        state.unit_active,
+        state.hands_count,
+        state.hires_today,
+        state.unit_inventory,
+        state.unlocked_count,
+        state.tile_type,
+        state.shed,
+        state.seeds,
+        engine.hire_cost,
+        engine.land_prices,
+        engine.crop_seed_cost,
+        engine.animal_cost,
+        pair_count,
+        ORDER=order,
+        OP_KIND=op_kind,
+        MARKET_ORDERS=engine.config.max_market_orders,
+        MAX_QUANTITY=engine.config.max_market_quantity,
+        MAX_UNITS=engine.max_units,
+        ITEM_COUNT=12,
+        CROP_COUNT=5,
+        ANIMAL_COUNT=3,
         SHED_CAPACITY=engine.config.shed_capacity,
         BLOCK=block,
     )

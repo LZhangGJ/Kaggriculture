@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import statistics
 import time
 
 import torch
@@ -33,11 +34,17 @@ def main() -> None:
         default="move",
     )
     parser.add_argument("--hands", type=int, default=0, help="active hired hands per player")
+    parser.add_argument("--warmup-steps", type=int, default=None, help="override full phase-specialization warmup")
+    parser.add_argument("--repeats", type=int, default=1, help="timed repetitions reported by median")
     parser.add_argument("--no-triton", action="store_true", help="disable fused Triton interaction kernels")
     parser.add_argument("--no-compile-routing", action="store_true", help="skip torch.compile for faster cold start")
     args = parser.parse_args()
     if not 0 <= args.hands <= 16:
         parser.error("--hands must be between 0 and 16")
+    if args.warmup_steps is not None and args.warmup_steps < 0:
+        parser.error("--warmup-steps must be non-negative")
+    if args.repeats <= 0:
+        parser.error("--repeats must be positive")
 
     config = GpuEngineConfig(
         max_market_orders=2,
@@ -87,27 +94,34 @@ def main() -> None:
     prepare_state()
     # Exercise the no-demand, shop-demand, and town-center phases before timing;
     # Triton specializes these branches and caches each variant separately.
-    warmup_steps = max(
-        config.town_center_sell_interval + 1,
-        config.turns_per_day * config.town_shop_unlock_interval + 1,
-    )
+    warmup_steps = args.warmup_steps
+    if warmup_steps is None:
+        warmup_steps = max(
+            config.town_center_sell_interval + 1,
+            config.turns_per_day * config.town_shop_unlock_interval + 1,
+        )
     for _ in range(warmup_steps):
         env.step(actions)
-    env.reset()
-    prepare_state()
-    if args.device.startswith("cuda"):
-        torch.cuda.synchronize()
-    started = time.perf_counter()
-    for _ in range(args.steps):
-        env.step(actions)
-    if args.device.startswith("cuda"):
-        torch.cuda.synchronize()
-    elapsed = time.perf_counter() - started
+    elapsed_samples = []
+    for _ in range(args.repeats):
+        env.reset()
+        prepare_state()
+        if args.device.startswith("cuda"):
+            torch.cuda.synchronize()
+        started = time.perf_counter()
+        for _ in range(args.steps):
+            env.step(actions)
+        if args.device.startswith("cuda"):
+            torch.cuda.synchronize()
+        elapsed_samples.append(time.perf_counter() - started)
+    elapsed = statistics.median(elapsed_samples)
     joint_turns = args.envs * args.steps
     print(
         f"device={args.device} triton={env.use_triton} compiled_routing={config.compile_action_routing} profile={args.profile} "
-        f"hands={args.hands} envs={args.envs} steps={args.steps}"
+        f"hands={args.hands} envs={args.envs} steps={args.steps} warmup={warmup_steps} repeats={args.repeats}"
     )
+    if args.repeats > 1:
+        print("sample_seconds=" + ",".join(f"{sample:.4f}" for sample in elapsed_samples))
     print(f"seconds={elapsed:.4f} joint_turns/s={joint_turns / elapsed:,.0f}")
     print(f"full_720_games/s={(joint_turns / elapsed) / 720:,.1f}")
 

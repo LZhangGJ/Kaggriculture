@@ -11,6 +11,7 @@ research notebooks, and a fast local runner for large self-play experiments.
 - `src/kaggriculture_lab/fast_env.py` — low-overhead CPU training runner
 - `src/kaggriculture_lab/gpu_engine.py` — pure-tensor CUDA transition engine
 - `benchmarks/benchmark_gpu_engine.py` — CUDA transition throughput benchmark
+- `benchmarks/benchmark_fixed_market_kernel.py` — isolated fixed-market Triton microbenchmark
 - `benchmarks/profile_gpu_hotpath.py` — short CPU/CUDA operator-level profiler
 - `tests/test_gpu_engine.py` — stepwise differential tests against the official runner
 
@@ -123,7 +124,7 @@ job owned most of the card:
 | 16,384 | 16 | mixed board/move, 700 turns with official daily hand reset | 31,912.7 |
 | 16,384 | 16 | all 17 units move, saturated 23-turn day | 25,935.5 |
 | 16,384 | 16 | farmer interacts and 16 hands move, saturated 23-turn day | 22,166.7 |
-| 16,384 | 16 | movement + one seed order every turn | 2,951.3 |
+| 16,384 | 0 | one fixed-price seed order every turn | 20,634.4 |
 | 16,384 | 16 | every unit performs a board interaction, saturated 23-turn day | 15,367.5 |
 | 16,384 | 16 | every unit performs PICKUP | 5,922.8 |
 | 16,384 | 16 | every unit performs DROP | 1,119.5 |
@@ -135,10 +136,14 @@ Movement is fused across all active unit slots. Board and inventory interactions
 retain official sequential unit order. DIG, WATER, HARVEST, FERTILIZE, BUILD,
 FEED, COLLECT, CARE, and PLANT run through one optional Triton kernel per active
 unit slot. DROP, PICKUP, and PLACE use separate operation-specialized Triton
-variants so they do not inflate the common board kernel. Fixed-price seed and animal
-orders are settled in a single exact batch. Dynamically priced product buys and
-sales fuse up to 16 sequential quotes and settlements into one Triton launch while
-preserving the official shared pre-settlement price snapshot for both players. The
+variants so they do not inflate the common board kernel. A market-only compiled
+router skips empty order/type combinations. HIRE, BUY_LAND, BUY_SEED, and
+BUY_ANIMAL each use an operation-specialized Triton launch for an active order.
+Dynamically priced product buys and sales fuse up to 16 sequential quotes and
+settlements into one Triton launch while preserving the official shared
+pre-settlement price snapshot for both players. Their maximum round count is
+returned by the same compact market control transfer, avoiding an extra device
+synchronization. The
 town-demand update and all nine price refreshes share one phase-specialized Triton
 launch. Movement, the full-board plant decay scan, and end-of-day board/farm reset
 also use fused kernels. The figures measure transitions only and exclude
@@ -153,6 +158,8 @@ all-interaction profile about 268x faster. The first invocation JIT-compiles and
 caches Triton/Inductor kernels; benchmark warm-up excludes this one-time cost. New
 fixed batch/configuration variants can take several minutes to compile, so
 long-running actors should reuse both cache directories shown above.
+For shared servers, `benchmark_gpu_engine.py --warmup-steps 25 --repeats 3`
+reports the median of several timed runs without repeating process/JIT startup.
 
 ## Verification and benchmark
 

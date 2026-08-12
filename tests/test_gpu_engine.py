@@ -16,7 +16,11 @@ from kaggriculture_lab.gpu_engine import (
     EMPTY,
     GpuEngineConfig,
     LOCKED,
+    M_BUY_ANIMAL,
+    M_BUY_LAND,
     M_BUY_PRODUCT,
+    M_BUY_SEED,
+    M_HIRE,
     M_SELL,
     PASTURE,
     PLANT_BASE,
@@ -185,6 +189,60 @@ def test_gpu_bulk_fixed_price_market_orders_match_official_at_money_limit():
 
     _assert_public_state_matches(gpu, observations)
     assert gpu_result.done == official_result.done
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_fixed_market_matches_cpu_tensor_engine_across_orders():
+    config = GpuEngineConfig(
+        episode_steps=8,
+        starting_money=10_000,
+        weed_spawn_chance=0.0,
+        town_shop_unlock_interval=1000,
+        max_market_orders=4,
+        max_market_quantity=100,
+        shed_capacity=20,
+    )
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[81, 82])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[81, 82])
+    ops = torch.tensor(
+        (
+            ((M_HIRE, M_HIRE, M_BUY_SEED, M_BUY_ANIMAL), (M_BUY_LAND,) * 4),
+            (
+                (M_BUY_SEED, M_BUY_ANIMAL, M_HIRE, M_BUY_LAND),
+                (M_BUY_ANIMAL, M_BUY_ANIMAL, M_BUY_ANIMAL, M_BUY_SEED),
+            ),
+        ),
+        dtype=torch.int64,
+    )
+    args = torch.tensor(
+        (
+            ((0, 0, 4, 0), (0, 0, 0, 0)),
+            ((2, 2, 0, 0), (0, 1, 2, 0)),
+        ),
+        dtype=torch.int64,
+    )
+    quantities = torch.tensor(
+        (
+            ((1, 1, 100, 20), (1, 1, 1, 1)),
+            ((100, 20, 1, 1), (20, 20, 20, 100)),
+        ),
+        dtype=torch.int64,
+    )
+
+    for step in range(2):
+        cpu_actions, gpu_actions = cpu.empty_actions(), gpu.empty_actions()
+        cpu_actions.market_ops.copy_(ops)
+        cpu_actions.market_args.copy_(args)
+        cpu_actions.market_quantities.copy_(quantities)
+        gpu_actions.market_ops.copy_(ops.cuda())
+        gpu_actions.market_args.copy_(args.cuda())
+        gpu_actions.market_quantities.copy_(quantities.cuda())
+        cpu.step(cpu_actions)
+        gpu.step(gpu_actions)
+        for field in fields(type(cpu.state)):
+            expected = getattr(cpu.state, field.name)
+            actual = getattr(gpu.state, field.name).cpu()
+            assert torch.equal(actual, expected), f"fixed market step {step}: mismatch in {field.name}"
 
 
 @pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
