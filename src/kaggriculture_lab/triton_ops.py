@@ -174,6 +174,59 @@ if TRITON_AVAILABLE:
         tl.store(position_ptr + position_offset + 1, ny, mask=valid & update)
 
     @triton.jit
+    def _route_unit_actions_kernel(
+        op_ptr,
+        active_ptr,
+        control_ptr,
+        pair_count,
+        MAX_UNITS: tl.constexpr,
+        BLOCK: tl.constexpr,
+    ):
+        """Pack six sparse-dispatch predicates into one int per unit slot."""
+        unit = tl.program_id(0)
+        lane = tl.arange(0, BLOCK)
+        common = tl.zeros((BLOCK,), tl.int1)
+        drop = tl.zeros((BLOCK,), tl.int1)
+        pickup = tl.zeros((BLOCK,), tl.int1)
+        place = tl.zeros((BLOCK,), tl.int1)
+        unsupported = tl.zeros((BLOCK,), tl.int1)
+        plant = tl.zeros((BLOCK,), tl.int1)
+        for start in tl.range(0, pair_count, BLOCK):
+            pair = start + lane
+            valid = pair < pair_count
+            offset = pair * MAX_UNITS + unit
+            op = tl.load(op_ptr + offset, mask=valid, other=0).to(tl.int32)
+            active = tl.load(active_ptr + offset, mask=valid, other=0).to(tl.int1)
+            is_common = active & (op >= 6) & (op <= 15)
+            is_drop = active & (op == 5)
+            is_pickup = active & (op == 16)
+            is_place = active & (op == 17)
+            common |= is_common
+            drop |= is_drop
+            pickup |= is_pickup
+            place |= is_place
+            unsupported |= active & (op >= 5) & ~is_common & ~is_drop & ~is_pickup & ~is_place
+            plant |= active & (op == 15)
+        packed = tl.max(common.to(tl.int32), axis=0)
+        packed |= tl.max(drop.to(tl.int32), axis=0) << 1
+        packed |= tl.max(pickup.to(tl.int32), axis=0) << 2
+        packed |= tl.max(place.to(tl.int32), axis=0) << 3
+        packed |= tl.max(unsupported.to(tl.int32), axis=0) << 4
+        packed |= tl.max(plant.to(tl.int32), axis=0) << 5
+        tl.store(control_ptr + unit, packed)
+        # The following market kernel is ordered on the same CUDA stream, so
+        # program zero can initialize its atomic reduction target here.
+        tl.store(control_ptr + MAX_UNITS, 0, mask=unit == 0)
+
+    @triton.jit
+    def _route_market_actions_kernel(op_ptr, control_ptr, market_count, output_index, BLOCK: tl.constexpr):
+        offset = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
+        valid = offset < market_count
+        op = tl.load(op_ptr + offset, mask=valid, other=0)
+        present = tl.max((valid & (op != 0)).to(tl.int32), axis=0)
+        tl.atomic_or(control_ptr + output_index, present)
+
+    @triton.jit
     def _common_interaction_kernel(
         op_ptr,
         arg_ptr,
@@ -1313,6 +1366,31 @@ def run_move_units(state, actions, unit_limit: int) -> None:
         state.unit_active,
         state.positions,
         unit_count,
+        BLOCK=block,
+    )
+
+
+def run_action_route(unit_ops, active, market_ops, control, max_units: int) -> None:
+    """Produce packed sparse-dispatch flags with two deterministic launches."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    block = 256
+    pair_count = unit_ops.shape[0] * unit_ops.shape[1]
+    _route_unit_actions_kernel[(max_units,)](
+        unit_ops,
+        active,
+        control,
+        pair_count,
+        MAX_UNITS=max_units,
+        BLOCK=block,
+        num_warps=8,
+    )
+    market_count = market_ops.numel()
+    _route_market_actions_kernel[(triton.cdiv(market_count, block),)](
+        market_ops,
+        control,
+        market_count,
+        max_units,
         BLOCK=block,
     )
 

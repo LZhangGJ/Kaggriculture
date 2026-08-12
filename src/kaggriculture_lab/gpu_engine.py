@@ -25,6 +25,7 @@ except ImportError as exc:  # pragma: no cover
 from .triton_ops import (
     INVENTORY_UNIT_OPS,
     TRITON_AVAILABLE,
+    run_action_route,
     run_common_interactions,
     run_decay_plants,
     run_dynamic_market,
@@ -97,28 +98,6 @@ MARKET_OP_INDEX = {
 }
 
 
-def _route_actions_tensor(unit_ops: torch.Tensor, active: torch.Tensor, market_ops: torch.Tensor) -> torch.Tensor:
-    """Return compact sparse-dispatch flags; compiled as one fixed-shape graph on CUDA."""
-    common = (unit_ops >= U_DIG) & (unit_ops <= U_PLANT) & active
-    drop = (unit_ops == U_DROP) & active
-    pickup = (unit_ops == U_PICKUP) & active
-    place = (unit_ops == U_PLACE) & active
-    inventory = drop | pickup | place
-    interaction = (unit_ops >= U_DROP) & active
-    unsupported = interaction & ~common & ~inventory
-    return torch.cat(
-        (
-            common.any(dim=(0, 1)),
-            drop.any(dim=(0, 1)),
-            pickup.any(dim=(0, 1)),
-            place.any(dim=(0, 1)),
-            unsupported.any(dim=(0, 1)),
-            market_ops.any().reshape(1),
-            ((unit_ops == U_PLANT) & active).any().reshape(1),
-        )
-    )
-
-
 def _route_market_tensor(market_ops: torch.Tensor, market_quantities: torch.Tensor) -> torch.Tensor:
     """Return per-kind flags and dynamic round maxima for the sparse market path."""
     flags = torch.stack(tuple((market_ops == kind).any(dim=(0, 1)) for kind in range(M_HIRE, M_SELL + 1)))
@@ -127,7 +106,6 @@ def _route_market_tensor(market_ops: torch.Tensor, market_quantities: torch.Tens
     return torch.cat((flags.to(rounds.dtype), rounds.unsqueeze(0)), dim=0)
 
 
-_compiled_route_actions = torch.compile(_route_actions_tensor, fullgraph=True, dynamic=False)
 _compiled_route_market = torch.compile(_route_market_tensor, fullgraph=True, dynamic=False)
 
 
@@ -230,8 +208,15 @@ class CudaKaggricultureEnv:
         self.players = 2
         self.max_units = self.config.max_hands + 1
         self.use_triton = self.config.use_triton and self.device.type == "cuda" and TRITON_AVAILABLE
-        self._route_actions = _compiled_route_actions if self.config.compile_action_routing else _route_actions_tensor
         self._route_market = _compiled_route_market if self.config.compile_action_routing else _route_market_tensor
+        self._route_control = torch.empty(self.max_units + 1, device=self.device, dtype=torch.int32)
+        self._route_host = torch.empty(
+            self.max_units + 1,
+            device="cpu",
+            dtype=torch.int32,
+            pin_memory=self.device.type == "cuda",
+        )
+        self._zero_rewards = torch.zeros((self.num_envs, self.players), device=self.device)
         self.step_index = 0
         self.done = False
         self._setup_constants()
@@ -906,21 +891,27 @@ class CudaKaggricultureEnv:
                     malformed = active[:, player] & ~(p_sell | p_buy_product | p_buy_seed | p_buy_animal)
                     remaining[:, player] = torch.where(malformed, torch.zeros_like(p_remaining), p_remaining)
 
-    def _town_consume(self) -> None:
+    def _town_consume(self, has_market_orders: bool = False) -> None:
         s = self.state
         cfg = self.config
+        shop_active = self.step_index % cfg.town_shop_sell_interval == 0
+        center_active = self.step_index % cfg.town_center_sell_interval == 0
+        if not shop_active and not center_active and not has_market_orders:
+            # Inventory and therefore every quote are unchanged on this step.
+            # Avoid launching the full [environment, product] price kernel.
+            return
         if self.use_triton:
             run_town_consume(
                 s,
                 self,
-                shop_active=self.step_index % cfg.town_shop_sell_interval == 0,
-                center_active=self.step_index % cfg.town_center_sell_interval == 0,
+                shop_active=shop_active,
+                center_active=center_active,
             )
             return
-        if self.step_index % cfg.town_shop_sell_interval == 0:
+        if shop_active:
             demand = (s.shop_counts.long().unsqueeze(-1) * self.shop_demand.unsqueeze(0)).sum(dim=1)
             s.market_inventory -= demand.to(s.market_inventory.dtype)
-        if self.step_index % cfg.town_center_sell_interval == 0:
+        if center_active:
             s.market_inventory -= 1
             s.market_inventory[:, PRODUCT_INDEX["FERTILIZER"]] += 1
         self._refresh_prices()
@@ -1097,19 +1088,23 @@ class CudaKaggricultureEnv:
         # dispatch and the market fast path. Processing all 17 position slots is
         # cheaper than synchronizing once more to discover the current hand cap.
         unit_limit = self.max_units
-        unit_ops = actions.unit_ops[:, :, :unit_limit]
-        active = self.state.unit_active[:, :, :unit_limit]
-        interaction = (unit_ops >= U_DROP) & active
+        unit_ops = actions.unit_ops
+        active = self.state.unit_active
         if self.use_triton:
-            control = self._route_actions(unit_ops, active, actions.market_ops).tolist()
-            common_units = control[:unit_limit]
+            run_action_route(unit_ops, active, actions.market_ops, self._route_control, unit_limit)
+            self._route_host.copy_(self._route_control, non_blocking=True)
+            torch.cuda.current_stream(self.device).synchronize()
+            packed = self._route_host.tolist()
+            common_units = [bool(value & 1) for value in packed[:unit_limit]]
             inventory_units = [
-                control[(kind + 1) * unit_limit : (kind + 2) * unit_limit] for kind in range(len(INVENTORY_UNIT_OPS))
+                [bool(value & (1 << (kind + 1))) for value in packed[:unit_limit]]
+                for kind in range(len(INVENTORY_UNIT_OPS))
             ]
-            unsupported_units = control[4 * unit_limit : 5 * unit_limit]
-            has_market_orders = bool(control[-2])
-            has_plant_actions = bool(control[-1])
+            unsupported_units = [bool(value & 16) for value in packed[:unit_limit]]
+            has_market_orders = bool(packed[-1])
+            has_plant_actions = any(value & 32 for value in packed[:unit_limit])
         else:
+            interaction = (unit_ops >= U_DROP) & active
             unsupported_by_unit = interaction.any(dim=(0, 1))
             control = torch.cat((unsupported_by_unit, actions.market_ops.any().reshape(1))).tolist()
             supported = torch.zeros_like(interaction)
@@ -1139,7 +1134,7 @@ class CudaKaggricultureEnv:
                 actions.unit_args[:, :, :unit_limit] < len(CROPS)
             )
         else:
-            plant_allowed = torch.zeros_like(active)
+            plant_allowed = active
 
         for unit in range(unit_limit):
             if common_units[unit]:
@@ -1169,7 +1164,7 @@ class CudaKaggricultureEnv:
                 active_override = ~supported[:, :, unit] if self.use_triton else None
                 self._step_unit_dense(actions, unit, day, plant_allowed, active_override)
         self._process_market(actions, has_market_orders)
-        self._town_consume()
+        self._town_consume(has_market_orders)
         if self.use_triton and has_plant_actions:
             # Plants can only enter the board through PLANT. Keep this flag
             # conservative after the first attempted plant so skipping decay
@@ -1182,7 +1177,7 @@ class CudaKaggricultureEnv:
         terminal = self.step_index >= self.config.episode_steps - 2
         self.step_index += 1
         self.done = terminal
-        rewards = self.state.money.clone() if terminal else torch.zeros_like(self.state.money)
+        rewards = self.state.money.clone() if terminal else self._zero_rewards
         return TensorStep(rewards=rewards, done=terminal, step=self.step_index)
 
     def clone_state(self) -> TensorState:
