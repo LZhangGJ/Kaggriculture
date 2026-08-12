@@ -11,10 +11,12 @@ from kaggriculture_lab import FastKaggricultureEnv
 from kaggriculture_lab.fast_env import resolve_agent
 from kaggriculture_lab.gpu_engine import (
     ANIMAL_BASE,
+    CROPS,
     COOP,
     CudaKaggricultureEnv,
     EMPTY,
     GpuEngineConfig,
+    ITEMS,
     LOCKED,
     M_BUY_ANIMAL,
     M_BUY_LAND,
@@ -25,6 +27,7 @@ from kaggriculture_lab.gpu_engine import (
     PASTURE,
     PLANT_BASE,
     PRODUCT_INDEX,
+    SHOP_NAMES,
     U_FERTILIZE,
     U_HARVEST,
     U_PLANT,
@@ -52,23 +55,108 @@ def _official_tile_code(tile):
     return COOP if tile["kind"] == "COOP" else PASTURE
 
 
-def _assert_public_state_matches(gpu, observations):
+def _assert_public_state_matches(gpu, observations, *, batch=0):
     public = observations[0]
-    np.testing.assert_allclose(gpu.state.money[0].cpu().numpy(), [farm["money"] for farm in public["farms"]])
-    np.testing.assert_array_equal(gpu.state.market_inventory[0].cpu().numpy(), [public["market"]["inventory"][item] for item in PRODUCT_INDEX])
-    np.testing.assert_array_equal(gpu.state.market_prices[0].cpu().numpy(), [public["market"]["prices"][item] for item in PRODUCT_INDEX])
+    assert int(public["step"]) == gpu.step_index, "observation.step"
+    assert int(public["day"]) == gpu.step_index // gpu.config.turns_per_day, "observation.day"
+    assert int(public["hour"]) == gpu.step_index % gpu.config.turns_per_day, "observation.hour"
+    np.testing.assert_array_equal(
+        gpu.state.money[batch].cpu().numpy(),
+        [farm["money"] for farm in public["farms"]],
+        err_msg="farms[*].money",
+    )
+    np.testing.assert_array_equal(
+        gpu.state.market_inventory[batch].cpu().numpy(),
+        [public["market"]["inventory"][item] for item in PRODUCT_INDEX],
+        err_msg="market.inventory",
+    )
+    np.testing.assert_array_equal(
+        gpu.state.market_prices[batch].cpu().numpy(),
+        [public["market"]["prices"][item] for item in PRODUCT_INDEX],
+        err_msg="market.prices",
+    )
+    expected_shop_counts = [public["town"]["unlocked_shops"].count(shop) for shop in SHOP_NAMES]
+    np.testing.assert_array_equal(
+        gpu.state.shop_counts[batch].cpu().numpy(),
+        expected_shop_counts,
+        err_msg="town.unlocked_shops (multiset)",
+    )
     for player in range(2):
         farm = public["farms"][player]
         private = observations[player]["private"]
-        np.testing.assert_array_equal(gpu.state.seeds[0, player].cpu().numpy(), [private["seeds"][crop] for crop in ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON")])
-        np.testing.assert_array_equal(gpu.state.shed[0, player].cpu().numpy(), [private["shed"][item] for item in ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL", "FERTILIZER", "GOOSE", "COW", "SHEEP")])
+        assert int(observations[player]["player"]) == player, f"player {player}: observation.player"
+        assert int(observations[player]["step"]) == gpu.step_index, f"player {player}: observation.step"
+        assert int(observations[player]["day"]) == gpu.step_index // gpu.config.turns_per_day, f"player {player}: observation.day"
+        assert int(observations[player]["hour"]) == gpu.step_index % gpu.config.turns_per_day, f"player {player}: observation.hour"
+        np.testing.assert_array_equal(
+            gpu.state.seeds[batch, player].cpu().numpy(),
+            [private["seeds"][crop] for crop in CROPS],
+            err_msg=f"player {player}: private.seeds",
+        )
+        np.testing.assert_array_equal(
+            gpu.state.shed[batch, player].cpu().numpy(),
+            [private["shed"][item] for item in ITEMS],
+            err_msg=f"player {player}: private.shed",
+        )
         expected_tiles = np.asarray([[_official_tile_code(tile) for tile in row] for row in farm["tiles"]])
-        np.testing.assert_array_equal(gpu.state.tile_type[0, player].cpu().numpy(), expected_tiles)
-        assert int(gpu.state.hands_count[0, player]) == len(farm["hands"])
-        assert int(gpu.state.hires_today[0, player]) == farm["hires_today"]
-        assert int(gpu.state.unlocked_count[0, player]) == len(farm["unlocked_quadrants"])
+        np.testing.assert_array_equal(
+            gpu.state.tile_type[batch, player].cpu().numpy(),
+            expected_tiles,
+            err_msg=f"player {player}: farms.tiles[*].kind",
+        )
+        for y, row in enumerate(farm["tiles"]):
+            for x, tile in enumerate(row):
+                if not isinstance(tile, dict):
+                    continue
+                prefix = f"player {player}: farms.tiles[{y}][{x}]"
+                if tile["kind"] == "PLANT":
+                    assert int(gpu.state.planted_day[batch, player, y, x]) == tile["planted_day"], f"{prefix}.planted_day"
+                    assert bool(gpu.state.watered[batch, player, y, x]) == tile["watered_today"], f"{prefix}.watered_today"
+                    assert int(gpu.state.consecutive[batch, player, y, x]) == tile["consecutive_unwatered"], f"{prefix}.consecutive_unwatered"
+                    assert int(gpu.state.yield_units[batch, player, y, x]) == tile["yield_units"], f"{prefix}.yield_units"
+                    assert int(gpu.state.max_lifespan_step[batch, player, y, x]) == tile["max_lifespan_step"], f"{prefix}.max_lifespan_step"
+                    assert int(gpu.state.fertilized_until_day[batch, player, y, x]) == tile["fertilized_until_day"], f"{prefix}.fertilized_until_day"
+                elif "animal" in tile:
+                    assert int(gpu.state.placed_day[batch, player, y, x]) == tile["placed_day"], f"{prefix}.placed_day"
+                    assert bool(gpu.state.fed[batch, player, y, x]) == tile["fed_today"], f"{prefix}.fed_today"
+                    assert bool(gpu.state.cared[batch, player, y, x]) == tile["cared_today"], f"{prefix}.cared_today"
+                    assert int(gpu.state.consecutive[batch, player, y, x]) == tile["consecutive_unfed"], f"{prefix}.consecutive_unfed"
+                    assert int(gpu.state.yield_units[batch, player, y, x]) == tile["yield_units"], f"{prefix}.yield_units"
+                    assert bool(gpu.state.fertilizer_available[batch, player, y, x]) == tile["fertilizer_available"], f"{prefix}.fertilizer_available"
+                    assert int(gpu.state.pending_care_bonus[batch, player, y, x]) == tile["pending_care_bonus"], f"{prefix}.pending_care_bonus"
+        assert int(gpu.state.hands_count[batch, player]) == len(farm["hands"]), f"player {player}: farms.hands length"
+        assert int(gpu.state.hires_today[batch, player]) == farm["hires_today"], f"player {player}: farms.hires_today"
+        assert int(gpu.state.unlocked_count[batch, player]) == len(farm["unlocked_quadrants"]), f"player {player}: farms.unlocked_quadrants"
         expected_positions = [farm["farmer"], *farm["hands"]]
-        np.testing.assert_array_equal(gpu.state.positions[0, player, : len(expected_positions)].cpu().numpy(), expected_positions)
+        np.testing.assert_array_equal(
+            gpu.state.positions[batch, player, : len(expected_positions)].cpu().numpy(),
+            expected_positions,
+            err_msg=f"player {player}: farmer/hands positions",
+        )
+        assert len(private["inventories"]) == len(expected_positions), f"player {player}: private.inventories length"
+        np.testing.assert_array_equal(
+            gpu.state.unit_active[batch, player].cpu().numpy(),
+            [True] * len(expected_positions) + [False] * (gpu.max_units - len(expected_positions)),
+            err_msg=f"player {player}: active units",
+        )
+        for unit, inventory in enumerate(private["inventories"]):
+            np.testing.assert_array_equal(
+                gpu.state.unit_inventory[batch, player, unit].cpu().numpy(),
+                [inventory.get(item, 0) for item in ITEMS],
+                err_msg=f"player {player}: private.inventories[{unit}]",
+            )
+
+
+def _assert_step_result_matches(gpu_result, official_result):
+    assert gpu_result.step == official_result.step, "step result: step"
+    assert gpu_result.done == official_result.done, "step result: done"
+    expected_status = "DONE" if gpu_result.done else "ACTIVE"
+    assert official_result.statuses == (expected_status, expected_status), "step result: statuses"
+    np.testing.assert_array_equal(
+        gpu_result.rewards[0].cpu().numpy(),
+        official_result.rewards,
+        err_msg="step result: rewards",
+    )
 
 
 def test_gpu_reset_and_pass_step():
@@ -85,12 +173,12 @@ def test_gpu_reset_and_pass_step():
 
 def test_gpu_starter_trajectory_matches_official_without_random_events():
     official_config = {
-        "episodeSteps": 96,
+        "episodeSteps": 720,
         "weedSpawnChance": 0.0,
         "townShopUnlockInterval": 1000,
     }
     tensor_config = GpuEngineConfig(
-        episode_steps=96,
+        episode_steps=720,
         weed_spawn_chance=0.0,
         town_shop_unlock_interval=1000,
         max_market_quantity=8,
@@ -100,6 +188,9 @@ def test_gpu_starter_trajectory_matches_official_without_random_events():
     gpu = CudaKaggricultureEnv(1, device="cpu", config=tensor_config, seeds=[17])
     cuda_gpu = CudaKaggricultureEnv(1, device="cuda", config=tensor_config, seeds=[17]) if torch.cuda.is_available() else None
     starter = resolve_agent("starter")
+    _assert_public_state_matches(gpu, observations)
+    if cuda_gpu:
+        _assert_public_state_matches(cuda_gpu, observations)
 
     while not official.done:
         pair = [starter(observations[player], official.configuration) for player in range(2)]
@@ -109,10 +200,10 @@ def test_gpu_starter_trajectory_matches_official_without_random_events():
         observations = official_result.observations
 
         _assert_public_state_matches(gpu, observations)
-        assert gpu_result.done == official_result.done
+        _assert_step_result_matches(gpu_result, official_result)
         if cuda_gpu:
             _assert_public_state_matches(cuda_gpu, observations)
-            assert cuda_result.done == official_result.done
+            _assert_step_result_matches(cuda_result, official_result)
 
 
 def test_gpu_hire_land_inventory_and_animal_path_matches_official():
@@ -130,6 +221,7 @@ def test_gpu_hire_land_inventory_and_animal_path_matches_official():
     official = FastKaggricultureEnv(configuration=official_config)
     observations = official.reset(seed=23)
     gpu = CudaKaggricultureEnv(1, device="cpu", config=tensor_config, seeds=[23])
+    _assert_public_state_matches(gpu, observations)
 
     def action_for(step):
         market = []
@@ -160,7 +252,7 @@ def test_gpu_hire_land_inventory_and_animal_path_matches_official():
         gpu_result = gpu.step(encode_action_dicts([pair], device="cpu", config=tensor_config))
         observations = official_result.observations
         _assert_public_state_matches(gpu, observations)
-        assert gpu_result.done == official_result.done
+        _assert_step_result_matches(gpu_result, official_result)
 
 
 def test_gpu_bulk_fixed_price_market_orders_match_official_at_money_limit():
@@ -178,6 +270,7 @@ def test_gpu_bulk_fixed_price_market_orders_match_official_at_money_limit():
     official = FastKaggricultureEnv(configuration=official_config)
     observations = official.reset(seed=31)
     gpu = CudaKaggricultureEnv(1, device="cpu", config=tensor_config, seeds=[31])
+    _assert_public_state_matches(gpu, observations)
 
     pair = [
         {"farmer": ["PASS"], "hands": [], "market": [["BUY_SEED", "MELON", 100]]},
@@ -188,7 +281,7 @@ def test_gpu_bulk_fixed_price_market_orders_match_official_at_money_limit():
     observations = official_result.observations
 
     _assert_public_state_matches(gpu, observations)
-    assert gpu_result.done == official_result.done
+    _assert_step_result_matches(gpu_result, official_result)
 
 
 @pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
