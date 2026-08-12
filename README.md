@@ -71,11 +71,15 @@ unit actions, crops, animals, inventory, hiring, land, per-unit market matching,
 town demand, decay, daily refresh, and terminal rewards.
 
 The official dictionary interpreter is still the submission oracle. The tensor
-engine specializes the competition defaults (10x10, two players), caps simultaneous
-hands and per-order quantities at configurable RL-safe bounds, and uses a stateless
-GPU RNG with the same distributions but not Python `random.Random` bit identity.
-With random events disabled, deterministic differential tests compare it directly
-against the official engine.
+engine specializes the competition defaults (10x10, two players) and caps
+simultaneous hands and per-order quantities at configurable RL-safe bounds. Daily
+weed and town-unlock events consume the same Python `random.Random` stream as the
+official engine; full-season differential tests compare every observable field,
+reward, status, and terminal flag step by step.
+
+The CUDA engine accepts the official runner's 31-bit episode-seed domain
+(`0 <= seed < 2**31`). Seeds outside that range are rejected instead of silently
+producing a different random stream.
 
 Related GPU components:
 

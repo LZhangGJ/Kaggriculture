@@ -11,8 +11,11 @@ actions are silent no-ops, matching the official interpreter.
 
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass, fields
 from typing import Any, Mapping, Sequence
+
+import numpy as np
 
 try:
     import torch
@@ -30,6 +33,7 @@ from .triton_ops import (
     run_market_orders,
     run_inventory_interactions,
     run_move_units,
+    run_official_daily_random_events,
     run_town_consume,
 )
 
@@ -193,6 +197,7 @@ class TensorState:
     market_inventory: torch.Tensor
     market_prices: torch.Tensor
     shop_counts: torch.Tensor
+    shop_sequence: torch.Tensor
 
 
 @dataclass(frozen=True)
@@ -287,6 +292,8 @@ class CudaKaggricultureEnv:
         if seeds is None:
             seeds = torch.arange(b, device=device, dtype=torch.int64)
         self.episode_seeds = torch.as_tensor(seeds, device=device, dtype=torch.int64).reshape(b)
+        if bool(((self.episode_seeds < 0) | (self.episode_seeds >= 2**31)).any().item()):
+            raise ValueError("CUDA engine seeds must be official 31-bit episode seeds in [0, 2**31)")
         self.step_index = 0
         self.done = False
 
@@ -324,6 +331,7 @@ class CudaKaggricultureEnv:
             market_inventory=torch.full((b, len(PRODUCTS)), 10000, device=device, dtype=torch.int32),
             market_prices=self.market_base.to(torch.int32).expand(b, -1).clone(),
             shop_counts=torch.zeros((b, len(SHOP_NAMES)), device=device, dtype=torch.int8),
+            shop_sequence=torch.full((b, len(SHOP_NAMES)), -1, device=device, dtype=torch.int8),
         )
         return self.state
 
@@ -928,19 +936,70 @@ class CudaKaggricultureEnv:
         s.tile_type[weed] = WEED
         self._clear_tile_fields(weed)
 
-    def _uniform_board(self, day: int) -> torch.Tensor:
-        # Stateless per-episode LCG hash.  It preserves the official Bernoulli
-        # distribution and determinism, but not Python random.Random bit identity.
-        index = torch.arange(2 * 100, device=self.device, dtype=torch.int64).reshape(1, 2, 10, 10)
-        seed = self.episode_seeds[:, None, None, None]
-        hashed = (seed * 48_271 + index * 69_621 + day * 1_000_003 + 12_345) % 2_147_483_647
-        return hashed.float() / 2_147_483_647.0
+    def _apply_official_daily_random_events(self, day: int) -> None:
+        """Apply weeds and town unlocks with Python's exact official RNG stream.
+
+        The official interpreter creates one ``random.Random`` per environment and
+        day, consumes one ``random()`` call for every currently empty tile in
+        player/y/x order, then draws the optional shop from the same stream.  Daily
+        settlement is infrequent (once per 24 steps), so generating this small
+        event mask on the host preserves bit identity without putting dictionary
+        state or Python work in the regular CUDA hot path.
+        """
+        cfg = self.config
+        next_day = day + 1
+        unlock_day = next_day > 0 and next_day % cfg.town_shop_unlock_interval == 0
+        if cfg.weed_spawn_chance <= 0 and not unlock_day:
+            return
+
+        if self.use_triton:
+            run_official_daily_random_events(self.state, self, day)
+            return
+
+        state = self.state
+        empty = (state.tile_type == EMPTY).detach().cpu().numpy()
+        spawn = np.zeros_like(empty, dtype=np.bool_)
+        episode_seeds = self.episode_seeds.detach().cpu().tolist()
+        shop_totals = (
+            state.shop_counts.sum(dim=1).detach().cpu().numpy()
+            if unlock_day
+            else np.full(self.num_envs, len(SHOP_NAMES), dtype=np.int64)
+        )
+        shop_choices = np.full(self.num_envs, -1, dtype=np.int64)
+
+        for env_index, episode_seed in enumerate(episode_seeds):
+            rng = random.Random((int(episode_seed) * 1_000_003) ^ day)
+            for player in range(self.players):
+                empty_flat = empty[env_index, player].reshape(-1)
+                empty_indices = np.flatnonzero(empty_flat)
+                draws = np.fromiter(
+                    (rng.random() for _ in range(empty_indices.size)),
+                    dtype=np.float64,
+                    count=empty_indices.size,
+                )
+                spawn[env_index, player].reshape(-1)[empty_indices] = draws < cfg.weed_spawn_chance
+            if unlock_day and shop_totals[env_index] < len(SHOP_NAMES):
+                shop_choices[env_index] = rng.randrange(len(SHOP_NAMES))
+
+        if spawn.any():
+            spawn_device = torch.from_numpy(spawn).to(device=self.device)
+            state.tile_type[spawn_device] = WEED
+
+        choice = torch.from_numpy(shop_choices).to(device=self.device)
+        valid = choice >= 0
+        if bool(valid.any().item()):
+            batch = torch.arange(self.num_envs, device=self.device)[valid]
+            chosen_shop = choice[valid].long()
+            sequence_slot = state.shop_counts.sum(dim=1)[valid].long()
+            state.shop_counts[batch, chosen_shop] += 1
+            state.shop_sequence[batch, sequence_slot] = chosen_shop.to(state.shop_sequence.dtype)
 
     def _end_of_day(self, day: int) -> None:
         s = self.state
         cfg = self.config
         if self.use_triton:
             run_end_of_day(s, self, day)
+            self._apply_official_daily_random_events(day)
             return
         next_day = day + 1
         plant = (s.tile_type >= PLANT_BASE) & (s.tile_type < PLANT_BASE + len(CROPS))
@@ -990,10 +1049,6 @@ class CudaKaggricultureEnv:
         s.fed[animal_tile] = False
         s.cared[animal_tile] = False
 
-        if cfg.weed_spawn_chance > 0:
-            spawn = (s.tile_type == EMPTY) & (self._uniform_board(day) < cfg.weed_spawn_chance)
-            s.tile_type[spawn] = WEED
-
         # Fixed item order makes overflow deterministic and GPU-friendly.
         for item in range(len(ITEMS)):
             carried = s.unit_inventory[..., item].sum(dim=2).long()
@@ -1009,13 +1064,7 @@ class CudaKaggricultureEnv:
         s.hands_count.zero_()
         s.hires_today.zero_()
 
-        if next_day > 0 and next_day % cfg.town_shop_unlock_interval == 0:
-            current = s.shop_counts.sum(dim=1)
-            can_unlock = current < 8
-            hashed = (self.episode_seeds * 48_271 + day * 1_000_003 + 97_531) % 2_147_483_647
-            choice = (hashed % len(SHOP_NAMES)).long()
-            batch = torch.arange(self.num_envs, device=self.device)
-            s.shop_counts[batch[can_unlock], choice[can_unlock]] += 1
+        self._apply_official_daily_random_events(day)
 
     def step(self, actions: TensorActions) -> TensorStep:
         if self.done:

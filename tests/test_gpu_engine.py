@@ -81,6 +81,12 @@ def _assert_public_state_matches(gpu, observations, *, batch=0):
         expected_shop_counts,
         err_msg="town.unlocked_shops (multiset)",
     )
+    expected_shop_sequence = [SHOP_NAMES.index(shop) for shop in public["town"]["unlocked_shops"]]
+    np.testing.assert_array_equal(
+        gpu.state.shop_sequence[batch].cpu().numpy(),
+        expected_shop_sequence + [-1] * (len(SHOP_NAMES) - len(expected_shop_sequence)),
+        err_msg="town.unlocked_shops (order)",
+    )
     for player in range(2):
         farm = public["farms"][player]
         private = observations[player]["private"]
@@ -147,13 +153,13 @@ def _assert_public_state_matches(gpu, observations, *, batch=0):
             )
 
 
-def _assert_step_result_matches(gpu_result, official_result):
+def _assert_step_result_matches(gpu_result, official_result, *, batch=0):
     assert gpu_result.step == official_result.step, "step result: step"
     assert gpu_result.done == official_result.done, "step result: done"
     expected_status = "DONE" if gpu_result.done else "ACTIVE"
     assert official_result.statuses == (expected_status, expected_status), "step result: statuses"
     np.testing.assert_array_equal(
-        gpu_result.rewards[0].cpu().numpy(),
+        gpu_result.rewards[batch].cpu().numpy(),
         official_result.rewards,
         err_msg="step result: rewards",
     )
@@ -204,6 +210,71 @@ def test_gpu_starter_trajectory_matches_official_without_random_events():
         if cuda_gpu:
             _assert_public_state_matches(cuda_gpu, observations)
             _assert_step_result_matches(cuda_result, official_result)
+
+
+def test_gpu_default_random_events_match_official_step_by_step():
+    seeds = (0, 42)
+    config = GpuEngineConfig()
+    officials = [FastKaggricultureEnv() for _ in seeds]
+    observations = [official.reset(seed=seed) for official, seed in zip(officials, seeds)]
+    cpu = CudaKaggricultureEnv(len(seeds), device="cpu", config=config, seeds=seeds)
+    cuda = CudaKaggricultureEnv(len(seeds), device="cuda", config=config, seeds=seeds) if torch.cuda.is_available() else None
+    starter = resolve_agent("starter")
+
+    for batch, batch_observations in enumerate(observations):
+        _assert_public_state_matches(cpu, batch_observations, batch=batch)
+        if cuda:
+            _assert_public_state_matches(cuda, batch_observations, batch=batch)
+
+    while not officials[0].done:
+        action_pairs = [
+            [starter(observations[batch][player], official.configuration) for player in range(2)]
+            for batch, official in enumerate(officials)
+        ]
+        official_results = [official.step(pair) for official, pair in zip(officials, action_pairs)]
+        cpu_result = cpu.step(encode_action_dicts(action_pairs, device="cpu", config=config))
+        cuda_result = cuda.step(encode_action_dicts(action_pairs, device="cuda", config=config)) if cuda else None
+
+        for batch, official_result in enumerate(official_results):
+            _assert_public_state_matches(cpu, official_result.observations, batch=batch)
+            _assert_step_result_matches(cpu_result, official_result, batch=batch)
+            if cuda:
+                _assert_public_state_matches(cuda, official_result.observations, batch=batch)
+                _assert_step_result_matches(cuda_result, official_result, batch=batch)
+        observations = [result.observations for result in official_results]
+
+
+def test_gpu_dense_random_event_stream_matches_official_across_seeds():
+    seeds = tuple(range(16))
+    official_config = {
+        "episodeSteps": 12,
+        "turnsPerDay": 1,
+        "weedSpawnChance": 0.25,
+        "townShopUnlockInterval": 1,
+    }
+    config = GpuEngineConfig(
+        episode_steps=12,
+        turns_per_day=1,
+        weed_spawn_chance=0.25,
+        town_shop_unlock_interval=1,
+    )
+    officials = [FastKaggricultureEnv(configuration=official_config) for _ in seeds]
+    observations = [official.reset(seed=seed) for official, seed in zip(officials, seeds)]
+    cpu = CudaKaggricultureEnv(len(seeds), device="cpu", config=config, seeds=seeds)
+    cuda = CudaKaggricultureEnv(len(seeds), device="cuda", config=config, seeds=seeds) if torch.cuda.is_available() else None
+    pass_action = {"farmer": ["PASS"], "hands": [], "market": []}
+
+    while not officials[0].done:
+        action_pairs = [[pass_action, pass_action] for _ in seeds]
+        official_results = [official.step(pair) for official, pair in zip(officials, action_pairs)]
+        cpu_result = cpu.step(encode_action_dicts(action_pairs, device="cpu", config=config))
+        cuda_result = cuda.step(encode_action_dicts(action_pairs, device="cuda", config=config)) if cuda else None
+        for batch, official_result in enumerate(official_results):
+            _assert_public_state_matches(cpu, official_result.observations, batch=batch)
+            _assert_step_result_matches(cpu_result, official_result, batch=batch)
+            if cuda:
+                _assert_public_state_matches(cuda, official_result.observations, batch=batch)
+                _assert_step_result_matches(cuda_result, official_result, batch=batch)
 
 
 def test_gpu_hire_land_inventory_and_animal_path_matches_official():

@@ -23,6 +23,138 @@ SUPPORTED_UNIT_OPS = INVENTORY_UNIT_OPS + COMMON_UNIT_OPS
 if TRITON_AVAILABLE:
 
     @triton.jit
+    def _temper_python_mt(word):
+        word = word.to(tl.uint32)
+        word ^= word >> 11
+        word ^= (word << 7) & 0x9D2C5680
+        word ^= (word << 15) & 0xEFC60000
+        word ^= word >> 18
+        return word
+
+    @triton.jit
+    def _python_mt_init_genrand_kernel(mt_ptr, env_count):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        previous = tl.full((1,), 19_650_218, tl.uint32)
+        tl.store(mt_ptr + env, previous, mask=valid)
+        for index in tl.range(1, 624):
+            previous = (1_812_433_253 * (previous ^ (previous >> 30)) + index).to(tl.uint32)
+            tl.store(mt_ptr + index * env_count + env, previous, mask=valid)
+
+    @triton.jit
+    def _python_mt_mix_key_kernel(mt_ptr, episode_seed_ptr, env_count, day):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        daily_seed = tl.load(episode_seed_ptr + env, mask=valid, other=0).to(tl.int64) * 1_000_003
+        daily_seed ^= day
+        daily_seed = tl.where(daily_seed < 0, -daily_seed, daily_seed).to(tl.uint64)
+        key0 = (daily_seed & 0xFFFFFFFF).to(tl.uint32)
+        key1 = (daily_seed >> 32).to(tl.uint32)
+        two_keys = key1 != 0
+        for iteration in tl.range(0, 623):
+            index = iteration + 1
+            previous = tl.load(mt_ptr + (index - 1) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            current = tl.load(mt_ptr + index * env_count + env, mask=valid, other=0).to(tl.uint32)
+            odd_key = two_keys & ((iteration & 1) != 0)
+            key = tl.where(odd_key, key1, key0)
+            key_index = tl.where(odd_key, 1, 0).to(tl.uint32)
+            updated = ((current ^ ((previous ^ (previous >> 30)) * 1_664_525)) + key + key_index).to(tl.uint32)
+            tl.store(mt_ptr + index * env_count + env, updated, mask=valid)
+        previous = tl.load(mt_ptr + 623 * env_count + env, mask=valid, other=0).to(tl.uint32)
+        tl.store(mt_ptr + env, previous, mask=valid)
+        current = tl.load(mt_ptr + env_count + env, mask=valid, other=0).to(tl.uint32)
+        key = tl.where(two_keys, key1, key0)
+        key_index = tl.where(two_keys, 1, 0).to(tl.uint32)
+        updated = ((current ^ ((previous ^ (previous >> 30)) * 1_664_525)) + key + key_index).to(tl.uint32)
+        tl.store(mt_ptr + env_count + env, updated, mask=valid)
+
+    @triton.jit
+    def _python_mt_finalize_seed_kernel(mt_ptr, env_count):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        for index in tl.range(2, 624):
+            previous = tl.load(mt_ptr + (index - 1) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            current = tl.load(mt_ptr + index * env_count + env, mask=valid, other=0).to(tl.uint32)
+            updated = ((current ^ ((previous ^ (previous >> 30)) * 1_566_083_941)) - index).to(tl.uint32)
+            tl.store(mt_ptr + index * env_count + env, updated, mask=valid)
+        previous = tl.load(mt_ptr + 623 * env_count + env, mask=valid, other=0).to(tl.uint32)
+        tl.store(mt_ptr + env, previous, mask=valid)
+        current = tl.load(mt_ptr + env_count + env, mask=valid, other=0).to(tl.uint32)
+        updated = ((current ^ ((previous ^ (previous >> 30)) * 1_566_083_941)) - 1).to(tl.uint32)
+        tl.store(mt_ptr + env_count + env, updated, mask=valid)
+        tl.store(mt_ptr + env, 0x80000000, mask=valid)
+
+    @triton.jit
+    def _python_mt_twist_first_kernel(mt_ptr, env_count):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        for index in tl.range(0, 227):
+            current = tl.load(mt_ptr + index * env_count + env, mask=valid, other=0).to(tl.uint32)
+            following = tl.load(mt_ptr + (index + 1) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            source = tl.load(mt_ptr + (index + 397) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            joined = (current & 0x80000000) | (following & 0x7FFFFFFF)
+            twisted = source ^ (joined >> 1) ^ tl.where((joined & 1) != 0, 0x9908B0DF, 0).to(tl.uint32)
+            tl.store(mt_ptr + index * env_count + env, twisted, mask=valid)
+
+    @triton.jit
+    def _python_mt_twist_second_kernel(mt_ptr, env_count):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        for index in tl.range(227, 623):
+            current = tl.load(mt_ptr + index * env_count + env, mask=valid, other=0).to(tl.uint32)
+            following = tl.load(mt_ptr + (index + 1) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            source = tl.load(mt_ptr + (index - 227) * env_count + env, mask=valid, other=0).to(tl.uint32)
+            joined = (current & 0x80000000) | (following & 0x7FFFFFFF)
+            twisted = source ^ (joined >> 1) ^ tl.where((joined & 1) != 0, 0x9908B0DF, 0).to(tl.uint32)
+            tl.store(mt_ptr + index * env_count + env, twisted, mask=valid)
+        current = tl.load(mt_ptr + 623 * env_count + env, mask=valid, other=0).to(tl.uint32)
+        following = tl.load(mt_ptr + env, mask=valid, other=0).to(tl.uint32)
+        source = tl.load(mt_ptr + 396 * env_count + env, mask=valid, other=0).to(tl.uint32)
+        joined = (current & 0x80000000) | (following & 0x7FFFFFFF)
+        twisted = source ^ (joined >> 1) ^ tl.where((joined & 1) != 0, 0x9908B0DF, 0).to(tl.uint32)
+        tl.store(mt_ptr + 623 * env_count + env, twisted, mask=valid)
+
+    @triton.jit
+    def _official_daily_random_consume_kernel(
+        tile_ptr, shop_counts_ptr, shop_sequence_ptr, mt_ptr, unresolved_ptr,
+        empty_count_ptr, env_count, weed_threshold,
+        WEED_ENABLED: tl.constexpr, SHOP_UNLOCK: tl.constexpr,
+    ):
+        env = tl.program_id(0) + tl.arange(0, 1)
+        valid = env < env_count
+        output_index = tl.zeros((1,), tl.int32)
+        for cell in tl.range(0, 200):
+            tile_offset = env * 200 + cell
+            tile = tl.load(tile_ptr + tile_offset, mask=valid, other=1).to(tl.int32)
+            empty = valid & (tile == 0)
+            word0 = _temper_python_mt(tl.load(mt_ptr + output_index * env_count + env, mask=valid, other=0))
+            word1 = _temper_python_mt(tl.load(mt_ptr + (output_index + 1) * env_count + env, mask=valid, other=0))
+            numerator = (word0.to(tl.int64) >> 5) * 67_108_864 + (word1.to(tl.int64) >> 6)
+            tl.store(tile_ptr + tile_offset, 2, mask=empty & WEED_ENABLED & (numerator < weed_threshold))
+            output_index += tl.where(empty, 2, 0)
+        tl.store(empty_count_ptr + env, output_index >> 1, mask=valid)
+        searching = tl.zeros((1,), tl.int1)
+        choice = tl.full((1,), -1, tl.int32)
+        if SHOP_UNLOCK:
+            current_shops = tl.zeros((1,), tl.int32)
+            for shop in tl.static_range(0, 8):
+                current_shops += tl.load(shop_counts_ptr + env * 8 + shop, mask=valid, other=0).to(tl.int32)
+            searching = valid & (current_shops < 8)
+            for attempt in tl.range(0, 224):
+                candidate_index = output_index + attempt
+                available = candidate_index < 624
+                word = tl.load(mt_ptr + candidate_index * env_count + env, mask=valid & available, other=0)
+                candidate = (_temper_python_mt(word) >> 28).to(tl.int32)
+                accepted = searching & available & (candidate < 8)
+                choice = tl.where(accepted, candidate, choice)
+                searching &= ~accepted
+            selected = valid & (choice >= 0)
+            old_count = tl.load(shop_counts_ptr + env * 8 + choice, mask=selected, other=0).to(tl.int32)
+            tl.store(shop_counts_ptr + env * 8 + choice, old_count + 1, mask=selected)
+            tl.store(shop_sequence_ptr + env * 8 + current_shops, choice, mask=selected)
+        tl.store(unresolved_ptr + env, searching, mask=valid)
+
+    @triton.jit
     def _move_units_kernel(
         op_ptr,
         active_ptr,
@@ -991,13 +1123,10 @@ if TRITON_AVAILABLE:
         fert_until_ptr,
         fert_available_ptr,
         care_bonus_ptr,
-        episode_seed_ptr,
         cell_count,
         day,
         next_day,
-        weed_chance,
         TURNS_PER_DAY: tl.constexpr,
-        WEED_ENABLED: tl.constexpr,
         BLOCK: tl.constexpr,
     ):
         cell = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
@@ -1076,16 +1205,6 @@ if TRITON_AVAILABLE:
         tl.store(yield_ptr + cell, 0, mask=clear)
         tl.store(care_bonus_ptr + cell, 0, mask=clear)
 
-        if WEED_ENABLED:
-            env = cell // 200
-            board_index = cell - env * 200
-            seed = tl.load(episode_seed_ptr + env, mask=valid, other=0)
-            hashed = (seed * 48271 + board_index * 69621 + day * 1000003 + 12345) % 2147483647
-            uniform = hashed.to(tl.float32) / 2147483647.0
-            spawn = valid & (tile == 0) & (uniform < weed_chance)
-            tl.store(tile_ptr + cell, 2, mask=spawn)
-
-
     @triton.jit
     def _end_of_day_reset_kernel(
         unit_inventory_ptr,
@@ -1094,15 +1213,10 @@ if TRITON_AVAILABLE:
         unit_active_ptr,
         hands_count_ptr,
         hires_today_ptr,
-        shop_counts_ptr,
-        episode_seed_ptr,
         pair_count,
-        day,
         SHED_CAPACITY: tl.constexpr,
         MAX_UNITS: tl.constexpr,
         ITEM_COUNT: tl.constexpr,
-        SHOP_COUNT: tl.constexpr,
-        SHOP_UNLOCK: tl.constexpr,
         BLOCK: tl.constexpr,
     ):
         pair = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
@@ -1133,21 +1247,6 @@ if TRITON_AVAILABLE:
             tl.store(unit_active_ptr + unit_offset, farmer, mask=valid)
         tl.store(hands_count_ptr + pair, 0, mask=valid)
         tl.store(hires_today_ptr + pair, 0, mask=valid)
-
-        if SHOP_UNLOCK:
-            player = pair & 1
-            env = pair // 2
-            shop_mask = valid & (player == 0)
-            current = tl.zeros((BLOCK,), tl.int32)
-            for shop in tl.static_range(0, SHOP_COUNT):
-                current += tl.load(shop_counts_ptr + env * SHOP_COUNT + shop, mask=shop_mask, other=0).to(tl.int32)
-            seed = tl.load(episode_seed_ptr + env, mask=shop_mask, other=0)
-            hashed = (seed * 48271 + day * 1000003 + 97531) % 2147483647
-            choice = hashed % SHOP_COUNT
-            offset = env * SHOP_COUNT + choice
-            old_count = tl.load(shop_counts_ptr + offset, mask=shop_mask, other=0).to(tl.int32)
-            tl.store(shop_counts_ptr + offset, old_count + 1, mask=shop_mask & (current < SHOP_COUNT))
-
 
 def run_common_interactions(state, unit_ops, unit_args, plant_allowed, unit: int, day: int, max_units: int) -> None:
     """Run supported operations for one unit slot on the current CUDA stream."""
@@ -1402,7 +1501,7 @@ def run_decay_plants(state, step: int) -> None:
 
 
 def run_end_of_day(state, engine, day: int) -> None:
-    """Fuse daily board settlement and farm-hand reset into two launches."""
+    """Fuse deterministic daily settlement; the engine applies exact RNG events."""
     if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
         raise RuntimeError("Triton is not available")
     board_block = 256
@@ -1421,13 +1520,10 @@ def run_end_of_day(state, engine, day: int) -> None:
         state.fertilized_until_day,
         state.fertilizer_available,
         state.pending_care_bonus,
-        engine.episode_seeds,
         cell_count,
         day,
         next_day,
-        engine.config.weed_spawn_chance,
         TURNS_PER_DAY=engine.config.turns_per_day,
-        WEED_ENABLED=engine.config.weed_spawn_chance > 0,
         BLOCK=board_block,
     )
 
@@ -1440,14 +1536,55 @@ def run_end_of_day(state, engine, day: int) -> None:
         state.unit_active,
         state.hands_count,
         state.hires_today,
-        state.shop_counts,
-        engine.episode_seeds,
         pair_count,
-        day,
         SHED_CAPACITY=engine.config.shed_capacity,
         MAX_UNITS=engine.max_units,
         ITEM_COUNT=12,
-        SHOP_COUNT=8,
-        SHOP_UNLOCK=next_day > 0 and next_day % engine.config.town_shop_unlock_interval == 0,
         BLOCK=reset_block,
     )
+
+
+def run_official_daily_random_events(state, engine, day: int):
+    """Apply the official CPython MT19937 daily stream entirely on CUDA."""
+    if not TRITON_AVAILABLE:  # pragma: no cover - guarded by caller
+        raise RuntimeError("Triton is not available")
+    env_count = engine.num_envs
+    scratch_shape = (624, env_count)
+    if not hasattr(engine, "_mt_scratch") or tuple(engine._mt_scratch.shape) != scratch_shape:
+        engine._mt_scratch = state.market_inventory.new_empty(scratch_shape)
+        engine._rng_unresolved = state.unit_active.new_empty((env_count,))
+        engine._rng_empty_counts = state.market_inventory.new_empty((env_count,))
+
+    weed_chance = float(engine.config.weed_spawn_chance)
+    if weed_chance <= 0:
+        weed_threshold = 0
+    elif weed_chance >= 1:
+        weed_threshold = 1 << 53
+    else:
+        chance_numerator, chance_denominator = weed_chance.as_integer_ratio()
+        scaled = chance_numerator * (1 << 53)
+        weed_threshold = -(-scaled // chance_denominator)
+    next_day = day + 1
+    grid = (env_count,)
+    kernel_options = {"num_warps": 1}
+    _python_mt_init_genrand_kernel[grid](engine._mt_scratch, env_count, **kernel_options)
+    _python_mt_mix_key_kernel[grid](
+        engine._mt_scratch, engine.episode_seeds, env_count, day, **kernel_options
+    )
+    _python_mt_finalize_seed_kernel[grid](engine._mt_scratch, env_count, **kernel_options)
+    _python_mt_twist_first_kernel[grid](engine._mt_scratch, env_count, **kernel_options)
+    _python_mt_twist_second_kernel[grid](engine._mt_scratch, env_count, **kernel_options)
+    _official_daily_random_consume_kernel[grid](
+        state.tile_type,
+        state.shop_counts,
+        state.shop_sequence,
+        engine._mt_scratch,
+        engine._rng_unresolved,
+        engine._rng_empty_counts,
+        env_count,
+        weed_threshold,
+        WEED_ENABLED=weed_chance > 0,
+        SHOP_UNLOCK=next_day > 0 and next_day % engine.config.town_shop_unlock_interval == 0,
+        **kernel_options,
+    )
+    return engine._rng_unresolved, engine._rng_empty_counts
