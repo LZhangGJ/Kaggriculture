@@ -247,7 +247,12 @@ def test_gpu_default_random_events_match_official_step_by_step():
 
 
 def test_gpu_dense_random_event_stream_matches_official_across_seeds():
-    seeds = tuple(range(16))
+    seeds = (
+        *range(16),
+        *range(1_000_000, 1_000_016),
+        *range(123_456_789, 123_456_805),
+        *range(2**31 - 16, 2**31),
+    )
     official_config = {
         "episodeSteps": 12,
         "turnsPerDay": 1,

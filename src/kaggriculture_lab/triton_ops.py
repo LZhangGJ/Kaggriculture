@@ -113,41 +113,64 @@ if TRITON_AVAILABLE:
     def _official_daily_random_consume_kernel(
         tile_ptr, shop_counts_ptr, shop_sequence_ptr, mt_ptr, unresolved_ptr,
         empty_count_ptr, env_count, weed_threshold,
-        WEED_ENABLED: tl.constexpr, SHOP_UNLOCK: tl.constexpr,
+        WEED_ENABLED: tl.constexpr, SHOP_UNLOCK: tl.constexpr, BLOCK: tl.constexpr,
     ):
-        env = tl.program_id(0) + tl.arange(0, 1)
-        valid = env < env_count
-        output_index = tl.zeros((1,), tl.int32)
-        for cell in tl.range(0, 200):
-            tile_offset = env * 200 + cell
-            tile = tl.load(tile_ptr + tile_offset, mask=valid, other=1).to(tl.int32)
-            empty = valid & (tile == 0)
-            word0 = _temper_python_mt(tl.load(mt_ptr + output_index * env_count + env, mask=valid, other=0))
-            word1 = _temper_python_mt(tl.load(mt_ptr + (output_index + 1) * env_count + env, mask=valid, other=0))
-            numerator = (word0.to(tl.int64) >> 5) * 67_108_864 + (word1.to(tl.int64) >> 6)
-            tl.store(tile_ptr + tile_offset, 2, mask=empty & WEED_ENABLED & (numerator < weed_threshold))
-            output_index += tl.where(empty, 2, 0)
-        tl.store(empty_count_ptr + env, output_index >> 1, mask=valid)
+        env = tl.program_id(0)
+        lane = tl.arange(0, BLOCK)
+        valid_env = env < env_count
+        valid_cell = valid_env & (lane < 200)
+        tile_offset = env * 200 + lane
+        tile = tl.load(tile_ptr + tile_offset, mask=valid_cell, other=1).to(tl.int32)
+        empty = valid_cell & (tile == 0)
+        empty_i32 = empty.to(tl.int32)
+        # random.random() consumes two consecutive MT words for each empty
+        # tile. The exclusive prefix preserves the official flattened order.
+        inclusive_empty = tl.cumsum(empty_i32, axis=0)
+        empty_before = inclusive_empty - empty_i32
+        output_index = empty_before * 2
+        word0 = _temper_python_mt(
+            tl.load(mt_ptr + output_index * env_count + env, mask=empty, other=0)
+        )
+        word1 = _temper_python_mt(
+            tl.load(mt_ptr + (output_index + 1) * env_count + env, mask=empty, other=0)
+        )
+        numerator = (word0.to(tl.int64) >> 5) * 67_108_864 + (word1.to(tl.int64) >> 6)
+        tl.store(tile_ptr + tile_offset, 2, mask=empty & WEED_ENABLED & (numerator < weed_threshold))
+
+        empty_count = tl.sum(empty_i32, axis=0)
+        next_output = empty_count * 2
+        tl.store(empty_count_ptr + env, empty_count, mask=valid_env)
         searching = tl.zeros((1,), tl.int1)
-        choice = tl.full((1,), -1, tl.int32)
         if SHOP_UNLOCK:
-            current_shops = tl.zeros((1,), tl.int32)
-            for shop in tl.static_range(0, 8):
-                current_shops += tl.load(shop_counts_ptr + env * 8 + shop, mask=valid, other=0).to(tl.int32)
-            searching = valid & (current_shops < 8)
-            for attempt in tl.range(0, 224):
-                candidate_index = output_index + attempt
-                available = candidate_index < 624
-                word = tl.load(mt_ptr + candidate_index * env_count + env, mask=valid & available, other=0)
-                candidate = (_temper_python_mt(word) >> 28).to(tl.int32)
-                accepted = searching & available & (candidate < 8)
-                choice = tl.where(accepted, candidate, choice)
-                searching &= ~accepted
-            selected = valid & (choice >= 0)
-            old_count = tl.load(shop_counts_ptr + env * 8 + choice, mask=selected, other=0).to(tl.int32)
+            shop_lane = lane < 8
+            shop_count = tl.load(
+                shop_counts_ptr + env * 8 + lane,
+                mask=valid_env & shop_lane,
+                other=0,
+            ).to(tl.int32)
+            current_shops = tl.sum(tl.where(shop_lane, shop_count, 0), axis=0)
+            searching = valid_env & (current_shops < 8)
+            attempt_valid = searching & (lane < 224) & ((next_output + lane) < 624)
+            word = tl.load(
+                mt_ptr + (next_output + lane) * env_count + env,
+                mask=attempt_valid,
+                other=0,
+            )
+            candidate = (_temper_python_mt(word) >> 28).to(tl.int32)
+            accepted = attempt_valid & (candidate < 8)
+            first_attempt = tl.min(tl.where(accepted, lane, 224), axis=0)
+            found = first_attempt < 224
+            choice = tl.sum(tl.where(lane == first_attempt, candidate, 0), axis=0)
+            selected = searching & found
+            old_count = tl.load(
+                shop_counts_ptr + env * 8 + choice,
+                mask=selected,
+                other=0,
+            ).to(tl.int32)
             tl.store(shop_counts_ptr + env * 8 + choice, old_count + 1, mask=selected)
             tl.store(shop_sequence_ptr + env * 8 + current_shops, choice, mask=selected)
-        tl.store(unresolved_ptr + env, searching, mask=valid)
+            searching &= ~found
+        tl.store(unresolved_ptr + env, searching, mask=valid_env)
 
     @triton.jit
     def _clear_action_route_kernel(control_ptr, count, BLOCK: tl.constexpr):
@@ -1689,7 +1712,7 @@ def consume_official_daily_random_events(state, engine, day: int, scratch):
         weed_threshold = -(-scaled // chance_denominator)
     next_day = day + 1
     grid = (env_count,)
-    kernel_options = {"num_warps": 1}
+    block = 256
     _official_daily_random_consume_kernel[grid](
         state.tile_type,
         state.shop_counts,
@@ -1701,7 +1724,8 @@ def consume_official_daily_random_events(state, engine, day: int, scratch):
         weed_threshold,
         WEED_ENABLED=weed_chance > 0,
         SHOP_UNLOCK=next_day > 0 and next_day % engine.config.town_shop_unlock_interval == 0,
-        **kernel_options,
+        BLOCK=block,
+        num_warps=4,
     )
     return engine._rng_unresolved, engine._rng_empty_counts
 
