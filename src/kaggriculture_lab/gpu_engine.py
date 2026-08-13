@@ -25,7 +25,7 @@ except ImportError as exc:  # pragma: no cover
 from .triton_ops import (
     INVENTORY_UNIT_OPS,
     TRITON_AVAILABLE,
-    run_action_route,
+    run_action_route_and_move,
     run_common_interactions,
     run_decay_plants,
     run_dynamic_market,
@@ -33,7 +33,6 @@ from .triton_ops import (
     run_fixed_market,
     run_market_orders,
     run_inventory_interactions,
-    run_move_units,
     run_official_daily_random_events,
     run_town_consume,
 )
@@ -386,11 +385,8 @@ class CudaKaggricultureEnv:
         flat.scatter_(0, indices, torch.where(mask, value_tensor, old.reshape_as(mask)).reshape(-1))
 
     def _move_units_dense(self, actions: TensorActions, unit_limit: int) -> None:
-        """Advance every active moving unit in one fixed-shape CUDA operation."""
+        """Advance every active moving unit in one fixed-shape tensor operation."""
         s = self.state
-        if self.use_triton:
-            run_move_units(s, actions, unit_limit)
-            return
         op = actions.unit_ops[:, :, :unit_limit]
         active = s.unit_active[:, :, :unit_limit]
         x = s.positions[:, :, :unit_limit, 0].long()
@@ -1091,7 +1087,14 @@ class CudaKaggricultureEnv:
         unit_ops = actions.unit_ops
         active = self.state.unit_active
         if self.use_triton:
-            run_action_route(unit_ops, active, actions.market_ops, self._route_control, unit_limit)
+            run_action_route_and_move(
+                self.state,
+                unit_ops,
+                active,
+                actions.market_ops,
+                self._route_control,
+                unit_limit,
+            )
             self._route_host.copy_(self._route_control, non_blocking=True)
             torch.cuda.current_stream(self.device).synchronize()
             packed = self._route_host.tolist()
@@ -1114,7 +1117,8 @@ class CudaKaggricultureEnv:
             has_market_orders = bool(control[-1])
             has_plant_actions = False
 
-        self._move_units_dense(actions, unit_limit)
+        if not self.use_triton:
+            self._move_units_dense(actions, unit_limit)
         # Movement is independent across units. Board and inventory interactions
         # remain sequential in official unit order, but only for slots that have
         # at least one interaction anywhere in the batch.

@@ -33,6 +33,8 @@ from kaggriculture_lab.gpu_engine import (
     U_PLANT,
     U_BUILD_COOP,
     U_DROP,
+    U_EAST,
+    U_NORTH,
     U_PICKUP,
     U_PLACE,
     U_WATER,
@@ -407,6 +409,38 @@ def test_triton_fixed_market_matches_cpu_tensor_engine_across_orders():
             expected = getattr(cpu.state, field.name)
             actual = getattr(gpu.state, field.name).cpu()
             assert torch.equal(actual, expected), f"fixed market step {step}: mismatch in {field.name}"
+
+
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
+def test_triton_fused_route_moves_and_scans_wide_market_tensor():
+    config = GpuEngineConfig(
+        episode_steps=8,
+        starting_money=10_000,
+        weed_spawn_chance=0.0,
+        town_shop_unlock_interval=1000,
+        max_market_orders=20,
+        max_market_quantity=16,
+    )
+    cpu = CudaKaggricultureEnv(2, device="cpu", config=config, seeds=[83, 84])
+    gpu = CudaKaggricultureEnv(2, device="cuda", config=config, seeds=[83, 84])
+    cpu_actions, gpu_actions = cpu.empty_actions(), gpu.empty_actions()
+    cpu_actions.unit_ops[:, 0, 0] = U_EAST
+    gpu_actions.unit_ops[:, 0, 0] = U_EAST
+    cpu_actions.unit_ops[:, 1, 0] = U_NORTH
+    gpu_actions.unit_ops[:, 1, 0] = U_NORTH
+    cpu_actions.market_ops[:, :, -1] = M_BUY_SEED
+    gpu_actions.market_ops[:, :, -1] = M_BUY_SEED
+    cpu_actions.market_args[:, :, -1] = 4
+    gpu_actions.market_args[:, :, -1] = 4
+    cpu_actions.market_quantities[:, :, -1] = 3
+    gpu_actions.market_quantities[:, :, -1] = 3
+
+    cpu.step(cpu_actions)
+    gpu.step(gpu_actions)
+    for field in fields(type(cpu.state)):
+        expected = getattr(cpu.state, field.name)
+        actual = getattr(gpu.state, field.name).cpu()
+        assert torch.equal(actual, expected), f"fused route mismatch in {field.name}"
 
 
 @pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is unavailable")
