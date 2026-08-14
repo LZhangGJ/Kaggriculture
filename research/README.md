@@ -65,7 +65,7 @@ economic policy, and public-meta analysis.
 8. The final leaderboard uses a single Bradley–Terry tournament after an additional
    two-week episode window. Local evaluation should therefore use diverse opponents,
    both seats, and a Bradley–Terry-style league rather than raw bank alone.
-9. The current replay index covers 12 days, 9,104 top episodes, and 232.5 GiB of raw
+9. The current replay index covers 15 days, 11,157 top episodes, and 292.5 GiB of raw
    replay data. Download it selectively; the manifest is a routing index, not a reason
    to mirror the entire corpus before the training objective is fixed.
 

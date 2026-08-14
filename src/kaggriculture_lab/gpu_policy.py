@@ -428,16 +428,18 @@ def policy_batch(
     device: torch.device | str,
     *,
     deterministic: bool = False,
+    mask_actions: bool = True,
 ) -> PolicyBatch:
     features_np, unit_context_np, _ = encode_batch(observations)
-    unit_masks_np, market_masks_np = action_masks(observations)
     features = torch.as_tensor(features_np, device=device)
     unit_context = torch.as_tensor(unit_context_np, device=device)
-    unit_masks = torch.as_tensor(unit_masks_np, device=device)
-    market_masks = torch.as_tensor(market_masks_np, device=device)
     unit_logits, market_logits, values = model(features, unit_context)
-    unit_logits = _masked(unit_logits, unit_masks)
-    market_logits = _masked(market_logits, market_masks)
+    if mask_actions:
+        unit_masks_np, market_masks_np = action_masks(observations)
+        unit_masks = torch.as_tensor(unit_masks_np, device=device)
+        market_masks = torch.as_tensor(market_masks_np, device=device)
+        unit_logits = _masked(unit_logits, unit_masks)
+        market_logits = _masked(market_logits, market_masks)
     if deterministic:
         unit_indices = unit_logits.argmax(dim=-1)
         market_indices = market_logits.argmax(dim=-1)
@@ -483,4 +485,3 @@ def action_targets(observations: Sequence[Any], actions: Sequence[Mapping[str, A
 
 def flatten_environment_observations(pairs: Iterable[tuple[Any, Any]]) -> list[Any]:
     return [observation for pair in pairs for observation in pair]
-

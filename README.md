@@ -29,6 +29,34 @@ Use a normal wheel install here. On Windows, an editable install writes a `.pth`
 containing the workspace's Chinese path, which Python 3.11 may decode with CP932 and
 reject during startup.
 
+For the native Windows GPU environment, run the pinned setup script. It installs
+PyTorch 2.11 with CUDA 12.8 and the matching Triton-Windows 3.6 runtime, then checks
+that CUDA and Triton can see the local GPU:
+
+```powershell
+.\scripts\setup_windows_gpu.ps1
+```
+
+On RTX 50-series GPUs, keep PyTorch at 2.7 or newer, Triton at 3.3 or newer, and
+CUDA at 12.8 or newer. The script pins a tested combination rather than relying on
+the default PyPI CPU wheel.
+
+## Official replay data
+
+The official daily replay index is the source of truth. This downloads the newest
+published day by default, extracts it under `D:\Kaggriculture\data\raw\replays\YYYY-MM-DD`, and
+validates both the episode count and total bytes against the official manifest:
+
+```powershell
+.\scripts\download_official_replays.ps1
+```
+
+Pass `-Date YYYY-MM-DD` for a specific day, or `-Destination D:\path\to\replays`
+for another D-drive location. The repository's `data` entry is a directory junction
+to `D:\Kaggriculture\data`, so existing relative paths continue to work without
+storing replay files on C. Raw replay data is intentionally ignored by Git; a single
+extracted daily dataset is roughly 20 GiB.
+
 ## Run one fast episode
 
 ```powershell
@@ -106,7 +134,14 @@ For two GPUs, launch independent actor/trainer processes with disjoint seeds and
 `CUDA_VISIBLE_DEVICES=0` / `CUDA_VISIBLE_DEVICES=1`.  A single process intentionally
 uses one GPU so transition state and policy tensors never cross devices.
 
-On `doraemon03` the deployed checkout is `/homes/lzhang/Kaggriculture`. The reusable
+The native Windows setup was validated on an RTX 5070 Ti (16 GiB) with PyTorch
+2.11.0+cu128 and Triton-Windows 3.6.0. A 4,096-environment movement benchmark
+reached a median 24.87 million joint turns/s, equivalent to 34,538 complete
+720-turn games/s; all 24 CPU, CUDA, Triton, and official-engine differential tests
+passed. Use short cache paths outside the OneDrive checkout as configured by the
+setup script.
+
+On `doraemon02` the previous deployed checkout is `/homes/lzhang/Kaggriculture`. The reusable
 environment is `.venv`, backed by PyTorch 2.5.1 + CUDA 11.8 from the existing
 `trans` environment:
 

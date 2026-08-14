@@ -1,0 +1,1015 @@
+{
+  "checkpoints": [
+    {
+      "bytes": 12219586,
+      "file": "bc_v0.pt",
+      "metadata": {
+        "dataset": "D:\\Kaggriculture\\data\\processed\\bc_v0",
+        "epoch": 3,
+        "hidden_size": 512,
+        "schema_version": 1,
+        "validation": {
+          "loss": 1.9780154512042092,
+          "market_accuracy": 0.7918005540166205,
+          "market_correct": 7146.0,
+          "market_count": 9025.0,
+          "market_loss": 0.6177068281741369,
+          "unit_accuracy": 0.5814354972212369,
+          "unit_correct": 49172.0,
+          "unit_count": 84570.0,
+          "unit_loss": 1.1113589434396653,
+          "value_loss": 0.9957987495831081
+        }
+      },
+      "parameters": 3053432,
+      "sha256": "2d6b6870f72f4d2162fb9450c8404cd5fec4fa311be12108bf5c641d1cd5834d"
+    },
+    {
+      "bytes": 12220574,
+      "file": "bc_v0_e15.pt",
+      "metadata": {
+        "dataset": "D:\\Kaggriculture\\data\\processed\\bc_v0",
+        "epoch": 14,
+        "hidden_size": 512,
+        "schema_version": 1,
+        "validation": {
+          "loss": 1.0138648450374603,
+          "market_accuracy": 0.8756786703601108,
+          "market_correct": 7903.0,
+          "market_count": 9025.0,
+          "market_loss": 0.39028894085259663,
+          "unit_accuracy": 0.8992787040321627,
+          "unit_correct": 76052.0,
+          "unit_count": 84570.0,
+          "unit_loss": 0.3782888519622031,
+          "value_loss": 0.9811482145672753
+        }
+      },
+      "parameters": 3053432,
+      "sha256": "bbfc71e61dd1667b282164f8e185370abcfb95d2b0153e8b9805342ac3240939"
+    },
+    {
+      "bytes": 12220689,
+      "file": "bc_v0_unmasked.pt",
+      "metadata": {
+        "dataset": "D:\\Kaggriculture\\data\\processed\\bc_v0",
+        "epoch": 14,
+        "hidden_size": 512,
+        "schema_version": 1,
+        "validation": {
+          "loss": 1.5627179372878301,
+          "market_accuracy": 0.834790383469104,
+          "market_correct": 8403.0,
+          "market_count": 10066.0,
+          "market_loss": 0.5170227214694023,
+          "unit_accuracy": 0.7537757878275028,
+          "unit_correct": 70371.0,
+          "unit_count": 93358.0,
+          "unit_loss": 0.8000975506646293,
+          "value_loss": 0.9823906790642511
+        }
+      },
+      "parameters": 3053432,
+      "sha256": "f76a88809f8976ec3ba14223b03b6334f85f16433a4486a9b6611adb235a3baf"
+    },
+    {
+      "bytes": 44186923,
+      "file": "ppo_frozen_pool_market_r1.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "components": "market",
+          "history": [
+            {
+              "approx_kl": 0.0004098354735516853,
+              "clip_fraction": 0.007915427378799406,
+              "entropy": 0.16176456291108363,
+              "games": 22,
+              "iteration": 1,
+              "losses": 17,
+              "mean_margin": -4578.5908203125,
+              "mean_return": -0.4947308301925659,
+              "policy_loss": -0.00023809788117726003,
+              "samples": 15818,
+              "score_rate": 0.22727272727272727,
+              "seed_start": 60000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 1.8274082993307421,
+              "wins": 5
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 1.0,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "de6a3aa25d19701824a193c60fb7599ab4c6ee278c254a2008c69869eb26d4e9"
+    },
+    {
+      "bytes": 44187051,
+      "file": "ppo_frozen_pool_market_r2.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "components": "market",
+          "history": [
+            {
+              "approx_kl": 0.0004098354735516853,
+              "clip_fraction": 0.007915427378799406,
+              "entropy": 0.16176456291108363,
+              "games": 22,
+              "iteration": 1,
+              "losses": 17,
+              "mean_margin": -4578.5908203125,
+              "mean_return": -0.4947308301925659,
+              "policy_loss": -0.00023809788117726003,
+              "samples": 15818,
+              "score_rate": 0.22727272727272727,
+              "seed_start": 60000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 1.8274082993307421,
+              "wins": 5
+            },
+            {
+              "approx_kl": 0.00015699471001543345,
+              "clip_fraction": 0.006523100640474548,
+              "entropy": 0.161791602930715,
+              "games": 22,
+              "iteration": 2,
+              "losses": 21,
+              "mean_margin": -4560.27294921875,
+              "mean_return": -0.7764947414398193,
+              "policy_loss": -8.677148200090855e-05,
+              "samples": 15818,
+              "score_rate": 0.045454545454545456,
+              "seed_start": 60001,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 2.1194513007517783,
+              "wins": 1
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 1.0,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "3c79783fc67acd2b50741473a1a9f2e06b29c36b6677af90fe2988261e50e93d"
+    },
+    {
+      "bytes": 44187259,
+      "file": "ppo_frozen_pool_market_s100_smoke.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "components": "market",
+          "history": [
+            {
+              "approx_kl": -0.00017090539525573453,
+              "clip_fraction": 0.0078125,
+              "entropy": 0.15505795180797577,
+              "games": 4,
+              "iteration": 1,
+              "losses": 1,
+              "mean_margin": 1395.0,
+              "mean_return": 0.4085046648979187,
+              "policy_loss": 0.007182358919332425,
+              "samples": 2876,
+              "score_rate": 0.75,
+              "seed_start": 59000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 0.5960351477066675,
+              "wins": 3
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 1.0,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "c4a02f488d3b812fc34e9333aa44dd233ee70eabd8fe7cc75d7c9b7490bcf981"
+    },
+    {
+      "bytes": 44187217,
+      "file": "ppo_frozen_pool_market_s50_smoke.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "components": "market",
+          "history": [
+            {
+              "approx_kl": 9.034573061702152e-05,
+              "clip_fraction": 0.005208333333333333,
+              "entropy": 0.542734295129776,
+              "games": 4,
+              "iteration": 1,
+              "losses": 4,
+              "mean_margin": -153516.25,
+              "mean_return": -1.0,
+              "policy_loss": 0.000886719673871994,
+              "samples": 2876,
+              "score_rate": 0.0,
+              "seed_start": 59000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 1.847143958012263,
+              "wins": 0
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 0.5,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "ddd96eba91994f3d36e24f8fb7e68bb989a2f1b560a394f34dd2495589a5ecca"
+    },
+    {
+      "bytes": 44187049,
+      "file": "ppo_frozen_pool_market_smoke.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "components": "market",
+          "history": [
+            {
+              "approx_kl": 4.967017836558322e-05,
+              "clip_fraction": 0.00390625,
+              "entropy": 1.0330643306175868,
+              "games": 4,
+              "iteration": 1,
+              "losses": 4,
+              "mean_margin": -153170.75,
+              "mean_return": -1.0,
+              "policy_loss": 0.006408414337784052,
+              "samples": 2876,
+              "score_rate": 0.0,
+              "seed_start": 59000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 1.6953146855036418,
+              "wins": 0
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 0.25,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "f3977ddc8cd38108e14557435ecb24b1b0b11205e850e55337814a22aebdfc36"
+    },
+    {
+      "bytes": 44186563,
+      "file": "ppo_frozen_pool_smoke.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "ppo": {
+          "history": [
+            {
+              "approx_kl": 0.0005441058074211469,
+              "clip_fraction": 0.023198784794658422,
+              "entropy": 1.9941571752230327,
+              "games": 4,
+              "iteration": 1,
+              "losses": 4,
+              "mean_margin": -140690.75,
+              "mean_return": -1.0,
+              "policy_loss": 0.002697211612636844,
+              "samples": 2876,
+              "score_rate": 0.0,
+              "seed_start": 59000,
+              "steps": 719,
+              "ties": 0,
+              "value_loss": 0.8641011714935303,
+              "wins": 0
+            }
+          ],
+          "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+          "route_scale": 0.25,
+          "source_checkpoint": "D:\\Kaggriculture\\artifacts\\teacher_bc_v2_v17_pool_ft1.pt"
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "42db48f6d6cd6bc20127aa63a5b40d286375fdbdf3c04e4477564b6d195d639f"
+    },
+    {
+      "bytes": 22901615,
+      "file": "teacher_bc_v2_rc5_dagger1.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 5722029,
+      "sha256": "b79fe4ceca02818e7e9485112a25b0692c122dda4e15283b48bae2ea7f1f8258"
+    },
+    {
+      "bytes": 44186471,
+      "file": "teacher_bc_v2_rc5_dagger1_route.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 1,
+        "hidden_size": 768,
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9912378303198888,
+          "exact_actions": 7127.0,
+          "examples": 7190.0,
+          "loss": 0.05097025929717347,
+          "market_loss": 0.000370469313080927,
+          "market_order_accuracy": 1.0,
+          "market_order_correct": 6207.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0035183444387257624,
+          "market_slot_accuracy": 0.9998470097357441,
+          "market_slot_correct": 71889.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9980883237391528,
+          "unit_correct": 46467.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.01254230064563065,
+          "unit_quantity_loss": 3.020476322982783e-07,
+          "value_loss": 0.36825962356136493
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "5cf5d4cb1f0b1c909357743387ad821c75c5a1d8bc1c4adc3a111e34771cd3e9"
+    },
+    {
+      "bytes": 44186175,
+      "file": "teacher_bc_v2_rc5_route_s10.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 10.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "16e80f9146ee56dc71eca40c781252ae5a9c7a1c9ae4bb24c2748d22d75479d2"
+    },
+    {
+      "bytes": 44186175,
+      "file": "teacher_bc_v2_rc5_route_s20.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 20.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "d890c72e6045a323f4a34cbc8c3e802cf3209ff845d88f87c1a7ff165c56b393"
+    },
+    {
+      "bytes": 44186175,
+      "file": "teacher_bc_v2_rc5_route_s30.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 30.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "fa5fa6ab10a357264e01f11e4b5fd3090ff30ab607f378b59f4cbf3e98d7b016"
+    },
+    {
+      "bytes": 44186175,
+      "file": "teacher_bc_v2_rc5_route_s40.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 40.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "c8fb55d7bb5a2f5c59360912c4ce3e517b4929804244a95771b8a9e0c22653a8"
+    },
+    {
+      "bytes": 44186133,
+      "file": "teacher_bc_v2_rc5_route_s5.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 5.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "f3c6b553cd89cfb0bd878a2c391931ef3953db9c32b9111a7729623e36528e1d"
+    },
+    {
+      "bytes": 44186175,
+      "file": "teacher_bc_v2_rc5_route_s60.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+          ],
+          "examples": 71900,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 766,
+            "unit": 13344,
+            "unit_quantity": 298
+          },
+          "strength": 60.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "b5b40f6e23c59409ca97b8114765389d7350cedc72df901fcc5aabe3d2230296"
+    },
+    {
+      "bytes": 22901207,
+      "file": "teacher_bc_v2_rc5_s12.pt",
+      "metadata": {
+        "dataset": "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+        "epoch": 14,
+        "hidden_size": 768,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.992814093648586,
+          "exact_actions": 4283.0,
+          "examples": 4314.0,
+          "loss": 0.07229076300023331,
+          "market_loss": 0.0012162805756411722,
+          "market_order_accuracy": 0.9989339019189766,
+          "market_order_correct": 3748.0,
+          "market_order_count": 3752.0,
+          "market_quantity_accuracy": 0.9981447124304267,
+          "market_quantity_correct": 2152.0,
+          "market_quantity_count": 2156.0,
+          "market_quantity_loss": 0.0074563476947433725,
+          "market_slot_accuracy": 0.9997681965693093,
+          "market_slot_correct": 43130.0,
+          "market_slot_count": 43140.0,
+          "unit_accuracy": 0.9994223188799782,
+          "unit_correct": 29411.0,
+          "unit_count": 29428.0,
+          "unit_loss": 0.004663813969172124,
+          "unit_quantity_loss": 5.744417937118366e-05,
+          "value_loss": 0.6378084045524398
+        }
+      },
+      "parameters": 5722029,
+      "sha256": "a9841bce1916d2d366ad795cf0344f18a31cef6c305bbb644aeee3481b6aeba4"
+    },
+    {
+      "bytes": 44186261,
+      "file": "teacher_bc_v2_v17_pool_ft1.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+        ],
+        "epoch": 8,
+        "hidden_size": 768,
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9488376713689648,
+          "exact_actions": 19102.0,
+          "examples": 20132.0,
+          "loss": 0.23887801599145556,
+          "market_loss": 0.09431791770679238,
+          "market_order_accuracy": 0.9483640081799591,
+          "market_order_correct": 25970.0,
+          "market_order_count": 27384.0,
+          "market_quantity_accuracy": 0.9370529327610873,
+          "market_quantity_correct": 18340.0,
+          "market_quantity_count": 19572.0,
+          "market_quantity_loss": 0.2609847388133251,
+          "market_slot_accuracy": 0.9925193721438506,
+          "market_slot_correct": 199814.0,
+          "market_slot_count": 201320.0,
+          "unit_accuracy": 0.9995524619855946,
+          "unit_correct": 189843.0,
+          "unit_count": 189928.0,
+          "unit_loss": 0.008893083160988422,
+          "unit_quantity_loss": 0.0017686878286656878,
+          "value_loss": 0.4370331948268272
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "9f7ce23ec3dbac4de24cbaf249a07efab3607bdade7a4bba2d8da14e10c4099f"
+    },
+    {
+      "bytes": 44186427,
+      "file": "teacher_bc_v2_v17_pool_route_init.pt",
+      "metadata": {
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_rc5_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_round1"
+        ],
+        "epoch": 6,
+        "hidden_size": 768,
+        "route_fit": {
+          "datasets": [
+            "D:\\Kaggriculture\\data\\processed\\teacher_bc_v2_v17_pool_s10",
+            "D:\\Kaggriculture\\data\\processed\\dagger_bc_v2_v17_pool_round1"
+          ],
+          "examples": 161056,
+          "include_validation": false,
+          "observed_routes": {
+            "market": 14380,
+            "market_quantity": 1530,
+            "unit": 14728,
+            "unit_quantity": 370
+          },
+          "strength": 40.0
+        },
+        "route_prior": true,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9887343532684284,
+          "exact_actions": 7109.0,
+          "examples": 7190.0,
+          "loss": 0.05122879237557451,
+          "market_loss": 0.0006738134179613553,
+          "market_order_accuracy": 0.9996777831480587,
+          "market_order_correct": 6205.0,
+          "market_order_count": 6207.0,
+          "market_quantity_accuracy": 0.9983084296588667,
+          "market_quantity_correct": 3541.0,
+          "market_quantity_count": 3547.0,
+          "market_quantity_loss": 0.0047777259101470316,
+          "market_slot_accuracy": 0.9997913769123783,
+          "market_slot_correct": 71885.0,
+          "market_slot_count": 71900.0,
+          "unit_accuracy": 0.9977876106194691,
+          "unit_correct": 46453.0,
+          "unit_count": 46556.0,
+          "unit_loss": 0.011451089696493,
+          "unit_quantity_loss": 2.222614511045625e-06,
+          "value_loss": 0.3743090613589933
+        }
+      },
+      "parameters": 11042829,
+      "sha256": "e6cd75f0641a5823718c513965e65e98f01898cca0fd4ead9bdb0c81ae0d7d6c"
+    }
+  ],
+  "count": 20,
+  "format": "kaggriculture-local-checkpoints-v1",
+  "total_bytes": 745261900
+}

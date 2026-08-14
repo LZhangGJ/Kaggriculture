@@ -33,6 +33,9 @@ def test_encoder_masks_and_policy_produce_valid_shapes():
     result = env.step(batch.actions)
     assert result.step == 1
 
+    unmasked = policy_batch(model, observations, "cpu", deterministic=True, mask_actions=False)
+    assert len(unmasked.actions) == 2
+
 
 def test_decode_respects_number_of_hands():
     env = FastKaggricultureEnv(configuration={"episodeSteps": 4})

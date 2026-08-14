@@ -5,3 +5,4 @@ __pycache__/
 *.py[cod]
 benchmark-results/
 artifacts/
+data/

@@ -6,6 +6,14 @@ installations without Triton continue to use the pure PyTorch transition.
 
 from __future__ import annotations
 
+import os
+
+# Keep generated CUDA artifacts off C: on the migrated Windows workstation.
+# Callers can still override either location explicitly.
+if os.name == "nt" and os.path.isdir("D:\\"):
+    os.environ.setdefault("TRITON_CACHE_DIR", r"D:\Kaggriculture\cache\triton")
+    os.environ.setdefault("TORCHINDUCTOR_CACHE_DIR", r"D:\Kaggriculture\cache\torchinductor")
+
 try:
     import triton
     import triton.language as tl
@@ -140,7 +148,9 @@ if TRITON_AVAILABLE:
         empty_count = tl.sum(empty_i32, axis=0)
         next_output = empty_count * 2
         tl.store(empty_count_ptr + env, empty_count, mask=valid_env)
-        searching = tl.zeros((1,), tl.int1)
+        # Keep this scalar: Triton 3.6 rejects storing a length-one block through
+        # the scalar ``unresolved_ptr + env`` used below.
+        searching = valid_env & False
         if SHOP_UNLOCK:
             shop_lane = lane < 8
             shop_count = tl.load(
