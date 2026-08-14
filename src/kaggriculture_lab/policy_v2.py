@@ -241,7 +241,10 @@ class StructuredKaggriculturePolicy(nn.Module):
         unit_context: torch.Tensor,
         market_teacher_tokens: torch.Tensor | None = None,
         market_teacher_quantities: torch.Tensor | None = None,
-    ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
+        *,
+        sample_market: bool = False,
+        return_market_choices: bool = False,
+    ) -> tuple[torch.Tensor, ...]:
         step = torch.clamp(torch.round(features[:, 0].float() * 720.0).long(), 0, 719)
         seat = torch.clamp(torch.round(features[:, 3].float()).long(), 0, 1)
         seat_context = self.seat_embedding(seat)
@@ -267,13 +270,21 @@ class StructuredKaggriculturePolicy(nn.Module):
             torch.arange(MAX_MARKET_ORDERS, device=latent.device)
         ).unsqueeze(0).expand(batch_size, -1, -1)
         if self.autoregressive_market:
-            market_logits, market_quantity_logits = self._autoregressive_market(
+            (
+                market_logits,
+                market_quantity_logits,
+                market_choices,
+                market_quantity_choices,
+            ) = self._autoregressive_market(
                 latent,
                 market_slots,
                 market_teacher_tokens,
                 market_teacher_quantities,
+                sample=sample_market,
             )
         else:
+            if sample_market or return_market_choices:
+                raise ValueError("market sampling choices require autoregressive_market")
             market_latent = latent.unsqueeze(1).expand(-1, MAX_MARKET_ORDERS, -1)
             market_input = torch.cat((market_latent, market_slots), dim=-1)
             market_logits = self.market_token_head(market_input)
@@ -287,13 +298,16 @@ class StructuredKaggriculturePolicy(nn.Module):
             market_quantity_logits = (
                 market_quantity_logits + self.market_quantity_route_logits[step, seat]
             )
-        return (
+        outputs = (
             unit_logits,
             unit_quantity_logits,
             market_logits,
             market_quantity_logits,
             self.value_head(latent).squeeze(-1),
         )
+        if return_market_choices:
+            return (*outputs, market_choices, market_quantity_choices)
+        return outputs
 
     def _autoregressive_market(
         self,
@@ -301,9 +315,13 @@ class StructuredKaggriculturePolicy(nn.Module):
         market_slots: torch.Tensor,
         teacher_tokens: torch.Tensor | None,
         teacher_quantities: torch.Tensor | None,
-    ) -> tuple[torch.Tensor, torch.Tensor]:
+        *,
+        sample: bool,
+    ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         if (teacher_tokens is None) != (teacher_quantities is None):
             raise ValueError("market teacher tokens and quantities must be provided together")
+        if sample and teacher_tokens is not None:
+            raise ValueError("cannot sample market actions while teacher forcing")
         batch_size = latent.shape[0]
         state = torch.tanh(self.market_ar_initial(latent))
         previous_token = torch.full(
@@ -314,6 +332,8 @@ class StructuredKaggriculturePolicy(nn.Module):
         )
         token_outputs = []
         quantity_outputs = []
+        token_choices = []
+        quantity_choices = []
         for slot in range(MAX_MARKET_ORDERS):
             recurrent_input = torch.cat(
                 (
@@ -329,7 +349,11 @@ class StructuredKaggriculturePolicy(nn.Module):
             current_token = (
                 teacher_tokens[:, slot].long()
                 if teacher_tokens is not None
-                else token_logits.argmax(dim=-1)
+                else (
+                    torch.distributions.Categorical(logits=token_logits).sample()
+                    if sample
+                    else token_logits.argmax(dim=-1)
+                )
             )
             quantity_logits = self.market_ar_quantity_head(
                 torch.cat((state, self.market_ar_token_embedding(current_token)), dim=-1)
@@ -337,13 +361,24 @@ class StructuredKaggriculturePolicy(nn.Module):
             current_quantity = (
                 teacher_quantities[:, slot].long()
                 if teacher_quantities is not None
-                else quantity_logits.argmax(dim=-1)
+                else (
+                    torch.distributions.Categorical(logits=quantity_logits).sample()
+                    if sample
+                    else quantity_logits.argmax(dim=-1)
+                )
             )
             token_outputs.append(token_logits)
             quantity_outputs.append(quantity_logits)
+            token_choices.append(current_token)
+            quantity_choices.append(current_quantity)
             previous_token = current_token
             previous_quantity = current_quantity.clamp(0, MAX_QUANTITY)
-        return torch.stack(token_outputs, dim=1), torch.stack(quantity_outputs, dim=1)
+        return (
+            torch.stack(token_outputs, dim=1),
+            torch.stack(quantity_outputs, dim=1),
+            torch.stack(token_choices, dim=1),
+            torch.stack(quantity_choices, dim=1),
+        )
 
 
 def policy_from_checkpoint(

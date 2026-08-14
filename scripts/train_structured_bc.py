@@ -245,9 +245,9 @@ def main() -> None:
     parser.add_argument("--route-prior", action="store_true")
     parser.add_argument(
         "--components",
-        choices=("all", "market"),
+        choices=("all", "market", "unit"),
         default="all",
-        help="market freezes the trunk, unit heads, and value head during BC/DAgger",
+        help="freeze the trunk and train only the selected action heads during BC/DAgger",
     )
     parser.add_argument(
         "--canonical-seat",
@@ -323,6 +323,14 @@ def main() -> None:
                 or name.startswith("market_ar_")
                 or name.startswith("market_route_logits")
                 or name.startswith("market_quantity_route_logits")
+            )
+    elif args.components == "unit":
+        for name, parameter in model.named_parameters():
+            parameter.requires_grad_(
+                name.startswith("unit_token_head")
+                or name.startswith("unit_quantity_head")
+                or name.startswith("unit_route_logits")
+                or name.startswith("unit_quantity_route_logits")
             )
     route_parameters = [
         parameter

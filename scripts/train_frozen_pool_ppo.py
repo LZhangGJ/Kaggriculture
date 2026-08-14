@@ -160,17 +160,24 @@ def _sample_policy(
         dtype=torch.bfloat16,
         enabled=device.type == "cuda",
     ):
-        unit_logits, unit_quantity_logits, market_logits, market_quantity_logits, values = model(
-            features, unit_context
+        outputs = model(
+            features,
+            unit_context,
+            sample_market=model.autoregressive_market,
+            return_market_choices=model.autoregressive_market,
         )
+        unit_logits, unit_quantity_logits, market_logits, market_quantity_logits, values = outputs[:5]
     if components == "all":
         unit_indices = torch.distributions.Categorical(logits=unit_logits).sample()
         unit_quantities = torch.distributions.Categorical(logits=unit_quantity_logits).sample()
     else:
         unit_indices = unit_logits.argmax(dim=-1)
         unit_quantities = unit_quantity_logits.argmax(dim=-1)
-    market_indices = torch.distributions.Categorical(logits=market_logits).sample()
-    market_quantities = torch.distributions.Categorical(logits=market_quantity_logits).sample()
+    if model.autoregressive_market:
+        market_indices, market_quantities = outputs[5:7]
+    else:
+        market_indices = torch.distributions.Categorical(logits=market_logits).sample()
+        market_quantities = torch.distributions.Categorical(logits=market_quantity_logits).sample()
     log_prob, _ = _log_prob_and_entropy(
         (unit_logits, unit_quantity_logits, market_logits, market_quantity_logits),
         unit_context,
@@ -340,7 +347,13 @@ def ppo_update(
                 dtype=torch.bfloat16,
                 enabled=device.type == "cuda",
             ):
-                outputs = model(features, unit_context)
+                model_kwargs = {}
+                if model.autoregressive_market:
+                    model_kwargs = {
+                        "market_teacher_tokens": market_indices,
+                        "market_teacher_quantities": market_quantities,
+                    }
+                outputs = model(features, unit_context, **model_kwargs)
                 new_log_prob, entropy = _log_prob_and_entropy(
                     outputs[:4],
                     unit_context,
@@ -404,6 +417,7 @@ def _configure_trainable_parameters(
             parameter.requires_grad_(
                 name.startswith("market_token_head")
                 or name.startswith("market_quantity_head")
+                or name.startswith("market_ar_")
                 or name.startswith("market_route_logits")
                 or name.startswith("market_quantity_route_logits")
                 or name.startswith("value_head")

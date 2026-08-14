@@ -60,6 +60,11 @@ def main() -> None:
     parser.add_argument("--pool-manifest", type=Path, required=True)
     parser.add_argument("--seed-start", type=int, default=50_000)
     parser.add_argument("--seeds", type=int, default=4)
+    parser.add_argument(
+        "--opponent-name",
+        action="append",
+        help="evaluate only selected manifest names; repeat to select multiple",
+    )
     parser.add_argument("--no-unit-mask", action="store_true")
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--output", type=Path)
@@ -67,6 +72,12 @@ def main() -> None:
 
     manifest = json.loads(args.pool_manifest.read_text(encoding="utf-8"))
     pool = [(entry["name"], entry["path"]) for entry in manifest["agents"]]
+    if args.opponent_name:
+        selected = set(args.opponent_name)
+        pool = [entry for entry in pool if entry[0] in selected]
+        missing = selected - {name for name, _ in pool}
+        if missing:
+            parser.error(f"opponents not found in manifest: {sorted(missing)}")
     device = torch.device(args.device)
     checkpoint = torch.load(args.checkpoint, map_location=device, weights_only=True)
     model = policy_from_checkpoint(checkpoint, device).eval()

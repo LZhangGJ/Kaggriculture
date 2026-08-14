@@ -169,6 +169,24 @@ def test_autoregressive_market_teacher_forcing_is_causal_and_loads():
     torch.testing.assert_close(outputs0[2][:, 0], outputs1[2][:, 0])
     assert not torch.equal(outputs0[2][:, 1], outputs1[2][:, 1])
 
+    torch.manual_seed(15)
+    sampled = model(
+        torch.as_tensor(features),
+        torch.as_tensor(unit_context),
+        sample_market=True,
+        return_market_choices=True,
+    )
+    assert sampled[5].shape == (2, MAX_MARKET_ORDERS)
+    assert sampled[6].shape == (2, MAX_MARKET_ORDERS)
+    replayed = model(
+        torch.as_tensor(features),
+        torch.as_tensor(unit_context),
+        sampled[5],
+        sampled[6],
+    )
+    torch.testing.assert_close(sampled[2], replayed[2])
+    torch.testing.assert_close(sampled[3], replayed[3])
+
     loaded = policy_from_checkpoint(
         {
             "hidden_size": 64,

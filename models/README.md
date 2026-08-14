@@ -12,8 +12,10 @@ decodes the ten ordered market slots autoregressively. It scored 106/220
 compared with 85/220 for the previous independent-slot model on the same games.
 The paired evaluation reports are in `neural_champion/`.
 
-The first conservative market-only PPO iteration retained the same deterministic
-actions and score, so it was not promoted over the BC/DAgger checkpoint.
+Autoregressive PPO now samples each market slot from the actual sampled prefix
+and replays that prefix when recomputing log probabilities. Conservative PPO
+candidates through a 5e-5 learning rate retained the same deterministic action
+boundaries, while 2e-4 collapsed; no PPO checkpoint was promoted over DAgger4.
 
 The current overall script-policy champion is stored in `league_champion/`. It
 uses the frozen V17 production route plus a sparse, observation-gated market
