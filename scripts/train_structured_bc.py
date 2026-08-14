@@ -56,8 +56,14 @@ def batch_loss(
         dtype=torch.bfloat16,
         enabled=amp,
     ):
+        model_kwargs = {}
+        if model.autoregressive_market:
+            model_kwargs = {
+                "market_teacher_tokens": batch["market_targets"],
+                "market_teacher_quantities": batch["market_quantity_targets"],
+            }
         unit_logits, unit_quantity_logits, market_logits, market_quantity_logits, values = model(
-            batch["features"], batch["unit_context"]
+            batch["features"], batch["unit_context"], **model_kwargs
         )
         unit_active = batch["unit_active"]
         unit_loss = F.cross_entropy(unit_logits[unit_active], batch["unit_targets"][unit_active])
@@ -238,9 +244,20 @@ def main() -> None:
     )
     parser.add_argument("--route-prior", action="store_true")
     parser.add_argument(
+        "--components",
+        choices=("all", "market"),
+        default="all",
+        help="market freezes the trunk, unit heads, and value head during BC/DAgger",
+    )
+    parser.add_argument(
         "--canonical-seat",
         action="store_true",
         help="encode public farms as own/opponent and suppress the absolute seat embedding",
+    )
+    parser.add_argument(
+        "--autoregressive-market",
+        action="store_true",
+        help="decode market slots causally with teacher forcing during BC",
     )
     parser.add_argument("--route-lr", type=float, default=3e-2)
     parser.add_argument(
@@ -280,27 +297,42 @@ def main() -> None:
         args.canonical_seat = args.canonical_seat or bool(
             initial_checkpoint.get("canonical_seat", False)
         )
+        args.autoregressive_market = args.autoregressive_market or bool(
+            initial_checkpoint.get("autoregressive_market", False)
+        )
     model = StructuredKaggriculturePolicy(
         args.hidden_size,
         route_prior=args.route_prior,
         canonical_seat=args.canonical_seat,
+        autoregressive_market=args.autoregressive_market,
     ).to(device)
     if initial_checkpoint:
         incompatible = model.load_state_dict(initial_checkpoint["model"], strict=False)
         allowed_missing = {
-            name for name, _ in model.named_parameters() if "route_logits" in name
+            name
+            for name, _ in model.named_parameters()
+            if "route_logits" in name or name.startswith("market_ar_")
         }
         if set(incompatible.missing_keys) - allowed_missing or incompatible.unexpected_keys:
             raise RuntimeError(f"incompatible initial checkpoint: {incompatible}")
+    if args.components == "market":
+        for name, parameter in model.named_parameters():
+            parameter.requires_grad_(
+                name.startswith("market_token_head")
+                or name.startswith("market_quantity_head")
+                or name.startswith("market_ar_")
+                or name.startswith("market_route_logits")
+                or name.startswith("market_quantity_route_logits")
+            )
     route_parameters = [
         parameter
         for name, parameter in model.named_parameters()
-        if "route_logits" in name
+        if parameter.requires_grad and "route_logits" in name
     ]
     base_parameters = [
         parameter
         for name, parameter in model.named_parameters()
-        if "route_logits" not in name
+        if parameter.requires_grad and "route_logits" not in name
     ]
     parameter_groups = [{"params": base_parameters, "lr": args.lr}]
     if route_parameters:
@@ -348,6 +380,8 @@ def main() -> None:
             "schema_version": 2,
             "route_prior": args.route_prior,
             "canonical_seat": args.canonical_seat,
+            "autoregressive_market": args.autoregressive_market,
+            "bc_components": args.components,
             "loss_weights": {"value": args.value_weight},
             "datasets": [str(path) for path in dataset_dirs],
             "epoch": epoch,

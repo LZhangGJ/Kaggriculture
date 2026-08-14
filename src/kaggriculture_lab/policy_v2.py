@@ -175,11 +175,13 @@ class StructuredKaggriculturePolicy(nn.Module):
         *,
         route_prior: bool = False,
         canonical_seat: bool = False,
+        autoregressive_market: bool = False,
     ) -> None:
         super().__init__()
         self.hidden_size = hidden_size
         self.route_prior = route_prior
         self.canonical_seat = canonical_seat
+        self.autoregressive_market = autoregressive_market
         self.step_embedding = nn.Embedding(720, 128)
         self.seat_embedding = nn.Embedding(2, 32)
         self.trunk = nn.Sequential(
@@ -206,6 +208,15 @@ class StructuredKaggriculturePolicy(nn.Module):
         self.market_quantity_head = nn.Sequential(
             nn.Linear(market_width, 256), nn.SiLU(), nn.Linear(256, QUANTITY_CLASSES)
         )
+        if autoregressive_market:
+            self.market_ar_token_embedding = nn.Embedding(len(MARKET_TOKENS) + 1, 32)
+            self.market_ar_quantity_embedding = nn.Embedding(QUANTITY_CLASSES, 16)
+            self.market_ar_state = nn.GRUCell(hidden_size + 80, 256)
+            self.market_ar_token_head = nn.Linear(256, len(MARKET_TOKENS))
+            self.market_ar_quantity_head = nn.Sequential(
+                nn.Linear(288, 256), nn.SiLU(), nn.Linear(256, QUANTITY_CLASSES)
+            )
+            self.market_ar_initial = nn.Linear(hidden_size, 256)
         self.value_head = nn.Sequential(nn.Linear(hidden_size, 256), nn.SiLU(), nn.Linear(256, 1))
         if route_prior:
             # Strong Kaggriculture agents follow a mostly deterministic 720-step route.
@@ -225,7 +236,11 @@ class StructuredKaggriculturePolicy(nn.Module):
             )
 
     def forward(
-        self, features: torch.Tensor, unit_context: torch.Tensor
+        self,
+        features: torch.Tensor,
+        unit_context: torch.Tensor,
+        market_teacher_tokens: torch.Tensor | None = None,
+        market_teacher_quantities: torch.Tensor | None = None,
     ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         step = torch.clamp(torch.round(features[:, 0].float() * 720.0).long(), 0, 719)
         seat = torch.clamp(torch.round(features[:, 3].float()).long(), 0, 1)
@@ -246,15 +261,23 @@ class StructuredKaggriculturePolicy(nn.Module):
         unit_latent = latent.unsqueeze(1).expand(-1, MAX_UNITS, -1)
         unit_input = torch.cat((unit_latent, unit_slots, unit_context), dim=-1)
 
+        unit_logits = self.unit_token_head(unit_input)
+        unit_quantity_logits = self.unit_quantity_head(unit_input)
         market_slots = self.market_slot_embedding(
             torch.arange(MAX_MARKET_ORDERS, device=latent.device)
         ).unsqueeze(0).expand(batch_size, -1, -1)
-        market_latent = latent.unsqueeze(1).expand(-1, MAX_MARKET_ORDERS, -1)
-        market_input = torch.cat((market_latent, market_slots), dim=-1)
-        unit_logits = self.unit_token_head(unit_input)
-        unit_quantity_logits = self.unit_quantity_head(unit_input)
-        market_logits = self.market_token_head(market_input)
-        market_quantity_logits = self.market_quantity_head(market_input)
+        if self.autoregressive_market:
+            market_logits, market_quantity_logits = self._autoregressive_market(
+                latent,
+                market_slots,
+                market_teacher_tokens,
+                market_teacher_quantities,
+            )
+        else:
+            market_latent = latent.unsqueeze(1).expand(-1, MAX_MARKET_ORDERS, -1)
+            market_input = torch.cat((market_latent, market_slots), dim=-1)
+            market_logits = self.market_token_head(market_input)
+            market_quantity_logits = self.market_quantity_head(market_input)
         if self.route_prior:
             unit_logits = unit_logits + self.unit_route_logits[step, seat]
             unit_quantity_logits = (
@@ -272,6 +295,56 @@ class StructuredKaggriculturePolicy(nn.Module):
             self.value_head(latent).squeeze(-1),
         )
 
+    def _autoregressive_market(
+        self,
+        latent: torch.Tensor,
+        market_slots: torch.Tensor,
+        teacher_tokens: torch.Tensor | None,
+        teacher_quantities: torch.Tensor | None,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        if (teacher_tokens is None) != (teacher_quantities is None):
+            raise ValueError("market teacher tokens and quantities must be provided together")
+        batch_size = latent.shape[0]
+        state = torch.tanh(self.market_ar_initial(latent))
+        previous_token = torch.full(
+            (batch_size,), len(MARKET_TOKENS), device=latent.device, dtype=torch.long
+        )
+        previous_quantity = torch.zeros(
+            batch_size, device=latent.device, dtype=torch.long
+        )
+        token_outputs = []
+        quantity_outputs = []
+        for slot in range(MAX_MARKET_ORDERS):
+            recurrent_input = torch.cat(
+                (
+                    latent,
+                    market_slots[:, slot],
+                    self.market_ar_token_embedding(previous_token),
+                    self.market_ar_quantity_embedding(previous_quantity),
+                ),
+                dim=-1,
+            )
+            state = self.market_ar_state(recurrent_input, state)
+            token_logits = self.market_ar_token_head(state)
+            current_token = (
+                teacher_tokens[:, slot].long()
+                if teacher_tokens is not None
+                else token_logits.argmax(dim=-1)
+            )
+            quantity_logits = self.market_ar_quantity_head(
+                torch.cat((state, self.market_ar_token_embedding(current_token)), dim=-1)
+            )
+            current_quantity = (
+                teacher_quantities[:, slot].long()
+                if teacher_quantities is not None
+                else quantity_logits.argmax(dim=-1)
+            )
+            token_outputs.append(token_logits)
+            quantity_outputs.append(quantity_logits)
+            previous_token = current_token
+            previous_quantity = current_quantity.clamp(0, MAX_QUANTITY)
+        return torch.stack(token_outputs, dim=1), torch.stack(quantity_outputs, dim=1)
+
 
 def policy_from_checkpoint(
     checkpoint: Mapping[str, Any], device: torch.device | str
@@ -281,10 +354,12 @@ def policy_from_checkpoint(
     state_dict = checkpoint["model"]
     route_prior = bool(checkpoint.get("route_prior", "unit_route_logits" in state_dict))
     canonical_seat = bool(checkpoint.get("canonical_seat", False))
+    autoregressive_market = bool(checkpoint.get("autoregressive_market", False))
     model = StructuredKaggriculturePolicy(
         int(checkpoint["hidden_size"]),
         route_prior=route_prior,
         canonical_seat=canonical_seat,
+        autoregressive_market=autoregressive_market,
     ).to(device)
     model.load_state_dict(state_dict)
     return model

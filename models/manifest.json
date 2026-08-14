@@ -480,6 +480,54 @@
       "sha256": "42db48f6d6cd6bc20127aa63a5b40d286375fdbdf3c04e4477564b6d195d639f"
     },
     {
+      "bytes": 36988865,
+      "file": "teacher_bc_nn_lookup_ar_dagger4_epoch2.pt",
+      "metadata": {
+        "autoregressive_market": true,
+        "bc_components": "market",
+        "canonical_seat": true,
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_nn_lookup_champion_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_champion_round1_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_champion_round2_seat0_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_champion_round3_hard_s6",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_ar_round4_s5"
+        ],
+        "epoch": 2,
+        "hidden_size": 1024,
+        "loss_weights": {
+          "value": 0.0
+        },
+        "route_prior": false,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9542704894683044,
+          "exact_actions": 56948.0,
+          "examples": 59677.0,
+          "loss": 0.04501197653183018,
+          "market_loss": 0.029238723240882517,
+          "market_order_accuracy": 0.9733207354824273,
+          "market_order_correct": 78291.0,
+          "market_order_count": 80437.0,
+          "market_quantity_accuracy": 0.9936801675977653,
+          "market_quantity_correct": 56918.0,
+          "market_quantity_count": 57280.0,
+          "market_quantity_loss": 0.02596710707377979,
+          "market_slot_accuracy": 0.9959297551820634,
+          "market_slot_correct": 594341.0,
+          "market_slot_count": 596770.0,
+          "unit_accuracy": 0.998565857296702,
+          "unit_correct": 573039.0,
+          "unit_count": 573862.0,
+          "unit_loss": 0.0066847487034399555,
+          "unit_quantity_loss": 4.990991371728917e-08,
+          "value_loss": 0.916435500584453
+        }
+      },
+      "parameters": 9241944,
+      "sha256": "b329a403b23c96785f67b4895694a0b9d282b9023b80b7a3060d1e22763fb4b2"
+    },
+    {
       "bytes": 31317881,
       "file": "teacher_bc_nn_lookup_dagger2_canonical_epoch1.pt",
       "metadata": {
@@ -1053,7 +1101,7 @@
       "sha256": "e6cd75f0641a5823718c513965e65e98f01898cca0fd4ead9bdb0c81ae0d7d6c"
     }
   ],
-  "count": 21,
+  "count": 22,
   "format": "kaggriculture-local-checkpoints-v1",
-  "total_bytes": 776579781
+  "total_bytes": 813568646
 }

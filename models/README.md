@@ -5,10 +5,12 @@ SHA-256 digest, byte size, parameter count, and checkpoint metadata for every
 locally produced model included in this branch.
 
 The current validated pure-neural champion is
-`teacher_bc_nn_lookup_dagger2_canonical_epoch1.pt`. It has no route prior or
-action lookup table, canonicalizes public farm features into own/opponent order,
-and scored 29/44 (65.91%) in matched deterministic evaluation against the
-11-agent frozen pool. Its evaluation report is in `neural_champion/`.
+`teacher_bc_nn_lookup_ar_dagger4_epoch2.pt`. It has no route prior or action
+lookup table, canonicalizes public farm features into own/opponent order, and
+decodes the ten ordered market slots autoregressively. It scored 106/220
+(48.18%) in matched deterministic evaluation against the 11-agent frozen pool,
+compared with 85/220 for the previous independent-slot model on the same games.
+The paired evaluation reports are in `neural_champion/`.
 
 The first conservative market-only PPO iteration retained the same deterministic
 actions and score, so it was not promoted over the BC/DAgger checkpoint.

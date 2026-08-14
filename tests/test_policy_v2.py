@@ -10,6 +10,7 @@ from kaggriculture_lab.gpu_policy import FARM_FEATURES, MAX_UNITS, encode_batch
 from kaggriculture_lab.policy_v2 import (
     FARM_FEATURE_OFFSET,
     MAX_MARKET_ORDERS,
+    MARKET_TOKEN_INDEX,
     StructuredKaggriculturePolicy,
     canonicalize_seat_features,
     decode_structured_actions,
@@ -140,3 +141,41 @@ def test_canonical_seat_policy_is_invariant_to_absolute_seat():
         "cpu",
     )
     assert loaded.canonical_seat
+
+
+def test_autoregressive_market_teacher_forcing_is_causal_and_loads():
+    observations = list(FastKaggricultureEnv().reset(seed=14))
+    features, unit_context, _ = encode_batch(observations)
+    model = StructuredKaggriculturePolicy(
+        hidden_size=64, canonical_seat=True, autoregressive_market=True
+    ).eval()
+    teacher_tokens = torch.zeros((2, MAX_MARKET_ORDERS), dtype=torch.long)
+    teacher_quantities = torch.zeros((2, MAX_MARKET_ORDERS), dtype=torch.long)
+    changed_tokens = teacher_tokens.clone()
+    changed_tokens[:, 0] = MARKET_TOKEN_INDEX[("HIRE", None)]
+
+    outputs0 = model(
+        torch.as_tensor(features),
+        torch.as_tensor(unit_context),
+        teacher_tokens,
+        teacher_quantities,
+    )
+    outputs1 = model(
+        torch.as_tensor(features),
+        torch.as_tensor(unit_context),
+        changed_tokens,
+        teacher_quantities,
+    )
+    torch.testing.assert_close(outputs0[2][:, 0], outputs1[2][:, 0])
+    assert not torch.equal(outputs0[2][:, 1], outputs1[2][:, 1])
+
+    loaded = policy_from_checkpoint(
+        {
+            "hidden_size": 64,
+            "canonical_seat": True,
+            "autoregressive_market": True,
+            "model": model.state_dict(),
+        },
+        "cpu",
+    )
+    assert loaded.autoregressive_market
