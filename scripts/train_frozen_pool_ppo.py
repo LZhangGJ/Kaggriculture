@@ -426,6 +426,11 @@ def main() -> None:
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--pool-manifest", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--save-every-iteration",
+        action="store_true",
+        help="also save output-stem.iterN.pt for gameplay-based model selection",
+    )
     parser.add_argument("--iterations", type=int, default=2)
     parser.add_argument("--seeds-per-opponent", type=int, default=1)
     parser.add_argument("--seed-start", type=int, default=60_000)
@@ -538,6 +543,12 @@ def main() -> None:
             }
         )
         torch.save(output_checkpoint, args.output)
+        if args.save_every_iteration:
+            iteration_output = args.output.with_name(
+                f"{args.output.stem}.iter{iteration}{args.output.suffix}"
+            )
+            torch.save(output_checkpoint, iteration_output)
+            print(f"saved_iteration={iteration_output}", flush=True)
         print(json.dumps(record, sort_keys=True), flush=True)
         print(f"saved={args.output}", flush=True)
 

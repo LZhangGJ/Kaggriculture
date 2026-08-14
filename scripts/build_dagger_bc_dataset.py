@@ -61,6 +61,13 @@ def main() -> None:
     )
     parser.add_argument("--seed-start", type=int, default=42_000)
     parser.add_argument("--seeds", type=int, default=24)
+    parser.add_argument(
+        "--seat",
+        type=int,
+        choices=(0, 1),
+        action="append",
+        help="collect only selected policy seats; repeat for both (default: both)",
+    )
     parser.add_argument("--mask-unit-actions", action="store_true")
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--overwrite", action="store_true")
@@ -71,12 +78,13 @@ def main() -> None:
     device = torch.device(args.device)
     checkpoint = torch.load(args.checkpoint, map_location=device, weights_only=True)
     model = policy_from_checkpoint(checkpoint, device).eval()
+    selected_seats = tuple(dict.fromkeys(args.seat or (0, 1)))
 
     games = [
         (seed, seat, offset, _safe_name(opponent), opponent)
         for offset, seed in enumerate(range(args.seed_start, args.seed_start + args.seeds))
         for opponent in args.opponent
-        for seat in (0, 1)
+        for seat in selected_seats
     ]
     environments = VectorFastEnv(len(games))
     observations = environments.reset(seed for seed, _, _, _, _ in games)
@@ -197,6 +205,7 @@ def main() -> None:
         "opponents": args.opponent,
         "seed_start": args.seed_start,
         "seeds": args.seeds,
+        "seats": list(selected_seats),
         "mask_unit_actions": args.mask_unit_actions,
         "assignments": assignments,
         "stats": dict(total),

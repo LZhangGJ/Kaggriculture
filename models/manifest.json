@@ -480,6 +480,50 @@
       "sha256": "42db48f6d6cd6bc20127aa63a5b40d286375fdbdf3c04e4477564b6d195d639f"
     },
     {
+      "bytes": 31317881,
+      "file": "teacher_bc_nn_lookup_dagger2_canonical_epoch1.pt",
+      "metadata": {
+        "canonical_seat": true,
+        "datasets": [
+          "D:\\Kaggriculture\\data\\processed\\teacher_bc_nn_lookup_champion_s12",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_champion_round1_s10",
+          "D:\\Kaggriculture\\data\\processed\\dagger_bc_nn_lookup_champion_round2_seat0_s10"
+        ],
+        "epoch": 1,
+        "hidden_size": 1024,
+        "loss_weights": {
+          "value": 0.0
+        },
+        "route_prior": false,
+        "schema_version": 2,
+        "validation": {
+          "exact_action_rate": 0.9500316095587306,
+          "exact_actions": 37569.0,
+          "examples": 39545.0,
+          "loss": 0.1581263951364566,
+          "market_loss": 0.0794764064421708,
+          "market_order_accuracy": 0.9496516071027197,
+          "market_order_correct": 50700.0,
+          "market_order_count": 53388.0,
+          "market_quantity_accuracy": 0.9321031464395553,
+          "market_quantity_correct": 35460.0,
+          "market_quantity_count": 38043.0,
+          "market_quantity_loss": 0.20188504318622025,
+          "market_slot_accuracy": 0.9928865849032747,
+          "market_slot_correct": 392637.0,
+          "market_slot_count": 395450.0,
+          "unit_accuracy": 0.9986430693980592,
+          "unit_correct": 379754.0,
+          "unit_count": 380270.0,
+          "unit_loss": 0.007990197144681587,
+          "unit_quantity_loss": 7.795057131493815e-08,
+          "value_loss": 0.7272364694286476
+        }
+      },
+      "parameters": 7825581,
+      "sha256": "7c5facaa99c52533bce4558ee4d82bad45168a948ede33cc14d94160a9de970a"
+    },
+    {
       "bytes": 22901615,
       "file": "teacher_bc_v2_rc5_dagger1.pt",
       "metadata": {
@@ -1009,7 +1053,7 @@
       "sha256": "e6cd75f0641a5823718c513965e65e98f01898cca0fd4ead9bdb0c81ae0d7d6c"
     }
   ],
-  "count": 20,
+  "count": 21,
   "format": "kaggriculture-local-checkpoints-v1",
-  "total_bytes": 745261900
+  "total_bytes": 776579781
 }

@@ -12,10 +12,12 @@ from torch import nn
 from .gpu_policy import (
     ANIMALS,
     CROPS,
+    FARM_FEATURES,
     FEATURE_DIM,
     ITEMS,
     MAX_UNITS,
     PRODUCTS,
+    SHOP_NAMES,
     UNIT_ACTIONS,
     UNIT_INDEX,
     _get,
@@ -37,6 +39,26 @@ MARKET_TOKENS: tuple[tuple[str, str | None], ...] = (
     *(("SELL", item) for item in PRODUCTS),
 )
 MARKET_TOKEN_INDEX = {token: index for index, token in enumerate(MARKET_TOKENS)}
+
+FARM_FEATURE_OFFSET = 4 + 2 * len(PRODUCTS) + len(SHOP_NAMES)
+
+
+def canonicalize_seat_features(features: torch.Tensor) -> torch.Tensor:
+    """Put the acting player's public farm first and remove the absolute seat bit."""
+
+    if features.ndim != 2 or features.shape[1] != FEATURE_DIM:
+        raise ValueError(f"expected [batch, {FEATURE_DIM}] features, got {tuple(features.shape)}")
+    farm0_start = FARM_FEATURE_OFFSET
+    farm1_start = farm0_start + FARM_FEATURES
+    suffix_start = farm1_start + FARM_FEATURES
+    seat1 = features[:, 3:4] >= 0.5
+
+    prefix = torch.cat((features[:, :3], torch.zeros_like(features[:, 3:4]), features[:, 4:farm0_start]), dim=1)
+    farm0 = features[:, farm0_start:farm1_start]
+    farm1 = features[:, farm1_start:suffix_start]
+    own_farm = torch.where(seat1, farm1, farm0)
+    opponent_farm = torch.where(seat1, farm0, farm1)
+    return torch.cat((prefix, own_farm, opponent_farm, features[:, suffix_start:]), dim=1)
 
 
 def _quantity(raw: Any, default: int = 0) -> int:
@@ -147,10 +169,17 @@ def decode_structured_actions(
 class StructuredKaggriculturePolicy(nn.Module):
     """Step-aware actor/value model used for replay BC and later PPO."""
 
-    def __init__(self, hidden_size: int = 768, *, route_prior: bool = False) -> None:
+    def __init__(
+        self,
+        hidden_size: int = 768,
+        *,
+        route_prior: bool = False,
+        canonical_seat: bool = False,
+    ) -> None:
         super().__init__()
         self.hidden_size = hidden_size
         self.route_prior = route_prior
+        self.canonical_seat = canonical_seat
         self.step_embedding = nn.Embedding(720, 128)
         self.seat_embedding = nn.Embedding(2, 32)
         self.trunk = nn.Sequential(
@@ -200,8 +229,14 @@ class StructuredKaggriculturePolicy(nn.Module):
     ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         step = torch.clamp(torch.round(features[:, 0].float() * 720.0).long(), 0, 719)
         seat = torch.clamp(torch.round(features[:, 3].float()).long(), 0, 1)
+        seat_context = self.seat_embedding(seat)
+        if self.canonical_seat:
+            features = canonicalize_seat_features(features)
+            # Keep the trunk shape checkpoint-compatible while preventing the
+            # absolute seat embedding from becoming a shortcut.
+            seat_context = torch.zeros_like(seat_context)
         latent = self.trunk(
-            torch.cat((features, self.step_embedding(step), self.seat_embedding(seat)), dim=-1)
+            torch.cat((features, self.step_embedding(step), seat_context), dim=-1)
         )
         batch_size = latent.shape[0]
 
@@ -245,8 +280,11 @@ def policy_from_checkpoint(
 
     state_dict = checkpoint["model"]
     route_prior = bool(checkpoint.get("route_prior", "unit_route_logits" in state_dict))
+    canonical_seat = bool(checkpoint.get("canonical_seat", False))
     model = StructuredKaggriculturePolicy(
-        int(checkpoint["hidden_size"]), route_prior=route_prior
+        int(checkpoint["hidden_size"]),
+        route_prior=route_prior,
+        canonical_seat=canonical_seat,
     ).to(device)
     model.load_state_dict(state_dict)
     return model

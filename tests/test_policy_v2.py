@@ -6,10 +6,12 @@ import pytest
 torch = pytest.importorskip("torch")
 
 from kaggriculture_lab import FastKaggricultureEnv
-from kaggriculture_lab.gpu_policy import MAX_UNITS, encode_batch
+from kaggriculture_lab.gpu_policy import FARM_FEATURES, MAX_UNITS, encode_batch
 from kaggriculture_lab.policy_v2 import (
+    FARM_FEATURE_OFFSET,
     MAX_MARKET_ORDERS,
     StructuredKaggriculturePolicy,
+    canonicalize_seat_features,
     decode_structured_actions,
     policy_from_checkpoint,
     structured_action_targets,
@@ -95,3 +97,46 @@ def test_route_prior_is_zero_initialized_and_checkpoint_loads():
         "cpu",
     )
     assert loaded.route_prior
+
+
+def test_canonical_seat_features_swap_public_farms_and_clear_seat():
+    feature0 = torch.arange(encode_batch(list(FastKaggricultureEnv().reset(seed=12)))[0].shape[1], dtype=torch.float32).unsqueeze(0)
+    feature0[:, 3] = 0.0
+    feature1 = feature0.clone()
+    feature1[:, 3] = 1.0
+    first = slice(FARM_FEATURE_OFFSET, FARM_FEATURE_OFFSET + FARM_FEATURES)
+    second = slice(FARM_FEATURE_OFFSET + FARM_FEATURES, FARM_FEATURE_OFFSET + 2 * FARM_FEATURES)
+    feature1[:, first] = feature0[:, second]
+    feature1[:, second] = feature0[:, first]
+
+    canonical0 = canonicalize_seat_features(feature0)
+    canonical1 = canonicalize_seat_features(feature1)
+    assert torch.equal(canonical0, canonical1)
+    assert canonical0[0, 3] == 0.0
+
+
+def test_canonical_seat_policy_is_invariant_to_absolute_seat():
+    observations = list(FastKaggricultureEnv().reset(seed=13))
+    features, unit_context, _ = encode_batch(observations)
+    paired = torch.as_tensor(features[:1]).repeat(2, 1)
+    paired[1, 3] = 1.0
+    first = slice(FARM_FEATURE_OFFSET, FARM_FEATURE_OFFSET + FARM_FEATURES)
+    second = slice(FARM_FEATURE_OFFSET + FARM_FEATURES, FARM_FEATURE_OFFSET + 2 * FARM_FEATURES)
+    paired[1, first] = paired[0, second].clone()
+    paired[1, second] = paired[0, first].clone()
+    contexts = torch.as_tensor(unit_context[:1]).repeat(2, 1, 1)
+    model = StructuredKaggriculturePolicy(hidden_size=64, canonical_seat=True).eval()
+
+    outputs = model(paired, contexts)
+    for output in outputs:
+        torch.testing.assert_close(output[0], output[1], rtol=1e-5, atol=1e-6)
+
+    loaded = policy_from_checkpoint(
+        {
+            "hidden_size": 64,
+            "canonical_seat": True,
+            "model": model.state_dict(),
+        },
+        "cpu",
+    )
+    assert loaded.canonical_seat

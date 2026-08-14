@@ -49,6 +49,7 @@ def batch_loss(
     model: StructuredKaggriculturePolicy,
     batch: dict[str, torch.Tensor],
     amp: bool,
+    value_weight: float = 0.1,
 ) -> tuple[torch.Tensor, dict[str, float]]:
     with torch.autocast(
         device_type=batch["features"].device.type,
@@ -97,7 +98,7 @@ def batch_loss(
             + market_loss
             + 0.35 * unit_quantity_loss
             + 0.35 * market_quantity_loss
-            + 0.1 * value_loss
+            + value_weight * value_loss
         )
 
     with torch.no_grad():
@@ -190,6 +191,7 @@ def evaluate(
     shards: list[Path],
     batch_size: int,
     device: torch.device,
+    value_weight: float = 0.1,
 ) -> dict[str, float]:
     model.eval()
     totals = {key: 0.0 for key in METRIC_KEYS}
@@ -198,7 +200,12 @@ def evaluate(
         with np.load(shard) as data:
             for start in range(0, len(data["features"]), batch_size):
                 indices = np.arange(start, min(start + batch_size, len(data["features"])))
-                _, metrics = batch_loss(model, load_batch(data, indices, device), device.type == "cuda")
+                _, metrics = batch_loss(
+                    model,
+                    load_batch(data, indices, device),
+                    device.type == "cuda",
+                    value_weight,
+                )
                 for key, value in metrics.items():
                     totals[key] += value
                 batches += 1
@@ -223,8 +230,24 @@ def main() -> None:
     parser.add_argument("--hidden-size", type=int, default=768)
     parser.add_argument("--init-checkpoint", type=Path)
     parser.add_argument("--lr", type=float, default=3e-4)
+    parser.add_argument(
+        "--value-weight",
+        type=float,
+        default=0.1,
+        help="BC value-loss coefficient; use 0 for DAgger policy-only distillation",
+    )
     parser.add_argument("--route-prior", action="store_true")
+    parser.add_argument(
+        "--canonical-seat",
+        action="store_true",
+        help="encode public farms as own/opponent and suppress the absolute seat embedding",
+    )
     parser.add_argument("--route-lr", type=float, default=3e-2)
+    parser.add_argument(
+        "--save-every-epoch",
+        action="store_true",
+        help="also save output-stem.epochN.pt for gameplay-based checkpoint selection",
+    )
     parser.add_argument("--seed", type=int, default=20260814)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
@@ -254,8 +277,13 @@ def main() -> None:
         initial_checkpoint = torch.load(args.init_checkpoint, map_location=device, weights_only=True)
         args.hidden_size = int(initial_checkpoint["hidden_size"])
         args.route_prior = args.route_prior or bool(initial_checkpoint.get("route_prior", False))
+        args.canonical_seat = args.canonical_seat or bool(
+            initial_checkpoint.get("canonical_seat", False)
+        )
     model = StructuredKaggriculturePolicy(
-        args.hidden_size, route_prior=args.route_prior
+        args.hidden_size,
+        route_prior=args.route_prior,
+        canonical_seat=args.canonical_seat,
     ).to(device)
     if initial_checkpoint:
         incompatible = model.load_state_dict(initial_checkpoint["model"], strict=False)
@@ -280,7 +308,9 @@ def main() -> None:
             {"params": route_parameters, "lr": args.route_lr, "weight_decay": 0.0}
         )
     optimizer = torch.optim.AdamW(parameter_groups, lr=args.lr, weight_decay=1e-4)
-    initial = evaluate(model, validation_shards, args.batch_size, device)
+    initial = evaluate(
+        model, validation_shards, args.batch_size, device, args.value_weight
+    )
     print("validation_epoch=0 " + json.dumps(initial, sort_keys=True))
     best_loss = float("inf")
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -297,7 +327,9 @@ def main() -> None:
                     indices = order[start : start + args.batch_size]
                     batch = load_batch(data, indices, device)
                     optimizer.zero_grad(set_to_none=True)
-                    loss, metrics = batch_loss(model, batch, device.type == "cuda")
+                    loss, metrics = batch_loss(
+                        model, batch, device.type == "cuda", args.value_weight
+                    )
                     loss.backward()
                     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                     optimizer.step()
@@ -305,23 +337,31 @@ def main() -> None:
                         totals[key] += value
                     batches += 1
         train_metrics = summarize(totals, batches)
-        validation = evaluate(model, validation_shards, args.batch_size, device)
+        validation = evaluate(
+            model, validation_shards, args.batch_size, device, args.value_weight
+        )
         print(f"train_epoch={epoch} " + json.dumps(train_metrics, sort_keys=True))
         print(f"validation_epoch={epoch} " + json.dumps(validation, sort_keys=True))
+        checkpoint_payload = {
+            "model": model.state_dict(),
+            "hidden_size": args.hidden_size,
+            "schema_version": 2,
+            "route_prior": args.route_prior,
+            "canonical_seat": args.canonical_seat,
+            "loss_weights": {"value": args.value_weight},
+            "datasets": [str(path) for path in dataset_dirs],
+            "epoch": epoch,
+            "validation": validation,
+        }
+        if args.save_every_epoch:
+            epoch_output = args.output.with_name(
+                f"{args.output.stem}.epoch{epoch}{args.output.suffix}"
+            )
+            torch.save(checkpoint_payload, epoch_output)
+            print(f"saved_epoch={epoch_output}")
         if validation["loss"] < best_loss:
             best_loss = validation["loss"]
-            torch.save(
-                {
-                    "model": model.state_dict(),
-                    "hidden_size": args.hidden_size,
-                    "schema_version": 2,
-                    "route_prior": args.route_prior,
-                    "datasets": [str(path) for path in dataset_dirs],
-                    "epoch": epoch,
-                    "validation": validation,
-                },
-                args.output,
-            )
+            torch.save(checkpoint_payload, args.output)
             print(f"saved={args.output}")
 
 

@@ -1,0 +1,150 @@
+{
+  "by_seat": {
+    "0": {
+      "games": 22,
+      "losses": 12,
+      "mean_margin": -39600.454545454544,
+      "mean_opponent_reward": 118743.59090909091,
+      "mean_policy_reward": 79143.13636363637,
+      "score_rate": 0.45454545454545453,
+      "ties": 0,
+      "wins": 10
+    },
+    "1": {
+      "games": 22,
+      "losses": 3,
+      "mean_margin": -1193.409090909091,
+      "mean_opponent_reward": 113956.18181818182,
+      "mean_policy_reward": 112762.77272727272,
+      "score_rate": 0.8636363636363636,
+      "ties": 0,
+      "wins": 19
+    }
+  },
+  "checkpoint": "D:\\Kaggriculture\\artifacts\\ppo_market_from_dagger2_epoch1_seed20260814.iter1.pt",
+  "opponents": {
+    "andrew_2883": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -15970.75,
+      "mean_opponent_reward": 123521.5,
+      "mean_policy_reward": 107550.75,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "boatlee_v16_rc2": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -10582.5,
+      "mean_opponent_reward": 106494.75,
+      "mean_policy_reward": 95912.25,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "boatlee_v16_rc5_r5a": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -17516.25,
+      "mean_opponent_reward": 123924.25,
+      "mean_policy_reward": 106408.0,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "boatlee_v17_r1_rc2": {
+      "games": 4,
+      "losses": 2,
+      "mean_margin": -22888.0,
+      "mean_opponent_reward": 85751.75,
+      "mean_policy_reward": 62863.75,
+      "score_rate": 0.5,
+      "ties": 0,
+      "wins": 2
+    },
+    "flexon_adaptive_replay": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -17283.25,
+      "mean_opponent_reward": 123615.0,
+      "mean_policy_reward": 106331.75,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "frontier_moon_melons": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -15970.75,
+      "mean_opponent_reward": 123521.5,
+      "mean_policy_reward": 107550.75,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "frontier_soil_rain": {
+      "games": 4,
+      "losses": 3,
+      "mean_margin": -30274.5,
+      "mean_opponent_reward": 124692.75,
+      "mean_policy_reward": 94418.25,
+      "score_rate": 0.25,
+      "ties": 0,
+      "wins": 1
+    },
+    "kaito_v21_1_enhanced": {
+      "games": 4,
+      "losses": 2,
+      "mean_margin": -48461.25,
+      "mean_opponent_reward": 114341.75,
+      "mean_policy_reward": 65880.5,
+      "score_rate": 0.5,
+      "ties": 0,
+      "wins": 2
+    },
+    "kaito_v27": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -10582.5,
+      "mean_opponent_reward": 106494.75,
+      "mean_policy_reward": 95912.25,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "salem_3000": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -17516.25,
+      "mean_opponent_reward": 123924.25,
+      "mean_policy_reward": 106408.0,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    },
+    "tetsu_adaptive": {
+      "games": 4,
+      "losses": 1,
+      "mean_margin": -17320.25,
+      "mean_opponent_reward": 123566.5,
+      "mean_policy_reward": 106246.25,
+      "score_rate": 0.75,
+      "ties": 0,
+      "wins": 3
+    }
+  },
+  "overall": {
+    "games": 44,
+    "losses": 15,
+    "mean_margin": -20396.93181818182,
+    "mean_opponent_reward": 116349.88636363637,
+    "mean_policy_reward": 95952.95454545454,
+    "score_rate": 0.6590909090909091,
+    "ties": 0,
+    "wins": 29
+  },
+  "pool_manifest": "D:\\Kaggriculture\\frozen_pools\\recent_highscore_v1\\manifest.json",
+  "seed_start": 75000,
+  "seeds": 2
+}
