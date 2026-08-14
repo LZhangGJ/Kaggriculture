@@ -27,8 +27,15 @@ def _safe_name(path: str) -> str:
     return candidate.parent.name if candidate.suffix == ".py" else path.replace(":", "_")
 
 
-def _worker(task: tuple[str, str, int, int, str]) -> dict[str, Any]:
-    teacher_spec, opponent_spec, seed, teacher_seat, output_name = task
+def _worker(task: tuple[str, str, int, int, str, bool]) -> dict[str, Any]:
+    (
+        teacher_spec,
+        opponent_spec,
+        seed,
+        teacher_seat,
+        output_name,
+        unit_inventory_context,
+    ) = task
     teacher = resolve_agent(teacher_spec)
     opponent = resolve_agent(opponent_spec)
     env = FastKaggricultureEnv()
@@ -55,7 +62,10 @@ def _worker(task: tuple[str, str, int, int, str]) -> dict[str, Any]:
         teacher_action = teacher(teacher_observation, env.configuration)
         opponent_action = opponent(opponent_observation, env.configuration)
 
-        feature, context, _ = encode_observation(teacher_observation)
+        feature, context, _ = encode_observation(
+            teacher_observation,
+            include_unit_inventory=unit_inventory_context,
+        )
         targets = structured_action_targets([teacher_observation], [teacher_action])
         arrays["features"].append(feature.astype(np.float16))
         arrays["unit_context"].append(context.astype(np.float16))
@@ -122,13 +132,18 @@ def main() -> None:
     parser.add_argument("--seed-start", type=int, default=30_000)
     parser.add_argument("--seeds", type=int, default=16)
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument(
+        "--unit-inventory-context",
+        action="store_true",
+        help="store each unit's private carried inventory beside its position",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     if args.seeds < 5:
         parser.error("at least five seeds are required for train/validation/test splits")
 
     teacher_name = _safe_name(args.teacher)
-    tasks: list[tuple[str, str, int, int, str]] = []
+    tasks: list[tuple[str, str, int, int, str, bool]] = []
     assignments: dict[str, str] = {}
     for seed_offset in range(args.seeds):
         split_fraction = seed_offset / args.seeds
@@ -142,7 +157,16 @@ def main() -> None:
                 if output.exists() and not args.overwrite:
                     raise FileExistsError(f"output already exists; pass --overwrite: {output}")
                 assignments[filename] = split
-                tasks.append((args.teacher, opponent_spec, seed, teacher_seat, str(output)))
+                tasks.append(
+                    (
+                        args.teacher,
+                        opponent_spec,
+                        seed,
+                        teacher_seat,
+                        str(output),
+                        args.unit_inventory_context,
+                    )
+                )
 
     total: Counter[str] = Counter()
     episodes: list[dict[str, Any]] = []
@@ -170,6 +194,7 @@ def main() -> None:
         "opponents": args.opponent,
         "seed_start": args.seed_start,
         "seeds": args.seeds,
+        "unit_inventory_context": args.unit_inventory_context,
         "assignments": assignments,
         "stats": dict(total),
         "episodes": episodes,

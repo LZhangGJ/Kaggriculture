@@ -69,6 +69,17 @@ def main() -> None:
         help="collect only selected policy seats; repeat for both (default: both)",
     )
     parser.add_argument("--mask-unit-actions", action="store_true")
+    parser.add_argument(
+        "--mismatch-only",
+        action="store_true",
+        help="store only states where the deterministic policy action differs from the teacher",
+    )
+    parser.add_argument(
+        "--mismatch-component",
+        choices=("any", "unit", "market"),
+        default="any",
+        help="when filtering mismatches, compare the full action or only one component",
+    )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
@@ -129,14 +140,32 @@ def main() -> None:
             deterministic=True,
             mask_unit_actions=args.mask_unit_actions,
         ).actions
-        features, unit_context, _ = encode_batch(policy_observations)
+        features, unit_context, _ = encode_batch(
+            policy_observations,
+            include_unit_inventory=model.unit_inventory_context,
+        )
         targets = structured_action_targets(policy_observations, teacher_actions)
         for index in range(len(games)):
+            if args.mismatch_component == "unit":
+                mismatch = (
+                    policy_actions[index].get("farmer")
+                    != teacher_actions[index].get("farmer")
+                    or policy_actions[index].get("hands", [])
+                    != teacher_actions[index].get("hands", [])
+                )
+            elif args.mismatch_component == "market":
+                mismatch = policy_actions[index].get("market", []) != teacher_actions[
+                    index
+                ].get("market", [])
+            else:
+                mismatch = policy_actions[index] != teacher_actions[index]
+            mismatch_counts[index] += mismatch
+            if args.mismatch_only and not mismatch:
+                continue
             episode_arrays[index]["features"].append(features[index].astype(np.float16))
             episode_arrays[index]["unit_context"].append(unit_context[index].astype(np.float16))
             for key, values in targets.items():
                 episode_arrays[index][key].append(values[index])
-            mismatch_counts[index] += policy_actions[index] != teacher_actions[index]
 
         action_pairs = []
         for index, (pair, (_, seat, _, _, _)) in enumerate(zip(observations, games, strict=True)):
@@ -163,17 +192,23 @@ def main() -> None:
         split = "train" if fraction < 0.8 else "validation" if fraction < 0.9 else "test"
         filename = f"dagger_vs_{opponent_name}_seed{seed}_seat{seat}.npz"
         output = args.output_dir / split / filename
-        if output.exists() and not args.overwrite:
+        selected_examples = len(episode_arrays[index]["features"])
+        if selected_examples and output.exists() and not args.overwrite:
             raise FileExistsError(f"output already exists; pass --overwrite: {output}")
-        output.parent.mkdir(parents=True, exist_ok=True)
-        stacked = {key: np.stack(values) for key, values in episode_arrays[index].items()}
         policy_reward = float(result.rewards[seat])
         opponent_reward = float(result.rewards[1 - seat])
         outcome = float((policy_reward > opponent_reward) - (policy_reward < opponent_reward))
-        stacked["value_targets"] = np.full(len(stacked["features"]), outcome, dtype=np.float16)
-        np.savez(output, **stacked)
-        assignments[filename] = split
-        total["examples"] += len(stacked["features"])
+        if selected_examples:
+            output.parent.mkdir(parents=True, exist_ok=True)
+            stacked = {
+                key: np.stack(values) for key, values in episode_arrays[index].items()
+            }
+            stacked["value_targets"] = np.full(
+                selected_examples, outcome, dtype=np.float16
+            )
+            np.savez(output, **stacked)
+            assignments[filename] = split
+        total["examples"] += selected_examples
         total["mismatches"] += int(mismatch_counts[index])
         total["wins"] += policy_reward > opponent_reward
         total["ties"] += policy_reward == opponent_reward
@@ -185,7 +220,8 @@ def main() -> None:
                 "opponent": opponent_spec,
                 "opponent_name": opponent_name,
                 "split": split,
-                "output": str(output),
+                "output": str(output) if selected_examples else None,
+                "selected_examples": selected_examples,
                 "mismatches": int(mismatch_counts[index]),
                 "policy_reward": policy_reward,
                 "opponent_reward": opponent_reward,
@@ -193,7 +229,8 @@ def main() -> None:
         )
         print(
             f"[{index + 1}/{len(games)}] seed={seed} seat={seat} "
-            f"mismatches={mismatch_counts[index]} policy={policy_reward:.0f} "
+            f"mismatches={mismatch_counts[index]} selected={selected_examples} "
+            f"policy={policy_reward:.0f} "
             f"opponent={opponent_reward:.0f} output={output}"
         )
 
@@ -207,6 +244,8 @@ def main() -> None:
         "seeds": args.seeds,
         "seats": list(selected_seats),
         "mask_unit_actions": args.mask_unit_actions,
+        "mismatch_only": args.mismatch_only,
+        "mismatch_component": args.mismatch_component,
         "assignments": assignments,
         "stats": dict(total),
         "episodes": episodes,

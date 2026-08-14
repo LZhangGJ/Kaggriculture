@@ -18,6 +18,9 @@ from .gpu_policy import (
     MAX_UNITS,
     PRODUCTS,
     SHOP_NAMES,
+    TILE_FEATURES,
+    UNIT_CONTEXT_BASE_DIM,
+    UNIT_CONTEXT_INVENTORY_DIM,
     UNIT_ACTIONS,
     UNIT_INDEX,
     _get,
@@ -176,12 +179,27 @@ class StructuredKaggriculturePolicy(nn.Module):
         route_prior: bool = False,
         canonical_seat: bool = False,
         autoregressive_market: bool = False,
+        unit_inventory_context: bool = False,
+        contextual_unit_inventory: bool = False,
+        contextual_unit_local: bool = False,
     ) -> None:
         super().__init__()
         self.hidden_size = hidden_size
         self.route_prior = route_prior
         self.canonical_seat = canonical_seat
         self.autoregressive_market = autoregressive_market
+        self.contextual_unit_inventory = contextual_unit_inventory
+        self.contextual_unit_local = contextual_unit_local
+        self.unit_inventory_context = (
+            unit_inventory_context
+            or contextual_unit_inventory
+            or contextual_unit_local
+        )
+        self.unit_context_dim = (
+            UNIT_CONTEXT_INVENTORY_DIM
+            if self.unit_inventory_context
+            else UNIT_CONTEXT_BASE_DIM
+        )
         self.step_embedding = nn.Embedding(720, 128)
         self.seat_embedding = nn.Embedding(2, 32)
         self.trunk = nn.Sequential(
@@ -193,13 +211,71 @@ class StructuredKaggriculturePolicy(nn.Module):
             nn.LayerNorm(hidden_size),
         )
         self.unit_slot_embedding = nn.Embedding(MAX_UNITS, 32)
-        unit_width = hidden_size + 35
+        unit_width = hidden_size + 32 + UNIT_CONTEXT_BASE_DIM
         self.unit_token_head = nn.Sequential(
             nn.Linear(unit_width, 256), nn.SiLU(), nn.Linear(256, len(UNIT_ACTIONS))
         )
         self.unit_quantity_head = nn.Sequential(
             nn.Linear(unit_width, 256), nn.SiLU(), nn.Linear(256, QUANTITY_CLASSES)
         )
+        if self.unit_inventory_context:
+            inventory_dim = UNIT_CONTEXT_INVENTORY_DIM - UNIT_CONTEXT_BASE_DIM
+            self.unit_inventory_token_residual = nn.Sequential(
+                nn.Linear(inventory_dim, 64, bias=False),
+                nn.SiLU(),
+                nn.Linear(64, len(UNIT_ACTIONS), bias=False),
+            )
+            self.unit_inventory_quantity_residual = nn.Sequential(
+                nn.Linear(inventory_dim, 64, bias=False),
+                nn.SiLU(),
+                nn.Linear(64, QUANTITY_CLASSES, bias=False),
+            )
+            nn.init.zeros_(self.unit_inventory_token_residual[-1].weight)
+            nn.init.zeros_(self.unit_inventory_quantity_residual[-1].weight)
+        if contextual_unit_inventory:
+            inventory_dim = UNIT_CONTEXT_INVENTORY_DIM - UNIT_CONTEXT_BASE_DIM
+            self.unit_contextual_inventory_embedding = nn.Linear(
+                inventory_dim,
+                64,
+                bias=False,
+            )
+            self.unit_contextual_inventory_trunk = nn.Sequential(
+                nn.Linear(unit_width + 64, 256),
+                nn.SiLU(),
+                nn.LayerNorm(256),
+            )
+            self.unit_contextual_inventory_token_head = nn.Linear(
+                256,
+                len(UNIT_ACTIONS),
+                bias=False,
+            )
+            self.unit_contextual_inventory_quantity_head = nn.Linear(
+                256,
+                QUANTITY_CLASSES,
+                bias=False,
+            )
+            nn.init.zeros_(self.unit_contextual_inventory_token_head.weight)
+            nn.init.zeros_(self.unit_contextual_inventory_quantity_head.weight)
+        if contextual_unit_local:
+            inventory_dim = UNIT_CONTEXT_INVENTORY_DIM - UNIT_CONTEXT_BASE_DIM
+            local_width = unit_width + inventory_dim + TILE_FEATURES
+            self.unit_contextual_local_trunk = nn.Sequential(
+                nn.Linear(local_width, 256),
+                nn.SiLU(),
+                nn.LayerNorm(256),
+            )
+            self.unit_contextual_local_token_head = nn.Linear(
+                256,
+                len(UNIT_ACTIONS),
+                bias=False,
+            )
+            self.unit_contextual_local_quantity_head = nn.Linear(
+                256,
+                QUANTITY_CLASSES,
+                bias=False,
+            )
+            nn.init.zeros_(self.unit_contextual_local_token_head.weight)
+            nn.init.zeros_(self.unit_contextual_local_quantity_head.weight)
         self.market_slot_embedding = nn.Embedding(MAX_MARKET_ORDERS, 32)
         market_width = hidden_size + 32
         self.market_token_head = nn.Sequential(
@@ -262,10 +338,81 @@ class StructuredKaggriculturePolicy(nn.Module):
             torch.arange(MAX_UNITS, device=latent.device)
         ).unsqueeze(0).expand(batch_size, -1, -1)
         unit_latent = latent.unsqueeze(1).expand(-1, MAX_UNITS, -1)
-        unit_input = torch.cat((unit_latent, unit_slots, unit_context), dim=-1)
+        unit_input = torch.cat(
+            (
+                unit_latent,
+                unit_slots,
+                unit_context[..., :UNIT_CONTEXT_BASE_DIM],
+            ),
+            dim=-1,
+        )
 
         unit_logits = self.unit_token_head(unit_input)
         unit_quantity_logits = self.unit_quantity_head(unit_input)
+        if self.unit_inventory_context:
+            # Per-unit inventories are stored on the same /100 scale as aggregate
+            # inventory features.  Most carried stacks are only 1-10 items, so a
+            # local rescale keeps the residual signal numerically useful while the
+            # zero-inventory invariant remains exact.
+            inventory_context = unit_context[..., UNIT_CONTEXT_BASE_DIM:] * 10.0
+            unit_logits = unit_logits + self.unit_inventory_token_residual(
+                inventory_context
+            )
+            unit_quantity_logits = (
+                unit_quantity_logits
+                + self.unit_inventory_quantity_residual(inventory_context)
+            )
+            if self.contextual_unit_inventory:
+                inventory_gate = (inventory_context.abs().sum(dim=-1, keepdim=True) > 0).to(
+                    unit_logits.dtype
+                )
+                contextual_input = torch.cat(
+                    (
+                        unit_input,
+                        self.unit_contextual_inventory_embedding(inventory_context),
+                    ),
+                    dim=-1,
+                )
+                contextual_hidden = self.unit_contextual_inventory_trunk(
+                    contextual_input
+                )
+                unit_logits = unit_logits + inventory_gate * (
+                    self.unit_contextual_inventory_token_head(contextual_hidden)
+                )
+                unit_quantity_logits = unit_quantity_logits + inventory_gate * (
+                    self.unit_contextual_inventory_quantity_head(contextual_hidden)
+                )
+            if self.contextual_unit_local:
+                tile_start = FARM_FEATURE_OFFSET + 9
+                own_tiles = features[
+                    :, tile_start : tile_start + 100 * TILE_FEATURES
+                ].view(batch_size, 100, TILE_FEATURES)
+                unit_x = torch.clamp(
+                    torch.round(unit_context[..., 0] * 9.0).long(),
+                    0,
+                    9,
+                )
+                unit_y = torch.clamp(
+                    torch.round(unit_context[..., 1] * 9.0).long(),
+                    0,
+                    9,
+                )
+                tile_indices = unit_y * 10 + unit_x
+                local_tiles = torch.gather(
+                    own_tiles,
+                    1,
+                    tile_indices.unsqueeze(-1).expand(-1, -1, TILE_FEATURES),
+                )
+                local_hidden = self.unit_contextual_local_trunk(
+                    torch.cat((unit_input, inventory_context, local_tiles), dim=-1)
+                )
+                active_gate = unit_context[..., 2:3].to(unit_logits.dtype)
+                unit_logits = unit_logits + active_gate * (
+                    self.unit_contextual_local_token_head(local_hidden)
+                )
+                unit_quantity_logits = unit_quantity_logits + active_gate * (
+                    self.unit_contextual_local_quantity_head(local_hidden)
+                )
         market_slots = self.market_slot_embedding(
             torch.arange(MAX_MARKET_ORDERS, device=latent.device)
         ).unsqueeze(0).expand(batch_size, -1, -1)
@@ -390,11 +537,19 @@ def policy_from_checkpoint(
     route_prior = bool(checkpoint.get("route_prior", "unit_route_logits" in state_dict))
     canonical_seat = bool(checkpoint.get("canonical_seat", False))
     autoregressive_market = bool(checkpoint.get("autoregressive_market", False))
+    unit_inventory_context = bool(checkpoint.get("unit_inventory_context", False))
+    contextual_unit_inventory = bool(
+        checkpoint.get("contextual_unit_inventory", False)
+    )
+    contextual_unit_local = bool(checkpoint.get("contextual_unit_local", False))
     model = StructuredKaggriculturePolicy(
         int(checkpoint["hidden_size"]),
         route_prior=route_prior,
         canonical_seat=canonical_seat,
         autoregressive_market=autoregressive_market,
+        unit_inventory_context=unit_inventory_context,
+        contextual_unit_inventory=contextual_unit_inventory,
+        contextual_unit_local=contextual_unit_local,
     ).to(device)
     model.load_state_dict(state_dict)
     return model
@@ -419,7 +574,10 @@ def structured_policy_batch(
     deterministic: bool = True,
     mask_unit_actions: bool = True,
 ) -> StructuredPolicyBatch:
-    features_np, unit_context_np, _ = encode_batch(observations)
+    features_np, unit_context_np, _ = encode_batch(
+        observations,
+        include_unit_inventory=model.unit_inventory_context,
+    )
     features = torch.as_tensor(features_np, device=device)
     unit_context = torch.as_tensor(unit_context_np, device=device)
     unit_logits, unit_quantity_logits, market_logits, market_quantity_logits, values = model(

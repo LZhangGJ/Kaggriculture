@@ -197,3 +197,60 @@ def test_autoregressive_market_teacher_forcing_is_causal_and_loads():
         "cpu",
     )
     assert loaded.autoregressive_market
+
+
+def test_unit_inventory_context_policy_runs_and_checkpoint_loads():
+    observations = list(FastKaggricultureEnv(configuration={"episodeSteps": 4}).reset(seed=16))
+    legacy = StructuredKaggriculturePolicy(
+        hidden_size=64,
+        canonical_seat=True,
+        autoregressive_market=True,
+    ).eval()
+    model = StructuredKaggriculturePolicy(
+        hidden_size=64,
+        canonical_seat=True,
+        autoregressive_market=True,
+        unit_inventory_context=True,
+        contextual_unit_inventory=True,
+        contextual_unit_local=True,
+    ).eval()
+    model.load_state_dict(legacy.state_dict(), strict=False)
+    batch = structured_policy_batch(model, observations, "cpu", deterministic=True)
+    assert batch.unit_indices.shape == (2, MAX_UNITS)
+
+    legacy_features, legacy_context, _ = encode_batch(observations)
+    inventory_features, inventory_context, _ = encode_batch(
+        observations,
+        include_unit_inventory=True,
+    )
+    legacy_outputs = legacy(
+        torch.as_tensor(legacy_features),
+        torch.as_tensor(legacy_context),
+    )
+    inventory_outputs = model(
+        torch.as_tensor(inventory_features),
+        torch.as_tensor(inventory_context),
+    )
+    for legacy_output, inventory_output in zip(
+        legacy_outputs,
+        inventory_outputs,
+        strict=True,
+    ):
+        torch.testing.assert_close(legacy_output, inventory_output)
+
+    loaded = policy_from_checkpoint(
+        {
+            "hidden_size": 64,
+            "canonical_seat": True,
+            "autoregressive_market": True,
+            "unit_inventory_context": True,
+            "contextual_unit_inventory": True,
+            "contextual_unit_local": True,
+            "model": model.state_dict(),
+        },
+        "cpu",
+    )
+    assert loaded.unit_inventory_context
+    assert loaded.contextual_unit_inventory
+    assert loaded.contextual_unit_local
+    assert loaded.unit_context_dim > 3

@@ -63,7 +63,11 @@ def _audit_action(action: Mapping[str, Any], stats: Counter[str]) -> None:
                 stats["market_first_lossy"] += 1
 
 
-def encode_replay(replay: Mapping[str, Any]) -> tuple[dict[str, np.ndarray], dict[str, int]]:
+def encode_replay(
+    replay: Mapping[str, Any],
+    *,
+    include_unit_inventory: bool = False,
+) -> tuple[dict[str, np.ndarray], dict[str, int]]:
     """Turn one official replay into compact BC arrays.
 
     Kaggle stores the action for observation step ``t`` on replay step ``t + 1``.
@@ -101,7 +105,10 @@ def encode_replay(replay: Mapping[str, Any]) -> tuple[dict[str, np.ndarray], dic
     if not observations:
         raise ValueError("Replay contains no trainable observation/action pairs")
 
-    features, unit_context, active = encode_batch(observations)
+    features, unit_context, active = encode_batch(
+        observations,
+        include_unit_inventory=include_unit_inventory,
+    )
     unit_masks, market_masks = action_masks(observations)
     unit_targets, market_targets, target_active = action_targets(observations, actions)
     active &= target_active

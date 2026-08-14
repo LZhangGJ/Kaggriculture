@@ -36,6 +36,8 @@ SHOP_NAMES = (
 )
 MAX_HANDS = 16
 MAX_UNITS = MAX_HANDS + 1
+UNIT_CONTEXT_BASE_DIM = 3
+UNIT_CONTEXT_INVENTORY_DIM = UNIT_CONTEXT_BASE_DIM + len(ITEMS)
 
 UNIT_ACTIONS: tuple[tuple[str, str | None], ...] = (
     *((op, None) for op in ("PASS", "NORTH", "SOUTH", "EAST", "WEST", "DROP", "DIG", "WATER", "HARVEST", "FERTILIZE", "BUILD_COOP", "BUILD_PASTURE", "FEED", "COLLECT_FERTILIZER", "CARE")),
@@ -161,7 +163,11 @@ def _farm_features(farm: Any, day: int) -> list[float]:
     return values
 
 
-def encode_observation(observation: Any) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def encode_observation(
+    observation: Any,
+    *,
+    include_unit_inventory: bool = False,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Encode one player observation plus its active-unit context."""
     player = int(_get(observation, "player", 0))
     step = int(_get(observation, "step", 0))
@@ -200,10 +206,25 @@ def encode_observation(observation: Any) -> tuple[np.ndarray, np.ndarray, np.nda
     own_farm = farms[player] if 0 <= player < len(farms) else farms[0]
     board_size = len(_get(own_farm, "tiles", []) or []) or 10
     positions = [list(_get(own_farm, "farmer", [0, 0])), *list(_get(own_farm, "hands", []) or [])[:MAX_HANDS]]
-    unit_context = np.zeros((MAX_UNITS, 3), dtype=np.float32)
+    context_dim = (
+        UNIT_CONTEXT_INVENTORY_DIM
+        if include_unit_inventory
+        else UNIT_CONTEXT_BASE_DIM
+    )
+    unit_context = np.zeros((MAX_UNITS, context_dim), dtype=np.float32)
     active = np.zeros(MAX_UNITS, dtype=np.bool_)
     for index, position in enumerate(positions):
-        unit_context[index] = (position[0] / max(1, board_size - 1), position[1] / max(1, board_size - 1), 1.0)
+        unit_context[index, :UNIT_CONTEXT_BASE_DIM] = (
+            position[0] / max(1, board_size - 1),
+            position[1] / max(1, board_size - 1),
+            1.0,
+        )
+        if include_unit_inventory and index < len(inventories):
+            inventory = _mapping(inventories[index])
+            unit_context[index, UNIT_CONTEXT_BASE_DIM:] = [
+                min(float(inventory.get(item, 0)) / 100.0, 2.0)
+                for item in ITEMS
+            ]
         active[index] = True
 
     vector = np.asarray(values, dtype=np.float32)
@@ -211,8 +232,18 @@ def encode_observation(observation: Any) -> tuple[np.ndarray, np.ndarray, np.nda
     return vector, unit_context, active
 
 
-def encode_batch(observations: Sequence[Any]) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    encoded = [encode_observation(observation) for observation in observations]
+def encode_batch(
+    observations: Sequence[Any],
+    *,
+    include_unit_inventory: bool = False,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    encoded = [
+        encode_observation(
+            observation,
+            include_unit_inventory=include_unit_inventory,
+        )
+        for observation in observations
+    ]
     return (
         np.stack([item[0] for item in encoded]),
         np.stack([item[1] for item in encoded]),

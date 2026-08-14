@@ -19,6 +19,11 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, default=Path(r"D:\Kaggriculture\data\processed\bc_v0"))
     parser.add_argument("--max-files", type=int, default=0, help="zero uses every replay")
     parser.add_argument("--seed", type=int, default=20260814)
+    parser.add_argument(
+        "--unit-inventory-context",
+        action="store_true",
+        help="store each unit's private carried inventory beside its position",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
@@ -51,7 +56,10 @@ def main() -> None:
             raise FileExistsError(f"output already exists; pass --overwrite: {output}")
         with path.open(encoding="utf-8") as stream:
             replay = json.load(stream)
-        arrays, stats = encode_replay(replay)
+        arrays, stats = encode_replay(
+            replay,
+            include_unit_inventory=args.unit_inventory_context,
+        )
         np.savez(output, **arrays)
         total.update(stats)
         built += 1
@@ -65,6 +73,7 @@ def main() -> None:
         "schema_version": 1,
         "source": str(args.replay_dir),
         "seed": args.seed,
+        "unit_inventory_context": args.unit_inventory_context,
         "files": assignments,
         "stats": dict(total),
     }

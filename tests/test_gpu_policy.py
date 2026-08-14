@@ -8,11 +8,15 @@ torch = pytest.importorskip("torch")
 from kaggriculture_lab import FastKaggricultureEnv
 from kaggriculture_lab.gpu_policy import (
     FEATURE_DIM,
+    ITEMS,
     MAX_UNITS,
+    UNIT_CONTEXT_BASE_DIM,
+    UNIT_CONTEXT_INVENTORY_DIM,
     KaggriculturePolicy,
     action_masks,
     decode_actions,
     encode_batch,
+    encode_observation,
     policy_batch,
 )
 
@@ -47,3 +51,26 @@ def test_decode_respects_number_of_hands():
         {"farmer": ["PASS"], "hands": [], "market": []},
         {"farmer": ["PASS"], "hands": [], "market": []},
     ]
+
+
+def test_encoder_can_preserve_inventory_for_each_unit():
+    observation = list(FastKaggricultureEnv().reset(seed=5))[0]
+    observation.farms[0].hands.append([1, 1])
+    observation.private.inventories = [{"WHEAT": 3}, {"WOOL": 7}]
+
+    _, legacy_context, _ = encode_observation(observation)
+    _, inventory_context, active = encode_observation(
+        observation,
+        include_unit_inventory=True,
+    )
+
+    assert legacy_context.shape == (MAX_UNITS, UNIT_CONTEXT_BASE_DIM)
+    assert inventory_context.shape == (MAX_UNITS, UNIT_CONTEXT_INVENTORY_DIM)
+    assert active[:2].all()
+    assert inventory_context[0, UNIT_CONTEXT_BASE_DIM + ITEMS.index("WHEAT")] == pytest.approx(
+        0.03
+    )
+    assert inventory_context[1, UNIT_CONTEXT_BASE_DIM + ITEMS.index("WOOL")] == pytest.approx(
+        0.07
+    )
+    assert inventory_context[0, UNIT_CONTEXT_BASE_DIM + ITEMS.index("WOOL")] == 0.0

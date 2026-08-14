@@ -152,7 +152,10 @@ def _sample_policy(
     np.ndarray,
     list[dict[str, Any]],
 ]:
-    features_np, unit_context_np, _ = encode_batch(observations)
+    features_np, unit_context_np, _ = encode_batch(
+        observations,
+        include_unit_inventory=model.unit_inventory_context,
+    )
     features = torch.as_tensor(features_np, device=device)
     unit_context = torch.as_tensor(unit_context_np, device=device)
     with torch.autocast(

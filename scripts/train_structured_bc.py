@@ -51,6 +51,17 @@ def batch_loss(
     amp: bool,
     value_weight: float = 0.1,
 ) -> tuple[torch.Tensor, dict[str, float]]:
+    unit_context = batch["unit_context"]
+    if unit_context.shape[-1] > model.unit_context_dim:
+        raise ValueError(
+            f"dataset unit context width {unit_context.shape[-1]} exceeds model width "
+            f"{model.unit_context_dim}"
+        )
+    if unit_context.shape[-1] < model.unit_context_dim:
+        unit_context = F.pad(
+            unit_context,
+            (0, model.unit_context_dim - unit_context.shape[-1]),
+        )
     with torch.autocast(
         device_type=batch["features"].device.type,
         dtype=torch.bfloat16,
@@ -63,7 +74,7 @@ def batch_loss(
                 "market_teacher_quantities": batch["market_quantity_targets"],
             }
         unit_logits, unit_quantity_logits, market_logits, market_quantity_logits, values = model(
-            batch["features"], batch["unit_context"], **model_kwargs
+            batch["features"], unit_context, **model_kwargs
         )
         unit_active = batch["unit_active"]
         unit_loss = F.cross_entropy(unit_logits[unit_active], batch["unit_targets"][unit_active])
@@ -245,7 +256,14 @@ def main() -> None:
     parser.add_argument("--route-prior", action="store_true")
     parser.add_argument(
         "--components",
-        choices=("all", "market", "unit"),
+        choices=(
+            "all",
+            "market",
+            "unit",
+            "inventory",
+            "contextual_inventory",
+            "contextual_local",
+        ),
         default="all",
         help="freeze the trunk and train only the selected action heads during BC/DAgger",
     )
@@ -258,6 +276,21 @@ def main() -> None:
         "--autoregressive-market",
         action="store_true",
         help="decode market slots causally with teacher forcing during BC",
+    )
+    parser.add_argument(
+        "--unit-inventory-context",
+        action="store_true",
+        help="condition each unit head on that unit's private carried inventory",
+    )
+    parser.add_argument(
+        "--contextual-unit-inventory",
+        action="store_true",
+        help="add a zero-initialized inventory residual conditioned on latent state and unit position",
+    )
+    parser.add_argument(
+        "--contextual-unit-local",
+        action="store_true",
+        help="add a zero-initialized residual using the unit's current tile and inventory",
     )
     parser.add_argument("--route-lr", type=float, default=3e-2)
     parser.add_argument(
@@ -300,18 +333,38 @@ def main() -> None:
         args.autoregressive_market = args.autoregressive_market or bool(
             initial_checkpoint.get("autoregressive_market", False)
         )
+        args.unit_inventory_context = args.unit_inventory_context or bool(
+            initial_checkpoint.get("unit_inventory_context", False)
+        )
+        args.contextual_unit_inventory = args.contextual_unit_inventory or bool(
+            initial_checkpoint.get("contextual_unit_inventory", False)
+        )
+        args.contextual_unit_local = args.contextual_unit_local or bool(
+            initial_checkpoint.get("contextual_unit_local", False)
+        )
+    args.unit_inventory_context = (
+        args.unit_inventory_context
+        or args.contextual_unit_inventory
+        or args.contextual_unit_local
+    )
     model = StructuredKaggriculturePolicy(
         args.hidden_size,
         route_prior=args.route_prior,
         canonical_seat=args.canonical_seat,
         autoregressive_market=args.autoregressive_market,
+        unit_inventory_context=args.unit_inventory_context,
+        contextual_unit_inventory=args.contextual_unit_inventory,
+        contextual_unit_local=args.contextual_unit_local,
     ).to(device)
     if initial_checkpoint:
         incompatible = model.load_state_dict(initial_checkpoint["model"], strict=False)
         allowed_missing = {
             name
             for name, _ in model.named_parameters()
-            if "route_logits" in name or name.startswith("market_ar_")
+            if "route_logits" in name
+            or name.startswith("market_ar_")
+            or name.startswith("unit_inventory_")
+            or name.startswith("unit_contextual_")
         }
         if set(incompatible.missing_keys) - allowed_missing or incompatible.unexpected_keys:
             raise RuntimeError(f"incompatible initial checkpoint: {incompatible}")
@@ -329,9 +382,29 @@ def main() -> None:
             parameter.requires_grad_(
                 name.startswith("unit_token_head")
                 or name.startswith("unit_quantity_head")
+                or name.startswith("unit_inventory_")
                 or name.startswith("unit_route_logits")
                 or name.startswith("unit_quantity_route_logits")
             )
+    elif args.components == "inventory":
+        if not model.unit_inventory_context:
+            parser.error("--components inventory requires --unit-inventory-context")
+        for name, parameter in model.named_parameters():
+            parameter.requires_grad_(name.startswith("unit_inventory_"))
+    elif args.components == "contextual_inventory":
+        if not model.contextual_unit_inventory:
+            parser.error(
+                "--components contextual_inventory requires --contextual-unit-inventory"
+            )
+        for name, parameter in model.named_parameters():
+            parameter.requires_grad_(name.startswith("unit_contextual_"))
+    elif args.components == "contextual_local":
+        if not model.contextual_unit_local:
+            parser.error(
+                "--components contextual_local requires --contextual-unit-local"
+            )
+        for name, parameter in model.named_parameters():
+            parameter.requires_grad_(name.startswith("unit_contextual_local_"))
     route_parameters = [
         parameter
         for name, parameter in model.named_parameters()
@@ -389,6 +462,9 @@ def main() -> None:
             "route_prior": args.route_prior,
             "canonical_seat": args.canonical_seat,
             "autoregressive_market": args.autoregressive_market,
+            "unit_inventory_context": args.unit_inventory_context,
+            "contextual_unit_inventory": args.contextual_unit_inventory,
+            "contextual_unit_local": args.contextual_unit_local,
             "bc_components": args.components,
             "loss_weights": {"value": args.value_weight},
             "datasets": [str(path) for path in dataset_dirs],
