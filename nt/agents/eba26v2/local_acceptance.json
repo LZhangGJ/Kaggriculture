@@ -1,0 +1,53 @@
+{
+  "schema": "expert-business-agent-cpu-package-acceptance-v1",
+  "generated_at_utc": "2026-08-17T10:23:51.607121+00:00",
+  "status": "PASS",
+  "cpu_online_decision": {
+    "calls": 1438,
+    "mean_ms": 0.1396993044404357,
+    "p50_ms": 0.1409000251442194,
+    "p95_ms": 0.21420500124804664,
+    "p99_ms": 0.3140149678802117,
+    "max_ms": 1.445300003979355,
+    "mean_import_ms": 20.09564996114932
+  },
+  "games": [
+    {
+      "seed": 170999,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 73561.0,
+      "opponent_reward": 69008.0
+    },
+    {
+      "seed": 170999,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 73538.0,
+      "opponent_reward": 68704.0
+    }
+  ],
+  "all_done": true,
+  "agent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\agents\\eba26_step168_yarn_route18_override_v2\\main.py",
+    "bytes": 123271,
+    "sha256": "DD8CA878FB7C71195EF5CFDDCF61D9B1161F317B052B0E45104B8442B6E59072"
+  },
+  "archive": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_eba26v2_yarn_route18_override_20260817\\submission.tar.gz",
+    "bytes": 84039,
+    "under_100_mib": true,
+    "sha256": "9B906F81189179B442649F0B4388EF0D0E1CA914190F7250848993FF320B9E65",
+    "members": [
+      "main.py"
+    ]
+  },
+  "opponent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\public_solution_analysis\\inventory_20260814\\agents\\06_soil_rain.py",
+    "sha256": "34193F0CA7FDC77DB52CFDADF61596D42CBC2FFD3D8B7903819B0AD78A064A2A"
+  }
+}

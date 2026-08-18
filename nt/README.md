@@ -11,11 +11,16 @@ APIs or validation assumptions.
   `kaggle-environments==1.32.6` Kaggriculture interpreter, including source,
   tests, tools, frozen reference material, benchmark receipts, and the final
   acceptance report.
+- `agents/eba26v2/` — exact EBA26v2 submission artifact, official 1.32.7
+  holdout evidence, upload receipts, and the timestamped Public score.
+- `handoff/gpt_route_bundle_1327_v2/` — verified 1.32.7 JAX route-search and
+  official-referee bundle prepared for review on a four-core CPU machine.
 - `orbit_wars/` — source-grounded summaries of all 11 publicly linked gold
   writeups, one Kaggriculture migration design per writeup, a shared modelling
   specification, and an RTX 3090 implementation comparison.
 - `docs/` — detailed Chinese Kaggriculture rules and modelling reference used
-  by both the simulator and the migration designs.
+  by both the simulator and the migration designs. The current end-to-end
+  status is in `docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md`.
 
 ## Important boundaries
 
@@ -30,5 +35,6 @@ APIs or validation assumptions.
 
 Start with
 [`docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md`](docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md),
+[`docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md`](docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md),
 [`gpu_sim/README.md`](gpu_sim/README.md), and
 [`orbit_wars/README.md`](orbit_wars/README.md).

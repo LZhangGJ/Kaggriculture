@@ -1,0 +1,36 @@
+{
+  "schema": "kaggriculture-submission-record-v1",
+  "competition": "kaggriculture",
+  "ref": 55576378,
+  "name": "eba26v2_yarn_route18_override",
+  "kaggle_date": "2026-08-17 10:24:40.140000",
+  "description": "EBA26v2 public-state yarn route18 override official1327 holdout",
+  "status": "PENDING",
+  "public_score": null,
+  "artifact": {
+    "file": "submission.tar.gz",
+    "bytes": 84039,
+    "sha256": "9b906f81189179b442649f0b4388ef0d0e1ca914190f7250848993ff320b9e65",
+    "members": [
+      "main.py"
+    ]
+  },
+  "main_py": {
+    "file": "main.py",
+    "bytes": 123271,
+    "sha256": "dd8ca878fb7c71195ef5cfddcf61d9b1161f317b052b0e45104b8442b6e59072"
+  },
+  "local_acceptance": {
+    "official_package_version": "1.32.7",
+    "cpu_package_status": "PASS",
+    "frames_per_game": 720,
+    "seat_swapped_games": 2,
+    "all_done": true,
+    "mean_online_decision_ms": 0.1396993044404357,
+    "weak6_holdout_games": 384,
+    "weak6_holdout_win_rate": 0.8255208333333334,
+    "minimum_opponent_win_rate": 0.703125,
+    "g04_holdout_games": 64,
+    "g04_holdout_win_rate": 0.921875
+  }
+}
