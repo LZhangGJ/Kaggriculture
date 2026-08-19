@@ -1,0 +1,165 @@
+{
+  "schema": "kaggriculture.high_potential_v20_jax_parity.v1",
+  "generated_at_utc": "2026-08-19T11:06:43.607556+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "jax": "0.10.1",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    98301,
+    98302
+  ],
+  "seat_swapped": true,
+  "results": [
+    {
+      "opponent": "boatlee_v20_multi_route",
+      "mode": "boatlee",
+      "status": "PASS",
+      "strict_exact": true,
+      "result": {
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_reward_exact_contexts": 4,
+        "first_action_mismatch": null,
+        "first_state_mismatch": null,
+        "action_exact_rate": 1.0,
+        "state_exact_rate": 1.0,
+        "terminal_reward_exact_rate": 1.0
+      },
+      "timing": [
+        {
+          "candidate_seat": 0,
+          "games": 2,
+          "seconds": 37.931233038
+        },
+        {
+          "candidate_seat": 1,
+          "games": 2,
+          "seconds": 38.08663607800001
+        }
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "mode": "ray_k320",
+      "status": "PASS",
+      "strict_exact": true,
+      "result": {
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_reward_exact_contexts": 4,
+        "first_action_mismatch": null,
+        "first_state_mismatch": null,
+        "action_exact_rate": 1.0,
+        "state_exact_rate": 1.0,
+        "terminal_reward_exact_rate": 1.0
+      },
+      "timing": [
+        {
+          "candidate_seat": 0,
+          "games": 2,
+          "seconds": 39.610202077
+        },
+        {
+          "candidate_seat": 1,
+          "games": 2,
+          "seconds": 39.23314384699998
+        }
+      ]
+    },
+    {
+      "opponent": "tetsutani_adaptive_premium_queue",
+      "mode": "tetsutani",
+      "status": "PASS",
+      "strict_exact": true,
+      "result": {
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_reward_exact_contexts": 4,
+        "first_action_mismatch": null,
+        "first_state_mismatch": null,
+        "action_exact_rate": 1.0,
+        "state_exact_rate": 1.0,
+        "terminal_reward_exact_rate": 1.0
+      },
+      "timing": [
+        {
+          "candidate_seat": 0,
+          "games": 2,
+          "seconds": 40.72335623499998
+        },
+        {
+          "candidate_seat": 1,
+          "games": 2,
+          "seconds": 39.60281226500001
+        }
+      ]
+    },
+    {
+      "opponent": "kaito_v27_midgame_reset",
+      "mode": "kaito_v27",
+      "status": "PASS",
+      "strict_exact": true,
+      "result": {
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_reward_exact_contexts": 4,
+        "first_action_mismatch": null,
+        "first_state_mismatch": null,
+        "action_exact_rate": 1.0,
+        "state_exact_rate": 1.0,
+        "terminal_reward_exact_rate": 1.0
+      },
+      "timing": [
+        {
+          "candidate_seat": 0,
+          "games": 2,
+          "seconds": 19.304884872999992
+        },
+        {
+          "candidate_seat": 1,
+          "games": 2,
+          "seconds": 19.01964479899999
+        }
+      ]
+    },
+    {
+      "opponent": "flexonafft_v59_multi_route",
+      "mode": "flex_v59",
+      "status": "PASS",
+      "strict_exact": true,
+      "result": {
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_reward_exact_contexts": 4,
+        "first_action_mismatch": null,
+        "first_state_mismatch": null,
+        "action_exact_rate": 1.0,
+        "state_exact_rate": 1.0,
+        "terminal_reward_exact_rate": 1.0
+      },
+      "timing": [
+        {
+          "candidate_seat": 0,
+          "games": 2,
+          "seconds": 18.649609905000034
+        },
+        {
+          "candidate_seat": 1,
+          "games": 2,
+          "seconds": 18.773796275999985
+        }
+      ]
+    }
+  ],
+  "bank_sha256": "D89A78F96507B6DAE743BA57374DC9EB778A67E72982C5C33B32D529A9EDE09A",
+  "runtime_sha256": "6FCC1CFF78FC961E5029F8CDC7025A18A12876CD84A9A6C588C9761E8B4A5040",
+  "trace_receipt_sha256": "3C714CD0DD9C52A5492F183490D04437577935FF866ADB20E2B6F866FECC0D0D",
+  "wall_seconds": 353.522962116,
+  "acceptance_boundary": "PASS requires every action tensor, every official public/private state frame, and terminal reward to match official Python 1.32.7 in both seats."
+}

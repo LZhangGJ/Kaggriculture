@@ -1,0 +1,2 @@
+# Preserve frozen source and receipt bytes exactly; do not normalize legacy whitespace.
+** -whitespace

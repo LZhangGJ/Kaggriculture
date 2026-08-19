@@ -1,0 +1,92 @@
+{
+  "schema": "kaggriculture.high_potential_public_agents.v1",
+  "frozen_at_utc": "2026-08-19T10:00:17.364481+00:00",
+  "audit_root": "C:\\Users\\mitub\\AppData\\Local\\Temp\\kaggriculture_upgrade_audit_51aec915235c4282b5114d6aa4292b59",
+  "rules": {
+    "notebook_code_executed": false,
+    "embedded_expected_hash_required_when_present": true,
+    "python_syntax_compile_required": true
+  },
+  "agents": [
+    {
+      "slug": "boatlee_v20_multi_route",
+      "kaggle_ref": "boatlee/v20-adaptive-r1-multi-route-agent",
+      "title": "V20-Adaptive-R1 | Multi-Route Agent",
+      "extractor": "boatlee_packed_source",
+      "source_cell_index": 1,
+      "notebook_file": "v20-adaptive-r1-multi-route-agent.ipynb",
+      "notebook_bytes": 130262,
+      "notebook_sha256": "959093fedd48a99580432faee5cb6f5dfd1530a61429556b4c8b7f5d965b4fa2",
+      "main_bytes": 148200,
+      "main_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "expected_main_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "expected_hash_present": true,
+      "static_extraction_only": true,
+      "python_compile_ok": true
+    },
+    {
+      "slug": "rayk_k320_adaptive_rank1",
+      "kaggle_ref": "raykkretzschmar/kaggriculture-rank-your-agent",
+      "title": "Kaggriculture Rank Your Agent",
+      "extractor": "rayk_submission_b85",
+      "source_cell_index": 20,
+      "notebook_file": "kaggriculture-rank-your-agent.ipynb",
+      "notebook_bytes": 168320,
+      "notebook_sha256": "f326ef39b52ca868b1aabc36a8787efad03740d00bf84cd717766e2983fc281e",
+      "main_bytes": 154027,
+      "main_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "expected_main_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "expected_hash_present": true,
+      "static_extraction_only": true,
+      "python_compile_ok": true
+    },
+    {
+      "slug": "kaito_v27_midgame_reset",
+      "kaggle_ref": "kaitofukami/25-27-strict-future-v27-midgame-meta-reset",
+      "title": "25/27 Strict-Future | v27 Midgame Meta Reset",
+      "extractor": "kaito_agent_parts",
+      "source_cell_index": 11,
+      "notebook_file": "25-27-strict-future-v27-midgame-meta-reset.ipynb",
+      "notebook_bytes": 31267,
+      "notebook_sha256": "cc61bb10378c555e2cb3090bde2dd8ee442c34d9a8ee98b7ab918dd3acb3db8d",
+      "main_bytes": 20813,
+      "main_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "expected_main_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "expected_hash_present": true,
+      "static_extraction_only": true,
+      "python_compile_ok": true
+    },
+    {
+      "slug": "tetsutani_adaptive_premium_queue",
+      "kaggle_ref": "tetsutani/adaptive-farming-strategy-for-kaggriculture",
+      "title": "🌾Adaptive Farming Strategy for Kaggriculture",
+      "extractor": "tetsutani_top_agent_files",
+      "source_cell_index": 3,
+      "notebook_file": "adaptive-farming-strategy-for-kaggriculture.ipynb",
+      "notebook_bytes": 249275,
+      "notebook_sha256": "0c65de8fdb973fad29f5886372d6584517da5748ea21cae684bd64d7110e80d1",
+      "main_bytes": 148452,
+      "main_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "expected_main_sha256": null,
+      "expected_hash_present": false,
+      "static_extraction_only": true,
+      "python_compile_ok": true
+    },
+    {
+      "slug": "flexonafft_v59_multi_route",
+      "kaggle_ref": "flexonafft/kaggriculture-multi-route-farming-agent",
+      "title": "Kaggriculture | Multi-Route Farming Agent",
+      "extractor": "flex_agent_payload",
+      "source_cell_index": 2,
+      "notebook_file": "kaggriculture-multi-route-farming-agent.ipynb",
+      "notebook_bytes": 30079,
+      "notebook_sha256": "0ffb11fe77ddbffdda0160afddd88dd86b5ccdce6b1aaa4bd656e4c463f5b894",
+      "main_bytes": 29465,
+      "main_sha256": "34193f0ca7fdc77db52cfdadf61596d42cbc2ffd3d8b7903819b0ad78a064a2a",
+      "expected_main_sha256": "34193f0ca7fdc77db52cfdadf61596d42cbc2ffd3d8b7903819b0ad78a064a2a",
+      "expected_hash_present": true,
+      "static_extraction_only": true,
+      "python_compile_ok": true
+    }
+  ]
+}

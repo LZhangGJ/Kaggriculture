@@ -1,0 +1,4088 @@
+{
+  "receipt_id": "GOLD_EXECUTION_CAPABILITY_AUDIT_V1",
+  "status": "PASS",
+  "measured_at": "2026-08-19T07:00:24.901094+00:00",
+  "scope": {
+    "gold_players": 20,
+    "unique_replays": 16,
+    "frames": 11520,
+    "source_snapshot": "gold_latest_2026-08-19_154928",
+    "diagnostic_only": true,
+    "raw_action_playback": false
+  },
+  "source_receipt": {
+    "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\latest_gold_replay_receipt.csv",
+    "sha256": "99C7DFC0BC027F3842A71085A6817262AC77DD014E9D4A23F101B35F1CCDFD1C"
+  },
+  "replays": [
+    {
+      "episode_id": 94424738,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94424738-replay.json",
+      "sha256": "A6EC1CDC1CA0FD38A769E06AE01A32AE50B76DF2054B1D9A3DD91FB430E97B2A",
+      "bytes": 30522204,
+      "team_names": [
+        "カワシギ",
+        "tetsuya"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94430935,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94430935-replay.json",
+      "sha256": "B2CCD47A7D09F18DAD647B7546945652A6B2E4A12B54BAD466A155FE10E4E616",
+      "bytes": 31883176,
+      "team_names": [
+        "Xiaowenhao404",
+        "ReCurSiON"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94424736,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94424736-replay.json",
+      "sha256": "56A709D9F8539C8E617F2DDDB5C641087DC834A182ADB6186DAE0920785C14E4",
+      "bytes": 30566100,
+      "team_names": [
+        "Efe Can Celiksoy",
+        "peikopon"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94428258,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94428258-replay.json",
+      "sha256": "90582E82EE14064207B40E68828612F9652E0EE41B80C78D1854556246793C74",
+      "bytes": 29832579,
+      "team_names": [
+        "Kobe BRYANT",
+        "Michael Timbs"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94424734,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94424734-replay.json",
+      "sha256": "80AF55505A7171A8733D42F7401736E49DE5480AFBB5E1AA59EFB7E798D60B10",
+      "bytes": 31098076,
+      "team_names": [
+        "Galaxantic",
+        "ReCurSiON"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94426484,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94426484-replay.json",
+      "sha256": "B189748EF5A8AC38B95853954B0E556C2C8583E76A2CFAB2726ED8B593AB4461",
+      "bytes": 30334606,
+      "team_names": [
+        "Gekkotron",
+        "Michael Timbs"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94433578,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94433578-replay.json",
+      "sha256": "B3FE105D78AF7920DA9F4B6F2FBA3B182D7C06590E3352CE361D4C127B732532",
+      "bytes": 30487384,
+      "team_names": [
+        "Khalid",
+        "Ueddy"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94435373,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94435373-replay.json",
+      "sha256": "CBF40C5C1CAF6128EB9DCDA8E8AA8C5EE6E204FCBDBE25951FE6259A71528C98",
+      "bytes": 30484160,
+      "team_names": [
+        "Utkarsh #2",
+        "Kostiantyn Isaienkov"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94435374,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94435374-replay.json",
+      "sha256": "0BB90CF76DD46830E4420537B6010A7F6CA756758B318E7A15733020E927849B",
+      "bytes": 30527375,
+      "team_names": [
+        "Dmitry Larko",
+        "peikopon"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94430987,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94430987-replay.json",
+      "sha256": "725A211A124E0FA7EC85F773441930F0FA24B63E2134238137D5971B3C41CCE4",
+      "bytes": 31527385,
+      "team_names": [
+        "TIM",
+        "NCK"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94422099,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94422099-replay.json",
+      "sha256": "DCB6E9A6324D5808C86F2DAC08459891C2BD3DA7161396FA374EA83371FEB8AE",
+      "bytes": 30471630,
+      "team_names": [
+        "Thomas Tschinkel",
+        "Bruce"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94436277,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94436277-replay.json",
+      "sha256": "6E3E3A3ECD6F9EA1B592CAE7EB213D1F4C80D777A438F133AF50A0C63F3EB093",
+      "bytes": 30168590,
+      "team_names": [
+        "RicardoLópez",
+        "Michael Timbs"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94436066,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94436066-replay.json",
+      "sha256": "C26FB0DEBD5391EF013981FE7859DA2A9E5469388C8E33A93506240D140F5CFF",
+      "bytes": 31069722,
+      "team_names": [
+        "NCK",
+        "Ryo Hasegawa"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94435379,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94435379-replay.json",
+      "sha256": "0FCE5DFADD4F9586C03B4F421D0D49C76A37A9C1D7285C88BE4AE5C614143DEB",
+      "bytes": 30533446,
+      "team_names": [
+        "Syed Muhammad Gillani",
+        "ych~sun"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94430982,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94430982-replay.json",
+      "sha256": "ACD8185606A59F4E61799340BA1A64E111B36F9595BADF34C35B04612B771B12",
+      "bytes": 30484974,
+      "team_names": [
+        "Arda Ceylan",
+        "One-For-All"
+      ],
+      "steps": 720
+    },
+    {
+      "episode_id": 94436251,
+      "path": "replay\\gold_latest_2026-08-19_154928\\latest_per_gold\\episode-94436251-replay.json",
+      "sha256": "1971E30A063A4DA4FD24D269B7D28DAB12E7A9E5C2CB3FE55A35A6FF3AD98478",
+      "bytes": 30548510,
+      "team_names": [
+        "ReCurSiON",
+        "Eddy Despradel"
+      ],
+      "steps": 720
+    }
+  ],
+  "players": [
+    {
+      "rank": 1,
+      "team_name": "tetsuya",
+      "score": 3156.4,
+      "submission_id": 55574890,
+      "episode_id": 94424738,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 131,
+        "batch_pickup_max_amount": 6,
+        "batch_pickup_units": 450,
+        "drop_count": 200,
+        "end_day_auto_bank_carrier_count": 134,
+        "end_day_auto_bank_pre_action_units": 1072,
+        "end_day_terminal_collection_count": 12,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 600,
+        "mixed_operation_route_count": 263,
+        "movement_action_count": 3227,
+        "multi_collect_fertilizer_route_count": 96,
+        "multi_collect_fertilizer_route_count_max_units": 5,
+        "multi_collect_fertilizer_route_count_units": 340,
+        "multi_feed_before_depot_count": 96,
+        "multi_feed_before_depot_max_units": 4,
+        "multi_feed_before_depot_units": 344,
+        "multi_fertilize_route_count": 35,
+        "multi_fertilize_route_count_max_units": 6,
+        "multi_fertilize_route_count_units": 108,
+        "multi_harvest_before_drop_count": 111,
+        "multi_harvest_before_drop_max_units": 8,
+        "multi_harvest_before_drop_units": 339,
+        "multi_market_turn_count": 98,
+        "multi_place_before_depot_count": 4,
+        "multi_place_before_depot_max_units": 3,
+        "multi_place_before_depot_units": 9,
+        "multi_plant_route_count": 55,
+        "multi_plant_route_count_max_units": 7,
+        "multi_plant_route_count_units": 154,
+        "multi_target_route_count": 309,
+        "multi_target_route_max_ops": 16,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2645,
+        "multi_water_route_count": 193,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 809,
+        "non_move_action_count": 3075,
+        "pass_action_count": 1812,
+        "pickup_count": 169,
+        "productive_batch_pickup_chain_count": 129,
+        "productive_batch_pickup_chain_max_uses": 6,
+        "same_tile_animal_harvest_collect_count": 124,
+        "same_tile_care_collect_fertilizer_count": 332,
+        "same_tile_feed_care_count": 349,
+        "same_tile_feed_collect_fertilizer_count": 332,
+        "same_tile_fertilize_water_count": 131,
+        "same_tile_harvest_replant_water_count": 60,
+        "same_tile_plant_water_count": 197,
+        "sell_then_reinvest_turn_count": 33
+      },
+      "pickup_items": {
+        "COW": 7,
+        "FERTILIZER": 58,
+        "GOOSE": 1,
+        "SHEEP": 4,
+        "WHEAT": 99
+      },
+      "batch_pickup_items": {
+        "COW": 1,
+        "FERTILIZER": 34,
+        "SHEEP": 2,
+        "WHEAT": 94
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx4": 59,
+        "PICKUP_WHEAT->FEEDx3": 33,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 14,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 10,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx5": 3,
+        "PICKUP_WHEAT->FEEDx2": 2,
+        "PICKUP_FERTILIZER->FERTILIZEx6": 2,
+        "PICKUP_SHEEP->PLACEx2": 1
+      }
+    },
+    {
+      "rank": 2,
+      "team_name": "カワシギ",
+      "score": 3106.3,
+      "submission_id": 55540317,
+      "episode_id": 94424738,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 97,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 577,
+        "crop_animal_mixed_route_count": 258,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2206,
+        "direct_collect_to_fertilize_count": 36,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 249,
+        "end_day_auto_bank_pre_action_units": 1306,
+        "end_day_terminal_collection_count": 5,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 910,
+        "mixed_operation_route_count": 291,
+        "movement_action_count": 3585,
+        "multi_collect_fertilizer_route_count": 89,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 200,
+        "multi_feed_before_depot_count": 74,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 280,
+        "multi_fertilize_route_count": 12,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 31,
+        "multi_harvest_before_drop_count": 102,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 224,
+        "multi_plant_route_count": 45,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 120,
+        "multi_target_route_count": 311,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 10,
+        "multi_target_route_productive_ops": 2558,
+        "multi_water_route_count": 240,
+        "multi_water_route_count_max_units": 10,
+        "multi_water_route_count_units": 895,
+        "non_move_action_count": 2741,
+        "pass_action_count": 869,
+        "pickup_count": 120,
+        "productive_batch_pickup_chain_count": 72,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 69,
+        "same_tile_care_collect_fertilizer_count": 23,
+        "same_tile_feed_care_count": 294,
+        "same_tile_feed_collect_fertilizer_count": 18,
+        "same_tile_fertilize_water_count": 28,
+        "same_tile_harvest_replant_water_count": 55,
+        "same_tile_plant_water_count": 165,
+        "sell_then_reinvest_turn_count": 118
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 19,
+        "SHEEP": 4,
+        "WHEAT": 87
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 17,
+        "WHEAT": 80
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 19,
+        "PICKUP_WHEAT->FEEDx3": 17,
+        "PICKUP_WHEAT->FEEDx4": 17,
+        "PICKUP_WHEAT->FEEDx2": 11,
+        "PICKUP_WHEAT->FEEDx6": 6,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 3,
+      "team_name": "ReCurSiON",
+      "score": 2978.5,
+      "submission_id": 55491717,
+      "episode_id": 94430935,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 120,
+        "batch_pickup_max_amount": 6,
+        "batch_pickup_units": 376,
+        "crop_animal_mixed_route_count": 48,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 438,
+        "drop_count": 58,
+        "end_day_auto_bank_carrier_count": 176,
+        "end_day_auto_bank_pre_action_units": 1004,
+        "end_day_terminal_collection_count": 13,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 698,
+        "mixed_operation_route_count": 238,
+        "movement_action_count": 2870,
+        "multi_collect_fertilizer_route_count": 97,
+        "multi_collect_fertilizer_route_count_max_units": 5,
+        "multi_collect_fertilizer_route_count_units": 277,
+        "multi_feed_before_depot_count": 93,
+        "multi_feed_before_depot_max_units": 4,
+        "multi_feed_before_depot_units": 279,
+        "multi_fertilize_route_count": 20,
+        "multi_fertilize_route_count_max_units": 6,
+        "multi_fertilize_route_count_units": 68,
+        "multi_harvest_before_drop_count": 109,
+        "multi_harvest_before_drop_max_units": 8,
+        "multi_harvest_before_drop_units": 323,
+        "multi_market_turn_count": 103,
+        "multi_place_before_depot_count": 3,
+        "multi_place_before_depot_max_units": 4,
+        "multi_place_before_depot_units": 9,
+        "multi_plant_route_count": 54,
+        "multi_plant_route_count_max_units": 7,
+        "multi_plant_route_count_units": 153,
+        "multi_target_route_count": 281,
+        "multi_target_route_max_ops": 16,
+        "multi_target_route_max_tiles": 10,
+        "multi_target_route_productive_ops": 2525,
+        "multi_water_route_count": 194,
+        "multi_water_route_count_max_units": 10,
+        "multi_water_route_count_units": 945,
+        "non_move_action_count": 2827,
+        "pass_action_count": 1196,
+        "pickup_count": 134,
+        "productive_batch_pickup_chain_count": 113,
+        "productive_batch_pickup_chain_max_uses": 6,
+        "same_tile_animal_harvest_collect_count": 71,
+        "same_tile_care_collect_fertilizer_count": 253,
+        "same_tile_feed_care_count": 261,
+        "same_tile_feed_collect_fertilizer_count": 252,
+        "same_tile_fertilize_water_count": 69,
+        "same_tile_harvest_replant_water_count": 118,
+        "same_tile_plant_water_count": 185,
+        "sell_then_reinvest_turn_count": 43
+      },
+      "pickup_items": {
+        "COW": 4,
+        "FERTILIZER": 24,
+        "SHEEP": 3,
+        "WHEAT": 103
+      },
+      "batch_pickup_items": {
+        "COW": 2,
+        "FERTILIZER": 20,
+        "SHEEP": 2,
+        "WHEAT": 96
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx4": 36,
+        "PICKUP_WHEAT->FEEDx2": 36,
+        "PICKUP_WHEAT->FEEDx3": 21,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 8,
+        "PICKUP_FERTILIZER->FERTILIZEx5": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 3,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 3,
+        "PICKUP_FERTILIZER->FERTILIZEx6": 1
+      }
+    },
+    {
+      "rank": 4,
+      "team_name": "peikopon",
+      "score": 2972.8,
+      "submission_id": 55571023,
+      "episode_id": 94424736,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 104,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 610,
+        "crop_animal_mixed_route_count": 263,
+        "crop_animal_mixed_route_max_ops": 15,
+        "crop_animal_mixed_route_ops": 2214,
+        "direct_collect_to_fertilize_count": 33,
+        "drop_count": 38,
+        "end_day_auto_bank_carrier_count": 232,
+        "end_day_auto_bank_pre_action_units": 1252,
+        "end_day_terminal_collection_count": 5,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 1005,
+        "mixed_operation_route_count": 294,
+        "movement_action_count": 3793,
+        "multi_collect_fertilizer_route_count": 88,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 202,
+        "multi_feed_before_depot_count": 79,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 283,
+        "multi_fertilize_route_count": 16,
+        "multi_fertilize_route_count_max_units": 7,
+        "multi_fertilize_route_count_units": 45,
+        "multi_harvest_before_drop_count": 113,
+        "multi_harvest_before_drop_max_units": 5,
+        "multi_harvest_before_drop_units": 324,
+        "multi_market_turn_count": 240,
+        "multi_plant_route_count": 37,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 99,
+        "multi_target_route_count": 309,
+        "multi_target_route_max_ops": 15,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2545,
+        "multi_water_route_count": 228,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 871,
+        "non_move_action_count": 2762,
+        "pass_action_count": 637,
+        "pickup_count": 129,
+        "productive_batch_pickup_chain_count": 82,
+        "productive_batch_pickup_chain_max_uses": 7,
+        "same_tile_animal_harvest_collect_count": 71,
+        "same_tile_care_collect_fertilizer_count": 18,
+        "same_tile_feed_care_count": 301,
+        "same_tile_feed_collect_fertilizer_count": 19,
+        "same_tile_fertilize_water_count": 29,
+        "same_tile_harvest_replant_water_count": 52,
+        "same_tile_plant_water_count": 156,
+        "sell_then_reinvest_turn_count": 124
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 4,
+        "WHEAT": 101
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 14,
+        "WHEAT": 90
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx3": 23,
+        "PICKUP_WHEAT->FEEDx5": 18,
+        "PICKUP_WHEAT->FEEDx2": 18,
+        "PICKUP_WHEAT->FEEDx4": 12,
+        "PICKUP_WHEAT->FEEDx6": 6,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx7": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx6": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 5,
+      "team_name": "Kobe BRYANT",
+      "score": 2957.0,
+      "submission_id": 55609129,
+      "episode_id": 94428258,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 257,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2154,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 254,
+        "end_day_auto_bank_pre_action_units": 1188,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 964,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3616,
+        "multi_collect_fertilizer_route_count": 82,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 189,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 226,
+        "multi_plant_route_count": 43,
+        "multi_plant_route_count_max_units": 5,
+        "multi_plant_route_count_units": 109,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2545,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 830,
+        "non_move_action_count": 2730,
+        "pass_action_count": 846,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 27,
+        "same_tile_feed_care_count": 313,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 154,
+        "sell_then_reinvest_turn_count": 123
+      },
+      "pickup_items": {
+        "COW": 8,
+        "FERTILIZER": 14,
+        "SHEEP": 7,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 6,
+      "team_name": "Xiaowenhao404",
+      "score": 2949.3,
+      "submission_id": 55610626,
+      "episode_id": 94430935,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 121,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 683,
+        "crop_animal_mixed_route_count": 268,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2357,
+        "direct_collect_to_fertilize_count": 33,
+        "drop_count": 7,
+        "end_day_auto_bank_carrier_count": 248,
+        "end_day_auto_bank_pre_action_units": 1292,
+        "end_day_terminal_collection_count": 10,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 966,
+        "mixed_operation_route_count": 295,
+        "movement_action_count": 3396,
+        "multi_collect_fertilizer_route_count": 102,
+        "multi_collect_fertilizer_route_count_max_units": 5,
+        "multi_collect_fertilizer_route_count_units": 253,
+        "multi_feed_before_depot_count": 90,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 349,
+        "multi_fertilize_route_count": 17,
+        "multi_fertilize_route_count_max_units": 3,
+        "multi_fertilize_route_count_units": 37,
+        "multi_harvest_before_drop_count": 102,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 311,
+        "multi_market_turn_count": 231,
+        "multi_plant_route_count": 46,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 117,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2663,
+        "multi_water_route_count": 213,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 829,
+        "non_move_action_count": 2899,
+        "pass_action_count": 900,
+        "pickup_count": 158,
+        "productive_batch_pickup_chain_count": 85,
+        "productive_batch_pickup_chain_max_uses": 6,
+        "same_tile_animal_harvest_collect_count": 73,
+        "same_tile_care_collect_fertilizer_count": 33,
+        "same_tile_feed_care_count": 362,
+        "same_tile_feed_collect_fertilizer_count": 35,
+        "same_tile_fertilize_water_count": 33,
+        "same_tile_harvest_replant_water_count": 37,
+        "same_tile_plant_water_count": 164,
+        "sell_then_reinvest_turn_count": 126
+      },
+      "pickup_items": {
+        "COW": 6,
+        "FERTILIZER": 6,
+        "SHEEP": 20,
+        "WHEAT": 126
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 5,
+        "WHEAT": 116
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx4": 26,
+        "PICKUP_WHEAT->FEEDx3": 22,
+        "PICKUP_WHEAT->FEEDx5": 19,
+        "PICKUP_WHEAT->FEEDx6": 9,
+        "PICKUP_WHEAT->FEEDx2": 9
+      }
+    },
+    {
+      "rank": 7,
+      "team_name": "Efe Can Celiksoy",
+      "score": 2930.7,
+      "submission_id": 55489809,
+      "episode_id": 94424736,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 111,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 641,
+        "crop_animal_mixed_route_count": 257,
+        "crop_animal_mixed_route_max_ops": 15,
+        "crop_animal_mixed_route_ops": 2169,
+        "direct_collect_to_fertilize_count": 40,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 251,
+        "end_day_auto_bank_pre_action_units": 1292,
+        "end_day_terminal_collection_count": 8,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 929,
+        "mixed_operation_route_count": 290,
+        "movement_action_count": 3562,
+        "multi_collect_fertilizer_route_count": 87,
+        "multi_collect_fertilizer_route_count_max_units": 5,
+        "multi_collect_fertilizer_route_count_units": 205,
+        "multi_feed_before_depot_count": 83,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 304,
+        "multi_fertilize_route_count": 16,
+        "multi_fertilize_route_count_max_units": 4,
+        "multi_fertilize_route_count_units": 43,
+        "multi_harvest_before_drop_count": 113,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 334,
+        "multi_market_turn_count": 226,
+        "multi_plant_route_count": 37,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 100,
+        "multi_target_route_count": 306,
+        "multi_target_route_max_ops": 15,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2536,
+        "multi_water_route_count": 226,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 826,
+        "non_move_action_count": 2718,
+        "pass_action_count": 916,
+        "pickup_count": 131,
+        "productive_batch_pickup_chain_count": 85,
+        "productive_batch_pickup_chain_max_uses": 6,
+        "same_tile_animal_harvest_collect_count": 59,
+        "same_tile_care_collect_fertilizer_count": 19,
+        "same_tile_feed_care_count": 313,
+        "same_tile_feed_collect_fertilizer_count": 19,
+        "same_tile_fertilize_water_count": 37,
+        "same_tile_harvest_replant_water_count": 43,
+        "same_tile_plant_water_count": 161,
+        "sell_then_reinvest_turn_count": 131
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 17,
+        "SHEEP": 5,
+        "WHEAT": 99
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 17,
+        "WHEAT": 94
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx4": 22,
+        "PICKUP_WHEAT->FEEDx5": 20,
+        "PICKUP_WHEAT->FEEDx3": 18,
+        "PICKUP_WHEAT->FEEDx2": 18,
+        "PICKUP_WHEAT->FEEDx6": 4,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 3
+      }
+    },
+    {
+      "rank": 8,
+      "team_name": "Galaxantic",
+      "score": 2927.4,
+      "submission_id": 55576886,
+      "episode_id": 94424734,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2192,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 257,
+        "end_day_auto_bank_pre_action_units": 1268,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 945,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3628,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 221,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2552,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 829,
+        "non_move_action_count": 2739,
+        "pass_action_count": 825,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 158,
+        "sell_then_reinvest_turn_count": 119
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 9,
+      "team_name": "Gekkotron",
+      "score": 2903.8,
+      "submission_id": 55580428,
+      "episode_id": 94426484,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2191,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 257,
+        "end_day_auto_bank_pre_action_units": 1275,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 958,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3625,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 229,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2550,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 832,
+        "non_move_action_count": 2735,
+        "pass_action_count": 832,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 159,
+        "sell_then_reinvest_turn_count": 126
+      },
+      "pickup_items": {
+        "COW": 8,
+        "FERTILIZER": 14,
+        "SHEEP": 7,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 10,
+      "team_name": "Ueddy",
+      "score": 2902.3,
+      "submission_id": 55579085,
+      "episode_id": 94433578,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 111,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 684,
+        "crop_animal_mixed_route_count": 260,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2132,
+        "direct_collect_to_fertilize_count": 42,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 254,
+        "end_day_auto_bank_pre_action_units": 1296,
+        "end_day_terminal_collection_count": 8,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 946,
+        "mixed_operation_route_count": 297,
+        "movement_action_count": 3602,
+        "multi_collect_fertilizer_route_count": 88,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 195,
+        "multi_feed_before_depot_count": 76,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 283,
+        "multi_fertilize_route_count": 15,
+        "multi_fertilize_route_count_max_units": 9,
+        "multi_fertilize_route_count_units": 46,
+        "multi_harvest_before_drop_count": 111,
+        "multi_harvest_before_drop_max_units": 6,
+        "multi_harvest_before_drop_units": 323,
+        "multi_market_turn_count": 226,
+        "multi_plant_route_count": 40,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 111,
+        "multi_target_route_count": 311,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 10,
+        "multi_target_route_productive_ops": 2513,
+        "multi_water_route_count": 206,
+        "multi_water_route_count_max_units": 10,
+        "multi_water_route_count_units": 802,
+        "non_move_action_count": 2709,
+        "pass_action_count": 884,
+        "pickup_count": 134,
+        "productive_batch_pickup_chain_count": 77,
+        "productive_batch_pickup_chain_max_uses": 9,
+        "same_tile_animal_harvest_collect_count": 69,
+        "same_tile_care_collect_fertilizer_count": 21,
+        "same_tile_feed_care_count": 300,
+        "same_tile_feed_collect_fertilizer_count": 20,
+        "same_tile_fertilize_water_count": 38,
+        "same_tile_harvest_replant_water_count": 37,
+        "same_tile_plant_water_count": 151,
+        "sell_then_reinvest_turn_count": 126
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 24,
+        "SHEEP": 5,
+        "WHEAT": 95
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 24,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx4": 23,
+        "PICKUP_WHEAT->FEEDx3": 17,
+        "PICKUP_WHEAT->FEEDx5": 16,
+        "PICKUP_WHEAT->FEEDx2": 12,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 2,
+        "PICKUP_FERTILIZER->FERTILIZEx9": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx7": 1
+      }
+    },
+    {
+      "rank": 11,
+      "team_name": "Kostiantyn Isaienkov",
+      "score": 2898.3,
+      "submission_id": 55589139,
+      "episode_id": 94435373,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 602,
+        "crop_animal_mixed_route_count": 262,
+        "crop_animal_mixed_route_max_ops": 15,
+        "crop_animal_mixed_route_ops": 2182,
+        "direct_collect_to_fertilize_count": 41,
+        "drop_count": 45,
+        "end_day_auto_bank_carrier_count": 230,
+        "end_day_auto_bank_pre_action_units": 1221,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 919,
+        "mixed_operation_route_count": 297,
+        "movement_action_count": 3904,
+        "multi_collect_fertilizer_route_count": 84,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 195,
+        "multi_feed_before_depot_count": 82,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 301,
+        "multi_fertilize_route_count": 16,
+        "multi_fertilize_route_count_max_units": 9,
+        "multi_fertilize_route_count_units": 43,
+        "multi_harvest_before_drop_count": 112,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 329,
+        "multi_market_turn_count": 219,
+        "multi_plant_route_count": 39,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 102,
+        "multi_target_route_count": 308,
+        "multi_target_route_max_ops": 15,
+        "multi_target_route_max_tiles": 10,
+        "multi_target_route_productive_ops": 2527,
+        "multi_water_route_count": 218,
+        "multi_water_route_count_max_units": 11,
+        "multi_water_route_count_units": 815,
+        "non_move_action_count": 2757,
+        "pass_action_count": 530,
+        "pickup_count": 126,
+        "productive_batch_pickup_chain_count": 83,
+        "productive_batch_pickup_chain_max_uses": 9,
+        "same_tile_animal_harvest_collect_count": 66,
+        "same_tile_care_collect_fertilizer_count": 24,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 24,
+        "same_tile_fertilize_water_count": 41,
+        "same_tile_harvest_replant_water_count": 44,
+        "same_tile_plant_water_count": 149,
+        "sell_then_reinvest_turn_count": 112
+      },
+      "pickup_items": {
+        "COW": 6,
+        "FERTILIZER": 13,
+        "SHEEP": 9,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 22,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 19,
+        "PICKUP_WHEAT->FEEDx2": 16,
+        "PICKUP_WHEAT->FEEDx6": 3,
+        "PICKUP_FERTILIZER->FERTILIZEx9": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 12,
+      "team_name": "Dmitry Larko",
+      "score": 2897.8,
+      "submission_id": 55592681,
+      "episode_id": 94435374,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2193,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 256,
+        "end_day_auto_bank_pre_action_units": 1269,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 955,
+        "mixed_operation_route_count": 297,
+        "movement_action_count": 3625,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 107,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 322,
+        "multi_market_turn_count": 226,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 308,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2555,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 832,
+        "non_move_action_count": 2738,
+        "pass_action_count": 829,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 159,
+        "sell_then_reinvest_turn_count": 125
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 13,
+      "team_name": "TIM",
+      "score": 2897.3,
+      "submission_id": 55610419,
+      "episode_id": 94430987,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 111,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 648,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2284,
+        "direct_collect_to_fertilize_count": 42,
+        "drop_count": 10,
+        "end_day_auto_bank_carrier_count": 249,
+        "end_day_auto_bank_pre_action_units": 1240,
+        "end_day_terminal_collection_count": 13,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 1014,
+        "mixed_operation_route_count": 295,
+        "movement_action_count": 3513,
+        "multi_collect_fertilizer_route_count": 96,
+        "multi_collect_fertilizer_route_count_max_units": 5,
+        "multi_collect_fertilizer_route_count_units": 239,
+        "multi_feed_before_depot_count": 90,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 355,
+        "multi_fertilize_route_count": 17,
+        "multi_fertilize_route_count_max_units": 3,
+        "multi_fertilize_route_count_units": 40,
+        "multi_harvest_before_drop_count": 103,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 323,
+        "multi_market_turn_count": 230,
+        "multi_plant_route_count": 41,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 110,
+        "multi_target_route_count": 311,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 11,
+        "multi_target_route_productive_ops": 2661,
+        "multi_water_route_count": 210,
+        "multi_water_route_count_max_units": 10,
+        "multi_water_route_count_units": 821,
+        "non_move_action_count": 2880,
+        "pass_action_count": 821,
+        "pickup_count": 148,
+        "productive_batch_pickup_chain_count": 86,
+        "productive_batch_pickup_chain_max_uses": 6,
+        "same_tile_animal_harvest_collect_count": 75,
+        "same_tile_care_collect_fertilizer_count": 22,
+        "same_tile_feed_care_count": 356,
+        "same_tile_feed_collect_fertilizer_count": 22,
+        "same_tile_fertilize_water_count": 34,
+        "same_tile_harvest_replant_water_count": 33,
+        "same_tile_plant_water_count": 153,
+        "sell_then_reinvest_turn_count": 133
+      },
+      "pickup_items": {
+        "COW": 6,
+        "FERTILIZER": 4,
+        "SHEEP": 23,
+        "WHEAT": 115
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 4,
+        "WHEAT": 107
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx3": 28,
+        "PICKUP_WHEAT->FEEDx4": 26,
+        "PICKUP_WHEAT->FEEDx5": 14,
+        "PICKUP_WHEAT->FEEDx6": 13,
+        "PICKUP_WHEAT->FEEDx2": 5
+      }
+    },
+    {
+      "rank": 14,
+      "team_name": "Thomas Tschinkel",
+      "score": 2890.7,
+      "submission_id": 55604893,
+      "episode_id": 94422099,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 13,
+        "crop_animal_mixed_route_ops": 2153,
+        "direct_collect_to_fertilize_count": 47,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 255,
+        "end_day_auto_bank_pre_action_units": 1311,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 668,
+        "mixed_operation_route_count": 298,
+        "movement_action_count": 3625,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 72,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 248,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 36,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 108,
+        "multi_plant_route_count": 43,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 111,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 13,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2511,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 837,
+        "non_move_action_count": 2697,
+        "pass_action_count": 870,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 72,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 267,
+        "same_tile_feed_collect_fertilizer_count": 21,
+        "same_tile_fertilize_water_count": 42,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 159,
+        "sell_then_reinvest_turn_count": 59
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx2": 21,
+        "PICKUP_WHEAT->FEEDx3": 16,
+        "PICKUP_WHEAT->FEEDx4": 15,
+        "PICKUP_WHEAT->FEEDx5": 14,
+        "PICKUP_WHEAT->FEEDx6": 4,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 15,
+      "team_name": "Michael Timbs",
+      "score": 2885.4,
+      "submission_id": 55507935,
+      "episode_id": 94436277,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 99,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 567,
+        "crop_animal_mixed_route_count": 260,
+        "crop_animal_mixed_route_max_ops": 15,
+        "crop_animal_mixed_route_ops": 2123,
+        "direct_collect_to_fertilize_count": 40,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 257,
+        "end_day_auto_bank_pre_action_units": 1297,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 727,
+        "mixed_operation_route_count": 295,
+        "movement_action_count": 3618,
+        "multi_collect_fertilizer_route_count": 78,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 180,
+        "multi_feed_before_depot_count": 77,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 281,
+        "multi_fertilize_route_count": 13,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 39,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 313,
+        "multi_market_turn_count": 140,
+        "multi_plant_route_count": 41,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 105,
+        "multi_target_route_count": 308,
+        "multi_target_route_max_ops": 15,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2469,
+        "multi_water_route_count": 220,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 815,
+        "non_move_action_count": 2661,
+        "pass_action_count": 913,
+        "pickup_count": 130,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 60,
+        "same_tile_care_collect_fertilizer_count": 19,
+        "same_tile_feed_care_count": 296,
+        "same_tile_feed_collect_fertilizer_count": 17,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 44,
+        "same_tile_plant_water_count": 149,
+        "sell_then_reinvest_turn_count": 81
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 19,
+        "SHEEP": 5,
+        "WHEAT": 96
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 18,
+        "WHEAT": 81
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 20,
+        "PICKUP_WHEAT->FEEDx4": 19,
+        "PICKUP_WHEAT->FEEDx3": 17,
+        "PICKUP_WHEAT->FEEDx2": 16,
+        "PICKUP_WHEAT->FEEDx6": 3,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx5": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx6": 1
+      }
+    },
+    {
+      "rank": 16,
+      "team_name": "Ryo Hasegawa",
+      "score": 2882.5,
+      "submission_id": 55614463,
+      "episode_id": 94436066,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 107,
+        "batch_pickup_max_amount": 5,
+        "batch_pickup_units": 254,
+        "crop_animal_mixed_route_count": 196,
+        "crop_animal_mixed_route_max_ops": 15,
+        "crop_animal_mixed_route_ops": 1743,
+        "direct_collect_to_fertilize_count": 34,
+        "drop_count": 103,
+        "end_day_auto_bank_carrier_count": 191,
+        "end_day_auto_bank_pre_action_units": 951,
+        "end_day_terminal_collection_count": 10,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 667,
+        "mixed_operation_route_count": 281,
+        "movement_action_count": 3760,
+        "multi_collect_fertilizer_route_count": 93,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 211,
+        "multi_feed_before_depot_count": 94,
+        "multi_feed_before_depot_max_units": 4,
+        "multi_feed_before_depot_units": 215,
+        "multi_fertilize_route_count": 15,
+        "multi_fertilize_route_count_max_units": 5,
+        "multi_fertilize_route_count_units": 41,
+        "multi_harvest_before_drop_count": 104,
+        "multi_harvest_before_drop_max_units": 6,
+        "multi_harvest_before_drop_units": 280,
+        "multi_market_turn_count": 118,
+        "multi_plant_route_count": 41,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 318,
+        "multi_target_route_max_ops": 15,
+        "multi_target_route_max_tiles": 10,
+        "multi_target_route_productive_ops": 2655,
+        "multi_water_route_count": 249,
+        "multi_water_route_count_max_units": 10,
+        "multi_water_route_count_units": 1023,
+        "non_move_action_count": 3174,
+        "pass_action_count": 628,
+        "pickup_count": 250,
+        "productive_batch_pickup_chain_count": 102,
+        "productive_batch_pickup_chain_max_uses": 5,
+        "same_tile_animal_harvest_collect_count": 100,
+        "same_tile_care_collect_fertilizer_count": 261,
+        "same_tile_feed_care_count": 276,
+        "same_tile_feed_collect_fertilizer_count": 301,
+        "same_tile_fertilize_water_count": 76,
+        "same_tile_harvest_replant_water_count": 62,
+        "same_tile_plant_water_count": 169,
+        "sell_then_reinvest_turn_count": 59
+      },
+      "pickup_items": {
+        "COW": 14,
+        "FERTILIZER": 26,
+        "SHEEP": 2,
+        "WHEAT": 208
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 11,
+        "WHEAT": 96
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx2": 70,
+        "PICKUP_WHEAT->FEEDx3": 17,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 6,
+        "PICKUP_WHEAT->FEEDx4": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 2,
+        "PICKUP_FERTILIZER->FERTILIZEx5": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 1
+      }
+    },
+    {
+      "rank": 17,
+      "team_name": "Syed Muhammad Gillani",
+      "score": 2881.2,
+      "submission_id": 55601576,
+      "episode_id": 94435379,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2192,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 258,
+        "end_day_auto_bank_pre_action_units": 1259,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 1028,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3625,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 248,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2551,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 832,
+        "non_move_action_count": 2736,
+        "pass_action_count": 831,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 159,
+        "sell_then_reinvest_turn_count": 115
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 18,
+      "team_name": "One-For-All",
+      "score": 2874.7,
+      "submission_id": 55541643,
+      "episode_id": 94430982,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 104,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 610,
+        "crop_animal_mixed_route_count": 263,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2228,
+        "direct_collect_to_fertilize_count": 33,
+        "drop_count": 10,
+        "end_day_auto_bank_carrier_count": 252,
+        "end_day_auto_bank_pre_action_units": 1296,
+        "end_day_terminal_collection_count": 5,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 963,
+        "mixed_operation_route_count": 294,
+        "movement_action_count": 3485,
+        "multi_collect_fertilizer_route_count": 88,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 202,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 289,
+        "multi_fertilize_route_count": 16,
+        "multi_fertilize_route_count_max_units": 7,
+        "multi_fertilize_route_count_units": 45,
+        "multi_harvest_before_drop_count": 113,
+        "multi_harvest_before_drop_max_units": 5,
+        "multi_harvest_before_drop_units": 323,
+        "multi_market_turn_count": 232,
+        "multi_plant_route_count": 37,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 99,
+        "multi_target_route_count": 309,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2563,
+        "multi_water_route_count": 229,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 872,
+        "non_move_action_count": 2753,
+        "pass_action_count": 954,
+        "pickup_count": 129,
+        "productive_batch_pickup_chain_count": 81,
+        "productive_batch_pickup_chain_max_uses": 7,
+        "same_tile_animal_harvest_collect_count": 71,
+        "same_tile_care_collect_fertilizer_count": 18,
+        "same_tile_feed_care_count": 305,
+        "same_tile_feed_collect_fertilizer_count": 18,
+        "same_tile_fertilize_water_count": 29,
+        "same_tile_harvest_replant_water_count": 52,
+        "same_tile_plant_water_count": 156,
+        "sell_then_reinvest_turn_count": 123
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 4,
+        "WHEAT": 101
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 14,
+        "WHEAT": 90
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 20,
+        "PICKUP_WHEAT->FEEDx3": 19,
+        "PICKUP_WHEAT->FEEDx2": 16,
+        "PICKUP_WHEAT->FEEDx4": 15,
+        "PICKUP_WHEAT->FEEDx6": 6,
+        "PICKUP_FERTILIZER->FERTILIZEx2": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx7": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx4": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx6": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 19,
+      "team_name": "Eddy Despradel",
+      "score": 2873.8,
+      "submission_id": 55579123,
+      "episode_id": 94436251,
+      "player": 1,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 260,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2189,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 254,
+        "end_day_auto_bank_pre_action_units": 1189,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 953,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3622,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 225,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2552,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 829,
+        "non_move_action_count": 2739,
+        "pass_action_count": 831,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 314,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 157,
+        "sell_then_reinvest_turn_count": 125
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    },
+    {
+      "rank": 20,
+      "team_name": "Khalid",
+      "score": 2859.2,
+      "submission_id": 55584299,
+      "episode_id": 94433578,
+      "player": 0,
+      "metrics": {
+        "batch_pickup_count": 100,
+        "batch_pickup_max_amount": 8,
+        "batch_pickup_units": 598,
+        "crop_animal_mixed_route_count": 261,
+        "crop_animal_mixed_route_max_ops": 14,
+        "crop_animal_mixed_route_ops": 2191,
+        "direct_collect_to_fertilize_count": 45,
+        "drop_count": 9,
+        "end_day_auto_bank_carrier_count": 257,
+        "end_day_auto_bank_pre_action_units": 1264,
+        "end_day_terminal_collection_count": 4,
+        "market_max_orders_per_turn": 10,
+        "market_order_count": 966,
+        "mixed_operation_route_count": 296,
+        "movement_action_count": 3625,
+        "multi_collect_fertilizer_route_count": 83,
+        "multi_collect_fertilizer_route_count_max_units": 4,
+        "multi_collect_fertilizer_route_count_units": 191,
+        "multi_feed_before_depot_count": 78,
+        "multi_feed_before_depot_max_units": 6,
+        "multi_feed_before_depot_units": 300,
+        "multi_fertilize_route_count": 14,
+        "multi_fertilize_route_count_max_units": 8,
+        "multi_fertilize_route_count_units": 35,
+        "multi_harvest_before_drop_count": 106,
+        "multi_harvest_before_drop_max_units": 7,
+        "multi_harvest_before_drop_units": 320,
+        "multi_market_turn_count": 227,
+        "multi_plant_route_count": 44,
+        "multi_plant_route_count_max_units": 6,
+        "multi_plant_route_count_units": 113,
+        "multi_target_route_count": 307,
+        "multi_target_route_max_ops": 14,
+        "multi_target_route_max_tiles": 9,
+        "multi_target_route_productive_ops": 2550,
+        "multi_water_route_count": 216,
+        "multi_water_route_count_max_units": 9,
+        "multi_water_route_count_units": 832,
+        "non_move_action_count": 2735,
+        "pass_action_count": 832,
+        "pickup_count": 127,
+        "productive_batch_pickup_chain_count": 78,
+        "productive_batch_pickup_chain_max_uses": 8,
+        "same_tile_animal_harvest_collect_count": 67,
+        "same_tile_care_collect_fertilizer_count": 26,
+        "same_tile_feed_care_count": 315,
+        "same_tile_feed_collect_fertilizer_count": 26,
+        "same_tile_fertilize_water_count": 39,
+        "same_tile_harvest_replant_water_count": 51,
+        "same_tile_plant_water_count": 159,
+        "sell_then_reinvest_turn_count": 128
+      },
+      "pickup_items": {
+        "COW": 10,
+        "FERTILIZER": 14,
+        "SHEEP": 5,
+        "WHEAT": 98
+      },
+      "batch_pickup_items": {
+        "FERTILIZER": 13,
+        "WHEAT": 87
+      },
+      "batch_route_signatures": {
+        "PICKUP_WHEAT->FEEDx5": 23,
+        "PICKUP_WHEAT->FEEDx4": 20,
+        "PICKUP_WHEAT->FEEDx3": 15,
+        "PICKUP_WHEAT->FEEDx2": 13,
+        "PICKUP_WHEAT->FEEDx6": 5,
+        "PICKUP_FERTILIZER->FERTILIZEx8": 1,
+        "PICKUP_FERTILIZER->FERTILIZEx3": 1
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "totals": {
+      "batch_pickup_count": 2116,
+      "batch_pickup_units": 11486,
+      "crop_animal_mixed_route_count": 4679,
+      "crop_animal_mixed_route_ops": 39531,
+      "direct_collect_to_fertilize_count": 736,
+      "drop_count": 579,
+      "end_day_auto_bank_carrier_count": 4771,
+      "end_day_auto_bank_pre_action_units": 24542,
+      "end_day_terminal_collection_count": 125,
+      "market_order_count": 17781,
+      "mixed_operation_route_count": 5801,
+      "movement_action_count": 71306,
+      "multi_collect_fertilizer_route_count": 1749,
+      "multi_collect_fertilizer_route_count_units": 4225,
+      "multi_feed_before_depot_count": 1630,
+      "multi_feed_before_depot_units": 5911,
+      "multi_fertilize_route_count": 320,
+      "multi_fertilize_route_count_units": 867,
+      "multi_harvest_before_drop_count": 2148,
+      "multi_harvest_before_drop_units": 6404,
+      "multi_market_turn_count": 3997,
+      "multi_place_before_depot_count": 7,
+      "multi_place_before_depot_units": 18,
+      "multi_plant_route_count": 863,
+      "multi_plant_route_count_units": 2281,
+      "multi_target_route_count": 6145,
+      "multi_target_route_productive_ops": 51226,
+      "multi_water_route_count": 4354,
+      "multi_water_route_count_units": 16976,
+      "non_move_action_count": 55805,
+      "pass_action_count": 17756,
+      "pickup_count": 2774,
+      "productive_batch_pickup_chain_count": 1691,
+      "same_tile_animal_harvest_collect_count": 1444,
+      "same_tile_care_collect_fertilizer_count": 1252,
+      "same_tile_feed_care_count": 6197,
+      "same_tile_feed_collect_fertilizer_count": 1280,
+      "same_tile_fertilize_water_count": 899,
+      "same_tile_harvest_replant_water_count": 1045,
+      "same_tile_plant_water_count": 3219,
+      "sell_then_reinvest_turn_count": 2129
+    },
+    "maxima": {
+      "batch_pickup_max_amount": 8,
+      "crop_animal_mixed_route_max_ops": 15,
+      "market_max_orders_per_turn": 10,
+      "multi_collect_fertilizer_route_count_max_units": 5,
+      "multi_feed_before_depot_max_units": 6,
+      "multi_fertilize_route_count_max_units": 9,
+      "multi_harvest_before_drop_max_units": 8,
+      "multi_place_before_depot_max_units": 4,
+      "multi_plant_route_count_max_units": 7,
+      "multi_target_route_max_ops": 16,
+      "multi_target_route_max_tiles": 11,
+      "multi_water_route_count_max_units": 11,
+      "productive_batch_pickup_chain_max_uses": 9
+    },
+    "pickup_items": {
+      "COW": 179,
+      "FERTILIZER": 350,
+      "GOOSE": 1,
+      "SHEEP": 132,
+      "WHEAT": 2112
+    },
+    "batch_pickup_items": {
+      "WHEAT": 1814,
+      "FERTILIZER": 295,
+      "SHEEP": 4,
+      "COW": 3
+    }
+  },
+  "capabilities": [
+    {
+      "capability": "显式多目标任务链",
+      "metric": "multi_target_route_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 6145,
+      "max_per_player": 318,
+      "current_support": "PARTIAL_OPPORTUNISTIC",
+      "gap": "一名工人只有一个当前任务；完成后才重新贪心分配，没有目标队列和整条路线资源锁定。",
+      "priority": "P0"
+    },
+    {
+      "capability": "一次取粮连续喂多只动物",
+      "metric": "multi_feed_before_depot_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 1630,
+      "max_per_player": 96,
+      "current_support": "EXPERIMENTAL_NOT_ACCEPTED",
+      "gap": "原子执行器支持批量 PICKUP，但正式基线没有可靠的后续目标预留；V19 单独放大取粮已反证。",
+      "priority": "P0"
+    },
+    {
+      "capability": "一次取多只动物连续放置",
+      "metric": "multi_place_before_depot_count",
+      "players_with_evidence": 2,
+      "gold_player_count": 20,
+      "observed_count": 7,
+      "max_per_player": 4,
+      "current_support": "MISSING",
+      "gap": "PLACE 流水线按单只动物建卡，每只通常重新回仓取货。",
+      "priority": "P2"
+    },
+    {
+      "capability": "连续收获多个地块后统一回仓",
+      "metric": "multi_harvest_before_drop_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 2148,
+      "max_per_player": 113,
+      "current_support": "MISSING",
+      "gap": "当前 HARVEST 任务立即转入 MOVE_TO_DEPOT，无法先访问第二个成熟地块。",
+      "priority": "P0"
+    },
+    {
+      "capability": "日终自动回仓/自动入库",
+      "metric": "end_day_auto_bank_carrier_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 4771,
+      "max_per_player": 258,
+      "current_support": "MISSING_AS_PLANNED_ROUTE_MODE",
+      "gap": "当前收获任务硬性预留返回 shed 和 DROP 路径，没有利用官方日终自动回收库存。",
+      "priority": "P0"
+    },
+    {
+      "capability": "同格喂养、护理、收肥组合",
+      "metric": "same_tile_feed_care_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 6197,
+      "max_per_player": 362,
+      "current_support": "PARTIAL_OPPORTUNISTIC",
+      "gap": "可在前一任务完成后偶然续接，但没有把同格动作打包成不可拆的服务卡。",
+      "priority": "P1"
+    },
+    {
+      "capability": "同格收获后立即补种并浇水",
+      "metric": "same_tile_harvest_replant_water_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 1045,
+      "max_per_player": 118,
+      "current_support": "MISSING",
+      "gap": "当前作物 HARVEST 先转入回仓链，无法在同一次到访中原地补种并完成当天浇水。",
+      "priority": "P0"
+    },
+    {
+      "capability": "动物产品收获后同格收肥",
+      "metric": "same_tile_animal_harvest_collect_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 1444,
+      "max_per_player": 124,
+      "current_support": "MISSING",
+      "gap": "当前动物 HARVEST 成功后立即返仓，没有在同一动物格继续 COLLECT_FERTILIZER。",
+      "priority": "P1"
+    },
+    {
+      "capability": "一名工人连续浇水多个地块",
+      "metric": "multi_water_route_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 4354,
+      "max_per_player": 249,
+      "current_support": "PARTIAL_OPPORTUNISTIC",
+      "gap": "逐任务重规划可能偶然连续浇水，但没有预先锁定巡回目标和单位分区。",
+      "priority": "P1"
+    },
+    {
+      "capability": "一名工人连续收肥多个动物格",
+      "metric": "multi_collect_fertilizer_route_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 1749,
+      "max_per_player": 102,
+      "current_support": "PARTIAL",
+      "gap": "已有携带肥料后的续接逻辑，但只能从碰巧站在动物格开始，缺少完整收集巡回路线。",
+      "priority": "P1"
+    },
+    {
+      "capability": "直接用刚收的小麦喂动物",
+      "metric": "direct_wheat_harvest_to_feed_count",
+      "players_with_evidence": 0,
+      "gold_player_count": 20,
+      "observed_count": 0,
+      "max_per_player": 0,
+      "current_support": "NO_GOLD_EVIDENCE",
+      "gap": "当前控制器确实不能跨项目直接消费刚收的小麦，但本批 20 名金牌没有出现该链，暂不应投入实现。",
+      "priority": "DEFER"
+    },
+    {
+      "capability": "收肥后直接给作物施肥",
+      "metric": "direct_collect_to_fertilize_count",
+      "players_with_evidence": 18,
+      "gold_player_count": 20,
+      "observed_count": 736,
+      "max_per_player": 47,
+      "current_support": "MISSING",
+      "gap": "动物收肥和作物施肥账本在 shed 处衔接，缺少携带物的跨项目任务交接。",
+      "priority": "P1"
+    },
+    {
+      "capability": "同回合先卖后买/雇工",
+      "metric": "sell_then_reinvest_turn_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 2129,
+      "max_per_player": 133,
+      "current_support": "IMPLEMENTED",
+      "gap": "动态事务账本和显式市场顺序已经覆盖，主要风险是十槽截断而非能力缺失。",
+      "priority": "KEEP"
+    },
+    {
+      "capability": "同格种植后立即浇水",
+      "metric": "same_tile_plant_water_count",
+      "players_with_evidence": 20,
+      "gold_player_count": 20,
+      "observed_count": 3219,
+      "max_per_player": 197,
+      "current_support": "IMPLEMENTED",
+      "gap": "CROP_PRODUCTION 的 OPERATE 阶段已保持 same-day WATER 连续性。",
+      "priority": "KEEP"
+    }
+  ],
+  "examples": {
+    "crop_animal_mixed_route": [
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s12:FEED@3,3",
+          "s13:CARE@3,3",
+          "s15:PLANT:MELON@3,2",
+          "s16:WATER@3,2",
+          "s18:PLANT:MELON@3,1",
+          "s19:WATER@3,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 1,
+        "events": [
+          "s6:PLACE:SHEEP:1@3,3",
+          "s9:PLANT:WHEAT@1,3",
+          "s10:WATER@1,3",
+          "s12:PLANT:MELON@1,2",
+          "s13:WATER@1,2",
+          "s15:PLANT:MELON@0,2",
+          "s16:WATER@0,2",
+          "s20:PLANT:MELON@2,1",
+          "s21:WATER@2,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s3:BUILD_PASTURE@3,4",
+          "s6:PLANT:WHEAT@1,4",
+          "s7:WATER@1,4",
+          "s9:PLANT:MELON@0,4",
+          "s10:WATER@0,4",
+          "s12:PLANT:MELON@0,3",
+          "s13:WATER@0,3",
+          "s16:PLANT:MELON@0,1",
+          "s17:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 3,
+        "events": [
+          "s13:PLACE:COW:1@3,4",
+          "s16:PLANT:MELON@2,3",
+          "s17:WATER@2,3"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 5,
+        "events": [
+          "s5:BUILD_PASTURE@3,3",
+          "s8:PLANT:WHEAT@2,2",
+          "s9:WATER@2,2",
+          "s12:PLANT:WHEAT@1,1",
+          "s13:WATER@1,1",
+          "s16:PLANT:WHEAT@0,0",
+          "s17:WATER@0,0"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s50:FEED@4,4",
+          "s51:CARE@4,4",
+          "s53:FEED@4,3",
+          "s54:CARE@4,3",
+          "s56:FEED@3,3",
+          "s57:CARE@3,3",
+          "s59:FEED@3,4",
+          "s60:CARE@3,4",
+          "s64:WATER@0,4",
+          "s67:BUILD_PASTURE@2,4"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 4,
+        "events": [
+          "s51:COLLECT_FERTILIZER@4,3",
+          "s53:COLLECT_FERTILIZER@4,4",
+          "s57:WATER@1,4",
+          "s59:WATER@1,3",
+          "s61:WATER@1,2",
+          "s63:WATER@0,2",
+          "s65:WATER@0,3"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 1,
+        "events": [
+          "s52:COLLECT_FERTILIZER@3,4",
+          "s55:WATER@3,2",
+          "s57:WATER@3,1",
+          "s59:WATER@3,0",
+          "s62:WATER@1,0"
+        ]
+      }
+    ],
+    "direct_collect_to_fertilize": [
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 15,
+        "unit": 4,
+        "events": [
+          "s339:HARVEST@4,4",
+          "s340:COLLECT_FERTILIZER@4,4",
+          "s342:COLLECT_FERTILIZER@4,3",
+          "s346:WATER@2,2",
+          "s349:FERTILIZE@1,1",
+          "s350:WATER@1,1",
+          "s353:FERTILIZE@0,0",
+          "s354:WATER@0,0",
+          "s356:WATER@1,0"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 15,
+        "unit": 7,
+        "events": [
+          "s340:HARVEST@3,4",
+          "s341:COLLECT_FERTILIZER@3,4",
+          "s343:COLLECT_FERTILIZER@2,4",
+          "s345:FERTILIZE@1,4",
+          "s346:WATER@1,4",
+          "s348:FERTILIZE@1,3",
+          "s349:WATER@1,3",
+          "s351:WATER@1,2",
+          "s353:WATER@0,2",
+          "s355:WATER@0,1",
+          "s358:WATER@0,3"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 1,
+        "events": [
+          "s387:FEED@5,4",
+          "s388:CARE@5,4",
+          "s390:FEED@5,3",
+          "s391:CARE@5,3",
+          "s393:FEED@6,3",
+          "s394:CARE@6,3",
+          "s396:FEED@6,4",
+          "s397:CARE@6,4",
+          "s399:FEED@7,4",
+          "s400:CARE@7,4",
+          "s401:COLLECT_FERTILIZER@7,4",
+          "s405:FERTILIZE@7,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 8,
+        "events": [
+          "s388:COLLECT_FERTILIZER@6,4",
+          "s390:COLLECT_FERTILIZER@6,3",
+          "s392:WATER@6,2",
+          "s394:WATER@6,1",
+          "s396:FERTILIZE@6,0",
+          "s397:WATER@6,0",
+          "s399:FERTILIZE@7,0",
+          "s400:WATER@7,0",
+          "s402:WATER@8,0",
+          "s405:WATER@8,2"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 18,
+        "unit": 3,
+        "events": [
+          "s408:WATER@?",
+          "s413:HARVEST@5,2",
+          "s414:COLLECT_FERTILIZER@5,2",
+          "s416:WATER@6,2",
+          "s417:HARVEST@6,2",
+          "s421:PLACE:MELON:6@5,4",
+          "s423:COLLECT_FERTILIZER@6,4",
+          "s428:FERTILIZE@8,2",
+          "s430:FERTILIZE@8,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 18,
+        "unit": 9,
+        "events": [
+          "s408:WATER@?",
+          "s414:HARVEST@7,4",
+          "s415:COLLECT_FERTILIZER@7,4",
+          "s417:WATER@8,4",
+          "s419:FERTILIZE@8,3",
+          "s420:WATER@8,3",
+          "s422:WATER@8,2",
+          "s424:WATER@8,1",
+          "s426:WATER@8,0",
+          "s428:WATER@9,0"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 19,
+        "unit": 6,
+        "events": [
+          "s432:WATER@?",
+          "s436:HARVEST@3,4",
+          "s437:COLLECT_FERTILIZER@3,4",
+          "s439:COLLECT_FERTILIZER@2,4",
+          "s441:FERTILIZE@1,4",
+          "s442:WATER@1,4",
+          "s444:FERTILIZE@1,3",
+          "s447:WATER@0,2",
+          "s449:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 2,
+        "team": "カワシギ",
+        "episode_id": 94424738,
+        "day": 19,
+        "unit": 9,
+        "events": [
+          "s432:HARVEST@?",
+          "s437:HARVEST@3,3",
+          "s439:COLLECT_FERTILIZER@4,3",
+          "s443:WATER@2,2",
+          "s445:WATER@2,1",
+          "s447:FERTILIZE@1,1",
+          "s449:WATER@1,2"
+        ]
+      }
+    ],
+    "end_day_auto_bank_carrier": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 4,
+        "events": [
+          "s119:CARE@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 6,
+        "unit": 4,
+        "events": [
+          "s143:SOUTH@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 0,
+        "events": [
+          "s167:SOUTH@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 4,
+        "events": [
+          "s167:PASS@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 10,
+        "unit": 4,
+        "events": [
+          "s239:PASS@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 11,
+        "unit": 0,
+        "events": [
+          "s263:PASS@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 11,
+        "unit": 10,
+        "events": [
+          "s263:SOUTH@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 12,
+        "unit": 1,
+        "events": [
+          "s287:PASS@4,9"
+        ]
+      }
+    ],
+    "mixed_operation_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s5:BUILD_PASTURE@4,4",
+          "s6:PLACE:SHEEP@4,4",
+          "s7:FEED@4,4",
+          "s8:CARE@4,4",
+          "s10:BUILD_PASTURE@3,4",
+          "s11:PLACE:SHEEP@3,4",
+          "s12:FEED@3,4",
+          "s13:CARE@3,4",
+          "s15:BUILD_PASTURE@3,3",
+          "s16:PLACE:COW@3,3",
+          "s17:FEED@3,3",
+          "s18:CARE@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s6:BUILD_PASTURE@4,3",
+          "s7:PLACE:SHEEP@4,3",
+          "s8:FEED@4,3",
+          "s9:CARE@4,3",
+          "s11:BUILD_PASTURE@4,2",
+          "s12:PLACE:COW@4,2",
+          "s13:FEED@4,2",
+          "s14:CARE@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 1,
+        "events": [
+          "s7:PLANT:WHEAT@4,1",
+          "s8:WATER@4,1",
+          "s10:PLANT:WHEAT@3,1",
+          "s11:WATER@3,1",
+          "s13:PLANT:WHEAT@2,1",
+          "s14:WATER@2,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 2,
+        "events": [
+          "s8:PLANT:WHEAT@4,0",
+          "s9:WATER@4,0",
+          "s11:PLANT:WHEAT@3,0",
+          "s12:WATER@3,0",
+          "s14:PLANT:STRAWBERRY@2,0",
+          "s15:WATER@2,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 5,
+        "events": [
+          "s8:PLANT:WHEAT@2,2",
+          "s9:WATER@2,2",
+          "s11:PLANT:WHEAT@1,2",
+          "s12:WATER@1,2",
+          "s14:PLANT:WHEAT@0,2",
+          "s15:WATER@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 6,
+        "events": [
+          "s10:PLANT:WHEAT@1,1",
+          "s11:WATER@1,1",
+          "s13:PLANT:WHEAT@0,1",
+          "s14:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 3,
+        "events": [
+          "s12:PLANT:STRAWBERRY@1,0",
+          "s13:WATER@1,0",
+          "s15:PLANT:STRAWBERRY@0,0",
+          "s16:WATER@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s52:FEED@4,4",
+          "s53:CARE@4,4",
+          "s54:COLLECT_FERTILIZER@4,4",
+          "s56:FEED@3,4",
+          "s57:CARE@3,4",
+          "s58:COLLECT_FERTILIZER@3,4",
+          "s60:FEED@3,3",
+          "s61:CARE@3,3",
+          "s62:COLLECT_FERTILIZER@3,3"
+        ]
+      }
+    ],
+    "multi_collect_fertilizer_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s54:COLLECT_FERTILIZER@4,4",
+          "s58:COLLECT_FERTILIZER@3,4",
+          "s62:COLLECT_FERTILIZER@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 4,
+        "events": [
+          "s55:COLLECT_FERTILIZER@4,3",
+          "s59:COLLECT_FERTILIZER@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 0,
+        "events": [
+          "s79:COLLECT_FERTILIZER@4,4",
+          "s83:COLLECT_FERTILIZER@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 4,
+        "events": [
+          "s80:COLLECT_FERTILIZER@4,2",
+          "s84:COLLECT_FERTILIZER@4,3",
+          "s88:COLLECT_FERTILIZER@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 0,
+        "events": [
+          "s102:COLLECT_FERTILIZER@4,4",
+          "s106:COLLECT_FERTILIZER@3,4",
+          "s110:COLLECT_FERTILIZER@2,4",
+          "s115:COLLECT_FERTILIZER@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 4,
+        "events": [
+          "s104:COLLECT_FERTILIZER@4,3",
+          "s108:COLLECT_FERTILIZER@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 6,
+        "unit": 0,
+        "events": [
+          "s126:COLLECT_FERTILIZER@4,4",
+          "s130:COLLECT_FERTILIZER@3,4",
+          "s134:COLLECT_FERTILIZER@2,4",
+          "s139:COLLECT_FERTILIZER@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 6,
+        "unit": 4,
+        "events": [
+          "s127:COLLECT_FERTILIZER@4,3",
+          "s131:COLLECT_FERTILIZER@4,2",
+          "s135:COLLECT_FERTILIZER@3,2",
+          "s140:COLLECT_FERTILIZER@4,1"
+        ]
+      }
+    ],
+    "multi_feed_before_depot": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s7:FEED@4,4",
+          "s12:FEED@3,4",
+          "s17:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s8:FEED@4,3",
+          "s13:FEED@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s52:FEED@4,4",
+          "s56:FEED@3,4",
+          "s60:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 4,
+        "events": [
+          "s53:FEED@4,3",
+          "s57:FEED@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 0,
+        "events": [
+          "s77:FEED@4,4",
+          "s81:FEED@3,4",
+          "s87:FEED@2,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 4,
+        "events": [
+          "s78:FEED@4,2",
+          "s82:FEED@4,3",
+          "s86:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 0,
+        "events": [
+          "s100:FEED@4,4",
+          "s104:FEED@3,4",
+          "s108:FEED@2,4",
+          "s113:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 4,
+        "events": [
+          "s102:FEED@4,3",
+          "s106:FEED@4,2",
+          "s112:FEED@3,2",
+          "s118:FEED@4,1"
+        ]
+      }
+    ],
+    "multi_fertilize_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 10,
+        "unit": 5,
+        "events": [
+          "s229:FERTILIZE@2,0",
+          "s232:FERTILIZE@1,0",
+          "s235:FERTILIZE@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 12,
+        "unit": 11,
+        "events": [
+          "s276:FERTILIZE@2,0",
+          "s279:FERTILIZE@1,0",
+          "s282:FERTILIZE@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "unit": 9,
+        "events": [
+          "s323:FERTILIZE@2,1",
+          "s326:FERTILIZE@1,1",
+          "s330:FERTILIZE@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 16,
+        "unit": 11,
+        "events": [
+          "s372:FERTILIZE@2,0",
+          "s375:FERTILIZE@1,0",
+          "s378:FERTILIZE@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 5,
+        "events": [
+          "s391:FERTILIZE@6,2",
+          "s394:FERTILIZE@7,2",
+          "s397:FERTILIZE@8,2",
+          "s400:FERTILIZE@9,2",
+          "s403:FERTILIZE@9,3",
+          "s406:FERTILIZE@8,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 7,
+        "events": [
+          "s394:FERTILIZE@6,0",
+          "s397:FERTILIZE@5,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 10,
+        "events": [
+          "s396:FERTILIZE@5,1",
+          "s399:FERTILIZE@6,1",
+          "s402:FERTILIZE@7,1",
+          "s405:FERTILIZE@8,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 17,
+        "unit": 11,
+        "events": [
+          "s395:FERTILIZE@7,0",
+          "s398:FERTILIZE@8,0",
+          "s401:FERTILIZE@9,0",
+          "s404:FERTILIZE@9,1"
+        ]
+      }
+    ],
+    "multi_harvest_before_drop": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 1,
+        "events": [
+          "s80:HARVEST@4,1",
+          "s83:HARVEST@3,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 5,
+        "events": [
+          "s81:HARVEST@2,2",
+          "s84:HARVEST@1,2",
+          "s87:HARVEST@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 3,
+        "events": [
+          "s83:HARVEST@2,1",
+          "s86:HARVEST@1,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 0,
+        "events": [
+          "s150:HARVEST@4,4",
+          "s155:HARVEST@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 11,
+        "unit": 10,
+        "events": [
+          "s251:HARVEST@2,0",
+          "s253:HARVEST@1,0",
+          "s255:HARVEST@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 12,
+        "unit": 8,
+        "events": [
+          "s275:HARVEST@2,4",
+          "s281:HARVEST@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 13,
+        "unit": 4,
+        "events": [
+          "s295:HARVEST@4,3",
+          "s300:HARVEST@3,3",
+          "s310:HARVEST@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 13,
+        "unit": 6,
+        "events": [
+          "s293:HARVEST@4,6",
+          "s296:HARVEST@4,7",
+          "s299:HARVEST@3,7",
+          "s302:HARVEST@2,7",
+          "s305:HARVEST@1,7"
+        ]
+      }
+    ],
+    "multi_place_before_depot": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s6:PLACE:SHEEP@4,4",
+          "s11:PLACE:SHEEP@3,4",
+          "s16:PLACE:COW@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s7:PLACE:SHEEP@4,3",
+          "s12:PLACE:COW@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 4,
+        "events": [
+          "s111:PLACE:COW@3,2",
+          "s117:PLACE:COW@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 12,
+        "unit": 1,
+        "events": [
+          "s278:PLACE:SHEEP@4,8",
+          "s283:PLACE:SHEEP@4,9"
+        ]
+      },
+      {
+        "rank": 3,
+        "team": "ReCurSiON",
+        "episode_id": 94430935,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s5:PLACE:SHEEP@4,4",
+          "s10:PLACE:SHEEP@4,3",
+          "s15:PLACE:SHEEP@4,2",
+          "s21:PLACE:SHEEP@3,3"
+        ]
+      },
+      {
+        "rank": 3,
+        "team": "ReCurSiON",
+        "episode_id": 94430935,
+        "day": 8,
+        "unit": 1,
+        "events": [
+          "s177:PLACE:COW@5,3",
+          "s182:PLACE:COW@5,2",
+          "s188:PLACE:COW@6,4"
+        ]
+      },
+      {
+        "rank": 3,
+        "team": "ReCurSiON",
+        "episode_id": 94430935,
+        "day": 9,
+        "unit": 5,
+        "events": [
+          "s199:PLACE:SHEEP@6,3",
+          "s205:PLACE:SHEEP@7,4"
+        ]
+      }
+    ],
+    "multi_plant_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 1,
+        "events": [
+          "s7:PLANT:WHEAT@4,1",
+          "s10:PLANT:WHEAT@3,1",
+          "s13:PLANT:WHEAT@2,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 2,
+        "events": [
+          "s8:PLANT:WHEAT@4,0",
+          "s11:PLANT:WHEAT@3,0",
+          "s14:PLANT:STRAWBERRY@2,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 5,
+        "events": [
+          "s8:PLANT:WHEAT@2,2",
+          "s11:PLANT:WHEAT@1,2",
+          "s14:PLANT:WHEAT@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 6,
+        "events": [
+          "s10:PLANT:WHEAT@1,1",
+          "s13:PLANT:WHEAT@0,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 3,
+        "events": [
+          "s12:PLANT:STRAWBERRY@1,0",
+          "s15:PLANT:STRAWBERRY@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 1,
+        "events": [
+          "s151:PLANT:STRAWBERRY@1,4",
+          "s155:PLANT:MELON@0,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 5,
+        "events": [
+          "s152:PLANT:MELON@1,3",
+          "s155:PLANT:MELON@0,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 8,
+        "unit": 1,
+        "events": [
+          "s173:PLANT:STRAWBERRY@5,2",
+          "s176:PLANT:STRAWBERRY@6,2",
+          "s179:PLANT:STRAWBERRY@7,2",
+          "s182:PLANT:STRAWBERRY@8,2"
+        ]
+      }
+    ],
+    "multi_target_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s5:BUILD_PASTURE@4,4",
+          "s6:PLACE:SHEEP@4,4",
+          "s7:FEED@4,4",
+          "s8:CARE@4,4",
+          "s10:BUILD_PASTURE@3,4",
+          "s11:PLACE:SHEEP@3,4",
+          "s12:FEED@3,4",
+          "s13:CARE@3,4",
+          "s15:BUILD_PASTURE@3,3",
+          "s16:PLACE:COW@3,3",
+          "s17:FEED@3,3",
+          "s18:CARE@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s6:BUILD_PASTURE@4,3",
+          "s7:PLACE:SHEEP@4,3",
+          "s8:FEED@4,3",
+          "s9:CARE@4,3",
+          "s11:BUILD_PASTURE@4,2",
+          "s12:PLACE:COW@4,2",
+          "s13:FEED@4,2",
+          "s14:CARE@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 1,
+        "events": [
+          "s7:PLANT:WHEAT@4,1",
+          "s8:WATER@4,1",
+          "s10:PLANT:WHEAT@3,1",
+          "s11:WATER@3,1",
+          "s13:PLANT:WHEAT@2,1",
+          "s14:WATER@2,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 2,
+        "events": [
+          "s8:PLANT:WHEAT@4,0",
+          "s9:WATER@4,0",
+          "s11:PLANT:WHEAT@3,0",
+          "s12:WATER@3,0",
+          "s14:PLANT:STRAWBERRY@2,0",
+          "s15:WATER@2,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 5,
+        "events": [
+          "s8:PLANT:WHEAT@2,2",
+          "s9:WATER@2,2",
+          "s11:PLANT:WHEAT@1,2",
+          "s12:WATER@1,2",
+          "s14:PLANT:WHEAT@0,2",
+          "s15:WATER@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 6,
+        "events": [
+          "s10:PLANT:WHEAT@1,1",
+          "s11:WATER@1,1",
+          "s13:PLANT:WHEAT@0,1",
+          "s14:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 3,
+        "events": [
+          "s12:PLANT:STRAWBERRY@1,0",
+          "s13:WATER@1,0",
+          "s15:PLANT:STRAWBERRY@0,0",
+          "s16:WATER@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s52:FEED@4,4",
+          "s53:CARE@4,4",
+          "s54:COLLECT_FERTILIZER@4,4",
+          "s56:FEED@3,4",
+          "s57:CARE@3,4",
+          "s58:COLLECT_FERTILIZER@3,4",
+          "s60:FEED@3,3",
+          "s61:CARE@3,3",
+          "s62:COLLECT_FERTILIZER@3,3"
+        ]
+      }
+    ],
+    "multi_water_route": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 1,
+        "events": [
+          "s8:WATER@4,1",
+          "s11:WATER@3,1",
+          "s14:WATER@2,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 2,
+        "events": [
+          "s9:WATER@4,0",
+          "s12:WATER@3,0",
+          "s15:WATER@2,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 5,
+        "events": [
+          "s9:WATER@2,2",
+          "s12:WATER@1,2",
+          "s15:WATER@0,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 6,
+        "events": [
+          "s11:WATER@1,1",
+          "s14:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 3,
+        "events": [
+          "s13:WATER@1,0",
+          "s16:WATER@0,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 1,
+        "events": [
+          "s55:WATER@4,1",
+          "s57:WATER@3,1",
+          "s59:WATER@2,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 2,
+        "events": [
+          "s56:WATER@4,0",
+          "s58:WATER@3,0",
+          "s60:WATER@2,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 5,
+        "events": [
+          "s56:WATER@2,2",
+          "s58:WATER@1,2",
+          "s60:WATER@0,2"
+        ]
+      }
+    ],
+    "productive_batch_pickup_chain": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s4:PICKUP:SHEEP:2@4,4",
+          "s6:PLACE:SHEEP@4,4",
+          "s11:PLACE:SHEEP@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 0,
+        "events": [
+          "s51:PICKUP:WHEAT:3@4,4",
+          "s52:FEED@4,4",
+          "s56:FEED@3,4",
+          "s60:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 3,
+        "unit": 4,
+        "events": [
+          "s51:PICKUP:WHEAT:2@4,4",
+          "s53:FEED@4,3",
+          "s57:FEED@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 0,
+        "events": [
+          "s76:PICKUP:WHEAT:3@4,4",
+          "s77:FEED@4,4",
+          "s81:FEED@3,4",
+          "s87:FEED@2,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 4,
+        "events": [
+          "s75:PICKUP:WHEAT:3@4,4",
+          "s78:FEED@4,2",
+          "s82:FEED@4,3",
+          "s86:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 0,
+        "events": [
+          "s99:PICKUP:WHEAT:4@4,4",
+          "s100:FEED@4,4",
+          "s104:FEED@3,4",
+          "s108:FEED@2,4",
+          "s113:FEED@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 5,
+        "unit": 4,
+        "events": [
+          "s100:PICKUP:WHEAT:4@4,4",
+          "s102:FEED@4,3",
+          "s106:FEED@4,2",
+          "s112:FEED@3,2",
+          "s118:FEED@4,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 6,
+        "unit": 0,
+        "events": [
+          "s123:PICKUP:WHEAT:4@4,4",
+          "s124:FEED@4,4",
+          "s128:FEED@3,4",
+          "s132:FEED@2,4",
+          "s137:FEED@3,3"
+        ]
+      }
+    ],
+    "same_tile_animal_harvest_collect": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 4,
+        "events": [
+          "s149:FEED@4,3",
+          "s150:CARE@4,3",
+          "s151:HARVEST@4,3",
+          "s152:COLLECT_FERTILIZER@4,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 0,
+        "events": [
+          "s148:FEED@4,4",
+          "s149:CARE@4,4",
+          "s150:HARVEST@4,4",
+          "s151:COLLECT_FERTILIZER@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 7,
+        "unit": 0,
+        "events": [
+          "s153:FEED@3,4",
+          "s154:CARE@3,4",
+          "s155:HARVEST@3,4",
+          "s156:COLLECT_FERTILIZER@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 9,
+        "unit": 0,
+        "events": [
+          "s201:FEED@3,3",
+          "s202:CARE@3,3",
+          "s203:HARVEST@3,3",
+          "s204:COLLECT_FERTILIZER@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 9,
+        "unit": 8,
+        "events": [
+          "s198:FEED@4,2",
+          "s199:CARE@4,2",
+          "s200:HARVEST@4,2",
+          "s201:COLLECT_FERTILIZER@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 10,
+        "unit": 0,
+        "events": [
+          "s221:FEED@4,4",
+          "s222:CARE@4,4",
+          "s223:HARVEST@4,4",
+          "s224:COLLECT_FERTILIZER@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 10,
+        "unit": 4,
+        "events": [
+          "s221:FEED@4,3",
+          "s222:CARE@4,3",
+          "s223:HARVEST@4,3",
+          "s224:COLLECT_FERTILIZER@4,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 10,
+        "unit": 8,
+        "events": [
+          "s221:FEED@3,4",
+          "s222:CARE@3,4",
+          "s223:HARVEST@3,4",
+          "s224:COLLECT_FERTILIZER@3,4"
+        ]
+      }
+    ],
+    "same_tile_feed_care": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s5:BUILD_PASTURE@4,4",
+          "s6:PLACE:SHEEP@4,4",
+          "s7:FEED@4,4",
+          "s8:CARE@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s10:BUILD_PASTURE@3,4",
+          "s11:PLACE:SHEEP@3,4",
+          "s12:FEED@3,4",
+          "s13:CARE@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 0,
+        "events": [
+          "s15:BUILD_PASTURE@3,3",
+          "s16:PLACE:COW@3,3",
+          "s17:FEED@3,3",
+          "s18:CARE@3,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s6:BUILD_PASTURE@4,3",
+          "s7:PLACE:SHEEP@4,3",
+          "s8:FEED@4,3",
+          "s9:CARE@4,3"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "unit": 4,
+        "events": [
+          "s11:BUILD_PASTURE@4,2",
+          "s12:PLACE:COW@4,2",
+          "s13:FEED@4,2",
+          "s14:CARE@4,2"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 2,
+        "unit": 0,
+        "events": [
+          "s28:FEED@4,4",
+          "s29:CARE@4,4",
+          "s30:COLLECT_FERTILIZER@4,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 2,
+        "unit": 1,
+        "events": [
+          "s30:FEED@3,4",
+          "s31:CARE@3,4",
+          "s32:COLLECT_FERTILIZER@3,4"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 2,
+        "unit": 2,
+        "events": [
+          "s31:FEED@4,2",
+          "s32:CARE@4,2",
+          "s33:COLLECT_FERTILIZER@4,2"
+        ]
+      }
+    ],
+    "same_tile_harvest_replant_water": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 2,
+        "events": [
+          "s80:WATER@4,0",
+          "s81:HARVEST@4,0",
+          "s82:PLANT:MELON@4,0",
+          "s83:WATER@4,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 6,
+        "events": [
+          "s81:WATER@3,0",
+          "s82:HARVEST@3,0",
+          "s83:PLANT:MELON@3,0",
+          "s84:WATER@3,0"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 4,
+        "unit": 7,
+        "events": [
+          "s84:WATER@0,1",
+          "s85:HARVEST@0,1",
+          "s86:PLANT:MELON@0,1",
+          "s87:WATER@0,1"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 13,
+        "unit": 2,
+        "events": [
+          "s301:WATER@0,5",
+          "s302:HARVEST@0,5",
+          "s303:PLANT:MELON@0,5",
+          "s304:WATER@0,5"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "unit": 10,
+        "events": [
+          "s319:WATER@3,8",
+          "s320:HARVEST@3,8",
+          "s321:PLANT:MELON@3,8",
+          "s322:WATER@3,8"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "unit": 10,
+        "events": [
+          "s324:WATER@2,8",
+          "s325:HARVEST@2,8",
+          "s326:PLANT:MELON@2,8",
+          "s327:WATER@2,8"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "unit": 10,
+        "events": [
+          "s329:WATER@1,8",
+          "s330:HARVEST@1,8",
+          "s331:PLANT:MELON@1,8",
+          "s332:WATER@1,8"
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "unit": 5,
+        "events": [
+          "s320:WATER@4,0",
+          "s321:HARVEST@4,0",
+          "s322:PLANT:MELON@4,0",
+          "s323:WATER@4,0"
+        ]
+      }
+    ],
+    "sell_then_reinvest": [
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 1,
+        "step": 2,
+        "orders": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            3
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 6,
+        "step": 121,
+        "orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            8
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 8,
+        "step": 169,
+        "orders": [
+          [
+            "SELL",
+            "WOOL",
+            5
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            8
+          ],
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 11,
+        "step": 241,
+        "orders": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 12,
+        "step": 265,
+        "orders": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 13,
+        "step": 289,
+        "orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "step": 313,
+        "orders": [
+          [
+            "SELL",
+            "WOOL",
+            12
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            6
+          ],
+          [
+            "SELL",
+            "MILK",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "team": "tetsuya",
+        "episode_id": 94424738,
+        "day": 14,
+        "step": 314,
+        "orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            8
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    ]
+  },
+  "reproduce_command": "& 'E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\python.exe' experiments\\project_route_search_v2\\tools\\analyze_gold_execution_capabilities_v1.py",
+  "boundary": "DIAGNOSTIC_ONLY_GOLD_REPLAY_CAPABILITY_EVIDENCE"
+}

@@ -1,0 +1,268 @@
+{
+  "receipt_id": "M36D_CONTROLLER_TRACE_GENERATION_V1",
+  "status": "PASS",
+  "measured_at": "2026-08-19T09:24:18.760055+00:00",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "official_version": "1.32.7",
+  "episode_id": 94084095,
+  "seed": 1784186681,
+  "player": 1,
+  "opponent": "NullOpponent",
+  "calendar_source": {
+    "episode_id": 94084095,
+    "player": 1,
+    "team_name": "QQ Farming",
+    "reward": 155450.0,
+    "replay_step_count": 720,
+    "observed_days": 30,
+    "requested_animal_totals": [
+      0,
+      10,
+      4
+    ],
+    "filled_animal_additions": [
+      0,
+      10,
+      4
+    ],
+    "land_addition_count": 2,
+    "day6_crop_peak": [
+      3,
+      0,
+      0,
+      6,
+      12
+    ],
+    "day6_service_end": [
+      0,
+      4,
+      2
+    ],
+    "day6_care_policy": [
+      0,
+      2,
+      2
+    ],
+    "planned_ownership_reduction_count": 0,
+    "raw_action_payload_stored": false,
+    "event_overflow_count": 0,
+    "route_signature": "animals=0-10-4;land+=2"
+  },
+  "raw_replay_action_payload_stored": false,
+  "internal_lifecycle_trace": true,
+  "m37_unlock_committed_capital": true,
+  "route_cards_enabled": true,
+  "route_card_mode": "mixed_with_fallback",
+  "steps": 719,
+  "internal_state_mismatch_count": 0,
+  "hard_error_count": 0,
+  "hard_error_breakdown": {
+    "transaction_hard_error_count": 0,
+    "illegal_action_count": 0,
+    "unexplained_effect_error_count": 0,
+    "unplanned_deadline_miss_count": 0,
+    "duplicate_resource_reservation_count": 0,
+    "unplanned_animal_escape": 0,
+    "fertilizer_market_slot_overflow_count": 0,
+    "plant_without_same_day_water": 0
+  },
+  "final_bank": 106333,
+  "milestone_backlog": {
+    "1": {
+      "active_projects": 10,
+      "active_unit_tasks": 0,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {},
+      "unmet_crop_target": [
+        7,
+        0,
+        0,
+        0,
+        12
+      ],
+      "unmet_animal_service_target": [
+        0,
+        2,
+        2
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "144": {
+      "active_projects": 10,
+      "active_unit_tasks": 1,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {
+        "18": 1
+      },
+      "unmet_crop_target": [
+        2,
+        0,
+        0,
+        6,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        1,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "264": {
+      "active_projects": 10,
+      "active_unit_tasks": 1,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {
+        "18": 1
+      },
+      "unmet_crop_target": [
+        13,
+        0,
+        0,
+        20,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        4,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "288": {
+      "active_projects": 10,
+      "active_unit_tasks": 2,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {
+        "18": 2
+      },
+      "unmet_crop_target": [
+        8,
+        0,
+        0,
+        13,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        2,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "480": {
+      "active_projects": 10,
+      "active_unit_tasks": 3,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {
+        "3": 1,
+        "18": 2
+      },
+      "unmet_crop_target": [
+        19,
+        0,
+        0,
+        12,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        0,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "600": {
+      "active_projects": 10,
+      "active_unit_tasks": 6,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {
+        "5": 4,
+        "18": 2
+      },
+      "unmet_crop_target": [
+        37,
+        2,
+        0,
+        8,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        0,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "696": {
+      "active_projects": 10,
+      "active_unit_tasks": 0,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {},
+      "unmet_crop_target": [
+        10,
+        0,
+        0,
+        3,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        0,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    },
+    "719": {
+      "active_projects": 10,
+      "active_unit_tasks": 0,
+      "active_market_tasks": 0,
+      "active_route_cards": 0,
+      "unit_task_type_counts": {},
+      "unmet_crop_target": [
+        10,
+        0,
+        0,
+        3,
+        0
+      ],
+      "unmet_animal_service_target": [
+        0,
+        0,
+        0
+      ],
+      "project_cap_hits": 0,
+      "obligation_cap_hits": 0,
+      "unexplained_effect_failures": 0
+    }
+  },
+  "compile_and_execute_seconds": 362.61033744499997,
+  "trace": "experiments/project_route_search_v2/artifacts/traces/m39_mixed_route_v20_94084095_trace_v3.npz",
+  "trace_sha256": "43312F9AB72BE2E04C2A07E69EBF8E3216AEDC4564A94BFF1C02CA34830468D9",
+  "trace_bytes": 145926,
+  "boundary": "M36D_JAX_CONTROLLER_TRACE_NULL_OPPONENT_AWAITING_OFFICIAL_1327_REPLAY"
+}

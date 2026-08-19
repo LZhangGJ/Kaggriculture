@@ -1,0 +1,152 @@
+{
+  "schema": "kaggriculture.m39_crop_mixed_route_cards_acceptance.v1",
+  "measured_at": "2026-08-19T09:15:13.9993971Z",
+  "engineering_acceptance": "PASS",
+  "economic_reproduction": "FAIL_V20_HIGH_REWARD_NOT_REPRODUCED",
+  "overall_decision": "PASS_ROUTE_CARD_CAPABILITY_DO_NOT_CLAIM_GOLD_REPRODUCTION",
+  "official_version": "1.32.7",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090 24GB",
+    "gpu_backend": "JAX CUDA",
+    "gpu_batch": 2048
+  },
+  "evidence": {
+    "gold_snapshot": "replay/gold_latest_2026-08-19_154928/latest_per_gold/latest_gold_replay_receipt.csv",
+    "gold_rows": 20,
+    "unique_gold_replays": 16,
+    "v20_submission_id": 55587506,
+    "v20_public_replay_count": 114,
+    "v20_valid_replay_count": 114,
+    "v20_highest_reward_episode": 94084095,
+    "v20_highest_reward": 155450
+  },
+  "acceptance_gates": {
+    "crop_route_actions_implemented": true,
+    "crop_full_season_instances_observed": true,
+    "mixed_full_season_instances_observed": true,
+    "same_worker_animal_collect_to_crop_fertilize_tested": true,
+    "unit_and_jit_tests": {
+      "status": "PASS",
+      "passed": 11,
+      "failed": 0,
+      "seconds": 225.04,
+      "receipt": "experiments/project_route_search_v2/receipts/m39_route_card_pytest_v2.xml"
+    },
+    "gpu_2048": {
+      "status": "PASS",
+      "hard_error_sum": 0,
+      "affected_episode_count": 0,
+      "best_transitions_per_second": 87573.46107194028,
+      "receipt": "experiments/project_route_search_v2/receipts/m39_mixed_route_gpu_batch2048_acceptance_v5.json"
+    },
+    "official_python_stepwise_parity": {
+      "status": "PASS",
+      "frames": 720,
+      "exact_full_state": true,
+      "receipt": "experiments/project_route_search_v2/receipts/m39_mixed_route_v20_94084095_official_parity_v3.json"
+    }
+  },
+  "full_season_route_evidence": {
+    "v20_mixed": {
+      "unique_card_instances": 90,
+      "feed_tour_instances": 46,
+      "crop_field_tour_instances": 36,
+      "mixed_farm_tour_instances": 8,
+      "crop_max_route_length": 11,
+      "mixed_max_route_length": 8,
+      "receipt": "experiments/project_route_search_v2/receipts/m39_mixed_route_v20_94084095_route_summary_v2.json"
+    },
+    "cross_domain_fertilizer_boundary": "The direct animal COLLECT_FERTILIZER to crop FERTILIZE chain is accepted by the targeted execution test. This exact chain did not naturally occur in the selected V20 full-season trace."
+  },
+  "gpu_2048_comparison": {
+    "no_route": {
+      "decision": "PASS",
+      "median": 77942.5,
+      "mean": 75519.16357421875,
+      "max": 99412,
+      "tps": 88689.69397751846
+    },
+    "animal_only": {
+      "decision": "PASS",
+      "median": 95789.5,
+      "mean": 91434.56982421875,
+      "max": 120876,
+      "tps": 86535.7118962521
+    },
+    "crop_only": {
+      "decision": "FAIL_EXPECTED_ANIMAL_MAINTENANCE_DISABLED",
+      "median": 79451.5,
+      "mean": 78495.94775390625,
+      "max": 99697,
+      "hard_error_sum": 12518,
+      "tps": 86776.17780366243
+    },
+    "separate_crop_animal": {
+      "decision": "PASS",
+      "median": 99569.5,
+      "mean": 95075.076171875,
+      "max": 125097,
+      "tps": 88727.77684177239
+    },
+    "mixed_with_fallback": {
+      "decision": "PASS",
+      "median": 98781.0,
+      "mean": 94756.94384765625,
+      "max": 125641,
+      "tps": 87573.46107194028
+    },
+    "mixed_minus_separate": {
+      "median": -788.5,
+      "mean": -318.13232421875,
+      "max": 544,
+      "first_64_paired_wins": 25,
+      "first_64_paired_ties": 0,
+      "first_64_paired_losses": 39,
+      "first_64_mean_delta": -5164.921875
+    },
+    "recommended_default": "SEPARATE_CROP_ANIMAL",
+    "mixed_status": "KEEP_AS_OPTIONAL_ROUTE_FAMILY_AND_SEARCH_ARM"
+  },
+  "v20_reproduction": {
+    "episode_id": 94084095,
+    "seed": 1784186681,
+    "seat": 1,
+    "official_replay_reward": 155450,
+    "jax_raw_replay_action_control": 155450,
+    "jax_raw_replay_exact": true,
+    "mixed_calendar_controller": 106333,
+    "mixed_calendar_official_python": 106333,
+    "mixed_official_jax_exact": true,
+    "separate_calendar_controller": 105100,
+    "separate_calendar_official_python": 105100,
+    "separate_official_jax_exact": true,
+    "best_high_level_reproduction_ratio": 0.6840321003538115,
+    "best_high_level_cash_gap": -49117,
+    "verdict": "NOT_REPRODUCED",
+    "primary_observed_gap": "Mid/late-game crop targets remain unmet while animal ownership reaches the replay scale.",
+    "raw_action_receipt": "experiments/project_route_search_v2/receipts/m39_v20_94084095_replay_action_control_v1.json",
+    "mixed_generation_receipt": "experiments/project_route_search_v2/receipts/m39_mixed_route_v20_94084095_trace_generation_v3.json",
+    "mixed_official_receipt": "experiments/project_route_search_v2/receipts/m39_mixed_route_v20_94084095_official_parity_v3.json"
+  },
+  "truth_boundaries": [
+    "Raw Replay action control replays both recorded agents and proves JAX rule fidelity for episode 94084095.",
+    "High-level controller traces use the same seed and seat but a NullOpponent, so their differences from the public Replay are semantic-capacity diagnostics, not causal policy comparisons.",
+    "The selected V20 public Replay peaks at 155450. No 170000 Replay was compiled in this acceptance, so 170000 reproduction is not established.",
+    "Engineering acceptance proves legal, state-consistent route execution. It does not prove that the current daily calendar retains the timing and layout information required by a gold/high-reward business plan."
+  ],
+  "source_hashes": {
+    "m38_route_cards.py": "36359947E19B8F0A232E363422B4B9A9E65CE9E455772B05BDBBA6413E91F74E",
+    "test_m38_route_cards.py": "D4EDE86A9F88BFD9F43AA24186A056C87CBAAFE7CD1A3619BD323D9D3A32481F",
+    "run_m36c_gpu_batch_acceptance_v1.py": "31ED59930969D9546058252233CD5EF08C921A81C090AA196C5613F1B8A2108B",
+    "generate_m36d_controller_trace_v1.py": "3A325067EC8082DB186D87B035D1773E8FBCE15CD2C77B40B2D60892BF967C15",
+    "summarize_m39_route_trace_v1.py": "79EC3EEB8570EA9AA1CCFFF8E9727C9F4E72FAF1E556D10BC59AC7647FCDAB20"
+  },
+  "receipt_hashes": {
+    "m39_route_card_pytest_v2.xml": "DB1522A162F2997869AADDD2C84F373D695ACA03516853EE349AFA4D314160E9",
+    "m39_mixed_route_gpu_batch2048_acceptance_v5.json": "E459CAAC1E6C3B363F4C08EC65C7ED507B66B5C8310D4F3F8BEBF9F4A860728C",
+    "m39_mixed_route_v20_94084095_trace_generation_v3.json": "47A094CDB85B702B2AD6059F7DCD1209E38A00B741ACA59AAFCDDC4BC1192421",
+    "m39_mixed_route_v20_94084095_official_parity_v3.json": "05DB8B4B0E8DE4DEC971E2FF9DCAA672D1F5018B025F3B7009A0A3A930476D71",
+    "m39_mixed_route_v20_94084095_route_summary_v2.json": "70D526D8C6DE935D567ED7EE8AEEB1A556998DF81F7FEF684DE8006D8CFE108E",
+    "m39_v20_94084095_replay_action_control_v1.json": "F53CB90F5F66B56EEB004FC030689FBAE1BCC2639E0946A1C579AD0AED578379"
+  }
+}

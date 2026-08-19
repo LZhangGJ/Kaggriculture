@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "domain_modes": ["NATIVE_DOMAIN", "CAUSAL_HYBRID"],
+  "families": [
+    {
+      "family_id": 0,
+      "name": "R1_FAST_CROP",
+      "primary_products": ["WHEAT", "CARROT"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 1,
+      "name": "R2_TOMATO",
+      "primary_products": ["TOMATO"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 2,
+      "name": "R3_STRAWBERRY",
+      "primary_products": ["STRAWBERRY"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 3,
+      "name": "R4_MELON",
+      "primary_products": ["MELON"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 4,
+      "name": "R5_EGG",
+      "primary_products": ["EGG"],
+      "primary_animals": ["GOOSE"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 5,
+      "name": "R6_MILK",
+      "primary_products": ["MILK"],
+      "primary_animals": ["COW"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 6,
+      "name": "R7_WOOL",
+      "primary_products": ["WOOL"],
+      "primary_animals": ["SHEEP"],
+      "native_allowed": true,
+      "causal_hybrid_allowed": true
+    },
+    {
+      "family_id": 7,
+      "name": "R8_HYBRID",
+      "primary_products": ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL"],
+      "primary_animals": ["GOOSE", "COW", "SHEEP"],
+      "native_allowed": false,
+      "causal_hybrid_allowed": true
+    }
+  ],
+  "shared_executor": true,
+  "family_specific_executor_forbidden": true
+}
+

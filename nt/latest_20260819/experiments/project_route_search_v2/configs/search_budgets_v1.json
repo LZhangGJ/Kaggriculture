@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "initial_complete_candidate_total": 160000,
+  "refinement_candidate_cap": 40000,
+  "maximum_complete_candidate_total": 200000,
+  "layout_variants_per_economic_skeleton": 4,
+  "candidate_generation_mix": {
+    "unbiased_stratified_coverage": 0.50,
+    "gold_semantic_anchor_perturbation": 0.30,
+    "boundary_and_extreme": 0.20
+  },
+  "family_domain_budgets": [
+    {"family": "R1_FAST_CROP", "native": 12000, "causal_hybrid": 8000, "total": 20000},
+    {"family": "R2_TOMATO", "native": 6000, "causal_hybrid": 4000, "total": 10000},
+    {"family": "R3_STRAWBERRY", "native": 6000, "causal_hybrid": 4000, "total": 10000},
+    {"family": "R4_MELON", "native": 9000, "causal_hybrid": 6000, "total": 15000},
+    {"family": "R5_EGG", "native": 9000, "causal_hybrid": 6000, "total": 15000},
+    {"family": "R6_MILK", "native": 12000, "causal_hybrid": 8000, "total": 20000},
+    {"family": "R7_WOOL", "native": 12000, "causal_hybrid": 8000, "total": 20000},
+    {"family": "R8_HYBRID", "native": 0, "causal_hybrid": 50000, "total": 50000}
+  ],
+  "global_domain_totals": {"native": 66000, "causal_hybrid": 94000, "total": 160000},
+  "successive_halving": {
+    "S1": {"panel": "E0_SEARCH_16"},
+    "S2": {"panel": "E0_PROMOTE_32", "retain_per_family_fraction": 0.20},
+    "S3": {"panel": "E0_AUDIT_128"},
+    "official": {"panel": "E0_OFFICIAL_HOLDOUT_64", "seat_swap": true}
+  },
+  "offspring_mix": {
+    "economic_parameters_only": 0.35,
+    "layout_parameters_only": 0.35,
+    "economic_and_layout_parameters": 0.30
+  }
+}
+

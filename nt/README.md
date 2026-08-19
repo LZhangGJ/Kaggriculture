@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260819/` — latest official-1.32.7 development snapshot: the M3.9
+  three-layer planner, current JAX rules core, five high-potential public
+  agents reproduced as exact GPU opponents, acceptance receipts, and the
+  planner-convergence design review. Start with
+  `latest_20260819/README_ZH.md`.
 - `gpu_sim/` — parity-first JAX GPU rewrite of the official
   `kaggle-environments==1.32.6` Kaggriculture interpreter, including source,
   tests, tools, frozen reference material, benchmark receipts, and the final
@@ -34,6 +39,7 @@ APIs or validation assumptions.
   official source links, not verbatim copies of third-party writeups.
 
 Start with
+[`latest_20260819/README_ZH.md`](latest_20260819/README_ZH.md),
 [`docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md`](docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md),
 [`docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md`](docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md),
 [`gpu_sim/README.md`](gpu_sim/README.md), and

@@ -1,0 +1,1917 @@
+{
+  "receipt_id": "M35_GOLD_REPLAY_ALIGNMENT_V1",
+  "status": "PASS",
+  "alignment_verdict": "FAIL",
+  "freeze_recommendation": "DO_NOT_FREEZE_M35_SEARCH_SCHEMA_OR_CONTROLLER",
+  "measured_at": "2026-08-19T08:46:40.339984+00:00",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "compile_and_execute_seconds": 82.85198444000002,
+  "replay_control_compile_and_execute_seconds": 9.79853889900005,
+  "official_version": "1.32.7",
+  "replay": "replay/public_submissions_2026-08-19/v20_55587506/episodes/94084095.json",
+  "replay_sha256": "EA61C790C955A815904FE1CB9EB07B19CE1C4B578D4AD3230FD62BD07B29DB72",
+  "episode_id": 94084095,
+  "seed": 1784186681,
+  "gold_player": "QQ Farming",
+  "gold_seat": 1,
+  "opponent": "Oiti Roy",
+  "replay_final_bank": 155450,
+  "replay_opening": {
+    "units": [
+      [
+        "BUILD_PASTURE",
+        -1,
+        1
+      ]
+    ],
+    "market": [
+      [
+        "HIRE",
+        -1,
+        0
+      ],
+      [
+        "HIRE",
+        -1,
+        0
+      ],
+      [
+        "HIRE",
+        -1,
+        0
+      ],
+      [
+        "HIRE",
+        -1,
+        0
+      ],
+      [
+        "HIRE",
+        -1,
+        0
+      ],
+      [
+        "BUY_ANIMAL",
+        10,
+        2
+      ],
+      [
+        "BUY_ANIMAL",
+        11,
+        2
+      ],
+      [
+        "BUY_SEED",
+        0,
+        7
+      ],
+      [
+        "BUY_SEED",
+        4,
+        12
+      ],
+      [
+        "BUY_PRODUCT",
+        0,
+        6
+      ]
+    ]
+  },
+  "gold_opening_literal_match": false,
+  "gold_opening_commitment_multiset_match": false,
+  "milestone_schema": {
+    "crop_tiles": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON"
+    ],
+    "animals": [
+      "GOOSE",
+      "COW",
+      "SHEEP"
+    ],
+    "shed": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON",
+      "EGG",
+      "MILK",
+      "WOOL",
+      "FERTILIZER",
+      "GOOSE",
+      "COW",
+      "SHEEP"
+    ],
+    "seeds": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON"
+    ]
+  },
+  "replay_milestones": [
+    {
+      "state_step": 1,
+      "money": 22,
+      "land": 1,
+      "units": 6,
+      "crop_tiles": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "animals": [
+        0,
+        0,
+        0
+      ],
+      "pasture_tiles": 1,
+      "coop_tiles": 0,
+      "shed": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "seeds": [
+        7,
+        0,
+        0,
+        0,
+        12
+      ]
+    },
+    {
+      "state_step": 144,
+      "money": 316,
+      "land": 1,
+      "units": 1,
+      "crop_tiles": [
+        3,
+        0,
+        0,
+        4,
+        12
+      ],
+      "animals": [
+        0,
+        4,
+        2
+      ],
+      "pasture_tiles": 6,
+      "coop_tiles": 0,
+      "shed": [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "state_step": 264,
+      "money": 15155,
+      "land": 2,
+      "units": 1,
+      "crop_tiles": [
+        9,
+        0,
+        0,
+        19,
+        0
+      ],
+      "animals": [
+        0,
+        8,
+        4
+      ],
+      "pasture_tiles": 12,
+      "coop_tiles": 0,
+      "shed": [
+        18,
+        0,
+        0,
+        0,
+        6,
+        0,
+        6,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "state_step": 288,
+      "money": 10980,
+      "land": 3,
+      "units": 1,
+      "crop_tiles": [
+        17,
+        0,
+        0,
+        37,
+        0
+      ],
+      "animals": [
+        0,
+        10,
+        4
+      ],
+      "pasture_tiles": 14,
+      "coop_tiles": 0,
+      "shed": [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "state_step": 480,
+      "money": 47248,
+      "land": 3,
+      "units": 1,
+      "crop_tiles": [
+        23,
+        0,
+        0,
+        38,
+        0
+      ],
+      "animals": [
+        0,
+        10,
+        4
+      ],
+      "pasture_tiles": 14,
+      "coop_tiles": 0,
+      "shed": [
+        18,
+        0,
+        0,
+        12,
+        0,
+        0,
+        30,
+        4,
+        13,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "state_step": 600,
+      "money": 106633,
+      "land": 3,
+      "units": 1,
+      "crop_tiles": [
+        25,
+        2,
+        0,
+        29,
+        0
+      ],
+      "animals": [
+        0,
+        10,
+        4
+      ],
+      "pasture_tiles": 14,
+      "coop_tiles": 0,
+      "shed": [
+        25,
+        0,
+        0,
+        16,
+        0,
+        0,
+        6,
+        8,
+        8,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "state_step": 696,
+      "money": 141454,
+      "land": 3,
+      "units": 1,
+      "crop_tiles": [
+        10,
+        0,
+        0,
+        3,
+        0
+      ],
+      "animals": [
+        0,
+        10,
+        4
+      ],
+      "pasture_tiles": 14,
+      "coop_tiles": 0,
+      "shed": [
+        77,
+        6,
+        0,
+        0,
+        0,
+        0,
+        6,
+        4,
+        7,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "state_step": 719,
+      "money": 155450,
+      "land": 3,
+      "units": 9,
+      "crop_tiles": [
+        1,
+        0,
+        0,
+        3,
+        0
+      ],
+      "animals": [
+        0,
+        10,
+        4
+      ],
+      "pasture_tiles": 14,
+      "coop_tiles": 0,
+      "shed": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seeds": [
+        8,
+        8,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "jax_replay_action_control": {
+    "final_bank": 155450,
+    "done": true,
+    "exact_final_bank_match": true,
+    "milestones": [
+      {
+        "state_step": 1,
+        "money": 22,
+        "land": 1,
+        "units": 6,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "seeds": [
+          7,
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "state_step": 144,
+        "money": 316,
+        "land": 1,
+        "units": 1,
+        "crop_tiles": [
+          3,
+          0,
+          0,
+          4,
+          12
+        ],
+        "animals": [
+          0,
+          4,
+          2
+        ],
+        "shed": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "state_step": 264,
+        "money": 15155,
+        "land": 2,
+        "units": 1,
+        "crop_tiles": [
+          9,
+          0,
+          0,
+          19,
+          0
+        ],
+        "animals": [
+          0,
+          8,
+          4
+        ],
+        "shed": [
+          18,
+          0,
+          0,
+          0,
+          6,
+          0,
+          6,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "state_step": 288,
+        "money": 10980,
+        "land": 3,
+        "units": 1,
+        "crop_tiles": [
+          17,
+          0,
+          0,
+          37,
+          0
+        ],
+        "animals": [
+          0,
+          10,
+          4
+        ],
+        "shed": [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          24,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "state_step": 480,
+        "money": 47248,
+        "land": 3,
+        "units": 1,
+        "crop_tiles": [
+          23,
+          0,
+          0,
+          38,
+          0
+        ],
+        "animals": [
+          0,
+          10,
+          4
+        ],
+        "shed": [
+          18,
+          0,
+          0,
+          12,
+          0,
+          0,
+          30,
+          4,
+          13,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "state_step": 600,
+        "money": 106633,
+        "land": 3,
+        "units": 1,
+        "crop_tiles": [
+          25,
+          2,
+          0,
+          29,
+          0
+        ],
+        "animals": [
+          0,
+          10,
+          4
+        ],
+        "shed": [
+          25,
+          0,
+          0,
+          16,
+          0,
+          0,
+          6,
+          8,
+          8,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "state_step": 696,
+        "money": 141454,
+        "land": 3,
+        "units": 1,
+        "crop_tiles": [
+          10,
+          0,
+          0,
+          3,
+          0
+        ],
+        "animals": [
+          0,
+          10,
+          4
+        ],
+        "shed": [
+          77,
+          6,
+          0,
+          0,
+          0,
+          0,
+          6,
+          4,
+          7,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "state_step": 719,
+        "money": 155450,
+        "land": 3,
+        "units": 9,
+        "crop_tiles": [
+          1,
+          0,
+          0,
+          3,
+          0
+        ],
+        "animals": [
+          0,
+          10,
+          4
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "seeds": [
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "exact_milestone_match_on_recorded_fields": true
+  },
+  "candidate_rows": [
+    {
+      "candidate": "M35_DEFAULT",
+      "first_action": {
+        "units": [
+          [
+            "PASS",
+            -1,
+            1
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            0,
+            6
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "BUY_SEED",
+            2,
+            4
+          ]
+        ]
+      },
+      "milestones": [
+        {
+          "state_step": 1,
+          "money": 2733,
+          "land": 1,
+          "units": 5,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            0,
+            0
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            6,
+            0,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 144,
+          "money": 3263,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            6,
+            0,
+            4,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            0,
+            0
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 264,
+          "money": 3773,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            8,
+            0,
+            6,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            0,
+            0
+          ],
+          "shed": [
+            4,
+            0,
+            8,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 288,
+          "money": 4345,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            6,
+            0,
+            6,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            0,
+            0
+          ],
+          "shed": [
+            8,
+            0,
+            8,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 480,
+          "money": 5768,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            8,
+            0,
+            6,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            1,
+            1
+          ],
+          "shed": [
+            8,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 600,
+          "money": 9441,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            4,
+            0,
+            6,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            1,
+            1
+          ],
+          "shed": [
+            8,
+            0,
+            14,
+            0,
+            0,
+            2,
+            2,
+            2,
+            8,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 696,
+          "money": 12845,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            1,
+            1
+          ],
+          "shed": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 719,
+          "money": 13263,
+          "land": 1,
+          "units": 10,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            2,
+            1,
+            1
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_bank": 13263,
+      "done": true,
+      "compiler_error_count": 0,
+      "effect_error_count": 0,
+      "controller_unexplained_effect_failures": 0
+    },
+    {
+      "candidate": "GOLD_OPENING_ONLY",
+      "first_action": {
+        "units": [
+          [
+            "PASS",
+            -1,
+            1
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            0,
+            7
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "BUY_SEED",
+            4,
+            12
+          ]
+        ]
+      },
+      "milestones": [
+        {
+          "state_step": 1,
+          "money": 1958,
+          "land": 1,
+          "units": 6,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            0,
+            0
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            7,
+            0,
+            0,
+            0,
+            12
+          ]
+        },
+        {
+          "state_step": 144,
+          "money": 601,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            7,
+            0,
+            0,
+            0,
+            12
+          ],
+          "animals": [
+            0,
+            2,
+            1
+          ],
+          "shed": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "state_step": 264,
+          "money": 2127,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            6,
+            0,
+            0,
+            0,
+            9
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            8,
+            0,
+            0,
+            0,
+            18,
+            0,
+            4,
+            6,
+            26,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            1,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "state_step": 288,
+          "money": 7376,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            4,
+            0,
+            0,
+            0,
+            5
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            12,
+            0,
+            0,
+            0,
+            24,
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            0,
+            7
+          ]
+        },
+        {
+          "state_step": 480,
+          "money": 19735,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            4,
+            0,
+            0,
+            0,
+            10
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            58,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "state_step": 600,
+          "money": 24079,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            3,
+            0,
+            0,
+            0,
+            4
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            11,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "state_step": 696,
+          "money": 32262,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "state_step": 719,
+          "money": 32446,
+          "land": 1,
+          "units": 6,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            0,
+            2
+          ]
+        }
+      ],
+      "final_bank": 32446,
+      "done": true,
+      "compiler_error_count": 0,
+      "effect_error_count": 0,
+      "controller_unexplained_effect_failures": 0
+    },
+    {
+      "candidate": "GOLD_6PHASE_APPROX",
+      "first_action": {
+        "units": [
+          [
+            "PASS",
+            -1,
+            1
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            0,
+            7
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "HIRE",
+            -1,
+            1
+          ],
+          [
+            "BUY_SEED",
+            4,
+            12
+          ]
+        ]
+      },
+      "milestones": [
+        {
+          "state_step": 1,
+          "money": 1958,
+          "land": 1,
+          "units": 6,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "animals": [
+            0,
+            0,
+            0
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            7,
+            0,
+            0,
+            0,
+            12
+          ]
+        },
+        {
+          "state_step": 144,
+          "money": 1003,
+          "land": 1,
+          "units": 1,
+          "crop_tiles": [
+            6,
+            0,
+            0,
+            0,
+            10
+          ],
+          "animals": [
+            0,
+            2,
+            0
+          ],
+          "shed": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "state_step": 264,
+          "money": 923,
+          "land": 2,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            1,
+            8
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            8,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            3,
+            0,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "state_step": 288,
+          "money": 1763,
+          "land": 2,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            1,
+            5
+          ],
+          "animals": [
+            0,
+            2,
+            2
+          ],
+          "shed": [
+            8,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            26,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            10,
+            0,
+            0,
+            18,
+            2
+          ]
+        },
+        {
+          "state_step": 480,
+          "money": 5906,
+          "land": 4,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            5
+          ],
+          "shed": [
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            71,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            15,
+            0,
+            0,
+            22,
+            2
+          ]
+        },
+        {
+          "state_step": 600,
+          "money": 8034,
+          "land": 4,
+          "units": 1,
+          "crop_tiles": [
+            2,
+            0,
+            0,
+            20,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            5
+          ],
+          "shed": [
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            88,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            26,
+            0,
+            0,
+            22,
+            2
+          ]
+        },
+        {
+          "state_step": 696,
+          "money": 22380,
+          "land": 4,
+          "units": 1,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            17,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            5
+          ],
+          "shed": [
+            7,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            27,
+            0,
+            0,
+            22,
+            2
+          ]
+        },
+        {
+          "state_step": 719,
+          "money": 23648,
+          "land": 4,
+          "units": 13,
+          "crop_tiles": [
+            0,
+            0,
+            0,
+            10,
+            0
+          ],
+          "animals": [
+            0,
+            2,
+            5
+          ],
+          "shed": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "seeds": [
+            27,
+            0,
+            0,
+            22,
+            2
+          ]
+        }
+      ],
+      "final_bank": 23648,
+      "done": true,
+      "compiler_error_count": 0,
+      "effect_error_count": 3,
+      "controller_unexplained_effect_failures": 3
+    }
+  ],
+  "genome_validation_errors": [],
+  "known_schema_gap": {
+    "real_daily_hire_targets": [
+      5,
+      0,
+      4,
+      5,
+      5,
+      4,
+      4,
+      8,
+      11,
+      12,
+      11,
+      12,
+      10,
+      11,
+      8,
+      12,
+      9,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      11,
+      11,
+      11,
+      11,
+      10,
+      8
+    ],
+    "m35_requires_monotonic_hand_target": true,
+    "approximation_used": [
+      5,
+      5,
+      12,
+      12,
+      12,
+      12
+    ],
+    "phase_count_limit": 6
+  },
+  "truth_boundary": "Replay milestones are official 1.32.7 observations. Candidate trajectories use the accepted JAX 1.32.7 simulator with the same seed and an open-loop opponent Replay action trace. After divergence this is a controlled disturbance, not an exact causal recreation of the original opponent."
+}

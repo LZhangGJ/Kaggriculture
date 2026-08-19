@@ -1,0 +1,107 @@
+{
+  "receipt_id": "M38_ROUTE_CARDS_ACCEPTANCE_V1",
+  "status": "PASS",
+  "measured_at": "2026-08-19T06:42:13.4273128Z",
+  "scope": "FIXED_SHAPE_ROUTE_CARDS_FEED_AND_HARVEST_V1",
+  "official_version": "1.32.7",
+  "implemented": {
+    "max_stops_per_unit": 12,
+    "feed_tour": true,
+    "same_tile_animal_product_harvest": true,
+    "same_tile_care": true,
+    "policy_gated_fertilizer_collection": true,
+    "crop_harvest_tour": true,
+    "optional_replant_and_water": true,
+    "primitive_executor_unchanged": true,
+    "effect_confirmed_route_progress": true
+  },
+  "fixed_seed_gpu": {
+    "seed": 1905263333,
+    "seat": 1,
+    "steps": 719,
+    "final_bank": 98857,
+    "prior_v17_final_bank": 82488,
+    "cash_delta": 16369,
+    "cash_delta_percent": 19.844098535544564,
+    "hard_error_count": 0,
+    "route_instances_observed": 49,
+    "feed_route_instances_observed": 49,
+    "crop_route_instances_observed": 0,
+    "feed_stops_observed": 176
+  },
+  "official_python_parity": {
+    "frames_compared_including_initial": 720,
+    "exact_full_state_stepwise_parity": true,
+    "official_final_bank": 98857,
+    "jax_final_bank": 98857,
+    "terminal_cash_delta": 0
+  },
+  "gpu_batch_2048": {
+    "event_seed_first": 1000000,
+    "event_seed_last": 1002047,
+    "episodes": 2048,
+    "transitions_per_season_batch": 1472512,
+    "best_transitions_per_second": 86394.96546837939,
+    "hard_error_sum": 0,
+    "affected_episode_count": 0,
+    "final_bank": {
+      "min": 27594,
+      "median": 71012.0,
+      "mean": 73820.24365234375,
+      "p90": 99545.8,
+      "max": 112352
+    }
+  },
+  "same_run_no_route_baseline": {
+    "best_transitions_per_second": 85866.5197510902,
+    "route_throughput_delta_percent": 0.6154269659711886,
+    "hard_error_sum": 1,
+    "final_bank_median": 58801.0,
+    "route_median_cash_delta": 12211.0,
+    "route_median_cash_delta_percent": 20.766653628339647,
+    "final_bank_mean": 59584.02392578125,
+    "route_mean_cash_delta_percent": 23.892679259620575
+  },
+  "reset_stress": {
+    "episodes": 1000,
+    "batch_size": 8,
+    "controller_steps": 5752000,
+    "post_reset_mismatch_count": 0,
+    "cross_episode_contamination_count": 0,
+    "post_full_episode_snapshot_mismatch_count": 0
+  },
+  "tests": {
+    "completed_pass_count": 50,
+    "failed_count": 0,
+    "cpu_full_season_rollout_test": "NOT_COMPLETED_REDUNDANT_HEAVY_COMPILE",
+    "replacement_evidence": "GPU_2048_X_719_PLUS_OFFICIAL_720_FRAME_PARITY"
+  },
+  "source_receipts": {
+    "fixed_seed_gpu": {
+      "path": "experiments/project_route_search_v2/receipts/m38_route_cards_trace_generation_v3.json",
+      "sha256": "9DD59AF19883CB11BE5869583A1912CCDAFEDD53289E3D7864C46E436213C97E"
+    },
+    "official_parity": {
+      "path": "experiments/project_route_search_v2/receipts/m38_route_cards_official_parity_v1.json",
+      "sha256": "D9BAE8DB4D4DAA56E98BFB3981C5DC325BF53CF8A826D0D9F66222F3112AE177"
+    },
+    "gpu_batch": {
+      "path": "experiments/project_route_search_v2/receipts/m38_route_cards_gpu_batch2048_acceptance_v1.json",
+      "sha256": "A33131F794157116C09B84EA0CCE8B4265EF7F35DA8178ABEA789089384D5F54"
+    },
+    "no_route_baseline": {
+      "path": "experiments/project_route_search_v2/receipts/m38_no_route_gpu_batch2048_baseline_v1.json",
+      "sha256": "963A8A56365A4CD05C90FB9D696B1961E486CE2CD6984FAAB7CE0997F8F2F50C"
+    },
+    "reset_stress": {
+      "path": "experiments/project_route_search_v2/receipts/m38_route_cards_reset_stress_v1.json",
+      "sha256": "8A72FD0F0ACADBBCD1F62743DFA2FF59159605C37352F41FD8BCDD4CC17122B8"
+    }
+  },
+  "boundaries": [
+    "NULL_OPPONENT_ECONOMIC_CAPABILITY_NOT_REAL_MATCH_STRENGTH",
+    "CROP_HARVEST_ROUTE_UNIT_TESTED_BUT_NOT_TRIGGERED_IN_FIXED_SEED_TRACE",
+    "NO_CLAIM_OF_GOLD_REPLAY_ACTION_MATCH",
+    "NO_CLAIM_OF_GLOBAL_ROUTE_OPTIMALITY"
+  ]
+}

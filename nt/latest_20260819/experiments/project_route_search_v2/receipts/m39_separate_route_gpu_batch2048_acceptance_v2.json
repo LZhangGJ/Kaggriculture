@@ -1,0 +1,603 @@
+{
+  "schema": "kaggriculture.m36c_gpu_batch_acceptance.v1",
+  "decision": "PASS",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "batch_size": 2048,
+  "replay": "/mnt/e/ai_coding/kaggle/kaggriculture/replay/gold_latest_2026-08-19_154928/latest_per_gold/episode-94424738-replay.json",
+  "player": 0,
+  "m37_unlock_committed_capital": true,
+  "route_cards_enabled": true,
+  "route_card_mode": "separate_crop_animal",
+  "calendar_source": {
+    "episode_id": 94424738,
+    "player": 0,
+    "team_name": "\u30ab\u30ef\u30b7\u30ae",
+    "reward": 79065.0,
+    "replay_step_count": 720,
+    "observed_days": 30,
+    "requested_animal_totals": [
+      0,
+      10,
+      4
+    ],
+    "filled_animal_additions": [
+      0,
+      10,
+      4
+    ],
+    "land_addition_count": 2,
+    "day6_crop_peak": [
+      3,
+      0,
+      0,
+      4,
+      14
+    ],
+    "day6_service_end": [
+      0,
+      4,
+      2
+    ],
+    "day6_care_policy": [
+      0,
+      2,
+      2
+    ],
+    "planned_ownership_reduction_count": 2,
+    "raw_action_payload_stored": false,
+    "event_overflow_count": 0,
+    "route_signature": "animals=0-10-4;land+=2"
+  },
+  "raw_action_payload_stored": false,
+  "event_bank": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_00_seeds_1000000_1002047.npz",
+  "event_seed_first": 1000000,
+  "event_seed_last": 1002047,
+  "compile_seconds": {
+    "opening": 6.315463110999872,
+    "light_chunk_24_masked": 27.48625959600008,
+    "daily_plan": 1.2411635250000472
+  },
+  "timed_run_seconds": [
+    16.59584013499989
+  ],
+  "best_full_season_transitions_per_second": 88727.77684177239,
+  "hard_error": {
+    "sum": 0,
+    "max": 0,
+    "affected_episode_count": 0
+  },
+  "component_errors": {
+    "transaction_hard_error_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "illegal_action_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "unexplained_effect_error_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "unplanned_deadline_miss_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "duplicate_resource_reservation_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "unplanned_animal_escape": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "plant_without_same_day_water": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "fertilizer_market_slot_overflow_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    }
+  },
+  "affected_examples": [],
+  "final_bank": {
+    "min": 50176,
+    "p10": 67448.3,
+    "median": 99569.5,
+    "p90": 111206.1,
+    "max": 125097,
+    "mean": 95075.076171875,
+    "sum": 194713756
+  },
+  "fixed_seed_panel_first_64": [
+    {
+      "batch_index": 0,
+      "event_seed": 1000000,
+      "final_bank": 103403,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 1,
+      "event_seed": 1000001,
+      "final_bank": 93613,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 2,
+      "event_seed": 1000002,
+      "final_bank": 108323,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 3,
+      "event_seed": 1000003,
+      "final_bank": 103878,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 4,
+      "event_seed": 1000004,
+      "final_bank": 93302,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 5,
+      "event_seed": 1000005,
+      "final_bank": 108141,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 6,
+      "event_seed": 1000006,
+      "final_bank": 112168,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 7,
+      "event_seed": 1000007,
+      "final_bank": 98787,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 8,
+      "event_seed": 1000008,
+      "final_bank": 116783,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 9,
+      "event_seed": 1000009,
+      "final_bank": 117658,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 10,
+      "event_seed": 1000010,
+      "final_bank": 101712,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 11,
+      "event_seed": 1000011,
+      "final_bank": 96883,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 12,
+      "event_seed": 1000012,
+      "final_bank": 87257,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 13,
+      "event_seed": 1000013,
+      "final_bank": 97034,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 14,
+      "event_seed": 1000014,
+      "final_bank": 106399,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 15,
+      "event_seed": 1000015,
+      "final_bank": 94755,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 16,
+      "event_seed": 1000016,
+      "final_bank": 102530,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 17,
+      "event_seed": 1000017,
+      "final_bank": 112837,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 18,
+      "event_seed": 1000018,
+      "final_bank": 60632,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 19,
+      "event_seed": 1000019,
+      "final_bank": 61679,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 20,
+      "event_seed": 1000020,
+      "final_bank": 56792,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 21,
+      "event_seed": 1000021,
+      "final_bank": 110239,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 22,
+      "event_seed": 1000022,
+      "final_bank": 104678,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 23,
+      "event_seed": 1000023,
+      "final_bank": 108261,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 24,
+      "event_seed": 1000024,
+      "final_bank": 94617,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 25,
+      "event_seed": 1000025,
+      "final_bank": 108574,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 26,
+      "event_seed": 1000026,
+      "final_bank": 93622,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 27,
+      "event_seed": 1000027,
+      "final_bank": 71826,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 28,
+      "event_seed": 1000028,
+      "final_bank": 94813,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 29,
+      "event_seed": 1000029,
+      "final_bank": 99722,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 30,
+      "event_seed": 1000030,
+      "final_bank": 114394,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 31,
+      "event_seed": 1000031,
+      "final_bank": 88401,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 32,
+      "event_seed": 1000032,
+      "final_bank": 62376,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 33,
+      "event_seed": 1000033,
+      "final_bank": 67479,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 34,
+      "event_seed": 1000034,
+      "final_bank": 103892,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 35,
+      "event_seed": 1000035,
+      "final_bank": 104352,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 36,
+      "event_seed": 1000036,
+      "final_bank": 104194,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 37,
+      "event_seed": 1000037,
+      "final_bank": 112427,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 38,
+      "event_seed": 1000038,
+      "final_bank": 104986,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 39,
+      "event_seed": 1000039,
+      "final_bank": 112534,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 40,
+      "event_seed": 1000040,
+      "final_bank": 93423,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 41,
+      "event_seed": 1000041,
+      "final_bank": 95449,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 42,
+      "event_seed": 1000042,
+      "final_bank": 93880,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 43,
+      "event_seed": 1000043,
+      "final_bank": 104966,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 44,
+      "event_seed": 1000044,
+      "final_bank": 109728,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 45,
+      "event_seed": 1000045,
+      "final_bank": 104778,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 46,
+      "event_seed": 1000046,
+      "final_bank": 71534,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 47,
+      "event_seed": 1000047,
+      "final_bank": 98170,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 48,
+      "event_seed": 1000048,
+      "final_bank": 111500,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 49,
+      "event_seed": 1000049,
+      "final_bank": 98808,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 50,
+      "event_seed": 1000050,
+      "final_bank": 100002,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 51,
+      "event_seed": 1000051,
+      "final_bank": 104407,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 52,
+      "event_seed": 1000052,
+      "final_bank": 104810,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 53,
+      "event_seed": 1000053,
+      "final_bank": 108445,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 54,
+      "event_seed": 1000054,
+      "final_bank": 113398,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 55,
+      "event_seed": 1000055,
+      "final_bank": 99637,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 56,
+      "event_seed": 1000056,
+      "final_bank": 85157,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 57,
+      "event_seed": 1000057,
+      "final_bank": 86962,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 58,
+      "event_seed": 1000058,
+      "final_bank": 57260,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 59,
+      "event_seed": 1000059,
+      "final_bank": 105226,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 60,
+      "event_seed": 1000060,
+      "final_bank": 59941,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 61,
+      "event_seed": 1000061,
+      "final_bank": 104264,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 62,
+      "event_seed": 1000062,
+      "final_bank": 103923,
+      "hard_error_count": 0
+    },
+    {
+      "batch_index": 63,
+      "event_seed": 1000063,
+      "final_bank": 99680,
+      "hard_error_count": 0
+    }
+  ],
+  "soft_terminal_diagnostics": {
+    "terminal_shed_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1962,
+      "mean": 27.78466796875,
+      "sum": 56903
+    },
+    "terminal_unit_inventory_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 1789.1999999999998,
+      "max": 2688,
+      "mean": 636.68359375,
+      "sum": 1303928
+    },
+    "terminal_harvestable_crop_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 140.99999999999682,
+      "max": 930,
+      "mean": 36.88818359375,
+      "sum": 75547
+    },
+    "terminal_animal_product_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1968,
+      "mean": 15.91748046875,
+      "sum": 32599
+    },
+    "planned_release_count": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0,
+      "mean": 0.0,
+      "sum": 0
+    }
+  },
+  "scheduler": {
+    "crop_selection_count": {
+      "min": 539,
+      "p10": 582.0,
+      "median": 619.0,
+      "p90": 660.3,
+      "max": 715,
+      "mean": 619.82666015625,
+      "sum": 1269405
+    },
+    "animal_selection_count": {
+      "min": 321,
+      "p10": 340.0,
+      "median": 353.0,
+      "p90": 368.0,
+      "max": 385,
+      "mean": 353.529296875,
+      "sum": 724028
+    },
+    "deadline_preemption_count": {
+      "min": 304,
+      "p10": 359.0,
+      "median": 424.0,
+      "p90": 555.0,
+      "max": 692,
+      "mean": 444.96875,
+      "sum": 911296
+    },
+    "local_swap_count": {
+      "min": 7,
+      "p10": 10.0,
+      "median": 12.0,
+      "p90": 16.0,
+      "max": 22,
+      "mean": 12.4453125,
+      "sum": 25488
+    }
+  },
+  "checks": {
+    "backend_gpu": true,
+    "all_final_step_719": true,
+    "all_done": true,
+    "hard_error_zero_all_episodes": true,
+    "all_component_error_sums_zero": true
+  },
+  "boundary": "M36C_GPU_BATCH_ACCEPTANCE_NULL_OPPONENT_NOT_OFFICIAL_PARITY"
+}

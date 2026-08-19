@@ -1,0 +1,60 @@
+{
+  "schema": "kaggriculture.m39_route_trace_summary.v1",
+  "status": "PASS",
+  "measured_at": "2026-08-19T09:24:44.760426+00:00",
+  "trace": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\project_route_search_v2\\artifacts\\traces\\m39_mixed_route_v20_94084095_trace_v3.npz",
+  "trace_sha256": "43312F9AB72BE2E04C2A07E69EBF8E3216AEDC4564A94BFF1C02CA34830468D9",
+  "steps": 719,
+  "batch_size": 1,
+  "unit_count": 33,
+  "unique_card_instance_count": 90,
+  "by_type": {
+    "CROP_FIELD_TOUR": {
+      "instance_count": 36,
+      "max_route_length": 11,
+      "max_cursor": 10,
+      "action_counts": {
+        "FEED": 0,
+        "CARE": 0,
+        "COLLECT_FERTILIZER": 0,
+        "HARVEST": 74,
+        "REPLANT_AND_WATER": 31,
+        "WATER": 178,
+        "FERTILIZE": 0,
+        "ANIMAL_HARVEST": 0
+      }
+    },
+    "FEED_TOUR": {
+      "instance_count": 46,
+      "max_route_length": 6,
+      "max_cursor": 5,
+      "action_counts": {
+        "FEED": 163,
+        "CARE": 105,
+        "COLLECT_FERTILIZER": 141,
+        "HARVEST": 0,
+        "REPLANT_AND_WATER": 0,
+        "WATER": 0,
+        "FERTILIZE": 0,
+        "ANIMAL_HARVEST": 28
+      }
+    },
+    "MIXED_FARM_TOUR": {
+      "instance_count": 8,
+      "max_route_length": 8,
+      "max_cursor": 8,
+      "action_counts": {
+        "FEED": 19,
+        "CARE": 14,
+        "COLLECT_FERTILIZER": 15,
+        "HARVEST": 4,
+        "REPLANT_AND_WATER": 0,
+        "WATER": 21,
+        "FERTILIZE": 0,
+        "ANIMAL_HARVEST": 4
+      }
+    }
+  },
+  "mixed_collect_then_fertilize_instance_count": 0,
+  "boundary": "Trace lifecycle summary; economic value is reported by rollout receipts."
+}

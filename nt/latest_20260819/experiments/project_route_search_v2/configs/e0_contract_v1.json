@@ -1,0 +1,38 @@
+{
+  "contract_id": "E0_PROJECT_ROUTE_SEARCH_V1",
+  "contract_status": "FROZEN_M0",
+  "official_package_version": "1.32.7",
+  "objective": "maximize_terminal_banked_coin_against_null_opponent",
+  "truth_boundary": "BEST_OBSERVED_WITHIN_FROZEN_DOMAIN",
+  "opponent_id": "NULL_OPPONENT_V1",
+  "design_document": "gpt_review/gpt/KAGGRICULTURE_E0_THREE_LAYER_PROJECT_SEARCH_DESIGN_V1_1_ZH.md",
+  "reference_simulator": "gpu_sim/reference/kaggle_environments_1_32_7/kaggriculture",
+  "source_event_bank": "experiments/route_playbook_v1/artifacts/events/event_panels_v1.npz",
+  "candidate_budget": {
+    "initial_complete_candidates": 160000,
+    "post_halving_refinement_cap": 40000,
+    "maximum_complete_candidates": 200000
+  },
+  "seed_segments": {
+    "E0_CANONICAL_2": {"start": 84001, "stop": 84002, "count": 2, "ranking": false},
+    "S1_INITIAL_16": {"start": 84101, "stop": 84116, "count": 16, "ranking": true},
+    "S2_ADDITIONAL_16": {"start": 84117, "stop": 84132, "count": 16, "ranking": true},
+    "S3_ADDITIONAL_96": {"start": 84133, "stop": 84228, "count": 96, "ranking": true},
+    "OFFICIAL_HOLDOUT_64": {"start": 85001, "stop": 85064, "count": 64, "ranking": false}
+  },
+  "cumulative_panels": {
+    "E0_SEARCH_16": ["S1_INITIAL_16"],
+    "E0_PROMOTE_32": ["S1_INITIAL_16", "S2_ADDITIONAL_16"],
+    "E0_AUDIT_128": ["S1_INITIAL_16", "S2_ADDITIONAL_16", "S3_ADDITIONAL_96"],
+    "E0_OFFICIAL_HOLDOUT_64": ["OFFICIAL_HOLDOUT_64"]
+  },
+  "constraints": {
+    "future_events_visible_to_agent": false,
+    "machine_learning_in_e0_search": false,
+    "null_opponent_is_competitive_evidence": false,
+    "official_holdout_requires_seat_swap": true,
+    "modify_gpu_sim_core_in_m0": false,
+    "modify_official_reference_in_m0": false
+  }
+}
+

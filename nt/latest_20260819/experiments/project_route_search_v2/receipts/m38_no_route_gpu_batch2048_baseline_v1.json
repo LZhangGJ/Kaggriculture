@@ -1,0 +1,235 @@
+{
+  "schema": "kaggriculture.m36c_gpu_batch_acceptance.v1",
+  "decision": "FAIL",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "batch_size": 2048,
+  "m37_unlock_committed_capital": true,
+  "route_cards_enabled": false,
+  "calendar_source": {
+    "episode_id": 94051618,
+    "player": 1,
+    "team_name": "\u30ab\u30ef\u30b7\u30ae",
+    "reward": 90326.0,
+    "replay_step_count": 720,
+    "observed_days": 30,
+    "requested_animal_totals": [
+      0,
+      6,
+      12
+    ],
+    "filled_animal_additions": [
+      0,
+      6,
+      12
+    ],
+    "land_addition_count": 3,
+    "day6_crop_peak": [
+      3,
+      0,
+      0,
+      6,
+      12
+    ],
+    "day6_service_end": [
+      0,
+      4,
+      2
+    ],
+    "day6_care_policy": [
+      0,
+      2,
+      2
+    ],
+    "planned_ownership_reduction_count": 6,
+    "raw_action_payload_stored": false,
+    "event_overflow_count": 0,
+    "route_signature": "animals=0-6-12;land+=3"
+  },
+  "raw_action_payload_stored": false,
+  "event_bank": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_00_seeds_1000000_1002047.npz",
+  "event_seed_first": 1000000,
+  "event_seed_last": 1002047,
+  "compile_seconds": {
+    "opening": 6.72171111900002,
+    "light_chunk_24_masked": 91.71522449899999,
+    "daily_plan": 1.914434333000031
+  },
+  "timed_run_seconds": [
+    17.216494030000035,
+    17.14884921700002
+  ],
+  "best_full_season_transitions_per_second": 85866.5197510902,
+  "hard_error": {
+    "sum": 1,
+    "max": 1,
+    "affected_episode_count": 1
+  },
+  "component_errors": {
+    "transaction_hard_error_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "illegal_action_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "unexplained_effect_error_count": {
+      "sum": 1,
+      "max": 1,
+      "affected_episode_count": 1
+    },
+    "unplanned_deadline_miss_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "duplicate_resource_reservation_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "unplanned_animal_escape": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "plant_without_same_day_water": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    },
+    "fertilizer_market_slot_overflow_count": {
+      "sum": 0,
+      "max": 0,
+      "affected_episode_count": 0
+    }
+  },
+  "affected_examples": [
+    {
+      "batch_index": 123,
+      "event_seed": 1000123,
+      "hard_error_count": 1,
+      "unexplained_effect_error_count": 1,
+      "unplanned_deadline_miss_count": 0,
+      "unplanned_animal_escape": 0,
+      "crop_effect_mismatch_count": 1,
+      "crop_resource_unavailable_count": 0,
+      "animal_effect_mismatch_count": 1,
+      "animal_resource_unavailable_count": 0,
+      "animal_deadline_missed_count": 0,
+      "final_bank": 44200,
+      "active_animals_by_species": [
+        0,
+        6,
+        12
+      ]
+    }
+  ],
+  "final_bank": {
+    "min": 13791,
+    "p10": 39514.3,
+    "median": 58801.0,
+    "p90": 80471.1,
+    "max": 89782,
+    "mean": 59584.02392578125,
+    "sum": 122028081
+  },
+  "soft_terminal_diagnostics": {
+    "terminal_shed_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0,
+      "mean": 0.0,
+      "sum": 0
+    },
+    "terminal_unit_inventory_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0,
+      "mean": 0.0,
+      "sum": 0
+    },
+    "terminal_harvestable_crop_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 786,
+      "mean": 9.193359375,
+      "sum": 18828
+    },
+    "terminal_animal_product_value": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1165,
+      "mean": 2.4921875,
+      "sum": 5104
+    },
+    "planned_release_count": {
+      "min": 0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0,
+      "mean": 0.0,
+      "sum": 0
+    }
+  },
+  "scheduler": {
+    "crop_selection_count": {
+      "min": 518,
+      "p10": 594.0,
+      "median": 644.0,
+      "p90": 716.0,
+      "max": 957,
+      "mean": 651.75048828125,
+      "sum": 1334785
+    },
+    "animal_selection_count": {
+      "min": 584,
+      "p10": 724.7,
+      "median": 771.0,
+      "p90": 795.0,
+      "max": 832,
+      "mean": 763.39404296875,
+      "sum": 1563431
+    },
+    "deadline_preemption_count": {
+      "min": 428,
+      "p10": 570.7,
+      "median": 706.0,
+      "p90": 992.0,
+      "max": 1113,
+      "mean": 743.2880859375,
+      "sum": 1522254
+    },
+    "local_swap_count": {
+      "min": 6,
+      "p10": 10.0,
+      "median": 10.0,
+      "p90": 14.0,
+      "max": 22,
+      "mean": 11.07763671875,
+      "sum": 22687
+    }
+  },
+  "checks": {
+    "backend_gpu": true,
+    "all_final_step_719": true,
+    "all_done": true,
+    "hard_error_zero_all_episodes": false,
+    "all_component_error_sums_zero": false
+  },
+  "boundary": "M36C_GPU_BATCH_ACCEPTANCE_NULL_OPPONENT_NOT_OFFICIAL_PARITY"
+}
