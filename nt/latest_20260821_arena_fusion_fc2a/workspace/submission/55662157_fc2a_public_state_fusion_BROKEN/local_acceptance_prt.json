@@ -1,0 +1,71 @@
+{
+  "schema": "expert-business-agent-cpu-package-acceptance-v1",
+  "generated_at_utc": "2026-08-21T06:14:39.611283+00:00",
+  "status": "PASS",
+  "cpu_online_decision": {
+    "calls": 2876,
+    "mean_ms": 0.26313483980027713,
+    "p50_ms": 0.228599994443357,
+    "p95_ms": 0.5440499953692779,
+    "p99_ms": 0.7187749906734098,
+    "max_ms": 1.6485000087413937,
+    "mean_import_ms": 243.09007500414737
+  },
+  "games": [
+    {
+      "seed": 545301,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 94229.0,
+      "opponent_reward": 89928.0
+    },
+    {
+      "seed": 545301,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 98161.0,
+      "opponent_reward": 93896.0
+    },
+    {
+      "seed": 545302,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 130648.0,
+      "opponent_reward": 127403.0
+    },
+    {
+      "seed": 545302,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 130648.0,
+      "opponent_reward": 127403.0
+    }
+  ],
+  "all_done": true,
+  "agent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\main.py",
+    "bytes": 387220,
+    "sha256": "5AC57DDDCC00A975C7DEA2AFA8C2A5B8DEF0011346B27326C16CF842EDC363FF"
+  },
+  "archive": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\submission.tar.gz",
+    "bytes": 312940,
+    "under_100_mib": true,
+    "sha256": "6DA3CB49FD03CBF050CD480CE909D01CD99A7CA7C1D7F36F18AEF4E181309578",
+    "members": [
+      "main.py"
+    ]
+  },
+  "opponent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55541953_prt_v6\\main.py",
+    "sha256": "759C7BD4A5249CB752236F5A292FD65673E0BB371FF4B8657D00079CAE26BA83"
+  }
+}

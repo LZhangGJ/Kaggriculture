@@ -1,0 +1,6426 @@
+{
+  "schema": "kaggriculture.fusion_champion.k320_preempt_parameter_screen.v1",
+  "generated_at_utc": "2026-08-21T04:56:38.081447+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "official_package_version": "1.32.7",
+  "opponent": "rayk_k320_adaptive_rank1",
+  "seed_start": 544001,
+  "seed_count": 16,
+  "seat_protocol": "same seeds with seats swapped",
+  "rows": [
+    {
+      "variant": "source",
+      "parameters": {
+        "source_preempt": true,
+        "horizon": 0,
+        "distance_limit": 0,
+        "quantity_cap": 0,
+        "minimum_future_quantity": 0,
+        "minimum_price_percent": 0,
+        "start_step": 0,
+        "product_mask": 0
+      },
+      "games": 32,
+      "wins": 5,
+      "ties": 22,
+      "losses": 5,
+      "score_rate": 0.5,
+      "mean_candidate_cash": 79133.34375,
+      "mean_opponent_cash": 79133.34375,
+      "mean_margin": 0.0,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 43
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2920
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1144
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -167
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -357
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 0
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -43
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2920
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1144
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 167
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 357
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 0
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 0
+        }
+      ]
+    },
+    {
+      "variant": "h4_mask_SKW",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap2",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 2,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 3,
+      "ties": 0,
+      "losses": 29,
+      "score_rate": 0.09375,
+      "mean_candidate_cash": 78706.90625,
+      "mean_opponent_cash": 79574.6875,
+      "mean_margin": -867.78125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -756
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -160
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -1126
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3015
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -706
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -1625
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -663
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -1153
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -707
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -2038
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2114
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -1005
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -560
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -110
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -1705
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -981
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -756
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -160
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -1230
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2845
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -706
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -1625
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -663
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -1153
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -707
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -2038
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 174
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": -676
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 146
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -110
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -1705
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -981
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap4",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 4,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 7,
+      "ties": 0,
+      "losses": 25,
+      "score_rate": 0.21875,
+      "mean_candidate_cash": 78981.9375,
+      "mean_opponent_cash": 79215.8125,
+      "mean_margin": -233.875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -30
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 333
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -139
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2743
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -67
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -466
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -133
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -120
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -79
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -1337
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1488
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -559
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -395
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 251
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -1008
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -309
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -30
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 333
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -235
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3117
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -67
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -466
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -133
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -120
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -79
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -1337
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 800
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": -230
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 318
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 251
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -1008
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -309
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap6",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 6,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 24,
+      "ties": 0,
+      "losses": 8,
+      "score_rate": 0.75,
+      "mean_candidate_cash": 79203.4375,
+      "mean_opponent_cash": 78946.15625,
+      "mean_margin": 257.28125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 642
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 612
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 437
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 386
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 504
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 347
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 642
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 338
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -687
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1051
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -180
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -259
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 513
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -380
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 239
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 642
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 612
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 351
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 386
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 504
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 347
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 642
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 338
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -687
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1237
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 149
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 453
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 513
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -380
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 239
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap8",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 8,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 25,
+      "ties": 0,
+      "losses": 7,
+      "score_rate": 0.78125,
+      "mean_candidate_cash": 79277.03125,
+      "mean_opponent_cash": 78821.4375,
+      "mean_margin": 455.59375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 927
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 612
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 638
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 514
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 874
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 567
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 870
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 484
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -359
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -827
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 127
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -176
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 562
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -23
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 485
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 927
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 612
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 552
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 514
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 874
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 567
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 870
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 484
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -359
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1461
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 456
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 538
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 562
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -23
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 485
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap10",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 10,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79353.75,
+      "mean_opponent_cash": 78780.3125,
+      "mean_margin": 573.4375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1166
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 722
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 564
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1127
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 687
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 555
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -259
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -677
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 383
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -135
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 548
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 280
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 670
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1166
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 636
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 564
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1127
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 687
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 555
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -259
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1611
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 711
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 579
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 548
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 280
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 670
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap16",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 16,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79399.46875,
+      "mean_opponent_cash": 78702.53125,
+      "mean_margin": 696.9375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1409
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 657
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 447
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1368
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 1010
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 893
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -56
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -515
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 1098
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -120
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 464
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 855
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1409
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 571
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 447
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1368
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 1010
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 893
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -56
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1773
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 1432
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 594
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 464
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 855
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap20",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 20,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 29,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.90625,
+      "mean_candidate_cash": 79408.90625,
+      "mean_opponent_cash": 78682.84375,
+      "mean_margin": 726.0625,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 648
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 1154
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 62
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -539
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 1464
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -124
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 828
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 562
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 1154
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 62
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1749
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 1798
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 590
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 828
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap24",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 24,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 29,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.90625,
+      "mean_candidate_cash": 79416.34375,
+      "mean_opponent_cash": 78673.84375,
+      "mean_margin": 742.5,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 648
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 1238
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 112
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -539
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 1585
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -116
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 828
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 562
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 1238
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 112
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1749
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 1919
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 598
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 828
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_cap32",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 32,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 29,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.90625,
+      "mean_candidate_cash": 79419.46875,
+      "mean_opponent_cash": 78670.28125,
+      "mean_margin": 749.1875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 648
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 1242
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 112
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -539
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 1699
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -116
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 532
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 828
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1398
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 602
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 562
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 437
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1358
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 1242
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 879
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 442
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 112
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1749
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 2033
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 598
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 532
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 448
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 828
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q1",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 1,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79294.90625,
+      "mean_opponent_cash": 78828.21875,
+      "mean_margin": 466.6875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1307
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 492
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 136
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2551
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 328
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1006
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 786
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 107
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 326
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -512
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -599
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 618
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -251
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 529
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 424
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 765
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1307
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 492
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 50
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3309
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 328
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1006
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 786
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 107
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 326
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -512
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1689
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 952
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 465
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 529
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 424
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 765
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q2",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 2,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79281.78125,
+      "mean_opponent_cash": 78835.84375,
+      "mean_margin": 445.9375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1213
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 493
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 117
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2548
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 331
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 858
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 790
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 94
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 336
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -537
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -614
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 623
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -255
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 527
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 400
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 751
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1213
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 493
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 31
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3312
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 331
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 858
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 790
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 94
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 336
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -537
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1674
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 957
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 461
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 527
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 400
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 751
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q3",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 3,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79332.71875,
+      "mean_opponent_cash": 78806.09375,
+      "mean_margin": 526.625,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1275
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 613
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 489
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2548
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 455
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 950
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 221
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 455
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -412
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -611
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -140
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 395
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 752
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1275
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 613
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 403
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3312
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 455
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 950
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 221
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 455
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -412
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1677
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 576
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 395
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 752
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q5",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 5,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79373.71875,
+      "mean_opponent_cash": 78760.40625,
+      "mean_margin": 613.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 730
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -644
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 558
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 475
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 335
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 741
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 730
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1644
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 892
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 475
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 335
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 741
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q6",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 6,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79332.84375,
+      "mean_opponent_cash": 78780.28125,
+      "mean_margin": 552.5625,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1290
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 464
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 210
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 422
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1263
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 730
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 769
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 423
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -28
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -646
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 558
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -147
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 475
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 320
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 721
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1290
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 464
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 124
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 422
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1263
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 730
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 769
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 423
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -28
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1642
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 892
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 567
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 475
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 320
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 721
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q8",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 8,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 15,
+      "ties": 0,
+      "losses": 17,
+      "score_rate": 0.46875,
+      "mean_candidate_cash": 79116.84375,
+      "mean_opponent_cash": 79130.53125,
+      "mean_margin": -13.6875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 72
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -378
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -279
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3324
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -385
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 457
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 285
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -216
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -456
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 528
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1110
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 309
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -229
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -23
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -183
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 172
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 72
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -378
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -392
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2536
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -385
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 457
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 285
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -216
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -456
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 528
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1178
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 643
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 484
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -23
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -183
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 172
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_q10",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 10,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 13,
+      "ties": 0,
+      "losses": 19,
+      "score_rate": 0.40625,
+      "mean_candidate_cash": 79065.5625,
+      "mean_opponent_cash": 79167.84375,
+      "mean_margin": -102.28125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 170
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -378
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -89
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3333
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -393
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 67
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 162
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -357
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -472
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": 391
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1364
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 297
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -246
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -131
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -66
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 170
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -378
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -202
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2527
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -393
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 67
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 162
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -357
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -472
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": 391
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 924
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 631
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 468
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -131
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -66
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_start72",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 72,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_start96",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 96,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_start144",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 144,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_start168",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 168,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_start192",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 192,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79388.40625,
+      "mean_opponent_cash": 78744.09375,
+      "mean_margin": 644.3125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price25",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 25,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 21,
+      "ties": 0,
+      "losses": 11,
+      "score_rate": 0.65625,
+      "mean_candidate_cash": 79182.375,
+      "mean_opponent_cash": 78907.875,
+      "mean_margin": 274.5,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1208
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -62
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 542
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2888
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 78
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1015
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 211
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -30
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 84
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -397
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -1056
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 453
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -304
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -28
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 591
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1208
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -62
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 429
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2972
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 78
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1015
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 211
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -30
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 84
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -397
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1232
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 782
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 410
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -28
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 591
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price50",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 50,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 11,
+      "ties": 0,
+      "losses": 21,
+      "score_rate": 0.34375,
+      "mean_candidate_cash": 78999.3125,
+      "mean_opponent_cash": 79152.125,
+      "mean_margin": -152.8125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 821
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -62
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 92
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2888
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -263
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 723
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -813
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -261
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -45
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -793
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2698
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 224
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -625
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -95
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -502
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 201
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 821
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -62
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -21
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2972
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -263
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 723
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -813
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -261
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -45
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -793
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": -410
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 553
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 89
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -95
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -502
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 201
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price75",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 75,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 4,
+      "ties": 0,
+      "losses": 28,
+      "score_rate": 0.125,
+      "mean_candidate_cash": 78682.1875,
+      "mean_opponent_cash": 79541.25,
+      "mean_margin": -859.0625,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -941
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -505
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3277
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -780
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -1513
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -909
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -599
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -1446
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2944
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 224
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -700
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -637
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -1691
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -690
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -941
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -618
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2583
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -780
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -1513
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -909
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -599
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -1446
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": -656
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 553
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 14
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -637
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -1691
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -690
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price100",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 100,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 4,
+      "ties": 0,
+      "losses": 28,
+      "score_rate": 0.125,
+      "mean_candidate_cash": 78634.5,
+      "mean_opponent_cash": 79692.9375,
+      "mean_margin": -1058.4375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -726
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3344
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -1021
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -1296
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -1321
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -929
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2944
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 224
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -700
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -2253
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -1372
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -839
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2516
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -1021
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -1296
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -1321
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -929
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": -656
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 553
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 14
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -2253
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -1372
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price125",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 125,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 1,
+      "ties": 0,
+      "losses": 31,
+      "score_rate": 0.03125,
+      "mean_candidate_cash": 78542.0625,
+      "mean_opponent_cash": 79798.25,
+      "mean_margin": -1256.1875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -1272
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3361
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -1379
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -1296
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -1443
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -1381
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2944
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -850
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -773
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -2343
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -1804
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -1385
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2499
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -1379
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -1296
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -1443
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -1381
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": -656
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": -521
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": -59
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -2343
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -1804
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_price150",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 6,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 150,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 1,
+      "ties": 0,
+      "losses": 31,
+      "score_rate": 0.03125,
+      "mean_candidate_cash": 78537.1875,
+      "mean_opponent_cash": 79808.3125,
+      "mean_margin": -1271.125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": -1292
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -3361
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": -1424
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -1345
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": -1463
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -1381
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -2944
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": -912
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -773
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": -2350
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": -1840
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": -1494
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": -798
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": -1405
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 2499
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": -1424
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": -1752
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -1345
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": -1078
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": -1463
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -1381
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": -656
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": -583
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": -59
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": -670
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": -2350
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": -1840
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance2",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 2,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 25,
+      "ties": 0,
+      "losses": 7,
+      "score_rate": 0.78125,
+      "mean_candidate_cash": 79323.40625,
+      "mean_opponent_cash": 78824.96875,
+      "mean_margin": 498.4375,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": -1345
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -738
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": -1345
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1550
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance4",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 4,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79385.03125,
+      "mean_opponent_cash": 78750.78125,
+      "mean_margin": 634.25,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2538
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 637
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3322
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 637
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance8",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 8,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79391.0625,
+      "mean_opponent_cash": 78736.5,
+      "mean_margin": 654.5625,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -2391
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 3503
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance12",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 12,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79406.28125,
+      "mean_opponent_cash": 78706.09375,
+      "mean_margin": 700.1875,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -1914
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 4486
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance20",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 20,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79414.5,
+      "mean_opponent_cash": 78680.6875,
+      "mean_margin": 733.8125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -1376
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 5024
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    },
+    {
+      "variant": "h4_skw_distance100",
+      "parameters": {
+        "source_preempt": false,
+        "horizon": 4,
+        "distance_limit": 100,
+        "quantity_cap": 12,
+        "minimum_future_quantity": 4,
+        "minimum_price_percent": 0,
+        "start_step": 120,
+        "product_mask": 200
+      },
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_rate": 0.84375,
+      "mean_candidate_cash": 79414.5,
+      "mean_opponent_cash": 78680.6875,
+      "mean_margin": 733.8125,
+      "per_game": [
+        {
+          "seed": 544001,
+          "candidate_seat": 0,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 0,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 0,
+          "margin": 669
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 0,
+          "margin": -1376
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 0,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 0,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 0,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 0,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 0,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 0,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 0,
+          "margin": -547
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 0,
+          "margin": 635
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 0,
+          "margin": -127
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 0,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 0,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 0,
+          "margin": 826
+        },
+        {
+          "seed": 544001,
+          "candidate_seat": 1,
+          "margin": 1417
+        },
+        {
+          "seed": 544002,
+          "candidate_seat": 1,
+          "margin": 619
+        },
+        {
+          "seed": 544003,
+          "candidate_seat": 1,
+          "margin": 583
+        },
+        {
+          "seed": 544004,
+          "candidate_seat": 1,
+          "margin": 5024
+        },
+        {
+          "seed": 544005,
+          "candidate_seat": 1,
+          "margin": 460
+        },
+        {
+          "seed": 544006,
+          "candidate_seat": 1,
+          "margin": 1378
+        },
+        {
+          "seed": 544007,
+          "candidate_seat": 1,
+          "margin": 798
+        },
+        {
+          "seed": 544008,
+          "candidate_seat": 1,
+          "margin": 911
+        },
+        {
+          "seed": 544009,
+          "candidate_seat": 1,
+          "margin": 462
+        },
+        {
+          "seed": 544010,
+          "candidate_seat": 1,
+          "margin": -188
+        },
+        {
+          "seed": 544011,
+          "candidate_seat": 1,
+          "margin": 1741
+        },
+        {
+          "seed": 544012,
+          "candidate_seat": 1,
+          "margin": 969
+        },
+        {
+          "seed": 544013,
+          "candidate_seat": 1,
+          "margin": 587
+        },
+        {
+          "seed": 544014,
+          "candidate_seat": 1,
+          "margin": 543
+        },
+        {
+          "seed": 544015,
+          "candidate_seat": 1,
+          "margin": 436
+        },
+        {
+          "seed": 544016,
+          "candidate_seat": 1,
+          "margin": 826
+        }
+      ]
+    }
+  ],
+  "oracle": {
+    "wins": 29,
+    "ties": 0,
+    "losses": 3,
+    "score_rate": 0.90625,
+    "mean_margin": 895.875
+  },
+  "elapsed_seconds": 198.095177497
+}

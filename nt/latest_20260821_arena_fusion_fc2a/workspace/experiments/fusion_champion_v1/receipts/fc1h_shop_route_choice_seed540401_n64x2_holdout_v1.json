@@ -1,0 +1,1147 @@
+{
+  "schema": "kaggriculture.fusion_champion.shop_route_choice_analysis.v1",
+  "status": "PASS",
+  "screen": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\receipts\\fc1c_x562_route_rules_vs_rank14_seed540401_n64x2_holdout_v1.json",
+  "trajectory": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\receipts\\fc1h_x562_rank14_public_daily_seed540401_n64x2_holdout_v1.json",
+  "games": 128,
+  "oracle": {
+    "wins": 110,
+    "ties": 0,
+    "losses": 18,
+    "score_rate": 0.859375,
+    "mean_margin": 5441.359375
+  },
+  "prefix_rows": [
+    {
+      "shop_prefix": "0,1",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.75,
+          "mean_margin": 125.75
+        },
+        "route4": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.75,
+          "mean_margin": 125.75
+        },
+        "route7": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.75,
+          "mean_margin": 125.75
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "0,2",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3095.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3095.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3095.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "0,4",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8493.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8493.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8493.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "0,5",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2796.25
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2796.25
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2796.25
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "0,6",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -441.0
+        },
+        "route4": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -441.0
+        },
+        "route7": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -441.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "0,7",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": -727.5
+        },
+        "route4": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.75,
+          "mean_margin": 7383.5
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4279.0
+        }
+      },
+      "best_mean_margin_route": "route4",
+      "best_score_route": "route7"
+    },
+    {
+      "shop_prefix": "1,0",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -397.0
+        },
+        "route4": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -397.0
+        },
+        "route7": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -397.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "1,2",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -80.0
+        },
+        "route4": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -80.0
+        },
+        "route7": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -80.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "1,3",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": -9.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": -9.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": -9.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "1,4",
+      "games": 8,
+      "routes": {
+        "current": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 3,
+          "score_rate": 0.625,
+          "mean_margin": -17.75
+        },
+        "route4": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 3,
+          "score_rate": 0.625,
+          "mean_margin": -17.75
+        },
+        "route7": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 3,
+          "score_rate": 0.625,
+          "mean_margin": -17.75
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "1,5",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 1996.5
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 1996.5
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 1996.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "2,4",
+      "games": 6,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.6666666666666666,
+          "mean_margin": 1307.0
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.6666666666666666,
+          "mean_margin": 1307.0
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.6666666666666666,
+          "mean_margin": 1307.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "2,6",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 11904.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 11904.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 11904.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "2,7",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -14832.0
+        },
+        "route4": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.0,
+          "mean_margin": -15289.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2681.0
+        }
+      },
+      "best_mean_margin_route": "route7",
+      "best_score_route": "route7"
+    },
+    {
+      "shop_prefix": "3,0",
+      "games": 6,
+      "routes": {
+        "current": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 3838.1666666666665
+        },
+        "route4": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 3838.1666666666665
+        },
+        "route7": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 3838.1666666666665
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "3,1",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2530.5
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2530.5
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2530.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "3,3",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8648.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8648.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8648.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "3,6",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12580.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12580.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12580.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "3,7",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3901.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12531.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 10444.0
+        }
+      },
+      "best_mean_margin_route": "route4",
+      "best_score_route": "route4"
+    },
+    {
+      "shop_prefix": "4,0",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5410.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5410.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5410.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,1",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": 1371.5
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": 1371.5
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": 1371.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,2",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4412.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4412.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4412.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,3",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3485.5
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3485.5
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3485.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,4",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3639.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3639.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3639.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,6",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4803.75
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4803.75
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4803.75
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "4,7",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 9253.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": 6336.75
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 11781.0
+        }
+      },
+      "best_mean_margin_route": "route7",
+      "best_score_route": "route7"
+    },
+    {
+      "shop_prefix": "5,0",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 10831.5
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 10831.5
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 10831.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "5,1",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2660.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2660.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 2660.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "5,2",
+      "games": 6,
+      "routes": {
+        "current": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 1808.3333333333333
+        },
+        "route4": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 1808.3333333333333
+        },
+        "route7": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.8333333333333334,
+          "mean_margin": 1808.3333333333333
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "5,4",
+      "games": 6,
+      "routes": {
+        "current": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8837.833333333334
+        },
+        "route4": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8837.833333333334
+        },
+        "route7": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8837.833333333334
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "5,7",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5042.75
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5394.0
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 9112.75
+        }
+      },
+      "best_mean_margin_route": "route7",
+      "best_score_route": "route7"
+    },
+    {
+      "shop_prefix": "6,1",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4475.25
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4475.25
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 4475.25
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "6,3",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 7352.5
+        },
+        "route4": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 7352.5
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 7352.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "6,6",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12707.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12707.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 12707.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "7,0",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 3301.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "score_rate": 0.5,
+          "mean_margin": 5264.0
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8684.25
+        }
+      },
+      "best_mean_margin_route": "route7",
+      "best_score_route": "route7"
+    },
+    {
+      "shop_prefix": "7,1",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 14763.5
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 7769.5
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 5128.5
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "7,2",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 10713.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 598.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 6901.0
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "7,3",
+      "games": 4,
+      "routes": {
+        "current": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 8586.25
+        },
+        "route4": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "score_rate": 0.75,
+          "mean_margin": 7863.75
+        },
+        "route7": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 6525.25
+        }
+      },
+      "best_mean_margin_route": "current",
+      "best_score_route": "current"
+    },
+    {
+      "shop_prefix": "7,6",
+      "games": 2,
+      "routes": {
+        "current": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 16637.0
+        },
+        "route4": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 17618.0
+        },
+        "route7": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "score_rate": 1.0,
+          "mean_margin": 11585.5
+        }
+      },
+      "best_mean_margin_route": "route4",
+      "best_score_route": "route4"
+    }
+  ]
+}

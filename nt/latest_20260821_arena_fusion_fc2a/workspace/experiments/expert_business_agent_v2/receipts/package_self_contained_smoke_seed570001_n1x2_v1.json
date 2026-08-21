@@ -1,0 +1,720 @@
+{
+  "schema": "kaggriculture.all_exact_jax_round_robin.v1",
+  "generated_at_utc": "2026-08-21T10:59:11.386932+00:00",
+  "status": "SMOKE_PASS",
+  "official_package_version": "1.32.7",
+  "backend": "gpu",
+  "jax_version": "0.11.0",
+  "device": "cuda:0",
+  "roster_count": 28,
+  "roster": [
+    {
+      "name": "public_g01_boatlee_v16",
+      "kind": "old",
+      "old_id": 0
+    },
+    {
+      "name": "public_g02_rc5_c166",
+      "kind": "old",
+      "old_id": 1
+    },
+    {
+      "name": "public_g04_soil_rain",
+      "kind": "old",
+      "old_id": 3
+    },
+    {
+      "name": "public_g06_v25",
+      "kind": "old",
+      "old_id": 5,
+      "aliases": [
+        "flex_multi_route_latest"
+      ]
+    },
+    {
+      "name": "public_g07_c95",
+      "kind": "old",
+      "old_id": 6
+    },
+    {
+      "name": "public_g08_v14",
+      "kind": "old",
+      "old_id": 7
+    },
+    {
+      "name": "public_g09_c68_thunder",
+      "kind": "old",
+      "old_id": 8
+    },
+    {
+      "name": "public_g10_four_hire",
+      "kind": "old",
+      "old_id": 9
+    },
+    {
+      "name": "public_g11_v21",
+      "kind": "old",
+      "old_id": 10
+    },
+    {
+      "name": "public_g12_v13_r3",
+      "kind": "old",
+      "old_id": 11
+    },
+    {
+      "name": "public_g13_bruce_route1",
+      "kind": "old",
+      "old_id": 12
+    },
+    {
+      "name": "public_g14_v19_control",
+      "kind": "old",
+      "old_id": 13
+    },
+    {
+      "name": "public_g15_v18_closed_loop",
+      "kind": "old",
+      "old_id": 14
+    },
+    {
+      "name": "public_g16_tran_cashflow",
+      "kind": "old",
+      "old_id": 15
+    },
+    {
+      "name": "gold_proxy_rank07_junichiro_morita",
+      "kind": "old",
+      "old_id": 22
+    },
+    {
+      "name": "gold_proxy_rank12_ai_b2b67_saas",
+      "kind": "old",
+      "old_id": 27
+    },
+    {
+      "name": "gold_proxy_rank14_recursion",
+      "kind": "old",
+      "old_id": 29
+    },
+    {
+      "name": "gold_proxy_rank19_manu_nicholas_jacob",
+      "kind": "old",
+      "old_id": 34
+    },
+    {
+      "name": "local_prt_v6",
+      "kind": "old",
+      "old_id": 35
+    },
+    {
+      "name": "boatlee_v20_multi_route",
+      "kind": "high",
+      "mode": 0,
+      "aliases": [
+        "boatlee_v20_latest",
+        "kunal_2026_v1_latest"
+      ]
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "kind": "high",
+      "mode": 1,
+      "aliases": [
+        "rayk_rank_agent_latest"
+      ]
+    },
+    {
+      "name": "tetsutani_adaptive_premium_queue",
+      "kind": "high",
+      "mode": 2
+    },
+    {
+      "name": "kaito_v27_midgame_reset",
+      "kind": "legacy",
+      "route_id": 8
+    },
+    {
+      "name": "flexonafft_v59_multi_route",
+      "kind": "legacy",
+      "route_id": 9
+    },
+    {
+      "name": "deniz_v111_8c4s_latest",
+      "kind": "deniz",
+      "route_id": 10
+    },
+    {
+      "name": "kaito_v36_latest",
+      "kind": "kaito",
+      "route_id": 11
+    },
+    {
+      "name": "x562_latest",
+      "kind": "x562"
+    },
+    {
+      "name": "tetsutani_adaptive_latest",
+      "kind": "high",
+      "mode": 3
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "flex_multi_route_latest",
+      "canonical": "public_g06_v25",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "boatlee_v20_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "kunal_2026_v1_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "rayk_rank_agent_latest",
+      "canonical": "rayk_k320_adaptive_rank1",
+      "reason": "source/action semantics identical"
+    }
+  ],
+  "excluded": {
+    "route_skeletons": 46,
+    "reason": "not complete strict-parity agents",
+    "experimental_bc_ppo": "excluded",
+    "unaccepted_proxy_agents": "excluded"
+  },
+  "seed_start": 570001,
+  "seed_count": 1,
+  "event_seeds": [
+    570001
+  ],
+  "event_bank": "/tmp/nt_arena_smoke_events.npz",
+  "event_bank_sha256": "f45f1e8207616c2ac836942f2244aad09b04aa41a3ac8e8ffb01ebd2d543959e",
+  "steps": 719,
+  "seat_protocol": "50 seeds as A-seat0/B-seat1 plus same 50 seeds swapped",
+  "games_per_pair": 2,
+  "pair_count": 1,
+  "pair_count_planned": 1,
+  "games_total": 2,
+  "transitions_total": 1438,
+  "pairs_per_chunk": 1,
+  "compile_seconds": 10.371245934000001,
+  "compile_records": [
+    {
+      "agent_id": 0,
+      "agent": "public_g01_boatlee_v16",
+      "seat": 0,
+      "seconds": 0.2028029100000026
+    },
+    {
+      "agent_id": 1,
+      "agent": "public_g02_rc5_c166",
+      "seat": 1,
+      "seconds": 3.8596495209999944
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "seconds": 2.6707698989999926
+    },
+    {
+      "agent_id": 1,
+      "agent": "public_g02_rc5_c166",
+      "seat": 0,
+      "seconds": 3.5123173480000105
+    },
+    {
+      "agent_id": 0,
+      "agent": "public_g01_boatlee_v16",
+      "seat": 1,
+      "seconds": 0.12570625600000085
+    }
+  ],
+  "arena_seconds": 18.65766453499998,
+  "wall_seconds": 33.50233314899998,
+  "transitions_per_second": 77.07288322728981,
+  "all_done": true,
+  "hand_cap_hits_total": 0,
+  "market_loop_cap_hits_total": 0,
+  "price_lut_oob_total": 0,
+  "integrity_pass": true,
+  "provenance": [
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/artifacts/jax_full37_mixed_exact_proxy_bank_v1.npz",
+      "sha256": "e02a56819d37c0a314b0fa77f9ebe558f1f8a416f283d496e6b87c0165b85af2"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/receipts/jax_full37_mixed_exact_proxy_bank_v1.json",
+      "sha256": "0724bc89e86459453e6b34d0024f8cc05fa34b3547aeaeee2f27c9453b0dac16"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+      "sha256": "f0515ca9e59b3d899b89aa12ad9aacc6acdd2d7b9be85ef58eb4d48f7b9b4c20"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4e2264239ed79f7fb7bc338b828e8ed0cad6c8445b1742186f98fc91b1429e4b"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/receipts/weak6_jax_stepwise_parity_v3.json",
+      "sha256": "08fd5fd692b216a2326d40e32470fd4371d0ca028b0f121484cf946d6fb71448"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/receipts/high_potential_exact5_historical_regression_after_latest8_v1.json",
+      "sha256": "ac173fcfa4d8c16a12ed6cd6d59a463825e49036d00ca427386fbc18df16043e"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/receipts/latest_public8_jax_acceptance_v1.json",
+      "sha256": "f60dc756cfc18019b580e595b1909697256ada2f6c164d3972bd8fd91f1bbe04"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260821_arena_fusion_fc2a/workspace/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin.py",
+      "sha256": "b231f1fdfb49da0dbdcb62b943a0473cc72a63e919600be4bb5fd3fd63cca0e9"
+    }
+  ],
+  "pair_results": [
+    {
+      "agent_a_id": 0,
+      "agent_a": "public_g01_boatlee_v16",
+      "agent_b_id": 1,
+      "agent_b": "public_g02_rc5_c166",
+      "games": 2,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 2,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 83275.0,
+      "b_mean_cash": 104366.0,
+      "a_mean_margin": -21091.0,
+      "a_median_margin": -21091.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "agent_id": 1,
+      "agent": "public_g02_rc5_c166",
+      "bt_elo": 276.5112545713929,
+      "games": 2,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "mean_cash": 104366.0,
+      "mean_margin": 21091.0,
+      "worst_opponent": "public_g01_boatlee_v16",
+      "worst_score_rate": 1.0
+    },
+    {
+      "rank": 2,
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 3,
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 4,
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 5,
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 6,
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 7,
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 8,
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 9,
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 10,
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 11,
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 12,
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 13,
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 14,
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 15,
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 16,
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 17,
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 18,
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 19,
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 20,
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 21,
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 22,
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 23,
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 24,
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 25,
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 26,
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 27,
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "bt_elo": -1.084416492439973e-40,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 28,
+      "agent_id": 0,
+      "agent": "public_g01_boatlee_v16",
+      "bt_elo": -276.5112545713929,
+      "games": 2,
+      "wins": 0,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.0,
+      "mean_cash": 83275.0,
+      "mean_margin": -21091.0,
+      "worst_opponent": "public_g02_rc5_c166",
+      "worst_score_rate": 0.0
+    }
+  ],
+  "truth_boundary": "Gold proxy entries are strict-parity local imitation agents, not original gold source. This fixed-event local JAX ranking is not a current Public leaderboard score."
+}

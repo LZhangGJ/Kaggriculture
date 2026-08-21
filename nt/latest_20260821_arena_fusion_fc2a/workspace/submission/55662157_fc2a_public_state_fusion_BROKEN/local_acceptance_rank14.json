@@ -1,0 +1,71 @@
+{
+  "schema": "expert-business-agent-cpu-package-acceptance-v1",
+  "generated_at_utc": "2026-08-21T06:13:56.858023+00:00",
+  "status": "PASS",
+  "cpu_online_decision": {
+    "calls": 2876,
+    "mean_ms": 0.4840784422918958,
+    "p50_ms": 0.38934999611228704,
+    "p95_ms": 0.8326750066771638,
+    "p99_ms": 1.2676000042119995,
+    "max_ms": 106.30599998694379,
+    "mean_import_ms": 211.0880249965703
+  },
+  "games": [
+    {
+      "seed": 545101,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 96782.0,
+      "opponent_reward": 77291.0
+    },
+    {
+      "seed": 545101,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 96782.0,
+      "opponent_reward": 77291.0
+    },
+    {
+      "seed": 545102,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 13313.0,
+      "opponent_reward": 118351.0
+    },
+    {
+      "seed": 545102,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 13313.0,
+      "opponent_reward": 118351.0
+    }
+  ],
+  "all_done": true,
+  "agent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\main.py",
+    "bytes": 387220,
+    "sha256": "5AC57DDDCC00A975C7DEA2AFA8C2A5B8DEF0011346B27326C16CF842EDC363FF"
+  },
+  "archive": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\submission.tar.gz",
+    "bytes": 312940,
+    "under_100_mib": true,
+    "sha256": "6DA3CB49FD03CBF050CD480CE909D01CD99A7CA7C1D7F36F18AEF4E181309578",
+    "members": [
+      "main.py"
+    ]
+  },
+  "opponent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\gold_adaptive_rule_v2\\agents\\gold_imitations_current_20260816_0955_v2\\rank14_recursion\\main.py",
+    "sha256": "380EEE54B6A9EEB256ACB076F3FE1AD6B5EC1D2B4A5323F6E7FC2138C77129D9"
+  }
+}

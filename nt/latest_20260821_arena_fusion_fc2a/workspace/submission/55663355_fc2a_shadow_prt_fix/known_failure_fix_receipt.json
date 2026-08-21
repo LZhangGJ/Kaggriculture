@@ -1,0 +1,153 @@
+{
+  "schema": "kaggriculture.fc2a.shadow-prt-fix.v1",
+  "generated_at_utc": "2026-08-21T07:06:16.347389+00:00",
+  "status": "PASS",
+  "bug_reproduced": true,
+  "fix_verified": true,
+  "semantic_gates": {
+    "known_bug_span": {
+      "start": 289,
+      "end": 719,
+      "length": 431
+    },
+    "fixed_min_cash": 70000,
+    "fixed_max_all_pass_streak": 47,
+    "fixed_min_nonpass_action_frames": 601
+  },
+  "games": [
+    {
+      "label": "buggy",
+      "seed": 545102,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "candidate_reward": 13313.0,
+      "opponent_reward": 118351.0,
+      "nonpass_action_frames": 261,
+      "longest_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "frame289_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": []
+      }
+    },
+    {
+      "label": "buggy",
+      "seed": 545102,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "candidate_reward": 13313.0,
+      "opponent_reward": 118351.0,
+      "nonpass_action_frames": 261,
+      "longest_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "frame289_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": []
+      }
+    },
+    {
+      "label": "fixed",
+      "seed": 545102,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "candidate_reward": 70382.0,
+      "opponent_reward": 68695.0,
+      "nonpass_action_frames": 692,
+      "longest_all_pass_span": {
+        "start": 87,
+        "end": 96,
+        "length": 10
+      },
+      "frame289_action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          6
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "label": "fixed",
+      "seed": 545102,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "candidate_reward": 70382.0,
+      "opponent_reward": 68695.0,
+      "nonpass_action_frames": 692,
+      "longest_all_pass_span": {
+        "start": 87,
+        "end": 96,
+        "length": 10
+      },
+      "frame289_action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          6
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    }
+  ]
+}

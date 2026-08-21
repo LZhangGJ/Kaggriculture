@@ -1,0 +1,13 @@
+{
+  "competition": "kaggriculture",
+  "ref": 55663355,
+  "submitted_at": "2026-08-21 07:25:03.787000",
+  "description": "NT FC2A Shadow-PRT state-sync hotfix",
+  "status_at_archive": "PENDING",
+  "public_score_at_archive": null,
+  "agent_version": "FC2A-rank14-plus-anti-mirror-cpu-v2-shadow-prt",
+  "main_sha256": "6B1B81924875F6C9207E58FE15EC72384DD46C39BC2480EFABAA148D3BC76F8C",
+  "archive_sha256": "E6EFCC12701B62CC88A9F32C79D331E9D8A5F7F39E3CECC2480A032FBEE5A864",
+  "fix": "Shadow-run stateful PRT from the opening so the step-288 handoff preserves route and daily transaction state.",
+  "known_failure_regression": "Seed 545102, both seats: 13313 and 431-frame all-PASS tail before; 70382 and 10-frame maximum all-PASS span after."
+}

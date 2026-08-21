@@ -1,0 +1,15 @@
+{
+  "competition": "kaggriculture",
+  "ref": 55662157,
+  "submitted_at": "2026-08-21 06:14:59.817000",
+  "description": "NT FC2A public-state fusion weakness probe",
+  "status_at_archive": "PENDING",
+  "public_score_at_archive": null,
+  "agent_version": "FC2A-rank14-plus-anti-mirror-cpu-v1",
+  "main_sha256": "5AC57DDDCC00A975C7DEA2AFA8C2A5B8DEF0011346B27326C16CF842EDC363FF",
+  "archive_sha256": "6DA3CB49FD03CBF050CD480CE909D01CD99A7CA7C1D7F36F18AEF4E181309578",
+  "purpose": "Public leaderboard weakness probe; not the final 90-percent no-shortfall candidate."
+  ,"current_public_status": "COMPLETE"
+  ,"current_public_score": 1779.3
+  ,"known_issue": "Catastrophic stateful PRT handoff stall: episodes 95784781 and 95787063 emit all-PASS frames 289-719. Do not reuse or promote this artifact."
+}

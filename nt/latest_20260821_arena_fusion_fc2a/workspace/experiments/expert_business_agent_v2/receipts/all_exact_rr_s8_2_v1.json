@@ -1,0 +1,2209 @@
+{
+  "schema": "kaggriculture.all_exact_jax_round_robin.v1",
+  "generated_at_utc": "2026-08-20T15:36:54.793060+00:00",
+  "status": "PARTIAL_PASS",
+  "official_package_version": "1.32.7",
+  "backend": "gpu",
+  "jax_version": "0.11.0",
+  "device": "cuda:0",
+  "execution": "batched_anchor_v1",
+  "roster_count": 28,
+  "roster": [
+    {
+      "name": "public_g01_boatlee_v16",
+      "kind": "old",
+      "old_id": 0
+    },
+    {
+      "name": "public_g02_rc5_c166",
+      "kind": "old",
+      "old_id": 1
+    },
+    {
+      "name": "public_g04_soil_rain",
+      "kind": "old",
+      "old_id": 3
+    },
+    {
+      "name": "public_g06_v25",
+      "kind": "old",
+      "old_id": 5,
+      "aliases": [
+        "flex_multi_route_latest"
+      ]
+    },
+    {
+      "name": "public_g07_c95",
+      "kind": "old",
+      "old_id": 6
+    },
+    {
+      "name": "public_g08_v14",
+      "kind": "old",
+      "old_id": 7
+    },
+    {
+      "name": "public_g09_c68_thunder",
+      "kind": "old",
+      "old_id": 8
+    },
+    {
+      "name": "public_g10_four_hire",
+      "kind": "old",
+      "old_id": 9
+    },
+    {
+      "name": "public_g11_v21",
+      "kind": "old",
+      "old_id": 10
+    },
+    {
+      "name": "public_g12_v13_r3",
+      "kind": "old",
+      "old_id": 11
+    },
+    {
+      "name": "public_g13_bruce_route1",
+      "kind": "old",
+      "old_id": 12
+    },
+    {
+      "name": "public_g14_v19_control",
+      "kind": "old",
+      "old_id": 13
+    },
+    {
+      "name": "public_g15_v18_closed_loop",
+      "kind": "old",
+      "old_id": 14
+    },
+    {
+      "name": "public_g16_tran_cashflow",
+      "kind": "old",
+      "old_id": 15
+    },
+    {
+      "name": "gold_proxy_rank07_junichiro_morita",
+      "kind": "old",
+      "old_id": 22
+    },
+    {
+      "name": "gold_proxy_rank12_ai_b2b67_saas",
+      "kind": "old",
+      "old_id": 27
+    },
+    {
+      "name": "gold_proxy_rank14_recursion",
+      "kind": "old",
+      "old_id": 29
+    },
+    {
+      "name": "gold_proxy_rank19_manu_nicholas_jacob",
+      "kind": "old",
+      "old_id": 34
+    },
+    {
+      "name": "local_prt_v6",
+      "kind": "old",
+      "old_id": 35
+    },
+    {
+      "name": "boatlee_v20_multi_route",
+      "kind": "high",
+      "mode": 0,
+      "aliases": [
+        "boatlee_v20_latest",
+        "kunal_2026_v1_latest"
+      ]
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "kind": "high",
+      "mode": 1,
+      "aliases": [
+        "rayk_rank_agent_latest"
+      ]
+    },
+    {
+      "name": "tetsutani_adaptive_premium_queue",
+      "kind": "high",
+      "mode": 2
+    },
+    {
+      "name": "kaito_v27_midgame_reset",
+      "kind": "legacy",
+      "route_id": 8
+    },
+    {
+      "name": "flexonafft_v59_multi_route",
+      "kind": "legacy",
+      "route_id": 9
+    },
+    {
+      "name": "deniz_v111_8c4s_latest",
+      "kind": "deniz",
+      "route_id": 10
+    },
+    {
+      "name": "kaito_v36_latest",
+      "kind": "kaito",
+      "route_id": 11
+    },
+    {
+      "name": "x562_latest",
+      "kind": "x562"
+    },
+    {
+      "name": "tetsutani_adaptive_latest",
+      "kind": "high",
+      "mode": 3
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "flex_multi_route_latest",
+      "canonical": "public_g06_v25",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "boatlee_v20_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "kunal_2026_v1_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "rayk_rank_agent_latest",
+      "canonical": "rayk_k320_adaptive_rank1",
+      "reason": "source/action semantics identical"
+    }
+  ],
+  "excluded": {
+    "route_skeletons": 46,
+    "reason": "not complete strict-parity agents",
+    "experimental_bc_ppo": "excluded",
+    "unaccepted_proxy_agents": "excluded"
+  },
+  "seed_start": 530001,
+  "seed_count": 50,
+  "event_seeds": [
+    530001,
+    530002,
+    530003,
+    530004,
+    530005,
+    530006,
+    530007,
+    530008,
+    530009,
+    530010,
+    530011,
+    530012,
+    530013,
+    530014,
+    530015,
+    530016,
+    530017,
+    530018,
+    530019,
+    530020,
+    530021,
+    530022,
+    530023,
+    530024,
+    530025,
+    530026,
+    530027,
+    530028,
+    530029,
+    530030,
+    530031,
+    530032,
+    530033,
+    530034,
+    530035,
+    530036,
+    530037,
+    530038,
+    530039,
+    530040,
+    530041,
+    530042,
+    530043,
+    530044,
+    530045,
+    530046,
+    530047,
+    530048,
+    530049,
+    530050
+  ],
+  "event_bank": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/all_exact_rr_events_s8_2_v1.npz",
+  "event_bank_sha256": "7b4c2664c74915e05b63293e91dea95d7722a1715f6f0f686e0e61594e37d5ff",
+  "steps": 719,
+  "seat_protocol": "50 seeds as A-seat0/B-seat1 plus same 50 seeds swapped",
+  "games_per_pair": 100,
+  "pair_count": 45,
+  "pair_count_planned": 45,
+  "games_total": 4500,
+  "transitions_total": 3235500,
+  "anchor_chunk": 8,
+  "anchor_min": 4,
+  "anchor_max": 5,
+  "compile_seconds": 530.9836100070008,
+  "compile_records": [
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 0,
+      "batch": 400,
+      "seconds": 5.442683962
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.1343975959999995
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.926480257999998
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.096644978
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 6.5097143870000025
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.280932452000002
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.2644463440000067
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.7153446720000005
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.13412400300001082
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 400,
+      "seconds": 3.9846284809999872
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 1,
+      "batch": 400,
+      "seconds": 4.2720442620000085
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.21007631599997
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.5672563269999955
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.742184189
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 6.5137330470000165
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 7.919245553000053
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.1643495499999972
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.7795042080000485
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.11900773200000003
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.9484349440000415
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.4693249289999812
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.5909809589999782
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.56647230599998
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.805341969999972
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.8566307099999904
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.750066120999975
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.9453068389999544
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.8209197459999586
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.4966303500000322
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.9171612699999514
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5105486369999426
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5696220249999442
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.7463534810000283
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.692285824999999
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.73994239000001
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 0,
+      "batch": 350,
+      "seconds": 6.076912773999993
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.81205637700009
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.8919286159999729
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.8720645390000072
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1107514999999921
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 7.516712812000037
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.9389640350000263
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.830924896000056
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 350,
+      "seconds": 4.930375888000071
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 1,
+      "batch": 350,
+      "seconds": 43.35482953600001
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.098356894999938
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.0699668239999482
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.1142475789999935
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.9983970559999307
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 6.609883002999823
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.9969459409999217
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.793612979000045
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 0,
+      "batch": 400,
+      "seconds": 3.9785792259999653
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.978009185000019
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.294226381999806
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 6.748038960000031
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.257441116000109
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1904442219999964
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.272545460000174
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.11198946100012108
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.9596592269999746
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 400,
+      "seconds": 3.674431175000109
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 1,
+      "batch": 400,
+      "seconds": 39.451071888000115
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.05932715400013
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.608448611999847
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 6.777104162000114
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.29589950400009
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.0720846549997987
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.448652995999964
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.15299027800006115
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.906649674000164
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.753154357000085
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.852465915000039
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.6770164289998775
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.6674560120000024
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.69986320299995
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.6164362069998788
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 6.471031897999865
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.455197106000014
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5251768269999957
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.55161427500002
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5277308669999456
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.6016061929999523
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.8109946639999634
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.178533113000185
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.9482745919999616
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.775175954000133
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 0,
+      "batch": 300,
+      "seconds": 51.65532869100025
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1958301360000405
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.2575455170003806
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1989679400003297
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 10.146273190999636
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.01053509500025
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.267290677999881
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 300,
+      "seconds": 3.3944088579996787
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 1,
+      "batch": 300,
+      "seconds": 36.72476532499968
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.2045090980000168
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.0798889699999563
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.2515482610001527
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 10.628840827000204
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.365877217000161
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.032927185000062
+    }
+  ],
+  "arena_seconds": 1880.8163953049989,
+  "wall_seconds": 2411.9753169540004,
+  "transitions_per_second": 1720.263608971423,
+  "all_done": true,
+  "hand_cap_hits_total": 0,
+  "market_loop_cap_hits_total": 0,
+  "price_lut_oob_total": 0,
+  "integrity_pass": true,
+  "device_bytes_in_use_before": 34738432,
+  "device_bytes_in_use_after": 41760256,
+  "device_peak_bytes_in_use": 77849344,
+  "device_allocator_limit_bytes": 19327352832,
+  "provenance": [
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/jax_full37_mixed_exact_proxy_bank_v1.npz",
+      "sha256": "e02a56819d37c0a314b0fa77f9ebe558f1f8a416f283d496e6b87c0165b85af2"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/jax_full37_mixed_exact_proxy_bank_v1.json",
+      "sha256": "0724bc89e86459453e6b34d0024f8cc05fa34b3547aeaeee2f27c9453b0dac16"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+      "sha256": "f0515ca9e59b3d899b89aa12ad9aacc6acdd2d7b9be85ef58eb4d48f7b9b4c20"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4e2264239ed79f7fb7bc338b828e8ed0cad6c8445b1742186f98fc91b1429e4b"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/weak6_jax_stepwise_parity_v3.json",
+      "sha256": "08fd5fd692b216a2326d40e32470fd4371d0ca028b0f121484cf946d6fb71448"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/high_potential_exact5_historical_regression_after_latest8_v1.json",
+      "sha256": "ac173fcfa4d8c16a12ed6cd6d59a463825e49036d00ca427386fbc18df16043e"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/latest_public8_jax_acceptance_v1.json",
+      "sha256": "f60dc756cfc18019b580e595b1909697256ada2f6c164d3972bd8fd91f1bbe04"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin.py",
+      "sha256": "b231f1fdfb49da0dbdcb62b943a0473cc72a63e919600be4bb5fd3fd63cca0e9"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin_batched.py",
+      "sha256": "5d4678f99ae4ea139366c3b15191bb24631842aaee351de39507dd2e3504ddb1"
+    }
+  ],
+  "pair_results": [
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 5,
+      "agent_b": "public_g08_v14",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 100522.47,
+      "b_mean_cash": 73187.21,
+      "a_mean_margin": 27335.26,
+      "a_median_margin": 19255.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 6,
+      "agent_b": "public_g09_c68_thunder",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 98949.25,
+      "b_mean_cash": 75829.49,
+      "a_mean_margin": 23119.76,
+      "a_median_margin": 20875.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 7,
+      "agent_b": "public_g10_four_hire",
+      "games": 100,
+      "a_wins": 98,
+      "ties": 0,
+      "a_losses": 2,
+      "a_score_rate": 0.98,
+      "a_mean_cash": 90925.78,
+      "b_mean_cash": 81026.78,
+      "a_mean_margin": 9899.0,
+      "a_median_margin": 11504.5,
+      "a_seat0_wins": 49,
+      "a_seat1_wins": 49
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 8,
+      "agent_b": "public_g11_v21",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 92237.14,
+      "b_mean_cash": 73012.12,
+      "a_mean_margin": 19225.02,
+      "a_median_margin": 18527.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 9,
+      "agent_b": "public_g12_v13_r3",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 92284.52,
+      "b_mean_cash": 73614.29,
+      "a_mean_margin": 18670.23,
+      "a_median_margin": 18302.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 10,
+      "agent_b": "public_g13_bruce_route1",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86244.44,
+      "b_mean_cash": 66167.14,
+      "a_mean_margin": 20077.3,
+      "a_median_margin": 21835.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 11,
+      "agent_b": "public_g14_v19_control",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86865.74,
+      "b_mean_cash": 66538.11,
+      "a_mean_margin": 20327.63,
+      "a_median_margin": 21564.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 12,
+      "agent_b": "public_g15_v18_closed_loop",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 87018.05,
+      "b_mean_cash": 66284.02,
+      "a_mean_margin": 20734.03,
+      "a_median_margin": 22149.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 13,
+      "agent_b": "public_g16_tran_cashflow",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 87336.44,
+      "b_mean_cash": 67022.23,
+      "a_mean_margin": 20314.21,
+      "a_median_margin": 21428.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 14,
+      "agent_b": "gold_proxy_rank07_junichiro_morita",
+      "games": 100,
+      "a_wins": 5,
+      "ties": 0,
+      "a_losses": 95,
+      "a_score_rate": 0.05,
+      "a_mean_cash": 88081.17,
+      "b_mean_cash": 95435.81,
+      "a_mean_margin": -7354.64,
+      "a_median_margin": -5668.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 5
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 15,
+      "agent_b": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 100,
+      "a_wins": 5,
+      "ties": 0,
+      "a_losses": 95,
+      "a_score_rate": 0.05,
+      "a_mean_cash": 86315.99,
+      "b_mean_cash": 95857.66,
+      "a_mean_margin": -9541.67,
+      "a_median_margin": -8200.0,
+      "a_seat0_wins": 2,
+      "a_seat1_wins": 3
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 16,
+      "agent_b": "gold_proxy_rank14_recursion",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 82710.05,
+      "b_mean_cash": 89081.06,
+      "a_mean_margin": -6371.01,
+      "a_median_margin": -5093.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 17,
+      "agent_b": "gold_proxy_rank19_manu_nicholas_jacob",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 86157.21,
+      "b_mean_cash": 94830.09,
+      "a_mean_margin": -8672.88,
+      "a_median_margin": -7501.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 3
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 18,
+      "agent_b": "local_prt_v6",
+      "games": 100,
+      "a_wins": 22,
+      "ties": 0,
+      "a_losses": 78,
+      "a_score_rate": 0.22,
+      "a_mean_cash": 88377.99,
+      "b_mean_cash": 94207.69,
+      "a_mean_margin": -5829.7,
+      "a_median_margin": -4670.0,
+      "a_seat0_wins": 12,
+      "a_seat1_wins": 10
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 19,
+      "agent_b": "boatlee_v20_multi_route",
+      "games": 100,
+      "a_wins": 40,
+      "ties": 0,
+      "a_losses": 60,
+      "a_score_rate": 0.4,
+      "a_mean_cash": 90067.52,
+      "b_mean_cash": 92048.07,
+      "a_mean_margin": -1980.55,
+      "a_median_margin": -2388.5,
+      "a_seat0_wins": 20,
+      "a_seat1_wins": 20
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 20,
+      "agent_b": "rayk_k320_adaptive_rank1",
+      "games": 100,
+      "a_wins": 10,
+      "ties": 0,
+      "a_losses": 90,
+      "a_score_rate": 0.1,
+      "a_mean_cash": 89260.58,
+      "b_mean_cash": 98650.56,
+      "a_mean_margin": -9389.98,
+      "a_median_margin": -8299.0,
+      "a_seat0_wins": 4,
+      "a_seat1_wins": 6
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 21,
+      "agent_b": "tetsutani_adaptive_premium_queue",
+      "games": 100,
+      "a_wins": 40,
+      "ties": 0,
+      "a_losses": 60,
+      "a_score_rate": 0.4,
+      "a_mean_cash": 90060.94,
+      "b_mean_cash": 92056.01,
+      "a_mean_margin": -1995.07,
+      "a_median_margin": -2388.5,
+      "a_seat0_wins": 20,
+      "a_seat1_wins": 20
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 22,
+      "agent_b": "kaito_v27_midgame_reset",
+      "games": 100,
+      "a_wins": 69,
+      "ties": 0,
+      "a_losses": 31,
+      "a_score_rate": 0.69,
+      "a_mean_cash": 89701.16,
+      "b_mean_cash": 87695.41,
+      "a_mean_margin": 2005.75,
+      "a_median_margin": 2455.0,
+      "a_seat0_wins": 35,
+      "a_seat1_wins": 34
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 23,
+      "agent_b": "flexonafft_v59_multi_route",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 83484.01,
+      "b_mean_cash": 88266.79,
+      "a_mean_margin": -4782.78,
+      "a_median_margin": -4665.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 24,
+      "agent_b": "deniz_v111_8c4s_latest",
+      "games": 100,
+      "a_wins": 19,
+      "ties": 0,
+      "a_losses": 81,
+      "a_score_rate": 0.19,
+      "a_mean_cash": 87511.81,
+      "b_mean_cash": 89829.17,
+      "a_mean_margin": -2317.36,
+      "a_median_margin": -2200.0,
+      "a_seat0_wins": 10,
+      "a_seat1_wins": 9
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 25,
+      "agent_b": "kaito_v36_latest",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 84016.91,
+      "b_mean_cash": 90645.83,
+      "a_mean_margin": -6628.92,
+      "a_median_margin": -6356.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 26,
+      "agent_b": "x562_latest",
+      "games": 100,
+      "a_wins": 7,
+      "ties": 0,
+      "a_losses": 93,
+      "a_score_rate": 0.07,
+      "a_mean_cash": 87886.64,
+      "b_mean_cash": 96423.94,
+      "a_mean_margin": -8537.3,
+      "a_median_margin": -8050.0,
+      "a_seat0_wins": 3,
+      "a_seat1_wins": 4
+    },
+    {
+      "agent_a_id": 4,
+      "agent_a": "public_g07_c95",
+      "agent_b_id": 27,
+      "agent_b": "tetsutani_adaptive_latest",
+      "games": 100,
+      "a_wins": 40,
+      "ties": 0,
+      "a_losses": 60,
+      "a_score_rate": 0.4,
+      "a_mean_cash": 90067.52,
+      "b_mean_cash": 92048.07,
+      "a_mean_margin": -1980.55,
+      "a_median_margin": -2388.5,
+      "a_seat0_wins": 20,
+      "a_seat1_wins": 20
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 6,
+      "agent_b": "public_g09_c68_thunder",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 76891.66,
+      "b_mean_cash": 85150.96,
+      "a_mean_margin": -8259.3,
+      "a_median_margin": -7531.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 7,
+      "agent_b": "public_g10_four_hire",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 74400.29,
+      "b_mean_cash": 84439.61,
+      "a_mean_margin": -10039.32,
+      "a_median_margin": -8934.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 8,
+      "agent_b": "public_g11_v21",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 92575.86,
+      "b_mean_cash": 82865.0,
+      "a_mean_margin": 9710.86,
+      "a_median_margin": 9702.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 9,
+      "agent_b": "public_g12_v13_r3",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 87222.4,
+      "b_mean_cash": 78613.77,
+      "a_mean_margin": 8608.63,
+      "a_median_margin": 8823.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 10,
+      "agent_b": "public_g13_bruce_route1",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89623.82,
+      "b_mean_cash": 80616.85,
+      "a_mean_margin": 9006.97,
+      "a_median_margin": 9146.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 11,
+      "agent_b": "public_g14_v19_control",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89048.83,
+      "b_mean_cash": 80009.44,
+      "a_mean_margin": 9039.39,
+      "a_median_margin": 8996.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 12,
+      "agent_b": "public_g15_v18_closed_loop",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89383.93,
+      "b_mean_cash": 79645.66,
+      "a_mean_margin": 9738.27,
+      "a_median_margin": 10082.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 13,
+      "agent_b": "public_g16_tran_cashflow",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 90174.27,
+      "b_mean_cash": 80394.92,
+      "a_mean_margin": 9779.35,
+      "a_median_margin": 9709.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 14,
+      "agent_b": "gold_proxy_rank07_junichiro_morita",
+      "games": 100,
+      "a_wins": 19,
+      "ties": 0,
+      "a_losses": 81,
+      "a_score_rate": 0.19,
+      "a_mean_cash": 89323.75,
+      "b_mean_cash": 95332.03,
+      "a_mean_margin": -6008.28,
+      "a_median_margin": -7783.0,
+      "a_seat0_wins": 10,
+      "a_seat1_wins": 9
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 15,
+      "agent_b": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 100,
+      "a_wins": 16,
+      "ties": 0,
+      "a_losses": 84,
+      "a_score_rate": 0.16,
+      "a_mean_cash": 88860.89,
+      "b_mean_cash": 97841.47,
+      "a_mean_margin": -8980.58,
+      "a_median_margin": -7046.0,
+      "a_seat0_wins": 7,
+      "a_seat1_wins": 9
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 16,
+      "agent_b": "gold_proxy_rank14_recursion",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 73918.13,
+      "b_mean_cash": 104349.56,
+      "a_mean_margin": -30431.43,
+      "a_median_margin": -28495.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 17,
+      "agent_b": "gold_proxy_rank19_manu_nicholas_jacob",
+      "games": 100,
+      "a_wins": 13,
+      "ties": 0,
+      "a_losses": 87,
+      "a_score_rate": 0.13,
+      "a_mean_cash": 89125.12,
+      "b_mean_cash": 94422.8,
+      "a_mean_margin": -5297.68,
+      "a_median_margin": -7154.0,
+      "a_seat0_wins": 7,
+      "a_seat1_wins": 6
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 18,
+      "agent_b": "local_prt_v6",
+      "games": 100,
+      "a_wins": 62,
+      "ties": 0,
+      "a_losses": 38,
+      "a_score_rate": 0.62,
+      "a_mean_cash": 105134.99,
+      "b_mean_cash": 82586.57,
+      "a_mean_margin": 22548.42,
+      "a_median_margin": 5733.5,
+      "a_seat0_wins": 31,
+      "a_seat1_wins": 31
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 19,
+      "agent_b": "boatlee_v20_multi_route",
+      "games": 100,
+      "a_wins": 4,
+      "ties": 0,
+      "a_losses": 96,
+      "a_score_rate": 0.04,
+      "a_mean_cash": 85900.04,
+      "b_mean_cash": 96740.31,
+      "a_mean_margin": -10840.27,
+      "a_median_margin": -9561.0,
+      "a_seat0_wins": 2,
+      "a_seat1_wins": 2
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 20,
+      "agent_b": "rayk_k320_adaptive_rank1",
+      "games": 100,
+      "a_wins": 2,
+      "ties": 0,
+      "a_losses": 98,
+      "a_score_rate": 0.02,
+      "a_mean_cash": 85445.38,
+      "b_mean_cash": 96528.29,
+      "a_mean_margin": -11082.91,
+      "a_median_margin": -9377.0,
+      "a_seat0_wins": 1,
+      "a_seat1_wins": 1
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 21,
+      "agent_b": "tetsutani_adaptive_premium_queue",
+      "games": 100,
+      "a_wins": 4,
+      "ties": 0,
+      "a_losses": 96,
+      "a_score_rate": 0.04,
+      "a_mean_cash": 85900.04,
+      "b_mean_cash": 96740.31,
+      "a_mean_margin": -10840.27,
+      "a_median_margin": -9561.0,
+      "a_seat0_wins": 2,
+      "a_seat1_wins": 2
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 22,
+      "agent_b": "kaito_v27_midgame_reset",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 77868.91,
+      "b_mean_cash": 90409.34,
+      "a_mean_margin": -12540.43,
+      "a_median_margin": -12378.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 23,
+      "agent_b": "flexonafft_v59_multi_route",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 70636.55,
+      "b_mean_cash": 110106.62,
+      "a_mean_margin": -39470.07,
+      "a_median_margin": -41567.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 24,
+      "agent_b": "deniz_v111_8c4s_latest",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 79131.79,
+      "b_mean_cash": 95917.97,
+      "a_mean_margin": -16786.18,
+      "a_median_margin": -16500.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 25,
+      "agent_b": "kaito_v36_latest",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 78395.13,
+      "b_mean_cash": 105824.96,
+      "a_mean_margin": -27429.83,
+      "a_median_margin": -24059.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 26,
+      "agent_b": "x562_latest",
+      "games": 100,
+      "a_wins": 11,
+      "ties": 0,
+      "a_losses": 89,
+      "a_score_rate": 0.11,
+      "a_mean_cash": 87198.51,
+      "b_mean_cash": 96662.25,
+      "a_mean_margin": -9463.74,
+      "a_median_margin": -9157.0,
+      "a_seat0_wins": 6,
+      "a_seat1_wins": 5
+    },
+    {
+      "agent_a_id": 5,
+      "agent_a": "public_g08_v14",
+      "agent_b_id": 27,
+      "agent_b": "tetsutani_adaptive_latest",
+      "games": 100,
+      "a_wins": 4,
+      "ties": 0,
+      "a_losses": 96,
+      "a_score_rate": 0.04,
+      "a_mean_cash": 85900.04,
+      "b_mean_cash": 96740.31,
+      "a_mean_margin": -10840.27,
+      "a_median_margin": -9561.0,
+      "a_seat0_wins": 2,
+      "a_seat1_wins": 2
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "bt_elo": 1171.459653030191,
+      "games": 200,
+      "wins": 200,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "mean_cash": 99186.70499999999,
+      "mean_margin": 22126.425,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 1.0
+    },
+    {
+      "rank": 2,
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "bt_elo": 1171.459653030191,
+      "games": 200,
+      "wins": 200,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "mean_cash": 98235.395,
+      "mean_margin": 17029.375,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 1.0
+    },
+    {
+      "rank": 3,
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "bt_elo": 1171.459653030191,
+      "games": 200,
+      "wins": 200,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "mean_cash": 96715.31,
+      "mean_margin": 18401.22,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 1.0
+    },
+    {
+      "rank": 4,
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "bt_elo": 531.8990107899626,
+      "games": 200,
+      "wins": 188,
+      "ties": 0,
+      "losses": 12,
+      "score_rate": 0.94,
+      "mean_cash": 97589.42499999999,
+      "mean_margin": 10236.445,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.9
+    },
+    {
+      "rank": 5,
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "bt_elo": 476.67058256471825,
+      "games": 200,
+      "wins": 184,
+      "ties": 0,
+      "losses": 16,
+      "score_rate": 0.92,
+      "mean_cash": 94626.445,
+      "mean_margin": 6985.28,
+      "worst_opponent": "public_g08_v14",
+      "worst_score_rate": 0.87
+    },
+    {
+      "rank": 6,
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "bt_elo": 453.39051622620866,
+      "games": 200,
+      "wins": 182,
+      "ties": 0,
+      "losses": 18,
+      "score_rate": 0.91,
+      "mean_cash": 96543.095,
+      "mean_margin": 9000.52,
+      "worst_opponent": "public_g08_v14",
+      "worst_score_rate": 0.89
+    },
+    {
+      "rank": 7,
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "bt_elo": 442.5529296429962,
+      "games": 200,
+      "wins": 181,
+      "ties": 0,
+      "losses": 19,
+      "score_rate": 0.905,
+      "mean_cash": 92873.57,
+      "mean_margin": 9551.77,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.81
+    },
+    {
+      "rank": 8,
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "bt_elo": 422.21488223415906,
+      "games": 200,
+      "wins": 179,
+      "ties": 0,
+      "losses": 21,
+      "score_rate": 0.895,
+      "mean_cash": 96849.565,
+      "mean_margin": 9261.125,
+      "worst_opponent": "public_g08_v14",
+      "worst_score_rate": 0.84
+    },
+    {
+      "rank": 9,
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "bt_elo": 394.4554613001915,
+      "games": 200,
+      "wins": 176,
+      "ties": 0,
+      "losses": 24,
+      "score_rate": 0.88,
+      "mean_cash": 95383.92,
+      "mean_margin": 6681.46,
+      "worst_opponent": "public_g08_v14",
+      "worst_score_rate": 0.81
+    },
+    {
+      "rank": 10,
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "bt_elo": 255.43550512279228,
+      "games": 200,
+      "wins": 156,
+      "ties": 0,
+      "losses": 44,
+      "score_rate": 0.78,
+      "mean_cash": 94398.16,
+      "mean_margin": 6417.67,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.6
+    },
+    {
+      "rank": 11,
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "bt_elo": 255.43550512279228,
+      "games": 200,
+      "wins": 156,
+      "ties": 0,
+      "losses": 44,
+      "score_rate": 0.78,
+      "mean_cash": 94394.19,
+      "mean_margin": 6410.41,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.6
+    },
+    {
+      "rank": 12,
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "bt_elo": 255.43550512279228,
+      "games": 200,
+      "wins": 156,
+      "ties": 0,
+      "losses": 44,
+      "score_rate": 0.78,
+      "mean_cash": 94394.19,
+      "mean_margin": 6410.41,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.6
+    },
+    {
+      "rank": 13,
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "bt_elo": 160.68025899948358,
+      "games": 2300,
+      "wins": 1158,
+      "ties": 0,
+      "losses": 1142,
+      "score_rate": 0.5034782608695653,
+      "mean_cash": 88960.1447826087,
+      "mean_margin": 4622.86,
+      "worst_opponent": "gold_proxy_rank14_recursion",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 14,
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "bt_elo": 127.4710750453359,
+      "games": 200,
+      "wins": 131,
+      "ties": 0,
+      "losses": 69,
+      "score_rate": 0.655,
+      "mean_cash": 89052.375,
+      "mean_margin": 5267.34,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.31000000000000005
+    },
+    {
+      "rank": 15,
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "bt_elo": 59.06182890955056,
+      "games": 200,
+      "wins": 116,
+      "ties": 0,
+      "losses": 84,
+      "score_rate": 0.58,
+      "mean_cash": 88397.13,
+      "mean_margin": -8359.359999999999,
+      "worst_opponent": "public_g08_v14",
+      "worst_score_rate": 0.38
+    },
+    {
+      "rank": 16,
+      "agent_id": 0,
+      "agent": "public_g01_boatlee_v16",
+      "bt_elo": -6.226800211499132e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 17,
+      "agent_id": 1,
+      "agent": "public_g02_rc5_c166",
+      "bt_elo": -6.226800211499132e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 18,
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "bt_elo": -6.226800211499132e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 19,
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "bt_elo": -6.226800211499132e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 20,
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "bt_elo": -2.8444019700827115,
+      "games": 200,
+      "wins": 102,
+      "ties": 0,
+      "losses": 98,
+      "score_rate": 0.51,
+      "mean_cash": 82733.195,
+      "mean_margin": 70.15999999999985,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.020000000000000018
+    },
+    {
+      "rank": 21,
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "bt_elo": -11.637125701229373,
+      "games": 200,
+      "wins": 100,
+      "ties": 0,
+      "losses": 100,
+      "score_rate": 0.5,
+      "mean_cash": 80490.225,
+      "mean_margin": -7430.23,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 22,
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "bt_elo": -183.98399603432705,
+      "games": 2300,
+      "wins": 735,
+      "ties": 0,
+      "losses": 1565,
+      "score_rate": 0.31956521739130433,
+      "mean_cash": 84575.98000000001,
+      "mean_margin": -7270.170869565216,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 23,
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "bt_elo": -1191.7694160776523,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 76114.03,
+      "mean_margin": -13639.43,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 24,
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "bt_elo": -1191.7694160776523,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 77938.56,
+      "mean_margin": -14467.94,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 25,
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "bt_elo": -1191.7694160776523,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 73391.995,
+      "mean_margin": -14542.134999999998,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 26,
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "bt_elo": -1191.7694160776523,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 73708.575,
+      "mean_margin": -15046.779999999999,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 27,
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "bt_elo": -1191.7694160776525,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 72964.84,
+      "mean_margin": -15236.15,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 28,
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "bt_elo": -1191.7694160776525,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 73273.775,
+      "mean_margin": -14683.51,
+      "worst_opponent": "public_g07_c95",
+      "worst_score_rate": 0.0
+    }
+  ],
+  "truth_boundary": "Gold proxy entries are strict-parity local imitation agents, not original gold source. This fixed-event local JAX ranking is not a current Public leaderboard score."
+}

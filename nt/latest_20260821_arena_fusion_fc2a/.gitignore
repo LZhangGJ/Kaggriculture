@@ -1,0 +1,13 @@
+workspace/.jax_cache/
+**/__pycache__/
+*.pyc
+
+# The repository root ignores generic artifacts/ directories.  These three
+# frozen runtime/model directories are part of this reproducible handoff and
+# must be versioned explicitly.
+!workspace/experiments/expert_business_agent_v2/artifacts/
+!workspace/experiments/expert_business_agent_v2/artifacts/**
+!workspace/experiments/strategic_v5/artifacts/
+!workspace/experiments/strategic_v5/artifacts/**
+!workspace/experiments/fusion_champion_v1/artifacts/
+!workspace/experiments/fusion_champion_v1/artifacts/**

@@ -1,0 +1,187 @@
+{
+  "schema": "kaggriculture.fusion_champion.old_suffix_discovery.v1",
+  "generated_at_utc": "2026-08-21T02:34:48.768356+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "official_package_version": "1.32.7",
+  "opponent": "gold_proxy_rank14_recursion",
+  "seed_start": 540301,
+  "seed_count": 4,
+  "switch_step": 168,
+  "seat_protocol": "same seeds with seats swapped",
+  "rows": [
+    {
+      "suffix_route": -1,
+      "name": "stable_x562",
+      "source_route": "baseline",
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.75,
+      "mean_candidate_cash": 106102.25,
+      "mean_opponent_cash": 101663.5,
+      "mean_margin": 4438.75,
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "margin": -313
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "margin": 9413
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 0,
+          "margin": 2869
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 0,
+          "margin": 6199
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "margin": -1218
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "margin": 8597
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 1,
+          "margin": 3764
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 1,
+          "margin": 6199
+        }
+      ]
+    },
+    {
+      "suffix_route": 0,
+      "name": "candidate",
+      "source_route": "10C-4S-75L",
+      "games": 8,
+      "wins": 0,
+      "ties": 0,
+      "losses": 8,
+      "score_rate": 0.0,
+      "mean_candidate_cash": 56595.375,
+      "mean_opponent_cash": 134258.625,
+      "mean_margin": -77663.25,
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "margin": -28584
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "margin": -115928
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 0,
+          "margin": -140626
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 0,
+          "margin": -31262
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "margin": -29195
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "margin": -115332
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 1,
+          "margin": -129531
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 1,
+          "margin": -30848
+        }
+      ]
+    },
+    {
+      "suffix_route": 63,
+      "name": "gold_proxy_rank14_recursion",
+      "source_route": "8C-4S-75L",
+      "games": 8,
+      "wins": 0,
+      "ties": 0,
+      "losses": 8,
+      "score_rate": 0.0,
+      "mean_candidate_cash": 51948.625,
+      "mean_opponent_cash": 141775.25,
+      "mean_margin": -89826.625,
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "margin": -96958
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "margin": -67034
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 0,
+          "margin": -102547
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 0,
+          "margin": -101345
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "margin": -96958
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "margin": -66949
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 1,
+          "margin": -102501
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 1,
+          "margin": -84321
+        }
+      ]
+    }
+  ],
+  "oracle": {
+    "wins": 6,
+    "ties": 0,
+    "losses": 2,
+    "score_rate": 0.75,
+    "mean_margin": 4438.75
+  },
+  "elapsed_seconds": 137.145928493
+}

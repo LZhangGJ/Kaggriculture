@@ -1,0 +1,2294 @@
+{
+  "schema": "kaggriculture.fusion_champion.k320-route-margin-lgbm.v1",
+  "generated_at_utc": "2026-08-21T10:36:38.630375+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "decision_step": 120,
+  "future_leakage": false,
+  "group_cv": "5 folds grouped by episode seed; both seats and all arms kept together",
+  "train_samples": 2048,
+  "train_unique_seeds": 1024,
+  "feature_count": 209,
+  "baselines": {
+    "train": {
+      "baseline": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conservative_rescue_oracle": {
+        "games": 2048,
+        "wins": 1899,
+        "ties": 0,
+        "losses": 149,
+        "score_rate": 0.92724609375,
+        "mean_margin": 5861.966796875,
+        "switch_rate": 0.083984375,
+        "rescued_losses": 172,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          1876,
+          5,
+          10,
+          56,
+          5,
+          96
+        ]
+      },
+      "unrestricted_margin_oracle": {
+        "games": 2048,
+        "wins": 1899,
+        "ties": 0,
+        "losses": 149,
+        "score_rate": 0.92724609375,
+        "mean_margin": 7687.6103515625,
+        "switch_rate": 0.5048828125,
+        "rescued_losses": 172,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          1014,
+          97,
+          204,
+          399,
+          34,
+          300
+        ]
+      },
+      "rescue_label_histogram": [
+        1876,
+        5,
+        10,
+        56,
+        5,
+        96
+      ]
+    },
+    "holdout_a": {
+      "baseline": {
+        "games": 512,
+        "wins": 434,
+        "ties": 0,
+        "losses": 78,
+        "score_rate": 0.84765625,
+        "mean_margin": 4936.80859375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          512,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conservative_rescue_oracle": {
+        "games": 512,
+        "wins": 490,
+        "ties": 0,
+        "losses": 22,
+        "score_rate": 0.95703125,
+        "mean_margin": 5856.943359375,
+        "switch_rate": 0.109375,
+        "rescued_losses": 56,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          456,
+          0,
+          4,
+          19,
+          4,
+          29
+        ]
+      },
+      "unrestricted_margin_oracle": {
+        "games": 512,
+        "wins": 490,
+        "ties": 0,
+        "losses": 22,
+        "score_rate": 0.95703125,
+        "mean_margin": 7846.689453125,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 56,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          244,
+          21,
+          53,
+          106,
+          10,
+          78
+        ]
+      },
+      "rescue_label_histogram": [
+        456,
+        0,
+        4,
+        19,
+        4,
+        29
+      ]
+    },
+    "holdout_b": {
+      "baseline": {
+        "games": 512,
+        "wins": 435,
+        "ties": 0,
+        "losses": 77,
+        "score_rate": 0.849609375,
+        "mean_margin": 5133.375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          512,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conservative_rescue_oracle": {
+        "games": 512,
+        "wins": 489,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.955078125,
+        "mean_margin": 6053.517578125,
+        "switch_rate": 0.10546875,
+        "rescued_losses": 54,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          458,
+          0,
+          10,
+          20,
+          0,
+          24
+        ]
+      },
+      "unrestricted_margin_oracle": {
+        "games": 512,
+        "wins": 489,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.955078125,
+        "mean_margin": 7623.451171875,
+        "switch_rate": 0.48046875,
+        "rescued_losses": 54,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          266,
+          28,
+          46,
+          94,
+          9,
+          69
+        ]
+      },
+      "rescue_label_histogram": [
+        458,
+        0,
+        10,
+        20,
+        0,
+        24
+      ]
+    }
+  },
+  "selected_configuration": {
+    "num_leaves": 7,
+    "min_child_samples": 8,
+    "n_estimators": 60,
+    "changed_outcome_weight": 1.0,
+    "threshold": 1263.8988037109375,
+    "oof": {
+      "games": 2048,
+      "wins": 1773,
+      "ties": 0,
+      "losses": 275,
+      "score_rate": 0.86572265625,
+      "mean_margin": 5141.5712890625,
+      "switch_rate": 0.1171875,
+      "rescued_losses": 73,
+      "harmed_wins": 27,
+      "choice_histogram": [
+        1808,
+        0,
+        0,
+        0,
+        0,
+        240
+      ]
+    }
+  },
+  "train_fit": {
+    "games": 2048,
+    "wins": 1773,
+    "ties": 0,
+    "losses": 275,
+    "score_rate": 0.86572265625,
+    "mean_margin": 5141.5712890625,
+    "switch_rate": 0.1171875,
+    "rescued_losses": 73,
+    "harmed_wins": 27,
+    "choice_histogram": [
+      1808,
+      0,
+      0,
+      0,
+      0,
+      240
+    ]
+  },
+  "holdout_a": {
+    "games": 512,
+    "wins": 445,
+    "ties": 0,
+    "losses": 67,
+    "score_rate": 0.869140625,
+    "mean_margin": 4881.80859375,
+    "switch_rate": 0.1328125,
+    "rescued_losses": 23,
+    "harmed_wins": 12,
+    "choice_histogram": [
+      444,
+      0,
+      0,
+      0,
+      0,
+      68
+    ]
+  },
+  "holdout_b": {
+    "games": 512,
+    "wins": 440,
+    "ties": 0,
+    "losses": 72,
+    "score_rate": 0.859375,
+    "mean_margin": 5062.453125,
+    "switch_rate": 0.07421875,
+    "rescued_losses": 13,
+    "harmed_wins": 8,
+    "choice_histogram": [
+      474,
+      0,
+      0,
+      0,
+      0,
+      38
+    ]
+  },
+  "feature_importance_top30": [
+    {
+      "feature": "market_inventory_7",
+      "gain": 99.0
+    },
+    {
+      "feature": "arm_4",
+      "gain": 46.0
+    },
+    {
+      "feature": "arm_5",
+      "gain": 42.0
+    },
+    {
+      "feature": "market_inventory_3",
+      "gain": 33.0
+    },
+    {
+      "feature": "market_inventory_6",
+      "gain": 30.0
+    },
+    {
+      "feature": "arm_0",
+      "gain": 25.0
+    },
+    {
+      "feature": "arm_1",
+      "gain": 19.0
+    },
+    {
+      "feature": "market_price_7",
+      "gain": 14.0
+    },
+    {
+      "feature": "arm_2",
+      "gain": 14.0
+    },
+    {
+      "feature": "market_price_3",
+      "gain": 10.0
+    },
+    {
+      "feature": "arm_3",
+      "gain": 9.0
+    },
+    {
+      "feature": "shop_3_count",
+      "gain": 4.0
+    },
+    {
+      "feature": "shop_5_count",
+      "gain": 3.0
+    },
+    {
+      "feature": "market_price_6",
+      "gain": 2.0
+    },
+    {
+      "feature": "market_price_ratio_3",
+      "gain": 2.0
+    },
+    {
+      "feature": "market_price_ratio_7",
+      "gain": 2.0
+    },
+    {
+      "feature": "shop_first_3",
+      "gain": 2.0
+    },
+    {
+      "feature": "market_inventory_1",
+      "gain": 1.0
+    },
+    {
+      "feature": "market_price_ratio_6",
+      "gain": 1.0
+    },
+    {
+      "feature": "money_own",
+      "gain": 1.0
+    },
+    {
+      "feature": "shop_first_5",
+      "gain": 1.0
+    },
+    {
+      "feature": "animal_0_count_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "animal_0_yield_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "animal_1_count_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "animal_1_yield_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "animal_2_count_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "animal_2_yield_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "candidate_seat",
+      "gain": 0.0
+    },
+    {
+      "feature": "crop_0_count_gap",
+      "gain": 0.0
+    },
+    {
+      "feature": "crop_0_yield_gap",
+      "gain": 0.0
+    }
+  ],
+  "all_configurations": [
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 3,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 5,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 1263.8988037109375,
+      "oof": {
+        "games": 2048,
+        "wins": 1773,
+        "ties": 0,
+        "losses": 275,
+        "score_rate": 0.86572265625,
+        "mean_margin": 5141.5712890625,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 73,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          0,
+          240
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 520.2176513671875,
+      "oof": {
+        "games": 2048,
+        "wins": 1772,
+        "ties": 0,
+        "losses": 276,
+        "score_rate": 0.865234375,
+        "mean_margin": 5140.55126953125,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 72,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          1,
+          239
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 1263.8988037109375,
+      "oof": {
+        "games": 2048,
+        "wins": 1773,
+        "ties": 0,
+        "losses": 275,
+        "score_rate": 0.86572265625,
+        "mean_margin": 5141.5712890625,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 73,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          0,
+          240
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 520.2176513671875,
+      "oof": {
+        "games": 2048,
+        "wins": 1772,
+        "ties": 0,
+        "losses": 276,
+        "score_rate": 0.865234375,
+        "mean_margin": 5140.55126953125,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 72,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          1,
+          239
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 1263.8988037109375,
+      "oof": {
+        "games": 2048,
+        "wins": 1773,
+        "ties": 0,
+        "losses": 275,
+        "score_rate": 0.86572265625,
+        "mean_margin": 5141.5712890625,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 73,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          0,
+          240
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 514.8004150390625,
+      "oof": {
+        "games": 2048,
+        "wins": 1772,
+        "ties": 0,
+        "losses": 276,
+        "score_rate": 0.865234375,
+        "mean_margin": 5140.55126953125,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 72,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          1,
+          239
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 7,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 676.8923950195312,
+      "oof": {
+        "games": 2048,
+        "wins": 1745,
+        "ties": 0,
+        "losses": 303,
+        "score_rate": 0.85205078125,
+        "mean_margin": 5156.9296875,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 35,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          106,
+          134
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 459.190185546875,
+      "oof": {
+        "games": 2048,
+        "wins": 1744,
+        "ties": 0,
+        "losses": 304,
+        "score_rate": 0.8515625,
+        "mean_margin": 5147.40478515625,
+        "switch_rate": 0.11865234375,
+        "rescued_losses": 35,
+        "harmed_wins": 18,
+        "choice_histogram": [
+          1805,
+          0,
+          4,
+          0,
+          105,
+          134
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 8,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 99.41294860839844,
+      "oof": {
+        "games": 2048,
+        "wins": 1731,
+        "ties": 0,
+        "losses": 317,
+        "score_rate": 0.84521484375,
+        "mean_margin": 5224.41455078125,
+        "switch_rate": 0.02734375,
+        "rescued_losses": 4,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          1992,
+          0,
+          0,
+          0,
+          52,
+          4
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 758.2188720703125,
+      "oof": {
+        "games": 2048,
+        "wins": 1745,
+        "ties": 0,
+        "losses": 303,
+        "score_rate": 0.85205078125,
+        "mean_margin": 5156.9296875,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 35,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          106,
+          134
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 432.8583068847656,
+      "oof": {
+        "games": 2048,
+        "wins": 1745,
+        "ties": 0,
+        "losses": 303,
+        "score_rate": 0.85205078125,
+        "mean_margin": 5156.84326171875,
+        "switch_rate": 0.11767578125,
+        "rescued_losses": 35,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          1807,
+          0,
+          5,
+          0,
+          103,
+          133
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 16,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 346.90521240234375,
+      "oof": {
+        "games": 2048,
+        "wins": 1731,
+        "ties": 0,
+        "losses": 317,
+        "score_rate": 0.84521484375,
+        "mean_margin": 5224.41455078125,
+        "switch_rate": 0.001953125,
+        "rescued_losses": 4,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2044,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 1.0,
+      "threshold": 758.1901245117188,
+      "oof": {
+        "games": 2048,
+        "wins": 1745,
+        "ties": 0,
+        "losses": 303,
+        "score_rate": 0.85205078125,
+        "mean_margin": 5156.9296875,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 35,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          1808,
+          0,
+          0,
+          0,
+          106,
+          134
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 60,
+      "changed_outcome_weight": 8.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 1.0,
+      "threshold": 458.1399841308594,
+      "oof": {
+        "games": 2048,
+        "wins": 1745,
+        "ties": 0,
+        "losses": 303,
+        "score_rate": 0.85205078125,
+        "mean_margin": 5158.17626953125,
+        "switch_rate": 0.115234375,
+        "rescued_losses": 35,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          1812,
+          0,
+          0,
+          0,
+          101,
+          135
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 4.0,
+      "threshold": 10000.0,
+      "oof": {
+        "games": 2048,
+        "wins": 1727,
+        "ties": 0,
+        "losses": 321,
+        "score_rate": 0.84326171875,
+        "mean_margin": 5222.20263671875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2048,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "num_leaves": 11,
+      "min_child_samples": 32,
+      "n_estimators": 120,
+      "changed_outcome_weight": 8.0,
+      "threshold": 547.06982421875,
+      "oof": {
+        "games": 2048,
+        "wins": 1729,
+        "ties": 0,
+        "losses": 319,
+        "score_rate": 0.84423828125,
+        "mean_margin": 5223.2861328125,
+        "switch_rate": 0.0009765625,
+        "rescued_losses": 2,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          2046,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      }
+    }
+  ]
+}

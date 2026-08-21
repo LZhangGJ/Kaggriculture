@@ -1,0 +1,71 @@
+{
+  "schema": "expert-business-agent-cpu-package-acceptance-v1",
+  "generated_at_utc": "2026-08-21T06:14:18.414674+00:00",
+  "status": "PASS",
+  "cpu_online_decision": {
+    "calls": 2876,
+    "mean_ms": 0.2921465577366464,
+    "p50_ms": 0.2605499976198189,
+    "p95_ms": 0.6034749967511743,
+    "p99_ms": 0.7474750018445775,
+    "max_ms": 4.09889999718871,
+    "mean_import_ms": 245.83197500032838
+  },
+  "games": [
+    {
+      "seed": 545201,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 44276.0,
+      "opponent_reward": 42690.0
+    },
+    {
+      "seed": 545201,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 44276.0,
+      "opponent_reward": 42690.0
+    },
+    {
+      "seed": 545202,
+      "seat": 0,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 82679.0,
+      "opponent_reward": 77263.0
+    },
+    {
+      "seed": 545202,
+      "seat": 1,
+      "frames": 720,
+      "candidate_status": "DONE",
+      "opponent_status": "DONE",
+      "candidate_reward": 77701.0,
+      "opponent_reward": 82247.0
+    }
+  ],
+  "all_done": true,
+  "agent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\main.py",
+    "bytes": 387220,
+    "sha256": "5AC57DDDCC00A975C7DEA2AFA8C2A5B8DEF0011346B27326C16CF842EDC363FF"
+  },
+  "archive": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc2a_fusion_20260821\\submission.tar.gz",
+    "bytes": 312940,
+    "under_100_mib": true,
+    "sha256": "6DA3CB49FD03CBF050CD480CE909D01CD99A7CA7C1D7F36F18AEF4E181309578",
+    "members": [
+      "main.py"
+    ]
+  },
+  "opponent": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55655402_rayk_k320_adaptive_rank1\\main.py",
+    "sha256": "6C709F6D3CE6CF221A9495DE7E716FCD1B660E3BBC8EE5679B63233D0265A812"
+  }
+}

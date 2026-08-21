@@ -1,0 +1,1332 @@
+{
+  "schema": "kaggriculture.fusion_champion.old_suffix_discovery.v1",
+  "generated_at_utc": "2026-08-21T02:44:45.186300+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "official_package_version": "1.32.7",
+  "opponent": "gold_proxy_rank14_recursion",
+  "seed_start": 540401,
+  "seed_count": 64,
+  "switch_step": 168,
+  "seat_protocol": "same seeds with seats swapped",
+  "rows": [
+    {
+      "suffix_route": -1,
+      "name": "stable_x562",
+      "source_route": "baseline",
+      "games": 128,
+      "wins": 110,
+      "ties": 0,
+      "losses": 18,
+      "score_rate": 0.859375,
+      "mean_candidate_cash": 87972.9375,
+      "mean_opponent_cash": 83220.9140625,
+      "mean_margin": 4752.0234375,
+      "per_game": [
+        {
+          "seed": 540401,
+          "candidate_seat": 0,
+          "margin": 6281
+        },
+        {
+          "seed": 540402,
+          "candidate_seat": 0,
+          "margin": 6651
+        },
+        {
+          "seed": 540403,
+          "candidate_seat": 0,
+          "margin": 3773
+        },
+        {
+          "seed": 540404,
+          "candidate_seat": 0,
+          "margin": -585
+        },
+        {
+          "seed": 540405,
+          "candidate_seat": 0,
+          "margin": -726
+        },
+        {
+          "seed": 540406,
+          "candidate_seat": 0,
+          "margin": 2432
+        },
+        {
+          "seed": 540407,
+          "candidate_seat": 0,
+          "margin": 8395
+        },
+        {
+          "seed": 540408,
+          "candidate_seat": 0,
+          "margin": 8281
+        },
+        {
+          "seed": 540409,
+          "candidate_seat": 0,
+          "margin": 2660
+        },
+        {
+          "seed": 540410,
+          "candidate_seat": 0,
+          "margin": 8648
+        },
+        {
+          "seed": 540411,
+          "candidate_seat": 0,
+          "margin": 4152
+        },
+        {
+          "seed": 540412,
+          "candidate_seat": 0,
+          "margin": 7539
+        },
+        {
+          "seed": 540413,
+          "candidate_seat": 0,
+          "margin": 10444
+        },
+        {
+          "seed": 540414,
+          "candidate_seat": 0,
+          "margin": 2064
+        },
+        {
+          "seed": 540415,
+          "candidate_seat": 0,
+          "margin": 2997
+        },
+        {
+          "seed": 540416,
+          "candidate_seat": 0,
+          "margin": 5410
+        },
+        {
+          "seed": 540417,
+          "candidate_seat": 0,
+          "margin": 11904
+        },
+        {
+          "seed": 540418,
+          "candidate_seat": 0,
+          "margin": 12580
+        },
+        {
+          "seed": 540419,
+          "candidate_seat": 0,
+          "margin": -1556
+        },
+        {
+          "seed": 540420,
+          "candidate_seat": 0,
+          "margin": 7983
+        },
+        {
+          "seed": 540421,
+          "candidate_seat": 0,
+          "margin": 4648
+        },
+        {
+          "seed": 540422,
+          "candidate_seat": 0,
+          "margin": -67
+        },
+        {
+          "seed": 540423,
+          "candidate_seat": 0,
+          "margin": 3617
+        },
+        {
+          "seed": 540424,
+          "candidate_seat": 0,
+          "margin": 4201
+        },
+        {
+          "seed": 540425,
+          "candidate_seat": 0,
+          "margin": 571
+        },
+        {
+          "seed": 540426,
+          "candidate_seat": 0,
+          "margin": 2574
+        },
+        {
+          "seed": 540427,
+          "candidate_seat": 0,
+          "margin": -2446
+        },
+        {
+          "seed": 540428,
+          "candidate_seat": 0,
+          "margin": 3095
+        },
+        {
+          "seed": 540429,
+          "candidate_seat": 0,
+          "margin": 7166
+        },
+        {
+          "seed": 540430,
+          "candidate_seat": 0,
+          "margin": 1146
+        },
+        {
+          "seed": 540431,
+          "candidate_seat": 0,
+          "margin": 10306
+        },
+        {
+          "seed": 540432,
+          "candidate_seat": 0,
+          "margin": 344
+        },
+        {
+          "seed": 540433,
+          "candidate_seat": 0,
+          "margin": 1537
+        },
+        {
+          "seed": 540434,
+          "candidate_seat": 0,
+          "margin": 8673
+        },
+        {
+          "seed": 540435,
+          "candidate_seat": 0,
+          "margin": 2673
+        },
+        {
+          "seed": 540436,
+          "candidate_seat": 0,
+          "margin": 2971
+        },
+        {
+          "seed": 540437,
+          "candidate_seat": 0,
+          "margin": 8109
+        },
+        {
+          "seed": 540438,
+          "candidate_seat": 0,
+          "margin": 22025
+        },
+        {
+          "seed": 540439,
+          "candidate_seat": 0,
+          "margin": 12693
+        },
+        {
+          "seed": 540440,
+          "candidate_seat": 0,
+          "margin": 1792
+        },
+        {
+          "seed": 540441,
+          "candidate_seat": 0,
+          "margin": -1342
+        },
+        {
+          "seed": 540442,
+          "candidate_seat": 0,
+          "margin": 5042
+        },
+        {
+          "seed": 540443,
+          "candidate_seat": 0,
+          "margin": 6901
+        },
+        {
+          "seed": 540444,
+          "candidate_seat": 0,
+          "margin": 10714
+        },
+        {
+          "seed": 540445,
+          "candidate_seat": 0,
+          "margin": 14116
+        },
+        {
+          "seed": 540446,
+          "candidate_seat": 0,
+          "margin": 2681
+        },
+        {
+          "seed": 540447,
+          "candidate_seat": 0,
+          "margin": 6722
+        },
+        {
+          "seed": 540448,
+          "candidate_seat": 0,
+          "margin": -441
+        },
+        {
+          "seed": 540449,
+          "candidate_seat": 0,
+          "margin": 2701
+        },
+        {
+          "seed": 540450,
+          "candidate_seat": 0,
+          "margin": -397
+        },
+        {
+          "seed": 540451,
+          "candidate_seat": 0,
+          "margin": 567
+        },
+        {
+          "seed": 540452,
+          "candidate_seat": 0,
+          "margin": 11122
+        },
+        {
+          "seed": 540453,
+          "candidate_seat": 0,
+          "margin": 9744
+        },
+        {
+          "seed": 540454,
+          "candidate_seat": 0,
+          "margin": 2191
+        },
+        {
+          "seed": 540455,
+          "candidate_seat": 0,
+          "margin": 1355
+        },
+        {
+          "seed": 540456,
+          "candidate_seat": 0,
+          "margin": 5914
+        },
+        {
+          "seed": 540457,
+          "candidate_seat": 0,
+          "margin": 4085
+        },
+        {
+          "seed": 540458,
+          "candidate_seat": 0,
+          "margin": 7366
+        },
+        {
+          "seed": 540459,
+          "candidate_seat": 0,
+          "margin": -1983
+        },
+        {
+          "seed": 540460,
+          "candidate_seat": 0,
+          "margin": 2601
+        },
+        {
+          "seed": 540461,
+          "candidate_seat": 0,
+          "margin": -749
+        },
+        {
+          "seed": 540462,
+          "candidate_seat": 0,
+          "margin": 319
+        },
+        {
+          "seed": 540463,
+          "candidate_seat": 0,
+          "margin": 5825
+        },
+        {
+          "seed": 540464,
+          "candidate_seat": 0,
+          "margin": -572
+        },
+        {
+          "seed": 540401,
+          "candidate_seat": 1,
+          "margin": 6281
+        },
+        {
+          "seed": 540402,
+          "candidate_seat": 1,
+          "margin": 16520
+        },
+        {
+          "seed": 540403,
+          "candidate_seat": 1,
+          "margin": 4832
+        },
+        {
+          "seed": 540404,
+          "candidate_seat": 1,
+          "margin": -585
+        },
+        {
+          "seed": 540405,
+          "candidate_seat": 1,
+          "margin": 350
+        },
+        {
+          "seed": 540406,
+          "candidate_seat": 1,
+          "margin": 1561
+        },
+        {
+          "seed": 540407,
+          "candidate_seat": 1,
+          "margin": 8591
+        },
+        {
+          "seed": 540408,
+          "candidate_seat": 1,
+          "margin": 8324
+        },
+        {
+          "seed": 540409,
+          "candidate_seat": 1,
+          "margin": 2660
+        },
+        {
+          "seed": 540410,
+          "candidate_seat": 1,
+          "margin": 8648
+        },
+        {
+          "seed": 540411,
+          "candidate_seat": 1,
+          "margin": 5731
+        },
+        {
+          "seed": 540412,
+          "candidate_seat": 1,
+          "margin": 7539
+        },
+        {
+          "seed": 540413,
+          "candidate_seat": 1,
+          "margin": 10444
+        },
+        {
+          "seed": 540414,
+          "candidate_seat": 1,
+          "margin": 2064
+        },
+        {
+          "seed": 540415,
+          "candidate_seat": 1,
+          "margin": 2997
+        },
+        {
+          "seed": 540416,
+          "candidate_seat": 1,
+          "margin": 5410
+        },
+        {
+          "seed": 540417,
+          "candidate_seat": 1,
+          "margin": 11904
+        },
+        {
+          "seed": 540418,
+          "candidate_seat": 1,
+          "margin": 12580
+        },
+        {
+          "seed": 540419,
+          "candidate_seat": 1,
+          "margin": -1556
+        },
+        {
+          "seed": 540420,
+          "candidate_seat": 1,
+          "margin": 8486
+        },
+        {
+          "seed": 540421,
+          "candidate_seat": 1,
+          "margin": 4648
+        },
+        {
+          "seed": 540422,
+          "candidate_seat": 1,
+          "margin": -93
+        },
+        {
+          "seed": 540423,
+          "candidate_seat": 1,
+          "margin": 3661
+        },
+        {
+          "seed": 540424,
+          "candidate_seat": 1,
+          "margin": 4623
+        },
+        {
+          "seed": 540425,
+          "candidate_seat": 1,
+          "margin": 571
+        },
+        {
+          "seed": 540426,
+          "candidate_seat": 1,
+          "margin": 1980
+        },
+        {
+          "seed": 540427,
+          "candidate_seat": 1,
+          "margin": 2211
+        },
+        {
+          "seed": 540428,
+          "candidate_seat": 1,
+          "margin": 3095
+        },
+        {
+          "seed": 540429,
+          "candidate_seat": 1,
+          "margin": 7166
+        },
+        {
+          "seed": 540430,
+          "candidate_seat": 1,
+          "margin": 1146
+        },
+        {
+          "seed": 540431,
+          "candidate_seat": 1,
+          "margin": 8576
+        },
+        {
+          "seed": 540432,
+          "candidate_seat": 1,
+          "margin": 344
+        },
+        {
+          "seed": 540433,
+          "candidate_seat": 1,
+          "margin": 1537
+        },
+        {
+          "seed": 540434,
+          "candidate_seat": 1,
+          "margin": 8673
+        },
+        {
+          "seed": 540435,
+          "candidate_seat": 1,
+          "margin": 3098
+        },
+        {
+          "seed": 540436,
+          "candidate_seat": 1,
+          "margin": 2971
+        },
+        {
+          "seed": 540437,
+          "candidate_seat": 1,
+          "margin": 8109
+        },
+        {
+          "seed": 540438,
+          "candidate_seat": 1,
+          "margin": 22025
+        },
+        {
+          "seed": 540439,
+          "candidate_seat": 1,
+          "margin": 12721
+        },
+        {
+          "seed": 540440,
+          "candidate_seat": 1,
+          "margin": 1792
+        },
+        {
+          "seed": 540441,
+          "candidate_seat": 1,
+          "margin": -1342
+        },
+        {
+          "seed": 540442,
+          "candidate_seat": 1,
+          "margin": 5042
+        },
+        {
+          "seed": 540443,
+          "candidate_seat": 1,
+          "margin": 6901
+        },
+        {
+          "seed": 540444,
+          "candidate_seat": 1,
+          "margin": 10949
+        },
+        {
+          "seed": 540445,
+          "candidate_seat": 1,
+          "margin": 4152
+        },
+        {
+          "seed": 540446,
+          "candidate_seat": 1,
+          "margin": 2681
+        },
+        {
+          "seed": 540447,
+          "candidate_seat": 1,
+          "margin": 6722
+        },
+        {
+          "seed": 540448,
+          "candidate_seat": 1,
+          "margin": -441
+        },
+        {
+          "seed": 540449,
+          "candidate_seat": 1,
+          "margin": 2701
+        },
+        {
+          "seed": 540450,
+          "candidate_seat": 1,
+          "margin": -397
+        },
+        {
+          "seed": 540451,
+          "candidate_seat": 1,
+          "margin": 567
+        },
+        {
+          "seed": 540452,
+          "candidate_seat": 1,
+          "margin": 11122
+        },
+        {
+          "seed": 540453,
+          "candidate_seat": 1,
+          "margin": 9332
+        },
+        {
+          "seed": 540454,
+          "candidate_seat": 1,
+          "margin": 2191
+        },
+        {
+          "seed": 540455,
+          "candidate_seat": 1,
+          "margin": 1355
+        },
+        {
+          "seed": 540456,
+          "candidate_seat": 1,
+          "margin": 4343
+        },
+        {
+          "seed": 540457,
+          "candidate_seat": 1,
+          "margin": 4085
+        },
+        {
+          "seed": 540458,
+          "candidate_seat": 1,
+          "margin": 6841
+        },
+        {
+          "seed": 540459,
+          "candidate_seat": 1,
+          "margin": 1848
+        },
+        {
+          "seed": 540460,
+          "candidate_seat": 1,
+          "margin": 2642
+        },
+        {
+          "seed": 540461,
+          "candidate_seat": 1,
+          "margin": 321
+        },
+        {
+          "seed": 540462,
+          "candidate_seat": 1,
+          "margin": 319
+        },
+        {
+          "seed": 540463,
+          "candidate_seat": 1,
+          "margin": 5825
+        },
+        {
+          "seed": 540464,
+          "candidate_seat": 1,
+          "margin": -572
+        }
+      ]
+    },
+    {
+      "suffix_route": 29,
+      "name": "gold_proxy_rank02_ueddy",
+      "source_route": "10C-4S-75L",
+      "games": 128,
+      "wins": 75,
+      "ties": 0,
+      "losses": 53,
+      "score_rate": 0.5859375,
+      "mean_candidate_cash": 83607.1328125,
+      "mean_opponent_cash": 82741.953125,
+      "mean_margin": 865.1796875,
+      "per_game": [
+        {
+          "seed": 540401,
+          "candidate_seat": 0,
+          "margin": -11550
+        },
+        {
+          "seed": 540402,
+          "candidate_seat": 0,
+          "margin": -4602
+        },
+        {
+          "seed": 540403,
+          "candidate_seat": 0,
+          "margin": 2644
+        },
+        {
+          "seed": 540404,
+          "candidate_seat": 0,
+          "margin": -3800
+        },
+        {
+          "seed": 540405,
+          "candidate_seat": 0,
+          "margin": 341
+        },
+        {
+          "seed": 540406,
+          "candidate_seat": 0,
+          "margin": 1658
+        },
+        {
+          "seed": 540407,
+          "candidate_seat": 0,
+          "margin": 9184
+        },
+        {
+          "seed": 540408,
+          "candidate_seat": 0,
+          "margin": 4908
+        },
+        {
+          "seed": 540409,
+          "candidate_seat": 0,
+          "margin": 1540
+        },
+        {
+          "seed": 540410,
+          "candidate_seat": 0,
+          "margin": 8783
+        },
+        {
+          "seed": 540411,
+          "candidate_seat": 0,
+          "margin": -10256
+        },
+        {
+          "seed": 540412,
+          "candidate_seat": 0,
+          "margin": 8639
+        },
+        {
+          "seed": 540413,
+          "candidate_seat": 0,
+          "margin": -139
+        },
+        {
+          "seed": 540414,
+          "candidate_seat": 0,
+          "margin": 2437
+        },
+        {
+          "seed": 540415,
+          "candidate_seat": 0,
+          "margin": 3149
+        },
+        {
+          "seed": 540416,
+          "candidate_seat": 0,
+          "margin": 5415
+        },
+        {
+          "seed": 540417,
+          "candidate_seat": 0,
+          "margin": 10624
+        },
+        {
+          "seed": 540418,
+          "candidate_seat": 0,
+          "margin": 12152
+        },
+        {
+          "seed": 540419,
+          "candidate_seat": 0,
+          "margin": -673
+        },
+        {
+          "seed": 540420,
+          "candidate_seat": 0,
+          "margin": -11641
+        },
+        {
+          "seed": 540421,
+          "candidate_seat": 0,
+          "margin": 4878
+        },
+        {
+          "seed": 540422,
+          "candidate_seat": 0,
+          "margin": 9
+        },
+        {
+          "seed": 540423,
+          "candidate_seat": 0,
+          "margin": 2918
+        },
+        {
+          "seed": 540424,
+          "candidate_seat": 0,
+          "margin": 2423
+        },
+        {
+          "seed": 540425,
+          "candidate_seat": 0,
+          "margin": -466
+        },
+        {
+          "seed": 540426,
+          "candidate_seat": 0,
+          "margin": -4682
+        },
+        {
+          "seed": 540427,
+          "candidate_seat": 0,
+          "margin": -2663
+        },
+        {
+          "seed": 540428,
+          "candidate_seat": 0,
+          "margin": 2106
+        },
+        {
+          "seed": 540429,
+          "candidate_seat": 0,
+          "margin": 7110
+        },
+        {
+          "seed": 540430,
+          "candidate_seat": 0,
+          "margin": 39
+        },
+        {
+          "seed": 540431,
+          "candidate_seat": 0,
+          "margin": 10028
+        },
+        {
+          "seed": 540432,
+          "candidate_seat": 0,
+          "margin": -850
+        },
+        {
+          "seed": 540433,
+          "candidate_seat": 0,
+          "margin": -10160
+        },
+        {
+          "seed": 540434,
+          "candidate_seat": 0,
+          "margin": 9510
+        },
+        {
+          "seed": 540435,
+          "candidate_seat": 0,
+          "margin": -62
+        },
+        {
+          "seed": 540436,
+          "candidate_seat": 0,
+          "margin": 3574
+        },
+        {
+          "seed": 540437,
+          "candidate_seat": 0,
+          "margin": -9861
+        },
+        {
+          "seed": 540438,
+          "candidate_seat": 0,
+          "margin": -2372
+        },
+        {
+          "seed": 540439,
+          "candidate_seat": 0,
+          "margin": 12020
+        },
+        {
+          "seed": 540440,
+          "candidate_seat": 0,
+          "margin": -579
+        },
+        {
+          "seed": 540441,
+          "candidate_seat": 0,
+          "margin": -1226
+        },
+        {
+          "seed": 540442,
+          "candidate_seat": 0,
+          "margin": 5515
+        },
+        {
+          "seed": 540443,
+          "candidate_seat": 0,
+          "margin": -10272
+        },
+        {
+          "seed": 540444,
+          "candidate_seat": 0,
+          "margin": 7659
+        },
+        {
+          "seed": 540445,
+          "candidate_seat": 0,
+          "margin": -9467
+        },
+        {
+          "seed": 540446,
+          "candidate_seat": 0,
+          "margin": -12740
+        },
+        {
+          "seed": 540447,
+          "candidate_seat": 0,
+          "margin": 7026
+        },
+        {
+          "seed": 540448,
+          "candidate_seat": 0,
+          "margin": 90
+        },
+        {
+          "seed": 540449,
+          "candidate_seat": 0,
+          "margin": 3542
+        },
+        {
+          "seed": 540450,
+          "candidate_seat": 0,
+          "margin": -1520
+        },
+        {
+          "seed": 540451,
+          "candidate_seat": 0,
+          "margin": -808
+        },
+        {
+          "seed": 540452,
+          "candidate_seat": 0,
+          "margin": 6684
+        },
+        {
+          "seed": 540453,
+          "candidate_seat": 0,
+          "margin": 7469
+        },
+        {
+          "seed": 540454,
+          "candidate_seat": 0,
+          "margin": 2596
+        },
+        {
+          "seed": 540455,
+          "candidate_seat": 0,
+          "margin": 1219
+        },
+        {
+          "seed": 540456,
+          "candidate_seat": 0,
+          "margin": -9698
+        },
+        {
+          "seed": 540457,
+          "candidate_seat": 0,
+          "margin": 4221
+        },
+        {
+          "seed": 540458,
+          "candidate_seat": 0,
+          "margin": -2056
+        },
+        {
+          "seed": 540459,
+          "candidate_seat": 0,
+          "margin": -1145
+        },
+        {
+          "seed": 540460,
+          "candidate_seat": 0,
+          "margin": 3469
+        },
+        {
+          "seed": 540461,
+          "candidate_seat": 0,
+          "margin": 122
+        },
+        {
+          "seed": 540462,
+          "candidate_seat": 0,
+          "margin": 1775
+        },
+        {
+          "seed": 540463,
+          "candidate_seat": 0,
+          "margin": 5103
+        },
+        {
+          "seed": 540464,
+          "candidate_seat": 0,
+          "margin": -718
+        },
+        {
+          "seed": 540401,
+          "candidate_seat": 1,
+          "margin": -11550
+        },
+        {
+          "seed": 540402,
+          "candidate_seat": 1,
+          "margin": -4573
+        },
+        {
+          "seed": 540403,
+          "candidate_seat": 1,
+          "margin": 3703
+        },
+        {
+          "seed": 540404,
+          "candidate_seat": 1,
+          "margin": -3800
+        },
+        {
+          "seed": 540405,
+          "candidate_seat": 1,
+          "margin": 1309
+        },
+        {
+          "seed": 540406,
+          "candidate_seat": 1,
+          "margin": 832
+        },
+        {
+          "seed": 540407,
+          "candidate_seat": 1,
+          "margin": 9462
+        },
+        {
+          "seed": 540408,
+          "candidate_seat": 1,
+          "margin": 6934
+        },
+        {
+          "seed": 540409,
+          "candidate_seat": 1,
+          "margin": 1540
+        },
+        {
+          "seed": 540410,
+          "candidate_seat": 1,
+          "margin": 8783
+        },
+        {
+          "seed": 540411,
+          "candidate_seat": 1,
+          "margin": -10095
+        },
+        {
+          "seed": 540412,
+          "candidate_seat": 1,
+          "margin": 8639
+        },
+        {
+          "seed": 540413,
+          "candidate_seat": 1,
+          "margin": -139
+        },
+        {
+          "seed": 540414,
+          "candidate_seat": 1,
+          "margin": 2437
+        },
+        {
+          "seed": 540415,
+          "candidate_seat": 1,
+          "margin": 3149
+        },
+        {
+          "seed": 540416,
+          "candidate_seat": 1,
+          "margin": 5415
+        },
+        {
+          "seed": 540417,
+          "candidate_seat": 1,
+          "margin": 10624
+        },
+        {
+          "seed": 540418,
+          "candidate_seat": 1,
+          "margin": 12152
+        },
+        {
+          "seed": 540419,
+          "candidate_seat": 1,
+          "margin": -673
+        },
+        {
+          "seed": 540420,
+          "candidate_seat": 1,
+          "margin": -11188
+        },
+        {
+          "seed": 540421,
+          "candidate_seat": 1,
+          "margin": 4878
+        },
+        {
+          "seed": 540422,
+          "candidate_seat": 1,
+          "margin": -9
+        },
+        {
+          "seed": 540423,
+          "candidate_seat": 1,
+          "margin": 2958
+        },
+        {
+          "seed": 540424,
+          "candidate_seat": 1,
+          "margin": 2491
+        },
+        {
+          "seed": 540425,
+          "candidate_seat": 1,
+          "margin": -466
+        },
+        {
+          "seed": 540426,
+          "candidate_seat": 1,
+          "margin": -10251
+        },
+        {
+          "seed": 540427,
+          "candidate_seat": 1,
+          "margin": -635
+        },
+        {
+          "seed": 540428,
+          "candidate_seat": 1,
+          "margin": 2106
+        },
+        {
+          "seed": 540429,
+          "candidate_seat": 1,
+          "margin": 7110
+        },
+        {
+          "seed": 540430,
+          "candidate_seat": 1,
+          "margin": 39
+        },
+        {
+          "seed": 540431,
+          "candidate_seat": 1,
+          "margin": 7882
+        },
+        {
+          "seed": 540432,
+          "candidate_seat": 1,
+          "margin": -850
+        },
+        {
+          "seed": 540433,
+          "candidate_seat": 1,
+          "margin": -10160
+        },
+        {
+          "seed": 540434,
+          "candidate_seat": 1,
+          "margin": 9510
+        },
+        {
+          "seed": 540435,
+          "candidate_seat": 1,
+          "margin": -672
+        },
+        {
+          "seed": 540436,
+          "candidate_seat": 1,
+          "margin": 3574
+        },
+        {
+          "seed": 540437,
+          "candidate_seat": 1,
+          "margin": -9861
+        },
+        {
+          "seed": 540438,
+          "candidate_seat": 1,
+          "margin": -2372
+        },
+        {
+          "seed": 540439,
+          "candidate_seat": 1,
+          "margin": 12053
+        },
+        {
+          "seed": 540440,
+          "candidate_seat": 1,
+          "margin": -579
+        },
+        {
+          "seed": 540441,
+          "candidate_seat": 1,
+          "margin": -1226
+        },
+        {
+          "seed": 540442,
+          "candidate_seat": 1,
+          "margin": 5515
+        },
+        {
+          "seed": 540443,
+          "candidate_seat": 1,
+          "margin": -10272
+        },
+        {
+          "seed": 540444,
+          "candidate_seat": 1,
+          "margin": 7879
+        },
+        {
+          "seed": 540445,
+          "candidate_seat": 1,
+          "margin": -13888
+        },
+        {
+          "seed": 540446,
+          "candidate_seat": 1,
+          "margin": -12740
+        },
+        {
+          "seed": 540447,
+          "candidate_seat": 1,
+          "margin": 7026
+        },
+        {
+          "seed": 540448,
+          "candidate_seat": 1,
+          "margin": 90
+        },
+        {
+          "seed": 540449,
+          "candidate_seat": 1,
+          "margin": 3542
+        },
+        {
+          "seed": 540450,
+          "candidate_seat": 1,
+          "margin": -1520
+        },
+        {
+          "seed": 540451,
+          "candidate_seat": 1,
+          "margin": -808
+        },
+        {
+          "seed": 540452,
+          "candidate_seat": 1,
+          "margin": 6684
+        },
+        {
+          "seed": 540453,
+          "candidate_seat": 1,
+          "margin": 7070
+        },
+        {
+          "seed": 540454,
+          "candidate_seat": 1,
+          "margin": 2596
+        },
+        {
+          "seed": 540455,
+          "candidate_seat": 1,
+          "margin": 1219
+        },
+        {
+          "seed": 540456,
+          "candidate_seat": 1,
+          "margin": -11764
+        },
+        {
+          "seed": 540457,
+          "candidate_seat": 1,
+          "margin": 4221
+        },
+        {
+          "seed": 540458,
+          "candidate_seat": 1,
+          "margin": -853
+        },
+        {
+          "seed": 540459,
+          "candidate_seat": 1,
+          "margin": -1129
+        },
+        {
+          "seed": 540460,
+          "candidate_seat": 1,
+          "margin": 3510
+        },
+        {
+          "seed": 540461,
+          "candidate_seat": 1,
+          "margin": 1151
+        },
+        {
+          "seed": 540462,
+          "candidate_seat": 1,
+          "margin": 1775
+        },
+        {
+          "seed": 540463,
+          "candidate_seat": 1,
+          "margin": 5103
+        },
+        {
+          "seed": 540464,
+          "candidate_seat": 1,
+          "margin": -718
+        }
+      ]
+    }
+  ],
+  "oracle": {
+    "wins": 115,
+    "ties": 0,
+    "losses": 13,
+    "score_rate": 0.8984375,
+    "mean_margin": 4949.53125
+  },
+  "elapsed_seconds": 45.60717678200001
+}

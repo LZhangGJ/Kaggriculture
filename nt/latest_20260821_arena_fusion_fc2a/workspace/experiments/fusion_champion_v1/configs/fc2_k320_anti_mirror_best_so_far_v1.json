@@ -1,0 +1,61 @@
+{
+  "schema": "kaggriculture.fusion_champion.rule_config.v1",
+  "name": "fc2_k320_anti_mirror_best_so_far_v1",
+  "status": "BEST_SO_FAR_PENDING_FINAL_GATE",
+  "official_package_version": "1.32.7",
+  "base_policy": "rayk_k320_adaptive_rank1",
+  "capability": "near-mirror cumulative premium-sale preemption",
+  "parameters": {
+    "source_preempt": false,
+    "horizon": 4,
+    "distance_limit": 6,
+    "quantity_cap": 32,
+    "minimum_future_quantity": 4,
+    "minimum_price_percent": 0,
+    "start_step": 120,
+    "product_mask": 200,
+    "products": [
+      "STRAWBERRY",
+      "MILK",
+      "WOOL"
+    ]
+  },
+  "evidence": [
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2e_k320_preempt_caps_seed544101_n64x2_v1.json",
+      "games": 128,
+      "wins": 114,
+      "ties": 0,
+      "losses": 14,
+      "score_rate": 0.890625
+    },
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2f_k320_preempt_high_caps_seed544301_n32x2_v1.json",
+      "games": 64,
+      "wins": 61,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.953125
+    },
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2g_k320_preempt_cap32_seed544401_n64x2_holdout_v1.json",
+      "games": 128,
+      "wins": 113,
+      "ties": 0,
+      "losses": 15,
+      "score_rate": 0.8828125
+    }
+  ],
+  "aggregate": {
+    "games": 320,
+    "wins": 288,
+    "ties": 0,
+    "losses": 32,
+    "score_rate": 0.9
+  },
+  "gate_note": "Aggregate is exactly 90%, but two independent 128-game blocks are below 90%; keep as best-so-far, not promoted. Local fixed-threshold variants have plateaued and heterogeneous-opponent regression remains pending.",
+  "source_hashes": {
+    "experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py": "DF7BF62650B02213AE10F1409B11D04735AB660CD195EA17D41BA4990504AD2D",
+    "experiments/fusion_champion_v1/tools/run_k320_preempt_parameter_screen.py": "FBA6BB7656567C7BE5BFBCB353B64E9250BBC4F5C05ACAD464E8D5E7AEE1B527"
+  }
+}

@@ -7,6 +7,10 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260821_arena_fusion_fc2a/` — reproducible 28-Agent strict-JAX
+  Arena snapshot, the complete 37,800-game pairwise result, current
+  rule-fusion development evidence, and the broken/fixed FC2A CPU submissions.
+  Start with `latest_20260821_arena_fusion_fc2a/README.md`.
 - `latest_20260819/` — latest official-1.32.7 development snapshot: the M3.9
   three-layer planner, current JAX rules core, five high-potential public
   agents reproduced as exact GPU opponents, acceptance receipts, and the

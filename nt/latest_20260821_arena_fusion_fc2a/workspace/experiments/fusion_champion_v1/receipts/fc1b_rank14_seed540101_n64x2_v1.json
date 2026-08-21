@@ -1,0 +1,38 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc1a_panel.v1",
+  "generated_at_utc": "2026-08-20T23:34:58.272497+00:00",
+  "status": "PASS",
+  "candidate": "fc1b_x562_sheep_pressure",
+  "change": "K320 normally; sticky visible opening sheep pressure selects complete X562 capability",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 540101,
+  "seed_count": 64,
+  "games_per_opponent": 128,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 158.55813164300002,
+  "rows": [
+    {
+      "opponent": "gold_proxy_rank14_recursion",
+      "games": 128,
+      "wins": 99,
+      "ties": 0,
+      "losses": 29,
+      "score_rate": 0.7734375,
+      "mean_candidate_cash": 90881.125,
+      "mean_opponent_cash": 87338.4375,
+      "mean_margin": 3542.6875,
+      "median_margin": 2725.0,
+      "candidate_seat0_wins": 49,
+      "candidate_seat1_wins": 50
+    }
+  ],
+  "min_score_rate": 0.7734375,
+  "mean_score_rate": 0.7734375,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "693EF59D657DB99E5BF3E316F8EC495EA23A7AA612546F98DD31404AF6D9D9DE"
+  }
+}

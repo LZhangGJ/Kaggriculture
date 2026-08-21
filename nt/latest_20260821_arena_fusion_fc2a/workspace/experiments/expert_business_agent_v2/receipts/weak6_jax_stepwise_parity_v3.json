@@ -1,0 +1,116 @@
+{
+  "schema": "kaggriculture_weak6_jax_stepwise_parity_v1",
+  "generated_at_utc": "2026-08-17T02:08:57.584183+00:00",
+  "status": "AUDITED",
+  "backend": "gpu",
+  "jax": "0.11.0",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    159001,
+    159002,
+    159003,
+    159004
+  ],
+  "seat_swapped": true,
+  "opponent_count": 6,
+  "strict_exact_count": 6,
+  "strict_exact_names": [
+    "public_g02_rc5_c166",
+    "public_g04_soil_rain",
+    "gold_proxy_rank07_junichiro_morita",
+    "gold_proxy_rank12_ai_b2b67_saas",
+    "gold_proxy_rank14_recursion",
+    "gold_proxy_rank19_manu_nicholas_jacob"
+  ],
+  "per_opponent": {
+    "public_g02_rc5_c166": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    },
+    "public_g04_soil_rain": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    },
+    "gold_proxy_rank07_junichiro_morita": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    },
+    "gold_proxy_rank12_ai_b2b67_saas": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    },
+    "gold_proxy_rank14_recursion": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    },
+    "gold_proxy_rank19_manu_nicholas_jacob": {
+      "contexts": 8,
+      "action_exact_contexts": 8,
+      "state_exact_contexts": 8,
+      "terminal_reward_exact_contexts": 8,
+      "first_action_mismatch": null,
+      "first_state_mismatch": null,
+      "action_exact_rate": 1.0,
+      "state_exact_rate": 1.0,
+      "terminal_reward_exact_rate": 1.0,
+      "strict_exact": true
+    }
+  },
+  "timing": [
+    {
+      "candidate_seat": 0,
+      "games": 24,
+      "seconds": 122.09906806599999
+    },
+    {
+      "candidate_seat": 1,
+      "games": 24,
+      "seconds": 129.94418769300003
+    }
+  ],
+  "bank_sha256": "6C2E29458EEC2711E47EB113A52B6FE5698D9817C512DB2FC7EB5B398ACBE71C",
+  "bank_receipt_sha256": "3D7C3563DF1F27E625FFE3297E865A2B54D69AB987202C8903080F97BA5FCEB5",
+  "trace_receipt_sha256": "5ECFE329D6D9D6205F373E728730C4F235A63837502272B5124A8E73CC941D23",
+  "wall_seconds": 350.371884309,
+  "acceptance_boundary": "Only strict_exact=true permits replacement of the official Python opponent."
+}
