@@ -1,19 +1,32 @@
 # Kaggriculture local simulation lab
 
-This workspace contains the official Kaggriculture 1.32.6 engine, selected public
-research notebooks, and a fast local runner for large self-play experiments.
+This workspace uses the pinned official Kaggriculture 1.32.6 Python package and
+contains a fast local runner plus trainable PyTorch agents.
 
 ## What is where
 
 - `official/competition/` — competition-provided rules and agent guide
-- `vendor/kaggle-environments/` — Kaggle's official engine source
-- `research/notebooks/` — selected Discussion-linked and high-value public notebooks
 - `src/kaggriculture_lab/fast_env.py` — low-overhead CPU training runner
 - `src/kaggriculture_lab/gpu_engine.py` — pure-tensor CUDA transition engine
+- `src/kaggriculture_lab/hierarchical_policy.py` — V8 belief-conditioned persistent-chain/PPO policy
+- `src/kaggriculture_lab/hierarchical_trace.py` — internal traces and inverse-planning Top-M labels
+- `src/kaggriculture_lab/candidate_proposal.py` — expert injection and learned candidate decoding
+- `src/kaggriculture_lab/expert_sampling.py` — cluster-balanced and worst-cluster CVaR BC sampler
+- `src/kaggriculture_lab/meta_strategy.py` — payoff matrix and PSRO/robust mixtures
+- `src/kaggriculture_lab/opponent_model.py` — observable opponent histories
+- `src/kaggriculture_lab/league.py` — frozen-opponent league utilities
+- `scripts/train_hierarchical_bc.py` — soft-label proposal/task behavior cloning
+- `scripts/train_hierarchical_rl.py` — exact-action-replay clipped PPO
+- `scripts/validate_hierarchical_v7.py` — full-game official-runner differential audit
 - `benchmarks/benchmark_gpu_engine.py` — CUDA transition throughput benchmark
 - `benchmarks/benchmark_fixed_market_kernel.py` — isolated fixed-market Triton microbenchmark
 - `benchmarks/profile_gpu_hotpath.py` — short CPU/CUDA operator-level profiler
 - `tests/test_gpu_engine.py` — stepwise differential tests against the official runner
+
+The newest policy design is documented in `HIERARCHICAL_RL_V8.md`. V8 adds an
+observable opponent belief, uncertainty-aware robust opening/budget constraints,
+1/3/7-day resource-growth critics, worst-cluster CVaR sampling, and optional
+PSRO-weighted frozen-opponent league PPO while retaining exact action replay.
 
 ## Environment
 
