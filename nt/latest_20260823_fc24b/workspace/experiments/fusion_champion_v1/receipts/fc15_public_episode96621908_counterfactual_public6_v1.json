@@ -1,0 +1,87 @@
+{
+  "schema": "kaggriculture.fc15-public-replay-counterfactual.v1",
+  "generated_at_utc": "2026-08-22T18:41:26.649005+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "episode_id": 96621908,
+  "seed": 968151201,
+  "team_names": [
+    "Sheep 🐑",
+    "QQ Farming"
+  ],
+  "own_seat": 1,
+  "repeated_candidate_batch": 128,
+  "recorded_replay_parity": {
+    "official_money": [
+      72116,
+      60207
+    ],
+    "jax_money": [
+      72116,
+      60207
+    ],
+    "exact": true
+  },
+  "rows": [
+    {
+      "candidate": "fc15",
+      "target_route": null,
+      "own_cash": 60207,
+      "recorded_opponent_cash_under_counterfactual": 72116,
+      "margin": -11909
+    },
+    {
+      "candidate": "fc16",
+      "target_route": null,
+      "own_cash": 60207,
+      "recorded_opponent_cash_under_counterfactual": 72116,
+      "margin": -11909
+    },
+    {
+      "candidate": "boatlee_v21_latest",
+      "target_route": null,
+      "own_cash": 60670,
+      "recorded_opponent_cash_under_counterfactual": 71575,
+      "margin": -10905
+    },
+    {
+      "candidate": "prvsiyan_soil_v26h_latest",
+      "target_route": null,
+      "own_cash": 116168,
+      "recorded_opponent_cash_under_counterfactual": 103988,
+      "margin": 12180
+    },
+    {
+      "candidate": "prvsiyan_moon_v92_latest",
+      "target_route": null,
+      "own_cash": 60356,
+      "recorded_opponent_cash_under_counterfactual": 71849,
+      "margin": -11493
+    },
+    {
+      "candidate": "kaito_v39_history_gate_latest",
+      "target_route": null,
+      "own_cash": 82873,
+      "recorded_opponent_cash_under_counterfactual": 70498,
+      "margin": 12375
+    },
+    {
+      "candidate": "steven_e284_hadouken_latest",
+      "target_route": null,
+      "own_cash": 55478,
+      "recorded_opponent_cash_under_counterfactual": 65536,
+      "margin": -10058
+    },
+    {
+      "candidate": "salem_harvestforge_x_latest",
+      "target_route": null,
+      "own_cash": 52971,
+      "recorded_opponent_cash_under_counterfactual": 65697,
+      "margin": -12726
+    }
+  ],
+  "elapsed_seconds": 443.373575224,
+  "truth_boundary": "The opponent action requests are frozen from the public Replay. This is a same-seed local causal probe, not a responsive-opponent Arena estimate."
+}

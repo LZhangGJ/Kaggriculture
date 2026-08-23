@@ -1,0 +1,53 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc24b-jax-stepwise-parity.v1",
+  "generated_at_utc": "2026-08-23T05:50:09.626248+00:00",
+  "status": "PASS",
+  "strict_exact": true,
+  "backend": "gpu",
+  "jax_version": "0.11.0",
+  "official_package_version": "1.32.7",
+  "seat_swapped": true,
+  "result": {
+    "contexts": 4,
+    "action_exact_contexts": 4,
+    "state_exact_contexts": 4,
+    "terminal_reward_exact_contexts": 4,
+    "first_action_mismatch": null,
+    "first_state_mismatch": null,
+    "action_exact_rate": 1.0,
+    "state_exact_rate": 1.0,
+    "terminal_reward_exact_rate": 1.0
+  },
+  "timing": [
+    {
+      "candidate_seat": 0,
+      "games": 2,
+      "seconds": 43.51686822300002
+    },
+    {
+      "candidate_seat": 1,
+      "games": 2,
+      "seconds": 41.145329753000055
+    }
+  ],
+  "inputs": {
+    "trace_receipt": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_official_stepwise_traces_seed594122_targeted_v1.json",
+      "sha256": "5FA30F12567F810DAEF2E0FB65F47EEA9C12584C1765566F64C81AEA3EF98964"
+    },
+    "latest_bank": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+      "sha256": "F0515CA9E59B3D899B89AA12AD9AACC6ACDD2D7B9BE85EF58EB4D48F7B9B4C20"
+    },
+    "old_bank": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/jax_full37_mixed_exact_proxy_bank_v1.npz",
+      "sha256": "E02A56819D37C0A314B0FA77F9EBE558F1F8A416F283D496E6B87C0165B85AF2"
+    },
+    "runtime": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4E2264239ED79F7FB7BC338B828E8ED0CAD6C8445B1742186F98FC91B1429E4B"
+    }
+  },
+  "wall_seconds": 101.46321801800002,
+  "acceptance_boundary": "PASS requires FC24B JAX actions, every official public/private state frame, and terminal rewards to equal official Python 1.32.7 in both seats."
+}

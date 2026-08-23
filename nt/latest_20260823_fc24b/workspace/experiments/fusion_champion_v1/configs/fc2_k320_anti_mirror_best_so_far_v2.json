@@ -1,0 +1,82 @@
+{
+  "schema": "kaggriculture.fusion_champion.rule_config.v2",
+  "name": "fc2_k320_anti_mirror_best_so_far_v2",
+  "parent": "fc2_k320_anti_mirror_best_so_far_v1",
+  "status": "BEST_SO_FAR_PENDING_FINAL_GATE",
+  "official_package_version": "1.32.7",
+  "base_policy": "rayk_k320_adaptive_rank1",
+  "capability": "near-mirror cumulative premium-sale preemption",
+  "parameters": {
+    "source_preempt": false,
+    "horizon": 4,
+    "distance_limit": 6,
+    "quantity_cap": 32,
+    "minimum_future_quantity": 4,
+    "minimum_price_percent": 0,
+    "start_step": 120,
+    "product_mask": 200,
+    "products": [
+      "STRAWBERRY",
+      "MILK",
+      "WOOL"
+    ]
+  },
+  "k320_evidence": [
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2e_k320_preempt_caps_seed544101_n64x2_v1.json",
+      "games": 128,
+      "wins": 114,
+      "ties": 0,
+      "losses": 14,
+      "score_rate": 0.890625
+    },
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2f_k320_preempt_high_caps_seed544301_n32x2_v1.json",
+      "games": 64,
+      "wins": 61,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.953125
+    },
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2g_k320_preempt_cap32_seed544401_n64x2_holdout_v1.json",
+      "games": 128,
+      "wins": 113,
+      "ties": 0,
+      "losses": 15,
+      "score_rate": 0.8828125
+    },
+    {
+      "receipt": "experiments/fusion_champion_v1/receipts/fc2h_k320_preempt_best_critical15_seed544501_n64x2_v1.json",
+      "games": 128,
+      "wins": 115,
+      "ties": 0,
+      "losses": 13,
+      "score_rate": 0.8984375
+    }
+  ],
+  "k320_aggregate": {
+    "games": 448,
+    "wins": 403,
+    "ties": 0,
+    "losses": 45,
+    "score_rate": 0.8995535714285714
+  },
+  "same_seed_heterogeneous_regression": {
+    "candidate_receipt": "experiments/fusion_champion_v1/receipts/fc2h_k320_preempt_best_critical15_seed544501_n64x2_v1.json",
+    "control_receipt": "experiments/fusion_champion_v1/receipts/fc2i_k320_control_critical15_seed544501_n64x2_v1.json",
+    "non_k320_opponents": 14,
+    "games": 1792,
+    "changed_outcomes": 1,
+    "candidate_improvements": 1,
+    "candidate_regressions": 0,
+    "note": "All non-K320 opponent score rates were identical except Boatlee V20, where the candidate gained one win. The clone-distance gate prevented broad behavioral drift."
+  },
+  "gate_note": "The capability is regression-safe on the frozen critical panel and strongly improves K320 mirrors, but the four-block K320 aggregate is 89.955% and the newest 128-game block is 89.844%; it remains best-so-far rather than promoted.",
+  "source_hashes": {
+    "experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py": "DF7BF62650B02213AE10F1409B11D04735AB660CD195EA17D41BA4990504AD2D",
+    "experiments/fusion_champion_v1/tools/run_fc1a_panel.py": "8CA4547EBCF7714E5F956FBA56D2C1A23EE0E2826A4E90DEA838A42C9B0EF003",
+    "experiments/fusion_champion_v1/receipts/fc2h_k320_preempt_best_critical15_seed544501_n64x2_v1.json": "71E29234515002F0C5F60F071D930EE65C39794248FAC7209CC762232A5B5FB4",
+    "experiments/fusion_champion_v1/receipts/fc2i_k320_control_critical15_seed544501_n64x2_v1.json": "E91287F034480C8AECABB7759535B66A82111AE77443D735F90D8643079AEEDC"
+  }
+}

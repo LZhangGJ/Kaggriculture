@@ -1,0 +1,18 @@
+{
+  "schema": "kaggriculture.fusion_champion.replay-route-source-verification.v1",
+  "status": "PASS",
+  "seed": 1370897086,
+  "expected_money": [
+    61521,
+    39392
+  ],
+  "observed_money": [
+    61521,
+    39392
+  ],
+  "exact_terminal_money": true,
+  "all_done": true,
+  "hand_cap_hits": 0,
+  "market_loop_cap_hits": 0,
+  "price_lut_oob": 0
+}

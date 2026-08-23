@@ -1,0 +1,14 @@
+{
+  "schema": "kaggriculture.official-parity-pool.fc15.v1",
+  "description": "K320 exercises the FC14 residual-sale branch; G04 exercises FC15 X562/PRT split weed-HIRE synchronization.",
+  "opponents": [
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "submission/55655402_rayk_k320_adaptive_rank1/main.py"
+    },
+    {
+      "name": "public_g04_soil_rain",
+      "path": "experiments/public_solution_analysis/inventory_20260814/agents/06_soil_rain.py"
+    }
+  ]
+}

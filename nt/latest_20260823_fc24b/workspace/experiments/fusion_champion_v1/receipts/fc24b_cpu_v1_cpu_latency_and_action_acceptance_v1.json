@@ -1,0 +1,378 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc12g-cpu-acceptance.v1",
+  "status": "PASS",
+  "sequential_action_exact": true,
+  "action_calls": 23008,
+  "mean_import_seconds": 0.3164410499994119,
+  "max_import_seconds": 0.3783961000153795,
+  "mean_action_ms": 0.523169288835523,
+  "p50_action_ms": 0.4808999947272241,
+  "p95_action_ms": 0.9224000386893749,
+  "p99_action_ms": 1.3501000357791781,
+  "max_action_ms": 5.003499973099679,
+  "acceptance_limit_ms": 1000.0,
+  "inputs": {
+    "agent": {
+      "path": "experiments\\fusion_champion_v1\\artifacts\\fc24b_cpu_v1\\main.py",
+      "sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B"
+    },
+    "trace_receipt": {
+      "path": "experiments\\fusion_champion_v1\\receipts\\fc24b_cpu_v1_official_stepwise_traces_seed594001_n8x2_v1.json",
+      "sha256": "97CF1FC4FA490BF07A1FE3D0B5BC3FB2EF05FEB368A0EB7FF841FB6B2C6EC6F7"
+    }
+  },
+  "rows": [
+    {
+      "seed": 594001,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2954638000228442,
+      "mean_action_ms": 0.4374272592711588,
+      "p95_action_ms": 0.7140999659895897,
+      "max_action_ms": 1.9732000073418021
+    },
+    {
+      "seed": 594002,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.29414910002378747,
+      "mean_action_ms": 0.45085966712387177,
+      "p95_action_ms": 0.7543999818153679,
+      "max_action_ms": 2.033500000834465
+    },
+    {
+      "seed": 594003,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.30765400000382215,
+      "mean_action_ms": 0.45033866362788705,
+      "p95_action_ms": 0.7367999642156065,
+      "max_action_ms": 3.806399996392429
+    },
+    {
+      "seed": 594004,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3154388999682851,
+      "mean_action_ms": 0.4495692631082094,
+      "p95_action_ms": 0.7395999855361879,
+      "max_action_ms": 2.099199977237731
+    },
+    {
+      "seed": 594005,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3783961000153795,
+      "mean_action_ms": 0.48409610533677505,
+      "p95_action_ms": 0.805000017862767,
+      "max_action_ms": 2.0534999785013497
+    },
+    {
+      "seed": 594006,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3163515000487678,
+      "mean_action_ms": 0.44216773424476324,
+      "p95_action_ms": 0.7532999734394252,
+      "max_action_ms": 2.1526000346057117
+    },
+    {
+      "seed": 594007,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.35142880002968013,
+      "mean_action_ms": 0.4518369964184045,
+      "p95_action_ms": 0.7508000126108527,
+      "max_action_ms": 2.081100014038384
+    },
+    {
+      "seed": 594008,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.31170590000692755,
+      "mean_action_ms": 0.44087927512596564,
+      "p95_action_ms": 0.728100014384836,
+      "max_action_ms": 2.0147000323049724
+    },
+    {
+      "seed": 594001,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3385150999529287,
+      "mean_action_ms": 0.4454842854099496,
+      "p95_action_ms": 0.7406999939121306,
+      "max_action_ms": 3.6546000046655536
+    },
+    {
+      "seed": 594002,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2930055999895558,
+      "mean_action_ms": 0.4474762149552798,
+      "p95_action_ms": 0.7411999977193773,
+      "max_action_ms": 2.0047000143676996
+    },
+    {
+      "seed": 594003,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3036177000030875,
+      "mean_action_ms": 0.4407490948662006,
+      "p95_action_ms": 0.7430000114254653,
+      "max_action_ms": 2.080800011754036
+    },
+    {
+      "seed": 594004,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3442034000181593,
+      "mean_action_ms": 0.4480449242034204,
+      "p95_action_ms": 0.728100014384836,
+      "max_action_ms": 3.6681999918073416
+    },
+    {
+      "seed": 594005,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2911792999948375,
+      "mean_action_ms": 0.4415664809233974,
+      "p95_action_ms": 0.7200000109151006,
+      "max_action_ms": 2.26239999756217
+    },
+    {
+      "seed": 594006,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3368389999959618,
+      "mean_action_ms": 0.4730735740641207,
+      "p95_action_ms": 0.784000032581389,
+      "max_action_ms": 4.611999960616231
+    },
+    {
+      "seed": 594007,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3415083000436425,
+      "mean_action_ms": 0.4641515996516974,
+      "p95_action_ms": 0.7681999704800546,
+      "max_action_ms": 4.099500016309321
+    },
+    {
+      "seed": 594008,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.30371090001426637,
+      "mean_action_ms": 0.42333365756414715,
+      "p95_action_ms": 0.7577000069431961,
+      "max_action_ms": 2.076099975965917
+    },
+    {
+      "seed": 594001,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3084120999556035,
+      "mean_action_ms": 0.5991936013489827,
+      "p95_action_ms": 1.146599999628961,
+      "max_action_ms": 2.2096000029705465
+    },
+    {
+      "seed": 594002,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.35468310001306236,
+      "mean_action_ms": 0.5989390829680371,
+      "p95_action_ms": 1.061999995727092,
+      "max_action_ms": 2.0493000047281384
+    },
+    {
+      "seed": 594003,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3009262999985367,
+      "mean_action_ms": 0.6065485386633844,
+      "p95_action_ms": 1.2209999840706587,
+      "max_action_ms": 4.088199988473207
+    },
+    {
+      "seed": 594004,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.346803100022953,
+      "mean_action_ms": 0.5979634208898728,
+      "p95_action_ms": 1.1532999924384058,
+      "max_action_ms": 2.466800040565431
+    },
+    {
+      "seed": 594005,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2970579999964684,
+      "mean_action_ms": 0.595853129992461,
+      "p95_action_ms": 1.1977999820373952,
+      "max_action_ms": 2.271899953484535
+    },
+    {
+      "seed": 594006,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3056691999663599,
+      "mean_action_ms": 0.5931006958228905,
+      "p95_action_ms": 1.1660000309348106,
+      "max_action_ms": 2.2839000448584557
+    },
+    {
+      "seed": 594007,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3524773999815807,
+      "mean_action_ms": 0.5922347713768306,
+      "p95_action_ms": 1.1481000110507011,
+      "max_action_ms": 2.0856999908573925
+    },
+    {
+      "seed": 594008,
+      "candidate_seat": 0,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.29781849996652454,
+      "mean_action_ms": 0.5991154372846249,
+      "p95_action_ms": 1.1805000249296427,
+      "max_action_ms": 4.658700025174767
+    },
+    {
+      "seed": 594001,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3491175000090152,
+      "mean_action_ms": 0.5986310148343537,
+      "p95_action_ms": 1.146000053267926,
+      "max_action_ms": 2.1074999822303653
+    },
+    {
+      "seed": 594002,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3041947999736294,
+      "mean_action_ms": 0.5942119604594467,
+      "p95_action_ms": 1.0473000002093613,
+      "max_action_ms": 2.274200029205531
+    },
+    {
+      "seed": 594003,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.23599299998022616,
+      "mean_action_ms": 0.600710291329963,
+      "p95_action_ms": 1.1718000168912113,
+      "max_action_ms": 2.004500012844801
+    },
+    {
+      "seed": 594004,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2919507999904454,
+      "mean_action_ms": 0.5906552158267612,
+      "p95_action_ms": 1.1424999684095383,
+      "max_action_ms": 2.039100043475628
+    },
+    {
+      "seed": 594005,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.2935196000034921,
+      "mean_action_ms": 0.6018966629548109,
+      "p95_action_ms": 1.1342999641783535,
+      "max_action_ms": 5.003499973099679
+    },
+    {
+      "seed": 594006,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.31277720001526177,
+      "mean_action_ms": 0.5891799726957385,
+      "p95_action_ms": 1.144499983638525,
+      "max_action_ms": 2.1176000009290874
+    },
+    {
+      "seed": 594007,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.3529180000186898,
+      "mean_action_ms": 0.601218358234027,
+      "p95_action_ms": 1.1897999793291092,
+      "max_action_ms": 2.139899996109307
+    },
+    {
+      "seed": 594008,
+      "candidate_seat": 1,
+      "actions": 719,
+      "exact": true,
+      "mismatches": [],
+      "import_seconds": 0.29862759995739907,
+      "mean_action_ms": 0.5909102921593048,
+      "p95_action_ms": 1.1477000080049038,
+      "max_action_ms": 1.9791999948211014
+    }
+  ]
+}

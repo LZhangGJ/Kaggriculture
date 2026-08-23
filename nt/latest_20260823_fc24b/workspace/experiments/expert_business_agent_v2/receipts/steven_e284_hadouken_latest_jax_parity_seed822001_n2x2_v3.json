@@ -1,0 +1,50 @@
+{
+  "schema": "kaggriculture.latest_public6_20260822-jax-stepwise-parity.v1",
+  "generated_at_utc": "2026-08-22T07:02:24.347132+00:00",
+  "status": "PASS",
+  "strict_exact": true,
+  "agent": "steven_e284_hadouken_latest",
+  "backend": "gpu",
+  "jax_version": "0.10.1",
+  "official_package_version": "1.32.7",
+  "seat_swapped": true,
+  "result": {
+    "contexts": 4,
+    "action_exact_contexts": 4,
+    "state_exact_contexts": 4,
+    "terminal_reward_exact_contexts": 4,
+    "first_action_mismatch": null,
+    "first_state_mismatch": null,
+    "action_exact_rate": 1.0,
+    "state_exact_rate": 1.0,
+    "terminal_reward_exact_rate": 1.0
+  },
+  "timing": [
+    {
+      "candidate_seat": 0,
+      "games": 2,
+      "seconds": 44.03323315099999
+    },
+    {
+      "candidate_seat": 1,
+      "games": 2,
+      "seconds": 44.77970596200004
+    }
+  ],
+  "inputs": {
+    "trace_receipt": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/latest_public6_fc15_official_traces_v1.json",
+      "sha256": "DA7E99F91AA79B62EFB9F2604C58633DA3B70D871964E4A36B4FABC1286A6A66"
+    },
+    "bank": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public6_20260822_route_bank_v1.npz",
+      "sha256": "F1FA53D5F40A224E030CC9D89AE243622551AE6765AC71767C5C794A5712C324"
+    },
+    "runtime": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4E2264239ED79F7FB7BC338B828E8ED0CAD6C8445B1742186F98FC91B1429E4B"
+    }
+  },
+  "wall_seconds": 103.11475860900003,
+  "acceptance_boundary": "PASS requires JAX candidate actions, every official public/private state frame, and terminal rewards to equal official Python 1.32.7 in both seats."
+}

@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260823_fc24b/` — current FC24B handoff: the complete FC0-to-FC24B
+  development-document chain, frozen source/configuration, six 2026-08-22
+  public-agent JAX migrations, 8,704-game 34-Agent acceptance evidence,
+  official-1.32.7 CPU/JAX parity traces, and Kaggle submission `55708153`.
+  Start with `latest_20260823_fc24b/README_ZH.md`.
 - `latest_20260821_arena_fusion_fc2a/` — reproducible 28-Agent strict-JAX
   Arena snapshot, the complete 37,800-game pairwise result, current
   rule-fusion development evidence, and the broken/fixed FC2A CPU submissions.

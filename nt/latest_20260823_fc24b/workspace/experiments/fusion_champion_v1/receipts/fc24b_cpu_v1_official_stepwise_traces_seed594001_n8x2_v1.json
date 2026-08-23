@@ -1,0 +1,419 @@
+{
+  "schema": "kaggriculture_official_stepwise_parity_traces_v2",
+  "generated_at_utc": "2026-08-23T05:50:50.934634+00:00",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    594001,
+    594002,
+    594003,
+    594004,
+    594005,
+    594006,
+    594007,
+    594008
+  ],
+  "seat_swapped": true,
+  "candidate": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\artifacts\\fc24b_cpu_v1\\main.py",
+  "candidate_sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B",
+  "pool": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\configs\\fc15_official_parity_pool_v1.json",
+  "pool_sha256": "F6E79757EC521C2EA213752EBAEF2C541261BF5DD1B618E4F3EC2FEC23EF351E",
+  "opponents": [
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55655402_rayk_k320_adaptive_rank1\\main.py",
+      "sha256": "6C709F6D3CE6CF221A9495DE7E716FCD1B660E3BBC8EE5679B63233D0265A812"
+    },
+    {
+      "name": "public_g04_soil_rain",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\public_solution_analysis\\inventory_20260814\\agents\\06_soil_rain.py",
+      "sha256": "34193F0CA7FDC77DB52CFDADF61596D42CBC2FFD3D8B7903819B0AD78A064A2A"
+    }
+  ],
+  "traces": [
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594001.jsonl.gz",
+      "file_sha256": "C50A8EFD6E1ABF2C8835718FFE6657DFF1720C4E9450A40D1A5D5E9F950477E1",
+      "frames": 720,
+      "terminal_reward": [
+        82114.0,
+        78536.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594002.jsonl.gz",
+      "file_sha256": "D24B9A19E51A15A00D9DFAD3E4D828DB5BFEF53FDF8181B6FE4E4017C4E17134",
+      "frames": 720,
+      "terminal_reward": [
+        94577.0,
+        92888.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594003.jsonl.gz",
+      "file_sha256": "9CDDD8550B0FE4421358E1C8CD6B74E54ABC6236183AD1633135B9CAFC6B462D",
+      "frames": 720,
+      "terminal_reward": [
+        110688.0,
+        110287.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594004.jsonl.gz",
+      "file_sha256": "36B9B13B47D8D284C61B1D3FFCC37D1B8D67FEA7E7B96AF57005B181CD770F1F",
+      "frames": 720,
+      "terminal_reward": [
+        112421.0,
+        111428.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594005.jsonl.gz",
+      "file_sha256": "B792AD5BE58177FCD8735DE1ACF5E9C99196F4BFD5799A4417C512E8AA6EDAE6",
+      "frames": 720,
+      "terminal_reward": [
+        56847.0,
+        56335.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594006.jsonl.gz",
+      "file_sha256": "87A29A0C537761B9B7FD1F18099A25F4ED9023DDF7792381917ED30C66E676F6",
+      "frames": 720,
+      "terminal_reward": [
+        100904.0,
+        100794.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594007.jsonl.gz",
+      "file_sha256": "FF777EB98D985CC7EBE4A63759011303222F4A8D15B4D8581E377A775F1BD453",
+      "frames": 720,
+      "terminal_reward": [
+        89815.0,
+        89037.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594008.jsonl.gz",
+      "file_sha256": "7D4AB5D193F18B5341C1D170EC359EEAF25C2B958DC34181D4D336C03AF00B02",
+      "frames": 720,
+      "terminal_reward": [
+        133756.0,
+        130640.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594001.jsonl.gz",
+      "file_sha256": "42BF60E507F3D93940FBC234E90E4AD773DF18CBEEBCC2C19B4D64FC555EF1AA",
+      "frames": 720,
+      "terminal_reward": [
+        78536.0,
+        82114.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594002.jsonl.gz",
+      "file_sha256": "C9FED35DB4F33BCDECDEFE9B6BDD82BD7B16A5D6FE8D4E43BAC4BB4D648DFEA5",
+      "frames": 720,
+      "terminal_reward": [
+        92888.0,
+        94577.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594003.jsonl.gz",
+      "file_sha256": "58BDB362E2F7895C9182E8B4B19655E24A7F0AA29638E2AB0318138ACF6ABD2F",
+      "frames": 720,
+      "terminal_reward": [
+        110287.0,
+        110688.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594004.jsonl.gz",
+      "file_sha256": "CECB1A78766950081EE8C56E97C1942D5342588EF54C1FD877B4E9C59F4E68B4",
+      "frames": 720,
+      "terminal_reward": [
+        111428.0,
+        112421.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594005.jsonl.gz",
+      "file_sha256": "624761C9EAE753C8EB7A2C8CECF735831673F65C2268419B749551608040ACDE",
+      "frames": 720,
+      "terminal_reward": [
+        56335.0,
+        56847.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594006.jsonl.gz",
+      "file_sha256": "D946E1A544B37D1498910F05C81E8D1F68D0A9E1ACD92283D15AC9B9D3A4DBA8",
+      "frames": 720,
+      "terminal_reward": [
+        99306.0,
+        102386.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594007.jsonl.gz",
+      "file_sha256": "298743B19621BAF5340724A90283A1A791F3A1BEAA876A6FFBC78BF35EB1DE09",
+      "frames": 720,
+      "terminal_reward": [
+        89037.0,
+        89815.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594008.jsonl.gz",
+      "file_sha256": "25A11F41153E68C915CB4161E31846B0E5D03FC015244FC114DA5521AB579F75",
+      "frames": 720,
+      "terminal_reward": [
+        126668.0,
+        138306.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594001.jsonl.gz",
+      "file_sha256": "49424A3DC0FA89DD776B6E89520B7FFB902085F56D5AA3EC62D94991B907DCFA",
+      "frames": 720,
+      "terminal_reward": [
+        109037.0,
+        98057.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594002.jsonl.gz",
+      "file_sha256": "D900365D599A104E6F1EC43164E25F82020F34D5F1A204814C1C9B8B38FC06A2",
+      "frames": 720,
+      "terminal_reward": [
+        136424.0,
+        129905.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594003.jsonl.gz",
+      "file_sha256": "CCAC8E2A077902BBD3F691645EE3FACF5F0D1ADCF2604752B4D57CA6BD2E21D9",
+      "frames": 720,
+      "terminal_reward": [
+        76375.0,
+        74687.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594004.jsonl.gz",
+      "file_sha256": "FF2EDCE722F3AAE59388CAD99BD9CC5A2365A32A32A0412AE35687A0ED9E979B",
+      "frames": 720,
+      "terminal_reward": [
+        106593.0,
+        101510.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594005.jsonl.gz",
+      "file_sha256": "A978B72B734D80C26B28BC2801A08DD92C3E7A0B4EBB1CA4D4B7A750F25238A8",
+      "frames": 720,
+      "terminal_reward": [
+        119977.0,
+        109348.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594006.jsonl.gz",
+      "file_sha256": "4E70B5F48952F1785491BC69192398D7396DA1F2B53A2B556871272B4CEC07F7",
+      "frames": 720,
+      "terminal_reward": [
+        109555.0,
+        103036.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594007.jsonl.gz",
+      "file_sha256": "D7E577B1C1B107A28D54DB98ED35023A745CC399A1275E2D323DF36874221B22",
+      "frames": 720,
+      "terminal_reward": [
+        143494.0,
+        126498.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat0_seed594008.jsonl.gz",
+      "file_sha256": "D650AD19D0040085D2C0B3814CF61BF6ACC2AF15B1C66E3251698E5B6B65C557",
+      "frames": 720,
+      "terminal_reward": [
+        139603.0,
+        131984.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594001.jsonl.gz",
+      "file_sha256": "358E8F8177519CC94334C89DF38318D3D0E1E42850873E85C676115406DD1722",
+      "frames": 720,
+      "terminal_reward": [
+        98097.0,
+        108960.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594002.jsonl.gz",
+      "file_sha256": "3A4C2F8316BCEB653F09FF1DAEC9127FDAC9F6B50A0A6483D94594F5D6F1A210",
+      "frames": 720,
+      "terminal_reward": [
+        129905.0,
+        136424.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594003.jsonl.gz",
+      "file_sha256": "69D0B585084E992E0C5C03EBA00E1BD9AF8D8BEDFB0E152D1E7A35A8A20CC7C2",
+      "frames": 720,
+      "terminal_reward": [
+        74687.0,
+        76375.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594004.jsonl.gz",
+      "file_sha256": "817630E1E75DBC066457CFD915F760512BA1C115A84F8017919965697FC39283",
+      "frames": 720,
+      "terminal_reward": [
+        101438.0,
+        106631.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594005.jsonl.gz",
+      "file_sha256": "84008B38E1671943FA4D99B861BF58007E84385BD60AD3178A0F6C33EF3700FE",
+      "frames": 720,
+      "terminal_reward": [
+        109882.0,
+        118918.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594006.jsonl.gz",
+      "file_sha256": "3E1B6F52831088855C43333001CA62A3AD94AA87B41901299798C2C77A49EBD6",
+      "frames": 720,
+      "terminal_reward": [
+        101276.0,
+        104022.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594007.jsonl.gz",
+      "file_sha256": "15E90B306ED81BD9D5B7DA038E375955FDF81362B01D690155448BF2E9CD396D",
+      "frames": 720,
+      "terminal_reward": [
+        125760.0,
+        135547.0
+      ]
+    },
+    {
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594001_n8x2_v1/candidate_public_g04_soil_rain_seat1_seed594008.jsonl.gz",
+      "file_sha256": "89339B6AC474C52E659EFC95E622269A6CEADAF18301BB9B20EDC272326BC502",
+      "frames": 720,
+      "terminal_reward": [
+        131931.0,
+        140380.0
+      ]
+    }
+  ],
+  "ok": true
+}
