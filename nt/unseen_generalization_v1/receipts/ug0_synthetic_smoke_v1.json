@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-08-24T01:13:57.022496+00:00",
+  "generated_at_utc": "2026-08-24T01:16:50.871658+00:00",
   "status": "PASS_CODE_AND_SYNTHETIC_SMOKE",
   "baseline_commit": "a00c723681ad5b906d67a36f8fb8b73ba7eb91f5",
   "checks": {
     "pytest": {
       "status": "PASS",
-      "passed": 8
+      "passed": 9
     },
     "compileall": {
       "status": "PASS"
@@ -40,6 +40,9 @@
     "output_self_inclusion_second_run": {
       "status": "PASS",
       "excluded": true
+    },
+    "submission_download_capability_detection": {
+      "status": "PASS"
     }
   },
   "truth_boundaries": {
@@ -55,8 +58,8 @@
   "source_files": [
     {
       "path": "README.md",
-      "size_bytes": 3818,
-      "sha256": "5b01bc34be89e9f11a095d3d387afbe49b04c7221d57bd7902827aa3ddd25716"
+      "size_bytes": 4241,
+      "sha256": "cbfc4cd535f3c46a3f896b34eaf48954fc637d26d2e5a9f2c64dafde3147175c"
     },
     {
       "path": "docs/UNSEEN_GENERALIZATION_EXECUTION_PLAN_20260824_ZH.md",
@@ -70,8 +73,8 @@
     },
     {
       "path": "reports/UG0_SYNTHETIC_SMOKE_20260824_ZH.md",
-      "size_bytes": 1639,
-      "sha256": "98eb8923a1eb7f55c87f1b7c1d27a64021912d14239dcbe2c01539dd0ae11e65"
+      "size_bytes": 1699,
+      "sha256": "66b8fa01448f89e21b00514326196fecd0630c1f5e159bcd356bbf1bd8d0d868"
     },
     {
       "path": "src/unseen_generalization_v1/__init__.py",
@@ -115,8 +118,8 @@
     },
     {
       "path": "tests/test_sync_live_assets.py",
-      "size_bytes": 1120,
-      "sha256": "6af24a2e4e6524a5149cdc5ff93de66f762153bc8cd1108c10eaff12aa3fbc78"
+      "size_bytes": 1373,
+      "sha256": "0529280e9e3f27438abc6e2997f6a69fe0166354876d895946777c0b26b6c82c"
     },
     {
       "path": "tools/build_ug0_manifest.py",
@@ -130,8 +133,8 @@
     },
     {
       "path": "tools/sync_live_assets.py",
-      "size_bytes": 11603,
-      "sha256": "cb28928204d1aa4b040e7fb59e3cf777656a227af6886e12f6a30f3ccce67399"
+      "size_bytes": 12590,
+      "sha256": "6af3fba58df2b93602d5335735ca05415fffda61217a1424bb1eba20112f1dd4"
     }
   ]
 }

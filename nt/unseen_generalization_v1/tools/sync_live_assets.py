@@ -161,6 +161,27 @@ def _token_available() -> bool:
     return (Path.home() / ".kaggle" / "access_token").is_file() or (Path.home() / ".kaggle" / "kaggle.json").is_file()
 
 
+def _has_submission_download(help_text: str) -> bool:
+    """Return whether this Kaggle CLI build exposes the simulation file command."""
+
+    return re.search(r"(?:^|\s)submission-download(?:\s|$)", help_text) is not None
+
+
+def _require_submission_download(kaggle_bin: str, *, dry_run: bool) -> None:
+    if dry_run:
+        return
+    result = _run([kaggle_bin, "competitions", "--help"], dry_run=False)
+    if _has_submission_download(result.stdout + "\n" + result.stderr):
+        return
+    raise RuntimeError(
+        "The installed Kaggle CLI does not expose `competitions submission-download`. "
+        "That command is currently available on the official Kaggle CLI main branch. "
+        "Install it with `python -m pip install --upgrade "
+        "git+https://github.com/Kaggle/kaggle-cli.git@main`, or rerun with "
+        "--skip-submission-download to synchronize episodes/replays only."
+    )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, default=Path(r"D:\Kaggriculture"))
@@ -216,6 +237,7 @@ def main() -> int:
 
     downloaded_submission_files: list[Path] = []
     if not args.skip_submission_download:
+        _require_submission_download(args.kaggle_bin, dry_run=args.dry_run)
         before = _snapshot_files(submission_dir)
         command = [
             args.kaggle_bin,

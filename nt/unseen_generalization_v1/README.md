@@ -66,8 +66,17 @@ The synchronization step uses the official simulation competition commands:
 - `kaggle competitions episodes <submission_id> -v`
 - `kaggle competitions replay <episode_id>`
 
-If `submission-download` is missing, upgrade the official `kaggle` package before
-continuing.
+At the time of this snapshot, `submission-download` is present on the official
+Kaggle CLI `main` branch but may not yet be present in the latest PyPI release.  The
+sync script detects this explicitly.  Install the official main branch when the
+submission file itself is required:
+
+```powershell
+python -m pip install --upgrade "git+https://github.com/Kaggle/kaggle-cli.git@main"
+```
+
+Use `--skip-submission-download` to continue with episode/replay synchronization on a
+released CLI that does not expose the command.
 
 ## Outputs
 

@@ -7,9 +7,10 @@
 
 状态：`PASS_CODE_AND_SYNTHETIC_SMOKE`
 
-- `pytest`：8/8 通过；
+- `pytest`：9/9 通过；
 - `compileall`：通过；
 - Kaggle 同步命令 dry-run：通过；
+- Kaggle CLI `submission-download` 能力检测：通过；
 - submission archive 根目录 `main.py` 检查：通过；
 - Replay 第二座位增量 observation 重建：通过；
 - Replay 行为签名与粗路线族提取：通过；

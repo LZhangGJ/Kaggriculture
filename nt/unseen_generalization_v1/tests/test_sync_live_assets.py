@@ -28,3 +28,9 @@ def test_token_sanitizer_never_returns_plain_token():
     sanitized = module._sanitize(f"Authorization: {token}")
     assert token not in sanitized
     assert "[REDACTED]" in sanitized
+
+
+def test_detects_submission_download_capability_from_cli_help():
+    module = _module()
+    assert module._has_submission_download("episodes  replay  submission-download  logs")
+    assert not module._has_submission_download("episodes  replay  logs")
