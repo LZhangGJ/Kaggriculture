@@ -34,7 +34,7 @@ def test_inventory_detects_replay_archive_duplicates_and_excludes_secrets(tmp_pa
     replay_text = json.dumps(_minimal_replay())
     (tmp_path / "episode-1-replay.json").write_text(replay_text, encoding="utf-8")
     (tmp_path / "copy.json").write_text(replay_text, encoding="utf-8")
-    (tmp_path / "access_token").write_text("KGAT_secret", encoding="utf-8")
+    (tmp_path / "access_token").write_text("dummy-secret-not-a-real-token", encoding="utf-8")
 
     archive_path = tmp_path / "submission.tar.gz"
     main_py = b"def agent(obs):\n    return {'farmer':['PASS'],'hands':[],'market':[]}\n"
