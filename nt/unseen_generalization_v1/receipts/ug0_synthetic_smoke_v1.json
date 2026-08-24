@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-24T01:00:53.921802+00:00",
+  "status": "PASS_CODE_AND_SYNTHETIC_SMOKE",
+  "baseline_commit": "a00c723681ad5b906d67a36f8fb8b73ba7eb91f5",
+  "checks": {
+    "pytest": {
+      "status": "PASS",
+      "passed": 8
+    },
+    "compileall": {
+      "status": "PASS"
+    },
+    "token_literal_scan": {
+      "status": "PASS"
+    },
+    "kaggle_sync_dry_run": {
+      "status": "PASS",
+      "submission_id": 55708153,
+      "network_used": false
+    },
+    "synthetic_corpus_manifest": {
+      "status": "PASS",
+      "record_count": 3,
+      "kind_counts": {
+        "notebook": 1,
+        "replay": 1,
+        "submission_archive": 1
+      },
+      "replay_family_counts": {
+        "MILK_PRIMARY": 1,
+        "WOOL_PRIMARY": 1
+      }
+    },
+    "split_leakage": {
+      "behavior_signature_cross_split": 0,
+      "submission_id_cross_split": 0,
+      "status": "PASS"
+    },
+    "output_self_inclusion_second_run": {
+      "status": "PASS",
+      "excluded": true
+    }
+  },
+  "truth_boundaries": {
+    "windows_D_drive_accessed": false,
+    "kaggle_network_download_executed": false,
+    "real_replays_analyzed": false,
+    "gpu_or_jax_experiment_executed": false
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  },
+  "source_files": [
+    {
+      "path": "README.md",
+      "size_bytes": 3818,
+      "sha256": "5b01bc34be89e9f11a095d3d387afbe49b04c7221d57bd7902827aa3ddd25716"
+    },
+    {
+      "path": "docs/UNSEEN_GENERALIZATION_EXECUTION_PLAN_20260824_ZH.md",
+      "size_bytes": 6769,
+      "sha256": "d0f7854e2ab80c16de65cef078b4f4666c3f8fcbba6095f575a726949bfd6287"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 520,
+      "sha256": "a644d0f424db2c3cb5abc605b756a365d0559c42d4efd2840c1dad7fcd592531"
+    },
+    {
+      "path": "reports/UG0_SYNTHETIC_SMOKE_20260824_ZH.md",
+      "size_bytes": 1639,
+      "sha256": "98eb8923a1eb7f55c87f1b7c1d27a64021912d14239dcbe2c01539dd0ae11e65"
+    },
+    {
+      "path": "src/unseen_generalization_v1/__init__.py",
+      "size_bytes": 404,
+      "sha256": "c62ee046d833765064800785d98db26a1aee0ec1b2a2aae27772c9bda865dbfb"
+    },
+    {
+      "path": "src/unseen_generalization_v1/inventory.py",
+      "size_bytes": 10589,
+      "sha256": "91904f8571c9be4fe798682fb0370094100416ec527c74f6bcdeded3b80c0418"
+    },
+    {
+      "path": "src/unseen_generalization_v1/replay_features.py",
+      "size_bytes": 19441,
+      "sha256": "dd357e973289af1b5b5c8ebb87d8411781f9774caf188760cb43208735761fdf"
+    },
+    {
+      "path": "src/unseen_generalization_v1/schema.py",
+      "size_bytes": 2661,
+      "sha256": "a47445dbe6b9ce5a30b93be9483973dde7873e8d926a3cdf553798664f8842e9"
+    },
+    {
+      "path": "src/unseen_generalization_v1/splits.py",
+      "size_bytes": 7907,
+      "sha256": "3bb9c0ed672f45c5daf9245c622bd5b17e30d2ec20bf002b585a1a8ec5a4bbc5"
+    },
+    {
+      "path": "tests/test_inventory.py",
+      "size_bytes": 2730,
+      "sha256": "6b9d216b72ed777b6717be66cfd31d9c99a12e407cef70fc75cda47d4ffaf454"
+    },
+    {
+      "path": "tests/test_replay_features.py",
+      "size_bytes": 4369,
+      "sha256": "e55790b450bc3ec04b957f077788d38f9092ce51b065caa31b820179b8d5f824"
+    },
+    {
+      "path": "tests/test_splits.py",
+      "size_bytes": 2649,
+      "sha256": "fabb670f93d745dbb5ee26e5c62875668c7b33e94f286df18b551f584b3f1e44"
+    },
+    {
+      "path": "tests/test_sync_live_assets.py",
+      "size_bytes": 1120,
+      "sha256": "6af24a2e4e6524a5149cdc5ff93de66f762153bc8cd1108c10eaff12aa3fbc78"
+    },
+    {
+      "path": "tools/build_ug0_manifest.py",
+      "size_bytes": 8605,
+      "sha256": "b42dd51f3e64b6d5e44fe2b7d0f1b8f469565a4cfc39a82c7cdf80b9bf452079"
+    },
+    {
+      "path": "tools/run_ug0_windows.ps1",
+      "size_bytes": 1537,
+      "sha256": "abce63e1c0aa0936a610e7aa9c38b9e262a5bca2e05ffa265fd8b09fec067033"
+    },
+    {
+      "path": "tools/sync_live_assets.py",
+      "size_bytes": 11603,
+      "sha256": "cb28928204d1aa4b040e7fb59e3cf777656a227af6886e12f6a30f3ccce67399"
+    }
+  ]
+}
