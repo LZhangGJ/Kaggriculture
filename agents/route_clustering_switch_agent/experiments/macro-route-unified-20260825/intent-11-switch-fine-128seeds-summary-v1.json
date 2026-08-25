@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "engine": "C++ NativeTeammateExecutor.switch_search",
+  "layout": "opening, checkpoint, target, opponent, seed, seat",
+  "openings": [
+    "G001",
+    "G136"
+  ],
+  "target_count": 11,
+  "opponent_count": 175,
+  "checkpoints": [
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    216
+  ],
+  "seed_count": 128,
+  "pairing": "identical seeds and both seats",
+  "games": 6899200,
+  "state_vectors": 627200,
+  "feature_count": 147,
+  "setup_seconds": 4.201467260252684,
+  "simulation_seconds": 749.835790512152,
+  "games_per_second": 9200.947843910886,
+  "output": "experiments/macro-route-unified-20260825/intent-11-switch-fine-128seeds-v1.npz"
+}

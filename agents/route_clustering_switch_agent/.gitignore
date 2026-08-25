@@ -1,0 +1,13 @@
+# Reproducible bulk search outputs. Keep summaries and final policies in Git.
+experiments/**/*-distance*.f32
+experiments/**/*-distance-input*.bin
+experiments/**/intent-11-switch-fine-128seeds-v1.npz
+experiments/**/intent-175-switch-coarse-8seeds-v1.npz
+
+# Platform-specific native build products.
+fast_kaggriculture/build/
+fast_kaggriculture/**/*.so
+
+# This router does not use PPO checkpoints.
+*.pt
+training_runs/

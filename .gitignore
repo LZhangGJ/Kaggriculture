@@ -5,3 +5,5 @@ __pycache__/
 *.py[cod]
 benchmark-results/
 artifacts/
+.DS_Store
+route_clustering_switch_agent_bundle_20260825.tar.gz

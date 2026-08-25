@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "description": "Teammate execution stack plus searched 175-route meta controller, fixed G001 opening",
+  "forced_opening": "G001",
+  "runtime_routes": 175,
+  "opening_support": [
+    {
+      "family": "G001",
+      "weight": 0.3636363636363629,
+      "mean_score": 0.8228571428571428,
+      "worst_score": 0.4453125
+    },
+    {
+      "family": "G136",
+      "weight": 0.6363636363636348,
+      "mean_score": 0.8640625,
+      "worst_score": 0.4140625
+    }
+  ],
+  "switch_nodes": [
+    {
+      "opening": "G001",
+      "checkpoint": 144
+    },
+    {
+      "opening": "G001",
+      "checkpoint": 168
+    },
+    {
+      "opening": "G001",
+      "checkpoint": 216
+    }
+  ],
+  "final_holdout": {
+    "mask": 7,
+    "checkpoints": [
+      144,
+      168,
+      216
+    ],
+    "node_count": 3,
+    "baseline_score": 0.8117633928571428,
+    "dynamic_score": 0.8961495535714286,
+    "improvement": 0.08438616071428572,
+    "one_sided_95pct_lower": 0.07643251068387756,
+    "seed_standard_error": 0.004817908814761618,
+    "switch_rate": 0.42015625
+  },
+  "sources": {
+    "base": "experiments/teammate-route-meta/candidate/main.py",
+    "actions": "experiments/teammate-route-meta/intent-route-actions-v2-175.json.zlib",
+    "metadata": "experiments/teammate-route-meta/intent-route-library-v2-175.json",
+    "policy": "experiments/macro-route-unified-20260825/intent-11-switch-final-policy-v1.json",
+    "nash": "experiments/macro-route-unified-20260825/intent-175-nash-64seeds-v2.json",
+    "holdout": "experiments/macro-route-unified-20260825/intent-11-switch-final-holdout-256seeds-v1.json"
+  }
+}

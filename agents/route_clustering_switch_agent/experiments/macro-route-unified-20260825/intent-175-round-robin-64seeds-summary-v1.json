@@ -1,0 +1,1588 @@
+{
+  "schema_version": 1,
+  "engine": "C++ NativeTeammateExecutor.round_robin",
+  "routes": 175,
+  "seed_count": 64,
+  "pairing": "all unordered pairs, identical seeds, both seats",
+  "games": 1948800,
+  "setup_seconds": 5.447427522856742,
+  "simulation_seconds": 179.74935157597065,
+  "games_per_second": 10841.76372773364,
+  "ranking": [
+    {
+      "rank": 1,
+      "family": "G136",
+      "alias": "麦39胡萝卜16-羊9牛7-3地-早畜",
+      "score": 0.8661548132183908,
+      "games": 22272,
+      "mean_unit_failures": 0.8569953304597702,
+      "mean_market_failures": 1.419360632183908
+    },
+    {
+      "rank": 2,
+      "family": "G001",
+      "alias": "麦48胡萝卜12-牛11羊4-3地-早畜",
+      "score": 0.8247126436781609,
+      "games": 22272,
+      "mean_unit_failures": 1.4317528735632183,
+      "mean_market_failures": 1.9596354166666667
+    },
+    {
+      "rank": 3,
+      "family": "G036",
+      "alias": "麦50草莓7-牛9羊9-3地-早畜",
+      "score": 0.8099407327586207,
+      "games": 22272,
+      "mean_unit_failures": 2.3828573994252875,
+      "mean_market_failures": 2.7436691810344827
+    },
+    {
+      "rank": 4,
+      "family": "G049",
+      "alias": "麦39草莓11-羊9牛8-3地-早畜",
+      "score": 0.8051364942528736,
+      "games": 22272,
+      "mean_unit_failures": 1.6977370689655173,
+      "mean_market_failures": 0.20972521551724138
+    },
+    {
+      "rank": 5,
+      "family": "G044",
+      "alias": "麦50胡萝卜6-羊9牛6-3地-早畜",
+      "score": 0.7938442887931034,
+      "games": 22272,
+      "mean_unit_failures": 3.552667025862069,
+      "mean_market_failures": 3.7345545977011496
+    },
+    {
+      "rank": 6,
+      "family": "G007",
+      "alias": "麦57草莓5-牛9羊4-3地-早畜",
+      "score": 0.7913074712643678,
+      "games": 22272,
+      "mean_unit_failures": 1.4344468390804597,
+      "mean_market_failures": 5.501481681034483
+    },
+    {
+      "rank": 7,
+      "family": "G126",
+      "alias": "麦31草莓15-牛10羊5-3地-早畜",
+      "score": 0.7765804597701149,
+      "games": 22272,
+      "mean_unit_failures": 0.2400323275862069,
+      "mean_market_failures": 0.21933369252873564
+    },
+    {
+      "rank": 8,
+      "family": "G031",
+      "alias": "麦47草莓12-羊9牛6-3地-早畜",
+      "score": 0.7745599856321839,
+      "games": 22272,
+      "mean_unit_failures": 1.7688128591954022,
+      "mean_market_failures": 0.3591505028735632
+    },
+    {
+      "rank": 9,
+      "family": "G003",
+      "alias": "麦41草莓19-牛10羊4-3地-早畜",
+      "score": 0.7719558189655172,
+      "games": 22272,
+      "mean_unit_failures": 0.054732399425287355,
+      "mean_market_failures": 0.9547413793103449
+    },
+    {
+      "rank": 10,
+      "family": "G055",
+      "alias": "胡萝卜44草莓13-羊8牛6-3地-早畜",
+      "score": 0.7717762212643678,
+      "games": 22272,
+      "mean_unit_failures": 4.073186063218391,
+      "mean_market_failures": 0.14053520114942528
+    },
+    {
+      "rank": 11,
+      "family": "G006",
+      "alias": "麦42胡萝卜12-羊10牛6-3地-早畜",
+      "score": 0.7539960488505747,
+      "games": 22272,
+      "mean_unit_failures": 2.7081088362068964,
+      "mean_market_failures": 3.141882183908046
+    },
+    {
+      "rank": 12,
+      "family": "G169",
+      "alias": "麦48番茄12-牛11羊4-3地-早畜",
+      "score": 0.7471713362068966,
+      "games": 22272,
+      "mean_unit_failures": 0.7897808908045977,
+      "mean_market_failures": 2.0558997844827585
+    },
+    {
+      "rank": 13,
+      "family": "G194",
+      "alias": "麦53草莓4-牛7羊6-3地-早畜",
+      "score": 0.7449263649425287,
+      "games": 22272,
+      "mean_unit_failures": 6.969558189655173,
+      "mean_market_failures": 3.893767959770115
+    },
+    {
+      "rank": 14,
+      "family": "G009",
+      "alias": "麦36草莓22-牛10羊4-3地-早畜",
+      "score": 0.7426140445402298,
+      "games": 22272,
+      "mean_unit_failures": 0.023617097701149427,
+      "mean_market_failures": 1.0113146551724137
+    },
+    {
+      "rank": 15,
+      "family": "G020",
+      "alias": "麦49草莓15-牛7羊4-3地-早畜",
+      "score": 0.7367995689655172,
+      "games": 22272,
+      "mean_unit_failures": 4.749910201149425,
+      "mean_market_failures": 2.143633261494253
+    },
+    {
+      "rank": 16,
+      "family": "G247",
+      "alias": "麦47草莓11-牛6羊5-3地-早畜",
+      "score": 0.7365077227011494,
+      "games": 22272,
+      "mean_unit_failures": 6.284931752873563,
+      "mean_market_failures": 3.40234375
+    },
+    {
+      "rank": 17,
+      "family": "G207",
+      "alias": "麦38草莓12-牛8羊6-3地-早畜",
+      "score": 0.7358117816091954,
+      "games": 22272,
+      "mean_unit_failures": 0.7529184626436781,
+      "mean_market_failures": 0.7179418103448276
+    },
+    {
+      "rank": 18,
+      "family": "G245",
+      "alias": "麦46草莓11-羊9牛6-3地-早畜",
+      "score": 0.7318606321839081,
+      "games": 22272,
+      "mean_unit_failures": 2.179058908045977,
+      "mean_market_failures": 0.12589798850574713
+    },
+    {
+      "rank": 19,
+      "family": "G102",
+      "alias": "麦43草莓15-牛6羊5-3地-早畜",
+      "score": 0.727819683908046,
+      "games": 22272,
+      "mean_unit_failures": 6.471533764367816,
+      "mean_market_failures": 4.369612068965517
+    },
+    {
+      "rank": 20,
+      "family": "G013",
+      "alias": "麦55草莓8-牛8羊3-3地-早畜",
+      "score": 0.7273482399425287,
+      "games": 22272,
+      "mean_unit_failures": 1.7129130747126438,
+      "mean_market_failures": 0.32426364942528735
+    },
+    {
+      "rank": 21,
+      "family": "G043",
+      "alias": "麦42草莓16-牛8羊6-3地-早畜",
+      "score": 0.7254849137931034,
+      "games": 22272,
+      "mean_unit_failures": 0.6619971264367817,
+      "mean_market_failures": 0.6247306034482759
+    },
+    {
+      "rank": 22,
+      "family": "G227",
+      "alias": "麦40番茄12-羊10牛8-3地-早畜",
+      "score": 0.7231950431034483,
+      "games": 22272,
+      "mean_unit_failures": 3.1956267959770117,
+      "mean_market_failures": 5.726023706896552
+    },
+    {
+      "rank": 23,
+      "family": "G038",
+      "alias": "麦46草莓8-牛12羊9-3地-早畜",
+      "score": 0.7175377155172413,
+      "games": 22272,
+      "mean_unit_failures": 3.2286727729885056,
+      "mean_market_failures": 3.3569504310344827
+    },
+    {
+      "rank": 24,
+      "family": "G054",
+      "alias": "麦48草莓9-羊10牛6-3地-早畜",
+      "score": 0.7162805316091954,
+      "games": 22272,
+      "mean_unit_failures": 2.2957974137931036,
+      "mean_market_failures": 0.07300646551724138
+    },
+    {
+      "rank": 25,
+      "family": "G016",
+      "alias": "麦46草莓12-牛6羊6-3地-早畜",
+      "score": 0.7156968390804598,
+      "games": 22272,
+      "mean_unit_failures": 5.103807471264368,
+      "mean_market_failures": 2.180585488505747
+    },
+    {
+      "rank": 26,
+      "family": "G023",
+      "alias": "麦52草莓9-牛8鹅2-3地-早畜",
+      "score": 0.7151131465517241,
+      "games": 22272,
+      "mean_unit_failures": 1.7938667385057472,
+      "mean_market_failures": 0.11494252873563218
+    },
+    {
+      "rank": 27,
+      "family": "G093",
+      "alias": "麦39草莓9-牛13羊2-3地-早畜",
+      "score": 0.705706716954023,
+      "games": 22272,
+      "mean_unit_failures": 0.2745599856321839,
+      "mean_market_failures": 0.2630208333333333
+    },
+    {
+      "rank": 28,
+      "family": "G010",
+      "alias": "胡萝卜31麦16-牛10羊4-3地-早畜",
+      "score": 0.7055046695402298,
+      "games": 22272,
+      "mean_unit_failures": 1.0602550287356323,
+      "mean_market_failures": 0.22629310344827586
+    },
+    {
+      "rank": 29,
+      "family": "G201",
+      "alias": "麦53草莓7-牛10羊5-3地-早畜",
+      "score": 0.7015086206896551,
+      "games": 22272,
+      "mean_unit_failures": 2.5522629310344827,
+      "mean_market_failures": 2.5559895833333335
+    },
+    {
+      "rank": 30,
+      "family": "G133",
+      "alias": "麦42草莓13-牛10羊2-3地-早畜",
+      "score": 0.7009698275862069,
+      "games": 22272,
+      "mean_unit_failures": 0.4743175287356322,
+      "mean_market_failures": 0.5291397270114943
+    },
+    {
+      "rank": 31,
+      "family": "G008",
+      "alias": "麦43胡萝卜12-羊10牛6-3地-早畜",
+      "score": 0.6997126436781609,
+      "games": 22272,
+      "mean_unit_failures": 6.539376795977011,
+      "mean_market_failures": 4.224452227011494
+    },
+    {
+      "rank": 32,
+      "family": "G002",
+      "alias": "麦44草莓14-牛10羊4-3地-早畜",
+      "score": 0.6958961925287356,
+      "games": 22272,
+      "mean_unit_failures": 0.05275682471264368,
+      "mean_market_failures": 0.0990930316091954
+    },
+    {
+      "rank": 33,
+      "family": "G014",
+      "alias": "麦46草莓12-牛6羊5-3地-早畜",
+      "score": 0.6901715158045977,
+      "games": 22272,
+      "mean_unit_failures": 6.466909123563219,
+      "mean_market_failures": 4.055181393678161
+    },
+    {
+      "rank": 34,
+      "family": "G061",
+      "alias": "麦46草莓12-牛8羊6-3地-早畜",
+      "score": 0.6894306752873564,
+      "games": 22272,
+      "mean_unit_failures": 6.6504130747126435,
+      "mean_market_failures": 4.279229525862069
+    },
+    {
+      "rank": 35,
+      "family": "G017",
+      "alias": "麦51草莓9-牛6鹅3-3地-早畜",
+      "score": 0.6828753591954023,
+      "games": 22272,
+      "mean_unit_failures": 2.617950790229885,
+      "mean_market_failures": 0.2639637212643678
+    },
+    {
+      "rank": 36,
+      "family": "G060",
+      "alias": "麦51草莓9-羊8牛7-3地-早畜",
+      "score": 0.6806752873563219,
+      "games": 22272,
+      "mean_unit_failures": 2.01409841954023,
+      "mean_market_failures": 2.3059895833333335
+    },
+    {
+      "rank": 37,
+      "family": "G258",
+      "alias": "胡萝卜36番茄15-羊10牛9-3地-早畜",
+      "score": 0.6729974856321839,
+      "games": 22272,
+      "mean_unit_failures": 2.3944414511494254,
+      "mean_market_failures": 0.5831986350574713
+    },
+    {
+      "rank": 38,
+      "family": "G155",
+      "alias": "麦42草莓15-羊11牛5-3地-早畜",
+      "score": 0.6633441091954023,
+      "games": 22272,
+      "mean_unit_failures": 0.9358836206896551,
+      "mean_market_failures": 0.9597252155172413
+    },
+    {
+      "rank": 39,
+      "family": "G004",
+      "alias": "麦49草莓24-羊12牛6-4地-早畜",
+      "score": 0.6563397988505747,
+      "games": 22272,
+      "mean_unit_failures": 0.18943067528735633,
+      "mean_market_failures": 1.0649694683908046
+    },
+    {
+      "rank": 40,
+      "family": "G226",
+      "alias": "番茄28麦16-牛9羊2-3地-早畜",
+      "score": 0.6556663074712644,
+      "games": 22272,
+      "mean_unit_failures": 2.5372216235632186,
+      "mean_market_failures": 0.4868444683908046
+    },
+    {
+      "rank": 41,
+      "family": "G185",
+      "alias": "麦56草莓2-羊9牛6-3地-早畜",
+      "score": 0.6547234195402298,
+      "games": 22272,
+      "mean_unit_failures": 7.080684267241379,
+      "mean_market_failures": 4.111081178160919
+    },
+    {
+      "rank": 42,
+      "family": "G089",
+      "alias": "麦41草莓11-羊12牛7-3地-早畜",
+      "score": 0.6502783764367817,
+      "games": 22272,
+      "mean_unit_failures": 10.415678879310345,
+      "mean_market_failures": 4.260326867816092
+    },
+    {
+      "rank": 43,
+      "family": "G113",
+      "alias": "麦24草莓19-牛10羊6-3地-早畜",
+      "score": 0.648504849137931,
+      "games": 22272,
+      "mean_unit_failures": 8.530845905172415,
+      "mean_market_failures": 3.6710219109195403
+    },
+    {
+      "rank": 44,
+      "family": "G025",
+      "alias": "麦45草莓11-牛12羊2-3地-早畜",
+      "score": 0.6473150143678161,
+      "games": 22272,
+      "mean_unit_failures": 0.25332255747126436,
+      "mean_market_failures": 0.21744791666666666
+    },
+    {
+      "rank": 45,
+      "family": "G171",
+      "alias": "胡萝卜26麦23-牛9羊4-3地-早畜",
+      "score": 0.6461476293103449,
+      "games": 22272,
+      "mean_unit_failures": 1.974676724137931,
+      "mean_market_failures": 2.296381106321839
+    },
+    {
+      "rank": 46,
+      "family": "G269",
+      "alias": "麦40胡萝卜24-牛7羊4-3地-早畜",
+      "score": 0.6327676005747126,
+      "games": 22272,
+      "mean_unit_failures": 2.3780531609195403,
+      "mean_market_failures": 0.9909752155172413
+    },
+    {
+      "rank": 47,
+      "family": "G257",
+      "alias": "胡萝卜42草莓12-牛6羊6-3地-早畜",
+      "score": 0.6295797413793104,
+      "games": 22272,
+      "mean_unit_failures": 7.948410560344827,
+      "mean_market_failures": 2.3536727729885056
+    },
+    {
+      "rank": 48,
+      "family": "G197",
+      "alias": "胡萝卜40麦14-牛9羊4-3地-早畜",
+      "score": 0.6290409482758621,
+      "games": 22272,
+      "mean_unit_failures": 2.73284841954023,
+      "mean_market_failures": 1.0390625
+    },
+    {
+      "rank": 49,
+      "family": "G109",
+      "alias": "麦44草莓9-羊13牛6-3地-早畜",
+      "score": 0.6247306034482759,
+      "games": 22272,
+      "mean_unit_failures": 4.3235452586206895,
+      "mean_market_failures": 4.0683818247126435
+    },
+    {
+      "rank": 50,
+      "family": "G165",
+      "alias": "胡萝卜37番茄15-牛9鹅2-3地-早畜",
+      "score": 0.6150098778735632,
+      "games": 22272,
+      "mean_unit_failures": 3.4920079022988504,
+      "mean_market_failures": 1.6740301724137931
+    },
+    {
+      "rank": 51,
+      "family": "G137",
+      "alias": "麦46番茄8-牛11羊2-3地-早畜",
+      "score": 0.6118444683908046,
+      "games": 22272,
+      "mean_unit_failures": 0.22148886494252873,
+      "mean_market_failures": 0.2205908764367816
+    },
+    {
+      "rank": 52,
+      "family": "G012",
+      "alias": "麦47草莓11-牛12羊3-3地-早畜",
+      "score": 0.6101382902298851,
+      "games": 22272,
+      "mean_unit_failures": 6.137796336206897,
+      "mean_market_failures": 5.772943606321839
+    },
+    {
+      "rank": 53,
+      "family": "G223",
+      "alias": "麦47草莓10-牛11羊3-3地-早畜",
+      "score": 0.6100484913793104,
+      "games": 22272,
+      "mean_unit_failures": 6.916801364942529,
+      "mean_market_failures": 4.398123204022989
+    },
+    {
+      "rank": 54,
+      "family": "G022",
+      "alias": "麦43草莓14-牛12羊3-3地-早畜",
+      "score": 0.599542025862069,
+      "games": 22272,
+      "mean_unit_failures": 6.017376077586207,
+      "mean_market_failures": 2.991065014367816
+    },
+    {
+      "rank": 55,
+      "family": "G210",
+      "alias": "麦38草莓19-牛9羊2-3地-早畜",
+      "score": 0.5978582974137931,
+      "games": 22272,
+      "mean_unit_failures": 2.4906160201149423,
+      "mean_market_failures": 0.4975305316091954
+    },
+    {
+      "rank": 56,
+      "family": "G195",
+      "alias": "胡萝卜32草莓12-羊13牛5-3地-早畜",
+      "score": 0.5963092672413793,
+      "games": 22272,
+      "mean_unit_failures": 1.5227191091954022,
+      "mean_market_failures": 1.5922234195402298
+    },
+    {
+      "rank": 57,
+      "family": "G024",
+      "alias": "麦55草莓2-牛6羊6-3地-早畜",
+      "score": 0.5883171695402298,
+      "games": 22272,
+      "mean_unit_failures": 6.605783045977011,
+      "mean_market_failures": 2.8872575431034484
+    },
+    {
+      "rank": 58,
+      "family": "G238",
+      "alias": "麦36草莓14-牛9羊2-3地-早畜",
+      "score": 0.5867232399425287,
+      "games": 22272,
+      "mean_unit_failures": 2.6969737787356323,
+      "mean_market_failures": 1.0936602011494252
+    },
+    {
+      "rank": 59,
+      "family": "G174",
+      "alias": "麦53草莓2-羊12牛7-3地-早畜",
+      "score": 0.5823904454022989,
+      "games": 22272,
+      "mean_unit_failures": 22.944594109195403,
+      "mean_market_failures": 15.081716954022989
+    },
+    {
+      "rank": 60,
+      "family": "G058",
+      "alias": "麦47草莓11-牛10羊5-3地-早畜",
+      "score": 0.5803699712643678,
+      "games": 22272,
+      "mean_unit_failures": 11.187095905172415,
+      "mean_market_failures": 5.041936063218391
+    },
+    {
+      "rank": 61,
+      "family": "G092",
+      "alias": "麦44草莓8-牛12羊3-3地-早畜",
+      "score": 0.5794270833333334,
+      "games": 22272,
+      "mean_unit_failures": 5.168238146551724,
+      "mean_market_failures": 3.0288254310344827
+    },
+    {
+      "rank": 62,
+      "family": "G100",
+      "alias": "麦30番茄14-牛11羊8-3地-早畜",
+      "score": 0.5739942528735632,
+      "games": 22272,
+      "mean_unit_failures": 30.956806752873565,
+      "mean_market_failures": 1.3382722701149425
+    },
+    {
+      "rank": 63,
+      "family": "G118",
+      "alias": "麦44胡萝卜12-羊12牛7-3地-早畜",
+      "score": 0.5722431752873564,
+      "games": 22272,
+      "mean_unit_failures": 5.571569683908046,
+      "mean_market_failures": 6.186063218390805
+    },
+    {
+      "rank": 64,
+      "family": "G056",
+      "alias": "麦51草莓7-羊8牛7-3地-早畜",
+      "score": 0.5665633979885057,
+      "games": 22272,
+      "mean_unit_failures": 13.387661637931034,
+      "mean_market_failures": 8.065014367816092
+    },
+    {
+      "rank": 65,
+      "family": "G027",
+      "alias": "麦37草莓22-牛14羊2-3地-早畜",
+      "score": 0.5589978448275862,
+      "games": 22272,
+      "mean_unit_failures": 0.21996228448275862,
+      "mean_market_failures": 0.21933369252873564
+    },
+    {
+      "rank": 66,
+      "family": "G179",
+      "alias": "麦40胡萝卜16-牛8羊2-3地-早畜",
+      "score": 0.5580549568965517,
+      "games": 22272,
+      "mean_unit_failures": 0.25785739942528735,
+      "mean_market_failures": 0.21744791666666666
+    },
+    {
+      "rank": 67,
+      "family": "G078",
+      "alias": "麦45草莓13-牛12羊3-3地-早畜",
+      "score": 0.552801724137931,
+      "games": 22272,
+      "mean_unit_failures": 10.560748922413794,
+      "mean_market_failures": 5.908674568965517
+    },
+    {
+      "rank": 68,
+      "family": "G131",
+      "alias": "胡萝卜23麦22-羊12牛7-3地-早畜",
+      "score": 0.5501077586206896,
+      "games": 22272,
+      "mean_unit_failures": 19.45002693965517,
+      "mean_market_failures": 3.80078125
+    },
+    {
+      "rank": 69,
+      "family": "G041",
+      "alias": "麦48草莓10-牛6羊6-3地-早畜",
+      "score": 0.5458872126436781,
+      "games": 22272,
+      "mean_unit_failures": 8.409931752873563,
+      "mean_market_failures": 8.305316091954023
+    },
+    {
+      "rank": 70,
+      "family": "G141",
+      "alias": "麦34草莓18-牛11羊7-3地-早畜",
+      "score": 0.543664691091954,
+      "games": 22272,
+      "mean_unit_failures": 2.4301364942528734,
+      "mean_market_failures": 1.5827496408045978
+    },
+    {
+      "rank": 71,
+      "family": "G019",
+      "alias": "麦42草莓16-牛12羊3-3地-早畜",
+      "score": 0.5415768678160919,
+      "games": 22272,
+      "mean_unit_failures": 7.870016163793103,
+      "mean_market_failures": 6.894082255747127
+    },
+    {
+      "rank": 72,
+      "family": "G130",
+      "alias": "麦41草莓15-羊11牛7-3地-早畜",
+      "score": 0.5396686422413793,
+      "games": 22272,
+      "mean_unit_failures": 11.930181393678161,
+      "mean_market_failures": 8.61516702586207
+    },
+    {
+      "rank": 73,
+      "family": "G040",
+      "alias": "麦45草莓14-牛14羊2-3地-早畜",
+      "score": 0.537805316091954,
+      "games": 22272,
+      "mean_unit_failures": 0.22957076149425287,
+      "mean_market_failures": 0.21933369252873564
+    },
+    {
+      "rank": 74,
+      "family": "G029",
+      "alias": "麦49番茄12-牛7羊4-3地-早畜",
+      "score": 0.5311153017241379,
+      "games": 22272,
+      "mean_unit_failures": 3.2445222701149423,
+      "mean_market_failures": 3.4428430316091956
+    },
+    {
+      "rank": 75,
+      "family": "G018",
+      "alias": "麦52番茄3-牛11羊4-3地-早畜",
+      "score": 0.5310479525862069,
+      "games": 22272,
+      "mean_unit_failures": 14.07183908045977,
+      "mean_market_failures": 3.9060255028735633
+    },
+    {
+      "rank": 76,
+      "family": "G034",
+      "alias": "麦60草莓6-牛6羊2-3地-早畜",
+      "score": 0.5269396551724138,
+      "games": 22272,
+      "mean_unit_failures": 0.30194863505747127,
+      "mean_market_failures": 0.21744791666666666
+    },
+    {
+      "rank": 77,
+      "family": "G230",
+      "alias": "麦23草莓21-牛9羊2-3地-早畜",
+      "score": 0.5263559626436781,
+      "games": 22272,
+      "mean_unit_failures": 2.271686422413793,
+      "mean_market_failures": 0.6343839798850575
+    },
+    {
+      "rank": 78,
+      "family": "G125",
+      "alias": "麦30番茄18-牛9鹅4-3地-早畜",
+      "score": 0.5256375718390804,
+      "games": 22272,
+      "mean_unit_failures": 10.602325790229886,
+      "mean_market_failures": 5.351517600574713
+    },
+    {
+      "rank": 79,
+      "family": "G180",
+      "alias": "麦51草莓5-羊12牛7-3地-早畜",
+      "score": 0.5219109195402298,
+      "games": 22272,
+      "mean_unit_failures": 4.87262033045977,
+      "mean_market_failures": 0.43736530172413796
+    },
+    {
+      "rank": 80,
+      "family": "G189",
+      "alias": "麦19胡萝卜19-鹅4牛4-3地-早畜",
+      "score": 0.5193965517241379,
+      "games": 22272,
+      "mean_unit_failures": 1.4389816810344827,
+      "mean_market_failures": 0.6953125
+    },
+    {
+      "rank": 81,
+      "family": "G030",
+      "alias": "麦40草莓18-羊10牛5-3地-早畜",
+      "score": 0.5191496048850575,
+      "games": 22272,
+      "mean_unit_failures": 12.765490301724139,
+      "mean_market_failures": 9.697153376436782
+    },
+    {
+      "rank": 82,
+      "family": "G242",
+      "alias": "胡萝卜43草莓9-牛6羊2-3地-早畜",
+      "score": 0.5156698994252874,
+      "games": 22272,
+      "mean_unit_failures": 2.126885775862069,
+      "mean_market_failures": 3.7932830459770117
+    },
+    {
+      "rank": 83,
+      "family": "G241",
+      "alias": "麦48草莓8-羊9牛6-3地-早畜",
+      "score": 0.5147719109195402,
+      "games": 22272,
+      "mean_unit_failures": 8.548311781609195,
+      "mean_market_failures": 9.133800287356323
+    },
+    {
+      "rank": 84,
+      "family": "G129",
+      "alias": "胡萝卜39麦10-羊9牛7-3地-早畜",
+      "score": 0.5142780172413793,
+      "games": 22272,
+      "mean_unit_failures": 18.211700790229884,
+      "mean_market_failures": 14.015535201149426
+    },
+    {
+      "rank": 85,
+      "family": "G083",
+      "alias": "麦40草莓18-牛10羊3-3地-早畜",
+      "score": 0.5110452586206896,
+      "games": 22272,
+      "mean_unit_failures": 0.9422593390804598,
+      "mean_market_failures": 0.7156070402298851
+    },
+    {
+      "rank": 86,
+      "family": "G103",
+      "alias": "麦39草莓25-牛5羊3-3地-早畜",
+      "score": 0.5087778376436781,
+      "games": 22272,
+      "mean_unit_failures": 0.9029274425287356,
+      "mean_market_failures": 0.9597252155172413
+    },
+    {
+      "rank": 87,
+      "family": "G042",
+      "alias": "麦42草莓12-牛13羊2-3地-早畜",
+      "score": 0.5079920977011494,
+      "games": 22272,
+      "mean_unit_failures": 1.4111440373563218,
+      "mean_market_failures": 0.6726831896551724
+    },
+    {
+      "rank": 88,
+      "family": "G190",
+      "alias": "胡萝卜46麦7-牛7羊6-3地-早畜",
+      "score": 0.5052981321839081,
+      "games": 22272,
+      "mean_unit_failures": 5.853223778735632,
+      "mean_market_failures": 1.9297323994252873
+    },
+    {
+      "rank": 89,
+      "family": "G200",
+      "alias": "麦54草莓9-牛10羊2-3地-早畜",
+      "score": 0.5028062140804598,
+      "games": 22272,
+      "mean_unit_failures": 0.22916666666666666,
+      "mean_market_failures": 0.22332974137931033
+    },
+    {
+      "rank": 90,
+      "family": "G005",
+      "alias": "麦43草莓33-羊12牛6-4地-早畜",
+      "score": 0.49407327586206895,
+      "games": 22272,
+      "mean_unit_failures": 3.403600933908046,
+      "mean_market_failures": 5.318067528735632
+    },
+    {
+      "rank": 91,
+      "family": "G158",
+      "alias": "麦41草莓17-羊12牛5-3地-早畜",
+      "score": 0.4924793462643678,
+      "games": 22272,
+      "mean_unit_failures": 3.8832614942528734,
+      "mean_market_failures": 1.9186871408045978
+    },
+    {
+      "rank": 92,
+      "family": "G164",
+      "alias": "麦50草莓8-牛12羊5-3地-早畜",
+      "score": 0.49200790229885055,
+      "games": 22272,
+      "mean_unit_failures": 2.4400592672413794,
+      "mean_market_failures": 2.949982040229885
+    },
+    {
+      "rank": 93,
+      "family": "G011",
+      "alias": "麦55草莓3-牛6羊6-3地-早畜",
+      "score": 0.48760775862068967,
+      "games": 22272,
+      "mean_unit_failures": 10.009069683908047,
+      "mean_market_failures": 8.680675287356323
+    },
+    {
+      "rank": 94,
+      "family": "G186",
+      "alias": "胡萝卜44草莓11-牛9-3地-早畜",
+      "score": 0.4769665948275862,
+      "games": 22272,
+      "mean_unit_failures": 2.532507183908046,
+      "mean_market_failures": 0.9978448275862069
+    },
+    {
+      "rank": 95,
+      "family": "G021",
+      "alias": "麦51草莓7-羊10牛5-3地-早畜",
+      "score": 0.4764727011494253,
+      "games": 22272,
+      "mean_unit_failures": 15.612338362068966,
+      "mean_market_failures": 9.680989583333334
+    },
+    {
+      "rank": 96,
+      "family": "G052",
+      "alias": "麦50草莓7-羊10牛5-3地-早畜",
+      "score": 0.4669989224137931,
+      "games": 22272,
+      "mean_unit_failures": 9.00323275862069,
+      "mean_market_failures": 6.01477191091954
+    },
+    {
+      "rank": 97,
+      "family": "G039",
+      "alias": "麦29草莓20-牛15-3地-早畜",
+      "score": 0.46601113505747127,
+      "games": 22272,
+      "mean_unit_failures": 2.50152658045977,
+      "mean_market_failures": 2.035021551724138
+    },
+    {
+      "rank": 98,
+      "family": "G187",
+      "alias": "麦26草莓18-牛4羊4-3地-早畜",
+      "score": 0.4629130747126437,
+      "games": 22272,
+      "mean_unit_failures": 1.5963092672413792,
+      "mean_market_failures": 1.5933010057471264
+    },
+    {
+      "rank": 99,
+      "family": "G191",
+      "alias": "麦44番茄13-牛6羊4-3地-早畜",
+      "score": 0.46161099137931033,
+      "games": 22272,
+      "mean_unit_failures": 12.828708692528735,
+      "mean_market_failures": 12.070267600574713
+    },
+    {
+      "rank": 100,
+      "family": "G094",
+      "alias": "麦28草莓16-羊10牛9-3地-早畜",
+      "score": 0.4573679956896552,
+      "games": 22272,
+      "mean_unit_failures": 23.740167025862068,
+      "mean_market_failures": 4.878861350574713
+    },
+    {
+      "rank": 101,
+      "family": "G095",
+      "alias": "麦49草莓13-羊8牛5-3地-早畜",
+      "score": 0.4572557471264368,
+      "games": 22272,
+      "mean_unit_failures": 11.628996048850574,
+      "mean_market_failures": 15.205639367816092
+    },
+    {
+      "rank": 102,
+      "family": "G026",
+      "alias": "麦45草莓17-牛10羊3-3地-早畜",
+      "score": 0.45514547413793105,
+      "games": 22272,
+      "mean_unit_failures": 1.6853448275862069,
+      "mean_market_failures": 0.6668911637931034
+    },
+    {
+      "rank": 103,
+      "family": "G250",
+      "alias": "胡萝卜37麦11-羊9牛4-3地-早畜",
+      "score": 0.4425287356321839,
+      "games": 22272,
+      "mean_unit_failures": 3.289197198275862,
+      "mean_market_failures": 4.668776939655173
+    },
+    {
+      "rank": 104,
+      "family": "G213",
+      "alias": "麦28胡萝卜14-羊12牛7-3地-早畜",
+      "score": 0.44198994252873564,
+      "games": 22272,
+      "mean_unit_failures": 0.4313487787356322,
+      "mean_market_failures": 0.036233836206896554
+    },
+    {
+      "rank": 105,
+      "family": "G081",
+      "alias": "麦37草莓13-牛16羊2-3地-早畜",
+      "score": 0.44136135057471265,
+      "games": 22272,
+      "mean_unit_failures": 1.7482489224137931,
+      "mean_market_failures": 0.7092762212643678
+    },
+    {
+      "rank": 106,
+      "family": "G239",
+      "alias": "麦31番茄16-牛9-3地-早畜",
+      "score": 0.4406429597701149,
+      "games": 22272,
+      "mean_unit_failures": 2.326239224137931,
+      "mean_market_failures": 0.8235452586206896
+    },
+    {
+      "rank": 107,
+      "family": "G077",
+      "alias": "草莓21番茄15-羊15牛3-3地-早畜",
+      "score": 0.43799389367816094,
+      "games": 22272,
+      "mean_unit_failures": 37.56110811781609,
+      "mean_market_failures": 9.608791307471265
+    },
+    {
+      "rank": 108,
+      "family": "G229",
+      "alias": "胡萝卜54草莓5-羊7牛6-3地-早畜",
+      "score": 0.4339080459770115,
+      "games": 22272,
+      "mean_unit_failures": 2.2517959770114944,
+      "mean_market_failures": 0.8014547413793104
+    },
+    {
+      "rank": 109,
+      "family": "G051",
+      "alias": "麦47草莓13-牛7羊3-3地-早畜",
+      "score": 0.4320671695402299,
+      "games": 22272,
+      "mean_unit_failures": 0.16769935344827586,
+      "mean_market_failures": 0.10811781609195402
+    },
+    {
+      "rank": 110,
+      "family": "G140",
+      "alias": "胡萝卜40草莓21-牛9羊3-3地-早畜",
+      "score": 0.4313038793103448,
+      "games": 22272,
+      "mean_unit_failures": 9.55060165229885,
+      "mean_market_failures": 4.100125718390805
+    },
+    {
+      "rank": 111,
+      "family": "G222",
+      "alias": "麦49番茄7-羊12牛7-3地-早畜",
+      "score": 0.43119163074712646,
+      "games": 22272,
+      "mean_unit_failures": 0.1791936063218391,
+      "mean_market_failures": 0.10811781609195402
+    },
+    {
+      "rank": 112,
+      "family": "G196",
+      "alias": "麦51草莓9-羊10牛5-3地-早畜",
+      "score": 0.42932830459770116,
+      "games": 22272,
+      "mean_unit_failures": 22.045123922413794,
+      "mean_market_failures": 6.307426364942529
+    },
+    {
+      "rank": 113,
+      "family": "G114",
+      "alias": "麦37草莓25-牛6羊6-3地-早畜",
+      "score": 0.42254849137931033,
+      "games": 22272,
+      "mean_unit_failures": 6.007902298850575,
+      "mean_market_failures": 7.128187859195402
+    },
+    {
+      "rank": 114,
+      "family": "G028",
+      "alias": "麦39草莓18-羊10牛4-3地-早畜",
+      "score": 0.4167340158045977,
+      "games": 22272,
+      "mean_unit_failures": 19.005028735632184,
+      "mean_market_failures": 11.520743534482758
+    },
+    {
+      "rank": 115,
+      "family": "G096",
+      "alias": "胡萝卜34麦13-羊11牛7-3地-早畜",
+      "score": 0.4138380028735632,
+      "games": 22272,
+      "mean_unit_failures": 26.199533045977013,
+      "mean_market_failures": 14.319773706896552
+    },
+    {
+      "rank": 116,
+      "family": "G069",
+      "alias": "胡萝卜26麦21-羊17牛3-3地-早畜",
+      "score": 0.41361350574712646,
+      "games": 22272,
+      "mean_unit_failures": 41.05500179597701,
+      "mean_market_failures": 3.7807112068965516
+    },
+    {
+      "rank": 117,
+      "family": "G205",
+      "alias": "胡萝卜44麦13-牛9鹅4-3地-早畜",
+      "score": 0.40369073275862066,
+      "games": 22272,
+      "mean_unit_failures": 15.277298850574713,
+      "mean_market_failures": 6.005657327586207
+    },
+    {
+      "rank": 118,
+      "family": "G098",
+      "alias": "麦29草莓18-羊18牛4-3地-早畜",
+      "score": 0.40292744252873564,
+      "games": 22272,
+      "mean_unit_failures": 1.1514457614942528,
+      "mean_market_failures": 0.8250718390804598
+    },
+    {
+      "rank": 119,
+      "family": "G264",
+      "alias": "麦42胡萝卜10-羊12牛7-3地-早畜",
+      "score": 0.4028825431034483,
+      "games": 22272,
+      "mean_unit_failures": 0.046291307471264365,
+      "mean_market_failures": 0.01050646551724138
+    },
+    {
+      "rank": 120,
+      "family": "G090",
+      "alias": "麦46草莓8-羊13牛7-3地-早畜",
+      "score": 0.40099676724137934,
+      "games": 22272,
+      "mean_unit_failures": 36.2361709770115,
+      "mean_market_failures": 10.637931034482758
+    },
+    {
+      "rank": 121,
+      "family": "G057",
+      "alias": "麦62-牛10羊3-3地-早畜",
+      "score": 0.39816810344827586,
+      "games": 22272,
+      "mean_unit_failures": 0.7874461206896551,
+      "mean_market_failures": 0.3943067528735632
+    },
+    {
+      "rank": 122,
+      "family": "G015",
+      "alias": "麦47草莓11-羊10牛4-3地-早畜",
+      "score": 0.3935434626436782,
+      "games": 22272,
+      "mean_unit_failures": 35.439924568965516,
+      "mean_market_failures": 10.828394396551724
+    },
+    {
+      "rank": 123,
+      "family": "G099",
+      "alias": "麦34草莓12-羊15牛9-3地-早畜",
+      "score": 0.39143318965517243,
+      "games": 22272,
+      "mean_unit_failures": 5.313128591954023,
+      "mean_market_failures": 1.7136763649425288
+    },
+    {
+      "rank": 124,
+      "family": "G166",
+      "alias": "麦29草莓24-羊12牛10-3地-早畜",
+      "score": 0.38882902298850575,
+      "games": 22272,
+      "mean_unit_failures": 12.526849856321839,
+      "mean_market_failures": 2.4951059626436782
+    },
+    {
+      "rank": 125,
+      "family": "G067",
+      "alias": "麦27番茄24-牛11羊3-3地-早畜",
+      "score": 0.3874820402298851,
+      "games": 22272,
+      "mean_unit_failures": 25.193696120689655,
+      "mean_market_failures": 3.9938936781609193
+    },
+    {
+      "rank": 126,
+      "family": "G231",
+      "alias": "麦29番茄17-羊7牛4-3地-早畜",
+      "score": 0.38633710488505746,
+      "games": 22272,
+      "mean_unit_failures": 7.474991020114943,
+      "mean_market_failures": 5.790095186781609
+    },
+    {
+      "rank": 127,
+      "family": "G192",
+      "alias": "胡萝卜37草莓15-牛9羊5-3地-早畜",
+      "score": 0.38492277298850575,
+      "games": 22272,
+      "mean_unit_failures": 31.15795617816092,
+      "mean_market_failures": 2.1230693247126435
+    },
+    {
+      "rank": 128,
+      "family": "G086",
+      "alias": "麦47草莓8-羊12牛7-3地-早畜",
+      "score": 0.3846533764367816,
+      "games": 22272,
+      "mean_unit_failures": 47.94118175287356,
+      "mean_market_failures": 6.794360632183908
+    },
+    {
+      "rank": 129,
+      "family": "G246",
+      "alias": "胡萝卜27麦21-牛12羊2-3地-早畜",
+      "score": 0.3843390804597701,
+      "games": 22272,
+      "mean_unit_failures": 4.249057112068965,
+      "mean_market_failures": 1.2042923850574712
+    },
+    {
+      "rank": 130,
+      "family": "G143",
+      "alias": "麦30草莓23-羊12牛10-3地-早畜",
+      "score": 0.37895114942528735,
+      "games": 22272,
+      "mean_unit_failures": 11.119701867816092,
+      "mean_market_failures": 2.0163433908045976
+    },
+    {
+      "rank": 131,
+      "family": "G148",
+      "alias": "胡萝卜42草莓22-牛9羊2-3地-早畜",
+      "score": 0.3772898706896552,
+      "games": 22272,
+      "mean_unit_failures": 23.153600933908045,
+      "mean_market_failures": 2.9883261494252875
+    },
+    {
+      "rank": 132,
+      "family": "G178",
+      "alias": "麦53番茄9-牛10羊3-3地-早畜",
+      "score": 0.3718121408045977,
+      "games": 22272,
+      "mean_unit_failures": 0.16617277298850575,
+      "mean_market_failures": 0.10811781609195402
+    },
+    {
+      "rank": 133,
+      "family": "G066",
+      "alias": "草莓26麦22-羊17牛8-3地-早畜",
+      "score": 0.371722341954023,
+      "games": 22272,
+      "mean_unit_failures": 4.116199712643678,
+      "mean_market_failures": 1.8491828304597702
+    },
+    {
+      "rank": 134,
+      "family": "G097",
+      "alias": "草莓20麦17-羊11牛6-3地-早畜",
+      "score": 0.3701957614942529,
+      "games": 22272,
+      "mean_unit_failures": 2.7945402298850577,
+      "mean_market_failures": 2.0916846264367814
+    },
+    {
+      "rank": 135,
+      "family": "G152",
+      "alias": "麦35番茄22-牛9羊3-3地-早畜",
+      "score": 0.3654364224137931,
+      "games": 22272,
+      "mean_unit_failures": 16.588182471264368,
+      "mean_market_failures": 11.260910560344827
+    },
+    {
+      "rank": 136,
+      "family": "G248",
+      "alias": "麦39草莓10-羊8鹅6-3地-早畜",
+      "score": 0.3635057471264368,
+      "games": 22272,
+      "mean_unit_failures": 4.7258890086206895,
+      "mean_market_failures": 2.5083961925287355
+    },
+    {
+      "rank": 137,
+      "family": "G120",
+      "alias": "麦42草莓6-羊18牛6-3地-早畜",
+      "score": 0.3631914511494253,
+      "games": 22272,
+      "mean_unit_failures": 18.92474856321839,
+      "mean_market_failures": 8.347341954022989
+    },
+    {
+      "rank": 138,
+      "family": "G084",
+      "alias": "麦48草莓6-羊17牛3-3地-早畜",
+      "score": 0.3611260775862069,
+      "games": 22272,
+      "mean_unit_failures": 41.560075431034484,
+      "mean_market_failures": 9.467941810344827
+    },
+    {
+      "rank": 139,
+      "family": "G065",
+      "alias": "麦23番茄18-牛13羊13-3地-早畜",
+      "score": 0.35834231321839083,
+      "games": 22272,
+      "mean_unit_failures": 2.9525862068965516,
+      "mean_market_failures": 1.0233477011494252
+    },
+    {
+      "rank": 140,
+      "family": "G115",
+      "alias": "麦33草莓22-羊12牛8-3地-早畜",
+      "score": 0.35466056034482757,
+      "games": 22272,
+      "mean_unit_failures": 9.795932112068966,
+      "mean_market_failures": 1.6915858477011494
+    },
+    {
+      "rank": 141,
+      "family": "G275",
+      "alias": "麦38草莓13-牛9羊3-3地-早畜",
+      "score": 0.35400951867816094,
+      "games": 22272,
+      "mean_unit_failures": 2.1449353448275863,
+      "mean_market_failures": 0.25915948275862066
+    },
+    {
+      "rank": 142,
+      "family": "G071",
+      "alias": "麦37草莓16-羊12牛10-3地-早畜",
+      "score": 0.3534931752873563,
+      "games": 22272,
+      "mean_unit_failures": 29.503636853448278,
+      "mean_market_failures": 0.8936332614942529
+    },
+    {
+      "rank": 143,
+      "family": "G265",
+      "alias": "麦36胡萝卜17-牛6羊3-3地-早畜",
+      "score": 0.3515625,
+      "games": 22272,
+      "mean_unit_failures": 2.1200610632183907,
+      "mean_market_failures": 0.20842313218390804
+    },
+    {
+      "rank": 144,
+      "family": "G243",
+      "alias": "麦41胡萝卜10-羊11牛7-3地-早畜",
+      "score": 0.3481950431034483,
+      "games": 22272,
+      "mean_unit_failures": 1.9260955459770115,
+      "mean_market_failures": 0.6279633620689655
+    },
+    {
+      "rank": 145,
+      "family": "G105",
+      "alias": "麦26胡萝卜19-羊16牛1-3地-早畜",
+      "score": 0.3403825431034483,
+      "games": 22272,
+      "mean_unit_failures": 41.06797772988506,
+      "mean_market_failures": 9.410380747126437
+    },
+    {
+      "rank": 146,
+      "family": "G059",
+      "alias": "胡萝卜44草莓11-羊10牛4-3地-早畜",
+      "score": 0.33555585488505746,
+      "games": 22272,
+      "mean_unit_failures": 35.439655172413794,
+      "mean_market_failures": 10.828394396551724
+    },
+    {
+      "rank": 147,
+      "family": "G050",
+      "alias": "草莓27胡萝卜25-牛6羊2-3地-早畜",
+      "score": 0.3277882543103448,
+      "games": 22272,
+      "mean_unit_failures": 2.23675466954023,
+      "mean_market_failures": 0.3451867816091954
+    },
+    {
+      "rank": 148,
+      "family": "G252",
+      "alias": "麦57草莓6-牛6鹅3-3地-早畜",
+      "score": 0.32632902298850575,
+      "games": 22272,
+      "mean_unit_failures": 11.565014367816092,
+      "mean_market_failures": 7.997395833333333
+    },
+    {
+      "rank": 149,
+      "family": "G266",
+      "alias": "胡萝卜36麦9-牛7羊7-3地-早畜",
+      "score": 0.3251167385057471,
+      "games": 22272,
+      "mean_unit_failures": 8.884294181034482,
+      "mean_market_failures": 5.654005028735632
+    },
+    {
+      "rank": 150,
+      "family": "G221",
+      "alias": "胡萝卜27麦19-羊9牛6-3地-早畜",
+      "score": 0.3217492816091954,
+      "games": 22272,
+      "mean_unit_failures": 16.3629220545977,
+      "mean_market_failures": 7.917923850574713
+    },
+    {
+      "rank": 151,
+      "family": "G233",
+      "alias": "麦48草莓11-牛7羊3-3地-早畜",
+      "score": 0.30699982040229884,
+      "games": 22272,
+      "mean_unit_failures": 1.0930765086206897,
+      "mean_market_failures": 0.6279633620689655
+    },
+    {
+      "rank": 152,
+      "family": "G159",
+      "alias": "胡萝卜29番茄20-羊10牛3-3地-早畜",
+      "score": 0.304058908045977,
+      "games": 22272,
+      "mean_unit_failures": 20.670393318965516,
+      "mean_market_failures": 8.052846623563218
+    },
+    {
+      "rank": 153,
+      "family": "G079",
+      "alias": "麦24草莓20-羊17牛8-3地-早畜",
+      "score": 0.3038344109195402,
+      "games": 22272,
+      "mean_unit_failures": 3.641253591954023,
+      "mean_market_failures": 1.0376257183908046
+    },
+    {
+      "rank": 154,
+      "family": "G203",
+      "alias": "麦49胡萝卜10-牛10羊3-3地-早畜",
+      "score": 0.30280172413793105,
+      "games": 22272,
+      "mean_unit_failures": 1.9248832614942528,
+      "mean_market_failures": 1.0139188218390804
+    },
+    {
+      "rank": 155,
+      "family": "G256",
+      "alias": "麦42胡萝卜17-牛6羊2-3地-早畜",
+      "score": 0.29249730603448276,
+      "games": 22272,
+      "mean_unit_failures": 2.2888829022988504,
+      "mean_market_failures": 1.235003591954023
+    },
+    {
+      "rank": 156,
+      "family": "G268",
+      "alias": "胡萝卜61麦4-牛6羊2-3地-早畜",
+      "score": 0.28921964798850575,
+      "games": 22272,
+      "mean_unit_failures": 2.2351831896551726,
+      "mean_market_failures": 0.6864224137931034
+    },
+    {
+      "rank": 157,
+      "family": "G193",
+      "alias": "胡萝卜41麦16-牛9羊2-3地-早畜",
+      "score": 0.2885237068965517,
+      "games": 22272,
+      "mean_unit_failures": 10.78210308908046,
+      "mean_market_failures": 13.498697916666666
+    },
+    {
+      "rank": 158,
+      "family": "G162",
+      "alias": "麦46胡萝卜12-羊12牛5-3地-早畜",
+      "score": 0.28380926724137934,
+      "games": 22272,
+      "mean_unit_failures": 20.059177442528735,
+      "mean_market_failures": 1.479840158045977
+    },
+    {
+      "rank": 159,
+      "family": "G181",
+      "alias": "麦45胡萝卜11-羊12牛7-3地-早畜",
+      "score": 0.2824622844827586,
+      "games": 22272,
+      "mean_unit_failures": 0.060479525862068964,
+      "mean_market_failures": 0.0028735632183908046
+    },
+    {
+      "rank": 160,
+      "family": "G259",
+      "alias": "麦53胡萝卜10-牛7羊3-3地-早畜",
+      "score": 0.27911727729885055,
+      "games": 22272,
+      "mean_unit_failures": 0.09873383620689655,
+      "mean_market_failures": 0.07044719827586207
+    },
+    {
+      "rank": 161,
+      "family": "G106",
+      "alias": "麦40胡萝卜8-羊14牛10-3地-早畜",
+      "score": 0.2666127873563218,
+      "games": 22272,
+      "mean_unit_failures": 3.7254849137931036,
+      "mean_market_failures": 4.902074353448276
+    },
+    {
+      "rank": 162,
+      "family": "G244",
+      "alias": "麦54胡萝卜10-牛8羊3-3地-早畜",
+      "score": 0.2535021551724138,
+      "games": 22272,
+      "mean_unit_failures": 0.09644396551724138,
+      "mean_market_failures": 0.055765086206896554
+    },
+    {
+      "rank": 163,
+      "family": "G144",
+      "alias": "麦54草莓13-羊14牛5-4地-早畜",
+      "score": 0.2516388290229885,
+      "games": 22272,
+      "mean_unit_failures": 17.542699353448278,
+      "mean_market_failures": 17.667025862068964
+    },
+    {
+      "rank": 164,
+      "family": "G206",
+      "alias": "胡萝卜42草莓19-牛4羊3-3地-早畜",
+      "score": 0.24182830459770116,
+      "games": 22272,
+      "mean_unit_failures": 10.748518318965518,
+      "mean_market_failures": 5.893094468390805
+    },
+    {
+      "rank": 165,
+      "family": "G068",
+      "alias": "麦34草莓25-牛13羊3-3地-早畜",
+      "score": 0.21479885057471265,
+      "games": 22272,
+      "mean_unit_failures": 56.74304058908046,
+      "mean_market_failures": 7.135326867816092
+    },
+    {
+      "rank": 166,
+      "family": "G267",
+      "alias": "麦33草莓20-羊15牛5-3地-早畜",
+      "score": 0.21116199712643677,
+      "games": 22272,
+      "mean_unit_failures": 16.532237787356323,
+      "mean_market_failures": 1.6706627155172413
+    },
+    {
+      "rank": 167,
+      "family": "G175",
+      "alias": "麦41胡萝卜16-羊12牛6-3地-早畜",
+      "score": 0.18702855603448276,
+      "games": 22272,
+      "mean_unit_failures": 6.959680316091954,
+      "mean_market_failures": 1.5500628591954022
+    },
+    {
+      "rank": 168,
+      "family": "G228",
+      "alias": "胡萝卜37麦17-羊13牛7-3地-早畜",
+      "score": 0.18664691091954022,
+      "games": 22272,
+      "mean_unit_failures": 59.153107040229884,
+      "mean_market_failures": 9.479166666666666
+    },
+    {
+      "rank": 169,
+      "family": "G172",
+      "alias": "胡萝卜40麦22-鹅6牛4-3地-早畜",
+      "score": 0.18583872126436782,
+      "games": 22272,
+      "mean_unit_failures": 19.820402298850574,
+      "mean_market_failures": 5.278376436781609
+    },
+    {
+      "rank": 170,
+      "family": "G116",
+      "alias": "麦47番茄6-羊12牛10-3地-早畜",
+      "score": 0.16738505747126436,
+      "games": 22272,
+      "mean_unit_failures": 52.12378771551724,
+      "mean_market_failures": 3.1969288793103448
+    },
+    {
+      "rank": 171,
+      "family": "G236",
+      "alias": "麦36胡萝卜26-羊7牛4-3地-早畜",
+      "score": 0.16415229885057472,
+      "games": 22272,
+      "mean_unit_failures": 3.0035919540229883,
+      "mean_market_failures": 4.434042744252873
+    },
+    {
+      "rank": 172,
+      "family": "G249",
+      "alias": "麦44胡萝卜10-羊12牛9-3地-早畜",
+      "score": 0.1460578304597701,
+      "games": 22272,
+      "mean_unit_failures": 8.001751077586206,
+      "mean_market_failures": 4.128681752873563
+    },
+    {
+      "rank": 173,
+      "family": "G053",
+      "alias": "草莓43麦31-牛12羊4-4地-早畜",
+      "score": 0.09586027298850575,
+      "games": 22272,
+      "mean_unit_failures": 51.40256824712644,
+      "mean_market_failures": 4.135237068965517
+    },
+    {
+      "rank": 174,
+      "family": "G254",
+      "alias": "麦34草莓25-牛8羊6-3地-早畜",
+      "score": 0.0829516882183908,
+      "games": 22272,
+      "mean_unit_failures": 63.353538074712645,
+      "mean_market_failures": 2.5833782327586206
+    },
+    {
+      "rank": 175,
+      "family": "G138",
+      "alias": "麦33草莓25-羊11牛5-3地-早畜",
+      "score": 0.07507183908045977,
+      "games": 22272,
+      "mean_unit_failures": 57.68745510057471,
+      "mean_market_failures": 3.0032327586206895
+    }
+  ]
+}
