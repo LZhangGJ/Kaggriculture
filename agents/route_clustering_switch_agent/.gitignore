@@ -1,8 +1,12 @@
-# Reproducible bulk search outputs. Keep summaries and final policies in Git.
-experiments/**/*-distance*.f32
-experiments/**/*-distance-input*.bin
-experiments/**/intent-11-switch-fine-128seeds-v1.npz
-experiments/**/intent-175-switch-coarse-8seeds-v1.npz
+# Reproducible search outputs belong outside the source tree.
+experiments/
+build/
+configs/pipeline.env
+__pycache__/
+*.pyc
+*.npz
+*.f32
+*.bin
 
 # Platform-specific native build products.
 fast_kaggriculture/build/

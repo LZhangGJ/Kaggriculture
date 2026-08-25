@@ -16,63 +16,10 @@ from scipy.stats import t as student_t
 from sklearn.model_selection import GroupKFold
 from sklearn.tree import DecisionTreeClassifier, export_text
 
-from meta_agent.src.fingerprints import ITEMS
-from meta_agent.src.route_switch_features import ANIMALS, CROPS, HORIZONS, TRADE_ITEMS
-
-
-PLAN_HORIZONS = HORIZONS
-QUADRANTS = ("NW", "NE", "SW", "SE")
-STRUCTURES = ("SOIL", "COOP", "PASTURE")
-
-
-def _public_names(prefix: str) -> list[str]:
-    names = [
-        f"{prefix}_money_log", f"{prefix}_hands", f"{prefix}_land",
-        f"{prefix}_hires_today", f"{prefix}_farmer_x", f"{prefix}_farmer_y",
-    ]
-    crop_fields = ("count", "yield", "needs_water", "unwatered", "harvestable", "fertilized")
-    animal_fields = ("count", "yield", "needs_feed", "needs_care", "unfed", "harvestable")
-    for item in CROPS:
-        names.extend(f"{prefix}_{item.lower()}_{field}" for field in crop_fields)
-    for item in ANIMALS:
-        names.extend(f"{prefix}_{item.lower()}_{field}" for field in animal_fields)
-    names.extend(f"{prefix}_{item.lower()}_count" for item in STRUCTURES)
-    for quadrant in QUADRANTS:
-        names.extend(
-            f"{prefix}_{quadrant.lower()}_{field}"
-            for field in ("unlocked", "empty", "crops", "animals", "workers")
-        )
-    return names
-
-
-def _private_names() -> list[str]:
-    names = [f"self_shed_{item.lower()}_log" for item in ITEMS]
-    names.extend(f"self_carried_{item.lower()}_log" for item in ITEMS)
-    names.extend(f"self_seed_{item.lower()}_log" for item in CROPS)
-    names.extend(("self_shed_total", "self_carried_total", "self_shed_near_full"))
-    for horizon in PLAN_HORIZONS:
-        names.extend(
-            [
-                f"plan_{horizon}_hire", f"plan_{horizon}_buy_land",
-                f"plan_{horizon}_buy_seed", f"plan_{horizon}_buy_product",
-            ]
-        )
-        names.extend(f"plan_{horizon}_sell_{item.lower()}" for item in TRADE_ITEMS)
-    return names
-
-
-def _market_names() -> list[str]:
-    names = []
-    for item in TRADE_ITEMS:
-        names.extend((f"market_{item.lower()}_inventory", f"market_{item.lower()}_price"))
-    names.extend(f"shop_hash_{index}" for index in range(16))
-    names.extend(("step", "day", "hour"))
-    return names
+from meta_agent.src.route_switch_features import route_switch_feature_names
 
 
 def feature_names() -> list[str]:
-    from meta_agent.src.route_switch_features import route_switch_feature_names
-
     return route_switch_feature_names()
 
 

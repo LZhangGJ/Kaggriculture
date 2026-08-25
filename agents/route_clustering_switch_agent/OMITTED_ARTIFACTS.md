@@ -7,8 +7,8 @@ SHA-256：
 4d07d76a435f5560403de30180b6869a8a02bc8f58e14242beba9ef1811bdbe8
 ```
 
-仓库保留可运行 agent、当前方法源码、最终策略和关键评测摘要。以下内容已主动删除
-或没有从归档复制到精简目录。
+仓库保留可运行 agent、完整复现源码、配置模板和方法文档。Replay、计算缓存、
+中间矩阵及实验结果不进入 Git；以下内容已主动删除或没有复制到精简目录。
 
 ## PPO 遗留物
 
@@ -26,8 +26,8 @@ SHA-256：
 
 ## 当前 router 的大型可再生成缓存
 
-这些文件用于精确重训或逐样本审计，但不参与最终在线推理。Git 中保留了同名
-`*-summary-*.json`、最终树、选择结果和留出评测。
+这些文件用于逐样本审计，但不参与最终在线推理。队友应使用自己的 Replay，通过
+`scripts/run_pipeline.sh` 在 Git 工作区外的 `OUTPUT_ROOT` 中重新生成。
 
 | 原始路径（位于 `experiments/macro-route-unified-20260825/`） | 大小 | SHA-256 |
 |---|---:|---|
@@ -53,6 +53,6 @@ SHA-256：
 | `share/`、route-atlas ZIP | 约 1 MiB | 可由保留的数据和脚本重新导出的可视化 |
 | `fast_kaggriculture/build/`、预编译 `.so` | 约 2.5 MiB | CPython/aarch64 平台相关构建产物 |
 
-如果未来需要完整重训，应从上述 SHA-256 对应的原始归档恢复大矩阵，并放在同名
-路径下；不要把它们直接加入普通 Git 历史。需要长期托管时应使用数据集存储、Release
-附件或 Git LFS。
+完整重训不需要恢复这些旧矩阵：按 `configs/manifest.example.json` 准备 Replay
+清单后运行 `scripts/run_pipeline.sh` 即可重新生成。若需共享生成结果，应使用数据集
+存储、Release 附件或 Git LFS，不要加入普通 Git 历史。
