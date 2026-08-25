@@ -1,0 +1,32 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa_same_shop_route_map.v1",
+  "generated_at_utc": "2026-08-24T02:33:00+00:00",
+  "source_maps": [
+    "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_optimized_shop_map_train160_v4.json",
+    "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_seat_stable_train160_v5.json"
+  ],
+  "source_holdout": "experiments/front40_fusion_v1/receipts/hasegawa_v4_v5_seat_vs_fc24b_holdout170001_n128x2_v1.json",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [31, 3, 25, 140, 67, 107, 118, 0],
+  "routes": [
+    {"shop_id": 0, "shop": "BAKERY", "route_id": 31, "source_episode_id": 94428958},
+    {"shop_id": 1, "shop": "BRUNCH_SPOT", "route_id": 3, "source_episode_id": 94405099},
+    {"shop_id": 2, "shop": "FARMERS_MARKET", "route_id": 25, "source_episode_id": 94423632},
+    {"shop_id": 3, "shop": "ICE_CREAM_SHOP", "route_id": 140, "source_episode_id": 96622158},
+    {"shop_id": 4, "shop": "PET_CAFE", "route_id": 67, "source_episode_id": 94459964},
+    {"shop_id": 5, "shop": "PIZZA_SHOP", "route_id": 107, "source_episode_id": 95214844},
+    {"shop_id": 6, "shop": "SMOOTHIE_SHOP", "route_id": 118, "source_episode_id": 95620894},
+    {"shop_id": 7, "shop": "YARN_STORE", "route_id": 0, "source_episode_id": 94402491}
+  ],
+  "selection_rule": "V4 unchanged except Yarn route 0 selected from independent V5 comparison",
+  "status": "DEVELOPMENT_ONLY"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank05_mimi_v29",
+  "family": "rank05_heavy_cow_mixed_crop_two_shop",
+  "source": {
+    "leaderboard_rank": 5,
+    "team_name": "MiMi",
+    "submission_id": 55667236,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank05_mimi_trace_bank_v1.json",
+    "route_count": 101
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank05_mimi_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_stable_win_map_dev640_v6.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_secondshop_strong3_dev640_v15.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "router_mode": "ROUTER_TWO_SHOP_COMPATIBLE_MAP",
+    "switch_step": 144,
+    "prefix_range": [72, 144],
+    "public_state_only": true
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [64, 77, 77, 82, 64, 67, 82, 64],
+    "accepted_second_shop_pairs": {
+      "BRUNCH_SPOT:YARN_STORE": 33,
+      "ICE_CREAM_SHOP:YARN_STORE": 96,
+      "PIZZA_SHOP:SMOOTHIE_SHOP": 42
+    }
+  },
+  "development": {
+    "full_route_screen": "experiments/front40_fusion_v1/receipts/rank05_mimi_all101_vs_fc24b_screen_seed360001_n128x2_v1.json",
+    "compatible_suffix_screen": "experiments/front40_fusion_v1/receipts/rank05_mimi_compatible69_merged_seed368001_n512x2_v14.json",
+    "exact_prefix_checks": 113,
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "panels": [
+      "experiments/front40_fusion_v1/receipts/rank05_mimi_secondshop_variants_eval_seed376_full512x2_v20.json",
+      "experiments/front40_fusion_v1/receipts/rank05_mimi_final_strong3_eval_seed384_full512x2_v24.json"
+    ],
+    "games": 2048,
+    "wins": 1541,
+    "win_rate": 0.75244140625,
+    "seat0_wins": 774,
+    "seat0_games": 1024,
+    "seat0_win_rate": 0.755859375,
+    "seat1_wins": 767,
+    "seat1_games": 1024,
+    "seat1_win_rate": 0.7490234375,
+    "baseline_wins": 1519,
+    "net_wins_vs_first_shop_baseline": 22,
+    "all_719_steps": true,
+    "hard_counter_total": 0
+  },
+  "online_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank05_mimi_online_final_pair_vs_fc24b_seed392001_n128x2_v26.json",
+    "parity_receipt": "experiments/front40_fusion_v1/receipts/rank05_mimi_online_strong3_screen_parity_seed392001_n128x2_v28.json",
+    "games": 256,
+    "wins": 198,
+    "win_rate": 0.7734375,
+    "all_done": true,
+    "hard_counter_total": 0,
+    "cash_route_mismatches": 0
+  },
+  "sha256": {
+    "trace_bank": "735532F698C1D81278D9E7993E2122905FD982CB187BCCA13ADAFA89E435FC72",
+    "first_shop_map": "FE0690C8FD90CCD7E6683E997D66F589A6B3D717583E19BB6D96D82FEB3EEA2D",
+    "second_shop_map": "0D7F08B917C536808020C45A95EC93D7BEE73FDF5AF0A75074B1932D8F5B2927",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

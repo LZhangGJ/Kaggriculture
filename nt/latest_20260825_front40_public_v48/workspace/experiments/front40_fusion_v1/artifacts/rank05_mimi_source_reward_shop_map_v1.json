@@ -1,0 +1,100 @@
+{
+  "schema": "kaggriculture.front40_fusion.source_reward_shop_map.v1",
+  "generated_at_utc": "2026-08-23T15:34:12.148499+00:00",
+  "source_bank": "experiments\\front40_fusion_v1\\artifacts\\rank05_mimi_trace_bank_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [
+    20,
+    91,
+    59,
+    0,
+    1,
+    71,
+    9,
+    93
+  ],
+  "routes": [
+    {
+      "shop_id": 0,
+      "shop": "BAKERY",
+      "route_id": 20,
+      "source_episode_id": 95962835,
+      "source_reward": 105092,
+      "same_shop_source_count": 10,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 1,
+      "shop": "BRUNCH_SPOT",
+      "route_id": 91,
+      "source_episode_id": 97067220,
+      "source_reward": 107428,
+      "same_shop_source_count": 9,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 2,
+      "shop": "FARMERS_MARKET",
+      "route_id": 59,
+      "source_episode_id": 96063481,
+      "source_reward": 137503,
+      "same_shop_source_count": 14,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 3,
+      "shop": "ICE_CREAM_SHOP",
+      "route_id": 0,
+      "source_episode_id": 95919497,
+      "source_reward": 162851,
+      "same_shop_source_count": 12,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 4,
+      "shop": "PET_CAFE",
+      "route_id": 1,
+      "source_episode_id": 95921764,
+      "source_reward": 94230,
+      "same_shop_source_count": 9,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 5,
+      "shop": "PIZZA_SHOP",
+      "route_id": 71,
+      "source_episode_id": 96339472,
+      "source_reward": 141855,
+      "same_shop_source_count": 22,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 6,
+      "shop": "SMOOTHIE_SHOP",
+      "route_id": 9,
+      "source_episode_id": 95937687,
+      "source_reward": 161725,
+      "same_shop_source_count": 11,
+      "selection": "same-first-shop highest source reward"
+    },
+    {
+      "shop_id": 7,
+      "shop": "YARN_STORE",
+      "route_id": 93,
+      "source_episode_id": 97142392,
+      "source_reward": 120305,
+      "same_shop_source_count": 14,
+      "selection": "same-first-shop highest source reward"
+    }
+  ],
+  "status": "BASELINE_ONLY"
+}

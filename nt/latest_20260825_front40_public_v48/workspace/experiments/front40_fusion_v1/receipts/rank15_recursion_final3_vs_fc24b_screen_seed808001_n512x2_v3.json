@@ -1,0 +1,84 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T15:52:44.452455+00:00",
+  "device": "cuda:0",
+  "seed_start": 808001,
+  "seed_count": 512,
+  "route_count": 3,
+  "route_ids": [
+    80,
+    124,
+    123
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 3072,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 72,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 80,
+          "source_episode_id": 94055986,
+          "source_reward": 126365,
+          "games": 144,
+          "win_rate": 0.125,
+          "mean_margin": -6111.8125,
+          "invalid_mean": 19.791666666666668
+        },
+        {
+          "route_id": 124,
+          "source_episode_id": 96364464,
+          "source_reward": 124882,
+          "games": 144,
+          "win_rate": 0.125,
+          "mean_margin": -6259.944444444444,
+          "invalid_mean": 18.819444444444443
+        },
+        {
+          "route_id": 123,
+          "source_episode_id": 96296204,
+          "source_reward": 112235,
+          "games": 144,
+          "win_rate": 0.1111111111111111,
+          "mean_margin": -6226.444444444444,
+          "invalid_mean": 19.791666666666668
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 38.11322956799995
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 2,
+      "seconds": 14.328365844000018
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 36.44265771000005
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 2,
+      "seconds": 14.34681132500009
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank15_recursion_final3_vs_fc24b_screen_seed808001_n512x2_v3.npz",
+  "status": "PASS"
+}

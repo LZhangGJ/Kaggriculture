@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank08_kobe_safe8fs_v42",
+      "family": "rank08_balanced_cow_sheep_light_crop_two_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank08_kobe_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_all89_stable_win_map_dev640_v16.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_secondshop_safe8_fs_dev1152_v28.json"
+    }
+  ]
+}

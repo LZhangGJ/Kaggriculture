@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank07_active_risk7_v28",
+      "family": "rank07_heavy_cow_large_strawberry_two_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank07_active_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank07_active_stable_win_map_dev640_v6.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank07_active_secondshop_risk7_canonical_v22.json"
+    }
+  ]
+}

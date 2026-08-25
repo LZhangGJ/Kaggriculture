@@ -1,0 +1,149 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-24T04:00:30.896842+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_secondshop9_merged_seed376001_n512x2_v18.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank05_mimi_stable_win_map_dev640_v6.json",
+  "holdout_seed_index_range": [
+    192,
+    511
+  ],
+  "base": {
+    "games": 640,
+    "wins": 486,
+    "win_rate": 0.759375,
+    "mean_margin": 3699.2328125,
+    "median_margin": 4610.5,
+    "hard_counter_total": 0,
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 320,
+        "wins": 245,
+        "win_rate": 0.765625,
+        "mean_margin": 3743.46875,
+        "median_margin": 4718.5,
+        "hard_counter_total": 0
+      },
+      {
+        "seat": 1,
+        "games": 320,
+        "wins": 241,
+        "win_rate": 0.753125,
+        "mean_margin": 3654.996875,
+        "median_margin": 4253.5,
+        "hard_counter_total": 0
+      }
+    ]
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank05_mimi_secondshop_strong3_dev640_v15.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 3,
+      "holdout": {
+        "games": 640,
+        "wins": 488,
+        "win_rate": 0.7625,
+        "mean_margin": 3803.0703125,
+        "median_margin": 4718.5,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 320,
+          "wins": 246,
+          "win_rate": 0.76875,
+          "mean_margin": 3811.334375,
+          "median_margin": 4775.0,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 320,
+          "wins": 242,
+          "win_rate": 0.75625,
+          "mean_margin": 3794.80625,
+          "median_margin": 4571.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 29,
+      "net_wins_vs_base": 2,
+      "mean_margin_gain_vs_base": 103.8375
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank05_mimi_secondshop_stable5_dev640_v15.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 5,
+      "holdout": {
+        "games": 640,
+        "wins": 484,
+        "win_rate": 0.75625,
+        "mean_margin": 3786.5859375,
+        "median_margin": 4855.5,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 320,
+          "wins": 244,
+          "win_rate": 0.7625,
+          "mean_margin": 3804.3,
+          "median_margin": 4960.0,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 320,
+          "wins": 240,
+          "win_rate": 0.75,
+          "mean_margin": 3768.871875,
+          "median_margin": 4809.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 45,
+      "net_wins_vs_base": -2,
+      "mean_margin_gain_vs_base": 87.353125
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank05_mimi_secondshop_stable6_dev640_v15.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 6,
+      "holdout": {
+        "games": 640,
+        "wins": 482,
+        "win_rate": 0.753125,
+        "mean_margin": 3743.1703125,
+        "median_margin": 4814.0,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 320,
+          "wins": 243,
+          "win_rate": 0.759375,
+          "mean_margin": 3769.159375,
+          "median_margin": 4878.0,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 320,
+          "wins": 239,
+          "win_rate": 0.746875,
+          "mean_margin": 3717.18125,
+          "median_margin": 4770.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 59,
+      "net_wins_vs_base": -4,
+      "mean_margin_gain_vs_base": 43.9375
+    }
+  ]
+}

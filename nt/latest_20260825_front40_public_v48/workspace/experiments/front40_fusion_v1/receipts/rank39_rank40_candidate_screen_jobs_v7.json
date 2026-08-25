@@ -1,0 +1,18 @@
+{
+  "schema": "kaggriculture.front40_fusion.multi-padded-route-screen.v1",
+  "generated_at_utc": "2026-08-25T00:32:10.374078+00:00",
+  "status": "PASS",
+  "bank_capacity": 256,
+  "jobs": [
+    {
+      "name": "rank39_lelelove1225_candidate23",
+      "output": "experiments/front40_fusion_v1/receipts/rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.json",
+      "games": 5888
+    },
+    {
+      "name": "rank40_ar_sekkat_candidate26",
+      "output": "experiments/front40_fusion_v1/receipts/rank40_ar_sekkat_candidate26_vs_fc24b_screen_seed1264001_n128x2_v8.json",
+      "games": 6656
+    }
+  ]
+}

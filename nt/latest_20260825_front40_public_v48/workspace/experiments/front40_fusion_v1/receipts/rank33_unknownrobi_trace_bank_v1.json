@@ -1,0 +1,2449 @@
+{
+  "schema": "kaggriculture.front40_fusion.generic_trace_bank.v1",
+  "generated_at_utc": "2026-08-24T21:51:01.675694+00:00",
+  "status": "PASS",
+  "submission_id": 55658785,
+  "rank": 33,
+  "team_name": "UnknownRobi",
+  "wins_only": true,
+  "candidate_rows": 116,
+  "unique_episodes": 116,
+  "route_count": 116,
+  "rejected_count": 0,
+  "rejected": [],
+  "bootstrap_route_id": 1,
+  "sources": [
+    {
+      "route_id": 0,
+      "episode_id": 95657080,
+      "reward": 126913,
+      "opponent_reward": 58385,
+      "margin": 68528,
+      "seat": 0,
+      "shops": [
+        5,
+        1,
+        2,
+        5,
+        2,
+        6,
+        2,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95657080.json",
+      "sha256": "C1B4154D87A8108C8660860126D47C385AEEB8C65701F07F4936C388CBDA6330"
+    },
+    {
+      "route_id": 1,
+      "episode_id": 95657235,
+      "reward": 162939,
+      "opponent_reward": 64777,
+      "margin": 98162,
+      "seat": 1,
+      "shops": [
+        3,
+        5,
+        2,
+        6,
+        5,
+        7,
+        4,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95657235.json",
+      "sha256": "6120519FD53E6EC00840DA718E3330F3E2E2520273E68C91B475C42458E7DBB4"
+    },
+    {
+      "route_id": 2,
+      "episode_id": 95659371,
+      "reward": 110663,
+      "opponent_reward": 16393,
+      "margin": 94270,
+      "seat": 0,
+      "shops": [
+        1,
+        0,
+        4,
+        3,
+        4,
+        1,
+        2,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95659371.json",
+      "sha256": "F7E5AA217969D979710D91B0D06C17332392A1659C3E025442687B670B0F1E8A"
+    },
+    {
+      "route_id": 3,
+      "episode_id": 95661631,
+      "reward": 124087,
+      "opponent_reward": 33840,
+      "margin": 90247,
+      "seat": 1,
+      "shops": [
+        3,
+        0,
+        4,
+        6,
+        1,
+        7,
+        2,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95661631.json",
+      "sha256": "CE7A9FE0A925D50276D8C49FD350050EF2E83D6FE5FA6CC94136F21E13992461"
+    },
+    {
+      "route_id": 4,
+      "episode_id": 95663910,
+      "reward": 100047,
+      "opponent_reward": 68428,
+      "margin": 31619,
+      "seat": 1,
+      "shops": [
+        6,
+        4,
+        7,
+        7,
+        4,
+        1,
+        5,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95663910.json",
+      "sha256": "67EEB41892E6FCC548C982D304218B1781228B8A132D685926278F8967328A69"
+    },
+    {
+      "route_id": 5,
+      "episode_id": 95666190,
+      "reward": 89023,
+      "opponent_reward": 48817,
+      "margin": 40206,
+      "seat": 0,
+      "shops": [
+        5,
+        4,
+        1,
+        2,
+        1,
+        5,
+        2,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95666190.json",
+      "sha256": "3CAFE7F3D6A2698BA895AA68DD29F4CDCE6DE8445F3C34D21B2CF1EFB337C045"
+    },
+    {
+      "route_id": 6,
+      "episode_id": 95668457,
+      "reward": 43525,
+      "opponent_reward": 22687,
+      "margin": 20838,
+      "seat": 1,
+      "shops": [
+        0,
+        5,
+        4,
+        2,
+        4,
+        1,
+        0,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95668457.json",
+      "sha256": "7439C9979638348B71EF1DAEC4444FFA5B25E334ABC6F65435348978E80857B8"
+    },
+    {
+      "route_id": 7,
+      "episode_id": 95670733,
+      "reward": 111396,
+      "opponent_reward": 75093,
+      "margin": 36303,
+      "seat": 1,
+      "shops": [
+        6,
+        0,
+        5,
+        6,
+        5,
+        4,
+        1,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95670733.json",
+      "sha256": "BCA83CD91279880403CEEDCFFF0996A8A8899C464D975C83E9DCA665867AD107"
+    },
+    {
+      "route_id": 8,
+      "episode_id": 95673009,
+      "reward": 100677,
+      "opponent_reward": 77505,
+      "margin": 23172,
+      "seat": 0,
+      "shops": [
+        7,
+        1,
+        5,
+        3,
+        0,
+        3,
+        5,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95673009.json",
+      "sha256": "DB3DB3A14CDEAACA4889BFD4994D5EF5EF84984BB9BC38CAFC7455D8D209E1F2"
+    },
+    {
+      "route_id": 9,
+      "episode_id": 95675286,
+      "reward": 88745,
+      "opponent_reward": 81575,
+      "margin": 7170,
+      "seat": 1,
+      "shops": [
+        2,
+        1,
+        1,
+        5,
+        7,
+        6,
+        4,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95675286.json",
+      "sha256": "8B7CD7557C76D4AAEC2E2D4EE66E9D217A1839ADDB8BCA0CE5E86D9313761A51"
+    },
+    {
+      "route_id": 10,
+      "episode_id": 95677561,
+      "reward": 122108,
+      "opponent_reward": 103001,
+      "margin": 19107,
+      "seat": 1,
+      "shops": [
+        5,
+        7,
+        6,
+        4,
+        6,
+        4,
+        7,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95677561.json",
+      "sha256": "F671874014B5D297A75B694E0A43981CAA43169D20FF0BB2F46993E57D130250"
+    },
+    {
+      "route_id": 11,
+      "episode_id": 95679840,
+      "reward": 104732,
+      "opponent_reward": 103736,
+      "margin": 996,
+      "seat": 1,
+      "shops": [
+        0,
+        3,
+        6,
+        7,
+        6,
+        1,
+        0,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95679840.json",
+      "sha256": "C4848DF18BC795B2BEAD7E5690A35390EFCBA6A968316052DE5008DFB843A02B"
+    },
+    {
+      "route_id": 12,
+      "episode_id": 95682124,
+      "reward": 83413,
+      "opponent_reward": 59862,
+      "margin": 23551,
+      "seat": 1,
+      "shops": [
+        5,
+        7,
+        0,
+        4,
+        4,
+        0,
+        7,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95682124.json",
+      "sha256": "08863C3C79B87697B7020FB927ECAE5CAB52EBBD8AF31A0A7C6E52657DB8F522"
+    },
+    {
+      "route_id": 13,
+      "episode_id": 95686679,
+      "reward": 88507,
+      "opponent_reward": 83962,
+      "margin": 4545,
+      "seat": 0,
+      "shops": [
+        6,
+        1,
+        1,
+        4,
+        0,
+        1,
+        0,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95686679.json",
+      "sha256": "92A68C3C11B00B35FBAA117A70A94D04AFAACE20C0ADBDCB1E7FDB6894064D48"
+    },
+    {
+      "route_id": 14,
+      "episode_id": 95688976,
+      "reward": 74152,
+      "opponent_reward": 68268,
+      "margin": 5884,
+      "seat": 0,
+      "shops": [
+        1,
+        1,
+        0,
+        6,
+        7,
+        4,
+        1,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95688976.json",
+      "sha256": "0ABB0B35F8F8251FE1A2799F6E7410F9DECDAC97027CFAC4B6AE3A272C598E94"
+    },
+    {
+      "route_id": 15,
+      "episode_id": 95691262,
+      "reward": 75834,
+      "opponent_reward": 63505,
+      "margin": 12329,
+      "seat": 1,
+      "shops": [
+        2,
+        5,
+        0,
+        6,
+        5,
+        2,
+        7,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95691262.json",
+      "sha256": "43E4AD1CEC8B829D546AD3B62F8184231B134810A51D9CA5BAC300B922D68B96"
+    },
+    {
+      "route_id": 16,
+      "episode_id": 95691310,
+      "reward": 67773,
+      "opponent_reward": 59780,
+      "margin": 7993,
+      "seat": 1,
+      "shops": [
+        1,
+        7,
+        0,
+        5,
+        3,
+        4,
+        4,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95691310.json",
+      "sha256": "F453601EF68E1DCF91CFC45F6AB067092DB0C3779F45DDED2204F18AAFC0FA80"
+    },
+    {
+      "route_id": 17,
+      "episode_id": 95693552,
+      "reward": 109636,
+      "opponent_reward": 107031,
+      "margin": 2605,
+      "seat": 1,
+      "shops": [
+        4,
+        3,
+        3,
+        3,
+        0,
+        6,
+        5,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95693552.json",
+      "sha256": "8D0E718243E0402853EC024B7747F12B66FB6A8E6B6079BC3A3FA06F6D706729"
+    },
+    {
+      "route_id": 18,
+      "episode_id": 95695844,
+      "reward": 145168,
+      "opponent_reward": 135149,
+      "margin": 10019,
+      "seat": 0,
+      "shops": [
+        5,
+        6,
+        3,
+        1,
+        3,
+        6,
+        7,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95695844.json",
+      "sha256": "67241D43BE1946D1869941E45A8A3E9AEB32F9E73FA6A55CE4CC23766F60DC56"
+    },
+    {
+      "route_id": 19,
+      "episode_id": 95698136,
+      "reward": 79973,
+      "opponent_reward": 75538,
+      "margin": 4435,
+      "seat": 0,
+      "shops": [
+        2,
+        0,
+        7,
+        6,
+        2,
+        5,
+        2,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95698136.json",
+      "sha256": "916360AA0A9F94709D04C5D2D157E677FC5FBAC1A978564D487F8830C80171A8"
+    },
+    {
+      "route_id": 20,
+      "episode_id": 95700435,
+      "reward": 90041,
+      "opponent_reward": 88335,
+      "margin": 1706,
+      "seat": 1,
+      "shops": [
+        3,
+        4,
+        3,
+        1,
+        5,
+        0,
+        7,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95700435.json",
+      "sha256": "90D0CB11FC68C310CC9D3CE5718B29C513EBE9564FA6C52A2C79E9BCFDD95258"
+    },
+    {
+      "route_id": 21,
+      "episode_id": 95702717,
+      "reward": 82504,
+      "opponent_reward": 78747,
+      "margin": 3757,
+      "seat": 1,
+      "shops": [
+        6,
+        2,
+        0,
+        7,
+        0,
+        0,
+        3,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95702717.json",
+      "sha256": "617B55704F0E4A95451ED04843F1A08E17CCB07423231EECE0A9236FC603AA49"
+    },
+    {
+      "route_id": 22,
+      "episode_id": 95707283,
+      "reward": 76967,
+      "opponent_reward": 50707,
+      "margin": 26260,
+      "seat": 0,
+      "shops": [
+        0,
+        0,
+        7,
+        6,
+        7,
+        5,
+        0,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95707283.json",
+      "sha256": "E83EDF6D1EB65D21ABE22BF4C8B22A93C3882FE0C5B5E89EF37DAFDC1F6607B2"
+    },
+    {
+      "route_id": 23,
+      "episode_id": 95709581,
+      "reward": 87914,
+      "opponent_reward": 81808,
+      "margin": 6106,
+      "seat": 0,
+      "shops": [
+        4,
+        6,
+        3,
+        0,
+        1,
+        6,
+        3,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95709581.json",
+      "sha256": "D87593018EED0E52609DC21808E36E90D4F087D72B58254E38EA5EC62F327F03"
+    },
+    {
+      "route_id": 24,
+      "episode_id": 95711854,
+      "reward": 74050,
+      "opponent_reward": 60259,
+      "margin": 13791,
+      "seat": 1,
+      "shops": [
+        1,
+        0,
+        4,
+        3,
+        7,
+        7,
+        4,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95711854.json",
+      "sha256": "8FDC42FBFB278577AAE68E22E4928A034F317C4F74876E96C998AB3894C10A61"
+    },
+    {
+      "route_id": 25,
+      "episode_id": 95714146,
+      "reward": 89495,
+      "opponent_reward": 83318,
+      "margin": 6177,
+      "seat": 1,
+      "shops": [
+        6,
+        1,
+        0,
+        6,
+        4,
+        4,
+        3,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95714146.json",
+      "sha256": "C14600733847B09D8F9CA6437B6339D0C0816298F9137B37E4A39DD7014F1289"
+    },
+    {
+      "route_id": 26,
+      "episode_id": 95718725,
+      "reward": 60699,
+      "opponent_reward": 60160,
+      "margin": 539,
+      "seat": 0,
+      "shops": [
+        5,
+        0,
+        3,
+        2,
+        4,
+        1,
+        0,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95718725.json",
+      "sha256": "FB938F7C7E91B2D3B25132786A9EF375AD45D806EB65B1BEF8CE65317B4587F3"
+    },
+    {
+      "route_id": 27,
+      "episode_id": 95721002,
+      "reward": 69966,
+      "opponent_reward": 69192,
+      "margin": 774,
+      "seat": 0,
+      "shops": [
+        2,
+        0,
+        4,
+        6,
+        3,
+        5,
+        3,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95721002.json",
+      "sha256": "539CC5AA5BAB4AD00D14EC5C833E0A5AA688C947B78B5A1162502A46AAAFC0A2"
+    },
+    {
+      "route_id": 28,
+      "episode_id": 95723298,
+      "reward": 72757,
+      "opponent_reward": 72016,
+      "margin": 741,
+      "seat": 0,
+      "shops": [
+        7,
+        1,
+        6,
+        4,
+        0,
+        2,
+        5,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95723298.json",
+      "sha256": "F1AE651DB2354BAF7957F108F6857B1A943B67EBDD8EC08337BC3FF6AF29CCCE"
+    },
+    {
+      "route_id": 29,
+      "episode_id": 95727871,
+      "reward": 74803,
+      "opponent_reward": 68521,
+      "margin": 6282,
+      "seat": 1,
+      "shops": [
+        3,
+        2,
+        0,
+        4,
+        5,
+        7,
+        0,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95727871.json",
+      "sha256": "723050BE357C78751106738E9FD8B00AFA11168972B897ADB20D70B899EAF34A"
+    },
+    {
+      "route_id": 30,
+      "episode_id": 95730153,
+      "reward": 79367,
+      "opponent_reward": 77494,
+      "margin": 1873,
+      "seat": 0,
+      "shops": [
+        1,
+        5,
+        5,
+        7,
+        2,
+        7,
+        7,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95730153.json",
+      "sha256": "81274C027C952B53829CECCA251698962C9985F637380DB04B4560F1837C6DD5"
+    },
+    {
+      "route_id": 31,
+      "episode_id": 95730337,
+      "reward": 108136,
+      "opponent_reward": 107945,
+      "margin": 191,
+      "seat": 1,
+      "shops": [
+        5,
+        5,
+        5,
+        6,
+        7,
+        7,
+        1,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95730337.json",
+      "sha256": "0DC62A3063BA41D1C3F211E1AF859EAC0D75F21324299F9CF807791BDC13A82A"
+    },
+    {
+      "route_id": 32,
+      "episode_id": 95730382,
+      "reward": 114426,
+      "opponent_reward": 104731,
+      "margin": 9695,
+      "seat": 0,
+      "shops": [
+        3,
+        7,
+        2,
+        1,
+        1,
+        5,
+        1,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95730382.json",
+      "sha256": "D900175B5FDD85B1B2D4520F39B0E98F12FAFC50AE9A138F5AA547235E23A8BD"
+    },
+    {
+      "route_id": 33,
+      "episode_id": 95732444,
+      "reward": 73432,
+      "opponent_reward": 70409,
+      "margin": 3023,
+      "seat": 0,
+      "shops": [
+        5,
+        1,
+        5,
+        7,
+        0,
+        0,
+        2,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95732444.json",
+      "sha256": "B9F120160CC923C346C7D874F7E8125753E1BDB0EE43BD8FAB34C0DF0A17F979"
+    },
+    {
+      "route_id": 34,
+      "episode_id": 95734733,
+      "reward": 112368,
+      "opponent_reward": 107789,
+      "margin": 4579,
+      "seat": 0,
+      "shops": [
+        5,
+        6,
+        0,
+        6,
+        3,
+        5,
+        4,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95734733.json",
+      "sha256": "866C5B2B5EE3FD65A0AA4BF9B36936010CE8DABC4D5C512BFAE1970644B2B1B5"
+    },
+    {
+      "route_id": 35,
+      "episode_id": 95737013,
+      "reward": 80722,
+      "opponent_reward": 79891,
+      "margin": 831,
+      "seat": 1,
+      "shops": [
+        7,
+        2,
+        0,
+        1,
+        5,
+        3,
+        7,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95737013.json",
+      "sha256": "63A109E834C21D6550144A0C8ED4FC340F40C4251A0F2DC89E19DEA2D57D019D"
+    },
+    {
+      "route_id": 36,
+      "episode_id": 95741561,
+      "reward": 83402,
+      "opponent_reward": 75082,
+      "margin": 8320,
+      "seat": 0,
+      "shops": [
+        1,
+        2,
+        4,
+        2,
+        4,
+        6,
+        3,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95741561.json",
+      "sha256": "7F6E1FA54B78BB56472DBE6DBF1161FCD748FCE7490BF55CF64FB23935E07BE5"
+    },
+    {
+      "route_id": 37,
+      "episode_id": 95743887,
+      "reward": 135535,
+      "opponent_reward": 131739,
+      "margin": 3796,
+      "seat": 1,
+      "shops": [
+        7,
+        6,
+        6,
+        7,
+        1,
+        1,
+        5,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95743887.json",
+      "sha256": "61628D1481F171C2A150FE540B8521EF4B484ED58AFA173F33656E0AD2ECFDD5"
+    },
+    {
+      "route_id": 38,
+      "episode_id": 95744096,
+      "reward": 85010,
+      "opponent_reward": 78801,
+      "margin": 6209,
+      "seat": 0,
+      "shops": [
+        5,
+        4,
+        7,
+        3,
+        1,
+        4,
+        2,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95744096.json",
+      "sha256": "C24FE385490A3C34482D441B27E5B5F60CCCB8A39CB8010EEC52A9CC388E58AF"
+    },
+    {
+      "route_id": 39,
+      "episode_id": 95746184,
+      "reward": 126361,
+      "opponent_reward": 125769,
+      "margin": 592,
+      "seat": 1,
+      "shops": [
+        7,
+        5,
+        3,
+        6,
+        7,
+        2,
+        3,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95746184.json",
+      "sha256": "E15AD9301A9DFF60178FF8D61F1B1CAFE82FF4BA27B21C7F758652D86641C381"
+    },
+    {
+      "route_id": 40,
+      "episode_id": 95748483,
+      "reward": 65253,
+      "opponent_reward": 63086,
+      "margin": 2167,
+      "seat": 1,
+      "shops": [
+        2,
+        4,
+        5,
+        7,
+        7,
+        6,
+        4,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95748483.json",
+      "sha256": "7FEE1BD60561A172513CF91264313EB7D44AF2D5714DA0FC8078DCE1C75F90AB"
+    },
+    {
+      "route_id": 41,
+      "episode_id": 95750770,
+      "reward": 63817,
+      "opponent_reward": 61499,
+      "margin": 2318,
+      "seat": 1,
+      "shops": [
+        0,
+        5,
+        6,
+        0,
+        7,
+        6,
+        2,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95750770.json",
+      "sha256": "531D4CF7A3C93C392DFA54163A09BC005E3EB65352B3A9BB97D85DF0A3FD08DE"
+    },
+    {
+      "route_id": 42,
+      "episode_id": 95753051,
+      "reward": 95623,
+      "opponent_reward": 93289,
+      "margin": 2334,
+      "seat": 0,
+      "shops": [
+        3,
+        5,
+        2,
+        7,
+        7,
+        5,
+        1,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95753051.json",
+      "sha256": "0677DB22B338448C9088808DEAA5240365494CD76DB9A1063B802B7A0F722349"
+    },
+    {
+      "route_id": 43,
+      "episode_id": 95755321,
+      "reward": 73241,
+      "opponent_reward": 70219,
+      "margin": 3022,
+      "seat": 0,
+      "shops": [
+        5,
+        7,
+        2,
+        4,
+        3,
+        4,
+        0,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95755321.json",
+      "sha256": "147B8AF09CC5233ECAC11078F79357F0823CF48C3094B74B6A80DCF0AC14418E"
+    },
+    {
+      "route_id": 44,
+      "episode_id": 95755358,
+      "reward": 89798,
+      "opponent_reward": 89687,
+      "margin": 111,
+      "seat": 1,
+      "shops": [
+        7,
+        3,
+        0,
+        0,
+        7,
+        2,
+        2,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95755358.json",
+      "sha256": "B64865306DB00D0B28B239566431120BD274D1BB5A7A0AD2C3712D48BC7B6180"
+    },
+    {
+      "route_id": 45,
+      "episode_id": 95759901,
+      "reward": 92889,
+      "opponent_reward": 83707,
+      "margin": 9182,
+      "seat": 1,
+      "shops": [
+        4,
+        7,
+        7,
+        3,
+        2,
+        0,
+        2,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95759901.json",
+      "sha256": "22DC6EE7D78674715DF7A13F6C6FE06F20495E89A93A4BD1360BAF65B84921AE"
+    },
+    {
+      "route_id": 46,
+      "episode_id": 95762180,
+      "reward": 97410,
+      "opponent_reward": 75874,
+      "margin": 21536,
+      "seat": 0,
+      "shops": [
+        1,
+        1,
+        7,
+        5,
+        0,
+        7,
+        3,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95762180.json",
+      "sha256": "79848DA9E972627434D145CE091860836CB66B31FF01B6ADAB3DA56B0DFCC158"
+    },
+    {
+      "route_id": 47,
+      "episode_id": 95766735,
+      "reward": 119953,
+      "opponent_reward": 113599,
+      "margin": 6354,
+      "seat": 0,
+      "shops": [
+        6,
+        3,
+        5,
+        1,
+        0,
+        7,
+        7,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95766735.json",
+      "sha256": "4AF11536A802A380E4CBACEA528F7E5A39467CBCC69BDC4858D72F0F88367FFA"
+    },
+    {
+      "route_id": 48,
+      "episode_id": 95769015,
+      "reward": 81847,
+      "opponent_reward": 80536,
+      "margin": 1311,
+      "seat": 1,
+      "shops": [
+        7,
+        4,
+        7,
+        3,
+        7,
+        0,
+        5,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95769015.json",
+      "sha256": "061C56B474703FE9D041125E9617F572ADD0B6458FDE2CD8788828F0D70F2456"
+    },
+    {
+      "route_id": 49,
+      "episode_id": 95771305,
+      "reward": 55605,
+      "opponent_reward": 51624,
+      "margin": 3981,
+      "seat": 1,
+      "shops": [
+        4,
+        3,
+        4,
+        0,
+        7,
+        0,
+        1,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95771305.json",
+      "sha256": "FA19C4B191055D5912BB63EE7E5163F15B2215729B8C48AE5FCDB34BB29C7845"
+    },
+    {
+      "route_id": 50,
+      "episode_id": 95773576,
+      "reward": 117216,
+      "opponent_reward": 112769,
+      "margin": 4447,
+      "seat": 0,
+      "shops": [
+        7,
+        3,
+        6,
+        0,
+        1,
+        6,
+        4,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95773576.json",
+      "sha256": "BEB7DC1DA75513B0A7236A7AE8AAF87CAAE100FFEFECAC539BC483BEAA628071"
+    },
+    {
+      "route_id": 51,
+      "episode_id": 95775862,
+      "reward": 73079,
+      "opponent_reward": 71744,
+      "margin": 1335,
+      "seat": 1,
+      "shops": [
+        4,
+        2,
+        2,
+        0,
+        6,
+        6,
+        1,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95775862.json",
+      "sha256": "75A6E103B79B3D46264031357E55CC4FF8D69710904E6EA784D551D749726A59"
+    },
+    {
+      "route_id": 52,
+      "episode_id": 95778137,
+      "reward": 97913,
+      "opponent_reward": 97345,
+      "margin": 568,
+      "seat": 1,
+      "shops": [
+        3,
+        7,
+        0,
+        5,
+        3,
+        0,
+        2,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95778137.json",
+      "sha256": "41A96C3076BA630657CAA52A2933C14A067DAAB5E5EE9993A9655E25842C8A2A"
+    },
+    {
+      "route_id": 53,
+      "episode_id": 95780425,
+      "reward": 95691,
+      "opponent_reward": 93962,
+      "margin": 1729,
+      "seat": 0,
+      "shops": [
+        3,
+        1,
+        1,
+        4,
+        5,
+        3,
+        3,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95780425.json",
+      "sha256": "F179AC1F276EE86D68150B93A1D97CCC058BE185713DB9B2A352A253BB7CE400"
+    },
+    {
+      "route_id": 54,
+      "episode_id": 95782717,
+      "reward": 93712,
+      "opponent_reward": 92809,
+      "margin": 903,
+      "seat": 1,
+      "shops": [
+        2,
+        1,
+        5,
+        7,
+        2,
+        6,
+        6,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95782717.json",
+      "sha256": "03BC86D5E878827C56976F62C3E5BF54FEA3CF0FF4AB005CE57C0F8109AF826D"
+    },
+    {
+      "route_id": 55,
+      "episode_id": 95785007,
+      "reward": 74368,
+      "opponent_reward": 68713,
+      "margin": 5655,
+      "seat": 0,
+      "shops": [
+        1,
+        3,
+        0,
+        0,
+        6,
+        4,
+        1,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95785007.json",
+      "sha256": "2E324CF51A7F023A6C92DD56E2D7B18820E8518C7BC55A8D5BC1934A7F2D3AD9"
+    },
+    {
+      "route_id": 56,
+      "episode_id": 95789581,
+      "reward": 109348,
+      "opponent_reward": 105700,
+      "margin": 3648,
+      "seat": 1,
+      "shops": [
+        3,
+        4,
+        1,
+        6,
+        3,
+        1,
+        6,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95789581.json",
+      "sha256": "B97F5429A01428B4EC3BCCFC9D8840405A005748459959D2C6523C9F1B7E4995"
+    },
+    {
+      "route_id": 57,
+      "episode_id": 95791873,
+      "reward": 117430,
+      "opponent_reward": 113816,
+      "margin": 3614,
+      "seat": 1,
+      "shops": [
+        3,
+        5,
+        5,
+        1,
+        5,
+        6,
+        1,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95791873.json",
+      "sha256": "19370D1E9FD08A2346F19B6BDECA20D033C70AA59E4153A3777E7D29E7C20024"
+    },
+    {
+      "route_id": 58,
+      "episode_id": 95794163,
+      "reward": 66358,
+      "opponent_reward": 65701,
+      "margin": 657,
+      "seat": 1,
+      "shops": [
+        0,
+        2,
+        5,
+        3,
+        7,
+        6,
+        2,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95794163.json",
+      "sha256": "AA67E8C9E4BD90E9BD998118EE1F1CC2B2FEB7FB52F3909D476D19F6589403A2"
+    },
+    {
+      "route_id": 59,
+      "episode_id": 95796449,
+      "reward": 78946,
+      "opponent_reward": 73271,
+      "margin": 5675,
+      "seat": 1,
+      "shops": [
+        6,
+        4,
+        4,
+        7,
+        2,
+        1,
+        1,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95796449.json",
+      "sha256": "1F22F08033E108D814F970C06294FFF3F0CA160B0F0EB6FC627CB1E8642C8A70"
+    },
+    {
+      "route_id": 60,
+      "episode_id": 95798742,
+      "reward": 116095,
+      "opponent_reward": 115756,
+      "margin": 339,
+      "seat": 1,
+      "shops": [
+        1,
+        3,
+        6,
+        7,
+        3,
+        0,
+        0,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95798742.json",
+      "sha256": "4AA5B497660594B3B730B79CF887081B01D95ABECB9016B4E0D4E0D397DDA10D"
+    },
+    {
+      "route_id": 61,
+      "episode_id": 95801030,
+      "reward": 117151,
+      "opponent_reward": 101133,
+      "margin": 16018,
+      "seat": 1,
+      "shops": [
+        6,
+        1,
+        7,
+        2,
+        5,
+        1,
+        4,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95801030.json",
+      "sha256": "5799FD9C2497578FA9A35F4E9429991065A32A218D9C49FB0AC9C9A0DF1E8FB6"
+    },
+    {
+      "route_id": 62,
+      "episode_id": 95803323,
+      "reward": 85358,
+      "opponent_reward": 72288,
+      "margin": 13070,
+      "seat": 0,
+      "shops": [
+        0,
+        1,
+        5,
+        5,
+        6,
+        6,
+        7,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95803323.json",
+      "sha256": "13E8DB1AA94504D43FA8F6412D9ABD8129651C5015E6C6230786B4C45DCE9788"
+    },
+    {
+      "route_id": 63,
+      "episode_id": 95805618,
+      "reward": 78457,
+      "opponent_reward": 74687,
+      "margin": 3770,
+      "seat": 0,
+      "shops": [
+        3,
+        0,
+        1,
+        1,
+        0,
+        7,
+        2,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95805618.json",
+      "sha256": "07CA0D54E985B7CCE15E7135FDF49794F64E88A6860468C8E774A4C5C3ABA004"
+    },
+    {
+      "route_id": 64,
+      "episode_id": 95812527,
+      "reward": 69845,
+      "opponent_reward": 68955,
+      "margin": 890,
+      "seat": 1,
+      "shops": [
+        2,
+        3,
+        0,
+        4,
+        6,
+        0,
+        0,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95812527.json",
+      "sha256": "76083FC299B87E6E831E6EEEA365C3D1735B1300E1B160CDE3977D4382519072"
+    },
+    {
+      "route_id": 65,
+      "episode_id": 95833081,
+      "reward": 64161,
+      "opponent_reward": 63448,
+      "margin": 713,
+      "seat": 1,
+      "shops": [
+        7,
+        6,
+        4,
+        0,
+        4,
+        3,
+        0,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95833081.json",
+      "sha256": "94D35204884F5104AEBE19A66670B1A5643063B55B2043C0CBF9AB728AA2C737"
+    },
+    {
+      "route_id": 66,
+      "episode_id": 95839902,
+      "reward": 104671,
+      "opponent_reward": 86825,
+      "margin": 17846,
+      "seat": 0,
+      "shops": [
+        1,
+        5,
+        7,
+        1,
+        3,
+        7,
+        6,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95839902.json",
+      "sha256": "71DD75233C7B9BE1B86C572D7DE212371C5B50FB461A777B6CBE44F3E82A4C0B"
+    },
+    {
+      "route_id": 67,
+      "episode_id": 95880958,
+      "reward": 88890,
+      "opponent_reward": 83610,
+      "margin": 5280,
+      "seat": 1,
+      "shops": [
+        6,
+        0,
+        2,
+        6,
+        5,
+        7,
+        4,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95880958.json",
+      "sha256": "9E65E561BC4ADD3E53A584D7359B8D5687ABA32F4AFAD55E7BC297240055B2DD"
+    },
+    {
+      "route_id": 68,
+      "episode_id": 95881003,
+      "reward": 113773,
+      "opponent_reward": 111984,
+      "margin": 1789,
+      "seat": 1,
+      "shops": [
+        3,
+        5,
+        5,
+        6,
+        5,
+        0,
+        5,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95881003.json",
+      "sha256": "A519E56BEBED6604B064913B1E8A812A3D2A1D303178A7983D58780DAD2140A2"
+    },
+    {
+      "route_id": 69,
+      "episode_id": 95938021,
+      "reward": 105939,
+      "opponent_reward": 105415,
+      "margin": 524,
+      "seat": 0,
+      "shops": [
+        5,
+        5,
+        5,
+        6,
+        7,
+        2,
+        5,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95938021.json",
+      "sha256": "76D7E08E05824B8B0F7293670AE0A99DEA3BF9FDF7F7E1684F110B79CC25D77E"
+    },
+    {
+      "route_id": 70,
+      "episode_id": 95974492,
+      "reward": 97299,
+      "opponent_reward": 96735,
+      "margin": 564,
+      "seat": 1,
+      "shops": [
+        6,
+        2,
+        2,
+        7,
+        7,
+        0,
+        1,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95974492.json",
+      "sha256": "DFBA9E7C65549C412D99D615EE882A73D2CCA202A99E6275812D8F1E0F736176"
+    },
+    {
+      "route_id": 71,
+      "episode_id": 95990421,
+      "reward": 71478,
+      "opponent_reward": 66322,
+      "margin": 5156,
+      "seat": 1,
+      "shops": [
+        6,
+        4,
+        2,
+        4,
+        0,
+        7,
+        3,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\95990421.json",
+      "sha256": "F1BEB891B3E728669AF12973A8DEC5BD6D9FF9A21544C4E2EA99BFCDBA295348"
+    },
+    {
+      "route_id": 72,
+      "episode_id": 96102344,
+      "reward": 78922,
+      "opponent_reward": 77077,
+      "margin": 1845,
+      "seat": 1,
+      "shops": [
+        1,
+        1,
+        5,
+        1,
+        0,
+        2,
+        3,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96102344.json",
+      "sha256": "E6BA6E5DE99B461C128E31B1F95437B141841463DC250CFB65A186D553EB7638"
+    },
+    {
+      "route_id": 73,
+      "episode_id": 96177676,
+      "reward": 88213,
+      "opponent_reward": 87793,
+      "margin": 420,
+      "seat": 0,
+      "shops": [
+        0,
+        7,
+        6,
+        3,
+        2,
+        1,
+        2,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96177676.json",
+      "sha256": "AD07CEFA5DD76DE3E9006F1D1E7759DFFBA1DD05FD743536CEC087FEB14E1886"
+    },
+    {
+      "route_id": 74,
+      "episode_id": 96223321,
+      "reward": 50473,
+      "opponent_reward": 47672,
+      "margin": 2801,
+      "seat": 1,
+      "shops": [
+        0,
+        2,
+        4,
+        3,
+        1,
+        0,
+        4,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96223321.json",
+      "sha256": "E6B6A5C1C7D6384314AAB17250B3B7F686CB95251C7B89D7654025CFF4DFBF20"
+    },
+    {
+      "route_id": 75,
+      "episode_id": 96261990,
+      "reward": 44120,
+      "opponent_reward": 43354,
+      "margin": 766,
+      "seat": 1,
+      "shops": [
+        0,
+        6,
+        4,
+        0,
+        4,
+        3,
+        4,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96261990.json",
+      "sha256": "90D8F495BBA0934DF866D24EFF90ABD6982D96EB9C5CD863BFCEBC5307E9E385"
+    },
+    {
+      "route_id": 76,
+      "episode_id": 96282587,
+      "reward": 73954,
+      "opponent_reward": 70353,
+      "margin": 3601,
+      "seat": 0,
+      "shops": [
+        6,
+        4,
+        0,
+        7,
+        5,
+        2,
+        5,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96282587.json",
+      "sha256": "C6DA3EE504A47E8C7B94A79A05C93DF3A0A1A001A31860391DEFF7AF2F9E3FFE"
+    },
+    {
+      "route_id": 77,
+      "episode_id": 96309875,
+      "reward": 80256,
+      "opponent_reward": 55533,
+      "margin": 24723,
+      "seat": 1,
+      "shops": [
+        0,
+        0,
+        7,
+        1,
+        7,
+        6,
+        4,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96309875.json",
+      "sha256": "332631D3E07EEB1DDB463C3AC2260CE0D96B19E6CFA41A37D647401CD252C7DB"
+    },
+    {
+      "route_id": 78,
+      "episode_id": 96321193,
+      "reward": 96056,
+      "opponent_reward": 95776,
+      "margin": 280,
+      "seat": 0,
+      "shops": [
+        0,
+        7,
+        6,
+        6,
+        7,
+        4,
+        1,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96321193.json",
+      "sha256": "1345AA341E2D6DB47EBF0AAE97287501CEB67F55C1A14EE401C5BB7A1EC14A04"
+    },
+    {
+      "route_id": 79,
+      "episode_id": 96339448,
+      "reward": 74425,
+      "opponent_reward": 73835,
+      "margin": 590,
+      "seat": 0,
+      "shops": [
+        0,
+        1,
+        3,
+        7,
+        2,
+        0,
+        1,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96339448.json",
+      "sha256": "ACC2CF25426A4016E4F10168E771AC988AEDF0AA4A2D9664BE4E42129A999AB2"
+    },
+    {
+      "route_id": 80,
+      "episode_id": 96355261,
+      "reward": 76146,
+      "opponent_reward": 73705,
+      "margin": 2441,
+      "seat": 0,
+      "shops": [
+        4,
+        6,
+        1,
+        1,
+        3,
+        0,
+        0,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96355261.json",
+      "sha256": "B49F8091FFC7C95737A75A6D9794092F44C2A17778C1C190257CE542539CAA94"
+    },
+    {
+      "route_id": 81,
+      "episode_id": 96378263,
+      "reward": 105912,
+      "opponent_reward": 103835,
+      "margin": 2077,
+      "seat": 0,
+      "shops": [
+        5,
+        7,
+        1,
+        6,
+        2,
+        5,
+        3,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96378263.json",
+      "sha256": "9323E32B5FE4CB4DBC8B4DD8492589A5CE6A9C0F060DC5759C73964E2E6EC470"
+    },
+    {
+      "route_id": 82,
+      "episode_id": 96403337,
+      "reward": 91669,
+      "opponent_reward": 70871,
+      "margin": 20798,
+      "seat": 1,
+      "shops": [
+        2,
+        4,
+        2,
+        4,
+        2,
+        2,
+        3,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96403337.json",
+      "sha256": "79694634CD3FCC33E9C4B28F6B7D44DC5B8A20E13BEC76BA0E444EB9C81A367A"
+    },
+    {
+      "route_id": 83,
+      "episode_id": 96403338,
+      "reward": 54339,
+      "opponent_reward": 51427,
+      "margin": 2912,
+      "seat": 1,
+      "shops": [
+        7,
+        0,
+        4,
+        5,
+        3,
+        4,
+        5,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96403338.json",
+      "sha256": "9B015905C1AF6E1AEEC63E79EE9B987B1E508D10DEDF773C184A1DAADC7ECC90"
+    },
+    {
+      "route_id": 84,
+      "episode_id": 96428479,
+      "reward": 76060,
+      "opponent_reward": 72825,
+      "margin": 3235,
+      "seat": 1,
+      "shops": [
+        6,
+        0,
+        0,
+        3,
+        5,
+        7,
+        1,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96428479.json",
+      "sha256": "1B9B22D16F5ACE6F0A3162C38EBE9D2C9EF0CBED9A4A5366D01E882EC1414AE4"
+    },
+    {
+      "route_id": 85,
+      "episode_id": 96451220,
+      "reward": 55005,
+      "opponent_reward": 52614,
+      "margin": 2391,
+      "seat": 0,
+      "shops": [
+        5,
+        4,
+        5,
+        4,
+        5,
+        1,
+        2,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96451220.json",
+      "sha256": "F961FE5BD03405F683FBDAD4DFBF770A3325458FDE43870AFC5B4853DCBC9DCB"
+    },
+    {
+      "route_id": 86,
+      "episode_id": 96480840,
+      "reward": 123588,
+      "opponent_reward": 117417,
+      "margin": 6171,
+      "seat": 0,
+      "shops": [
+        0,
+        3,
+        6,
+        6,
+        3,
+        0,
+        7,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96480840.json",
+      "sha256": "FD67AB0785EF65E2B41D3A98013E5372E8E862DE3243740B0CE3CDB802F7CBE1"
+    },
+    {
+      "route_id": 87,
+      "episode_id": 96499134,
+      "reward": 85385,
+      "opponent_reward": 85339,
+      "margin": 46,
+      "seat": 1,
+      "shops": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        6,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96499134.json",
+      "sha256": "4A0D5D5ABA11F5294F58670CD7791B18D7660F574300A8CDF2C8D3E446DA834B"
+    },
+    {
+      "route_id": 88,
+      "episode_id": 96521734,
+      "reward": 84710,
+      "opponent_reward": 80244,
+      "margin": 4466,
+      "seat": 1,
+      "shops": [
+        5,
+        4,
+        7,
+        5,
+        5,
+        4,
+        3,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96521734.json",
+      "sha256": "BA8E1368EB150905F8B521A819D2B3B32BB936AEA722743ED68CC28E70CD5D83"
+    },
+    {
+      "route_id": 89,
+      "episode_id": 96540080,
+      "reward": 81712,
+      "opponent_reward": 81271,
+      "margin": 441,
+      "seat": 1,
+      "shops": [
+        1,
+        7,
+        4,
+        2,
+        0,
+        7,
+        6,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96540080.json",
+      "sha256": "B2B2E539B752A26B84D9904EE755A8183808F215CA849F2300108D9086BC4FD0"
+    },
+    {
+      "route_id": 90,
+      "episode_id": 96606107,
+      "reward": 69473,
+      "opponent_reward": 61952,
+      "margin": 7521,
+      "seat": 0,
+      "shops": [
+        4,
+        5,
+        2,
+        3,
+        5,
+        4,
+        2,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96606107.json",
+      "sha256": "B853D790F79CDC9B8FF79D5B250FEC6B02F5F51E0E1C7F19BE96BF53775F328C"
+    },
+    {
+      "route_id": 91,
+      "episode_id": 96663226,
+      "reward": 85853,
+      "opponent_reward": 81527,
+      "margin": 4326,
+      "seat": 0,
+      "shops": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        1,
+        3,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96663226.json",
+      "sha256": "0FCA5F9A17504749AC2F7E16590067113B28ECD4855F84445B70E951F72FA8C0"
+    },
+    {
+      "route_id": 92,
+      "episode_id": 96676964,
+      "reward": 41321,
+      "opponent_reward": 40643,
+      "margin": 678,
+      "seat": 0,
+      "shops": [
+        0,
+        0,
+        2,
+        5,
+        1,
+        2,
+        1,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96676964.json",
+      "sha256": "9523A7AB5B67C86D376C92CCF0DC76D7BED702D6933D0D35682D51FC7FDC6641"
+    },
+    {
+      "route_id": 93,
+      "episode_id": 96692748,
+      "reward": 97347,
+      "opponent_reward": 96889,
+      "margin": 458,
+      "seat": 0,
+      "shops": [
+        5,
+        2,
+        6,
+        1,
+        1,
+        6,
+        4,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96692748.json",
+      "sha256": "384991B5847065F4B23DF127E9220D3164B9252689C4C3FCE5DA775DB5DA13EB"
+    },
+    {
+      "route_id": 94,
+      "episode_id": 96695252,
+      "reward": 107609,
+      "opponent_reward": 92351,
+      "margin": 15258,
+      "seat": 1,
+      "shops": [
+        3,
+        7,
+        4,
+        5,
+        5,
+        7,
+        4,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96695252.json",
+      "sha256": "6E78836771C904F702D3DE30E4DC2EFE1B855D9F4519111735FD351A6E6AFC1A"
+    },
+    {
+      "route_id": 95,
+      "episode_id": 96822885,
+      "reward": 114400,
+      "opponent_reward": 109568,
+      "margin": 4832,
+      "seat": 1,
+      "shops": [
+        2,
+        3,
+        2,
+        3,
+        3,
+        6,
+        7,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96822885.json",
+      "sha256": "C466051F9546166A5910A876BA247779F90772C19447755F9BD1CE3BB3EA643C"
+    },
+    {
+      "route_id": 96,
+      "episode_id": 96877768,
+      "reward": 66834,
+      "opponent_reward": 66515,
+      "margin": 319,
+      "seat": 0,
+      "shops": [
+        7,
+        0,
+        2,
+        1,
+        2,
+        4,
+        3,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96877768.json",
+      "sha256": "EED8B808025F6131C8D757CB19257B13261EB627AEB326F75F175CD0EACF8043"
+    },
+    {
+      "route_id": 97,
+      "episode_id": 96886856,
+      "reward": 77084,
+      "opponent_reward": 76588,
+      "margin": 496,
+      "seat": 1,
+      "shops": [
+        1,
+        4,
+        1,
+        7,
+        2,
+        0,
+        5,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96886856.json",
+      "sha256": "88EEB3045F043217FF855DA06946AADD48B1ACC20D7EC86276B7877FBDB1E82F"
+    },
+    {
+      "route_id": 98,
+      "episode_id": 96893684,
+      "reward": 87964,
+      "opponent_reward": 87789,
+      "margin": 175,
+      "seat": 0,
+      "shops": [
+        7,
+        3,
+        0,
+        2,
+        3,
+        2,
+        0,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96893684.json",
+      "sha256": "B0100D1893E4A1D020B5576523EB7175E21F3617F9759930E602065CEA276298"
+    },
+    {
+      "route_id": 99,
+      "episode_id": 96969097,
+      "reward": 90146,
+      "opponent_reward": 83613,
+      "margin": 6533,
+      "seat": 0,
+      "shops": [
+        0,
+        7,
+        6,
+        7,
+        2,
+        4,
+        0,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\96969097.json",
+      "sha256": "E99E433C4516B5D5C25C4A9F152E644BAC746A152EDCC19C227FDEE1B5794714"
+    },
+    {
+      "route_id": 100,
+      "episode_id": 97019277,
+      "reward": 99207,
+      "opponent_reward": 98836,
+      "margin": 371,
+      "seat": 1,
+      "shops": [
+        2,
+        3,
+        2,
+        1,
+        3,
+        1,
+        3,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97019277.json",
+      "sha256": "CEEBF7E711DEC3C6DBEDE8A09E5C22955B88C94DAA1821B3FC50B14AA55AB876"
+    },
+    {
+      "route_id": 101,
+      "episode_id": 97067132,
+      "reward": 57777,
+      "opponent_reward": 55848,
+      "margin": 1929,
+      "seat": 1,
+      "shops": [
+        4,
+        7,
+        5,
+        5,
+        4,
+        2,
+        0,
+        7
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97067132.json",
+      "sha256": "DFAF44522CF587C982410F096D00CE3135A21CA117AC9D3AAE41BD1F06F95B88"
+    },
+    {
+      "route_id": 102,
+      "episode_id": 97085303,
+      "reward": 93374,
+      "opponent_reward": 90131,
+      "margin": 3243,
+      "seat": 1,
+      "shops": [
+        5,
+        7,
+        0,
+        7,
+        5,
+        4,
+        1,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97085303.json",
+      "sha256": "D8B9122F5664FE47B78D3F832C59FEEB8D227D3636CBB3C3F2D7186DE815762A"
+    },
+    {
+      "route_id": 103,
+      "episode_id": 97155905,
+      "reward": 69823,
+      "opponent_reward": 66413,
+      "margin": 3410,
+      "seat": 1,
+      "shops": [
+        1,
+        4,
+        2,
+        7,
+        0,
+        2,
+        0,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97155905.json",
+      "sha256": "F1279B6E4810BA3F07F93F77F785BF86A3114D8D9F6ADC6C630F6F469F9845E0"
+    },
+    {
+      "route_id": 104,
+      "episode_id": 97178857,
+      "reward": 66834,
+      "opponent_reward": 66325,
+      "margin": 509,
+      "seat": 1,
+      "shops": [
+        7,
+        5,
+        1,
+        0,
+        0,
+        2,
+        4,
+        0
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97178857.json",
+      "sha256": "A1A58A27CA459E1E2D6E30D8F7D0CE2EA4FC3CFC9B8FCA210C9AB606A2C4E5FC"
+    },
+    {
+      "route_id": 105,
+      "episode_id": 97213057,
+      "reward": 87777,
+      "opponent_reward": 81480,
+      "margin": 6297,
+      "seat": 1,
+      "shops": [
+        7,
+        7,
+        5,
+        5,
+        1,
+        0,
+        4,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97213057.json",
+      "sha256": "D279C671B20C558F4D352FEC8866D5EA2F24D7B8FE67FBD6F16B0261587437C1"
+    },
+    {
+      "route_id": 106,
+      "episode_id": 97238198,
+      "reward": 101032,
+      "opponent_reward": 82279,
+      "margin": 18753,
+      "seat": 0,
+      "shops": [
+        1,
+        5,
+        7,
+        6,
+        7,
+        2,
+        5,
+        4
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97238198.json",
+      "sha256": "43129F3265D5B79698588B360AB4D05AF1BA7403029B62C9A687DDACC1FD2FAD"
+    },
+    {
+      "route_id": 107,
+      "episode_id": 97249607,
+      "reward": 80320,
+      "opponent_reward": 74363,
+      "margin": 5957,
+      "seat": 1,
+      "shops": [
+        0,
+        7,
+        7,
+        5,
+        2,
+        7,
+        3,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97249607.json",
+      "sha256": "1171877AFA04FD14A9D30E00DF484133DE28059995FBF83D89EC68B26606DC55"
+    },
+    {
+      "route_id": 108,
+      "episode_id": 97286058,
+      "reward": 80008,
+      "opponent_reward": 76070,
+      "margin": 3938,
+      "seat": 0,
+      "shops": [
+        2,
+        1,
+        4,
+        4,
+        2,
+        6,
+        3,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97286058.json",
+      "sha256": "DC635616754E60BA4D4491402D2ACDD0FCA91B1AE9EAF05EBDCA7BE5511340FB"
+    },
+    {
+      "route_id": 109,
+      "episode_id": 97368205,
+      "reward": 62486,
+      "opponent_reward": 61856,
+      "margin": 630,
+      "seat": 0,
+      "shops": [
+        2,
+        2,
+        0,
+        5,
+        6,
+        0,
+        0,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97368205.json",
+      "sha256": "442B797AB148ECCDF4634DBB8D7DFBBED9031B44DD8FE047EB273DCE605B4679"
+    },
+    {
+      "route_id": 110,
+      "episode_id": 97402406,
+      "reward": 85879,
+      "opponent_reward": 85848,
+      "margin": 31,
+      "seat": 1,
+      "shops": [
+        2,
+        1,
+        4,
+        6,
+        5,
+        3,
+        3,
+        6
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97402406.json",
+      "sha256": "7532F34B92DC5CC2E114B62DE8A2038740D37FB799631912EE4CBBCDE127383C"
+    },
+    {
+      "route_id": 111,
+      "episode_id": 97463912,
+      "reward": 67673,
+      "opponent_reward": 59530,
+      "margin": 8143,
+      "seat": 0,
+      "shops": [
+        4,
+        0,
+        1,
+        7,
+        3,
+        7,
+        0,
+        5
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97463912.json",
+      "sha256": "FDEEF8C3C9CAE3C03849F27755DD2768F7AF2E613CB37ACB4B905B83333F23C9"
+    },
+    {
+      "route_id": 112,
+      "episode_id": 97477489,
+      "reward": 84155,
+      "opponent_reward": 83985,
+      "margin": 170,
+      "seat": 0,
+      "shops": [
+        4,
+        3,
+        3,
+        3,
+        0,
+        0,
+        7,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97477489.json",
+      "sha256": "E3A00AA633FBCF1F86D870AF6334D4FA05C135CE2F36A32EA7C1E151830C14B8"
+    },
+    {
+      "route_id": 113,
+      "episode_id": 97482328,
+      "reward": 91800,
+      "opponent_reward": 81258,
+      "margin": 10542,
+      "seat": 0,
+      "shops": [
+        5,
+        2,
+        7,
+        0,
+        6,
+        5,
+        3,
+        1
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97482328.json",
+      "sha256": "FBF3501D6452C85848F7AE44736FBFD92050497C01D9C9257167E0A8A577FA74"
+    },
+    {
+      "route_id": 114,
+      "episode_id": 97484362,
+      "reward": 89349,
+      "opponent_reward": 79869,
+      "margin": 9480,
+      "seat": 0,
+      "shops": [
+        1,
+        5,
+        7,
+        7,
+        2,
+        7,
+        4,
+        3
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97484362.json",
+      "sha256": "01854D0B9EF027054433F291DEEAE8827605C89CD7665A745B2FB8ED833E0290"
+    },
+    {
+      "route_id": 115,
+      "episode_id": 97555332,
+      "reward": 75444,
+      "opponent_reward": 73297,
+      "margin": 2147,
+      "seat": 0,
+      "shops": [
+        0,
+        1,
+        1,
+        7,
+        7,
+        4,
+        2,
+        2
+      ],
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\top40_live_20260823\\episodes\\97555332.json",
+      "sha256": "CDC70E04663F84DC1B59F42B7DE0932A5312EEDC3A90E4421D3E63B1AE79B31A"
+    }
+  ],
+  "output": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank33_unknownrobi_trace_bank_v1.npz",
+  "output_sha256": "BA06B0B39E1B82AB68112C855AC27875E83726D49C9B31EE08659EA47CA40F21",
+  "shapes": {
+    "unit_op": [
+      116,
+      719,
+      33
+    ],
+    "unit_item": [
+      116,
+      719,
+      33
+    ],
+    "unit_amount": [
+      116,
+      719,
+      33
+    ],
+    "unit_count": [
+      116,
+      719
+    ],
+    "market_op": [
+      116,
+      719,
+      10
+    ],
+    "market_item": [
+      116,
+      719,
+      10
+    ],
+    "market_amount": [
+      116,
+      719,
+      10
+    ],
+    "market_count": [
+      116,
+      719
+    ],
+    "expected_unit_pos": [
+      116,
+      719,
+      33,
+      2
+    ],
+    "expected_unit_active": [
+      116,
+      719,
+      33
+    ],
+    "expected_money": [
+      116,
+      719
+    ],
+    "expected_self_summary": [
+      116,
+      719,
+      11
+    ],
+    "expected_opponent_summary": [
+      116,
+      719,
+      11
+    ],
+    "expected_shed": [
+      116,
+      719,
+      12
+    ],
+    "expected_seeds": [
+      116,
+      719,
+      5
+    ],
+    "expected_carried": [
+      116,
+      719,
+      12
+    ],
+    "expected_market_price": [
+      116,
+      719,
+      9
+    ],
+    "expected_market_inventory": [
+      116,
+      719,
+      9
+    ],
+    "source_shop_sequence": [
+      116,
+      8
+    ],
+    "source_episode_id": [
+      116
+    ],
+    "source_reward": [
+      116
+    ],
+    "source_opponent_reward": [
+      116
+    ],
+    "source_margin": [
+      116
+    ],
+    "source_seat": [
+      116
+    ],
+    "bootstrap_route_id": []
+  }
+}

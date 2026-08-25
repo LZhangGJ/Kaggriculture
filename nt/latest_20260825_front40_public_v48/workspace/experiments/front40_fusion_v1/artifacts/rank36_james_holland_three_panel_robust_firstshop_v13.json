@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "TRAINING_ONLY",
+  "name": "rank36_james_holland_three_panel_robust_firstshop_v13",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank36_james_holland_trace_bank_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [154, 121, 154, 159, 60, 158, 70, 23],
+  "selection": "three-panel public-first-shop route map selected by a simplex weight sweep to maximize the minimum aggregate panel win rate, then total wins and margin; panels seed1160001,1168001,1176001",
+  "runtime_boundary": "first town shop already visible; no identity, Replay ID, seed, coordinates, or future event"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_v2.passive_full",
+  "generated_at_utc": "2026-08-20T08:39:50.244620+00:00",
+  "device": "cuda:0",
+  "batch": 256,
+  "steps_per_game": 719,
+  "compile_and_first_seconds": 14.034924656000001,
+  "steady_seconds": 5.151236515999997,
+  "transitions_per_second": 35732.00326335008,
+  "done_count": 256,
+  "final_step_min": 719,
+  "final_step_max": 719,
+  "cash": {
+    "min": 63535,
+    "p10": 105696.0,
+    "median": 155223.5,
+    "mean": 151766.03125,
+    "p90": 192071.0,
+    "max": 213185
+  },
+  "branch_histogram": {
+    "0": 0,
+    "1": 39,
+    "2": 25,
+    "3": 31,
+    "4": 32,
+    "5": 29,
+    "6": 31,
+    "7": 33,
+    "8": 36
+  },
+  "invalid_intent_total": 2092,
+  "resync_total": 910,
+  "market_trim_total": 146,
+  "hard_counter_total": 0,
+  "acceptance": {
+    "all_finished": true,
+    "hard_counter_zero": true,
+    "economic_milestone_pass": true
+  },
+  "status": "PASS"
+}

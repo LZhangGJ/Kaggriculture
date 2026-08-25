@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank02_crop_dusta_hasegawa_weak_shop_hybrid_v34",
+      "family": "rank02_crop_dusta_with_hasegawa_weak_shop_fallback",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_hasegawa_hybrid_bank_v34.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_hasegawa_hybrid_first_map_v34.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_hasegawa_hybrid_second_map_v34.json"
+    }
+  ]
+}

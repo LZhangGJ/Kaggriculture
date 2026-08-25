@@ -1,0 +1,138 @@
+{
+  "schema": "kaggriculture.front40_fusion.three-shop-trace-tree-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T19:09:39.595336+00:00",
+  "status": "PASS",
+  "device": "cuda:0",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank23_xw_trace_bank_v1.npz",
+  "route_tree": "experiments/front40_fusion_v1/artifacts/rank23_xw_thirdshop_three_panel_minimax_v9.json",
+  "seed_start": 984001,
+  "batch_per_seat": 512,
+  "screen_matrix": null,
+  "fallback_shop_ids": [],
+  "runtime_boundary": "only town shops already visible in the current state",
+  "aggregate": {
+    "games": 1024,
+    "wins": 542,
+    "win_rate": 0.529296875,
+    "mean_margin": -1603.3759765625,
+    "parity_mismatch_total": 0
+  },
+  "results": [
+    {
+      "candidate_seat": 0,
+      "games": 512,
+      "wins": 272,
+      "win_rate": 0.53125,
+      "mean_margin": -1649.75,
+      "candidate_cash_mean": 88213.40625,
+      "opponent_cash_mean": 89863.15625,
+      "all_done": true,
+      "invalid_intent_total": 11275,
+      "resync_total": 1180,
+      "hard_counter_total": 0,
+      "route_switch_total": 734,
+      "fallback_games": 0,
+      "fallback_wins": 0,
+      "fallback_win_rate": null,
+      "elapsed_seconds": 312.913955219,
+      "transitions_per_second": 1176.4512060267723,
+      "parity": {
+        "cash_mismatch": 0,
+        "opponent_cash_mismatch": 0,
+        "route_mismatch": 0
+      },
+      "parity_examples": []
+    },
+    {
+      "candidate_seat": 1,
+      "games": 512,
+      "wins": 270,
+      "win_rate": 0.52734375,
+      "mean_margin": -1557.001953125,
+      "candidate_cash_mean": 88276.90234375,
+      "opponent_cash_mean": 89833.904296875,
+      "all_done": true,
+      "invalid_intent_total": 11127,
+      "resync_total": 1210,
+      "hard_counter_total": 0,
+      "route_switch_total": 734,
+      "fallback_games": 0,
+      "fallback_wins": 0,
+      "fallback_win_rate": null,
+      "elapsed_seconds": 338.6591703330001,
+      "transitions_per_second": 1087.0161869174353,
+      "parity": {
+        "cash_mismatch": 0,
+        "opponent_cash_mismatch": 0,
+        "route_mismatch": 0
+      },
+      "parity_examples": []
+    }
+  ],
+  "by_first_shop": [
+    {
+      "first_shop": 0,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 110,
+      "wins": 47,
+      "win_rate": 0.42727272727272725,
+      "mean_margin": -1746.8272727272727
+    },
+    {
+      "first_shop": 1,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 123,
+      "wins": 39,
+      "win_rate": 0.3170731707317073,
+      "mean_margin": -5193.821138211382
+    },
+    {
+      "first_shop": 2,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 115,
+      "wins": 45,
+      "win_rate": 0.391304347826087,
+      "mean_margin": -4285.130434782609
+    },
+    {
+      "first_shop": 3,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 124,
+      "wins": 44,
+      "win_rate": 0.3548387096774194,
+      "mean_margin": -8017.854838709677
+    },
+    {
+      "first_shop": 4,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 127,
+      "wins": 70,
+      "win_rate": 0.5511811023622047,
+      "mean_margin": -143.03937007874015
+    },
+    {
+      "first_shop": 5,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 136,
+      "wins": 104,
+      "win_rate": 0.7647058823529411,
+      "mean_margin": 5650.463235294118
+    },
+    {
+      "first_shop": 6,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 147,
+      "wins": 78,
+      "win_rate": 0.5306122448979592,
+      "mean_margin": -4026.013605442177
+    },
+    {
+      "first_shop": 7,
+      "mode": "THREE_SHOP_TRACE",
+      "games": 142,
+      "wins": 115,
+      "win_rate": 0.8098591549295775,
+      "mean_margin": 3645.5281690140846
+    }
+  ]
+}

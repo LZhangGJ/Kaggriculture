@@ -1,0 +1,1015 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T21:29:16.418244+00:00",
+  "device": "cuda:0",
+  "seed_start": 1104001,
+  "seed_count": 64,
+  "route_count": 113,
+  "route_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+  ],
+  "route_chunk": 16,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 14464,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 0,
+      "first_shop": "BAKERY",
+      "seed_count": 8,
+      "eligible_routes": 15,
+      "top_routes": [
+        {
+          "route_id": 105,
+          "source_episode_id": 97103556,
+          "source_reward": 88895,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -9145.8125,
+          "invalid_mean": 60.8125
+        },
+        {
+          "route_id": 83,
+          "source_episode_id": 95958572,
+          "source_reward": 83101,
+          "games": 16,
+          "win_rate": 0.25,
+          "mean_margin": -5864.8125,
+          "invalid_mean": 3.6875
+        },
+        {
+          "route_id": 103,
+          "source_episode_id": 96886915,
+          "source_reward": 93193,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -8070.625,
+          "invalid_mean": 45.8125
+        },
+        {
+          "route_id": 100,
+          "source_episode_id": 96606235,
+          "source_reward": 83788,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -8893.25,
+          "invalid_mean": 45.625
+        },
+        {
+          "route_id": 13,
+          "source_episode_id": 95203076,
+          "source_reward": 82415,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -9589.6875,
+          "invalid_mean": 46.25
+        },
+        {
+          "route_id": 20,
+          "source_episode_id": 95219148,
+          "source_reward": 72661,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -9777.375,
+          "invalid_mean": 54.875
+        },
+        {
+          "route_id": 31,
+          "source_episode_id": 95242049,
+          "source_reward": 57651,
+          "games": 16,
+          "win_rate": 0.125,
+          "mean_margin": -4494.125,
+          "invalid_mean": 7.6875
+        },
+        {
+          "route_id": 41,
+          "source_episode_id": 95269541,
+          "source_reward": 38356,
+          "games": 16,
+          "win_rate": 0.125,
+          "mean_margin": -6252.75,
+          "invalid_mean": 2.6875
+        },
+        {
+          "route_id": 45,
+          "source_episode_id": 95280985,
+          "source_reward": 132004,
+          "games": 16,
+          "win_rate": 0.0,
+          "mean_margin": -7848.125,
+          "invalid_mean": 3.6875
+        },
+        {
+          "route_id": 55,
+          "source_episode_id": 95306201,
+          "source_reward": 44298,
+          "games": 16,
+          "win_rate": 0.0,
+          "mean_margin": -7916.1875,
+          "invalid_mean": 3.6875
+        }
+      ]
+    },
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 16,
+      "eligible_routes": 15,
+      "top_routes": [
+        {
+          "route_id": 106,
+          "source_episode_id": 97130799,
+          "source_reward": 58509,
+          "games": 32,
+          "win_rate": 0.375,
+          "mean_margin": -2421.3125,
+          "invalid_mean": 9.0
+        },
+        {
+          "route_id": 75,
+          "source_episode_id": 95655061,
+          "source_reward": 101888,
+          "games": 32,
+          "win_rate": 0.28125,
+          "mean_margin": 245.71875,
+          "invalid_mean": 18.0
+        },
+        {
+          "route_id": 53,
+          "source_episode_id": 95299332,
+          "source_reward": 89424,
+          "games": 32,
+          "win_rate": 0.25,
+          "mean_margin": -1776.46875,
+          "invalid_mean": 9.0
+        },
+        {
+          "route_id": 43,
+          "source_episode_id": 95276425,
+          "source_reward": 71122,
+          "games": 32,
+          "win_rate": 0.21875,
+          "mean_margin": -2288.8125,
+          "invalid_mean": 9.0
+        },
+        {
+          "route_id": 111,
+          "source_episode_id": 97534782,
+          "source_reward": 60928,
+          "games": 32,
+          "win_rate": 0.1875,
+          "mean_margin": -3780.65625,
+          "invalid_mean": 10.9375
+        },
+        {
+          "route_id": 48,
+          "source_episode_id": 95285648,
+          "source_reward": 65882,
+          "games": 32,
+          "win_rate": 0.1875,
+          "mean_margin": -5095.53125,
+          "invalid_mean": 4.03125
+        },
+        {
+          "route_id": 109,
+          "source_episode_id": 97320274,
+          "source_reward": 100958,
+          "games": 32,
+          "win_rate": 0.15625,
+          "mean_margin": -4996.28125,
+          "invalid_mean": 4.03125
+        },
+        {
+          "route_id": 38,
+          "source_episode_id": 95262640,
+          "source_reward": 94891,
+          "games": 32,
+          "win_rate": 0.125,
+          "mean_margin": -5148.34375,
+          "invalid_mean": 5.03125
+        },
+        {
+          "route_id": 9,
+          "source_episode_id": 95193947,
+          "source_reward": 123102,
+          "games": 32,
+          "win_rate": 0.03125,
+          "mean_margin": -9447.53125,
+          "invalid_mean": 1.96875
+        },
+        {
+          "route_id": 89,
+          "source_episode_id": 96255250,
+          "source_reward": 91058,
+          "games": 32,
+          "win_rate": 0.0,
+          "mean_margin": -6126.40625,
+          "invalid_mean": 4.03125
+        }
+      ]
+    },
+    {
+      "first_shop_id": 2,
+      "first_shop": "FARMERS_MARKET",
+      "seed_count": 8,
+      "eligible_routes": 14,
+      "top_routes": [
+        {
+          "route_id": 51,
+          "source_episode_id": 95292448,
+          "source_reward": 108289,
+          "games": 16,
+          "win_rate": 0.375,
+          "mean_margin": -607.0,
+          "invalid_mean": 18.0
+        },
+        {
+          "route_id": 25,
+          "source_episode_id": 95228285,
+          "source_reward": 97153,
+          "games": 16,
+          "win_rate": 0.375,
+          "mean_margin": -826.3125,
+          "invalid_mean": 7.0
+        },
+        {
+          "route_id": 56,
+          "source_episode_id": 95308487,
+          "source_reward": 67009,
+          "games": 16,
+          "win_rate": 0.375,
+          "mean_margin": -1247.1875,
+          "invalid_mean": 7.0
+        },
+        {
+          "route_id": 58,
+          "source_episode_id": 95324521,
+          "source_reward": 65648,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -2780.5,
+          "invalid_mean": 7.0
+        },
+        {
+          "route_id": 84,
+          "source_episode_id": 96001961,
+          "source_reward": 105168,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -4017.375,
+          "invalid_mean": 2.0
+        },
+        {
+          "route_id": 73,
+          "source_episode_id": 95604907,
+          "source_reward": 78088,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -4196.5625,
+          "invalid_mean": 3.0
+        },
+        {
+          "route_id": 61,
+          "source_episode_id": 95374527,
+          "source_reward": 83861,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -4203.375,
+          "invalid_mean": 2.0
+        },
+        {
+          "route_id": 96,
+          "source_episode_id": 96469446,
+          "source_reward": 90598,
+          "games": 16,
+          "win_rate": 0.3125,
+          "mean_margin": -4277.3125,
+          "invalid_mean": 2.0
+        },
+        {
+          "route_id": 98,
+          "source_episode_id": 96524156,
+          "source_reward": 73601,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -4633.625,
+          "invalid_mean": 2.0
+        },
+        {
+          "route_id": 62,
+          "source_episode_id": 95420238,
+          "source_reward": 80534,
+          "games": 16,
+          "win_rate": 0.1875,
+          "mean_margin": -5189.625,
+          "invalid_mean": 2.0
+        }
+      ]
+    },
+    {
+      "first_shop_id": 3,
+      "first_shop": "ICE_CREAM_SHOP",
+      "seed_count": 3,
+      "eligible_routes": 14,
+      "top_routes": [
+        {
+          "route_id": 85,
+          "source_episode_id": 96141187,
+          "source_reward": 112887,
+          "games": 6,
+          "win_rate": 1.0,
+          "mean_margin": 1360.3333333333333,
+          "invalid_mean": 1.8333333333333333
+        },
+        {
+          "route_id": 104,
+          "source_episode_id": 96980486,
+          "source_reward": 149105,
+          "games": 6,
+          "win_rate": 1.0,
+          "mean_margin": 1208.3333333333333,
+          "invalid_mean": 3.0
+        },
+        {
+          "route_id": 92,
+          "source_episode_id": 96339481,
+          "source_reward": 97681,
+          "games": 6,
+          "win_rate": 1.0,
+          "mean_margin": 1184.6666666666667,
+          "invalid_mean": 5.0
+        },
+        {
+          "route_id": 46,
+          "source_episode_id": 95283269,
+          "source_reward": 82509,
+          "games": 6,
+          "win_rate": 1.0,
+          "mean_margin": 875.0,
+          "invalid_mean": 1.0
+        },
+        {
+          "route_id": 63,
+          "source_episode_id": 95440838,
+          "source_reward": 122636,
+          "games": 6,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": 260.0,
+          "invalid_mean": 1.0
+        },
+        {
+          "route_id": 110,
+          "source_episode_id": 97340749,
+          "source_reward": 130476,
+          "games": 6,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": -264.6666666666667,
+          "invalid_mean": 1.0
+        },
+        {
+          "route_id": 49,
+          "source_episode_id": 95287859,
+          "source_reward": 136703,
+          "games": 6,
+          "win_rate": 0.0,
+          "mean_margin": -867.3333333333334,
+          "invalid_mean": 2.0
+        },
+        {
+          "route_id": 27,
+          "source_episode_id": 95230622,
+          "source_reward": 91644,
+          "games": 6,
+          "win_rate": 0.0,
+          "mean_margin": -883.0,
+          "invalid_mean": 1.0
+        },
+        {
+          "route_id": 32,
+          "source_episode_id": 95244339,
+          "source_reward": 84763,
+          "games": 6,
+          "win_rate": 0.0,
+          "mean_margin": -1015.3333333333334,
+          "invalid_mean": 1.0
+        },
+        {
+          "route_id": 34,
+          "source_episode_id": 95251182,
+          "source_reward": 128917,
+          "games": 6,
+          "win_rate": 0.0,
+          "mean_margin": -1150.3333333333333,
+          "invalid_mean": 1.0
+        }
+      ]
+    },
+    {
+      "first_shop_id": 4,
+      "first_shop": "PET_CAFE",
+      "seed_count": 8,
+      "eligible_routes": 15,
+      "top_routes": [
+        {
+          "route_id": 60,
+          "source_episode_id": 95333400,
+          "source_reward": 52926,
+          "games": 16,
+          "win_rate": 0.375,
+          "mean_margin": -3375.625,
+          "invalid_mean": 32.125
+        },
+        {
+          "route_id": 17,
+          "source_episode_id": 95209951,
+          "source_reward": 62236,
+          "games": 16,
+          "win_rate": 0.375,
+          "mean_margin": -5425.1875,
+          "invalid_mean": 1.875
+        },
+        {
+          "route_id": 64,
+          "source_episode_id": 95445307,
+          "source_reward": 67882,
+          "games": 16,
+          "win_rate": 0.25,
+          "mean_margin": -3375.3125,
+          "invalid_mean": 6.875
+        },
+        {
+          "route_id": 35,
+          "source_episode_id": 95253459,
+          "source_reward": 39675,
+          "games": 16,
+          "win_rate": 0.25,
+          "mean_margin": -3439.5625,
+          "invalid_mean": 6.875
+        },
+        {
+          "route_id": 39,
+          "source_episode_id": 95264946,
+          "source_reward": 59406,
+          "games": 16,
+          "win_rate": 0.25,
+          "mean_margin": -5543.5625,
+          "invalid_mean": 2.875
+        },
+        {
+          "route_id": 82,
+          "source_episode_id": 95883225,
+          "source_reward": 70116,
+          "games": 16,
+          "win_rate": 0.25,
+          "mean_margin": -5635.8125,
+          "invalid_mean": 1.875
+        },
+        {
+          "route_id": 99,
+          "source_episode_id": 96544695,
+          "source_reward": 49050,
+          "games": 16,
+          "win_rate": 0.125,
+          "mean_margin": -5665.5,
+          "invalid_mean": 1.875
+        },
+        {
+          "route_id": 54,
+          "source_episode_id": 95301619,
+          "source_reward": 55494,
+          "games": 16,
+          "win_rate": 0.125,
+          "mean_margin": -6474.5,
+          "invalid_mean": 1.875
+        },
+        {
+          "route_id": 87,
+          "source_episode_id": 96211777,
+          "source_reward": 90598,
+          "games": 16,
+          "win_rate": 0.125,
+          "mean_margin": -10751.4375,
+          "invalid_mean": 40.5
+        },
+        {
+          "route_id": 79,
+          "source_episode_id": 95773727,
+          "source_reward": 53239,
+          "games": 16,
+          "win_rate": 0.0,
+          "mean_margin": -3577.625,
+          "invalid_mean": 6.875
+        }
+      ]
+    },
+    {
+      "first_shop_id": 5,
+      "first_shop": "PIZZA_SHOP",
+      "seed_count": 5,
+      "eligible_routes": 16,
+      "top_routes": [
+        {
+          "route_id": 70,
+          "source_episode_id": 95531713,
+          "source_reward": 100571,
+          "games": 10,
+          "win_rate": 0.2,
+          "mean_margin": -1893.7,
+          "invalid_mean": 3.7
+        },
+        {
+          "route_id": 93,
+          "source_episode_id": 96364465,
+          "source_reward": 51394,
+          "games": 10,
+          "win_rate": 0.2,
+          "mean_margin": -2142.7,
+          "invalid_mean": 2.7
+        },
+        {
+          "route_id": 94,
+          "source_episode_id": 96428371,
+          "source_reward": 95096,
+          "games": 10,
+          "win_rate": 0.2,
+          "mean_margin": -14406.7,
+          "invalid_mean": 39.2
+        },
+        {
+          "route_id": 74,
+          "source_episode_id": 95629918,
+          "source_reward": 98579,
+          "games": 10,
+          "win_rate": 0.1,
+          "mean_margin": -2579.1,
+          "invalid_mean": 4.6
+        },
+        {
+          "route_id": 21,
+          "source_episode_id": 95221434,
+          "source_reward": 113770,
+          "games": 10,
+          "win_rate": 0.1,
+          "mean_margin": -2654.9,
+          "invalid_mean": 2.7
+        },
+        {
+          "route_id": 30,
+          "source_episode_id": 95239760,
+          "source_reward": 79089,
+          "games": 10,
+          "win_rate": 0.1,
+          "mean_margin": -10746.3,
+          "invalid_mean": 32.0
+        },
+        {
+          "route_id": 67,
+          "source_episode_id": 95481734,
+          "source_reward": 95721,
+          "games": 10,
+          "win_rate": 0.0,
+          "mean_margin": -2425.9,
+          "invalid_mean": 2.7
+        },
+        {
+          "route_id": 18,
+          "source_episode_id": 95214534,
+          "source_reward": 85101,
+          "games": 10,
+          "win_rate": 0.0,
+          "mean_margin": -2686.1,
+          "invalid_mean": 2.7
+        },
+        {
+          "route_id": 57,
+          "source_episode_id": 95310781,
+          "source_reward": 51336,
+          "games": 10,
+          "win_rate": 0.0,
+          "mean_margin": -2701.7,
+          "invalid_mean": 2.7
+        },
+        {
+          "route_id": 50,
+          "source_episode_id": 95290156,
+          "source_reward": 61880,
+          "games": 10,
+          "win_rate": 0.0,
+          "mean_margin": -3353.4,
+          "invalid_mean": 2.7
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 7,
+      "eligible_routes": 11,
+      "top_routes": [
+        {
+          "route_id": 86,
+          "source_episode_id": 96150064,
+          "source_reward": 87796,
+          "games": 14,
+          "win_rate": 0.7857142857142857,
+          "mean_margin": -1786.0,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 97,
+          "source_episode_id": 96524153,
+          "source_reward": 64347,
+          "games": 14,
+          "win_rate": 0.5,
+          "mean_margin": -2205.9285714285716,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 107,
+          "source_episode_id": 97153809,
+          "source_reward": 123964,
+          "games": 14,
+          "win_rate": 0.42857142857142855,
+          "mean_margin": -3031.5,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 69,
+          "source_episode_id": 95511415,
+          "source_reward": 133772,
+          "games": 14,
+          "win_rate": 0.14285714285714285,
+          "mean_margin": -23451.928571428572,
+          "invalid_mean": 47.642857142857146
+        },
+        {
+          "route_id": 7,
+          "source_episode_id": 95189389,
+          "source_reward": 121898,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -3558.9285714285716,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 1,
+          "source_episode_id": 95175703,
+          "source_reward": 124816,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -3785.714285714286,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 6,
+          "source_episode_id": 95187105,
+          "source_reward": 144825,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -3943.8571428571427,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 2,
+          "source_episode_id": 95177979,
+          "source_reward": 136762,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -3986.8571428571427,
+          "invalid_mean": 3.2142857142857144
+        },
+        {
+          "route_id": 22,
+          "source_episode_id": 95223730,
+          "source_reward": 113172,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -18342.85714285714,
+          "invalid_mean": 13.071428571428571
+        },
+        {
+          "route_id": 10,
+          "source_episode_id": 95196228,
+          "source_reward": 127981,
+          "games": 14,
+          "win_rate": 0.07142857142857142,
+          "mean_margin": -20163.214285714286,
+          "invalid_mean": 38.0
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 9,
+      "eligible_routes": 13,
+      "top_routes": [
+        {
+          "route_id": 108,
+          "source_episode_id": 97183264,
+          "source_reward": 55563,
+          "games": 18,
+          "win_rate": 0.3333333333333333,
+          "mean_margin": -1059.611111111111,
+          "invalid_mean": 6.111111111111111
+        },
+        {
+          "route_id": 44,
+          "source_episode_id": 95278702,
+          "source_reward": 91588,
+          "games": 18,
+          "win_rate": 0.2777777777777778,
+          "mean_margin": -1020.1111111111111,
+          "invalid_mean": 5.055555555555555
+        },
+        {
+          "route_id": 90,
+          "source_episode_id": 96293916,
+          "source_reward": 54524,
+          "games": 18,
+          "win_rate": 0.2222222222222222,
+          "mean_margin": -1673.1666666666667,
+          "invalid_mean": 5.111111111111111
+        },
+        {
+          "route_id": 78,
+          "source_episode_id": 95750968,
+          "source_reward": 75700,
+          "games": 18,
+          "win_rate": 0.16666666666666666,
+          "mean_margin": -942.0,
+          "invalid_mean": 4.222222222222222
+        },
+        {
+          "route_id": 37,
+          "source_episode_id": 95260345,
+          "source_reward": 73443,
+          "games": 18,
+          "win_rate": 0.05555555555555555,
+          "mean_margin": -1316.2777777777778,
+          "invalid_mean": 14.88888888888889
+        },
+        {
+          "route_id": 52,
+          "source_episode_id": 95297038,
+          "source_reward": 77429,
+          "games": 18,
+          "win_rate": 0.05555555555555555,
+          "mean_margin": -2194.277777777778,
+          "invalid_mean": 5.111111111111111
+        },
+        {
+          "route_id": 23,
+          "source_episode_id": 95223959,
+          "source_reward": 111031,
+          "games": 18,
+          "win_rate": 0.05555555555555555,
+          "mean_margin": -2445.222222222222,
+          "invalid_mean": 4.111111111111111
+        },
+        {
+          "route_id": 66,
+          "source_episode_id": 95458950,
+          "source_reward": 136793,
+          "games": 18,
+          "win_rate": 0.0,
+          "mean_margin": -2514.277777777778,
+          "invalid_mean": 4.111111111111111
+        },
+        {
+          "route_id": 68,
+          "source_episode_id": 95488675,
+          "source_reward": 104601,
+          "games": 18,
+          "win_rate": 0.0,
+          "mean_margin": -3133.4444444444443,
+          "invalid_mean": 17.61111111111111
+        },
+        {
+          "route_id": 88,
+          "source_episode_id": 96214168,
+          "source_reward": 80701,
+          "games": 18,
+          "win_rate": 0.0,
+          "mean_margin": -3584.0555555555557,
+          "invalid_mean": 4.111111111111111
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 15,
+      "seconds": 38.11458384999999
+    },
+    {
+      "seat": 0,
+      "start": 16,
+      "end": 31,
+      "seconds": 14.395420945000012
+    },
+    {
+      "seat": 0,
+      "start": 32,
+      "end": 47,
+      "seconds": 14.765692712999993
+    },
+    {
+      "seat": 0,
+      "start": 48,
+      "end": 63,
+      "seconds": 13.990162887999986
+    },
+    {
+      "seat": 0,
+      "start": 64,
+      "end": 79,
+      "seconds": 14.876015983000002
+    },
+    {
+      "seat": 0,
+      "start": 80,
+      "end": 95,
+      "seconds": 13.639428697999989
+    },
+    {
+      "seat": 0,
+      "start": 96,
+      "end": 111,
+      "seconds": 14.961924812999996
+    },
+    {
+      "seat": 0,
+      "start": 112,
+      "end": 112,
+      "seconds": 15.53502013900001
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 15,
+      "seconds": 35.67612547900001
+    },
+    {
+      "seat": 1,
+      "start": 16,
+      "end": 31,
+      "seconds": 15.995456942000033
+    },
+    {
+      "seat": 1,
+      "start": 32,
+      "end": 47,
+      "seconds": 14.422487994999983
+    },
+    {
+      "seat": 1,
+      "start": 48,
+      "end": 63,
+      "seconds": 14.770831132000012
+    },
+    {
+      "seat": 1,
+      "start": 64,
+      "end": 79,
+      "seconds": 14.889038687999971
+    },
+    {
+      "seat": 1,
+      "start": 80,
+      "end": 95,
+      "seconds": 14.946370545000036
+    },
+    {
+      "seat": 1,
+      "start": 96,
+      "end": 111,
+      "seconds": 14.941324155000018
+    },
+    {
+      "seat": 1,
+      "start": 112,
+      "end": 112,
+      "seconds": 14.788727956000002
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank31_bplyc15_all113_vs_fc24b_screen_seed1104001_n64x2_v2.npz",
+  "status": "PASS"
+}

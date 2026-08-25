@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggriculture-hasegawa-jax-v2"
+version = "0.2.0"
+description = "Persistent state-conditioned JAX reconstruction of Hasegawa"
+requires-python = ">=3.12"
+dependencies = [
+  "jax>=0.7",
+  "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.4,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = [
+  "src",
+  "../../gpu_sim/src",
+]

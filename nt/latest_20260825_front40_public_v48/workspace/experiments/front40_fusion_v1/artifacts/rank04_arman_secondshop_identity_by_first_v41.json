@@ -1,0 +1,17 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-by-first-map.v1",
+  "status": "FROZEN_BASELINE",
+  "base_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+  "routing_index": "first_shop,second_shop",
+  "second_route_ids_by_first_shop": [
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [131, 131, 131, 131, 131, 131, 131, 131],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [129, 129, 129, 129, 129, 129, 129, 129]
+  ],
+  "public_state_only": true
+}

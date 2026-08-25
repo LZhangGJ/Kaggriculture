@@ -1,0 +1,853 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-pair-effects.v1",
+  "generated_at_utc": "2026-08-24T07:27:47.327973+00:00",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json"
+  ],
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank08_kobe_stable_win_map_dev640_v10.json",
+  "second_map": "experiments\\front40_fusion_v1\\artifacts\\rank08_kobe_secondshop_raw_seed512_v13.json",
+  "routing_index": "first_shop,second_shop",
+  "pairs": [
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 88,
+      "selected_route": 75,
+      "games": 6,
+      "base_wins": 2,
+      "selected_wins": 3,
+      "net_wins": 1,
+      "mean_margin_gain": -3336.3333333333335,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 2,
+          "selected_wins": 3,
+          "net_wins": 1,
+          "base_win_rate": 0.3333333333333333,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -3336.3333333333335,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 88,
+      "selected_route": 52,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 4,
+      "net_wins": 2,
+      "mean_margin_gain": 2104.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 4,
+          "net_wins": 2,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 2104.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 88,
+      "selected_route": 41,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 4,
+      "net_wins": 2,
+      "mean_margin_gain": 1225.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 4,
+          "net_wins": 2,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 1225.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "base_route": 88,
+      "selected_route": 36,
+      "games": 6,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 2014.6666666666667,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 0.6666666666666666,
+          "mean_margin_gain": 2014.6666666666667,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 88,
+      "selected_route": 48,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": -604.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -604.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 88,
+      "selected_route": 30,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 2,
+      "net_wins": 0,
+      "mean_margin_gain": 1747.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 2,
+          "net_wins": 0,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": 1747.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 88,
+      "selected_route": 45,
+      "games": 4,
+      "base_wins": 0,
+      "selected_wins": 0,
+      "net_wins": 0,
+      "mean_margin_gain": 5702.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 0,
+          "selected_wins": 0,
+          "net_wins": 0,
+          "base_win_rate": 0.0,
+          "selected_win_rate": 0.0,
+          "mean_margin_gain": 5702.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "base_route": 88,
+      "selected_route": 88,
+      "games": 12,
+      "base_wins": 10,
+      "selected_wins": 10,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 12,
+          "base_wins": 10,
+          "selected_wins": 10,
+          "net_wins": 0,
+          "base_win_rate": 0.8333333333333334,
+          "selected_win_rate": 0.8333333333333334,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 88,
+      "selected_route": 4,
+      "games": 4,
+      "base_wins": 0,
+      "selected_wins": 2,
+      "net_wins": 2,
+      "mean_margin_gain": -1997.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 0,
+          "selected_wins": 2,
+          "net_wins": 2,
+          "base_win_rate": 0.0,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -1997.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "base_route": 88,
+      "selected_route": 10,
+      "games": 6,
+      "base_wins": 3,
+      "selected_wins": 6,
+      "net_wins": 3,
+      "mean_margin_gain": 934.8333333333334,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        3
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 3,
+          "selected_wins": 6,
+          "net_wins": 3,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 934.8333333333334,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "base_route": 88,
+      "selected_route": 17,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 1124.75,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 1124.75,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 88,
+      "selected_route": 66,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 4,
+      "net_wins": 2,
+      "mean_margin_gain": 5343.25,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 4,
+          "net_wins": 2,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 5343.25,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 88,
+      "selected_route": 60,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 2,
+      "net_wins": 0,
+      "mean_margin_gain": -8886.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 2,
+          "net_wins": 0,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -8886.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "base_route": 88,
+      "selected_route": 31,
+      "games": 6,
+      "base_wins": 4,
+      "selected_wins": 6,
+      "net_wins": 2,
+      "mean_margin_gain": -2361.1666666666665,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 4,
+          "selected_wins": 6,
+          "net_wins": 2,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -2361.1666666666665,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 47,
+      "selected_route": 70,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 2,
+      "net_wins": 0,
+      "mean_margin_gain": -316.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 2,
+          "net_wins": 0,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -316.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "base_route": 47,
+      "selected_route": 59,
+      "games": 10,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": -2880.2,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 10,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 0.4,
+          "selected_win_rate": 0.4,
+          "mean_margin_gain": -2880.2,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 88,
+      "selected_route": 77,
+      "games": 6,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": -1916.8333333333333,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 0.6666666666666666,
+          "mean_margin_gain": -1916.8333333333333,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 88,
+      "selected_route": 5,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 1219.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 1219.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "base_route": 88,
+      "selected_route": 88,
+      "games": 8,
+      "base_wins": 6,
+      "selected_wins": 6,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 8,
+          "base_wins": 6,
+          "selected_wins": 6,
+          "net_wins": 0,
+          "base_win_rate": 0.75,
+          "selected_win_rate": 0.75,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 88,
+      "selected_route": 4,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": -3743.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -3743.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "base_route": 47,
+      "selected_route": 80,
+      "games": 4,
+      "base_wins": 2,
+      "selected_wins": 2,
+      "net_wins": 0,
+      "mean_margin_gain": -81.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 2,
+          "net_wins": 0,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -81.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 47,
+      "selected_route": 55,
+      "games": 4,
+      "base_wins": 3,
+      "selected_wins": 3,
+      "net_wins": 0,
+      "mean_margin_gain": 192.25,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 3,
+          "selected_wins": 3,
+          "net_wins": 0,
+          "base_win_rate": 0.75,
+          "selected_win_rate": 0.75,
+          "mean_margin_gain": 192.25,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "base_route": 47,
+      "selected_route": 54,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 8418.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 8418.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 47,
+      "selected_route": 47,
+      "games": 6,
+      "base_wins": 6,
+      "selected_wins": 6,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 6,
+          "selected_wins": 6,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "base_route": 47,
+      "selected_route": 31,
+      "games": 8,
+      "base_wins": 0,
+      "selected_wins": 6,
+      "net_wins": 6,
+      "mean_margin_gain": 18753.125,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        6
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 8,
+          "base_wins": 0,
+          "selected_wins": 6,
+          "net_wins": 6,
+          "base_win_rate": 0.0,
+          "selected_win_rate": 0.75,
+          "mean_margin_gain": 18753.125,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "base_route": 47,
+      "selected_route": 40,
+      "games": 6,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": -298.6666666666667,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 6,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 0.6666666666666666,
+          "mean_margin_gain": -298.6666666666667,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 47,
+      "selected_route": 49,
+      "games": 4,
+      "base_wins": 1,
+      "selected_wins": 2,
+      "net_wins": 1,
+      "mean_margin_gain": -6015.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 1,
+          "selected_wins": 2,
+          "net_wins": 1,
+          "base_win_rate": 0.25,
+          "selected_win_rate": 0.5,
+          "mean_margin_gain": -6015.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 47,
+      "selected_route": 24,
+      "games": 4,
+      "base_wins": 3,
+      "selected_wins": 3,
+      "net_wins": 0,
+      "mean_margin_gain": 644.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 3,
+          "selected_wins": 3,
+          "net_wins": 0,
+          "base_win_rate": 0.75,
+          "selected_win_rate": 0.75,
+          "mean_margin_gain": 644.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 57,
+      "selected_route": 22,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 210.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 210.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 57,
+      "selected_route": 57,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

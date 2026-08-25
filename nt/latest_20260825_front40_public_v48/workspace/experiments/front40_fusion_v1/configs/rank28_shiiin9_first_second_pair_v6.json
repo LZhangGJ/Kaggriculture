@@ -1,0 +1,18 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-candidate-manifest.v1",
+  "candidates": [
+    {
+      "name": "rank28_shiiin9_firstshop_v4",
+      "family": "rank28_shiiin9_firstshop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_two_panel_minimax_firstshop_v4.json"
+    },
+    {
+      "name": "rank28_shiiin9_secondshop_v5",
+      "family": "rank28_shiiin9_compatible_secondshop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_two_panel_minimax_firstshop_v4.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_secondshop_two_panel_v5.json"
+    }
+  ]
+}

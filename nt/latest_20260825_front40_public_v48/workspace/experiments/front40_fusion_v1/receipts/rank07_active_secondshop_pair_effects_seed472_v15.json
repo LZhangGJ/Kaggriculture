@@ -1,0 +1,1525 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-pair-effects.v1",
+  "generated_at_utc": "2026-08-24T06:26:07.051136+00:00",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json"
+  ],
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_stable_win_map_dev640_v6.json",
+  "second_map": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_secondshop_raw_dev640_v11.json",
+  "routing_index": "first_shop,second_shop",
+  "pairs": [
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 19,
+      "selected_route": 35,
+      "games": 26,
+      "base_wins": 26,
+      "selected_wins": 26,
+      "net_wins": 0,
+      "mean_margin_gain": 12346.26923076923,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 26,
+          "base_wins": 26,
+          "selected_wins": 26,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 12346.26923076923,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 19,
+      "selected_route": 16,
+      "games": 16,
+      "base_wins": 16,
+      "selected_wins": 16,
+      "net_wins": 0,
+      "mean_margin_gain": 17353.875,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 16,
+          "selected_wins": 16,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 17353.875,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 19,
+      "selected_route": 2,
+      "games": 10,
+      "base_wins": 9,
+      "selected_wins": 10,
+      "net_wins": 1,
+      "mean_margin_gain": 30984.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 10,
+          "base_wins": 9,
+          "selected_wins": 10,
+          "net_wins": 1,
+          "base_win_rate": 0.9,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 30984.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 19,
+      "selected_route": 10,
+      "games": 28,
+      "base_wins": 12,
+      "selected_wins": 17,
+      "net_wins": 5,
+      "mean_margin_gain": 26768.321428571428,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        5
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 28,
+          "base_wins": 12,
+          "selected_wins": 17,
+          "net_wins": 5,
+          "base_win_rate": 0.42857142857142855,
+          "selected_win_rate": 0.6071428571428571,
+          "mean_margin_gain": 26768.321428571428,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 19,
+      "selected_route": 40,
+      "games": 14,
+      "base_wins": 14,
+      "selected_wins": 14,
+      "net_wins": 0,
+      "mean_margin_gain": 38318.28571428572,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 14,
+          "selected_wins": 14,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 38318.28571428572,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "base_route": 19,
+      "selected_route": 19,
+      "games": 10,
+      "base_wins": 6,
+      "selected_wins": 6,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 10,
+          "base_wins": 6,
+          "selected_wins": 6,
+          "net_wins": 0,
+          "base_win_rate": 0.6,
+          "selected_win_rate": 0.6,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "base_route": 19,
+      "selected_route": 56,
+      "games": 9,
+      "base_wins": 9,
+      "selected_wins": 9,
+      "net_wins": 0,
+      "mean_margin_gain": 17339.555555555555,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 9,
+          "base_wins": 9,
+          "selected_wins": 9,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 17339.555555555555,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 19,
+      "selected_route": 35,
+      "games": 13,
+      "base_wins": 13,
+      "selected_wins": 13,
+      "net_wins": 0,
+      "mean_margin_gain": 31191.384615384617,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 13,
+          "base_wins": 13,
+          "selected_wins": 13,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 31191.384615384617,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 19,
+      "selected_route": 16,
+      "games": 18,
+      "base_wins": 18,
+      "selected_wins": 18,
+      "net_wins": 0,
+      "mean_margin_gain": 24264.166666666668,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 18,
+          "base_wins": 18,
+          "selected_wins": 18,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 24264.166666666668,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 19,
+      "selected_route": 2,
+      "games": 12,
+      "base_wins": 12,
+      "selected_wins": 12,
+      "net_wins": 0,
+      "mean_margin_gain": 31724.416666666668,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 12,
+          "base_wins": 12,
+          "selected_wins": 12,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 31724.416666666668,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "base_route": 19,
+      "selected_route": 45,
+      "games": 27,
+      "base_wins": 27,
+      "selected_wins": 27,
+      "net_wins": 0,
+      "mean_margin_gain": 23565.185185185186,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 27,
+          "base_wins": 27,
+          "selected_wins": 27,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 23565.185185185186,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 19,
+      "selected_route": 10,
+      "games": 26,
+      "base_wins": 26,
+      "selected_wins": 26,
+      "net_wins": 0,
+      "mean_margin_gain": 34478.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 26,
+          "base_wins": 26,
+          "selected_wins": 26,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 34478.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 19,
+      "selected_route": 40,
+      "games": 13,
+      "base_wins": 13,
+      "selected_wins": 13,
+      "net_wins": 0,
+      "mean_margin_gain": 39180.92307692308,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 13,
+          "base_wins": 13,
+          "selected_wins": 13,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 39180.92307692308,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "base_route": 19,
+      "selected_route": 19,
+      "games": 14,
+      "base_wins": 14,
+      "selected_wins": 14,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 14,
+          "selected_wins": 14,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "base_route": 19,
+      "selected_route": 56,
+      "games": 10,
+      "base_wins": 10,
+      "selected_wins": 10,
+      "net_wins": 0,
+      "mean_margin_gain": 16808.3,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 10,
+          "base_wins": 10,
+          "selected_wins": 10,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 16808.3,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 19,
+      "selected_route": 35,
+      "games": 12,
+      "base_wins": 12,
+      "selected_wins": 12,
+      "net_wins": 0,
+      "mean_margin_gain": 25144.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 12,
+          "base_wins": 12,
+          "selected_wins": 12,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 25144.5,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 19,
+      "selected_route": 16,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 27458.75,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 27458.75,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 19,
+      "selected_route": 2,
+      "games": 24,
+      "base_wins": 24,
+      "selected_wins": 24,
+      "net_wins": 0,
+      "mean_margin_gain": 39867.541666666664,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 24,
+          "base_wins": 24,
+          "selected_wins": 24,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 39867.541666666664,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "base_route": 19,
+      "selected_route": 45,
+      "games": 8,
+      "base_wins": 8,
+      "selected_wins": 8,
+      "net_wins": 0,
+      "mean_margin_gain": 24535.375,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 8,
+          "base_wins": 8,
+          "selected_wins": 8,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 24535.375,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 19,
+      "selected_route": 10,
+      "games": 24,
+      "base_wins": 24,
+      "selected_wins": 24,
+      "net_wins": 0,
+      "mean_margin_gain": 32958.916666666664,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 24,
+          "base_wins": 24,
+          "selected_wins": 24,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 32958.916666666664,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 19,
+      "selected_route": 40,
+      "games": 15,
+      "base_wins": 15,
+      "selected_wins": 15,
+      "net_wins": 0,
+      "mean_margin_gain": 35682.333333333336,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 15,
+          "base_wins": 15,
+          "selected_wins": 15,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 35682.333333333336,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "base_route": 19,
+      "selected_route": 19,
+      "games": 18,
+      "base_wins": 18,
+      "selected_wins": 18,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 18,
+          "base_wins": 18,
+          "selected_wins": 18,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "base_route": 42,
+      "selected_route": 56,
+      "games": 14,
+      "base_wins": 14,
+      "selected_wins": 14,
+      "net_wins": 0,
+      "mean_margin_gain": 6324.142857142857,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 14,
+          "selected_wins": 14,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 6324.142857142857,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 42,
+      "selected_route": 16,
+      "games": 20,
+      "base_wins": 20,
+      "selected_wins": 20,
+      "net_wins": 0,
+      "mean_margin_gain": 7760.55,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 20,
+          "base_wins": 20,
+          "selected_wins": 20,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 7760.55,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 42,
+      "selected_route": 63,
+      "games": 26,
+      "base_wins": 26,
+      "selected_wins": 26,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 26,
+          "base_wins": 26,
+          "selected_wins": 26,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "base_route": 42,
+      "selected_route": 45,
+      "games": 18,
+      "base_wins": 18,
+      "selected_wins": 18,
+      "net_wins": 0,
+      "mean_margin_gain": 14619.555555555555,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 18,
+          "base_wins": 18,
+          "selected_wins": 18,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 14619.555555555555,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 42,
+      "selected_route": 10,
+      "games": 23,
+      "base_wins": 23,
+      "selected_wins": 23,
+      "net_wins": 0,
+      "mean_margin_gain": -8149.521739130435,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 23,
+          "base_wins": 23,
+          "selected_wins": 23,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -8149.521739130435,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 42,
+      "selected_route": 40,
+      "games": 12,
+      "base_wins": 12,
+      "selected_wins": 12,
+      "net_wins": 0,
+      "mean_margin_gain": 4407.166666666667,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 12,
+          "base_wins": 12,
+          "selected_wins": 12,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 4407.166666666667,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 42,
+      "selected_route": 35,
+      "games": 7,
+      "base_wins": 7,
+      "selected_wins": 7,
+      "net_wins": 0,
+      "mean_margin_gain": 8162.285714285715,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 7,
+          "base_wins": 7,
+          "selected_wins": 7,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 8162.285714285715,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 42,
+      "selected_route": 70,
+      "games": 20,
+      "base_wins": 20,
+      "selected_wins": 20,
+      "net_wins": 0,
+      "mean_margin_gain": 14640.2,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 20,
+          "base_wins": 20,
+          "selected_wins": 20,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 14640.2,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 42,
+      "selected_route": 2,
+      "games": 16,
+      "base_wins": 16,
+      "selected_wins": 16,
+      "net_wins": 0,
+      "mean_margin_gain": 5448.75,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 16,
+          "selected_wins": 16,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 5448.75,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "base_route": 42,
+      "selected_route": 45,
+      "games": 13,
+      "base_wins": 5,
+      "selected_wins": 6,
+      "net_wins": 1,
+      "mean_margin_gain": 11239.461538461539,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 13,
+          "base_wins": 5,
+          "selected_wins": 6,
+          "net_wins": 1,
+          "base_win_rate": 0.38461538461538464,
+          "selected_win_rate": 0.46153846153846156,
+          "mean_margin_gain": 11239.461538461539,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 42,
+      "selected_route": 10,
+      "games": 10,
+      "base_wins": 7,
+      "selected_wins": 8,
+      "net_wins": 1,
+      "mean_margin_gain": 8493.8,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 10,
+          "base_wins": 7,
+          "selected_wins": 8,
+          "net_wins": 1,
+          "base_win_rate": 0.7,
+          "selected_win_rate": 0.8,
+          "mean_margin_gain": 8493.8,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 42,
+      "selected_route": 40,
+      "games": 18,
+      "base_wins": 18,
+      "selected_wins": 18,
+      "net_wins": 0,
+      "mean_margin_gain": 9340.888888888889,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 18,
+          "base_wins": 18,
+          "selected_wins": 18,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 9340.888888888889,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "base_route": 42,
+      "selected_route": 56,
+      "games": 11,
+      "base_wins": 6,
+      "selected_wins": 6,
+      "net_wins": 0,
+      "mean_margin_gain": 5741.818181818182,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 11,
+          "base_wins": 6,
+          "selected_wins": 6,
+          "net_wins": 0,
+          "base_win_rate": 0.5454545454545454,
+          "selected_win_rate": 0.5454545454545454,
+          "mean_margin_gain": 5741.818181818182,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 42,
+      "selected_route": 35,
+      "games": 20,
+      "base_wins": 20,
+      "selected_wins": 20,
+      "net_wins": 0,
+      "mean_margin_gain": 6744.95,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 20,
+          "base_wins": 20,
+          "selected_wins": 20,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 6744.95,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 42,
+      "selected_route": 16,
+      "games": 16,
+      "base_wins": 16,
+      "selected_wins": 16,
+      "net_wins": 0,
+      "mean_margin_gain": 7015.625,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 16,
+          "selected_wins": 16,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 7015.625,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 42,
+      "selected_route": 2,
+      "games": 14,
+      "base_wins": 14,
+      "selected_wins": 14,
+      "net_wins": 0,
+      "mean_margin_gain": 1173.7857142857142,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 14,
+          "selected_wins": 14,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 1173.7857142857142,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 42,
+      "selected_route": 40,
+      "games": 16,
+      "base_wins": 16,
+      "selected_wins": 15,
+      "net_wins": -1,
+      "mean_margin_gain": 3998.0625,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        -1
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 16,
+          "selected_wins": 15,
+          "net_wins": -1,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 0.9375,
+          "mean_margin_gain": 3998.0625,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "base_route": 42,
+      "selected_route": 56,
+      "games": 17,
+      "base_wins": 17,
+      "selected_wins": 17,
+      "net_wins": 0,
+      "mean_margin_gain": 8889.941176470587,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 17,
+          "base_wins": 17,
+          "selected_wins": 17,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 8889.941176470587,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 42,
+      "selected_route": 35,
+      "games": 26,
+      "base_wins": 26,
+      "selected_wins": 26,
+      "net_wins": 0,
+      "mean_margin_gain": 11454.73076923077,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 26,
+          "base_wins": 26,
+          "selected_wins": 26,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 11454.73076923077,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 42,
+      "selected_route": 16,
+      "games": 4,
+      "base_wins": 4,
+      "selected_wins": 4,
+      "net_wins": 0,
+      "mean_margin_gain": 2039.75,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 2039.75,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 42,
+      "selected_route": 63,
+      "games": 16,
+      "base_wins": 15,
+      "selected_wins": 15,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 15,
+          "selected_wins": 15,
+          "net_wins": 0,
+          "base_win_rate": 0.9375,
+          "selected_win_rate": 0.9375,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "base_route": 42,
+      "selected_route": 45,
+      "games": 25,
+      "base_wins": 25,
+      "selected_wins": 25,
+      "net_wins": 0,
+      "mean_margin_gain": 11104.96,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 25,
+          "base_wins": 25,
+          "selected_wins": 25,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 11104.96,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 42,
+      "selected_route": 40,
+      "games": 15,
+      "base_wins": 15,
+      "selected_wins": 15,
+      "net_wins": 0,
+      "mean_margin_gain": -42399.13333333333,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 15,
+          "base_wins": 15,
+          "selected_wins": 15,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -42399.13333333333,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "base_route": 42,
+      "selected_route": 19,
+      "games": 19,
+      "base_wins": 13,
+      "selected_wins": 18,
+      "net_wins": 5,
+      "mean_margin_gain": -6225.578947368421,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        5
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 19,
+          "base_wins": 13,
+          "selected_wins": 18,
+          "net_wins": 5,
+          "base_win_rate": 0.6842105263157895,
+          "selected_win_rate": 0.9473684210526315,
+          "mean_margin_gain": -6225.578947368421,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "base_route": 52,
+      "selected_route": 64,
+      "games": 12,
+      "base_wins": 11,
+      "selected_wins": 11,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 12,
+          "base_wins": 11,
+          "selected_wins": 11,
+          "net_wins": 0,
+          "base_win_rate": 0.9166666666666666,
+          "selected_win_rate": 0.9166666666666666,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "base_route": 52,
+      "selected_route": 60,
+      "games": 14,
+      "base_wins": 12,
+      "selected_wins": 12,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 12,
+          "selected_wins": 12,
+          "net_wins": 0,
+          "base_win_rate": 0.8571428571428571,
+          "selected_win_rate": 0.8571428571428571,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "base_route": 52,
+      "selected_route": 74,
+      "games": 14,
+      "base_wins": 14,
+      "selected_wins": 14,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 14,
+          "base_wins": 14,
+          "selected_wins": 14,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "base_route": 52,
+      "selected_route": 52,
+      "games": 18,
+      "base_wins": 17,
+      "selected_wins": 17,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 18,
+          "base_wins": 17,
+          "selected_wins": 17,
+          "net_wins": 0,
+          "base_win_rate": 0.9444444444444444,
+          "selected_win_rate": 0.9444444444444444,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "base_route": 52,
+      "selected_route": 53,
+      "games": 16,
+      "base_wins": 16,
+      "selected_wins": 16,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 16,
+          "base_wins": 16,
+          "selected_wins": 16,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "base_route": 52,
+      "selected_route": 68,
+      "games": 21,
+      "base_wins": 17,
+      "selected_wins": 17,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 21,
+          "base_wins": 17,
+          "selected_wins": 17,
+          "net_wins": 0,
+          "base_win_rate": 0.8095238095238095,
+          "selected_win_rate": 0.8095238095238095,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "base_route": 52,
+      "selected_route": 59,
+      "games": 27,
+      "base_wins": 23,
+      "selected_wins": 23,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 27,
+          "base_wins": 23,
+          "selected_wins": 23,
+          "net_wins": 0,
+          "base_win_rate": 0.8518518518518519,
+          "selected_win_rate": 0.8518518518518519,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "base_route": 52,
+      "selected_route": 57,
+      "games": 26,
+      "base_wins": 26,
+      "selected_wins": 26,
+      "net_wins": 0,
+      "mean_margin_gain": 0.0,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        0
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.json",
+          "games": 26,
+          "base_wins": 26,
+          "selected_wins": 26,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": 0.0,
+          "hard_counter_total": 0
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

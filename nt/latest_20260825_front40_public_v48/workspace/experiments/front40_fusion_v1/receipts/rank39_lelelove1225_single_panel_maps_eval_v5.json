@@ -1,0 +1,208 @@
+{
+  "schema": "kaggriculture.front40_fusion.shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-25T00:15:19.973053+00:00",
+  "status": "PASS",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_all63_vs_fc24b_screen_seed1232001_n128x2_v2.json"
+  ],
+  "maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_single_panel_unrestricted_minimax_win_firstshop_v4.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 207,
+        "ties": 0,
+        "win_rate": 0.80859375,
+        "mean_margin": 1948.18359375,
+        "worst_panel_win_rate": 0.80859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_all63_vs_fc24b_screen_seed1232001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 207,
+          "ties": 0,
+          "win_rate": 0.80859375,
+          "mean_margin": 1948.18359375,
+          "median_margin": 3107.0,
+          "invalid_mean": 9.74609375,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 103,
+              "ties": 0,
+              "win_rate": 0.8046875,
+              "mean_margin": 1897.0234375,
+              "invalid_mean": 9.765625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 1999.34375,
+              "invalid_mean": 9.7265625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_single_panel_unrestricted_stable_win_firstshop_v4.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 207,
+        "ties": 0,
+        "win_rate": 0.80859375,
+        "mean_margin": 1948.18359375,
+        "worst_panel_win_rate": 0.80859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_all63_vs_fc24b_screen_seed1232001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 207,
+          "ties": 0,
+          "win_rate": 0.80859375,
+          "mean_margin": 1948.18359375,
+          "median_margin": 3107.0,
+          "invalid_mean": 9.74609375,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 103,
+              "ties": 0,
+              "win_rate": 0.8046875,
+              "mean_margin": 1897.0234375,
+              "invalid_mean": 9.765625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 1999.34375,
+              "invalid_mean": 9.7265625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_single_panel_unrestricted_wilson_firstshop_v4.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 207,
+        "ties": 0,
+        "win_rate": 0.80859375,
+        "mean_margin": 1948.18359375,
+        "worst_panel_win_rate": 0.80859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_all63_vs_fc24b_screen_seed1232001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 207,
+          "ties": 0,
+          "win_rate": 0.80859375,
+          "mean_margin": 1948.18359375,
+          "median_margin": 3107.0,
+          "invalid_mean": 9.74609375,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 103,
+              "ties": 0,
+              "win_rate": 0.8046875,
+              "mean_margin": 1897.0234375,
+              "invalid_mean": 9.765625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 1999.34375,
+              "invalid_mean": 9.7265625
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

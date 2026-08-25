@@ -1,0 +1,110 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T06:38:00.204520+00:00",
+  "device": "cuda:0",
+  "seed_start": 488001,
+  "seed_count": 512,
+  "route_count": 4,
+  "route_ids": [
+    2,
+    19,
+    42,
+    52
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 4096,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 55,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 19,
+          "source_episode_id": 96859186,
+          "source_reward": 129259,
+          "games": 110,
+          "win_rate": 0.990909090909091,
+          "mean_margin": 30182.863636363636,
+          "invalid_mean": 392.7818181818182
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 57,
+      "eligible_routes": 2,
+      "top_routes": [
+        {
+          "route_id": 42,
+          "source_episode_id": 96907288,
+          "source_reward": 149788,
+          "games": 114,
+          "win_rate": 0.9649122807017544,
+          "mean_margin": 51709.48245614035,
+          "invalid_mean": 91.95614035087719
+        },
+        {
+          "route_id": 2,
+          "source_episode_id": 96820415,
+          "source_reward": 165962,
+          "games": 114,
+          "win_rate": 0.9210526315789473,
+          "mean_margin": 45984.10526315789,
+          "invalid_mean": 51.98245614035088
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 69,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 52,
+          "source_episode_id": 96934772,
+          "source_reward": 139078,
+          "games": 138,
+          "win_rate": 0.8695652173913043,
+          "mean_margin": 4721.673913043478,
+          "invalid_mean": 26.840579710144926
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 39.196913072000015
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 3,
+      "seconds": 15.302748257000019
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 37.78585956399999
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 3,
+      "seconds": 15.282527561999984
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank07_active_final4_vs_fc24b_screen_seed488001_n512x2_v24.npz",
+  "status": "PASS"
+}

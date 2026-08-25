@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "TRAINING_ONLY",
+  "name": "rank10_seb_threepanel_minimax_firstshop_v4",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank10_seb_trace_bank_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [87, 103, 151, 80, 87, 105, 6, 139],
+  "selection": "maximize minimum per-shop win rate across seed664, seed672 and seed680 among the ten routes screened on every panel",
+  "runtime_boundary": "first town shop already visible; no identity, Replay ID, seed, or future event"
+}

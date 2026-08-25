@@ -1,0 +1,149 @@
+{
+  "schema": "kaggriculture.front40_fusion.compatible-trace-route-ranker-evaluation.v1",
+  "generated_at_utc": "2026-08-24T11:16:56.259901+00:00",
+  "status": "PASS",
+  "runtime_boundary": "current public state plus own private inventory and frozen route descriptors; terminal outcomes are labels only",
+  "contexts": [
+    "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_context_step144_seed632001_n512x2.npz"
+  ],
+  "matrices": [
+    "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_thirdshop_routes24_vs_fc24b_seed632001_n512x2_independent_v81.npz"
+  ],
+  "model": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_compatible_ranker_v90.joblib",
+  "games": 1024,
+  "mean_candidates": 3.833984375,
+  "switches": 268,
+  "switch_rate": 0.26171875,
+  "legacy": {
+    "games": 1024,
+    "wins": 448,
+    "win_rate": 0.4375,
+    "mean_margin": -1501.716796875,
+    "median_margin": -556.0,
+    "hard_total": 0,
+    "invalid_total": 7202,
+    "resync_total": 1702,
+    "unique_routes": 24,
+    "by_panel": [
+      {
+        "panel_index": 0,
+        "games": 1024,
+        "wins": 448,
+        "win_rate": 0.4375,
+        "mean_margin": -1501.716796875
+      }
+    ],
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 223,
+        "win_rate": 0.435546875,
+        "mean_margin": -1482.447265625
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 225,
+        "win_rate": 0.439453125,
+        "mean_margin": -1520.986328125
+      }
+    ]
+  },
+  "selected": {
+    "games": 1024,
+    "wins": 501,
+    "win_rate": 0.4892578125,
+    "mean_margin": -1259.4951171875,
+    "median_margin": -144.0,
+    "hard_total": 0,
+    "invalid_total": 5156,
+    "resync_total": 1696,
+    "unique_routes": 22,
+    "by_panel": [
+      {
+        "panel_index": 0,
+        "games": 1024,
+        "wins": 501,
+        "win_rate": 0.4892578125,
+        "mean_margin": -1259.4951171875
+      }
+    ],
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 249,
+        "win_rate": 0.486328125,
+        "mean_margin": -1192.74609375
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 252,
+        "win_rate": 0.4921875,
+        "mean_margin": -1326.244140625
+      }
+    ]
+  },
+  "oracle": {
+    "games": 1024,
+    "wins": 663,
+    "win_rate": 0.6474609375,
+    "mean_margin": 1099.3056640625,
+    "median_margin": 1017.0,
+    "hard_total": 0,
+    "invalid_total": 6831,
+    "resync_total": 1574,
+    "unique_routes": 24,
+    "by_panel": [
+      {
+        "panel_index": 0,
+        "games": 1024,
+        "wins": 663,
+        "win_rate": 0.6474609375,
+        "mean_margin": 1099.3056640625
+      }
+    ],
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 329,
+        "win_rate": 0.642578125,
+        "mean_margin": 1121.654296875
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 334,
+        "win_rate": 0.65234375,
+        "mean_margin": 1076.95703125
+      }
+    ]
+  },
+  "selected_route_counts": {
+    "17": 60,
+    "31": 34,
+    "34": 40,
+    "35": 10,
+    "38": 28,
+    "54": 66,
+    "63": 42,
+    "65": 60,
+    "81": 112,
+    "90": 16,
+    "91": 16,
+    "94": 124,
+    "100": 12,
+    "106": 32,
+    "115": 78,
+    "116": 50,
+    "118": 54,
+    "144": 26,
+    "169": 44,
+    "172": 18,
+    "173": 76,
+    "175": 26
+  }
+}

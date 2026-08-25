@@ -1,0 +1,23 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank03_subramanya_source_reward_v1",
+      "family": "rank03_subramanya_trace",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_source_reward_shop_map_v1.json"
+    },
+    {
+      "name": "rank03_subramanya_same_shop_stable_v6",
+      "family": "rank03_subramanya_trace",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_same_shop_stable_seed252001_v6.json"
+    },
+    {
+      "name": "rank03_subramanya_unrestricted_stable_v4",
+      "family": "rank03_subramanya_trace",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_unrestricted_stable_win_seed252001_v4.json"
+    }
+  ]
+}

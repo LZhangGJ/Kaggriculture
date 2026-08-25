@@ -1,0 +1,118 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T07:19:39.522474+00:00",
+  "device": "cuda:0",
+  "seed_start": 520001,
+  "seed_count": 512,
+  "route_count": 4,
+  "route_ids": [
+    41,
+    88,
+    47,
+    57
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 4096,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 0,
+      "first_shop": "BAKERY",
+      "seed_count": 71,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 41,
+          "source_episode_id": 96065670,
+          "source_reward": 73337,
+          "games": 142,
+          "win_rate": 0.3591549295774648,
+          "mean_margin": -4515.830985915493,
+          "invalid_mean": 12.007042253521126
+        }
+      ]
+    },
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 54,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 88,
+          "source_episode_id": 97566747,
+          "source_reward": 78923,
+          "games": 108,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": 1006.1574074074074,
+          "invalid_mean": 16.85185185185185
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 56,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 47,
+          "source_episode_id": 96083958,
+          "source_reward": 91417,
+          "games": 112,
+          "win_rate": 0.6875,
+          "mean_margin": 25.758928571428573,
+          "invalid_mean": 12.098214285714286
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 67,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 57,
+          "source_episode_id": 96120579,
+          "source_reward": 86427,
+          "games": 134,
+          "win_rate": 0.7835820895522388,
+          "mean_margin": 1454.597014925373,
+          "invalid_mean": 5.2835820895522385
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 38.673576631999936
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 3,
+      "seconds": 14.855350864999991
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 36.62003499499997
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 3,
+      "seconds": 14.733281919999968
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank08_kobe_map4_vs_fc24b_screen_seed520001_n512x2_v7.npz",
+  "status": "PASS"
+}

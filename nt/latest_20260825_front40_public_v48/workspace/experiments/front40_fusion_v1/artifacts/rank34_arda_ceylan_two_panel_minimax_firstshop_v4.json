@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "TRAINING_ONLY",
+  "name": "rank34_arda_ceylan_two_panel_minimax_firstshop_v4",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank34_arda_ceylan_trace_bank_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [39, 47, 54, 39, 38, 57, 39, 41],
+  "selection": "maximize minimum per-shop strict win rate across independent seed1136001 n64x2 and seed1144001 n128x2 screens, then pooled wins and margin",
+  "runtime_boundary": "first town shop already visible; no identity, Replay ID, seed, or future event"
+}

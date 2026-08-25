@@ -1,0 +1,70 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T01:56:06.951184+00:00",
+  "device": "cuda:0",
+  "seed_start": 328001,
+  "seed_count": 128,
+  "route_count": 2,
+  "route_ids": [
+    38,
+    50
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 512,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 5,
+      "first_shop": "PIZZA_SHOP",
+      "seed_count": 19,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 38,
+          "source_episode_id": 94474821,
+          "source_reward": 71583,
+          "games": 38,
+          "win_rate": 0.8157894736842105,
+          "mean_margin": 48448.07894736842,
+          "invalid_mean": 18.710526315789473
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 15,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 50,
+          "source_episode_id": 94488124,
+          "source_reward": 108844,
+          "games": 30,
+          "win_rate": 0.8666666666666667,
+          "mean_margin": 77588.93333333333,
+          "invalid_mean": 0.3
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 156.356457831
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 174.73592894299998
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank04_arman_batch128_probe_seed328001_n128x2_v13.npz",
+  "status": "PASS"
+}

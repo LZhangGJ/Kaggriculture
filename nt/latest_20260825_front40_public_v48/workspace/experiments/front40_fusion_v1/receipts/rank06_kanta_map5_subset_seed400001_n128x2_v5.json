@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-screen-subset.v1",
+  "generated_at_utc": "2026-08-24T04:43:54.151383+00:00",
+  "status": "PASS",
+  "source": "experiments\\front40_fusion_v1\\receipts\\rank06_kanta_all136_vs_fc24b_screen_seed400001_n128x2_v1.json",
+  "seed_count": 128,
+  "route_count": 5,
+  "route_ids": [
+    2,
+    91,
+    3,
+    67,
+    35
+  ],
+  "games": 1280,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank06_kanta_map5_subset_seed400001_n128x2_v5.npz"
+}

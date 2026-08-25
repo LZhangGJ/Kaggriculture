@@ -1,0 +1,71 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank15_recursion_v7",
+  "family": "rank15_stable_fixed_route_family",
+  "source": {
+    "leaderboard_rank": 15,
+    "team_name": "ReCurSiON",
+    "submission_id": 55491717,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank15_recursion_trace_bank_v1.json",
+    "trusted_complete_winning_routes": 147,
+    "behavior_unique_routes": 147,
+    "overlap_with_previous_rank_trace_families": 0
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank15_recursion_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank15_recursion_fixed_route80_v4.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "online_runner": "experiments/front40_fusion_v1/tools/run_trace_candidates_vs_fc24b_stepwise.py",
+    "router_mode": "FIXED_ROUTE_80",
+    "public_state_only": true,
+    "identity_routing": false,
+    "future_event_access": false,
+    "replay_id_routing": false
+  },
+  "route_ids": {
+    "fixed_route": 80,
+    "source_episode_id": 94055986,
+    "source_reward": 126365,
+    "runtime_routes": [80]
+  },
+  "development": {
+    "all_route_screen": "experiments/front40_fusion_v1/receipts/rank15_recursion_all147_vs_fc24b_screen_seed792001_n64x2_v1.json",
+    "large_candidate_screen": "experiments/front40_fusion_v1/receipts/rank15_recursion_routes10_vs_fc24b_screen_seed800001_n512x2_v2.json",
+    "final_three_screen": "experiments/front40_fusion_v1/receipts/rank15_recursion_final3_vs_fc24b_screen_seed808001_n512x2_v3.json",
+    "quick_screen_best_fixed_win_rate": 0.8125,
+    "quick_screen_first_shop_map_win_rate": 0.8125,
+    "quick_screen_oracle_win_rate": 0.8203125,
+    "route80_large_panel_win_rates": [0.7421875, 0.7451171875],
+    "first_shop_routing_rejected": true,
+    "reason": "First-shop routing did not add wins and was weaker on the large independent panel; the route-level oracle was only 0.749."
+  },
+  "independent_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank15_recursion_fixed80_online_vs_fc24b_seed816001_n512x2_independent_v6.json",
+    "seed_start": 816001,
+    "games": 1024,
+    "wins": 766,
+    "win_rate": 0.748046875,
+    "seat0_wins": 384,
+    "seat0_games": 512,
+    "seat0_win_rate": 0.75,
+    "seat1_wins": 382,
+    "seat1_games": 512,
+    "seat1_win_rate": 0.74609375,
+    "mean_margin": 28878.9267578125,
+    "all_719_steps": true,
+    "hard_counter_total": 0,
+    "sent_illegal_actions": 0,
+    "note": "invalid_intent_total counts Replay intents replaced by the legal guard before simulator execution."
+  },
+  "known_weakness": {
+    "description": "The fixed route is stable but does not exploit shop-specific opportunities; dynamic routing was empirically inferior.",
+    "decision": "Freeze the simple route because it is close to the measured ten-route oracle and generalized across three large panels."
+  },
+  "sha256": {
+    "trace_bank": "1BAD5A85B9B101543D260D3855D23DB8D9F57549ED19F3EC3A689F59D0CD2B5A",
+    "first_shop_map": "50A71811DD80D65116BCF3F85E00745A7657AF0D2854A907BAFC2F85E29C358C",
+    "online_runner": "F5C4570D094933A7277E748A53621139BA74410046C2DCC6CAC29B9A06C04669",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

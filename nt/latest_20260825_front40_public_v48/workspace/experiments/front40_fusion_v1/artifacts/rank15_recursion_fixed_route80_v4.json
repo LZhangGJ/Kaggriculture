@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "TRAINING_ONLY",
+  "name": "rank15_recursion_fixed_route80_v4",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank15_recursion_trace_bank_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [80, 80, 80, 80, 80, 80, 80, 80],
+  "selection": "best stable fixed route across seed800001 n512x2 and seed808001 n512x2; first-shop routing was inferior",
+  "runtime_boundary": "constant route; no identity, Replay ID, seed, or future event"
+}

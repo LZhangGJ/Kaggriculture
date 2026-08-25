@@ -1,0 +1,47 @@
+[{"stream_name":"stderr","time":5.895374092,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":5.895441882,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":5.895446542,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":5.895449002,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.416946918,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.416985439,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.416989788,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.416993119,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":41.482911868,"data":"\u001b[92m19:41:50 - LiteLLM:WARNING\u001b[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: [Errno -3] Temporary failure in name resolution. Falling back to local backup.\n"}
+,{"stream_name":"stderr","time":41.482953318,"data":"\n"}
+,{"stream_name":"stderr","time":41.482959678,"data":"\u001b[92m19:41:50 - LiteLLM:WARNING\u001b[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: [Errno -3] Temporary failure in name resolution. Falling back to local backup.\n"}
+,{"stream_name":"stdout","time":46.70064478,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: Successfully loaded OpenSpiel environments: 24.\n"}
+,{"stream_name":"stdout","time":46.70139862,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_amazons\n"}
+,{"stream_name":"stdout","time":46.70204793,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_backgammon\n"}
+,{"stream_name":"stdout","time":46.70261931,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_checkers\n"}
+,{"stream_name":"stdout","time":46.70321745,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_chess\n"}
+,{"stream_name":"stdout","time":46.70381644,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_clobber\n"}
+,{"stream_name":"stdout","time":46.70472682,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game\n"}
+,{"stream_name":"stdout","time":46.70526055,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game_arena\n"}
+,{"stream_name":"stdout","time":46.70593143,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_connect_four\n"}
+,{"stream_name":"stdout","time":46.70655831,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_dark_hex\n"}
+,{"stream_name":"stdout","time":46.70720681,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_gin_rummy\n"}
+,{"stream_name":"stdout","time":46.70779147,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_go\n"}
+,{"stream_name":"stdout","time":46.7085271,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_goofspiel\n"}
+,{"stream_name":"stdout","time":46.70909249,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hearts\n"}
+,{"stream_name":"stdout","time":46.70977743,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hex\n"}
+,{"stream_name":"stdout","time":46.71033115,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_lines_of_action\n"}
+,{"stream_name":"stdout","time":46.71099085,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_matching_pennies_3p\n"}
+,{"stream_name":"stdout","time":46.71159106,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_oshi_zumo\n"}
+,{"stream_name":"stdout","time":46.71220598,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_othello\n"}
+,{"stream_name":"stdout","time":46.71288491,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_game\n"}
+,{"stream_name":"stdout","time":46.7134864,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_tic_tac_toe\n"}
+,{"stream_name":"stdout","time":46.714213041,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_y\n"}
+,{"stream_name":"stdout","time":46.714774301,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_universal_poker\n"}
+,{"stream_name":"stdout","time":46.715446571,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_poker\n"}
+,{"stream_name":"stdout","time":46.716080061,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_python_repeated_pokerkit\n"}
+,{"stream_name":"stdout","time":46.716596851,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: OpenSpiel games skipped: 1.\n"}
+,{"stream_name":"stdout","time":46.717129651,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    snake\n"}
+,{"stream_name":"stderr","time":54.264474648,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":54.264509338,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":54.397685443,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":54.397738563,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":55.023206466,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":55.274248115,"data":"[NbConvertApp] Writing 65566 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":57.585687291,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":58.280625666,"data":"[NbConvertApp] Writing 357970 bytes to __results__.html\n"}
+]

@@ -1,0 +1,31 @@
+{
+  "schema": "kaggriculture.front40_fusion.reconstruction_targets.v1",
+  "official_package_version": "1.32.7",
+  "leaderboard_snapshot": "replay/top40_live_20260823",
+  "frozen_baseline": "experiments/fusion_champion_v1/configs/fc24b_frozen_best_v1.json",
+  "priority_targets": [
+    {"rank": 1, "team": "Ryo Hasegawa", "mode": "full_agent", "priority": "P0"},
+    {"rank": 2, "team": "Crop Dusta", "mode": "full_agent", "priority": "P0"},
+    {"rank": 3, "team": "Subramanya N", "mode": "full_agent", "priority": "P0"},
+    {"rank": 4, "team": "Arman Tuganbaev", "mode": "full_agent", "priority": "P0"},
+    {"rank": 5, "team": "MiMi", "mode": "full_agent", "priority": "P0"},
+    {"rank": 9, "team": "KAWASHIGI", "mode": "refresh_agent_and_opponent_collision_module", "priority": "P1"},
+    {"rank": 7, "team": "ActiveMusyoku", "mode": "full_agent_and_late_throughput_module", "priority": "P1"},
+    {"rank": 10, "team": "Seb", "mode": "early_sale_and_early_liquidation_module", "priority": "P1"},
+    {"rank": 12, "team": "fufufukakaka", "mode": "parameterized_goose_branch_representative", "priority": "P1"},
+    {"rank": 6, "team": "Izzoudine Mohamed KANTA", "mode": "balanced_family_opponent_representative", "priority": "P2"}
+  ],
+  "reconstruction_levels": [
+    "source_trace_parity",
+    "free_rollout_distribution",
+    "observable_conditional_policy",
+    "double_seat_arena_strength"
+  ],
+  "forbidden_runtime_inputs": [
+    "opponent_identity",
+    "replay_id",
+    "event_seed",
+    "future_hidden_event",
+    "fixed_replay_coordinate"
+  ]
+}

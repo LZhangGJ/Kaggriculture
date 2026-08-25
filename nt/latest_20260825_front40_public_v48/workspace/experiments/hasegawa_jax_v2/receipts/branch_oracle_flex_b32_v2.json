@@ -1,0 +1,241 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_v2.branch_oracle",
+  "generated_at_utc": "2026-08-20T09:10:14.387016+00:00",
+  "device": "cuda:0",
+  "seed_start": 153001,
+  "games_per_seat": 32,
+  "variants_per_seed": 10,
+  "results": [
+    {
+      "opponent": "flex_v59",
+      "hasegawa_seat": 0,
+      "games": 32,
+      "all_done": true,
+      "current_win_rate": 0.5,
+      "current_mean_margin": -1075.25,
+      "oracle_win_rate": 0.875,
+      "oracle_cash_mean": 105646.84375,
+      "oracle_mean_margin": 9581.59375,
+      "oracle_branch_counts": [
+        10,
+        5,
+        0,
+        5,
+        2,
+        5,
+        0,
+        5,
+        0
+      ],
+      "routes": [
+        {
+          "variant": "current",
+          "win_rate": 0.5,
+          "cash_mean": 86271.65625,
+          "mean_margin": -1075.25,
+          "hard_total": 0,
+          "invalid_total": 74,
+          "resync_total": 45
+        },
+        {
+          "variant": "branch_0",
+          "win_rate": 0.46875,
+          "cash_mean": 87869.65625,
+          "mean_margin": -1006.4375,
+          "hard_total": 0,
+          "invalid_total": 1166,
+          "resync_total": 40
+        },
+        {
+          "variant": "branch_1",
+          "win_rate": 0.25,
+          "cash_mean": 87567.5625,
+          "mean_margin": -5083.875,
+          "hard_total": 0,
+          "invalid_total": 30,
+          "resync_total": 60
+        },
+        {
+          "variant": "branch_2",
+          "win_rate": 0.0625,
+          "cash_mean": 82717.0,
+          "mean_margin": -7502.3125,
+          "hard_total": 0,
+          "invalid_total": 27,
+          "resync_total": 58
+        },
+        {
+          "variant": "branch_3",
+          "win_rate": 0.1875,
+          "cash_mean": 82028.4375,
+          "mean_margin": -7132.84375,
+          "hard_total": 0,
+          "invalid_total": 54,
+          "resync_total": 60
+        },
+        {
+          "variant": "branch_4",
+          "win_rate": 0.3125,
+          "cash_mean": 79905.625,
+          "mean_margin": -7748.0,
+          "hard_total": 0,
+          "invalid_total": 39,
+          "resync_total": 42
+        },
+        {
+          "variant": "branch_5",
+          "win_rate": 0.3125,
+          "cash_mean": 91553.3125,
+          "mean_margin": -3563.375,
+          "hard_total": 0,
+          "invalid_total": 126,
+          "resync_total": 139
+        },
+        {
+          "variant": "branch_6",
+          "win_rate": 0.3125,
+          "cash_mean": 81926.0625,
+          "mean_margin": -5159.875,
+          "hard_total": 0,
+          "invalid_total": 23,
+          "resync_total": 41
+        },
+        {
+          "variant": "branch_7",
+          "win_rate": 0.3125,
+          "cash_mean": 81726.28125,
+          "mean_margin": -7284.78125,
+          "hard_total": 0,
+          "invalid_total": 85,
+          "resync_total": 63
+        },
+        {
+          "variant": "branch_8",
+          "win_rate": 0.46875,
+          "cash_mean": 87869.65625,
+          "mean_margin": -1006.4375,
+          "hard_total": 0,
+          "invalid_total": 1166,
+          "resync_total": 40
+        }
+      ],
+      "compile_and_run_seconds": 29.545828015999994
+    },
+    {
+      "opponent": "flex_v59",
+      "hasegawa_seat": 1,
+      "games": 32,
+      "all_done": true,
+      "current_win_rate": 0.4375,
+      "current_mean_margin": -2673.78125,
+      "oracle_win_rate": 0.84375,
+      "oracle_cash_mean": 104810.78125,
+      "oracle_mean_margin": 8778.09375,
+      "oracle_branch_counts": [
+        10,
+        4,
+        0,
+        4,
+        3,
+        5,
+        1,
+        5,
+        0
+      ],
+      "routes": [
+        {
+          "variant": "current",
+          "win_rate": 0.4375,
+          "cash_mean": 85502.15625,
+          "mean_margin": -2673.78125,
+          "hard_total": 0,
+          "invalid_total": 77,
+          "resync_total": 62
+        },
+        {
+          "variant": "branch_0",
+          "win_rate": 0.46875,
+          "cash_mean": 88542.875,
+          "mean_margin": -1340.625,
+          "hard_total": 0,
+          "invalid_total": 1194,
+          "resync_total": 52
+        },
+        {
+          "variant": "branch_1",
+          "win_rate": 0.21875,
+          "cash_mean": 85561.40625,
+          "mean_margin": -5452.71875,
+          "hard_total": 0,
+          "invalid_total": 41,
+          "resync_total": 88
+        },
+        {
+          "variant": "branch_2",
+          "win_rate": 0.03125,
+          "cash_mean": 81959.34375,
+          "mean_margin": -8081.53125,
+          "hard_total": 0,
+          "invalid_total": 84,
+          "resync_total": 118
+        },
+        {
+          "variant": "branch_3",
+          "win_rate": 0.125,
+          "cash_mean": 81046.8125,
+          "mean_margin": -8001.46875,
+          "hard_total": 0,
+          "invalid_total": 82,
+          "resync_total": 132
+        },
+        {
+          "variant": "branch_4",
+          "win_rate": 0.25,
+          "cash_mean": 78133.21875,
+          "mean_margin": -9129.28125,
+          "hard_total": 0,
+          "invalid_total": 40,
+          "resync_total": 139
+        },
+        {
+          "variant": "branch_5",
+          "win_rate": 0.3125,
+          "cash_mean": 92702.375,
+          "mean_margin": -3344.0,
+          "hard_total": 0,
+          "invalid_total": 100,
+          "resync_total": 51
+        },
+        {
+          "variant": "branch_6",
+          "win_rate": 0.28125,
+          "cash_mean": 81843.5,
+          "mean_margin": -5182.1875,
+          "hard_total": 0,
+          "invalid_total": 35,
+          "resync_total": 46
+        },
+        {
+          "variant": "branch_7",
+          "win_rate": 0.28125,
+          "cash_mean": 78798.34375,
+          "mean_margin": -8380.6875,
+          "hard_total": 0,
+          "invalid_total": 42,
+          "resync_total": 58
+        },
+        {
+          "variant": "branch_8",
+          "win_rate": 0.46875,
+          "cash_mean": 88542.875,
+          "mean_margin": -1340.625,
+          "hard_total": 0,
+          "invalid_total": 1194,
+          "resync_total": 52
+        }
+      ],
+      "compile_and_run_seconds": 29.839980451000002
+    }
+  ],
+  "status": "PASS"
+}

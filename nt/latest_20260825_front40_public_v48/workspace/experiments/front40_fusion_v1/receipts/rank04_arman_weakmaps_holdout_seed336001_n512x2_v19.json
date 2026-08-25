@@ -1,0 +1,274 @@
+{
+  "schema": "kaggriculture.front40_fusion.shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-24T02:18:13.679857+00:00",
+  "status": "PASS",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak6_vs_fc24b_holdout_seed336001_n512x2_v18"
+  ],
+  "maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+      "route_ids": [
+        [
+          50,
+          50,
+          50,
+          50,
+          50,
+          131,
+          50,
+          129
+        ],
+        [
+          50,
+          50,
+          50,
+          50,
+          50,
+          131,
+          50,
+          129
+        ]
+      ],
+      "aggregate": {
+        "games": 1024,
+        "wins": 904,
+        "ties": 0,
+        "win_rate": 0.8828125,
+        "mean_margin": 54868.11328125,
+        "worst_panel_win_rate": 0.8828125
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak6_vs_fc24b_holdout_seed336001_n512x2_v18.npz",
+          "games": 1024,
+          "wins": 904,
+          "ties": 0,
+          "win_rate": 0.8828125,
+          "mean_margin": 54868.11328125,
+          "median_margin": 66476.5,
+          "invalid_mean": 5.0263671875,
+          "oracle_win_rate": 0.9482421875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 512,
+              "wins": 452,
+              "ties": 0,
+              "win_rate": 0.8828125,
+              "mean_margin": 54899.75390625,
+              "invalid_mean": 4.48046875
+            },
+            {
+              "seat": 1,
+              "games": 512,
+              "wins": 452,
+              "ties": 0,
+              "win_rate": 0.8828125,
+              "mean_margin": 54836.47265625,
+              "invalid_mean": 5.572265625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_weakonly_minimax_map_dev640_v17.json",
+      "route_ids": [
+        [
+          38,
+          50,
+          50,
+          50,
+          50,
+          131,
+          50,
+          129
+        ],
+        [
+          38,
+          50,
+          50,
+          50,
+          50,
+          131,
+          50,
+          129
+        ]
+      ],
+      "aggregate": {
+        "games": 1024,
+        "wins": 895,
+        "ties": 0,
+        "win_rate": 0.8740234375,
+        "mean_margin": 54775.7861328125,
+        "worst_panel_win_rate": 0.8740234375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak6_vs_fc24b_holdout_seed336001_n512x2_v18.npz",
+          "games": 1024,
+          "wins": 895,
+          "ties": 0,
+          "win_rate": 0.8740234375,
+          "mean_margin": 54775.7861328125,
+          "median_margin": 66577.5,
+          "invalid_mean": 5.2138671875,
+          "oracle_win_rate": 0.9482421875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 512,
+              "wins": 447,
+              "ties": 0,
+              "win_rate": 0.873046875,
+              "mean_margin": 54795.365234375,
+              "invalid_mean": 4.654296875
+            },
+            {
+              "seat": 1,
+              "games": 512,
+              "wins": 448,
+              "ties": 0,
+              "win_rate": 0.875,
+              "mean_margin": 54756.20703125,
+              "invalid_mean": 5.7734375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_weakonly_stable_map_dev640_v17.json",
+      "route_ids": [
+        [
+          38,
+          50,
+          50,
+          50,
+          50,
+          67,
+          50,
+          129
+        ],
+        [
+          38,
+          50,
+          50,
+          50,
+          50,
+          67,
+          50,
+          129
+        ]
+      ],
+      "aggregate": {
+        "games": 1024,
+        "wins": 887,
+        "ties": 0,
+        "win_rate": 0.8662109375,
+        "mean_margin": 54708.3681640625,
+        "worst_panel_win_rate": 0.8662109375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak6_vs_fc24b_holdout_seed336001_n512x2_v18.npz",
+          "games": 1024,
+          "wins": 887,
+          "ties": 0,
+          "win_rate": 0.8662109375,
+          "mean_margin": 54708.3681640625,
+          "median_margin": 66953.0,
+          "invalid_mean": 5.388671875,
+          "oracle_win_rate": 0.9482421875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 512,
+              "wins": 444,
+              "ties": 0,
+              "win_rate": 0.8671875,
+              "mean_margin": 54774.603515625,
+              "invalid_mean": 4.48828125
+            },
+            {
+              "seat": 1,
+              "games": 512,
+              "wins": 443,
+              "ties": 0,
+              "win_rate": 0.865234375,
+              "mean_margin": 54642.1328125,
+              "invalid_mean": 6.2890625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_weakonly_wilson_map_dev640_v17.json",
+      "route_ids": [
+        [
+          13,
+          50,
+          50,
+          50,
+          50,
+          67,
+          50,
+          129
+        ],
+        [
+          13,
+          50,
+          50,
+          50,
+          50,
+          67,
+          50,
+          129
+        ]
+      ],
+      "aggregate": {
+        "games": 1024,
+        "wins": 897,
+        "ties": 0,
+        "win_rate": 0.8759765625,
+        "mean_margin": 54983.1943359375,
+        "worst_panel_win_rate": 0.8759765625
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak6_vs_fc24b_holdout_seed336001_n512x2_v18.npz",
+          "games": 1024,
+          "wins": 897,
+          "ties": 0,
+          "win_rate": 0.8759765625,
+          "mean_margin": 54983.1943359375,
+          "median_margin": 67013.0,
+          "invalid_mean": 5.4951171875,
+          "oracle_win_rate": 0.9482421875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 512,
+              "wins": 449,
+              "ties": 0,
+              "win_rate": 0.876953125,
+              "mean_margin": 54971.359375,
+              "invalid_mean": 4.794921875
+            },
+            {
+              "seat": 1,
+              "games": 512,
+              "wins": 448,
+              "ties": 0,
+              "win_rate": 0.875,
+              "mean_margin": 54995.029296875,
+              "invalid_mean": 6.1953125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

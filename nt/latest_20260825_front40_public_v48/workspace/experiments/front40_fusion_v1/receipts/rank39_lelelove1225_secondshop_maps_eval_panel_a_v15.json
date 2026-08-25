@@ -1,0 +1,113 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-25T00:30:28.972406+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_two_panel_unrestricted_stable_win_firstshop_v11.json",
+  "holdout_seed_index_range": [
+    0,
+    127
+  ],
+  "base": {
+    "games": 256,
+    "wins": 206,
+    "win_rate": 0.8046875,
+    "mean_margin": 2064.27734375,
+    "median_margin": 3107.0,
+    "hard_counter_total": 0,
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 128,
+        "wins": 102,
+        "win_rate": 0.796875,
+        "mean_margin": 2008.671875,
+        "median_margin": 3089.5,
+        "hard_counter_total": 0
+      },
+      {
+        "seat": 1,
+        "games": 128,
+        "wins": 104,
+        "win_rate": 0.8125,
+        "mean_margin": 2119.8828125,
+        "median_margin": 3107.5,
+        "hard_counter_total": 0
+      }
+    ]
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_secondshop_same_source_two_panel_v13.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 12,
+      "holdout": {
+        "games": 256,
+        "wins": 210,
+        "win_rate": 0.8203125,
+        "mean_margin": 2368.5703125,
+        "median_margin": 3185.5,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 128,
+          "wins": 104,
+          "win_rate": 0.8125,
+          "mean_margin": 2313.0078125,
+          "median_margin": 3185.5,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 128,
+          "wins": 106,
+          "win_rate": 0.828125,
+          "mean_margin": 2424.1328125,
+          "median_margin": 3192.0,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 62,
+      "net_wins_vs_base": 4,
+      "mean_margin_gain_vs_base": 304.29296875
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_secondshop_cross_source_two_panel_v14.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 34,
+      "holdout": {
+        "games": 256,
+        "wins": 224,
+        "win_rate": 0.875,
+        "mean_margin": 3128.07421875,
+        "median_margin": 3410.0,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 128,
+          "wins": 111,
+          "win_rate": 0.8671875,
+          "mean_margin": 3100.2734375,
+          "median_margin": 3348.5,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 128,
+          "wins": 113,
+          "win_rate": 0.8828125,
+          "mean_margin": 3155.875,
+          "median_margin": 3448.0,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 94,
+      "net_wins_vs_base": 18,
+      "mean_margin_gain_vs_base": 1063.796875
+    }
+  ]
+}

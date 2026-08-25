@@ -1,0 +1,50 @@
+{
+  "schema": "kaggriculture.front40_fusion.exact-behavior-screen-expansion.v1",
+  "generated_at_utc": "2026-08-24T06:32:44.918726+00:00",
+  "status": "PASS",
+  "trace_bank": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_trace_bank_v1.npz",
+  "input_screen": "experiments\\front40_fusion_v1\\receipts\\rank07_active_unique10_vs_fc24b_screen_seed480001_n512x2_v19.json",
+  "input_route_count": 10,
+  "output_route_count": 84,
+  "behavior_fields": [
+    "unit_op",
+    "unit_item",
+    "unit_amount",
+    "unit_count",
+    "market_op",
+    "market_item",
+    "market_amount",
+    "market_count",
+    "expected_unit_pos",
+    "expected_unit_active"
+  ],
+  "behavior_group_count": 10,
+  "representative_routes": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    19,
+    42,
+    48,
+    52,
+    70
+  ],
+  "group_sizes": {
+    "1": 1,
+    "2": 50,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "19": 12,
+    "42": 5,
+    "48": 2,
+    "52": 10,
+    "70": 1
+  },
+  "exact_field_checks": 840,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed480001_n512x2_v20.npz"
+}

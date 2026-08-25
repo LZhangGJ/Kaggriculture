@@ -1,0 +1,3615 @@
+{
+  "schema": "kaggriculture.public-recent-20260825.official-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-25T01:09:32.026880+00:00",
+  "official_environment": "kaggle-environments==1.32.7",
+  "seed_start": 1301001,
+  "seed_count": 4,
+  "seat_swapped": true,
+  "workers": 16,
+  "fc24b": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc24b_20260823_v1\\main.py",
+  "aggregates": {
+    "kaito_v48": {
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 7,
+      "ties": 0,
+      "win_rate": 0.875,
+      "mean_margin": 5717.125,
+      "mean_candidate_reward": 103577.375,
+      "mean_fc24b_reward": 97860.25,
+      "seat_win_rate": {
+        "0": 0.75,
+        "1": 1.0
+      },
+      "errors": []
+    },
+    "prvsiyan_soil_v139": {
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 1,
+      "ties": 0,
+      "win_rate": 0.125,
+      "mean_margin": -2771.375,
+      "mean_candidate_reward": 105247.75,
+      "mean_fc24b_reward": 108019.125,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.25
+      },
+      "errors": []
+    },
+    "prvsiyan_moon_v135": {
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 1,
+      "ties": 0,
+      "win_rate": 0.125,
+      "mean_margin": -2771.375,
+      "mean_candidate_reward": 105247.75,
+      "mean_fc24b_reward": 108019.125,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.25
+      },
+      "errors": []
+    },
+    "adaptive_shop_guard": {
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 7,
+      "ties": 0,
+      "win_rate": 0.875,
+      "mean_margin": 5717.125,
+      "mean_candidate_reward": 103577.375,
+      "mean_fc24b_reward": 97860.25,
+      "seat_win_rate": {
+        "0": 0.75,
+        "1": 1.0
+      },
+      "errors": []
+    },
+    "shops_remember_route": {
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 7,
+      "ties": 0,
+      "win_rate": 0.875,
+      "mean_margin": 5662.625,
+      "mean_candidate_reward": 103522.875,
+      "mean_fc24b_reward": 97860.25,
+      "seat_win_rate": {
+        "0": 0.75,
+        "1": 1.0
+      },
+      "errors": []
+    },
+    "premium_queue_split": {
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -11550.0,
+      "mean_candidate_reward": 91829.875,
+      "mean_fc24b_reward": 103379.875,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "salem_3000": {
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -11581.125,
+      "mean_candidate_reward": 91815.625,
+      "mean_fc24b_reward": 103396.75,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "mugundh_v21_divergence": {
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -2421.25,
+      "mean_candidate_reward": 95158.75,
+      "mean_fc24b_reward": 97580.0,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "tetsutani_read_town": {
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -3079.25,
+      "mean_candidate_reward": 94865.0,
+      "mean_fc24b_reward": 97944.25,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "lynn_farming_score_v2": {
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -160832.25,
+      "mean_candidate_reward": 3000.0,
+      "mean_fc24b_reward": 163832.25,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "ecobot_v4": {
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -27905.875,
+      "mean_candidate_reward": 73852.375,
+      "mean_fc24b_reward": 101758.25,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "steven_x594": {
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -16082.375,
+      "mean_candidate_reward": 101062.375,
+      "mean_fc24b_reward": 117144.75,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "steven_e631": {
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -9016.75,
+      "mean_candidate_reward": 96883.875,
+      "mean_fc24b_reward": 105900.625,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "amey_deterministic": {
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -11581.125,
+      "mean_candidate_reward": 91815.625,
+      "mean_fc24b_reward": 103396.75,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "akash_autonomous": {
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -144432.875,
+      "mean_candidate_reward": 2720.0,
+      "mean_fc24b_reward": 147152.875,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    },
+    "koushik_starter": {
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "games": 8,
+      "completed_games": 8,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_margin": -160932.25,
+      "mean_candidate_reward": 2900.0,
+      "mean_fc24b_reward": 163832.25,
+      "seat_win_rate": {
+        "0": 0.0,
+        "1": 0.0
+      },
+      "errors": []
+    }
+  },
+  "rows": [
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 143028.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1856.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 143028,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 54.65925470000366
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 143028.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1856.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 143028,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 54.708932199981064
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96436.0,
+      "fc24b_reward": 93265.0,
+      "margin": 3171.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96436,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.45371420000447
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97166.0,
+      "fc24b_reward": 92636.0,
+      "margin": 4530.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97166,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.7977129999781
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 56209.0,
+      "fc24b_reward": 57826.0,
+      "margin": -1617.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 56209,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.30073180003092
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 72994.0,
+      "fc24b_reward": 67227.0,
+      "margin": 5767.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 72994,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.42636710003717
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.62434400001075
+    },
+    {
+      "candidate": "kaito_v48",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.855637400003616
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102998.0,
+      "fc24b_reward": 104939.0,
+      "margin": -1941.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102998,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 55.037814799987245
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102998.0,
+      "fc24b_reward": 104939.0,
+      "margin": -1941.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102998,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 54.98543359996984
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96905.0,
+      "fc24b_reward": 103668.0,
+      "margin": -6763.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96905,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 53.24817979999352
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96905.0,
+      "fc24b_reward": 103668.0,
+      "margin": -6763.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96905,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 52.975073600013275
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 98815.0,
+      "fc24b_reward": 99573.0,
+      "margin": -758.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 98815,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 52.947498300054576
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 98815.0,
+      "fc24b_reward": 99573.0,
+      "margin": -758.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 98815,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 52.7089536000276
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109128.0,
+      "fc24b_reward": 112837.0,
+      "margin": -3709.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109128,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 51.43036140000913
+    },
+    {
+      "candidate": "prvsiyan_soil_v139",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-soil-remembers-rain\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 135418.0,
+      "fc24b_reward": 134956.0,
+      "margin": 462.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 135418,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 51.54260690003866
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102998.0,
+      "fc24b_reward": 104939.0,
+      "margin": -1941.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102998,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 40.049150600039866
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102998.0,
+      "fc24b_reward": 104939.0,
+      "margin": -1941.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102998,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.74313859996619
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96905.0,
+      "fc24b_reward": 103668.0,
+      "margin": -6763.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96905,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 37.58772859995952
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96905.0,
+      "fc24b_reward": 103668.0,
+      "margin": -6763.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96905,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 37.092993600002956
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 98815.0,
+      "fc24b_reward": 99573.0,
+      "margin": -758.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 98815,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 37.229881300008856
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 98815.0,
+      "fc24b_reward": 99573.0,
+      "margin": -758.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 98815,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 36.90281389997108
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109128.0,
+      "fc24b_reward": 112837.0,
+      "margin": -3709.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109128,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 35.92591170000378
+    },
+    {
+      "candidate": "prvsiyan_moon_v135",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\prvsiyan__kaggriculture-frontier-the-moon-counts-melons\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 135418.0,
+      "fc24b_reward": 134956.0,
+      "margin": 462.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 135418,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 35.781489600019995
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 143028.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1856.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 143028,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.09271370002534
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 143028.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1856.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 143028,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.312249700014945
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96436.0,
+      "fc24b_reward": 93265.0,
+      "margin": 3171.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96436,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.50919090001844
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97166.0,
+      "fc24b_reward": 92636.0,
+      "margin": 4530.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97166,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.49147789995186
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 56209.0,
+      "fc24b_reward": 57826.0,
+      "margin": -1617.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 56209,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 38.94373860000633
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 72994.0,
+      "fc24b_reward": 67227.0,
+      "margin": 5767.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 72994,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.286032199976034
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 38.24120740004582
+    },
+    {
+      "candidate": "adaptive_shop_guard",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-adaptive-shop-guard\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 39.0632965999539
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 142810.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1638.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 142810,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 19.113271399983205
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 142810.0,
+      "fc24b_reward": 141172.0,
+      "margin": 1638.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 142810,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.410014599969145
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 96436.0,
+      "fc24b_reward": 93265.0,
+      "margin": 3171.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 96436,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.976626900024712
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97166.0,
+      "fc24b_reward": 92636.0,
+      "margin": 4530.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97166,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.50728939997498
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 56209.0,
+      "fc24b_reward": 57826.0,
+      "margin": -1617.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 56209,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.021465500001796
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 72994.0,
+      "fc24b_reward": 67227.0,
+      "margin": 5767.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 72994,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.678308800037485
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.212547799979802
+    },
+    {
+      "candidate": "shops_remember_route",
+      "family": "kaito_fast_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-the-shops-remember-the-route\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 109879.0,
+      "fc24b_reward": 94792.0,
+      "margin": 15087.0,
+      "win": true,
+      "tie": false,
+      "candidate_farm": {
+        "money": 109879,
+        "units": 0,
+        "cows": 11,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.641469799971674
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76659.0,
+      "fc24b_reward": 96596.0,
+      "margin": -19937.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76659,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.666844499995932
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76659.0,
+      "fc24b_reward": 96596.0,
+      "margin": -19937.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76659,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.53437769995071
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 101815.0,
+      "fc24b_reward": 110622.0,
+      "margin": -8807.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 101815,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.479435900051612
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 104580.0,
+      "fc24b_reward": 108979.0,
+      "margin": -4399.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 104580,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.030785700015258
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 93300.0,
+      "fc24b_reward": 103524.0,
+      "margin": -10224.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 93300,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.80594970000675
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 68333.0,
+      "fc24b_reward": 86654.0,
+      "margin": -18321.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 68333,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.28588410001248
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106725.0,
+      "fc24b_reward": 111921.0,
+      "margin": -5196.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106725,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.270816600008402
+    },
+    {
+      "candidate": "premium_queue_split",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\llccqq624__kaggriculture-premium-queue-split\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106568.0,
+      "fc24b_reward": 112147.0,
+      "margin": -5579.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106568,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.06801230000565
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76653.0,
+      "fc24b_reward": 96605.0,
+      "margin": -19952.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76653,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.106750799983274
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76653.0,
+      "fc24b_reward": 96605.0,
+      "margin": -19952.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76653,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.90908529999433
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 101799.0,
+      "fc24b_reward": 110640.0,
+      "margin": -8841.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 101799,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.179141099972185
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 104565.0,
+      "fc24b_reward": 108996.0,
+      "margin": -4431.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 104565,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.975418200017884
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 93285.0,
+      "fc24b_reward": 103546.0,
+      "margin": -10261.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 93285,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.34151009999914
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 68312.0,
+      "fc24b_reward": 86677.0,
+      "margin": -18365.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 68312,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.394853800011333
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106706.0,
+      "fc24b_reward": 111939.0,
+      "margin": -5233.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106706,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.926935900002718
+    },
+    {
+      "candidate": "salem_3000",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\salemali7__kaggriculture-3000-socre\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106552.0,
+      "fc24b_reward": 112166.0,
+      "margin": -5614.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106552,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.333143599971663
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102956.0,
+      "fc24b_reward": 105101.0,
+      "margin": -2145.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102956,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.951797600020654
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102956.0,
+      "fc24b_reward": 105101.0,
+      "margin": -2145.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102956,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.152141299971845
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99972.0,
+      "fc24b_reward": 103618.0,
+      "margin": -3646.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 99972,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.663329600007273
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99972.0,
+      "fc24b_reward": 103618.0,
+      "margin": -3646.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 99972,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.199386699998286
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97520.0,
+      "fc24b_reward": 99771.0,
+      "margin": -2251.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97520,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.83545170002617
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97520.0,
+      "fc24b_reward": 99771.0,
+      "margin": -2251.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97520,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.323096500011161
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 80187.0,
+      "fc24b_reward": 81830.0,
+      "margin": -1643.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 80187,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.23843719996512
+    },
+    {
+      "candidate": "mugundh_v21_divergence",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\mugundhjb__v21-multi-route-agent-sell-divergence-guarder\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 80187.0,
+      "fc24b_reward": 81830.0,
+      "margin": -1643.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 80187,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.08152229996631
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102601.0,
+      "fc24b_reward": 105558.0,
+      "margin": -2957.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102601,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.318873499985784
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 102601.0,
+      "fc24b_reward": 105558.0,
+      "margin": -2957.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 102601,
+        "units": 0,
+        "cows": 6,
+        "sheep": 9,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.77835670002969
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99802.0,
+      "fc24b_reward": 103842.0,
+      "margin": -4040.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 99802,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.58222909999313
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99802.0,
+      "fc24b_reward": 103842.0,
+      "margin": -4040.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 99802,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.409130099986214
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97292.0,
+      "fc24b_reward": 100056.0,
+      "margin": -2764.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97292,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.055355700023938
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 97292.0,
+      "fc24b_reward": 100056.0,
+      "margin": -2764.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 97292,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.078875300008804
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 79765.0,
+      "fc24b_reward": 82321.0,
+      "margin": -2556.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 79765,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.293622299970593
+    },
+    {
+      "candidate": "tetsutani_read_town",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\tetsutani__read-the-town-build-the-farm-kaggriculture\\output\\submission_extract\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 79765.0,
+      "fc24b_reward": 82321.0,
+      "margin": -2556.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 79765,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.58959730004426
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 155568.0,
+      "margin": -152568.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.13436530000763
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 156171.0,
+      "margin": -153171.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.02470710000489
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 172056.0,
+      "margin": -169056.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.930836499959696
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 182401.0,
+      "margin": -179401.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.329036500013899
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 168663.0,
+      "margin": -165663.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.440311799990013
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 173139.0,
+      "margin": -170139.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.690677299979143
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 147043.0,
+      "margin": -144043.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 14.510906500043347
+    },
+    {
+      "candidate": "lynn_farming_score_v2",
+      "family": "prvsiyan_moon_soil",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\lynnsakurai__farming-score-v2-a-better-approach\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 3000.0,
+      "fc24b_reward": 155617.0,
+      "margin": -152617.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 3000,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.55970330000855
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 77948.0,
+      "fc24b_reward": 111806.0,
+      "margin": -33858.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 77948,
+        "units": 0,
+        "cows": 5,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.054735699959565
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 78585.0,
+      "fc24b_reward": 113169.0,
+      "margin": -34584.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 78585,
+        "units": 0,
+        "cows": 5,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.84957120002946
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 66819.0,
+      "fc24b_reward": 84671.0,
+      "margin": -17852.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 66819,
+        "units": 0,
+        "cows": 6,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.92085880000377
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 74251.0,
+      "fc24b_reward": 95977.0,
+      "margin": -21726.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 74251,
+        "units": 0,
+        "cows": 5,
+        "sheep": 10,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.250339800026268
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 52722.0,
+      "fc24b_reward": 78871.0,
+      "margin": -26149.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 52722,
+        "units": 0,
+        "cows": 9,
+        "sheep": 7,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.54305999999633
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 55352.0,
+      "fc24b_reward": 80441.0,
+      "margin": -25089.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 55352,
+        "units": 0,
+        "cows": 9,
+        "sheep": 7,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.953425600018818
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 92040.0,
+      "fc24b_reward": 124624.0,
+      "margin": -32584.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 92040,
+        "units": 0,
+        "cows": 9,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 15.852202199981548
+    },
+    {
+      "candidate": "ecobot_v4",
+      "family": "ecobot_rules",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\premaananda108__economics-driven-rule-agent-ecobot-v4\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 93102.0,
+      "fc24b_reward": 124507.0,
+      "margin": -31405.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 93102,
+        "units": 0,
+        "cows": 9,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.278026100015268
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 100397.0,
+      "fc24b_reward": 117789.0,
+      "margin": -17392.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 100397,
+        "units": 0,
+        "cows": 8,
+        "sheep": 7,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.580083400011063
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 104845.0,
+      "fc24b_reward": 123472.0,
+      "margin": -18627.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 104845,
+        "units": 0,
+        "cows": 8,
+        "sheep": 6,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.50383790000342
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 86824.0,
+      "fc24b_reward": 112648.0,
+      "margin": -25824.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 86824,
+        "units": 0,
+        "cows": 8,
+        "sheep": 5,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.06839760002913
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 89011.0,
+      "fc24b_reward": 113077.0,
+      "margin": -24066.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 89011,
+        "units": 0,
+        "cows": 8,
+        "sheep": 5,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.602352000016253
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106186.0,
+      "fc24b_reward": 116909.0,
+      "margin": -10723.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106186,
+        "units": 0,
+        "cows": 9,
+        "sheep": 2,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.756881700013764
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106186.0,
+      "fc24b_reward": 116909.0,
+      "margin": -10723.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106186,
+        "units": 0,
+        "cows": 9,
+        "sheep": 2,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.29536069999449
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 107525.0,
+      "fc24b_reward": 118177.0,
+      "margin": -10652.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 107525,
+        "units": 0,
+        "cows": 8,
+        "sheep": 2,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.261633099988103
+    },
+    {
+      "candidate": "steven_x594",
+      "family": "steven_x",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-x578-i-m-the-strongest\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 107525.0,
+      "fc24b_reward": 118177.0,
+      "margin": -10652.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 107525,
+        "units": 0,
+        "cows": 8,
+        "sheep": 2,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.360650399990845
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 94740.0,
+      "fc24b_reward": 113256.0,
+      "margin": -18516.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 94740,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.09374320000643
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 98041.0,
+      "fc24b_reward": 115691.0,
+      "margin": -17650.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 98041,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.22961189999478
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 105126.0,
+      "fc24b_reward": 109695.0,
+      "margin": -4569.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 105126,
+        "units": 0,
+        "cows": 9,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.291742099972907
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 105126.0,
+      "fc24b_reward": 109695.0,
+      "margin": -4569.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 105126,
+        "units": 0,
+        "cows": 9,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.14189179998357
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 92041.0,
+      "fc24b_reward": 98362.0,
+      "margin": -6321.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 92041,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.401616799994372
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 93536.0,
+      "fc24b_reward": 101640.0,
+      "margin": -8104.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 93536,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.813225899997633
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 84924.0,
+      "fc24b_reward": 90208.0,
+      "margin": -5284.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 84924,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.489168200001586
+    },
+    {
+      "candidate": "steven_e631",
+      "family": "steven_e",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\stevenleehans__kaggriculture-rank-238-oh-you-re-approaching-me\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 101537.0,
+      "fc24b_reward": 108658.0,
+      "margin": -7121.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 101537,
+        "units": 0,
+        "cows": 10,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 16.652908099989872
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76653.0,
+      "fc24b_reward": 96605.0,
+      "margin": -19952.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76653,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.15145250002388
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 76653.0,
+      "fc24b_reward": 96605.0,
+      "margin": -19952.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 76653,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.397349999984726
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 101799.0,
+      "fc24b_reward": 110640.0,
+      "margin": -8841.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 101799,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.509963499964215
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 104565.0,
+      "fc24b_reward": 108996.0,
+      "margin": -4431.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 104565,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.919266500044614
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 93285.0,
+      "fc24b_reward": 103546.0,
+      "margin": -10261.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 93285,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.59423029999016
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 68312.0,
+      "fc24b_reward": 86677.0,
+      "margin": -18365.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 68312,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.690161100006662
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106706.0,
+      "fc24b_reward": 111939.0,
+      "margin": -5233.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106706,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 18.075509099988267
+    },
+    {
+      "candidate": "amey_deterministic",
+      "family": "single_tape_d854",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\ameythakur20__kaggriculture-deterministic-farm-planning-agent\\output\\main.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106552.0,
+      "fc24b_reward": 112166.0,
+      "margin": -5614.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 106552,
+        "units": 0,
+        "cows": 8,
+        "sheep": 4,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 17.34152700001141
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 158787.0,
+      "margin": -156047.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.689301499980502
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 163888.0,
+      "margin": -161148.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 11.651641400007065
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 128967.0,
+      "margin": -126227.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 11.40981440001633
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 141671.0,
+      "margin": -138931.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.76001880003605
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 151609.0,
+      "margin": -148869.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 11.098012600035872
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 167920.0,
+      "margin": -165180.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 11.069523500045761
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2580.0,
+      "fc24b_reward": 140517.0,
+      "margin": -137937.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2580,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 11.045380300027318
+    },
+    {
+      "candidate": "akash_autonomous",
+      "family": "small_rule_agent",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\akashbabu17__kaggriculture-autonomous-multi-agent-farming\\output\\submission.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2740.0,
+      "fc24b_reward": 123864.0,
+      "margin": -121124.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2740,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.863781100022607
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 155568.0,
+      "margin": -152668.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.142392300011124
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 156171.0,
+      "margin": -153271.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.057508300000336
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 172056.0,
+      "margin": -169156.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 10.127091600035783
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 182401.0,
+      "margin": -179501.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 9.959705899993423
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 168663.0,
+      "margin": -165763.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 9.789245299994946
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 173139.0,
+      "margin": -170239.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 9.875459400005639
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 147043.0,
+      "margin": -144143.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 9.805268399999477
+    },
+    {
+      "candidate": "koushik_starter",
+      "family": "starter",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\koushikkumardinda__kaggriculture-starter\\output\\submission.py",
+      "seed": 1301004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 2900.0,
+      "fc24b_reward": 155617.0,
+      "margin": -152717.0,
+      "win": false,
+      "tie": false,
+      "candidate_farm": {
+        "money": 2900,
+        "units": 0,
+        "cows": 0,
+        "sheep": 0,
+        "geese": 0
+      },
+      "error": "",
+      "seconds": 9.598961299983785
+    }
+  ],
+  "status": "PASS"
+}

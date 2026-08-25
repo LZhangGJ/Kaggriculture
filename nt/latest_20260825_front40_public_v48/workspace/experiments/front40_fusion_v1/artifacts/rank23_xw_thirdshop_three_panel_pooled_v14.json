@@ -1,0 +1,7970 @@
+{
+  "schema": "kaggriculture.front40_fusion.compatible-third-shop-route-map.v1",
+  "generated_at_utc": "2026-08-24T19:17:31.090038+00:00",
+  "status": "TRAINING_ONLY",
+  "trace_bank": "experiments\\front40_fusion_v1\\artifacts\\rank23_xw_trace_bank_v1.npz",
+  "two_shop_tree": "experiments\\front40_fusion_v1\\artifacts\\rank23_xw_secondshop_three_panel_v6.json",
+  "source_screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank23_xw_all61_vs_fc24b_screen_seed952001_n64x2_v2.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank23_xw_candidates30_vs_fc24b_screen_seed960001_n128x2_v3.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank23_xw_candidates30_vs_fc24b_screen_seed968001_n256x2_v4.json"
+  ],
+  "mode": "pooled_win",
+  "route_capacity": 256,
+  "prefix_range": [
+    72,
+    216
+  ],
+  "route_ids": [
+    51,
+    24,
+    24,
+    24,
+    51,
+    23,
+    4,
+    19
+  ],
+  "second_route_ids_by_first_shop": [
+    [
+      51,
+      51,
+      51,
+      51,
+      38,
+      51,
+      51,
+      28
+    ],
+    [
+      24,
+      24,
+      5,
+      9,
+      5,
+      51,
+      24,
+      28
+    ],
+    [
+      24,
+      37,
+      24,
+      24,
+      37,
+      24,
+      24,
+      24
+    ],
+    [
+      29,
+      4,
+      16,
+      34,
+      29,
+      24,
+      24,
+      16
+    ],
+    [
+      51,
+      51,
+      51,
+      16,
+      51,
+      8,
+      51,
+      17
+    ],
+    [
+      23,
+      23,
+      23,
+      34,
+      23,
+      23,
+      23,
+      16
+    ],
+    [
+      31,
+      32,
+      4,
+      34,
+      4,
+      29,
+      34,
+      16
+    ],
+    [
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19
+    ]
+  ],
+  "third_route_ids_by_shop": [
+    [
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        38,
+        38,
+        38,
+        38,
+        38,
+        38,
+        38,
+        38
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ]
+    ],
+    [
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ]
+    ],
+    [
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        37,
+        37,
+        37,
+        37,
+        37,
+        37,
+        37,
+        37
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        37,
+        37,
+        37,
+        37,
+        37,
+        37,
+        37,
+        37
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ]
+    ],
+    [
+      [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    ],
+    [
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ]
+    ],
+    [
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        34,
+        34,
+        34,
+        34,
+        34,
+        49,
+        34,
+        34
+      ],
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+      ],
+      [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ],
+      [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ],
+      [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        34,
+        34,
+        34,
+        34,
+        34,
+        49,
+        34,
+        34
+      ],
+      [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    ],
+    [
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ]
+    ]
+  ],
+  "routing_index": "first_shop,second_shop,third_shop",
+  "exact_prefix_checks": 92,
+  "min_games": 4,
+  "routes": [
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 6,
+      "baseline_win_rate": 0.8333333333333334,
+      "candidate_win_rate": 0.8333333333333334,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 6,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 38,
+      "eligible_routes": [
+        38
+      ],
+      "selected_route": 38,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BAKERY",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 5,
+      "baseline_win_rate": 0.2,
+      "candidate_win_rate": 0.2,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 5,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 9,
+      "eligible_routes": [
+        9
+      ],
+      "selected_route": 9,
+      "games": 4,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 6,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 5,
+      "eligible_routes": [
+        5
+      ],
+      "selected_route": 5,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 7,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 6,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 3,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 28,
+      "eligible_routes": [
+        28
+      ],
+      "selected_route": 28,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 6,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 8,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 37,
+      "eligible_routes": [
+        37
+      ],
+      "selected_route": 37,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 0.25,
+      "candidate_win_rate": 0.25,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 5,
+      "baseline_win_rate": 0.8,
+      "candidate_win_rate": 0.8,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 29,
+      "eligible_routes": [
+        18,
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 29,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 4,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34,
+        49
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 5,
+      "baseline_win_rate": 0.8,
+      "candidate_win_rate": 0.8,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 34,
+      "eligible_routes": [
+        32,
+        34
+      ],
+      "selected_route": 34,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 29,
+      "eligible_routes": [
+        18,
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 5,
+      "baseline_win_rate": 0.6,
+      "candidate_win_rate": 0.6,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 29,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 29,
+      "games": 6,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 24,
+      "eligible_routes": [
+        24
+      ],
+      "selected_route": 24,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.75,
+      "candidate_win_rate": 0.75,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.25,
+      "candidate_win_rate": 0.25,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.75,
+      "candidate_win_rate": 0.75,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 6,
+      "baseline_win_rate": 0.8333333333333334,
+      "candidate_win_rate": 0.8333333333333334,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 5,
+      "baseline_win_rate": 0.8,
+      "candidate_win_rate": 0.8,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 6,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 3,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 8,
+      "eligible_routes": [
+        8
+      ],
+      "selected_route": 8,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 51,
+      "eligible_routes": [
+        51
+      ],
+      "selected_route": 51,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 9,
+      "baseline_win_rate": 0.8888888888888888,
+      "candidate_win_rate": 0.8888888888888888,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PET_CAFE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 17,
+      "eligible_routes": [
+        17
+      ],
+      "selected_route": 17,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 6,
+      "baseline_win_rate": 0.8333333333333334,
+      "candidate_win_rate": 0.8333333333333334,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 8,
+      "baseline_win_rate": 0.625,
+      "candidate_win_rate": 0.625,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34,
+        49
+      ],
+      "selected_route": 49,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": true
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 34,
+      "eligible_routes": [
+        32,
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 6,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 7,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 23,
+      "eligible_routes": [
+        18,
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 23,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 23,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 23,
+      "eligible_routes": [
+        23
+      ],
+      "selected_route": 23,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 6,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 4,
+      "baseline_win_rate": 0.75,
+      "candidate_win_rate": 0.75,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 6,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 31,
+      "eligible_routes": [
+        31
+      ],
+      "selected_route": 31,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 32,
+      "eligible_routes": [
+        32,
+        34
+      ],
+      "selected_route": 32,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 32,
+      "eligible_routes": [
+        32,
+        49
+      ],
+      "selected_route": 32,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 4,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 32,
+      "eligible_routes": [
+        32
+      ],
+      "selected_route": 32,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34,
+        49
+      ],
+      "selected_route": 49,
+      "games": 6,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": true
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 34,
+      "eligible_routes": [
+        32,
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 6,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 4,
+      "eligible_routes": [
+        4
+      ],
+      "selected_route": 4,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 29,
+      "eligible_routes": [
+        18,
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 29,
+      "eligible_routes": [
+        23,
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 29,
+      "eligible_routes": [
+        29
+      ],
+      "selected_route": 29,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 10,
+      "baseline_win_rate": 0.1,
+      "candidate_win_rate": 0.1,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34,
+        49
+      ],
+      "selected_route": 34,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 34,
+      "eligible_routes": [
+        34
+      ],
+      "selected_route": 34,
+      "games": 6,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 34,
+      "eligible_routes": [
+        32,
+        34
+      ],
+      "selected_route": 34,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 4,
+      "baseline_win_rate": 0.75,
+      "candidate_win_rate": 0.75,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 6,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 16,
+      "eligible_routes": [
+        16
+      ],
+      "selected_route": 16,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 5,
+      "baseline_win_rate": 0.8,
+      "candidate_win_rate": 0.8,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BAKERY",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 3,
+      "baseline_win_rate": 0.3333333333333333,
+      "candidate_win_rate": 0.3333333333333333,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "BRUNCH_SPOT",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 5,
+      "baseline_win_rate": 0.4,
+      "candidate_win_rate": 0.4,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "FARMERS_MARKET",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 0.5,
+      "candidate_win_rate": 0.5,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 7,
+      "baseline_win_rate": 0.7142857142857143,
+      "candidate_win_rate": 0.7142857142857143,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "ICE_CREAM_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 3,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 7,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 6,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PET_CAFE",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 3,
+      "baseline_win_rate": 0.6666666666666666,
+      "candidate_win_rate": 0.6666666666666666,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 5,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 8,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "PIZZA_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "SMOOTHIE_SHOP",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BAKERY",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "BRUNCH_SPOT",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "FARMERS_MARKET",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "ICE_CREAM_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 1,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PET_CAFE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 4,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "PIZZA_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "SMOOTHIE_SHOP",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 0,
+      "baseline_win_rate": 0.0,
+      "candidate_win_rate": 0.0,
+      "accepted": false
+    },
+    {
+      "first_shop": "YARN_STORE",
+      "second_shop": "YARN_STORE",
+      "third_shop": "YARN_STORE",
+      "current_route": 19,
+      "eligible_routes": [
+        19
+      ],
+      "selected_route": 19,
+      "games": 2,
+      "baseline_win_rate": 1.0,
+      "candidate_win_rate": 1.0,
+      "accepted": false
+    }
+  ],
+  "boundary": "Third-stage selection reads only the three currently unlocked public shops. Every changed suffix matches the executed route action prefix exactly."
+}

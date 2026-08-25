@@ -1,0 +1,87 @@
+{
+  "schema": "kaggriculture.front40_fusion.three-shop-trace-tree-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T11:56:19.208024+00:00",
+  "status": "FAIL",
+  "device": "cuda:0",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_trace_bank_v1.npz",
+  "route_tree": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_thirdshop_validation_blend_v107.json",
+  "seed_start": 648001,
+  "batch_per_seat": 512,
+  "screen_matrix": "experiments/front40_fusion_v1/receipts/rank09_kawashigi_routes24_vs_fc24b_seed648001_n512x2_independent_v109.npz",
+  "runtime_boundary": "only town shops already visible in the current state",
+  "aggregate": {
+    "games": 1024,
+    "wins": 524,
+    "win_rate": 0.51171875,
+    "mean_margin": -828.4111328125,
+    "parity_mismatch_total": 4
+  },
+  "results": [
+    {
+      "candidate_seat": 0,
+      "games": 512,
+      "wins": 260,
+      "win_rate": 0.5078125,
+      "mean_margin": -861.97265625,
+      "candidate_cash_mean": 85974.931640625,
+      "opponent_cash_mean": 86836.904296875,
+      "all_done": true,
+      "invalid_intent_total": 2751,
+      "resync_total": 902,
+      "hard_counter_total": 0,
+      "route_switch_total": 1153,
+      "elapsed_seconds": 37.13105673000001,
+      "transitions_per_second": 9914.288264857574,
+      "parity": {
+        "cash_mismatch": 1,
+        "opponent_cash_mismatch": 1,
+        "route_mismatch": 0
+      },
+      "parity_examples": [
+        {
+          "index": 299,
+          "seed": 648300,
+          "actual_cash": 56802,
+          "expected_cash": 55811,
+          "actual_opponent_cash": 75779,
+          "expected_opponent_cash": 62967,
+          "actual_route": 81,
+          "expected_route": 81
+        }
+      ]
+    },
+    {
+      "candidate_seat": 1,
+      "games": 512,
+      "wins": 264,
+      "win_rate": 0.515625,
+      "mean_margin": -794.849609375,
+      "candidate_cash_mean": 86085.212890625,
+      "opponent_cash_mean": 86880.0625,
+      "all_done": true,
+      "invalid_intent_total": 3147,
+      "resync_total": 1008,
+      "hard_counter_total": 0,
+      "route_switch_total": 1155,
+      "elapsed_seconds": 35.77271827200002,
+      "transitions_per_second": 10290.747188986774,
+      "parity": {
+        "cash_mismatch": 1,
+        "opponent_cash_mismatch": 1,
+        "route_mismatch": 0
+      },
+      "parity_examples": [
+        {
+          "index": 419,
+          "seed": 648420,
+          "actual_cash": 52926,
+          "expected_cash": 75542,
+          "actual_opponent_cash": 67943,
+          "expected_opponent_cash": 76893,
+          "actual_route": 65,
+          "expected_route": 65
+        }
+      ]
+    }
+  ]
+}

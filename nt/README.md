@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260825_front40_public_v48/` — Rank1–40 current-submission
+  reconstruction snapshot plus the 34-notebook 2026-08-25 Recently Run scan,
+  final route banks/maps/receipts, and the strictly parity-accepted Kaito V48
+  JAX family. V48 beats frozen FC24B in 851/1,024 independent dual-seat games.
+  Start with `latest_20260825_front40_public_v48/README_ZH.md`.
 - `latest_20260823_fc24b/` — current FC24B handoff: the complete FC0-to-FC24B
   development-document chain, frozen source/configuration, six 2026-08-22
   public-agent JAX migrations, 8,704-game 34-Agent acceptance evidence,

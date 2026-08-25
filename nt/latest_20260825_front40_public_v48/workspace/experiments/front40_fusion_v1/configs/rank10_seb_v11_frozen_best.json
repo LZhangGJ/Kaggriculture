@@ -1,0 +1,80 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank10_seb_v11",
+  "family": "rank10_early_sale_early_liquidation_first_shop_router",
+  "source": {
+    "leaderboard_rank": 10,
+    "team_name": "Seb",
+    "submission_id": 55579756,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank10_seb_trace_bank_v1.json",
+    "route_count": 174,
+    "behavior_unique_routes": 174,
+    "overlap_with_frozen_rank1_rank4_to_rank9": 0
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank10_seb_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank10_seb_threepanel_minimax_firstshop_v4.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "online_runner": "experiments/front40_fusion_v1/tools/run_trace_candidates_vs_fc24b_stepwise.py",
+    "router_mode": "FIRST_PUBLIC_TOWN_SHOP",
+    "public_state_only": true,
+    "identity_routing": false,
+    "future_event_access": false,
+    "replay_id_routing": false
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [87, 103, 151, 80, 87, 105, 6, 139],
+    "runtime_routes": [6, 80, 87, 103, 105, 139, 151]
+  },
+  "development": {
+    "all_route_screen": "experiments/front40_fusion_v1/receipts/rank10_seb_all174_vs_fc24b_screen_seed664001_n128x2_v1.json",
+    "candidate_screen": "experiments/front40_fusion_v1/receipts/rank10_seb_candidates45_vs_fc24b_seed672001_n128x2_v2.json",
+    "large_diagnostic_screen": "experiments/front40_fusion_v1/receipts/rank10_seb_routes10_vs_fc24b_seed680001_n512x2_independent_v3.json",
+    "best_fixed_route": 87,
+    "best_fixed_development_win_rates": [0.76953125, 0.73828125],
+    "first_shop_map_development_win_rates": [0.890625, 0.8671875, 0.8125],
+    "second_shop_probe": {
+      "receipt": "experiments/front40_fusion_v1/receipts/rank10_seb_first_second_shop_online_seed680001_n512x2_v8.json",
+      "baseline_wins": 832,
+      "second_shop_wins": 835,
+      "mean_margin_change": -216.80078125,
+      "decision": "REJECT_AS_NOISE_LEVEL_GAIN"
+    },
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank10_seb_v4_online_vs_fc24b_seed688001_n512x2_independent_v10.json",
+    "seed_start": 688001,
+    "games": 1024,
+    "wins": 822,
+    "win_rate": 0.802734375,
+    "seat0_wins": 411,
+    "seat0_games": 512,
+    "seat0_win_rate": 0.802734375,
+    "seat1_wins": 411,
+    "seat1_games": 512,
+    "seat1_win_rate": 0.802734375,
+    "mean_margin": 11653.9462890625,
+    "all_719_steps": true,
+    "hard_counter_total": 0,
+    "sent_illegal_actions": 0,
+    "note": "invalid_intent_total counts trace intents replaced by the legal guard before environment execution."
+  },
+  "sha256": {
+    "trace_bank": "51741EA3A0FE62BDA44FE6209E2EA031D4882D221A363B72DF31E4BD7787FD81",
+    "first_shop_map": "ADCB8CB9A4C91560BD2963CF27B7870C112C240DE68E1CE7936253883BD884A2",
+    "online_runner": "F5C4570D094933A7277E748A53621139BA74410046C2DCC6CAC29B9A06C04669",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

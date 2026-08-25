@@ -1,0 +1,13 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-bank-subset.v1",
+  "generated_at_utc": "2026-08-23T23:26:39.059295+00:00",
+  "status": "PASS",
+  "source_bank": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_trace_bank_v1.npz",
+  "source_route_count": 157,
+  "global_route_ids": [
+    119,
+    90
+  ],
+  "local_bootstrap_route_id": 0,
+  "output_bank": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_yarn2_trace_bank_v14.npz"
+}

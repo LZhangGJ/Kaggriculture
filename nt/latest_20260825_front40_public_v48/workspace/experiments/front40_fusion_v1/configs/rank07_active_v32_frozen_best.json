@@ -1,0 +1,96 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank07_active_v32",
+  "family": "rank07_heavy_cow_large_strawberry_two_shop",
+  "source": {
+    "leaderboard_rank": 7,
+    "team_name": "ActiveMusyoku",
+    "submission_id": 55691574,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank07_active_trace_bank_v1.json",
+    "route_count": 84,
+    "exact_runtime_behavior_groups": 10
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank07_active_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank07_active_stable_win_map_dev640_v6.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank07_active_secondshop_risk7_canonical_v22.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "router_mode": "ROUTER_TWO_SHOP_COMPATIBLE_MAP",
+    "switch_step": 144,
+    "prefix_range": [72, 144],
+    "public_state_only": true
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [19, 19, 19, 42, 42, 42, 42, 52],
+    "accepted_second_shop_pairs": {
+      "BAKERY:ICE_CREAM_SHOP": 2,
+      "BAKERY:PIZZA_SHOP": 2,
+      "BRUNCH_SPOT:BRUNCH_SPOT": 2,
+      "PET_CAFE:PET_CAFE": 2,
+      "PET_CAFE:PIZZA_SHOP": 2,
+      "SMOOTHIE_SHOP:SMOOTHIE_SHOP": 2,
+      "SMOOTHIE_SHOP:YARN_STORE": 19
+    },
+    "canonical_runtime_routes": [2, 19, 42, 52]
+  },
+  "development": {
+    "full_route_screen": "experiments/front40_fusion_v1/receipts/rank07_active_all84_vs_fc24b_screen_seed456001_n128x2_v1.json",
+    "independent_behavior_screens": [
+      "experiments/front40_fusion_v1/receipts/rank07_active_unique10_vs_fc24b_screen_seed464001_n512x2_v9.json",
+      "experiments/front40_fusion_v1/receipts/rank07_active_unique10_vs_fc24b_screen_seed472001_n512x2_v13.json",
+      "experiments/front40_fusion_v1/receipts/rank07_active_unique10_vs_fc24b_screen_seed480001_n512x2_v19.json"
+    ],
+    "behavior_expansion_proof": "experiments/front40_fusion_v1/receipts/rank07_active_all84_expanded_seed480001_n512x2_v20.json",
+    "candidate_confirmation": "experiments/front40_fusion_v1/receipts/rank07_active_secondshop_candidates_eval_seed480_v21.json",
+    "canonical_map_parity": "experiments/front40_fusion_v1/receipts/rank07_active_canonical_map_parity_seed480_v23.json",
+    "exact_prefix_checks": 528,
+    "exact_behavior_field_checks": 840,
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "panels": [
+      "experiments/front40_fusion_v1/receipts/rank07_active_final_eval_seed488_v25.json",
+      "experiments/front40_fusion_v1/receipts/rank07_active_final_eval_seed496_v27.json"
+    ],
+    "games": 2048,
+    "wins": 1840,
+    "win_rate": 0.8984375,
+    "seat0_wins": 920,
+    "seat0_games": 1024,
+    "seat0_win_rate": 0.8984375,
+    "seat1_wins": 920,
+    "seat1_games": 1024,
+    "seat1_win_rate": 0.8984375,
+    "baseline_wins": 1829,
+    "net_wins_vs_first_shop_baseline": 11,
+    "all_719_steps": true,
+    "hard_counter_total": 0
+  },
+  "online_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank07_active_online_risk7_vs_fc24b_seed504001_n128x2_v30.json",
+    "parity_receipt": "experiments/front40_fusion_v1/receipts/rank07_active_online_screen_parity_seed504_v31.json",
+    "games": 256,
+    "wins": 220,
+    "win_rate": 0.859375,
+    "all_done": true,
+    "hard_counter_total": 0,
+    "cash_route_mismatches": 0
+  },
+  "sha256": {
+    "trace_bank": "389EA235710AD6F6C3A4DE31C30ACD3DB06283E89CFFAC88832B628370D88025",
+    "first_shop_map": "D3543373294FCA091A8E4C92D9EC47878179D6BB55368E2303CA129036F83C8C",
+    "second_shop_map": "3F9D2E2797F9D07F48B47AC9125D4D1E781F1E72C73A891F1D66941292FFF4F6",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

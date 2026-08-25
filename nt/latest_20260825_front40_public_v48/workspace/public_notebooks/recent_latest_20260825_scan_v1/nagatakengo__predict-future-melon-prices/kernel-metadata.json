@@ -1,0 +1,30 @@
+{
+  "id": "nagatakengo/predict-future-melon-prices",
+  "id_no": 131278687,
+  "title": "Predict_future_melon_prices",
+  "code_file": "predict-future-melon-prices.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "agriculture",
+    "beginner",
+    "sklearn",
+    "pandas",
+    "tabular"
+  ],
+  "dataset_sources": [
+    "kaggle/kaggriculture-episodes-2026-08-08",
+    "nagatakengo/kaggriculture-movements-in-the-top-xx"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "kaggriculture"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "Gpu"
+}

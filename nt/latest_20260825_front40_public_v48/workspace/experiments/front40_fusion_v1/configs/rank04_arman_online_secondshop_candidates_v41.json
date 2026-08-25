@@ -1,0 +1,33 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank04_arman_first_shop_baseline_v41",
+      "family": "rank04_sheep_first",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_identity_by_first_v41.json"
+    },
+    {
+      "name": "rank04_arman_exact1_v41",
+      "family": "rank04_two_shop_exact_suffix",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_exact1_train304_v38.json"
+    },
+    {
+      "name": "rank04_arman_exact3_v41",
+      "family": "rank04_two_shop_exact_suffix",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_exact_stable3_dev2048_v38.json"
+    },
+    {
+      "name": "rank04_arman_exact5_v41",
+      "family": "rank04_two_shop_exact_suffix",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_exact5_dev640_v38.json"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank08_kobe_v46",
+  "family": "rank08_balanced_cow_sheep_light_crop_two_shop",
+  "source": {
+    "leaderboard_rank": 8,
+    "team_name": "Kobe BRYANT",
+    "submission_id": 55668682,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank08_kobe_trace_bank_v1.json",
+    "route_count": 89
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank08_kobe_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_all89_stable_win_map_dev640_v16.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_secondshop_safe8_fs_dev1152_v28.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "router_mode": "ROUTER_TWO_SHOP_COMPATIBLE_MAP",
+    "switch_step": 144,
+    "prefix_range": [72, 144],
+    "public_state_only": true
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [88, 88, 88, 47, 88, 47, 47, 57],
+    "accepted_second_shop_pairs": {
+      "BAKERY:YARN_STORE": 31,
+      "BRUNCH_SPOT:PIZZA_SHOP": 47,
+      "FARMERS_MARKET:ICE_CREAM_SHOP": 52,
+      "FARMERS_MARKET:SMOOTHIE_SHOP": 41,
+      "ICE_CREAM_SHOP:YARN_STORE": 31,
+      "PET_CAFE:PIZZA_SHOP": 47,
+      "PET_CAFE:YARN_STORE": 10,
+      "PIZZA_SHOP:YARN_STORE": 31
+    },
+    "runtime_routes": [10, 31, 41, 47, 52, 57, 88]
+  },
+  "development": {
+    "full_route_screens": [
+      "experiments/front40_fusion_v1/receipts/rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+      "experiments/front40_fusion_v1/receipts/rank08_kobe_all89_merged_seed520001_n512x2_v15.json"
+    ],
+    "oracle_diagnostic": "experiments/front40_fusion_v1/receipts/rank08_kobe_route_oracle_seed512_v2.json",
+    "second_shop_full_ablation": "experiments/front40_fusion_v1/receipts/rank08_kobe_secondshop_candidates_eval_seed528_v22.json",
+    "second_shop_pruned_ablation": "experiments/front40_fusion_v1/receipts/rank08_kobe_secondshop_ablation_seed536_v31.json",
+    "finalist_confirmation": "experiments/front40_fusion_v1/receipts/rank08_kobe_finalist_eval_seed544_v37.json",
+    "exact_prefix_checks": 497,
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "panels": [
+      "experiments/front40_fusion_v1/receipts/rank08_kobe_final_eval_seed552_v39.json",
+      "experiments/front40_fusion_v1/receipts/rank08_kobe_final_eval_seed560_v41.json"
+    ],
+    "games": 2048,
+    "wins": 1436,
+    "win_rate": 0.701171875,
+    "seat0_wins": 717,
+    "seat0_games": 1024,
+    "seat0_win_rate": 0.7001953125,
+    "seat1_wins": 719,
+    "seat1_games": 1024,
+    "seat1_win_rate": 0.7021484375,
+    "baseline_wins": 1417,
+    "net_wins_vs_first_shop_baseline": 19,
+    "all_719_steps": true,
+    "hard_counter_total": 0
+  },
+  "online_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank08_kobe_online_safe8fs_vs_fc24b_seed568001_n128x2_v44.json",
+    "parity_receipt": "experiments/front40_fusion_v1/receipts/rank08_kobe_online_screen_parity_seed568_v45.json",
+    "games": 256,
+    "wins": 180,
+    "win_rate": 0.703125,
+    "all_done": true,
+    "hard_counter_total": 0,
+    "cash_route_mismatches": 0
+  },
+  "sha256": {
+    "trace_bank": "1A9C3956CB8D1CEA367E9BD8AE2EFEA373309B656757C698E7DDC8F50B5941B4",
+    "first_shop_map": "7FF3C34EE42EBCAC3DDC644CE63DC23255AA89F9605EF05A1A57E650FAA73370",
+    "second_shop_map": "4A70AFF10B590CB701BAFD1DB3D08437E845C1EADCEECC6E8D3E955FAFB11F3C",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-screen-subset.v1",
+  "generated_at_utc": "2026-08-24T07:20:13.793799+00:00",
+  "status": "PASS",
+  "source": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_all89_vs_fc24b_screen_seed512001_n128x2_v1.json",
+  "seed_count": 128,
+  "route_count": 4,
+  "route_ids": [
+    41,
+    88,
+    47,
+    57
+  ],
+  "games": 1024,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_map4_subset_seed512001_n128x2_v9.npz"
+}

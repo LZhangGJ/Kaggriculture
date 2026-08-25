@@ -1,0 +1,191 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-prefix-state-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T00:37:02.185385+00:00",
+  "status": "PASS",
+  "device": "cuda:0",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz",
+  "decision_step": 72,
+  "seed_start": 280001,
+  "seed_count": 128,
+  "seat_protocol": "same seeds with candidate seats swapped",
+  "runtime_feature_boundary": "public state plus own private inventory only",
+  "elapsed_seconds_by_seat": [
+    26.407443600999997,
+    22.920634145999998
+  ],
+  "invalid_intent_total": 0,
+  "resync_total": 0,
+  "output": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/rank03_subramanya_prefix_state_seed280001_n128_v26.npz",
+  "output_sha256": "7612E29F2951658258F715B8FF423F10FF4BB3A698B402DD2D6EBE760C1B2B2B",
+  "shapes": {
+    "own_money": [
+      2,
+      128
+    ],
+    "opponent_money": [
+      2,
+      128
+    ],
+    "own_tile_kind": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_kind": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_tile_crop": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_crop": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_tile_animal": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_animal": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_tile_yield": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_yield": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_tile_neglect": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_neglect": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_tile_flags": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "opponent_tile_flags": [
+      2,
+      128,
+      10,
+      10
+    ],
+    "own_unit_pos": [
+      2,
+      128,
+      33,
+      2
+    ],
+    "opponent_unit_pos": [
+      2,
+      128,
+      33,
+      2
+    ],
+    "own_unit_active": [
+      2,
+      128,
+      33
+    ],
+    "opponent_unit_active": [
+      2,
+      128,
+      33
+    ],
+    "own_unit_inventory": [
+      2,
+      128,
+      33,
+      12
+    ],
+    "own_shed": [
+      2,
+      128,
+      12
+    ],
+    "own_seeds": [
+      2,
+      128,
+      5
+    ],
+    "own_hires_today": [
+      2,
+      128
+    ],
+    "opponent_hires_today": [
+      2,
+      128
+    ],
+    "own_unlocked_count": [
+      2,
+      128
+    ],
+    "opponent_unlocked_count": [
+      2,
+      128
+    ],
+    "market_inventory": [
+      2,
+      128,
+      9
+    ],
+    "market_price": [
+      2,
+      128,
+      9
+    ],
+    "town_shops": [
+      2,
+      128,
+      8
+    ],
+    "town_count": [
+      2,
+      128
+    ],
+    "invalid_intent_total": [
+      2,
+      128
+    ],
+    "resync_total": [
+      2,
+      128
+    ],
+    "seeds": [
+      128
+    ],
+    "candidate_seat": [
+      2,
+      128
+    ],
+    "decision_step": []
+  }
+}

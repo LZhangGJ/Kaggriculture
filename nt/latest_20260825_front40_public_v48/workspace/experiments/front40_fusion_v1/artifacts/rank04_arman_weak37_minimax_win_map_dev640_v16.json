@@ -1,0 +1,178 @@
+{
+  "schema": "kaggriculture.front40_fusion.robust-shop-route-map.v1",
+  "generated_at_utc": "2026-08-24T02:11:07.648056+00:00",
+  "source_screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak37_vs_fc24b_screen_seed304001_n128x2_v15",
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak37_vs_fc24b_screen_seed328001_n512x2_v14"
+  ],
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [
+    38,
+    87,
+    112,
+    38,
+    50,
+    131,
+    19,
+    19
+  ],
+  "routes": [
+    {
+      "shop_id": 0,
+      "shop": "BAKERY",
+      "route_id": 38,
+      "source_episode_id": 94474821,
+      "source_reward": 71583,
+      "training_games": 150,
+      "pooled_win_rate": 0.82,
+      "worst_panel_win_rate": 0.8083333333333333,
+      "panel_win_rates": [
+        0.8666666666666667,
+        0.8083333333333333
+      ],
+      "pooled_mean_margin": 36445.91333333333,
+      "worst_panel_mean_margin": 2364.4666666666667,
+      "pooled_invalid_mean": 11.28,
+      "wilson_lower_95": 0.7507753195800668
+    },
+    {
+      "shop_id": 1,
+      "shop": "BRUNCH_SPOT",
+      "route_id": 87,
+      "source_episode_id": 95029929,
+      "source_reward": 68711,
+      "training_games": 196,
+      "pooled_win_rate": 0.9540816326530612,
+      "worst_panel_win_rate": 0.8695652173913043,
+      "panel_win_rates": [
+        0.8695652173913043,
+        0.98
+      ],
+      "pooled_mean_margin": 51631.86734693877,
+      "worst_panel_mean_margin": 5530.934782608696,
+      "pooled_invalid_mean": 5.489795918367347,
+      "wilson_lower_95": 0.9150482489962328
+    },
+    {
+      "shop_id": 2,
+      "shop": "FARMERS_MARKET",
+      "route_id": 112,
+      "source_episode_id": 96241550,
+      "source_reward": 52729,
+      "training_games": 170,
+      "pooled_win_rate": 0.9764705882352941,
+      "worst_panel_win_rate": 0.9473684210526315,
+      "panel_win_rates": [
+        0.9473684210526315,
+        0.9848484848484849
+      ],
+      "pooled_mean_margin": 55884.72352941176,
+      "worst_panel_mean_margin": 6315.684210526316,
+      "pooled_invalid_mean": 3.5588235294117645,
+      "wilson_lower_95": 0.9410699640199186
+    },
+    {
+      "shop_id": 3,
+      "shop": "ICE_CREAM_SHOP",
+      "route_id": 38,
+      "source_episode_id": 94474821,
+      "source_reward": 71583,
+      "training_games": 178,
+      "pooled_win_rate": 0.949438202247191,
+      "worst_panel_win_rate": 0.9459459459459459,
+      "panel_win_rates": [
+        0.9666666666666667,
+        0.9459459459459459
+      ],
+      "pooled_mean_margin": 64116.38202247191,
+      "worst_panel_mean_margin": 6543.2,
+      "pooled_invalid_mean": 7.904494382022473,
+      "wilson_lower_95": 0.9067120803326794
+    },
+    {
+      "shop_id": 4,
+      "shop": "PET_CAFE",
+      "route_id": 50,
+      "source_episode_id": 94488124,
+      "source_reward": 108844,
+      "training_games": 126,
+      "pooled_win_rate": 0.8015873015873016,
+      "worst_panel_win_rate": 0.7978723404255319,
+      "panel_win_rates": [
+        0.8125,
+        0.7978723404255319
+      ],
+      "pooled_mean_margin": 29096.611111111106,
+      "worst_panel_mean_margin": 3646.1875,
+      "pooled_invalid_mean": 4.341269841269841,
+      "wilson_lower_95": 0.7234887276997606
+    },
+    {
+      "shop_id": 5,
+      "shop": "PIZZA_SHOP",
+      "route_id": 131,
+      "source_episode_id": 96759131,
+      "source_reward": 105510,
+      "training_games": 150,
+      "pooled_win_rate": 0.78,
+      "worst_panel_win_rate": 0.7666666666666667,
+      "panel_win_rates": [
+        0.7666666666666667,
+        0.7833333333333333
+      ],
+      "pooled_mean_margin": 42640.513333333336,
+      "worst_panel_mean_margin": 6423.0,
+      "pooled_invalid_mean": 6.873333333333333,
+      "wilson_lower_95": 0.7071754568460243
+    },
+    {
+      "shop_id": 6,
+      "shop": "SMOOTHIE_SHOP",
+      "route_id": 19,
+      "source_episode_id": 94457958,
+      "source_reward": 114828,
+      "training_games": 148,
+      "pooled_win_rate": 0.9459459459459459,
+      "worst_panel_win_rate": 0.9375,
+      "panel_win_rates": [
+        1.0,
+        0.9375
+      ],
+      "pooled_mean_margin": 66373.6554054054,
+      "worst_panel_mean_margin": 7565.55,
+      "pooled_invalid_mean": 6.297297297297297,
+      "wilson_lower_95": 0.8969681162654677
+    },
+    {
+      "shop_id": 7,
+      "shop": "YARN_STORE",
+      "route_id": 19,
+      "source_episode_id": 94457958,
+      "source_reward": 114828,
+      "training_games": 162,
+      "pooled_win_rate": 0.5555555555555556,
+      "worst_panel_win_rate": 0.26666666666666666,
+      "panel_win_rates": [
+        0.26666666666666666,
+        0.6212121212121212
+      ],
+      "pooled_mean_margin": 26454.29012345679,
+      "worst_panel_mean_margin": -5422.9,
+      "pooled_invalid_mean": 6.604938271604938,
+      "wilson_lower_95": 0.47862984166909595
+    }
+  ],
+  "selection_mode": "minimax_win",
+  "unrestricted": true,
+  "selection_rule": "all screened routes eligible; panel-aware robust selection",
+  "status": "TRAINING_ONLY"
+}

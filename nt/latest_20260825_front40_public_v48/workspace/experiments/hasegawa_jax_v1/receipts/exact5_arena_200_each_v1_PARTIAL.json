@@ -1,0 +1,60 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_arena.partial.v1",
+  "status": "ABORTED_BY_USER",
+  "requested_games": 1000,
+  "completed_games": 400,
+  "seed_start": 142001,
+  "games_per_opponent": 200,
+  "seat_design": "100 games in each seat using the same 100 seeds",
+  "all_completed_hard_error_total": 0,
+  "results": [
+    {
+      "opponent": "boatlee_v20",
+      "completed_games": 200,
+      "hasegawa_wins": 0,
+      "hasegawa_win_rate": 0.0,
+      "hasegawa_cash_mean": 48003.205,
+      "opponent_cash_mean": 110993.115,
+      "mean_margin": -62989.91,
+      "seat_0": {
+        "games": 100,
+        "hasegawa_cash_mean": 48449.26,
+        "opponent_cash_mean": 112017.93,
+        "mean_margin": -63568.67
+      },
+      "seat_1": {
+        "games": 100,
+        "hasegawa_cash_mean": 47557.15,
+        "opponent_cash_mean": 109968.3,
+        "mean_margin": -62411.15
+      }
+    },
+    {
+      "opponent": "ray_k320",
+      "completed_games": 200,
+      "hasegawa_wins": 0,
+      "hasegawa_win_rate": 0.0,
+      "hasegawa_cash_mean": 48170.8,
+      "opponent_cash_mean": 111294.365,
+      "mean_margin": -63123.565,
+      "seat_0": {
+        "games": 100,
+        "hasegawa_cash_mean": 48449.26,
+        "opponent_cash_mean": 112256.43,
+        "mean_margin": -63807.17
+      },
+      "seat_1": {
+        "games": 100,
+        "hasegawa_cash_mean": 47892.34,
+        "opponent_cash_mean": 110332.3,
+        "mean_margin": -62439.96
+      }
+    }
+  ],
+  "not_run": [
+    "tetsutani",
+    "kaito_v27",
+    "flex_v59"
+  ],
+  "promotion_decision": "REJECT_AS_STRONG_HASEGAWA_REPRODUCTION"
+}

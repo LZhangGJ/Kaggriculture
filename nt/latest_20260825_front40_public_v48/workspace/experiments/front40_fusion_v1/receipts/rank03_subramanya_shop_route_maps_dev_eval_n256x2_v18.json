@@ -1,0 +1,884 @@
+{
+  "schema": "kaggriculture.front40_fusion.shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-24T00:17:24.128437+00:00",
+  "status": "PASS",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1",
+    "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17"
+  ],
+  "maps": [
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_minimax_win_same_shop_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          33,
+          70,
+          80,
+          32,
+          40
+        ],
+        [
+          29,
+          73,
+          99,
+          33,
+          70,
+          80,
+          32,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 192,
+        "ties": 0,
+        "win_rate": 0.375,
+        "mean_margin": -9042.640625,
+        "worst_panel_win_rate": 0.33984375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 105,
+          "ties": 0,
+          "win_rate": 0.41015625,
+          "mean_margin": -7665.37890625,
+          "median_margin": -5951.5,
+          "invalid_mean": 38.90234375,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 53,
+              "ties": 0,
+              "win_rate": 0.4140625,
+              "mean_margin": -8111.125,
+              "invalid_mean": 40.1171875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 52,
+              "ties": 0,
+              "win_rate": 0.40625,
+              "mean_margin": -7219.6328125,
+              "invalid_mean": 37.6875
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 87,
+          "ties": 0,
+          "win_rate": 0.33984375,
+          "mean_margin": -10419.90234375,
+          "median_margin": -11367.0,
+          "invalid_mean": 38.03515625,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 43,
+              "ties": 0,
+              "win_rate": 0.3359375,
+              "mean_margin": -10040.359375,
+              "invalid_mean": 39.1015625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 44,
+              "ties": 0,
+              "win_rate": 0.34375,
+              "mean_margin": -10799.4453125,
+              "invalid_mean": 36.96875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_minimax_win_unrestricted_map_v18.json",
+      "route_ids": [
+        [
+          61,
+          73,
+          99,
+          40,
+          99,
+          80,
+          82,
+          40
+        ],
+        [
+          61,
+          73,
+          99,
+          40,
+          99,
+          80,
+          82,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 201,
+        "ties": 0,
+        "win_rate": 0.392578125,
+        "mean_margin": -10645.14453125,
+        "worst_panel_win_rate": 0.359375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 109,
+          "ties": 0,
+          "win_rate": 0.42578125,
+          "mean_margin": -9293.78125,
+          "median_margin": -4693.0,
+          "invalid_mean": 50.48046875,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 52,
+              "ties": 0,
+              "win_rate": 0.40625,
+              "mean_margin": -9758.9765625,
+              "invalid_mean": 46.6953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 57,
+              "ties": 0,
+              "win_rate": 0.4453125,
+              "mean_margin": -8828.5859375,
+              "invalid_mean": 54.265625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 92,
+          "ties": 0,
+          "win_rate": 0.359375,
+          "mean_margin": -11996.5078125,
+          "median_margin": -10528.0,
+          "invalid_mean": 55.58984375,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 46,
+              "ties": 0,
+              "win_rate": 0.359375,
+              "mean_margin": -12267.6640625,
+              "invalid_mean": 59.578125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 46,
+              "ties": 0,
+              "win_rate": 0.359375,
+              "mean_margin": -11725.3515625,
+              "invalid_mean": 51.6015625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_seat_minimax_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          19,
+          90
+        ],
+        [
+          29,
+          73,
+          99,
+          65,
+          70,
+          80,
+          46,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 197,
+        "ties": 0,
+        "win_rate": 0.384765625,
+        "mean_margin": -9956.94140625,
+        "worst_panel_win_rate": 0.359375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 105,
+          "ties": 0,
+          "win_rate": 0.41015625,
+          "mean_margin": -9159.46484375,
+          "median_margin": -5754.0,
+          "invalid_mean": 36.3984375,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 53,
+              "ties": 0,
+              "win_rate": 0.4140625,
+              "mean_margin": -7936.5390625,
+              "invalid_mean": 28.65625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 52,
+              "ties": 0,
+              "win_rate": 0.40625,
+              "mean_margin": -10382.390625,
+              "invalid_mean": 44.140625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 92,
+          "ties": 0,
+          "win_rate": 0.359375,
+          "mean_margin": -10754.41796875,
+          "median_margin": -8396.0,
+          "invalid_mean": 37.453125,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 47,
+              "ties": 0,
+              "win_rate": 0.3671875,
+              "mean_margin": -9090.6015625,
+              "invalid_mean": 27.796875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 45,
+              "ties": 0,
+              "win_rate": 0.3515625,
+              "mean_margin": -12418.234375,
+              "invalid_mean": 47.109375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_seat_pooled_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          21,
+          110,
+          80,
+          46,
+          90
+        ],
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          117,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 202,
+        "ties": 0,
+        "win_rate": 0.39453125,
+        "mean_margin": -8730.83984375,
+        "worst_panel_win_rate": 0.3828125
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 104,
+          "ties": 0,
+          "win_rate": 0.40625,
+          "mean_margin": -7723.39453125,
+          "median_margin": -6451.0,
+          "invalid_mean": 33.62109375,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 54,
+              "ties": 0,
+              "win_rate": 0.421875,
+              "mean_margin": -8346.3984375,
+              "invalid_mean": 34.71875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 50,
+              "ties": 0,
+              "win_rate": 0.390625,
+              "mean_margin": -7100.390625,
+              "invalid_mean": 32.5234375
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 98,
+          "ties": 0,
+          "win_rate": 0.3828125,
+          "mean_margin": -9738.28515625,
+          "median_margin": -7692.0,
+          "invalid_mean": 32.08203125,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 49,
+              "ties": 0,
+              "win_rate": 0.3828125,
+              "mean_margin": -9726.46875,
+              "invalid_mean": 36.0390625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 49,
+              "ties": 0,
+              "win_rate": 0.3828125,
+              "mean_margin": -9750.1015625,
+              "invalid_mean": 28.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_seat_stable_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          19,
+          90
+        ],
+        [
+          29,
+          73,
+          99,
+          65,
+          70,
+          80,
+          117,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 198,
+        "ties": 0,
+        "win_rate": 0.38671875,
+        "mean_margin": -9747.853515625,
+        "worst_panel_win_rate": 0.3671875
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 104,
+          "ties": 0,
+          "win_rate": 0.40625,
+          "mean_margin": -9025.3046875,
+          "median_margin": -6001.5,
+          "invalid_mean": 33.20703125,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 53,
+              "ties": 0,
+              "win_rate": 0.4140625,
+              "mean_margin": -7936.5390625,
+              "invalid_mean": 28.65625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 51,
+              "ties": 0,
+              "win_rate": 0.3984375,
+              "mean_margin": -10114.0703125,
+              "invalid_mean": 37.7578125
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 94,
+          "ties": 0,
+          "win_rate": 0.3671875,
+          "mean_margin": -10470.40234375,
+          "median_margin": -7994.5,
+          "invalid_mean": 32.26953125,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 47,
+              "ties": 0,
+              "win_rate": 0.3671875,
+              "mean_margin": -9090.6015625,
+              "invalid_mean": 27.796875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 47,
+              "ties": 0,
+              "win_rate": 0.3671875,
+              "mean_margin": -11850.203125,
+              "invalid_mean": 36.7421875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_stable_win_same_shop_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          46,
+          40
+        ],
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          46,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 198,
+        "ties": 0,
+        "win_rate": 0.38671875,
+        "mean_margin": -8778.966796875,
+        "worst_panel_win_rate": 0.359375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 106,
+          "ties": 0,
+          "win_rate": 0.4140625,
+          "mean_margin": -7238.94921875,
+          "median_margin": -3729.0,
+          "invalid_mean": 39.8359375,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 55,
+              "ties": 0,
+              "win_rate": 0.4296875,
+              "mean_margin": -7109.1875,
+              "invalid_mean": 40.765625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 51,
+              "ties": 0,
+              "win_rate": 0.3984375,
+              "mean_margin": -7368.7109375,
+              "invalid_mean": 38.90625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 92,
+          "ties": 0,
+          "win_rate": 0.359375,
+          "mean_margin": -10318.984375,
+          "median_margin": -8737.5,
+          "invalid_mean": 39.76953125,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 45,
+              "ties": 0,
+              "win_rate": 0.3515625,
+              "mean_margin": -10319.8359375,
+              "invalid_mean": 41.046875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 47,
+              "ties": 0,
+              "win_rate": 0.3671875,
+              "mean_margin": -10318.1328125,
+              "invalid_mean": 38.4921875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_stable_win_unrestricted_map_v18.json",
+      "route_ids": [
+        [
+          61,
+          73,
+          99,
+          32,
+          133,
+          80,
+          82,
+          40
+        ],
+        [
+          61,
+          73,
+          99,
+          32,
+          133,
+          80,
+          82,
+          40
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 207,
+        "ties": 0,
+        "win_rate": 0.404296875,
+        "mean_margin": -8012.66796875,
+        "worst_panel_win_rate": 0.37890625
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 110,
+          "ties": 0,
+          "win_rate": 0.4296875,
+          "mean_margin": -6466.62890625,
+          "median_margin": -3165.5,
+          "invalid_mean": 41.06640625,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 53,
+              "ties": 0,
+              "win_rate": 0.4140625,
+              "mean_margin": -6978.15625,
+              "invalid_mean": 41.6484375
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 57,
+              "ties": 0,
+              "win_rate": 0.4453125,
+              "mean_margin": -5955.1015625,
+              "invalid_mean": 40.484375
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 97,
+          "ties": 0,
+          "win_rate": 0.37890625,
+          "mean_margin": -9558.70703125,
+          "median_margin": -8525.5,
+          "invalid_mean": 39.015625,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 50,
+              "ties": 0,
+              "win_rate": 0.390625,
+              "mean_margin": -9408.2890625,
+              "invalid_mean": 39.3046875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 47,
+              "ties": 0,
+              "win_rate": 0.3671875,
+              "mean_margin": -9709.125,
+              "invalid_mean": 38.7265625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_wilson_same_shop_map_v18.json",
+      "route_ids": [
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          46,
+          90
+        ],
+        [
+          29,
+          73,
+          99,
+          21,
+          70,
+          80,
+          46,
+          90
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 199,
+        "ties": 0,
+        "win_rate": 0.388671875,
+        "mean_margin": -9074.29296875,
+        "worst_panel_win_rate": 0.35546875
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 108,
+          "ties": 0,
+          "win_rate": 0.421875,
+          "mean_margin": -7691.5234375,
+          "median_margin": -5640.5,
+          "invalid_mean": 34.35546875,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 57,
+              "ties": 0,
+              "win_rate": 0.4453125,
+              "mean_margin": -7376.296875,
+              "invalid_mean": 35.109375
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 51,
+              "ties": 0,
+              "win_rate": 0.3984375,
+              "mean_margin": -8006.75,
+              "invalid_mean": 33.6015625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 91,
+          "ties": 0,
+          "win_rate": 0.35546875,
+          "mean_margin": -10457.0625,
+          "median_margin": -8277.5,
+          "invalid_mean": 36.14453125,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 45,
+              "ties": 0,
+              "win_rate": 0.3515625,
+              "mean_margin": -10368.828125,
+              "invalid_mean": 37.1875
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 46,
+              "ties": 0,
+              "win_rate": 0.359375,
+              "mean_margin": -10545.296875,
+              "invalid_mean": 35.1015625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_wilson_unrestricted_map_v18.json",
+      "route_ids": [
+        [
+          61,
+          73,
+          99,
+          42,
+          133,
+          80,
+          103,
+          90
+        ],
+        [
+          61,
+          73,
+          99,
+          42,
+          133,
+          80,
+          103,
+          90
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 210,
+        "ties": 0,
+        "win_rate": 0.41015625,
+        "mean_margin": -8188.701171875,
+        "worst_panel_win_rate": 0.3984375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed252001_n128x2_v1.npz",
+          "games": 256,
+          "wins": 108,
+          "ties": 0,
+          "win_rate": 0.421875,
+          "mean_margin": -7504.74609375,
+          "median_margin": -6666.0,
+          "invalid_mean": 28.2578125,
+          "oracle_win_rate": 0.94921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 54,
+              "ties": 0,
+              "win_rate": 0.421875,
+              "mean_margin": -7799.4921875,
+              "invalid_mean": 28.6484375
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 54,
+              "ties": 0,
+              "win_rate": 0.421875,
+              "mean_margin": -7210.0,
+              "invalid_mean": 27.8671875
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_all157_vs_fc24b_screen_seed272001_n128x2_v17.npz",
+          "games": 256,
+          "wins": 102,
+          "ties": 0,
+          "win_rate": 0.3984375,
+          "mean_margin": -8872.65625,
+          "median_margin": -6269.0,
+          "invalid_mean": 26.38671875,
+          "oracle_win_rate": 0.93359375,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 53,
+              "ties": 0,
+              "win_rate": 0.4140625,
+              "mean_margin": -8433.0703125,
+              "invalid_mean": 26.2734375
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 49,
+              "ties": 0,
+              "win_rate": 0.3828125,
+              "mean_margin": -9312.2421875,
+              "invalid_mean": 26.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

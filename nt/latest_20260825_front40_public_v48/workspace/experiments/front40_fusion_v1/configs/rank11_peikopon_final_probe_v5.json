@@ -1,0 +1,11 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-candidate-manifest.v1",
+  "candidates": [
+    {
+      "name": "rank11_peikopon_v4_final",
+      "family": "rank11_peikopon_firstshop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank11_peikopon_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank11_peikopon_threepanel_minimax_firstshop_v4.json"
+    }
+  ]
+}

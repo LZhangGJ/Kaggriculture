@@ -1,0 +1,70 @@
+[{"stream_name":"stderr","time":7.344810051,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.344884985,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.3448920189999996,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.34489625,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.029884316,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.029923007,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.029926853,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.029930219,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.111699444,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: Successfully loaded OpenSpiel environments: 24.\n"}
+,{"stream_name":"stdout","time":19.112331111,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_amazons\n"}
+,{"stream_name":"stdout","time":19.113294508,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_backgammon\n"}
+,{"stream_name":"stdout","time":19.114300919,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_checkers\n"}
+,{"stream_name":"stdout","time":19.115284579,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_chess\n"}
+,{"stream_name":"stdout","time":19.116276277,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_clobber\n"}
+,{"stream_name":"stdout","time":19.117227471,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game\n"}
+,{"stream_name":"stdout","time":19.118287076,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game_arena\n"}
+,{"stream_name":"stdout","time":19.119224906,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_connect_four\n"}
+,{"stream_name":"stdout","time":19.120227088,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_dark_hex\n"}
+,{"stream_name":"stdout","time":19.121206911,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_gin_rummy\n"}
+,{"stream_name":"stdout","time":19.122162682,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_go\n"}
+,{"stream_name":"stdout","time":19.123165976,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_goofspiel\n"}
+,{"stream_name":"stdout","time":19.124111485,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hearts\n"}
+,{"stream_name":"stdout","time":19.124866676,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hex\n"}
+,{"stream_name":"stdout","time":19.125639444,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_lines_of_action\n"}
+,{"stream_name":"stdout","time":19.126389348,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_matching_pennies_3p\n"}
+,{"stream_name":"stdout","time":19.127160197,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_oshi_zumo\n"}
+,{"stream_name":"stdout","time":19.127921814,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_othello\n"}
+,{"stream_name":"stdout","time":19.128630286,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_game\n"}
+,{"stream_name":"stdout","time":19.129414051,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_tic_tac_toe\n"}
+,{"stream_name":"stdout","time":19.130172991,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_y\n"}
+,{"stream_name":"stdout","time":19.130893419,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_universal_poker\n"}
+,{"stream_name":"stdout","time":19.131638858,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_poker\n"}
+,{"stream_name":"stdout","time":19.132392367,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_python_repeated_pokerkit\n"}
+,{"stream_name":"stdout","time":19.133156161,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: OpenSpiel games skipped: 1.\n"}
+,{"stream_name":"stdout","time":19.133901671,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    snake\n"}
+,{"stream_name":"stdout","time":38.845472568,"data":"[toolbox] All seeds locked to 42\n"}
+,{"stream_name":"stdout","time":38.845513713,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":38.84552013,"data":" KAGGLE ENVIRONMENT REPORT\n"}
+,{"stream_name":"stdout","time":38.845525039,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":38.845528415,"data":"Python:   3.12.13\n"}
+,{"stream_name":"stdout","time":38.845531708,"data":"Platform: Linux x86_64\n"}
+,{"stream_name":"stdout","time":38.845534814,"data":"CPU:      4 cores\n"}
+,{"stream_name":"stdout","time":38.84553788,"data":"RAM:      31.3 GB\n"}
+,{"stream_name":"stdout","time":38.845562875,"data":"GPU:      None detected\n"}
+,{"stream_name":"stdout","time":38.845568748,"data":"Disk:     19.5 GB free / 19.5 GB total\n"}
+,{"stream_name":"stdout","time":38.845573638,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":38.845578748,"data":"Kaggriculture Engine configured: 720 turns, 30 days, $3000 starting capital.\n"}
+,{"stream_name":"stdout","time":39.222012759,"data":"Comparative Economic Productivity Across Farming Regimes:\n"}
+,{"stream_name":"stdout","time":39.22205183,"data":"                  Configuration Primary Produce         Lifespan Feed Required  Season Gross ($)  Net Bank Profit ($)\n"}
+,{"stream_name":"stdout","time":39.22205878,"data":"8x Cows + 4x Sheep (Industrial)     Milk + Wool       Indefinite   Yes (Wheat)             96000                88400\n"}
+,{"stream_name":"stdout","time":39.222064613,"data":"  Melon Matrix (Single Horizon)           Melon 10 Days (Decays)    No (Water)             28000                24200\n"}
+,{"stream_name":"stdout","time":39.22207009,"data":"             Carrot Quick-Cycle          Carrot           3 Days    No (Water)              9400                 7800\n"}
+,{"stream_name":"stdout","time":39.222075271,"data":"            Wheat Baseline Loop           Wheat           4 Days    No (Water)              5200                 4100\n"}
+,{"stream_name":"stdout","time":39.266754561,"data":"Writing main.py\n"}
+,{"stream_name":"stdout","time":42.449794466,"data":"Match Result Summary (Full 720 Turns):\n"}
+,{"stream_name":"stdout","time":42.449848325,"data":" - Grandmaster 8C/4S Agent (Player 0): $0.00\n"}
+,{"stream_name":"stdout","time":42.449856026,"data":" - Starter Baseline Agent  (Player 1): $2,506.00\n"}
+,{"stream_name":"stdout","time":42.449916259,"data":" - Performance Alpha Advantage       : +$-2,506.00 (0.0x)\n"}
+,{"stream_name":"stderr","time":48.134199743,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":48.134241099,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":48.300901218,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":48.300929791,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":49.064866816,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":49.441174745,"data":"[NbConvertApp] Writing 142347 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":52.41161899,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":53.455937622,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":53.455981402,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":53.456248774,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":53.456450452,"data":"[NbConvertApp] Writing 382463 bytes to __results__.html\n"}
+]

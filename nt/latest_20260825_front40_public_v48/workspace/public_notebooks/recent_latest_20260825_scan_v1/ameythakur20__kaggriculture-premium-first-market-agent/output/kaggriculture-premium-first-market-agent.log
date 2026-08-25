@@ -1,0 +1,79 @@
+[{"stream_name":"stderr","time":9.075640356,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.075744418,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.075751684,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.075756358,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.896350792,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.896406566,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.896418527,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.896421996,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":23.762778718,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: Successfully loaded OpenSpiel environments: 24.\n"}
+,{"stream_name":"stdout","time":23.764165882,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_amazons\n"}
+,{"stream_name":"stdout","time":23.765394917,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_backgammon\n"}
+,{"stream_name":"stdout","time":23.766613776,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_checkers\n"}
+,{"stream_name":"stdout","time":23.767831939,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_chess\n"}
+,{"stream_name":"stdout","time":23.768928059,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_clobber\n"}
+,{"stream_name":"stdout","time":23.770093529,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game\n"}
+,{"stream_name":"stdout","time":23.77121025,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game_arena\n"}
+,{"stream_name":"stdout","time":23.772193496,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_connect_four\n"}
+,{"stream_name":"stdout","time":23.773403775,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_dark_hex\n"}
+,{"stream_name":"stdout","time":23.774426015,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_gin_rummy\n"}
+,{"stream_name":"stdout","time":23.775641865,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_go\n"}
+,{"stream_name":"stdout","time":23.776776611,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_goofspiel\n"}
+,{"stream_name":"stdout","time":23.777802778,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hearts\n"}
+,{"stream_name":"stdout","time":23.778918671,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hex\n"}
+,{"stream_name":"stdout","time":23.779986809,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_lines_of_action\n"}
+,{"stream_name":"stdout","time":23.781100201,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_matching_pennies_3p\n"}
+,{"stream_name":"stdout","time":23.782176506,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_oshi_zumo\n"}
+,{"stream_name":"stdout","time":23.783151307,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_othello\n"}
+,{"stream_name":"stdout","time":23.784062559,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_game\n"}
+,{"stream_name":"stdout","time":23.7849118,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_tic_tac_toe\n"}
+,{"stream_name":"stdout","time":23.785764441,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_y\n"}
+,{"stream_name":"stdout","time":23.7865867,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_universal_poker\n"}
+,{"stream_name":"stdout","time":23.787416483,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_poker\n"}
+,{"stream_name":"stdout","time":23.788285227,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_python_repeated_pokerkit\n"}
+,{"stream_name":"stdout","time":23.789216115,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: OpenSpiel games skipped: 1.\n"}
+,{"stream_name":"stdout","time":23.790099472,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    snake\n"}
+,{"stream_name":"stdout","time":23.893350315,"data":"Kaggriculture Environment configured: 720 turns, $3000 starting capital.\n"}
+,{"stream_name":"stdout","time":24.594646963,"data":"Comparative Economic Productivity Across Agricultural Regimes:\n"}
+,{"stream_name":"stdout","time":24.594707204,"data":"                      System      Output   Lifespan  Feed  Gross Revenue ($)  Net Profit ($)\n"}
+,{"stream_name":"stdout","time":24.594715639,"data":"8 Cows + 4 Sheep (Livestock) Milk + Wool Indefinite Wheat              96000           88400\n"}
+,{"stream_name":"stdout","time":24.594720536,"data":"         Melon Matrix (Crop)       Melon    10 Days  None              28000           24200\n"}
+,{"stream_name":"stdout","time":24.594724945,"data":"         Carrot Cycle (Crop)      Carrot     3 Days  None               9400            7800\n"}
+,{"stream_name":"stdout","time":24.594728848,"data":"       Wheat Baseline (Crop)       Wheat     4 Days  None               5200            4100\n"}
+,{"stream_name":"stderr","time":28.346441705,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":28.346494592,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":28.346501615,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":28.346709888,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":28.3467353,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":28.34686845,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":28.347051791,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":28.347076034,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":28.347083682,"data":"Exception encountered at \"In [5]\":\n"}
+,{"stream_name":"stderr","time":28.347089975,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":28.347095757,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":28.347102141,"data":"/tmp/ipykernel_17/3888617920.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":28.347109706,"data":"      3 spec = importlib.util.spec_from_file_location(\"agent_module\", \"main.py\")\n"}
+,{"stream_name":"stderr","time":28.34715202,"data":"      4 mod = importlib.util.module_from_spec(spec)\n"}
+,{"stream_name":"stderr","time":28.347157636,"data":"----\u003e 5 spec.loader.exec_module(mod)\n"}
+,{"stream_name":"stderr","time":28.347162359,"data":"      6 \n"}
+,{"stream_name":"stderr","time":28.347166936,"data":"      7 env = make(\"kaggriculture\", configuration={\"episodeSteps\": 720}, debug=True)\n"}
+,{"stream_name":"stderr","time":28.34717398,"data":"\n"}
+,{"stream_name":"stderr","time":28.347183401,"data":"/usr/lib/python3.12/importlib/_bootstrap_external.py in exec_module(self, module)\n"}
+,{"stream_name":"stderr","time":28.347187434,"data":"\n"}
+,{"stream_name":"stderr","time":28.34721013,"data":"/usr/lib/python3.12/importlib/_bootstrap_external.py in get_code(self, fullname)\n"}
+,{"stream_name":"stderr","time":28.34721587,"data":"\n"}
+,{"stream_name":"stderr","time":28.347220961,"data":"/usr/lib/python3.12/importlib/_bootstrap_external.py in get_data(self, path)\n"}
+,{"stream_name":"stderr","time":28.347226017,"data":"\n"}
+,{"stream_name":"stderr","time":28.347231096,"data":"FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/main.py'\n"}
+,{"stream_name":"stderr","time":28.347236278,"data":"\n"}
+,{"stream_name":"stderr","time":31.302124306,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":31.30216414,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":31.521349788,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":31.52140094,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":32.466769316,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":32.887543049,"data":"[NbConvertApp] Writing 169705 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":36.261194973,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":37.503785519,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":37.503840013,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":37.50427799,"data":"[NbConvertApp] Writing 442449 bytes to __results__.html\n"}
+]

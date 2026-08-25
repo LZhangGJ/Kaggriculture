@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-candidate-manifest.v1",
+  "candidates": [
+    {
+      "name": "rank13_burntpotato_secondshop_v6",
+      "family": "rank13_burntpotato_compatible_secondshop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_two_panel_pooled_firstshop_v3.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_secondshop_exactprefix_cross_v6.json"
+    }
+  ]
+}

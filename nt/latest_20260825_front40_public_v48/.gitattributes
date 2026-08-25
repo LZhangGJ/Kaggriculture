@@ -1,0 +1,5 @@
+* -text
+*.gz binary
+*.npz binary
+*.joblib binary
+*.ipynb linguist-generated=true

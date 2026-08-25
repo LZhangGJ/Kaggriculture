@@ -1,0 +1,234 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-23T23:01:24.682542+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_firstshop10_vs_fc24b_seed256129_n128x2_v8b.npz",
+  "screen_route_ids": [
+    83,
+    78,
+    99,
+    94,
+    127,
+    80,
+    46,
+    90,
+    9,
+    70
+  ],
+  "oracle": {
+    "games": 256,
+    "wins": 156,
+    "win_rate": 0.609375,
+    "mean_margin": 2917.69140625,
+    "median_margin": 4011.0,
+    "hard_counter_total": 0
+  },
+  "route_maps": [
+    {
+      "route_map": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_same_shop_stable_seed252001_v6.json",
+      "route_ids": [
+        83,
+        78,
+        99,
+        9,
+        70,
+        80,
+        46,
+        90
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 74,
+        "win_rate": 0.2890625,
+        "mean_margin": -12004.2265625,
+        "median_margin": -9971.0,
+        "hard_counter_total": 0
+      },
+      "by_first_shop": [
+        {
+          "games": 36,
+          "wins": 10,
+          "win_rate": 0.2777777777777778,
+          "mean_margin": -10153.861111111111,
+          "median_margin": -14925.0,
+          "hard_counter_total": 0,
+          "shop_id": 0,
+          "route_id": 83
+        },
+        {
+          "games": 17,
+          "wins": 2,
+          "win_rate": 0.11764705882352941,
+          "mean_margin": -21340.176470588234,
+          "median_margin": -23999.0,
+          "hard_counter_total": 0,
+          "shop_id": 1,
+          "route_id": 78
+        },
+        {
+          "games": 48,
+          "wins": 13,
+          "win_rate": 0.2708333333333333,
+          "mean_margin": -11647.708333333334,
+          "median_margin": -10551.0,
+          "hard_counter_total": 0,
+          "shop_id": 2,
+          "route_id": 99
+        },
+        {
+          "games": 30,
+          "wins": 0,
+          "win_rate": 0.0,
+          "mean_margin": -17390.5,
+          "median_margin": -18702.0,
+          "hard_counter_total": 0,
+          "shop_id": 3,
+          "route_id": 9
+        },
+        {
+          "games": 33,
+          "wins": 8,
+          "win_rate": 0.24242424242424243,
+          "mean_margin": -12280.484848484848,
+          "median_margin": -8291.0,
+          "hard_counter_total": 0,
+          "shop_id": 4,
+          "route_id": 70
+        },
+        {
+          "games": 26,
+          "wins": 8,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -11956.961538461539,
+          "median_margin": -8812.0,
+          "hard_counter_total": 0,
+          "shop_id": 5,
+          "route_id": 80
+        },
+        {
+          "games": 30,
+          "wins": 1,
+          "win_rate": 0.03333333333333333,
+          "mean_margin": -24468.933333333334,
+          "median_margin": -24922.0,
+          "hard_counter_total": 0,
+          "shop_id": 6,
+          "route_id": 46
+        },
+        {
+          "games": 36,
+          "wins": 32,
+          "win_rate": 0.8888888888888888,
+          "mean_margin": 5173.611111111111,
+          "median_margin": 6393.5,
+          "hard_counter_total": 0,
+          "shop_id": 7,
+          "route_id": 90
+        }
+      ]
+    },
+    {
+      "route_map": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_unrestricted_stable_win_seed252001_v4.json",
+      "route_ids": [
+        83,
+        78,
+        99,
+        94,
+        127,
+        80,
+        46,
+        90
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 78,
+        "win_rate": 0.3046875,
+        "mean_margin": -15322.1328125,
+        "median_margin": -12775.0,
+        "hard_counter_total": 0
+      },
+      "by_first_shop": [
+        {
+          "games": 36,
+          "wins": 10,
+          "win_rate": 0.2777777777777778,
+          "mean_margin": -10153.861111111111,
+          "median_margin": -14925.0,
+          "hard_counter_total": 0,
+          "shop_id": 0,
+          "route_id": 83
+        },
+        {
+          "games": 17,
+          "wins": 2,
+          "win_rate": 0.11764705882352941,
+          "mean_margin": -21340.176470588234,
+          "median_margin": -23999.0,
+          "hard_counter_total": 0,
+          "shop_id": 1,
+          "route_id": 78
+        },
+        {
+          "games": 48,
+          "wins": 13,
+          "win_rate": 0.2708333333333333,
+          "mean_margin": -11647.708333333334,
+          "median_margin": -10551.0,
+          "hard_counter_total": 0,
+          "shop_id": 2,
+          "route_id": 99
+        },
+        {
+          "games": 30,
+          "wins": 0,
+          "win_rate": 0.0,
+          "mean_margin": -38464.6,
+          "median_margin": -43716.0,
+          "hard_counter_total": 0,
+          "shop_id": 3,
+          "route_id": 94
+        },
+        {
+          "games": 33,
+          "wins": 12,
+          "win_rate": 0.36363636363636365,
+          "mean_margin": -18861.121212121212,
+          "median_margin": -18797.0,
+          "hard_counter_total": 0,
+          "shop_id": 4,
+          "route_id": 127
+        },
+        {
+          "games": 26,
+          "wins": 8,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -11956.961538461539,
+          "median_margin": -8812.0,
+          "hard_counter_total": 0,
+          "shop_id": 5,
+          "route_id": 80
+        },
+        {
+          "games": 30,
+          "wins": 1,
+          "win_rate": 0.03333333333333333,
+          "mean_margin": -24468.933333333334,
+          "median_margin": -24922.0,
+          "hard_counter_total": 0,
+          "shop_id": 6,
+          "route_id": 46
+        },
+        {
+          "games": 36,
+          "wins": 32,
+          "win_rate": 0.8888888888888888,
+          "mean_margin": 5173.611111111111,
+          "median_margin": 6393.5,
+          "hard_counter_total": 0,
+          "shop_id": 7,
+          "route_id": 90
+        }
+      ]
+    }
+  ]
+}

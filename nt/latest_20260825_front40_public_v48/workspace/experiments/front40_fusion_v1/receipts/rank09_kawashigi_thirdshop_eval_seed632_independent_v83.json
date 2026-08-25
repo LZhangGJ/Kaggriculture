@@ -1,0 +1,46 @@
+{
+  "schema": "kaggriculture.front40_fusion.third-shop-route-evaluation.v1",
+  "generated_at_utc": "2026-08-24T10:43:41.452457+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_thirdshop_routes24_vs_fc24b_seed632001_n512x2_independent_v81.npz",
+  "tree": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_thirdshop_stable_known5_v76.json",
+  "two_shop": {
+    "games": 1024,
+    "wins": 448,
+    "win_rate": 0.4375,
+    "mean_margin": -1501.716796875,
+    "median_margin": -556.0,
+    "hard_counter_total": 0
+  },
+  "three_shop": {
+    "games": 1024,
+    "wins": 462,
+    "win_rate": 0.451171875,
+    "mean_margin": -1305.3427734375,
+    "median_margin": -472.5,
+    "hard_counter_total": 0,
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 229,
+        "win_rate": 0.447265625,
+        "mean_margin": -1318.0078125,
+        "median_margin": -500.0,
+        "hard_counter_total": 0
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 233,
+        "win_rate": 0.455078125,
+        "mean_margin": -1292.677734375,
+        "median_margin": -438.5,
+        "hard_counter_total": 0
+      }
+    ]
+  },
+  "changed_games": 36,
+  "net_wins_vs_two_shop": 14,
+  "mean_margin_gain_vs_two_shop": 196.3740234375
+}

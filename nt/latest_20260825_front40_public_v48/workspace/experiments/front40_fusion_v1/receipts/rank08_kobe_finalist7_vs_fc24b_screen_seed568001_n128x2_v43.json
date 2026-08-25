@@ -1,0 +1,188 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T08:27:07.492273+00:00",
+  "device": "cuda:0",
+  "seed_start": 568001,
+  "seed_count": 128,
+  "route_count": 7,
+  "route_ids": [
+    10,
+    31,
+    41,
+    47,
+    52,
+    57,
+    88
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 1792,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 0,
+      "first_shop": "BAKERY",
+      "seed_count": 12,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 41,
+          "source_episode_id": 96065670,
+          "source_reward": 73337,
+          "games": 24,
+          "win_rate": 0.4166666666666667,
+          "mean_margin": -4835.75,
+          "invalid_mean": 12.75
+        }
+      ]
+    },
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 18,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 88,
+          "source_episode_id": 97566747,
+          "source_reward": 78923,
+          "games": 36,
+          "win_rate": 0.8333333333333334,
+          "mean_margin": 1983.4166666666667,
+          "invalid_mean": 17.916666666666668
+        }
+      ]
+    },
+    {
+      "first_shop_id": 2,
+      "first_shop": "FARMERS_MARKET",
+      "seed_count": 22,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 31,
+          "source_episode_id": 96040487,
+          "source_reward": 100015,
+          "games": 44,
+          "win_rate": 0.18181818181818182,
+          "mean_margin": -15007.704545454546,
+          "invalid_mean": 49.54545454545455
+        }
+      ]
+    },
+    {
+      "first_shop_id": 5,
+      "first_shop": "PIZZA_SHOP",
+      "seed_count": 17,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 52,
+          "source_episode_id": 96093116,
+          "source_reward": 140672,
+          "games": 34,
+          "win_rate": 0.5588235294117647,
+          "mean_margin": -3056.735294117647,
+          "invalid_mean": 12.558823529411764
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 16,
+      "eligible_routes": 2,
+      "top_routes": [
+        {
+          "route_id": 47,
+          "source_episode_id": 96083958,
+          "source_reward": 91417,
+          "games": 32,
+          "win_rate": 0.59375,
+          "mean_margin": -3321.3125,
+          "invalid_mean": 11.875
+        },
+        {
+          "route_id": 10,
+          "source_episode_id": 95994752,
+          "source_reward": 104257,
+          "games": 32,
+          "win_rate": 0.0,
+          "mean_margin": -17872.09375,
+          "invalid_mean": 67.09375
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 15,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 57,
+          "source_episode_id": 96120579,
+          "source_reward": 86427,
+          "games": 30,
+          "win_rate": 0.7,
+          "mean_margin": 995.5333333333333,
+          "invalid_mean": 9.8
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 156.91321782
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 3,
+      "seconds": 12.79177804699998
+    },
+    {
+      "seat": 0,
+      "start": 4,
+      "end": 5,
+      "seconds": 13.004343443999915
+    },
+    {
+      "seat": 0,
+      "start": 6,
+      "end": 6,
+      "seconds": 13.272538661999988
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 167.01879702399992
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 3,
+      "seconds": 12.970370129000003
+    },
+    {
+      "seat": 1,
+      "start": 4,
+      "end": 5,
+      "seconds": 13.062168044999908
+    },
+    {
+      "seat": 1,
+      "start": 6,
+      "end": 6,
+      "seconds": 13.598362662999989
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank08_kobe_finalist7_vs_fc24b_screen_seed568001_n128x2_v43.npz",
+  "status": "PASS"
+}

@@ -1,0 +1,275 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-pair-effects.v1",
+  "generated_at_utc": "2026-08-24T02:50:07.547253+00:00",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+    "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36"
+  ],
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+  "second_map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_secondshop_exact5_dev640_v38.json",
+  "routing_index": "first_shop,second_shop",
+  "pairs": [
+    {
+      "first_shop": "BRUNCH_SPOT",
+      "second_shop": "YARN_STORE",
+      "base_route": 50,
+      "selected_route": 134,
+      "games": 62,
+      "base_wins": 41,
+      "selected_wins": 60,
+      "net_wins": 19,
+      "mean_margin_gain": -42994.27419354839,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        6,
+        5,
+        8
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+          "games": 21,
+          "base_wins": 14,
+          "selected_wins": 20,
+          "net_wins": 6,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 0.9523809523809523,
+          "mean_margin_gain": -42804.23809523809,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+          "games": 20,
+          "base_wins": 14,
+          "selected_wins": 19,
+          "net_wins": 5,
+          "base_win_rate": 0.7,
+          "selected_win_rate": 0.95,
+          "mean_margin_gain": -47797.2,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36",
+          "games": 21,
+          "base_wins": 13,
+          "selected_wins": 21,
+          "net_wins": 8,
+          "base_win_rate": 0.6190476190476191,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -38610.09523809524,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "FARMERS_MARKET",
+      "second_shop": "YARN_STORE",
+      "base_route": 50,
+      "selected_route": 134,
+      "games": 52,
+      "base_wins": 39,
+      "selected_wins": 50,
+      "net_wins": 11,
+      "mean_margin_gain": -46782.807692307695,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        6,
+        0,
+        5
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+          "games": 19,
+          "base_wins": 13,
+          "selected_wins": 19,
+          "net_wins": 6,
+          "base_win_rate": 0.6842105263157895,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -41499.84210526316,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+          "games": 12,
+          "base_wins": 12,
+          "selected_wins": 12,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -65609.25,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36",
+          "games": 21,
+          "base_wins": 14,
+          "selected_wins": 19,
+          "net_wins": 5,
+          "base_win_rate": 0.6666666666666666,
+          "selected_win_rate": 0.9047619047619048,
+          "mean_margin_gain": -40804.666666666664,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "YARN_STORE",
+      "base_route": 50,
+      "selected_route": 134,
+      "games": 47,
+      "base_wins": 34,
+      "selected_wins": 46,
+      "net_wins": 12,
+      "mean_margin_gain": -53833.65957446808,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        5,
+        0,
+        7
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+          "games": 26,
+          "base_wins": 20,
+          "selected_wins": 25,
+          "net_wins": 5,
+          "base_win_rate": 0.7692307692307693,
+          "selected_win_rate": 0.9615384615384616,
+          "mean_margin_gain": -58300.153846153844,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+          "games": 4,
+          "base_wins": 4,
+          "selected_wins": 4,
+          "net_wins": 0,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -55766.0,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36",
+          "games": 17,
+          "base_wins": 10,
+          "selected_wins": 17,
+          "net_wins": 7,
+          "base_win_rate": 0.5882352941176471,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -46547.882352941175,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "PIZZA_SHOP",
+      "second_shop": "YARN_STORE",
+      "base_route": 131,
+      "selected_route": 134,
+      "games": 62,
+      "base_wins": 28,
+      "selected_wins": 31,
+      "net_wins": 3,
+      "mean_margin_gain": -21760.790322580644,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        4,
+        -3,
+        2
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+          "games": 21,
+          "base_wins": 7,
+          "selected_wins": 11,
+          "net_wins": 4,
+          "base_win_rate": 0.3333333333333333,
+          "selected_win_rate": 0.5238095238095238,
+          "mean_margin_gain": -9651.952380952382,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+          "games": 20,
+          "base_wins": 11,
+          "selected_wins": 8,
+          "net_wins": -3,
+          "base_win_rate": 0.55,
+          "selected_win_rate": 0.4,
+          "mean_margin_gain": -23824.0,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36",
+          "games": 21,
+          "base_wins": 10,
+          "selected_wins": 12,
+          "net_wins": 2,
+          "base_win_rate": 0.47619047619047616,
+          "selected_win_rate": 0.5714285714285714,
+          "mean_margin_gain": -31904.666666666668,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "first_shop": "SMOOTHIE_SHOP",
+      "second_shop": "YARN_STORE",
+      "base_route": 50,
+      "selected_route": 134,
+      "games": 24,
+      "base_wins": 15,
+      "selected_wins": 21,
+      "net_wins": 6,
+      "mean_margin_gain": -48477.5,
+      "hard_counter_total": 0,
+      "panel_net_wins": [
+        2,
+        -2,
+        6
+      ],
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_holdout_seed336001_n512x2_v22",
+          "games": 4,
+          "base_wins": 2,
+          "selected_wins": 4,
+          "net_wins": 2,
+          "base_win_rate": 0.5,
+          "selected_win_rate": 1.0,
+          "mean_margin_gain": -42379.25,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24",
+          "games": 10,
+          "base_wins": 10,
+          "selected_wins": 8,
+          "net_wins": -2,
+          "base_win_rate": 1.0,
+          "selected_win_rate": 0.8,
+          "mean_margin_gain": -84399.3,
+          "hard_counter_total": 0
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_final_holdout_seed352001_n512x2_v36",
+          "games": 10,
+          "base_wins": 3,
+          "selected_wins": 9,
+          "net_wins": 6,
+          "base_win_rate": 0.3,
+          "selected_win_rate": 0.9,
+          "mean_margin_gain": -14995.0,
+          "hard_counter_total": 0
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

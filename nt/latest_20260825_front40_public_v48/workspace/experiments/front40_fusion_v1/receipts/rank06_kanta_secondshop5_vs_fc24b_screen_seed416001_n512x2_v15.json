@@ -1,0 +1,140 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T05:18:15.059296+00:00",
+  "device": "cuda:0",
+  "seed_start": 416001,
+  "seed_count": 512,
+  "route_count": 5,
+  "route_ids": [
+    118,
+    64,
+    56,
+    3,
+    86
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 5120,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 0,
+      "first_shop": "BAKERY",
+      "seed_count": 67,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 3,
+          "source_episode_id": 94629239,
+          "source_reward": 89645,
+          "games": 134,
+          "win_rate": 0.5746268656716418,
+          "mean_margin": -810.9776119402985,
+          "invalid_mean": 17.470149253731343
+        }
+      ]
+    },
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 61,
+      "eligible_routes": 2,
+      "top_routes": [
+        {
+          "route_id": 118,
+          "source_episode_id": 96542363,
+          "source_reward": 80842,
+          "games": 122,
+          "win_rate": 0.5983606557377049,
+          "mean_margin": -745.9344262295082,
+          "invalid_mean": 17.450819672131146
+        },
+        {
+          "route_id": 86,
+          "source_episode_id": 95207949,
+          "source_reward": 88475,
+          "games": 122,
+          "win_rate": 0.01639344262295082,
+          "mean_margin": -22181.516393442624,
+          "invalid_mean": 64.36065573770492
+        }
+      ]
+    },
+    {
+      "first_shop_id": 3,
+      "first_shop": "ICE_CREAM_SHOP",
+      "seed_count": 66,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 56,
+          "source_episode_id": 94716610,
+          "source_reward": 132821,
+          "games": 132,
+          "win_rate": 0.6590909090909091,
+          "mean_margin": -569.7348484848485,
+          "invalid_mean": 12.371212121212121
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 66,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 64,
+          "source_episode_id": 94731722,
+          "source_reward": 97874,
+          "games": 132,
+          "win_rate": 0.09090909090909091,
+          "mean_margin": -22990.060606060608,
+          "invalid_mean": 49.75757575757576
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 39.6129957600001
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 3,
+      "seconds": 14.987926769000069
+    },
+    {
+      "seat": 0,
+      "start": 4,
+      "end": 4,
+      "seconds": 15.277784161
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 37.866205550999894
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 3,
+      "seconds": 14.904425492999962
+    },
+    {
+      "seat": 1,
+      "start": 4,
+      "end": 4,
+      "seconds": 15.133940424000002
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank06_kanta_secondshop5_vs_fc24b_screen_seed416001_n512x2_v15.npz",
+  "status": "PASS"
+}

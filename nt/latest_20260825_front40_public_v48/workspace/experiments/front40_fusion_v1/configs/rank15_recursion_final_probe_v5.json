@@ -1,0 +1,11 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-candidate-manifest.v1",
+  "candidates": [
+    {
+      "name": "rank15_recursion_fixed80_v4",
+      "family": "rank15_recursion_fixed_route",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank15_recursion_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank15_recursion_fixed_route80_v4.json"
+    }
+  ]
+}

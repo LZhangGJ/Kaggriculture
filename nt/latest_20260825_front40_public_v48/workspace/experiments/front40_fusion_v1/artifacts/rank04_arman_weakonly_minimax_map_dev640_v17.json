@@ -1,0 +1,23 @@
+{
+  "schema": "kaggriculture.front40_fusion.weak-shop-route-map.v1",
+  "status": "TRAINING_ONLY",
+  "base_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+  "development_screens": [
+    "experiments/front40_fusion_v1/receipts/rank04_arman_weak37_vs_fc24b_screen_seed304001_n128x2_v15",
+    "experiments/front40_fusion_v1/receipts/rank04_arman_weak37_vs_fc24b_screen_seed328001_n512x2_v14"
+  ],
+  "selection_mode": "weak_shop_minimax",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [38, 50, 50, 50, 50, 131, 50, 129],
+  "overrides": {"BAKERY": 38},
+  "public_state_only": true
+}

@@ -1,0 +1,27 @@
+[{"stream_name":"stderr","time":7.162633774,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.162708259,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.162713188,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.162716024,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.859492086,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.859531318,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.85953673,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.8595407250000004,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.096487803,"data":"Wrote exact Hadouken entrypoint: /kaggle/working/main.py\n"}
+,{"stream_name":"stdout","time":9.096594091,"data":"SHA-256: b5c2e156689b41cea5f2e1a0a1cae2e18fd70423931bbac0885bba8b2142c497\n"}
+,{"stream_name":"stdout","time":52.655509834,"data":"engine pinned: True\n"}
+,{"stream_name":"stdout","time":52.655593184,"data":"kaggle-environments: 1.32.7\n"}
+,{"stream_name":"stdout","time":52.655602807,"data":"1.32.7 market curve present (CARROT hinge): True\n"}
+,{"stream_name":"stdout","time":52.655608287,"data":"py_compile: PASS\n"}
+,{"stream_name":"stdout","time":52.655613389,"data":"raw loader selects: _x631_entrypoint\n"}
+,{"stream_name":"stdout","time":63.061897473,"data":"Official Kaggriculture smoke: PASS\n"}
+,{"stream_name":"stdout","time":63.061950915,"data":"{'seat': 0, 'ours': 181147.0, 'final': [('DONE', 181147.0), ('DONE', 3510.0)]}\n"}
+,{"stream_name":"stdout","time":63.061957622,"data":"{'seat': 1, 'ours': 182863.0, 'final': [('DONE', 3534.0), ('DONE', 182863.0)]}\n"}
+,{"stream_name":"stderr","time":68.993128475,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":68.99318409,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":69.152713362,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":69.152761864,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":69.869029173,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":70.298006147,"data":"[NbConvertApp] Writing 784145 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":73.331721917,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":74.415917572,"data":"[NbConvertApp] Writing 703486 bytes to __results__.html\n"}
+]

@@ -1,0 +1,34 @@
+{
+  "schema": "kaggriculture.front40_fusion.online-second-shop-screen-parity.v1",
+  "generated_at_utc": "2026-08-24T08:29:26.105233+00:00",
+  "online_receipt": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_online_safe8fs_vs_fc24b_seed568001_n128x2_v44.json",
+  "candidate": "rank08_kobe_safe8fs_v42",
+  "screen": "experiments\\front40_fusion_v1\\receipts\\rank08_kobe_finalist7_vs_fc24b_screen_seed568001_n128x2_v43.json",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank08_kobe_all89_stable_win_map_dev640_v16.json",
+  "second_map": "experiments\\front40_fusion_v1\\artifacts\\rank08_kobe_secondshop_safe8_fs_dev1152_v28.json",
+  "games": 256,
+  "candidate_cash_mismatch_total": 0,
+  "opponent_cash_mismatch_total": 0,
+  "final_route_mismatch_total": 0,
+  "seats": [
+    {
+      "seat": 0,
+      "games": 128,
+      "candidate_cash_mismatch": 0,
+      "opponent_cash_mismatch": 0,
+      "final_route_mismatch": 0,
+      "max_candidate_cash_abs_error": 0,
+      "max_opponent_cash_abs_error": 0
+    },
+    {
+      "seat": 1,
+      "games": 128,
+      "candidate_cash_mismatch": 0,
+      "opponent_cash_mismatch": 0,
+      "final_route_mismatch": 0,
+      "max_candidate_cash_abs_error": 0,
+      "max_opponent_cash_abs_error": 0
+    }
+  ],
+  "status": "PASS"
+}
