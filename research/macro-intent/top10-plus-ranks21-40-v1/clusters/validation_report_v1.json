@@ -1,0 +1,37 @@
+{
+  "assessment": "Ready to share",
+  "validated_utc": "2026-08-25T11:55:00Z",
+  "scope": "top10_plus_ranks21_40 provisional macro-intent clustering v1",
+  "checks": {
+    "unique_seat_keys": true,
+    "seat_feature_alignment": true,
+    "condensed_pair_count": 5768106,
+    "distance_finite_nonnegative": true,
+    "linkage_shape": [3396, 4],
+    "linkage_monotone": true,
+    "family_sizes_reconcile": true,
+    "one_medoid_per_family": true,
+    "threshold_sensitivity_monotone": true,
+    "sampled_pair_distance_recalculation": {
+      "pairs_checked": 199,
+      "max_absolute_error": 5.1228619124543684e-08,
+      "mean_absolute_error": 8.35067155401399e-09,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    "manual_threshold_partition": {
+      "threshold": 0.12,
+      "merges_below_cut": 2720,
+      "manual_family_count": 677,
+      "saved_family_count": 677,
+      "partitions_equal": true
+    },
+    "cophenetic_correlation": 0.9744005139608586
+  },
+  "caveats": [
+    "N### identifiers are provisional and are not aligned to historical G### identifiers.",
+    "The large singleton tail is concentrated in six submissions and should not be interpreted as uniformly high diversity across all agents.",
+    "The 0.12 threshold is inherited from the referenced route-reconstruction method; historical-family alignment remains a separate next step."
+  ],
+  "notebook": "macro_intent_clustering_QA_v1.ipynb"
+}

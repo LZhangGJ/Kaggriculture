@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-08-25T11:55:39.538405+00:00",
+  "kind": "provisional_macro_intent_clustering",
+  "input_dir": "../input",
+  "input_feature_path": "../input/intent_features_v1.npz",
+  "input_seat_path": "../input/intent_seats_v1.csv",
+  "seat_count": 3397,
+  "pair_count": 5768106,
+  "method": {
+    "distance": "D = 0.45*C + 0.35*G + 0.20*T",
+    "composition": "mean across 5 anchors of L1 category-count difference / max(8, occupied_i, occupied_j)",
+    "grid": "mean across 5 anchors of mismatching category cells / union occupied cells",
+    "timing": "mean across 10 stages of L1 cumulative-action difference / max(6, cumulative_i, cumulative_j)",
+    "linkage": "average",
+    "threshold": 0.12,
+    "family_id_policy": "provisional N###, ordered by size desc then median reward desc; not aligned to historical G labels",
+    "representative": "exact medoid minimizing mean intra-family distance"
+  },
+  "distance": {
+    "min": 0.0,
+    "median": 0.31780296564102173,
+    "mean": 0.3068877394878682,
+    "max": 1.005853295326233
+  },
+  "main_cut": {
+    "threshold": "0.12",
+    "family_count": 677,
+    "singleton_count": 566,
+    "largest_family": 1764,
+    "top10_coverage": 0.7359434795407712,
+    "top56_coverage": 0.8010008831321754
+  },
+  "family_size": {
+    "median": 1.0,
+    "mean": 5.017725258493353,
+    "p90": 2.0,
+    "max": 1764
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold": "0.04",
+      "family_count": 902,
+      "singleton_count": 825,
+      "largest_family": 1706,
+      "top10_coverage": 0.703267589049161,
+      "top56_coverage": 0.7447748012952605
+    },
+    {
+      "threshold": "0.06",
+      "family_count": 844,
+      "singleton_count": 755,
+      "largest_family": 1707,
+      "top10_coverage": 0.710921401236385,
+      "top56_coverage": 0.7583161613188107
+    },
+    {
+      "threshold": "0.08",
+      "family_count": 795,
+      "singleton_count": 700,
+      "largest_family": 1728,
+      "top10_coverage": 0.7188695908154253,
+      "top56_coverage": 0.770974389166912
+    },
+    {
+      "threshold": "0.10",
+      "family_count": 737,
+      "singleton_count": 639,
+      "largest_family": 1736,
+      "top10_coverage": 0.727112157786282,
+      "top56_coverage": 0.787165145716809
+    },
+    {
+      "threshold": "0.12",
+      "family_count": 677,
+      "singleton_count": 566,
+      "largest_family": 1764,
+      "top10_coverage": 0.7359434795407712,
+      "top56_coverage": 0.8010008831321754
+    },
+    {
+      "threshold": "0.14",
+      "family_count": 605,
+      "singleton_count": 493,
+      "largest_family": 1772,
+      "top10_coverage": 0.7559611421842802,
+      "top56_coverage": 0.8216073005593171
+    },
+    {
+      "threshold": "0.16",
+      "family_count": 533,
+      "singleton_count": 406,
+      "largest_family": 1788,
+      "top10_coverage": 0.7700912569914631,
+      "top56_coverage": 0.8372093023255814
+    },
+    {
+      "threshold": "0.18",
+      "family_count": 451,
+      "singleton_count": 313,
+      "largest_family": 1788,
+      "top10_coverage": 0.7830438622313807,
+      "top56_coverage": 0.8560494554018251
+    },
+    {
+      "threshold": "0.20",
+      "family_count": 377,
+      "singleton_count": 241,
+      "largest_family": 1789,
+      "top10_coverage": 0.7965852222549308,
+      "top56_coverage": 0.877833382396232
+    }
+  ],
+  "outputs": {
+    "distance_matrix": "macro_intent_distance_v1.npy",
+    "linkage": "average_linkage_v1.npy",
+    "assignments": "cluster_assignments_v1.csv",
+    "profiles": "cluster_profiles_v1.csv",
+    "prototypes": "cluster_prototypes_v1.npz",
+    "sensitivity": "threshold_sensitivity_v1.csv",
+    "submission_summary": "submission_cluster_summary_v1.csv"
+  }
+}
