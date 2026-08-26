@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260827_macro_route_submit_agents/` — two submit-ready single-file
+  route-tree agents trained from the deduplicated 2026-08-23/25 Top40 Replay
+  pool. It contains the pipeline-selected G034 opening, the alternative G096
+  forced opening, comparison metrics, and official 1.32.7 receipts. Start with
+  `latest_20260827_macro_route_submit_agents/README_ZH.md`.
 - `latest_20260827_complete_68_agent_pool/` — incremental completion layer for
   the full 68-Agent validation inventory. It adds the nine missing Rank40
   validation routers, three current-Top20 reconstruction banks/maps/receipts,
