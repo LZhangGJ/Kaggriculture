@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "FROZEN_FOR_VALIDATION_POOL",
+  "name": "rank26_efe_validation_firstshop_v1",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank26_efe_trace_bank_v1.npz",
+  "source_screen": "experiments/front40_fusion_v1/receipts/rank26_efe_all146_vs_fc24b_screen_seed1032001_n64x2_v2.npz",
+  "shop_order": ["BAKERY", "BRUNCH_SPOT", "FARMERS_MARKET", "ICE_CREAM_SHOP", "PET_CAFE", "PIZZA_SHOP", "SMOOTHIE_SHOP", "YARN_STORE"],
+  "route_ids": [45, 119, 94, 74, 39, 23, 94, 71],
+  "source_panel_score": {"wins": 59, "games": 128, "win_rate": 0.4609375},
+  "selection": "unrestricted per-first-shop maximum strict wins, then margin, lower recovery count, and source reward",
+  "runtime_boundary": "first town shop already public; no identity, Replay ID, event seed, future event, or hidden state"
+}

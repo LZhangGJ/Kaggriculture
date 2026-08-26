@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260827_complete_68_agent_pool/` — incremental completion layer for
+  the full 68-Agent validation inventory. It adds the nine missing Rank40
+  validation routers, three current-Top20 reconstruction banks/maps/receipts,
+  and the authoritative complete-pool config and inventory. Start with
+  `latest_20260827_complete_68_agent_pool/README_ZH.md`.
 - `replay_collection/` — daily Top 60 live-leaderboard snapshot and Replay
   downloader. It freezes each team's currently scoring submission ID, then
   downloads every Public completed Replay currently exposed for that exact

@@ -1,0 +1,147 @@
+{
+  "schema": "kaggriculture.front40_fusion.complete-validation-pool.v1",
+  "status": "INVENTORY_COMPLETE_CROSS_RUNTIME_DEDUPE_PENDING",
+  "official_package_version": "1.32.7",
+  "selection_rule": {
+    "top40": "strongest deployable public-state-only representative for every behavior-independent leaderboard family whose measured score rate versus FC24B exceeded 0.10; Rank30 is FC24B itself",
+    "historical_public": "all 28 internally behavior-deduped strict-JAX roster members",
+    "recent_public": "every newly distinct runnable family from the 2026-08-25 Recently Run scan",
+    "current_top20": "every behavior-distinct current Top20 Replay reconstruction scoring above 0.10 versus FC24B; these are validation opponents, not claims of exact source-Agent reproduction",
+    "final_gate": "each final candidate independently scores at least 0.90 against every retained member on a fresh dual-seat 719-step bank"
+  },
+  "runtime_policy": {
+    "public_state_only": true,
+    "forbidden": ["opponent_identity", "replay_id", "event_seed", "future_hidden_event", "hidden_opponent_inventory", "single_episode_coordinate_routing"],
+    "required": ["dual_seat", "719_steps", "hard_counter_total_zero", "full_source_and_dependency_fingerprints", "fresh_event_bank"]
+  },
+  "dedupe_evidence": {
+    "top40_trace_ledger": "experiments/front40_fusion_v1/artifacts/trace_behavior_hash_ledger_v1.json",
+    "top40_cross_bank_exact_route_overlaps": 0,
+    "historical_public_roster": "experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin.py",
+    "historical_public_aliases_are_removed": true,
+    "cross_set_route_overlap_note": "Rank07 contains two exact raw routes also present in the Kaito V48 extended bank, but its deployed router also selects independent routes; therefore the two complete Agents are not exact-behavior duplicates.",
+    "remaining_work": "compute complete runtime action/state fingerprints for every retained representative on a common fresh bank before declaring cross-set behavior dedupe complete"
+  },
+  "baseline": {
+    "name": "fc24b_frozen_best",
+    "implementation_kind": "native_jax",
+    "config": "experiments/fusion_champion_v1/configs/fc24b_frozen_best_v1.json",
+    "required_validation_member": true
+  },
+  "top40_members": [
+    {"rank": 1, "name": "rank01_hasegawa_v11", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/hasegawa_current_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_ablation_blend_v10.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_second_shop_gain0p30_train384_v8.json", "source_report": "experiments/front40_fusion_v1/reports/HASEGAWA_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 2, "name": "rank02_crop_dusta_v29", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_robust_unrestricted_stable_win_all3panels_v29.json", "source_report": "experiments/front40_fusion_v1/reports/RANK02_CROP_DUSTA_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 3, "name": "rank03_subramanya_v18", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_wilson_unrestricted_map_v18.json", "source_report": "experiments/front40_fusion_v1/reports/RANK03_SUBRAMANYA_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 4, "name": "rank04_arman_v45", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_exact5_dev640_v38.json", "source_report": "experiments/front40_fusion_v1/reports/RANK04_ARMAN_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 5, "name": "rank05_mimi_v29", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank05_mimi_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_stable_win_map_dev640_v6.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_secondshop_strong3_dev640_v15.json", "source_report": "experiments/front40_fusion_v1/reports/RANK05_MIMI_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 6, "name": "rank06_kanta_v30", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank06_kanta_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank06_kanta_stable_win_map_dev640_v6.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank06_kanta_secondshop_acd_dev640_v18.json", "source_report": "experiments/front40_fusion_v1/reports/RANK06_KANTA_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 7, "name": "rank07_active_v32", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank07_active_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank07_active_stable_win_map_dev640_v6.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank07_active_secondshop_risk7_canonical_v22.json", "source_report": "experiments/front40_fusion_v1/reports/RANK07_ACTIVE_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 8, "name": "rank08_kobe_v46", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank08_kobe_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_all89_stable_win_map_dev640_v16.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank08_kobe_secondshop_safe8_fs_dev1152_v28.json", "source_report": "experiments/front40_fusion_v1/reports/RANK08_KOBE_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 9, "name": "rank09_kawashigi_v115", "implementation_kind": "trace_three_shop_tree", "bank": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_trace_bank_v1.npz", "route_tree": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_v115_pizza_fixed_route100.json", "source_report": "experiments/front40_fusion_v1/reports/RANK09_KAWASHIGI_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 10, "name": "rank10_seb_v11", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank10_seb_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank10_seb_threepanel_minimax_firstshop_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK10_SEB_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 11, "name": "rank11_peikopon_v7", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank11_peikopon_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank11_peikopon_threepanel_minimax_firstshop_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK11_PEIKOPON_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 13, "name": "rank13_burntpotato_v12", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_two_panel_pooled_firstshop_v3.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_secondshop_exactprefix_cross_v6.json", "source_report": "experiments/front40_fusion_v1/reports/RANK13_BURNTPOTATO_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 14, "name": "rank14_kaan_diniz_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank14_kaan_diniz_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank14_kaan_diniz_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK14_KAAN_DINIZ_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 15, "name": "rank15_recursion_v7", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank15_recursion_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank15_recursion_fixed_route80_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK15_RECURSION_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 17, "name": "rank17_sarthak_v15", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_three_panel_pooled_firstshop_v7.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_secondshop_exactprefix_cross_v10.json", "source_report": "experiments/front40_fusion_v1/reports/RANK17_SARTHAK_FC24B_OPTIMIZATION_V1_ZH.md"},
+    {"rank": 18, "name": "rank18_mandgeee_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank18_mandgeee_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank18_mandgeee_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK18_MANDGEEE_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 19, "name": "rank19_xiaowenhao404_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank19_xiaowenhao404_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank19_xiaowenhao404_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK19_XIAOWENHAO404_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 20, "name": "rank20_u_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank20_u_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank20_u_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK20_U_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 21, "name": "rank21_saikushal185_v9", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank21_saikushal185_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank21_saikushal185_minimax_firstshop_v4.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank21_saikushal185_secondshop_pooled_v9.json", "source_report": "experiments/front40_fusion_v1/reports/RANK21_SAIKUSHAL185_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 22, "name": "rank22_victor_tufa_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank22_victor_tufa_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank22_victor_tufa_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK22_VICTOR_TUFA_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 23, "name": "rank23_xw_v9", "implementation_kind": "trace_three_shop_tree", "bank": "experiments/front40_fusion_v1/artifacts/rank23_xw_trace_bank_v1.npz", "route_tree": "experiments/front40_fusion_v1/artifacts/rank23_xw_thirdshop_three_panel_minimax_v9.json", "source_report": "experiments/front40_fusion_v1/reports/RANK23_XW_FC24B_NEAR_THRESHOLD_REJECTION_V1_ZH.md"},
+    {"rank": 24, "name": "rank24_stackknight_v4", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank24_stackknight_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank24_stackknight_two_panel_minimax_firstshop_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK24_STACKKNIGHT_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 26, "name": "rank26_efe_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank26_efe_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank26_efe_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK26_EFE_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 27, "name": "rank27_atakan_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank27_atakan_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank27_atakan_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK27_ATAKAN_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 28, "name": "rank28_shiiin9_v4", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank28_shiiin9_two_panel_minimax_firstshop_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK28_SHIIIN9_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 29, "name": "rank29_lucaskna_v5", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank29_lucaskna_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank29_lucaskna_two_panel_minimax_firstshop_v5.json", "source_report": "experiments/front40_fusion_v1/reports/RANK29_LUCASKNA_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 31, "name": "rank31_bplyc15_v4", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank31_bplyc15_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank31_bplyc15_single_panel_firstshop_v3.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank31_bplyc15_secondshop_single_panel_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK31_BPLYC15_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 33, "name": "rank33_unknownrobi_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank33_unknownrobi_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank33_unknownrobi_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK33_UNKNOWNROBI_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 34, "name": "rank34_arda_ceylan_v5", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank34_arda_ceylan_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank34_arda_ceylan_two_panel_minimax_firstshop_v4.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank34_arda_ceylan_secondshop_two_panel_v5.json", "source_report": "experiments/front40_fusion_v1/reports/RANK34_ARDA_CEYLAN_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 35, "name": "rank35_webmaking_validation_v1", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank35_webmaking_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank35_webmaking_validation_firstshop_v1.json", "source_report": "experiments/front40_fusion_v1/reports/RANK35_WEBMAKING_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 36, "name": "rank36_james_holland_v13", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank36_james_holland_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank36_james_holland_three_panel_robust_firstshop_v13.json", "source_report": "experiments/front40_fusion_v1/reports/RANK36_JAMES_HOLLAND_FC24B_REJECTION_V1_ZH.md"},
+    {"rank": 37, "name": "rank37_kenjo1209_v17", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank37_kenjo1209_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank37_kenjo1209_two_panel_unrestricted_wilson_firstshop_v14.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank37_kenjo1209_secondshop_cross_source_two_panel_v17.json", "source_report": "experiments/front40_fusion_v1/reports/RANK37_KENJO1209_FC24B_REJECTION_AND_POOL_V1_ZH.md"},
+    {"rank": 38, "name": "rank38_ebisu_ya_v4", "implementation_kind": "trace_first_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank38_ebisu_ya_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank38_ebisu_ya_single_panel_unrestricted_stable_win_firstshop_v4.json", "source_report": "experiments/front40_fusion_v1/reports/RANK38_EBISU_YA_FC24B_REJECTION_AND_POOL_V1_ZH.md"},
+    {"rank": 39, "name": "rank39_lelelove1225_v14", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank39_lelelove1225_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank39_lelelove1225_two_panel_unrestricted_stable_win_firstshop_v11.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank39_lelelove1225_secondshop_cross_source_two_panel_v14.json", "source_report": "experiments/front40_fusion_v1/reports/RANK39_LELELOVE1225_FC24B_FREEZE_V1_ZH.md"},
+    {"rank": 40, "name": "rank40_ar_sekkat_v14", "implementation_kind": "trace_two_shop", "bank": "experiments/front40_fusion_v1/artifacts/rank40_ar_sekkat_trace_bank_v1.npz", "route_map": "experiments/front40_fusion_v1/artifacts/rank40_ar_sekkat_two_panel_unrestricted_stable_win_firstshop_v11.json", "second_route_map": "experiments/front40_fusion_v1/artifacts/rank40_ar_sekkat_secondshop_cross_source_two_panel_v14.json", "source_report": "experiments/front40_fusion_v1/reports/RANK40_AR_SEKKAT_FC24B_REJECTION_AND_POOL_V1_ZH.md"}
+  ],
+  "top40_exclusions": [
+    {"rank": 12, "reason": "best deployable score rate versus FC24B was 0.0195"},
+    {"rank": 16, "reason": "all screened routes and deployable map scored 0.0 versus FC24B"},
+    {"rank": 25, "reason": "best fixed and first-shop maps scored 0.0 versus FC24B"},
+    {"rank": 32, "reason": "best deployable first-shop score rate was 0.0312"},
+    {"rank": 30, "reason": "this is FC24B itself and is retained as the separate frozen baseline"}
+  ],
+  "historical_public_members": [
+    {"name": "public_g01_boatlee_v16", "implementation_kind": "native_old28", "roster_id": 0},
+    {"name": "public_g02_rc5_c166", "implementation_kind": "native_old28", "roster_id": 1},
+    {"name": "public_g04_soil_rain", "implementation_kind": "native_old28", "roster_id": 2},
+    {"name": "public_g06_v25", "implementation_kind": "native_old28", "roster_id": 3},
+    {"name": "public_g07_c95", "implementation_kind": "native_old28", "roster_id": 4},
+    {"name": "public_g08_v14", "implementation_kind": "native_old28", "roster_id": 5},
+    {"name": "public_g09_c68_thunder", "implementation_kind": "native_old28", "roster_id": 6},
+    {"name": "public_g10_four_hire", "implementation_kind": "native_old28", "roster_id": 7},
+    {"name": "public_g11_v21", "implementation_kind": "native_old28", "roster_id": 8},
+    {"name": "public_g12_v13_r3", "implementation_kind": "native_old28", "roster_id": 9},
+    {"name": "public_g13_bruce_route1", "implementation_kind": "native_old28", "roster_id": 10},
+    {"name": "public_g14_v19_control", "implementation_kind": "native_old28", "roster_id": 11},
+    {"name": "public_g15_v18_closed_loop", "implementation_kind": "native_old28", "roster_id": 12},
+    {"name": "public_g16_tran_cashflow", "implementation_kind": "native_old28", "roster_id": 13},
+    {"name": "gold_proxy_rank07_junichiro_morita", "implementation_kind": "native_old28", "roster_id": 14},
+    {"name": "gold_proxy_rank12_ai_b2b67_saas", "implementation_kind": "native_old28", "roster_id": 15},
+    {"name": "gold_proxy_rank14_recursion", "implementation_kind": "native_old28", "roster_id": 16},
+    {"name": "gold_proxy_rank19_manu_nicholas_jacob", "implementation_kind": "native_old28", "roster_id": 17},
+    {"name": "local_prt_v6", "implementation_kind": "native_old28", "roster_id": 18},
+    {"name": "boatlee_v20_multi_route", "implementation_kind": "native_old28", "roster_id": 19},
+    {"name": "rayk_k320_adaptive_rank1", "implementation_kind": "native_old28", "roster_id": 20},
+    {"name": "tetsutani_adaptive_premium_queue", "implementation_kind": "native_old28", "roster_id": 21},
+    {"name": "kaito_v27_midgame_reset", "implementation_kind": "native_old28", "roster_id": 22},
+    {"name": "flexonafft_v59_multi_route", "implementation_kind": "native_old28", "roster_id": 23},
+    {"name": "deniz_v111_8c4s_latest", "implementation_kind": "native_old28", "roster_id": 24},
+    {"name": "kaito_v36_latest", "implementation_kind": "native_old28", "roster_id": 25},
+    {"name": "x562_latest", "implementation_kind": "native_old28", "roster_id": 26},
+    {"name": "tetsutani_adaptive_latest", "implementation_kind": "native_old28", "roster_id": 27}
+  ],
+  "recent_public_members": [
+    {"name": "kaito_v48", "implementation_kind": "native_kaito_v48", "bank": "experiments/public_recent_20260825/artifacts/recent_v48_route_bank_v1.npz", "policy_source": "experiments/strategic_v5/src/strategic_v5/recent_public_20260825_gpu.py", "source_report": "experiments/public_recent_20260825/reports/RECENTLY_RUN_PUBLIC_SCAN_20260825_ZH.md"}
+  ],
+  "current_top20_reconstruction_members": [
+    {
+      "name": "top20_20260825_tetsuya_current_firstshop_v1",
+      "implementation_kind": "trace_first_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/tetsuya_new74_subset_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/top20_20260825_tetsuya_new74_same_shop_map_seed1502001_v1.json",
+      "required_validation_member": true,
+      "source_submission_id": 55734995,
+      "acceptance_receipt": "experiments/front40_fusion_v1/receipts/top20_20260825_tetsuya_new74_same_shop_vs_fc24b_seed1513001_n512x2_v2.json"
+    },
+    {
+      "name": "top20_20260825_hasegawa_new77_firstshop_v1",
+      "implementation_kind": "trace_first_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/hasegawa_new77_subset_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/top20_20260825_hasegawa_new77_same_shop_map_seed1502001_v1.json",
+      "required_validation_member": true,
+      "source_submission_id": 55614463,
+      "acceptance_receipt": "experiments/front40_fusion_v1/receipts/top20_20260825_hasegawa_new77_same_shop_vs_fc24b_seed1513001_n512x2_v2.json"
+    },
+    {
+      "name": "top20_20260825_crop_dusta_current_unrestricted_v1",
+      "implementation_kind": "trace_first_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/top20_20260825_crop_dusta_current_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/top20_20260825_crop_dusta_unrestricted_map_seed1500001_v1.json",
+      "required_validation_member": true,
+      "source_submission_id": 55714246,
+      "acceptance_receipt": "experiments/front40_fusion_v1/receipts/top20_20260825_crop_dusta_unrestricted_vs_fc24b_seed1510001_n512x2_v1.json"
+    }
+  ],
+  "counts": {
+    "baseline": 1,
+    "top40_retained": 35,
+    "top40_excluded_below_threshold": 4,
+    "top40_identity_replaced_by_baseline": 1,
+    "historical_public_retained": 28,
+    "recent_public_retained": 1,
+    "current_top20_reconstructions_retained": 3,
+    "provisional_total_before_cross_runtime_dedupe": 68
+  }
+}

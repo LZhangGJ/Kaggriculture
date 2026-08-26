@@ -1,0 +1,126 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa_same_shop_route_map.v1",
+  "generated_at_utc": "2026-08-25T10:32:32.005269+00:00",
+  "source_screen": "experiments\\front40_fusion_v1\\receipts\\top20_20260825_crop_dusta_vs_fc24b_seed1500001_n128x2_v1.json",
+  "source_matrix": "experiments\\front40_fusion_v1\\receipts\\top20_20260825_crop_dusta_vs_fc24b_seed1500001_n128x2_v1.npz",
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [
+    9,
+    24,
+    57,
+    71,
+    30,
+    4,
+    4,
+    38
+  ],
+  "routes": [
+    {
+      "shop_id": 0,
+      "shop": "BAKERY",
+      "route_id": 9,
+      "source_episode_id": 97625713,
+      "source_reward": 111391,
+      "training_games": 42,
+      "training_win_rate": 0.4523809523809524,
+      "training_mean_margin": -10274.214285714286,
+      "training_invalid_mean": 133.92857142857142,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 1,
+      "shop": "BRUNCH_SPOT",
+      "route_id": 24,
+      "source_episode_id": 97659997,
+      "source_reward": 76323,
+      "training_games": 34,
+      "training_win_rate": 0.38235294117647056,
+      "training_mean_margin": -10943.323529411764,
+      "training_invalid_mean": 10.470588235294118,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 2,
+      "shop": "FARMERS_MARKET",
+      "route_id": 57,
+      "source_episode_id": 97740187,
+      "source_reward": 93126,
+      "training_games": 40,
+      "training_win_rate": 0.425,
+      "training_mean_margin": -6238.425,
+      "training_invalid_mean": 37.725,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 3,
+      "shop": "ICE_CREAM_SHOP",
+      "route_id": 71,
+      "source_episode_id": 97975206,
+      "source_reward": 115186,
+      "training_games": 16,
+      "training_win_rate": 0.5,
+      "training_mean_margin": -9085.9375,
+      "training_invalid_mean": 66.5,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 4,
+      "shop": "PET_CAFE",
+      "route_id": 30,
+      "source_episode_id": 97673777,
+      "source_reward": 99948,
+      "training_games": 22,
+      "training_win_rate": 0.8636363636363636,
+      "training_mean_margin": 6808.227272727273,
+      "training_invalid_mean": 3.9545454545454546,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 5,
+      "shop": "PIZZA_SHOP",
+      "route_id": 4,
+      "source_episode_id": 97614334,
+      "source_reward": 119275,
+      "training_games": 24,
+      "training_win_rate": 0.75,
+      "training_mean_margin": 4070.7083333333335,
+      "training_invalid_mean": 28.833333333333332,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 6,
+      "shop": "SMOOTHIE_SHOP",
+      "route_id": 4,
+      "source_episode_id": 97614334,
+      "source_reward": 119275,
+      "training_games": 24,
+      "training_win_rate": 0.3333333333333333,
+      "training_mean_margin": -14510.375,
+      "training_invalid_mean": 171.79166666666666,
+      "selection": "unrestricted same-shop train result"
+    },
+    {
+      "shop_id": 7,
+      "shop": "YARN_STORE",
+      "route_id": 38,
+      "source_episode_id": 97694403,
+      "source_reward": 134035,
+      "training_games": 54,
+      "training_win_rate": 0.8518518518518519,
+      "training_mean_margin": 13700.814814814816,
+      "training_invalid_mean": 13.833333333333334,
+      "selection": "unrestricted same-shop train result"
+    }
+  ],
+  "selection_rule": "all source routes eligible; maximize training win rate, then mean margin, lower invalid recovery, and source reward",
+  "status": "TRAINING_ONLY"
+}
