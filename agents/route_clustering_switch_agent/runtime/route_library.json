@@ -1752,6 +1752,365 @@
       "selected": true,
       "drop_reason": null,
       "source_execution_hard_failures": 2
+    },
+    {
+      "family": "EV001",
+      "alias": "遗传路线EV001-G001",
+      "route_id": "evolved:f4a73cbcf647ece7d98ff133",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2,
+      "evolution": {
+        "parent_family": "G001",
+        "parent_route_id": "97363665:0",
+        "source_validation_family": "HV027",
+        "source_rank": 29,
+        "portfolio_rank": 1,
+        "tape_sha256": "f4a73cbcf647ece7d98ff133cec7af8968ac03e93146d6ce61379345117b4029",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "MELON",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "delta": -2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 576,
+            "stop": 719,
+            "delta": -1
+          }
+        ],
+        "holdout_candidate_score": 0.7755952477455139,
+        "holdout_incremental_oracle_score": 0.0028571428265422583
+      }
+    },
+    {
+      "family": "EV002",
+      "alias": "遗传路线EV002-G006",
+      "route_id": "evolved:fbab3d26535a8efc4a22d10a",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV034",
+        "source_rank": 80,
+        "portfolio_rank": 2,
+        "tape_sha256": "fbab3d26535a8efc4a22d10ad8a0b022188a066e58c7a4240fabf801d4295438",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "start": 144,
+            "stop": 288,
+            "delta": -6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "MILK",
+            "start": 288,
+            "stop": 432,
+            "numerator": 3,
+            "denominator": 4
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "numerator": 5,
+            "denominator": 4
+          }
+        ],
+        "holdout_candidate_score": 0.6264880895614624,
+        "holdout_incremental_oracle_score": 0.0017261904431506991
+      }
+    },
+    {
+      "family": "EV003",
+      "alias": "遗传路线EV003-G006",
+      "route_id": "evolved:2f1c63f900cd5d37e1c394f4",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV035",
+        "source_rank": 95,
+        "portfolio_rank": 3,
+        "tape_sha256": "2f1c63f900cd5d37e1c394f46c3e01a49d0d059f44458d90c5010210622a34c1",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "FERTILIZER",
+            "start": 0,
+            "stop": 144,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "delta": -2
+          }
+        ],
+        "holdout_candidate_score": 0.6544047594070435,
+        "holdout_incremental_oracle_score": 0.0012499999720603228
+      }
+    },
+    {
+      "family": "EV004",
+      "alias": "遗传路线EV004-G169",
+      "route_id": "evolved:3e9a26121045eb82d21d78e3",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1,
+      "evolution": {
+        "parent_family": "G169",
+        "parent_route_id": "98294500:1",
+        "source_validation_family": "HV041",
+        "source_rank": 103,
+        "portfolio_rank": 4,
+        "tape_sha256": "3e9a26121045eb82d21d78e38816485302f0b38d9878f1c5fe9b0332492d6651",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 0,
+            "stop": 144,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "delta": -6
+          }
+        ],
+        "holdout_candidate_score": 0.347261905670166,
+        "holdout_incremental_oracle_score": 0.0011309523833915591
+      }
+    },
+    {
+      "family": "EV005",
+      "alias": "遗传路线EV005-G001",
+      "route_id": "evolved:232a1d7fb733dfb698fb123b",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2,
+      "evolution": {
+        "parent_family": "G001",
+        "parent_route_id": "97363665:0",
+        "source_validation_family": "HV000",
+        "source_rank": 1,
+        "portfolio_rank": 5,
+        "tape_sha256": "232a1d7fb733dfb698fb123b1372cc217939cdad26976648c0cb02d245c276a6",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "MELON",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "numerator": 1,
+            "denominator": 2
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "MILK",
+            "start": 576,
+            "stop": 719,
+            "numerator": 3,
+            "denominator": 2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 576,
+            "stop": 719,
+            "delta": -1
+          }
+        ],
+        "holdout_candidate_score": 0.6678571701049805,
+        "holdout_incremental_oracle_score": 0.0026785715017467737
+      }
+    },
+    {
+      "family": "EV006",
+      "alias": "遗传路线EV006-G008",
+      "route_id": "evolved:c3688fa659dc90ada5d6fd73",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8,
+      "evolution": {
+        "parent_family": "G008",
+        "parent_route_id": "97420634:0",
+        "source_validation_family": "HV055",
+        "source_rank": 97,
+        "portfolio_rank": 6,
+        "tape_sha256": "c3688fa659dc90ada5d6fd73dbd291879a9aeb3b623e874276426155c7698e33",
+        "genes": [
+          {
+            "operator": "scale_quantity",
+            "operation": "BUY_SEED",
+            "item": "WHEAT",
+            "start": 0,
+            "stop": 144,
+            "numerator": 1,
+            "denominator": 2
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "BUY_SEED",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "numerator": 5,
+            "denominator": 4
+          }
+        ],
+        "holdout_candidate_score": 0.600595235824585,
+        "holdout_incremental_oracle_score": 0.0003571428533177823
+      }
+    },
+    {
+      "family": "EV007",
+      "alias": "遗传路线EV007-G227",
+      "route_id": "evolved:fef1af040931027001b79193",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5,
+      "evolution": {
+        "parent_family": "G227",
+        "parent_route_id": "97616951:0",
+        "source_validation_family": "HV046",
+        "source_rank": 108,
+        "portfolio_rank": 7,
+        "tape_sha256": "fef1af040931027001b7919344428602f0a7248ed5ddea311d3a8101a5df4c5a",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_ANIMAL",
+            "item": "COW",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 432,
+            "stop": 576,
+            "numerator": 1,
+            "denominator": 2
+          }
+        ],
+        "holdout_candidate_score": 0.539642870426178,
+        "holdout_incremental_oracle_score": 0.0006547619123011827
+      }
+    },
+    {
+      "family": "EV008",
+      "alias": "遗传路线EV008-G006",
+      "route_id": "evolved:9df207aed3c57326e9053d76",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV037",
+        "source_rank": 100,
+        "portfolio_rank": 8,
+        "tape_sha256": "9df207aed3c57326e9053d76025d9607ee5fdc43609326436504f40c73c2d4d0",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "delta": 2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "FERTILIZER",
+            "start": 432,
+            "stop": 576,
+            "delta": 2
+          }
+        ],
+        "holdout_candidate_score": 0.433095246553421,
+        "holdout_incremental_oracle_score": 5.952380888629705e-05
+      }
     }
   ],
   "selected": [
@@ -3504,8 +3863,384 @@
       "selected": true,
       "drop_reason": null,
       "source_execution_hard_failures": 2
+    },
+    {
+      "family": "EV001",
+      "alias": "遗传路线EV001-G001",
+      "route_id": "evolved:f4a73cbcf647ece7d98ff133",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2,
+      "evolution": {
+        "parent_family": "G001",
+        "parent_route_id": "97363665:0",
+        "source_validation_family": "HV027",
+        "source_rank": 29,
+        "portfolio_rank": 1,
+        "tape_sha256": "f4a73cbcf647ece7d98ff133cec7af8968ac03e93146d6ce61379345117b4029",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "MELON",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "delta": -2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 576,
+            "stop": 719,
+            "delta": -1
+          }
+        ],
+        "holdout_candidate_score": 0.7755952477455139,
+        "holdout_incremental_oracle_score": 0.0028571428265422583
+      }
+    },
+    {
+      "family": "EV002",
+      "alias": "遗传路线EV002-G006",
+      "route_id": "evolved:fbab3d26535a8efc4a22d10a",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV034",
+        "source_rank": 80,
+        "portfolio_rank": 2,
+        "tape_sha256": "fbab3d26535a8efc4a22d10ad8a0b022188a066e58c7a4240fabf801d4295438",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "start": 144,
+            "stop": 288,
+            "delta": -6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "MILK",
+            "start": 288,
+            "stop": 432,
+            "numerator": 3,
+            "denominator": 4
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "numerator": 5,
+            "denominator": 4
+          }
+        ],
+        "holdout_candidate_score": 0.6264880895614624,
+        "holdout_incremental_oracle_score": 0.0017261904431506991
+      }
+    },
+    {
+      "family": "EV003",
+      "alias": "遗传路线EV003-G006",
+      "route_id": "evolved:2f1c63f900cd5d37e1c394f4",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV035",
+        "source_rank": 95,
+        "portfolio_rank": 3,
+        "tape_sha256": "2f1c63f900cd5d37e1c394f46c3e01a49d0d059f44458d90c5010210622a34c1",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "FERTILIZER",
+            "start": 0,
+            "stop": 144,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "delta": -2
+          }
+        ],
+        "holdout_candidate_score": 0.6544047594070435,
+        "holdout_incremental_oracle_score": 0.0012499999720603228
+      }
+    },
+    {
+      "family": "EV004",
+      "alias": "遗传路线EV004-G169",
+      "route_id": "evolved:3e9a26121045eb82d21d78e3",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1,
+      "evolution": {
+        "parent_family": "G169",
+        "parent_route_id": "98294500:1",
+        "source_validation_family": "HV041",
+        "source_rank": 103,
+        "portfolio_rank": 4,
+        "tape_sha256": "3e9a26121045eb82d21d78e38816485302f0b38d9878f1c5fe9b0332492d6651",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 0,
+            "stop": 144,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "delta": -6
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 288,
+            "stop": 432,
+            "delta": -6
+          }
+        ],
+        "holdout_candidate_score": 0.347261905670166,
+        "holdout_incremental_oracle_score": 0.0011309523833915591
+      }
+    },
+    {
+      "family": "EV005",
+      "alias": "遗传路线EV005-G001",
+      "route_id": "evolved:232a1d7fb733dfb698fb123b",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2,
+      "evolution": {
+        "parent_family": "G001",
+        "parent_route_id": "97363665:0",
+        "source_validation_family": "HV000",
+        "source_rank": 1,
+        "portfolio_rank": 5,
+        "tape_sha256": "232a1d7fb733dfb698fb123b1372cc217939cdad26976648c0cb02d245c276a6",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_SEED",
+            "item": "MELON",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "numerator": 1,
+            "denominator": 2
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "MILK",
+            "start": 576,
+            "stop": 719,
+            "numerator": 3,
+            "denominator": 2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WHEAT",
+            "start": 576,
+            "stop": 719,
+            "delta": -1
+          }
+        ],
+        "holdout_candidate_score": 0.6678571701049805,
+        "holdout_incremental_oracle_score": 0.0026785715017467737
+      }
+    },
+    {
+      "family": "EV006",
+      "alias": "遗传路线EV006-G008",
+      "route_id": "evolved:c3688fa659dc90ada5d6fd73",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8,
+      "evolution": {
+        "parent_family": "G008",
+        "parent_route_id": "97420634:0",
+        "source_validation_family": "HV055",
+        "source_rank": 97,
+        "portfolio_rank": 6,
+        "tape_sha256": "c3688fa659dc90ada5d6fd73dbd291879a9aeb3b623e874276426155c7698e33",
+        "genes": [
+          {
+            "operator": "scale_quantity",
+            "operation": "BUY_SEED",
+            "item": "WHEAT",
+            "start": 0,
+            "stop": 144,
+            "numerator": 1,
+            "denominator": 2
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "BUY_SEED",
+            "item": "WHEAT",
+            "start": 144,
+            "stop": 288,
+            "numerator": 5,
+            "denominator": 4
+          }
+        ],
+        "holdout_candidate_score": 0.600595235824585,
+        "holdout_incremental_oracle_score": 0.0003571428533177823
+      }
+    },
+    {
+      "family": "EV007",
+      "alias": "遗传路线EV007-G227",
+      "route_id": "evolved:fef1af040931027001b79193",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5,
+      "evolution": {
+        "parent_family": "G227",
+        "parent_route_id": "97616951:0",
+        "source_validation_family": "HV046",
+        "source_rank": 108,
+        "portfolio_rank": 7,
+        "tape_sha256": "fef1af040931027001b7919344428602f0a7248ed5ddea311d3a8101a5df4c5a",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "BUY_ANIMAL",
+            "item": "COW",
+            "start": 144,
+            "stop": 288,
+            "delta": 6
+          },
+          {
+            "operator": "scale_quantity",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 432,
+            "stop": 576,
+            "numerator": 1,
+            "denominator": 2
+          }
+        ],
+        "holdout_candidate_score": 0.539642870426178,
+        "holdout_incremental_oracle_score": 0.0006547619123011827
+      }
+    },
+    {
+      "family": "EV008",
+      "alias": "遗传路线EV008-G006",
+      "route_id": "evolved:9df207aed3c57326e9053d76",
+      "team": "evolved_route_library",
+      "support": 0,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10,
+      "evolution": {
+        "parent_family": "G006",
+        "parent_route_id": "97792508:1",
+        "source_validation_family": "HV037",
+        "source_rank": 100,
+        "portfolio_rank": 8,
+        "tape_sha256": "9df207aed3c57326e9053d76025d9607ee5fdc43609326436504f40c73c2d4d0",
+        "genes": [
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "WOOL",
+            "start": 144,
+            "stop": 288,
+            "delta": 2
+          },
+          {
+            "operator": "shift_market",
+            "operation": "SELL",
+            "item": "FERTILIZER",
+            "start": 432,
+            "stop": 576,
+            "delta": 2
+          }
+        ],
+        "holdout_candidate_score": 0.433095246553421,
+        "holdout_incremental_oracle_score": 5.952380888629705e-05
+      }
     }
   ],
-  "actions_file": "experiments/teammate-route-meta/intent-route-actions-v2-175.json.zlib",
-  "actions_sha256": "c4acc1db68ac12f2023aa058ce3ff4e69553e00a3b12a355efdbaea493243495"
+  "actions_file": "route_actions.json.zlib",
+  "actions_sha256": "b8ae0c9748eb08a5ef7670729cd19e951ab0d29bcb2fc49c7430554c6e99a9ce",
+  "evolution_extension": {
+    "schema": "validated-evolved-route-extension-v1",
+    "source_validation": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\Kaggriculture_route_clustering_switch_agent_main\\agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\native-multiparent-switch-holdout16-all175-v1.json",
+    "base_route_count": 175,
+    "generated_route_count": 8,
+    "total_route_count": 183,
+    "families": [
+      "EV001",
+      "EV002",
+      "EV003",
+      "EV004",
+      "EV005",
+      "EV006",
+      "EV007",
+      "EV008"
+    ]
+  }
 }

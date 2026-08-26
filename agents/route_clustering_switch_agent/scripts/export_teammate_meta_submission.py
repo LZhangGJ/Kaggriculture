@@ -42,6 +42,7 @@ _EXPANDED = TeammateExpandedRouteAgent(_SOURCE, _TAPES, "searched_teammate_submi
 _CONTROLLER = SearchRouteController(
     _POLICY_PAYLOAD, _ROUTE_BY_FAMILY, _OPENING_WEIGHTS, rng_seed=None
 )
+_CONTROLLER.forced_opening = __FORCED_OPENING__
 _POLICY = SearchRoutedTeammateAgent(
     _EXPANDED, _CONTROLLER, _POLICY_PAYLOAD.get("targets", ())
 )
@@ -52,6 +53,12 @@ def agent(observation, configuration=None):
 '''
 
 
+def _copyfile(source: Path, destination: Path) -> None:
+    """Copy an export asset unless source and destination are the same file."""
+    if source.resolve() != destination.resolve():
+        shutil.copyfile(source, destination)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base", type=Path, required=True)
@@ -60,6 +67,10 @@ def main() -> None:
     parser.add_argument("--policy", type=Path, required=True)
     parser.add_argument("--nash", type=Path, required=True)
     parser.add_argument("--holdout", type=Path, required=True)
+    parser.add_argument(
+        "--forced-opening",
+        help="Use a deterministic opening while retaining trajectory-conditioned switching.",
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -97,10 +108,11 @@ def main() -> None:
     holdout = json.loads(args.holdout.read_text(encoding="utf-8"))
 
     args.output.mkdir(parents=True, exist_ok=True)
-    (args.output / "main.py").write_text(ENTRYPOINT, encoding="utf-8")
-    shutil.copyfile(args.base, args.output / "teammate_base.py")
-    shutil.copyfile(args.actions, args.output / "route_actions.json.zlib")
-    shutil.copyfile(args.metadata, args.output / "route_library.json")
+    entrypoint = ENTRYPOINT.replace("__FORCED_OPENING__", repr(args.forced_opening))
+    (args.output / "main.py").write_text(entrypoint, encoding="utf-8")
+    _copyfile(args.base, args.output / "teammate_base.py")
+    _copyfile(args.actions, args.output / "route_actions.json.zlib")
+    _copyfile(args.metadata, args.output / "route_library.json")
     (args.output / "route_policy.json").write_text(
         json.dumps(runtime_policy, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
@@ -115,14 +127,15 @@ def main() -> None:
     )
     project = Path(__file__).resolve().parents[1]
     for relative in modules:
-        source = project / "meta_agent" / relative
+        source = project / "src" / "meta_agent" / relative
         destination = args.output / "meta_agent" / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, destination)
     manifest = {
         "schema_version": 1,
-        "description": "Teammate execution stack plus searched 175-route meta controller",
+        "description": "Teammate execution stack plus expanded genetic-route meta controller",
         "runtime_routes": len(json.loads(args.metadata.read_text(encoding="utf-8"))["opponent_routes"]),
+        "forced_opening": args.forced_opening,
         "opening_support": runtime_nash["opening_support"],
         "switch_nodes": [
             {

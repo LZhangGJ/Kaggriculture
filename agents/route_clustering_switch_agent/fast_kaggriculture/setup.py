@@ -14,9 +14,9 @@ setup(
     ext_modules=[Extension(
         "fast_kaggriculture._fast_kaggriculture",
         [
-            str(ROOT / "src/bindings.cpp"),
-            str(ROOT / "src/simulator.cpp"),
-            str(ROOT / "src/native_teammate.cpp"),
+            "src/bindings.cpp",
+            "src/simulator.cpp",
+            "src/native_teammate.cpp",
         ],
         include_dirs=[str(ROOT / "src"), pybind11.get_include()],
         language="c++",

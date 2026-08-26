@@ -909,7 +909,8 @@ NativeMatchResult NativeTeammateExecutor::play(int route0, int route1,
 
 std::array<float, 147> NativeTeammateExecutor::features_at(
     int route0, int route1, uint64_t seed, int checkpoint, int player,
-    int feature_route) const {
+    int feature_route, int switch_step0, int switch_route0,
+    int switch_step1, int switch_route1) const {
   if (player < 0 || player > 1 || feature_route < 0 ||
       feature_route >= int(library_.routes.size()))
     throw std::invalid_argument("invalid native feature player or route");
@@ -919,8 +920,12 @@ std::array<float, 147> NativeTeammateExecutor::features_at(
     history.update(env);
     if (env.step_count() == checkpoint)
       return build_features(env, player, history, library_.routes[feature_route]);
+    const int active0 = switch_step0 >= 0 && env.step_count() >= switch_step0
+                            ? switch_route0 : route0;
+    const int active1 = switch_step1 >= 0 && env.step_count() >= switch_step1
+                            ? switch_route1 : route1;
     std::array<PlayerAction, 2> actions{
-        action(env, 0, route0, states[0]), action(env, 1, route1, states[1])};
+        action(env, 0, active0, states[0]), action(env, 1, active1, states[1])};
     env.step(actions);
   }
   throw std::invalid_argument("checkpoint is outside the episode");

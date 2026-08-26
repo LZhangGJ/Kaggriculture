@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <cmath>
 #include <memory>
+#include <numeric>
 #include <unordered_map>
 #include <vector>
 
@@ -264,7 +265,7 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
  py::enum_<Op>(m,"Op").value("PASS",Op::PASS).value("NORTH",Op::NORTH).value("SOUTH",Op::SOUTH).value("EAST",Op::EAST).value("WEST",Op::WEST).value("DROP",Op::DROP).value("PICKUP",Op::PICKUP).value("PLACE",Op::PLACE).value("PLANT",Op::PLANT).value("WATER",Op::WATER).value("HARVEST",Op::HARVEST).value("FERTILIZE",Op::FERTILIZE).value("DIG",Op::DIG).value("BUILD_COOP",Op::BUILD_COOP).value("BUILD_PASTURE",Op::BUILD_PASTURE).value("FEED",Op::FEED).value("COLLECT_FERTILIZER",Op::COLLECT_FERTILIZER).value("CARE",Op::CARE).value("HIRE",Op::HIRE).value("BUY_LAND",Op::BUY_LAND).value("BUY_SEED",Op::BUY_SEED).value("BUY_PRODUCT",Op::BUY_PRODUCT).value("BUY_ANIMAL",Op::BUY_ANIMAL).value("SELL",Op::SELL);
  py::enum_<Item>(m,"Item").value("NONE",Item::NONE).value("WHEAT",Item::WHEAT).value("CARROT",Item::CARROT).value("TOMATO",Item::TOMATO).value("STRAWBERRY",Item::STRAWBERRY).value("MELON",Item::MELON).value("EGG",Item::EGG).value("MILK",Item::MILK).value("WOOL",Item::WOOL).value("FERTILIZER",Item::FERTILIZER).value("GOOSE",Item::GOOSE).value("COW",Item::COW).value("SHEEP",Item::SHEEP);
  py::class_<Config>(m,"Config").def(py::init<>()).def_readwrite("episode_steps",&Config::episode_steps).def_readwrite("board_size",&Config::board_size).def_readwrite("starting_money",&Config::starting_money).def_readwrite("max_market_orders",&Config::max_market_orders).def_readwrite("turns_per_day",&Config::turns_per_day).def_readwrite("shed_capacity",&Config::shed_capacity).def_readwrite("weed_spawn_chance",&Config::weed_spawn_chance).def_readwrite("town_shop_unlock_interval",&Config::town_shop_unlock_interval).def_readwrite("town_shop_sell_interval",&Config::town_shop_sell_interval).def_readwrite("town_center_sell_interval",&Config::town_center_sell_interval).def_readwrite("farm_hand_cost_mult",&Config::farm_hand_cost_mult);
- py::class_<Simulator>(m,"FastEnv").def(py::init<Config,uint64_t>(),py::arg("config")=Config{},py::arg("seed")=0).def("clone",[](const Simulator&s){return Simulator(s);}).def("reset",[](Simulator&s,uint64_t seed){s.reset(seed);return py::make_tuple(observation(s,0),observation(s,1));}).def("reset_raw",&Simulator::reset).def("step",[](Simulator&s,py::object a){s.step(parse_actions(a));return py::make_tuple(observation(s,0),observation(s,1));}).def("step_raw",[](Simulator&s,py::object a){auto actions=parse_actions(a);py::gil_scoped_release release;s.step(actions);}).def("step_packed",[](Simulator&s,py::array_t<int32_t>u,py::array_t<int32_t>uc,py::array_t<int32_t>ma,py::array_t<int32_t>mc){s.step(packed(u,uc,ma,mc));return py::make_tuple(observation(s,0),observation(s,1));}).def("step_packed_raw",[](Simulator&s,py::array_t<int32_t>u,py::array_t<int32_t>uc,py::array_t<int32_t>ma,py::array_t<int32_t>mc){auto actions=packed(u,uc,ma,mc);py::gil_scoped_release release;s.step(actions);}).def("observation",&observation).def_property_readonly("last_market_fills",[](const Simulator&s){return py::make_tuple(s.last_market_fills()[0],s.last_market_fills()[1]);}).def_property_readonly("last_market_cash_shortfalls",[](const Simulator&s){return py::make_tuple(s.last_market_cash_shortfalls()[0],s.last_market_cash_shortfalls()[1]);}).def_property_readonly("last_end_of_day_overflow",[](const Simulator&s){return py::make_tuple(s.last_end_of_day_overflow()[0],s.last_end_of_day_overflow()[1]);}).def_property_readonly("done",&Simulator::done).def_property_readonly("step_count",&Simulator::step_count).def_property_readonly("rewards",[](const Simulator&s){return s.done()?py::make_tuple(s.farms()[0].money,s.farms()[1].money):py::make_tuple(0.,0.);});
+ py::class_<Simulator>(m,"FastEnv").def(py::init<Config,uint64_t>(),py::arg("config")=Config{},py::arg("seed")=0).def("clone",[](const Simulator&s){return Simulator(s);}).def("reset",[](Simulator&s,uint64_t seed){s.reset(seed);return py::make_tuple(observation(s,0),observation(s,1));}).def("reset_raw",&Simulator::reset).def("step",[](Simulator&s,py::object a){s.step(parse_actions(a));return py::make_tuple(observation(s,0),observation(s,1));}).def("step_raw",[](Simulator&s,py::object a){auto actions=parse_actions(a);py::gil_scoped_release release;s.step(actions);}).def("step_packed",[](Simulator&s,py::array_t<int32_t>u,py::array_t<int32_t>uc,py::array_t<int32_t>ma,py::array_t<int32_t>mc){s.step(packed(u,uc,ma,mc));return py::make_tuple(observation(s,0),observation(s,1));}).def("step_packed_raw",[](Simulator&s,py::array_t<int32_t>u,py::array_t<int32_t>uc,py::array_t<int32_t>ma,py::array_t<int32_t>mc){auto actions=packed(u,uc,ma,mc);py::gil_scoped_release release;s.step(actions);}).def("observation",&observation).def_property_readonly("last_market_fills",[](const Simulator&s){return py::make_tuple(s.last_market_fills()[0],s.last_market_fills()[1]);}).def_property_readonly("last_market_cash_shortfalls",[](const Simulator&s){return py::make_tuple(s.last_market_cash_shortfalls()[0],s.last_market_cash_shortfalls()[1]);}).def_property_readonly("last_end_of_day_overflow",[](const Simulator&s){return py::make_tuple(s.last_end_of_day_overflow()[0],s.last_end_of_day_overflow()[1]);}).def_property_readonly("done",&Simulator::done).def_property_readonly("step_count",&Simulator::step_count).def_property_readonly("rewards",[](const Simulator&s)->py::tuple{if(s.done())return py::make_tuple(double(s.farms()[0].money),double(s.farms()[1].money));return py::make_tuple(0.,0.);});
  py::class_<FastBatch>(m,"FastBatchEnv").def(py::init<int,Config,uint64_t>(),py::arg("num_envs"),py::arg("config")=Config{},py::arg("seed0")=0).def("reset",&FastBatch::reset).def("step_packed",&FastBatch::step_packed).def("run_packed_segment",&FastBatch::run_packed_segment).def("observation",&FastBatch::observation_at).def_property_readonly("num_envs",&FastBatch::size);
  m.def("raw_tape_audit_metric_names",[](){return std::vector<std::string>{
    "unit_attempts", "unit_valid", "unit_no_actor", "plant_no_seed",
@@ -317,6 +318,14 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
      for(ssize_t i=0;i<in.shape(0);i++){auto row=x.features_at((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5));for(int j=0;j<147;j++)out(i,j)=row[j];}}
     return features;
   },py::arg("tasks"))
+  .def("features_with_switch_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks){
+    auto in=tasks.unchecked<2>();if(in.shape(1)!=10)throw std::invalid_argument("feature tasks must have columns route0,route1,seed,checkpoint,player,feature_route,switch_step0,switch_route0,switch_step1,switch_route1");
+    py::array_t<float> features({in.shape(0),(ssize_t)147});auto out=features.mutable_unchecked<2>();
+    {py::gil_scoped_release release;
+     #pragma omp parallel for schedule(dynamic,1)
+     for(ssize_t i=0;i<in.shape(0);i++){auto row=x.features_at((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5),(int)in(i,6),(int)in(i,7),(int)in(i,8),(int)in(i,9));for(int j=0;j<147;j++)out(i,j)=row[j];}}
+    return features;
+  },py::arg("tasks"))
   .def("play_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks){
     auto in=tasks.unchecked<2>();if(in.shape(1)!=7)throw std::invalid_argument("tasks must have columns route0,route1,seed,switch_step0,switch_route0,switch_step1,switch_route1");
     py::array_t<double> rewards({in.shape(0),(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
@@ -358,41 +367,48 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
     py::dict out;out["score"]=score;out["margin"]=margin;out["games"]=games;out["mean_unit_failures"]=unit_fail;out["mean_market_failures"]=market_fail;return out;
   },py::arg("seeds"))
   .def("switch_search",[](const NativeTeammateExecutor&x,py::sequence raw_openings,
-       py::sequence raw_targets,py::sequence raw_checkpoints,py::sequence raw_seeds){
+       py::sequence raw_targets,py::sequence raw_checkpoints,py::sequence raw_seeds,
+       py::object raw_opponents){
     auto integers=[](py::sequence raw){std::vector<int64_t> out;out.reserve(raw.size());for(auto value:raw)out.push_back(py::cast<int64_t>(value));return out;};
     const auto openings=integers(raw_openings),targets=integers(raw_targets),checkpoints=integers(raw_checkpoints),seed_values=integers(raw_seeds);
     if(openings.empty()||targets.empty()||checkpoints.empty()||seed_values.empty())throw std::invalid_argument("switch search dimensions must be non-empty");
-    const ssize_t no=openings.size(),nc=checkpoints.size(),nt=targets.size(),nr=x.route_count(),ns=seed_values.size();
+    std::vector<int64_t> opponents;
+    if(raw_opponents.is_none()){opponents.resize(x.route_count());std::iota(opponents.begin(),opponents.end(),0);}
+    else opponents=integers(py::cast<py::sequence>(raw_opponents));
+    if(opponents.empty())throw std::invalid_argument("switch search opponents must be non-empty");
+    const ssize_t no=openings.size(),nc=checkpoints.size(),nt=targets.size(),nr=x.route_count(),np=opponents.size(),ns=seed_values.size();
     for(auto route:openings)if(route<0||route>=nr)throw std::invalid_argument("invalid opening route");
     for(auto route:targets)if(route<0||route>=nr)throw std::invalid_argument("invalid target route");
-    py::array_t<uint8_t> outcome({no,nc,nt,nr,ns,(ssize_t)2});
-    py::array_t<float> margin({no,nc,nt,nr,ns,(ssize_t)2});
-    py::array_t<float> states({no,nc,nr,ns,(ssize_t)2,(ssize_t)147});
+    for(auto route:opponents)if(route<0||route>=nr)throw std::invalid_argument("invalid opponent route");
+    py::array_t<uint8_t> outcome({no,nc,nt,np,ns,(ssize_t)2});
+    py::array_t<float> margin({no,nc,nt,np,ns,(ssize_t)2});
+    py::array_t<float> states({no,nc,np,ns,(ssize_t)2,(ssize_t)147});
     auto yy=outcome.mutable_unchecked<6>();
     auto mm=margin.mutable_unchecked<6>();
     auto xx=states.mutable_unchecked<6>();
-    const ssize_t state_tasks=no*nc*nr*ns*2;
+    const ssize_t state_tasks=no*nc*np*ns*2;
     {py::gil_scoped_release release;
      #pragma omp parallel for schedule(dynamic,1)
      for(ssize_t flat=0;flat<state_tasks;flat++){
        ssize_t value=flat;const int seat=value%2;value/=2;const ssize_t si=value%ns;value/=ns;
-       const ssize_t opponent=value%nr;value/=nr;const ssize_t ci=value%nc;value/=nc;const ssize_t oi=value;
+       const ssize_t pi=value%np;value/=np;const ssize_t ci=value%nc;value/=nc;const ssize_t oi=value;
+       const int opponent=(int)opponents[pi];
        const int opening=(int)openings[oi],checkpoint=(int)checkpoints[ci];const uint64_t seed=(uint64_t)seed_values[si];
-       const int route0=seat==0?opening:(int)opponent,route1=seat==0?(int)opponent:opening;
+       const int route0=seat==0?opening:opponent,route1=seat==0?opponent:opening;
        const auto features=x.features_at(route0,route1,seed,checkpoint,seat,opening);
-       for(int f=0;f<147;f++)xx(oi,ci,opponent,si,seat,f)=features[f];
+       for(int f=0;f<147;f++)xx(oi,ci,pi,si,seat,f)=features[f];
        for(ssize_t ti=0;ti<nt;ti++){
          const int target=(int)targets[ti];
          const auto result=seat==0
-             ?x.play(opening,(int)opponent,seed,checkpoint,target,-1,-1,false,false)
-             :x.play((int)opponent,opening,seed,-1,-1,checkpoint,target,false,false);
+             ?x.play(opening,opponent,seed,checkpoint,target,-1,-1,false,false)
+             :x.play(opponent,opening,seed,-1,-1,checkpoint,target,false,false);
          const double own=result.rewards[seat],other=result.rewards[1-seat],difference=own-other;
-         yy(oi,ci,ti,opponent,si,seat)=difference>0?2:difference==0?1:0;
-         mm(oi,ci,ti,opponent,si,seat)=(float)difference;
+         yy(oi,ci,ti,pi,si,seat)=difference>0?2:difference==0?1:0;
+         mm(oi,ci,ti,pi,si,seat)=(float)difference;
        }
      }}
     py::dict out;out["outcome"]=outcome;out["margin"]=margin;out["states"]=states;return out;
-  },py::arg("openings"),py::arg("targets"),py::arg("checkpoints"),py::arg("seeds"));
+  },py::arg("openings"),py::arg("targets"),py::arg("checkpoints"),py::arg("seeds"),py::arg("opponents")=py::none());
  m.def("native_threshold_variants",[](py::array_t<int32_t,py::array::c_style|py::array::forcecast> left,
       py::array_t<int32_t,py::array::c_style|py::array::forcecast> right,
       py::array_t<int32_t,py::array::c_style|py::array::forcecast> feature,

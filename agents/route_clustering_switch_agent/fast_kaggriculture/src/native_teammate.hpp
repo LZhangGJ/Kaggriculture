@@ -90,7 +90,11 @@ class NativeTeammateExecutor {
                          bool capture_audit = true) const;
   std::array<float, 147> features_at(int route0, int route1, uint64_t seed,
                                      int checkpoint, int player,
-                                     int feature_route) const;
+                                     int feature_route,
+                                     int switch_step0 = -1,
+                                     int switch_route0 = -1,
+                                     int switch_step1 = -1,
+                                     int switch_route1 = -1) const;
   int route_count() const { return int(library_.routes.size()); }
 
  private:

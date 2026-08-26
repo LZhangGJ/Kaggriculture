@@ -12,30 +12,6 @@ import numpy as np
 from .route_switch_features import RouteSwitchHistory, route_switch_vector
 
 
-def route_state_vector(observation: Mapping[str, Any]) -> np.ndarray:
-    # Legacy recurrent-meta policies use this encoder.  Semantic searched trees
-    # never do, so keep the heavy legacy dependency out of the submission import
-    # closure unless such a policy is actually loaded.
-    from .recurrent_meta import (
-        market_town_vector,
-        private_plan_vector,
-        public_farm_vector,
-    )
-
-    player = int(observation.get("player", 0) or 0)
-    farms = list(observation.get("farms", []) or [])
-    own = farms[player] if player < len(farms) else {}
-    opponent = farms[1 - player] if 1 - player < len(farms) else {}
-    return np.concatenate(
-        [
-            public_farm_vector(own),
-            public_farm_vector(opponent),
-            private_plan_vector(observation),
-            market_town_vector(observation),
-        ]
-    ).astype(np.float32)
-
-
 class NumpySearchTree:
     def __init__(self, payload: Mapping[str, Any]) -> None:
         self.classes = tuple(str(value) for value in payload["classes"])
@@ -72,7 +48,9 @@ class SearchRouteController:
             else dict(policy)
         )
         self.route_by_family = {str(key): str(value) for key, value in route_by_family.items()}
-        self.feature_schema = str(payload.get("feature_schema", "recurrent_meta_v1"))
+        self.feature_schema = str(payload.get("feature_schema", "semantic_route_switch_v1"))
+        if self.feature_schema != "semantic_route_switch_v1":
+            raise ValueError(f"unsupported route feature schema: {self.feature_schema}")
         total = sum(max(0.0, float(weight)) for _, weight in opening_weights)
         if total <= 0:
             raise ValueError("opening weights must have positive mass")
@@ -132,12 +110,9 @@ class SearchRouteController:
             None,
         )
         if not self.switched and node is not None:
-            if self.feature_schema == "semantic_route_switch_v1":
-                route_id = self.route_by_family[self.opening]
-                route_actions = (action_tapes or {}).get(route_id)
-                vector = route_switch_vector(observation, self.history, route_actions)
-            else:
-                vector = route_state_vector(observation)
+            route_id = self.route_by_family[self.opening]
+            route_actions = (action_tapes or {}).get(route_id)
+            vector = route_switch_vector(observation, self.history, route_actions)
             prediction = node[1].predict(vector)
             targets = getattr(self, "targets", ())
             if prediction in self.route_by_family:

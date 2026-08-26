@@ -1,20 +1,38 @@
 {
   "schema_version": 1,
-  "description": "Teammate execution stack plus searched 175-route meta controller, fixed G001 opening",
+  "description": "Teammate execution stack plus expanded genetic-route meta controller",
+  "runtime_routes": 183,
   "forced_opening": "G001",
-  "runtime_routes": 175,
   "opening_support": [
     {
-      "family": "G001",
-      "weight": 0.3636363636363629,
-      "mean_score": 0.8228571428571428,
-      "worst_score": 0.4453125
+      "family": "G020",
+      "weight": 0.0037174721189575147,
+      "mean_score": 0.7184084699453552,
+      "worst_score": 0.0
+    },
+    {
+      "family": "G060",
+      "weight": 0.022304832713755614,
+      "mean_score": 0.6801571038251366,
+      "worst_score": 0.0
     },
     {
       "family": "G136",
-      "weight": 0.6363636363636348,
-      "mean_score": 0.8640625,
-      "worst_score": 0.4140625
+      "weight": 0.6468401486988886,
+      "mean_score": 0.8637295081967213,
+      "worst_score": 0.4375
+    },
+    {
+      "family": "G194",
+      "weight": 0.12639405204461351,
+      "mean_score": 0.7488046448087432,
+      "worst_score": 0.125
+    },
+    {
+      "family": "EV001",
+      "weight": 0.2007434944237936,
+      "mean_score": 0.7923497267759563,
+      "worst_score": 0.15625
     }
   ],
   "switch_nodes": [
@@ -39,19 +57,19 @@
       216
     ],
     "node_count": 3,
-    "baseline_score": 0.8117633928571428,
-    "dynamic_score": 0.8961495535714286,
-    "improvement": 0.08438616071428572,
-    "one_sided_95pct_lower": 0.07643251068387756,
-    "seed_standard_error": 0.004817908814761618,
-    "switch_rate": 0.42015625
+    "baseline_score": 0.8056693989071039,
+    "dynamic_score": 0.90625,
+    "improvement": 0.10058060109289617,
+    "one_sided_95pct_lower": 0.09090501222175199,
+    "seed_standard_error": 0.005839431038573521,
+    "switch_rate": 1.0
   },
   "sources": {
-    "base": "experiments/teammate-route-meta/candidate/main.py",
-    "actions": "experiments/teammate-route-meta/intent-route-actions-v2-175.json.zlib",
-    "metadata": "experiments/teammate-route-meta/intent-route-library-v2-175.json",
-    "policy": "experiments/macro-route-unified-20260825/intent-11-switch-final-policy-v1.json",
-    "nash": "experiments/macro-route-unified-20260825/intent-175-nash-64seeds-v2.json",
-    "holdout": "experiments/macro-route-unified-20260825/intent-11-switch-final-holdout-256seeds-v1.json"
+    "base": "agents\\route_clustering_switch_agent\\runtime\\teammate_base.py",
+    "actions": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route_actions.json.zlib",
+    "metadata": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route_library.json",
+    "policy": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route-policy-residual-selected-v1.json",
+    "nash": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\opening-nash-16seeds-v1.json",
+    "holdout": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\holdout-residual-policy-128seeds-v1.json"
   }
 }

@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping, Sequence
 
 from fast_kaggriculture import NativeTeammateExecutor
 
@@ -40,13 +40,21 @@ class NativeTeammateBundle:
         source_path: str | Path,
         actions_path: str | Path,
         metadata_path: str | Path,
+        additional_routes: Mapping[str, Sequence[Mapping[str, Any]]] | None = None,
     ) -> None:
         source = Path(source_path).read_text(encoding="utf-8")
         actions = load_action_tapes(actions_path)
         metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
         entries = list(metadata["opponent_routes"])
-        self.families = tuple(str(value["family"]) for value in entries)
-        self.route_ids = tuple(str(value["route_id"]) for value in entries)
+        extra = dict(additional_routes or {})
+        original_families = tuple(str(value["family"]) for value in entries)
+        duplicates = sorted(set(original_families) & set(extra))
+        if duplicates:
+            raise ValueError(f"additional route families already exist: {duplicates}")
+        self.families = original_families + tuple(extra)
+        self.route_ids = tuple(str(value["route_id"]) for value in entries) + tuple(
+            f"synthetic:{family}" for family in extra
+        )
         self.family_index = {family: index for index, family in enumerate(self.families)}
 
         # Executing the frozen payload here only exposes its immutable reference
@@ -60,7 +68,8 @@ class NativeTeammateBundle:
         moon_legacy = [
             moon_module[f"_LEGACY_ACTIONS_{label}"] for label in _MOON_LABELS
         ]
-        routes = [actions[route_id] for route_id in self.route_ids]
+        routes = [actions[str(value["route_id"])] for value in entries]
+        routes.extend(extra.values())
         self.executor = NativeTeammateExecutor(routes, r5, md, moon, moon_legacy)
 
     def index(self, family: str) -> int:
