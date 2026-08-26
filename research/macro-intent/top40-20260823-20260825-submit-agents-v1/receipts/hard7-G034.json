@@ -1,0 +1,657 @@
+{
+  "schema": "kaggriculture.teammate-macro-route.route-tree-vs-hard7.v1",
+  "generated_at_utc": "2026-08-26T11:03:38.806451+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "device": "cuda:0",
+  "candidate": {
+    "opening": "G034",
+    "single_switch": true,
+    "nodes": [
+      144,
+      216
+    ]
+  },
+  "seed_start": 1620001,
+  "batch_per_seat": 128,
+  "opponents": [
+    "fc24b_frozen_best",
+    "kaito_v48",
+    "rank04_arman_v45",
+    "rank13_burntpotato_v12",
+    "top20_20260825_tetsuya_current_firstshop_v1",
+    "top20_20260825_hasegawa_new77_firstshop_v1",
+    "top20_20260825_crop_dusta_current_unrestricted_v1"
+  ],
+  "aggregates": [
+    {
+      "opponent": "fc24b_frozen_best",
+      "games": 256,
+      "wins": 193,
+      "ties": 0,
+      "losses": 63,
+      "score_rate": 0.75390625,
+      "win_rate": 0.75390625,
+      "mean_margin": 4767.98828125,
+      "switch_rate": 0.484375
+    },
+    {
+      "opponent": "kaito_v48",
+      "games": 256,
+      "wins": 183,
+      "ties": 0,
+      "losses": 73,
+      "score_rate": 0.71484375,
+      "win_rate": 0.71484375,
+      "mean_margin": 5044.2265625,
+      "switch_rate": 0.46875
+    },
+    {
+      "opponent": "rank04_arman_v45",
+      "games": 256,
+      "wins": 253,
+      "ties": 0,
+      "losses": 3,
+      "score_rate": 0.98828125,
+      "win_rate": 0.98828125,
+      "mean_margin": 16804.44140625,
+      "switch_rate": 0.4453125
+    },
+    {
+      "opponent": "rank13_burntpotato_v12",
+      "games": 256,
+      "wins": 233,
+      "ties": 0,
+      "losses": 23,
+      "score_rate": 0.91015625,
+      "win_rate": 0.91015625,
+      "mean_margin": 16795.83203125,
+      "switch_rate": 0.4921875
+    },
+    {
+      "opponent": "top20_20260825_tetsuya_current_firstshop_v1",
+      "games": 256,
+      "wins": 213,
+      "ties": 0,
+      "losses": 43,
+      "score_rate": 0.83203125,
+      "win_rate": 0.83203125,
+      "mean_margin": 14037.5390625,
+      "switch_rate": 0.57421875
+    },
+    {
+      "opponent": "top20_20260825_hasegawa_new77_firstshop_v1",
+      "games": 256,
+      "wins": 184,
+      "ties": 0,
+      "losses": 72,
+      "score_rate": 0.71875,
+      "win_rate": 0.71875,
+      "mean_margin": 5936.73828125,
+      "switch_rate": 0.453125
+    },
+    {
+      "opponent": "top20_20260825_crop_dusta_current_unrestricted_v1",
+      "games": 256,
+      "wins": 183,
+      "ties": 0,
+      "losses": 73,
+      "score_rate": 0.71484375,
+      "win_rate": 0.71484375,
+      "mean_margin": 8686.9375,
+      "switch_rate": 0.546875
+    }
+  ],
+  "results": [
+    {
+      "opponent": "fc24b_frozen_best",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 96,
+      "ties": 0,
+      "losses": 32,
+      "score_rate": 0.75,
+      "win_rate": 0.75,
+      "mean_margin": 4662.0234375,
+      "candidate_cash_mean": 96360.0625,
+      "opponent_cash_mean": 91698.0390625,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "switch_rate": 0.484375,
+      "switch_target_route_index_counts": {
+        "30": 3,
+        "50": 22,
+        "53": 25,
+        "92": 2,
+        "51": 10
+      },
+      "final_route_counts": {
+        "G034": 66,
+        "G052": 3,
+        "G096": 22,
+        "G098": 10,
+        "G105": 25,
+        "G218": 2
+      },
+      "elapsed_seconds": 254.53975401800002,
+      "transitions_per_second": 361.5623828782826
+    },
+    {
+      "opponent": "fc24b_frozen_best",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 97,
+      "ties": 0,
+      "losses": 31,
+      "score_rate": 0.7578125,
+      "win_rate": 0.7578125,
+      "mean_margin": 4873.953125,
+      "candidate_cash_mean": 97182.2265625,
+      "opponent_cash_mean": 92308.2734375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "switch_rate": 0.484375,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 22,
+        "53": 24,
+        "92": 2,
+        "51": 10
+      },
+      "final_route_counts": {
+        "G034": 66,
+        "G052": 4,
+        "G096": 22,
+        "G098": 10,
+        "G105": 24,
+        "G218": 2
+      },
+      "elapsed_seconds": 269.79714698699996,
+      "transitions_per_second": 341.11554190910147
+    },
+    {
+      "opponent": "kaito_v48",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 92,
+      "ties": 0,
+      "losses": 36,
+      "score_rate": 0.71875,
+      "win_rate": 0.71875,
+      "mean_margin": 5209.7734375,
+      "candidate_cash_mean": 91154.4765625,
+      "opponent_cash_mean": 85944.703125,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "switch_rate": 0.4609375,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 24,
+        "53": 16,
+        "92": 6,
+        "51": 9
+      },
+      "final_route_counts": {
+        "G034": 69,
+        "G052": 4,
+        "G096": 24,
+        "G098": 9,
+        "G105": 16,
+        "G218": 6
+      },
+      "elapsed_seconds": 221.525715301,
+      "transitions_per_second": 415.44612495642195
+    },
+    {
+      "opponent": "kaito_v48",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 91,
+      "ties": 0,
+      "losses": 37,
+      "score_rate": 0.7109375,
+      "win_rate": 0.7109375,
+      "mean_margin": 4878.6796875,
+      "candidate_cash_mean": 90160.015625,
+      "opponent_cash_mean": 85281.3359375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "switch_rate": 0.4765625,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 26,
+        "53": 17,
+        "92": 5,
+        "51": 9
+      },
+      "final_route_counts": {
+        "G034": 67,
+        "G052": 4,
+        "G096": 26,
+        "G098": 9,
+        "G105": 17,
+        "G218": 5
+      },
+      "elapsed_seconds": 208.08974724999996,
+      "transitions_per_second": 442.2707087506447
+    },
+    {
+      "opponent": "rank04_arman_v45",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 127,
+      "ties": 0,
+      "losses": 1,
+      "score_rate": 0.9921875,
+      "win_rate": 0.9921875,
+      "mean_margin": 16706.8671875,
+      "candidate_cash_mean": 101997.359375,
+      "opponent_cash_mean": 85290.4921875,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.4375,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 24,
+        "53": 17,
+        "92": 7,
+        "51": 4
+      },
+      "final_route_counts": {
+        "G034": 72,
+        "G052": 4,
+        "G096": 24,
+        "G098": 4,
+        "G105": 17,
+        "G218": 7
+      },
+      "elapsed_seconds": 166.390713087,
+      "transitions_per_second": 553.1077924516113
+    },
+    {
+      "opponent": "rank04_arman_v45",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 126,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.984375,
+      "win_rate": 0.984375,
+      "mean_margin": 16902.015625,
+      "candidate_cash_mean": 101620.5859375,
+      "opponent_cash_mean": 84718.5703125,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.453125,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 26,
+        "53": 18,
+        "92": 6,
+        "51": 4
+      },
+      "final_route_counts": {
+        "G034": 70,
+        "G052": 4,
+        "G096": 26,
+        "G098": 4,
+        "G105": 18,
+        "G218": 6
+      },
+      "elapsed_seconds": 155.50265851999984,
+      "transitions_per_second": 591.8355407934289
+    },
+    {
+      "opponent": "rank13_burntpotato_v12",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 117,
+      "ties": 0,
+      "losses": 11,
+      "score_rate": 0.9140625,
+      "win_rate": 0.9140625,
+      "mean_margin": 17058.828125,
+      "candidate_cash_mean": 97012.0234375,
+      "opponent_cash_mean": 79953.1953125,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.484375,
+      "switch_target_route_index_counts": {
+        "30": 3,
+        "50": 24,
+        "51": 12,
+        "53": 17,
+        "92": 6
+      },
+      "final_route_counts": {
+        "G034": 66,
+        "G052": 3,
+        "G096": 24,
+        "G098": 12,
+        "G105": 17,
+        "G218": 6
+      },
+      "elapsed_seconds": 16.13447629899997,
+      "transitions_per_second": 5704.058705996192
+    },
+    {
+      "opponent": "rank13_burntpotato_v12",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 116,
+      "ties": 0,
+      "losses": 12,
+      "score_rate": 0.90625,
+      "win_rate": 0.90625,
+      "mean_margin": 16532.8359375,
+      "candidate_cash_mean": 96684.046875,
+      "opponent_cash_mean": 80151.2109375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.5,
+      "switch_target_route_index_counts": {
+        "30": 3,
+        "50": 26,
+        "51": 12,
+        "53": 18,
+        "92": 5
+      },
+      "final_route_counts": {
+        "G034": 64,
+        "G052": 3,
+        "G096": 26,
+        "G098": 12,
+        "G105": 18,
+        "G218": 5
+      },
+      "elapsed_seconds": 16.111239510999894,
+      "transitions_per_second": 5712.2855095764335
+    },
+    {
+      "opponent": "top20_20260825_tetsuya_current_firstshop_v1",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 110,
+      "ties": 0,
+      "losses": 18,
+      "score_rate": 0.859375,
+      "win_rate": 0.859375,
+      "mean_margin": 14251.6953125,
+      "candidate_cash_mean": 94255.8046875,
+      "opponent_cash_mean": 80004.109375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.59375,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 26,
+        "53": 31,
+        "92": 5,
+        "51": 10
+      },
+      "final_route_counts": {
+        "G034": 52,
+        "G052": 4,
+        "G096": 26,
+        "G098": 10,
+        "G105": 31,
+        "G218": 5
+      },
+      "elapsed_seconds": 16.631123191999905,
+      "transitions_per_second": 5533.721260886956
+    },
+    {
+      "opponent": "top20_20260825_tetsuya_current_firstshop_v1",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 103,
+      "ties": 0,
+      "losses": 25,
+      "score_rate": 0.8046875,
+      "win_rate": 0.8046875,
+      "mean_margin": 13823.3828125,
+      "candidate_cash_mean": 94339.171875,
+      "opponent_cash_mean": 80515.7890625,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.5546875,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 27,
+        "53": 25,
+        "92": 4,
+        "51": 11
+      },
+      "final_route_counts": {
+        "G034": 57,
+        "G052": 4,
+        "G096": 27,
+        "G098": 11,
+        "G105": 25,
+        "G218": 4
+      },
+      "elapsed_seconds": 16.767238076000012,
+      "transitions_per_second": 5488.799024791752
+    },
+    {
+      "opponent": "top20_20260825_hasegawa_new77_firstshop_v1",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 94,
+      "ties": 0,
+      "losses": 34,
+      "score_rate": 0.734375,
+      "win_rate": 0.734375,
+      "mean_margin": 6185.2109375,
+      "candidate_cash_mean": 92502.328125,
+      "opponent_cash_mean": 86317.1171875,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.453125,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 20,
+        "51": 11,
+        "53": 22,
+        "92": 1
+      },
+      "final_route_counts": {
+        "G034": 70,
+        "G052": 4,
+        "G096": 20,
+        "G098": 11,
+        "G105": 22,
+        "G218": 1
+      },
+      "elapsed_seconds": 16.125283595999917,
+      "transitions_per_second": 5707.310476252939
+    },
+    {
+      "opponent": "top20_20260825_hasegawa_new77_firstshop_v1",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 90,
+      "ties": 0,
+      "losses": 38,
+      "score_rate": 0.703125,
+      "win_rate": 0.703125,
+      "mean_margin": 5688.265625,
+      "candidate_cash_mean": 92610.3046875,
+      "opponent_cash_mean": 86922.0390625,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.453125,
+      "switch_target_route_index_counts": {
+        "30": 4,
+        "50": 20,
+        "51": 12,
+        "53": 21,
+        "92": 1
+      },
+      "final_route_counts": {
+        "G034": 70,
+        "G052": 4,
+        "G096": 20,
+        "G098": 12,
+        "G105": 21,
+        "G218": 1
+      },
+      "elapsed_seconds": 16.3034340480001,
+      "transitions_per_second": 5644.945704631432
+    },
+    {
+      "opponent": "top20_20260825_crop_dusta_current_unrestricted_v1",
+      "candidate_seat": 0,
+      "games": 128,
+      "wins": 93,
+      "ties": 0,
+      "losses": 35,
+      "score_rate": 0.7265625,
+      "win_rate": 0.7265625,
+      "mean_margin": 8816.9296875,
+      "candidate_cash_mean": 98004.203125,
+      "opponent_cash_mean": 89187.2734375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.5546875,
+      "switch_target_route_index_counts": {
+        "30": 7,
+        "50": 25,
+        "51": 15,
+        "53": 21,
+        "92": 3
+      },
+      "final_route_counts": {
+        "G034": 57,
+        "G052": 7,
+        "G096": 25,
+        "G098": 15,
+        "G105": 21,
+        "G218": 3
+      },
+      "elapsed_seconds": 18.414416530999915,
+      "transitions_per_second": 4997.8233002966945
+    },
+    {
+      "opponent": "top20_20260825_crop_dusta_current_unrestricted_v1",
+      "candidate_seat": 1,
+      "games": 128,
+      "wins": 90,
+      "ties": 0,
+      "losses": 38,
+      "score_rate": 0.703125,
+      "win_rate": 0.703125,
+      "mean_margin": 8556.9453125,
+      "candidate_cash_mean": 98807.796875,
+      "opponent_cash_mean": 90250.8515625,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0,
+        "opponent_hard_counter_total": 0
+      },
+      "switch_rate": 0.5390625,
+      "switch_target_route_index_counts": {
+        "30": 6,
+        "50": 25,
+        "51": 15,
+        "53": 20,
+        "92": 3
+      },
+      "final_route_counts": {
+        "G034": 59,
+        "G052": 6,
+        "G096": 25,
+        "G098": 15,
+        "G105": 20,
+        "G218": 3
+      },
+      "elapsed_seconds": 17.65140706300008,
+      "transitions_per_second": 5213.861969843327
+    }
+  ],
+  "inputs": {
+    "bank": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/teammate_macro_route_repro_20260826_v3/artifacts/candidate_pool/intent820-screen8-candidate-route-bank-cpp-v1.npz",
+      "sha256": "FE5C5C838C7E7B5EED7825C9F23C70BBD0F1FC98E448CF280246B57C30ED809B"
+    },
+    "runtime": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/teammate_macro_route_repro_20260826_v3/artifacts/candidate_pool/intent-candidate-runtime-tables-cpp-v1.npz",
+      "sha256": "F5A4AFCF5DE1A43D765795804E286B880640C538EEE7E615E2E24DB7C22B04F3"
+    },
+    "metadata": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/teammate_macro_route_repro_20260826_v3/artifacts/candidate_pool/intent820-screen8-candidate-route-library-cpp-v1.json",
+      "sha256": "8E86A90828D989F77740931E435DC7BE5B0B63B99E158263F4972A98348CC468"
+    },
+    "policy": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/teammate_macro_route_repro_20260826_v3/artifacts/policy/intent-candidate-switch-final-policy-cpp-v1.json",
+      "sha256": "237F1D11B4FA3E53CF372D147BA121EB5C99BC980374E3BF6723D76A3EF5742B"
+    },
+    "manifest": {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/configs/complete_validation_pool_v1.json",
+      "sha256": "6D92D54A261203AEF1A7E6528CE962A4D09D003D101E5ADDD44777C7EB9EE195"
+    }
+  }
+}

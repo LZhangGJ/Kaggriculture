@@ -1,0 +1,604 @@
+{
+  "schema": "kaggriculture.teammate-macro-route.official-final-agent-gate.v1",
+  "generated_at_utc": "2026-08-26T14:30:05.575507+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "candidate": {
+    "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\teammate_macro_route_repro_20260826_v3\\agent\\variants\\main_G096.py",
+    "sha256": "4AEDA1154F778C26EDB36E077A5090247419736E636811AC15656F52163CB9B7",
+    "bytes": 2994782,
+    "under_100_mib": true
+  },
+  "seed_start": 1670001,
+  "seeds": 4,
+  "dual_seat": true,
+  "episode_steps": 720,
+  "action_steps": 719,
+  "games": 32,
+  "workers": 16,
+  "wall_seconds": 40.88097029994242,
+  "execution_clean": true,
+  "static_forbidden_literal_hits": [],
+  "aggregates": [
+    {
+      "opponent": "passive",
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "win_rate": 1.0,
+      "mean_margin": 145645.0,
+      "mean_candidate_reward": 148645.0,
+      "mean_opponent_reward": 3000.0
+    },
+    {
+      "opponent": "public04_read_market",
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "win_rate": 1.0,
+      "mean_margin": 6892.75,
+      "mean_candidate_reward": 96969.375,
+      "mean_opponent_reward": 90076.625
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "score_rate": 0.875,
+      "win_rate": 0.875,
+      "mean_margin": 6129.75,
+      "mean_candidate_reward": 103302.75,
+      "mean_opponent_reward": 97173.0
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.75,
+      "win_rate": 0.75,
+      "mean_margin": -1574.75,
+      "mean_candidate_reward": 90866.125,
+      "mean_opponent_reward": 92440.875
+    }
+  ],
+  "rows": [
+    {
+      "opponent": "passive",
+      "seed": 1670001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 126895.0,
+      "opponent_reward": 3000.0,
+      "margin": 123895.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.746221499983221
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 121932.0,
+      "opponent_reward": 3000.0,
+      "margin": 118932.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.792962900013663
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 186471.0,
+      "opponent_reward": 3000.0,
+      "margin": 183471.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.861943099997006
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 186471.0,
+      "opponent_reward": 3000.0,
+      "margin": 183471.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.933874699985608
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 148452.0,
+      "opponent_reward": 3000.0,
+      "margin": 145452.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.800275200046599
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 148466.0,
+      "opponent_reward": 3000.0,
+      "margin": 145466.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.858868999988772
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 133320.0,
+      "opponent_reward": 3000.0,
+      "margin": 130320.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.700562000041828
+    },
+    {
+      "opponent": "passive",
+      "seed": 1670004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 137153.0,
+      "opponent_reward": 3000.0,
+      "margin": 134153.0,
+      "win": true,
+      "tie": false,
+      "seconds": 11.729004299966618
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 121990.0,
+      "opponent_reward": 111058.0,
+      "margin": 10932.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.826251600054093
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 121027.0,
+      "opponent_reward": 111207.0,
+      "margin": 9820.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.800776900025085
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106306.0,
+      "opponent_reward": 100493.0,
+      "margin": 5813.0,
+      "win": true,
+      "tie": false,
+      "seconds": 15.031101499916986
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 106306.0,
+      "opponent_reward": 100493.0,
+      "margin": 5813.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.871211200021207
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 83084.0,
+      "opponent_reward": 77564.0,
+      "margin": 5520.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.692463099956512
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 85048.0,
+      "opponent_reward": 82135.0,
+      "margin": 2913.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.623805099981837
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 81864.0,
+      "opponent_reward": 73642.0,
+      "margin": 8222.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.858728500083089
+    },
+    {
+      "opponent": "public04_read_market",
+      "seed": 1670004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 70130.0,
+      "opponent_reward": 64021.0,
+      "margin": 6109.0,
+      "win": true,
+      "tie": false,
+      "seconds": 14.81082160002552
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 132394.0,
+      "opponent_reward": 121569.0,
+      "margin": 10825.0,
+      "win": true,
+      "tie": false,
+      "seconds": 16.798001300077885
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 131824.0,
+      "opponent_reward": 121290.0,
+      "margin": 10534.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.302232799935155
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 92497.0,
+      "opponent_reward": 86420.0,
+      "margin": 6077.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.271036299993284
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 92497.0,
+      "opponent_reward": 86420.0,
+      "margin": 6077.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.335136199952103
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 123259.0,
+      "opponent_reward": 116279.0,
+      "margin": 6980.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.364470200031064
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 125377.0,
+      "opponent_reward": 118965.0,
+      "margin": 6412.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.17533989995718
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 58406.0,
+      "opponent_reward": 56091.0,
+      "margin": 2315.0,
+      "win": true,
+      "tie": false,
+      "seconds": 17.238512599957176
+    },
+    {
+      "opponent": "public06_soil_rain",
+      "seed": 1670004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 70168.0,
+      "opponent_reward": 70350.0,
+      "margin": -182.0,
+      "win": false,
+      "tie": false,
+      "seconds": 17.287848600069992
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670001,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 88127.0,
+      "opponent_reward": 81227.0,
+      "margin": 6900.0,
+      "win": true,
+      "tie": false,
+      "seconds": 18.860831500031054
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670001,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 88127.0,
+      "opponent_reward": 81227.0,
+      "margin": 6900.0,
+      "win": true,
+      "tie": false,
+      "seconds": 19.079554700059816
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670002,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 91884.0,
+      "opponent_reward": 112014.0,
+      "margin": -20130.0,
+      "win": false,
+      "tie": false,
+      "seconds": 18.240685099968687
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670002,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 91884.0,
+      "opponent_reward": 112014.0,
+      "margin": -20130.0,
+      "win": false,
+      "tie": false,
+      "seconds": 18.60942829994019
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670003,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99854.0,
+      "opponent_reward": 99665.0,
+      "margin": 189.0,
+      "win": true,
+      "tie": false,
+      "seconds": 19.36080290004611
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670003,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 99854.0,
+      "opponent_reward": 99665.0,
+      "margin": 189.0,
+      "win": true,
+      "tie": false,
+      "seconds": 19.428392600035295
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670004,
+      "candidate_seat": 0,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 82729.0,
+      "opponent_reward": 76617.0,
+      "margin": 6112.0,
+      "win": true,
+      "tie": false,
+      "seconds": 18.487723400001414
+    },
+    {
+      "opponent": "teammate_fixed_g001",
+      "seed": 1670004,
+      "candidate_seat": 1,
+      "frames": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 84470.0,
+      "opponent_reward": 77098.0,
+      "margin": 7372.0,
+      "win": true,
+      "tie": false,
+      "seconds": 18.826423099962994
+    }
+  ],
+  "opponents": {
+    "passive": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\gold_rule_agents\\opponents\\passive\\main.py",
+      "sha256": "C89D491256292F4AD2953F2312C490D876DFFB60DB2C9B0069948904E3CB58DB"
+    },
+    "public04_read_market": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55507996_public04_read_market\\main.py",
+      "sha256": "D39DBA50793D9777C990347443BF0C481C78ADAEA86055F6F6B0600DCFCD9F2E"
+    },
+    "public06_soil_rain": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\public_solution_analysis\\inventory_20260814\\agents\\06_soil_rain.py",
+      "sha256": "34193F0CA7FDC77DB52CFDADF61596D42CBC2FFD3D8B7903819B0AD78A064A2A"
+    },
+    "teammate_fixed_g001": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\team_mate\\Kaggriculture_main_512631c\\agents\\route_clustering_switch_agent\\main.py",
+      "sha256": "9B4FDF7A7C92D3EEFC75C693C4949825567588478BEF0E53529BDEC82944DDA7"
+    }
+  }
+}
