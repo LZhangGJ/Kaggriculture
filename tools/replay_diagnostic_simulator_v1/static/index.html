@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaggriculture Replay 诊断模拟器</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">K</div>
+        <div>
+          <h1>Kaggriculture Replay 诊断模拟器</h1>
+          <p>官方 1.32.7 画面 + 动作结果确认 + 农场报警</p>
+        </div>
+      </div>
+      <div class="loader">
+        <input id="replay-path" type="text" spellcheck="false" placeholder="粘贴本地 Replay JSON 完整路径" />
+        <button id="load-path" class="button primary">载入路径</button>
+        <label class="button ghost" for="upload-file">选择文件</label>
+        <input id="upload-file" type="file" accept="application/json,.json" hidden />
+      </div>
+    </header>
+
+    <section id="meta-strip" class="meta-strip is-empty">
+      <div><span>Replay</span><strong id="episode-id">尚未载入</strong></div>
+      <div><span>对局</span><strong id="players">—</strong></div>
+      <div><span>终局现金</span><strong id="rewards">—</strong></div>
+      <div><span>版本</span><strong id="version">—</strong></div>
+      <div class="meta-path"><span>来源</span><strong id="source-path">—</strong></div>
+    </section>
+
+    <main class="workspace diagnostics-open">
+      <section class="viewer-shell">
+        <div id="viewer-empty" class="empty-state">
+          <div class="empty-icon">▶</div>
+          <h2>载入一个官方 Replay</h2>
+          <p>可粘贴本地路径，也可直接选择 JSON 文件。</p>
+        </div>
+        <iframe id="official-viewer" title="Kaggriculture 官方 Replay 画面" hidden></iframe>
+        <div id="action-ticker" class="action-ticker" hidden>
+          <strong>本回合</strong>
+          <div id="action-chips" class="action-chips">所有人员等待</div>
+        </div>
+        <div class="controls">
+          <button id="prev-step" class="icon-button" title="上一回合">◀</button>
+          <button id="play-pause" class="icon-button play" title="播放/暂停">▶</button>
+          <button id="next-step" class="icon-button" title="下一回合">▶|</button>
+          <div class="step-readout">
+            <strong id="day-hour">第 1 天 · 第 1 回合</strong>
+            <span id="step-number">Frame 0 / 719</span>
+          </div>
+          <input id="step-slider" type="range" min="0" max="719" value="0" disabled />
+          <select id="speed" title="播放速度">
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option>
+            <option value="4">4×</option>
+            <option value="8">8×</option>
+          </select>
+          <button id="next-critical" class="button danger-lite">下个严重报警</button>
+          <button id="toggle-diagnostics" class="button diagnostic-toggle">收起诊断</button>
+        </div>
+      </section>
+
+      <aside id="diagnostics" class="diagnostics">
+        <div class="diagnostic-head">
+          <div>
+            <span class="eyebrow">当前状态观察器</span>
+            <h2 id="diagnostic-title">等待 Replay</h2>
+          </div>
+          <div class="seat-tabs" role="tablist">
+            <button class="seat-tab active" data-seat="0">座位 0</button>
+            <button class="seat-tab" data-seat="1">座位 1</button>
+          </div>
+          <button id="close-diagnostics" class="drawer-close" title="收起诊断面板">×</button>
+        </div>
+
+        <section class="summary-grid">
+          <div><span>现金</span><strong id="seat-money">—</strong></div>
+          <div><span>仓库</span><strong id="seat-shed">—</strong></div>
+          <div><span>随身</span><strong id="seat-carried">—</strong></div>
+          <div><span>动作失败</span><strong id="seat-failed">—</strong></div>
+        </section>
+
+        <section class="panel-section alarms-section">
+          <div class="section-title">
+            <h3>农场报警</h3>
+            <span id="alarm-count" class="count-pill">0</span>
+          </div>
+          <div id="alarms" class="card-list empty-list">本回合没有报警</div>
+        </section>
+
+        <section class="panel-section worker-section">
+          <div class="section-title">
+            <h3>每个雇工做了什么</h3>
+            <label class="toggle"><input id="show-pass" type="checkbox" />显示等待</label>
+          </div>
+          <div class="worker-columns">
+            <span>人员 / 位置</span><span>动作</span><span>生效结果</span>
+          </div>
+          <div id="workers" class="worker-list empty-list">载入后显示逐人动作</div>
+        </section>
+
+        <section class="panel-section market-section">
+          <div class="section-title"><h3>市场指令</h3><span id="market-count" class="count-pill">0</span></div>
+          <div id="market-orders" class="card-list empty-list">本回合没有市场指令</div>
+        </section>
+
+        <section class="legend">
+          <span><i class="dot success"></i>已确认生效</span>
+          <span><i class="dot noop"></i>未生效</span>
+          <span><i class="dot uncertain"></i>同回合/跨日混合，需谨慎解释</span>
+        </section>
+      </aside>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>

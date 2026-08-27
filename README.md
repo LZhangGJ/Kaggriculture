@@ -12,6 +12,23 @@ research notebooks, and a fast local runner for large self-play experiments.
 - `src/kaggriculture_lab/gpu_engine.py` — pure-tensor CUDA transition engine
 - `benchmarks/benchmark_gpu_engine.py` — CUDA transition throughput benchmark
 - `tests/test_gpu_engine.py` — stepwise differential tests against the official runner
+- `tools/replay_diagnostic_simulator_v1/` — self-contained 1.32.7 Replay visualizer,
+  per-worker action confirmation, and farm-risk alarms
+
+## Replay diagnostic simulator (official 1.32.7 visuals)
+
+This read-only tool accepts a local official Replay JSON, shows all 720 frames,
+and overlays confirmed/failed worker actions plus crop, animal, weed, storage, and
+terminal-inventory alarms. The vendored official visualizer and Apache-2.0 license
+are included, but real Replay files are intentionally excluded.
+
+```powershell
+py -3 tools/replay_diagnostic_simulator_v1/tools/run_simulator.py `
+  --replay "E:\path\to\episode.json" `
+  --open
+```
+
+See `tools/replay_diagnostic_simulator_v1/README.md` for interpretation limits.
 
 ## Environment
 
