@@ -1,75 +1,40 @@
 {
   "schema_version": 1,
   "description": "Teammate execution stack plus expanded genetic-route meta controller",
-  "runtime_routes": 183,
-  "forced_opening": "G001",
+  "runtime_routes": 7,
+  "forced_opening": "NR295",
   "opening_support": [
     {
-      "family": "G020",
-      "weight": 0.0037174721189575147,
-      "mean_score": 0.7184084699453552,
-      "worst_score": 0.0
-    },
-    {
-      "family": "G060",
-      "weight": 0.022304832713755614,
-      "mean_score": 0.6801571038251366,
-      "worst_score": 0.0
-    },
-    {
-      "family": "G136",
-      "weight": 0.6468401486988886,
-      "mean_score": 0.8637295081967213,
-      "worst_score": 0.4375
-    },
-    {
-      "family": "G194",
-      "weight": 0.12639405204461351,
-      "mean_score": 0.7488046448087432,
-      "worst_score": 0.125
-    },
-    {
-      "family": "EV001",
-      "weight": 0.2007434944237936,
-      "mean_score": 0.7923497267759563,
-      "worst_score": 0.15625
+      "family": "NR295",
+      "weight": 1.0
     }
   ],
   "switch_nodes": [
     {
-      "opening": "G001",
-      "checkpoint": 144
+      "opening": "NR295",
+      "checkpoint": 48
     },
     {
-      "opening": "G001",
-      "checkpoint": 168
-    },
-    {
-      "opening": "G001",
-      "checkpoint": 216
+      "opening": "NR295",
+      "checkpoint": 96
     }
   ],
   "final_holdout": {
-    "mask": 7,
-    "checkpoints": [
-      144,
-      168,
-      216
-    ],
-    "node_count": 3,
-    "baseline_score": 0.8056693989071039,
-    "dynamic_score": 0.90625,
-    "improvement": 0.10058060109289617,
-    "one_sided_95pct_lower": 0.09090501222175199,
-    "seed_standard_error": 0.005839431038573521,
-    "switch_rate": 1.0
+    "raw_win_rate": 0.9551380368098159,
+    "score_rate": 0.9551500082015991,
+    "both_seats_win_rate": 0.9529212998466258,
+    "minimum_opponent_raw_win_rate": 0.828125,
+    "mean_margin": 20293.00390625,
+    "minimum_margin": -73193.0,
+    "paired_seed_raw_win_lower_95pct": 0.9465529001267525,
+    "paired_seed_win_standard_error": 0.005181319120223042
   },
   "sources": {
     "base": "agents\\route_clustering_switch_agent\\runtime\\teammate_base.py",
-    "actions": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route_actions.json.zlib",
-    "metadata": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route_library.json",
-    "policy": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\route-policy-residual-selected-v1.json",
-    "nash": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\opening-nash-16seeds-v1.json",
-    "holdout": "agents\\route_clustering_switch_agent\\artifacts\\evolved_route_library\\expanded183\\holdout-residual-policy-128seeds-v1.json"
+    "actions": "artifacts\\cpp_route_experiments_20260827\\causal_tree_v5\\live_panel352_v2\\shared_nr103_v1\\deploy_joint_v4_assets\\route_actions.json.zlib",
+    "metadata": "artifacts\\cpp_route_experiments_20260827\\causal_tree_v5\\live_panel352_v2\\shared_nr103_v1\\deploy_joint_v4_assets\\route_library.json",
+    "policy": "artifacts\\cpp_route_experiments_20260827\\causal_tree_v5\\live_panel352_v2\\shared_nr103_v1\\deploy_joint_v4_assets\\route_policy.json",
+    "nash": "artifacts\\cpp_route_experiments_20260827\\causal_tree_v5\\live_panel352_v2\\shared_nr103_v1\\deploy_joint_v4_assets\\opening_nash.json",
+    "holdout": "artifacts\\cpp_route_experiments_20260827\\causal_tree_v5\\live_panel352_v2\\shared_nr103_v1\\nt652_holdout128_joint_v4_report.json"
   }
 }

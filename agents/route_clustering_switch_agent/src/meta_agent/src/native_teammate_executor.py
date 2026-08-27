@@ -7,6 +7,7 @@ Every turn of every counterfactual match then stays inside C++.
 from __future__ import annotations
 
 import json
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -32,6 +33,31 @@ def _market_tape(values: Any) -> list[dict[str, Any]]:
     ]
 
 
+@lru_cache(maxsize=4)
+def _frozen_assets(
+    source_path: str, actions_path: str, metadata_path: str,
+) -> tuple[
+    dict[str, list[dict[str, Any]]], dict[str, Any],
+    list[dict[str, Any]], list[dict[str, Any]],
+    list[Any], list[Any],
+]:
+    """Decode immutable route assets once per experiment process."""
+
+    source = Path(source_path).read_text(encoding="utf-8")
+    actions = load_action_tapes(actions_path)
+    metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
+    probe = TeammateExpandedRouteAgent(source, actions, "native_bundle_probe")
+    k320 = probe.namespace["_BASE"].__dict__["_K320"].__dict__
+    moon_module = probe.namespace["_MOON"].__dict__
+    r5 = _market_tape(k320["_V17_R5_MARKETS"])
+    md = _market_tape(k320["_V17_MD_MARKETS"])
+    moon = [moon_module[f"_ACTIONS_{label}"] for label in _MOON_LABELS]
+    moon_legacy = [
+        moon_module[f"_LEGACY_ACTIONS_{label}"] for label in _MOON_LABELS
+    ]
+    return actions, metadata, r5, md, moon, moon_legacy
+
+
 class NativeTeammateBundle:
     """Route/family mapping plus the compiled native match executor."""
 
@@ -41,11 +67,25 @@ class NativeTeammateBundle:
         actions_path: str | Path,
         metadata_path: str | Path,
         additional_routes: Mapping[str, Sequence[Mapping[str, Any]]] | None = None,
+        included_families: Sequence[str] | None = None,
     ) -> None:
-        source = Path(source_path).read_text(encoding="utf-8")
-        actions = load_action_tapes(actions_path)
-        metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
+        actions, metadata, r5, md, moon, moon_legacy = _frozen_assets(
+            str(Path(source_path).resolve()),
+            str(Path(actions_path).resolve()),
+            str(Path(metadata_path).resolve()),
+        )
         entries = list(metadata["opponent_routes"])
+        if included_families is not None:
+            included = set(included_families)
+            entries = [
+                value for value in entries if str(value["family"]) in included
+            ]
+            missing = sorted(
+                included - {str(value["family"]) for value in entries}
+                - set(additional_routes or {})
+            )
+            if missing:
+                raise KeyError(f"unknown included route family: {missing[0]}")
         extra = dict(additional_routes or {})
         original_families = tuple(str(value["family"]) for value in entries)
         duplicates = sorted(set(original_families) & set(extra))
@@ -57,17 +97,6 @@ class NativeTeammateBundle:
         )
         self.family_index = {family: index for index, family in enumerate(self.families)}
 
-        # Executing the frozen payload here only exposes its immutable reference
-        # arrays.  It is not called during native matches.
-        probe = TeammateExpandedRouteAgent(source, actions, "native_bundle_probe")
-        k320 = probe.namespace["_BASE"].__dict__["_K320"].__dict__
-        moon_module = probe.namespace["_MOON"].__dict__
-        r5 = _market_tape(k320["_V17_R5_MARKETS"])
-        md = _market_tape(k320["_V17_MD_MARKETS"])
-        moon = [moon_module[f"_ACTIONS_{label}"] for label in _MOON_LABELS]
-        moon_legacy = [
-            moon_module[f"_LEGACY_ACTIONS_{label}"] for label in _MOON_LABELS
-        ]
         routes = [actions[str(value["route_id"])] for value in entries]
         routes.extend(extra.values())
         self.executor = NativeTeammateExecutor(routes, r5, md, moon, moon_legacy)

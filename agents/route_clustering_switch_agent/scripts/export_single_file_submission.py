@@ -34,7 +34,7 @@ def main() -> None:
         "--output", type=Path, default=Path("teammate_meta_route_175_single.py")
     )
     parser.add_argument(
-        "--forced-opening", choices=("G001", "G136"), default=None,
+        "--forced-opening", default=None,
         help="Fix the root route while retaining all learned switch nodes.",
     )
     args = parser.parse_args()

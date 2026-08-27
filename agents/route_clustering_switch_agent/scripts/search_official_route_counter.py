@@ -11,10 +11,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import runpy
 import statistics
 import sys
 import time
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -29,6 +31,12 @@ from meta_agent.src.teammate_expanded_routes import (  # noqa: E402
     TeammateExpandedRouteAgent,
     load_action_tapes,
 )
+
+
+_WORKER_SOURCE: str | None = None
+_WORKER_TAPES: Mapping[str, Any] | None = None
+_WORKER_ROUTE_BY_FAMILY: dict[str, str] | None = None
+_WORKER_OPPONENT: Path | None = None
 
 
 def _get(value: Any, key: str, default: Any = None) -> Any:
@@ -62,6 +70,83 @@ def _reward(environment: Any, seat: int) -> float:
     return float(_get(environment.state[seat], "reward", 0.0) or 0.0)
 
 
+def _init_worker(
+    source_path: str,
+    actions_path: str,
+    metadata_path: str,
+    opponent_path: str,
+    workspace_deps: str,
+) -> None:
+    global _WORKER_SOURCE, _WORKER_TAPES, _WORKER_ROUTE_BY_FAMILY, _WORKER_OPPONENT
+    if workspace_deps and workspace_deps not in sys.path:
+        sys.path.insert(0, workspace_deps)
+    source = Path(source_path)
+    actions = Path(actions_path)
+    metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
+    _WORKER_SOURCE = source.read_text(encoding="utf-8")
+    _WORKER_TAPES = load_action_tapes(actions)
+    _WORKER_ROUTE_BY_FAMILY = {
+        str(entry["family"]): str(entry["route_id"])
+        for entry in metadata["opponent_routes"]
+    }
+    _WORKER_OPPONENT = Path(opponent_path)
+
+
+def _run_scenario(task: tuple[str, int, int]) -> dict[str, Any]:
+    from kaggle_environments import make
+
+    family, seed, seat = task
+    assert _WORKER_SOURCE is not None
+    assert _WORKER_TAPES is not None
+    assert _WORKER_ROUTE_BY_FAMILY is not None
+    assert _WORKER_OPPONENT is not None
+    started = time.perf_counter()
+    try:
+        carrier = TeammateExpandedRouteAgent(
+            _WORKER_SOURCE,
+            _WORKER_TAPES,
+            f"official_counter_{family}_{seed}_{seat}",
+        )
+        carrier.select(_WORKER_ROUTE_BY_FAMILY[family])
+        opponent_namespace = runpy.run_path(str(_WORKER_OPPONENT))
+        opponent = opponent_namespace.get("agent")
+        if not callable(opponent):
+            raise ValueError(f"submission has no callable agent: {_WORKER_OPPONENT}")
+        agents = [opponent, opponent]
+        agents[seat] = carrier
+        environment = make(
+            "kaggriculture",
+            configuration={"episodeSteps": 720},
+            info={"seed": int(seed)},
+            debug=True,
+        )
+        environment.run(agents)
+        own = _reward(environment, seat)
+        other = _reward(environment, 1 - seat)
+        return {
+            "family": family,
+            "seed": int(seed),
+            "seat": int(seat),
+            "reward": own,
+            "opponent_reward": other,
+            "margin": own - other,
+            "win": own > other,
+            "completed": len(environment.steps) == 720,
+            "opponent_route": _opponent_state(opponent_namespace),
+            "error": None,
+            "seconds": time.perf_counter() - started,
+        }
+    except Exception as error:
+        return {
+            "family": family,
+            "seed": int(seed),
+            "seat": int(seat),
+            "completed": False,
+            "error": f"{type(error).__name__}: {error}",
+            "seconds": time.perf_counter() - started,
+        }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
@@ -71,6 +156,8 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--seeds", type=_ints, default=(17,))
     parser.add_argument("--one-seat", action="store_true")
+    parser.add_argument("--workers", type=int, default=max(1, (os.cpu_count() or 2) - 1))
+    parser.add_argument("--workspace-deps", type=Path)
     parser.add_argument(
         "--families",
         nargs="*",
@@ -85,8 +172,6 @@ def main() -> None:
     actions_path = args.actions.resolve()
     metadata_path = args.metadata.resolve()
     opponent_path = args.opponent_agent.resolve()
-    source = source_path.read_text(encoding="utf-8")
-    tapes = load_action_tapes(actions_path)
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     entries = list(metadata["opponent_routes"])
     route_by_family = {
@@ -97,57 +182,57 @@ def main() -> None:
     if missing:
         raise KeyError(f"unknown route family: {missing[0]}")
     seats = (0,) if args.one_seat else (0, 1)
-    rows = []
+    workspace_deps = (
+        args.workspace_deps.resolve()
+        if args.workspace_deps else WORKSPACE_DEPS.resolve()
+    )
+    tasks = [
+        (family, seed, seat)
+        for family in selected
+        for seed in args.seeds
+        for seat in seats
+    ]
     scenario_count = len(selected) * len(args.seeds) * len(seats)
-    completed_games = 0
+    scenarios_by_family = {family: [] for family in selected}
+    with ProcessPoolExecutor(
+        max_workers=args.workers,
+        initializer=_init_worker,
+        initargs=(
+            str(source_path), str(actions_path), str(metadata_path),
+            str(opponent_path), str(workspace_deps),
+        ),
+    ) as pool:
+        for completed_games, scenario in enumerate(
+            pool.map(_run_scenario, tasks, chunksize=1), 1
+        ):
+            scenarios_by_family[str(scenario["family"])].append(scenario)
+            if completed_games == scenario_count or completed_games % max(
+                1, scenario_count // 20
+            ) == 0:
+                elapsed = time.perf_counter() - started
+                print(
+                    f"games={completed_games}/{scenario_count} "
+                    f"elapsed={elapsed:.1f}s rate={completed_games / elapsed:.3f}/s",
+                    flush=True,
+                )
 
+    rows = []
     for family_index, family in enumerate(selected, 1):
-        scenarios = []
-        for seed in args.seeds:
-            for seat in seats:
-                carrier = TeammateExpandedRouteAgent(
-                    source, tapes, f"official_counter_{family}_{seed}_{seat}"
-                )
-                carrier.select(route_by_family[family])
-                opponent_namespace = runpy.run_path(str(opponent_path))
-                opponent = opponent_namespace.get("agent")
-                if not callable(opponent):
-                    raise ValueError(f"submission has no callable agent: {opponent_path}")
-                agents = [opponent, opponent]
-                agents[seat] = carrier
-                environment = make(
-                    "kaggriculture",
-                    configuration={"episodeSteps": 720},
-                    info={"seed": int(seed)},
-                    debug=True,
-                )
-                environment.run(agents)
-                own = _reward(environment, seat)
-                other = _reward(environment, 1 - seat)
-                completed = len(environment.steps) == 720
-                scenarios.append({
-                    "seed": int(seed),
-                    "seat": int(seat),
-                    "reward": own,
-                    "opponent_reward": other,
-                    "margin": own - other,
-                    "win": own > other,
-                    "completed": completed,
-                    "opponent_route": _opponent_state(opponent_namespace),
-                })
-                completed_games += 1
-        margins = [value["margin"] for value in scenarios]
-        rewards = [value["reward"] for value in scenarios]
+        scenarios = scenarios_by_family[family]
+        valid = [value for value in scenarios if value["error"] is None]
+        margins = [value["margin"] for value in valid]
+        rewards = [value["reward"] for value in valid]
         row = {
             "family": family,
             "route_id": route_by_family[family],
-            "mean_margin": statistics.fmean(margins),
-            "minimum_margin": min(margins),
-            "win_rate": statistics.fmean(float(value["win"]) for value in scenarios),
-            "mean_reward": statistics.fmean(rewards),
-            "minimum_reward": min(rewards),
-            "completed": sum(bool(value["completed"]) for value in scenarios),
+            "mean_margin": statistics.fmean(margins) if margins else float("-inf"),
+            "minimum_margin": min(margins) if margins else float("-inf"),
+            "win_rate": statistics.fmean(float(value["win"]) for value in valid) if valid else 0.0,
+            "mean_reward": statistics.fmean(rewards) if rewards else 0.0,
+            "minimum_reward": min(rewards) if rewards else 0.0,
+            "completed": sum(bool(value["completed"]) for value in valid),
             "scenario_count": len(scenarios),
+            "valid_scenarios": len(valid),
             "scenarios": scenarios,
         }
         rows.append(row)
@@ -180,8 +265,17 @@ def main() -> None:
         "opponent_sha256": hashlib.sha256(opponent_path.read_bytes()).hexdigest(),
         "seeds": list(args.seeds),
         "seats": list(seats),
+        "workers": args.workers,
         "candidate_count": len(rows),
-        "games": completed_games,
+        "games": scenario_count,
+        "valid_games": sum(row["valid_scenarios"] for row in rows),
+        "completed_games": sum(row["completed"] for row in rows),
+        "errors": [
+            scenario
+            for row in rows
+            for scenario in row["scenarios"]
+            if scenario["error"] is not None
+        ],
         "elapsed_seconds": time.perf_counter() - started,
         "ranking": rows,
     }
@@ -192,7 +286,7 @@ def main() -> None:
     )
     print(json.dumps({
         "output": str(output),
-        "games": completed_games,
+        "games": scenario_count,
         "elapsed_seconds": payload["elapsed_seconds"],
         "top10": [
             {key: row[key] for key in (

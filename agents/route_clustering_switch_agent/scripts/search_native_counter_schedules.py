@@ -107,6 +107,7 @@ def main() -> None:
     parser.add_argument("--checkpoint", type=int, default=216)
     parser.add_argument("--seeds", type=_ints, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--matrix-output", type=Path)
     args = parser.parse_args()
 
     started = time.perf_counter()
@@ -137,6 +138,12 @@ def main() -> None:
     games = 0
     game_seconds = 0.0
     samples = [(int(seed), candidate_seat) for seed in args.seeds for candidate_seat in (0, 1)]
+    matrix_shape = (len(openings), len(targets), len(args.seeds), 2)
+    margin_matrix = np.empty(matrix_shape, dtype=np.float64)
+    score_matrix = np.empty(matrix_shape, dtype=np.float64)
+    own_reward_matrix = np.empty(matrix_shape, dtype=np.float64)
+    policy_step_matrix = np.empty(matrix_shape, dtype=np.int64)
+    policy_target_matrix = np.empty(matrix_shape, dtype=np.int64)
     for opening_number, opening in enumerate(openings, 1):
         policy_step, policy_target = _policy_response_grid(
             bundle, nodes, args.policy_opening, opening, targets,
@@ -177,6 +184,16 @@ def main() -> None:
             other = block[indices, 1 - candidate_seats]
             margins = own - other
             scores = (margins > 0).astype(np.float64) + 0.5 * (margins == 0)
+            matrix_index = (opening_number - 1, target_number)
+            margin_matrix[matrix_index] = margins.reshape(len(args.seeds), 2)
+            score_matrix[matrix_index] = scores.reshape(len(args.seeds), 2)
+            own_reward_matrix[matrix_index] = own.reshape(len(args.seeds), 2)
+            policy_step_matrix[matrix_index] = policy_step[target_number].reshape(
+                len(args.seeds), 2
+            )
+            policy_target_matrix[matrix_index] = policy_target[target_number].reshape(
+                len(args.seeds), 2
+            )
             paired_margins = margins.reshape(len(args.seeds), 2).mean(axis=1)
             paired_scores = scores.reshape(len(args.seeds), 2).mean(axis=1)
             if len(args.seeds) > 1:
@@ -251,6 +268,21 @@ def main() -> None:
         "elapsed_seconds": time.perf_counter() - started,
         "ranking": rows,
     }
+    if args.matrix_output:
+        matrix_output = args.matrix_output.resolve()
+        matrix_output.parent.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(
+            matrix_output,
+            openings=np.asarray(openings),
+            targets=np.asarray(targets),
+            seeds=np.asarray(args.seeds, dtype=np.int64),
+            margins=margin_matrix,
+            scores=score_matrix,
+            own_rewards=own_reward_matrix,
+            policy_switch_steps=policy_step_matrix,
+            policy_switch_targets=policy_target_matrix,
+        )
+        payload["matrix_output"] = str(matrix_output)
     output.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -258,6 +290,7 @@ def main() -> None:
         "output": str(output),
         "games": games,
         "games_per_second": payload["games_per_second"],
+        "matrix_output": payload.get("matrix_output"),
         "top10": [
             {key: row[key] for key in (
                 "rank", "opening", "checkpoint", "target", "mean_score",

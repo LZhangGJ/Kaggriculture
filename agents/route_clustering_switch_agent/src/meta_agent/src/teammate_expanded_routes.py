@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import inspect
 import json
+import sys
 import types
 import zlib
 from pathlib import Path
@@ -29,7 +30,9 @@ class TeammateExpandedRouteAgent:
         action_tapes: Mapping[str, Sequence[Mapping[str, Any]]],
         name: str,
     ) -> None:
-        namespace: dict[str, Any] = {"__name__": name}
+        module = types.ModuleType(name)
+        namespace = module.__dict__
+        sys.modules[name] = module
         exec(compile(source, name, "exec"), namespace)
         self.namespace = namespace
         self.action_tapes = action_tapes

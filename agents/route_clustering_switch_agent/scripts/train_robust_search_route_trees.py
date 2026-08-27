@@ -23,6 +23,20 @@ def feature_names() -> list[str]:
     return route_switch_feature_names()
 
 
+def zero_feature_prefixes(
+    matrix: np.ndarray, names: list[str], prefixes: tuple[str, ...]
+) -> np.ndarray:
+    if not prefixes:
+        return matrix
+    result = matrix.copy()
+    indices = [
+        index for index, name in enumerate(names)
+        if any(name.startswith(prefix) for prefix in prefixes)
+    ]
+    result[:, indices] = 0
+    return result
+
+
 def _load_groups(paths: list[Path]) -> tuple[dict[tuple[str, int], list[tuple]], list[str], list[str]]:
     grouped: dict[tuple[str, int], list[tuple]] = defaultdict(list)
     all_openings: list[str] = []
@@ -374,23 +388,28 @@ def _bootstrap_stability(
 def _train_node(task: tuple) -> dict[str, Any]:
     (
         opening, checkpoint, compact, raw_group, names, depths, leaves,
-        min_robust_improvement, simplicity_tolerance,
+        min_robust_improvement, simplicity_tolerance, zero_prefixes,
     ) = task
     if compact:
         matrix, labels, seeds, opponents, outcomes = raw_group
     else:
         matrix, labels, seeds, opponents, outcomes = _samples(raw_group)
-    trials = [
-        _combined_validation(
-            _cross_validate(
+    matrix = zero_feature_prefixes(matrix, names, zero_prefixes)
+    trials = []
+    for depth in depths:
+        for leaf in leaves:
+            if leaf * 2 > len(labels):
+                continue
+            seed_cv = _cross_validate(
                 matrix, labels, seeds, seeds, outcomes, opening, depth, leaf
-            ),
-            _cross_validate(
-                matrix, labels, seeds, opponents, outcomes, opening, depth, leaf
-            ),
-        )
-        for depth in depths for leaf in leaves if leaf * 2 <= len(labels)
-    ]
+            )
+            opponent_cv = (
+                _cross_validate(
+                    matrix, labels, seeds, opponents, outcomes, opening, depth, leaf
+                )
+                if len(np.unique(opponents)) >= 2 else seed_cv
+            )
+            trials.append(_combined_validation(seed_cv, opponent_cv))
     trials.sort(
         key=lambda row: (
             -row["robust_improvement"], row["depth"], -row["min_leaf"],
@@ -452,6 +471,10 @@ def main() -> None:
         help="Prefer the shallowest tree within this robust-score distance of the best.",
     )
     parser.add_argument("--node-workers", type=int, default=1)
+    parser.add_argument(
+        "--zero-feature-prefix", action="append", default=[],
+        help="Ablate matching features while preserving the runtime schema.",
+    )
     args = parser.parse_args()
     depths = [int(value) for value in args.depths.split(",")]
     leaves = [int(value) for value in args.min_leaves.split(",")]
@@ -467,6 +490,7 @@ def main() -> None:
             node_tasks.append((
                 opening, checkpoint, compact, grouped[(opening, checkpoint)], names,
                 depths, leaves, args.min_robust_improvement, args.simplicity_tolerance,
+                tuple(args.zero_feature_prefix),
             ))
     with ThreadPoolExecutor(max_workers=args.node_workers) as pool:
         nodes = list(pool.map(_train_node, node_tasks))
@@ -480,6 +504,9 @@ def main() -> None:
         "openings": openings,
         "targets": targets,
         "nodes": nodes,
+        "feature_ablation": {
+            "zero_feature_prefixes": list(args.zero_feature_prefix),
+        },
         "robustness": {
             "seed_grouped_cross_validation": True,
             "opponent_family_grouped_cross_validation": True,

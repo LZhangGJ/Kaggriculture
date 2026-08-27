@@ -76,18 +76,20 @@ def main() -> None:
 
     policy = json.loads(args.policy.read_text(encoding="utf-8"))
     runtime_nodes = []
+    route_q_policy = "q_model_npz_base64" in policy
+    exact_state_policy = "exact_state_model_npz_base64" in policy
     for wrapped in policy["nodes"]:
         selected = wrapped["selected"]
         if not selected.get("enabled", True):
             continue
-        runtime_nodes.append({
-            "selected": {
-                "opening": str(selected["opening"]),
-                "checkpoint": int(selected["checkpoint"]),
-                "enabled": True,
-                "tree": selected["tree"],
-            }
-        })
+        runtime_selected = {
+            "opening": str(selected["opening"]),
+            "checkpoint": int(selected["checkpoint"]),
+            "enabled": True,
+        }
+        if not route_q_policy and not exact_state_policy:
+            runtime_selected["tree"] = selected["tree"]
+        runtime_nodes.append({"selected": runtime_selected})
     runtime_policy = {
         "schema_version": 1,
         "kind": "searched_one_switch_route_sequence_runtime",
@@ -98,6 +100,24 @@ def main() -> None:
             "checkpoints", [value["selected"]["checkpoint"] for value in runtime_nodes]
         ),
     }
+    if route_q_policy:
+        runtime_policy["kind"] = "backward_counterfactual_route_q_runtime"
+        runtime_policy["q_model_npz_base64"] = policy["q_model_npz_base64"]
+        runtime_policy["q_model"] = policy.get("q_model", {})
+        if "fallback_nodes" in policy:
+            runtime_policy["kind"] = "gated_backward_counterfactual_route_q_runtime"
+            runtime_policy["fallback_nodes"] = policy["fallback_nodes"]
+        if "mode_nodes" in policy:
+            runtime_policy["kind"] = "multimode_gated_backward_route_q_runtime"
+            runtime_policy["mode_nodes"] = policy["mode_nodes"]
+        if "gate" in policy:
+            runtime_policy["gate"] = policy["gate"]
+    if exact_state_policy:
+        runtime_policy["kind"] = "two_stage_exact_public_state_route_runtime"
+        runtime_policy["exact_state_model_npz_base64"] = policy[
+            "exact_state_model_npz_base64"
+        ]
+        runtime_policy["exact_state_model"] = policy.get("exact_state_model", {})
     nash = json.loads(args.nash.read_text(encoding="utf-8"))
     runtime_nash = {
         "schema_version": 1,
@@ -144,7 +164,9 @@ def main() -> None:
             }
             for value in runtime_nodes
         ],
-        "final_holdout": holdout["best"],
+        "final_holdout": holdout.get(
+            "best", holdout.get("metrics", holdout.get("selector", {}))
+        ),
         "sources": {
             "base": str(args.base), "actions": str(args.actions),
             "metadata": str(args.metadata), "policy": str(args.policy),

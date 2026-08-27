@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from meta_agent.src.teammate_expanded_routes import load_action_tapes
-from search_native_tape_mutations import _apply_genes
+from evolve_native_route_library import _apply_evolution_genes
 
 
 def main() -> None:
@@ -31,6 +31,9 @@ def main() -> None:
     validation = json.loads(args.validation.read_text(encoding="utf-8"))
     base_entries = list(metadata["opponent_routes"])
     by_family = {str(value["family"]): value for value in base_entries}
+    parent_tapes = {
+        family: tapes[str(entry["route_id"])] for family, entry in by_family.items()
+    }
     used_families = set(by_family)
     used_route_ids = set(tapes)
     generated_entries = []
@@ -44,7 +47,7 @@ def main() -> None:
         parent_entry = by_family[parent]
         parent_tape = tapes[str(parent_entry["route_id"])]
         genes = list(row.get("genes") or [])
-        evolved_tape = _apply_genes(parent_tape, genes)
+        evolved_tape = _apply_evolution_genes(parent_tape, genes, parent_tapes)
         serialized = json.dumps(
             evolved_tape, sort_keys=True, separators=(",", ":")
         ).encode()

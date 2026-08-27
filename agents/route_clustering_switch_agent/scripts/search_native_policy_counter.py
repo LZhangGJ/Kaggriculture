@@ -17,6 +17,10 @@ from fast_kaggriculture import native_tree_predict
 from meta_agent.src.native_teammate_executor import NativeTeammateBundle
 
 
+def _csv(value: str) -> tuple[str, ...]:
+    return tuple(part.strip() for part in value.split(",") if part.strip())
+
+
 def _ints(value: str) -> tuple[int, ...]:
     start, separator, stop = value.partition(":")
     if separator:
@@ -44,12 +48,13 @@ def main() -> None:
     parser.add_argument("--metadata", type=Path, required=True)
     parser.add_argument("--policy", type=Path, required=True)
     parser.add_argument("--opening", default="G001")
+    parser.add_argument("--candidates", type=_csv)
     parser.add_argument("--seeds", type=_ints, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--matrix-output", type=Path)
     args = parser.parse_args()
 
     started = time.perf_counter()
-    bundle = NativeTeammateBundle(args.source, args.actions, args.metadata)
     policy = json.loads(args.policy.read_text(encoding="utf-8"))
     nodes = sorted(
         (
@@ -61,14 +66,29 @@ def main() -> None:
     )
     if not nodes:
         raise ValueError(f"no enabled policy nodes for {args.opening}")
+    policy_families = tuple(dict.fromkeys(
+        str(family)
+        for node in nodes
+        for family in node["tree"]["classes"]
+    ))
+    included_families = (
+        tuple(dict.fromkeys((args.opening, *policy_families, *args.candidates)))
+        if args.candidates else None
+    )
+    bundle = NativeTeammateBundle(
+        args.source, args.actions, args.metadata,
+        included_families=included_families,
+    )
     opening_index = bundle.index(args.opening)
+    candidate_families = args.candidates or bundle.families
+    candidate_indices = [bundle.index(family) for family in candidate_families]
 
     # Samples are ordered candidate, seed, candidate seat.  The policy is the
     # other player and sees the same no-switch history at each later node only
     # when no earlier node has switched, matching SearchRouteController.
     sample_rows = [
         (candidate_index, int(seed), candidate_seat)
-        for candidate_index in range(len(bundle.families))
+        for candidate_index in candidate_indices
         for seed in args.seeds
         for candidate_seat in (0, 1)
     ]
@@ -118,8 +138,8 @@ def main() -> None:
 
     rows = []
     block_size = len(args.seeds) * 2
-    for candidate_index, family in enumerate(bundle.families):
-        start = candidate_index * block_size
+    for candidate_position, family in enumerate(candidate_families):
+        start = candidate_position * block_size
         stop = start + block_size
         block_rewards = rewards[start:stop]
         block_samples = sample_rows[start:stop]
@@ -192,11 +212,41 @@ def main() -> None:
     output.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    if args.matrix_output:
+        matrix_output = args.matrix_output.resolve()
+        matrix_output.parent.mkdir(parents=True, exist_ok=True)
+        block_shape = (len(candidate_families), len(args.seeds), 2)
+        candidate_seats = np.asarray(
+            [value[2] for value in sample_rows], dtype=np.int64
+        )
+        sample_indices = np.arange(len(sample_rows))
+        own_rewards = rewards[sample_indices, candidate_seats]
+        other_rewards = rewards[sample_indices, 1 - candidate_seats]
+        margins = own_rewards - other_rewards
+        scores = (margins > 0).astype(np.float64) + 0.5 * (margins == 0)
+        np.savez_compressed(
+            matrix_output,
+            families=np.asarray(candidate_families),
+            seeds=np.asarray(args.seeds, dtype=np.int64),
+            rewards=np.asarray(rewards).reshape(*block_shape, 2),
+            own_rewards=own_rewards.reshape(block_shape),
+            other_rewards=other_rewards.reshape(block_shape),
+            margins=margins.reshape(block_shape),
+            scores=scores.reshape(block_shape),
+            switch_steps=switch_step.reshape(block_shape),
+            switch_targets=switch_target.reshape(block_shape),
+        )
+        payload["matrix_output"] = str(matrix_output)
+        output.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     print(json.dumps({
         "output": str(output),
         "games": payload["games"],
         "games_per_second": payload["games_per_second"],
         "elapsed_seconds": payload["elapsed_seconds"],
+        "matrix_output": payload.get("matrix_output"),
         "top10": [
             {key: row[key] for key in (
                 "rank", "family", "mean_score", "mean_margin",

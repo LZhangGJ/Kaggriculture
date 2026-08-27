@@ -15,7 +15,11 @@ import numpy as np
 
 from meta_agent.src.native_teammate_executor import NativeTeammateBundle
 from meta_agent.src.teammate_expanded_routes import load_action_tapes
-from search_native_tape_mutations import _apply_genes, _ints
+from evolve_native_route_library import (
+    _apply_evolution_genes,
+    _robust_checkpoint_metrics,
+)
+from search_native_tape_mutations import _ints
 
 
 def _csv(value: str) -> tuple[str, ...]:
@@ -38,6 +42,25 @@ def _representatives(
     return tuple(selected[:limit])
 
 
+def _opponent_shortlist(
+    rows: list[dict[str, Any]], opponents: tuple[str, ...], count: int,
+) -> list[dict[str, Any]]:
+    selected: list[dict[str, Any]] = []
+    for opponent in opponents:
+        ranked = sorted(
+            rows,
+            key=lambda row: (
+                float(row.get("opponent_raw_win_rates", {}).get(opponent, -1.0)),
+                float(row.get("opponent_mean_margins", {}).get(opponent, -float("inf"))),
+            ),
+            reverse=True,
+        )
+        for row in ranked[:count]:
+            if row not in selected:
+                selected.append(row)
+    return selected
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
@@ -52,8 +75,11 @@ def main() -> None:
     parser.add_argument("--opponent-limit", type=int, default=0)
     parser.add_argument("--top-global", type=int, default=32)
     parser.add_argument("--per-parent", type=int, default=4)
+    parser.add_argument("--shortlist-per-opponent", type=int, default=0)
     parser.add_argument("--portfolio-size", type=int, default=16)
+    parser.add_argument("--portfolio-per-opponent", type=int, default=0)
     parser.add_argument("--minimum-score-gain", type=float, default=0.0)
+    parser.add_argument("--seed-folds", type=int, default=4)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--matrix-output", type=Path, required=True)
     args = parser.parse_args()
@@ -65,6 +91,7 @@ def main() -> None:
     base_families = tuple(str(value["family"]) for value in entries)
     route_id = {str(value["family"]): str(value["route_id"]) for value in entries}
     tapes = load_action_tapes(args.actions)
+    parent_tapes = {family: tapes[value] for family, value in route_id.items()}
     openings = args.openings or tuple(archive["openings"])
     base_targets = args.base_targets or tuple(archive["base_targets"])
     checkpoints = args.checkpoints or tuple(int(value) for value in archive["checkpoints"])
@@ -83,13 +110,20 @@ def main() -> None:
         for row in by_parent[str(parent)][:args.per_parent]:
             if row not in chosen_rows:
                 chosen_rows.append(row)
+    for row in _opponent_shortlist(
+        source_rows, tuple(opponents), args.shortlist_per_opponent
+    ):
+        if row not in chosen_rows:
+            chosen_rows.append(row)
 
     routes: dict[str, list[dict[str, Any]]] = {}
     rows: list[dict[str, Any]] = []
     tape_hashes: set[str] = set()
     for row in chosen_rows:
         parent = str(row["parent"])
-        tape = _apply_genes(tapes[route_id[parent]], list(row.get("genes") or []))
+        tape = _apply_evolution_genes(
+            parent_tapes[parent], list(row.get("genes") or []), parent_tapes
+        )
         digest = hashlib.sha256(
             json.dumps(tape, sort_keys=True, separators=(",", ":")).encode()
         ).hexdigest()
@@ -103,7 +137,10 @@ def main() -> None:
         raise ValueError("validation shortlist is empty after tape de-duplication")
 
     bundle = NativeTeammateBundle(
-        args.source, args.actions, args.metadata, additional_routes=routes
+        args.source, args.actions, args.metadata, additional_routes=routes,
+        included_families=tuple(dict.fromkeys(
+            (*openings, *base_targets, *opponents)
+        )),
     )
     target_names = (*base_targets, *(row["validation_family"] for row in rows))
     result = bundle.executor.switch_search(
@@ -133,8 +170,54 @@ def main() -> None:
             value_margins,
             np.where(values < base_scores, base_margins, np.maximum(base_margins, value_margins)),
         )
-        row["holdout_candidate_score"] = float(np.mean(values))
-        row["holdout_candidate_margin"] = float(np.mean(value_margins))
+        checkpoint_rows = []
+        for checkpoint_index, checkpoint in enumerate(checkpoints):
+            checkpoint_scores = values[:, checkpoint_index]
+            checkpoint_margins = value_margins[:, checkpoint_index]
+            checkpoint_rows.append({
+                "checkpoint": int(checkpoint),
+                **_robust_checkpoint_metrics(
+                    checkpoint_scores, checkpoint_margins,
+                    opponents, args.seed_folds,
+                ),
+                "candidate_score": float(np.mean(checkpoint_scores)),
+                "candidate_margin": float(np.mean(checkpoint_margins)),
+            })
+        best_checkpoint = max(
+            checkpoint_rows,
+            key=lambda value: (
+                value["robust_raw_win_rate"],
+                value["minimum_opponent_raw_win_rate"],
+                value["combined_raw_win_rate"],
+                value["minimum_opponent_mean_margin"],
+            ),
+        )
+        row["holdout_checkpoint"] = best_checkpoint["checkpoint"]
+        row["holdout_checkpoint_metrics"] = checkpoint_rows
+        row["holdout_robust_raw_win_rate"] = best_checkpoint["robust_raw_win_rate"]
+        row["holdout_minimum_opponent_raw_win_rate"] = best_checkpoint[
+            "minimum_opponent_raw_win_rate"
+        ]
+        row["holdout_minimum_opponent_seat_raw_win_rate"] = best_checkpoint[
+            "minimum_opponent_seat_raw_win_rate"
+        ]
+        row["holdout_minimum_opponent_seed_fold_raw_win_rate"] = best_checkpoint[
+            "minimum_opponent_seed_fold_raw_win_rate"
+        ]
+        row["holdout_candidate_score"] = best_checkpoint["candidate_score"]
+        row["holdout_candidate_margin"] = best_checkpoint["candidate_margin"]
+        row["holdout_opponent_raw_win_rates"] = best_checkpoint[
+            "opponent_raw_win_rates"
+        ]
+        row["holdout_opponent_mean_margins"] = best_checkpoint[
+            "opponent_mean_margins"
+        ]
+        row["holdout_opponent_seat_raw_win_rates"] = best_checkpoint[
+            "opponent_seat_raw_win_rates"
+        ]
+        row["holdout_opponent_seed_fold_raw_win_rates"] = best_checkpoint[
+            "opponent_seed_fold_raw_win_rates"
+        ]
         row["holdout_incremental_oracle_score"] = float(np.mean(next_scores - base_scores))
         row["holdout_incremental_oracle_margin"] = float(np.mean(next_margins - base_margins))
 
@@ -143,25 +226,25 @@ def main() -> None:
     covered_scores = base_scores.copy()
     covered_margins = base_margins.copy()
     trace = []
-    for position in range(min(args.portfolio_size, len(rows))):
-        def contribution(index: int) -> tuple[float, float, float, float]:
-            values = candidate_scores[:, :, index]
-            value_margins = candidate_margins[:, :, index]
-            next_scores = np.maximum(covered_scores, values)
-            next_margins = np.where(
-                values > covered_scores,
-                value_margins,
-                np.where(values < covered_scores, covered_margins,
-                         np.maximum(covered_margins, value_margins)),
-            )
-            return (
-                float(np.mean(next_scores)),
-                float(np.mean(next_margins)),
-                float(rows[index]["holdout_candidate_score"]),
-                float(rows[index]["holdout_candidate_margin"]),
-            )
+    def contribution(index: int) -> tuple[float, float, float, float]:
+        values = candidate_scores[:, :, index]
+        value_margins = candidate_margins[:, :, index]
+        next_scores = np.maximum(covered_scores, values)
+        next_margins = np.where(
+            values > covered_scores,
+            value_margins,
+            np.where(values < covered_scores, covered_margins,
+                     np.maximum(covered_margins, value_margins)),
+        )
+        return (
+            float(np.mean(next_scores)),
+            float(np.mean(next_margins)),
+            float(rows[index]["holdout_candidate_score"]),
+            float(rows[index]["holdout_candidate_margin"]),
+        )
 
-        chosen = max(available, key=contribution)
+    def add(chosen: int, reason: str) -> float:
+        nonlocal covered_scores, covered_margins
         previous_score = float(np.mean(covered_scores))
         values = candidate_scores[:, :, chosen]
         value_margins = candidate_margins[:, :, chosen]
@@ -173,13 +256,12 @@ def main() -> None:
                      np.maximum(covered_margins, value_margins)),
         )
         gain = float(np.mean(next_scores)) - previous_score
-        if position > 0 and gain <= args.minimum_score_gain:
-            break
         selected.append(chosen)
         available.remove(chosen)
         covered_scores, covered_margins = next_scores, next_margins
         trace.append({
-            "position": position + 1,
+            "position": len(selected),
+            "selection_reason": reason,
             "validation_family": rows[chosen]["validation_family"],
             "parent": rows[chosen]["parent"],
             "source_rank": rows[chosen]["rank"],
@@ -187,6 +269,30 @@ def main() -> None:
             "portfolio_oracle_score": float(np.mean(covered_scores)),
             "portfolio_oracle_margin": float(np.mean(covered_margins)),
         })
+        return gain
+
+    for opponent in opponents:
+        for _ in range(args.portfolio_per_opponent):
+            if not available or len(selected) >= args.portfolio_size:
+                break
+            chosen = max(
+                available,
+                key=lambda index: (
+                    min(rows[index]["holdout_opponent_seat_raw_win_rates"][opponent]),
+                    min(rows[index]["holdout_opponent_seed_fold_raw_win_rates"][opponent]),
+                    rows[index]["holdout_opponent_raw_win_rates"][opponent],
+                    rows[index]["holdout_opponent_mean_margins"][opponent],
+                    contribution(index),
+                ),
+            )
+            add(chosen, f"opponent:{opponent}")
+
+    while available and len(selected) < min(args.portfolio_size, len(rows)):
+        chosen = max(available, key=contribution)
+        gain = contribution(chosen)[0] - float(np.mean(covered_scores))
+        if selected and gain <= args.minimum_score_gain:
+            break
+        add(chosen, "greedy_oracle")
 
     portfolio = []
     for rank, index in enumerate(selected, 1):
@@ -215,6 +321,9 @@ def main() -> None:
         "opponents": list(opponents),
         "seeds": list(args.seeds),
         "candidate_count": len(rows),
+        "shortlist_per_opponent": args.shortlist_per_opponent,
+        "seed_folds": args.seed_folds,
+        "portfolio_per_opponent": args.portfolio_per_opponent,
         "base_oracle_score": float(np.mean(base_scores)),
         "base_oracle_margin": float(np.mean(base_margins)),
         "portfolio_oracle_score": float(np.mean(covered_scores)),
@@ -224,10 +333,12 @@ def main() -> None:
         "ranking": sorted(
             rows,
             key=lambda row: (
-                -row["holdout_incremental_oracle_score"],
-                -row["holdout_incremental_oracle_margin"],
-                -row["holdout_candidate_score"],
+                row["holdout_robust_raw_win_rate"],
+                row["holdout_minimum_opponent_raw_win_rate"],
+                row["holdout_candidate_score"],
+                row["holdout_candidate_margin"],
             ),
+            reverse=True,
         ),
         "matrix_output": str(args.matrix_output.resolve()),
         "elapsed_seconds": time.perf_counter() - started,
@@ -244,6 +355,8 @@ def main() -> None:
         "top10": [{
             key: row[key] for key in (
                 "validation_family", "parent", "rank",
+                "holdout_checkpoint", "holdout_robust_raw_win_rate",
+                "holdout_minimum_opponent_raw_win_rate",
                 "holdout_incremental_oracle_score",
                 "holdout_incremental_oracle_margin",
                 "holdout_candidate_score", "holdout_candidate_margin",

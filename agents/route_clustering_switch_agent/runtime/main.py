@@ -31,7 +31,7 @@ _EXPANDED = TeammateExpandedRouteAgent(_SOURCE, _TAPES, "searched_teammate_submi
 _CONTROLLER = SearchRouteController(
     _POLICY_PAYLOAD, _ROUTE_BY_FAMILY, _OPENING_WEIGHTS, rng_seed=None
 )
-_CONTROLLER.forced_opening = 'G001'
+_CONTROLLER.forced_opening = 'NR295'
 _POLICY = SearchRoutedTeammateAgent(
     _EXPANDED, _CONTROLLER, _POLICY_PAYLOAD.get("targets", ())
 )
