@@ -1,0 +1,36 @@
+{
+  "schema": "kaggriculture.candidate8_online_budget.v1",
+  "created_at_utc": "2026-08-28T19:43:34.447722+00:00",
+  "status": "PASS",
+  "boundary": "Technical latency only. The benchmarked ranker failed its value quality gate and is not approved for deployment.",
+  "repeats": 200,
+  "candidate_counts": {
+    "raw": 877,
+    "feasible": 740,
+    "shortlist": 64
+  },
+  "candidate_generation_ms": {
+    "mean": 0.949634685,
+    "p50": 0.8859885000000001,
+    "p95": 1.0384942499999998,
+    "max": 5.175111
+  },
+  "warm_ranker_64_ms": {
+    "mean": 49.773817369999996,
+    "p50": 47.261267000000004,
+    "p95": 57.40085615,
+    "max": 60.092076
+  },
+  "combined_p95_ms": 58.4393504,
+  "one_time_model_load_seconds": 3.7761010440000007,
+  "inputs": {
+    "model": {
+      "path": "experiments/ecobot_adaptive_planner_v1/models/w9_candidate8_ranker_multifuture_passive_prefix2820001_n8x2_future32_safe_v1.joblib",
+      "sha256": "E1CC600F038F9551FE761BDBCF1D20EA1FB041E3B1CCD2AA133B29B303D8EDC4"
+    },
+    "dataset": {
+      "path": "experiments/ecobot_adaptive_planner_v1/datasets/w9_candidate8_multifuture_passive_prefix2820001_n8x2_future32_day9_v1.npz",
+      "sha256": "95FC939DBB284EA648D969FD0F0230CB1A09F07224089CE340CACD3B14DD67CE"
+    }
+  }
+}

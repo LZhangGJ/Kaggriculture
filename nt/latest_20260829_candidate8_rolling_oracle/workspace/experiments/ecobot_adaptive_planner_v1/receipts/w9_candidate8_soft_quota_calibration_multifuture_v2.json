@@ -1,0 +1,194 @@
+{
+  "schema": "kaggriculture.candidate8_soft_quota_calibration.v1",
+  "created_at_utc": "2026-08-28T19:36:47.209400+00:00",
+  "status": "PASS",
+  "method": "Deterministic one-slot coordinate descent over stable multi-future counterfactual value; no Replay frequency is used as a quota.",
+  "initial_quotas": {
+    "KEEP": 1,
+    "SCHEDULE_LAYOUT": 8,
+    "CONTINUOUS_SCALE": 14,
+    "UNILATERAL": 6,
+    "MULTI_PROJECT": 18,
+    "TIMING": 5,
+    "MARKET_TRANSACTION": 6,
+    "PHASE_SUFFIX": 3,
+    "LOCAL_RECOVERY": 3
+  },
+  "recommended_quotas": {
+    "KEEP": 1,
+    "SCHEDULE_LAYOUT": 8,
+    "CONTINUOUS_SCALE": 15,
+    "UNILATERAL": 5,
+    "MULTI_PROJECT": 18,
+    "TIMING": 5,
+    "MARKET_TRANSACTION": 6,
+    "PHASE_SUFFIX": 3,
+    "LOCAL_RECOVERY": 3
+  },
+  "calibration_before": {
+    "states": 24,
+    "mean_regret": 906.9348958333334,
+    "p90_regret": 2386.4156249999996,
+    "max_regret": 8441.0,
+    "exact_oracle_recall": 0.625,
+    "near_oracle_within_500": 0.6666666666666666,
+    "near_oracle_within_1000": 0.7083333333333334,
+    "missed_oracle_by_family": {
+      "KEEP": 0,
+      "SCHEDULE_LAYOUT": 0,
+      "CONTINUOUS_SCALE": 0,
+      "UNILATERAL": 0,
+      "MULTI_PROJECT": 9,
+      "TIMING": 0,
+      "MARKET_TRANSACTION": 0,
+      "PHASE_SUFFIX": 0,
+      "LOCAL_RECOVERY": 0
+    }
+  },
+  "calibration_after": {
+    "states": 24,
+    "mean_regret": 898.015625,
+    "p90_regret": 2351.8124999999995,
+    "max_regret": 8441.0,
+    "exact_oracle_recall": 0.625,
+    "near_oracle_within_500": 0.6666666666666666,
+    "near_oracle_within_1000": 0.75,
+    "missed_oracle_by_family": {
+      "KEEP": 0,
+      "SCHEDULE_LAYOUT": 0,
+      "CONTINUOUS_SCALE": 0,
+      "UNILATERAL": 0,
+      "MULTI_PROJECT": 9,
+      "TIMING": 0,
+      "MARKET_TRANSACTION": 0,
+      "PHASE_SUFFIX": 0,
+      "LOCAL_RECOVERY": 0
+    }
+  },
+  "holdout_before": {
+    "states": 4,
+    "mean_regret": 693.21875,
+    "p90_regret": 1386.9125,
+    "max_regret": 1387.625,
+    "exact_oracle_recall": 0.5,
+    "near_oracle_within_500": 0.5,
+    "near_oracle_within_1000": 0.5,
+    "missed_oracle_by_family": {
+      "KEEP": 0,
+      "SCHEDULE_LAYOUT": 0,
+      "CONTINUOUS_SCALE": 0,
+      "UNILATERAL": 0,
+      "MULTI_PROJECT": 2,
+      "TIMING": 0,
+      "MARKET_TRANSACTION": 0,
+      "PHASE_SUFFIX": 0,
+      "LOCAL_RECOVERY": 0
+    }
+  },
+  "holdout_after": {
+    "states": 4,
+    "mean_regret": 693.21875,
+    "p90_regret": 1386.9125,
+    "max_regret": 1387.625,
+    "exact_oracle_recall": 0.5,
+    "near_oracle_within_500": 0.5,
+    "near_oracle_within_1000": 0.5,
+    "missed_oracle_by_family": {
+      "KEEP": 0,
+      "SCHEDULE_LAYOUT": 0,
+      "CONTINUOUS_SCALE": 0,
+      "UNILATERAL": 0,
+      "MULTI_PROJECT": 2,
+      "TIMING": 0,
+      "MARKET_TRANSACTION": 0,
+      "PHASE_SUFFIX": 0,
+      "LOCAL_RECOVERY": 0
+    }
+  },
+  "search_path": [
+    {
+      "quotas": [
+        1,
+        8,
+        14,
+        6,
+        18,
+        5,
+        6,
+        3,
+        3
+      ],
+      "metrics": {
+        "states": 24,
+        "mean_regret": 906.9348958333334,
+        "p90_regret": 2386.4156249999996,
+        "max_regret": 8441.0,
+        "exact_oracle_recall": 0.625,
+        "near_oracle_within_500": 0.6666666666666666,
+        "near_oracle_within_1000": 0.7083333333333334,
+        "missed_oracle_by_family": {
+          "KEEP": 0,
+          "SCHEDULE_LAYOUT": 0,
+          "CONTINUOUS_SCALE": 0,
+          "UNILATERAL": 0,
+          "MULTI_PROJECT": 9,
+          "TIMING": 0,
+          "MARKET_TRANSACTION": 0,
+          "PHASE_SUFFIX": 0,
+          "LOCAL_RECOVERY": 0
+        }
+      }
+    },
+    {
+      "quotas": [
+        1,
+        8,
+        15,
+        5,
+        18,
+        5,
+        6,
+        3,
+        3
+      ],
+      "metrics": {
+        "states": 24,
+        "mean_regret": 898.015625,
+        "p90_regret": 2351.8124999999995,
+        "max_regret": 8441.0,
+        "exact_oracle_recall": 0.625,
+        "near_oracle_within_500": 0.6666666666666666,
+        "near_oracle_within_1000": 0.75,
+        "missed_oracle_by_family": {
+          "KEEP": 0,
+          "SCHEDULE_LAYOUT": 0,
+          "CONTINUOUS_SCALE": 0,
+          "UNILATERAL": 0,
+          "MULTI_PROJECT": 9,
+          "TIMING": 0,
+          "MARKET_TRANSACTION": 0,
+          "PHASE_SUFFIX": 0,
+          "LOCAL_RECOVERY": 0
+        }
+      }
+    }
+  ],
+  "inputs": {
+    "calibration": [
+      {
+        "path": "experiments\\ecobot_adaptive_planner_v1\\datasets\\w9_candidate8_multifuture_passive_prefix2820001_n8x2_future32_day9_v1.npz",
+        "sha256": "95FC939DBB284EA648D969FD0F0230CB1A09F07224089CE340CACD3B14DD67CE"
+      },
+      {
+        "path": "experiments\\ecobot_adaptive_planner_v1\\datasets\\w9_candidate8_multifuture_g001_prefix2824001_n4x2_future16_day9_finance_v2.npz",
+        "sha256": "765C207CD275DC014E2EC0B47E7D2A474AE86B03E53BBA93C21E7E8669145212"
+      }
+    ],
+    "holdout": [
+      {
+        "path": "experiments\\ecobot_adaptive_planner_v1\\datasets\\w9_candidate8_multifuture_g001_prefix2823001_n2x2_future16_day18_v1.npz",
+        "sha256": "2C8D7B80193A225349439909452DA08CD163F17B58C74E020AFBF3661D86046A"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "schema": "kaggriculture.candidate8_rolling_oracle.v1",
+  "created_at_utc": "2026-08-28T23:44:14.265912+00:00",
+  "parameters": {
+    "opponent": "PASSIVE",
+    "opponent_route": -1,
+    "actual_seed_start": 2840001,
+    "actual_seed_count": 1,
+    "future_seed_start": 9950001,
+    "future_count": 32,
+    "decision_days": [
+      6,
+      12,
+      18,
+      24,
+      27
+    ],
+    "seats": [
+      0
+    ],
+    "maximum_arms": 4096,
+    "single_stage_day": 9,
+    "threads": 16,
+    "selection_objective": "mean_own_terminal_cash",
+    "actual_seed_is_disjoint_from_selection_future_bank": true
+  },
+  "summary": {
+    "states": 1,
+    "baseline_cash": {
+      "mean": 127003.0,
+      "median": 127003.0,
+      "p10": 127003.0,
+      "p25": 127003.0,
+      "p75": 127003.0,
+      "p90": 127003.0,
+      "minimum": 127003.0,
+      "maximum": 127003.0,
+      "rate_ge_140k": 0.0,
+      "rate_ge_150k": 0.0,
+      "rate_ge_160k": 0.0
+    },
+    "single_stage_cash": {
+      "mean": 125410.0,
+      "median": 125410.0,
+      "p10": 125410.0,
+      "p25": 125410.0,
+      "p75": 125410.0,
+      "p90": 125410.0,
+      "minimum": 125410.0,
+      "maximum": 125410.0,
+      "rate_ge_140k": 0.0,
+      "rate_ge_150k": 0.0,
+      "rate_ge_160k": 0.0
+    },
+    "rolling_oracle_cash": {
+      "mean": 137777.0,
+      "median": 137777.0,
+      "p10": 137777.0,
+      "p25": 137777.0,
+      "p75": 137777.0,
+      "p90": 137777.0,
+      "minimum": 137777.0,
+      "maximum": 137777.0,
+      "rate_ge_140k": 0.0,
+      "rate_ge_150k": 0.0,
+      "rate_ge_160k": 0.0
+    },
+    "rolling_oracle_margin": {
+      "mean": 134777.0,
+      "median": 134777.0,
+      "p10": 134777.0,
+      "p25": 134777.0,
+      "p75": 134777.0,
+      "p90": 134777.0,
+      "minimum": 134777.0,
+      "maximum": 134777.0,
+      "rate_ge_140k": 0.0,
+      "rate_ge_150k": 0.0,
+      "rate_ge_160k": 0.0
+    },
+    "rolling_gain_vs_baseline": {
+      "mean": 10774.0,
+      "median": 10774.0,
+      "p10": 10774.0,
+      "p25": 10774.0,
+      "p75": 10774.0,
+      "p90": 10774.0,
+      "minimum": 10774.0,
+      "maximum": 10774.0,
+      "rate_ge_140k": 0.0,
+      "rate_ge_150k": 0.0,
+      "rate_ge_160k": 0.0
+    },
+    "rolling_positive_gain_rate": 1.0,
+    "end_overflow_events": 0,
+    "complete_continuations": 11936,
+    "setup_seconds": 0.9987868430000013,
+    "simulation_seconds": 26.368452237000003,
+    "complete_continuations_per_second": 452.66213931402086
+  },
+  "selected_family": {
+    "KEEP": {
+      "count": 2,
+      "mean_stage_expected_gain": 0.0,
+      "maximum_stage_expected_gain": 0.0
+    },
+    "MULTI_PROJECT": {
+      "count": 2,
+      "mean_stage_expected_gain": 6058.953125,
+      "maximum_stage_expected_gain": 8199.03125
+    },
+    "UNILATERAL": {
+      "count": 1,
+      "mean_stage_expected_gain": 944.96875,
+      "maximum_stage_expected_gain": 944.96875
+    }
+  },
+  "states": [
+    {
+      "state_id": 0,
+      "actual_seed": 2840001,
+      "seat": 0,
+      "baseline_cash": 127003.0,
+      "single_stage": {
+        "selected_rank": 30,
+        "selected_family": "CONTINUOUS_SCALE",
+        "selected_expected_cash": 122865.0,
+        "keep_expected_cash": 116097.96875,
+        "realized_cash": 125410.0,
+        "realized_gain_vs_baseline": -1593.0
+      },
+      "rolling_cash": 137777.0,
+      "opponent_cash": 3000.0,
+      "rolling_margin": 134777.0,
+      "rolling_gain_vs_baseline": 10774.0,
+      "end_overflow": 0,
+      "avoidable_crop_losses": 0,
+      "avoidable_animal_losses": 0,
+      "complete_continuations": 2464,
+      "stages": [
+        {
+          "day": 6,
+          "step": 144,
+          "feasible_count": 13,
+          "selected_rank": 3,
+          "selected_family": "UNILATERAL",
+          "selected_signature": 14647450502958425778,
+          "selected_expected_cash": 134993.0,
+          "keep_expected_cash": 134048.03125,
+          "expected_gain_vs_keep": 944.96875
+        },
+        {
+          "day": 12,
+          "step": 288,
+          "feasible_count": 35,
+          "selected_rank": 32,
+          "selected_family": "MULTI_PROJECT",
+          "selected_signature": 4921403393602166902,
+          "selected_expected_cash": 137819.96875,
+          "keep_expected_cash": 129620.9375,
+          "expected_gain_vs_keep": 8199.03125
+        },
+        {
+          "day": 18,
+          "step": 432,
+          "feasible_count": 27,
+          "selected_rank": 15,
+          "selected_family": "MULTI_PROJECT",
+          "selected_signature": 16814665731774059027,
+          "selected_expected_cash": 139713.09375,
+          "keep_expected_cash": 135794.21875,
+          "expected_gain_vs_keep": 3918.875
+        },
+        {
+          "day": 24,
+          "step": 576,
+          "feasible_count": 1,
+          "selected_rank": 0,
+          "selected_family": "KEEP",
+          "selected_signature": 15019185078291563059,
+          "selected_expected_cash": 137777.0,
+          "keep_expected_cash": 137777.0,
+          "expected_gain_vs_keep": 0.0
+        },
+        {
+          "day": 27,
+          "step": 648,
+          "feasible_count": 1,
+          "selected_rank": 0,
+          "selected_family": "KEEP",
+          "selected_signature": 15019185078291563059,
+          "selected_expected_cash": 137777.0,
+          "keep_expected_cash": 137777.0,
+          "expected_gain_vs_keep": 0.0
+        }
+      ]
+    }
+  ],
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "genomes": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    }
+  }
+}

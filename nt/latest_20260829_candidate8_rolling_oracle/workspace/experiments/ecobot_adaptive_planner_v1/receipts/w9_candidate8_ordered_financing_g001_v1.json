@@ -1,0 +1,75 @@
+{
+  "schema": "kaggriculture.candidate8_ordered_financing.v1",
+  "created_at_utc": "2026-08-28T19:41:52.900985+00:00",
+  "status": "PASS",
+  "opponent": "G001",
+  "prefix_seed": 2824002,
+  "seat": 1,
+  "state_id": 3,
+  "feasible_rank": 293,
+  "signature": 7143918808850439537,
+  "candidate_features": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    0,
+    0,
+    0,
+    4,
+    0,
+    -1,
+    8,
+    0,
+    206758,
+    204200,
+    7008
+  ],
+  "ordered_transaction_step": 219,
+  "ordered_market": [
+    [
+      "SELL",
+      "FERTILIZER",
+      4
+    ],
+    [
+      "BUY_ANIMAL",
+      "COW",
+      1
+    ]
+  ],
+  "dataset_expected_gain_vs_keep": 7137.5625,
+  "realized_gain_vs_keep": -23453.0,
+  "hard_errors": {
+    "avoidable_crop_losses": 0,
+    "avoidable_animal_losses": 0,
+    "end_overflow": 0
+  },
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "genomes": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    },
+    "dataset": {
+      "path": "experiments/ecobot_adaptive_planner_v1/datasets/w9_candidate8_multifuture_g001_prefix2824001_n4x2_future16_day9_finance_v2.npz",
+      "sha256": "765C207CD275DC014E2EC0B47E7D2A474AE86B03E53BBA93C21E7E8669145212"
+    }
+  }
+}

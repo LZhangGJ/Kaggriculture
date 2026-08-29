@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1740" height="420" viewBox="0 0 1740 420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="30" fill="#172033" text-anchor="start" font-weight="700">宏观路线构建与搜索漏斗</text>
+<rect x="45" y="100" width="245" height="205" rx="14" fill="white" stroke="#356ae6" stroke-width="3"/>
+<rect x="45" y="100" width="245" height="12" rx="6" fill="#356ae6"/>
+<text x="167.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">统一回放</text>
+<text x="167.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#356ae6" text-anchor="middle" font-weight="700">3,563 个座位</text>
+<text x="167.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">旧库 1,165 + 新库 2,398</text>
+<line x1="297" y1="202" x2="324" y2="202" stroke="#65708a" stroke-width="3"/>
+<path d="M 324 202 l -9 -7 v 14 z" fill="#65708a"/>
+<rect x="332" y="100" width="245" height="205" rx="14" fill="white" stroke="#23a4a8" stroke-width="3"/>
+<rect x="332" y="100" width="245" height="12" rx="6" fill="#23a4a8"/>
+<text x="454.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">意图聚类</text>
+<text x="454.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#23a4a8" text-anchor="middle" font-weight="700">275 个路线族</text>
+<text x="454.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">平均连接</text>
+<text x="454.5" y="280" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">切割阈值 0.12</text>
+<line x1="584" y1="202" x2="611" y2="202" stroke="#65708a" stroke-width="3"/>
+<path d="M 611 202 l -9 -7 v 14 z" fill="#65708a"/>
+<rect x="619" y="100" width="245" height="205" rx="14" fill="white" stroke="#e58a32" stroke-width="3"/>
+<rect x="619" y="100" width="245" height="12" rx="6" fill="#e58a32"/>
+<text x="741.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">历史筛选</text>
+<text x="741.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#e58a32" text-anchor="middle" font-weight="700">175 个候选族</text>
+<text x="741.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">删 100 个历史 0 胜族</text>
+<line x1="871" y1="202" x2="898" y2="202" stroke="#65708a" stroke-width="3"/>
+<path d="M 898 202 l -9 -7 v 14 z" fill="#65708a"/>
+<rect x="906" y="100" width="245" height="205" rx="14" fill="white" stroke="#356ae6" stroke-width="3"/>
+<rect x="906" y="100" width="245" height="12" rx="6" fill="#356ae6"/>
+<text x="1028.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">粗反事实搜索</text>
+<text x="1028.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#356ae6" text-anchor="middle" font-weight="700">175 → 11 条目标路线</text>
+<text x="1028.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">1,372 万局</text>
+<text x="1028.5" y="280" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">8 种子×双座位</text>
+<line x1="1158" y1="202" x2="1185" y2="202" stroke="#65708a" stroke-width="3"/>
+<path d="M 1185 202 l -9 -7 v 14 z" fill="#65708a"/>
+<rect x="1193" y="100" width="245" height="205" rx="14" fill="white" stroke="#23a4a8" stroke-width="3"/>
+<rect x="1193" y="100" width="245" height="12" rx="6" fill="#23a4a8"/>
+<text x="1315.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">鲁棒树与序列搜索</text>
+<text x="1315.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#23a4a8" text-anchor="middle" font-weight="700">3 个切换节点</text>
+<text x="1315.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">144 / 168 / 216</text>
+<text x="1315.5" y="280" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">一次切换锁定</text>
+<line x1="1445" y1="202" x2="1472" y2="202" stroke="#65708a" stroke-width="3"/>
+<path d="M 1472 202 l -9 -7 v 14 z" fill="#65708a"/>
+<rect x="1480" y="100" width="245" height="205" rx="14" fill="white" stroke="#319b64" stroke-width="3"/>
+<rect x="1480" y="100" width="245" height="12" rx="6" fill="#319b64"/>
+<text x="1602.5" y="155" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" fill="#172033" text-anchor="middle" font-weight="700">独立留出</text>
+<text x="1602.5" y="205" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="24" fill="#319b64" text-anchor="middle" font-weight="700">+8.44 个百分点</text>
+<text x="1602.5" y="251" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">256 新种子</text>
+<text x="1602.5" y="280" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#65708a" text-anchor="middle" font-weight="400">95% 下界 +7.64pp</text>
+<text x="50" y="365" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" fill="#65708a" text-anchor="start" font-weight="400">计算主体：C++ 仿真与反事实评测；Python 仅负责聚类、决策树拟合和导出。</text>
+</svg>

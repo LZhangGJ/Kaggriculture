@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.zlib binary
+*.json.zlib binary
