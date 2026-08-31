@@ -20,6 +20,7 @@ if str(CODE_ROOT / "src") not in sys.path:
     sys.path.insert(0, str(CODE_ROOT / "src"))
 
 from meta_agent.src.search_route_policy import QuantizedExtraTreesRouteQ
+from meta_agent.src.route_switch_features import route_switch_feature_names
 
 
 def _pack_model(bundle: dict, bits: int) -> tuple[bytes, dict[str, int]]:
@@ -91,14 +92,33 @@ def _load_feature_panel(
     path: Path, checkpoints: list[int], expected_features: int,
 ) -> tuple[list[np.ndarray], list[str]]:
     with np.load(path, allow_pickle=False) as saved:
-        names = saved["feature_names"].astype(str).tolist()
-        features = [
-            np.ascontiguousarray(
-                saved[f"features_{checkpoint}"].reshape(-1, expected_features),
-                dtype=np.float32,
-            )
-            for checkpoint in checkpoints
-        ]
+        if "states" in saved.files:
+            saved_checkpoints = saved["checkpoints"].astype(int)
+            positions = []
+            for checkpoint in checkpoints:
+                matches = np.flatnonzero(saved_checkpoints == checkpoint)
+                if len(matches) != 1:
+                    raise ValueError(
+                        f"checkpoint {checkpoint} is absent or duplicated in feature panel"
+                    )
+                positions.append(int(matches[0]))
+            names = route_switch_feature_names()
+            features = [
+                np.ascontiguousarray(
+                    saved["states"][:, position].reshape(-1, expected_features),
+                    dtype=np.float32,
+                )
+                for position in positions
+            ]
+        else:
+            names = saved["feature_names"].astype(str).tolist()
+            features = [
+                np.ascontiguousarray(
+                    saved[f"features_{checkpoint}"].reshape(-1, expected_features),
+                    dtype=np.float32,
+                )
+                for checkpoint in checkpoints
+            ]
     if len(names) != expected_features:
         raise ValueError("feature panel schema differs from fitted model")
     return features, names
@@ -147,7 +167,9 @@ def main() -> None:
     args = parser.parse_args()
 
     bundle = joblib.load(args.model)
-    if bundle.get("schema") != "backward-counter-q-model-v1":
+    if bundle.get("schema") not in {
+        "backward-counter-q-model-v1", "compact-route-q-model-v1",
+    }:
         raise ValueError("unsupported fitted route-Q model schema")
     packed, model_stats = _pack_model(bundle, args.bits)
     encoded = base64.b64encode(packed).decode("ascii")

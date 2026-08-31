@@ -48,8 +48,13 @@ def main() -> None:
     parser.add_argument("--base-metadata", type=Path, required=True)
     parser.add_argument("--route-actions", type=Path, required=True)
     parser.add_argument("--route-metadata", type=Path, required=True)
+    parser.add_argument("--extra-actions", type=Path, action="append", default=[])
     parser.add_argument("--policy", type=Path, required=True)
     parser.add_argument("--opening", default="NR295")
+    parser.add_argument(
+        "--initial-route",
+        help="Route followed before checkpoint; defaults to the mutation parent.",
+    )
     parser.add_argument("--opponent-opening", default="G001")
     parser.add_argument("--donors", type=_csv, required=True)
     parser.add_argument("--checkpoint", type=int, default=96)
@@ -64,19 +69,28 @@ def main() -> None:
         help="Existing target matrix used to reward public-state complementarity.",
     )
     parser.add_argument("--random-seed", type=int, default=20260827)
+    parser.add_argument("--family-prefix", default="DT")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--output-actions", type=Path, required=True)
     parser.add_argument("--output-matrix", type=Path)
     args = parser.parse_args()
+    initial_route = args.initial_route or args.opening
 
     started = time.perf_counter()
     rng = random.Random(args.random_seed)
     metadata = json.loads(args.route_metadata.read_text(encoding="utf-8"))
     route_ids = {str(row["family"]): str(row["route_id"]) for row in metadata["opponent_routes"]}
     source_tapes = load_action_tapes(args.route_actions)
+    for path in args.extra_actions:
+        extra = load_action_tapes(path)
+        duplicates = sorted(set(source_tapes) & set(extra))
+        if duplicates:
+            raise ValueError(f"duplicate extra route family: {duplicates[0]}")
+        source_tapes.update(extra)
+        route_ids.update({family: family for family in extra})
     parent_tapes = {
         family: source_tapes[route_ids[family]]
-        for family in (args.opening, *args.donors)
+        for family in (args.opening, initial_route, *args.donors)
     }
     atoms = [
         list(genes)[0]
@@ -196,15 +210,19 @@ def main() -> None:
     history = []
     for generation in range(args.generations):
         fresh = [genome for genome in population if genome not in cache]
-        names = [f"DT{generation:02d}_{index:04d}" for index in range(len(fresh))]
+        names = [
+            f"{args.family_prefix}{generation:02d}_{index:04d}"
+            for index in range(len(fresh))
+        ]
         routes = {name: materialize(genome) for name, genome in zip(names, fresh)}
         if routes:
             bundle = NativeTeammateBundle(
                 args.source, args.base_actions, args.base_metadata,
-                additional_routes=routes,
+                additional_routes={"__INITIAL__": parent_tapes[initial_route], **routes},
                 included_families=sorted(policy_families),
             )
             opponent_index = bundle.index(args.opponent_opening)
+            initial_index = bundle.index("__INITIAL__")
             samples = [
                 (name, seed, seat)
                 for name in names for seed in args.seeds for seat in (0, 1)
@@ -212,14 +230,19 @@ def main() -> None:
             opponent_steps = np.full(len(samples), -1, dtype=np.int64)
             opponent_targets = np.full(len(samples), opponent_index, dtype=np.int64)
             for checkpoint, tree in sorted(nodes):
-                tasks = np.empty((len(samples), 6), dtype=np.int64)
+                tasks = np.empty((len(samples), 10), dtype=np.int64)
                 for row, (name, seed, seat) in enumerate(samples):
                     routes_pair = [opponent_index, opponent_index]
-                    routes_pair[seat] = bundle.index(name)
-                    tasks[row] = [
-                        *routes_pair, seed, checkpoint, 1 - seat, opponent_index
+                    routes_pair[seat] = initial_index
+                    switches = [-1, -1, -1, -1]
+                    switches[2 * seat:2 * seat + 2] = [
+                        args.checkpoint, bundle.index(name),
                     ]
-                features = np.asarray(bundle.executor.features_batch(tasks))
+                    tasks[row] = [
+                        *routes_pair, seed, checkpoint, 1 - seat, opponent_index,
+                        *switches,
+                    ]
+                features = np.asarray(bundle.executor.features_with_switch_batch(tasks))
                 for row, vector in enumerate(features):
                     if opponent_steps[row] >= 0:
                         continue
@@ -230,9 +253,11 @@ def main() -> None:
             games = np.empty((len(samples), 7), dtype=np.int64)
             for row, (name, seed, seat) in enumerate(samples):
                 routes_pair = [opponent_index, opponent_index]
-                routes_pair[seat] = bundle.index(name)
+                routes_pair[seat] = initial_index
                 switches = [opponent_steps[row], opponent_targets[row]] * 2
-                switches[2 * seat:2 * seat + 2] = [-1, -1]
+                switches[2 * seat:2 * seat + 2] = [
+                    args.checkpoint, bundle.index(name),
+                ]
                 games[row] = [*routes_pair, seed, *switches]
             rewards = np.asarray(bundle.executor.play_batch(games), dtype=np.float64)
             block = len(args.seeds) * 2
@@ -304,7 +329,7 @@ def main() -> None:
     for rank, genome in enumerate(ranked, 1):
         row = dict(cache[genome])
         row["rank"] = rank
-        row["family"] = f"DT{rank:04d}"
+        row["family"] = f"{args.family_prefix}{rank:04d}"
         ranking.append(row)
         if rank <= 64:
             deployed[row["family"]] = materialize(genome)
@@ -322,7 +347,10 @@ def main() -> None:
             outcome=np.stack([outcome_cache[genome] for genome in ranked]).reshape(
                 len(ranked), len(args.seeds), 2
             ),
-            families=np.asarray([f"DT{rank:04d}" for rank in range(1, len(ranked) + 1)]),
+            families=np.asarray([
+                f"{args.family_prefix}{rank:04d}"
+                for rank in range(1, len(ranked) + 1)
+            ]),
             genomes=np.asarray([json.dumps(genome[1]) for genome in ranked]),
             seeds=np.asarray(args.seeds, dtype=np.int64),
             checkpoint=np.asarray(args.checkpoint, dtype=np.int16),
@@ -330,6 +358,8 @@ def main() -> None:
     payload = {
         "schema": "dynamic-tree-counter-suffix-evolution-v1",
         "opening": args.opening,
+        "initial_route": initial_route,
+        "family_prefix": args.family_prefix,
         "checkpoint": args.checkpoint,
         "opponent_opening": args.opponent_opening,
         "donors": list(args.donors),

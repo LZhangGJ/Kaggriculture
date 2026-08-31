@@ -456,23 +456,38 @@ void NativeAgentState::reset() {
   *this = NativeAgentState{};
 }
 
+PlayerAction NativeTeammateExecutor::action_at_with_unit_override(
+    const Simulator& env, int player, int route, NativeAgentState& state,
+    const std::vector<Action>& raw_units) const {
+  if (route < 0 || route >= int(library_.routes.size()) ||
+      library_.routes[route].empty()) return {};
+  const auto& tape = library_.routes[route];
+  PlayerAction raw = tape[std::min(env.step_count(), int(tape.size()) - 1)];
+  raw.units = raw_units;
+  return action(env, player, route, state, &raw);
+}
+
 PlayerAction NativeTeammateExecutor::action(const Simulator& env, int player,
                                              int route,
-                                             NativeAgentState& state) const {
+                                             NativeAgentState& state,
+                                             const PlayerAction* raw_override) const {
   const int step = env.step_count();
   if (step == 0 || step < state.last_step) state.reset();
   state.last_step = step;
   if (route < 0 || route >= int(library_.routes.size()) ||
       library_.routes[route].empty()) return {};
   const auto& tape = library_.routes[route];
-  PlayerAction out = aligned(tape[std::min(step, int(tape.size()) - 1)], env, player);
+  const PlayerAction& raw = raw_override
+      ? *raw_override : tape[std::min(step, int(tape.size()) - 1)];
+  PlayerAction out = aligned(raw, env, player);
   const auto pos = positions(env, player);
 
   // K320 weed repair and replay catch-up.
   state.weed.resize(out.units.size());
   int hires = 0;
   for (int ahead = 0; ahead < 3; ++ahead) {
-    const auto& x = tape[std::min(step + ahead, int(tape.size()) - 1)];
+    const auto& x = ahead == 0 && raw_override
+        ? *raw_override : tape[std::min(step + ahead, int(tape.size()) - 1)];
     hires += std::count_if(x.market.begin(), x.market.end(),
                            [](const Action& a) { return a.op == Op::HIRE; });
   }

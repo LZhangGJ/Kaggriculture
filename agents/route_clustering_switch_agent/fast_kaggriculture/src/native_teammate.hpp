@@ -95,13 +95,26 @@ class NativeTeammateExecutor {
                                      int switch_route0 = -1,
                                      int switch_step1 = -1,
                                      int switch_route1 = -1) const;
+  PlayerAction action_at(const Simulator& env, int player, int route,
+                          NativeAgentState& state) const {
+    return action(env, player, route, state, nullptr);
+  }
+  PlayerAction action_at_with_raw_override(
+      const Simulator& env, int player, int route, NativeAgentState& state,
+      const PlayerAction& raw_action) const {
+    return action(env, player, route, state, &raw_action);
+  }
+  PlayerAction action_at_with_unit_override(
+      const Simulator& env, int player, int route, NativeAgentState& state,
+      const std::vector<Action>& raw_units) const;
   int route_count() const { return int(library_.routes.size()); }
 
  private:
   NativeTapeLibrary library_;
 
   PlayerAction action(const Simulator& env, int player, int route,
-                      NativeAgentState& state) const;
+                       NativeAgentState& state,
+                       const PlayerAction* raw_override = nullptr) const;
 };
 
 }  // namespace fastkag

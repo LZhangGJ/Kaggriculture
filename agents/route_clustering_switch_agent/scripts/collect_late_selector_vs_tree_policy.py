@@ -42,11 +42,21 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    parent_metadata = json.loads(args.candidate_parent_metadata.read_text(encoding="utf-8"))
-    parent_row = next(row for row in parent_metadata["opponent_routes"] if row["family"] == args.opening)
     parent_actions = load_action_tapes(args.candidate_parent_actions)
+    parent_metadata = json.loads(args.candidate_parent_metadata.read_text(encoding="utf-8"))
+    parent_row = next(
+        (row for row in parent_metadata["opponent_routes"]
+         if row["family"] == args.opening),
+        None,
+    )
+    if parent_row is None:
+        if args.opening not in parent_actions:
+            raise KeyError(f"unknown candidate opening: {args.opening}")
+        parent_route_id = args.opening
+    else:
+        parent_route_id = str(parent_row["route_id"])
     shared_actions = load_action_tapes(args.shared_actions)
-    additional = {args.opening: parent_actions[str(parent_row["route_id"])]}
+    additional = {args.opening: parent_actions[parent_route_id]}
     additional.update({family: shared_actions[family] for family in args.targets if family != args.opening})
     policy = json.loads(args.opponent_policy.read_text(encoding="utf-8"))
     nodes = [

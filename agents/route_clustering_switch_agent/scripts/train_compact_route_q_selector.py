@@ -74,6 +74,14 @@ def selected_values(values: np.ndarray, predictions: np.ndarray) -> np.ndarray:
     return values[np.arange(len(values)), predictions]
 
 
+def opponent_raw_win_rates(
+    scores: np.ndarray, predictions: np.ndarray,
+    sample_shape: tuple[int, int, int],
+) -> np.ndarray:
+    wins = selected_values(scores, predictions) == 1.0
+    return wins.reshape(sample_shape).mean(axis=(1, 2))
+
+
 def policy_metrics(
     scores: np.ndarray, margins: np.ndarray, predictions: np.ndarray,
     sample_shape: tuple[int, int, int],
@@ -92,7 +100,7 @@ def policy_metrics(
     else:
         standard_error = 0.0
         lower = float(np.mean(per_seed))
-    opponent_rates = paired.mean(axis=(1, 2))
+    opponent_rates = opponent_raw_win_rates(scores, predictions, sample_shape)
     return {
         "raw_win_rate": float(np.mean(wins)),
         "score_rate": float(np.mean(chosen_scores)),

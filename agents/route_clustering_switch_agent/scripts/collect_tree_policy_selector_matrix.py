@@ -10,7 +10,13 @@ from pathlib import Path
 import numpy as np
 
 from meta_agent.src.native_teammate_executor import NativeTeammateBundle
-from meta_agent.src.search_route_policy import NumpySearchTree
+from meta_agent.src.search_route_policy import (
+    ExactStateRouteNode,
+    ExactStateRouteSelector,
+    NumpySearchTree,
+    QuantizedExtraTreesRouteQ,
+    QuantizedRouteQNode,
+)
 from meta_agent.src.teammate_expanded_routes import load_action_tapes
 
 
@@ -25,6 +31,31 @@ def _csv(value: str) -> tuple[str, ...]:
     return tuple(part.strip() for part in value.split(",") if part.strip())
 
 
+def _policy_nodes(policy: dict, opening: str) -> list[tuple[int, object]]:
+    exact = (
+        ExactStateRouteSelector(policy)
+        if "exact_state_model_npz_base64" in policy else None
+    )
+    quantized = (
+        QuantizedExtraTreesRouteQ(policy)
+        if "q_model_npz_base64" in policy else None
+    )
+    nodes = []
+    for node in policy["nodes"]:
+        selected = node["selected"]
+        if not selected.get("enabled", True) or str(selected["opening"]) != opening:
+            continue
+        checkpoint = int(selected["checkpoint"])
+        if exact is not None:
+            predictor = ExactStateRouteNode(exact, checkpoint)
+        elif quantized is not None:
+            predictor = QuantizedRouteQNode(quantized, checkpoint)
+        else:
+            predictor = NumpySearchTree(selected["tree"])
+        nodes.append((checkpoint, predictor))
+    return sorted(nodes)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
@@ -35,6 +66,7 @@ def main() -> None:
     parser.add_argument("--opponent-name", default="CURRENT_STRONGEST")
     parser.add_argument("--candidate-parent-actions", type=Path, required=True)
     parser.add_argument("--candidate-parent-metadata", type=Path, required=True)
+    parser.add_argument("--candidate-opening")
     parser.add_argument("--shared-actions", type=Path, required=True)
     parser.add_argument("--extra-actions", type=Path, action="append", default=[])
     parser.add_argument("--target-template", type=Path, required=True)
@@ -45,31 +77,46 @@ def main() -> None:
     args = parser.parse_args()
 
     with np.load(args.target_template, allow_pickle=False) as template:
-        opening = str(template["openings"][0])
+        opening = args.candidate_opening or str(template["openings"][0])
         targets = (
             np.asarray(args.targets) if args.targets
             else template["targets"].astype(str)
         )
     parent_metadata = json.loads(args.candidate_parent_metadata.read_text(encoding="utf-8"))
-    parent_row = next(row for row in parent_metadata["opponent_routes"] if row["family"] == opening)
     parent_actions = load_action_tapes(args.candidate_parent_actions)
+    parent_row = next(
+        (row for row in parent_metadata["opponent_routes"] if row["family"] == opening),
+        None,
+    )
+    if parent_row is None:
+        if opening not in parent_actions:
+            raise KeyError(f"unknown candidate opening: {opening}")
+        parent_route_id = opening
+    else:
+        parent_route_id = str(parent_row["route_id"])
     shared_actions = load_action_tapes(args.shared_actions)
     for path in args.extra_actions:
         shared_actions.update(load_action_tapes(path))
-    additional = {opening: parent_actions[str(parent_row["route_id"])]}
+    base_families = {
+        str(row["family"]) for row in json.loads(
+            args.base_metadata.read_text(encoding="utf-8")
+        )["opponent_routes"]
+    }
+    additional = (
+        {} if opening in base_families
+        else {opening: parent_actions[parent_route_id]}
+    )
     additional.update({family: shared_actions[family] for family in targets if family != opening})
 
     policy = json.loads(args.opponent_policy.read_text(encoding="utf-8"))
-    nodes = [
-        (int(node["selected"]["checkpoint"]), NumpySearchTree(node["selected"]["tree"]))
-        for node in policy["nodes"]
-        if node["selected"].get("enabled", True)
-        and str(node["selected"]["opening"]) == args.opponent_opening
-    ]
-    opponent_families = {
-        args.opponent_opening,
-        *(family for _, tree in nodes for family in tree.classes),
-    }
+    nodes = _policy_nodes(policy, args.opponent_opening)
+    opponent_families = {args.opponent_opening}
+    if "targets" in policy:
+        opponent_families.update(str(value) for value in policy["targets"])
+    else:
+        opponent_families.update(
+            family for _, predictor in nodes for family in predictor.classes
+        )
     bundle = NativeTeammateBundle(
         args.source, args.base_actions, args.base_metadata,
         additional_routes=additional,
@@ -138,7 +185,8 @@ def main() -> None:
         opponents=np.asarray([args.opponent_name]),
         checkpoints=np.asarray([args.checkpoint], dtype=np.int16),
         seeds=np.asarray(args.seeds, dtype=np.int64),
-        engine=np.asarray("C++ NativeTeammateExecutor vs dynamic tree policy"),
+        engine=np.asarray("C++ NativeTeammateExecutor vs dynamic public-state policy"),
+        feature_schema=np.asarray("semantic_route_switch_v1"),
     )
     raw = outcome == 2
     target_rates = raw.mean(axis=1)

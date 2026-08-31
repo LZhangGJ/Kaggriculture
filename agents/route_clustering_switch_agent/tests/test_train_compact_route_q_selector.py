@@ -11,7 +11,7 @@ if str(SCRIPT_ROOT) not in sys.path:
     sys.path.insert(0, str(SCRIPT_ROOT))
 
 from train_compact_route_q_selector import (  # noqa: E402
-    policy_metrics, trial_sort_key, zero_feature_prefixes,
+    opponent_raw_win_rates, policy_metrics, trial_sort_key, zero_feature_prefixes,
 )
 
 
@@ -25,6 +25,15 @@ def test_policy_metrics_use_selected_route_and_paired_seats() -> None:
     assert metrics["raw_win_rate"] == 0.75
     assert metrics["both_seats_win_rate"] == 0.5
     assert metrics["mean_margin"] == 4.5
+
+
+def test_opponent_rates_preserve_pool_boundaries() -> None:
+    scores = np.asarray([[1, 0], [1, 0], [0, 1], [0, 1]], dtype=np.float32)
+    predictions = np.asarray([0, 0, 1, 0])
+
+    rates = opponent_raw_win_rates(scores, predictions, (2, 1, 2))
+
+    assert rates.tolist() == [1.0, 0.5]
 
 
 def test_feature_ablation_preserves_shape_and_other_columns() -> None:
@@ -59,3 +68,11 @@ def test_trial_selection_prioritizes_the_worst_opponent() -> None:
         },
     }
     assert trial_sort_key(safer) < trial_sort_key(higher_mean)
+
+
+if __name__ == "__main__":
+    test_policy_metrics_use_selected_route_and_paired_seats()
+    test_opponent_rates_preserve_pool_boundaries()
+    test_feature_ablation_preserves_shape_and_other_columns()
+    test_trial_selection_prioritizes_the_worst_opponent()
+    print("COMPACT_Q_TEST_OK")

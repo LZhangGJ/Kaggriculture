@@ -25,6 +25,27 @@ def _compressed_literal(data: bytes) -> str:
     return repr(base64.b85encode(zlib.compress(data, level=9)))
 
 
+def _force_target(policy: dict, target: str) -> dict:
+    opening = str(policy["nodes"][0]["selected"]["opening"])
+    checkpoint = int(policy["nodes"][0]["selected"]["checkpoint"])
+    return {
+        "schema_version": 1,
+        "kind": "fixed_route_probe",
+        "feature_schema": policy["feature_schema"],
+        "targets": [target],
+        "nodes": [{"selected": {
+            "opening": opening,
+            "checkpoint": checkpoint,
+            "enabled": True,
+            "tree": {
+                "classes": [target], "left": [-1], "right": [-1],
+                "feature": [-2], "threshold": [-2.0], "value": [[1.0]],
+            },
+        }}],
+        "sequence": [checkpoint],
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -36,6 +57,10 @@ def main() -> None:
     parser.add_argument(
         "--forced-opening", default=None,
         help="Fix the root route while retaining all learned switch nodes.",
+    )
+    parser.add_argument(
+        "--forced-target", default=None,
+        help="Diagnostic: replace the selector with one constant switch target.",
     )
     args = parser.parse_args()
     source_dir = args.source_dir.resolve()
@@ -60,6 +85,11 @@ def main() -> None:
     metadata = json.loads((source_dir / "route_library.json").read_text(encoding="utf-8"))
     policy = json.loads((source_dir / "route_policy.json").read_text(encoding="utf-8"))
     nash = json.loads((source_dir / "opening_nash.json").read_text(encoding="utf-8"))
+    if args.forced_target:
+        families = {str(value["family"]) for value in metadata["opponent_routes"]}
+        if args.forced_target not in families:
+            parser.error(f"unknown forced target: {args.forced_target}")
+        policy = _force_target(policy, args.forced_target)
     forced_opening_line = (
         f'_S_CONTROLLER.forced_opening = {args.forced_opening!r}'
         if args.forced_opening else ""

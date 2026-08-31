@@ -65,6 +65,7 @@ def shared_prefix_route(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--actions", type=Path, required=True)
+    parser.add_argument("--extra-actions", type=Path, action="append", default=[])
     parser.add_argument("--metadata", type=Path, required=True)
     parser.add_argument("--bases", type=_csv, required=True)
     parser.add_argument("--donors", type=_csv, required=True)
@@ -82,10 +83,17 @@ def main() -> None:
         str(row["family"]): str(row["route_id"])
         for row in metadata["opponent_routes"]
     }
+    tapes = load_action_tapes(args.actions)
+    for path in args.extra_actions:
+        extra = load_action_tapes(path)
+        duplicates = sorted(set(tapes) & set(extra))
+        if duplicates:
+            raise ValueError(f"duplicate extra route family: {duplicates[0]}")
+        tapes.update(extra)
+        route_id.update({family: family for family in extra})
     missing = sorted(set((*args.bases, *args.donors)) - set(route_id))
     if missing:
         raise KeyError(f"unknown route family: {missing[0]}")
-    tapes = load_action_tapes(args.actions)
     archive: dict[str, list[dict[str, Any]]] = {}
     rows = []
     ordinal = 1

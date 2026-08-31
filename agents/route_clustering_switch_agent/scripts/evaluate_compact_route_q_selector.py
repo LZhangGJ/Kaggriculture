@@ -12,7 +12,7 @@ import joblib
 import numpy as np
 
 from train_compact_route_q_selector import (
-    load_node, policy_metrics, zero_feature_prefixes,
+    load_node, opponent_raw_win_rates, policy_metrics, zero_feature_prefixes,
 )
 
 
@@ -45,6 +45,13 @@ def main() -> None:
     selected = policy_metrics(
         node["scores"], node["margins"], predictions, node["sample_shape"],
     )
+    selector_rates = opponent_raw_win_rates(
+        node["scores"], predictions, node["sample_shape"]
+    )
+    oracle_scores = np.max(node["scores"], axis=1)
+    oracle_rates = (oracle_scores == 1.0).reshape(
+        node["sample_shape"]
+    ).mean(axis=(1, 2))
     payload = {
         "schema": "compact-route-q-evaluation-v1",
         "model": str(args.model.resolve()),
@@ -54,6 +61,16 @@ def main() -> None:
         "opponents": node["opponents"].tolist(),
         "baseline": baseline,
         "selector": selected,
+        "opponent_raw_win_rates": dict(zip(
+            node["opponents"].tolist(), selector_rates.tolist()
+        )),
+        "route_oracle": {
+            "raw_win_rate": float(np.mean(oracle_scores == 1.0)),
+            "minimum_opponent_raw_win_rate": float(np.min(oracle_rates)),
+            "opponent_raw_win_rates": dict(zip(
+                node["opponents"].tolist(), oracle_rates.tolist()
+            )),
+        },
         "prediction_counts": dict(Counter(node["targets"][predictions].tolist())),
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

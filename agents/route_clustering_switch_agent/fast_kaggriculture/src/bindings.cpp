@@ -7,8 +7,10 @@
 #include <array>
 #include <algorithm>
 #include <cmath>
+#include <limits>
 #include <memory>
 #include <numeric>
+#include <stdexcept>
 #include <unordered_map>
 #include <vector>
 
@@ -34,6 +36,103 @@ std::array<PlayerAction,2> parse_actions(py::handle h){std::array<PlayerAction,2
  return out;}
 
 std::vector<PlayerAction> parse_tape(py::handle h){std::vector<PlayerAction> out;if(!py::isinstance<py::sequence>(h))return out;for(auto x:py::reinterpret_borrow<py::sequence>(h))out.push_back(parse_player_action(x));return out;}
+
+void validate_raw_triplet(int op, int item, int quantity, bool market) {
+  const int first = market ? int(Op::HIRE) : int(Op::PASS);
+  const int last = market ? int(Op::SELL) : int(Op::CARE);
+  if (op < first || op > last)
+    throw std::invalid_argument(market
+        ? "raw market action has an invalid op"
+        : "raw unit action has an invalid op");
+  if (item < int(Item::NONE) || item >= N_ITEMS)
+    throw std::invalid_argument("raw action has an invalid item");
+  if (quantity < 0)
+    throw std::invalid_argument("raw action quantity must be nonnegative");
+}
+
+Action parse_action_strict(py::handle h, bool market) {
+  if (!py::isinstance<py::list>(h) && !py::isinstance<py::tuple>(h))
+    throw std::invalid_argument("raw actions must be lists or tuples");
+  py::sequence values = py::reinterpret_borrow<py::sequence>(h);
+  if (values.size() < 1 || values.size() > 3)
+    throw std::invalid_argument("raw actions must contain op[, item[, quantity]]");
+  if (!py::isinstance<py::str>(values[0]))
+    throw std::invalid_argument("raw action op must be a string");
+  const auto op = OPS.find(py::cast<std::string>(values[0]));
+  if (op == OPS.end()) throw std::invalid_argument("unknown raw action op");
+  Item item = Item::NONE;
+  if (values.size() > 1) {
+    if (!py::isinstance<py::str>(values[1]))
+      throw std::invalid_argument("raw action item must be a string");
+    const auto found = ITEMS.find(py::cast<std::string>(values[1]));
+    if (found == ITEMS.end()) throw std::invalid_argument("unknown raw action item");
+    item = found->second;
+  }
+  int quantity = 1;
+  if (values.size() > 2) {
+    if (!py::isinstance<py::int_>(values[2]))
+      throw std::invalid_argument("raw action quantity must be an integer");
+    const int64_t raw = py::cast<int64_t>(values[2]);
+    if (raw < 0 || raw > std::numeric_limits<int32_t>::max())
+      throw std::invalid_argument("raw action quantity is out of range");
+    quantity = int(raw);
+  }
+  validate_raw_triplet(int(op->second), int(item), quantity, market);
+  return Action{op->second, item, quantity};
+}
+
+PlayerAction parse_player_action_strict(py::handle h) {
+  if (!py::isinstance<py::dict>(h))
+    throw std::invalid_argument("raw_action must be a dict or None");
+  py::dict values = py::reinterpret_borrow<py::dict>(h);
+  for (auto pair : values) {
+    if (!py::isinstance<py::str>(pair.first))
+      throw std::invalid_argument("raw_action keys must be strings");
+    const std::string key = py::cast<std::string>(pair.first);
+    if (key != "farmer" && key != "hands" && key != "market")
+      throw std::invalid_argument("raw_action contains an unknown key");
+  }
+  PlayerAction out;
+  out.units.push_back(values.contains("farmer")
+      ? parse_action_strict(values["farmer"], false) : Action{});
+  if (values.contains("hands")) {
+    py::handle hands = values["hands"];
+    if (!py::isinstance<py::list>(hands) && !py::isinstance<py::tuple>(hands))
+      throw std::invalid_argument("raw_action hands must be a sequence");
+    for (auto value : py::reinterpret_borrow<py::sequence>(hands))
+      out.units.push_back(parse_action_strict(value, false));
+  }
+  if (values.contains("market")) {
+    py::handle market = values["market"];
+    if (!py::isinstance<py::list>(market) && !py::isinstance<py::tuple>(market))
+      throw std::invalid_argument("raw_action market must be a sequence");
+    for (auto value : py::reinterpret_borrow<py::sequence>(market))
+      out.market.push_back(parse_action_strict(value, true));
+  }
+  return out;
+}
+
+void validate_native_snapshot(const Simulator& env,
+                              const NativeAgentState& state) {
+  const Config& config = env.config();
+  if (config.episode_steps != 720 || config.board_size != 10 ||
+      config.turns_per_day != 24 || config.max_market_orders != 10 ||
+      config.shed_capacity != 100)
+    throw std::invalid_argument(
+        "native executor requires the standard Kaggriculture layout contract");
+  if (env.done()) throw std::invalid_argument("native snapshot is terminal");
+  if (state.last_step != env.step_count() - 1)
+    throw std::invalid_argument("NativeAgentState does not match FastEnv step");
+}
+
+void validate_native_pair(const Simulator& env,
+                          const NativeAgentState& state0,
+                          const NativeAgentState& state1) {
+  if (&state0 == &state1)
+    throw std::invalid_argument("players must use distinct NativeAgentState objects");
+  validate_native_snapshot(env, state0);
+  validate_native_snapshot(env, state1);
+}
 
 enum AuditMetric : int {
   UNIT_ATTEMPTS, UNIT_VALID, UNIT_NO_ACTOR, PLANT_NO_SEED, PLANT_WEED,
@@ -296,13 +395,214 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
    }
    return py::make_tuple(metrics,py::make_tuple(result.rewards[0],result.rewards[1]),first);
  },py::arg("left"),py::arg("right"),py::arg("seed"),py::arg("config")=Config{});
- py::class_<NativeTeammateExecutor>(m,"NativeTeammateExecutor")
-  .def(py::init([](py::sequence routes,py::object r5,py::object md,py::sequence moon,py::sequence moon_legacy){
-    NativeTapeLibrary lib;for(auto tape:routes)lib.routes.push_back(parse_tape(tape));lib.r5_reference=parse_tape(r5);lib.md_reference=parse_tape(md);
-    if(moon.size()!=5||moon_legacy.size()!=5)throw std::invalid_argument("moon and moon_legacy must each contain five tapes");
-    for(int i=0;i<5;i++){lib.moon[i]=parse_tape(moon[i]);lib.moon_legacy[i]=parse_tape(moon_legacy[i]);}
-    return NativeTeammateExecutor(std::move(lib));
-  }),py::arg("routes"),py::arg("r5_reference"),py::arg("md_reference"),py::arg("moon"),py::arg("moon_legacy"))
+ py::class_<NativeAgentState>(m,"NativeAgentState")
+  .def(py::init<>())
+  .def("reset",&NativeAgentState::reset);
+  py::class_<NativeTeammateExecutor>(m,"NativeTeammateExecutor")
+   .def(py::init([](py::sequence routes,py::object r5,py::object md,py::sequence moon,py::sequence moon_legacy){
+     NativeTapeLibrary lib;
+     for(auto tape:routes){auto parsed=parse_tape(tape);if(parsed.empty())throw std::invalid_argument("native routes must be non-empty tapes");lib.routes.push_back(std::move(parsed));}
+     if(lib.routes.empty())throw std::invalid_argument("at least one native route is required");
+     lib.r5_reference=parse_tape(r5);lib.md_reference=parse_tape(md);
+     if(moon.size()!=5||moon_legacy.size()!=5)throw std::invalid_argument("moon and moon_legacy must each contain five tapes");
+     for(int i=0;i<5;i++){lib.moon[i]=parse_tape(moon[i]);lib.moon_legacy[i]=parse_tape(moon_legacy[i]);}
+     return NativeTeammateExecutor(std::move(lib));
+   }),py::arg("routes"),py::arg("r5_reference"),py::arg("md_reference"),py::arg("moon"),py::arg("moon_legacy"))
+   .def("action_at",[](const NativeTeammateExecutor&x,const Simulator&env,int player,int route,NativeAgentState&state){
+     if(player<0||player>1)throw std::invalid_argument("action_at player must be 0 or 1");
+     if(route<0||route>=x.route_count())throw std::invalid_argument("action_at route is out of range");
+     validate_native_snapshot(env,state);
+     return player_action_dict(x.action_at(env,player,route,state));
+   },py::arg("env"),py::arg("player"),py::arg("route"),py::arg("state"))
+  .def("action_at_with_raw_override",[](const NativeTeammateExecutor&x,const Simulator&env,int player,int route,NativeAgentState&state,py::object raw_action){
+    if(player<0||player>1)throw std::invalid_argument("raw override player must be 0 or 1");
+    if(route<0||route>=x.route_count())throw std::invalid_argument("raw override route is out of range");
+    validate_native_snapshot(env,state);
+    if(raw_action.is_none())return player_action_dict(x.action_at(env,player,route,state));
+    PlayerAction raw=parse_player_action_strict(raw_action);
+    if(raw.market.size()>(size_t)env.config().max_market_orders)throw std::invalid_argument("raw_action has too many market orders");
+    return player_action_dict(x.action_at_with_raw_override(env,player,route,state,raw));
+   },py::arg("env"),py::arg("player"),py::arg("route"),py::arg("state"),py::arg("raw_action"))
+  .def("action_at_with_unit_override",[](const NativeTeammateExecutor&x,const Simulator&env,int player,int route,NativeAgentState&state,py::object raw_units){
+    if(player<0||player>1)throw std::invalid_argument("unit override player must be 0 or 1");
+    if(route<0||route>=x.route_count())throw std::invalid_argument("unit override route is out of range");
+    validate_native_snapshot(env,state);
+    if(raw_units.is_none())return player_action_dict(x.action_at(env,player,route,state));
+    if(!py::isinstance<py::dict>(raw_units))throw std::invalid_argument("raw_units must be a dict or None");
+    py::dict values=py::reinterpret_borrow<py::dict>(raw_units);
+    if(values.contains("market"))throw std::invalid_argument("unit override cannot contain market");
+    PlayerAction raw=parse_player_action_strict(raw_units);
+    return player_action_dict(x.action_at_with_unit_override(env,player,route,state,raw.units));
+   },py::arg("env"),py::arg("player"),py::arg("route"),py::arg("state"),py::arg("raw_units"))
+   .def("advance_segment",[](const NativeTeammateExecutor&x,Simulator&env,NativeAgentState&state0,NativeAgentState&state1,int route0,int route1,int stop_step){
+     if(route0<0||route0>=x.route_count()||route1<0||route1>=x.route_count())throw std::invalid_argument("advance_segment route is out of range");
+     validate_native_pair(env,state0,state1);
+     if(stop_step<env.step_count()||stop_step>env.config().episode_steps-1)throw std::invalid_argument("advance_segment stop_step is out of range");
+    py::gil_scoped_release release;
+    while(!env.done()&&env.step_count()<stop_step){std::array<PlayerAction,2>actions;actions[0]=x.action_at(env,0,route0,state0);actions[1]=x.action_at(env,1,route1,state1);env.step(actions);}
+   },py::arg("env"),py::arg("state0"),py::arg("state1"),py::arg("route0"),py::arg("route1"),py::arg("stop_step"))
+   .def("rollout_from_batch",[](const NativeTeammateExecutor&x,const Simulator&env,const NativeAgentState&state0,const NativeAgentState&state1,py::array_t<int64_t,py::array::c_style|py::array::forcecast>route_pairs){
+     validate_native_pair(env,state0,state1);
+     if(route_pairs.ndim()!=2)throw std::invalid_argument("route_pairs must have shape [K,2]");
+     auto in=route_pairs.unchecked<2>();if(in.shape(1)!=2||in.shape(0)==0)throw std::invalid_argument("route_pairs must have shape [K,2] with K > 0");
+    for(ssize_t i=0;i<in.shape(0);i++)for(int p=0;p<2;p++)if(in(i,p)<0||in(i,p)>=x.route_count())throw std::invalid_argument("rollout_from_batch route is out of range");
+    py::array_t<double>rewards({in.shape(0),(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
+    {py::gil_scoped_release release;
+     #pragma omp parallel for schedule(dynamic,1)
+     for(ssize_t i=0;i<in.shape(0);i++){Simulator branch(env);NativeAgentState states[2]{state0,state1};const int routes[2]{(int)in(i,0),(int)in(i,1)};while(!branch.done()){std::array<PlayerAction,2>actions;actions[0]=x.action_at(branch,0,routes[0],states[0]);actions[1]=x.action_at(branch,1,routes[1],states[1]);branch.step(actions);}out(i,0)=branch.farms()[0].money;out(i,1)=branch.farms()[1].money;}}
+    return rewards;
+   },py::arg("env"),py::arg("state0"),py::arg("state1"),py::arg("route_pairs"))
+   .def("rollout_schedule_batch",[](const NativeTeammateExecutor&x,const Simulator&env,const NativeAgentState&state0,const NativeAgentState&state1,py::array_t<int64_t,py::array::c_style|py::array::forcecast>route_schedules,py::array_t<int64_t,py::array::c_style|py::array::forcecast>stop_steps){
+     validate_native_pair(env,state0,state1);
+     if(route_schedules.ndim()!=3||stop_steps.ndim()!=1)throw std::invalid_argument("route_schedules must be [K,S,2] and stop_steps must be [S]");
+    auto in=route_schedules.unchecked<3>();auto stops=stop_steps.unchecked<1>();
+    if(in.shape(0)==0||in.shape(1)==0||in.shape(2)!=2||stops.shape(0)!=in.shape(1))throw std::invalid_argument("route_schedules must be [K,S,2] with K,S > 0 and one stop per segment");
+    int previous=env.step_count(),terminal=env.config().episode_steps-1;
+    for(ssize_t s=0;s<stops.shape(0);s++){int64_t raw=stops(s);if(raw<=previous||raw>terminal)throw std::invalid_argument("stop_steps must be strictly increasing through the terminal step");previous=(int)raw;}
+    if(previous!=terminal)throw std::invalid_argument("the last schedule stop must be the terminal step");
+    for(ssize_t i=0;i<in.shape(0);i++)for(ssize_t s=0;s<in.shape(1);s++)for(int p=0;p<2;p++)if(in(i,s,p)<0||in(i,s,p)>=x.route_count())throw std::invalid_argument("route_schedules contains an out-of-range route");
+    py::array_t<double>rewards({in.shape(0),(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
+    {py::gil_scoped_release release;
+     #pragma omp parallel for schedule(dynamic,1)
+     for(ssize_t i=0;i<in.shape(0);i++){Simulator branch(env);NativeAgentState states[2]{state0,state1};for(ssize_t s=0;s<in.shape(1)&&!branch.done();s++){const int routes[2]{(int)in(i,s,0),(int)in(i,s,1)};while(!branch.done()&&branch.step_count()<stops(s)){std::array<PlayerAction,2>actions;actions[0]=x.action_at(branch,0,routes[0],states[0]);actions[1]=x.action_at(branch,1,routes[1],states[1]);branch.step(actions);}}out(i,0)=branch.farms()[0].money;out(i,1)=branch.farms()[1].money;}}
+    return rewards;
+  },py::arg("env"),py::arg("state0"),py::arg("state1"),py::arg("route_schedules"),py::arg("stop_steps"))
+  .def("rollout_schedule_raw_override_batch",[](const NativeTeammateExecutor&x,const Simulator&env,const NativeAgentState&state0,const NativeAgentState&state1,
+      py::array_t<int64_t,py::array::c_style>route_schedule,py::array_t<int64_t,py::array::c_style>stop_steps,int player,
+      py::array_t<int32_t,py::array::c_style>raw_units,py::array_t<int32_t,py::array::c_style>raw_unit_counts,
+      py::array_t<int32_t,py::array::c_style>raw_market,py::array_t<int32_t,py::array::c_style>raw_market_counts){
+    if(player<0||player>1)throw std::invalid_argument("raw override player must be 0 or 1");
+     validate_native_pair(env,state0,state1);
+    if(route_schedule.ndim()!=2||stop_steps.ndim()!=1)throw std::invalid_argument("route_schedule must be [S,2] and stop_steps must be [S]");
+    if(raw_units.ndim()!=3||raw_unit_counts.ndim()!=1||raw_market.ndim()!=3||raw_market_counts.ndim()!=1)
+      throw std::invalid_argument("packed raw candidates must be actions [K,N,3] and counts [K]");
+    if(route_schedule.shape(0)<=0||route_schedule.shape(1)!=2||stop_steps.shape(0)!=route_schedule.shape(0))
+      throw std::invalid_argument("route_schedule must be [S,2] with S > 0 and one stop per segment");
+    if(raw_units.shape(0)<=0||raw_units.shape(2)!=3||raw_market.shape(0)!=raw_units.shape(0)||raw_market.shape(2)!=3||
+       raw_unit_counts.shape(0)!=raw_units.shape(0)||raw_market_counts.shape(0)!=raw_units.shape(0))
+      throw std::invalid_argument("packed raw candidate batch shapes disagree");
+    const ssize_t segments=route_schedule.shape(0),candidates=raw_units.shape(0);
+    auto route_in=route_schedule.unchecked<2>();auto stop_in=stop_steps.unchecked<1>();
+    std::vector<std::array<int,2>> schedule(segments);std::vector<int> stops(segments);
+    int64_t previous=env.step_count();const int terminal=env.config().episode_steps-1;
+    for(ssize_t s=0;s<segments;s++){
+      for(int p=0;p<2;p++){
+        const int64_t raw=route_in(s,p);
+        if(raw<0||raw>=x.route_count())throw std::invalid_argument("route_schedule contains an out-of-range route");
+        schedule[s][p]=(int)raw;
+      }
+      const int64_t raw_stop=stop_in(s);
+      if(raw_stop<=previous||raw_stop>terminal)throw std::invalid_argument("stop_steps must be strictly increasing through the terminal step");
+      stops[s]=(int)raw_stop;previous=raw_stop;
+    }
+    if(previous!=terminal)throw std::invalid_argument("the last schedule stop must be the terminal step");
+    auto units=raw_units.unchecked<3>();auto unit_counts=raw_unit_counts.unchecked<1>();
+    auto market=raw_market.unchecked<3>();auto market_counts=raw_market_counts.unchecked<1>();
+    std::vector<PlayerAction> overrides(candidates);std::vector<uint8_t> keep(candidates);
+    for(ssize_t k=0;k<candidates;k++){
+      const int uc=unit_counts(k),mc=market_counts(k);
+      if((uc==-1)!=(mc==-1))throw std::invalid_argument("KEEP requires both raw counts to be -1");
+      if(uc==-1){keep[k]=1;continue;}
+      if(uc<0||uc>raw_units.shape(1)||mc<0||mc>raw_market.shape(1))throw std::invalid_argument("packed raw candidate count is out of range");
+      if(mc>env.config().max_market_orders)throw std::invalid_argument("raw candidate has too many market orders");
+      auto& action=overrides[k];action.units.reserve(uc);action.market.reserve(mc);
+      for(int i=0;i<uc;i++){
+        const int op=units(k,i,0),item=units(k,i,1),quantity=units(k,i,2);
+        validate_raw_triplet(op,item,quantity,false);action.units.push_back(Action{(Op)op,(Item)item,quantity});
+      }
+      for(int i=0;i<mc;i++){
+        const int op=market(k,i,0),item=market(k,i,1),quantity=market(k,i,2);
+        validate_raw_triplet(op,item,quantity,true);action.market.push_back(Action{(Op)op,(Item)item,quantity});
+      }
+    }
+    py::array_t<double>rewards({candidates,(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
+    {py::gil_scoped_release release;
+     #pragma omp parallel for schedule(dynamic,1)
+     for(ssize_t k=0;k<candidates;k++){
+       Simulator branch(env);NativeAgentState states[2]{state0,state1};bool current=true;
+       for(ssize_t s=0;s<segments&&!branch.done();s++)while(!branch.done()&&branch.step_count()<stops[s]){
+         std::array<PlayerAction,2>actions;
+         for(int p=0;p<2;p++)actions[p]=current&&p==player&&!keep[k]
+             ?x.action_at_with_raw_override(branch,p,schedule[s][p],states[p],overrides[k])
+             :x.action_at(branch,p,schedule[s][p],states[p]);
+         branch.step(actions);current=false;
+       }
+       out(k,0)=branch.farms()[0].money;out(k,1)=branch.farms()[1].money;
+     }}
+    return rewards;
+  },py::arg("env"),py::arg("state0"),py::arg("state1"),
+     py::arg("route_schedule").noconvert(),py::arg("stop_steps").noconvert(),py::arg("player"),
+     py::arg("raw_units").noconvert(),py::arg("raw_unit_counts").noconvert(),
+     py::arg("raw_market").noconvert(),py::arg("raw_market_counts").noconvert())
+  .def("rollout_schedule_unit_override_sequence_batch",[](const NativeTeammateExecutor&x,const Simulator&env,const NativeAgentState&state0,const NativeAgentState&state1,
+      py::array_t<int64_t,py::array::c_style>route_schedule,py::array_t<int64_t,py::array::c_style>stop_steps,int player,
+      py::array_t<int32_t,py::array::c_style>raw_units,py::array_t<int32_t,py::array::c_style>unit_counts){
+    if(player<0||player>1)throw std::invalid_argument("unit override player must be 0 or 1");
+    validate_native_pair(env,state0,state1);
+    if(route_schedule.ndim()!=2||stop_steps.ndim()!=1)throw std::invalid_argument("route_schedule must be [S,2] and stop_steps must be [S]");
+    if(raw_units.ndim()!=4||unit_counts.ndim()!=2)throw std::invalid_argument("unit plans must be actions [K,H,N,3] and counts [K,H]");
+    if(route_schedule.shape(0)<=0||route_schedule.shape(1)!=2||stop_steps.shape(0)!=route_schedule.shape(0))
+      throw std::invalid_argument("route_schedule must be [S,2] with S > 0 and one stop per segment");
+    if(raw_units.shape(0)<=0||raw_units.shape(1)<1||raw_units.shape(1)>8||raw_units.shape(2)<=0||raw_units.shape(3)!=3||
+       unit_counts.shape(0)!=raw_units.shape(0)||unit_counts.shape(1)!=raw_units.shape(1))
+      throw std::invalid_argument("unit plan batch shapes disagree or H is outside 1..8");
+    const ssize_t segments=route_schedule.shape(0),candidates=raw_units.shape(0),horizon=raw_units.shape(1);
+    auto route_in=route_schedule.unchecked<2>();auto stop_in=stop_steps.unchecked<1>();
+    std::vector<std::array<int,2>> schedule(segments);std::vector<int> stops(segments);
+    int64_t previous=env.step_count();const int terminal=env.config().episode_steps-1;
+    for(ssize_t s=0;s<segments;s++){
+      for(int p=0;p<2;p++){
+        const int64_t raw=route_in(s,p);
+        if(raw<0||raw>=x.route_count())throw std::invalid_argument("route_schedule contains an out-of-range route");
+        schedule[s][p]=(int)raw;
+      }
+      const int64_t raw_stop=stop_in(s);
+      if(raw_stop<=previous||raw_stop>terminal)throw std::invalid_argument("stop_steps must be strictly increasing through the terminal step");
+      stops[s]=(int)raw_stop;previous=raw_stop;
+    }
+    if(previous!=terminal)throw std::invalid_argument("the last schedule stop must be the terminal step");
+    auto units=raw_units.unchecked<4>();auto counts=unit_counts.unchecked<2>();
+    std::vector<std::vector<std::vector<Action>>> plans(candidates,std::vector<std::vector<Action>>(horizon));
+    std::vector<std::vector<uint8_t>> keep(candidates,std::vector<uint8_t>(horizon));
+    for(ssize_t k=0;k<candidates;k++)for(ssize_t h=0;h<horizon;h++){
+      const int count=counts(k,h);
+      if(count==-1){keep[k][h]=1;continue;}
+      if(count<1||count>raw_units.shape(2))throw std::invalid_argument("unit plan count is out of range");
+      auto& plan=plans[k][h];plan.reserve(count);
+      for(int i=0;i<count;i++){
+        const int op=units(k,h,i,0),item=units(k,h,i,1),quantity=units(k,h,i,2);
+        validate_raw_triplet(op,item,quantity,false);plan.push_back(Action{(Op)op,(Item)item,quantity});
+      }
+    }
+    py::array_t<double>rewards({candidates,(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
+    py::array_t<int32_t>market_diff_steps(candidates);auto market_diff=market_diff_steps.mutable_unchecked<1>();
+    auto same_market=[](const PlayerAction&a,const PlayerAction&b){
+      if(a.market.size()!=b.market.size())return false;
+      for(size_t i=0;i<a.market.size();i++)if(a.market[i].op!=b.market[i].op||
+          a.market[i].item!=b.market[i].item||a.market[i].quantity!=b.market[i].quantity)return false;
+      return true;
+    };
+    const int start_step=env.step_count();
+    {py::gil_scoped_release release;
+     #pragma omp parallel for schedule(dynamic,1)
+     for(ssize_t k=0;k<candidates;k++){
+       Simulator branch(env);NativeAgentState states[2]{state0,state1};int32_t market_diffs=0;
+       for(ssize_t s=0;s<segments&&!branch.done();s++)while(!branch.done()&&branch.step_count()<stops[s]){
+         std::array<PlayerAction,2>actions;const int h=branch.step_count()-start_step;
+         for(int p=0;p<2;p++)if(p==player&&h>=0&&h<horizon&&!keep[k][h]){
+           NativeAgentState scratch=states[p];
+           const PlayerAction baseline=x.action_at(branch,p,schedule[s][p],scratch);
+           actions[p]=x.action_at_with_unit_override(branch,p,schedule[s][p],states[p],plans[k][h]);
+           market_diffs+=!same_market(actions[p],baseline);
+         }else actions[p]=x.action_at(branch,p,schedule[s][p],states[p]);
+         branch.step(actions);
+       }
+       out(k,0)=branch.farms()[0].money;out(k,1)=branch.farms()[1].money;market_diff(k)=market_diffs;
+     }}
+    return py::make_tuple(rewards,market_diff_steps);
+  },py::arg("env"),py::arg("state0"),py::arg("state1"),
+     py::arg("route_schedule").noconvert(),py::arg("stop_steps").noconvert(),py::arg("player"),
+     py::arg("raw_units").noconvert(),py::arg("unit_counts").noconvert())
   .def("play",[](const NativeTeammateExecutor&x,int route0,int route1,uint64_t seed,int switch_step0,int switch_route0,int switch_step1,int switch_route1,bool capture_trace){
     NativeMatchResult result;{py::gil_scoped_release release;result=x.play(route0,route1,seed,switch_step0,switch_route0,switch_step1,switch_route1,capture_trace,true);}py::dict out;out["rewards"]=py::make_tuple(result.rewards[0],result.rewards[1]);
     if(capture_trace){py::list trace;for(auto&joint:result.trace)trace.append(py::make_tuple(player_action_dict(joint[0]),player_action_dict(joint[1])));out["trace"]=trace;}return out;
