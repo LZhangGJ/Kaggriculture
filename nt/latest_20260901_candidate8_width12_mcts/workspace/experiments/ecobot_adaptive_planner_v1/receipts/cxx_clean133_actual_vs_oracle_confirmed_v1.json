@@ -1,0 +1,4877 @@
+{
+  "schema": "kaggriculture.cxx-clean133-actual-vs-candidate8-oracle.v1",
+  "created_at_utc": "2026-08-29T18:37:01.531675+00:00",
+  "definitions": {
+    "actual": "Deployable R6 planner; no future information.",
+    "oracle": "R7 Candidate8 rolling Oracle with the actual future revealed; an upper bound over the current candidate/executor stack, not deployable strength."
+  },
+  "inputs": {
+    "actual_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_clean133_actual_seed2882001_n32x2_v1.json",
+    "oracle_directories": [
+      "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1",
+      "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1"
+    ],
+    "route_metadata": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\artifacts\\oracle\\rank1_latest_55714246_ep99954642_route_library.json"
+  },
+  "coverage": {
+    "actual_opponents": 133,
+    "oracle_opponents": 133,
+    "merged_opponents": 133,
+    "missing_oracle": [],
+    "extra_oracle": [],
+    "duplicate_oracle_ids": []
+  },
+  "summary": {
+    "actual_games": 8512,
+    "actual_wins": 1752,
+    "actual_ties": 0,
+    "actual_losses": 6760,
+    "actual_score_rate": 0.20582706766917294,
+    "oracle_games": 2128,
+    "oracle_wins": 1631,
+    "oracle_ties": 0,
+    "oracle_losses": 497,
+    "oracle_score_rate": 0.7664473684210527,
+    "oracle_routes_at_least_90pct": 44,
+    "oracle_routes_at_least_50pct": 117,
+    "oracle_routes_below_50pct": 16,
+    "actual_routes_at_least_90pct": 1,
+    "actual_routes_at_least_50pct": 15,
+    "actual_routes_zero_wins": 12,
+    "oracle_avoidable_crop_losses": 0,
+    "oracle_avoidable_animal_losses": 0,
+    "oracle_end_overflow": 0
+  },
+  "route_bands": {
+    "oracle_at_least_90pct": [
+      "G016",
+      "G024",
+      "G053",
+      "G057",
+      "G068",
+      "G079",
+      "G090",
+      "G094",
+      "G114",
+      "G115",
+      "G116",
+      "G129",
+      "G138",
+      "G148",
+      "G159",
+      "G162",
+      "G166",
+      "G171",
+      "G172",
+      "G174",
+      "G175",
+      "G181",
+      "G187",
+      "G190",
+      "G191",
+      "G192",
+      "G193",
+      "G200",
+      "G203",
+      "G205",
+      "G206",
+      "G222",
+      "G228",
+      "G231",
+      "G233",
+      "G244",
+      "G249",
+      "G250",
+      "G252",
+      "G254",
+      "G257",
+      "G259",
+      "G264",
+      "G267"
+    ],
+    "oracle_50_to_below_90pct": [
+      "G012",
+      "G013",
+      "G014",
+      "G015",
+      "G017",
+      "G018",
+      "G019",
+      "G021",
+      "G022",
+      "G023",
+      "G025",
+      "G026",
+      "G027",
+      "G028",
+      "G030",
+      "G034",
+      "G040",
+      "G041",
+      "G043",
+      "G051",
+      "G052",
+      "G054",
+      "G056",
+      "G058",
+      "G059",
+      "G061",
+      "G067",
+      "G069",
+      "G071",
+      "G077",
+      "G078",
+      "G083",
+      "G084",
+      "G086",
+      "G089",
+      "G093",
+      "G096",
+      "G098",
+      "G100",
+      "G102",
+      "G103",
+      "G105",
+      "G109",
+      "G113",
+      "G118",
+      "G125",
+      "G126",
+      "G130",
+      "G131",
+      "G133",
+      "G137",
+      "G140",
+      "G143",
+      "G144",
+      "G152",
+      "G155",
+      "G158",
+      "G164",
+      "G165",
+      "G178",
+      "G179",
+      "G180",
+      "G189",
+      "G195",
+      "G196",
+      "G197",
+      "G207",
+      "G213",
+      "G223",
+      "G241",
+      "G242",
+      "G243",
+      "G247"
+    ],
+    "oracle_below_50pct": [
+      "G002",
+      "G003",
+      "G004",
+      "G005",
+      "G009",
+      "G010",
+      "G031",
+      "G038",
+      "G044",
+      "G049",
+      "G092",
+      "G136",
+      "G185",
+      "G194",
+      "G201",
+      "G245"
+    ],
+    "actual_at_least_90pct": [
+      "G138"
+    ],
+    "actual_at_least_50pct": [
+      "G053",
+      "G059",
+      "G084",
+      "G090",
+      "G105",
+      "G116",
+      "G138",
+      "G144",
+      "G172",
+      "G175",
+      "G228",
+      "G244",
+      "G249",
+      "G254",
+      "G267"
+    ],
+    "actual_zero_wins": [
+      "G002",
+      "G003",
+      "G005",
+      "G009",
+      "G010",
+      "G031",
+      "G038",
+      "G049",
+      "G089",
+      "G113",
+      "G136",
+      "G197"
+    ]
+  },
+  "opponents": [
+    {
+      "opponent": "G002",
+      "source": {
+        "family": "G002",
+        "alias": "麦44草莓14-牛10羊4-3地-早畜",
+        "team": "boatlee",
+        "route_id": "93835267:0",
+        "support": 884
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -38163.03125,
+        "mean_cash": 68126.46875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 5,
+        "ties": 0,
+        "losses": 11,
+        "win_rate": 0.3125,
+        "score_rate": 0.3125,
+        "mean_margin": -3140.3125,
+        "mean_cash": 65856.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.3125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G002.json"
+    },
+    {
+      "opponent": "G003",
+      "source": {
+        "family": "G003",
+        "alias": "麦41草莓19-牛10羊4-3地-早畜",
+        "team": "SCLim2022080004",
+        "route_id": "93850203:1",
+        "support": 423
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -41502.734375,
+        "mean_cash": 68643.625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 3,
+        "ties": 0,
+        "losses": 13,
+        "win_rate": 0.1875,
+        "score_rate": 0.1875,
+        "mean_margin": -8517.25,
+        "mean_cash": 65270.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.1875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G003.json"
+    },
+    {
+      "opponent": "G004",
+      "source": {
+        "family": "G004",
+        "alias": "麦49草莓24-羊12牛6-4地-早畜",
+        "team": "SCLim2022080004",
+        "route_id": "93826363:1",
+        "support": 188
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -38023.15625,
+        "mean_cash": 69292.328125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 7,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -136.9375,
+        "mean_cash": 93280.4375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.421875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G004.json"
+    },
+    {
+      "opponent": "G005",
+      "source": {
+        "family": "G005",
+        "alias": "麦43草莓33-羊12牛6-4地-早畜",
+        "team": "HKmgikao",
+        "route_id": "93936458:1",
+        "support": 167
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -38081.265625,
+        "mean_cash": 69518.609375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 7,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": 2932.75,
+        "mean_cash": 83877.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.4375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G005.json"
+    },
+    {
+      "opponent": "G009",
+      "source": {
+        "family": "G009",
+        "alias": "麦36草莓22-牛10羊4-3地-早畜",
+        "team": "Efe Can Celiksoy",
+        "route_id": "93864307:1",
+        "support": 52
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -40671.21875,
+        "mean_cash": 63529.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 3,
+        "ties": 0,
+        "losses": 13,
+        "win_rate": 0.1875,
+        "score_rate": 0.1875,
+        "mean_margin": -5928.4375,
+        "mean_cash": 65992.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.1875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G009.json"
+    },
+    {
+      "opponent": "G010",
+      "source": {
+        "family": "G010",
+        "alias": "胡萝卜31麦16-牛10羊4-3地-早畜",
+        "team": "Thomas Tschinkel",
+        "route_id": "94114974:0",
+        "support": 37
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -38905.421875,
+        "mean_cash": 67065.171875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 7,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -81.75,
+        "mean_cash": 76145.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.4375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G010.json"
+    },
+    {
+      "opponent": "G012",
+      "source": {
+        "family": "G012",
+        "alias": "麦47草莓11-牛12羊3-3地-早畜",
+        "team": "fufufukakaka",
+        "route_id": "97605511:1",
+        "support": 24
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -24363.03125,
+        "mean_cash": 67455.796875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 19290.9375,
+        "mean_cash": 88697.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.671875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G012.json"
+    },
+    {
+      "opponent": "G013",
+      "source": {
+        "family": "G013",
+        "alias": "麦55草莓8-牛8羊3-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "98105111:1",
+        "support": 17
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -32978.859375,
+        "mean_cash": 74427.078125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 7120.6875,
+        "mean_cash": 82051.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G013.json"
+    },
+    {
+      "opponent": "G014",
+      "source": {
+        "family": "G014",
+        "alias": "麦46草莓12-牛6羊5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93919750:1",
+        "support": 14
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -24640.21875,
+        "mean_cash": 78470.609375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 11672.375,
+        "mean_cash": 95483.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G014.json"
+    },
+    {
+      "opponent": "G015",
+      "source": {
+        "family": "G015",
+        "alias": "麦47草莓11-羊10牛4-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93921512:0",
+        "support": 12
+      },
+      "actual": {
+        "games": 64,
+        "wins": 30,
+        "ties": 0,
+        "losses": 34,
+        "win_rate": 0.46875,
+        "score_rate": 0.46875,
+        "mean_margin": -686.609375,
+        "mean_cash": 92230.390625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 35065.375,
+        "mean_cash": 118806.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.15625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G015.json"
+    },
+    {
+      "opponent": "G016",
+      "source": {
+        "family": "G016",
+        "alias": "麦46草莓12-牛6羊6-3地-早畜",
+        "team": "fufufukakaka",
+        "route_id": "98264830:1",
+        "support": 10
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -28214.0625,
+        "mean_cash": 77695.203125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 7779.875,
+        "mean_cash": 94955.3125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G016.json"
+    },
+    {
+      "opponent": "G017",
+      "source": {
+        "family": "G017",
+        "alias": "麦51草莓9-牛6鹅3-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "97988708:1",
+        "support": 8
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -29913.875,
+        "mean_cash": 73965.90625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 4436.5,
+        "mean_cash": 96590.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G017.json"
+    },
+    {
+      "opponent": "G018",
+      "source": {
+        "family": "G018",
+        "alias": "麦52番茄3-牛11羊4-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93920628:0",
+        "support": 8
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -23241.515625,
+        "mean_cash": 74234.921875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 2925.375,
+        "mean_cash": 92572.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G018.json"
+    },
+    {
+      "opponent": "G019",
+      "source": {
+        "family": "G019",
+        "alias": "麦42草莓16-牛12羊3-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93914423:0",
+        "support": 7
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -29498.5,
+        "mean_cash": 60965.390625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0,
+        "losses": 8,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": 7402.25,
+        "mean_cash": 83529.375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.421875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G019.json"
+    },
+    {
+      "opponent": "G021",
+      "source": {
+        "family": "G021",
+        "alias": "麦51草莓7-羊10牛5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93917082:1",
+        "support": 6
+      },
+      "actual": {
+        "games": 64,
+        "wins": 17,
+        "ties": 0,
+        "losses": 47,
+        "win_rate": 0.265625,
+        "score_rate": 0.265625,
+        "mean_margin": -13572.25,
+        "mean_cash": 82338.109375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 33468.75,
+        "mean_cash": 106654.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.359375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G021.json"
+    },
+    {
+      "opponent": "G022",
+      "source": {
+        "family": "G022",
+        "alias": "麦43草莓14-牛12羊3-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98369766:0",
+        "support": 5
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -28325.03125,
+        "mean_cash": 68642.078125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 9095.5625,
+        "mean_cash": 74394.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.515625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G022.json"
+    },
+    {
+      "opponent": "G023",
+      "source": {
+        "family": "G023",
+        "alias": "麦52草莓9-牛8鹅2-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "98071018:1",
+        "support": 5
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -33469.671875,
+        "mean_cash": 72408.9375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 1756.5,
+        "mean_cash": 89495.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.640625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G023.json"
+    },
+    {
+      "opponent": "G024",
+      "source": {
+        "family": "G024",
+        "alias": "麦55草莓2-牛6羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93925937:1",
+        "support": 5
+      },
+      "actual": {
+        "games": 64,
+        "wins": 7,
+        "ties": 0,
+        "losses": 57,
+        "win_rate": 0.109375,
+        "score_rate": 0.109375,
+        "mean_margin": -16577.59375,
+        "mean_cash": 77836.296875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 11910.125,
+        "mean_cash": 106354.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.890625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G024.json"
+    },
+    {
+      "opponent": "G025",
+      "source": {
+        "family": "G025",
+        "alias": "麦45草莓11-牛12羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97245055:1",
+        "support": 4
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -29331.234375,
+        "mean_cash": 72069.859375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 9003.75,
+        "mean_cash": 78486.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.734375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G025.json"
+    },
+    {
+      "opponent": "G026",
+      "source": {
+        "family": "G026",
+        "alias": "麦45草莓17-牛10羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98237308:1",
+        "support": 4
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -20712.765625,
+        "mean_cash": 74474.34375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 10294.1875,
+        "mean_cash": 95626.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G026.json"
+    },
+    {
+      "opponent": "G027",
+      "source": {
+        "family": "G027",
+        "alias": "麦37草莓22-牛14羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97569024:1",
+        "support": 3
+      },
+      "actual": {
+        "games": 64,
+        "wins": 7,
+        "ties": 0,
+        "losses": 57,
+        "win_rate": 0.109375,
+        "score_rate": 0.109375,
+        "mean_margin": -30709.75,
+        "mean_cash": 64427.015625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 14092.3125,
+        "mean_cash": 78674.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.765625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G027.json"
+    },
+    {
+      "opponent": "G028",
+      "source": {
+        "family": "G028",
+        "alias": "麦39草莓18-羊10牛4-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93925067:1",
+        "support": 3
+      },
+      "actual": {
+        "games": 64,
+        "wins": 25,
+        "ties": 0,
+        "losses": 39,
+        "win_rate": 0.390625,
+        "score_rate": 0.390625,
+        "mean_margin": -3572.6875,
+        "mean_cash": 89443.21875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 26514.8125,
+        "mean_cash": 114996.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.234375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G028.json"
+    },
+    {
+      "opponent": "G030",
+      "source": {
+        "family": "G030",
+        "alias": "麦40草莓18-羊10牛5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "94141444:0",
+        "support": 3
+      },
+      "actual": {
+        "games": 64,
+        "wins": 10,
+        "ties": 0,
+        "losses": 54,
+        "win_rate": 0.15625,
+        "score_rate": 0.15625,
+        "mean_margin": -18414.6875,
+        "mean_cash": 79293.609375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 20017.6875,
+        "mean_cash": 100652.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G030.json"
+    },
+    {
+      "opponent": "G031",
+      "source": {
+        "family": "G031",
+        "alias": "麦47草莓12-羊9牛6-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "98136961:0",
+        "support": 3
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -36397.828125,
+        "mean_cash": 70511.921875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 4,
+        "ties": 0,
+        "losses": 12,
+        "win_rate": 0.25,
+        "score_rate": 0.25,
+        "mean_margin": -1176.0,
+        "mean_cash": 94861.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.25,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G031.json"
+    },
+    {
+      "opponent": "G034",
+      "source": {
+        "family": "G034",
+        "alias": "麦60草莓6-牛6羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97151460:1",
+        "support": 3
+      },
+      "actual": {
+        "games": 64,
+        "wins": 9,
+        "ties": 0,
+        "losses": 55,
+        "win_rate": 0.140625,
+        "score_rate": 0.140625,
+        "mean_margin": -19156.921875,
+        "mean_cash": 81098.21875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 18228.5625,
+        "mean_cash": 91665.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.734375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G034.json"
+    },
+    {
+      "opponent": "G038",
+      "source": {
+        "family": "G038",
+        "alias": "麦46草莓8-牛12羊9-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97468615:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -30747.390625,
+        "mean_cash": 71587.453125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 3,
+        "ties": 0,
+        "losses": 13,
+        "win_rate": 0.1875,
+        "score_rate": 0.1875,
+        "mean_margin": -3501.5,
+        "mean_cash": 83487.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.1875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G038.json"
+    },
+    {
+      "opponent": "G040",
+      "source": {
+        "family": "G040",
+        "alias": "麦45草莓14-牛14羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97386448:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -27640.09375,
+        "mean_cash": 67990.421875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 12413.1875,
+        "mean_cash": 76421.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.65625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G040.json"
+    },
+    {
+      "opponent": "G041",
+      "source": {
+        "family": "G041",
+        "alias": "麦48草莓10-牛6羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98317152:0",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -21083.34375,
+        "mean_cash": 78230.859375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 19408.8125,
+        "mean_cash": 105156.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.71875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G041.json"
+    },
+    {
+      "opponent": "G043",
+      "source": {
+        "family": "G043",
+        "alias": "麦42草莓16-牛8羊6-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97213078:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -33283.796875,
+        "mean_cash": 73591.609375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0,
+        "losses": 8,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": 345.9375,
+        "mean_cash": 81537.0,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.421875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G043.json"
+    },
+    {
+      "opponent": "G044",
+      "source": {
+        "family": "G044",
+        "alias": "麦50胡萝卜6-羊9牛6-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97317972:0",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -32481.375,
+        "mean_cash": 75660.625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": -1557.375,
+        "mean_cash": 98210.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.34375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G044.json"
+    },
+    {
+      "opponent": "G049",
+      "source": {
+        "family": "G049",
+        "alias": "麦39草莓11-羊9牛8-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "97915670:0",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -38624.15625,
+        "mean_cash": 64459.296875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 4,
+        "ties": 0,
+        "losses": 12,
+        "win_rate": 0.25,
+        "score_rate": 0.25,
+        "mean_margin": -7982.125,
+        "mean_cash": 100372.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.25,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G049.json"
+    },
+    {
+      "opponent": "G051",
+      "source": {
+        "family": "G051",
+        "alias": "麦47草莓13-牛7羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97831434:0",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -17072.578125,
+        "mean_cash": 82117.859375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 14910.875,
+        "mean_cash": 99477.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.75,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G051.json"
+    },
+    {
+      "opponent": "G052",
+      "source": {
+        "family": "G052",
+        "alias": "麦50草莓7-羊10牛5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93934802:0",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 22,
+        "ties": 0,
+        "losses": 42,
+        "win_rate": 0.34375,
+        "score_rate": 0.34375,
+        "mean_margin": -8216.484375,
+        "mean_cash": 77573.46875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 16261.875,
+        "mean_cash": 119550.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.28125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G052.json"
+    },
+    {
+      "opponent": "G053",
+      "source": {
+        "family": "G053",
+        "alias": "草莓43麦31-牛12羊4-4地-早畜",
+        "team": "Seb (allegedly)",
+        "route_id": "94162346:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 53,
+        "ties": 0,
+        "losses": 11,
+        "win_rate": 0.828125,
+        "score_rate": 0.828125,
+        "mean_margin": 15656.125,
+        "mean_cash": 82123.9375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 44663.8125,
+        "mean_cash": 115954.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.171875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G053.json"
+    },
+    {
+      "opponent": "G054",
+      "source": {
+        "family": "G054",
+        "alias": "麦48草莓9-羊10牛6-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "98052525:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -34269.359375,
+        "mean_cash": 71432.875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0,
+        "losses": 8,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": 2397.4375,
+        "mean_cash": 98798.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.46875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G054.json"
+    },
+    {
+      "opponent": "G056",
+      "source": {
+        "family": "G056",
+        "alias": "麦51草莓7-羊8牛7-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98303401:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 9,
+        "ties": 0,
+        "losses": 55,
+        "win_rate": 0.140625,
+        "score_rate": 0.140625,
+        "mean_margin": -21048.265625,
+        "mean_cash": 74174.390625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 11888.5,
+        "mean_cash": 98778.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.671875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G056.json"
+    },
+    {
+      "opponent": "G057",
+      "source": {
+        "family": "G057",
+        "alias": "麦62-牛10羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98210024:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -20257.28125,
+        "mean_cash": 72409.96875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 12961.4375,
+        "mean_cash": 93088.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G057.json"
+    },
+    {
+      "opponent": "G058",
+      "source": {
+        "family": "G058",
+        "alias": "麦47草莓11-牛10羊5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93962102:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -27165.984375,
+        "mean_cash": 71996.03125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 7551.5625,
+        "mean_cash": 84173.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G058.json"
+    },
+    {
+      "opponent": "G059",
+      "source": {
+        "family": "G059",
+        "alias": "胡萝卜44草莓11-羊10牛4-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93947041:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 40,
+        "ties": 0,
+        "losses": 24,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 8779.703125,
+        "mean_cash": 92939.234375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 43649.9375,
+        "mean_cash": 132790.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G059.json"
+    },
+    {
+      "opponent": "G061",
+      "source": {
+        "family": "G061",
+        "alias": "麦46草莓12-牛8羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98294262:1",
+        "support": 2
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -24970.59375,
+        "mean_cash": 75777.09375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 5456.875,
+        "mean_cash": 93908.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.671875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G061.json"
+    },
+    {
+      "opponent": "G067",
+      "source": {
+        "family": "G067",
+        "alias": "麦27番茄24-牛11羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97804175:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 20,
+        "ties": 0,
+        "losses": 44,
+        "win_rate": 0.3125,
+        "score_rate": 0.3125,
+        "mean_margin": -9513.078125,
+        "mean_cash": 77133.34375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 17206.0625,
+        "mean_cash": 91523.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.4375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G067.json"
+    },
+    {
+      "opponent": "G068",
+      "source": {
+        "family": "G068",
+        "alias": "麦34草莓25-牛13羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94209901:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 30,
+        "ties": 0,
+        "losses": 34,
+        "win_rate": 0.46875,
+        "score_rate": 0.46875,
+        "mean_margin": -3694.921875,
+        "mean_cash": 77151.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 34740.0,
+        "mean_cash": 92804.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G068.json"
+    },
+    {
+      "opponent": "G069",
+      "source": {
+        "family": "G069",
+        "alias": "胡萝卜26麦21-羊17牛3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97774529:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 23,
+        "ties": 0,
+        "losses": 41,
+        "win_rate": 0.359375,
+        "score_rate": 0.359375,
+        "mean_margin": -6544.828125,
+        "mean_cash": 83108.96875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 32439.0625,
+        "mean_cash": 121326.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.515625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G069.json"
+    },
+    {
+      "opponent": "G071",
+      "source": {
+        "family": "G071",
+        "alias": "麦37草莓16-羊12牛10-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97899943:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 18,
+        "ties": 0,
+        "losses": 46,
+        "win_rate": 0.28125,
+        "score_rate": 0.28125,
+        "mean_margin": -14268.484375,
+        "mean_cash": 71977.078125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 7316.4375,
+        "mean_cash": 98000.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.34375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G071.json"
+    },
+    {
+      "opponent": "G077",
+      "source": {
+        "family": "G077",
+        "alias": "草莓21番茄15-羊15牛3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97735614:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 24,
+        "ties": 0,
+        "losses": 40,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": -12350.625,
+        "mean_cash": 86982.28125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 25835.5625,
+        "mean_cash": 112471.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G077.json"
+    },
+    {
+      "opponent": "G078",
+      "source": {
+        "family": "G078",
+        "alias": "麦45草莓13-牛12羊3-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "94113312:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -26180.640625,
+        "mean_cash": 67426.46875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0,
+        "losses": 8,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": 3004.5625,
+        "mean_cash": 80221.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.484375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G078.json"
+    },
+    {
+      "opponent": "G079",
+      "source": {
+        "family": "G079",
+        "alias": "麦24草莓20-羊17牛8-3地-早畜",
+        "team": "Subramanya N",
+        "route_id": "97422926:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -4876.84375,
+        "mean_cash": 75494.5
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 42786.0625,
+        "mean_cash": 116797.0,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G079.json"
+    },
+    {
+      "opponent": "G083",
+      "source": {
+        "family": "G083",
+        "alias": "麦40草莓18-牛10羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98109760:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -27576.265625,
+        "mean_cash": 72776.796875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 10037.375,
+        "mean_cash": 88388.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G083.json"
+    },
+    {
+      "opponent": "G084",
+      "source": {
+        "family": "G084",
+        "alias": "麦48草莓6-羊17牛3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97744783:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 33,
+        "ties": 0,
+        "losses": 31,
+        "win_rate": 0.515625,
+        "score_rate": 0.515625,
+        "mean_margin": -824.75,
+        "mean_cash": 91884.21875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 46244.5,
+        "mean_cash": 124052.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.359375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G084.json"
+    },
+    {
+      "opponent": "G086",
+      "source": {
+        "family": "G086",
+        "alias": "麦47草莓8-羊12牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97749375:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -19182.140625,
+        "mean_cash": 75105.03125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 16782.8125,
+        "mean_cash": 104091.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.6875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G086.json"
+    },
+    {
+      "opponent": "G089",
+      "source": {
+        "family": "G089",
+        "alias": "麦41草莓11-羊12牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98419965:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -32780.296875,
+        "mean_cash": 71541.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": -431.1875,
+        "mean_cash": 102246.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.6875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G089.json"
+    },
+    {
+      "opponent": "G090",
+      "source": {
+        "family": "G090",
+        "alias": "麦46草莓8-羊13牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98419962:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 32,
+        "ties": 0,
+        "losses": 32,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": -2267.59375,
+        "mean_cash": 81261.921875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 33365.625,
+        "mean_cash": 115848.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G090.json"
+    },
+    {
+      "opponent": "G092",
+      "source": {
+        "family": "G092",
+        "alias": "麦44草莓8-牛12羊3-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93926840:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -27540.421875,
+        "mean_cash": 70639.796875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 7,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": 670.9375,
+        "mean_cash": 84506.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.390625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G092.json"
+    },
+    {
+      "opponent": "G093",
+      "source": {
+        "family": "G093",
+        "alias": "麦39草莓9-牛13羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97151458:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -31335.09375,
+        "mean_cash": 68832.484375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 6399.1875,
+        "mean_cash": 74351.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.71875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G093.json"
+    },
+    {
+      "opponent": "G094",
+      "source": {
+        "family": "G094",
+        "alias": "麦28草莓16-羊10牛9-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97753942:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -24908.21875,
+        "mean_cash": 74792.25
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 15718.25,
+        "mean_cash": 88957.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.984375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G094.json"
+    },
+    {
+      "opponent": "G096",
+      "source": {
+        "family": "G096",
+        "alias": "胡萝卜34麦13-羊11牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98000264:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 19,
+        "ties": 0,
+        "losses": 45,
+        "win_rate": 0.296875,
+        "score_rate": 0.296875,
+        "mean_margin": -9521.765625,
+        "mean_cash": 84053.375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 38170.75,
+        "mean_cash": 121345.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.453125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G096.json"
+    },
+    {
+      "opponent": "G098",
+      "source": {
+        "family": "G098",
+        "alias": "麦29草莓18-羊18牛4-3地-早畜",
+        "team": "Subramanya N",
+        "route_id": "97352283:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 7,
+        "ties": 0,
+        "losses": 57,
+        "win_rate": 0.109375,
+        "score_rate": 0.109375,
+        "mean_margin": -23040.171875,
+        "mean_cash": 68943.25
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 23418.9375,
+        "mean_cash": 114385.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.703125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G098.json"
+    },
+    {
+      "opponent": "G100",
+      "source": {
+        "family": "G100",
+        "alias": "麦30番茄14-牛11羊8-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97975206:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 7,
+        "ties": 0,
+        "losses": 57,
+        "win_rate": 0.109375,
+        "score_rate": 0.109375,
+        "mean_margin": -21707.375,
+        "mean_cash": 73002.03125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 7215.1875,
+        "mean_cash": 93401.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.515625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G100.json"
+    },
+    {
+      "opponent": "G102",
+      "source": {
+        "family": "G102",
+        "alias": "麦43草莓15-牛6羊5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98324017:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -33443.390625,
+        "mean_cash": 73441.84375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 14601.1875,
+        "mean_cash": 98402.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G102.json"
+    },
+    {
+      "opponent": "G103",
+      "source": {
+        "family": "G103",
+        "alias": "麦39草莓25-牛5羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98043594:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -24983.484375,
+        "mean_cash": 75904.140625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 18805.5,
+        "mean_cash": 104958.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G103.json"
+    },
+    {
+      "opponent": "G105",
+      "source": {
+        "family": "G105",
+        "alias": "麦26胡萝卜19-羊16牛1-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97881756:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 34,
+        "ties": 0,
+        "losses": 30,
+        "win_rate": 0.53125,
+        "score_rate": 0.53125,
+        "mean_margin": 4106.609375,
+        "mean_cash": 94639.125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 42323.8125,
+        "mean_cash": 116776.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.21875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G105.json"
+    },
+    {
+      "opponent": "G109",
+      "source": {
+        "family": "G109",
+        "alias": "麦44草莓9-羊13牛6-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97731030:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -20097.375,
+        "mean_cash": 82917.125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 10742.125,
+        "mean_cash": 108472.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G109.json"
+    },
+    {
+      "opponent": "G113",
+      "source": {
+        "family": "G113",
+        "alias": "麦24草莓19-牛10羊6-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98419964:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -27968.75,
+        "mean_cash": 72623.046875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 1888.8125,
+        "mean_cash": 84869.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G113.json"
+    },
+    {
+      "opponent": "G114",
+      "source": {
+        "family": "G114",
+        "alias": "麦37草莓25-牛6羊6-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98353834:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 5,
+        "ties": 0,
+        "losses": 59,
+        "win_rate": 0.078125,
+        "score_rate": 0.078125,
+        "mean_margin": -25595.9375,
+        "mean_cash": 74081.9375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 26026.0,
+        "mean_cash": 100419.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.921875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G114.json"
+    },
+    {
+      "opponent": "G115",
+      "source": {
+        "family": "G115",
+        "alias": "麦33草莓22-羊12牛8-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97660328:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -18223.828125,
+        "mean_cash": 77388.015625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 12320.8125,
+        "mean_cash": 93242.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G115.json"
+    },
+    {
+      "opponent": "G116",
+      "source": {
+        "family": "G116",
+        "alias": "麦47番茄6-羊12牛10-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97931685:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 51,
+        "ties": 0,
+        "losses": 13,
+        "win_rate": 0.796875,
+        "score_rate": 0.796875,
+        "mean_margin": 15541.71875,
+        "mean_cash": 81862.296875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 31628.5625,
+        "mean_cash": 105522.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.203125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G116.json"
+    },
+    {
+      "opponent": "G118",
+      "source": {
+        "family": "G118",
+        "alias": "麦44胡萝卜12-羊12牛7-3地-早畜",
+        "team": "Arman Tuganbaev",
+        "route_id": "98358337:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 16,
+        "ties": 0,
+        "losses": 48,
+        "win_rate": 0.25,
+        "score_rate": 0.25,
+        "mean_margin": -15930.828125,
+        "mean_cash": 82363.78125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 8274.0625,
+        "mean_cash": 115584.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.3125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G118.json"
+    },
+    {
+      "opponent": "G125",
+      "source": {
+        "family": "G125",
+        "alias": "麦30番茄18-牛9鹅4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98237425:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 7,
+        "ties": 0,
+        "losses": 57,
+        "win_rate": 0.109375,
+        "score_rate": 0.109375,
+        "mean_margin": -17245.25,
+        "mean_cash": 86062.90625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 12967.5625,
+        "mean_cash": 101950.625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.578125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G125.json"
+    },
+    {
+      "opponent": "G126",
+      "source": {
+        "family": "G126",
+        "alias": "麦31草莓15-牛10羊5-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "98045895:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -35752.546875,
+        "mean_cash": 67432.140625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 3809.375,
+        "mean_cash": 80009.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G126.json"
+    },
+    {
+      "opponent": "G129",
+      "source": {
+        "family": "G129",
+        "alias": "胡萝卜39麦10-羊9牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97858947:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -16742.21875,
+        "mean_cash": 80908.03125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 14617.9375,
+        "mean_cash": 101919.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G129.json"
+    },
+    {
+      "opponent": "G130",
+      "source": {
+        "family": "G130",
+        "alias": "麦41草莓15-羊11牛7-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98335443:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -28041.03125,
+        "mean_cash": 70692.640625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 7332.0,
+        "mean_cash": 92247.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.6875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G130.json"
+    },
+    {
+      "opponent": "G131",
+      "source": {
+        "family": "G131",
+        "alias": "胡萝卜23麦22-羊12牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97737902:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 13,
+        "ties": 0,
+        "losses": 51,
+        "win_rate": 0.203125,
+        "score_rate": 0.203125,
+        "mean_margin": -18625.609375,
+        "mean_cash": 82139.3125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 14098.9375,
+        "mean_cash": 115796.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.546875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G131.json"
+    },
+    {
+      "opponent": "G133",
+      "source": {
+        "family": "G133",
+        "alias": "麦42草莓13-牛10羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97619249:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -30880.921875,
+        "mean_cash": 74255.65625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 5543.6875,
+        "mean_cash": 73889.4375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.703125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G133.json"
+    },
+    {
+      "opponent": "G136",
+      "source": {
+        "family": "G136",
+        "alias": "麦39胡萝卜16-羊9牛7-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97078515:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -32702.15625,
+        "mean_cash": 77092.578125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": -5215.9375,
+        "mean_cash": 107263.375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G136.json"
+    },
+    {
+      "opponent": "G137",
+      "source": {
+        "family": "G137",
+        "alias": "麦46番茄8-牛11羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97352285:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -20188.265625,
+        "mean_cash": 75842.078125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 6406.4375,
+        "mean_cash": 80484.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G137.json"
+    },
+    {
+      "opponent": "G138",
+      "source": {
+        "family": "G138",
+        "alias": "麦33草莓25-羊11牛5-3地-早畜",
+        "team": "Seb (allegedly)",
+        "route_id": "94204592:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 60,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 25818.46875,
+        "mean_cash": 91646.875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 54338.25,
+        "mean_cash": 125379.375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.0625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G138.json"
+    },
+    {
+      "opponent": "G140",
+      "source": {
+        "family": "G140",
+        "alias": "胡萝卜40草莓21-牛9羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97911317:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -23442.984375,
+        "mean_cash": 77861.953125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 19003.5625,
+        "mean_cash": 84501.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.8125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G140.json"
+    },
+    {
+      "opponent": "G143",
+      "source": {
+        "family": "G143",
+        "alias": "麦30草莓23-羊12牛10-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97788189:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -19277.171875,
+        "mean_cash": 70926.515625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 6951.625,
+        "mean_cash": 91172.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.734375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G143.json"
+    },
+    {
+      "opponent": "G144",
+      "source": {
+        "family": "G144",
+        "alias": "麦54草莓13-羊14牛5-4地-早畜",
+        "team": "tetsuya",
+        "route_id": "98358317:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 35,
+        "ties": 0,
+        "losses": 29,
+        "win_rate": 0.546875,
+        "score_rate": 0.546875,
+        "mean_margin": 4049.109375,
+        "mean_cash": 82511.15625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 49609.75,
+        "mean_cash": 107466.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.078125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G144.json"
+    },
+    {
+      "opponent": "G148",
+      "source": {
+        "family": "G148",
+        "alias": "胡萝卜42草莓22-牛9羊2-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97742484:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 14,
+        "ties": 0,
+        "losses": 50,
+        "win_rate": 0.21875,
+        "score_rate": 0.21875,
+        "mean_margin": -15205.234375,
+        "mean_cash": 73086.0
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 30488.4375,
+        "mean_cash": 96459.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G148.json"
+    },
+    {
+      "opponent": "G152",
+      "source": {
+        "family": "G152",
+        "alias": "麦35番茄22-牛9羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94224064:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 13,
+        "ties": 0,
+        "losses": 51,
+        "win_rate": 0.203125,
+        "score_rate": 0.203125,
+        "mean_margin": -8145.0625,
+        "mean_cash": 85281.4375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 37515.0625,
+        "mean_cash": 102577.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.546875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G152.json"
+    },
+    {
+      "opponent": "G155",
+      "source": {
+        "family": "G155",
+        "alias": "麦42草莓15-羊11牛5-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98353736:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -20723.453125,
+        "mean_cash": 84767.34375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 13885.0625,
+        "mean_cash": 112122.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G155.json"
+    },
+    {
+      "opponent": "G158",
+      "source": {
+        "family": "G158",
+        "alias": "麦41草莓17-羊12牛5-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97621427:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 14,
+        "ties": 0,
+        "losses": 50,
+        "win_rate": 0.21875,
+        "score_rate": 0.21875,
+        "mean_margin": -18107.59375,
+        "mean_cash": 84924.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "win_rate": 0.625,
+        "score_rate": 0.625,
+        "mean_margin": 11289.875,
+        "mean_cash": 108095.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.40625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G158.json"
+    },
+    {
+      "opponent": "G159",
+      "source": {
+        "family": "G159",
+        "alias": "胡萝卜29番茄20-羊10牛3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94228399:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -1649.6875,
+        "mean_cash": 83630.265625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 38514.0625,
+        "mean_cash": 124806.4375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G159.json"
+    },
+    {
+      "opponent": "G162",
+      "source": {
+        "family": "G162",
+        "alias": "麦46胡萝卜12-羊12牛5-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98002377:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -491.890625,
+        "mean_cash": 86555.96875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 29598.25,
+        "mean_cash": 124070.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G162.json"
+    },
+    {
+      "opponent": "G164",
+      "source": {
+        "family": "G164",
+        "alias": "麦50草莓8-牛12羊5-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97281485:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -20764.265625,
+        "mean_cash": 78596.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 7134.8125,
+        "mean_cash": 85448.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.703125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G164.json"
+    },
+    {
+      "opponent": "G165",
+      "source": {
+        "family": "G165",
+        "alias": "胡萝卜37番茄15-牛9鹅2-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97740187:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -14875.78125,
+        "mean_cash": 85893.03125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 7223.5625,
+        "mean_cash": 101846.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G165.json"
+    },
+    {
+      "opponent": "G166",
+      "source": {
+        "family": "G166",
+        "alias": "麦29草莓24-羊12牛10-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98002498:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -22554.40625,
+        "mean_cash": 69783.84375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 10091.8125,
+        "mean_cash": 93216.5,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.921875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G166.json"
+    },
+    {
+      "opponent": "G171",
+      "source": {
+        "family": "G171",
+        "alias": "胡萝卜26麦23-牛9羊4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97927289:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -19015.9375,
+        "mean_cash": 82120.71875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 6721.4375,
+        "mean_cash": 111891.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.90625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G171.json"
+    },
+    {
+      "opponent": "G172",
+      "source": {
+        "family": "G172",
+        "alias": "胡萝卜40麦22-鹅6牛4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94218703:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 54,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.84375,
+        "score_rate": 0.84375,
+        "mean_margin": 18267.40625,
+        "mean_cash": 100036.125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 53703.5,
+        "mean_cash": 139260.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.15625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G172.json"
+    },
+    {
+      "opponent": "G174",
+      "source": {
+        "family": "G174",
+        "alias": "麦53草莓2-羊12牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97751661:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -19818.171875,
+        "mean_cash": 78551.734375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 32644.4375,
+        "mean_cash": 114470.875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.953125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G174.json"
+    },
+    {
+      "opponent": "G175",
+      "source": {
+        "family": "G175",
+        "alias": "麦41胡萝卜16-羊12牛6-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98157661:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 50,
+        "ties": 0,
+        "losses": 14,
+        "win_rate": 0.78125,
+        "score_rate": 0.78125,
+        "mean_margin": 17724.65625,
+        "mean_cash": 84619.765625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 56434.75,
+        "mean_cash": 135509.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.21875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G175.json"
+    },
+    {
+      "opponent": "G178",
+      "source": {
+        "family": "G178",
+        "alias": "麦53番茄9-牛10羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97886266:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -19392.65625,
+        "mean_cash": 76121.96875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 11370.375,
+        "mean_cash": 88094.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.71875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G178.json"
+    },
+    {
+      "opponent": "G179",
+      "source": {
+        "family": "G179",
+        "alias": "麦40胡萝卜16-牛8羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97468613:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 8,
+        "ties": 0,
+        "losses": 56,
+        "win_rate": 0.125,
+        "score_rate": 0.125,
+        "mean_margin": -20654.59375,
+        "mean_cash": 79491.28125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 16006.25,
+        "mean_cash": 93436.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.6875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G179.json"
+    },
+    {
+      "opponent": "G180",
+      "source": {
+        "family": "G180",
+        "alias": "麦51草莓5-羊12牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98091505:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -22777.3125,
+        "mean_cash": 74921.390625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 8649.625,
+        "mean_cash": 91118.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G180.json"
+    },
+    {
+      "opponent": "G181",
+      "source": {
+        "family": "G181",
+        "alias": "麦45胡萝卜11-羊12牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97833724:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": 1865.96875,
+        "mean_cash": 82091.65625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 41454.25,
+        "mean_cash": 129774.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G181.json"
+    },
+    {
+      "opponent": "G185",
+      "source": {
+        "family": "G185",
+        "alias": "麦56草莓2-羊9牛6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "93918864:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 3,
+        "ties": 0,
+        "losses": 61,
+        "win_rate": 0.046875,
+        "score_rate": 0.046875,
+        "mean_margin": -25384.8125,
+        "mean_cash": 73479.6875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": -2314.0,
+        "mean_cash": 99719.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.328125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G185.json"
+    },
+    {
+      "opponent": "G187",
+      "source": {
+        "family": "G187",
+        "alias": "麦26草莓18-牛4羊4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97897725:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 22,
+        "ties": 0,
+        "losses": 42,
+        "win_rate": 0.34375,
+        "score_rate": 0.34375,
+        "mean_margin": -10339.03125,
+        "mean_cash": 90012.796875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 22480.6875,
+        "mean_cash": 114669.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.65625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G187.json"
+    },
+    {
+      "opponent": "G189",
+      "source": {
+        "family": "G189",
+        "alias": "麦19胡萝卜19-鹅4牛4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97833838:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 20,
+        "ties": 0,
+        "losses": 44,
+        "win_rate": 0.3125,
+        "score_rate": 0.3125,
+        "mean_margin": -7047.546875,
+        "mean_cash": 94384.109375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 19708.5,
+        "mean_cash": 104394.3125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G189.json"
+    },
+    {
+      "opponent": "G190",
+      "source": {
+        "family": "G190",
+        "alias": "胡萝卜46麦7-牛7羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98319442:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 15,
+        "ties": 0,
+        "losses": 49,
+        "win_rate": 0.234375,
+        "score_rate": 0.234375,
+        "mean_margin": -11352.53125,
+        "mean_cash": 80777.359375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 22325.625,
+        "mean_cash": 123027.4375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.703125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G190.json"
+    },
+    {
+      "opponent": "G191",
+      "source": {
+        "family": "G191",
+        "alias": "麦44番茄13-牛6羊4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97728739:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 21,
+        "ties": 0,
+        "losses": 43,
+        "win_rate": 0.328125,
+        "score_rate": 0.328125,
+        "mean_margin": -7916.3125,
+        "mean_cash": 88792.671875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 42471.625,
+        "mean_cash": 107637.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.671875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G191.json"
+    },
+    {
+      "opponent": "G192",
+      "source": {
+        "family": "G192",
+        "alias": "胡萝卜37草莓15-牛9羊5-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98353840:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 18,
+        "ties": 0,
+        "losses": 46,
+        "win_rate": 0.28125,
+        "score_rate": 0.28125,
+        "mean_margin": -12389.25,
+        "mean_cash": 77055.84375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 31991.625,
+        "mean_cash": 104779.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.71875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G192.json"
+    },
+    {
+      "opponent": "G193",
+      "source": {
+        "family": "G193",
+        "alias": "胡萝卜41麦16-牛9羊2-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98125630:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 15,
+        "ties": 0,
+        "losses": 49,
+        "win_rate": 0.234375,
+        "score_rate": 0.234375,
+        "mean_margin": -11115.625,
+        "mean_cash": 82543.65625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 18406.25,
+        "mean_cash": 95213.0,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.765625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G193.json"
+    },
+    {
+      "opponent": "G194",
+      "source": {
+        "family": "G194",
+        "alias": "麦53草莓4-牛7羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98310265:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -27509.578125,
+        "mean_cash": 75330.859375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 7,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -501.375,
+        "mean_cash": 96219.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.421875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G194.json"
+    },
+    {
+      "opponent": "G195",
+      "source": {
+        "family": "G195",
+        "alias": "胡萝卜32草莓12-羊13牛5-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98292226:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 18,
+        "ties": 0,
+        "losses": 46,
+        "win_rate": 0.28125,
+        "score_rate": 0.28125,
+        "mean_margin": -10704.75,
+        "mean_cash": 84538.015625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 22413.375,
+        "mean_cash": 119361.5625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.53125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G195.json"
+    },
+    {
+      "opponent": "G196",
+      "source": {
+        "family": "G196",
+        "alias": "麦51草莓9-羊10牛5-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94209924:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 13,
+        "ties": 0,
+        "losses": 51,
+        "win_rate": 0.203125,
+        "score_rate": 0.203125,
+        "mean_margin": -13936.296875,
+        "mean_cash": 84917.359375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "win_rate": 0.75,
+        "score_rate": 0.75,
+        "mean_margin": 19331.375,
+        "mean_cash": 109304.0625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.546875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G196.json"
+    },
+    {
+      "opponent": "G197",
+      "source": {
+        "family": "G197",
+        "alias": "胡萝卜40麦14-牛9羊4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "97726450:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 0,
+        "ties": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score_rate": 0.0,
+        "mean_margin": -24120.125,
+        "mean_cash": 69712.96875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 8195.4375,
+        "mean_cash": 101551.625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G197.json"
+    },
+    {
+      "opponent": "G200",
+      "source": {
+        "family": "G200",
+        "alias": "麦54草莓9-牛10羊2-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97817863:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -21956.625,
+        "mean_cash": 78921.171875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 15,
+        "ties": 0,
+        "losses": 1,
+        "win_rate": 0.9375,
+        "score_rate": 0.9375,
+        "mean_margin": 14213.0625,
+        "mean_cash": 85223.3125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G200.json"
+    },
+    {
+      "opponent": "G201",
+      "source": {
+        "family": "G201",
+        "alias": "麦53草莓7-牛10羊5-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "96982840:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -29118.328125,
+        "mean_cash": 78763.53125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": 2312.875,
+        "mean_cash": 86753.0,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.34375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G201.json"
+    },
+    {
+      "opponent": "G203",
+      "source": {
+        "family": "G203",
+        "alias": "麦49胡萝卜10-牛10羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98109773:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 6,
+        "ties": 0,
+        "losses": 58,
+        "win_rate": 0.09375,
+        "score_rate": 0.09375,
+        "mean_margin": -19054.03125,
+        "mean_cash": 75307.171875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 17990.6875,
+        "mean_cash": 101481.625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.90625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G203.json"
+    },
+    {
+      "opponent": "G205",
+      "source": {
+        "family": "G205",
+        "alias": "胡萝卜44麦13-牛9鹅4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98091511:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 14,
+        "ties": 0,
+        "losses": 50,
+        "win_rate": 0.21875,
+        "score_rate": 0.21875,
+        "mean_margin": -12304.34375,
+        "mean_cash": 76134.359375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 27596.25,
+        "mean_cash": 105519.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.78125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G205.json"
+    },
+    {
+      "opponent": "G206",
+      "source": {
+        "family": "G206",
+        "alias": "胡萝卜42草莓19-牛4羊3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94225869:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 31,
+        "ties": 0,
+        "losses": 33,
+        "win_rate": 0.484375,
+        "score_rate": 0.484375,
+        "mean_margin": -647.109375,
+        "mean_cash": 91090.359375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 40744.1875,
+        "mean_cash": 117533.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.515625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G206.json"
+    },
+    {
+      "opponent": "G207",
+      "source": {
+        "family": "G207",
+        "alias": "麦38草莓12-牛8羊6-3地-早畜",
+        "team": "Ryo Hasegawa",
+        "route_id": "97678542:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 4,
+        "ties": 0,
+        "losses": 60,
+        "win_rate": 0.0625,
+        "score_rate": 0.0625,
+        "mean_margin": -30964.53125,
+        "mean_cash": 74370.46875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 5317.5625,
+        "mean_cash": 88895.75,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G207.json"
+    },
+    {
+      "opponent": "G213",
+      "source": {
+        "family": "G213",
+        "alias": "麦28胡萝卜14-羊12牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98349182:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 13,
+        "ties": 0,
+        "losses": 51,
+        "win_rate": 0.203125,
+        "score_rate": 0.203125,
+        "mean_margin": -12765.53125,
+        "mean_cash": 80688.84375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0,
+        "losses": 3,
+        "win_rate": 0.8125,
+        "score_rate": 0.8125,
+        "mean_margin": 16102.0,
+        "mean_cash": 115662.3125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.609375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G213.json"
+    },
+    {
+      "opponent": "G222",
+      "source": {
+        "family": "G222",
+        "alias": "麦49番茄7-羊12牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97954633:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 10,
+        "ties": 0,
+        "losses": 54,
+        "win_rate": 0.15625,
+        "score_rate": 0.15625,
+        "mean_margin": -10567.4375,
+        "mean_cash": 82191.9375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 16160.0,
+        "mean_cash": 115848.4375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G222.json"
+    },
+    {
+      "opponent": "G223",
+      "source": {
+        "family": "G223",
+        "alias": "麦47草莓10-牛11羊3-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "94100037:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 10,
+        "ties": 0,
+        "losses": 54,
+        "win_rate": 0.15625,
+        "score_rate": 0.15625,
+        "mean_margin": -23194.78125,
+        "mean_cash": 70413.171875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "win_rate": 0.5625,
+        "score_rate": 0.5625,
+        "mean_margin": 12022.1875,
+        "mean_cash": 85688.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.40625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G223.json"
+    },
+    {
+      "opponent": "G228",
+      "source": {
+        "family": "G228",
+        "alias": "胡萝卜37麦17-羊13牛7-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "98159907:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 43,
+        "ties": 0,
+        "losses": 21,
+        "win_rate": 0.671875,
+        "score_rate": 0.671875,
+        "mean_margin": 10026.6875,
+        "mean_cash": 89648.140625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 51050.1875,
+        "mean_cash": 127784.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.328125,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G228.json"
+    },
+    {
+      "opponent": "G231",
+      "source": {
+        "family": "G231",
+        "alias": "麦29番茄17-羊7牛4-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94221291:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -3732.765625,
+        "mean_cash": 96256.453125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 21472.1875,
+        "mean_cash": 115234.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G231.json"
+    },
+    {
+      "opponent": "G233",
+      "source": {
+        "family": "G233",
+        "alias": "麦48草莓11-牛7羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97552729:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 22,
+        "ties": 0,
+        "losses": 42,
+        "win_rate": 0.34375,
+        "score_rate": 0.34375,
+        "mean_margin": -7950.890625,
+        "mean_cash": 83870.953125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 29396.5625,
+        "mean_cash": 108475.9375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.65625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G233.json"
+    },
+    {
+      "opponent": "G241",
+      "source": {
+        "family": "G241",
+        "alias": "麦48草莓8-羊9牛6-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "98157508:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -35110.46875,
+        "mean_cash": 71937.984375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "win_rate": 0.6875,
+        "score_rate": 0.6875,
+        "mean_margin": 5802.625,
+        "mean_cash": 96287.1875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.65625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G241.json"
+    },
+    {
+      "opponent": "G242",
+      "source": {
+        "family": "G242",
+        "alias": "胡萝卜43草莓9-牛6羊2-3地-早畜",
+        "team": "Subramanya N",
+        "route_id": "98273929:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 1,
+        "ties": 0,
+        "losses": 63,
+        "win_rate": 0.015625,
+        "score_rate": 0.015625,
+        "mean_margin": -23600.265625,
+        "mean_cash": 72038.328125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 12754.0,
+        "mean_cash": 121246.375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.859375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G242.json"
+    },
+    {
+      "opponent": "G243",
+      "source": {
+        "family": "G243",
+        "alias": "麦41胡萝卜10-羊11牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97726572:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 18,
+        "ties": 0,
+        "losses": 46,
+        "win_rate": 0.28125,
+        "score_rate": 0.28125,
+        "mean_margin": -4650.796875,
+        "mean_cash": 79099.265625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "win_rate": 0.875,
+        "score_rate": 0.875,
+        "mean_margin": 23449.5625,
+        "mean_cash": 119172.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.59375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G243.json"
+    },
+    {
+      "opponent": "G244",
+      "source": {
+        "family": "G244",
+        "alias": "麦54胡萝卜10-牛8羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97883812:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 38,
+        "ties": 0,
+        "losses": 26,
+        "win_rate": 0.59375,
+        "score_rate": 0.59375,
+        "mean_margin": 1459.25,
+        "mean_cash": 83573.421875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 36674.9375,
+        "mean_cash": 130218.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.40625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G244.json"
+    },
+    {
+      "opponent": "G245",
+      "source": {
+        "family": "G245",
+        "alias": "麦46草莓11-羊9牛6-3地-早畜",
+        "team": "theredbluepill",
+        "route_id": "97854411:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -32551.59375,
+        "mean_cash": 72024.546875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0,
+        "losses": 10,
+        "win_rate": 0.375,
+        "score_rate": 0.375,
+        "mean_margin": -4208.8125,
+        "mean_cash": 102647.8125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.34375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G245.json"
+    },
+    {
+      "opponent": "G247",
+      "source": {
+        "family": "G247",
+        "alias": "麦47草莓11-牛6羊5-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "98305677:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 2,
+        "ties": 0,
+        "losses": 62,
+        "win_rate": 0.03125,
+        "score_rate": 0.03125,
+        "mean_margin": -29717.390625,
+        "mean_cash": 74901.0625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0,
+        "losses": 8,
+        "win_rate": 0.5,
+        "score_rate": 0.5,
+        "mean_margin": 108.4375,
+        "mean_cash": 101230.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.46875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G247.json"
+    },
+    {
+      "opponent": "G249",
+      "source": {
+        "family": "G249",
+        "alias": "麦44胡萝卜10-羊12牛9-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "97546172:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 38,
+        "ties": 0,
+        "losses": 26,
+        "win_rate": 0.59375,
+        "score_rate": 0.59375,
+        "mean_margin": 7999.234375,
+        "mean_cash": 78538.203125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 41785.0,
+        "mean_cash": 117492.6875,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.40625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G249.json"
+    },
+    {
+      "opponent": "G250",
+      "source": {
+        "family": "G250",
+        "alias": "胡萝卜37麦11-羊9牛4-3地-早畜",
+        "team": "Subramanya N",
+        "route_id": "97879425:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 10,
+        "ties": 0,
+        "losses": 54,
+        "win_rate": 0.15625,
+        "score_rate": 0.15625,
+        "mean_margin": -15861.375,
+        "mean_cash": 79494.84375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 31670.1875,
+        "mean_cash": 129423.375,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G250.json"
+    },
+    {
+      "opponent": "G252",
+      "source": {
+        "family": "G252",
+        "alias": "麦57草莓6-牛6鹅3-3地-早畜",
+        "team": "Crop Dusta",
+        "route_id": "94222337:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 28,
+        "ties": 0,
+        "losses": 36,
+        "win_rate": 0.4375,
+        "score_rate": 0.4375,
+        "mean_margin": -5239.921875,
+        "mean_cash": 96808.734375
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 18304.375,
+        "mean_cash": 113593.3125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.5625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G252.json"
+    },
+    {
+      "opponent": "G254",
+      "source": {
+        "family": "G254",
+        "alias": "麦34草莓25-牛8羊6-3地-早畜",
+        "team": "Seb (allegedly)",
+        "route_id": "94200310:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 55,
+        "ties": 0,
+        "losses": 9,
+        "win_rate": 0.859375,
+        "score_rate": 0.859375,
+        "mean_margin": 22672.4375,
+        "mean_cash": 89194.921875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 53265.0625,
+        "mean_cash": 127934.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.140625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G254.json"
+    },
+    {
+      "opponent": "G257",
+      "source": {
+        "family": "G257",
+        "alias": "胡萝卜42草莓12-牛6羊6-3地-早畜",
+        "team": "tetsuya",
+        "route_id": "94020937:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 10,
+        "ties": 0,
+        "losses": 54,
+        "win_rate": 0.15625,
+        "score_rate": 0.15625,
+        "mean_margin": -18359.09375,
+        "mean_cash": 77809.21875
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 12105.0625,
+        "mean_cash": 109428.25,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.84375,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_hard44_oracle_confirm_seed2881001_n8x2_v1\\G257.json"
+    },
+    {
+      "opponent": "G259",
+      "source": {
+        "family": "G259",
+        "alias": "麦53胡萝卜10-牛7羊3-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98216699:0",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 31,
+        "ties": 0,
+        "losses": 33,
+        "win_rate": 0.484375,
+        "score_rate": 0.484375,
+        "mean_margin": -704.59375,
+        "mean_cash": 87262.125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 34564.9375,
+        "mean_cash": 130098.625,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.515625,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G259.json"
+    },
+    {
+      "opponent": "G264",
+      "source": {
+        "family": "G264",
+        "alias": "麦42胡萝卜10-羊12牛7-3地-早畜",
+        "team": "srijan k.r keshri",
+        "route_id": "98317086:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 21,
+        "ties": 0,
+        "losses": 43,
+        "win_rate": 0.328125,
+        "score_rate": 0.328125,
+        "mean_margin": -7048.3125,
+        "mean_cash": 84495.28125
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 22600.1875,
+        "mean_cash": 119207.0,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.671875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G264.json"
+    },
+    {
+      "opponent": "G267",
+      "source": {
+        "family": "G267",
+        "alias": "麦33草莓20-羊15牛5-3地-早畜",
+        "team": "Seb (allegedly)",
+        "route_id": "94208931:1",
+        "support": 1
+      },
+      "actual": {
+        "games": 64,
+        "wins": 45,
+        "ties": 0,
+        "losses": 19,
+        "win_rate": 0.703125,
+        "score_rate": 0.703125,
+        "mean_margin": 13667.421875,
+        "mean_cash": 89557.640625
+      },
+      "oracle": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score_rate": 1.0,
+        "mean_margin": 38538.875,
+        "mean_cash": 116898.125,
+        "avoidable_crop_losses": 0,
+        "avoidable_animal_losses": 0,
+        "end_overflow": 0
+      },
+      "oracle_minus_actual_win_rate": 0.296875,
+      "oracle_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\receipts\\cxx_easy89_oracle_confirm_seed2881001_n8x2_v1\\G267.json"
+    }
+  ]
+}

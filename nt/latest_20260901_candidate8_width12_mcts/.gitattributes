@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.zlib binary
+*.json.zlib binary
+*.gz binary
+*.pdf binary

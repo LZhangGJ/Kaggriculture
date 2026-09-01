@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="680" viewBox="0 0 1300 680">
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="30" fill="#172033" text-anchor="start" font-weight="700">头部路线族规模与累计覆盖</text>
+<text x="45" y="76" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" fill="#65708a" text-anchor="start" font-weight="400">前 2 族占全部样本 50.21%，前 8 族占 84.51%；长尾数量多但样本少。</text>
+<rect x="107.73333333333332" y="100.0" width="57.86666666666666" height="455.0" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="136.66666666666666" y="90.0" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">905</text>
+<text x="136.66666666666666" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G001</text>
+<rect x="201.06666666666666" y="110.55801104972375" width="57.86666666666666" height="444.44198895027625" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="230.0" y="100.55801104972375" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">884</text>
+<text x="230.0" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G002</text>
+<rect x="294.40000000000003" y="342.3314917127072" width="57.86666666666666" height="212.6685082872928" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="323.33333333333337" y="332.3314917127072" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">423</text>
+<text x="323.33333333333337" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G003</text>
+<rect x="387.73333333333335" y="460.4806629834254" width="57.86666666666666" height="94.5193370165746" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="416.6666666666667" y="450.4806629834254" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">188</text>
+<text x="416.6666666666667" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G004</text>
+<rect x="481.06666666666666" y="471.03867403314916" width="57.86666666666666" height="83.96132596685082" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="510.0" y="461.03867403314916" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">167</text>
+<text x="510.0" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G005</text>
+<rect x="574.4" y="475.56353591160223" width="57.86666666666666" height="79.4364640883978" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="603.3333333333333" y="465.56353591160223" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">158</text>
+<text x="603.3333333333333" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G006</text>
+<rect x="667.7333333333333" y="479.0828729281768" width="57.86666666666666" height="75.91712707182322" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="696.6666666666666" y="469.0828729281768" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">151</text>
+<text x="696.6666666666666" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G007</text>
+<rect x="761.0666666666667" y="487.1270718232044" width="57.86666666666666" height="67.87292817679558" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="790.0" y="477.1270718232044" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">135</text>
+<text x="790.0" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G008</text>
+<rect x="854.4000000000001" y="528.8563535911602" width="57.86666666666666" height="26.14364640883978" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="883.3333333333334" y="518.8563535911602" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">52</text>
+<text x="883.3333333333334" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G009</text>
+<rect x="947.7333333333333" y="536.3977900552486" width="57.86666666666666" height="18.602209944751383" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="976.6666666666666" y="526.3977900552486" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">37</text>
+<text x="976.6666666666666" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G010</text>
+<rect x="1041.0666666666666" y="540.4198895027624" width="57.86666666666666" height="14.58011049723757" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="1070.0" y="530.4198895027624" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">29</text>
+<text x="1070.0" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G011</text>
+<rect x="1134.4" y="542.9337016574585" width="57.86666666666666" height="12.066298342541437" rx="5" fill="#356ae6" opacity="0.88"/>
+<text x="1163.3333333333335" y="532.9337016574585" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" fill="#356ae6" text-anchor="middle" font-weight="700">24</text>
+<text x="1163.3333333333335" y="583" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" fill="#65708a" text-anchor="middle" font-weight="400">G012</text>
+<polyline points="136.66666666666666,439.4302554027505 230.0,326.54223968565816 323.33333333333337,272.524557956778 416.6666666666667,248.51669941060902 510.0,227.19056974459727 603.3333333333333,207.01375245579567 696.6666666666666,187.73084479371317 790.0,170.49115913555988 883.3333333333334,163.8506876227898 976.6666666666666,159.12573673870332 1070.0,155.42239685658149 1163.3333333333335,152.3575638506876" fill="none" stroke="#e58a32" stroke-width="4"/>
+<circle cx="136.66666666666666" cy="439.4302554027505" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="230.0" cy="326.54223968565816" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="323.33333333333337" cy="272.524557956778" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="416.6666666666667" cy="248.51669941060902" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="510.0" cy="227.19056974459727" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="603.3333333333333" cy="207.01375245579567" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="696.6666666666666" cy="187.73084479371317" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="790.0" cy="170.49115913555988" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="883.3333333333334" cy="163.8506876227898" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="976.6666666666666" cy="159.12573673870332" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="1070.0" cy="155.42239685658149" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<circle cx="1163.3333333333335" cy="152.3575638506876" r="5" fill="white" stroke="#e58a32" stroke-width="3"/>
+<text x="1210" y="127" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" fill="#e58a32" text-anchor="end" font-weight="700">前12族覆盖 88.49%</text>
+<text x="90" y="625" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" fill="#356ae6" text-anchor="start" font-weight="700">蓝柱：族内样本数</text>
+<text x="310" y="625" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" fill="#e58a32" text-anchor="start" font-weight="700">橙线：累计占 3,563 个回放座位的比例</text>
+</svg>

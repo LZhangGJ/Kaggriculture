@@ -1,0 +1,3583 @@
+{
+  "schema_version": 1,
+  "taxonomy": "base library plus raw Replay oracle; offline only",
+  "carrier_role": "movement and maintenance skeleton only; intent specs are authoritative",
+  "opponent_routes": [
+    {
+      "family": "G001",
+      "alias": "麦48胡萝卜12-牛11羊4-3地-早畜",
+      "route_id": "97363665:0",
+      "team": "ActiveMusyoku",
+      "support": 905,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G002",
+      "alias": "麦44草莓14-牛10羊4-3地-早畜",
+      "route_id": "93835267:0",
+      "team": "boatlee",
+      "support": 884,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G003",
+      "alias": "麦41草莓19-牛10羊4-3地-早畜",
+      "route_id": "93850203:1",
+      "team": "SCLim2022080004",
+      "support": 423,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G004",
+      "alias": "麦49草莓24-羊12牛6-4地-早畜",
+      "route_id": "93826363:1",
+      "team": "SCLim2022080004",
+      "support": 188,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G005",
+      "alias": "麦43草莓33-羊12牛6-4地-早畜",
+      "route_id": "93936458:1",
+      "team": "HKmgikao",
+      "support": 167,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G006",
+      "alias": "麦42胡萝卜12-羊10牛6-3地-早畜",
+      "route_id": "97792508:1",
+      "team": "ActiveMusyoku",
+      "support": 158,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G007",
+      "alias": "麦57草莓5-牛9羊4-3地-早畜",
+      "route_id": "93830880:1",
+      "team": "ReCurSiON",
+      "support": 151,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G008",
+      "alias": "麦43胡萝卜12-羊10牛6-3地-早畜",
+      "route_id": "97420634:0",
+      "team": "ActiveMusyoku",
+      "support": 135,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G009",
+      "alias": "麦36草莓22-牛10羊4-3地-早畜",
+      "route_id": "93864307:1",
+      "team": "Efe Can Celiksoy",
+      "support": 52,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G010",
+      "alias": "胡萝卜31麦16-牛10羊4-3地-早畜",
+      "route_id": "94114974:0",
+      "team": "Thomas Tschinkel",
+      "support": 37,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G011",
+      "alias": "麦55草莓3-牛6羊6-3地-早畜",
+      "route_id": "97799394:1",
+      "team": "fufufukakaka",
+      "support": 29,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G012",
+      "alias": "麦47草莓11-牛12羊3-3地-早畜",
+      "route_id": "97605511:1",
+      "team": "fufufukakaka",
+      "support": 24,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G013",
+      "alias": "麦55草莓8-牛8羊3-3地-早畜",
+      "route_id": "98105111:1",
+      "team": "theredbluepill",
+      "support": 17,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G014",
+      "alias": "麦46草莓12-牛6羊5-3地-早畜",
+      "route_id": "93919750:1",
+      "team": "tetsuya",
+      "support": 14,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G015",
+      "alias": "麦47草莓11-羊10牛4-3地-早畜",
+      "route_id": "93921512:0",
+      "team": "tetsuya",
+      "support": 12,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G016",
+      "alias": "麦46草莓12-牛6羊6-3地-早畜",
+      "route_id": "98264830:1",
+      "team": "fufufukakaka",
+      "support": 10,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G017",
+      "alias": "麦51草莓9-牛6鹅3-3地-早畜",
+      "route_id": "97988708:1",
+      "team": "theredbluepill",
+      "support": 8,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G018",
+      "alias": "麦52番茄3-牛11羊4-3地-早畜",
+      "route_id": "93920628:0",
+      "team": "tetsuya",
+      "support": 8,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G019",
+      "alias": "麦42草莓16-牛12羊3-3地-早畜",
+      "route_id": "93914423:0",
+      "team": "tetsuya",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G020",
+      "alias": "麦49草莓15-牛7羊4-3地-早畜",
+      "route_id": "98139342:0",
+      "team": "Arman Tuganbaev",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G021",
+      "alias": "麦51草莓7-羊10牛5-3地-早畜",
+      "route_id": "93917082:1",
+      "team": "tetsuya",
+      "support": 6,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G022",
+      "alias": "麦43草莓14-牛12羊3-3地-早畜",
+      "route_id": "98369766:0",
+      "team": "tetsuya",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G023",
+      "alias": "麦52草莓9-牛8鹅2-3地-早畜",
+      "route_id": "98071018:1",
+      "team": "theredbluepill",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G024",
+      "alias": "麦55草莓2-牛6羊6-3地-早畜",
+      "route_id": "93925937:1",
+      "team": "tetsuya",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G025",
+      "alias": "麦45草莓11-牛12羊2-3地-早畜",
+      "route_id": "97245055:1",
+      "team": "Ryo Hasegawa",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G026",
+      "alias": "麦45草莓17-牛10羊3-3地-早畜",
+      "route_id": "98237308:1",
+      "team": "srijan k.r keshri",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G027",
+      "alias": "麦37草莓22-牛14羊2-3地-早畜",
+      "route_id": "97569024:1",
+      "team": "Ryo Hasegawa",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G028",
+      "alias": "麦39草莓18-羊10牛4-3地-早畜",
+      "route_id": "93925067:1",
+      "team": "tetsuya",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G029",
+      "alias": "麦49番茄12-牛7羊4-3地-早畜",
+      "route_id": "98239631:0",
+      "team": "Arman Tuganbaev",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G030",
+      "alias": "麦40草莓18-羊10牛5-3地-早畜",
+      "route_id": "94141444:0",
+      "team": "tetsuya",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G031",
+      "alias": "麦47草莓12-羊9牛6-3地-早畜",
+      "route_id": "98136961:0",
+      "team": "theredbluepill",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G034",
+      "alias": "麦60草莓6-牛6羊2-3地-早畜",
+      "route_id": "97151460:1",
+      "team": "Ryo Hasegawa",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G036",
+      "alias": "麦50草莓7-牛9羊9-3地-早畜",
+      "route_id": "97329369:1",
+      "team": "ActiveMusyoku",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G038",
+      "alias": "麦46草莓8-牛12羊9-3地-早畜",
+      "route_id": "97468615:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G039",
+      "alias": "麦29草莓20-牛15-3地-早畜",
+      "route_id": "97566713:1",
+      "team": "XW",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G040",
+      "alias": "麦45草莓14-牛14羊2-3地-早畜",
+      "route_id": "97386448:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G041",
+      "alias": "麦48草莓10-牛6羊6-3地-早畜",
+      "route_id": "98317152:0",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G042",
+      "alias": "麦42草莓12-牛13羊2-3地-早畜",
+      "route_id": "97518737:1",
+      "team": "Subramanya N",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G043",
+      "alias": "麦42草莓16-牛8羊6-3地-早畜",
+      "route_id": "97213078:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G044",
+      "alias": "麦50胡萝卜6-羊9牛6-3地-早畜",
+      "route_id": "97317972:0",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G049",
+      "alias": "麦39草莓11-羊9牛8-3地-早畜",
+      "route_id": "97915670:0",
+      "team": "theredbluepill",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G050",
+      "alias": "草莓27胡萝卜25-牛6羊2-3地-早畜",
+      "route_id": "97600960:1",
+      "team": "XW",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G051",
+      "alias": "麦47草莓13-牛7羊3-3地-早畜",
+      "route_id": "97831434:0",
+      "team": "srijan k.r keshri",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G052",
+      "alias": "麦50草莓7-羊10牛5-3地-早畜",
+      "route_id": "93934802:0",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G053",
+      "alias": "草莓43麦31-牛12羊4-4地-早畜",
+      "route_id": "94162346:1",
+      "team": "Seb (allegedly)",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G054",
+      "alias": "麦48草莓9-羊10牛6-3地-早畜",
+      "route_id": "98052525:1",
+      "team": "theredbluepill",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G055",
+      "alias": "胡萝卜44草莓13-羊8牛6-3地-早畜",
+      "route_id": "97819960:1",
+      "team": "Xiaowenhao404",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G056",
+      "alias": "麦51草莓7-羊8牛7-3地-早畜",
+      "route_id": "98303401:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G057",
+      "alias": "麦62-牛10羊3-3地-早畜",
+      "route_id": "98210024:1",
+      "team": "srijan k.r keshri",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G058",
+      "alias": "麦47草莓11-牛10羊5-3地-早畜",
+      "route_id": "93962102:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G059",
+      "alias": "胡萝卜44草莓11-羊10牛4-3地-早畜",
+      "route_id": "93947041:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G060",
+      "alias": "麦51草莓9-羊8牛7-3地-早畜",
+      "route_id": "97751661:0",
+      "team": "Arman Tuganbaev",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G061",
+      "alias": "麦46草莓12-牛8羊6-3地-早畜",
+      "route_id": "98294262:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G065",
+      "alias": "麦23番茄18-牛13羊13-3地-早畜",
+      "route_id": "98223674:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G066",
+      "alias": "草莓26麦22-羊17牛8-3地-早畜",
+      "route_id": "97486833:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G067",
+      "alias": "麦27番茄24-牛11羊3-3地-早畜",
+      "route_id": "97804175:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G068",
+      "alias": "麦34草莓25-牛13羊3-3地-早畜",
+      "route_id": "94209901:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G069",
+      "alias": "胡萝卜26麦21-羊17牛3-3地-早畜",
+      "route_id": "97774529:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G071",
+      "alias": "麦37草莓16-羊12牛10-3地-早畜",
+      "route_id": "97899943:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G077",
+      "alias": "草莓21番茄15-羊15牛3-3地-早畜",
+      "route_id": "97735614:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G078",
+      "alias": "麦45草莓13-牛12羊3-3地-早畜",
+      "route_id": "94113312:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G079",
+      "alias": "麦24草莓20-羊17牛8-3地-早畜",
+      "route_id": "97422926:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G081",
+      "alias": "麦37草莓13-牛16羊2-3地-早畜",
+      "route_id": "97747114:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G083",
+      "alias": "麦40草莓18-牛10羊3-3地-早畜",
+      "route_id": "98109760:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G084",
+      "alias": "麦48草莓6-羊17牛3-3地-早畜",
+      "route_id": "97744783:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G086",
+      "alias": "麦47草莓8-羊12牛7-3地-早畜",
+      "route_id": "97749375:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G089",
+      "alias": "麦41草莓11-羊12牛7-3地-早畜",
+      "route_id": "98419965:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G090",
+      "alias": "麦46草莓8-羊13牛7-3地-早畜",
+      "route_id": "98419962:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G092",
+      "alias": "麦44草莓8-牛12羊3-3地-早畜",
+      "route_id": "93926840:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G093",
+      "alias": "麦39草莓9-牛13羊2-3地-早畜",
+      "route_id": "97151458:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G094",
+      "alias": "麦28草莓16-羊10牛9-3地-早畜",
+      "route_id": "97753942:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G095",
+      "alias": "麦49草莓13-羊8牛5-3地-早畜",
+      "route_id": "98403998:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G096",
+      "alias": "胡萝卜34麦13-羊11牛7-3地-早畜",
+      "route_id": "98000264:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G097",
+      "alias": "草莓20麦17-羊11牛6-3地-早畜",
+      "route_id": "98080005:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G098",
+      "alias": "麦29草莓18-羊18牛4-3地-早畜",
+      "route_id": "97352283:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G099",
+      "alias": "麦34草莓12-羊15牛9-3地-早畜",
+      "route_id": "97811030:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G100",
+      "alias": "麦30番茄14-牛11羊8-3地-早畜",
+      "route_id": "97975206:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G102",
+      "alias": "麦43草莓15-牛6羊5-3地-早畜",
+      "route_id": "98324017:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G103",
+      "alias": "麦39草莓25-牛5羊3-3地-早畜",
+      "route_id": "98043594:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G105",
+      "alias": "麦26胡萝卜19-羊16牛1-3地-早畜",
+      "route_id": "97881756:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G106",
+      "alias": "麦40胡萝卜8-羊14牛10-3地-早畜",
+      "route_id": "97986419:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G109",
+      "alias": "麦44草莓9-羊13牛6-3地-早畜",
+      "route_id": "97731030:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G113",
+      "alias": "麦24草莓19-牛10羊6-3地-早畜",
+      "route_id": "98419964:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G114",
+      "alias": "麦37草莓25-牛6羊6-3地-早畜",
+      "route_id": "98353834:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G115",
+      "alias": "麦33草莓22-羊12牛8-3地-早畜",
+      "route_id": "97660328:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G116",
+      "alias": "麦47番茄6-羊12牛10-3地-早畜",
+      "route_id": "97931685:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G118",
+      "alias": "麦44胡萝卜12-羊12牛7-3地-早畜",
+      "route_id": "98358337:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G120",
+      "alias": "麦42草莓6-羊18牛6-3地-早畜",
+      "route_id": "98237418:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G125",
+      "alias": "麦30番茄18-牛9鹅4-3地-早畜",
+      "route_id": "98237425:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G126",
+      "alias": "麦31草莓15-牛10羊5-3地-早畜",
+      "route_id": "98045895:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G129",
+      "alias": "胡萝卜39麦10-羊9牛7-3地-早畜",
+      "route_id": "97858947:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G130",
+      "alias": "麦41草莓15-羊11牛7-3地-早畜",
+      "route_id": "98335443:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G131",
+      "alias": "胡萝卜23麦22-羊12牛7-3地-早畜",
+      "route_id": "97737902:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G133",
+      "alias": "麦42草莓13-牛10羊2-3地-早畜",
+      "route_id": "97619249:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G136",
+      "alias": "麦39胡萝卜16-羊9牛7-3地-早畜",
+      "route_id": "97078515:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G137",
+      "alias": "麦46番茄8-牛11羊2-3地-早畜",
+      "route_id": "97352285:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G138",
+      "alias": "麦33草莓25-羊11牛5-3地-早畜",
+      "route_id": "94204592:0",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G140",
+      "alias": "胡萝卜40草莓21-牛9羊3-3地-早畜",
+      "route_id": "97911317:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G141",
+      "alias": "麦34草莓18-牛11羊7-3地-早畜",
+      "route_id": "98141707:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G143",
+      "alias": "麦30草莓23-羊12牛10-3地-早畜",
+      "route_id": "97788189:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G144",
+      "alias": "麦54草莓13-羊14牛5-4地-早畜",
+      "route_id": "98358317:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G148",
+      "alias": "胡萝卜42草莓22-牛9羊2-3地-早畜",
+      "route_id": "97742484:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G152",
+      "alias": "麦35番茄22-牛9羊3-3地-早畜",
+      "route_id": "94224064:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G155",
+      "alias": "麦42草莓15-羊11牛5-3地-早畜",
+      "route_id": "98353736:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G158",
+      "alias": "麦41草莓17-羊12牛5-3地-早畜",
+      "route_id": "97621427:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G159",
+      "alias": "胡萝卜29番茄20-羊10牛3-3地-早畜",
+      "route_id": "94228399:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G162",
+      "alias": "麦46胡萝卜12-羊12牛5-3地-早畜",
+      "route_id": "98002377:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G164",
+      "alias": "麦50草莓8-牛12羊5-3地-早畜",
+      "route_id": "97281485:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G165",
+      "alias": "胡萝卜37番茄15-牛9鹅2-3地-早畜",
+      "route_id": "97740187:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G166",
+      "alias": "麦29草莓24-羊12牛10-3地-早畜",
+      "route_id": "98002498:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G169",
+      "alias": "麦48番茄12-牛11羊4-3地-早畜",
+      "route_id": "98294500:1",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G171",
+      "alias": "胡萝卜26麦23-牛9羊4-3地-早畜",
+      "route_id": "97927289:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G172",
+      "alias": "胡萝卜40麦22-鹅6牛4-3地-早畜",
+      "route_id": "94218703:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G174",
+      "alias": "麦53草莓2-羊12牛7-3地-早畜",
+      "route_id": "97751661:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G175",
+      "alias": "麦41胡萝卜16-羊12牛6-3地-早畜",
+      "route_id": "98157661:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G178",
+      "alias": "麦53番茄9-牛10羊3-3地-早畜",
+      "route_id": "97886266:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G179",
+      "alias": "麦40胡萝卜16-牛8羊2-3地-早畜",
+      "route_id": "97468613:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G180",
+      "alias": "麦51草莓5-羊12牛7-3地-早畜",
+      "route_id": "98091505:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G181",
+      "alias": "麦45胡萝卜11-羊12牛7-3地-早畜",
+      "route_id": "97833724:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G185",
+      "alias": "麦56草莓2-羊9牛6-3地-早畜",
+      "route_id": "93918864:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G186",
+      "alias": "胡萝卜44草莓11-牛9-3地-早畜",
+      "route_id": "98333119:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G187",
+      "alias": "麦26草莓18-牛4羊4-3地-早畜",
+      "route_id": "97897725:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G189",
+      "alias": "麦19胡萝卜19-鹅4牛4-3地-早畜",
+      "route_id": "97833838:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G190",
+      "alias": "胡萝卜46麦7-牛7羊6-3地-早畜",
+      "route_id": "98319442:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G191",
+      "alias": "麦44番茄13-牛6羊4-3地-早畜",
+      "route_id": "97728739:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G192",
+      "alias": "胡萝卜37草莓15-牛9羊5-3地-早畜",
+      "route_id": "98353840:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G193",
+      "alias": "胡萝卜41麦16-牛9羊2-3地-早畜",
+      "route_id": "98125630:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G194",
+      "alias": "麦53草莓4-牛7羊6-3地-早畜",
+      "route_id": "98310265:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G195",
+      "alias": "胡萝卜32草莓12-羊13牛5-3地-早畜",
+      "route_id": "98292226:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G196",
+      "alias": "麦51草莓9-羊10牛5-3地-早畜",
+      "route_id": "94209924:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G197",
+      "alias": "胡萝卜40麦14-牛9羊4-3地-早畜",
+      "route_id": "97726450:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G200",
+      "alias": "麦54草莓9-牛10羊2-3地-早畜",
+      "route_id": "97817863:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G201",
+      "alias": "麦53草莓7-牛10羊5-3地-早畜",
+      "route_id": "96982840:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G203",
+      "alias": "麦49胡萝卜10-牛10羊3-3地-早畜",
+      "route_id": "98109773:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G205",
+      "alias": "胡萝卜44麦13-牛9鹅4-3地-早畜",
+      "route_id": "98091511:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G206",
+      "alias": "胡萝卜42草莓19-牛4羊3-3地-早畜",
+      "route_id": "94225869:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G207",
+      "alias": "麦38草莓12-牛8羊6-3地-早畜",
+      "route_id": "97678542:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G210",
+      "alias": "麦38草莓19-牛9羊2-3地-早畜",
+      "route_id": "98404010:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G213",
+      "alias": "麦28胡萝卜14-羊12牛7-3地-早畜",
+      "route_id": "98349182:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G221",
+      "alias": "胡萝卜27麦19-羊9牛6-3地-早畜",
+      "route_id": "97747119:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G222",
+      "alias": "麦49番茄7-羊12牛7-3地-早畜",
+      "route_id": "97954633:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G223",
+      "alias": "麦47草莓10-牛11羊3-3地-早畜",
+      "route_id": "94100037:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G226",
+      "alias": "番茄28麦16-牛9羊2-3地-早畜",
+      "route_id": "97954631:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G227",
+      "alias": "麦40番茄12-羊10牛8-3地-早畜",
+      "route_id": "97616951:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G228",
+      "alias": "胡萝卜37麦17-羊13牛7-3地-早畜",
+      "route_id": "98159907:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G229",
+      "alias": "胡萝卜54草莓5-羊7牛6-3地-早畜",
+      "route_id": "97683145:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G230",
+      "alias": "麦23草莓21-牛9羊2-3地-早畜",
+      "route_id": "97945602:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G231",
+      "alias": "麦29番茄17-羊7牛4-3地-早畜",
+      "route_id": "94221291:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G233",
+      "alias": "麦48草莓11-牛7羊3-3地-早畜",
+      "route_id": "97552729:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G236",
+      "alias": "麦36胡萝卜26-羊7牛4-3地-早畜",
+      "route_id": "97822218:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G238",
+      "alias": "麦36草莓14-牛9羊2-3地-早畜",
+      "route_id": "98029864:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G239",
+      "alias": "麦31番茄16-牛9-3地-早畜",
+      "route_id": "98162040:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G241",
+      "alias": "麦48草莓8-羊9牛6-3地-早畜",
+      "route_id": "98157508:0",
+      "team": "theredbluepill",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G242",
+      "alias": "胡萝卜43草莓9-牛6羊2-3地-早畜",
+      "route_id": "98273929:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G243",
+      "alias": "麦41胡萝卜10-羊11牛7-3地-早畜",
+      "route_id": "97726572:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G244",
+      "alias": "麦54胡萝卜10-牛8羊3-3地-早畜",
+      "route_id": "97883812:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G245",
+      "alias": "麦46草莓11-羊9牛6-3地-早畜",
+      "route_id": "97854411:0",
+      "team": "theredbluepill",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G246",
+      "alias": "胡萝卜27麦21-牛12羊2-3地-早畜",
+      "route_id": "97436626:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G247",
+      "alias": "麦47草莓11-牛6羊5-3地-早畜",
+      "route_id": "98305677:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G248",
+      "alias": "麦39草莓10-羊8鹅6-3地-早畜",
+      "route_id": "98230596:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G249",
+      "alias": "麦44胡萝卜10-羊12牛9-3地-早畜",
+      "route_id": "97546172:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G250",
+      "alias": "胡萝卜37麦11-羊9牛4-3地-早畜",
+      "route_id": "97879425:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G252",
+      "alias": "麦57草莓6-牛6鹅3-3地-早畜",
+      "route_id": "94222337:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G254",
+      "alias": "麦34草莓25-牛8羊6-3地-早畜",
+      "route_id": "94200310:1",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G256",
+      "alias": "麦42胡萝卜17-牛6羊2-3地-早畜",
+      "route_id": "97628285:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G257",
+      "alias": "胡萝卜42草莓12-牛6羊6-3地-早畜",
+      "route_id": "94020937:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G258",
+      "alias": "胡萝卜36番茄15-羊10牛9-3地-早畜",
+      "route_id": "98141691:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G259",
+      "alias": "麦53胡萝卜10-牛7羊3-3地-早畜",
+      "route_id": "98216699:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G264",
+      "alias": "麦42胡萝卜10-羊12牛7-3地-早畜",
+      "route_id": "98317086:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G265",
+      "alias": "麦36胡萝卜17-牛6羊3-3地-早畜",
+      "route_id": "98287592:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G266",
+      "alias": "胡萝卜36麦9-牛7羊7-3地-早畜",
+      "route_id": "97386449:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G267",
+      "alias": "麦33草莓20-羊15牛5-3地-早畜",
+      "route_id": "94208931:1",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G268",
+      "alias": "胡萝卜61麦4-牛6羊2-3地-早畜",
+      "route_id": "97959026:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G269",
+      "alias": "麦40胡萝卜24-牛7羊4-3地-早畜",
+      "route_id": "98143893:1",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G275",
+      "alias": "麦38草莓13-牛9羊3-3地-早畜",
+      "route_id": "97566529:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "R1L_COW_97710447",
+      "alias": "Rank1 latest 55714246 cow mixed wheat raw oracle",
+      "route_id": "97710447:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    },
+    {
+      "family": "R1N_LATEST_99954642",
+      "alias": "Rank1 latest 55714246 newest episode 99954642",
+      "route_id": "99954642:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    },
+    {
+      "family": "HASE_OPP_99954642",
+      "alias": "Ryo Hasegawa opponent from episode 99954642",
+      "route_id": "99954642:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    }
+  ],
+  "selected": [
+    {
+      "family": "G001",
+      "alias": "麦48胡萝卜12-牛11羊4-3地-早畜",
+      "route_id": "97363665:0",
+      "team": "ActiveMusyoku",
+      "support": 905,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G002",
+      "alias": "麦44草莓14-牛10羊4-3地-早畜",
+      "route_id": "93835267:0",
+      "team": "boatlee",
+      "support": 884,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G003",
+      "alias": "麦41草莓19-牛10羊4-3地-早畜",
+      "route_id": "93850203:1",
+      "team": "SCLim2022080004",
+      "support": 423,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G004",
+      "alias": "麦49草莓24-羊12牛6-4地-早畜",
+      "route_id": "93826363:1",
+      "team": "SCLim2022080004",
+      "support": 188,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G005",
+      "alias": "麦43草莓33-羊12牛6-4地-早畜",
+      "route_id": "93936458:1",
+      "team": "HKmgikao",
+      "support": 167,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G006",
+      "alias": "麦42胡萝卜12-羊10牛6-3地-早畜",
+      "route_id": "97792508:1",
+      "team": "ActiveMusyoku",
+      "support": 158,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G007",
+      "alias": "麦57草莓5-牛9羊4-3地-早畜",
+      "route_id": "93830880:1",
+      "team": "ReCurSiON",
+      "support": 151,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G008",
+      "alias": "麦43胡萝卜12-羊10牛6-3地-早畜",
+      "route_id": "97420634:0",
+      "team": "ActiveMusyoku",
+      "support": 135,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G009",
+      "alias": "麦36草莓22-牛10羊4-3地-早畜",
+      "route_id": "93864307:1",
+      "team": "Efe Can Celiksoy",
+      "support": 52,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G010",
+      "alias": "胡萝卜31麦16-牛10羊4-3地-早畜",
+      "route_id": "94114974:0",
+      "team": "Thomas Tschinkel",
+      "support": 37,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G011",
+      "alias": "麦55草莓3-牛6羊6-3地-早畜",
+      "route_id": "97799394:1",
+      "team": "fufufukakaka",
+      "support": 29,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G012",
+      "alias": "麦47草莓11-牛12羊3-3地-早畜",
+      "route_id": "97605511:1",
+      "team": "fufufukakaka",
+      "support": 24,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G013",
+      "alias": "麦55草莓8-牛8羊3-3地-早畜",
+      "route_id": "98105111:1",
+      "team": "theredbluepill",
+      "support": 17,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G014",
+      "alias": "麦46草莓12-牛6羊5-3地-早畜",
+      "route_id": "93919750:1",
+      "team": "tetsuya",
+      "support": 14,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G015",
+      "alias": "麦47草莓11-羊10牛4-3地-早畜",
+      "route_id": "93921512:0",
+      "team": "tetsuya",
+      "support": 12,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G016",
+      "alias": "麦46草莓12-牛6羊6-3地-早畜",
+      "route_id": "98264830:1",
+      "team": "fufufukakaka",
+      "support": 10,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G017",
+      "alias": "麦51草莓9-牛6鹅3-3地-早畜",
+      "route_id": "97988708:1",
+      "team": "theredbluepill",
+      "support": 8,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G018",
+      "alias": "麦52番茄3-牛11羊4-3地-早畜",
+      "route_id": "93920628:0",
+      "team": "tetsuya",
+      "support": 8,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G019",
+      "alias": "麦42草莓16-牛12羊3-3地-早畜",
+      "route_id": "93914423:0",
+      "team": "tetsuya",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G020",
+      "alias": "麦49草莓15-牛7羊4-3地-早畜",
+      "route_id": "98139342:0",
+      "team": "Arman Tuganbaev",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G021",
+      "alias": "麦51草莓7-羊10牛5-3地-早畜",
+      "route_id": "93917082:1",
+      "team": "tetsuya",
+      "support": 6,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G022",
+      "alias": "麦43草莓14-牛12羊3-3地-早畜",
+      "route_id": "98369766:0",
+      "team": "tetsuya",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G023",
+      "alias": "麦52草莓9-牛8鹅2-3地-早畜",
+      "route_id": "98071018:1",
+      "team": "theredbluepill",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G024",
+      "alias": "麦55草莓2-牛6羊6-3地-早畜",
+      "route_id": "93925937:1",
+      "team": "tetsuya",
+      "support": 5,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G025",
+      "alias": "麦45草莓11-牛12羊2-3地-早畜",
+      "route_id": "97245055:1",
+      "team": "Ryo Hasegawa",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G026",
+      "alias": "麦45草莓17-牛10羊3-3地-早畜",
+      "route_id": "98237308:1",
+      "team": "srijan k.r keshri",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G027",
+      "alias": "麦37草莓22-牛14羊2-3地-早畜",
+      "route_id": "97569024:1",
+      "team": "Ryo Hasegawa",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G028",
+      "alias": "麦39草莓18-羊10牛4-3地-早畜",
+      "route_id": "93925067:1",
+      "team": "tetsuya",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G029",
+      "alias": "麦49番茄12-牛7羊4-3地-早畜",
+      "route_id": "98239631:0",
+      "team": "Arman Tuganbaev",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G030",
+      "alias": "麦40草莓18-羊10牛5-3地-早畜",
+      "route_id": "94141444:0",
+      "team": "tetsuya",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G031",
+      "alias": "麦47草莓12-羊9牛6-3地-早畜",
+      "route_id": "98136961:0",
+      "team": "theredbluepill",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G034",
+      "alias": "麦60草莓6-牛6羊2-3地-早畜",
+      "route_id": "97151460:1",
+      "team": "Ryo Hasegawa",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G036",
+      "alias": "麦50草莓7-牛9羊9-3地-早畜",
+      "route_id": "97329369:1",
+      "team": "ActiveMusyoku",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G038",
+      "alias": "麦46草莓8-牛12羊9-3地-早畜",
+      "route_id": "97468615:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G039",
+      "alias": "麦29草莓20-牛15-3地-早畜",
+      "route_id": "97566713:1",
+      "team": "XW",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G040",
+      "alias": "麦45草莓14-牛14羊2-3地-早畜",
+      "route_id": "97386448:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G041",
+      "alias": "麦48草莓10-牛6羊6-3地-早畜",
+      "route_id": "98317152:0",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G042",
+      "alias": "麦42草莓12-牛13羊2-3地-早畜",
+      "route_id": "97518737:1",
+      "team": "Subramanya N",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G043",
+      "alias": "麦42草莓16-牛8羊6-3地-早畜",
+      "route_id": "97213078:1",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G044",
+      "alias": "麦50胡萝卜6-羊9牛6-3地-早畜",
+      "route_id": "97317972:0",
+      "team": "Ryo Hasegawa",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G049",
+      "alias": "麦39草莓11-羊9牛8-3地-早畜",
+      "route_id": "97915670:0",
+      "team": "theredbluepill",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G050",
+      "alias": "草莓27胡萝卜25-牛6羊2-3地-早畜",
+      "route_id": "97600960:1",
+      "team": "XW",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G051",
+      "alias": "麦47草莓13-牛7羊3-3地-早畜",
+      "route_id": "97831434:0",
+      "team": "srijan k.r keshri",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G052",
+      "alias": "麦50草莓7-羊10牛5-3地-早畜",
+      "route_id": "93934802:0",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G053",
+      "alias": "草莓43麦31-牛12羊4-4地-早畜",
+      "route_id": "94162346:1",
+      "team": "Seb (allegedly)",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G054",
+      "alias": "麦48草莓9-羊10牛6-3地-早畜",
+      "route_id": "98052525:1",
+      "team": "theredbluepill",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G055",
+      "alias": "胡萝卜44草莓13-羊8牛6-3地-早畜",
+      "route_id": "97819960:1",
+      "team": "Xiaowenhao404",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G056",
+      "alias": "麦51草莓7-羊8牛7-3地-早畜",
+      "route_id": "98303401:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G057",
+      "alias": "麦62-牛10羊3-3地-早畜",
+      "route_id": "98210024:1",
+      "team": "srijan k.r keshri",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G058",
+      "alias": "麦47草莓11-牛10羊5-3地-早畜",
+      "route_id": "93962102:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G059",
+      "alias": "胡萝卜44草莓11-羊10牛4-3地-早畜",
+      "route_id": "93947041:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G060",
+      "alias": "麦51草莓9-羊8牛7-3地-早畜",
+      "route_id": "97751661:0",
+      "team": "Arman Tuganbaev",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G061",
+      "alias": "麦46草莓12-牛8羊6-3地-早畜",
+      "route_id": "98294262:1",
+      "team": "tetsuya",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G065",
+      "alias": "麦23番茄18-牛13羊13-3地-早畜",
+      "route_id": "98223674:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G066",
+      "alias": "草莓26麦22-羊17牛8-3地-早畜",
+      "route_id": "97486833:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G067",
+      "alias": "麦27番茄24-牛11羊3-3地-早畜",
+      "route_id": "97804175:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G068",
+      "alias": "麦34草莓25-牛13羊3-3地-早畜",
+      "route_id": "94209901:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G069",
+      "alias": "胡萝卜26麦21-羊17牛3-3地-早畜",
+      "route_id": "97774529:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G071",
+      "alias": "麦37草莓16-羊12牛10-3地-早畜",
+      "route_id": "97899943:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G077",
+      "alias": "草莓21番茄15-羊15牛3-3地-早畜",
+      "route_id": "97735614:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G078",
+      "alias": "麦45草莓13-牛12羊3-3地-早畜",
+      "route_id": "94113312:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G079",
+      "alias": "麦24草莓20-羊17牛8-3地-早畜",
+      "route_id": "97422926:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G081",
+      "alias": "麦37草莓13-牛16羊2-3地-早畜",
+      "route_id": "97747114:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G083",
+      "alias": "麦40草莓18-牛10羊3-3地-早畜",
+      "route_id": "98109760:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G084",
+      "alias": "麦48草莓6-羊17牛3-3地-早畜",
+      "route_id": "97744783:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G086",
+      "alias": "麦47草莓8-羊12牛7-3地-早畜",
+      "route_id": "97749375:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G089",
+      "alias": "麦41草莓11-羊12牛7-3地-早畜",
+      "route_id": "98419965:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G090",
+      "alias": "麦46草莓8-羊13牛7-3地-早畜",
+      "route_id": "98419962:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G092",
+      "alias": "麦44草莓8-牛12羊3-3地-早畜",
+      "route_id": "93926840:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G093",
+      "alias": "麦39草莓9-牛13羊2-3地-早畜",
+      "route_id": "97151458:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G094",
+      "alias": "麦28草莓16-羊10牛9-3地-早畜",
+      "route_id": "97753942:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G095",
+      "alias": "麦49草莓13-羊8牛5-3地-早畜",
+      "route_id": "98403998:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G096",
+      "alias": "胡萝卜34麦13-羊11牛7-3地-早畜",
+      "route_id": "98000264:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G097",
+      "alias": "草莓20麦17-羊11牛6-3地-早畜",
+      "route_id": "98080005:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G098",
+      "alias": "麦29草莓18-羊18牛4-3地-早畜",
+      "route_id": "97352283:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G099",
+      "alias": "麦34草莓12-羊15牛9-3地-早畜",
+      "route_id": "97811030:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G100",
+      "alias": "麦30番茄14-牛11羊8-3地-早畜",
+      "route_id": "97975206:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G102",
+      "alias": "麦43草莓15-牛6羊5-3地-早畜",
+      "route_id": "98324017:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G103",
+      "alias": "麦39草莓25-牛5羊3-3地-早畜",
+      "route_id": "98043594:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G105",
+      "alias": "麦26胡萝卜19-羊16牛1-3地-早畜",
+      "route_id": "97881756:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G106",
+      "alias": "麦40胡萝卜8-羊14牛10-3地-早畜",
+      "route_id": "97986419:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G109",
+      "alias": "麦44草莓9-羊13牛6-3地-早畜",
+      "route_id": "97731030:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G113",
+      "alias": "麦24草莓19-牛10羊6-3地-早畜",
+      "route_id": "98419964:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G114",
+      "alias": "麦37草莓25-牛6羊6-3地-早畜",
+      "route_id": "98353834:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G115",
+      "alias": "麦33草莓22-羊12牛8-3地-早畜",
+      "route_id": "97660328:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G116",
+      "alias": "麦47番茄6-羊12牛10-3地-早畜",
+      "route_id": "97931685:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G118",
+      "alias": "麦44胡萝卜12-羊12牛7-3地-早畜",
+      "route_id": "98358337:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G120",
+      "alias": "麦42草莓6-羊18牛6-3地-早畜",
+      "route_id": "98237418:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G125",
+      "alias": "麦30番茄18-牛9鹅4-3地-早畜",
+      "route_id": "98237425:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G126",
+      "alias": "麦31草莓15-牛10羊5-3地-早畜",
+      "route_id": "98045895:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G129",
+      "alias": "胡萝卜39麦10-羊9牛7-3地-早畜",
+      "route_id": "97858947:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G130",
+      "alias": "麦41草莓15-羊11牛7-3地-早畜",
+      "route_id": "98335443:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G131",
+      "alias": "胡萝卜23麦22-羊12牛7-3地-早畜",
+      "route_id": "97737902:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G133",
+      "alias": "麦42草莓13-牛10羊2-3地-早畜",
+      "route_id": "97619249:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G136",
+      "alias": "麦39胡萝卜16-羊9牛7-3地-早畜",
+      "route_id": "97078515:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G137",
+      "alias": "麦46番茄8-牛11羊2-3地-早畜",
+      "route_id": "97352285:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G138",
+      "alias": "麦33草莓25-羊11牛5-3地-早畜",
+      "route_id": "94204592:0",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G140",
+      "alias": "胡萝卜40草莓21-牛9羊3-3地-早畜",
+      "route_id": "97911317:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G141",
+      "alias": "麦34草莓18-牛11羊7-3地-早畜",
+      "route_id": "98141707:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G143",
+      "alias": "麦30草莓23-羊12牛10-3地-早畜",
+      "route_id": "97788189:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G144",
+      "alias": "麦54草莓13-羊14牛5-4地-早畜",
+      "route_id": "98358317:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G148",
+      "alias": "胡萝卜42草莓22-牛9羊2-3地-早畜",
+      "route_id": "97742484:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G152",
+      "alias": "麦35番茄22-牛9羊3-3地-早畜",
+      "route_id": "94224064:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G155",
+      "alias": "麦42草莓15-羊11牛5-3地-早畜",
+      "route_id": "98353736:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G158",
+      "alias": "麦41草莓17-羊12牛5-3地-早畜",
+      "route_id": "97621427:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G159",
+      "alias": "胡萝卜29番茄20-羊10牛3-3地-早畜",
+      "route_id": "94228399:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G162",
+      "alias": "麦46胡萝卜12-羊12牛5-3地-早畜",
+      "route_id": "98002377:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G164",
+      "alias": "麦50草莓8-牛12羊5-3地-早畜",
+      "route_id": "97281485:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G165",
+      "alias": "胡萝卜37番茄15-牛9鹅2-3地-早畜",
+      "route_id": "97740187:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G166",
+      "alias": "麦29草莓24-羊12牛10-3地-早畜",
+      "route_id": "98002498:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G169",
+      "alias": "麦48番茄12-牛11羊4-3地-早畜",
+      "route_id": "98294500:1",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G171",
+      "alias": "胡萝卜26麦23-牛9羊4-3地-早畜",
+      "route_id": "97927289:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G172",
+      "alias": "胡萝卜40麦22-鹅6牛4-3地-早畜",
+      "route_id": "94218703:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G174",
+      "alias": "麦53草莓2-羊12牛7-3地-早畜",
+      "route_id": "97751661:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G175",
+      "alias": "麦41胡萝卜16-羊12牛6-3地-早畜",
+      "route_id": "98157661:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G178",
+      "alias": "麦53番茄9-牛10羊3-3地-早畜",
+      "route_id": "97886266:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G179",
+      "alias": "麦40胡萝卜16-牛8羊2-3地-早畜",
+      "route_id": "97468613:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G180",
+      "alias": "麦51草莓5-羊12牛7-3地-早畜",
+      "route_id": "98091505:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G181",
+      "alias": "麦45胡萝卜11-羊12牛7-3地-早畜",
+      "route_id": "97833724:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G185",
+      "alias": "麦56草莓2-羊9牛6-3地-早畜",
+      "route_id": "93918864:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G186",
+      "alias": "胡萝卜44草莓11-牛9-3地-早畜",
+      "route_id": "98333119:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G187",
+      "alias": "麦26草莓18-牛4羊4-3地-早畜",
+      "route_id": "97897725:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G189",
+      "alias": "麦19胡萝卜19-鹅4牛4-3地-早畜",
+      "route_id": "97833838:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G190",
+      "alias": "胡萝卜46麦7-牛7羊6-3地-早畜",
+      "route_id": "98319442:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G191",
+      "alias": "麦44番茄13-牛6羊4-3地-早畜",
+      "route_id": "97728739:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G192",
+      "alias": "胡萝卜37草莓15-牛9羊5-3地-早畜",
+      "route_id": "98353840:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G193",
+      "alias": "胡萝卜41麦16-牛9羊2-3地-早畜",
+      "route_id": "98125630:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G194",
+      "alias": "麦53草莓4-牛7羊6-3地-早畜",
+      "route_id": "98310265:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G195",
+      "alias": "胡萝卜32草莓12-羊13牛5-3地-早畜",
+      "route_id": "98292226:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G196",
+      "alias": "麦51草莓9-羊10牛5-3地-早畜",
+      "route_id": "94209924:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G197",
+      "alias": "胡萝卜40麦14-牛9羊4-3地-早畜",
+      "route_id": "97726450:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G200",
+      "alias": "麦54草莓9-牛10羊2-3地-早畜",
+      "route_id": "97817863:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G201",
+      "alias": "麦53草莓7-牛10羊5-3地-早畜",
+      "route_id": "96982840:1",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G203",
+      "alias": "麦49胡萝卜10-牛10羊3-3地-早畜",
+      "route_id": "98109773:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G205",
+      "alias": "胡萝卜44麦13-牛9鹅4-3地-早畜",
+      "route_id": "98091511:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G206",
+      "alias": "胡萝卜42草莓19-牛4羊3-3地-早畜",
+      "route_id": "94225869:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G207",
+      "alias": "麦38草莓12-牛8羊6-3地-早畜",
+      "route_id": "97678542:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G210",
+      "alias": "麦38草莓19-牛9羊2-3地-早畜",
+      "route_id": "98404010:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G213",
+      "alias": "麦28胡萝卜14-羊12牛7-3地-早畜",
+      "route_id": "98349182:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G221",
+      "alias": "胡萝卜27麦19-羊9牛6-3地-早畜",
+      "route_id": "97747119:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G222",
+      "alias": "麦49番茄7-羊12牛7-3地-早畜",
+      "route_id": "97954633:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G223",
+      "alias": "麦47草莓10-牛11羊3-3地-早畜",
+      "route_id": "94100037:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G226",
+      "alias": "番茄28麦16-牛9羊2-3地-早畜",
+      "route_id": "97954631:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G227",
+      "alias": "麦40番茄12-羊10牛8-3地-早畜",
+      "route_id": "97616951:0",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G228",
+      "alias": "胡萝卜37麦17-羊13牛7-3地-早畜",
+      "route_id": "98159907:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G229",
+      "alias": "胡萝卜54草莓5-羊7牛6-3地-早畜",
+      "route_id": "97683145:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G230",
+      "alias": "麦23草莓21-牛9羊2-3地-早畜",
+      "route_id": "97945602:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G231",
+      "alias": "麦29番茄17-羊7牛4-3地-早畜",
+      "route_id": "94221291:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G233",
+      "alias": "麦48草莓11-牛7羊3-3地-早畜",
+      "route_id": "97552729:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G236",
+      "alias": "麦36胡萝卜26-羊7牛4-3地-早畜",
+      "route_id": "97822218:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G238",
+      "alias": "麦36草莓14-牛9羊2-3地-早畜",
+      "route_id": "98029864:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G239",
+      "alias": "麦31番茄16-牛9-3地-早畜",
+      "route_id": "98162040:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G241",
+      "alias": "麦48草莓8-羊9牛6-3地-早畜",
+      "route_id": "98157508:0",
+      "team": "theredbluepill",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G242",
+      "alias": "胡萝卜43草莓9-牛6羊2-3地-早畜",
+      "route_id": "98273929:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G243",
+      "alias": "麦41胡萝卜10-羊11牛7-3地-早畜",
+      "route_id": "97726572:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G244",
+      "alias": "麦54胡萝卜10-牛8羊3-3地-早畜",
+      "route_id": "97883812:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G245",
+      "alias": "麦46草莓11-羊9牛6-3地-早畜",
+      "route_id": "97854411:0",
+      "team": "theredbluepill",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G246",
+      "alias": "胡萝卜27麦21-牛12羊2-3地-早畜",
+      "route_id": "97436626:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G247",
+      "alias": "麦47草莓11-牛6羊5-3地-早畜",
+      "route_id": "98305677:1",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G248",
+      "alias": "麦39草莓10-羊8鹅6-3地-早畜",
+      "route_id": "98230596:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G249",
+      "alias": "麦44胡萝卜10-羊12牛9-3地-早畜",
+      "route_id": "97546172:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G250",
+      "alias": "胡萝卜37麦11-羊9牛4-3地-早畜",
+      "route_id": "97879425:1",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G252",
+      "alias": "麦57草莓6-牛6鹅3-3地-早畜",
+      "route_id": "94222337:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G254",
+      "alias": "麦34草莓25-牛8羊6-3地-早畜",
+      "route_id": "94200310:1",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G256",
+      "alias": "麦42胡萝卜17-牛6羊2-3地-早畜",
+      "route_id": "97628285:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G257",
+      "alias": "胡萝卜42草莓12-牛6羊6-3地-早畜",
+      "route_id": "94020937:0",
+      "team": "tetsuya",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G258",
+      "alias": "胡萝卜36番茄15-羊10牛9-3地-早畜",
+      "route_id": "98141691:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G259",
+      "alias": "麦53胡萝卜10-牛7羊3-3地-早畜",
+      "route_id": "98216699:0",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G264",
+      "alias": "麦42胡萝卜10-羊12牛7-3地-早畜",
+      "route_id": "98317086:1",
+      "team": "srijan k.r keshri",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G265",
+      "alias": "麦36胡萝卜17-牛6羊3-3地-早畜",
+      "route_id": "98287592:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G266",
+      "alias": "胡萝卜36麦9-牛7羊7-3地-早畜",
+      "route_id": "97386449:0",
+      "team": "Subramanya N",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G267",
+      "alias": "麦33草莓20-羊15牛5-3地-早畜",
+      "route_id": "94208931:1",
+      "team": "Seb (allegedly)",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G268",
+      "alias": "胡萝卜61麦4-牛6羊2-3地-早畜",
+      "route_id": "97959026:1",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G269",
+      "alias": "麦40胡萝卜24-牛7羊4-3地-早畜",
+      "route_id": "98143893:1",
+      "team": "Arman Tuganbaev",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G275",
+      "alias": "麦38草莓13-牛9羊3-3地-早畜",
+      "route_id": "97566529:0",
+      "team": "XW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "R1L_COW_97710447",
+      "alias": "Rank1 latest 55714246 cow mixed wheat raw oracle",
+      "route_id": "97710447:0",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    },
+    {
+      "family": "R1N_LATEST_99954642",
+      "alias": "Rank1 latest 55714246 newest episode 99954642",
+      "route_id": "99954642:1",
+      "team": "Crop Dusta",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    },
+    {
+      "family": "HASE_OPP_99954642",
+      "alias": "Ryo Hasegawa opponent from episode 99954642",
+      "route_id": "99954642:0",
+      "team": "Ryo Hasegawa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": null,
+      "oracle_only": true,
+      "source_submission": 55714246
+    }
+  ],
+  "actions_file": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+  "actions_sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+}

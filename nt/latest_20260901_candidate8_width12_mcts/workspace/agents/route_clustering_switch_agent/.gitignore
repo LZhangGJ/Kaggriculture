@@ -1,0 +1,17 @@
+# Reproducible search outputs belong outside the source tree.
+experiments/
+build/
+configs/pipeline.env
+__pycache__/
+*.pyc
+*.npz
+*.f32
+*.bin
+
+# Platform-specific native build products.
+fast_kaggriculture/build/
+fast_kaggriculture/**/*.so
+
+# This router does not use PPO checkpoints.
+*.pt
+training_runs/

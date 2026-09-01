@@ -7,6 +7,15 @@ APIs or validation assumptions.
 
 ## Contents
 
+- `latest_20260901_candidate8_width12_mcts/` — current Candidate8 offline
+  search suite. It adds the eight-stage sequence search, Beam width 2/4/8/12
+  sweep, C++ MCTS, R8 executor sources, exact replay checks, compact evidence,
+  and a one-command runner. Hasegawa-specific analysis is intentionally
+  excluded. Start with
+  `latest_20260901_candidate8_width12_mcts/README_ZH.md`.
+- `latest_20260829_candidate8_rolling_oracle/` — original 2026-08-29
+  Candidate8 rolling-Oracle handoff. Use the 2026-09-01 package above for the
+  current width=12 and MCTS implementation.
 - `latest_20260827_macro_route_submit_agents/` — two submit-ready single-file
   route-tree agents trained from the deduplicated 2026-08-23/25 Top40 Replay
   pool. It contains the pipeline-selected G034 opening, the alternative G096
