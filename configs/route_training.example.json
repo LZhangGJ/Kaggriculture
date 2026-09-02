@@ -1,0 +1,37 @@
+{
+  "prefix_agent": "starter",
+  "opponents": [
+    "starter"
+  ],
+  "decision_steps": [
+    120,
+    168,
+    240,
+    600
+  ],
+  "environment": {
+    "episodeSteps": 720
+  },
+  "routes": [
+    {
+      "name": "starter_reference",
+      "agent": "starter",
+      "plan": {
+        "land_target": 25,
+        "max_hands": 0,
+        "cash_reserve": 500,
+        "liquidation_step": 672
+      }
+    },
+    {
+      "name": "pass_smoke",
+      "agent": "pass",
+      "plan": {
+        "land_target": 25,
+        "max_hands": 0,
+        "cash_reserve": 3000,
+        "liquidation_step": 672
+      }
+    }
+  ]
+}
