@@ -14,6 +14,12 @@ PPO、神经网络或 PyTorch 权重**。2026-08-27 的当前提交由 7 条动�
 - `configs/manifest.example.json`：Replay 清单的最小字段契约。
 - `fast_kaggriculture/`：C++20/pybind11 仿真源码；已删除平台相关构建产物。
 - `docs/宏观路线去重聚类与切换搜参.md`：完整方法、公式、局数与局限。
+- `docs/BAYESIAN_OPPONENT_ROUTING_REPORT_20260902.md`：根据前缀轨迹维护对手后验、
+  构造反制类别并共享少量 counter 路线的总体方案。
+- `docs/BAYESIAN_PREFIX_COUNTERBANK_V0_EXPERIMENT.md`：最小可证伪实验、对照组、
+  Go/No-Go 门槛和预期产物。
+- `docs/OPPONENT_PREFIX_BELIEF_DATA_CONTRACT_V0.md`：前缀向量、payoff 矩阵、belief
+  模型、counterbank 和线上接口的数据契约。
 - `OMITTED_ARTIFACTS.md`：未上传内容、原因、大小和关键哈希。
 
 ## 方法摘要
