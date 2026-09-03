@@ -3,6 +3,9 @@
 This workspace contains the official Kaggriculture 1.32.6 engine, selected public
 research notebooks, and a fast local runner for large self-play experiments.
 
+For the repository-wide module, experiment, data, and result index, start with
+[`agent.md`](agent.md). Coding agents must also follow [`AGENTS.md`](AGENTS.md).
+
 ## What is where
 
 - `official/competition/` — competition-provided rules and agent guide

@@ -1,0 +1,12 @@
+name: agent-docs
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/check_agent_docs.py
