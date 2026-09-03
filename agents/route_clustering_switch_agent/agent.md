@@ -138,3 +138,21 @@ pytest -q fast_kaggriculture/tests
 - 删除或外置大型产物时更新 `OMITTED_ARTIFACTS.md`，保留原因、大小和可用哈希。
 - README 面向首次使用者，优先保持入口、验证、复现步骤和结果边界准确；深入公式留在
   `docs/`，原生实现细节留在 `fast_kaggriculture/README.md`。
+
+## 2026-09-03：NT 语义克制拳法 Round2 重测
+
+本轮实验验证“固定少数开局后，在 day 6/9/12/18/24 根据实时状态切换语义克制拳法”是否可行。完整实验代码、锁文件、结果和逐步记录已复制到独立目录：
+
+`D:\Kaggriculture\counter_cluster_round2_semantic_v1_20260903`
+
+Git 仓库内对应目录：`research/experiments/counter_cluster_round2_semantic_v1_20260903`。
+
+详细过程见该目录的 `agent.md`，实验协议见 `PROTOCOL.md`，摘要见 `RESULT.md`，可复核分析见 `round2_analysis.ipynb`。
+
+执行要点：固定当前 v3 G003（`103928643:1`）至 step 143；将以前 48 个 W12/A64 搜索选择物化为 day 6/9/12/18/24 的语义 `PlanDelta`，禁止固定动作带和 rank 重放；通过 48/48 discovery 等价门并去重为 25 套拳法；随后在 12 条训练 Replay、8 个新 seed、双座位上运行 4,800 个 treatment 对局和 192 个 Opening A baseline 对局；最后从原始 reward 独立复算并执行 notebook 的 22 项断言。训练门失败后没有运行 validation/holdout，也没有在本轮重新运行昂贵的 NT 搜索。
+
+初步结果：24,000 个 rank 均为 `-1`；PlanDelta 阶段匹配率 `75.3458%`；已匹配阶段中 `90.1012%` 的完整 delta 会随实时状态改变，证明自适应执行生效。但 300 个拳法–对手单元中，仅 1 个通过 score 门，0 个通过相对 Opening A 的 uplift 门，0 个通过正 mean-margin 门，最终 coverage 为 `0/300`，无法形成有效 response cluster。即使只看 14 个五阶段全匹配单元，最好 score 也只有 `0.25`。
+
+当前主要问题：旧候选由单 seed/单座位 discovery 搜索产生，明显存在搜索过拟合；25 套候选不足以否定更大 NT 空间；day 9/day 12 意图匹配率约为 62%，但完全匹配单元同样失败，因此匹配不是首要瓶颈；目前仅测试 G003 和 12 条训练路线；历史 Replay 对手不会在线响应我方变招；归档仍依赖原工作区的 Round1 输入、Candidate8 genome/meta-agent 源码、原始 Replay 和 CPython 3.13/MinGW 运行时，适合审阅但不是搬目录即运行的发行包。
+
+下一步只应对 12 条 residual 路线运行多 seed、双座位的稳健 NT 搜索，直接优化 score、uplift 和 reward margin。训练集得到非空拳法 portfolio 后，才继续 response clustering、前缀后验分类和 validation。

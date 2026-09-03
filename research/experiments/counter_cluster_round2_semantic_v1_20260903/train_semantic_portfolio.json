@@ -1,0 +1,41 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-portfolio.v1",
+  "frozen": true,
+  "frozen_at_utc": "2026-09-03T01:32:26.298375+00:00",
+  "source_split": "train",
+  "config_sha256": "f2f3b1f717791044a2e212b72b51ca58d623d8f12f6d7e4fa89b55db4f628835",
+  "semantic_fists_sha256": "d1a62f658161c5e4af26df4c895ce1d876dd85598f8644fa01fd430127a218e9",
+  "coverage_rule": {
+    "minimum_score": 0.625,
+    "minimum_score_uplift": 0.125,
+    "minimum_mean_reward_margin_exclusive": 0.0,
+    "portfolio_cap": 12,
+    "clustering": "response_based_greedy_set_cover",
+    "similarity_only_merge_forbidden": true
+  },
+  "train_matrix": {
+    "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\train_semantic_matrix.npz",
+    "sha256": "9ceace9cc6bac6c58eabb43566609338d2934aa130f8a6fc345c8e26e7836fdb"
+  },
+  "train_report": {
+    "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\train_semantic_report.json",
+    "sha256": "0429e8fa09374f14f151c967d546fa01248ba8a9ab9896ed9e61cf924387e381"
+  },
+  "selected_fist_ids": [],
+  "selected_count": 0,
+  "covered_opponent_count": 0,
+  "residual_opponent_ids": [
+    "opponent:b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+    "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+    "opponent:7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+    "opponent:02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+    "opponent:830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+    "opponent:59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+    "opponent:429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+    "opponent:534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+    "opponent:8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+    "opponent:d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+    "opponent:0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+    "opponent:0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2"
+  ]
+}

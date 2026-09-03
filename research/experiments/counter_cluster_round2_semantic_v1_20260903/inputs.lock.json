@@ -1,0 +1,102 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-input-lock.v1",
+  "frozen_at": "2026-09-03",
+  "simulation_started": false,
+  "round2_outcome_inspected": false,
+  "config": {
+    "path": "experiments/counter_cluster_round2_semantic_v1/config.json",
+    "bytes": 3845,
+    "sha256": "f2f3b1f717791044a2e212b72b51ca58d623d8f12f6d7e4fa89b55db4f628835"
+  },
+  "protocol": {
+    "path": "experiments/counter_cluster_round2_semantic_v1/PROTOCOL.md",
+    "bytes": 3751,
+    "sha256": "16ce659c57873410792bbb49a1a8860e1f9127fadfbf6ac6f54628950743aaa9"
+  },
+  "sources": [
+    {
+      "role": "authoritative_current_replay_manifest",
+      "path": "D:/Kaggriculture/top40/current_top40_episode_manifest.csv",
+      "bytes": 925339,
+      "sha256": "2b543294f37fac913ce945604e7f594d4a2c43534ffd1f59faffeb049f15009c"
+    },
+    {
+      "role": "frozen_panel_and_splits",
+      "path": "experiments/counter_cluster_round1/panel24.json",
+      "bytes": 34611,
+      "sha256": "a93c51d2f8a48deaa7aed3eb1311ecbca21efed32f30950f8453f789c2c582e5",
+      "content_sha256": "7c32a323288b8225961e17adf5bf4e495342a91c719cdec790b80af9c1890581"
+    },
+    {
+      "role": "frozen_route_index",
+      "path": "experiments/counter_cluster_round1/current_path_index.jsonl",
+      "bytes": 7339045,
+      "sha256": "128b078485e61948e4391fd160b4feb323fbee834d172eb602b1bf22cedde07a"
+    },
+    {
+      "role": "opening_action_source",
+      "path": "experiments/counter_cluster_round1/opening_actions.json.zlib",
+      "bytes": 9630,
+      "sha256": "f8ab195f4c4792a2faaf0cbbd75eb6e1e0b94dd7a3a730ae2fbaf5c2cb7cbe64",
+      "canonical_action_sha256": "fcd500a8aaef48f001c58e85902194b37c35cfe5062f1451416141c0a7d1f28f"
+    },
+    {
+      "role": "train_discovery_opponent_actions",
+      "path": "experiments/counter_cluster_round1/discovery_actions.json.zlib",
+      "bytes": 117351,
+      "sha256": "81310eb8030d5f25e2b2e340e86f3dd66d6d5ceaefa05222c08e696f229c3405"
+    },
+    {
+      "role": "train_discovery_route_mapping",
+      "path": "experiments/counter_cluster_round1/discovery_library.json",
+      "bytes": 1882,
+      "sha256": "f2cfd7c1254603d626f8e256d689fe8bc67d1fe88019c597ff5e7c8f6fa7e538"
+    },
+    {
+      "role": "locked_search_parameters",
+      "path": "experiments/counter_cluster_round1/search_config.json",
+      "bytes": 1570,
+      "sha256": "32a6f13593b0f48a83bfaecb93d178f3bf5cffb27cf41d07d3ef5ac627718c48",
+      "embedded_config_sha256": "ee660c82781657d7dd9f0dbee917bd5573686fe08c0014f8fcdc0f3fc9ef9dbf"
+    },
+    {
+      "role": "locked_48_search_choices",
+      "path": "experiments/counter_cluster_round1/search_results.json",
+      "bytes": 69964,
+      "sha256": "fc1a2bda200562531317f7a490a4b21f9b1d4542e0ca63e1391c7bdc45617357",
+      "rows": 48
+    },
+    {
+      "role": "candidate8_genome",
+      "path": "D:/github/Kaggriculture_candidate8/nt/latest_20260901_candidate8_width12_mcts/workspace/experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "bytes": 4184,
+      "sha256": "18d61ce860b17a7c510a9228a385964765357fb6599f10a5289afa727bda9694"
+    }
+  ],
+  "forbidden_inputs": [
+    {
+      "path": "experiments/counter_cluster_round1/fist_actions.json.zlib",
+      "reason": "contains the fixed action tapes rejected by the Round2 treatment"
+    },
+    {
+      "path": "experiments/counter_cluster_round1/opponent_actions.json.zlib",
+      "reason": "combined pack contains locked holdout action tapes; build split-specific packs instead"
+    },
+    {
+      "pattern": "experiments/counter_cluster_round1/*_matrix.npz",
+      "reason": "Round1 fixed-tape outcomes are not Round2 evidence"
+    },
+    {
+      "pattern": "experiments/counter_cluster_round1/*_report.json",
+      "reason": "Round1 fixed-tape clustering outcomes are not Round2 inputs"
+    }
+  ],
+  "runtime": {
+    "status": "separate_runtime_lock_required_before_first_simulation",
+    "required_fields": ["source_sha256", "native_extension_sha256", "api_contract_test_sha256"]
+  },
+  "holdout": {
+    "seed_bank_frozen_in_config": true,
+    "status": "locked_not_evaluated"
+  }
+}

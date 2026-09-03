@@ -1,0 +1,143 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-analysis-validation.v1",
+  "generated_at_utc": "2026-09-03T01:34:48.572099+00:00",
+  "notebook": "round2_analysis.ipynb",
+  "execution": {
+    "status": "executed_top_to_bottom",
+    "simulator_runs": 0,
+    "data_scope": "train only",
+    "read_allowlist": [
+      "materialization_audit.json",
+      "signature_inversion_audit.json",
+      "train_semantic_matrix.npz",
+      "train_semantic_report.json"
+    ],
+    "validation_holdout_artifacts": {
+      "validation_semantic_matrix.npz": true,
+      "validation_semantic_report.json": true,
+      "holdout_semantic_matrix.npz": true,
+      "holdout_semantic_report.json": true
+    }
+  },
+  "inputs": {
+    "materialization_audit": {
+      "path": "materialization_audit.json",
+      "sha256": "d22410ea8236e0890fed8b966d490652a1f812497bd9a5550b076ef0dd837f1c"
+    },
+    "signature_inversion_audit": {
+      "path": "signature_inversion_audit.json",
+      "sha256": "e05f856339aed8ce8b198e5c572ef4272650c15ce31bbdf64732abf9235fa153"
+    },
+    "train_matrix": {
+      "path": "train_semantic_matrix.npz",
+      "sha256": "9ceace9cc6bac6c58eabb43566609338d2934aa130f8a6fc345c8e26e7836fdb"
+    },
+    "train_report": {
+      "path": "train_semantic_report.json",
+      "sha256": "0429e8fa09374f14f151c967d546fa01248ba8a9ab9896ed9e61cf924387e381"
+    }
+  },
+  "computed": {
+    "materialization_equivalence": [
+      48,
+      48
+    ],
+    "unique_semantic_fists": 25,
+    "train_cells": 300,
+    "threshold_counts": {
+      "score": 1,
+      "uplift": 0,
+      "margin": 0,
+      "all": 0
+    },
+    "match_rate_by_decision_day": {
+      "6": 0.9133333333333333,
+      "9": 0.6241666666666666,
+      "12": 0.623125,
+      "18": 0.883125,
+      "24": 0.7235416666666666
+    },
+    "matched_stages": 18083,
+    "live_delta_changed_stages": 16293,
+    "matched_intent_mismatches": 0,
+    "matched_family_mismatches": 0,
+    "fully_matched_cells": 14,
+    "best_fully_matched_cell": {
+      "fist": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "opponent": "opponent:d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "panel": "P18",
+      "score": 0.25,
+      "uplift": -0.625,
+      "margin": -10641.125,
+      "thresholds_passed": 0
+    },
+    "extreme_and_nearest_cells": {
+      "max_score": {
+        "fist": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+        "opponent": "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+        "panel": "P02",
+        "score": 0.625,
+        "uplift": -0.375,
+        "margin": -5866.5625,
+        "thresholds_passed": 1
+      },
+      "max_uplift": {
+        "fist": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+        "opponent": "opponent:0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+        "panel": "P22",
+        "score": 0.0,
+        "uplift": 0.0,
+        "margin": -51639.3125,
+        "thresholds_passed": 0
+      },
+      "max_margin": {
+        "fist": "semantic-fist:9668d5a6ea52a0b4e1e8a1eaa91f722f2b50007ddefc532913670f8261adefe3",
+        "opponent": "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+        "panel": "P02",
+        "score": 0.5,
+        "uplift": -0.5,
+        "margin": -2774.0,
+        "thresholds_passed": 0
+      },
+      "nearest_all_thresholds": {
+        "fist": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+        "opponent": "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+        "panel": "P02",
+        "score": 0.625,
+        "uplift": -0.375,
+        "margin": -5866.5625,
+        "thresholds_passed": 1
+      }
+    },
+    "unmatched_intent_sentinels": [
+      ""
+    ],
+    "unmatched_delta_sentinels": [
+      ""
+    ]
+  },
+  "assertions": {
+    "materialization_audit_passed": true,
+    "materialization_equivalence_48_of_48": true,
+    "signature_inversion_audit_passed": true,
+    "signature_inversion_79_of_79": true,
+    "matrix_has_31_arrays_all_clean": true,
+    "train_split_only": true,
+    "unique_semantic_fists_25": true,
+    "train_cells_300": true,
+    "selected_rank_all_minus_one": true,
+    "matched_intent_mismatch_zero": true,
+    "matched_family_mismatch_zero": true,
+    "matched_stage_count_18083": true,
+    "live_delta_changed_16293_of_18083": true,
+    "threshold_counts_1_0_0_0": true,
+    "coverage_recompute_matches_matrix": true,
+    "coverage_zero_of_300": true,
+    "match_by_day_matches_report": true,
+    "fully_matched_cells_14": true,
+    "best_fully_matched_cell_score_0_25": true,
+    "best_fully_matched_cell_margin_minus_10641_125": true,
+    "unmatched_telemetry_mask_applied": true,
+    "validation_and_holdout_artifacts_absent": true
+  }
+}

@@ -1,0 +1,1004 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-semantic-evaluation.v1",
+  "generated_at_utc": "2026-09-03T01:32:26.265023+00:00",
+  "split": "train",
+  "interpretation": "train response clustering",
+  "execution_semantics": "fixed Opening A through step 143; empty rank sequence; exact semantic PlanDelta intent match at each checkpoint; live Candidate8 action planning",
+  "inputs": {
+    "config": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\config.json",
+      "sha256": "f2f3b1f717791044a2e212b72b51ca58d623d8f12f6d7e4fa89b55db4f628835"
+    },
+    "input_lock": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\inputs.lock.json",
+      "sha256": "157893ca98f92687796652007062568662280e9b93d043c97f18de8f9b01c8b5"
+    },
+    "panel": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\panel24.json",
+      "sha256": "a93c51d2f8a48deaa7aed3eb1311ecbca21efed32f30950f8453f789c2c582e5"
+    },
+    "opening_actions": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\opening_actions.json.zlib",
+      "sha256": "f8ab195f4c4792a2faaf0cbbd75eb6e1e0b94dd7a3a730ae2fbaf5c2cb7cbe64"
+    },
+    "semantic_fists": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\semantic_fists.json",
+      "sha256": "d1a62f658161c5e4af26df4c895ce1d876dd85598f8644fa01fd430127a218e9"
+    },
+    "runtime_lock": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\runtime.lock.json",
+      "sha256": "ba80438bfedfa9dabf73a9af8a3a4fae7a444920e9caffaeb750bc45206004f8"
+    },
+    "portfolio": null,
+    "split_assets": {
+      "construction": "opening_from_locked_blob; opponents_only_from_selected_panel_replay_path",
+      "split": "train",
+      "opponent_count": 12,
+      "actions_sha256": "81310eb8030d5f25e2b2e340e86f3dd66d6d5ceaefa05222c08e696f229c3405",
+      "metadata_sha256": "3a658eff0cf5f171ea564727d55b406a924bb7bd55eab3978221b9b35ef9276e",
+      "excluded_panel_splits": [
+        "holdout",
+        "validation"
+      ]
+    },
+    "opponent_replays": [
+      {
+        "panel_id": "P01",
+        "replay_path": "D:\\Kaggriculture\\top40\\16714457_Crop Dusta\\55929317_agent\\replays\\episode-104564762-replay.json",
+        "action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea"
+      },
+      {
+        "panel_id": "P02",
+        "replay_path": "D:\\Kaggriculture\\top40\\16623716_tetsuya\\55905066_agent\\replays\\episode-104612591-replay.json",
+        "action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8"
+      },
+      {
+        "panel_id": "P05",
+        "replay_path": "D:\\Kaggriculture\\top40\\16676114_Gekkotron\\55936202_agent\\replays\\episode-104602012-replay.json",
+        "action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43"
+      },
+      {
+        "panel_id": "P06",
+        "replay_path": "D:\\Kaggriculture\\top40\\16676114_Gekkotron\\55936202_agent\\replays\\episode-104573732-replay.json",
+        "action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b"
+      },
+      {
+        "panel_id": "P09",
+        "replay_path": "D:\\Kaggriculture\\top40\\16755705_Semyon Epanov\\55945949_agent\\replays\\episode-104604753-replay.json",
+        "action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b"
+      },
+      {
+        "panel_id": "P10",
+        "replay_path": "D:\\Kaggriculture\\top40\\16755705_Semyon Epanov\\55945949_agent\\replays\\episode-104635349-replay.json",
+        "action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b"
+      },
+      {
+        "panel_id": "P13",
+        "replay_path": "D:\\Kaggriculture\\top40\\16671767_Kaileh57\\55935084_agent\\replays\\episode-104621784-replay.json",
+        "action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1"
+      },
+      {
+        "panel_id": "P14",
+        "replay_path": "D:\\Kaggriculture\\top40\\16671767_Kaileh57\\55935084_agent\\replays\\episode-104525472-replay.json",
+        "action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21"
+      },
+      {
+        "panel_id": "P17",
+        "replay_path": "D:\\Kaggriculture\\top40\\16705390_Subramanya N\\55616096_agent\\replays\\episode-97151460-replay.json",
+        "action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8"
+      },
+      {
+        "panel_id": "P18",
+        "replay_path": "D:\\Kaggriculture\\top40\\16705390_Subramanya N\\55616096_agent\\replays\\episode-100380805-replay.json",
+        "action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea"
+      },
+      {
+        "panel_id": "P21",
+        "replay_path": "D:\\Kaggriculture\\top40\\16623400_Less\\55937384_agent\\replays\\episode-104639234-replay.json",
+        "action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d"
+      },
+      {
+        "panel_id": "P22",
+        "replay_path": "D:\\Kaggriculture\\top40\\16623400_Less\\55937384_agent\\replays\\episode-104549444-replay.json",
+        "action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2"
+      }
+    ]
+  },
+  "dimensions": {
+    "fists": 25,
+    "opponents": 12,
+    "seeds": 8,
+    "seats": 2,
+    "decision_stages": 5,
+    "games": 4992
+  },
+  "runtime": {
+    "elapsed_seconds": 63.681553400005214,
+    "games_per_second": 78.39004756437978,
+    "workers": 4,
+    "native_extension": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\python\\fast_kaggriculture\\_fast_kaggriculture.cp313-win_amd64.pyd",
+      "sha256": "77ed37c05776c4e95abadaf50a58a16116cca08cee9be32aba4e7965c85870ed"
+    },
+    "native_source_sha256": "0f884f76a73d2604eecaeb24ce8b680c83a4699211d7308e42a91c4499c9b190",
+    "rank_inputs": [],
+    "capture_trace": false
+  },
+  "coverage_rule": {
+    "minimum_score": 0.625,
+    "minimum_score_uplift": 0.125,
+    "minimum_mean_reward_margin_exclusive": 0.0,
+    "portfolio_cap": 12,
+    "clustering": "response_based_greedy_set_cover",
+    "similarity_only_merge_forbidden": true
+  },
+  "baseline": {
+    "route_id": "opening:fcd500a8aaef48f001c58e85902194b37c35cfe5062f1451416141c0a7d1f28f",
+    "action_sha256": "fcd500a8aaef48f001c58e85902194b37c35cfe5062f1451416141c0a7d1f28f",
+    "score_rate": 0.3958333432674408,
+    "raw_win_rate": 0.3958333333333333,
+    "mean_margin": 5483.567708333333,
+    "path_score": {
+      "mean": 0.3958333432674408,
+      "minimum": 0.0,
+      "p10": 0.125,
+      "median": 0.125
+    }
+  },
+  "semantic_execution": {
+    "stage_match_rate": 0.7534583333333333,
+    "all_stages_match_game_rate": 0.2608333333333333,
+    "match_rate_by_decision_day": {
+      "6": 0.9133333333333333,
+      "9": 0.6241666666666666,
+      "12": 0.623125,
+      "18": 0.883125,
+      "24": 0.7235416666666666
+    },
+    "live_normalization_changed_rate_given_match": 0.9010120002212022,
+    "signature_changed_rate_given_match": 0.40303047060775316,
+    "outcome_covered_opponent_count": 0,
+    "strict_full_match_covered_opponent_count": 0
+  },
+  "fists": [
+    {
+      "fist_id": "semantic-fist:9f940cbabd9b63d9db9023a54292f52f5e6ecf86d59317d36535a52ff5eb197b",
+      "score_rate": 0.1197916641831398,
+      "raw_win_rate": 0.11979166666666667,
+      "mean_margin": -36609.239583333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.2760416567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.5614583333333333,
+      "all_stages_match_game_rate": 0.109375,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.40625,
+        "12": 0.265625,
+        "18": 1.0,
+        "24": 0.40625
+      },
+      "live_normalization_changed_rate_given_match": 0.9183673469387755,
+      "signature_changed_rate_given_match": 0.150278293135436
+    },
+    {
+      "fist_id": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+      "score_rate": 0.1041666641831398,
+      "raw_win_rate": 0.10416666666666667,
+      "mean_margin": -42077.078125,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.2916666567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6322916666666667,
+      "all_stages_match_game_rate": 0.078125,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.3229166666666667,
+        "12": 0.8229166666666666,
+        "18": 0.2864583333333333,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9275123558484349,
+      "signature_changed_rate_given_match": 0.35584843492586493
+    },
+    {
+      "fist_id": "semantic-fist:089b92b7b53e30a2f3bfa7f84665d298e074c568b7e30f4036a7c4aa4fcb91b6",
+      "score_rate": 0.0989583358168602,
+      "raw_win_rate": 0.09895833333333333,
+      "mean_margin": -35794.463541666664,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.296875,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.4791666666666667,
+      "all_stages_match_game_rate": 0.0,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.5416666666666666,
+        "12": 0.0,
+        "18": 1.0,
+        "24": 0.125
+      },
+      "live_normalization_changed_rate_given_match": 0.9043478260869565,
+      "signature_changed_rate_given_match": 0.15
+    },
+    {
+      "fist_id": "semantic-fist:9668d5a6ea52a0b4e1e8a1eaa91f722f2b50007ddefc532913670f8261adefe3",
+      "score_rate": 0.0989583358168602,
+      "raw_win_rate": 0.09895833333333333,
+      "mean_margin": -38688.609375,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.296875,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6854166666666667,
+      "all_stages_match_game_rate": 0.052083333333333336,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.5520833333333334,
+        "12": 0.14583333333333334,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9331306990881459,
+      "signature_changed_rate_given_match": 0.3586626139817629
+    },
+    {
+      "fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "score_rate": 0.09375,
+      "raw_win_rate": 0.09375,
+      "mean_margin": -40513.489583333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3020833432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.809375,
+      "all_stages_match_game_rate": 0.046875,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 1.0,
+        "18": 1.0,
+        "24": 0.046875
+      },
+      "live_normalization_changed_rate_given_match": 0.9613899613899614,
+      "signature_changed_rate_given_match": 0.4375804375804376
+    },
+    {
+      "fist_id": "semantic-fist:a74de90870a5950b3092965e81e5f1a66c8bd2e12d6bd19e29d2f1980eac8005",
+      "score_rate": 0.09375,
+      "raw_win_rate": 0.09375,
+      "mean_margin": -36193.828125,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3020833432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.7614583333333333,
+      "all_stages_match_game_rate": 0.24479166666666666,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.40625,
+        "12": 0.9583333333333334,
+        "18": 0.4427083333333333,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.8030095759233926,
+      "signature_changed_rate_given_match": 0.4062927496580027
+    },
+    {
+      "fist_id": "semantic-fist:b236e6d8029b414618398b261b81dacd353d8f7eb48d1254979aed0dd4a39a8d",
+      "score_rate": 0.09375,
+      "raw_win_rate": 0.09375,
+      "mean_margin": -35648.84375,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3020833432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6385416666666667,
+      "all_stages_match_game_rate": 0.041666666666666664,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.3333333333333333,
+        "12": 0.9635416666666666,
+        "18": 0.16666666666666666,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9282218597063622,
+      "signature_changed_rate_given_match": 0.43882544861337686
+    },
+    {
+      "fist_id": "semantic-fist:f6a04b4bfdef3d2f64da2aa98b2329a2dd82e5593325da078ecaab76c0fb0ad9",
+      "score_rate": 0.09375,
+      "raw_win_rate": 0.09375,
+      "mean_margin": -37002.817708333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3020833432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.8166666666666667,
+      "all_stages_match_game_rate": 0.390625,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.40625,
+        "12": 0.6770833333333334,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.8188775510204082,
+      "signature_changed_rate_given_match": 0.35459183673469385
+    },
+    {
+      "fist_id": "semantic-fist:0cec14f6ec114e1cc1d063d75d4a25c6951bee443a62c84a9609374832dfdd2d",
+      "score_rate": 0.0885416641831398,
+      "raw_win_rate": 0.08854166666666667,
+      "mean_margin": -35016.989583333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3072916567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6541666666666667,
+      "all_stages_match_game_rate": 0.0,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.5416666666666666,
+        "12": 0.0,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9299363057324841,
+      "signature_changed_rate_given_match": 0.24681528662420382
+    },
+    {
+      "fist_id": "semantic-fist:a7844111621452ca8f4098e9785b59b1c02c7463bd2266f3c945ef747b4468b3",
+      "score_rate": 0.0885416641831398,
+      "raw_win_rate": 0.08854166666666667,
+      "mean_margin": -39791.390625,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3072916567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6822916666666666,
+      "all_stages_match_game_rate": 0.09375,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.3854166666666667,
+        "12": 0.09895833333333333,
+        "18": 0.9270833333333334,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9694656488549618,
+      "signature_changed_rate_given_match": 0.183206106870229
+    },
+    {
+      "fist_id": "semantic-fist:e82a14d61061d1a241193f1374f737c1198f990def19caa5c39d7bef547b3a2b",
+      "score_rate": 0.0885416641831398,
+      "raw_win_rate": 0.08854166666666667,
+      "mean_margin": -39772.088541666664,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3072916567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6041666666666666,
+      "all_stages_match_game_rate": 0.0,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.041666666666666664,
+        "12": 0.90625,
+        "18": 0.9739583333333334,
+        "24": 0.09895833333333333
+      },
+      "live_normalization_changed_rate_given_match": 0.9551724137931035,
+      "signature_changed_rate_given_match": 0.5241379310344828
+    },
+    {
+      "fist_id": "semantic-fist:a6eb24c892ae4ea60ef258132d1bb102d1a8b02ecaddf2f757d1a015cef46a81",
+      "score_rate": 0.0833333358168602,
+      "raw_win_rate": 0.08333333333333333,
+      "mean_margin": -39975.96875,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3125,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.95625,
+      "all_stages_match_game_rate": 0.7916666666666666,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.9270833333333334,
+        "12": 0.8541666666666666,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 1.0,
+      "signature_changed_rate_given_match": 0.514161220043573
+    },
+    {
+      "fist_id": "semantic-fist:82a0410840a3214e2a67629f7d50308dbb86ada94896b66d2405edfe6b226d02",
+      "score_rate": 0.078125,
+      "raw_win_rate": 0.078125,
+      "mean_margin": -40464.119791666664,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3177083432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6020833333333333,
+      "all_stages_match_game_rate": 0.0,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.041666666666666664,
+        "12": 0.90625,
+        "18": 1.0,
+        "24": 0.0625
+      },
+      "live_normalization_changed_rate_given_match": 0.9550173010380623,
+      "signature_changed_rate_given_match": 0.4809688581314879
+    },
+    {
+      "fist_id": "semantic-fist:14cb0ca416a6f64f57dac5db427ac7d14c72aa630a2115188ff54eeff4f5bef2",
+      "score_rate": 0.0729166641831398,
+      "raw_win_rate": 0.07291666666666667,
+      "mean_margin": -40187.645833333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3229166567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.6260416666666667,
+      "all_stages_match_game_rate": 0.026041666666666668,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 0.3333333333333333,
+        "12": 0.07291666666666667,
+        "18": 1.0,
+        "24": 0.9947916666666666
+      },
+      "live_normalization_changed_rate_given_match": 0.8402662229617305,
+      "signature_changed_rate_given_match": 0.4276206322795341
+    },
+    {
+      "fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "score_rate": 0.0729166641831398,
+      "raw_win_rate": 0.07291666666666667,
+      "mean_margin": -36192.630208333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3229166567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.98125,
+      "all_stages_match_game_rate": 0.90625,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 0.90625,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.851380042462845,
+      "signature_changed_rate_given_match": 0.4978768577494692
+    },
+    {
+      "fist_id": "semantic-fist:b21a4cf1c9d0747f0abb9600f820bc0c6976023d66d2481e987c747080c8d7f7",
+      "score_rate": 0.0677083358168602,
+      "raw_win_rate": 0.06770833333333333,
+      "mean_margin": -42827.192708333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.328125,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.80625,
+      "all_stages_match_game_rate": 0.203125,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 0.8177083333333334,
+        "18": 1.0,
+        "24": 0.21354166666666666
+      },
+      "live_normalization_changed_rate_given_match": 0.9664082687338501,
+      "signature_changed_rate_given_match": 0.6214470284237726
+    },
+    {
+      "fist_id": "semantic-fist:c54316685abeb78522ce7feb3f483aca4aa62fdd5a856cec57baabaaf4ee068e",
+      "score_rate": 0.0677083358168602,
+      "raw_win_rate": 0.06770833333333333,
+      "mean_margin": -41964.421875,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.328125,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.7770833333333333,
+      "all_stages_match_game_rate": 0.06770833333333333,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 0.8177083333333334,
+        "18": 1.0,
+        "24": 0.06770833333333333
+      },
+      "live_normalization_changed_rate_given_match": 0.9651474530831099,
+      "signature_changed_rate_given_match": 0.675603217158177
+    },
+    {
+      "fist_id": "semantic-fist:c5b341893b2f6d26948f5293f18fb771745e5a9a807c689f3ce42c7488387065",
+      "score_rate": 0.0677083358168602,
+      "raw_win_rate": 0.06770833333333333,
+      "mean_margin": -36413.260416666664,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.328125,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.7520833333333333,
+      "all_stages_match_game_rate": 0.328125,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.8125,
+        "12": 0.4739583333333333,
+        "18": 1.0,
+        "24": 0.4739583333333333
+      },
+      "live_normalization_changed_rate_given_match": 0.8060941828254847,
+      "signature_changed_rate_given_match": 0.39058171745152354
+    },
+    {
+      "fist_id": "semantic-fist:e9925e0e47431b4b66261395751313007cc05a27d1055eb7b74d385b3b7039e7",
+      "score_rate": 0.0677083358168602,
+      "raw_win_rate": 0.06770833333333333,
+      "mean_margin": -38102.223958333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.328125,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.7822916666666667,
+      "all_stages_match_game_rate": 0.17708333333333334,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.3854166666666667,
+        "12": 0.6822916666666666,
+        "18": 1.0,
+        "24": 0.84375
+      },
+      "live_normalization_changed_rate_given_match": 0.810918774966711,
+      "signature_changed_rate_given_match": 0.44607190412782954
+    },
+    {
+      "fist_id": "semantic-fist:0997433397a2fe69aef9439c3e9615e0ca644cbde4d944b04d3a9483fd28972f",
+      "score_rate": 0.0625,
+      "raw_win_rate": 0.0625,
+      "mean_margin": -39294.270833333336,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3333333432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.8020833333333334,
+      "all_stages_match_game_rate": 0.3645833333333333,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.5104166666666666,
+        "12": 0.5885416666666666,
+        "18": 1.0,
+        "24": 0.9114583333333334
+      },
+      "live_normalization_changed_rate_given_match": 0.8181818181818182,
+      "signature_changed_rate_given_match": 0.2766233766233766
+    },
+    {
+      "fist_id": "semantic-fist:adf07c26cb94f75c9dbbe62db1d4750e4eef0cce86dcc230ae511777add48ca7",
+      "score_rate": 0.0625,
+      "raw_win_rate": 0.0625,
+      "mean_margin": -40827.125,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3333333432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.878125,
+      "all_stages_match_game_rate": 0.4791666666666667,
+      "match_rate_by_decision_day": {
+        "6": 0.7291666666666666,
+        "9": 1.0,
+        "12": 0.6614583333333334,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.8861209964412812,
+      "signature_changed_rate_given_match": 0.3428232502965599
+    },
+    {
+      "fist_id": "semantic-fist:d32cde249b98baa72072152bca9f7bb642baaf03539f3ad0bbe721b6d70fd153",
+      "score_rate": 0.0625,
+      "raw_win_rate": 0.0625,
+      "mean_margin": -42186.375,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3333333432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.9375,
+      "all_stages_match_game_rate": 0.84375,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.84375,
+        "12": 1.0,
+        "18": 1.0,
+        "24": 0.84375
+      },
+      "live_normalization_changed_rate_given_match": 0.8444444444444444,
+      "signature_changed_rate_given_match": 0.08222222222222222
+    },
+    {
+      "fist_id": "semantic-fist:9e87207297f65e1eec0d0ad43158401563f5d005da5c9b78a6c5991204d67132",
+      "score_rate": 0.0572916679084301,
+      "raw_win_rate": 0.057291666666666664,
+      "mean_margin": -40112.078125,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3385416567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.9760416666666667,
+      "all_stages_match_game_rate": 0.8802083333333334,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 0.8802083333333334,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9722518676627535,
+      "signature_changed_rate_given_match": 0.6702241195304163
+    },
+    {
+      "fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "score_rate": 0.0572916679084301,
+      "raw_win_rate": 0.057291666666666664,
+      "mean_margin": -38533.515625,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3385416567325592,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.8010416666666667,
+      "all_stages_match_game_rate": 0.17708333333333334,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 0.8125,
+        "12": 0.19270833333333334,
+        "18": 1.0,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.8179453836150845,
+      "signature_changed_rate_given_match": 0.24317295188556567
+    },
+    {
+      "fist_id": "semantic-fist:30169d2a598ca303b3a7323d8347c3b9cace819c57d18940c85ab8e8c4da02f4",
+      "score_rate": 0.046875,
+      "raw_win_rate": 0.046875,
+      "mean_margin": -39645.604166666664,
+      "minimum_path_score": 0.0,
+      "mean_uplift_vs_baseline": -0.3489583432674408,
+      "covered_path_count": 0,
+      "strict_full_match_covered_path_count": 0,
+      "stage_match_rate": 0.8333333333333334,
+      "all_stages_match_game_rate": 0.21875,
+      "match_rate_by_decision_day": {
+        "6": 1.0,
+        "9": 1.0,
+        "12": 0.8854166666666666,
+        "18": 0.28125,
+        "24": 1.0
+      },
+      "live_normalization_changed_rate_given_match": 0.9675,
+      "signature_changed_rate_given_match": 0.5675
+    }
+  ],
+  "opponents": [
+    {
+      "opponent_id": "opponent:b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "panel_id": "P01",
+      "action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "baseline_score": 1.0,
+      "baseline_mean_margin": 38339.5,
+      "best_fist_id": "semantic-fist:f6a04b4bfdef3d2f64da2aa98b2329a2dd82e5593325da078ecaab76c0fb0ad9",
+      "best_fist_score": 0.1875,
+      "best_fist_uplift": -0.8125,
+      "best_fist_mean_margin": -13907.375,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "panel_id": "P02",
+      "action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "baseline_score": 1.0,
+      "baseline_mean_margin": 45592.0625,
+      "best_fist_id": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+      "best_fist_score": 0.625,
+      "best_fist_uplift": -0.375,
+      "best_fist_mean_margin": -5866.5625,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "panel_id": "P05",
+      "action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -13501.1875,
+      "best_fist_id": "semantic-fist:0cec14f6ec114e1cc1d063d75d4a25c6951bee443a62c84a9609374832dfdd2d",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46831.625,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "panel_id": "P06",
+      "action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -13435.625,
+      "best_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -45814.5,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "panel_id": "P09",
+      "action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -14222.375,
+      "best_fist_id": "semantic-fist:c5b341893b2f6d26948f5293f18fb771745e5a9a807c689f3ce42c7488387065",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46789.875,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "panel_id": "P10",
+      "action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -14111.75,
+      "best_fist_id": "semantic-fist:c5b341893b2f6d26948f5293f18fb771745e5a9a807c689f3ce42c7488387065",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46739.75,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "panel_id": "P13",
+      "action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -13928.8125,
+      "best_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46966.5,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "panel_id": "P14",
+      "action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -13914.625,
+      "best_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46482.875,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "panel_id": "P17",
+      "action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "baseline_score": 1.0,
+      "baseline_mean_margin": 36695.1875,
+      "best_fist_id": "semantic-fist:9f940cbabd9b63d9db9023a54292f52f5e6ecf86d59317d36535a52ff5eb197b",
+      "best_fist_score": 0.5,
+      "best_fist_uplift": -0.5,
+      "best_fist_mean_margin": -7629.4375,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "panel_id": "P18",
+      "action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "baseline_score": 0.875,
+      "baseline_mean_margin": 49715.75,
+      "best_fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "best_fist_score": 0.5,
+      "best_fist_uplift": -0.375,
+      "best_fist_mean_margin": -9455.625,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "panel_id": "P21",
+      "action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "baseline_score": 0.125,
+      "baseline_mean_margin": -13577.4375,
+      "best_fist_id": "semantic-fist:0cec14f6ec114e1cc1d063d75d4a25c6951bee443a62c84a9609374832dfdd2d",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": -0.125,
+      "best_fist_mean_margin": -46447.625,
+      "eligible_covering_fist_ids": []
+    },
+    {
+      "opponent_id": "opponent:0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "panel_id": "P22",
+      "action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "baseline_score": 0.0,
+      "baseline_mean_margin": -7847.875,
+      "best_fist_id": "semantic-fist:b236e6d8029b414618398b261b81dacd353d8f7eb48d1254979aed0dd4a39a8d",
+      "best_fist_score": 0.0,
+      "best_fist_uplift": 0.0,
+      "best_fist_mean_margin": -44155.9375,
+      "eligible_covering_fist_ids": []
+    }
+  ],
+  "set_cover": {
+    "method": "greedy uncovered gain; ties by worst covered-member score then mean uplift",
+    "selected_fist_ids": [],
+    "selected_count": 0,
+    "covered_opponent_count": 0,
+    "coverage_rate": 0.0,
+    "trace": [],
+    "residual_opponent_ids": [
+      "opponent:b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "opponent:7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "opponent:02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "opponent:830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "opponent:59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "opponent:429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "opponent:534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "opponent:8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "opponent:d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "opponent:0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "opponent:0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2"
+    ]
+  },
+  "response_clusters": [
+    {
+      "cluster_id": "R001",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R002",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R003",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R004",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R005",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R006",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R007",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R008",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R009",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R010",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R011",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d"
+      ],
+      "size": 1
+    },
+    {
+      "cluster_id": "R012",
+      "kind": "residual",
+      "representative_fist_id": null,
+      "member_opponent_ids": [
+        "opponent:0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2"
+      ],
+      "size": 1
+    }
+  ],
+  "frozen_portfolio_evaluation": null,
+  "matrix": {
+    "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\train_semantic_matrix.npz",
+    "sha256": "9ceace9cc6bac6c58eabb43566609338d2934aa130f8a6fc345c8e26e7836fdb",
+    "axes": {
+      "rewards": [
+        "fist",
+        "opponent",
+        "seed",
+        "candidate_seat",
+        "physical_seat"
+      ],
+      "selected_matched_and_actual_selection": [
+        "fist",
+        "opponent",
+        "seed",
+        "candidate_seat",
+        "decision_stage"
+      ],
+      "path_metrics_and_coverage": [
+        "fist",
+        "opponent"
+      ]
+    }
+  },
+  "boundaries": {
+    "opponent_actions_loaded_only_from_requested_split": true,
+    "combined_round1_opponent_pack_loaded": false,
+    "holdout_entry_point_refused": true,
+    "fixed_action_tape_used": false,
+    "selected_rank_input_used": false,
+    "actual_delta_and_signature_telemetry_recorded": true,
+    "set_cover_fit_on_train_only": true,
+    "validation_is_paired_not_confirmatory": false
+  },
+  "portfolio_output": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\train_semantic_portfolio.json"
+}

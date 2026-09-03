@@ -1,0 +1,100 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-semantic-config.v1",
+  "frozen_at": "2026-09-03",
+  "question": "Can locked Candidate8 search choices form useful response clusters when stored as PlanDelta intents and executed by live state-adaptive planning?",
+  "treatment": {
+    "control": "opening_a_full_route",
+    "round1_rejected_representation": "fixed_719_action_tape",
+    "round2_representation": "ordered_semantic_plan_delta_intents",
+    "execution": "exact_intent_match_to_current_feasible_candidate_then_live_candidate8_planning",
+    "missing_intent_policy": "probe_state_copy_then_on_unmatched_discard_probe_and_continue_ordinary_planner_from_untouched_state_without_forced_checkpoint_replan",
+    "fresh_game_rank_replay_forbidden": true,
+    "fixed_action_tape_replay_forbidden": true,
+    "semantic_identity_fields": [
+      "family_id",
+      "target_delta",
+      "effective_delay_days",
+      "schedule_profile",
+      "market_profile",
+      "recovery_profile",
+      "suffix_project",
+      "market_item",
+      "recovery_issue"
+    ],
+    "semantic_identity_excludes": [
+      "hand_delta",
+      "quadrant_delta",
+      "estimated_value",
+      "estimated_cash_cost",
+      "estimated_daily_action_load",
+      "signature"
+    ]
+  },
+  "opening": {
+    "route_id": "103928643:1",
+    "action_sha256": "fcd500a8aaef48f001c58e85902194b37c35cfe5062f1451416141c0a7d1f28f",
+    "prefix_action_count": 144,
+    "prefix_last_step": 143,
+    "semantic_start_step": 144
+  },
+  "candidate8": {
+    "genome": "w5_autonomous_capacity_r6_challenger_v1.json",
+    "genome_sha256": "18d61ce860b17a7c510a9228a385964765357fb6599f10a5289afa727bda9694",
+    "decision_days": [6, 9, 12, 18, 24],
+    "beam_width": 12,
+    "per_node_arms": 64,
+    "candidate_pool": "shortlist",
+    "use_feasible_pool": false,
+    "competitive_objective": true
+  },
+  "panel": {
+    "count": 24,
+    "file_sha256": "a93c51d2f8a48deaa7aed3eb1311ecbca21efed32f30950f8453f789c2c582e5",
+    "content_sha256": "7c32a323288b8225961e17adf5bf4e495342a91c719cdec790b80af9c1890581",
+    "splits": {
+      "train": ["P01", "P02", "P05", "P06", "P09", "P10", "P13", "P14", "P17", "P18", "P21", "P22"],
+      "validation": ["P03", "P07", "P11", "P15", "P19", "P23"],
+      "holdout": ["P04", "P08", "P12", "P16", "P20", "P24"]
+    }
+  },
+  "search_choices": {
+    "source": "round1_search_results",
+    "rows": 48,
+    "source_file_sha256": "fc1a2bda200562531317f7a490a4b21f9b1d4542e0ca63e1391c7bdc45617357",
+    "reuse_policy": "ranks_only_recover_intents_in_original_discovery_context",
+    "new_search_allowed": false
+  },
+  "seed_banks": {
+    "discovery": [9106001, 9106002],
+    "train": [9107001, 9107002, 9107003, 9107004, 9107005, 9107006, 9107007, 9107008],
+    "validation": [9108001, 9108002, 9108003, 9108004, 9108005, 9108006, 9108007, 9108008],
+    "holdout": [9109001, 9109002, 9109003, 9109004, 9109005, 9109006, 9109007, 9109008, 9109009, 9109010, 9109011, 9109012, 9109013, 9109014, 9109015, 9109016],
+    "seats": [0, 1]
+  },
+  "coverage_rule": {
+    "minimum_score": 0.625,
+    "minimum_score_uplift": 0.125,
+    "minimum_mean_reward_margin_exclusive": 0.0,
+    "portfolio_cap": 12,
+    "clustering": "response_based_greedy_set_cover",
+    "similarity_only_merge_forbidden": true
+  },
+  "execution_order": [
+    "discovery_semantic_equivalence",
+    "fresh_train_matrix",
+    "train_response_clustering",
+    "paired_validation_if_train_gate_passes"
+  ],
+  "validation": {
+    "role": "paired_comparison_only",
+    "untouched_confirmatory": false,
+    "reason": "round1_validation_outcomes_already_viewed"
+  },
+  "holdout": {
+    "status": "locked_not_evaluated",
+    "action_tapes_must_not_be_loaded": true,
+    "seeds_must_not_be_run": true,
+    "later_authorization_required": true
+  },
+  "runtime_lock_required_before_simulation": true
+}

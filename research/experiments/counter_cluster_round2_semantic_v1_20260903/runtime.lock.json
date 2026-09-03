@@ -1,0 +1,94 @@
+{
+  "schema": "kaggriculture.counter-cluster-round2-runtime-lock.v1",
+  "frozen_at_utc": "2026-09-03T01:31:06.848395+00:00",
+  "simulation_started": false,
+  "source_sha256": "0f884f76a73d2604eecaeb24ce8b680c83a4699211d7308e42a91c4499c9b190",
+  "native_extension": {
+    "role": "round2_native_extension",
+    "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\python\\fast_kaggriculture\\_fast_kaggriculture.cp313-win_amd64.pyd",
+    "bytes": 1451520,
+    "sha256": "77ed37c05776c4e95abadaf50a58a16116cca08cee9be32aba4e7965c85870ed"
+  },
+  "api_contract_test": {
+    "role": "api_contract_test",
+    "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\test_semantic_api_contract.py",
+    "bytes": 2024,
+    "sha256": "f70d777ef09347f4172c65f2e8b650969e7bb581272baef06a8e277397526f44",
+    "passed": true,
+    "required_arguments": [
+      "decision_days",
+      "selected_ranks",
+      "selected_deltas",
+      "capture_trace"
+    ]
+  },
+  "files": [
+    {
+      "role": "v3_teammate_source",
+      "path": "D:\\Kaggriculture\\route_clustering_top40_20260831\\output-v3\\agent-dynamic\\multifile\\teammate_base.py",
+      "bytes": 547655,
+      "sha256": "0f884f76a73d2604eecaeb24ce8b680c83a4699211d7308e42a91c4499c9b190"
+    },
+    {
+      "role": "round2_native_extension",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\python\\fast_kaggriculture\\_fast_kaggriculture.cp313-win_amd64.pyd",
+      "bytes": 1451520,
+      "sha256": "77ed37c05776c4e95abadaf50a58a16116cca08cee9be32aba4e7965c85870ed"
+    },
+    {
+      "role": "semantic_binding",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\src\\bindings.cpp",
+      "bytes": 106760,
+      "sha256": "e19000453e78ca8e424f56398afe3f053b0ead8b909eb6f2dee1b02c2f77e30f"
+    },
+    {
+      "role": "semantic_executor",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\src\\native_adaptive.cpp",
+      "bytes": 403967,
+      "sha256": "80b9be70a8afa1ea46e628574386e620618d8b3015838a8aad564367aa29335a"
+    },
+    {
+      "role": "semantic_executor_header",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\src\\native_adaptive.hpp",
+      "bytes": 57456,
+      "sha256": "ef98b202303e105edfe520bb249d17bc67306bd9cacaada811ac58329ca785eb"
+    },
+    {
+      "role": "api_contract_test",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\test_semantic_api_contract.py",
+      "bytes": 2024,
+      "sha256": "f70d777ef09347f4172c65f2e8b650969e7bb581272baef06a8e277397526f44",
+      "passed": true,
+      "required_arguments": [
+        "decision_days",
+        "selected_ranks",
+        "selected_deltas",
+        "capture_trace"
+      ]
+    },
+    {
+      "role": "materializer",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\materialize_plan_sequences.py",
+      "bytes": 27094,
+      "sha256": "39ed920aad78e47b5120df6537f69513bbf1c16e3399e918baa34943542dcdca"
+    },
+    {
+      "role": "evaluator",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\evaluate_semantic.py",
+      "bytes": 49070,
+      "sha256": "0b4945dfc2417436d180d922c3ce709ad2b7fda664f6af5f83e4cfa10654d35a"
+    },
+    {
+      "role": "frozen_config",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\config.json",
+      "bytes": 3845,
+      "sha256": "f2f3b1f717791044a2e212b72b51ca58d623d8f12f6d7e4fa89b55db4f628835"
+    },
+    {
+      "role": "input_lock",
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\inputs.lock.json",
+      "bytes": 4114,
+      "sha256": "157893ca98f92687796652007062568662280e9b93d043c97f18de8f9b01c8b5"
+    }
+  ]
+}

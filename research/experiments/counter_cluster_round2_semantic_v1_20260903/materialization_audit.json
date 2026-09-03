@@ -1,0 +1,4516 @@
+{
+  "schema": "kaggriculture.counter-cluster-plan-materialization-audit.v1",
+  "generated_at_utc": "2026-09-03T01:21:57.521194+00:00",
+  "passed": true,
+  "scope": "48 original discovery scenarios only; no fresh-seed train, validation, or holdout outcomes were evaluated",
+  "summary": {
+    "expected_rows": 48,
+    "audited_rows": 48,
+    "passed_rows": 48,
+    "failed_rows": 0,
+    "unique_semantic_fists": 25
+  },
+  "inputs": {
+    "round1_search_results": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\search_results.json",
+      "sha256": "fc1a2bda200562531317f7a490a4b21f9b1d4542e0ca63e1391c7bdc45617357",
+      "config_sha256": "ee660c82781657d7dd9f0dbee917bd5573686fe08c0014f8fcdc0f3fc9ef9dbf"
+    },
+    "panel": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\panel24.json",
+      "sha256": "a93c51d2f8a48deaa7aed3eb1311ecbca21efed32f30950f8453f789c2c582e5",
+      "content_sha256": "7c32a323288b8225961e17adf5bf4e495342a91c719cdec790b80af9c1890581"
+    },
+    "source": {
+      "path": "D:\\Kaggriculture\\route_clustering_top40_20260831\\output-v3\\agent-dynamic\\multifile\\teammate_base.py",
+      "sha256": "0f884f76a73d2604eecaeb24ce8b680c83a4699211d7308e42a91c4499c9b190"
+    },
+    "base_actions": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\discovery_actions.json.zlib",
+      "sha256": "81310eb8030d5f25e2b2e340e86f3dd66d6d5ceaefa05222c08e696f229c3405"
+    },
+    "base_metadata": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round1\\discovery_library.json",
+      "sha256": "f2cfd7c1254603d626f8e256d689fe8bc67d1fe88019c597ff5e7c8f6fa7e538"
+    },
+    "genome": {
+      "path": "D:\\github\\Kaggriculture_candidate8\\nt\\latest_20260901_candidate8_width12_mcts\\workspace\\experiments\\ecobot_adaptive_planner_v1\\configs\\w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18d61ce860b17a7c510a9228a385964765357fb6599f10a5289afa727bda9694"
+    },
+    "round2_native_extension": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\native\\fast_kaggriculture\\python\\fast_kaggriculture\\_fast_kaggriculture.cp313-win_amd64.pyd",
+      "sha256": "77ed37c05776c4e95abadaf50a58a16116cca08cee9be32aba4e7965c85870ed"
+    },
+    "runtime_lock": {
+      "path": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\experiments\\counter_cluster_round2_semantic_v1\\runtime.lock.json",
+      "sha256": "746b14fb2c1069e1910bb4dd6a236366eb8dd0792a061fa2f8d1b5ea19c509e2",
+      "schema": "kaggriculture.counter-cluster-round2-runtime-lock.v1"
+    }
+  },
+  "rows": [
+    {
+      "task_id": "P01:9106001:0",
+      "panel_id": "P01",
+      "opponent_action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        34,
+        31,
+        58,
+        0
+      ],
+      "semantic_fist_id": "semantic-fist:a7844111621452ca8f4098e9785b59b1c02c7463bd2266f3c945ef747b4468b3",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          77159.0,
+          74495.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          4,
+          6,
+          0
+        ],
+        "signatures": [
+          15019185078291563059,
+          2933378785350420909,
+          12900012734155745586,
+          9594938948157904509,
+          15019185078291563059
+        ],
+        "joint_trace_sha256": "d3662116a20b59417ce789e74fcdf1f54da5a2716a28a12f13fc1b6d59881e45",
+        "candidate_action_sha256": "e0654a2d5c3b603dff5939491f76970bf0219d704f2df8804c5bc848db5c3a0b",
+        "delta_sha256": [
+          "6a60a4e7fa3752c1c73b0940a858a9dd1d4ed9b58822d1c2f40e312d334ffa84",
+          "f55fc82e0a25b43a649f7741bc30550635eac6129a6c0820668a55f6e45e8f10",
+          "e0f280ab55fd9558f44f6ed778ea0235ee1ab438dc9df1d3af66894fc7bfc523",
+          "1ebc957c4dce63ca8d7bc9fb589e2d06212b33f15022e27f62ab2df02bf17198",
+          "f75523206e59cfde38dae20b465822628126b525cc7427010fa067b53f500d41"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          77159.0,
+          74495.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          4,
+          6,
+          0
+        ],
+        "signatures": [
+          15019185078291563059,
+          2933378785350420909,
+          12900012734155745586,
+          9594938948157904509,
+          15019185078291563059
+        ],
+        "joint_trace_sha256": "d3662116a20b59417ce789e74fcdf1f54da5a2716a28a12f13fc1b6d59881e45",
+        "candidate_action_sha256": "e0654a2d5c3b603dff5939491f76970bf0219d704f2df8804c5bc848db5c3a0b",
+        "delta_sha256": [
+          "6a60a4e7fa3752c1c73b0940a858a9dd1d4ed9b58822d1c2f40e312d334ffa84",
+          "f55fc82e0a25b43a649f7741bc30550635eac6129a6c0820668a55f6e45e8f10",
+          "e0f280ab55fd9558f44f6ed778ea0235ee1ab438dc9df1d3af66894fc7bfc523",
+          "1ebc957c4dce63ca8d7bc9fb589e2d06212b33f15022e27f62ab2df02bf17198",
+          "f75523206e59cfde38dae20b465822628126b525cc7427010fa067b53f500d41"
+        ]
+      }
+    },
+    {
+      "task_id": "P01:9106001:1",
+      "panel_id": "P01",
+      "opponent_action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        34,
+        31,
+        58,
+        0
+      ],
+      "semantic_fist_id": "semantic-fist:a7844111621452ca8f4098e9785b59b1c02c7463bd2266f3c945ef747b4468b3",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          74495.0,
+          77159.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          4,
+          6,
+          0
+        ],
+        "signatures": [
+          15019185078291563059,
+          2933378785350420909,
+          12900012734155745586,
+          9594938948157904509,
+          15019185078291563059
+        ],
+        "joint_trace_sha256": "12e5206fb47b1eabb04230dc2a0e36222803e5ed6ee2f0a9affa77daa39fbcc3",
+        "candidate_action_sha256": "e0654a2d5c3b603dff5939491f76970bf0219d704f2df8804c5bc848db5c3a0b",
+        "delta_sha256": [
+          "6a60a4e7fa3752c1c73b0940a858a9dd1d4ed9b58822d1c2f40e312d334ffa84",
+          "f55fc82e0a25b43a649f7741bc30550635eac6129a6c0820668a55f6e45e8f10",
+          "e0f280ab55fd9558f44f6ed778ea0235ee1ab438dc9df1d3af66894fc7bfc523",
+          "1ebc957c4dce63ca8d7bc9fb589e2d06212b33f15022e27f62ab2df02bf17198",
+          "f75523206e59cfde38dae20b465822628126b525cc7427010fa067b53f500d41"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          74495.0,
+          77159.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          4,
+          6,
+          0
+        ],
+        "signatures": [
+          15019185078291563059,
+          2933378785350420909,
+          12900012734155745586,
+          9594938948157904509,
+          15019185078291563059
+        ],
+        "joint_trace_sha256": "12e5206fb47b1eabb04230dc2a0e36222803e5ed6ee2f0a9affa77daa39fbcc3",
+        "candidate_action_sha256": "e0654a2d5c3b603dff5939491f76970bf0219d704f2df8804c5bc848db5c3a0b",
+        "delta_sha256": [
+          "6a60a4e7fa3752c1c73b0940a858a9dd1d4ed9b58822d1c2f40e312d334ffa84",
+          "f55fc82e0a25b43a649f7741bc30550635eac6129a6c0820668a55f6e45e8f10",
+          "e0f280ab55fd9558f44f6ed778ea0235ee1ab438dc9df1d3af66894fc7bfc523",
+          "1ebc957c4dce63ca8d7bc9fb589e2d06212b33f15022e27f62ab2df02bf17198",
+          "f75523206e59cfde38dae20b465822628126b525cc7427010fa067b53f500d41"
+        ]
+      }
+    },
+    {
+      "task_id": "P01:9106002:0",
+      "panel_id": "P01",
+      "opponent_action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        11,
+        2,
+        24,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:a74de90870a5950b3092965e81e5f1a66c8bd2e12d6bd19e29d2f1980eac8005",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          129798.0,
+          126994.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          3342479021046547216,
+          6134428264675322258,
+          3627733900749530770,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "337c3fd7101b7f17c866ec839d56c5c6e408f7c5f9d0ddc2920c20d0d4c2fc04",
+        "candidate_action_sha256": "6d774ef4565a9fd930edb245e9c588664d50aeafc4ec8871cc2724cbcbe11863",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "9678fbc8f75fcd046af0559ee2c6ad825ae12c46c8f4a77641f0ce5c11c8affe",
+          "dcbe48417f4fcb16ddf0a2281e3fdce10bba8015e07ae1e7b11b9350878147d2",
+          "904b4e0cd37769d7fade50970db8b0d54a6b00cf2222a5efd03c8d9535130461",
+          "d455a61817b602e83e711e5fccda4971048cfebde99a1a18af744c588a1e8847"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          129798.0,
+          126994.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          3342479021046547216,
+          6134428264675322258,
+          3627733900749530770,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "337c3fd7101b7f17c866ec839d56c5c6e408f7c5f9d0ddc2920c20d0d4c2fc04",
+        "candidate_action_sha256": "6d774ef4565a9fd930edb245e9c588664d50aeafc4ec8871cc2724cbcbe11863",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "9678fbc8f75fcd046af0559ee2c6ad825ae12c46c8f4a77641f0ce5c11c8affe",
+          "dcbe48417f4fcb16ddf0a2281e3fdce10bba8015e07ae1e7b11b9350878147d2",
+          "904b4e0cd37769d7fade50970db8b0d54a6b00cf2222a5efd03c8d9535130461",
+          "d455a61817b602e83e711e5fccda4971048cfebde99a1a18af744c588a1e8847"
+        ]
+      }
+    },
+    {
+      "task_id": "P01:9106002:1",
+      "panel_id": "P01",
+      "opponent_action_sha256": "b5f02208328cef2376aff16231ce6cba0fee1658aec6ad17f69b88f9651aabea",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        11,
+        36,
+        2,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:f6a04b4bfdef3d2f64da2aa98b2329a2dd82e5593325da078ecaab76c0fb0ad9",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          130911.0,
+          139510.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          4,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          3342479021046547216,
+          12327113209277036403,
+          11157544811813107125,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "cfa0970cff107474060542e4591bc9d767206345df83810dcbb95e05ec09ac4b",
+        "candidate_action_sha256": "937dd1ace5c7e3a221e52889d94fa7d6306ad6eedb908d5e2a2e0ed1e5e3da07",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "9678fbc8f75fcd046af0559ee2c6ad825ae12c46c8f4a77641f0ce5c11c8affe",
+          "566287dc331558a3afde410ce38f4e3a3542e4bf462b87a03808748627203366",
+          "88385719bff9e9ddfc8cb9888c937a68ebe3c2fc9d93549311b891659ae2956b",
+          "cb8f0776bd70f593948844634127ce80fa7665f41341a3f49fa4063bf5f6e0c5"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          130911.0,
+          139510.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          4,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          3342479021046547216,
+          12327113209277036403,
+          11157544811813107125,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "cfa0970cff107474060542e4591bc9d767206345df83810dcbb95e05ec09ac4b",
+        "candidate_action_sha256": "937dd1ace5c7e3a221e52889d94fa7d6306ad6eedb908d5e2a2e0ed1e5e3da07",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "9678fbc8f75fcd046af0559ee2c6ad825ae12c46c8f4a77641f0ce5c11c8affe",
+          "566287dc331558a3afde410ce38f4e3a3542e4bf462b87a03808748627203366",
+          "88385719bff9e9ddfc8cb9888c937a68ebe3c2fc9d93549311b891659ae2956b",
+          "cb8f0776bd70f593948844634127ce80fa7665f41341a3f49fa4063bf5f6e0c5"
+        ]
+      }
+    },
+    {
+      "task_id": "P02:9106001:0",
+      "panel_id": "P02",
+      "opponent_action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        60,
+        7,
+        16,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:a6eb24c892ae4ea60ef258132d1bb102d1a8b02ecaddf2f757d1a015cef46a81",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          80524.0,
+          60977.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          3,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          9617414644598180659,
+          7725007908858020631,
+          15682770453424455219,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "0d0e03c35a3c62ca62761bc5421434d1132b0f0409c4fed69deb49e1685e2ce5",
+        "candidate_action_sha256": "5c55db14edbdcad00c6c1d6c18ab58e21a03127dfad0d6e83dd79691b5a8577f",
+        "delta_sha256": [
+          "6a6913876f1d5e338354038f7a25e6c2ec3f252a518d10658430c09510406a3b",
+          "659a341db69314c86315bc93e0e54dd01b2f96ac592b9a8d979edf958df20ec8",
+          "1d65065f1df91f4224fa0fde0e3aa8b469ac6ff2ee64fc859baa317d7f2170b2",
+          "3cf9493e096aeafdf7dded75cc425e11b2b248528b31d813b20a797ade979d7e",
+          "dccc274be28d757e26f25521fa91e030dbd039d35ba5c6c2f2c920456bd8c174"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          80524.0,
+          60977.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          3,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          9617414644598180659,
+          7725007908858020631,
+          15682770453424455219,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "0d0e03c35a3c62ca62761bc5421434d1132b0f0409c4fed69deb49e1685e2ce5",
+        "candidate_action_sha256": "5c55db14edbdcad00c6c1d6c18ab58e21a03127dfad0d6e83dd79691b5a8577f",
+        "delta_sha256": [
+          "6a6913876f1d5e338354038f7a25e6c2ec3f252a518d10658430c09510406a3b",
+          "659a341db69314c86315bc93e0e54dd01b2f96ac592b9a8d979edf958df20ec8",
+          "1d65065f1df91f4224fa0fde0e3aa8b469ac6ff2ee64fc859baa317d7f2170b2",
+          "3cf9493e096aeafdf7dded75cc425e11b2b248528b31d813b20a797ade979d7e",
+          "dccc274be28d757e26f25521fa91e030dbd039d35ba5c6c2f2c920456bd8c174"
+        ]
+      }
+    },
+    {
+      "task_id": "P02:9106001:1",
+      "panel_id": "P02",
+      "opponent_action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        60,
+        7,
+        16,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:a6eb24c892ae4ea60ef258132d1bb102d1a8b02ecaddf2f757d1a015cef46a81",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          60977.0,
+          80524.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          3,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          9617414644598180659,
+          7725007908858020631,
+          15682770453424455219,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "0e6f885057e20c85749b209e23d7f283e129f7c294281e23ae3798e4db77849e",
+        "candidate_action_sha256": "5c55db14edbdcad00c6c1d6c18ab58e21a03127dfad0d6e83dd79691b5a8577f",
+        "delta_sha256": [
+          "6a6913876f1d5e338354038f7a25e6c2ec3f252a518d10658430c09510406a3b",
+          "659a341db69314c86315bc93e0e54dd01b2f96ac592b9a8d979edf958df20ec8",
+          "1d65065f1df91f4224fa0fde0e3aa8b469ac6ff2ee64fc859baa317d7f2170b2",
+          "3cf9493e096aeafdf7dded75cc425e11b2b248528b31d813b20a797ade979d7e",
+          "dccc274be28d757e26f25521fa91e030dbd039d35ba5c6c2f2c920456bd8c174"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          60977.0,
+          80524.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          3,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          9617414644598180659,
+          7725007908858020631,
+          15682770453424455219,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "0e6f885057e20c85749b209e23d7f283e129f7c294281e23ae3798e4db77849e",
+        "candidate_action_sha256": "5c55db14edbdcad00c6c1d6c18ab58e21a03127dfad0d6e83dd79691b5a8577f",
+        "delta_sha256": [
+          "6a6913876f1d5e338354038f7a25e6c2ec3f252a518d10658430c09510406a3b",
+          "659a341db69314c86315bc93e0e54dd01b2f96ac592b9a8d979edf958df20ec8",
+          "1d65065f1df91f4224fa0fde0e3aa8b469ac6ff2ee64fc859baa317d7f2170b2",
+          "3cf9493e096aeafdf7dded75cc425e11b2b248528b31d813b20a797ade979d7e",
+          "dccc274be28d757e26f25521fa91e030dbd039d35ba5c6c2f2c920456bd8c174"
+        ]
+      }
+    },
+    {
+      "task_id": "P02:9106002:0",
+      "panel_id": "P02",
+      "opponent_action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        2,
+        43,
+        62,
+        6,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:9668d5a6ea52a0b4e1e8a1eaa91f722f2b50007ddefc532913670f8261adefe3",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          101062.0,
+          95198.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          2492601559313133140,
+          14549800078720759280,
+          7689868501183227703,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "e0fc8079e016813b7696b1473f4d2282d30c73c48619da57c2770ece1d420c48",
+        "candidate_action_sha256": "418464526d8ae8b3b349b1124c10f031749faf5277f0b9f381a991c7c67f068e",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "e5b808aae7d421838ea1886743191853cd089e9870622a259a27103b57aa6e12",
+          "020e8f15272ba43d1f81ac215be50dacb7e3457899beb2b131f6a2c159b3acfb",
+          "20882bf044e4f2180614b135a662df0e7d4ba05985dc249af07ade8b8a17fa5a",
+          "3d167876552d6235d82a56f8bedb8c56b154318f9f1174567d06485b9d8a2ea2"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          101062.0,
+          95198.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          2492601559313133140,
+          14549800078720759280,
+          7689868501183227703,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "e0fc8079e016813b7696b1473f4d2282d30c73c48619da57c2770ece1d420c48",
+        "candidate_action_sha256": "418464526d8ae8b3b349b1124c10f031749faf5277f0b9f381a991c7c67f068e",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "e5b808aae7d421838ea1886743191853cd089e9870622a259a27103b57aa6e12",
+          "020e8f15272ba43d1f81ac215be50dacb7e3457899beb2b131f6a2c159b3acfb",
+          "20882bf044e4f2180614b135a662df0e7d4ba05985dc249af07ade8b8a17fa5a",
+          "3d167876552d6235d82a56f8bedb8c56b154318f9f1174567d06485b9d8a2ea2"
+        ]
+      }
+    },
+    {
+      "task_id": "P02:9106002:1",
+      "panel_id": "P02",
+      "opponent_action_sha256": "659a02cd9d351a91cb747165858022719dee69123be03459c9ce462d5b075ec8",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        42,
+        0,
+        0,
+        10
+      ],
+      "semantic_fist_id": "semantic-fist:d32cde249b98baa72072152bca9f7bb642baaf03539f3ad0bbe721b6d70fd153",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          67678.0,
+          68328.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          0,
+          0,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          12158164228088384276,
+          15019185078291563059,
+          15019185078291563059,
+          5796630337911432395
+        ],
+        "joint_trace_sha256": "25ebb5857f37658803830cb46aa1c9f46dbf6316ff1d3bb4e1156ee2c9171b0d",
+        "candidate_action_sha256": "6324802747b04bd2a7ac6b118cb416f981de3cfd5d9a5090654d69409378ac40",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "176ec02797b700d5a05e4b7904c8e66a57ef91171c2126eef18866f259fc29ff",
+          "b39dd7f8a9735307a5ee01eb6f875fa6e87a55448975977c90977caba242bba2",
+          "c5274412260045f3b41ac55a0acabb25aea3bc96e2bd57da5afe89323c162a9a",
+          "d0c3c6ba83ee9a25c59f47127dabfb29e1a1ed810dee373fe84a731641133332"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          67678.0,
+          68328.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          4,
+          0,
+          0,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          12158164228088384276,
+          15019185078291563059,
+          15019185078291563059,
+          5796630337911432395
+        ],
+        "joint_trace_sha256": "25ebb5857f37658803830cb46aa1c9f46dbf6316ff1d3bb4e1156ee2c9171b0d",
+        "candidate_action_sha256": "6324802747b04bd2a7ac6b118cb416f981de3cfd5d9a5090654d69409378ac40",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "176ec02797b700d5a05e4b7904c8e66a57ef91171c2126eef18866f259fc29ff",
+          "b39dd7f8a9735307a5ee01eb6f875fa6e87a55448975977c90977caba242bba2",
+          "c5274412260045f3b41ac55a0acabb25aea3bc96e2bd57da5afe89323c162a9a",
+          "d0c3c6ba83ee9a25c59f47127dabfb29e1a1ed810dee373fe84a731641133332"
+        ]
+      }
+    },
+    {
+      "task_id": "P05:9106001:0",
+      "panel_id": "P05",
+      "opponent_action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        60,
+        0,
+        56,
+        43
+      ],
+      "semantic_fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          68825.0,
+          65750.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "428385e38f6d33836a13363d1be02906e0ac68c3bd77f2a0ca5ca40f380a8677",
+        "candidate_action_sha256": "e6ca1618eaa9272c29182fb93f6ae8bfb7c0e4ed6fd10ff1bfdfeedbf286b97c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          68825.0,
+          65750.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "428385e38f6d33836a13363d1be02906e0ac68c3bd77f2a0ca5ca40f380a8677",
+        "candidate_action_sha256": "e6ca1618eaa9272c29182fb93f6ae8bfb7c0e4ed6fd10ff1bfdfeedbf286b97c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      }
+    },
+    {
+      "task_id": "P05:9106001:1",
+      "panel_id": "P05",
+      "opponent_action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        60,
+        0,
+        56,
+        43
+      ],
+      "semantic_fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          65750.0,
+          68825.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "d9688dc932e97b6d8c1c10cb84005cba1fa36f78a3ee29622a05a3f17f419eca",
+        "candidate_action_sha256": "e6ca1618eaa9272c29182fb93f6ae8bfb7c0e4ed6fd10ff1bfdfeedbf286b97c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          65750.0,
+          68825.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "d9688dc932e97b6d8c1c10cb84005cba1fa36f78a3ee29622a05a3f17f419eca",
+        "candidate_action_sha256": "e6ca1618eaa9272c29182fb93f6ae8bfb7c0e4ed6fd10ff1bfdfeedbf286b97c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      }
+    },
+    {
+      "task_id": "P05:9106002:0",
+      "panel_id": "P05",
+      "opponent_action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66129.0,
+          84753.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "30a0e7543e87f316bee4bac1bb00acfdabb4b17beb74855591d77709fbd58b89",
+        "candidate_action_sha256": "2b5c9ec06568b11328cc1b56f25d9c24efd592bb0bca630d4cdd0652db16f88f",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66129.0,
+          84753.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "30a0e7543e87f316bee4bac1bb00acfdabb4b17beb74855591d77709fbd58b89",
+        "candidate_action_sha256": "2b5c9ec06568b11328cc1b56f25d9c24efd592bb0bca630d4cdd0652db16f88f",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P05:9106002:1",
+      "panel_id": "P05",
+      "opponent_action_sha256": "7db3fe3df18129f8cff781acb01dbe379b2d354c198d1dd817e4a5a1d270ae43",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          84753.0,
+          66129.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "b77a52c14645933c2e2d776968593463a4f73baa2c1da730e2670132d6efd5a0",
+        "candidate_action_sha256": "2b5c9ec06568b11328cc1b56f25d9c24efd592bb0bca630d4cdd0652db16f88f",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          84753.0,
+          66129.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "b77a52c14645933c2e2d776968593463a4f73baa2c1da730e2670132d6efd5a0",
+        "candidate_action_sha256": "2b5c9ec06568b11328cc1b56f25d9c24efd592bb0bca630d4cdd0652db16f88f",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P06:9106001:0",
+      "panel_id": "P06",
+      "opponent_action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        60,
+        0,
+        56,
+        43
+      ],
+      "semantic_fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          68804.0,
+          65174.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "4550f1f545d1b8a2ae246bce5c951f56b53b6411c352dc7e49e0dfb6ff27f929",
+        "candidate_action_sha256": "b99e668d925e53b62b08926b12b3c052ce3018363ec294a992bfde29f11ce372",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          68804.0,
+          65174.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "4550f1f545d1b8a2ae246bce5c951f56b53b6411c352dc7e49e0dfb6ff27f929",
+        "candidate_action_sha256": "b99e668d925e53b62b08926b12b3c052ce3018363ec294a992bfde29f11ce372",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      }
+    },
+    {
+      "task_id": "P06:9106001:1",
+      "panel_id": "P06",
+      "opponent_action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        60,
+        0,
+        56,
+        43
+      ],
+      "semantic_fist_id": "semantic-fist:6c8b798f04031767602e2e0e04050ef163f837391cd7f3afc6490dc868599301",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          65174.0,
+          68804.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "184c7bb0d99dbafc76211af88d7a367d9b2b331d01903c03e7841db30e0d7dac",
+        "candidate_action_sha256": "b99e668d925e53b62b08926b12b3c052ce3018363ec294a992bfde29f11ce372",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          65174.0,
+          68804.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          0,
+          7,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          15019185078291563059,
+          9812260868013616890,
+          11590453453630036770
+        ],
+        "joint_trace_sha256": "184c7bb0d99dbafc76211af88d7a367d9b2b331d01903c03e7841db30e0d7dac",
+        "candidate_action_sha256": "b99e668d925e53b62b08926b12b3c052ce3018363ec294a992bfde29f11ce372",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "c7f4dd244bcd75f381f8903b0be2244f20f4f9c2afd24482df3922ea2d27b2b4",
+          "55896bdfbb7f19fa45bc19c58bdd9ac7ab8a2ed8960227313366cdb871032deb",
+          "1903cdaef25173fd6bdbd8e6dc3ea004547094855d4389928c3371873ad620a6"
+        ]
+      }
+    },
+    {
+      "task_id": "P06:9106002:0",
+      "panel_id": "P06",
+      "opponent_action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66157.0,
+          84122.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "249487da840e63709a9587d1e203c119b5ac7145dc30047446a414bba7fc0cd2",
+        "candidate_action_sha256": "d09de28183d64f7d582447fcd7c10e2263cf058b7c3d01621d5261dba74e72eb",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66157.0,
+          84122.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "249487da840e63709a9587d1e203c119b5ac7145dc30047446a414bba7fc0cd2",
+        "candidate_action_sha256": "d09de28183d64f7d582447fcd7c10e2263cf058b7c3d01621d5261dba74e72eb",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P06:9106002:1",
+      "panel_id": "P06",
+      "opponent_action_sha256": "02ff681ab0df0e2e5c2dd3ac1aa97677e29ca1cd2bcc06b7f68bde0c4b5e695b",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          84122.0,
+          66157.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "d21b0c66d74c60be62106ef399282588ab6523f297f4e3c96197e3344b78a77c",
+        "candidate_action_sha256": "d09de28183d64f7d582447fcd7c10e2263cf058b7c3d01621d5261dba74e72eb",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          84122.0,
+          66157.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "d21b0c66d74c60be62106ef399282588ab6523f297f4e3c96197e3344b78a77c",
+        "candidate_action_sha256": "d09de28183d64f7d582447fcd7c10e2263cf058b7c3d01621d5261dba74e72eb",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P09:9106001:0",
+      "panel_id": "P09",
+      "opponent_action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        59,
+        23,
+        7,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:c54316685abeb78522ce7feb3f483aca4aa62fdd5a856cec57baabaaf4ee068e",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          65845.0,
+          64273.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          1,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          10722280826011327638,
+          5765937744181681109
+        ],
+        "joint_trace_sha256": "2c4568bfc8067d8eb56e4945e283af831fdbace880c640db907c037b6855d46a",
+        "candidate_action_sha256": "3f98dca416d96c2cf3aac436a7095c06bdf8b47a7eef859996f53bd324bc8292",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "2db65622f4ada4312d2243e022176b6f5ac8c8d6edacd3eeacac788588073534",
+          "bd6df710ac1f94b399b1037e0ecc4c298ca850fcd09ad11bd9937f071d356314"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          65845.0,
+          64273.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          1,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          10722280826011327638,
+          5765937744181681109
+        ],
+        "joint_trace_sha256": "2c4568bfc8067d8eb56e4945e283af831fdbace880c640db907c037b6855d46a",
+        "candidate_action_sha256": "3f98dca416d96c2cf3aac436a7095c06bdf8b47a7eef859996f53bd324bc8292",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "2db65622f4ada4312d2243e022176b6f5ac8c8d6edacd3eeacac788588073534",
+          "bd6df710ac1f94b399b1037e0ecc4c298ca850fcd09ad11bd9937f071d356314"
+        ]
+      }
+    },
+    {
+      "task_id": "P09:9106001:1",
+      "panel_id": "P09",
+      "opponent_action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        59,
+        23,
+        7,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:c54316685abeb78522ce7feb3f483aca4aa62fdd5a856cec57baabaaf4ee068e",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          64273.0,
+          65845.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          1,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          10722280826011327638,
+          5765937744181681109
+        ],
+        "joint_trace_sha256": "a049efe1b084470d06b400d7858c52af3cf8f76e8448ae5a10f8b80309392360",
+        "candidate_action_sha256": "3f98dca416d96c2cf3aac436a7095c06bdf8b47a7eef859996f53bd324bc8292",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "2db65622f4ada4312d2243e022176b6f5ac8c8d6edacd3eeacac788588073534",
+          "bd6df710ac1f94b399b1037e0ecc4c298ca850fcd09ad11bd9937f071d356314"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          64273.0,
+          65845.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          1,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          10722280826011327638,
+          5765937744181681109
+        ],
+        "joint_trace_sha256": "a049efe1b084470d06b400d7858c52af3cf8f76e8448ae5a10f8b80309392360",
+        "candidate_action_sha256": "3f98dca416d96c2cf3aac436a7095c06bdf8b47a7eef859996f53bd324bc8292",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "2db65622f4ada4312d2243e022176b6f5ac8c8d6edacd3eeacac788588073534",
+          "bd6df710ac1f94b399b1037e0ecc4c298ca850fcd09ad11bd9937f071d356314"
+        ]
+      }
+    },
+    {
+      "task_id": "P09:9106002:0",
+      "panel_id": "P09",
+      "opponent_action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        52,
+        42,
+        57,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66481.0,
+          82577.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "f4f0d20cbc5c142c4b5a2e020d4da78c1c16bbc5adfb96ba5a0d16250d659df7",
+        "candidate_action_sha256": "b6f34efc029045f05a00864df4f8b2c42aab9af25330b48cec16b70967044032",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66481.0,
+          82577.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "f4f0d20cbc5c142c4b5a2e020d4da78c1c16bbc5adfb96ba5a0d16250d659df7",
+        "candidate_action_sha256": "b6f34efc029045f05a00864df4f8b2c42aab9af25330b48cec16b70967044032",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      }
+    },
+    {
+      "task_id": "P09:9106002:1",
+      "panel_id": "P09",
+      "opponent_action_sha256": "830c6823fdeae9df1482d9cbe7254e490d8bc92a411099e6aff34aa561f6034b",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        52,
+        42,
+        57,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          82577.0,
+          66481.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "8b9195f439f56fb15ef07a3c83b5500fbe5dddff6478da38311676d49d1bf6a0",
+        "candidate_action_sha256": "b6f34efc029045f05a00864df4f8b2c42aab9af25330b48cec16b70967044032",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          82577.0,
+          66481.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "8b9195f439f56fb15ef07a3c83b5500fbe5dddff6478da38311676d49d1bf6a0",
+        "candidate_action_sha256": "b6f34efc029045f05a00864df4f8b2c42aab9af25330b48cec16b70967044032",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      }
+    },
+    {
+      "task_id": "P10:9106001:0",
+      "panel_id": "P10",
+      "opponent_action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        59,
+        23,
+        37,
+        26
+      ],
+      "semantic_fist_id": "semantic-fist:b21a4cf1c9d0747f0abb9600f820bc0c6976023d66d2481e987c747080c8d7f7",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66336.0,
+          64466.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          4,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          12310470859438310387,
+          12427678662667440095
+        ],
+        "joint_trace_sha256": "594040cbdc76a0776e0fbeaecf0b3abce2cbde05468f38b65fbcef9a7f00443e",
+        "candidate_action_sha256": "17d159f9d7ae535fb56f87147a0728d847a78bec1707645c548336163c5cd13b",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "21a49685807c7ac6234beda85c42915348c9db611ae5d3bcdc6bf33041bfcf1d",
+          "3dd226ae31e04b50890620ad82a88ba576c452781d45fbd69de4f809e8affa7b"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66336.0,
+          64466.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          4,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          12310470859438310387,
+          12427678662667440095
+        ],
+        "joint_trace_sha256": "594040cbdc76a0776e0fbeaecf0b3abce2cbde05468f38b65fbcef9a7f00443e",
+        "candidate_action_sha256": "17d159f9d7ae535fb56f87147a0728d847a78bec1707645c548336163c5cd13b",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "21a49685807c7ac6234beda85c42915348c9db611ae5d3bcdc6bf33041bfcf1d",
+          "3dd226ae31e04b50890620ad82a88ba576c452781d45fbd69de4f809e8affa7b"
+        ]
+      }
+    },
+    {
+      "task_id": "P10:9106001:1",
+      "panel_id": "P10",
+      "opponent_action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        59,
+        23,
+        37,
+        26
+      ],
+      "semantic_fist_id": "semantic-fist:b21a4cf1c9d0747f0abb9600f820bc0c6976023d66d2481e987c747080c8d7f7",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          64466.0,
+          66336.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          4,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          12310470859438310387,
+          12427678662667440095
+        ],
+        "joint_trace_sha256": "23c3849118194b9f65d68b91b50b2478e98f427b316024a89f5b0cdc6c0c7dc2",
+        "candidate_action_sha256": "17d159f9d7ae535fb56f87147a0728d847a78bec1707645c548336163c5cd13b",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "21a49685807c7ac6234beda85c42915348c9db611ae5d3bcdc6bf33041bfcf1d",
+          "3dd226ae31e04b50890620ad82a88ba576c452781d45fbd69de4f809e8affa7b"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          64466.0,
+          66336.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          8,
+          4,
+          4,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          4534221657128184562,
+          8353583164082933781,
+          12310470859438310387,
+          12427678662667440095
+        ],
+        "joint_trace_sha256": "23c3849118194b9f65d68b91b50b2478e98f427b316024a89f5b0cdc6c0c7dc2",
+        "candidate_action_sha256": "17d159f9d7ae535fb56f87147a0728d847a78bec1707645c548336163c5cd13b",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "1293b2f02225e78f75a95e14d8b2676b2659a2317f938211672f4d5d82a99a23",
+          "706d09da2842b6513bd13a1793b776320b216b81f7a3ee2afced95766c36e600",
+          "21a49685807c7ac6234beda85c42915348c9db611ae5d3bcdc6bf33041bfcf1d",
+          "3dd226ae31e04b50890620ad82a88ba576c452781d45fbd69de4f809e8affa7b"
+        ]
+      }
+    },
+    {
+      "task_id": "P10:9106002:0",
+      "panel_id": "P10",
+      "opponent_action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        52,
+        42,
+        57,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66470.0,
+          82547.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "b6d02dd38ca7eeb48e5479bf2d85684889e0c6d0b42f258830c138d49cc38d43",
+        "candidate_action_sha256": "bc9a9c490d3e779b6cd472d410609c0f5695c3fd18d9096d82e7140ff0939543",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66470.0,
+          82547.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "b6d02dd38ca7eeb48e5479bf2d85684889e0c6d0b42f258830c138d49cc38d43",
+        "candidate_action_sha256": "bc9a9c490d3e779b6cd472d410609c0f5695c3fd18d9096d82e7140ff0939543",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      }
+    },
+    {
+      "task_id": "P10:9106002:1",
+      "panel_id": "P10",
+      "opponent_action_sha256": "59e9312e181d669fe364f6b6a2bdcc9ec9888c22e5e0deb9c3715aef5877cf5b",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        52,
+        42,
+        57,
+        47
+      ],
+      "semantic_fist_id": "semantic-fist:3c044b910f66ccbbcf242ef65ce77a1b9eab05a677a65ac73077691ac07600bf",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          82547.0,
+          66470.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "789bf6db2e56cc559969eca01153f297457f2ac7d41955d977f77eab558e4e7c",
+        "candidate_action_sha256": "bc9a9c490d3e779b6cd472d410609c0f5695c3fd18d9096d82e7140ff0939543",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          82547.0,
+          66470.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          6,
+          8,
+          7,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          10549487681642893076,
+          5323913209569473630,
+          12076841363766808345,
+          5969060448412482964
+        ],
+        "joint_trace_sha256": "789bf6db2e56cc559969eca01153f297457f2ac7d41955d977f77eab558e4e7c",
+        "candidate_action_sha256": "bc9a9c490d3e779b6cd472d410609c0f5695c3fd18d9096d82e7140ff0939543",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "2155cdc01cbe790671577502460c956b73b7189bf81f74b06b45c8a9e899dafa",
+          "06f420adc8370dc20f4a829ab991e250a6c6cff5451c3e43b14f7226f534b321",
+          "154c07689309c1d31e6ca25e7680dcac4ebcc278cab5c6b66efca5de02ba47da",
+          "1961320c0f84f07fe5fb95f824e60d24fc57fc805c660488d53004b78fa20c36"
+        ]
+      }
+    },
+    {
+      "task_id": "P13:9106001:0",
+      "panel_id": "P13",
+      "opponent_action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        53,
+        8,
+        51,
+        4
+      ],
+      "semantic_fist_id": "semantic-fist:30169d2a598ca303b3a7323d8347c3b9cace819c57d18940c85ab8e8c4da02f4",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          67954.0,
+          65251.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "cf2f84136b28d99435310f16983ed74691fec511eb9805d1d18f9552a23ddb5c",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          67954.0,
+          65251.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "cf2f84136b28d99435310f16983ed74691fec511eb9805d1d18f9552a23ddb5c",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      }
+    },
+    {
+      "task_id": "P13:9106001:1",
+      "panel_id": "P13",
+      "opponent_action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        53,
+        8,
+        51,
+        4
+      ],
+      "semantic_fist_id": "semantic-fist:30169d2a598ca303b3a7323d8347c3b9cace819c57d18940c85ab8e8c4da02f4",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          65251.0,
+          67954.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "46e0a860ecf423096dd209cc69d67643d7596f15c1eec0bf95bfdd3c77295fe9",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          65251.0,
+          67954.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "46e0a860ecf423096dd209cc69d67643d7596f15c1eec0bf95bfdd3c77295fe9",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      }
+    },
+    {
+      "task_id": "P13:9106002:0",
+      "panel_id": "P13",
+      "opponent_action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66180.0,
+          84727.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "33876cb2215a63acf23f20f1ed5db69748e5f48f1ae6474d04ede0c26119b447",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66180.0,
+          84727.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "33876cb2215a63acf23f20f1ed5db69748e5f48f1ae6474d04ede0c26119b447",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P13:9106002:1",
+      "panel_id": "P13",
+      "opponent_action_sha256": "429f6b610e86a9263adbdbead29f537dd617e06a1b36a26060f99c93094fc6f1",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          84727.0,
+          66180.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "919cd65784b2a9b958b63552cf2fb4276909678e4267f611aca14bf9a5aea775",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          84727.0,
+          66180.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "919cd65784b2a9b958b63552cf2fb4276909678e4267f611aca14bf9a5aea775",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P14:9106001:0",
+      "panel_id": "P14",
+      "opponent_action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        53,
+        8,
+        51,
+        4
+      ],
+      "semantic_fist_id": "semantic-fist:30169d2a598ca303b3a7323d8347c3b9cace819c57d18940c85ab8e8c4da02f4",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          67954.0,
+          65266.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "9ec0837a42ae0b216f049d5a572129436c2df18fa064097b53ad66ca1837bdf6",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          67954.0,
+          65266.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "9ec0837a42ae0b216f049d5a572129436c2df18fa064097b53ad66ca1837bdf6",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      }
+    },
+    {
+      "task_id": "P14:9106001:1",
+      "panel_id": "P14",
+      "opponent_action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        53,
+        8,
+        51,
+        4
+      ],
+      "semantic_fist_id": "semantic-fist:30169d2a598ca303b3a7323d8347c3b9cace819c57d18940c85ab8e8c4da02f4",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          65266.0,
+          67954.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "675cdeb5d531db21b183809b9b9d4df5fbe16599be852b30c4e08dbcdef78cbf",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          65266.0,
+          67954.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          6,
+          1,
+          6,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          12813108677857861436,
+          14086981740671493337,
+          4742861873807426298,
+          17294731316769614961
+        ],
+        "joint_trace_sha256": "675cdeb5d531db21b183809b9b9d4df5fbe16599be852b30c4e08dbcdef78cbf",
+        "candidate_action_sha256": "1b05e1dafaccb4c6293f8eef917f13285e449c228a103b050e1a3e477c452435",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "c55fafad0856115bfa677d2ab35a27e8baa96bce727c3c2c7802abfdbf493760",
+          "97d9a92cd4175092d2b834d701a8b9ac79c382279bdc8efe986347fda1c67985",
+          "e7b27d7757a5c8a19db7b75d2ae984063d7418c5d66825d259421f3f7b5f7e92",
+          "7e758c0877e0058cbbe2af8972c02e02890f1657b1d26f4b138200aa42271187"
+        ]
+      }
+    },
+    {
+      "task_id": "P14:9106002:0",
+      "panel_id": "P14",
+      "opponent_action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          66181.0,
+          84732.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "c5d5a215029e6ae5545ef45a66dab2a026e0bb64dd59644e36701fa5d7cc3272",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          66181.0,
+          84732.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "c5d5a215029e6ae5545ef45a66dab2a026e0bb64dd59644e36701fa5d7cc3272",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P14:9106002:1",
+      "panel_id": "P14",
+      "opponent_action_sha256": "534edfdfea6f0bf05753cbe448fe179c2cb1c1d7457b5337479d606de9716a21",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        15,
+        53,
+        61,
+        3
+      ],
+      "semantic_fist_id": "semantic-fist:dc76ba94af89229dd8523a5078845ff9c4324f096071d97f3769a0237aa09361",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          84732.0,
+          66181.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "ee208461eed06f7f463f0159d564edbd04d22a59a4ac828da3e89e663ec6757c",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          84732.0,
+          66181.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          4,
+          7,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          16126581722679901328,
+          8537316912861566259,
+          2130393712003495870,
+          8516428828899690992
+        ],
+        "joint_trace_sha256": "ee208461eed06f7f463f0159d564edbd04d22a59a4ac828da3e89e663ec6757c",
+        "candidate_action_sha256": "59b0517bb21b2df18085a75a4adc838663412d88c65291c5032ac2db625fde93",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "a4d828b80ed75f7cd4c105490fb295dd181018eb4aad75aa5ac0f51d632cc6e8",
+          "7b547bcbaf28d7cd28ddae42be3112ca3f047363dc701f638b78062a82b792c9",
+          "05e5e3fa312f65fb5f4efe3d4e303a2bd685699af7b4f80b858c6abaa68720a7",
+          "db2b1419789d649c319cc0869c62a18aab1329478570e0b5fb516a1e17952adc"
+        ]
+      }
+    },
+    {
+      "task_id": "P17:9106001:0",
+      "panel_id": "P17",
+      "opponent_action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        2,
+        40,
+        4,
+        40,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:b236e6d8029b414618398b261b81dacd353d8f7eb48d1254979aed0dd4a39a8d",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          110933.0,
+          99900.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          15036507813347047006,
+          4440291931224777744,
+          11844253548573871819,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "ba29139f0e2cb4dc5123ef4bc7092608c0ba27313e64fd751fddfab11f088cdf",
+        "candidate_action_sha256": "50eaf1d234b6a3c6158303f360037a09af04b83ed32f21e35fa881be7d5fbb1b",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "7f7095617718c55d71af5d678cb53e23c7902c707c9984ec99efc36cc2b6e00a",
+          "a049f1a5223cdff0e85f039f6e78f393fcfcb2460373f79acc806814fc05610c",
+          "3c0aa2bc2059ceb9e022ebbccc4e261afcec939b07d9487443831ee815e02378",
+          "0d14bf16da26259923c57d86fe2efd9114151b50975fed3ff0249e19d6f326a5"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          110933.0,
+          99900.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          15036507813347047006,
+          4440291931224777744,
+          11844253548573871819,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "ba29139f0e2cb4dc5123ef4bc7092608c0ba27313e64fd751fddfab11f088cdf",
+        "candidate_action_sha256": "50eaf1d234b6a3c6158303f360037a09af04b83ed32f21e35fa881be7d5fbb1b",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "7f7095617718c55d71af5d678cb53e23c7902c707c9984ec99efc36cc2b6e00a",
+          "a049f1a5223cdff0e85f039f6e78f393fcfcb2460373f79acc806814fc05610c",
+          "3c0aa2bc2059ceb9e022ebbccc4e261afcec939b07d9487443831ee815e02378",
+          "0d14bf16da26259923c57d86fe2efd9114151b50975fed3ff0249e19d6f326a5"
+        ]
+      }
+    },
+    {
+      "task_id": "P17:9106001:1",
+      "panel_id": "P17",
+      "opponent_action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        2,
+        40,
+        4,
+        40,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:b236e6d8029b414618398b261b81dacd353d8f7eb48d1254979aed0dd4a39a8d",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          99900.0,
+          110933.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          15036507813347047006,
+          4440291931224777744,
+          11844253548573871819,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "5dd433c0f3bbc718a4dd8db6f3047ef314a0fb8193cb06334d1f9da9e93cf176",
+        "candidate_action_sha256": "50eaf1d234b6a3c6158303f360037a09af04b83ed32f21e35fa881be7d5fbb1b",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "7f7095617718c55d71af5d678cb53e23c7902c707c9984ec99efc36cc2b6e00a",
+          "a049f1a5223cdff0e85f039f6e78f393fcfcb2460373f79acc806814fc05610c",
+          "3c0aa2bc2059ceb9e022ebbccc4e261afcec939b07d9487443831ee815e02378",
+          "0d14bf16da26259923c57d86fe2efd9114151b50975fed3ff0249e19d6f326a5"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          99900.0,
+          110933.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          1,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          15036507813347047006,
+          4440291931224777744,
+          11844253548573871819,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "5dd433c0f3bbc718a4dd8db6f3047ef314a0fb8193cb06334d1f9da9e93cf176",
+        "candidate_action_sha256": "50eaf1d234b6a3c6158303f360037a09af04b83ed32f21e35fa881be7d5fbb1b",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "7f7095617718c55d71af5d678cb53e23c7902c707c9984ec99efc36cc2b6e00a",
+          "a049f1a5223cdff0e85f039f6e78f393fcfcb2460373f79acc806814fc05610c",
+          "3c0aa2bc2059ceb9e022ebbccc4e261afcec939b07d9487443831ee815e02378",
+          "0d14bf16da26259923c57d86fe2efd9114151b50975fed3ff0249e19d6f326a5"
+        ]
+      }
+    },
+    {
+      "task_id": "P17:9106002:0",
+      "panel_id": "P17",
+      "opponent_action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        9,
+        29,
+        57,
+        50
+      ],
+      "semantic_fist_id": "semantic-fist:e9925e0e47431b4b66261395751313007cc05a27d1055eb7b74d385b3b7039e7",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          146315.0,
+          120770.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          4,
+          8,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          4680061865884265558,
+          11991413379297963762,
+          6777787719891498680,
+          12893639936065915161
+        ],
+        "joint_trace_sha256": "0bb3e43c3f8069aa69305bf24a9c40dd491779965ee59f11e03b0dbdeb0ec878",
+        "candidate_action_sha256": "c3ae2c4d78d6632163353e8d96d3febe9262a3d85f49ee83619652a2ca004782",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "97f2034d952bf33a5ecc9ce7b22f286dbf29925cd23177330ab22c3a395e45e5",
+          "717aad5d2708f7c3d5a87d5f2e601f959c0477a396274c1edcb8f46137593d65",
+          "e5c06dde2b3228d6fe0d5ef8e6c12746468da9867115b1f41c5e6f43c60d5680",
+          "126f5501a20f062ccadaf359dedb551858591cfaa4d4c67b4d1db6ced793d5ce"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          146315.0,
+          120770.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          2,
+          4,
+          8,
+          6
+        ],
+        "signatures": [
+          15019185078291563059,
+          4680061865884265558,
+          11991413379297963762,
+          6777787719891498680,
+          12893639936065915161
+        ],
+        "joint_trace_sha256": "0bb3e43c3f8069aa69305bf24a9c40dd491779965ee59f11e03b0dbdeb0ec878",
+        "candidate_action_sha256": "c3ae2c4d78d6632163353e8d96d3febe9262a3d85f49ee83619652a2ca004782",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "97f2034d952bf33a5ecc9ce7b22f286dbf29925cd23177330ab22c3a395e45e5",
+          "717aad5d2708f7c3d5a87d5f2e601f959c0477a396274c1edcb8f46137593d65",
+          "e5c06dde2b3228d6fe0d5ef8e6c12746468da9867115b1f41c5e6f43c60d5680",
+          "126f5501a20f062ccadaf359dedb551858591cfaa4d4c67b4d1db6ced793d5ce"
+        ]
+      }
+    },
+    {
+      "task_id": "P17:9106002:1",
+      "panel_id": "P17",
+      "opponent_action_sha256": "8b3e6450bcb628d125b178b354a768143b624b2be0c94308d46fda7cafc468d8",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        2,
+        29,
+        16,
+        7,
+        19
+      ],
+      "semantic_fist_id": "semantic-fist:9f940cbabd9b63d9db9023a54292f52f5e6ecf86d59317d36535a52ff5eb197b",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          121779.0,
+          148959.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          2,
+          1,
+          2
+        ],
+        "signatures": [
+          12597291036357239184,
+          2641852725109385567,
+          9315235622527360173,
+          11816973213035439793,
+          9439059833455430639
+        ],
+        "joint_trace_sha256": "753d9059a2d13aeb927225bc4ce169f4343d6594ec9479e56e64881ebcb85114",
+        "candidate_action_sha256": "835048f2a50c799a946b30803e6d3aa70ee9a7f78b5ad5a4407d6ac28e287a91",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "38d00a992efdbcdd140ea6fc149387c8f403846bccf3e11e27615c4a5ef0abaf",
+          "9ce277ce5c9344c1f335397002e4587a7caa8ef54b0b9382550b9a695798ab2c",
+          "2ff9c54e6afb7fd5db8cf2a7456197f0eb0e8ac9c2c49e3eb73b1737c4b7c9f2",
+          "34bc9ec34e792f172bc915a74616175cd6db103594e5210c5344f0b464fb1e36"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          121779.0,
+          148959.0
+        ],
+        "score": 1.0,
+        "families": [
+          6,
+          4,
+          2,
+          1,
+          2
+        ],
+        "signatures": [
+          12597291036357239184,
+          2641852725109385567,
+          9315235622527360173,
+          11816973213035439793,
+          9439059833455430639
+        ],
+        "joint_trace_sha256": "753d9059a2d13aeb927225bc4ce169f4343d6594ec9479e56e64881ebcb85114",
+        "candidate_action_sha256": "835048f2a50c799a946b30803e6d3aa70ee9a7f78b5ad5a4407d6ac28e287a91",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "38d00a992efdbcdd140ea6fc149387c8f403846bccf3e11e27615c4a5ef0abaf",
+          "9ce277ce5c9344c1f335397002e4587a7caa8ef54b0b9382550b9a695798ab2c",
+          "2ff9c54e6afb7fd5db8cf2a7456197f0eb0e8ac9c2c49e3eb73b1737c4b7c9f2",
+          "34bc9ec34e792f172bc915a74616175cd6db103594e5210c5344f0b464fb1e36"
+        ]
+      }
+    },
+    {
+      "task_id": "P18:9106001:0",
+      "panel_id": "P18",
+      "opponent_action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        2,
+        9,
+        26,
+        49,
+        38
+      ],
+      "semantic_fist_id": "semantic-fist:089b92b7b53e30a2f3bfa7f84665d298e074c568b7e30f4036a7c4aa4fcb91b6",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          64519.0,
+          69094.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          7,
+          5
+        ],
+        "signatures": [
+          12597291036357239184,
+          18311438733335679764,
+          3733100410451997624,
+          13295107562100887614,
+          12681267365842536017
+        ],
+        "joint_trace_sha256": "09796710aaaab54b73247d15dad24de4168933898919033c1c00cec048a6815b",
+        "candidate_action_sha256": "2dac3082d021d1be1af1a440b6da549ab2f97396303c805361fd25b2b10e7680",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "f078c333aeb2144767b41e512d6391e5fe700b7b02b4e041f31f1478f5880cdc",
+          "70205fa250a868005d62d029eda93883c958c4843170f1c3957284d830947712",
+          "df1dbf251e3bf1d82601bb8f1fc86dbce2f6ca363dc907ec88adb8e9ba6b4f21",
+          "42ca5e7624400dbe7c3fe2cd7594163bca8e8e23f6b33656bd38e1fbd39dd679"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          64519.0,
+          69094.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          7,
+          5
+        ],
+        "signatures": [
+          12597291036357239184,
+          18311438733335679764,
+          3733100410451997624,
+          13295107562100887614,
+          12681267365842536017
+        ],
+        "joint_trace_sha256": "09796710aaaab54b73247d15dad24de4168933898919033c1c00cec048a6815b",
+        "candidate_action_sha256": "2dac3082d021d1be1af1a440b6da549ab2f97396303c805361fd25b2b10e7680",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "f078c333aeb2144767b41e512d6391e5fe700b7b02b4e041f31f1478f5880cdc",
+          "70205fa250a868005d62d029eda93883c958c4843170f1c3957284d830947712",
+          "df1dbf251e3bf1d82601bb8f1fc86dbce2f6ca363dc907ec88adb8e9ba6b4f21",
+          "42ca5e7624400dbe7c3fe2cd7594163bca8e8e23f6b33656bd38e1fbd39dd679"
+        ]
+      }
+    },
+    {
+      "task_id": "P18:9106001:1",
+      "panel_id": "P18",
+      "opponent_action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        2,
+        9,
+        26,
+        24,
+        1
+      ],
+      "semantic_fist_id": "semantic-fist:0cec14f6ec114e1cc1d063d75d4a25c6951bee443a62c84a9609374832dfdd2d",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          69107.0,
+          64517.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          18311438733335679764,
+          3733100410451997624,
+          2797897313253336627,
+          16323218499637506804
+        ],
+        "joint_trace_sha256": "0b7234b8328ff6351cac9a02719dd412d9ff8472eb62cafe1f6605b27155733c",
+        "candidate_action_sha256": "048ab85f22c4cee4e4d606a755e2de910dbaa0101fdd08453c5f1e518b72e9ce",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "f078c333aeb2144767b41e512d6391e5fe700b7b02b4e041f31f1478f5880cdc",
+          "70205fa250a868005d62d029eda93883c958c4843170f1c3957284d830947712",
+          "35d76b17c6d12845d676b6d6beb0e83cb35b65b876d90d1684d8a157a4c0150a",
+          "22aa0eb027f1ec23d317fb8d757d6eb43496743b611e904130f78945268fee9c"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          69107.0,
+          64517.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          18311438733335679764,
+          3733100410451997624,
+          2797897313253336627,
+          16323218499637506804
+        ],
+        "joint_trace_sha256": "0b7234b8328ff6351cac9a02719dd412d9ff8472eb62cafe1f6605b27155733c",
+        "candidate_action_sha256": "048ab85f22c4cee4e4d606a755e2de910dbaa0101fdd08453c5f1e518b72e9ce",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "f078c333aeb2144767b41e512d6391e5fe700b7b02b4e041f31f1478f5880cdc",
+          "70205fa250a868005d62d029eda93883c958c4843170f1c3957284d830947712",
+          "35d76b17c6d12845d676b6d6beb0e83cb35b65b876d90d1684d8a157a4c0150a",
+          "22aa0eb027f1ec23d317fb8d757d6eb43496743b611e904130f78945268fee9c"
+        ]
+      }
+    },
+    {
+      "task_id": "P18:9106002:0",
+      "panel_id": "P18",
+      "opponent_action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        2,
+        19,
+        44,
+        14,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:0450d0a3cfa92d7bbe06f046778d681b074b0d0706db710c0dc97874c0da548f",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          102591.0,
+          119673.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          2,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          14457944331147636688,
+          17382733602314122547,
+          2591733741773734996,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "5bafa50c71a094882f38bf744aadac660501c38867005bb23329f1c52f79625c",
+        "candidate_action_sha256": "a16ebd8d7dd2b391a5dcd428a2cc95f486fae28406298b43d91f8ad5959d65ed",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "80102ec91cdab957385daedb5df6aefa9e851b3fd299bab197851eed8c46e46a",
+          "9fc673c48720a025fc5bdb27848eb8f3004093350f7f6fc07792ad1f1b5870f8",
+          "d2f22c8a7e8c863b149f55af20d0f4c7dfcc53dc880dc690af12c956fe678a32",
+          "d66508f41a69d3033bbfcc2ea055f9e1f4114437690f176dc0088fdbe4570077"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          102591.0,
+          119673.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          2,
+          4,
+          2,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          14457944331147636688,
+          17382733602314122547,
+          2591733741773734996,
+          11157544811813107125
+        ],
+        "joint_trace_sha256": "5bafa50c71a094882f38bf744aadac660501c38867005bb23329f1c52f79625c",
+        "candidate_action_sha256": "a16ebd8d7dd2b391a5dcd428a2cc95f486fae28406298b43d91f8ad5959d65ed",
+        "delta_sha256": [
+          "8ffdcdee4535c3d8ab4e47c58933877dfd3934432e20e1d76f331b7b29102a03",
+          "80102ec91cdab957385daedb5df6aefa9e851b3fd299bab197851eed8c46e46a",
+          "9fc673c48720a025fc5bdb27848eb8f3004093350f7f6fc07792ad1f1b5870f8",
+          "d2f22c8a7e8c863b149f55af20d0f4c7dfcc53dc880dc690af12c956fe678a32",
+          "d66508f41a69d3033bbfcc2ea055f9e1f4114437690f176dc0088fdbe4570077"
+        ]
+      }
+    },
+    {
+      "task_id": "P18:9106002:1",
+      "panel_id": "P18",
+      "opponent_action_sha256": "d1611c4bbdc75d2a96c1f3165bb9bf599a35afccc86b6107a76ca640f154b0ea",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        21,
+        18,
+        12,
+        32
+      ],
+      "semantic_fist_id": "semantic-fist:0997433397a2fe69aef9439c3e9615e0ca644cbde4d944b04d3a9483fd28972f",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          96150.0,
+          73377.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          3,
+          4
+        ],
+        "signatures": [
+          15019185078291563059,
+          5108935450491869002,
+          11086668258420597705,
+          6753281252895129712,
+          9697051262568957074
+        ],
+        "joint_trace_sha256": "e172a06d8be4cd64c116b8af64a79443107187dac46d1cdf2ef00feed89aa7a9",
+        "candidate_action_sha256": "88d14c59152b2604f331a36280a2a5bb68cdcad21a8e0f5c50d2c86ed0753271",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "4bb1d10b53ed35ccaac789d1f1d4e19e1dcab0879ce728465753fa204dddc53a",
+          "39157313f89e43fe47275f71f51e210aa6872a25ca6b2b36b4b48bbd086caa16",
+          "a7dfc3fa4b9d9517637bcb9010abc7ec1bd4ff21725a6e3b033c13bec8287350",
+          "f25836c3a65d3263b0d49dde884b181c3896e4535cbfbdf916e997618f7e6ddb"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          96150.0,
+          73377.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          3,
+          4
+        ],
+        "signatures": [
+          15019185078291563059,
+          5108935450491869002,
+          11086668258420597705,
+          6753281252895129712,
+          9697051262568957074
+        ],
+        "joint_trace_sha256": "e172a06d8be4cd64c116b8af64a79443107187dac46d1cdf2ef00feed89aa7a9",
+        "candidate_action_sha256": "88d14c59152b2604f331a36280a2a5bb68cdcad21a8e0f5c50d2c86ed0753271",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "4bb1d10b53ed35ccaac789d1f1d4e19e1dcab0879ce728465753fa204dddc53a",
+          "39157313f89e43fe47275f71f51e210aa6872a25ca6b2b36b4b48bbd086caa16",
+          "a7dfc3fa4b9d9517637bcb9010abc7ec1bd4ff21725a6e3b033c13bec8287350",
+          "f25836c3a65d3263b0d49dde884b181c3896e4535cbfbdf916e997618f7e6ddb"
+        ]
+      }
+    },
+    {
+      "task_id": "P21:9106001:0",
+      "panel_id": "P21",
+      "opponent_action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        1,
+        54,
+        8,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:9e87207297f65e1eec0d0ad43158401563f5d005da5c9b78a6c5991204d67132",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          69619.0,
+          67155.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          190525177592398899,
+          5109857831359223824,
+          14086981740671493337,
+          15433776921695337971
+        ],
+        "joint_trace_sha256": "f370871f74e7db9fd1e0d32f9f99a47b705e493df5c53f98b3a0b9f40d23c535",
+        "candidate_action_sha256": "e632a2aa0ff305fc4b49d1517b524229c147bc1f14a24778284e4499644a2197",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "a02ae7e3967f2c26408a69799b2fa86076a9ec91b0d62e1a759fb7485db9d1a2",
+          "4ba6a249883d78760d64509dcf3b07fd34a64685bfa76b7791a53253549acdf6",
+          "6b164c8f724ffd0ee0a0e93d656abc0e921b22445b50b9299f92e6a217b1b2b1",
+          "f6cf37f142223630ac624239e5d5d8f983c52c5b5193e56b0f7d375af4e3d19f"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          69619.0,
+          67155.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          190525177592398899,
+          5109857831359223824,
+          14086981740671493337,
+          15433776921695337971
+        ],
+        "joint_trace_sha256": "f370871f74e7db9fd1e0d32f9f99a47b705e493df5c53f98b3a0b9f40d23c535",
+        "candidate_action_sha256": "e632a2aa0ff305fc4b49d1517b524229c147bc1f14a24778284e4499644a2197",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "a02ae7e3967f2c26408a69799b2fa86076a9ec91b0d62e1a759fb7485db9d1a2",
+          "4ba6a249883d78760d64509dcf3b07fd34a64685bfa76b7791a53253549acdf6",
+          "6b164c8f724ffd0ee0a0e93d656abc0e921b22445b50b9299f92e6a217b1b2b1",
+          "f6cf37f142223630ac624239e5d5d8f983c52c5b5193e56b0f7d375af4e3d19f"
+        ]
+      }
+    },
+    {
+      "task_id": "P21:9106001:1",
+      "panel_id": "P21",
+      "opponent_action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        1,
+        54,
+        8,
+        2
+      ],
+      "semantic_fist_id": "semantic-fist:9e87207297f65e1eec0d0ad43158401563f5d005da5c9b78a6c5991204d67132",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          67155.0,
+          69619.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          190525177592398899,
+          5109857831359223824,
+          14086981740671493337,
+          15433776921695337971
+        ],
+        "joint_trace_sha256": "be0374adbe06edce3cea417e3b7e0f7069feeacf2686e1722e657871f4d121f7",
+        "candidate_action_sha256": "e632a2aa0ff305fc4b49d1517b524229c147bc1f14a24778284e4499644a2197",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "a02ae7e3967f2c26408a69799b2fa86076a9ec91b0d62e1a759fb7485db9d1a2",
+          "4ba6a249883d78760d64509dcf3b07fd34a64685bfa76b7791a53253549acdf6",
+          "6b164c8f724ffd0ee0a0e93d656abc0e921b22445b50b9299f92e6a217b1b2b1",
+          "f6cf37f142223630ac624239e5d5d8f983c52c5b5193e56b0f7d375af4e3d19f"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          67155.0,
+          69619.0
+        ],
+        "score": 1.0,
+        "families": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ],
+        "signatures": [
+          15019185078291563059,
+          190525177592398899,
+          5109857831359223824,
+          14086981740671493337,
+          15433776921695337971
+        ],
+        "joint_trace_sha256": "be0374adbe06edce3cea417e3b7e0f7069feeacf2686e1722e657871f4d121f7",
+        "candidate_action_sha256": "e632a2aa0ff305fc4b49d1517b524229c147bc1f14a24778284e4499644a2197",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "a02ae7e3967f2c26408a69799b2fa86076a9ec91b0d62e1a759fb7485db9d1a2",
+          "4ba6a249883d78760d64509dcf3b07fd34a64685bfa76b7791a53253549acdf6",
+          "6b164c8f724ffd0ee0a0e93d656abc0e921b22445b50b9299f92e6a217b1b2b1",
+          "f6cf37f142223630ac624239e5d5d8f983c52c5b5193e56b0f7d375af4e3d19f"
+        ]
+      }
+    },
+    {
+      "task_id": "P21:9106002:0",
+      "panel_id": "P21",
+      "opponent_action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        18,
+        9,
+        30,
+        20
+      ],
+      "semantic_fist_id": "semantic-fist:c5b341893b2f6d26948f5293f18fb771745e5a9a807c689f3ce42c7488387065",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          67727.0,
+          85224.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          4,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          5016068050069314890,
+          12004874838795188810,
+          639852882336183508,
+          11086668258420597705
+        ],
+        "joint_trace_sha256": "aaac18e6056118e98b31f8d3b08f418af721c687e597d9dfb9baad59804d7582",
+        "candidate_action_sha256": "94fd854e0718f955ca3bfe0c9b9d544621955c49a2a457f5070cdeea820bb41d",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "874c4195abed883a489c036a05647ec7ef39788160d01638ad3748bea7e0af78",
+          "45a00058331abf196593c6a221ae078580c43b746c065476fc974bb3b8b58743",
+          "583858f4f6b06e7b349eb494972280c5f02e017cf935960897af50da01c12003",
+          "8eb4203e2f7d3f2922cf9f8a6351dda7d73e738e0f5f148112bf5dc50d18866a"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          67727.0,
+          85224.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          4,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          5016068050069314890,
+          12004874838795188810,
+          639852882336183508,
+          11086668258420597705
+        ],
+        "joint_trace_sha256": "aaac18e6056118e98b31f8d3b08f418af721c687e597d9dfb9baad59804d7582",
+        "candidate_action_sha256": "94fd854e0718f955ca3bfe0c9b9d544621955c49a2a457f5070cdeea820bb41d",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "874c4195abed883a489c036a05647ec7ef39788160d01638ad3748bea7e0af78",
+          "45a00058331abf196593c6a221ae078580c43b746c065476fc974bb3b8b58743",
+          "583858f4f6b06e7b349eb494972280c5f02e017cf935960897af50da01c12003",
+          "8eb4203e2f7d3f2922cf9f8a6351dda7d73e738e0f5f148112bf5dc50d18866a"
+        ]
+      }
+    },
+    {
+      "task_id": "P21:9106002:1",
+      "panel_id": "P21",
+      "opponent_action_sha256": "0cd710540bf615c35fe2f7a52710230d750630316fd1e29028a3be1fb56a059d",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        18,
+        9,
+        30,
+        20
+      ],
+      "semantic_fist_id": "semantic-fist:c5b341893b2f6d26948f5293f18fb771745e5a9a807c689f3ce42c7488387065",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          85224.0,
+          67727.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          4,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          5016068050069314890,
+          12004874838795188810,
+          639852882336183508,
+          11086668258420597705
+        ],
+        "joint_trace_sha256": "3af25dd6bf710864ed6e1e159f41ce7b25882aa2b956d21884e68895b38ae632",
+        "candidate_action_sha256": "94fd854e0718f955ca3bfe0c9b9d544621955c49a2a457f5070cdeea820bb41d",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "874c4195abed883a489c036a05647ec7ef39788160d01638ad3748bea7e0af78",
+          "45a00058331abf196593c6a221ae078580c43b746c065476fc974bb3b8b58743",
+          "583858f4f6b06e7b349eb494972280c5f02e017cf935960897af50da01c12003",
+          "8eb4203e2f7d3f2922cf9f8a6351dda7d73e738e0f5f148112bf5dc50d18866a"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          85224.0,
+          67727.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          2,
+          4,
+          2
+        ],
+        "signatures": [
+          15019185078291563059,
+          5016068050069314890,
+          12004874838795188810,
+          639852882336183508,
+          11086668258420597705
+        ],
+        "joint_trace_sha256": "3af25dd6bf710864ed6e1e159f41ce7b25882aa2b956d21884e68895b38ae632",
+        "candidate_action_sha256": "94fd854e0718f955ca3bfe0c9b9d544621955c49a2a457f5070cdeea820bb41d",
+        "delta_sha256": [
+          "b7f5d87949d0aac8e8e1ed4f583ca28fe9186123b0254ed3a508f371c7e282e4",
+          "874c4195abed883a489c036a05647ec7ef39788160d01638ad3748bea7e0af78",
+          "45a00058331abf196593c6a221ae078580c43b746c065476fc974bb3b8b58743",
+          "583858f4f6b06e7b349eb494972280c5f02e017cf935960897af50da01c12003",
+          "8eb4203e2f7d3f2922cf9f8a6351dda7d73e738e0f5f148112bf5dc50d18866a"
+        ]
+      }
+    },
+    {
+      "task_id": "P22:9106001:0",
+      "panel_id": "P22",
+      "opponent_action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "seed": 9106001,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        0,
+        22,
+        58,
+        51,
+        28
+      ],
+      "semantic_fist_id": "semantic-fist:e82a14d61061d1a241193f1374f737c1198f990def19caa5c39d7bef547b3a2b",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          50362.0,
+          93026.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          7,
+          3,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          10840182571326762602,
+          8930968020601027480,
+          5109857831359223824,
+          10422353936338744502
+        ],
+        "joint_trace_sha256": "24e0d08b004545c7cef02bda60768e83dd52dae24ad6aebb5a6241c8ce9daf38",
+        "candidate_action_sha256": "45ce6587d4f639854352b0daeb479f6623d7bf7fb57be723f3e248cc9bfe6ee2",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "065ff0acd1d7f21c0a742cfe1a7d1061b9783e2b6a9e04bb07937628f202f4a0",
+          "06d9c461c999b0154e4de171e43ba4338eff1a50079f777143a4e11e232d1c38",
+          "51c5d4e08c4f76b412d8e8319acf81a24a773d346c7a08259bce65424a465e82",
+          "44a695646f8eebd05ae9367f7176dd691db67859468c44879c6cc105d91be504"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          50362.0,
+          93026.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          7,
+          3,
+          3
+        ],
+        "signatures": [
+          15019185078291563059,
+          10840182571326762602,
+          8930968020601027480,
+          5109857831359223824,
+          10422353936338744502
+        ],
+        "joint_trace_sha256": "24e0d08b004545c7cef02bda60768e83dd52dae24ad6aebb5a6241c8ce9daf38",
+        "candidate_action_sha256": "45ce6587d4f639854352b0daeb479f6623d7bf7fb57be723f3e248cc9bfe6ee2",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "065ff0acd1d7f21c0a742cfe1a7d1061b9783e2b6a9e04bb07937628f202f4a0",
+          "06d9c461c999b0154e4de171e43ba4338eff1a50079f777143a4e11e232d1c38",
+          "51c5d4e08c4f76b412d8e8319acf81a24a773d346c7a08259bce65424a465e82",
+          "44a695646f8eebd05ae9367f7176dd691db67859468c44879c6cc105d91be504"
+        ]
+      }
+    },
+    {
+      "task_id": "P22:9106001:1",
+      "panel_id": "P22",
+      "opponent_action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "seed": 9106001,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        0,
+        22,
+        58,
+        59,
+        44
+      ],
+      "semantic_fist_id": "semantic-fist:82a0410840a3214e2a67629f7d50308dbb86ada94896b66d2405edfe6b226d02",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          93246.0,
+          51361.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          7,
+          4,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          10840182571326762602,
+          8930968020601027480,
+          8428076416285531443,
+          14156149391460023831
+        ],
+        "joint_trace_sha256": "25c5e82822798e6e6787b3a10b28813f726e016dae343d45bea164f412e985bc",
+        "candidate_action_sha256": "8944de87f0fedd12dc5586e67c1c594125fc7d86e660a478b307e2e530ab5a4c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "065ff0acd1d7f21c0a742cfe1a7d1061b9783e2b6a9e04bb07937628f202f4a0",
+          "06d9c461c999b0154e4de171e43ba4338eff1a50079f777143a4e11e232d1c38",
+          "9f855ae75025a1349850803586aa957fd26370b9a1838d05d361d60b125a183c",
+          "e4cb9cf5c6c82aa001b692ed796ae9a53d790c07a9697579800e564f817e7fa4"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          93246.0,
+          51361.0
+        ],
+        "score": 0.0,
+        "families": [
+          0,
+          2,
+          7,
+          4,
+          5
+        ],
+        "signatures": [
+          15019185078291563059,
+          10840182571326762602,
+          8930968020601027480,
+          8428076416285531443,
+          14156149391460023831
+        ],
+        "joint_trace_sha256": "25c5e82822798e6e6787b3a10b28813f726e016dae343d45bea164f412e985bc",
+        "candidate_action_sha256": "8944de87f0fedd12dc5586e67c1c594125fc7d86e660a478b307e2e530ab5a4c",
+        "delta_sha256": [
+          "12f2802d2f6e6d78a694e924b8a706dd68c04d70cd0a780815adcb93910a6f65",
+          "065ff0acd1d7f21c0a742cfe1a7d1061b9783e2b6a9e04bb07937628f202f4a0",
+          "06d9c461c999b0154e4de171e43ba4338eff1a50079f777143a4e11e232d1c38",
+          "9f855ae75025a1349850803586aa957fd26370b9a1838d05d361d60b125a183c",
+          "e4cb9cf5c6c82aa001b692ed796ae9a53d790c07a9697579800e564f817e7fa4"
+        ]
+      }
+    },
+    {
+      "task_id": "P22:9106002:0",
+      "panel_id": "P22",
+      "opponent_action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "seed": 9106002,
+      "candidate_seat": 0,
+      "source_selected_ranks": [
+        2,
+        17,
+        23,
+        23,
+        45
+      ],
+      "semantic_fist_id": "semantic-fist:14cb0ca416a6f64f57dac5db427ac7d14c72aa630a2115188ff54eeff4f5bef2",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          106752.0,
+          134087.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          3,
+          4,
+          4,
+          4
+        ],
+        "signatures": [
+          12597291036357239184,
+          5509335162349576543,
+          15368077873198121528,
+          10449227780275189299,
+          12547941086654692082
+        ],
+        "joint_trace_sha256": "65374d260452c93228f3ec496dfb0aa957d82d4303d05a0eba287766aff8d5b3",
+        "candidate_action_sha256": "4c2952f210ec20cea688130c92f059223378f7070bba8fcaf68c5781d2113bea",
+        "delta_sha256": [
+          "54b5bc0fd85ef875018c33d0ef1bead21f17892b3c6d0bcf87a6d7c16c6d4441",
+          "f9c424e32c89364f9a175bd5d33cdf07f19d4cf170d3c5fa16753cb6e794c2a2",
+          "b99c4b2fa9b5047e5a5382459069d08f7561f2a968688581bc1c4df0684b2cf5",
+          "1fb1da4126d4b6c32e270e8354a9d70e32fa2514f780eb3537d4ce771a1fe8f2",
+          "dcc3e86cd4100a8a0e61611b9be16f00c72c363c32f430bb349acdc4f11aabb4"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          106752.0,
+          134087.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          3,
+          4,
+          4,
+          4
+        ],
+        "signatures": [
+          12597291036357239184,
+          5509335162349576543,
+          15368077873198121528,
+          10449227780275189299,
+          12547941086654692082
+        ],
+        "joint_trace_sha256": "65374d260452c93228f3ec496dfb0aa957d82d4303d05a0eba287766aff8d5b3",
+        "candidate_action_sha256": "4c2952f210ec20cea688130c92f059223378f7070bba8fcaf68c5781d2113bea",
+        "delta_sha256": [
+          "54b5bc0fd85ef875018c33d0ef1bead21f17892b3c6d0bcf87a6d7c16c6d4441",
+          "f9c424e32c89364f9a175bd5d33cdf07f19d4cf170d3c5fa16753cb6e794c2a2",
+          "b99c4b2fa9b5047e5a5382459069d08f7561f2a968688581bc1c4df0684b2cf5",
+          "1fb1da4126d4b6c32e270e8354a9d70e32fa2514f780eb3537d4ce771a1fe8f2",
+          "dcc3e86cd4100a8a0e61611b9be16f00c72c363c32f430bb349acdc4f11aabb4"
+        ]
+      }
+    },
+    {
+      "task_id": "P22:9106002:1",
+      "panel_id": "P22",
+      "opponent_action_sha256": "0426b3198b1172b4e27d2dd97eb8e9ec130ad0235e12d7cbeda97fe9dafc89e2",
+      "seed": 9106002,
+      "candidate_seat": 1,
+      "source_selected_ranks": [
+        2,
+        7,
+        30,
+        27,
+        4
+      ],
+      "semantic_fist_id": "semantic-fist:adf07c26cb94f75c9dbbe62db1d4750e4eef0cce86dcc230ae511777add48ca7",
+      "passed": true,
+      "checks": {
+        "rank_all_stages_selected": true,
+        "explicit_all_intents_matched": true,
+        "rank_decision_days_exact": true,
+        "explicit_decision_days_exact": true,
+        "rank_rewards_match_round1": true,
+        "rank_families_match_round1": true,
+        "rank_signatures_match_round1": true,
+        "rank_action_hash_matches_round1": true,
+        "rank_prefix_exact": true,
+        "explicit_rewards_equal_rank": true,
+        "explicit_trace_equal_rank": true,
+        "explicit_families_equal_rank": true,
+        "explicit_signatures_equal_rank": true,
+        "explicit_deltas_equal_rank": true,
+        "explicit_intents_equal_input": true
+      },
+      "rank": {
+        "rewards": [
+          137087.0,
+          111876.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          1,
+          4,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          10722280826011327638,
+          12975175547843316210,
+          11380426485391175091,
+          7689868501183227703
+        ],
+        "joint_trace_sha256": "22d1dcc8d68b269c812b6c1f1709d950324ff21a6c7beae22ba3882743ff0772",
+        "candidate_action_sha256": "326d922d29922285a8bdfe2c973443c1bd3e886e8db9bce0096401edff9ca9d1",
+        "delta_sha256": [
+          "54b5bc0fd85ef875018c33d0ef1bead21f17892b3c6d0bcf87a6d7c16c6d4441",
+          "4d43f6764ba7c10e338fe4f8eb3a85fbc094ed9d158316e8b9cf37c2232089f6",
+          "730e677eb34a6466c48afb03f7ed834f5135035300e2551bf717c4885e187128",
+          "7d8291c5a0b492cfab7f5c65057ea616204543af00c84b194fa0a74f2d03e5ee",
+          "9b5a9f83e36b8c5aeac0692b968bea4e6cf729b46943bfcf0fed5db5ee244bb2"
+        ]
+      },
+      "explicit": {
+        "rewards": [
+          137087.0,
+          111876.0
+        ],
+        "score": 0.0,
+        "families": [
+          6,
+          1,
+          4,
+          4,
+          1
+        ],
+        "signatures": [
+          12597291036357239184,
+          10722280826011327638,
+          12975175547843316210,
+          11380426485391175091,
+          7689868501183227703
+        ],
+        "joint_trace_sha256": "22d1dcc8d68b269c812b6c1f1709d950324ff21a6c7beae22ba3882743ff0772",
+        "candidate_action_sha256": "326d922d29922285a8bdfe2c973443c1bd3e886e8db9bce0096401edff9ca9d1",
+        "delta_sha256": [
+          "54b5bc0fd85ef875018c33d0ef1bead21f17892b3c6d0bcf87a6d7c16c6d4441",
+          "4d43f6764ba7c10e338fe4f8eb3a85fbc094ed9d158316e8b9cf37c2232089f6",
+          "730e677eb34a6466c48afb03f7ed834f5135035300e2551bf717c4885e187128",
+          "7d8291c5a0b492cfab7f5c65057ea616204543af00c84b194fa0a74f2d03e5ee",
+          "9b5a9f83e36b8c5aeac0692b968bea4e6cf729b46943bfcf0fed5db5ee244bb2"
+        ]
+      }
+    }
+  ]
+}
