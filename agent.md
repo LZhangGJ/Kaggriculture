@@ -5,6 +5,12 @@
 
 最后更新：2026-09-03。
 
+## 历史资产入口
+
+完整 Git 分支、D/E 盘代码、生成 Agent、Replay、模型和旧实验盘点见
+[`research/HISTORICAL_ASSETS.md`](research/HISTORICAL_ASSETS.md)。该文件是唯一历史资产
+总表；本页只保留当前推荐入口。
+
 ## 仓库地图
 
 | 目录 | 内容 | 是否应直接修改 |
@@ -43,6 +49,7 @@
 | Round2 小型结果 | [`research/experiments/counter_cluster_round2_semantic_v1_20260903/`](research/experiments/counter_cluster_round2_semantic_v1_20260903/) | 配置、锁文件、汇总 JSON、NPZ、Notebook | Git 内可审计 |
 | Round2 完整本地归档 | `D:\Kaggriculture\counter_cluster_round2_semantic_v1_20260903` | Windows 运行时及本轮完整归档 | 仅该本机；详见实验 `agent.md` |
 | 原始 Replay 与 Round1/Candidate8 输入 | 见 Round2 `inputs.lock.json` | 精确复跑依赖的外部输入 | 不在 Git；必须先检查路径和哈希 |
+| 历史资产总表 | [`research/HISTORICAL_ASSETS.md`](research/HISTORICAL_ASSETS.md) | Git 分支、D/E 盘代码、模型、Replay 和旧实验 | 2026-09-03 已盘点 |
 
 不要只写“使用 top40”或“结果在 D 盘”。每个外部数据项必须说明：用途、选择范围、绝对
 路径或可下载地址、文件数量/大小（能取得时）以及哈希或版本。禁止提交密钥和账户信息。
@@ -82,6 +89,9 @@ git status --short
 
 代码、实验结果、对应 `agent.md` 和根 `agent.md` 索引应在同一提交中。GitHub Actions
 会运行同一校验；仓库管理员应把 `agent-docs` 设置为受保护分支的必需检查。
+
+新增、移动或废弃仓库外代码、数据、模型和生成 Agent 时，还必须同步更新
+`research/HISTORICAL_ASSETS.md`。
 
 ## 文档模板
 

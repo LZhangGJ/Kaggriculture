@@ -9,6 +9,7 @@ A code contribution is incomplete until its documentation is updated:
 2. New experiments go under `research/experiments/<experiment>/` and must contain
    `agent.md` plus the code/configuration needed to understand the run.
 3. Update the module, experiment, and data indexes in the root `agent.md`.
+   Update `research/HISTORICAL_ASSETS.md` when external or historical assets move.
 4. Record executed results separately from plans or unverified claims.
 5. Keep large Replay files, caches, native builds, and raw matrices outside Git;
    document their location, content, size, and hash in the experiment `agent.md`.

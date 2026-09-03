@@ -5,9 +5,10 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ROOT_SECTIONS = ("仓库地图", "模块索引", "实验索引", "数据索引", "上传规则", "文档模板")
+ROOT_SECTIONS = ("历史资产入口", "仓库地图", "模块索引", "实验索引", "数据索引", "上传规则", "文档模板")
 MODULE_SECTIONS = ("一句话说明", "状态", "代码地图", "输入与输出", "验证", "结果", "已知问题", "相关实验")
 EXPERIMENT_SECTIONS = ("一句话结论", "状态", "问题", "代码位置", "数据位置", "方法", "结果", "复现", "局限", "下一步")
+HISTORY_SECTIONS = ("盘点范围", "推荐入口", "Git 分支", "本地 Agent 与输出", "本地数据", "外部单文件", "未归档与风险", "维护规则")
 
 
 def validate_document(path: Path, sections: tuple[str, ...], errors: list[str]) -> None:
@@ -30,6 +31,7 @@ def main() -> int:
     errors: list[str] = []
     index_path = ROOT / "agent.md"
     validate_document(index_path, ROOT_SECTIONS, errors)
+    validate_document(ROOT / "research" / "HISTORICAL_ASSETS.md", HISTORY_SECTIONS, errors)
     index_text = index_path.read_text(encoding="utf-8") if index_path.is_file() else ""
 
     modules = visible_directories(ROOT / "agents")
