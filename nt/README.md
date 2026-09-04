@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260904_dynamic_generator_cross300/`](latest_20260904_dynamic_generator_cross300/README_ZH.md)
+  — current Daily DP dynamic strategy generator and complete six-stage experiment
+  handoff: 8/29-node multi-seed Beam search, width 12, 300 frozen macro plans,
+  28,800-game crossplay, portable C++ build/runner, lossless result archives,
+  official referee, and submitted DP27. No build caches or downloaded toolchains.
+  This is a different dynamic execution base from the older Candidate8 suite.
 - `latest_20260901_candidate8_width12_mcts/` — current Candidate8 offline
   search suite. It adds the eight-stage sequence search, Beam width 2/4/8/12
   sweep, C++ MCTS, R8 executor sources, exact replay checks, compact evidence,

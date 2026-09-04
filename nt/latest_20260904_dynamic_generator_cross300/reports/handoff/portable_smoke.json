@@ -1,0 +1,73 @@
+{
+  "status": "PASS_PORTABLE96_SEARCH_FRONTIER_OFFICIAL6",
+  "rows": [
+    {
+      "route": "R02_F001_E104469027_P0",
+      "games": 32,
+      "wins": 23,
+      "mean_cash": 99432.5625,
+      "mean_opponent_cash": 90546.1875,
+      "mean_margin": 8886.375,
+      "missing_recipe": 40
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "games": 32,
+      "wins": 27,
+      "mean_cash": 108612.46875,
+      "mean_opponent_cash": 92289.3125,
+      "mean_margin": 16323.15625,
+      "missing_recipe": 20
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "games": 32,
+      "wins": 26,
+      "mean_cash": 103970.90625,
+      "mean_opponent_cash": 87267.75,
+      "mean_margin": 16703.15625,
+      "missing_recipe": 38
+    }
+  ],
+  "official": [
+    {
+      "route": "R02_F001_E104469027_P0",
+      "seed": 20264501,
+      "seat": 0,
+      "steps": 719
+    },
+    {
+      "route": "R02_F001_E104469027_P0",
+      "seed": 20264501,
+      "seat": 1,
+      "steps": 719
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "seed": 20264501,
+      "seat": 0,
+      "steps": 719
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "seed": 20264501,
+      "seat": 1,
+      "steps": 719
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "seed": 20264501,
+      "seat": 0,
+      "steps": 719
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "seed": 20264501,
+      "seat": 1,
+      "steps": 719
+    }
+  ],
+  "frontier_candidates": 68,
+  "seconds": 14.212502653,
+  "binary_sha256": "8b9dd52b1471110eac03945f35800f40a33bf313f1f59183ae8c9d7bffdf2136"
+}

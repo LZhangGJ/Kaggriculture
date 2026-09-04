@@ -1,0 +1,257 @@
+{
+  "status": "COMPLETE_8_NODE_MULTISEED_PILOT_NOT_PROMOTION",
+  "selected_opponents": 3,
+  "pool_size": 153,
+  "competitive_pool_size": 152,
+  "days": [
+    0,
+    1,
+    3,
+    6,
+    9,
+    12,
+    18,
+    24
+  ],
+  "beam_width": 4,
+  "train_independent_seeds": 4,
+  "validation_independent_seeds": 16,
+  "paired_seats": true,
+  "search_seconds": 144.822338274,
+  "total_suffixes": 26304,
+  "total_environment_transitions": 14744256,
+  "holdout_target_games": 96,
+  "holdout_keep_games": 96,
+  "holdout_cross_games": 192,
+  "official_games": 6,
+  "all_win_holdout_specialists": [
+    "R05_F001_E104180967_P0"
+  ],
+  "summary": [
+    {
+      "route": "R02_F001_E104469027_P0",
+      "team": "OceanMix",
+      "train_keep": {
+        "games": 8,
+        "wins": 4,
+        "ties": 0,
+        "mean_cash": 98397.125,
+        "mean_opponent_cash": 99206.75,
+        "mean_margin": -809.625,
+        "missing_recipe": 0
+      },
+      "train_selected": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_cash": 85511.0,
+        "mean_opponent_cash": 61942.75,
+        "mean_margin": 23568.25,
+        "missing_recipe": 12
+      },
+      "validation_keep": {
+        "games": 32,
+        "wins": 10,
+        "ties": 0,
+        "mean_cash": 95638.21875,
+        "mean_opponent_cash": 100693.53125,
+        "mean_margin": -5055.3125,
+        "missing_recipe": 0
+      },
+      "validation_selected": {
+        "games": 32,
+        "wins": 5,
+        "ties": 0,
+        "mean_cash": 90552.34375,
+        "mean_opponent_cash": 100137.9375,
+        "mean_margin": -9585.59375,
+        "missing_recipe": 53
+      },
+      "seconds": 0.753461596999955
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "team": "Driz Lo",
+      "train_keep": {
+        "games": 8,
+        "wins": 4,
+        "ties": 0,
+        "mean_cash": 95270.875,
+        "mean_opponent_cash": 96703.75,
+        "mean_margin": -1432.875,
+        "missing_recipe": 0
+      },
+      "train_selected": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_cash": 123829.25,
+        "mean_opponent_cash": 91138.0,
+        "mean_margin": 32691.25,
+        "missing_recipe": 6
+      },
+      "validation_keep": {
+        "games": 32,
+        "wins": 13,
+        "ties": 0,
+        "mean_cash": 102443.75,
+        "mean_opponent_cash": 99810.25,
+        "mean_margin": 2633.5,
+        "missing_recipe": 0
+      },
+      "validation_selected": {
+        "games": 32,
+        "wins": 7,
+        "ties": 0,
+        "mean_cash": 102284.5,
+        "mean_opponent_cash": 105466.0625,
+        "mean_margin": -3181.5625,
+        "missing_recipe": 45
+      },
+      "seconds": 1.1154457260000186
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "team": "QQ Farming",
+      "train_keep": {
+        "games": 8,
+        "wins": 2,
+        "ties": 0,
+        "mean_cash": 106083.25,
+        "mean_opponent_cash": 113830.75,
+        "mean_margin": -7747.5,
+        "missing_recipe": 0
+      },
+      "train_selected": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_cash": 181536.75,
+        "mean_opponent_cash": 94500.5,
+        "mean_margin": 87036.25,
+        "missing_recipe": 10
+      },
+      "validation_keep": {
+        "games": 32,
+        "wins": 11,
+        "ties": 0,
+        "mean_cash": 99651.40625,
+        "mean_opponent_cash": 104800.65625,
+        "mean_margin": -5149.25,
+        "missing_recipe": 0
+      },
+      "validation_selected": {
+        "games": 32,
+        "wins": 32,
+        "ties": 0,
+        "mean_cash": 130059.25,
+        "mean_opponent_cash": 79674.78125,
+        "mean_margin": 50384.46875,
+        "missing_recipe": 41
+      },
+      "seconds": 0.8212591159999647
+    }
+  ],
+  "missing": [
+    {
+      "route": "R02_F001_E104469027_P0",
+      "by_day": {
+        "0": 0,
+        "1": 0,
+        "3": 0,
+        "6": 0,
+        "9": 10,
+        "12": 13,
+        "18": 30,
+        "24": 0
+      }
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "by_day": {
+        "0": 0,
+        "1": 0,
+        "3": 0,
+        "6": 0,
+        "9": 4,
+        "12": 25,
+        "18": 0,
+        "24": 16
+      }
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "by_day": {
+        "0": 0,
+        "1": 0,
+        "3": 0,
+        "6": 0,
+        "9": 22,
+        "12": 2,
+        "18": 0,
+        "24": 17
+      }
+    }
+  ],
+  "production_unchanged": true,
+  "old_goal_still_paused": true,
+  "goal_complete": false,
+  "online_router": false,
+  "files": {
+    "R02_F001_E104469027_P0/official_fixture_seat0.json.gz": "8221e4013fc2e9fbf8ea949999655a00a70fe90e407697e44580f271cb67394d",
+    "R02_F001_E104469027_P0/official_fixture_seat1.json.gz": "4e9d3ffb6f75159179b5c50d27afbea005619dd0258d687a81b363525d39e38d",
+    "R02_F001_E104469027_P0/policy.json": "031f176963e36f7c331221a46b400845de34d2e968f7194a39afda83e00bdf75",
+    "R02_F001_E104469027_P0/selected.json": "f8da610927c951c8a03047a6b878bee7097e0fb856bf3ae99c163aafb77e04fb",
+    "R02_F001_E104469027_P0/stage0.json.gz": "8bdc7f50120ff1d43fac752af6015aa1715a03ef2e71485505cd57d5e077adb2",
+    "R02_F001_E104469027_P0/stage1.json.gz": "f3c0518ce7401b690caa24b92108f7a5829f71129c4c826200861e48c4115cf2",
+    "R02_F001_E104469027_P0/stage2.json.gz": "530437b93059a37771d677ecb1363d5bcfa5bc8b259ad929442d09103ef46443",
+    "R02_F001_E104469027_P0/stage3.json.gz": "cb34fec09f5c82366d3c3220e852ce63d61d4af1b037f1490527238338f7a082",
+    "R02_F001_E104469027_P0/stage4.json.gz": "d8e3dfc11665011903f706703ef96053f094ca4577bdd881edcbbddb2e2141a4",
+    "R02_F001_E104469027_P0/stage5.json.gz": "6565575bfe16cdf744be553bf1708078a64926b6211fc70a70a53f0d46f39275",
+    "R02_F001_E104469027_P0/stage6.json.gz": "571c49ccb60038e3dcb767bafaf89515a6b2f99248d8c4f7b6b1d350e25627ec",
+    "R02_F001_E104469027_P0/stage7.json.gz": "9dc9f6ae95f95a00aacb25a6c7498b216b0153f4beac8f23f6b056239aaa0ff1",
+    "R02_F001_E104469027_P0/validation.json": "f3da815fc3a6b970a3086f93471828fa17fbdd9641c0da4ed0c7c2d4a0b93bf4",
+    "R03_F001_E104234696_P0/official_fixture_seat0.json.gz": "68768b95239fa13819bdf8e62bbec57b3598646bfbe525654fb9ef6fdb788d8c",
+    "R03_F001_E104234696_P0/official_fixture_seat1.json.gz": "c1d63129b37a593aa2cee34d54339ddcf6e3e394ffc4e566b5a3cbf8952dbf73",
+    "R03_F001_E104234696_P0/policy.json": "09b4f62281c502754780ea8849c443c020e4eeafe352eeaeaf527f123c6b86af",
+    "R03_F001_E104234696_P0/selected.json": "a25872542942856695459949e4e4174cb4961dc6fe28b788bf1848e41a3aef94",
+    "R03_F001_E104234696_P0/stage0.json.gz": "ec31f652b4eb46cb7f9cbc7c14ba5e9266a6b7576d5f0d2b1772aa8909461498",
+    "R03_F001_E104234696_P0/stage1.json.gz": "c89d317fb3158f5d5f8b11387b742082c21dd05bc04926998934714825080bda",
+    "R03_F001_E104234696_P0/stage2.json.gz": "8f3d7e9a7796f4d73173be55e6afe5bd23ae1f6a2ee3eb4b5faa7569a3369291",
+    "R03_F001_E104234696_P0/stage3.json.gz": "73d13ecabe35f0ce14b33552df3fca499abe4fde978490b0bbb22f77e286c956",
+    "R03_F001_E104234696_P0/stage4.json.gz": "640c48e65727a0e2002a247da595d2a4dada02ca1f4fa344e7dc576724d46cb8",
+    "R03_F001_E104234696_P0/stage5.json.gz": "3c7e985a9bb9f4a165d2f3b02ca976708be75e324dcaab70f3ed3cdb4c8ec532",
+    "R03_F001_E104234696_P0/stage6.json.gz": "fed7220a87b6284003577d8ba77638927988892d7d3eae4e66ff9efe049d7add",
+    "R03_F001_E104234696_P0/stage7.json.gz": "cee33b1e571dc822ad367548b7c980cde37ac9459a7bcf758c13b31de8402167",
+    "R03_F001_E104234696_P0/validation.json": "c93397aff59e50aa85fd1774271998b207ee6d25c74ee6c38956966bd495c43d",
+    "R05_F001_E104180967_P0/official_fixture_seat0.json.gz": "e0a6da34cbab8c9ec4f2bc154fe4a4fc5721781794281fd2a7b140c51bba679b",
+    "R05_F001_E104180967_P0/official_fixture_seat1.json.gz": "5335fa5f15db546259e6d32a1bf2e3fd2daede739784757e1300683a03defc9d",
+    "R05_F001_E104180967_P0/policy.json": "e5c22c47c70a89519b586224e751e670deb7a826b292184d9ea5422737beae30",
+    "R05_F001_E104180967_P0/selected.json": "918c8a03c1eb644e6ecaacc41a9da6fd6a39ab8c619b16daccbe2f2e448c3bc0",
+    "R05_F001_E104180967_P0/stage0.json.gz": "a2bfe596c27f9e6aa98a658a355927f3f0f0b964affc65bf5eaa6a1fc85e9dc5",
+    "R05_F001_E104180967_P0/stage1.json.gz": "73b789af5983dde49733ab6a6a149b7d3723a25f5fc3fc93b99422e26591d7f3",
+    "R05_F001_E104180967_P0/stage2.json.gz": "ee15ba17be94bdba09c3fbf6945b718c764cffd375a6f9a022a91c3d329c4e7a",
+    "R05_F001_E104180967_P0/stage3.json.gz": "1cf7b19bdd567f03a46192f19f50b95a7af34678183ddfbc20c1b26a80ca2f62",
+    "R05_F001_E104180967_P0/stage4.json.gz": "88e3def60e2c32c327abecc925f320c377ca94930df211fbd74ef5b094e5ae1f",
+    "R05_F001_E104180967_P0/stage5.json.gz": "8af4e456735460d9d346b7fb89e4006fd8f214e9a5f08cc2f19486656cac43e1",
+    "R05_F001_E104180967_P0/stage6.json.gz": "7d79ba43f0fd5c61e133a6683c4def499daba8087d6686b017dad6643f37b79e",
+    "R05_F001_E104180967_P0/stage7.json.gz": "9cd928d0551a69f1f4a8f71dc224ec5ab6a6d2f7a41bc7ccaf41580ed9e2cab4",
+    "R05_F001_E104180967_P0/validation.json": "0f58af3eaebe6687ed6ae8c7dcebd9b1d8f87924a4f42a2f643c0266bc58bf38",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/inputs.json": "a78e5f16d27fa5b120cccfad67be255d5551100906d2ccd93d93a4b2b3fa1288",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/build.json": "dbf086108d0af476412d36139778d3e31d02cf7ee5f19471205f42e7ff69c3e5",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/mechanism.json": "940894c611c6c384717175d04a1d78e6071d73f681d14228d710ddf62c355972",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/isolation.json": "0d6d5fe37bd0dea375799dd61f98ec3f815f09e16deff10af7fd41b0843cc607",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/official.json": "18dc3722452f2cb7e7000a6d3cbe9ba73579e8c11e5091052b39defc2fdbfa4f",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/validation_done.json": "c235be604fc884514699d401d07139417f9d41deb1831e0f3c74f7311c5bc024",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/audit.py": "a55c5a3411367ebfda1dbebf375bac2cdae443276517408ad4cace8dfc24acb4",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/close.py": "fd2b40c4cfe08b2feff93158ec59025adec8c9ad0ec31f31856252995b5213b4"
+  },
+  "caveats": [
+    "Multi-seed common-plan selection is not an all-seed proof.",
+    "Two selected plans regress out of sample; do not promote their training victories.",
+    "One specialist passes 32/32 on 16 paired seed clusters; not a validated 90% population guarantee.",
+    "Missing semantic moves use explicit KEEP; their relation to losses is diagnostic, not causally isolated.",
+    "Pool is fixed routes with historical overlays, not original authors complete dynamic agents.",
+    "Search handles only existing new-project candidate grammar; not full old Candidate8 action space."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS_COMPLETE_STATE_AND_PYTHON_OPPONENT",
+  "rows": [
+    {
+      "route": "R02_F001_E104469027_P0",
+      "seed": 20264201,
+      "seat": 0,
+      "steps": 719,
+      "fixture_sha256": "8c61c957ac7de3174bdb5c4c10cb17c47b83a217641826431ad0af3af04ca2e0"
+    },
+    {
+      "route": "R02_F001_E104469027_P0",
+      "seed": 20264201,
+      "seat": 1,
+      "steps": 719,
+      "fixture_sha256": "318157276349bc53f1d3afce01e1a68513a875dd438ca49ce6420dc9f4654065"
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "seed": 20264201,
+      "seat": 0,
+      "steps": 719,
+      "fixture_sha256": "2ade06021d5e845344181d24200483f36489e9b7a8029568fe753c777b478fe1"
+    },
+    {
+      "route": "R03_F001_E104234696_P0",
+      "seed": 20264201,
+      "seat": 1,
+      "steps": 719,
+      "fixture_sha256": "7e368f3907e1ce0aebf8fb86126f7e8bc21b99fca073f6a123c8a0b5c74410a0"
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "seed": 20264201,
+      "seat": 0,
+      "steps": 719,
+      "fixture_sha256": "88e57c466635748299939e1a4e3b9b45ba837a0c80f978824c7a0e7db61a9990"
+    },
+    {
+      "route": "R05_F001_E104180967_P0",
+      "seed": 20264201,
+      "seat": 1,
+      "steps": 719,
+      "fixture_sha256": "3e99a9ab57dca213f5aa275221ccba114c5de5bce071b396aee030338e3d8e22"
+    }
+  ],
+  "seconds": 12.945032796000007,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "caveat": "Frozen official interpreter referee, not Kaggle schema/time sandbox acceptance. Candidate Python export not implemented."
+}
