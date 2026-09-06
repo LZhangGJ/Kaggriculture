@@ -1,0 +1,374 @@
+{
+  "seed_start": 71100000,
+  "seeds": 100,
+  "games": 1400,
+  "threads": 16,
+  "libraries": {
+    "f3": "9e72587fc3020cc048b1763bbd4003072d915d34261f6655227344ebab93d16d",
+    "f3_deltav": "7c6033c94d95727732bdc3d2836a3215ec416f63d1b49489199ea67e48204842"
+  },
+  "patched_keep_identical_to_frozen": true,
+  "keep": {
+    "status": "PASS",
+    "overall": {
+      "games": 1400,
+      "wins": 881,
+      "ties": 0,
+      "win_rate": 0.6292857142857143,
+      "mean_cash": 103524.39142857143,
+      "mean_margin": 9164.560714285713
+    },
+    "per_opponent": {
+      "g001": {
+        "games": 200,
+        "wins": 160,
+        "ties": 0,
+        "win_rate": 0.8,
+        "mean_cash": 101232.495,
+        "mean_margin": 9256.565
+      },
+      "g003": {
+        "games": 200,
+        "wins": 85,
+        "ties": 0,
+        "win_rate": 0.425,
+        "mean_cash": 96967.845,
+        "mean_margin": 107.99
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 200,
+        "ties": 0,
+        "win_rate": 1.0,
+        "mean_cash": 126486.545,
+        "mean_margin": 36553.08
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 145,
+        "ties": 0,
+        "win_rate": 0.725,
+        "mean_cash": 103109.495,
+        "mean_margin": 9362.78
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 106,
+        "ties": 0,
+        "win_rate": 0.53,
+        "mean_cash": 101447.82,
+        "mean_margin": 4568.73
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 96,
+        "ties": 0,
+        "win_rate": 0.48,
+        "mean_cash": 99022.375,
+        "mean_margin": 1071.58
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 89,
+        "ties": 0,
+        "win_rate": 0.445,
+        "mean_cash": 96404.165,
+        "mean_margin": 3231.2
+      }
+    },
+    "wall_seconds": 35.29683352,
+    "call_seconds": 35.36270640699999,
+    "games_per_second": 39.589730036128465,
+    "decisions": 42000,
+    "changed": 0,
+    "fallbacks": 0,
+    "library_sha256": "9e72587fc3020cc048b1763bbd4003072d915d34261f6655227344ebab93d16d",
+    "plan_sha256": null,
+    "errors": []
+  },
+  "probe": {
+    "status": "PASS",
+    "overall": {
+      "games": 1400,
+      "wins": 726,
+      "ties": 0,
+      "win_rate": 0.5185714285714286,
+      "mean_cash": 97879.8892857143,
+      "mean_margin": 3654.345
+    },
+    "per_opponent": {
+      "g001": {
+        "games": 200,
+        "wins": 122,
+        "ties": 0,
+        "win_rate": 0.61,
+        "mean_cash": 94523.035,
+        "mean_margin": 3930.955
+      },
+      "g003": {
+        "games": 200,
+        "wins": 70,
+        "ties": 0,
+        "win_rate": 0.35,
+        "mean_cash": 94699.505,
+        "mean_margin": -3525.245
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 198,
+        "ties": 0,
+        "win_rate": 0.99,
+        "mean_cash": 118137.065,
+        "mean_margin": 28936.32
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 109,
+        "ties": 0,
+        "win_rate": 0.545,
+        "mean_cash": 97501.0,
+        "mean_margin": 3017.605
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 82,
+        "ties": 0,
+        "win_rate": 0.41,
+        "mean_cash": 95387.38,
+        "mean_margin": -1636.88
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 70,
+        "ties": 0,
+        "win_rate": 0.35,
+        "mean_cash": 90573.01,
+        "mean_margin": -3384.425
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 75,
+        "ties": 0,
+        "win_rate": 0.375,
+        "mean_cash": 94338.23,
+        "mean_margin": -1757.915
+      }
+    },
+    "wall_seconds": 33.205830255,
+    "call_seconds": 33.26795615899999,
+    "games_per_second": 42.08253712097241,
+    "decisions": 42000,
+    "changed": 22253,
+    "fallbacks": 0,
+    "library_sha256": "7c6033c94d95727732bdc3d2836a3215ec416f63d1b49489199ea67e48204842",
+    "plan_sha256": null,
+    "errors": []
+  },
+  "per_opponent": {
+    "g001": {
+      "keep": 0.8,
+      "probe": 0.61
+    },
+    "g003": {
+      "keep": 0.425,
+      "probe": 0.35
+    },
+    "boatlee_v29": {
+      "keep": 1.0,
+      "probe": 0.99
+    },
+    "kaito_v58": {
+      "keep": 0.725,
+      "probe": 0.545
+    },
+    "lynn_v5": {
+      "keep": 0.53,
+      "probe": 0.41
+    },
+    "yhay81_six_day": {
+      "keep": 0.48,
+      "probe": 0.35
+    },
+    "yhay81_three_day": {
+      "keep": 0.445,
+      "probe": 0.375
+    }
+  },
+  "paired_probe_minus_keep": {
+    "games": 1400,
+    "seeds": 100,
+    "win_rate_diff_pp": -11.071428571428571,
+    "win_ci95_pp": [
+      -15.358928571428573,
+      -6.4964285714285905
+    ],
+    "margin_diff": -5510.215714285714,
+    "margin_ci95": [
+      -7041.8703749999995,
+      -4003.5707321428577
+    ],
+    "rescued": 190,
+    "lost": 345
+  },
+  "dv": {
+    "decisions": 42000,
+    "active_nodes": 36662,
+    "changed_nodes": 22253,
+    "nodes_with_positive_dv": 22253,
+    "mean_best_dv_when_positive": 911.2757568359375,
+    "median_best_dv_when_positive": 738.8333129882812,
+    "mean_vkeep": 47096.25390625,
+    "chosen_kind_counts": {
+      "0": 1260,
+      "1": 3398,
+      "2": 4,
+      "3": 803,
+      "4": 2193,
+      "9": 2734,
+      "10": 6014,
+      "11": 5847
+    },
+    "by_day": {
+      "0": {
+        "nodes": 1400,
+        "changed": 0,
+        "positive": 0
+      },
+      "1": {
+        "nodes": 1400,
+        "changed": 1400,
+        "positive": 1400
+      },
+      "2": {
+        "nodes": 1400,
+        "changed": 1400,
+        "positive": 1400
+      },
+      "3": {
+        "nodes": 1400,
+        "changed": 218,
+        "positive": 218
+      },
+      "4": {
+        "nodes": 1398,
+        "changed": 96,
+        "positive": 96
+      },
+      "5": {
+        "nodes": 445,
+        "changed": 58,
+        "positive": 58
+      },
+      "6": {
+        "nodes": 1376,
+        "changed": 29,
+        "positive": 29
+      },
+      "7": {
+        "nodes": 1400,
+        "changed": 345,
+        "positive": 345
+      },
+      "8": {
+        "nodes": 1397,
+        "changed": 449,
+        "positive": 449
+      },
+      "9": {
+        "nodes": 511,
+        "changed": 231,
+        "positive": 231
+      },
+      "10": {
+        "nodes": 1155,
+        "changed": 397,
+        "positive": 397
+      },
+      "11": {
+        "nodes": 1045,
+        "changed": 806,
+        "positive": 806
+      },
+      "12": {
+        "nodes": 1367,
+        "changed": 1002,
+        "positive": 1002
+      },
+      "13": {
+        "nodes": 1400,
+        "changed": 1140,
+        "positive": 1140
+      },
+      "14": {
+        "nodes": 1400,
+        "changed": 1330,
+        "positive": 1330
+      },
+      "15": {
+        "nodes": 1400,
+        "changed": 1208,
+        "positive": 1208
+      },
+      "16": {
+        "nodes": 1392,
+        "changed": 1270,
+        "positive": 1270
+      },
+      "17": {
+        "nodes": 1400,
+        "changed": 1250,
+        "positive": 1250
+      },
+      "18": {
+        "nodes": 1399,
+        "changed": 1245,
+        "positive": 1245
+      },
+      "19": {
+        "nodes": 1399,
+        "changed": 1285,
+        "positive": 1285
+      },
+      "20": {
+        "nodes": 1399,
+        "changed": 1146,
+        "positive": 1146
+      },
+      "21": {
+        "nodes": 1400,
+        "changed": 1247,
+        "positive": 1247
+      },
+      "22": {
+        "nodes": 1397,
+        "changed": 1081,
+        "positive": 1081
+      },
+      "23": {
+        "nodes": 1394,
+        "changed": 1096,
+        "positive": 1096
+      },
+      "24": {
+        "nodes": 1395,
+        "changed": 669,
+        "positive": 669
+      },
+      "25": {
+        "nodes": 1396,
+        "changed": 940,
+        "positive": 940
+      },
+      "26": {
+        "nodes": 1398,
+        "changed": 355,
+        "positive": 355
+      },
+      "27": {
+        "nodes": 1399,
+        "changed": 560,
+        "positive": 560
+      }
+    }
+  }
+}

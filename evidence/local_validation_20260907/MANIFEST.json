@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-07",
+  "environment": {
+    "distro": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "cores": 16,
+    "gxx": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "python": "3.12.3",
+    "numpy": "2.1.3",
+    "pybind11": "2.13.6",
+    "libraries": {
+      "f3.so": "9e72587fc3020cc048b1763bbd4003072d915d34261f6655227344ebab93d16d",
+      "f3_deltav.so": "7c6033c94d95727732bdc3d2836a3215ec416f63d1b49489199ea67e48204842",
+      "keep2.so": "c706866636fc62d50df65ce27749d1454af009e80a16b58805f0b22ad87f0b15",
+      "_economic_rl_native.cpython-312-x86_64-linux-gnu.so": "04865db2272051c52663ca28b475ef3875431471e2ebb7b5701a09fcc03bc7b7"
+    }
+  },
+  "files": {
+    "build/base_BUILD_RECEIPT.json": {
+      "bytes": 64348,
+      "sha256": "0fb0bab645e6f12b5d3a55b13130f3001ae892ed3581f02a2d117fdca48b08a6"
+    },
+    "build/keep2_BUILD_RECEIPT.json": {
+      "bytes": 781,
+      "sha256": "b384486d8ed7373c0b860cbb84ca96229e97596f4dddd27d9c0b4bda8bdd6833"
+    },
+    "evaluate/aux_r0_step1000_greedy_games.json": {
+      "bytes": 15279,
+      "sha256": "5967fc7decfb0d2c8fadb14d1b5607a906d86122e64c16768187c2b5ea03c86a"
+    },
+    "evaluate/aux_r0_step1000_greedy_summary.json": {
+      "bytes": 1612,
+      "sha256": "1cceed946c1c345bd5448546b5d6923551f3e71f129bbf017994b6730dff7a2e"
+    },
+    "evaluate/keep_games.json": {
+      "bytes": 15237,
+      "sha256": "6627ecc9925c294ae5ce8e2cc0c26733a4a8e2bf90f624d9f241ee9b0f9409eb"
+    },
+    "evaluate/keep_summary.json": {
+      "bytes": 1627,
+      "sha256": "64a31bfeebb1c5d5424622590c7b47a95c3a6834806e5e65dfc10a57a18c5e02"
+    },
+    "portable/committed_PORTABLE_ACCEPTANCE.sha256": {
+      "bytes": 65,
+      "sha256": "6a1950e3a3854b7884a224c9e7cede3d187d0c4f9ff13c25fd595a2cdff59e19"
+    },
+    "portable/regenerated_PORTABLE_ACCEPTANCE.sha256": {
+      "bytes": 65,
+      "sha256": "6a1950e3a3854b7884a224c9e7cede3d187d0c4f9ff13c25fd595a2cdff59e19"
+    },
+    "probe/REPORT.json": {
+      "bytes": 7937,
+      "sha256": "1f76ceddf53cb85cd7908d255af0df43e8ae97f159b7e24ea4f2c2166a76c95e"
+    },
+    "probe/keep_f3_games.json": {
+      "bytes": 762210,
+      "sha256": "a85f949e30661685a56e0efc46fb451f76a1b66bb793c6da1c00f37ad33e4bea",
+      "stored_as": "probe/keep_f3_games.json.gz",
+      "gz_bytes": 81219,
+      "transform": "gzip_lossless"
+    },
+    "probe/keep_patched_games.json": {
+      "bytes": 762602,
+      "sha256": "cb793fc1f72a0a440e0e977d7d1ccb5d55718b0170f0894e6eae3954448d100a",
+      "stored_as": "probe/keep_patched_games.json.gz",
+      "gz_bytes": 80925,
+      "transform": "gzip_lossless"
+    },
+    "probe/probe_mode4_games.json": {
+      "bytes": 743267,
+      "sha256": "57725bbeb3ea83c52a52ec049064dd807e52ec41bc4e1aa791c184e7abbad5da",
+      "stored_as": "probe/probe_mode4_games.json.gz",
+      "gz_bytes": 72629,
+      "transform": "gzip_lossless"
+    },
+    "probe/src/collect_evidence.sh": {
+      "bytes": 3699,
+      "sha256": "839636633079f5f6798c89185852323ac2e4b75757fcdfd7bd47e1522e93f4b5"
+    },
+    "probe/src/deltav_probe.py": {
+      "bytes": 6126,
+      "sha256": "00cfab65733c23dd355b57dc15a68002ab112a8b5711da0840b4c393a42374ed"
+    },
+    "probe/src/f3_deltav_policy.cpp": {
+      "bytes": 7917,
+      "sha256": "6235d04b7e74e2842fa5c346928416353750271c34dd282eedd5983a95b0ec0a"
+    },
+    "probe/src/probe_chain.sh": {
+      "bytes": 1094,
+      "sha256": "ad49313dff3488674ea6e8b44df49c6e800a6de273a937dd434d52d375da4418"
+    },
+    "probe/src/validate_chain.sh": {
+      "bytes": 1099,
+      "sha256": "c24b1dd415627522a4e31c479d5aac750c858b6d5096f308c7edcc97f3ae32bd"
+    },
+    "smoke/PORTABLE_ACCEPTANCE.json": {
+      "bytes": 24737,
+      "sha256": "6976451f4aa313b122b01f0378148038e113ee15f395d1e8593e707766fa9763"
+    }
+  }
+}
