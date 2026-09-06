@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "overall": {
+    "games": 1400,
+    "wins": 831,
+    "win_rate": 0.5935714285714285,
+    "mean_cash": 99798.65,
+    "mean_margin": 7612.975
+  },
+  "per_opponent": {
+    "g001": {
+      "games": 200,
+      "wins": 156,
+      "win_rate": 0.78,
+      "mean_cash": 99773.52,
+      "mean_margin": 8866.69
+    },
+    "g003": {
+      "games": 200,
+      "wins": 74,
+      "win_rate": 0.37,
+      "mean_cash": 94673.79,
+      "mean_margin": -1158.855
+    },
+    "boatlee_v29": {
+      "games": 200,
+      "wins": 199,
+      "win_rate": 0.995,
+      "mean_cash": 121329.885,
+      "mean_margin": 35393.63
+    },
+    "kaito_v58": {
+      "games": 200,
+      "wins": 123,
+      "win_rate": 0.615,
+      "mean_cash": 97649.65,
+      "mean_margin": 4797.99
+    },
+    "lynn_v5": {
+      "games": 200,
+      "wins": 88,
+      "win_rate": 0.44,
+      "mean_cash": 98251.49,
+      "mean_margin": 2351.015
+    },
+    "yhay81_six_day": {
+      "games": 200,
+      "wins": 103,
+      "win_rate": 0.515,
+      "mean_cash": 94226.8,
+      "mean_margin": 1626.515
+    },
+    "yhay81_three_day": {
+      "games": 200,
+      "wins": 88,
+      "win_rate": 0.44,
+      "mean_cash": 92685.415,
+      "mean_margin": 1413.84
+    }
+  },
+  "wall_seconds": 15.900175873,
+  "mode": 1,
+  "call_seconds": 15.927013748999798,
+  "bridge_seconds": 0.02683787599979759,
+  "games_per_second": 88.0493405344863,
+  "environment_steps_per_second": 63307.47584429565,
+  "effective_actor_records": 36549,
+  "decisions": 42000,
+  "non_keep": 0,
+  "changed": 0,
+  "max_action_ms": 19.843311999999997,
+  "errors": [],
+  "mean_times": {
+    "policy_seconds": 0.17273836211785715,
+    "enemy_seconds": 0.0035567980378571427,
+    "env_seconds": 0.0011830844721428572,
+    "model_seconds": 0.005019467065714286
+  }
+}

@@ -1,0 +1,618 @@
+{
+  "control_r0_step700_sample": {
+    "1d_cash": {
+      "mse": 0.010185694321990013,
+      "persistence_mse": 0.002225350122898817,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.007751835975795984,
+      "persistence_mse": 0.001425565336830914,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.09515627473592758,
+      "persistence_mse": 0.09435943514108658,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.12962333858013153,
+      "persistence_mse": 0.10759491473436356,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.007537643425166607,
+      "persistence_mse": 0.005356768611818552,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.012276415713131428,
+      "persistence_mse": 0.016743311658501625,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.009737318381667137,
+      "persistence_mse": 0.005154281854629517,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.18850187957286835,
+      "persistence_mse": 0.13262255489826202,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.37951335310935974,
+      "persistence_mse": 0.3247646987438202,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.026153594255447388,
+      "persistence_mse": 0.018620993942022324,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.0849812850356102,
+      "persistence_mse": 0.08267714083194733,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.013626162894070148,
+      "persistence_mse": 0.0128480214625597,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.24107688665390015,
+      "persistence_mse": 0.2401881068944931,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.8940961360931396,
+      "persistence_mse": 0.9336028695106506,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.09300525486469269,
+      "persistence_mse": 0.06500894576311111,
+      "samples": 32200
+    }
+  },
+  "control_r0_step800_sample": {
+    "1d_cash": {
+      "mse": 0.004908348899334669,
+      "persistence_mse": 0.0022039725445210934,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.004381484817713499,
+      "persistence_mse": 0.001437552273273468,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.10127779096364975,
+      "persistence_mse": 0.09760815650224686,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.133062943816185,
+      "persistence_mse": 0.11133008450269699,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.009162317030131817,
+      "persistence_mse": 0.005245478358119726,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.01870342344045639,
+      "persistence_mse": 0.016499871388077736,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.007395644206553698,
+      "persistence_mse": 0.005160625092685223,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.2330336719751358,
+      "persistence_mse": 0.13338492810726166,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.3915024399757385,
+      "persistence_mse": 0.33981555700302124,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.026537610217928886,
+      "persistence_mse": 0.01764029450714588,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.10195355117321014,
+      "persistence_mse": 0.0816274955868721,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.014204597100615501,
+      "persistence_mse": 0.012656102888286114,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.2112593650817871,
+      "persistence_mse": 0.23060698807239532,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.9755644202232361,
+      "persistence_mse": 1.0006619691848755,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.0943518877029419,
+      "persistence_mse": 0.06114708259701729,
+      "samples": 32200
+    }
+  },
+  "aux_r0_step700_sample": {
+    "1d_cash": {
+      "mse": 0.00046517368173226714,
+      "persistence_mse": 0.0022740366403013468,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.0008160400320775807,
+      "persistence_mse": 0.0014156342949718237,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.026740316301584244,
+      "persistence_mse": 0.09093165397644043,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.017627421766519547,
+      "persistence_mse": 0.11104811728000641,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.002456998685374856,
+      "persistence_mse": 0.006695684976875782,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.00161181075964123,
+      "persistence_mse": 0.01709427870810032,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.001785028027370572,
+      "persistence_mse": 0.004848001524806023,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.03028753772377968,
+      "persistence_mse": 0.13217030465602875,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.060814809054136276,
+      "persistence_mse": 0.3291540741920471,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.006263909861445427,
+      "persistence_mse": 0.019374476745724678,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.004815236199647188,
+      "persistence_mse": 0.08590284734964371,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.0037484620697796345,
+      "persistence_mse": 0.012498779222369194,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.040904056280851364,
+      "persistence_mse": 0.2270682454109192,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.09070436656475067,
+      "persistence_mse": 0.9657143950462341,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.011036640964448452,
+      "persistence_mse": 0.06293565779924393,
+      "samples": 32200
+    }
+  },
+  "aux_r0_step800_sample": {
+    "1d_cash": {
+      "mse": 0.0005013024201616645,
+      "persistence_mse": 0.0022982091177254915,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.0008400137303397059,
+      "persistence_mse": 0.0014335884479805827,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.02703612670302391,
+      "persistence_mse": 0.09331244975328445,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.017551561817526817,
+      "persistence_mse": 0.1131213828921318,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.0026743027847260237,
+      "persistence_mse": 0.006762088742107153,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.0017416392220184207,
+      "persistence_mse": 0.017197992652654648,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.0018875818932428956,
+      "persistence_mse": 0.004919869359582663,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.03115435503423214,
+      "persistence_mse": 0.13641352951526642,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.06036278232932091,
+      "persistence_mse": 0.3396640717983246,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.007077953312546015,
+      "persistence_mse": 0.019830137491226196,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.004845442716032267,
+      "persistence_mse": 0.0860455185174942,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.003913410939276218,
+      "persistence_mse": 0.0124414823949337,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.04149894416332245,
+      "persistence_mse": 0.23099665343761444,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.09471829980611801,
+      "persistence_mse": 0.9766161441802979,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.012224760837852955,
+      "persistence_mse": 0.06549138575792313,
+      "samples": 32200
+    }
+  },
+  "control_r1_step700_sample": {
+    "1d_cash": {
+      "mse": 0.002614694880321622,
+      "persistence_mse": 0.0021889538038522005,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.009181478060781956,
+      "persistence_mse": 0.0014118324033915997,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.0947074294090271,
+      "persistence_mse": 0.09583849459886551,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.14669755101203918,
+      "persistence_mse": 0.10789190232753754,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.012680841609835625,
+      "persistence_mse": 0.005276808049529791,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.013644150458276272,
+      "persistence_mse": 0.016412707045674324,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.011945261619985104,
+      "persistence_mse": 0.005103704519569874,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.1680261492729187,
+      "persistence_mse": 0.13507749140262604,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.29590317606925964,
+      "persistence_mse": 0.3276843726634979,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.023193148896098137,
+      "persistence_mse": 0.018437247723340988,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.1225871816277504,
+      "persistence_mse": 0.08101903647184372,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.025424687191843987,
+      "persistence_mse": 0.012735973112285137,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.33030587434768677,
+      "persistence_mse": 0.24500727653503418,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.8689932227134705,
+      "persistence_mse": 0.9385665655136108,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.06224072724580765,
+      "persistence_mse": 0.06390702724456787,
+      "samples": 32200
+    }
+  },
+  "control_r1_step800_sample": {
+    "1d_cash": {
+      "mse": 0.003289619693532586,
+      "persistence_mse": 0.0022077905014157295,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.009054061025381088,
+      "persistence_mse": 0.0014272035332396626,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.09571385383605957,
+      "persistence_mse": 0.09685157239437103,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.12691441178321838,
+      "persistence_mse": 0.1076592355966568,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.011584286577999592,
+      "persistence_mse": 0.0053258719854056835,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.015067781321704388,
+      "persistence_mse": 0.016553645953536034,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.011976024135947227,
+      "persistence_mse": 0.005162181332707405,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.1627039611339569,
+      "persistence_mse": 0.13600902259349823,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.28802743554115295,
+      "persistence_mse": 0.32777222990989685,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.02769140899181366,
+      "persistence_mse": 0.018351873382925987,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.11983437091112137,
+      "persistence_mse": 0.08173087984323502,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.03408563882112503,
+      "persistence_mse": 0.012901514768600464,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.35496777296066284,
+      "persistence_mse": 0.24532248079776764,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.9054006934165955,
+      "persistence_mse": 0.9452906847000122,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.05675835907459259,
+      "persistence_mse": 0.0632098913192749,
+      "samples": 32200
+    }
+  },
+  "aux_r1_step700_sample": {
+    "1d_cash": {
+      "mse": 0.00046832585940137506,
+      "persistence_mse": 0.0021964693441987038,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.0008417531498707831,
+      "persistence_mse": 0.0013920379569754004,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.02604074776172638,
+      "persistence_mse": 0.09809958189725876,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.016441725194454193,
+      "persistence_mse": 0.10828910022974014,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.0021615060977637768,
+      "persistence_mse": 0.0053732809610664845,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.001449406729079783,
+      "persistence_mse": 0.01647077687084675,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.0019553161691874266,
+      "persistence_mse": 0.004971613641828299,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.033963534981012344,
+      "persistence_mse": 0.1351671814918518,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.045853253453969955,
+      "persistence_mse": 0.326480507850647,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.005531803704798222,
+      "persistence_mse": 0.018188953399658203,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.003714280668646097,
+      "persistence_mse": 0.08179579675197601,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.0043970742262899876,
+      "persistence_mse": 0.012508939020335674,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.04202946648001671,
+      "persistence_mse": 0.24114707112312317,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.08832181245088577,
+      "persistence_mse": 0.9434518218040466,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.010837065055966377,
+      "persistence_mse": 0.061825741082429886,
+      "samples": 32200
+    }
+  },
+  "aux_r1_step800_sample": {
+    "1d_cash": {
+      "mse": 0.000427927152486518,
+      "persistence_mse": 0.0021806054282933474,
+      "samples": 40600
+    },
+    "1d_margin": {
+      "mse": 0.000807354343123734,
+      "persistence_mse": 0.001397603307850659,
+      "samples": 40600
+    },
+    "1d_standing_yield": {
+      "mse": 0.02553677000105381,
+      "persistence_mse": 0.09708350896835327,
+      "samples": 40600
+    },
+    "1d_water_due": {
+      "mse": 0.01525114569813013,
+      "persistence_mse": 0.10735499858856201,
+      "samples": 40600
+    },
+    "1d_feed_due": {
+      "mse": 0.0021180594339966774,
+      "persistence_mse": 0.00531318224966526,
+      "samples": 40600
+    },
+    "3d_cash": {
+      "mse": 0.0014618398854508996,
+      "persistence_mse": 0.016380388289690018,
+      "samples": 37800
+    },
+    "3d_margin": {
+      "mse": 0.0018694864120334387,
+      "persistence_mse": 0.0050466181710362434,
+      "samples": 37800
+    },
+    "3d_standing_yield": {
+      "mse": 0.03173992037773132,
+      "persistence_mse": 0.13389120995998383,
+      "samples": 37800
+    },
+    "3d_water_due": {
+      "mse": 0.04345959052443504,
+      "persistence_mse": 0.3229261636734009,
+      "samples": 37800
+    },
+    "3d_feed_due": {
+      "mse": 0.005533550400286913,
+      "persistence_mse": 0.01814192533493042,
+      "samples": 37800
+    },
+    "7d_cash": {
+      "mse": 0.00393469026312232,
+      "persistence_mse": 0.0812457725405693,
+      "samples": 32200
+    },
+    "7d_margin": {
+      "mse": 0.004272040911018848,
+      "persistence_mse": 0.012877333909273148,
+      "samples": 32200
+    },
+    "7d_standing_yield": {
+      "mse": 0.04196326434612274,
+      "persistence_mse": 0.23869919776916504,
+      "samples": 32200
+    },
+    "7d_water_due": {
+      "mse": 0.08820345997810364,
+      "persistence_mse": 0.9374285340309143,
+      "samples": 32200
+    },
+    "7d_feed_due": {
+      "mse": 0.01039641909301281,
+      "persistence_mse": 0.06226335093379021,
+      "samples": 32200
+    }
+  }
+}

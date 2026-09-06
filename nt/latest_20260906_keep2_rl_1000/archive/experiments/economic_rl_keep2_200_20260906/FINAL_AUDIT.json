@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "source_manifest_files_verified": 2644,
+  "training": {
+    "control_r0": {
+      "new_games": 22400,
+      "total_games": 44800,
+      "source_step": 100,
+      "end_step": 200,
+      "source_optimizer_updates": 5600,
+      "final_optimizer_updates": 11200,
+      "best_step": 200
+    },
+    "aux_r0": {
+      "new_games": 22400,
+      "total_games": 44800,
+      "source_step": 100,
+      "end_step": 200,
+      "source_optimizer_updates": 5600,
+      "final_optimizer_updates": 11200,
+      "best_step": 80
+    },
+    "control_r1": {
+      "new_games": 22400,
+      "total_games": 44800,
+      "source_step": 100,
+      "end_step": 200,
+      "source_optimizer_updates": 5600,
+      "final_optimizer_updates": 11200,
+      "best_step": 180
+    },
+    "aux_r1": {
+      "new_games": 22400,
+      "total_games": 44800,
+      "source_step": 100,
+      "end_step": 200,
+      "source_optimizer_updates": 5600,
+      "final_optimizer_updates": 11200,
+      "best_step": 60
+    }
+  },
+  "new_training_games": 89600,
+  "total_training_games": 179200,
+  "final_games": 29400,
+  "cpp_torch_onpolicy": {
+    "control_r0": {
+      "101": {
+        "prob": 4.172325134277344e-07,
+        "value": 1.6689300537109375e-06,
+        "logp": 2.384185791015625e-06,
+        "ratio": 2.5033950805664062e-06
+      },
+      "150": {
+        "prob": 6.556510925292969e-07,
+        "value": 1.6689300537109375e-06,
+        "logp": 1.9073486328125e-06,
+        "ratio": 1.8477439880371094e-06
+      },
+      "200": {
+        "prob": 5.662441253662109e-07,
+        "value": 2.0265579223632812e-06,
+        "logp": 2.86102294921875e-06,
+        "ratio": 2.86102294921875e-06
+      }
+    },
+    "aux_r0": {
+      "101": {
+        "prob": 4.76837158203125e-07,
+        "value": 1.4901161193847656e-06,
+        "logp": 1.6689300537109375e-06,
+        "ratio": 1.6689300537109375e-06
+      },
+      "150": {
+        "prob": 4.76837158203125e-07,
+        "value": 1.2516975402832031e-06,
+        "logp": 1.9073486328125e-06,
+        "ratio": 2.0265579223632812e-06
+      },
+      "200": {
+        "prob": 6.556510925292969e-07,
+        "value": 1.9073486328125e-06,
+        "logp": 1.6689300537109375e-06,
+        "ratio": 1.6689300537109375e-06
+      }
+    },
+    "control_r1": {
+      "101": {
+        "prob": 4.470348358154297e-07,
+        "value": 9.5367431640625e-07,
+        "logp": 1.7881393432617188e-06,
+        "ratio": 1.7881393432617188e-06
+      },
+      "150": {
+        "prob": 8.344650268554688e-07,
+        "value": 9.5367431640625e-07,
+        "logp": 2.7418136596679688e-06,
+        "ratio": 2.86102294921875e-06
+      },
+      "200": {
+        "prob": 1.043081283569336e-06,
+        "value": 1.0728836059570312e-06,
+        "logp": 3.2186508178710938e-06,
+        "ratio": 3.337860107421875e-06
+      }
+    },
+    "aux_r1": {
+      "101": {
+        "prob": 4.172325134277344e-07,
+        "value": 9.5367431640625e-07,
+        "logp": 1.430511474609375e-06,
+        "ratio": 1.5497207641601562e-06
+      },
+      "150": {
+        "prob": 5.662441253662109e-07,
+        "value": 1.1920928955078125e-06,
+        "logp": 3.0994415283203125e-06,
+        "ratio": 3.0994415283203125e-06
+      },
+      "200": {
+        "prob": 6.556510925292969e-07,
+        "value": 1.0728836059570312e-06,
+        "logp": 3.814697265625e-06,
+        "ratio": 3.814697265625e-06
+      }
+    }
+  },
+  "optimizer_continued_exactly": true,
+  "train_dev_oldfinal_newfinal_disjoint": true,
+  "selection_before_final": true,
+  "old_files_unchanged": true,
+  "finals": {
+    "aux_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 7630,
+      "changed": 7630
+    },
+    "aux_r0_step100_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24649,
+      "changed": 24649
+    },
+    "aux_r0_step100_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24455,
+      "changed": 24455
+    },
+    "aux_r0_step200_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 20451,
+      "changed": 20451
+    },
+    "aux_r0_step200_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19739,
+      "changed": 19739
+    },
+    "aux_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 1447,
+      "changed": 1447
+    },
+    "aux_r1_step100_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 8559,
+      "changed": 8559
+    },
+    "aux_r1_step100_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 16173,
+      "changed": 16173
+    },
+    "aux_r1_step200_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 13466,
+      "changed": 13466
+    },
+    "aux_r1_step200_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19122,
+      "changed": 19122
+    },
+    "control_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 15790,
+      "changed": 15790
+    },
+    "control_r0_step100_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22526,
+      "changed": 22526
+    },
+    "control_r0_step100_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24594,
+      "changed": 24594
+    },
+    "control_r0_step200_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 15790,
+      "changed": 15790
+    },
+    "control_r0_step200_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 18682,
+      "changed": 18682
+    },
+    "control_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 6934,
+      "changed": 6934
+    },
+    "control_r1_step100_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 3291,
+      "changed": 3291
+    },
+    "control_r1_step100_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 16500,
+      "changed": 16500
+    },
+    "control_r1_step200_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 14782,
+      "changed": 14782
+    },
+    "control_r1_step200_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 16553,
+      "changed": 16553
+    },
+    "keep": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 0,
+      "changed": 0
+    }
+  }
+}

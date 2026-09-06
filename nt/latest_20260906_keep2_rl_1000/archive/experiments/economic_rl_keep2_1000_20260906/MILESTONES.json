@@ -1,0 +1,44 @@
+[
+  {
+    "round": 400,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0400/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0400/FINAL_AUDIT.json",
+    "completed": 1788684404.26558
+  },
+  {
+    "round": 500,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0500/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0500/FINAL_AUDIT.json",
+    "completed": 1788686551.0438902
+  },
+  {
+    "round": 600,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0600/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0600/FINAL_AUDIT.json",
+    "completed": 1788688525.8984199
+  },
+  {
+    "round": 700,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/FINAL_AUDIT.json",
+    "completed": 1788690495.6526263
+  },
+  {
+    "round": 800,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0800/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0800/FINAL_AUDIT.json",
+    "completed": 1788692473.1614292
+  },
+  {
+    "round": 900,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0900/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0900/FINAL_AUDIT.json",
+    "completed": 1788694460.7236233
+  },
+  {
+    "round": 1000,
+    "report": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round1000/SUMMARY_ZH.md",
+    "audit": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round1000/FINAL_AUDIT.json",
+    "completed": 1788696490.5294402
+  }
+]

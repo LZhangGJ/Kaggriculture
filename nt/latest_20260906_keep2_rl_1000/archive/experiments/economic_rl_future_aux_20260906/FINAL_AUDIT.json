@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "training_games": 17920,
+  "final_games": 18200,
+  "initial_weights_and_rollouts_paired_exact": true,
+  "old_engine_and_opponents_unchanged": true,
+  "train_dev_final_seeds_disjoint": true,
+  "g1_labels_never_PPO_inputs": true,
+  "last_training_on_policy_cpp_torch": [
+    {
+      "arm": "control",
+      "repeat": 0,
+      "prob_error": 1.7881393432617188e-07,
+      "value_error": 7.152557373046875e-07
+    },
+    {
+      "arm": "aux",
+      "repeat": 0,
+      "prob_error": 2.384185791015625e-07,
+      "value_error": 8.940696716308594e-07
+    },
+    {
+      "arm": "control",
+      "repeat": 1,
+      "prob_error": 1.7881393432617188e-07,
+      "value_error": 1.0728836059570312e-06
+    },
+    {
+      "arm": "aux",
+      "repeat": 1,
+      "prob_error": 2.384185791015625e-07,
+      "value_error": 1.0728836059570312e-06
+    }
+  ],
+  "labels_never_cross_episode": true,
+  "aux_weights_excluded_from_export": true,
+  "control_aux_later_choice_differences": {
+    "0": 21352,
+    "1": 20837
+  }
+}

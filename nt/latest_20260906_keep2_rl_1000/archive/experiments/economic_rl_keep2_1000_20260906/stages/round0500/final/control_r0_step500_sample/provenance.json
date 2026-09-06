@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0500/training/control_r0/step500.bin",
+  "sha256": "47569ce995dfcc1b079d7a695d93ea5ded70cd8e7d3aa0c23af42fc3a9998e42",
+  "library": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_100_20260906/build/keep2.so",
+  "library_sha": "82bf7ea6c2cbf04f868399c28d1484a12671100509890c166fb5a1bf23313afd",
+  "seed_start": 70300000,
+  "seeds": 100,
+  "sample": 9921,
+  "mode": 2,
+  "keep_bonus": 2.0
+}

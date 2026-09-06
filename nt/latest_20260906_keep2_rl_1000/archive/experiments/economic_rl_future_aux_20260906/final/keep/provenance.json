@@ -1,0 +1,10 @@
+{
+  "checkpoint": "",
+  "checkpoint_sha256": null,
+  "library": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_f3_ledger_fix_20260906/build/f3.so",
+  "library_sha256": "40bb8e2263cb67bbbd8065867fd51c574cc6ada3049abba0b5b261a74641536b",
+  "seed_start": 69300000,
+  "seeds": 100,
+  "sample": 9901,
+  "mode": 0
+}

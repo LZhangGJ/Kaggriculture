@@ -1,0 +1,4139 @@
+{
+  "aux_r0_selected": {
+    "choice_counts": [
+      27876,
+      218,
+      476,
+      5,
+      3035,
+      8143,
+      1400,
+      341,
+      0,
+      506
+    ],
+    "effective": 35132,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 400,
+        "changed": 400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 893,
+        "changed": 893
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 348,
+        "changed": 348
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 143,
+        "changed": 143
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 405,
+        "changed": 405
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 325,
+        "changed": 325
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 573,
+        "changed": 573
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 258,
+        "changed": 258
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 395,
+        "changed": 395
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 707,
+        "changed": 707
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 964,
+        "changed": 964
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 904,
+        "changed": 904
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 968,
+        "changed": 968
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 915,
+        "changed": 915
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 865,
+        "changed": 865
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1122,
+        "changed": 1122
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 865,
+        "changed": 865
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1051,
+        "changed": 1051
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 125,
+        "changed": 125
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 78,
+        "changed": 78
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 96,
+        "changed": 96
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 64,
+        "changed": 64
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 42,
+        "changed": 42
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 72,
+        "changed": 72
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 126,
+        "changed": 126
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 20,
+        "changed": 20
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r0_step500_greedy": {
+    "choice_counts": [
+      24076,
+      4695,
+      2085,
+      5858,
+      1902,
+      1650,
+      1486,
+      145,
+      0,
+      103
+    ],
+    "effective": 35733,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 400,
+        "changed": 400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 592,
+        "changed": 592
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 155,
+        "changed": 155
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 67,
+        "changed": 67
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 339,
+        "changed": 339
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 363,
+        "changed": 363
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 463,
+        "changed": 463
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 304,
+        "changed": 304
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 237,
+        "changed": 237
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 591,
+        "changed": 591
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 823,
+        "changed": 823
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 639,
+        "changed": 639
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1012,
+        "changed": 1012
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1034,
+        "changed": 1034
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1136,
+        "changed": 1136
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1086,
+        "changed": 1086
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1109,
+        "changed": 1109
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1118,
+        "changed": 1118
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1155,
+        "changed": 1155
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1070,
+        "changed": 1070
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 387,
+        "changed": 387
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 309,
+        "changed": 309
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 537,
+        "changed": 537
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 437,
+        "changed": 437
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 573,
+        "changed": 573
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 588,
+        "changed": 588
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r0_step500_sample": {
+    "choice_counts": [
+      21366,
+      3382,
+      3410,
+      3964,
+      2104,
+      2752,
+      1746,
+      294,
+      219,
+      2763
+    ],
+    "effective": 35914,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1391,
+        "changed": 1391
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 457,
+        "changed": 457
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 83,
+        "changed": 83
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 629,
+        "changed": 629
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 360,
+        "changed": 360
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 174,
+        "changed": 174
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 366,
+        "changed": 366
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 418,
+        "changed": 418
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 667,
+        "changed": 667
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 396,
+        "changed": 396
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 511,
+        "changed": 511
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 719,
+        "changed": 719
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 872,
+        "changed": 872
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 765,
+        "changed": 765
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1026,
+        "changed": 1026
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 997,
+        "changed": 997
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1083,
+        "changed": 1083
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1047,
+        "changed": 1047
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1026,
+        "changed": 1026
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1074,
+        "changed": 1074
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1006,
+        "changed": 1006
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 968,
+        "changed": 968
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 774,
+        "changed": 774
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 749,
+        "changed": 749
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 774,
+        "changed": 774
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 750,
+        "changed": 750
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 780,
+        "changed": 780
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 772,
+        "changed": 772
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r0_step600_greedy": {
+    "choice_counts": [
+      27876,
+      218,
+      476,
+      5,
+      3035,
+      8143,
+      1400,
+      341,
+      0,
+      506
+    ],
+    "effective": 35132,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 400,
+        "changed": 400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 893,
+        "changed": 893
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 348,
+        "changed": 348
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 143,
+        "changed": 143
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 405,
+        "changed": 405
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 325,
+        "changed": 325
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 573,
+        "changed": 573
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 258,
+        "changed": 258
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 395,
+        "changed": 395
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 707,
+        "changed": 707
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 964,
+        "changed": 964
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 904,
+        "changed": 904
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 968,
+        "changed": 968
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 915,
+        "changed": 915
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 865,
+        "changed": 865
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1122,
+        "changed": 1122
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 865,
+        "changed": 865
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1051,
+        "changed": 1051
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 125,
+        "changed": 125
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 78,
+        "changed": 78
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 96,
+        "changed": 96
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 64,
+        "changed": 64
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 42,
+        "changed": 42
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 72,
+        "changed": 72
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 126,
+        "changed": 126
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 20,
+        "changed": 20
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r0_step600_sample": {
+    "choice_counts": [
+      23924,
+      996,
+      2508,
+      1256,
+      3101,
+      4476,
+      1371,
+      537,
+      140,
+      3691
+    ],
+    "effective": 35561,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1244,
+        "changed": 1244
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 505,
+        "changed": 505
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 192,
+        "changed": 192
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 911,
+        "changed": 911
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 526,
+        "changed": 526
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 223,
+        "changed": 223
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 479,
+        "changed": 479
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 374,
+        "changed": 374
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 566,
+        "changed": 566
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 427,
+        "changed": 427
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 582,
+        "changed": 582
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 781,
+        "changed": 781
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 953,
+        "changed": 953
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 861,
+        "changed": 861
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 948,
+        "changed": 948
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 924,
+        "changed": 924
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 868,
+        "changed": 868
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 964,
+        "changed": 964
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 853,
+        "changed": 853
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 912,
+        "changed": 912
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 636,
+        "changed": 636
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 611,
+        "changed": 611
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 569,
+        "changed": 569
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 493,
+        "changed": 493
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 411,
+        "changed": 411
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 464,
+        "changed": 464
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 462,
+        "changed": 462
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 337,
+        "changed": 337
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r1_selected": {
+    "choice_counts": [
+      40462,
+      0,
+      205,
+      1333,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effective": 36569,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 45,
+        "changed": 45
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 7,
+        "changed": 7
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 280,
+        "changed": 280
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 255,
+        "changed": 255
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 6,
+        "changed": 6
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 356,
+        "changed": 356
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 12,
+        "changed": 12
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 13,
+        "changed": 13
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 17,
+        "changed": 17
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 92,
+        "changed": 92
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 189,
+        "changed": 189
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 252,
+        "changed": 252
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 9,
+        "changed": 9
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 3,
+        "changed": 3
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 2,
+        "changed": 2
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r1_step500_greedy": {
+    "choice_counts": [
+      26525,
+      580,
+      7347,
+      1,
+      18,
+      7412,
+      0,
+      99,
+      0,
+      18
+    ],
+    "effective": 37598,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 71,
+        "changed": 71
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 98,
+        "changed": 98
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 120,
+        "changed": 120
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 346,
+        "changed": 346
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 434,
+        "changed": 434
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 226,
+        "changed": 226
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 272,
+        "changed": 272
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 318,
+        "changed": 318
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 771,
+        "changed": 771
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 878,
+        "changed": 878
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 918,
+        "changed": 918
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1028,
+        "changed": 1028
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 919,
+        "changed": 919
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 909,
+        "changed": 909
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1056,
+        "changed": 1056
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1006,
+        "changed": 1006
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1083,
+        "changed": 1083
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 618,
+        "changed": 618
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 321,
+        "changed": 321
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 474,
+        "changed": 474
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 245,
+        "changed": 245
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 303,
+        "changed": 303
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 134,
+        "changed": 134
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 85,
+        "changed": 85
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 42,
+        "changed": 42
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r1_step500_sample": {
+    "choice_counts": [
+      20789,
+      1682,
+      9071,
+      1162,
+      1255,
+      3997,
+      228,
+      614,
+      121,
+      3081
+    ],
+    "effective": 37384,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1,
+        "changed": 1
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1395,
+        "changed": 1395
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1399,
+        "changed": 1399
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 348,
+        "changed": 348
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 299,
+        "changed": 299
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 280,
+        "changed": 280
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 449,
+        "changed": 449
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 646,
+        "changed": 646
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 624,
+        "changed": 624
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 296,
+        "changed": 296
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 589,
+        "changed": 589
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 773,
+        "changed": 773
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 993,
+        "changed": 993
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 952,
+        "changed": 952
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1106,
+        "changed": 1106
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1016,
+        "changed": 1016
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1063,
+        "changed": 1063
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1094,
+        "changed": 1094
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1050,
+        "changed": 1050
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1081,
+        "changed": 1081
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 910,
+        "changed": 910
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 839,
+        "changed": 839
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 815,
+        "changed": 815
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 712,
+        "changed": 712
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 729,
+        "changed": 729
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 635,
+        "changed": 635
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 576,
+        "changed": 576
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 541,
+        "changed": 541
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r1_step600_greedy": {
+    "choice_counts": [
+      20475,
+      2941,
+      3358,
+      0,
+      5790,
+      7,
+      0,
+      928,
+      0,
+      8501
+    ],
+    "effective": 36179,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 974,
+        "changed": 974
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 523,
+        "changed": 523
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 31,
+        "changed": 31
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 589,
+        "changed": 589
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 803,
+        "changed": 803
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 881,
+        "changed": 881
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 211,
+        "changed": 211
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 158,
+        "changed": 158
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 623,
+        "changed": 623
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 863,
+        "changed": 863
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 843,
+        "changed": 843
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1129,
+        "changed": 1129
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 982,
+        "changed": 982
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1137,
+        "changed": 1137
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1175,
+        "changed": 1175
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1169,
+        "changed": 1169
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1139,
+        "changed": 1139
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1051,
+        "changed": 1051
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 961,
+        "changed": 961
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 897,
+        "changed": 897
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 746,
+        "changed": 746
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 748,
+        "changed": 748
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 554,
+        "changed": 554
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 285,
+        "changed": 285
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 253,
+        "changed": 253
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "aux_r1_step600_sample": {
+    "choice_counts": [
+      18991,
+      2221,
+      5484,
+      667,
+      4760,
+      1075,
+      94,
+      1065,
+      33,
+      7610
+    ],
+    "effective": 36421,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 5,
+        "changed": 5
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1382,
+        "changed": 1382
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1387,
+        "changed": 1387
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 753,
+        "changed": 753
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 443,
+        "changed": 443
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 226,
+        "changed": 226
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 480,
+        "changed": 480
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 744,
+        "changed": 744
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 903,
+        "changed": 903
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 291,
+        "changed": 291
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 560,
+        "changed": 560
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 784,
+        "changed": 784
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 942,
+        "changed": 942
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 883,
+        "changed": 883
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1077,
+        "changed": 1077
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1054,
+        "changed": 1054
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1119,
+        "changed": 1119
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1143,
+        "changed": 1143
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1136,
+        "changed": 1136
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1103,
+        "changed": 1103
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1004,
+        "changed": 1004
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 946,
+        "changed": 946
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 931,
+        "changed": 931
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 848,
+        "changed": 848
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 846,
+        "changed": 846
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 722,
+        "changed": 722
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 634,
+        "changed": 634
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 663,
+        "changed": 663
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r0_selected": {
+    "choice_counts": [
+      25984,
+      0,
+      625,
+      0,
+      0,
+      6694,
+      0,
+      21,
+      0,
+      8676
+    ],
+    "effective": 36587,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 10,
+        "changed": 10
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 57,
+        "changed": 57
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 14,
+        "changed": 14
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 343,
+        "changed": 343
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 553,
+        "changed": 553
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 571,
+        "changed": 571
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 737,
+        "changed": 737
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 845,
+        "changed": 845
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 855,
+        "changed": 855
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 990,
+        "changed": 990
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 988,
+        "changed": 988
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1216,
+        "changed": 1216
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1147,
+        "changed": 1147
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1216,
+        "changed": 1216
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1290,
+        "changed": 1290
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1317,
+        "changed": 1317
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1150,
+        "changed": 1150
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1276,
+        "changed": 1276
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1022,
+        "changed": 1022
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 419,
+        "changed": 419
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r0_step500_greedy": {
+    "choice_counts": [
+      15516,
+      4934,
+      62,
+      5540,
+      3036,
+      0,
+      0,
+      3417,
+      0,
+      9495
+    ],
+    "effective": 37210,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1398,
+        "changed": 1398
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 896,
+        "changed": 896
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 877,
+        "changed": 877
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 418,
+        "changed": 418
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 394,
+        "changed": 394
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 469,
+        "changed": 469
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 522,
+        "changed": 522
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 43,
+        "changed": 43
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 15,
+        "changed": 15
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 498,
+        "changed": 498
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 772,
+        "changed": 772
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 862,
+        "changed": 862
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1190,
+        "changed": 1190
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1076,
+        "changed": 1076
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1278,
+        "changed": 1278
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1269,
+        "changed": 1269
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1270,
+        "changed": 1270
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1288,
+        "changed": 1288
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1294,
+        "changed": 1294
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1375,
+        "changed": 1375
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1250,
+        "changed": 1250
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1282,
+        "changed": 1282
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1319,
+        "changed": 1319
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1296,
+        "changed": 1296
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1358,
+        "changed": 1358
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1375,
+        "changed": 1375
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r0_step500_sample": {
+    "choice_counts": [
+      16440,
+      4294,
+      2450,
+      3847,
+      3171,
+      554,
+      202,
+      3352,
+      432,
+      7258
+    ],
+    "effective": 36978,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 2,
+        "changed": 2
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1227,
+        "changed": 1227
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1172,
+        "changed": 1172
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 876,
+        "changed": 876
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 782,
+        "changed": 782
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 333,
+        "changed": 333
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 465,
+        "changed": 465
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 572,
+        "changed": 572
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 759,
+        "changed": 759
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 220,
+        "changed": 220
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 470,
+        "changed": 470
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 640,
+        "changed": 640
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 761,
+        "changed": 761
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 771,
+        "changed": 771
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1159,
+        "changed": 1159
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1059,
+        "changed": 1059
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1196,
+        "changed": 1196
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1193,
+        "changed": 1193
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1236,
+        "changed": 1236
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1226,
+        "changed": 1226
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1222,
+        "changed": 1222
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1256,
+        "changed": 1256
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1113,
+        "changed": 1113
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1110,
+        "changed": 1110
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1167,
+        "changed": 1167
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1121,
+        "changed": 1121
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1174,
+        "changed": 1174
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1278,
+        "changed": 1278
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r0_step600_greedy": {
+    "choice_counts": [
+      23680,
+      4766,
+      2630,
+      0,
+      3085,
+      1197,
+      0,
+      4140,
+      0,
+      2502
+    ],
+    "effective": 37102,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 934,
+        "changed": 934
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 799,
+        "changed": 799
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 346,
+        "changed": 346
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 357,
+        "changed": 357
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 506,
+        "changed": 506
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 848,
+        "changed": 848
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 252,
+        "changed": 252
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 357,
+        "changed": 357
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 696,
+        "changed": 696
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 622,
+        "changed": 622
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 634,
+        "changed": 634
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 808,
+        "changed": 808
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 901,
+        "changed": 901
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 831,
+        "changed": 831
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 726,
+        "changed": 726
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 773,
+        "changed": 773
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 665,
+        "changed": 665
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 548,
+        "changed": 548
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 648,
+        "changed": 648
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 559,
+        "changed": 559
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 500,
+        "changed": 500
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 629,
+        "changed": 629
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 484,
+        "changed": 484
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 468,
+        "changed": 468
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 629,
+        "changed": 629
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r0_step600_sample": {
+    "choice_counts": [
+      18943,
+      2926,
+      5058,
+      988,
+      2689,
+      1955,
+      110,
+      4217,
+      228,
+      4886
+    ],
+    "effective": 36958,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 1,
+        "changed": 1
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1298,
+        "changed": 1298
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1319,
+        "changed": 1319
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 883,
+        "changed": 883
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 756,
+        "changed": 756
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 373,
+        "changed": 373
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 430,
+        "changed": 430
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 608,
+        "changed": 608
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 1007,
+        "changed": 1007
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 293,
+        "changed": 293
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 646,
+        "changed": 646
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 751,
+        "changed": 751
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 824,
+        "changed": 824
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 841,
+        "changed": 841
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1061,
+        "changed": 1061
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 989,
+        "changed": 989
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 991,
+        "changed": 991
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1015,
+        "changed": 1015
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1007,
+        "changed": 1007
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1004,
+        "changed": 1004
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 915,
+        "changed": 915
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 943,
+        "changed": 943
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 890,
+        "changed": 890
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 848,
+        "changed": 848
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 872,
+        "changed": 872
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 835,
+        "changed": 835
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 806,
+        "changed": 806
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 851,
+        "changed": 851
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r1_selected": {
+    "choice_counts": [
+      34972,
+      0,
+      38,
+      1061,
+      0,
+      1501,
+      0,
+      0,
+      0,
+      4428
+    ],
+    "effective": 36569,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 53,
+        "changed": 53
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 37,
+        "changed": 37
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 128,
+        "changed": 128
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 274,
+        "changed": 274
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 288,
+        "changed": 288
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 177,
+        "changed": 177
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 369,
+        "changed": 369
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 284,
+        "changed": 284
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 344,
+        "changed": 344
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 307,
+        "changed": 307
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 371,
+        "changed": 371
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 438,
+        "changed": 438
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 468,
+        "changed": 468
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 554,
+        "changed": 554
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 553,
+        "changed": 553
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 534,
+        "changed": 534
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 740,
+        "changed": 740
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 829,
+        "changed": 829
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 280,
+        "changed": 280
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r1_step500_greedy": {
+    "choice_counts": [
+      13955,
+      1800,
+      6842,
+      1823,
+      562,
+      10456,
+      0,
+      3455,
+      0,
+      3107
+    ],
+    "effective": 37498,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 767,
+        "changed": 767
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 578,
+        "changed": 578
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 624,
+        "changed": 624
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 492,
+        "changed": 492
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 574,
+        "changed": 574
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 1039,
+        "changed": 1039
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 234,
+        "changed": 234
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 395,
+        "changed": 395
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 903,
+        "changed": 903
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 995,
+        "changed": 995
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 1007,
+        "changed": 1007
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1362,
+        "changed": 1362
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1163,
+        "changed": 1163
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1314,
+        "changed": 1314
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1330,
+        "changed": 1330
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1286,
+        "changed": 1286
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1304,
+        "changed": 1304
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1325,
+        "changed": 1325
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1363,
+        "changed": 1363
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1345,
+        "changed": 1345
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1269,
+        "changed": 1269
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1270,
+        "changed": 1270
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1131,
+        "changed": 1131
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1026,
+        "changed": 1026
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1149,
+        "changed": 1149
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r1_step500_sample": {
+    "choice_counts": [
+      14823,
+      1380,
+      8293,
+      2180,
+      1985,
+      6712,
+      44,
+      2486,
+      112,
+      3985
+    ],
+    "effective": 37048,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 14,
+        "changed": 14
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1387,
+        "changed": 1387
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1391,
+        "changed": 1391
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 724,
+        "changed": 724
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 554,
+        "changed": 554
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 488,
+        "changed": 488
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 511,
+        "changed": 511
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 648,
+        "changed": 648
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 1004,
+        "changed": 1004
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 319,
+        "changed": 319
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 679,
+        "changed": 679
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 892,
+        "changed": 892
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 1057,
+        "changed": 1057
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 1053,
+        "changed": 1053
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1316,
+        "changed": 1316
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1198,
+        "changed": 1198
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1261,
+        "changed": 1261
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1296,
+        "changed": 1296
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1267,
+        "changed": 1267
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1280,
+        "changed": 1280
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1212,
+        "changed": 1212
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1217,
+        "changed": 1217
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1152,
+        "changed": 1152
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1082,
+        "changed": 1082
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1092,
+        "changed": 1092
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1021,
+        "changed": 1021
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 980,
+        "changed": 980
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1082,
+        "changed": 1082
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r1_step600_greedy": {
+    "choice_counts": [
+      13817,
+      1737,
+      429,
+      2,
+      3961,
+      10021,
+      0,
+      2646,
+      0,
+      9387
+    ],
+    "effective": 36753,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1400,
+        "changed": 1400
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 974,
+        "changed": 974
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 664,
+        "changed": 664
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 213,
+        "changed": 213
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 339,
+        "changed": 339
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 556,
+        "changed": 556
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 946,
+        "changed": 946
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 265,
+        "changed": 265
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 309,
+        "changed": 309
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 756,
+        "changed": 756
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 876,
+        "changed": 876
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 955,
+        "changed": 955
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1316,
+        "changed": 1316
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1118,
+        "changed": 1118
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1240,
+        "changed": 1240
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1304,
+        "changed": 1304
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1293,
+        "changed": 1293
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1303,
+        "changed": 1303
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1311,
+        "changed": 1311
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1385,
+        "changed": 1385
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1388,
+        "changed": 1388
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1391,
+        "changed": 1391
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1375,
+        "changed": 1375
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1389,
+        "changed": 1389
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1369,
+        "changed": 1369
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1348,
+        "changed": 1348
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "control_r1_step600_sample": {
+    "choice_counts": [
+      15594,
+      1628,
+      4035,
+      1135,
+      3441,
+      6932,
+      57,
+      2685,
+      46,
+      6447
+    ],
+    "effective": 36690,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 3,
+        "changed": 3
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 1397,
+        "changed": 1397
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 1398,
+        "changed": 1398
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 829,
+        "changed": 829
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 614,
+        "changed": 614
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 358,
+        "changed": 358
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 418,
+        "changed": 418
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 588,
+        "changed": 588
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 967,
+        "changed": 967
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 238,
+        "changed": 238
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 500,
+        "changed": 500
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 827,
+        "changed": 827
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 967,
+        "changed": 967
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 977,
+        "changed": 977
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 1292,
+        "changed": 1292
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 1160,
+        "changed": 1160
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 1234,
+        "changed": 1234
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 1276,
+        "changed": 1276
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 1254,
+        "changed": 1254
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 1268,
+        "changed": 1268
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 1129,
+        "changed": 1129
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 1163,
+        "changed": 1163
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 1103,
+        "changed": 1103
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 1081,
+        "changed": 1081
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 1083,
+        "changed": 1083
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 1054,
+        "changed": 1054
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 1045,
+        "changed": 1045
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 1183,
+        "changed": 1183
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  },
+  "keep": {
+    "choice_counts": [
+      42000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effective": 36570,
+    "by_day": [
+      {
+        "day": 0,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 1,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 2,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 3,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 4,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 5,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 6,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 7,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 8,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 9,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 10,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 11,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 12,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 13,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 14,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 15,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 16,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 17,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 18,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 19,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 20,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 21,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 22,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 23,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 24,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 25,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 26,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 27,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 28,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      },
+      {
+        "day": 29,
+        "total": 1400,
+        "nonkeep": 0,
+        "changed": 0
+      }
+    ]
+  }
+}

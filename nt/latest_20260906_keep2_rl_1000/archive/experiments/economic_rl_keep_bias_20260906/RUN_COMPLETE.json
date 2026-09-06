@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "games": 23800,
+  "seconds": 280.656080301,
+  "source_weights_unchanged": true,
+  "no_retraining": true,
+  "all_games_full_719": true,
+  "all_choices_legal": true
+}

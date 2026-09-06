@@ -1,0 +1,3529 @@
+{
+  "summaries": {
+    "aux_r0_selected": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 996,
+        "win_rate": 0.7114285714285714,
+        "mean_cash": 103798.36,
+        "mean_margin": 9115.533571428572
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 170,
+          "win_rate": 0.85,
+          "mean_cash": 102593.065,
+          "mean_margin": 12198.76
+        },
+        "g003": {
+          "games": 200,
+          "wins": 84,
+          "win_rate": 0.42,
+          "mean_cash": 97659.615,
+          "mean_margin": 603.62
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 114000.275,
+          "mean_margin": 23969.89
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 163,
+          "win_rate": 0.815,
+          "mean_cash": 103766.75,
+          "mean_margin": 8882.445
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 117,
+          "win_rate": 0.585,
+          "mean_cash": 104419.75,
+          "mean_margin": 6460.235
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 120,
+          "win_rate": 0.6,
+          "mean_cash": 102116.135,
+          "mean_margin": 3881.11
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 143,
+          "win_rate": 0.715,
+          "mean_cash": 102032.93,
+          "mean_margin": 7812.675
+        }
+      },
+      "wall_seconds": 16.288455607,
+      "mode": 1,
+      "call_seconds": 16.315208746999815,
+      "bridge_seconds": 0.026753139999815545,
+      "games_per_second": 85.95044452209127,
+      "environment_steps_per_second": 61798.36961138363,
+      "effective_actor_records": 35367,
+      "decisions": 42000,
+      "non_keep": 17210,
+      "changed": 17210,
+      "max_action_ms": 21.703765,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.176499765365,
+        "enemy_seconds": 0.003589264377142857,
+        "env_seconds": 0.0012146030685714286,
+        "model_seconds": 0.005315572098571429
+      }
+    },
+    "aux_r0_step600_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 971,
+        "win_rate": 0.6935714285714286,
+        "mean_cash": 103945.63428571429,
+        "mean_margin": 9199.960714285715
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 161,
+          "win_rate": 0.805,
+          "mean_cash": 103404.355,
+          "mean_margin": 12212.155
+        },
+        "g003": {
+          "games": 200,
+          "wins": 86,
+          "win_rate": 0.43,
+          "mean_cash": 97977.82,
+          "mean_margin": -5.5
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 198,
+          "win_rate": 0.99,
+          "mean_cash": 115354.085,
+          "mean_margin": 24427.625
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 144,
+          "win_rate": 0.72,
+          "mean_cash": 104536.475,
+          "mean_margin": 8244.37
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 105,
+          "win_rate": 0.525,
+          "mean_cash": 102701.59,
+          "mean_margin": 5524.14
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 116,
+          "win_rate": 0.58,
+          "mean_cash": 102238.64,
+          "mean_margin": 4225.205
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 161,
+          "win_rate": 0.805,
+          "mean_cash": 101406.475,
+          "mean_margin": 9771.73
+        }
+      },
+      "wall_seconds": 16.287008931,
+      "mode": 1,
+      "call_seconds": 16.30854499599991,
+      "bridge_seconds": 0.021536064999910565,
+      "games_per_second": 85.95807897761385,
+      "environment_steps_per_second": 61803.858784904354,
+      "effective_actor_records": 35132,
+      "decisions": 42000,
+      "non_keep": 14124,
+      "changed": 14124,
+      "max_action_ms": 22.836443000000003,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17673545225285714,
+        "enemy_seconds": 0.0035978488992857143,
+        "env_seconds": 0.001219388265,
+        "model_seconds": 0.005275805320714286
+      }
+    },
+    "aux_r0_step600_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 943,
+        "win_rate": 0.6735714285714286,
+        "mean_cash": 102618.12071428572,
+        "mean_margin": 8514.613571428572
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 169,
+          "win_rate": 0.845,
+          "mean_cash": 100596.13,
+          "mean_margin": 11918.065
+        },
+        "g003": {
+          "games": 200,
+          "wins": 84,
+          "win_rate": 0.42,
+          "mean_cash": 96587.63,
+          "mean_margin": -453.225
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 116223.72,
+          "mean_margin": 25676.91
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 146,
+          "win_rate": 0.73,
+          "mean_cash": 105688.995,
+          "mean_margin": 8354.19
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 114,
+          "win_rate": 0.57,
+          "mean_cash": 102619.585,
+          "mean_margin": 5312.865
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 96,
+          "win_rate": 0.48,
+          "mean_cash": 95027.375,
+          "mean_margin": 746.43
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 134,
+          "win_rate": 0.67,
+          "mean_cash": 101583.41,
+          "mean_margin": 8047.06
+        }
+      },
+      "wall_seconds": 16.221494173,
+      "mode": 2,
+      "call_seconds": 16.243762232000336,
+      "bridge_seconds": 0.022268059000335683,
+      "games_per_second": 86.30524322045756,
+      "environment_steps_per_second": 62053.469875508985,
+      "effective_actor_records": 35561,
+      "decisions": 42000,
+      "non_keep": 18076,
+      "changed": 18076,
+      "max_action_ms": 22.969188000000003,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17570824443214283,
+        "enemy_seconds": 0.0035770155235714286,
+        "env_seconds": 0.0012103771142857142,
+        "model_seconds": 0.005316578358571428
+      }
+    },
+    "aux_r0_step700_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 983,
+        "win_rate": 0.7021428571428572,
+        "mean_cash": 105024.55285714286,
+        "mean_margin": 10042.361428571428
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 170,
+          "win_rate": 0.85,
+          "mean_cash": 103520.475,
+          "mean_margin": 11010.13
+        },
+        "g003": {
+          "games": 200,
+          "wins": 101,
+          "win_rate": 0.505,
+          "mean_cash": 99026.025,
+          "mean_margin": 1310.37
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 194,
+          "win_rate": 0.97,
+          "mean_cash": 120939.675,
+          "mean_margin": 31573.75
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 154,
+          "win_rate": 0.77,
+          "mean_cash": 103518.35,
+          "mean_margin": 8910.815
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 110,
+          "win_rate": 0.55,
+          "mean_cash": 102202.73,
+          "mean_margin": 6102.595
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 113,
+          "win_rate": 0.565,
+          "mean_cash": 101938.325,
+          "mean_margin": 2657.64
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 141,
+          "win_rate": 0.705,
+          "mean_cash": 104026.29,
+          "mean_margin": 8731.23
+        }
+      },
+      "wall_seconds": 16.217906459,
+      "mode": 1,
+      "call_seconds": 16.243322704000093,
+      "bridge_seconds": 0.02541624500009121,
+      "games_per_second": 86.32433560640503,
+      "environment_steps_per_second": 62067.19730100522,
+      "effective_actor_records": 35009,
+      "decisions": 42000,
+      "non_keep": 20674,
+      "changed": 20674,
+      "max_action_ms": 24.849047,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17559609672714285,
+        "enemy_seconds": 0.003572947514285714,
+        "env_seconds": 0.001214184125,
+        "model_seconds": 0.005259551629285714
+      }
+    },
+    "aux_r0_step700_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 954,
+        "win_rate": 0.6814285714285714,
+        "mean_cash": 103640.05571428571,
+        "mean_margin": 9081.555
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 168,
+          "win_rate": 0.84,
+          "mean_cash": 101340.735,
+          "mean_margin": 11153.04
+        },
+        "g003": {
+          "games": 200,
+          "wins": 91,
+          "win_rate": 0.455,
+          "mean_cash": 98977.09,
+          "mean_margin": 440.905
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 198,
+          "win_rate": 0.99,
+          "mean_cash": 114590.44,
+          "mean_margin": 26613.885
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 152,
+          "win_rate": 0.76,
+          "mean_cash": 102422.875,
+          "mean_margin": 9185.165
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 111,
+          "win_rate": 0.555,
+          "mean_cash": 105253.905,
+          "mean_margin": 5009.215
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 102,
+          "win_rate": 0.51,
+          "mean_cash": 100373.435,
+          "mean_margin": 3282.045
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 132,
+          "win_rate": 0.66,
+          "mean_cash": 102521.91,
+          "mean_margin": 7886.63
+        }
+      },
+      "wall_seconds": 16.266613387,
+      "mode": 2,
+      "call_seconds": 16.2948874650001,
+      "bridge_seconds": 0.028274078000102065,
+      "games_per_second": 86.06585566967837,
+      "environment_steps_per_second": 61881.35022649875,
+      "effective_actor_records": 35234,
+      "decisions": 42000,
+      "non_keep": 22326,
+      "changed": 22326,
+      "max_action_ms": 23.373381,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17603180772928573,
+        "enemy_seconds": 0.003582904243571429,
+        "env_seconds": 0.0012162618435714286,
+        "model_seconds": 0.005300685761428571
+      }
+    },
+    "aux_r1_selected": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 876,
+        "win_rate": 0.6257142857142857,
+        "mean_cash": 102950.11,
+        "mean_margin": 8176.626428571429
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 161,
+          "win_rate": 0.805,
+          "mean_cash": 101806.525,
+          "mean_margin": 8505.03
+        },
+        "g003": {
+          "games": 200,
+          "wins": 93,
+          "win_rate": 0.465,
+          "mean_cash": 101238.56,
+          "mean_margin": 1093.78
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 120929.645,
+          "mean_margin": 34169.86
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 136,
+          "win_rate": 0.68,
+          "mean_cash": 101686.75,
+          "mean_margin": 8560.625
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 106,
+          "win_rate": 0.53,
+          "mean_cash": 101789.085,
+          "mean_margin": 4224.375
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 103,
+          "win_rate": 0.515,
+          "mean_cash": 97250.605,
+          "mean_margin": 1406.595
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 78,
+          "win_rate": 0.39,
+          "mean_cash": 95949.6,
+          "mean_margin": -723.88
+        }
+      },
+      "wall_seconds": 16.046003113,
+      "mode": 1,
+      "call_seconds": 16.07036236100066,
+      "bridge_seconds": 0.02435924800066047,
+      "games_per_second": 87.24914174208037,
+      "environment_steps_per_second": 62732.13291255579,
+      "effective_actor_records": 36569,
+      "decisions": 42000,
+      "non_keep": 1538,
+      "changed": 1538,
+      "max_action_ms": 24.016589,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17429529422642856,
+        "enemy_seconds": 0.0035531392664285713,
+        "env_seconds": 0.0011953325614285715,
+        "model_seconds": 0.005265131425
+      }
+    },
+    "aux_r1_step600_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 947,
+        "win_rate": 0.6764285714285714,
+        "mean_cash": 102826.35928571428,
+        "mean_margin": 9294.657857142856
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 173,
+          "win_rate": 0.865,
+          "mean_cash": 101682.53,
+          "mean_margin": 13094.11
+        },
+        "g003": {
+          "games": 200,
+          "wins": 90,
+          "win_rate": 0.45,
+          "mean_cash": 100458.95,
+          "mean_margin": 2901.3
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 198,
+          "win_rate": 0.99,
+          "mean_cash": 117639.395,
+          "mean_margin": 29101.995
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 155,
+          "win_rate": 0.775,
+          "mean_cash": 104068.5,
+          "mean_margin": 10311.765
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 110,
+          "win_rate": 0.55,
+          "mean_cash": 102966.45,
+          "mean_margin": 4275.615
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 107,
+          "win_rate": 0.535,
+          "mean_cash": 92866.85,
+          "mean_margin": 1449.835
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 114,
+          "win_rate": 0.57,
+          "mean_cash": 100101.84,
+          "mean_margin": 3927.985
+        }
+      },
+      "wall_seconds": 15.954882646,
+      "mode": 1,
+      "call_seconds": 15.976869639999677,
+      "bridge_seconds": 0.021986993999677296,
+      "games_per_second": 87.74743325053474,
+      "environment_steps_per_second": 63090.40450713447,
+      "effective_actor_records": 36179,
+      "decisions": 42000,
+      "non_keep": 21525,
+      "changed": 21525,
+      "max_action_ms": 21.429007,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17286342567714286,
+        "enemy_seconds": 0.003565661732142857,
+        "env_seconds": 0.0012040755214285715,
+        "model_seconds": 0.005229854337142857
+      }
+    },
+    "aux_r1_step600_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 861,
+        "win_rate": 0.615,
+        "mean_cash": 102013.4,
+        "mean_margin": 7344.617857142857
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 167,
+          "win_rate": 0.835,
+          "mean_cash": 103863.05,
+          "mean_margin": 12161.625
+        },
+        "g003": {
+          "games": 200,
+          "wins": 86,
+          "win_rate": 0.43,
+          "mean_cash": 100582.06,
+          "mean_margin": 31.185
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 117238.995,
+          "mean_margin": 29503.52
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 135,
+          "win_rate": 0.675,
+          "mean_cash": 102057.685,
+          "mean_margin": 7265.555
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 97,
+          "win_rate": 0.485,
+          "mean_cash": 98702.195,
+          "mean_margin": 2238.325
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 88,
+          "win_rate": 0.44,
+          "mean_cash": 95286.605,
+          "mean_margin": -642.22
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 89,
+          "win_rate": 0.445,
+          "mean_cash": 96363.21,
+          "mean_margin": 854.335
+        }
+      },
+      "wall_seconds": 16.049788852,
+      "mode": 2,
+      "call_seconds": 16.072380798000268,
+      "bridge_seconds": 0.022591946000268592,
+      "games_per_second": 87.22856187765629,
+      "environment_steps_per_second": 62717.33599003487,
+      "effective_actor_records": 36421,
+      "decisions": 42000,
+      "non_keep": 23009,
+      "changed": 23009,
+      "max_action_ms": 19.831593,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17369433628142855,
+        "enemy_seconds": 0.003567563404285714,
+        "env_seconds": 0.0012029242949999999,
+        "model_seconds": 0.0052929623057142855
+      }
+    },
+    "aux_r1_step700_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 920,
+        "win_rate": 0.6571428571428571,
+        "mean_cash": 102004.6392857143,
+        "mean_margin": 9207.992857142857
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 172,
+          "win_rate": 0.86,
+          "mean_cash": 100892.58,
+          "mean_margin": 12602.9
+        },
+        "g003": {
+          "games": 200,
+          "wins": 77,
+          "win_rate": 0.385,
+          "mean_cash": 97874.415,
+          "mean_margin": 692.6
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 118583.745,
+          "mean_margin": 31018.035
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 154,
+          "win_rate": 0.77,
+          "mean_cash": 102658.27,
+          "mean_margin": 9801.175
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 98,
+          "win_rate": 0.49,
+          "mean_cash": 100939.91,
+          "mean_margin": 3618.645
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 110,
+          "win_rate": 0.55,
+          "mean_cash": 94686.555,
+          "mean_margin": 2962.955
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 110,
+          "win_rate": 0.55,
+          "mean_cash": 98397.0,
+          "mean_margin": 3759.64
+        }
+      },
+      "wall_seconds": 15.905810682,
+      "mode": 1,
+      "call_seconds": 15.927950154999962,
+      "bridge_seconds": 0.022139472999961995,
+      "games_per_second": 88.01814808372683,
+      "environment_steps_per_second": 63285.04847219959,
+      "effective_actor_records": 36196,
+      "decisions": 42000,
+      "non_keep": 24875,
+      "changed": 24875,
+      "max_action_ms": 20.101854,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17212976468357144,
+        "enemy_seconds": 0.0035275487907142854,
+        "env_seconds": 0.0011965449007142856,
+        "model_seconds": 0.0051665175242857145
+      }
+    },
+    "aux_r1_step700_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 871,
+        "win_rate": 0.6221428571428571,
+        "mean_cash": 102078.94714285714,
+        "mean_margin": 8003.097142857143
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 155,
+          "win_rate": 0.775,
+          "mean_cash": 102495.28,
+          "mean_margin": 11948.865
+        },
+        "g003": {
+          "games": 200,
+          "wins": 81,
+          "win_rate": 0.405,
+          "mean_cash": 98701.9,
+          "mean_margin": -440.73
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 119777.335,
+          "mean_margin": 32375.985
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 144,
+          "win_rate": 0.72,
+          "mean_cash": 102019.93,
+          "mean_margin": 7989.675
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 105,
+          "win_rate": 0.525,
+          "mean_cash": 99527.92,
+          "mean_margin": 2964.73
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 92,
+          "win_rate": 0.46,
+          "mean_cash": 94790.31,
+          "mean_margin": -580.095
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 95,
+          "win_rate": 0.475,
+          "mean_cash": 97239.955,
+          "mean_margin": 1763.25
+        }
+      },
+      "wall_seconds": 16.05184253,
+      "mode": 2,
+      "call_seconds": 16.074174008999762,
+      "bridge_seconds": 0.022331478999763732,
+      "games_per_second": 87.21740182682942,
+      "environment_steps_per_second": 62709.31191349035,
+      "effective_actor_records": 36525,
+      "decisions": 42000,
+      "non_keep": 24640,
+      "changed": 24640,
+      "max_action_ms": 20.426001999999997,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17396800035,
+        "enemy_seconds": 0.0035652827285714292,
+        "env_seconds": 0.0012034871014285715,
+        "model_seconds": 0.005279235441428571
+      }
+    },
+    "control_r0_selected": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 857,
+        "win_rate": 0.6121428571428571,
+        "mean_cash": 102681.48142857142,
+        "mean_margin": 7985.213571428571
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 151,
+          "win_rate": 0.755,
+          "mean_cash": 102933.365,
+          "mean_margin": 9113.98
+        },
+        "g003": {
+          "games": 200,
+          "wins": 91,
+          "win_rate": 0.455,
+          "mean_cash": 99830.215,
+          "mean_margin": 550.28
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 121420.22,
+          "mean_margin": 34375.285
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 138,
+          "win_rate": 0.69,
+          "mean_cash": 101398.195,
+          "mean_margin": 8210.625
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 104,
+          "win_rate": 0.52,
+          "mean_cash": 102161.13,
+          "mean_margin": 4704.075
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 82,
+          "win_rate": 0.41,
+          "mean_cash": 94087.59,
+          "mean_margin": -967.445
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 92,
+          "win_rate": 0.46,
+          "mean_cash": 96939.655,
+          "mean_margin": -90.305
+        }
+      },
+      "wall_seconds": 16.062811672,
+      "mode": 1,
+      "call_seconds": 16.092585594999946,
+      "bridge_seconds": 0.02977392299994719,
+      "games_per_second": 87.15784188894025,
+      "environment_steps_per_second": 62666.48831814805,
+      "effective_actor_records": 36587,
+      "decisions": 42000,
+      "non_keep": 16016,
+      "changed": 16016,
+      "max_action_ms": 20.163193,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17413900464142856,
+        "enemy_seconds": 0.003583901939285714,
+        "env_seconds": 0.0011990998728571428,
+        "model_seconds": 0.0053188772785714294
+      }
+    },
+    "control_r0_step600_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 926,
+        "win_rate": 0.6614285714285715,
+        "mean_cash": 101527.81285714285,
+        "mean_margin": 10420.667142857143
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 164,
+          "win_rate": 0.82,
+          "mean_cash": 97828.1,
+          "mean_margin": 10268.195
+        },
+        "g003": {
+          "games": 200,
+          "wins": 104,
+          "win_rate": 0.52,
+          "mean_cash": 99708.35,
+          "mean_margin": 3515.265
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 124174.615,
+          "mean_margin": 39478.035
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 155,
+          "win_rate": 0.775,
+          "mean_cash": 100870.245,
+          "mean_margin": 11436.06
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 103,
+          "win_rate": 0.515,
+          "mean_cash": 98841.525,
+          "mean_margin": 3328.565
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 98,
+          "win_rate": 0.49,
+          "mean_cash": 92732.02,
+          "mean_margin": 1335.46
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 102,
+          "win_rate": 0.51,
+          "mean_cash": 96539.835,
+          "mean_margin": 3583.09
+        }
+      },
+      "wall_seconds": 16.002722361,
+      "mode": 1,
+      "call_seconds": 16.02786273899983,
+      "bridge_seconds": 0.025140377999829155,
+      "games_per_second": 87.4851146209922,
+      "environment_steps_per_second": 62901.7974124934,
+      "effective_actor_records": 37102,
+      "decisions": 42000,
+      "non_keep": 18320,
+      "changed": 18320,
+      "max_action_ms": 20.179330999999998,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17306141610071427,
+        "enemy_seconds": 0.003558852970714286,
+        "env_seconds": 0.0011979172478571427,
+        "model_seconds": 0.0053618145492857145
+      }
+    },
+    "control_r0_step600_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 918,
+        "win_rate": 0.6557142857142857,
+        "mean_cash": 101244.70571428571,
+        "mean_margin": 8726.623571428572
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 166,
+          "win_rate": 0.83,
+          "mean_cash": 99383.5,
+          "mean_margin": 10502.975
+        },
+        "g003": {
+          "games": 200,
+          "wins": 104,
+          "win_rate": 0.52,
+          "mean_cash": 98324.09,
+          "mean_margin": 1685.06
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 117799.655,
+          "mean_margin": 34325.72
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 156,
+          "win_rate": 0.78,
+          "mean_cash": 103532.56,
+          "mean_margin": 9618.49
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 106,
+          "win_rate": 0.53,
+          "mean_cash": 100753.675,
+          "mean_margin": 3115.925
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 92,
+          "win_rate": 0.46,
+          "mean_cash": 93161.95,
+          "mean_margin": 160.85
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 94,
+          "win_rate": 0.47,
+          "mean_cash": 95757.51,
+          "mean_margin": 1677.345
+        }
+      },
+      "wall_seconds": 16.015464575,
+      "mode": 2,
+      "call_seconds": 16.042036552000354,
+      "bridge_seconds": 0.026571977000354963,
+      "games_per_second": 87.41550976831405,
+      "environment_steps_per_second": 62851.7515234178,
+      "effective_actor_records": 36958,
+      "decisions": 42000,
+      "non_keep": 23057,
+      "changed": 23057,
+      "max_action_ms": 20.165016,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.1733977101492857,
+        "enemy_seconds": 0.0035623665999999993,
+        "env_seconds": 0.0011976610235714287,
+        "model_seconds": 0.005350102575
+      }
+    },
+    "control_r0_step700_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 927,
+        "win_rate": 0.6621428571428571,
+        "mean_cash": 101808.09928571428,
+        "mean_margin": 10248.461428571429
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 162,
+          "win_rate": 0.81,
+          "mean_cash": 97174.205,
+          "mean_margin": 10007.72
+        },
+        "g003": {
+          "games": 200,
+          "wins": 100,
+          "win_rate": 0.5,
+          "mean_cash": 100581.51,
+          "mean_margin": 3776.515
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 124465.935,
+          "mean_margin": 39608.52
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 161,
+          "win_rate": 0.805,
+          "mean_cash": 101648.685,
+          "mean_margin": 10911.16
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 117,
+          "win_rate": 0.585,
+          "mean_cash": 100745.025,
+          "mean_margin": 3678.445
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 96,
+          "win_rate": 0.48,
+          "mean_cash": 91707.3,
+          "mean_margin": 638.09
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 91,
+          "win_rate": 0.455,
+          "mean_cash": 96334.035,
+          "mean_margin": 3118.78
+        }
+      },
+      "wall_seconds": 16.011962557,
+      "mode": 1,
+      "call_seconds": 16.03805968300003,
+      "bridge_seconds": 0.026097126000028226,
+      "games_per_second": 87.43462864194356,
+      "environment_steps_per_second": 62865.497993557416,
+      "effective_actor_records": 37223,
+      "decisions": 42000,
+      "non_keep": 19193,
+      "changed": 19193,
+      "max_action_ms": 20.583192,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17326484207214288,
+        "enemy_seconds": 0.003559575228571428,
+        "env_seconds": 0.001200110575,
+        "model_seconds": 0.0053443444649999994
+      }
+    },
+    "control_r0_step700_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 937,
+        "win_rate": 0.6692857142857143,
+        "mean_cash": 102542.90571428572,
+        "mean_margin": 10180.023571428572
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 163,
+          "win_rate": 0.815,
+          "mean_cash": 98872.64,
+          "mean_margin": 10967.705
+        },
+        "g003": {
+          "games": 200,
+          "wins": 111,
+          "win_rate": 0.555,
+          "mean_cash": 99445.755,
+          "mean_margin": 2845.515
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 123377.545,
+          "mean_margin": 38246.925
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 158,
+          "win_rate": 0.79,
+          "mean_cash": 105887.59,
+          "mean_margin": 10945.005
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 110,
+          "win_rate": 0.55,
+          "mean_cash": 99997.02,
+          "mean_margin": 4098.84
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 100,
+          "win_rate": 0.5,
+          "mean_cash": 93997.44,
+          "mean_margin": 1508.41
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 95,
+          "win_rate": 0.475,
+          "mean_cash": 96222.35,
+          "mean_margin": 2647.765
+        }
+      },
+      "wall_seconds": 16.088740885,
+      "mode": 2,
+      "call_seconds": 16.11700645900055,
+      "bridge_seconds": 0.02826557400054952,
+      "games_per_second": 87.01737507036742,
+      "environment_steps_per_second": 62565.49267559417,
+      "effective_actor_records": 37121,
+      "decisions": 42000,
+      "non_keep": 19849,
+      "changed": 19849,
+      "max_action_ms": 21.10418,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17427322842928572,
+        "enemy_seconds": 0.003575532807857143,
+        "env_seconds": 0.0012025532014285714,
+        "model_seconds": 0.005354538343571429
+      }
+    },
+    "control_r1_selected": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 865,
+        "win_rate": 0.6178571428571429,
+        "mean_cash": 103198.71285714286,
+        "mean_margin": 8161.201428571429
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 156,
+          "win_rate": 0.78,
+          "mean_cash": 102188.02,
+          "mean_margin": 8794.36
+        },
+        "g003": {
+          "games": 200,
+          "wins": 95,
+          "win_rate": 0.475,
+          "mean_cash": 100750.125,
+          "mean_margin": 663.56
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 198,
+          "win_rate": 0.99,
+          "mean_cash": 120154.325,
+          "mean_margin": 34081.53
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 134,
+          "win_rate": 0.67,
+          "mean_cash": 102610.295,
+          "mean_margin": 8474.815
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 115,
+          "win_rate": 0.575,
+          "mean_cash": 103780.4,
+          "mean_margin": 5078.2
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 96,
+          "win_rate": 0.48,
+          "mean_cash": 97020.28,
+          "mean_margin": 507.64
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 71,
+          "win_rate": 0.355,
+          "mean_cash": 95887.545,
+          "mean_margin": -471.695
+        }
+      },
+      "wall_seconds": 16.157628781,
+      "mode": 1,
+      "call_seconds": 16.18352442700052,
+      "bridge_seconds": 0.025895646000520856,
+      "games_per_second": 86.64637732278398,
+      "environment_steps_per_second": 62298.74529508167,
+      "effective_actor_records": 36569,
+      "decisions": 42000,
+      "non_keep": 7028,
+      "changed": 7028,
+      "max_action_ms": 20.829759,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17502393668071428,
+        "enemy_seconds": 0.003586429882142857,
+        "env_seconds": 0.0012024496314285713,
+        "model_seconds": 0.005300901378571429
+      }
+    },
+    "control_r1_step600_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 910,
+        "win_rate": 0.65,
+        "mean_cash": 103098.85642857142,
+        "mean_margin": 10163.342142857144
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 162,
+          "win_rate": 0.81,
+          "mean_cash": 101888.905,
+          "mean_margin": 10899.62
+        },
+        "g003": {
+          "games": 200,
+          "wins": 104,
+          "win_rate": 0.52,
+          "mean_cash": 100676.115,
+          "mean_margin": 3522.015
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 123526.155,
+          "mean_margin": 36896.685
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 143,
+          "win_rate": 0.715,
+          "mean_cash": 103898.665,
+          "mean_margin": 11911.305
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 113,
+          "win_rate": 0.565,
+          "mean_cash": 102631.685,
+          "mean_margin": 4414.31
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 94,
+          "win_rate": 0.47,
+          "mean_cash": 92603.205,
+          "mean_margin": 1133.495
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 94,
+          "win_rate": 0.47,
+          "mean_cash": 96467.265,
+          "mean_margin": 2365.965
+        }
+      },
+      "wall_seconds": 15.921980342,
+      "mode": 1,
+      "call_seconds": 15.944147276999502,
+      "bridge_seconds": 0.022166934999502175,
+      "games_per_second": 87.92876074008157,
+      "environment_steps_per_second": 63220.77897211864,
+      "effective_actor_records": 36753,
+      "decisions": 42000,
+      "non_keep": 28183,
+      "changed": 28183,
+      "max_action_ms": 19.753921000000002,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17247890555928572,
+        "enemy_seconds": 0.00354599061,
+        "env_seconds": 0.0012007797421428573,
+        "model_seconds": 0.005247082420714286
+      }
+    },
+    "control_r1_step600_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 866,
+        "win_rate": 0.6185714285714285,
+        "mean_cash": 101566.88428571429,
+        "mean_margin": 8833.56357142857
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 166,
+          "win_rate": 0.83,
+          "mean_cash": 101334.745,
+          "mean_margin": 12028.455
+        },
+        "g003": {
+          "games": 200,
+          "wins": 87,
+          "win_rate": 0.435,
+          "mean_cash": 100451.095,
+          "mean_margin": 1340.325
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 119232.165,
+          "mean_margin": 32944.325
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 147,
+          "win_rate": 0.735,
+          "mean_cash": 101573.015,
+          "mean_margin": 9266.09
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 100,
+          "win_rate": 0.5,
+          "mean_cash": 98579.865,
+          "mean_margin": 3850.86
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 89,
+          "win_rate": 0.445,
+          "mean_cash": 94897.62,
+          "mean_margin": 1284.24
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 77,
+          "win_rate": 0.385,
+          "mean_cash": 94899.685,
+          "mean_margin": 1120.65
+        }
+      },
+      "wall_seconds": 16.065971779,
+      "mode": 2,
+      "call_seconds": 16.091992044999643,
+      "bridge_seconds": 0.026020265999640912,
+      "games_per_second": 87.14069831928589,
+      "environment_steps_per_second": 62654.162091566555,
+      "effective_actor_records": 36690,
+      "decisions": 42000,
+      "non_keep": 26406,
+      "changed": 26406,
+      "max_action_ms": 19.666764,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17387172006214285,
+        "enemy_seconds": 0.003575537004285714,
+        "env_seconds": 0.0012030165035714286,
+        "model_seconds": 0.005286782469285715
+      }
+    },
+    "control_r1_step700_greedy": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 926,
+        "win_rate": 0.6614285714285715,
+        "mean_cash": 102752.80571428571,
+        "mean_margin": 10361.05
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 162,
+          "win_rate": 0.81,
+          "mean_cash": 98193.9,
+          "mean_margin": 10578.52
+        },
+        "g003": {
+          "games": 200,
+          "wins": 102,
+          "win_rate": 0.51,
+          "mean_cash": 100374.695,
+          "mean_margin": 3243.26
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 200,
+          "win_rate": 1.0,
+          "mean_cash": 126150.59,
+          "mean_margin": 40175.565
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 154,
+          "win_rate": 0.77,
+          "mean_cash": 103076.845,
+          "mean_margin": 11661.425
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 111,
+          "win_rate": 0.555,
+          "mean_cash": 101396.32,
+          "mean_margin": 3709.005
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 99,
+          "win_rate": 0.495,
+          "mean_cash": 93901.24,
+          "mean_margin": 1715.995
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 98,
+          "win_rate": 0.49,
+          "mean_cash": 96176.05,
+          "mean_margin": 1443.58
+        }
+      },
+      "wall_seconds": 15.983040016,
+      "mode": 1,
+      "call_seconds": 16.00434288999986,
+      "bridge_seconds": 0.021302873999861305,
+      "games_per_second": 87.59284833163869,
+      "environment_steps_per_second": 62979.25795044821,
+      "effective_actor_records": 37096,
+      "decisions": 42000,
+      "non_keep": 27314,
+      "changed": 27314,
+      "max_action_ms": 19.546322,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17278191507857144,
+        "enemy_seconds": 0.0035426136271428568,
+        "env_seconds": 0.0011989643171428572,
+        "model_seconds": 0.005312537302142857
+      }
+    },
+    "control_r1_step700_sample": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 917,
+        "win_rate": 0.655,
+        "mean_cash": 102012.90285714286,
+        "mean_margin": 9445.48142857143
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 157,
+          "win_rate": 0.785,
+          "mean_cash": 99551.93,
+          "mean_margin": 11251.615
+        },
+        "g003": {
+          "games": 200,
+          "wins": 97,
+          "win_rate": 0.485,
+          "mean_cash": 100003.175,
+          "mean_margin": 2940.755
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 199,
+          "win_rate": 0.995,
+          "mean_cash": 120026.165,
+          "mean_margin": 34837.215
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 159,
+          "win_rate": 0.795,
+          "mean_cash": 103986.695,
+          "mean_margin": 10132.16
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 99,
+          "win_rate": 0.495,
+          "mean_cash": 100238.36,
+          "mean_margin": 2889.835
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 107,
+          "win_rate": 0.535,
+          "mean_cash": 93573.775,
+          "mean_margin": 2057.23
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 99,
+          "win_rate": 0.495,
+          "mean_cash": 96710.22,
+          "mean_margin": 2009.56
+        }
+      },
+      "wall_seconds": 16.018357305,
+      "mode": 2,
+      "call_seconds": 16.042383644999973,
+      "bridge_seconds": 0.024026339999974056,
+      "games_per_second": 87.39972353863037,
+      "environment_steps_per_second": 62840.40122427523,
+      "effective_actor_records": 37042,
+      "decisions": 42000,
+      "non_keep": 26559,
+      "changed": 26559,
+      "max_action_ms": 20.702295999999997,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.1733949097507143,
+        "enemy_seconds": 0.0035546352114285713,
+        "env_seconds": 0.0011986066335714285,
+        "model_seconds": 0.005307253487857143
+      }
+    },
+    "keep": {
+      "status": "PASS",
+      "overall": {
+        "games": 1400,
+        "wins": 876,
+        "win_rate": 0.6257142857142857,
+        "mean_cash": 102816.16071428571,
+        "mean_margin": 8391.680714285714
+      },
+      "per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 158,
+          "win_rate": 0.79,
+          "mean_cash": 102718.175,
+          "mean_margin": 9023.865
+        },
+        "g003": {
+          "games": 200,
+          "wins": 90,
+          "win_rate": 0.45,
+          "mean_cash": 100377.875,
+          "mean_margin": 709.05
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 197,
+          "win_rate": 0.985,
+          "mean_cash": 120281.705,
+          "mean_margin": 33948.61
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 138,
+          "win_rate": 0.69,
+          "mean_cash": 101290.07,
+          "mean_margin": 8752.13
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 114,
+          "win_rate": 0.57,
+          "mean_cash": 101954.98,
+          "mean_margin": 5225.095
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 97,
+          "win_rate": 0.485,
+          "mean_cash": 97093.645,
+          "mean_margin": 1140.605
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 82,
+          "win_rate": 0.41,
+          "mean_cash": 95996.675,
+          "mean_margin": -57.59
+        }
+      },
+      "wall_seconds": 15.849749599,
+      "mode": 0,
+      "call_seconds": 15.880897787000322,
+      "bridge_seconds": 0.031148188000321042,
+      "games_per_second": 88.32947115381113,
+      "environment_steps_per_second": 63508.8897595902,
+      "effective_actor_records": 36570,
+      "decisions": 42000,
+      "non_keep": 0,
+      "changed": 0,
+      "max_action_ms": 19.65706,
+      "errors": [],
+      "mean_times": {
+        "policy_seconds": 0.17533648789,
+        "enemy_seconds": 0.003574739828571428,
+        "env_seconds": 0.0012066077992857144,
+        "model_seconds": 0.003050353336428571
+      }
+    }
+  },
+  "paired": {
+    "control_r0_700_minus_600_greedy": {
+      "win": {
+        "mean": 0.0007142857142857143,
+        "ci95": [
+          -0.03,
+          0.03357142857142857
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -172.2057142857143,
+        "ci95": [
+          -947.3921071428572,
+          599.5888571428576
+        ],
+        "seeds": 100
+      },
+      "rescued": 141,
+      "damaged": 140
+    },
+    "control_r0_700_minus_600_sample": {
+      "win": {
+        "mean": 0.013571428571428571,
+        "ci95": [
+          -0.014285714285714285,
+          0.040732142857142925
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1453.4,
+        "ci95": [
+          654.4249285714286,
+          2229.6579642857146
+        ],
+        "seeds": 100
+      },
+      "rescued": 206,
+      "damaged": 187
+    },
+    "control_r0_selected_minus_keep": {
+      "win": {
+        "mean": -0.013571428571428571,
+        "ci95": [
+          -0.04357142857142857,
+          0.016428571428571428
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -406.46714285714285,
+        "ci95": [
+          -1081.3075178571428,
+          257.5736964285716
+        ],
+        "seeds": 100
+      },
+      "rescued": 123,
+      "damaged": 142
+    },
+    "control_r0_step700_greedy_minus_keep": {
+      "win": {
+        "mean": 0.03642857142857143,
+        "ci95": [
+          -0.004303571428571423,
+          0.07714285714285714
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1856.7807142857143,
+        "ci95": [
+          595.6133035714286,
+          3133.9518035714286
+        ],
+        "seeds": 100
+      },
+      "rescued": 277,
+      "damaged": 226
+    },
+    "control_r0_step700_sample_minus_keep": {
+      "win": {
+        "mean": 0.04357142857142857,
+        "ci95": [
+          0.0064285714285714285,
+          0.08214285714285714
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1788.3428571428572,
+        "ci95": [
+          635.6603571428573,
+          2959.125214285715
+        ],
+        "seeds": 100
+      },
+      "rescued": 269,
+      "damaged": 208
+    },
+    "aux_r0_700_minus_600_greedy": {
+      "win": {
+        "mean": 0.008571428571428572,
+        "ci95": [
+          -0.025017857142857137,
+          0.04214285714285714
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 842.4007142857142,
+        "ci95": [
+          -346.8859642857143,
+          2001.567125
+        ],
+        "seeds": 100
+      },
+      "rescued": 193,
+      "damaged": 181
+    },
+    "aux_r0_700_minus_600_sample": {
+      "win": {
+        "mean": 0.007857142857142858,
+        "ci95": [
+          -0.017857142857142856,
+          0.03501785714285721
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 566.9414285714286,
+        "ci95": [
+          -165.20971428571426,
+          1354.4230357142862
+        ],
+        "seeds": 100
+      },
+      "rescued": 199,
+      "damaged": 188
+    },
+    "aux_r0_selected_minus_keep": {
+      "win": {
+        "mean": 0.08571428571428572,
+        "ci95": [
+          0.04,
+          0.13
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 723.8528571428571,
+        "ci95": [
+          -664.5137500000001,
+          2061.9830892857153
+        ],
+        "seeds": 100
+      },
+      "rescued": 323,
+      "damaged": 203
+    },
+    "aux_r0_step700_greedy_minus_keep": {
+      "win": {
+        "mean": 0.07642857142857143,
+        "ci95": [
+          0.032857142857142856,
+          0.11928571428571429
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1650.6807142857142,
+        "ci95": [
+          250.58421428571432,
+          3063.634196428572
+        ],
+        "seeds": 100
+      },
+      "rescued": 319,
+      "damaged": 212
+    },
+    "aux_r0_step700_sample_minus_keep": {
+      "win": {
+        "mean": 0.055714285714285716,
+        "ci95": [
+          0.013553571428571434,
+          0.09642857142857143
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 689.8742857142857,
+        "ci95": [
+          -744.4395535714285,
+          2031.474642857143
+        ],
+        "seeds": 100
+      },
+      "rescued": 305,
+      "damaged": 227
+    },
+    "control_r1_700_minus_600_greedy": {
+      "win": {
+        "mean": 0.011428571428571429,
+        "ci95": [
+          -0.019285714285714285,
+          0.04
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 197.70785714285714,
+        "ci95": [
+          -601.5546785714286,
+          988.8187678571429
+        ],
+        "seeds": 100
+      },
+      "rescued": 149,
+      "damaged": 133
+    },
+    "control_r1_700_minus_600_sample": {
+      "win": {
+        "mean": 0.03642857142857143,
+        "ci95": [
+          0.007857142857142858,
+          0.06428571428571428
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 611.9178571428571,
+        "ci95": [
+          -331.29935714285716,
+          1528.2967500000002
+        ],
+        "seeds": 100
+      },
+      "rescued": 240,
+      "damaged": 189
+    },
+    "control_r1_selected_minus_keep": {
+      "win": {
+        "mean": -0.007857142857142858,
+        "ci95": [
+          -0.02857142857142857,
+          0.012857142857142857
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -230.4792857142857,
+        "ci95": [
+          -623.0113571428572,
+          176.61910714285727
+        ],
+        "seeds": 100
+      },
+      "rescued": 59,
+      "damaged": 70
+    },
+    "control_r1_step700_greedy_minus_keep": {
+      "win": {
+        "mean": 0.03571428571428571,
+        "ci95": [
+          -0.008571428571428572,
+          0.07714285714285714
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1969.3692857142858,
+        "ci95": [
+          706.9670535714286,
+          3213.1700535714294
+        ],
+        "seeds": 100
+      },
+      "rescued": 264,
+      "damaged": 214
+    },
+    "control_r1_step700_sample_minus_keep": {
+      "win": {
+        "mean": 0.029285714285714286,
+        "ci95": [
+          -0.012874999999999994,
+          0.07071428571428572
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 1053.8007142857143,
+        "ci95": [
+          -242.5407142857143,
+          2329.206517857143
+        ],
+        "seeds": 100
+      },
+      "rescued": 265,
+      "damaged": 224
+    },
+    "aux_r1_700_minus_600_greedy": {
+      "win": {
+        "mean": -0.019285714285714285,
+        "ci95": [
+          -0.045714285714285714,
+          0.0064285714285714285
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -86.665,
+        "ci95": [
+          -834.7936964285715,
+          649.2765714285715
+        ],
+        "seeds": 100
+      },
+      "rescued": 113,
+      "damaged": 140
+    },
+    "aux_r1_700_minus_600_sample": {
+      "win": {
+        "mean": 0.007142857142857143,
+        "ci95": [
+          -0.020714285714285713,
+          0.035
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 658.4792857142858,
+        "ci95": [
+          -143.27608928571428,
+          1482.0858750000007
+        ],
+        "seeds": 100
+      },
+      "rescued": 178,
+      "damaged": 168
+    },
+    "aux_r1_selected_minus_keep": {
+      "win": {
+        "mean": 0.0,
+        "ci95": [
+          -0.022857142857142857,
+          0.024285714285714285
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -215.05428571428573,
+        "ci95": [
+          -738.0096785714286,
+          301.8930714285716
+        ],
+        "seeds": 100
+      },
+      "rescued": 64,
+      "damaged": 64
+    },
+    "aux_r1_step700_greedy_minus_keep": {
+      "win": {
+        "mean": 0.03142857142857143,
+        "ci95": [
+          -0.009285714285714286,
+          0.07285714285714286
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": 816.3121428571428,
+        "ci95": [
+          -544.1011785714286,
+          2153.536857142857
+        ],
+        "seeds": 100
+      },
+      "rescued": 272,
+      "damaged": 228
+    },
+    "aux_r1_step700_sample_minus_keep": {
+      "win": {
+        "mean": -0.0035714285714285713,
+        "ci95": [
+          -0.04071428571428572,
+          0.03428571428571429
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -388.5835714285714,
+        "ci95": [
+          -1574.3774821428572,
+          833.782928571429
+        ],
+        "seeds": 100
+      },
+      "rescued": 244,
+      "damaged": 249
+    },
+    "aux_minus_control_r0_greedy": {
+      "win": {
+        "mean": 0.04,
+        "ci95": [
+          -0.0014285714285714286,
+          0.08144642857142864
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -206.1,
+        "ci95": [
+          -1652.683857142857,
+          1320.2829464285717
+        ],
+        "seeds": 100
+      },
+      "rescued": 307,
+      "damaged": 251
+    },
+    "aux_minus_control_r0_sample": {
+      "win": {
+        "mean": 0.012142857142857143,
+        "ci95": [
+          -0.025,
+          0.047857142857142855
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -1098.4685714285715,
+        "ci95": [
+          -2416.8519642857145,
+          270.0306071428572
+        ],
+        "seeds": 100
+      },
+      "rescued": 246,
+      "damaged": 229
+    },
+    "aux_minus_control_r1_greedy": {
+      "win": {
+        "mean": -0.004285714285714286,
+        "ci95": [
+          -0.041428571428571426,
+          0.03357142857142857
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -1153.057142857143,
+        "ci95": [
+          -2295.8235357142858,
+          -10.537232142857086
+        ],
+        "seeds": 100
+      },
+      "rescued": 192,
+      "damaged": 198
+    },
+    "aux_minus_control_r1_sample": {
+      "win": {
+        "mean": -0.032857142857142856,
+        "ci95": [
+          -0.06642857142857143,
+          0.002857142857142857
+        ],
+        "seeds": 100
+      },
+      "margin": {
+        "mean": -1442.3842857142856,
+        "ci95": [
+          -2486.366607142857,
+          -408.2707678571428
+        ],
+        "seeds": 100
+      },
+      "rescued": 198,
+      "damaged": 244
+    }
+  },
+  "training": {
+    "control_r0": {
+      "new_games": 22400,
+      "total_games": 156800,
+      "rollout_seconds": 259.86430159800693,
+      "update_seconds": 48.215226498997254,
+      "included_training_games_per_second": 72.70849880342251,
+      "elapsed_seconds": 358.03002592699977,
+      "effective_records": 592701,
+      "developments": [
+        {
+          "step": 0,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 20,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 40,
+          "win": 0.578125,
+          "nonkeep": 6382
+        },
+        {
+          "step": 60,
+          "win": 0.6071428571428571,
+          "nonkeep": 6280
+        },
+        {
+          "step": 80,
+          "win": 0.5915178571428571,
+          "nonkeep": 6960
+        },
+        {
+          "step": 100,
+          "win": 0.6026785714285714,
+          "nonkeep": 7217
+        },
+        {
+          "step": 120,
+          "win": 0.5915178571428571,
+          "nonkeep": 6982
+        },
+        {
+          "step": 140,
+          "win": 0.6071428571428571,
+          "nonkeep": 6961
+        },
+        {
+          "step": 160,
+          "win": 0.6049107142857143,
+          "nonkeep": 6570
+        },
+        {
+          "step": 180,
+          "win": 0.5758928571428571,
+          "nonkeep": 6431
+        },
+        {
+          "step": 200,
+          "win": 0.6383928571428571,
+          "nonkeep": 5033
+        },
+        {
+          "step": 220,
+          "win": 0.5959821428571429,
+          "nonkeep": 5481
+        },
+        {
+          "step": 240,
+          "win": 0.5870535714285714,
+          "nonkeep": 5938
+        },
+        {
+          "step": 260,
+          "win": 0.5892857142857143,
+          "nonkeep": 6390
+        },
+        {
+          "step": 280,
+          "win": 0.6071428571428571,
+          "nonkeep": 7902
+        },
+        {
+          "step": 300,
+          "win": 0.5625,
+          "nonkeep": 7266
+        },
+        {
+          "step": 320,
+          "win": 0.5982142857142857,
+          "nonkeep": 8082
+        },
+        {
+          "step": 340,
+          "win": 0.6004464285714286,
+          "nonkeep": 8121
+        },
+        {
+          "step": 360,
+          "win": 0.6026785714285714,
+          "nonkeep": 9029
+        },
+        {
+          "step": 380,
+          "win": 0.5848214285714286,
+          "nonkeep": 9247
+        },
+        {
+          "step": 400,
+          "win": 0.5959821428571429,
+          "nonkeep": 9113
+        },
+        {
+          "step": 420,
+          "win": 0.5736607142857143,
+          "nonkeep": 9233
+        },
+        {
+          "step": 440,
+          "win": 0.5892857142857143,
+          "nonkeep": 8681
+        },
+        {
+          "step": 460,
+          "win": 0.5625,
+          "nonkeep": 9342
+        },
+        {
+          "step": 480,
+          "win": 0.5647321428571429,
+          "nonkeep": 9393
+        },
+        {
+          "step": 500,
+          "win": 0.6205357142857143,
+          "nonkeep": 8545
+        },
+        {
+          "step": 520,
+          "win": 0.6071428571428571,
+          "nonkeep": 8547
+        },
+        {
+          "step": 540,
+          "win": 0.5959821428571429,
+          "nonkeep": 7341
+        },
+        {
+          "step": 560,
+          "win": 0.5848214285714286,
+          "nonkeep": 7308
+        },
+        {
+          "step": 580,
+          "win": 0.5803571428571429,
+          "nonkeep": 6879
+        },
+        {
+          "step": 600,
+          "win": 0.5915178571428571,
+          "nonkeep": 6246
+        },
+        {
+          "step": 620,
+          "win": 0.5825892857142857,
+          "nonkeep": 8509
+        },
+        {
+          "step": 640,
+          "win": 0.5982142857142857,
+          "nonkeep": 7422
+        },
+        {
+          "step": 660,
+          "win": 0.609375,
+          "nonkeep": 7607
+        },
+        {
+          "step": 680,
+          "win": 0.5892857142857143,
+          "nonkeep": 7546
+        },
+        {
+          "step": 700,
+          "win": 0.6138392857142857,
+          "nonkeep": 6166
+        }
+      ]
+    },
+    "aux_r0": {
+      "new_games": 22400,
+      "total_games": 156800,
+      "rollout_seconds": 264.3151109279979,
+      "update_seconds": 57.655612185999416,
+      "included_training_games_per_second": 69.57154297556747,
+      "elapsed_seconds": 372.05674622400056,
+      "effective_records": 565604,
+      "developments": [
+        {
+          "step": 0,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 20,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 40,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 60,
+          "win": 0.609375,
+          "nonkeep": 63
+        },
+        {
+          "step": 80,
+          "win": 0.6116071428571429,
+          "nonkeep": 2640
+        },
+        {
+          "step": 100,
+          "win": 0.5401785714285714,
+          "nonkeep": 7895
+        },
+        {
+          "step": 120,
+          "win": 0.5245535714285714,
+          "nonkeep": 6962
+        },
+        {
+          "step": 140,
+          "win": 0.5602678571428571,
+          "nonkeep": 6253
+        },
+        {
+          "step": 160,
+          "win": 0.546875,
+          "nonkeep": 6417
+        },
+        {
+          "step": 180,
+          "win": 0.5982142857142857,
+          "nonkeep": 6916
+        },
+        {
+          "step": 200,
+          "win": 0.6004464285714286,
+          "nonkeep": 6514
+        },
+        {
+          "step": 220,
+          "win": 0.6116071428571429,
+          "nonkeep": 6974
+        },
+        {
+          "step": 240,
+          "win": 0.5758928571428571,
+          "nonkeep": 6828
+        },
+        {
+          "step": 260,
+          "win": 0.6026785714285714,
+          "nonkeep": 3615
+        },
+        {
+          "step": 280,
+          "win": 0.6339285714285714,
+          "nonkeep": 3257
+        },
+        {
+          "step": 300,
+          "win": 0.6428571428571429,
+          "nonkeep": 5779
+        },
+        {
+          "step": 320,
+          "win": 0.6138392857142857,
+          "nonkeep": 5759
+        },
+        {
+          "step": 340,
+          "win": 0.6361607142857143,
+          "nonkeep": 5928
+        },
+        {
+          "step": 360,
+          "win": 0.6383928571428571,
+          "nonkeep": 4587
+        },
+        {
+          "step": 380,
+          "win": 0.6428571428571429,
+          "nonkeep": 5363
+        },
+        {
+          "step": 400,
+          "win": 0.6696428571428571,
+          "nonkeep": 5258
+        },
+        {
+          "step": 420,
+          "win": 0.6428571428571429,
+          "nonkeep": 5447
+        },
+        {
+          "step": 440,
+          "win": 0.6495535714285714,
+          "nonkeep": 6696
+        },
+        {
+          "step": 460,
+          "win": 0.6361607142857143,
+          "nonkeep": 4522
+        },
+        {
+          "step": 480,
+          "win": 0.6607142857142857,
+          "nonkeep": 6355
+        },
+        {
+          "step": 500,
+          "win": 0.6160714285714286,
+          "nonkeep": 5940
+        },
+        {
+          "step": 520,
+          "win": 0.6339285714285714,
+          "nonkeep": 5045
+        },
+        {
+          "step": 540,
+          "win": 0.6004464285714286,
+          "nonkeep": 4205
+        },
+        {
+          "step": 560,
+          "win": 0.703125,
+          "nonkeep": 4899
+        },
+        {
+          "step": 580,
+          "win": 0.6964285714285714,
+          "nonkeep": 5642
+        },
+        {
+          "step": 600,
+          "win": 0.7209821428571429,
+          "nonkeep": 4358
+        },
+        {
+          "step": 620,
+          "win": 0.6897321428571429,
+          "nonkeep": 5881
+        },
+        {
+          "step": 640,
+          "win": 0.7276785714285714,
+          "nonkeep": 5201
+        },
+        {
+          "step": 660,
+          "win": 0.6964285714285714,
+          "nonkeep": 4995
+        },
+        {
+          "step": 680,
+          "win": 0.7142857142857143,
+          "nonkeep": 4937
+        },
+        {
+          "step": 700,
+          "win": 0.6986607142857143,
+          "nonkeep": 6605
+        }
+      ]
+    },
+    "control_r1": {
+      "new_games": 22400,
+      "total_games": 156800,
+      "rollout_seconds": 256.88342242999533,
+      "update_seconds": 47.89596747500218,
+      "included_training_games_per_second": 73.49578331717996,
+      "elapsed_seconds": 354.52466515299966,
+      "effective_records": 588780,
+      "developments": [
+        {
+          "step": 0,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 20,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 40,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 60,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 80,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 100,
+          "win": 0.625,
+          "nonkeep": 702
+        },
+        {
+          "step": 120,
+          "win": 0.5870535714285714,
+          "nonkeep": 4431
+        },
+        {
+          "step": 140,
+          "win": 0.625,
+          "nonkeep": 2316
+        },
+        {
+          "step": 160,
+          "win": 0.6183035714285714,
+          "nonkeep": 3245
+        },
+        {
+          "step": 180,
+          "win": 0.6339285714285714,
+          "nonkeep": 1993
+        },
+        {
+          "step": 200,
+          "win": 0.5401785714285714,
+          "nonkeep": 4791
+        },
+        {
+          "step": 220,
+          "win": 0.5892857142857143,
+          "nonkeep": 6922
+        },
+        {
+          "step": 240,
+          "win": 0.5803571428571429,
+          "nonkeep": 6734
+        },
+        {
+          "step": 260,
+          "win": 0.5892857142857143,
+          "nonkeep": 6426
+        },
+        {
+          "step": 280,
+          "win": 0.578125,
+          "nonkeep": 6967
+        },
+        {
+          "step": 300,
+          "win": 0.5848214285714286,
+          "nonkeep": 6735
+        },
+        {
+          "step": 320,
+          "win": 0.5803571428571429,
+          "nonkeep": 5392
+        },
+        {
+          "step": 340,
+          "win": 0.5803571428571429,
+          "nonkeep": 6518
+        },
+        {
+          "step": 360,
+          "win": 0.59375,
+          "nonkeep": 4184
+        },
+        {
+          "step": 380,
+          "win": 0.5535714285714286,
+          "nonkeep": 4692
+        },
+        {
+          "step": 400,
+          "win": 0.5848214285714286,
+          "nonkeep": 4119
+        },
+        {
+          "step": 420,
+          "win": 0.5848214285714286,
+          "nonkeep": 4839
+        },
+        {
+          "step": 440,
+          "win": 0.5558035714285714,
+          "nonkeep": 6938
+        },
+        {
+          "step": 460,
+          "win": 0.5736607142857143,
+          "nonkeep": 8376
+        },
+        {
+          "step": 480,
+          "win": 0.5714285714285714,
+          "nonkeep": 8036
+        },
+        {
+          "step": 500,
+          "win": 0.5915178571428571,
+          "nonkeep": 8762
+        },
+        {
+          "step": 520,
+          "win": 0.5915178571428571,
+          "nonkeep": 8695
+        },
+        {
+          "step": 540,
+          "win": 0.5491071428571429,
+          "nonkeep": 8855
+        },
+        {
+          "step": 560,
+          "win": 0.5691964285714286,
+          "nonkeep": 8899
+        },
+        {
+          "step": 580,
+          "win": 0.5870535714285714,
+          "nonkeep": 8266
+        },
+        {
+          "step": 600,
+          "win": 0.6004464285714286,
+          "nonkeep": 8995
+        },
+        {
+          "step": 620,
+          "win": 0.5848214285714286,
+          "nonkeep": 8975
+        },
+        {
+          "step": 640,
+          "win": 0.5625,
+          "nonkeep": 8932
+        },
+        {
+          "step": 660,
+          "win": 0.5625,
+          "nonkeep": 8958
+        },
+        {
+          "step": 680,
+          "win": 0.5513392857142857,
+          "nonkeep": 8765
+        },
+        {
+          "step": 700,
+          "win": 0.5535714285714286,
+          "nonkeep": 8709
+        }
+      ]
+    },
+    "aux_r1": {
+      "new_games": 22400,
+      "total_games": 156800,
+      "rollout_seconds": 258.7696277359955,
+      "update_seconds": 57.221134260001236,
+      "included_training_games_per_second": 70.8881483069552,
+      "elapsed_seconds": 365.7989456810001,
+      "effective_records": 582837,
+      "developments": [
+        {
+          "step": 0,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 20,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 40,
+          "win": 0.6116071428571429,
+          "nonkeep": 0
+        },
+        {
+          "step": 60,
+          "win": 0.6183035714285714,
+          "nonkeep": 481
+        },
+        {
+          "step": 80,
+          "win": 0.6049107142857143,
+          "nonkeep": 2904
+        },
+        {
+          "step": 100,
+          "win": 0.5982142857142857,
+          "nonkeep": 2668
+        },
+        {
+          "step": 120,
+          "win": 0.5647321428571429,
+          "nonkeep": 4095
+        },
+        {
+          "step": 140,
+          "win": 0.5892857142857143,
+          "nonkeep": 3094
+        },
+        {
+          "step": 160,
+          "win": 0.5892857142857143,
+          "nonkeep": 5264
+        },
+        {
+          "step": 180,
+          "win": 0.5691964285714286,
+          "nonkeep": 5987
+        },
+        {
+          "step": 200,
+          "win": 0.5915178571428571,
+          "nonkeep": 4405
+        },
+        {
+          "step": 220,
+          "win": 0.5625,
+          "nonkeep": 7404
+        },
+        {
+          "step": 240,
+          "win": 0.5758928571428571,
+          "nonkeep": 7040
+        },
+        {
+          "step": 260,
+          "win": 0.6004464285714286,
+          "nonkeep": 6974
+        },
+        {
+          "step": 280,
+          "win": 0.5848214285714286,
+          "nonkeep": 6502
+        },
+        {
+          "step": 300,
+          "win": 0.5803571428571429,
+          "nonkeep": 8133
+        },
+        {
+          "step": 320,
+          "win": 0.5602678571428571,
+          "nonkeep": 7569
+        },
+        {
+          "step": 340,
+          "win": 0.5959821428571429,
+          "nonkeep": 7523
+        },
+        {
+          "step": 360,
+          "win": 0.5870535714285714,
+          "nonkeep": 6185
+        },
+        {
+          "step": 380,
+          "win": 0.5736607142857143,
+          "nonkeep": 5162
+        },
+        {
+          "step": 400,
+          "win": 0.5870535714285714,
+          "nonkeep": 6349
+        },
+        {
+          "step": 420,
+          "win": 0.5535714285714286,
+          "nonkeep": 5595
+        },
+        {
+          "step": 440,
+          "win": 0.5825892857142857,
+          "nonkeep": 6650
+        },
+        {
+          "step": 460,
+          "win": 0.5580357142857143,
+          "nonkeep": 5636
+        },
+        {
+          "step": 480,
+          "win": 0.5290178571428571,
+          "nonkeep": 4865
+        },
+        {
+          "step": 500,
+          "win": 0.5379464285714286,
+          "nonkeep": 5015
+        },
+        {
+          "step": 520,
+          "win": 0.5825892857142857,
+          "nonkeep": 4883
+        },
+        {
+          "step": 540,
+          "win": 0.5982142857142857,
+          "nonkeep": 4754
+        },
+        {
+          "step": 560,
+          "win": 0.5424107142857143,
+          "nonkeep": 6185
+        },
+        {
+          "step": 580,
+          "win": 0.5736607142857143,
+          "nonkeep": 5831
+        },
+        {
+          "step": 600,
+          "win": 0.5580357142857143,
+          "nonkeep": 7055
+        },
+        {
+          "step": 620,
+          "win": 0.5245535714285714,
+          "nonkeep": 8558
+        },
+        {
+          "step": 640,
+          "win": 0.5513392857142857,
+          "nonkeep": 7786
+        },
+        {
+          "step": 660,
+          "win": 0.5870535714285714,
+          "nonkeep": 6834
+        },
+        {
+          "step": 680,
+          "win": 0.5446428571428571,
+          "nonkeep": 8460
+        },
+        {
+          "step": 700,
+          "win": 0.5647321428571429,
+          "nonkeep": 7958
+        }
+      ]
+    }
+  },
+  "forecasts": {
+    "control_r0_step600_sample": {
+      "1d_cash": {
+        "mse": 0.0027202859055250883,
+        "persistence_mse": 0.0021872729994356632,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.003996600862592459,
+        "persistence_mse": 0.001418011263012886,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.09476004540920258,
+        "persistence_mse": 0.0954812616109848,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.12724100053310394,
+        "persistence_mse": 0.10927621275186539,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.009237651713192463,
+        "persistence_mse": 0.005455644801259041,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.02322939783334732,
+        "persistence_mse": 0.016383513808250427,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.009150617755949497,
+        "persistence_mse": 0.0050216238014400005,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.1987706422805786,
+        "persistence_mse": 0.13415709137916565,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.38697677850723267,
+        "persistence_mse": 0.33005136251449585,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.048044562339782715,
+        "persistence_mse": 0.018938962370157242,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.09609757363796234,
+        "persistence_mse": 0.08103795349597931,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.014312385581433773,
+        "persistence_mse": 0.012344318442046642,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.23096418380737305,
+        "persistence_mse": 0.2376583367586136,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.8595794439315796,
+        "persistence_mse": 0.9473593831062317,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.08801824599504471,
+        "persistence_mse": 0.06528044492006302,
+        "samples": 32200
+      }
+    },
+    "control_r0_step700_sample": {
+      "1d_cash": {
+        "mse": 0.010185694321990013,
+        "persistence_mse": 0.002225350122898817,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.007751835975795984,
+        "persistence_mse": 0.001425565336830914,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.09515627473592758,
+        "persistence_mse": 0.09435943514108658,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.12962333858013153,
+        "persistence_mse": 0.10759491473436356,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.007537643425166607,
+        "persistence_mse": 0.005356768611818552,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.012276415713131428,
+        "persistence_mse": 0.016743311658501625,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.009737318381667137,
+        "persistence_mse": 0.005154281854629517,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.18850187957286835,
+        "persistence_mse": 0.13262255489826202,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.37951335310935974,
+        "persistence_mse": 0.3247646987438202,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.026153594255447388,
+        "persistence_mse": 0.018620993942022324,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.0849812850356102,
+        "persistence_mse": 0.08267714083194733,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.013626162894070148,
+        "persistence_mse": 0.0128480214625597,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.24107688665390015,
+        "persistence_mse": 0.2401881068944931,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.8940961360931396,
+        "persistence_mse": 0.9336028695106506,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.09300525486469269,
+        "persistence_mse": 0.06500894576311111,
+        "samples": 32200
+      }
+    },
+    "aux_r0_step600_sample": {
+      "1d_cash": {
+        "mse": 0.00043990727863274515,
+        "persistence_mse": 0.0022332710213959217,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.0008863250841386616,
+        "persistence_mse": 0.0014167421031743288,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.027033714577555656,
+        "persistence_mse": 0.09290451556444168,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.01754583977162838,
+        "persistence_mse": 0.11206001788377762,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.0023193401284515858,
+        "persistence_mse": 0.006274285726249218,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.0014801749493926764,
+        "persistence_mse": 0.016727358102798462,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.0017558649415150285,
+        "persistence_mse": 0.004830346442759037,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.031730372458696365,
+        "persistence_mse": 0.13499489426612854,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.05821483954787254,
+        "persistence_mse": 0.3395151197910309,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.005965665448457003,
+        "persistence_mse": 0.0183851420879364,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.0041084978729486465,
+        "persistence_mse": 0.08400704711675644,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.0036268543917685747,
+        "persistence_mse": 0.012290832586586475,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.042197830975055695,
+        "persistence_mse": 0.2330283224582672,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.09139043092727661,
+        "persistence_mse": 0.9986432194709778,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.010941244661808014,
+        "persistence_mse": 0.05961083248257637,
+        "samples": 32200
+      }
+    },
+    "aux_r0_step700_sample": {
+      "1d_cash": {
+        "mse": 0.00046517368173226714,
+        "persistence_mse": 0.0022740366403013468,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.0008160400320775807,
+        "persistence_mse": 0.0014156342949718237,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.026740316301584244,
+        "persistence_mse": 0.09093165397644043,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.017627421766519547,
+        "persistence_mse": 0.11104811728000641,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.002456998685374856,
+        "persistence_mse": 0.006695684976875782,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.00161181075964123,
+        "persistence_mse": 0.01709427870810032,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.001785028027370572,
+        "persistence_mse": 0.004848001524806023,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.03028753772377968,
+        "persistence_mse": 0.13217030465602875,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.060814809054136276,
+        "persistence_mse": 0.3291540741920471,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.006263909861445427,
+        "persistence_mse": 0.019374476745724678,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.004815236199647188,
+        "persistence_mse": 0.08590284734964371,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.0037484620697796345,
+        "persistence_mse": 0.012498779222369194,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.040904056280851364,
+        "persistence_mse": 0.2270682454109192,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.09070436656475067,
+        "persistence_mse": 0.9657143950462341,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.011036640964448452,
+        "persistence_mse": 0.06293565779924393,
+        "samples": 32200
+      }
+    },
+    "control_r1_step600_sample": {
+      "1d_cash": {
+        "mse": 0.003690276760607958,
+        "persistence_mse": 0.002188287442550063,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.009442778304219246,
+        "persistence_mse": 0.0014147853944450617,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.10155963897705078,
+        "persistence_mse": 0.09809301048517227,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.14657612144947052,
+        "persistence_mse": 0.1085372269153595,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.01324656791985035,
+        "persistence_mse": 0.0053754085674881935,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.01053718663752079,
+        "persistence_mse": 0.016466908156871796,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.01354730874300003,
+        "persistence_mse": 0.005084959790110588,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.1685018092393875,
+        "persistence_mse": 0.136844664812088,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.2956596314907074,
+        "persistence_mse": 0.3306543529033661,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.02018447034060955,
+        "persistence_mse": 0.01851043291389942,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.15294437110424042,
+        "persistence_mse": 0.08152537792921066,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.035010237246751785,
+        "persistence_mse": 0.012738014571368694,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.3305731415748596,
+        "persistence_mse": 0.24179387092590332,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.8839619159698486,
+        "persistence_mse": 0.9598488211631775,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.04029381647706032,
+        "persistence_mse": 0.06299756467342377,
+        "samples": 32200
+      }
+    },
+    "control_r1_step700_sample": {
+      "1d_cash": {
+        "mse": 0.002614694880321622,
+        "persistence_mse": 0.0021889538038522005,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.009181478060781956,
+        "persistence_mse": 0.0014118324033915997,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.0947074294090271,
+        "persistence_mse": 0.09583849459886551,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.14669755101203918,
+        "persistence_mse": 0.10789190232753754,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.012680841609835625,
+        "persistence_mse": 0.005276808049529791,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.013644150458276272,
+        "persistence_mse": 0.016412707045674324,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.011945261619985104,
+        "persistence_mse": 0.005103704519569874,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.1680261492729187,
+        "persistence_mse": 0.13507749140262604,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.29590317606925964,
+        "persistence_mse": 0.3276843726634979,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.023193148896098137,
+        "persistence_mse": 0.018437247723340988,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.1225871816277504,
+        "persistence_mse": 0.08101903647184372,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.025424687191843987,
+        "persistence_mse": 0.012735973112285137,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.33030587434768677,
+        "persistence_mse": 0.24500727653503418,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.8689932227134705,
+        "persistence_mse": 0.9385665655136108,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.06224072724580765,
+        "persistence_mse": 0.06390702724456787,
+        "samples": 32200
+      }
+    },
+    "aux_r1_step600_sample": {
+      "1d_cash": {
+        "mse": 0.00045344873797148466,
+        "persistence_mse": 0.0021728812716901302,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.000806305673904717,
+        "persistence_mse": 0.0013822342734783888,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.027251819148659706,
+        "persistence_mse": 0.10041734576225281,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.015858564525842667,
+        "persistence_mse": 0.10841433703899384,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.002059236168861389,
+        "persistence_mse": 0.005326659884303808,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.001481620711274445,
+        "persistence_mse": 0.016353880986571312,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.0017682681791484356,
+        "persistence_mse": 0.004897383041679859,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.03348712995648384,
+        "persistence_mse": 0.1390611231327057,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.04448818042874336,
+        "persistence_mse": 0.3271597921848297,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.0051974160596728325,
+        "persistence_mse": 0.017818961292505264,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.004049261566251516,
+        "persistence_mse": 0.08128179609775543,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.004120860248804092,
+        "persistence_mse": 0.012189315631985664,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.042778849601745605,
+        "persistence_mse": 0.24625523388385773,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.08942214399576187,
+        "persistence_mse": 0.9442651867866516,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.010014558210968971,
+        "persistence_mse": 0.060481246560811996,
+        "samples": 32200
+      }
+    },
+    "aux_r1_step700_sample": {
+      "1d_cash": {
+        "mse": 0.00046832585940137506,
+        "persistence_mse": 0.0021964693441987038,
+        "samples": 40600
+      },
+      "1d_margin": {
+        "mse": 0.0008417531498707831,
+        "persistence_mse": 0.0013920379569754004,
+        "samples": 40600
+      },
+      "1d_standing_yield": {
+        "mse": 0.02604074776172638,
+        "persistence_mse": 0.09809958189725876,
+        "samples": 40600
+      },
+      "1d_water_due": {
+        "mse": 0.016441725194454193,
+        "persistence_mse": 0.10828910022974014,
+        "samples": 40600
+      },
+      "1d_feed_due": {
+        "mse": 0.0021615060977637768,
+        "persistence_mse": 0.0053732809610664845,
+        "samples": 40600
+      },
+      "3d_cash": {
+        "mse": 0.001449406729079783,
+        "persistence_mse": 0.01647077687084675,
+        "samples": 37800
+      },
+      "3d_margin": {
+        "mse": 0.0019553161691874266,
+        "persistence_mse": 0.004971613641828299,
+        "samples": 37800
+      },
+      "3d_standing_yield": {
+        "mse": 0.033963534981012344,
+        "persistence_mse": 0.1351671814918518,
+        "samples": 37800
+      },
+      "3d_water_due": {
+        "mse": 0.045853253453969955,
+        "persistence_mse": 0.326480507850647,
+        "samples": 37800
+      },
+      "3d_feed_due": {
+        "mse": 0.005531803704798222,
+        "persistence_mse": 0.018188953399658203,
+        "samples": 37800
+      },
+      "7d_cash": {
+        "mse": 0.003714280668646097,
+        "persistence_mse": 0.08179579675197601,
+        "samples": 32200
+      },
+      "7d_margin": {
+        "mse": 0.0043970742262899876,
+        "persistence_mse": 0.012508939020335674,
+        "samples": 32200
+      },
+      "7d_standing_yield": {
+        "mse": 0.04202946648001671,
+        "persistence_mse": 0.24114707112312317,
+        "samples": 32200
+      },
+      "7d_water_due": {
+        "mse": 0.08832181245088577,
+        "persistence_mse": 0.9434518218040466,
+        "samples": 32200
+      },
+      "7d_feed_due": {
+        "mse": 0.010837065055966377,
+        "persistence_mse": 0.061825741082429886,
+        "samples": 32200
+      }
+    }
+  }
+}

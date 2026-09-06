@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "torch": "2.10.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "base_parameters": 70402,
+  "auxiliary_parameters": 1935,
+  "cpp_torch_error": {
+    "prob": 1.1920928955078125e-07,
+    "value": 3.2782554626464844e-07
+  },
+  "postupdate_probability_error": 1.7881393432617188e-07,
+  "zero_aux_exact_old_update": true,
+  "full_trace_threads_1_16_exact": true,
+  "labels_time_and_episode_checked": true,
+  "independent_field_fixture": true,
+  "actor_aux_gradient": 1.314078450202942,
+  "aux_stats": {
+    "loss": 0.08435995876789093,
+    "value_loss": 0.17276083678007126,
+    "entropy": 0.7052680253982544,
+    "approx_kl": 7.469030145479394e-07,
+    "clip_fraction": 0.0,
+    "gradient_norm": 0.19657227769494057,
+    "aux_loss": 0.05130994413048029,
+    "host_to_device_seconds": 0.0030369870000015453,
+    "peak_gpu_allocated_mib": 82.19873046875
+  },
+  "simulated_games": 42
+}

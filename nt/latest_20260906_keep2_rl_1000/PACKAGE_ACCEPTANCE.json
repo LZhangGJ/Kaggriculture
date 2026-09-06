@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "models": 43,
+  "optimizer_checkpoints": 12,
+  "report_documents": 63,
+  "result_configurations": 267,
+  "result_games": 373800,
+  "portable_parity_games": 812,
+  "policy_changes": "include paths only",
+  "omitted": [
+    "rollout decision arrays",
+    "most intermediate weights/Adam states",
+    "replays",
+    "compiled objects/libraries",
+    "environments/caches"
+  ],
+  "historical_full_training_audit": "Preserved original receipts; absent raw rollouts cannot be re-audited from this light package alone."
+}

@@ -1,0 +1,60 @@
+{
+  "builds": [
+    {
+      "name": "f3",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-ffp-contract=off",
+        "-pthread",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/gpt_review/gpt_code/gpt-6-dp/Kaggriculture_CPP_Daily_DP_20260905_v1_improve_c++/Kaggriculture_Daily_DP_CPP_20260905/vendor",
+        "-DNDEBUG",
+        "-fPIC",
+        "-shared",
+        "-Wl,-Bsymbolic",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_f3_ledger_fix_20260906/f3_policy.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_f3_ledger_fix_20260906/build/f3.so"
+      ],
+      "seconds": 13.028508207999998,
+      "exit_code": 0
+    },
+    {
+      "name": "test",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-ffp-contract=off",
+        "-pthread",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/gpt_review/gpt_code/gpt-6-dp/Kaggriculture_CPP_Daily_DP_20260905_v1_improve_c++/Kaggriculture_Daily_DP_CPP_20260905/vendor",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_f3_ledger_fix_20260906/test_ledger.cpp",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/stage/arena/vendor/simulator.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_f3_ledger_fix_20260906/build/test_ledger"
+      ],
+      "seconds": 15.703697216,
+      "exit_code": 0
+    }
+  ],
+  "preserved_original": {
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/f3_policy.cpp": "d68488fbd685a64c4975e6323ff781d50ff38027932dcea096a9cdb3afc6de72",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/stage/f3/agent.cpp": "9606c84fc1ec23b53df676cc034fe037e4a39dd7bd611430102b2c503d3f78f5",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/build/f3.so": "38a28b1f9f95aac915ea0dd0ab3d2709058f81914c5435523fba20a27a011bfb",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/FINAL_RESULTS.json": "e5cdbfff2c7620457bc2a3721b467ffe2ce875086931301b2690e8c6d23edd8c",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/G1_RECEIPT.json": "dbf9f132d29e0dba5fbe072c68de82e8d75cccdc5c5a22d6b37b3a373f709c25"
+  },
+  "files": {
+    "f3_policy.cpp": "3a6cd18a36d8d838a1e2d1d52540ecb7a63f2ecddf4b2a346cd23c54b5f83c42",
+    "test_ledger.cpp": "4f4cd2e6538f5482a837ecd067f9c4ebf7c50e5da322e6327f8b2233361e0410",
+    "build/f3.so": "40bb8e2263cb67bbbd8065867fd51c574cc6ada3049abba0b5b261a74641536b",
+    "stage/f3/agent.cpp": "66a86b38423c4b832d6bf43f79384defc2b1615ea894b97e31f568dea7a2f6eb",
+    "stage/f3/arena_module.cpp": "881ad5ec612a830d22b7b66ee736f52216cb33e3bf5e8921c8e7f1e177f25be8",
+    "stage/f3/fusion_bindings.hpp": "bc28ded4f360256ef73f2620e26e3fa4859996d49aa69d1f94451fe61375be04",
+    "stage/f3/ledger_core.cpp": "272a80409b79b693f1907fd199f51f96f887455e4b59d877ee2ea065005d1b6a",
+    "stage/f3/opening_calendar.hpp": "469e27dc60cd706ac57bee12479916430bb8be834e199669c50e40c4d9013695",
+    "stage/f3/opening_params.hpp": "0344e64ebcdc5ee436f695e95ee4d011137663996886e52b17d4f4138088e710",
+    "stage/f3/project_forecast_ledger.hpp": "007115a74900b69988def97e01d79b80d62cd35c2dbe47fc921d34e70626e4fa"
+  }
+}

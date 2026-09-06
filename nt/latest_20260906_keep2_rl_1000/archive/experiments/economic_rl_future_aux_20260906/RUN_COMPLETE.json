@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "training_games": 17920,
+  "final_games": 18200,
+  "seconds": 577.2499081130001,
+  "preserved_frozen_files": true,
+  "selection_before_final": true
+}

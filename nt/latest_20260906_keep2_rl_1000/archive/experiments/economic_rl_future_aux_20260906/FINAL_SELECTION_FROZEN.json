@@ -1,0 +1,30 @@
+{
+  "control_r0": {
+    "best_step": 0,
+    "selected": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/control_r0/step000.bin",
+    "selected_sha": "17d570ee8da61cc580d0fde37a404630e21b309de37786f5a71cd7b37b4af5fc",
+    "last": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/control_r0/step020.bin",
+    "last_sha": "66fa7e85af33869c63fd78aba1966628d867185fb656cc10fb91f4b583f26a67"
+  },
+  "aux_r0": {
+    "best_step": 0,
+    "selected": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/aux_r0/step000.bin",
+    "selected_sha": "17d570ee8da61cc580d0fde37a404630e21b309de37786f5a71cd7b37b4af5fc",
+    "last": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/aux_r0/step020.bin",
+    "last_sha": "744aa0fb36fa60fe63e65c36f91de4675be8a2bdc0034cb86ff66e0ee7310841"
+  },
+  "control_r1": {
+    "best_step": 0,
+    "selected": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/control_r1/step000.bin",
+    "selected_sha": "1744c23842471f76ce739e7057740a5b200303ff639bc7f1d05f04b949faad5a",
+    "last": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/control_r1/step020.bin",
+    "last_sha": "1d8c9e2f66444a85cc3e35a491776414fde122928bebe1a63ca62803c9239fd2"
+  },
+  "aux_r1": {
+    "best_step": 0,
+    "selected": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/aux_r1/step000.bin",
+    "selected_sha": "1744c23842471f76ce739e7057740a5b200303ff639bc7f1d05f04b949faad5a",
+    "last": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_future_aux_20260906/training/aux_r1/step020.bin",
+    "last_sha": "6c57e12e1254df2fdba4986834b15cf615584b1362dd8957339be550a1797e86"
+  }
+}

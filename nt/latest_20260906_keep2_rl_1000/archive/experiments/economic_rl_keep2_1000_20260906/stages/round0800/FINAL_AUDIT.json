@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "source_manifest_files_verified": {
+    "economic_rl_keep2_100_20260906": 2644,
+    "round0700": 2636
+  },
+  "training": {
+    "control_r0": {
+      "new_games": 22400,
+      "total_games": 179200,
+      "source_step": 700,
+      "end_step": 800,
+      "source_optimizer_updates": 39200,
+      "final_optimizer_updates": 44800,
+      "best_step": 200
+    },
+    "aux_r0": {
+      "new_games": 22400,
+      "total_games": 179200,
+      "source_step": 700,
+      "end_step": 800,
+      "source_optimizer_updates": 39200,
+      "final_optimizer_updates": 44800,
+      "best_step": 640
+    },
+    "control_r1": {
+      "new_games": 22400,
+      "total_games": 179200,
+      "source_step": 700,
+      "end_step": 800,
+      "source_optimizer_updates": 39200,
+      "final_optimizer_updates": 44800,
+      "best_step": 180
+    },
+    "aux_r1": {
+      "new_games": 22400,
+      "total_games": 179200,
+      "source_step": 700,
+      "end_step": 800,
+      "source_optimizer_updates": 39200,
+      "final_optimizer_updates": 44800,
+      "best_step": 780
+    }
+  },
+  "new_training_games": 89600,
+  "total_training_games": 716800,
+  "final_games": 29400,
+  "cpp_torch_onpolicy": {
+    "control_r0": {
+      "701": {
+        "prob": 1.3113021850585938e-06,
+        "value": 1.7881393432617188e-06,
+        "logp": 4.5299530029296875e-06,
+        "ratio": 4.649162292480469e-06
+      },
+      "750": {
+        "prob": 1.2516975402832031e-06,
+        "value": 1.9669532775878906e-06,
+        "logp": 5.245208740234375e-06,
+        "ratio": 5.245208740234375e-06
+      },
+      "800": {
+        "prob": 1.4007091522216797e-06,
+        "value": 1.9073486328125e-06,
+        "logp": 4.76837158203125e-06,
+        "ratio": 4.76837158203125e-06
+      }
+    },
+    "aux_r0": {
+      "701": {
+        "prob": 1.5795230865478516e-06,
+        "value": 1.4901161193847656e-06,
+        "logp": 7.3909759521484375e-06,
+        "ratio": 7.3909759521484375e-06
+      },
+      "750": {
+        "prob": 1.9073486328125e-06,
+        "value": 1.5497207641601562e-06,
+        "logp": 7.867813110351562e-06,
+        "ratio": 7.867813110351562e-06
+      },
+      "800": {
+        "prob": 1.817941665649414e-06,
+        "value": 1.9073486328125e-06,
+        "logp": 7.271766662597656e-06,
+        "ratio": 7.331371307373047e-06
+      }
+    },
+    "control_r1": {
+      "701": {
+        "prob": 1.5497207641601562e-06,
+        "value": 1.3113021850585938e-06,
+        "logp": 5.245208740234375e-06,
+        "ratio": 5.245208740234375e-06
+      },
+      "750": {
+        "prob": 1.430511474609375e-06,
+        "value": 1.2516975402832031e-06,
+        "logp": 5.7220458984375e-06,
+        "ratio": 5.7220458984375e-06
+      },
+      "800": {
+        "prob": 1.6391277313232422e-06,
+        "value": 1.2665987014770508e-06,
+        "logp": 4.76837158203125e-06,
+        "ratio": 4.76837158203125e-06
+      }
+    },
+    "aux_r1": {
+      "701": {
+        "prob": 9.834766387939453e-07,
+        "value": 1.3709068298339844e-06,
+        "logp": 3.5762786865234375e-06,
+        "ratio": 3.5762786865234375e-06
+      },
+      "750": {
+        "prob": 1.519918441772461e-06,
+        "value": 1.3113021850585938e-06,
+        "logp": 3.874301910400391e-06,
+        "ratio": 3.933906555175781e-06
+      },
+      "800": {
+        "prob": 1.5497207641601562e-06,
+        "value": 1.0728836059570312e-06,
+        "logp": 5.0067901611328125e-06,
+        "ratio": 5.066394805908203e-06
+      }
+    }
+  },
+  "optimizer_continued_exactly": true,
+  "training_dev_monitor_holdout_disjoint": true,
+  "selection_before_final": true,
+  "old_files_unchanged": true,
+  "finals": {
+    "aux_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 17210,
+      "changed": 17210
+    },
+    "aux_r0_step700_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 20674,
+      "changed": 20674
+    },
+    "aux_r0_step700_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22326,
+      "changed": 22326
+    },
+    "aux_r0_step800_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19261,
+      "changed": 19261
+    },
+    "aux_r0_step800_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 20643,
+      "changed": 20643
+    },
+    "aux_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25474,
+      "changed": 25474
+    },
+    "aux_r1_step700_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24875,
+      "changed": 24875
+    },
+    "aux_r1_step700_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24640,
+      "changed": 24640
+    },
+    "aux_r1_step800_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24579,
+      "changed": 24579
+    },
+    "aux_r1_step800_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25656,
+      "changed": 25656
+    },
+    "control_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 16016,
+      "changed": 16016
+    },
+    "control_r0_step700_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19193,
+      "changed": 19193
+    },
+    "control_r0_step700_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19849,
+      "changed": 19849
+    },
+    "control_r0_step800_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24741,
+      "changed": 24741
+    },
+    "control_r0_step800_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25038,
+      "changed": 25038
+    },
+    "control_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 7028,
+      "changed": 7028
+    },
+    "control_r1_step700_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 27314,
+      "changed": 27314
+    },
+    "control_r1_step700_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 26559,
+      "changed": 26559
+    },
+    "control_r1_step800_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24845,
+      "changed": 24845
+    },
+    "control_r1_step800_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24405,
+      "changed": 24405
+    },
+    "keep": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 0,
+      "changed": 0
+    }
+  }
+}

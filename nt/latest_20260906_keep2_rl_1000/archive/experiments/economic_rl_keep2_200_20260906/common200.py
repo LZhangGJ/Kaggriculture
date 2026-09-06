@@ -1,0 +1,67 @@
+"""Continuation utilities; reuse frozen KEEP=2 native semantics unchanged."""
+from pathlib import Path
+import sys,os,time,json,hashlib
+P=Path(__file__).resolve().parent
+SOURCE=P.parent/'economic_rl_keep2_100_20260906'
+sys.path.insert(0,str(SOURCE))
+from run100_common import read,save,digest,summary,store_result,NAMES,bootstrap,configure_torch,runtime,np
+from run100_common import rollout as source_rollout
+from bias2_model import Bias2Model,update_aux,forecast_metrics
+import torch
+
+
+def check_hashes():
+    for f,h in read(P/'PROTOCOL.json')['hashes'].items():assert digest(f)==h,f
+
+
+def check_source_manifest():
+    receipt=read(SOURCE/'MANIFEST.json')
+    for relative,meta in receipt['files'].items():
+        f=SOURCE/relative;assert f.stat().st_size==meta['bytes'],str(f)
+        h=hashlib.sha256()
+        with f.open('rb')as stream:
+            for chunk in iter(lambda:stream.read(1024*1024),b''):h.update(chunk)
+        assert h.hexdigest()==meta['sha256'],str(f)
+    return receipt['count']
+
+
+def restore(path):
+    state=torch.load(path,weights_only=False)
+    assert state['bin_sha']==digest(Path(path).with_suffix('.bin'))
+    m=Bias2Model().cuda();m.load_state_dict(state['model'])
+    opt=torch.optim.Adam(m.parameters(),lr=3e-4);opt.load_state_dict(state['optimizer'])
+    assert all(g['lr']==3e-4 for g in opt.param_groups)
+    return m,opt,state
+
+
+def optimizer_receipt(opt):
+    entries=list(opt.state.values())
+    steps=[int(s['step'].item())for s in entries]
+    return dict(parameters_with_state=len(entries),steps=sorted(set(steps)),
+        momentum_l1=sum(float(s['exp_avg'].abs().sum())for s in entries),
+        variance_l1=sum(float(s['exp_avg_sq'].abs().sum())for s in entries))
+
+
+def rollout(pool,model='',mode=0,start=70100000,count=100,sample=9911,threads=16,trace=False):
+    return source_rollout(pool,model,mode,start,count,sample,threads,trace)
+
+
+def evaluate(pool,out,model='',mode=0,start=70100000,count=100,sample=9911):
+    r=rollout(pool,model,mode,start,count,sample);store_result(out,r)
+    s=summary(r);save(Path(out)/'provenance.json',dict(checkpoint=str(model),sha256=digest(model)if model else None,
+       library=str(SOURCE/'build/keep2.so'),library_sha=digest(SOURCE/'build/keep2.so'),seed_start=start,seeds=count,
+       sample=sample,mode=mode,keep_bonus=2.))
+    print('EVAL',Path(out).name,s['overall'],'nonkeep',s['non_keep'],flush=True)
+    return s
+
+
+def checkpoint(path,m,opt,step):
+    path=Path(path);m.export(path.with_suffix('.bin'))
+    tmp=path.with_suffix('.pt.writing')
+    torch.save(dict(model=m.state_dict(),optimizer=opt.state_dict(),step=step,bin_sha=digest(path.with_suffix('.bin'))),tmp)
+    tmp.replace(path.with_suffix('.pt'))
+
+
+def chosen_path(name,step):
+    directory=SOURCE/'training'/name if step<=100 else P/'training'/name
+    return directory/f'step{step:03}.bin'

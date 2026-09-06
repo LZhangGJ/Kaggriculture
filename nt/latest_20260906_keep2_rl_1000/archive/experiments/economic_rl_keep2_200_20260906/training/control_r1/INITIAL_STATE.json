@@ -1,0 +1,13 @@
+{
+  "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_100_20260906/training/control_r1/step100.pt",
+  "sha": "956d5d062f01004beaa7f74082cae0df0836e7cb215bffae35eca4cc937e657e",
+  "bin_sha": "f7d9e4e7b7aed71be97d5d598b4ac2963bae3627b360c986d91339b6d3c8337c",
+  "optimizer": {
+    "parameters_with_state": 12,
+    "steps": [
+      5600
+    ],
+    "momentum_l1": 4.1238257096845565,
+    "variance_l1": 0.10895376546795893
+  }
+}

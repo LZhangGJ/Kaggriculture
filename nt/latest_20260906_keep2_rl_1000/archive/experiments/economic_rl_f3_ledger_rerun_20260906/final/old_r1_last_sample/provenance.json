@@ -1,0 +1,11 @@
+{
+  "library": "old",
+  "library_path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/build/f3.so",
+  "library_sha256": "38a28b1f9f95aac915ea0dd0ab3d2709058f81914c5435523fba20a27a011bfb",
+  "checkpoint": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_three_arm_20260906/training/f3_r1/step020.bin",
+  "checkpoint_sha256": "655fe2ac29d15a21ec4e448c21e63dcd120a4665600ffa06c8add9bc3e664d0e",
+  "mode": 2,
+  "seed_start": 66000000,
+  "seed_count": 100,
+  "sample_seed": 9901
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "initial_weight_identical": true,
+  "old_bias2_greedy_full_trace_identical": true,
+  "sampled_threads_1_16_full_trace_identical": true,
+  "initial_cpp_torch": {
+    "prob": 1.1920928955078125e-07,
+    "value": 3.5762786865234375e-07,
+    "logp": 4.76837158203125e-07,
+    "ratio": 4.76837158203125e-07
+  },
+  "updates": [
+    {
+      "aux_weight": 0.0,
+      "update": {
+        "loss": 0.03955040778964758,
+        "value_loss": 0.10969613119959831,
+        "entropy": 1.506406545639038,
+        "approx_kl": 3.0736838335099215e-06,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.423122338950634,
+        "aux_loss": 0.0,
+        "host_to_device_seconds": 0.00100973599999854,
+        "peak_gpu_allocated_mib": 79.9501953125
+      },
+      "after_parity": {
+        "prob": 1.1920928955078125e-07,
+        "value": 5.364418029785156e-07,
+        "logp": 2.980232238769531e-07,
+        "ratio": 3.5762786865234375e-07
+      },
+      "optimizer_resume_exact": true
+    },
+    {
+      "aux_weight": 0.1,
+      "update": {
+        "loss": 0.044231174513697624,
+        "value_loss": 0.10969613865017891,
+        "entropy": 1.5064923167228699,
+        "approx_kl": 2.77573162127398e-06,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.4230327047407627,
+        "aux_loss": 0.04672397393733263,
+        "host_to_device_seconds": 0.0008701889999986889,
+        "peak_gpu_allocated_mib": 81.5244140625
+      },
+      "after_parity": {
+        "prob": 1.1920928955078125e-07,
+        "value": 5.364418029785156e-07,
+        "logp": 2.980232238769531e-07,
+        "ratio": 3.5762786865234375e-07
+      },
+      "optimizer_resume_exact": true
+    }
+  ],
+  "keep2_cpp_and_torch": true,
+  "initial_keep_probability_mean": 0.5509990453720093,
+  "initial_nonkeep": 175,
+  "games": 84
+}

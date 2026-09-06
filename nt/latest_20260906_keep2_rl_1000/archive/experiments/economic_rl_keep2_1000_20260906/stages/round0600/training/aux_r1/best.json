@@ -1,0 +1,87 @@
+{
+  "step": 60,
+  "score": [
+    0.6183035714285714,
+    8168.091517857143,
+    -60
+  ],
+  "summary": {
+    "status": "PASS",
+    "overall": {
+      "games": 448,
+      "wins": 277,
+      "win_rate": 0.6183035714285714,
+      "mean_cash": 104430.06473214286,
+      "mean_margin": 8168.091517857143
+    },
+    "per_opponent": {
+      "g001": {
+        "games": 64,
+        "wins": 53,
+        "win_rate": 0.828125,
+        "mean_cash": 101726.234375,
+        "mean_margin": 9887.3125
+      },
+      "g003": {
+        "games": 64,
+        "wins": 23,
+        "win_rate": 0.359375,
+        "mean_cash": 100772.109375,
+        "mean_margin": -1750.4375
+      },
+      "boatlee_v29": {
+        "games": 64,
+        "wins": 63,
+        "win_rate": 0.984375,
+        "mean_cash": 120725.703125,
+        "mean_margin": 34751.953125
+      },
+      "kaito_v58": {
+        "games": 64,
+        "wins": 45,
+        "win_rate": 0.703125,
+        "mean_cash": 102506.140625,
+        "mean_margin": 7178.921875
+      },
+      "lynn_v5": {
+        "games": 64,
+        "wins": 37,
+        "win_rate": 0.578125,
+        "mean_cash": 107226.921875,
+        "mean_margin": 4691.625
+      },
+      "yhay81_six_day": {
+        "games": 64,
+        "wins": 27,
+        "win_rate": 0.421875,
+        "mean_cash": 101109.40625,
+        "mean_margin": 1849.90625
+      },
+      "yhay81_three_day": {
+        "games": 64,
+        "wins": 29,
+        "win_rate": 0.453125,
+        "mean_cash": 96943.9375,
+        "mean_margin": 567.359375
+      }
+    },
+    "wall_seconds": 5.149137433,
+    "mode": 1,
+    "call_seconds": 5.157689793999907,
+    "bridge_seconds": 0.008552360999907194,
+    "games_per_second": 87.0048635969278,
+    "environment_steps_per_second": 62556.496926191096,
+    "effective_actor_records": 11724,
+    "decisions": 13440,
+    "non_keep": 481,
+    "changed": 481,
+    "max_action_ms": 17.771564,
+    "errors": [],
+    "mean_times": {
+      "policy_seconds": 0.17314136236830358,
+      "enemy_seconds": 0.0035445309620535715,
+      "env_seconds": 0.0011718855647321429,
+      "model_seconds": 0.005164332904017857
+    }
+  }
+}

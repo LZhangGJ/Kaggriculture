@@ -7,6 +7,13 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260906_keep2_rl_1000/`](latest_20260906_keep2_rl_1000/README_ZH.md)
+  — full economic-RL experiment history through four KEEP=2 F3 PPO runs at
+  1,000 rounds each, seven hundred-round reports, and the 40,600-game independent
+  holdout. Includes key MLP/Adam checkpoints, lossless per-game evaluation
+  results, and a relocated C++ inference entry checked against 812 original
+  games. Large rollout arrays, replay/build caches and most intermediate
+  checkpoints are intentionally excluded. Depends on the C++ base below.
 - [`latest_20260906_c3_f3_j7c3_search/`](latest_20260906_c3_f3_j7c3_search/README_ZH.md)
   — standalone C++ C3 autonomous, ledger-fixed F3 autonomous, J7-reference+C3,
   and seven live opponents. Includes source/assets, portable build, Day0–28
