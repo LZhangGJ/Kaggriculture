@@ -2,6 +2,11 @@
 
 日期：2026-09-06。评估对象为 [`nt/latest_20260906_keep2_rl_1000/`](nt/latest_20260906_keep2_rl_1000/README_ZH.md) 四组 1000 轮实验及其归档证据。
 
+本文档分两部分：
+
+- **§0–§7 RL 路线评估**：`aux_r0` 增益是否可信、能否继续、如何用最小实验验证。
+- **§8 GitHub 上传精简规范**：仓库体积实测与新增文件的取舍规则。
+
 ## 0. 本文档的边界
 
 - 本文档**只读**已冻结的实验证据，没有运行新训练、新评测或新分支对局；所有数字均来自归档 JSON/Markdown，未重新测量。
@@ -128,3 +133,120 @@ aux 臂、KEEP=2、**300 轮**，新开 6 个训练种子（run 2–7）。用�
 - E1 与 E3 均通过 → 该线值得继续投入，方向明确（候选经济特征 + 扩大对手池）。
 - E1 失败且 E3 无法挽救 → 停止该窄接口 F3-PPO 线，将精力转向已领先其约 7pp 的 J7+C3 / 宽候选搜索线。
 - E1 通过但 E2 失败 → 收益为对手利用，须先解决对手池泛化，方可讨论线上提交。
+
+---
+
+# §8 GitHub 上传精简规范
+
+面向**今后新增**的提交。历史中已有的大文件不在本节处理范围（见 §8.6）。
+
+## 8.0 现状实测
+
+在 `bd30034`（分支 `agent/add-nt-simulator-orbit-migrations`）上实测，非引用他处数字：
+
+|项目|数值|
+|---|---:|
+|跟踪文件数|5,741|
+|跟踪总字节|705.4 MB|
+|`.git` 目录|952 MB|
+|其中 `nt/`|684.4 MB（5,698 文件）|
+|≥100 MB 文件（GitHub 硬拒）|0|
+|≥50 MB 文件（GitHub 警告）|1|
+
+按扩展名的体积与可压缩性：
+
+|扩展名|文件数|原始|gzip 后|可省|压缩比|
+|---|---:|---:|---:|---:|---:|
+|`.zip`|47|229.4 MB|203.6 MB|25.8 MB|1.1x|
+|`.npz`|273|169.5 MB|147.8 MB|21.7 MB|1.1x|
+|`.json`|2,293|149.6 MB|10.9 MB|**138.6 MB**|**13.7x**|
+|`.gz`|446|39.8 MB|（已压缩）|—|—|
+|`.py`|1,343|35.7 MB|21.8 MB|13.9 MB|1.6x|
+|`.joblib`|21|29.9 MB|7.7 MB|22.2 MB|3.9x|
+|`.md`|490|2.3 MB|1.2 MB|1.1 MB|1.9x|
+
+## 8.1 首要规则：不要新增已压缩的不透明二进制
+
+`.zip` 与 `.npz` 合计 **398.9 MB，占跟踪体积 57%**，且 gzip 再压仅 1.1x——没有可回收空间，只能不放进来。
+
+- git 无法对已压缩二进制做 delta；修改一个字节即整份重新存储，且**永久留在历史里**。
+- 它们不可 diff、不可在网页审阅、不可按行追溯，与本仓库"证据可核对"的定位相冲突。
+- 最大单文件 `nt/handoff/gpt_route_bundle_1327_v2/Kaggriculture_Simulator_Route_Bundle_1327_20260815_v2.zip`（90.9 MB）是**仓库自身内容的再打包**。这类交付包应作为 GitHub Release asset 或由脚本按需重建，不进版本库。
+- GitHub 硬限制：单文件 >100 MB 直接拒绝推送，>50 MB 告警。当前余量不大。
+
+例外：确有交接必要的小体积二进制（如 `.bin` 权重，当前 43 个共 11.5 MB）可以保留，但须在 `MODEL_INDEX.json` 一类清单中登记 SHA-256。
+
+## 8.2 沿用仓库已有的 gzip 收据惯例
+
+**这是最大且零风险的一项：省 138.6 MB。**
+
+本仓库已经有这个惯例并且通过了验收，不是新发明：
+
+- 已跟踪 270 个 `.json.gz`。
+- `latest_20260906_keep2_rl_1000` 把逐局结果存为 `games.json.gz`，在 `SOURCE_PROVENANCE.json` 中记录**压缩前**的 SHA-256，由 `verify_package.py` 做无损校验（`gzip_lossless`）。
+
+但仍有 2,293 个裸 `.json`（149.6 MB）未采用该惯例。极端例子：
+
+```
+nt/latest_20260823_fc24b/.../receipts/fc22_prt_seed594122_seat0_step_trace_v1.json
+14.4 MB  →  0.2 MB   (77.6x)
+```
+
+规则：
+
+- 结果、收据、step trace 类 JSON **超过 256 KB 一律存 `.json.gz`**，并在对应 provenance/manifest 中记录原始 SHA-256。
+- 保持明文的例外：需要在网页上直接阅读或 diff 的配置与清单（`MANIFEST.json`、`PROTOCOL.json`、`MODEL_INDEX.json`、`ACCEPTANCE.json` 等）。
+- `.joblib`（3.9x，可省 22.2 MB）同理：要么压缩，要么不入库。
+
+## 8.3 纠正一个常见判断：按日快照不是主要成本
+
+`nt/latest_YYYYMMDD_*/` 逐日交接包看起来是重复上传，**实测不是体积问题**：
+
+- 全仓库精确重复（同内容多路径）仅 **666 文件 / 18.7 MB / 2.6%**。
+- git 按内容哈希去重，跨快照未改动的文件不占额外空间。
+
+所以**不必为节省体积而放弃快照式交接**——它对可追溯性的价值大于成本。真正的成本在 §8.1 与 §8.2。
+
+仍值得清理的是同包内的报告双份存放（例如 fc24b 包里 `docs/development_chain/FC*.md` 与 `workspace/experiments/fusion_champion_v1/reports/FC*.md` 内容相同）。保留一处规范副本加相对链接即可；这一项的收益是**可维护性**（改一处不会漏改另一处），不是体积。
+
+## 8.4 上传前检查清单
+
+- [ ] 暂存区无 >50 MB 文件；无新增 `.zip` / `.npz`（除非已说明必要性）
+- [ ] 新增 JSON >256 KB 的已 gzip，且 provenance 记录压缩前 SHA-256
+- [ ] 无编译产物、虚拟环境、缓存：`.o` / `.so` / `build/` / `.venv*` / `__pycache__` / Triton / JAX / Torch 缓存
+- [ ] 大体积 rollout 数组、完整 Replay、逐轮中间 checkpoint 保持在原机，不入库（各包 README 的"不包含"一节即此口径）
+- [ ] 新增文件已进入对应包的 `PACKAGE_MANIFEST.json` / `MODEL_INDEX.json`
+
+```bash
+# 暂存区中超过 1 MB 的文件
+git diff --cached --name-only | xargs -r ls -l 2>/dev/null \
+  | awk '$5>1048576 {printf "%8.1f MB  %s\n", $5/1048576, $9}'
+
+# 全库最大的 20 个文件
+git ls-tree -r -l HEAD | sort -k4 -rn | head -20 \
+  | awk '{printf "%8.1f MB  %s\n", $4/1048576, $5}'
+```
+
+## 8.5 建议补充的 `.gitignore`
+
+当前仅 7 条（`.venv/`、`.uv-cache/`、`__pycache__/`、`.pytest_cache/`、`*.py[cod]`、`benchmark-results/`、`artifacts/`）。建议增加：
+
+```gitignore
+*.o
+*.so
+build/
+.venv*/
+rollout_*/
+decisions.npz
+.triton/
+.jax_cache/
+```
+
+注意 `artifacts/` 已被忽略，但部分包（如 front40 的 `workspace/experiments/front40_fusion_v1/artifacts/*.npz`）中的同名目录已被跟踪，忽略规则对已跟踪文件无效。
+
+## 8.6 边界
+
+- 本节规则**只约束今后的新增提交**。
+- 追溯清除历史中已有的 398.9 MB 二进制需要 `git filter-repo` 一类的历史重写，会改变所有既有 commit 哈希、破坏各包已发布的提交引用，并影响该分支的其他使用者。**这是一次独立的、需要显式批准的决定，不属于本文档授权范围。**
+- `.git` 已达 952 MB：即使今后停止新增二进制，历史体积不会自行下降。
+- 本节数字为 2026-09-06 在 `bd30034` 上的一次实测，未做多次采样；`.py` 体积偏大主要来自 `provenance/opponents/*.py` 一类内嵌路线表的生成文件（单个最大 4.3 MB），属正常交接内容，未计入建议削减项。
