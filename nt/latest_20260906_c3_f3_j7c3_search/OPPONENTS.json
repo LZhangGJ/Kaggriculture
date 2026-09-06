@@ -1,0 +1,65 @@
+[
+  {
+    "name": "g001",
+    "label": "G001 frozen original",
+    "source": "provenance/opponents/g001.py",
+    "source_sha256": "9b4fdf7a7c92d3eefc75c693c4949825567588478bef0e53529bdec82944dda7",
+    "asset": "assets/g001.json.zlib",
+    "url": null,
+    "coverage_caveat": null
+  },
+  {
+    "name": "g003",
+    "label": "G003 user-supplied submission 55918053",
+    "source": "provenance/opponents/g003.py",
+    "source_sha256": "ff32e2e47431dae2d98fa70a78f85425f8d5929d5910c5ff482e74750c3fa1ef",
+    "asset": "assets/g003.json.zlib",
+    "url": null,
+    "coverage_caveat": "Eight official parity games, four switched. Not exhaustive coverage of all 356 routes."
+  },
+  {
+    "name": "boatlee_v29",
+    "label": "Boatlee V29-R1 | Adaptive Market Hysteresis",
+    "source": "provenance/opponents/boatlee_v29.py",
+    "source_sha256": "c4a6964cec3c1c99207c32bb1fd91e53c3ec01e6890da5734331cbeab1cc1267",
+    "asset": "assets/boatlee_v29.json.zlib",
+    "url": "https://www.kaggle.com/code/boatlee/v29-r1-adaptive-market-hysteresis",
+    "coverage_caveat": "14 official full games, including weed recovery and mirror latch. Finite sample, not exhaustive all-state proof. Frozen FR_ITEMS is empty; no disabled preemption feature is enabled during migration."
+  },
+  {
+    "name": "kaito_v58",
+    "label": "Kaito v58 Minimax Closed Loop",
+    "source": "provenance/opponents/kaito_v58.py",
+    "source_sha256": "b041058ec187a8d0a01edc0eab8de068b53deca3e6c1973faf74ace6916ddcb9",
+    "asset": "assets/kaito_v58.json.zlib",
+    "url": "https://www.kaggle.com/code/kaitofukami/238-238-known-streams-v58-minimax-closed-loop",
+    "coverage_caveat": "Ten independent child controllers, full source router, weed repair, residual sales/debt/flow memory. Synthetic router cases cover all ten outputs; finite official games do not prove exhaustive natural branch coverage."
+  },
+  {
+    "name": "lynn_v5",
+    "label": "Lynn Farming Score V5: Timing Optimized",
+    "source": "provenance/opponents/lynn_v5.py",
+    "source_sha256": "e8498c67914ecc607ae69fde25a728361eb5acea94c00ecc85deffbdafe50413",
+    "asset": "assets/lynn_v5.json.zlib",
+    "url": "https://www.kaggle.com/code/lynnsakurai/farming-score-v5-timing-optimized",
+    "coverage_caveat": "Ten official games checking six action layers and all behavior memory; 291 synthetic cases and 1000 parallel repeats. Finite evidence, not all-state proof."
+  },
+  {
+    "name": "yhay81_six_day",
+    "label": "yhay81 Six-Day Public-State Fieldbook / combined_publicstate_r4",
+    "source": "provenance/opponents/yhay81_six_day.py",
+    "source_sha256": "5809846fd528f00d1c01d6f58940633604adb7283d1e2f152603697967e3bb89",
+    "asset": null,
+    "url": "https://www.kaggle.com/code/yhay81/six-day-public-state-fieldbook",
+    "coverage_caveat": "Ten official full-game parity checks, final segments 0/1/2/4 observed; not exhaustive coverage of selectors at 144/432/576 steps. 1000 threaded repeats test state isolation, not 1000 independent strength samples."
+  },
+  {
+    "name": "yhay81_three_day",
+    "label": "yhay81 Three-Day Shop Router / hybrid_shopforge_3day_frontier_state_router_r5",
+    "source": "provenance/opponents/yhay81_three_day.py",
+    "source_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02",
+    "asset": null,
+    "url": "https://www.kaggle.com/code/yhay81/three-day-shop-router",
+    "coverage_caveat": null
+  }
+]

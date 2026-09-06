@@ -1,0 +1,20 @@
+{
+  "new_limit": 30,
+  "hold": 0,
+  "expansion": 2,
+  "reserve": 150,
+  "competition": 1.5,
+  "service_dp": 1,
+  "service_cost": 0,
+  "execution_variant": 4,
+  "harvest_threshold": 1,
+  "investment_blend": 1,
+  "investment_scope": 2,
+  "investment_timing": 2,
+  "crop_dp": 2,
+  "crop_start": 0,
+  "crop_gain": 0,
+  "crop_max_changes": 100,
+  "calendar_samples": 3,
+  "investment_crop_consistent": 1
+}

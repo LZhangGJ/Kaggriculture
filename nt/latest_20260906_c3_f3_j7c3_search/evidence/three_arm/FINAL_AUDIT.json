@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "original_files_unchanged": 338,
+  "totals": {
+    "training_games": 26880,
+    "training_decisions": 806400,
+    "effective_actor_records": 419852,
+    "evaluation_games": 43176
+  },
+  "runs": [
+    {
+      "arm": "c3auto",
+      "run": 0,
+      "selected_step": 0,
+      "status": "PASS"
+    },
+    {
+      "arm": "f3",
+      "run": 0,
+      "selected_step": 0,
+      "status": "PASS"
+    },
+    {
+      "arm": "c3j7",
+      "run": 0,
+      "selected_step": 0,
+      "status": "PASS"
+    },
+    {
+      "arm": "c3auto",
+      "run": 1,
+      "selected_step": 0,
+      "status": "PASS"
+    },
+    {
+      "arm": "f3",
+      "run": 1,
+      "selected_step": 0,
+      "status": "PASS"
+    },
+    {
+      "arm": "c3j7",
+      "run": 1,
+      "selected_step": 0,
+      "status": "PASS"
+    }
+  ]
+}

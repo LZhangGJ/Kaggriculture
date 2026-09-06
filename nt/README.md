@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260906_c3_f3_j7c3_search/`](latest_20260906_c3_f3_j7c3_search/README_ZH.md)
+  — standalone C++ C3 autonomous, ledger-fixed F3 autonomous, J7-reference+C3,
+  and seven live opponents. Includes source/assets, portable build, Day0–28
+  narrow-overlay replay/Beam example, parity evidence, and a precise guide for
+  adapting the older wide candidate pool. The wide pool is NOT yet ported to
+  these new bases; this package makes that limitation explicit.
 - [`latest_20260904_dynamic_generator_cross300/`](latest_20260904_dynamic_generator_cross300/README_ZH.md)
   — current Daily DP dynamic strategy generator and complete six-stage experiment
   handoff: 8/29-node multi-seed Beam search, width 12, 300 frozen macro plans,

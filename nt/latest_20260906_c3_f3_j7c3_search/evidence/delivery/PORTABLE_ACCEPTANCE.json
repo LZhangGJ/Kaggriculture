@@ -1,0 +1,851 @@
+{
+  "status": "PASS",
+  "games": 213,
+  "arms": {
+    "c3auto": {
+      "baseline": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 4,
+          "ties": 0,
+          "win_rate": 0.2857142857142857,
+          "mean_cash": 83389.71428571429,
+          "mean_margin": -3406.0
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 80009.0,
+            "mean_margin": 26188.0
+          },
+          "g003": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 89865.0,
+            "mean_margin": -20369.0
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 72423.0,
+            "mean_margin": 10597.0
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 92808.0,
+            "mean_margin": -17203.0
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 97560.0,
+            "mean_margin": -5050.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 72729.0,
+            "mean_margin": -967.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 78334.0,
+            "mean_margin": -17038.0
+          }
+        },
+        "wall_seconds": 1.373764366,
+        "call_seconds": 1.4075307339999767,
+        "games_per_second": 9.946496841468068,
+        "decisions": 420,
+        "changed": 0,
+        "fallbacks": 0,
+        "library_sha256": "da1921fbb860a0ffafb7c1f8ba7071ac7288e291a20b3b987d660004728ba6d2",
+        "plan_sha256": null,
+        "errors": []
+      },
+      "mixed": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 8,
+          "ties": 0,
+          "win_rate": 0.5714285714285714,
+          "mean_cash": 78760.57142857143,
+          "mean_margin": 9108.857142857143
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 94482.0,
+            "mean_margin": -15134.0
+          },
+          "g003": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 69475.0,
+            "mean_margin": 33872.0
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 71425.0,
+            "mean_margin": -11667.0
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 84072.0,
+            "mean_margin": 43740.0
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 72744.0,
+            "mean_margin": 8897.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 95655.0,
+            "mean_margin": -4291.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 63471.0,
+            "mean_margin": 8345.0
+          }
+        },
+        "wall_seconds": 0.194230663,
+        "call_seconds": 0.23041905299999144,
+        "games_per_second": 60.75886441561115,
+        "decisions": 420,
+        "changed": 116,
+        "fallbacks": 290,
+        "library_sha256": "a1089b6b5c970727235f88b016358488d6ea6f1b34f5df59c7f8221389d2fdd5",
+        "plan_sha256": "436c39022c902ab578ce2d3b8bc8c20a234b03f68a10cde463f51efa8429ae3f",
+        "errors": []
+      },
+      "baseline_games": [
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 0,
+          "cash": 80009.0,
+          "opponent_cash": 53821.0,
+          "trace_sha256": "fe45b57006ef49b172520ef056c515040eb73f1d3a5ae652052e0b0e9a313742"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 0,
+          "cash": 80009.0,
+          "opponent_cash": 53821.0,
+          "trace_sha256": "de27fff93986bb3bb7785d66bb8ed26ac6e9ca207ebc046002b0542539848a19"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 1,
+          "cash": 89865.0,
+          "opponent_cash": 110234.0,
+          "trace_sha256": "2778b77454535c5e9144ce1cd927ea3fe34d57734ae3ce73d4cb8a4b7203835b"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 1,
+          "cash": 89865.0,
+          "opponent_cash": 110234.0,
+          "trace_sha256": "49af34b9eaeb0a216ee58f4b5bf4902edf46a98f69901388690deb4a8b2eee76"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 2,
+          "cash": 72423.0,
+          "opponent_cash": 61826.0,
+          "trace_sha256": "0c8db4ed44cf453b26dfe0c42554cd139ed297ea25ff48b69c111bdf182f6c83"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 2,
+          "cash": 72423.0,
+          "opponent_cash": 61826.0,
+          "trace_sha256": "994a2acef8c2e6af1a7cdcba8e07ddf91c50fb486aab572e06c52c35938f67da"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 3,
+          "cash": 92808.0,
+          "opponent_cash": 110011.0,
+          "trace_sha256": "74af5ac963adafb5ac70d463e1087c85df09425028d23e44c4fd3dbb4bb00297"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 3,
+          "cash": 92808.0,
+          "opponent_cash": 110011.0,
+          "trace_sha256": "985bd018f3e5b6243e81601f4a3c2c7bc931706db759fd3e8b586f69be5942c0"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 4,
+          "cash": 97560.0,
+          "opponent_cash": 102610.0,
+          "trace_sha256": "5b4c554925f6a7517c866dffe57c06237b7974e3ac95038d4361cc7d30b354a4"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 4,
+          "cash": 97560.0,
+          "opponent_cash": 102610.0,
+          "trace_sha256": "edd0dc72c3c4838b4096c56870173fecee33a23529a2eae4f58415496ad166cb"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 5,
+          "cash": 72729.0,
+          "opponent_cash": 73696.0,
+          "trace_sha256": "ff7ea5db62e5a2c4bb38ab1671184d54e5a04b2d0d5915b170eeb8d8791771d4"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 5,
+          "cash": 72729.0,
+          "opponent_cash": 73696.0,
+          "trace_sha256": "d2935945bc8a7da7551cf9ffa989a6b8a243e67a4a80bdd4788f90a4812bdaf2"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 6,
+          "cash": 78334.0,
+          "opponent_cash": 95372.0,
+          "trace_sha256": "3ff60e03b12c303972859d2c9692fd7497e2c799c59f7988f2f8dc1b3e3e22e6"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 6,
+          "cash": 78334.0,
+          "opponent_cash": 95372.0,
+          "trace_sha256": "8c75106be56bc56afa00fde02acb75e0520b5f58db4f6308788f2a22b1e3762f"
+        }
+      ],
+      "all_keep_identical": true,
+      "threads_1_16_identical": true,
+      "repeated_batch_identical": true,
+      "late_day_single_edit": {
+        "day": 17,
+        "choice": 2,
+        "prefix_steps": 407
+      }
+    },
+    "f3": {
+      "baseline": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 10,
+          "ties": 0,
+          "win_rate": 0.7142857142857143,
+          "mean_cash": 94949.0,
+          "mean_margin": 7440.714285714285
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 105821.0,
+            "mean_margin": 4574.5
+          },
+          "g003": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 68550.5,
+            "mean_margin": 9726.5
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 137461.5,
+            "mean_margin": 42696.5
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 67080.0,
+            "mean_margin": 8833.5
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 64657.0,
+            "mean_margin": -13029.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 85492.0,
+            "mean_margin": -2461.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 135581.0,
+            "mean_margin": 1744.0
+          }
+        },
+        "wall_seconds": 1.608095621,
+        "call_seconds": 1.649411774999976,
+        "games_per_second": 8.487874412076513,
+        "decisions": 420,
+        "changed": 0,
+        "fallbacks": 0,
+        "library_sha256": "b24d93dfb2ee4cbe25f69e4d9e1dfb2e18d25b4c9afb5a3fd660e4f7623b468b",
+        "plan_sha256": null,
+        "errors": []
+      },
+      "mixed": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 0,
+          "ties": 0,
+          "win_rate": 0.0,
+          "mean_cash": 85472.64285714286,
+          "mean_margin": -13085.5
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 79867.5,
+            "mean_margin": -1573.5
+          },
+          "g003": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 65980.0,
+            "mean_margin": -17469.0
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 92641.0,
+            "mean_margin": -15977.0
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 73797.0,
+            "mean_margin": -18072.0
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 115068.0,
+            "mean_margin": -10829.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 102068.0,
+            "mean_margin": -18323.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 68887.0,
+            "mean_margin": -9355.0
+          }
+        },
+        "wall_seconds": 0.203723214,
+        "call_seconds": 0.2561639080000191,
+        "games_per_second": 54.652507877881675,
+        "decisions": 420,
+        "changed": 255,
+        "fallbacks": 151,
+        "library_sha256": "a5ca1875023a0a82d64a1f521515d47fbfd31b957dc04f91c929ca8a4eec4976",
+        "plan_sha256": "436c39022c902ab578ce2d3b8bc8c20a234b03f68a10cde463f51efa8429ae3f",
+        "errors": []
+      },
+      "baseline_games": [
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 0,
+          "cash": 106020.0,
+          "opponent_cash": 100774.0,
+          "trace_sha256": "eefe9a80f9f8785e5147cc1a1b1d12e61f3c9356f35aec29fbee32f0b66f8951"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 0,
+          "cash": 105622.0,
+          "opponent_cash": 101719.0,
+          "trace_sha256": "dfe840f53c1f7ceef91404012abe7c43778c55ccf144d278a05c35450b658d57"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 1,
+          "cash": 68261.0,
+          "opponent_cash": 58632.0,
+          "trace_sha256": "8f11a7cedfbedf25a58d61d76b5c4ffdd6c3c729938a4d7156ade3ca75cada35"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 1,
+          "cash": 68840.0,
+          "opponent_cash": 59016.0,
+          "trace_sha256": "bf1e1a667775f157fe09f787efe3b38a07b019ae35f144b16e64485520a0cb2f"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 2,
+          "cash": 132628.0,
+          "opponent_cash": 92314.0,
+          "trace_sha256": "895e5bbb255a2a7441d4291427737926647834de52b4ac2178c12ffc16eddf30"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 2,
+          "cash": 142295.0,
+          "opponent_cash": 97216.0,
+          "trace_sha256": "ff59464a9a3ed8dda0546d2ee0917f0f727ce5f02b770714b0044f8842380d5d"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 3,
+          "cash": 70293.0,
+          "opponent_cash": 58980.0,
+          "trace_sha256": "8d4582c201ffbb2f85e4a220122f162495ca01e44d9ac4d51b643e5a3592569c"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 3,
+          "cash": 63867.0,
+          "opponent_cash": 57513.0,
+          "trace_sha256": "6bc7ce6daa0ee8c9d3cea4bf6e99ccd5a3c1735228fbaab40ad56096f603bae4"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 4,
+          "cash": 64657.0,
+          "opponent_cash": 77686.0,
+          "trace_sha256": "9ecc87e6f99ff3fab40038990b6ca30237f8131da89188fc231f9af4f067807a"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 4,
+          "cash": 64657.0,
+          "opponent_cash": 77686.0,
+          "trace_sha256": "a13ed024d586ae3668d6b6d4a12739583efb67d7682f9fdc557375e36d1f5ab7"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 5,
+          "cash": 85492.0,
+          "opponent_cash": 87953.0,
+          "trace_sha256": "f33d0fa57ce98d07c7721a3543635a86e00a3dc34166df4d1f596e5461fd06c5"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 5,
+          "cash": 85492.0,
+          "opponent_cash": 87953.0,
+          "trace_sha256": "0c2b0f9f0082555d6df0971057fcc0ba23a2967df0f5265afd846e13b500652d"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 6,
+          "cash": 135581.0,
+          "opponent_cash": 133837.0,
+          "trace_sha256": "3a88213c3c460df0d6e9933ad64fbe8ca51eb8c06f92f7119617d2d09dd634b9"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 6,
+          "cash": 135581.0,
+          "opponent_cash": 133837.0,
+          "trace_sha256": "c5e5d4cdca9994b0d6377c32d3529938142ad8b3a6e6daf7eff3d86b2489a02f"
+        }
+      ],
+      "all_keep_identical": true,
+      "threads_1_16_identical": true,
+      "repeated_batch_identical": true,
+      "late_day_single_edit": {
+        "day": 4,
+        "choice": 1,
+        "prefix_steps": 95
+      }
+    },
+    "c3j7": {
+      "baseline": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 12,
+          "ties": 0,
+          "win_rate": 0.8571428571428571,
+          "mean_cash": 107152.85714285714,
+          "mean_margin": 17775.714285714286
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 81156.0,
+            "mean_margin": 19946.0
+          },
+          "g003": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 141903.0,
+            "mean_margin": 32411.0
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 117677.0,
+            "mean_margin": -4012.0
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 118216.0,
+            "mean_margin": 48922.0
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 84149.0,
+            "mean_margin": 1439.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 119261.0,
+            "mean_margin": 17766.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 87708.0,
+            "mean_margin": 7958.0
+          }
+        },
+        "wall_seconds": 3.328579926,
+        "call_seconds": 3.367982648000009,
+        "games_per_second": 4.156791012065797,
+        "decisions": 420,
+        "changed": 0,
+        "fallbacks": 0,
+        "library_sha256": "53a0178483d6d32b85fe55bb76bfb19d88829f20d5a521fdd49dc32ae3780e78",
+        "plan_sha256": null,
+        "errors": []
+      },
+      "mixed": {
+        "status": "PASS",
+        "overall": {
+          "games": 14,
+          "wins": 12,
+          "ties": 0,
+          "win_rate": 0.8571428571428571,
+          "mean_cash": 97536.71428571429,
+          "mean_margin": 15894.42857142857
+        },
+        "per_opponent": {
+          "g001": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 82505.0,
+            "mean_margin": 19410.0
+          },
+          "g003": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 138644.0,
+            "mean_margin": 25341.0
+          },
+          "boatlee_v29": {
+            "games": 2,
+            "wins": 0,
+            "ties": 0,
+            "win_rate": 0.0,
+            "mean_cash": 84259.0,
+            "mean_margin": -6752.0
+          },
+          "kaito_v58": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 140355.0,
+            "mean_margin": 41263.0
+          },
+          "lynn_v5": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 77128.0,
+            "mean_margin": 21243.0
+          },
+          "yhay81_six_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 69897.0,
+            "mean_margin": 8341.0
+          },
+          "yhay81_three_day": {
+            "games": 2,
+            "wins": 2,
+            "ties": 0,
+            "win_rate": 1.0,
+            "mean_cash": 89969.0,
+            "mean_margin": 2415.0
+          }
+        },
+        "wall_seconds": 0.425354228,
+        "call_seconds": 0.4565109459999803,
+        "games_per_second": 30.667391708063455,
+        "decisions": 420,
+        "changed": 144,
+        "fallbacks": 262,
+        "library_sha256": "d4fe30db71cf1802af314b37facb0b7e7cbdf74029e5943acb80bb64e81ff828",
+        "plan_sha256": "436c39022c902ab578ce2d3b8bc8c20a234b03f68a10cde463f51efa8429ae3f",
+        "errors": []
+      },
+      "baseline_games": [
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 0,
+          "cash": 81156.0,
+          "opponent_cash": 61210.0,
+          "trace_sha256": "c9eb6b8f66fab849682a40f4734d9ad541f81dd935b65f253a5453bea342ac02"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 0,
+          "cash": 81156.0,
+          "opponent_cash": 61210.0,
+          "trace_sha256": "2e183d271ee690381a6479b770d78ad630560c9c67dd1cbc12203d97b273f4e1"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 1,
+          "cash": 141903.0,
+          "opponent_cash": 109492.0,
+          "trace_sha256": "ab771810ac82ab3f513967794d0051bdbde9832d57f2ba81d0096098222eb899"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 1,
+          "cash": 141903.0,
+          "opponent_cash": 109492.0,
+          "trace_sha256": "0389a6460840de654f750b30c03d9e3ffd7d6a876545a571e9c8a45ecb627c26"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 2,
+          "cash": 117677.0,
+          "opponent_cash": 121689.0,
+          "trace_sha256": "243a89730958382e0c6a53815b3639218d625a904fa991d9513e1e880edc12c7"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 2,
+          "cash": 117677.0,
+          "opponent_cash": 121689.0,
+          "trace_sha256": "e7588a7dd0e042684d655a11b325ecde78eca390f321cabefec0bc2b64551be5"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 3,
+          "cash": 118216.0,
+          "opponent_cash": 69294.0,
+          "trace_sha256": "ee83846a6da6375d34f3b855b35b35c72145fd1f2d33a6b7a3d07db0d2aaefc8"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 3,
+          "cash": 118216.0,
+          "opponent_cash": 69294.0,
+          "trace_sha256": "072024946ab5bacc8c59ddaf5cc1c9269cf702ed53e6cd4ecc2b30d5b0339286"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 4,
+          "cash": 84149.0,
+          "opponent_cash": 82710.0,
+          "trace_sha256": "fef7fa17d7d539cbdafee84b65d5fd746bf9389d7242352179781284e4b31fcf"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 4,
+          "cash": 84149.0,
+          "opponent_cash": 82710.0,
+          "trace_sha256": "a5460ef7589cff1a5e86c9a5114835f37a8f959eab6e0970b08c0fe7b27bff00"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 5,
+          "cash": 119261.0,
+          "opponent_cash": 101495.0,
+          "trace_sha256": "a82b23d13f3d0bece2f32f91a2a189ccd315c6755b88d220a6ad443a7ff58006"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 5,
+          "cash": 119261.0,
+          "opponent_cash": 101495.0,
+          "trace_sha256": "588db06558662293bea6e36f56f0b1febe1a2bdcd24cf7aad9b82df32b2f1a03"
+        },
+        {
+          "seed": 67000000,
+          "seat": 0,
+          "opponent": 6,
+          "cash": 87708.0,
+          "opponent_cash": 79750.0,
+          "trace_sha256": "09e970198a2e5caefb9a5e09defdd0da75663b6c34719b61ed719a0831a17464"
+        },
+        {
+          "seed": 67000000,
+          "seat": 1,
+          "opponent": 6,
+          "cash": 87708.0,
+          "opponent_cash": 79750.0,
+          "trace_sha256": "be715e18b9a351e8f936008bcec93b78ef7eaae132b1e77c45a55e7bfe446156"
+        }
+      ],
+      "all_keep_identical": true,
+      "threads_1_16_identical": true,
+      "repeated_batch_identical": true,
+      "late_day_single_edit": {
+        "day": 22,
+        "choice": 1,
+        "prefix_steps": 527
+      }
+    }
+  },
+  "dependencies": {
+    "numpy": "2.1.3",
+    "pybind11": "2.13.6"
+  },
+  "ledger_test": "REPRO WHEAT old_total=29 old_bug_removed=2 fixed_remaining=0\nREPRO CARROT old_total=29 old_bug_removed=2 fixed_remaining=0\nREPRO TOMATO old_total=14 old_bug_removed=7 fixed_remaining=0\nREPRO STRAWBERRY old_total=12 old_bug_removed=8 fixed_remaining=0\nREPRO MELON old_total=12 old_bug_removed=6 fixed_remaining=0\nSTREAMS 98 REPEAT_REGRESSIONS 18\nLIFECYCLE_GAMES 8 EDITS 92 HELD_ANIMAL_DAYS 19\nPASS checks=11077\n"
+}

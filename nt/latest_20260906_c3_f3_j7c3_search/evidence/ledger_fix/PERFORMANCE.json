@@ -1,0 +1,63 @@
+{
+  "pairs": [
+    {
+      "repetition": 0,
+      "version": "old",
+      "seconds": 1.3181702430000009,
+      "games": 112
+    },
+    {
+      "repetition": 0,
+      "version": "fixed",
+      "seconds": 1.341990942999999,
+      "games": 112
+    },
+    {
+      "repetition": 1,
+      "version": "fixed",
+      "seconds": 1.3498746080000004,
+      "games": 112
+    },
+    {
+      "repetition": 1,
+      "version": "old",
+      "seconds": 1.3132004100000003,
+      "games": 112
+    },
+    {
+      "repetition": 2,
+      "version": "old",
+      "seconds": 1.2602333739999985,
+      "games": 112
+    },
+    {
+      "repetition": 2,
+      "version": "fixed",
+      "seconds": 1.3551107790000003,
+      "games": 112
+    },
+    {
+      "repetition": 3,
+      "version": "fixed",
+      "seconds": 1.3664137210000007,
+      "games": 112
+    },
+    {
+      "repetition": 3,
+      "version": "old",
+      "seconds": 1.346708323999998,
+      "games": 112
+    }
+  ],
+  "summary": {
+    "old": {
+      "median_seconds": 1.3156853265000006,
+      "games_per_second": 85.12673793964362
+    },
+    "fixed": {
+      "median_seconds": 1.3524926935000003,
+      "games_per_second": 82.81005918794634
+    }
+  },
+  "note": "KEEP workloads, 16 threads; not training or strength evaluation"
+}
