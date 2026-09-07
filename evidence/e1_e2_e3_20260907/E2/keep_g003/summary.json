@@ -1,0 +1,9 @@
+{
+  "games": 200,
+  "wins": 91,
+  "win_rate": 0.455,
+  "mean_margin": 188.61,
+  "opponents": [
+    "g003"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "rounds": 300,
+  "held_out": "yhay81_three_day",
+  "final_heldout": {
+    "games": 200,
+    "wins": 82,
+    "win_rate": 0.41,
+    "mean_margin": 1459.565,
+    "opponents": [
+      "yhay81_three_day"
+    ]
+  },
+  "final_full_panel": {
+    "games": 1400,
+    "wins": 800,
+    "win_rate": 0.5714285714285714,
+    "mean_margin": 7066.936428571428,
+    "opponents": [
+      "g001",
+      "g003",
+      "boatlee_v29",
+      "kaito_v58",
+      "lynn_v5",
+      "yhay81_six_day",
+      "yhay81_three_day"
+    ]
+  },
+  "seconds": 1550.6884421500017
+}

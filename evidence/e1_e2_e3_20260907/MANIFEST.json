@@ -1,0 +1,464 @@
+{
+ "date": "2026-09-07",
+ "environment": {
+  "distro": "Ubuntu 24.04.4 LTS",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "cores": 16,
+  "gxx": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "python": "3.12.3",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "numpy": "2.1.3"
+ },
+ "files": {
+  "E123_STATS.json": {
+   "bytes": 11094,
+   "sha256": "65bdbe6a75af0d09e5a83e4f39a2c56481ef2c9621376ff0dcb5ad53958b6fd6"
+  },
+  "REPORT_ZH.md": {
+   "bytes": 9919,
+   "sha256": "ffd88c7cb88c3b1ef43fb9e497690174cf3940e0c8938e2b4c8490b1b235d5b3"
+  },
+  "queue_e2_e3.log": {
+   "bytes": 223269,
+   "sha256": "e68718f4309c008e995b8827321f7a4cd660e8e588c6d303330d0979b2f639a4"
+  },
+  "E1/SUMMARY.json": {
+   "bytes": 14727,
+   "sha256": "9111b86dde31389625337ad9fbecaed4993c817f58619f563685b05a165cadf3"
+  },
+  "E1/train.log": {
+   "bytes": 152094,
+   "sha256": "e982a7a0fd5a3fb93f272d4983ff40f1e74d62c71029aee36ae5c08dacf42ff0"
+  },
+  "E1/aux_e0/COMPLETE.json": {
+   "bytes": 2118,
+   "sha256": "15da9925b91c99ed1bf70d4cc1341969ea583c4e4d0d0ea04ab3550de4b006ff"
+  },
+  "E1/aux_e0/PROGRESS.json": {
+   "bytes": 118183,
+   "sha256": "4f8da5a842082db0fe8ad36f33ba8a2726387deabd8cfb2ee0af212d2fc88ef9"
+  },
+  "E1/aux_e0/selection.json": {
+   "bytes": 34188,
+   "sha256": "5df424fe1ca44687e6ff8ecd3b6e5d62c7fa56f1d4fa1cf05aedc6bc1ecf964f"
+  },
+  "E1/aux_e0/final_test/games.json": {
+   "bytes": 727966,
+   "sha256": "234f243dd8e72ae5dfc6cf06bf68310a9fc25cc0126ba26a007484b0d12bc9d5",
+   "stored_as": "E1/aux_e0/final_test/games.json.gz",
+   "gz_bytes": 78881,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e0/final_test/summary.json": {
+   "bytes": 1803,
+   "sha256": "c4bf1e04bae8f0725ea6baf66e7f51e57615f922b4eb9f1ea27f9f2dfe99456c"
+  },
+  "E1/aux_e1/COMPLETE.json": {
+   "bytes": 2117,
+   "sha256": "0fe6cca4d7ce7dd6ade36a86b544825ede2dbb76e3e6fb36eb84e473ed8349e4"
+  },
+  "E1/aux_e1/PROGRESS.json": {
+   "bytes": 118349,
+   "sha256": "6691fccb81ddcc1b586ae015dd255bd8df2f9537a6edd90ef9c181955068f398"
+  },
+  "E1/aux_e1/selection.json": {
+   "bytes": 34218,
+   "sha256": "e5ac54bc23377697e803eb623e093ace1cfabd3c536359c40658b528106d6d37"
+  },
+  "E1/aux_e1/final_test/games.json": {
+   "bytes": 728232,
+   "sha256": "6f8d73b2d4b88472d54416aa280ea1d1a740fc6dbd75ea89e0662fd1dbeac8a4",
+   "stored_as": "E1/aux_e1/final_test/games.json.gz",
+   "gz_bytes": 78815,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e1/final_test/summary.json": {
+   "bytes": 1802,
+   "sha256": "d3f296175344b802ace5f12614d5fbf0e69ce6c48c2b3bc92d1289a742b84f24"
+  },
+  "E1/aux_e2/COMPLETE.json": {
+   "bytes": 2114,
+   "sha256": "e02034fd3fca3cb4696c48ce8e8826b3c638b87063fbbad0664cee96c0a719ee"
+  },
+  "E1/aux_e2/PROGRESS.json": {
+   "bytes": 118655,
+   "sha256": "062a2e5a03157be119cb7a49e181d6900ca390c1853356aaa43da8b410cd6f3e"
+  },
+  "E1/aux_e2/selection.json": {
+   "bytes": 34217,
+   "sha256": "6b9bff6977fe0a4ee87bd01bee572f33b72cb06b103bc8402eceddcb7bb70040"
+  },
+  "E1/aux_e2/final_test/games.json": {
+   "bytes": 728290,
+   "sha256": "1f857beb965c4f9755bda841540fac4b6726e0920ea99145c785c2a932b83225",
+   "stored_as": "E1/aux_e2/final_test/games.json.gz",
+   "gz_bytes": 79028,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e2/final_test/summary.json": {
+   "bytes": 1803,
+   "sha256": "9698dd99d5ca6b567949b28a04a99e53bd55cf4021622f2e8e54d694823a90a7"
+  },
+  "E1/aux_e3/COMPLETE.json": {
+   "bytes": 2100,
+   "sha256": "c1a27756b2eb9dc250a1a030d90ece5d8fd27cd833ed998cdd07568b54b0566a"
+  },
+  "E1/aux_e3/PROGRESS.json": {
+   "bytes": 118656,
+   "sha256": "222765fe5471e4455172104c312ee1d0cca6e6b44125f54e14faeb6d7c32c88e"
+  },
+  "E1/aux_e3/selection.json": {
+   "bytes": 34187,
+   "sha256": "fc569ceb2dc5e9c496ec6c723b5135bef3dcb162ae76f8411e9520cfff76dd25"
+  },
+  "E1/aux_e3/final_test/games.json": {
+   "bytes": 727727,
+   "sha256": "cc8e48ab41c474e4c16e489b665ac21b60e70219795de8486a7f74ac88d3574e",
+   "stored_as": "E1/aux_e3/final_test/games.json.gz",
+   "gz_bytes": 78572,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e3/final_test/summary.json": {
+   "bytes": 1786,
+   "sha256": "1637a6751cf71fa1e07d9410711369ffd766b963e2ec5a68c24ed4ee69fd9e1a"
+  },
+  "E1/aux_e4/COMPLETE.json": {
+   "bytes": 2132,
+   "sha256": "833e158c0ef089ca9f1607251c988ad5bfac2011b499877d4842c749c0d36f2f"
+  },
+  "E1/aux_e4/PROGRESS.json": {
+   "bytes": 118730,
+   "sha256": "29b4b11c4ff48380d2ac8f43887163e7aa5236cfdf9838b742e854b000dbcbae"
+  },
+  "E1/aux_e4/selection.json": {
+   "bytes": 34236,
+   "sha256": "045476d041eb4a202deb61872b6afcb6d402812342d249751b5d0b4fdb846356"
+  },
+  "E1/aux_e4/final_test/games.json": {
+   "bytes": 727840,
+   "sha256": "48f1d000a5c799560fc0c7f84948603955130a856def7e08defc4f3ded58f646",
+   "stored_as": "E1/aux_e4/final_test/games.json.gz",
+   "gz_bytes": 78767,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e4/final_test/summary.json": {
+   "bytes": 1817,
+   "sha256": "c4a769009b64cabcddd32cd4e7e40eb792183156a38c44fd54c41ae438a55ed4"
+  },
+  "E1/aux_e5/COMPLETE.json": {
+   "bytes": 2093,
+   "sha256": "ffc0d70f678e05275b70207fd9386b12764166f7ba5b54b6cfa6e6600909fe1b"
+  },
+  "E1/aux_e5/PROGRESS.json": {
+   "bytes": 118599,
+   "sha256": "d8d68f6f1aa6657ca10ee9b2268df3f709fe4a27c86c13dcbda8c53727a34404"
+  },
+  "E1/aux_e5/selection.json": {
+   "bytes": 34275,
+   "sha256": "f1ffe5d7bd1da1ae940f8eab0175a1c1a3d0eb7433813ff50cfcafe63f47a63a"
+  },
+  "E1/aux_e5/final_test/games.json": {
+   "bytes": 728340,
+   "sha256": "59c97e9bdecc74daace1cbc15223730eb282d4249c90d24460ad3d45d7b0f9f5",
+   "stored_as": "E1/aux_e5/final_test/games.json.gz",
+   "gz_bytes": 78869,
+   "transform": "gzip_lossless"
+  },
+  "E1/aux_e5/final_test/summary.json": {
+   "bytes": 1778,
+   "sha256": "825d8786f461990543d4526aa9d18263340b78c6991f287bb35c44e73a8d96b6"
+  },
+  "E1/keep_on_e1_panel/games.json": {
+   "bytes": 729391,
+   "sha256": "ec335cc2e1cde144f1384f830d57d73a158e7e125b30ab856bfb6da441de3169",
+   "stored_as": "E1/keep_on_e1_panel/games.json.gz",
+   "gz_bytes": 79249,
+   "transform": "gzip_lossless"
+  },
+  "E1/keep_on_e1_panel/summary.json": {
+   "bytes": 1811,
+   "sha256": "27b43a8596d5c7a3749cd48ea8d697774b57591d4730d9b033aee053fb013cc4"
+  },
+  "E2/e2_g003_r0/COMPLETE.json": {
+   "bytes": 540,
+   "sha256": "d6e7121a1456f348b354a6b08809b2def2024c20196e5304285390d69b4eeaaa"
+  },
+  "E2/e2_g003_r0/PROGRESS.json": {
+   "bytes": 56253,
+   "sha256": "9fab0df0be9b7a99e0b4371f471dc078c45877739ef27c4c87061587a047f12c"
+  },
+  "E2/e2_g003_r0/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "45c3aa2dd0b4268a67eb9095beffc572f5c1aec3621b2c716b925871143046e5"
+  },
+  "E2/e2_g003_r0/final_full_panel/games.json": {
+   "bytes": 713384,
+   "sha256": "d29502119d264dff623a85c0182177b6ba529529b05fad7fe21f22e90b87d519",
+   "stored_as": "E2/e2_g003_r0/final_full_panel/games.json.gz",
+   "gz_bytes": 78107,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_g003_r0/final_full_panel/summary.json": {
+   "bytes": 246,
+   "sha256": "b8d6e4986f33c97b25c977dfe1cf1bea6598861d0f044cbb0cb2906c419741f8"
+  },
+  "E2/e2_g003_r0/final_heldout/games.json": {
+   "bytes": 101986,
+   "sha256": "4bb2da1bfed4446d38e32259d06b2f3f799b52832fc4ddd8a34c0c9b18c179eb"
+  },
+  "E2/e2_g003_r0/final_heldout/summary.json": {
+   "bytes": 111,
+   "sha256": "805b144d7c3386048983ac750fede6449b827a80b5e7e4725693bc62469ec6a2"
+  },
+  "E2/e2_g003_r1/COMPLETE.json": {
+   "bytes": 539,
+   "sha256": "b58e29032fe8ae4d5601141bdd78d07365b1637fa2ab76a3852d7b2fabc04511"
+  },
+  "E2/e2_g003_r1/PROGRESS.json": {
+   "bytes": 55933,
+   "sha256": "d4f0f3dafe061e1195b14f34c404d3fa6669cf2ab7b5ff88cd5fecafd9d68fbb"
+  },
+  "E2/e2_g003_r1/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "45c3aa2dd0b4268a67eb9095beffc572f5c1aec3621b2c716b925871143046e5"
+  },
+  "E2/e2_g003_r1/final_full_panel/games.json": {
+   "bytes": 713998,
+   "sha256": "a3e67888f45561e714e6daf91e60923cfe1c4ca4b817b066364085f93a4ccbc1",
+   "stored_as": "E2/e2_g003_r1/final_full_panel/games.json.gz",
+   "gz_bytes": 78268,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_g003_r1/final_full_panel/summary.json": {
+   "bytes": 246,
+   "sha256": "fa44f0f7dacc47029eaf1474da318d9bf29a2886b4bc37ec855dfde6874ed388"
+  },
+  "E2/e2_g003_r1/final_heldout/games.json": {
+   "bytes": 102030,
+   "sha256": "b00bc42e7b51de6ae9a7f9a4f6ea7aa9d19f8eb467cab866c4e68c024ffae2a9"
+  },
+  "E2/e2_g003_r1/final_heldout/summary.json": {
+   "bytes": 110,
+   "sha256": "eef4cc7892943ff6fd0e6c6b141cebbb8bd13e0dec188e83ad910efd50297acf"
+  },
+  "E2/e2_kaito_r0/COMPLETE.json": {
+   "bytes": 537,
+   "sha256": "777432006a07f9a18c4bcd39c7e9a0c91faf42ff448c35d4abbfe99222c4e5a7"
+  },
+  "E2/e2_kaito_r0/PROGRESS.json": {
+   "bytes": 56092,
+   "sha256": "0d31e463339ccd9314985b262ad8c22e3ec3cdbc101159dea6f83ca443209214"
+  },
+  "E2/e2_kaito_r0/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "a6c0658e30ae7678b7dbdecdaac3f01cbf27450432927270c3423e46594b2de3"
+  },
+  "E2/e2_kaito_r0/final_full_panel/games.json": {
+   "bytes": 713842,
+   "sha256": "789b1bd612479cb045a8cf000b96a4c9464e3fc0d4ba9fc6dc1a0fefd4f1492e",
+   "stored_as": "E2/e2_kaito_r0/final_full_panel/games.json.gz",
+   "gz_bytes": 78002,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_kaito_r0/final_full_panel/summary.json": {
+   "bytes": 233,
+   "sha256": "cab2a9aceed1b160c01d6d2c86dab66d9b70a4b458b2a8ac2bb3b6081924c802"
+  },
+  "E2/e2_kaito_r0/final_heldout/games.json": {
+   "bytes": 101824,
+   "sha256": "ab5e83d90b7009460f4015cdef7f1b5b112a2f7e710dd060cab0c2aaba4e59d7"
+  },
+  "E2/e2_kaito_r0/final_heldout/summary.json": {
+   "bytes": 116,
+   "sha256": "85d4623fedd854677cd401dc704746cf0c836dc003ab88a357597ac596d4f6b4"
+  },
+  "E2/e2_kaito_r1/COMPLETE.json": {
+   "bytes": 553,
+   "sha256": "81e54e339151b942392c62c644f126fb63e6b89759f5f3294653f4744fe72b64"
+  },
+  "E2/e2_kaito_r1/PROGRESS.json": {
+   "bytes": 56113,
+   "sha256": "89e6f1b5fddb10f838f4d09614dff64948d7fe69586bfda6a1896072c6704ad7"
+  },
+  "E2/e2_kaito_r1/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "a6c0658e30ae7678b7dbdecdaac3f01cbf27450432927270c3423e46594b2de3"
+  },
+  "E2/e2_kaito_r1/final_full_panel/games.json": {
+   "bytes": 713692,
+   "sha256": "ac62a43498d03e7235a72067410c7adc51ccdb0ec1471a2cf8958a0e3f9e7833",
+   "stored_as": "E2/e2_kaito_r1/final_full_panel/games.json.gz",
+   "gz_bytes": 78411,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_kaito_r1/final_full_panel/summary.json": {
+   "bytes": 246,
+   "sha256": "9ca481efe982dee7cf75061d34746d490b9b1b5fe088119d98d03ce15d224b70"
+  },
+  "E2/e2_kaito_r1/final_heldout/games.json": {
+   "bytes": 101732,
+   "sha256": "89105d0af98fd1e5c17ae9dc643b26c055f42fc4a268ebf15b7b9c590ba88e2a"
+  },
+  "E2/e2_kaito_r1/final_heldout/summary.json": {
+   "bytes": 119,
+   "sha256": "2ce1997316080f8b5cd0a139362f8874259e7e260b329c1618050fe248f5f8d7"
+  },
+  "E2/e2_three_day_r0/COMPLETE.json": {
+   "bytes": 555,
+   "sha256": "8b3a291c6aa55df930e8dc02ef69a38c0a00b33d907bed0a52a0a9ae9a1daa66"
+  },
+  "E2/e2_three_day_r0/PROGRESS.json": {
+   "bytes": 56031,
+   "sha256": "9b2096d0b1d5ee5790bdfc3743da5c9384817c7cc1b6f5130dfe2c338e846cc3"
+  },
+  "E2/e2_three_day_r0/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "1aaaef5fde8dbb9238cd83945eb45127a4a40b36d297bbb848145c12d8eba336"
+  },
+  "E2/e2_three_day_r0/final_full_panel/games.json": {
+   "bytes": 713753,
+   "sha256": "8918c683a351c881e14ffeef25b60c7c127fed915bbb2ac244e58f27bfeb24cb",
+   "stored_as": "E2/e2_three_day_r0/final_full_panel/games.json.gz",
+   "gz_bytes": 78295,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_three_day_r0/final_full_panel/summary.json": {
+   "bytes": 237,
+   "sha256": "fe9782e6bb16666828796c018d4be4077bdd95a277e2b70b02a3d03b255a782e"
+  },
+  "E2/e2_three_day_r0/final_heldout/games.json": {
+   "bytes": 101968,
+   "sha256": "cd1e18b335c586918e0075dc6f4e9e67299bb46e5eec1b444f05db71727cdac5"
+  },
+  "E2/e2_three_day_r0/final_heldout/summary.json": {
+   "bytes": 123,
+   "sha256": "02e1eda5beb6ef43926434baa79961a169f49f0193a1500b6182e996e8917bc5"
+  },
+  "E2/e2_three_day_r1/COMPLETE.json": {
+   "bytes": 565,
+   "sha256": "c480748b5eda6194efdb4dbf89630bf470fc246877ff5f134b632dac4da55a1b"
+  },
+  "E2/e2_three_day_r1/PROGRESS.json": {
+   "bytes": 56046,
+   "sha256": "808a7792a6217a9bbef691b9561a5232bba64f437d4e2c1cb11a27ece3135eae"
+  },
+  "E2/e2_three_day_r1/PROTOCOL.json": {
+   "bytes": 177,
+   "sha256": "1aaaef5fde8dbb9238cd83945eb45127a4a40b36d297bbb848145c12d8eba336"
+  },
+  "E2/e2_three_day_r1/final_full_panel/games.json": {
+   "bytes": 713987,
+   "sha256": "690ec4b1e3204e46268e0eefd5bb5e696c448c54929a6b3150dd97b8ec61a9ee",
+   "stored_as": "E2/e2_three_day_r1/final_full_panel/games.json.gz",
+   "gz_bytes": 78076,
+   "transform": "gzip_lossless"
+  },
+  "E2/e2_three_day_r1/final_full_panel/summary.json": {
+   "bytes": 246,
+   "sha256": "c42d634678883cdbacded1703b0f10f56ef9ee402f00280d4c73fe146d73e34e"
+  },
+  "E2/e2_three_day_r1/final_heldout/games.json": {
+   "bytes": 102044,
+   "sha256": "569ac6bf82ce4318900f069915267ab3e3b156fb3fd50b5dd946b97643a6d142"
+  },
+  "E2/e2_three_day_r1/final_heldout/summary.json": {
+   "bytes": 124,
+   "sha256": "ee3d89642d751dc0f948c312d1042a04fd885f488b6e0db4c22ae9cedeb4890c"
+  },
+  "E2/keep_g003/games.json": {
+   "bytes": 102296,
+   "sha256": "5dad2c50625623c708e28deaa367e5c1d500b811c129859dbc1141f18c2875a4"
+  },
+  "E2/keep_g003/summary.json": {
+   "bytes": 111,
+   "sha256": "acb8ca10964eb3dc116da9c6cdb6468c861c3190aa1098304a0c13f7606ec5da"
+  },
+  "E2/keep_kaito/games.json": {
+   "bytes": 101735,
+   "sha256": "ee55f10ce8967e96e40ab0fd080b0818c98d255628d32adddd5aa7c2d0a20c4c"
+  },
+  "E2/keep_kaito/summary.json": {
+   "bytes": 118,
+   "sha256": "2e0493c1b1f93eaa07f024528fbfd3e43d52e9506f9eab9f846f8edbaa953c49"
+  },
+  "E2/keep_three_day/games.json": {
+   "bytes": 102174,
+   "sha256": "da43beedbabfc44c889f771818aa8e2a640c809a2d3b694ae97ebb5b47bc53a6"
+  },
+  "E2/keep_three_day/summary.json": {
+   "bytes": 123,
+   "sha256": "08e4cfb282764727c75b45c5d98cbecb26e0516fb633e95fc4381c4e70831098"
+  },
+  "E3/SUMMARY.json": {
+   "bytes": 409,
+   "sha256": "6c5158cc98ab76a42a0989f7d60d0730c0d09ee78746fc7b50b16ad1ed646398"
+  },
+  "E3/aux_paired_e0/COMPLETE.json": {
+   "bytes": 237,
+   "sha256": "d573d8ac8dc9ce81c098be3249ac305c742af6b08f2d5871f49bcc939b892103"
+  },
+  "E3/aux_paired_e0/PROGRESS.json": {
+   "bytes": 85146,
+   "sha256": "228457bcce7b62817378818d9a5090b505347451025c5a1f2c6b7551c44a390e"
+  },
+  "E3/aux_paired_e0/final_test/games.json": {
+   "bytes": 713698,
+   "sha256": "c688b93f5f79432873c59751d1a743b4c54dd2923561975716952f986a1f5b00",
+   "stored_as": "E3/aux_paired_e0/final_test/games.json.gz",
+   "gz_bytes": 79294,
+   "transform": "gzip_lossless"
+  },
+  "E3/aux_paired_e0/final_test/summary.json": {
+   "bytes": 95,
+   "sha256": "7fd6963282f83932e0d8c1384eeafa74e399a6be875422ada1e1c3766d87accc"
+  },
+  "E3/aux_paired_e1/COMPLETE.json": {
+   "bytes": 247,
+   "sha256": "fe536f467596a080e4b31cdbacddd49cdfe831ac6fd2fa560241e81706200ca4"
+  },
+  "E3/aux_paired_e1/PROGRESS.json": {
+   "bytes": 85226,
+   "sha256": "c9c7a561c580694bd451048b3b6a87fef250eed624c2e9ed3ab588689045c2cc"
+  },
+  "E3/aux_paired_e1/final_test/games.json": {
+   "bytes": 713776,
+   "sha256": "5229f8c89e752016c487233f3659a129248cc29b617d28acf10cc4d45068aa3c",
+   "stored_as": "E3/aux_paired_e1/final_test/games.json.gz",
+   "gz_bytes": 80455,
+   "transform": "gzip_lossless"
+  },
+  "E3/aux_paired_e1/final_test/summary.json": {
+   "bytes": 105,
+   "sha256": "69575b5266551a17636558cad523485c69cd06a8f12da8b65e4685547dacb1d7"
+  },
+  "E3/aux_paired_e2/PROGRESS.json": {
+   "bytes": 37279,
+   "sha256": "3d23c1469bfd2c3160b9798021cd15098861fc4be30863c6ec2d8a2ab727fb44"
+  },
+  "scripts/collect_e123.sh": {
+   "bytes": 4260,
+   "sha256": "c19eade18765255c9d9b0966285b466955a622085491d7de7daeb6911198e14d"
+  },
+  "scripts/e123_stats.py": {
+   "bytes": 5745,
+   "sha256": "f9f04600497a7294a41277b1cdab9d423977f05e9181e6ddeca84607c7a0fcaf"
+  },
+  "scripts/e1_train.py": {
+   "bytes": 7543,
+   "sha256": "8fa761a8fd0fc7149aec70c0379647b088e4b2797f16d20b0ba8a4af8e13279d"
+  },
+  "scripts/e2_train.py": {
+   "bytes": 8560,
+   "sha256": "6296102349e91a1559ba0b6c5bea3078250c49ade72049d3e052d41c22ba5d15"
+  },
+  "scripts/e3_train.py": {
+   "bytes": 9096,
+   "sha256": "990e636e8c35ddae9539792938cf5b95bf87b89951ace90530c16a2fe0c4e8c5"
+  },
+  "scripts/queue_e2_e3.sh": {
+   "bytes": 1240,
+   "sha256": "3f004f770a4e5ae9944fa4b6ec993bad27012e7d1a89224415d00cf9706c0eda"
+  }
+ }
+}

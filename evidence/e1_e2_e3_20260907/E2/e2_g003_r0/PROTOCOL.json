@@ -1,0 +1,12 @@
+{
+  "held_out": "g003",
+  "train_opponents": [
+    "g001",
+    "boatlee_v29",
+    "kaito_v58",
+    "lynn_v5",
+    "yhay81_six_day",
+    "yhay81_three_day"
+  ],
+  "rounds": 300
+}
