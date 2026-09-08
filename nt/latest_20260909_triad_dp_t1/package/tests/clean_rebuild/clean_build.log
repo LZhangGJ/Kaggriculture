@@ -1,0 +1,15 @@
+agent.so 24.844232815000396
+Compiled vendor/simulator.cpp
+Compiled fieldbook_adapter.cpp
+Compiled boatlee_v29.cpp
+Compiled kaito_v58.cpp
+Compiled lynn_v5.cpp
+Compiled three_day_adapter.cpp
+Compiled ecobot_v7_core.cpp
+Compiled ecobot_v7.cpp
+Compiled module.cpp
+{"status": "BUILT_NOT_YET_VALIDATED", "seconds": 70.73171195900068}
+panel seconds 30.505888237999898
+baseline_j7.so 27.769524346999788
+baseline_auto.so 31.67700970900023
+Build complete; no opponent strategy assets are needed by policy/agent.py.

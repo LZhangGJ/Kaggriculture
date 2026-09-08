@@ -1,0 +1,35 @@
+{
+  "mature_crop_prediction_probe": {
+    "seed": 61010,
+    "seat": 0,
+    "step": 408,
+    "day": 17,
+    "tile": [
+      5,
+      3
+    ],
+    "actual_tile": {
+      "kind": "PLANT",
+      "crop": "STRAWBERRY",
+      "planted_day": 7,
+      "watered_today": false,
+      "consecutive_unwatered": 0,
+      "yield_units": 2,
+      "max_lifespan_step": -1,
+      "fertilized_until_day": 18
+    },
+    "changed_yield": 0,
+    "total_crop_forecast_actual": 552.0,
+    "total_crop_forecast_changed": 552.0,
+    "arrays_equal": true
+  },
+  "wool_financing_example": {
+    "initial_inventory": 10000,
+    "quantity": 100,
+    "initial_quote": 200,
+    "nominal_v2_cash_credit": 20000,
+    "official_pass_opponent_cash_credit": 7969,
+    "overestimate": 12031,
+    "note": "Diagnostic of V2 cash projection formula, not an assertion this order occurred in its games"
+  }
+}

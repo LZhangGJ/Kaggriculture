@@ -1,0 +1,12 @@
+{
+  "seconds": 8.088227667999945,
+  "rows": 71,
+  "features": 356,
+  "groups": 18,
+  "nontrivial_groups": 18,
+  "keep_checks": "all exact",
+  "finite": true,
+  "oracle_better_groups": 12,
+  "oracle_win_groups": 18,
+  "keep_win_groups": 18
+}

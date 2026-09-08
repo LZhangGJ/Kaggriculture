@@ -1,0 +1,278 @@
+{
+  "protocol": {
+    "purpose": "Review only; 3 report anchors and 4 newly chosen paired seeds per version",
+    "jobs": [
+      [
+        "v1",
+        60000,
+        0,
+        "report_anchor",
+        195030
+      ],
+      [
+        "v1",
+        60047,
+        1,
+        "report_anchor",
+        144272
+      ],
+      [
+        "v2",
+        43091,
+        1,
+        "report_anchor",
+        181732
+      ],
+      [
+        "v1",
+        61010,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61010,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61011,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61011,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61012,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61012,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61013,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v1",
+        61013,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61010,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61010,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61011,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61011,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61012,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61012,
+        1,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61013,
+        0,
+        "paired_fresh",
+        null
+      ],
+      [
+        "v2",
+        61013,
+        1,
+        "paired_fresh",
+        null
+      ]
+    ],
+    "workers": 4,
+    "sources": {
+      "v1": "7dc2b0fc4439f38343d3912e98182f6b504ab6badce210de2923ab34c66be2a6",
+      "v2": "00f9c50a5505780bf7ba9edb5d19bf58b147fcae96c1cee990ed905bab5f42f2"
+    },
+    "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "interpreter": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+    "no_source_modifications": true
+  },
+  "wall_seconds": 12.753041899995878,
+  "reports_reproduced": [
+    {
+      "version": "v1",
+      "seed": 60000,
+      "seat": 0,
+      "cash": 195030.0,
+      "expected_cash": 195030,
+      "exact_report_match": true
+    },
+    {
+      "version": "v1",
+      "seed": 60047,
+      "seat": 1,
+      "cash": 144272.0,
+      "expected_cash": 144272,
+      "exact_report_match": true
+    },
+    {
+      "version": "v2",
+      "seed": 43091,
+      "seat": 1,
+      "cash": 181732.0,
+      "expected_cash": 181732,
+      "exact_report_match": true
+    }
+  ],
+  "errors": [],
+  "versions": {
+    "v1": {
+      "games": 8,
+      "mean_cash": 195256.125,
+      "min_cash": 145176.0,
+      "max_cash": 242340.0,
+      "max_action_ms": 130.71850000414997,
+      "mean_game_action_seconds": 1.8149823373751133,
+      "rows": [
+        {
+          "seed": 61010,
+          "seat": 0,
+          "cash": 156730.0
+        },
+        {
+          "seed": 61010,
+          "seat": 1,
+          "cash": 161052.0
+        },
+        {
+          "seed": 61011,
+          "seat": 0,
+          "cash": 219708.0
+        },
+        {
+          "seed": 61011,
+          "seat": 1,
+          "cash": 225056.0
+        },
+        {
+          "seed": 61012,
+          "seat": 0,
+          "cash": 196947.0
+        },
+        {
+          "seed": 61012,
+          "seat": 1,
+          "cash": 215040.0
+        },
+        {
+          "seed": 61013,
+          "seat": 0,
+          "cash": 242340.0
+        },
+        {
+          "seed": 61013,
+          "seat": 1,
+          "cash": 145176.0
+        }
+      ]
+    },
+    "v2": {
+      "games": 8,
+      "mean_cash": 190486.75,
+      "min_cash": 124078.0,
+      "max_cash": 233089.0,
+      "max_action_ms": 204.24559997627512,
+      "mean_game_action_seconds": 2.0872417373830103,
+      "rows": [
+        {
+          "seed": 61010,
+          "seat": 0,
+          "cash": 191343.0
+        },
+        {
+          "seed": 61010,
+          "seat": 1,
+          "cash": 200167.0
+        },
+        {
+          "seed": 61011,
+          "seat": 0,
+          "cash": 124078.0
+        },
+        {
+          "seed": 61011,
+          "seat": 1,
+          "cash": 129538.0
+        },
+        {
+          "seed": 61012,
+          "seat": 0,
+          "cash": 210616.0
+        },
+        {
+          "seed": 61012,
+          "seat": 1,
+          "cash": 201974.0
+        },
+        {
+          "seed": 61013,
+          "seat": 0,
+          "cash": 233089.0
+        },
+        {
+          "seed": 61013,
+          "seat": 1,
+          "cash": 233089.0
+        }
+      ]
+    }
+  }
+}

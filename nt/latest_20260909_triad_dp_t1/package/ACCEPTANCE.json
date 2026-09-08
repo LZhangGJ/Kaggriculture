@@ -1,0 +1,185 @@
+{
+  "overall": {
+    "games": 1400,
+    "wins": 1132,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 0.8085714285714286,
+    "cash": 105113.225,
+    "margin": 11663.996428571429,
+    "max_ms": 190.228082,
+    "mean_policy_sec": 0.9310119746092856,
+    "overflow": 9386
+  },
+  "baseline": {
+    "games": 1400,
+    "wins": 1090,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 0.7785714285714286,
+    "cash": 108925.95642857143,
+    "margin": 16314.022857142858,
+    "max_ms": 90.08757200000001,
+    "mean_policy_sec": 0.34796460810857144,
+    "overflow": 26490
+  },
+  "seed_cluster_bootstrap95": [
+    0.7714285714285712,
+    0.8442857142857143
+  ],
+  "paired_difference95": [
+    -0.020000000000000007,
+    0.07999999999999997
+  ],
+  "overall_target_met": false,
+  "each_target_met": false,
+  "per_opponent": [
+    {
+      "opponent": "G001",
+      "games": 200,
+      "wins": 183,
+      "rate": 0.915,
+      "ci": [
+        0.86,
+        0.965
+      ],
+      "baseline_rate": 0.78,
+      "mean_cash": 108596.21,
+      "mean_margin": 18534.41
+    },
+    {
+      "opponent": "G003",
+      "games": 200,
+      "wins": 110,
+      "rate": 0.55,
+      "ci": [
+        0.46,
+        0.64
+      ],
+      "baseline_rate": 1.0,
+      "mean_cash": 101954.865,
+      "mean_margin": 1575.14
+    },
+    {
+      "opponent": "Boatlee V29",
+      "games": 200,
+      "wins": 163,
+      "rate": 0.815,
+      "ci": [
+        0.74,
+        0.885
+      ],
+      "baseline_rate": 0.595,
+      "mean_cash": 104968.785,
+      "mean_margin": 13428.795
+    },
+    {
+      "opponent": "Kaito V58",
+      "games": 200,
+      "wins": 167,
+      "rate": 0.835,
+      "ci": [
+        0.76,
+        0.905
+      ],
+      "baseline_rate": 1.0,
+      "mean_cash": 106162.235,
+      "mean_margin": 10898.29
+    },
+    {
+      "opponent": "Lynn V5",
+      "games": 200,
+      "wins": 161,
+      "rate": 0.805,
+      "ci": [
+        0.73,
+        0.875
+      ],
+      "baseline_rate": 0.885,
+      "mean_cash": 104815.17,
+      "mean_margin": 11447.805
+    },
+    {
+      "opponent": "yhay81 Six-Day",
+      "games": 200,
+      "wins": 170,
+      "rate": 0.85,
+      "ci": [
+        0.78,
+        0.91
+      ],
+      "baseline_rate": 0.585,
+      "mean_cash": 104073.595,
+      "mean_margin": 12083.705
+    },
+    {
+      "opponent": "yhay81 Three-Day",
+      "games": 200,
+      "wins": 178,
+      "rate": 0.89,
+      "ci": [
+        0.825,
+        0.945
+      ],
+      "baseline_rate": 0.605,
+      "mean_cash": 105221.715,
+      "mean_margin": 13679.83
+    }
+  ],
+  "freeze": {
+    "name": "Triad-DP T1",
+    "binary_hash": "92fe00154f9b695a433cbc4d3480a44ecd96ba75c3b3541e7bf9cf1d56d31b27",
+    "source_hash": "11d231c5eb85aa144de78a8c621bfee9b9b05071d3502c00be6f4d8332eca6e2",
+    "config": {
+      "competition": 2,
+      "supply": 0.85,
+      "future_shop": 0.7,
+      "capital_power": 0.4,
+      "labor_hours": 10,
+      "work_price": 4,
+      "animal_work": 1.0,
+      "reserve": 120,
+      "max_animals": 20,
+      "max_hands": 14,
+      "max_land": 3,
+      "feed_cover": 1,
+      "rotation": 0,
+      "preview": 1,
+      "delivery": 2,
+      "intraday": 1,
+      "service": 1,
+      "replant": 0.7,
+      "land_rent": 2,
+      "discount": 0.015,
+      "tour_dp": 0,
+      "layout": 0,
+      "repeat": 0,
+      "animal_bias": 1,
+      "crop_bias": 1,
+      "portfolio_passes": 6,
+      "crop_fert": 1,
+      "harvest_threshold": 1,
+      "delay_sale": 0,
+      "opening_budget": 1,
+      "scenario": 1,
+      "keep_commitments": 1
+    },
+    "model_active": false,
+    "holdout_seed_start": 260909000,
+    "holdout_seed_count": 100,
+    "opponents": [
+      "g001",
+      "g003",
+      "boatlee_v29",
+      "kaito_v58",
+      "lynn_v5",
+      "yhay81_six_day",
+      "yhay81_three_day"
+    ],
+    "both_seats": true,
+    "target_overall": 0.9,
+    "target_each": 0.9,
+    "locked_before_first_holdout": true
+  },
+  "bootstrap": "10000 resamples of the 100 whole seed clusters, retaining 7 opponents and both seats; opponents treated as fixed benchmark"
+}

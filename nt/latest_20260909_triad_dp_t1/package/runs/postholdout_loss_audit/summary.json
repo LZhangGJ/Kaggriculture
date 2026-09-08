@@ -1,0 +1,30 @@
+{
+  "tag": "postholdout_loss_audit",
+  "seconds": 0.9934798649992445,
+  "overall": {
+    "games": 2,
+    "wins": 0,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 0,
+    "cash": 99737.0,
+    "margin": -19392.5,
+    "max_ms": 57.892615,
+    "mean_policy_sec": 0.8862561599999996,
+    "overflow": 45
+  },
+  "opponents": {
+    "g003": {
+      "games": 2,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 99737.0,
+      "margin": -19392.5,
+      "max_ms": 57.892615,
+      "mean_policy_sec": 0.8862561599999996,
+      "overflow": 45
+    }
+  }
+}

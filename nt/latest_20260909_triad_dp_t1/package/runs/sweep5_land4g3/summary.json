@@ -1,0 +1,102 @@
+{
+  "tag": "sweep5_land4g3",
+  "seconds": 3.1253421210001306,
+  "overall": {
+    "games": 56,
+    "wins": 40,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 0.7142857142857143,
+    "cash": 96543.16071428571,
+    "margin": 6746.714285714285,
+    "max_ms": 17.966097,
+    "mean_policy_sec": 0.2119950208392857,
+    "overflow": 1045
+  },
+  "opponents": {
+    "g001": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.75,
+      "cash": 98939.875,
+      "margin": 8546.25,
+      "max_ms": 17.966097,
+      "mean_policy_sec": 0.210707011,
+      "overflow": 50
+    },
+    "g003": {
+      "games": 8,
+      "wins": 3,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.375,
+      "cash": 102818.625,
+      "margin": 1204.625,
+      "max_ms": 9.021972,
+      "mean_policy_sec": 0.20522843762499995,
+      "overflow": 153
+    },
+    "boatlee_v29": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.75,
+      "cash": 97439.875,
+      "margin": 6803.875,
+      "max_ms": 9.596364,
+      "mean_policy_sec": 0.206483203625,
+      "overflow": 166
+    },
+    "kaito_v58": {
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.875,
+      "cash": 107334.625,
+      "margin": 12519.375,
+      "max_ms": 9.3665,
+      "mean_policy_sec": 0.23837702612499992,
+      "overflow": 286
+    },
+    "lynn_v5": {
+      "games": 8,
+      "wins": 4,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.5,
+      "cash": 88077.625,
+      "margin": 3557.0,
+      "max_ms": 7.932767,
+      "mean_policy_sec": 0.19499517487499995,
+      "overflow": 105
+    },
+    "yhay81_six_day": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 1,
+      "cash": 91856.75,
+      "margin": 11750.75,
+      "max_ms": 11.989977000000001,
+      "mean_policy_sec": 0.21373262012499997,
+      "overflow": 151
+    },
+    "yhay81_three_day": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.75,
+      "cash": 89334.75,
+      "margin": 2845.125,
+      "max_ms": 10.691337,
+      "mean_policy_sec": 0.21444167250000004,
+      "overflow": 134
+    }
+  }
+}

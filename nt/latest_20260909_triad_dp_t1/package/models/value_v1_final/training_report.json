@@ -1,0 +1,64 @@
+{
+  "data": "train16",
+  "rows": 7049,
+  "features": 356,
+  "train_seeds": [
+    260908132,
+    260908133,
+    260908134,
+    260908135,
+    260908136,
+    260908137,
+    260908138,
+    260908139,
+    260908140,
+    260908141,
+    260908142,
+    260908143
+  ],
+  "validation_seeds": [
+    260908144,
+    260908145,
+    260908146,
+    260908147
+  ],
+  "best_iteration": 1,
+  "validation_mse": 0.052822856649135365,
+  "train": {
+    "groups": 1557,
+    "keep_win": 0.7906229929351317,
+    "selected_win": 0.7906229929351317,
+    "oracle_win": 0.8580603725112396,
+    "mean_utility_gain": 0.0,
+    "oracle_utility_gain": 0.08914299547966675,
+    "mean_cash_margin_gain": 0.0,
+    "choice_changes": 0
+  },
+  "validation": {
+    "groups": 526,
+    "keep_win": 0.7604562737642585,
+    "selected_win": 0.7604562737642585,
+    "oracle_win": 0.8288973384030418,
+    "mean_utility_gain": 0.0,
+    "oracle_utility_gain": 0.07930690250613952,
+    "mean_cash_margin_gain": 0.0,
+    "choice_changes": 0
+  },
+  "params": {
+    "objective": "regression",
+    "learning_rate": 0.035,
+    "num_leaves": 15,
+    "min_child_samples": 35,
+    "n_estimators": 1,
+    "reg_lambda": 5.0,
+    "colsample_bytree": 0.9,
+    "subsample": 1.0,
+    "random_state": 260908,
+    "n_jobs": 4,
+    "verbosity": -1,
+    "force_col_wise": true
+  },
+  "online_policy_test_required": true,
+  "model_sha256": "833362fd2c5bf33279e6f051e2282aede195334666bd7f168bc681f8fd49e5c5",
+  "header_sha256": "dc998dfef8c442af45330fa4420ee5f9f5e512889f94217711174d38502a8b7b"
+}

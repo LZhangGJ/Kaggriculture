@@ -1,0 +1,12 @@
+{
+  "status": "PASS_J7_03_OFFICIAL_OBSERVATION_ENTRY",
+  "fixtures": 14,
+  "steps": 10066,
+  "entry_seconds": {
+    "mean": 0.000684125272104086,
+    "p99": 0.006849634999999344,
+    "max": 0.027520418000001712
+  },
+  "elapsed_seconds": 27.320809695999998,
+  "build_sha256": "92635b0dc3cab062e8d48ee9275e9918398d63d6c5aba5449efaac7b24c1ecaa"
+}

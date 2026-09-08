@@ -1,0 +1,4 @@
+{
+  "status": "NOT_A_TRAINED_MODEL_TEST",
+  "reason": "training serialization/foreground deadline failures; fallback header remained unavailable; this run is only a KEEP control"
+}

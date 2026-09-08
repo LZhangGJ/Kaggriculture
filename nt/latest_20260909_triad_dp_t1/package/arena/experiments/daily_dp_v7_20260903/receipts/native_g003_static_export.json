@@ -1,0 +1,19 @@
+{
+  "source_sha256": "ff32e2e47431dae2d98fa70a78f85425f8d5929d5910c5ff482e74750c3fa1ef",
+  "asset_sha256": "d1b5df7f5cf3ba76f78e64e7b3d4a2103873a962969241c60bc504e85f40b26a",
+  "families": 356,
+  "opening": "G003",
+  "checkpoints": [
+    144,
+    216
+  ],
+  "bytes": 3146461,
+  "identical_runtime_definitions": true,
+  "identical_embedded_executor_ast": true,
+  "identical_embedded_executor_bytes": false,
+  "embedded_executor_sha256": "0f884f76a73d2604eecaeb24ce8b680c83a4699211d7308e42a91c4499c9b190",
+  "definition_count": 18,
+  "source_executed": false,
+  "native_backend": "same searched-route executor; distinct complete G003 route library and trees",
+  "parity_status": "PENDING"
+}

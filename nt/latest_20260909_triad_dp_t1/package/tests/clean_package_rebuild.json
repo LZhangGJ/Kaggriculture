@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "clean_source_build": true,
+  "build_command": "python build_all.py --jobs 2",
+  "mechanism_tests": "PASS",
+  "reproduction": [
+    {
+      "arm": "triad",
+      "games": 14,
+      "compared_fields": [
+        "cash",
+        "opponent_cash",
+        "win",
+        "margin",
+        "steps",
+        "error",
+        "overflow",
+        "action_hash_fnv64"
+      ],
+      "differences": 0
+    },
+    {
+      "arm": "j7",
+      "games": 14,
+      "compared_fields": [
+        "cash",
+        "opponent_cash",
+        "win",
+        "margin",
+        "steps",
+        "error",
+        "overflow",
+        "action_hash_fnv64"
+      ],
+      "differences": 0
+    }
+  ],
+  "training_imports": {
+    "numpy": "2.3.5",
+    "lightgbm": "4.6.0",
+    "sklearn": "1.8.0"
+  },
+  "scope": "Fresh extraction and rebuild, no cached objects or extension modules; one recorded seed, all seven opponents, both seats. Evidence reproduction, not a new strength estimate."
+}

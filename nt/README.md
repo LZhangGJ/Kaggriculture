@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260909_triad_dp_t1/`](latest_20260909_triad_dp_t1/README_ZH.md)
+  — unchanged GPT Triad-DP T1 release: autonomous rule planning, daily public
+  scenario comparison, dynamic C++ execution, seven live opponents, build
+  tools, and complete supplied experiment evidence. The supplied 1,400-game
+  panel recounts to 80.86%; this handoff verifies hashes and recorded outcomes,
+  not a new local simulation or Kaggle submission. Includes Chinese usage guide.
 - [`latest_20260906_keep2_rl_1000/`](latest_20260906_keep2_rl_1000/README_ZH.md)
   — full economic-RL experiment history through four KEEP=2 F3 PPO runs at
   1,000 rounds each, seven hundred-round reports, and the 40,600-game independent

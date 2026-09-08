@@ -1,0 +1,1779 @@
+{
+  "status": "PASS",
+  "params": {
+    "opponent_supply_weight": 0.75,
+    "competitive_sell_weight": 0.5,
+    "sell_horizon_days": 1,
+    "opening_animals": [
+      "COW",
+      "COW",
+      "SHEEP",
+      "GOOSE",
+      "GOOSE"
+    ],
+    "opening_crops": [
+      4,
+      0,
+      0,
+      6,
+      0
+    ],
+    "economic_land": true,
+    "operating_reserve": 100.0,
+    "crop_harvest_age": [
+      4,
+      3,
+      8,
+      10,
+      10
+    ],
+    "finite_fertilizer": false,
+    "fix_finite_projection": true,
+    "efficient_water": true,
+    "efficient_care": true
+  },
+  "build": {
+    "seconds": 29.206239915000005,
+    "source_hashes": {
+      "native/vendor/simulator.cpp": "7823820ef7a563885a2dc5c7ff0499d6ed832f98bff09bf4790cf5e04c5d4928",
+      "native/module.cpp": "ab9a3d540d6ffe3d0076f99ddd839b0e1b632a0f820029e703db74fe43dae2a7",
+      "native/fieldbook_adapter.cpp": "9817a45d44c1b6aa086266797d36a0649e61134fe4e8555a675ae331d60e81ab",
+      "native/boatlee_v29.cpp": "65e33242bc227849c5e8c0b12c7333e899f6f150e576bd27e9044822d93f6bcb",
+      "native/kaito_v58.cpp": "ce97589cfcf7ded45cdbb052d435a8f06a2e95ef13a240bcc9ce614670dd6867",
+      "native/lynn_v5.cpp": "97e874c006187b53da39499e8d7040dbe12729a6c384260c968257ab5d2aabda",
+      "native/three_day_adapter.cpp": "ad219e3d6d6a0d378aceae0c86a0cf48ab2b5c20ace6292a25659e4eb647ea2b",
+      "native/policy.hpp": "71a22d95943e28b212e4347cde3d764fda9eb044dd4fb4266a95e4c7d3030e5c",
+      "native/cash_audit.hpp": "92765c73c162fd3514e14d90cc051ba914a44fc5abcd40cd54266e509dfb118e",
+      "native/production_audit.hpp": "1a23a0a4174aa718e47e738308fa82798866842acfc2d00ee7cc024156bd3ca9",
+      "native/admission_audit.hpp": "3eb45753eb05f9c5c52b7bc96ff34cc02297a671079196059e69e8fbf1cc8070",
+      "native/vendor/simulator.hpp": "8a486c1d1c7cfb8bc68d1a413dbd8e3147dddbc523458c830403814193e85128",
+      "native/vendor/native_teammate.hpp": "31c4f20627a435597562412834612e5925dfb92ff3badfabf12717422f8b1eaf",
+      "native/vendor/native_teammate.cpp": "a00b1c543eb591b87c1fbebd40e5312661e8be2c05bfc84235d149adb91df806",
+      "native/fieldbook_adapter.hpp": "1442d3d48b9facb9e44762573b11eaa761390eada2b8f9d1cf21c15651fea9a8",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy_plugin_abi.hpp": "67679edc55b1951deac859d1191a6eb2198868b3b7237beb2266db9788d80345",
+      "opponents/yhay81_six_day/output/sixday_r4_source/pyrandom.hpp": "3835fe39fbc74b05078022a839dea1c1aff7a9d6d21a1227d4d6cd61a3612d75",
+      "opponents/yhay81_six_day/output/sixday_r4_source/sim.hpp": "f483219c22dd9a05c00e28a200aa48d70d4a461915c09b3a0fb36c0330cc554c",
+      "opponents/yhay81_six_day/output/sixday_r4_source/six_day_budget_guard.hpp": "5cf24ed4099e5b19e9f195869881548f2145a40329fc30d11e682501c3688556",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy.cpp": "a3f04707615b7c04f3ab4a3c593081c98df2dd091be386aa80a3ffad7c00c1b4",
+      "native/boatlee_v29.hpp": "440a929ce84295cb7e1ba0f3756e877f6e5b05ae288c58e393eedf2b01a6ea7c",
+      "native/investment_audit.hpp": "e31f3fed39f3cbbe5c3c4a672cf57c36059022a51e87fa1fa5ea3699a4ea640d",
+      "native/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "native/investment_branch_audit.hpp": "d5a4f325969785dd922d1472420d64e8515d33608e28a7d314897eb420f97b44",
+      "native/resource_handoff_audit.hpp": "110caca92e70e3b0f0426c05ed0f2f3625a83ac67377a78763c3ecbeb9a0fbfa",
+      "native/recoordination_inspection.hpp": "7aa875866b1b46eee630cb83ecee409a8028e1d108b88cb7a72121fdd2dc73d7",
+      "native/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "native/intraday_admission.hpp": "2e97765d2ffad6a54d0c2cbd356473bd53e788019c747db368b3dfee48d6757c",
+      "native/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "native/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "native/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "native/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "native/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "native/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "native/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "native/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "native/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "native/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "native/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "native/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "native/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "native/kaito_v58.hpp": "95bce345ed2c99f05db858520daf5767e023ea79cb579a04eac199712ba62fa8",
+      "native/lynn_v5.hpp": "2cc3e70de8ac429b649e2810461dc45537d4602725c110327d7e671b0ea711df",
+      "native/three_day_adapter.hpp": "d8f8750cc52cfdd0ece290aa96a329b9286eade1a13731df911caf01ed34ad7b",
+      "opponents/yhay81_three_day/output/source/policy.cpp": "abdb6b13cb91504409de0cf53679c5443f309f1fe937f676e68707830744392b",
+      "opponents/yhay81_three_day/output/source/tape.inc": "30b724c3c905d0c03e4ef38d36f96fb7acbd6abef5371abbedee36ea3717e09f",
+      "opponents/yhay81_three_day/output/source/include/policy_plugin_abi.hpp": "4eb7647da3660688685a8ff032bd1ada6558605a27ae6b86fc338a91f8b45476",
+      "opponents/yhay81_three_day/output/source/include/runtime_types.hpp": "0010c15079e2114e36b5de8b281375db83f202e769e30b27cc437fc0e3ad11f1",
+      "opponents/yhay81_three_day/output/source/include/six_day_budget_guard.hpp": "2e55caa0d637a3cc246c194a64ba02d35817f787a01a08784a0a8fdd91734cd0",
+      "native/ecobot_v7_core.cpp": "366f8eebc1540632ba4a51aef7f43f15b90b658964382fa5e1580debacd99658",
+      "native/ecobot_v7.cpp": "abc0a27585c64d566918648ffe4f085301a2701099ad0daddb0a3ad6463346f9",
+      "native/ecobot_v7_core.hpp": "485b68c523da2692fc51b20103a0a90aad15b67a0e123519ffac9a9da083f2bd",
+      "native/ecobot_v7.hpp": "b03fa118380957b219ed255058b03d88c15bb9e4f36a8441f1df6901476b909a",
+      "opponents/ecobot_v7/output/main.py": "0dc02e03c94ef60c06b5093efc2e2fd0530aa6eea20df507a90b90d6651bd067"
+    },
+    "commands": [
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/vendor/simulator.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/module.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/fieldbook_adapter.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/boatlee_v29.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/kaito_v58.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/lynn_v5.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o"
+      ],
+      [
+        "g++",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/opponents/yhay81_three_day/output/source/include",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/three_day_adapter.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/ecobot_v7_core.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/ecobot_v7.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o"
+      ],
+      [
+        "g++",
+        "-shared",
+        "-fopenmp",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so"
+      ]
+    ],
+    "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so",
+    "binary_sha256": "b47dc58b60ffcc8261c53fc99fa0b7a637b9c44b5ab3deeda031e001fc80c2ca"
+  },
+  "independent_seed_count": 50,
+  "serial_games": 100,
+  "parallel_repeat_games": 1000,
+  "total_trajectory_hash_games": 6,
+  "threads": 16,
+  "same_seed_both_seat_thread_repeat_mismatches": 0,
+  "interleaved_full_trajectory_mismatches": 0,
+  "reused_reset_mismatches": 0,
+  "branch_counts": {},
+  "parallel_seconds": 3.068050633999974,
+  "parallel_games_per_second": 325.9398619168971,
+  "seconds": 6.909016976999965,
+  "caveat": "Repeated games test isolation, not 1000 independent strength samples.",
+  "serial_rows": [
+    {
+      "seed": 20261401,
+      "seat": 0,
+      "steps": 719,
+      "cash": 164928.0,
+      "opponent_cash": 98775.0,
+      "margin": 66153.0,
+      "win": true,
+      "seconds": 0.032765908,
+      "overflow": [
+        76,
+        74
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261401,
+      "seat": 1,
+      "steps": 719,
+      "cash": 164928.0,
+      "opponent_cash": 98775.0,
+      "margin": 66153.0,
+      "win": true,
+      "seconds": 0.03003627,
+      "overflow": [
+        74,
+        76
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261402,
+      "seat": 0,
+      "steps": 719,
+      "cash": 107995.0,
+      "opponent_cash": 71859.0,
+      "margin": 36136.0,
+      "win": true,
+      "seconds": 0.026835138,
+      "overflow": [
+        22,
+        11
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261402,
+      "seat": 1,
+      "steps": 719,
+      "cash": 115889.0,
+      "opponent_cash": 66005.0,
+      "margin": 49884.0,
+      "win": true,
+      "seconds": 0.02941139,
+      "overflow": [
+        154,
+        15
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261403,
+      "seat": 0,
+      "steps": 719,
+      "cash": 88001.0,
+      "opponent_cash": 63993.0,
+      "margin": 24008.0,
+      "win": true,
+      "seconds": 0.026274898,
+      "overflow": [
+        69,
+        61
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261403,
+      "seat": 1,
+      "steps": 719,
+      "cash": 131498.0,
+      "opponent_cash": 69900.0,
+      "margin": 61598.0,
+      "win": true,
+      "seconds": 0.028713438,
+      "overflow": [
+        95,
+        32
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261404,
+      "seat": 0,
+      "steps": 719,
+      "cash": 164537.0,
+      "opponent_cash": 94095.0,
+      "margin": 70442.0,
+      "win": true,
+      "seconds": 0.029303288,
+      "overflow": [
+        54,
+        70
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261404,
+      "seat": 1,
+      "steps": 719,
+      "cash": 179383.0,
+      "opponent_cash": 103929.0,
+      "margin": 75454.0,
+      "win": true,
+      "seconds": 0.027607981,
+      "overflow": [
+        55,
+        87
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261405,
+      "seat": 0,
+      "steps": 719,
+      "cash": 95547.0,
+      "opponent_cash": 72754.0,
+      "margin": 22793.0,
+      "win": true,
+      "seconds": 0.030912977,
+      "overflow": [
+        10,
+        27
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261405,
+      "seat": 1,
+      "steps": 719,
+      "cash": 109918.0,
+      "opponent_cash": 75149.0,
+      "margin": 34769.0,
+      "win": true,
+      "seconds": 0.031142838,
+      "overflow": [
+        9,
+        76
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261406,
+      "seat": 0,
+      "steps": 719,
+      "cash": 92266.0,
+      "opponent_cash": 62129.0,
+      "margin": 30137.0,
+      "win": true,
+      "seconds": 0.0269994,
+      "overflow": [
+        51,
+        89
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261406,
+      "seat": 1,
+      "steps": 719,
+      "cash": 92266.0,
+      "opponent_cash": 62129.0,
+      "margin": 30137.0,
+      "win": true,
+      "seconds": 0.02673722,
+      "overflow": [
+        89,
+        51
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261407,
+      "seat": 0,
+      "steps": 719,
+      "cash": 101478.0,
+      "opponent_cash": 68480.0,
+      "margin": 32998.0,
+      "win": true,
+      "seconds": 0.030234736,
+      "overflow": [
+        50,
+        99
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261407,
+      "seat": 1,
+      "steps": 719,
+      "cash": 83665.0,
+      "opponent_cash": 66100.0,
+      "margin": 17565.0,
+      "win": true,
+      "seconds": 0.027164521,
+      "overflow": [
+        27,
+        75
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261408,
+      "seat": 0,
+      "steps": 719,
+      "cash": 135417.0,
+      "opponent_cash": 92350.0,
+      "margin": 43067.0,
+      "win": true,
+      "seconds": 0.031168996,
+      "overflow": [
+        40,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261408,
+      "seat": 1,
+      "steps": 719,
+      "cash": 119403.0,
+      "opponent_cash": 83176.0,
+      "margin": 36227.0,
+      "win": true,
+      "seconds": 0.031399903,
+      "overflow": [
+        0,
+        31
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261409,
+      "seat": 0,
+      "steps": 719,
+      "cash": 92055.0,
+      "opponent_cash": 73434.0,
+      "margin": 18621.0,
+      "win": true,
+      "seconds": 0.032516114,
+      "overflow": [
+        80,
+        5
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261409,
+      "seat": 1,
+      "steps": 719,
+      "cash": 115991.0,
+      "opponent_cash": 81052.0,
+      "margin": 34939.0,
+      "win": true,
+      "seconds": 0.032849253,
+      "overflow": [
+        5,
+        80
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261410,
+      "seat": 0,
+      "steps": 719,
+      "cash": 134866.0,
+      "opponent_cash": 85155.0,
+      "margin": 49711.0,
+      "win": true,
+      "seconds": 0.030797159,
+      "overflow": [
+        10,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261410,
+      "seat": 1,
+      "steps": 719,
+      "cash": 134866.0,
+      "opponent_cash": 85155.0,
+      "margin": 49711.0,
+      "win": true,
+      "seconds": 0.030648917,
+      "overflow": [
+        0,
+        10
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261411,
+      "seat": 0,
+      "steps": 719,
+      "cash": 162667.0,
+      "opponent_cash": 104317.0,
+      "margin": 58350.0,
+      "win": true,
+      "seconds": 0.030641789,
+      "overflow": [
+        56,
+        13
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261411,
+      "seat": 1,
+      "steps": 719,
+      "cash": 144283.0,
+      "opponent_cash": 97865.0,
+      "margin": 46418.0,
+      "win": true,
+      "seconds": 0.032489746,
+      "overflow": [
+        1,
+        84
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261412,
+      "seat": 0,
+      "steps": 719,
+      "cash": 151534.0,
+      "opponent_cash": 94273.0,
+      "margin": 57261.0,
+      "win": true,
+      "seconds": 0.030786333,
+      "overflow": [
+        23,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261412,
+      "seat": 1,
+      "steps": 719,
+      "cash": 151534.0,
+      "opponent_cash": 94273.0,
+      "margin": 57261.0,
+      "win": true,
+      "seconds": 0.030905785,
+      "overflow": [
+        0,
+        23
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261413,
+      "seat": 0,
+      "steps": 719,
+      "cash": 116534.0,
+      "opponent_cash": 79789.0,
+      "margin": 36745.0,
+      "win": true,
+      "seconds": 0.030348066,
+      "overflow": [
+        42,
+        60
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261413,
+      "seat": 1,
+      "steps": 719,
+      "cash": 123964.0,
+      "opponent_cash": 86137.0,
+      "margin": 37827.0,
+      "win": true,
+      "seconds": 0.029734269,
+      "overflow": [
+        97,
+        42
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261414,
+      "seat": 0,
+      "steps": 719,
+      "cash": 104854.0,
+      "opponent_cash": 80502.0,
+      "margin": 24352.0,
+      "win": true,
+      "seconds": 0.030602237,
+      "overflow": [
+        9,
+        9
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261414,
+      "seat": 1,
+      "steps": 719,
+      "cash": 98746.0,
+      "opponent_cash": 71631.0,
+      "margin": 27115.0,
+      "win": true,
+      "seconds": 0.030787155,
+      "overflow": [
+        0,
+        9
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261415,
+      "seat": 0,
+      "steps": 719,
+      "cash": 137036.0,
+      "opponent_cash": 97778.0,
+      "margin": 39258.0,
+      "win": true,
+      "seconds": 0.030066069,
+      "overflow": [
+        45,
+        127
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261415,
+      "seat": 1,
+      "steps": 719,
+      "cash": 126090.0,
+      "opponent_cash": 89118.0,
+      "margin": 36972.0,
+      "win": true,
+      "seconds": 0.029223945,
+      "overflow": [
+        79,
+        71
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261416,
+      "seat": 0,
+      "steps": 719,
+      "cash": 88873.0,
+      "opponent_cash": 65079.0,
+      "margin": 23794.0,
+      "win": true,
+      "seconds": 0.029142118,
+      "overflow": [
+        38,
+        60
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261416,
+      "seat": 1,
+      "steps": 719,
+      "cash": 88873.0,
+      "opponent_cash": 65079.0,
+      "margin": 23794.0,
+      "win": true,
+      "seconds": 0.028751653,
+      "overflow": [
+        60,
+        38
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261417,
+      "seat": 0,
+      "steps": 719,
+      "cash": 115583.0,
+      "opponent_cash": 80858.0,
+      "margin": 34725.0,
+      "win": true,
+      "seconds": 0.029300919,
+      "overflow": [
+        37,
+        38
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261417,
+      "seat": 1,
+      "steps": 719,
+      "cash": 115583.0,
+      "opponent_cash": 80858.0,
+      "margin": 34725.0,
+      "win": true,
+      "seconds": 0.02881341,
+      "overflow": [
+        38,
+        37
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261418,
+      "seat": 0,
+      "steps": 719,
+      "cash": 132391.0,
+      "opponent_cash": 88834.0,
+      "margin": 43557.0,
+      "win": true,
+      "seconds": 0.029013545,
+      "overflow": [
+        69,
+        10
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261418,
+      "seat": 1,
+      "steps": 719,
+      "cash": 132391.0,
+      "opponent_cash": 88834.0,
+      "margin": 43557.0,
+      "win": true,
+      "seconds": 0.028343077,
+      "overflow": [
+        10,
+        69
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261419,
+      "seat": 0,
+      "steps": 719,
+      "cash": 117347.0,
+      "opponent_cash": 73942.0,
+      "margin": 43405.0,
+      "win": true,
+      "seconds": 0.026856727,
+      "overflow": [
+        32,
+        35
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261419,
+      "seat": 1,
+      "steps": 719,
+      "cash": 117347.0,
+      "opponent_cash": 73942.0,
+      "margin": 43405.0,
+      "win": true,
+      "seconds": 0.026843938,
+      "overflow": [
+        35,
+        32
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261420,
+      "seat": 0,
+      "steps": 719,
+      "cash": 76425.0,
+      "opponent_cash": 68905.0,
+      "margin": 7520.0,
+      "win": true,
+      "seconds": 0.025114401,
+      "overflow": [
+        123,
+        88
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261420,
+      "seat": 1,
+      "steps": 719,
+      "cash": 76425.0,
+      "opponent_cash": 68905.0,
+      "margin": 7520.0,
+      "win": true,
+      "seconds": 0.024981385,
+      "overflow": [
+        88,
+        123
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261421,
+      "seat": 0,
+      "steps": 719,
+      "cash": 121946.0,
+      "opponent_cash": 93358.0,
+      "margin": 28588.0,
+      "win": true,
+      "seconds": 0.031216543,
+      "overflow": [
+        72,
+        10
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261421,
+      "seat": 1,
+      "steps": 719,
+      "cash": 121946.0,
+      "opponent_cash": 93358.0,
+      "margin": 28588.0,
+      "win": true,
+      "seconds": 0.032160799,
+      "overflow": [
+        10,
+        72
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261422,
+      "seat": 0,
+      "steps": 719,
+      "cash": 132226.0,
+      "opponent_cash": 74119.0,
+      "margin": 58107.0,
+      "win": true,
+      "seconds": 0.030975421,
+      "overflow": [
+        40,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261422,
+      "seat": 1,
+      "steps": 719,
+      "cash": 132226.0,
+      "opponent_cash": 74119.0,
+      "margin": 58107.0,
+      "win": true,
+      "seconds": 0.031010876,
+      "overflow": [
+        0,
+        40
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261423,
+      "seat": 0,
+      "steps": 719,
+      "cash": 76149.0,
+      "opponent_cash": 58031.0,
+      "margin": 18118.0,
+      "win": true,
+      "seconds": 0.033588036,
+      "overflow": [
+        128,
+        14
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261423,
+      "seat": 1,
+      "steps": 719,
+      "cash": 95909.0,
+      "opponent_cash": 65879.0,
+      "margin": 30030.0,
+      "win": true,
+      "seconds": 0.032218547,
+      "overflow": [
+        88,
+        50
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261424,
+      "seat": 0,
+      "steps": 719,
+      "cash": 120866.0,
+      "opponent_cash": 71406.0,
+      "margin": 49460.0,
+      "win": true,
+      "seconds": 0.02606138,
+      "overflow": [
+        40,
+        65
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261424,
+      "seat": 1,
+      "steps": 719,
+      "cash": 141964.0,
+      "opponent_cash": 84347.0,
+      "margin": 57617.0,
+      "win": true,
+      "seconds": 0.03076409,
+      "overflow": [
+        0,
+        64
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261425,
+      "seat": 0,
+      "steps": 719,
+      "cash": 105574.0,
+      "opponent_cash": 68017.0,
+      "margin": 37557.0,
+      "win": true,
+      "seconds": 0.026752049,
+      "overflow": [
+        70,
+        85
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261425,
+      "seat": 1,
+      "steps": 719,
+      "cash": 106469.0,
+      "opponent_cash": 67761.0,
+      "margin": 38708.0,
+      "win": true,
+      "seconds": 0.026115485,
+      "overflow": [
+        85,
+        79
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261426,
+      "seat": 0,
+      "steps": 719,
+      "cash": 144800.0,
+      "opponent_cash": 79247.0,
+      "margin": 65553.0,
+      "win": true,
+      "seconds": 0.029739706,
+      "overflow": [
+        45,
+        71
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261426,
+      "seat": 1,
+      "steps": 719,
+      "cash": 144800.0,
+      "opponent_cash": 79247.0,
+      "margin": 65553.0,
+      "win": true,
+      "seconds": 0.029847663,
+      "overflow": [
+        71,
+        45
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261427,
+      "seat": 0,
+      "steps": 719,
+      "cash": 104313.0,
+      "opponent_cash": 61285.0,
+      "margin": 43028.0,
+      "win": true,
+      "seconds": 0.028062787,
+      "overflow": [
+        53,
+        118
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261427,
+      "seat": 1,
+      "steps": 719,
+      "cash": 86802.0,
+      "opponent_cash": 58420.0,
+      "margin": 28382.0,
+      "win": true,
+      "seconds": 0.028174433,
+      "overflow": [
+        121,
+        41
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261428,
+      "seat": 0,
+      "steps": 719,
+      "cash": 176818.0,
+      "opponent_cash": 101544.0,
+      "margin": 75274.0,
+      "win": true,
+      "seconds": 0.029328295,
+      "overflow": [
+        63,
+        88
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261428,
+      "seat": 1,
+      "steps": 719,
+      "cash": 176818.0,
+      "opponent_cash": 101544.0,
+      "margin": 75274.0,
+      "win": true,
+      "seconds": 0.031213566,
+      "overflow": [
+        88,
+        63
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261429,
+      "seat": 0,
+      "steps": 719,
+      "cash": 145514.0,
+      "opponent_cash": 74978.0,
+      "margin": 70536.0,
+      "win": true,
+      "seconds": 0.029924288,
+      "overflow": [
+        63,
+        129
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261429,
+      "seat": 1,
+      "steps": 719,
+      "cash": 145514.0,
+      "opponent_cash": 74978.0,
+      "margin": 70536.0,
+      "win": true,
+      "seconds": 0.029905929,
+      "overflow": [
+        129,
+        63
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261430,
+      "seat": 0,
+      "steps": 719,
+      "cash": 154558.0,
+      "opponent_cash": 119352.0,
+      "margin": 35206.0,
+      "win": true,
+      "seconds": 0.029186618,
+      "overflow": [
+        65,
+        14
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261430,
+      "seat": 1,
+      "steps": 719,
+      "cash": 154558.0,
+      "opponent_cash": 119352.0,
+      "margin": 35206.0,
+      "win": true,
+      "seconds": 0.029416461,
+      "overflow": [
+        14,
+        65
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261431,
+      "seat": 0,
+      "steps": 719,
+      "cash": 88948.0,
+      "opponent_cash": 60732.0,
+      "margin": 28216.0,
+      "win": true,
+      "seconds": 0.02712144,
+      "overflow": [
+        98,
+        54
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261431,
+      "seat": 1,
+      "steps": 719,
+      "cash": 88948.0,
+      "opponent_cash": 60732.0,
+      "margin": 28216.0,
+      "win": true,
+      "seconds": 0.026556229,
+      "overflow": [
+        54,
+        98
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261432,
+      "seat": 0,
+      "steps": 719,
+      "cash": 101734.0,
+      "opponent_cash": 65344.0,
+      "margin": 36390.0,
+      "win": true,
+      "seconds": 0.029117508,
+      "overflow": [
+        37,
+        108
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261432,
+      "seat": 1,
+      "steps": 719,
+      "cash": 101734.0,
+      "opponent_cash": 65344.0,
+      "margin": 36390.0,
+      "win": true,
+      "seconds": 0.029480762,
+      "overflow": [
+        108,
+        37
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261433,
+      "seat": 0,
+      "steps": 719,
+      "cash": 104448.0,
+      "opponent_cash": 72931.0,
+      "margin": 31517.0,
+      "win": true,
+      "seconds": 0.034426019,
+      "overflow": [
+        54,
+        16
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261433,
+      "seat": 1,
+      "steps": 719,
+      "cash": 97904.0,
+      "opponent_cash": 65479.0,
+      "margin": 32425.0,
+      "win": true,
+      "seconds": 0.031049354,
+      "overflow": [
+        6,
+        52
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261434,
+      "seat": 0,
+      "steps": 719,
+      "cash": 148258.0,
+      "opponent_cash": 92530.0,
+      "margin": 55728.0,
+      "win": true,
+      "seconds": 0.029050964,
+      "overflow": [
+        38,
+        57
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261434,
+      "seat": 1,
+      "steps": 719,
+      "cash": 126623.0,
+      "opponent_cash": 98045.0,
+      "margin": 28578.0,
+      "win": true,
+      "seconds": 0.028006748,
+      "overflow": [
+        85,
+        42
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261435,
+      "seat": 0,
+      "steps": 719,
+      "cash": 120624.0,
+      "opponent_cash": 76394.0,
+      "margin": 44230.0,
+      "win": true,
+      "seconds": 0.026628156,
+      "overflow": [
+        50,
+        104
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261435,
+      "seat": 1,
+      "steps": 719,
+      "cash": 127330.0,
+      "opponent_cash": 91848.0,
+      "margin": 35482.0,
+      "win": true,
+      "seconds": 0.029950835,
+      "overflow": [
+        8,
+        50
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261436,
+      "seat": 0,
+      "steps": 719,
+      "cash": 140366.0,
+      "opponent_cash": 90918.0,
+      "margin": 49448.0,
+      "win": true,
+      "seconds": 0.02763902,
+      "overflow": [
+        36,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261436,
+      "seat": 1,
+      "steps": 719,
+      "cash": 140366.0,
+      "opponent_cash": 90918.0,
+      "margin": 49448.0,
+      "win": true,
+      "seconds": 0.028168314,
+      "overflow": [
+        0,
+        36
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261437,
+      "seat": 0,
+      "steps": 719,
+      "cash": 104197.0,
+      "opponent_cash": 65075.0,
+      "margin": 39122.0,
+      "win": true,
+      "seconds": 0.027128136,
+      "overflow": [
+        42,
+        43
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261437,
+      "seat": 1,
+      "steps": 719,
+      "cash": 104197.0,
+      "opponent_cash": 65075.0,
+      "margin": 39122.0,
+      "win": true,
+      "seconds": 0.027102579,
+      "overflow": [
+        43,
+        42
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261438,
+      "seat": 0,
+      "steps": 719,
+      "cash": 102793.0,
+      "opponent_cash": 80729.0,
+      "margin": 22064.0,
+      "win": true,
+      "seconds": 0.032035711,
+      "overflow": [
+        110,
+        9
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261438,
+      "seat": 1,
+      "steps": 719,
+      "cash": 134873.0,
+      "opponent_cash": 89540.0,
+      "margin": 45333.0,
+      "win": true,
+      "seconds": 0.030121071,
+      "overflow": [
+        0,
+        94
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261439,
+      "seat": 0,
+      "steps": 719,
+      "cash": 160634.0,
+      "opponent_cash": 103293.0,
+      "margin": 57341.0,
+      "win": true,
+      "seconds": 0.02993238,
+      "overflow": [
+        44,
+        219
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261439,
+      "seat": 1,
+      "steps": 719,
+      "cash": 142365.0,
+      "opponent_cash": 99609.0,
+      "margin": 42756.0,
+      "win": true,
+      "seconds": 0.030420559,
+      "overflow": [
+        218,
+        50
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261440,
+      "seat": 0,
+      "steps": 719,
+      "cash": 120590.0,
+      "opponent_cash": 78264.0,
+      "margin": 42326.0,
+      "win": true,
+      "seconds": 0.031904367,
+      "overflow": [
+        64,
+        21
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261440,
+      "seat": 1,
+      "steps": 719,
+      "cash": 114328.0,
+      "opponent_cash": 79977.0,
+      "margin": 34351.0,
+      "win": true,
+      "seconds": 0.032113724,
+      "overflow": [
+        15,
+        48
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261441,
+      "seat": 0,
+      "steps": 719,
+      "cash": 135967.0,
+      "opponent_cash": 92821.0,
+      "margin": 43146.0,
+      "win": true,
+      "seconds": 0.03145242,
+      "overflow": [
+        96,
+        1
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261441,
+      "seat": 1,
+      "steps": 719,
+      "cash": 135967.0,
+      "opponent_cash": 92821.0,
+      "margin": 43146.0,
+      "win": true,
+      "seconds": 0.031498031,
+      "overflow": [
+        1,
+        96
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261442,
+      "seat": 0,
+      "steps": 719,
+      "cash": 162302.0,
+      "opponent_cash": 95460.0,
+      "margin": 66842.0,
+      "win": true,
+      "seconds": 0.030333245,
+      "overflow": [
+        57,
+        49
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261442,
+      "seat": 1,
+      "steps": 719,
+      "cash": 162302.0,
+      "opponent_cash": 95460.0,
+      "margin": 66842.0,
+      "win": true,
+      "seconds": 0.030582739,
+      "overflow": [
+        49,
+        57
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261443,
+      "seat": 0,
+      "steps": 719,
+      "cash": 150179.0,
+      "opponent_cash": 101556.0,
+      "margin": 48623.0,
+      "win": true,
+      "seconds": 0.030694427,
+      "overflow": [
+        76,
+        22
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261443,
+      "seat": 1,
+      "steps": 719,
+      "cash": 107834.0,
+      "opponent_cash": 79842.0,
+      "margin": 27992.0,
+      "win": true,
+      "seconds": 0.031998737,
+      "overflow": [
+        103,
+        69
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261444,
+      "seat": 0,
+      "steps": 719,
+      "cash": 107797.0,
+      "opponent_cash": 73888.0,
+      "margin": 33909.0,
+      "win": true,
+      "seconds": 0.030826973,
+      "overflow": [
+        42,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261444,
+      "seat": 1,
+      "steps": 719,
+      "cash": 109209.0,
+      "opponent_cash": 78015.0,
+      "margin": 31194.0,
+      "win": true,
+      "seconds": 0.030888554,
+      "overflow": [
+        0,
+        55
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261445,
+      "seat": 0,
+      "steps": 719,
+      "cash": 78572.0,
+      "opponent_cash": 53919.0,
+      "margin": 24653.0,
+      "win": true,
+      "seconds": 0.02949421,
+      "overflow": [
+        48,
+        117
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261445,
+      "seat": 1,
+      "steps": 719,
+      "cash": 78572.0,
+      "opponent_cash": 53919.0,
+      "margin": 24653.0,
+      "win": true,
+      "seconds": 0.029500297,
+      "overflow": [
+        117,
+        48
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261446,
+      "seat": 0,
+      "steps": 719,
+      "cash": 105240.0,
+      "opponent_cash": 77373.0,
+      "margin": 27867.0,
+      "win": true,
+      "seconds": 0.030397943,
+      "overflow": [
+        64,
+        36
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261446,
+      "seat": 1,
+      "steps": 719,
+      "cash": 104535.0,
+      "opponent_cash": 77357.0,
+      "margin": 27178.0,
+      "win": true,
+      "seconds": 0.03040979,
+      "overflow": [
+        36,
+        64
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261447,
+      "seat": 0,
+      "steps": 719,
+      "cash": 123825.0,
+      "opponent_cash": 74141.0,
+      "margin": 49684.0,
+      "win": true,
+      "seconds": 0.028038378,
+      "overflow": [
+        31,
+        49
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261447,
+      "seat": 1,
+      "steps": 719,
+      "cash": 149298.0,
+      "opponent_cash": 83107.0,
+      "margin": 66191.0,
+      "win": true,
+      "seconds": 0.025966998,
+      "overflow": [
+        36,
+        39
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261448,
+      "seat": 0,
+      "steps": 719,
+      "cash": 120141.0,
+      "opponent_cash": 69632.0,
+      "margin": 50509.0,
+      "win": true,
+      "seconds": 0.0281433,
+      "overflow": [
+        20,
+        111
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261448,
+      "seat": 1,
+      "steps": 719,
+      "cash": 106930.0,
+      "opponent_cash": 71859.0,
+      "margin": 35071.0,
+      "win": true,
+      "seconds": 0.028062318,
+      "overflow": [
+        9,
+        21
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261449,
+      "seat": 0,
+      "steps": 719,
+      "cash": 129926.0,
+      "opponent_cash": 73309.0,
+      "margin": 56617.0,
+      "win": true,
+      "seconds": 0.02823184,
+      "overflow": [
+        24,
+        30
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261449,
+      "seat": 1,
+      "steps": 719,
+      "cash": 129926.0,
+      "opponent_cash": 73309.0,
+      "margin": 56617.0,
+      "win": true,
+      "seconds": 0.027989839,
+      "overflow": [
+        30,
+        24
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261450,
+      "seat": 0,
+      "steps": 719,
+      "cash": 113597.0,
+      "opponent_cash": 80482.0,
+      "margin": 33115.0,
+      "win": true,
+      "seconds": 0.026139711,
+      "overflow": [
+        46,
+        0
+      ],
+      "opponent_switched": null
+    },
+    {
+      "seed": 20261450,
+      "seat": 1,
+      "steps": 719,
+      "cash": 123385.0,
+      "opponent_cash": 76893.0,
+      "margin": 46492.0,
+      "win": true,
+      "seconds": 0.025260071,
+      "overflow": [
+        18,
+        23
+      ],
+      "opponent_switched": null
+    }
+  ]
+}

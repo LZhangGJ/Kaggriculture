@@ -1,0 +1,102 @@
+{
+  "tag": "baseline_auto_28",
+  "seconds": 2.076836056999923,
+  "overall": {
+    "games": 28,
+    "wins": 6,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 0.21428571428571427,
+    "cash": 97796.53571428571,
+    "margin": -14072.32142857143,
+    "max_ms": 7.618538999999999,
+    "mean_policy_sec": 0.1357323167142857,
+    "overflow": 2441
+  },
+  "opponents": {
+    "g001": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 1,
+      "cash": 109976.75,
+      "margin": 18302.75,
+      "max_ms": 4.874586,
+      "mean_policy_sec": 0.13508155724999993,
+      "overflow": 275
+    },
+    "g003": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 91438.0,
+      "margin": -26231.5,
+      "max_ms": 6.737068,
+      "mean_policy_sec": 0.14319276225,
+      "overflow": 344
+    },
+    "boatlee_v29": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 91774.5,
+      "margin": -24814.5,
+      "max_ms": 4.927966,
+      "mean_policy_sec": 0.134220939,
+      "overflow": 426
+    },
+    "kaito_v58": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 89868.5,
+      "margin": -26833.0,
+      "max_ms": 7.618538999999999,
+      "mean_policy_sec": 0.14110566125000001,
+      "overflow": 394
+    },
+    "lynn_v5": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 90350.5,
+      "margin": -27292.0,
+      "max_ms": 7.304498000000001,
+      "mean_policy_sec": 0.15273050824999995,
+      "overflow": 592
+    },
+    "yhay81_six_day": {
+      "games": 4,
+      "wins": 2,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0.5,
+      "cash": 107480.0,
+      "margin": -3261.5,
+      "max_ms": 5.149959,
+      "mean_policy_sec": 0.12826439275,
+      "overflow": 224
+    },
+    "yhay81_three_day": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 0,
+      "cash": 103687.5,
+      "margin": -8376.5,
+      "max_ms": 5.472703,
+      "mean_policy_sec": 0.11553039624999994,
+      "overflow": 186
+    }
+  }
+}

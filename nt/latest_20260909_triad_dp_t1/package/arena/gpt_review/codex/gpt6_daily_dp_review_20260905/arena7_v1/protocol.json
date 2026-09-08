@@ -1,0 +1,97 @@
+{
+  "status": "FROZEN",
+  "seeds": [
+    61020,
+    61021,
+    61022,
+    61023,
+    61024,
+    61025,
+    61026,
+    61027,
+    61028,
+    61029
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": [
+    "g001",
+    "g003",
+    "boatlee_v29",
+    "kaito_v58",
+    "lynn_v5",
+    "yhay81_six_day",
+    "yhay81_three_day"
+  ],
+  "versions": {
+    "v1": "7dc2b0fc4439f38343d3912e98182f6b504ab6badce210de2923ab34c66be2a6",
+    "v2": "00f9c50a5505780bf7ba9edb5d19bf58b147fcae96c1cee990ed905bab5f42f2"
+  },
+  "requested_games": 280,
+  "workers": 8,
+  "blas_threads": 1,
+  "identities": {
+    "g001": {
+      "source": "../../research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/main.py",
+      "source_sha256": "9b4fdf7a7c92d3eefc75c693c4949825567588478bef0e53529bdec82944dda7",
+      "runtime": "searched_route_native",
+      "asset_sha256": "03005fb0cb13c3dd9617fb35baeacdb69e476a50f4da6efa22e5a6a325c41164"
+    },
+    "g003": {
+      "source": "opponents/g003/source/main.py",
+      "source_sha256": "ff32e2e47431dae2d98fa70a78f85425f8d5929d5910c5ff482e74750c3fa1ef",
+      "runtime": "searched_route_native",
+      "asset_sha256": "d1b5df7f5cf3ba76f78e64e7b3d4a2103873a962969241c60bc504e85f40b26a",
+      "initial_parity_receipt": "receipts/g003_original_official_parity_v1/acceptance.json"
+    },
+    "boatlee_v29": {
+      "source": "opponents/boatlee_v29/output/main.py",
+      "source_sha256": "c4a6964cec3c1c99207c32bb1fd91e53c3ec01e6890da5734331cbeab1cc1267",
+      "runtime": "boatlee_v29_native",
+      "asset_sha256": "ec4d6d6a83a6f1cef9f0257c659029afa8a7c5ad540738e2896ba2dffd00ce3a",
+      "initial_parity_receipt": "receipts/boatlee_s5d_official_v1/acceptance.json",
+      "isolation_receipt": "receipts/boatlee_s5d_isolation_v1/acceptance.json"
+    },
+    "kaito_v58": {
+      "source": "opponents/kaito_v58/output/main.py",
+      "source_sha256": "b041058ec187a8d0a01edc0eab8de068b53deca3e6c1973faf74ace6916ddcb9",
+      "runtime": "kaito_v58_native",
+      "asset_sha256": "470c1d931059961e73ab50a8dc8d68d0f559ab850f917c84d4425e3db75048ce",
+      "initial_parity_receipt": "receipts/kaito_s5d_official_v1/acceptance.json",
+      "isolation_receipt": "receipts/kaito_s5d_isolation_v1/acceptance.json"
+    },
+    "lynn_v5": {
+      "source": "opponents/lynn_v5/output/generated_submission/main.py",
+      "source_sha256": "e8498c67914ecc607ae69fde25a728361eb5acea94c00ecc85deffbdafe50413",
+      "runtime": "lynn_v5_native",
+      "asset_sha256": "ba6bf9da8ed87c18d122ee0c93f05a19126c88b2755203523839aa3c61f09aab",
+      "initial_parity_receipt": "receipts/lynn_s5d_official_v1/acceptance.json",
+      "isolation_receipt": "receipts/lynn_s5d_isolation_v1/acceptance.json"
+    },
+    "yhay81_six_day": {
+      "source": "opponents/yhay81_six_day/output/main.py",
+      "source_sha256": "5809846fd528f00d1c01d6f58940633604adb7283d1e2f152603697967e3bb89",
+      "runtime": "fieldbook_native",
+      "initial_parity_receipt": "receipts/fieldbook_s5d_official_v1/acceptance.json",
+      "isolation_receipt": "receipts/fieldbook_s5d_isolation_v1/acceptance.json"
+    },
+    "yhay81_three_day": {
+      "source": "opponents/yhay81_three_day/output/main.py",
+      "source_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02",
+      "runtime": "three_day_native",
+      "initial_parity_receipt": "receipts/three_day_s5d_official_v1/acceptance.json",
+      "isolation_receipt": "receipts/three_day_s5d_isolation_v1/acceptance.json"
+    }
+  },
+  "native_binary_sha256": "b47dc58b60ffcc8261c53fc99fa0b7a637b9c44b5ab3deeda031e001fc80c2ca",
+  "script_sha256": "4777fd502373f428469e479c282131805035ddd849ab2b6df01503d31753bc73",
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "exact_source_agents": true,
+  "live_opponents": true,
+  "policy_settings_modified": false,
+  "official_referee": "first seed, both seats, both versions, seven opponents = 28 complete games",
+  "timeout_scope": "Measured Agent calls; not Kaggle sandbox timeout enforcement",
+  "evidence_role": "10-seed paired screening; not stable leaderboard strength"
+}

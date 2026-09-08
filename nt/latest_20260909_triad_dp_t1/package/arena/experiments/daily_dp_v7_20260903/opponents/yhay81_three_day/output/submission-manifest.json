@@ -1,0 +1,30 @@
+{
+  "agent": "hybrid_shopforge_3day_frontier_state_router_r5",
+  "anchor_action_sha256": "7ce8bc83ef01db6d31589384bc57d55cec3401f4a12ebf9c728f5a3c4f63f02e",
+  "route_action_sha256": "0ebdd1a079a5777f8a480138bae270521a1e6012d8473899ba05ed7791e57990",
+  "tape_include_sha256": "30b724c3c905d0c03e4ef38d36f96fb7acbd6abef5371abbedee36ea3717e09f",
+  "expected_tape_include_sha256": "30b724c3c905d0c03e4ef38d36f96fb7acbd6abef5371abbedee36ea3717e09f",
+  "main_py_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02",
+  "agent_so_sha256": "d3b4e19dfd20f1d9b229d1d15cab9ee20068d100fb99fcf4c44051d59fb174ea",
+  "submission_archive": "shopstate-router-agent.tar.gz",
+  "submission_archive_sha256": "32cc41b73956e724a1a27d104a44888d3bb02745e586688eebd57cfcdacf9819",
+  "segment_turns": 72,
+  "decision_step": 360,
+  "public_rules": [
+    "BAKERY and market_inventory_fertilizer <= 10232.5",
+    "PET_CAFE and rival_plant_tiles <= 64"
+  ],
+  "boundaries": [
+    0,
+    72,
+    144,
+    216,
+    288,
+    360,
+    432,
+    504,
+    576,
+    648,
+    719
+  ]
+}

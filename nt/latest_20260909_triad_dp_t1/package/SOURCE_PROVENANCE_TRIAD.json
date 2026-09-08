@@ -1,0 +1,31 @@
+{
+  "source_attachment": "Kaggriculture_Competitive_DP_C3_Rebuilt_20260905(1).zip",
+  "attachment_sha256": "9dbb718d1d50b4d1a2fcb67b9b3ea1d6179cf470b5d24c39223fe8553f72ccef",
+  "compiled_base": "local attachment, September 5 C3; reference macro path used only by baseline",
+  "github_read_scope": "September 6 agent index/documentation, frozen commit 58df405c877270bdb910c4a283ad1dcb65fecfff; not compiled as the local baseline",
+  "new_files": [
+    "policy/triad.hpp",
+    "policy/proposals.hpp",
+    "policy/search.hpp",
+    "policy/public_flow_scenario.hpp",
+    "policy/bridge.cpp",
+    "policy/agent.py",
+    "src/panel.cpp",
+    "tests/",
+    "train_value.py",
+    "train_ranker.py"
+  ],
+  "reused": [
+    "policy/executor and vendor: C3 live execution/simulator foundation with explicitly marked changes",
+    "policy/planner.hpp: economic helper foundation",
+    "policy/animal_service_dp.hpp",
+    "policy/ongoing_maintenance_dp.hpp"
+  ],
+  "not_used_by_default_agent": [
+    "J7 macro references",
+    "seven-opponent identities or assets",
+    "real match seed or future events",
+    "opponent private state",
+    "trained value/ranking model"
+  ]
+}

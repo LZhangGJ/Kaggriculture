@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "scope": "official rules plus exported candidate action parity; not proof on all states, not opponent Python parity",
+  "binary_hash": "72a7377105445bfba958f9a4b1f049c98631fe7795d964c82db268d4f893f27e",
+  "source_hash": "b609006b6f4ea3e590a7c35d5ad2b0b52262f9ddf655acd879489c9e708c5d4d",
+  "rows": [
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "g001",
+      "transitions": 719,
+      "cash": 117885.0,
+      "opponent_cash": 92082.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "g001",
+      "transitions": 719,
+      "cash": 116059.0,
+      "opponent_cash": 94152.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "g003",
+      "transitions": 719,
+      "cash": 188055.0,
+      "opponent_cash": 101388.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "g003",
+      "transitions": 719,
+      "cash": 188055.0,
+      "opponent_cash": 101388.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "boatlee_v29",
+      "transitions": 719,
+      "cash": 129967.0,
+      "opponent_cash": 120845.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "boatlee_v29",
+      "transitions": 719,
+      "cash": 129967.0,
+      "opponent_cash": 120845.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "kaito_v58",
+      "transitions": 719,
+      "cash": 189042.0,
+      "opponent_cash": 93959.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "kaito_v58",
+      "transitions": 719,
+      "cash": 189042.0,
+      "opponent_cash": 93959.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "lynn_v5",
+      "transitions": 719,
+      "cash": 110383.0,
+      "opponent_cash": 100025.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "lynn_v5",
+      "transitions": 719,
+      "cash": 110383.0,
+      "opponent_cash": 100025.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "yhay81_six_day",
+      "transitions": 719,
+      "cash": 162677.0,
+      "opponent_cash": 87437.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "transitions": 719,
+      "cash": 162677.0,
+      "opponent_cash": 87437.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "yhay81_three_day",
+      "transitions": 719,
+      "cash": 157016.0,
+      "opponent_cash": 92487.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "yhay81_three_day",
+      "transitions": 719,
+      "cash": 157016.0,
+      "opponent_cash": 92487.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    }
+  ],
+  "seconds": 126.3363408780001
+}

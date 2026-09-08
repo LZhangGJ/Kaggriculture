@@ -1,0 +1,43 @@
+{
+  "completed": 280,
+  "total": 280,
+  "elapsed_seconds": 78.322899565,
+  "v1": {
+    "requested_games": 140,
+    "completed_games": 140,
+    "errors": 0,
+    "wins": 23,
+    "ties": 0,
+    "losses": 117,
+    "win_rate": 0.16428571428571428,
+    "score_rate": 0.16428571428571428,
+    "mean_cash": 74226.46428571429,
+    "mean_opponent_cash": 93678.54285714286,
+    "mean_margin": -19452.07857142857,
+    "min_cash": 29853.0,
+    "max_cash": 153118.0,
+    "max_action_ms": 133.75738500000267,
+    "action_over_1s": 0,
+    "own_action_seconds": 194.37547594700123,
+    "official_checked_steps": 10066
+  },
+  "v2": {
+    "requested_games": 140,
+    "completed_games": 140,
+    "errors": 0,
+    "wins": 6,
+    "ties": 0,
+    "losses": 134,
+    "win_rate": 0.04285714285714286,
+    "score_rate": 0.04285714285714286,
+    "mean_cash": 60652.08571428571,
+    "mean_opponent_cash": 89645.27142857143,
+    "mean_margin": -28993.185714285715,
+    "min_cash": 19076.0,
+    "max_cash": 156286.0,
+    "max_action_ms": 310.2493580000001,
+    "action_over_1s": 0,
+    "own_action_seconds": 315.88130416000126,
+    "official_checked_steps": 10066
+  }
+}

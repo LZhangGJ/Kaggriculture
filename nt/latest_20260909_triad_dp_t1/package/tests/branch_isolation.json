@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "groups": 18,
+  "branches": 71,
+  "opponents": [
+    0,
+    5,
+    6
+  ],
+  "both_seats": true,
+  "days": [
+    0,
+    9,
+    21
+  ],
+  "checks": [
+    "forward/reverse features identical",
+    "forward/reverse terminal outcomes identical",
+    "KEEP identical to uninterrupted reference"
+  ]
+}

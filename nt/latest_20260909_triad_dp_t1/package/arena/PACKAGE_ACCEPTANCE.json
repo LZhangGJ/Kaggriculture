@@ -1,0 +1,17 @@
+{
+  "status": "PASS_PORTABLE_COMBINED_BUNDLE",
+  "gpt_original_cash_pairs": 28,
+  "j7_historical_cash_pairs": 14,
+  "completed_games": 46,
+  "official_checked_steps": 33074,
+  "unchanged_original_files": 1345,
+  "build": 44.823426698000006,
+  "validation_seconds": 42.58332661,
+  "caveats": [
+    "Finite regression, not an all-state proof.",
+    "No new strength promotion.",
+    "Not Kaggle sandbox validation.",
+    "GPT v1/v2 remain Python policies.",
+    "Portable validation performed on local machine with four workers, not on GPT host."
+  ]
+}
