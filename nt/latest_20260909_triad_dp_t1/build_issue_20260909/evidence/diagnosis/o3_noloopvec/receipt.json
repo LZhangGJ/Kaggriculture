@@ -1,0 +1,24 @@
+{
+  "cmd": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-fno-tree-loop-vectorize",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-Wall",
+    "-Wextra",
+    "-Wuninitialized",
+    "-Wmaybe-uninitialized",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/t1/policy/bridge.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/t1/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/o3_noloopvec/agent.so"
+  ],
+  "returncode": 0,
+  "seconds": 14.499250264000011,
+  "sha256": "9bb0886a11423d3eb131daa3bd99669ea2d4304faf3bd91de262ce2ec8092733"
+}

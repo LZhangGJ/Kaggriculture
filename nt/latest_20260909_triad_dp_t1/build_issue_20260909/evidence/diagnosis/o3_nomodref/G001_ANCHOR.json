@@ -1,0 +1,23 @@
+{
+  "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/o3_nomodref/agent.so",
+  "sha256": "9bc7b5cc2ae2fb90cfc0df26bb06c716edd2e384cbf0a49bf510cbd380187f4e",
+  "rows": [
+    {
+      "seed": 260909000,
+      "seat": 0,
+      "cash": 113939.0,
+      "opponent_cash": 99080.0,
+      "seconds": 0.8851076340000077,
+      "match": true
+    },
+    {
+      "seed": 260909000,
+      "seat": 1,
+      "cash": 113939.0,
+      "opponent_cash": 99080.0,
+      "seconds": 0.8531393380000054,
+      "match": true
+    }
+  ],
+  "all_match": true
+}

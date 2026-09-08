@@ -1,0 +1,268 @@
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:2,
+                 from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:4,
+                 from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/proposals.hpp:2,
+                 from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/search.hpp:2,
+                 from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/bridge.cpp:1:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘std::vector<double> dp7::Controller::portfolio_values(const dp7::View&, const std::vector<dp7::Project>&, const dp7::Counts&, dp7::Quantities*) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:409:4: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  409 |    for(int d=day;d<30;d++)for(int i=0;i<9;i++)own[d][i]+=n*c.quantity[d][i];cal.push_back(c);}
+      |    ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:409:77: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  409 |    for(int d=day;d<30;d++)for(int i=0;i<9;i++)own[d][i]+=n*c.quantity[d][i];cal.push_back(c);}
+      |                                                                             ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘void dp7::Controller::choose_impl(const dp7::View&, int)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:466:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  466 |     if(!best)break;auto pr=best->second;proposal_value+=best_value;chosen.push_back(pr.kind);newcount[pr.kind]++;
+      |     ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:466:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  466 |     if(!best)break;auto pr=best->second;proposal_value+=best_value;chosen.push_back(pr.kind);newcount[pr.kind]++;
+      |                    ^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:471:10: warning: unused variable ‘unused’ [-Wunused-variable]
+  471 |   Counts unused{};std::array<bool,100>used{};for(size_t i=0;i<chosen.size()&&i<ordered.size();i++){target.emplace_back(ordered[i],chosen[i]);used[ordered[i]]=true;}for(int c:avail)if(!used[c])target.emplace_back(c,-1);
+      |          ^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘void dp7::Controller::rotate(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:478:43: warning: variable ‘old’ set but not used [-Wunused-but-set-variable]
+  478 |    auto vs=values(o,base,selected);double old=-1e9,best=-1e9;int choice=current;Project chosen{};for(auto[v,pr]:vs)if(pr.kind==current)old=best=v;
+      |                                           ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘bool dp7::Controller::water_due(const fastkag::Tile&) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:485:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  485 |   if(t.watered_today)return false;if(!p.efficient_water||t.consecutive_unwatered>=1)return true;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:485:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  485 |   if(t.watered_today)return false;if(!p.efficient_water||t.consecutive_unwatered>=1)return true;
+      |                                   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘bool dp7::Controller::care_due(const fastkag::Tile&) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:490:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  490 |   if(t.cared_today)return false;if(!p.efficient_care)return true;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:490:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  490 |   if(t.cared_today)return false;if(!p.efficient_care)return true;
+      |                                 ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘std::vector<dp7::Order> dp7::Controller::orders(const dp7::View&, const std::vector<dp7::Job>&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:585:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  585 |   if(day<15)push(Op::BUY_PRODUCT,F,std::max(0,need[F]-o.priv.shed[F]),4);for(int c:{M,S,T,C,W})push(Op::BUY_SEED,c,std::max(0,sn[c]-o.priv.seeds[c]),3);daily_need=need;return out;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:585:74: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  585 |   if(day<15)push(Op::BUY_PRODUCT,F,std::max(0,need[F]-o.priv.shed[F]),4);for(int c:{M,S,T,C,W})push(Op::BUY_SEED,c,std::max(0,sn[c]-o.priv.seeds[c]),3);daily_need=need;return out;
+      |                                                                          ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘dp7::Controller::ScheduleMetric dp7::Controller::schedule_metric(const dp7::View&, const std::vector<dp7::Job>&, const std::pair<std::vector<dp7::Route>, int>&, int, bool) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:691:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  691 |    if(ret&&r.has_output)tick+=near(pos)+1;m.total+=tick;m.peak=std::max(m.peak,tick);
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:691:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  691 |    if(ret&&r.has_output)tick+=near(pos)+1;m.total+=tick;m.peak=std::max(m.peak,tick);
+      |                                           ^
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:676:127: warning: unused parameter ‘budget’ [-Wunused-parameter]
+  676 |  ScheduleMetric schedule_metric(const View&o,const std::vector<Job>&all,const std::pair<std::vector<Route>,int>&candidate,int budget,bool ret)const{
+      |                                                                                                                           ~~~~^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘dp7::Controller::PreparedState dp7::Controller::project_preparation(const dp7::View&) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:769:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  769 |   for(int i=0;i<9;i++)s.market.prices[i]=price(i,s.market.inventory[i]);return s;
+      |   ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:769:73: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  769 |   for(int i=0;i<9;i++)s.market.prices[i]=price(i,s.market.inventory[i]);return s;
+      |                                                                         ^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In static member function ‘static bool dp7::Controller::same_remaining(const dp7::Plan&, const dp7::Plan&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:923:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  923 |   for(size_t k=0;k<left;k++)if(!same_action(a.a[k],b.a[b.index+k])||a.target[k]!=b.target[b.index+k])return false;return true;
+      |   ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:923:115: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  923 |   for(size_t k=0;k<left;k++)if(!same_action(a.a[k],b.a[b.index+k])||a.target[k]!=b.target[b.index+k])return false;return true;
+      |                                                                                                                   ^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In static member function ‘static std::vector<std::pair<fastkag::Action, int> > dp7::Controller::plan_semantics(const dp7::Plan&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:967:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  967 |    if(pl.target[k]>=0&&!movement(pl.a[k].op))v.emplace_back(pl.a[k],pl.target[k]);return v;
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:967:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  967 |    if(pl.target[k]>=0&&!movement(pl.a[k].op))v.emplace_back(pl.a[k],pl.target[k]);return v;
+      |                                                                                   ^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:966:39: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  966 |   std::vector<std::pair<Action,int>>v;for(size_t k=pl.index;k<pl.a.size();k++)
+      |                                       ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:967:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  967 |    if(pl.target[k]>=0&&!movement(pl.a[k].op))v.emplace_back(pl.a[k],pl.target[k]);return v;
+      |                                                                                   ^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘void dp7::Controller::recoordinate(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1029:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+ 1029 |   if(!p.stepwise_recoordination||phase!=3)return;step_recoord_checks++;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1029:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+ 1029 |   if(!p.stepwise_recoordination||phase!=3)return;step_recoord_checks++;
+      |                                                  ^~~~~~~~~~~~~~~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1045:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+ 1045 |     if(best<0)break;int pos=plan_end(o,best,candidate[best]);walk(candidate[best],pos,j.pos);for(auto a:j.actions){candidate[best].a.push_back(a);candidate[best].target.push_back(j.pos);}assigned++;
+      |     ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1045:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+ 1045 |     if(best<0)break;int pos=plan_end(o,best,candidate[best]);walk(candidate[best],pos,j.pos);for(auto a:j.actions){candidate[best].a.push_back(a);candidate[best].target.push_back(j.pos);}assigned++;
+      |                     ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1068:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+ 1068 |     if(best<0)continue;int pos=plan_end(o,best,next[best]);walk(next[best],pos,j.pos);for(auto a:missing){next[best].a.push_back(a);next[best].target.push_back(j.pos);covered.insert(task_key(j.pos,a));}added++;
+      |     ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1068:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+ 1068 |     if(best<0)continue;int pos=plan_end(o,best,next[best]);walk(next[best],pos,j.pos);for(auto a:missing){next[best].a.push_back(a);next[best].target.push_back(j.pos);covered.insert(task_key(j.pos,a));}added++;
+      |                        ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp: In member function ‘fastkag::PlayerAction dp7::Controller::act(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1305:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+ 1305 |   if(preparing&&(p.preparation_work||p.preparation_pipeline_v2))for(int u=0;u<n;u++)if(out.units[u].op==Op::PASS&&prep[u].op!=Op::PASS){out.units[u]=prep[u];preparation_actions++;if(p.preparation_pipeline_v2){preparation_pipeline_actions++;preparation_pipeline_moves+=movement(prep[u].op);}}service::protect(*this,o,out);service::procure(*this,o,out);intraday::consider(*this,o,out);service::protect(*this,o,out);handoff::apply(*this,o,out);liverepair::market(*this,o,out);return out;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1305:292: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+ 1305 |   if(preparing&&(p.preparation_work||p.preparation_pipeline_v2))for(int u=0;u<n;u++)if(out.units[u].op==Op::PASS&&prep[u].op!=Op::PASS){out.units[u]=prep[u];preparation_actions++;if(p.preparation_pipeline_v2){preparation_pipeline_actions++;preparation_pipeline_moves+=movement(prep[u].op);}}service::protect(*this,o,out);service::procure(*this,o,out);intraday::consider(*this,o,out);service::protect(*this,o,out);handoff::apply(*this,o,out);liverepair::market(*this,o,out);return out;
+      |                                                                                                                                                                                                                                                                                                    ^~~~~~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1309:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/resource_exchange.hpp: In function ‘dp7::exchange::Choice dp7::exchange::propose(const dp7::Controller&, const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/resource_exchange.hpp:95:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   95 |    if(load.first>initial_load.first||load.second>=initial_load.second)continue;out.shorter++;
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/resource_exchange.hpp:95:80: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   95 |    if(load.first>initial_load.first||load.second>=initial_load.second)continue;out.shorter++;
+      |                                                                                ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/resource_exchange.hpp:96:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   96 |    if(!deadlines(o,trial)||!resources(o,trial)||order(trial)!=causal_order)continue;out.feasible++;
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/resource_exchange.hpp:96:85: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   96 |    if(!deadlines(o,trial)||!resources(o,trial)||order(trial)!=causal_order)continue;out.feasible++;
+      |                                                                                     ^~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1310:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp: In function ‘dp7::intraday::Proposal dp7::intraday::propose(const dp7::Controller&, const dp7::View&, const fastkag::PlayerAction&, const Declared*)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp:164:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  164 |     for(auto x:buy)expense+=c.cost(o,x);if(expense>cash)continue;
+      |     ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp:164:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  164 |     for(auto x:buy)expense+=c.cost(o,x);if(expense>cash)continue;
+      |                                         ^~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1312:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/joint_portfolio.hpp: In function ‘double dp7::portfolio::future_wages(const dp7::Controller&, const dp7::View&, const std::vector<std::pair<int, int> >&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/joint_portfolio.hpp:104:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  104 |   if(k<0)continue;int start=animal(t)?t.placed_day:t.planted_day;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/joint_portfolio.hpp:104:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  104 |   if(k<0)continue;int start=animal(t)?t.placed_day:t.planted_day;
+      |                   ^~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1316:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_calendar.hpp: In function ‘dp7::rotationproto::Value dp7::rotationproto::value(const dp7::Controller&, const dp7::View&, const Works&, bool)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_calendar.hpp:82:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   82 |   if(w.pos<0||w.pos>=100||seen[w.pos])throw std::invalid_argument("duplicate plot in portfolio");seen[w.pos]=true;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_calendar.hpp:82:98: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   82 |   if(w.pos<0||w.pos>=100||seen[w.pos])throw std::invalid_argument("duplicate plot in portfolio");seen[w.pos]=true;
+      |                                                                                                  ^~~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:1317:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_cash.hpp: In function ‘dp7::rotationproto::Works dp7::rotationcash::planned_works(const dp7::Controller&, const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_cash.hpp:16:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   16 |   if(k<0)continue;auto&t=o.own.tiles[pos];
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/rotation_cash.hpp:16:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   16 |   if(k<0)continue;auto&t=o.own.tiles[pos];
+      |                   ^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp: In member function ‘competitive::Asset competitive::Planner::crop_cycle(int, int, int, const fastkag::Tile*) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:88:58: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   88 |     int d=start+first[k]+tick*interval[k];if(d>29||d<=day&&tile)continue;
+      |                                                    ~~~~~~^~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp: In member function ‘void competitive::Planner::plan(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:155:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  155 |     for(auto&[p,k]:core.target)if(p==pos){k=kind;break;}animals++;
+      |     ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:155:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  155 |     for(auto&[p,k]:core.target)if(p==pos){k=kind;break;}animals++;
+      |                                                         ^~~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:173:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  173 |    if(bestkind<0)break;for(auto&[p,k]:core.target)if(p==pos){k=bestkind;break;}
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/planner.hpp:173:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  173 |    if(bestkind<0)break;for(auto&[p,k]:core.target)if(p==pos){k=bestkind;break;}
+      |                        ^~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:6:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/ongoing_maintenance_dp.hpp: In member function ‘double competitive::OngoingMaintenanceDP::q(int, int, int, bool, bool)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/ongoing_maintenance_dp.hpp:16:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   16 |   if(d>=end)return 0.;if(z&&f>0)return -1e100;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/ongoing_maintenance_dp.hpp:16:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   16 |   if(d>=end)return 0.;if(z&&f>0)return -1e100;
+      |                       ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp: In member function ‘triad::CropPath triad::Controller::choose_crop(int, int, int, const competitive::Flow&, const RotationDP&) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:147:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  147 |    if(start+(ongoing(forced)?first[forced]:len)>29)continue;auto a=crop(forced,start,pos,std::min(29,start+len),px);
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:147:61: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  147 |    if(start+(ongoing(forced)?first[forced]:len)>29)continue;auto a=crop(forced,start,pos,std::min(29,start+len),px);
+      |                                                             ^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp: In member function ‘void triad::Controller::plan(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:237:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  237 |    if(a.first_cost<=0)continue;a.fixed[o.day]+=a.first_cost;a.first_cost=0;stock_left[k]--;b.funded=true;
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:237:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  237 |    if(a.first_cost<=0)continue;a.fixed[o.day]+=a.first_cost;a.first_cost=0;stock_left[k]--;b.funded=true;
+      |                                ^
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:257:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  257 |     if(cost<=0)continue;if(stock_left[k]>0){a.fixed[o.day]+=cost;cost=0;}
+      |     ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:257:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  257 |     if(cost<=0)continue;if(stock_left[k]>0){a.fixed[o.day]+=cost;cost=0;}
+      |                         ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:285:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  285 |     if(!changed)break;model.value(o,portfolio,&prices);set_service(v);core.prepare_orders(v,o,expiry);
+      |     ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:285:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  285 |     if(!changed)break;model.value(o,portfolio,&prices);set_service(v);core.prepare_orders(v,o,expiry);
+      |                       ^~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp: In member function ‘std::array<double, 12> triad::Controller::intraday_values(const dp7::Controller&, const dp7::View&, const fastkag::PlayerAction&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:290:95: warning: unused parameter ‘out’ [-Wunused-parameter]
+  290 |  std::array<double,12>intraday_values(const dp7::Controller&c,const View&o,const PlayerAction&out){
+      |                                                                            ~~~~~~~~~~~~~~~~~~~^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp: In member function ‘fastkag::PlayerAction triad::Controller::act(const dp7::View&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:327:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  327 |   if(o.step<=previous_step)throw std::runtime_error("non-monotone policy observation");previous_step=o.step;
+      |   ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:327:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  327 |   if(o.step<=previous_step)throw std::runtime_error("non-monotone policy observation");previous_step=o.step;
+      |                                                                                        ^~~~~~~~~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/proposals.hpp: In function ‘triad::Features triad::portfolio_features(const dp7::View&, const Controller&, const Controller&, int, bool)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/proposals.hpp:58:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   58 |  for(int i=0;i<12;i++)add("buy_"+std::to_string(i),buy[i]);for(int i=0;i<9;i++)add("sell_"+std::to_string(i),sale[i]);
+      |  ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/proposals.hpp:58:60: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   58 |  for(int i=0;i<12;i++)add("buy_"+std::to_string(i),buy[i]);for(int i=0;i<9;i++)add("sell_"+std::to_string(i),sale[i]);
+      |                                                            ^~~
+In file included from /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/search.hpp:4:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/learned_value.hpp: In function ‘double triad::learned::score(const std::vector<double>&, bool)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/learned_value.hpp:69:54: warning: unused parameter ‘keep’ [-Wunused-parameter]
+   69 | inline double score(const std::vector<double>&x,bool keep){return predict(x);}
+      |                                                 ~~~~~^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/bridge.cpp: In function ‘void* td_new(const double*, size_t)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/bridge.cpp:5:193: warning: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘struct triad::Settings’ from an array of ‘const double’ [-Wclass-memaccess]
+    5 | extern "C" void*td_new(const double*x,size_t n){try{triad::Settings s;if(n){if(n!=triad::SETTINGS_COUNT)return nullptr;for(size_t i=0;i<n;i++)if(!std::isfinite(x[i]))return nullptr;std::memcpy(&s,x,sizeof(s));}if(s.max_hands<0||s.max_hands>15||s.max_land<1||s.max_land>4||s.max_animals<0||s.max_animals>75||s.labor_hours<1||s.labor_hours>24)return nullptr;return new Handle(s);}catch(...){return nullptr;}}
+      |                                                                                                                                                                                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/triad.hpp:11:8: note: ‘struct triad::Settings’ declared here
+   11 | struct Settings {
+      |        ^~~~~~~~
+In constructor ‘constexpr dp7::Job::Job(dp7::Job&&)’,
+    inlined from ‘constexpr dp7::intraday::Proposal::Proposal(dp7::intraday::Proposal&&)’ at /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp:57:8,
+    inlined from ‘dp7::intraday::Proposal dp7::intraday::propose(const dp7::Controller&, const dp7::View&, const fastkag::PlayerAction&, const Declared*)’ at /mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp:125:115:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/policy.hpp:123:8: warning: ‘best.dp7::intraday::Proposal::job.dp7::Job::pos’ may be used uninitialized [-Wmaybe-uninitialized]
+  123 | struct Job{int pos;Acts actions;Counts needs{},seeds{},out{};int priority=20;bool crop=false;};
+      |        ^~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp: In function ‘dp7::intraday::Proposal dp7::intraday::propose(const dp7::Controller&, const dp7::View&, const fastkag::PlayerAction&, const Declared*)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/intraday_admission.hpp:125:11: note: ‘best’ declared here
+  125 |  Proposal best,legacy_best;if(c.phase!=3||o.day>=29||o.hour>=23||c.plans.size()!=o.priv.inventories.size())return best;
+      |           ^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp: In member function ‘void fastkag::Simulator::apply_unit(int, int, const fastkag::Action&, int)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:109:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  109 |  if(idx<0||idx>(int)f.hands.size())return;Position pos=idx?f.hands[idx-1]:f.farmer;
+      |  ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:109:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  109 |  if(idx<0||idx>(int)f.hands.size())return;Position pos=idx?f.hands[idx-1]:f.farmer;
+      |                                           ^~~~~~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp: In member function ‘void fastkag::Simulator::process_market(const std::array<fastkag::PlayerAction, 2>&)’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:154:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  154 |    if(!quoted[0]&&!quoted[1])break;bool any=false;for(int p=0;p<2;p++)if(quoted[p]){if(commit_unit(os[p].op,(int)os[p].item,price[p],p)){remaining[p]--;last_market_fills_[p][oi]++;any=true;if(remaining[p]<=0)active[p]=false;}else{auto&f=farms_[p];auto&pr=privates_[p];bool cash_limited=(os[p].op==Op::BUY_SEED&&f.money<price[p])||(os[p].op==Op::BUY_ANIMAL&&shed_sum(pr)<cfg_.shed_capacity&&f.money<price[p]);if(cash_limited)last_market_cash_shortfalls_[p][oi]=std::max(0.,remaining[p]*double(price[p])-f.money);active[p]=false;}}if(!any)break;
+      |    ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:154:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  154 |    if(!quoted[0]&&!quoted[1])break;bool any=false;for(int p=0;p<2;p++)if(quoted[p]){if(commit_unit(os[p].op,(int)os[p].item,price[p],p)){remaining[p]--;last_market_fills_[p][oi]++;any=true;if(remaining[p]<=0)active[p]=false;}else{auto&f=farms_[p];auto&pr=privates_[p];bool cash_limited=(os[p].op==Op::BUY_SEED&&f.money<price[p])||(os[p].op==Op::BUY_ANIMAL&&shed_sum(pr)<cfg_.shed_capacity&&f.money<price[p]);if(cash_limited)last_market_cash_shortfalls_[p][oi]=std::max(0.,remaining[p]*double(price[p])-f.money);active[p]=false;}}if(!any)break;
+      |                                    ^~~~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp: In member function ‘fastkag::Simulator fastkag::Simulator::project_own_market(int, const std::vector<fastkag::Action>&) const’:
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:190:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  190 |  if(!done_)projected.process_market(actions);return projected;
+      |  ^~
+/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/paths_noalias_src/policy/executor/vendor/simulator.cpp:190:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  190 |  if(!done_)projected.process_market(actions);return projected;
+      |                                              ^~~~~~
