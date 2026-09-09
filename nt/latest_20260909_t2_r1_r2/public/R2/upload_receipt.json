@@ -1,0 +1,17 @@
+{
+  "ref": 56114767,
+  "version": "T2R2",
+  "message": "NT T2R2 BatchedDelivery - exact verified build - local7 91.79pct vs710 74pct",
+  "competition": "kaggriculture",
+  "upload_message": "Successfully submitted to Kaggriculture",
+  "upload_calls": 1,
+  "submitted_at_utc": "2026-09-09T05:42:36.575557+00:00",
+  "archive_sha256": "b3fe2e770710182d14e66006ed5d27ae10d396ac59497829afc124e13ac870ed",
+  "archive_bytes": 901648,
+  "binary_sha256": "13388459309550c43cdadc1f274e50b274e8d61e62d5f4e799c86bb51943c663",
+  "reference_binary_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "local_equivalence_games": 1600,
+  "local_official_file_games": 6,
+  "max_local_action_ms": 80.182,
+  "submission_url": "https://www.kaggle.com/competitions/kaggriculture/submissions?submissionId=56114767"
+}

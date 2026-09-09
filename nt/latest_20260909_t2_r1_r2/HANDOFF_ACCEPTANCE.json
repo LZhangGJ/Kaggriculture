@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "date": "2026-09-09",
+  "relocation_games": 32,
+  "new_independent_strength_games": 0,
+  "checks": [
+    "evidence/relocation_R1_seven.json",
+    "evidence/relocation_R2_seven.json",
+    "evidence/relocation_R1_710.json",
+    "evidence/relocation_R2_710.json"
+  ],
+  "action_hash_cash_and_outcome_differences": 0,
+  "runtime_errors": 0,
+  "original_evaluation_games_per_version": 1600,
+  "portable_rebuild_regression_games_per_version": 1600,
+  "official_file_entry_games_per_version": 6,
+  "official_submission_status": {"56114689": "COMPLETE", "56114767": "COMPLETE"},
+  "validation_actions_matched_per_version": 1438,
+  "scope": "Exact relocation checks and retained prior evidence; not a new leaderboard guarantee. Shared C++ arena dependency hashes were verified, no additional compiler matrix run."
+}

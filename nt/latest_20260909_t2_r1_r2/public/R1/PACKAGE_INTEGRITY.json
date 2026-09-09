@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "archive_sha256": "5c689499e360df9ec61e944457a4414b7199665846aa4fe07e22c6f6c39525bf",
+  "bytes": 901170,
+  "files": {
+    "main.py": "838604b0ada3713073c7e1465e97592210bd69041fc1af0a1d7e6842a0d88735",
+    "t2r1_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "t2r1_runtime/agent.so": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+    "t2r1_runtime/config.json": "d5cfa5e0c6516e24bf317421528bd3a1152fe4fd3a4497aec5ab45908b7ebb98",
+    "t2r1_runtime/policy.py": "518b74fad810d7a6237722634a14e0e6ae3c88333e33146dc4ee89fb1ae14aa9"
+  },
+  "no_replays_or_credentials": true,
+  "no_runtime_compilation": true,
+  "wrapper_unchanged": true
+}

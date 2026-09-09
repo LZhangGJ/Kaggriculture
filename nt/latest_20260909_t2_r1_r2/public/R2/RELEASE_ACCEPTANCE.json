@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "version": "T2R2",
+  "submission_id": 56114767,
+  "official_status": {
+    "ref": 56114767,
+    "version": "R2",
+    "status": "COMPLETE",
+    "public_score": "600.0",
+    "error_description": "",
+    "description": "NT T2R2 BatchedDelivery - exact verified build - local7 91.79pct vs710 74pct",
+    "checked_at_utc": "2026-09-09T05:46:12.654978+00:00"
+  },
+  "official_validation": {
+    "submission_id": 56114767,
+    "version": "R2",
+    "checks": [
+      {
+        "episode_id": 107026853,
+        "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+        "episode_state": "EpisodeState.COMPLETED",
+        "frames": 720,
+        "steps": 719,
+        "final_statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "final_rewards": [
+          85287.0,
+          89052.0
+        ],
+        "bytes": 31038734,
+        "sha256": "314b5a94192ba0a079519459837826e43d6f5e5c0adfd426a357d173a3d3b392",
+        "file": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\t2_r1_r2_public_20260909_v1\\R2\\official_evidence\\episode-107026853-replay.json",
+        "url": "https://www.kaggle.com/competitions/kaggriculture/submissions?submissionId=56114767&episodeId=107026853",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS",
+    "checked_at_utc": "2026-09-09T05:46:23.152688+00:00"
+  },
+  "archive_sha256": "b3fe2e770710182d14e66006ed5d27ae10d396ac59497829afc124e13ac870ed",
+  "binary_sha256": "13388459309550c43cdadc1f274e50b274e8d61e62d5f4e799c86bb51943c663",
+  "same_strategy_as_evaluated": true,
+  "exact_regression_games": 1600,
+  "official_local_file_games": 6,
+  "raw_build_and_evidence_folder": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\t2_r1_r2_public_20260909_v1\\R2",
+  "snapshot": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\56114767_t2r2_20260909"
+}

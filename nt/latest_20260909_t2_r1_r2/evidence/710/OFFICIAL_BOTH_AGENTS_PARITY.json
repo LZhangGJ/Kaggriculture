@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "games": 12,
+  "steps": 8628,
+  "checks": [
+    {
+      "policy": "T2",
+      "seed": 2609100000,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "T2",
+      "seed": 2609100000,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "T2",
+      "seed": 2609100001,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "T2",
+      "seed": 2609100001,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R1",
+      "seed": 2609100000,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R1",
+      "seed": 2609100000,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R1",
+      "seed": 2609100001,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R1",
+      "seed": 2609100001,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R2",
+      "seed": 2609100000,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R2",
+      "seed": 2609100000,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R2",
+      "seed": 2609100001,
+      "seat": 0,
+      "status": "PASS",
+      "checked_steps": 719
+    },
+    {
+      "policy": "R2",
+      "seed": 2609100001,
+      "seat": 1,
+      "status": "PASS",
+      "checked_steps": 719
+    }
+  ]
+}

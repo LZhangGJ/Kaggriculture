@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "archive_sha256": "b3fe2e770710182d14e66006ed5d27ae10d396ac59497829afc124e13ac870ed",
+  "games": [
+    {
+      "mode": "selfplay",
+      "seed": 0,
+      "opponent": null,
+      "seat": null,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        85287.0,
+        89052.0
+      ],
+      "errors": [],
+      "seconds": 5.7041705639999805,
+      "max_action_ms": 67.398,
+      "actions_over_1s": 0,
+      "status": "PASS"
+    },
+    {
+      "mode": "selfplay",
+      "seed": 260909902,
+      "opponent": null,
+      "seat": null,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        69959.0,
+        69959.0
+      ],
+      "errors": [],
+      "seconds": 5.714184464999988,
+      "max_action_ms": 73.976,
+      "actions_over_1s": 0,
+      "status": "PASS"
+    },
+    {
+      "mode": "frozen_parity",
+      "seed": 2609099000,
+      "opponent": 0,
+      "seat": 0,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        84821.0,
+        63765.0
+      ],
+      "errors": [],
+      "seconds": 4.554671920000004,
+      "max_action_ms": 64.86200000000001,
+      "actions_over_1s": 0,
+      "matched_actions": 719,
+      "status": "PASS"
+    },
+    {
+      "mode": "frozen_parity",
+      "seed": 2609099000,
+      "opponent": 0,
+      "seat": 1,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        63765.0,
+        84821.0
+      ],
+      "errors": [],
+      "seconds": 4.567593986999981,
+      "max_action_ms": 61.086,
+      "actions_over_1s": 0,
+      "matched_actions": 719,
+      "status": "PASS"
+    },
+    {
+      "mode": "frozen_parity",
+      "seed": 2609099000,
+      "opponent": 1,
+      "seat": 0,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        97224.0,
+        82997.0
+      ],
+      "errors": [],
+      "seconds": 4.579107086000022,
+      "max_action_ms": 80.182,
+      "actions_over_1s": 0,
+      "matched_actions": 719,
+      "status": "PASS"
+    },
+    {
+      "mode": "frozen_parity",
+      "seed": 2609099000,
+      "opponent": 1,
+      "seat": 1,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        82997.0,
+        97224.0
+      ],
+      "errors": [],
+      "seconds": 4.46843812100002,
+      "max_action_ms": 75.2,
+      "actions_over_1s": 0,
+      "matched_actions": 719,
+      "status": "PASS"
+    }
+  ],
+  "errors": 0,
+  "max_action_ms": 80.182,
+  "official_interpreter_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "scope": "Official1.32.7 Environment.run extracted file entry, default1-second timeout; local not Kaggle hardware"
+}

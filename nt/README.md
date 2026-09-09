@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260909_t2_r1_r2/`](latest_20260909_t2_r1_r2/README_ZH.md)
+  — T2-R1 ServiceAligned and T2-R2 BatchedDelivery: full policy sources, exact
+  Public artifacts (56114689 / 56114767, both COMPLETE), official validation
+  receipts, seven-opponent and full710 paired results, relocatable C++ runner,
+  and Chinese usage guide. No large replay or build caches. Seven-opponent
+  win rates are 92.21% / 91.79%, not a per-opponent 90% guarantee.
 - [`latest_20260909_triad_dp_t1/`](latest_20260909_triad_dp_t1/README_ZH.md)
   — unchanged GPT Triad-DP T1 release: autonomous rule planning, daily public
   scenario comparison, dynamic C++ execution, seven live opponents, build

@@ -1,0 +1,41 @@
+{
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-DNDEBUG",
+    "-fPIC",
+    "-fopenmp",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/.venv_wsl_cpp/lib/python3.12/site-packages/pybind11/include",
+    "-I/usr/include/python3.12",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/gpt_review/gpt_code/Kaggriculture_T2_RecordedCandidate_Recovered_20260909/Kaggriculture_T2_RecordedCandidate_Recovered_20260909/arena/experiments/daily_dp_v7_20260903/native",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/gpt_review/gpt_code/Kaggriculture_T2_RecordedCandidate_Recovered_20260909/Kaggriculture_T2_RecordedCandidate_Recovered_20260909/src/panel.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/simulator.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/fieldbook_adapter.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/boatlee_v29.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/kaito_v58.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/lynn_v5.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/three_day_adapter.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/ecobot_v7_core.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/ecobot_v7.o",
+    "-ldl",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/_triad_panel.cpython-312-x86_64-linux-gnu.so"
+  ],
+  "seconds": 21.520445554000005,
+  "output_hash": "8986dda0ef9251866f0a4cb52fcdbe89c0bd6c55e98d1d59cf2a84a6a2335237",
+  "source_hash": "6e980c69979fce94137fabfd6d53b095eb2418b0b05300215bffdb86981ab9d5",
+  "object_hashes": {
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/simulator.o": "3c9208fba862f92e04e8de177f6e3202658a1c0a954991ead1d0cb70c4d393b3",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/fieldbook_adapter.o": "5ab2ede15fc3889e36edca5258309bbb3eed0706d76d86c7c378074873a32399",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/boatlee_v29.o": "731ca78d167f563f91015f73a183d9269a885a2f044c09680289696affa99bda",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/kaito_v58.o": "ed7e1e3027d2095ffc1379029b7407cf4f7357547f66161cd4e602790869ad61",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/lynn_v5.o": "5f1be1b338be1e92962e73440c8f0be713b1df6f21f5d812e6a5c3f1dcf8ccc3",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/three_day_adapter.o": "bf9b109a838107d402224ea81e1e3a86be665b6c11ee87a45f3e7fcfa2627eae",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/ecobot_v7_core.o": "aa818e5dfbd4f30df87ca8fd71a9ed76f9afdc28eef83cf944be55f20ecb4df7",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/t2_vs_t1_seven_holdout_20260909_v1/objects/ecobot_v7.o": "ae9b963a3d490f7d106a4794321e53e4b88bbec5b53aae2d57b91cdc7c8748a5"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+}

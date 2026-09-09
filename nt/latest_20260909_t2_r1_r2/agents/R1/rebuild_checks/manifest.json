@@ -1,0 +1,45 @@
+{
+  "schema": "T2_R1_SERVICE_ALIGNED_20260909",
+  "reference_binary_sha256": "ead6b00d982e798fa570756859304ad40d77aa9a6a278e0ca2d3c1a9140f9b44",
+  "fixtures": {
+    "trace_2609096005_5_1.json.gz": {
+      "cash": 133601.0,
+      "opponent_cash": 110927.0,
+      "action_hash_fnv64": 17436468519997993422
+    },
+    "trace_2609096017_5_1.json.gz": {
+      "cash": 110077.0,
+      "opponent_cash": 85157.0,
+      "action_hash_fnv64": 1829580653467767193
+    },
+    "trace_2609096019_1_1.json.gz": {
+      "cash": 98778.0,
+      "opponent_cash": 103547.0,
+      "action_hash_fnv64": 628512370585960346
+    },
+    "trace_2609096033_3_1.json.gz": {
+      "cash": 112902.0,
+      "opponent_cash": 104661.0,
+      "action_hash_fnv64": 11524623843880243595
+    },
+    "trace_2609096077_0_0.json.gz": {
+      "cash": 134287.0,
+      "opponent_cash": 115215.0,
+      "action_hash_fnv64": 8936909928297786430
+    }
+  },
+  "file_hashes": {
+    "policy/agent.py": "518b74fad810d7a6237722634a14e0e6ae3c88333e33146dc4ee89fb1ae14aa9",
+    "policy/config.json": "d5cfa5e0c6516e24bf317421528bd3a1152fe4fd3a4497aec5ab45908b7ebb98",
+    "rebuild_checks/check_binary.py": "e4e34fa49fae89b056704e8de226464a8bac080e446e1be1146523fa06aa2596",
+    "rebuild_checks/fixtures/trace_2609096005_5_1.json.gz": "f815aa102e58a77c2aa67d71b3f611e011300705f14b705a65a1b0eac177bd02",
+    "rebuild_checks/fixtures/trace_2609096017_5_1.json.gz": "87b85d3eef8d64b312621ffb5cce58e12a0b063c4dc5e8f50d59d9827cb48634",
+    "rebuild_checks/fixtures/trace_2609096019_1_1.json.gz": "24c10aaa645ea6bc5a5e3866f6dd90f4fd9dd2ca72fd468b09f217a7191c0398",
+    "rebuild_checks/fixtures/trace_2609096033_3_1.json.gz": "b2c514637528a68b06e0f9053c67f168cb5c16053b17a8c746a5cb7612aea5c4",
+    "rebuild_checks/fixtures/trace_2609096077_0_0.json.gz": "93d2286251236ce2c85a241e79504dff925f81d1b65459b4952d35fae39e208a",
+    "rebuild_checks/referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+    "rebuild_checks/referee/official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+    "rebuild_checks/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "rebuild_checks/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  }
+}

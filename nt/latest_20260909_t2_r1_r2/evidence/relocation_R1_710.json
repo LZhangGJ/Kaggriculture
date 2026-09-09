@@ -1,0 +1,20 @@
+{
+  "version": "R1",
+  "suite": "710",
+  "games": 2,
+  "wins": 2,
+  "win_rate": 1,
+  "mean_cash": 123126.0,
+  "mean_margin": 1165.0,
+  "errors": 0,
+  "incomplete": 0,
+  "reference_comparison": true,
+  "differences": [],
+  "binary_sha256": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+  "seconds": 0.9956880340000005,
+  "seeds": [
+    2609100000
+  ],
+  "threads": 4,
+  "status": "PASS"
+}

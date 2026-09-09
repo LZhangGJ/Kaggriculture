@@ -1,0 +1,63 @@
+{
+  "schema": "T2_R2_BATCHED_DELIVERY_20260909",
+  "reference_binary_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "fixtures": {
+    "trace_2609096003_6_0.json.gz": {
+      "cash": 76282.0,
+      "opponent_cash": 75572.0,
+      "action_hash_fnv64": 5151785770697080660
+    },
+    "trace_2609096003_6_1.json.gz": {
+      "cash": 76282.0,
+      "opponent_cash": 75572.0,
+      "action_hash_fnv64": 10027290325345054596
+    },
+    "trace_2609096005_2_0.json.gz": {
+      "cash": 81132.0,
+      "opponent_cash": 72273.0,
+      "action_hash_fnv64": 15633386095349615138
+    },
+    "trace_2609096005_2_1.json.gz": {
+      "cash": 81132.0,
+      "opponent_cash": 72273.0,
+      "action_hash_fnv64": 1171965507390732654
+    },
+    "trace_2609096005_6_0.json.gz": {
+      "cash": 136721.0,
+      "opponent_cash": 126662.0,
+      "action_hash_fnv64": 8442862566992993149
+    },
+    "trace_2609096005_6_1.json.gz": {
+      "cash": 136721.0,
+      "opponent_cash": 126662.0,
+      "action_hash_fnv64": 12204195043062319551
+    },
+    "trace_2609096019_1_0.json.gz": {
+      "cash": 79182.0,
+      "opponent_cash": 79241.0,
+      "action_hash_fnv64": 7159264989402481222
+    },
+    "trace_2609096019_1_1.json.gz": {
+      "cash": 79182.0,
+      "opponent_cash": 79241.0,
+      "action_hash_fnv64": 5422201424851257244
+    }
+  },
+  "file_hashes": {
+    "policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "rebuild_checks/check_binary.py": "ba8a2fcff01c596ea52e44c2c2cf6bdc8b539b69678f34e9c324c64283964fd2",
+    "rebuild_checks/referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+    "rebuild_checks/fixtures/trace_2609096005_2_0.json.gz": "2a02f07c6f799893ab08142b634c43fbdc76df9abf9a744f5e5ddf279a6a3028",
+    "rebuild_checks/fixtures/trace_2609096019_1_0.json.gz": "69e854ea5ba14250f74a8b663a03bde9313cff6aa378f64749eb3dc76f7a928c",
+    "rebuild_checks/fixtures/trace_2609096005_2_1.json.gz": "1f8f2572cb1ccb6449f14d55f70e4dcb8a2638871235b4ec1ae41599ef19e38b",
+    "rebuild_checks/fixtures/trace_2609096005_6_1.json.gz": "3c49d817cf8ad9a048d2828b24a6223658e92bf9e7b628a8a850ea94aed20f2e",
+    "rebuild_checks/fixtures/trace_2609096019_1_1.json.gz": "b332a192a8b287393897ca3d25d9c8b09a3b91bcc1414345dcb33f1079ac5230",
+    "rebuild_checks/fixtures/trace_2609096005_6_0.json.gz": "ad396084a0574c220216c970519522394bae1e47a277366792bcf29ee3fc5800",
+    "rebuild_checks/fixtures/trace_2609096003_6_0.json.gz": "0d6d3ca2199d956ba572a34f855f1d5ff6086b94e94b3ad2918a098b8acab3ad",
+    "rebuild_checks/fixtures/trace_2609096003_6_1.json.gz": "e4db11b7a5cd2ece176aa498487bd6d87c7b12cccd564364b59c0237cbe701d6",
+    "rebuild_checks/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "rebuild_checks/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
+    "rebuild_checks/referee/official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  }
+}
