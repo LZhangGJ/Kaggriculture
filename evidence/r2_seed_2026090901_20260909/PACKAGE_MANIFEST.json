@@ -1,0 +1,64 @@
+{
+  "description": "R2 seed 2026090901 investigation: requested report and five referenced evidence files",
+  "source_code_commit": "54f0b46",
+  "files": {
+    ".gitattributes": {
+      "bytes": 72,
+      "sha256": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f",
+      "encoding": "original",
+      "purpose": "Preserve evidence bytes and manifest hashes across Git checkouts"
+    },
+    "all_experiments.csv": {
+      "bytes": 3962,
+      "sha256": "d190341e8cf423d881185101e547ab2b88d35e848f745a150cae3015745b156d",
+      "original_bytes": 3962,
+      "original_sha256": "d190341e8cf423d881185101e547ab2b88d35e848f745a150cae3015745b156d",
+      "encoding": "original"
+    },
+    "baseline_audit.json.gz": {
+      "bytes": 19629,
+      "sha256": "e9ca53d299aea6ab6966cde2f4383626e887b77ced0fdab954cb354dcc091b09",
+      "original_bytes": 427991,
+      "original_sha256": "406621306c3556179a031a860f7334c7a5eaaa462c5b3f65f3c8a5018ada92a3",
+      "encoding": "gzip_lossless"
+    },
+    "baseline_probe.json.gz": {
+      "bytes": 131109,
+      "sha256": "42d6d30ffa4528046ec3ad9ddddaa1ba7c9595567311f207d3374f5e3cecba56",
+      "original_bytes": 2880732,
+      "original_sha256": "aceab400cc40c5399642837bb90a5463771162ddfaacad731504a60c67ccedd6",
+      "encoding": "gzip_lossless"
+    },
+    "candidate_results.json": {
+      "bytes": 10828,
+      "sha256": "4ead6a9b61951316dfd299fc5bb470b0e52288a47a0ed8b5c7aec4cff2c18717",
+      "original_bytes": 10828,
+      "original_sha256": "4ead6a9b61951316dfd299fc5bb470b0e52288a47a0ed8b5c7aec4cff2c18717",
+      "encoding": "original"
+    },
+    "validation.json": {
+      "bytes": 2232,
+      "sha256": "f6e1ff08631da586a2899a4f3389378791799c4654fa03c803488ac9f2e41836",
+      "original_bytes": 2232,
+      "original_sha256": "f6e1ff08631da586a2899a4f3389378791799c4654fa03c803488ac9f2e41836",
+      "encoding": "original"
+    },
+    "REPORT_ZH.md": {
+      "bytes": 14352,
+      "sha256": "f013ec000ec50d2e4d5bd350f887528cfbbf13166e353187b9a158f20bdf3f42",
+      "source_original_sha256": "ffe13a5228f5d178e48374b5b266e3cad799b4e9e03d604c2d432c6baf2ea571",
+      "encoding": "utf-8",
+      "changes": [
+        "Replace local links with repository or attached-evidence links",
+        "Clarify original local-only replay and reproduction files",
+        "Clarify the wheat harvest date as day 16"
+      ]
+    }
+  },
+  "not_included": [
+    "full replay and rollout files",
+    "diagnostic build artifacts",
+    "local experiment scripts"
+  ],
+  "verification": "Each compressed evidence file decompresses byte-for-byte to the original"
+}
