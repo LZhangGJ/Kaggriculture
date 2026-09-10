@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "date": "2026-09-11",
+  "scope": "AFS R1 and R2 execution-only workflow integrity repair",
+  "protocol": {
+    "seed_start": 2610100000,
+    "seed_count": 50,
+    "seats": 2,
+    "opponents": 11,
+    "games_per_version": 1100,
+    "steps_per_game": 719
+  },
+  "r1": {
+    "unit_checks_passed": 70,
+    "games": 1100,
+    "wins": 856,
+    "ties": 4,
+    "losses": 240,
+    "win_rate": 0.7781818181818182,
+    "mean_cash": 106716.93363636364,
+    "mean_margin": 14457.565454545454,
+    "action_hash_changes": 1,
+    "outcome_changes": 0,
+    "deadline_misses": 0,
+    "single_process_max_latency_seconds": 0.2023445229999652
+  },
+  "r2": {
+    "unit_checks_passed": 72,
+    "audit_matches_frozen_actions": 1100,
+    "games": 1100,
+    "audit": {
+      "wins": 824,
+      "ties": 4,
+      "losses": 272,
+      "mean_cash": 106030.06,
+      "mean_margin": 14352.664545454545,
+      "mismatches": 40,
+      "unresolved": 40,
+      "deadline_misses": 2
+    },
+    "repair": {
+      "wins": 824,
+      "ties": 4,
+      "losses": 272,
+      "mean_cash": 106031.25636363636,
+      "mean_margin": 14355.342727272728,
+      "mismatches": 10,
+      "witness_restores": 10,
+      "unresolved": 0,
+      "deadline_misses": 0,
+      "action_hash_changes": 2,
+      "outcome_changes": 0,
+      "single_process_max_latency_seconds": 0.46790086600003633
+    },
+    "delta": {
+      "mean_cash": 1.19636363636528,
+      "mean_margin": 2.67818181818257,
+      "unresolved": -40,
+      "deadline_misses": -2
+    }
+  },
+  "interpretation": "Execution-integrity fix only; no demonstrated aggregate win-rate increase."
+}

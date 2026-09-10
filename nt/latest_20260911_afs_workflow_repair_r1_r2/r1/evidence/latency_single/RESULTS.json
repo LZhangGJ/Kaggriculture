@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "games": 2,
+    "wins": 2,
+    "losses": 0,
+    "ties": 0,
+    "errors": 0,
+    "win_rate": 1.0,
+    "mean_cash": 133518.0,
+    "mean_margin": 91248.0,
+    "median_margin": 91248.0,
+    "max_latency_seconds": 0.2023445229999652,
+    "mean_game_seconds": 2.7921295869999767,
+    "workflow": {
+      "captures": 60,
+      "fast_paths": 1276,
+      "certificate_failures": 1,
+      "mismatches": 1,
+      "witness_used": 0,
+      "chain_repairs": 1,
+      "restored": 1,
+      "unresolved": 0,
+      "verify_calls": 63,
+      "repair_trials": 96,
+      "accounted": 5070,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  "by_opponent": {
+    "nagatakengo_v70": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0,
+      "errors": 0,
+      "win_rate": 1.0,
+      "mean_cash": 133518.0,
+      "mean_margin": 91248.0,
+      "median_margin": 91248.0,
+      "max_latency_seconds": 0.2023445229999652,
+      "mean_game_seconds": 2.7921295869999767,
+      "workflow": {
+        "captures": 60,
+        "fast_paths": 1276,
+        "certificate_failures": 1,
+        "mismatches": 1,
+        "witness_used": 0,
+        "chain_repairs": 1,
+        "restored": 1,
+        "unresolved": 0,
+        "verify_calls": 63,
+        "repair_trials": 96,
+        "accounted": 5070,
+        "deadline_misses": 0,
+        "deadline_days": 0,
+        "output_overrides_detected": 0,
+        "output_restores": 0,
+        "output_restore_rejected": 0
+      }
+    }
+  },
+  "seconds_this_run": 5.737145688999931
+}

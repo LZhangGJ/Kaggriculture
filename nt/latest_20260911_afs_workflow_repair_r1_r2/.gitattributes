@@ -1,0 +1,12 @@
+*.so binary
+*.json text eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.inc text eol=lf
+*.md text eol=lf
+# Preserve the exact validated policy-source bytes.
+r1/policy/** -text
+r2/policy/** -text
+r1/policy/observation_codec.hpp whitespace=-blank-at-eof
+r2/policy/observation_codec.hpp whitespace=-blank-at-eof

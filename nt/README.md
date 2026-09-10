@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260911_afs_workflow_repair_r1_r2/`](latest_20260911_afs_workflow_repair_r1_r2/README_ZH.md)
+  — AFS R1/R2 execution-integrity handoff. Adds the teammate-derived complete
+  workflow and worker-scheduling repair behind independent off/audit/on build
+  switches, full sources and binaries, 70/72 mechanism tests, and two 1,100-game
+  acceptance panels. It removes confirmed dropped obligations without changing
+  economic planning semantics; no aggregate win-rate gain is claimed.
 - [`latest_20260911_p16_jointafs_r1/`](latest_20260911_p16_jointafs_r1/README_ZH.md)
   — P16 JointAFS R1 complete source/config/binaries, eleven live Python
   opponents, official local referee, 1,100-game paired evidence, portable
