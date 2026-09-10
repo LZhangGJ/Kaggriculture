@@ -1,0 +1,32 @@
+name: R2 market repair validation inputs
+on:
+  push:
+    branches: [agent/r2-market-repair-20260910-gpt]
+    paths: [.github/workflows/r2-market-repair-validation.yml]
+permissions:
+  contents: read
+jobs:
+  frozen-inputs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: nt/latest_20260910_r2p16
+          persist-credentials: false
+      - name: Preserve exact source and provenance
+        run: |
+          git rev-parse HEAD > validation_source_commit.txt
+          git rev-parse HEAD:nt/latest_20260910_r2p16 > validation_source_tree.txt
+          test "$(cat validation_source_tree.txt)" = "3523811d75844b3151891db5e2bab20cccbf263e"
+          tar -czf r2p16_frozen_source.tar.gz nt/latest_20260910_r2p16 validation_source_commit.txt validation_source_tree.txt
+          sha256sum r2p16_frozen_source.tar.gz > r2p16_frozen_source.tar.gz.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r2p16-frozen-source-20260910
+          path: |
+            r2p16_frozen_source.tar.gz
+            r2p16_frozen_source.tar.gz.sha256
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
