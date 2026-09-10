@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "actions": 5752,
+  "rows": [
+    {
+      "opponent": "nagatakengo_v70",
+      "seed": 2609110008,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 162588.0,
+      "opponent_cash": 43223.0,
+      "r2_margin": 119365.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "YARN_STORE",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "joint_action_sha256": "59db420dc445d25be08db71b4309b147aa76bc6ac86900aade883d9c1b19fdfe",
+      "seconds": 1.9483873710000097,
+      "latency": {
+        "opponent": {
+          "total": 0.10774153499993133,
+          "maximum": 0.0003930379999985689,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.3562784130001972,
+          "maximum": 0.08769277000000386,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/nagatakengo_v70/2609110008_seat0.json.gz"
+    },
+    {
+      "opponent": "nagatakengo_v70",
+      "seed": 2609110008,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 162588.0,
+      "opponent_cash": 43223.0,
+      "r2_margin": 119365.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "YARN_STORE",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "joint_action_sha256": "d33d14d9b0f0722fc22962e33c1554d885c0feda2e7a56d88ab37d5c7423f6cf",
+      "seconds": 1.9249581720000037,
+      "latency": {
+        "opponent": {
+          "total": 0.10702378899995324,
+          "maximum": 0.0004342150000127276,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.3387142450001903,
+          "maximum": 0.08711331899999664,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/nagatakengo_v70/2609110008_seat1.json.gz"
+    },
+    {
+      "opponent": "aurax_reactive_v1",
+      "seed": 2609110028,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 88637.0,
+      "opponent_cash": 78835.0,
+      "r2_margin": 9802.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "317c2de54b09a3caa30190d4562edb96a947ff9cedaf2ab2cbf4c03e054e215a",
+      "seconds": 2.0622791749999863,
+      "latency": {
+        "opponent": {
+          "total": 0.0470399639999215,
+          "maximum": 0.0002757430000031036,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4531691069998942,
+          "maximum": 0.07106759100000204,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/aurax_reactive_v1/2609110028_seat0.json.gz"
+    },
+    {
+      "opponent": "aurax_reactive_v1",
+      "seed": 2609110028,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 88637.0,
+      "opponent_cash": 78835.0,
+      "r2_margin": 9802.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "6e65cbfec824a1bf7660a35dcb3ff599bf69cc50cc3e385c57097941552f92d8",
+      "seconds": 2.052413773000012,
+      "latency": {
+        "opponent": {
+          "total": 0.04677800799964871,
+          "maximum": 0.0003063350000047649,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4471785799995303,
+          "maximum": 0.06992813799999453,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/aurax_reactive_v1/2609110028_seat1.json.gz"
+    },
+    {
+      "opponent": "thomas_955_v2",
+      "seed": 2609110042,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 86775.0,
+      "opponent_cash": 60513.0,
+      "r2_margin": 26262.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "joint_action_sha256": "6ecdfaac93cab2514cbb2a43ee6ec6c0d816c327bc6f86e5cdc97204fa2c1dde",
+      "seconds": 1.8850733239999897,
+      "latency": {
+        "opponent": {
+          "total": 0.010139672999372351,
+          "maximum": 4.507699998157477e-05,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.3248607629992932,
+          "maximum": 0.07098516400000676,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/thomas_955_v2/2609110042_seat0.json.gz"
+    },
+    {
+      "opponent": "thomas_955_v2",
+      "seed": 2609110042,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 83669.0,
+      "opponent_cash": 54529.0,
+      "r2_margin": 29140.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP"
+      ],
+      "joint_action_sha256": "eb02795a39a67318602667cec32b4355aa0a90b476317807dae0ae8fb2f9fd29",
+      "seconds": 1.8982905480000056,
+      "latency": {
+        "opponent": {
+          "total": 0.010295108999599734,
+          "maximum": 0.0001480909999997948,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.3198402950003185,
+          "maximum": 0.0708671719999927,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/thomas_955_v2/2609110042_seat1.json.gz"
+    },
+    {
+      "opponent": "shop0909",
+      "seed": 2609110071,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 75594.0,
+      "opponent_cash": 74195.0,
+      "r2_margin": 1399.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "joint_action_sha256": "6c06613921f1db87a22736f47755751bee5e8f899bdebe0ee4d5e5d5d03fc7bc",
+      "seconds": 2.054485492999987,
+      "latency": {
+        "opponent": {
+          "total": 0.05482574699939846,
+          "maximum": 0.029162017000004425,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4421034990002397,
+          "maximum": 0.07958573600001273,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/shop0909/2609110071_seat0.json.gz"
+    },
+    {
+      "opponent": "shop0909",
+      "seed": 2609110071,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 75594.0,
+      "opponent_cash": 74195.0,
+      "r2_margin": 1399.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "joint_action_sha256": "655c4af20a4e18bc8efa0b8e2c10b60f4eaeb3182d5b43726666a06c31a42c15",
+      "seconds": 2.103951964999993,
+      "latency": {
+        "opponent": {
+          "total": 0.0566415910000444,
+          "maximum": 0.03068080899998904,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4496583239997562,
+          "maximum": 0.07999824000000899,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/shop0909/2609110071_seat1.json.gz"
+    }
+  ]
+}

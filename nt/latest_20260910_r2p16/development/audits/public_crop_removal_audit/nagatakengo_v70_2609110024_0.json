@@ -1,0 +1,2423 @@
+{
+  "row": {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609110024,
+    "opponent_seat": 0,
+    "steps": 719,
+    "r2_cash": 176911.0,
+    "opponent_cash": 45576.0,
+    "r2_margin": 131335.0,
+    "r2_win": true,
+    "opponent_win": false,
+    "tie": false,
+    "runtime_error": null,
+    "shops": [
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "joint_action_sha256": "8767cf6c7b05b51a7ef79d0bc747a317d26fc7c01efdab26c4b43dd25a1af606",
+    "seconds": 3.263078902000018,
+    "latency": {
+      "opponent": {
+        "total": 0.1898776090000922,
+        "maximum": 0.0005690680000043358,
+        "over_1s": 0
+      },
+      "r2": {
+        "total": 2.1469980660001795,
+        "maximum": 0.10646065099999191,
+        "over_1s": 0
+      }
+    },
+    "trace": "experiments/r2_public11_upgrade_20260910/baseline_remaining5/traces/nagatakengo_v70/2609110024_seat0.json.gz"
+  },
+  "inferred": [],
+  "labels": [
+    {
+      "step": 59,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 60,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 61,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 62,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 62,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 65,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 65,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 89,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 89,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 90,
+      "pos": [
+        0,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 107,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 109,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 110,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 110,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 112,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 117,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 117,
+      "pos": [
+        4,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 135,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 137,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 140,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 179,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 180,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 181,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 182,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 184,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 190,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 205,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 209,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 212,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 213,
+      "pos": [
+        0,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 227,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 228,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 229,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 230,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 234,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 244,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 246,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 246,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 248,
+      "pos": [
+        4,
+        1
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 251,
+      "pos": [
+        2,
+        3
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 251,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 252,
+      "pos": [
+        3,
+        1
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 253,
+      "pos": [
+        2,
+        2
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 253,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 258,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 261,
+      "pos": [
+        3,
+        0
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 282,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 294,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 296,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 299,
+      "pos": [
+        4,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 303,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 304,
+      "pos": [
+        2,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 304,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 304,
+      "pos": [
+        3,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 306,
+      "pos": [
+        3,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 306,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 307,
+      "pos": [
+        2,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 307,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 308,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 308,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 310,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 315,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 320,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 400,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 401,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 402,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 404,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 411,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 416,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 416,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 418,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 418,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 422,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 425,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 428,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 428,
+      "pos": [
+        9,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 449,
+      "pos": [
+        1,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 459,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 464,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 465,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 465,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 467,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 470,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 471,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        9,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        0,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        1,
+        9
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 478,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 488,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 495,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 507,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 509,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 511,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 519,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 523,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 523,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 526,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 526,
+      "pos": [
+        4,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 526,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 544,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 546,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 550,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 569,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 575,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 589,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 589,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 592,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 593,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 594,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 597,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 597,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 645,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 651,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 655,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 655,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 657,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 661,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 666,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 667,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 669,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 669,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 679,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 682,
+      "pos": [
+        4,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 685,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 687,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 687,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 687,
+      "pos": [
+        1,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 689,
+      "pos": [
+        0,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 710,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 712,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 713,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    }
+  ],
+  "matched": 0,
+  "false": [],
+  "missed": [
+    {
+      "step": 59,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 60,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 61,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 62,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 62,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 65,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 65,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 89,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 89,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 90,
+      "pos": [
+        0,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 107,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 109,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 110,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 110,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 112,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 117,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 117,
+      "pos": [
+        4,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 135,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 137,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 140,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 179,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 180,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 181,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 182,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 184,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 190,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 205,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 209,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 212,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 213,
+      "pos": [
+        0,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 227,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 228,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 229,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 230,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 234,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 244,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 246,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 246,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 248,
+      "pos": [
+        4,
+        1
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 251,
+      "pos": [
+        2,
+        3
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 251,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 252,
+      "pos": [
+        3,
+        1
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 253,
+      "pos": [
+        2,
+        2
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 253,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 258,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 261,
+      "pos": [
+        3,
+        0
+      ],
+      "crop": "MELON",
+      "age": 10
+    },
+    {
+      "step": 282,
+      "pos": [
+        2,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 294,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 296,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 299,
+      "pos": [
+        4,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 303,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 304,
+      "pos": [
+        2,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 304,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 304,
+      "pos": [
+        3,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 306,
+      "pos": [
+        3,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 306,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 307,
+      "pos": [
+        2,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 307,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 308,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 308,
+      "pos": [
+        2,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 310,
+      "pos": [
+        1,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 315,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 320,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 400,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 401,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 402,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 404,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 411,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 416,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 416,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 418,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 418,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 422,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 425,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 428,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 428,
+      "pos": [
+        9,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 449,
+      "pos": [
+        1,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 459,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 464,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 465,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 465,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 467,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 470,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 471,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        9,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        0,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 476,
+      "pos": [
+        1,
+        9
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 478,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 488,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 495,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 507,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 509,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 511,
+      "pos": [
+        4,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 519,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 523,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 523,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 526,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 526,
+      "pos": [
+        4,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 526,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 544,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 546,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 550,
+      "pos": [
+        0,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 569,
+      "pos": [
+        0,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 575,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 589,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 589,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 592,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 593,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 594,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 4
+    },
+    {
+      "step": 597,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 597,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 645,
+      "pos": [
+        1,
+        3
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 651,
+      "pos": [
+        5,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 655,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 655,
+      "pos": [
+        3,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 657,
+      "pos": [
+        2,
+        4
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 661,
+      "pos": [
+        1,
+        2
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 666,
+      "pos": [
+        2,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 667,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 669,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 669,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 679,
+      "pos": [
+        4,
+        6
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 682,
+      "pos": [
+        4,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 685,
+      "pos": [
+        3,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 687,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 3
+    },
+    {
+      "step": 687,
+      "pos": [
+        9,
+        1
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 687,
+      "pos": [
+        1,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 689,
+      "pos": [
+        0,
+        8
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 710,
+      "pos": [
+        8,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 712,
+      "pos": [
+        1,
+        7
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    },
+    {
+      "step": 713,
+      "pos": [
+        9,
+        0
+      ],
+      "crop": "WHEAT",
+      "age": 2
+    }
+  ]
+}

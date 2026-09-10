@@ -1,0 +1,28 @@
+{
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-DR2_STARTUP_SUPPLY_MODE=2",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_MARKET_INTEGRAL=0",
+    "-DR2_SALE_CLOCK_MODE=0",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260910_r2p16/policy/bridge.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260910_r2p16/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260910_r2p16/build/p16_rebuilt.so"
+  ],
+  "seconds": 16.719761288999997,
+  "sha256": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b",
+  "status": "COMPILED_NOT_BEHAVIOR_VALIDATED",
+  "unit": "PASS: initial-only, private isolation, finite legal net flows, existing-crop guard, MPC proposal propagation and valuation effect, real next-day clear"
+}

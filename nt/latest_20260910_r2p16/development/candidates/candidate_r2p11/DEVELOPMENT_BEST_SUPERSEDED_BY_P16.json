@@ -1,0 +1,80 @@
+{
+  "name": "R2P11 observed crop clock + P9 split sale",
+  "status": "BEST_DEVELOPMENT_ONLY_NEW32_NOT_BEST_NOT_90_PERCENT",
+  "binary": "candidate_r2p11\\policy\\cropclock1_sale1.so",
+  "binary_sha256": "6ce9e670163a7f6fcea7f449a152d70f758d0f0984eb60c22e7e81446d5610d1",
+  "build_receipt": "candidate_r2p11/cropclock1_sale1.BUILD.json",
+  "config": "crop_clock_screen100\\cropclock1_sale1\\cropclock1_sale1\\CONFIG.json",
+  "protocol": "crop_clock_screen100/cropclock1_sale1/PROTOCOL.json",
+  "results": "crop_clock_screen100\\cropclock1_sale1\\cropclock1_sale1\\RESULTS.json",
+  "games": 2200,
+  "wins": 1744,
+  "baseline_wins": 1501,
+  "rescued_losses": 404,
+  "lost_old_wins": 161,
+  "mean_cash_delta": 1704.6963636363637,
+  "mean_margin_delta": 1175.1254545454547,
+  "macro_win_rate": 0.7927272727272727,
+  "development_seeds": [
+    2609110000,
+    2609110099
+  ],
+  "paired_original": {
+    "rescued": 404,
+    "lost_wins": 161,
+    "mean_cash_delta": 1704.6963636363637,
+    "mean_margin_delta": 1175.1254545454547,
+    "win_delta": 0.11045454545454546,
+    "paired_seed_win_delta95": [
+      0.039999999999999994,
+      0.18181818181818182
+    ]
+  },
+  "paired_previous_p9": {
+    "rescued": 244,
+    "lost_wins": 166,
+    "mean_cash_delta": 978.6845454545454,
+    "mean_margin_delta": 722.670909090909,
+    "win_delta": 0.035454545454545454,
+    "paired_seed_win_delta95": [
+      -0.017272727272727273,
+      0.08863636363636364
+    ]
+  },
+  "independent_confirmation": {
+    "status": "COMPLETED_NOT_90_PERCENT",
+    "results": "crop_clock_validation32/RESULTS.json",
+    "seeds": [
+      2609123000,
+      2609123031
+    ],
+    "overall": {
+      "games": 704,
+      "valid_games": 704,
+      "errors": 0,
+      "r2_wins": 539,
+      "losses": 165,
+      "ties": 0,
+      "r2_win_rate": 0.765625,
+      "r2_mean_cash": 109972.01704545454,
+      "opponent_mean_cash": 93932.65198863637,
+      "mean_margin": 16039.365056818182,
+      "median_margin": 6470.5
+    },
+    "paired_original": {
+      "rescued": 91,
+      "lost_wins": 74,
+      "mean_cash_delta": 4397.011363636364,
+      "mean_margin_delta": 1642.484375,
+      "win_delta": 0.024147727272727276,
+      "paired_seed_win_delta95": [
+        -0.08380681818181818,
+        0.12926136363636365
+      ]
+    }
+  },
+  "previous_best_snapshot": "candidate_r2p9\\DEVELOPMENT_BEST_SUPERSEDED_BY_P11.json",
+  "final_holdout_used": false,
+  "goal_remains_active": true,
+  "released_original_unchanged": true
+}

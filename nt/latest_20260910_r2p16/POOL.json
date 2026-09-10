@@ -1,0 +1,46 @@
+[
+  {
+    "id": "soil_v219g",
+    "working": "opponents/soil_v219g"
+  },
+  {
+    "id": "moon_v215",
+    "working": "opponents/moon_v215"
+  },
+  {
+    "id": "flexon_v5",
+    "working": "opponents/flexon_v5"
+  },
+  {
+    "id": "market_smart_v8",
+    "working": "opponents/market_smart_v8"
+  },
+  {
+    "id": "nagatakengo_v70",
+    "working": "opponents/nagatakengo_v70"
+  },
+  {
+    "id": "aurax_reactive_v1",
+    "working": "opponents/aurax_reactive_v1"
+  },
+  {
+    "id": "thomas_955_v2",
+    "working": "opponents/thomas_955_v2"
+  },
+  {
+    "id": "shop0909",
+    "working": "opponents/shop0909"
+  },
+  {
+    "id": "aurax_shop_v2",
+    "working": "opponents/aurax_shop_v2"
+  },
+  {
+    "id": "seven_turn",
+    "working": "opponents/seven_turn"
+  },
+  {
+    "id": "ahmed_v27",
+    "working": "opponents/ahmed_v27"
+  }
+]

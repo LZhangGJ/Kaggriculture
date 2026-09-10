@@ -1,0 +1,52 @@
+{
+  "name": "R2P9 bounded split-sale mode1",
+  "status": "BEST_DEVELOPMENT_SCORE_POSITIVE_32_SEED_CONFIRMATION_UNCERTAIN_DO_NOT_PROMOTE_AS_90_PERCENT",
+  "binary": "candidate_r2p9/policy/local_sale_1.so",
+  "binary_sha256": "51a8e08c675eead688520d444f2cd1a1f7e50e342bfd5a8f4689b2d38472ba0c",
+  "build_receipt": "candidate_r2p9/BUILD_1.json",
+  "config": "local_sale_screen100/local_sale_1/local_sale_1/CONFIG.json",
+  "protocol": "local_sale_screen100/local_sale_1/PROTOCOL.json",
+  "results": "local_sale_screen100/local_sale_1/local_sale_1/RESULTS.json",
+  "games": 2200,
+  "wins": 1666,
+  "baseline_wins": 1501,
+  "rescued_losses": 247,
+  "lost_old_wins": 82,
+  "mean_cash_delta": 726.0118181818182,
+  "mean_margin_delta": 452.45454545454544,
+  "macro_win_rate": 0.7572727272727273,
+  "development_seeds": [
+    2609110000,
+    2609110099
+  ],
+  "independent_confirmation": {
+    "status": "COMPLETE_POSITIVE_POINT_ESTIMATE_CI_INCLUDES_ZERO",
+    "plan": "candidate_r2p9/INDEPENDENT_CONFIRMATION_PLAN_ZH.md",
+    "seeds": [
+      2609122000,
+      2609122031
+    ],
+    "games_per_version": 704,
+    "original_wins": 522,
+    "candidate_wins": 551,
+    "rescued_losses": 52,
+    "lost_old_wins": 23,
+    "mean_cash_delta": -175.7,
+    "mean_margin_delta": 1122.5,
+    "paired_seed_bootstrap_delta95_rounded": [
+      -0.0199,
+      0.1108
+    ],
+    "results": "local_sale_validation32/RESULTS.json"
+  },
+  "paired_seed_bootstrap_win_delta95": [
+    0.023636363636363643,
+    0.12636363636363637
+  ],
+  "bootstrap_seed": 919,
+  "bootstrap_samples": 10000,
+  "previous_best_snapshot": "candidate_r2p8/DEVELOPMENT_BEST_SUPERSEDED_BY_P9.json",
+  "final_holdout_used": false,
+  "goal_remains_active": true,
+  "released_original_unchanged": true
+}

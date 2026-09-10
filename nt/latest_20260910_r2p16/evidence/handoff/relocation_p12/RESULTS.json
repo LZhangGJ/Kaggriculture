@@ -1,0 +1,153 @@
+{
+  "overall": {
+    "games": 22,
+    "errors": 0,
+    "wins": 4,
+    "losses": 18,
+    "ties": 0,
+    "win_rate": 0.18181818181818182,
+    "mean_cash": 96803.09090909091,
+    "mean_margin": 9542.0,
+    "max_policy_seconds": 0.10989591399999199,
+    "over_1s": 0
+  },
+  "by_opponent": {
+    "soil_v219g": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -152.0,
+      "max_policy_seconds": 0.10543216099999597,
+      "over_1s": 0
+    },
+    "moon_v215": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 83827.0,
+      "mean_margin": -415.0,
+      "max_policy_seconds": 0.10989591399999199,
+      "over_1s": 0
+    },
+    "flexon_v5": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -150.0,
+      "max_policy_seconds": 0.10605103500000723,
+      "over_1s": 0
+    },
+    "market_smart_v8": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -152.0,
+      "max_policy_seconds": 0.1062267899999938,
+      "over_1s": 0
+    },
+    "nagatakengo_v70": {
+      "games": 2,
+      "errors": 0,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 1.0,
+      "mean_cash": 149501.0,
+      "mean_margin": 107621.0,
+      "max_policy_seconds": 0.1055732570000032,
+      "over_1s": 0
+    },
+    "aurax_reactive_v1": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 83827.0,
+      "mean_margin": -415.0,
+      "max_policy_seconds": 0.10262121200000252,
+      "over_1s": 0
+    },
+    "thomas_955_v2": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 126311.0,
+      "mean_margin": -977.0,
+      "max_policy_seconds": 0.10345704700000624,
+      "over_1s": 0
+    },
+    "shop0909": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -145.0,
+      "max_policy_seconds": 0.09567357299999912,
+      "over_1s": 0
+    },
+    "aurax_shop_v2": {
+      "games": 2,
+      "errors": 0,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 1.0,
+      "mean_cash": 88628.0,
+      "mean_margin": 42.0,
+      "max_policy_seconds": 0.07096726100000694,
+      "over_1s": 0
+    },
+    "seven_turn": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -150.0,
+      "max_policy_seconds": 0.07213844199999642,
+      "over_1s": 0
+    },
+    "ahmed_v27": {
+      "games": 2,
+      "errors": 0,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 88790.0,
+      "mean_margin": -145.0,
+      "max_policy_seconds": 0.07855886100000475,
+      "over_1s": 0
+    }
+  },
+  "seconds": 6.033859907999997,
+  "mismatches": [],
+  "reset": null,
+  "limitation": "Local official interpreter; not Kaggle sandbox timing/schema certification",
+  "status": "PASS"
+}

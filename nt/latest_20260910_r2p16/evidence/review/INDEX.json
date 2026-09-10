@@ -1,0 +1,130 @@
+[
+  {
+    "group": "rescued",
+    "version": "p12",
+    "opponent": "aurax_shop_v2",
+    "seed": 2609110088,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/aurax_shop_v2/2609110088_seat0.json.gz"
+  },
+  {
+    "group": "rescued",
+    "version": "p16",
+    "opponent": "aurax_shop_v2",
+    "seed": 2609110088,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/aurax_shop_v2/2609110088_seat0.json.gz"
+  },
+  {
+    "group": "rescued",
+    "version": "p12",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110003,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/thomas_955_v2/2609110003_seat0.json.gz"
+  },
+  {
+    "group": "rescued",
+    "version": "p16",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110003,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/thomas_955_v2/2609110003_seat0.json.gz"
+  },
+  {
+    "group": "lost_win",
+    "version": "p12",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110048,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/thomas_955_v2/2609110048_seat0.json.gz"
+  },
+  {
+    "group": "lost_win",
+    "version": "p16",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110048,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/thomas_955_v2/2609110048_seat0.json.gz"
+  },
+  {
+    "group": "lost_win",
+    "version": "p12",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110044,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/thomas_955_v2/2609110044_seat0.json.gz"
+  },
+  {
+    "group": "lost_win",
+    "version": "p16",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110044,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/thomas_955_v2/2609110044_seat0.json.gz"
+  },
+  {
+    "group": "still_lost",
+    "version": "p12",
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609110058,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/aurax_reactive_v1/2609110058_seat0.json.gz"
+  },
+  {
+    "group": "still_lost",
+    "version": "p16",
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609110058,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/aurax_reactive_v1/2609110058_seat0.json.gz"
+  },
+  {
+    "group": "still_lost",
+    "version": "p12",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110086,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/thomas_955_v2/2609110086_seat0.json.gz"
+  },
+  {
+    "group": "still_lost",
+    "version": "p16",
+    "opponent": "thomas_955_v2",
+    "seed": 2609110086,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/thomas_955_v2/2609110086_seat0.json.gz"
+  },
+  {
+    "group": "still_won",
+    "version": "p12",
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609110028,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/aurax_reactive_v1/2609110028_seat0.json.gz"
+  },
+  {
+    "group": "still_won",
+    "version": "p16",
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609110028,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/aurax_reactive_v1/2609110028_seat0.json.gz"
+  },
+  {
+    "group": "still_won",
+    "version": "p12",
+    "opponent": "nagatakengo_v70",
+    "seed": 2609110012,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p12/traces/nagatakengo_v70/2609110012_seat0.json.gz"
+  },
+  {
+    "group": "still_won",
+    "version": "p16",
+    "opponent": "nagatakengo_v70",
+    "seed": 2609110012,
+    "opponent_seat": 0,
+    "trace": "evidence/review/p16/traces/nagatakengo_v70/2609110012_seat0.json.gz"
+  }
+]

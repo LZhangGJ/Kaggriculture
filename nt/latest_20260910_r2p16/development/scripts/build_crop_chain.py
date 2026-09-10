@@ -1,0 +1,13 @@
+from pathlib import Path
+import argparse,subprocess,hashlib,json,time
+HERE=Path(__file__).resolve().parent/'candidate_r2p12';POLICY=HERE/'policy'
+p=argparse.ArgumentParser();p.add_argument('--enabled',type=int,choices=[0,1],required=True);a=p.parse_args()
+name=f'cropchain{a.enabled}';target=POLICY/(name+'.so');assert not target.exists(),target
+sources={str(p.relative_to(POLICY)):hashlib.sha256(p.read_bytes()).hexdigest() for p in POLICY.rglob('*') if p.is_file() and p.suffix in {'.cpp','.hpp','.h','.inc'}}
+cmd=['g++-13','-std=c++20','-O3','-DNDEBUG','-march=x86-64','-ffp-contract=off',f'-DR2_LOCAL_SALE_TIMING={a.enabled}',f'-DR2_FINITE_FERTILIZER={a.enabled}',f'-DR2_CROP_CLOCK_MODE={a.enabled}','-DR2_OBSERVE_PUBLIC_TRADES=1','-DR2_MARKET_INTEGRAL=0','-DR2_SALE_CLOCK_MODE=0','-fPIC','-shared','-Wl,-Bsymbolic',str(POLICY/'bridge.cpp'),str(POLICY/'executor/vendor/simulator.cpp'),'-o',str(target)]
+start=time.perf_counter()
+with (HERE/(name+'.compile.log')).open('w') as log:r=subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT)
+receipt=dict(status='BUILT_NEEDS_VALIDATION' if r.returncode==0 else 'FAILED',enabled=a.enabled,command=cmd,sources=sources,seconds=time.perf_counter()-start)
+if target.exists():receipt['binary_sha256']=hashlib.sha256(target.read_bytes()).hexdigest()
+(HERE/(name+'.BUILD.json')).write_text(json.dumps(receipt,indent=2));print(json.dumps({k:v for k,v in receipt.items() if k!='sources'}),flush=True)
+raise SystemExit(r.returncode)

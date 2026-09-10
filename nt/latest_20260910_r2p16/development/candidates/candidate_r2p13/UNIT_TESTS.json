@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "output": "PASS: 18 portfolio cases; 18 improvements; conserved flow, legal timing, protected successors, empty endgame\n",
+  "seconds": 5.285194517000036,
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p13/test_crop_portfolio.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p13/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p13/test_crop_portfolio"
+  ],
+  "sources": {
+    "test_crop_portfolio.cpp": "307304d66a61d86792f46b2b94f7c8886c50c30f3a666daf656d6c635e24687d",
+    "policy/triad.hpp": "a7d4fdacdd46005b86458ef9803d9691b6068a71666e72dc161682755484b39d",
+    "policy/planner.hpp": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+  }
+}

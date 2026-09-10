@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "official_crop_episodes": 11712,
+  "native_forecast_queries": 50688,
+  "cases_using_fertilizer": 912,
+  "seconds": 2.6343397160000563,
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "source_sha256": {
+    "test_finite_crop.cpp": "92e082cb7b02426208f5599dcf0f61d662d8e947fb2dde3dc3f057de98742f46",
+    "policy/triad.hpp": "c3acecb683d8b037784901a7a85d3b9cd67fd2abbe202f57fa5522a8ee21416b",
+    "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061"
+  },
+  "scope": "Actual official per-unit WATER/FERTILIZE/HARVEST and daily refresh; fixed prices/deadlines; not proof of full farm affordability or optimality"
+}

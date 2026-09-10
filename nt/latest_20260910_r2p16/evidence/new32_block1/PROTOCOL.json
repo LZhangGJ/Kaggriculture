@@ -1,0 +1,22 @@
+{
+  "seed_start": 2609124000,
+  "seeds": 32,
+  "seats": [
+    0,
+    1
+  ],
+  "names": [
+    "original",
+    "p12",
+    "p16"
+  ],
+  "binaries": {
+    "original": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+    "p12": "f62c0a303133d28eb93380f52aaead97ff9e7b0ca2613668ac859b638f9adf63",
+    "p16": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b"
+  },
+  "pool_sha256": "adac3ee838014179f1abc6da29be1f1f8f492835235d684560d85969aa606d43",
+  "rule_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "boundary": "Frozen before new seed runs; equal opponent weights; unchanged realtime original opponents; final100 unused"
+}

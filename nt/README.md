@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260910_r2p16/`](latest_20260910_r2p16/README_ZH.md)
+  — frozen R2P16 startup-supply-prior candidate: complete source/config/binary,
+  reproducible build, eleven original realtime opponents, official 1.32.7
+  referee, portable runner, P9–P16 development history and paired evidence.
+  Common 64 unseen seeds: 1115/1408 wins (79.19%), original R2 74.50%; the
+  improvement interval still includes zero, not a 90% claim. No Kaggle submission.
 - [`latest_20260909_t2_r1_r2/`](latest_20260909_t2_r1_r2/README_ZH.md)
   — T2-R1 ServiceAligned and T2-R2 BatchedDelivery: full policy sources, exact
   Public artifacts (56114689 / 56114767, both COMPLETE), official validation

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "output": "PASS: initial-only, private isolation, finite legal net flows, existing-crop guard, MPC proposal propagation and valuation effect, real next-day clear\n",
+  "seconds": 12.460244044,
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p16/test_startup_supply.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p16/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p16/test_startup_supply"
+  ],
+  "sources": {
+    "test_startup_supply.cpp": "e7d97d3f588c12bf4a3ae3d176c7f3668fa20e106eb76bb3d457101968832253",
+    "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+    "policy/search.hpp": "9aa03f948cf5745775f3e6e28359eb5eadc9959cef491172f7ca3eb61ef22a9f"
+  }
+}

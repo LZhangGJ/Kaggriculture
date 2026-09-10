@@ -1,0 +1,44 @@
+{
+  "seeds": 64,
+  "games_per_version": 1408,
+  "versions": {
+    "original": {
+      "games": 1408,
+      "valid_games": 1408,
+      "errors": 0,
+      "r2_wins": 1080,
+      "losses": 328,
+      "ties": 0,
+      "r2_win_rate": 0.7670454545454546,
+      "r2_mean_cash": 108595.04829545454,
+      "opponent_mean_cash": 93168.75923295454,
+      "mean_margin": 15426.2890625,
+      "median_margin": 5884.0
+    },
+    "p12": {
+      "games": 1408,
+      "valid_games": 1408,
+      "errors": 0,
+      "r2_wins": 1150,
+      "losses": 258,
+      "ties": 0,
+      "r2_win_rate": 0.8167613636363636,
+      "r2_mean_cash": 112181.54829545454,
+      "opponent_mean_cash": 95301.47443181818,
+      "mean_margin": 16880.073863636364,
+      "median_margin": 8625.0
+    }
+  },
+  "paired_original_to_p12": {
+    "rescued": 195,
+    "lost_wins": 125,
+    "mean_cash_delta": 3586.5,
+    "mean_margin_delta": 1453.7848011363637,
+    "win_delta": 0.04971590909090909,
+    "paired_seed_win_delta95": [
+      -0.03622159090909091,
+      0.13636363636363635
+    ]
+  },
+  "boundary": "Two frozen new32 confirmation blocks; not the final100 test; no per-case confirmation tuning"
+}

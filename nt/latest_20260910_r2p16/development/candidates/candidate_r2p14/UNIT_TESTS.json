@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "output": "PASS: 12 scenarios; 6 skipped fertilizer choices; same finish/date/book, no duplicate flow, active fertilizer protected\n",
+  "seconds": 3.002372311000002,
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p14/test_fert_portfolio.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p14/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p14/test_fert_portfolio"
+  ],
+  "sources": {
+    "test_fert_portfolio.cpp": "3eec709f4c89120052bf78eec9cb5eeb6f51800be36329127a3a371ee60682c6",
+    "policy/triad.hpp": "23b0d6a64fc5ec2003328fdd2e9c15b52c24e2229c04a5d0b37ce7d67f55055b",
+    "policy/planner.hpp": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+  }
+}

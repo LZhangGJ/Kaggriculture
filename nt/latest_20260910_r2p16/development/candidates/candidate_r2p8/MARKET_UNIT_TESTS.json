@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "cases": 2987,
+  "failures": [],
+  "old_stock_mismatches": 142,
+  "old_cash_mismatches": 1710,
+  "saturation": [
+    1717032651333.0,
+    10842.0,
+    10529.0,
+    10062.0,
+    10158.0,
+    1713383321443.0,
+    10076.0,
+    10059.0,
+    10493.0
+  ],
+  "examples": [
+    {
+      "item": "WOOL",
+      "initial": 10000,
+      "quantity": 100,
+      "old_cash": 7833.333333333333,
+      "old_inventory": 10100.0,
+      "official_cash": 7969,
+      "official_inventory": 10059
+    }
+  ],
+  "fraction_cases": 9,
+  "max_fraction_error": 0.0,
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "scope": "Successive single-side trades; no funds/capacity limits in this primitive. Not simultaneous rival order matching. Fractional forecast flows are a relaxation."
+}

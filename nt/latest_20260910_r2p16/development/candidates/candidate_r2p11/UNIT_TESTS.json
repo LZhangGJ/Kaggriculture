@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "output": "PASS: duplicate/reset/window/exclusions/conditional mixture\n",
+  "seconds": 2.5147194710000065,
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p11/test_crop_clock.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p11/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p11/test_crop_clock"
+  ],
+  "sources": {
+    "test_crop_clock.cpp": "2b97e8543291d58629d3681225948caeb1be5250ecf5194bbcd3b1f98ee48e09",
+    "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+    "policy/planner.hpp": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+  }
+}

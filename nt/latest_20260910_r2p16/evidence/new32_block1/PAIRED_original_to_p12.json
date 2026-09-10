@@ -1,0 +1,6338 @@
+[
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1866.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1866.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -814.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -814.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5286.0,
+    "margin_delta": -4860.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5286.0,
+    "margin_delta": -4860.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19835.0,
+    "margin_delta": -24632.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2298.0,
+    "margin_delta": 2046.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1979.0,
+    "margin_delta": -2961.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1979.0,
+    "margin_delta": -2961.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7096.0,
+    "margin_delta": -7898.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7096.0,
+    "margin_delta": -7898.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 596.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 596.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 6381.0,
+    "margin_delta": 3035.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1790.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1790.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -596.0,
+    "margin_delta": -494.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -596.0,
+    "margin_delta": -494.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1172.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1172.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "ahmed_v27",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -10729.0,
+    "margin_delta": -13423.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -10729.0,
+    "margin_delta": -13423.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4793.0,
+    "margin_delta": -300.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4793.0,
+    "margin_delta": -300.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -2374.0,
+    "margin_delta": -2865.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -2374.0,
+    "margin_delta": -2865.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17151.0,
+    "margin_delta": -12196.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17151.0,
+    "margin_delta": -12196.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 9316.0,
+    "margin_delta": -13505.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 9316.0,
+    "margin_delta": -13505.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1682.0,
+    "margin_delta": 1524.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2845.0,
+    "margin_delta": -742.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4217.0,
+    "margin_delta": 3711.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4217.0,
+    "margin_delta": 3711.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 29728.0,
+    "margin_delta": 15667.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 29728.0,
+    "margin_delta": 15667.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5205.0,
+    "margin_delta": 6860.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5205.0,
+    "margin_delta": 6860.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 22530.0,
+    "margin_delta": -7757.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 22530.0,
+    "margin_delta": -7757.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3753.0,
+    "margin_delta": 21493.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3753.0,
+    "margin_delta": 21493.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4218.0,
+    "margin_delta": -9138.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4218.0,
+    "margin_delta": -9138.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -1973.0,
+    "margin_delta": -2753.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -1973.0,
+    "margin_delta": -2753.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 15287.0,
+    "margin_delta": 11898.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 15287.0,
+    "margin_delta": 11898.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14872.0,
+    "margin_delta": -10469.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14872.0,
+    "margin_delta": -10469.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7150.0,
+    "margin_delta": -14430.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7150.0,
+    "margin_delta": -14430.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -4675.0,
+    "margin_delta": 5471.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -4675.0,
+    "margin_delta": 5471.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -26972.0,
+    "margin_delta": -11900.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -26972.0,
+    "margin_delta": -11900.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5218.0,
+    "margin_delta": -903.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5218.0,
+    "margin_delta": -903.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -28525.0,
+    "margin_delta": 3501.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -28525.0,
+    "margin_delta": 3501.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -245.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -245.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 2305.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 5079.0,
+    "margin_delta": 2390.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2710.0,
+    "margin_delta": 3802.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2710.0,
+    "margin_delta": 3802.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2345.0,
+    "margin_delta": 27271.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2345.0,
+    "margin_delta": 27271.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 13948.0,
+    "margin_delta": 5986.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 13948.0,
+    "margin_delta": 5986.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1369.0,
+    "margin_delta": -719.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1369.0,
+    "margin_delta": -719.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2447.0,
+    "margin_delta": 1163.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2447.0,
+    "margin_delta": 1163.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 15585.0,
+    "margin_delta": 7834.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 15585.0,
+    "margin_delta": 7834.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 4810.0,
+    "margin_delta": 4980.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 4810.0,
+    "margin_delta": 4980.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1127.0,
+    "margin_delta": 9826.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1127.0,
+    "margin_delta": 9826.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3373.0,
+    "margin_delta": 4268.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3373.0,
+    "margin_delta": 4268.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -16011.0,
+    "margin_delta": -32780.0
+  },
+  {
+    "opponent": "aurax_reactive_v1",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -16008.0,
+    "margin_delta": -32774.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1890.0,
+    "margin_delta": -13735.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1890.0,
+    "margin_delta": -13735.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3621.0,
+    "margin_delta": -1767.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3621.0,
+    "margin_delta": -1767.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 629.0,
+    "margin_delta": -827.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 629.0,
+    "margin_delta": -827.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5276.0,
+    "margin_delta": -4870.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5276.0,
+    "margin_delta": -4870.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36208.0,
+    "margin_delta": 9849.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36208.0,
+    "margin_delta": 9849.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19895.0,
+    "margin_delta": -24634.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2362.0,
+    "margin_delta": 2175.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4524.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4524.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9378.0,
+    "margin_delta": -1237.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9378.0,
+    "margin_delta": -1237.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14468.0,
+    "margin_delta": 23046.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14468.0,
+    "margin_delta": 23046.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1908.0,
+    "margin_delta": -2923.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1908.0,
+    "margin_delta": -2923.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27822.0,
+    "margin_delta": 31248.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27822.0,
+    "margin_delta": 31248.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7991.0,
+    "margin_delta": -6233.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7991.0,
+    "margin_delta": -6233.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4850.0,
+    "margin_delta": -9210.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4850.0,
+    "margin_delta": -9210.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 2947.0,
+    "margin_delta": 2628.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 2947.0,
+    "margin_delta": 2628.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7573.0,
+    "margin_delta": 16175.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7573.0,
+    "margin_delta": 16175.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1395.0,
+    "margin_delta": -5222.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1395.0,
+    "margin_delta": -5222.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -100.0,
+    "margin_delta": 569.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -100.0,
+    "margin_delta": 569.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15244.0,
+    "margin_delta": 17540.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15244.0,
+    "margin_delta": 17540.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20083.0,
+    "margin_delta": -13579.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20083.0,
+    "margin_delta": -13579.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17392.0,
+    "margin_delta": -10406.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17392.0,
+    "margin_delta": -10406.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1257.0,
+    "margin_delta": -1677.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1257.0,
+    "margin_delta": -1677.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3368.0,
+    "margin_delta": -3547.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3368.0,
+    "margin_delta": -3547.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2048.0,
+    "margin_delta": 1748.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2048.0,
+    "margin_delta": 1748.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12287.0,
+    "margin_delta": 25690.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12287.0,
+    "margin_delta": 25690.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12860.0,
+    "margin_delta": 5571.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12860.0,
+    "margin_delta": 5571.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -568.0,
+    "margin_delta": -482.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -568.0,
+    "margin_delta": -482.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 9999.0,
+    "margin_delta": 6868.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 9999.0,
+    "margin_delta": 6868.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14287.0,
+    "margin_delta": 2422.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14287.0,
+    "margin_delta": 2422.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 442.0,
+    "margin_delta": 1220.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 442.0,
+    "margin_delta": 1220.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 565.0,
+    "margin_delta": -1205.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 565.0,
+    "margin_delta": -1205.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -521.0,
+    "margin_delta": -2234.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -521.0,
+    "margin_delta": -2234.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6206.0,
+    "margin_delta": 2473.0
+  },
+  {
+    "opponent": "aurax_shop_v2",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6203.0,
+    "margin_delta": 2479.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3556.0,
+    "margin_delta": -1887.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3556.0,
+    "margin_delta": -1887.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 642.0,
+    "margin_delta": -831.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 642.0,
+    "margin_delta": -831.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5287.0,
+    "margin_delta": -4880.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5287.0,
+    "margin_delta": -4880.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19835.0,
+    "margin_delta": -24632.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2298.0,
+    "margin_delta": 2046.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1977.0,
+    "margin_delta": -2979.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1977.0,
+    "margin_delta": -2979.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 588.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 588.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1278.0,
+    "margin_delta": -1713.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1278.0,
+    "margin_delta": -1713.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2108.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2108.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -543.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -543.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2451.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2451.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 356.0,
+    "margin_delta": 1146.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 356.0,
+    "margin_delta": 1146.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "flexon_v5",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3553.0,
+    "margin_delta": -1893.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3553.0,
+    "margin_delta": -1893.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 640.0,
+    "margin_delta": -837.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 640.0,
+    "margin_delta": -837.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5285.0,
+    "margin_delta": -4882.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5285.0,
+    "margin_delta": -4882.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19835.0,
+    "margin_delta": -24632.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2298.0,
+    "margin_delta": 2046.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1976.0,
+    "margin_delta": -2986.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1976.0,
+    "margin_delta": -2986.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 586.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 586.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1769.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1769.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -555.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -555.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2450.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2450.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1148.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1148.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "market_smart_v8",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -10729.0,
+    "margin_delta": -13423.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -10729.0,
+    "margin_delta": -13423.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4793.0,
+    "margin_delta": -300.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4793.0,
+    "margin_delta": -300.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -2374.0,
+    "margin_delta": -2865.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -2374.0,
+    "margin_delta": -2865.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17151.0,
+    "margin_delta": -12196.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17151.0,
+    "margin_delta": -12196.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 9316.0,
+    "margin_delta": -13505.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 9316.0,
+    "margin_delta": -13505.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1682.0,
+    "margin_delta": 1524.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2845.0,
+    "margin_delta": -742.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4217.0,
+    "margin_delta": 3711.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4217.0,
+    "margin_delta": 3711.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 29728.0,
+    "margin_delta": 15667.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 29728.0,
+    "margin_delta": 15667.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5205.0,
+    "margin_delta": 6860.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5205.0,
+    "margin_delta": 6860.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 22530.0,
+    "margin_delta": -7757.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 22530.0,
+    "margin_delta": -7757.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3753.0,
+    "margin_delta": 21493.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3753.0,
+    "margin_delta": 21493.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4218.0,
+    "margin_delta": -9138.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4218.0,
+    "margin_delta": -9138.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -1973.0,
+    "margin_delta": -2753.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -1973.0,
+    "margin_delta": -2753.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 15287.0,
+    "margin_delta": 11898.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 15287.0,
+    "margin_delta": 11898.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14872.0,
+    "margin_delta": -10469.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14872.0,
+    "margin_delta": -10469.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7150.0,
+    "margin_delta": -14430.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7150.0,
+    "margin_delta": -14430.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -4675.0,
+    "margin_delta": 5471.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -4675.0,
+    "margin_delta": 5471.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -26972.0,
+    "margin_delta": -11900.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -26972.0,
+    "margin_delta": -11900.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5218.0,
+    "margin_delta": -903.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5218.0,
+    "margin_delta": -903.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -28525.0,
+    "margin_delta": 3501.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -28525.0,
+    "margin_delta": 3501.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -245.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -245.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 2305.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 2305.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2710.0,
+    "margin_delta": 3802.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2710.0,
+    "margin_delta": 3802.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2345.0,
+    "margin_delta": 27271.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2345.0,
+    "margin_delta": 27271.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 13948.0,
+    "margin_delta": 5986.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 13948.0,
+    "margin_delta": 5986.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1369.0,
+    "margin_delta": -719.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1369.0,
+    "margin_delta": -719.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2447.0,
+    "margin_delta": 1163.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2447.0,
+    "margin_delta": 1163.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 15585.0,
+    "margin_delta": 7834.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 15585.0,
+    "margin_delta": 7834.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 4810.0,
+    "margin_delta": 4980.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 4810.0,
+    "margin_delta": 4980.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1127.0,
+    "margin_delta": 9826.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1127.0,
+    "margin_delta": 9826.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3373.0,
+    "margin_delta": 4268.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3373.0,
+    "margin_delta": 4268.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -16011.0,
+    "margin_delta": -32780.0
+  },
+  {
+    "opponent": "moon_v215",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -16008.0,
+    "margin_delta": -32774.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 18411.0,
+    "margin_delta": 2439.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 10019.0,
+    "margin_delta": -7244.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -27480.0,
+    "margin_delta": -26506.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -27480.0,
+    "margin_delta": -26506.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 10030.0,
+    "margin_delta": 235.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 10238.0,
+    "margin_delta": 595.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 23025.0,
+    "margin_delta": 10803.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 22130.0,
+    "margin_delta": 13273.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 25617.0,
+    "margin_delta": 24708.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 25978.0,
+    "margin_delta": 24041.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12285.0,
+    "margin_delta": 55.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12038.0,
+    "margin_delta": -30887.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -6979.0,
+    "margin_delta": -3077.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -11936.0,
+    "margin_delta": -5180.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -13420.0,
+    "margin_delta": -4862.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -23672.0,
+    "margin_delta": -15262.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1585.0,
+    "margin_delta": 3925.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2834.0,
+    "margin_delta": 2951.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9792.0,
+    "margin_delta": -2530.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9792.0,
+    "margin_delta": -2530.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -49941.0,
+    "margin_delta": -41358.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17730.0,
+    "margin_delta": -25002.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -6409.0,
+    "margin_delta": 7520.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -13047.0,
+    "margin_delta": 14519.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -3858.0,
+    "margin_delta": -8423.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -3858.0,
+    "margin_delta": -8423.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5464.0,
+    "margin_delta": 30597.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 21278.0,
+    "margin_delta": 28364.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -49878.0,
+    "margin_delta": -50482.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -45476.0,
+    "margin_delta": -39138.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -38683.0,
+    "margin_delta": -17726.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -38825.0,
+    "margin_delta": -18515.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 310.0,
+    "margin_delta": 15899.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -964.0,
+    "margin_delta": 9252.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1594.0,
+    "margin_delta": -13772.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2713.0,
+    "margin_delta": -14988.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 31512.0,
+    "margin_delta": 18352.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 32643.0,
+    "margin_delta": 20652.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 16968.0,
+    "margin_delta": 25865.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 18652.0,
+    "margin_delta": 27529.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -530.0,
+    "margin_delta": 1369.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5420.0,
+    "margin_delta": 13594.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 32909.0,
+    "margin_delta": 19470.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -48833.0,
+    "margin_delta": -16364.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7177.0,
+    "margin_delta": -17221.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -7162.0,
+    "margin_delta": -17060.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3623.0,
+    "margin_delta": 3040.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 9697.0,
+    "margin_delta": 14104.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -41383.0,
+    "margin_delta": -28729.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -36613.0,
+    "margin_delta": -21718.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 31016.0,
+    "margin_delta": 14989.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 31016.0,
+    "margin_delta": 14989.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -35559.0,
+    "margin_delta": -41303.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -25960.0,
+    "margin_delta": -8309.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 6912.0,
+    "margin_delta": 13990.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 6177.0,
+    "margin_delta": 14786.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2709.0,
+    "margin_delta": -2016.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2709.0,
+    "margin_delta": -2016.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 31945.0,
+    "margin_delta": 25073.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 30260.0,
+    "margin_delta": 22159.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -28476.0,
+    "margin_delta": -15721.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -25174.0,
+    "margin_delta": -18531.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14495.0,
+    "margin_delta": -7317.0
+  },
+  {
+    "opponent": "nagatakengo_v70",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17224.0,
+    "margin_delta": -1749.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3556.0,
+    "margin_delta": -1887.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3556.0,
+    "margin_delta": -1887.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 642.0,
+    "margin_delta": -831.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 642.0,
+    "margin_delta": -831.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5287.0,
+    "margin_delta": -4880.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5287.0,
+    "margin_delta": -4880.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19835.0,
+    "margin_delta": -24632.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2298.0,
+    "margin_delta": 2046.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1977.0,
+    "margin_delta": -2979.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1977.0,
+    "margin_delta": -2979.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 588.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 588.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1278.0,
+    "margin_delta": -1713.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1278.0,
+    "margin_delta": -1713.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2108.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2108.0,
+    "margin_delta": 1772.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -543.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -603.0,
+    "margin_delta": -543.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2451.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2451.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 356.0,
+    "margin_delta": 1146.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 356.0,
+    "margin_delta": 1146.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "seven_turn",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1866.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1866.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -814.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -814.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5286.0,
+    "margin_delta": -4860.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -5286.0,
+    "margin_delta": -4860.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -19835.0,
+    "margin_delta": -24632.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2298.0,
+    "margin_delta": 2046.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1979.0,
+    "margin_delta": -2961.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1979.0,
+    "margin_delta": -2961.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7574.0,
+    "margin_delta": 16187.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 596.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 596.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 20203.0,
+    "margin_delta": -13130.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1276.0,
+    "margin_delta": -1709.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3346.0,
+    "margin_delta": -3765.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1790.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2109.0,
+    "margin_delta": 1790.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -596.0,
+    "margin_delta": -494.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -596.0,
+    "margin_delta": -494.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1172.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1172.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "shop0909",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1862.0,
+    "margin_delta": -13792.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1859.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 3566.0,
+    "margin_delta": -1859.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -807.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 647.0,
+    "margin_delta": -807.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -3414.0,
+    "margin_delta": -1900.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -3414.0,
+    "margin_delta": -1900.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 36112.0,
+    "margin_delta": 9889.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -13059.0,
+    "margin_delta": -26060.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5153.0,
+    "margin_delta": 5217.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 14046.0,
+    "margin_delta": -4381.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -9644.0,
+    "margin_delta": -1568.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 14482.0,
+    "margin_delta": 23136.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2585.0,
+    "margin_delta": -1830.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -2585.0,
+    "margin_delta": -1830.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 27063.0,
+    "margin_delta": 29679.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 8018.0,
+    "margin_delta": -6265.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 4878.0,
+    "margin_delta": -9222.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 3003.0,
+    "margin_delta": 2769.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 5971.0,
+    "margin_delta": 15292.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7343.0,
+    "margin_delta": 22472.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1222.0,
+    "margin_delta": -5011.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 603.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -91.0,
+    "margin_delta": 603.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -15332.0,
+    "margin_delta": 17412.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 23038.0,
+    "margin_delta": -17041.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 23038.0,
+    "margin_delta": -17041.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -17394.0,
+    "margin_delta": -10554.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -607.0,
+    "margin_delta": -196.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -607.0,
+    "margin_delta": -196.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 9566.0,
+    "margin_delta": -3132.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 9566.0,
+    "margin_delta": -3132.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 984.0,
+    "margin_delta": 211.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 984.0,
+    "margin_delta": 211.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -12308.0,
+    "margin_delta": 25699.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 12869.0,
+    "margin_delta": 5562.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -637.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -637.0,
+    "margin_delta": -603.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 10040.0,
+    "margin_delta": 7077.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 14269.0,
+    "margin_delta": 2453.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1179.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 360.0,
+    "margin_delta": 1179.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 695.0,
+    "margin_delta": -1001.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -319.0,
+    "margin_delta": -2044.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6164.0,
+    "margin_delta": 2484.0
+  },
+  {
+    "opponent": "soil_v219g",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6161.0,
+    "margin_delta": 2490.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124000,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 29901.0,
+    "margin_delta": -5755.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124000,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 29901.0,
+    "margin_delta": -5755.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124001,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -1717.0,
+    "margin_delta": 10758.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124001,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -1717.0,
+    "margin_delta": 10758.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124002,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6191.0,
+    "margin_delta": 5700.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124002,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -6191.0,
+    "margin_delta": 5700.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124003,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 5094.0,
+    "margin_delta": 3880.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124003,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 5094.0,
+    "margin_delta": 3880.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124004,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 52672.0,
+    "margin_delta": 26778.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124004,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 52672.0,
+    "margin_delta": 26778.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124005,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -3352.0,
+    "margin_delta": -7651.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124005,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 4027.0,
+    "margin_delta": 11847.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124006,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -21144.0,
+    "margin_delta": -5343.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124006,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -20292.0,
+    "margin_delta": -4772.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124007,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -13487.0,
+    "margin_delta": -4838.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124007,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -13665.0,
+    "margin_delta": -4573.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124008,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 3946.0,
+    "margin_delta": 2546.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124008,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 3946.0,
+    "margin_delta": 2546.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124009,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -5530.0,
+    "margin_delta": -9672.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124009,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -3972.0,
+    "margin_delta": -4541.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124010,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 3746.0,
+    "margin_delta": -15737.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124010,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -9857.0,
+    "margin_delta": -11888.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124011,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 20538.0,
+    "margin_delta": 6829.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124011,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 20538.0,
+    "margin_delta": 6829.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124012,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1730.0,
+    "margin_delta": 5975.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124012,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1730.0,
+    "margin_delta": 5975.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124013,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17888.0,
+    "margin_delta": 304.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124013,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -17888.0,
+    "margin_delta": 304.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124014,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1756.0,
+    "margin_delta": 4495.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124014,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 1756.0,
+    "margin_delta": 4495.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124015,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14009.0,
+    "margin_delta": -906.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124015,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -14009.0,
+    "margin_delta": -906.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124016,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -251.0,
+    "margin_delta": -7628.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124016,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -251.0,
+    "margin_delta": -7628.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124017,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -9756.0,
+    "margin_delta": 5896.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124017,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": -9756.0,
+    "margin_delta": 5896.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124018,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2600.0,
+    "margin_delta": -1072.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124018,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 2593.0,
+    "margin_delta": -1281.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124019,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": 16289.0,
+    "margin_delta": 6347.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124019,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 32662.0,
+    "margin_delta": 16156.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124020,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2187.0,
+    "margin_delta": -759.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124020,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -2187.0,
+    "margin_delta": -759.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124021,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 67255.0,
+    "margin_delta": -5040.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124021,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 22364.0,
+    "margin_delta": 5209.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124022,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1593.0,
+    "margin_delta": -1130.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124022,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 1593.0,
+    "margin_delta": -1130.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124023,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": 9423.0,
+    "margin_delta": -15640.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124023,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 17077.0,
+    "margin_delta": 6101.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124024,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 34637.0,
+    "margin_delta": 11751.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124024,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": true,
+    "cash_delta": 34637.0,
+    "margin_delta": 11751.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124025,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -26914.0,
+    "margin_delta": -9484.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124025,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": false,
+    "cash_delta": -14947.0,
+    "margin_delta": -8771.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124026,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4622.0,
+    "margin_delta": 1319.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124026,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 4622.0,
+    "margin_delta": 1319.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124027,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 40323.0,
+    "margin_delta": 1958.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124027,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 42258.0,
+    "margin_delta": 3865.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124028,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1921.0,
+    "margin_delta": -2364.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124028,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": -1921.0,
+    "margin_delta": -2364.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124029,
+    "opponent_seat": 0,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -9561.0,
+    "margin_delta": 9395.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124029,
+    "opponent_seat": 1,
+    "old_win": false,
+    "new_win": false,
+    "cash_delta": -9561.0,
+    "margin_delta": 9395.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124030,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 11818.0,
+    "margin_delta": 12006.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124030,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 10359.0,
+    "margin_delta": 15101.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124031,
+    "opponent_seat": 0,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7286.0,
+    "margin_delta": 3688.0
+  },
+  {
+    "opponent": "thomas_955_v2",
+    "seed": 2609124031,
+    "opponent_seat": 1,
+    "old_win": true,
+    "new_win": true,
+    "cash_delta": 7286.0,
+    "margin_delta": 3688.0
+  }
+]

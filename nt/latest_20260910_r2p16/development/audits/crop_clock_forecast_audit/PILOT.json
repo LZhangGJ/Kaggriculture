@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "cases": 2,
+  "actions": 1438,
+  "rows": [
+    {
+      "key": "soil_v219g_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "soil_v219g_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    }
+  ],
+  "metrics": {
+    "WHEAT": {
+      "samples": 60,
+      "old_mae": 11.695,
+      "new_mae": 8.48082080335043,
+      "old_bias": -7.805,
+      "new_bias": -0.0013149289728030978,
+      "changed": 48,
+      "actual_net_mean": 5.0
+    },
+    "CARROT": {
+      "samples": 60,
+      "old_mae": 1.93,
+      "new_mae": 2.0892063492063495,
+      "old_bias": -0.7033333333333334,
+      "new_bias": -0.5063492063492064,
+      "changed": 4,
+      "actual_net_mean": 2.8
+    },
+    "TOMATO": {
+      "samples": 60,
+      "old_mae": 0.0,
+      "new_mae": 0.0,
+      "old_bias": 0.0,
+      "new_bias": 0.0,
+      "changed": 0,
+      "actual_net_mean": 0.0
+    },
+    "STRAWBERRY": {
+      "samples": 60,
+      "old_mae": 2.561666666666667,
+      "new_mae": 2.561666666666667,
+      "old_bias": -1.2450000000000003,
+      "new_bias": -1.2450000000000003,
+      "changed": 0,
+      "actual_net_mean": 8.3
+    },
+    "MELON": {
+      "samples": 60,
+      "old_mae": 0.43999999999999984,
+      "new_mae": 0.43999999999999984,
+      "old_bias": -0.36000000000000015,
+      "new_bias": -0.36000000000000015,
+      "changed": 0,
+      "actual_net_mean": 2.4
+    },
+    "EGG": {
+      "samples": 60,
+      "old_mae": 2.183333333333333,
+      "new_mae": 2.183333333333333,
+      "old_bias": 1.14,
+      "new_bias": 1.14,
+      "changed": 0,
+      "actual_net_mean": 2.6
+    },
+    "MILK": {
+      "samples": 60,
+      "old_mae": 3.32,
+      "new_mae": 3.32,
+      "old_bias": -0.4033333333333337,
+      "new_bias": -0.4033333333333337,
+      "changed": 0,
+      "actual_net_mean": 8.166666666666666
+    },
+    "WOOL": {
+      "samples": 60,
+      "old_mae": 2.328333333333333,
+      "new_mae": 2.328333333333333,
+      "old_bias": -0.5783333333333335,
+      "new_bias": -0.5783333333333335,
+      "changed": 0,
+      "actual_net_mean": 5.366666666666666
+    },
+    "FERTILIZER": {
+      "samples": 60,
+      "old_mae": 2.5316666666666667,
+      "new_mae": 2.5316666666666667,
+      "old_bias": -0.8916666666666672,
+      "new_bias": -0.8916666666666672,
+      "changed": 0,
+      "actual_net_mean": 10.1
+    }
+  },
+  "seconds": 2.2701473160000005,
+  "binary_sha256": "21a26dd27c9df427fcef04c4cd98fed11e761e38506fdb1a10dbbc01f8be4ad1",
+  "boundary": "Original actions unchanged; telemetry predicts conditional net sale only using past public crop removals. Forecast error reduction is not a win-rate test. Private/action labels never enter predictor."
+}
