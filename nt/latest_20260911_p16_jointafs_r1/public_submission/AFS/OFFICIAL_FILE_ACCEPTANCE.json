@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "version": "P16 JointAFS R1",
+  "archive_sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+  "games": [
+    {
+      "seed": 0,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        80253.0,
+        90823.0
+      ],
+      "errors": [],
+      "seconds": 7.8492510290000155,
+      "max_action_ms": 317.601,
+      "actions_over_1s": 0,
+      "status": "PASS"
+    },
+    {
+      "seed": 2609102992,
+      "steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        112982.0,
+        122426.0
+      ],
+      "errors": [],
+      "seconds": 7.254958033999998,
+      "max_action_ms": 323.335,
+      "actions_over_1s": 0,
+      "status": "PASS"
+    }
+  ],
+  "errors": 0,
+  "max_action_ms": 323.335,
+  "official_interpreter_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "scope": "Official 1.32.7 extracted file entry; local hardware; one-second action timeout"
+}

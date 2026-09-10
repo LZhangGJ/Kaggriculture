@@ -1,0 +1,160 @@
+{
+  "parent": {
+    "binary_sha256": "63f40fe3e07897537ae0b80e5c987d3208392209f07c232b0bc43d0a5ae98903",
+    "opponent": "nagatakengo_v70",
+    "seed": 2609205001,
+    "opponent_seat": 0,
+    "steps": 719,
+    "cash": [
+      45854.0,
+      135852.0
+    ],
+    "action_hash": "22319be2f397f3ccceffa46154f2f04f1ec366df12c51ccbe2122df452d539f9",
+    "max_wall_seconds": 0.16531786199993803,
+    "max_cpu_seconds": 0.1652081860000001,
+    "calls_over_1s": 0,
+    "slowest": [
+      {
+        "step": 504,
+        "wall_seconds": 0.16531786199993803,
+        "cpu_seconds": 0.1652081860000001
+      },
+      {
+        "step": 312,
+        "wall_seconds": 0.1464096489999065,
+        "cpu_seconds": 0.1462460430000001
+      },
+      {
+        "step": 216,
+        "wall_seconds": 0.12173405199996523,
+        "cpu_seconds": 0.1216128059999999
+      },
+      {
+        "step": 432,
+        "wall_seconds": 0.10640917999990052,
+        "cpu_seconds": 0.1062977169999999
+      },
+      {
+        "step": 240,
+        "wall_seconds": 0.1002797510000164,
+        "cpu_seconds": 0.10016415500000009
+      },
+      {
+        "step": 456,
+        "wall_seconds": 0.09918579299983321,
+        "cpu_seconds": 0.09907539600000037
+      },
+      {
+        "step": 408,
+        "wall_seconds": 0.08375399199985623,
+        "cpu_seconds": 0.08360333500000028
+      },
+      {
+        "step": 480,
+        "wall_seconds": 0.08117395500016755,
+        "cpu_seconds": 0.08104838300000017
+      },
+      {
+        "step": 192,
+        "wall_seconds": 0.07331019000002925,
+        "cpu_seconds": 0.07319769700000012
+      },
+      {
+        "step": 528,
+        "wall_seconds": 0.07007911999994576,
+        "cpu_seconds": 0.06996959499999988
+      },
+      {
+        "step": 168,
+        "wall_seconds": 0.06752710399996431,
+        "cpu_seconds": 0.06752175599999988
+      },
+      {
+        "step": 336,
+        "wall_seconds": 0.06523614499997166,
+        "cpu_seconds": 0.06510463100000008
+      }
+    ],
+    "matches_archive": true,
+    "panel_wall_max_for_match": 0.1727340049999384
+  },
+  "joint": {
+    "binary_sha256": "0302d5e2b6e30a4b6fed7a0350228070621c462791f6fb9a706a5ba91084e306",
+    "opponent": "nagatakengo_v70",
+    "seed": 2609205001,
+    "opponent_seat": 0,
+    "steps": 719,
+    "cash": [
+      48549.0,
+      143794.0
+    ],
+    "action_hash": "3c0c1dbe96545a5b5a7f68d8bb36dea6ab33a860e3582d948c6c3f4abfb63895",
+    "max_wall_seconds": 0.44954832400003397,
+    "max_cpu_seconds": 0.44909924800000045,
+    "calls_over_1s": 0,
+    "slowest": [
+      {
+        "step": 528,
+        "wall_seconds": 0.44954832400003397,
+        "cpu_seconds": 0.44909924800000045
+      },
+      {
+        "step": 360,
+        "wall_seconds": 0.24039830800006712,
+        "cpu_seconds": 0.24008376799999986
+      },
+      {
+        "step": 120,
+        "wall_seconds": 0.11345342599997821,
+        "cpu_seconds": 0.11333976099999976
+      },
+      {
+        "step": 216,
+        "wall_seconds": 0.11206860799984497,
+        "cpu_seconds": 0.11181694700000033
+      },
+      {
+        "step": 312,
+        "wall_seconds": 0.11030236400006288,
+        "cpu_seconds": 0.11019092900000071
+      },
+      {
+        "step": 240,
+        "wall_seconds": 0.10463211199999023,
+        "cpu_seconds": 0.10451561599999959
+      },
+      {
+        "step": 504,
+        "wall_seconds": 0.1040469160000157,
+        "cpu_seconds": 0.10392891399999993
+      },
+      {
+        "step": 144,
+        "wall_seconds": 0.09402187000000595,
+        "cpu_seconds": 0.09390583700000033
+      },
+      {
+        "step": 408,
+        "wall_seconds": 0.08410333200004061,
+        "cpu_seconds": 0.08399007900000033
+      },
+      {
+        "step": 0,
+        "wall_seconds": 0.08358113899998898,
+        "cpu_seconds": 0.08357346900000007
+      },
+      {
+        "step": 432,
+        "wall_seconds": 0.07837757900006181,
+        "cpu_seconds": 0.07820787899999981
+      },
+      {
+        "step": 336,
+        "wall_seconds": 0.07823546800000258,
+        "cpu_seconds": 0.07822029699999966
+      }
+    ],
+    "matches_archive": true,
+    "panel_wall_max_for_match": 2.983549860000039
+  }
+}

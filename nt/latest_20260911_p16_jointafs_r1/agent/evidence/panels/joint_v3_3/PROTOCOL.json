@@ -1,0 +1,21 @@
+{
+  "binary_sha256": "dd6c0d0cf8dd9b4d34016590944343704216d1ef9ef2d4816e132b98d51ac9ea",
+  "start": 2609125000,
+  "seeds": 3,
+  "opening": "none",
+  "names": [
+    "soil_v219g",
+    "moon_v215",
+    "flexon_v5",
+    "market_smart_v8",
+    "nagatakengo_v70",
+    "aurax_reactive_v1",
+    "thomas_955_v2",
+    "shop0909",
+    "aurax_shop_v2",
+    "seven_turn",
+    "ahmed_v27"
+  ],
+  "both_seats": true,
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+}

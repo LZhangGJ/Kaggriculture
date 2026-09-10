@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-09-10",
+  "limit": 5,
+  "visible_used_today": 2,
+  "visible_remaining": 3,
+  "official_team_limits": {
+    "num_today": 2,
+    "num_total": 64,
+    "num_allowed_now": 3,
+    "limited_by_total": false
+  },
+  "duplicates": [],
+  "checked_at_utc": "2026-09-10T14:52:10.882729+00:00"
+}

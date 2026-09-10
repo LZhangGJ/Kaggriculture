@@ -7,6 +7,12 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260911_p16_jointafs_r1/`](latest_20260911_p16_jointafs_r1/README_ZH.md)
+  — P16 JointAFS R1 complete source/config/binaries, eleven live Python
+  opponents, official local referee, 1,100-game paired evidence, portable
+  Public build receipts, and Submission 56146577. Local win rate was 77.82%
+  against the frozen eleven-opponent pool, but Public scored only 1430.3; the
+  handoff preserves both results and does not claim 90% or online superiority.
 - [`latest_20260910_r2p16/`](latest_20260910_r2p16/README_ZH.md)
   — frozen R2P16 startup-supply-prior candidate: complete source/config/binary,
   reproducible build, eleven original realtime opponents, official 1.32.7

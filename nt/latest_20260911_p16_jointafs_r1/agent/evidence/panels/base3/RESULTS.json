@@ -1,0 +1,112 @@
+{
+  "overall": {
+    "games": 66,
+    "wins": 46,
+    "errors": 0,
+    "ties": 0,
+    "mean_margin": 16784.015151515152
+  },
+  "by_opponent": {
+    "soil_v219g": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5484.333333333333
+    },
+    "moon_v215": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 9563.833333333334
+    },
+    "flexon_v5": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5482.666666666667
+    },
+    "market_smart_v8": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5482.0
+    },
+    "nagatakengo_v70": {
+      "games": 6,
+      "wins": 6,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 124901.5
+    },
+    "aurax_reactive_v1": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 9563.833333333334
+    },
+    "thomas_955_v2": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 2131.6666666666665
+    },
+    "shop0909": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5489.0
+    },
+    "aurax_shop_v2": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5553.666666666667
+    },
+    "seven_turn": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5482.666666666667
+    },
+    "ahmed_v27": {
+      "games": 6,
+      "wins": 4,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 5489.0
+    }
+  },
+  "by_seed": {
+    "2609125000": {
+      "games": 22,
+      "wins": 2,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 2907.090909090909
+    },
+    "2609125001": {
+      "games": 22,
+      "wins": 22,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 21196.727272727272
+    },
+    "2609125002": {
+      "games": 22,
+      "wins": 22,
+      "errors": 0,
+      "ties": 0,
+      "mean_margin": 26248.227272727272
+    }
+  },
+  "seconds": 81.70430848199999
+}

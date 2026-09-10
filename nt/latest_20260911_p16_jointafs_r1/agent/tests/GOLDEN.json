@@ -1,0 +1,14 @@
+[
+  {
+    "file": "golden/joint_moon_v215_2609125000_0.json.gz",
+    "opening": "none",
+    "sha256": "34d2f7dd5b499f845e6426c2e584960c3b81af95ca42988bd6dfc28df4fbde9f",
+    "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+  },
+  {
+    "file": "golden/joint_thomas_955_v2_2609125001_0.json.gz",
+    "opening": "none",
+    "sha256": "5116f6e4242b9538d29e055180f09e2d89d5c8eb336abe22464fd9a6e8655934",
+    "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+  }
+]

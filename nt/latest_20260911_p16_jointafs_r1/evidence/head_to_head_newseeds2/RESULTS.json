@@ -1,0 +1,50 @@
+{
+  "overall": {
+    "games": 200,
+    "afs_wins": 101,
+    "parent_wins": 93,
+    "ties": 6,
+    "errors": 0,
+    "afs_win_rate": 0.505,
+    "afs_score_rate": 0.52,
+    "mean_afs_cash": 97331.145,
+    "mean_parent_cash": 97509.25,
+    "mean_margin": -178.105,
+    "median_margin": 49.0,
+    "max_afs_action_seconds": 0.7355108260000023,
+    "max_parent_action_seconds": 0.47099985100000197
+  },
+  "by_afs_seat": {
+    "0": {
+      "games": 100,
+      "afs_wins": 48,
+      "parent_wins": 49,
+      "ties": 3,
+      "errors": 0,
+      "afs_win_rate": 0.48,
+      "afs_score_rate": 0.495,
+      "mean_afs_cash": 96692.2,
+      "mean_parent_cash": 97056.99,
+      "mean_margin": -364.79,
+      "median_margin": 0.0,
+      "max_afs_action_seconds": 0.7355108260000023,
+      "max_parent_action_seconds": 0.47099985100000197
+    },
+    "1": {
+      "games": 100,
+      "afs_wins": 53,
+      "parent_wins": 44,
+      "ties": 3,
+      "errors": 0,
+      "afs_win_rate": 0.53,
+      "afs_score_rate": 0.545,
+      "mean_afs_cash": 97970.09,
+      "mean_parent_cash": 97961.51,
+      "mean_margin": 8.58,
+      "median_margin": 390.0,
+      "max_afs_action_seconds": 0.7177008970000003,
+      "max_parent_action_seconds": 0.4220413939999901
+    }
+  },
+  "seconds_this_run": 95.006379844
+}

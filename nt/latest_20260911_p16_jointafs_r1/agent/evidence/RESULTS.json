@@ -1,0 +1,285 @@
+{
+  "overall": {
+    "games": 176,
+    "parent_wins": 125,
+    "joint_wins": 150,
+    "rescued": 26,
+    "lost_old_wins": 1,
+    "mean_margin_delta": -374.0681818181818,
+    "margin_improved": 81,
+    "margin_worse": 85,
+    "same_actions": 10
+  },
+  "by_block": {
+    "development": {
+      "games": 66,
+      "parent_wins": 46,
+      "joint_wins": 49,
+      "rescued": 4,
+      "lost_old_wins": 1,
+      "mean_margin_delta": -3401.318181818182,
+      "margin_improved": 24,
+      "margin_worse": 42,
+      "same_actions": 0
+    },
+    "confirmation": {
+      "games": 110,
+      "parent_wins": 79,
+      "joint_wins": 101,
+      "rescued": 22,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 1442.2818181818182,
+      "margin_improved": 57,
+      "margin_worse": 43,
+      "same_actions": 10
+    }
+  },
+  "by_seed": {
+    "2609125000": {
+      "games": 22,
+      "parent_wins": 2,
+      "joint_wins": 6,
+      "rescued": 4,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 6248.181818181818,
+      "margin_improved": 20,
+      "margin_worse": 2,
+      "same_actions": 0
+    },
+    "2609125001": {
+      "games": 22,
+      "parent_wins": 22,
+      "joint_wins": 21,
+      "rescued": 0,
+      "lost_old_wins": 1,
+      "mean_margin_delta": -6289.272727272727,
+      "margin_improved": 2,
+      "margin_worse": 20,
+      "same_actions": 0
+    },
+    "2609125002": {
+      "games": 22,
+      "parent_wins": 22,
+      "joint_wins": 22,
+      "rescued": 0,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -10162.863636363636,
+      "margin_improved": 2,
+      "margin_worse": 20,
+      "same_actions": 0
+    },
+    "2609205000": {
+      "games": 22,
+      "parent_wins": 4,
+      "joint_wins": 22,
+      "rescued": 18,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 3822.3636363636365,
+      "margin_improved": 19,
+      "margin_worse": 1,
+      "same_actions": 2
+    },
+    "2609205001": {
+      "games": 22,
+      "parent_wins": 13,
+      "joint_wins": 13,
+      "rescued": 0,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 558.2727272727273,
+      "margin_improved": 12,
+      "margin_worse": 10,
+      "same_actions": 0
+    },
+    "2609205002": {
+      "games": 22,
+      "parent_wins": 20,
+      "joint_wins": 22,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -3009.090909090909,
+      "margin_improved": 6,
+      "margin_worse": 12,
+      "same_actions": 4
+    },
+    "2609205003": {
+      "games": 22,
+      "parent_wins": 22,
+      "joint_wins": 22,
+      "rescued": 0,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1446.6363636363637,
+      "margin_improved": 2,
+      "margin_worse": 20,
+      "same_actions": 0
+    },
+    "2609205004": {
+      "games": 22,
+      "parent_wins": 20,
+      "joint_wins": 22,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 7286.5,
+      "margin_improved": 18,
+      "margin_worse": 0,
+      "same_actions": 4
+    }
+  },
+  "by_opponent": {
+    "ahmed_v27": {
+      "games": 16,
+      "parent_wins": 9,
+      "joint_wins": 13,
+      "rescued": 4,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 688.625,
+      "margin_improved": 9,
+      "margin_worse": 7,
+      "same_actions": 0
+    },
+    "aurax_reactive_v1": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 15,
+      "rescued": 4,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -988.25,
+      "margin_improved": 5,
+      "margin_worse": 7,
+      "same_actions": 4
+    },
+    "aurax_shop_v2": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1019.9375,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "flexon_v5": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1110.6875,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "market_smart_v8": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1112.25,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "moon_v215": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 15,
+      "rescued": 4,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -988.25,
+      "margin_improved": 5,
+      "margin_worse": 7,
+      "same_actions": 4
+    },
+    "nagatakengo_v70": {
+      "games": 16,
+      "parent_wins": 16,
+      "joint_wins": 16,
+      "rescued": 0,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 3852.6875,
+      "margin_improved": 9,
+      "margin_worse": 5,
+      "same_actions": 2
+    },
+    "seven_turn": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1110.6875,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "shop0909": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1108.625,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "soil_v219g": {
+      "games": 16,
+      "parent_wins": 11,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 0,
+      "mean_margin_delta": -1109.0625,
+      "margin_improved": 7,
+      "margin_worse": 9,
+      "same_actions": 0
+    },
+    "thomas_955_v2": {
+      "games": 16,
+      "parent_wins": 12,
+      "joint_wins": 13,
+      "rescued": 2,
+      "lost_old_wins": 1,
+      "mean_margin_delta": -108.3125,
+      "margin_improved": 11,
+      "margin_worse": 5,
+      "same_actions": 0
+    }
+  },
+  "regressions": [
+    {
+      "seed": 2609125001,
+      "opponent": "thomas_955_v2",
+      "opponent_seat": 1,
+      "block": "development",
+      "parent_cash": 101465.0,
+      "joint_cash": 84758.0,
+      "parent_opponent_cash": 90686.0,
+      "joint_opponent_cash": 99654.0,
+      "parent_margin": 10779.0,
+      "joint_margin": -14896.0,
+      "margin_delta": -25675.0,
+      "parent_win": true,
+      "joint_win": false,
+      "rescued": false,
+      "lost_old_win": true,
+      "same_actions": false,
+      "parent_hash": "511cbdd4b285296c49b3a897d31f066e92525d258df81ec4d7ffa29875fa0159",
+      "joint_hash": "c8600a5d0eaa0acd9d3cc26e66603d907ba2c9883aef13e40a3161dfe1b72d58"
+    }
+  ],
+  "latency": {
+    "parent_max": 0.3246177759999682,
+    "joint_max": 2.983549860000039
+  },
+  "paired_seed_bootstrap": {
+    "blocks": 8,
+    "draws": 10000,
+    "ci95_pp": [
+      1.1363636363636365,
+      34.659090909090914
+    ],
+    "scope": "exploratory; only 8 seeds and related opponents; do not claim stable 90 percent"
+  }
+}

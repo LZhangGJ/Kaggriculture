@@ -1,0 +1,11 @@
+{
+  "version": "P16 JointAFS R1",
+  "source_branch": "v2a",
+  "status": "FROZEN_CANDIDATE_SMALL_CONFIRMATION_POSITIVE_NOT_90_OVERALL",
+  "overall_wins": 150,
+  "overall_games": 176,
+  "confirmation_wins": 101,
+  "confirmation_games": 110,
+  "online_validated": false,
+  "report": "REPORT_ZH.md"
+}

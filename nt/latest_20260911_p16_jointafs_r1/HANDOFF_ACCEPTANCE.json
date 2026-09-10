@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "package": "P16 JointAFS R1",
+  "date": "2026-09-11",
+  "source_manifest_verification": {
+    "status": "PASS",
+    "files": 503,
+    "mismatches": 0
+  },
+  "behavior_regression": {
+    "status": "PASS",
+    "binary_sha256": "0302d5e2b6e30a4b6fed7a0350228070621c462791f6fb9a706a5ba91084e306",
+    "agent_action_comparisons": 1438,
+    "state_checkpoints": 60,
+    "complete_719_step_cases": 2
+  },
+  "portable_public_binary": {
+    "binary_sha256": "7a8783c776ab8c01e3370685f6de6f8b6a43ea409ab710fbe9330f165560950f",
+    "archive_sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+    "action_identity_games": 22,
+    "action_identity_differences": 0,
+    "official_file_games": 2,
+    "official_steps_per_game": 719,
+    "max_action_ms": 323.335
+  },
+  "local_external11_50seeds": {
+    "games": 1100,
+    "wins": 856,
+    "losses": 240,
+    "ties": 4,
+    "raw_win_rate_percent": 77.82
+  },
+  "public_submission": {
+    "id": 56146577,
+    "status": "COMPLETE",
+    "public_score": 1430.3,
+    "error_description": "",
+    "upload_calls": 1
+  },
+  "credential_scan": {
+    "status": "PASS",
+    "note": "Only the publishing script's KAGGLE_API_TOKEN variable name matched; no credential value is stored."
+  },
+  "largest_file_under_100_mib": true,
+  "excluded": [
+    "venv",
+    "compiler toolchain",
+    "Python bytecode and __pycache__",
+    "Kaggle credentials",
+    "external download caches"
+  ]
+}

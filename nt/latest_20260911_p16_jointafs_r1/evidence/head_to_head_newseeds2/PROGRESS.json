@@ -1,0 +1,20 @@
+{
+  "done": 200,
+  "total": 200,
+  "elapsed_seconds_this_run": 94.891855236,
+  "summary": {
+    "games": 200,
+    "afs_wins": 101,
+    "parent_wins": 93,
+    "ties": 6,
+    "errors": 0,
+    "afs_win_rate": 0.505,
+    "afs_score_rate": 0.52,
+    "mean_afs_cash": 97331.145,
+    "mean_parent_cash": 97509.25,
+    "mean_margin": -178.105,
+    "median_margin": 49.0,
+    "max_afs_action_seconds": 0.7355108260000023,
+    "max_parent_action_seconds": 0.47099985100000197
+  }
+}

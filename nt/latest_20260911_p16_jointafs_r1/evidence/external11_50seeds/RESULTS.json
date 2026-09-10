@@ -1,0 +1,381 @@
+{
+  "joint": {
+    "games": 1100,
+    "wins": 856,
+    "losses": 240,
+    "ties": 4,
+    "errors": 0,
+    "win_rate": 0.7781818181818182,
+    "mean_cash": 106716.93363636364,
+    "median_cash": 103506.0,
+    "mean_margin": 14457.565454545454,
+    "median_margin": 4844.0,
+    "max_latency_seconds": 0.8120974370000056
+  },
+  "parent": {
+    "games": 1100,
+    "wins": 797,
+    "losses": 299,
+    "ties": 4,
+    "errors": 0,
+    "win_rate": 0.7245454545454545,
+    "mean_cash": 108586.92636363636,
+    "median_cash": 106219.5,
+    "mean_margin": 14642.235454545455,
+    "median_margin": 4438.0,
+    "max_latency_seconds": 0.37892678699995486
+  },
+  "paired": {
+    "games": 1100,
+    "rescued": 125,
+    "lost_parent_wins": 66,
+    "margin_improved": 413,
+    "margin_worse": 381,
+    "same_actions": 306,
+    "mean_margin_delta": -184.67
+  },
+  "by_opponent": {
+    "soil_v219g": {
+      "joint": {
+        "games": 100,
+        "wins": 80,
+        "losses": 20,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.8,
+        "mean_cash": 101299.8,
+        "median_cash": 101880.0,
+        "mean_margin": 5054.5,
+        "median_margin": 3339.0,
+        "max_latency_seconds": 0.7219705939999983
+      },
+      "parent": {
+        "games": 100,
+        "wins": 67,
+        "losses": 33,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.67,
+        "mean_cash": 104349.77,
+        "median_cash": 102112.0,
+        "mean_margin": 4584.02,
+        "median_margin": 2592.0,
+        "max_latency_seconds": 0.3371764750000068
+      },
+      "rescued": 17,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": 470.48
+    },
+    "moon_v215": {
+      "joint": {
+        "games": 100,
+        "wins": 70,
+        "losses": 28,
+        "ties": 2,
+        "errors": 0,
+        "win_rate": 0.7,
+        "mean_cash": 101026.96,
+        "median_cash": 101956.5,
+        "mean_margin": 5347.33,
+        "median_margin": 3882.0,
+        "max_latency_seconds": 0.8111250950000013
+      },
+      "parent": {
+        "games": 100,
+        "wins": 74,
+        "losses": 24,
+        "ties": 2,
+        "errors": 0,
+        "win_rate": 0.74,
+        "mean_cash": 103839.01,
+        "median_cash": 105518.0,
+        "mean_margin": 6084.41,
+        "median_margin": 3111.5,
+        "max_latency_seconds": 0.2895045540000183
+      },
+      "rescued": 10,
+      "lost_parent_wins": 14,
+      "mean_margin_delta": -737.08
+    },
+    "flexon_v5": {
+      "joint": {
+        "games": 100,
+        "wins": 76,
+        "losses": 24,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.76,
+        "mean_cash": 101627.65,
+        "median_cash": 102120.0,
+        "mean_margin": 4719.24,
+        "median_margin": 2988.5,
+        "max_latency_seconds": 0.6733783810000205
+      },
+      "parent": {
+        "games": 100,
+        "wins": 68,
+        "losses": 32,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.68,
+        "mean_cash": 105087.02,
+        "median_cash": 102326.0,
+        "mean_margin": 5270.02,
+        "median_margin": 2695.0,
+        "max_latency_seconds": 0.3512672029999919
+      },
+      "rescued": 12,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": -550.78
+    },
+    "market_smart_v8": {
+      "joint": {
+        "games": 100,
+        "wins": 76,
+        "losses": 24,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.76,
+        "mean_cash": 101627.91,
+        "median_cash": 102120.0,
+        "mean_margin": 4715.46,
+        "median_margin": 2988.0,
+        "max_latency_seconds": 0.7010575560000092
+      },
+      "parent": {
+        "games": 100,
+        "wins": 68,
+        "losses": 32,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.68,
+        "mean_cash": 105087.1,
+        "median_cash": 102326.0,
+        "mean_margin": 5266.34,
+        "median_margin": 2692.0,
+        "max_latency_seconds": 0.3262878910000211
+      },
+      "rescued": 12,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": -550.88
+    },
+    "nagatakengo_v70": {
+      "joint": {
+        "games": 100,
+        "wins": 100,
+        "losses": 0,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 1.0,
+        "mean_cash": 156555.94,
+        "median_cash": 158310.5,
+        "mean_margin": 107930.25,
+        "median_margin": 107155.0,
+        "max_latency_seconds": 0.7913018170000043
+      },
+      "parent": {
+        "games": 100,
+        "wins": 100,
+        "losses": 0,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 1.0,
+        "mean_cash": 150928.81,
+        "median_cash": 146286.5,
+        "mean_margin": 105847.61,
+        "median_margin": 103334.0,
+        "max_latency_seconds": 0.33648568899997144
+      },
+      "rescued": 0,
+      "lost_parent_wins": 0,
+      "mean_margin_delta": 2082.64
+    },
+    "aurax_reactive_v1": {
+      "joint": {
+        "games": 100,
+        "wins": 70,
+        "losses": 28,
+        "ties": 2,
+        "errors": 0,
+        "win_rate": 0.7,
+        "mean_cash": 101026.96,
+        "median_cash": 101956.5,
+        "mean_margin": 5347.33,
+        "median_margin": 3882.0,
+        "max_latency_seconds": 0.8120974370000056
+      },
+      "parent": {
+        "games": 100,
+        "wins": 74,
+        "losses": 24,
+        "ties": 2,
+        "errors": 0,
+        "win_rate": 0.74,
+        "mean_cash": 103839.01,
+        "median_cash": 105518.0,
+        "mean_margin": 6084.41,
+        "median_margin": 3111.5,
+        "max_latency_seconds": 0.29421655800001645
+      },
+      "rescued": 10,
+      "lost_parent_wins": 14,
+      "mean_margin_delta": -737.08
+    },
+    "thomas_955_v2": {
+      "joint": {
+        "games": 100,
+        "wins": 82,
+        "losses": 18,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.82,
+        "mean_cash": 104268.73,
+        "median_cash": 101149.5,
+        "mean_margin": 6917.11,
+        "median_margin": 4795.0,
+        "max_latency_seconds": 0.7062389729999978
+      },
+      "parent": {
+        "games": 100,
+        "wins": 78,
+        "losses": 22,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.78,
+        "mean_cash": 101258.72,
+        "median_cash": 97902.0,
+        "mean_margin": 6752.03,
+        "median_margin": 5402.5,
+        "max_latency_seconds": 0.37892678699995486
+      },
+      "rescued": 16,
+      "lost_parent_wins": 12,
+      "mean_margin_delta": 165.08
+    },
+    "shop0909": {
+      "joint": {
+        "games": 100,
+        "wins": 76,
+        "losses": 24,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.76,
+        "mean_cash": 101628.65,
+        "median_cash": 102120.0,
+        "mean_margin": 4733.08,
+        "median_margin": 3011.5,
+        "max_latency_seconds": 0.68684382
+      },
+      "parent": {
+        "games": 100,
+        "wins": 68,
+        "losses": 32,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.68,
+        "mean_cash": 105088.0,
+        "median_cash": 102326.0,
+        "mean_margin": 5282.66,
+        "median_margin": 2703.5,
+        "max_latency_seconds": 0.3584744080000064
+      },
+      "rescued": 12,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": -549.58
+    },
+    "aurax_shop_v2": {
+      "joint": {
+        "games": 100,
+        "wins": 74,
+        "losses": 26,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.74,
+        "mean_cash": 101542.81,
+        "median_cash": 102071.0,
+        "mean_margin": 4810.4,
+        "median_margin": 3121.5,
+        "max_latency_seconds": 0.6825197769999818
+      },
+      "parent": {
+        "games": 100,
+        "wins": 66,
+        "losses": 34,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.66,
+        "mean_cash": 104999.63,
+        "median_cash": 102308.0,
+        "mean_margin": 5348.23,
+        "median_margin": 2759.5,
+        "max_latency_seconds": 0.350361955000011
+      },
+      "rescued": 12,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": -537.83
+    },
+    "seven_turn": {
+      "joint": {
+        "games": 100,
+        "wins": 76,
+        "losses": 24,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.76,
+        "mean_cash": 101627.65,
+        "median_cash": 102120.0,
+        "mean_margin": 4719.24,
+        "median_margin": 2988.5,
+        "max_latency_seconds": 0.7032356949999894
+      },
+      "parent": {
+        "games": 100,
+        "wins": 68,
+        "losses": 32,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.68,
+        "mean_cash": 105087.02,
+        "median_cash": 102326.0,
+        "mean_margin": 5270.02,
+        "median_margin": 2695.0,
+        "max_latency_seconds": 0.3493549749999829
+      },
+      "rescued": 12,
+      "lost_parent_wins": 4,
+      "mean_margin_delta": -550.78
+    },
+    "ahmed_v27": {
+      "joint": {
+        "games": 100,
+        "wins": 76,
+        "losses": 24,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.76,
+        "mean_cash": 101653.21,
+        "median_cash": 102120.0,
+        "mean_margin": 4739.28,
+        "median_margin": 3011.5,
+        "max_latency_seconds": 0.7011905680000154
+      },
+      "parent": {
+        "games": 100,
+        "wins": 66,
+        "losses": 34,
+        "ties": 0,
+        "errors": 0,
+        "win_rate": 0.66,
+        "mean_cash": 104892.1,
+        "median_cash": 102326.0,
+        "mean_margin": 5274.84,
+        "median_margin": 2703.5,
+        "max_latency_seconds": 0.3568696449999891
+      },
+      "rescued": 12,
+      "lost_parent_wins": 2,
+      "mean_margin_delta": -535.56
+    }
+  },
+  "seconds_this_run": 324.955859121
+}
