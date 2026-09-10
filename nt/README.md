@@ -78,7 +78,10 @@ APIs or validation assumptions.
 - `replay_collection/` — daily Top 60 live-leaderboard snapshot and Replay
   downloader. It freezes each team's currently scoring submission ID, then
   downloads every Public completed Replay currently exposed for that exact
-  submission. Start with `replay_collection/agent.md`.
+  submission. The current package includes serial-network rate-limit guards,
+  resumable receipts, a PowerShell runner, and an independent SHA256 verifier.
+  Start with `replay_collection/README_ZH.md`; the older full collection
+  specification remains in `replay_collection/agent.md`.
 - `latest_20260825_front40_public_v48/` — Rank1–40 current-submission
   reconstruction snapshot plus the 34-notebook 2026-08-25 Recently Run scan,
   final route banks/maps/receipts, and the strictly parity-accepted Kaito V48

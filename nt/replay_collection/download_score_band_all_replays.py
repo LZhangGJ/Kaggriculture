@@ -138,12 +138,14 @@ def download_one(
                     break
                 except Exception as exc:  # noqa: BLE001 - receipt records exact network error
                     error = str(exc)
+                    print(f"replay-retry episode={episode_id} attempt={attempt}/{retries} error={error}", flush=True)
                     partial.unlink(missing_ok=True)
                     if attempt == retries:
                         return {
                             "episode_id": episode_id,
                             "status": "failed",
                             "error": error,
+                            "attempts": attempt,
                         }
                     time.sleep(min(20, 2**attempt))
     return {
@@ -375,21 +377,25 @@ def main() -> int:
             )
         except Exception:
             missing_api_rows.append(row)
-    with ThreadPoolExecutor(max_workers=args.api_workers) as pool:
-        futures = {
-            pool.submit(
-                fetch_submission_episodes,
-                int(row["submission_id"]),
-                max(5, args.retries),
-            ): row
-            for row in missing_api_rows
-        }
-        for future in as_completed(futures):
-            submission_id, payload = future.result()
+    if args.api_workers != 1:
+        raise ValueError("Network API requests must be single-threaded")
+    for row in missing_api_rows:
+        submission_id = int(row["submission_id"])
+        try:
+            submission_id, payload = fetch_submission_episodes(submission_id, max(5, args.retries))
             api_payloads[submission_id] = payload
             path = api_dir / f"list_episodes_submission_{submission_id}.json"
             path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            if not isinstance(payload.get("episodes"), list):
+                raise ValueError("API schema changed: episodes is not a list")
+            if payload.get("nextPageToken") or payload.get("nextPage") or payload.get("hasMore"):
+                raise ValueError("API pagination detected; do not claim full coverage")
             print(f"episode-list submission={submission_id} episodes={len(payload.get('episodes', []))}", flush=True)
+        except Exception as exc:
+            failure = {"status": "FAILED", "stage": "episode_lists", "submission_id": submission_id,
+                       "error": str(exc), "generated_at_utc": datetime.now(timezone.utc).isoformat()}
+            (root / "INTERRUPTED.json").write_text(json.dumps(failure, indent=2), encoding="utf-8")
+            raise
 
     selected_by_submission = {int(row["submission_id"]): row for row in selected}
     rows_by_submission: dict[int, list[dict[str, Any]]] = {
@@ -496,15 +502,24 @@ def main() -> int:
                     flush=True,
                 )
 
-    for index, episode_id in enumerate(sorted(set(remote_ids)), start=1):
+    ordered_remote_ids = sorted(set(remote_ids))
+    for index, episode_id in enumerate(ordered_remote_ids, start=1):
         result = download_one(episode_id, root, args.retries, {})
         downloads[int(result["episode_id"])] = result
+        with (root / "network_receipts.jsonl").open("a", encoding="utf-8") as receipt:
+            receipt.write(json.dumps({"at_utc": datetime.now(timezone.utc).isoformat(), **result}) + "\n")
         if index % 25 == 0 or result["status"] == "failed" or index == len(remote_ids):
             print(
                 f"network-replays {index}/{len(set(remote_ids))} "
                 f"episode={result['episode_id']} status={result['status']}",
                 flush=True,
             )
+        if result["status"] == "failed":
+            for pending in ordered_remote_ids[index:]:
+                downloads[pending] = {"episode_id": pending, "status": "not_attempted",
+                                      "error": f"Stopped after exhausted retries for episode {episode_id}"}
+            print("Network stopped after exhausted retries; preserve this directory for resume.", flush=True)
+            break
 
     all_rows: list[dict[str, Any]] = []
     per_submission_summary: list[dict[str, Any]] = []
@@ -538,11 +553,14 @@ def main() -> int:
 
     write_csv(root / "submission_summary.csv", per_submission_summary)
     write_csv(root / "episode_rows.csv", all_rows)
-    failed = [row for row in downloads.values() if row["status"] == "failed"]
+    failed = [row for row in downloads.values() if row["status"] in {"failed", "not_attempted"}]
     summary = {
         "schema": "kaggriculture-live-score-band-all-public-replays-v1",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "source": "official LeaderboardService, EpisodeService/ListEpisodes and replay.json",
+        "source": leaderboard.get(
+            "selectionSource",
+            "official LeaderboardService, EpisodeService/ListEpisodes and replay.json",
+        ),
         "score_min": args.score_min,
         "rank_min": args.rank_min,
         "rank_max": args.rank_max,
@@ -564,6 +582,7 @@ def main() -> int:
                 "trusted_copied_cache",
                 "downloaded",
                 "failed",
+                "not_attempted",
             )
         },
         "unique_bytes": sum(int(row.get("bytes", 0)) for row in downloads.values()),

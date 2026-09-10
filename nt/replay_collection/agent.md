@@ -1,5 +1,7 @@
 # Kaggriculture 每日 Top 60 最强 Submission Replay 收集规范
 
+> 当前可执行入口和最新参数请先阅读 [`README_ZH.md`](README_ZH.md)。本文件保留完整的每日收集规范与历史背景。
+
 版本：v1.0
 
 日期：2026-08-26
