@@ -1,0 +1,880 @@
+{
+  "status": "PASS",
+  "pairs": 16,
+  "unchanged": 14,
+  "changed_after_actual_recovery": 2,
+  "known_case": {
+    "1": {
+      "events": [
+        {
+          "step": 241,
+          "day": 11,
+          "hour": 1,
+          "cash": 36.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "WOOL",
+                2
+              ],
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          "seconds": 0.02103209199999867,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 1,
+            "recovery_sales": 1,
+            "recovery_orders": 0,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 242,
+          "day": 11,
+          "hour": 2,
+          "cash": 269.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                2
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "seconds": 0.023322849999999562,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 2,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 243,
+          "day": 11,
+          "hour": 3,
+          "cash": 62.0,
+          "hands": 8,
+          "action": {
+            "farmer": [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            "hands": [
+              [
+                "PICKUP",
+                "WHEAT",
+                1
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "NORTH"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "WEST"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                2
+              ]
+            ]
+          },
+          "seconds": 0.046901895000004856,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 3,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 1,
+            "recovery_deferred": 0
+          }
+        }
+      ],
+      "old_day11": {
+        "hires": 7,
+        "wages": 33,
+        "cash": 238.0,
+        "uncompleted_required_tasks": [
+          [
+            84,
+            8,
+            4,
+            1,
+            1
+          ],
+          [
+            84,
+            9,
+            -1,
+            1,
+            1
+          ],
+          [
+            94,
+            8,
+            4,
+            1,
+            1
+          ],
+          [
+            94,
+            9,
+            -1,
+            1,
+            1
+          ]
+        ]
+      },
+      "new_day11": {
+        "hires": 8,
+        "wages": 54,
+        "cash": 526.0,
+        "uncompleted_required_tasks": []
+      },
+      "old_final": 89068.0,
+      "new_final": 118710.0,
+      "new_opponent_final": 106513.0
+    },
+    "0": {
+      "events": [
+        {
+          "step": 241,
+          "day": 11,
+          "hour": 1,
+          "cash": 36.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "WOOL",
+                2
+              ],
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          "seconds": 0.020231520999999475,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 1,
+            "recovery_sales": 1,
+            "recovery_orders": 0,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 242,
+          "day": 11,
+          "hour": 2,
+          "cash": 269.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                2
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "seconds": 0.023426014000008877,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 2,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 243,
+          "day": 11,
+          "hour": 3,
+          "cash": 62.0,
+          "hands": 8,
+          "action": {
+            "farmer": [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            "hands": [
+              [
+                "PICKUP",
+                "WHEAT",
+                1
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "NORTH"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "WEST"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                2
+              ]
+            ]
+          },
+          "seconds": 0.04547829300000217,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 3,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 1,
+            "recovery_deferred": 0
+          }
+        }
+      ],
+      "old_day11": {
+        "hires": 7,
+        "wages": 33,
+        "cash": 238.0,
+        "uncompleted_required_tasks": [
+          [
+            84,
+            8,
+            4,
+            1,
+            1
+          ],
+          [
+            84,
+            9,
+            -1,
+            1,
+            1
+          ],
+          [
+            94,
+            8,
+            4,
+            1,
+            1
+          ],
+          [
+            94,
+            9,
+            -1,
+            1,
+            1
+          ]
+        ]
+      },
+      "new_day11": {
+        "hires": 8,
+        "wages": 54,
+        "cash": 526.0,
+        "uncompleted_required_tasks": []
+      },
+      "old_final": 89068.0,
+      "new_final": 118710.0,
+      "new_opponent_final": 106513.0
+    }
+  },
+  "rows": [
+    {
+      "name": "recovery_workflow_native_155650166_seat1",
+      "first_difference": 241,
+      "recovery_events": 1,
+      "events": [
+        {
+          "step": 241,
+          "day": 11,
+          "hour": 1,
+          "cash": 36.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "WOOL",
+                2
+              ],
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          "seconds": 0.02103209199999867,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 1,
+            "recovery_sales": 1,
+            "recovery_orders": 0,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 242,
+          "day": 11,
+          "hour": 2,
+          "cash": 269.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                2
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "seconds": 0.023322849999999562,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 2,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 243,
+          "day": 11,
+          "hour": 3,
+          "cash": 62.0,
+          "hands": 8,
+          "action": {
+            "farmer": [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            "hands": [
+              [
+                "PICKUP",
+                "WHEAT",
+                1
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "NORTH"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "WEST"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                2
+              ]
+            ]
+          },
+          "seconds": 0.046901895000004856,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 3,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 1,
+            "recovery_deferred": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "recovery_workflow_native_155650166_seat0",
+      "first_difference": 241,
+      "recovery_events": 1,
+      "events": [
+        {
+          "step": 241,
+          "day": 11,
+          "hour": 1,
+          "cash": 36.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "WOOL",
+                2
+              ],
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          "seconds": 0.020231520999999475,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 1,
+            "recovery_sales": 1,
+            "recovery_orders": 0,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 242,
+          "day": 11,
+          "hour": 2,
+          "cash": 269.0,
+          "hands": 4,
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                2
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ],
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "seconds": 0.023426014000008877,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 2,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 0,
+            "recovery_deferred": 0
+          }
+        },
+        {
+          "step": 243,
+          "day": 11,
+          "hour": 3,
+          "cash": 62.0,
+          "hands": 8,
+          "action": {
+            "farmer": [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            "hands": [
+              [
+                "PICKUP",
+                "WHEAT",
+                1
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "NORTH"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              [
+                "WEST"
+              ],
+              [
+                "PICKUP",
+                "WHEAT",
+                3
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                2
+              ]
+            ]
+          },
+          "seconds": 0.04547829300000217,
+          "counters": {
+            "recovery_events": 1,
+            "recovery_checks": 3,
+            "recovery_sales": 1,
+            "recovery_orders": 1,
+            "recovery_installs": 1,
+            "recovery_deferred": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "recovery_moon_v215_2609168005_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_moon_v215_2609168005_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_aurax_reactive_v1_2609168005_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_aurax_reactive_v1_2609168005_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_nagatakengo_v70_2609168007_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_nagatakengo_v70_2609168007_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_aurax_reactive_v1_2677565155_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_aurax_reactive_v1_2677565155_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_moon_v215_2677565155_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_moon_v215_2677565155_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_nagatakengo_v70_2293445972_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_nagatakengo_v70_2293445972_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_thomas_955_v2_891473696_seat0",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    },
+    {
+      "name": "recovery_thomas_955_v2_891473696_seat1",
+      "first_difference": null,
+      "recovery_events": 0,
+      "events": []
+    }
+  ]
+}

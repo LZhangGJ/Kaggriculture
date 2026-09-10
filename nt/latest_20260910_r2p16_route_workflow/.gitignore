@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.o
+runs/
+build/*
+!build/revision2/
+build/revision2/*
+!build/revision2/route3.so
+!build/revision2/route3.BUILD.json

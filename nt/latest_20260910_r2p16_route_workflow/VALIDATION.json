@@ -1,0 +1,959 @@
+{
+  "summary": {
+    "status": "PASS",
+    "fresh_games": 220,
+    "regression_games": 6,
+    "native_steps": 162494,
+    "engine": "Previously compiled P16 simulator, reused without rebuilding",
+    "unit": [
+      {
+        "binary": "experiments/r2p16_route_workflow_20260910/old_counterexample.unit",
+        "sha256": "ae4b6ba0d872d2b1e796ec5dc1242d899881437226131bf824758c4c9bb98e78",
+        "stdout": "{\"cases\":40,\"partial_plant_without_water\":40}"
+      },
+      {
+        "binary": "Kaggriculture/nt/latest_20260910_r2p16_route_workflow/build/revision2/route3.unit",
+        "sha256": "1d6b83829ceee73b448e7b489d4643be1c03d032c3f00cb6331771825c453d9d",
+        "stdout": "PASS 20 route economics checks\nPASS 58 generalized workflow cases"
+      }
+    ],
+    "overall": {
+      "previous": {
+        "games": 110,
+        "wins": 65,
+        "losses": 45,
+        "ties": 0,
+        "mean_cash": 94265.09090909091,
+        "mean_margin": 11769.236363636364,
+        "mean_wages": 4380.818181818182,
+        "mean_moves": 2474.0272727272727,
+        "mean_overflow_units": 18.09090909090909,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 175729,
+        "hire_reductions": 94,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 2.165378277000059,
+        "calls_over_one_second": 143,
+        "max_overage": 2.3956911910001963
+      },
+      "workflow": {
+        "games": 110,
+        "wins": 65,
+        "losses": 45,
+        "ties": 0,
+        "mean_cash": 94147.66363636364,
+        "mean_margin": 11644.681818181818,
+        "mean_wages": 4380.818181818182,
+        "mean_moves": 2474.9545454545455,
+        "mean_overflow_units": 18.21818181818182,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 180827,
+        "hire_reductions": 94,
+        "witness_used": 0,
+        "chain_repairs": 20,
+        "proof_rejections": 22,
+        "max_seconds": 2.083076387999995,
+        "calls_over_one_second": 147,
+        "max_overage": 2.750323319000131
+      }
+    },
+    "paired": {
+      "pairs": 110,
+      "rescued": 0,
+      "lost": 0,
+      "same_shop_sequences": 110,
+      "mean_win_delta": 0,
+      "mean_cash_delta": -117.42727272727272,
+      "mean_margin_delta": -124.55454545454545,
+      "mean_wage_delta": 0
+    },
+    "by_opponent": {
+      "ahmed_v27": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.7,
+          "mean_margin": 2233.7,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.707532269000012,
+          "calls_over_one_second": 15,
+          "max_overage": 1.1538671450000493
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.2,
+          "mean_margin": 2038.0,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.4107251520000545,
+          "calls_over_one_second": 19,
+          "max_overage": 0.7542328399998723
+        }
+      },
+      "aurax_reactive_v1": {
+        "previous": {
+          "games": 10,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0,
+          "mean_cash": 87990.2,
+          "mean_margin": 4643.8,
+          "mean_wages": 4419.7,
+          "mean_moves": 2489.7,
+          "mean_overflow_units": 9.3,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16091,
+          "hire_reductions": 11,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.2208906399999933,
+          "calls_over_one_second": 9,
+          "max_overage": 0.22089063999999325
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0,
+          "mean_cash": 87990.2,
+          "mean_margin": 4643.8,
+          "mean_wages": 4419.7,
+          "mean_moves": 2490.1,
+          "mean_overflow_units": 9.3,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16091,
+          "hire_reductions": 11,
+          "witness_used": 0,
+          "chain_repairs": 3,
+          "proof_rejections": 2,
+          "max_seconds": 1.2818559290000167,
+          "calls_over_one_second": 5,
+          "max_overage": 0.28185592900001666
+        }
+      },
+      "aurax_shop_v2": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87261.0,
+          "mean_margin": 2397.5,
+          "mean_wages": 4417.9,
+          "mean_moves": 2486,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16600,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.5176788510000279,
+          "calls_over_one_second": 11,
+          "max_overage": 0.7426968419999866
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87076.3,
+          "mean_margin": 2201.6,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.4785547600000655,
+          "calls_over_one_second": 12,
+          "max_overage": 0.7500448809998943
+        }
+      },
+      "flexon_v5": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.5,
+          "mean_margin": 2227.9,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.8002003709999599,
+          "calls_over_one_second": 19,
+          "max_overage": 2.3956911910001963
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.0,
+          "mean_margin": 2032.2,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.9282710600000428,
+          "calls_over_one_second": 18,
+          "max_overage": 2.750323319000131
+        }
+      },
+      "market_smart_v8": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.5,
+          "mean_margin": 2225.9,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 2.165378277000059,
+          "calls_over_one_second": 17,
+          "max_overage": 1.3729075530000046
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.0,
+          "mean_margin": 2030.2,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 2.083076387999995,
+          "calls_over_one_second": 23,
+          "max_overage": 2.2419118889999936
+        }
+      },
+      "moon_v215": {
+        "previous": {
+          "games": 10,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0,
+          "mean_cash": 87990.2,
+          "mean_margin": 4643.8,
+          "mean_wages": 4419.7,
+          "mean_moves": 2489.7,
+          "mean_overflow_units": 9.3,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16091,
+          "hire_reductions": 11,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.1634776449999435,
+          "calls_over_one_second": 3,
+          "max_overage": 0.16347764499994355
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0,
+          "mean_cash": 87990.2,
+          "mean_margin": 4643.8,
+          "mean_wages": 4419.7,
+          "mean_moves": 2490.1,
+          "mean_overflow_units": 9.3,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16091,
+          "hire_reductions": 11,
+          "witness_used": 0,
+          "chain_repairs": 3,
+          "proof_rejections": 2,
+          "max_seconds": 1.3600976190000438,
+          "calls_over_one_second": 4,
+          "max_overage": 0.3600976190000438
+        }
+      },
+      "nagatakengo_v70": {
+        "previous": {
+          "games": 10,
+          "wins": 10,
+          "losses": 0,
+          "ties": 0,
+          "mean_cash": 134496.3,
+          "mean_margin": 86195.2,
+          "mean_wages": 4366.2,
+          "mean_moves": 2452.3,
+          "mean_overflow_units": 23.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 14795,
+          "hire_reductions": 4,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.3691268599999376,
+          "calls_over_one_second": 4,
+          "max_overage": 0.36912685999993755
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 10,
+          "losses": 0,
+          "ties": 0,
+          "mean_cash": 134496.3,
+          "mean_margin": 86195.2,
+          "mean_wages": 4366.2,
+          "mean_moves": 2452.3,
+          "mean_overflow_units": 23.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 14795,
+          "hire_reductions": 4,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.2704568120000204,
+          "calls_over_one_second": 5,
+          "max_overage": 0.27045681200002036
+        }
+      },
+      "seven_turn": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.5,
+          "mean_margin": 2227.9,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.5057086090000666,
+          "calls_over_one_second": 11,
+          "max_overage": 0.603381825999918
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.0,
+          "mean_margin": 2032.2,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.3905478800000992,
+          "calls_over_one_second": 10,
+          "max_overage": 0.40942905100007465
+        }
+      },
+      "shop0909": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.7,
+          "mean_margin": 2233.7,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.5703621559999874,
+          "calls_over_one_second": 21,
+          "max_overage": 1.7024819179998758
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.2,
+          "mean_margin": 2038.0,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.9138316610000174,
+          "calls_over_one_second": 16,
+          "max_overage": 1.2063563059999751
+        }
+      },
+      "soil_v219g": {
+        "previous": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87305.7,
+          "mean_margin": 2228.8,
+          "mean_wages": 4417.9,
+          "mean_moves": 2485.6,
+          "mean_overflow_units": 18.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 16392,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.377064938999979,
+          "calls_over_one_second": 15,
+          "max_overage": 0.5031124369999134
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "mean_cash": 87121.2,
+          "mean_margin": 2033.1,
+          "mean_wages": 4417.9,
+          "mean_moves": 2487,
+          "mean_overflow_units": 18.8,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 17150,
+          "hire_reductions": 9,
+          "witness_used": 0,
+          "chain_repairs": 2,
+          "proof_rejections": 2,
+          "max_seconds": 1.5178956040000458,
+          "calls_over_one_second": 20,
+          "max_overage": 1.2532671119999463
+        }
+      },
+      "thomas_955_v2": {
+        "previous": {
+          "games": 10,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0,
+          "mean_cash": 115344.7,
+          "mean_margin": 18203.4,
+          "mean_wages": 4058.1,
+          "mean_moves": 2383,
+          "mean_overflow_units": 26.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 13800,
+          "hire_reductions": 5,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 0,
+          "max_seconds": 1.7722620209999604,
+          "calls_over_one_second": 18,
+          "max_overage": 1.4790303890000587
+        },
+        "workflow": {
+          "games": 10,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0,
+          "mean_cash": 115344.7,
+          "mean_margin": 18203.4,
+          "mean_wages": 4058.1,
+          "mean_moves": 2383,
+          "mean_overflow_units": 26.6,
+          "mean_daytime_overflow_units": 0,
+          "missing": 0,
+          "invalid": 0,
+          "protected_tasks": 13800,
+          "hire_reductions": 5,
+          "witness_used": 0,
+          "chain_repairs": 0,
+          "proof_rejections": 4,
+          "max_seconds": 1.7019524999999476,
+          "calls_over_one_second": 15,
+          "max_overage": 1.313325976999863
+        }
+      }
+    },
+    "regressions": [
+      {
+        "name": "workflow_aurax_reactive_v1_2609168005_seat0",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 10,
+        "day16_same_wages": 143,
+        "equal_required_work": true,
+        "old_missing": 1,
+        "new_missing": 0,
+        "old_cash": 85507.0,
+        "new_cash": 83706.0,
+        "old_margin": 3126.0,
+        "new_margin": 969.0,
+        "resolved_actions": [
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 381,
+            "unit": 9,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 382,
+            "unit": 9,
+            "action": [
+              "WATER"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      },
+      {
+        "name": "workflow_aurax_reactive_v1_2609168005_seat1",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 10,
+        "day16_same_wages": 143,
+        "equal_required_work": true,
+        "old_missing": 1,
+        "new_missing": 0,
+        "old_cash": 85507.0,
+        "new_cash": 83706.0,
+        "old_margin": 3126.0,
+        "new_margin": 969.0,
+        "resolved_actions": [
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 381,
+            "unit": 9,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 382,
+            "unit": 9,
+            "action": [
+              "WATER"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      },
+      {
+        "name": "workflow_moon_v215_2609168005_seat0",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 10,
+        "day16_same_wages": 143,
+        "equal_required_work": true,
+        "old_missing": 1,
+        "new_missing": 0,
+        "old_cash": 85507.0,
+        "new_cash": 83706.0,
+        "old_margin": 3126.0,
+        "new_margin": 969.0,
+        "resolved_actions": [
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 381,
+            "unit": 9,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 382,
+            "unit": 9,
+            "action": [
+              "WATER"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      },
+      {
+        "name": "workflow_moon_v215_2609168005_seat1",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 10,
+        "day16_same_wages": 143,
+        "equal_required_work": true,
+        "old_missing": 1,
+        "new_missing": 0,
+        "old_cash": 85507.0,
+        "new_cash": 83706.0,
+        "old_margin": 3126.0,
+        "new_margin": 969.0,
+        "resolved_actions": [
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 381,
+            "unit": 9,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              9,
+              0
+            ],
+            "step": 382,
+            "unit": 9,
+            "action": [
+              "WATER"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      },
+      {
+        "name": "workflow_nagatakengo_v70_2609168007_seat0",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 9,
+        "day16_same_wages": 88,
+        "equal_required_work": true,
+        "old_missing": 4,
+        "new_missing": 0,
+        "old_cash": 149954.0,
+        "new_cash": 156200.0,
+        "old_margin": 98055.0,
+        "new_margin": 100442.0,
+        "resolved_actions": [
+          {
+            "position": [
+              1,
+              9
+            ],
+            "step": 373,
+            "unit": 3,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              1,
+              9
+            ],
+            "step": 374,
+            "unit": 3,
+            "action": [
+              "WATER"
+            ]
+          },
+          {
+            "position": [
+              4,
+              9
+            ],
+            "step": 367,
+            "unit": 3,
+            "action": [
+              "CARE"
+            ]
+          },
+          {
+            "position": [
+              4,
+              9
+            ],
+            "step": 370,
+            "unit": 2,
+            "action": [
+              "FEED"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      },
+      {
+        "name": "workflow_nagatakengo_v70_2609168007_seat1",
+        "first_different_action": 362,
+        "equal_prefix_steps": 362,
+        "day16_same_workers": 9,
+        "day16_same_wages": 88,
+        "equal_required_work": true,
+        "old_missing": 4,
+        "new_missing": 0,
+        "old_cash": 153662.0,
+        "new_cash": 156200.0,
+        "old_margin": 98668.0,
+        "new_margin": 100442.0,
+        "resolved_actions": [
+          {
+            "position": [
+              1,
+              9
+            ],
+            "step": 373,
+            "unit": 3,
+            "action": [
+              "PLANT",
+              "TOMATO"
+            ]
+          },
+          {
+            "position": [
+              1,
+              9
+            ],
+            "step": 374,
+            "unit": 3,
+            "action": [
+              "WATER"
+            ]
+          },
+          {
+            "position": [
+              4,
+              9
+            ],
+            "step": 367,
+            "unit": 3,
+            "action": [
+              "CARE"
+            ]
+          },
+          {
+            "position": [
+              4,
+              9
+            ],
+            "step": 370,
+            "unit": 2,
+            "action": [
+              "FEED"
+            ]
+          }
+        ],
+        "day16_witness_used": 1
+      }
+    ],
+    "findings": [],
+    "seed_blocks": [
+      {
+        "seed": 2609179000,
+        "win_delta": 0,
+        "cash_delta": -587.4545454545455,
+        "margin_delta": -623.0909090909091,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2609179001,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2609179002,
+        "win_delta": 0,
+        "cash_delta": 0.3181818181818182,
+        "margin_delta": 0.3181818181818182,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2609179003,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2609179004,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      }
+    ]
+  },
+  "timing": [
+    {
+      "name": "previous_market_smart_v8_2609179002_seat1",
+      "arm": "previous",
+      "action_parity": "PASS",
+      "observations": 719,
+      "binary_sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7",
+      "replay_sha256": "6def9ef298dfd10441d88c8675a1596e6813fb8cd18ca9c7a22bc5badc1b397d",
+      "max_seconds": 0.9509162740000647,
+      "max_cpu_seconds": 0.9508667809999993,
+      "peak_step": 456,
+      "over_one_second": 0
+    },
+    {
+      "name": "previous_flexon_v5_2609179000_seat1",
+      "arm": "previous",
+      "action_parity": "PASS",
+      "observations": 719,
+      "binary_sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7",
+      "replay_sha256": "8259ef49b67f51945a10dd0995020d22b0a064ce38ca76fa07767eed96d0acec",
+      "max_seconds": 0.6301113929998792,
+      "max_cpu_seconds": 0.6301032249999992,
+      "peak_step": 456,
+      "over_one_second": 0
+    },
+    {
+      "name": "workflow_market_smart_v8_2609179002_seat1",
+      "arm": "workflow",
+      "action_parity": "PASS",
+      "observations": 719,
+      "binary_sha256": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09",
+      "replay_sha256": "1e8b5e1e49e10ec068bcf9af1249a52ff5ee06bc5a8e783e454bd3f7aea778c2",
+      "max_seconds": 1.1038020339999548,
+      "max_cpu_seconds": 1.1037362579999979,
+      "peak_step": 456,
+      "over_one_second": 1
+    },
+    {
+      "name": "workflow_flexon_v5_2609179000_seat0",
+      "arm": "workflow",
+      "action_parity": "PASS",
+      "observations": 719,
+      "binary_sha256": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09",
+      "replay_sha256": "2e002b6f3086572cf0dbd9fe23342206af2046054be4ba3bc5c6c93ec59e9ed0",
+      "max_seconds": 0.6652536530000361,
+      "max_cpu_seconds": 0.6652168990000007,
+      "peak_step": 216,
+      "over_one_second": 0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "games": 1380,
+  "paired_pool_cases": 660,
+  "seed_blocks": 30,
+  "direct_games": 60,
+  "runtime_errors": 0,
+  "receipt_findings": 10,
+  "checked": "Exact frozen job set; raw receipt win/loss/tie counts; Decimal cash, margin and wage means; every paired CSV difference; all findings retained.",
+  "summary_sha256": "4ed1a07e24292a124758039a567d1a2c6929419cf155ca8c7a8b68ac16184305"
+}

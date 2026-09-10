@@ -1,0 +1,191 @@
+{
+  "regression": {
+    "games": 32,
+    "pairs": 16,
+    "replay_qa": "PASS",
+    "observations": 46080,
+    "arms": {
+      "workflow": {
+        "games": 16,
+        "wins": 12,
+        "draws": 2,
+        "mean_cash": 104394.0,
+        "mean_margin": 26271.5,
+        "mean_wages": 4259.9375,
+        "missing": 8,
+        "invalid": 0,
+        "overflow": 192,
+        "max_seconds": 1.2222010000000125,
+        "recovery_events": 0,
+        "recovery_deferred": 0
+      },
+      "recovery": {
+        "games": 16,
+        "wins": 14,
+        "draws": 0,
+        "mean_cash": 108099.25,
+        "mean_margin": 27796.125,
+        "mean_wages": 4343.0625,
+        "missing": 0,
+        "invalid": 0,
+        "overflow": 180,
+        "max_seconds": 1.2507064730000081,
+        "recovery_events": 2,
+        "recovery_deferred": 0
+      }
+    },
+    "paired_mean": {
+      "cash": 3705.25,
+      "margin": 1524.625,
+      "wages": 83.125,
+      "hires": 1.0,
+      "uncompleted_required_tasks": -0.5,
+      "invalid_actions": 0.0,
+      "overflow_units": -0.75
+    },
+    "win_flips": {
+      "-1": 0,
+      "0": 14,
+      "1": 2
+    }
+  },
+  "pool": {
+    "games": 220,
+    "pairs": 110,
+    "replay_qa": "PASS",
+    "observations": 316800,
+    "arms": {
+      "workflow": {
+        "games": 110,
+        "wins": 88,
+        "draws": 0,
+        "mean_cash": 116957.93636363637,
+        "mean_margin": 19920.80909090909,
+        "mean_wages": 4058.981818181818,
+        "missing": 0,
+        "invalid": 0,
+        "overflow": 2111,
+        "max_seconds": 1.9974308340000562,
+        "recovery_events": 0,
+        "recovery_deferred": 0
+      },
+      "recovery": {
+        "games": 110,
+        "wins": 88,
+        "draws": 0,
+        "mean_cash": 116957.93636363637,
+        "mean_margin": 19920.80909090909,
+        "mean_wages": 4058.981818181818,
+        "missing": 0,
+        "invalid": 0,
+        "overflow": 2111,
+        "max_seconds": 2.023115716999996,
+        "recovery_events": 0,
+        "recovery_deferred": 0
+      }
+    },
+    "paired_mean": {
+      "cash": 0.0,
+      "margin": 0.0,
+      "wages": 0.0,
+      "hires": 0.0,
+      "uncompleted_required_tasks": 0.0,
+      "invalid_actions": 0.0,
+      "overflow_units": 0.0
+    },
+    "win_flips": {
+      "-1": 0,
+      "0": 110,
+      "1": 0
+    }
+  },
+  "normal_action_parity": {
+    "regression": 14,
+    "pool": 110
+  },
+  "timing": [
+    {
+      "name": "workflow_aurax_shop_v2_4180732261_seat0",
+      "tag": "pool_r3",
+      "arm": "workflow",
+      "action_parity": "PASS",
+      "decisions": 719,
+      "binary_sha256": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09",
+      "replay_sha256": "d2b43083ec2ee98a466565871bd68a4fc23d29c9aac40d8fd2ada6100f282d1c",
+      "max_seconds": 0.5111244849999999,
+      "max_cpu_seconds": 0.5111293090000002,
+      "peak_step": 288,
+      "over_one_second": 0,
+      "recovery_steps": []
+    },
+    {
+      "name": "workflow_workflow_native_155650166_seat0",
+      "tag": "regression_r3",
+      "arm": "workflow",
+      "action_parity": "PASS",
+      "decisions": 719,
+      "binary_sha256": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09",
+      "replay_sha256": "0e1eda1bc37370643ded2ccf37bbb23c577f0f4211be84ef411e90951a3a8f14",
+      "max_seconds": 0.7004293839999995,
+      "max_cpu_seconds": 0.7003786299999994,
+      "peak_step": 240,
+      "over_one_second": 0,
+      "recovery_steps": [
+        {
+          "step": 241,
+          "seconds": 0.0010831670000008842
+        },
+        {
+          "step": 242,
+          "seconds": 0.06049715500000019
+        },
+        {
+          "step": 243,
+          "seconds": 0.0019116889999999387
+        }
+      ]
+    },
+    {
+      "name": "recovery_shop0909_4180732261_seat1",
+      "tag": "pool_r3",
+      "arm": "recovery",
+      "action_parity": "PASS",
+      "decisions": 719,
+      "binary_sha256": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e",
+      "replay_sha256": "efecb6d062c22f9a82149658a9432e2fb82ae5210603bbe641bd424bb637192f",
+      "max_seconds": 0.5140858319999992,
+      "max_cpu_seconds": 0.5139924090000001,
+      "peak_step": 288,
+      "over_one_second": 0,
+      "recovery_steps": []
+    },
+    {
+      "name": "recovery_workflow_native_155650166_seat0",
+      "tag": "regression_r3",
+      "arm": "recovery",
+      "action_parity": "PASS",
+      "decisions": 719,
+      "binary_sha256": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e",
+      "replay_sha256": "146851971d6df08bbfb55d71d19a559631517de79c67f5ae62ba77749442ee1b",
+      "max_seconds": 0.6706613419999954,
+      "max_cpu_seconds": 0.6706573949999992,
+      "peak_step": 240,
+      "over_one_second": 0,
+      "recovery_steps": [
+        {
+          "step": 241,
+          "seconds": 0.01730271099999925
+        },
+        {
+          "step": 242,
+          "seconds": 0.01612862900000067
+        },
+        {
+          "step": 243,
+          "seconds": 0.042521559000000764
+        }
+      ]
+    }
+  ],
+  "build_sha256": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e"
+}

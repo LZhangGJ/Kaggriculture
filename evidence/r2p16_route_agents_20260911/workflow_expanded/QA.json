@@ -1,0 +1,17 @@
+{
+  "assessment": "Share with caveats",
+  "checks": [
+    "All 1,380 frozen jobs present exactly once; both seats and both versions complete.",
+    "Input and output hashes, replay lengths, terminal cash, wages, overflow, task obligations, invalid actions and 719 decision timings reconciled.",
+    "Inference resamples 30 entire paired seed blocks; 1,380 games are not treated as independent samples.",
+    "Public-pool results and direct head-to-head results use separate denominators; ties count as half a point only in the direct score."
+  ],
+  "caveats": [
+    "Fixed public pool contains similar programs and shared action libraries; this is not a ladder rating.",
+    "If every observed paired win difference is zero, the ordinary bootstrap win interval collapses to zero; this is not an equivalence guarantee for unseen seeds or opponents.",
+    "Same seed can produce different later shops if policy decisions change the official RNG consumption path; paired differences measure the full closed-loop outcome.",
+    "Native host does not enforce competition sandbox decision deadlines; parallel wall times measure contention as well as policy work.",
+    "Protected-work audit covers adopted commitments, not every potential agricultural action. Direct matches audit workflow obligations; both versions are audited throughout the public pool.",
+    "Numeric seed spread is not a guarantee of all possible board coverage. These are 30 preselected random initializations."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "arm": "recovery",
+  "source": "Git staged export",
+  "policy_binary_rebuilt": false,
+  "binary_sha256": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e",
+  "unit_stdout": "PASS 20 route economics checks\nPASS 58 generalized workflow cases\nPASS 19 procurement recovery cases",
+  "action_parity": "PASS",
+  "decisions": 719,
+  "replay_sha256": "ccb744f20bbf5316b60faa316423bf17fcb5d198dbdeac6003d56499a4bc0fec",
+  "recovery_events": 1,
+  "action_replay_seconds": 13.160933804000003,
+  "scope": "Package portability and existing trajectory reproduction; not new strength games or sandbox timing certification"
+}

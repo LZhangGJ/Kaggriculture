@@ -1,0 +1,4669 @@
+{
+  "status": "COMPLETED_WITH_FINDINGS",
+  "games": 1380,
+  "pool_games": 1320,
+  "direct_games": 60,
+  "seed_count": 30,
+  "seeds": [
+    117829598,
+    187336049,
+    155650166,
+    676107440,
+    540264268,
+    551114232,
+    897096967,
+    891473696,
+    1177058189,
+    1590126116,
+    1562980636,
+    1453067901,
+    1963298828,
+    1926939006,
+    2083385889,
+    2342974685,
+    2293445972,
+    2372559800,
+    2634794734,
+    2677565155,
+    2597910918,
+    3249818667,
+    3069505753,
+    3223664724,
+    3555448002,
+    3798247684,
+    3557046066,
+    3921631596,
+    4105283529,
+    4185430615
+  ],
+  "native_steps": 992220,
+  "frozen_input_count": 135,
+  "protocol_sha256": "04769f7b540e34f8472e706cac20f950267a0689bdaa030824f22756fe6eaae8",
+  "overall": {
+    "previous": {
+      "games": 660,
+      "wins": 564,
+      "losses": 96,
+      "ties": 0,
+      "mean_cash": 110068.20606060605,
+      "mean_margin": 19220.26818181818,
+      "mean_wages": 4219.878787878788,
+      "mean_moves": 2462.5530303030305,
+      "mean_overflow_units": 12.559090909090909,
+      "mean_daytime_overflow_units": 0,
+      "missing": 12,
+      "invalid": 0,
+      "protected_tasks": 1039299,
+      "hire_reductions": 434,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "proof_rejections": 0,
+      "max_seconds": 2.099738007999804,
+      "calls_over_one_second": 556,
+      "max_overage": 1.789619718999802
+    },
+    "workflow": {
+      "games": 660,
+      "wins": 564,
+      "losses": 96,
+      "ties": 0,
+      "mean_cash": 109988.63181818182,
+      "mean_margin": 19174.946969696968,
+      "mean_wages": 4206.659090909091,
+      "mean_moves": 2459.8257575757575,
+      "mean_overflow_units": 12.639393939393939,
+      "mean_daytime_overflow_units": 0,
+      "missing": 0,
+      "invalid": 0,
+      "protected_tasks": 1045569,
+      "hire_reductions": 402,
+      "witness_used": 10,
+      "chain_repairs": 84,
+      "proof_rejections": 151,
+      "max_seconds": 2.4074231559998225,
+      "calls_over_one_second": 575,
+      "max_overage": 2.452469659000144
+    }
+  },
+  "paired": {
+    "pairs": 660,
+    "seeds": 30,
+    "rescued_losses": 0,
+    "lost_wins": 0,
+    "cash_improved": 15,
+    "cash_equal": 595,
+    "cash_regressed": 50,
+    "lower_wage_cases": 34,
+    "same_shop_sequences": 632,
+    "means": {
+      "win_delta": 0,
+      "cash_delta": -79.57424242424243,
+      "margin_delta": -45.32121212121212,
+      "wage_delta": -13.219696969696969
+    },
+    "seed_bootstrap_95": {
+      "win_delta": [
+        0,
+        0
+      ],
+      "cash_delta": [
+        -369.9848484848485,
+        117.52272727272727
+      ],
+      "margin_delta": [
+        -444.5984848484848,
+        234.4060606060606
+      ],
+      "wage_delta": [
+        -38.74090909090909,
+        4.265151515151516
+      ]
+    },
+    "cash_delta_distribution": {
+      "min": -5142.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 21425.0
+    },
+    "seed_blocks": [
+      {
+        "seed": 117829598,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 1.2272727272727273,
+        "wage_delta": 0
+      },
+      {
+        "seed": 155650166,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 187336049,
+        "win_delta": 0,
+        "cash_delta": -91.63636363636364,
+        "margin_delta": -91.0,
+        "wage_delta": 91.63636363636364
+      },
+      {
+        "seed": 540264268,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 551114232,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 676107440,
+        "win_delta": 0,
+        "cash_delta": -324.22727272727275,
+        "margin_delta": 206.77272727272728,
+        "wage_delta": 5
+      },
+      {
+        "seed": 891473696,
+        "win_delta": 0,
+        "cash_delta": -0.09090909090909091,
+        "margin_delta": -0.09090909090909091,
+        "wage_delta": 0
+      },
+      {
+        "seed": 897096967,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 1177058189,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 1453067901,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 1562980636,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 1590126116,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 1926939006,
+        "win_delta": 0,
+        "cash_delta": -3644.181818181818,
+        "margin_delta": -4707.454545454545,
+        "wage_delta": -310.45454545454544
+      },
+      {
+        "seed": 1963298828,
+        "win_delta": 0,
+        "cash_delta": -7.090909090909091,
+        "margin_delta": -7.090909090909091,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2083385889,
+        "win_delta": 0,
+        "cash_delta": 248.72727272727272,
+        "margin_delta": 299.09090909090907,
+        "wage_delta": -32.36363636363637
+      },
+      {
+        "seed": 2293445972,
+        "win_delta": 0,
+        "cash_delta": 1249.5454545454545,
+        "margin_delta": 1147.1363636363637,
+        "wage_delta": -10.818181818181818
+      },
+      {
+        "seed": 2342974685,
+        "win_delta": 0,
+        "cash_delta": -64.18181818181819,
+        "margin_delta": -243.9090909090909,
+        "wage_delta": -3.090909090909091
+      },
+      {
+        "seed": 2372559800,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2597910918,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 2634794734,
+        "win_delta": 0,
+        "cash_delta": -189.45454545454547,
+        "margin_delta": 1933.090909090909,
+        "wage_delta": -58.54545454545455
+      },
+      {
+        "seed": 2677565155,
+        "win_delta": 0,
+        "cash_delta": 432.1818181818182,
+        "margin_delta": 97.63636363636364,
+        "wage_delta": -88.54545454545455
+      },
+      {
+        "seed": 3069505753,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3223664724,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3249818667,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3555448002,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3557046066,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3798247684,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 3921631596,
+        "win_delta": 0,
+        "cash_delta": 3.0,
+        "margin_delta": 4.7727272727272725,
+        "wage_delta": 10.590909090909092
+      },
+      {
+        "seed": 4105283529,
+        "win_delta": 0,
+        "cash_delta": 0.0,
+        "margin_delta": 0.0,
+        "wage_delta": 0
+      },
+      {
+        "seed": 4185430615,
+        "win_delta": 0,
+        "cash_delta": 0.18181818181818182,
+        "margin_delta": 0.18181818181818182,
+        "wage_delta": 0
+      }
+    ]
+  },
+  "by_opponent": {
+    "soil_v219g": {
+      "previous": {
+        "games": 60,
+        "wins": 53,
+        "losses": 7,
+        "ties": 0,
+        "mean_cash": 105027.8,
+        "mean_margin": 10939.95,
+        "mean_wages": 4215.433333333333,
+        "mean_moves": 2472.2833333333333,
+        "mean_overflow_units": 12.033333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 93818,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.6763123789996826,
+        "calls_over_one_second": 45,
+        "max_overage": 1.0019461479996608
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 53,
+        "losses": 7,
+        "ties": 0,
+        "mean_cash": 104851.66666666667,
+        "mean_margin": 10713.716666666667,
+        "mean_wages": 4207.933333333333,
+        "mean_moves": 2470.2166666666667,
+        "mean_overflow_units": 12.333333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94432,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 13,
+        "max_seconds": 1.6491455010000209,
+        "calls_over_one_second": 43,
+        "max_overage": 1.0231894089999969
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "moon_v215": {
+      "previous": {
+        "games": 60,
+        "wins": 52,
+        "losses": 8,
+        "ties": 0,
+        "mean_cash": 109730.06666666667,
+        "mean_margin": 10943.15,
+        "mean_wages": 4235.566666666667,
+        "mean_moves": 2469.7,
+        "mean_overflow_units": 9.233333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 2,
+        "invalid": 0,
+        "protected_tasks": 96738,
+        "hire_reductions": 47,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.595094066999991,
+        "calls_over_one_second": 49,
+        "max_overage": 0.6370179339996866
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 52,
+        "losses": 8,
+        "ties": 0,
+        "mean_cash": 109750.63333333333,
+        "mean_margin": 11281.183333333332,
+        "mean_wages": 4188.8,
+        "mean_moves": 2462.0333333333333,
+        "mean_overflow_units": 9.233333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 97696,
+        "hire_reductions": 45,
+        "witness_used": 2,
+        "chain_repairs": 12,
+        "proof_rejections": 15,
+        "max_seconds": 1.4778368239999509,
+        "calls_over_one_second": 47,
+        "max_overage": 0.5341474649999327
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 6,
+        "cash_equal": 48,
+        "cash_regressed": 6,
+        "lower_wage_cases": 8,
+        "same_shop_sequences": 56,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": 20.566666666666666,
+          "margin_delta": 338.03333333333336,
+          "wage_delta": -46.766666666666666
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -207.4,
+            259.43333333333334
+          ],
+          "margin_delta": [
+            -178.23333333333332,
+            1135.9666666666667
+          ],
+          "wage_delta": [
+            -97.63333333333334,
+            -5.933333333333334
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -2052.0,
+          "p10": -35.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 2377.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -2052.0,
+            "margin_delta": -2639.0,
+            "wage_delta": -416
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": -35.0,
+            "margin_delta": -35.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 1368.0,
+            "margin_delta": 1645.0,
+            "wage_delta": -178
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": -1042.0,
+            "margin_delta": 10632.0,
+            "wage_delta": -322
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 2377.0,
+            "margin_delta": 537.0,
+            "wage_delta": -487
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 1.0,
+            "margin_delta": 1.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "flexon_v5": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105114.56666666667,
+        "mean_margin": 10444.983333333334,
+        "mean_wages": 4230.533333333334,
+        "mean_moves": 2472.65,
+        "mean_overflow_units": 10.833333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94504,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.321754521999992,
+        "calls_over_one_second": 45,
+        "max_overage": 0.5329155770000398
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104938.43333333333,
+        "mean_margin": 10218.75,
+        "mean_wages": 4223.033333333334,
+        "mean_moves": 2470.5833333333335,
+        "mean_overflow_units": 11.133333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 95118,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.5617882199999258,
+        "calls_over_one_second": 51,
+        "max_overage": 0.9092109430000619
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "market_smart_v8": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105114.56666666667,
+        "mean_margin": 10442.65,
+        "mean_wages": 4230.533333333334,
+        "mean_moves": 2472.65,
+        "mean_overflow_units": 10.833333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94504,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.5586421539999833,
+        "calls_over_one_second": 37,
+        "max_overage": 0.620404628000017
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104938.43333333333,
+        "mean_margin": 10216.416666666666,
+        "mean_wages": 4223.033333333334,
+        "mean_moves": 2470.5833333333335,
+        "mean_overflow_units": 11.133333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 95118,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.54959288200007,
+        "calls_over_one_second": 49,
+        "max_overage": 0.6323572700000568
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "nagatakengo_v70": {
+      "previous": {
+        "games": 60,
+        "wins": 60,
+        "losses": 0,
+        "ties": 0,
+        "mean_cash": 156446.45,
+        "mean_margin": 108973.1,
+        "mean_wages": 4109.766666666666,
+        "mean_moves": 2405.616666666667,
+        "mean_overflow_units": 25.3,
+        "mean_daytime_overflow_units": 0,
+        "missing": 6,
+        "invalid": 0,
+        "protected_tasks": 87293,
+        "hire_reductions": 40,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.5862630569999965,
+        "calls_over_one_second": 50,
+        "max_overage": 0.7850462420000213
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 60,
+        "losses": 0,
+        "ties": 0,
+        "mean_cash": 156794.83333333334,
+        "mean_margin": 109480.9,
+        "mean_wages": 4111.516666666666,
+        "mean_moves": 2405.5833333333335,
+        "mean_overflow_units": 23.416666666666668,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 87777,
+        "hire_reductions": 40,
+        "witness_used": 4,
+        "chain_repairs": 1,
+        "proof_rejections": 25,
+        "max_seconds": 1.8121034790001431,
+        "calls_over_one_second": 42,
+        "max_overage": 1.7023840349997954
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 3,
+        "cash_equal": 53,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 56,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": 348.3833333333333,
+          "margin_delta": 507.8,
+          "wage_delta": 1.75
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -354.45,
+            1400.1333333333334
+          ],
+          "margin_delta": [
+            0.18333333333333332,
+            1443.45
+          ],
+          "wage_delta": [
+            -10.066666666666666,
+            13.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5130.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 21425.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 13.5,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": -3566.5,
+            "margin_delta": 2274.5,
+            "wage_delta": 55
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": -8.0,
+            "margin_delta": -8.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 13993.0,
+            "margin_delta": 12901.5,
+            "wage_delta": -119
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 33.0,
+            "margin_delta": 52.5,
+            "wage_delta": 116.5
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "aurax_reactive_v1": {
+      "previous": {
+        "games": 60,
+        "wins": 52,
+        "losses": 8,
+        "ties": 0,
+        "mean_cash": 109730.06666666667,
+        "mean_margin": 10943.15,
+        "mean_wages": 4235.566666666667,
+        "mean_moves": 2469.7,
+        "mean_overflow_units": 9.233333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 2,
+        "invalid": 0,
+        "protected_tasks": 96738,
+        "hire_reductions": 47,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 2.099738007999804,
+        "calls_over_one_second": 68,
+        "max_overage": 1.789619718999802
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 52,
+        "losses": 8,
+        "ties": 0,
+        "mean_cash": 109750.63333333333,
+        "mean_margin": 11281.183333333332,
+        "mean_wages": 4188.8,
+        "mean_moves": 2462.0333333333333,
+        "mean_overflow_units": 9.233333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 97696,
+        "hire_reductions": 45,
+        "witness_used": 2,
+        "chain_repairs": 12,
+        "proof_rejections": 15,
+        "max_seconds": 2.4074231559998225,
+        "calls_over_one_second": 60,
+        "max_overage": 2.452469659000144
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 6,
+        "cash_equal": 48,
+        "cash_regressed": 6,
+        "lower_wage_cases": 8,
+        "same_shop_sequences": 56,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": 20.566666666666666,
+          "margin_delta": 338.03333333333336,
+          "wage_delta": -46.766666666666666
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -207.4,
+            259.43333333333334
+          ],
+          "margin_delta": [
+            -178.23333333333332,
+            1135.9666666666667
+          ],
+          "wage_delta": [
+            -97.63333333333334,
+            -5.933333333333334
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -2052.0,
+          "p10": -35.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 2377.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -2052.0,
+            "margin_delta": -2639.0,
+            "wage_delta": -416
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": -35.0,
+            "margin_delta": -35.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 1368.0,
+            "margin_delta": 1645.0,
+            "wage_delta": -178
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": -1042.0,
+            "margin_delta": 10632.0,
+            "wage_delta": -322
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 2377.0,
+            "margin_delta": 537.0,
+            "wage_delta": -487
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 1.0,
+            "margin_delta": 1.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "thomas_955_v2": {
+      "previous": {
+        "games": 60,
+        "wins": 41,
+        "losses": 19,
+        "ties": 0,
+        "mean_cash": 99212.96666666666,
+        "mean_margin": 6806.05,
+        "mean_wages": 4223.6,
+        "mean_moves": 2433.883333333333,
+        "mean_overflow_units": 17.616666666666667,
+        "mean_daytime_overflow_units": 0,
+        "missing": 2,
+        "invalid": 0,
+        "protected_tasks": 98416,
+        "hire_reductions": 32,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.4697585159999562,
+        "calls_over_one_second": 74,
+        "max_overage": 1.1838636310008042
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 41,
+        "losses": 19,
+        "ties": 0,
+        "mean_cash": 99181.13333333333,
+        "mean_margin": 6707.15,
+        "mean_wages": 4222.466666666666,
+        "mean_moves": 2433.7166666666667,
+        "mean_overflow_units": 18.283333333333335,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 97988,
+        "hire_reductions": 32,
+        "witness_used": 2,
+        "chain_repairs": 3,
+        "proof_rejections": 17,
+        "max_seconds": 2.09739347499999,
+        "calls_over_one_second": 72,
+        "max_overage": 2.3349572490001265
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 54,
+        "cash_regressed": 6,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -31.833333333333332,
+          "margin_delta": -98.9,
+          "wage_delta": -1.1333333333333333
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -87.2,
+            0.0
+          ],
+          "margin_delta": [
+            -287.23333333333335,
+            0.0
+          ],
+          "wage_delta": [
+            -3.4,
+            0
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -706.0,
+          "p10": -1.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": -1.0,
+            "margin_delta": -1.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": -248.0,
+            "margin_delta": -283.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": -706.0,
+            "margin_delta": -2683.0,
+            "wage_delta": -34
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "shop0909": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105115.0,
+        "mean_margin": 10452.55,
+        "mean_wages": 4230.533333333334,
+        "mean_moves": 2472.65,
+        "mean_overflow_units": 10.833333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94504,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.44323118300008,
+        "calls_over_one_second": 44,
+        "max_overage": 0.5713327959997514
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104938.86666666667,
+        "mean_margin": 10226.316666666668,
+        "mean_wages": 4223.033333333334,
+        "mean_moves": 2470.5833333333335,
+        "mean_overflow_units": 11.133333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 95118,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.4647193790001438,
+        "calls_over_one_second": 51,
+        "max_overage": 0.6151200140002402
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "aurax_shop_v2": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105027.31666666667,
+        "mean_margin": 10527.033333333333,
+        "mean_wages": 4230.533333333334,
+        "mean_moves": 2472.5833333333335,
+        "mean_overflow_units": 10.833333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94504,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.5381160659999296,
+        "calls_over_one_second": 44,
+        "max_overage": 0.8610974839998562
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104851.11666666667,
+        "mean_margin": 10300.933333333332,
+        "mean_wages": 4223.033333333334,
+        "mean_moves": 2470.516666666667,
+        "mean_overflow_units": 11.133333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 95118,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.4714360259999921,
+        "calls_over_one_second": 46,
+        "max_overage": 0.8176446289999149
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.2,
+          "margin_delta": -226.1,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.8,
+            0.0
+          ],
+          "margin_delta": [
+            -673.5333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5142.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5142.0,
+            "margin_delta": -6640.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "seven_turn": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105114.56666666667,
+        "mean_margin": 10444.983333333334,
+        "mean_wages": 4230.533333333334,
+        "mean_moves": 2472.65,
+        "mean_overflow_units": 10.833333333333334,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94504,
+        "hire_reductions": 38,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.565211207999937,
+        "calls_over_one_second": 46,
+        "max_overage": 0.6593668449997949
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104938.43333333333,
+        "mean_margin": 10218.75,
+        "mean_wages": 4223.033333333334,
+        "mean_moves": 2470.5833333333335,
+        "mean_overflow_units": 11.133333333333333,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 95118,
+        "hire_reductions": 34,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.7663761759999943,
+        "calls_over_one_second": 56,
+        "max_overage": 0.9512259520001862
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    },
+    "ahmed_v27": {
+      "previous": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 105116.9,
+        "mean_margin": 10505.35,
+        "mean_wages": 4246.066666666667,
+        "mean_moves": 2473.7166666666667,
+        "mean_overflow_units": 10.566666666666666,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 93776,
+        "hire_reductions": 40,
+        "witness_used": 0,
+        "chain_repairs": 0,
+        "proof_rejections": 0,
+        "max_seconds": 1.7269159369999443,
+        "calls_over_one_second": 54,
+        "max_overage": 1.4608747169997969
+      },
+      "workflow": {
+        "games": 60,
+        "wins": 51,
+        "losses": 9,
+        "ties": 0,
+        "mean_cash": 104940.76666666666,
+        "mean_margin": 10279.116666666667,
+        "mean_wages": 4238.566666666667,
+        "mean_moves": 2471.65,
+        "mean_overflow_units": 10.866666666666667,
+        "mean_daytime_overflow_units": 0,
+        "missing": 0,
+        "invalid": 0,
+        "protected_tasks": 94390,
+        "hire_reductions": 36,
+        "witness_used": 0,
+        "chain_repairs": 8,
+        "proof_rejections": 11,
+        "max_seconds": 1.7151953879999837,
+        "calls_over_one_second": 58,
+        "max_overage": 1.4819067329999598
+      },
+      "paired": {
+        "pairs": 60,
+        "seeds": 30,
+        "rescued_losses": 0,
+        "lost_wins": 0,
+        "cash_improved": 0,
+        "cash_equal": 56,
+        "cash_regressed": 4,
+        "lower_wage_cases": 2,
+        "same_shop_sequences": 58,
+        "means": {
+          "win_delta": 0,
+          "cash_delta": -176.13333333333333,
+          "margin_delta": -226.23333333333332,
+          "wage_delta": -7.5
+        },
+        "seed_bootstrap_95": {
+          "win_delta": [
+            0,
+            0
+          ],
+          "cash_delta": [
+            -523.6,
+            0.0
+          ],
+          "margin_delta": [
+            -673.9333333333333,
+            0.0
+          ],
+          "wage_delta": [
+            -36.9,
+            14.4
+          ]
+        },
+        "cash_delta_distribution": {
+          "min": -5140.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "seed_blocks": [
+          {
+            "seed": 117829598,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 155650166,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 187336049,
+            "win_delta": 0,
+            "cash_delta": -144.0,
+            "margin_delta": -143.0,
+            "wage_delta": 144
+          },
+          {
+            "seed": 540264268,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 551114232,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 676107440,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 891473696,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 897096967,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1177058189,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1453067901,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1562980636,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1590126116,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 1926939006,
+            "win_delta": 0,
+            "cash_delta": -5140.0,
+            "margin_delta": -6644.0,
+            "wage_delta": -369
+          },
+          {
+            "seed": 1963298828,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2083385889,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2293445972,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2342974685,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2372559800,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2597910918,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2634794734,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 2677565155,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3069505753,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3223664724,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3249818667,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3555448002,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3557046066,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3798247684,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 3921631596,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4105283529,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          },
+          {
+            "seed": 4185430615,
+            "win_delta": 0,
+            "cash_delta": 0.0,
+            "margin_delta": 0.0,
+            "wage_delta": 0
+          }
+        ]
+      }
+    }
+  },
+  "direct": {
+    "workflow_wins": 16,
+    "previous_wins": 16,
+    "ties": 28,
+    "workflow_score": 0.5,
+    "score_seed_bootstrap_95": [
+      0.45,
+      0.55
+    ],
+    "mean_margin": -57.36666666666667,
+    "margin_seed_bootstrap_95": [
+      -503.6333333333333,
+      317.7
+    ],
+    "blocks": [
+      {
+        "seed": 117829598,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 187336049,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 155650166,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 676107440,
+        "score": 1.0,
+        "margin": 3177.0
+      },
+      {
+        "seed": 540264268,
+        "score": 0.0,
+        "margin": -5099.5
+      },
+      {
+        "seed": 551114232,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 897096967,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 891473696,
+        "score": 0.5,
+        "margin": -12.0
+      },
+      {
+        "seed": 1177058189,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 1590126116,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 1562980636,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 1453067901,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 1963298828,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 1926939006,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2083385889,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2342974685,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2293445972,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2372559800,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2634794734,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2677565155,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 2597910918,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3249818667,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3069505753,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3223664724,
+        "score": 0.5,
+        "margin": 213.5
+      },
+      {
+        "seed": 3555448002,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3798247684,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3557046066,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 3921631596,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 4105283529,
+        "score": 0.5,
+        "margin": 0.0
+      },
+      {
+        "seed": 4185430615,
+        "score": 0.5,
+        "margin": 0.0
+      }
+    ],
+    "workflow_metrics": {
+      "games": 60,
+      "wins": 16,
+      "losses": 16,
+      "ties": 28,
+      "mean_cash": 94473.03333333334,
+      "mean_margin": -57.36666666666667,
+      "mean_wages": 3945.75,
+      "mean_moves": 2398.5666666666666,
+      "mean_overflow_units": 20.45,
+      "mean_daytime_overflow_units": 0,
+      "missing": 8,
+      "invalid": 0,
+      "protected_tasks": 100351,
+      "hire_reductions": 38,
+      "witness_used": 3,
+      "chain_repairs": 8,
+      "proof_rejections": 22,
+      "max_seconds": 1.699126554000003,
+      "calls_over_one_second": 80,
+      "max_overage": 0.6991265540000029
+    },
+    "old_audit_on_workflow_findings": [
+      {
+        "name": "workflow_previous_native_155650166_seat0",
+        "old_seat": 1,
+        "observations_and_actions_verified": 719,
+        "old_binary_sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7",
+        "replay_sha256": "9d493bd279d38abb0850bbb9acc894e5940568e2dc40df342247c97667b5d41c",
+        "old_missing": 4,
+        "missing": [
+          {
+            "day": 11,
+            "tasks": [
+              [
+                84,
+                8,
+                4,
+                1,
+                1
+              ],
+              [
+                84,
+                9,
+                -1,
+                1,
+                1
+              ],
+              [
+                94,
+                8,
+                4,
+                1,
+                1
+              ],
+              [
+                94,
+                9,
+                -1,
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "unfilled_purchase_orders": [
+          {
+            "step": 240,
+            "order": [
+              "BUY_SEED",
+              "MELON",
+              10
+            ],
+            "filled": 8
+          }
+        ]
+      },
+      {
+        "name": "workflow_previous_native_155650166_seat1",
+        "old_seat": 0,
+        "observations_and_actions_verified": 719,
+        "old_binary_sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7",
+        "replay_sha256": "46ee1cc8c1518598fa9741c90d257dc772a9af42f61ebe0a4751ce3ed0aa21e1",
+        "old_missing": 4,
+        "missing": [
+          {
+            "day": 11,
+            "tasks": [
+              [
+                84,
+                8,
+                4,
+                1,
+                1
+              ],
+              [
+                84,
+                9,
+                -1,
+                1,
+                1
+              ],
+              [
+                94,
+                8,
+                4,
+                1,
+                1
+              ],
+              [
+                94,
+                9,
+                -1,
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "unfilled_purchase_orders": [
+          {
+            "step": 240,
+            "order": [
+              "BUY_SEED",
+              "MELON",
+              10
+            ],
+            "filled": 8
+          }
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "name": "previous_thomas_955_v2_891473696_seat0",
+      "arm": "previous",
+      "seed": 891473696,
+      "opponent": "thomas_955_v2",
+      "seat": 0,
+      "cash": 96222.0,
+      "margin": -778.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 28,
+          "tasks": [
+            [
+              34,
+              16,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_thomas_955_v2_891473696_seat1",
+      "arm": "previous",
+      "seed": 891473696,
+      "opponent": "thomas_955_v2",
+      "seat": 1,
+      "cash": 96221.0,
+      "margin": -780.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 28,
+          "tasks": [
+            [
+              34,
+              16,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_nagatakengo_v70_2293445972_seat0",
+      "arm": "previous",
+      "seed": 2293445972,
+      "opponent": "nagatakengo_v70",
+      "seat": 0,
+      "cash": 123623.0,
+      "margin": 78668.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 13,
+          "tasks": [
+            [
+              81,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              90,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              91,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_nagatakengo_v70_2293445972_seat1",
+      "arm": "previous",
+      "seed": 2293445972,
+      "opponent": "nagatakengo_v70",
+      "seat": 1,
+      "cash": 124642.0,
+      "margin": 78553.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 13,
+          "tasks": [
+            [
+              81,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              90,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              91,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_aurax_reactive_v1_2677565155_seat0",
+      "arm": "previous",
+      "seed": 2677565155,
+      "opponent": "aurax_reactive_v1",
+      "seat": 0,
+      "cash": 91686.0,
+      "margin": 7993.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 16,
+          "tasks": [
+            [
+              92,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_aurax_reactive_v1_2677565155_seat1",
+      "arm": "previous",
+      "seed": 2677565155,
+      "opponent": "aurax_reactive_v1",
+      "seat": 1,
+      "cash": 91686.0,
+      "margin": 7993.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 16,
+          "tasks": [
+            [
+              92,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_moon_v215_2677565155_seat0",
+      "arm": "previous",
+      "seed": 2677565155,
+      "opponent": "moon_v215",
+      "seat": 0,
+      "cash": 91686.0,
+      "margin": 7993.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 16,
+          "tasks": [
+            [
+              92,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "previous_moon_v215_2677565155_seat1",
+      "arm": "previous",
+      "seed": 2677565155,
+      "opponent": "moon_v215",
+      "seat": 1,
+      "cash": 91686.0,
+      "margin": 7993.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 16,
+          "tasks": [
+            [
+              92,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "workflow_previous_native_155650166_seat0",
+      "arm": "workflow",
+      "seed": 155650166,
+      "opponent": "previous_native",
+      "seat": 0,
+      "cash": 89068.0,
+      "margin": 0.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 11,
+          "tasks": [
+            [
+              84,
+              8,
+              4,
+              1,
+              1
+            ],
+            [
+              84,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              94,
+              8,
+              4,
+              1,
+              1
+            ],
+            [
+              94,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "workflow_previous_native_155650166_seat1",
+      "arm": "workflow",
+      "seed": 155650166,
+      "opponent": "previous_native",
+      "seat": 1,
+      "cash": 89068.0,
+      "margin": 0.0,
+      "invalid_actions": 0,
+      "missing": [
+        {
+          "day": 11,
+          "tasks": [
+            [
+              84,
+              8,
+              4,
+              1,
+              1
+            ],
+            [
+              84,
+              9,
+              -1,
+              1,
+              1
+            ],
+            [
+              94,
+              8,
+              4,
+              1,
+              1
+            ],
+            [
+              94,
+              9,
+              -1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "largest_cash_regressions": [
+    {
+      "seed": 1926939006,
+      "opponent": "aurax_shop_v2",
+      "seat": 0,
+      "previous_cash": 136900.0,
+      "workflow_cash": 131758.0,
+      "previous_margin": 23171.0,
+      "workflow_margin": 16531.0,
+      "win_delta": 0,
+      "cash_delta": -5142.0,
+      "margin_delta": -6640.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "aurax_shop_v2",
+      "seat": 1,
+      "previous_cash": 136900.0,
+      "workflow_cash": 131758.0,
+      "previous_margin": 23171.0,
+      "workflow_margin": 16531.0,
+      "win_delta": 0,
+      "cash_delta": -5142.0,
+      "margin_delta": -6640.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "ahmed_v27",
+      "seat": 0,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23180.0,
+      "workflow_margin": 16536.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "ahmed_v27",
+      "seat": 1,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23180.0,
+      "workflow_margin": 16536.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "flexon_v5",
+      "seat": 0,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23173.0,
+      "workflow_margin": 16529.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "flexon_v5",
+      "seat": 1,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23173.0,
+      "workflow_margin": 16529.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "market_smart_v8",
+      "seat": 0,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23170.0,
+      "workflow_margin": 16526.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "market_smart_v8",
+      "seat": 1,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23170.0,
+      "workflow_margin": 16526.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "seven_turn",
+      "seat": 0,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23173.0,
+      "workflow_margin": 16529.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "seven_turn",
+      "seat": 1,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23173.0,
+      "workflow_margin": 16529.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "shop0909",
+      "seat": 0,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23180.0,
+      "workflow_margin": 16536.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 1926939006,
+      "opponent": "shop0909",
+      "seat": 1,
+      "previous_cash": 136907.0,
+      "workflow_cash": 131767.0,
+      "previous_margin": 23180.0,
+      "workflow_margin": 16536.0,
+      "win_delta": 0,
+      "cash_delta": -5140.0,
+      "margin_delta": -6644.0,
+      "wage_delta": -369,
+      "same_shops": false,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    }
+  ],
+  "largest_cash_improvements": [
+    {
+      "seed": 2293445972,
+      "opponent": "nagatakengo_v70",
+      "seat": 0,
+      "previous_cash": 123623.0,
+      "workflow_cash": 145048.0,
+      "previous_margin": 78668.0,
+      "workflow_margin": 100768.0,
+      "win_delta": 0,
+      "cash_delta": 21425.0,
+      "margin_delta": 22100.0,
+      "wage_delta": 118,
+      "same_shops": false,
+      "previous_missing": 3,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2293445972,
+      "opponent": "nagatakengo_v70",
+      "seat": 1,
+      "previous_cash": 124642.0,
+      "workflow_cash": 131203.0,
+      "previous_margin": 78553.0,
+      "workflow_margin": 82256.0,
+      "win_delta": 0,
+      "cash_delta": 6561.0,
+      "margin_delta": 3703.0,
+      "wage_delta": -356,
+      "same_shops": false,
+      "previous_missing": 3,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2677565155,
+      "opponent": "aurax_reactive_v1",
+      "seat": 0,
+      "previous_cash": 91686.0,
+      "workflow_cash": 94063.0,
+      "previous_margin": 7993.0,
+      "workflow_margin": 8530.0,
+      "win_delta": 0,
+      "cash_delta": 2377.0,
+      "margin_delta": 537.0,
+      "wage_delta": -487,
+      "same_shops": true,
+      "previous_missing": 1,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2677565155,
+      "opponent": "aurax_reactive_v1",
+      "seat": 1,
+      "previous_cash": 91686.0,
+      "workflow_cash": 94063.0,
+      "previous_margin": 7993.0,
+      "workflow_margin": 8530.0,
+      "win_delta": 0,
+      "cash_delta": 2377.0,
+      "margin_delta": 537.0,
+      "wage_delta": -487,
+      "same_shops": true,
+      "previous_missing": 1,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2677565155,
+      "opponent": "moon_v215",
+      "seat": 0,
+      "previous_cash": 91686.0,
+      "workflow_cash": 94063.0,
+      "previous_margin": 7993.0,
+      "workflow_margin": 8530.0,
+      "win_delta": 0,
+      "cash_delta": 2377.0,
+      "margin_delta": 537.0,
+      "wage_delta": -487,
+      "same_shops": true,
+      "previous_missing": 1,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2677565155,
+      "opponent": "moon_v215",
+      "seat": 1,
+      "previous_cash": 91686.0,
+      "workflow_cash": 94063.0,
+      "previous_margin": 7993.0,
+      "workflow_margin": 8530.0,
+      "win_delta": 0,
+      "cash_delta": 2377.0,
+      "margin_delta": 537.0,
+      "wage_delta": -487,
+      "same_shops": true,
+      "previous_missing": 1,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2083385889,
+      "opponent": "aurax_reactive_v1",
+      "seat": 0,
+      "previous_cash": 102620.0,
+      "workflow_cash": 103988.0,
+      "previous_margin": 3792.0,
+      "workflow_margin": 5437.0,
+      "win_delta": 0,
+      "cash_delta": 1368.0,
+      "margin_delta": 1645.0,
+      "wage_delta": -178,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2083385889,
+      "opponent": "aurax_reactive_v1",
+      "seat": 1,
+      "previous_cash": 102620.0,
+      "workflow_cash": 103988.0,
+      "previous_margin": 3792.0,
+      "workflow_margin": 5437.0,
+      "win_delta": 0,
+      "cash_delta": 1368.0,
+      "margin_delta": 1645.0,
+      "wage_delta": -178,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2083385889,
+      "opponent": "moon_v215",
+      "seat": 0,
+      "previous_cash": 102620.0,
+      "workflow_cash": 103988.0,
+      "previous_margin": 3792.0,
+      "workflow_margin": 5437.0,
+      "win_delta": 0,
+      "cash_delta": 1368.0,
+      "margin_delta": 1645.0,
+      "wage_delta": -178,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 2083385889,
+      "opponent": "moon_v215",
+      "seat": 1,
+      "previous_cash": 102620.0,
+      "workflow_cash": 103988.0,
+      "previous_margin": 3792.0,
+      "workflow_margin": 5437.0,
+      "win_delta": 0,
+      "cash_delta": 1368.0,
+      "margin_delta": 1645.0,
+      "wage_delta": -178,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 3921631596,
+      "opponent": "nagatakengo_v70",
+      "seat": 0,
+      "previous_cash": 143191.0,
+      "workflow_cash": 143257.0,
+      "previous_margin": 103729.0,
+      "workflow_margin": 103834.0,
+      "win_delta": 0,
+      "cash_delta": 66.0,
+      "margin_delta": 105.0,
+      "wage_delta": 233,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    },
+    {
+      "seed": 4185430615,
+      "opponent": "aurax_reactive_v1",
+      "seat": 0,
+      "previous_cash": 82557.0,
+      "workflow_cash": 82558.0,
+      "previous_margin": 1155.0,
+      "workflow_margin": 1156.0,
+      "win_delta": 0,
+      "cash_delta": 1.0,
+      "margin_delta": 1.0,
+      "wage_delta": 0,
+      "same_shops": true,
+      "previous_missing": 0,
+      "workflow_missing": 0
+    }
+  ],
+  "shared_action_libraries": [
+    [
+      "aurax_shop_v2",
+      "flexon_v5",
+      "market_smart_v8",
+      "seven_turn",
+      "shop0909"
+    ]
+  ],
+  "validation": {
+    "assessment": "Share with caveats",
+    "checks": [
+      "All 1,380 frozen jobs present exactly once; both seats and both versions complete.",
+      "Input and output hashes, replay lengths, terminal cash, wages, overflow, task obligations, invalid actions and 719 decision timings reconciled.",
+      "Inference resamples 30 entire paired seed blocks; 1,380 games are not treated as independent samples.",
+      "Public-pool results and direct head-to-head results use separate denominators; ties count as half a point only in the direct score."
+    ],
+    "caveats": [
+      "Fixed public pool contains similar programs and shared action libraries; this is not a ladder rating.",
+      "If every observed paired win difference is zero, the ordinary bootstrap win interval collapses to zero; this is not an equivalence guarantee for unseen seeds or opponents.",
+      "Same seed can produce different later shops if policy decisions change the official RNG consumption path; paired differences measure the full closed-loop outcome.",
+      "Native host does not enforce competition sandbox decision deadlines; parallel wall times measure contention as well as policy work.",
+      "Protected-work audit covers adopted commitments, not every potential agricultural action. Direct matches audit workflow obligations; both versions are audited throughout the public pool.",
+      "Numeric seed spread is not a guarantee of all possible board coverage. These are 30 preselected random initializations."
+    ]
+  }
+}
