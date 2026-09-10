@@ -1,0 +1,31 @@
+name: p16-review-transfer
+on:
+  push:
+    branches: [agent/p16-local-review-transfer-20260910]
+    paths: [.github/workflows/p16-review-transfer.yml]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout: nt/latest_20260910_r2p16
+      - name: Archive the requested review directory only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f nt/latest_20260910_r2p16/MANIFEST_SHA256.json
+          tar -C nt -czf "$RUNNER_TEMP/p16-review-source.tar.gz" latest_20260910_r2p16
+          sha256sum "$RUNNER_TEMP/p16-review-source.tar.gz"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: p16-review-source
+          path: ${{ runner.temp }}/p16-review-source.tar.gz
+          retention-days: 3
+          compression-level: 0
+          if-no-files-found: error
