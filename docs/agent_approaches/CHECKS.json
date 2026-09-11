@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-09-11T05:55:22.137160+00:00",
+  "status": "PASS",
+  "route_runtime_initialization": {
+    "frozen_single_file": "PASS",
+    "frozen_expanded_runtime": "PASS"
+  },
+  "focused_route_tests": {
+    "command": "PYTHONPATH=src python -m pytest -q tests",
+    "passed": 2,
+    "warnings": 0,
+    "elapsed_seconds": 27.13,
+    "environment": "Windows, Miniforge Python; pytest installed only in external experiment dependencies",
+    "coverage": [
+      "defer before one actual switch",
+      "multi-file export from src/meta_agent",
+      "explicit forced opening in both exports",
+      "original and rebuilt controller checkpoints and game reset",
+      "unchanged copied base, action tapes and metadata"
+    ]
+  },
+  "artifact_manifest": {
+    "files": 90,
+    "unchanged_source_git_blobs": 66,
+    "archive_members": 1
+  },
+  "prior_evidence_verifiers": {
+    "latest": {
+      "checked_files": 256,
+      "games_recounted": 3150,
+      "archived_observation_receipt_count": 4536000
+    },
+    "earlier": {
+      "checked_files": 132
+    }
+  },
+  "python_syntax": {
+    "files_parsed": 45
+  },
+  "documentation": {
+    "language": "English in all new/revised Markdown and the imported package Markdown",
+    "relative_links": "Checked against local files and directories"
+  },
+  "not_performed": [
+    "Full route clustering, training or holdout rerun",
+    "New P16 native build or tournament",
+    "Replaying every archived transition",
+    "Competition timeout certification",
+    "Head-to-head evaluation between the two approaches"
+  ],
+  "shell_syntax": {
+    "run_pipeline.sh": "PASS"
+  },
+  "staged_artifact_bytes": "90 file hashes checked against the Git index before publication"
+}

@@ -1,0 +1,7 @@
+* -text whitespace=cr-at-eol
+# Preserve original trailing blank lines in frozen source blobs.
+runtime/meta_agent/__init__.py whitespace=cr-at-eol,-blank-at-eof
+runtime/meta_agent/src/__init__.py whitespace=cr-at-eol,-blank-at-eof
+src/meta_agent/__init__.py whitespace=cr-at-eol,-blank-at-eof
+src/meta_agent/src/__init__.py whitespace=cr-at-eol,-blank-at-eof
+tests/test_search_route_policy.py whitespace=cr-at-eol,-blank-at-eof

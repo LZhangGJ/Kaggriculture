@@ -1,5 +1,16 @@
 # Kaggriculture local simulation lab
 
+## Two agent approaches: complete English handoff
+
+This branch publishes the [two-approach guide](docs/agent_approaches/README.md),
+with source code, runnable agents, detailed construction steps and evaluation
+limits for route clustering with learned switching and the P16 planning line.
+The latter includes both original JointAFS submissions and the separately
+identified workflow-repair builds. See the [publication record](docs/agent_approaches/PUBLICATION.md)
+for provenance and validation.
+
+## Original simulation lab
+
 This workspace contains the official Kaggriculture 1.32.6 engine, selected public
 research notebooks, and a fast local runner for large self-play experiments.
 

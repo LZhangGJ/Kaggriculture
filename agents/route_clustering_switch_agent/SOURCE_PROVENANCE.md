@@ -1,0 +1,42 @@
+# Source provenance
+
+The reproducibility code was recovered on 2026-08-25 from the final experiment
+workspace at:
+
+`hw:/root/kaggriculture_transformer_ppo_starter/meta_agent_route_rl_submission_minimal`
+
+That workspace is not a Git checkout, so no truthful upstream Git commit is
+available. The imported route-search scripts are the final server copies. Two
+legacy compatibility branches were deliberately removed from
+`search_route_policy.py` and `train_robust_search_route_trees.py`; they depended
+on the abandoned recurrent/PPO feature path and are not used by the 147-feature
+DecisionTree router.
+
+`runtime/teammate_base.py` is the route-intervention build used by the native
+round-robin and counterfactual switch search. Its SHA-256 is
+`71e8689abf5aff9161fd5957cda6bcea14e755bdc38ec4618702b3b6f0a73f7d`,
+matching the server file
+`teammate_meta_route_submission_v1/teammate_base.py`.
+
+No Replay, PPO/recurrent weights, generated matrices, search caches, compiled
+binaries, or server experiment outputs were imported in this update.
+
+## Git import for the two-approach publication
+
+On 2026-09-11 this package was imported from `LZhangGJ/Kaggriculture` main commit
+`eec409775bc538cf65b3676172ee3ce741ca2469` onto the independent branch
+`docs/two-agent-approaches-20260911`. This identifies the Git packaging layer;
+it does not invent a Git history for the original server workspace above.
+
+The single-file agent and every file under `runtime/` retain their source-commit
+bytes. Research and native code are retained, with two offline packaging fixes:
+the multi-file exporter resolves modules under `src/meta_agent`, and the pipeline
+passes its selected final opening to both exporters. The multi-file exporter now
+accepts and records that opening. No trained tree, route tape or frozen deployment
+was regenerated for this publication.
+
+English documents replace the imported Chinese Markdown; the duplicate Chinese
+method PDF is omitted from this branch. The source commit preserves both originals.
+See the repository [publication record](../../docs/agent_approaches/PUBLICATION.md)
+and [identity manifest](../../docs/agent_approaches/ARTIFACTS.json) for file hashes,
+the exact scope of changes, source omissions and verification limits.

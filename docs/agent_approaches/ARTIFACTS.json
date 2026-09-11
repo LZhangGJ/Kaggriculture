@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-09-11",
+  "branch": "docs/two-agent-approaches-20260911",
+  "sources": {
+    "route_clustering": "eec409775bc538cf65b3676172ee3ce741ca2469",
+    "p16_base": "4ef9875968f7104f26fc3140bd28b988101579f8"
+  },
+  "files": [
+    {
+      "path": "agents/route_clustering_switch_agent/.gitattributes",
+      "bytes": 427,
+      "sha256": "3d8c5b0181c8cba4708415a9a66476383c864193f9bb2bca0b21092473d8ffc0"
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/.gitignore",
+      "bytes": 302,
+      "sha256": "f8838094918e6a267502cb2e6a72c56a26c4b42208370005683b6b7ec95e6054",
+      "source_git_blob": "cdda7c956883f523df4cb1540a850f9a6a5d2de7",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/agent.md",
+      "bytes": 7470,
+      "sha256": "4b5566d40b92a813e9ca32cf72ab3434e3ed3e1c73ba3952e1efa6dda6237e3e",
+      "source_git_blob": "070480c4cc4176653a9fca285915532e7f52af7b",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/configs/manifest.example.json",
+      "bytes": 314,
+      "sha256": "6a46c4bb0cdb4b6dbbb50acd0d6501fd6c608ce528718eb12a10d4cf9fffa12d",
+      "source_git_blob": "7704a7de9fa16e18b20d4b476736e355ecff260c",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/configs/pipeline.env.example",
+      "bytes": 902,
+      "sha256": "803592753c14e44120c32ac1ae5014e601d7f4990dc5edb0c8e1ef2e71d263ae",
+      "source_git_blob": "4a75694280cd88d797bd0d9e073d819b671108f2",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/macro_route_charts/cluster_sensitivity.svg",
+      "bytes": 6597,
+      "sha256": "e0999ee59e7de118391a7a2fbaf9c376f93f3b3b466446e015abcdbedd148093",
+      "source_git_blob": "d08e2dc848792bd79cdf61b5066a5290b9a51227",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/macro_route_charts/family_distribution.svg",
+      "bytes": 8557,
+      "sha256": "19d22221ae952e22b93d1aa5f69c6dd83225a68240cc5b3027cfe62b9de263d4",
+      "source_git_blob": "93522b268ea7a715ef4505760572df515ae1a4f6",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/macro_route_charts/pipeline.svg",
+      "bytes": 5980,
+      "sha256": "b948454b6bc38b041c9b11e3fd67eb27a6b025498b4b465d09a95731e7276a51",
+      "source_git_blob": "c1c9727833801404d2defa732ed843d9772f85d9",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/macro_route_charts/switch_tree.svg",
+      "bytes": 5332,
+      "sha256": "abc36550e17c51f9c74d360712b3a946858acccfc2bb8376200ade092bba0cfa",
+      "source_git_blob": "26bfbdf55716b67e212928b1502593df4485b7d8",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/macro_route_charts/validation.svg",
+      "bytes": 4640,
+      "sha256": "5ef12d3de35e47658903ee3e7d52e37001d144f29f48376b7b66edf8073d7339",
+      "source_git_blob": "dbc763a827da63509ef31362473d0786fa0402da",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/METHOD.md",
+      "bytes": 22357,
+      "sha256": "58caf89538d3816cec4e90bb3503315674749ad4d225ff7ddc16963e35019b76"
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/__init__.py",
+      "bytes": 839,
+      "sha256": "739af389d4b01eb5ab7b8148cf3235b3a27d4c73e6bf0e093274376f7f978abf",
+      "source_git_blob": "689917d17177505f954fee4a688bc23e9df9f8bc",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/benchmarks/benchmark.py",
+      "bytes": 2838,
+      "sha256": "b272d7c972d8cfed6fc37108c6320605ce6c2728e35963be64f5678f03b4e89d",
+      "source_git_blob": "be5e204a44ac0b4ce07deae474053d7a98873488",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/CMakeLists.txt",
+      "bytes": 1000,
+      "sha256": "c77c1d4f39e78abd5116d5cef2d7c5686a8cd335b548ba90fce5b02c7cca52b7",
+      "source_git_blob": "822b380b181b2fd20284d9c1d5a2b87c88d64793",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/LICENSE",
+      "bytes": 658,
+      "sha256": "24b794b05f801711514f3e626f1c62a0ac56c5a1e76bbd82b60bb2f2a49c4f9c",
+      "source_git_blob": "b78cef8907b4fe2d36049cd89365fc9b7509a38c",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/python/fast_kaggriculture/__init__.py",
+      "bytes": 624,
+      "sha256": "b75ea06090623084f5d1f2efaf4eb0e774ebc9e66a09783f4fb48fd51aa25812",
+      "source_git_blob": "6f11aa36fe0d64457996c115008ac6a135fb50c5",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/README.md",
+      "bytes": 1891,
+      "sha256": "591062c90eedb6412733b51fc6e087dfe4df1ffd38acaa48bf4525c342660c8d",
+      "source_git_blob": "02250193b44d0862d0a26b5e78e4dc87d7c7c784",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/RULE_AUDIT.md",
+      "bytes": 2646,
+      "sha256": "948f20b950367f8610e2e27e24de4daccd86970e264d26b2fab04e97b1b57ac6",
+      "source_git_blob": "970babfbfcb1fa4226d63c2af8da45eeebee9c3a",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/setup.py",
+      "bytes": 856,
+      "sha256": "5f1a4ab1193c6afdb385e4f48585830d5de5cb57e00f37aa4c691e4089613f3b",
+      "source_git_blob": "63e123593187141535ac7a791970de8a60425638",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/bindings.cpp",
+      "bytes": 37939,
+      "sha256": "903da66e16ce3dfc265386fa3d4a121ebfa84bdf2509a476b95d43f84e792823",
+      "source_git_blob": "5e7f16a1c0b8f36e62290f96eae2b8159e5bc714",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/macro_distance.cpp",
+      "bytes": 5459,
+      "sha256": "33f57028f1e93205b242e77b8976f9a42374bb2a5326b28d98284b98115d3f0c",
+      "source_git_blob": "947422f4a2bb6d5ae9e733faf41176f1491dea92",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/native_teammate.cpp",
+      "bytes": 41430,
+      "sha256": "b466f37720bd2ad5e08188e5a2243549f13b3ec8f4bd0d66d6a625c2b7940f49",
+      "source_git_blob": "28d42eb52a5273859db00dc5040af4316cdb1bbf",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/native_teammate.hpp",
+      "bytes": 3152,
+      "sha256": "8c95fe27fcf07fe5949cb6d3438986bcbf5970276f3152fbd1dcee979bc344ac",
+      "source_git_blob": "069cc608433671ca96459daf91fabcaddbe759dd",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/simulator.cpp",
+      "bytes": 16599,
+      "sha256": "c0866aa6796d6349d213002adec95c0252520c95ba90b792a24d37ee12992901",
+      "source_git_blob": "a313a555a6727da04b4627cca0bbd53dd300a794",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/src/simulator.hpp",
+      "bytes": 4759,
+      "sha256": "3752eb341aa1a93a8adb951c4125b056142bd6d393b5fb0ae45feca091fff2da",
+      "source_git_blob": "e636afa418084df6fe02c77d6fabbabedf7e1b8d",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/tests/test_differential.py",
+      "bytes": 8425,
+      "sha256": "16fdcf15438d939017b54ae9789ab226fcdc98f9fc633a9738e135bd1c798c15",
+      "source_git_blob": "f52f806e9b442111c4dcb16b408efdd0f92bff3f",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/tests/test_rng.py",
+      "bytes": 519,
+      "sha256": "3d4e25e083ce71ad5a03f46a2b568e9d814f533cb00ed5adf83a1b6739dd03b5",
+      "source_git_blob": "a28c629039447796cb7617b16d5e39ae960baa05",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/fast_kaggriculture/tools/intent_distance.cpp",
+      "bytes": 4696,
+      "sha256": "e65760180dd976e48243f614c684b08b7a43a8addcfd666dc7a9c31a983289b6",
+      "source_git_blob": "7d49a2a51c436ce2946787c92c8ffa0911500a5e",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/main.py",
+      "bytes": 2448436,
+      "sha256": "f492daa926ac2b93dc9027a8bf2d11c05ae7fcf3e0b0841857c1b395b11ea1e8",
+      "source_git_blob": "7aaa54e1fd4d4bb692a51ef065067bcabd1cb48e",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/OMITTED_ARTIFACTS.md",
+      "bytes": 4551,
+      "sha256": "37b92f41beb672bd00654a152a91931f86c6072614d989e4ff9c3858fb2f38aa",
+      "source_git_blob": "39781f03aeebfbaa3e6183e15d1df04a3fcb1c9f",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/README.md",
+      "bytes": 4499,
+      "sha256": "0796e924bb5b15d53fb19e57e0ee3f90157312825d8144adc708a1665d1ed04c",
+      "source_git_blob": "7f61c058538d9ea1db38c0202c5b5ac33be27267",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/requirements.txt",
+      "bytes": 80,
+      "sha256": "80d1cd50350c6e8361363a68db3a604299b4a4f625c23bc90104a5b252272038",
+      "source_git_blob": "9970243cda379900da4a1d48d522cea31d141448",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/main.py",
+      "bytes": 1561,
+      "sha256": "f72c072c66869a085e34fe27a841c0f370e825589c229ee162f135af3d1d8810",
+      "source_git_blob": "10677443345e4af9e1cdf968c8469da2c67a2151",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/MANIFEST.json",
+      "bytes": 1621,
+      "sha256": "5c36ba92efe7ac302fed874e51c1798eea9496b4dd808993e6c2073c1bdae4ec",
+      "source_git_blob": "15f4384a70421812d1f967f4b99641800aceaad7",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/meta_agent/__init__.py",
+      "bytes": 55,
+      "sha256": "8f7e6c6a7d4db74718ce4278c443c8e91b2db90cf62788fddfd395d3784657e9",
+      "source_git_blob": "8e24bb599d99bf8ade24504c2d7bbe2c6d77b180",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/meta_agent/src/__init__.py",
+      "bytes": 73,
+      "sha256": "abd17075f5e0167ffa75ef26c9393a15fbff83c5c659039fa9afc6d2ffd6a5a9",
+      "source_git_blob": "eea4f24fb40a11f460182fbde87381cb67b31260",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/meta_agent/src/route_switch_features.py",
+      "bytes": 13507,
+      "sha256": "18a68a6f1b37f77c7a7789745d823281bda8adf1fce91154c667214a9070cee1",
+      "source_git_blob": "3a7a99b2ccdf44035fa1ca7cca6d8cfe3f9c1793",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/meta_agent/src/search_route_policy.py",
+      "bytes": 7034,
+      "sha256": "7882f9dc88f20acbab65a84540ef4663e9e55c7ac5b613242c2cfa5d1cd267df",
+      "source_git_blob": "0011e064e223808dcb1c96916dcd06a044a9bbe3",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/meta_agent/src/teammate_expanded_routes.py",
+      "bytes": 3225,
+      "sha256": "c979de8021eaf7b38bc9cf69ad392b49f006eacc181b2729f7c0277fc384b0ee",
+      "source_git_blob": "a494ea2c76f48373a6d98a107b1bac2b8f2beb38",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/opening_nash.json",
+      "bytes": 348,
+      "sha256": "c87e389f36163032b03d18652036ff15da33490209dc1436b651232893974ad5",
+      "source_git_blob": "5ca6979e66e4513334a312dfeee93e62af61c4a0",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/route_actions.json.zlib",
+      "bytes": 1475228,
+      "sha256": "c4acc1db68ac12f2023aa058ce3ff4e69553e00a3b12a355efdbaea493243495",
+      "source_git_blob": "d9c6577e08550231f072f3027515b77635c60a53",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/route_library.json",
+      "bytes": 93295,
+      "sha256": "75b25562d5b9402db5d1eb4053e0a7b92911fa5a8b6fd4a3b3f08772a9a768d8",
+      "source_git_blob": "f9f3d237b7d2b1c95ba885dc803867a8324ecfa1",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/route_policy.json",
+      "bytes": 5450,
+      "sha256": "a908da0f32fffe4d6ab0a6db1620c975ea3d7a8047b0cf07ff48260a7cc44854",
+      "source_git_blob": "ca1be367c255812fc5823aa81418af296f234bde",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "bytes": 547143,
+      "sha256": "71e8689abf5aff9161fd5957cda6bcea14e755bdc38ec4618702b3b6f0a73f7d",
+      "source_git_blob": "b8358a007b4a4c2fffa8740598f087f5feff043a",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/analyze_compact_switch_search.py",
+      "bytes": 6021,
+      "sha256": "1f2627f93a393c8d823134de8c00b0f83a19d9db351565e4454c7d51cc2a5e76",
+      "source_git_blob": "36108e2db9325494aaee0fe3c03ca15457ca7b57",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/analyze_macro_route_library.py",
+      "bytes": 13695,
+      "sha256": "fbb1300b9f1d448e60e91112ede005636e90af73c45ae9f67a6744d2283716f2",
+      "source_git_blob": "c8b0cf01d6de70ec3e56a0ea23c5c6e4525b8835",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/audit_macro_execution_quality.py",
+      "bytes": 10825,
+      "sha256": "764666376cfb4fbd1c994ac4788ba51eafb576293f3af70f554ec7855670255f",
+      "source_git_blob": "8c9ed13811d2c2907cb3f0f7e52874ab99716b53",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/audit_macro_thresholds.py",
+      "bytes": 1454,
+      "sha256": "06f178043d96782ef96d66d3ca841e9fe6be0b40f03eac52d82d7b953b0d8bd6",
+      "source_git_blob": "1d75713df1f0917efa9eb394803aaa96821b0f85",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/build_complete_core_route_families.py",
+      "bytes": 4709,
+      "sha256": "b12ecc16ea20858d8f73761b6939fd45fbe1cc859e2d3cbdb9e7be19519399ea",
+      "source_git_blob": "8026fd6ac9adc14c557a16c55128aaa45ce0d21f",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/build_native.sh",
+      "bytes": 648,
+      "sha256": "64e62b639ae6cac24f6b994067782d35acdd1f453136bab3651544d41b569b0b",
+      "source_git_blob": "f18248dae53789fce2e06dbd9c4a3e181634964a",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/cluster_intended_macro_routes.py",
+      "bytes": 3956,
+      "sha256": "2fb472f9e349dc8865120ef823ee21d54106d677e8afb4fd442a2c9e67012218",
+      "source_git_blob": "b498ddacb1dcf6dfffdf459d0600ba3377f56284",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/evaluate_intent_route_round_robin.py",
+      "bytes": 5067,
+      "sha256": "af761b53e45409ce38c7786d5df21cd279f7aaf99448254ee1bbddbd195c6aec",
+      "source_git_blob": "f811afcfc800b1226a12b94f81c400c7ade979e5",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/evaluate_native_route_trees_holdout.py",
+      "bytes": 6709,
+      "sha256": "67c1bbee554aed39a3cfd7eb0026948fed1c55d8db88723244f1cc117b5b7bc0",
+      "source_git_blob": "2fac911adf14dcd757dc6f042d3be09daaab0b18",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/export_intent_route_carriers.py",
+      "bytes": 3073,
+      "sha256": "37b4f327427e9447171b09ba434ddfeabadcd136b2af42e22077fb15994c56da",
+      "source_git_blob": "bd77fdaae368803b9996024fdf519782bd409c64",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/export_macro_intent_route_specs.py",
+      "bytes": 8380,
+      "sha256": "13cb9b26966b2839a46facfa91bbc82462dc5705d02c5a0150b44957039279ea",
+      "source_git_blob": "7d297aea5d186a77faedcc257f122446cd1cb9d7",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/export_single_file_submission.py",
+      "bytes": 4345,
+      "sha256": "14ec794c92c7a32c6017d286cbd6fa66e762cb3e13efb929988dc64ccef8e0d5",
+      "source_git_blob": "873c052631171c8607e3029e2825b1726bbc8ffa",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/export_teammate_meta_submission.py",
+      "bytes": 6432,
+      "sha256": "7d536c868d6c1b9b6808c85af25152eaff2e43b24b1fb19c68fffac762ab58d6",
+      "source_git_blob": "c08fcf2b19a9284ae26fbbe3ad28e2fa607488c9",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/merge_macro_route_caches.py",
+      "bytes": 1795,
+      "sha256": "624e8b2a39bff397dc17e033f3db34e793bf19cda85f8be43c2772f68b097a9a",
+      "source_git_blob": "9cab368b097f366d7473b9e630fb3794752a0909",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/render_macro_route_method_charts.py",
+      "bytes": 12477,
+      "sha256": "e016487eeec189cfd7bbbc772c681a6de79534cab5141c1df71bc2ea630bc7c5",
+      "source_git_blob": "bbb6e50b73aa9cd3a3d9a57b880adf223e10704d",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/run_native_intent_round_robin.py",
+      "bytes": 3620,
+      "sha256": "308166fb650734e53b920230b57a8dc72758dec45044f67b84b20f16a9352a3a",
+      "source_git_blob": "03f1fe6516c02f91e9eb9f12f961f2130c89d043",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/run_native_intent_switch_search.py",
+      "bytes": 3587,
+      "sha256": "b6521d81e7f56de2de7958229d81038bbeae47494647f2b1526993e8ebf00875",
+      "source_git_blob": "2fef298e87b754724473ce54f7a41c7fa4e781cd",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/run_pipeline.sh",
+      "bytes": 8547,
+      "sha256": "fc332aa93aa1fda497658e1428c784c37e7c2b589d54e0840376444ce002ff14",
+      "source_git_blob": "dbbd4ebde7296f479afa5e9c9057a1bfec1cc6b0",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/search_native_route_tree_sequences.py",
+      "bytes": 8608,
+      "sha256": "1389f907f99d6d1dcce6e8b5e8991c333cee4bb81864bf4941502fbf93e3aa12",
+      "source_git_blob": "e8031769d3ccd18606c8e4c4a4420d9049dde32b",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/solve_route_nash.py",
+      "bytes": 3439,
+      "sha256": "55071735befeb4002f9c37b44b5ee2cc40465f1c56b0838560667fbfc123c7c2",
+      "source_git_blob": "bde9b072c9fb8af9b579b573e43c24af57c9ddb6",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/scripts/train_robust_search_route_trees.py",
+      "bytes": 21556,
+      "sha256": "e55fcc567f2eaaa51f5151e8c4cca7fff0b7b78b14ecdcf5944e517ae76375cb",
+      "source_git_blob": "c0e69cce509884b6fc6c1e17d316395785403189",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/SOURCE_PROVENANCE.md",
+      "bytes": 2262,
+      "sha256": "2b615f5cfce2a2630af1134e49ab583c2823849aadb2c3eaf079eb9b0e954120",
+      "source_git_blob": "bec9b31e5dd9dc8557d3f89a63dc63f69fea9a35",
+      "matches_source_blob": false
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/__init__.py",
+      "bytes": 55,
+      "sha256": "8f7e6c6a7d4db74718ce4278c443c8e91b2db90cf62788fddfd395d3784657e9",
+      "source_git_blob": "8e24bb599d99bf8ade24504c2d7bbe2c6d77b180",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/__init__.py",
+      "bytes": 73,
+      "sha256": "abd17075f5e0167ffa75ef26c9393a15fbff83c5c659039fa9afc6d2ffd6a5a9",
+      "source_git_blob": "eea4f24fb40a11f460182fbde87381cb67b31260",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/fingerprints.py",
+      "bytes": 12618,
+      "sha256": "23b44341d5c98e4930b07559919fd7103088ea198f0030462f8cec10cd242f73",
+      "source_git_blob": "bee05f24ff974d6322179aa9812ff32f65f57917",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/native_teammate_executor.py",
+      "bytes": 3101,
+      "sha256": "ff437a3e37a4153354edeb5a8044ed3d02c83afcf86c82ad58ed3490855ca103",
+      "source_git_blob": "f5ade69039b88301f8d0207afd2da2073fe5f1b8",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/route_switch_features.py",
+      "bytes": 13507,
+      "sha256": "18a68a6f1b37f77c7a7789745d823281bda8adf1fce91154c667214a9070cee1",
+      "source_git_blob": "3a7a99b2ccdf44035fa1ca7cca6d8cfe3f9c1793",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/search_route_policy.py",
+      "bytes": 6155,
+      "sha256": "a621c5379ce6335e71c3822a81cc896b15789b4478ec9ad617b2ef2587996fd8",
+      "source_git_blob": "c4c2497d591cb368321cf266c09b9edb398be3ac",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/src/meta_agent/src/teammate_expanded_routes.py",
+      "bytes": 3225,
+      "sha256": "c979de8021eaf7b38bc9cf69ad392b49f006eacc181b2729f7c0277fc384b0ee",
+      "source_git_blob": "a494ea2c76f48373a6d98a107b1bac2b8f2beb38",
+      "matches_source_blob": true
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/tests/test_export_runtime.py",
+      "bytes": 2927,
+      "sha256": "3d8c7f367a1af70e280579e0718260463a3cac2a1e722e85932dd4eb591305cb"
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/tests/test_search_route_policy.py",
+      "bytes": 1496,
+      "sha256": "de286caa87fc8af35b7aec423cba5f2eb9a8ae7a3b7cba3f8537a96360cc4ab5",
+      "source_git_blob": "a76d156b776e6f4c10ee67b72e572f974a98c5f1",
+      "matches_source_blob": true
+    },
+    {
+      "path": "docs/agent_approaches/.gitattributes",
+      "bytes": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "docs/agent_approaches/P16_METHOD.md",
+      "bytes": 27393,
+      "sha256": "509a677b18db3fff81e10de9c3a64105163ba21d1f05616403bc5682e958930c"
+    },
+    {
+      "path": "docs/agent_approaches/PUBLICATION.md",
+      "bytes": 6727,
+      "sha256": "bab0366843ff2deba3ffa577b17bae4618d633c33acb17dc466038562311735c"
+    },
+    {
+      "path": "docs/agent_approaches/README.md",
+      "bytes": 8589,
+      "sha256": "d7160139d1119313ffd2f18b961806030d5c7021bfcbf959cdad6c4e3d3217f6"
+    },
+    {
+      "path": "docs/agent_approaches/verify.py",
+      "bytes": 1486,
+      "sha256": "c3fe6eced0be208952b377b905e3f6f006280ce5440678dddc2fee6e7fea2685"
+    },
+    {
+      "path": "evidence/r2p16_route_repair_20260911/opponents/submission_56149565/afs_runtime/agent.so",
+      "bytes": 2792912,
+      "sha256": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c"
+    },
+    {
+      "path": "evidence/r2p16_route_repair_20260911/opponents/submission_56149565/afs_runtime/config.json",
+      "bytes": 758,
+      "sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+    },
+    {
+      "path": "evidence/r2p16_route_repair_20260911/opponents/submission_56149565/afs_runtime/policy.py",
+      "bytes": 7892,
+      "sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+    },
+    {
+      "path": "evidence/r2p16_route_repair_20260911/opponents/submission_56149565/main.py",
+      "bytes": 335,
+      "sha256": "7d4055bfce85ac9374e172c2f190abb84f978172c33f9115e1010a08269c3a1b"
+    },
+    {
+      "path": "nt/latest_20260910_r2p16_route_recovery/build/revision3/route3.so",
+      "bytes": 1164760,
+      "sha256": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e"
+    },
+    {
+      "path": "nt/latest_20260910_r2p16_route_workflow/build/revision2/route3.so",
+      "bytes": 1129144,
+      "sha256": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/agent.so",
+      "bytes": 1152056,
+      "sha256": "e285b58c4c35ea95ff522d8848a3f91afc1bb1156d1d637f585a03bb5deb1ca8"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so",
+      "bytes": 1182288,
+      "sha256": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/public_submission/AFS/submission.tar.gz",
+      "bytes": 982521,
+      "sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d"
+    },
+    {
+      "path": "nt/latest_20260911_r2p16_route_repair/build/revision4/route3.so",
+      "bytes": 1178072,
+      "sha256": "6aec10175b80db7b94b1e1abd84ce872a5d8bae2e29c0c47fef524f2410fc557"
+    }
+  ],
+  "archive_members": [
+    {
+      "archive": "nt/latest_20260911_p16_jointafs_r1/public_submission/AFS/submission.tar.gz",
+      "member": "afs_runtime/agent.so",
+      "sha256": "7a8783c776ab8c01e3370685f6de6f8b6a43ea409ab710fbe9330f165560950f"
+    }
+  ],
+  "omitted_source_documents": [
+    {
+      "path": "agents/route_clustering_switch_agent/docs/\u5b8f\u89c2\u8def\u7ebf\u53bb\u91cd\u805a\u7c7b\u4e0e\u5207\u6362\u641c\u53c2.md",
+      "git_blob": "b3bd1b531e3b706e5b14bfea1d9a1481c5d6fcd4",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/route_clustering_switch_agent/docs/\u5b8f\u89c2\u8def\u7ebf\u53bb\u91cd\u805a\u7c7b\u4e0e\u5207\u6362\u641c\u53c2.pdf",
+      "git_blob": "b43b58e363d311df4d9277712e0c5c2453fff7c6",
+      "mode": "100644"
+    }
+  ]
+}

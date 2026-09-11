@@ -2,6 +2,13 @@
 
 Updated: 2026-09-11. New and revised Markdown documentation for this handoff is in English.
 
+The [two-approach handoff](docs/agent_approaches/README.md) now documents both the
+route-clustering switch agent and this P16 planning line, including the two
+original JointAFS submissions and the distinct later workflow-repair builds.
+Use its [P16 method guide](docs/agent_approaches/P16_METHOD.md) for the detailed
+architecture and development steps. The findings below remain specific to the
+local P16 route/procurement experiments.
+
 ## Current conclusion
 
 The latest local procurement-repair candidate improves execution checks but **must not replace the competition baseline**. Across 3,150 fresh live matches, it regresses against the user-supplied JointAFS R2 submission. Its 1,050 games contain no invalid actions or unexplained omissions of registered commitments, but include 3,227 explicitly deferred tasks. Deferral is not completion.

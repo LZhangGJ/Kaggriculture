@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="30" fill="#172033" text-anchor="start" font-weight="700">最终在线切换树（仅 G001 开局分支）</text>
+<text x="45" y="77" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" fill="#65708a" text-anchor="start" font-weight="400">按 144 → 168 → 216 检查；首次预测非 G001 即切换并锁定。G136 开局没有通过鲁棒门槛的切换节点。</text>
+<rect x="55" y="120" width="1390" height="185" rx="14" fill="white" stroke="#dfe5ef" stroke-width="2"/>
+<text x="85" y="160" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" fill="#356ae6" text-anchor="start" font-weight="700">step 144</text>
+<circle cx="93" cy="192" r="7" fill="#23a4a8"/>
+<text x="110" y="198" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">yarn_store 未解锁</text>
+<text x="110" y="225" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#65708a" text-anchor="start" font-weight="700">→ G001</text>
+<circle cx="538" cy="192" r="7" fill="#23a4a8"/>
+<text x="555" y="198" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">yarn_store 已解锁 且 milk_price ≤ 192</text>
+<text x="555" y="225" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G006</text>
+<circle cx="983" cy="192" r="7" fill="#23a4a8"/>
+<text x="1000" y="198" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">yarn_store 已解锁 且 milk_price &gt; 192</text>
+<text x="1000" y="225" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G036</text>
+<rect x="55" y="375" width="1390" height="255" rx="14" fill="white" stroke="#dfe5ef" stroke-width="2"/>
+<text x="85" y="415" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" fill="#356ae6" text-anchor="start" font-weight="700">step 168（仍为 G001 时）</text>
+<circle cx="93" cy="447" r="7" fill="#23a4a8"/>
+<text x="110" y="453" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">未解锁 yarn 且 tomato_inventory ≤ 9966</text>
+<text x="110" y="480" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G169</text>
+<circle cx="538" cy="447" r="7" fill="#23a4a8"/>
+<text x="555" y="453" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">未解锁 yarn；milk_inventory &gt; 9990；strawberry_inventory &gt; 9990</text>
+<text x="555" y="480" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G006</text>
+<circle cx="983" cy="447" r="7" fill="#23a4a8"/>
+<text x="1000" y="453" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">未解锁 yarn 的其余状态</text>
+<text x="1000" y="480" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#65708a" text-anchor="start" font-weight="700">→ G001</text>
+<circle cx="93" cy="529" r="7" fill="#23a4a8"/>
+<text x="110" y="535" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">已解锁 yarn 且 milk_price ≤ 187</text>
+<text x="110" y="562" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G006</text>
+<circle cx="538" cy="529" r="7" fill="#23a4a8"/>
+<text x="555" y="535" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">已解锁 yarn 且 milk_price &gt; 187</text>
+<text x="555" y="562" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G036</text>
+<rect x="55" y="700" width="1390" height="185" rx="14" fill="white" stroke="#dfe5ef" stroke-width="2"/>
+<text x="85" y="740" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" fill="#356ae6" text-anchor="start" font-weight="700">step 216（仍为 G001 时）</text>
+<circle cx="93" cy="772" r="7" fill="#23a4a8"/>
+<text x="110" y="778" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">yarn_store 未解锁</text>
+<text x="110" y="805" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#65708a" text-anchor="start" font-weight="700">→ G001</text>
+<circle cx="538" cy="772" r="7" fill="#23a4a8"/>
+<text x="555" y="778" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" fill="#172033" text-anchor="start" font-weight="400">yarn_store 已解锁</text>
+<text x="555" y="805" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" fill="#319b64" text-anchor="start" font-weight="700">→ G036</text>
+</svg>
