@@ -7,6 +7,11 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`public_research_read_pack_20260911/`](public_research_read_pack_20260911/README.md)
+  — 3.44 MB bilingual Chinese/English reading ZIP with 514 per-Notebook reviews,
+  27 selected sources, 16 proposed experiment cards, and hash verification.
+  中英轻量阅读包；逐项审阅已内嵌，不包含源码附件、模型或 Replay。
+
 - [`latest_20260911_r2p16_route_repair/`](latest_20260911_r2p16_route_repair/README.md)
   — local procurement-repair research candidate with its exact tested runtime,
   complete sources, 105 mechanism checks and English documentation. The

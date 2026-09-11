@@ -1,0 +1,15 @@
+{
+  "status": "PACKAGE_INTEGRITY_PASS",
+  "zip": "KAGGRICULTURE_READ_PACK_ZH_EN_20260911.zip",
+  "bytes": 3437452,
+  "uncompressed_bytes": 12062735,
+  "sha256": "d3e108545100fceec0897f231bf74b8da23df118612e0de79c46d2bef8873071",
+  "entries": 12,
+  "zip_crc": "PASS",
+  "payload_hashes": "PASS",
+  "language_selector_links": "PASS",
+  "high_confidence_credential_patterns": "NONE_FOUND",
+  "main_htmls_match_accepted_originals": true,
+  "browser_interaction": "NOT_VERIFIED_EXISTING_URL_POLICY",
+  "agent_execution": false
+}
