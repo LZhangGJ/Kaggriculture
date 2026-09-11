@@ -1,0 +1,254 @@
+{
+  "RESULTS.json": {
+    "source": "RESULTS.json",
+    "source_bytes": 73747,
+    "source_sha256": "59da19bd3f47ab21188c197d39b2e84b9bfef5594748c89a774d9957a87bb31c",
+    "lossless_gzip": false
+  },
+  "INDEPENDENT_VERIFY.json": {
+    "source": "INDEPENDENT_VERIFY.json",
+    "source_bytes": 17776,
+    "source_sha256": "e74d276caa523d573b193dcdf08baac97fdf4c819d460ed306f4131cf773d0e6",
+    "lossless_gzip": false
+  },
+  "REGRESSION_EVIDENCE.json": {
+    "source": "REGRESSION_EVIDENCE.json",
+    "source_bytes": 23966,
+    "source_sha256": "f7b674527707d14e47bddfd22b91185ee1f4bef4312dfad666ba01720d5a744a",
+    "lossless_gzip": false
+  },
+  "SUBMISSIONS.json": {
+    "source": "SUBMISSIONS.json",
+    "source_bytes": 743,
+    "source_sha256": "185aeca516745ad8953fb8dc4a3e0a317705b61d94dd88dfbdf9f50df1be5168",
+    "lossless_gzip": false
+  },
+  "POOL.json": {
+    "source": "POOL.json",
+    "source_bytes": 10240,
+    "source_sha256": "f11b7855c2f4b8cf20edb009a6f80dd1eac4ac6d35d9f50da9365c5d63b8e0f9",
+    "lossless_gzip": false
+  },
+  "SEED_CHECK.json": {
+    "source": "SEED_CHECK.json",
+    "source_bytes": 7924,
+    "source_sha256": "f7387ccea1febdc51f2fe78210c73a11220abbee93878ec56cf0626de0a07a8a",
+    "lossless_gzip": false
+  },
+  "DOWNLOAD_STATUS.json": {
+    "source": "DOWNLOAD_STATUS.json",
+    "source_bytes": 2330,
+    "source_sha256": "8bf64891235b92c762b0c13341c0d63676690384e8440c6796a9091eda402570",
+    "lossless_gzip": false
+  },
+  "runs/historical25/PROTOCOL.json": {
+    "source": "runs/historical25/PROTOCOL.json",
+    "source_bytes": 183979,
+    "source_sha256": "9c541222b1e4549367ee8853a53340fe84b15f1cb50a561217fe7219bc78fcea",
+    "lossless_gzip": false
+  },
+  "runs/historical25/rows.json.gz": {
+    "source": "runs/historical25/rows.json",
+    "source_bytes": 13142021,
+    "source_sha256": "1fbe1e877fe4ba5053e9dd329e8599dec853c40f355b44c5bd91b18a6e4ce95f",
+    "lossless_gzip": true
+  },
+  "runs/historical25/QA.json.gz": {
+    "source": "runs/historical25/QA.json",
+    "source_bytes": 616875,
+    "source_sha256": "fc624c2e7529b90c49038391ec34fd15ac288c3ac9d5451e7645cf432e6a433d",
+    "lossless_gzip": true
+  },
+  "runs/historical25/SUMMARY.json": {
+    "source": "runs/historical25/SUMMARY.json",
+    "source_bytes": 33421,
+    "source_sha256": "dd0e672de78cd8bf6df8ac731a3ead3c88121308151726d9587e655609c095c7",
+    "lossless_gzip": false
+  },
+  "runs/historical25/LOSS_REVIEW.json": {
+    "source": "runs/historical25/LOSS_REVIEW.json",
+    "source_bytes": 240324,
+    "source_sha256": "f3dc7a8b6aaecc860d89660a676fb4df6831917fa299f0ea03b610bb9b33fe8b",
+    "lossless_gzip": false
+  },
+  "runs/historical25/SERIAL_TIMING.json": {
+    "source": "runs/historical25/SERIAL_TIMING.json",
+    "source_bytes": 23199,
+    "source_sha256": "6ad04631ae58f4949a31219886cad40e3c6955f0f77e27e5b9bf6b6213f0a8ca",
+    "lossless_gzip": false
+  },
+  "runs/joint_r1_100/PROTOCOL.json": {
+    "source": "runs/joint_r1_100/PROTOCOL.json",
+    "source_bytes": 74595,
+    "source_sha256": "ec4afebf6cc20ae5183110fa556eb2655e49c8d90e824eafd6acc37a2edf00c8",
+    "lossless_gzip": false
+  },
+  "runs/joint_r1_100/rows.json.gz": {
+    "source": "runs/joint_r1_100/rows.json",
+    "source_bytes": 4051058,
+    "source_sha256": "32a8a50da88cb5edf551191644af568fdd5043730fd464a4fa01bd95b5baec11",
+    "lossless_gzip": true
+  },
+  "runs/joint_r1_100/QA.json.gz": {
+    "source": "runs/joint_r1_100/QA.json",
+    "source_bytes": 191284,
+    "source_sha256": "7bf29e4abd3c92f105301d0aaebaa6c03f198bdbe1ad5695b238dedbe162ae38",
+    "lossless_gzip": true
+  },
+  "runs/joint_r1_100/SUMMARY.json": {
+    "source": "runs/joint_r1_100/SUMMARY.json",
+    "source_bytes": 6552,
+    "source_sha256": "0ad815d81946b36efbaa304d785707afdd0b28cffc152f26893f848e4b04e6cc",
+    "lossless_gzip": false
+  },
+  "runs/joint_r1_100/LOSS_REVIEW.json": {
+    "source": "runs/joint_r1_100/LOSS_REVIEW.json",
+    "source_bytes": 215402,
+    "source_sha256": "3bc2acfde23ef251b214452880aa67f626d302bbe3743cb07c9dce27ea153b43",
+    "lossless_gzip": false
+  },
+  "runs/joint_r1_100/SERIAL_TIMING.json": {
+    "source": "runs/joint_r1_100/SERIAL_TIMING.json",
+    "source_bytes": 23237,
+    "source_sha256": "a080ecc8e81a522c7b66161c2f8ebe21e986f15dd206a841db73c869bca8a5c1",
+    "lossless_gzip": false
+  },
+  "runs/joint_r2_100/PROTOCOL.json": {
+    "source": "runs/joint_r2_100/PROTOCOL.json",
+    "source_bytes": 74595,
+    "source_sha256": "1067f4a22ab029bdd7b6390dd3dbc740082ae0156c41b6aa306104d1ad852703",
+    "lossless_gzip": false
+  },
+  "runs/joint_r2_100/rows.json.gz": {
+    "source": "runs/joint_r2_100/rows.json",
+    "source_bytes": 4050907,
+    "source_sha256": "df85801711217522d85c145a4ad77a091d1c701aa8981f3c0ea5c98a306a597c",
+    "lossless_gzip": true
+  },
+  "runs/joint_r2_100/QA.json.gz": {
+    "source": "runs/joint_r2_100/QA.json",
+    "source_bytes": 224652,
+    "source_sha256": "8ca2fc8eaf2609248f412157260de9d50b14509e3e751c022d3514067199e96e",
+    "lossless_gzip": true
+  },
+  "runs/joint_r2_100/SUMMARY.json": {
+    "source": "runs/joint_r2_100/SUMMARY.json",
+    "source_bytes": 6560,
+    "source_sha256": "3e4abf3d1006ce0a7ea1da30beebb625aa9c79e39325c551b56b992d6c53ee7e",
+    "lossless_gzip": false
+  },
+  "runs/joint_r2_100/LOSS_REVIEW.json": {
+    "source": "runs/joint_r2_100/LOSS_REVIEW.json",
+    "source_bytes": 216646,
+    "source_sha256": "15a0ac929f44ce44f29039c3b448c63a5af6eb66ea859fe0ff30d05e0aca3856",
+    "lossless_gzip": false
+  },
+  "runs/joint_r2_100/SERIAL_TIMING.json": {
+    "source": "runs/joint_r2_100/SERIAL_TIMING.json",
+    "source_bytes": 30726,
+    "source_sha256": "d5c41159cfaac723045b98fff0323a63c2804d6e155113aa3d5f950d940436c7",
+    "lossless_gzip": false
+  },
+  "runs/regression_final/PROTOCOL.json": {
+    "source": "runs/regression_final/PROTOCOL.json",
+    "source_bytes": 12444,
+    "source_sha256": "5869c76d18ce158ab5f7fc6bfdee59ab9b40c9e8d68b4187215dacc94d5cf0c8",
+    "lossless_gzip": false
+  },
+  "runs/regression_final/rows.json.gz": {
+    "source": "runs/regression_final/rows.json",
+    "source_bytes": 97088,
+    "source_sha256": "de8e41bcf7e9b4b3e69f27f973299502e80ab3dab102e1e620790a40a44d4a07",
+    "lossless_gzip": true
+  },
+  "runs/regression_final/QA.json.gz": {
+    "source": "runs/regression_final/QA.json",
+    "source_bytes": 5283,
+    "source_sha256": "ca83b23fd2cb4e4dff67152c4e733903d3166d7106dd357be10ba3d47d20a521",
+    "lossless_gzip": true
+  },
+  "runs/regression_final/SUMMARY.json": {
+    "source": "runs/regression_final/SUMMARY.json",
+    "source_bytes": 2815,
+    "source_sha256": "6dba4cb58edf2033f54ce61364ec6e9536f959e7214b839ed298052c265eac43",
+    "lossless_gzip": false
+  },
+  "scripts/run.py": {
+    "source": "run.py",
+    "source_bytes": 7144,
+    "source_sha256": "5d19dd0034fcc2801f76de28787bfd1ed3468c533adf2e19333a11bfd98af2de",
+    "lossless_gzip": false
+  },
+  "scripts/analyze.py": {
+    "source": "analyze.py",
+    "source_bytes": 5956,
+    "source_sha256": "032bf718bc53bfddd942d8920f361f9838d118665c768fda5fd69ed1df5d5314",
+    "lossless_gzip": false
+  },
+  "scripts/independent_verify.py": {
+    "source": "independent_verify.py",
+    "source_bytes": 4876,
+    "source_sha256": "79bf22a262332648bfd640af9408bd9fea04381644f2eeeadb855ebec0ea50a8",
+    "lossless_gzip": false
+  },
+  "scripts/loss_review.py": {
+    "source": "loss_review.py",
+    "source_bytes": 3032,
+    "source_sha256": "ceeeaca1e2cdac4b6c798cd76ff5dcc855a8b160bc1389e888c8d4bc196953e3",
+    "lossless_gzip": false
+  },
+  "scripts/timing.py": {
+    "source": "timing.py",
+    "source_bytes": 1964,
+    "source_sha256": "72303bec85aaac588ac8d3b2c84657162d2d3ef4aa73fd307a8ebf96525a3eb2",
+    "lossless_gzip": false
+  },
+  "scripts/regression_evidence.py": {
+    "source": "regression_evidence.py",
+    "source_bytes": 2595,
+    "source_sha256": "14ab4584cda938f2604899ec86115ae2b5c0f7e9eb19854dfbd8e2323917a9d2",
+    "lossless_gzip": false
+  },
+  "downloads/56149565/USER_ACQUISITION.json": {
+    "source": "downloads/56149565/USER_ACQUISITION.json",
+    "source_bytes": 1306,
+    "source_sha256": "5d2c8de9c9bce4961fd407341d1484fc024896a2810a054dc3b62fa6edab811f",
+    "lossless_gzip": false
+  },
+  "downloads/56146577/GITHUB_ACQUISITION.json": {
+    "source": "downloads/56146577/GITHUB_ACQUISITION.json",
+    "source_bytes": 396,
+    "source_sha256": "fc0cd0e2e4d7a850c2558f18497b9c5687251c61393684842f47c9327c2e2e8e",
+    "lossless_gzip": false
+  },
+  "opponents/submission_56149565/afs_runtime/__init__.py": {
+    "source": "opponents/submission_56149565/afs_runtime/__init__.py",
+    "source_bytes": 0,
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lossless_gzip": false
+  },
+  "opponents/submission_56149565/afs_runtime/agent.so": {
+    "source": "opponents/submission_56149565/afs_runtime/agent.so",
+    "source_bytes": 2792912,
+    "source_sha256": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c",
+    "lossless_gzip": false
+  },
+  "opponents/submission_56149565/afs_runtime/config.json": {
+    "source": "opponents/submission_56149565/afs_runtime/config.json",
+    "source_bytes": 758,
+    "source_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "lossless_gzip": false
+  },
+  "opponents/submission_56149565/afs_runtime/policy.py": {
+    "source": "opponents/submission_56149565/afs_runtime/policy.py",
+    "source_bytes": 7892,
+    "source_sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "lossless_gzip": false
+  },
+  "opponents/submission_56149565/main.py": {
+    "source": "opponents/submission_56149565/main.py",
+    "source_bytes": 335,
+    "source_sha256": "7d4055bfce85ac9374e172c2f190abb84f978172c33f9115e1010a08269c3a1b",
+    "lossless_gzip": false
+  }
+}

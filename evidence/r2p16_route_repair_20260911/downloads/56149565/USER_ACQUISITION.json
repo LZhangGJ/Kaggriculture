@@ -1,0 +1,16 @@
+{
+  "source": "C:\\Users\\DHU_Z\\Downloads\\submission (6).tar.gz",
+  "acquired_utc": "2026-09-11T02:24:10.133593+00:00",
+  "source_mtime_utc": "2026-09-11T02:18:01.118872+00:00",
+  "size": 985113,
+  "archive_sha256": "363101251f64cd1967c0203812d30782c57daf39c117e7852811b26b8f6db804",
+  "submission_id": 56149565,
+  "provenance": "User supplied this local archive after the pending request for submission 56149565. Its main.py identifies Portable P16 JointAFS R2 LocalExchange, consistent with the frozen official submission description; archive size 985113 bytes matches the previously observed rounded 962 KiB. Submission ID mapping is based on this context and entry label, not an independently authenticated Kaggle archive hash. Original bytes preserved; no rebuild or runtime edit.",
+  "member_hashes": {
+    "afs_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "afs_runtime/agent.so": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c",
+    "afs_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "afs_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "main.py": "7d4055bfce85ac9374e172c2f190abb84f978172c33f9115e1010a08269c3a1b"
+  }
+}

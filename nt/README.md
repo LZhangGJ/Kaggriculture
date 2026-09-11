@@ -7,6 +7,19 @@ APIs or validation assumptions.
 
 ## Contents
 
+- [`latest_20260911_r2p16_route_repair/`](latest_20260911_r2p16_route_repair/README.md)
+  — local procurement-repair research candidate with its exact tested runtime,
+  complete sources, 105 mechanism checks and English documentation. The
+  [3,150-game evidence](../evidence/r2p16_route_repair_20260911/REPORT.md)
+  records improved execution accounting but a significant regression against
+  original JointAFS R2. Do not promote it to the competition baseline. This is
+  distinct from the JointAFS workflow-repaired builds below.
+- [`latest_20260910_r2p16_route_economics/`](latest_20260910_r2p16_route_economics/README.md)
+  — earlier delivery/capacity/cash-aware route experiment, final tested binary
+  and English development report. Its 880-game extension found twelve protected
+  task omissions in six games; preserved as research history, not a release
+  recommendation. The later workflow and procurement agents are explained in
+  the repository [development record](../agent.md).
 - [`latest_20260911_afs_workflow_repair_r1_r2/`](latest_20260911_afs_workflow_repair_r1_r2/README_ZH.md)
   — AFS R1/R2 execution-integrity handoff. Adds the teammate-derived complete
   workflow and worker-scheduling repair behind independent off/audit/on build

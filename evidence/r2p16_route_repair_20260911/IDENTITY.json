@@ -1,0 +1,54 @@
+{
+  "inspected_repository_commit": "1a0d9c3c7746533222b9e745275dfa14b7cf7bef",
+  "original_r1": {
+    "submission_id": 56146577,
+    "archive_sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+    "bytes": 982521,
+    "tested_download_identical": true,
+    "repository_path": "nt/latest_20260911_p16_jointafs_r1/public_submission/AFS/submission.tar.gz"
+  },
+  "supplied_r2": {
+    "archive_sha256": "363101251f64cd1967c0203812d30782c57daf39c117e7852811b26b8f6db804",
+    "bytes": 985113,
+    "binary_sha256": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c",
+    "entry_label": "Portable P16 JointAFS R2 LocalExchange Kaggriculture entry.",
+    "contextual_submission_id": 56149565,
+    "submission_id_limit": "Context and entry label; no independently authenticated Kaggle archive hash."
+  },
+  "separate_workflow_builds": {
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/agent.so": {
+      "bytes": 1152056,
+      "sha256": "e285b58c4c35ea95ff522d8848a3f91afc1bb1156d1d637f585a03bb5deb1ca8"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_off.so": {
+      "bytes": 1120568,
+      "sha256": "92e0a6ecf4bd7b6824ac2cae2b87ffb2419f2f09daeadbddfb18707f7ec181f9"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_audit.so": {
+      "bytes": 1138488,
+      "sha256": "6323b4538ae61d2f7e8c12b5a882ace60ef8db46084c914db91be41ead085abe"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_on.so": {
+      "bytes": 1152056,
+      "sha256": "e285b58c4c35ea95ff522d8848a3f91afc1bb1156d1d637f585a03bb5deb1ca8"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": {
+      "bytes": 1182288,
+      "sha256": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_off.so": {
+      "bytes": 1128888,
+      "sha256": "28bbbf6a0b9ce56077a8ed4173dc1487fd5f0575f9b31707d61eb19f38fcf4df"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_audit.so": {
+      "bytes": 1163912,
+      "sha256": "1dae71c44f3bec6b466bebe957f71f2b0f102ae95b2065bea3292988fe38f704"
+    },
+    "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_on.so": {
+      "bytes": 1182288,
+      "sha256": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2"
+    }
+  },
+  "separate_workflow_builds_in_local_100_seed_panel": false,
+  "limit": "Binary difference establishes artifact identity, not every source-level or behavioral difference."
+}

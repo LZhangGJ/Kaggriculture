@@ -1,0 +1,410 @@
+{
+  "status": "FAIL",
+  "functional_status": "PASS",
+  "local_timing_status": "FAIL",
+  "baseline_commit": "979fec14bdddd281f4d934494aa4a06673fba9b9",
+  "frozen_baseline_files_checked": 48,
+  "native_binaries": {
+    "0": "7a0d63d8d2faedbfff69d2ec2fd6a61b8b0c82f5a40bd84985466d5657865fed",
+    "1": "9a7d3e330d3a67362566b155a49ae99985f6cee6d56ac5a4f0b5725e068b3d32",
+    "2": "f039ff0e6ad6c424c815043085c878636206597ac2ae05a9350f3e7928f1884a",
+    "3": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7"
+  },
+  "unit_checks": 20,
+  "disabled_mode_parity": {
+    "status": "PASS",
+    "observations": 719,
+    "reference": "frozen P16 binary, same replay observations",
+    "replay_sha256": "192bb7f54edf495045c419e4aefc94fa690f1d9d3c83bdb2fcd42fe7572b724d",
+    "rebuilt_sha256": "7a0d63d8d2faedbfff69d2ec2fd6a61b8b0c82f5a40bd84985466d5657865fed"
+  },
+  "fresh_games": 120,
+  "regression_games": 12,
+  "official_action_pairs_checked": 94908,
+  "by_arm": {
+    "P16": {
+      "games": 30,
+      "wins": 24,
+      "mean_cash": 109590.9,
+      "mean_margin": 10378.7,
+      "mean_wages": 3681.8333333333335,
+      "mean_moves": 2390.4666666666667,
+      "accepted_route_changes": 0,
+      "accepted_hire_reductions": 0,
+      "mean_overflow": 9.566666666666666,
+      "invalid_actions": 0,
+      "missed_promises": 0,
+      "max_seconds": 0.42055878600001506,
+      "over_one_second": 0,
+      "max_local_overage_seconds": 0
+    },
+    "guards": {
+      "games": 30,
+      "wins": 24,
+      "mean_cash": 109590.9,
+      "mean_margin": 10378.7,
+      "mean_wages": 3681.8333333333335,
+      "mean_moves": 2390.4666666666667,
+      "accepted_route_changes": 0,
+      "accepted_hire_reductions": 0,
+      "mean_overflow": 9.566666666666666,
+      "invalid_actions": 0,
+      "missed_promises": 0,
+      "max_seconds": 0.36834681599998476,
+      "over_one_second": 0,
+      "max_local_overage_seconds": 0,
+      "mean_paired_cash_change": 0.0,
+      "mean_paired_margin_change": 0.0,
+      "cases_with_lower_wages": 0,
+      "mean_paired_wage_change": 0.0
+    },
+    "delivery": {
+      "games": 30,
+      "wins": 25,
+      "mean_cash": 111148.13333333333,
+      "mean_margin": 10407.0,
+      "mean_wages": 3848.0333333333333,
+      "mean_moves": 2418,
+      "accepted_route_changes": 426,
+      "accepted_hire_reductions": 0,
+      "mean_overflow": 13.2,
+      "invalid_actions": 0,
+      "missed_promises": 0,
+      "max_seconds": 0.761205296000071,
+      "over_one_second": 0,
+      "max_local_overage_seconds": 0,
+      "mean_paired_cash_change": 1557.2333333333333,
+      "mean_paired_margin_change": 28.3,
+      "cases_with_lower_wages": 13,
+      "mean_paired_wage_change": 166.2
+    },
+    "economic": {
+      "games": 30,
+      "wins": 26,
+      "mean_cash": 106428.56666666667,
+      "mean_margin": 9570.966666666667,
+      "mean_wages": 3895.9,
+      "mean_moves": 2427.766666666667,
+      "accepted_route_changes": 484,
+      "accepted_hire_reductions": 2,
+      "mean_overflow": 13.466666666666667,
+      "invalid_actions": 0,
+      "missed_promises": 0,
+      "max_seconds": 1.5238664510000035,
+      "over_one_second": 8,
+      "max_local_overage_seconds": 0.5238664510000035,
+      "mean_paired_cash_change": -3162.3333333333335,
+      "mean_paired_margin_change": -807.7333333333333,
+      "cases_with_lower_wages": 11,
+      "mean_paired_wage_change": 214.06666666666666
+    }
+  },
+  "failures": [],
+  "slow_games": [
+    {
+      "name": "economic_moon_v215_2609126001_seat1",
+      "max_seconds": 1.0049648190000653,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.00496481900006529
+    },
+    {
+      "name": "economic_thomas_955_v2_2609126001_seat0",
+      "max_seconds": 1.5238664510000035,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.5238664510000035
+    },
+    {
+      "name": "economic_thomas_955_v2_2609126001_seat1",
+      "max_seconds": 1.1175672609999765,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.1175672609999765
+    },
+    {
+      "name": "economic_moon_v215_2609126002_seat0",
+      "max_seconds": 1.0408267999999907,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.040826799999990726
+    },
+    {
+      "name": "economic_thomas_955_v2_2609126002_seat1",
+      "max_seconds": 1.0720224209999287,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.07202242099992873
+    },
+    {
+      "name": "economic_moon_v215_2609126003_seat0",
+      "max_seconds": 1.11853712300001,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.11853712300001007
+    },
+    {
+      "name": "economic_moon_v215_2609126003_seat1",
+      "max_seconds": 1.1712244630000441,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.17122446300004412
+    },
+    {
+      "name": "economic_thomas_955_v2_2609126005_seat1",
+      "max_seconds": 1.0679608489999737,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.06796084899997368
+    },
+    {
+      "name": "economic_moon_v215_2026091026_seat0",
+      "max_seconds": 1.1449731019999945,
+      "over_one_second": 1,
+      "local_overage_seconds": 0.14497310199999447
+    }
+  ],
+  "sequential_timing": [
+    {
+      "name": "economic_thomas_955_v2_2609126001_seat0",
+      "action_parity": "PASS",
+      "observations": 719,
+      "replay_sha256": "7ba07e0de671385722c7bebb8bb250cc5bf9695bc977dad92357542d11f363e9",
+      "max_wall_seconds": 0.8007684210001571,
+      "max_cpu_seconds": 0.8006938680000002,
+      "peak_step": 240,
+      "over_one_second": 0,
+      "local_overage_seconds": 0
+    },
+    {
+      "name": "economic_moon_v215_2609126003_seat1",
+      "action_parity": "PASS",
+      "observations": 719,
+      "replay_sha256": "2476657005c7786d401cf292cad702fd41b60061aa24f6440f1ea1571aefa7a2",
+      "max_wall_seconds": 0.7761603589999595,
+      "max_cpu_seconds": 0.7761504630000005,
+      "peak_step": 456,
+      "over_one_second": 0,
+      "local_overage_seconds": 0
+    }
+  ],
+  "regression_summary": {
+    "games": 12,
+    "wins": 11,
+    "mean_cash": 106487.08333333333,
+    "mean_margin": 7275.833333333333,
+    "mean_wages": 4258.25,
+    "mean_moves": 2472.6666666666665,
+    "accepted_route_changes": 206,
+    "accepted_hire_reductions": 7,
+    "mean_overflow": 4.833333333333333,
+    "invalid_actions": 0,
+    "missed_promises": 0,
+    "max_seconds": 1.1449731019999945,
+    "over_one_second": 1,
+    "max_local_overage_seconds": 0.14497310199999447
+  },
+  "per_opponent": {
+    "market_smart_v8": {
+      "P16": {
+        "games": 10,
+        "wins": 10,
+        "mean_cash": 103979.3,
+        "mean_margin": 12672.7,
+        "mean_wages": 3571.3,
+        "mean_moves": 2419,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 8.8,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.25483205900002304,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "guards": {
+        "games": 10,
+        "wins": 10,
+        "mean_cash": 103979.3,
+        "mean_margin": 12672.7,
+        "mean_wages": 3571.3,
+        "mean_moves": 2419,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 8.8,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.24296398000001318,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "delivery": {
+        "games": 10,
+        "wins": 6,
+        "mean_cash": 101548.7,
+        "mean_margin": 3752.9,
+        "mean_wages": 4173.5,
+        "mean_moves": 2439.4,
+        "accepted_route_changes": 155,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 10.4,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.6332214419999218,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "economic": {
+        "games": 10,
+        "wins": 9,
+        "mean_cash": 107666.5,
+        "mean_margin": 10391.2,
+        "mean_wages": 4106.1,
+        "mean_moves": 2440.7,
+        "accepted_route_changes": 167,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 10.2,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.9342117480000525,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      }
+    },
+    "moon_v215": {
+      "P16": {
+        "games": 10,
+        "wins": 6,
+        "mean_cash": 102289.9,
+        "mean_margin": 1473.3,
+        "mean_wages": 3836.7,
+        "mean_moves": 2386.1,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 12.5,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.29617900499999905,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "guards": {
+        "games": 10,
+        "wins": 6,
+        "mean_cash": 102289.9,
+        "mean_margin": 1473.3,
+        "mean_wages": 3836.7,
+        "mean_moves": 2386.1,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 12.5,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.36834681599998476,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "delivery": {
+        "games": 10,
+        "wins": 9,
+        "mean_cash": 109679.8,
+        "mean_margin": 11412.0,
+        "mean_wages": 3793.9,
+        "mean_moves": 2429.1,
+        "accepted_route_changes": 135,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 13.9,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.6065839039999901,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "economic": {
+        "games": 10,
+        "wins": 7,
+        "mean_cash": 98873.7,
+        "mean_margin": 6141.4,
+        "mean_wages": 3804.8,
+        "mean_moves": 2428.3,
+        "accepted_route_changes": 165,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 7.6,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 1.1712244630000441,
+        "over_one_second": 4,
+        "max_local_overage_seconds": 0.17122446300004412
+      }
+    },
+    "thomas_955_v2": {
+      "P16": {
+        "games": 10,
+        "wins": 8,
+        "mean_cash": 122503.5,
+        "mean_margin": 16990.1,
+        "mean_wages": 3637.5,
+        "mean_moves": 2366.3,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 7.4,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.42055878600001506,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "guards": {
+        "games": 10,
+        "wins": 8,
+        "mean_cash": 122503.5,
+        "mean_margin": 16990.1,
+        "mean_wages": 3637.5,
+        "mean_moves": 2366.3,
+        "accepted_route_changes": 0,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 7.4,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.2911443559999043,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "delivery": {
+        "games": 10,
+        "wins": 10,
+        "mean_cash": 122215.9,
+        "mean_margin": 16056.1,
+        "mean_wages": 3576.7,
+        "mean_moves": 2385.5,
+        "accepted_route_changes": 136,
+        "accepted_hire_reductions": 0,
+        "mean_overflow": 15.3,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 0.761205296000071,
+        "over_one_second": 0,
+        "max_local_overage_seconds": 0
+      },
+      "economic": {
+        "games": 10,
+        "wins": 10,
+        "mean_cash": 112745.5,
+        "mean_margin": 12180.3,
+        "mean_wages": 3776.8,
+        "mean_moves": 2414.3,
+        "accepted_route_changes": 152,
+        "accepted_hire_reductions": 2,
+        "mean_overflow": 22.6,
+        "invalid_actions": 0,
+        "missed_promises": 0,
+        "max_seconds": 1.5238664510000035,
+        "over_one_second": 4,
+        "max_local_overage_seconds": 0.5238664510000035
+      }
+    }
+  },
+  "gates": {
+    "functional": "No interpreter error, ineffective work action, or audited promise miss; all full replays agree.",
+    "local_timing": "Conservative gate: no measured call exceeds one second. Overage allowance is reported separately; this is not a Kaggle timeout verdict."
+  },
+  "limitations": [
+    "Five expanded environment seeds; both seats and all opponents are paired, not independent samples. The immature-harvest defect was discovered on this panel; it is not an untouched holdout.",
+    "Promise audit covers accepted, already declared work; it does not certify every baseline planning wish.",
+    "Future opponent orders and shops are conditional forecasts, not known outcomes.",
+    "Local official interpreter and WSL timing, not Kaggle sandbox certification.",
+    "No automatic replacement of the frozen competition baseline."
+  ]
+}

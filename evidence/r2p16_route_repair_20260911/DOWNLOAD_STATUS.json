@@ -1,0 +1,28 @@
+{
+  "selection": "Latest two successful team submissions by submission time, queried in SUBMISSIONS.json",
+  "submission_56146577": {
+    "status": "available_original_archive",
+    "archive": "downloads/56146577/submission.tar.gz",
+    "sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+    "provenance": "Original uploaded archive obtained from GitHub e0a0ca78a662037bac8851fa945ca6a81ff4b5d8; matches uploader receipt and independently queried Kaggle submission metadata. See downloads/56146577/GITHUB_ACQUISITION.json.",
+    "games_run": 600,
+    "validation": "All 600 live games and 864000 observations checked; independent terminal reward recount passed."
+  },
+  "submission_56149565": {
+    "status": "available_user_supplied_archive",
+    "observed_failures": [
+      "Kaggle authenticated browser download: Invalid InterceptionId",
+      "Official raw URL opened in browser: net::ERR_BLOCKED_BY_CLIENT"
+    ],
+    "latest_checked_github_commit": "1a0d9c3c7746533222b9e745275dfa14b7cf7bef",
+    "github_check": "No submission archive or uploader receipt for 56149565 in this commit. The new AFS workflow-repair package contains modified builds and is not used as a substitute.",
+    "user_input": "Requested manual download of the original submission.tar.gz into Downloads or its existing local path.",
+    "games_run": 600,
+    "last_local_archive_check_utc": "2026-09-11T02:03:33.797954+00:00",
+    "archive": "downloads/56149565/submission.tar.gz",
+    "sha256": "363101251f64cd1967c0203812d30782c57daf39c117e7852811b26b8f6db804",
+    "provenance": "User supplied this local archive after the pending request for submission 56149565. Its main.py identifies Portable P16 JointAFS R2 LocalExchange, consistent with the frozen official submission description; archive size 985113 bytes matches the previously observed rounded 962 KiB. Submission ID mapping is based on this context and entry label, not an independently authenticated Kaggle archive hash. Original bytes preserved; no rebuild or runtime edit.",
+    "acquisition_receipt": "downloads/56149565/USER_ACQUISITION.json",
+    "validation": "All 600 live games and 864000 observations checked; independent terminal reward recount passed. Serial timing review is separate and excluded from win rates."
+  }
+}

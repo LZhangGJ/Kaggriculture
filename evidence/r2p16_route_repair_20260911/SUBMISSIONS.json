@@ -1,0 +1,23 @@
+{
+  "queried_at": "2026-09-10T23:11:04.373379+00:00",
+  "submissions": [
+    {
+      "id": 56149565,
+      "description": "NT P16 JointAFS R2 - local exchange portfolio",
+      "date": "2026-09-10 18:07:39.960000",
+      "file_name": "submission.tar.gz",
+      "url": "/submissions/56149565/56149565.raw",
+      "public_score": "2831.0",
+      "status": "SubmissionStatus.COMPLETE"
+    },
+    {
+      "id": 56146577,
+      "description": "NT P16 JointAFS R1 - joint animal feed successor planning",
+      "date": "2026-09-10 14:52:13.683000",
+      "file_name": "submission.tar.gz",
+      "url": "/submissions/56146577/56146577.raw",
+      "public_score": "2345.6",
+      "status": "SubmissionStatus.COMPLETE"
+    }
+  ]
+}

@@ -1,615 +1,131 @@
-# Kaggriculture agent 开发与验证记录
+# Kaggriculture agent development and validation
 
-**2026-09-11 最新交接：** [P16 → 完整工作链优化 → 采购异常恢复](#r2p16-route-agents)。该节说明两个本地 agent 的组成、开发经过、改进机制、实际胜率与复现方式。此前 KEEP=2 / PPO 研究记录保留在下方，属于不同研究路线。
+Updated: 2026-09-11. New and revised Markdown documentation for this handoff is in English.
 
-# KEEP=2 F3 经济决策 PPO：路线可行性评估与最小验证实验
+## Current conclusion
 
-日期：2026-09-06。评估对象为 [`nt/latest_20260906_keep2_rl_1000/`](nt/latest_20260906_keep2_rl_1000/README_ZH.md) 四组 1000 轮实验及其归档证据。
+The latest local procurement-repair candidate improves execution checks but **must not replace the competition baseline**. Across 3,150 fresh live matches, it regresses against the user-supplied JointAFS R2 submission. Its 1,050 games contain no invalid actions or unexplained omissions of registered commitments, but include 3,227 explicitly deferred tasks. Deferral is not completion.
 
-本文档分四部分：
+- [Latest candidate: source, build and usage](nt/latest_20260911_r2p16_route_repair/README.md)
+- [Full evaluation, failure analysis and limitations](evidence/r2p16_route_repair_20260911/REPORT.md)
+- [Earlier route-economics experiment](nt/latest_20260910_r2p16_route_economics/README.md)
+- [Previously published workflow/recovery evidence](evidence/r2p16_route_agents_20260911/README_ZH.md)
 
-- **§0–§7 RL 路线评估**：`aux_r0` 增益是否可信、能否继续、如何用最小实验验证。
-- **§8 GitHub 上传精简规范**：仓库体积实测与新增文件的取舍规则。
-- **§9 候选/全局特征重新设计**：针对 §3.3 信噪比问题的具体特征方案与验证顺序。
-- **§10 本地验证记录**：WSL2 环境搭建、C++ 引擎全新编译、包自带三层验证全部通过（812 局与冻结收据逐字节一致）、§9.6 第 0 步探针已执行（结果为负）、复核中发现并修正的一处论证缺陷（§2.1）。
-- **§11 E1/E2/E3 结果（2026-09-07）**：E1 六次重复 0/6 显著，`aux_r0` 的 +8.64pp 不可复现；E2 因此无检验对象；E3 2/3 完成、待定。完整报告见 [`evidence/e1_e2_e3_20260907/REPORT_ZH.md`](evidence/e1_e2_e3_20260907/REPORT_ZH.md)。
-
-## 0. 本文档的边界
-
-- 本文档**只读**已冻结的实验证据，没有运行新训练、新评测或新分支对局；所有数字均来自归档 JSON/Markdown，未重新测量。
-- 结论是对现有证据的**再判读**，包含与原报告口径不同的地方（见 §2），不改写任何原始报告，也不修改权重、候选、奖励或选模规则。
-- 第 5 节的实验尚**未执行**，其 go/no-go 阈值是事前约定，不是已观测结果。
-- 不据此提交 Kaggle，不替换任何基座。
-
-## 1. 结论
-
-**这条线不是死路，但"按现在的配方继续堆轮数"已被现有证据否定。**
-
-300→1000 轮新增 627,200 局（四组累计 896,000 局），末端收益不成立：
-
-- 1000 相对 900 的八项单组配对 95% seed 区间**全部包含零**。
-- 1000 相对 300 的四项确定性区间中三项包含零；唯一不含零的是 `control_r1` +4.93pp [0.07, 9.64]，但它终点 64.21%、相对 KEEP 仅 +1.29pp [-2.57, 5.14]（含零）——它只是从自身偏弱的 300 轮状态爬回平均水平，不构成"加轮数变强"的证据。
-- 唯一稳定高于 KEEP 的是 `aux_r0`：1000 轮确定性 71.57%，相对 KEEP +8.64pp [4.14, 13.21]。但该增益在 **300 轮时已经存在**（70.14%），1000 减 300 为 +1.43pp [-2.36, 5.21]。
-
-真正未回答的问题只有两个，且都可用小实验回答：
-
-1. `aux_r0` 是配方有效，还是训练种子走运？（n=2，无法区分）
-2. 它学到的是经济判断，还是对这 7 个固定对手的针对性利用？（独立 seed 无法回答，因为对手池未变）
-
-**在这两个问题有答案前，不应再投入 1000 轮量级训练，也不应接入宽候选池。**
-
-**2026-09-07 更新：问题 1 已由 E1 回答——是训练种子走运。** 同配方六个新种子、300 轮、全新 1,400 局面板，相对 KEEP 的配对区间 0/6 高于零，中位 −0.43pp（§11）。问题 2 随之失去对象：池内本无稳定增益，无所谓泛化。
-
-## 2. 证据判读
-
-### 2.1 模型是否明显优于均匀随机——此前的论证有缺陷，已修正
-
-**本节内容已修正**：此前版本声称"模型学会了区分候选好坏"，用单次干预的均匀随机效应外推到全局 45% 干预率、得出"应为约 −40pp"的预期。用 `RESULTS.json` 复核后发现这个论证站不住，原因两条：
-
-1. **原文只引用了对论点有利的两个数**。`mean_uniform_nonkeep_reward_gain`（候选价值审计，[`RESULTS.json`](nt/latest_20260906_keep2_rl_1000/archive/experiments/economic_rl_f3_candidate_value_20260906/RESULTS.json)）实际有四个条件：
-
-   |条件|均匀随机效应|模型效应|差|
-   |---|---:|---:|---:|
-   |train_tail0|−0.0732|−0.0720|+0.0012|
-   |train_tail2|**+0.0096**|+0.0102|+0.0006|
-   |new_tail0|−0.0618|−0.0591|+0.0027|
-   |new_tail2|−0.0023|−0.0053|−0.0030|
-
-   原文只引了 train_tail0 与 new_tail0（都是负的），略去了 train_tail2（明显为正）和 new_tail2（接近零）。四个条件里没有一个能稳定支撑"均匀随机约 −3pp"这个单一数字。
-
-2. **更关键的是**：同一份审计给出的"模型 vs 均匀随机"对比——用的是该审计当时的早期 checkpoint（先于 1000 轮训练）——在全部四个条件下**几乎完全相同**（差距 0.0006–0.003，噪声量级）。也就是说，在这个 offline 单次干预框架里，**无法确认模型的候选选择质量优于均匀随机**。
-3. "−3pp/次 × 13.5 次/局 ≈ −40pp" 的线性外推假设 30 个序贯决策的效应彼此独立、可加，但审计文档自己注明"同一场不同日期相关，表中节点不能当独立比赛胜率"（[ACCEPTANCE_ZH.md](nt/latest_20260906_keep2_rl_1000/archive/experiments/economic_rl_f3_candidate_value_20260906/ACCEPTANCE_ZH.md)），这个假设本身不成立。
-
-**修正后的判断**：`aux_r0` 1000 轮确定性版本改动 18,890/42,000 = 45% 的日决策、仍净赚 +8.64pp 相对 KEEP（见 `results/independent1000/aux_r0_step1000_greedy/summary.json`），这是 1000 轮训练后的真实观测，有 §2.2 的配对区间支撑，**这一点不受本节修正影响**。但不能从候选价值审计（早期 checkpoint、单次干预）推出"模型已学会优于均匀随机的经济判断"——审计自身的数据不支持这个推论，两者是不同的度量框架，不应混用。
-
-这个漏洞反而加强了 §5 E2 的必要性：如果 `aux_r0` 的 +8.64pp 来自对 7 个固定对手的记忆/针对性利用而非通用经济判断，并不需要"每次候选选择都理性"——只需要在少数关键节点上对着这几个对手做对，候选质量在离线单次干预审计里接近均匀随机也完全可能同时成立。§2.3 的对手针对性证据与这个修正是一致的，不是矛盾的。
-
-按物种分解均匀随机的分差方向（new_tail0，仅供参考效应方向，不作为"模型优于随机"的证据）：除鹅（+134）外全部平均分差为负：小麦 −1359、甜瓜 −1208、番茄 −1107、胡萝卜 −1041、羊 −905、草莓 −852、DEFER −219、牛 −129。
-
-### 2.2 训练种子方差淹没配方效应
-
-同配方、同对手、同超参、仅训练种子不同：
-
-|运行|1000轮确定性|相对KEEP|95%区间|
-|---|---:|---:|---|
-|aux_r0|71.57%|+8.64pp|[4.14, 13.21]|
-|aux_r1|64.64%|+1.71pp|[-2.79, 6.14]|
-|control_r0|61.79%|−1.14pp|[-5.5, 3.43]|
-|control_r1|64.21%|+1.29pp|[-2.57, 5.14]|
-
-100 轮阶段四组增益 +0.43/+0.71/+3.21/+1.43 亦全部区间含零。固定监测曲线不单调：普通组 700→800 轮明确退步 −4.57pp [-7.64, -1.36]。**两次重复不足以估计这个分布**，这是当前最大的认识障碍。
-
-### 2.3 对手针对性迹象强
-
-`aux_r0` 相对 KEEP 的逐对手增益极不均匀：
-
-|对手|KEEP|aux_r0|差|
-|---|---:|---:|---:|
-|yhay81_three_day|44.5%|68.5%|**+24.0**|
-|g003|42.5%|54.0%|+11.5|
-|g001|80.0%|87.5%|+7.5|
-|kaito_v58|72.5%|80.0%|+7.5|
-|lynn_v5|53.0%|60.5%|+7.5|
-|yhay81_six_day|48.0%|50.5%|+2.5|
-|boatlee_v29|100.0%|100.0%|0|
-
-全局特征包含对手现金、雇工数、象限数、每种作物/动物地块数与待收产量（[`rl_common.hpp:68-77`](nt/latest_20260906_keep2_rl_1000/src/rl_common.hpp#L68-L77)）。对固定日程表型对手（Three-Day 即属此类），这些特征足以指纹识别并学出针对性时机。224,000 局对同 7 个对手训练，**过拟合对手应作默认假设而非例外**；这类收益到线上天梯大概率归零。独立 seed 不检验这一点，因为对手池未变。
-
-### 2.4 "80.5% 节点存在更优候选"不应作为继续依据
-
-审计中每候选每种后续仅 1 次随机实现。若候选效应为零均值噪声，每节点约 6.3 个非 KEEP 候选时，"至少一个为正"的概率约 99%；实测 80.5% 反而说明**多数候选系统性为负**。"事后最佳平均 +7,797 分差"是对噪声取最大值的统计量，属赢家诅咒。
-
-审计文档本身已注明该局限，但 `PROCESS_ZH.md` 将其作为"候选确实有价值"的证据引用。G1 监督排序仅 53.06%/51.99% 也是同一原因：**标签本身是单次实现的噪声**，排序上限受限于标签信噪比，不是模型容量问题。
-
-## 3. 结构性原因：信号，不是算力
-
-依据 [`model.py:24-29`](nt/latest_20260906_keep2_rl_1000/archive/experiments/economic_rl_three_arm_20260906/model.py#L24-L29) 与特征代码，信噪比问题是设计导致的：
-
-1. **奖励只在终局**：`sign(资金差) + 0.1*tanh(资金差/50000)`，量级 ±1；单次干预真实效应约 0.03–0.07。30 个序贯决策共享这一个标量。
-2. **第 0 天所有对局状态完全相同**（标准开局、空农场），critic 在该状态只能输出常数，故早期决策的优势 = 原始奖励 − 常数。方差全部来自对手身份（7 个对手 KEEP 胜率 42%–100%）与 seed 的商店抽签，**这些外生方差没有被任何基线扣除**。而审计显示早期节点（0–6 天）恰是价值最大处（可救回 41/47）。
-3. **候选特征含粗粒度经济信息，但比 F3 自身的估值粗得多**。[`f3_policy.cpp:76`](nt/latest_20260906_c3_f3_j7c3_search/src/f3_policy.cpp#L76) 确实把距首产天数、按**当前**价估的毛收入、工时、成本、投入填进了候选第 27–31 维——早先判读这几维"空置"是错的，已在 §9 更正。真正的缺口是：这些数字用的是当前市场价而非 F3 自己算出的价格冲击后曲线，不含被替换旧项目的残值、不含对手供给压力、不含相对收益（F3 内部的 `Economy::value()` 都算了这些，但 `.first`——总现金估值——被丢弃，只有 `.second`——价格曲线——流入下一步）。模型必须从终局奖励中重新学出 F3 已经算过一次的东西，而不是从零学出经济学。这可能解释为何仅 aux 组（隐式补部分缺口）出现过增益。详见 §9 的具体设计。
-
-训练本身很便宜：100 轮约 6 分钟/模型，分支反事实 81.9 局/秒。**瓶颈是信号而非算力**，因此下列实验成本都很低。
-
-## 4. 战略层面的问题
-
-同仓库 J7+C3 底座在同一冻结面板上为 **78.14%**，F3 为 60.14%（[三组原实验报告](nt/latest_20260906_c3_f3_j7c3_search/evidence/three_arm/G3_FINAL_REPORT_ZH.md)）。RL 在 F3 上最好结果约 71%，**仍低于 J7+C3 约 7pp**。
-
-即便 RL 完全成功，目前也是在改进一个更弱的底座。这不改变"方法是否可行"的判断，但影响"值不值得"：要么把方法迁到 J7+C3（三底座首轮 c3j7 亦未学动，但那是 KEEP=3.58、20 轮的旧配方，不构成否定），要么明确 F3+RL 的目标是"风格不同的组合成员"而非最强单体。
-
-## 5. 最小验证实验（未执行）
-
-三个实验，按优先级排列，合计约一天机器时间、一天工程。每个都有事前写死的 go/no-go。
-
-### E1 · 重复数（不改模型代码，约 2 小时）
-
-aux 臂、KEEP=2、**300 轮**，新开 6 个训练种子（run 2–7）。用全新 seed 面板（如 72100000 起 100 个）评测各 step300 确定性，同批跑 KEEP 与已有 `aux_r0_step300` 作锚点。300 轮足够——`aux_r0` 的增益在 300 轮已完全体现。
-
-- **Go**：6 次中 ≥4 次配对区间高于零，且中位增益 ≥ +3pp。
-- **No-go**：≤1 次 → `aux_r0` 属训练运气，该配方终止。
-- 工程注意：归档 `train300.py` 带原机路径与全量审计要求。此处**不需要精确续训**，只需新种子的独立训练，可在原机改 run id 运行，或在移机环境去掉全量审计后重跑。不得声称是原实验的精确复现。
-
-**结果（2026-09-07，已执行）：No-go。** 六次 step300 相对 KEEP（61.21%，面板 72100000）：−1.43、−0.14、−0.71、+0.79、+2.00、−1.21pp，95% 区间全部含零（0/6），中位 −0.43pp。六次中四次的开发集最佳选点落在第 20–40 轮（即从未超过 KEEP 水平）。归档 `aux_r0` 的逐对手模式（Three-Day +24pp）未再现（六次均值 +3.8）。八次同配方 300 轮训练里，+7.2pp 是唯一离群值。详见 §11 与报告。
-
-### E2 · 留一对手（改 rollout 对手过滤，约 3 小时）
-
-针对 `aux_r0` 增益最大的三个对手（Three-Day、G003、Kaito），各训练 2 次 × 300 轮，训练池只含其余 6 个，评测时单看留出对手的 200 局。
-
-- **Go**：留出对手上的增益 ≥ 池内增益的一半 → 学到的是经济判断，值得往线上推。
-- **No-go**：池内有增益、留出归零 → 学到的是对手利用，天梯不会兑现；此时应先把对手池扩到 68-Agent 库再训，或放弃该路线。
-- 每格受 E1 揭示的训练方差影响，2 次重复是下限而非充分。
-
-**结果（2026-09-07，已执行）：无法判定——被检验的效应不存在。** 三个留出对手 × 2 次重复，留出对手 200 局与全面板 1,400 局共 12 个配对区间全部含零；留出对手上无一致方向（Three-Day +3.5/−2.0，G003 −7.5/−5.5，Kaito +1.5/−5.0pp）。E2 的前提是池内约 +8pp 的增益，E1 已表明该增益 ≈ 0。
-
-### E3 · 配对 KEEP 基线（改 rollout 与 `advantages()` 约 30 行，约 2 小时）
-
-直接针对 §3.2 的病因。模拟器给定 (seed, 对手, 座位) 确定性，故每局训练 rollout 可同时用 `mode=0` 跑一局 KEEP（纯 C++，约 86 局/秒，每轮多约 2.6 秒），奖励改为 `r − r_KEEP`。这精确扣除对手身份与 seed 商店抽签的方差——正是评测中已在使用的"配对差异"统计量，只是移作训练信号。2–3 次重复 × 300 轮，与 E1 对照。
-
-- **Go**：跨重复增益离散度明显缩小且均值上升 → 信噪比问题可修，值得继续投入；下一步再把 F3 账本的项目现金流预测填入候选向量第 27–31 维。
-- **No-go**：配对后与 E1 无差别 → 问题不在方差而在候选表达能力，应转向宽候选/联合调整线，而非继续调 PPO。
-
-**结果（2026-09-07，2/3 完成，第三次运行中）：暂定不支持。** e0 −1.07pp [−5.21, +3.14]；e1 +3.86pp [−0.64, +8.29] 但平均分差 −1,162（赢得少、输得多）。两次的离散度大于 E1 六次的极差，与"方差缩小"的预期相反。待 e2 后在报告中追加。
-
-## 6. 不要做的事
-
-- 不要继续训练到 2000 轮。1000 vs 900 八项区间全部含零，已无末端收益证据。
-- 不要按终测结果重新选模。
-- 不要进一步降低 KEEP 先验：消融显示 0 档四组平均降至 30.32%。
-- **在 E1–E3 出结果前不要接入宽候选池**。宽池会把 §3 的信噪比问题放大约 30 倍；候选表达能力不是当前的瓶颈，学习信号才是。
-
-## 7. 决策口径
-
-- E1 与 E3 均通过 → 该线值得继续投入，方向明确（候选经济特征 + 扩大对手池）。
-- E1 失败且 E3 无法挽救 → 停止该窄接口 F3-PPO 线，将精力转向已领先其约 7pp 的 J7+C3 / 宽候选搜索线。
-- E1 通过但 E2 失败 → 收益为对手利用，须先解决对手池泛化，方可讨论线上提交。
-
-**当前落点（2026-09-07）**：E1 失败（0/6）。E3 尚差一次重复；即使第三次为正，三次里两次正且区间含零，只够支持"以 E1 的规模再复现一次配对基线"，不够支持继续投入。**窄接口 F3-PPO 线（含 aux 辅助头配方）应停止；§9 的特征重设计不再以此配方为载体。** E3 补完后若与此矛盾，在报告中追加修订。
-
----
-
-# §8 GitHub 上传精简规范
-
-面向**今后新增**的提交。历史中已有的大文件不在本节处理范围（见 §8.6）。
-
-## 8.0 现状实测
-
-在 `bd30034`（分支 `agent/add-nt-simulator-orbit-migrations`）上实测，非引用他处数字：
-
-|项目|数值|
-|---|---:|
-|跟踪文件数|5,741|
-|跟踪总字节|705.4 MB|
-|`.git` 目录|952 MB|
-|其中 `nt/`|684.4 MB（5,698 文件）|
-|≥100 MB 文件（GitHub 硬拒）|0|
-|≥50 MB 文件（GitHub 警告）|1|
-
-按扩展名的体积与可压缩性：
-
-|扩展名|文件数|原始|gzip 后|可省|压缩比|
-|---|---:|---:|---:|---:|---:|
-|`.zip`|47|229.4 MB|203.6 MB|25.8 MB|1.1x|
-|`.npz`|273|169.5 MB|147.8 MB|21.7 MB|1.1x|
-|`.json`|2,293|149.6 MB|10.9 MB|**138.6 MB**|**13.7x**|
-|`.gz`|446|39.8 MB|（已压缩）|—|—|
-|`.py`|1,343|35.7 MB|21.8 MB|13.9 MB|1.6x|
-|`.joblib`|21|29.9 MB|7.7 MB|22.2 MB|3.9x|
-|`.md`|490|2.3 MB|1.2 MB|1.1 MB|1.9x|
-
-## 8.1 首要规则：不要新增已压缩的不透明二进制
-
-`.zip` 与 `.npz` 合计 **398.9 MB，占跟踪体积 57%**，且 gzip 再压仅 1.1x——没有可回收空间，只能不放进来。
-
-- git 无法对已压缩二进制做 delta；修改一个字节即整份重新存储，且**永久留在历史里**。
-- 它们不可 diff、不可在网页审阅、不可按行追溯，与本仓库"证据可核对"的定位相冲突。
-- 最大单文件 `nt/handoff/gpt_route_bundle_1327_v2/Kaggriculture_Simulator_Route_Bundle_1327_20260815_v2.zip`（90.9 MB）是**仓库自身内容的再打包**。这类交付包应作为 GitHub Release asset 或由脚本按需重建，不进版本库。
-- GitHub 硬限制：单文件 >100 MB 直接拒绝推送，>50 MB 告警。当前余量不大。
-
-例外：确有交接必要的小体积二进制（如 `.bin` 权重，当前 43 个共 11.5 MB）可以保留，但须在 `MODEL_INDEX.json` 一类清单中登记 SHA-256。
-
-## 8.2 沿用仓库已有的 gzip 收据惯例
-
-**这是最大且零风险的一项：省 138.6 MB。**
-
-本仓库已经有这个惯例并且通过了验收，不是新发明：
-
-- 已跟踪 270 个 `.json.gz`。
-- `latest_20260906_keep2_rl_1000` 把逐局结果存为 `games.json.gz`，在 `SOURCE_PROVENANCE.json` 中记录**压缩前**的 SHA-256，由 `verify_package.py` 做无损校验（`gzip_lossless`）。
-
-但仍有 2,293 个裸 `.json`（149.6 MB）未采用该惯例。极端例子：
-
-```
-nt/latest_20260823_fc24b/.../receipts/fc22_prt_seed594122_seat0_step_trace_v1.json
-14.4 MB  →  0.2 MB   (77.6x)
-```
-
-规则：
-
-- 结果、收据、step trace 类 JSON **超过 256 KB 一律存 `.json.gz`**，并在对应 provenance/manifest 中记录原始 SHA-256。
-- 保持明文的例外：需要在网页上直接阅读或 diff 的配置与清单（`MANIFEST.json`、`PROTOCOL.json`、`MODEL_INDEX.json`、`ACCEPTANCE.json` 等）。
-- `.joblib`（3.9x，可省 22.2 MB）同理：要么压缩，要么不入库。
-
-## 8.3 纠正一个常见判断：按日快照不是主要成本
-
-`nt/latest_YYYYMMDD_*/` 逐日交接包看起来是重复上传，**实测不是体积问题**：
-
-- 全仓库精确重复（同内容多路径）仅 **666 文件 / 18.7 MB / 2.6%**。
-- git 按内容哈希去重，跨快照未改动的文件不占额外空间。
-
-所以**不必为节省体积而放弃快照式交接**——它对可追溯性的价值大于成本。真正的成本在 §8.1 与 §8.2。
-
-仍值得清理的是同包内的报告双份存放（例如 fc24b 包里 `docs/development_chain/FC*.md` 与 `workspace/experiments/fusion_champion_v1/reports/FC*.md` 内容相同）。保留一处规范副本加相对链接即可；这一项的收益是**可维护性**（改一处不会漏改另一处），不是体积。
-
-## 8.4 上传前检查清单
-
-- [ ] 暂存区无 >50 MB 文件；无新增 `.zip` / `.npz`（除非已说明必要性）
-- [ ] 新增 JSON >256 KB 的已 gzip，且 provenance 记录压缩前 SHA-256
-- [ ] 无编译产物、虚拟环境、缓存：`.o` / `.so` / `build/` / `.venv*` / `__pycache__` / Triton / JAX / Torch 缓存
-- [ ] 大体积 rollout 数组、完整 Replay、逐轮中间 checkpoint 保持在原机，不入库（各包 README 的"不包含"一节即此口径）
-- [ ] 新增文件已进入对应包的 `PACKAGE_MANIFEST.json` / `MODEL_INDEX.json`
-
-```bash
-# 暂存区中超过 1 MB 的文件
-git diff --cached --name-only | xargs -r ls -l 2>/dev/null \
-  | awk '$5>1048576 {printf "%8.1f MB  %s\n", $5/1048576, $9}'
-
-# 全库最大的 20 个文件
-git ls-tree -r -l HEAD | sort -k4 -rn | head -20 \
-  | awk '{printf "%8.1f MB  %s\n", $4/1048576, $5}'
-```
-
-## 8.5 建议补充的 `.gitignore`
-
-当前仅 7 条（`.venv/`、`.uv-cache/`、`__pycache__/`、`.pytest_cache/`、`*.py[cod]`、`benchmark-results/`、`artifacts/`）。建议增加：
-
-```gitignore
-*.o
-*.so
-build/
-.venv*/
-rollout_*/
-decisions.npz
-.triton/
-.jax_cache/
-```
-
-注意 `artifacts/` 已被忽略，但部分包（如 front40 的 `workspace/experiments/front40_fusion_v1/artifacts/*.npz`）中的同名目录已被跟踪，忽略规则对已跟踪文件无效。
-
-## 8.6 边界
-
-- 本节规则**只约束今后的新增提交**。
-- 追溯清除历史中已有的 398.9 MB 二进制需要 `git filter-repo` 一类的历史重写，会改变所有既有 commit 哈希、破坏各包已发布的提交引用，并影响该分支的其他使用者。**这是一次独立的、需要显式批准的决定，不属于本文档授权范围。**
-- `.git` 已达 952 MB：即使今后停止新增二进制，历史体积不会自行下降。
-- 本节数字为 2026-09-06 在 `bd30034` 上的一次实测，未做多次采样；`.py` 体积偏大主要来自 `provenance/opponents/*.py` 一类内嵌路线表的生成文件（单个最大 4.3 MB），属正常交接内容，未计入建议削减项。
-
----
-
-# §10 本地验证记录（2026-09-06 → 09-07）
-
-证据目录：[`evidence/local_validation_20260907/`](evidence/local_validation_20260907/MANIFEST.json)（含环境信息、库文件 SHA-256、全部收据；按 §8 规则，>256 KB 的 JSON 已 gzip 并记录压缩前哈希，`.npz`/`.so` 不入库）。
-
-## 10.1 环境：从"不可执行"到可执行
-
-首次检查误判为"本机无 WSL"，实际是 **WSL2 平台已装（2.6.3.0）但无发行版**（`wsl -l -v` 的 UTF-16 输出在 MSYS 下乱码导致误读）。随后安装 `Ubuntu-24.04`；安装器自动拉起的首次设置向导在无交互 stdin 下挂起，被中断后 `WSLService` 整体卡死（`wsl --shutdown`/`--terminate` 均无响应，普通用户无法结束受保护的 `vmmemWSL`）。管理员窗口 `taskkill /F /PID <wslservice.exe>` 后服务自动重启恢复；注意新版 WSL 的服务名是 `WSLService`，不是 `LxssManager`。用户 `lzhang` 以非交互方式（`useradd` + `chpasswd`）创建并设为默认用户。
-
-最终环境（`MANIFEST.json` 的 `environment`）：Ubuntu 24.04.4 LTS、g++ 13.3.0、Python 3.12.3、numpy 2.1.3、pybind11 2.13.6、16 核、31 GB。**与 README 要求的 "Ubuntu 24.04 / WSL2、g++13、Python3.12" 完全对齐。** WSL 内可见 RTX 5070 Ti 16 GB 与 `libcuda.so`——§5 的 E1/E3（需 PyTorch+CUDA）在本机可行，本次未装 Torch、未训练。
-
-两个包（合计 96 MB）复制到 WSL ext4（`~/kag/nt/`）编译，保持同级目录布局；不在 `/mnt/d` 上编译是为了速度与不污染 git 工作树。
-
-## 10.2 编译
-
-|目标|结果|
-|---|---|
-|底座包 `build.py --jobs 12`|15 个任务全部 exit 0，76 秒；`test_ledger` **PASS checks=11077**，修账回归 `fixed_remaining=0`（5 种作物）|
-|keep2 `build_policy.py`|`KEEP2_BUILD_PASS` 32.2 秒，`keep2.so` sha256 `c7068666…`|
-
-收据：`evidence/.../build/{base,keep2}_BUILD_RECEIPT.json`。
-
-## 10.3 包自带三层验证：全部通过
-
-|层|内容|结果|
-|---|---|---|
-|`smoke.py`（底座）|三个底座各跑：全 KEEP 与原生逐局一致、1/16 线程一致、重复批次一致、单日改动前缀一致、账本单测、非法计划拒绝|**PASS**，213 局，38 秒；三底座 `all_keep_identical / threads_1_16_identical / repeated_batch_identical` 全为 True|
-|`validate_portable.py`（keep2）|29 个预声明配置 × 2 seed × 7 对手 × 双座位 = 812 局，与冻结收据比对现金、对手现金、分差、胜负、步数、`plan/execute/reference` 计数|**`PORTABLE_PARITY_PASS 812`**，26 秒；重新生成的 `PORTABLE_ACCEPTANCE.json` 与仓库提交版本**逐字节相同**（两份 sha256 见 `evidence/.../portable/`）|
-|`evaluate.py`（keep2）|README 示例：KEEP 与 `aux_r0_step1000` 确定性各 2 seed = 28 局|跑通；KEEP 20/28、aux 28/28、aux 改动 403/840 个决策。**这 28 局不是强度证据**（seed 在原报告面板内，README 明言），仅证明推理链路可用|
-
-结论：**这台机器用全新工具链编译的引擎，精确复现了原机的 812 局冻结结果。** 这是包定义的"移机验收"，不是新的强度估计，也不是全部状态/动作的形式等价证明（收据 `boundary` 字段原话）。
-
-## 10.4 §9.6 第 0 步探针：已执行，结果为负
-
-详见 §9.6 内嵌的结果块。摘要：`argmax ΔV_j` 零参数策略在 1,400 局独立面板上 **51.86% vs KEEP 62.93%，配对 −11.07pp [−15.36, −6.50]**，七个对手全部下降；60.7% 的节点 ΔV>0 但照改就输——F3 账本对单项目改动的边际估值系统性偏乐观。补丁库在 mode 0 下与冻结库逐局精确一致（自检通过），冻结库 KEEP 62.93% 与归档独立面板一致。源码、脚本、逐局结果均在 `evidence/.../probe/`。
-
-## 10.5 仍未执行
-
-- §5 E1/E2/E3：需要 PyTorch+CUDA 训练环境（GPU 已可见，未安装 Torch），且各需 300 轮 × 多重复。
-- §9.6 第 1 步离线特征探针、第 2 步 E4。
-- 归档 `train*.py` 的原机路径/审计要求未改造。
-
-## 10.6 早先的纯 Python 验证（2026-09-06，仍有效）
-
-**a) `verify_package.py`**：PASS，1,426 文件、267 配置、373,800 局、43 模型哈希一致。只验证包内数据自洽。
-
-**b) 复核 agent.md 引用数字**：§2.3 逐对手表与 `summary.json` 完全一致；§2.4 "约 99%" 精确为 98.76%；**§2.1 发现问题**——原文只引用了 4 个条件中有利的 2 个，且"模型明显优于均匀随机"在审计自身数据里不成立，已就地改写。
-
-## 10.7 本节的意义
-
-09-06 的部分复核了 agent.md 自身的论证质量，修正了 §2.1。09-07 的部分把"能否在本机复现"从推测变成实测：引擎逐字节复现原机结果，然后用两分钟算力得到 §9 提案里最便宜、最先该问的问题的答案——F3 自己的边际估值不能直接当策略用。主结论（§1、§5 的三个实验）不受影响；§9 的预期收益下调，第 1 步离线探针成为进入任何训练前的必经项。
-
----
-
-# §11 E1 / E2 / E3 结果（2026-09-07）
-
-完整报告：[`evidence/e1_e2_e3_20260907/REPORT_ZH.md`](evidence/e1_e2_e3_20260907/REPORT_ZH.md)；全部数字来源 `E123_STATS.json`；逐局结果、训练曲线、开发集选点、脚本同目录。本节只放摘要。
-
-设置与归档实验唯一的差别是新随机种子（模型初始化、训练 seed 区块）和一个全新测试面板（72,100,000 起 100 seed × 7 对手 × 双座位 = 1,400 局，KEEP 61.21%）。策略、特征、奖励、候选、超参逐项相同，训练代码直接 import 归档的 `bias2_model.py` / `aux_model.py` / `model.py`。统计口径：同 seed/座位/对手配对，按 seed 整组 bootstrap 4,000 次。
-
-|实验|状态|结果|判据落点|
-|---|---|---|---|
-|E1 六次重复|完成|相对 KEEP：−1.43、−0.14、−0.71、+0.79、+2.00、−1.21pp；**0/6 区间高于零**；中位 −0.43|**No-go**（判据 ≤1 即失败）|
-|E2 留一对手|完成|12 个配对区间全部含零；留出对手无一致方向|无法判定：池内本无效应|
-|E3 配对 KEEP 基线|2/3|e0 −1.07 [−5.21, +3.14]；e1 +3.86 [−0.64, +8.29]、分差 −1,162；e2 运行中|暂定不支持；待 e2|
-
-三条值得记住的观察：
-
-1. **八次同配方 300 轮训练里，归档 `aux_r0` 的 +7.2pp 是唯一离群值**，其余七次落在 [−2.0, +2.0]。§2.2 说"两次重复不足以估计这个分布"——现在估计出来了，分布中心在零。
-2. **开发集就没有信号。** 六次里四次的开发集最佳选点是第 20–40 轮。归档 `aux_r0` 在 640 轮选点、开发集 71%——那条曲线没有再出现过。
-3. **动得多不等于赚。** 六个模型各改动 39–65% 的日决策，净收益零；§9 探针改 60.7% 亏 11pp。在"每天改一个项目"的窄接口上，已试过的每一种信号（终局奖励、辅助预测、F3 自身账本、配对基线的前两次）都没有产生稳定正收益。
-
-决策见 §7 当前落点。成本：约 115 万局、9.6 小时无人值守机器时间（`queue_e2_e3.sh`）。
-
----
-
-# §9 候选/全局特征重新设计（未实现，未验证）
-
-针对 §3.3 的信噪比问题，具体回答"该往特征里加什么"。本节是设计提案，**没有写代码、没有训练、没有任何实测数字**；表中的维度、公式和分块都是设计选择，需要 §9.5 的验证顺序确认后才能采信。
-
-## 9.1 前提更正
-
-§3.3 原判读"候选向量不含经济信息、第 27–31 维空置"是错的。训练用的冻结版 [f3_policy.cpp:76](nt/latest_20260906_keep2_rl_1000/archive/frozen_runtime/f3_policy.cpp#L76) 确实填了：
-
-```cpp
-f[27]=(first-o.day)/30.f;   // 距首次产出天数
-f[28]=gross/100000.;        // 按当前价估的毛收入
-f[29]=work/1000.;           // 工时
-f[30]=cost(k)/1000.;        // 成本
-f[31]=inputs/10000.;        // 投入
-```
-
-真正的缺口不是"有没有经济信息"，是这些数字比 F3 自己内部用的估值**粗得多**：用当前市场价而非价格冲击后曲线、不含被替换旧项目的残值、不含对手供给压力、不含相对收益。F3 的 `Economy::value()`（[agent.cpp:581-628](nt/latest_20260906_c3_f3_j7c3_search/src/stage/f3/agent.cpp#L581-L628)）在候选循环里已经对每个候选调用过一次，返回 `{cash, price_curve}`，但 [f3_policy.cpp:66](nt/latest_20260906_c3_f3_j7c3_search/src/f3_policy.cpp#L66) 只取了 `.second`（价格曲线，用于下一步的 `gross` 估算），`.first`（总现金估值）被丢弃。这是本节设计的核心利用点：不是新算一遍经济学，是把 F3 已经算出来、算完就扔的数字捡回来。
-
-## 9.2 设计原则
-
-1. **把 F3 的信念直接喂给网络，让 RL 学残差，而不是从终局奖励里重新学一遍经济学。** "F3 认为这个候选比 KEEP 差 500，但在这种局面下实际应该更好"是一个比"买牛值多少钱"低得多的学习目标。
-2. **按各产品锚定吞吐 T 或 base 归一**，让 9 种产品在同一尺度上可比。现有 `prices/300` 把小麦（$25）和甜瓜（$250）压在完全不同的数值区间，网络要额外学出每种产品的尺度。
-3. **对手信息只经市场供给量进入**（供给流、现金、土地、雇工数），不加对手行为签名类特征。这是对 §2.3 对手过拟合风险的主动约束——效果好但不可迁移的特征不值得加。
-
-## 9.3 全局向量（G 从 128 扩至保持 128，重新分配）
-
-| 块 | 维 | 内容 | 来源 |
-|---|---:|---|---|
-| A 时间/现金 | 6 | day/29；双方 money/100k；差/100k；log1p 双方 money/12 | `Input` |
-| B 土地/劳动力 | 6 | 双方 unlocked/4；`m.hire_target`/13；对手**昨日**最大雇工数/13；今日计划工时占比；仓库占用/100 | `Memory`、需新增的对手雇工记忆 |
-| C 库存 | 18 | shed 9 产品/100；shed 3 动物/3；seeds 5/25；liquid/100k | `priv` |
-| D 市场（×9 产品）| 54 | price/base；(inv−I0)/T；曲线斜率 dP/dI·T/base；剩余城镇需求/T；对手剩余供给/T；F3 当前 KEEP 计划剩余供给/T | `market`、`eco.dem`、`eco.rival`、`m.forecast` |
-| E 商店 | 8 | **实例计数**/3（而非现有的 0/1 存在性） | `shops` |
-| F 农场（×2）| 26 | counts[8]/25；Σyield/100；weed/unwatered/unfed 计数/25；**空闲可用地块数**/100 | `tiles` |
-| G F3 计划 | 10 | desired[8]/25；planned land/4；**V_keep**（`eco.value(m.forecast).first`）/100k | `m.projects`、`eco.value` |
-
-相比现有实现的主要改动：
-
-- **E 块从"有没有该商店"改为"该商店有几家"**。官方规则商店有放回抽取、每实例独立消耗需求（[official/competition/README.md:169](official/competition/README.md#L169)），三家面包店的需求是一家的三倍，现有 `std::find(...) != end` 判断丢失了这个倍数信息，是一个真实的信息损失而非表示形式选择。
-- **F 块删除逐产品 `yield[9]×2`**，改为空闲地块数。逐产品持仓在 D 块的供给流里已经体现，保留会重复编码并增加对手指纹信息（§2.3）。现有 `hands.size()` 在规划时点（hour 0）恒为 0（当日雇工尚未招募），是废特征，改为记忆昨日峰值。
-- **G 块新增 V_keep**：直接暴露 F3 对"什么都不改"这条路径的自我估值，让 critic 有一个非零的基线可学，而不是在 day 0（所有对局状态相同）只能输出常数。
-
-## 9.4 候选向量（C 从 32 扩至 44）
-
-| 层 | 维 | 内容 |
-|---|---:|---|
-| 现有结构特征 | 27 | 保持不动（种类 one-hot、成本差、数量、位置、标志位） |
-| 现有粗粒度经济特征 | 5 | `f[27..31]` 保持不动，作为 §9.5 中 T0 对照层 |
-| T1 规划器边际估值（新增）| 5 | ΔV_j = (`eco.value(候选计划).first` − V_keep)/10k；被替换旧项目剩余流的估值/10k；候选毛收入改用 `m.prices`（价格冲击后曲线，而非当前价）/100k；边际工资成本（`wages(workload+dw) − wages(workload)`，[agent.cpp:1046](nt/latest_20260906_c3_f3_j7c3_search/src/stage/f3/agent.cpp#L1046) 已有该函数）/1k；(liquid − cost_delta)/liquid |
-| T2 产品市场压力（新增）| 5 | 加入该候选后对应产品的净压力 (own_supply + candidate_supply + rival_supply − town_demand)/T；该产品 price/base；该产品曲线斜率；对手在该产品上的地块数/25 |
-| T3 时机（新增）| 2 | (29 − first)/29 可产出窗口；能完成的产出次数/该产品上限次数 |
-
-**ΔV_j 是本设计的重心**：它复用 F3 候选循环里已经计算、此前被丢弃的 `eco.value(...).first`，理论上零额外计算成本（一行 `auto[cash,px]=eco.value(...)`，取 `cash` 而非只取 `px`）。
-
-DEFER 候选（k<0）的 T2/T3 使用被撤销项目原本占用的产品。
-
-## 9.5 代码改动范围（未实现）
-
-1. `rl_common.hpp`：`C=44`（或按需要的对齐值），重写 `features()`，扩写 `candidate()`。网络总参数量 `NW` 随之变化，现有 `.bin`/`.pt` 与新版本不兼容，不能热启动。
-2. `f3_policy.cpp` 候选循环（[f3_policy.cpp:52-78](nt/latest_20260906_c3_f3_j7c3_search/src/f3_policy.cpp#L52-L78)）：保留 `eco.value(...)` 的 `.first`；计算 T1/T2/T3；需要 `eco.dem`/`eco.rival` 按天求和后传入候选层。
-3. `agent.cpp`：`plan()` 内部的局部 `workload[]`（[agent.cpp:913](nt/latest_20260906_c3_f3_j7c3_search/src/stage/f3/agent.cpp#L913)）需存入 `Memory` 供边际工资项使用；首版可跳过此项，先不做 B.5/T1.4。
-4. `Session`：新增一个 int 字段记忆对手昨日雇工峰值。
-5. `model.py` / `aux_model.py`：`C` 常量同步；`aux_model.outcomes()` 里硬编码的全局向量索引（`x[:,2]`、`x[:,4]`、`x[:,72:81]`、`x[:,82]`、`x[:,83]`）需按新的分块布局重新映射。
-
-## 9.6 验证顺序（未执行，比训练更早给出信号）
-
-**第 0 步 · 零参数策略探针**（无需训练，一次 rollout 即可）：`choice = argmax_j ΔV_j`（ΔV_j > 0 时选，否则 KEEP）。跑 1400 局评测集。
-
-- 若这条纯规则策略已经 > KEEP：说明 F3 自身的边际估值就足以改进 F3，RL 的训练起点被直接抬高，且这条策略本身可作为下一轮训练的更强基线/热启动方向。
-- 若 ≤ KEEP：说明 F3 的 `plan()` 对自身候选价值的排序已接近局部最优，ΔV_j 多数为负或噪声。RL 要学的是残差，预期收益应下调，但不构成放弃 T1 层的理由——残差学习仍可能有价值。
-
-这一步的结果决定 §9.5 之后所有训练实验该如何解读，应排在任何训练之前。
-
-**第 0 步已执行（2026-09-07，本机 WSL2，证据见 [`evidence/local_validation_20260907/probe/`](evidence/local_validation_20260907/probe/REPORT.json)）。结果为负，落入上面的"≤ KEEP"分支，且比该分支预设的口径更强。**
-
-实现：复制冻结 `f3_policy.cpp` 为 `f3_deltav_policy.cpp`，唯一改动是保留候选循环里本已调用的 `eco.value(copy.forecast).first`（原代码只取 `.second`），并新增 `mode 4`：`argmax_j ΔV_j`，仅当 max ΔV > 0 才改动，否则 KEEP。不用网络。与冻结源码的 diff 只有四处 `PROBE` 标记行。独立面板 71100000 起 100 seed × 7 对手 × 双座位 = 1,400 局/配置：
-
-|配置|胜率|平均分差|说明|
-|---|---:|---:|---|
-|A 冻结 `f3.so`，mode 0|881/1400 = **62.93%**|+9,165|与归档独立面板 KEEP 62.93% 一致|
-|B 补丁库，mode 0|881/1400 = 62.93%|+9,165|与 A **逐局精确相同**（现金、对手现金），补丁不改变原路径|
-|C 补丁库，mode 4（argmax ΔV）|726/1400 = **51.86%**|+3,654|配对 C−A：**−11.07pp [−15.36, −6.50]**；分差 −5,510 [−7,042, −4,004]；救回 190 / 输掉 345|
-
-逐对手（KEEP → 探针）：G001 80.0→61.0、G003 42.5→35.0、Boatlee 100→99.0、Kaito 72.5→54.5、Lynn 53.0→41.0、Six-Day 48.0→35.0、Three-Day 44.5→37.5。**七个对手全部下降。**
-
-ΔV 本身的统计（C 配置 42,000 个日决策）：36,662 个有 ≥2 个合法候选的节点中，**22,253 个（60.7%）存在 ΔV > 0 的候选**，探针全部照改（每局约 15.9 次，与 `aux_r0` 的 13.5 次量级相当）。正 ΔV 的最大值均值 +911、中位 +739，相对 V_keep 均值 47,096 约 2%。改动种类：牛 6,014、羊 5,847、胡萝卜 3,398、鹅 2,734、甜瓜 2,193、小麦 1,260、草莓 803、番茄 4——动物占 66%。
-
-**判读**：
-
-- F3 的 `Economy::value()` 认为六成节点有可改进的单项目替换，但照做就输 11pp。这说明 F3 账本对单项目改动的边际估值**系统性偏乐观**，尤其对牛/羊/鹅——不是"ΔV 多为负或噪声"，而是"ΔV 为正但不可信"。可能原因：候选循环清空 `routes/backlog/couriers` 后重新调度的执行损耗、动物在"最近空闲地块"而非 `plan()` 选址处的物流成本、30 天无折现投影对大额资产的乐观，这些 `value()` 都没有计入或计入不足。本探针不区分这几个原因。
-- 对 §9 的影响：T1 层的 ΔV_j **作为决策规则被否定，作为特征未被否定**——有偏但有信息的信号正是残差学习要修正的对象。但"接入 ΔV 就能抬高起点"的预期不再成立；§9.6 第 1 步（离线探针，看 ΔV 在候选间的**排序**是否有信息）的重要性上升，而且必须先做。
-- 对 §2 的影响：`aux_r0` 的改动偏向番茄/DEFER（§2 引用的 100 轮行为统计），ΔV 探针偏向牛/羊。`aux_r0` 学到的东西**不是**"更相信 F3 账本"。这与"真实残差学习"和"对手利用"（§2.3）两种解释都相容，不能区分，E2 仍然必要。
-- 与 KEEP 偏置消融的一致性：偏置降到 0 时四组平均掉到 30.32%；ΔV 探针改动六成节点掉到 51.86%。两者都说明"改得多"本身有代价，改动方向必须非常准。
-
-本探针**未做**：ΔV 阈值/仅作物类等变体的扫描——那是在测试面板上调参，违反本仓库口径；若要做，须在另一批开发 seed 上扫、再回独立面板确认。也未做候选间排序质量的反事实评估（需要 `intervention.cpp` 类的分支机制）。
-
-**第 1 步 · 离线特征探针**：复用 §5 候选价值审计的分支反事实数据（重新生成特征向量，因为 `STATES.json` 只存了元数据，`baselines/` 未随轻量包保留），按 T0（现有）/T1/T2/T3 分层，比较各层在留出 seed 上预测"候选是否优于 KEEP"的 AUC。T0 层的基线已知：G1 监督排序给出 53.06%/51.99%（[G1_ACCEPTANCE_ZH.md](nt/latest_20260906_keep2_rl_1000/archive/experiments/economic_rl_future_aux_20260906/G1_ACCEPTANCE_ZH.md)）。
-
-**第 2 步 · E4 训练验证**：仅当第 1 步显示某层 AUC 明显高于 T0 基线时，才将该层特征接入训练，300 轮 × 3 训练种子，与 §5 E1 的现有特征结果对照。
-
-## 9.7 已知限制
-
-- 改变 C 意味着无法从任何现有 checkpoint（`aux_r0` 等）热启动，所有训练需从头开始。
-- 本设计仍在"每天最多改一个尚未投入项目"的窄接口下工作（见 [WIDE_CANDIDATE_MIGRATION_ZH.md](nt/latest_20260906_c3_f3_j7c3_search/WIDE_CANDIDATE_MIGRATION_ZH.md)）。特征质量与候选表达能力是两个独立瓶颈，本节只处理前者，不解决联合调整/批量项目修改的问题。
-- 刻意未加入对手种植节奏、扩地时机等行为历史特征。这类特征大概率能在当前 7 对手池上进一步提升胜率，但正是 §2.3 描述的"对手利用、天梯不可迁移"的那类收益，与本文档的验证目标（区分经济判断与对手过拟合）相冲突，不应加入。
-
----
+This publishes research progress and the exact tested runtime. It does not submit to Kaggle, retrain the economic model, or establish a strongest local agent.
 
 <a id="r2p16-route-agents"></a>
+## Version identities
 
-# §12 P16 路线、工作链与采购恢复：开发及交接（2026-09-11）
-
-## 12.1 当前结论和版本身份
-
-本轮交付两份**可以独立加载的本地 C++ agent**：完整工作链优化版、采购异常恢复版。它们都从冻结 P16 发展而来，没有重新训练模型。当前配置使用规则、经济估值和有限模拟搜索，未启用学习型候选估值接口。
-
-**工作完整性得到改善，但不能把设计目的写成已证明的胜率提升。** 最新两个强对手的 25 种子测试中，完整工作链版 74/100 胜，采购恢复版 69/100 胜。目前更适合把工作链版用作这两个候选之间的开发基线，恢复版保留为实验分支；没有证据证明任一版本是全体本地 agent 中最强。
-
-| 名称 | 含义及入口 | 定位 |
+| Name in results | Meaning | Entry / reference |
 |---|---|---|
-| 冻结 P16 | [原始说明](nt/latest_20260910_r2p16/README_ZH.md)；基线提交 `979fec14bdddd281f4d934494aa4a06673fba9b9` | 所有增量改动的起点 |
-| 完整工作链优化版 | [main.py](nt/latest_20260910_r2p16_route_workflow/main.py)、[说明](nt/latest_20260910_r2p16_route_workflow/README_ZH.md)；`build/revision2/route3.so` | 最新对比表里的“旧版”，并非原始 P16 |
-| 采购异常恢复版 | [main.py](nt/latest_20260910_r2p16_route_recovery/main.py)、[说明](nt/latest_20260910_r2p16_route_recovery/README_ZH.md)；`build/revision3/route3.so` | 最新对比表里的“新版” |
-| 已提交的 P16 基线 | Kaggle 提交 `56140347`，2026-09-10 17:01:51 JST | 下载后作为对手，不是上述工作链版 |
-| 已提交的执行协调版 | Kaggle 提交 `56140351`，2026-09-10 17:02:05 JST | 下载后作为对手，不是上述采购恢复版 |
+| Frozen P16 | Baseline before the local route experiments | [P16](nt/latest_20260910_r2p16/README_ZH.md), commit `979fec14bdddd281f4d934494aa4a06673fba9b9` |
+| Route economics | Delivery, warehouse and cash-aware scheduling; later found to omit protected tasks | [Entry](nt/latest_20260910_r2p16_route_economics/main.py), `build/revision5/route3.so` |
+| Complete workflow (`workflow`) | Preserves feasible schedules and complete work chains | [Entry](nt/latest_20260910_r2p16_route_workflow/main.py), `build/revision2/route3.so` |
+| Old procurement recovery (`recovery`) | Reconciles purchases and reconstructs remaining work | [Entry](nt/latest_20260910_r2p16_route_recovery/main.py), `build/revision3/route3.so` |
+| Latest local repair (`fixed`) | Corrects false cash alarms, premature recovery completion and capacity checks; coordinates same-step work and bounds optional search | [Entry](nt/latest_20260911_r2p16_route_repair/main.py), `build/revision4/route3.so` |
+| Original JointAFS R1 | Joint animal/feed/successor planning; submission `56146577` | [Original release](nt/latest_20260911_p16_jointafs_r1/public_submission/README_ZH.md) |
+| Original JointAFS R2 | User-supplied `submission (6).tar.gz`; entry identifies `R2 LocalExchange` | [Identity receipt](evidence/r2p16_route_repair_20260911/IDENTITY.json) |
+| JointAFS R1/R2 workflow repairs | Separate later builds, workflow repair enabled by default | [Separate package](nt/latest_20260911_afs_workflow_repair_r1_r2/README_ZH.md) |
 
-本次 GitHub 交付的是两个**本地修改版**。两份 Kaggle 下载包的身份和逐文件哈希保存在 [下载来源记录](evidence/r2p16_route_agents_20260911/DOWNLOADS.json)，原始下载包保留在本机。没有进行新的 Kaggle 提交。
+"Old" and "new" refer to a specific experiment. Complete workflow is not original P16. Local procurement repair is not the separately published JointAFS workflow repair.
 
-## 12.2 两个 agent 怎样做决定
+The original R1 archive in the repository is byte-identical to the downloaded file tested locally. The supplied R2 archive SHA-256 is `363101251f64cd1967c0203812d30782c57daf39c117e7852811b26b8f6db804`; its library SHA-256 is `1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c`. Its association with submission `56149565` uses acquisition context and the entry label, not an independently authenticated Kaggle archive hash.
 
-两版共同继承 P16 的经营系统，运行配置逐字节相同。整体流程为：
+The separate JointAFS R2 workflow-repair default library has SHA-256 `179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2`. It was **not** an opponent in this 100-seed comparison. Different library hashes alone do not establish every source difference; compiler and linking choices also affect bytes.
 
-1. **读真实观察。** 获得现金、仓库、种子、工人位置与背包、作物、动物、公开商店和市场状态；观察对手公开农场和已发生的交易。不会读取对手私有库存、真实未来动作或比赛 seed。
-2. **生成当天经营候选。** 比较偏重种植、偏重养殖、保留流动资金、调整竞争权重等候选。估算地块产出、采购、维护、人工、交货与销售价值。P16 原有开局供给先验仅是对竞争者未来产能的估计，次日由真实公开观察接替。
-3. **先模拟再选方向。** 当前配置具体推演一天，再估算剩余经营价值；评价中包含自身收益与对手预计收益。仅采用当日候选，次日重新决策。对手与未来市场是预测，不是已知答案。
-4. **把经营意图编成工作。** 从“种什么、养什么、何时收获”生成采购订单和工人任务，再安排取料、移动、建设、播种、浇水、喂养、收获、卸货等动作。
-5. **每个 step 执行和核对。** 返回当前一步的市场订单及所有工人动作。轻量检查每步进行，较重的路线搜索在开工或发现偏差、容量/现金压力时触发，并有候选数和间隔限制。采购恢复版还在成交异常后修复当天剩余工作。
+## How the local agents decide
 
-因此，“每日经营规划”和“每步执行/检查”同时存在；两版都没有把整个经营规划器改成每步全量重算。新增功能主要改善执行层，原有作物、动物估值与经营配置继续沿用。但执行改变真实库存和现金后，下一天经营与对手响应也可能随之改变。
+The route variants share P16's frozen economic configuration. They use rules, dynamic programming and bounded simulation search. This work does not train a new neural model; the learned candidate-value interface is not enabled in the frozen configuration.
 
-## 12.3 从绕路问题到两个版本的开发过程
+1. Read actual cash, inventory, seeds, workers/bags, crops, animals, shops, market state, visible opponent assets and completed trades. Do not read seeds, private opponent stock or future replay actions.
+2. Generate daily economic alternatives: crop/animal allocations, working-capital reserves and competition weights. Estimate output, purchases, maintenance, labor, delivery and sales.
+3. Simulate the configured short horizon and estimate remaining value. Opponent activity and future markets are forecasts. Adopt today's choice and reconsider tomorrow.
+4. Compile intentions into procurement and worker actions: supplies, movement, construction, sowing, watering, feeding, harvest and delivery.
+5. Issue one step and reconcile the next real observation. Lightweight checks run each step. Heavier scheduling runs at work start or relevant deviations, with candidate and trigger limits.
 
-| 阶段 | 发现的问题 | 修改及验证方向 |
+Daily economic planning and per-step execution coexist. These changes do not recompute the entire economic planner from scratch every step. Their effects on cash, land, stocks and sales can nevertheless change subsequent investment and opponent responses.
+
+## Development sequence
+
+| Stage | Established problem | General change |
 |---|---|---|
-| 用户回放与单日实验 | 沿田边的短路，未必能串联田内工作；少走路可能释放工时 | 从第六天、第十八天的固定盘面开始，比较完整动作链和雇工；随后扩展到完整对局，区分固定任务省工与整局经营收益 |
-| 接入 P16 的路线经济评估 | 只看步数和工资，会错过销售、挤满仓库，或在采购时没有现金 | 将交货时点、仓库容量、真实成交和采购前现金加入候选评估；少雇一人前试排全天工作 |
-| 扩大种子后发现漏项 | 减员预演能完成任务，实际开工却换了排序；单独补种植，漏掉后续浇水或取料喂养 | 保存找到的完整排班，用真实盘面复验；按完整作业链补漏，形成工作链版 |
-| 30 种子扩展与直接对战 | 工作链版修复已承诺漏项，但资金不足造成的采购缺口仍会使后续计划失效 | 明确“规划预计到货”与“实际成交”之间的边界，增加逐步对账及恢复，形成采购恢复版 |
-| 加入真实提交文件 | 原公开池不少策略相近，常规种子未触发采购恢复 | 按提交时间下载团队最新两份程序，加入对手池；冻结两版，25 种子换座测试，记录收益和失败，不根据结果调参 |
+| Replay/day experiments | A short boundary route need not connect useful field work | Compare complete chains on day-6/day-18 observations, then full matches |
+| Route economics | Fewer moves or lower wages can delay receipts, fill warehouses or leave purchases unfunded | Include delivery time, capacity, fills and actual cash; validate a schedule before cancelling hires |
+| Complete workflows | Later reordering could discard a successful trial; individual task insertion broke dependencies | Preserve/revalidate full schedules; repair sow/water and pickup/feed chains |
+| Procurement recovery | Planned supplies were treated as available despite missing fills | Reconcile actual resources/workers, raise funds and reconstruct work |
+| Latest repair | Cash-only false alarms, paused workers, early recovery exit and incomplete capacity checks | Check actual fills, preserve useful actions, retry after resource growth and verify quantitative placement |
+| Expanded evaluation | Cleaner execution counters did not imply better investment choices | Freeze programs and report wins, relative cash, wages and explicit deferrals separately |
 
-这是从回放诊断、通用反例、单元检查到固定版本完整对战的开发流程。比赛种子和特定坐标只用于诊断/回归数据，没有加入 agent 决策分支。早期实验曾使用官方 Python 裁判；本节 P16 扩展测试和最新 200 局使用此前已编译、已校准的 C++ 对局模拟器，不能把两类历史记录统称为全程同一个宿主。
+The route algorithm is bounded local scheduling search with resource and precedence constraints, feasible-schedule retention and step simulation. It is not a global shortest-path or minimum-hire solver. Complete dependent chains must remain executable, while feasible maintenance may still be shared among workers.
 
-## 12.4 工作链版相对 P16 的改进机制
+Old recovery searches for a feasible remaining schedule with minimal added hires. If necessary it sells current stock, confirms proceeds and buys later. Funding/purchase steps can pause all workers. Investigation established a cash-only false alarm and a partial fallback that could clear recovery too early. A feasible corrective next step is not proof of a whole-match reversal.
 
-**第一层：把路线放回经营中评价。** 保留当前路线，同时尝试任务重排、跨工人分配、途中入库、选择性卸货和联合交货。既要检查当天工作、收获量，也要检查溢出、采购成交与现金；少量候选再进入次日经营比较。工资已在模拟现金中扣除，不能再重复扣；仓库商品的估值也不能直接用于付款。
+Latest repair keeps pending maintenance recovery, retries after actual increases in cash/materials/workers, and coordinates worker actions, sales, purchases and hires in official order. It protects existing assets first, then tries up to four ranked investment subsets. It uses current-day outcomes plus a common next-day estimate. Optional search receives about 0.65 seconds of process CPU time, not an absolute whole-decision wall-clock guarantee.
 
-**第二层：减员必须附带一份能执行的排班。** 从真正执行器的预演中取出路线，再固定执行一遍，核对动作顺序、物资、种子、作物状态和剩余时间。只证明“某次动态预演成功”不足以减员，必须保留完整可行路线。实际开工重排漏项时，从真实位置和库存复验保存路线，通过后恢复。
+<a id="route-repair-20260911"></a>
+## Latest frozen evaluation
 
-**第三层：补整条链。** 比如“取种子所需的准备 → 到地块 → 播种 → 浇水”，或“取饲料 → 到动物处 → 喂养”。将同地块相关动作一起安排，尝试不同工人和插入位置，并补足领料；工时不足时不会只插入播种，把浇水留到日终之后。现有维护与收获允许不同工人合理分担，不强制所有农活都由一个人做。
+All three local binaries were frozen before evaluation. Matches used live original opponents and the existing compiled P16 C++ simulator, not replay-tape opponents. Each seed was played from both seats.
 
-算法属于**带资源和先后依赖约束的有限局部调度搜索，加上可行排班保存与逐步模拟校验**。预期收益来自减少无效路程、及时交货、避免物资损失及漏做；不是保证最短路，也不是数学上保证最少雇工的全局求解器。
+| Opponent panel | Complete workflow | Old recovery | Latest repair |
+|---|---:|---:|---:|
+| 13 historical opponents, 25 fresh seeds each | 421/650 (64.77%) | 417/650 (64.15%) | 440/650 (67.69%) |
+| Original JointAFS R1, 100 fresh seeds | 101/200 (50.50%) | 102/200 (51.00%) | 99/200 (49.50%) |
+| Original JointAFS R2, the same 100 seeds | 122/200 (61.00%) | 125/200 (62.50%) | 97/200 (48.50%) |
 
-## 12.5 采购恢复版额外增加什么
+There were no draws. Wins are divided by all games; draws would remain in the denominator. Do not merge panels with different opponent composition into a general leaderboard estimate.
 
-1. 将一步预计结果与下一步真实观察核对。种子、饲料、动物、土地、雇工未足额成交，或实际现金不足以继续支付时，触发恢复。
-2. 停止继续执行失效的采购队列，读取真实位置、背包、仓库、已完成工作与剩余时间，计算缺货量。背包物资归实际携带者，不能当作全体工人都可直接取用的仓库库存。
-3. 从不追加工人开始试排；按当天实际已雇人数计算下一人的工资，只接受能够完成剩余工作、物资和付款校验通过的方案。
-4. 若需筹资，先卖可出售现货，下一步确认到账后再采购。未来收获、未售商品都不能提前算作可用现金。
-5. 仍不可行时，按已有估值逐步延期未开工投资，优先维护已有资产。延期重种保护原有多年生作物；延期工作仍保留在未完成记录中。
-6. 成交后重验路线，再交回原有逐步执行器。不会在经营预测内部递归启动另一轮采购恢复搜索。
+Against original R2, repair loses 12.5 percentage points versus workflow (95% seed-cluster interval [-22.0, -3.0]) and 14.0 versus recovery ([-23.5, -4.5]). Historical and R1 intervals include zero. Intervals use 10,000 paired bootstrap resamples of whole seeds, retaining seats and opponents together.
 
-**主要代价：** 筹资和采购步骤目前会暂停工人路线；恢复可能多雇人、提前卖货或延期投资。它更重视重新得到完整可执行方案，对“少量筹资并同一步继续工作”“不介入或部分介入是否经济上更好”的比较仍不足。后者是后续改进方向，不是已经实现或经消融证明的增胜方案。
+Across 3,150 matches, 4,536,000 bilateral observations and task metrics passed existing transition checks. A separate script recounted terminal rewards and paired outcomes. The 100 fresh seeds do not overlap 155 distinct checked prior seeds or seven development regression seeds.
 
-## 12.6 实际证据：哪些改善已证实，哪些尚未证实
+### Why execution fixes are not a strength upgrade
 
-各行属于不同面板，禁止直接相加成一个总胜率。详细旧记录随各 agent 的验证文件保留；本次汇总和逐局收据见 [交付证据](evidence/r2p16_route_agents_20260911/README_ZH.md)。
+The repair records 1,891 explicit deferrals against original R2, yet wins only 48.5%. Relative to workflow, mean wages rise by 44.38, own cash by 13.94 and opponent cash by 1,313.71; final margin falls by 1,299.77.
 
-| 同批比较 | 样本与结果 | 能说明什么 |
+Six selected large win-to-loss comparisons, covering four distinct seeds, first diverge on day 8, step 169 after identical observations. None reaches the optional-search limit at that first difference. Five defer 44 tasks; one changes same-step buying/hiring without a deferral. These cases are not a prevalence estimate, but show that time truncation cannot explain every regression.
+
+Registration differs among versions. Zero unexplained omissions does not mean all investment intentions were executed. An explicitly deferred investment can be a bad decision even if accounting is correct.
+
+Ten serial timing reruns remain separate from formal win rates. One earlier repair outcome changes with runtime load. The original R2 archive also reaches 2.660 seconds in a serial sample. The host records time without Kaggle timeout forfeits; cash win rates are not timing certification.
+
+## Earlier evidence: separate panels
+
+| Experiment | Result | Interpretation |
 |---|---|---|
-| P16 对路线经济阶段候选 | 20 种子、11 对手、双座位；各 440 局，P16 324 胜，候选 346 胜；候选 6 场共漏 12 项已承诺工作 | 存在增胜信号，也暴露执行缺陷；种子重采样胜率差区间包含 0，不能据此升级 |
-| 路线经济候选对完整工作链版 | 30 种子、11 对手、双座位；各 660 局，均 564 胜；漏项 12 → 0；另 60 局直接交手，工作链版 16 胜、16 负、28 平 | 工作完整性改善；没有胜率提升证据。此行“旧版”是经济阶段候选，不是 P16 |
-| 工作链版对采购恢复版：已知故障回归 | 采购不足种子的两座位各漏 4 项工作 → 0；恢复需额外支付雇工费；另 14 组普通回归动作一致 | 特定失败机制可修复；不是一般胜率估计 |
-| 工作链版对采购恢复版：原 11 对手 | 5 种子、双座位，各 110 局，均 88 胜（80%）；110 组动作全相同，无恢复触发 | 正常路径兼容性，不能用来证明恢复功能增胜 |
-| 扩展 13 对手，同一 5 种子 | 各 130 局，工作链版 96 胜（73.8%），恢复版 100 胜（76.9%） | 小面板正向结果；其中 220 局复用上一行，再补 40 局 |
-| 仅两份最新提交，扩展至 25 种子 | 各 100 局，工作链版 74 胜（74%），恢复版 69 胜（69%） | 扩大种子后方向反转，不支持恢复版直接替代工作链版 |
+| P16 versus route economics: 20 seeds, 11 opponents, both seats | 324 versus 346 wins / 440 each; 12 candidate omissions in six games | Execution defect; win-rate difference interval includes zero |
+| Route economics versus workflow: 30 seeds, 11 opponents, both seats | Both 564/660; omissions 12 to 0; direct workflow record 16 wins, 16 losses, 28 draws | Completeness improved, no demonstrated strength gain |
+| Workflow versus recovery: original 11 opponents | Both 88/110; all paired action sequences identical | This panel does not exercise recovery enough |
+| Two then-latest submissions, 25 seeds, both seats | Workflow 74/100; recovery 69/100 | Larger seed sample reversed the earlier small-panel direction |
 
-最新两份提交的逐对手结果（每格 25 种子、换位共 50 局，均无平局）：
+For that last panel, workflow/recovery win 39/50 and 34/50 against `56140347`, and 35/50 each against `56140351`. These are earlier opponents, not JointAFS R1/R2. Keep acquisition dates and cohort definitions attached to results.
 
-| 对手 | 工作链版胜率 | 采购恢复版胜率 |
-|---|---:|---:|
-| 已提交执行协调版 `56140351` | 35/50，70% | 35/50，70% |
-| 已提交 P16 基线 `56140347` | 39/50，78% | 34/50，68% |
+## Next algorithmic work
 
-这是**本地修改版视角**。反过来，下载的执行协调版对两本地版本合计 30/100 胜，下载 P16 合计 27/100 胜；没有让这两份下载程序分别完整迎战原 11 对手池，不能把 30%/27%叫作它们对全池的胜率。
+1. Compare staged fundraising that retains investment, same-step replenishment and investment deferral over a common multi-day horizon.
+2. Keep retry conditions for investments that later become feasible.
+3. Measure relative cash and market/opponent feedback, not just own cash and wages. P16 already has public-flow forecasts; it is not opponent-blind.
+4. Reduce redundant optional search and run ablations separating recovery, capacity and budget effects.
+5. Freeze candidates before new seeds and independent opponent families. Known examples are regression data, never seed/coordinate policy branches.
 
-最新 100 组配对中，56 组触发恢复并改变动作，44 组动作完全一致；首次变化前双方观察一致。新版挽回 8 局，丢掉原本能赢的 13 局。平均工资少 25.17，自身最终现金少 319.07，对手现金多 955.03，平均领先差额少 1,274.10。记录到 30 项主动延期工作，均保留为未完成；两版承诺登记集合可能不同，不能机械地将计数差当作新增漏做。
+JointAFS's animal/feed/successor search is a separate direction. Its workflow-repaired R2 default has not entered this local comparison; its repository-authored 1,100-game results cannot be substituted for our panel.
 
-例如 seed `407296613`、对下载 P16、座位 0：第 11 天 step 241，工作链版卖 1 份羊毛并同一步雇工；恢复版先卖 5 份羊毛和 1 份肥料，下一步才雇工。终局自身收入 113,591 → 114,805，但对手 110,303 → 115,215，领先 3,288 变成落后 410。该例展示执行干预会影响后续双方经营，不能把终局变化全归因于一笔交易。
+## Reproduction and publication
 
-新 200 局、复用 220 局共 **420 局不重复比赛**；200 局与 260 局两张面板重叠 40 局。新增比赛逐帧核验 288,000 份双方观察；复用比赛已有 316,800 份核验。全部使用真实对手程序反馈，不用回放动作充当实时对手。批测无运行错误、无审计到的无效工作动作。
+- Run [verify.py](evidence/r2p16_route_repair_20260911/verify.py) with Python 3. It checks manifests, build/source identities, lossless compression and the 3,150 recorded outcomes.
+- Load `.so` files on Linux x86-64 / WSL. Preserve tested binaries; rebuild to a new path with GCC 13 and recorded flags.
+- Original tournament scripts are source snapshots requiring the original workspace host, opponents and replays. They are not standalone portable runners.
+- Keep full replays, intermediate builds and caches on the source machine. Compress new JSON over 256 KiB and record stored and uncompressed hashes.
+- Include only the small final runtime binaries needed for this handoff, with manifests. Do not duplicate archives or development builds.
+- Preserve negative findings, seed pairing, opponent homogeneity, timing limits and the distinction between repository-reported and locally reproduced evidence.
+- Do not rewrite Git history in a progress push. A historical audit at `bd30034` measured 705.4 MB tracked and a 952 MB Git directory; these are not current size measurements.
 
-## 12.7 “本地最强”和适用范围
+## Earlier KEEP=2 / F3 reinforcement-learning work
 
-- 尚未让全部历史本地候选在统一新种子、同一对手池内比较，因此没有全局冠军结论。
-- 已测对手也并非逐个高胜率：原 5 种子面板对 Moon 和 Aurax Reactive，两版都仅 6/10 胜。对手池存在共享路线与相近策略，13 个名字不代表 13 种独立打法。
-- 同 seed 的换位比赛和不同对手成绩相关，应按种子理解样本；跨面板的 80%、76.9%、69%不能直接比较优劣。
-- 可行性保证仅针对当前观察下验证过的日内计划；未知交易、未来商店与随机事件仍有不确定性。局部搜索找不到解不代表不存在解。
-- 完成对局不等于通过 Kaggle 沙箱时限验收。历史单独计时曾出现工作链版超过 1 秒的决策；本地批测不模拟线上时间额度耗尽后的判负。
+This is a different line from P16 routing. The [full historical record at db109ce](https://github.com/LZhangGJ/Kaggriculture/blob/db109ce316151929622f2612223cc942dbb844de/agent.md) remains in Git. This English index preserves its conclusions without presenting old running statuses as current measurements.
 
-## 12.8 代码组成、运行和验证
-
-| 组件 | 文件 | 职责 |
-|---|---|---|
-| Python 入口与编码 | 两包的 `main.py`、`policy/agent.py` | 每局独立上下文，将观察交给 C++ 并返回比赛动作 |
-| 经营候选与选择 | `policy/proposals.hpp`、`policy/search.hpp` | 日初比较经营候选，维护公开观察历史 |
-| 经营估值与调度 | `policy/triad.hpp`、`policy/planner.hpp`、`policy/executor/` | 估计产能与维护，生成工作并编排执行 |
-| 路线与工作完整性 | `policy/route_economics.hpp` | 容量/资金检查、路线候选、谨慎减员、保存可行解、完整链补漏 |
-| 异常恢复 | 仅恢复版的 `policy/route_recovery.hpp` | 对账后补购、筹资、增员、延期与剩余路线安装 |
-| 内嵌模拟 | `policy/public_flow_scenario.hpp`、`policy/executor/vendor/` | 在当前已知状态及公开预测下模拟方案 |
-| 审计与测试 | `policy/bridge.cpp`、`tests/` | 暴露承诺/延期计数，检查资源、顺序、日终与恢复边界 |
-
-两包带有完整源文件、配置、构建脚本、测试和对应已测二进制；运行只需 Linux x86-64 / WSL 与 Python 标准库，无 GPU、Kaggle 账号或对手文件依赖。原生 Windows Python 不能加载 Linux `.so`。
-
-从仓库根目录核验交付文件和结果统计：
-
-```bash
-python3 -B evidence/r2p16_route_agents_20260911/verify.py
-```
-
-在现有比赛宿主中，将目标 agent 的 `main.py` 作为入口，调用 `agent(observation, configuration)`；需要明确生命周期时使用同一模块的 `create_agent()`，每局/每座位单独实例，结束后 `close()`。默认分别加载上述 revision2、revision3 的已测二进制。
-
-需要在自己的 Linux 环境重建时，从仓库根目录执行，输出路径必须尚不存在：
-
-```bash
-python3 -B nt/latest_20260910_r2p16_route_workflow/build.py --out /tmp/workflow_check/route3.so --unit
-python3 -B nt/latest_20260910_r2p16_route_recovery/build.py --out /tmp/recovery_check/route3.so --unit
-```
-
-编译使用 GCC 13、C++20、O3 和固定 P16 开关。历史正式构建分别通过 20+58 项、20+58+19 项检查。重建是源码复现检查，不自动增加强度样本；使用新的二进制参赛前还要核对行为与耗时。
-
-**本次交付验收也已完成：** 从 Git 暂存内容导出独立副本，重新编译两份单元检查程序，78 项和 97 项检查分别通过。交付的策略二进制保持原样；各自重放一条含 719 次决策的已保存轨迹，动作全部一致，恢复版样本包含采购恢复事件。[工作链收据](evidence/r2p16_route_agents_20260911/HANDOFF_workflow.json)、[恢复版收据](evidence/r2p16_route_agents_20260911/HANDOFF_recovery.json)。
-
-## 12.9 本次 GitHub 交付范围
-
-按用户要求携带两份实际受测 agent，本次按 §8.1 的小体积交接例外仅收录两份必要 `.so`（合计约 2.29 MB），在各包 `PACKAGE_MANIFEST.json` 登记 SHA-256。保留原构建收据并验证全部源码与收据一致，不修改策略来配合交付。
-
-| 已测二进制 | SHA-256 |
-|---|---|
-| 工作链版 | `300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09` |
-| 采购恢复版 | `a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e` |
-
-早期构建、单测可执行文件、重复源快照、缓存、原始下载包和全量 Replay 留在本机。大型逐局 JSON 使用无损 gzip，记录压缩前后哈希；GitHub 保留汇总、逐局收据、原核验记录和原回放哈希。历史协议中的本机路径是来源记录，不是克隆后的运行入口。交付核验脚本检查文件和统计，不冒称能在缺少全回放时重新完成逐帧校验。
-
-后续优先比较不介入、同一步最小筹资后继续工作、分步筹资恢复、延期投资的经济结果，并对不受缺货影响的工人保持工作；这是计划中的改进，当前交付尚未实现。是否升级仍以冻结版本、未用于调参的新种子及多样对手的配对结果为准。
+- Four 1,000-round runs did not establish sustained improvement from simply extending training. All eight 1,000-versus-900 single-panel intervals included zero; the strong `aux_r0` run was already strong at 300 rounds.
+- Same-recipe training variance was large. The offline value audit did not establish learned ranking superiority over uniform non-KEEP choice. Extrapolating one-step effects to whole-match win rates was invalid, and selecting the best noisy candidate creates winner's bias.
+- [E1/E2/E3 evidence](evidence/e1_e2_e3_20260907/REPORT_ZH.md): E1's six new 300-round seeds produced zero of six positive confidence intervals, median -0.43 percentage points. E2 did not establish an out-of-pool gain because its assumed in-pool gain failed to reproduce. The historical record had only two of three E3 repetitions; this publication infers no later result.
+- Terminal rewards confounded small decision effects with seeds, opponents and training randomness. Proposed remedies included paired baseline rewards and features for displaced investment, working capital, price impact and relative return.
+- Do not extend the old narrow F3-PPO recipe or select checkpoints after final evaluation without replicated evidence and a declared protocol. Earlier 812-game portable validation belongs to the archived KEEP=2 package, not the new route candidate.

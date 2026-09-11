@@ -1,0 +1,258 @@
+{
+  "stage": "latest",
+  "games": 600,
+  "observations": 864000,
+  "arms": {
+    "workflow": {
+      "games": 200,
+      "seeds": 100,
+      "wins": 122,
+      "draws": 0,
+      "win_rate": 61.0,
+      "mean_cash": 99790.36,
+      "mean_opponent_cash": 97887.79,
+      "mean_margin": 1902.57,
+      "mean_wages": 4240.255,
+      "mean_hires": 230.64,
+      "mean_overflow_units": 17.845,
+      "invalid_actions": 0,
+      "recorded_uncompleted": 0,
+      "unexpected_uncompleted": 0,
+      "explicit_deferrals": 0,
+      "max_seconds": 3.491772261999813,
+      "over_one_second": 213,
+      "recovery_events": 0,
+      "recovery_kept": 0,
+      "recovery_retries": 0,
+      "recovery_joint": 0,
+      "recovery_partial": 0,
+      "budget_stops": 0
+    },
+    "recovery": {
+      "games": 200,
+      "seeds": 100,
+      "wins": 125,
+      "draws": 0,
+      "win_rate": 62.5,
+      "mean_cash": 99207.35,
+      "mean_opponent_cash": 97295.76,
+      "mean_margin": 1911.59,
+      "mean_wages": 4188.705,
+      "mean_hires": 230.245,
+      "mean_overflow_units": 18.205,
+      "invalid_actions": 0,
+      "recorded_uncompleted": 546,
+      "unexpected_uncompleted": 256,
+      "explicit_deferrals": 290,
+      "max_seconds": 3.2205351610000434,
+      "over_one_second": 200,
+      "recovery_events": 164,
+      "recovery_kept": 0,
+      "recovery_retries": 0,
+      "recovery_joint": 0,
+      "recovery_partial": 0,
+      "budget_stops": 0
+    },
+    "fixed": {
+      "games": 200,
+      "seeds": 100,
+      "wins": 97,
+      "draws": 0,
+      "win_rate": 48.5,
+      "mean_cash": 99804.3,
+      "mean_opponent_cash": 99201.5,
+      "mean_margin": 602.8,
+      "mean_wages": 4284.63,
+      "mean_hires": 230.765,
+      "mean_overflow_units": 20.3,
+      "invalid_actions": 0,
+      "recorded_uncompleted": 1891,
+      "unexpected_uncompleted": 0,
+      "explicit_deferrals": 1891,
+      "max_seconds": 0.6920877109999992,
+      "over_one_second": 0,
+      "recovery_events": 80,
+      "recovery_kept": 1,
+      "recovery_retries": 0,
+      "recovery_joint": 36,
+      "recovery_partial": 0,
+      "budget_stops": 2008
+    }
+  },
+  "opponents": {
+    "submission_56149565": {
+      "workflow": {
+        "games": 200,
+        "seeds": 100,
+        "wins": 122,
+        "draws": 0,
+        "win_rate": 61.0,
+        "mean_cash": 99790.36,
+        "mean_opponent_cash": 97887.79,
+        "mean_margin": 1902.57,
+        "mean_wages": 4240.255,
+        "mean_hires": 230.64,
+        "mean_overflow_units": 17.845,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 0,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 0,
+        "max_seconds": 3.491772261999813,
+        "over_one_second": 213,
+        "recovery_events": 0,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "recovery": {
+        "games": 200,
+        "seeds": 100,
+        "wins": 125,
+        "draws": 0,
+        "win_rate": 62.5,
+        "mean_cash": 99207.35,
+        "mean_opponent_cash": 97295.76,
+        "mean_margin": 1911.59,
+        "mean_wages": 4188.705,
+        "mean_hires": 230.245,
+        "mean_overflow_units": 18.205,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 546,
+        "unexpected_uncompleted": 256,
+        "explicit_deferrals": 290,
+        "max_seconds": 3.2205351610000434,
+        "over_one_second": 200,
+        "recovery_events": 164,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "fixed": {
+        "games": 200,
+        "seeds": 100,
+        "wins": 97,
+        "draws": 0,
+        "win_rate": 48.5,
+        "mean_cash": 99804.3,
+        "mean_opponent_cash": 99201.5,
+        "mean_margin": 602.8,
+        "mean_wages": 4284.63,
+        "mean_hires": 230.765,
+        "mean_overflow_units": 20.3,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 1891,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 1891,
+        "max_seconds": 0.6920877109999992,
+        "over_one_second": 0,
+        "recovery_events": 80,
+        "recovery_kept": 1,
+        "recovery_retries": 0,
+        "recovery_joint": 36,
+        "recovery_partial": 0,
+        "budget_stops": 2008
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "baseline": "workflow",
+      "pairs": 200,
+      "seeds": 100,
+      "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+      "deltas": {
+        "win": {
+          "mean": -12.5,
+          "ci95": [
+            -22.0,
+            -3.0
+          ]
+        },
+        "cash": {
+          "mean": 13.94,
+          "ci95": [
+            -1672.005,
+            1643.24
+          ]
+        },
+        "margin": {
+          "mean": -1299.77,
+          "ci95": [
+            -2277.545,
+            -355.7
+          ]
+        },
+        "wages": {
+          "mean": 44.375,
+          "ci95": [
+            -69.43,
+            157.525
+          ]
+        },
+        "hires": {
+          "mean": 0.125,
+          "ci95": [
+            -0.9,
+            1.15
+          ]
+        }
+      },
+      "gained_wins": 21,
+      "lost_wins": 46
+    },
+    {
+      "baseline": "recovery",
+      "pairs": 200,
+      "seeds": 100,
+      "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+      "deltas": {
+        "win": {
+          "mean": -14.0,
+          "ci95": [
+            -23.5,
+            -4.5
+          ]
+        },
+        "cash": {
+          "mean": 596.95,
+          "ci95": [
+            -1207.115,
+            2310.58
+          ]
+        },
+        "margin": {
+          "mean": -1308.79,
+          "ci95": [
+            -2385.09,
+            -218.23
+          ]
+        },
+        "wages": {
+          "mean": 95.925,
+          "ci95": [
+            -26.015,
+            215.83
+          ]
+        },
+        "hires": {
+          "mean": 0.52,
+          "ci95": [
+            -0.675,
+            1.715
+          ]
+        }
+      },
+      "gained_wins": 22,
+      "lost_wins": 50
+    }
+  ],
+  "caveats": [
+    "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+    "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+    "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+  ]
+}

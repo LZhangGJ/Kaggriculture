@@ -1,0 +1,169 @@
+[
+  {
+    "id": "soil_v219g",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/soil_v219g",
+    "hashes": {
+      "opponents/soil_v219g/main.py": "4f5043530e0104f4867ad7455800dc8a40d4b589e9deb84b000e105e0b077157"
+    }
+  },
+  {
+    "id": "moon_v215",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/moon_v215",
+    "hashes": {
+      "opponents/moon_v215/main.py": "a32d1bbbe915e1f7f370f012155548915f5f846a517b45cbe90245294255af1f"
+    }
+  },
+  {
+    "id": "flexon_v5",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/flexon_v5",
+    "hashes": {
+      "opponents/flexon_v5/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "opponents/flexon_v5/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "opponents/flexon_v5/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+      "opponents/flexon_v5/NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+      "opponents/flexon_v5/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+      "opponents/flexon_v5/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+      "opponents/flexon_v5/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+      "opponents/flexon_v5/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+      "opponents/flexon_v5/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+    }
+  },
+  {
+    "id": "market_smart_v8",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/market_smart_v8",
+    "hashes": {
+      "opponents/market_smart_v8/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "opponents/market_smart_v8/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+      "opponents/market_smart_v8/policy.py": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+      "opponents/market_smart_v8/router_parent.py": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+      "opponents/market_smart_v8/settings.json": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8",
+      "opponents/market_smart_v8/terminal_planner.py": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+      "opponents/market_smart_v8/unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383"
+    }
+  },
+  {
+    "id": "nagatakengo_v70",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/nagatakengo_v70",
+    "hashes": {
+      "opponents/nagatakengo_v70/main.py": "ad981d06799c983eb499eb24da0db00598a04ba21a856f1e1558ab35b6e90989"
+    }
+  },
+  {
+    "id": "aurax_reactive_v1",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/aurax_reactive_v1",
+    "hashes": {
+      "opponents/aurax_reactive_v1/main.py": "53070a6adfaac7b91914a53e215bf0c521fff1d633db74abdf20bfcd13190175"
+    }
+  },
+  {
+    "id": "thomas_955_v2",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/thomas_955_v2",
+    "hashes": {
+      "opponents/thomas_955_v2/main.py": "8241246765098c50223d897739cb32076b71a303284d2e5e1c5f0fb495bb5a97"
+    }
+  },
+  {
+    "id": "shop0909",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/shop0909",
+    "hashes": {
+      "opponents/shop0909/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "opponents/shop0909/kernel-metadata.json": "f57282a3106f044daecd34ce2e7f1a172e4316f92609acdd0cc5e4ee0111e7ff",
+      "opponents/shop0909/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "opponents/shop0909/main.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b"
+    }
+  },
+  {
+    "id": "aurax_shop_v2",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/aurax_shop_v2",
+    "hashes": {
+      "opponents/aurax_shop_v2/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "opponents/aurax_shop_v2/kernel-metadata.json": "62f38964606e58bfe57c45fdfb653ecf4e868a837a32bee73dec09c386081424",
+      "opponents/aurax_shop_v2/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "opponents/aurax_shop_v2/main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+    }
+  },
+  {
+    "id": "seven_turn",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/seven_turn",
+    "hashes": {
+      "opponents/seven_turn/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "opponents/seven_turn/kernel-metadata.json": "4e171c33bae7a3cd75fba706e091fa66c60bd57483f454c814dc212a0f4619d7",
+      "opponents/seven_turn/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "opponents/seven_turn/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+      "opponents/seven_turn/NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+      "opponents/seven_turn/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+      "opponents/seven_turn/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+      "opponents/seven_turn/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+      "opponents/seven_turn/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+      "opponents/seven_turn/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+    }
+  },
+  {
+    "id": "ahmed_v27",
+    "status": "available",
+    "source": "experiments/r2_route_new_opponents_20260910/source/nt/latest_20260910_r2p16/opponents/ahmed_v27",
+    "hashes": {
+      "opponents/ahmed_v27/kernel-metadata.json": "8ee2a4d90ee536541958bc445822142eeee39123580e455fc45fa526aa6f0401",
+      "opponents/ahmed_v27/main.py": "f9db9c4e4114bc956752b90df35d0c7ceda96e5009573f4d6229cc7c95d9f8e9"
+    }
+  },
+  {
+    "id": "submission_56140347",
+    "status": "available",
+    "source": "experiments/r2p16_latest_submissions_20260910/opponents/submission_56140347",
+    "hashes": {
+      "opponents/submission_56140347/main.py": "57b52bbe6a45c9559705aee1ab9e2831d351047087a1f45cb8d04c4e56d47e8c",
+      "opponents/submission_56140347/p16_runtime/agent.so": "15c0871bde45cece138cddac253be338a801b8a132d6dec7d8fba1de7ebb5a7d",
+      "opponents/submission_56140347/p16_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "opponents/submission_56140347/p16_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "opponents/submission_56140347/p16_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "id": "submission_56140351",
+    "status": "available",
+    "source": "experiments/r2p16_latest_submissions_20260910/opponents/submission_56140351",
+    "hashes": {
+      "opponents/submission_56140351/main.py": "4f3ec53a9ba06b219c63d79b2889edfa148d4f1acac498ac52391559e9118a0d",
+      "opponents/submission_56140351/t3r1_runtime/agent.so": "d67a57a0fb68531f0891603f99b021a9a3f818dfebc4dd70f3448b558e4b0768",
+      "opponents/submission_56140351/t3r1_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "opponents/submission_56140351/t3r1_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "opponents/submission_56140351/t3r1_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "id": "submission_56146577",
+    "status": "available",
+    "source": "experiments/r2p16_jointafs_diagnosis_20260911/opponents/submission_56146577",
+    "hashes": {
+      "opponents/submission_56146577/main.py": "c34a392965f21bf62ed353d9e3b13ff2ffa2335f883aeffb0eb4fa9d81878c6e",
+      "opponents/submission_56146577/afs_runtime/agent.so": "7a8783c776ab8c01e3370685f6de6f8b6a43ea409ab710fbe9330f165560950f",
+      "opponents/submission_56146577/afs_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "opponents/submission_56146577/afs_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "opponents/submission_56146577/afs_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "id": "submission_56149565",
+    "status": "available",
+    "source": "downloads/56149565/submission.tar.gz",
+    "provenance": "downloads/56149565/USER_ACQUISITION.json",
+    "hashes": {
+      "opponents/submission_56149565/afs_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "opponents/submission_56149565/afs_runtime/agent.so": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c",
+      "opponents/submission_56149565/afs_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "opponents/submission_56149565/afs_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "opponents/submission_56149565/main.py": "7d4055bfce85ac9374e172c2f190abb84f978172c33f9115e1010a08269c3a1b"
+    }
+  }
+]

@@ -1,0 +1,223 @@
+{
+  "agent": "latest_20260911_r2p16_route_repair",
+  "entry": "main.py",
+  "binary": "build/revision4/route3.so",
+  "binary_sha256": "6aec10175b80db7b94b1e1abd84ce872a5d8bae2e29c0c47fef524f2410fc557",
+  "runtime": "Linux x86-64 / WSL; GCC 13; Python standard library",
+  "validation": {
+    "unit_checks": 105,
+    "development_regression_games": 14,
+    "fresh_games": 3150,
+    "own_fresh_games": 1050,
+    "observations_checked": 4536000,
+    "invalid_actions": 0,
+    "unexpected_registered_task_omissions": 0
+  },
+  "status": "Published research candidate; do not promote to the competition baseline. No Kaggle upload.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 235,
+      "sha256": "6cb832ffc04921cb7eab5c61d9420e834ff93f4e2651e9fd7a77f8b268d8274b"
+    },
+    ".gitignore": {
+      "bytes": 125,
+      "sha256": "49e13a87a799f98d56798354da49b08fa8cf28eee12d5938a6d121da1229c8f6"
+    },
+    "build/revision4/route3.BUILD.json": {
+      "bytes": 5483,
+      "sha256": "08a18b602670c04ae397778d020f8ebdf09b186feefdb549a701e7c870f93e5c"
+    },
+    "build/revision4/route3.so": {
+      "bytes": 1178072,
+      "sha256": "6aec10175b80db7b94b1e1abd84ce872a5d8bae2e29c0c47fef524f2410fc557"
+    },
+    "build.py": {
+      "bytes": 2564,
+      "sha256": "09a8c4cd266ed7bd0bbf859fc7e2a3580a0217f4b28d194f006ebff719561a1a"
+    },
+    "main.py": {
+      "bytes": 741,
+      "sha256": "04bd0cfd6666885b509d27dfa5c4d3643121b3982e17eb98c1fb93dae34e4c40"
+    },
+    "policy/agent.py": {
+      "bytes": 7892,
+      "sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+    },
+    "policy/animal_service_dp.hpp": {
+      "bytes": 1399,
+      "sha256": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c"
+    },
+    "policy/bridge.cpp": {
+      "bytes": 5988,
+      "sha256": "002967ad48186583a5c50d5d1502dcea918c7cb002089af2caf075a6167e5747"
+    },
+    "policy/conditional_market.hpp": {
+      "bytes": 2178,
+      "sha256": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457"
+    },
+    "policy/config.json": {
+      "bytes": 758,
+      "sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+    },
+    "policy/decision_budget.hpp": {
+      "bytes": 607,
+      "sha256": "5a4c33a2d2ab52c0d1eb5f5e1f34618ffbfbbd11d8d57f97ca1a2f4e12edc3cb"
+    },
+    "policy/executor/compile_choices.hpp": {
+      "bytes": 5705,
+      "sha256": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea"
+    },
+    "policy/executor/crop_delivery.hpp": {
+      "bytes": 5208,
+      "sha256": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e"
+    },
+    "policy/executor/day_consequence.hpp": {
+      "bytes": 9097,
+      "sha256": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae"
+    },
+    "policy/executor/idle_task_handoff.hpp": {
+      "bytes": 3757,
+      "sha256": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd"
+    },
+    "policy/executor/intraday_admission.hpp": {
+      "bytes": 14811,
+      "sha256": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9"
+    },
+    "policy/executor/investment_candidates.hpp": {
+      "bytes": 4356,
+      "sha256": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe"
+    },
+    "policy/executor/joint_portfolio.hpp": {
+      "bytes": 14008,
+      "sha256": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf"
+    },
+    "policy/executor/live_execution_repairs.hpp": {
+      "bytes": 4016,
+      "sha256": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637"
+    },
+    "policy/executor/observation_view.hpp": {
+      "bytes": 330,
+      "sha256": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe"
+    },
+    "policy/executor/observed_day_scenario.hpp": {
+      "bytes": 4273,
+      "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c"
+    },
+    "policy/executor/pack_memo.hpp": {
+      "bytes": 2195,
+      "sha256": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988"
+    },
+    "policy/executor/policy.hpp": {
+      "bytes": 119342,
+      "sha256": "e7d6ec5dd440593059cccecd63860c6aa0f4694b2fab9d1210c91d61d7ce1c6f"
+    },
+    "policy/executor/regret_pack_incremental.inc": {
+      "bytes": 2294,
+      "sha256": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98"
+    },
+    "policy/executor/resource_exchange.hpp": {
+      "bytes": 5838,
+      "sha256": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e"
+    },
+    "policy/executor/rotation_calendar.hpp": {
+      "bytes": 6495,
+      "sha256": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a"
+    },
+    "policy/executor/rotation_cash.hpp": {
+      "bytes": 7072,
+      "sha256": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d"
+    },
+    "policy/executor/service_recovery.hpp": {
+      "bytes": 8443,
+      "sha256": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c"
+    },
+    "policy/executor/vendor/simulator.cpp": {
+      "bytes": 17869,
+      "sha256": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da"
+    },
+    "policy/executor/vendor/simulator.hpp": {
+      "bytes": 6489,
+      "sha256": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+    },
+    "policy/finite_fertilizer.hpp": {
+      "bytes": 860,
+      "sha256": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061"
+    },
+    "policy/learned_value.hpp": {
+      "bytes": 2550,
+      "sha256": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2"
+    },
+    "policy/local_sale_timing.hpp": {
+      "bytes": 3107,
+      "sha256": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766"
+    },
+    "policy/observation_codec.hpp": {
+      "bytes": 1569,
+      "sha256": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297"
+    },
+    "policy/observed_crop_clock.hpp": {
+      "bytes": 1869,
+      "sha256": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4"
+    },
+    "policy/ongoing_maintenance_dp.hpp": {
+      "bytes": 2095,
+      "sha256": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd"
+    },
+    "policy/planner.hpp": {
+      "bytes": 13366,
+      "sha256": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+    },
+    "policy/proposals.hpp": {
+      "bytes": 7134,
+      "sha256": "2cafe6aacad8c81cb62efba535ed5ba2876897235eaaf8b48e0950b123982426"
+    },
+    "policy/public_flow_scenario.hpp": {
+      "bytes": 3313,
+      "sha256": "252fc0d8e12e04f3a610bea83ef426be111796077ee52d58ad291a7068ebc052"
+    },
+    "policy/public_trade_ledger.hpp": {
+      "bytes": 5525,
+      "sha256": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef"
+    },
+    "policy/route_economics.hpp": {
+      "bytes": 33330,
+      "sha256": "fbaf847d2fd516cd73ba6c44e7119021aeff491159e685d96aca4744bd17885f"
+    },
+    "policy/route_recovery.hpp": {
+      "bytes": 10785,
+      "sha256": "b16eb477b9c719aca2c80c96b5edeba4ff401f82cad1f6f6fae2a83b1fce1a62"
+    },
+    "policy/sale_clock.hpp": {
+      "bytes": 1901,
+      "sha256": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260"
+    },
+    "policy/search.hpp": {
+      "bytes": 5855,
+      "sha256": "a06ee2166bacca360f0a3a43b220cf73a6f5c55a5bcb540eae27986c6e183759"
+    },
+    "policy/startup_supply.hpp": {
+      "bytes": 674,
+      "sha256": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d"
+    },
+    "policy/triad.hpp": {
+      "bytes": 31201,
+      "sha256": "ae53f5d5eca35420dd4d8b5bafbfd9ca5922d646e275661f945b9e70826985b5"
+    },
+    "README.md": {
+      "bytes": 7147,
+      "sha256": "566371011f32a3734a1b3af49707e60aa704206bc632195af93f875776bf3457"
+    },
+    "tests/test_route_economics.cpp": {
+      "bytes": 8045,
+      "sha256": "64f90a7dd98b84f2d3b0d1a53a2c342d23e16b6e83f58a8d07f198e7fe328ced"
+    },
+    "tests/test_route_recovery.cpp": {
+      "bytes": 7499,
+      "sha256": "238c721fc0ada051e0efa26b809728d077773a41f615fa97e320d70e2493aa81"
+    },
+    "tests/test_route_workflow.cpp": {
+      "bytes": 2843,
+      "sha256": "69d810ef9e75007a2c4f490f24b96978c587301cb3c40713f66dd94e20a0d1f8"
+    }
+  }
+}

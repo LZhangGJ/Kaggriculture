@@ -1,0 +1,1722 @@
+{
+  "method": "Slowest seeds rerun as serial live games in isolated processes. Recorded full replays. Excluded from strength samples.",
+  "includes_opponent_slowest": true,
+  "hashes": {
+    "fixed": "6aec10175b80db7b94b1e1abd84ce872a5d8bae2e29c0c47fef524f2410fc557",
+    "recovery": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e",
+    "workflow": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09"
+  },
+  "rows": [
+    {
+      "name": "fixed_submission_56149565_2158834468_seat1",
+      "arm": "fixed",
+      "opponent": "submission_56149565",
+      "seed": 2158834468,
+      "seat": 1,
+      "frames": 720,
+      "cash": 139306.0,
+      "opponent_cash": 131669.0,
+      "margin": 7637.0,
+      "win": true,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "error": null,
+      "wages": 4047,
+      "hires": 220,
+      "moves": 2334,
+      "idle": 574,
+      "pickups": 229,
+      "drops": 52,
+      "production": 2527,
+      "overflow_units": 0,
+      "daytime_overflow_units": 0,
+      "invalid_actions": 0,
+      "route_commitment_days": 13,
+      "uncompleted_required_tasks": 0,
+      "max_seconds": 0.6549491700000001,
+      "p99_seconds": 0.25450221799999895,
+      "over_one_second": 0,
+      "opponent_decisions": 719,
+      "opponent_max_seconds": 0.8404004870000001,
+      "opponent_over_one_second": 0,
+      "route": {
+        "plan_calls": 30,
+        "candidates": 770,
+        "deferred": 18,
+        "kept_commitments": 0,
+        "rotations": 49,
+        "intraday_started": 5,
+        "reference_calls": 0,
+        "predicted": -2047.32,
+        "service_trials": 380,
+        "service_switches": 61,
+        "service_value_gain": 16079.1,
+        "targets": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ],
+          [
+            9,
+            -1
+          ],
+          [
+            10,
+            -1
+          ],
+          [
+            11,
+            -1
+          ],
+          [
+            12,
+            10
+          ],
+          [
+            13,
+            -1
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            -1
+          ],
+          [
+            17,
+            -1
+          ],
+          [
+            18,
+            -1
+          ],
+          [
+            19,
+            -1
+          ],
+          [
+            20,
+            -1
+          ],
+          [
+            21,
+            -1
+          ],
+          [
+            22,
+            -1
+          ],
+          [
+            23,
+            0
+          ],
+          [
+            24,
+            -1
+          ],
+          [
+            25,
+            10
+          ],
+          [
+            26,
+            -1
+          ],
+          [
+            27,
+            -1
+          ],
+          [
+            28,
+            -1
+          ],
+          [
+            29,
+            -1
+          ],
+          [
+            30,
+            10
+          ],
+          [
+            31,
+            -1
+          ],
+          [
+            32,
+            0
+          ],
+          [
+            33,
+            1
+          ],
+          [
+            34,
+            10
+          ],
+          [
+            35,
+            10
+          ],
+          [
+            36,
+            10
+          ],
+          [
+            37,
+            -1
+          ],
+          [
+            38,
+            -1
+          ],
+          [
+            39,
+            -1
+          ],
+          [
+            40,
+            -1
+          ],
+          [
+            41,
+            -1
+          ],
+          [
+            42,
+            -1
+          ],
+          [
+            43,
+            10
+          ],
+          [
+            44,
+            10
+          ],
+          [
+            45,
+            10
+          ],
+          [
+            46,
+            10
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            48,
+            -1
+          ],
+          [
+            49,
+            -1
+          ],
+          [
+            50,
+            -1
+          ],
+          [
+            51,
+            10
+          ],
+          [
+            52,
+            0
+          ],
+          [
+            53,
+            0
+          ],
+          [
+            54,
+            0
+          ],
+          [
+            60,
+            10
+          ],
+          [
+            61,
+            -1
+          ],
+          [
+            62,
+            -1
+          ],
+          [
+            63,
+            0
+          ],
+          [
+            64,
+            0
+          ],
+          [
+            70,
+            -1
+          ],
+          [
+            71,
+            -1
+          ],
+          [
+            72,
+            10
+          ],
+          [
+            73,
+            -1
+          ],
+          [
+            74,
+            0
+          ],
+          [
+            80,
+            -1
+          ],
+          [
+            81,
+            -1
+          ],
+          [
+            82,
+            -1
+          ],
+          [
+            83,
+            -1
+          ],
+          [
+            84,
+            -1
+          ],
+          [
+            90,
+            -1
+          ],
+          [
+            91,
+            -1
+          ],
+          [
+            92,
+            -1
+          ],
+          [
+            93,
+            -1
+          ],
+          [
+            94,
+            -1
+          ]
+        ],
+        "preparation_finance_checks": 0,
+        "preparation_finance_repairs": 0,
+        "midroute_delivery_checks": 563,
+        "midroute_delivery_insertions": 0,
+        "midroute_delivery_quantity": 0,
+        "local_sale_checks": 38,
+        "local_sale_holds": 33,
+        "local_sale_quantity": 354,
+        "local_sale_forced": 33,
+        "local_sale_expected_gain": 1990,
+        "recovery_pending": 0,
+        "recovery_waiting": 0,
+        "recovery_retries": 0,
+        "recovery_kept": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 2,
+        "search_calls": 30,
+        "search_scenarios": 99,
+        "search_changes": 14,
+        "search_predicted_gain": 6385.03,
+        "learned_value_active": false,
+        "learned_value_available": true,
+        "search_choices": [
+          16,
+          2,
+          0,
+          2,
+          0,
+          1,
+          2,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "route_mode": 3,
+        "route_checks": 672,
+        "route_evaluations": 211,
+        "route_changes": 15,
+        "route_unsafe": 33,
+        "route_hire_checks": 30,
+        "route_hire_changes": 1,
+        "capacity_repairs": 0,
+        "finance_repairs": 0,
+        "fill_mismatches": 0,
+        "route_replans": 0,
+        "route_restored": 0,
+        "route_unresolved_checks": 0,
+        "route_witness_used": 0,
+        "route_chain_repairs": 0,
+        "route_proof_rejected": 0,
+        "recovery_events": 0,
+        "recovery_checks": 0,
+        "recovery_sales": 0,
+        "recovery_orders": 0,
+        "recovery_installs": 0,
+        "recovery_deferred": 0,
+        "deferred_tasks": []
+      },
+      "seconds": 15.668246790999998,
+      "simulator": "frozen compiled P16 fastkag::Simulator",
+      "engine_and_audit_seconds": 0.04764484500000332,
+      "python_live_parity": null,
+      "replay_sha256": "0d0b0c72a4ffca51f0aeef07836158237e0ed269b1e0aa2a81759d09abc189b1",
+      "audit_sha256": "03bd2381ecc0883591a8ddf016d5e18ec9e45258ce9b848692e02ff02b9b72a5"
+    },
+    {
+      "name": "recovery_submission_56149565_3761901780_seat0",
+      "arm": "recovery",
+      "opponent": "submission_56149565",
+      "seed": 3761901780,
+      "seat": 0,
+      "frames": 720,
+      "cash": 89361.0,
+      "opponent_cash": 93858.0,
+      "margin": -4497.0,
+      "win": false,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "error": null,
+      "wages": 4358,
+      "hires": 230,
+      "moves": 2403,
+      "idle": 673,
+      "pickups": 226,
+      "drops": 71,
+      "production": 2547,
+      "overflow_units": 7,
+      "daytime_overflow_units": 0,
+      "invalid_actions": 0,
+      "route_commitment_days": 18,
+      "uncompleted_required_tasks": 0,
+      "max_seconds": 1.2746144620000024,
+      "p99_seconds": 0.49262231899999875,
+      "over_one_second": 1,
+      "opponent_decisions": 719,
+      "opponent_max_seconds": 0.253758887999993,
+      "opponent_over_one_second": 0,
+      "route": {
+        "plan_calls": 30,
+        "candidates": 778,
+        "deferred": 10,
+        "kept_commitments": 0,
+        "rotations": 53,
+        "intraday_started": 6,
+        "reference_calls": 0,
+        "predicted": -362.679,
+        "service_trials": 367,
+        "service_switches": 156,
+        "service_value_gain": 45700.4,
+        "targets": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            10,
+            -1
+          ],
+          [
+            11,
+            -1
+          ],
+          [
+            12,
+            -1
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            14,
+            -1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            9
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            18,
+            -1
+          ],
+          [
+            19,
+            -1
+          ],
+          [
+            20,
+            -1
+          ],
+          [
+            21,
+            -1
+          ],
+          [
+            22,
+            11
+          ],
+          [
+            23,
+            -1
+          ],
+          [
+            24,
+            1
+          ],
+          [
+            25,
+            1
+          ],
+          [
+            26,
+            -1
+          ],
+          [
+            27,
+            2
+          ],
+          [
+            28,
+            -1
+          ],
+          [
+            29,
+            -1
+          ],
+          [
+            30,
+            -1
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            32,
+            -1
+          ],
+          [
+            33,
+            1
+          ],
+          [
+            34,
+            -1
+          ],
+          [
+            35,
+            1
+          ],
+          [
+            36,
+            -1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            38,
+            -1
+          ],
+          [
+            39,
+            -1
+          ],
+          [
+            40,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            42,
+            -1
+          ],
+          [
+            43,
+            10
+          ],
+          [
+            44,
+            10
+          ],
+          [
+            45,
+            1
+          ],
+          [
+            46,
+            11
+          ],
+          [
+            47,
+            -1
+          ],
+          [
+            48,
+            11
+          ],
+          [
+            49,
+            0
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            51,
+            -1
+          ],
+          [
+            52,
+            1
+          ],
+          [
+            53,
+            1
+          ],
+          [
+            54,
+            11
+          ],
+          [
+            60,
+            -1
+          ],
+          [
+            61,
+            -1
+          ],
+          [
+            62,
+            -1
+          ],
+          [
+            63,
+            -1
+          ],
+          [
+            64,
+            1
+          ],
+          [
+            70,
+            1
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            72,
+            -1
+          ],
+          [
+            73,
+            -1
+          ],
+          [
+            74,
+            1
+          ],
+          [
+            80,
+            -1
+          ],
+          [
+            81,
+            -1
+          ],
+          [
+            82,
+            -1
+          ],
+          [
+            83,
+            -1
+          ],
+          [
+            84,
+            9
+          ],
+          [
+            90,
+            -1
+          ],
+          [
+            91,
+            -1
+          ],
+          [
+            92,
+            -1
+          ],
+          [
+            93,
+            -1
+          ],
+          [
+            94,
+            -1
+          ]
+        ],
+        "preparation_finance_checks": 0,
+        "preparation_finance_repairs": 0,
+        "midroute_delivery_checks": 562,
+        "midroute_delivery_insertions": 0,
+        "midroute_delivery_quantity": 0,
+        "local_sale_checks": 61,
+        "local_sale_holds": 53,
+        "local_sale_quantity": 400,
+        "local_sale_forced": 53,
+        "local_sale_expected_gain": 1578,
+        "search_calls": 30,
+        "search_scenarios": 141,
+        "search_changes": 18,
+        "search_predicted_gain": 8040.11,
+        "learned_value_active": false,
+        "learned_value_available": true,
+        "search_choices": [
+          12,
+          1,
+          0,
+          3,
+          4,
+          1,
+          0,
+          8,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "route_mode": 3,
+        "route_checks": 670,
+        "route_evaluations": 254,
+        "route_changes": 19,
+        "route_unsafe": 29,
+        "route_hire_checks": 30,
+        "route_hire_changes": 1,
+        "capacity_repairs": 0,
+        "finance_repairs": 0,
+        "fill_mismatches": 0,
+        "route_replans": 0,
+        "route_restored": 0,
+        "route_unresolved_checks": 0,
+        "route_witness_used": 0,
+        "route_chain_repairs": 0,
+        "route_proof_rejected": 0,
+        "recovery_events": 0,
+        "recovery_checks": 0,
+        "recovery_sales": 0,
+        "recovery_orders": 0,
+        "recovery_installs": 0,
+        "recovery_deferred": 0,
+        "deferred_tasks": []
+      },
+      "seconds": 22.390105005,
+      "simulator": "frozen compiled P16 fastkag::Simulator",
+      "engine_and_audit_seconds": 0.05382791299998502,
+      "python_live_parity": null,
+      "replay_sha256": "320254f32390b62be2b397d733048c37330f1e86a08719d83623cb569967f7e6",
+      "audit_sha256": "7704cd714cc114bf1499695e80d27834f4c4a18bfdc241e25c2489d248583303"
+    },
+    {
+      "name": "workflow_submission_56149565_1875081603_seat1",
+      "arm": "workflow",
+      "opponent": "submission_56149565",
+      "seed": 1875081603,
+      "seat": 1,
+      "frames": 720,
+      "cash": 123071.0,
+      "opponent_cash": 123096.0,
+      "margin": -25.0,
+      "win": false,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "error": null,
+      "wages": 3872,
+      "hires": 219,
+      "moves": 2259,
+      "idle": 643,
+      "pickups": 222,
+      "drops": 48,
+      "production": 2513,
+      "overflow_units": 20,
+      "daytime_overflow_units": 0,
+      "invalid_actions": 0,
+      "route_commitment_days": 14,
+      "uncompleted_required_tasks": 0,
+      "max_seconds": 0.8417412989999988,
+      "p99_seconds": 0.3026665010000045,
+      "over_one_second": 0,
+      "opponent_decisions": 719,
+      "opponent_max_seconds": 0.2697847849999988,
+      "opponent_over_one_second": 0,
+      "route": {
+        "plan_calls": 30,
+        "candidates": 784,
+        "deferred": 14,
+        "kept_commitments": 2,
+        "rotations": 52,
+        "intraday_started": 2,
+        "reference_calls": 0,
+        "predicted": -585.529,
+        "service_trials": 366,
+        "service_switches": 53,
+        "service_value_gain": 9426.62,
+        "targets": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ],
+          [
+            9,
+            -1
+          ],
+          [
+            10,
+            -1
+          ],
+          [
+            11,
+            -1
+          ],
+          [
+            12,
+            10
+          ],
+          [
+            13,
+            -1
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            -1
+          ],
+          [
+            16,
+            -1
+          ],
+          [
+            17,
+            -1
+          ],
+          [
+            18,
+            -1
+          ],
+          [
+            19,
+            -1
+          ],
+          [
+            20,
+            -1
+          ],
+          [
+            21,
+            -1
+          ],
+          [
+            22,
+            -1
+          ],
+          [
+            23,
+            0
+          ],
+          [
+            24,
+            0
+          ],
+          [
+            25,
+            -1
+          ],
+          [
+            26,
+            -1
+          ],
+          [
+            27,
+            -1
+          ],
+          [
+            28,
+            10
+          ],
+          [
+            29,
+            -1
+          ],
+          [
+            30,
+            10
+          ],
+          [
+            31,
+            -1
+          ],
+          [
+            32,
+            -1
+          ],
+          [
+            33,
+            -1
+          ],
+          [
+            34,
+            10
+          ],
+          [
+            35,
+            10
+          ],
+          [
+            36,
+            -1
+          ],
+          [
+            37,
+            -1
+          ],
+          [
+            38,
+            -1
+          ],
+          [
+            39,
+            10
+          ],
+          [
+            40,
+            -1
+          ],
+          [
+            41,
+            -1
+          ],
+          [
+            42,
+            -1
+          ],
+          [
+            43,
+            10
+          ],
+          [
+            44,
+            10
+          ],
+          [
+            45,
+            10
+          ],
+          [
+            46,
+            10
+          ],
+          [
+            47,
+            -1
+          ],
+          [
+            48,
+            -1
+          ],
+          [
+            49,
+            -1
+          ],
+          [
+            50,
+            -1
+          ],
+          [
+            51,
+            0
+          ],
+          [
+            52,
+            0
+          ],
+          [
+            53,
+            0
+          ],
+          [
+            54,
+            0
+          ],
+          [
+            60,
+            -1
+          ],
+          [
+            61,
+            -1
+          ],
+          [
+            62,
+            0
+          ],
+          [
+            63,
+            0
+          ],
+          [
+            64,
+            0
+          ],
+          [
+            70,
+            -1
+          ],
+          [
+            71,
+            -1
+          ],
+          [
+            72,
+            -1
+          ],
+          [
+            73,
+            0
+          ],
+          [
+            74,
+            0
+          ],
+          [
+            80,
+            -1
+          ],
+          [
+            81,
+            -1
+          ],
+          [
+            82,
+            -1
+          ],
+          [
+            83,
+            -1
+          ],
+          [
+            84,
+            2
+          ],
+          [
+            90,
+            -1
+          ],
+          [
+            91,
+            -1
+          ],
+          [
+            92,
+            -1
+          ],
+          [
+            93,
+            -1
+          ],
+          [
+            94,
+            9
+          ]
+        ],
+        "preparation_finance_checks": 0,
+        "preparation_finance_repairs": 0,
+        "midroute_delivery_checks": 564,
+        "midroute_delivery_insertions": 1,
+        "midroute_delivery_quantity": 2,
+        "local_sale_checks": 39,
+        "local_sale_holds": 28,
+        "local_sale_quantity": 239,
+        "local_sale_forced": 28,
+        "local_sale_expected_gain": 1225,
+        "search_calls": 30,
+        "search_scenarios": 117,
+        "search_changes": 16,
+        "search_predicted_gain": 13069,
+        "learned_value_active": false,
+        "learned_value_available": true,
+        "search_choices": [
+          14,
+          3,
+          0,
+          0,
+          1,
+          3,
+          2,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "route_mode": 3,
+        "route_checks": 673,
+        "route_evaluations": 227,
+        "route_changes": 14,
+        "route_unsafe": 30,
+        "route_hire_checks": 30,
+        "route_hire_changes": 1,
+        "capacity_repairs": 0,
+        "finance_repairs": 1,
+        "fill_mismatches": 0,
+        "route_replans": 0,
+        "route_restored": 0,
+        "route_unresolved_checks": 0,
+        "route_witness_used": 0,
+        "route_chain_repairs": 0,
+        "route_proof_rejected": 0,
+        "deferred_tasks": []
+      },
+      "seconds": 15.48933582,
+      "simulator": "frozen compiled P16 fastkag::Simulator",
+      "engine_and_audit_seconds": 0.042322097999978325,
+      "python_live_parity": null,
+      "replay_sha256": "f2a5c99990a3f8d3cac7f2c0f7d49911591db8813dc8185055542f75a0749005",
+      "audit_sha256": "ccc381a7571943a82d6e32536f0c1eb8be22e02fc7280b7277338794d0b48ef7"
+    },
+    {
+      "name": "workflow_submission_56149565_2620057225_seat1",
+      "arm": "workflow",
+      "opponent": "submission_56149565",
+      "seed": 2620057225,
+      "seat": 1,
+      "frames": 720,
+      "cash": 87261.0,
+      "opponent_cash": 89167.0,
+      "margin": -1906.0,
+      "win": false,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "error": null,
+      "wages": 4520,
+      "hires": 237,
+      "moves": 2448,
+      "idle": 582,
+      "pickups": 260,
+      "drops": 61,
+      "production": 2731,
+      "overflow_units": 19,
+      "daytime_overflow_units": 0,
+      "invalid_actions": 0,
+      "route_commitment_days": 13,
+      "uncompleted_required_tasks": 0,
+      "max_seconds": 1.7515832160000002,
+      "p99_seconds": 0.7451213650000028,
+      "over_one_second": 6,
+      "opponent_decisions": 719,
+      "opponent_max_seconds": 2.660465262999992,
+      "opponent_over_one_second": 1,
+      "route": {
+        "plan_calls": 30,
+        "candidates": 728,
+        "deferred": 9,
+        "kept_commitments": 0,
+        "rotations": 35,
+        "intraday_started": 18,
+        "reference_calls": 0,
+        "predicted": -1624.14,
+        "service_trials": 470,
+        "service_switches": 87,
+        "service_value_gain": 32986.8,
+        "targets": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ],
+          [
+            9,
+            -1
+          ],
+          [
+            10,
+            -1
+          ],
+          [
+            11,
+            -1
+          ],
+          [
+            12,
+            -1
+          ],
+          [
+            13,
+            -1
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            -1
+          ],
+          [
+            16,
+            -1
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            18,
+            -1
+          ],
+          [
+            19,
+            -1
+          ],
+          [
+            20,
+            -1
+          ],
+          [
+            21,
+            0
+          ],
+          [
+            22,
+            -1
+          ],
+          [
+            23,
+            0
+          ],
+          [
+            24,
+            -1
+          ],
+          [
+            25,
+            -1
+          ],
+          [
+            26,
+            -1
+          ],
+          [
+            27,
+            -1
+          ],
+          [
+            28,
+            0
+          ],
+          [
+            29,
+            -1
+          ],
+          [
+            30,
+            -1
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            32,
+            0
+          ],
+          [
+            33,
+            -1
+          ],
+          [
+            34,
+            10
+          ],
+          [
+            35,
+            10
+          ],
+          [
+            36,
+            -1
+          ],
+          [
+            37,
+            10
+          ],
+          [
+            38,
+            -1
+          ],
+          [
+            39,
+            -1
+          ],
+          [
+            40,
+            11
+          ],
+          [
+            41,
+            3
+          ],
+          [
+            42,
+            -1
+          ],
+          [
+            43,
+            10
+          ],
+          [
+            44,
+            10
+          ],
+          [
+            45,
+            10
+          ],
+          [
+            46,
+            -1
+          ],
+          [
+            47,
+            -1
+          ],
+          [
+            48,
+            -1
+          ],
+          [
+            49,
+            -1
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            51,
+            0
+          ],
+          [
+            52,
+            3
+          ],
+          [
+            53,
+            3
+          ],
+          [
+            54,
+            9
+          ],
+          [
+            60,
+            -1
+          ],
+          [
+            61,
+            0
+          ],
+          [
+            62,
+            -1
+          ],
+          [
+            63,
+            3
+          ],
+          [
+            64,
+            9
+          ],
+          [
+            70,
+            -1
+          ],
+          [
+            71,
+            -1
+          ],
+          [
+            72,
+            9
+          ],
+          [
+            73,
+            -1
+          ],
+          [
+            74,
+            9
+          ],
+          [
+            80,
+            11
+          ],
+          [
+            81,
+            -1
+          ],
+          [
+            82,
+            -1
+          ],
+          [
+            83,
+            -1
+          ],
+          [
+            84,
+            -1
+          ],
+          [
+            90,
+            -1
+          ],
+          [
+            91,
+            -1
+          ],
+          [
+            92,
+            -1
+          ],
+          [
+            93,
+            -1
+          ],
+          [
+            94,
+            9
+          ]
+        ],
+        "preparation_finance_checks": 0,
+        "preparation_finance_repairs": 0,
+        "midroute_delivery_checks": 559,
+        "midroute_delivery_insertions": 0,
+        "midroute_delivery_quantity": 0,
+        "local_sale_checks": 64,
+        "local_sale_holds": 48,
+        "local_sale_quantity": 328,
+        "local_sale_forced": 48,
+        "local_sale_expected_gain": 1118,
+        "search_calls": 30,
+        "search_scenarios": 138,
+        "search_changes": 21,
+        "search_predicted_gain": 14724.5,
+        "learned_value_active": false,
+        "learned_value_available": true,
+        "search_choices": [
+          9,
+          5,
+          0,
+          1,
+          5,
+          4,
+          1,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "route_mode": 3,
+        "route_checks": 668,
+        "route_evaluations": 270,
+        "route_changes": 15,
+        "route_unsafe": 31,
+        "route_hire_checks": 30,
+        "route_hire_changes": 0,
+        "capacity_repairs": 0,
+        "finance_repairs": 2,
+        "fill_mismatches": 0,
+        "route_replans": 0,
+        "route_restored": 1,
+        "route_unresolved_checks": 0,
+        "route_witness_used": 0,
+        "route_chain_repairs": 1,
+        "route_proof_rejected": 1,
+        "deferred_tasks": []
+      },
+      "seconds": 34.02949271599999,
+      "simulator": "frozen compiled P16 fastkag::Simulator",
+      "engine_and_audit_seconds": 0.08274341099993165,
+      "python_live_parity": null,
+      "replay_sha256": "941d5daaba7267dbfd2b4477b1cb52ed9003bf57496b160e9c030d7392806593",
+      "audit_sha256": "1f7077fd403bb7f52b205dbf5a82600f007fbe35611734c99e10ed30ff15b1ea"
+    }
+  ]
+}

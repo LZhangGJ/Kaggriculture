@@ -1,0 +1,1084 @@
+[
+  {
+    "name": "fixed_submission_56140347_407296613_seat0",
+    "events": [
+      {
+        "step": 240,
+        "day": 11,
+        "cash_before": 545.0,
+        "cash_after": 28.0,
+        "action": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "WOOL",
+              7
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              15
+            ],
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ],
+            [
+              "BUY_ANIMAL",
+              "GOOSE",
+              2
+            ],
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ],
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              3
+            ],
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ],
+            [
+              "BUY_SEED",
+              "TOMATO",
+              2
+            ],
+            [
+              "BUY_SEED",
+              "CARROT",
+              6
+            ]
+          ]
+        },
+        "seconds": 0.6532169869999507,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 4,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      },
+      {
+        "step": 241,
+        "day": 11,
+        "cash_before": 28.0,
+        "cash_after": 76.0,
+        "action": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "WOOL",
+              1
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.0021334650000426336,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 4,
+          "capacity_repairs": 0,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      },
+      {
+        "step": 242,
+        "day": 11,
+        "cash_before": 76.0,
+        "cash_after": 405.0,
+        "action": {
+          "farmer": [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          "hands": [
+            [
+              "COLLECT_FERTILIZER"
+            ],
+            [
+              "PICKUP",
+              "COW",
+              1
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              3
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              4
+            ],
+            [
+              "PICKUP",
+              "GOOSE",
+              1
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              3
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "WOOL",
+              4
+            ]
+          ]
+        },
+        "seconds": 0.061892419000002974,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 4,
+          "capacity_repairs": 0,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      },
+      {
+        "step": 243,
+        "day": 11,
+        "cash_before": 405.0,
+        "cash_after": 551.0,
+        "action": {
+          "farmer": [
+            "PLACE",
+            "FERTILIZER",
+            1
+          ],
+          "hands": [
+            [
+              "DROP"
+            ],
+            [
+              "PICKUP",
+              "GOOSE",
+              1
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "HARVEST"
+            ],
+            [
+              "FEED"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "FEED"
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "FERTILIZER",
+              2
+            ]
+          ]
+        },
+        "seconds": 0.001988181000001532,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 4,
+          "capacity_repairs": 0,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "arm": "workflow",
+        "first_different_action_step": null,
+        "old_cash": 113591.0,
+        "old_margin": 3288.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      },
+      {
+        "arm": "recovery",
+        "first_different_action_step": 241,
+        "old_cash": 114805.0,
+        "old_margin": -410.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      }
+    ],
+    "final_cash": 113591.0,
+    "final_margin": 3288.0
+  },
+  {
+    "name": "fixed_submission_56140347_572753638_seat1",
+    "events": [
+      {
+        "step": 529,
+        "day": 23,
+        "cash_before": 66996.0,
+        "cash_after": 66886.0,
+        "action": {
+          "farmer": [
+            "HARVEST"
+          ],
+          "hands": [
+            [
+              "WATER"
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "PASS"
+            ]
+          ],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.0015429750000066633,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 2,
+          "capacity_repairs": 0,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      },
+      {
+        "step": 530,
+        "day": 23,
+        "cash_before": 66886.0,
+        "cash_after": 80022.0,
+        "action": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [
+            [
+              "EAST"
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "EAST"
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              6
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              2
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              2
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              2
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              4
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "STRAWBERRY",
+              62
+            ],
+            [
+              "SELL",
+              "EGG",
+              5
+            ],
+            [
+              "SELL",
+              "MILK",
+              14
+            ]
+          ]
+        },
+        "seconds": 0.08438988500000733,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 2,
+          "capacity_repairs": 1,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      },
+      {
+        "step": 531,
+        "day": 23,
+        "cash_before": 80022.0,
+        "cash_after": 80022.0,
+        "action": {
+          "farmer": [
+            "PLACE",
+            "MILK",
+            2
+          ],
+          "hands": [
+            [
+              "WATER"
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "EAST"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "NORTH"
+            ],
+            [
+              "SOUTH"
+            ],
+            [
+              "SOUTH"
+            ],
+            [
+              "NORTH"
+            ],
+            [
+              "EAST"
+            ],
+            [
+              "COLLECT_FERTILIZER"
+            ]
+          ],
+          "market": []
+        },
+        "seconds": 0.001256425000008221,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 2,
+          "capacity_repairs": 1,
+          "finance_repairs": 1,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "arm": "workflow",
+        "first_different_action_step": 530,
+        "old_cash": 119567.0,
+        "old_margin": 6572.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      },
+      {
+        "arm": "recovery",
+        "first_different_action_step": 241,
+        "old_cash": 117293.0,
+        "old_margin": 1110.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      }
+    ],
+    "final_cash": 119567.0,
+    "final_margin": 6572.0
+  },
+  {
+    "name": "fixed_submission_56146577_1508212750_seat1",
+    "events": [
+      {
+        "step": 217,
+        "day": 10,
+        "cash_before": 1.0,
+        "cash_after": 205.0,
+        "action": {
+          "farmer": [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          "hands": [
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "NORTH"
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "MILK",
+              1
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.10586399600003915,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 1,
+          "recovery_partial": 0,
+          "budget_stops": 0,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 1,
+          "recovery_checks": 1,
+          "recovery_sales": 0,
+          "recovery_orders": 1,
+          "recovery_installs": 1,
+          "recovery_deferred": 24
+        }
+      },
+      {
+        "step": 218,
+        "day": 10,
+        "cash_before": 205.0,
+        "cash_after": 394.0,
+        "action": {
+          "farmer": [
+            "PLACE",
+            "FERTILIZER",
+            1
+          ],
+          "hands": [
+            [
+              "NORTH"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              3
+            ],
+            [
+              "PASS"
+            ],
+            [
+              "NORTH"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              2
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "SELL",
+              "WHEAT",
+              3
+            ]
+          ]
+        },
+        "seconds": 0.04127339600000823,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 1,
+          "recovery_partial": 0,
+          "budget_stops": 0,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 1,
+          "recovery_checks": 1,
+          "recovery_sales": 0,
+          "recovery_orders": 1,
+          "recovery_installs": 1,
+          "recovery_deferred": 24
+        }
+      },
+      {
+        "step": 240,
+        "day": 11,
+        "cash_before": 830.0,
+        "cash_after": 26.0,
+        "action": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "WOOL",
+              12
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              5
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              19
+            ],
+            [
+              "BUY_ANIMAL",
+              "COW",
+              3
+            ],
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              8
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.6530852420000315,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 1,
+          "recovery_partial": 0,
+          "budget_stops": 2,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 1,
+          "recovery_checks": 1,
+          "recovery_sales": 0,
+          "recovery_orders": 1,
+          "recovery_installs": 1,
+          "recovery_deferred": 24
+        }
+      },
+      {
+        "step": 241,
+        "day": 11,
+        "cash_before": 26.0,
+        "cash_after": 25.0,
+        "action": {
+          "farmer": [
+            "NORTH"
+          ],
+          "hands": [
+            [
+              "PICKUP",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.6522401130000048,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 2,
+          "recovery_partial": 0,
+          "budget_stops": 3,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 2,
+          "recovery_checks": 2,
+          "recovery_sales": 0,
+          "recovery_orders": 2,
+          "recovery_installs": 2,
+          "recovery_deferred": 40
+        }
+      },
+      {
+        "step": 242,
+        "day": 11,
+        "cash_before": 25.0,
+        "cash_after": 173.0,
+        "action": {
+          "farmer": [
+            "NORTH"
+          ],
+          "hands": [
+            [
+              "DROP"
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "EAST"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ]
+          ],
+          "market": [
+            [
+              "SELL",
+              "FERTILIZER",
+              2
+            ]
+          ]
+        },
+        "seconds": 0.09093641599997682,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 2,
+          "recovery_partial": 0,
+          "budget_stops": 3,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 2,
+          "recovery_checks": 2,
+          "recovery_sales": 0,
+          "recovery_orders": 2,
+          "recovery_installs": 2,
+          "recovery_deferred": 40
+        }
+      },
+      {
+        "step": 243,
+        "day": 11,
+        "cash_before": 173.0,
+        "cash_after": 173.0,
+        "action": {
+          "farmer": [
+            "NORTH"
+          ],
+          "hands": [
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "WEST"
+            ],
+            [
+              "NORTH"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "EAST"
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ],
+            [
+              "PICKUP",
+              "COW",
+              1
+            ],
+            [
+              "PICKUP",
+              "COW",
+              1
+            ],
+            [
+              "PICKUP",
+              "WHEAT",
+              1
+            ]
+          ],
+          "market": []
+        },
+        "seconds": 0.002028068000015537,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 2,
+          "recovery_partial": 0,
+          "budget_stops": 3,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 2,
+          "recovery_checks": 2,
+          "recovery_sales": 0,
+          "recovery_orders": 2,
+          "recovery_installs": 2,
+          "recovery_deferred": 40
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "arm": "workflow",
+        "first_different_action_step": 217,
+        "old_cash": 109742.0,
+        "old_margin": -1219.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      },
+      {
+        "arm": "recovery",
+        "first_different_action_step": 217,
+        "old_cash": 122631.0,
+        "old_margin": -5795.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      }
+    ],
+    "final_cash": 114728.0,
+    "final_margin": -1929.0
+  },
+  {
+    "name": "fixed_submission_56146577_347212678_seat1",
+    "events": [
+      {
+        "step": 456,
+        "day": 20,
+        "cash_before": 35934.0,
+        "cash_after": 35579.0,
+        "action": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "FERTILIZER",
+              14
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              16
+            ],
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "seconds": 0.6523427829999946,
+        "debug": {
+          "recovery_pending": 0,
+          "recovery_waiting": 0,
+          "recovery_retries": 0,
+          "recovery_kept": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 6,
+          "capacity_repairs": 0,
+          "finance_repairs": 0,
+          "recovery_events": 0,
+          "recovery_checks": 0,
+          "recovery_sales": 0,
+          "recovery_orders": 0,
+          "recovery_installs": 0,
+          "recovery_deferred": 0
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "arm": "workflow",
+        "first_different_action_step": 408,
+        "old_cash": 100809.0,
+        "old_margin": 2766.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      },
+      {
+        "arm": "recovery",
+        "first_different_action_step": 408,
+        "old_cash": 100809.0,
+        "old_margin": 2766.0,
+        "note": "Full live trajectories; final cash differences cannot be attributed to one repair if earlier decisions differ."
+      }
+    ],
+    "final_cash": 100022.0,
+    "final_margin": 2826.0
+  }
+]

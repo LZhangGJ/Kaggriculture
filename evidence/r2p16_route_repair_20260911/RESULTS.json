@@ -1,0 +1,2356 @@
+{
+  "generated_at": "2026-09-11T03:06:08.584629+00:00",
+  "status": "complete",
+  "new_games": 3150,
+  "panels": {
+    "historical25": {
+      "stage": "historical",
+      "games": 1950,
+      "observations": 2808000,
+      "arms": {
+        "workflow": {
+          "games": 650,
+          "seeds": 25,
+          "wins": 421,
+          "draws": 0,
+          "win_rate": 64.76923076923077,
+          "mean_cash": 108514.02461538461,
+          "mean_opponent_cash": 95521.61384615385,
+          "mean_margin": 12992.41076923077,
+          "mean_wages": 4294.2707692307695,
+          "mean_hires": 234.7323076923077,
+          "mean_overflow_units": 13.138461538461538,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 0,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 0,
+          "max_seconds": 2.4068123530005323,
+          "over_one_second": 416,
+          "recovery_events": 0,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "recovery": {
+          "games": 650,
+          "seeds": 25,
+          "wins": 417,
+          "draws": 0,
+          "win_rate": 64.15384615384615,
+          "mean_cash": 108703.18,
+          "mean_opponent_cash": 95844.50923076922,
+          "mean_margin": 12858.67076923077,
+          "mean_wages": 4294.901538461539,
+          "mean_hires": 234.7076923076923,
+          "mean_overflow_units": 13.621538461538462,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 368,
+          "unexpected_uncompleted": 200,
+          "explicit_deferrals": 168,
+          "max_seconds": 1.8658942450001632,
+          "over_one_second": 369,
+          "recovery_events": 80,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "fixed": {
+          "games": 650,
+          "seeds": 25,
+          "wins": 440,
+          "draws": 0,
+          "win_rate": 67.6923076923077,
+          "mean_cash": 107301.20461538462,
+          "mean_opponent_cash": 94036.05846153846,
+          "mean_margin": 13265.146153846154,
+          "mean_wages": 4258.470769230769,
+          "mean_hires": 234.75076923076924,
+          "mean_overflow_units": 12.712307692307693,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 264,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 264,
+          "max_seconds": 0.6841455779999706,
+          "over_one_second": 0,
+          "recovery_events": 21,
+          "recovery_kept": 2,
+          "recovery_retries": 0,
+          "recovery_joint": 13,
+          "recovery_partial": 0,
+          "budget_stops": 5676
+        }
+      },
+      "opponents": {
+        "ahmed_v27": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105126.6,
+            "mean_opponent_cash": 100117.72,
+            "mean_margin": 5008.88,
+            "mean_wages": 4333.64,
+            "mean_hires": 236.52,
+            "mean_overflow_units": 10.16,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.5511270910001258,
+            "over_one_second": 32,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105126.6,
+            "mean_opponent_cash": 100117.72,
+            "mean_margin": 5008.88,
+            "mean_wages": 4333.64,
+            "mean_hires": 236.52,
+            "mean_overflow_units": 10.16,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.8658942450001632,
+            "over_one_second": 41,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 102296.38,
+            "mean_opponent_cash": 97583.84,
+            "mean_margin": 4712.54,
+            "mean_wages": 4267.74,
+            "mean_hires": 236.34,
+            "mean_overflow_units": 7.8,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6690402269996412,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 459
+          }
+        },
+        "aurax_reactive_v1": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104997.68,
+            "mean_opponent_cash": 99668.72,
+            "mean_margin": 5328.96,
+            "mean_wages": 4376.88,
+            "mean_hires": 236.2,
+            "mean_overflow_units": 12.96,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.7277510110002368,
+            "over_one_second": 24,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104997.68,
+            "mean_opponent_cash": 99668.72,
+            "mean_margin": 5328.96,
+            "mean_wages": 4376.88,
+            "mean_hires": 236.2,
+            "mean_overflow_units": 12.96,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.8173385639997832,
+            "over_one_second": 20,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104577.42,
+            "mean_opponent_cash": 99023.4,
+            "mean_margin": 5554.02,
+            "mean_wages": 4352.86,
+            "mean_hires": 236.06,
+            "mean_overflow_units": 12.1,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6678420369999003,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 436
+          }
+        },
+        "aurax_shop_v2": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 32,
+            "draws": 0,
+            "win_rate": 64.0,
+            "mean_cash": 105042.66,
+            "mean_opponent_cash": 99979.26,
+            "mean_margin": 5063.4,
+            "mean_wages": 4325.0,
+            "mean_hires": 236.44,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.9661879370005408,
+            "over_one_second": 36,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 32,
+            "draws": 0,
+            "win_rate": 64.0,
+            "mean_cash": 105042.66,
+            "mean_opponent_cash": 99979.26,
+            "mean_margin": 5063.4,
+            "mean_wages": 4325.0,
+            "mean_hires": 236.44,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.5927781680002226,
+            "over_one_second": 32,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 34,
+            "draws": 0,
+            "win_rate": 68.0,
+            "mean_cash": 102735.0,
+            "mean_opponent_cash": 96951.18,
+            "mean_margin": 5783.82,
+            "mean_wages": 4215.52,
+            "mean_hires": 236.14,
+            "mean_overflow_units": 9.04,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6691077740001674,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 465
+          }
+        },
+        "flexon_v5": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.0,
+            "mean_opponent_cash": 100074.92,
+            "mean_margin": 5011.08,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.7733669859999281,
+            "over_one_second": 32,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.0,
+            "mean_opponent_cash": 100074.92,
+            "mean_margin": 5011.08,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.8424473579998448,
+            "over_one_second": 33,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 34,
+            "draws": 0,
+            "win_rate": 68.0,
+            "mean_cash": 102057.3,
+            "mean_opponent_cash": 96419.08,
+            "mean_margin": 5638.22,
+            "mean_wages": 4311.92,
+            "mean_hires": 236.9,
+            "mean_overflow_units": 8.86,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6710979320000661,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 447
+          }
+        },
+        "market_smart_v8": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105085.96,
+            "mean_opponent_cash": 100078.4,
+            "mean_margin": 5007.56,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.7835178969999106,
+            "over_one_second": 29,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105085.96,
+            "mean_opponent_cash": 100078.4,
+            "mean_margin": 5007.56,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.4913381569999729,
+            "over_one_second": 28,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 36,
+            "draws": 0,
+            "win_rate": 72.0,
+            "mean_cash": 102609.88,
+            "mean_opponent_cash": 96846.16,
+            "mean_margin": 5763.72,
+            "mean_wages": 4248.88,
+            "mean_hires": 236.66,
+            "mean_overflow_units": 9.48,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6779284500003087,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 462
+          }
+        },
+        "moon_v215": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104997.68,
+            "mean_opponent_cash": 99668.72,
+            "mean_margin": 5328.96,
+            "mean_wages": 4376.88,
+            "mean_hires": 236.2,
+            "mean_overflow_units": 12.96,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.7179730790003305,
+            "over_one_second": 30,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104997.68,
+            "mean_opponent_cash": 99668.72,
+            "mean_margin": 5328.96,
+            "mean_wages": 4376.88,
+            "mean_hires": 236.2,
+            "mean_overflow_units": 12.96,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.3804298850000123,
+            "over_one_second": 23,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 31,
+            "draws": 0,
+            "win_rate": 62.0,
+            "mean_cash": 104849.44,
+            "mean_opponent_cash": 98711.92,
+            "mean_margin": 6137.52,
+            "mean_wages": 4428.82,
+            "mean_hires": 237.04,
+            "mean_overflow_units": 10.78,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6672608139999738,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 467
+          }
+        },
+        "nagatakengo_v70": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 50,
+            "draws": 0,
+            "win_rate": 100.0,
+            "mean_cash": 163480.24,
+            "mean_opponent_cash": 51781.48,
+            "mean_margin": 111698.76,
+            "mean_wages": 4119.38,
+            "mean_hires": 230.64,
+            "mean_overflow_units": 20.2,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.5314803090000169,
+            "over_one_second": 26,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 50,
+            "draws": 0,
+            "win_rate": 100.0,
+            "mean_cash": 163480.24,
+            "mean_opponent_cash": 51781.48,
+            "mean_margin": 111698.76,
+            "mean_wages": 4119.38,
+            "mean_hires": 230.64,
+            "mean_overflow_units": 20.2,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.4329559390000668,
+            "over_one_second": 14,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 50,
+            "draws": 0,
+            "win_rate": 100.0,
+            "mean_cash": 162270.8,
+            "mean_opponent_cash": 50669.52,
+            "mean_margin": 111601.28,
+            "mean_wages": 4085.8,
+            "mean_hires": 229.9,
+            "mean_overflow_units": 19.0,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6649812600003315,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 245
+          }
+        },
+        "seven_turn": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.0,
+            "mean_opponent_cash": 100074.92,
+            "mean_margin": 5011.08,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 2.4068123530005323,
+            "over_one_second": 45,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.0,
+            "mean_opponent_cash": 100074.92,
+            "mean_margin": 5011.08,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.8162500610005736,
+            "over_one_second": 33,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 31,
+            "draws": 0,
+            "win_rate": 62.0,
+            "mean_cash": 103667.88,
+            "mean_opponent_cash": 98144.04,
+            "mean_margin": 5523.84,
+            "mean_wages": 4207.46,
+            "mean_hires": 236.58,
+            "mean_overflow_units": 11.94,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6785564309998335,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 498
+          }
+        },
+        "shop0909": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.64,
+            "mean_opponent_cash": 100064.4,
+            "mean_margin": 5022.24,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.851152784000078,
+            "over_one_second": 26,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 105086.64,
+            "mean_opponent_cash": 100064.4,
+            "mean_margin": 5022.24,
+            "mean_wages": 4335.68,
+            "mean_hires": 236.56,
+            "mean_overflow_units": 10.22,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.8359278170000835,
+            "over_one_second": 26,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 33,
+            "draws": 0,
+            "win_rate": 66.0,
+            "mean_cash": 101741.38,
+            "mean_opponent_cash": 96388.88,
+            "mean_margin": 5352.5,
+            "mean_wages": 4292.54,
+            "mean_hires": 236.8,
+            "mean_overflow_units": 8.4,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6720780350001405,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 415
+          }
+        },
+        "soil_v219g": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104899.32,
+            "mean_opponent_cash": 100957.16,
+            "mean_margin": 3942.16,
+            "mean_wages": 4396.0,
+            "mean_hires": 237.0,
+            "mean_overflow_units": 10.42,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.654193503999977,
+            "over_one_second": 35,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 104899.32,
+            "mean_opponent_cash": 100957.16,
+            "mean_margin": 3942.16,
+            "mean_wages": 4396.0,
+            "mean_hires": 237.0,
+            "mean_overflow_units": 10.42,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.6066180210000311,
+            "over_one_second": 34,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 101946.3,
+            "mean_opponent_cash": 98196.14,
+            "mean_margin": 3750.16,
+            "mean_wages": 4321.14,
+            "mean_hires": 236.96,
+            "mean_overflow_units": 8.68,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.670195220000096,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 481
+          }
+        },
+        "submission_56140347": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 32,
+            "draws": 0,
+            "win_rate": 64.0,
+            "mean_cash": 98221.74,
+            "mean_opponent_cash": 94327.24,
+            "mean_margin": 3894.5,
+            "mean_wages": 4160.58,
+            "mean_hires": 229.58,
+            "mean_overflow_units": 20.5,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.5514670000002297,
+            "over_one_second": 35,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 31,
+            "draws": 0,
+            "win_rate": 62.0,
+            "mean_cash": 100119.38,
+            "mean_opponent_cash": 97318.48,
+            "mean_margin": 2800.9,
+            "mean_wages": 4181.14,
+            "mean_hires": 229.6,
+            "mean_overflow_units": 23.06,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 184,
+            "unexpected_uncompleted": 100,
+            "explicit_deferrals": 84,
+            "max_seconds": 1.8263744320001933,
+            "over_one_second": 32,
+            "recovery_events": 39,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 34,
+            "draws": 0,
+            "win_rate": 68.0,
+            "mean_cash": 98934.62,
+            "mean_opponent_cash": 95386.7,
+            "mean_margin": 3547.92,
+            "mean_wages": 4143.84,
+            "mean_hires": 229.52,
+            "mean_overflow_units": 22.94,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 132,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 132,
+            "max_seconds": 0.6726323200000479,
+            "over_one_second": 0,
+            "recovery_events": 11,
+            "recovery_kept": 1,
+            "recovery_retries": 0,
+            "recovery_joint": 7,
+            "recovery_partial": 0,
+            "budget_stops": 442
+          }
+        },
+        "submission_56140351": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 33,
+            "draws": 0,
+            "win_rate": 66.0,
+            "mean_cash": 97998.4,
+            "mean_opponent_cash": 94724.4,
+            "mean_margin": 3274.0,
+            "mean_wages": 4152.2,
+            "mean_hires": 229.76,
+            "mean_overflow_units": 19.5,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.6027568350000365,
+            "over_one_second": 30,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 30,
+            "draws": 0,
+            "win_rate": 60.0,
+            "mean_cash": 99259.7,
+            "mean_opponent_cash": 97203.76,
+            "mean_margin": 2055.94,
+            "mean_wages": 4125.6,
+            "mean_hires": 229.46,
+            "mean_overflow_units": 23.38,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 184,
+            "unexpected_uncompleted": 100,
+            "explicit_deferrals": 84,
+            "max_seconds": 1.2522416120000344,
+            "over_one_second": 25,
+            "recovery_events": 39,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 31,
+            "draws": 0,
+            "win_rate": 62.0,
+            "mean_cash": 99582.52,
+            "mean_opponent_cash": 97067.56,
+            "mean_margin": 2514.96,
+            "mean_wages": 4206.18,
+            "mean_hires": 230.1,
+            "mean_overflow_units": 24.26,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 132,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 132,
+            "max_seconds": 0.6841455779999706,
+            "over_one_second": 0,
+            "recovery_events": 10,
+            "recovery_kept": 1,
+            "recovery_retries": 0,
+            "recovery_joint": 6,
+            "recovery_partial": 0,
+            "budget_stops": 429
+          }
+        },
+        "thomas_955_v2": {
+          "workflow": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 34,
+            "draws": 0,
+            "win_rate": 68.0,
+            "mean_cash": 105573.4,
+            "mean_opponent_cash": 100263.64,
+            "mean_margin": 5309.76,
+            "mean_wages": 4242.24,
+            "mean_hires": 232.94,
+            "mean_overflow_units": 13.0,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.395941214999766,
+            "over_one_second": 36,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 34,
+            "draws": 0,
+            "win_rate": 68.0,
+            "mean_cash": 104873.48,
+            "mean_opponent_cash": 98990.68,
+            "mean_margin": 5882.8,
+            "mean_wages": 4256.48,
+            "mean_hires": 232.9,
+            "mean_overflow_units": 12.84,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 1.7832668700002614,
+            "over_one_second": 28,
+            "recovery_events": 2,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 50,
+            "seeds": 25,
+            "wins": 36,
+            "draws": 0,
+            "win_rate": 72.0,
+            "mean_cash": 107646.74,
+            "mean_opponent_cash": 101080.34,
+            "mean_margin": 6566.4,
+            "mean_wages": 4277.42,
+            "mean_hires": 232.76,
+            "mean_overflow_units": 11.98,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 0.6681958919998578,
+            "over_one_second": 0,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 430
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "baseline": "workflow",
+          "pairs": 650,
+          "seeds": 25,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": 2.923076923076923,
+              "ci95": [
+                -3.846153846153846,
+                10.307692307692307
+              ]
+            },
+            "cash": {
+              "mean": -1212.82,
+              "ci95": [
+                -2963.2523076923076,
+                365.92
+              ]
+            },
+            "margin": {
+              "mean": 272.7353846153846,
+              "ci95": [
+                -352.66307692307697,
+                983.7984615384615
+              ]
+            },
+            "wages": {
+              "mean": -35.8,
+              "ci95": [
+                -127.46923076923076,
+                53.32000000000001
+              ]
+            },
+            "hires": {
+              "mean": 0.018461538461538463,
+              "ci95": [
+                -0.6,
+                0.6446153846153845
+              ]
+            }
+          },
+          "gained_wins": 53,
+          "lost_wins": 34
+        },
+        {
+          "baseline": "recovery",
+          "pairs": 650,
+          "seeds": 25,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": 3.5384615384615383,
+              "ci95": [
+                -3.0769230769230766,
+                10.923076923076923
+              ]
+            },
+            "cash": {
+              "mean": -1401.9753846153847,
+              "ci95": [
+                -3354.624615384615,
+                367.0338461538462
+              ]
+            },
+            "margin": {
+              "mean": 406.4753846153846,
+              "ci95": [
+                -263.05230769230764,
+                1108.5661538461538
+              ]
+            },
+            "wages": {
+              "mean": -36.43076923076923,
+              "ci95": [
+                -123.52153846153847,
+                48.72461538461538
+              ]
+            },
+            "hires": {
+              "mean": 0.043076923076923075,
+              "ci95": [
+                -0.543076923076923,
+                0.6676923076923077
+              ]
+            }
+          },
+          "gained_wins": 53,
+          "lost_wins": 30
+        }
+      ],
+      "caveats": [
+        "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+        "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+        "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+      ]
+    },
+    "joint_r1_100": {
+      "stage": "latest",
+      "games": 600,
+      "observations": 864000,
+      "arms": {
+        "workflow": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 101,
+          "draws": 0,
+          "win_rate": 50.5,
+          "mean_cash": 99790.85,
+          "mean_opponent_cash": 98892.235,
+          "mean_margin": 898.615,
+          "mean_wages": 4173.9,
+          "mean_hires": 230.66,
+          "mean_overflow_units": 18.725,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 0,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 0,
+          "max_seconds": 2.5232385199997225,
+          "over_one_second": 244,
+          "recovery_events": 0,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "recovery": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 102,
+          "draws": 0,
+          "win_rate": 51.0,
+          "mean_cash": 99281.705,
+          "mean_opponent_cash": 98271.41,
+          "mean_margin": 1010.295,
+          "mean_wages": 4164.135,
+          "mean_hires": 230.66,
+          "mean_overflow_units": 18.535,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 6,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 6,
+          "max_seconds": 2.370437092999964,
+          "over_one_second": 228,
+          "recovery_events": 132,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "fixed": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 99,
+          "draws": 0,
+          "win_rate": 49.5,
+          "mean_cash": 99848.005,
+          "mean_opponent_cash": 99171.26,
+          "mean_margin": 676.745,
+          "mean_wages": 4187.065,
+          "mean_hires": 230.88,
+          "mean_overflow_units": 19.19,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 1072,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 1072,
+          "max_seconds": 0.6914500989996668,
+          "over_one_second": 0,
+          "recovery_events": 57,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 30,
+          "recovery_partial": 0,
+          "budget_stops": 2309
+        }
+      },
+      "opponents": {
+        "submission_56146577": {
+          "workflow": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 101,
+            "draws": 0,
+            "win_rate": 50.5,
+            "mean_cash": 99790.85,
+            "mean_opponent_cash": 98892.235,
+            "mean_margin": 898.615,
+            "mean_wages": 4173.9,
+            "mean_hires": 230.66,
+            "mean_overflow_units": 18.725,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 2.5232385199997225,
+            "over_one_second": 244,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 102,
+            "draws": 0,
+            "win_rate": 51.0,
+            "mean_cash": 99281.705,
+            "mean_opponent_cash": 98271.41,
+            "mean_margin": 1010.295,
+            "mean_wages": 4164.135,
+            "mean_hires": 230.66,
+            "mean_overflow_units": 18.535,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 6,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 6,
+            "max_seconds": 2.370437092999964,
+            "over_one_second": 228,
+            "recovery_events": 132,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 99,
+            "draws": 0,
+            "win_rate": 49.5,
+            "mean_cash": 99848.005,
+            "mean_opponent_cash": 99171.26,
+            "mean_margin": 676.745,
+            "mean_wages": 4187.065,
+            "mean_hires": 230.88,
+            "mean_overflow_units": 19.19,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 1072,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 1072,
+            "max_seconds": 0.6914500989996668,
+            "over_one_second": 0,
+            "recovery_events": 57,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 30,
+            "recovery_partial": 0,
+            "budget_stops": 2309
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "baseline": "workflow",
+          "pairs": 200,
+          "seeds": 100,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": -1.0,
+              "ci95": [
+                -9.5,
+                8.0
+              ]
+            },
+            "cash": {
+              "mean": 57.155,
+              "ci95": [
+                -1779.635,
+                1932.875
+              ]
+            },
+            "margin": {
+              "mean": -221.87,
+              "ci95": [
+                -1120.78,
+                660.92
+              ]
+            },
+            "wages": {
+              "mean": 13.165,
+              "ci95": [
+                -87.58,
+                119.665
+              ]
+            },
+            "hires": {
+              "mean": 0.22,
+              "ci95": [
+                -0.84,
+                1.35
+              ]
+            }
+          },
+          "gained_wins": 27,
+          "lost_wins": 29
+        },
+        {
+          "baseline": "recovery",
+          "pairs": 200,
+          "seeds": 100,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": -1.5,
+              "ci95": [
+                -10.0,
+                6.5
+              ]
+            },
+            "cash": {
+              "mean": 566.3,
+              "ci95": [
+                -1213.395,
+                2378.62
+              ]
+            },
+            "margin": {
+              "mean": -333.55,
+              "ci95": [
+                -1271.945,
+                598.205
+              ]
+            },
+            "wages": {
+              "mean": 22.93,
+              "ci95": [
+                -82.99,
+                126.645
+              ]
+            },
+            "hires": {
+              "mean": 0.22,
+              "ci95": [
+                -0.885,
+                1.35
+              ]
+            }
+          },
+          "gained_wins": 26,
+          "lost_wins": 29
+        }
+      ],
+      "caveats": [
+        "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+        "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+        "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+      ]
+    },
+    "joint_r2_100": {
+      "stage": "latest",
+      "games": 600,
+      "observations": 864000,
+      "arms": {
+        "workflow": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 122,
+          "draws": 0,
+          "win_rate": 61.0,
+          "mean_cash": 99790.36,
+          "mean_opponent_cash": 97887.79,
+          "mean_margin": 1902.57,
+          "mean_wages": 4240.255,
+          "mean_hires": 230.64,
+          "mean_overflow_units": 17.845,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 0,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 0,
+          "max_seconds": 3.491772261999813,
+          "over_one_second": 213,
+          "recovery_events": 0,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "recovery": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 125,
+          "draws": 0,
+          "win_rate": 62.5,
+          "mean_cash": 99207.35,
+          "mean_opponent_cash": 97295.76,
+          "mean_margin": 1911.59,
+          "mean_wages": 4188.705,
+          "mean_hires": 230.245,
+          "mean_overflow_units": 18.205,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 546,
+          "unexpected_uncompleted": 256,
+          "explicit_deferrals": 290,
+          "max_seconds": 3.2205351610000434,
+          "over_one_second": 200,
+          "recovery_events": 164,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 0
+        },
+        "fixed": {
+          "games": 200,
+          "seeds": 100,
+          "wins": 97,
+          "draws": 0,
+          "win_rate": 48.5,
+          "mean_cash": 99804.3,
+          "mean_opponent_cash": 99201.5,
+          "mean_margin": 602.8,
+          "mean_wages": 4284.63,
+          "mean_hires": 230.765,
+          "mean_overflow_units": 20.3,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 1891,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 1891,
+          "max_seconds": 0.6920877109999992,
+          "over_one_second": 0,
+          "recovery_events": 80,
+          "recovery_kept": 1,
+          "recovery_retries": 0,
+          "recovery_joint": 36,
+          "recovery_partial": 0,
+          "budget_stops": 2008
+        }
+      },
+      "opponents": {
+        "submission_56149565": {
+          "workflow": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 122,
+            "draws": 0,
+            "win_rate": 61.0,
+            "mean_cash": 99790.36,
+            "mean_opponent_cash": 97887.79,
+            "mean_margin": 1902.57,
+            "mean_wages": 4240.255,
+            "mean_hires": 230.64,
+            "mean_overflow_units": 17.845,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 0,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 0,
+            "max_seconds": 3.491772261999813,
+            "over_one_second": 213,
+            "recovery_events": 0,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "recovery": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 125,
+            "draws": 0,
+            "win_rate": 62.5,
+            "mean_cash": 99207.35,
+            "mean_opponent_cash": 97295.76,
+            "mean_margin": 1911.59,
+            "mean_wages": 4188.705,
+            "mean_hires": 230.245,
+            "mean_overflow_units": 18.205,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 546,
+            "unexpected_uncompleted": 256,
+            "explicit_deferrals": 290,
+            "max_seconds": 3.2205351610000434,
+            "over_one_second": 200,
+            "recovery_events": 164,
+            "recovery_kept": 0,
+            "recovery_retries": 0,
+            "recovery_joint": 0,
+            "recovery_partial": 0,
+            "budget_stops": 0
+          },
+          "fixed": {
+            "games": 200,
+            "seeds": 100,
+            "wins": 97,
+            "draws": 0,
+            "win_rate": 48.5,
+            "mean_cash": 99804.3,
+            "mean_opponent_cash": 99201.5,
+            "mean_margin": 602.8,
+            "mean_wages": 4284.63,
+            "mean_hires": 230.765,
+            "mean_overflow_units": 20.3,
+            "invalid_actions": 0,
+            "recorded_uncompleted": 1891,
+            "unexpected_uncompleted": 0,
+            "explicit_deferrals": 1891,
+            "max_seconds": 0.6920877109999992,
+            "over_one_second": 0,
+            "recovery_events": 80,
+            "recovery_kept": 1,
+            "recovery_retries": 0,
+            "recovery_joint": 36,
+            "recovery_partial": 0,
+            "budget_stops": 2008
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "baseline": "workflow",
+          "pairs": 200,
+          "seeds": 100,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": -12.5,
+              "ci95": [
+                -22.0,
+                -3.0
+              ]
+            },
+            "cash": {
+              "mean": 13.94,
+              "ci95": [
+                -1672.005,
+                1643.24
+              ]
+            },
+            "margin": {
+              "mean": -1299.77,
+              "ci95": [
+                -2277.545,
+                -355.7
+              ]
+            },
+            "wages": {
+              "mean": 44.375,
+              "ci95": [
+                -69.43,
+                157.525
+              ]
+            },
+            "hires": {
+              "mean": 0.125,
+              "ci95": [
+                -0.9,
+                1.15
+              ]
+            }
+          },
+          "gained_wins": 21,
+          "lost_wins": 46
+        },
+        {
+          "baseline": "recovery",
+          "pairs": 200,
+          "seeds": 100,
+          "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+          "deltas": {
+            "win": {
+              "mean": -14.0,
+              "ci95": [
+                -23.5,
+                -4.5
+              ]
+            },
+            "cash": {
+              "mean": 596.95,
+              "ci95": [
+                -1207.115,
+                2310.58
+              ]
+            },
+            "margin": {
+              "mean": -1308.79,
+              "ci95": [
+                -2385.09,
+                -218.23
+              ]
+            },
+            "wages": {
+              "mean": 95.925,
+              "ci95": [
+                -26.015,
+                215.83
+              ]
+            },
+            "hires": {
+              "mean": 0.52,
+              "ci95": [
+                -0.675,
+                1.715
+              ]
+            }
+          },
+          "gained_wins": 22,
+          "lost_wins": 50
+        }
+      ],
+      "caveats": [
+        "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+        "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+        "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+      ]
+    }
+  },
+  "balanced25": {
+    "arms": {
+      "workflow": {
+        "games": 750,
+        "seeds": 25,
+        "wins": 475,
+        "draws": 0,
+        "win_rate": 63.33333333333333,
+        "mean_cash": 107751.62133333333,
+        "mean_opponent_cash": 96369.228,
+        "mean_margin": 11382.393333333333,
+        "mean_wages": 4291.425333333334,
+        "mean_hires": 234.17066666666668,
+        "mean_overflow_units": 13.670666666666667,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 0,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 0,
+        "max_seconds": 2.4533305449999716,
+        "over_one_second": 555,
+        "recovery_events": 0,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "recovery": {
+        "games": 750,
+        "seeds": 25,
+        "wins": 476,
+        "draws": 0,
+        "win_rate": 63.46666666666667,
+        "mean_cash": 107859.63333333333,
+        "mean_opponent_cash": 96508.75066666666,
+        "mean_margin": 11350.882666666666,
+        "mean_wages": 4277.517333333333,
+        "mean_hires": 234.05466666666666,
+        "mean_overflow_units": 13.882666666666667,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 430,
+        "unexpected_uncompleted": 200,
+        "explicit_deferrals": 230,
+        "max_seconds": 2.2069544379999684,
+        "over_one_second": 504,
+        "recovery_events": 138,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "fixed": {
+        "games": 750,
+        "seeds": 25,
+        "wins": 485,
+        "draws": 0,
+        "win_rate": 64.66666666666666,
+        "mean_cash": 106843.95333333334,
+        "mean_opponent_cash": 95398.18,
+        "mean_margin": 11445.773333333333,
+        "mean_wages": 4246.0453333333335,
+        "mean_hires": 234.13466666666667,
+        "mean_overflow_units": 13.553333333333333,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 1225,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 1225,
+        "max_seconds": 0.6920877109999992,
+        "over_one_second": 0,
+        "recovery_events": 54,
+        "recovery_kept": 3,
+        "recovery_retries": 0,
+        "recovery_joint": 23,
+        "recovery_partial": 0,
+        "budget_stops": 6858
+      }
+    },
+    "comparisons": [
+      {
+        "baseline": "workflow",
+        "pairs": 750,
+        "seeds": 25,
+        "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+        "deltas": {
+          "win": {
+            "mean": 1.3333333333333333,
+            "ci95": [
+              -4.4,
+              7.733333333333333
+            ]
+          },
+          "cash": {
+            "mean": -907.668,
+            "ci95": [
+              -2342.26,
+              393.74533333333335
+            ]
+          },
+          "margin": {
+            "mean": 63.38,
+            "ci95": [
+              -471.00800000000004,
+              677.5306666666667
+            ]
+          },
+          "wages": {
+            "mean": -45.38,
+            "ci95": [
+              -123.49466666666667,
+              29.88
+            ]
+          },
+          "hires": {
+            "mean": -0.036,
+            "ci95": [
+              -0.6413333333333334,
+              0.564
+            ]
+          }
+        },
+        "gained_wins": 67,
+        "lost_wins": 57
+      },
+      {
+        "baseline": "recovery",
+        "pairs": 750,
+        "seeds": 25,
+        "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+        "deltas": {
+          "win": {
+            "mean": 1.2,
+            "ci95": [
+              -4.4,
+              7.466666666666666
+            ]
+          },
+          "cash": {
+            "mean": -1015.68,
+            "ci95": [
+              -2689.888,
+              571.9159999999999
+            ]
+          },
+          "margin": {
+            "mean": 94.89066666666666,
+            "ci95": [
+              -464.57866666666666,
+              696.5413333333333
+            ]
+          },
+          "wages": {
+            "mean": -31.472,
+            "ci95": [
+              -106.07600000000001,
+              40.42666666666666
+            ]
+          },
+          "hires": {
+            "mean": 0.08,
+            "ci95": [
+              -0.5026666666666667,
+              0.6826666666666666
+            ]
+          }
+        },
+        "gained_wins": 64,
+        "lost_wins": 55
+      }
+    ]
+  },
+  "latest100": {
+    "arms": {
+      "workflow": {
+        "games": 400,
+        "seeds": 100,
+        "wins": 223,
+        "draws": 0,
+        "win_rate": 55.75,
+        "mean_cash": 99790.605,
+        "mean_opponent_cash": 98390.0125,
+        "mean_margin": 1400.5925,
+        "mean_wages": 4207.0775,
+        "mean_hires": 230.65,
+        "mean_overflow_units": 18.285,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 0,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 0,
+        "max_seconds": 3.491772261999813,
+        "over_one_second": 457,
+        "recovery_events": 0,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "recovery": {
+        "games": 400,
+        "seeds": 100,
+        "wins": 227,
+        "draws": 0,
+        "win_rate": 56.75,
+        "mean_cash": 99244.5275,
+        "mean_opponent_cash": 97783.585,
+        "mean_margin": 1460.9425,
+        "mean_wages": 4176.42,
+        "mean_hires": 230.4525,
+        "mean_overflow_units": 18.37,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 552,
+        "unexpected_uncompleted": 256,
+        "explicit_deferrals": 296,
+        "max_seconds": 3.2205351610000434,
+        "over_one_second": 428,
+        "recovery_events": 296,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 0
+      },
+      "fixed": {
+        "games": 400,
+        "seeds": 100,
+        "wins": 196,
+        "draws": 0,
+        "win_rate": 49.0,
+        "mean_cash": 99826.1525,
+        "mean_opponent_cash": 99186.38,
+        "mean_margin": 639.7725,
+        "mean_wages": 4235.8475,
+        "mean_hires": 230.8225,
+        "mean_overflow_units": 19.745,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 2963,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 2963,
+        "max_seconds": 0.6920877109999992,
+        "over_one_second": 0,
+        "recovery_events": 137,
+        "recovery_kept": 1,
+        "recovery_retries": 0,
+        "recovery_joint": 66,
+        "recovery_partial": 0,
+        "budget_stops": 4317
+      }
+    },
+    "comparisons": [
+      {
+        "baseline": "workflow",
+        "pairs": 400,
+        "seeds": 100,
+        "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+        "deltas": {
+          "win": {
+            "mean": -6.75,
+            "ci95": [
+              -13.5,
+              0.25
+            ]
+          },
+          "cash": {
+            "mean": 35.5475,
+            "ci95": [
+              -1267.655,
+              1337.53
+            ]
+          },
+          "margin": {
+            "mean": -760.82,
+            "ci95": [
+              -1390.995,
+              -133.42
+            ]
+          },
+          "wages": {
+            "mean": 28.77,
+            "ci95": [
+              -48.3075,
+              106.165
+            ]
+          },
+          "hires": {
+            "mean": 0.1725,
+            "ci95": [
+              -0.625,
+              1.0075
+            ]
+          }
+        },
+        "gained_wins": 48,
+        "lost_wins": 75
+      },
+      {
+        "baseline": "recovery",
+        "pairs": 400,
+        "seeds": 100,
+        "method": "10000 paired bootstrap samples, clustered by seed; retain seats and opponents together",
+        "deltas": {
+          "win": {
+            "mean": -7.75,
+            "ci95": [
+              -14.25,
+              -1.0
+            ]
+          },
+          "cash": {
+            "mean": 581.625,
+            "ci95": [
+              -673.01,
+              1832.63
+            ]
+          },
+          "margin": {
+            "mean": -821.17,
+            "ci95": [
+              -1567.5725,
+              -49.9875
+            ]
+          },
+          "wages": {
+            "mean": 59.4275,
+            "ci95": [
+              -17.555,
+              137.7925
+            ]
+          },
+          "hires": {
+            "mean": 0.37,
+            "ci95": [
+              -0.43,
+              1.1975
+            ]
+          }
+        },
+        "gained_wins": 48,
+        "lost_wins": 79
+      }
+    ]
+  },
+  "binary_sha256": {
+    "workflow": "300462b1d83b5fe8a01b2eed75f44b147f4e28b89f6978bf12a587da0c746d09",
+    "recovery": "a540d2c14ee8cabc2905a0d858e70b5fc48359b8ccc28b358eae7391459be98e",
+    "fixed": "6aec10175b80db7b94b1e1abd84ce872a5d8bae2e29c0c47fef524f2410fc557"
+  },
+  "regression": {
+    "stage": "regression",
+    "games": 14,
+    "observations": 20160,
+    "arms": {
+      "fixed": {
+        "games": 14,
+        "seeds": 7,
+        "wins": 9,
+        "draws": 0,
+        "win_rate": 64.28571428571429,
+        "mean_cash": 103900.28571428571,
+        "mean_opponent_cash": 103193.21428571429,
+        "mean_margin": 707.0714285714286,
+        "mean_wages": 4270.642857142857,
+        "mean_hires": 231.42857142857142,
+        "mean_overflow_units": 27.428571428571427,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 156,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 156,
+        "max_seconds": 0.6558892170000377,
+        "over_one_second": 0,
+        "recovery_events": 6,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 4,
+        "recovery_partial": 0,
+        "budget_stops": 53
+      }
+    },
+    "opponents": {
+      "submission_56140347": {
+        "fixed": {
+          "games": 6,
+          "seeds": 3,
+          "wins": 5,
+          "draws": 0,
+          "win_rate": 83.33333333333334,
+          "mean_cash": 108862.5,
+          "mean_opponent_cash": 106859.16666666667,
+          "mean_margin": 2003.3333333333333,
+          "mean_wages": 4008.5,
+          "mean_hires": 228.33333333333334,
+          "mean_overflow_units": 14.833333333333334,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 76,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 76,
+          "max_seconds": 0.6558892170000377,
+          "over_one_second": 0,
+          "recovery_events": 2,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 0,
+          "recovery_partial": 0,
+          "budget_stops": 21
+        }
+      },
+      "submission_56146577": {
+        "fixed": {
+          "games": 8,
+          "seeds": 4,
+          "wins": 4,
+          "draws": 0,
+          "win_rate": 50.0,
+          "mean_cash": 100178.625,
+          "mean_opponent_cash": 100443.75,
+          "mean_margin": -265.125,
+          "mean_wages": 4467.25,
+          "mean_hires": 233.75,
+          "mean_overflow_units": 36.875,
+          "invalid_actions": 0,
+          "recorded_uncompleted": 80,
+          "unexpected_uncompleted": 0,
+          "explicit_deferrals": 80,
+          "max_seconds": 0.6549174949999497,
+          "over_one_second": 0,
+          "recovery_events": 4,
+          "recovery_kept": 0,
+          "recovery_retries": 0,
+          "recovery_joint": 4,
+          "recovery_partial": 0,
+          "budget_stops": 32
+        }
+      }
+    },
+    "comparisons": [],
+    "caveats": [
+      "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+      "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+      "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+    ]
+  },
+  "downloads": {
+    "selection": "Latest two successful team submissions by submission time, queried in SUBMISSIONS.json",
+    "submission_56146577": {
+      "status": "available_original_archive",
+      "archive": "downloads/56146577/submission.tar.gz",
+      "sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+      "provenance": "Original uploaded archive obtained from GitHub e0a0ca78a662037bac8851fa945ca6a81ff4b5d8; matches uploader receipt and independently queried Kaggle submission metadata. See downloads/56146577/GITHUB_ACQUISITION.json.",
+      "games_run": 600,
+      "validation": "All 600 live games and 864000 observations checked; independent terminal reward recount passed."
+    },
+    "submission_56149565": {
+      "status": "available_user_supplied_archive",
+      "observed_failures": [
+        "Kaggle authenticated browser download: Invalid InterceptionId",
+        "Official raw URL opened in browser: net::ERR_BLOCKED_BY_CLIENT"
+      ],
+      "latest_checked_github_commit": "1a0d9c3c7746533222b9e745275dfa14b7cf7bef",
+      "github_check": "No submission archive or uploader receipt for 56149565 in this commit. The new AFS workflow-repair package contains modified builds and is not used as a substitute.",
+      "user_input": "Requested manual download of the original submission.tar.gz into Downloads or its existing local path.",
+      "games_run": 600,
+      "last_local_archive_check_utc": "2026-09-11T02:03:33.797954+00:00",
+      "archive": "downloads/56149565/submission.tar.gz",
+      "sha256": "363101251f64cd1967c0203812d30782c57daf39c117e7852811b26b8f6db804",
+      "provenance": "User supplied this local archive after the pending request for submission 56149565. Its main.py identifies Portable P16 JointAFS R2 LocalExchange, consistent with the frozen official submission description; archive size 985113 bytes matches the previously observed rounded 962 KiB. Submission ID mapping is based on this context and entry label, not an independently authenticated Kaggle archive hash. Original bytes preserved; no rebuild or runtime edit.",
+      "acquisition_receipt": "downloads/56149565/USER_ACQUISITION.json",
+      "validation": "All 600 live games and 864000 observations checked; independent terminal reward recount passed. Serial timing review is separate and excluded from win rates."
+    }
+  },
+  "downloaded_opponent_results": {
+    "submission_56146577": {
+      "games": 600,
+      "wins": 298,
+      "draws": 0,
+      "win_rate": 49.666666666666664,
+      "max_seconds": 2.902825391999613,
+      "over_one_second": 188,
+      "scope": "Against the three local variants only; not a full opponent-pool round robin"
+    },
+    "submission_56149565": {
+      "games": 600,
+      "wins": 256,
+      "draws": 0,
+      "win_rate": 42.666666666666664,
+      "max_seconds": 2.4836908749999793,
+      "over_one_second": 163,
+      "scope": "Against the three local variants only; not a full opponent-pool round robin"
+    }
+  },
+  "serial_timing": [
+    {
+      "panel": "historical25",
+      "arm": "fixed",
+      "seed": 3281773261,
+      "seat": 0,
+      "opponent": "submission_56140351",
+      "batch_peak": 0.6841455779999706,
+      "serial_peak": 0.6433713149999996,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.42531426100003955,
+      "opponent_serial_peak": 0.17828678900000128,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": -3262.0,
+      "serial_margin": 6224.0,
+      "outcome_changed": true
+    },
+    {
+      "panel": "historical25",
+      "arm": "recovery",
+      "seed": 351245521,
+      "seat": 0,
+      "opponent": "ahmed_v27",
+      "batch_peak": 1.8658942450001632,
+      "serial_peak": 0.7603367480000003,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.012520111999947403,
+      "opponent_serial_peak": 0.0015780499999991093,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": -5060.0,
+      "serial_margin": -5060.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "historical25",
+      "arm": "workflow",
+      "seed": 351245521,
+      "seat": 0,
+      "opponent": "seven_turn",
+      "batch_peak": 2.4068123530005323,
+      "serial_peak": 0.6801835129999958,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.1455894310001895,
+      "opponent_serial_peak": 0.07315178399999667,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": -5065.0,
+      "serial_margin": -5065.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r1_100",
+      "arm": "fixed",
+      "seed": 3814107279,
+      "seat": 1,
+      "opponent": "submission_56146577",
+      "batch_peak": 0.6914500989996668,
+      "serial_peak": 0.6542700200000127,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.708907153999462,
+      "opponent_serial_peak": 0.4960706700000088,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": 7132.0,
+      "serial_margin": 5253.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r1_100",
+      "arm": "recovery",
+      "seed": 1855692442,
+      "seat": 1,
+      "opponent": "submission_56146577",
+      "batch_peak": 2.370437092999964,
+      "serial_peak": 0.917049997999996,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.6709683069993844,
+      "opponent_serial_peak": 0.34804686699999365,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": 18110.0,
+      "serial_margin": 18110.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r1_100",
+      "arm": "workflow",
+      "seed": 1855692442,
+      "seat": 1,
+      "opponent": "submission_56146577",
+      "batch_peak": 2.5232385199997225,
+      "serial_peak": 0.8173173200000008,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.697050233000482,
+      "opponent_serial_peak": 0.34817086199998926,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": 19212.0,
+      "serial_margin": 19212.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r2_100",
+      "arm": "fixed",
+      "seed": 2158834468,
+      "seat": 1,
+      "opponent": "submission_56149565",
+      "batch_peak": 0.6920877109999992,
+      "serial_peak": 0.6549491700000001,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 1.7323298650000112,
+      "opponent_serial_peak": 0.8404004870000001,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": 5681.0,
+      "serial_margin": 7637.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r2_100",
+      "arm": "recovery",
+      "seed": 3761901780,
+      "seat": 0,
+      "opponent": "submission_56149565",
+      "batch_peak": 3.2205351610000434,
+      "serial_peak": 1.2746144620000024,
+      "serial_over_one_second": 1,
+      "opponent_batch_peak": 0.9791254319998188,
+      "opponent_serial_peak": 0.253758887999993,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": -4497.0,
+      "serial_margin": -4497.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r2_100",
+      "arm": "workflow",
+      "seed": 1875081603,
+      "seat": 1,
+      "opponent": "submission_56149565",
+      "batch_peak": 3.491772261999813,
+      "serial_peak": 0.8417412989999988,
+      "serial_over_one_second": 0,
+      "opponent_batch_peak": 0.45643620500004545,
+      "opponent_serial_peak": 0.2697847849999988,
+      "opponent_serial_over_one_second": 0,
+      "batch_margin": -25.0,
+      "serial_margin": -25.0,
+      "outcome_changed": false
+    },
+    {
+      "panel": "joint_r2_100",
+      "arm": "workflow",
+      "seed": 2620057225,
+      "seat": 1,
+      "opponent": "submission_56149565",
+      "batch_peak": 1.1863309130000061,
+      "serial_peak": 1.7515832160000002,
+      "serial_over_one_second": 6,
+      "opponent_batch_peak": 2.4836908749999793,
+      "opponent_serial_peak": 2.660465262999992,
+      "opponent_serial_over_one_second": 1,
+      "batch_margin": -1906.0,
+      "serial_margin": -1906.0,
+      "outcome_changed": false
+    }
+  ]
+}
