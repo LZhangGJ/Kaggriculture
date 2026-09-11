@@ -1,0 +1,29 @@
+from pathlib import Path
+import json,statistics
+
+HERE=Path(__file__).resolve().parent
+
+def main():
+    values={};lines=['# 短模拟期限与维护边际收益：实际对战结果','',
+        '原R2同8个分散开发seed、双座位、11实时对手基线118/176。这里只改已冻结的配置；不是未来Oracle。下面的单步耗时来自16进程本机，不能当线上CPU配额验收。','',
+        '|配置|胜数/176|救回/丢旧胜|现金变化|分差变化|完整局/s|最大单步秒|超过1秒次数|',
+        '|---|---:|---:|---:|---:|---:|---:|---:|']
+    for name in ['no_mpc','horizon2','horizon3','service_margin','horizon2_service_margin']:
+        folder=HERE/'horizon_screen8'/name/name
+        if not (folder/'RESULTS.json').exists():continue
+        x=json.loads((folder/'RESULTS.json').read_text());rows=json.loads((folder/'rows.json').read_text())
+        latency=[r['latency']['r2'] for r in rows]
+        x['max_step_seconds']=max(r['maximum'] for r in latency)
+        x['over_1s_steps']=sum(r['over_1s'] for r in latency)
+        x['mean_agent_game_seconds']=statistics.mean(r['total'] for r in latency)
+        values[name]=x
+        lines.append(f"|{name}|{x['overall']['r2_wins']}|{x['rescued']}/{x['lost_wins']}|{x['mean_cash_delta']:+,.1f}|{x['mean_margin_delta']:+,.1f}|{176/x['seconds']:.2f}|{x['max_step_seconds']:.3f}|{x['over_1s_steps']}|")
+    lines+=['','## 解读边界','',
+        '短模拟只是根据公开状态假设对手未来流量；未知商店采用期望，不能据此知道真实未来。多看1–2天可以检查跨日资金/交付，也可能累积错误的未来假设。',
+        '小面板不能确认最佳期限。尤其此前多组小筛增长在完整100seed复验中消失；必须复验，不能直接把horizon2=80%当成总体强度。',
+        '真实实战仍完整719步。这里调整的是决策内部模拟期限，不是把对战截短。',
+        '下一步先完成P8的32新seed配对；再根据完整机制小筛结果决定哪些配置扩大或组合，不覆盖现有best。']
+    (HERE/'HORIZON_SERVICE_RESULTS.json').write_text(json.dumps(values,indent=2))
+    (HERE/'HORIZON_SERVICE_RESULTS_ZH.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    print(json.dumps({k:{'wins':v['overall']['r2_wins'],'max_step':v['max_step_seconds']} for k,v in values.items()}),flush=True)
+if __name__=='__main__':main()

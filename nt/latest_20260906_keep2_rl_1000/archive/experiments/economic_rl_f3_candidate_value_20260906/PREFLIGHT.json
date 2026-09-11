@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "games": 14,
+  "steps": 10066,
+  "unmodified_wrapper_exact": true,
+  "forced_original_choice_exact": true,
+  "threads_1_16_exact": true
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "kaggriculture.public-recent-20260825.kaito-v48-vs-fc24b-traces.v1",
+  "generated_at_utc": "2026-08-25T01:25:25.312964+00:00",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    1302001,
+    1302002
+  ],
+  "seat_swapped": true,
+  "opponent": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\_staging_fc24b_20260823_v1\\main.py",
+  "opponent_sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B",
+  "agents": [
+    {
+      "name": "kaito_v48",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+      "sha256": "DADEE25A9840313218384208C53B2C4752F82C3209CC654632E0B96C65E2664A"
+    }
+  ],
+  "traces": [
+    {
+      "opponent": "kaito_v48",
+      "seed": 1302001,
+      "candidate_seat": 0,
+      "path": "experiments/public_recent_20260825/official_traces/kaito_v48_vs_fc24b_seed1302001_n2x2_v1/candidate_kaito_v48_seat0_seed1302001.jsonl.gz",
+      "file_sha256": "10EC774CEF5C310AB10F93B1DA45FF059B9118BDB6781FDF60099637A8F9F76B",
+      "frames": 720,
+      "terminal_reward": [
+        123915.0,
+        123641.0
+      ]
+    },
+    {
+      "opponent": "kaito_v48",
+      "seed": 1302002,
+      "candidate_seat": 0,
+      "path": "experiments/public_recent_20260825/official_traces/kaito_v48_vs_fc24b_seed1302001_n2x2_v1/candidate_kaito_v48_seat0_seed1302002.jsonl.gz",
+      "file_sha256": "1E6C270464CC1CBE759890065062A4A8A515D30259CADB926C50E1824C794F77",
+      "frames": 720,
+      "terminal_reward": [
+        129419.0,
+        129912.0
+      ]
+    },
+    {
+      "opponent": "kaito_v48",
+      "seed": 1302001,
+      "candidate_seat": 1,
+      "path": "experiments/public_recent_20260825/official_traces/kaito_v48_vs_fc24b_seed1302001_n2x2_v1/candidate_kaito_v48_seat1_seed1302001.jsonl.gz",
+      "file_sha256": "36412A1D1DBD54162363377CED84748126CA176BABFBFE6079902478B809687B",
+      "frames": 720,
+      "terminal_reward": [
+        123641.0,
+        123915.0
+      ]
+    },
+    {
+      "opponent": "kaito_v48",
+      "seed": 1302002,
+      "candidate_seat": 1,
+      "path": "experiments/public_recent_20260825/official_traces/kaito_v48_vs_fc24b_seed1302001_n2x2_v1/candidate_kaito_v48_seat1_seed1302002.jsonl.gz",
+      "file_sha256": "5EAE598C8CF0B7EB79DB2B9F4F2D55A0127AA2388D6605B0B15683B9D727060A",
+      "frames": 720,
+      "terminal_reward": [
+        129912.0,
+        129419.0
+      ]
+    }
+  ],
+  "ok": true
+}

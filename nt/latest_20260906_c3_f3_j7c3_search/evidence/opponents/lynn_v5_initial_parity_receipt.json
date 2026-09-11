@@ -1,0 +1,2375 @@
+{
+  "status": "PASS",
+  "args": {
+    "configs": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/profiles/s5d_bounded_v2/configs.json",
+    "label": "full_chain_autonomous_timing_first_value_replant",
+    "seeds": "20261401,20261404",
+    "seats": "0,1",
+    "mirror": false,
+    "out": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/receipts/lynn_s5d_official_v1",
+    "save_replays": false
+  },
+  "params": {
+    "opponent_supply_weight": 0.75,
+    "competitive_sell_weight": 0.5,
+    "sell_horizon_days": 1,
+    "opening_animals": [
+      "COW",
+      "COW",
+      "SHEEP",
+      "GOOSE",
+      "GOOSE"
+    ],
+    "opening_crops": [
+      4,
+      0,
+      0,
+      6,
+      0
+    ],
+    "economic_land": true,
+    "operating_reserve": 100,
+    "crop_harvest_age": [
+      4,
+      3,
+      8,
+      10,
+      10
+    ],
+    "finite_fertilizer": false,
+    "fix_finite_projection": true,
+    "efficient_water": true,
+    "efficient_care": true,
+    "fix_logistics": true,
+    "own_feed_demand_weight": 0,
+    "committed_feed_weight": 0,
+    "existing_replant_weight": 0,
+    "insertion_hire_estimate": true,
+    "reconcile_seed_drift": false,
+    "plan_zero_expiry": true,
+    "cashflow_value_mode": 0,
+    "funded_bundle_mode": 0,
+    "preparation_work": true,
+    "split_service_jobs": true,
+    "regret_schedule": true,
+    "regret_compile": true,
+    "regret_hire_estimate": true,
+    "terminal_deposit_schedule": true,
+    "overflow_idle_dispatch": true,
+    "capital_time_rank": false,
+    "shared_task_atoms_v2": true,
+    "stepwise_recoordination": true,
+    "preparation_pipeline_v2": true,
+    "schedule_value_compare": true,
+    "net_feed_buffer": true,
+    "preparation_spawn_guard": true,
+    "midroute_delivery": true,
+    "resource_aware_exchange": true,
+    "intraday_admission": true,
+    "intraday_procurement": true,
+    "intraday_declared_value": true,
+    "autonomous_start": true,
+    "joint_investment_portfolio": true,
+    "portfolio_crop_calendar": true,
+    "recover_service_inputs": true,
+    "procure_service_inputs": true,
+    "finance_service_inputs": true,
+    "incremental_pickup_repair": true,
+    "shared_service_insertions": true,
+    "intraday_future_workforce": true,
+    "day_consequence_compare": true,
+    "day_value_public_supply": true,
+    "day_value_replan_next_day": true,
+    "idle_task_handoff": true,
+    "capacity_hauling": true,
+    "sell_deposits": true,
+    "fix_liquidity": true,
+    "exact_schedule_cache": true,
+    "incremental_regret_cost": true,
+    "continuous_market_execution": false,
+    "insert_missing_feed": false,
+    "portfolio_rotation": true,
+    "rotation_timing": true,
+    "compile_consequence": true,
+    "compile_replant_choices": true,
+    "compile_bounded_rollout": true
+  },
+  "build": {
+    "seconds": 29.206239915000005,
+    "source_hashes": {
+      "native/vendor/simulator.cpp": "7823820ef7a563885a2dc5c7ff0499d6ed832f98bff09bf4790cf5e04c5d4928",
+      "native/module.cpp": "ab9a3d540d6ffe3d0076f99ddd839b0e1b632a0f820029e703db74fe43dae2a7",
+      "native/fieldbook_adapter.cpp": "9817a45d44c1b6aa086266797d36a0649e61134fe4e8555a675ae331d60e81ab",
+      "native/boatlee_v29.cpp": "65e33242bc227849c5e8c0b12c7333e899f6f150e576bd27e9044822d93f6bcb",
+      "native/kaito_v58.cpp": "ce97589cfcf7ded45cdbb052d435a8f06a2e95ef13a240bcc9ce614670dd6867",
+      "native/lynn_v5.cpp": "97e874c006187b53da39499e8d7040dbe12729a6c384260c968257ab5d2aabda",
+      "native/three_day_adapter.cpp": "ad219e3d6d6a0d378aceae0c86a0cf48ab2b5c20ace6292a25659e4eb647ea2b",
+      "native/policy.hpp": "71a22d95943e28b212e4347cde3d764fda9eb044dd4fb4266a95e4c7d3030e5c",
+      "native/cash_audit.hpp": "92765c73c162fd3514e14d90cc051ba914a44fc5abcd40cd54266e509dfb118e",
+      "native/production_audit.hpp": "1a23a0a4174aa718e47e738308fa82798866842acfc2d00ee7cc024156bd3ca9",
+      "native/admission_audit.hpp": "3eb45753eb05f9c5c52b7bc96ff34cc02297a671079196059e69e8fbf1cc8070",
+      "native/vendor/simulator.hpp": "8a486c1d1c7cfb8bc68d1a413dbd8e3147dddbc523458c830403814193e85128",
+      "native/vendor/native_teammate.hpp": "31c4f20627a435597562412834612e5925dfb92ff3badfabf12717422f8b1eaf",
+      "native/vendor/native_teammate.cpp": "a00b1c543eb591b87c1fbebd40e5312661e8be2c05bfc84235d149adb91df806",
+      "native/fieldbook_adapter.hpp": "1442d3d48b9facb9e44762573b11eaa761390eada2b8f9d1cf21c15651fea9a8",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy_plugin_abi.hpp": "67679edc55b1951deac859d1191a6eb2198868b3b7237beb2266db9788d80345",
+      "opponents/yhay81_six_day/output/sixday_r4_source/pyrandom.hpp": "3835fe39fbc74b05078022a839dea1c1aff7a9d6d21a1227d4d6cd61a3612d75",
+      "opponents/yhay81_six_day/output/sixday_r4_source/sim.hpp": "f483219c22dd9a05c00e28a200aa48d70d4a461915c09b3a0fb36c0330cc554c",
+      "opponents/yhay81_six_day/output/sixday_r4_source/six_day_budget_guard.hpp": "5cf24ed4099e5b19e9f195869881548f2145a40329fc30d11e682501c3688556",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy.cpp": "a3f04707615b7c04f3ab4a3c593081c98df2dd091be386aa80a3ffad7c00c1b4",
+      "native/boatlee_v29.hpp": "440a929ce84295cb7e1ba0f3756e877f6e5b05ae288c58e393eedf2b01a6ea7c",
+      "native/investment_audit.hpp": "e31f3fed39f3cbbe5c3c4a672cf57c36059022a51e87fa1fa5ea3699a4ea640d",
+      "native/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "native/investment_branch_audit.hpp": "d5a4f325969785dd922d1472420d64e8515d33608e28a7d314897eb420f97b44",
+      "native/resource_handoff_audit.hpp": "110caca92e70e3b0f0426c05ed0f2f3625a83ac67377a78763c3ecbeb9a0fbfa",
+      "native/recoordination_inspection.hpp": "7aa875866b1b46eee630cb83ecee409a8028e1d108b88cb7a72121fdd2dc73d7",
+      "native/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "native/intraday_admission.hpp": "2e97765d2ffad6a54d0c2cbd356473bd53e788019c747db368b3dfee48d6757c",
+      "native/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "native/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "native/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "native/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "native/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "native/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "native/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "native/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "native/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "native/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "native/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "native/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "native/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "native/kaito_v58.hpp": "95bce345ed2c99f05db858520daf5767e023ea79cb579a04eac199712ba62fa8",
+      "native/lynn_v5.hpp": "2cc3e70de8ac429b649e2810461dc45537d4602725c110327d7e671b0ea711df",
+      "native/three_day_adapter.hpp": "d8f8750cc52cfdd0ece290aa96a329b9286eade1a13731df911caf01ed34ad7b",
+      "opponents/yhay81_three_day/output/source/policy.cpp": "abdb6b13cb91504409de0cf53679c5443f309f1fe937f676e68707830744392b",
+      "opponents/yhay81_three_day/output/source/tape.inc": "30b724c3c905d0c03e4ef38d36f96fb7acbd6abef5371abbedee36ea3717e09f",
+      "opponents/yhay81_three_day/output/source/include/policy_plugin_abi.hpp": "4eb7647da3660688685a8ff032bd1ada6558605a27ae6b86fc338a91f8b45476",
+      "opponents/yhay81_three_day/output/source/include/runtime_types.hpp": "0010c15079e2114e36b5de8b281375db83f202e769e30b27cc437fc0e3ad11f1",
+      "opponents/yhay81_three_day/output/source/include/six_day_budget_guard.hpp": "2e55caa0d637a3cc246c194a64ba02d35817f787a01a08784a0a8fdd91734cd0",
+      "native/ecobot_v7_core.cpp": "366f8eebc1540632ba4a51aef7f43f15b90b658964382fa5e1580debacd99658",
+      "native/ecobot_v7.cpp": "abc0a27585c64d566918648ffe4f085301a2701099ad0daddb0a3ad6463346f9",
+      "native/ecobot_v7_core.hpp": "485b68c523da2692fc51b20103a0a90aad15b67a0e123519ffac9a9da083f2bd",
+      "native/ecobot_v7.hpp": "b03fa118380957b219ed255058b03d88c15bb9e4f36a8441f1df6901476b909a",
+      "opponents/ecobot_v7/output/main.py": "0dc02e03c94ef60c06b5093efc2e2fd0530aa6eea20df507a90b90d6651bd067"
+    },
+    "commands": [
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/vendor/simulator.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/module.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/fieldbook_adapter.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/boatlee_v29.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/kaito_v58.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/lynn_v5.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o"
+      ],
+      [
+        "g++",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/opponents/yhay81_three_day/output/source/include",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/three_day_adapter.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/ecobot_v7_core.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/ecobot_v7.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o"
+      ],
+      [
+        "g++",
+        "-shared",
+        "-fopenmp",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so"
+      ]
+    ],
+    "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so",
+    "binary_sha256": "b47dc58b60ffcc8261c53fc99fa0b7a637b9c44b5ab3deeda031e001fc80c2ca"
+  },
+  "source_hashes": {
+    "agents/complete_terminal_frontier.py": "1a892491b01b1e25d22db3a3f77e1cceed6f56190c0b4d4f9565e2ef7e92e576",
+    "agents/e749a_niklita_consensus_network.py": "2188debac2af3308f4ea1bd427a38cd3a2332394073c7cca6240c011fb0c5374",
+    "agents/e750a_place_funding_repair.py": "b0e12951d73646f37eb3b67531716237520f67cdea723914a87bda764c712dc0",
+    "agents/e766a_universal_kenjo_medoid.py": "b66a4acb25695ce7e04b4a9a57c60543926fdc3bd2e85fc827c82bc80d86dc45",
+    "agents/e773a_demand_aligned_pasture_network.py": "0baf06ac46733633572fe31bf1f44118f2c0239cc3ba75f3e5f6dc7af1cbaf18",
+    "agents/e774a_terminal_animal_frontier.py": "bc446060cb4ca57e31cc7583f0da16e92c31cb0818d84435483f7523282f4b3c",
+    "agents/e775a_latent_pasture_activation.py": "4abb721b60f8928683ce038903f616cc618ce9a547c7a1f520b1fb81a7398bc6",
+    "agents/e776a_engine_exact_latent_pasture.py": "2c603fd6f9bf978d7e8eef78a34647bd379d0e89963ada0cbb1c52c39b0f4b3f",
+    "agents/late_bundle_diversifier.py": "1951a759a6f0cff8b113733a21daf796eab3daa2228cd61249d8d6d85da83508",
+    "artifacts/e706_top10_tapes/episode_101408728_seat1.py": "685cdf4d9b14f16985e0dc7bdc0770446c3862a233be5dfe1f0efe508eedb629",
+    "artifacts/e751_current_top10_tapes/episode_102192548_seat1.py": "4d686ff547797f776081254ee602eda151ec0fe5de7ddcdf646fedf1bf5f0f89",
+    "configs/server_environment_20260807.json": "ca5cb5d68d2b3cca65016c6b4eb62d3a5aa1c463720b7c2fe7bc5689a38e5d1a",
+    "e776_pkg/__init__.py": "b001950885c35bcf24367510245f41667e85bad8d754072c3489afdcf97184c4",
+    "e776_pkg/entry.py": "5aecede545c47e7b2ea19228bd1bd9d0083983e65d4f8d01a940a6470a5ef4ad",
+    "main.py": "e8498c67914ecc607ae69fde25a728361eb5acea94c00ecc85deffbdafe50413",
+    "optimized_pkg/__init__.py": "f1e043b916ff50e95d071dc36888ec2a6cda0e9f460d2d34dabbdaa9f033854a",
+    "optimized_pkg/entry.py": "d8e0cb1200f024e88a6103907ca66e829036694b05d1d56ffa5a7b65f247a81a"
+  },
+  "asset_sha256": "ba6bf9da8ed87c18d122ee0c93f05a19126c88b2755203523839aa3c61f09aab",
+  "rows": [
+    {
+      "seed": 20261401,
+      "seat": 0,
+      "steps": 719,
+      "cash": 108274.0,
+      "opponent_cash": 131212.0,
+      "opponent_state": {
+        "last_step": 718,
+        "base_last": 718,
+        "assignments": {
+          "cow88": "COW",
+          "cow150": "SHEEP",
+          "cow169": "SHEEP",
+          "cow176": "COW",
+          "sheep313": "SHEEP"
+        },
+        "weed_transactions": {},
+        "cow_to_sheep": 3,
+        "sheep_to_cow": 0,
+        "cow_window_target": "SHEEP",
+        "cow_window_shops": [
+          "PIZZA_SHOP",
+          "YARN_STORE"
+        ],
+        "deferred_cow_signal": null,
+        "decision_rows": [
+          {
+            "bundle": "cow88",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 1.07,
+              "dairy": 2.15625,
+              "gap": -1.08625,
+              "milk_price": 185.0,
+              "wool_price": 214.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.08624999999999994,
+            "unlocked_shops": [
+              "PIZZA_SHOP"
+            ],
+            "evidence_mature": false,
+            "deferred": false,
+            "window_target": null,
+            "window_reused": false
+          },
+          {
+            "bundle": "cow150",
+            "source": "COW",
+            "target": "SHEEP",
+            "quantity": 2,
+            "pressure": {
+              "wool": 3.105,
+              "dairy": 2.28125,
+              "gap": 0.82375,
+              "milk_price": 205.0,
+              "wool_price": 221.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": 1.82375,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": false
+          },
+          {
+            "bundle": "cow169",
+            "source": "COW",
+            "target": "SHEEP",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.105,
+              "dairy": 2.3125,
+              "gap": 0.7925,
+              "milk_price": 210.0,
+              "wool_price": 221.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": 0.9924999999999999,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": true
+          },
+          {
+            "bundle": "cow176",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.1100000000000003,
+              "dairy": 2.31875,
+              "gap": 0.7912500000000002,
+              "milk_price": 211.0,
+              "wool_price": 222.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": 0.9912500000000002,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": true
+          },
+          {
+            "bundle": "sheep313",
+            "source": "SHEEP",
+            "target": "SHEEP",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.185,
+              "dairy": 3.05625,
+              "gap": 0.12875000000000014,
+              "milk_price": 169.0,
+              "wool_price": 237.0
+            },
+            "opponent_supply_balance": -0.3333333333333333,
+            "cow_signal": -0.20458333333333317,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE",
+              "BAKERY",
+              "SMOOTHIE_SHOP"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": false
+          }
+        ],
+        "delivery": [
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible delivery mismatch at step 314",
+            "intervention_steps": [
+              313
+            ],
+            "animal": "SHEEP"
+          },
+          {
+            "last_step": 718,
+            "active": true,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": [
+              313,
+              314,
+              315,
+              316
+            ],
+            "animal": "SHEEP"
+          },
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": []
+          }
+        ],
+        "stages": [
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          }
+        ]
+      },
+      "weed_repair_frames": 0,
+      "action_mismatches": 0,
+      "layer_action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_native_opponent_action_seconds": 0.0004043499999966116
+    },
+    {
+      "seed": 20261401,
+      "seat": 1,
+      "steps": 719,
+      "cash": 108274.0,
+      "opponent_cash": 131212.0,
+      "opponent_state": {
+        "last_step": 718,
+        "base_last": 718,
+        "assignments": {
+          "cow88": "COW",
+          "cow150": "SHEEP",
+          "cow169": "SHEEP",
+          "cow176": "COW",
+          "sheep313": "SHEEP"
+        },
+        "weed_transactions": {},
+        "cow_to_sheep": 3,
+        "sheep_to_cow": 0,
+        "cow_window_target": "SHEEP",
+        "cow_window_shops": [
+          "PIZZA_SHOP",
+          "YARN_STORE"
+        ],
+        "deferred_cow_signal": null,
+        "decision_rows": [
+          {
+            "bundle": "cow88",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 1.07,
+              "dairy": 2.15625,
+              "gap": -1.08625,
+              "milk_price": 185.0,
+              "wool_price": 214.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.08624999999999994,
+            "unlocked_shops": [
+              "PIZZA_SHOP"
+            ],
+            "evidence_mature": false,
+            "deferred": false,
+            "window_target": null,
+            "window_reused": false
+          },
+          {
+            "bundle": "cow150",
+            "source": "COW",
+            "target": "SHEEP",
+            "quantity": 2,
+            "pressure": {
+              "wool": 3.105,
+              "dairy": 2.28125,
+              "gap": 0.82375,
+              "milk_price": 205.0,
+              "wool_price": 221.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": 1.82375,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": false
+          },
+          {
+            "bundle": "cow169",
+            "source": "COW",
+            "target": "SHEEP",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.105,
+              "dairy": 2.3125,
+              "gap": 0.7925,
+              "milk_price": 210.0,
+              "wool_price": 221.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": 0.9924999999999999,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": true
+          },
+          {
+            "bundle": "cow176",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.1100000000000003,
+              "dairy": 2.31875,
+              "gap": 0.7912500000000002,
+              "milk_price": 211.0,
+              "wool_price": 222.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": 0.9912500000000002,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": true
+          },
+          {
+            "bundle": "sheep313",
+            "source": "SHEEP",
+            "target": "SHEEP",
+            "quantity": 1,
+            "pressure": {
+              "wool": 3.185,
+              "dairy": 3.05625,
+              "gap": 0.12875000000000014,
+              "milk_price": 169.0,
+              "wool_price": 237.0
+            },
+            "opponent_supply_balance": -0.3333333333333333,
+            "cow_signal": -0.20458333333333317,
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE",
+              "BAKERY",
+              "SMOOTHIE_SHOP"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "SHEEP",
+            "window_reused": false
+          }
+        ],
+        "delivery": [
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible delivery mismatch at step 314",
+            "intervention_steps": [
+              313
+            ],
+            "animal": "SHEEP"
+          },
+          {
+            "last_step": 718,
+            "active": true,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": [
+              313,
+              314,
+              315,
+              316
+            ],
+            "animal": "SHEEP"
+          },
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": []
+          }
+        ],
+        "stages": [
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                24
+              ]
+            ]
+          }
+        ]
+      },
+      "weed_repair_frames": 0,
+      "action_mismatches": 0,
+      "layer_action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_native_opponent_action_seconds": 2.863000003117122e-05
+    },
+    {
+      "seed": 20261404,
+      "seat": 0,
+      "steps": 719,
+      "cash": 70056.0,
+      "opponent_cash": 115983.0,
+      "opponent_state": {
+        "last_step": 718,
+        "base_last": 718,
+        "assignments": {
+          "cow88": "COW",
+          "cow150": "COW",
+          "cow169": "COW",
+          "cow176": "COW",
+          "sheep313": "COW"
+        },
+        "weed_transactions": {},
+        "cow_to_sheep": 0,
+        "sheep_to_cow": 1,
+        "cow_window_target": "COW",
+        "cow_window_shops": [
+          "ICE_CREAM_SHOP",
+          "BAKERY"
+        ],
+        "deferred_cow_signal": null,
+        "decision_rows": [
+          {
+            "bundle": "cow88",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 1.07,
+              "dairy": 2.15625,
+              "gap": -1.08625,
+              "milk_price": 185.0,
+              "wool_price": 214.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.08624999999999994,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP"
+            ],
+            "evidence_mature": false,
+            "deferred": false,
+            "window_target": null,
+            "window_reused": false
+          },
+          {
+            "bundle": "cow150",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 2,
+            "pressure": {
+              "wool": 1.09,
+              "dairy": 2.28125,
+              "gap": -1.19125,
+              "milk_price": 205.0,
+              "wool_price": 218.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.19124999999999992,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": false
+          },
+          {
+            "bundle": "cow169",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.995,
+              "dairy": 2.3125,
+              "gap": -1.3175,
+              "milk_price": 210.0,
+              "wool_price": 199.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -1.1175,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": true
+          },
+          {
+            "bundle": "cow176",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.995,
+              "dairy": 2.31875,
+              "gap": -1.32375,
+              "milk_price": 211.0,
+              "wool_price": 199.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -1.12375,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": true
+          },
+          {
+            "bundle": "sheep313",
+            "source": "SHEEP",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.945,
+              "dairy": 3.26875,
+              "gap": -2.32375,
+              "milk_price": 203.0,
+              "wool_price": 189.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -2.12375,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY",
+              "PIZZA_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": false
+          }
+        ],
+        "delivery": [
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible delivery mismatch at step 314",
+            "intervention_steps": [
+              313
+            ],
+            "animal": "COW"
+          },
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible corrected-delivery mismatch at step 315",
+            "intervention_steps": [
+              313,
+              314
+            ],
+            "animal": "COW"
+          },
+          {
+            "last_step": 718,
+            "active": true,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": [
+              313,
+              314,
+              315,
+              316
+            ]
+          }
+        ],
+        "stages": [
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "weed_repair_frames": 10,
+      "action_mismatches": 0,
+      "layer_action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_native_opponent_action_seconds": 2.435800001876487e-05
+    },
+    {
+      "seed": 20261404,
+      "seat": 1,
+      "steps": 719,
+      "cash": 70056.0,
+      "opponent_cash": 115983.0,
+      "opponent_state": {
+        "last_step": 718,
+        "base_last": 718,
+        "assignments": {
+          "cow88": "COW",
+          "cow150": "COW",
+          "cow169": "COW",
+          "cow176": "COW",
+          "sheep313": "COW"
+        },
+        "weed_transactions": {},
+        "cow_to_sheep": 0,
+        "sheep_to_cow": 1,
+        "cow_window_target": "COW",
+        "cow_window_shops": [
+          "ICE_CREAM_SHOP",
+          "BAKERY"
+        ],
+        "deferred_cow_signal": null,
+        "decision_rows": [
+          {
+            "bundle": "cow88",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 1.07,
+              "dairy": 2.15625,
+              "gap": -1.08625,
+              "milk_price": 185.0,
+              "wool_price": 214.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.08624999999999994,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP"
+            ],
+            "evidence_mature": false,
+            "deferred": false,
+            "window_target": null,
+            "window_reused": false
+          },
+          {
+            "bundle": "cow150",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 2,
+            "pressure": {
+              "wool": 1.09,
+              "dairy": 2.28125,
+              "gap": -1.19125,
+              "milk_price": 205.0,
+              "wool_price": 218.0
+            },
+            "opponent_supply_balance": 1.0,
+            "cow_signal": -0.19124999999999992,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": false
+          },
+          {
+            "bundle": "cow169",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.995,
+              "dairy": 2.3125,
+              "gap": -1.3175,
+              "milk_price": 210.0,
+              "wool_price": 199.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -1.1175,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": true
+          },
+          {
+            "bundle": "cow176",
+            "source": "COW",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.995,
+              "dairy": 2.31875,
+              "gap": -1.32375,
+              "milk_price": 211.0,
+              "wool_price": 199.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -1.12375,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": true
+          },
+          {
+            "bundle": "sheep313",
+            "source": "SHEEP",
+            "target": "COW",
+            "quantity": 1,
+            "pressure": {
+              "wool": 0.945,
+              "dairy": 3.26875,
+              "gap": -2.32375,
+              "milk_price": 203.0,
+              "wool_price": 189.0
+            },
+            "opponent_supply_balance": 0.2,
+            "cow_signal": -2.12375,
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "BAKERY",
+              "PIZZA_SHOP",
+              "BAKERY"
+            ],
+            "evidence_mature": true,
+            "deferred": false,
+            "window_target": "COW",
+            "window_reused": false
+          }
+        ],
+        "delivery": [
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible delivery mismatch at step 314",
+            "intervention_steps": [
+              313
+            ],
+            "animal": "COW"
+          },
+          {
+            "last_step": 718,
+            "active": false,
+            "cancelled": true,
+            "cancel_reason": "visible corrected-delivery mismatch at step 315",
+            "intervention_steps": [
+              313,
+              314
+            ],
+            "animal": "COW"
+          },
+          {
+            "last_step": 718,
+            "active": true,
+            "cancelled": false,
+            "cancel_reason": null,
+            "intervention_steps": [
+              313,
+              314,
+              315,
+              316
+            ]
+          }
+        ],
+        "stages": [
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          },
+          {
+            "farmer": [
+              "COLLECT_FERTILIZER"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "COLLECT_FERTILIZER"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "PASS"
+              ],
+              [
+                "DROP"
+              ]
+            ],
+            "market": [
+              [
+                "SELL",
+                "FERTILIZER",
+                1
+              ],
+              [
+                "SELL",
+                "WOOL",
+                12
+              ],
+              [
+                "SELL",
+                "MILK",
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "weed_repair_frames": 0,
+      "action_mismatches": 0,
+      "layer_action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_native_opponent_action_seconds": 1.8837000027360773e-05
+    }
+  ],
+  "seconds": 32.98130265000003,
+  "check": "original_full_package_six_layer_actions_all_behavior_memory_and_official_719_step_state",
+  "caveat": "Finite differential tests, not proof for every legal observation; local referee is not full Kaggle sandbox."
+}

@@ -1,0 +1,375 @@
+--- /dev/null
++++ b/policy/joint_bundle_state.hpp
+@@ -0,0 +1,75 @@
++#pragma once
++// A bounded, public-state project option. Not an opening tape or a private
++// replica of inventory. Only two feeder plots and one successor per plot.
++#ifndef P16_JOINT_BUNDLES
++#define P16_JOINT_BUNDLES 0
++#endif
++namespace triad {
++struct JointSlot {
++ int pos=-1,source_birth=-1,source_age=3,next_kind=-1;
++ int stage=0; // 0 await PLANT, 1 feeder live, 2 confirmed HARVEST, 3 successor live
++ int harvest_step=-1,issued_harvest=-1,deadline=-1;
++};
++struct JointBundleState {
++ std::array<JointSlot,2> slots{};
++ int count=0,created_day=-1,animal_limit=75,variant=-1,last_observation=-1;
++ bool active=false;
++ int source_started=0,source_harvested=0,successor_started=0,cancelled=0,completed=0;
++ int last_cancel_reason=0;
++ void cancel(int reason){if(active){cancelled++;last_cancel_reason=reason;active=false;}}
++ void observe(const dp7::View&o){
++  if constexpr(P16_JOINT_BUNDLES==0)return;
++  if(!active||o.step==last_observation)return;last_observation=o.step;
++  for(int i=0;i<count;i++){
++   auto&b=slots[i];const auto&t=o.own.tiles[b.pos];
++   if(b.stage==0){
++    if(dp7::plant(t)&&int(t.crop)==dp7::W&&t.planted_day>=created_day){b.source_birth=t.planted_day;b.stage=1;source_started++;}
++    else if(o.day>created_day+1){cancel(1);return;}
++   }else if(b.stage==1){
++    bool same=dp7::plant(t)&&int(t.crop)==dp7::W&&t.planted_day==b.source_birth;
++    if(!same){
++     if(b.issued_harvest==o.step-1&&!dp7::plant(t)&&!dp7::animal(t)){
++      b.stage=2;b.harvest_step=b.issued_harvest;b.deadline=std::min(28,b.harvest_step/24+3);source_harvested++;
++     }else {cancel(2);return;}
++    }
++   }else if(b.stage==2){
++    if(dp7::plant(t)&&int(t.crop)==b.next_kind&&t.planted_day>b.harvest_step/24){b.stage=3;successor_started++;}
++    else if(dp7::animal(t)||dp7::plant(t)){cancel(3);return;}
++    else if(o.day>b.deadline){cancel(4);return;}
++   }
++  }
++  bool all=true;for(int i=0;i<count;i++)all&=slots[i].stage==3;
++  if(all){active=false;completed++;}
++ }
++ void record(const dp7::View&o,const fastkag::PlayerAction&a){
++  if constexpr(P16_JOINT_BUNDLES==0)return;
++  if(!active)return;
++  for(int i=0;i<count;i++){
++   auto&b=slots[i];if(b.stage!=1)continue;
++   for(size_t u=0;u<a.units.size();u++)if(a.units[u].op==fastkag::Op::HARVEST){
++    int pos=dp7::cell(u?o.own.hands[u-1]:o.own.farmer);
++    if(pos==b.pos&&dp7::plant(o.own.tiles[pos])&&o.own.tiles[pos].yield_units>0)b.issued_harvest=o.step;
++   }
++  }
++ }
++ int index(int pos)const{if(!active)return -1;for(int i=0;i<count;i++)if(slots[i].pos==pos&&slots[i].stage<3)return i;return -1;}
++ int force_kind(int pos,int day)const{
++  int i=index(pos);if(i<0)return -1;const auto&b=slots[i];
++  if(b.stage==0)return dp7::W;
++  if(b.stage==2&&day>b.harvest_step/24)return b.next_kind;
++  return -1;
++ }
++ double seed_reserve(const dp7::View&o)const{
++  if(!active)return 0;std::array<int,5>need{};
++  for(int i=0;i<count;i++)if(slots[i].stage<3&&slots[i].next_kind>=0)need[slots[i].next_kind]++;
++  double money=0;for(int k=0;k<5;k++)money+=std::max(0,need[k]-o.priv.seeds[k])*dp7::seed_price[k];
++  return money;
++ }
++ int feed_cover(const dp7::View&o)const{
++  if(!active)return 0;bool arrived=false;for(int i=0;i<count;i++)arrived|=slots[i].stage==2;
++  if(!arrived)return 0;
++  int n=0;for(const auto&t:o.own.tiles)n+=dp7::animal(t);
++  return n*std::min(2,29-o.day);
++ }
++};
++}
+--- /dev/null
++++ b/policy/joint_candidates.hpp
+@@ -0,0 +1,72 @@
++#pragma once
++// Structural exchanges, not an opponent-specific opening. The prefilter below
++// is only a conditional stream estimate. Real admission is the common event
++// rollout, including sourcing feed, wages, delivery and successor PLANT/WATER.
++namespace triad {
++struct JointCandidate {int id=16;Controller policy;int removed=0,feeders=0,age=0,next=-1;double hint=0;};
++inline std::vector<JointCandidate> joint_candidates(const Controller&live,const Controller&keep,const View&o){
++ std::vector<JointCandidate> out;
++ if constexpr(P16_JOINT_BUNDLES==0)return out;
++ if(live.joint.active||o.day+4>=29)return out;
++ std::vector<int>removable,empty;int total_animals=0,actual_animals=0;
++ for(const auto&t:o.own.tiles)actual_animals+=animal(t);
++ for(auto[pos,k]:keep.core.target){
++  const auto&t=o.own.tiles[pos];if(k>=9)total_animals++;
++  bool vacant=!animal(t)&&!plant(t)&&t.kind!=TileKind::LOCKED;
++  if(!vacant)continue;
++  if(k<0)empty.push_back(pos);
++  if(k>=9&&!keep.book[pos].funded&&keep.paths[pos].first_cost>0){
++   int paid=o.priv.shed[k];for(const auto&iv:o.priv.inventories)paid+=iv[k];
++   if(paid==0)removable.push_back(pos);
++  }
++ }
++ if(removable.empty())return out;
++ // Least valuable unpurchased animal removed first, ties are geometric only.
++ std::stable_sort(removable.begin(),removable.end(),[&](int a,int b){
++  auto aa=keep.portfolio,bb=keep.portfolio;add(aa,keep.paths[a],-1);add(bb,keep.paths[b],-1);
++  return std::tuple(keep.model.value(o,aa),-near(a),-a)>std::tuple(keep.model.value(o,bb),-near(b),-b);
++ });
++ std::stable_sort(empty.begin(),empty.end(),[](int a,int b){return std::tuple(near(a),a)<std::tuple(near(b),b);});
++ std::set<std::tuple<int,int,int,int>>seen;
++ for(auto[remove,nfeed]:std::array<std::pair<int,int>,3>{{{1,1},{1,2},{2,2}}}){
++  if(int(removable.size())<remove||total_animals-remove<actual_animals)continue;
++  std::vector<int>positions(removable.begin(),removable.begin()+std::min(remove,nfeed));
++  for(int p:empty)if(int(positions.size())<nfeed)positions.push_back(p);
++  if(int(positions.size())<nfeed)continue;
++  // Enumerate feeder duration and a SINGLE successor cycle. No infinite
++  // repeat credit; staggered arrival is next dawn, never same-day financing.
++  struct Option{double value=-1e100;int age=-1,kind=-1;};Option best;
++  for(int age=2;age<=4;age++)for(int k=0;k<5;k++){
++   int next=o.day+age+1;if(next>=29)continue;
++   auto portfolio=keep.portfolio;for(int i=0;i<remove;i++)add(portfolio,keep.paths[removable[i]],-1);
++   bool okay=true;
++   for(int pos:positions){
++    auto first=keep.crop(W,o.day,pos,o.day+age,keep.prices);
++    // For the hint only: feeder receipts cannot fund an earlier purchase.
++    first.f[o.day+age+1][W]+=first.f[o.day+age][W];first.f[o.day+age][W]=0;
++    add(portfolio,first);
++    auto path=keep.choose_crop(k,next,pos,keep.prices,keep.rotations_dp(pos,keep.prices,next));
++    if(path.kind<0){okay=false;break;}
++    add(portfolio,path.a);
++   }
++   if(!okay)continue;
++   double value=keep.model.value(o,portfolio);
++   if(value>best.value+1e-6)best={value,age,k};
++  }
++  if(best.kind<0||!seen.insert({remove,nfeed,best.age,best.kind}).second)continue;
++  Controller p=live;p.configure(keep.s);
++  auto history=live.joint;p.joint=JointBundleState{};
++  p.joint.source_started=history.source_started;p.joint.source_harvested=history.source_harvested;
++  p.joint.successor_started=history.successor_started;p.joint.cancelled=history.cancelled;p.joint.completed=history.completed;
++  p.joint.active=true;p.joint.count=nfeed;p.joint.created_day=o.day;p.joint.animal_limit=total_animals-remove;p.joint.variant=16+int(out.size());
++  for(int i=0;i<nfeed;i++){auto&b=p.joint.slots[i];b.pos=positions[i];b.source_age=best.age;b.next_kind=best.kind;}
++  p.plan(o);
++  bool all=true;
++  for(int pos:positions){auto it=std::find_if(p.core.target.begin(),p.core.target.end(),[&](auto x){return x.first==pos;});all&=it!=p.core.target.end()&&it->second==W;}
++  int now_animals=0;for(auto[pos,k]:p.core.target)now_animals+=k>=9;
++  all&=now_animals<=p.joint.animal_limit;
++  if(all)out.push_back({16+int(out.size()),std::move(p),remove,nfeed,best.age,best.kind,best.value});
++ }
++ return out;
++}
++}
+--- a/policy/search.hpp
++++ b/policy/search.hpp
+@@ -4,6 +4,7 @@
+ #include "learned_value.hpp"
+ #include "observed_crop_clock.hpp"
+ #include "startup_supply.hpp"
++#include "joint_candidates.hpp"
+ namespace triad {
+ // Bounded public-information MPC or offline-calibrated value selector.
+ // Candidate interventions last only today, then a common base policy resumes.
+@@ -13,6 +14,26 @@
+  ObservedCropClock crop_clock;competitive::Flow removal_forecast{};
+  int searches=0,scenarios=0,changes=0,restore_day=-1;double predicted_gain=0;
+  std::array<int,32>chosen{};
++ int joint_searches=0,joint_rollouts=0,joint_switches=0,joint_rejected=0;
++ double joint_predicted_gain=0;
++ struct JointResult {int id,removed,feeders,age,next,successors,cancelled;double score;bool feasible;};
++ std::vector<JointResult>last_joint;
++ double event_value(const View&o,Controller roll,const Flow&rival,int horizon,int required,bool&feasible,int&successors){
++  roll.previous_step=o.step-1;int count0=roll.joint.successor_started,cancel0=roll.joint.cancelled;
++  fastkag::PublicFlowScenario world(o,rival,base.supply);
++  int stop=std::min(719,o.step+24*horizon);Settings common=base;common.scenario=0;
++  while(!world.done()&&world.view().step<stop){
++   auto v=world.view();if(v.day!=o.day){roll.configure(common);roll.model.extra_rival={};}
++   auto action=roll.act(v);world.advance(action);
++  }
++  roll.joint.observe(world.view());successors=roll.joint.successor_started-count0;
++  feasible=required==0||(successors>=required&&roll.joint.cancelled==cancel0);
++  double score=world.own_cash()-base.competition*world.rival_cash();
++  if(!world.done()){
++   auto v=world.view();Controller tail=roll;tail.configure(common);tail.plan(v);score+=tail.predicted;
++  }
++  joint_rollouts++;return score;
++ }
+  explicit SearchController(Settings s={}):base(s),live(s){if(s.scenario<0&&!learned::available)throw std::invalid_argument("No trained value model installed");}
+  std::vector<Proposal> prepare(const View&o,bool names=false)const{return generate_proposals(live,base,o,names);}
+  void install(const Proposal&p,int day){live=p.policy;restore_day=day+1;}
+@@ -35,14 +56,37 @@
+     int stop=std::min(719,o.step+24*horizon);Settings common=base;common.scenario=0;
+     while(!world.done()&&world.view().step<stop){auto v=world.view();if(v.day!=o.day)roll.configure(common);auto act=roll.act(v);world.advance(act);}
+     score=world.own_cash()-base.competition*world.rival_cash();
+-    if(!world.done()){auto v=world.view();Controller tail=live;tail.configure(common);tail.book=roll.book;tail.plan(v);score+=tail.predicted;}
++    if(!world.done()){auto v=world.view();Controller tail=live;tail.configure(common);tail.book=roll.book;tail.joint=roll.joint;tail.plan(v);score+=tail.predicted;}
+    }
+    scenarios++;if(i==0)baseline=score;
+    if(score>bestscore+1e-6){bestscore=score;winner=i;}
+   }
++  last_joint.clear();
++  if constexpr(P16_JOINT_BUNDLES>0)if(base.scenario>0&&!live.joint.active){
++   auto bundles=joint_candidates(live,proposals[winner].policy,o);
++   if(!bundles.empty()){
++    joint_searches++;int horizon=1;for(const auto&b:bundles)horizon=std::max(horizon,b.age+2);
++    bool okay=true;int done=0;
++    // KEEP and every exchange have identical event horizon and public rival.
++    double keepvalue=event_value(o,proposals[winner].policy,proposals[winner].policy.model.rival,horizon,0,okay,done);
++    double top=keepvalue;int selected=-1;
++    for(int j=0;j<int(bundles.size());j++){
++     auto&b=bundles[j];bool feasible=false;int successors=0;
++     double value=event_value(o,b.policy,proposals[winner].policy.model.rival,horizon,b.feeders,feasible,successors);
++     last_joint.push_back({b.id,b.removed,b.feeders,b.age,b.next,successors,feasible?0:1,value-keepvalue,feasible});
++     if(!feasible){joint_rejected++;continue;}
++     if(value>top+1e-6){top=value;selected=j;}
++    }
++    if(selected>=0){
++     auto&b=bundles[selected];joint_switches++;joint_predicted_gain+=top-keepvalue;
++     int id=b.id;chosen[id]++;changes++;live=std::move(b.policy);restore_day=o.day+1;return;
++    }
++   }
++  }
+   int id=proposals[winner].id;changes+=id!=0;chosen[id]++;predicted_gain+=bestscore-baseline;install(proposals[winner],o.day);
+  }
+  PlayerAction act(const View&o){
++  live.joint.observe(o);
+ #if R2_STARTUP_SUPPLY_MODE >= 1
+   if(o.step==0){
+    live.model.extra_rival=startup_supply_prior(o,base);
+@@ -72,7 +116,8 @@
+  }
+  std::string debug()const{
+   auto text=live.debug();text.pop_back();std::ostringstream s;s<<text<<",\"search_calls\":"<<searches<<",\"search_scenarios\":"<<scenarios<<",\"search_changes\":"<<changes<<",\"search_predicted_gain\":"<<predicted_gain<<",\"learned_value_active\":"<<(base.scenario<0?"true":"false")<<",\"learned_value_available\":"<<(learned::available?"true":"false")<<",\"search_choices\":[";
+-  for(int i=0;i<32;i++){if(i)s<<",";s<<chosen[i];}s<<"]}";return s.str();
++  for(int i=0;i<32;i++){if(i)s<<",";s<<chosen[i];}s<<"],\"joint_searches\":"<<joint_searches<<",\"joint_rollouts\":"<<joint_rollouts<<",\"joint_switches\":"<<joint_switches<<",\"joint_rejected\":"<<joint_rejected<<",\"joint_gain\":"<<joint_predicted_gain<<",\"joint_active\":"<<live.joint.active<<",\"joint_sources\":"<<live.joint.source_started<<",\"joint_harvests\":"<<live.joint.source_harvested<<",\"joint_successors\":"<<live.joint.successor_started<<",\"joint_completed\":"<<live.joint.completed<<",\"joint_cancelled\":"<<live.joint.cancelled<<",\"joint_last_cancel\":"<<live.joint.last_cancel_reason<<",\"joint_last\":[";
++  bool sep=false;for(const auto&r:last_joint){if(sep)s<<",";sep=true;s<<"{\"id\":"<<r.id<<",\"removed\":"<<r.removed<<",\"feeders\":"<<r.feeders<<",\"age\":"<<r.age<<",\"next\":"<<r.next<<",\"delta\":"<<r.score<<",\"feasible\":"<<r.feasible<<",\"successors\":"<<r.successors<<"}";}s<<"]}";return s.str();
+  }
+ };
+ }
+--- a/policy/triad.hpp
++++ b/policy/triad.hpp
+@@ -8,6 +8,7 @@
+ #include <sstream>
+ #include "executor/observed_day_scenario.hpp"
+ #include "local_sale_timing.hpp"
++#include "joint_bundle_state.hpp"
+ #ifndef P16_WORKING_CAPITAL_GATE
+ #define P16_WORKING_CAPITAL_GATE 1
+ #endif
+@@ -39,6 +40,7 @@
+ struct CropPath {Asset a;int kind=-1,length=0;double value=-1e100;};
+ struct Controller {
+  Settings s;Planner model;dp7::Controller core;
++ JointBundleState joint;
+  std::array<Commitment,100>book{};
+  int plan_calls=0,candidates=0,deferred=0,kept=0,rotations=0,started=0;
+  int previous_step=-1;std::array<int,12>previous_stock{};
+@@ -284,6 +286,8 @@
+   }
+  }
+  void plan(const View&o){
++  joint.observe(o);
++  if constexpr(P16_JOINT_BUNDLES>0){core.p.max_animals=(joint.active&&o.day==joint.created_day)?std::min(int(s.max_animals),joint.animal_limit):int(s.max_animals);core.p.operating_reserve=s.reserve+joint.seed_reserve(o);}
+   plan_calls++;model.day=o.day;model.core.p=core.p;model.demand(o);model.public_rival(o);core.day=o.day;core.phase=1;core.queue.clear();core.plans.clear();core.pending_admission={};core.intraday_units.clear();core.resource_degraded=core.actual_drop=0;core.seed_reconcile_checked=false;core.prepared_seed_need={};
+   Farm farm=o.own;int expiry=dp7::Controller::project_zero_expiry(farm,o.step);
+   View v{o.step,o.day,o.hour,farm,o.opponent,o.priv,o.market,o.shops};
+@@ -310,9 +314,10 @@
+       if(val>best){best=val;finish=d;}
+      }
+     }
++    if constexpr(P16_JOINT_BUNDLES>0){int j=joint.index(pos);if(j>=0&&joint.slots[j].stage==1&&k==W)finish=std::max(o.day,int(t.planted_day)+joint.slots[j].source_age);}
+     finish=std::min(29,finish);
+     int retained=(book[pos].birth==t.planted_day&&book[pos].kind==k)?book[pos].successor:-1;
+-    if(retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k])finish=o.day;
++    if(retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k]&&joint.index(pos)<0)finish=o.day;
+     paths[pos]=crop(k,t.planted_day,pos,finish,prices,&t);add(portfolio,paths[pos]);
+ #if R2_FINITE_FERTILIZER
+     if(!ongoing(k))finite_first_fertilizer[pos]=paths[pos].f[o.day][F]<0;
+@@ -330,6 +335,8 @@
+   double stock=0;for(int i=0;i<9;i++)stock+=revenue(i,o.market.inventory[i],o.priv.shed[i]);
+   double budget=std::max(0.,o.own.money+.85*stock-s.reserve-animals*o.market.prices[W]*s.feed_cover);
+   if(o.day==0)budget*=s.opening_budget;
++  double joint_earmark=P16_JOINT_BUNDLES?joint.seed_reserve(o):0.;
++  if constexpr(P16_JOINT_BUNDLES>0)budget-=joint_earmark;
+   auto settarget=[&](int pos,int k){for(auto&[p,c]:core.target)if(p==pos){c=k;return;}core.target.emplace_back(pos,k);};
+   std::array<int,12>stock_left{};for(int k=0;k<5;k++)stock_left[k]=o.priv.seeds[k];
+   for(int k=9;k<12;k++){stock_left[k]=o.priv.shed[k];for(auto&iv:o.priv.inventories)stock_left[k]+=iv[k];}
+@@ -352,9 +359,32 @@
+    if(a.first_cost<=0)continue;a.fixed[o.day]+=a.first_cost;a.first_cost=0;stock_left[k]--;b.funded=true;
+    paths[pos]=a;add(portfolio,a);settarget(pos,k);successor[pos]=k;animals+=k>=9;kept++;
+   }
+-  free.erase(std::remove_if(free.begin(),free.end(),[&](int p){return successor[p]>=0;}),free.end());
++  std::vector<int>new_positions;
++  // Inject only the current feasible stage; future receipts are never cash.
++  if constexpr(P16_JOINT_BUNDLES>0)if(joint.active){
++   for(int i=0;i<joint.count;i++){
++    const auto&b=joint.slots[i];int pos=b.pos;const auto&t=farm.tiles[pos];
++    if(b.stage>=3)continue;
++    int k=joint.force_kind(pos,o.day);
++    if(k<0||plant(t)||animal(t)||t.kind==TileKind::LOCKED){core.plant_not_before[pos]=30;continue;}
++    if(successor[pos]>=0){ // Paid incumbent is protected, not overwritten.
++     if(successor[pos]!=k){joint.cancel(5);break;}continue;
++    }
++    auto dp=rotations_dp(pos,prices,o.day);auto selected=choose_crop(k,o.day,pos,prices,dp);
++    if(selected.kind<0){core.plant_not_before[pos]=30;continue;}
++    int len=b.stage==0?b.source_age:selected.length;
++    auto a=crop(k,o.day,pos,std::min(29,o.day+len),prices);
++    double cost=stock_left[k]>0?0:a.first_cost;
++    if(b.stage==2){double released=std::min(joint_earmark,double(seed_price[k]));budget+=released;joint_earmark-=released;}
++    if(cost>budget||a.first_cost<=0){core.plant_not_before[pos]=30;continue;}
++    if(stock_left[k]>0){a.fixed[o.day]+=a.first_cost;a.first_cost=0;stock_left[k]--;}
++    budget-=cost;paths[pos]=a;add(portfolio,a);settarget(pos,k);successor[pos]=k;length[pos]=len;
++    core.triad_crop_age[pos]=len;book[pos]={k,-1,o.day,len,-1,cost==0};new_positions.push_back(pos);
++   }
++  }
++  free.erase(std::remove_if(free.begin(),free.end(),[&](int p){return successor[p]>=0||joint.index(p)>=0;}),free.end());
+   double current=model.value(o,portfolio,&prices);
+-  int used=0;std::vector<int>new_positions;
++  int used=0;
+   while(o.day<29){
+    if(used>=int(free.size())){
+     if(owned>=int(s.max_land)||o.day>20||budget<next_land_cost(owned)+300)break;
+@@ -365,7 +395,7 @@
+    int pos=free[used++];auto&t=farm.tiles[pos];auto dp=rotations_dp(pos,prices,o.day);
+    double best=0,bestval=current;int bestkind=-1,bestlen=0;Asset bestpath;double bestcost=0;
+    for(int k:{0,1,2,3,4,9,10,11}){
+-    if(k>=9&&(plant(t)||animals>=s.max_animals||o.day+afirst[k-9]>29))continue;
++    if(k>=9&&(plant(t)||animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
+     Asset a;int len=0;
+     if(k>=9)a=animal_path(k,o.day,pos,prices);else{auto c=choose_crop(k,o.day,pos,prices,dp);if(c.kind<0)continue;a=c.a;len=c.length;}
+     double cost=a.first_cost;
+@@ -388,6 +418,7 @@
+   }
+   // No automatic same-crop continuation when a slot was offered but declined.
+   for(int pos:free)if(plant(farm.tiles[pos])&&successor[pos]<0)core.plant_not_before[pos]=30;
++  if constexpr(P16_JOINT_BUNDLES>0)if(joint.active)for(int i=0;i<joint.count;i++)if(joint.slots[i].stage==1)core.plant_not_before[joint.slots[i].pos]=30;
+   if(s.service_reconcile>=2)reconcile_service(v);
+   set_service(v);core.prepare_orders(v,o,expiry);
+   if(s.preview>0&&!new_positions.empty()){
+@@ -472,6 +503,7 @@
+    for(const auto&iv:priv.inventories)heldfeed+=iv[W];
+    if(o.hour<23)reserve[W]=std::max(reserve[W],std::max(0,animals-heldfeed));
+   }
++  if constexpr(P16_JOINT_BUNDLES>0){int bag=0;for(const auto&iv:priv.inventories)bag+=iv[W];reserve[W]=std::max(reserve[W],std::max(0,joint.feed_cover(o)-bag));}
+   for(int i=0;i<9;i++)sell[i]=std::max(0,priv.shed[i]-reserve[i]);
+   if(preparing){
+    // Preserve every original order and its relative order. Sell only surplus
+@@ -549,18 +581,24 @@
+ 
+  PlayerAction act(const View&o){
+   if(o.step<=previous_step)throw std::runtime_error("non-monotone policy observation");previous_step=o.step;
++  joint.observe(o);
+   if(o.day!=core.day)plan(o);
++  if constexpr(P16_JOINT_BUNDLES>0){
++   core.p.max_animals=(joint.active&&o.day==joint.created_day)?std::min(int(s.max_animals),joint.animal_limit):int(s.max_animals);
++   core.p.operating_reserve=s.reserve+joint.seed_reserve(o);
++  }
+   // Match conditional execution repair to the P16 market policy, rather
+   // than silently valuing its work using R2's immediate-liquidation policy.
+   // Capture snapshots by value: all controller copies remain self-contained.
+   core.t3.project_sales=[timing=local_sale,clock=sale_memory,
+-                        reserve=s.reserve,competition=s.competition]
++                        reserve=s.reserve,competition=s.competition,feed_cover=joint.feed_cover(o)]
+     (const View&v,const fastkag::PrivateState&priv,const dp7::Acts&buys,dp7::Counts&sell) mutable {
++      if constexpr(P16_JOINT_BUNDLES>0)if(feed_cover>0){int bag=0;for(const auto&iv:priv.inventories)bag+=iv[W];sell[W]=std::min(sell[W],std::max(0,priv.shed[W]-std::max(0,feed_cover-bag)));}
+       timing.filter(v,priv,buys,sell,clock,reserve,competition);
+     };
+-  if(auto rescue=working_capital_gate(o))return *rescue;
++  if(auto rescue=working_capital_gate(o)){joint.record(o,*rescue);return *rescue;}
+   core.admission_values=[this](const dp7::Controller&c,const View&v,const PlayerAction&a){return intraday_values(c,v,a);};core.admission_blend=1;core.admission_scope=2;
+-  bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);return out;
++  bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);joint.record(o,out);return out;
+  }
+  std::string debug()const{
+   std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"capital_collects\":"<<capital_collects<<",\"capital_financings\":"<<capital_financings<<",\"input_rejected_atoms\":"<<core.input_rejected_atoms<<",\"input_rejected_feed\":"<<core.input_rejected_feed<<",\"input_rejected_fertilize\":"<<core.input_rejected_fertilize<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";

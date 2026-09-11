@@ -1,0 +1,335 @@
+{
+  "schema": "kaggriculture.latest_public6_vs_fc15_official_traces.v1",
+  "generated_at_utc": "2026-08-22T06:44:18.077477+00:00",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    822001,
+    822002
+  ],
+  "seat_swapped": true,
+  "opponent": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\artifacts\\fc15_cpu_v4\\main.py",
+  "opponent_sha256": "9E486F99B8138ABFA8016A0D176CCB5C5144407650A21494F4C6C67C59D02526",
+  "agents": [
+    {
+      "name": "boatlee_v21_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "sha256": "C6F96A8521DC9AA369B6F27E5B36B9D481E5C1688F50C8CA215C3BB53F1F9EB8"
+    },
+    {
+      "name": "prvsiyan_soil_v26h_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_soil_v26h_latest\\main.py",
+      "sha256": "F4B8C16395382060D23F70FA65DD376FD567AB55C430D7AEE41BBE0BC117A88C"
+    },
+    {
+      "name": "prvsiyan_moon_v92_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "sha256": "CA4F2C0925C38C1CACBB7756EF791F04A45F65660CE4914AD41271AD5798E09F"
+    },
+    {
+      "name": "kaito_v39_history_gate_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\kaito_v39_history_gate_latest\\main.py",
+      "sha256": "C0298C82C2A2F9B41CD48657B63B16A9C6F07EA3EE02DC85062F807E54E8C54A"
+    },
+    {
+      "name": "steven_e284_hadouken_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\steven_e284_hadouken_latest\\main.py",
+      "sha256": "B5C2E156689B41CEA5F2E1A0A1CAE2E18FD70423931BBAC0885BBA8B2142C497"
+    },
+    {
+      "name": "salem_harvestforge_x_latest",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\salem_harvestforge_x_latest\\main.py",
+      "sha256": "D39DBA50793D9777C990347443BF0C481C78ADAEA86055F6F6B0600DCFCD9F2E"
+    }
+  ],
+  "traces": [
+    {
+      "opponent": "boatlee_v21_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_boatlee_v21_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "AE04637D49FAE9174FB4F9240CEEF6E86736C5B3F5DC6E3350EFE93B65C09277",
+      "frames": 720,
+      "terminal_reward": [
+        100727.0,
+        100075.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v21_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_boatlee_v21_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "E719B1746282E7B5495B7889F1C0824CFE33B56CD98B466CED837BD32A9C6FEC",
+      "frames": 720,
+      "terminal_reward": [
+        150777.0,
+        151763.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v21_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_boatlee_v21_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "67D588B31D88101D90D6BB9F3AE21B8C8FADC31867E411F9C72520CBF2951CA4",
+      "frames": 720,
+      "terminal_reward": [
+        100075.0,
+        100727.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v21_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_boatlee_v21_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "AF2B23A792840E68EADFC42F801C13EE0CA2F5CBC1C9575518F5A2E449A81684",
+      "frames": 720,
+      "terminal_reward": [
+        151763.0,
+        150777.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_soil_v26h_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_soil_v26h_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "64941BB9074F335AFEEDE80BD26AC602E4B12C56E39757FC437C869B346214BA",
+      "frames": 720,
+      "terminal_reward": [
+        116839.0,
+        125082.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_soil_v26h_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_soil_v26h_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "7CEEF9BA0629F030648E498BD9EC051FE3C511369207E595D55F441F1CA62404",
+      "frames": 720,
+      "terminal_reward": [
+        111385.0,
+        119703.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_soil_v26h_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_soil_v26h_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "80285B88E8BAB292FD70054D58BE7DFF1117F716DD9202FB5D37E56BB1C76C94",
+      "frames": 720,
+      "terminal_reward": [
+        125082.0,
+        116839.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_soil_v26h_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_soil_v26h_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "FFF5BC6513BA533938664A845BBA7DDDC32B3BE530CB4A4F193A620E59234236",
+      "frames": 720,
+      "terminal_reward": [
+        119703.0,
+        111385.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_moon_v92_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_moon_v92_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "31E1453B7F0EC50F357FA19C7AAD5D501BEC55B505970609F699905AD802164C",
+      "frames": 720,
+      "terminal_reward": [
+        100727.0,
+        100075.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_moon_v92_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_moon_v92_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "093E719EE4EFA1A0A08F3716BE2EA3EA2554C703A9C6C262F4330B840BCCBEF6",
+      "frames": 720,
+      "terminal_reward": [
+        150726.0,
+        151833.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_moon_v92_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_moon_v92_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "B8EDAB03ED07F7B3F5C4AAAABB78A7B343FDF44476CAC4F2192264CF7C8F6500",
+      "frames": 720,
+      "terminal_reward": [
+        100075.0,
+        100727.0
+      ]
+    },
+    {
+      "opponent": "prvsiyan_moon_v92_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_prvsiyan_moon_v92_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "8DBD6A38A506DBDDECFB311336EB668836FC7644AE0DE8241AC8F44B1F7F692D",
+      "frames": 720,
+      "terminal_reward": [
+        151833.0,
+        150726.0
+      ]
+    },
+    {
+      "opponent": "kaito_v39_history_gate_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_kaito_v39_history_gate_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "1C6E49E080E82F32D26C8D6340353939FC4B1624AE63DD728A30D398194FB688",
+      "frames": 720,
+      "terminal_reward": [
+        116773.0,
+        125367.0
+      ]
+    },
+    {
+      "opponent": "kaito_v39_history_gate_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_kaito_v39_history_gate_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "E3D62BA9432A6F10F9DC1ECA7B67D4F732E888DCE6200B01C9453AF4FE1CF159",
+      "frames": 720,
+      "terminal_reward": [
+        120254.0,
+        122142.0
+      ]
+    },
+    {
+      "opponent": "kaito_v39_history_gate_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_kaito_v39_history_gate_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "7260C286999C4CD8118882F2DF97266035CB22491A78AB6DF0B5EBFC68ED06A3",
+      "frames": 720,
+      "terminal_reward": [
+        125367.0,
+        116773.0
+      ]
+    },
+    {
+      "opponent": "kaito_v39_history_gate_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_kaito_v39_history_gate_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "0B21044755D6CE7223CE204154E6F25142F0A02FD726E38B14F90D99B6F59CE1",
+      "frames": 720,
+      "terminal_reward": [
+        122142.0,
+        120254.0
+      ]
+    },
+    {
+      "opponent": "steven_e284_hadouken_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_steven_e284_hadouken_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "B1C373E7E0E0143D6E09DCC054135D5788BAADEA8B86264BEDCB61CD27E507E5",
+      "frames": 720,
+      "terminal_reward": [
+        72412.0,
+        75855.0
+      ]
+    },
+    {
+      "opponent": "steven_e284_hadouken_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_steven_e284_hadouken_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "0978DF02303A9B8C1B3FE92D869E5AB8CF515CFD65467D40F74B25755CE477EF",
+      "frames": 720,
+      "terminal_reward": [
+        153812.0,
+        157042.0
+      ]
+    },
+    {
+      "opponent": "steven_e284_hadouken_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_steven_e284_hadouken_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "FA804B1D2A9FBB3EB9BB3D0B58B99CBE3117BDC9FAF56BD4D779B182F7A96E2C",
+      "frames": 720,
+      "terminal_reward": [
+        75855.0,
+        72412.0
+      ]
+    },
+    {
+      "opponent": "steven_e284_hadouken_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_steven_e284_hadouken_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "B3437B3C862B1625699AB866D5E2DDC5D89C9721297BA4187552B6D7D3A9EFEC",
+      "frames": 720,
+      "terminal_reward": [
+        157243.0,
+        153720.0
+      ]
+    },
+    {
+      "opponent": "salem_harvestforge_x_latest",
+      "seed": 822001,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_salem_harvestforge_x_latest_seat0_seed822001.jsonl.gz",
+      "file_sha256": "182D0CAA47228499EACD33B8BE8BCF5F2CA0D58C07D392296B590C492A06BE01",
+      "frames": 720,
+      "terminal_reward": [
+        70368.0,
+        75490.0
+      ]
+    },
+    {
+      "opponent": "salem_harvestforge_x_latest",
+      "seed": 822002,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_salem_harvestforge_x_latest_seat0_seed822002.jsonl.gz",
+      "file_sha256": "B9332A08106FFA2E846537C841E95B27738B4AA19A930DCAB85E84363A8937A3",
+      "frames": 720,
+      "terminal_reward": [
+        153806.0,
+        157049.0
+      ]
+    },
+    {
+      "opponent": "salem_harvestforge_x_latest",
+      "seed": 822001,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_salem_harvestforge_x_latest_seat1_seed822001.jsonl.gz",
+      "file_sha256": "0ACDEC70F11D7A73BA63C867A260BDBBC197A3015BAED3AB7CD4470307AC625E",
+      "frames": 720,
+      "terminal_reward": [
+        75490.0,
+        70368.0
+      ]
+    },
+    {
+      "opponent": "salem_harvestforge_x_latest",
+      "seed": 822002,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_fc15_official_traces_v1/candidate_salem_harvestforge_x_latest_seat1_seed822002.jsonl.gz",
+      "file_sha256": "1232C2CD5EB30BD62600A983DB75769D33DF67E253BE65739E1FD44F7CAF929F",
+      "frames": 720,
+      "terminal_reward": [
+        157250.0,
+        153714.0
+      ]
+    }
+  ],
+  "ok": true
+}

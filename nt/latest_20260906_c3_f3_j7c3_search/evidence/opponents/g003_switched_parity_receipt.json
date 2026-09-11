@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "check": "official_rule_state_and_original_opponent_action_parity",
+  "candidate_python_translation_checked": false,
+  "opponent": "g003",
+  "opponent_source_sha256": "ff32e2e47431dae2d98fa70a78f85425f8d5929d5910c5ff482e74750c3fa1ef",
+  "opponent_asset_sha256": "d1b5df7f5cf3ba76f78e64e7b3d4a2103873a962969241c60bc504e85f40b26a",
+  "params": {
+    "opponent_supply_weight": 0.75,
+    "competitive_sell_weight": 0.5,
+    "sell_horizon_days": 1,
+    "opening_animals": [
+      "COW",
+      "COW",
+      "SHEEP",
+      "GOOSE",
+      "GOOSE"
+    ],
+    "opening_crops": [
+      4,
+      0,
+      0,
+      6,
+      0
+    ],
+    "economic_land": true,
+    "operating_reserve": 100.0,
+    "crop_harvest_age": [
+      4,
+      3,
+      8,
+      10,
+      10
+    ],
+    "finite_fertilizer": false,
+    "fix_finite_projection": true,
+    "efficient_water": true,
+    "efficient_care": true
+  },
+  "build": {
+    "seconds": 16.064671957,
+    "source_hashes": {
+      "native/vendor/simulator.cpp": "7823820ef7a563885a2dc5c7ff0499d6ed832f98bff09bf4790cf5e04c5d4928",
+      "native/module.cpp": "2b6c7c83985c6604196021e02909d5772705745c733cc8d122ee54b240f79ba2",
+      "native/policy.hpp": "f759504695bf3a6a43d0b1e778e10b9c9f1e8f4d095c33c8ff8c8d6bdaf7918e",
+      "native/cash_audit.hpp": "92765c73c162fd3514e14d90cc051ba914a44fc5abcd40cd54266e509dfb118e",
+      "native/production_audit.hpp": "e35fa1e2f0631be3a4ae2d19fe8a6dd787962eeb0b65a8c40303281d06cefbb6",
+      "native/vendor/simulator.hpp": "333d0332c4dffc3bed7e3c8ad1e63ccd2c9eca6c176bd47e1f0cdb62274759e1",
+      "native/vendor/native_teammate.hpp": "31c4f20627a435597562412834612e5925dfb92ff3badfabf12717422f8b1eaf",
+      "native/vendor/native_teammate.cpp": "a00b1c543eb591b87c1fbebd40e5312661e8be2c05bfc84235d149adb91df806"
+    },
+    "commands": [
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/vendor/simulator.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/module.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o"
+      ],
+      [
+        "g++",
+        "-shared",
+        "-fopenmp",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so"
+      ]
+    ],
+    "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so",
+    "binary_sha256": "01e5e379ad23c74a12eaddfa240dcaa1a7fef2c20ddd4529863be54fbe0a528b"
+  },
+  "rows": [
+    {
+      "seed": 20261404,
+      "seat": 0,
+      "cash": 74064.0,
+      "opponent_cash": 95656.0,
+      "max_native_action_seconds": 0.0007318399999860503,
+      "opponent_switched": true
+    },
+    {
+      "seed": 20261404,
+      "seat": 1,
+      "cash": 74064.0,
+      "opponent_cash": 95656.0,
+      "max_native_action_seconds": 0.000541206999997712,
+      "opponent_switched": true
+    },
+    {
+      "seed": 20261405,
+      "seat": 0,
+      "cash": 102389.0,
+      "opponent_cash": 137953.0,
+      "max_native_action_seconds": 0.0006271260000119128,
+      "opponent_switched": true
+    },
+    {
+      "seed": 20261405,
+      "seat": 1,
+      "cash": 102389.0,
+      "opponent_cash": 137953.0,
+      "max_native_action_seconds": 0.0006413989999884961,
+      "opponent_switched": true
+    }
+  ],
+  "seconds": 22.224079437
+}

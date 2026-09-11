@@ -1,0 +1,470 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc24b-reentry.v1",
+  "generated_at_utc": "2026-08-23T05:59:53.490327+00:00",
+  "status": "PASS",
+  "strict_exact": true,
+  "games": 64,
+  "action_calls": 46016,
+  "first_mismatch": null,
+  "inputs": {
+    "agent": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\artifacts\\fc24b_cpu_v1\\main.py",
+      "sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B"
+    },
+    "trace_receipt": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\receipts\\fc24b_cpu_v1_official_stepwise_traces_seed594001_n8x2_v1.json",
+      "sha256": "97CF1FC4FA490BF07A1FE3D0B5BC3FB2EF05FEB368A0EB7FF841FB6B2C6EC6F7"
+    }
+  },
+  "rows": [
+    {
+      "ordinal": 0,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 1,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 2,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 3,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 4,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 5,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 6,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 7,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 8,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 9,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 10,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 11,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 12,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 13,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 14,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 15,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 16,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 17,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 18,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 19,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 20,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 21,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 22,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 23,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 24,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 25,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 26,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 27,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 28,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 29,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 30,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 31,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 32,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 33,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 34,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 35,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 36,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 37,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 38,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 39,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 40,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 41,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 42,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 43,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 44,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 45,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 46,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 47,
+      "opponent": "public_g04_soil_rain",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 48,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 49,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 50,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 51,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 52,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 53,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 54,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 55,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 1,
+      "exact": true
+    },
+    {
+      "ordinal": 56,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594008,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 57,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594007,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 58,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594006,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 59,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594005,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 60,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594004,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 61,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594003,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 62,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594002,
+      "candidate_seat": 0,
+      "exact": true
+    },
+    {
+      "ordinal": 63,
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594001,
+      "candidate_seat": 0,
+      "exact": true
+    }
+  ],
+  "acceptance_boundary": "PASS requires one imported CPU module to replay all 32 official contexts forward and backward with exact actions after every reset."
+}

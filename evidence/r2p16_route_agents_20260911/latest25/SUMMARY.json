@@ -1,0 +1,50 @@
+{
+  "games": 200,
+  "pairs": 100,
+  "replay_qa": "PASS",
+  "observations": 288000,
+  "arms": {
+    "workflow": {
+      "games": 100,
+      "wins": 74,
+      "draws": 0,
+      "mean_cash": 101521.19,
+      "mean_margin": 6158.49,
+      "mean_wages": 4144.59,
+      "missing": 0,
+      "invalid": 0,
+      "overflow": 2036,
+      "max_seconds": 1.2059308519999377,
+      "recovery_events": 0,
+      "recovery_deferred": 0
+    },
+    "recovery": {
+      "games": 100,
+      "wins": 69,
+      "draws": 0,
+      "mean_cash": 101202.12,
+      "mean_margin": 4884.39,
+      "mean_wages": 4119.42,
+      "missing": 30,
+      "invalid": 0,
+      "overflow": 2292,
+      "max_seconds": 1.2722909139999956,
+      "recovery_events": 66,
+      "recovery_deferred": 30
+    }
+  },
+  "paired_mean": {
+    "cash": -319.07,
+    "margin": -1274.1,
+    "wages": -25.17,
+    "hires": -0.33,
+    "uncompleted_required_tasks": 0.3,
+    "invalid_actions": 0.0,
+    "overflow_units": 2.56
+  },
+  "win_flips": {
+    "-1": 13,
+    "0": 79,
+    "1": 8
+  }
+}

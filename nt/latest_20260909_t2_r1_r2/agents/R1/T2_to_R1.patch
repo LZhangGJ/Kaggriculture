@@ -1,0 +1,171 @@
+--- a/policy/triad.hpp
++++ b/policy/triad.hpp
+@@ -19,6 +19,10 @@
+  double scenario=0,keep_commitments=1;
+  // Recovered candidate expansion; unrelated inactive experiments omitted.
+  double candidate_extra=0;
++ // T3 switches: 0 is exact legacy behavior; >=1 couples service to forecast;
++ // >=2 coordinates alternatives using the SAME portfolio value; >=3 adds
++ // finite-difference market externalities to maintenance candidate generation.
++ double service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0;
+ };
+ constexpr int SETTINGS_COUNT=sizeof(Settings)/sizeof(double);
+ struct Commitment {
+@@ -34,6 +38,8 @@
+  Flow prices{};Asset portfolio{};std::array<Asset,100>paths{};
+  std::array<int,100>release{},successor{},length{};
+  double predicted=0;
++ std::array<std::array<int8_t,2>,100>forecast_service{};
++ int service_trials=0,service_switches=0;double service_objective_gain=0;
+  Controller(Settings settings={}):s(settings),model(),core(model.core.p){configure(settings);}
+  void configure(Settings settings){s=settings;
+   auto&c=model.cfg;c.competition=s.competition;c.supply=s.supply;c.future_shop=s.future_shop;
+@@ -111,7 +117,7 @@
+ #elif defined(__clang__)
+  __attribute__((noinline))
+ #endif
+- Asset animal_path(int k,int birth,int pos,const Flow&px,const Tile*t=nullptr)const{
++ Asset animal_path(int k,int birth,int pos,const Flow&px,const Tile*t=nullptr,std::array<int8_t,2>*first_action=nullptr)const{
+   if(s.service<=0){auto a=model.animal_stream(k,birth,pos,t);for(auto&w:a.labor)w*=s.animal_work;return a;}
+   Asset a;a.kind=k;a.end=30;int day=model.day,start=std::max(day,birth),j=k-9;
+   if(!t){a.first_cost=animal_price[j];a.fixed[start]-=a.first_cost;a.labor[start]+=3+.15*near(pos);}
+@@ -123,6 +129,7 @@
+    if(!t&&d==start)c.feed=c.care=1;
+    bool fed=t&&d==day&&t->fed_today,cared=t&&d==day&&t->cared_today;
+    int f=c.feed&&!fed,z=c.care&&!cared;
++   if(first_action&&d==start)*first_action={int8_t(f),int8_t(z)};
+    a.f[d][W]-=f;a.labor[d]+=(f+z+1+.20*near(pos))*s.animal_work;
+    bool feeding=f||fed;hunger=feeding?0:hunger+1;if(hunger>=2){a.end=d+1;break;}
+    int age=d+1-birth;bool tick=age>=afirst[j]&&(age-afirst[j])%ainterval[j]==0;
+@@ -169,12 +176,63 @@
+    next+=dp.len[next]+(ongoing(k)?1:0);
+   }return out;
+  }
++ // One-product market replay: exact same conditional trading order as value().
++ // Differencing isolates portfolio/competition effects; it is NOT future truth.
++ Flow marginal_prices(const View&o,const Asset&a)const{
++  Flow result=prices;
++  const double discount=1+model.cfg.discount*std::max(0.,1-o.own.money/20000.);
++  for(int i:{W,E,MI,WO,F}){
++   std::array<double,30>before{};double inv=o.market.inventory[i];
++   auto daytrade=[&](int d,double q,double&stock){
++    stock-=model.dem[d][i]*.5;double r=model.cfg.supply*model.rival[d][i]*.5;
++    auto trade=[&](double n){double p=Planner::quote(i,stock,n);if(n<0||p>1.)stock+=n;return n*p;};
++    double enemy=trade(r);double own=trade(q);enemy+=trade(r);
++    stock-=model.dem[d][i]*.5;return own-model.cfg.competition*enemy;
++   };
++   for(int d=o.day;d<30;d++){before[d]=inv;daytrade(d,a.f[d][i],inv);}
++   for(int d=o.day;d<30;d++){
++    double plus=before[d],minus=before[d],v=0,weight=1;
++    // Symmetric two-unit difference damps integer-price rounding artifacts.
++    for(int t=d;t<30;t++){
++     v+=(daytrade(t,a.f[t][i]+(t==d?2:0),plus)-daytrade(t,a.f[t][i]-(t==d?2:0),minus))*weight;
++     weight/=discount;
++    }
++    result[d][i]=v*.25;
++   }
++  }
++  return result;
++ }
++ // Coordinate full lifecycle streams, including feed and output. Accept only
++ // a strict gain in the same portfolio objective used for new investments.
++ // Preserve the chosen first maintenance action; never solve it again using
++ // a different price table after the forecast has been committed.
++ void reconcile_service(const View&o){
++  if(o.day>=29||s.service<=0)return;
++  Flow marginal{};if(s.service_reconcile>=3)marginal=marginal_prices(o,portfolio);
++  double score=model.value(o,portfolio);
++  for(int pos=0;pos<100;pos++){
++   const auto&t=o.own.tiles[pos];if(!animal(t))continue;
++   int alternatives=s.service_reconcile>=3?2:1;
++   for(int which=0;which<alternatives;which++){
++    std::array<int8_t,2>action{};
++    auto trial=animal_path(int(t.animal),t.placed_day,pos,which?marginal:prices,&t,&action);
++    auto candidate=portfolio;add(candidate,paths[pos],-1);add(candidate,trial);
++    double value=model.value(o,candidate);service_trials++;
++    if(value>score+1e-6){
++     service_switches++;service_objective_gain+=value-score;score=value;
++     portfolio=std::move(candidate);paths[pos]=std::move(trial);forecast_service[pos]=action;
++     model.value(o,portfolio,&prices);
++    }
++   }
++  }
++ }
+  void set_service(const View&o){
+   core.animal_service_day=o.day;core.crop_service_day=o.day;
+   for(int pos=0;pos<100;pos++){
+    const auto&t=o.own.tiles[pos];
+    if(animal(t)){
+     AnimalServiceDP d;d.solve(int(t.animal),t.placed_day,o.day,prices,s.work_price);auto c=d.first(o.day,t);
++    if(s.service_reconcile>0){c.feed=forecast_service[pos][0];c.care=forecast_service[pos][1];}
+     core.service_feed[pos]=s.service<=0?1:c.feed;core.service_care[pos]=s.service<=0?core.care_due(t):c.care;
+    }
+    if(plant(t)&&ongoing(int(t.crop))){
+@@ -191,7 +249,7 @@
+   Farm farm=o.own;int expiry=dp7::Controller::project_zero_expiry(farm,o.step);
+   View v{o.step,o.day,o.hour,farm,o.opponent,o.priv,o.market,o.shops};
+   core.target.clear();core.plant_not_before.fill(0);core.triad_crop_age.fill(-1);
+-  portfolio={};paths={};release.fill(o.day);successor.fill(-1);length.fill(0);
++  portfolio={};paths={};forecast_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
+   for(int i=0;i<9;i++){portfolio.f[o.day][i]+=o.priv.shed[i];for(auto&b:o.priv.inventories)portfolio.f[o.day][i]+=b[i];}
+   model.value(o,portfolio,&prices);std::vector<int>free;int animals=0;
+   int owned=std::popcount(unsigned(o.own.unlocked_mask));core.planned_land=owned;
+@@ -199,7 +257,7 @@
+   // the current tile and never replaces maintenance of the incumbent crop.
+   for(int pos=0;pos<100;pos++){
+    auto&t=farm.tiles[pos];if(t.kind==TileKind::LOCKED)continue;
+-   if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,prices,&t);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
++   if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,prices,&t,&forecast_service[pos]);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
+    if(plant(t)){
+     int k=int(t.crop),finish=std::max(o.day,t.planted_day+(ongoing(k)?first[k]+3*interval[k]:core.h_age(k)));
+     if(!ongoing(k)){
+@@ -285,6 +343,7 @@
+   }
+   // No automatic same-crop continuation when a slot was offered but declined.
+   for(int pos:free)if(plant(farm.tiles[pos])&&successor[pos]<0)core.plant_not_before[pos]=30;
++  if(s.service_reconcile>=2)reconcile_service(v);
+   set_service(v);core.prepare_orders(v,o,expiry);
+   if(s.preview>0&&!new_positions.empty()){
+    for(int pass=0;pass<3;pass++){
+@@ -294,7 +353,7 @@
+      if(plant(farm.tiles[pos])||book[pos].funded||successor[pos]<0||admitted.count(pos))continue;
+      add(portfolio,paths[pos],-1);paths[pos]={};successor[pos]=-1;settarget(pos,-1);book[pos]={};deferred++;changed=true;
+     }
+-    if(!changed)break;model.value(o,portfolio,&prices);set_service(v);core.prepare_orders(v,o,expiry);
++    if(!changed)break;model.value(o,portfolio,&prices);if(s.service_reconcile>=2)reconcile_service(v);set_service(v);core.prepare_orders(v,o,expiry);
+    }
+   }
+   predicted=model.value(o,portfolio);model.shadow=prices;
+@@ -342,7 +401,7 @@
+   bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);return out;
+  }
+  std::string debug()const{
+-  std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"targets\":[";
++  std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
+   bool sep=false;for(auto[p,k]:core.target){if(sep)o<<",";sep=true;o<<"["<<p<<","<<k<<"]";}o<<"]}";return o.str();
+  }
+ };
+--- a/policy/agent.py
++++ b/policy/agent.py
+@@ -59,7 +59,7 @@
+     return (ctypes.c_double*len(values))(*values)
+ 
+ DEFAULTS = {'competition': 0.8, 'supply': 0.85, 'future_shop': 0.7, 'capital_power': 0.4, 'labor_hours': 15, 'work_price': 1.2, 'animal_work': 1.0, 'reserve': 120, 'max_animals': 20, 'max_hands': 14, 'max_land': 4, 'feed_cover': 2, 'rotation': 1, 'preview': 1, 'delivery': 2, 'intraday': 1, 'service': 1, 'replant': 0.7, 'land_rent': 2, 'discount': 0.015, 'tour_dp': 0, 'layout': 0, 'repeat': 1, 'animal_bias': 1, 'crop_bias': 1, 'portfolio_passes': 1, 'crop_fert': 1, 'harvest_threshold': 1, 'delay_sale': 0, 'opening_budget': 1, 'scenario': 0, 'keep_commitments': 1}
+-DEFAULTS.update(candidate_extra=0)
++DEFAULTS.update(candidate_extra=0,service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0)
+ _ORDER = tuple(DEFAULTS)
+ 
+ class Agent:
+--- a/policy/config.json
++++ b/policy/config.json
+@@ -31,5 +31,9 @@
+   "opening_budget": 1,
+   "scenario": 1,
+   "keep_commitments": 1,
+-  "candidate_extra": 1
++  "candidate_extra": 1,
++  "service_reconcile": 2,
++  "live_ledger": 0,
++  "delivery_calendar": 0,
++  "feed_finance": 0
+ }

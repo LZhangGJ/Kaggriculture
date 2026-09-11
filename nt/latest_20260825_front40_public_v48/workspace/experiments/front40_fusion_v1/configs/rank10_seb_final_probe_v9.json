@@ -1,0 +1,11 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-candidate-manifest.v1",
+  "candidates": [
+    {
+      "name": "rank10_seb_v4_final",
+      "family": "rank10_seb_firstshop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank10_seb_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank10_seb_threepanel_minimax_firstshop_v4.json"
+    }
+  ]
+}

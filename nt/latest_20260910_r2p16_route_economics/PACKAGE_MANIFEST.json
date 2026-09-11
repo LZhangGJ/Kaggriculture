@@ -1,0 +1,226 @@
+{
+  "agent": "latest_20260910_r2p16_route_economics",
+  "entry": "main.py",
+  "binary": "build/revision5/route3.so",
+  "binary_sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7",
+  "runtime": "Linux x86-64 / WSL; GCC 13; Python standard library",
+  "status": "Published research candidate; do not promote to the competition baseline. No Kaggle upload.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 235,
+      "sha256": "6cb832ffc04921cb7eab5c61d9420e834ff93f4e2651e9fd7a77f8b268d8274b"
+    },
+    ".gitignore": {
+      "bytes": 125,
+      "sha256": "51756bd347a9e9001a6e80121af0f197c9adaad78201c3f62a7335e4ec25b64c"
+    },
+    "build/revision5/route3.BUILD.json": {
+      "bytes": 5217,
+      "sha256": "984e1faf733c9afc571097fdb5c84a5ae5266422a969aaa1d329ba47122a2d38"
+    },
+    "build/revision5/route3.so": {
+      "bytes": 1120264,
+      "sha256": "97d0918f7b74839050c39726ebc2f6b7daede6be9193930c0a4ddcd40bb48de7"
+    },
+    "build.py": {
+      "bytes": 2556,
+      "sha256": "1f048286ebd7fd829c8bf9fcad884e5ed5b13e77c2f1426f1da83095a9e9dd66"
+    },
+    "main.py": {
+      "bytes": 716,
+      "sha256": "f805d3ce185f259ad00169f10a5a87c272ec645fae505af05fe3940a98ca49c3"
+    },
+    "policy/agent.py": {
+      "bytes": 7892,
+      "sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+    },
+    "policy/animal_service_dp.hpp": {
+      "bytes": 1399,
+      "sha256": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c"
+    },
+    "policy/bridge.cpp": {
+      "bytes": 5635,
+      "sha256": "452fb541f66e12792bf2585f49add6914a49fadca935b12a35cbf3fb62bf3ecb"
+    },
+    "policy/conditional_market.hpp": {
+      "bytes": 2178,
+      "sha256": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457"
+    },
+    "policy/config.json": {
+      "bytes": 758,
+      "sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+    },
+    "policy/executor/compile_choices.hpp": {
+      "bytes": 5705,
+      "sha256": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea"
+    },
+    "policy/executor/crop_delivery.hpp": {
+      "bytes": 5208,
+      "sha256": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e"
+    },
+    "policy/executor/day_consequence.hpp": {
+      "bytes": 9097,
+      "sha256": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae"
+    },
+    "policy/executor/idle_task_handoff.hpp": {
+      "bytes": 3757,
+      "sha256": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd"
+    },
+    "policy/executor/intraday_admission.hpp": {
+      "bytes": 14811,
+      "sha256": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9"
+    },
+    "policy/executor/investment_candidates.hpp": {
+      "bytes": 4356,
+      "sha256": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe"
+    },
+    "policy/executor/joint_portfolio.hpp": {
+      "bytes": 14008,
+      "sha256": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf"
+    },
+    "policy/executor/live_execution_repairs.hpp": {
+      "bytes": 4016,
+      "sha256": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637"
+    },
+    "policy/executor/observation_view.hpp": {
+      "bytes": 330,
+      "sha256": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe"
+    },
+    "policy/executor/observed_day_scenario.hpp": {
+      "bytes": 4273,
+      "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c"
+    },
+    "policy/executor/pack_memo.hpp": {
+      "bytes": 2195,
+      "sha256": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988"
+    },
+    "policy/executor/policy.hpp": {
+      "bytes": 119270,
+      "sha256": "80a63f29ac1df54bdd9bed53d33ad22796f96719a88df9309af646938ba1d07e"
+    },
+    "policy/executor/regret_pack_incremental.inc": {
+      "bytes": 2294,
+      "sha256": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98"
+    },
+    "policy/executor/resource_exchange.hpp": {
+      "bytes": 5838,
+      "sha256": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e"
+    },
+    "policy/executor/rotation_calendar.hpp": {
+      "bytes": 6495,
+      "sha256": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a"
+    },
+    "policy/executor/rotation_cash.hpp": {
+      "bytes": 7072,
+      "sha256": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d"
+    },
+    "policy/executor/service_recovery.hpp": {
+      "bytes": 8443,
+      "sha256": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c"
+    },
+    "policy/executor/vendor/simulator.cpp": {
+      "bytes": 17869,
+      "sha256": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da"
+    },
+    "policy/executor/vendor/simulator.hpp": {
+      "bytes": 6489,
+      "sha256": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+    },
+    "policy/finite_fertilizer.hpp": {
+      "bytes": 860,
+      "sha256": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061"
+    },
+    "policy/learned_value.hpp": {
+      "bytes": 2550,
+      "sha256": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2"
+    },
+    "policy/local_sale_timing.hpp": {
+      "bytes": 3107,
+      "sha256": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766"
+    },
+    "policy/observation_codec.hpp": {
+      "bytes": 1569,
+      "sha256": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297"
+    },
+    "policy/observed_crop_clock.hpp": {
+      "bytes": 1869,
+      "sha256": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4"
+    },
+    "policy/ongoing_maintenance_dp.hpp": {
+      "bytes": 2095,
+      "sha256": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd"
+    },
+    "policy/planner.hpp": {
+      "bytes": 13366,
+      "sha256": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+    },
+    "policy/proposals.hpp": {
+      "bytes": 6894,
+      "sha256": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289"
+    },
+    "policy/public_flow_scenario.hpp": {
+      "bytes": 3313,
+      "sha256": "252fc0d8e12e04f3a610bea83ef426be111796077ee52d58ad291a7068ebc052"
+    },
+    "policy/public_trade_ledger.hpp": {
+      "bytes": 5525,
+      "sha256": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef"
+    },
+    "policy/route_economics.hpp": {
+      "bytes": 25020,
+      "sha256": "7c4527ab17302f2bb65868fc592d143f8d4ff7774a2e7845b840b27c71d21e9b"
+    },
+    "policy/sale_clock.hpp": {
+      "bytes": 1901,
+      "sha256": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260"
+    },
+    "policy/search.hpp": {
+      "bytes": 4513,
+      "sha256": "40e86bccf8f1563fb35f5cc6e8d96d0cb6a0678818a780f20da3f0297728e68c"
+    },
+    "policy/startup_supply.hpp": {
+      "bytes": 674,
+      "sha256": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d"
+    },
+    "policy/triad.hpp": {
+      "bytes": 29729,
+      "sha256": "538cc8636a7ad5b80cbbd3b130e968498385e83677e4bfccebb51d2ad7bd79d6"
+    },
+    "POOL_REPORT.md": {
+      "bytes": 5784,
+      "sha256": "bb54d5f35913466b24397b6105e603889cafbdcbad2522e9394885a2809b4611"
+    },
+    "POOL_VALIDATION.json": {
+      "bytes": 21207,
+      "sha256": "41315bc84e17f3265b5e693b326de342926539e02cd2174aec72b00e3caf1cca"
+    },
+    "README.md": {
+      "bytes": 6501,
+      "sha256": "eadb92210ee49ff1def97334cc02ecacce1ad7a9e67103388b670f05b3c2847c"
+    },
+    "SOURCE_PROVENANCE.json": {
+      "bytes": 5281,
+      "sha256": "87ea6617fb9ef70c8cc9fc4e3c431d815e0bb8a509ccb5a20693bf3331635183"
+    },
+    "tests/replay_timing.py": {
+      "bytes": 2787,
+      "sha256": "c046bcb5e4fd411385ff01e66be359515bd5a77a63cec56fa553845085bd492d"
+    },
+    "tests/run_panel.py": {
+      "bytes": 6209,
+      "sha256": "9efe37fae61277dcfcf52cd592dcc1ecf138df58f1d4cf54d37135ec48ae46c6"
+    },
+    "tests/summarize_validation.py": {
+      "bytes": 7720,
+      "sha256": "e76b591a89b775ac01670d8a613a034df228f91ba4534451c592d3a7756c6ffd"
+    },
+    "tests/test_route_economics.cpp": {
+      "bytes": 8036,
+      "sha256": "05dad367ee9e2c3ec94f98b451f30d6dc7e8d974adf4a5e4c9a9fc97a0662a65"
+    },
+    "VALIDATION.json": {
+      "bytes": 13079,
+      "sha256": "b34f7302cae11f520c01b6f7f0143bc9a37b2aafc659fafafcad4e01d2fad3d4"
+    }
+  }
+}

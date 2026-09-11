@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "training_games": 89600,
+  "final_games": 29400,
+  "seconds": 1848.331292796,
+  "old_inputs_unchanged": true,
+  "all_selection_before_final": true
+}

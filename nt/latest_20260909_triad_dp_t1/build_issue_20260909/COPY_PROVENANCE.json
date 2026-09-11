@@ -1,0 +1,455 @@
+{
+  "files": [
+    {
+      "source": "handoff\\T1_Rebuild_Divergence_GPT_Review_20260909_v1.zip",
+      "target": "first_step_reproducer.zip",
+      "sha256": "197cd9dcdab51c6c974b78573a6179fe8c040f815b2303f4703fc4fcfd073ad2",
+      "bytes": 2391801
+    },
+    {
+      "source": "handoff\\T1_Rebuild_Divergence_GPT_Review_20260909_v1_ACCEPTANCE.json",
+      "target": "evidence/FIRST_STEP_ARCHIVE_ACCEPTANCE.json",
+      "sha256": "d6ed2ea10527354c7d11dcbb0a7084114c9a833e2287a5d9125affc69c411a28",
+      "bytes": 479
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\agent.so",
+      "target": "binaries/agent_gcc13_nomodref.so",
+      "sha256": "9bc7b5cc2ae2fb90cfc0df26bb06c716edd2e384cbf0a49bf510cbd380187f4e",
+      "bytes": 941608
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\ANIMAL_CLONE_COMPARISON.json",
+      "target": "evidence/diagnosis/ANIMAL_CLONE_COMPARISON.json",
+      "sha256": "8e786b562c53ac7b15d5851cc2471fa2835ac56e07372a1b4c2c030f222866fb",
+      "bytes": 79273
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_noalias\\build.log",
+      "target": "evidence/diagnosis/animal_noalias/build.log",
+      "sha256": "623df2526d646cf3077c498537554b07934e7300314c9a037d4632d3bb81d789",
+      "bytes": 41034
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_noalias\\FULL_TRACE_REGRESSION.json",
+      "target": "evidence/diagnosis/animal_noalias/FULL_TRACE_REGRESSION.json",
+      "sha256": "403bd5073b0c1cd42b44a67c4de2dcffc186443c318bfbee51debb949ebe945b",
+      "bytes": 71672
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_noalias\\receipt.json",
+      "target": "evidence/diagnosis/animal_noalias/receipt.json",
+      "sha256": "93330bb11f0809b619a6b21eee64ee26ed35b23a3a88042953cc6c1bb1949fda",
+      "bytes": 782
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_noalias\\step0.json",
+      "target": "evidence/diagnosis/animal_noalias/step0.json",
+      "sha256": "5b45c4860e1f3a8045cc11e3b8758d85409d4722f1a48762ddc5a40df33c57ff",
+      "bytes": 1425
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\ANIMAL_SYMBOL_COMPARISON.json",
+      "target": "evidence/diagnosis/ANIMAL_SYMBOL_COMPARISON.json",
+      "sha256": "7e6b9fba4338a08b572bc095e83e92499a93ea3d09f26ef0344e512a64062622",
+      "bytes": 119157
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit.cpp",
+      "target": "evidence/diagnosis/animal_unit.cpp",
+      "sha256": "24c4493af646b467a03c020bc533293bdec06f4f68c28a337e9dfefc25757618",
+      "bytes": 770
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_noalias\\build.log",
+      "target": "evidence/diagnosis/animal_unit_noalias/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_noalias\\forecast.txt",
+      "target": "evidence/diagnosis/animal_unit_noalias/forecast.txt",
+      "sha256": "13942cfe5ca4730cf73b7f5b917b77455642e4e74836b570db4535eb76244dd0",
+      "bytes": 2389
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_noalias\\receipt.json",
+      "target": "evidence/diagnosis/animal_unit_noalias/receipt.json",
+      "sha256": "6d0374a790109e71bcc37c30f5df3502cc3604b88ca0e58416576ac8bdcf4d5f",
+      "bytes": 453
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o0\\build.log",
+      "target": "evidence/diagnosis/animal_unit_o0/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o0\\forecast.txt",
+      "target": "evidence/diagnosis/animal_unit_o0/forecast.txt",
+      "sha256": "13942cfe5ca4730cf73b7f5b917b77455642e4e74836b570db4535eb76244dd0",
+      "bytes": 2389
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o0\\receipt.json",
+      "target": "evidence/diagnosis/animal_unit_o0/receipt.json",
+      "sha256": "7820cd38cb8a091fcd89d992aafbe0c1070140b2ef18c00980b02b927ef9d402",
+      "bytes": 420
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o3\\build.log",
+      "target": "evidence/diagnosis/animal_unit_o3/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o3\\forecast.txt",
+      "target": "evidence/diagnosis/animal_unit_o3/forecast.txt",
+      "sha256": "13942cfe5ca4730cf73b7f5b917b77455642e4e74836b570db4535eb76244dd0",
+      "bytes": 2389
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\animal_unit_o3\\receipt.json",
+      "target": "evidence/diagnosis/animal_unit_o3/receipt.json",
+      "sha256": "ca2c12b18c332388cec861a8ef1f4e7350ee5f5846e71bf0a8ec6f36974a71c6",
+      "bytes": 420
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\bridge_noalias\\build.log",
+      "target": "evidence/diagnosis/bridge_noalias/build.log",
+      "sha256": "31bef8022624dccdd77d2aaff14386eee7cf0d1dc3281ec5c3f1e486223791c3",
+      "bytes": 41034
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\bridge_noalias\\receipt.json",
+      "target": "evidence/diagnosis/bridge_noalias/receipt.json",
+      "sha256": "1c2b679cbbf9b8db2f57556ff9fc82cd59bed73ab37b932b284b466178a3e588",
+      "bytes": 776
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\bridge_noalias\\step0.json",
+      "target": "evidence/diagnosis/bridge_noalias/step0.json",
+      "sha256": "e7d57c4186ad07042bef794caff171066877d9f9bd70ab81b9ebc37c5f6ba1d7",
+      "bytes": 1364
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\crop_noalias\\build.log",
+      "target": "evidence/diagnosis/crop_noalias/build.log",
+      "sha256": "819c0f28178d0a04f46419e6ae6093af0e1a08a2f20f1f4a7b06af9692ba2b77",
+      "bytes": 40796
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\crop_noalias\\receipt.json",
+      "target": "evidence/diagnosis/crop_noalias/receipt.json",
+      "sha256": "6ce470262f89f9395808540a11bc2bb90ca643f18a21a68348c52bf191956713",
+      "bytes": 776
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\crop_noalias\\step0.json",
+      "target": "evidence/diagnosis/crop_noalias/step0.json",
+      "sha256": "bae38c527b9004ac29941c33edf44e28be00040a5a234184bf364c7506ea2afc",
+      "bytes": 1361
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\EVIDENCE_INDEX.json",
+      "target": "evidence/diagnosis/EVIDENCE_INDEX.json",
+      "sha256": "460be6eac6dc01f849fc440544b84ba08a41404b333968a35abcad8b1b08ad6e",
+      "bytes": 10262
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\ipa_modref_repro.cpp",
+      "target": "evidence/diagnosis/ipa_modref_repro.cpp",
+      "sha256": "9696fa3ce00a1874651b1a3045ecd63061607b6133e2e0eb8c435d0d68e99835",
+      "bytes": 2362
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o0\\build.log",
+      "target": "evidence/diagnosis/o0/build.log",
+      "sha256": "a4a04b403413cb8c66bf5ed9fe24f0e87a5af3f29043d9ef7e53675858d47587",
+      "bytes": 36416
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o0\\receipt.json",
+      "target": "evidence/diagnosis/o0/receipt.json",
+      "sha256": "443698e912e25a5c7b8560fadf9adc0e0f45a259214dd42651c919e47b264cf9",
+      "bytes": 717
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o0\\step0.json",
+      "target": "evidence/diagnosis/o0/step0.json",
+      "sha256": "e5787451148feed71eb0ca6294dfde3c1c1d7cfbb27cf8e73c733a756beb9c78",
+      "bytes": 1412
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o1_sanitize\\build.log",
+      "target": "evidence/diagnosis/o1_sanitize/build.log",
+      "sha256": "a4a04b403413cb8c66bf5ed9fe24f0e87a5af3f29043d9ef7e53675858d47587",
+      "bytes": 36416
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o1_sanitize\\receipt.json",
+      "target": "evidence/diagnosis/o1_sanitize/receipt.json",
+      "sha256": "deb13074d5e4a10d979f406fb5655ccf37d8921d63209e8fd2a205b0cc13884c",
+      "bytes": 838
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o1_sanitize\\step0.json",
+      "target": "evidence/diagnosis/o1_sanitize/step0.json",
+      "sha256": "562ac7b105e36d93d30d6e05630e7dd37bfea4a712b406bd13a781d0d3828d0f",
+      "bytes": 1421
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noalias\\build.log",
+      "target": "evidence/diagnosis/o3_noalias/build.log",
+      "sha256": "4cb5f4ccb2a35ee1a016d04b2efd2deacedbd99e63cf555aa13b3b141475d6b6",
+      "bytes": 37940
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noalias\\receipt.json",
+      "target": "evidence/diagnosis/o3_noalias/receipt.json",
+      "sha256": "67e34e9eace869ba10d6b96efe0f74318c15ac3a18f7929a7d972428e86d47ac",
+      "bytes": 754
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noalias\\step0.json",
+      "target": "evidence/diagnosis/o3_noalias/step0.json",
+      "sha256": "d5e67ad059a74d7b16b2a0986c7e22f2c71227570337ea12adc65babf7a86dff",
+      "bytes": 1421
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noipa_alias\\build.log",
+      "target": "evidence/diagnosis/o3_noipa_alias/build.log",
+      "sha256": "4cb5f4ccb2a35ee1a016d04b2efd2deacedbd99e63cf555aa13b3b141475d6b6",
+      "bytes": 37940
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noipa_alias\\receipt.json",
+      "target": "evidence/diagnosis/o3_noipa_alias/receipt.json",
+      "sha256": "731bd7b156ca940f010998588a0aaa358e12dfe75cba8c99eaf389dffea4df48",
+      "bytes": 762
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noipa_alias\\step0.json",
+      "target": "evidence/diagnosis/o3_noipa_alias/step0.json",
+      "sha256": "f17e533330cf869d543bc44cd5552bd11717862137d6e8d95d74529c421c5449",
+      "bytes": 1424
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noloopvec\\build.log",
+      "target": "evidence/diagnosis/o3_noloopvec/build.log",
+      "sha256": "4cb5f4ccb2a35ee1a016d04b2efd2deacedbd99e63cf555aa13b3b141475d6b6",
+      "bytes": 37940
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noloopvec\\receipt.json",
+      "target": "evidence/diagnosis/o3_noloopvec/receipt.json",
+      "sha256": "41475036506180178a7437abf214067085308637dd0344a350275ded55e5f16e",
+      "bytes": 760
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noloopvec\\step0.json",
+      "target": "evidence/diagnosis/o3_noloopvec/step0.json",
+      "sha256": "5a042d84f8829f3889d2500a44f58309a671c9a4f4c62461e6b7f0591d8fbe83",
+      "bytes": 1362
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\build.log",
+      "target": "evidence/diagnosis/o3_nomodref/build.log",
+      "sha256": "4cb5f4ccb2a35ee1a016d04b2efd2deacedbd99e63cf555aa13b3b141475d6b6",
+      "bytes": 37940
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\FULL_TRACE_REGRESSION.json",
+      "target": "evidence/diagnosis/o3_nomodref/FULL_TRACE_REGRESSION.json",
+      "sha256": "c91a9b6360893a84e6f3360750203b8998b634acba89a566f66902120eadff80",
+      "bytes": 71669
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\G001_ANCHOR.json",
+      "target": "evidence/diagnosis/o3_nomodref/G001_ANCHOR.json",
+      "sha256": "e74ebef59f73cb81460085717ca84c5f28ac21ca784fbe1f41e08778e916070a",
+      "bytes": 582
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\receipt.json",
+      "target": "evidence/diagnosis/o3_nomodref/receipt.json",
+      "sha256": "d8838a96ad0ee81ac4d664ddaeee1e518a5372d671f3d952b14b11b26d7a1655",
+      "bytes": 750
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_nomodref\\step0.json",
+      "target": "evidence/diagnosis/o3_nomodref/step0.json",
+      "sha256": "6a2ca84fa9f95da9f84eb57625d0ca6bca55144d1ca5edb18d16275ee88a33f5",
+      "bytes": 1422
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noslp\\build.log",
+      "target": "evidence/diagnosis/o3_noslp/build.log",
+      "sha256": "4cb5f4ccb2a35ee1a016d04b2efd2deacedbd99e63cf555aa13b3b141475d6b6",
+      "bytes": 37940
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noslp\\receipt.json",
+      "target": "evidence/diagnosis/o3_noslp/receipt.json",
+      "sha256": "00ce03c02cdc4ea341ebfefda091ca023ef31db781d362184bcbb420e204034f",
+      "bytes": 755
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\o3_noslp\\step0.json",
+      "target": "evidence/diagnosis/o3_noslp/step0.json",
+      "sha256": "8af2a5837bca72d59021f7f8ecdd40d5adb070b0de3d7decc4ea605aa7f70229",
+      "bytes": 1358
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\paths_noalias\\build.log",
+      "target": "evidence/diagnosis/paths_noalias/build.log",
+      "sha256": "2499939ed69ed9e7725983e6ba916674494e5eb1f227ade1cd3d027070bf4a2c",
+      "bytes": 40915
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\paths_noalias\\receipt.json",
+      "target": "evidence/diagnosis/paths_noalias/receipt.json",
+      "sha256": "1b5f2d64923f659affc322c68233ead502f7a037935ee68aa633be0a63a568e1",
+      "bytes": 779
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\paths_noalias\\step0.json",
+      "target": "evidence/diagnosis/paths_noalias/step0.json",
+      "sha256": "0ea3fc3945c2e45bf538678825b3f6b0dafcd6799aa7452ebf07fcff574eccc9",
+      "bytes": 1424
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\plan_noalias\\build.log",
+      "target": "evidence/diagnosis/plan_noalias/build.log",
+      "sha256": "1fa7f9cf29fb1666561b8abbb1d78579f60ab90e477582b541521d6eb17d7b31",
+      "bytes": 40796
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\plan_noalias\\receipt.json",
+      "target": "evidence/diagnosis/plan_noalias/receipt.json",
+      "sha256": "cfed979e86b6164c6dbed981574a6981344c1dce00d3fe285e5a995064a517d9",
+      "bytes": 770
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\plan_noalias\\step0.json",
+      "target": "evidence/diagnosis/plan_noalias/step0.json",
+      "sha256": "5b447bab3cebff97a29795dd7ef840544cef109ed0aef686277ac9f754c46331",
+      "bytes": 1362
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\planner_noalias\\build.log",
+      "target": "evidence/diagnosis/planner_noalias/build.log",
+      "sha256": "64afbaa44c72b3c6220675e6bfae837c404d6fa6815954dad21320931881d9f4",
+      "bytes": 41153
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\planner_noalias\\receipt.json",
+      "target": "evidence/diagnosis/planner_noalias/receipt.json",
+      "sha256": "ec7632c8d74db481597f8626c7936ed78da78780f4b2de95775d9f4f4f479863",
+      "bytes": 785
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\planner_noalias\\step0.json",
+      "target": "evidence/diagnosis/planner_noalias/step0.json",
+      "sha256": "1d8d9b91dab6d6cced04fca80182dded83a0c70a399c043272ebe5a9420423a6",
+      "bytes": 1364
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\rebuilt_animal_constprop.asm",
+      "target": "evidence/diagnosis/rebuilt_animal_constprop.asm",
+      "sha256": "10d58c3a9d5ddf4621d8d912c248ba3ca3edba6414ece8bb2b10a73171427b4d",
+      "bytes": 19681
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\rebuilt_animal_symbols.txt",
+      "target": "evidence/diagnosis/rebuilt_animal_symbols.txt",
+      "sha256": "25af8a112e8ea0a70494c953efc4ad78f142cae8bdfa4888f49ee55b342b116a",
+      "bytes": 309
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\REDUCED_COMPARISON.json",
+      "target": "evidence/diagnosis/REDUCED_COMPARISON.json",
+      "sha256": "f4b9b2b8fca54e03339eddd7a39659ab39dc046e63914d2bb9566ac108371208",
+      "bytes": 2032
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\reduced_noalias\\RESULT.json",
+      "target": "evidence/diagnosis/reduced_noalias/RESULT.json",
+      "sha256": "f4a95fbe6207e95164066c57490557ccda11ae4cf36dbafc3c7a9d4bf7b0a154",
+      "bytes": 491
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\reduced_nomodref\\RESULT.json",
+      "target": "evidence/diagnosis/reduced_nomodref/RESULT.json",
+      "sha256": "a02889ead7de58aeae0b4647b078225daad1ec7fee90daa8dd74f8190bfa59ed",
+      "bytes": 488
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\reduced_o0\\RESULT.json",
+      "target": "evidence/diagnosis/reduced_o0/RESULT.json",
+      "sha256": "3796ca1aca9c41edd4c5e337d27cdddceea36d3922e9a293a68802db0a2e37df",
+      "bytes": 453
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\reduced_o3\\RESULT.json",
+      "target": "evidence/diagnosis/reduced_o3/RESULT.json",
+      "sha256": "f783299ee262df9ca1324c6d8734ced1f8dc4ead17d7e753b9a01c68ca874247",
+      "bytes": 450
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\setup_noalias\\build.log",
+      "target": "evidence/diagnosis/setup_noalias/build.log",
+      "sha256": "c6786a483604d99e9c79db4c0621a38d46b39386a9dc6094d9f7d8378355ff1d",
+      "bytes": 40915
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\setup_noalias\\receipt.json",
+      "target": "evidence/diagnosis/setup_noalias/receipt.json",
+      "sha256": "76b0464fc2ba740cdc202112b1188e1eb7fa79b17cd2dc1db5fe16a1eb62e405",
+      "bytes": 779
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\setup_noalias\\step0.json",
+      "target": "evidence/diagnosis/setup_noalias/step0.json",
+      "sha256": "0e3a0b69f62b7d1aaa5bfe5bc5dae8ecdd21415e7065a85ff8c0766a7ad3ddf1",
+      "bytes": 1362
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\supplier_animal_constprop.asm",
+      "target": "evidence/diagnosis/supplier_animal_constprop.asm",
+      "sha256": "6221060db0c11c98e137186b73a5b29e43ef1b40aae90a1bf0b836bd5fb4ef3d",
+      "bytes": 34078
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\supplier_animal_symbols.txt",
+      "target": "evidence/diagnosis/supplier_animal_symbols.txt",
+      "sha256": "f7fd589c080d5c441a1f74b3418edd681095b631d3826abf92d62c1e6f843601",
+      "bytes": 218
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\triad_noalias\\build.log",
+      "target": "evidence/diagnosis/triad_noalias/build.log",
+      "sha256": "a8558ae7190a52d96bb69c2f5ca62b89a3a1b361ab77bac939239d0a9e6d2515",
+      "bytes": 40915
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\triad_noalias\\receipt.json",
+      "target": "evidence/diagnosis/triad_noalias/receipt.json",
+      "sha256": "476591e57304dfb4f0664caf10a047113b556810a19881588d945e964d285214",
+      "bytes": 779
+    },
+    {
+      "source": "experiments\\triad_t1_vs_94_710_20260909_v1\\diagnosis\\triad_noalias\\step0.json",
+      "target": "evidence/diagnosis/triad_noalias/step0.json",
+      "sha256": "c7735706f816c12a6f8b08434232f56e1d5cef0168b4d727d37e95b0efce52d4",
+      "bytes": 1424
+    },
+    {
+      "source": "gpt_review\\codex\\T1_GCC13_BUILD_DIVERGENCE_ROOT_CAUSE_20260909_ZH.md",
+      "target": "evidence/ROOT_CAUSE_REPORT_ORIGINAL_ZH.md",
+      "sha256": "955423f7e8ea9f7c92f9f56c7b192fd85a20fe797bfaf8940c18d0c3e3c3ae19",
+      "bytes": 8807
+    }
+  ],
+  "report_transform": "Relative links rebased only; raw original report retained in evidence."
+}

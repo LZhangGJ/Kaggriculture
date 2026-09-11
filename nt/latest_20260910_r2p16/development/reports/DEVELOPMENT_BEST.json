@@ -1,0 +1,137 @@
+{
+  "name": "R2P16 P12 + initial rival investment prior",
+  "status": "FROZEN_CANDIDATE_CONFIRMATIONS_RECORDED_NOT_FINAL_90_ACCEPTANCE",
+  "binary": "candidate_r2p16/policy/startupsupply2.so",
+  "binary_sha256": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b",
+  "build_receipt": "candidate_r2p16/startupsupply2.BUILD.json",
+  "config": "startup_supply_screen100/startupsupply2/startupsupply2/CONFIG.json",
+  "results": "startup_supply_screen100/startupsupply2/startupsupply2/RESULTS.json",
+  "games": 2200,
+  "wins": 1790,
+  "baseline_wins": 1501,
+  "rescued_losses": 391,
+  "lost_old_wins": 102,
+  "mean_cash_delta": 3739.864090909091,
+  "mean_margin_delta": 2195.890909090909,
+  "macro_win_rate": 0.8136363636363636,
+  "development_seeds": [
+    2609110000,
+    2609110099
+  ],
+  "paired_original": {
+    "rescued": 391,
+    "lost_wins": 102,
+    "mean_cash_delta": 3739.864090909091,
+    "mean_margin_delta": 2195.890909090909,
+    "win_delta": 0.13136363636363638,
+    "paired_seed_win_delta95": [
+      0.06818181818181818,
+      0.19727272727272727
+    ]
+  },
+  "paired_parent_p12": {
+    "rescued": 180,
+    "lost_wins": 113,
+    "mean_cash_delta": 881.0045454545455,
+    "mean_margin_delta": 45.83681818181818,
+    "win_delta": 0.030454545454545456,
+    "paired_seed_win_delta95": [
+      -0.015909090909090907,
+      0.07909090909090909
+    ]
+  },
+  "independent_confirmation": {
+    "status": "COMPLETED_NO_CONFIRMED_IMPROVEMENT",
+    "results": "startup_supply_validation32/RESULTS.json",
+    "seeds": [
+      2609124000,
+      2609124031
+    ],
+    "overall": {
+      "games": 704,
+      "valid_games": 704,
+      "errors": 0,
+      "r2_wins": 548,
+      "losses": 156,
+      "ties": 0,
+      "r2_win_rate": 0.7784090909090909,
+      "r2_mean_cash": 110918.23011363637,
+      "opponent_mean_cash": 94746.50710227272,
+      "mean_margin": 16171.723011363636,
+      "median_margin": 7231.0
+    },
+    "paired_original": {
+      "rescued": 56,
+      "lost_wins": 66,
+      "mean_cash_delta": -696.8607954545455,
+      "mean_margin_delta": -283.9744318181818,
+      "win_delta": -0.014204545454545452,
+      "paired_seed_win_delta95": [
+        -0.10795454545454544,
+        0.07670454545454546
+      ]
+    },
+    "paired_p12": {
+      "rescued": 65,
+      "lost_wins": 64,
+      "mean_cash_delta": -3007.640625,
+      "mean_margin_delta": -1281.2713068181818,
+      "win_delta": 0.0014204545454545464,
+      "paired_seed_win_delta95": [
+        -0.10085227272727272,
+        0.10653409090909091
+      ]
+    }
+  },
+  "previous_best_snapshot": "candidate_r2p11/DEVELOPMENT_BEST_SUPERSEDED_BY_P16.json",
+  "final_holdout_used": false,
+  "goal_remains_active": true,
+  "released_original_unchanged": true,
+  "additional_new32_5000": {
+    "results": "startup_supply_validation32_b2/RESULTS.json",
+    "seeds": [
+      2609125000,
+      2609125031
+    ],
+    "overall": {
+      "games": 704,
+      "valid_games": 704,
+      "errors": 0,
+      "r2_wins": 567,
+      "losses": 135,
+      "ties": 2,
+      "r2_win_rate": 0.8053977272727273,
+      "r2_mean_cash": 105899.91903409091,
+      "opponent_mean_cash": 88922.51420454546,
+      "mean_margin": 16977.404829545456,
+      "median_margin": 7705.0
+    }
+  },
+  "fair_common64_p12_p16": {
+    "results": "startup_supply_validation32_b2/COMMON64.json",
+    "overall": {
+      "games": 1408,
+      "valid_games": 1408,
+      "errors": 0,
+      "r2_wins": 1115,
+      "losses": 291,
+      "ties": 2,
+      "r2_win_rate": 0.7919034090909091,
+      "r2_mean_cash": 108409.07457386363,
+      "opponent_mean_cash": 91834.51065340909,
+      "mean_margin": 16574.563920454544,
+      "median_margin": 7474.5
+    },
+    "paired_original": {
+      "rescued": 161,
+      "lost_wins": 95,
+      "mean_cash_delta": 266.11079545454544,
+      "mean_margin_delta": 1524.690340909091,
+      "win_delta": 0.046875,
+      "paired_seed_win_delta95": [
+        -0.022727272727272724,
+        0.11647727272727272
+      ]
+    }
+  }
+}

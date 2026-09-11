@@ -1,0 +1,17 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank01_hasegawa_same_shop_v1",
+      "family": "rank01_shop_scaled_balanced",
+      "bank": "experiments/front40_fusion_v1/artifacts/hasegawa_current_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_current_same_shop_map_train156001_n16_v1.json"
+    },
+    {
+      "name": "rank01_hasegawa_fc24b_optimized_v2",
+      "family": "rank01_shop_scaled_balanced",
+      "bank": "experiments/front40_fusion_v1/artifacts/hasegawa_current_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_optimized_shop_map_train162001_n32_v2.json"
+    }
+  ]
+}

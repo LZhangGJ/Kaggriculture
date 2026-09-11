@@ -1,0 +1,1381 @@
+{
+  "status": "COMPLETE",
+  "engineering": "PASS",
+  "learning": "NO_PROVEN_GAIN",
+  "training_games": 26880,
+  "evaluation_games": 43176,
+  "results": [
+    {
+      "arm": "c3auto",
+      "run": 0,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "best": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "last": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 613,
+        "win_rate": 0.43785714285714283,
+        "mean_cash": 104560.31285714285,
+        "mean_margin": -1038.8635714285715
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.075,
+        "win_rate_ci": [
+          0.03714285714285716,
+          0.11142857142857146
+        ],
+        "cash_delta": -651.3707142857144,
+        "cash_ci": [
+          -2330.5197321428573,
+          976.5906071428562
+        ],
+        "margin_delta": 4039.7814285714285,
+        "margin_ci": [
+          2935.872999999999,
+          5121.065767857142
+        ],
+        "rescued": 330,
+        "lost": 225
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": 0.009999999999999998,
+        "win_rate_ci": [
+          -0.014285714285714284,
+          0.03428571428571428
+        ],
+        "cash_delta": -175.95000000000005,
+        "cash_ci": [
+          -947.4695178571426,
+          585.9189821428569
+        ],
+        "margin_delta": -7.613571428571431,
+        "margin_ci": [
+          -692.9841250000003,
+          662.7250357142854
+        ],
+        "rescued": 123,
+        "lost": 109
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": 0.002857142857142856,
+        "win_rate_ci": [
+          -0.026428571428571437,
+          0.03357142857142856
+        ],
+        "cash_delta": -380.6835714285715,
+        "cash_ci": [
+          -1396.251446428571,
+          620.8219285714277
+        ],
+        "margin_delta": 0.7578571428571741,
+        "margin_ci": [
+          -804.8405178571429,
+          822.0204285714286
+        ],
+        "rescued": 149,
+        "lost": 145
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 106,
+          "win_rate": 0.53,
+          "mean_cash": 107761.69,
+          "mean_margin": 2039.71
+        },
+        "g003": {
+          "games": 200,
+          "wins": 58,
+          "win_rate": 0.29,
+          "mean_cash": 104286.335,
+          "mean_margin": -5266.8
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 131,
+          "win_rate": 0.655,
+          "mean_cash": 109494.765,
+          "mean_margin": 5783.405
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 93,
+          "win_rate": 0.465,
+          "mean_cash": 106484.495,
+          "mean_margin": 1059.56
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 92,
+          "win_rate": 0.46,
+          "mean_cash": 103952.605,
+          "mean_margin": -1504.07
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 55,
+          "win_rate": 0.275,
+          "mean_cash": 100479.935,
+          "mean_margin": -5885.52
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 78,
+          "win_rate": 0.39,
+          "mean_cash": 99462.365,
+          "mean_margin": -3498.33
+        }
+      }
+    },
+    {
+      "arm": "c3auto",
+      "run": 1,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "best": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "last": {
+        "games": 1400,
+        "wins": 609,
+        "win_rate": 0.435,
+        "mean_cash": 104940.99642857142,
+        "mean_margin": -1039.6214285714286
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 596,
+        "win_rate": 0.4257142857142857,
+        "mean_cash": 104787.69571428571,
+        "mean_margin": -1150.6978571428572
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.075,
+        "win_rate_ci": [
+          0.03714285714285716,
+          0.11142857142857146
+        ],
+        "cash_delta": -651.3707142857144,
+        "cash_ci": [
+          -2330.5197321428573,
+          976.5906071428562
+        ],
+        "margin_delta": 4039.7814285714285,
+        "margin_ci": [
+          2935.872999999999,
+          5121.065767857142
+        ],
+        "rescued": 330,
+        "lost": 225
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": -0.0021428571428571425,
+        "win_rate_ci": [
+          -0.01571428571428571,
+          0.011428571428571429
+        ],
+        "cash_delta": 51.43285714285716,
+        "cash_ci": [
+          -370.58467857142847,
+          459.32010714285707
+        ],
+        "margin_delta": -119.44785714285713,
+        "margin_ci": [
+          -623.6850892857142,
+          373.1150178571427
+        ],
+        "rescued": 54,
+        "lost": 57
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": -0.009285714285714284,
+        "win_rate_ci": [
+          -0.02928571428571429,
+          0.011428571428571429
+        ],
+        "cash_delta": -153.30071428571432,
+        "cash_ci": [
+          -932.7548571428574,
+          648.7832678571424
+        ],
+        "margin_delta": -111.07642857142854,
+        "margin_ci": [
+          -747.8250535714286,
+          527.4534464285714
+        ],
+        "rescued": 94,
+        "lost": 107
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 93,
+          "win_rate": 0.465,
+          "mean_cash": 106232.83,
+          "mean_margin": 185.39
+        },
+        "g003": {
+          "games": 200,
+          "wins": 60,
+          "win_rate": 0.3,
+          "mean_cash": 105098.66,
+          "mean_margin": -4497.595
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 131,
+          "win_rate": 0.655,
+          "mean_cash": 111021.905,
+          "mean_margin": 6390.175
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 89,
+          "win_rate": 0.445,
+          "mean_cash": 105717.33,
+          "mean_margin": 788.57
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 84,
+          "win_rate": 0.42,
+          "mean_cash": 104325.04,
+          "mean_margin": -1413.685
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 55,
+          "win_rate": 0.275,
+          "mean_cash": 100292.79,
+          "mean_margin": -5854.23
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 84,
+          "win_rate": 0.42,
+          "mean_cash": 100825.315,
+          "mean_margin": -3653.51
+        }
+      }
+    },
+    {
+      "arm": "f3",
+      "run": 0,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "best": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "last": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 777,
+        "win_rate": 0.555,
+        "mean_cash": 101395.50142857143,
+        "mean_margin": 5818.937857142857
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.20571428571428574,
+        "win_rate_ci": [
+          0.16071428571428562,
+          0.2514285714285715
+        ],
+        "cash_delta": 5593.471428571428,
+        "cash_ci": [
+          3220.0310892857156,
+          7986.359696428572
+        ],
+        "margin_delta": 8893.53,
+        "margin_ci": [
+          7643.923178571427,
+          10172.180714285716
+        ],
+        "rescued": 484,
+        "lost": 196
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": -0.02285714285714285,
+        "win_rate_ci": [
+          -0.05500000000000002,
+          0.009999999999999988
+        ],
+        "cash_delta": -500.9514285714286,
+        "cash_ci": [
+          -2033.3020357142843,
+          1000.3651607142843
+        ],
+        "margin_delta": -609.7507142857144,
+        "margin_ci": [
+          -1659.707553571428,
+          466.0855
+        ],
+        "rescued": 222,
+        "lost": 254
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": -0.04642857142857143,
+        "win_rate_ci": [
+          -0.08642857142857144,
+          -0.007142857142857144
+        ],
+        "cash_delta": -1912.5742857142852,
+        "cash_ci": [
+          -3782.605892857142,
+          -96.83094642857185
+        ],
+        "margin_delta": -1899.0042857142855,
+        "margin_ci": [
+          -3026.8716071428566,
+          -743.5061250000001
+        ],
+        "rescued": 223,
+        "lost": 288
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 138,
+          "win_rate": 0.69,
+          "mean_cash": 100796.48,
+          "mean_margin": 6601.11
+        },
+        "g003": {
+          "games": 200,
+          "wins": 68,
+          "win_rate": 0.34,
+          "mean_cash": 98805.63,
+          "mean_margin": -1553.675
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 178,
+          "win_rate": 0.89,
+          "mean_cash": 115055.245,
+          "mean_margin": 24915.945
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 119,
+          "win_rate": 0.595,
+          "mean_cash": 101383.455,
+          "mean_margin": 4863.005
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 99,
+          "win_rate": 0.495,
+          "mean_cash": 100509.505,
+          "mean_margin": 3427.135
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 83,
+          "win_rate": 0.415,
+          "mean_cash": 94833.26,
+          "mean_margin": 102.43
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 92,
+          "win_rate": 0.46,
+          "mean_cash": 98384.935,
+          "mean_margin": 2376.615
+        }
+      }
+    },
+    {
+      "arm": "f3",
+      "run": 1,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "best": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "last": {
+        "games": 1400,
+        "wins": 842,
+        "win_rate": 0.6014285714285714,
+        "mean_cash": 103308.07571428572,
+        "mean_margin": 7717.942142857143
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 823,
+        "win_rate": 0.5878571428571429,
+        "mean_cash": 102252.74785714285,
+        "mean_margin": 6785.165
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.20571428571428574,
+        "win_rate_ci": [
+          0.16071428571428562,
+          0.2514285714285715
+        ],
+        "cash_delta": 5593.471428571428,
+        "cash_ci": [
+          3220.0310892857156,
+          7986.359696428572
+        ],
+        "margin_delta": 8893.53,
+        "margin_ci": [
+          7643.923178571427,
+          10172.180714285716
+        ],
+        "rescued": 484,
+        "lost": 196
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": 0.010000000000000002,
+        "win_rate_ci": [
+          -0.016428571428571417,
+          0.03714285714285713
+        ],
+        "cash_delta": 356.2950000000001,
+        "cash_ci": [
+          -1105.1946250000005,
+          1798.3806785714291
+        ],
+        "margin_delta": 356.4764285714287,
+        "margin_ci": [
+          -510.82169642857133,
+          1222.6261071428567
+        ],
+        "rescued": 219,
+        "lost": 205
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": -0.013571428571428573,
+        "win_rate_ci": [
+          -0.045,
+          0.017857142857142853
+        ],
+        "cash_delta": -1055.327857142857,
+        "cash_ci": [
+          -2444.416,
+          343.42301785714227
+        ],
+        "margin_delta": -932.7771428571428,
+        "margin_ci": [
+          -1850.2228392857141,
+          -40.50258928571476
+        ],
+        "rescued": 216,
+        "lost": 235
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 152,
+          "win_rate": 0.76,
+          "mean_cash": 100671.265,
+          "mean_margin": 8437.575
+        },
+        "g003": {
+          "games": 200,
+          "wins": 79,
+          "win_rate": 0.395,
+          "mean_cash": 97872.07,
+          "mean_margin": -961.05
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 183,
+          "win_rate": 0.915,
+          "mean_cash": 117934.06,
+          "mean_margin": 30202.9
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 134,
+          "win_rate": 0.67,
+          "mean_cash": 103562.465,
+          "mean_margin": 7062.185
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 101,
+          "win_rate": 0.505,
+          "mean_cash": 100623.975,
+          "mean_margin": 2104.555
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 90,
+          "win_rate": 0.45,
+          "mean_cash": 96635.71,
+          "mean_margin": -0.54
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 84,
+          "win_rate": 0.42,
+          "mean_cash": 98469.69,
+          "mean_margin": 650.53
+        }
+      }
+    },
+    {
+      "arm": "c3j7",
+      "run": 0,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "best": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "last": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 1074,
+        "win_rate": 0.7671428571428571,
+        "mean_cash": 108234.15071428572,
+        "mean_margin": 14383.253571428571
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.10142857142857144,
+        "win_rate_ci": [
+          0.06857142857142859,
+          0.13357142857142856
+        ],
+        "cash_delta": 1164.1621428571425,
+        "cash_ci": [
+          -672.6975178571433,
+          2942.4754285714284
+        ],
+        "margin_delta": 6957.074999999999,
+        "margin_ci": [
+          5573.235464285715,
+          8325.969892857143
+        ],
+        "rescued": 291,
+        "lost": 149
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": 0.0007142857142857137,
+        "win_rate_ci": [
+          -0.01857142857142856,
+          0.019999999999999993
+        ],
+        "cash_delta": 162.26142857142847,
+        "cash_ci": [
+          -456.38969642857165,
+          758.8608392857142
+        ],
+        "margin_delta": 330.80071428571426,
+        "margin_ci": [
+          -265.04860714285707,
+          944.0157142857137
+        ],
+        "rescued": 78,
+        "lost": 77
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": -0.014285714285714284,
+        "win_rate_ci": [
+          -0.03714285714285715,
+          0.007857142857142856
+        ],
+        "cash_delta": 257.4642857142858,
+        "cash_ci": [
+          -714.6416785714288,
+          1230.4510892857131
+        ],
+        "margin_delta": -1355.9135714285717,
+        "margin_ci": [
+          -2072.008035714287,
+          -636.8707857142858
+        ],
+        "rescued": 98,
+        "lost": 118
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 151,
+          "win_rate": 0.755,
+          "mean_cash": 105417.005,
+          "mean_margin": 9183.67
+        },
+        "g003": {
+          "games": 200,
+          "wins": 192,
+          "win_rate": 0.96,
+          "mean_cash": 117085.49,
+          "mean_margin": 26537.84
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 121,
+          "win_rate": 0.605,
+          "mean_cash": 101736.405,
+          "mean_margin": 5490.33
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 196,
+          "win_rate": 0.98,
+          "mean_cash": 120913.51,
+          "mean_margin": 42371.94
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 170,
+          "win_rate": 0.85,
+          "mean_cash": 110093.5,
+          "mean_margin": 10643.64
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 120,
+          "win_rate": 0.6,
+          "mean_cash": 101467.935,
+          "mean_margin": 2594.455
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 124,
+          "win_rate": 0.62,
+          "mean_cash": 100925.21,
+          "mean_margin": 3860.9
+        }
+      }
+    },
+    {
+      "arm": "c3j7",
+      "run": 1,
+      "best_step": 0,
+      "baseline": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "best": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "last": {
+        "games": 1400,
+        "wins": 1094,
+        "win_rate": 0.7814285714285715,
+        "mean_cash": 107976.68642857143,
+        "mean_margin": 15739.167142857143
+      },
+      "stochastic": {
+        "games": 1400,
+        "wins": 1079,
+        "win_rate": 0.7707142857142857,
+        "mean_cash": 108163.82,
+        "mean_margin": 14534.282142857142
+      },
+      "vs_keep": {
+        "win_rate_delta": 0.0,
+        "win_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "cash_delta": 0.0,
+        "cash_ci": [
+          0.0,
+          0.0
+        ],
+        "margin_delta": 0.0,
+        "margin_ci": [
+          0.0,
+          0.0
+        ],
+        "rescued": 0,
+        "lost": 0
+      },
+      "vs_random": {
+        "win_rate_delta": 0.10142857142857144,
+        "win_rate_ci": [
+          0.06857142857142859,
+          0.13357142857142856
+        ],
+        "cash_delta": 1164.1621428571425,
+        "cash_ci": [
+          -672.6975178571433,
+          2942.4754285714284
+        ],
+        "margin_delta": 6957.074999999999,
+        "margin_ci": [
+          5573.235464285715,
+          8325.969892857143
+        ],
+        "rescued": 291,
+        "lost": 149
+      },
+      "stochastic_vs_initial": {
+        "win_rate_delta": 0.004285714285714285,
+        "win_rate_ci": [
+          -0.014285714285714282,
+          0.022857142857142857
+        ],
+        "cash_delta": 91.93071428571439,
+        "cash_ci": [
+          -698.2590714285712,
+          857.0932857142855
+        ],
+        "margin_delta": 481.82928571428573,
+        "margin_ci": [
+          -76.29289285714287,
+          1032.627089285714
+        ],
+        "rescued": 87,
+        "lost": 81
+      },
+      "stochastic_vs_keep": {
+        "win_rate_delta": -0.010714285714285711,
+        "win_rate_ci": [
+          -0.03500000000000001,
+          0.013571428571428562
+        ],
+        "cash_delta": 187.13357142857149,
+        "cash_ci": [
+          -784.5895357142856,
+          1159.0000535714287
+        ],
+        "margin_delta": -1204.885,
+        "margin_ci": [
+          -1952.5151607142864,
+          -462.4669642857145
+        ],
+        "rescued": 108,
+        "lost": 123
+      },
+      "stochastic_per_opponent": {
+        "g001": {
+          "games": 200,
+          "wins": 158,
+          "win_rate": 0.79,
+          "mean_cash": 105119.13,
+          "mean_margin": 9930.93
+        },
+        "g003": {
+          "games": 200,
+          "wins": 193,
+          "win_rate": 0.965,
+          "mean_cash": 118110.06,
+          "mean_margin": 26678.03
+        },
+        "boatlee_v29": {
+          "games": 200,
+          "wins": 121,
+          "win_rate": 0.605,
+          "mean_cash": 101414.275,
+          "mean_margin": 5479.75
+        },
+        "kaito_v58": {
+          "games": 200,
+          "wins": 197,
+          "win_rate": 0.985,
+          "mean_cash": 120152.13,
+          "mean_margin": 41384.985
+        },
+        "lynn_v5": {
+          "games": 200,
+          "wins": 160,
+          "win_rate": 0.8,
+          "mean_cash": 110029.875,
+          "mean_margin": 10288.755
+        },
+        "yhay81_six_day": {
+          "games": 200,
+          "wins": 120,
+          "win_rate": 0.6,
+          "mean_cash": 102094.735,
+          "mean_margin": 3282.24
+        },
+        "yhay81_three_day": {
+          "games": 200,
+          "wins": 130,
+          "win_rate": 0.65,
+          "mean_cash": 100226.535,
+          "mean_margin": 4695.285
+        }
+      }
+    }
+  ],
+  "performance": [
+    {
+      "arm": "c3auto",
+      "run": 0,
+      "training_games": 4480,
+      "rollout_seconds": 45.31494833300001,
+      "native_seconds": 45.274771285,
+      "update_seconds": 8.595435130999983,
+      "host_to_device_seconds": 0.09638364099996544,
+      "training_games_per_second": 83.10087430544122,
+      "environment_steps_per_second": 59749.528625612234,
+      "effective_actor_records": 39889,
+      "effective_actor_per_second": 739.9131194575323,
+      "update_percent": 15.943932464772393,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 109.99345103499999,
+      "max_action_ms": 7.282078
+    },
+    {
+      "arm": "c3auto",
+      "run": 1,
+      "training_games": 4480,
+      "rollout_seconds": 44.82057803100008,
+      "native_seconds": 44.779071582,
+      "update_seconds": 8.205075850999833,
+      "host_to_device_seconds": 0.09321555699995088,
+      "training_games_per_second": 84.48740698171343,
+      "environment_steps_per_second": 60746.44561985196,
+      "effective_actor_records": 40666,
+      "effective_actor_per_second": 766.9118063210623,
+      "update_percent": 15.473785329001153,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 108.36119724500003,
+      "max_action_ms": 7.466499
+    },
+    {
+      "arm": "f3",
+      "run": 0,
+      "training_games": 4480,
+      "rollout_seconds": 53.435641907999965,
+      "native_seconds": 53.38805718,
+      "update_seconds": 8.47611623100002,
+      "host_to_device_seconds": 0.09295879999999102,
+      "training_games_per_second": 72.36105280586305,
+      "environment_steps_per_second": 52027.59696741554,
+      "effective_actor_records": 116669,
+      "effective_actor_per_second": 1884.4401048676868,
+      "update_percent": 13.690640495089854,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 128.47740710800002,
+      "max_action_ms": 21.358542
+    },
+    {
+      "arm": "f3",
+      "run": 1,
+      "training_games": 4480,
+      "rollout_seconds": 52.91803102500023,
+      "native_seconds": 52.867130279,
+      "update_seconds": 8.937850081000306,
+      "host_to_device_seconds": 0.1284159129999125,
+      "training_games_per_second": 72.42641960467365,
+      "environment_steps_per_second": 52074.595695760356,
+      "effective_actor_records": 116936,
+      "effective_actor_per_second": 1890.4588845741337,
+      "update_percent": 14.449475007370415,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 128.05053139199993,
+      "max_action_ms": 23.133088
+    },
+    {
+      "arm": "c3j7",
+      "run": 0,
+      "training_games": 4480,
+      "rollout_seconds": 108.98456513600001,
+      "native_seconds": 108.94530532499999,
+      "update_seconds": 8.887975573999881,
+      "host_to_device_seconds": 0.10669744700010142,
+      "training_games_per_second": 38.00715563620605,
+      "environment_steps_per_second": 27327.144902432152,
+      "effective_actor_records": 52867,
+      "effective_actor_per_second": 448.5098877275235,
+      "update_percent": 7.540327476156503,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 244.67360348399998,
+      "max_action_ms": 60.400159
+    },
+    {
+      "arm": "c3j7",
+      "run": 1,
+      "training_games": 4480,
+      "rollout_seconds": 107.14701112299997,
+      "native_seconds": 107.104012292,
+      "update_seconds": 8.535589731000073,
+      "host_to_device_seconds": 0.12878392500022073,
+      "training_games_per_second": 38.72665350646888,
+      "environment_steps_per_second": 27844.46387115112,
+      "effective_actor_records": 52825,
+      "effective_actor_per_second": 456.63738202661125,
+      "update_percent": 7.378455937183341,
+      "peak_gpu_mib": 45.236328125,
+      "full_experiment_seconds": 240.03436820299999,
+      "max_action_ms": 59.115974
+    }
+  ],
+  "per_opponent": {
+    "c3auto_r0": {
+      "g001": {
+        "games": 200,
+        "wins": 101,
+        "win_rate": 0.505,
+        "mean_cash": 107488.49,
+        "mean_margin": 2556.0
+      },
+      "g003": {
+        "games": 200,
+        "wins": 48,
+        "win_rate": 0.24,
+        "mean_cash": 101651.83,
+        "mean_margin": -7576.52
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 146,
+        "win_rate": 0.73,
+        "mean_cash": 114655.825,
+        "mean_margin": 8853.975
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 80,
+        "win_rate": 0.4,
+        "mean_cash": 103031.73,
+        "mean_margin": -2479.41
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 96,
+        "win_rate": 0.48,
+        "mean_cash": 105363.52,
+        "mean_margin": 1052.4
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 48,
+        "win_rate": 0.24,
+        "mean_cash": 100761.81,
+        "mean_margin": -7597.155
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 90,
+        "win_rate": 0.45,
+        "mean_cash": 101633.77,
+        "mean_margin": -2086.64
+      }
+    },
+    "c3auto_r1": {
+      "g001": {
+        "games": 200,
+        "wins": 101,
+        "win_rate": 0.505,
+        "mean_cash": 107488.49,
+        "mean_margin": 2556.0
+      },
+      "g003": {
+        "games": 200,
+        "wins": 48,
+        "win_rate": 0.24,
+        "mean_cash": 101651.83,
+        "mean_margin": -7576.52
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 146,
+        "win_rate": 0.73,
+        "mean_cash": 114655.825,
+        "mean_margin": 8853.975
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 80,
+        "win_rate": 0.4,
+        "mean_cash": 103031.73,
+        "mean_margin": -2479.41
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 96,
+        "win_rate": 0.48,
+        "mean_cash": 105363.52,
+        "mean_margin": 1052.4
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 48,
+        "win_rate": 0.24,
+        "mean_cash": 100761.81,
+        "mean_margin": -7597.155
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 90,
+        "win_rate": 0.45,
+        "mean_cash": 101633.77,
+        "mean_margin": -2086.64
+      }
+    },
+    "f3_r0": {
+      "g001": {
+        "games": 200,
+        "wins": 152,
+        "win_rate": 0.76,
+        "mean_cash": 100888.695,
+        "mean_margin": 9171.155
+      },
+      "g003": {
+        "games": 200,
+        "wins": 90,
+        "win_rate": 0.45,
+        "mean_cash": 102054.73,
+        "mean_margin": 650.505
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 197,
+        "win_rate": 0.985,
+        "mean_cash": 120958.1,
+        "mean_margin": 34857.82
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 119,
+        "win_rate": 0.595,
+        "mean_cash": 103307.705,
+        "mean_margin": 5239.57
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 113,
+        "win_rate": 0.565,
+        "mean_cash": 102571.34,
+        "mean_margin": 2841.69
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 78,
+        "win_rate": 0.39,
+        "mean_cash": 96848.83,
+        "mean_margin": -664.74
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 93,
+        "win_rate": 0.465,
+        "mean_cash": 96527.13,
+        "mean_margin": 1929.595
+      }
+    },
+    "f3_r1": {
+      "g001": {
+        "games": 200,
+        "wins": 152,
+        "win_rate": 0.76,
+        "mean_cash": 100888.695,
+        "mean_margin": 9171.155
+      },
+      "g003": {
+        "games": 200,
+        "wins": 90,
+        "win_rate": 0.45,
+        "mean_cash": 102054.73,
+        "mean_margin": 650.505
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 197,
+        "win_rate": 0.985,
+        "mean_cash": 120958.1,
+        "mean_margin": 34857.82
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 119,
+        "win_rate": 0.595,
+        "mean_cash": 103307.705,
+        "mean_margin": 5239.57
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 113,
+        "win_rate": 0.565,
+        "mean_cash": 102571.34,
+        "mean_margin": 2841.69
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 78,
+        "win_rate": 0.39,
+        "mean_cash": 96848.83,
+        "mean_margin": -664.74
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 93,
+        "win_rate": 0.465,
+        "mean_cash": 96527.13,
+        "mean_margin": 1929.595
+      }
+    },
+    "c3j7_r0": {
+      "g001": {
+        "games": 200,
+        "wins": 148,
+        "win_rate": 0.74,
+        "mean_cash": 104831.975,
+        "mean_margin": 9833.655
+      },
+      "g003": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0,
+        "mean_cash": 115752.81,
+        "mean_margin": 29777.145
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 126,
+        "win_rate": 0.63,
+        "mean_cash": 101323.335,
+        "mean_margin": 5851.73
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0,
+        "mean_cash": 120661.745,
+        "mean_margin": 46167.205
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 178,
+        "win_rate": 0.89,
+        "mean_cash": 110370.22,
+        "mean_margin": 12423.46
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 114,
+        "win_rate": 0.57,
+        "mean_cash": 101053.64,
+        "mean_margin": 2062.705
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 128,
+        "win_rate": 0.64,
+        "mean_cash": 101843.08,
+        "mean_margin": 4058.27
+      }
+    },
+    "c3j7_r1": {
+      "g001": {
+        "games": 200,
+        "wins": 148,
+        "win_rate": 0.74,
+        "mean_cash": 104831.975,
+        "mean_margin": 9833.655
+      },
+      "g003": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0,
+        "mean_cash": 115752.81,
+        "mean_margin": 29777.145
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 126,
+        "win_rate": 0.63,
+        "mean_cash": 101323.335,
+        "mean_margin": 5851.73
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0,
+        "mean_cash": 120661.745,
+        "mean_margin": 46167.205
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 178,
+        "win_rate": 0.89,
+        "mean_cash": 110370.22,
+        "mean_margin": 12423.46
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 114,
+        "win_rate": 0.57,
+        "mean_cash": 101053.64,
+        "mean_margin": 2062.705
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 128,
+        "win_rate": 0.64,
+        "mean_cash": 101843.08,
+        "mean_margin": 4058.27
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+﻿name,r2_cash,opponent_cash,margin,gain_vs_baseline,changes,force,fixed_shops
+baseline_fixed_shops,123201.0,129349.0,-6148.0,0.0,{},,True
+day7_fewer_melons_fixed_shops,125664.0,134187.0,-8523.0,-2375.0,{},"[6, 0]",True
+day1_cash_reserve_fixed_shops,119934.0,132869.0,-12935.0,-6787.0,{},"[0, 7]",True
+competition_1_fixed_shops,127157.0,134177.0,-7020.0,-872.0,{'competition': 1},,True
+day10_fewer_cows_fixed_shops,123408.0,130841.0,-7433.0,-1285.0,{},"[9, 4]",True
+day11_no_extra_cows_fixed_shops,121499.0,130964.0,-9465.0,-3317.0,{},"[10, 4]",True
+competition_0_fixed_shops,133587.0,140163.0,-6576.0,-428.0,{'competition': 0},,True
+animals_16_fixed_shops,130875.0,139716.0,-8841.0,-2693.0,{'max_animals': 16},,True
+animal_bias_06_fixed_shops,122214.0,157276.0,-35062.0,-28914.0,{'animal_bias': 0.6},,True
+no_daily_search_fixed_shops,125408.0,138643.0,-13235.0,-7087.0,{'scenario': 0},,True
+rival_supply_1_fixed_shops,125659.0,135634.0,-9975.0,-3827.0,{'supply': 1},,True
+future_shop_1_fixed_shops,120759.0,131727.0,-10968.0,-4820.0,{'future_shop': 1},,True
+rival_replant_1_fixed_shops,121961.0,134210.0,-12249.0,-6101.0,{'replant': 1},,True
+rival_replant_07_fixed_shops,121004.0,137415.0,-16411.0,-10263.0,{'replant': 0.7},,True
+own_repeated_crops_fixed_shops,124707.0,140392.0,-15685.0,-9537.0,"{'rotation': 1, 'repeat': 1}",,True
+work_price_1_fixed_shops,123709.0,131423.0,-7714.0,-1566.0,{'work_price': 1},,True
+both_repeated_crops_fixed_shops,123277.0,135386.0,-12109.0,-5961.0,"{'rotation': 1, 'repeat': 1, 'replant': 1}",,True
+work_price_2_fixed_shops,121493.0,130981.0,-9488.0,-3340.0,{'work_price': 2},,True
+labor_hours_15_fixed_shops,123289.0,132121.0,-8832.0,-2684.0,{'labor_hours': 15},,True
+feed_cover_2_fixed_shops,123673.0,138719.0,-15046.0,-8898.0,{'feed_cover': 2},,True
+horizon_2_fixed_shops,119425.0,125331.0,-5906.0,242.0,{'scenario': 2},,True
+without_batch_delivery_fixed_shops,123138.0,129406.0,-6268.0,-120.0,{'batch_delivery': 0},,True
+horizon_3_fixed_shops,117174.0,124467.0,-7293.0,-1145.0,{'scenario': 3},,True
+opening_copy_1_fixed_shops,127956.0,153173.0,-25217.0,-19069.0,{},,True
+no_melon_after_day10_fixed_shops,119650.0,126032.0,-6382.0,-234.0,{},,True
+opening_copy_6_fixed_shops,121915.0,143605.0,-21690.0,-15542.0,{},,True
+melon_harvest_age10_fixed_shops,122300.0,128819.0,-6519.0,-371.0,{},,True
+grain_from_day16_fixed_shops,123965.0,130237.0,-6272.0,-124.0,{},,True
+no_late_melon_and_grain_fixed_shops,117434.0,124220.0,-6786.0,-638.0,{},,True
+day10_candidate0_fixed_shops,124323.0,129565.0,-5242.0,906.0,{},"[9, 0]",True
+day10_candidate1_fixed_shops,123201.0,129349.0,-6148.0,0.0,{},"[9, 1]",True
+day10_candidate2_fixed_shops,121287.0,125630.0,-4343.0,1805.0,{},"[9, 2]",True
+day10_candidate3_fixed_shops,122062.0,129886.0,-7824.0,-1676.0,{},"[9, 3]",True
+day10_candidate4_fixed_shops,123408.0,130841.0,-7433.0,-1285.0,{},"[9, 4]",True
+day10_candidate5_fixed_shops,120607.0,130253.0,-9646.0,-3498.0,{},"[9, 5]",True
+day10_candidate6_fixed_shops,122062.0,129886.0,-7824.0,-1676.0,{},"[9, 6]",True
+day10_candidate8_fixed_shops,122209.0,131739.0,-9530.0,-3382.0,{},"[9, 8]",True
+day11_candidate0_fixed_shops,122208.0,129573.0,-7365.0,-1217.0,{},"[10, 0]",True
+day11_candidate1_fixed_shops,123488.0,133881.0,-10393.0,-4245.0,{},"[10, 1]",True
+day11_candidate2_fixed_shops,123355.0,129420.0,-6065.0,83.0,{},"[10, 2]",True
+day11_candidate3_fixed_shops,123717.0,130569.0,-6852.0,-704.0,{},"[10, 3]",True
+day11_candidate4_fixed_shops,121499.0,130964.0,-9465.0,-3317.0,{},"[10, 4]",True
+day11_candidate5_fixed_shops,122680.0,128652.0,-5972.0,176.0,{},"[10, 5]",True
+day11_candidate6_fixed_shops,123201.0,129349.0,-6148.0,0.0,{},"[10, 6]",True
+day11_candidate7_fixed_shops,122207.0,129572.0,-7365.0,-1217.0,{},"[10, 7]",True
+day11_candidate8_fixed_shops,124528.0,132764.0,-8236.0,-2088.0,{},"[10, 8]",True
+harvest_late_cohort_day21_fixed_shops,123557.0,129754.0,-6197.0,-49.0,{},,True

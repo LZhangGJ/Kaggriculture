@@ -1,0 +1,3610 @@
+{
+  "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/o3_nomodref/agent.so",
+  "sha256": "9bc7b5cc2ae2fb90cfc0df26bb06c716edd2e384cbf0a49bf510cbd380187f4e",
+  "seconds": 42.33393027800001,
+  "games": 400,
+  "matched": 400,
+  "checked_steps": 287600,
+  "rows": [
+    {
+      "seed": 260909104,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109423.0,
+      "opponent_cash": 108271.0
+    },
+    {
+      "seed": 260909100,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 93671.0,
+      "opponent_cash": 103543.0
+    },
+    {
+      "seed": 260909104,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109423.0,
+      "opponent_cash": 108271.0
+    },
+    {
+      "seed": 260909100,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 93671.0,
+      "opponent_cash": 103543.0
+    },
+    {
+      "seed": 260909102,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 102872.0,
+      "opponent_cash": 114651.0
+    },
+    {
+      "seed": 260909103,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 110762.0,
+      "opponent_cash": 112510.0
+    },
+    {
+      "seed": 260909103,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 110762.0,
+      "opponent_cash": 112510.0
+    },
+    {
+      "seed": 260909105,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 150265.0,
+      "opponent_cash": 138029.0
+    },
+    {
+      "seed": 260909106,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124127.0,
+      "opponent_cash": 133748.0
+    },
+    {
+      "seed": 260909107,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 71306.0,
+      "opponent_cash": 83874.0
+    },
+    {
+      "seed": 260909106,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124127.0,
+      "opponent_cash": 133748.0
+    },
+    {
+      "seed": 260909102,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 102872.0,
+      "opponent_cash": 114651.0
+    },
+    {
+      "seed": 260909105,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 150265.0,
+      "opponent_cash": 138029.0
+    },
+    {
+      "seed": 260909101,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 127048.0,
+      "opponent_cash": 123917.0
+    },
+    {
+      "seed": 260909101,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 127048.0,
+      "opponent_cash": 123917.0
+    },
+    {
+      "seed": 260909107,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 71306.0,
+      "opponent_cash": 83874.0
+    },
+    {
+      "seed": 260909108,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82012.0,
+      "opponent_cash": 95879.0
+    },
+    {
+      "seed": 260909111,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94680.0,
+      "opponent_cash": 104687.0
+    },
+    {
+      "seed": 260909108,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82012.0,
+      "opponent_cash": 95879.0
+    },
+    {
+      "seed": 260909110,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94633.0,
+      "opponent_cash": 90751.0
+    },
+    {
+      "seed": 260909109,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87137.0,
+      "opponent_cash": 92813.0
+    },
+    {
+      "seed": 260909111,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94680.0,
+      "opponent_cash": 104687.0
+    },
+    {
+      "seed": 260909109,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87137.0,
+      "opponent_cash": 92813.0
+    },
+    {
+      "seed": 260909113,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79308.0,
+      "opponent_cash": 74493.0
+    },
+    {
+      "seed": 260909113,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79308.0,
+      "opponent_cash": 74493.0
+    },
+    {
+      "seed": 260909115,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86160.0,
+      "opponent_cash": 80349.0
+    },
+    {
+      "seed": 260909110,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120090.0,
+      "opponent_cash": 122858.0
+    },
+    {
+      "seed": 260909112,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 63777.0,
+      "opponent_cash": 65245.0
+    },
+    {
+      "seed": 260909115,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86160.0,
+      "opponent_cash": 80349.0
+    },
+    {
+      "seed": 260909112,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 63777.0,
+      "opponent_cash": 65245.0
+    },
+    {
+      "seed": 260909114,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 119696.0,
+      "opponent_cash": 115622.0
+    },
+    {
+      "seed": 260909114,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 119696.0,
+      "opponent_cash": 115622.0
+    },
+    {
+      "seed": 260909116,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92601.0,
+      "opponent_cash": 112333.0
+    },
+    {
+      "seed": 260909116,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92601.0,
+      "opponent_cash": 112333.0
+    },
+    {
+      "seed": 260909119,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98191.0,
+      "opponent_cash": 101913.0
+    },
+    {
+      "seed": 260909117,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86822.0,
+      "opponent_cash": 89554.0
+    },
+    {
+      "seed": 260909117,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86822.0,
+      "opponent_cash": 89554.0
+    },
+    {
+      "seed": 260909119,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98191.0,
+      "opponent_cash": 101913.0
+    },
+    {
+      "seed": 260909118,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83531.0,
+      "opponent_cash": 84371.0
+    },
+    {
+      "seed": 260909120,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85619.0,
+      "opponent_cash": 82051.0
+    },
+    {
+      "seed": 260909123,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104705.0,
+      "opponent_cash": 111281.0
+    },
+    {
+      "seed": 260909121,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85461.0,
+      "opponent_cash": 97337.0
+    },
+    {
+      "seed": 260909118,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83531.0,
+      "opponent_cash": 84371.0
+    },
+    {
+      "seed": 260909120,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85619.0,
+      "opponent_cash": 82051.0
+    },
+    {
+      "seed": 260909121,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85461.0,
+      "opponent_cash": 97337.0
+    },
+    {
+      "seed": 260909122,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95815.0,
+      "opponent_cash": 104565.0
+    },
+    {
+      "seed": 260909123,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99576.0,
+      "opponent_cash": 100432.0
+    },
+    {
+      "seed": 260909122,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95815.0,
+      "opponent_cash": 104565.0
+    },
+    {
+      "seed": 260909124,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 128025.0,
+      "opponent_cash": 130568.0
+    },
+    {
+      "seed": 260909124,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 128025.0,
+      "opponent_cash": 130568.0
+    },
+    {
+      "seed": 260909126,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 80374.0,
+      "opponent_cash": 89997.0
+    },
+    {
+      "seed": 260909127,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78239.0,
+      "opponent_cash": 72226.0
+    },
+    {
+      "seed": 260909125,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 123193.0,
+      "opponent_cash": 105701.0
+    },
+    {
+      "seed": 260909127,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78239.0,
+      "opponent_cash": 72226.0
+    },
+    {
+      "seed": 260909126,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 80374.0,
+      "opponent_cash": 89997.0
+    },
+    {
+      "seed": 260909125,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 123193.0,
+      "opponent_cash": 105701.0
+    },
+    {
+      "seed": 260909128,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98133.0,
+      "opponent_cash": 99762.0
+    },
+    {
+      "seed": 260909128,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98133.0,
+      "opponent_cash": 99762.0
+    },
+    {
+      "seed": 260909130,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104719.0,
+      "opponent_cash": 103097.0
+    },
+    {
+      "seed": 260909129,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85989.0,
+      "opponent_cash": 101848.0
+    },
+    {
+      "seed": 260909131,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99180.0,
+      "opponent_cash": 97727.0
+    },
+    {
+      "seed": 260909129,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85989.0,
+      "opponent_cash": 101848.0
+    },
+    {
+      "seed": 260909130,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98645.0,
+      "opponent_cash": 107594.0
+    },
+    {
+      "seed": 260909131,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99180.0,
+      "opponent_cash": 97727.0
+    },
+    {
+      "seed": 260909136,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 103375.0,
+      "opponent_cash": 103378.0
+    },
+    {
+      "seed": 260909132,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78569.0,
+      "opponent_cash": 80309.0
+    },
+    {
+      "seed": 260909132,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78569.0,
+      "opponent_cash": 80309.0
+    },
+    {
+      "seed": 260909136,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 103375.0,
+      "opponent_cash": 103378.0
+    },
+    {
+      "seed": 260909137,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108572.0,
+      "opponent_cash": 116884.0
+    },
+    {
+      "seed": 260909133,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94577.0,
+      "opponent_cash": 102758.0
+    },
+    {
+      "seed": 260909134,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79097.0,
+      "opponent_cash": 71852.0
+    },
+    {
+      "seed": 260909133,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94577.0,
+      "opponent_cash": 102758.0
+    },
+    {
+      "seed": 260909137,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108572.0,
+      "opponent_cash": 116884.0
+    },
+    {
+      "seed": 260909139,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124276.0,
+      "opponent_cash": 112652.0
+    },
+    {
+      "seed": 260909134,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79097.0,
+      "opponent_cash": 71852.0
+    },
+    {
+      "seed": 260909138,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87856.0,
+      "opponent_cash": 105652.0
+    },
+    {
+      "seed": 260909135,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75404.0,
+      "opponent_cash": 76888.0
+    },
+    {
+      "seed": 260909135,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75404.0,
+      "opponent_cash": 76888.0
+    },
+    {
+      "seed": 260909138,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87856.0,
+      "opponent_cash": 105652.0
+    },
+    {
+      "seed": 260909139,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124276.0,
+      "opponent_cash": 112652.0
+    },
+    {
+      "seed": 260909140,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117911.0,
+      "opponent_cash": 114935.0
+    },
+    {
+      "seed": 260909140,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117911.0,
+      "opponent_cash": 114935.0
+    },
+    {
+      "seed": 260909141,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82137.0,
+      "opponent_cash": 79852.0
+    },
+    {
+      "seed": 260909141,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82137.0,
+      "opponent_cash": 79852.0
+    },
+    {
+      "seed": 260909143,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83956.0,
+      "opponent_cash": 89096.0
+    },
+    {
+      "seed": 260909144,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97537.0,
+      "opponent_cash": 104219.0
+    },
+    {
+      "seed": 260909143,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83956.0,
+      "opponent_cash": 89096.0
+    },
+    {
+      "seed": 260909142,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83408.0,
+      "opponent_cash": 81280.0
+    },
+    {
+      "seed": 260909142,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83617.0,
+      "opponent_cash": 83817.0
+    },
+    {
+      "seed": 260909144,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97537.0,
+      "opponent_cash": 104219.0
+    },
+    {
+      "seed": 260909145,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82363.0,
+      "opponent_cash": 94459.0
+    },
+    {
+      "seed": 260909145,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82363.0,
+      "opponent_cash": 94459.0
+    },
+    {
+      "seed": 260909146,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 149485.0,
+      "opponent_cash": 135247.0
+    },
+    {
+      "seed": 260909147,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105435.0,
+      "opponent_cash": 95625.0
+    },
+    {
+      "seed": 260909146,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 149485.0,
+      "opponent_cash": 135247.0
+    },
+    {
+      "seed": 260909147,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 107547.0,
+      "opponent_cash": 108103.0
+    },
+    {
+      "seed": 260909148,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108650.0,
+      "opponent_cash": 93542.0
+    },
+    {
+      "seed": 260909149,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83219.0,
+      "opponent_cash": 92613.0
+    },
+    {
+      "seed": 260909148,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 135082.0,
+      "opponent_cash": 128163.0
+    },
+    {
+      "seed": 260909149,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83219.0,
+      "opponent_cash": 92613.0
+    },
+    {
+      "seed": 260909151,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86655.0,
+      "opponent_cash": 97767.0
+    },
+    {
+      "seed": 260909150,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77616.0,
+      "opponent_cash": 100043.0
+    },
+    {
+      "seed": 260909150,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77616.0,
+      "opponent_cash": 100043.0
+    },
+    {
+      "seed": 260909151,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86655.0,
+      "opponent_cash": 97767.0
+    },
+    {
+      "seed": 260909153,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 139319.0,
+      "opponent_cash": 106599.0
+    },
+    {
+      "seed": 260909155,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87752.0,
+      "opponent_cash": 84158.0
+    },
+    {
+      "seed": 260909152,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83107.0,
+      "opponent_cash": 86830.0
+    },
+    {
+      "seed": 260909152,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 84678.0,
+      "opponent_cash": 90047.0
+    },
+    {
+      "seed": 260909155,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87752.0,
+      "opponent_cash": 84158.0
+    },
+    {
+      "seed": 260909154,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82027.0,
+      "opponent_cash": 93634.0
+    },
+    {
+      "seed": 260909153,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 139319.0,
+      "opponent_cash": 106599.0
+    },
+    {
+      "seed": 260909154,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82027.0,
+      "opponent_cash": 93634.0
+    },
+    {
+      "seed": 260909156,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92704.0,
+      "opponent_cash": 86919.0
+    },
+    {
+      "seed": 260909157,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72292.0,
+      "opponent_cash": 65991.0
+    },
+    {
+      "seed": 260909156,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92704.0,
+      "opponent_cash": 86919.0
+    },
+    {
+      "seed": 260909157,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72292.0,
+      "opponent_cash": 65991.0
+    },
+    {
+      "seed": 260909158,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79078.0,
+      "opponent_cash": 62130.0
+    },
+    {
+      "seed": 260909158,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79078.0,
+      "opponent_cash": 62130.0
+    },
+    {
+      "seed": 260909161,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66419.0,
+      "opponent_cash": 79974.0
+    },
+    {
+      "seed": 260909159,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 91213.0,
+      "opponent_cash": 75659.0
+    },
+    {
+      "seed": 260909159,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77123.0,
+      "opponent_cash": 84041.0
+    },
+    {
+      "seed": 260909160,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95381.0,
+      "opponent_cash": 107447.0
+    },
+    {
+      "seed": 260909161,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66419.0,
+      "opponent_cash": 79974.0
+    },
+    {
+      "seed": 260909160,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95381.0,
+      "opponent_cash": 107447.0
+    },
+    {
+      "seed": 260909162,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75111.0,
+      "opponent_cash": 68520.0
+    },
+    {
+      "seed": 260909163,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82708.0,
+      "opponent_cash": 91696.0
+    },
+    {
+      "seed": 260909163,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82708.0,
+      "opponent_cash": 91696.0
+    },
+    {
+      "seed": 260909162,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75111.0,
+      "opponent_cash": 68520.0
+    },
+    {
+      "seed": 260909164,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81115.0,
+      "opponent_cash": 99953.0
+    },
+    {
+      "seed": 260909164,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85609.0,
+      "opponent_cash": 71094.0
+    },
+    {
+      "seed": 260909165,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79954.0,
+      "opponent_cash": 77854.0
+    },
+    {
+      "seed": 260909165,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79954.0,
+      "opponent_cash": 77854.0
+    },
+    {
+      "seed": 260909167,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 91795.0,
+      "opponent_cash": 100708.0
+    },
+    {
+      "seed": 260909167,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 91795.0,
+      "opponent_cash": 100708.0
+    },
+    {
+      "seed": 260909169,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106292.0,
+      "opponent_cash": 101293.0
+    },
+    {
+      "seed": 260909168,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115647.0,
+      "opponent_cash": 109385.0
+    },
+    {
+      "seed": 260909168,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115647.0,
+      "opponent_cash": 109385.0
+    },
+    {
+      "seed": 260909169,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106292.0,
+      "opponent_cash": 101293.0
+    },
+    {
+      "seed": 260909166,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99458.0,
+      "opponent_cash": 101753.0
+    },
+    {
+      "seed": 260909166,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99458.0,
+      "opponent_cash": 101753.0
+    },
+    {
+      "seed": 260909170,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 113304.0,
+      "opponent_cash": 120145.0
+    },
+    {
+      "seed": 260909170,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 113304.0,
+      "opponent_cash": 120145.0
+    },
+    {
+      "seed": 260909171,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99884.0,
+      "opponent_cash": 107395.0
+    },
+    {
+      "seed": 260909171,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99884.0,
+      "opponent_cash": 107395.0
+    },
+    {
+      "seed": 260909172,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108776.0,
+      "opponent_cash": 112894.0
+    },
+    {
+      "seed": 260909172,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108776.0,
+      "opponent_cash": 112894.0
+    },
+    {
+      "seed": 260909174,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120964.0,
+      "opponent_cash": 102695.0
+    },
+    {
+      "seed": 260909173,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66785.0,
+      "opponent_cash": 61527.0
+    },
+    {
+      "seed": 260909173,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66785.0,
+      "opponent_cash": 61527.0
+    },
+    {
+      "seed": 260909174,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120964.0,
+      "opponent_cash": 102695.0
+    },
+    {
+      "seed": 260909175,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77266.0,
+      "opponent_cash": 87581.0
+    },
+    {
+      "seed": 260909175,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77266.0,
+      "opponent_cash": 87581.0
+    },
+    {
+      "seed": 260909177,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88154.0,
+      "opponent_cash": 100749.0
+    },
+    {
+      "seed": 260909177,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88154.0,
+      "opponent_cash": 100749.0
+    },
+    {
+      "seed": 260909176,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83505.0,
+      "opponent_cash": 102821.0
+    },
+    {
+      "seed": 260909176,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83505.0,
+      "opponent_cash": 102821.0
+    },
+    {
+      "seed": 260909178,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87588.0,
+      "opponent_cash": 112027.0
+    },
+    {
+      "seed": 260909179,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77539.0,
+      "opponent_cash": 72771.0
+    },
+    {
+      "seed": 260909178,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87588.0,
+      "opponent_cash": 112027.0
+    },
+    {
+      "seed": 260909179,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77539.0,
+      "opponent_cash": 72771.0
+    },
+    {
+      "seed": 260909180,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 148867.0,
+      "opponent_cash": 117348.0
+    },
+    {
+      "seed": 260909180,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 148867.0,
+      "opponent_cash": 117348.0
+    },
+    {
+      "seed": 260909182,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85268.0,
+      "opponent_cash": 88815.0
+    },
+    {
+      "seed": 260909183,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95324.0,
+      "opponent_cash": 96374.0
+    },
+    {
+      "seed": 260909182,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85268.0,
+      "opponent_cash": 88815.0
+    },
+    {
+      "seed": 260909181,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72591.0,
+      "opponent_cash": 68007.0
+    },
+    {
+      "seed": 260909181,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72591.0,
+      "opponent_cash": 68007.0
+    },
+    {
+      "seed": 260909183,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95324.0,
+      "opponent_cash": 96374.0
+    },
+    {
+      "seed": 260909185,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 112619.0,
+      "opponent_cash": 93764.0
+    },
+    {
+      "seed": 260909185,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 112619.0,
+      "opponent_cash": 93764.0
+    },
+    {
+      "seed": 260909184,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74955.0,
+      "opponent_cash": 80515.0
+    },
+    {
+      "seed": 260909184,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74955.0,
+      "opponent_cash": 80515.0
+    },
+    {
+      "seed": 260909186,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104852.0,
+      "opponent_cash": 101240.0
+    },
+    {
+      "seed": 260909187,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109495.0,
+      "opponent_cash": 102520.0
+    },
+    {
+      "seed": 260909187,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 112981.0,
+      "opponent_cash": 105101.0
+    },
+    {
+      "seed": 260909186,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104852.0,
+      "opponent_cash": 101240.0
+    },
+    {
+      "seed": 260909188,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72785.0,
+      "opponent_cash": 72010.0
+    },
+    {
+      "seed": 260909188,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72785.0,
+      "opponent_cash": 72010.0
+    },
+    {
+      "seed": 260909189,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 101670.0,
+      "opponent_cash": 106439.0
+    },
+    {
+      "seed": 260909189,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 101670.0,
+      "opponent_cash": 106439.0
+    },
+    {
+      "seed": 260909190,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83699.0,
+      "opponent_cash": 98001.0
+    },
+    {
+      "seed": 260909193,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124360.0,
+      "opponent_cash": 125158.0
+    },
+    {
+      "seed": 260909193,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124360.0,
+      "opponent_cash": 125158.0
+    },
+    {
+      "seed": 260909190,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83699.0,
+      "opponent_cash": 98001.0
+    },
+    {
+      "seed": 260909191,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 91275.0,
+      "opponent_cash": 107527.0
+    },
+    {
+      "seed": 260909191,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 91275.0,
+      "opponent_cash": 107527.0
+    },
+    {
+      "seed": 260909192,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117656.0,
+      "opponent_cash": 116398.0
+    },
+    {
+      "seed": 260909192,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117656.0,
+      "opponent_cash": 116398.0
+    },
+    {
+      "seed": 260909194,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97399.0,
+      "opponent_cash": 102449.0
+    },
+    {
+      "seed": 260909195,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106405.0,
+      "opponent_cash": 104812.0
+    },
+    {
+      "seed": 260909194,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97399.0,
+      "opponent_cash": 102449.0
+    },
+    {
+      "seed": 260909195,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106405.0,
+      "opponent_cash": 104812.0
+    },
+    {
+      "seed": 260909196,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115576.0,
+      "opponent_cash": 112369.0
+    },
+    {
+      "seed": 260909197,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90287.0,
+      "opponent_cash": 102529.0
+    },
+    {
+      "seed": 260909196,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115576.0,
+      "opponent_cash": 112369.0
+    },
+    {
+      "seed": 260909197,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90287.0,
+      "opponent_cash": 102529.0
+    },
+    {
+      "seed": 260909198,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104162.0,
+      "opponent_cash": 105052.0
+    },
+    {
+      "seed": 260909198,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104162.0,
+      "opponent_cash": 105052.0
+    },
+    {
+      "seed": 260909199,
+      "seat": 0,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77501.0,
+      "opponent_cash": 85869.0
+    },
+    {
+      "seed": 260909199,
+      "seat": 1,
+      "opponent": "710",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77501.0,
+      "opponent_cash": 85869.0
+    },
+    {
+      "seed": 260909102,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 102872.0,
+      "opponent_cash": 114651.0
+    },
+    {
+      "seed": 260909100,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 138286.0,
+      "opponent_cash": 112947.0
+    },
+    {
+      "seed": 260909100,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 138286.0,
+      "opponent_cash": 112947.0
+    },
+    {
+      "seed": 260909101,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 127048.0,
+      "opponent_cash": 123917.0
+    },
+    {
+      "seed": 260909102,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 102872.0,
+      "opponent_cash": 114651.0
+    },
+    {
+      "seed": 260909101,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 127048.0,
+      "opponent_cash": 123917.0
+    },
+    {
+      "seed": 260909103,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 110762.0,
+      "opponent_cash": 112510.0
+    },
+    {
+      "seed": 260909103,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 110762.0,
+      "opponent_cash": 112510.0
+    },
+    {
+      "seed": 260909105,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 130166.0,
+      "opponent_cash": 123166.0
+    },
+    {
+      "seed": 260909104,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 126016.0,
+      "opponent_cash": 116368.0
+    },
+    {
+      "seed": 260909105,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 130166.0,
+      "opponent_cash": 123166.0
+    },
+    {
+      "seed": 260909104,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 126016.0,
+      "opponent_cash": 116368.0
+    },
+    {
+      "seed": 260909106,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124127.0,
+      "opponent_cash": 133748.0
+    },
+    {
+      "seed": 260909106,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124127.0,
+      "opponent_cash": 133748.0
+    },
+    {
+      "seed": 260909107,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 71306.0,
+      "opponent_cash": 83874.0
+    },
+    {
+      "seed": 260909107,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 71306.0,
+      "opponent_cash": 83874.0
+    },
+    {
+      "seed": 260909108,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82012.0,
+      "opponent_cash": 95879.0
+    },
+    {
+      "seed": 260909108,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82012.0,
+      "opponent_cash": 95879.0
+    },
+    {
+      "seed": 260909109,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 101214.0,
+      "opponent_cash": 91893.0
+    },
+    {
+      "seed": 260909109,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 101214.0,
+      "opponent_cash": 91893.0
+    },
+    {
+      "seed": 260909111,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94680.0,
+      "opponent_cash": 104687.0
+    },
+    {
+      "seed": 260909110,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120090.0,
+      "opponent_cash": 122858.0
+    },
+    {
+      "seed": 260909111,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94680.0,
+      "opponent_cash": 104687.0
+    },
+    {
+      "seed": 260909110,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 151694.0,
+      "opponent_cash": 124250.0
+    },
+    {
+      "seed": 260909113,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74813.0,
+      "opponent_cash": 88605.0
+    },
+    {
+      "seed": 260909112,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 63777.0,
+      "opponent_cash": 65245.0
+    },
+    {
+      "seed": 260909112,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 63777.0,
+      "opponent_cash": 65245.0
+    },
+    {
+      "seed": 260909113,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74813.0,
+      "opponent_cash": 88605.0
+    },
+    {
+      "seed": 260909115,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86160.0,
+      "opponent_cash": 80349.0
+    },
+    {
+      "seed": 260909114,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 119696.0,
+      "opponent_cash": 115622.0
+    },
+    {
+      "seed": 260909115,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86160.0,
+      "opponent_cash": 80349.0
+    },
+    {
+      "seed": 260909114,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 119696.0,
+      "opponent_cash": 115622.0
+    },
+    {
+      "seed": 260909116,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92601.0,
+      "opponent_cash": 112333.0
+    },
+    {
+      "seed": 260909117,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86822.0,
+      "opponent_cash": 89554.0
+    },
+    {
+      "seed": 260909116,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92601.0,
+      "opponent_cash": 112333.0
+    },
+    {
+      "seed": 260909117,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86822.0,
+      "opponent_cash": 89554.0
+    },
+    {
+      "seed": 260909118,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83165.0,
+      "opponent_cash": 82663.0
+    },
+    {
+      "seed": 260909119,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98191.0,
+      "opponent_cash": 101913.0
+    },
+    {
+      "seed": 260909118,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83165.0,
+      "opponent_cash": 82663.0
+    },
+    {
+      "seed": 260909119,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98191.0,
+      "opponent_cash": 101913.0
+    },
+    {
+      "seed": 260909120,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117672.0,
+      "opponent_cash": 107293.0
+    },
+    {
+      "seed": 260909121,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85461.0,
+      "opponent_cash": 97337.0
+    },
+    {
+      "seed": 260909121,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85461.0,
+      "opponent_cash": 97337.0
+    },
+    {
+      "seed": 260909120,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117672.0,
+      "opponent_cash": 107293.0
+    },
+    {
+      "seed": 260909123,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 100294.0,
+      "opponent_cash": 105124.0
+    },
+    {
+      "seed": 260909122,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 121372.0,
+      "opponent_cash": 101713.0
+    },
+    {
+      "seed": 260909123,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 100294.0,
+      "opponent_cash": 105124.0
+    },
+    {
+      "seed": 260909122,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 121372.0,
+      "opponent_cash": 101713.0
+    },
+    {
+      "seed": 260909124,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83595.0,
+      "opponent_cash": 90677.0
+    },
+    {
+      "seed": 260909124,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82419.0,
+      "opponent_cash": 86350.0
+    },
+    {
+      "seed": 260909127,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78239.0,
+      "opponent_cash": 72226.0
+    },
+    {
+      "seed": 260909125,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 123193.0,
+      "opponent_cash": 105701.0
+    },
+    {
+      "seed": 260909126,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109124.0,
+      "opponent_cash": 118963.0
+    },
+    {
+      "seed": 260909125,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 123193.0,
+      "opponent_cash": 105701.0
+    },
+    {
+      "seed": 260909127,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78239.0,
+      "opponent_cash": 72226.0
+    },
+    {
+      "seed": 260909126,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109124.0,
+      "opponent_cash": 118963.0
+    },
+    {
+      "seed": 260909128,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98133.0,
+      "opponent_cash": 99762.0
+    },
+    {
+      "seed": 260909129,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85989.0,
+      "opponent_cash": 101848.0
+    },
+    {
+      "seed": 260909128,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 98133.0,
+      "opponent_cash": 99762.0
+    },
+    {
+      "seed": 260909129,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85989.0,
+      "opponent_cash": 101848.0
+    },
+    {
+      "seed": 260909131,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94795.0,
+      "opponent_cash": 103409.0
+    },
+    {
+      "seed": 260909130,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 114672.0,
+      "opponent_cash": 109490.0
+    },
+    {
+      "seed": 260909131,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 94795.0,
+      "opponent_cash": 103409.0
+    },
+    {
+      "seed": 260909130,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 114672.0,
+      "opponent_cash": 109490.0
+    },
+    {
+      "seed": 260909132,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78569.0,
+      "opponent_cash": 80309.0
+    },
+    {
+      "seed": 260909133,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 89713.0,
+      "opponent_cash": 94727.0
+    },
+    {
+      "seed": 260909132,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 78569.0,
+      "opponent_cash": 80309.0
+    },
+    {
+      "seed": 260909133,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 89713.0,
+      "opponent_cash": 94727.0
+    },
+    {
+      "seed": 260909134,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85560.0,
+      "opponent_cash": 83100.0
+    },
+    {
+      "seed": 260909134,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85560.0,
+      "opponent_cash": 83100.0
+    },
+    {
+      "seed": 260909135,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75404.0,
+      "opponent_cash": 76888.0
+    },
+    {
+      "seed": 260909135,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75404.0,
+      "opponent_cash": 76888.0
+    },
+    {
+      "seed": 260909136,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105594.0,
+      "opponent_cash": 116337.0
+    },
+    {
+      "seed": 260909136,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105594.0,
+      "opponent_cash": 116337.0
+    },
+    {
+      "seed": 260909137,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 114523.0,
+      "opponent_cash": 113311.0
+    },
+    {
+      "seed": 260909137,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 114523.0,
+      "opponent_cash": 113311.0
+    },
+    {
+      "seed": 260909138,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87856.0,
+      "opponent_cash": 105652.0
+    },
+    {
+      "seed": 260909138,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87856.0,
+      "opponent_cash": 105652.0
+    },
+    {
+      "seed": 260909139,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124276.0,
+      "opponent_cash": 112652.0
+    },
+    {
+      "seed": 260909139,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124276.0,
+      "opponent_cash": 112652.0
+    },
+    {
+      "seed": 260909140,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117911.0,
+      "opponent_cash": 114935.0
+    },
+    {
+      "seed": 260909140,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117911.0,
+      "opponent_cash": 114935.0
+    },
+    {
+      "seed": 260909142,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88403.0,
+      "opponent_cash": 84055.0
+    },
+    {
+      "seed": 260909141,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 84572.0,
+      "opponent_cash": 89837.0
+    },
+    {
+      "seed": 260909142,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87071.0,
+      "opponent_cash": 82337.0
+    },
+    {
+      "seed": 260909141,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95483.0,
+      "opponent_cash": 99019.0
+    },
+    {
+      "seed": 260909143,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81902.0,
+      "opponent_cash": 91355.0
+    },
+    {
+      "seed": 260909143,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81902.0,
+      "opponent_cash": 91355.0
+    },
+    {
+      "seed": 260909144,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92908.0,
+      "opponent_cash": 98625.0
+    },
+    {
+      "seed": 260909144,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 92892.0,
+      "opponent_cash": 98684.0
+    },
+    {
+      "seed": 260909145,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82363.0,
+      "opponent_cash": 94459.0
+    },
+    {
+      "seed": 260909146,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 128622.0,
+      "opponent_cash": 121860.0
+    },
+    {
+      "seed": 260909145,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82363.0,
+      "opponent_cash": 94459.0
+    },
+    {
+      "seed": 260909146,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 128622.0,
+      "opponent_cash": 121860.0
+    },
+    {
+      "seed": 260909147,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 76326.0,
+      "opponent_cash": 89526.0
+    },
+    {
+      "seed": 260909147,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 96146.0,
+      "opponent_cash": 100801.0
+    },
+    {
+      "seed": 260909148,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 102019.0,
+      "opponent_cash": 110261.0
+    },
+    {
+      "seed": 260909149,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83219.0,
+      "opponent_cash": 92613.0
+    },
+    {
+      "seed": 260909148,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105888.0,
+      "opponent_cash": 88682.0
+    },
+    {
+      "seed": 260909149,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83219.0,
+      "opponent_cash": 92613.0
+    },
+    {
+      "seed": 260909150,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77616.0,
+      "opponent_cash": 100043.0
+    },
+    {
+      "seed": 260909150,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77616.0,
+      "opponent_cash": 100043.0
+    },
+    {
+      "seed": 260909151,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90674.0,
+      "opponent_cash": 92738.0
+    },
+    {
+      "seed": 260909151,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90079.0,
+      "opponent_cash": 99318.0
+    },
+    {
+      "seed": 260909152,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 84786.0,
+      "opponent_cash": 107339.0
+    },
+    {
+      "seed": 260909152,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77184.0,
+      "opponent_cash": 99592.0
+    },
+    {
+      "seed": 260909155,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90409.0,
+      "opponent_cash": 95099.0
+    },
+    {
+      "seed": 260909155,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90409.0,
+      "opponent_cash": 95099.0
+    },
+    {
+      "seed": 260909153,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 126487.0,
+      "opponent_cash": 120364.0
+    },
+    {
+      "seed": 260909154,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82027.0,
+      "opponent_cash": 93634.0
+    },
+    {
+      "seed": 260909153,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 126487.0,
+      "opponent_cash": 120364.0
+    },
+    {
+      "seed": 260909154,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82027.0,
+      "opponent_cash": 93634.0
+    },
+    {
+      "seed": 260909156,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 84952.0,
+      "opponent_cash": 92980.0
+    },
+    {
+      "seed": 260909156,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 84952.0,
+      "opponent_cash": 92980.0
+    },
+    {
+      "seed": 260909157,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72576.0,
+      "opponent_cash": 59828.0
+    },
+    {
+      "seed": 260909157,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72576.0,
+      "opponent_cash": 59828.0
+    },
+    {
+      "seed": 260909158,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88987.0,
+      "opponent_cash": 104882.0
+    },
+    {
+      "seed": 260909158,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88987.0,
+      "opponent_cash": 104882.0
+    },
+    {
+      "seed": 260909159,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 96960.0,
+      "opponent_cash": 96328.0
+    },
+    {
+      "seed": 260909159,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85792.0,
+      "opponent_cash": 85324.0
+    },
+    {
+      "seed": 260909160,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81678.0,
+      "opponent_cash": 93332.0
+    },
+    {
+      "seed": 260909160,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81678.0,
+      "opponent_cash": 93332.0
+    },
+    {
+      "seed": 260909161,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66419.0,
+      "opponent_cash": 79974.0
+    },
+    {
+      "seed": 260909161,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66419.0,
+      "opponent_cash": 79974.0
+    },
+    {
+      "seed": 260909162,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75111.0,
+      "opponent_cash": 68520.0
+    },
+    {
+      "seed": 260909164,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75200.0,
+      "opponent_cash": 77213.0
+    },
+    {
+      "seed": 260909163,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82708.0,
+      "opponent_cash": 91696.0
+    },
+    {
+      "seed": 260909164,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 81115.0,
+      "opponent_cash": 99953.0
+    },
+    {
+      "seed": 260909162,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 75111.0,
+      "opponent_cash": 68520.0
+    },
+    {
+      "seed": 260909163,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 82708.0,
+      "opponent_cash": 91696.0
+    },
+    {
+      "seed": 260909165,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79954.0,
+      "opponent_cash": 77854.0
+    },
+    {
+      "seed": 260909165,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 79954.0,
+      "opponent_cash": 77854.0
+    },
+    {
+      "seed": 260909166,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99458.0,
+      "opponent_cash": 101753.0
+    },
+    {
+      "seed": 260909166,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99458.0,
+      "opponent_cash": 101753.0
+    },
+    {
+      "seed": 260909167,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104387.0,
+      "opponent_cash": 117527.0
+    },
+    {
+      "seed": 260909167,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104387.0,
+      "opponent_cash": 117527.0
+    },
+    {
+      "seed": 260909168,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115647.0,
+      "opponent_cash": 109385.0
+    },
+    {
+      "seed": 260909168,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 115647.0,
+      "opponent_cash": 109385.0
+    },
+    {
+      "seed": 260909169,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 111765.0,
+      "opponent_cash": 113565.0
+    },
+    {
+      "seed": 260909169,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 111765.0,
+      "opponent_cash": 113565.0
+    },
+    {
+      "seed": 260909170,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 113304.0,
+      "opponent_cash": 120145.0
+    },
+    {
+      "seed": 260909170,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 113304.0,
+      "opponent_cash": 120145.0
+    },
+    {
+      "seed": 260909171,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99884.0,
+      "opponent_cash": 107395.0
+    },
+    {
+      "seed": 260909172,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 113053.0,
+      "opponent_cash": 119445.0
+    },
+    {
+      "seed": 260909171,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99884.0,
+      "opponent_cash": 107395.0
+    },
+    {
+      "seed": 260909172,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 108903.0,
+      "opponent_cash": 115353.0
+    },
+    {
+      "seed": 260909174,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120964.0,
+      "opponent_cash": 102695.0
+    },
+    {
+      "seed": 260909173,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66785.0,
+      "opponent_cash": 61527.0
+    },
+    {
+      "seed": 260909174,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 120964.0,
+      "opponent_cash": 102695.0
+    },
+    {
+      "seed": 260909173,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 66785.0,
+      "opponent_cash": 61527.0
+    },
+    {
+      "seed": 260909175,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77266.0,
+      "opponent_cash": 87581.0
+    },
+    {
+      "seed": 260909175,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77266.0,
+      "opponent_cash": 87581.0
+    },
+    {
+      "seed": 260909176,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83505.0,
+      "opponent_cash": 102821.0
+    },
+    {
+      "seed": 260909176,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 83505.0,
+      "opponent_cash": 102821.0
+    },
+    {
+      "seed": 260909177,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88154.0,
+      "opponent_cash": 100749.0
+    },
+    {
+      "seed": 260909177,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 88154.0,
+      "opponent_cash": 100749.0
+    },
+    {
+      "seed": 260909180,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97269.0,
+      "opponent_cash": 83573.0
+    },
+    {
+      "seed": 260909178,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87588.0,
+      "opponent_cash": 112027.0
+    },
+    {
+      "seed": 260909178,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 87588.0,
+      "opponent_cash": 112027.0
+    },
+    {
+      "seed": 260909179,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77539.0,
+      "opponent_cash": 72771.0
+    },
+    {
+      "seed": 260909180,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97269.0,
+      "opponent_cash": 83573.0
+    },
+    {
+      "seed": 260909179,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77539.0,
+      "opponent_cash": 72771.0
+    },
+    {
+      "seed": 260909182,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85268.0,
+      "opponent_cash": 88815.0
+    },
+    {
+      "seed": 260909182,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 85268.0,
+      "opponent_cash": 88815.0
+    },
+    {
+      "seed": 260909181,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 121422.0,
+      "opponent_cash": 96668.0
+    },
+    {
+      "seed": 260909181,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 90662.0,
+      "opponent_cash": 92210.0
+    },
+    {
+      "seed": 260909183,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99070.0,
+      "opponent_cash": 96279.0
+    },
+    {
+      "seed": 260909183,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 99070.0,
+      "opponent_cash": 96279.0
+    },
+    {
+      "seed": 260909185,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 112619.0,
+      "opponent_cash": 93764.0
+    },
+    {
+      "seed": 260909184,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74955.0,
+      "opponent_cash": 80515.0
+    },
+    {
+      "seed": 260909184,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 74955.0,
+      "opponent_cash": 80515.0
+    },
+    {
+      "seed": 260909186,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 96410.0,
+      "opponent_cash": 92398.0
+    },
+    {
+      "seed": 260909185,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 112619.0,
+      "opponent_cash": 93764.0
+    },
+    {
+      "seed": 260909186,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 96410.0,
+      "opponent_cash": 92398.0
+    },
+    {
+      "seed": 260909187,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97930.0,
+      "opponent_cash": 109423.0
+    },
+    {
+      "seed": 260909187,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 96895.0,
+      "opponent_cash": 107291.0
+    },
+    {
+      "seed": 260909188,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72785.0,
+      "opponent_cash": 72010.0
+    },
+    {
+      "seed": 260909188,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 72785.0,
+      "opponent_cash": 72010.0
+    },
+    {
+      "seed": 260909189,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 122054.0,
+      "opponent_cash": 114467.0
+    },
+    {
+      "seed": 260909189,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 122054.0,
+      "opponent_cash": 114467.0
+    },
+    {
+      "seed": 260909190,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86277.0,
+      "opponent_cash": 97387.0
+    },
+    {
+      "seed": 260909190,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 86277.0,
+      "opponent_cash": 97387.0
+    },
+    {
+      "seed": 260909191,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117568.0,
+      "opponent_cash": 135220.0
+    },
+    {
+      "seed": 260909191,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 117568.0,
+      "opponent_cash": 135220.0
+    },
+    {
+      "seed": 260909192,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105867.0,
+      "opponent_cash": 103566.0
+    },
+    {
+      "seed": 260909193,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124360.0,
+      "opponent_cash": 125158.0
+    },
+    {
+      "seed": 260909194,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97399.0,
+      "opponent_cash": 102449.0
+    },
+    {
+      "seed": 260909193,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 124360.0,
+      "opponent_cash": 125158.0
+    },
+    {
+      "seed": 260909192,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 105867.0,
+      "opponent_cash": 103566.0
+    },
+    {
+      "seed": 260909194,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 97399.0,
+      "opponent_cash": 102449.0
+    },
+    {
+      "seed": 260909195,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106405.0,
+      "opponent_cash": 104812.0
+    },
+    {
+      "seed": 260909196,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95254.0,
+      "opponent_cash": 115145.0
+    },
+    {
+      "seed": 260909195,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 106405.0,
+      "opponent_cash": 104812.0
+    },
+    {
+      "seed": 260909196,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 95254.0,
+      "opponent_cash": 115145.0
+    },
+    {
+      "seed": 260909197,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109643.0,
+      "opponent_cash": 106494.0
+    },
+    {
+      "seed": 260909197,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 109643.0,
+      "opponent_cash": 106494.0
+    },
+    {
+      "seed": 260909198,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104162.0,
+      "opponent_cash": 105052.0
+    },
+    {
+      "seed": 260909198,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 104162.0,
+      "opponent_cash": 105052.0
+    },
+    {
+      "seed": 260909199,
+      "seat": 0,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77501.0,
+      "opponent_cash": 85869.0
+    },
+    {
+      "seed": 260909199,
+      "seat": 1,
+      "opponent": "94",
+      "status": "PASS",
+      "steps": 719,
+      "cash": 77501.0,
+      "opponent_cash": 85869.0
+    }
+  ]
+}

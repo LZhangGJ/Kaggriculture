@@ -1,0 +1,15 @@
+{
+  "schema": "kaggriculture.front40_fusion.merged-route-screen.v1",
+  "generated_at_utc": "2026-08-23T16:49:52.676999+00:00",
+  "sources": [
+    "experiments\\front40_fusion_v1\\receipts\\hasegawa_all161_vs_fc24b_screen_seed162001_n32x2_v1.json",
+    "experiments\\front40_fusion_v1\\receipts\\hasegawa_all161_vs_fc24b_screen_seed164001_n64x2_v2.json"
+  ],
+  "seed_count": 96,
+  "route_count": 161,
+  "games": 30912,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\hasegawa_all161_vs_fc24b_merged_train96_v3.npz",
+  "status": "PASS"
+}

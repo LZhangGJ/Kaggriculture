@@ -1,0 +1,6 @@
+* -text whitespace=cr-at-eol
+# Preserve frozen third-party/source/receipt bytes, including their original whitespace.
+engine/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+referee/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+reports/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+submission/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

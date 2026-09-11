@@ -1,0 +1,389 @@
+[
+  {
+    "id": "control_r0_step100",
+    "run": "control_r0",
+    "round": 100,
+    "bin": "models/control_r0_step100.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_100_20260906/training/control_r0/step100.bin",
+    "bin_sha256": "7fd5986212e8f5212f620807616ff43f561a79eaa118fbc224710b7a8f444fb7"
+  },
+  {
+    "id": "control_r1_step100",
+    "run": "control_r1",
+    "round": 100,
+    "bin": "models/control_r1_step100.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_100_20260906/training/control_r1/step100.bin",
+    "bin_sha256": "f7d9e4e7b7aed71be97d5d598b4ac2963bae3627b360c986d91339b6d3c8337c"
+  },
+  {
+    "id": "aux_r0_step100",
+    "run": "aux_r0",
+    "round": 100,
+    "bin": "models/aux_r0_step100.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_100_20260906/training/aux_r0/step100.bin",
+    "bin_sha256": "e0df8c7e2a2cef929dc251dfc3b6caeac2d3f2a0a62b4bc3545de8ebd70e8049"
+  },
+  {
+    "id": "aux_r1_step100",
+    "run": "aux_r1",
+    "round": 100,
+    "bin": "models/aux_r1_step100.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_100_20260906/training/aux_r1/step100.bin",
+    "bin_sha256": "52c646a8a5b52357ed9c16c22a7744b943291abbebb56d7ef270f68b7de5dce5"
+  },
+  {
+    "id": "control_r0_step200",
+    "run": "control_r0",
+    "round": 200,
+    "bin": "models/control_r0_step200.bin",
+    "pt": "models/control_r0_step200.pt",
+    "source": "experiments/economic_rl_keep2_200_20260906/training/control_r0/step200.bin",
+    "bin_sha256": "63290a2c2c1cf53e0703ad338af7d6f934b52d9027e28ba34732b3eb592d024d"
+  },
+  {
+    "id": "control_r1_step200",
+    "run": "control_r1",
+    "round": 200,
+    "bin": "models/control_r1_step200.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_200_20260906/training/control_r1/step200.bin",
+    "bin_sha256": "a177d2cba06d8f9fa12e52968c6a866a586dd32858db8c0bc9edb5dc9376e01b"
+  },
+  {
+    "id": "aux_r0_step200",
+    "run": "aux_r0",
+    "round": 200,
+    "bin": "models/aux_r0_step200.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_200_20260906/training/aux_r0/step200.bin",
+    "bin_sha256": "8b64fd3302adc9bdbde76dd41bbc401aad988662f61de518d032e45dca36d668"
+  },
+  {
+    "id": "aux_r1_step200",
+    "run": "aux_r1",
+    "round": 200,
+    "bin": "models/aux_r1_step200.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_200_20260906/training/aux_r1/step200.bin",
+    "bin_sha256": "4ff67364a6f06588f90a9c80df31c50e144824c764dd79de148af377f4ea6a0c"
+  },
+  {
+    "id": "control_r0_step300",
+    "run": "control_r0",
+    "round": 300,
+    "bin": "models/control_r0_step300.bin",
+    "pt": "models/control_r0_step300.pt",
+    "source": "experiments/economic_rl_keep2_300_20260906/training/control_r0/step300.bin",
+    "bin_sha256": "83668e29b1fb58f0fc4cbfb51499bcd6ecea7528ce61ef1ba8a63c8448e4c3dd"
+  },
+  {
+    "id": "control_r1_step300",
+    "run": "control_r1",
+    "round": 300,
+    "bin": "models/control_r1_step300.bin",
+    "pt": "models/control_r1_step300.pt",
+    "source": "experiments/economic_rl_keep2_300_20260906/training/control_r1/step300.bin",
+    "bin_sha256": "fd2dd204e8cd8d271841f6f72d2579ab09390a412e6e2bebf8a252255620542f"
+  },
+  {
+    "id": "aux_r0_step300",
+    "run": "aux_r0",
+    "round": 300,
+    "bin": "models/aux_r0_step300.bin",
+    "pt": "models/aux_r0_step300.pt",
+    "source": "experiments/economic_rl_keep2_300_20260906/training/aux_r0/step300.bin",
+    "bin_sha256": "d64932215439d2046f8e71da94bb41b3a6677f0fb7bdbcf17fbb4bc0cb848c7d"
+  },
+  {
+    "id": "aux_r1_step300",
+    "run": "aux_r1",
+    "round": 300,
+    "bin": "models/aux_r1_step300.bin",
+    "pt": "models/aux_r1_step300.pt",
+    "source": "experiments/economic_rl_keep2_300_20260906/training/aux_r1/step300.bin",
+    "bin_sha256": "3c73c20b78cc368a189c5af570387d36efd26d55c1ac5a8dee82a47c40b40054"
+  },
+  {
+    "id": "control_r0_step400",
+    "run": "control_r0",
+    "round": 400,
+    "bin": "models/control_r0_step400.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0400/training/control_r0/step400.bin",
+    "bin_sha256": "67a07d7a2625ba34f7d474c318eac76c061c6f762b640cc3339aaadff0345755"
+  },
+  {
+    "id": "control_r1_step400",
+    "run": "control_r1",
+    "round": 400,
+    "bin": "models/control_r1_step400.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0400/training/control_r1/step400.bin",
+    "bin_sha256": "5b486a88e76799c48c12e40e5fcdfbdf5efaca908afd64c929d97c37f44d3493"
+  },
+  {
+    "id": "aux_r0_step400",
+    "run": "aux_r0",
+    "round": 400,
+    "bin": "models/aux_r0_step400.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0400/training/aux_r0/step400.bin",
+    "bin_sha256": "cfb7b74d01ff00673a8f40c53beaa5447f19db37eb3a5f5a3b8e8161ea06666b"
+  },
+  {
+    "id": "aux_r1_step400",
+    "run": "aux_r1",
+    "round": 400,
+    "bin": "models/aux_r1_step400.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0400/training/aux_r1/step400.bin",
+    "bin_sha256": "9d1094472a95d87280bcb59a8b3c115aaf1c90c839b8f3b4ada0fad91a5e41a3"
+  },
+  {
+    "id": "control_r0_step500",
+    "run": "control_r0",
+    "round": 500,
+    "bin": "models/control_r0_step500.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0500/training/control_r0/step500.bin",
+    "bin_sha256": "47569ce995dfcc1b079d7a695d93ea5ded70cd8e7d3aa0c23af42fc3a9998e42"
+  },
+  {
+    "id": "control_r1_step500",
+    "run": "control_r1",
+    "round": 500,
+    "bin": "models/control_r1_step500.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0500/training/control_r1/step500.bin",
+    "bin_sha256": "d041c44c47d9e8d773b96d506d43ff25700e4450d12766818b8223e317a23b94"
+  },
+  {
+    "id": "aux_r0_step500",
+    "run": "aux_r0",
+    "round": 500,
+    "bin": "models/aux_r0_step500.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0500/training/aux_r0/step500.bin",
+    "bin_sha256": "9f1099d939b8c9e8137dc75577b6b7ee957c794caa1944fca2f0c00f02d97aa7"
+  },
+  {
+    "id": "aux_r1_step500",
+    "run": "aux_r1",
+    "round": 500,
+    "bin": "models/aux_r1_step500.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0500/training/aux_r1/step500.bin",
+    "bin_sha256": "177f576fb17b8e41861facf6184aabbe0a469d0587cf44a47c5d7399c1653997"
+  },
+  {
+    "id": "control_r0_step600",
+    "run": "control_r0",
+    "round": 600,
+    "bin": "models/control_r0_step600.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0600/training/control_r0/step600.bin",
+    "bin_sha256": "2c20dfa9c75ba12bc7386d927d54938a31ca3d57c9442a55a1db886522ccf66f"
+  },
+  {
+    "id": "control_r1_step600",
+    "run": "control_r1",
+    "round": 600,
+    "bin": "models/control_r1_step600.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0600/training/control_r1/step600.bin",
+    "bin_sha256": "1bdec0e09d48534030086e60100516d33c8fb4cb4e6265c7fd83938d19254f83"
+  },
+  {
+    "id": "aux_r0_step600",
+    "run": "aux_r0",
+    "round": 600,
+    "bin": "models/aux_r0_step600.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0600/training/aux_r0/step600.bin",
+    "bin_sha256": "29640f5cfba5e1bb221c38f2dd6a2663cac04200eb0de9f65ba69d29439c3454"
+  },
+  {
+    "id": "aux_r1_step600",
+    "run": "aux_r1",
+    "round": 600,
+    "bin": "models/aux_r1_step600.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0600/training/aux_r1/step600.bin",
+    "bin_sha256": "0264bff6e9aa802769d6ea792f1187e7a27d0e60dee97c17180988064704482b"
+  },
+  {
+    "id": "control_r0_step700",
+    "run": "control_r0",
+    "round": 700,
+    "bin": "models/control_r0_step700.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/control_r0/step700.bin",
+    "bin_sha256": "f16e3706a4448f955c916d4fccd975412734df4d47158671bbd71875abf5fe8c"
+  },
+  {
+    "id": "control_r1_step700",
+    "run": "control_r1",
+    "round": 700,
+    "bin": "models/control_r1_step700.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/control_r1/step700.bin",
+    "bin_sha256": "137cf36e7d30971c9cc95feafd756c498ff861497373df103041b80925e4f176"
+  },
+  {
+    "id": "aux_r0_step700",
+    "run": "aux_r0",
+    "round": 700,
+    "bin": "models/aux_r0_step700.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/aux_r0/step700.bin",
+    "bin_sha256": "881dc0e700ea6def37ac1841871fd807ba3b988142451af4ce4fb9d989fafaf9"
+  },
+  {
+    "id": "aux_r1_step700",
+    "run": "aux_r1",
+    "round": 700,
+    "bin": "models/aux_r1_step700.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/aux_r1/step700.bin",
+    "bin_sha256": "075d7c1b8392fd096ed6ca6794d4638373040a32cdc552bb417c97e10b402de3"
+  },
+  {
+    "id": "control_r0_step800",
+    "run": "control_r0",
+    "round": 800,
+    "bin": "models/control_r0_step800.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0800/training/control_r0/step800.bin",
+    "bin_sha256": "f2937c8eb51e4c8866e77c28c7c9520ebc2b0e9fc7effc410547de9c9bff54f0"
+  },
+  {
+    "id": "control_r1_step800",
+    "run": "control_r1",
+    "round": 800,
+    "bin": "models/control_r1_step800.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0800/training/control_r1/step800.bin",
+    "bin_sha256": "389f1d1ff770cb497604a53aecac6bc0e37e545e8b00d59686e801167a4136d7"
+  },
+  {
+    "id": "aux_r0_step800",
+    "run": "aux_r0",
+    "round": 800,
+    "bin": "models/aux_r0_step800.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0800/training/aux_r0/step800.bin",
+    "bin_sha256": "b6c031e66e2e2029d18cc30ce1079064f7cb9333ddd30258d4f85da726d525f7"
+  },
+  {
+    "id": "aux_r1_step800",
+    "run": "aux_r1",
+    "round": 800,
+    "bin": "models/aux_r1_step800.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0800/training/aux_r1/step800.bin",
+    "bin_sha256": "c3a21b1a142939d5d339c56e353b95c63c9bdeff1837aaa6bad44c139ebf6fd0"
+  },
+  {
+    "id": "control_r0_step900",
+    "run": "control_r0",
+    "round": 900,
+    "bin": "models/control_r0_step900.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0900/training/control_r0/step900.bin",
+    "bin_sha256": "396d872a2bd641632448c90fa0b1b4da1c1564ff362c2c3e895f097d37626773"
+  },
+  {
+    "id": "control_r1_step900",
+    "run": "control_r1",
+    "round": 900,
+    "bin": "models/control_r1_step900.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0900/training/control_r1/step900.bin",
+    "bin_sha256": "e76fbc432e2a5e629d2d8eea15f93410334fbc92155e54f287893936e2c823be"
+  },
+  {
+    "id": "aux_r0_step900",
+    "run": "aux_r0",
+    "round": 900,
+    "bin": "models/aux_r0_step900.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0900/training/aux_r0/step900.bin",
+    "bin_sha256": "255ca024a6195e7bb63971f0fe8107451f2e7e0615a0a4e69d973f55c62c40aa"
+  },
+  {
+    "id": "aux_r1_step900",
+    "run": "aux_r1",
+    "round": 900,
+    "bin": "models/aux_r1_step900.bin",
+    "pt": null,
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0900/training/aux_r1/step900.bin",
+    "bin_sha256": "897a528ffe9882081cd766f4a426be12e4fbdaa9bfd76329fe3960f871f4860d"
+  },
+  {
+    "id": "control_r0_step1000",
+    "run": "control_r0",
+    "round": 1000,
+    "bin": "models/control_r0_step1000.bin",
+    "pt": "models/control_r0_step1000.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round1000/training/control_r0/step1000.bin",
+    "bin_sha256": "1f939a7975e33d0d67444d47b92f21b2c3b9cb02f125d470605bfd66821dc939"
+  },
+  {
+    "id": "control_r1_step1000",
+    "run": "control_r1",
+    "round": 1000,
+    "bin": "models/control_r1_step1000.bin",
+    "pt": "models/control_r1_step1000.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round1000/training/control_r1/step1000.bin",
+    "bin_sha256": "3582593dac1eba6aeba22e3796239c1a7f65c0901d144c25b3345331ab04d90b"
+  },
+  {
+    "id": "aux_r0_step1000",
+    "run": "aux_r0",
+    "round": 1000,
+    "bin": "models/aux_r0_step1000.bin",
+    "pt": "models/aux_r0_step1000.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round1000/training/aux_r0/step1000.bin",
+    "bin_sha256": "7f6a164a4eab959761ff925928c5c0325ecdd1391901ac645237a1c33032d314"
+  },
+  {
+    "id": "aux_r1_step1000",
+    "run": "aux_r1",
+    "round": 1000,
+    "bin": "models/aux_r1_step1000.bin",
+    "pt": "models/aux_r1_step1000.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round1000/training/aux_r1/step1000.bin",
+    "bin_sha256": "bcaaf2aea5314983bc83271ca2ee7aca0591342010a8efaf141e6adeb1d5ff61"
+  },
+  {
+    "id": "aux_r0_step640",
+    "run": "aux_r0",
+    "round": 640,
+    "bin": "models/aux_r0_step640.bin",
+    "pt": "models/aux_r0_step640.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/aux_r0/step640.bin",
+    "bin_sha256": "767b165ad0a5923cc346ea07df644d425dba7fc12c164967e6ddcf4ec60327fe"
+  },
+  {
+    "id": "control_r1_step180",
+    "run": "control_r1",
+    "round": 180,
+    "bin": "models/control_r1_step180.bin",
+    "pt": "models/control_r1_step180.pt",
+    "source": "experiments/economic_rl_keep2_200_20260906/training/control_r1/step180.bin",
+    "bin_sha256": "815400a6ea0b535684fb149e85cb64c10dd858cc05ff395220b4cb24a41dbe8e"
+  },
+  {
+    "id": "aux_r1_step780",
+    "run": "aux_r1",
+    "round": 780,
+    "bin": "models/aux_r1_step780.bin",
+    "pt": "models/aux_r1_step780.pt",
+    "source": "experiments/economic_rl_keep2_1000_20260906/stages/round0800/training/aux_r1/step780.bin",
+    "bin_sha256": "d5a104ce83061f3f624a29ff9cec4398e63fb7af4b23898b2c9b18724d5cfdd2"
+  }
+]

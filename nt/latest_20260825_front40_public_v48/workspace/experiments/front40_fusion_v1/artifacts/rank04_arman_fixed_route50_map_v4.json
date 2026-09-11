@@ -1,0 +1,11 @@
+{
+  "schema": "kaggriculture.front40_fusion.fixed-first-shop-route-map.v1",
+  "status": "CANDIDATE",
+  "team_name": "Arman Tuganbaev",
+  "submission_id": 55617399,
+  "route_ids": [50, 50, 50, 50, 50, 50, 50, 50],
+  "selection_rule": "common bootstrap until first shop, then fixed route 50",
+  "source_episode_id": 94488124,
+  "source_reward": 108844,
+  "runtime_inputs": ["current_step", "public_first_shop_available"]
+}

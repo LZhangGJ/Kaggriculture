@@ -1,0 +1,166 @@
+{
+  "schema": "kaggriculture.hasegawa_atomic_trace_bank.v2",
+  "generated_at_utc": "2026-08-20T08:30:44.179318+00:00",
+  "status": "PASS",
+  "source_replay_root": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays",
+  "winning_replay_count": 102,
+  "branch_count": 9,
+  "branch_selection": "highest-reward coherent full Replay within visible first-shop class",
+  "runtime_branch_switches_after_lock": 0,
+  "sources": [
+    {
+      "branch": 0,
+      "name": "UNKNOWN_GLOBAL",
+      "episode_id": 94426282,
+      "reward": 168259,
+      "seat": 0,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94426282.json",
+      "sha256": "5335a25682862e97a5797ed87850217319e290cef260eea1b403ee8de08cd93e"
+    },
+    {
+      "branch": 1,
+      "name": "BAKERY",
+      "episode_id": 94405973,
+      "reward": 117747,
+      "seat": 0,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94405973.json",
+      "sha256": "241fe2a1e1757f5e253b14fc67443a66412a0598736297a06c4f0b9cf5330543"
+    },
+    {
+      "branch": 2,
+      "name": "BRUNCH_SPOT",
+      "episode_id": 94454673,
+      "reward": 121656,
+      "seat": 0,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94454673.json",
+      "sha256": "502f4005b0e7b6e0d371e84691ac8d29183646cd7349cf367892081e5d0dfca4"
+    },
+    {
+      "branch": 3,
+      "name": "FARMERS_MARKET",
+      "episode_id": 94412102,
+      "reward": 154276,
+      "seat": 1,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94412102.json",
+      "sha256": "0a7378f990822bf8bd2d445a19364912790de441f71dd8019452d52f6bef0a07"
+    },
+    {
+      "branch": 4,
+      "name": "ICE_CREAM_SHOP",
+      "episode_id": 94854181,
+      "reward": 165959,
+      "seat": 1,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-20\\94854181.json",
+      "sha256": "6ac3bd5dd5deab00c96d90874e5ce43391be6806d8e86e8cc50fedcf832c00ce"
+    },
+    {
+      "branch": 5,
+      "name": "PET_CAFE",
+      "episode_id": 94409477,
+      "reward": 110082,
+      "seat": 1,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94409477.json",
+      "sha256": "1b415903e77304780a21c4f7b07a5016c6558c60c18084750538b41942208334"
+    },
+    {
+      "branch": 6,
+      "name": "PIZZA_SHOP",
+      "episode_id": 94458226,
+      "reward": 128375,
+      "seat": 1,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94458226.json",
+      "sha256": "14dfcbeec74b4cf049936687652388873229efce75f90a783460fa3551ffa5cd"
+    },
+    {
+      "branch": 7,
+      "name": "SMOOTHIE_SHOP",
+      "episode_id": 94436066,
+      "reward": 157930,
+      "seat": 1,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94436066.json",
+      "sha256": "c26fb0debd5391ef013981fe7859da2a9e5469388c8e33a93506240d140f5cff"
+    },
+    {
+      "branch": 8,
+      "name": "YARN_STORE",
+      "episode_id": 94426282,
+      "reward": 168259,
+      "seat": 0,
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94426282.json",
+      "sha256": "5335a25682862e97a5797ed87850217319e290cef260eea1b403ee8de08cd93e"
+    }
+  ],
+  "output": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\hasegawa_jax_v2\\artifacts\\hasegawa_trace_bank_v2.npz",
+  "output_sha256": "74f351859b3e5c4e90881af7eefa666509dba3853e19b5eebd8e27aef574b19e",
+  "shapes": {
+    "unit_op": [
+      9,
+      719,
+      33
+    ],
+    "unit_item": [
+      9,
+      719,
+      33
+    ],
+    "unit_amount": [
+      9,
+      719,
+      33
+    ],
+    "unit_count": [
+      9,
+      719
+    ],
+    "market_op": [
+      9,
+      719,
+      10
+    ],
+    "market_item": [
+      9,
+      719,
+      10
+    ],
+    "market_amount": [
+      9,
+      719,
+      10
+    ],
+    "market_count": [
+      9,
+      719
+    ],
+    "expected_unit_pos": [
+      9,
+      719,
+      33,
+      2
+    ],
+    "expected_unit_active": [
+      9,
+      719,
+      33
+    ],
+    "expected_money": [
+      9,
+      719
+    ],
+    "source_episode_id": [
+      9
+    ],
+    "source_reward": [
+      9
+    ],
+    "source_seat": [
+      9
+    ],
+    "branch_sample_count": [
+      9
+    ],
+    "branch_shop_demand": [
+      9,
+      9
+    ]
+  }
+}

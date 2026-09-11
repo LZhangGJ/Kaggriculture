@@ -1,0 +1,14 @@
+{
+  "schema": "kaggriculture-upload-receipt-v1",
+  "competition": "kaggriculture",
+  "ref": 55576378,
+  "file_name": "submission.tar.gz",
+  "kaggle_date": "2026-08-17 10:24:40.140000",
+  "description": "EBA26v2 public-state yarn route18 override official1327 holdout",
+  "upload_result": "Successfully submitted to Kaggriculture",
+  "daily_submissions_remaining_after_upload": 4,
+  "status_after_upload": "PENDING",
+  "public_score_after_upload": null,
+  "artifact_sha256": "9b906f81189179b442649f0b4388ef0d0e1ca914190f7250848993ff320b9e65",
+  "main_py_sha256": "dd8ca878fb7c71195ef5cfddcf61d9b1161f317b052b0e45104b8442b6e59072"
+}

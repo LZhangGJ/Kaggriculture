@@ -1,0 +1,298 @@
+{
+  "status": "PASS",
+  "scope": "include graph textual boundary; public C ABI does not accept actual Simulator, seed, opponent ID or private rival inventory",
+  "include_lines": [
+    {
+      "file": "policy/search.hpp",
+      "include": "#include \"proposals.hpp\""
+    },
+    {
+      "file": "policy/search.hpp",
+      "include": "#include \"public_flow_scenario.hpp\""
+    },
+    {
+      "file": "policy/search.hpp",
+      "include": "#include \"learned_value.hpp\""
+    },
+    {
+      "file": "policy/planner.hpp",
+      "include": "#include \"executor/policy.hpp\""
+    },
+    {
+      "file": "policy/ongoing_maintenance_dp.hpp",
+      "include": "#include \"planner.hpp\""
+    },
+    {
+      "file": "policy/public_flow_scenario.hpp",
+      "include": "#include \"planner.hpp\""
+    },
+    {
+      "file": "policy/observation_codec.hpp",
+      "include": "#include <limits>"
+    },
+    {
+      "file": "policy/observation_codec.hpp",
+      "include": "#include \"executor/observation_view.hpp\""
+    },
+    {
+      "file": "policy/learned_value.hpp",
+      "include": "#include <vector>"
+    },
+    {
+      "file": "policy/triad.hpp",
+      "include": "#include \"planner.hpp\""
+    },
+    {
+      "file": "policy/triad.hpp",
+      "include": "#include \"animal_service_dp.hpp\""
+    },
+    {
+      "file": "policy/triad.hpp",
+      "include": "#include \"ongoing_maintenance_dp.hpp\""
+    },
+    {
+      "file": "policy/triad.hpp",
+      "include": "#include <sstream>"
+    },
+    {
+      "file": "policy/triad.hpp",
+      "include": "#include \"executor/observed_day_scenario.hpp\""
+    },
+    {
+      "file": "policy/proposals.hpp",
+      "include": "#include \"triad.hpp\""
+    },
+    {
+      "file": "policy/animal_service_dp.hpp",
+      "include": "#include \"planner.hpp\""
+    },
+    {
+      "file": "policy/executor/resource_exchange.hpp",
+      "include": "#include \"policy.hpp\""
+    },
+    {
+      "file": "policy/executor/resource_exchange.hpp",
+      "include": "#include <map>"
+    },
+    {
+      "file": "policy/executor/observation_view.hpp",
+      "include": "#include \"vendor/simulator.hpp\""
+    },
+    {
+      "file": "policy/executor/investment_candidates.hpp",
+      "include": "#include \"policy.hpp\""
+    },
+    {
+      "file": "policy/executor/investment_candidates.hpp",
+      "include": "#include <set>"
+    },
+    {
+      "file": "policy/executor/service_recovery.hpp",
+      "include": "#include \"policy.hpp\""
+    },
+    {
+      "file": "policy/executor/pack_memo.hpp",
+      "include": "#include <unordered_map>"
+    },
+    {
+      "file": "policy/executor/pack_memo.hpp",
+      "include": "#include <vector>"
+    },
+    {
+      "file": "policy/executor/pack_memo.hpp",
+      "include": "#include <cstdint>"
+    },
+    {
+      "file": "policy/executor/live_execution_repairs.hpp",
+      "include": "#include \"policy.hpp\""
+    },
+    {
+      "file": "policy/executor/idle_task_handoff.hpp",
+      "include": "#include \"observed_day_scenario.hpp\""
+    },
+    {
+      "file": "policy/executor/observed_day_scenario.hpp",
+      "include": "#include \"observation_view.hpp\""
+    },
+    {
+      "file": "policy/executor/observed_day_scenario.hpp",
+      "include": "#include <cmath>"
+    },
+    {
+      "file": "policy/executor/observed_day_scenario.hpp",
+      "include": "#include <stdexcept>"
+    },
+    {
+      "file": "policy/executor/intraday_admission.hpp",
+      "include": "#include \"policy.hpp\""
+    },
+    {
+      "file": "policy/executor/joint_portfolio.hpp",
+      "include": "#include \"crop_delivery.hpp\""
+    },
+    {
+      "file": "policy/executor/day_consequence.hpp",
+      "include": "#include \"observed_day_scenario.hpp\""
+    },
+    {
+      "file": "policy/executor/day_consequence.hpp",
+      "include": "#include <map>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"vendor/simulator.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"observation_view.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <algorithm>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <array>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <bit>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <cmath>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <functional>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <numeric>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <memory>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <optional>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <set>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <stdexcept>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <string>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <tuple>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include <vector>"
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"pack_memo.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"regret_pack_incremental.inc\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"resource_exchange.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"intraday_admission.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"service_recovery.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"joint_portfolio.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"day_consequence.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"idle_task_handoff.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"live_execution_repairs.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"rotation_calendar.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"rotation_cash.hpp\""
+    },
+    {
+      "file": "policy/executor/policy.hpp",
+      "include": "#include \"compile_choices.hpp\""
+    },
+    {
+      "file": "policy/executor/vendor/simulator.hpp",
+      "include": "#include <array>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.hpp",
+      "include": "#include <cstdint>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.hpp",
+      "include": "#include <string>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.hpp",
+      "include": "#include <vector>"
+    },
+    {
+      "file": "policy/bridge.cpp",
+      "include": "#include \"search.hpp\""
+    },
+    {
+      "file": "policy/bridge.cpp",
+      "include": "#include \"observation_codec.hpp\""
+    },
+    {
+      "file": "policy/bridge.cpp",
+      "include": "#include <cstring>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.cpp",
+      "include": "#include \"simulator.hpp\""
+    },
+    {
+      "file": "policy/executor/vendor/simulator.cpp",
+      "include": "#include <algorithm>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.cpp",
+      "include": "#include <cmath>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.cpp",
+      "include": "#include <limits>"
+    },
+    {
+      "file": "policy/executor/vendor/simulator.cpp",
+      "include": "#include <stdexcept>"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "status": "FAIL",
+  "error": "joint_moon_v215_2609125000_0.json.gz: action mismatch step=192: got={'farmer': ['COLLECT_FERTILIZER'], 'hands': [], 'market': [['SELL', 'FERTILIZER', 7], ['BUY_PRODUCT', 'WHEAT', 9], ['BUY_ANIMAL', 'GOOSE', 1], ['BUY_SEED', 'STRAWBERRY', 1], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE']]} expected={'farmer': ['COLLECT_FERTILIZER'], 'hands': [], 'market': [['SELL', 'FERTILIZER', 7], ['BUY_PRODUCT', 'WHEAT', 8], ['BUY_SEED', 'STRAWBERRY', 1], ['BUY_SEED', 'WHEAT', 1], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE']]}"
+}

@@ -1,0 +1,28 @@
+{
+  "submission_id": 56114767,
+  "version": "R2",
+  "checks": [
+    {
+      "episode_id": 107026853,
+      "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+      "episode_state": "EpisodeState.COMPLETED",
+      "frames": 720,
+      "steps": 719,
+      "final_statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "final_rewards": [
+        85287.0,
+        89052.0
+      ],
+      "bytes": 31038734,
+      "sha256": "314b5a94192ba0a079519459837826e43d6f5e5c0adfd426a357d173a3d3b392",
+      "file": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\t2_r1_r2_public_20260909_v1\\R2\\official_evidence\\episode-107026853-replay.json",
+      "url": "https://www.kaggle.com/competitions/kaggriculture/submissions?submissionId=56114767&episodeId=107026853",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "checked_at_utc": "2026-09-09T05:46:23.152688+00:00"
+}

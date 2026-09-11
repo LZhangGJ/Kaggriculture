@@ -1,0 +1,28 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-family-candidate.v1",
+  "player": "hasegawa",
+  "candidate": "rank01_hasegawa_ablation_plus_ice_bakery_v11",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/hasegawa_current_trace_bank_v1.npz",
+  "first_shop_route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_ablation_blend_v10.json",
+  "second_shop_route_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_second_shop_gain0p30_train384_v8.json",
+  "first_shop_routes": [31, 6, 25, 140, 67, 84, 118, 0],
+  "accepted_second_shop_switches": [
+    {
+      "first_shop": "ICE_CREAM_SHOP",
+      "second_shop": "BAKERY",
+      "from_route": 140,
+      "to_route": 66,
+      "switch_step": 144,
+      "prefix_actions_exact": true
+    }
+  ],
+  "holdout_receipts": [
+    "experiments/front40_fusion_v1/receipts/hasegawa_v10_v11_vs_fc24b_holdout204001_n256x2_v1.json",
+    "experiments/front40_fusion_v1/receipts/hasegawa_v10_v11_vs_fc24b_holdout208001_n256x2_v2.json"
+  ],
+  "holdout_games": 1024,
+  "holdout_wins": 741,
+  "holdout_win_rate": 0.7236328125,
+  "hard_counter_total": 0,
+  "status": "FROZEN_FAMILY_BEST"
+}

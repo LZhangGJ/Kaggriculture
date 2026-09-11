@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "static_schema_range": {"minimum": 0, "maximum": 100},
+  "crops": ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON"],
+  "animals": ["GOOSE", "COW", "SHEEP"],
+  "dynamic_caps": {
+    "crops": "dynamic_crop_cap",
+    "animals_native": "dynamic_productive_cap",
+    "animals_hybrid_support": "dynamic_legal_cap",
+    "reject_above_dynamic_cap_with_reason": true
+  },
+  "scale_bands": [
+    {"id": "S0", "minimum": 0, "maximum": 0},
+    {"id": "S1", "minimum": 1, "maximum": 2},
+    {"id": "S2", "minimum": 3, "maximum": 4},
+    {"id": "S3", "minimum": 5, "maximum": 8},
+    {"id": "S4", "minimum": 9, "maximum": 16},
+    {"id": "S5", "minimum": 17, "maximum": 32},
+    {"id": "S6", "minimum": 33, "maximum": 64},
+    {"id": "S7", "minimum": 65, "maximum": "dynamic_cap"}
+  ],
+  "normal_layouts": ["CENTER_COMPACT", "EDGE_COMPACT", "QUADRANT_ZONED", "TOUR_OPTIMIZED"],
+  "control_layouts": ["DISPERSED_CONTROL"],
+  "per_species_integer_coverage": {
+    "crops": {"dense_minimum": 0, "dense_maximum": 16, "tail_maximum": "dynamic_cap"},
+    "animals_native": {"dense_minimum": 0, "dense_maximum": 12, "tail_input_maximum": 100}
+  },
+  "minimum_per_nonempty_scale_normal_layout_cell": {
+    "NATIVE_DOMAIN": 64,
+    "CAUSAL_HYBRID": 32
+  },
+  "r1_internal_mix": {
+    "pure_wheat_minimum_fraction": 0.35,
+    "pure_carrot_minimum_fraction": 0.35,
+    "ratio_scan_minimum_fraction": 0.20,
+    "boundary_fraction": 0.10
+  },
+  "r8_animal_simplex": {
+    "each_pure_corner_minimum": 1000,
+    "each_two_animal_edge_minimum": 750,
+    "all_three_present_minimum": 2000
+  }
+}
+

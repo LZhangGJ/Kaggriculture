@@ -1,0 +1,886 @@
+{
+  "schema": "kaggriculture.fusion_champion.prt_suffix_selector_training.v1",
+  "generated_at_utc": "2026-08-21T03:19:40.713068+00:00",
+  "status": "PASS",
+  "decision_step": 168,
+  "suffix_route_discovery_id": 81,
+  "future_leakage": false,
+  "group_cv": "5-fold grouped by episode seed",
+  "train_samples": 512,
+  "train_unique_seeds": 256,
+  "feature_count": 209,
+  "critical_counts": {
+    "base_only": 187,
+    "suffix_only": 31,
+    "both_win": 254,
+    "neither": 40
+  },
+  "baselines": {
+    "train": {
+      "baseline": {
+        "wins": 441,
+        "ties": 0,
+        "losses": 71,
+        "score_rate": 0.861328125,
+        "mean_margin": 5422.677734375,
+        "switch_rate": 0.0
+      },
+      "always_suffix": {
+        "wins": 285,
+        "ties": 0,
+        "losses": 227,
+        "score_rate": 0.556640625,
+        "mean_margin": 1183.609375,
+        "switch_rate": 1.0
+      },
+      "oracle": {
+        "wins": 472,
+        "ties": 0,
+        "losses": 40,
+        "score_rate": 0.921875,
+        "mean_margin": 6706.73046875
+      }
+    },
+    "test_a": {
+      "baseline": {
+        "wins": 111,
+        "ties": 0,
+        "losses": 17,
+        "score_rate": 0.8671875,
+        "mean_margin": 5797.796875,
+        "switch_rate": 0.0
+      },
+      "always_suffix": {
+        "wins": 75,
+        "ties": 0,
+        "losses": 53,
+        "score_rate": 0.5859375,
+        "mean_margin": 1051.8984375,
+        "switch_rate": 1.0
+      },
+      "oracle": {
+        "wins": 122,
+        "ties": 0,
+        "losses": 6,
+        "score_rate": 0.953125,
+        "mean_margin": 6902.0625
+      }
+    },
+    "test_b": {
+      "baseline": {
+        "wins": 110,
+        "ties": 0,
+        "losses": 18,
+        "score_rate": 0.859375,
+        "mean_margin": 4752.0234375,
+        "switch_rate": 0.0
+      },
+      "always_suffix": {
+        "wins": 65,
+        "ties": 0,
+        "losses": 63,
+        "score_rate": 0.5078125,
+        "mean_margin": 1139.9765625,
+        "switch_rate": 1.0
+      },
+      "oracle": {
+        "wins": 117,
+        "ties": 0,
+        "losses": 11,
+        "score_rate": 0.9140625,
+        "mean_margin": 5790.140625
+      }
+    }
+  },
+  "best_tree": {
+    "name": "tree_d5_leaf16",
+    "threshold": 0.990909090909091,
+    "cv": {
+      "wins": 453,
+      "ties": 0,
+      "losses": 59,
+      "score_rate": 0.884765625,
+      "mean_margin": 5640.41015625,
+      "switch_rate": 0.07421875
+    },
+    "rules": "|--- market_inventory_1 <= 9990.00\n|   |--- market_inventory_5 <= 9990.00\n|   |   |--- shop_second_0 <= 0.50\n|   |   |   |--- class: 1\n|   |   |--- shop_second_0 >  0.50\n|   |   |   |--- class: 1\n|   |--- market_inventory_5 >  9990.00\n|   |   |--- market_inventory_0 <= 9936.50\n|   |   |   |--- class: 1\n|   |   |--- market_inventory_0 >  9936.50\n|   |   |   |--- market_inventory_1 <= 9963.00\n|   |   |   |   |--- shop_second_4 <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- shop_second_4 >  0.50\n|   |   |   |   |   |--- class: 1\n|   |   |   |--- market_inventory_1 >  9963.00\n|   |   |   |   |--- market_price_6 <= 199.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- market_price_6 >  199.50\n|   |   |   |   |   |--- class: 0\n|--- market_inventory_1 >  9990.00\n|   |--- market_inventory_5 <= 9966.00\n|   |   |--- shop_second_0 <= 0.50\n|   |   |   |--- class: 0\n|   |   |--- shop_second_0 >  0.50\n|   |   |   |--- class: 1\n|   |--- market_inventory_5 >  9966.00\n|   |   |--- shop_first_1 <= 0.50\n|   |   |   |--- market_price_5 <= 50.50\n|   |   |   |   |--- shop_second_5 <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- shop_second_5 >  0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- market_price_5 >  50.50\n|   |   |   |   |--- own_kind_0_count <= 20.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- own_kind_0_count >  20.50\n|   |   |   |   |   |--- class: 0\n|   |   |--- shop_first_1 >  0.50\n|   |   |   |--- market_inventory_3 <= 9966.00\n|   |   |   |   |--- class: 0\n|   |   |   |--- market_inventory_3 >  9966.00\n|   |   |   |   |--- class: 0\n"
+  },
+  "selected": {
+    "family": "tree",
+    "name": "tree_d5_leaf16",
+    "threshold": 0.990909090909091,
+    "cv": {
+      "wins": 453,
+      "ties": 0,
+      "losses": 59,
+      "score_rate": 0.884765625,
+      "mean_margin": 5640.41015625,
+      "switch_rate": 0.07421875
+    },
+    "tests": {
+      "test_a": {
+        "wins": 113,
+        "ties": 0,
+        "losses": 15,
+        "score_rate": 0.8828125,
+        "mean_margin": 6096.8671875,
+        "switch_rate": 0.1640625
+      },
+      "test_b": {
+        "wins": 115,
+        "ties": 0,
+        "losses": 13,
+        "score_rate": 0.8984375,
+        "mean_margin": 5130.890625,
+        "switch_rate": 0.21875
+      }
+    }
+  },
+  "all_configurations": [
+    {
+      "family": "tree",
+      "name": "tree_d1_leaf8",
+      "threshold": 0.95,
+      "cv": {
+        "wins": 441,
+        "ties": 0,
+        "losses": 71,
+        "score_rate": 0.861328125,
+        "mean_margin": 5422.677734375,
+        "switch_rate": 0.0
+      },
+      "tests": {
+        "test_a": {
+          "wins": 111,
+          "ties": 0,
+          "losses": 17,
+          "score_rate": 0.8671875,
+          "mean_margin": 5797.796875,
+          "switch_rate": 0.0
+        },
+        "test_b": {
+          "wins": 110,
+          "ties": 0,
+          "losses": 18,
+          "score_rate": 0.859375,
+          "mean_margin": 4752.0234375,
+          "switch_rate": 0.0
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d1_leaf16",
+      "threshold": 0.95,
+      "cv": {
+        "wins": 441,
+        "ties": 0,
+        "losses": 71,
+        "score_rate": 0.861328125,
+        "mean_margin": 5422.677734375,
+        "switch_rate": 0.0
+      },
+      "tests": {
+        "test_a": {
+          "wins": 111,
+          "ties": 0,
+          "losses": 17,
+          "score_rate": 0.8671875,
+          "mean_margin": 5797.796875,
+          "switch_rate": 0.0
+        },
+        "test_b": {
+          "wins": 110,
+          "ties": 0,
+          "losses": 18,
+          "score_rate": 0.859375,
+          "mean_margin": 4752.0234375,
+          "switch_rate": 0.0
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d1_leaf32",
+      "threshold": 0.95,
+      "cv": {
+        "wins": 441,
+        "ties": 0,
+        "losses": 71,
+        "score_rate": 0.861328125,
+        "mean_margin": 5422.677734375,
+        "switch_rate": 0.0
+      },
+      "tests": {
+        "test_a": {
+          "wins": 111,
+          "ties": 0,
+          "losses": 17,
+          "score_rate": 0.8671875,
+          "mean_margin": 5797.796875,
+          "switch_rate": 0.0
+        },
+        "test_b": {
+          "wins": 110,
+          "ties": 0,
+          "losses": 18,
+          "score_rate": 0.859375,
+          "mean_margin": 4752.0234375,
+          "switch_rate": 0.0
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d2_leaf8",
+      "threshold": 0.998019801980198,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5643.373046875,
+        "switch_rate": 0.08203125
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d2_leaf16",
+      "threshold": 0.998019801980198,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5643.373046875,
+        "switch_rate": 0.08203125
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d2_leaf32",
+      "threshold": 0.8367670364500792,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5674.25,
+        "switch_rate": 0.1015625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d3_leaf8",
+      "threshold": 0.9894291754756871,
+      "cv": {
+        "wins": 453,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.884765625,
+        "mean_margin": 5635.166015625,
+        "switch_rate": 0.08984375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 5966.3046875,
+          "switch_rate": 0.1015625
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5010.09375,
+          "switch_rate": 0.140625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d3_leaf16",
+      "threshold": 0.9894291754756871,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5587.337890625,
+        "switch_rate": 0.0625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 6047.3515625,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5050.234375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d3_leaf32",
+      "threshold": 0.9889196675900277,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5649.31640625,
+        "switch_rate": 0.09375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d4_leaf8",
+      "threshold": 0.875,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5778.8671875,
+        "switch_rate": 0.146484375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 6158.09375,
+          "switch_rate": 0.1640625
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5075.984375,
+          "switch_rate": 0.171875
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d4_leaf16",
+      "threshold": 0.990909090909091,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5592.46875,
+        "switch_rate": 0.05859375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 6047.3515625,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5050.234375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d4_leaf32",
+      "threshold": 0.9889196675900277,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5649.462890625,
+        "switch_rate": 0.08984375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d5_leaf8",
+      "threshold": 0.875,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5878.263671875,
+        "switch_rate": 0.189453125
+      },
+      "tests": {
+        "test_a": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 6207.609375,
+          "switch_rate": 0.1953125
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5156.640625,
+          "switch_rate": 0.234375
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d5_leaf16",
+      "threshold": 0.990909090909091,
+      "cv": {
+        "wins": 453,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.884765625,
+        "mean_margin": 5640.41015625,
+        "switch_rate": 0.07421875
+      },
+      "tests": {
+        "test_a": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 6096.8671875,
+          "switch_rate": 0.1640625
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5130.890625,
+          "switch_rate": 0.21875
+        }
+      }
+    },
+    {
+      "family": "tree",
+      "name": "tree_d5_leaf32",
+      "threshold": 0.9889196675900277,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5649.462890625,
+        "switch_rate": 0.08984375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 112,
+          "ties": 0,
+          "losses": 16,
+          "score_rate": 0.875,
+          "mean_margin": 6077.046875,
+          "switch_rate": 0.1328125
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5035.84375,
+          "switch_rate": 0.15625
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves3_child10",
+      "threshold": 0.5892560628242429,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5703.27734375,
+        "switch_rate": 0.12109375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 114,
+          "ties": 0,
+          "losses": 14,
+          "score_rate": 0.890625,
+          "mean_margin": 6123.25,
+          "switch_rate": 0.1640625
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5138.1484375,
+          "switch_rate": 0.1875
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves3_child20",
+      "threshold": 0.5557928053035277,
+      "cv": {
+        "wins": 451,
+        "ties": 0,
+        "losses": 61,
+        "score_rate": 0.880859375,
+        "mean_margin": 5711.978515625,
+        "switch_rate": 0.126953125
+      },
+      "tests": {
+        "test_a": {
+          "wins": 114,
+          "ties": 0,
+          "losses": 14,
+          "score_rate": 0.890625,
+          "mean_margin": 6123.25,
+          "switch_rate": 0.1640625
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5138.1484375,
+          "switch_rate": 0.1875
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves3_child40",
+      "threshold": 0.7105080777152005,
+      "cv": {
+        "wins": 453,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.884765625,
+        "mean_margin": 5631.80078125,
+        "switch_rate": 0.068359375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 111,
+          "ties": 0,
+          "losses": 17,
+          "score_rate": 0.8671875,
+          "mean_margin": 5950.5078125,
+          "switch_rate": 0.1015625
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 4956.140625,
+          "switch_rate": 0.109375
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves5_child10",
+      "threshold": 0.6259544949353831,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5757.921875,
+        "switch_rate": 0.140625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 114,
+          "ties": 0,
+          "losses": 14,
+          "score_rate": 0.890625,
+          "mean_margin": 6123.25,
+          "switch_rate": 0.1640625
+        },
+        "test_b": {
+          "wins": 113,
+          "ties": 0,
+          "losses": 15,
+          "score_rate": 0.8828125,
+          "mean_margin": 5138.1484375,
+          "switch_rate": 0.1875
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves5_child20",
+      "threshold": 0.5819568411592493,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5819.7734375,
+        "switch_rate": 0.15625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 117,
+          "ties": 0,
+          "losses": 11,
+          "score_rate": 0.9140625,
+          "mean_margin": 6320.8359375,
+          "switch_rate": 0.2265625
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5178.2890625,
+          "switch_rate": 0.203125
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves5_child40",
+      "threshold": 0.5519835946176023,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5853.146484375,
+        "switch_rate": 0.173828125
+      },
+      "tests": {
+        "test_a": {
+          "wins": 117,
+          "ties": 0,
+          "losses": 11,
+          "score_rate": 0.9140625,
+          "mean_margin": 6320.8359375,
+          "switch_rate": 0.2265625
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5178.2890625,
+          "switch_rate": 0.203125
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves7_child10",
+      "threshold": 0.6761351140773719,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5767.2265625,
+        "switch_rate": 0.140625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 6176.875,
+          "switch_rate": 0.1796875
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5178.2890625,
+          "switch_rate": 0.203125
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves7_child20",
+      "threshold": 0.5933959486185377,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5810.412109375,
+        "switch_rate": 0.15234375
+      },
+      "tests": {
+        "test_a": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 6176.875,
+          "switch_rate": 0.1796875
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5178.2890625,
+          "switch_rate": 0.203125
+        }
+      }
+    },
+    {
+      "family": "lgbm",
+      "name": "lgbm_leaves7_child40",
+      "threshold": 0.5839528668444012,
+      "cv": {
+        "wins": 452,
+        "ties": 0,
+        "losses": 60,
+        "score_rate": 0.8828125,
+        "mean_margin": 5834.423828125,
+        "switch_rate": 0.166015625
+      },
+      "tests": {
+        "test_a": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 6302.0546875,
+          "switch_rate": 0.2109375
+        },
+        "test_b": {
+          "wins": 115,
+          "ties": 0,
+          "losses": 13,
+          "score_rate": 0.8984375,
+          "mean_margin": 5129.890625,
+          "switch_rate": 0.1796875
+        }
+      }
+    }
+  ],
+  "model_output": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\artifacts\\fc1o_prt_suffix_selector_v1.joblib"
+}

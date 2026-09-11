@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "actions": 5752,
+  "rows": [
+    {
+      "opponent": "soil_v219g",
+      "seed": 2609110008,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 61462.0,
+      "opponent_cash": 69975.0,
+      "r2_margin": -8513.0,
+      "r2_win": false,
+      "opponent_win": true,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "joint_action_sha256": "870a33a89307eaf39dd17db8e368dcb63b80bf8224deb2d25da93f2fe6b010a0",
+      "seconds": 2.174323774000001,
+      "latency": {
+        "opponent": {
+          "total": 0.14271560500003488,
+          "maximum": 0.1069239280000005,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4222667490001157,
+          "maximum": 0.07251295800000435,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/soil_v219g/2609110008_seat0.json.gz"
+    },
+    {
+      "opponent": "soil_v219g",
+      "seed": 2609110008,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 61462.0,
+      "opponent_cash": 69975.0,
+      "r2_margin": -8513.0,
+      "r2_win": false,
+      "opponent_win": true,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "joint_action_sha256": "9512083d88e1e7c37d9e535bce18a9ec1137bffe73129c46d451f4dde0e5c929",
+      "seconds": 2.213506186999993,
+      "latency": {
+        "opponent": {
+          "total": 0.16992750900014642,
+          "maximum": 0.13258904799999982,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4337725329997255,
+          "maximum": 0.0721346650000072,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/soil_v219g/2609110008_seat1.json.gz"
+    },
+    {
+      "opponent": "moon_v215",
+      "seed": 2609110028,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 88637.0,
+      "opponent_cash": 78835.0,
+      "r2_margin": 9802.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "317c2de54b09a3caa30190d4562edb96a947ff9cedaf2ab2cbf4c03e054e215a",
+      "seconds": 2.096674949000004,
+      "latency": {
+        "opponent": {
+          "total": 0.058308227000011925,
+          "maximum": 0.00026413499999478063,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4662867920002753,
+          "maximum": 0.07126168199999938,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/moon_v215/2609110028_seat0.json.gz"
+    },
+    {
+      "opponent": "moon_v215",
+      "seed": 2609110028,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 88637.0,
+      "opponent_cash": 78835.0,
+      "r2_margin": 9802.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "6e65cbfec824a1bf7660a35dcb3ff599bf69cc50cc3e385c57097941552f92d8",
+      "seconds": 2.1208626399999986,
+      "latency": {
+        "opponent": {
+          "total": 0.05776272000021265,
+          "maximum": 0.00021963399998981004,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4590487089999726,
+          "maximum": 0.07075414599999874,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/moon_v215/2609110028_seat1.json.gz"
+    },
+    {
+      "opponent": "flexon_v5",
+      "seed": 2609110042,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 114117.0,
+      "opponent_cash": 110448.0,
+      "r2_margin": 3669.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "587c46cfa8593604691a00be0373d42f36ad06f14b7d2a4d24d52a5ad47e730a",
+      "seconds": 2.000885678000003,
+      "latency": {
+        "opponent": {
+          "total": 0.0552614299998595,
+          "maximum": 0.028743433000002483,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.348087980999935,
+          "maximum": 0.0632464140000053,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/flexon_v5/2609110042_seat0.json.gz"
+    },
+    {
+      "opponent": "flexon_v5",
+      "seed": 2609110042,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 114117.0,
+      "opponent_cash": 110448.0,
+      "r2_margin": 3669.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "joint_action_sha256": "a1c8fb48916aed4a729842ca1e97d99157243aded2a64dd04789dfff1b666a15",
+      "seconds": 2.038159741000001,
+      "latency": {
+        "opponent": {
+          "total": 0.05545174699994959,
+          "maximum": 0.02955397300000584,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.348158774000055,
+          "maximum": 0.06245770299999265,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/flexon_v5/2609110042_seat1.json.gz"
+    },
+    {
+      "opponent": "market_smart_v8",
+      "seed": 2609110071,
+      "opponent_seat": 0,
+      "steps": 719,
+      "r2_cash": 75594.0,
+      "opponent_cash": 74202.0,
+      "r2_margin": 1392.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "joint_action_sha256": "6727e1a44ac75c0c8619a095858eec8bb2e69edc11da9735641dd8eff4536ba9",
+      "seconds": 2.1252057269999938,
+      "latency": {
+        "opponent": {
+          "total": 0.069860429000002,
+          "maximum": 0.0436080770000018,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4510865770002823,
+          "maximum": 0.079168125999999,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/market_smart_v8/2609110071_seat0.json.gz"
+    },
+    {
+      "opponent": "market_smart_v8",
+      "seed": 2609110071,
+      "opponent_seat": 1,
+      "steps": 719,
+      "r2_cash": 75594.0,
+      "opponent_cash": 74202.0,
+      "r2_margin": 1392.0,
+      "r2_win": true,
+      "opponent_win": false,
+      "tie": false,
+      "runtime_error": null,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "joint_action_sha256": "f56410029d2230cad49973dfc1658f103f5bfa4953b12ff7c1f41b5fdf5a15bd",
+      "seconds": 2.179878374999987,
+      "latency": {
+        "opponent": {
+          "total": 0.07010099399983005,
+          "maximum": 0.04272249899999281,
+          "over_1s": 0
+        },
+        "r2": {
+          "total": 1.4508448619998973,
+          "maximum": 0.07931271799999706,
+          "over_1s": 0
+        }
+      },
+      "trace": "traces/market_smart_v8/2609110071_seat1.json.gz"
+    }
+  ]
+}

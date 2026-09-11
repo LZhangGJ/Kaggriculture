@@ -1,0 +1,346 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-route-margin-ranker.v1",
+  "generated_at_utc": "2026-08-23T20:50:28.291718+00:00",
+  "status": "PASS",
+  "runtime_boundary": "current public state plus own private inventory; terminal margin is label only",
+  "context": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_prefix_state_step72_seed212001_n256x2_v9.npz",
+  "route_bank": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_trace_bank_v1.npz",
+  "screen_matrix": "experiments\\front40_fusion_v1\\receipts\\rank02_crop_dusta_all97_vs_fc24b_screen_seed212001_n256x2_v1.npz",
+  "decision_step": 72,
+  "contexts": 512,
+  "routes": 16,
+  "route_ids": [
+    25,
+    12,
+    62,
+    13,
+    44,
+    43,
+    47,
+    26,
+    52,
+    51,
+    76,
+    16,
+    39,
+    34,
+    33,
+    56
+  ],
+  "training_rows": 6144,
+  "validation_rows": 2048,
+  "features": 1267,
+  "seed_group_split": {
+    "train_seeds": 192,
+    "validation_seeds": 64,
+    "both_seats_kept_together": true
+  },
+  "selected_blend": {
+    "win_probability_weight": 0.0,
+    "rank_weight": 4.0
+  },
+  "train": {
+    "contexts": 384,
+    "wins": 191,
+    "win_rate": 0.4973958333333333,
+    "mean_margin": -2485.291748046875,
+    "median_margin": -96.5,
+    "unique_routes": 7
+  },
+  "validation": {
+    "contexts": 128,
+    "wins": 50,
+    "win_rate": 0.390625,
+    "mean_margin": -4579.5078125,
+    "median_margin": -8619.0,
+    "unique_routes": 7
+  },
+  "fixed_route_validation": {
+    "route_id": 25,
+    "win_rate": 0.3203125,
+    "mean_margin": -11217.1953125
+  },
+  "oracle_validation": {
+    "win_rate": 0.8125,
+    "mean_margin": 10195.5625
+  },
+  "blend_search": [
+    {
+      "win_probability_weight": 0.0,
+      "rank_weight": 0.5,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -8398.9609375,
+        "median_margin": -6604.0,
+        "unique_routes": 3
+      }
+    },
+    {
+      "win_probability_weight": 0.0,
+      "rank_weight": 1.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 41,
+        "win_rate": 0.3203125,
+        "mean_margin": -8584.2734375,
+        "median_margin": -6990.5,
+        "unique_routes": 4
+      }
+    },
+    {
+      "win_probability_weight": 0.0,
+      "rank_weight": 2.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 0.0,
+      "rank_weight": 4.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -4579.5078125,
+        "median_margin": -8619.0,
+        "unique_routes": 7
+      }
+    },
+    {
+      "win_probability_weight": 0.0,
+      "rank_weight": 8.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -4579.5078125,
+        "median_margin": -8619.0,
+        "unique_routes": 7
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 0.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 45,
+        "win_rate": 0.3515625,
+        "mean_margin": -9732.953125,
+        "median_margin": -6584.0,
+        "unique_routes": 2
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 0.5,
+      "validation": {
+        "contexts": 128,
+        "wins": 44,
+        "win_rate": 0.34375,
+        "mean_margin": -8131.15625,
+        "median_margin": -6353.0,
+        "unique_routes": 3
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 1.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 41,
+        "win_rate": 0.3203125,
+        "mean_margin": -8477.5,
+        "median_margin": -6990.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 2.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 4.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "rank_weight": 8.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -4579.5078125,
+        "median_margin": -8619.0,
+        "unique_routes": 7
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 0.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -7728.7265625,
+        "median_margin": -3823.0,
+        "unique_routes": 2
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 0.5,
+      "validation": {
+        "contexts": 128,
+        "wins": 41,
+        "win_rate": 0.3203125,
+        "mean_margin": -8584.2734375,
+        "median_margin": -6990.5,
+        "unique_routes": 4
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 1.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -7145.3984375,
+        "median_margin": -8724.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 2.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 4.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "rank_weight": 8.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -4579.5078125,
+        "median_margin": -8619.0,
+        "unique_routes": 7
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 0.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 49,
+        "win_rate": 0.3828125,
+        "mean_margin": -6815.2890625,
+        "median_margin": -6564.0,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 0.5,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -7145.3984375,
+        "median_margin": -8724.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 1.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -7145.3984375,
+        "median_margin": -8724.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 2.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 4.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 46,
+        "win_rate": 0.359375,
+        "mean_margin": -5611.6796875,
+        "median_margin": -9457.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "rank_weight": 8.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 50,
+        "win_rate": 0.390625,
+        "mean_margin": -4579.5078125,
+        "median_margin": -8619.0,
+        "unique_routes": 7
+      }
+    }
+  ],
+  "model": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_route_lambdarank_compact16_step72_v14.joblib"
+}

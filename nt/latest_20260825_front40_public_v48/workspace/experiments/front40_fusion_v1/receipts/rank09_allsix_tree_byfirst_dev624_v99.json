@@ -1,0 +1,290 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-tree-first-shop-audit.v1",
+  "generated_at_utc": "2026-08-24T11:31:21.292228+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_joint_hybrid_routes24_vs_fc24b_seed624001_n512x2_independent_v71a.npz",
+  "trees": [
+    {
+      "tree": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_allsix_minimax_two_stage_v96.json",
+      "aggregate": {
+        "games": 1024,
+        "wins": 487,
+        "win_rate": 0.4755859375,
+        "mean_margin": -1372.0966796875,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 248,
+          "win_rate": 0.484375,
+          "mean_margin": -1285.517578125,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 239,
+          "win_rate": 0.466796875,
+          "mean_margin": -1458.67578125,
+          "hard_counter_total": 0
+        }
+      ],
+      "by_first_shop": [
+        {
+          "first_shop": 0,
+          "games": 138,
+          "wins": 41,
+          "win_rate": 0.2971014492753623,
+          "mean_margin": -3770.231884057971,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 1,
+          "games": 112,
+          "wins": 66,
+          "win_rate": 0.5892857142857143,
+          "mean_margin": 399.39285714285717,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 2,
+          "games": 118,
+          "wins": 65,
+          "win_rate": 0.5508474576271186,
+          "mean_margin": 269.59322033898303,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 3,
+          "games": 110,
+          "wins": 54,
+          "win_rate": 0.4909090909090909,
+          "mean_margin": -1742.790909090909,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 4,
+          "games": 116,
+          "wins": 40,
+          "win_rate": 0.3448275862068966,
+          "mean_margin": -2589.3706896551726,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 5,
+          "games": 166,
+          "wins": 36,
+          "win_rate": 0.21686746987951808,
+          "mean_margin": -5294.524096385542,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 6,
+          "games": 120,
+          "wins": 65,
+          "win_rate": 0.5416666666666666,
+          "mean_margin": 883.5416666666666,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 7,
+          "games": 144,
+          "wins": 120,
+          "win_rate": 0.8333333333333334,
+          "mean_margin": 2108.7569444444443,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "tree": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_allsix_stable_two_stage_v97.json",
+      "aggregate": {
+        "games": 1024,
+        "wins": 487,
+        "win_rate": 0.4755859375,
+        "mean_margin": -1429.3115234375,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 246,
+          "win_rate": 0.48046875,
+          "mean_margin": -1376.84375,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 241,
+          "win_rate": 0.470703125,
+          "mean_margin": -1481.779296875,
+          "hard_counter_total": 0
+        }
+      ],
+      "by_first_shop": [
+        {
+          "first_shop": 0,
+          "games": 138,
+          "wins": 48,
+          "win_rate": 0.34782608695652173,
+          "mean_margin": -3545.8260869565215,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 1,
+          "games": 112,
+          "wins": 65,
+          "win_rate": 0.5803571428571429,
+          "mean_margin": 144.50892857142858,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 2,
+          "games": 118,
+          "wins": 62,
+          "win_rate": 0.5254237288135594,
+          "mean_margin": -828.5847457627119,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 3,
+          "games": 110,
+          "wins": 61,
+          "win_rate": 0.5545454545454546,
+          "mean_margin": -791.6363636363636,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 4,
+          "games": 116,
+          "wins": 32,
+          "win_rate": 0.27586206896551724,
+          "mean_margin": -2836.698275862069,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 5,
+          "games": 166,
+          "wins": 34,
+          "win_rate": 0.20481927710843373,
+          "mean_margin": -5338.8674698795185,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 6,
+          "games": 120,
+          "wins": 65,
+          "win_rate": 0.5416666666666666,
+          "mean_margin": 883.5416666666666,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 7,
+          "games": 144,
+          "wins": 120,
+          "win_rate": 0.8333333333333334,
+          "mean_margin": 2108.7569444444443,
+          "hard_counter_total": 0
+        }
+      ]
+    },
+    {
+      "tree": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_allsix_pooled_two_stage_v98.json",
+      "aggregate": {
+        "games": 1024,
+        "wins": 484,
+        "win_rate": 0.47265625,
+        "mean_margin": -1378.998046875,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 241,
+          "win_rate": 0.470703125,
+          "mean_margin": -1387.865234375,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 243,
+          "win_rate": 0.474609375,
+          "mean_margin": -1370.130859375,
+          "hard_counter_total": 0
+        }
+      ],
+      "by_first_shop": [
+        {
+          "first_shop": 0,
+          "games": 138,
+          "wins": 53,
+          "win_rate": 0.38405797101449274,
+          "mean_margin": -2749.659420289855,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 1,
+          "games": 112,
+          "wins": 62,
+          "win_rate": 0.5535714285714286,
+          "mean_margin": 112.53571428571429,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 2,
+          "games": 118,
+          "wins": 60,
+          "win_rate": 0.5084745762711864,
+          "mean_margin": -707.0847457627119,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 3,
+          "games": 110,
+          "wins": 57,
+          "win_rate": 0.5181818181818182,
+          "mean_margin": -1317.6545454545455,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 4,
+          "games": 116,
+          "wins": 32,
+          "win_rate": 0.27586206896551724,
+          "mean_margin": -2836.698275862069,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 5,
+          "games": 166,
+          "wins": 35,
+          "win_rate": 0.21084337349397592,
+          "mean_margin": -5446.319277108434,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 6,
+          "games": 120,
+          "wins": 65,
+          "win_rate": 0.5416666666666666,
+          "mean_margin": 938.4833333333333,
+          "hard_counter_total": 0
+        },
+        {
+          "first_shop": 7,
+          "games": 144,
+          "wins": 120,
+          "win_rate": 0.8333333333333334,
+          "mean_margin": 2108.7569444444443,
+          "hard_counter_total": 0
+        }
+      ]
+    }
+  ]
+}

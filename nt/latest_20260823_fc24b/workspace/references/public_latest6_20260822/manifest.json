@@ -1,0 +1,103 @@
+{
+  "schema": "kaggriculture.latest_public6_20260822.v1",
+  "frozen_at_utc": "2026-08-22T06:43:10.259047+00:00",
+  "input_root": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260822_scan_v1",
+  "rules": {
+    "static_extraction_only": true,
+    "embedded_hash_enforced": true,
+    "python_compile_required": true,
+    "notebook_code_executed": false
+  },
+  "agents": [
+    {
+      "slug": "boatlee_v21_latest",
+      "kaggle_ref": "boatlee/v21-r1-public-state-route-portfolio",
+      "title": "V21-R1 | Public-State Route Portfolio",
+      "extractor": "b64_zlib_payload",
+      "source_cell_index": 1,
+      "notebook_file": "v21-r1-public-state-route-portfolio.ipynb",
+      "notebook_bytes": 169024,
+      "notebook_sha256": "0d02691e1383f24b60d03c4b0170704bdeed05a8b1fb899511840e167d45632a",
+      "main_bytes": 158309,
+      "main_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8",
+      "expected_main_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    },
+    {
+      "slug": "prvsiyan_soil_v26h_latest",
+      "kaggle_ref": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "title": "Kaggriculture Frontier | The Soil Remembers Rain",
+      "extractor": "soil_b85_zlib_payload",
+      "source_cell_index": 14,
+      "notebook_file": "kaggriculture-frontier-the-soil-remembers-rain.ipynb",
+      "notebook_bytes": 923336,
+      "notebook_sha256": "d9e8cb805b12e0f9d60a59dcd21046a6aba9f3bb1b4a237c6dfa5f66b0eb2977",
+      "main_bytes": 174432,
+      "main_sha256": "f4b8c16395382060d23f70fa65dd376fd567ab55c430d7aee41bbe0bc117a88c",
+      "expected_main_sha256": "f4b8c16395382060d23f70fa65dd376fd567ab55c430d7aee41bbe0bc117a88c",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    },
+    {
+      "slug": "prvsiyan_moon_v92_latest",
+      "kaggle_ref": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+      "title": "Kaggriculture Frontier | The Moon Counts Melons",
+      "extractor": "moon_b85_zlib_payload",
+      "source_cell_index": 14,
+      "notebook_file": "kaggriculture-frontier-the-moon-counts-melons.ipynb",
+      "notebook_bytes": 901042,
+      "notebook_sha256": "d7004d67f4264cd0446e03e701c3d8fa84a75f9b8e7c00d8cc3c28d1a406e197",
+      "main_bytes": 217855,
+      "main_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f",
+      "expected_main_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    },
+    {
+      "slug": "kaito_v39_history_gate_latest",
+      "kaggle_ref": "kaitofukami/103-126-untouched-future-top-30-v39-history-gate",
+      "title": "103/126 Untouched Future Top-30 | v39 History Gate",
+      "extractor": "kaito_payload",
+      "source_cell_index": 12,
+      "notebook_file": "103-126-untouched-future-top-30-v39-history-gate.ipynb",
+      "notebook_bytes": 289852,
+      "notebook_sha256": "9e86ef93a93f5af1be8f64b7a491f9714f92db89a8e92fc5eeda7fdb4e09a0c5",
+      "main_bytes": 259298,
+      "main_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a",
+      "expected_main_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    },
+    {
+      "slug": "steven_e284_hadouken_latest",
+      "kaggle_ref": "stevenleehans/kaggriculture-e284-hadouken",
+      "title": "Kaggriculture E284 Hadouken",
+      "extractor": "x562_source",
+      "source_cell_index": 1,
+      "notebook_file": "kaggriculture-e284-hadouken.ipynb",
+      "notebook_bytes": 94700,
+      "notebook_sha256": "8b775f3b47cc9db73bbee98e70d4331a13d35e0bd90264e1296901e9885ec538",
+      "main_bytes": 69239,
+      "main_sha256": "b5c2e156689b41cea5f2e1a0a1cae2e18fd70423931bbac0885bba8b2142c497",
+      "expected_main_sha256": "b5c2e156689b41cea5f2e1a0a1cae2e18fd70423931bbac0885bba8b2142c497",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    },
+    {
+      "slug": "salem_harvestforge_x_latest",
+      "kaggle_ref": "salemali7/3094-score-kaggriculture",
+      "title": "3094 score | Kaggriculture ",
+      "extractor": "salem_b64_payload",
+      "source_cell_index": 1,
+      "notebook_file": "3094-score-kaggriculture.ipynb",
+      "notebook_bytes": 97262,
+      "notebook_sha256": "b3ef54aca96ef9f8822ac230bf27215f5c965a9ea6f8658e2ab022f2460f6d9e",
+      "main_bytes": 61980,
+      "main_sha256": "d39dba50793d9777c990347443bf0c481c78adaea86055f6f6b0600dcfcd9f2e",
+      "expected_main_sha256": "d39dba50793d9777c990347443bf0c481c78adaea86055f6f6b0600dcfcd9f2e",
+      "python_compile_ok": true,
+      "notebook_code_executed": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "R1",
+  "status": "PASS",
+  "uploaded_binary_sha256": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+  "checks": [
+    {
+      "episode_id": 107025900,
+      "actions_checked": 1438,
+      "status": "PASS",
+      "differences": []
+    }
+  ],
+  "scope": "Actual official validation observation-to-action identity for both seats, no strength inference"
+}

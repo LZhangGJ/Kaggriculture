@@ -1,0 +1,88 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank13_burntpotato_v12",
+  "family": "rank13_first_and_second_public_shop_routed_family",
+  "source": {
+    "leaderboard_rank": 13,
+    "team_name": "BurntPotato",
+    "submission_id": 55709825,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank13_burntpotato_trace_bank_v1.json",
+    "route_count": 51,
+    "behavior_unique_routes": 18,
+    "overlap_with_previous_rank_trace_families": 0
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_two_panel_pooled_firstshop_v3.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank13_burntpotato_secondshop_exactprefix_cross_v6.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "online_runner": "experiments/front40_fusion_v1/tools/run_trace_candidates_vs_fc24b_stepwise.py",
+    "router_mode": "FIRST_AND_SECOND_PUBLIC_TOWN_SHOP_EXACT_PREFIX",
+    "public_state_only": true,
+    "identity_routing": false,
+    "future_event_access": false,
+    "replay_id_routing": false
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [11, 33, 19, 2, 19, 3, 3, 35],
+    "second_shop_replacements": [19, 2, 24],
+    "runtime_routes": [2, 3, 11, 19, 24, 33, 35]
+  },
+  "development": {
+    "deduplicated_quick_screen": "experiments/front40_fusion_v1/receipts/rank13_burntpotato_dedup18_vs_fc24b_screen_seed736001_n64x2_v1",
+    "independent_route_screen": "experiments/front40_fusion_v1/receipts/rank13_burntpotato_dedup18_vs_fc24b_screen_seed744001_n128x2_v2.json",
+    "second_shop_confirmation": "experiments/front40_fusion_v1/receipts/rank13_burntpotato_secondshop_online_seed752001_n512x2_v8.json",
+    "best_fixed_route": 3,
+    "best_fixed_panel_win_rates": [0.8671875, 0.8515625],
+    "first_shop_map_cross_panel_win_rates": [0.90625, 0.87109375],
+    "first_shop_pooled_map_panel_win_rates": [0.9296875, 0.90625],
+    "second_shop_confirm_wins": 902,
+    "second_shop_confirm_games": 1024,
+    "second_shop_confirm_win_rate": 0.880859375,
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "arena_receipts": [
+      "experiments/front40_fusion_v1/receipts/rank13_burntpotato_final_pair_online_seed760001_n512x2_independent_v10.json",
+      "experiments/front40_fusion_v1/receipts/rank13_burntpotato_secondshop_online_seed768001_n512x2_independent_v11.json"
+    ],
+    "seed_starts": [760001, 768001],
+    "games": 2048,
+    "wins": 1846,
+    "win_rate": 0.9013671875,
+    "panel_win_rates": [0.9208984375, 0.8818359375],
+    "seat0_wins": 926,
+    "seat0_games": 1024,
+    "seat0_win_rate": 0.904296875,
+    "seat1_wins": 920,
+    "seat1_games": 1024,
+    "seat1_win_rate": 0.8984375,
+    "mean_margin": 33904.76708984375,
+    "all_719_steps": true,
+    "hard_counter_total": 0,
+    "sent_illegal_actions": 0,
+    "note": "invalid_intent_total counts Replay intents replaced by the public-state legal guard before environment execution; it is not an illegal action sent to the simulator."
+  },
+  "known_weakness": {
+    "description": "The independent panels range from 88.18% to 92.09%; public-shop randomness still changes strength materially.",
+    "decision": "Freeze after two-level public-shop routing generalized on two untouched panels; avoid unsupported third-shop specialization."
+  },
+  "sha256": {
+    "trace_bank": "A46D8B0A0342ADCEDFA8C8E21478D5EBBDC3E668174EB65C41CA22203025629D",
+    "first_shop_map": "EC6802710183B0AA51FD39047E965E5A376552E951EF474A3256633C2B78B0CA",
+    "second_shop_map": "23F23F1095DB299148B411AAC8269DB680F42163A8AC8C3BB7BCE5619BFBBD93",
+    "online_runner": "F5C4570D094933A7277E748A53621139BA74410046C2DCC6CAC29B9A06C04669",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

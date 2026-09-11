@@ -1,0 +1,4 @@
+# Preserve the exact bytes covered by source/build manifests.
+* -text whitespace=cr-at-eol
+# This frozen baseline header includes a terminal blank line in its build hash.
+policy/observation_codec.hpp whitespace=cr-at-eol,-blank-at-eof

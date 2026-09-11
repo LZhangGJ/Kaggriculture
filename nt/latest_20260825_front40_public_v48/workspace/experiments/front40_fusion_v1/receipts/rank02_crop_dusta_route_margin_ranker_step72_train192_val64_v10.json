@@ -1,0 +1,115 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-route-margin-ranker.v1",
+  "generated_at_utc": "2026-08-23T20:23:12.770964+00:00",
+  "status": "PASS",
+  "runtime_boundary": "current public state plus own private inventory; terminal margin is label only",
+  "context": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_prefix_state_step72_seed212001_n256x2_v9.npz",
+  "route_bank": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_trace_bank_v1.npz",
+  "screen_matrix": "experiments\\front40_fusion_v1\\receipts\\rank02_crop_dusta_all97_vs_fc24b_screen_seed212001_n256x2_v1.npz",
+  "decision_step": 72,
+  "contexts": 512,
+  "routes": 97,
+  "training_rows": 37248,
+  "validation_rows": 12416,
+  "features": 1267,
+  "seed_group_split": {
+    "train_seeds": 192,
+    "validation_seeds": 64,
+    "both_seats_kept_together": true
+  },
+  "selected_blend_weight": 4.0,
+  "train": {
+    "contexts": 384,
+    "wins": 192,
+    "win_rate": 0.5,
+    "mean_margin": -2166.869873046875,
+    "median_margin": 1.0,
+    "unique_routes": 6
+  },
+  "validation": {
+    "contexts": 128,
+    "wins": 53,
+    "win_rate": 0.4140625,
+    "mean_margin": -3966.7421875,
+    "median_margin": -4818.5,
+    "unique_routes": 6
+  },
+  "fixed_route_validation": {
+    "route_id": 25,
+    "win_rate": 0.3203125,
+    "mean_margin": -11217.1953125
+  },
+  "oracle_validation": {
+    "win_rate": 0.8828125,
+    "mean_margin": 17462.5078125
+  },
+  "blend_search": [
+    {
+      "win_probability_weight": 0.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 15,
+        "win_rate": 0.1171875,
+        "mean_margin": -15279.453125,
+        "median_margin": -15154.5,
+        "unique_routes": 4
+      }
+    },
+    {
+      "win_probability_weight": 0.25,
+      "validation": {
+        "contexts": 128,
+        "wins": 49,
+        "win_rate": 0.3828125,
+        "mean_margin": -4606.6953125,
+        "median_margin": -3522.0,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 0.5,
+      "validation": {
+        "contexts": 128,
+        "wins": 48,
+        "win_rate": 0.375,
+        "mean_margin": -4865.9765625,
+        "median_margin": -3586.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 1.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 48,
+        "win_rate": 0.375,
+        "mean_margin": -4865.9765625,
+        "median_margin": -3586.5,
+        "unique_routes": 5
+      }
+    },
+    {
+      "win_probability_weight": 2.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 48,
+        "win_rate": 0.375,
+        "mean_margin": -4759.203125,
+        "median_margin": -3586.5,
+        "unique_routes": 6
+      }
+    },
+    {
+      "win_probability_weight": 4.0,
+      "validation": {
+        "contexts": 128,
+        "wins": 53,
+        "win_rate": 0.4140625,
+        "mean_margin": -3966.7421875,
+        "median_margin": -4818.5,
+        "unique_routes": 6
+      }
+    }
+  ],
+  "model": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_route_margin_ranker_step72_train192_val64_v10.joblib"
+}

@@ -1,0 +1,56 @@
+{
+  "captured_at": "2026-08-11T01:49:23.4974609+09:00",
+  "package": "kaggle-environments",
+  "version": "1.32.6",
+  "python": "3.12.13",
+  "source_root": "E:\\ai_coding\\kaggle\\kaggriculture\\.venv\\Lib\\site-packages",
+  "frozen_files": [
+    {
+      "path": "kaggle_environments/envs/kaggriculture/kaggriculture.py",
+      "bytes": 39801,
+      "lines": 1073,
+      "sha256": "fb9215c5e21a25243e2d13e75b3d70a79cf7d78fff150a90f1bb5eacf9ba2bcf"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/kaggriculture.json",
+      "bytes": 5877,
+      "lines": 138,
+      "sha256": "7f196f4aaf9b4e482fbd61ba4bf19f5cec4da0f81938ece756954035a65c0bb5"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/README.md",
+      "bytes": 25724,
+      "lines": 362,
+      "sha256": "63d0497ca655ea1857a96a3226bed6664a2fa98506d76d1fa14ce9101c5f1d34"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/AGENTS.md",
+      "bytes": 13708,
+      "lines": 287,
+      "sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22"
+    }
+  ],
+  "framework_hashes": [
+    {
+      "path": "kaggle_environments/core.py",
+      "sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e"
+    },
+    {
+      "path": "kaggle_environments/agent.py",
+      "sha256": "9b7682ce9921c8f34080a8be0f7b41598cc12ac7eb14d24e4b707883f25213b6"
+    },
+    {
+      "path": "kaggle_environments/utils.py",
+      "sha256": "537b627b11784d424147ef57ebb0369b039bf83c9f891e81f10486b1f552334b"
+    }
+  ],
+  "runtime": {
+    "windows_shell": "PowerShell 7.6.4",
+    "wsl_distribution": "Ubuntu-24.04",
+    "wsl_kernel": "6.18.33.1-microsoft-standard-WSL2",
+    "wsl_python": "3.12.3",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_memory_mib": 24576,
+    "driver": "610.47"
+  }
+}

@@ -1,0 +1,10 @@
+jax>=0.7
+numpy>=2.0
+
+[test]
+pytest
+
+[train]
+chex
+flax
+optax

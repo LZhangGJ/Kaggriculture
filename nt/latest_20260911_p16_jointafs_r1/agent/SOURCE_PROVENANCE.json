@@ -1,0 +1,17 @@
+{
+  "parent": "P16–T3R1–TakeoverMerged R1, not original P16 or no-late-melon diagnostic",
+  "parent_binary_sha256": "63f40fe3e07897537ae0b80e5c987d3208392209f07c232b0bc43d0a5ae98903",
+  "joint_binary_sha256": "0302d5e2b6e30a4b6fed7a0350228070621c462791f6fb9a706a5ba91084e306",
+  "config_identical_to_parent": true,
+  "policy_changed_files": [
+    "policy/joint_bundle_state.hpp",
+    "policy/joint_candidates.hpp",
+    "policy/search.hpp",
+    "policy/triad.hpp"
+  ],
+  "retained_settings_count": 38,
+  "experiment": "evidence/PROTOCOL.json",
+  "freeze": "evidence/FREEZE.json",
+  "final_results": "evidence/RESULTS.json",
+  "historical_paths": "Absolute /mnt/data/joint_work paths inside evidence are original experiment locations; corresponding records are under evidence/panels. They are not runtime dependencies."
+}

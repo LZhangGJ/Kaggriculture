@@ -1,0 +1,38 @@
+{
+  "train_tail0": {
+    "informative_states": 393,
+    "pairwise_order_accuracy": 0.5107731868546118,
+    "chance_pairwise": 0.5,
+    "best_nonkeep_hit": 0.19859747970434993,
+    "random_best_hit": 0.20351084454137888,
+    "top_nonkeep_mean_reward_gain": -0.08290391595713459,
+    "uniform_mean_reward_gain": -0.07337443362824429
+  },
+  "train_tail2": {
+    "informative_states": 393,
+    "pairwise_order_accuracy": 0.5046489492036565,
+    "chance_pairwise": 0.5,
+    "best_nonkeep_hit": 0.20146007512419725,
+    "random_best_hit": 0.20319277838361807,
+    "top_nonkeep_mean_reward_gain": 0.008671130189227726,
+    "uniform_mean_reward_gain": 0.009574690062494463
+  },
+  "new_tail0": {
+    "informative_states": 389,
+    "pairwise_order_accuracy": 0.5103970294201657,
+    "chance_pairwise": 0.5,
+    "best_nonkeep_hit": 0.2133676092544987,
+    "random_best_hit": 0.19783327212633126,
+    "top_nonkeep_mean_reward_gain": -0.0783038222084928,
+    "uniform_mean_reward_gain": -0.06194449296807817
+  },
+  "new_tail2": {
+    "informative_states": 389,
+    "pairwise_order_accuracy": 0.5060055292703107,
+    "chance_pairwise": 0.5,
+    "best_nonkeep_hit": 0.2133676092544987,
+    "random_best_hit": 0.1981546088872567,
+    "top_nonkeep_mean_reward_gain": 0.004244971704360452,
+    "uniform_mean_reward_gain": -0.0023303050293830793
+  }
+}

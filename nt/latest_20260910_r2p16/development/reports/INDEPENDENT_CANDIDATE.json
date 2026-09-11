@@ -1,0 +1,345 @@
+{
+  "name": "p12",
+  "status": "FROZEN_CANDIDATE_CONFIRMATIONS_RECORDED_NOT_FINAL_90_ACCEPTANCE",
+  "binary": "candidate_r2p12/policy/cropchain1.so",
+  "binary_sha256": "f62c0a303133d28eb93380f52aaead97ff9e7b0ca2613668ac859b638f9adf63",
+  "results": "crop_clock_validation32/RESULTS.json",
+  "source_protocol": "crop_clock_validation32/PROTOCOL.json",
+  "original_config": "gpt_review/gpt_code/Kaggriculture_T2_R2_BatchedDelivery_20260909/Kaggriculture_T2_R2_20260909/policy/config.json",
+  "overall": {
+    "games": 704,
+    "valid_games": 704,
+    "errors": 0,
+    "r2_wins": 603,
+    "losses": 101,
+    "ties": 0,
+    "r2_win_rate": 0.8565340909090909,
+    "r2_mean_cash": 110437.22585227272,
+    "opponent_mean_cash": 94130.07244318182,
+    "mean_margin": 16307.15340909091,
+    "median_margin": 7401.0
+  },
+  "by_opponent": {
+    "nagatakengo_v70": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 64,
+      "losses": 0,
+      "ties": 0,
+      "r2_win_rate": 1.0,
+      "r2_mean_cash": 159323.78125,
+      "opponent_mean_cash": 48653.265625,
+      "mean_margin": 110670.515625,
+      "median_margin": 113152.5
+    },
+    "shop0909": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 58,
+      "losses": 6,
+      "ties": 0,
+      "r2_win_rate": 0.90625,
+      "r2_mean_cash": 106813.28125,
+      "opponent_mean_cash": 100071.9375,
+      "mean_margin": 6741.34375,
+      "median_margin": 6831.0
+    },
+    "thomas_955_v2": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 47,
+      "losses": 17,
+      "ties": 0,
+      "r2_win_rate": 0.734375,
+      "r2_mean_cash": 93016.65625,
+      "opponent_mean_cash": 85885.03125,
+      "mean_margin": 7131.625,
+      "median_margin": 6048.0
+    },
+    "ahmed_v27": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 54,
+      "losses": 10,
+      "ties": 0,
+      "r2_win_rate": 0.84375,
+      "r2_mean_cash": 106659.3125,
+      "opponent_mean_cash": 99970.546875,
+      "mean_margin": 6688.765625,
+      "median_margin": 6258.0
+    },
+    "soil_v219g": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 54,
+      "losses": 10,
+      "ties": 0,
+      "r2_win_rate": 0.84375,
+      "r2_mean_cash": 106636.484375,
+      "opponent_mean_cash": 99958.265625,
+      "mean_margin": 6678.21875,
+      "median_margin": 6824.0
+    },
+    "market_smart_v8": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 56,
+      "losses": 8,
+      "ties": 0,
+      "r2_win_rate": 0.875,
+      "r2_mean_cash": 106812.84375,
+      "opponent_mean_cash": 100083.609375,
+      "mean_margin": 6729.234375,
+      "median_margin": 6824.0
+    },
+    "seven_turn": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 56,
+      "losses": 8,
+      "ties": 0,
+      "r2_win_rate": 0.875,
+      "r2_mean_cash": 106812.53125,
+      "opponent_mean_cash": 100081.0625,
+      "mean_margin": 6731.46875,
+      "median_margin": 6826.0
+    },
+    "aurax_shop_v2": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 56,
+      "losses": 8,
+      "ties": 0,
+      "r2_win_rate": 0.875,
+      "r2_mean_cash": 106763.5,
+      "opponent_mean_cash": 99986.421875,
+      "mean_margin": 6777.078125,
+      "median_margin": 7045.0
+    },
+    "flexon_v5": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 56,
+      "losses": 8,
+      "ties": 0,
+      "r2_win_rate": 0.875,
+      "r2_mean_cash": 106812.53125,
+      "opponent_mean_cash": 100081.0625,
+      "mean_margin": 6731.46875,
+      "median_margin": 6826.0
+    },
+    "moon_v215": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 51,
+      "losses": 13,
+      "ties": 0,
+      "r2_win_rate": 0.796875,
+      "r2_mean_cash": 107579.28125,
+      "opponent_mean_cash": 100329.796875,
+      "mean_margin": 7249.484375,
+      "median_margin": 6252.5
+    },
+    "aurax_reactive_v1": {
+      "games": 64,
+      "valid_games": 64,
+      "errors": 0,
+      "r2_wins": 51,
+      "losses": 13,
+      "ties": 0,
+      "r2_win_rate": 0.796875,
+      "r2_mean_cash": 107579.28125,
+      "opponent_mean_cash": 100329.796875,
+      "mean_margin": 7249.484375,
+      "median_margin": 6252.5
+    }
+  },
+  "paired_original": {
+    "rescued": 129,
+    "lost_wins": 48,
+    "mean_cash_delta": 4862.220170454545,
+    "mean_margin_delta": 1910.2727272727273,
+    "win_delta": 0.11505681818181818,
+    "paired_seed_win_delta95": [
+      -0.001420454545454545,
+      0.24431818181818182
+    ]
+  },
+  "seeds": [
+    2609123000,
+    2609123031
+  ],
+  "final_holdout_used": false,
+  "released_original_unchanged": true,
+  "boundary": "Candidate selected across four policies; not a new blind final estimate. Development best remains recorded separately; do not tune against per-case confirmation labels.",
+  "additional_confirmation": {
+    "source": "startup_supply_validation32/RESULTS.json",
+    "overall": {
+      "games": 704,
+      "valid_games": 704,
+      "errors": 0,
+      "r2_wins": 547,
+      "losses": 157,
+      "ties": 0,
+      "r2_win_rate": 0.7769886363636364,
+      "r2_mean_cash": 113925.87073863637,
+      "opponent_mean_cash": 96472.87642045454,
+      "mean_margin": 17452.99431818182,
+      "median_margin": 9449.0
+    },
+    "paired_original": {
+      "rescued": 66,
+      "lost_wins": 77,
+      "mean_cash_delta": 2310.7798295454545,
+      "mean_margin_delta": 997.296875,
+      "win_delta": -0.015625,
+      "paired_seed_win_delta95": [
+        -0.12926136363636365,
+        0.09801136363636363
+      ]
+    }
+  },
+  "combined_two_blocks": {
+    "seeds": 64,
+    "games_per_version": 1408,
+    "versions": {
+      "original": {
+        "games": 1408,
+        "valid_games": 1408,
+        "errors": 0,
+        "r2_wins": 1080,
+        "losses": 328,
+        "ties": 0,
+        "r2_win_rate": 0.7670454545454546,
+        "r2_mean_cash": 108595.04829545454,
+        "opponent_mean_cash": 93168.75923295454,
+        "mean_margin": 15426.2890625,
+        "median_margin": 5884.0
+      },
+      "p12": {
+        "games": 1408,
+        "valid_games": 1408,
+        "errors": 0,
+        "r2_wins": 1150,
+        "losses": 258,
+        "ties": 0,
+        "r2_win_rate": 0.8167613636363636,
+        "r2_mean_cash": 112181.54829545454,
+        "opponent_mean_cash": 95301.47443181818,
+        "mean_margin": 16880.073863636364,
+        "median_margin": 8625.0
+      }
+    },
+    "paired_original_to_p12": {
+      "rescued": 195,
+      "lost_wins": 125,
+      "mean_cash_delta": 3586.5,
+      "mean_margin_delta": 1453.7848011363637,
+      "win_delta": 0.04971590909090909,
+      "paired_seed_win_delta95": [
+        -0.03622159090909091,
+        0.13636363636363635
+      ]
+    },
+    "boundary": "Two frozen new32 confirmation blocks; not the final100 test; no per-case confirmation tuning"
+  },
+  "additional_new32_5000": {
+    "results": "startup_supply_validation32_b2/RESULTS.json",
+    "seeds": [
+      2609125000,
+      2609125031
+    ],
+    "overall": {
+      "games": 704,
+      "valid_games": 704,
+      "errors": 0,
+      "r2_wins": 501,
+      "losses": 203,
+      "ties": 0,
+      "r2_win_rate": 0.7116477272727273,
+      "r2_mean_cash": 105932.01846590909,
+      "opponent_mean_cash": 89979.97443181818,
+      "mean_margin": 15952.04403409091,
+      "median_margin": 6403.0
+    }
+  },
+  "fair_common64_p12_p16": {
+    "results": "startup_supply_validation32_b2/COMMON64.json",
+    "overall": {
+      "games": 1408,
+      "valid_games": 1408,
+      "errors": 0,
+      "r2_wins": 1048,
+      "losses": 360,
+      "ties": 0,
+      "r2_win_rate": 0.7443181818181818,
+      "r2_mean_cash": 109928.94460227272,
+      "opponent_mean_cash": 93226.42542613637,
+      "mean_margin": 16702.519176136364,
+      "median_margin": 8033.0
+    },
+    "paired_original": {
+      "rescued": 153,
+      "lost_wins": 154,
+      "mean_cash_delta": 1785.9808238636363,
+      "mean_margin_delta": 1652.645596590909,
+      "win_delta": -0.0007102272727272725,
+      "paired_seed_win_delta95": [
+        -0.08309659090909091,
+        0.08025568181818182
+      ]
+    }
+  },
+  "all_three_new32_blocks": {
+    "versions": {
+      "original": {
+        "games": 2112,
+        "valid_games": 2112,
+        "errors": 0,
+        "r2_wins": 1571,
+        "losses": 541,
+        "ties": 0,
+        "r2_win_rate": 0.743844696969697,
+        "r2_mean_cash": 107286.97774621213,
+        "opponent_mean_cash": 92454.76846590909,
+        "mean_margin": 14832.20928030303,
+        "median_margin": 5459.0
+      },
+      "p12": {
+        "games": 2112,
+        "valid_games": 2112,
+        "errors": 0,
+        "r2_wins": 1651,
+        "losses": 461,
+        "ties": 0,
+        "r2_win_rate": 0.7817234848484849,
+        "r2_mean_cash": 110098.37168560606,
+        "opponent_mean_cash": 93527.64109848485,
+        "mean_margin": 16570.730587121212,
+        "median_margin": 7465.0
+      }
+    },
+    "paired_original_to_p12": {
+      "rescued": 282,
+      "lost_wins": 202,
+      "mean_cash_delta": 2811.3939393939395,
+      "mean_margin_delta": 1738.5213068181818,
+      "win_delta": 0.03787878787878788,
+      "paired_seed_win_delta95": [
+        -0.029356060606060608,
+        0.10748106060606061
+      ]
+    },
+    "boundary": "P16 was not tested in the earlier32; this is NOT a fair three-version comparison"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "cases": 2,
+  "totals": {
+    "actions": 1438,
+    "days": 60,
+    "raw": 540,
+    "kept": 253,
+    "discarded": 287,
+    "different_actions": 0,
+    "different_account": 0,
+    "different_score": 0,
+    "positive_score": 0
+  },
+  "seconds": 5.424203867000017,
+  "rows": [
+    {
+      "key": "soil_v219g_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "raw": 270,
+      "kept": 131,
+      "discarded": 139,
+      "different_actions": 0,
+      "different_account": 0,
+      "different_score": 0,
+      "positive_score": 0,
+      "seconds": 4.771592048999992
+    },
+    {
+      "key": "soil_v219g_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "raw": 270,
+      "kept": 122,
+      "discarded": 148,
+      "different_actions": 0,
+      "different_account": 0,
+      "different_score": 0,
+      "positive_score": 0,
+      "seconds": 4.940091864999999
+    }
+  ]
+}

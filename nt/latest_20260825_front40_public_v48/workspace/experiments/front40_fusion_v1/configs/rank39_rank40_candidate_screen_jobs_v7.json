@@ -1,0 +1,21 @@
+{
+  "schema": "kaggriculture.front40_fusion.padded-route-screen-jobs.v1",
+  "jobs": [
+    {
+      "name": "rank39_lelelove1225_candidate23",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank39_lelelove1225_trace_bank_capacity256_v1.npz",
+      "route_count": 23,
+      "route_ids": [7, 11, 12, 13, 15, 18, 22, 26, 30, 33, 34, 35, 36, 37, 38, 41, 45, 48, 53, 54, 56, 58, 62],
+      "seed_start": 1256001,
+      "output": "experiments/front40_fusion_v1/receipts/rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.json"
+    },
+    {
+      "name": "rank40_ar_sekkat_candidate26",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank40_ar_sekkat_trace_bank_capacity256_v1.npz",
+      "route_count": 26,
+      "route_ids": [35, 39, 45, 49, 58, 65, 67, 70, 73, 75, 78, 80, 83, 84, 90, 94, 98, 109, 110, 113, 114, 117, 124, 125, 126, 128],
+      "seed_start": 1264001,
+      "output": "experiments/front40_fusion_v1/receipts/rank40_ar_sekkat_candidate26_vs_fc24b_screen_seed1264001_n128x2_v8.json"
+    }
+  ]
+}

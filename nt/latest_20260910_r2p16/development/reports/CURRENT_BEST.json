@@ -1,0 +1,20 @@
+{
+  "name": "Original T2 R2 BatchedDelivery",
+  "status": "BEST_RETAINED_NOT_90_PERCENT_ACCEPTED",
+  "binary": "gpt_review/gpt_code/Kaggriculture_T2_R2_BatchedDelivery_20260909/Kaggriculture_T2_R2_20260909/policy/agent.so",
+  "binary_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "config": "gpt_review/gpt_code/Kaggriculture_T2_R2_BatchedDelivery_20260909/Kaggriculture_T2_R2_20260909/policy/config.json",
+  "baseline_receipt": "experiments/r2_public11_upgrade_20260910/BASELINE_ALL11.json",
+  "games": 2200,
+  "wins": 1501,
+  "losses": 699,
+  "ties": 0,
+  "macro_win_rate": 0.6822727272727273,
+  "development_seeds": [2609110000, 2609110099],
+  "final_holdout_used": false,
+  "rejected_for_promotion": ["preparation finance only", "competitive midroute delivery", "competition=3 full development panel", "shipment-only lag (no stable small-panel gain)", "timing quarter plus shipment one: full panel 1404/2200 below baseline", "timing quarter alone: 1499/2200 versus original 1501", "startup animal bias: light 38/176, heavy all trajectories unchanged", "market inventory fix: 1501/2200, same wins but rescued 246 and lost 246", "market exact conditional quote: 1447/2200 versus original 1501", "P8 clock: old development 1616/2200, new 32 seeds only 497/704 versus original 546/704; rejected"],
+  "horizon2_full_development_rejected": {"wins":1485,"games":2200,"rescued":290,"lost_wins":306,"mean_cash_delta":-2146.2104545454545,"mean_margin_delta":-1109.135},
+  "goal_remains_active": true,
+  "public_submission_authorized": false,
+  "git_push_authorized": false
+}

@@ -1,0 +1,399 @@
+{
+  "schema": "kaggriculture.front40_fusion.shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-25T00:29:51.406697+00:00",
+  "status": "PASS",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.json"
+  ],
+  "maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_single_panel_unrestricted_minimax_win_firstshop_v4.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          58,
+          13,
+          58,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 423,
+        "ties": 0,
+        "win_rate": 0.826171875,
+        "mean_margin": 1988.005859375,
+        "worst_panel_win_rate": 0.80859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.npz",
+          "games": 256,
+          "wins": 207,
+          "ties": 0,
+          "win_rate": 0.80859375,
+          "mean_margin": 1948.18359375,
+          "median_margin": 3107.0,
+          "invalid_mean": 9.74609375,
+          "oracle_win_rate": 0.98828125,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 103,
+              "ties": 0,
+              "win_rate": 0.8046875,
+              "mean_margin": 1897.0234375,
+              "invalid_mean": 9.765625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 1999.34375,
+              "invalid_mean": 9.7265625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.npz",
+          "games": 256,
+          "wins": 216,
+          "ties": 0,
+          "win_rate": 0.84375,
+          "mean_margin": 2027.828125,
+          "median_margin": 2839.0,
+          "invalid_mean": 10.36328125,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 108,
+              "ties": 0,
+              "win_rate": 0.84375,
+              "mean_margin": 1947.828125,
+              "invalid_mean": 10.7578125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 108,
+              "ties": 0,
+              "win_rate": 0.84375,
+              "mean_margin": 2107.828125,
+              "invalid_mean": 9.96875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_two_panel_unrestricted_minimax_win_firstshop_v11.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          58,
+          34,
+          58,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          58,
+          34,
+          58,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 427,
+        "ties": 0,
+        "win_rate": 0.833984375,
+        "mean_margin": 2108.421875,
+        "worst_panel_win_rate": 0.8046875
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.npz",
+          "games": 256,
+          "wins": 206,
+          "ties": 0,
+          "win_rate": 0.8046875,
+          "mean_margin": 2066.81640625,
+          "median_margin": 3107.0,
+          "invalid_mean": 10.13671875,
+          "oracle_win_rate": 0.98828125,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 102,
+              "ties": 0,
+              "win_rate": 0.796875,
+              "mean_margin": 2011.3515625,
+              "invalid_mean": 10.15625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 2122.28125,
+              "invalid_mean": 10.1171875
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.npz",
+          "games": 256,
+          "wins": 221,
+          "ties": 0,
+          "win_rate": 0.86328125,
+          "mean_margin": 2150.02734375,
+          "median_margin": 2767.0,
+          "invalid_mean": 10.83203125,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 111,
+              "ties": 0,
+              "win_rate": 0.8671875,
+              "mean_margin": 2076.0078125,
+              "invalid_mean": 11.2265625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 110,
+              "ties": 0,
+              "win_rate": 0.859375,
+              "mean_margin": 2224.046875,
+              "invalid_mean": 10.4375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_two_panel_unrestricted_stable_win_firstshop_v11.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          18,
+          34,
+          48,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          18,
+          34,
+          48,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 427,
+        "ties": 0,
+        "win_rate": 0.833984375,
+        "mean_margin": 2113.529296875,
+        "worst_panel_win_rate": 0.8046875
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.npz",
+          "games": 256,
+          "wins": 206,
+          "ties": 0,
+          "win_rate": 0.8046875,
+          "mean_margin": 2064.27734375,
+          "median_margin": 3107.0,
+          "invalid_mean": 10.12109375,
+          "oracle_win_rate": 0.98828125,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 102,
+              "ties": 0,
+              "win_rate": 0.796875,
+              "mean_margin": 2008.671875,
+              "invalid_mean": 10.140625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 2119.8828125,
+              "invalid_mean": 10.1015625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.npz",
+          "games": 256,
+          "wins": 221,
+          "ties": 0,
+          "win_rate": 0.86328125,
+          "mean_margin": 2162.78125,
+          "median_margin": 2859.0,
+          "invalid_mean": 10.80078125,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 111,
+              "ties": 0,
+              "win_rate": 0.8671875,
+              "mean_margin": 2088.8828125,
+              "invalid_mean": 11.1953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 110,
+              "ties": 0,
+              "win_rate": 0.859375,
+              "mean_margin": 2236.6796875,
+              "invalid_mean": 10.40625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank39_lelelove1225_two_panel_unrestricted_wilson_firstshop_v11.json",
+      "route_ids": [
+        [
+          34,
+          34,
+          34,
+          18,
+          34,
+          48,
+          38,
+          37
+        ],
+        [
+          34,
+          34,
+          34,
+          18,
+          34,
+          48,
+          38,
+          37
+        ]
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 427,
+        "ties": 0,
+        "win_rate": 0.833984375,
+        "mean_margin": 2113.529296875,
+        "worst_panel_win_rate": 0.8046875
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1232001_n128x2_subset_v10.npz",
+          "games": 256,
+          "wins": 206,
+          "ties": 0,
+          "win_rate": 0.8046875,
+          "mean_margin": 2064.27734375,
+          "median_margin": 3107.0,
+          "invalid_mean": 10.12109375,
+          "oracle_win_rate": 0.98828125,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 102,
+              "ties": 0,
+              "win_rate": 0.796875,
+              "mean_margin": 2008.671875,
+              "invalid_mean": 10.140625
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 104,
+              "ties": 0,
+              "win_rate": 0.8125,
+              "mean_margin": 2119.8828125,
+              "invalid_mean": 10.1015625
+            }
+          ]
+        },
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank39_lelelove1225_candidate23_vs_fc24b_screen_seed1256001_n128x2_v8.npz",
+          "games": 256,
+          "wins": 221,
+          "ties": 0,
+          "win_rate": 0.86328125,
+          "mean_margin": 2162.78125,
+          "median_margin": 2859.0,
+          "invalid_mean": 10.80078125,
+          "oracle_win_rate": 0.9921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 111,
+              "ties": 0,
+              "win_rate": 0.8671875,
+              "mean_margin": 2088.8828125,
+              "invalid_mean": 11.1953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 110,
+              "ties": 0,
+              "win_rate": 0.859375,
+              "mean_margin": 2236.6796875,
+              "invalid_mean": 10.40625
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

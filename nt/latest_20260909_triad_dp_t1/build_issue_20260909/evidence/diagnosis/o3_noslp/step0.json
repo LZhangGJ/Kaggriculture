@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "seconds": 0.15478849299995545,
+  "stdout": "{\"binary\": \"/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/o3_noslp/agent.so\", \"binary_sha256\": \"53e10ceedbd0cf6c58a92a9ccb50e106ea09e2bb6c6d3c091492f6122379a37f\", \"input_wire_sha256\": \"7105379a801b7cfd45e6dd0c0468a7d5580a11d3144907ab452ffd53bf931239\", \"config_sha256\": \"2145aac943e9c39e928c217d4b250cbc7382d62ec971e729a4172368b9a23143\", \"step\": 0, \"seed_fixture\": 260909000, \"seat\": 0, \"action\": {\"farmer\": [\"PASS\"], \"hands\": [], \"market\": [[\"BUY_SEED\", \"MELON\", 20], [\"BUY_SEED\", \"STRAWBERRY\", 5], [\"HIRE\"], [\"HIRE\"], [\"HIRE\"]]}, \"debug\": {\"plan_calls\": 1, \"candidates\": 200, \"deferred\": 0, \"kept_commitments\": 0, \"rotations\": 0, \"intraday_started\": 0, \"reference_calls\": 0, \"predicted\": 23546.6, \"targets\": [[0, 4], [1, 4], [2, 4], [3, 3], [4, 4], [10, 3], [11, 4], [12, 4], [13, 4], [14, 4], [20, 4], [21, 3], [22, 4], [23, 4], [24, 4], [30, 3], [31, 4], [32, 4], [33, 4], [34, 4], [40, 3], [41, 4], [42, 4], [43, 4], [44, 4]], \"search_calls\": 1, \"search_scenarios\": 3, \"search_changes\": 1, \"search_predicted_gain\": 0.731112, \"learned_value_active\": false, \"learned_value_available\": true, \"search_choices\": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "kaggriculture.fc15r-nontrigger-parity-pool.v1",
+  "opponents": [
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "submission/55655402_rayk_k320_adaptive_rank1/main.py"
+    }
+  ]
+}

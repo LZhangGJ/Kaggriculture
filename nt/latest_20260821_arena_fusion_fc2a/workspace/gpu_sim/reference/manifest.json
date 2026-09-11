@@ -1,0 +1,60 @@
+{
+  "captured_at": "2026-08-15T18:54:47.1418090+09:00",
+  "package": "kaggle-environments",
+  "version": "1.32.7",
+  "python": "3.12.13",
+  "source_root": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\official_env_update_20260815\\extracted_1_32_7",
+  "wheel": {
+    "path": "research/official_env_update_20260815/download/kaggle_environments-1.32.7-py3-none-any.whl",
+    "sha256": "2a1bb862ad2d6463080f80f6a766f46d94b53fd57168cfeddb9857fc3dbc4c8f"
+  },
+  "frozen_files": [
+    {
+      "path": "kaggle_environments/envs/kaggriculture/kaggriculture.py",
+      "bytes": 40356,
+      "lines": 1086,
+      "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/kaggriculture.json",
+      "bytes": 6002,
+      "lines": 138,
+      "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/README.md",
+      "bytes": 26824,
+      "lines": 372,
+      "sha256": "3081e52baf8eb2da5d861acc63a3636ce29425f6bdb79a67036ba234ac4ade00"
+    },
+    {
+      "path": "kaggle_environments/envs/kaggriculture/AGENTS.md",
+      "bytes": 13708,
+      "lines": 287,
+      "sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22"
+    }
+  ],
+  "framework_hashes": [
+    {
+      "path": "kaggle_environments/core.py",
+      "sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e"
+    },
+    {
+      "path": "kaggle_environments/agent.py",
+      "sha256": "9b7682ce9921c8f34080a8be0f7b41598cc12ac7eb14d24e4b707883f25213b6"
+    },
+    {
+      "path": "kaggle_environments/utils.py",
+      "sha256": "537b627b11784d424147ef57ebb0369b039bf83c9f891e81f10486b1f552334b"
+    }
+  ],
+  "runtime": {
+    "windows_shell": "PowerShell 7.6.4",
+    "wsl_distribution": "Ubuntu-24.04",
+    "wsl_kernel": "6.18.33.1-microsoft-standard-WSL2",
+    "wsl_python": "3.12.3",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_memory_mib": 24576,
+    "driver": "610.47"
+  }
+}

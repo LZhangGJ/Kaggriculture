@@ -1,0 +1,533 @@
+{
+  "versions": {
+    "gcc": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "kernel": "Linux mitubant 6.18.33.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n"
+  },
+  "frozen_source_files_verified": 30,
+  "frozen_sources_unchanged": true,
+  "supplier_binary_sha256": "92fe00154f9b695a433cbc4d3480a44ecd96ba75c3b3541e7bf9cf1d56d31b27",
+  "unchanged_rebuilt_binary_sha256": "8831577ed7d9020241ce502c4218a873fb2a604369f778230eda0bd85a5f7877",
+  "variants": {
+    "animal_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "3a5f34403e21372b73109c18843671f66c6e6b9683dacbcbf9b27b5e4ffe462c"
+    },
+    "bridge_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "21b4c5229c8dd2952f6561061b3874cdeb46800b03be4528bbaa7cc6e28ce0a2"
+    },
+    "crop_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "3582a1be340033028b4a91d9250bd393b6019288f3fdb1a9fd439896b967d19a"
+    },
+    "o0": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "042bb1c8af436125283a2eacc418a9e4eeb8658a1cd72c9f87e11d4ee1a26e55"
+    },
+    "o1_sanitize": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "decf0014e19b0696b2c270a5ceda9a097f3c5d32432efdcfdcdfeca3c796855b"
+    },
+    "o3_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "01ca40a0c2dd294a389ab9f1a4af7ceedaac3cdb8fff4f7029c0d2dbe6952c54"
+    },
+    "o3_noipa_alias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "4cf77c41246eef38f46f33d07ca4282a0d0e38b829f01593f473a0df7444dab8"
+    },
+    "o3_noloopvec": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "9bb0886a11423d3eb131daa3bd99669ea2d4304faf3bd91de262ce2ec8092733"
+    },
+    "o3_nomodref": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "9bc7b5cc2ae2fb90cfc0df26bb06c716edd2e384cbf0a49bf510cbd380187f4e"
+    },
+    "o3_noslp": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "53e10ceedbd0cf6c58a92a9ccb50e106ea09e2bb6c6d3c091492f6122379a37f"
+    },
+    "paths_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "2d845846643e3c67e06c3650586377efec8bca4c1dd0cb0a7d21b8602737b498"
+    },
+    "plan_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "fc53b9c5e54065ecb47d8cd8ecae6170efc8cf3278b703552d5fc6ca57c30cb8"
+    },
+    "planner_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "36228176f30d8173367ef64aa03faf9f255a55c00789f1902ec545d6fc824c1f"
+    },
+    "setup_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            20
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 23546.6,
+      "sha256": "4de985e08dce9cf63b4ed5f49534a7109cf56fbe0559617fb6e5ed414f38f331"
+    },
+    "triad_noalias": {
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "forecast": 38800.1,
+      "sha256": "f9adc0344b1e7052a8506c75f271adcdce9eb078b87f9355dff7d1a8fb8c7dfb"
+    }
+  }
+}

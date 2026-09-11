@@ -1,0 +1,424 @@
+{
+  "schema": "kaggriculture.high_potential_route_bank.v1",
+  "generated_at_utc": "2026-08-19T10:08:33.753399+00:00",
+  "frozen_public_root": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819",
+  "input_aliases": 33,
+  "unique_routes": 10,
+  "bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\high_potential_route_bank_v1.npz",
+  "bank_sha256": "d89a78f96507b6dae743ba57374dc9eb778a67e72982c5c33b32d529a9ede09a",
+  "truth_boundary": "Exact raw public production tapes, deduplicated by canonical action SHA256. GPU screening uses the shared weed/sell-rank/terminal controller and is not yet exact parity for every source agent's adaptive overlays.",
+  "routes": [
+    {
+      "route_id": 0,
+      "canonical_name": "boatlee_v20__10c4s_3q",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 1,
+      "canonical_name": "boatlee_v20__8c6s_3q",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 2,
+      "canonical_name": "boatlee_v20__6c8s_3q",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 3,
+      "canonical_name": "boatlee_v20__6c12s_4q_first_yarn",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 4,
+      "canonical_name": "boatlee_v20__6c12s_4q_second_yarn",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 5,
+      "canonical_name": "boatlee_v20__legacy_10c4s_3q",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 6,
+      "canonical_name": "boatlee_v20__legacy_8c6s_3q",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 7,
+      "canonical_name": "boatlee_v20__legacy_6c8s_3q",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 8,
+      "canonical_name": "kaito_v27__legacy",
+      "action_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 9,
+      "canonical_name": "flexonafft_v59__modal_route",
+      "action_sha256": "6194ed54ea77f4f9a9c09ac5948778bb9420ef0deef2df18d6bbf0c2ef60c983",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    }
+  ],
+  "aliases": [
+    {
+      "route_id": 0,
+      "family": "boatlee_v20",
+      "route_name": "10c4s_3q",
+      "attribute": "_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c"
+    },
+    {
+      "route_id": 1,
+      "family": "boatlee_v20",
+      "route_name": "8c6s_3q",
+      "attribute": "_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa"
+    },
+    {
+      "route_id": 2,
+      "family": "boatlee_v20",
+      "route_name": "6c8s_3q",
+      "attribute": "_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942"
+    },
+    {
+      "route_id": 3,
+      "family": "boatlee_v20",
+      "route_name": "6c12s_4q_first_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "boatlee_v20",
+      "route_name": "6c12s_4q_second_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 5,
+      "family": "boatlee_v20",
+      "route_name": "legacy_10c4s_3q",
+      "attribute": "_LEGACY_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de"
+    },
+    {
+      "route_id": 6,
+      "family": "boatlee_v20",
+      "route_name": "legacy_8c6s_3q",
+      "attribute": "_LEGACY_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199"
+    },
+    {
+      "route_id": 7,
+      "family": "boatlee_v20",
+      "route_name": "legacy_6c8s_3q",
+      "attribute": "_LEGACY_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062"
+    },
+    {
+      "route_id": 3,
+      "family": "boatlee_v20",
+      "route_name": "legacy_6c12s_4q_first_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "boatlee_v20",
+      "route_name": "legacy_6c12s_4q_second_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 0,
+      "family": "rayk_k320",
+      "route_name": "10c4s_3q",
+      "attribute": "_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c"
+    },
+    {
+      "route_id": 1,
+      "family": "rayk_k320",
+      "route_name": "8c6s_3q",
+      "attribute": "_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa"
+    },
+    {
+      "route_id": 2,
+      "family": "rayk_k320",
+      "route_name": "6c8s_3q",
+      "attribute": "_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942"
+    },
+    {
+      "route_id": 3,
+      "family": "rayk_k320",
+      "route_name": "6c12s_4q_first_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "rayk_k320",
+      "route_name": "6c12s_4q_second_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 5,
+      "family": "rayk_k320",
+      "route_name": "legacy_10c4s_3q",
+      "attribute": "_LEGACY_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de"
+    },
+    {
+      "route_id": 6,
+      "family": "rayk_k320",
+      "route_name": "legacy_8c6s_3q",
+      "attribute": "_LEGACY_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199"
+    },
+    {
+      "route_id": 7,
+      "family": "rayk_k320",
+      "route_name": "legacy_6c8s_3q",
+      "attribute": "_LEGACY_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062"
+    },
+    {
+      "route_id": 3,
+      "family": "rayk_k320",
+      "route_name": "legacy_6c12s_4q_first_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "rayk_k320",
+      "route_name": "legacy_6c12s_4q_second_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 0,
+      "family": "tetsutani_adaptive",
+      "route_name": "10c4s_3q",
+      "attribute": "_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c"
+    },
+    {
+      "route_id": 1,
+      "family": "tetsutani_adaptive",
+      "route_name": "8c6s_3q",
+      "attribute": "_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa"
+    },
+    {
+      "route_id": 2,
+      "family": "tetsutani_adaptive",
+      "route_name": "6c8s_3q",
+      "attribute": "_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942"
+    },
+    {
+      "route_id": 3,
+      "family": "tetsutani_adaptive",
+      "route_name": "6c12s_4q_first_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "tetsutani_adaptive",
+      "route_name": "6c12s_4q_second_yarn",
+      "attribute": "_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 5,
+      "family": "tetsutani_adaptive",
+      "route_name": "legacy_10c4s_3q",
+      "attribute": "_LEGACY_ACTIONS_10C4S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de"
+    },
+    {
+      "route_id": 6,
+      "family": "tetsutani_adaptive",
+      "route_name": "legacy_8c6s_3q",
+      "attribute": "_LEGACY_ACTIONS_8C6S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199"
+    },
+    {
+      "route_id": 7,
+      "family": "tetsutani_adaptive",
+      "route_name": "legacy_6c8s_3q",
+      "attribute": "_LEGACY_ACTIONS_6C8S_3Q",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062"
+    },
+    {
+      "route_id": 3,
+      "family": "tetsutani_adaptive",
+      "route_name": "legacy_6c12s_4q_first_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2"
+    },
+    {
+      "route_id": 4,
+      "family": "tetsutani_adaptive",
+      "route_name": "legacy_6c12s_4q_second_yarn",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "source_sha256": "cfabf0431449145124dca4f2a7487f91a5aaed1f37b8af8c04130ddb72a9ad88",
+      "source_runtime_layers": "route selection + weed repair + feed/capacity guards + sell ordering + market counters + terminal liquidation",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d"
+    },
+    {
+      "route_id": 8,
+      "family": "kaito_v27",
+      "route_name": "legacy",
+      "attribute": "_LEGACY_ACTIONS",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\kaito_v27_midgame_reset\\main.py",
+      "source_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "source_runtime_layers": "weed repair + sell ordering",
+      "action_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2"
+    },
+    {
+      "route_id": 8,
+      "family": "kaito_v27",
+      "route_name": "rebalance",
+      "attribute": "_REBALANCE_ACTIONS",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\kaito_v27_midgame_reset\\main.py",
+      "source_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "source_runtime_layers": "weed repair + sell ordering",
+      "action_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2"
+    },
+    {
+      "route_id": 9,
+      "family": "flexonafft_v59",
+      "route_name": "modal_route",
+      "attribute": "_MODAL_NS._ROUTE",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\flexonafft_v59_multi_route\\main.py",
+      "source_sha256": "34193f0ca7fdc77db52cfdadf61596d42cbc2ffd3d8b7903819b0ad78a064a2a",
+      "source_runtime_layers": "RC5 weed repair",
+      "action_sha256": "6194ed54ea77f4f9a9c09ac5948778bb9420ef0deef2df18d6bbf0c2ef60c983"
+    }
+  ]
+}

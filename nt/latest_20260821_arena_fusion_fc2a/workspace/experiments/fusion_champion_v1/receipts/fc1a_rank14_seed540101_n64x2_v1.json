@@ -1,0 +1,38 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc1a_panel.v1",
+  "generated_at_utc": "2026-08-20T23:25:50.164525+00:00",
+  "status": "PASS",
+  "candidate": "fc1a_sheep_pressure",
+  "change": "K320; visible low-cash 1C4S legacy layout forces route7 (legacy 6C8S)",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 540101,
+  "seed_count": 64,
+  "games_per_opponent": 128,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 97.151637697,
+  "rows": [
+    {
+      "opponent": "gold_proxy_rank14_recursion",
+      "games": 128,
+      "wins": 44,
+      "ties": 0,
+      "losses": 84,
+      "score_rate": 0.34375,
+      "mean_candidate_cash": 89721.6796875,
+      "mean_opponent_cash": 91612.46875,
+      "mean_margin": -1890.7890625,
+      "median_margin": -5624.5,
+      "candidate_seat0_wins": 23,
+      "candidate_seat1_wins": 21
+    }
+  ],
+  "min_score_rate": 0.34375,
+  "mean_score_rate": 0.34375,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "E98BDF325F48D2B59135C0C33177F92960E45214D4DE0C4D537129BE8A2E049E"
+  }
+}

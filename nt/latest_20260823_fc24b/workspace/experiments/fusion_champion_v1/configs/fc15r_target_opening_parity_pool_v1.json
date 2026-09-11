@@ -1,0 +1,9 @@
+{
+  "schema": "kaggriculture.fc15r-target-opening-parity-pool.v1",
+  "opponents": [
+    {
+      "name": "target_opening_ueddy",
+      "path": "experiments/fusion_champion_v1/fixtures/target_opening_ueddy/main.py"
+    }
+  ]
+}

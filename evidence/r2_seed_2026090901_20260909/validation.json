@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "controlled_full_games": 47,
+  "all_completed": true,
+  "grain_and_cash_ledgers": "PASS",
+  "paired_seat_equivalence": "PASS",
+  "baseline_probe_conformance": {
+    "status": "PASS",
+    "actions_compared": 719,
+    "released_r2_cash": 123201,
+    "opponent_cash": 129349
+  },
+  "original_binary_sha256": "13388459309550c43cdadc1f274e50b274e8d61e62d5f4e799c86bb51943c663",
+  "probe_binary_sha256": "4b19d0bc35dd27825b36ccf384f7abbaaaed4fc181c942fc5d02bd0b7fd48654",
+  "evidence_sha256": {
+    "all_experiments.csv": "d190341e8cf423d881185101e547ab2b88d35e848f745a150cae3015745b156d",
+    "audit.py": "895b0a3c7f093197afc47fcbf61191dffd2aef06dc1f9d398a7502eac1aa7f1f",
+    "baseline_audit.json": "406621306c3556179a031a860f7334c7a5eaaa462c5b3f65f3c8a5018ada92a3",
+    "baseline_probe.json": "aceab400cc40c5399642837bb90a5463771162ddfaacad731504a60c67ccedd6",
+    "build_command.json": "e1afd97a130fba583717e4206dd031930f4093ed078d79078d10caed0ab12041",
+    "build_probe.py": "f19b07c6c77713e2adb5e0c3929e56cbaad8b98478139a75138802490dbef003",
+    "candidate_results.json": "4ead6a9b61951316dfd299fc5bb470b0e52288a47a0ed8b5c7aec4cff2c18717",
+    "controlled_results.json": "7f875d87783334961e8249cd8346531ad996f70efc421f32b1f49b325cddbace",
+    "experiments.py": "665526c24195fff6d7679f197130beaf8c515e213f0a14e0900d15b19b904ce0",
+    "force_grid.py": "f8646bff05dc30acdcdf9818e9f6566f02a3a170a851ec127c5e3a0fc29f15ff",
+    "harvest_results.json": "9b7f50bf21ae4892af257475ff9480aa308cffa47c64005db60d326a001a2f22",
+    "mechanism_results.json": "44649e6977b5274b11a9840a6ec581d69d6c2edab5e9d5689cba49a522d785ca",
+    "mechanism_summary.json": "6338146a896e14db19f9ce33a3b6434eea3a53e1ec034bf3e3612b65245bfab4",
+    "probe_conformance.json": "7e5ea8446523587f0eee744511c4a2b8726914197a7985cfb99ff0e15c792f35",
+    "summarize.py": "63bd08bd38566c8dc106654eeffb8dcfe24bcbfbc566cd4c6c27840b5ee02e60",
+    "targeted_results.json": "7514527147b5f5e6ef6b5c1cc3ea68b6b464c207f8db157c48863d42a80107f3",
+    "trace_probe.py": "6169fc3bf8567ef440a01ba4034565be66efe9d7c9cdccaf1f3d956f5ba6d489",
+    "validate.py": "cbe035c704186db6c3bedfcf269a38bbf9f94706eb221b546c65336b40cf11ac"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "official_payoff_and_best_split_cases": 168,
+  "time_guard_cases": 719,
+  "fixed_deadline_and_guard_assertions": "PASS",
+  "scope": "Conditional sequential quote scenarios, not proof of real rival order timing or future cash improvement",
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+}

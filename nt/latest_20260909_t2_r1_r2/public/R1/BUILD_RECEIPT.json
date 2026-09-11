@@ -1,0 +1,104 @@
+{
+  "status": "BUILT_PENDING_BEHAVIOR_GATES",
+  "version": "R1",
+  "command": [
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/bin/g++-11",
+    "-nostdinc++",
+    "-isystem",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/include/c++/11",
+    "-isystem",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/include/x86_64-linux-gnu/c++/11",
+    "-L/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/lib/gcc/x86_64-linux-gnu/11",
+    "-B/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/lib/gcc/x86_64-linux-gnu/11/",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-fPIC",
+    "-shared",
+    "-static-libstdc++",
+    "-static-libgcc",
+    "-Wl,-Bsymbolic",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/t2_r1_r2_public_20260909_v1/R1/source/policy/bridge.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/t2_r1_r2_public_20260909_v1/R1/source/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/t2_r1_r2_public_20260909_v1/R1/agent.so"
+  ],
+  "compiler": "g++-11 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "seconds": 20.692850939,
+  "source_hashes": {
+    "agent.py": "518b74fad810d7a6237722634a14e0e6ae3c88333e33146dc4ee89fb1ae14aa9",
+    "animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+    "bridge.cpp": "c77ec5f7ead40b4b9af23ba964e8d4092198c196be1af28eb1594d27924b47ed",
+    "config.json": "d5cfa5e0c6516e24bf317421528bd3a1152fe4fd3a4497aec5ab45908b7ebb98",
+    "learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+    "observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+    "ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+    "planner.hpp": "65d0c38603ca22fce75e5e94bdfe583b8e32cc09edf1e656e69eb78313a1ea11",
+    "proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+    "public_flow_scenario.hpp": "e242197fe67b173fb4dfcb523808baa96495f4a2dea5f938cba28700f3dfe51d",
+    "search.hpp": "ede4f2f5b21fdf8c054fae2f5deb66c113b94d5c8802a77b65aec77c0f0c4bbe",
+    "triad.hpp": "fc7a81622af51f00804b2025170e72b969cd0c4642322f25adaf74f67f717c23",
+    "executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+    "executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+    "executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+    "executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+    "executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+    "executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+    "executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+    "executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+    "executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+    "executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+    "executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+    "executor/policy.hpp": "0b042ca3b66e2e5111125944ad4148a152fac47e049f87fae9e787243ecaca71",
+    "executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+    "executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+    "executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+    "executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+    "executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+    "executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+    "executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+  },
+  "binary_sha256": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+  "reference_binary_sha256": "ead6b00d982e798fa570756859304ad40d77aa9a6a278e0ca2d3c1a9140f9b44",
+  "config_sha256": "d5cfa5e0c6516e24bf317421528bd3a1152fe4fd3a4497aec5ab45908b7ebb98",
+  "required_glibc_versions": [
+    [
+      2,
+      2,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      2,
+      29
+    ],
+    [
+      2,
+      32
+    ],
+    [
+      2,
+      34
+    ]
+  ],
+  "dynamic_dependencies": "\nDynamic section at offset 0x20a5b0 contains 28 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]\n 0x0000000000000010 (SYMBOLIC)           0x0\n 0x000000000000000c (INIT)               0x7a000\n 0x000000000000000d (FINI)               0x1c39e8\n 0x0000000000000019 (INIT_ARRAY)         0x204f38\n 0x000000000000001b (INIT_ARRAYSZ)       64 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x204f78\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x328\n 0x0000000000000005 (STRTAB)             0x25050\n 0x0000000000000006 (SYMTAB)             0x9ab0\n 0x000000000000000a (STRSZ)              265649 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000003 (PLTGOT)             0x20bfe8\n 0x0000000000000002 (PLTRELSZ)           2112 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x78a60\n 0x0000000000000007 (RELA)               0x68350\n 0x0000000000000008 (RELASZ)             67344 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              SYMBOLIC\n 0x000000006ffffffe (VERNEED)            0x68280\n 0x000000006fffffff (VERNEEDNUM)         3\n 0x000000006ffffff0 (VERSYM)             0x65e02\n 0x000000006ffffff9 (RELACOUNT)          2568\n 0x0000000000000000 (NULL)               0x0\n",
+  "cpu_target": "generic x86-64; unchanged evaluated source and configuration"
+}

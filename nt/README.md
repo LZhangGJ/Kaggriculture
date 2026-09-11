@@ -1,0 +1,153 @@
+# NT Kaggriculture research
+
+This directory contains the NT branch of local Kaggriculture simulation and
+Orbit Wars transfer research. It is intentionally isolated from the repository's
+existing engines so the implementations can be compared without changing their
+APIs or validation assumptions.
+
+## Contents
+
+- [`public_research_read_pack_20260911/`](public_research_read_pack_20260911/README.md)
+  — 3.44 MB bilingual Chinese/English reading ZIP with 514 per-Notebook reviews,
+  27 selected sources, 16 proposed experiment cards, and hash verification.
+  中英轻量阅读包；逐项审阅已内嵌，不包含源码附件、模型或 Replay。
+
+- [`latest_20260911_r2p16_route_repair/`](latest_20260911_r2p16_route_repair/README.md)
+  — local procurement-repair research candidate with its exact tested runtime,
+  complete sources, 105 mechanism checks and English documentation. The
+  [3,150-game evidence](../evidence/r2p16_route_repair_20260911/REPORT.md)
+  records improved execution accounting but a significant regression against
+  original JointAFS R2. Do not promote it to the competition baseline. This is
+  distinct from the JointAFS workflow-repaired builds below.
+- [`latest_20260910_r2p16_route_economics/`](latest_20260910_r2p16_route_economics/README.md)
+  — earlier delivery/capacity/cash-aware route experiment, final tested binary
+  and English development report. Its 880-game extension found twelve protected
+  task omissions in six games; preserved as research history, not a release
+  recommendation. The later workflow and procurement agents are explained in
+  the repository [development record](../agent.md).
+- [`latest_20260911_afs_workflow_repair_r1_r2/`](latest_20260911_afs_workflow_repair_r1_r2/README_ZH.md)
+  — AFS R1/R2 execution-integrity handoff. Adds the teammate-derived complete
+  workflow and worker-scheduling repair behind independent off/audit/on build
+  switches, full sources and binaries, 70/72 mechanism tests, and two 1,100-game
+  acceptance panels. It removes confirmed dropped obligations without changing
+  economic planning semantics; no aggregate win-rate gain is claimed.
+- [`latest_20260911_p16_jointafs_r1/`](latest_20260911_p16_jointafs_r1/README_ZH.md)
+  — P16 JointAFS R1 complete source/config/binaries, eleven live Python
+  opponents, official local referee, 1,100-game paired evidence, portable
+  Public build receipts, and Submission 56146577. Local win rate was 77.82%
+  against the frozen eleven-opponent pool, but Public scored only 1430.3; the
+  handoff preserves both results and does not claim 90% or online superiority.
+- [`latest_20260910_r2p16/`](latest_20260910_r2p16/README_ZH.md)
+  — frozen R2P16 startup-supply-prior candidate: complete source/config/binary,
+  reproducible build, eleven original realtime opponents, official 1.32.7
+  referee, portable runner, P9–P16 development history and paired evidence.
+  Common 64 unseen seeds: 1115/1408 wins (79.19%), original R2 74.50%; the
+  improvement interval still includes zero, not a 90% claim. No Kaggle submission.
+- [`latest_20260909_t2_r1_r2/`](latest_20260909_t2_r1_r2/README_ZH.md)
+  — T2-R1 ServiceAligned and T2-R2 BatchedDelivery: full policy sources, exact
+  Public artifacts (56114689 / 56114767, both COMPLETE), official validation
+  receipts, seven-opponent and full710 paired results, relocatable C++ runner,
+  and Chinese usage guide. No large replay or build caches. Seven-opponent
+  win rates are 92.21% / 91.79%, not a per-opponent 90% guarantee.
+- [`latest_20260909_triad_dp_t1/`](latest_20260909_triad_dp_t1/README_ZH.md)
+  — unchanged GPT Triad-DP T1 release: autonomous rule planning, daily public
+  scenario comparison, dynamic C++ execution, seven live opponents, build
+  tools, and complete supplied experiment evidence. The supplied 1,400-game
+  panel recounts to 80.86%; this handoff verifies hashes and recorded outcomes,
+  not a new local simulation or Kaggle submission. Includes Chinese usage guide.
+- [`latest_20260906_keep2_rl_1000/`](latest_20260906_keep2_rl_1000/README_ZH.md)
+  — full economic-RL experiment history through four KEEP=2 F3 PPO runs at
+  1,000 rounds each, seven hundred-round reports, and the 40,600-game independent
+  holdout. Includes key MLP/Adam checkpoints, lossless per-game evaluation
+  results, and a relocated C++ inference entry checked against 812 original
+  games. Large rollout arrays, replay/build caches and most intermediate
+  checkpoints are intentionally excluded. Depends on the C++ base below.
+- [`latest_20260906_c3_f3_j7c3_search/`](latest_20260906_c3_f3_j7c3_search/README_ZH.md)
+  — standalone C++ C3 autonomous, ledger-fixed F3 autonomous, J7-reference+C3,
+  and seven live opponents. Includes source/assets, portable build, Day0–28
+  narrow-overlay replay/Beam example, parity evidence, and a precise guide for
+  adapting the older wide candidate pool. The wide pool is NOT yet ported to
+  these new bases; this package makes that limitation explicit.
+- [`latest_20260904_dynamic_generator_cross300/`](latest_20260904_dynamic_generator_cross300/README_ZH.md)
+  — current Daily DP dynamic strategy generator and complete six-stage experiment
+  handoff: 8/29-node multi-seed Beam search, width 12, 300 frozen macro plans,
+  28,800-game crossplay, portable C++ build/runner, lossless result archives,
+  official referee, and submitted DP27. No build caches or downloaded toolchains.
+  This is a different dynamic execution base from the older Candidate8 suite.
+- `latest_20260901_candidate8_width12_mcts/` — current Candidate8 offline
+  search suite. It adds the eight-stage sequence search, Beam width 2/4/8/12
+  sweep, C++ MCTS, R8 executor sources, exact replay checks, compact evidence,
+  and a one-command runner. Hasegawa-specific analysis is intentionally
+  excluded. Start with
+  `latest_20260901_candidate8_width12_mcts/README_ZH.md`.
+- `latest_20260829_candidate8_rolling_oracle/` — original 2026-08-29
+  Candidate8 rolling-Oracle handoff. Use the 2026-09-01 package above for the
+  current width=12 and MCTS implementation.
+- `latest_20260827_macro_route_submit_agents/` — two submit-ready single-file
+  route-tree agents trained from the deduplicated 2026-08-23/25 Top40 Replay
+  pool. It contains the pipeline-selected G034 opening, the alternative G096
+  forced opening, comparison metrics, and official 1.32.7 receipts. Start with
+  `latest_20260827_macro_route_submit_agents/README_ZH.md`.
+- `latest_20260827_complete_68_agent_pool/` — incremental completion layer for
+  the full 68-Agent validation inventory. It adds the nine missing Rank40
+  validation routers, three current-Top20 reconstruction banks/maps/receipts,
+  and the authoritative complete-pool config and inventory. Start with
+  `latest_20260827_complete_68_agent_pool/README_ZH.md`.
+- `replay_collection/` — daily Top 60 live-leaderboard snapshot and Replay
+  downloader. It freezes each team's currently scoring submission ID, then
+  downloads every Public completed Replay currently exposed for that exact
+  submission. The current package includes serial-network rate-limit guards,
+  resumable receipts, a PowerShell runner, and an independent SHA256 verifier.
+  Start with `replay_collection/README_ZH.md`; the older full collection
+  specification remains in `replay_collection/agent.md`.
+- `latest_20260825_front40_public_v48/` — Rank1–40 current-submission
+  reconstruction snapshot plus the 34-notebook 2026-08-25 Recently Run scan,
+  final route banks/maps/receipts, and the strictly parity-accepted Kaito V48
+  JAX family. V48 beats frozen FC24B in 851/1,024 independent dual-seat games.
+  Start with `latest_20260825_front40_public_v48/README_ZH.md`.
+- `latest_20260823_fc24b/` — current FC24B handoff: the complete FC0-to-FC24B
+  development-document chain, frozen source/configuration, six 2026-08-22
+  public-agent JAX migrations, 8,704-game 34-Agent acceptance evidence,
+  official-1.32.7 CPU/JAX parity traces, and Kaggle submission `55708153`.
+  Start with `latest_20260823_fc24b/README_ZH.md`.
+- `latest_20260821_arena_fusion_fc2a/` — reproducible 28-Agent strict-JAX
+  Arena snapshot, the complete 37,800-game pairwise result, current
+  rule-fusion development evidence, and the broken/fixed FC2A CPU submissions.
+  Start with `latest_20260821_arena_fusion_fc2a/README.md`.
+- `latest_20260819/` — latest official-1.32.7 development snapshot: the M3.9
+  three-layer planner, current JAX rules core, five high-potential public
+  agents reproduced as exact GPU opponents, acceptance receipts, and the
+  planner-convergence design review. Start with
+  `latest_20260819/README_ZH.md`.
+- `gpu_sim/` — parity-first JAX GPU rewrite of the official
+  `kaggle-environments==1.32.6` Kaggriculture interpreter, including source,
+  tests, tools, frozen reference material, benchmark receipts, and the final
+  acceptance report.
+- `agents/eba26v2/` — exact EBA26v2 submission artifact, official 1.32.7
+  holdout evidence, upload receipts, and the timestamped Public score.
+- `handoff/gpt_route_bundle_1327_v2/` — verified 1.32.7 JAX route-search and
+  official-referee bundle prepared for review on a four-core CPU machine.
+- `orbit_wars/` — source-grounded summaries of all 11 publicly linked gold
+  writeups, one Kaggriculture migration design per writeup, a shared modelling
+  specification, and an RTX 3090 implementation comparison.
+- `docs/` — detailed Chinese Kaggriculture rules and modelling reference used
+  by both the simulator and the migration designs. The current end-to-end
+  status is in `docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md`.
+
+## Important boundaries
+
+- `gpu_sim/reference/` is the immutable rule/parity oracle for this simulator.
+- Do not train against a changed rules core until parity receipts have been
+  regenerated.
+- The local `.venv-wsl`, pytest caches, and Python bytecode are intentionally
+  excluded from Git. Recreate the WSL environment using
+  `gpu_sim/requirements-wsl.in` or the frozen lock file.
+- Orbit Wars articles are stored as detailed Chinese research digests with
+  official source links, not verbatim copies of third-party writeups.
+
+Start with
+[`latest_20260819/README_ZH.md`](latest_20260819/README_ZH.md),
+[`docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md`](docs/KAGGRICULTURE_COMPETITION_AND_GAME_RULES_ZH.md),
+[`docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md`](docs/KAGGRICULTURE_PROGRESS_SUMMARY_20260818_ZH.md),
+[`gpu_sim/README.md`](gpu_sim/README.md), and
+[`orbit_wars/README.md`](orbit_wars/README.md).

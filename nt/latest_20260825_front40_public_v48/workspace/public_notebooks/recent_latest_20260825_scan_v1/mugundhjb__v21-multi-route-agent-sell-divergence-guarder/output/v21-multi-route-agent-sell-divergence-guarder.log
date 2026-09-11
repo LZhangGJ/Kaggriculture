@@ -1,0 +1,21 @@
+[{"stream_name":"stderr","time":8.546242316,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.546314542,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.546321322,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.546326098,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.418546392,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.418598594,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.418606541,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.418616471,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.899765685,"data":"Writing main.py\n"}
+,{"stream_name":"stdout","time":10.940115018,"data":"{'file': 'main.py', 'bytes': 150528, 'main.py SHA-256': 'e2f9107e9e537b77b9e908744114a43cece81a6316e33a69ff8aa02618b4c0f1', 'compile': 'OK'}\n"}
+,{"stream_name":"stdout","time":10.97590633,"data":"{'artifact': 'submission.tar.gz', 'members': ['main.py'], 'main.py bytes': 150528, 'main.py SHA-256': 'e2f9107e9e537b77b9e908744114a43cece81a6316e33a69ff8aa02618b4c0f1', 'archive SHA-256': 'a773f676f70ff27c84dc78aba605038eebb031bc55583b78f977667a0b9a16d2', 'ready': True}\n"}
+,{"stream_name":"stdout","time":11.014176262,"data":"{'artifact': 'submission.tar.gz', 'members': ['main.py'], 'main.py bytes': 150528, 'main.py SHA-256': 'e2f9107e9e537b77b9e908744114a43cece81a6316e33a69ff8aa02618b4c0f1', 'archive SHA-256': 'a773f676f70ff27c84dc78aba605038eebb031bc55583b78f977667a0b9a16d2', 'ready': True}\n"}
+,{"stream_name":"stderr","time":14.336399299,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":14.336446741,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":14.543987201,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":14.544035137,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":15.449220097,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":15.847454624000001,"data":"[NbConvertApp] Writing 170209 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":18.957075514,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":20.198589591,"data":"[NbConvertApp] Writing 675240 bytes to __results__.html\n"}
+]

@@ -1,0 +1,31 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-route-margin-ranker-eval.v1",
+  "generated_at_utc": "2026-08-24T00:37:13.140098+00:00",
+  "status": "PASS",
+  "model": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_route_ranker_dev20_dev256_v25.joblib",
+  "context": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_prefix_state_seed280001_n128_v26.npz",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_dev20_vs_fc24b_screen_seed280001_n128x2_v19.npz",
+  "runtime_boundary": "current public state plus own private inventory only",
+  "games": 256,
+  "wins": 76,
+  "ties": 0,
+  "win_rate": 0.296875,
+  "mean_margin": -7137.91796875,
+  "median_margin": -8155.0,
+  "invalid_mean": 27.8359375,
+  "oracle_win_rate_within_model_routes": 0.7890625,
+  "selected_routes": [
+    {
+      "route_id": 40,
+      "contexts": 26
+    },
+    {
+      "route_id": 103,
+      "contexts": 206
+    },
+    {
+      "route_id": 133,
+      "contexts": 24
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "kaggriculture.native-adaptive-genomes.v1",
+  "reference_submission": 55714246,
+  "base_values": {
+    "cash_reserve": 250, "action_cost": 2, "move_cost": 5,
+    "risk_multiplier": 1.6, "market_impact_weight": 1,
+    "opponent_supply_weight": 0.65, "demand_drift_weight": 0.6,
+    "sell_drop_limit": 0.3, "price_replan_fraction": 0.2,
+    "task_stickiness": 80, "deadline_weight": 160,
+    "fertilizer_value_fraction": 0.9, "max_hands": 14,
+    "max_quadrants": 3, "max_total_animals": 20, "max_cows": 12,
+    "max_sheep": 12, "max_geese": 0, "max_wheat": 45,
+    "max_carrot": 12, "max_tomato": 20, "max_strawberry": 45,
+    "max_melon": 8, "min_wheat_buffer": 2, "liquidation_day": 26,
+    "stop_new_animals_day": 14, "stop_new_crops_day": 24,
+    "replan_interval_steps": 24, "routine_priority_scale": 1,
+    "task_value_scale": 0.5, "yarn_wool_price_threshold": 219
+  },
+  "genomes": [
+    {"label": "baseline", "values": {}},
+    {"label": "layout_only", "values": {"future_structure_reservation_fraction": 0.75}},
+    {"label": "layout_yarn_gate_2", "values": {"future_structure_reservation_fraction": 0.75, "yarn_animal_flex": 1.0, "yarn_opponent_sheep_gate": 2}},
+    {"label": "layout_yarn_gate_3", "values": {"future_structure_reservation_fraction": 0.75, "yarn_animal_flex": 1.0, "yarn_opponent_sheep_gate": 3}},
+    {"label": "layout_yarn_gate_4", "values": {"future_structure_reservation_fraction": 0.75, "yarn_animal_flex": 1.0, "yarn_opponent_sheep_gate": 4}},
+    {"label": "layout_yarn_gate_6", "values": {"future_structure_reservation_fraction": 0.75, "yarn_animal_flex": 1.0, "yarn_opponent_sheep_gate": 6}},
+    {"label": "layout_yarn_gate_100", "values": {"future_structure_reservation_fraction": 0.75, "yarn_animal_flex": 1.0, "yarn_opponent_sheep_gate": 100}}
+  ]
+}

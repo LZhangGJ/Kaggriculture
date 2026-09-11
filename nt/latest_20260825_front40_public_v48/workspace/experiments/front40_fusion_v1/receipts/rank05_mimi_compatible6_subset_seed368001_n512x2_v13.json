@@ -1,0 +1,20 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-screen-subset.v1",
+  "generated_at_utc": "2026-08-24T03:55:11.126486+00:00",
+  "status": "PASS",
+  "source": "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_map8_vs_fc24b_screen_seed368001_n512x2_v3.json",
+  "seed_count": 512,
+  "route_count": 6,
+  "route_ids": [
+    77,
+    19,
+    82,
+    67,
+    54,
+    64
+  ],
+  "games": 6144,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_compatible6_subset_seed368001_n512x2_v13.npz"
+}

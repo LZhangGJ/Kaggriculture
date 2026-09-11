@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mode": 0,
+      "status": "PASS",
+      "output": "PASS startup mode 0"
+    },
+    {
+      "mode": 1,
+      "status": "PASS",
+      "output": "PASS startup mode 1"
+    },
+    {
+      "mode": 2,
+      "status": "PASS",
+      "output": "PASS startup mode 2"
+    }
+  ],
+  "off_sha256": "b45871ab499eff68ecfed940e97732909c394594ae97fdfe72ed0b3d48c69cc9",
+  "off_identical_to_p2": true,
+  "reused_off_conformance": "../candidate_r2p2/OFF_CONFORMANCE.json",
+  "prior": {
+    "status": "PASS",
+    "scope": "8 frozen T2-R2 focus-case trajectories; official 1.32.7 state progression; build regression, not new live strength validation",
+    "fixtures": 8,
+    "checked_actions": 5752,
+    "failures": 0,
+    "rows": [
+      {
+        "fixture": "trace_2609096003_6_0.json.gz",
+        "seed": 2609096003,
+        "seat": 0,
+        "opponent": 6,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 76282.0,
+        "opponent_cash": 75572.0,
+        "done": true,
+        "seconds": 2.0165274370000006
+      },
+      {
+        "fixture": "trace_2609096003_6_1.json.gz",
+        "seed": 2609096003,
+        "seat": 1,
+        "opponent": 6,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 76282.0,
+        "opponent_cash": 75572.0,
+        "done": true,
+        "seconds": 1.8605874260000022
+      },
+      {
+        "fixture": "trace_2609096005_2_0.json.gz",
+        "seed": 2609096005,
+        "seat": 0,
+        "opponent": 2,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 81132.0,
+        "opponent_cash": 72273.0,
+        "done": true,
+        "seconds": 1.8836722570000006
+      },
+      {
+        "fixture": "trace_2609096005_2_1.json.gz",
+        "seed": 2609096005,
+        "seat": 1,
+        "opponent": 2,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 81132.0,
+        "opponent_cash": 72273.0,
+        "done": true,
+        "seconds": 1.9332818399999994
+      },
+      {
+        "fixture": "trace_2609096005_6_0.json.gz",
+        "seed": 2609096005,
+        "seat": 0,
+        "opponent": 6,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 136721.0,
+        "opponent_cash": 126662.0,
+        "done": true,
+        "seconds": 2.0139301900000035
+      },
+      {
+        "fixture": "trace_2609096005_6_1.json.gz",
+        "seed": 2609096005,
+        "seat": 1,
+        "opponent": 6,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 136721.0,
+        "opponent_cash": 126662.0,
+        "done": true,
+        "seconds": 1.8665117879999968
+      },
+      {
+        "fixture": "trace_2609096019_1_0.json.gz",
+        "seed": 2609096019,
+        "seat": 0,
+        "opponent": 1,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 79182.0,
+        "opponent_cash": 79241.0,
+        "done": true,
+        "seconds": 1.957611882000002
+      },
+      {
+        "fixture": "trace_2609096019_1_1.json.gz",
+        "seed": 2609096019,
+        "seat": 1,
+        "opponent": 1,
+        "status": "PASS",
+        "checked_actions": 719,
+        "cash": 79182.0,
+        "opponent_cash": 79241.0,
+        "done": true,
+        "seconds": 1.9079437780000035
+      }
+    ],
+    "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p2/policy/r2p2.so",
+    "binary_sha256": "b45871ab499eff68ecfed940e97732909c394594ae97fdfe72ed0b3d48c69cc9",
+    "seconds": 4.030517517,
+    "manifest_sha256": "ed04c6acde1fc0b81e29953244b75a757d83bc597c5d24b3440a1bac8227a563"
+  }
+}

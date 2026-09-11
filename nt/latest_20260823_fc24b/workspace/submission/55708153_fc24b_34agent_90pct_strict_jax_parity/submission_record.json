@@ -1,0 +1,18 @@
+{
+  "competition": "kaggriculture",
+  "ref": 55708153,
+  "submitted_at": "2026-08-23 06:34:52.373000",
+  "description": "NT FC24B 34-agent 90pct gate strict JAX parity",
+  "status_at_archive": "PENDING",
+  "public_score_at_archive": null,
+  "agent_version": "FC24B frozen best v1",
+  "main_sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B",
+  "archive_sha256": "9871648E899E7498C0E7913F454B658F99D5EC4953FF5745D289AFE78E069A59",
+  "archive_members": [
+    "main.py"
+  ],
+  "official_package_version": "1.32.7",
+  "parity": "36/36 contexts exact for actions, every official state frame, and terminal rewards; standard 32 plus targeted PRT/K320 4",
+  "cpu_acceptance": "23008/23008 sequential actions exact; mean 0.5232 ms, p99 1.3501 ms, maximum 5.0035 ms",
+  "local_acceptance": "34 opponents, 256 games each, 8704 total; minimum score rate 90.234375%; versus FC22: 4 loss-to-win, 0 win-to-loss, 1313 cash-up, 0 cash-down"
+}

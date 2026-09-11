@@ -1,0 +1,26 @@
+{
+  "version": "p12",
+  "seed_start": 2609125000,
+  "seeds": 1,
+  "opponents": [
+    "soil_v219g",
+    "moon_v215",
+    "flexon_v5",
+    "market_smart_v8",
+    "nagatakengo_v70",
+    "aurax_reactive_v1",
+    "thomas_955_v2",
+    "shop0909",
+    "aurax_shop_v2",
+    "seven_turn",
+    "ahmed_v27"
+  ],
+  "both_seats": true,
+  "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260910_r2p16/baselines/p12.so",
+  "binary_sha256": "f62c0a303133d28eb93380f52aaead97ff9e7b0ca2613668ac859b638f9adf63",
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "official_version": "1.32.7",
+  "realtime_opponents": true,
+  "reference_regression": true,
+  "workers": 16
+}

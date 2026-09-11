@@ -1,0 +1,69 @@
+{
+  "base": "P16 T3R1 TakeoverMerged R1",
+  "baseline_sha": "63f40fe3e07897537ae0b80e5c987d3208392209f07c232b0bc43d0a5ae98903",
+  "dev_seeds": [
+    2609125000,
+    2609125001,
+    2609125002
+  ],
+  "confirmation_seeds": [
+    2609205000,
+    2609205001,
+    2609205002,
+    2609205003,
+    2609205004
+  ],
+  "opponents": [
+    {
+      "id": "soil_v219g",
+      "working": "opponents/soil_v219g"
+    },
+    {
+      "id": "moon_v215",
+      "working": "opponents/moon_v215"
+    },
+    {
+      "id": "flexon_v5",
+      "working": "opponents/flexon_v5"
+    },
+    {
+      "id": "market_smart_v8",
+      "working": "opponents/market_smart_v8"
+    },
+    {
+      "id": "nagatakengo_v70",
+      "working": "opponents/nagatakengo_v70"
+    },
+    {
+      "id": "aurax_reactive_v1",
+      "working": "opponents/aurax_reactive_v1"
+    },
+    {
+      "id": "thomas_955_v2",
+      "working": "opponents/thomas_955_v2"
+    },
+    {
+      "id": "shop0909",
+      "working": "opponents/shop0909"
+    },
+    {
+      "id": "aurax_shop_v2",
+      "working": "opponents/aurax_shop_v2"
+    },
+    {
+      "id": "seven_turn",
+      "working": "opponents/seven_turn"
+    },
+    {
+      "id": "ahmed_v27",
+      "working": "opponents/ahmed_v27"
+    }
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "max_per_opponent_per_version": 16,
+  "changes": "joint candidate generation; no opponent identity, seed or forced opening passed to policy",
+  "note": "development seeds appeared in previous experiments; five confirmation seeds fixed before tests; do not tune on confirmation outcomes"
+}

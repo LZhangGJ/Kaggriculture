@@ -1,0 +1,82 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T12:04:11.937066+00:00",
+  "device": "cuda:0",
+  "seed_start": 648001,
+  "seed_count": 512,
+  "route_count": 2,
+  "route_ids": [
+    81,
+    65
+  ],
+  "route_chunk": 1,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 2048,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 62,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 81,
+          "source_episode_id": 93620762,
+          "source_reward": 66732,
+          "games": 124,
+          "win_rate": 0.5161290322580645,
+          "mean_margin": -1025.1209677419354,
+          "invalid_mean": 1.9758064516129032
+        }
+      ]
+    },
+    {
+      "first_shop_id": 2,
+      "first_shop": "FARMERS_MARKET",
+      "seed_count": 60,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 65,
+          "source_episode_id": 93536446,
+          "source_reward": 100531,
+          "games": 120,
+          "win_rate": 0.06666666666666667,
+          "mean_margin": -27837.533333333333,
+          "invalid_mean": 235.14166666666668
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 0,
+      "seconds": 148.30477258099995
+    },
+    {
+      "seat": 0,
+      "start": 1,
+      "end": 1,
+      "seconds": 13.349453511999968
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 0,
+      "seconds": 156.58543618700003
+    },
+    {
+      "seat": 1,
+      "start": 1,
+      "end": 1,
+      "seconds": 13.762931625000078
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank09_kawashigi_routes81_65_chunk1_seed648001_n512x2_v113.npz",
+  "status": "PASS"
+}

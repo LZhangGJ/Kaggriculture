@@ -1,0 +1,1742 @@
+{
+  "schema": "kaggriculture.fusion-champion.kobe-shop-router-audit.v1",
+  "generated_at_utc": "2026-08-21T23:33:21.627864+00:00",
+  "status": "PASS",
+  "source_boundary": "Observational audit of downloaded official Replay only. The proposed router uses the first three public shops; completed route and result are used only as post-hoc labels. Exact association is not proof of optimality.",
+  "episode_csv": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\score2700plus_all_20260822\\analysis\\kobe_83_dynamic_openings\\episode_openings_and_routes.csv",
+  "episode_csv_sha256": "7782060D0FFA7EF39B6CF06DAE7EC00F07EBB091F377B4297AF12B61615651C7",
+  "episodes": 83,
+  "unique_opponent_submissions": 57,
+  "seats": {
+    "0": 35,
+    "1": 48
+  },
+  "route_rule_accuracy": 1.0,
+  "route_rule_correct": 83,
+  "prebuild_coop_accuracy": 1.0,
+  "prebuild_coop_correct": 83,
+  "rule": [
+    "YARN in shop positions 0 or 1 -> C6S12G0L3",
+    "else YARN in position 2 -> C6S8G0L2",
+    "else zero MILK-support shops in positions 0 and 1 -> C6S6G2L2",
+    "else at least two MILK-support shops in positions 0..2 -> C10S4G0L2",
+    "else -> C8S6G0L2"
+  ],
+  "milk_support_shops": [
+    "ICE_CREAM_SHOP",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP"
+  ],
+  "confusion": {
+    "C10S4G0L2": {
+      "C10S4G0L2": 24
+    },
+    "C6S12G0L3": {
+      "C6S12G0L3": 13
+    },
+    "C6S6G2L2": {
+      "C6S6G2L2": 22
+    },
+    "C6S8G0L2": {
+      "C6S8G0L2": 7
+    },
+    "C8S6G0L2": {
+      "C8S6G0L2": 17
+    }
+  },
+  "route_result_counts": {
+    "C10S4G0L2": {
+      "WIN": 18,
+      "LOSS": 6
+    },
+    "C6S12G0L3": {
+      "WIN": 11,
+      "LOSS": 2
+    },
+    "C6S6G2L2": {
+      "WIN": 18,
+      "TIE": 3,
+      "LOSS": 1
+    },
+    "C6S8G0L2": {
+      "WIN": 5,
+      "LOSS": 2
+    },
+    "C8S6G0L2": {
+      "WIN": 13,
+      "LOSS": 3,
+      "TIE": 1
+    }
+  },
+  "k320_comparison": {
+    "C6S12G0L3 <- K320_R4_6C12": 8,
+    "C8S6G0L2 <- K320_R0_10C4": 17,
+    "C10S4G0L2 <- K320_R0_10C4": 24,
+    "C6S6G2L2 <- K320_R1_8C6": 12,
+    "C6S6G2L2 <- K320_R0_10C4": 10,
+    "C6S12G0L3 <- K320_R3_6C12": 5,
+    "C6S8G0L2 <- K320_R2_6C8": 7
+  },
+  "rows": [
+    {
+      "episode_id": 95972004,
+      "seat": 0,
+      "opponent_submission_id": 55280391,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 164771.0,
+      "opponent_reward": 13323.0
+    },
+    {
+      "episode_id": 95974287,
+      "seat": 1,
+      "opponent_submission_id": 55411482,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 56117.0,
+      "opponent_reward": 36.0
+    },
+    {
+      "episode_id": 95976547,
+      "seat": 1,
+      "opponent_submission_id": 55638748,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 97851.0,
+      "opponent_reward": 43367.0
+    },
+    {
+      "episode_id": 95978826,
+      "seat": 1,
+      "opponent_submission_id": 55398188,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 120127.0,
+      "opponent_reward": 64754.0
+    },
+    {
+      "episode_id": 95981095,
+      "seat": 0,
+      "opponent_submission_id": 55261566,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 83805.0,
+      "opponent_reward": 58826.0
+    },
+    {
+      "episode_id": 95983380,
+      "seat": 0,
+      "opponent_submission_id": 55321806,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 99623.0,
+      "opponent_reward": 56383.0
+    },
+    {
+      "episode_id": 95985640,
+      "seat": 1,
+      "opponent_submission_id": 55251402,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 54577.0,
+      "opponent_reward": 31825.0
+    },
+    {
+      "episode_id": 95987915,
+      "seat": 1,
+      "opponent_submission_id": 55293772,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 159979.0,
+      "opponent_reward": 139317.0
+    },
+    {
+      "episode_id": 95990191,
+      "seat": 1,
+      "opponent_submission_id": 55649401,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 99703.0,
+      "opponent_reward": 87792.0
+    },
+    {
+      "episode_id": 95992471,
+      "seat": 0,
+      "opponent_submission_id": 55393367,
+      "first_three_shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 58781.0,
+      "opponent_reward": 47451.0
+    },
+    {
+      "episode_id": 95994752,
+      "seat": 1,
+      "opponent_submission_id": 55635753,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 104257.0,
+      "opponent_reward": 103461.0
+    },
+    {
+      "episode_id": 95997031,
+      "seat": 0,
+      "opponent_submission_id": 55450632,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 93075.0,
+      "opponent_reward": 82460.0
+    },
+    {
+      "episode_id": 95999311,
+      "seat": 1,
+      "opponent_submission_id": 55616472,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 96977.0,
+      "opponent_reward": 85517.0
+    },
+    {
+      "episode_id": 96001599,
+      "seat": 1,
+      "opponent_submission_id": 55529507,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 56500.0,
+      "opponent_reward": 52127.0
+    },
+    {
+      "episode_id": 96003875,
+      "seat": 1,
+      "opponent_submission_id": 55611184,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 108366.0,
+      "opponent_reward": 105357.0
+    },
+    {
+      "episode_id": 96006155,
+      "seat": 0,
+      "opponent_submission_id": 55649998,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 85424.0,
+      "opponent_reward": 74444.0
+    },
+    {
+      "episode_id": 96008443,
+      "seat": 0,
+      "opponent_submission_id": 55639405,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 79127.0,
+      "opponent_reward": 75187.0
+    },
+    {
+      "episode_id": 96010727,
+      "seat": 0,
+      "opponent_submission_id": 55507000,
+      "first_three_shops": [
+        "BAKERY",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 78678.0,
+      "opponent_reward": 58167.0
+    },
+    {
+      "episode_id": 96013017,
+      "seat": 1,
+      "opponent_submission_id": 55626179,
+      "first_three_shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 66940.0,
+      "opponent_reward": 59781.0
+    },
+    {
+      "episode_id": 96015308,
+      "seat": 1,
+      "opponent_submission_id": 55521111,
+      "first_three_shops": [
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 69627.0,
+      "opponent_reward": 60354.0
+    },
+    {
+      "episode_id": 96017593,
+      "seat": 0,
+      "opponent_submission_id": 55519424,
+      "first_three_shops": [
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R3_6C12",
+      "result": "WIN",
+      "reward": 65734.0,
+      "opponent_reward": 65597.0
+    },
+    {
+      "episode_id": 96019896,
+      "seat": 0,
+      "opponent_submission_id": 55668483,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 53547.0,
+      "opponent_reward": 44472.0
+    },
+    {
+      "episode_id": 96022172,
+      "seat": 0,
+      "opponent_submission_id": 55586087,
+      "first_three_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R3_6C12",
+      "result": "WIN",
+      "reward": 97085.0,
+      "opponent_reward": 91407.0
+    },
+    {
+      "episode_id": 96024463,
+      "seat": 1,
+      "opponent_submission_id": 55596313,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 97626.0,
+      "opponent_reward": 91747.0
+    },
+    {
+      "episode_id": 96024737,
+      "seat": 1,
+      "opponent_submission_id": 55643779,
+      "first_three_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 85476.0,
+      "opponent_reward": 81570.0
+    },
+    {
+      "episode_id": 96026745,
+      "seat": 1,
+      "opponent_submission_id": 55650604,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "LOSS",
+      "reward": 121881.0,
+      "opponent_reward": 129600.0
+    },
+    {
+      "episode_id": 96029030,
+      "seat": 1,
+      "opponent_submission_id": 55663340,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 72480.0,
+      "opponent_reward": 64100.0
+    },
+    {
+      "episode_id": 96031330,
+      "seat": 0,
+      "opponent_submission_id": 55638354,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 64782.0,
+      "opponent_reward": 60024.0
+    },
+    {
+      "episode_id": 96033624,
+      "seat": 1,
+      "opponent_submission_id": 55586087,
+      "first_three_shops": [
+        "YARN_STORE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R3_6C12",
+      "result": "WIN",
+      "reward": 92676.0,
+      "opponent_reward": 88399.0
+    },
+    {
+      "episode_id": 96035905,
+      "seat": 1,
+      "opponent_submission_id": 55596313,
+      "first_three_shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 53074.0,
+      "opponent_reward": 47389.0
+    },
+    {
+      "episode_id": 96035999,
+      "seat": 1,
+      "opponent_submission_id": 55667599,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 96461.0,
+      "opponent_reward": 90765.0
+    },
+    {
+      "episode_id": 96038201,
+      "seat": 1,
+      "opponent_submission_id": 55638977,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "WIN",
+      "reward": 98766.0,
+      "opponent_reward": 94510.0
+    },
+    {
+      "episode_id": 96040487,
+      "seat": 1,
+      "opponent_submission_id": 55562549,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 100015.0,
+      "opponent_reward": 85317.0
+    },
+    {
+      "episode_id": 96042774,
+      "seat": 0,
+      "opponent_submission_id": 55661933,
+      "first_three_shops": [
+        "PET_CAFE",
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 75999.0,
+      "opponent_reward": 73767.0
+    },
+    {
+      "episode_id": 96045062,
+      "seat": 0,
+      "opponent_submission_id": 55663355,
+      "first_three_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 61521.0,
+      "opponent_reward": 39392.0
+    },
+    {
+      "episode_id": 96047352,
+      "seat": 0,
+      "opponent_submission_id": 55641650,
+      "first_three_shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "LOSS",
+      "reward": 68794.0,
+      "opponent_reward": 69832.0
+    },
+    {
+      "episode_id": 96049624,
+      "seat": 0,
+      "opponent_submission_id": 55489809,
+      "first_three_shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 87994.0,
+      "opponent_reward": 86591.0
+    },
+    {
+      "episode_id": 96051922,
+      "seat": 0,
+      "opponent_submission_id": 55661933,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 81134.0,
+      "opponent_reward": 80013.0
+    },
+    {
+      "episode_id": 96052000,
+      "seat": 1,
+      "opponent_submission_id": 55667741,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 105682.0,
+      "opponent_reward": 110300.0
+    },
+    {
+      "episode_id": 96054218,
+      "seat": 1,
+      "opponent_submission_id": 55661933,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 108742.0,
+      "opponent_reward": 107500.0
+    },
+    {
+      "episode_id": 96056500,
+      "seat": 1,
+      "opponent_submission_id": 55579756,
+      "first_three_shops": [
+        "BAKERY",
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "WIN",
+      "reward": 66096.0,
+      "opponent_reward": 65640.0
+    },
+    {
+      "episode_id": 96058799,
+      "seat": 1,
+      "opponent_submission_id": 55586363,
+      "first_three_shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R3_6C12",
+      "result": "WIN",
+      "reward": 108353.0,
+      "opponent_reward": 107763.0
+    },
+    {
+      "episode_id": 96061093,
+      "seat": 1,
+      "opponent_submission_id": 55507935,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 111165.0,
+      "opponent_reward": 106242.0
+    },
+    {
+      "episode_id": 96063380,
+      "seat": 1,
+      "opponent_submission_id": 55641650,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 70611.0,
+      "opponent_reward": 68985.0
+    },
+    {
+      "episode_id": 96065670,
+      "seat": 1,
+      "opponent_submission_id": 55649027,
+      "first_three_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 73337.0,
+      "opponent_reward": 71334.0
+    },
+    {
+      "episode_id": 96067947,
+      "seat": 1,
+      "opponent_submission_id": 55489809,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 126094.0,
+      "opponent_reward": 124609.0
+    },
+    {
+      "episode_id": 96070235,
+      "seat": 0,
+      "opponent_submission_id": 55646497,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 75643.0,
+      "opponent_reward": 61875.0
+    },
+    {
+      "episode_id": 96072521,
+      "seat": 1,
+      "opponent_submission_id": 55635763,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 120553.0,
+      "opponent_reward": 121529.0
+    },
+    {
+      "episode_id": 96074814,
+      "seat": 0,
+      "opponent_submission_id": 55653335,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 77712.0,
+      "opponent_reward": 67288.0
+    },
+    {
+      "episode_id": 96077109,
+      "seat": 1,
+      "opponent_submission_id": 55588237,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 82518.0,
+      "opponent_reward": 84152.0
+    },
+    {
+      "episode_id": 96079388,
+      "seat": 1,
+      "opponent_submission_id": 55588237,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 109415.0,
+      "opponent_reward": 106785.0
+    },
+    {
+      "episode_id": 96081667,
+      "seat": 1,
+      "opponent_submission_id": 55623952,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 100573.0,
+      "opponent_reward": 94851.0
+    },
+    {
+      "episode_id": 96083958,
+      "seat": 1,
+      "opponent_submission_id": 55540317,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 91417.0,
+      "opponent_reward": 87954.0
+    },
+    {
+      "episode_id": 96086232,
+      "seat": 0,
+      "opponent_submission_id": 55668783,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 85316.0,
+      "opponent_reward": 81877.0
+    },
+    {
+      "episode_id": 96086250,
+      "seat": 1,
+      "opponent_submission_id": 55649027,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 97199.0,
+      "opponent_reward": 91562.0
+    },
+    {
+      "episode_id": 96088548,
+      "seat": 0,
+      "opponent_submission_id": 55489809,
+      "first_three_shops": [
+        "BAKERY",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "WIN",
+      "reward": 91005.0,
+      "opponent_reward": 64034.0
+    },
+    {
+      "episode_id": 96090838,
+      "seat": 1,
+      "opponent_submission_id": 55540317,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 89671.0,
+      "opponent_reward": 78367.0
+    },
+    {
+      "episode_id": 96093116,
+      "seat": 0,
+      "opponent_submission_id": 55629879,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 140672.0,
+      "opponent_reward": 137743.0
+    },
+    {
+      "episode_id": 96095405,
+      "seat": 1,
+      "opponent_submission_id": 55652385,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 106125.0,
+      "opponent_reward": 104924.0
+    },
+    {
+      "episode_id": 96097705,
+      "seat": 0,
+      "opponent_submission_id": 55635763,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "WIN",
+      "reward": 82572.0,
+      "opponent_reward": 72318.0
+    },
+    {
+      "episode_id": 96099978,
+      "seat": 0,
+      "opponent_submission_id": 55540317,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R4_6C12",
+      "result": "LOSS",
+      "reward": 128046.0,
+      "opponent_reward": 140155.0
+    },
+    {
+      "episode_id": 96100056,
+      "seat": 1,
+      "opponent_submission_id": 55628147,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "TIE",
+      "reward": 100178.0,
+      "opponent_reward": 100178.0
+    },
+    {
+      "episode_id": 96102268,
+      "seat": 1,
+      "opponent_submission_id": 55635759,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "WIN",
+      "reward": 130665.0,
+      "opponent_reward": 127898.0
+    },
+    {
+      "episode_id": 96104553,
+      "seat": 1,
+      "opponent_submission_id": 55663155,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 85606.0,
+      "opponent_reward": 90855.0
+    },
+    {
+      "episode_id": 96106847,
+      "seat": 0,
+      "opponent_submission_id": 55635759,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 61764.0,
+      "opponent_reward": 65065.0
+    },
+    {
+      "episode_id": 96109132,
+      "seat": 0,
+      "opponent_submission_id": 55667236,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 110641.0,
+      "opponent_reward": 115233.0
+    },
+    {
+      "episode_id": 96111429,
+      "seat": 1,
+      "opponent_submission_id": 55630633,
+      "first_three_shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "TIE",
+      "reward": 74921.0,
+      "opponent_reward": 74921.0
+    },
+    {
+      "episode_id": 96113599,
+      "seat": 1,
+      "opponent_submission_id": 55489809,
+      "first_three_shops": [
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 45284.0,
+      "opponent_reward": 33776.0
+    },
+    {
+      "episode_id": 96116001,
+      "seat": 0,
+      "opponent_submission_id": 55588237,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 82418.0,
+      "opponent_reward": 89181.0
+    },
+    {
+      "episode_id": 96118295,
+      "seat": 0,
+      "opponent_submission_id": 55630633,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "TIE",
+      "reward": 50660.0,
+      "opponent_reward": 50660.0
+    },
+    {
+      "episode_id": 96120579,
+      "seat": 1,
+      "opponent_submission_id": 55610626,
+      "first_three_shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C6S12G0L3",
+      "actual": "C6S12G0L3",
+      "correct": true,
+      "reason": "YARN appeared in the first two shops",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R3_6C12",
+      "result": "WIN",
+      "reward": 86427.0,
+      "opponent_reward": 84385.0
+    },
+    {
+      "episode_id": 96122871,
+      "seat": 0,
+      "opponent_submission_id": 55579756,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 78744.0,
+      "opponent_reward": 78661.0
+    },
+    {
+      "episode_id": 96125146,
+      "seat": 0,
+      "opponent_submission_id": 55598303,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 97860.0,
+      "opponent_reward": 99498.0
+    },
+    {
+      "episode_id": 96127441,
+      "seat": 1,
+      "opponent_submission_id": 55630633,
+      "first_three_shops": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "TIE",
+      "reward": 106042.0,
+      "opponent_reward": 106042.0
+    },
+    {
+      "episode_id": 96136640,
+      "seat": 1,
+      "opponent_submission_id": 55630633,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 74179.0,
+      "opponent_reward": 75415.0
+    },
+    {
+      "episode_id": 96154888,
+      "seat": 1,
+      "opponent_submission_id": 55652385,
+      "first_three_shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 73084.0,
+      "opponent_reward": 72656.0
+    },
+    {
+      "episode_id": 96175405,
+      "seat": 0,
+      "opponent_submission_id": 55652385,
+      "first_three_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "prediction": "C8S6G0L2",
+      "actual": "C8S6G0L2",
+      "correct": true,
+      "reason": "exactly one early MILK-support shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 62123.0,
+      "opponent_reward": 60818.0
+    },
+    {
+      "episode_id": 96200487,
+      "seat": 0,
+      "opponent_submission_id": 55652385,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "WIN",
+      "reward": 61904.0,
+      "opponent_reward": 60276.0
+    },
+    {
+      "episode_id": 96225622,
+      "seat": 1,
+      "opponent_submission_id": 55540317,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 79128.0,
+      "opponent_reward": 75019.0
+    },
+    {
+      "episode_id": 96250690,
+      "seat": 0,
+      "opponent_submission_id": 55540317,
+      "first_three_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "prediction": "C6S6G2L2",
+      "actual": "C6S6G2L2",
+      "correct": true,
+      "reason": "first two shops support neither MILK nor WOOL",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R1_8C6",
+      "result": "WIN",
+      "reward": 41943.0,
+      "opponent_reward": 35852.0
+    },
+    {
+      "episode_id": 96273384,
+      "seat": 1,
+      "opponent_submission_id": 55507122,
+      "first_three_shops": [
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": true,
+      "observed_prebuild_two_coops": true,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "WIN",
+      "reward": 95932.0,
+      "opponent_reward": 78214.0
+    },
+    {
+      "episode_id": 96273410,
+      "seat": 0,
+      "opponent_submission_id": 55667236,
+      "first_three_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "prediction": "C6S8G0L2",
+      "actual": "C6S8G0L2",
+      "correct": true,
+      "reason": "YARN appeared as the third shop",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R2_6C8",
+      "result": "LOSS",
+      "reward": 126764.0,
+      "opponent_reward": 129765.0
+    },
+    {
+      "episode_id": 96275732,
+      "seat": 0,
+      "opponent_submission_id": 55635759,
+      "first_three_shops": [
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "prediction": "C10S4G0L2",
+      "actual": "C10S4G0L2",
+      "correct": true,
+      "reason": "at least two of the first three shops support MILK",
+      "expected_prebuild_two_coops": false,
+      "observed_prebuild_two_coops": false,
+      "k320_reference_route": "K320_R0_10C4",
+      "result": "LOSS",
+      "reward": 111686.0,
+      "opponent_reward": 111811.0
+    }
+  ]
+}

@@ -1,0 +1,2299 @@
+{
+  "schema": "kaggriculture.all_exact_jax_round_robin.v1",
+  "generated_at_utc": "2026-08-20T15:36:36.151295+00:00",
+  "status": "PARTIAL_PASS",
+  "official_package_version": "1.32.7",
+  "backend": "gpu",
+  "jax_version": "0.11.0",
+  "device": "cuda:0",
+  "execution": "batched_anchor_v1",
+  "roster_count": 28,
+  "roster": [
+    {
+      "name": "public_g01_boatlee_v16",
+      "kind": "old",
+      "old_id": 0
+    },
+    {
+      "name": "public_g02_rc5_c166",
+      "kind": "old",
+      "old_id": 1
+    },
+    {
+      "name": "public_g04_soil_rain",
+      "kind": "old",
+      "old_id": 3
+    },
+    {
+      "name": "public_g06_v25",
+      "kind": "old",
+      "old_id": 5,
+      "aliases": [
+        "flex_multi_route_latest"
+      ]
+    },
+    {
+      "name": "public_g07_c95",
+      "kind": "old",
+      "old_id": 6
+    },
+    {
+      "name": "public_g08_v14",
+      "kind": "old",
+      "old_id": 7
+    },
+    {
+      "name": "public_g09_c68_thunder",
+      "kind": "old",
+      "old_id": 8
+    },
+    {
+      "name": "public_g10_four_hire",
+      "kind": "old",
+      "old_id": 9
+    },
+    {
+      "name": "public_g11_v21",
+      "kind": "old",
+      "old_id": 10
+    },
+    {
+      "name": "public_g12_v13_r3",
+      "kind": "old",
+      "old_id": 11
+    },
+    {
+      "name": "public_g13_bruce_route1",
+      "kind": "old",
+      "old_id": 12
+    },
+    {
+      "name": "public_g14_v19_control",
+      "kind": "old",
+      "old_id": 13
+    },
+    {
+      "name": "public_g15_v18_closed_loop",
+      "kind": "old",
+      "old_id": 14
+    },
+    {
+      "name": "public_g16_tran_cashflow",
+      "kind": "old",
+      "old_id": 15
+    },
+    {
+      "name": "gold_proxy_rank07_junichiro_morita",
+      "kind": "old",
+      "old_id": 22
+    },
+    {
+      "name": "gold_proxy_rank12_ai_b2b67_saas",
+      "kind": "old",
+      "old_id": 27
+    },
+    {
+      "name": "gold_proxy_rank14_recursion",
+      "kind": "old",
+      "old_id": 29
+    },
+    {
+      "name": "gold_proxy_rank19_manu_nicholas_jacob",
+      "kind": "old",
+      "old_id": 34
+    },
+    {
+      "name": "local_prt_v6",
+      "kind": "old",
+      "old_id": 35
+    },
+    {
+      "name": "boatlee_v20_multi_route",
+      "kind": "high",
+      "mode": 0,
+      "aliases": [
+        "boatlee_v20_latest",
+        "kunal_2026_v1_latest"
+      ]
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "kind": "high",
+      "mode": 1,
+      "aliases": [
+        "rayk_rank_agent_latest"
+      ]
+    },
+    {
+      "name": "tetsutani_adaptive_premium_queue",
+      "kind": "high",
+      "mode": 2
+    },
+    {
+      "name": "kaito_v27_midgame_reset",
+      "kind": "legacy",
+      "route_id": 8
+    },
+    {
+      "name": "flexonafft_v59_multi_route",
+      "kind": "legacy",
+      "route_id": 9
+    },
+    {
+      "name": "deniz_v111_8c4s_latest",
+      "kind": "deniz",
+      "route_id": 10
+    },
+    {
+      "name": "kaito_v36_latest",
+      "kind": "kaito",
+      "route_id": 11
+    },
+    {
+      "name": "x562_latest",
+      "kind": "x562"
+    },
+    {
+      "name": "tetsutani_adaptive_latest",
+      "kind": "high",
+      "mode": 3
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "flex_multi_route_latest",
+      "canonical": "public_g06_v25",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "boatlee_v20_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "kunal_2026_v1_latest",
+      "canonical": "boatlee_v20_multi_route",
+      "reason": "source/action semantics identical"
+    },
+    {
+      "alias": "rayk_rank_agent_latest",
+      "canonical": "rayk_k320_adaptive_rank1",
+      "reason": "source/action semantics identical"
+    }
+  ],
+  "excluded": {
+    "route_skeletons": 46,
+    "reason": "not complete strict-parity agents",
+    "experimental_bc_ppo": "excluded",
+    "unaccepted_proxy_agents": "excluded"
+  },
+  "seed_start": 530001,
+  "seed_count": 50,
+  "event_seeds": [
+    530001,
+    530002,
+    530003,
+    530004,
+    530005,
+    530006,
+    530007,
+    530008,
+    530009,
+    530010,
+    530011,
+    530012,
+    530013,
+    530014,
+    530015,
+    530016,
+    530017,
+    530018,
+    530019,
+    530020,
+    530021,
+    530022,
+    530023,
+    530024,
+    530025,
+    530026,
+    530027,
+    530028,
+    530029,
+    530030,
+    530031,
+    530032,
+    530033,
+    530034,
+    530035,
+    530036,
+    530037,
+    530038,
+    530039,
+    530040,
+    530041,
+    530042,
+    530043,
+    530044,
+    530045,
+    530046,
+    530047,
+    530048,
+    530049,
+    530050
+  ],
+  "event_bank": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/all_exact_rr_events_s8_1_v1.npz",
+  "event_bank_sha256": "7b4c2664c74915e05b63293e91dea95d7722a1715f6f0f686e0e61594e37d5ff",
+  "steps": 719,
+  "seat_protocol": "50 seeds as A-seat0/B-seat1 plus same 50 seeds swapped",
+  "games_per_pair": 100,
+  "pair_count": 49,
+  "pair_count_planned": 49,
+  "games_total": 4900,
+  "transitions_total": 3523100,
+  "anchor_chunk": 8,
+  "anchor_min": 2,
+  "anchor_max": 3,
+  "compile_seconds": 375.20495861099994,
+  "compile_records": [
+    {
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "seat": 0,
+      "batch": 400,
+      "seconds": 1.2116259409999977
+    },
+    {
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.0921478730000018
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.949569237999995
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.202125037999998
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.7746814600000036
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.034088608999994
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 6.898244303999995
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.089017965000004
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1760896619999954
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 400,
+      "seconds": 3.9129845329999995
+    },
+    {
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "seat": 1,
+      "batch": 400,
+      "seconds": 0.8747860650000234
+    },
+    {
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.8082228669999836
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.723019549000014
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.21299223699998
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.4405410719999736
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.59684758100002
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.603084002999992
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.819044222999992
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.1556596719999561
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.572451390999959
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.11214684799995212
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.6723284910000302
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.5001073679999877
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.5342439300000024
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.4807024030000093
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.5481937479999601
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.7955026809999595
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.518286689999968
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.09521691500003726
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.724398429999951
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.4721667920000527
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.4764183300000013
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.505958054999951
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.918186766000076
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.426253911999993
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.9227276290000646
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.584142021000048
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.449612151999986
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.8066972309999301
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.8143523240000832
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.8872966779999842
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 7.763682334999999
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.16832699400004
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.395075772999917
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.5883563610000238
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.3212449840000318
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.7468118900000036
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.923148820999927
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.0721230529999275
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 10.979968258999975
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.8079281310000397
+    },
+    {
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.8579039339999781
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.564539216999947
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 50,
+      "seconds": 3.200754977000088
+    },
+    {
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.9210802449999846
+    },
+    {
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.844856357000026
+    },
+    {
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "seat": 0,
+      "batch": 400,
+      "seconds": 9.03356672000018
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 7.468754741000112
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 5.436840269999948
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.199584671000139
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.34493506800004
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 6.181488437000098
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 8.195852604000038
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.0157832729998972
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.675985313000183
+    },
+    {
+      "agent": "simulator_step",
+      "seat": -1,
+      "batch": 400,
+      "seconds": 3.7970848540001043
+    },
+    {
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "seat": 1,
+      "batch": 400,
+      "seconds": 7.360088049000069
+    },
+    {
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.539722179000137
+    },
+    {
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.735915655000099
+    },
+    {
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.7994565269998475
+    },
+    {
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 9.212685385999976
+    },
+    {
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 6.023561442999835
+    },
+    {
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 8.507044352999856
+    },
+    {
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.1182650129999274
+    },
+    {
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.15852350199998
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.1406291420000798
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.9309230290000414
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.6379589450000367
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.6255087360000289
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.6066812260000916
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.5605661049999071
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 2.583477048999839
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 5.048169581000138
+    },
+    {
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.11008311499995216
+    },
+    {
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.137967807999985
+    },
+    {
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5884080190000986
+    },
+    {
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5182552019998639
+    },
+    {
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5239592909999828
+    },
+    {
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 1.5832533889999922
+    },
+    {
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 2.7771283569998104
+    },
+    {
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 5.461115045000042
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 4.122278599999845
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 3.813386866000201
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.9390861580000092
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 0.9729474460000347
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 1.1720197979998375
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 7.200826020000022
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 1,
+      "batch": 50,
+      "seconds": 5.1949304279996795
+    },
+    {
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 4.065332824000052
+    },
+    {
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 11.695150560999991
+    },
+    {
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.9745316590001494
+    },
+    {
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.9162057399998957
+    },
+    {
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 0.9892437290000089
+    },
+    {
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 7.050127133999922
+    },
+    {
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "seat": 0,
+      "batch": 50,
+      "seconds": 3.911705543000153
+    }
+  ],
+  "arena_seconds": 1970.7525250360002,
+  "wall_seconds": 2346.092046815,
+  "transitions_per_second": 1787.6927494666752,
+  "all_done": true,
+  "hand_cap_hits_total": 0,
+  "market_loop_cap_hits_total": 0,
+  "price_lut_oob_total": 0,
+  "integrity_pass": true,
+  "device_bytes_in_use_before": 34738432,
+  "device_bytes_in_use_after": 43115264,
+  "device_peak_bytes_in_use": 58198784,
+  "device_allocator_limit_bytes": 19327352832,
+  "provenance": [
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/jax_full37_mixed_exact_proxy_bank_v1.npz",
+      "sha256": "e02a56819d37c0a314b0fa77f9ebe558f1f8a416f283d496e6b87c0165b85af2"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/jax_full37_mixed_exact_proxy_bank_v1.json",
+      "sha256": "0724bc89e86459453e6b34d0024f8cc05fa34b3547aeaeee2f27c9453b0dac16"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+      "sha256": "f0515ca9e59b3d899b89aa12ad9aacc6acdd2d7b9be85ef58eb4d48f7b9b4c20"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4e2264239ed79f7fb7bc338b828e8ed0cad6c8445b1742186f98fc91b1429e4b"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/weak6_jax_stepwise_parity_v3.json",
+      "sha256": "08fd5fd692b216a2326d40e32470fd4371d0ca028b0f121484cf946d6fb71448"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/high_potential_exact5_historical_regression_after_latest8_v1.json",
+      "sha256": "ac173fcfa4d8c16a12ed6cd6d59a463825e49036d00ca427386fbc18df16043e"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/latest_public8_jax_acceptance_v1.json",
+      "sha256": "f60dc756cfc18019b580e595b1909697256ada2f6c164d3972bd8fd91f1bbe04"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin.py",
+      "sha256": "b231f1fdfb49da0dbdcb62b943a0473cc72a63e919600be4bb5fd3fd63cca0e9"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin_batched.py",
+      "sha256": "5d4678f99ae4ea139366c3b15191bb24631842aaee351de39507dd2e3504ddb1"
+    }
+  ],
+  "pair_results": [
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 3,
+      "agent_b": "public_g06_v25",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 101547.02,
+      "b_mean_cash": 72049.13,
+      "a_mean_margin": 29497.89,
+      "a_median_margin": 26116.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 4,
+      "agent_b": "public_g07_c95",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 88255.67,
+      "b_mean_cash": 83491.01,
+      "a_mean_margin": 4764.66,
+      "a_median_margin": 4658.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 5,
+      "agent_b": "public_g08_v14",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 110105.68,
+      "b_mean_cash": 70637.09,
+      "a_mean_margin": 39468.59,
+      "a_median_margin": 41567.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 6,
+      "agent_b": "public_g09_c68_thunder",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 100753.81,
+      "b_mean_cash": 74200.72,
+      "a_mean_margin": 26553.09,
+      "a_median_margin": 22852.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 7,
+      "agent_b": "public_g10_four_hire",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 101976.14,
+      "b_mean_cash": 72261.1,
+      "a_mean_margin": 29715.04,
+      "a_median_margin": 26136.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 8,
+      "agent_b": "public_g11_v21",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 95564.85,
+      "b_mean_cash": 73279.8,
+      "a_mean_margin": 22285.05,
+      "a_median_margin": 22032.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 9,
+      "agent_b": "public_g12_v13_r3",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 95516.06,
+      "b_mean_cash": 72974.91,
+      "a_mean_margin": 22541.15,
+      "a_median_margin": 22976.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 10,
+      "agent_b": "public_g13_bruce_route1",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89123.96,
+      "b_mean_cash": 66555.57,
+      "a_mean_margin": 22568.39,
+      "a_median_margin": 24889.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 11,
+      "agent_b": "public_g14_v19_control",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89367.1,
+      "b_mean_cash": 67058.78,
+      "a_mean_margin": 22308.32,
+      "a_median_margin": 23973.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 12,
+      "agent_b": "public_g15_v18_closed_loop",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89729.84,
+      "b_mean_cash": 66789.19,
+      "a_mean_margin": 22940.65,
+      "a_median_margin": 24783.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 13,
+      "agent_b": "public_g16_tran_cashflow",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 89293.54,
+      "b_mean_cash": 66397.86,
+      "a_mean_margin": 22895.68,
+      "a_median_margin": 23078.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 14,
+      "agent_b": "gold_proxy_rank07_junichiro_morita",
+      "games": 100,
+      "a_wins": 10,
+      "ties": 0,
+      "a_losses": 90,
+      "a_score_rate": 0.1,
+      "a_mean_cash": 89247.3,
+      "b_mean_cash": 98356.28,
+      "a_mean_margin": -9108.98,
+      "a_median_margin": -7213.5,
+      "a_seat0_wins": 4,
+      "a_seat1_wins": 6
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 15,
+      "agent_b": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 100,
+      "a_wins": 37,
+      "ties": 0,
+      "a_losses": 63,
+      "a_score_rate": 0.37,
+      "a_mean_cash": 89748.41,
+      "b_mean_cash": 94695.28,
+      "a_mean_margin": -4946.87,
+      "a_median_margin": -4213.0,
+      "a_seat0_wins": 17,
+      "a_seat1_wins": 20
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 16,
+      "agent_b": "gold_proxy_rank14_recursion",
+      "games": 100,
+      "a_wins": 58,
+      "ties": 0,
+      "a_losses": 42,
+      "a_score_rate": 0.58,
+      "a_mean_cash": 87336.04,
+      "b_mean_cash": 88127.27,
+      "a_mean_margin": -791.23,
+      "a_median_margin": 234.0,
+      "a_seat0_wins": 29,
+      "a_seat1_wins": 29
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 17,
+      "agent_b": "gold_proxy_rank19_manu_nicholas_jacob",
+      "games": 100,
+      "a_wins": 13,
+      "ties": 0,
+      "a_losses": 87,
+      "a_score_rate": 0.13,
+      "a_mean_cash": 89579.14,
+      "b_mean_cash": 93818.98,
+      "a_mean_margin": -4239.84,
+      "a_median_margin": -3505.0,
+      "a_seat0_wins": 4,
+      "a_seat1_wins": 9
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 18,
+      "agent_b": "local_prt_v6",
+      "games": 100,
+      "a_wins": 19,
+      "ties": 0,
+      "a_losses": 81,
+      "a_score_rate": 0.19,
+      "a_mean_cash": 91166.89,
+      "b_mean_cash": 96307.24,
+      "a_mean_margin": -5140.35,
+      "a_median_margin": -3897.0,
+      "a_seat0_wins": 8,
+      "a_seat1_wins": 11
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 19,
+      "agent_b": "boatlee_v20_multi_route",
+      "games": 100,
+      "a_wins": 37,
+      "ties": 0,
+      "a_losses": 63,
+      "a_score_rate": 0.37,
+      "a_mean_cash": 93157.29,
+      "b_mean_cash": 98396.54,
+      "a_mean_margin": -5239.25,
+      "a_median_margin": -4432.5,
+      "a_seat0_wins": 18,
+      "a_seat1_wins": 19
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 20,
+      "agent_b": "rayk_k320_adaptive_rank1",
+      "games": 100,
+      "a_wins": 36,
+      "ties": 0,
+      "a_losses": 64,
+      "a_score_rate": 0.36,
+      "a_mean_cash": 93663.46,
+      "b_mean_cash": 99080.72,
+      "a_mean_margin": -5417.26,
+      "a_median_margin": -4013.5,
+      "a_seat0_wins": 18,
+      "a_seat1_wins": 18
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 21,
+      "agent_b": "tetsutani_adaptive_premium_queue",
+      "games": 100,
+      "a_wins": 37,
+      "ties": 0,
+      "a_losses": 63,
+      "a_score_rate": 0.37,
+      "a_mean_cash": 93157.29,
+      "b_mean_cash": 98396.54,
+      "a_mean_margin": -5239.25,
+      "a_median_margin": -4432.5,
+      "a_seat0_wins": 18,
+      "a_seat1_wins": 19
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 22,
+      "agent_b": "kaito_v27_midgame_reset",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 98203.19,
+      "b_mean_cash": 79897.17,
+      "a_mean_margin": 18306.02,
+      "a_median_margin": 17882.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 23,
+      "agent_b": "flexonafft_v59_multi_route",
+      "games": 100,
+      "a_wins": 16,
+      "ties": 4,
+      "a_losses": 80,
+      "a_score_rate": 0.18,
+      "a_mean_cash": 91056.28,
+      "b_mean_cash": 91096.56,
+      "a_mean_margin": -40.28,
+      "a_median_margin": -35.0,
+      "a_seat0_wins": 9,
+      "a_seat1_wins": 7
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 24,
+      "agent_b": "deniz_v111_8c4s_latest",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 96931.97,
+      "b_mean_cash": 92906.83,
+      "a_mean_margin": 4025.14,
+      "a_median_margin": 4507.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 25,
+      "agent_b": "kaito_v36_latest",
+      "games": 100,
+      "a_wins": 89,
+      "ties": 0,
+      "a_losses": 11,
+      "a_score_rate": 0.89,
+      "a_mean_cash": 91134.19,
+      "b_mean_cash": 90173.58,
+      "a_mean_margin": 960.61,
+      "a_median_margin": 891.0,
+      "a_seat0_wins": 44,
+      "a_seat1_wins": 45
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 26,
+      "agent_b": "x562_latest",
+      "games": 100,
+      "a_wins": 20,
+      "ties": 0,
+      "a_losses": 80,
+      "a_score_rate": 0.2,
+      "a_mean_cash": 89528.33,
+      "b_mean_cash": 97017.96,
+      "a_mean_margin": -7489.63,
+      "a_median_margin": -4861.0,
+      "a_seat0_wins": 10,
+      "a_seat1_wins": 10
+    },
+    {
+      "agent_a_id": 2,
+      "agent_a": "public_g04_soil_rain",
+      "agent_b_id": 27,
+      "agent_b": "tetsutani_adaptive_latest",
+      "games": 100,
+      "a_wins": 37,
+      "ties": 0,
+      "a_losses": 63,
+      "a_score_rate": 0.37,
+      "a_mean_cash": 93157.29,
+      "b_mean_cash": 98396.54,
+      "a_mean_margin": -5239.25,
+      "a_median_margin": -4432.5,
+      "a_seat0_wins": 18,
+      "a_seat1_wins": 19
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 4,
+      "agent_b": "public_g07_c95",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 70606.38,
+      "b_mean_cash": 102700.66,
+      "a_mean_margin": -32094.28,
+      "a_median_margin": -34161.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 5,
+      "agent_b": "public_g08_v14",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 84432.29,
+      "b_mean_cash": 74401.83,
+      "a_mean_margin": 10030.46,
+      "a_median_margin": 8923.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 6,
+      "agent_b": "public_g09_c68_thunder",
+      "games": 100,
+      "a_wins": 52,
+      "ties": 0,
+      "a_losses": 48,
+      "a_score_rate": 0.52,
+      "a_mean_cash": 84722.49,
+      "b_mean_cash": 84750.7,
+      "a_mean_margin": -28.21,
+      "a_median_margin": 108.0,
+      "a_seat0_wins": 27,
+      "a_seat1_wins": 25
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 7,
+      "agent_b": "public_g10_four_hire",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 79089.71,
+      "b_mean_cash": 94830.23,
+      "a_mean_margin": -15740.52,
+      "a_median_margin": -14570.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 8,
+      "agent_b": "public_g11_v21",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 93098.42,
+      "b_mean_cash": 73381.37,
+      "a_mean_margin": 19717.05,
+      "a_median_margin": 20107.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 9,
+      "agent_b": "public_g12_v13_r3",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 88015.23,
+      "b_mean_cash": 70346.62,
+      "a_mean_margin": 17668.61,
+      "a_median_margin": 17299.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 10,
+      "agent_b": "public_g13_bruce_route1",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86133.27,
+      "b_mean_cash": 67832.31,
+      "a_mean_margin": 18300.96,
+      "a_median_margin": 18841.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 11,
+      "agent_b": "public_g14_v19_control",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86101.97,
+      "b_mean_cash": 67919.74,
+      "a_mean_margin": 18182.23,
+      "a_median_margin": 19324.0,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 12,
+      "agent_b": "public_g15_v18_closed_loop",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86495.82,
+      "b_mean_cash": 67554.91,
+      "a_mean_margin": 18940.91,
+      "a_median_margin": 19571.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 13,
+      "agent_b": "public_g16_tran_cashflow",
+      "games": 100,
+      "a_wins": 100,
+      "ties": 0,
+      "a_losses": 0,
+      "a_score_rate": 1.0,
+      "a_mean_cash": 86574.48,
+      "b_mean_cash": 67613.61,
+      "a_mean_margin": 18960.87,
+      "a_median_margin": 19522.5,
+      "a_seat0_wins": 50,
+      "a_seat1_wins": 50
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 14,
+      "agent_b": "gold_proxy_rank07_junichiro_morita",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 84852.85,
+      "b_mean_cash": 97714.47,
+      "a_mean_margin": -12861.62,
+      "a_median_margin": -12058.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 3
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 15,
+      "agent_b": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 100,
+      "a_wins": 1,
+      "ties": 0,
+      "a_losses": 99,
+      "a_score_rate": 0.01,
+      "a_mean_cash": 82724.93,
+      "b_mean_cash": 95743.23,
+      "a_mean_margin": -13018.3,
+      "a_median_margin": -11714.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 1
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 16,
+      "agent_b": "gold_proxy_rank14_recursion",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 71598.65,
+      "b_mean_cash": 109152.72,
+      "a_mean_margin": -37554.07,
+      "a_median_margin": -34993.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 17,
+      "agent_b": "gold_proxy_rank19_manu_nicholas_jacob",
+      "games": 100,
+      "a_wins": 4,
+      "ties": 0,
+      "a_losses": 96,
+      "a_score_rate": 0.04,
+      "a_mean_cash": 82487.91,
+      "b_mean_cash": 93461.17,
+      "a_mean_margin": -10973.26,
+      "a_median_margin": -9723.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 4
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 18,
+      "agent_b": "local_prt_v6",
+      "games": 100,
+      "a_wins": 5,
+      "ties": 0,
+      "a_losses": 95,
+      "a_score_rate": 0.05,
+      "a_mean_cash": 85792.05,
+      "b_mean_cash": 98478.95,
+      "a_mean_margin": -12686.9,
+      "a_median_margin": -11044.0,
+      "a_seat0_wins": 1,
+      "a_seat1_wins": 4
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 19,
+      "agent_b": "boatlee_v20_multi_route",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 84453.68,
+      "b_mean_cash": 95816.89,
+      "a_mean_margin": -11363.21,
+      "a_median_margin": -10803.0,
+      "a_seat0_wins": 1,
+      "a_seat1_wins": 2
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 20,
+      "agent_b": "rayk_k320_adaptive_rank1",
+      "games": 100,
+      "a_wins": 1,
+      "ties": 0,
+      "a_losses": 99,
+      "a_score_rate": 0.01,
+      "a_mean_cash": 84885.39,
+      "b_mean_cash": 96399.48,
+      "a_mean_margin": -11514.09,
+      "a_median_margin": -10935.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 1
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 21,
+      "agent_b": "tetsutani_adaptive_premium_queue",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 84453.68,
+      "b_mean_cash": 95816.89,
+      "a_mean_margin": -11363.21,
+      "a_median_margin": -10803.0,
+      "a_seat0_wins": 1,
+      "a_seat1_wins": 2
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 22,
+      "agent_b": "kaito_v27_midgame_reset",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 78044.47,
+      "b_mean_cash": 100675.55,
+      "a_mean_margin": -22631.08,
+      "a_median_margin": -19144.0,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 23,
+      "agent_b": "flexonafft_v59_multi_route",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 72034.31,
+      "b_mean_cash": 101577.64,
+      "a_mean_margin": -29543.33,
+      "a_median_margin": -26104.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 24,
+      "agent_b": "deniz_v111_8c4s_latest",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 75060.9,
+      "b_mean_cash": 99746.33,
+      "a_mean_margin": -24685.43,
+      "a_median_margin": -22782.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 25,
+      "agent_b": "kaito_v36_latest",
+      "games": 100,
+      "a_wins": 0,
+      "ties": 0,
+      "a_losses": 100,
+      "a_score_rate": 0.0,
+      "a_mean_cash": 71186.63,
+      "b_mean_cash": 108244.05,
+      "a_mean_margin": -37057.42,
+      "a_median_margin": -36142.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 0
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 26,
+      "agent_b": "x562_latest",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 84698.74,
+      "b_mean_cash": 98061.67,
+      "a_mean_margin": -13362.93,
+      "a_median_margin": -11951.5,
+      "a_seat0_wins": 0,
+      "a_seat1_wins": 3
+    },
+    {
+      "agent_a_id": 3,
+      "agent_a": "public_g06_v25",
+      "agent_b_id": 27,
+      "agent_b": "tetsutani_adaptive_latest",
+      "games": 100,
+      "a_wins": 3,
+      "ties": 0,
+      "a_losses": 97,
+      "a_score_rate": 0.03,
+      "a_mean_cash": 84453.68,
+      "b_mean_cash": 95816.89,
+      "a_mean_margin": -11363.21,
+      "a_median_margin": -10803.0,
+      "a_seat0_wins": 1,
+      "a_seat1_wins": 2
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "agent_id": 14,
+      "agent": "gold_proxy_rank07_junichiro_morita",
+      "bt_elo": 947.8080793659599,
+      "games": 200,
+      "wins": 187,
+      "ties": 0,
+      "losses": 13,
+      "score_rate": 0.935,
+      "mean_cash": 98035.375,
+      "mean_margin": 10985.3,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.9
+    },
+    {
+      "rank": 2,
+      "agent_id": 17,
+      "agent": "gold_proxy_rank19_manu_nicholas_jacob",
+      "bt_elo": 894.1198254814857,
+      "games": 200,
+      "wins": 183,
+      "ties": 0,
+      "losses": 17,
+      "score_rate": 0.915,
+      "mean_cash": 93640.075,
+      "mean_margin": 7606.55,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.87
+    },
+    {
+      "rank": 3,
+      "agent_id": 23,
+      "agent": "flexonafft_v59_multi_route",
+      "bt_elo": 882.2854036644376,
+      "games": 200,
+      "wins": 180,
+      "ties": 4,
+      "losses": 16,
+      "score_rate": 0.91,
+      "mean_cash": 96337.1,
+      "mean_margin": 14791.805,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.8200000000000001
+    },
+    {
+      "rank": 4,
+      "agent_id": 26,
+      "agent": "x562_latest",
+      "bt_elo": 829.5452956731335,
+      "games": 200,
+      "wins": 177,
+      "ties": 0,
+      "losses": 23,
+      "score_rate": 0.885,
+      "mean_cash": 97539.815,
+      "mean_margin": 10426.28,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.8
+    },
+    {
+      "rank": 5,
+      "agent_id": 18,
+      "agent": "local_prt_v6",
+      "bt_elo": 820.0039560601857,
+      "games": 200,
+      "wins": 176,
+      "ties": 0,
+      "losses": 24,
+      "score_rate": 0.88,
+      "mean_cash": 97393.095,
+      "mean_margin": 8913.625,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.81
+    },
+    {
+      "rank": 6,
+      "agent_id": 20,
+      "agent": "rayk_k320_adaptive_rank1",
+      "bt_elo": 713.4507155090654,
+      "games": 200,
+      "wins": 163,
+      "ties": 0,
+      "losses": 37,
+      "score_rate": 0.815,
+      "mean_cash": 97740.1,
+      "mean_margin": 8465.675,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.64
+    },
+    {
+      "rank": 7,
+      "agent_id": 15,
+      "agent": "gold_proxy_rank12_ai_b2b67_saas",
+      "bt_elo": 706.1238702112395,
+      "games": 200,
+      "wins": 162,
+      "ties": 0,
+      "losses": 38,
+      "score_rate": 0.81,
+      "mean_cash": 95219.255,
+      "mean_margin": 8982.585,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.63
+    },
+    {
+      "rank": 8,
+      "agent_id": 21,
+      "agent": "tetsutani_adaptive_premium_queue",
+      "bt_elo": 691.690082046109,
+      "games": 200,
+      "wins": 160,
+      "ties": 0,
+      "losses": 40,
+      "score_rate": 0.8,
+      "mean_cash": 97106.715,
+      "mean_margin": 8301.23,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.63
+    },
+    {
+      "rank": 9,
+      "agent_id": 19,
+      "agent": "boatlee_v20_multi_route",
+      "bt_elo": 691.690082046109,
+      "games": 200,
+      "wins": 160,
+      "ties": 0,
+      "losses": 40,
+      "score_rate": 0.8,
+      "mean_cash": 97106.715,
+      "mean_margin": 8301.23,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.63
+    },
+    {
+      "rank": 10,
+      "agent_id": 27,
+      "agent": "tetsutani_adaptive_latest",
+      "bt_elo": 691.690082046109,
+      "games": 200,
+      "wins": 160,
+      "ties": 0,
+      "losses": 40,
+      "score_rate": 0.8,
+      "mean_cash": 97106.715,
+      "mean_margin": 8301.23,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.63
+    },
+    {
+      "rank": 11,
+      "agent_id": 2,
+      "agent": "public_g04_soil_rain",
+      "bt_elo": 620.8446189071101,
+      "games": 2500,
+      "wins": 1709,
+      "ties": 4,
+      "losses": 787,
+      "score_rate": 0.6844,
+      "mean_cash": 93532.02960000001,
+      "mean_margin": 9437.5236,
+      "worst_opponent": "gold_proxy_rank07_junichiro_morita",
+      "worst_score_rate": 0.1
+    },
+    {
+      "rank": 12,
+      "agent_id": 16,
+      "agent": "gold_proxy_rank14_recursion",
+      "bt_elo": 567.3247741383902,
+      "games": 200,
+      "wins": 142,
+      "ties": 0,
+      "losses": 58,
+      "score_rate": 0.71,
+      "mean_cash": 98639.995,
+      "mean_margin": 19172.65,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.42000000000000004
+    },
+    {
+      "rank": 13,
+      "agent_id": 25,
+      "agent": "kaito_v36_latest",
+      "bt_elo": 295.9831577934352,
+      "games": 200,
+      "wins": 111,
+      "ties": 0,
+      "losses": 89,
+      "score_rate": 0.555,
+      "mean_cash": 99208.815,
+      "mean_margin": 18048.405,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.10999999999999999
+    },
+    {
+      "rank": 14,
+      "agent_id": 22,
+      "agent": "kaito_v27_midgame_reset",
+      "bt_elo": 137.3678019602615,
+      "games": 200,
+      "wins": 100,
+      "ties": 0,
+      "losses": 100,
+      "score_rate": 0.5,
+      "mean_cash": 90286.36,
+      "mean_margin": 2162.5300000000007,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 15,
+      "agent_id": 24,
+      "agent": "deniz_v111_8c4s_latest",
+      "bt_elo": 137.3678019602615,
+      "games": 200,
+      "wins": 100,
+      "ties": 0,
+      "losses": 100,
+      "score_rate": 0.5,
+      "mean_cash": 96326.58,
+      "mean_margin": 10330.145,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 16,
+      "agent_id": 7,
+      "agent": "public_g10_four_hire",
+      "bt_elo": 137.3678019602615,
+      "games": 200,
+      "wins": 100,
+      "ties": 0,
+      "losses": 100,
+      "score_rate": 0.5,
+      "mean_cash": 83545.66500000001,
+      "mean_margin": -6987.26,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 17,
+      "agent_id": 4,
+      "agent": "public_g07_c95",
+      "bt_elo": 137.36780196026146,
+      "games": 200,
+      "wins": 100,
+      "ties": 0,
+      "losses": 100,
+      "score_rate": 0.5,
+      "mean_cash": 93095.83499999999,
+      "mean_margin": 13664.81,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 18,
+      "agent_id": 0,
+      "agent": "public_g01_boatlee_v16",
+      "bt_elo": -1.2122973810136897e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 19,
+      "agent_id": 1,
+      "agent": "public_g02_rc5_c166",
+      "bt_elo": -1.2122973810136897e-13,
+      "games": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 0.0,
+      "mean_cash": 0.0,
+      "mean_margin": 0.0,
+      "worst_opponent": "N/A",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 20,
+      "agent_id": 3,
+      "agent": "public_g06_v25",
+      "bt_elo": -344.8607959552825,
+      "games": 2500,
+      "wins": 778,
+      "ties": 0,
+      "losses": 1722,
+      "score_rate": 0.3112,
+      "mean_cash": 81761.88239999999,
+      "mean_margin": -8621.5148,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 21,
+      "agent_id": 6,
+      "agent": "public_g09_c68_thunder",
+      "bt_elo": -360.4858735111986,
+      "games": 200,
+      "wins": 48,
+      "ties": 0,
+      "losses": 152,
+      "score_rate": 0.24,
+      "mean_cash": 79475.70999999999,
+      "mean_margin": -13262.44,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 22,
+      "agent_id": 8,
+      "agent": "public_g11_v21",
+      "bt_elo": -1313.812068759619,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 73330.58499999999,
+      "mean_margin": -21001.05,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 23,
+      "agent_id": 9,
+      "agent": "public_g12_v13_r3",
+      "bt_elo": -1313.812068759619,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 71660.765,
+      "mean_margin": -20104.88,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 24,
+      "agent_id": 5,
+      "agent": "public_g08_v14",
+      "bt_elo": -1313.8120687596193,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 72519.45999999999,
+      "mean_margin": -24749.524999999998,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 25,
+      "agent_id": 10,
+      "agent": "public_g13_bruce_route1",
+      "bt_elo": -1313.8120687596193,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 67193.94,
+      "mean_margin": -20434.675,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 26,
+      "agent_id": 13,
+      "agent": "public_g16_tran_cashflow",
+      "bt_elo": -1313.8120687596193,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 67005.735,
+      "mean_margin": -20928.275,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 27,
+      "agent_id": 11,
+      "agent": "public_g14_v19_control",
+      "bt_elo": -1313.8120687596193,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 67489.26000000001,
+      "mean_margin": -20245.275,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    },
+    {
+      "rank": 28,
+      "agent_id": 12,
+      "agent": "public_g15_v18_closed_loop",
+      "bt_elo": -1313.8120687596195,
+      "games": 200,
+      "wins": 0,
+      "ties": 0,
+      "losses": 200,
+      "score_rate": 0.0,
+      "mean_cash": 67172.05,
+      "mean_margin": -20940.78,
+      "worst_opponent": "public_g04_soil_rain",
+      "worst_score_rate": 0.0
+    }
+  ],
+  "truth_boundary": "Gold proxy entries are strict-parity local imitation agents, not original gold source. This fixed-event local JAX ranking is not a current Public leaderboard score."
+}

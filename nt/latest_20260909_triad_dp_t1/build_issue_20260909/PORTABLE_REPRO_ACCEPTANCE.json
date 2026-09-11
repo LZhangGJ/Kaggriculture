@@ -1,0 +1,82 @@
+{
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "work_directory": "/tmp/t1-build-issue-6kuhttvs",
+  "mode": "all",
+  "minimal": {
+    "variants": {
+      "o0": {
+        "command": [
+          "g++",
+          "-std=c++20",
+          "-O0",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260909_triad_dp_t1/build_issue_20260909/evidence/diagnosis/ipa_modref_repro.cpp",
+          "-o",
+          "/tmp/t1-build-issue-6kuhttvs/minimal_o0"
+        ],
+        "output": "9 29\n10 26\n11 28",
+        "matches_expected": true
+      },
+      "o3": {
+        "command": [
+          "g++",
+          "-std=c++20",
+          "-O3",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260909_triad_dp_t1/build_issue_20260909/evidence/diagnosis/ipa_modref_repro.cpp",
+          "-o",
+          "/tmp/t1-build-issue-6kuhttvs/minimal_o3"
+        ],
+        "output": "9 1\n10 1\n11 1",
+        "matches_expected": false
+      },
+      "nomodref": {
+        "command": [
+          "g++",
+          "-std=c++20",
+          "-O3",
+          "-fno-ipa-modref",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260909_triad_dp_t1/build_issue_20260909/evidence/diagnosis/ipa_modref_repro.cpp",
+          "-o",
+          "/tmp/t1-build-issue-6kuhttvs/minimal_nomodref"
+        ],
+        "output": "9 29\n10 26\n11 28",
+        "matches_expected": true
+      }
+    },
+    "compiler_issue_reproduced": true
+  },
+  "step0": {
+    "status": "PASS",
+    "command": [
+      "g++",
+      "-std=c++20",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-fPIC",
+      "-shared",
+      "-Wl,-Bsymbolic",
+      "-fno-ipa-modref",
+      "/tmp/t1-build-issue-6kuhttvs/first_step/T1_Rebuild_Divergence_GPT_Review_20260909_v1/source_release/policy/bridge.cpp",
+      "/tmp/t1-build-issue-6kuhttvs/first_step/T1_Rebuild_Divergence_GPT_Review_20260909_v1/source_release/policy/executor/vendor/simulator.cpp",
+      "-o",
+      "/tmp/t1-build-issue-6kuhttvs/rebuilt_nomodref.so"
+    ],
+    "same_input": true,
+    "same_config": true,
+    "action_and_debug_match_supplier": true,
+    "binary_sha256": "9bc7b5cc2ae2fb90cfc0df26bb06c716edd2e384cbf0a49bf510cbd380187f4e",
+    "detailed_result": "/tmp/t1-build-issue-6kuhttvs/first_step_comparison.json"
+  },
+  "status": "PASS",
+  "seconds": 18.239353934999997,
+  "production_agent_modified": false
+}

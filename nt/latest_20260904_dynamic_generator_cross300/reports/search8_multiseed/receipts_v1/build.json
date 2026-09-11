@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "seconds": 37.305114518,
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=native",
+    "-fopenmp",
+    "-fPIC",
+    "-shared",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+    "-I/usr/include/python3.12",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/search.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/search8_multiseed/receipts_v1/_dp7_search8.cpython-312-x86_64-linux-gnu.so"
+  ],
+  "objects": {
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o": "befe1a2b7ce75c2791dcf85f0f8c4a9661ad9344343f41655eb8f1ae5b2e51e0",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7.o": "237304ab6b50f59e9799358abfe45d2f5d0561a346518438225ebc5d553b27be",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/ecobot_v7_core.o": "1be71c635548cd3eb6aeb990b667c420241f73aa362176cdd501ad7015fe16f8",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o": "d18e495c02d7c361c10b8bf71eb1ac62fee6bd90dc77d54c8caccfbd99b28729",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/kaito_v58.o": "aa628ce19dd4f3407ad87d69ae13e60b64da3459069b48966fec8cd705f25cca",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/lynn_v5.o": "c389008dcaacd7f2ca5df1e80ee8c1d2c2283509912c837354bc2686c5ea4095",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o": "d9f63db142c4a1d1bd7a0a2b7a8e1946990f75cbbee39643eda83e2a770adb50",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/three_day_adapter.o": "f4014bd6d9e8f5b0ad256f338266a6d1f9dcb8849fa6e462aac08bb37258144a"
+  },
+  "binary_sha256": "baf0e89bd2bae9d365299a220da8e15bf8e243bdc52df3975040442409c48b61"
+}

@@ -1,0 +1,1054 @@
+{
+  "schema": "kaggriculture.fusion_champion.rank14_residual_attribution.v1",
+  "status": "PASS",
+  "stable_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\receipts\\fc1c_x562_route_rules_vs_rank14_seed540301_n64x2_v1.json",
+  "trajectory_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\receipts\\fc1c_x562_rank14_public_daily_seed540301_n64x2_v1.json",
+  "joined_games": 128,
+  "summaries": {
+    "stable_wins": {
+      "games": 111,
+      "mean_stable_margin": 6952.81981981982,
+      "mean_exact_x562_margin": 5965.423423423424,
+      "timeline": [
+        {
+          "state_step": 24,
+          "money_own": 17.0,
+          "money_rival": 13.0,
+          "cash_gap": 4.0,
+          "own_cows": 2.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 169.0,
+          "wool_price": 206.0,
+          "strawberry_price": 128.0
+        },
+        {
+          "state_step": 72,
+          "money_own": 45.0,
+          "money_rival": 175.0,
+          "cash_gap": -130.0,
+          "own_cows": 2.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 175.0,
+          "wool_price": 212.0,
+          "strawberry_price": 135.0
+        },
+        {
+          "state_step": 120,
+          "money_own": 115.21621621621621,
+          "money_rival": 652.1891891891892,
+          "cash_gap": -536.972972972973,
+          "own_cows": 3.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 3.0,
+          "milk_price": 186.65765765765767,
+          "wool_price": 217.14414414414415,
+          "strawberry_price": 146.92792792792793
+        },
+        {
+          "state_step": 168,
+          "money_own": 954.2342342342342,
+          "money_rival": 2971.8828828828828,
+          "cash_gap": -2017.6486486486488,
+          "own_cows": 4.0,
+          "own_sheep": 2.0,
+          "rival_cows": 3.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 4.0,
+          "rival_strawberry_tiles": 7.936936936936937,
+          "milk_price": 196.87387387387386,
+          "wool_price": 175.05405405405406,
+          "strawberry_price": 157.34234234234233
+        },
+        {
+          "state_step": 192,
+          "money_own": 40.78378378378378,
+          "money_rival": 1049.3963963963963,
+          "cash_gap": -1008.6126126126126,
+          "own_cows": 5.945945945945946,
+          "own_sheep": 3.0,
+          "rival_cows": 5.990990990990991,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 12.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 6.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 7.063063063063063,
+          "rival_strawberry_tiles": 17.91891891891892,
+          "milk_price": 202.35135135135135,
+          "wool_price": 178.5855855855856,
+          "strawberry_price": 163.04504504504504
+        },
+        {
+          "state_step": 216,
+          "money_own": 1207.4774774774776,
+          "money_rival": 1611.7747747747749,
+          "cash_gap": -404.2972972972973,
+          "own_cows": 5.945945945945946,
+          "own_sheep": 4.0,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 8.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 10.855855855855856,
+          "rival_strawberry_tiles": 19.91891891891892,
+          "milk_price": 182.07207207207207,
+          "wool_price": 181.87387387387386,
+          "strawberry_price": 167.8918918918919
+        },
+        {
+          "state_step": 240,
+          "money_own": 2014.6036036036037,
+          "money_rival": 4709.531531531532,
+          "cash_gap": -2694.927927927928,
+          "own_cows": 7.531531531531532,
+          "own_sheep": 4.36036036036036,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 6.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 3.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 10.855855855855856,
+          "rival_strawberry_tiles": 19.91891891891892,
+          "milk_price": 191.0810810810811,
+          "wool_price": 115.09009009009009,
+          "strawberry_price": 174.52252252252254
+        },
+        {
+          "state_step": 288,
+          "money_own": 13859.756756756757,
+          "money_rival": 7824.756756756757,
+          "cash_gap": 6035.0,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 4.774774774774775,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 6.0,
+          "own_wool_ready": 8.0,
+          "rival_milk_ready": 3.0,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 27.684684684684683,
+          "rival_strawberry_tiles": 35.873873873873876,
+          "milk_price": 197.18018018018017,
+          "wool_price": 132.1081081081081,
+          "strawberry_price": 185.32432432432432
+        },
+        {
+          "state_step": 360,
+          "money_own": 18889.900900900902,
+          "money_rival": 15373.657657657657,
+          "cash_gap": 3516.2432432432433,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 5.1891891891891895,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 17.63963963963964,
+          "own_wool_ready": 10.162162162162161,
+          "rival_milk_ready": 20.945945945945947,
+          "rival_wool_ready": 18.054054054054053,
+          "own_strawberry_tiles": 33.054054054054056,
+          "rival_strawberry_tiles": 35.873873873873876,
+          "milk_price": 185.35135135135135,
+          "wool_price": 87.84684684684684,
+          "strawberry_price": 199.5045045045045
+        },
+        {
+          "state_step": 432,
+          "money_own": 35926.82882882883,
+          "money_rival": 27548.207207207208,
+          "cash_gap": 8378.621621621622,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 5.603603603603603,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 6.0,
+          "own_wool_ready": 10.684684684684685,
+          "rival_milk_ready": 12.954954954954955,
+          "rival_wool_ready": 17.36936936936937,
+          "own_strawberry_tiles": 32.846846846846844,
+          "rival_strawberry_tiles": 35.873873873873876,
+          "milk_price": 137.15315315315314,
+          "wool_price": 92.51351351351352,
+          "strawberry_price": 202.02702702702703
+        },
+        {
+          "state_step": 504,
+          "money_own": 50096.963963963964,
+          "money_rival": 46967.27927927928,
+          "cash_gap": 3129.6846846846847,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 5.603603603603603,
+          "rival_cows": 7.648648648648648,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 21.315315315315317,
+          "own_wool_ready": 11.306306306306306,
+          "rival_milk_ready": 11.972972972972974,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 32.846846846846844,
+          "rival_strawberry_tiles": 32.873873873873876,
+          "milk_price": 93.990990990991,
+          "wool_price": 107.51351351351352,
+          "strawberry_price": 163.67567567567568
+        },
+        {
+          "state_step": 576,
+          "money_own": 69381.37837837837,
+          "money_rival": 61926.38738738739,
+          "cash_gap": 7454.990990990991,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 5.603603603603603,
+          "rival_cows": 8.64864864864865,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 6.153153153153153,
+          "own_wool_ready": 10.99099099099099,
+          "rival_milk_ready": 16.61261261261261,
+          "rival_wool_ready": 17.1981981981982,
+          "own_strawberry_tiles": 26.324324324324323,
+          "rival_strawberry_tiles": 17.963963963963963,
+          "milk_price": 101.76576576576576,
+          "wool_price": 106.57657657657657,
+          "strawberry_price": 86.09009009009009
+        },
+        {
+          "state_step": 648,
+          "money_own": 80341.77477477478,
+          "money_rival": 73871.63963963964,
+          "cash_gap": 6470.135135135135,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 5.603603603603603,
+          "rival_cows": 8.64864864864865,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 21.27927927927928,
+          "own_wool_ready": 11.00900900900901,
+          "rival_milk_ready": 13.63063063063063,
+          "rival_wool_ready": 16.513513513513512,
+          "own_strawberry_tiles": 21.54054054054054,
+          "rival_strawberry_tiles": 4.963963963963964,
+          "milk_price": 94.14414414414415,
+          "wool_price": 111.44144144144144,
+          "strawberry_price": 85.1891891891892
+        },
+        {
+          "state_step": 696,
+          "money_own": 88864.37837837837,
+          "money_rival": 83796.36036036036,
+          "cash_gap": 5068.018018018018,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 4.828828828828829,
+          "rival_cows": 8.64864864864865,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 21.207207207207208,
+          "own_wool_ready": 6.4324324324324325,
+          "rival_milk_ready": 17.972972972972972,
+          "rival_wool_ready": 0.34234234234234234,
+          "own_strawberry_tiles": 5.1441441441441444,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 88.01801801801801,
+          "wool_price": 104.07207207207207,
+          "strawberry_price": 82.11711711711712
+        },
+        {
+          "state_step": 719,
+          "money_own": 97058.18918918919,
+          "money_rival": 91092.76576576577,
+          "cash_gap": 5965.423423423424,
+          "own_cows": 9.117117117117116,
+          "own_sheep": 4.828828828828829,
+          "rival_cows": 8.64864864864865,
+          "rival_sheep": 4.342342342342342,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.34234234234234234,
+          "own_strawberry_tiles": 0.2072072072072072,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 69.90090090090091,
+          "wool_price": 99.7927927927928,
+          "strawberry_price": 99.8018018018018
+        }
+      ]
+    },
+    "stable_losses": {
+      "games": 17,
+      "mean_stable_margin": -1743.8235294117646,
+      "mean_exact_x562_margin": -1435.8235294117646,
+      "timeline": [
+        {
+          "state_step": 24,
+          "money_own": 17.0,
+          "money_rival": 13.0,
+          "cash_gap": 4.0,
+          "own_cows": 2.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 169.0,
+          "wool_price": 206.0,
+          "strawberry_price": 128.0
+        },
+        {
+          "state_step": 72,
+          "money_own": 45.0,
+          "money_rival": 175.0,
+          "cash_gap": -130.0,
+          "own_cows": 2.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 175.0,
+          "wool_price": 212.0,
+          "strawberry_price": 135.0
+        },
+        {
+          "state_step": 120,
+          "money_own": 114.52941176470588,
+          "money_rival": 652.6470588235294,
+          "cash_gap": -538.1176470588235,
+          "own_cows": 3.0,
+          "own_sheep": 2.0,
+          "rival_cows": 1.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 0.0,
+          "rival_strawberry_tiles": 3.0,
+          "milk_price": 181.0,
+          "wool_price": 215.8235294117647,
+          "strawberry_price": 149.35294117647058
+        },
+        {
+          "state_step": 168,
+          "money_own": 894.5882352941177,
+          "money_rival": 2887.4117647058824,
+          "cash_gap": -1992.8235294117646,
+          "own_cows": 4.0,
+          "own_sheep": 2.0,
+          "rival_cows": 3.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 4.0,
+          "rival_strawberry_tiles": 7.9411764705882355,
+          "milk_price": 189.05882352941177,
+          "wool_price": 168.2941176470588,
+          "strawberry_price": 163.35294117647058
+        },
+        {
+          "state_step": 192,
+          "money_own": 46.529411764705884,
+          "money_rival": 962.0588235294117,
+          "cash_gap": -915.5294117647059,
+          "own_cows": 6.0,
+          "own_sheep": 2.8823529411764706,
+          "rival_cows": 6.0,
+          "rival_sheep": 4.0,
+          "own_milk_ready": 12.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 6.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 7.0588235294117645,
+          "rival_strawberry_tiles": 17.941176470588236,
+          "milk_price": 193.76470588235293,
+          "wool_price": 171.35294117647058,
+          "strawberry_price": 171.1764705882353
+        },
+        {
+          "state_step": 216,
+          "money_own": 1048.6470588235295,
+          "money_rival": 1449.8823529411766,
+          "cash_gap": -401.2352941176471,
+          "own_cows": 6.0,
+          "own_sheep": 3.8823529411764706,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 8.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 11.0,
+          "rival_strawberry_tiles": 19.941176470588236,
+          "milk_price": 165.1764705882353,
+          "wool_price": 173.41176470588235,
+          "strawberry_price": 178.23529411764707
+        },
+        {
+          "state_step": 240,
+          "money_own": 1819.3529411764705,
+          "money_rival": 4290.823529411765,
+          "cash_gap": -2471.470588235294,
+          "own_cows": 7.882352941176471,
+          "own_sheep": 4.0,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 5.764705882352941,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 3.0,
+          "rival_wool_ready": 0.0,
+          "own_strawberry_tiles": 10.882352941176471,
+          "rival_strawberry_tiles": 19.941176470588236,
+          "milk_price": 173.64705882352942,
+          "wool_price": 93.94117647058823,
+          "strawberry_price": 185.0
+        },
+        {
+          "state_step": 288,
+          "money_own": 13497.35294117647,
+          "money_rival": 7352.64705882353,
+          "cash_gap": 6144.705882352941,
+          "own_cows": 9.764705882352942,
+          "own_sheep": 4.117647058823529,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 5.882352941176471,
+          "own_wool_ready": 8.0,
+          "rival_milk_ready": 3.0,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 27.11764705882353,
+          "rival_strawberry_tiles": 35.94117647058823,
+          "milk_price": 177.11764705882354,
+          "wool_price": 110.58823529411765,
+          "strawberry_price": 197.41176470588235
+        },
+        {
+          "state_step": 360,
+          "money_own": 18227.823529411766,
+          "money_rival": 14148.882352941177,
+          "cash_gap": 4078.9411764705883,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.235294117647059,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 17.705882352941178,
+          "own_wool_ready": 8.705882352941176,
+          "rival_milk_ready": 21.0,
+          "rival_wool_ready": 16.705882352941178,
+          "own_strawberry_tiles": 32.88235294117647,
+          "rival_strawberry_tiles": 35.94117647058823,
+          "milk_price": 162.7058823529412,
+          "wool_price": 39.0,
+          "strawberry_price": 213.35294117647058
+        },
+        {
+          "state_step": 432,
+          "money_own": 32926.76470588235,
+          "money_rival": 23758.058823529413,
+          "cash_gap": 9168.70588235294,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.352941176470588,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 5.823529411764706,
+          "own_wool_ready": 8.823529411764707,
+          "rival_milk_ready": 13.647058823529411,
+          "rival_wool_ready": 16.470588235294116,
+          "own_strawberry_tiles": 32.8235294117647,
+          "rival_strawberry_tiles": 35.94117647058823,
+          "milk_price": 85.76470588235294,
+          "wool_price": 44.76470588235294,
+          "strawberry_price": 221.1764705882353
+        },
+        {
+          "state_step": 504,
+          "money_own": 43010.0,
+          "money_rival": 41574.470588235294,
+          "cash_gap": 1435.5294117647059,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.352941176470588,
+          "rival_cows": 7.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 23.176470588235293,
+          "own_wool_ready": 9.0,
+          "rival_milk_ready": 12.0,
+          "rival_wool_ready": 16.0,
+          "own_strawberry_tiles": 32.8235294117647,
+          "rival_strawberry_tiles": 32.94117647058823,
+          "milk_price": 23.529411764705884,
+          "wool_price": 56.94117647058823,
+          "strawberry_price": 200.23529411764707
+        },
+        {
+          "state_step": 576,
+          "money_own": 61144.05882352941,
+          "money_rival": 57246.05882352941,
+          "cash_gap": 3898.0,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.352941176470588,
+          "rival_cows": 8.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 6.117647058823529,
+          "own_wool_ready": 8.764705882352942,
+          "rival_milk_ready": 17.529411764705884,
+          "rival_wool_ready": 16.41176470588235,
+          "own_strawberry_tiles": 26.0,
+          "rival_strawberry_tiles": 18.0,
+          "milk_price": 34.8235294117647,
+          "wool_price": 52.529411764705884,
+          "strawberry_price": 102.52941176470588
+        },
+        {
+          "state_step": 648,
+          "money_own": 66889.11764705883,
+          "money_rival": 65987.0,
+          "cash_gap": 902.1176470588235,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.352941176470588,
+          "rival_cows": 8.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 23.058823529411764,
+          "own_wool_ready": 8.882352941176471,
+          "rival_milk_ready": 13.882352941176471,
+          "rival_wool_ready": 16.176470588235293,
+          "own_strawberry_tiles": 21.705882352941178,
+          "rival_strawberry_tiles": 5.0,
+          "milk_price": 25.41176470588235,
+          "wool_price": 65.3529411764706,
+          "strawberry_price": 68.29411764705883
+        },
+        {
+          "state_step": 696,
+          "money_own": 71219.5294117647,
+          "money_rival": 72130.94117647059,
+          "cash_gap": -911.4117647058823,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.117647058823529,
+          "rival_cows": 8.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 23.058823529411764,
+          "own_wool_ready": 4.529411764705882,
+          "rival_milk_ready": 18.0,
+          "rival_wool_ready": 0.11764705882352941,
+          "own_strawberry_tiles": 5.647058823529412,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 21.41176470588235,
+          "wool_price": 57.588235294117645,
+          "strawberry_price": 59.76470588235294
+        },
+        {
+          "state_step": 719,
+          "money_own": 76833.94117647059,
+          "money_rival": 78269.76470588235,
+          "cash_gap": -1435.8235294117646,
+          "own_cows": 9.705882352941176,
+          "own_sheep": 4.117647058823529,
+          "rival_cows": 8.882352941176471,
+          "rival_sheep": 4.117647058823529,
+          "own_milk_ready": 0.0,
+          "own_wool_ready": 0.0,
+          "rival_milk_ready": 0.0,
+          "rival_wool_ready": 0.11764705882352941,
+          "own_strawberry_tiles": 0.058823529411764705,
+          "rival_strawberry_tiles": 0.0,
+          "milk_price": 7.764705882352941,
+          "wool_price": 58.88235294117647,
+          "strawberry_price": 85.41176470588235
+        }
+      ]
+    }
+  },
+  "stable_losses": [
+    {
+      "seed": 540301,
+      "candidate_seat": 0,
+      "stable_margin": -313,
+      "exact_x562_margin": -562,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        2,
+        6,
+        0,
+        4,
+        1,
+        4,
+        4,
+        7
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540306,
+      "candidate_seat": 0,
+      "stable_margin": -193,
+      "exact_x562_margin": -697,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        1,
+        0,
+        6,
+        4,
+        3,
+        2,
+        5
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540308,
+      "candidate_seat": 0,
+      "stable_margin": -1660,
+      "exact_x562_margin": -1955,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        3,
+        6,
+        0,
+        0,
+        2,
+        0,
+        2,
+        6
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540316,
+      "candidate_seat": 0,
+      "stable_margin": -1924,
+      "exact_x562_margin": -2537,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        0,
+        2,
+        5,
+        5,
+        1,
+        4,
+        3,
+        0
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        3
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540325,
+      "candidate_seat": 0,
+      "stable_margin": -160,
+      "exact_x562_margin": -535,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        4,
+        6,
+        3,
+        1,
+        6,
+        4,
+        4,
+        4
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        3
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540328,
+      "candidate_seat": 0,
+      "stable_margin": -788,
+      "exact_x562_margin": -1004,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        6,
+        7,
+        0,
+        3,
+        0,
+        2,
+        4
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540337,
+      "candidate_seat": 0,
+      "stable_margin": -6553,
+      "exact_x562_margin": 5205,
+      "rival_route_diagnostic": 64,
+      "town_shops": [
+        7,
+        6,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3
+      ],
+      "terminal_public_animals_own": [
+        0,
+        6,
+        8
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        7,
+        6
+      ]
+    },
+    {
+      "seed": 540341,
+      "candidate_seat": 0,
+      "stable_margin": -248,
+      "exact_x562_margin": -749,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        0,
+        1,
+        4,
+        3,
+        5,
+        1,
+        6,
+        6
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540347,
+      "candidate_seat": 0,
+      "stable_margin": -4943,
+      "exact_x562_margin": -5543,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        3,
+        2,
+        2,
+        5,
+        5,
+        7,
+        3,
+        4
+      ],
+      "terminal_public_animals_own": [
+        0,
+        9,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540361,
+      "candidate_seat": 0,
+      "stable_margin": -5008,
+      "exact_x562_margin": -5621,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        2,
+        6,
+        5,
+        0,
+        0,
+        5,
+        4
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540301,
+      "candidate_seat": 1,
+      "stable_margin": -1218,
+      "exact_x562_margin": -1467,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        2,
+        6,
+        0,
+        4,
+        1,
+        4,
+        4,
+        7
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540306,
+      "candidate_seat": 1,
+      "stable_margin": -193,
+      "exact_x562_margin": -697,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        1,
+        0,
+        6,
+        4,
+        3,
+        2,
+        5
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540321,
+      "candidate_seat": 1,
+      "stable_margin": -1134,
+      "exact_x562_margin": -902,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        0,
+        1,
+        3,
+        7,
+        2,
+        4,
+        5
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540328,
+      "candidate_seat": 1,
+      "stable_margin": -530,
+      "exact_x562_margin": -950,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        6,
+        7,
+        0,
+        3,
+        0,
+        2,
+        6
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540341,
+      "candidate_seat": 1,
+      "stable_margin": -248,
+      "exact_x562_margin": -749,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        0,
+        1,
+        4,
+        3,
+        5,
+        1,
+        6,
+        6
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540361,
+      "candidate_seat": 1,
+      "stable_margin": -4048,
+      "exact_x562_margin": -4661,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        1,
+        2,
+        6,
+        5,
+        0,
+        0,
+        5,
+        4
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    },
+    {
+      "seed": 540362,
+      "candidate_seat": 1,
+      "stable_margin": -484,
+      "exact_x562_margin": -985,
+      "rival_route_diagnostic": 63,
+      "town_shops": [
+        4,
+        1,
+        3,
+        4,
+        2,
+        5,
+        3,
+        5
+      ],
+      "terminal_public_animals_own": [
+        0,
+        10,
+        4
+      ],
+      "terminal_public_animals_rival": [
+        0,
+        9,
+        4
+      ]
+    }
+  ]
+}

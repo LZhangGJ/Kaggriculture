@@ -1,0 +1,427 @@
+{
+  "status": "PASS",
+  "games": 42,
+  "actions": 30198,
+  "rows": [
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 102370.0,
+      "opponent_cash": 70330.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 102370.0,
+      "opponent_cash": 70330.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 108965.0,
+      "opponent_cash": 106526.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 108965.0,
+      "opponent_cash": 106526.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 75622.0,
+      "opponent_cash": 67330.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 75622.0,
+      "opponent_cash": 67330.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 102229.0,
+      "opponent_cash": 108091.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 102229.0,
+      "opponent_cash": 108091.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 85419.0,
+      "opponent_cash": 75644.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 85419.0,
+      "opponent_cash": 75644.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 112663.0,
+      "opponent_cash": 96482.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 112663.0,
+      "opponent_cash": 96482.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 94774.0,
+      "opponent_cash": 84007.0
+    },
+    {
+      "policy": "T2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 94774.0,
+      "opponent_cash": 84007.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 84821.0,
+      "opponent_cash": 63765.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 84821.0,
+      "opponent_cash": 63765.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97224.0,
+      "opponent_cash": 82997.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97224.0,
+      "opponent_cash": 82997.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 78293.0,
+      "opponent_cash": 63508.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 78293.0,
+      "opponent_cash": 63508.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 106182.0,
+      "opponent_cash": 82146.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 106182.0,
+      "opponent_cash": 82146.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 99932.0,
+      "opponent_cash": 97326.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 99932.0,
+      "opponent_cash": 97326.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 93045.0,
+      "opponent_cash": 83056.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 80187.0,
+      "opponent_cash": 68434.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97372.0,
+      "opponent_cash": 77449.0
+    },
+    {
+      "policy": "R1",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97372.0,
+      "opponent_cash": 77449.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 84821.0,
+      "opponent_cash": 63765.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 84821.0,
+      "opponent_cash": 63765.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97224.0,
+      "opponent_cash": 82997.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97224.0,
+      "opponent_cash": 82997.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 78434.0,
+      "opponent_cash": 63459.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "boatlee_v29",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 78434.0,
+      "opponent_cash": 63459.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 106183.0,
+      "opponent_cash": 82145.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 106183.0,
+      "opponent_cash": 82145.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 100548.0,
+      "opponent_cash": 98007.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "lynn_v5",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 100548.0,
+      "opponent_cash": 98007.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 104851.0,
+      "opponent_cash": 87697.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 104851.0,
+      "opponent_cash": 87697.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 0,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97372.0,
+      "opponent_cash": 77449.0
+    },
+    {
+      "policy": "R2",
+      "seed": 2609099000,
+      "seat": 1,
+      "opponent": "yhay81_three_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 97372.0,
+      "opponent_cash": 77449.0
+    }
+  ]
+}

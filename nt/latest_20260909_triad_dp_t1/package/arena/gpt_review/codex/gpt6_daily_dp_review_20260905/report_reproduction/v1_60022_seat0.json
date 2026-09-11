@@ -1,0 +1,1595 @@
+{
+  "version": "v1",
+  "seed": 60022,
+  "seat": 0,
+  "group": "v1_report50",
+  "status": "PASS",
+  "cash": 170551.0,
+  "expected_cash": null,
+  "exact_report_match": null,
+  "steps": 719,
+  "opponent_cash": 3000,
+  "action_mean_ms": 2.507352711884136,
+  "action_max_ms": 118.76019998453557,
+  "action_seconds": 1.8027865998446941,
+  "wall_seconds": 2.3645005999715067,
+  "days": [
+    {
+      "day": 0,
+      "cash": 3000.0,
+      "land": 1,
+      "assets": {},
+      "plan": {
+        "day": 0,
+        "money": 3000.0,
+        "new": [
+          [
+            4,
+            4,
+            "COW"
+          ],
+          [
+            4,
+            3,
+            "COW"
+          ],
+          [
+            3,
+            4,
+            "COW"
+          ],
+          [
+            4,
+            2,
+            "SHEEP"
+          ],
+          [
+            3,
+            3,
+            "COW"
+          ],
+          [
+            2,
+            4,
+            "SHEEP"
+          ],
+          [
+            4,
+            1,
+            "WHEAT"
+          ],
+          [
+            3,
+            2,
+            "MELON"
+          ]
+        ],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 1,
+      "cash": 148.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 1,
+        "MELON": 1,
+        "SHEEP": 2,
+        "COW": 3,
+        "PASTURE": 1
+      },
+      "plan": {
+        "day": 1,
+        "money": 148.0,
+        "new": [
+          [
+            4,
+            3,
+            "COW"
+          ],
+          [
+            2,
+            3,
+            "WHEAT"
+          ],
+          [
+            1,
+            4,
+            "WHEAT"
+          ],
+          [
+            4,
+            0,
+            "WHEAT"
+          ],
+          [
+            3,
+            1,
+            "WHEAT"
+          ],
+          [
+            2,
+            2,
+            "WHEAT"
+          ],
+          [
+            1,
+            3,
+            "WHEAT"
+          ],
+          [
+            0,
+            4,
+            "WHEAT"
+          ],
+          [
+            3,
+            0,
+            "WHEAT"
+          ],
+          [
+            2,
+            1,
+            "WHEAT"
+          ],
+          [
+            1,
+            2,
+            "WHEAT"
+          ],
+          [
+            0,
+            3,
+            "WHEAT"
+          ],
+          [
+            2,
+            0,
+            "WHEAT"
+          ],
+          [
+            1,
+            1,
+            "WHEAT"
+          ],
+          [
+            0,
+            2,
+            "WHEAT"
+          ],
+          [
+            1,
+            0,
+            "MELON"
+          ]
+        ],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 2,
+      "cash": 179.0,
+      "land": 1,
+      "assets": {
+        "MELON": 2,
+        "WHEAT": 14,
+        "SHEEP": 2,
+        "COW": 3,
+        "PASTURE": 1
+      },
+      "plan": {
+        "day": 2,
+        "money": 179.0,
+        "new": [
+          [
+            4,
+            3,
+            "COW"
+          ],
+          [
+            1,
+            1,
+            "MELON"
+          ],
+          [
+            0,
+            1,
+            "MELON"
+          ],
+          [
+            0,
+            0,
+            "MELON"
+          ]
+        ],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 3,
+      "cash": 118.0,
+      "land": 1,
+      "assets": {
+        "MELON": 4,
+        "WHEAT": 13,
+        "WEED": 1,
+        "SHEEP": 2,
+        "COW": 4
+      },
+      "plan": {
+        "day": 3,
+        "money": 118.0,
+        "new": [
+          [
+            4,
+            1,
+            "MELON"
+          ],
+          [
+            1,
+            1,
+            "MELON"
+          ]
+        ],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 4,
+      "cash": 249.0,
+      "land": 1,
+      "assets": {
+        "MELON": 6,
+        "WHEAT": 13,
+        "SHEEP": 2,
+        "COW": 4
+      },
+      "plan": {
+        "day": 4,
+        "money": 249.0,
+        "new": [],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 5,
+      "cash": 643.0,
+      "land": 1,
+      "assets": {
+        "MELON": 6,
+        "WHEAT": 13,
+        "SHEEP": 2,
+        "COW": 4
+      },
+      "plan": {
+        "day": 5,
+        "money": 643.0,
+        "new": [],
+        "animals": 6,
+        "land": false
+      }
+    },
+    {
+      "day": 6,
+      "cash": 832.0,
+      "land": 1,
+      "assets": {
+        "MELON": 6,
+        "SHEEP": 2,
+        "COW": 4
+      },
+      "plan": {
+        "day": 6,
+        "money": 832.0,
+        "new": [
+          [
+            2,
+            3,
+            "COW"
+          ],
+          [
+            1,
+            4,
+            "WHEAT"
+          ],
+          [
+            4,
+            0,
+            "WHEAT"
+          ],
+          [
+            3,
+            1,
+            "WHEAT"
+          ],
+          [
+            2,
+            2,
+            "WHEAT"
+          ],
+          [
+            1,
+            3,
+            "WHEAT"
+          ],
+          [
+            0,
+            4,
+            "WHEAT"
+          ],
+          [
+            3,
+            0,
+            "WHEAT"
+          ],
+          [
+            2,
+            1,
+            "WHEAT"
+          ],
+          [
+            1,
+            2,
+            "WHEAT"
+          ],
+          [
+            0,
+            3,
+            "WHEAT"
+          ],
+          [
+            2,
+            0,
+            "MELON"
+          ],
+          [
+            0,
+            2,
+            "MELON"
+          ]
+        ],
+        "animals": 7,
+        "land": true
+      }
+    },
+    {
+      "day": 7,
+      "cash": 1132.0,
+      "land": 2,
+      "assets": {
+        "MELON": 8,
+        "WHEAT": 10,
+        "SHEEP": 2,
+        "COW": 5
+      },
+      "plan": {
+        "day": 7,
+        "money": 1132.0,
+        "new": [
+          [
+            5,
+            4,
+            "COW"
+          ],
+          [
+            5,
+            3,
+            "COW"
+          ],
+          [
+            6,
+            4,
+            "COW"
+          ],
+          [
+            5,
+            2,
+            "SHEEP"
+          ],
+          [
+            6,
+            3,
+            "WHEAT"
+          ],
+          [
+            7,
+            4,
+            "WHEAT"
+          ],
+          [
+            5,
+            1,
+            "WHEAT"
+          ],
+          [
+            6,
+            2,
+            "WHEAT"
+          ],
+          [
+            7,
+            3,
+            "WHEAT"
+          ],
+          [
+            8,
+            4,
+            "WHEAT"
+          ],
+          [
+            5,
+            0,
+            "WHEAT"
+          ],
+          [
+            6,
+            1,
+            "WHEAT"
+          ],
+          [
+            7,
+            2,
+            "WHEAT"
+          ],
+          [
+            8,
+            3,
+            "WHEAT"
+          ],
+          [
+            9,
+            4,
+            "WHEAT"
+          ],
+          [
+            6,
+            0,
+            "WHEAT"
+          ],
+          [
+            7,
+            1,
+            "WHEAT"
+          ],
+          [
+            8,
+            2,
+            "WHEAT"
+          ],
+          [
+            9,
+            3,
+            "MELON"
+          ],
+          [
+            7,
+            0,
+            "MELON"
+          ]
+        ],
+        "animals": 11,
+        "land": false
+      }
+    },
+    {
+      "day": 8,
+      "cash": 1638.0,
+      "land": 2,
+      "assets": {
+        "MELON": 10,
+        "WHEAT": 23,
+        "SHEEP": 3,
+        "COW": 8
+      },
+      "plan": {
+        "day": 8,
+        "money": 1638.0,
+        "new": [
+          [
+            5,
+            0,
+            "WHEAT"
+          ],
+          [
+            8,
+            1,
+            "MELON"
+          ],
+          [
+            9,
+            2,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            0,
+            "STRAWBERRY"
+          ],
+          [
+            9,
+            1,
+            "STRAWBERRY"
+          ],
+          [
+            9,
+            0,
+            "STRAWBERRY"
+          ]
+        ],
+        "animals": 11,
+        "land": false
+      }
+    },
+    {
+      "day": 9,
+      "cash": 1448.0,
+      "land": 2,
+      "assets": {
+        "MELON": 11,
+        "WHEAT": 24,
+        "STRAWBERRY": 4,
+        "SHEEP": 3,
+        "COW": 8
+      },
+      "plan": {
+        "day": 9,
+        "money": 1448.0,
+        "new": [],
+        "animals": 11,
+        "land": true
+      }
+    },
+    {
+      "day": 10,
+      "cash": 4061.0,
+      "land": 3,
+      "assets": {
+        "MELON": 11,
+        "WHEAT": 24,
+        "STRAWBERRY": 4,
+        "SHEEP": 3,
+        "COW": 8
+      },
+      "plan": {
+        "day": 10,
+        "money": 4061.0,
+        "new": [
+          [
+            4,
+            5,
+            "SHEEP"
+          ],
+          [
+            3,
+            5,
+            "STRAWBERRY"
+          ],
+          [
+            4,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            2,
+            5,
+            "STRAWBERRY"
+          ],
+          [
+            3,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            4,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            5,
+            "STRAWBERRY"
+          ],
+          [
+            2,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            3,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            4,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            0,
+            5,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            2,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            3,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            4,
+            9,
+            "CARROT"
+          ],
+          [
+            0,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            2,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            3,
+            9,
+            "CARROT"
+          ],
+          [
+            0,
+            7,
+            "STRAWBERRY"
+          ]
+        ],
+        "animals": 12,
+        "land": false
+      }
+    },
+    {
+      "day": 11,
+      "cash": 3113.0,
+      "land": 3,
+      "assets": {
+        "MELON": 10,
+        "WHEAT": 15,
+        "STRAWBERRY": 21,
+        "SHEEP": 4,
+        "COW": 8,
+        "CARROT": 2
+      },
+      "plan": {
+        "day": 11,
+        "money": 3113.0,
+        "new": [
+          [
+            3,
+            2,
+            "WHEAT"
+          ],
+          [
+            1,
+            4,
+            "WHEAT"
+          ],
+          [
+            3,
+            1,
+            "WHEAT"
+          ],
+          [
+            2,
+            2,
+            "WHEAT"
+          ],
+          [
+            1,
+            3,
+            "WHEAT"
+          ],
+          [
+            0,
+            4,
+            "WHEAT"
+          ],
+          [
+            3,
+            0,
+            "WHEAT"
+          ],
+          [
+            2,
+            1,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            2,
+            "CARROT"
+          ],
+          [
+            0,
+            3,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            2,
+            9,
+            "STRAWBERRY"
+          ],
+          [
+            0,
+            8,
+            "CARROT"
+          ],
+          [
+            1,
+            9,
+            "STRAWBERRY"
+          ],
+          [
+            0,
+            9,
+            "STRAWBERRY"
+          ]
+        ],
+        "animals": 12,
+        "land": true
+      }
+    },
+    {
+      "day": 12,
+      "cash": 1825.0,
+      "land": 4,
+      "assets": {
+        "MELON": 9,
+        "WHEAT": 8,
+        "WEED": 1,
+        "STRAWBERRY": 27,
+        "CARROT": 4,
+        "SHEEP": 4,
+        "COW": 8
+      },
+      "plan": {
+        "day": 12,
+        "money": 1825.0,
+        "new": [
+          [
+            5,
+            5,
+            "WHEAT"
+          ],
+          [
+            6,
+            5,
+            "WHEAT"
+          ],
+          [
+            5,
+            6,
+            "WHEAT"
+          ],
+          [
+            6,
+            3,
+            "WHEAT"
+          ],
+          [
+            7,
+            4,
+            "WHEAT"
+          ],
+          [
+            7,
+            5,
+            "WHEAT"
+          ],
+          [
+            6,
+            6,
+            "WHEAT"
+          ],
+          [
+            5,
+            7,
+            "WHEAT"
+          ],
+          [
+            5,
+            1,
+            "WHEAT"
+          ],
+          [
+            6,
+            2,
+            "WHEAT"
+          ],
+          [
+            7,
+            3,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            4,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            5,
+            "CARROT"
+          ],
+          [
+            7,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            6,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            5,
+            8,
+            "CARROT"
+          ],
+          [
+            4,
+            0,
+            "STRAWBERRY"
+          ],
+          [
+            6,
+            1,
+            "STRAWBERRY"
+          ],
+          [
+            7,
+            2,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            3,
+            "STRAWBERRY"
+          ]
+        ],
+        "animals": 12,
+        "land": false
+      }
+    },
+    {
+      "day": 13,
+      "cash": 7369.0,
+      "land": 4,
+      "assets": {
+        "MELON": 7,
+        "WHEAT": 17,
+        "STRAWBERRY": 35,
+        "CARROT": 6,
+        "SHEEP": 4,
+        "COW": 8
+      },
+      "plan": {
+        "day": 13,
+        "money": 7369.0,
+        "new": [
+          [
+            5,
+            0,
+            "GOOSE"
+          ],
+          [
+            9,
+            4,
+            "STRAWBERRY"
+          ],
+          [
+            9,
+            5,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            6,
+            "STRAWBERRY"
+          ],
+          [
+            7,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            6,
+            8,
+            "MELON"
+          ],
+          [
+            5,
+            9,
+            "STRAWBERRY"
+          ],
+          [
+            6,
+            0,
+            "MELON"
+          ],
+          [
+            7,
+            1,
+            "STRAWBERRY"
+          ],
+          [
+            8,
+            2,
+            "STRAWBERRY"
+          ],
+          [
+            9,
+            6,
+            "MELON"
+          ],
+          [
+            8,
+            7,
+            "STRAWBERRY"
+          ],
+          [
+            7,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            6,
+            9,
+            "MELON"
+          ],
+          [
+            9,
+            7,
+            "MELON"
+          ],
+          [
+            8,
+            8,
+            "STRAWBERRY"
+          ],
+          [
+            7,
+            9,
+            "STRAWBERRY"
+          ],
+          [
+            1,
+            0,
+            "STRAWBERRY"
+          ],
+          [
+            0,
+            1,
+            "MELON"
+          ],
+          [
+            9,
+            8,
+            "CARROT"
+          ]
+        ],
+        "animals": 13,
+        "land": false
+      }
+    },
+    {
+      "day": 14,
+      "cash": 10887.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 47,
+        "MELON": 11,
+        "WHEAT": 17,
+        "GOOSE": 1,
+        "CARROT": 5,
+        "SHEEP": 4,
+        "COW": 8
+      },
+      "plan": {
+        "day": 14,
+        "money": 10887.0,
+        "new": [
+          [
+            4,
+            1,
+            "GOOSE"
+          ],
+          [
+            4,
+            9,
+            "MELON"
+          ],
+          [
+            3,
+            9,
+            "MELON"
+          ],
+          [
+            1,
+            1,
+            "CARROT"
+          ],
+          [
+            8,
+            9,
+            "MELON"
+          ],
+          [
+            0,
+            0,
+            "CARROT"
+          ],
+          [
+            9,
+            9,
+            "CARROT"
+          ]
+        ],
+        "animals": 14,
+        "land": false
+      }
+    },
+    {
+      "day": 15,
+      "cash": 14787.0,
+      "land": 4,
+      "assets": {
+        "CARROT": 6,
+        "STRAWBERRY": 47,
+        "MELON": 14,
+        "WHEAT": 17,
+        "GOOSE": 2,
+        "SHEEP": 4,
+        "COW": 8
+      },
+      "plan": {
+        "day": 15,
+        "money": 14787.0,
+        "new": [
+          [
+            1,
+            2,
+            "SHEEP"
+          ],
+          [
+            0,
+            8,
+            "SHEEP"
+          ]
+        ],
+        "animals": 16,
+        "land": false
+      }
+    },
+    {
+      "day": 16,
+      "cash": 18268.0,
+      "land": 4,
+      "assets": {
+        "CARROT": 4,
+        "STRAWBERRY": 47,
+        "MELON": 14,
+        "GOOSE": 2,
+        "WHEAT": 10,
+        "SHEEP": 6,
+        "COW": 8
+      },
+      "plan": {
+        "day": 16,
+        "money": 18268.0,
+        "new": [
+          [
+            3,
+            2,
+            "SHEEP"
+          ],
+          [
+            1,
+            4,
+            "SHEEP"
+          ],
+          [
+            8,
+            5,
+            "SHEEP"
+          ],
+          [
+            5,
+            8,
+            "SHEEP"
+          ]
+        ],
+        "animals": 20,
+        "land": false
+      }
+    },
+    {
+      "day": 17,
+      "cash": 24177.0,
+      "land": 4,
+      "assets": {
+        "CARROT": 3,
+        "STRAWBERRY": 47,
+        "GOOSE": 2,
+        "MELON": 12,
+        "SHEEP": 10,
+        "COW": 8
+      },
+      "plan": {
+        "day": 17,
+        "money": 24177.0,
+        "new": [
+          [
+            5,
+            5,
+            "SHEEP"
+          ],
+          [
+            6,
+            5,
+            "SHEEP"
+          ],
+          [
+            5,
+            6,
+            "SHEEP"
+          ],
+          [
+            6,
+            3,
+            "WHEAT"
+          ],
+          [
+            7,
+            4,
+            "WHEAT"
+          ],
+          [
+            7,
+            5,
+            "WHEAT"
+          ],
+          [
+            6,
+            6,
+            "MELON"
+          ],
+          [
+            5,
+            7,
+            "MELON"
+          ]
+        ],
+        "animals": 23,
+        "land": false
+      }
+    },
+    {
+      "day": 18,
+      "cash": 26406.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 47,
+        "GOOSE": 2,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 8,
+        "WHEAT": 3
+      },
+      "plan": {
+        "day": 18,
+        "money": 26406.0,
+        "new": [
+          [
+            5,
+            1,
+            "SHEEP"
+          ],
+          [
+            6,
+            2,
+            "MELON"
+          ],
+          [
+            3,
+            1,
+            "MELON"
+          ]
+        ],
+        "animals": 24,
+        "land": false
+      }
+    },
+    {
+      "day": 19,
+      "cash": 31111.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 47,
+        "GOOSE": 2,
+        "MELON": 13,
+        "SHEEP": 14,
+        "COW": 8,
+        "WHEAT": 3,
+        "WEED": 1
+      },
+      "plan": {
+        "day": 19,
+        "money": 31111.0,
+        "new": [
+          [
+            2,
+            2,
+            "MELON"
+          ],
+          [
+            1,
+            3,
+            "MELON"
+          ]
+        ],
+        "animals": 24,
+        "land": false
+      }
+    },
+    {
+      "day": 20,
+      "cash": 34997.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 47,
+        "GOOSE": 2,
+        "MELON": 15,
+        "SHEEP": 14,
+        "COW": 8,
+        "WHEAT": 3,
+        "WEED": 1
+      },
+      "plan": {
+        "day": 20,
+        "money": 34997.0,
+        "new": [
+          [
+            0,
+            4,
+            "SHEEP"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 21,
+      "cash": 38453.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 47,
+        "WEED": 1,
+        "GOOSE": 2,
+        "MELON": 15,
+        "SHEEP": 15,
+        "COW": 8,
+        "WHEAT": 3
+      },
+      "plan": {
+        "day": 21,
+        "money": 38453.0,
+        "new": [],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 22,
+      "cash": 41340.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 46,
+        "WEED": 2,
+        "GOOSE": 2,
+        "MELON": 15,
+        "SHEEP": 15,
+        "COW": 8
+      },
+      "plan": {
+        "day": 22,
+        "money": 41340.0,
+        "new": [
+          [
+            6,
+            3,
+            "WHEAT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 23,
+      "cash": 57031.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 46,
+        "WEED": 3,
+        "GOOSE": 2,
+        "MELON": 14,
+        "SHEEP": 15,
+        "COW": 8,
+        "WHEAT": 1
+      },
+      "plan": {
+        "day": 23,
+        "money": 57031.0,
+        "new": [
+          [
+            7,
+            4,
+            "CARROT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 24,
+      "cash": 70010.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 40,
+        "WEED": 9,
+        "GOOSE": 2,
+        "SHEEP": 15,
+        "MELON": 10,
+        "COW": 8,
+        "WHEAT": 1,
+        "CARROT": 1
+      },
+      "plan": {
+        "day": 24,
+        "money": 70010.0,
+        "new": [
+          [
+            7,
+            5,
+            "WHEAT"
+          ],
+          [
+            4,
+            7,
+            "WHEAT"
+          ],
+          [
+            3,
+            7,
+            "WHEAT"
+          ],
+          [
+            3,
+            1,
+            "WHEAT"
+          ],
+          [
+            9,
+            4,
+            "CARROT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 25,
+      "cash": 84966.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 39,
+        "WEED": 7,
+        "GOOSE": 2,
+        "WHEAT": 4,
+        "SHEEP": 15,
+        "MELON": 5,
+        "COW": 8,
+        "CARROT": 2
+      },
+      "plan": {
+        "day": 25,
+        "money": 84966.0,
+        "new": [
+          [
+            3,
+            7,
+            "WHEAT"
+          ],
+          [
+            2,
+            7,
+            "WHEAT"
+          ],
+          [
+            3,
+            8,
+            "WHEAT"
+          ],
+          [
+            6,
+            8,
+            "WHEAT"
+          ],
+          [
+            4,
+            9,
+            "WHEAT"
+          ],
+          [
+            3,
+            0,
+            "WHEAT"
+          ],
+          [
+            6,
+            0,
+            "WHEAT"
+          ],
+          [
+            9,
+            3,
+            "WHEAT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 26,
+      "cash": 100802.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 34,
+        "WEED": 9,
+        "WHEAT": 12,
+        "GOOSE": 2,
+        "SHEEP": 15,
+        "MELON": 5,
+        "COW": 8,
+        "CARROT": 2
+      },
+      "plan": {
+        "day": 26,
+        "money": 100802.0,
+        "new": [
+          [
+            9,
+            6,
+            "WHEAT"
+          ],
+          [
+            1,
+            7,
+            "WHEAT"
+          ],
+          [
+            2,
+            8,
+            "CARROT"
+          ],
+          [
+            7,
+            8,
+            "CARROT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 27,
+      "cash": 111296.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 33,
+        "WEED": 7,
+        "WHEAT": 13,
+        "GOOSE": 2,
+        "SHEEP": 15,
+        "MELON": 5,
+        "COW": 8,
+        "CARROT": 3
+      },
+      "plan": {
+        "day": 27,
+        "money": 111296.0,
+        "new": [
+          [
+            6,
+            3,
+            "CARROT"
+          ]
+        ],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 28,
+      "cash": 125700.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 22,
+        "WEED": 18,
+        "WHEAT": 13,
+        "GOOSE": 2,
+        "SHEEP": 15,
+        "MELON": 3,
+        "COW": 8,
+        "CARROT": 3
+      },
+      "plan": {
+        "day": 28,
+        "money": 125700.0,
+        "new": [],
+        "animals": 25,
+        "land": false
+      }
+    },
+    {
+      "day": 29,
+      "cash": 135049.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 18,
+        "WEED": 22,
+        "WHEAT": 10,
+        "GOOSE": 2,
+        "SHEEP": 15,
+        "MELON": 2,
+        "COW": 8,
+        "CARROT": 3
+      },
+      "plan": {
+        "day": 29,
+        "money": 135049.0,
+        "new": [],
+        "animals": 25,
+        "land": false
+      }
+    }
+  ],
+  "forecast_probe": null
+}

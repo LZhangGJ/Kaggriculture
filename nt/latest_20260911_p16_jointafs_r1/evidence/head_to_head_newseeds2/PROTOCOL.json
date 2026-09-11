@@ -1,0 +1,19 @@
+{
+  "afs": "P16 JointAFS R1",
+  "parent": "T3R1 TakeoverMerged R1",
+  "afs_binary_sha256": "0302d5e2b6e30a4b6fed7a0350228070621c462791f6fb9a706a5ba91084e306",
+  "parent_binary_sha256": "63f40fe3e07897537ae0b80e5c987d3208392209f07c232b0bc43d0a5ae98903",
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official": "1.32.7",
+  "seed_start": 2610120000,
+  "seed_end": 2610120099,
+  "seed_count": 100,
+  "both_seats": true,
+  "games": 200,
+  "workers": 16,
+  "opening": "none",
+  "future_replay_access": false,
+  "seed_input": false,
+  "opponent_identity_input": false
+}

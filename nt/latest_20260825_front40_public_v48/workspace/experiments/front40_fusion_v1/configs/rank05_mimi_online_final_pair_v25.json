@@ -1,0 +1,18 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank05_mimi_first_shop_baseline_v25",
+      "family": "rank05_heavy_cow_mixed_crop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank05_mimi_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_stable_win_map_dev640_v6.json"
+    },
+    {
+      "name": "rank05_mimi_strong3_v25",
+      "family": "rank05_heavy_cow_mixed_crop_two_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank05_mimi_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_stable_win_map_dev640_v6.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank05_mimi_secondshop_strong3_dev640_v15.json"
+    }
+  ]
+}

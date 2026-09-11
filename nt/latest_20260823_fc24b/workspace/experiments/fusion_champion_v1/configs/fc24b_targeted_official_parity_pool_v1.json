@@ -1,0 +1,13 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc24b-targeted-official-parity-pool.v1",
+  "opponents": [
+    {
+      "name": "local_prt_v6",
+      "path": "submission/55541953_prt_v6/main.py"
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "submission/55655402_rayk_k320_adaptive_rank1/main.py"
+    }
+  ]
+}

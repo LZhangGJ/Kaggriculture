@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.jax_cache/
+.venv*/
+
+# The repository root ignores every directory named artifacts.  These four
+# frozen artifact directories are intentional, small, and required to replay
+# the accepted FC24B evidence.
+!workspace/experiments/fusion_champion_v1/artifacts/
+!workspace/experiments/fusion_champion_v1/artifacts/**
+!workspace/experiments/expert_business_agent_v2/artifacts/
+!workspace/experiments/expert_business_agent_v2/artifacts/**

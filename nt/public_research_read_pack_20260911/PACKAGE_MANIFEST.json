@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "package": "Kaggriculture bilingual lightweight reading pack",
+  "snapshot_date": "2026-09-11",
+  "languages": [
+    "zh-CN",
+    "en"
+  ],
+  "main_candidates": 516,
+  "main_reviewed": 514,
+  "ideas": 16,
+  "selected_sources": 27,
+  "followups": 405,
+  "accepted_reports_byte_identical": true,
+  "excluded": "Raw sources, linked repositories, binaries, replays, temporary models, duplicate standalone JSON index, and old detailed archive HTML.",
+  "browser_validation": "NOT_PASSED_BROWSER_URL_POLICY; no browser retry or workaround.",
+  "files": [
+    {
+      "path": "KAGGRICULTURE_STRATEGY_SYNTHESIS.html",
+      "bytes": 5424123,
+      "sha256": "4338f359e2f546316210400648baa8e2f5e699aea452ff8f2604abcace361d20"
+    },
+    {
+      "path": "KAGGRICULTURE_STRATEGY_SYNTHESIS_EN.html",
+      "bytes": 6451525,
+      "sha256": "3759faaa8d5b5d46f4229e3013bb1c31b24fa62fa82e193ee338630d22941074"
+    },
+    {
+      "path": "KAGGRICULTURE_STRATEGY_SYNTHESIS_ZH.md",
+      "bytes": 52153,
+      "sha256": "b0089f835317b580417a386368dc55a9027060aa5da8e18b4316f4dcb5ea5209"
+    },
+    {
+      "path": "KAGGRICULTURE_STRATEGY_SYNTHESIS_EN.md",
+      "bytes": 61614,
+      "sha256": "940916468ea6faf185836a15db2e5aa6c9ab6f5fe89b87d2600af9e1966e608e"
+    },
+    {
+      "path": "public_solutions_v2/families/user_schemes178/EXPERIMENT_CARDS178.json",
+      "bytes": 53834,
+      "sha256": "8ae6ee1565f528f62b49dbc789a401b5073b7258d3a8ef92f6bd1f87b099a0eb"
+    },
+    {
+      "path": "public_solutions_v2/families/user_schemes178/FINAL_ACCEPTANCE178.json",
+      "bytes": 2419,
+      "sha256": "11bdd248dd9dfc426faf8008a5157eab2435851c135132c72b3ceb5645565f70"
+    },
+    {
+      "path": "english_translation179/ACCEPTANCE179_EN.json",
+      "bytes": 4278,
+      "sha256": "b153fdbae988010644a88c3909725b435c857822e155ec34b3f1546d1615675d"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 2920,
+      "sha256": "9ceb4664a0d88704b88e4b727d565b3ad73d08a0f268f0223ce005c4a191f499"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 3343,
+      "sha256": "c05ffeb7578dfaaed75df77b1d71a1f74d7097c07fb9e87817ecf9805551f170"
+    },
+    {
+      "path": "START_HERE.html",
+      "bytes": 2200,
+      "sha256": "3b723f6bdae5bcd6446a298846e5b99149328b5f5560486bebb7664221f6a8d4"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 1860,
+      "sha256": "63f85f530a1043e6f15e65190bbb31f54febe1618201b49c737d921f486e0ee5"
+    }
+  ]
+}

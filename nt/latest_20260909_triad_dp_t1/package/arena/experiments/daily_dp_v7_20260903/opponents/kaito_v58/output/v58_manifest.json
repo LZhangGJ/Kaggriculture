@@ -1,0 +1,14 @@
+{
+  "agent": "v58 Public-State Known-Floor Minimax Control",
+  "main_sha256": "b041058ec187a8d0a01edc0eab8de068b53deca3e6c1973faf74ace6916ddcb9",
+  "main_bytes": 315484,
+  "archive_sha256": "90c679e02e78cb436128a6029d39c70a9f345912a1c9ff35956c5ee166b2061c",
+  "known_frozen_both_seats": "238/238",
+  "latest_v57_streams": "58/58",
+  "worst_known_margin": 10,
+  "runtime_features": "public state only",
+  "runtime_identity_features": false,
+  "runtime_lineage_features": false,
+  "runtime_seed_feature": false,
+  "future_opponent_actions": false
+}

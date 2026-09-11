@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "new_training_games": 89600,
+  "total_training_games": 806400,
+  "continued_from_step800_optimizer": true,
+  "final_selection_frozen": true
+}

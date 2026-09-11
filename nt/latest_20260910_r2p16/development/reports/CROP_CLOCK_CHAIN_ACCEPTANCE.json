@@ -1,0 +1,936 @@
+{
+  "status": "DEVELOPMENT_EVIDENCE_NOT_FINAL_90_PERCENT",
+  "original": {
+    "games": 2200,
+    "valid_games": 2200,
+    "errors": 0,
+    "r2_wins": 1501,
+    "losses": 699,
+    "ties": 0,
+    "r2_win_rate": 0.6822727272727273,
+    "r2_mean_cash": 103270.16772727272,
+    "opponent_mean_cash": 89396.49727272727,
+    "mean_margin": 13873.670454545454,
+    "median_margin": 4173.0
+  },
+  "versions": {
+    "P9": {
+      "overall": {
+        "games": 2200,
+        "valid_games": 2200,
+        "errors": 0,
+        "r2_wins": 1666,
+        "losses": 534,
+        "ties": 0,
+        "r2_win_rate": 0.7572727272727273,
+        "r2_mean_cash": 103996.17954545455,
+        "opponent_mean_cash": 89670.05454545455,
+        "mean_margin": 14326.125,
+        "median_margin": 4809.0
+      },
+      "paired_original": {
+        "rescued": 247,
+        "lost_wins": 82,
+        "mean_cash_delta": 726.0118181818182,
+        "mean_margin_delta": 452.45454545454544,
+        "win_delta": 0.075,
+        "paired_seed_win_delta95": [
+          0.025454545454545455,
+          0.12727272727272726
+        ]
+      },
+      "result": "local_sale_screen100/local_sale_1/local_sale_1/RESULTS.json",
+      "seconds": 487.453842819,
+      "independent_final_100": false,
+      "official_representative_review": {
+        "cases": 8,
+        "groups": [
+          "lost_win",
+          "rescued",
+          "still_lost",
+          "still_won"
+        ],
+        "replay_checks": "All saved official frames and both cash ledgers checked by audit_trace",
+        "own_noeffect_units": 0,
+        "own_market_rejects": 0,
+        "source": "local_sale_screen100/local_sale_1/local_sale_1/REVIEW_ZH.md"
+      }
+    },
+    "P10": {
+      "overall": {
+        "games": 2200,
+        "valid_games": 2200,
+        "errors": 0,
+        "r2_wins": 1646,
+        "losses": 554,
+        "ties": 0,
+        "r2_win_rate": 0.7481818181818182,
+        "r2_mean_cash": 105885.355,
+        "opponent_mean_cash": 90717.65727272727,
+        "mean_margin": 15167.697727272727,
+        "median_margin": 5917.0
+      },
+      "paired_original": {
+        "rescued": 324,
+        "lost_wins": 179,
+        "mean_cash_delta": 2615.1872727272726,
+        "mean_margin_delta": 1294.0272727272727,
+        "win_delta": 0.0659090909090909,
+        "paired_seed_win_delta95": [
+          0.0009090909090909069,
+          0.1318181818181818
+        ]
+      },
+      "result": "finite_crop_screen100/finite1_sale1_v2/finite1_sale1_v2/RESULTS.json",
+      "seconds": 492.585751404,
+      "independent_final_100": false,
+      "official_representative_review": {
+        "cases": 8,
+        "groups": [
+          "lost_win",
+          "rescued",
+          "still_lost",
+          "still_won"
+        ],
+        "replay_checks": "All saved official frames and both cash ledgers checked by audit_trace",
+        "own_noeffect_units": 0,
+        "own_market_rejects": 0,
+        "source": "finite_crop_screen100/finite1_sale1_v2/finite1_sale1_v2/REVIEW_ZH.md"
+      }
+    },
+    "P11": {
+      "overall": {
+        "games": 2200,
+        "valid_games": 2200,
+        "errors": 0,
+        "r2_wins": 1744,
+        "losses": 456,
+        "ties": 0,
+        "r2_win_rate": 0.7927272727272727,
+        "r2_mean_cash": 104974.86409090909,
+        "opponent_mean_cash": 89926.06818181818,
+        "mean_margin": 15048.79590909091,
+        "median_margin": 5302.5
+      },
+      "paired_original": {
+        "rescued": 404,
+        "lost_wins": 161,
+        "mean_cash_delta": 1704.6963636363637,
+        "mean_margin_delta": 1175.1254545454547,
+        "win_delta": 0.11045454545454546,
+        "paired_seed_win_delta95": [
+          0.039999999999999994,
+          0.18181818181818182
+        ]
+      },
+      "result": "crop_clock_screen100/cropclock1_sale1/cropclock1_sale1/RESULTS.json",
+      "seconds": 488.715119323,
+      "independent_final_100": false,
+      "official_representative_review": {
+        "cases": 8,
+        "groups": [
+          "lost_win",
+          "rescued",
+          "still_lost",
+          "still_won"
+        ],
+        "replay_checks": "All saved official frames and both cash ledgers checked by audit_trace",
+        "own_noeffect_units": 0,
+        "own_market_rejects": 0,
+        "source": "crop_clock_screen100/cropclock1_sale1/cropclock1_sale1/REVIEW_ZH.md"
+      }
+    },
+    "P12": {
+      "overall": {
+        "games": 2200,
+        "valid_games": 2200,
+        "errors": 0,
+        "r2_wins": 1723,
+        "losses": 477,
+        "ties": 0,
+        "r2_win_rate": 0.7831818181818182,
+        "r2_mean_cash": 106129.02727272727,
+        "opponent_mean_cash": 90105.30272727273,
+        "mean_margin": 16023.724545454545,
+        "median_margin": 6020.0
+      },
+      "paired_original": {
+        "rescued": 363,
+        "lost_wins": 141,
+        "mean_cash_delta": 2858.8595454545452,
+        "mean_margin_delta": 2150.054090909091,
+        "win_delta": 0.1009090909090909,
+        "paired_seed_win_delta95": [
+          0.035,
+          0.16818181818181818
+        ]
+      },
+      "result": "crop_chain_screen100/cropchain1/cropchain1/RESULTS.json",
+      "seconds": 491.786144937,
+      "independent_final_100": false,
+      "official_representative_review": {
+        "cases": 8,
+        "groups": [
+          "lost_win",
+          "rescued",
+          "still_lost",
+          "still_won"
+        ],
+        "replay_checks": "All saved official frames and both cash ledgers checked by audit_trace",
+        "own_noeffect_units": 0,
+        "own_market_rejects": 0,
+        "source": "crop_chain_screen100/cropchain1/cropchain1/REVIEW_ZH.md"
+      }
+    }
+  },
+  "comparisons": {
+    "P9_to_P11": {
+      "rescued": 244,
+      "lost_wins": 166,
+      "mean_cash_delta": 978.6845454545454,
+      "mean_margin_delta": 722.670909090909,
+      "win_delta": 0.035454545454545454,
+      "paired_seed_win_delta95": [
+        -0.017272727272727273,
+        0.08863636363636364
+      ]
+    },
+    "P9_to_P12": {
+      "rescued": 239,
+      "lost_wins": 182,
+      "mean_cash_delta": 2132.8477272727273,
+      "mean_margin_delta": 1697.5995454545455,
+      "win_delta": 0.02590909090909091,
+      "paired_seed_win_delta95": [
+        -0.03,
+        0.08318181818181818
+      ]
+    },
+    "P11_to_P12": {
+      "rescued": 230,
+      "lost_wins": 251,
+      "mean_cash_delta": 1154.1631818181818,
+      "mean_margin_delta": 974.9286363636363,
+      "win_delta": -0.009545454545454546,
+      "paired_seed_win_delta95": [
+        -0.07272727272727272,
+        0.055
+      ]
+    }
+  },
+  "final_holdout_used": false,
+  "independent_32": {
+    "seed_start": 2609123000,
+    "final_holdout_used": false,
+    "versions": {
+      "original": {
+        "overall": {
+          "games": 704,
+          "valid_games": 704,
+          "errors": 0,
+          "r2_wins": 522,
+          "losses": 182,
+          "ties": 0,
+          "r2_win_rate": 0.7414772727272727,
+          "r2_mean_cash": 105575.00568181818,
+          "opponent_mean_cash": 91178.125,
+          "mean_margin": 14396.880681818182,
+          "median_margin": 4667.0
+        },
+        "by_opponent": {
+          "nagatakengo_v70": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 64,
+            "losses": 0,
+            "ties": 0,
+            "r2_win_rate": 1.0,
+            "r2_mean_cash": 158219.203125,
+            "opponent_mean_cash": 49765.96875,
+            "mean_margin": 108453.234375,
+            "median_margin": 110015.0
+          },
+          "shop0909": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99714.53125,
+            "opponent_mean_cash": 95359.1875,
+            "mean_margin": 4355.34375,
+            "median_margin": 2666.0
+          },
+          "thomas_955_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 42,
+            "losses": 22,
+            "ties": 0,
+            "r2_win_rate": 0.65625,
+            "r2_mean_cash": 94809.875,
+            "opponent_mean_cash": 89735.625,
+            "mean_margin": 5074.25,
+            "median_margin": 3284.0
+          },
+          "ahmed_v27": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 97712.96875,
+            "opponent_mean_cash": 93776.203125,
+            "mean_margin": 3936.765625,
+            "median_margin": 2524.0
+          },
+          "soil_v219g": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99652.765625,
+            "opponent_mean_cash": 94985.234375,
+            "mean_margin": 4667.53125,
+            "median_margin": 2659.0
+          },
+          "market_smart_v8": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99714.5,
+            "opponent_mean_cash": 95367.109375,
+            "mean_margin": 4347.390625,
+            "median_margin": 2655.5
+          },
+          "seven_turn": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99714.5,
+            "opponent_mean_cash": 95365.03125,
+            "mean_margin": 4349.46875,
+            "median_margin": 2657.5
+          },
+          "aurax_shop_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99627.53125,
+            "opponent_mean_cash": 95232.421875,
+            "mean_margin": 4395.109375,
+            "median_margin": 2740.0
+          },
+          "flexon_v5": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 99714.5,
+            "opponent_mean_cash": 95365.03125,
+            "mean_margin": 4349.46875,
+            "median_margin": 2657.5
+          },
+          "moon_v215": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 50,
+            "losses": 14,
+            "ties": 0,
+            "r2_win_rate": 0.78125,
+            "r2_mean_cash": 106222.34375,
+            "opponent_mean_cash": 99003.78125,
+            "mean_margin": 7218.5625,
+            "median_margin": 6057.0
+          },
+          "aurax_reactive_v1": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 50,
+            "losses": 14,
+            "ties": 0,
+            "r2_win_rate": 0.78125,
+            "r2_mean_cash": 106222.34375,
+            "opponent_mean_cash": 99003.78125,
+            "mean_margin": 7218.5625,
+            "median_margin": 6057.0
+          }
+        }
+      },
+      "p9": {
+        "overall": {
+          "games": 704,
+          "valid_games": 704,
+          "errors": 0,
+          "r2_wins": 566,
+          "losses": 138,
+          "ties": 0,
+          "r2_win_rate": 0.8039772727272727,
+          "r2_mean_cash": 109491.234375,
+          "opponent_mean_cash": 93351.63494318182,
+          "mean_margin": 16139.599431818182,
+          "median_margin": 7325.5
+        },
+        "by_opponent": {
+          "nagatakengo_v70": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 64,
+            "losses": 0,
+            "ties": 0,
+            "r2_win_rate": 1.0,
+            "r2_mean_cash": 159590.640625,
+            "opponent_mean_cash": 50466.484375,
+            "mean_margin": 109124.15625,
+            "median_margin": 107635.0
+          },
+          "shop0909": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 104561.546875,
+            "opponent_mean_cash": 98130.703125,
+            "mean_margin": 6430.84375,
+            "median_margin": 4601.5
+          },
+          "thomas_955_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 95984.390625,
+            "opponent_mean_cash": 89588.078125,
+            "mean_margin": 6396.3125,
+            "median_margin": 4884.0
+          },
+          "ahmed_v27": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 48,
+            "losses": 16,
+            "ties": 0,
+            "r2_win_rate": 0.75,
+            "r2_mean_cash": 104132.96875,
+            "opponent_mean_cash": 97993.421875,
+            "mean_margin": 6139.546875,
+            "median_margin": 4566.0
+          },
+          "soil_v219g": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 49,
+            "losses": 15,
+            "ties": 0,
+            "r2_win_rate": 0.765625,
+            "r2_mean_cash": 104357.875,
+            "opponent_mean_cash": 97897.671875,
+            "mean_margin": 6460.203125,
+            "median_margin": 4594.5
+          },
+          "market_smart_v8": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 104561.546875,
+            "opponent_mean_cash": 98138.59375,
+            "mean_margin": 6422.953125,
+            "median_margin": 4594.5
+          },
+          "seven_turn": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 104561.546875,
+            "opponent_mean_cash": 98136.515625,
+            "mean_margin": 6425.03125,
+            "median_margin": 4596.5
+          },
+          "aurax_shop_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 104458.734375,
+            "opponent_mean_cash": 98059.78125,
+            "mean_margin": 6398.953125,
+            "median_margin": 4215.0
+          },
+          "flexon_v5": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 104561.546875,
+            "opponent_mean_cash": 98136.515625,
+            "mean_margin": 6425.03125,
+            "median_margin": 4596.5
+          },
+          "moon_v215": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 52,
+            "losses": 12,
+            "ties": 0,
+            "r2_win_rate": 0.8125,
+            "r2_mean_cash": 108816.390625,
+            "opponent_mean_cash": 100160.109375,
+            "mean_margin": 8656.28125,
+            "median_margin": 8875.0
+          },
+          "aurax_reactive_v1": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 52,
+            "losses": 12,
+            "ties": 0,
+            "r2_win_rate": 0.8125,
+            "r2_mean_cash": 108816.390625,
+            "opponent_mean_cash": 100160.109375,
+            "mean_margin": 8656.28125,
+            "median_margin": 8875.0
+          }
+        }
+      },
+      "p11": {
+        "overall": {
+          "games": 704,
+          "valid_games": 704,
+          "errors": 0,
+          "r2_wins": 539,
+          "losses": 165,
+          "ties": 0,
+          "r2_win_rate": 0.765625,
+          "r2_mean_cash": 109972.01704545454,
+          "opponent_mean_cash": 93932.65198863637,
+          "mean_margin": 16039.365056818182,
+          "median_margin": 6470.5
+        },
+        "by_opponent": {
+          "nagatakengo_v70": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 64,
+            "losses": 0,
+            "ties": 0,
+            "r2_win_rate": 1.0,
+            "r2_mean_cash": 159909.53125,
+            "opponent_mean_cash": 49282.578125,
+            "mean_margin": 110626.953125,
+            "median_margin": 111835.0
+          },
+          "shop0909": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 105800.78125,
+            "opponent_mean_cash": 99911.890625,
+            "mean_margin": 5888.890625,
+            "median_margin": 5651.0
+          },
+          "thomas_955_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 42,
+            "losses": 22,
+            "ties": 0,
+            "r2_win_rate": 0.65625,
+            "r2_mean_cash": 94902.671875,
+            "opponent_mean_cash": 88185.765625,
+            "mean_margin": 6716.90625,
+            "median_margin": 5812.5
+          },
+          "ahmed_v27": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 45,
+            "losses": 19,
+            "ties": 0,
+            "r2_win_rate": 0.703125,
+            "r2_mean_cash": 103591.15625,
+            "opponent_mean_cash": 98049.0625,
+            "mean_margin": 5542.09375,
+            "median_margin": 5053.5
+          },
+          "soil_v219g": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 106047.328125,
+            "opponent_mean_cash": 100262.484375,
+            "mean_margin": 5784.84375,
+            "median_margin": 5644.0
+          },
+          "market_smart_v8": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 105800.78125,
+            "opponent_mean_cash": 99919.78125,
+            "mean_margin": 5881.0,
+            "median_margin": 5641.0
+          },
+          "seven_turn": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 105800.78125,
+            "opponent_mean_cash": 99917.703125,
+            "mean_margin": 5883.078125,
+            "median_margin": 5644.0
+          },
+          "aurax_shop_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 105723.25,
+            "opponent_mean_cash": 99825.390625,
+            "mean_margin": 5897.859375,
+            "median_margin": 5632.0
+          },
+          "flexon_v5": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 46,
+            "losses": 18,
+            "ties": 0,
+            "r2_win_rate": 0.71875,
+            "r2_mean_cash": 105800.78125,
+            "opponent_mean_cash": 99917.703125,
+            "mean_margin": 5883.078125,
+            "median_margin": 5644.0
+          },
+          "moon_v215": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 108157.5625,
+            "opponent_mean_cash": 98993.40625,
+            "mean_margin": 9164.15625,
+            "median_margin": 8152.0
+          },
+          "aurax_reactive_v1": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 108157.5625,
+            "opponent_mean_cash": 98993.40625,
+            "mean_margin": 9164.15625,
+            "median_margin": 8152.0
+          }
+        }
+      },
+      "p12": {
+        "overall": {
+          "games": 704,
+          "valid_games": 704,
+          "errors": 0,
+          "r2_wins": 603,
+          "losses": 101,
+          "ties": 0,
+          "r2_win_rate": 0.8565340909090909,
+          "r2_mean_cash": 110437.22585227272,
+          "opponent_mean_cash": 94130.07244318182,
+          "mean_margin": 16307.15340909091,
+          "median_margin": 7401.0
+        },
+        "by_opponent": {
+          "nagatakengo_v70": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 64,
+            "losses": 0,
+            "ties": 0,
+            "r2_win_rate": 1.0,
+            "r2_mean_cash": 159323.78125,
+            "opponent_mean_cash": 48653.265625,
+            "mean_margin": 110670.515625,
+            "median_margin": 113152.5
+          },
+          "shop0909": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 58,
+            "losses": 6,
+            "ties": 0,
+            "r2_win_rate": 0.90625,
+            "r2_mean_cash": 106813.28125,
+            "opponent_mean_cash": 100071.9375,
+            "mean_margin": 6741.34375,
+            "median_margin": 6831.0
+          },
+          "thomas_955_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 47,
+            "losses": 17,
+            "ties": 0,
+            "r2_win_rate": 0.734375,
+            "r2_mean_cash": 93016.65625,
+            "opponent_mean_cash": 85885.03125,
+            "mean_margin": 7131.625,
+            "median_margin": 6048.0
+          },
+          "ahmed_v27": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 54,
+            "losses": 10,
+            "ties": 0,
+            "r2_win_rate": 0.84375,
+            "r2_mean_cash": 106659.3125,
+            "opponent_mean_cash": 99970.546875,
+            "mean_margin": 6688.765625,
+            "median_margin": 6258.0
+          },
+          "soil_v219g": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 54,
+            "losses": 10,
+            "ties": 0,
+            "r2_win_rate": 0.84375,
+            "r2_mean_cash": 106636.484375,
+            "opponent_mean_cash": 99958.265625,
+            "mean_margin": 6678.21875,
+            "median_margin": 6824.0
+          },
+          "market_smart_v8": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 106812.84375,
+            "opponent_mean_cash": 100083.609375,
+            "mean_margin": 6729.234375,
+            "median_margin": 6824.0
+          },
+          "seven_turn": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 106812.53125,
+            "opponent_mean_cash": 100081.0625,
+            "mean_margin": 6731.46875,
+            "median_margin": 6826.0
+          },
+          "aurax_shop_v2": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 106763.5,
+            "opponent_mean_cash": 99986.421875,
+            "mean_margin": 6777.078125,
+            "median_margin": 7045.0
+          },
+          "flexon_v5": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 56,
+            "losses": 8,
+            "ties": 0,
+            "r2_win_rate": 0.875,
+            "r2_mean_cash": 106812.53125,
+            "opponent_mean_cash": 100081.0625,
+            "mean_margin": 6731.46875,
+            "median_margin": 6826.0
+          },
+          "moon_v215": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 107579.28125,
+            "opponent_mean_cash": 100329.796875,
+            "mean_margin": 7249.484375,
+            "median_margin": 6252.5
+          },
+          "aurax_reactive_v1": {
+            "games": 64,
+            "valid_games": 64,
+            "errors": 0,
+            "r2_wins": 51,
+            "losses": 13,
+            "ties": 0,
+            "r2_win_rate": 0.796875,
+            "r2_mean_cash": 107579.28125,
+            "opponent_mean_cash": 100329.796875,
+            "mean_margin": 7249.484375,
+            "median_margin": 6252.5
+          }
+        }
+      }
+    },
+    "paired": {
+      "original_to_p9": {
+        "rescued": 98,
+        "lost_wins": 54,
+        "mean_cash_delta": 3916.228693181818,
+        "mean_margin_delta": 1742.71875,
+        "win_delta": 0.0625,
+        "paired_seed_win_delta95": [
+          -0.053977272727272735,
+          0.18181818181818182
+        ]
+      },
+      "original_to_p11": {
+        "rescued": 91,
+        "lost_wins": 74,
+        "mean_cash_delta": 4397.011363636364,
+        "mean_margin_delta": 1642.484375,
+        "win_delta": 0.024147727272727276,
+        "paired_seed_win_delta95": [
+          -0.08380681818181818,
+          0.12926136363636365
+        ]
+      },
+      "original_to_p12": {
+        "rescued": 129,
+        "lost_wins": 48,
+        "mean_cash_delta": 4862.220170454545,
+        "mean_margin_delta": 1910.2727272727273,
+        "win_delta": 0.11505681818181818,
+        "paired_seed_win_delta95": [
+          -0.001420454545454545,
+          0.24431818181818182
+        ]
+      },
+      "p9_to_p11": {
+        "rescued": 80,
+        "lost_wins": 107,
+        "mean_cash_delta": 480.78267045454544,
+        "mean_margin_delta": -100.234375,
+        "win_delta": -0.03835227272727273,
+        "paired_seed_win_delta95": [
+          -0.16051136363636365,
+          0.08380681818181818
+        ]
+      },
+      "p9_to_p12": {
+        "rescued": 111,
+        "lost_wins": 74,
+        "mean_cash_delta": 945.9914772727273,
+        "mean_margin_delta": 167.55397727272728,
+        "win_delta": 0.052556818181818184,
+        "paired_seed_win_delta95": [
+          -0.07244318181818181,
+          0.17613636363636365
+        ]
+      },
+      "p11_to_p12": {
+        "rescued": 124,
+        "lost_wins": 60,
+        "mean_cash_delta": 465.2088068181818,
+        "mean_margin_delta": 267.78835227272725,
+        "win_delta": 0.09090909090909091,
+        "paired_seed_win_delta95": [
+          -0.01278409090909091,
+          0.20454545454545456
+        ]
+      }
+    }
+  }
+}

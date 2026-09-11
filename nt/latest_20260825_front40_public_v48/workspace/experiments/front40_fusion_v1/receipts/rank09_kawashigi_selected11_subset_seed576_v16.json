@@ -1,0 +1,25 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-screen-subset.v1",
+  "generated_at_utc": "2026-08-24T09:11:33.427583+00:00",
+  "status": "PASS",
+  "source": "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_all179_vs_fc24b_screen_seed576001_n128x2_v1.npz",
+  "seed_count": 128,
+  "route_count": 11,
+  "route_ids": [
+    31,
+    47,
+    54,
+    81,
+    94,
+    96,
+    106,
+    115,
+    118,
+    128,
+    176
+  ],
+  "games": 2816,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_selected11_subset_seed576_v16.npz"
+}

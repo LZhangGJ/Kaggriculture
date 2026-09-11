@@ -1,0 +1,7 @@
+{
+  "probe_sha256": "360d049c30e67c6da0701fb922da36208c99dfe56d8c837c541d9cfc4f8089f5",
+  "original_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "boundary": "Telemetry-only; all original actions and referee frames must match. No live opponent private or future data passed to native handle."
+}

@@ -1,0 +1,572 @@
+{
+  "created_utc": "2026-09-09T16:15:35.906142+00:00",
+  "count": 7,
+  "agents": [
+    {
+      "id": "soil_v219g",
+      "ref": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "version": 30,
+      "main": "soil_v219g/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\soil_v219g\\working\\main.py",
+      "source": {
+        "ref": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+        "url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+        "retrieved_utc": "2026-09-09T16:10:18.656148+00:00",
+        "expected_version": 30,
+        "frozen_version": 30,
+        "source_sha256": "db67f9237642125201f9b69f85c280851dddf2d933cce98fa3ef55422ea4bdce",
+        "source_bytes": 934077,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "soil_v219g/working/main.py",
+          "name": "main.py",
+          "bytes": 77819,
+          "sha256": "4f5043530e0104f4867ad7455800dc8a40d4b589e9deb84b000e105e0b077157",
+          "imports": [
+            "base64",
+            "collections",
+            "copy",
+            "json",
+            "lzma",
+            "pathlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.13450749999901745,
+        "loaded_package_modules": {
+          "frozen_soil_v219g": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\soil_v219g\\working\\main.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    },
+    {
+      "id": "moon_v215",
+      "ref": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+      "url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+      "version": 33,
+      "main": "moon_v215/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\moon_v215\\working\\main.py",
+      "source": {
+        "ref": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+        "url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+        "retrieved_utc": "2026-09-09T16:10:19.597041+00:00",
+        "expected_version": 33,
+        "frozen_version": 33,
+        "source_sha256": "56a22de01170a1259ff943d8d820b0c13744e7b0149f0c43f759ac730a68b7ad",
+        "source_bytes": 162314,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "moon_v215/working/main.py",
+          "name": "main.py",
+          "bytes": 82661,
+          "sha256": "a32d1bbbe915e1f7f370f012155548915f5f846a517b45cbe90245294255af1f",
+          "imports": [
+            "__future__",
+            "base64",
+            "copy",
+            "json",
+            "zlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.09491639999760082,
+        "loaded_package_modules": {
+          "frozen_moon_v215": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\moon_v215\\working\\main.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    },
+    {
+      "id": "flexon_v5",
+      "ref": "flexonafft/kaggriculture-most-powerfull-route",
+      "url": "https://www.kaggle.com/code/flexonafft/kaggriculture-most-powerfull-route",
+      "version": 5,
+      "main": "flexon_v5/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\main.py",
+      "source": {
+        "ref": "flexonafft/kaggriculture-most-powerfull-route",
+        "url": "https://www.kaggle.com/code/flexonafft/kaggriculture-most-powerfull-route",
+        "retrieved_utc": "2026-09-09T16:11:01.209377+00:00",
+        "expected_version": 5,
+        "frozen_version": 5,
+        "source_sha256": "b2365f6dae777ce567ce0e60f04ae0840ef7a609ee43f77017ec8649e722e402",
+        "source_bytes": 298099,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "flexon_v5/working/actions.json",
+          "name": "actions.json",
+          "bytes": 5099830,
+          "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef"
+        },
+        {
+          "path": "flexon_v5/working/LICENSE.txt",
+          "name": "LICENSE.txt",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "flexon_v5/working/main.py",
+          "name": "main.py",
+          "bytes": 1083,
+          "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "imports": [
+            "hashlib",
+            "importlib",
+            "json",
+            "pathlib",
+            "sys"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "flexon_v5/working/NOTICE.txt",
+          "name": "NOTICE.txt",
+          "bytes": 3888,
+          "sha256": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230"
+        },
+        {
+          "path": "flexon_v5/working/policy.py",
+          "name": "policy.py",
+          "bytes": 10470,
+          "sha256": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+          "imports": [
+            "copy",
+            "importlib",
+            "pathlib",
+            "sys"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "flexon_v5/working/router_parent.py",
+          "name": "router_parent.py",
+          "bytes": 9365,
+          "sha256": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+          "imports": [
+            "collections",
+            "copy",
+            "json",
+            "pathlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "flexon_v5/working/settings.json",
+          "name": "settings.json",
+          "bytes": 91,
+          "sha256": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e"
+        },
+        {
+          "path": "flexon_v5/working/terminal_planner.py",
+          "name": "terminal_planner.py",
+          "bytes": 25147,
+          "sha256": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+          "imports": [
+            "copy",
+            "router_parent",
+            "time",
+            "unit_model"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "flexon_v5/working/unit_model.py",
+          "name": "unit_model.py",
+          "bytes": 12009,
+          "sha256": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724",
+          "imports": [],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.13557099999889033,
+        "loaded_package_modules": {
+          "frozen_flexon_v5": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\main.py",
+          "_notebook_policy_650493263663552a": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\policy.py",
+          "unit_model": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\unit_model.py",
+          "router_parent": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\router_parent.py",
+          "_e182_shop_terminal": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\flexon_v5\\working\\terminal_planner.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    },
+    {
+      "id": "market_smart_v8",
+      "ref": "tetsutani/market-smart-farming-kaggriculture",
+      "url": "https://www.kaggle.com/code/tetsutani/market-smart-farming-kaggriculture",
+      "version": 8,
+      "main": "market_smart_v8/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\main.py",
+      "source": {
+        "ref": "tetsutani/market-smart-farming-kaggriculture",
+        "url": "https://www.kaggle.com/code/tetsutani/market-smart-farming-kaggriculture",
+        "retrieved_utc": "2026-09-09T16:11:02.487595+00:00",
+        "expected_version": 8,
+        "frozen_version": 8,
+        "source_sha256": "b4c7d0d311cad413d82d37b8047aa6af07eec279a13160f1b4efaf37438550cf",
+        "source_bytes": 288829,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "market_smart_v8/working/actions.json",
+          "name": "actions.json",
+          "bytes": 5099830,
+          "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef"
+        },
+        {
+          "path": "market_smart_v8/working/main.py",
+          "name": "main.py",
+          "bytes": 1083,
+          "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "imports": [
+            "hashlib",
+            "importlib",
+            "json",
+            "pathlib",
+            "sys"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "market_smart_v8/working/policy.py",
+          "name": "policy.py",
+          "bytes": 10293,
+          "sha256": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+          "imports": [
+            "copy",
+            "importlib",
+            "pathlib",
+            "sys"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "market_smart_v8/working/router_parent.py",
+          "name": "router_parent.py",
+          "bytes": 8922,
+          "sha256": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+          "imports": [
+            "collections",
+            "copy",
+            "json",
+            "pathlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "market_smart_v8/working/settings.json",
+          "name": "settings.json",
+          "bytes": 92,
+          "sha256": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8"
+        },
+        {
+          "path": "market_smart_v8/working/terminal_planner.py",
+          "name": "terminal_planner.py",
+          "bytes": 25442,
+          "sha256": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+          "imports": [
+            "copy",
+            "router_parent",
+            "time",
+            "unit_model"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        },
+        {
+          "path": "market_smart_v8/working/unit_model.py",
+          "name": "unit_model.py",
+          "bytes": 11644,
+          "sha256": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383",
+          "imports": [],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.12846419999550562,
+        "loaded_package_modules": {
+          "frozen_market_smart_v8": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\main.py",
+          "_notebook_policy_93f05ffd6ef94963": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\policy.py",
+          "unit_model": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\unit_model.py",
+          "router_parent": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\router_parent.py",
+          "_e182_shop_terminal": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\market_smart_v8\\working\\terminal_planner.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    },
+    {
+      "id": "nagatakengo_v70",
+      "ref": "nagatakengo/kaggriculture",
+      "url": "https://www.kaggle.com/code/nagatakengo/kaggriculture",
+      "version": 70,
+      "main": "nagatakengo_v70/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\nagatakengo_v70\\working\\main.py",
+      "source": {
+        "ref": "nagatakengo/kaggriculture",
+        "url": "https://www.kaggle.com/code/nagatakengo/kaggriculture",
+        "retrieved_utc": "2026-09-09T16:11:03.109398+00:00",
+        "expected_version": 70,
+        "frozen_version": 70,
+        "source_sha256": "443064547d1c4a487668a9706f356498bfe25579040bceee03fdc720efe74769",
+        "source_bytes": 49616,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "nagatakengo_v70/working/main.py",
+          "name": "main.py",
+          "bytes": 40824,
+          "sha256": "ad981d06799c983eb499eb24da0db00598a04ba21a856f1e1558ab35b6e90989",
+          "imports": [],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(obs, config)",
+        "import_seconds": 0.10209850000683218,
+        "loaded_package_modules": {
+          "frozen_nagatakengo_v70": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\nagatakengo_v70\\working\\main.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [
+          "",
+          "nagatakengo/kaggriculture-data-class"
+        ],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": [
+        "nagatakengo/kaggriculture-data-class"
+      ]
+    },
+    {
+      "id": "aurax_reactive_v1",
+      "ref": "aurax7/kaggriculture-reactive-router",
+      "url": "https://www.kaggle.com/code/aurax7/kaggriculture-reactive-router",
+      "version": 1,
+      "main": "aurax_reactive_v1/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\aurax_reactive_v1\\working\\main.py",
+      "source": {
+        "ref": "aurax7/kaggriculture-reactive-router",
+        "url": "https://www.kaggle.com/code/aurax7/kaggriculture-reactive-router",
+        "retrieved_utc": "2026-09-09T16:11:03.861368+00:00",
+        "expected_version": 1,
+        "frozen_version": 1,
+        "source_sha256": "0e8b6606bf7bc843a8b69fddc9357f8da11e0c38f52453481ef8265a033b56a1",
+        "source_bytes": 57602,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "aurax_reactive_v1/working/main.py",
+          "name": "main.py",
+          "bytes": 51905,
+          "sha256": "53070a6adfaac7b91914a53e215bf0c521fff1d633db74abdf20bfcd13190175",
+          "imports": [
+            "__future__",
+            "base64",
+            "copy",
+            "json",
+            "zlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.11086640000576153,
+        "loaded_package_modules": {
+          "frozen_aurax_reactive_v1": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\aurax_reactive_v1\\working\\main.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    },
+    {
+      "id": "thomas_955_v2",
+      "ref": "thomastschinkel/kaggriculture-95-5-win-rate-via-replay-routing",
+      "url": "https://www.kaggle.com/code/thomastschinkel/kaggriculture-95-5-win-rate-via-replay-routing",
+      "version": 2,
+      "main": "thomas_955_v2/working/main.py",
+      "absolute_main": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\thomas_955_v2\\working\\main.py",
+      "source": {
+        "ref": "thomastschinkel/kaggriculture-95-5-win-rate-via-replay-routing",
+        "url": "https://www.kaggle.com/code/thomastschinkel/kaggriculture-95-5-win-rate-via-replay-routing",
+        "retrieved_utc": "2026-09-09T16:11:04.606746+00:00",
+        "expected_version": 2,
+        "frozen_version": 2,
+        "source_sha256": "7e3c99179e84dcbb79aed3d5e80b142b9c370ddbd9200c9400123c1f5368823c",
+        "source_bytes": 72339,
+        "same_source_as_previous_scan": true,
+        "notebook_executed": false
+      },
+      "files": [
+        {
+          "path": "thomas_955_v2/working/main.py",
+          "name": "main.py",
+          "bytes": 65128,
+          "sha256": "8241246765098c50223d897739cb32076b71a303284d2e5e1c5f0fb495bb5a97",
+          "imports": [
+            "base64",
+            "json",
+            "sys",
+            "zlib"
+          ],
+          "syntax_passed": true,
+          "sensitive_calls": []
+        }
+      ],
+      "import_smoke": {
+        "passed": true,
+        "call_signature": "(observation, configuration=None)",
+        "import_seconds": 0.1077625000034459,
+        "loaded_package_modules": {
+          "frozen_thomas_955_v2": "E:\\ai_coding\\kaggle\\kaggriculture\\research\\public_opponents_r2_20260910\\thomas_955_v2\\working\\main.py"
+        },
+        "agent_called": false,
+        "network_or_subprocess_executed": false
+      },
+      "requires_fresh_module_per_game": true,
+      "agent_invocation": "agent(observation, configuration)",
+      "original_source_unchanged": true,
+      "round_trip_game_validation": "NOT_RUN_BY_FREEZE_SUBTASK",
+      "input_sources": {
+        "competition": [
+          "kaggriculture"
+        ],
+        "datasets": [],
+        "kernels": [],
+        "models": []
+      },
+      "runtime_external_input_requirements": [],
+      "metadata_only_unused_inputs_skipped": []
+    }
+  ],
+  "scope": "7 newly listed frozen Python opponents; excludes the previous 4; no matches in this subtask"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "kaggriculture.hasegawa_v3.first_shop_route_map",
+  "source_screen": "experiments/hasegawa_jax_v3/receipts/postshop_routes_vs_flex_b32_train_v3.json",
+  "training_seed_start": 154001,
+  "training_seed_count": 32,
+  "shop_order": [
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE"
+  ],
+  "route_ids": [15, 32, 8, 37, 15, 71, 15, 0],
+  "selection_rule": "maximum training win rate, then mean margin; PET_CAFE uses neutral fallback because absent from training sample",
+  "training_only": true
+}

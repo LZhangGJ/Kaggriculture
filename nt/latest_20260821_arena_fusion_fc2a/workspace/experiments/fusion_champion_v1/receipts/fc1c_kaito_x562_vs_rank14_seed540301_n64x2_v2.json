@@ -1,0 +1,1064 @@
+{
+  "schema": "kaggriculture.fusion_champion.panel.v2",
+  "generated_at_utc": "2026-08-21T00:46:39.084212+00:00",
+  "status": "PASS",
+  "candidate": "kaito_v36_plus_x562_market_layers",
+  "change": "complete Kaito V36 production plus current-state X562 market counters, guards, and liquidation",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 540301,
+  "seed_count": 64,
+  "games_per_opponent": 128,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 178.81034095799998,
+  "rows": [
+    {
+      "opponent": "gold_proxy_rank14_recursion",
+      "games": 128,
+      "wins": 29,
+      "ties": 0,
+      "losses": 99,
+      "score_rate": 0.2265625,
+      "mean_candidate_cash": 91729.1015625,
+      "mean_opponent_cash": 94479.7421875,
+      "mean_margin": -2750.640625,
+      "median_margin": -1596.0,
+      "candidate_seat0_wins": 14,
+      "candidate_seat1_wins": 15,
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "candidate_cash": 63226,
+          "opponent_cash": 60850,
+          "margin": 2376,
+          "result": "win"
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "candidate_cash": 63126,
+          "opponent_cash": 60912,
+          "margin": 2214,
+          "result": "win"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "candidate_cash": 95508,
+          "opponent_cash": 96343,
+          "margin": -835,
+          "result": "loss"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "candidate_cash": 95508,
+          "opponent_cash": 96343,
+          "margin": -835,
+          "result": "loss"
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 0,
+          "candidate_cash": 90685,
+          "opponent_cash": 90037,
+          "margin": 648,
+          "result": "win"
+        },
+        {
+          "seed": 540303,
+          "candidate_seat": 1,
+          "candidate_cash": 111818,
+          "opponent_cash": 110849,
+          "margin": 969,
+          "result": "win"
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 0,
+          "candidate_cash": 92845,
+          "opponent_cash": 94034,
+          "margin": -1189,
+          "result": "loss"
+        },
+        {
+          "seed": 540304,
+          "candidate_seat": 1,
+          "candidate_cash": 91349,
+          "opponent_cash": 95327,
+          "margin": -3978,
+          "result": "loss"
+        },
+        {
+          "seed": 540305,
+          "candidate_seat": 0,
+          "candidate_cash": 99895,
+          "opponent_cash": 99232,
+          "margin": 663,
+          "result": "win"
+        },
+        {
+          "seed": 540305,
+          "candidate_seat": 1,
+          "candidate_cash": 99895,
+          "opponent_cash": 99232,
+          "margin": 663,
+          "result": "win"
+        },
+        {
+          "seed": 540306,
+          "candidate_seat": 0,
+          "candidate_cash": 79810,
+          "opponent_cash": 79125,
+          "margin": 685,
+          "result": "win"
+        },
+        {
+          "seed": 540306,
+          "candidate_seat": 1,
+          "candidate_cash": 79810,
+          "opponent_cash": 79125,
+          "margin": 685,
+          "result": "win"
+        },
+        {
+          "seed": 540307,
+          "candidate_seat": 0,
+          "candidate_cash": 134052,
+          "opponent_cash": 140803,
+          "margin": -6751,
+          "result": "loss"
+        },
+        {
+          "seed": 540307,
+          "candidate_seat": 1,
+          "candidate_cash": 134052,
+          "opponent_cash": 140803,
+          "margin": -6751,
+          "result": "loss"
+        },
+        {
+          "seed": 540308,
+          "candidate_seat": 0,
+          "candidate_cash": 75429,
+          "opponent_cash": 83666,
+          "margin": -8237,
+          "result": "loss"
+        },
+        {
+          "seed": 540308,
+          "candidate_seat": 1,
+          "candidate_cash": 75429,
+          "opponent_cash": 83666,
+          "margin": -8237,
+          "result": "loss"
+        },
+        {
+          "seed": 540309,
+          "candidate_seat": 0,
+          "candidate_cash": 79994,
+          "opponent_cash": 90175,
+          "margin": -10181,
+          "result": "loss"
+        },
+        {
+          "seed": 540309,
+          "candidate_seat": 1,
+          "candidate_cash": 79994,
+          "opponent_cash": 90175,
+          "margin": -10181,
+          "result": "loss"
+        },
+        {
+          "seed": 540310,
+          "candidate_seat": 0,
+          "candidate_cash": 86030,
+          "opponent_cash": 88367,
+          "margin": -2337,
+          "result": "loss"
+        },
+        {
+          "seed": 540310,
+          "candidate_seat": 1,
+          "candidate_cash": 86030,
+          "opponent_cash": 88367,
+          "margin": -2337,
+          "result": "loss"
+        },
+        {
+          "seed": 540311,
+          "candidate_seat": 0,
+          "candidate_cash": 81253,
+          "opponent_cash": 92563,
+          "margin": -11310,
+          "result": "loss"
+        },
+        {
+          "seed": 540311,
+          "candidate_seat": 1,
+          "candidate_cash": 81253,
+          "opponent_cash": 92563,
+          "margin": -11310,
+          "result": "loss"
+        },
+        {
+          "seed": 540312,
+          "candidate_seat": 0,
+          "candidate_cash": 102499,
+          "opponent_cash": 105563,
+          "margin": -3064,
+          "result": "loss"
+        },
+        {
+          "seed": 540312,
+          "candidate_seat": 1,
+          "candidate_cash": 102538,
+          "opponent_cash": 105529,
+          "margin": -2991,
+          "result": "loss"
+        },
+        {
+          "seed": 540313,
+          "candidate_seat": 0,
+          "candidate_cash": 113637,
+          "opponent_cash": 113141,
+          "margin": 496,
+          "result": "win"
+        },
+        {
+          "seed": 540313,
+          "candidate_seat": 1,
+          "candidate_cash": 113637,
+          "opponent_cash": 113141,
+          "margin": 496,
+          "result": "win"
+        },
+        {
+          "seed": 540314,
+          "candidate_seat": 0,
+          "candidate_cash": 91984,
+          "opponent_cash": 97681,
+          "margin": -5697,
+          "result": "loss"
+        },
+        {
+          "seed": 540314,
+          "candidate_seat": 1,
+          "candidate_cash": 92974,
+          "opponent_cash": 96530,
+          "margin": -3556,
+          "result": "loss"
+        },
+        {
+          "seed": 540315,
+          "candidate_seat": 0,
+          "candidate_cash": 114958,
+          "opponent_cash": 115384,
+          "margin": -426,
+          "result": "loss"
+        },
+        {
+          "seed": 540315,
+          "candidate_seat": 1,
+          "candidate_cash": 114958,
+          "opponent_cash": 115384,
+          "margin": -426,
+          "result": "loss"
+        },
+        {
+          "seed": 540316,
+          "candidate_seat": 0,
+          "candidate_cash": 131000,
+          "opponent_cash": 138731,
+          "margin": -7731,
+          "result": "loss"
+        },
+        {
+          "seed": 540316,
+          "candidate_seat": 1,
+          "candidate_cash": 131000,
+          "opponent_cash": 138731,
+          "margin": -7731,
+          "result": "loss"
+        },
+        {
+          "seed": 540317,
+          "candidate_seat": 0,
+          "candidate_cash": 87884,
+          "opponent_cash": 91351,
+          "margin": -3467,
+          "result": "loss"
+        },
+        {
+          "seed": 540317,
+          "candidate_seat": 1,
+          "candidate_cash": 87884,
+          "opponent_cash": 91351,
+          "margin": -3467,
+          "result": "loss"
+        },
+        {
+          "seed": 540318,
+          "candidate_seat": 0,
+          "candidate_cash": 90674,
+          "opponent_cash": 91397,
+          "margin": -723,
+          "result": "loss"
+        },
+        {
+          "seed": 540318,
+          "candidate_seat": 1,
+          "candidate_cash": 90674,
+          "opponent_cash": 91397,
+          "margin": -723,
+          "result": "loss"
+        },
+        {
+          "seed": 540319,
+          "candidate_seat": 0,
+          "candidate_cash": 116536,
+          "opponent_cash": 118443,
+          "margin": -1907,
+          "result": "loss"
+        },
+        {
+          "seed": 540319,
+          "candidate_seat": 1,
+          "candidate_cash": 116536,
+          "opponent_cash": 118443,
+          "margin": -1907,
+          "result": "loss"
+        },
+        {
+          "seed": 540320,
+          "candidate_seat": 0,
+          "candidate_cash": 79909,
+          "opponent_cash": 90124,
+          "margin": -10215,
+          "result": "loss"
+        },
+        {
+          "seed": 540320,
+          "candidate_seat": 1,
+          "candidate_cash": 79909,
+          "opponent_cash": 90124,
+          "margin": -10215,
+          "result": "loss"
+        },
+        {
+          "seed": 540321,
+          "candidate_seat": 0,
+          "candidate_cash": 63450,
+          "opponent_cash": 62505,
+          "margin": 945,
+          "result": "win"
+        },
+        {
+          "seed": 540321,
+          "candidate_seat": 1,
+          "candidate_cash": 63450,
+          "opponent_cash": 62505,
+          "margin": 945,
+          "result": "win"
+        },
+        {
+          "seed": 540322,
+          "candidate_seat": 0,
+          "candidate_cash": 73286,
+          "opponent_cash": 83257,
+          "margin": -9971,
+          "result": "loss"
+        },
+        {
+          "seed": 540322,
+          "candidate_seat": 1,
+          "candidate_cash": 73202,
+          "opponent_cash": 83341,
+          "margin": -10139,
+          "result": "loss"
+        },
+        {
+          "seed": 540323,
+          "candidate_seat": 0,
+          "candidate_cash": 118608,
+          "opponent_cash": 129164,
+          "margin": -10556,
+          "result": "loss"
+        },
+        {
+          "seed": 540323,
+          "candidate_seat": 1,
+          "candidate_cash": 118608,
+          "opponent_cash": 129164,
+          "margin": -10556,
+          "result": "loss"
+        },
+        {
+          "seed": 540324,
+          "candidate_seat": 0,
+          "candidate_cash": 82916,
+          "opponent_cash": 83620,
+          "margin": -704,
+          "result": "loss"
+        },
+        {
+          "seed": 540324,
+          "candidate_seat": 1,
+          "candidate_cash": 82916,
+          "opponent_cash": 83620,
+          "margin": -704,
+          "result": "loss"
+        },
+        {
+          "seed": 540325,
+          "candidate_seat": 0,
+          "candidate_cash": 116745,
+          "opponent_cash": 121244,
+          "margin": -4499,
+          "result": "loss"
+        },
+        {
+          "seed": 540325,
+          "candidate_seat": 1,
+          "candidate_cash": 116745,
+          "opponent_cash": 121244,
+          "margin": -4499,
+          "result": "loss"
+        },
+        {
+          "seed": 540326,
+          "candidate_seat": 0,
+          "candidate_cash": 111218,
+          "opponent_cash": 115686,
+          "margin": -4468,
+          "result": "loss"
+        },
+        {
+          "seed": 540326,
+          "candidate_seat": 1,
+          "candidate_cash": 111218,
+          "opponent_cash": 115686,
+          "margin": -4468,
+          "result": "loss"
+        },
+        {
+          "seed": 540327,
+          "candidate_seat": 0,
+          "candidate_cash": 76591,
+          "opponent_cash": 75804,
+          "margin": 787,
+          "result": "win"
+        },
+        {
+          "seed": 540327,
+          "candidate_seat": 1,
+          "candidate_cash": 75812,
+          "opponent_cash": 76499,
+          "margin": -687,
+          "result": "loss"
+        },
+        {
+          "seed": 540328,
+          "candidate_seat": 0,
+          "candidate_cash": 113479,
+          "opponent_cash": 114432,
+          "margin": -953,
+          "result": "loss"
+        },
+        {
+          "seed": 540328,
+          "candidate_seat": 1,
+          "candidate_cash": 113479,
+          "opponent_cash": 114432,
+          "margin": -953,
+          "result": "loss"
+        },
+        {
+          "seed": 540329,
+          "candidate_seat": 0,
+          "candidate_cash": 58715,
+          "opponent_cash": 56279,
+          "margin": 2436,
+          "result": "win"
+        },
+        {
+          "seed": 540329,
+          "candidate_seat": 1,
+          "candidate_cash": 58613,
+          "opponent_cash": 56370,
+          "margin": 2243,
+          "result": "win"
+        },
+        {
+          "seed": 540330,
+          "candidate_seat": 0,
+          "candidate_cash": 96927,
+          "opponent_cash": 99074,
+          "margin": -2147,
+          "result": "loss"
+        },
+        {
+          "seed": 540330,
+          "candidate_seat": 1,
+          "candidate_cash": 96927,
+          "opponent_cash": 99074,
+          "margin": -2147,
+          "result": "loss"
+        },
+        {
+          "seed": 540331,
+          "candidate_seat": 0,
+          "candidate_cash": 65226,
+          "opponent_cash": 73818,
+          "margin": -8592,
+          "result": "loss"
+        },
+        {
+          "seed": 540331,
+          "candidate_seat": 1,
+          "candidate_cash": 65226,
+          "opponent_cash": 73818,
+          "margin": -8592,
+          "result": "loss"
+        },
+        {
+          "seed": 540332,
+          "candidate_seat": 0,
+          "candidate_cash": 110108,
+          "opponent_cash": 114200,
+          "margin": -4092,
+          "result": "loss"
+        },
+        {
+          "seed": 540332,
+          "candidate_seat": 1,
+          "candidate_cash": 112908,
+          "opponent_cash": 118933,
+          "margin": -6025,
+          "result": "loss"
+        },
+        {
+          "seed": 540333,
+          "candidate_seat": 0,
+          "candidate_cash": 76935,
+          "opponent_cash": 77838,
+          "margin": -903,
+          "result": "loss"
+        },
+        {
+          "seed": 540333,
+          "candidate_seat": 1,
+          "candidate_cash": 76935,
+          "opponent_cash": 77838,
+          "margin": -903,
+          "result": "loss"
+        },
+        {
+          "seed": 540334,
+          "candidate_seat": 0,
+          "candidate_cash": 80667,
+          "opponent_cash": 83134,
+          "margin": -2467,
+          "result": "loss"
+        },
+        {
+          "seed": 540334,
+          "candidate_seat": 1,
+          "candidate_cash": 79310,
+          "opponent_cash": 84457,
+          "margin": -5147,
+          "result": "loss"
+        },
+        {
+          "seed": 540335,
+          "candidate_seat": 0,
+          "candidate_cash": 91958,
+          "opponent_cash": 93551,
+          "margin": -1593,
+          "result": "loss"
+        },
+        {
+          "seed": 540335,
+          "candidate_seat": 1,
+          "candidate_cash": 91958,
+          "opponent_cash": 93551,
+          "margin": -1593,
+          "result": "loss"
+        },
+        {
+          "seed": 540336,
+          "candidate_seat": 0,
+          "candidate_cash": 98381,
+          "opponent_cash": 99839,
+          "margin": -1458,
+          "result": "loss"
+        },
+        {
+          "seed": 540336,
+          "candidate_seat": 1,
+          "candidate_cash": 99452,
+          "opponent_cash": 98904,
+          "margin": 548,
+          "result": "win"
+        },
+        {
+          "seed": 540337,
+          "candidate_seat": 0,
+          "candidate_cash": 93870,
+          "opponent_cash": 96459,
+          "margin": -2589,
+          "result": "loss"
+        },
+        {
+          "seed": 540337,
+          "candidate_seat": 1,
+          "candidate_cash": 94471,
+          "opponent_cash": 95872,
+          "margin": -1401,
+          "result": "loss"
+        },
+        {
+          "seed": 540338,
+          "candidate_seat": 0,
+          "candidate_cash": 91891,
+          "opponent_cash": 94153,
+          "margin": -2262,
+          "result": "loss"
+        },
+        {
+          "seed": 540338,
+          "candidate_seat": 1,
+          "candidate_cash": 96338,
+          "opponent_cash": 95775,
+          "margin": 563,
+          "result": "win"
+        },
+        {
+          "seed": 540339,
+          "candidate_seat": 0,
+          "candidate_cash": 130254,
+          "opponent_cash": 136325,
+          "margin": -6071,
+          "result": "loss"
+        },
+        {
+          "seed": 540339,
+          "candidate_seat": 1,
+          "candidate_cash": 113379,
+          "opponent_cash": 116945,
+          "margin": -3566,
+          "result": "loss"
+        },
+        {
+          "seed": 540340,
+          "candidate_seat": 0,
+          "candidate_cash": 67226,
+          "opponent_cash": 68223,
+          "margin": -997,
+          "result": "loss"
+        },
+        {
+          "seed": 540340,
+          "candidate_seat": 1,
+          "candidate_cash": 67226,
+          "opponent_cash": 68223,
+          "margin": -997,
+          "result": "loss"
+        },
+        {
+          "seed": 540341,
+          "candidate_seat": 0,
+          "candidate_cash": 86893,
+          "opponent_cash": 88489,
+          "margin": -1596,
+          "result": "loss"
+        },
+        {
+          "seed": 540341,
+          "candidate_seat": 1,
+          "candidate_cash": 86893,
+          "opponent_cash": 88489,
+          "margin": -1596,
+          "result": "loss"
+        },
+        {
+          "seed": 540342,
+          "candidate_seat": 0,
+          "candidate_cash": 60878,
+          "opponent_cash": 60895,
+          "margin": -17,
+          "result": "loss"
+        },
+        {
+          "seed": 540342,
+          "candidate_seat": 1,
+          "candidate_cash": 60878,
+          "opponent_cash": 60895,
+          "margin": -17,
+          "result": "loss"
+        },
+        {
+          "seed": 540343,
+          "candidate_seat": 0,
+          "candidate_cash": 42403,
+          "opponent_cash": 43019,
+          "margin": -616,
+          "result": "loss"
+        },
+        {
+          "seed": 540343,
+          "candidate_seat": 1,
+          "candidate_cash": 43102,
+          "opponent_cash": 42363,
+          "margin": 739,
+          "result": "win"
+        },
+        {
+          "seed": 540344,
+          "candidate_seat": 0,
+          "candidate_cash": 123440,
+          "opponent_cash": 124576,
+          "margin": -1136,
+          "result": "loss"
+        },
+        {
+          "seed": 540344,
+          "candidate_seat": 1,
+          "candidate_cash": 123404,
+          "opponent_cash": 124610,
+          "margin": -1206,
+          "result": "loss"
+        },
+        {
+          "seed": 540345,
+          "candidate_seat": 0,
+          "candidate_cash": 74996,
+          "opponent_cash": 76501,
+          "margin": -1505,
+          "result": "loss"
+        },
+        {
+          "seed": 540345,
+          "candidate_seat": 1,
+          "candidate_cash": 74996,
+          "opponent_cash": 76501,
+          "margin": -1505,
+          "result": "loss"
+        },
+        {
+          "seed": 540346,
+          "candidate_seat": 0,
+          "candidate_cash": 126125,
+          "opponent_cash": 130824,
+          "margin": -4699,
+          "result": "loss"
+        },
+        {
+          "seed": 540346,
+          "candidate_seat": 1,
+          "candidate_cash": 126125,
+          "opponent_cash": 130824,
+          "margin": -4699,
+          "result": "loss"
+        },
+        {
+          "seed": 540347,
+          "candidate_seat": 0,
+          "candidate_cash": 113109,
+          "opponent_cash": 112830,
+          "margin": 279,
+          "result": "win"
+        },
+        {
+          "seed": 540347,
+          "candidate_seat": 1,
+          "candidate_cash": 111880,
+          "opponent_cash": 113205,
+          "margin": -1325,
+          "result": "loss"
+        },
+        {
+          "seed": 540348,
+          "candidate_seat": 0,
+          "candidate_cash": 112730,
+          "opponent_cash": 115486,
+          "margin": -2756,
+          "result": "loss"
+        },
+        {
+          "seed": 540348,
+          "candidate_seat": 1,
+          "candidate_cash": 112730,
+          "opponent_cash": 115486,
+          "margin": -2756,
+          "result": "loss"
+        },
+        {
+          "seed": 540349,
+          "candidate_seat": 0,
+          "candidate_cash": 67062,
+          "opponent_cash": 66662,
+          "margin": 400,
+          "result": "win"
+        },
+        {
+          "seed": 540349,
+          "candidate_seat": 1,
+          "candidate_cash": 66541,
+          "opponent_cash": 67358,
+          "margin": -817,
+          "result": "loss"
+        },
+        {
+          "seed": 540350,
+          "candidate_seat": 0,
+          "candidate_cash": 59138,
+          "opponent_cash": 56960,
+          "margin": 2178,
+          "result": "win"
+        },
+        {
+          "seed": 540350,
+          "candidate_seat": 1,
+          "candidate_cash": 59138,
+          "opponent_cash": 56960,
+          "margin": 2178,
+          "result": "win"
+        },
+        {
+          "seed": 540351,
+          "candidate_seat": 0,
+          "candidate_cash": 113336,
+          "opponent_cash": 116928,
+          "margin": -3592,
+          "result": "loss"
+        },
+        {
+          "seed": 540351,
+          "candidate_seat": 1,
+          "candidate_cash": 113336,
+          "opponent_cash": 116928,
+          "margin": -3592,
+          "result": "loss"
+        },
+        {
+          "seed": 540352,
+          "candidate_seat": 0,
+          "candidate_cash": 132146,
+          "opponent_cash": 139162,
+          "margin": -7016,
+          "result": "loss"
+        },
+        {
+          "seed": 540352,
+          "candidate_seat": 1,
+          "candidate_cash": 122483,
+          "opponent_cash": 124828,
+          "margin": -2345,
+          "result": "loss"
+        },
+        {
+          "seed": 540353,
+          "candidate_seat": 0,
+          "candidate_cash": 105529,
+          "opponent_cash": 105558,
+          "margin": -29,
+          "result": "loss"
+        },
+        {
+          "seed": 540353,
+          "candidate_seat": 1,
+          "candidate_cash": 105529,
+          "opponent_cash": 105558,
+          "margin": -29,
+          "result": "loss"
+        },
+        {
+          "seed": 540354,
+          "candidate_seat": 0,
+          "candidate_cash": 63107,
+          "opponent_cash": 61435,
+          "margin": 1672,
+          "result": "win"
+        },
+        {
+          "seed": 540354,
+          "candidate_seat": 1,
+          "candidate_cash": 63107,
+          "opponent_cash": 61435,
+          "margin": 1672,
+          "result": "win"
+        },
+        {
+          "seed": 540355,
+          "candidate_seat": 0,
+          "candidate_cash": 84711,
+          "opponent_cash": 87931,
+          "margin": -3220,
+          "result": "loss"
+        },
+        {
+          "seed": 540355,
+          "candidate_seat": 1,
+          "candidate_cash": 84711,
+          "opponent_cash": 87931,
+          "margin": -3220,
+          "result": "loss"
+        },
+        {
+          "seed": 540356,
+          "candidate_seat": 0,
+          "candidate_cash": 95702,
+          "opponent_cash": 94736,
+          "margin": 966,
+          "result": "win"
+        },
+        {
+          "seed": 540356,
+          "candidate_seat": 1,
+          "candidate_cash": 95702,
+          "opponent_cash": 94736,
+          "margin": 966,
+          "result": "win"
+        },
+        {
+          "seed": 540357,
+          "candidate_seat": 0,
+          "candidate_cash": 100051,
+          "opponent_cash": 102594,
+          "margin": -2543,
+          "result": "loss"
+        },
+        {
+          "seed": 540357,
+          "candidate_seat": 1,
+          "candidate_cash": 80115,
+          "opponent_cash": 77284,
+          "margin": 2831,
+          "result": "win"
+        },
+        {
+          "seed": 540358,
+          "candidate_seat": 0,
+          "candidate_cash": 114903,
+          "opponent_cash": 119285,
+          "margin": -4382,
+          "result": "loss"
+        },
+        {
+          "seed": 540358,
+          "candidate_seat": 1,
+          "candidate_cash": 114903,
+          "opponent_cash": 119285,
+          "margin": -4382,
+          "result": "loss"
+        },
+        {
+          "seed": 540359,
+          "candidate_seat": 0,
+          "candidate_cash": 86610,
+          "opponent_cash": 86687,
+          "margin": -77,
+          "result": "loss"
+        },
+        {
+          "seed": 540359,
+          "candidate_seat": 1,
+          "candidate_cash": 86610,
+          "opponent_cash": 86687,
+          "margin": -77,
+          "result": "loss"
+        },
+        {
+          "seed": 540360,
+          "candidate_seat": 0,
+          "candidate_cash": 76832,
+          "opponent_cash": 80700,
+          "margin": -3868,
+          "result": "loss"
+        },
+        {
+          "seed": 540360,
+          "candidate_seat": 1,
+          "candidate_cash": 76832,
+          "opponent_cash": 80700,
+          "margin": -3868,
+          "result": "loss"
+        },
+        {
+          "seed": 540361,
+          "candidate_seat": 0,
+          "candidate_cash": 64590,
+          "opponent_cash": 63159,
+          "margin": 1431,
+          "result": "win"
+        },
+        {
+          "seed": 540361,
+          "candidate_seat": 1,
+          "candidate_cash": 64645,
+          "opponent_cash": 63118,
+          "margin": 1527,
+          "result": "win"
+        },
+        {
+          "seed": 540362,
+          "candidate_seat": 0,
+          "candidate_cash": 79666,
+          "opponent_cash": 90294,
+          "margin": -10628,
+          "result": "loss"
+        },
+        {
+          "seed": 540362,
+          "candidate_seat": 1,
+          "candidate_cash": 79666,
+          "opponent_cash": 90294,
+          "margin": -10628,
+          "result": "loss"
+        },
+        {
+          "seed": 540363,
+          "candidate_seat": 0,
+          "candidate_cash": 84074,
+          "opponent_cash": 93121,
+          "margin": -9047,
+          "result": "loss"
+        },
+        {
+          "seed": 540363,
+          "candidate_seat": 1,
+          "candidate_cash": 84074,
+          "opponent_cash": 93121,
+          "margin": -9047,
+          "result": "loss"
+        },
+        {
+          "seed": 540364,
+          "candidate_seat": 0,
+          "candidate_cash": 86894,
+          "opponent_cash": 88201,
+          "margin": -1307,
+          "result": "loss"
+        },
+        {
+          "seed": 540364,
+          "candidate_seat": 1,
+          "candidate_cash": 86194,
+          "opponent_cash": 88920,
+          "margin": -2726,
+          "result": "loss"
+        }
+      ]
+    }
+  ],
+  "min_score_rate": 0.2265625,
+  "mean_score_rate": 0.2265625,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "854D804F8A61661781EB44081910465D051504BE7DD4AA0072CBACC078B84777"
+  }
+}

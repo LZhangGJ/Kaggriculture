@@ -1,0 +1,132 @@
+{
+  "schema": "kaggriculture.candidate8_shortlist_ranker.v1",
+  "created_at_utc": "2026-08-28T19:19:19.182472+00:00",
+  "model": "ExtraTreesRegressor",
+  "parameters": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 16,
+    "max_features": 0.9,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 512,
+    "n_jobs": 16,
+    "oob_score": false,
+    "random_state": 20260829,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "dataset": {
+    "path": "experiments/ecobot_adaptive_planner_v1/datasets/w9_candidate8_multifuture_passive_prefix2820001_n8x2_future32_day9_v1.npz",
+    "sha256": "95FC939DBB284EA648D969FD0F0230CB1A09F07224089CE340CACD3B14DD67CE",
+    "rows": 3962,
+    "states": 16,
+    "unique_seeds": 8,
+    "fit_rows": 2424,
+    "calibration_rows": 518,
+    "test_rows": 1020,
+    "fit_seed_count": 5,
+    "calibration_seed_count": 1,
+    "test_seed_count": 2
+  },
+  "evaluation": {
+    "states": 4,
+    "oracle_recall_at_model64": 0.25,
+    "oracle_recall_at_old64": 0.25,
+    "mean_model64_oracle_regret": 1803.984375,
+    "mean_old64_oracle_regret": 783.109375,
+    "mean_model_top1_gain": 288.1796875,
+    "positive_model_top1_rate": 0.5,
+    "near_oracle_recall_within_500": 0.25,
+    "near_oracle_recall_within_1000": 0.25,
+    "safe_threshold": 0.0,
+    "safe_policy_activation_rate": 1.0,
+    "mean_safe_policy_gain": 288.1796875,
+    "safe_policy_positive_rate": 0.5,
+    "safe_policy_negative_rate": 0.25,
+    "rows": [
+      {
+        "state_id": 10,
+        "seed": 2820006,
+        "arms": 303,
+        "oracle_family": 4,
+        "oracle_gain": 8284.3125,
+        "oracle_in_model64": true,
+        "model64_oracle_regret": 0.0,
+        "model_top1_gain": -1394.40625,
+        "predicted_top1_uplift": 2087.2568901959003,
+        "safe_policy_activated": true,
+        "safe_policy_gain": -1394.40625,
+        "old64_oracle_recall": false,
+        "old64_oracle_regret": 0.0
+      },
+      {
+        "state_id": 11,
+        "seed": 2820006,
+        "arms": 150,
+        "oracle_family": 4,
+        "oracle_gain": 4748.46875,
+        "oracle_in_model64": false,
+        "model64_oracle_regret": 1066.46875,
+        "model_top1_gain": 0.0,
+        "predicted_top1_uplift": 1989.8673056426207,
+        "safe_policy_activated": true,
+        "safe_policy_gain": 0.0,
+        "old64_oracle_recall": false,
+        "old64_oracle_regret": 1066.46875
+      },
+      {
+        "state_id": 14,
+        "seed": 2820008,
+        "arms": 295,
+        "oracle_family": 3,
+        "oracle_gain": 13454.03125,
+        "oracle_in_model64": false,
+        "model64_oracle_regret": 4348.1875,
+        "model_top1_gain": 1400.25,
+        "predicted_top1_uplift": 4296.808602976288,
+        "safe_policy_activated": true,
+        "safe_policy_gain": 1400.25,
+        "old64_oracle_recall": true,
+        "old64_oracle_regret": 0.0
+      },
+      {
+        "state_id": 15,
+        "seed": 2820008,
+        "arms": 272,
+        "oracle_family": 4,
+        "oracle_gain": 5706.09375,
+        "oracle_in_model64": false,
+        "model64_oracle_regret": 1801.28125,
+        "model_top1_gain": 1146.875,
+        "predicted_top1_uplift": 3301.4147597958163,
+        "safe_policy_activated": true,
+        "safe_policy_gain": 1146.875,
+        "old64_oracle_recall": false,
+        "old64_oracle_regret": 2065.96875
+      }
+    ]
+  },
+  "safe_threshold_calibration": {
+    "threshold": 0.0,
+    "activation_rate": 1.0,
+    "mean_gain": 3776.28125,
+    "negative_rate": 0.0,
+    "positive_rate": 1.0
+  },
+  "model_artifact": {
+    "path": "experiments/ecobot_adaptive_planner_v1/models/w9_candidate8_ranker_multifuture_passive_prefix2820001_n8x2_future32_safe_v1.joblib",
+    "sha256": "E1CC600F038F9551FE761BDBCF1D20EA1FB041E3B1CCD2AA133B29B303D8EDC4"
+  },
+  "gate": {
+    "oracle_recall_at_64_target": 0.9,
+    "oracle_recall_at_64_pass": false,
+    "mean_regret_improves": false
+  }
+}

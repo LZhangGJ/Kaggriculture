@@ -1,0 +1,5 @@
+workspace/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/
+workspace/agents/route_clustering_switch_agent/fast_kaggriculture/build/
+workspace/agents/route_clustering_switch_agent/fast_kaggriculture/python/**/*.so
+**/__pycache__/
+*.pyc

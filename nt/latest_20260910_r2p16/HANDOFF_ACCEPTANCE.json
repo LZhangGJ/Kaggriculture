@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "date": "2026-09-10",
+  "destination": "nt/latest_20260910_r2p16",
+  "policy_source_hashes_match_original_build": true,
+  "rebuilt_binary_byte_identical": true,
+  "p16_sha256": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b",
+  "unit_test": "PASS: initial-only, private isolation, finite legal net flows, existing-crop guard, MPC proposal propagation and valuation effect, real next-day clear",
+  "relocation": {
+    "relocation_p16": {
+      "games": 22,
+      "errors": 0,
+      "mismatches": 0,
+      "reset": {
+        "passed": true
+      }
+    },
+    "relocation_p16_3seeds": {
+      "games": 66,
+      "errors": 0,
+      "mismatches": 0,
+      "reset": {
+        "passed": true
+      }
+    },
+    "relocation_original": {
+      "games": 22,
+      "errors": 0,
+      "mismatches": 0,
+      "reset": null
+    },
+    "relocation_p12": {
+      "games": 22,
+      "errors": 0,
+      "mismatches": 0,
+      "reset": null
+    }
+  },
+  "independent_strength_games_added": 0,
+  "public_submission_performed": false,
+  "purpose": "Relocation and compilation regression only, not a new strength estimate",
+  "limitations": [
+    "Not a Kaggle sandbox runtime or ABI certificate",
+    "No 90% success claim",
+    "Original R2 retained; P16 is a separate development candidate"
+  ]
+}

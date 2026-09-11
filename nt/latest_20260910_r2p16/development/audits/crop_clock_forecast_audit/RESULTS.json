@@ -1,0 +1,387 @@
+{
+  "status": "PASS",
+  "cases": 42,
+  "actions": 30198,
+  "rows": [
+    {
+      "key": "soil_v219g_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "soil_v219g_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "soil_v219g_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "soil_v219g_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "moon_v215_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "moon_v215_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "moon_v215_2609110023_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "moon_v215_2609110075_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "flexon_v5_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "flexon_v5_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "flexon_v5_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "flexon_v5_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "market_smart_v8_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "market_smart_v8_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "market_smart_v8_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "market_smart_v8_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "nagatakengo_v70_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 132
+    },
+    {
+      "key": "nagatakengo_v70_2609110074_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 133
+    },
+    {
+      "key": "aurax_reactive_v1_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "aurax_reactive_v1_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "aurax_reactive_v1_2609110023_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "aurax_reactive_v1_2609110075_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 201
+    },
+    {
+      "key": "thomas_955_v2_2609110023_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 198
+    },
+    {
+      "key": "thomas_955_v2_2609110072_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 205
+    },
+    {
+      "key": "thomas_955_v2_2609110027_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 205
+    },
+    {
+      "key": "thomas_955_v2_2609110075_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 205
+    },
+    {
+      "key": "shop0909_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "shop0909_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "shop0909_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "shop0909_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "aurax_shop_v2_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "aurax_shop_v2_2609110064_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "aurax_shop_v2_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "aurax_shop_v2_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "seven_turn_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "seven_turn_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "seven_turn_2609110024_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "seven_turn_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "ahmed_v27_2609110025_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "ahmed_v27_2609110067_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "ahmed_v27_2609110023_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    },
+    {
+      "key": "ahmed_v27_2609110076_0",
+      "status": "PASS",
+      "actions": 719,
+      "days": 30,
+      "public_removals": 202
+    }
+  ],
+  "metrics": {
+    "WHEAT": {
+      "samples": 1260,
+      "old_mae": 11.427261904761904,
+      "new_mae": 8.518513881685957,
+      "old_bias": -7.834563492063492,
+      "new_bias": -0.05124777892756615,
+      "changed": 1005,
+      "actual_net_mean": 5.0396825396825395
+    },
+    "CARROT": {
+      "samples": 1260,
+      "old_mae": 1.9293650793650794,
+      "new_mae": 2.019989417989418,
+      "old_bias": -0.7488888888888889,
+      "new_bias": -0.5624761904761906,
+      "changed": 77,
+      "actual_net_mean": 2.7484126984126984
+    },
+    "TOMATO": {
+      "samples": 1260,
+      "old_mae": 0.0,
+      "new_mae": 0.0,
+      "old_bias": 0.0,
+      "new_bias": 0.0,
+      "changed": 0,
+      "actual_net_mean": 0.0
+    },
+    "STRAWBERRY": {
+      "samples": 1260,
+      "old_mae": 2.9054761904761905,
+      "new_mae": 2.9054761904761905,
+      "old_bias": -1.1301587301587306,
+      "new_bias": -1.1301587301587306,
+      "changed": 0,
+      "actual_net_mean": 8.119047619047619
+    },
+    "MELON": {
+      "samples": 1260,
+      "old_mae": 0.5952380952380951,
+      "new_mae": 0.5952380952380951,
+      "old_bias": -0.35714285714285726,
+      "new_bias": -0.35714285714285726,
+      "changed": 0,
+      "actual_net_mean": 2.380952380952381
+    },
+    "EGG": {
+      "samples": 1260,
+      "old_mae": 1.8794444444444445,
+      "new_mae": 1.8794444444444445,
+      "old_bias": 0.95,
+      "new_bias": 0.95,
+      "changed": 0,
+      "actual_net_mean": 2.1666666666666665
+    },
+    "MILK": {
+      "samples": 1260,
+      "old_mae": 3.478095238095238,
+      "new_mae": 3.478095238095238,
+      "old_bias": -0.41000000000000036,
+      "new_bias": -0.41000000000000036,
+      "changed": 0,
+      "actual_net_mean": 7.7253968253968255
+    },
+    "WOOL": {
+      "samples": 1260,
+      "old_mae": 2.401031746031746,
+      "new_mae": 2.401031746031746,
+      "old_bias": -0.40738095238095257,
+      "new_bias": -0.40738095238095257,
+      "changed": 0,
+      "actual_net_mean": 5.468253968253968
+    },
+    "FERTILIZER": {
+      "samples": 1260,
+      "old_mae": 2.6791666666666667,
+      "new_mae": 2.6791666666666667,
+      "old_bias": -0.7331349206349211,
+      "new_bias": -0.7331349206349211,
+      "changed": 0,
+      "actual_net_mean": 9.425396825396826
+    }
+  },
+  "seconds": 44.535967153,
+  "binary_sha256": "21a26dd27c9df427fcef04c4cd98fed11e761e38506fdb1a10dbbc01f8be4ad1",
+  "boundary": "Original actions unchanged; telemetry predicts conditional net sale only using past public crop removals. Forecast error reduction is not a win-rate test. Private/action labels never enter predictor."
+}

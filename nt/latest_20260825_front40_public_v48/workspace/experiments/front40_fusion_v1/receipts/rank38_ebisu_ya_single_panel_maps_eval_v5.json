@@ -1,0 +1,208 @@
+{
+  "schema": "kaggriculture.front40_fusion.shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-25T00:06:12.333455+00:00",
+  "status": "PASS",
+  "screens": [
+    "experiments\\front40_fusion_v1\\receipts\\rank38_ebisu_ya_all42_vs_fc24b_screen_seed1216001_n128x2_v2.json"
+  ],
+  "maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank38_ebisu_ya_single_panel_unrestricted_minimax_win_firstshop_v4.json",
+      "route_ids": [
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ],
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 79,
+        "ties": 0,
+        "win_rate": 0.30859375,
+        "mean_margin": -12442.14453125,
+        "worst_panel_win_rate": 0.30859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank38_ebisu_ya_all42_vs_fc24b_screen_seed1216001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 79,
+          "ties": 0,
+          "win_rate": 0.30859375,
+          "mean_margin": -12442.14453125,
+          "median_margin": -9751.0,
+          "invalid_mean": 28.44921875,
+          "oracle_win_rate": 0.4921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 39,
+              "ties": 0,
+              "win_rate": 0.3046875,
+              "mean_margin": -12320.4140625,
+              "invalid_mean": 27.953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 40,
+              "ties": 0,
+              "win_rate": 0.3125,
+              "mean_margin": -12563.875,
+              "invalid_mean": 28.9453125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank38_ebisu_ya_single_panel_unrestricted_stable_win_firstshop_v4.json",
+      "route_ids": [
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ],
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 79,
+        "ties": 0,
+        "win_rate": 0.30859375,
+        "mean_margin": -12442.14453125,
+        "worst_panel_win_rate": 0.30859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank38_ebisu_ya_all42_vs_fc24b_screen_seed1216001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 79,
+          "ties": 0,
+          "win_rate": 0.30859375,
+          "mean_margin": -12442.14453125,
+          "median_margin": -9751.0,
+          "invalid_mean": 28.44921875,
+          "oracle_win_rate": 0.4921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 39,
+              "ties": 0,
+              "win_rate": 0.3046875,
+              "mean_margin": -12320.4140625,
+              "invalid_mean": 27.953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 40,
+              "ties": 0,
+              "win_rate": 0.3125,
+              "mean_margin": -12563.875,
+              "invalid_mean": 28.9453125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank38_ebisu_ya_single_panel_unrestricted_wilson_firstshop_v4.json",
+      "route_ids": [
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ],
+        [
+          40,
+          41,
+          10,
+          40,
+          17,
+          7,
+          40,
+          19
+        ]
+      ],
+      "aggregate": {
+        "games": 256,
+        "wins": 79,
+        "ties": 0,
+        "win_rate": 0.30859375,
+        "mean_margin": -12442.14453125,
+        "worst_panel_win_rate": 0.30859375
+      },
+      "panels": [
+        {
+          "screen": "experiments\\front40_fusion_v1\\receipts\\rank38_ebisu_ya_all42_vs_fc24b_screen_seed1216001_n128x2_v2.npz",
+          "games": 256,
+          "wins": 79,
+          "ties": 0,
+          "win_rate": 0.30859375,
+          "mean_margin": -12442.14453125,
+          "median_margin": -9751.0,
+          "invalid_mean": 28.44921875,
+          "oracle_win_rate": 0.4921875,
+          "by_seat": [
+            {
+              "seat": 0,
+              "games": 128,
+              "wins": 39,
+              "ties": 0,
+              "win_rate": 0.3046875,
+              "mean_margin": -12320.4140625,
+              "invalid_mean": 27.953125
+            },
+            {
+              "seat": 1,
+              "games": 128,
+              "wins": 40,
+              "ties": 0,
+              "win_rate": 0.3125,
+              "mean_margin": -12563.875,
+              "invalid_mean": 28.9453125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank06_kanta_acd_v24",
+      "family": "rank06_balanced_cow_sheep_strawberry_two_shop",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank06_kanta_trace_bank_v1.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank06_kanta_stable_win_map_dev640_v6.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank06_kanta_secondshop_acd_dev640_v18.json"
+    }
+  ]
+}

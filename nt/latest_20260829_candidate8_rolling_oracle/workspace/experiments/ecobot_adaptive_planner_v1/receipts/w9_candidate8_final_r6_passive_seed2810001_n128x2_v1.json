@@ -1,0 +1,430 @@
+{
+  "schema": "kaggriculture.native-adaptive-probe.v1",
+  "generated_at_utc": "2026-08-28T19:38:32.466237+00:00",
+  "status": "PASS",
+  "engine": "C++ NativeAdaptiveExecutor.play_batch",
+  "policy_semantics": "general public-state daily/event planning; no opponent identity input",
+  "opponent": "PASSIVE",
+  "seed_start": 2810001,
+  "seed_count": 128,
+  "seats": [
+    0,
+    1
+  ],
+  "games": 256,
+  "setup_seconds": 0.9636332139999979,
+  "simulation_seconds": 0.6039264739999979,
+  "games_per_second": 423.89266081420516,
+  "genome_names": [
+    "cash_reserve",
+    "action_cost",
+    "move_cost",
+    "risk_multiplier",
+    "market_impact_weight",
+    "opponent_supply_weight",
+    "demand_drift_weight",
+    "sell_drop_limit",
+    "price_replan_fraction",
+    "task_stickiness",
+    "deadline_weight",
+    "fertilizer_value_fraction",
+    "max_hands",
+    "max_quadrants",
+    "max_total_animals",
+    "max_cows",
+    "max_sheep",
+    "max_geese",
+    "max_wheat",
+    "max_carrot",
+    "max_tomato",
+    "max_strawberry",
+    "max_melon",
+    "min_wheat_buffer",
+    "liquidation_day",
+    "stop_new_animals_day",
+    "stop_new_crops_day",
+    "replan_interval_steps",
+    "routine_priority_scale",
+    "task_value_scale",
+    "plant_priority",
+    "drop_value_threshold",
+    "preempt_quantity",
+    "wheat_relay_capacity_fraction",
+    "wheat_relay_opponent_risk",
+    "industry_affinity_scale",
+    "route_density_scale",
+    "flow_pace_priority",
+    "prerequisite_chain_strength",
+    "local_candidate_order",
+    "region_ownership_scale",
+    "animal_flow_control",
+    "workload_region_mode",
+    "routine_cell_exclusivity",
+    "hard_travel_slack_scale",
+    "future_structure_reservation_fraction",
+    "yarn_animal_flex",
+    "yarn_wool_price_threshold",
+    "yarn_opponent_sheep_gate",
+    "pet_crop_flex",
+    "pet_carrot_price_threshold",
+    "weed_capacity_priority",
+    "animal_flow_pressure_gate",
+    "animal_flow_executable_gate",
+    "terminal_animal_economics",
+    "crop_lane_layout_mode",
+    "region_assignment_mode",
+    "hard_latest_start_reservation",
+    "enroute_task_reservation",
+    "global_routine_matching",
+    "backbone_crop_flex",
+    "region_owner_first",
+    "quadrant_affinity_scale",
+    "opening_cash_reserve_fraction",
+    "region_anchor_distance_scale",
+    "town_demand_sell_timing",
+    "repeating_crop_economics",
+    "proactive_land_investment",
+    "capital_lockup_weight",
+    "backbone_animal_flex",
+    "animal_branch_economic_selector",
+    "animal_branch_observation_days",
+    "seed_transaction_value_order",
+    "animal_counter_crowding_gate",
+    "due_flow_cash_release",
+    "market_race_acceleration",
+    "operating_prior_selection",
+    "operating_prior_switch_margin",
+    "autonomous_commitment_persistence",
+    "land_capacity_trigger_fraction",
+    "crop_specific_terminal_horizon",
+    "autonomous_project_state_machine",
+    "future_shop_expectation_weight",
+    "portfolio_supply_impact_weight",
+    "live_commitment_projection_weight",
+    "portfolio_bundle_switch_margin",
+    "portfolio_switch_cooldown_days",
+    "portfolio_switch_candidate_rank",
+    "portfolio_local_edit_hold_days"
+  ],
+  "genomes": [
+    [
+      463.0199228450452,
+      12.97012809100279,
+      10.48974574079561,
+      1.4900479199522232,
+      0.3,
+      0.4274207043856589,
+      1.34360871061807,
+      0.33817238183303405,
+      0.3951576432138013,
+      116.92807258715303,
+      61.104686041201404,
+      0.7,
+      12.0,
+      3.0,
+      23.0,
+      16.0,
+      8.0,
+      7.0,
+      50.0,
+      8.0,
+      17.0,
+      51.0,
+      8.0,
+      7.0,
+      27.0,
+      17.0,
+      19.0,
+      71.0,
+      1.0,
+      0.0,
+      621.5562434880569,
+      917.4060615746777,
+      5.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      219.0,
+      100.0,
+      0.0,
+      44.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0,
+      0.05,
+      0.75,
+      0.7893144562776164,
+      0.0,
+      1.0,
+      0.2632206018867641,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "ranking": [
+    {
+      "genome_index": 0,
+      "label": "autonomous_capacity_r6",
+      "games": 256,
+      "mean_reward": 128276.5390625,
+      "median_reward": 131809.0,
+      "p10_reward": 99053.0,
+      "p90_reward": 151992.0,
+      "min_reward": 72899.0,
+      "max_reward": 163309.0,
+      "mean_opponent_reward": 3000.0,
+      "wins": 256,
+      "ties": 0,
+      "losses": 0,
+      "score_rate": 1.0,
+      "mean_margin": 125276.5390625,
+      "mean_replans": 33.95703125,
+      "mean_non_pass_operations": 7094.8828125,
+      "avoidable_crop_losses": 0,
+      "avoidable_animal_losses": 0,
+      "end_overflow": 0,
+      "mean_max_animal_targets": [
+        1.0390625,
+        12.609375,
+        4.3359375
+      ],
+      "mean_max_crop_targets": [
+        7.84375,
+        0.41796875,
+        2.11328125,
+        27.0625,
+        8.0
+      ],
+      "mean_final_animals": [
+        1.0390625,
+        12.609375,
+        4.3359375
+      ],
+      "mean_operating_prior_switches": 0.0,
+      "final_operating_prior_distribution": {
+        "-2": 256
+      },
+      "distinct_max_animal_profiles": 79,
+      "top_max_animal_profiles": [
+        {
+          "targets": [
+            1,
+            16,
+            3
+          ],
+          "games": 28
+        },
+        {
+          "targets": [
+            0,
+            16,
+            2
+          ],
+          "games": 16
+        },
+        {
+          "targets": [
+            1,
+            15,
+            3
+          ],
+          "games": 14
+        },
+        {
+          "targets": [
+            0,
+            16,
+            4
+          ],
+          "games": 10
+        },
+        {
+          "targets": [
+            1,
+            14,
+            3
+          ],
+          "games": 10
+        },
+        {
+          "targets": [
+            1,
+            7,
+            8
+          ],
+          "games": 10
+        },
+        {
+          "targets": [
+            1,
+            6,
+            8
+          ],
+          "games": 9
+        },
+        {
+          "targets": [
+            0,
+            15,
+            3
+          ],
+          "games": 9
+        },
+        {
+          "targets": [
+            0,
+            16,
+            3
+          ],
+          "games": 9
+        },
+        {
+          "targets": [
+            1,
+            16,
+            2
+          ],
+          "games": 8
+        },
+        {
+          "targets": [
+            1,
+            13,
+            3
+          ],
+          "games": 8
+        },
+        {
+          "targets": [
+            0,
+            15,
+            2
+          ],
+          "games": 7
+        }
+      ],
+      "hard_failure_examples": [],
+      "lowest_reward_examples": [
+        {
+          "seed": 2810028,
+          "seat": 1,
+          "reward": 72899.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810061,
+          "seat": 1,
+          "reward": 75097.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810061,
+          "seat": 0,
+          "reward": 82330.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810088,
+          "seat": 0,
+          "reward": 85495.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810088,
+          "seat": 1,
+          "reward": 85495.0,
+          "opponent_reward": 3000.0
+        }
+      ],
+      "highest_reward_examples": [
+        {
+          "seed": 2810084,
+          "seat": 1,
+          "reward": 163309.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810034,
+          "seat": 1,
+          "reward": 162409.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810034,
+          "seat": 0,
+          "reward": 162409.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810093,
+          "seat": 1,
+          "reward": 161833.0,
+          "opponent_reward": 3000.0
+        },
+        {
+          "seed": 2810105,
+          "seat": 0,
+          "reward": 160127.0,
+          "opponent_reward": 3000.0
+        }
+      ]
+    }
+  ],
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "backbone": null,
+    "genome_file": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    }
+  }
+}

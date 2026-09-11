@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map.v1",
+  "status": "FROZEN_FOR_VALIDATION_POOL",
+  "name": "rank22_victor_tufa_validation_firstshop_v1",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank22_victor_tufa_trace_bank_v1.npz",
+  "source_screen": "experiments/front40_fusion_v1/receipts/rank22_victor_tufa_candidates27_vs_fc24b_screen_seed944001_n128x2_v3.npz",
+  "shop_order": ["BAKERY", "BRUNCH_SPOT", "FARMERS_MARKET", "ICE_CREAM_SHOP", "PET_CAFE", "PIZZA_SHOP", "SMOOTHIE_SHOP", "YARN_STORE"],
+  "route_ids": [39, 27, 16, 110, 97, 39, 110, 53],
+  "source_panel_score": {"wins": 129, "games": 256, "win_rate": 0.50390625},
+  "selection": "unrestricted per-first-shop maximum strict wins, then margin, lower recovery count, and source reward",
+  "runtime_boundary": "first town shop already public; no identity, Replay ID, event seed, future event, or hidden state"
+}

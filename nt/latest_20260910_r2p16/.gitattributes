@@ -1,0 +1,12 @@
+* -text
+*.json whitespace=cr-at-eol
+# Frozen upstream/evidence bytes are hash-addressed; do not autoformat them.
+policy/** -whitespace
+opponents/** -whitespace
+development/** -whitespace
+referee/** -whitespace
+evidence/** -whitespace
+tests/** -whitespace
+# Large immutable data tables are not useful as multi-million-line diffs.
+opponents/**/actions.json -diff
+development/candidates/**/FORECAST_FLOOR_AUDIT.json -diff

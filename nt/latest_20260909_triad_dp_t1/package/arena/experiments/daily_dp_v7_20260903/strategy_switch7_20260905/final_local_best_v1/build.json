@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "seconds": 15.714225175000001,
+  "command": [
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/bin/g++-11",
+    "-nostdinc++",
+    "-isystem",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/include/c++/11",
+    "-isystem",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/include/x86_64-linux-gnu/c++/11",
+    "-L/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/lib/gcc/x86_64-linux-gnu/11",
+    "-B/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/toolchain/root/usr/lib/gcc/x86_64-linux-gnu/11/",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=x86-64",
+    "-fPIC",
+    "-shared",
+    "-static-libstdc++",
+    "-static-libgcc",
+    "-Wl,-Bsymbolic",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+    "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/online_bridge.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/agent.so"
+  ],
+  "files": {
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/finalize_goal.py": "6e368c3785192dcb4761bcde8dd5b608d6fba960169681b62a08bf7be94181f8",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/local_agent.py": "a5552ac3a9c787f674c0caa162dc3fff0e87097bef66a5828f50d356acc214b7",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/compact_policy.json": "3ace96a8476a3ec7c7c131ddde2bfc4410992ebe0280c44cd1647b834517de37",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/switch_model.hpp": "469e27dc60cd706ac57bee12479916430bb8be834e199669c50e40c4d9013695",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/online_bridge.cpp": "b22caf661d71022ce259700421a12b3410fea7f872b56b938d5a23a1bd33d9e0",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/switch8_20260904/online_bridge.cpp": "9e4d8504f3250416ec1bc3b5f12de7bef4329908e6402c6e79af24bb5803a671",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/bridge.cpp": "7adc67ccd2f9ffb6237d422e2262e6eddf01b44539f93ae132d60a58303040f4",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/frozen.hpp": "0344e64ebcdc5ee436f695e95ee4d011137663996886e52b17d4f4138088e710",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/submission/pending_dp27_fixed_macro_dynamic_20260904/main.py": "2bd91851f8240fa1ebf4a2f30856703b6765aede0a7c8bb17dfb4da1a47b1961",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/receipts_v2/plans.json": "ff1bdf6d462fcef58733ee79d3666b57e7f19b62d338918365608de07fe69e1a"
+  },
+  "binary_sha256": "82236f25427f0ca1c238c548f87b941ac5ceb02fc9574eefd55777f6cb95c118"
+}

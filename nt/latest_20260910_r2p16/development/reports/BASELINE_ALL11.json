@@ -1,0 +1,185 @@
+{
+  "games": 2200,
+  "new_games": 1400,
+  "reused_games": 800,
+  "by_opponent": {
+    "soil_v219g": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 130,
+      "losses": 70,
+      "ties": 0,
+      "r2_win_rate": 0.65,
+      "r2_mean_cash": 97807.595,
+      "opponent_mean_cash": 93449.475,
+      "mean_margin": 4358.12,
+      "median_margin": 3200.0
+    },
+    "moon_v215": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 131,
+      "losses": 69,
+      "ties": 0,
+      "r2_win_rate": 0.655,
+      "r2_mean_cash": 98258.525,
+      "opponent_mean_cash": 92847.525,
+      "mean_margin": 5411.0,
+      "median_margin": 3173.0
+    },
+    "flexon_v5": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 130,
+      "losses": 70,
+      "ties": 0,
+      "r2_win_rate": 0.65,
+      "r2_mean_cash": 97775.095,
+      "opponent_mean_cash": 93687.275,
+      "mean_margin": 4087.82,
+      "median_margin": 3138.0
+    },
+    "market_smart_v8": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 130,
+      "losses": 70,
+      "ties": 0,
+      "r2_win_rate": 0.65,
+      "r2_mean_cash": 97775.135,
+      "opponent_mean_cash": 93689.39,
+      "mean_margin": 4085.745,
+      "median_margin": 3136.0
+    },
+    "nagatakengo_v70": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 200,
+      "losses": 0,
+      "ties": 0,
+      "r2_win_rate": 1.0,
+      "r2_mean_cash": 155957.705,
+      "opponent_mean_cash": 47403.63,
+      "mean_margin": 108554.075,
+      "median_margin": 107076.5
+    },
+    "aurax_reactive_v1": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 131,
+      "losses": 69,
+      "ties": 0,
+      "r2_win_rate": 0.655,
+      "r2_mean_cash": 98136.09,
+      "opponent_mean_cash": 92821.595,
+      "mean_margin": 5314.495,
+      "median_margin": 3173.0
+    },
+    "thomas_955_v2": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 129,
+      "losses": 71,
+      "ties": 0,
+      "r2_win_rate": 0.645,
+      "r2_mean_cash": 99239.265,
+      "opponent_mean_cash": 94710.145,
+      "mean_margin": 4529.12,
+      "median_margin": 3704.5
+    },
+    "shop0909": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 130,
+      "losses": 70,
+      "ties": 0,
+      "r2_win_rate": 0.65,
+      "r2_mean_cash": 97775.155,
+      "opponent_mean_cash": 93681.54,
+      "mean_margin": 4093.615,
+      "median_margin": 3143.0
+    },
+    "aurax_shop_v2": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 132,
+      "losses": 68,
+      "ties": 0,
+      "r2_win_rate": 0.66,
+      "r2_mean_cash": 97690.785,
+      "opponent_mean_cash": 93544.455,
+      "mean_margin": 4146.33,
+      "median_margin": 3292.0
+    },
+    "seven_turn": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 130,
+      "losses": 70,
+      "ties": 0,
+      "r2_win_rate": 0.65,
+      "r2_mean_cash": 97775.095,
+      "opponent_mean_cash": 93687.275,
+      "mean_margin": 4087.82,
+      "median_margin": 3138.0
+    },
+    "ahmed_v27": {
+      "games": 200,
+      "valid_games": 200,
+      "errors": 0,
+      "r2_wins": 128,
+      "losses": 72,
+      "ties": 0,
+      "r2_win_rate": 0.64,
+      "r2_mean_cash": 97781.4,
+      "opponent_mean_cash": 93839.165,
+      "mean_margin": 3942.235,
+      "median_margin": 2977.0
+    }
+  },
+  "overall": {
+    "games": 2200,
+    "valid_games": 2200,
+    "errors": 0,
+    "r2_wins": 1501,
+    "losses": 699,
+    "ties": 0,
+    "r2_win_rate": 0.6822727272727273,
+    "r2_mean_cash": 103270.16772727272,
+    "opponent_mean_cash": 89396.49727272727,
+    "mean_margin": 13873.670454545454,
+    "median_margin": 4173.0
+  },
+  "reuse_proofs": [
+    {
+      "opponent": "shop0909",
+      "status": "MATCHED_REUSED",
+      "protocol": "experiments/shop_router_0909_vs_r2_200_20260909/PROTOCOL.json"
+    },
+    {
+      "opponent": "aurax_shop_v2",
+      "status": "MATCHED_REUSED",
+      "protocol": "experiments/reactive_rescue_vs_r2_200_20260909/PROTOCOL.json"
+    },
+    {
+      "opponent": "seven_turn",
+      "status": "MATCHED_REUSED",
+      "protocol": "experiments/reactive_rescue_vs_r2_200_20260909/PROTOCOL.json"
+    },
+    {
+      "opponent": "ahmed_v27",
+      "status": "MATCHED_REUSED",
+      "protocol": "experiments/ahmed_v27_vs_r2_200_20260909/PROTOCOL.json"
+    }
+  ]
+}

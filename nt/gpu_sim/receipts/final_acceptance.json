@@ -1,0 +1,150 @@
+{
+  "audited_at": "2026-08-10T18:21:32.357059+00:00",
+  "declared_runtime_boundary": {
+    "event_seed_count": 256,
+    "heldout_seeds": [
+      10000,
+      10127
+    ],
+    "outside_bank_behavior": "rejected; regenerate the exact event table",
+    "training_development_seeds": [
+      0,
+      127
+    ]
+  },
+  "gates": [
+    {
+      "detail": "Frozen and installed official source/config/framework hashes match.",
+      "evidence": "receipts/reference_verification.json",
+      "name": "official_reference_immutable_and_hashed",
+      "passed": true
+    },
+    {
+      "detail": "JAX 0.11.0 executes compiled work on NVIDIA GeForce RTX 3090, 24576, 610.47.",
+      "evidence": "receipts/jax_runtime.json",
+      "name": "wsl2_jax_rtx3090_runtime",
+      "passed": true
+    },
+    {
+      "detail": "Python round market LUT and conditional MT19937 event tables derive from frozen source.",
+      "evidence": "receipts/static_tables.json",
+      "name": "exact_python_price_and_rng_tables",
+      "passed": true
+    },
+    {
+      "detail": "Pass, starter, and v16 full seasons compare every recorded state.",
+      "evidence": "receipts/reference_traces.json and receipts/test_suite.json",
+      "name": "canonical_full_rule_parity",
+      "passed": true
+    },
+    {
+      "detail": "Seeds 10000..10099, all farm/private/market/town/status/reward fields exact.",
+      "evidence": "receipts/heldout_reference_traces.json and receipts/heldout_parity.json",
+      "name": "100_unseen_seeds_720_frames_zero_error",
+      "passed": true
+    },
+    {
+      "detail": "16 state-aware randomized seasons include deliberately invalid actions.",
+      "evidence": "receipts/random_differential_reference.json and receipts/random_differential_parity.json",
+      "name": "random_and_invalid_action_differential",
+      "passed": true
+    },
+    {
+      "detail": "MAX_HANDS=32, observed=14, cap counter tested.",
+      "evidence": "receipts/hand_cap_analysis.json",
+      "name": "static_hand_bound_with_instrumentation",
+      "passed": true
+    },
+    {
+      "detail": "Pure step, synchronized fast batch, independent rollouts, and lax.scan tests pass.",
+      "evidence": "receipts/test_suite.json",
+      "name": "jit_vmap_scan_batch_independence",
+      "passed": true
+    },
+    {
+      "detail": "Heterogeneous architectures, self-play collection, GAE and clipped PPO update stay on GPU.",
+      "evidence": "receipts/benchmark_policy_and_ppo.json and receipts/test_suite.json",
+      "name": "gpu_arena_and_ppo",
+      "passed": true
+    },
+    {
+      "detail": "All batches exceed 50k/s; batches 1024 and 4096 exceed 300k/s; compilation excluded.",
+      "evidence": "receipts/benchmark_simulator_only_full_season.json",
+      "name": "simulator_50k_minimum_300k_target",
+      "passed": true
+    },
+    {
+      "detail": "Pinned WSL environment, verification, parity, benchmark and training commands documented.",
+      "evidence": "requirements-wsl.lock.txt and README.md",
+      "name": "reproducible_environment_commands_and_docs",
+      "passed": true
+    }
+  ],
+  "headline": {
+    "full_ppo_env_transitions_per_s": {
+      "1024": 57291.46807792441,
+      "256": 17429.11035414595
+    },
+    "heldout_frames": 72000,
+    "policy_plus_sim_env_transitions_per_s": {
+      "1024": 79034.89412162408,
+      "256": 23659.645794336757,
+      "4096": 188236.02617066613
+    },
+    "random_differential_frames": 11520,
+    "simulator_env_transitions_per_s": {
+      "1024": 630236.7307459668,
+      "256": 187548.2454217937,
+      "4096": 1561634.374594314
+    }
+  },
+  "ok": true,
+  "schema": "kaggriculture_final_acceptance_v1",
+  "source_files": [
+    {
+      "bytes": 1203,
+      "path": "src/kaggriculture_jax/__init__.py",
+      "sha256": "5257eafd07092234c8718fb10fb003665d518afc925866510527a7db6ced593e"
+    },
+    {
+      "bytes": 3328,
+      "path": "src/kaggriculture_jax/arena.py",
+      "sha256": "994ccb52d0140da9325463d33a862c288032afd43dad6adf7a06340b37a79c81"
+    },
+    {
+      "bytes": 4718,
+      "path": "src/kaggriculture_jax/codec.py",
+      "sha256": "38cb39aa68ea2c7de34b114adc271dbe64757d0d0ac93e52cc8c3083c0431e6f"
+    },
+    {
+      "bytes": 2379,
+      "path": "src/kaggriculture_jax/constants.py",
+      "sha256": "5a0f827af5642173a88cdd4904bd58e55bf7e253711cb3e33bfbaed7f0905cb9"
+    },
+    {
+      "bytes": 8720,
+      "path": "src/kaggriculture_jax/policy.py",
+      "sha256": "61db46f9e1eaa754fe2458b1a1e83ca37204ece0eec6f1831ee43b9fae0f40f4"
+    },
+    {
+      "bytes": 58774,
+      "path": "src/kaggriculture_jax/simulator.py",
+      "sha256": "512786be758ef7b51f52d884538016ec13936b3bb73bda8a5bbd7125c46665b8"
+    },
+    {
+      "bytes": 5086,
+      "path": "src/kaggriculture_jax/state.py",
+      "sha256": "2102c2cdffba991b9b2df0f5375ac73544256fbf50f65f184f4c4b4c602c49bb"
+    },
+    {
+      "bytes": 12341,
+      "path": "src/kaggriculture_jax/training.py",
+      "sha256": "d827f4de429fa3b08dd8fdc432fd74b173228c809f79cafdc6b6651691f432b7"
+    },
+    {
+      "bytes": 1263,
+      "path": "src/kaggriculture_jax/types.py",
+      "sha256": "70f216e93c95c5e2f956ffce8cf7570ea6f15c0130629d5707103c4ef789eabf"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "kaggriculture.front40_fusion.merged-route-screen.v1",
+  "generated_at_utc": "2026-08-24T00:57:20.940926+00:00",
+  "sources": [
+    "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_dev20_vs_fc24b_screen_seed252001_n128x2_v30.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_dev20_vs_fc24b_screen_seed272001_n128x2_v30.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_dev20_vs_fc24b_screen_seed288001_n512x2_v28.json"
+  ],
+  "seed_count": 768,
+  "route_count": 20,
+  "games": 30720,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_dev20_vs_fc24b_screen_dev768_v30.npz",
+  "status": "PASS"
+}

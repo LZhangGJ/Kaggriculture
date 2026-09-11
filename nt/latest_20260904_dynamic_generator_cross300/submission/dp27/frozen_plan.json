@@ -1,0 +1,188 @@
+{
+  "uid": "R03_F001_E104234696_P0:027",
+  "source": "R03_F001_E104234696_P0",
+  "source_team": "Driz Lo",
+  "index": 27,
+  "plan_id": "a882fe77385f5e59",
+  "plan": [
+    {
+      "family": "EXPAND_NEW",
+      "kind": 0,
+      "amount": 4
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 0,
+      "amount": 1
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 0,
+      "amount": 4
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 3,
+      "amount": 4
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 11,
+      "amount": 1
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 11,
+      "amount": 1
+    },
+    {
+      "family": "DEFER_NEW",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    }
+  ],
+  "opponents": {
+    "R02_F001_E104469027_P0": {
+      "games": 32,
+      "wins": 23,
+      "ties": 0,
+      "mean_cash": 99432.5625,
+      "mean_opponent_cash": 90546.1875,
+      "mean_margin": 8886.375,
+      "missing_recipe": 40
+    },
+    "R03_F001_E104234696_P0": {
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "mean_cash": 108612.46875,
+      "mean_opponent_cash": 92289.3125,
+      "mean_margin": 16323.15625,
+      "missing_recipe": 20
+    },
+    "R05_F001_E104180967_P0": {
+      "games": 32,
+      "wins": 26,
+      "ties": 0,
+      "mean_cash": 103970.90625,
+      "mean_opponent_cash": 87267.75,
+      "mean_margin": 16703.15625,
+      "missing_recipe": 38
+    }
+  },
+  "min_wins": 23,
+  "total_wins": 76,
+  "mean_margin": 13970.895833333334,
+  "mean_cash": 104005.3125,
+  "missing_recipe": 98
+}

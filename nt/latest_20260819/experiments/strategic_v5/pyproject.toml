@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggriculture-strategic-v5"
+version = "0.0.0"
+description = "Full-farm strategic controller for Kaggriculture V5"
+requires-python = ">=3.12"
+dependencies = [
+  "jax>=0.7",
+  "numpy>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src", "../strategic_v4/src", "../../gpu_sim/src", "../../gpu_sim/tests"]

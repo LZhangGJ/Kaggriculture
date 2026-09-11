@@ -1,0 +1,481 @@
+{
+  "files": {
+    "ACCEPTANCE.json": {
+      "bytes": 4109,
+      "sha256": "cca5db98290c1e7a940955a4dc646d75db5c9c4cb8bfd4b849cdfc502da0fbdb"
+    },
+    "RESULTS.json": {
+      "bytes": 80041,
+      "sha256": "d793ea87ff0bca95e5b875b99725e52910526770a48466c7bb2557bbba7d52b3"
+    },
+    "SELECTION_FROZEN.json": {
+      "bytes": 8811,
+      "sha256": "430bb594f520025fda4168a0d79ef176a357940eff17eec4092ece24771c854d"
+    },
+    "aux_r0_selected/decisions.npz": {
+      "bytes": 7957287,
+      "sha256": "d5097c45b11204719b1e3807784d0bbff7ed2accdc164d4e855e5a9ef62029af"
+    },
+    "aux_r0_selected/games.json": {
+      "bytes": 729145,
+      "sha256": "582f8a7ed963c30b53690df82487b90412d644868ec35f52c7293b74a456fcf0"
+    },
+    "aux_r0_selected/provenance.json": {
+      "bytes": 519,
+      "sha256": "75527b89183caf45a4d59feddb00ab74e88ef96dfc3067e808835bc301871efd"
+    },
+    "aux_r0_selected/summary.json": {
+      "bytes": 1813,
+      "sha256": "59e813ac9606f81ad1f82e321b576a2a0ba17e18a9dd5930ebe1f8fdd2448b15"
+    },
+    "aux_r0_step1000_greedy/decisions.npz": {
+      "bytes": 7937683,
+      "sha256": "87e7f65904d16963b998882575a88a64b902ecdfd337c52fd627561409a69b77"
+    },
+    "aux_r0_step1000_greedy/games.json": {
+      "bytes": 729435,
+      "sha256": "bb966dd95ce150d99572520352dce1cbfd1786ec9ee58715d018a35d171e53c1"
+    },
+    "aux_r0_step1000_greedy/provenance.json": {
+      "bytes": 520,
+      "sha256": "e606ad229888cdebeaae1b21844735bbfee51184d8031b0e6fc6356254348f4d"
+    },
+    "aux_r0_step1000_greedy/summary.json": {
+      "bytes": 1805,
+      "sha256": "8f2ba94831bc975394039a8fa065bb135ad4e1a933f6f2451456f482c60da754"
+    },
+    "aux_r0_step1000_sample/decisions.npz": {
+      "bytes": 9309668,
+      "sha256": "8e5c8c3adf4359f4f81cc052c707da561cd13e761cb851c1b40563d0327982bb"
+    },
+    "aux_r0_step1000_sample/games.json": {
+      "bytes": 729196,
+      "sha256": "9997f79382cbbc012c75ce3ce45e6c38aeac1d7ab249c2a44ff979383b0ab842"
+    },
+    "aux_r0_step1000_sample/provenance.json": {
+      "bytes": 520,
+      "sha256": "1be66a65adaae93014ecb5e93b3b6e55a1020966661453deb311f7817fc7fc67"
+    },
+    "aux_r0_step1000_sample/summary.json": {
+      "bytes": 1813,
+      "sha256": "8c440121122bcd6a7bca5ea9600b1ef47600d23b00b0c196d6ee508a6f083a9b"
+    },
+    "aux_r0_step300_greedy/decisions.npz": {
+      "bytes": 8033236,
+      "sha256": "3edbfb62673bf2d06814772993f565b5bf5605deea3891a4b0ba888b8692d28c"
+    },
+    "aux_r0_step300_greedy/games.json": {
+      "bytes": 729359,
+      "sha256": "4e51c29d36ac607d38286bb70cf3795a961aec9442a881187b6a3402e6da1889"
+    },
+    "aux_r0_step300_greedy/provenance.json": {
+      "bytes": 501,
+      "sha256": "c2fcde3fc705c58d638ef223951aebc28236262025815e7b8f3a0ba24fbec2c0"
+    },
+    "aux_r0_step300_greedy/summary.json": {
+      "bytes": 1803,
+      "sha256": "d516b8900c7bb0959774ad79bbee21f4ab0ba03e1edd4a49394fa3e30c65fdf6"
+    },
+    "aux_r0_step300_sample/decisions.npz": {
+      "bytes": 9685723,
+      "sha256": "2e7fa84321f54506d038b19d9c9b7b20eaa47720edaaeedb5e37039f9439c653"
+    },
+    "aux_r0_step300_sample/games.json": {
+      "bytes": 729482,
+      "sha256": "53d06161ab9ec55c85f424a4c901d9daf8685bcf8b1b5fd708a93aee9c89a010"
+    },
+    "aux_r0_step300_sample/provenance.json": {
+      "bytes": 501,
+      "sha256": "370652e91232c03259e1469c8ed6d74f091c9e97de4a638bc4c2cf7cf80c83d9"
+    },
+    "aux_r0_step300_sample/summary.json": {
+      "bytes": 1806,
+      "sha256": "efc39fa8caf9f7128faba22180161a7afd46e5be7b48558859d3eb12241b84be"
+    },
+    "aux_r0_step900_greedy/decisions.npz": {
+      "bytes": 7970051,
+      "sha256": "c26cf31bb2c1516618e0bc352d7a8ea859fa88f021cbf0dbef17ae5790d75771"
+    },
+    "aux_r0_step900_greedy/games.json": {
+      "bytes": 729189,
+      "sha256": "9c3e64da26d5d1a989002f1752b8c803e6661ec0ca011cc464a359eb345f0fab"
+    },
+    "aux_r0_step900_greedy/provenance.json": {
+      "bytes": 519,
+      "sha256": "83a91971fee97fe8dc17fdda7a51f6716e88049b585bb5340e999d2222839ad9"
+    },
+    "aux_r0_step900_greedy/summary.json": {
+      "bytes": 1815,
+      "sha256": "cd5787c9e493dc621d1fec66477db0f0871161fd907d8ecaf52e5b707c3f6aff"
+    },
+    "aux_r0_step900_sample/decisions.npz": {
+      "bytes": 9425227,
+      "sha256": "bdca144a42c126a39eafc16100c5f41b38dbf13583f1db6a08cb7b56feb9cfe0"
+    },
+    "aux_r0_step900_sample/games.json": {
+      "bytes": 729193,
+      "sha256": "b8c792e51a2f7294a3dd9178b71305f55331b2ff51a398318fc8847c933536ed"
+    },
+    "aux_r0_step900_sample/provenance.json": {
+      "bytes": 519,
+      "sha256": "bd212e3352d0ff9947b06417aa8c0f1730c7a393753894a6c289d71caaed20c7"
+    },
+    "aux_r0_step900_sample/summary.json": {
+      "bytes": 1805,
+      "sha256": "079d17737d074fc9135249abeaf950521dfda4ecd14e4cee2f9efc9b2eb5a33e"
+    },
+    "aux_r1_selected/decisions.npz": {
+      "bytes": 7806803,
+      "sha256": "89a6011fa115c40c759a5a5652d991428758a4e53b332e79319741581502ca6c"
+    },
+    "aux_r1_selected/games.json": {
+      "bytes": 729664,
+      "sha256": "a8e63b467b624b03efed757c078661b871458befa94f10ee8261fd0b78c9db88"
+    },
+    "aux_r1_selected/provenance.json": {
+      "bytes": 519,
+      "sha256": "ca67b8c3c8f219318232e2d15dc9910071de7876252598f8940f361ecf5c111c"
+    },
+    "aux_r1_selected/summary.json": {
+      "bytes": 1806,
+      "sha256": "9fb6a4d0fc724b17d01c47e4593300d6b5ee7a18dd0d7acbc84923d8467380c1"
+    },
+    "aux_r1_step1000_greedy/decisions.npz": {
+      "bytes": 7893977,
+      "sha256": "02fe0f575ff19f8193828d5a088aa52a33b11a762e6f3f66a936e8f944a69d3d"
+    },
+    "aux_r1_step1000_greedy/games.json": {
+      "bytes": 729438,
+      "sha256": "7b90ddca905028987b711334001d0bb55a58f246479522d41100cfcd4d87478e"
+    },
+    "aux_r1_step1000_greedy/provenance.json": {
+      "bytes": 520,
+      "sha256": "2c5b2570c1d27e006b8b72739a1d2a86f615333037cf64692972f6d7e3da370b"
+    },
+    "aux_r1_step1000_greedy/summary.json": {
+      "bytes": 1819,
+      "sha256": "b60b69296d376fe3594c91341f610dbf83c49b0999e0c527737a830a5df610e6"
+    },
+    "aux_r1_step1000_sample/decisions.npz": {
+      "bytes": 9580108,
+      "sha256": "516816b4d407491351fc816b6a8eb5488b8f2c7bd20ca57ed3e4e0c18ae15b55"
+    },
+    "aux_r1_step1000_sample/games.json": {
+      "bytes": 729369,
+      "sha256": "ac4fae0827f7a6dbc81ba99097977e34022764956cbebb45e031c1d3682b0c0e"
+    },
+    "aux_r1_step1000_sample/provenance.json": {
+      "bytes": 520,
+      "sha256": "c5d861ca1b2f0b7c62736c9f0407e7a0026dac0ddb05cc08b739cd76b40fc645"
+    },
+    "aux_r1_step1000_sample/summary.json": {
+      "bytes": 1806,
+      "sha256": "d6ea23cf551936d0deff3d9e5e4662f3799f8b34bcd4180ca987238506ba9c81"
+    },
+    "aux_r1_step300_greedy/decisions.npz": {
+      "bytes": 7737178,
+      "sha256": "d00e943922389c9d9e274d8d530070b8e01cb863a5f470be38dfb8fbfc0b365d"
+    },
+    "aux_r1_step300_greedy/games.json": {
+      "bytes": 729529,
+      "sha256": "ad958869238267e1286b911acd1ece4ae899c8fa00738ce9fab5cc12bea14761"
+    },
+    "aux_r1_step300_greedy/provenance.json": {
+      "bytes": 501,
+      "sha256": "6488a052d65ba5fabee37863a8312ead21a315911b938135f4ebb9f04d7d96ba"
+    },
+    "aux_r1_step300_greedy/summary.json": {
+      "bytes": 1813,
+      "sha256": "bd6ec8c5114ded259641955ba6af8af0c6760735a831bf42f2bfa8b684c9a3a0"
+    },
+    "aux_r1_step300_sample/decisions.npz": {
+      "bytes": 9498079,
+      "sha256": "3913550cd1984551d6656c9e5d7582a89ab1fb680b86714897f061ac4402644a"
+    },
+    "aux_r1_step300_sample/games.json": {
+      "bytes": 729894,
+      "sha256": "f2cae4d35bafb12e30b18c7d9a900195316400193f57b0c0da1727f5b6d43499"
+    },
+    "aux_r1_step300_sample/provenance.json": {
+      "bytes": 501,
+      "sha256": "9e7d0ffaa19034f89f0d34ec5e29e2c62acf840afbd8934e42e5436545043fde"
+    },
+    "aux_r1_step300_sample/summary.json": {
+      "bytes": 1803,
+      "sha256": "b2929bc9c5da830f46e3dbbe4cedf070fa3054a3d02411aa776c9ee09d6e71ab"
+    },
+    "aux_r1_step900_greedy/decisions.npz": {
+      "bytes": 7894964,
+      "sha256": "726e01a44ab04794410a660580c335972dca63f702d63606bda2dccab49d8c6e"
+    },
+    "aux_r1_step900_greedy/games.json": {
+      "bytes": 729556,
+      "sha256": "b0da64e1e7e09c2d0d6eab1ab208eb99e21826844ca19860bc280a6251f45bb5"
+    },
+    "aux_r1_step900_greedy/provenance.json": {
+      "bytes": 519,
+      "sha256": "ea77bd9ba952a9682aaeec40034b31bf1bc8e4a6c437d99f0c4d68910c8574f2"
+    },
+    "aux_r1_step900_greedy/summary.json": {
+      "bytes": 1791,
+      "sha256": "5e0d5893b40242c6696e9e1feb7813baf21ed2058df07fd980c9195a702d48eb"
+    },
+    "aux_r1_step900_sample/decisions.npz": {
+      "bytes": 9614708,
+      "sha256": "096e0e94d37b4b4f5dcc73288092371ade0637af92c6874870e333c227e5becf"
+    },
+    "aux_r1_step900_sample/games.json": {
+      "bytes": 729368,
+      "sha256": "d98174b9c8b111ab32da5b9a0457f2c3eea9ecb334218ae238c672bb0cf43c05"
+    },
+    "aux_r1_step900_sample/provenance.json": {
+      "bytes": 519,
+      "sha256": "90834df276b36f1d84c8b24c98721cbbc0204132139048821ad8acdabda922a5"
+    },
+    "aux_r1_step900_sample/summary.json": {
+      "bytes": 1808,
+      "sha256": "0f5b214ed7a8d37d8c7a89cc50410b17249ebac69afbbc4b90495daac865a3fa"
+    },
+    "control_r0_selected/decisions.npz": {
+      "bytes": 7777939,
+      "sha256": "07110d5798fbbc33a312ebc2c2350f5151e6775c45ed1d49020163a81ef70fee"
+    },
+    "control_r0_selected/games.json": {
+      "bytes": 728838,
+      "sha256": "74b38f7255b296b3378228ff8e36dbbb01de72bca91666d4c26aa243efb904bb"
+    },
+    "control_r0_selected/provenance.json": {
+      "bytes": 505,
+      "sha256": "29ba49066b230bac20a1375792a8a0b5b5f9bd38114208d49cd2606b99c01ca8"
+    },
+    "control_r0_selected/summary.json": {
+      "bytes": 1803,
+      "sha256": "acd7b1e235eb39f1d7ca19dc8be49e2a51c4673d4d6dbd416fd2f892302a2ced"
+    },
+    "control_r0_step1000_greedy/decisions.npz": {
+      "bytes": 7944578,
+      "sha256": "d89acf2e7295ea1992b56d08209ed0b5beea90bceb0772f9b6c55f7ed2f974c8"
+    },
+    "control_r0_step1000_greedy/games.json": {
+      "bytes": 729598,
+      "sha256": "8f06084609bff8f25f748d8ea4e2cbd31fb1ca98ae73ed5e6ae762ce2bd69eed"
+    },
+    "control_r0_step1000_greedy/provenance.json": {
+      "bytes": 524,
+      "sha256": "2b5bff6ec397ef4f1fe73c8800cb620ee4ac495ae77948a5fa71c6221a855cfc"
+    },
+    "control_r0_step1000_greedy/summary.json": {
+      "bytes": 1800,
+      "sha256": "02cf4b2564f9e8c6c713ede68d51655c476e20d8d848616315d3726ffd3a0b3c"
+    },
+    "control_r0_step1000_sample/decisions.npz": {
+      "bytes": 9329391,
+      "sha256": "212204821a4f8cff76a5ee07fe3e9916e2eeb89b513a9a2d628751665abd0cba"
+    },
+    "control_r0_step1000_sample/games.json": {
+      "bytes": 730135,
+      "sha256": "61c68550d8f212a65e7e367087269eb83c7ab447c4146186d1b0a5e77366630b"
+    },
+    "control_r0_step1000_sample/provenance.json": {
+      "bytes": 524,
+      "sha256": "fd921a217fbeae6d67de9f10f205cde145050dda6a7d5388b1186fb99a11d900"
+    },
+    "control_r0_step1000_sample/summary.json": {
+      "bytes": 1812,
+      "sha256": "00cc37e14d33f79277ba580021284c2c784cfe15832ca219fffa022619669610"
+    },
+    "control_r0_step300_greedy/decisions.npz": {
+      "bytes": 7798143,
+      "sha256": "bb448017e4c95dc34517732dd2db78716e470063dd3a9332090b4c38ca9097cb"
+    },
+    "control_r0_step300_greedy/games.json": {
+      "bytes": 729070,
+      "sha256": "373d41aa81dc2705ac5c0c4d015a8921c7e63bdde8cc4219912f684e04ca21bb"
+    },
+    "control_r0_step300_greedy/provenance.json": {
+      "bytes": 505,
+      "sha256": "8323be98bf9471b554b967ff2afc2e48a4167df66fc332dcba07ff0ad4f0e434"
+    },
+    "control_r0_step300_greedy/summary.json": {
+      "bytes": 1802,
+      "sha256": "423d3edf3225b0f5cd37bae23fc63f493312860d750e8faf06a8b0f37f5259a8"
+    },
+    "control_r0_step300_sample/decisions.npz": {
+      "bytes": 9512855,
+      "sha256": "3d7780c069307e5cdc2e45d8a420ee4fa68ee8e891c7a09cbade123108dd72ba"
+    },
+    "control_r0_step300_sample/games.json": {
+      "bytes": 728975,
+      "sha256": "7ff1cd864035b8389f5d69d3c5ef90f8594917db3b4bf886d019785449dbe6e3"
+    },
+    "control_r0_step300_sample/provenance.json": {
+      "bytes": 505,
+      "sha256": "4ae26cd7275af9fa2731923b5e1af106d737160f6f9347e46a053511965ecfcd"
+    },
+    "control_r0_step300_sample/summary.json": {
+      "bytes": 1804,
+      "sha256": "bb21103a4659963e7fbae7b6e1a85252feecf519cf319fc4dd06d75bccf6fa59"
+    },
+    "control_r0_step900_greedy/decisions.npz": {
+      "bytes": 7893983,
+      "sha256": "22f8ed225b13541ad803b7b171766b3b4e8a71f1f393ded75ffae25d578505ac"
+    },
+    "control_r0_step900_greedy/games.json": {
+      "bytes": 729195,
+      "sha256": "4d2a7d202c813c9f13b91049fb9bc65bd778bf033c3d9b0624e59f5bca40c02d"
+    },
+    "control_r0_step900_greedy/provenance.json": {
+      "bytes": 523,
+      "sha256": "788b24ce5f4ab5e99eb0105efd3c25d3974f1d6b4356da7b7386595f8857b500"
+    },
+    "control_r0_step900_greedy/summary.json": {
+      "bytes": 1803,
+      "sha256": "16e0f94455ca264eaf6d75ac083fdf21daf25c9ddc04d9e063cdaf80cff8de0c"
+    },
+    "control_r0_step900_sample/decisions.npz": {
+      "bytes": 9581424,
+      "sha256": "b34987e918a5ea457a5f5388b4222384d2a80677b9a90990352c15872f2ed545"
+    },
+    "control_r0_step900_sample/games.json": {
+      "bytes": 729375,
+      "sha256": "5da1061db8df63e4cdd39cd5264a8131690c1ddde7c08f30ebeeb65c57c7872e"
+    },
+    "control_r0_step900_sample/provenance.json": {
+      "bytes": 523,
+      "sha256": "42d7129b9cd3d8c9a3ba4234a4b539536907f6c2c51e0547294d047814b3e769"
+    },
+    "control_r0_step900_sample/summary.json": {
+      "bytes": 1813,
+      "sha256": "4393676e597af02c5ac7d196b78028872ebb48a124d7be0da0d1672de1681af1"
+    },
+    "control_r1_selected/decisions.npz": {
+      "bytes": 7799573,
+      "sha256": "af7c3335d986e4cba13147e578d91b7d2786d105d3645e357c3ba4cd726cea39"
+    },
+    "control_r1_selected/games.json": {
+      "bytes": 729165,
+      "sha256": "88381f9ecb9fb67015bccccaa687149157a55ca657998e88f0bdc0f40497fcc9"
+    },
+    "control_r1_selected/provenance.json": {
+      "bytes": 505,
+      "sha256": "e580cdd948ea4ae0519941003c9629995d0c8129b702285c4a00ec3591887582"
+    },
+    "control_r1_selected/summary.json": {
+      "bytes": 1809,
+      "sha256": "3e82bee86c2d1b967aa7b976cd92fb391d133e5adb6442d1d72304ce343450f1"
+    },
+    "control_r1_step1000_greedy/decisions.npz": {
+      "bytes": 7918939,
+      "sha256": "c1c2bf2e20ab90922064f9cca93c1e48a084b36d56dea9ed6f79c0da83616d51"
+    },
+    "control_r1_step1000_greedy/games.json": {
+      "bytes": 729410,
+      "sha256": "bf32da197285764b625a53b4f84f25ee89e024ea579fbe19491b0a9bdebeb3b6"
+    },
+    "control_r1_step1000_greedy/provenance.json": {
+      "bytes": 524,
+      "sha256": "498cb8197b91038e0d89fe871b16b091c34bd3655a8500da266ff90d0bc33ade"
+    },
+    "control_r1_step1000_greedy/summary.json": {
+      "bytes": 1819,
+      "sha256": "457ddf8532e48d78a70f7feaf5cc56296e6a05f8b22edebbc5e641e6dd0f0a1a"
+    },
+    "control_r1_step1000_sample/decisions.npz": {
+      "bytes": 9585633,
+      "sha256": "18fdfa4b99f6eae3b6ac9cb5dc38ce7f72e0ae79e27e38059283f4f1284734c1"
+    },
+    "control_r1_step1000_sample/games.json": {
+      "bytes": 729273,
+      "sha256": "1edbda4b4ce165c6bd0911766f78732623bce14f65a63df795a58579d7510047"
+    },
+    "control_r1_step1000_sample/provenance.json": {
+      "bytes": 524,
+      "sha256": "07996ad369055f524dccd0dac12d790e20be5cba5fc80a401f45448b0ddf019d"
+    },
+    "control_r1_step1000_sample/summary.json": {
+      "bytes": 1813,
+      "sha256": "1b01c083f21d858960e41a10a729ae950f6822d5bfe6604e947707f505df4249"
+    },
+    "control_r1_step300_greedy/decisions.npz": {
+      "bytes": 7918504,
+      "sha256": "11ff7e7645d8998a523a58d2c6511af769464e65c5839d35a166bb410e8f2894"
+    },
+    "control_r1_step300_greedy/games.json": {
+      "bytes": 729264,
+      "sha256": "aae3aaf9c5f85b9fe412e2352fa22715d823b3e2ecd841edcc5c1e37df40ec4f"
+    },
+    "control_r1_step300_greedy/provenance.json": {
+      "bytes": 505,
+      "sha256": "b8c76136fc77c7f1f558ec0c30be775f3c9a69177cee1752287da48f043ebd1e"
+    },
+    "control_r1_step300_greedy/summary.json": {
+      "bytes": 1814,
+      "sha256": "460efe4d09db44ab0758c765ad43000bda8630f8887c4dab84cec6fab76da1a5"
+    },
+    "control_r1_step300_sample/decisions.npz": {
+      "bytes": 9597489,
+      "sha256": "b607d3c22e2eb8066e9ee559c182f083048b1da4bc9a0802dad5440b7b78d3f8"
+    },
+    "control_r1_step300_sample/games.json": {
+      "bytes": 730122,
+      "sha256": "f4a7337e32cefdcdb3efc6977792f2534031b195a5424514b548cc632d5c8851"
+    },
+    "control_r1_step300_sample/provenance.json": {
+      "bytes": 505,
+      "sha256": "64aa28bb232a34546cd9971996353d197d282f31fe3c6a8e63fe3d82f3b0e551"
+    },
+    "control_r1_step300_sample/summary.json": {
+      "bytes": 1813,
+      "sha256": "d29d19824c9faaf5da6a2e2c700dc8c323117f9f8ba006f9b8807b9195403483"
+    },
+    "control_r1_step900_greedy/decisions.npz": {
+      "bytes": 7926591,
+      "sha256": "651133cd31d5eaab6541edf652bbf44c4d3d937331bfd42260be005a33e682a4"
+    },
+    "control_r1_step900_greedy/games.json": {
+      "bytes": 729381,
+      "sha256": "fda33773ce0d4d1b955a65f90cde3e5a6741a42181fd9ce5607e106e74bae252"
+    },
+    "control_r1_step900_greedy/provenance.json": {
+      "bytes": 523,
+      "sha256": "7b496943382f0fbb804d90c8329f62c6433700c74e3e0511af4396822825e1c5"
+    },
+    "control_r1_step900_greedy/summary.json": {
+      "bytes": 1810,
+      "sha256": "437479c0d8c09ab491a750201dbc34b5e4cac9294baf30f927eda6aff1bc6ee1"
+    },
+    "control_r1_step900_sample/decisions.npz": {
+      "bytes": 9586970,
+      "sha256": "8457a17d7f8f254fac799afda0ec9fd9735d60b8d71c1ba9ae3e815d712a1879"
+    },
+    "control_r1_step900_sample/games.json": {
+      "bytes": 729138,
+      "sha256": "8faeb78a4dbded17c735b9572fd5806fa70b406cc65d17b2d3b114781a285ccf"
+    },
+    "control_r1_step900_sample/provenance.json": {
+      "bytes": 523,
+      "sha256": "d5f6023a2574bad2d8d1c065b9674834a8cb183343d2e05e39c80274369ff48e"
+    },
+    "control_r1_step900_sample/summary.json": {
+      "bytes": 1801,
+      "sha256": "22a4408c01e48aa1a4d5d3895179b7eadb6d1c2c7aa04cfe4d07fb05d9db5b61"
+    },
+    "keep/decisions.npz": {
+      "bytes": 7030870,
+      "sha256": "88bc3d2f0320590c54adf399a6578e5a19e70610b5c83fc86faccd74ce12a865"
+    },
+    "keep/games.json": {
+      "bytes": 730153,
+      "sha256": "017f91127541dffa01f9906ded9aab8a8ef15bee12cff855fe8a9ea13e46b744"
+    },
+    "keep/provenance.json": {
+      "bytes": 331,
+      "sha256": "d4e72adf985d3ffe7264c3d9beee52ec2cfc33225b01d6c15506631d8331b718"
+    },
+    "keep/summary.json": {
+      "bytes": 1795,
+      "sha256": "46fb1a50a2e93abd973b7c7ea2e21b54429f24270332cd62760bd7d21a18be2f"
+    }
+  },
+  "count": 119
+}

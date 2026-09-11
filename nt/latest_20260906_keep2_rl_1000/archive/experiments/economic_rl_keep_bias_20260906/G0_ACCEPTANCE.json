@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "original_bonus_full_trace_exact": true,
+  "cpp_torch_probabilities": [
+    {
+      "bonus": 2.0,
+      "probability_error": 1.1920928955078125e-07,
+      "nonkeep": 42
+    },
+    {
+      "bonus": 1.0,
+      "probability_error": 1.1920928955078125e-07,
+      "nonkeep": 322
+    },
+    {
+      "bonus": 0.0,
+      "probability_error": 2.086162567138672e-07,
+      "nonkeep": 366
+    }
+  ],
+  "threads_1_16_full_trace_exact": true,
+  "no_threadlocal_stale_bonus": true,
+  "all_choices_legal": true,
+  "games": 98
+}

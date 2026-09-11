@@ -1,0 +1,7 @@
+{
+  "binary_sha256": "af9a003c25daedd93a06ef1e18783a82824825a0ced421e07373cc8672cae81d",
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "original_binary_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "boundary": "Only policy-local conditional worlds; discarded scores never choose live actions; all actual actions verified against original frozen traces."
+}

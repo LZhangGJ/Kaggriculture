@@ -1,0 +1,8 @@
+{
+  "schema": "kaggriculture.fusion_champion.current_best_pointer.v1",
+  "current_best": "experiments/fusion_champion_v1/configs/fc2_k320_anti_mirror_best_so_far_v2.json",
+  "sha256": "4E422CABCC60A9F376A7B991BB3B8D2443D3B43C46FB5A246576C7CF3E21E49E",
+  "status": "BEST_SO_FAR_PENDING_FINAL_GATE",
+  "selection_basis": "K320 four-block aggregate 89.955%; same-seed heterogeneous regression: 1,792 non-K320 games, one improved outcome and zero regressed outcomes",
+  "preservation_policy": "Never overwrite or delete the referenced config. New best configurations must be added as new versioned files before this pointer is updated."
+}

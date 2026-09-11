@@ -1,0 +1,90 @@
+{
+  "schema": "kaggriculture.candidate8_final_acceptance_index.v1",
+  "date_jst": "2026-08-29",
+  "status": "CANDIDATE_LAYER_PASS_SELECTOR_HOLD",
+  "families": [
+    "SCHEDULE_LAYOUT",
+    "CONTINUOUS_SCALE",
+    "UNILATERAL",
+    "MULTI_PROJECT",
+    "TIMING",
+    "MARKET_TRANSACTION",
+    "PHASE_SUFFIX",
+    "LOCAL_RECOVERY"
+  ],
+  "soft_quota64": [1, 8, 15, 5, 18, 5, 6, 3, 3],
+  "tests": {
+    "passed": 20,
+    "failed": 0,
+    "behavior_effect_families_passed": 8,
+    "hard_errors_in_1024_game_regression": 0
+  },
+  "passive_multifuture32": {
+    "states": 16,
+    "oracle_recall_at_64": 0.75,
+    "near_oracle_within_500": 0.8125,
+    "near_oracle_within_1000": 0.875,
+    "mean_shortlist_regret": 281.826171875,
+    "mean_best_gain_over_keep": 7800.9765625,
+    "end_overflow_events": 0,
+    "complete_continuations_per_second": 450.78839379796415
+  },
+  "strong_opponent_gate": {
+    "G001_oracle_recall_at_64": 0.5,
+    "G017_oracle_recall_at_64": 0.25,
+    "G231_oracle_recall_at_64": 0.0,
+    "status": "FAIL_NEEDS_LEARNED_CROSS_OPPONENT_RANKER"
+  },
+  "online_latency": {
+    "candidate_generation_p95_ms": 1.0384942499999998,
+    "warm_ranker64_p95_ms": 57.40085615,
+    "combined_p95_ms": 58.4393504,
+    "technical_budget_pass": true,
+    "ranker_quality_pass": false
+  },
+  "selfplay_gate": "HOLD",
+  "files": [
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/src/adaptive_candidates.hpp",
+      "sha256": "A12F4362EE590B48A665BB160EC1D96CD35BE3BD96A7E9D462AFDC841B6C9F19"
+    },
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/src/adaptive_candidates.cpp",
+      "sha256": "FB312F253DC8782154D2B2CC93797AE1ADA349AD66174A5BE3144035CD3FE462"
+    },
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/src/native_adaptive.hpp",
+      "sha256": "1A86D2664C808FEC003F02258108B20DA0C6C6E023E5E06D13F919F7A6D14661"
+    },
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/src/native_adaptive.cpp",
+      "sha256": "6C4AA87CEC3CAFDCC750DA04A0F63DFD0D25A01CB023E757081E6B8A7325841F"
+    },
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/src/bindings.cpp",
+      "sha256": "016B9DB2699457DDC3526D2478F7BEAD7C0E69310C7CE613BD6A51DD5CE3AE4E"
+    },
+    {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/tests/test_adaptive_candidates.py",
+      "sha256": "93A41468FFD3B5371A327577A9766432367F1393F339C4CBC76278E3015D6A32"
+    }
+  ],
+  "critical_receipts": [
+    {
+      "path": "experiments/ecobot_adaptive_planner_v1/receipts/w9_candidate8_multifuture_passive_prefix2820001_n8x2_future32_day9_final_v2.json",
+      "sha256": "E0CA44931043A248C58298C947A84E8C4C8307C9C1EB1DF77FDC74CB9B1970A5"
+    },
+    {
+      "path": "experiments/ecobot_adaptive_planner_v1/receipts/w9_candidate8_multifuture_g001_prefix2824001_n4x2_future16_day9_final_v3.json",
+      "sha256": "2B8AE97169942BC4CCC57F5BD53F1B49C270AED2DE71F0A37CA7897F5013561D"
+    },
+    {
+      "path": "experiments/ecobot_adaptive_planner_v1/receipts/w9_candidate8_ordered_financing_g001_v1.json",
+      "sha256": "6D410909D268BD95D11C9323B6971E1DE23E1ED5277FF2994EE8F2826304E488"
+    },
+    {
+      "path": "experiments/ecobot_adaptive_planner_v1/receipts/w9_candidate8_online_budget_v1.json",
+      "sha256": "EC4C148D3248CAF9CE921056A63A7324FC5CA45042ED0919AA72DF9012834F41"
+    }
+  ]
+}

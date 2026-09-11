@@ -1,0 +1,76 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank04_arman_v45",
+  "family": "rank04_two_shop_exact_suffix",
+  "source": {
+    "leaderboard_rank": 4,
+    "team_name": "Arman Tuganbaev",
+    "submission_id": 55617399,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank04_arman_trace_bank_v1.json",
+    "route_count": 143
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank04_arman_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank04_arman_secondshop_exact5_dev640_v38.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "router_mode": "ROUTER_TWO_SHOP_COMPATIBLE_MAP",
+    "switch_step": 144,
+    "prefix_range": [72, 144],
+    "public_state_only": true
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [50, 50, 50, 50, 50, 131, 50, 129],
+    "second_yarn_route": 134,
+    "accepted_second_shop_pairs": [
+      "BRUNCH_SPOT:YARN_STORE",
+      "FARMERS_MARKET:YARN_STORE",
+      "ICE_CREAM_SHOP:YARN_STORE",
+      "PIZZA_SHOP:YARN_STORE",
+      "SMOOTHIE_SHOP:YARN_STORE"
+    ]
+  },
+  "independent_validation": {
+    "panels": [
+      "experiments/front40_fusion_v1/receipts/rank04_arman_v45_eval_seed336_n512x2.json",
+      "experiments/front40_fusion_v1/receipts/rank04_arman_v45_eval_seed344_n512x2.json",
+      "experiments/front40_fusion_v1/receipts/rank04_arman_v45_eval_seed352_n512x2.json"
+    ],
+    "games": 3072,
+    "wins": 2771,
+    "win_rate": 0.9020182291666666,
+    "seat0_win_rate": 0.900390625,
+    "seat1_win_rate": 0.9036458333333334,
+    "baseline_wins": 2720,
+    "net_wins_vs_first_shop_baseline": 51,
+    "all_719_steps": true,
+    "hard_counter_total": 0
+  },
+  "online_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank04_arman_online_final_pair_vs_fc24b_seed352001_n128x2_v43.json",
+    "parity_receipt": "experiments/front40_fusion_v1/receipts/rank04_arman_online_exact5_screen_parity_seed352001_n128x2_v44.json",
+    "games": 256,
+    "wins": 230,
+    "win_rate": 0.8984375,
+    "all_done": true,
+    "hard_counter_total": 0,
+    "cash_route_mismatches": 0
+  },
+  "sha256": {
+    "trace_bank": "7A0E12B6A0ACDF6923C549193FC770FA577401FDAFABD6117D5D05AA9D674295",
+    "first_shop_map": "117CC3742FC180F55DC7128951B6C6ECFD67E38AC1B1D05039DFD57B20C65E52",
+    "second_shop_map": "BF2539BDAFF939DE77920AFBB92CDEE7B83BD11F7FF56694CBACCAAD63862040",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

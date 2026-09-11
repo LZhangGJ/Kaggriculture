@@ -1,0 +1,69 @@
+{
+  "backend": "gpu",
+  "compilation_excluded_from_throughput": true,
+  "full_ppo_iteration": [
+    {
+      "batch_size": 64,
+      "compile_and_first_s": 13.458292591000003,
+      "device_memory_stats": {
+        "bytes_in_use": 23218176,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 67108864,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 3073,
+        "peak_bytes_in_use": 121945344,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "env_transitions_per_s": 5480.821702988589,
+      "loss": -0.2583988904953003,
+      "optimizer_step": 1,
+      "player_samples_per_s": 10961.643405977178,
+      "repetitions": 2,
+      "rollout_steps": 8,
+      "steady_median_s": 0.09341664949998574,
+      "steady_min_s": 0.08221144199998776
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "measured_at": "2026-08-10T18:03:45.559074+00:00",
+  "model": {
+    "hidden_sizes": [
+      128,
+      128
+    ],
+    "observation_size": 3301,
+    "parameter_count": 608029,
+    "policy_market_slots": 2
+  },
+  "policy_plus_sim": [
+    {
+      "batch_size": 256,
+      "compile_and_first_s": 6.31491151100002,
+      "device_memory_stats": {
+        "bytes_in_use": 14474240,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 33554432,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 1481,
+        "peak_bytes_in_use": 100003328,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "env_transitions_per_s": 25217.54433935867,
+      "player_samples_per_s": 50435.08867871734,
+      "repetitions": 2,
+      "rollout_steps": 16,
+      "steady_median_s": 0.16242660049999813,
+      "steady_min_s": 0.15578559700000483,
+      "terminal_step": 16
+    }
+  ],
+  "schema": "kaggriculture_policy_ppo_benchmark_v1",
+  "transition_definition": "one transition advances both players by one turn"
+}

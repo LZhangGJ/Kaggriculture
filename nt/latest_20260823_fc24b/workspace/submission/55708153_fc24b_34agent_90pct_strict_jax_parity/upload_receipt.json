@@ -1,0 +1,12 @@
+{
+  "competition": "kaggriculture",
+  "ref": 55708153,
+  "submitted_at": "2026-08-23 06:34:52.373000",
+  "file_name": "submission.tar.gz",
+  "description": "NT FC24B 34-agent 90pct gate strict JAX parity",
+  "status": "PENDING",
+  "public_score": null,
+  "cli": "Kaggle CLI 2.2.4",
+  "upload_result": "Successfully submitted to Kaggriculture",
+  "submissions_remaining_today_after_upload": 4
+}

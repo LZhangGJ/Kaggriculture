@@ -1,0 +1,580 @@
+[
+  {
+    "name": "day10_candidate0_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      0
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      124323.0,
+      129565.0
+    ],
+    "margin": -5242.0,
+    "gain_vs_baseline": 906.0,
+    "seconds": 6.048781620000001,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -17578.6,
+    "original_choice": 1,
+    "real_weighted_score": -134807.0
+  },
+  {
+    "name": "day10_candidate1_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      1
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123201.0,
+      129349.0
+    ],
+    "margin": -6148.0,
+    "gain_vs_baseline": 0.0,
+    "seconds": 6.228776182,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -16939.3,
+    "original_choice": 1,
+    "real_weighted_score": -135497.0
+  },
+  {
+    "name": "day10_candidate2_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      2
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      121287.0,
+      125630.0
+    ],
+    "margin": -4343.0,
+    "gain_vs_baseline": 1805.0,
+    "seconds": 6.236637988000001,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -17244.1,
+    "original_choice": 1,
+    "real_weighted_score": -129973.0
+  },
+  {
+    "name": "day10_candidate3_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      3
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122062.0,
+      129886.0
+    ],
+    "margin": -7824.0,
+    "gain_vs_baseline": -1676.0,
+    "seconds": 6.5448302049999985,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -16954.8,
+    "original_choice": 1,
+    "real_weighted_score": -137710.0
+  },
+  {
+    "name": "day10_candidate4_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      4
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123408.0,
+      130841.0
+    ],
+    "margin": -7433.0,
+    "gain_vs_baseline": -1285.0,
+    "seconds": 6.117421404,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -17036.8,
+    "original_choice": 1,
+    "real_weighted_score": -138274.0
+  },
+  {
+    "name": "day10_candidate5_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      5
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      120607.0,
+      130253.0
+    ],
+    "margin": -9646.0,
+    "gain_vs_baseline": -3498.0,
+    "seconds": 6.1522712309999985,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -16954.8,
+    "original_choice": 1,
+    "real_weighted_score": -139899.0
+  },
+  {
+    "name": "day10_candidate6_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      6
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122062.0,
+      129886.0
+    ],
+    "margin": -7824.0,
+    "gain_vs_baseline": -1676.0,
+    "seconds": 5.976998708,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -16954.8,
+    "original_choice": 1,
+    "real_weighted_score": -137710.0
+  },
+  {
+    "name": "day10_candidate8_fixed_shops",
+    "changes": {},
+    "force": [
+      9,
+      8
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122209.0,
+      131739.0
+    ],
+    "margin": -9530.0,
+    "gain_vs_baseline": -3382.0,
+    "seconds": 6.242771034999997,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -17303.6,
+    "original_choice": 1,
+    "real_weighted_score": -141269.0
+  },
+  {
+    "name": "day11_candidate0_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      0
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122208.0,
+      129573.0
+    ],
+    "margin": -7365.0,
+    "gain_vs_baseline": -1217.0,
+    "seconds": 5.922747834000003,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56768,
+    "original_choice": 6,
+    "real_weighted_score": -136938.0
+  },
+  {
+    "name": "day11_candidate1_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      1
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123488.0,
+      133881.0
+    ],
+    "margin": -10393.0,
+    "gain_vs_baseline": -4245.0,
+    "seconds": 5.918097503000002,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56927.7,
+    "original_choice": 6,
+    "real_weighted_score": -144274.0
+  },
+  {
+    "name": "day11_candidate2_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      2
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123355.0,
+      129420.0
+    ],
+    "margin": -6065.0,
+    "gain_vs_baseline": 83.0,
+    "seconds": 5.886095244999996,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56926.2,
+    "original_choice": 6,
+    "real_weighted_score": -135485.0
+  },
+  {
+    "name": "day11_candidate3_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      3
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123717.0,
+      130569.0
+    ],
+    "margin": -6852.0,
+    "gain_vs_baseline": -704.0,
+    "seconds": 5.770844193000002,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56735,
+    "original_choice": 6,
+    "real_weighted_score": -137421.0
+  },
+  {
+    "name": "day11_candidate4_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      4
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      121499.0,
+      130964.0
+    ],
+    "margin": -9465.0,
+    "gain_vs_baseline": -3317.0,
+    "seconds": 6.857353643000003,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -57833.8,
+    "original_choice": 6,
+    "real_weighted_score": -140429.0
+  },
+  {
+    "name": "day11_candidate5_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      5
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122680.0,
+      128652.0
+    ],
+    "margin": -5972.0,
+    "gain_vs_baseline": 176.0,
+    "seconds": 6.335699867999999,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56945.1,
+    "original_choice": 6,
+    "real_weighted_score": -134624.0
+  },
+  {
+    "name": "day11_candidate6_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      6
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      123201.0,
+      129349.0
+    ],
+    "margin": -6148.0,
+    "gain_vs_baseline": 0.0,
+    "seconds": 5.937418377,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56691,
+    "original_choice": 6,
+    "real_weighted_score": -135497.0
+  },
+  {
+    "name": "day11_candidate7_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      7
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      122207.0,
+      129572.0
+    ],
+    "margin": -7365.0,
+    "gain_vs_baseline": -1217.0,
+    "seconds": 5.910111217000001,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56767,
+    "original_choice": 6,
+    "real_weighted_score": -136937.0
+  },
+  {
+    "name": "day11_candidate8_fixed_shops",
+    "changes": {},
+    "force": [
+      10,
+      8
+    ],
+    "fixed_shops": true,
+    "seed": 2026090901,
+    "cash": [
+      124528.0,
+      132764.0
+    ],
+    "margin": -8236.0,
+    "gain_vs_baseline": -2088.0,
+    "seconds": 5.855643006999998,
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "predicted_score": -56827.2,
+    "original_choice": 6,
+    "real_weighted_score": -141000.0
+  }
+]

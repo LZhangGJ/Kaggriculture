@@ -1,0 +1,73 @@
+{
+  "schema": "kaggriculture.fusion_champion.panel.v2",
+  "generated_at_utc": "2026-08-21T00:29:19.871797+00:00",
+  "status": "PASS",
+  "candidate": "x562_latest",
+  "change": "frozen strict-parity roster candidate: x562_latest",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 540301,
+  "seed_count": 2,
+  "games_per_opponent": 4,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 115.996345671,
+  "rows": [
+    {
+      "opponent": "gold_proxy_rank14_recursion",
+      "games": 4,
+      "wins": 2,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.5,
+      "mean_candidate_cash": 73741.75,
+      "mean_opponent_cash": 68798.5,
+      "mean_margin": 4943.25,
+      "median_margin": 3627.5,
+      "candidate_seat0_wins": 1,
+      "candidate_seat1_wins": 1,
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "candidate_cash": 67419,
+          "opponent_cash": 67981,
+          "margin": -562,
+          "result": "loss"
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "candidate_cash": 67131,
+          "opponent_cash": 68598,
+          "margin": -1467,
+          "result": "loss"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "candidate_cash": 85324,
+          "opponent_cash": 71339,
+          "margin": 13985,
+          "result": "win"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "candidate_cash": 75093,
+          "opponent_cash": 67276,
+          "margin": 7817,
+          "result": "win"
+        }
+      ]
+    }
+  ],
+  "min_score_rate": 0.5,
+  "mean_score_rate": 0.5,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/tools/run_all_exact_jax_round_robin.py",
+    "sha256": "B231F1FDFB49DA0DBDCB62B943A0473CC72A63E919600BE4BB5FD3FD63CCA0E9",
+    "roster_name": "x562_latest"
+  }
+}

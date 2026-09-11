@@ -1,0 +1,54 @@
+{
+  "schema": "kaggriculture.adaptive-genome-grid.v1",
+  "description": "Rules-derived WHEAT town-consumption relay ablation on top of latest Rank1 semantic flow; no opponent identity or replay action tape.",
+  "genomes": [
+    {
+      "label": "flow_relay_off",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.0,
+        "wheat_relay_opponent_risk": 0.0
+      }
+    },
+    {
+      "label": "flow_relay_cap20_risk0",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.2,
+        "wheat_relay_opponent_risk": 0.0
+      }
+    },
+    {
+      "label": "flow_relay_cap35_risk0",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.35,
+        "wheat_relay_opponent_risk": 0.0
+      }
+    },
+    {
+      "label": "flow_relay_cap50_risk0",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.5,
+        "wheat_relay_opponent_risk": 0.0
+      }
+    },
+    {
+      "label": "flow_relay_cap35_risk50",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.35,
+        "wheat_relay_opponent_risk": 0.5
+      }
+    },
+    {
+      "label": "flow_relay_cap50_risk50",
+      "values": {
+        "task_value_scale": 0.5,
+        "wheat_relay_capacity_fraction": 0.5,
+        "wheat_relay_opponent_risk": 0.5
+      }
+    }
+  ]
+}

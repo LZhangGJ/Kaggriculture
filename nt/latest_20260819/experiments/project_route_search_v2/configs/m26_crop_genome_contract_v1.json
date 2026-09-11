@@ -1,0 +1,52 @@
+{
+  "contract": "M26_MINIMAL_NONREDUNDANT_CROP_GENOME_V1",
+  "status": "FROZEN_FOR_IMPLEMENTATION",
+  "official_package_version": "1.32.7",
+  "formal_search_paused": true,
+  "tensor_axes": {
+    "crop": ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON"],
+    "product": ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL", "FERTILIZER"],
+    "max_phases": 6
+  },
+  "phase_contract": {
+    "phase_count": [1, 6],
+    "phase_start_step": "active entries strictly increasing multiples of 24; first is 0",
+    "crop_target": "[batch, 6, 5], nonnegative",
+    "land_target": "[batch, 6], 1..4; desired final land count",
+    "land_start_step": "[batch, 6]; purchase window only, never derives land target",
+    "hand_target": "[batch, 6], 0..32"
+  },
+  "harvest_min_age_days": {
+    "WHEAT": [2, 4],
+    "CARROT": [2, 3],
+    "TOMATO": [8, 11],
+    "STRAWBERRY": [10, 16],
+    "MELON": [10, 12]
+  },
+  "categorical_contract": {
+    "fertilizer_policy": ["OFF", "ALWAYS_WHEN_AVAILABLE", "HIGH_VALUE_ONLY"],
+    "crop_layout_policy": ["CENTER_COMPACT", "CLUSTER_EXPANSION", "QUADRANT_ZONED", "ROUTE_STRIP"],
+    "weed_recovery_policy": ["ABANDON_TILE", "DIG_AND_REPLANT_SAME_CROP", "DIG_AND_REPLAN_TO_PHASE_DEFICIT"],
+    "crop_abandon_policy": ["COMPLETE_EXISTING_PROJECTS", "ABANDON_ONLY_IF_NOT_BANKABLE", "ABANDON_IF_TARGET_SHRINKS_AND_REPLACEMENT_IS_BETTER"]
+  },
+  "nonredundancy_decisions": {
+    "crop_start_step": "not a gene; represented by phase start plus target transition 0 to positive",
+    "crop_lot_size": "not a gene; project deficit comes from target minus active, dispatch size comes from plant_wave_size",
+    "deposit_inventory_fraction": "not a gene; unit inventory has no fixed capacity denominator",
+    "sell_cash_trigger": "not a gene; cash forcing uses cash_floor plus committed cost",
+    "sell_max_quantity": "not a gene; sell_fraction is the only normal quantity control",
+    "primary_support_crop": "forbidden in M2.6; historical M2.5 only"
+  },
+  "coverage_layers": ["schema", "activation", "behavior_effect"],
+  "acceptance": {
+    "dead_searchable_fields": 0,
+    "illegal_action": 0,
+    "plant_without_same_day_water": 0,
+    "unexplained_deterministic_failure": 0,
+    "terminal_sellable_shed_value": 0,
+    "avoidable_liquidation_loss": 0,
+    "episode_steps": 719,
+    "absolute_transitions_per_second": 60000,
+    "relative_to_same_contract_m25": 0.7
+  }
+}

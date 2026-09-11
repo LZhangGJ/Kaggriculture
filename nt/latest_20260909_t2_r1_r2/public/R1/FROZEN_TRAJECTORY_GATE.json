@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "scope": "5 frozen repaired focus-case trajectories; official 1.32.7 state progression; build regression, not live strength validation",
+  "fixtures": 5,
+  "checked_actions": 3595,
+  "failures": 0,
+  "rows": [
+    {
+      "fixture": "trace_2609096005_5_1.json.gz",
+      "seed": 2609096005,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 133601.0,
+      "opponent_cash": 110927.0,
+      "done": true,
+      "seconds": 1.7306139459999983
+    },
+    {
+      "fixture": "trace_2609096017_5_1.json.gz",
+      "seed": 2609096017,
+      "seat": 1,
+      "opponent": "yhay81_six_day",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 110077.0,
+      "opponent_cash": 85157.0,
+      "done": true,
+      "seconds": 1.4830190909999992
+    },
+    {
+      "fixture": "trace_2609096019_1_1.json.gz",
+      "seed": 2609096019,
+      "seat": 1,
+      "opponent": "g003",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 98778.0,
+      "opponent_cash": 103547.0,
+      "done": true,
+      "seconds": 1.6545585880000004
+    },
+    {
+      "fixture": "trace_2609096033_3_1.json.gz",
+      "seed": 2609096033,
+      "seat": 1,
+      "opponent": "kaito_v58",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 112902.0,
+      "opponent_cash": 104661.0,
+      "done": true,
+      "seconds": 1.5814252070000023
+    },
+    {
+      "fixture": "trace_2609096077_0_0.json.gz",
+      "seed": 2609096077,
+      "seat": 0,
+      "opponent": "g001",
+      "status": "PASS",
+      "checked_actions": 719,
+      "cash": 134287.0,
+      "opponent_cash": 115215.0,
+      "done": true,
+      "seconds": 1.4394913870000003
+    }
+  ],
+  "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/submission/t2_r1_r2_public_20260909_v1/R1/agent.so",
+  "binary_sha256": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+  "seconds": 3.048612465999998,
+  "manifest_sha256": "e4c88e8be34d98d2e5bb4675954ad8a8d0d4407649e1273e5fde0e60a97b47b9"
+}

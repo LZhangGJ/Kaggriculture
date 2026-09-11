@@ -1,0 +1,166 @@
+{
+  "source_indices": [
+    1495
+  ],
+  "opening": 0,
+  "plans": [
+    {
+      "id": "J7_03",
+      "plan": [
+        {
+          "family": "REPLACE_NEW",
+          "kind": 3,
+          "amount": 1
+        },
+        {
+          "family": "REPLACE_NEW",
+          "kind": 0,
+          "amount": 4
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 0,
+          "amount": 9
+        },
+        {
+          "family": "REPLACE_NEW",
+          "kind": 3,
+          "amount": 4
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 2,
+          "amount": 1
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 3,
+          "amount": 4
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 3,
+          "amount": 21
+        },
+        {
+          "family": "REPLACE_NEW",
+          "kind": 10,
+          "amount": 1
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 3,
+          "amount": 5
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 7
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 3,
+          "amount": 25
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 3,
+          "amount": 24
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 13
+        },
+        {
+          "family": "REPLACE_NEW",
+          "kind": 0,
+          "amount": 1
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 2,
+          "amount": 2
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 2
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 1
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 6
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 0,
+          "amount": 4
+        },
+        {
+          "family": "DEFER_NEW",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 0,
+          "amount": 1
+        },
+        {
+          "family": "REBUILD_NEW",
+          "kind": 1,
+          "amount": 4
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        },
+        {
+          "family": "KEEP",
+          "kind": -1,
+          "amount": 0
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "selection_scope": "S9 final 100 unseen seeds x two seats x seven live opponents",
+  "score_order": [
+    "minimum_opponent_win_rate",
+    "total_win_rate",
+    "mean_margin"
+  ],
+  "source_plan_sha256": "15356df3ceafefbdfd86a73e1b85e4cb94f890018ebfe1a0e079186a4457e370"
+}

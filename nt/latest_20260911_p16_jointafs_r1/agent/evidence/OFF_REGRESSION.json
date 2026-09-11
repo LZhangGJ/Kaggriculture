@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "Recorded-opponent behavior regression, not live strength evidence",
+  "binary_sha256": "402771b763675697834da8d1b48f2234075c5a0807dcaf700d9f2670bc7f63a4",
+  "agent_action_comparisons": 1414,
+  "fixture_action_comparisons": 24,
+  "state_checkpoints": 60,
+  "cases": [
+    {
+      "file": "golden/none_ahmed_v27_2609178000_0.json.gz",
+      "generated": 719,
+      "prefix": 0,
+      "steps": 719
+    },
+    {
+      "file": "golden/m12_ahmed_v27_2609178000_0.json.gz",
+      "generated": 695,
+      "prefix": 24,
+      "steps": 719
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "games": 812,
+  "configs": 29,
+  "seeds": 2,
+  "checks": {
+    "keep": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_selected": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step300_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step300_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step900_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step900_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step1000_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r0_step1000_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_selected": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step300_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step300_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step900_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step900_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step1000_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r0_step1000_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_selected": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step300_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step300_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step900_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step900_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step1000_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "control_r1_step1000_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_selected": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step300_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step300_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step900_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step900_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step1000_greedy": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    },
+    "aux_r1_step1000_sample": {
+      "games": 28,
+      "cash_win_and_execution_counters_exact": true
+    }
+  },
+  "boundary": "Frozen two-seed receipt reproduction after include-path-only C++ relocation. Not a new strength estimate or full state/action formal equivalence proof."
+}

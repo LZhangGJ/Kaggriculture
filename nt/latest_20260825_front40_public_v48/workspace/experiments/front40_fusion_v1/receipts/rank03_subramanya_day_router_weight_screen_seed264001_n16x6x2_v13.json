@@ -1,0 +1,235 @@
+{
+  "schema": "kaggriculture.front40_fusion.day-router-weight-screen.v1",
+  "generated_at_utc": "2026-08-23T23:24:11.261380+00:00",
+  "status": "PASS",
+  "device": "cuda:0",
+  "trace_bank": "experiments/front40_fusion_v1/artifacts/rank03_subramanya_trace_bank_v1.npz",
+  "seed_start": 264001,
+  "seeds_per_config": 16,
+  "configs": 6,
+  "games": 192,
+  "timings": [
+    {
+      "seat": 0,
+      "seconds": 197.238406238
+    },
+    {
+      "seat": 1,
+      "seconds": 202.25085510299996
+    }
+  ],
+  "aggregates": [
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 0,
+      "games": 32,
+      "wins": 6,
+      "win_rate": 0.1875,
+      "mean_margin": -21443.625,
+      "invalid_intent_per_game": 283.75,
+      "route_switch_per_game": 4.9375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 0,
+      "games": 32,
+      "wins": 6,
+      "win_rate": 0.1875,
+      "mean_margin": -26326.25,
+      "invalid_intent_per_game": 377.78125,
+      "route_switch_per_game": 5.15625,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 1,
+      "games": 32,
+      "wins": 2,
+      "win_rate": 0.0625,
+      "mean_margin": -36154.0625,
+      "invalid_intent_per_game": 400.8125,
+      "route_switch_per_game": 2.46875,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 0,
+      "games": 32,
+      "wins": 2,
+      "win_rate": 0.0625,
+      "mean_margin": -67627.4375,
+      "invalid_intent_per_game": 965.53125,
+      "route_switch_per_game": 13.1875,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 1,
+      "games": 32,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -28394.9375,
+      "invalid_intent_per_game": 108.6875,
+      "route_switch_per_game": 0.0,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 1,
+      "games": 32,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -36065.75,
+      "invalid_intent_per_game": 303.28125,
+      "route_switch_per_game": 2.875,
+      "hard_counter_total": 0
+    }
+  ],
+  "results": [
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 0,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 1,
+      "win_rate": 0.0625,
+      "mean_margin": -66860.0625,
+      "invalid_intent_per_game": 950.8125,
+      "route_switch_per_game": 12.9375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 1,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -29182.4375,
+      "invalid_intent_per_game": 109.625,
+      "route_switch_per_game": 0.0,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 0,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 3,
+      "win_rate": 0.1875,
+      "mean_margin": -22178.0,
+      "invalid_intent_per_game": 270.5,
+      "route_switch_per_game": 4.9375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 1,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -36579.375,
+      "invalid_intent_per_game": 302.6875,
+      "route_switch_per_game": 2.875,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 0,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 3,
+      "win_rate": 0.1875,
+      "mean_margin": -29408.6875,
+      "invalid_intent_per_game": 383.4375,
+      "route_switch_per_game": 5.1875,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 1,
+      "candidate_seat": 0,
+      "games": 16,
+      "wins": 2,
+      "win_rate": 0.125,
+      "mean_margin": -35400.625,
+      "invalid_intent_per_game": 388.75,
+      "route_switch_per_game": 2.4375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 0,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 1,
+      "win_rate": 0.0625,
+      "mean_margin": -68394.8125,
+      "invalid_intent_per_game": 980.25,
+      "route_switch_per_game": 13.4375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 0,
+      "source_reward_scale": 1,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -27607.4375,
+      "invalid_intent_per_game": 107.75,
+      "route_switch_per_game": 0.0,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 0,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 3,
+      "win_rate": 0.1875,
+      "mean_margin": -20709.25,
+      "invalid_intent_per_game": 297.0,
+      "route_switch_per_game": 4.9375,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 1000,
+      "source_reward_scale": 1,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -35552.125,
+      "invalid_intent_per_game": 303.875,
+      "route_switch_per_game": 2.875,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 0,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 3,
+      "win_rate": 0.1875,
+      "mean_margin": -23243.8125,
+      "invalid_intent_per_game": 372.125,
+      "route_switch_per_game": 5.125,
+      "hard_counter_total": 0
+    },
+    {
+      "prefix_score_scale": 100000,
+      "source_reward_scale": 1,
+      "candidate_seat": 1,
+      "games": 16,
+      "wins": 0,
+      "win_rate": 0.0,
+      "mean_margin": -36907.5,
+      "invalid_intent_per_game": 412.875,
+      "route_switch_per_game": 2.5,
+      "hard_counter_total": 0
+    }
+  ]
+}

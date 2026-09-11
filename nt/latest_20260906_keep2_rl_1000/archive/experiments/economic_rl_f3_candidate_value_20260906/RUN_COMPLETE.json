@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_games": 112,
+  "states": 896,
+  "branch_games": 11608,
+  "native_seconds": 141.73332504,
+  "call_seconds": 142.12806800700008,
+  "seconds": 150.365922046,
+  "identity_suffix_checks": 896,
+  "preserved_inputs": true
+}

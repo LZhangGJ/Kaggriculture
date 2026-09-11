@@ -1,0 +1,48 @@
+[
+  {
+    "ref": 56140351,
+    "totalBytes": 958832,
+    "date": "2026-09-10T08:02:05.090Z",
+    "description": "NT T3R1 execution-aligned P16 - local11 82.36pct - H2H 61pct",
+    "fileName": "submission.tar.gz",
+    "publicScore": "2075.9",
+    "status": "COMPLETE",
+    "submittedBy": "mitubant",
+    "submittedByRef": "mitubant",
+    "teamName": "QQ Farming",
+    "url": "/submissions/56140351/56140351.raw",
+    "archive": "experiments/r2p16_latest_submissions_20260910/downloads/56140351/submission.tar.gz",
+    "archive_sha256": "45a30f5fa91d955c46dff70aa6015422f34811fb912132943a8912626ae050ce",
+    "member_sha256": {
+      "main.py": "4f3ec53a9ba06b219c63d79b2889edfa148d4f1acac498ac52391559e9118a0d",
+      "t3r1_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "t3r1_runtime/agent.so": "d67a57a0fb68531f0891603f99b021a9a3f818dfebc4dd70f3448b558e4b0768",
+      "t3r1_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "t3r1_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+    },
+    "acquisition": "Authenticated Kaggle Submissions UI download; exact gzip response bytes preserved from browser download cache; no rebuild or source changes"
+  },
+  {
+    "ref": 56140347,
+    "totalBytes": 936941,
+    "date": "2026-09-10T08:01:51.617Z",
+    "description": "NT P16 public-supply planner - local11 81.82pct - frozen baseline",
+    "fileName": "submission.tar.gz",
+    "publicScore": "2174.7",
+    "status": "COMPLETE",
+    "submittedBy": "mitubant",
+    "submittedByRef": "mitubant",
+    "teamName": "QQ Farming",
+    "url": "/submissions/56140347/56140347.raw",
+    "archive": "experiments/r2p16_latest_submissions_20260910/downloads/56140347/submission.tar.gz",
+    "archive_sha256": "438b54650ae927759d3823a167196d2566d87c6265926192596a47241c1b7b3d",
+    "member_sha256": {
+      "main.py": "57b52bbe6a45c9559705aee1ab9e2831d351047087a1f45cb8d04c4e56d47e8c",
+      "p16_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "p16_runtime/agent.so": "15c0871bde45cece138cddac253be338a801b8a132d6dec7d8fba1de7ebb5a7d",
+      "p16_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "p16_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+    },
+    "acquisition": "Authenticated Kaggle Submissions UI download; exact gzip response bytes preserved from browser download cache; no rebuild or source changes"
+  }
+]

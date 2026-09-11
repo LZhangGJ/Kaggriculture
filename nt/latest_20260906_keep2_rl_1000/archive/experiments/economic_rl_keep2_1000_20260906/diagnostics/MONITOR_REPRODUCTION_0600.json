@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "source_round": 500,
+  "target_round": 600,
+  "checks": {
+    "keep": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "control_r0_step500_greedy": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "control_r0_step500_sample": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "control_r1_step500_greedy": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "control_r1_step500_sample": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "aux_r0_step500_greedy": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "aux_r0_step500_sample": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "aux_r1_step500_greedy": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    },
+    "aux_r1_step500_sample": {
+      "games": 1400,
+      "decision_records": 42000,
+      "all_checked_arrays_identical": true
+    }
+  }
+}

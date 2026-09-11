@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE_CROSS300_NOT_PROMOTION",
+  "summary_sha256": "984f352972fc6aff61e091d6341fbcfe135122e4260cede5cad97d223edac7ec",
+  "ranked_sha256": "a49cd090360349e211d064e1ec8f1ef1e74f2930c7fa24773b2c2974f9b29738",
+  "report_sha256": "b9333f3af50f07d2b5cba704e775d9980a129a04ea8ca5b5e07770a8081e60f5",
+  "csv_sha256": "ad95aba3a9f72099e52f2f63e343f6919e23c0e8e71d00ebedd4ac3e422d41bc",
+  "run_done_sha256": "98805513aee93e1c20e64f64f8d06eeeb138d32a6facc45c64d9760d003d1ebc",
+  "official_sha256": "6db929a6036cc1d0ad331cf326f29390c21204caa1315748aa7b93e2237fcec6",
+  "input_sha256": "765c5b36541fe1b2d362ebe183ef9a75e8d3a44b53283faa5b529440278ab3c8"
+}

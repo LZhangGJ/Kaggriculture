@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "verification": "file hashes and supplied result recount only",
+  "new_simulation_performed": false,
+  "payload_files": 1886,
+  "payload_bytes": 127641268,
+  "supplier_manifest_sha256": "f5613b345748bbb7a87beea61ddec4a677f23720e3d6ba0aa0e52aeb412f6780",
+  "supplier_policy_binary_sha256": "92fe00154f9b695a433cbc4d3480a44ecd96ba75c3b3541e7bf9cf1d56d31b27",
+  "t1": {
+    "games": 1400,
+    "wins": 1132,
+    "win_rate": 0.8085714285714286,
+    "mean_cash": 105113.225,
+    "mean_margin": 11663.996428571429,
+    "per_opponent": {
+      "g001": {
+        "games": 200,
+        "wins": 183,
+        "win_rate": 0.915
+      },
+      "g003": {
+        "games": 200,
+        "wins": 110,
+        "win_rate": 0.55
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 163,
+        "win_rate": 0.815
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 167,
+        "win_rate": 0.835
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 161,
+        "win_rate": 0.805
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 170,
+        "win_rate": 0.85
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 178,
+        "win_rate": 0.89
+      }
+    }
+  },
+  "baseline_c3_j7": {
+    "games": 1400,
+    "wins": 1090,
+    "win_rate": 0.7785714285714286,
+    "mean_cash": 108925.95642857143,
+    "mean_margin": 16314.022857142858,
+    "per_opponent": {
+      "g001": {
+        "games": 200,
+        "wins": 156,
+        "win_rate": 0.78
+      },
+      "g003": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0
+      },
+      "boatlee_v29": {
+        "games": 200,
+        "wins": 119,
+        "win_rate": 0.595
+      },
+      "kaito_v58": {
+        "games": 200,
+        "wins": 200,
+        "win_rate": 1.0
+      },
+      "lynn_v5": {
+        "games": 200,
+        "wins": 177,
+        "win_rate": 0.885
+      },
+      "yhay81_six_day": {
+        "games": 200,
+        "wins": 117,
+        "win_rate": 0.585
+      },
+      "yhay81_three_day": {
+        "games": 200,
+        "wins": 121,
+        "win_rate": 0.605
+      }
+    }
+  }
+}

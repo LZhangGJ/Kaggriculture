@@ -1,0 +1,16 @@
+{
+  "ref": 56146577,
+  "message": "NT P16 JointAFS R1 - joint animal feed successor planning",
+  "competition": "kaggriculture",
+  "upload_message": "Successfully submitted to Kaggriculture",
+  "upload_calls": 1,
+  "submitted_at_utc": "2026-09-10T14:52:13.904380+00:00",
+  "archive_sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+  "archive_bytes": 982521,
+  "binary_sha256": "7a8783c776ab8c01e3370685f6de6f8b6a43ea409ab710fbe9330f165560950f",
+  "reference_binary_sha256": "0302d5e2b6e30a4b6fed7a0350228070621c462791f6fb9a706a5ba91084e306",
+  "local_action_identity_games": 22,
+  "local_official_file_games": 2,
+  "max_local_action_ms": 323.335,
+  "submission_url": "https://www.kaggle.com/competitions/kaggriculture/submissions?submissionId=56146577"
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T01:40:28.980912+00:00",
+  "device": "cuda:0",
+  "seed_start": 320001,
+  "seed_count": 512,
+  "route_count": 4,
+  "route_ids": [
+    50,
+    57,
+    129,
+    131
+  ],
+  "route_chunk": 2,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 4096,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 2,
+      "first_shop": "FARMERS_MARKET",
+      "seed_count": 68,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 57,
+          "source_episode_id": 94494307,
+          "source_reward": 101482,
+          "games": 136,
+          "win_rate": 0.8823529411764706,
+          "mean_margin": 10739.404411764706,
+          "invalid_mean": 4.529411764705882
+        }
+      ]
+    },
+    {
+      "first_shop_id": 3,
+      "first_shop": "ICE_CREAM_SHOP",
+      "seed_count": 58,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 131,
+          "source_episode_id": 96759131,
+          "source_reward": 105510,
+          "games": 116,
+          "win_rate": 0.9396551724137931,
+          "mean_margin": 6280.5948275862065,
+          "invalid_mean": 6.172413793103448
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 60,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 50,
+          "source_episode_id": 94488124,
+          "source_reward": 108844,
+          "games": 120,
+          "win_rate": 0.925,
+          "mean_margin": 7000.391666666666,
+          "invalid_mean": 6.083333333333333
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 70,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 129,
+          "source_episode_id": 96718071,
+          "source_reward": 123990,
+          "games": 140,
+          "win_rate": 0.8142857142857143,
+          "mean_margin": 5323.2642857142855,
+          "invalid_mean": 13.335714285714285
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 1,
+      "seconds": 39.61840734899988
+    },
+    {
+      "seat": 0,
+      "start": 2,
+      "end": 3,
+      "seconds": 15.382207584999833
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 1,
+      "seconds": 38.76075859600019
+    },
+    {
+      "seat": 1,
+      "start": 2,
+      "end": 3,
+      "seconds": 15.571610443000054
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank04_arman_final4_vs_fc24b_screen_seed320001_n512x2_v9.npz",
+  "status": "PASS"
+}

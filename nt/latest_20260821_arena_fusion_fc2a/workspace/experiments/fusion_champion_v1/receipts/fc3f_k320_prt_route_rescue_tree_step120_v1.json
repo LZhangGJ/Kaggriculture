@@ -1,0 +1,3101 @@
+{
+  "schema": "kaggriculture.fusion_champion.k320-route-rescue-tree.v1",
+  "generated_at_utc": "2026-08-21T09:20:02.089536+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "decision_step": 120,
+  "future_leakage": false,
+  "label_semantics": "keep baseline if it wins; otherwise choose highest-margin winning route; otherwise baseline",
+  "choice_mapping": {
+    "0": "adaptive_source",
+    "1": "route0_milk_support",
+    "2": "route1_default",
+    "3": "route2_three_yarn",
+    "4": "route3_first_yarn",
+    "5": "route4_two_yarn"
+  },
+  "feature_count": 209,
+  "train_samples": 128,
+  "train_unique_seeds": 64,
+  "baselines": {
+    "train": {
+      "baseline": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conservative_rescue_oracle": {
+        "games": 128,
+        "wins": 116,
+        "ties": 0,
+        "losses": 12,
+        "score_rate": 0.90625,
+        "mean_margin": 5968.7109375,
+        "switch_rate": 0.0859375,
+        "rescued_losses": 11,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          117,
+          0,
+          0,
+          6,
+          0,
+          5
+        ]
+      },
+      "unrestricted_margin_oracle": {
+        "games": 128,
+        "wins": 116,
+        "ties": 0,
+        "losses": 12,
+        "score_rate": 0.90625,
+        "mean_margin": 7391.375,
+        "switch_rate": 0.4609375,
+        "rescued_losses": 11,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          69,
+          5,
+          18,
+          19,
+          0,
+          17
+        ]
+      },
+      "rescue_label_histogram": [
+        117,
+        0,
+        0,
+        6,
+        0,
+        5
+      ]
+    },
+    "holdout": {
+      "baseline": {
+        "games": 128,
+        "wins": 106,
+        "ties": 0,
+        "losses": 22,
+        "score_rate": 0.828125,
+        "mean_margin": 4481.5546875,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "conservative_rescue_oracle": {
+        "games": 128,
+        "wins": 121,
+        "ties": 0,
+        "losses": 7,
+        "score_rate": 0.9453125,
+        "mean_margin": 5437.7109375,
+        "switch_rate": 0.1171875,
+        "rescued_losses": 15,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          113,
+          2,
+          0,
+          8,
+          0,
+          5
+        ]
+      },
+      "unrestricted_margin_oracle": {
+        "games": 128,
+        "wins": 121,
+        "ties": 0,
+        "losses": 7,
+        "score_rate": 0.9453125,
+        "mean_margin": 6424.8359375,
+        "switch_rate": 0.4453125,
+        "rescued_losses": 15,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          71,
+          5,
+          18,
+          17,
+          0,
+          17
+        ]
+      },
+      "rescue_label_histogram": [
+        113,
+        2,
+        0,
+        8,
+        0,
+        5
+      ]
+    }
+  },
+  "selected_configuration": {
+    "depth": 1,
+    "min_samples_leaf": 8,
+    "rescue_weight": 2.0,
+    "oof": {
+      "games": 128,
+      "wins": 105,
+      "ties": 0,
+      "losses": 23,
+      "score_rate": 0.8203125,
+      "mean_margin": 5472.2109375,
+      "switch_rate": 0.0,
+      "rescued_losses": 0,
+      "harmed_wins": 0,
+      "choice_histogram": [
+        128,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "train_fit": {
+    "games": 128,
+    "wins": 107,
+    "ties": 0,
+    "losses": 21,
+    "score_rate": 0.8359375,
+    "mean_margin": 5428.40625,
+    "switch_rate": 0.0625,
+    "rescued_losses": 3,
+    "harmed_wins": 1,
+    "choice_histogram": [
+      120,
+      0,
+      0,
+      8,
+      0,
+      0
+    ]
+  },
+  "holdout": {
+    "games": 128,
+    "wins": 108,
+    "ties": 0,
+    "losses": 20,
+    "score_rate": 0.84375,
+    "mean_margin": 4500.921875,
+    "switch_rate": 0.15625,
+    "rescued_losses": 3,
+    "harmed_wins": 1,
+    "choice_histogram": [
+      108,
+      0,
+      0,
+      20,
+      0,
+      0
+    ]
+  },
+  "rules": "|--- shop_first_1 <= 0.500\n|   |--- class: 0\n|--- shop_first_1 >  0.500\n|   |--- class: 3\n",
+  "all_configurations": [
+    {
+      "depth": 1,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 69,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.5390625,
+        "mean_margin": 183.5,
+        "switch_rate": 0.625,
+        "rescued_losses": 3,
+        "harmed_wins": 39,
+        "choice_histogram": [
+          48,
+          0,
+          0,
+          54,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 69,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.5390625,
+        "mean_margin": 183.5,
+        "switch_rate": 0.625,
+        "rescued_losses": 3,
+        "harmed_wins": 39,
+        "choice_histogram": [
+          48,
+          0,
+          0,
+          54,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4417.234375,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 69,
+        "ties": 0,
+        "losses": 59,
+        "score_rate": 0.5390625,
+        "mean_margin": 183.5,
+        "switch_rate": 0.625,
+        "rescued_losses": 3,
+        "harmed_wins": 39,
+        "choice_histogram": [
+          48,
+          0,
+          0,
+          54,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 97,
+        "ties": 0,
+        "losses": 31,
+        "score_rate": 0.7578125,
+        "mean_margin": 4438.3984375,
+        "switch_rate": 0.15625,
+        "rescued_losses": 0,
+        "harmed_wins": 8,
+        "choice_histogram": [
+          108,
+          0,
+          0,
+          12,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 91,
+        "ties": 0,
+        "losses": 37,
+        "score_rate": 0.7109375,
+        "mean_margin": 3873.3828125,
+        "switch_rate": 0.1875,
+        "rescued_losses": 1,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          104,
+          0,
+          0,
+          16,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 62,
+        "ties": 0,
+        "losses": 66,
+        "score_rate": 0.484375,
+        "mean_margin": -1601.6796875,
+        "switch_rate": 0.828125,
+        "rescued_losses": 6,
+        "harmed_wins": 49,
+        "choice_histogram": [
+          22,
+          0,
+          0,
+          62,
+          0,
+          44
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5394.7890625,
+        "switch_rate": 0.0078125,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          127,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.078125,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          118,
+          0,
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 94,
+        "ties": 0,
+        "losses": 34,
+        "score_rate": 0.734375,
+        "mean_margin": 3617.7109375,
+        "switch_rate": 0.171875,
+        "rescued_losses": 4,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          106,
+          0,
+          0,
+          2,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 3631.515625,
+        "switch_rate": 0.15625,
+        "rescued_losses": 2,
+        "harmed_wins": 14,
+        "choice_histogram": [
+          108,
+          0,
+          0,
+          8,
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 77,
+        "ties": 0,
+        "losses": 51,
+        "score_rate": 0.6015625,
+        "mean_margin": 1775.9921875,
+        "switch_rate": 0.53125,
+        "rescued_losses": 5,
+        "harmed_wins": 33,
+        "choice_histogram": [
+          60,
+          0,
+          0,
+          42,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.078125,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          118,
+          0,
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 94,
+        "ties": 0,
+        "losses": 34,
+        "score_rate": 0.734375,
+        "mean_margin": 3617.7109375,
+        "switch_rate": 0.171875,
+        "rescued_losses": 4,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          106,
+          0,
+          0,
+          2,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 3631.515625,
+        "switch_rate": 0.15625,
+        "rescued_losses": 2,
+        "harmed_wins": 14,
+        "choice_histogram": [
+          108,
+          0,
+          0,
+          8,
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 77,
+        "ties": 0,
+        "losses": 51,
+        "score_rate": 0.6015625,
+        "mean_margin": 1775.9921875,
+        "switch_rate": 0.53125,
+        "rescued_losses": 5,
+        "harmed_wins": 33,
+        "choice_histogram": [
+          60,
+          0,
+          0,
+          42,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 99,
+        "ties": 0,
+        "losses": 29,
+        "score_rate": 0.7734375,
+        "mean_margin": 4611.6015625,
+        "switch_rate": 0.046875,
+        "rescued_losses": 0,
+        "harmed_wins": 6,
+        "choice_histogram": [
+          122,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 90,
+        "ties": 0,
+        "losses": 38,
+        "score_rate": 0.703125,
+        "mean_margin": 3216.140625,
+        "switch_rate": 0.28125,
+        "rescued_losses": 4,
+        "harmed_wins": 19,
+        "choice_histogram": [
+          92,
+          0,
+          0,
+          16,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 89,
+        "ties": 0,
+        "losses": 39,
+        "score_rate": 0.6953125,
+        "mean_margin": 3229.9453125,
+        "switch_rate": 0.265625,
+        "rescued_losses": 2,
+        "harmed_wins": 18,
+        "choice_histogram": [
+          94,
+          0,
+          0,
+          22,
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 77,
+        "ties": 0,
+        "losses": 51,
+        "score_rate": 0.6015625,
+        "mean_margin": 1775.9921875,
+        "switch_rate": 0.53125,
+        "rescued_losses": 5,
+        "harmed_wins": 33,
+        "choice_histogram": [
+          60,
+          0,
+          0,
+          42,
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 92,
+        "ties": 0,
+        "losses": 36,
+        "score_rate": 0.71875,
+        "mean_margin": 3903.9765625,
+        "switch_rate": 0.265625,
+        "rescued_losses": 0,
+        "harmed_wins": 13,
+        "choice_histogram": [
+          94,
+          0,
+          0,
+          26,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 81,
+        "ties": 0,
+        "losses": 47,
+        "score_rate": 0.6328125,
+        "mean_margin": 2362.0078125,
+        "switch_rate": 0.46875,
+        "rescued_losses": 6,
+        "harmed_wins": 30,
+        "choice_histogram": [
+          68,
+          0,
+          0,
+          40,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 74,
+        "ties": 0,
+        "losses": 54,
+        "score_rate": 0.578125,
+        "mean_margin": 924.1171875,
+        "switch_rate": 0.625,
+        "rescued_losses": 6,
+        "harmed_wins": 37,
+        "choice_histogram": [
+          48,
+          0,
+          0,
+          46,
+          0,
+          34
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5394.7890625,
+        "switch_rate": 0.0078125,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          127,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.078125,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          118,
+          0,
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 94,
+        "ties": 0,
+        "losses": 34,
+        "score_rate": 0.734375,
+        "mean_margin": 3617.7109375,
+        "switch_rate": 0.171875,
+        "rescued_losses": 4,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          106,
+          0,
+          0,
+          2,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 88,
+        "ties": 0,
+        "losses": 40,
+        "score_rate": 0.6875,
+        "mean_margin": 3112.515625,
+        "switch_rate": 0.2890625,
+        "rescued_losses": 4,
+        "harmed_wins": 21,
+        "choice_histogram": [
+          91,
+          0,
+          0,
+          17,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 72,
+        "ties": 0,
+        "losses": 56,
+        "score_rate": 0.5625,
+        "mean_margin": 1069.71875,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 5,
+        "harmed_wins": 38,
+        "choice_histogram": [
+          61,
+          0,
+          0,
+          34,
+          0,
+          33
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.078125,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          118,
+          0,
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 94,
+        "ties": 0,
+        "losses": 34,
+        "score_rate": 0.734375,
+        "mean_margin": 3617.7109375,
+        "switch_rate": 0.171875,
+        "rescued_losses": 4,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          106,
+          0,
+          0,
+          2,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 88,
+        "ties": 0,
+        "losses": 40,
+        "score_rate": 0.6875,
+        "mean_margin": 3112.515625,
+        "switch_rate": 0.2890625,
+        "rescued_losses": 4,
+        "harmed_wins": 21,
+        "choice_histogram": [
+          91,
+          0,
+          0,
+          17,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 72,
+        "ties": 0,
+        "losses": 56,
+        "score_rate": 0.5625,
+        "mean_margin": 1069.71875,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 5,
+        "harmed_wins": 38,
+        "choice_histogram": [
+          61,
+          0,
+          0,
+          34,
+          0,
+          33
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 99,
+        "ties": 0,
+        "losses": 29,
+        "score_rate": 0.7734375,
+        "mean_margin": 4611.6015625,
+        "switch_rate": 0.046875,
+        "rescued_losses": 0,
+        "harmed_wins": 6,
+        "choice_histogram": [
+          122,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 94,
+        "ties": 0,
+        "losses": 34,
+        "score_rate": 0.734375,
+        "mean_margin": 3617.7109375,
+        "switch_rate": 0.203125,
+        "rescued_losses": 4,
+        "harmed_wins": 15,
+        "choice_histogram": [
+          102,
+          0,
+          0,
+          6,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 92,
+        "ties": 0,
+        "losses": 36,
+        "score_rate": 0.71875,
+        "mean_margin": 3571.078125,
+        "switch_rate": 0.2421875,
+        "rescued_losses": 4,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          97,
+          0,
+          0,
+          11,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 72,
+        "ties": 0,
+        "losses": 56,
+        "score_rate": 0.5625,
+        "mean_margin": 1069.71875,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 5,
+        "harmed_wins": 38,
+        "choice_histogram": [
+          61,
+          0,
+          0,
+          34,
+          0,
+          33
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 4030.828125,
+        "switch_rate": 0.265625,
+        "rescued_losses": 1,
+        "harmed_wins": 13,
+        "choice_histogram": [
+          94,
+          0,
+          0,
+          26,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 91,
+        "ties": 0,
+        "losses": 37,
+        "score_rate": 0.7109375,
+        "mean_margin": 3467.3359375,
+        "switch_rate": 0.3203125,
+        "rescued_losses": 6,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          87,
+          0,
+          0,
+          21,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 3,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 76,
+        "ties": 0,
+        "losses": 52,
+        "score_rate": 0.59375,
+        "mean_margin": 1550.3984375,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 6,
+        "harmed_wins": 35,
+        "choice_histogram": [
+          61,
+          0,
+          0,
+          34,
+          0,
+          33
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5394.7890625,
+        "switch_rate": 0.0078125,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          127,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 90,
+        "ties": 0,
+        "losses": 38,
+        "score_rate": 0.703125,
+        "mean_margin": 3366.65625,
+        "switch_rate": 0.2578125,
+        "rescued_losses": 4,
+        "harmed_wins": 19,
+        "choice_histogram": [
+          95,
+          0,
+          0,
+          8,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2888.2265625,
+        "switch_rate": 0.359375,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          82,
+          0,
+          0,
+          21,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 76,
+        "ties": 0,
+        "losses": 52,
+        "score_rate": 0.59375,
+        "mean_margin": 1425.9609375,
+        "switch_rate": 0.5625,
+        "rescued_losses": 6,
+        "harmed_wins": 35,
+        "choice_histogram": [
+          56,
+          0,
+          0,
+          38,
+          0,
+          34
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 90,
+        "ties": 0,
+        "losses": 38,
+        "score_rate": 0.703125,
+        "mean_margin": 3366.65625,
+        "switch_rate": 0.2578125,
+        "rescued_losses": 4,
+        "harmed_wins": 19,
+        "choice_histogram": [
+          95,
+          0,
+          0,
+          8,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2888.2265625,
+        "switch_rate": 0.359375,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          82,
+          0,
+          0,
+          21,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 76,
+        "ties": 0,
+        "losses": 52,
+        "score_rate": 0.59375,
+        "mean_margin": 1425.9609375,
+        "switch_rate": 0.5625,
+        "rescued_losses": 6,
+        "harmed_wins": 35,
+        "choice_histogram": [
+          56,
+          0,
+          0,
+          38,
+          0,
+          34
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 99,
+        "ties": 0,
+        "losses": 29,
+        "score_rate": 0.7734375,
+        "mean_margin": 4611.6015625,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 6,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          2,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 92,
+        "ties": 0,
+        "losses": 36,
+        "score_rate": 0.71875,
+        "mean_margin": 3660.6953125,
+        "switch_rate": 0.2265625,
+        "rescued_losses": 4,
+        "harmed_wins": 17,
+        "choice_histogram": [
+          99,
+          0,
+          0,
+          4,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 88,
+        "ties": 0,
+        "losses": 40,
+        "score_rate": 0.6875,
+        "mean_margin": 3117.5078125,
+        "switch_rate": 0.3515625,
+        "rescued_losses": 5,
+        "harmed_wins": 22,
+        "choice_histogram": [
+          83,
+          0,
+          0,
+          20,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 72,
+        "ties": 0,
+        "losses": 56,
+        "score_rate": 0.5625,
+        "mean_margin": 346.09375,
+        "switch_rate": 0.59375,
+        "rescued_losses": 6,
+        "harmed_wins": 39,
+        "choice_histogram": [
+          52,
+          0,
+          0,
+          37,
+          0,
+          39
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 4095.5859375,
+        "switch_rate": 0.2421875,
+        "rescued_losses": 1,
+        "harmed_wins": 13,
+        "choice_histogram": [
+          97,
+          0,
+          0,
+          23,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 91,
+        "ties": 0,
+        "losses": 37,
+        "score_rate": 0.7109375,
+        "mean_margin": 3467.3359375,
+        "switch_rate": 0.3203125,
+        "rescued_losses": 6,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          87,
+          0,
+          0,
+          21,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 71,
+        "ties": 0,
+        "losses": 57,
+        "score_rate": 0.5546875,
+        "mean_margin": 569.3125,
+        "switch_rate": 0.6171875,
+        "rescued_losses": 6,
+        "harmed_wins": 40,
+        "choice_histogram": [
+          49,
+          0,
+          0,
+          39,
+          0,
+          40
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5394.7890625,
+        "switch_rate": 0.0078125,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          127,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2877.3359375,
+        "switch_rate": 0.328125,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          86,
+          0,
+          0,
+          17,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2181.140625,
+        "switch_rate": 0.3984375,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          77,
+          0,
+          0,
+          21,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 77,
+        "ties": 0,
+        "losses": 51,
+        "score_rate": 0.6015625,
+        "mean_margin": 1438.1953125,
+        "switch_rate": 0.515625,
+        "rescued_losses": 6,
+        "harmed_wins": 34,
+        "choice_histogram": [
+          62,
+          0,
+          0,
+          34,
+          0,
+          32
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2877.3359375,
+        "switch_rate": 0.328125,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          86,
+          0,
+          0,
+          17,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2181.140625,
+        "switch_rate": 0.3984375,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          77,
+          0,
+          0,
+          21,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 77,
+        "ties": 0,
+        "losses": 51,
+        "score_rate": 0.6015625,
+        "mean_margin": 1438.1953125,
+        "switch_rate": 0.515625,
+        "rescued_losses": 6,
+        "harmed_wins": 34,
+        "choice_histogram": [
+          62,
+          0,
+          0,
+          34,
+          0,
+          32
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 99,
+        "ties": 0,
+        "losses": 29,
+        "score_rate": 0.7734375,
+        "mean_margin": 4611.6015625,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 6,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          2,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 89,
+        "ties": 0,
+        "losses": 39,
+        "score_rate": 0.6953125,
+        "mean_margin": 3318.1875,
+        "switch_rate": 0.2578125,
+        "rescued_losses": 4,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          95,
+          0,
+          0,
+          8,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2282.515625,
+        "switch_rate": 0.4296875,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          73,
+          0,
+          0,
+          25,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 76,
+        "ties": 0,
+        "losses": 52,
+        "score_rate": 0.59375,
+        "mean_margin": 1049.7421875,
+        "switch_rate": 0.5234375,
+        "rescued_losses": 6,
+        "harmed_wins": 35,
+        "choice_histogram": [
+          61,
+          0,
+          0,
+          32,
+          0,
+          35
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 4095.5859375,
+        "switch_rate": 0.2421875,
+        "rescued_losses": 1,
+        "harmed_wins": 13,
+        "choice_histogram": [
+          97,
+          0,
+          0,
+          23,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 91,
+        "ties": 0,
+        "losses": 37,
+        "score_rate": 0.7109375,
+        "mean_margin": 3467.3359375,
+        "switch_rate": 0.3203125,
+        "rescued_losses": 6,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          87,
+          0,
+          0,
+          21,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 5,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 71,
+        "ties": 0,
+        "losses": 57,
+        "score_rate": 0.5546875,
+        "mean_margin": 569.3125,
+        "switch_rate": 0.6171875,
+        "rescued_losses": 6,
+        "harmed_wins": 40,
+        "choice_histogram": [
+          49,
+          0,
+          0,
+          39,
+          0,
+          40
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 2,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5394.7890625,
+        "switch_rate": 0.0078125,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          127,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 2,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 2,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2877.3359375,
+        "switch_rate": 0.328125,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          86,
+          0,
+          0,
+          17,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 2,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2181.140625,
+        "switch_rate": 0.3984375,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          77,
+          0,
+          0,
+          21,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 2,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2065.203125,
+        "switch_rate": 0.4140625,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          75,
+          0,
+          0,
+          21,
+          0,
+          32
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 4,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 104,
+        "ties": 0,
+        "losses": 24,
+        "score_rate": 0.8125,
+        "mean_margin": 5330.03125,
+        "switch_rate": 0.015625,
+        "rescued_losses": 0,
+        "harmed_wins": 1,
+        "choice_histogram": [
+          126,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 4,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 96,
+        "ties": 0,
+        "losses": 32,
+        "score_rate": 0.75,
+        "mean_margin": 4275.0546875,
+        "switch_rate": 0.09375,
+        "rescued_losses": 0,
+        "harmed_wins": 9,
+        "choice_histogram": [
+          116,
+          0,
+          0,
+          4,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 4,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 86,
+        "ties": 0,
+        "losses": 42,
+        "score_rate": 0.671875,
+        "mean_margin": 2877.3359375,
+        "switch_rate": 0.328125,
+        "rescued_losses": 5,
+        "harmed_wins": 24,
+        "choice_histogram": [
+          86,
+          0,
+          0,
+          17,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 4,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2181.140625,
+        "switch_rate": 0.3984375,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          77,
+          0,
+          0,
+          21,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 4,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2065.203125,
+        "switch_rate": 0.4140625,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          75,
+          0,
+          0,
+          21,
+          0,
+          32
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 8,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 8,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 99,
+        "ties": 0,
+        "losses": 29,
+        "score_rate": 0.7734375,
+        "mean_margin": 4611.6015625,
+        "switch_rate": 0.0625,
+        "rescued_losses": 0,
+        "harmed_wins": 6,
+        "choice_histogram": [
+          120,
+          0,
+          0,
+          2,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 8,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 89,
+        "ties": 0,
+        "losses": 39,
+        "score_rate": 0.6953125,
+        "mean_margin": 3318.1875,
+        "switch_rate": 0.2578125,
+        "rescued_losses": 4,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          95,
+          0,
+          0,
+          8,
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 8,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 84,
+        "ties": 0,
+        "losses": 44,
+        "score_rate": 0.65625,
+        "mean_margin": 2282.515625,
+        "switch_rate": 0.4296875,
+        "rescued_losses": 6,
+        "harmed_wins": 27,
+        "choice_histogram": [
+          73,
+          0,
+          0,
+          25,
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 8,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 79,
+        "ties": 0,
+        "losses": 49,
+        "score_rate": 0.6171875,
+        "mean_margin": 1319.5625,
+        "switch_rate": 0.5,
+        "rescued_losses": 6,
+        "harmed_wins": 32,
+        "choice_histogram": [
+          64,
+          0,
+          0,
+          29,
+          0,
+          35
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 12,
+      "rescue_weight": 2.0,
+      "oof": {
+        "games": 128,
+        "wins": 105,
+        "ties": 0,
+        "losses": 23,
+        "score_rate": 0.8203125,
+        "mean_margin": 5472.2109375,
+        "switch_rate": 0.0,
+        "rescued_losses": 0,
+        "harmed_wins": 0,
+        "choice_histogram": [
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 12,
+      "rescue_weight": 4.0,
+      "oof": {
+        "games": 128,
+        "wins": 101,
+        "ties": 0,
+        "losses": 27,
+        "score_rate": 0.7890625,
+        "mean_margin": 4727.25,
+        "switch_rate": 0.03125,
+        "rescued_losses": 0,
+        "harmed_wins": 4,
+        "choice_histogram": [
+          124,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 12,
+      "rescue_weight": 8.0,
+      "oof": {
+        "games": 128,
+        "wins": 93,
+        "ties": 0,
+        "losses": 35,
+        "score_rate": 0.7265625,
+        "mean_margin": 4095.5859375,
+        "switch_rate": 0.2421875,
+        "rescued_losses": 1,
+        "harmed_wins": 13,
+        "choice_histogram": [
+          97,
+          0,
+          0,
+          23,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 12,
+      "rescue_weight": 12.0,
+      "oof": {
+        "games": 128,
+        "wins": 91,
+        "ties": 0,
+        "losses": 37,
+        "score_rate": 0.7109375,
+        "mean_margin": 3467.3359375,
+        "switch_rate": 0.3203125,
+        "rescued_losses": 6,
+        "harmed_wins": 20,
+        "choice_histogram": [
+          87,
+          0,
+          0,
+          21,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "depth": 6,
+      "min_samples_leaf": 12,
+      "rescue_weight": 20.0,
+      "oof": {
+        "games": 128,
+        "wins": 71,
+        "ties": 0,
+        "losses": 57,
+        "score_rate": 0.5546875,
+        "mean_margin": 569.3125,
+        "switch_rate": 0.6171875,
+        "rescued_losses": 6,
+        "harmed_wins": 40,
+        "choice_histogram": [
+          49,
+          0,
+          0,
+          39,
+          0,
+          40
+        ]
+      }
+    }
+  ]
+}

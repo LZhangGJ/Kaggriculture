@@ -1,0 +1,383 @@
+{
+  "schema": "kaggriculture.r8-official-replay.v1",
+  "generated_at_utc": "2026-08-29T15:42:50.731156+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "seed_start": 2862001,
+  "seed_count": 4,
+  "dual_seat": true,
+  "opponents": [
+    "PASSIVE",
+    "G001"
+  ],
+  "games": 16,
+  "summary": {
+    "complete_games": 16,
+    "reward_exact_games": 16,
+    "hard_failure_count": 0
+  },
+  "config": {
+    "day_horizon_steps": 24,
+    "joint_horizon_steps": 8,
+    "joint_candidate_limit": 8,
+    "feature_level": 4,
+    "lookahead_scale": 0.05
+  },
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "genomes": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    },
+    "backbone": null
+  },
+  "rows": [
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862001,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        139425.0,
+        3000.0
+      ],
+      "official_rewards": [
+        139425.0,
+        3000.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862001,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        3000.0,
+        137279.0
+      ],
+      "official_rewards": [
+        3000.0,
+        137279.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862002,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        124583.0,
+        3000.0
+      ],
+      "official_rewards": [
+        124583.0,
+        3000.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862002,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        3000.0,
+        93852.0
+      ],
+      "official_rewards": [
+        3000.0,
+        93852.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862003,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        103510.0,
+        3000.0
+      ],
+      "official_rewards": [
+        103510.0,
+        3000.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862003,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        3000.0,
+        103510.0
+      ],
+      "official_rewards": [
+        3000.0,
+        103510.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862004,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        115771.0,
+        3000.0
+      ],
+      "official_rewards": [
+        115771.0,
+        3000.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "PASSIVE",
+      "seed": 2862004,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        3000.0,
+        114961.0
+      ],
+      "official_rewards": [
+        3000.0,
+        114961.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862001,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        55868.0,
+        113072.0
+      ],
+      "official_rewards": [
+        55868.0,
+        113072.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862001,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        113072.0,
+        55868.0
+      ],
+      "official_rewards": [
+        113072.0,
+        55868.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862002,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        49193.0,
+        89818.0
+      ],
+      "official_rewards": [
+        49193.0,
+        89818.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862002,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        131792.0,
+        62060.0
+      ],
+      "official_rewards": [
+        131792.0,
+        62060.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862003,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        79727.0,
+        141028.0
+      ],
+      "official_rewards": [
+        79727.0,
+        141028.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862003,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        147588.0,
+        88242.0
+      ],
+      "official_rewards": [
+        147588.0,
+        88242.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862004,
+      "candidate_seat": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        48546.0,
+        77380.0
+      ],
+      "official_rewards": [
+        48546.0,
+        77380.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    },
+    {
+      "opponent": "G001",
+      "seed": 2862004,
+      "candidate_seat": 1,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "native_rewards": [
+        80906.0,
+        42172.0
+      ],
+      "official_rewards": [
+        80906.0,
+        42172.0
+      ],
+      "reward_exact": true,
+      "hard_failures": 0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "kaggriculture.ecobot-adaptive-planner.w0-freeze.v1",
+  "status": "FROZEN",
+  "official_package_version": "1.32.7",
+  "default_route_backbone": "G001",
+  "rules": {
+    "candidate_must_be_g001_plus_local_edits": true,
+    "whole_route_replacement_is_not_an_accepted_improvement": true,
+    "final_target_is_each_arena_member_score_rate_gte": 0.9,
+    "both_seats_required": true,
+    "fixed_seed_banks_required": true,
+    "official_python_final_judge_required": true
+  },
+  "inputs": {
+    "ecobot_v6": {
+      "path": "public_notebooks/recent_latest_20260827_scan_v1/premaananda108__economics-driven-rule-agent-ecobot-v6/output/main.py",
+      "sha256": "ACA6DCDDAFD6FD6BC55BF271112FD0041D92B6EB45F6E1BABC36B40C81F32CAD"
+    },
+    "g001_submission": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/main.py",
+      "sha256": "9B4FDF7A7C92D3EEFC75C693C4949825567588478BEF0E53529BDEC82944DDA7"
+    },
+    "native_route_source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "native_route_actions": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/route_actions.json.zlib",
+      "sha256": "C4ACC1DB68AC12F2023AA058CE3FF4E69553E00A3B12A355EFDBAEA493243495"
+    },
+    "native_route_library": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/route_library.json",
+      "sha256": "15D3A755E66EC4BA654FF5B935D17CF4629C6F94BB7365D9683F199CFA81765B"
+    },
+    "arena": {
+      "path": "experiments/front40_fusion_v1/configs/complete_validation_pool_v1.json",
+      "sha256": "6D92D54A261203AEF1A7E6528CE962A4D09D003D101E5ADDD44777C7EB9EE195",
+      "members": 68,
+      "cross_runtime_dedupe_status": "PENDING_AS_RECORDED_BY_SOURCE_CONFIG"
+    }
+  },
+  "baseline_receipts": {
+    "official_ecobot_v6_vs_g001": {
+      "path": "experiments/public_recent_20260827/receipts/ecobot_v6_vs_g001_official_seed1821001_n64x2_v2.json",
+      "sha256": "0D5A07C9320B1FC342C521069261678F2AE1F7D836D6891E1F5258C68F633919",
+      "games": 128,
+      "ecobot_score_rate": 0.0,
+      "mean_margin": -44175.1641
+    },
+    "cpp_all_routes_vs_g001": {
+      "path": "experiments/ecobot_adaptive_planner_v1/receipts/w0_all175_vs_g001_cpp_seed1940001_n128x2_v1.json",
+      "sha256": "1DFB017D32140EA40C40344D9D03A9C6C1F6DA6C967721258E371DFF1AFF8010",
+      "games": 44544,
+      "games_per_second": 5036.041567,
+      "best_non_g001_family": "G174",
+      "best_non_g001_score_rate_vs_g001": 0.58203125
+    }
+  }
+}

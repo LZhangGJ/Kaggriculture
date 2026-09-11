@@ -1,0 +1,19 @@
+{
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-ffp-contract=off",
+    "/mnt/data/C3_REBUILD_20260905/agent/hybrid_bridge.cpp",
+    "/mnt/data/C3_REBUILD_20260905/agent/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/data/C3_REBUILD_20260905/agent/agent.so"
+  ],
+  "seconds": 23.712260100000094,
+  "sha256": "cff96ca36ae21991762a84ab1da6c21875a0f65dcf820c61e1313d08786098a7",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "games": 448,
+  "different_games": 0,
+  "checks": [
+    "terminal own cash",
+    "terminal opponent cash",
+    "both-player action hash"
+  ]
+}

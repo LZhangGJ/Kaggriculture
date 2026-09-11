@@ -1,0 +1,108 @@
+{
+  "status": "SELECTED_BEFORE_HOLDOUT",
+  "selected": "mpc32_norotate",
+  "criterion": "development: 32 same seeds, both seats, seven equally weighted live opponents; highest overall win rate among listed final-stage configurations",
+  "candidates": [
+    {
+      "tag": "v4_dev32_base",
+      "games": 448,
+      "wins": 290,
+      "win_rate": 0.6473214285714286
+    },
+    {
+      "tag": "v4_dev32_norotate",
+      "games": 448,
+      "wins": 318,
+      "win_rate": 0.7098214285714286
+    },
+    {
+      "tag": "v4_dev32_rent25",
+      "games": 448,
+      "wins": 320,
+      "win_rate": 0.7142857142857143
+    },
+    {
+      "tag": "v4_dev32_mpc",
+      "games": 448,
+      "wins": 338,
+      "win_rate": 0.7544642857142857
+    },
+    {
+      "tag": "mpc32_norotate",
+      "games": 448,
+      "wins": 374,
+      "win_rate": 0.8348214285714286
+    },
+    {
+      "tag": "mpc32_tour",
+      "games": 448,
+      "wins": 369,
+      "win_rate": 0.8236607142857143
+    },
+    {
+      "tag": "mpc32_tour_wide",
+      "games": 448,
+      "wins": 367,
+      "win_rate": 0.8191964285714286
+    },
+    {
+      "tag": "learned_v1_actual_dev32",
+      "games": 448,
+      "wins": 318,
+      "win_rate": 0.7098214285714286
+    },
+    {
+      "tag": "rank_v1_dev32",
+      "games": 448,
+      "wins": 326,
+      "win_rate": 0.7276785714285714
+    }
+  ],
+  "config": {
+    "competition": 2,
+    "supply": 0.85,
+    "future_shop": 0.7,
+    "capital_power": 0.4,
+    "labor_hours": 10,
+    "work_price": 4,
+    "animal_work": 1.0,
+    "reserve": 120,
+    "max_animals": 20,
+    "max_hands": 14,
+    "max_land": 3,
+    "feed_cover": 1,
+    "rotation": 0,
+    "preview": 1,
+    "delivery": 2,
+    "intraday": 1,
+    "service": 1,
+    "replant": 0.7,
+    "land_rent": 2,
+    "discount": 0.015,
+    "tour_dp": 0,
+    "layout": 0,
+    "repeat": 0,
+    "animal_bias": 1,
+    "crop_bias": 1,
+    "portfolio_passes": 6,
+    "crop_fert": 1,
+    "harvest_threshold": 1,
+    "delay_sale": 0,
+    "opening_budget": 1,
+    "scenario": 1,
+    "keep_commitments": 1
+  },
+  "holdout": {
+    "start": 260909000,
+    "count": 100,
+    "frozen_before_holdout": true
+  },
+  "post_selection_source_changes": [
+    "funded successor survives empty incumbent tile",
+    "explicit model availability validation",
+    "debug states whether trained model actually active"
+  ],
+  "model_active": false,
+  "source_policy": "local Sept 5 C3 executor/economic helpers + new Triad planner, no J7 macro input",
+  "limitations": "This is not a rebuilt or measured Sept6 F3; no claim of 90 percent yet"
+}

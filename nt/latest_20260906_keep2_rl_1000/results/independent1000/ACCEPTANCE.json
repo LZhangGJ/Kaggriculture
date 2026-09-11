@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "games": 40600,
+  "configs": 29,
+  "seed_start": 71100000,
+  "seeds": 100,
+  "selection_before_holdout": true,
+  "train_seed_end_by_run": [
+    69615999,
+    69715999
+  ],
+  "holdout_not_used_for_training_or_selection": true,
+  "checks": {
+    "keep": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 0,
+      "changed": 0
+    },
+    "control_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 16005,
+      "changed": 16005
+    },
+    "control_r0_step300_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22533,
+      "changed": 22533
+    },
+    "control_r0_step300_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22294,
+      "changed": 22294
+    },
+    "control_r0_step900_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 26319,
+      "changed": 26319
+    },
+    "control_r0_step900_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25932,
+      "changed": 25932
+    },
+    "control_r0_step1000_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 23285,
+      "changed": 23285
+    },
+    "control_r0_step1000_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24186,
+      "changed": 24186
+    },
+    "aux_r0_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 17135,
+      "changed": 17135
+    },
+    "aux_r0_step300_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 17764,
+      "changed": 17764
+    },
+    "aux_r0_step300_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 21887,
+      "changed": 21887
+    },
+    "aux_r0_step900_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 19400,
+      "changed": 19400
+    },
+    "aux_r0_step900_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22247,
+      "changed": 22247
+    },
+    "aux_r0_step1000_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 18890,
+      "changed": 18890
+    },
+    "aux_r0_step1000_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 21163,
+      "changed": 21163
+    },
+    "control_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 7044,
+      "changed": 7044
+    },
+    "control_r1_step300_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 21142,
+      "changed": 21142
+    },
+    "control_r1_step300_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 20662,
+      "changed": 20662
+    },
+    "control_r1_step900_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22695,
+      "changed": 22695
+    },
+    "control_r1_step900_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 23212,
+      "changed": 23212
+    },
+    "control_r1_step1000_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 22762,
+      "changed": 22762
+    },
+    "control_r1_step1000_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25146,
+      "changed": 25146
+    },
+    "aux_r1_selected": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 26075,
+      "changed": 26075
+    },
+    "aux_r1_step300_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25940,
+      "changed": 25940
+    },
+    "aux_r1_step300_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24766,
+      "changed": 24766
+    },
+    "aux_r1_step900_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 23120,
+      "changed": 23120
+    },
+    "aux_r1_step900_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 24110,
+      "changed": 24110
+    },
+    "aux_r1_step1000_greedy": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25265,
+      "changed": 25265
+    },
+    "aux_r1_step1000_sample": {
+      "games": 1400,
+      "decisions": 42000,
+      "nonkeep": 25898,
+      "changed": 25898
+    }
+  }
+}

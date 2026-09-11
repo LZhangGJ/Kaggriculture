@@ -1,0 +1,31 @@
+{
+  "submission_id": 56114767,
+  "checked_at_utc": "2026-09-09T05:46:21.230607+00:00",
+  "episodes": [
+    {
+      "id": 107026853,
+      "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+      "state": "EpisodeState.COMPLETED",
+      "create_time": "2026-09-09 05:42:36.958000",
+      "end_time": "2026-09-09 05:45:23.270000",
+      "agents": [
+        {
+          "submission_id": 56114767,
+          "index": 0,
+          "reward": 85287,
+          "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+          "team_name": "QQ Farming",
+          "team_id": 16704466
+        },
+        {
+          "submission_id": 56114767,
+          "index": 1,
+          "reward": 89052,
+          "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+          "team_name": "QQ Farming",
+          "team_id": 16704466
+        }
+      ]
+    }
+  ]
+}

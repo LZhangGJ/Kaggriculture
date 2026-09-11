@@ -1,0 +1,136 @@
+{
+  "pool": [
+    {
+      "id": "soil_v219g",
+      "working": "research/public_opponents_r2_20260910/soil_v219g/working"
+    },
+    {
+      "id": "moon_v215",
+      "working": "research/public_opponents_r2_20260910/moon_v215/working"
+    },
+    {
+      "id": "flexon_v5",
+      "working": "research/public_opponents_r2_20260910/flexon_v5/working"
+    },
+    {
+      "id": "market_smart_v8",
+      "working": "research/public_opponents_r2_20260910/market_smart_v8/working"
+    },
+    {
+      "id": "nagatakengo_v70",
+      "working": "research/public_opponents_r2_20260910/nagatakengo_v70/working"
+    },
+    {
+      "id": "aurax_reactive_v1",
+      "working": "research/public_opponents_r2_20260910/aurax_reactive_v1/working"
+    },
+    {
+      "id": "thomas_955_v2",
+      "working": "research/public_opponents_r2_20260910/thomas_955_v2/working"
+    },
+    {
+      "id": "shop0909",
+      "working": "research/shop_router_0909_review_20260909"
+    },
+    {
+      "id": "aurax_shop_v2",
+      "working": "research/reactive_rescue_review_20260909/aurax7/working"
+    },
+    {
+      "id": "seven_turn",
+      "working": "research/reactive_rescue_review_20260909/seven_turn/working"
+    },
+    {
+      "id": "ahmed_v27",
+      "working": "research/ahmed_reactive_review_20260909/working"
+    }
+  ],
+  "source_hashes": {
+    "research/public_opponents_r2_20260910/soil_v219g/working/main.py": "4f5043530e0104f4867ad7455800dc8a40d4b589e9deb84b000e105e0b077157",
+    "research/public_opponents_r2_20260910/moon_v215/working/main.py": "a32d1bbbe915e1f7f370f012155548915f5f846a517b45cbe90245294255af1f",
+    "research/public_opponents_r2_20260910/flexon_v5/working/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "research/public_opponents_r2_20260910/flexon_v5/working/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+    "research/public_opponents_r2_20260910/flexon_v5/working/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+    "research/public_opponents_r2_20260910/flexon_v5/working/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+    "research/public_opponents_r2_20260910/flexon_v5/working/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+    "research/public_opponents_r2_20260910/flexon_v5/working/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+    "research/public_opponents_r2_20260910/flexon_v5/working/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/policy.py": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/router_parent.py": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/settings.json": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/terminal_planner.py": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+    "research/public_opponents_r2_20260910/market_smart_v8/working/unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383",
+    "research/public_opponents_r2_20260910/nagatakengo_v70/working/main.py": "ad981d06799c983eb499eb24da0db00598a04ba21a856f1e1558ab35b6e90989",
+    "research/public_opponents_r2_20260910/aurax_reactive_v1/working/main.py": "53070a6adfaac7b91914a53e215bf0c521fff1d633db74abdf20bfcd13190175",
+    "research/public_opponents_r2_20260910/thomas_955_v2/working/main.py": "8241246765098c50223d897739cb32076b71a303284d2e5e1c5f0fb495bb5a97",
+    "research/shop_router_0909_review_20260909/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "research/shop_router_0909_review_20260909/audit_source.py": "fb3ea29cafb7eccd12d1cf8d12248068e9ba5e04d69aaaa7c3094a539181f429",
+    "research/shop_router_0909_review_20260909/kernel-metadata.json": "f57282a3106f044daecd34ce2e7f1a172e4316f92609acdd0cc5e4ee0111e7ff",
+    "research/shop_router_0909_review_20260909/main.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+    "research/shop_router_0909_review_20260909/STATIC_AUDIT.json": "371bf87f885f75d16b5f6a924c6ce1129988a424e84090b686647373163942c9",
+    "research/reactive_rescue_review_20260909/aurax7/working/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "research/reactive_rescue_review_20260909/aurax7/working/kernel-metadata.json": "62f38964606e58bfe57c45fdfb653ecf4e868a837a32bee73dec09c386081424",
+    "research/reactive_rescue_review_20260909/aurax7/working/main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281",
+    "research/reactive_rescue_review_20260909/seven_turn/working/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "research/reactive_rescue_review_20260909/seven_turn/working/kernel-metadata.json": "4e171c33bae7a3cd75fba706e091fa66c60bd57483f454c814dc212a0f4619d7",
+    "research/reactive_rescue_review_20260909/seven_turn/working/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+    "research/reactive_rescue_review_20260909/seven_turn/working/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+    "research/reactive_rescue_review_20260909/seven_turn/working/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+    "research/reactive_rescue_review_20260909/seven_turn/working/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+    "research/reactive_rescue_review_20260909/seven_turn/working/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+    "research/reactive_rescue_review_20260909/seven_turn/working/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724",
+    "research/ahmed_reactive_review_20260909/working/kernel-metadata.json": "8ee2a4d90ee536541958bc445822142eeee39123580e455fc45fa526aa6f0401",
+    "research/ahmed_reactive_review_20260909/working/main.py": "f9db9c4e4114bc956752b90df35d0c7ceda96e5009573f4d6229cc7c95d9f8e9"
+  },
+  "seeds": [
+    2609124000,
+    2609124001,
+    2609124002,
+    2609124003,
+    2609124004,
+    2609124005,
+    2609124006,
+    2609124007,
+    2609124008,
+    2609124009,
+    2609124010,
+    2609124011,
+    2609124012,
+    2609124013,
+    2609124014,
+    2609124015,
+    2609124016,
+    2609124017,
+    2609124018,
+    2609124019,
+    2609124020,
+    2609124021,
+    2609124022,
+    2609124023,
+    2609124024,
+    2609124025,
+    2609124026,
+    2609124027,
+    2609124028,
+    2609124029,
+    2609124030,
+    2609124031
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "config": null,
+  "r2_config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "r2_binary_sha256": "877f196113692722edc8a5b3e30d2d3dd1d4700b0772c13f1e3f2ad7a9ac0ef2",
+  "r2_wrapper_sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "host_sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+  "official_version": "1.32.7",
+  "real_time_opponents": true,
+  "limitation": "Official local interpreter, not Kaggle sandbox/CPU/schema qualification",
+  "candidate_binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/r2_public11_upgrade_20260910/candidate_r2p16/policy/startupsupply2.so",
+  "candidate_binary_sha256": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b"
+}

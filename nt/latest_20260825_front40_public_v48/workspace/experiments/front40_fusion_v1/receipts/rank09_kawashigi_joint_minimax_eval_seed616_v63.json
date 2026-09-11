@@ -1,0 +1,77 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-24T10:12:59.155181+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank09_kawashigi_joint25_seed616_n512x2_independent_v62.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_joint_minimax_win_source_second_v54.json",
+  "holdout_seed_index_range": [
+    0,
+    511
+  ],
+  "base": {
+    "games": 1024,
+    "wins": 421,
+    "win_rate": 0.4111328125,
+    "mean_margin": -3835.2509765625,
+    "median_margin": -920.5,
+    "hard_counter_total": 0,
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 209,
+        "win_rate": 0.408203125,
+        "mean_margin": -3771.416015625,
+        "median_margin": -846.0,
+        "hard_counter_total": 0
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 212,
+        "win_rate": 0.4140625,
+        "mean_margin": -3899.0859375,
+        "median_margin": -1027.5,
+        "hard_counter_total": 0
+      }
+    ]
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank09_kawashigi_joint_minimax_win_source_second_v54.json",
+      "routing_index": "legacy_base_route,second_shop",
+      "accepted_pairs": 0,
+      "holdout": {
+        "games": 1024,
+        "wins": 516,
+        "win_rate": 0.50390625,
+        "mean_margin": -1286.052734375,
+        "median_margin": 129.0,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 255,
+          "win_rate": 0.498046875,
+          "mean_margin": -1239.275390625,
+          "median_margin": -7.0,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 261,
+          "win_rate": 0.509765625,
+          "mean_margin": -1332.830078125,
+          "median_margin": 175.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 600,
+      "net_wins_vs_base": 95,
+      "mean_margin_gain_vs_base": 2549.1982421875
+    }
+  ]
+}

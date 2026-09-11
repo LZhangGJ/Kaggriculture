@@ -1,0 +1,51 @@
+{
+  "schema": "kaggriculture.r8-state-isolation.v1",
+  "generated_at_utc": "2026-08-29T15:40:23.349151+00:00",
+  "status": "PASS",
+  "opponent": "PASSIVE",
+  "games": 1000,
+  "seed_start": 2861001,
+  "config": {
+    "day_horizon_steps": 24,
+    "joint_horizon_steps": 8,
+    "joint_candidate_limit": 8,
+    "feature_level": 4,
+    "lookahead_scale": 0.05
+  },
+  "isolation": {
+    "reward_value_mismatches": 0,
+    "diagnostic_value_mismatches": 0,
+    "hard_failure_count": 0,
+    "ascending_seconds": 10.274469794999959,
+    "reverse_seconds": 10.243883635999964,
+    "ascending_games_per_second": 97.32862327228283,
+    "reverse_games_per_second": 97.61922680239273
+  },
+  "single_game_native_latency": {
+    "samples": 64,
+    "p50_ms_per_719_step_game": 106.97230549999404,
+    "p95_ms_per_719_step_game": 112.99875274999067,
+    "p50_us_per_environment_step": 148.77928442280117,
+    "p95_us_per_environment_step": 157.1609913073584,
+    "scope": "native full-game call; excludes online Python observation parsing"
+  },
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "genomes": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    },
+    "backbone": null
+  }
+}

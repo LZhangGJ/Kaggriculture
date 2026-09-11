@@ -1,0 +1,13 @@
+{
+  "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0900/training/aux_r0/step900.pt",
+  "sha": "88e7a3840186f099ef603b2d0fd9e83f1ef14f3848c33ccb21d9283e4cc08b85",
+  "bin_sha": "255ca024a6195e7bb63971f0fe8107451f2e7e0615a0a4e69d973f55c62c40aa",
+  "optimizer": {
+    "parameters_with_state": 14,
+    "steps": [
+      50400
+    ],
+    "momentum_l1": 8.973817667788456,
+    "variance_l1": 0.14662780648849622
+  }
+}

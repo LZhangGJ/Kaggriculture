@@ -1,0 +1,36 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-24T02:28:34.192199+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_secondshop4_vs_fc24b_confirm_seed344001_n512x2_v24.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_stable_win_unrestricted_map_dev640_v8.json",
+  "holdout_seed_index_range": [
+    0,
+    511
+  ],
+  "base": {
+    "games": 1024,
+    "wins": 917,
+    "win_rate": 0.8955078125,
+    "mean_margin": 55264.3330078125,
+    "median_margin": 66988.0,
+    "hard_counter_total": 0
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank04_arman_secondshop_gain0p10_train304_v21.json",
+      "accepted_pairs": 1,
+      "holdout": {
+        "games": 1024,
+        "wins": 921,
+        "win_rate": 0.8994140625,
+        "mean_margin": 52524.6806640625,
+        "median_margin": 65265.5,
+        "hard_counter_total": 0
+      },
+      "changed_games": 66,
+      "net_wins_vs_base": 4,
+      "mean_margin_gain_vs_base": -2739.65234375
+    }
+  ]
+}

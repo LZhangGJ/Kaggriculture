@@ -1,0 +1,51 @@
+{
+  "status": "READY_FOR_KAGGLE",
+  "label": "NT DP27 fixed macro dynamic executor",
+  "plan_id": "a882fe77385f5e59",
+  "source": "Driz Lo pool #027 (generated plan, not the original author agent)",
+  "fixed": "Day0-28 macro intervention sequence",
+  "dynamic": "Current-state daily planner, task scheduling and action execution",
+  "online_oracle": false,
+  "opponent_identity_input": false,
+  "replay_playback": false,
+  "local_results": {
+    "R05_F001_E104180967_P0": 26,
+    "R03_F001_E104234696_P0": 27,
+    "R02_F001_E104469027_P0": 23
+  },
+  "parity_games": 96,
+  "official_games": 6,
+  "source_loader_checks": [
+    {
+      "seed": 20264501,
+      "seat": 0,
+      "steps": 719,
+      "actions_equal": true,
+      "max_wall": 0.02600432000000019
+    },
+    {
+      "seed": 20264501,
+      "seat": 1,
+      "steps": 719,
+      "actions_equal": true,
+      "max_wall": 0.025302756000000315
+    }
+  ],
+  "local_single_process_max_wall": 0.02881586999998831,
+  "local_parallel_max_wall": 0.043100207999998474,
+  "minimum_glibc": "2.34",
+  "cpu_target": "x86-64 baseline, no AVX required",
+  "python_binding": "ctypes C ABI; no CPython-version-specific extension",
+  "archive_sha256": "ce5175e916507e86257960e5fb4d9fbf4c7616c83e170d690e4a51f4d1d6c76a",
+  "archive_bytes": 439921,
+  "files": {
+    "main.py": "2bd91851f8240fa1ebf4a2f30856703b6765aede0a7c8bb17dfb4da1a47b1961",
+    "agent.so": "ca264fbe9f148a9ee615200c13b31cc3a28964893286573aad47c2222db58baa",
+    "frozen_plan.json": "5f74e1a638ad2d6f56f87901e03faed742917569ab1b810f1f0d79cd123c7dd5",
+    "frozen_config.json": "fd69218c75fb51bdc9a40d4171d675f0fc12ddd9dcec080f418b2d9619011f02",
+    "build_receipt.json": "83dbb65a2f66225170dd36ad1e0b21cd9912edcfad18d78e9ec698c54f16e726",
+    "validation_smoke_compat_v1.json": "5ce9e0bed67ab15762eca74a9303a6143ad4f9c54456b8cfaf0722790bc19a69",
+    "validation_parity_compat_v1.json": "b19aeecc858ef849040621cebfb5cbd86f827ff9496ec1935a874846efde2d7c"
+  },
+  "caveat": "Local tests do not guarantee Kaggle hardware timing or leaderboard strength. Submission status must be checked after upload."
+}

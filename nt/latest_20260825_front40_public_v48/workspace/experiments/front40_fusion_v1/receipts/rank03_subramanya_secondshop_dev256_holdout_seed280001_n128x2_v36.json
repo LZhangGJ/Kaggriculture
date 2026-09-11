@@ -1,0 +1,36 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-24T01:03:32.443290+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank03_subramanya_secondshop13_vs_fc24b_screen_seed280001_n128x2_v35.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_wilson_same_shop_map_v18.json",
+  "holdout_seed_index_range": [
+    0,
+    127
+  ],
+  "base": {
+    "games": 256,
+    "wins": 72,
+    "win_rate": 0.28125,
+    "mean_margin": -13029.64453125,
+    "median_margin": -10388.0,
+    "hard_counter_total": 0
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank03_subramanya_secondshop_dev256_v34.json",
+      "accepted_pairs": 10,
+      "holdout": {
+        "games": 256,
+        "wins": 70,
+        "win_rate": 0.2734375,
+        "mean_margin": -13070.41796875,
+        "median_margin": -10482.5,
+        "hard_counter_total": 0
+      },
+      "changed_games": 12,
+      "net_wins_vs_base": -2,
+      "mean_margin_gain_vs_base": -40.7734375
+    }
+  ]
+}

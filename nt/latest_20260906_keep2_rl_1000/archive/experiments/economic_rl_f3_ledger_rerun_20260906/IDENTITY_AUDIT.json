@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "audit_scope": "saved training tensors, weights and terminal game outcomes; not raw 719-step trace comparison",
+  "loaded_fixed_library_sha256": "40bb8e2263cb67bbbd8065867fd51c574cc6ada3049abba0b5b261a74641536b",
+  "loaded_old_library_sha256": "38a28b1f9f95aac915ea0dd0ab3d2709058f81914c5435523fba20a27a011bfb",
+  "runs": [
+    {
+      "run": 0,
+      "identical_checkpoints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "different_arrays": [],
+      "different_game_outcomes": [],
+      "counts": {
+        "records": 134400,
+        "effective": 116669,
+        "option_old_empty": 3536,
+        "option_old_crop": 73122,
+        "option_old_animal": 40011,
+        "chosen_old_empty": 447,
+        "chosen_old_crop": 16745,
+        "chosen_old_animal": 11270,
+        "non_keep": 28462
+      }
+    },
+    {
+      "run": 1,
+      "identical_checkpoints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "different_arrays": [],
+      "different_game_outcomes": [],
+      "counts": {
+        "records": 134400,
+        "effective": 116936,
+        "option_old_empty": 3370,
+        "option_old_crop": 74271,
+        "option_old_animal": 39295,
+        "chosen_old_empty": 377,
+        "chosen_old_crop": 13086,
+        "chosen_old_animal": 7615,
+        "non_keep": 21078
+      }
+    }
+  ],
+  "analyzer_sha256": "7fe71350e6c63da050729cc31b78e5c7131f8faccd50f57da0a6975aae29c116"
+}

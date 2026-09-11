@@ -1,0 +1,85 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank09_kawashigi_v115",
+  "family": "rank09_mixed_high_output_three_shop_public_router",
+  "source": {
+    "leaderboard_rank": 9,
+    "team_name": "KAWASHIGI",
+    "submission_id": 55540317,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank09_kawashigi_trace_bank_v1.json",
+    "route_count": 179
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_trace_bank_v1.npz",
+    "route_tree": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_v115_pizza_fixed_route100.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "online_runner": "experiments/front40_fusion_v1/tools/run_three_shop_trace_tree_vs_fc24b.py",
+    "router_mode": "THREE_PUBLIC_TOWN_SHOPS",
+    "public_state_only": true,
+    "identity_routing": false,
+    "future_event_access": false,
+    "replay_id_routing": false
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [81, 115, 115, 17, 81, 100, 54, 94],
+    "runtime_routes": [17, 31, 35, 38, 54, 63, 65, 81, 94, 100, 115, 116, 118, 169, 175],
+    "pizza_override": {
+      "route_id": 100,
+      "reason": "Second/third-shop switching reduced Pizza robustness on recent independent panels."
+    }
+  },
+  "development": {
+    "all_route_screens": [
+      "experiments/front40_fusion_v1/receipts/rank09_kawashigi_all179_vs_fc24b_screen_seed576001_n128x2_v1.json",
+      "experiments/front40_fusion_v1/receipts/rank09_kawashigi_all179_vs_fc24b_screen_seed600001_n128x2_v35.json"
+    ],
+    "route_ranker_holdout": "experiments/front40_fusion_v1/receipts/rank09_kawashigi_compatible_ranker_holdout_seed640_v92.json",
+    "parent_tree": "experiments/front40_fusion_v1/artifacts/rank09_kawashigi_thirdshop_validation_blend_v107.json",
+    "pizza_override_panels": [
+      "experiments/front40_fusion_v1/receipts/rank09_kawashigi_v115_offline_seed640_v116.json",
+      "experiments/front40_fusion_v1/receipts/rank09_kawashigi_v115_offline_seed648_v117.json"
+    ],
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "arena_receipt": "experiments/front40_fusion_v1/receipts/rank09_kawashigi_v115_online_vs_fc24b_seed656001_n512x2_independent_v118.json",
+    "seed_start": 656001,
+    "games": 1024,
+    "wins": 551,
+    "win_rate": 0.5380859375,
+    "seat0_wins": 279,
+    "seat0_games": 512,
+    "seat0_win_rate": 0.544921875,
+    "seat1_wins": 272,
+    "seat1_games": 512,
+    "seat1_win_rate": 0.53125,
+    "all_719_steps": true,
+    "hard_counter_total": 0,
+    "sent_illegal_actions": 0,
+    "note": "invalid_intent_total counts source trace intents replaced by the legal guard before environment execution."
+  },
+  "known_weakness": {
+    "first_shop": "PIZZA_SHOP",
+    "games": 132,
+    "wins": 33,
+    "win_rate": 0.25,
+    "judgement": "Structural weakness across the available KAWASHIGI route bank; further same-family tuning has low expected return."
+  },
+  "sha256": {
+    "trace_bank": "14880E2F20F26EEE7F8249C695AE2D3EF872DFDE5D9C3C90236C1F52EB3E8F2E",
+    "route_tree": "9DB24F060C037B623D9339701144606745D43A81556D04DDB93738F9AAEA7A52",
+    "online_runner": "D7543063BBAE03458FD5C4BB529DDC5F59385AB7C81B1C263F02C8D207308DC0",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

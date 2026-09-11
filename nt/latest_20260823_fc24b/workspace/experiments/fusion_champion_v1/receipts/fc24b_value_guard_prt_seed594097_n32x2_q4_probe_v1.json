@@ -1,0 +1,2655 @@
+{
+  "schema": "kaggriculture.fusion_champion.panel.v2",
+  "generated_at_utc": "2026-08-23T03:54:59.809072+00:00",
+  "status": "PASS",
+  "candidate": "fc24_fc22_plus_last_feasible_terminal_crop_salvage",
+  "change": "FC22 plus one public-state last-feasible crop harvest, sticky return, drop, and incremental terminal sale",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 594097,
+  "seed_count": 32,
+  "seed_values": [
+    594097,
+    594098,
+    594099,
+    594100,
+    594101,
+    594102,
+    594103,
+    594104,
+    594105,
+    594106,
+    594107,
+    594108,
+    594109,
+    594110,
+    594111,
+    594112,
+    594113,
+    594114,
+    594115,
+    594116,
+    594117,
+    594118,
+    594119,
+    594120,
+    594121,
+    594122,
+    594123,
+    594124,
+    594125,
+    594126,
+    594127,
+    594128
+  ],
+  "games_per_opponent": 64,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 362.565817279,
+  "rows": [
+    {
+      "opponent": "local_prt_v6",
+      "games": 64,
+      "wins": 56,
+      "ties": 0,
+      "losses": 8,
+      "score_rate": 0.875,
+      "mean_candidate_cash": 94588.0,
+      "mean_opponent_cash": 89305.796875,
+      "mean_margin": 5282.203125,
+      "median_margin": 4634.0,
+      "candidate_seat0_wins": 28,
+      "candidate_seat1_wins": 28,
+      "weed_repair_diagnostic": {
+        "enabled": false,
+        "mean_all": 0.0,
+        "mean_wins": 0.0,
+        "mean_losses": 0.0,
+        "hist_all": {
+          "0": 64
+        },
+        "hist_losses": {
+          "0": 8
+        }
+      },
+      "terminal_assets": {
+        "mean_shed_units_all": 0.59375,
+        "mean_shed_units_losses": 0.0,
+        "mean_unit_inventory_all": 0.0,
+        "mean_unit_inventory_losses": 0.0,
+        "mean_map_yield_all": 1.9375,
+        "mean_map_yield_losses": 2.25
+      },
+      "per_game": [
+        {
+          "seed": 594097,
+          "candidate_seat": 0,
+          "candidate_cash": 63329,
+          "opponent_cash": 55218,
+          "margin": 8111,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            5,
+            2,
+            6,
+            4,
+            0,
+            5,
+            6
+          ],
+          "town_shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 59,
+            "TOMATO": 216,
+            "STRAWBERRY": 30,
+            "MELON": 34,
+            "EGG": 66,
+            "MILK": 51,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594097,
+          "candidate_seat": 1,
+          "candidate_cash": 63329,
+          "opponent_cash": 55218,
+          "margin": 8111,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            5,
+            2,
+            6,
+            4,
+            0,
+            5,
+            6
+          ],
+          "town_shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 59,
+            "TOMATO": 216,
+            "STRAWBERRY": 30,
+            "MELON": 34,
+            "EGG": 66,
+            "MILK": 51,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594098,
+          "candidate_seat": 0,
+          "candidate_cash": 123967,
+          "opponent_cash": 116509,
+          "margin": 7458,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            3,
+            3,
+            6,
+            7,
+            4,
+            0,
+            4
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PET_CAFE",
+            "BAKERY",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 43,
+            "CARROT": 52,
+            "TOMATO": 64,
+            "STRAWBERRY": 178,
+            "MELON": 34,
+            "EGG": 65,
+            "MILK": 7,
+            "WOOL": 82,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594098,
+          "candidate_seat": 1,
+          "candidate_cash": 123967,
+          "opponent_cash": 116509,
+          "margin": 7458,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            3,
+            3,
+            6,
+            7,
+            4,
+            0,
+            4
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PET_CAFE",
+            "BAKERY",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 43,
+            "CARROT": 52,
+            "TOMATO": 64,
+            "STRAWBERRY": 178,
+            "MELON": 34,
+            "EGG": 65,
+            "MILK": 7,
+            "WOOL": 82,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594099,
+          "candidate_seat": 0,
+          "candidate_cash": 58738,
+          "opponent_cash": 52774,
+          "margin": 5964,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            4,
+            3,
+            2,
+            0,
+            4,
+            0,
+            1,
+            1
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 133,
+            "TOMATO": 79,
+            "STRAWBERRY": 39,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594099,
+          "candidate_seat": 1,
+          "candidate_cash": 58738,
+          "opponent_cash": 52774,
+          "margin": 5964,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            4,
+            3,
+            2,
+            0,
+            4,
+            0,
+            1,
+            1
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 133,
+            "TOMATO": 79,
+            "STRAWBERRY": 39,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594100,
+          "candidate_seat": 0,
+          "candidate_cash": 76808,
+          "opponent_cash": 78336,
+          "margin": -1528,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            1,
+            2,
+            5,
+            7,
+            4,
+            0,
+            2,
+            4
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PET_CAFE",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 71,
+            "TOMATO": 216,
+            "STRAWBERRY": 30,
+            "MELON": 34,
+            "EGG": 66,
+            "MILK": 1,
+            "WOOL": 185,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594100,
+          "candidate_seat": 1,
+          "candidate_cash": 77227,
+          "opponent_cash": 78408,
+          "margin": -1181,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            1,
+            2,
+            5,
+            7,
+            4,
+            0,
+            2,
+            4
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PET_CAFE",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 71,
+            "TOMATO": 216,
+            "STRAWBERRY": 30,
+            "MELON": 34,
+            "EGG": 66,
+            "MILK": 1,
+            "WOOL": 189,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594101,
+          "candidate_seat": 0,
+          "candidate_cash": 137608,
+          "opponent_cash": 134103,
+          "margin": 3505,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            7,
+            7,
+            3,
+            6,
+            6,
+            6,
+            6
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 38,
+            "CARROT": 49,
+            "TOMATO": 83,
+            "STRAWBERRY": 201,
+            "MELON": 19,
+            "EGG": 52,
+            "MILK": 231,
+            "WOOL": 236,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594101,
+          "candidate_seat": 1,
+          "candidate_cash": 137608,
+          "opponent_cash": 134103,
+          "margin": 3505,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            7,
+            7,
+            3,
+            6,
+            6,
+            6,
+            6
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 38,
+            "CARROT": 49,
+            "TOMATO": 83,
+            "STRAWBERRY": 201,
+            "MELON": 19,
+            "EGG": 52,
+            "MILK": 231,
+            "WOOL": 236,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594102,
+          "candidate_seat": 0,
+          "candidate_cash": 66260,
+          "opponent_cash": 60453,
+          "margin": 5807,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            0,
+            1,
+            2,
+            2,
+            5,
+            7,
+            4
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 48,
+            "CARROT": 57,
+            "TOMATO": 445,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 169,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594102,
+          "candidate_seat": 1,
+          "candidate_cash": 66260,
+          "opponent_cash": 60453,
+          "margin": 5807,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            0,
+            1,
+            2,
+            2,
+            5,
+            7,
+            4
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 48,
+            "CARROT": 57,
+            "TOMATO": 445,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 169,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594103,
+          "candidate_seat": 0,
+          "candidate_cash": 65368,
+          "opponent_cash": 66127,
+          "margin": -759,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            0,
+            7,
+            0,
+            2,
+            2,
+            6,
+            1,
+            2
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 54,
+            "TOMATO": 111,
+            "STRAWBERRY": 74,
+            "MELON": 19,
+            "EGG": 75,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594103,
+          "candidate_seat": 1,
+          "candidate_cash": 65368,
+          "opponent_cash": 66127,
+          "margin": -759,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            0,
+            7,
+            0,
+            2,
+            2,
+            6,
+            1,
+            2
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 54,
+            "TOMATO": 111,
+            "STRAWBERRY": 74,
+            "MELON": 19,
+            "EGG": 75,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594104,
+          "candidate_seat": 0,
+          "candidate_cash": 99370,
+          "opponent_cash": 81929,
+          "margin": 17441,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            0,
+            7,
+            3,
+            7,
+            1,
+            1,
+            2
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "BAKERY",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 51,
+            "TOMATO": 91,
+            "STRAWBERRY": 70,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 241,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594104,
+          "candidate_seat": 1,
+          "candidate_cash": 99370,
+          "opponent_cash": 81929,
+          "margin": 17441,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            0,
+            7,
+            3,
+            7,
+            1,
+            1,
+            2
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "BAKERY",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 51,
+            "TOMATO": 91,
+            "STRAWBERRY": 70,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 241,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594105,
+          "candidate_seat": 0,
+          "candidate_cash": 39556,
+          "opponent_cash": 41077,
+          "margin": -1521,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            3,
+            7
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 34,
+            "CARROT": 344,
+            "TOMATO": 91,
+            "STRAWBERRY": 16,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 1,
+            "WOOL": 88,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594105,
+          "candidate_seat": 1,
+          "candidate_cash": 39556,
+          "opponent_cash": 41077,
+          "margin": -1521,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            3,
+            7
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 34,
+            "CARROT": 344,
+            "TOMATO": 91,
+            "STRAWBERRY": 16,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 1,
+            "WOOL": 88,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594106,
+          "candidate_seat": 0,
+          "candidate_cash": 106356,
+          "opponent_cash": 101722,
+          "margin": 4634,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            3,
+            2,
+            0,
+            2,
+            4,
+            0,
+            6
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 64,
+            "TOMATO": 100,
+            "STRAWBERRY": 186,
+            "MELON": 34,
+            "EGG": 62,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594106,
+          "candidate_seat": 1,
+          "candidate_cash": 106356,
+          "opponent_cash": 101722,
+          "margin": 4634,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            3,
+            2,
+            0,
+            2,
+            4,
+            0,
+            6
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 64,
+            "TOMATO": 100,
+            "STRAWBERRY": 186,
+            "MELON": 34,
+            "EGG": 62,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594107,
+          "candidate_seat": 0,
+          "candidate_cash": 108447,
+          "opponent_cash": 104608,
+          "margin": 3839,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            7,
+            6,
+            1,
+            7,
+            1,
+            3,
+            1
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 43,
+            "CARROT": 36,
+            "TOMATO": 64,
+            "STRAWBERRY": 74,
+            "MELON": 19,
+            "EGG": 83,
+            "MILK": 1,
+            "WOOL": 198,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594107,
+          "candidate_seat": 1,
+          "candidate_cash": 95272,
+          "opponent_cash": 89205,
+          "margin": 6067,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            7,
+            7,
+            4,
+            3,
+            3,
+            3,
+            6
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "YARN_STORE",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 41,
+            "CARROT": 53,
+            "TOMATO": 64,
+            "STRAWBERRY": 49,
+            "MELON": 19,
+            "EGG": 62,
+            "MILK": 177,
+            "WOOL": 236,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594108,
+          "candidate_seat": 0,
+          "candidate_cash": 97134,
+          "opponent_cash": 75472,
+          "margin": 21662,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            2,
+            7,
+            2,
+            0,
+            6,
+            4,
+            3
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 63,
+            "TOMATO": 399,
+            "STRAWBERRY": 39,
+            "MELON": 34,
+            "EGG": 57,
+            "MILK": 1,
+            "WOOL": 148,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594108,
+          "candidate_seat": 1,
+          "candidate_cash": 97134,
+          "opponent_cash": 75472,
+          "margin": 21662,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            2,
+            7,
+            2,
+            0,
+            6,
+            4,
+            3
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 63,
+            "TOMATO": 399,
+            "STRAWBERRY": 39,
+            "MELON": 34,
+            "EGG": 57,
+            "MILK": 1,
+            "WOOL": 148,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594109,
+          "candidate_seat": 0,
+          "candidate_cash": 109823,
+          "opponent_cash": 104185,
+          "margin": 5638,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            3,
+            6,
+            4,
+            4,
+            5,
+            3,
+            0,
+            6
+          ],
+          "town_shops": [
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 41,
+            "CARROT": 72,
+            "TOMATO": 74,
+            "STRAWBERRY": 45,
+            "MELON": 34,
+            "EGG": 55,
+            "MILK": 120,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594109,
+          "candidate_seat": 1,
+          "candidate_cash": 107388,
+          "opponent_cash": 103440,
+          "margin": 3948,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            3,
+            6,
+            4,
+            4,
+            5,
+            3,
+            0,
+            6
+          ],
+          "town_shops": [
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 41,
+            "CARROT": 72,
+            "TOMATO": 74,
+            "STRAWBERRY": 39,
+            "MELON": 34,
+            "EGG": 55,
+            "MILK": 112,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594110,
+          "candidate_seat": 0,
+          "candidate_cash": 114160,
+          "opponent_cash": 109705,
+          "margin": 4455,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            6,
+            3,
+            4,
+            2,
+            4,
+            3,
+            3
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 43,
+            "CARROT": 70,
+            "TOMATO": 126,
+            "STRAWBERRY": 64,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 150,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594110,
+          "candidate_seat": 1,
+          "candidate_cash": 114160,
+          "opponent_cash": 109705,
+          "margin": 4455,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            6,
+            3,
+            4,
+            2,
+            4,
+            3,
+            3
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 43,
+            "CARROT": 70,
+            "TOMATO": 126,
+            "STRAWBERRY": 64,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 150,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594111,
+          "candidate_seat": 0,
+          "candidate_cash": 45965,
+          "opponent_cash": 44727,
+          "margin": 1238,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            4,
+            0,
+            0,
+            1,
+            4,
+            7,
+            5
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "PET_CAFE",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 69,
+            "TOMATO": 91,
+            "STRAWBERRY": 3,
+            "MELON": 34,
+            "EGG": 72,
+            "MILK": 1,
+            "WOOL": 169,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594111,
+          "candidate_seat": 1,
+          "candidate_cash": 46211,
+          "opponent_cash": 43915,
+          "margin": 2296,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            4,
+            0,
+            0,
+            1,
+            4,
+            7,
+            5
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "PET_CAFE",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 69,
+            "TOMATO": 91,
+            "STRAWBERRY": 7,
+            "MELON": 34,
+            "EGG": 72,
+            "MILK": 1,
+            "WOOL": 181,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594112,
+          "candidate_seat": 0,
+          "candidate_cash": 108724,
+          "opponent_cash": 104750,
+          "margin": 3974,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            3,
+            1,
+            3,
+            4,
+            7,
+            6,
+            3
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 62,
+            "TOMATO": 83,
+            "STRAWBERRY": 217,
+            "MELON": 34,
+            "EGG": 59,
+            "MILK": 1,
+            "WOOL": 192,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594112,
+          "candidate_seat": 1,
+          "candidate_cash": 130128,
+          "opponent_cash": 112415,
+          "margin": 17713,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            3,
+            7,
+            3,
+            4,
+            2,
+            6,
+            3
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 68,
+            "TOMATO": 111,
+            "STRAWBERRY": 194,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 32,
+            "WOOL": 148,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594113,
+          "candidate_seat": 0,
+          "candidate_cash": 152450,
+          "opponent_cash": 147823,
+          "margin": 4627,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            6,
+            6,
+            7,
+            1,
+            3,
+            3,
+            2
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 42,
+            "CARROT": 40,
+            "TOMATO": 68,
+            "STRAWBERRY": 185,
+            "MELON": 34,
+            "EGG": 57,
+            "MILK": 220,
+            "WOOL": 232,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594113,
+          "candidate_seat": 1,
+          "candidate_cash": 136532,
+          "opponent_cash": 129947,
+          "margin": 6585,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            6,
+            6,
+            7,
+            1,
+            4,
+            3,
+            5
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 39,
+            "CARROT": 48,
+            "TOMATO": 68,
+            "STRAWBERRY": 74,
+            "MELON": 34,
+            "EGG": 57,
+            "MILK": 191,
+            "WOOL": 232,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594114,
+          "candidate_seat": 0,
+          "candidate_cash": 78791,
+          "opponent_cash": 75188,
+          "margin": 3603,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            2,
+            5,
+            6,
+            4,
+            0,
+            0,
+            6
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 61,
+            "TOMATO": 445,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 59,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594114,
+          "candidate_seat": 1,
+          "candidate_cash": 78791,
+          "opponent_cash": 75188,
+          "margin": 3603,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            2,
+            5,
+            6,
+            4,
+            0,
+            0,
+            6
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "BAKERY",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 61,
+            "TOMATO": 445,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 59,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594115,
+          "candidate_seat": 0,
+          "candidate_cash": 82909,
+          "opponent_cash": 76902,
+          "margin": 6007,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            6,
+            0,
+            2,
+            0,
+            4,
+            1,
+            3
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 68,
+            "TOMATO": 144,
+            "STRAWBERRY": 141,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594115,
+          "candidate_seat": 1,
+          "candidate_cash": 82910,
+          "opponent_cash": 78344,
+          "margin": 4566,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            6,
+            0,
+            2,
+            0,
+            4,
+            1,
+            3
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 68,
+            "TOMATO": 144,
+            "STRAWBERRY": 150,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594116,
+          "candidate_seat": 0,
+          "candidate_cash": 107933,
+          "opponent_cash": 101740,
+          "margin": 6193,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            2,
+            7,
+            1,
+            3,
+            0,
+            3,
+            4
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "PET_CAFE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 54,
+            "TOMATO": 81,
+            "STRAWBERRY": 74,
+            "MELON": 34,
+            "EGG": 63,
+            "MILK": 1,
+            "WOOL": 237,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594116,
+          "candidate_seat": 1,
+          "candidate_cash": 111237,
+          "opponent_cash": 104749,
+          "margin": 6488,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            2,
+            7,
+            1,
+            3,
+            0,
+            3,
+            6
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 48,
+            "TOMATO": 81,
+            "STRAWBERRY": 95,
+            "MELON": 34,
+            "EGG": 63,
+            "MILK": 36,
+            "WOOL": 237,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594117,
+          "candidate_seat": 0,
+          "candidate_cash": 134464,
+          "opponent_cash": 131282,
+          "margin": 3182,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            4,
+            6,
+            6,
+            2,
+            6,
+            6,
+            1
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 23,
+            "CARROT": 65,
+            "TOMATO": 74,
+            "STRAWBERRY": 223,
+            "MELON": 34,
+            "EGG": 54,
+            "MILK": 150,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594117,
+          "candidate_seat": 1,
+          "candidate_cash": 134464,
+          "opponent_cash": 131282,
+          "margin": 3182,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            4,
+            6,
+            6,
+            2,
+            6,
+            6,
+            1
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 23,
+            "CARROT": 65,
+            "TOMATO": 74,
+            "STRAWBERRY": 223,
+            "MELON": 34,
+            "EGG": 54,
+            "MILK": 150,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594118,
+          "candidate_seat": 0,
+          "candidate_cash": 90808,
+          "opponent_cash": 85699,
+          "margin": 5109,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            7,
+            4,
+            7,
+            3,
+            6,
+            5,
+            1
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 40,
+            "CARROT": 56,
+            "TOMATO": 70,
+            "STRAWBERRY": 37,
+            "MELON": 19,
+            "EGG": 64,
+            "MILK": 93,
+            "WOOL": 229,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594118,
+          "candidate_seat": 1,
+          "candidate_cash": 90808,
+          "opponent_cash": 85699,
+          "margin": 5109,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            0,
+            7,
+            4,
+            7,
+            3,
+            6,
+            5,
+            1
+          ],
+          "town_shops": [
+            "BAKERY",
+            "YARN_STORE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 40,
+            "CARROT": 56,
+            "TOMATO": 70,
+            "STRAWBERRY": 37,
+            "MELON": 19,
+            "EGG": 64,
+            "MILK": 93,
+            "WOOL": 229,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594119,
+          "candidate_seat": 0,
+          "candidate_cash": 33558,
+          "opponent_cash": 35651,
+          "margin": -2093,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            4,
+            0,
+            4,
+            4,
+            2,
+            5,
+            4,
+            6
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "BAKERY",
+            "PET_CAFE",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 33,
+            "CARROT": 528,
+            "TOMATO": 83,
+            "STRAWBERRY": 18,
+            "MELON": 34,
+            "EGG": 60,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594119,
+          "candidate_seat": 1,
+          "candidate_cash": 33558,
+          "opponent_cash": 35651,
+          "margin": -2093,
+          "candidate_weed_repairs": 0,
+          "result": "loss",
+          "town_shop_ids": [
+            4,
+            0,
+            4,
+            4,
+            2,
+            5,
+            4,
+            6
+          ],
+          "town_shops": [
+            "PET_CAFE",
+            "BAKERY",
+            "PET_CAFE",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 33,
+            "CARROT": 528,
+            "TOMATO": 83,
+            "STRAWBERRY": 18,
+            "MELON": 34,
+            "EGG": 60,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594120,
+          "candidate_seat": 0,
+          "candidate_cash": 139375,
+          "opponent_cash": 134637,
+          "margin": 4738,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            3,
+            6,
+            3,
+            5,
+            4,
+            5,
+            7,
+            5
+          ],
+          "town_shops": [
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 49,
+            "TOMATO": 100,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 256,
+            "WOOL": 169,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594120,
+          "candidate_seat": 1,
+          "candidate_cash": 139375,
+          "opponent_cash": 134637,
+          "margin": 4738,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            3,
+            6,
+            3,
+            5,
+            4,
+            5,
+            7,
+            5
+          ],
+          "town_shops": [
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 49,
+            "TOMATO": 100,
+            "STRAWBERRY": 28,
+            "MELON": 34,
+            "EGG": 52,
+            "MILK": 256,
+            "WOOL": 169,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594121,
+          "candidate_seat": 0,
+          "candidate_cash": 95409,
+          "opponent_cash": 87617,
+          "margin": 7792,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            7,
+            2,
+            5,
+            0,
+            3,
+            2,
+            7
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 47,
+            "CARROT": 50,
+            "TOMATO": 494,
+            "STRAWBERRY": 37,
+            "MELON": 25,
+            "EGG": 57,
+            "MILK": 220,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594121,
+          "candidate_seat": 1,
+          "candidate_cash": 86448,
+          "opponent_cash": 80362,
+          "margin": 6086,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            5,
+            7,
+            2,
+            5,
+            0,
+            4,
+            2,
+            7
+          ],
+          "town_shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 61,
+            "TOMATO": 494,
+            "STRAWBERRY": 26,
+            "MELON": 19,
+            "EGG": 57,
+            "MILK": 110,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594122,
+          "candidate_seat": 0,
+          "candidate_cash": 154776,
+          "opponent_cash": 154609,
+          "margin": 167,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            3,
+            7,
+            3,
+            0,
+            3,
+            1,
+            6
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "YARN_STORE",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 44,
+            "CARROT": 35,
+            "TOMATO": 64,
+            "STRAWBERRY": 197,
+            "MELON": 34,
+            "EGG": 60,
+            "MILK": 240,
+            "WOOL": 148,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594122,
+          "candidate_seat": 1,
+          "candidate_cash": 135854,
+          "opponent_cash": 130679,
+          "margin": 5175,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            6,
+            3,
+            0,
+            3,
+            0,
+            3,
+            1,
+            6
+          ],
+          "town_shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 35,
+            "TOMATO": 64,
+            "STRAWBERRY": 194,
+            "MELON": 34,
+            "EGG": 68,
+            "MILK": 172,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594123,
+          "candidate_seat": 0,
+          "candidate_cash": 111109,
+          "opponent_cash": 103232,
+          "margin": 7877,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            2,
+            6,
+            3,
+            5,
+            2,
+            6,
+            6
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 52,
+            "TOMATO": 189,
+            "STRAWBERRY": 241,
+            "MELON": 34,
+            "EGG": 62,
+            "MILK": 108,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594123,
+          "candidate_seat": 1,
+          "candidate_cash": 110393,
+          "opponent_cash": 102427,
+          "margin": 7966,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            2,
+            6,
+            3,
+            5,
+            2,
+            6,
+            6
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 52,
+            "TOMATO": 189,
+            "STRAWBERRY": 241,
+            "MELON": 34,
+            "EGG": 62,
+            "MILK": 101,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594124,
+          "candidate_seat": 0,
+          "candidate_cash": 88098,
+          "opponent_cash": 84166,
+          "margin": 3932,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            1,
+            1,
+            5,
+            5,
+            1,
+            7,
+            6
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 47,
+            "CARROT": 35,
+            "TOMATO": 91,
+            "STRAWBERRY": 178,
+            "MELON": 34,
+            "EGG": 141,
+            "MILK": 3,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594124,
+          "candidate_seat": 1,
+          "candidate_cash": 88098,
+          "opponent_cash": 84070,
+          "margin": 4028,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            1,
+            1,
+            5,
+            5,
+            1,
+            7,
+            6
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 48,
+            "CARROT": 35,
+            "TOMATO": 91,
+            "STRAWBERRY": 178,
+            "MELON": 34,
+            "EGG": 141,
+            "MILK": 3,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594125,
+          "candidate_seat": 0,
+          "candidate_cash": 61335,
+          "opponent_cash": 59752,
+          "margin": 1583,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            2,
+            4,
+            4,
+            4,
+            3,
+            1,
+            5
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 42,
+            "CARROT": 284,
+            "TOMATO": 86,
+            "STRAWBERRY": 49,
+            "MELON": 34,
+            "EGG": 55,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594125,
+          "candidate_seat": 1,
+          "candidate_cash": 61323,
+          "opponent_cash": 59764,
+          "margin": 1559,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            2,
+            4,
+            4,
+            4,
+            3,
+            1,
+            5
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 42,
+            "CARROT": 284,
+            "TOMATO": 86,
+            "STRAWBERRY": 49,
+            "MELON": 34,
+            "EGG": 55,
+            "MILK": 1,
+            "WOOL": 1,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594126,
+          "candidate_seat": 0,
+          "candidate_cash": 90538,
+          "opponent_cash": 82982,
+          "margin": 7556,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            0,
+            7,
+            5,
+            6,
+            6,
+            6,
+            0
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "BAKERY",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 42,
+            "CARROT": 48,
+            "TOMATO": 144,
+            "STRAWBERRY": 45,
+            "MELON": 34,
+            "EGG": 63,
+            "MILK": 150,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594126,
+          "candidate_seat": 1,
+          "candidate_cash": 103771,
+          "opponent_cash": 92229,
+          "margin": 11542,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            2,
+            0,
+            6,
+            5,
+            6,
+            6,
+            6,
+            0
+          ],
+          "town_shops": [
+            "FARMERS_MARKET",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 42,
+            "CARROT": 48,
+            "TOMATO": 144,
+            "STRAWBERRY": 148,
+            "MELON": 34,
+            "EGG": 63,
+            "MILK": 158,
+            "WOOL": 1,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "seed": 594127,
+          "candidate_seat": 0,
+          "candidate_cash": 97251,
+          "opponent_cash": 93795,
+          "margin": 3456,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            7,
+            2,
+            4,
+            6,
+            2,
+            6,
+            2
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 37,
+            "CARROT": 71,
+            "TOMATO": 111,
+            "STRAWBERRY": 80,
+            "MELON": 19,
+            "EGG": 52,
+            "MILK": 1,
+            "WOOL": 243,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594127,
+          "candidate_seat": 1,
+          "candidate_cash": 104783,
+          "opponent_cash": 99205,
+          "margin": 5578,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            7,
+            7,
+            2,
+            4,
+            6,
+            3,
+            3,
+            3
+          ],
+          "town_shops": [
+            "YARN_STORE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 40,
+            "CARROT": 63,
+            "TOMATO": 79,
+            "STRAWBERRY": 80,
+            "MELON": 19,
+            "EGG": 52,
+            "MILK": 160,
+            "WOOL": 243,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "seed": 594128,
+          "candidate_seat": 0,
+          "candidate_cash": 92276,
+          "opponent_cash": 89884,
+          "margin": 2392,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            2,
+            5,
+            1,
+            6,
+            1,
+            7,
+            0
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 46,
+            "CARROT": 47,
+            "TOMATO": 144,
+            "STRAWBERRY": 197,
+            "MELON": 34,
+            "EGG": 83,
+            "MILK": 1,
+            "WOOL": 66,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "seed": 594128,
+          "candidate_seat": 1,
+          "candidate_cash": 94522,
+          "opponent_cash": 92212,
+          "margin": 2310,
+          "candidate_weed_repairs": 0,
+          "result": "win",
+          "town_shop_ids": [
+            1,
+            2,
+            5,
+            1,
+            6,
+            1,
+            7,
+            6
+          ],
+          "town_shops": [
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ],
+          "terminal_market_prices": {
+            "WHEAT": 45,
+            "CARROT": 47,
+            "TOMATO": 144,
+            "STRAWBERRY": 212,
+            "MELON": 34,
+            "EGG": 75,
+            "MILK": 1,
+            "WOOL": 66,
+            "FERTILIZER": 4
+          }
+        }
+      ]
+    }
+  ],
+  "min_score_rate": 0.875,
+  "mean_score_rate": 0.875,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "EE9B46453B1AB673E197AFD682C7691ECDBB1596B7C9233BAE8FBE80BCD3E843"
+  },
+  "candidate_artifacts": []
+}

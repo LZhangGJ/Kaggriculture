@@ -1,0 +1,251 @@
+{
+  "config": {
+    "opponent_supply_weight": 0.75,
+    "competitive_sell_weight": 0.5,
+    "sell_horizon_days": 1,
+    "opening_animals": [
+      "COW",
+      "COW",
+      "SHEEP",
+      "GOOSE",
+      "GOOSE"
+    ],
+    "opening_crops": [
+      4,
+      0,
+      0,
+      6,
+      0
+    ],
+    "economic_land": true,
+    "operating_reserve": 100,
+    "crop_harvest_age": [
+      4,
+      3,
+      8,
+      10,
+      10
+    ],
+    "finite_fertilizer": false,
+    "fix_finite_projection": true,
+    "efficient_water": true,
+    "efficient_care": true,
+    "fix_logistics": true,
+    "own_feed_demand_weight": 0,
+    "committed_feed_weight": 0,
+    "existing_replant_weight": 0,
+    "insertion_hire_estimate": false,
+    "reconcile_seed_drift": false,
+    "plan_zero_expiry": true,
+    "cashflow_value_mode": 0,
+    "funded_bundle_mode": 0,
+    "preparation_work": false,
+    "split_service_jobs": false,
+    "regret_schedule": false,
+    "regret_compile": false,
+    "regret_hire_estimate": false,
+    "terminal_deposit_schedule": true,
+    "overflow_idle_dispatch": false,
+    "capital_time_rank": false,
+    "shared_task_atoms_v2": true,
+    "stepwise_recoordination": true,
+    "preparation_pipeline_v2": true,
+    "schedule_value_compare": true,
+    "net_feed_buffer": true,
+    "preparation_spawn_guard": true,
+    "midroute_delivery": true,
+    "resource_aware_exchange": false,
+    "intraday_admission": true,
+    "intraday_procurement": true,
+    "intraday_declared_value": false,
+    "autonomous_start": false,
+    "joint_investment_portfolio": false,
+    "portfolio_crop_calendar": false,
+    "recover_service_inputs": false,
+    "procure_service_inputs": false,
+    "finance_service_inputs": false,
+    "incremental_pickup_repair": true,
+    "shared_service_insertions": true,
+    "intraday_future_workforce": false,
+    "day_consequence_compare": false,
+    "day_value_public_supply": false,
+    "day_value_replan_next_day": false,
+    "idle_task_handoff": false,
+    "exact_schedule_cache": false,
+    "incremental_regret_cost": false,
+    "continuous_market_execution": false,
+    "insert_missing_feed": false
+  },
+  "id": "J7_03",
+  "plan_id": "921e4dc4cb661fc206135e9c75769d4856580479477d0bf7387ce16c292d8063",
+  "plan": [
+    {
+      "family": "REPLACE_NEW",
+      "kind": 3,
+      "amount": 1
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 0,
+      "amount": 4
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 0,
+      "amount": 9
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 3,
+      "amount": 4
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 2,
+      "amount": 1
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 3,
+      "amount": 4
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 3,
+      "amount": 21
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 10,
+      "amount": 1
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 3,
+      "amount": 5
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 7
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 3,
+      "amount": 25
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 3,
+      "amount": 24
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 13
+    },
+    {
+      "family": "REPLACE_NEW",
+      "kind": 0,
+      "amount": 1
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 2,
+      "amount": 2
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 2
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 1
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 6
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 0,
+      "amount": 4
+    },
+    {
+      "family": "DEFER_NEW",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 0,
+      "amount": 1
+    },
+    {
+      "family": "REBUILD_NEW",
+      "kind": 1,
+      "amount": 4
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    },
+    {
+      "family": "KEEP",
+      "kind": -1,
+      "amount": 0
+    }
+  ],
+  "training_score": {
+    "min_opponent_wins": 6,
+    "wins": 52,
+    "sum_margin": 803041.0,
+    "opponent_wins": [
+      8,
+      8,
+      8,
+      8,
+      6,
+      8,
+      6
+    ],
+    "opponent_sum_margin": [
+      90845.0,
+      152218.0,
+      106687.0,
+      349120.0,
+      13939.0,
+      67044.0,
+      23188.0
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_RECALCULATED_FROM_ROWS",
+  "results": {
+    "development": {
+      "games": 66,
+      "parent_wins": 46,
+      "joint_wins": 49,
+      "rescued": 4,
+      "lost_old_wins": 1,
+      "mean_margin_delta": -3401.318181818182
+    },
+    "confirmation": {
+      "games": 110,
+      "parent_wins": 79,
+      "joint_wins": 101,
+      "rescued": 22,
+      "lost_old_wins": 0,
+      "mean_margin_delta": 1442.2818181818182
+    },
+    "overall": {
+      "games": 176,
+      "parent_wins": 125,
+      "joint_wins": 150,
+      "rescued": 26,
+      "lost_old_wins": 1,
+      "mean_margin_delta": -374.0681818181818
+    }
+  }
+}

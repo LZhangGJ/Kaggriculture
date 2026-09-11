@@ -1,0 +1,24 @@
+{
+  "method": "lambdarank; KEEP included; relative utility bins with linear gains",
+  "data": "train16",
+  "best_iteration": 2,
+  "train": {
+    "groups": 1557,
+    "keep_win": 0.7906229929351317,
+    "selected_win": 0.7989723827874117,
+    "oracle_win": 0.8580603725112396,
+    "selected_utility_gain": 0.010983516768222418,
+    "changes": 142
+  },
+  "validation": {
+    "groups": 526,
+    "keep_win": 0.7604562737642585,
+    "selected_win": 0.7604562737642585,
+    "oracle_win": 0.8288973384030418,
+    "selected_utility_gain": -0.004562707996837189,
+    "changes": 60
+  },
+  "features": 356,
+  "online_policy_test_required": true,
+  "model_sha256": "95c3ca77e513c775cf2ce91d0e0b80c33a2734476c1ce44988b5274fe1d1ed21"
+}

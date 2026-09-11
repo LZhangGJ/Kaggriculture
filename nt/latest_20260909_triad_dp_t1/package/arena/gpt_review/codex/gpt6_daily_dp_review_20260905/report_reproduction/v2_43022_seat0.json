@@ -1,0 +1,838 @@
+{
+  "version": "v2",
+  "seed": 43022,
+  "seat": 0,
+  "group": "v2_report_first50",
+  "status": "PASS",
+  "cash": 175615.0,
+  "expected_cash": null,
+  "exact_report_match": null,
+  "steps": 719,
+  "opponent_cash": 3000,
+  "action_mean_ms": 2.9699222523277373,
+  "action_max_ms": 214.91799998329952,
+  "action_seconds": 2.135374099423643,
+  "wall_seconds": 2.718885299982503,
+  "days": [
+    {
+      "day": 0,
+      "cash": 3000.0,
+      "land": 1,
+      "assets": {},
+      "plan": {
+        "day": 0,
+        "chosen": {
+          "MELON": 11,
+          "CARROT": 1,
+          "WHEAT": 9,
+          "SHEEP": 1,
+          "COW": 3
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.18
+      }
+    },
+    {
+      "day": 1,
+      "cash": 298.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 9,
+        "CARROT": 1,
+        "MELON": 11,
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "plan": {
+        "day": 1,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.18553000000000003
+      }
+    },
+    {
+      "day": 2,
+      "cash": 522.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 9,
+        "CARROT": 1,
+        "MELON": 11,
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "plan": {
+        "day": 2,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.18133000000000005
+      }
+    },
+    {
+      "day": 3,
+      "cash": 850.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 9,
+        "CARROT": 1,
+        "MELON": 11,
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "plan": {
+        "day": 3,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.17725000000000005
+      }
+    },
+    {
+      "day": 4,
+      "cash": 1165.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 9,
+        "MELON": 11,
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "plan": {
+        "day": 4,
+        "chosen": {
+          "SHEEP": 1
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.17338000000000003
+      }
+    },
+    {
+      "day": 5,
+      "cash": 691.0,
+      "land": 1,
+      "assets": {
+        "SHEEP": 2,
+        "MELON": 11,
+        "COW": 3
+      },
+      "plan": {
+        "day": 5,
+        "chosen": {
+          "MELON": 1,
+          "WHEAT": 5,
+          "SHEEP": 3
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.1727536
+      }
+    },
+    {
+      "day": 6,
+      "cash": 311.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 5,
+        "MELON": 12,
+        "SHEEP": 5,
+        "COW": 3
+      },
+      "plan": {
+        "day": 6,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.17909500000000003
+      }
+    },
+    {
+      "day": 7,
+      "cash": 2349.0,
+      "land": 1,
+      "assets": {
+        "WHEAT": 5,
+        "MELON": 12,
+        "SHEEP": 5,
+        "COW": 3
+      },
+      "plan": {
+        "day": 7,
+        "chosen": {
+          "STRAWBERRY": 2,
+          "CARROT": 5,
+          "WHEAT": 17,
+          "COW": 1
+        },
+        "land": 1,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.15386500000000003
+      }
+    },
+    {
+      "day": 8,
+      "cash": 151.0,
+      "land": 2,
+      "assets": {
+        "WHEAT": 22,
+        "MELON": 12,
+        "SHEEP": 5,
+        "CARROT": 5,
+        "COW": 4,
+        "STRAWBERRY": 2
+      },
+      "plan": {
+        "day": 8,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.13097
+      }
+    },
+    {
+      "day": 9,
+      "cash": 717.0,
+      "land": 2,
+      "assets": {
+        "WHEAT": 22,
+        "MELON": 12,
+        "SHEEP": 5,
+        "CARROT": 5,
+        "COW": 4,
+        "STRAWBERRY": 2
+      },
+      "plan": {
+        "day": 9,
+        "chosen": {
+          "STRAWBERRY": 11,
+          "WHEAT": 8,
+          "COW": 3
+        },
+        "land": 1,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.08882999999999999
+      }
+    },
+    {
+      "day": 10,
+      "cash": 41.0,
+      "land": 3,
+      "assets": {
+        "MELON": 12,
+        "SHEEP": 5,
+        "WHEAT": 21,
+        "CARROT": 5,
+        "COW": 7,
+        "STRAWBERRY": 6
+      },
+      "plan": {
+        "day": 10,
+        "chosen": {
+          "STRAWBERRY": 16,
+          "WHEAT": 3
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.106704
+      }
+    },
+    {
+      "day": 11,
+      "cash": 9520.0,
+      "land": 3,
+      "assets": {
+        "WHEAT": 24,
+        "STRAWBERRY": 19,
+        "MELON": 1,
+        "SHEEP": 5,
+        "COW": 7
+      },
+      "plan": {
+        "day": 11,
+        "chosen": {
+          "STRAWBERRY": 14,
+          "COW": 5
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 12,
+      "cash": 16252.0,
+      "land": 3,
+      "assets": {
+        "WHEAT": 7,
+        "STRAWBERRY": 33,
+        "MELON": 1,
+        "SHEEP": 5,
+        "COW": 12
+      },
+      "plan": {
+        "day": 12,
+        "chosen": {
+          "MELON": 4,
+          "STRAWBERRY": 13
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 13,
+      "cash": 21913.0,
+      "land": 3,
+      "assets": {
+        "WHEAT": 7,
+        "STRAWBERRY": 46,
+        "MELON": 5,
+        "SHEEP": 5,
+        "COW": 12
+      },
+      "plan": {
+        "day": 13,
+        "chosen": {
+          "MELON": 3,
+          "STRAWBERRY": 8
+        },
+        "land": 1,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 14,
+      "cash": 19052.0,
+      "land": 4,
+      "assets": {
+        "WHEAT": 3,
+        "STRAWBERRY": 54,
+        "MELON": 8,
+        "SHEEP": 5,
+        "COW": 12
+      },
+      "plan": {
+        "day": 14,
+        "chosen": {
+          "MELON": 2
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 15,
+      "cash": 19916.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 10,
+        "SHEEP": 5,
+        "COW": 12
+      },
+      "plan": {
+        "day": 15,
+        "chosen": {
+          "SHEEP": 3
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 16,
+      "cash": 23474.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "SHEEP": 8,
+        "MELON": 9,
+        "COW": 12
+      },
+      "plan": {
+        "day": 16,
+        "chosen": {
+          "MELON": 3,
+          "TOMATO": 1,
+          "WHEAT": 1,
+          "SHEEP": 5
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": false,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 17,
+      "cash": 23270.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 1,
+        "WHEAT": 1
+      },
+      "plan": {
+        "day": 17,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 18,
+      "cash": 30408.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 1,
+        "WHEAT": 1
+      },
+      "plan": {
+        "day": 18,
+        "chosen": {
+          "TOMATO": 1
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 19,
+      "cash": 34298.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2,
+        "WHEAT": 1
+      },
+      "plan": {
+        "day": 19,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 20,
+      "cash": 35176.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2,
+        "WHEAT": 1
+      },
+      "plan": {
+        "day": 20,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 21,
+      "cash": 39593.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 21,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 22,
+      "cash": 46880.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 12,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 22,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 23,
+      "cash": 55277.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 8,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 23,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 24,
+      "cash": 72824.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 54,
+        "MELON": 5,
+        "SHEEP": 13,
+        "COW": 12,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 24,
+        "chosen": {
+          "WHEAT": 1
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 25,
+      "cash": 91685.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 52,
+        "MELON": 3,
+        "SHEEP": 13,
+        "COW": 12,
+        "WEED": 2,
+        "WHEAT": 1,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 25,
+        "chosen": {
+          "CARROT": 2,
+          "WHEAT": 4
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 26,
+      "cash": 111935.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 52,
+        "MELON": 3,
+        "SHEEP": 13,
+        "COW": 12,
+        "CARROT": 2,
+        "WHEAT": 5,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 26,
+        "chosen": {
+          "WHEAT": 4
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 27,
+      "cash": 121446.0,
+      "land": 4,
+      "assets": {
+        "STRAWBERRY": 48,
+        "MELON": 3,
+        "SHEEP": 13,
+        "WHEAT": 9,
+        "COW": 12,
+        "CARROT": 2,
+        "WEED": 4,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 27,
+        "chosen": {
+          "CARROT": 6,
+          "WHEAT": 4
+        },
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 28,
+      "cash": 139402.0,
+      "land": 4,
+      "assets": {
+        "WHEAT": 13,
+        "WEED": 13,
+        "SHEEP": 13,
+        "STRAWBERRY": 35,
+        "COW": 12,
+        "CARROT": 8,
+        "TOMATO": 2
+      },
+      "plan": {
+        "day": 28,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    },
+    {
+      "day": 29,
+      "cash": 151970.0,
+      "land": 4,
+      "assets": {
+        "WHEAT": 12,
+        "WEED": 28,
+        "SHEEP": 13,
+        "STRAWBERRY": 21,
+        "COW": 12,
+        "CARROT": 6,
+        "TOMATO": 1
+      },
+      "plan": {
+        "day": 29,
+        "chosen": {},
+        "land": 0,
+        "fert_mode": {
+          "WHEAT": true,
+          "CARROT": false,
+          "TOMATO": true,
+          "STRAWBERRY": true,
+          "MELON": false
+        },
+        "capital_discount": 0.04
+      }
+    }
+  ],
+  "forecast_probe": {
+    "day": 8,
+    "tile": [
+      5,
+      3
+    ],
+    "crop": "STRAWBERRY",
+    "old_yield": 0,
+    "changed_yield": 4,
+    "all_forecast_arrays_identical": true
+  }
+}

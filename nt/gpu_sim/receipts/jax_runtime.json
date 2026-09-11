@@ -1,0 +1,22 @@
+{
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "float32_matmul_2048": {
+    "compile_and_first_s": 1.2024231739999998,
+    "result_sample": 1.0,
+    "runs": 12,
+    "steady_median_s": 0.001263103499999474,
+    "steady_min_s": 0.001212575000000271
+  },
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "jaxlib": "0.11.0",
+  "lock_sha256": "22f9422ee010ff8870be66de4f69d50ca0fbad029edc6f8592c30265304d3997",
+  "ok": true,
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "schema": "kaggriculture_jax_runtime_v1",
+  "verified_at": "2026-08-10T17:05:18.708112+00:00"
+}

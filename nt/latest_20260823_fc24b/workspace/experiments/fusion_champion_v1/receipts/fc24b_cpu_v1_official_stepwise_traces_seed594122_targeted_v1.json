@@ -1,0 +1,76 @@
+{
+  "schema": "kaggriculture_official_stepwise_parity_traces_v2",
+  "generated_at_utc": "2026-08-23T05:48:08.101451+00:00",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    594122
+  ],
+  "seat_swapped": true,
+  "candidate": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\artifacts\\fc24b_cpu_v1\\main.py",
+  "candidate_sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B",
+  "pool": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\fusion_champion_v1\\configs\\fc24b_targeted_official_parity_pool_v1.json",
+  "pool_sha256": "A5EF1DCB012B382D63F8235546EB51A23A17FCFE24EA0655501ECCECE227132E",
+  "opponents": [
+    {
+      "name": "local_prt_v6",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55541953_prt_v6\\main.py",
+      "sha256": "759C7BD4A5249CB752236F5A292FD65673E0BB371FF4B8657D00079CAE26BA83"
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\submission\\55655402_rayk_k320_adaptive_rank1\\main.py",
+      "sha256": "6C709F6D3CE6CF221A9495DE7E716FCD1B660E3BBC8EE5679B63233D0265A812"
+    }
+  ],
+  "traces": [
+    {
+      "opponent": "local_prt_v6",
+      "seed": 594122,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594122_targeted_v1/candidate_local_prt_v6_seat0_seed594122.jsonl.gz",
+      "file_sha256": "F812250BF09075744B1FB120A532106729DBEBB809CDD57A04C7102022393AA3",
+      "frames": 720,
+      "terminal_reward": [
+        154776.0,
+        154609.0
+      ]
+    },
+    {
+      "opponent": "local_prt_v6",
+      "seed": 594122,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594122_targeted_v1/candidate_local_prt_v6_seat1_seed594122.jsonl.gz",
+      "file_sha256": "767E91BFB8CCC7989A4B1E1FAFCBBB6DDCBA938352A0118F50910426CD77972E",
+      "frames": 720,
+      "terminal_reward": [
+        130679.0,
+        135854.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594122,
+      "candidate_seat": 0,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594122_targeted_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed594122.jsonl.gz",
+      "file_sha256": "966C893949C39778AB2DEF4D3DE69AFAF260D7699FB4B4B9F4050D58571355FC",
+      "frames": 720,
+      "terminal_reward": [
+        144946.0,
+        144910.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 594122,
+      "candidate_seat": 1,
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594122_targeted_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed594122.jsonl.gz",
+      "file_sha256": "873C5A441B64E2B57DCF16DD6C768A214C3999DD8325806A43CAB44ED14BA4DF",
+      "frames": 720,
+      "terminal_reward": [
+        143340.0,
+        146512.0
+      ]
+    }
+  ],
+  "ok": true
+}

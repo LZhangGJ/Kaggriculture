@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "output": "REPRO WHEAT old_total=29 old_bug_removed=2 fixed_remaining=0\nREPRO CARROT old_total=29 old_bug_removed=2 fixed_remaining=0\nREPRO TOMATO old_total=14 old_bug_removed=7 fixed_remaining=0\nREPRO STRAWBERRY old_total=12 old_bug_removed=8 fixed_remaining=0\nREPRO MELON old_total=12 old_bug_removed=6 fixed_remaining=0\nSTREAMS 98 REPEAT_REGRESSIONS 18\nLIFECYCLE_GAMES 8 EDITS 92 HELD_ANIMAL_DAYS 19\nPASS checks=11077\n",
+  "binary_sha256": "df429b803e26f6b384b882256f1cee68d1642c956e165025087a827f87720f18"
+}

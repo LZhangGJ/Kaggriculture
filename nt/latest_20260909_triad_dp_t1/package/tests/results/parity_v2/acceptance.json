@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "official rules plus exported candidate action parity; not proof on all states, not opponent Python parity",
+  "binary_hash": "544eb0bdc3f8c988b22d50a14a53c2b0fa7e49441ebf49eff3e31d4e9045c774",
+  "source_hash": "01ec8c1910ea24eb6d49db4476df5029c4f9c4a00ef10a4db61fb076ccdac33b",
+  "rows": [
+    {
+      "seed": 260908100,
+      "seat": 0,
+      "opponent": "g001",
+      "transitions": 719,
+      "cash": 112668.0,
+      "opponent_cash": 100204.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    },
+    {
+      "seed": 260908100,
+      "seat": 1,
+      "opponent": "g001",
+      "transitions": 719,
+      "cash": 99860.0,
+      "opponent_cash": 81629.0,
+      "state_mismatches": 0,
+      "wrapper_action_mismatches": 0
+    }
+  ],
+  "seconds": 5.9981849950002015
+}

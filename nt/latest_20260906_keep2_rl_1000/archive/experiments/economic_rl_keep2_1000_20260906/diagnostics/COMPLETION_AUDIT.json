@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "new_training_games": 627200,
+  "cumulative_training_games": 896000,
+  "monitor_games": 205800,
+  "independent_games": 40600,
+  "independent_manifest_files": 119,
+  "stages": {
+    "400": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "500": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "600": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "700": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "800": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "900": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    },
+    "1000": {
+      "status": "PASS",
+      "manifest_files": 2636,
+      "new_training_games": 89600,
+      "monitor_games": 29400
+    }
+  },
+  "original_artifacts_preserved": {
+    "100": 2644,
+    "200": 2637,
+    "300": 2637
+  },
+  "note": "Computer-side completion only. The assistant must additionally verify delivery of all seven milestone reports in the conversation before completing the goal."
+}

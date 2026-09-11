@@ -1,0 +1,150 @@
+{
+  "files": {
+    "RESULTS.json": {
+      "bytes": 19770,
+      "sha256": "ab888a702dbe1824861fba887e015915c381449e491372395aa620bd29a5176b",
+      "source": "experiments/r2p16_latest_submissions_20260910/RESULTS.json"
+    },
+    "DOWNLOADS.json": {
+      "bytes": 2620,
+      "sha256": "1a710d24378f9627d80a52861e294dca122db226f8f083ce0c64333dba4114fd",
+      "source": "experiments/r2p16_latest_submissions_20260910/DOWNLOADS.json"
+    },
+    "HANDOFF_workflow.json": {
+      "bytes": 617,
+      "sha256": "33e78ae5da31428a9d87e1a2f998c0c16317987e216a4d21f9b52a65deba24f5",
+      "source": "experiments/r2p16_latest_submissions_20260910/HANDOFF_workflow.json"
+    },
+    "HANDOFF_recovery.json": {
+      "bytes": 653,
+      "sha256": "de2e5bca541f82e132b33fa30d5f68cc4681f2f4e52fe7d5f9b90ad1e2f05d7a",
+      "source": "experiments/r2p16_latest_submissions_20260910/HANDOFF_recovery.json"
+    },
+    "latest25/PROTOCOL.json": {
+      "bytes": 42508,
+      "sha256": "ad35230cf21903bd1bb19779426b4281ea326c240e20a83927a495601c4d357a",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/PROTOCOL.json"
+    },
+    "latest25/rows.json.gz": {
+      "bytes": 60779,
+      "sha256": "dc9ff10cacae4023f741377b489185d576a9d594adf9c78d21f64c0f2fc3799a",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/rows.json",
+      "uncompressed_bytes": 1326751,
+      "uncompressed_sha256": "bda46d7412e75e40e69a7549c50a5ed3c1613be93a8b5618da7a8a1d1d2f37e9"
+    },
+    "latest25/SUMMARY.json": {
+      "bytes": 1030,
+      "sha256": "f6d8c2737768f6e39512700c17844c31e44946c6c2e507a51676c8e67323c76b",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/SUMMARY.json"
+    },
+    "latest25/QA.json": {
+      "bytes": 47791,
+      "sha256": "e4d67e69f0265f63fe63fe28544c9bf740a59bbd2c61be4bb53bd509c3f545d5",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/QA.json"
+    },
+    "latest25/CAUSAL_AUDIT.json": {
+      "bytes": 229079,
+      "sha256": "90ba2b2145de2c61e4e538eb3d0febb04fb85381c31d0bdf532d421b320b818b",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/CAUSAL_AUDIT.json"
+    },
+    "latest25/PAIRED.json": {
+      "bytes": 27943,
+      "sha256": "bda3140fdfabb1d769c5a4916c5c0c7a6de13fd034671066fcfc7eff82c18a6b",
+      "source": "experiments/r2p16_latest_submissions_20260910/runs/latest25/PAIRED.json"
+    },
+    "previous11/PROTOCOL.json": {
+      "bytes": 38918,
+      "sha256": "8d623de4b2236d6c2d134cf0989c624622c148851069e9a5e8e940bcfb50fbb2",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/pool_r3/PROTOCOL.json"
+    },
+    "previous11/rows.json.gz": {
+      "bytes": 54581,
+      "sha256": "8e86017b5b6203440afc57388ea6f3f089aa8d0c7fb686e8659b595218a2c7ee",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/pool_r3/rows.json",
+      "uncompressed_bytes": 1456268,
+      "uncompressed_sha256": "75c7d5c3e2e9854cd5ac1f1837192e680832596d9ae183161fafcf28bba74190"
+    },
+    "previous11/SUMMARY.json": {
+      "bytes": 1070,
+      "sha256": "93d2e202111524315e471c05c3362813ca2b70e4214740ffebaf176a9bdab594",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/pool_r3/SUMMARY.json"
+    },
+    "previous11/QA.json": {
+      "bytes": 50955,
+      "sha256": "69ae2289f8ef7b7218b3319b5fc7988e6fb4a9b9e2349ba5311fed634fc3240a",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/pool_r3/QA.json"
+    },
+    "recovery_regression/PROTOCOL.json": {
+      "bytes": 24238,
+      "sha256": "bf79d7fc8e3b51d33a6b7390d3649dfe83fc1e70579b92174088cc3e9f4d9ab6",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/regression_r3/PROTOCOL.json"
+    },
+    "recovery_regression/rows.json": {
+      "bytes": 211861,
+      "sha256": "f3c905061b93827f5758ea0401e380e835c34a4601ec30b92d6cf76c8576a6d3",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/regression_r3/rows.json"
+    },
+    "recovery_regression/SUMMARY.json": {
+      "bytes": 1025,
+      "sha256": "4da99594dd6e39981a43180a0fb41f76fe11b35a9c9913c6f195af60b4c92c9e",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/regression_r3/SUMMARY.json"
+    },
+    "recovery_regression/QA.json": {
+      "bytes": 7511,
+      "sha256": "2bc4c8a6c198da85a959500ad954e9fc7ee152c2408bbdbc5bfdb867f09ba0d2",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/regression_r3/QA.json"
+    },
+    "recovery_regression/CAUSAL_AUDIT.json": {
+      "bytes": 19491,
+      "sha256": "97c629222ffb2133d6cfbf497252a2ec09b76dab19417235823f94836f9ea94e",
+      "source": "experiments/r2p16_route_recovery_20260910/runs/regression_r3/CAUSAL_AUDIT.json"
+    },
+    "workflow_expanded/SUMMARY.json": {
+      "bytes": 116317,
+      "sha256": "4ed1a07e24292a124758039a567d1a2c6929419cf155ca8c7a8b68ac16184305",
+      "source": "experiments/r2p16_workflow_expanded_20260910/SUMMARY.json"
+    },
+    "workflow_expanded/VALIDATED_ROWS.json.gz": {
+      "bytes": 371488,
+      "sha256": "b329a5646d9fe03ea184991b34f0c7aa9f4d2550b0396a4c7c80ac87f5d8f999",
+      "source": "experiments/r2p16_workflow_expanded_20260910/VALIDATED_ROWS.json",
+      "uncompressed_bytes": 9346710,
+      "uncompressed_sha256": "1f79d3859188181d486da3c78167e3fc6ace06ae485068c350c8c5b92c201692"
+    },
+    "workflow_expanded/QA.json": {
+      "bytes": 1485,
+      "sha256": "0ff61ffd5fc25a6440e9c61622e367113470604419baca45a21b30a76a543c56",
+      "source": "experiments/r2p16_workflow_expanded_20260910/QA.json"
+    },
+    "workflow_expanded/SEEDS.json": {
+      "bytes": 7502,
+      "sha256": "986b89f40bb1ac45c39a04df6b2ae3877fb77e157392ef7160ba18a15bc749da",
+      "source": "experiments/r2p16_workflow_expanded_20260910/SEEDS.json"
+    },
+    "workflow_expanded/INDEPENDENT_QA.json": {
+      "bytes": 419,
+      "sha256": "fe574866396d0f7c3a2e5f37b739b6104812ee4ec548cd93e7af9bf26e933228",
+      "source": "experiments/r2p16_workflow_expanded_20260910/INDEPENDENT_QA.json"
+    },
+    "economics_stage/POOL_VALIDATION.json": {
+      "bytes": 21207,
+      "sha256": "41315bc84e17f3265b5e693b326de342926539e02cd2174aec72b00e3caf1cca",
+      "source": "Kaggriculture/nt/latest_20260910_r2p16_route_economics/POOL_VALIDATION.json"
+    },
+    "README_ZH.md": {
+      "bytes": 3353,
+      "sha256": "ebf10b01a5abb790bb225c852de0442a1aa12ad8830ccbe35c77d60a74a2a0aa",
+      "source": "authored for this handoff"
+    },
+    "verify.py": {
+      "bytes": 3607,
+      "sha256": "c827874deac593c21b82078e80f071e91c3e4fad673dcf1e8233f4c2fb47694a",
+      "source": "authored for this handoff"
+    },
+    ".gitattributes": {
+      "bytes": 41,
+      "sha256": "5995f9b78f2c52ddc1f50556f73fe98d8e3678d670c5a372ff01b966aebc4159",
+      "source": "authored for this handoff"
+    }
+  }
+}

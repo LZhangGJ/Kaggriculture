@@ -1,0 +1,1811 @@
+{
+  "receipt_id": "M36D_OFFICIAL_1327_MILESTONE_PARITY_V1",
+  "status": "PASS",
+  "measured_at": "2026-08-19T06:24:44.368804+00:00",
+  "official_package_version": "1.32.7",
+  "episode_id": 94051618,
+  "seed": 1905263333,
+  "player": 1,
+  "opponent": "NullOpponent",
+  "frames_compared_including_initial": 720,
+  "exact_full_state_stepwise_parity": true,
+  "all_done": true,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "official_final_bank": 98857,
+  "jax_final_bank": 98857,
+  "terminal_cash_delta": 0,
+  "official_replay_seconds": 1.792308599993703,
+  "milestone_schema": {
+    "crop_tiles": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON"
+    ],
+    "crop_harvestable_units": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON"
+    ],
+    "animals": [
+      "GOOSE",
+      "COW",
+      "SHEEP"
+    ],
+    "animal_held_products": [
+      "GOOSE",
+      "COW",
+      "SHEEP"
+    ],
+    "shed": [
+      "WHEAT",
+      "CARROT",
+      "TOMATO",
+      "STRAWBERRY",
+      "MELON",
+      "EGG",
+      "MILK",
+      "WOOL",
+      "FERTILIZER",
+      "GOOSE",
+      "COW",
+      "SHEEP"
+    ],
+    "backlog": "controller-internal; official simulator has no backlog field"
+  },
+  "milestones": [
+    {
+      "state_step": 1,
+      "official_1327": {
+        "state_step": 1,
+        "cash": 25,
+        "units": 6,
+        "hands": 5,
+        "land": 1,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 0,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 1,
+        "cash": 25,
+        "units": 6,
+        "hands": 5,
+        "land": 1,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 0,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 0,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {},
+        "unmet_animal_service_target": [
+          0,
+          2,
+          2
+        ],
+        "unmet_crop_target": [
+          7,
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 1,
+        "cash": 22,
+        "units": 6,
+        "hands": 5,
+        "land": 1,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 0,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": 3,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=+3"
+      ]
+    },
+    {
+      "state_step": 144,
+      "official_1327": {
+        "state_step": 144,
+        "cash": 536,
+        "units": 1,
+        "hands": 0,
+        "land": 1,
+        "crop_tiles": [
+          2,
+          0,
+          0,
+          2,
+          12
+        ],
+        "crop_harvestable_units": [
+          2,
+          0,
+          0,
+          0,
+          12
+        ],
+        "animals": [
+          0,
+          3,
+          2
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          5
+        ],
+        "shed": [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 3,
+          "carried": 0,
+          "available_animal_tiles": 5,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 144,
+        "cash": 536,
+        "units": 1,
+        "hands": 0,
+        "land": 1,
+        "crop_tiles": [
+          2,
+          0,
+          0,
+          2,
+          12
+        ],
+        "crop_harvestable_units": [
+          2,
+          0,
+          0,
+          0,
+          12
+        ],
+        "animals": [
+          0,
+          3,
+          2
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          5
+        ],
+        "shed": [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 3,
+          "carried": 0,
+          "available_animal_tiles": 5,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 1,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "18": 1
+        },
+        "unmet_animal_service_target": [
+          0,
+          1,
+          0
+        ],
+        "unmet_crop_target": [
+          1,
+          0,
+          0,
+          4,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 144,
+        "cash": 286,
+        "units": 1,
+        "hands": 0,
+        "land": 1,
+        "crop_tiles": [
+          3,
+          0,
+          0,
+          4,
+          12
+        ],
+        "crop_harvestable_units": [
+          3,
+          0,
+          0,
+          0,
+          12
+        ],
+        "animals": [
+          0,
+          4,
+          2
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          12
+        ],
+        "shed": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 5,
+          "carried": 0,
+          "available_animal_tiles": 6,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": 250,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -1,
+          0,
+          0,
+          -2,
+          0
+        ],
+        "animals": [
+          0,
+          -1,
+          0
+        ],
+        "shed": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=+250",
+        "crop_tile_delta=[-1, 0, 0, -2, 0]",
+        "animal_delta=[0, -1, 0]",
+        "shed_delta=[2, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0]"
+      ]
+    },
+    {
+      "state_step": 264,
+      "official_1327": {
+        "state_step": 264,
+        "cash": 14076,
+        "units": 1,
+        "hands": 0,
+        "land": 2,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          3
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          3
+        ],
+        "shed": [
+          18,
+          0,
+          0,
+          0,
+          18,
+          0,
+          4,
+          0,
+          7,
+          0,
+          0,
+          2
+        ],
+        "fertilizer": {
+          "shed": 7,
+          "carried": 0,
+          "available_animal_tiles": 9,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 264,
+        "cash": 14076,
+        "units": 1,
+        "hands": 0,
+        "land": 2,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          3
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          3
+        ],
+        "shed": [
+          18,
+          0,
+          0,
+          0,
+          18,
+          0,
+          4,
+          0,
+          7,
+          0,
+          0,
+          2
+        ],
+        "fertilizer": {
+          "shed": 7,
+          "carried": 0,
+          "available_animal_tiles": 9,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 2,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "18": 2
+        },
+        "unmet_animal_service_target": [
+          0,
+          0,
+          5
+        ],
+        "unmet_crop_target": [
+          15,
+          0,
+          0,
+          36,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 264,
+        "cash": 15034,
+        "units": 1,
+        "hands": 0,
+        "land": 2,
+        "crop_tiles": [
+          10,
+          0,
+          0,
+          19,
+          0
+        ],
+        "crop_harvestable_units": [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          6
+        ],
+        "animal_held_products": [
+          0,
+          6,
+          0
+        ],
+        "shed": [
+          18,
+          0,
+          0,
+          0,
+          12,
+          0,
+          6,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 12,
+          "carried": 0,
+          "available_animal_tiles": 12,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": -958,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -10,
+          0,
+          0,
+          -13,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          -3
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          -2,
+          0,
+          -5,
+          0,
+          0,
+          2
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=-958",
+        "crop_tile_delta=[-10, 0, 0, -13, 0]",
+        "animal_delta=[0, 0, -3]",
+        "shed_delta=[0, 0, 0, 0, 6, 0, -2, 0, -5, 0, 0, 2]"
+      ]
+    },
+    {
+      "state_step": 288,
+      "official_1327": {
+        "state_step": 288,
+        "cash": 13551,
+        "units": 1,
+        "hands": 0,
+        "land": 3,
+        "crop_tiles": [
+          9,
+          0,
+          0,
+          24,
+          0
+        ],
+        "crop_harvestable_units": [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          6
+        ],
+        "animal_held_products": [
+          0,
+          6,
+          4
+        ],
+        "shed": [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          8,
+          0,
+          0,
+          2
+        ],
+        "fertilizer": {
+          "shed": 8,
+          "carried": 0,
+          "available_animal_tiles": 12,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 288,
+        "cash": 13551,
+        "units": 1,
+        "hands": 0,
+        "land": 3,
+        "crop_tiles": [
+          9,
+          0,
+          0,
+          24,
+          0
+        ],
+        "crop_harvestable_units": [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          6
+        ],
+        "animal_held_products": [
+          0,
+          6,
+          4
+        ],
+        "shed": [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          8,
+          0,
+          0,
+          2
+        ],
+        "fertilizer": {
+          "shed": 8,
+          "carried": 0,
+          "available_animal_tiles": 12,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 2,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "18": 2
+        },
+        "unmet_animal_service_target": [
+          0,
+          0,
+          4
+        ],
+        "unmet_crop_target": [
+          17,
+          0,
+          0,
+          18,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 288,
+        "cash": 10960,
+        "units": 1,
+        "hands": 0,
+        "land": 3,
+        "crop_tiles": [
+          15,
+          0,
+          0,
+          42,
+          0
+        ],
+        "crop_harvestable_units": [
+          23,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          8
+        ],
+        "animal_held_products": [
+          0,
+          6,
+          8
+        ],
+        "shed": [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          24,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 24,
+          "carried": 0,
+          "available_animal_tiles": 14,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": 2591,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -6,
+          0,
+          0,
+          -18,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          -2
+        ],
+        "shed": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -6,
+          3,
+          -16,
+          0,
+          0,
+          2
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=+2591",
+        "crop_tile_delta=[-6, 0, 0, -18, 0]",
+        "animal_delta=[0, 0, -2]",
+        "shed_delta=[3, 0, 0, 0, 0, 0, -6, 3, -16, 0, 0, 2]"
+      ]
+    },
+    {
+      "state_step": 480,
+      "official_1327": {
+        "state_step": 480,
+        "cash": 35075,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          21,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          8,
+          29
+        ],
+        "shed": [
+          36,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 10,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 480,
+        "cash": 35075,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          21,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          8,
+          29
+        ],
+        "shed": [
+          36,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 10,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 4,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "18": 1,
+          "5": 3
+        },
+        "unmet_animal_service_target": [
+          0,
+          0,
+          0
+        ],
+        "unmet_crop_target": [
+          28,
+          0,
+          0,
+          21,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 480,
+        "cash": 45930,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          28,
+          0,
+          0,
+          42,
+          0
+        ],
+        "crop_harvestable_units": [
+          43,
+          0,
+          0,
+          20,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          6,
+          12
+        ],
+        "shed": [
+          27,
+          0,
+          0,
+          18,
+          0,
+          0,
+          12,
+          6,
+          15,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 15,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 6
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": -10855,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -28,
+          0,
+          0,
+          -21,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          9,
+          0,
+          0,
+          -16,
+          0,
+          0,
+          -12,
+          -6,
+          -5,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=-10855",
+        "crop_tile_delta=[-28, 0, 0, -21, 0]",
+        "shed_delta=[9, 0, 0, -16, 0, 0, -12, -6, -5, 0, 0, 0]"
+      ]
+    },
+    {
+      "state_step": 600,
+      "official_1327": {
+        "state_step": 600,
+        "cash": 65045,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          31,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          10,
+          12
+        ],
+        "shed": [
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 4,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 600,
+        "cash": 65045,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          31,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          10,
+          12
+        ],
+        "shed": [
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 4,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 1,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "5": 1
+        },
+        "unmet_animal_service_target": [
+          0,
+          0,
+          0
+        ],
+        "unmet_crop_target": [
+          26,
+          3,
+          0,
+          8,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 600,
+        "cash": 78483,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          24,
+          3,
+          0,
+          25,
+          0
+        ],
+        "crop_harvestable_units": [
+          36,
+          4,
+          0,
+          31,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          12,
+          7
+        ],
+        "shed": [
+          24,
+          0,
+          0,
+          16,
+          0,
+          0,
+          6,
+          13,
+          11,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 11,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 8
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": -13438,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -24,
+          -3,
+          0,
+          -8,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          11,
+          0,
+          0,
+          -16,
+          0,
+          0,
+          -6,
+          -13,
+          -7,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=-13438",
+        "crop_tile_delta=[-24, -3, 0, -8, 0]",
+        "shed_delta=[11, 0, 0, -16, 0, 0, -6, -13, -7, 0, 0, 0]"
+      ]
+    },
+    {
+      "state_step": 696,
+      "official_1327": {
+        "state_step": 696,
+        "cash": 92349,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          7,
+          16
+        ],
+        "shed": [
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 696,
+        "cash": 92349,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          7,
+          16
+        ],
+        "shed": [
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 2,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {
+          "5": 2
+        },
+        "unmet_animal_service_target": [
+          0,
+          0,
+          0
+        ],
+        "unmet_crop_target": [
+          17,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 696,
+        "cash": 83026,
+        "units": 1,
+        "hands": 0,
+        "land": 4,
+        "crop_tiles": [
+          17,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          17,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          6
+        ],
+        "animal_held_products": [
+          0,
+          12,
+          12
+        ],
+        "shed": [
+          74,
+          5,
+          0,
+          0,
+          0,
+          0,
+          6,
+          6,
+          8,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 8,
+          "carried": 0,
+          "available_animal_tiles": 12,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": 9323,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -17,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          6
+        ],
+        "shed": [
+          -57,
+          -5,
+          0,
+          0,
+          0,
+          0,
+          -6,
+          -6,
+          -8,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=+9323",
+        "crop_tile_delta=[-17, 0, 0, 0, 0]",
+        "animal_delta=[0, 0, 6]",
+        "shed_delta=[-57, -5, 0, 0, 0, 0, -6, -6, -8, 0, 0, 0]"
+      ]
+    },
+    {
+      "state_step": 719,
+      "official_1327": {
+        "state_step": 719,
+        "cash": 98857,
+        "units": 9,
+        "hands": 8,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "jax": {
+        "state_step": 719,
+        "cash": 98857,
+        "units": 9,
+        "hands": 8,
+        "land": 4,
+        "crop_tiles": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          12
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 18,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "exact": true,
+      "controller_backlog": {
+        "active_market_tasks": 0,
+        "active_projects": 10,
+        "active_route_cards": 0,
+        "active_unit_tasks": 0,
+        "obligation_cap_hits": 0,
+        "project_cap_hits": 0,
+        "unexplained_effect_failures": 0,
+        "unit_task_type_counts": {},
+        "unmet_animal_service_target": [
+          0,
+          0,
+          0
+        ],
+        "unmet_crop_target": [
+          17,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "gold_replay_official": {
+        "state_step": 719,
+        "cash": 90326,
+        "units": 9,
+        "hands": 8,
+        "land": 4,
+        "crop_tiles": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crop_harvestable_units": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          6,
+          6
+        ],
+        "animal_held_products": [
+          0,
+          0,
+          0
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fertilizer": {
+          "shed": 0,
+          "carried": 0,
+          "available_animal_tiles": 12,
+          "fertilized_crop_tiles": 0
+        }
+      },
+      "candidate_minus_gold": {
+        "cash": 8531,
+        "hands": 0,
+        "land": 0,
+        "crop_tiles": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "animals": [
+          0,
+          0,
+          6
+        ],
+        "shed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difference_reasons": [
+        "cash_delta=+8531",
+        "crop_tile_delta=[-1, 0, 0, 0, 0]",
+        "animal_delta=[0, 0, 6]"
+      ]
+    }
+  ],
+  "economic_search_gates": {
+    "gate_72261": true,
+    "gate_81294": true,
+    "authorized_neighborhood_candidates": 10000,
+    "freeze_recommendation": "ELIGIBLE_FOR_10000_REVIEW",
+    "candidate_160000_authorized": false
+  },
+  "trace": "experiments/project_route_search_v2/artifacts/traces/m38_route_cards_trace_v3.npz",
+  "trace_sha256": "E5D85DD90925BD7ABFCAC56DB994B06E08B1708B70034A6C529152B439F43280",
+  "generation_receipt_sha256": "9DD59AF19883CB11BE5869583A1912CCDAFEDD53289E3D7864C46E436213C97E",
+  "gold_replay_sha256": "1F1169C92814DC27AB60AF2CEB24BC30309E20A634FBA04433960AA6B7193AC1",
+  "truth_boundary": "Official/JAX equality is exact for the controller action trace, same seed, seat and NullOpponent. Gold Replay rows are official observations from the same seed but a different opponent/action trajectory, so their deltas are semantic capacity diagnostics rather than a causal policy comparison."
+}

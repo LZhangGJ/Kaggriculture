@@ -1,0 +1,16 @@
+{
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-fno-strict-aliasing",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/animal_unit.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/animal_unit_noalias/probe"
+  ],
+  "returncode": 0,
+  "seconds": 1.7957647939999788,
+  "run_returncode": 0,
+  "stderr": ""
+}

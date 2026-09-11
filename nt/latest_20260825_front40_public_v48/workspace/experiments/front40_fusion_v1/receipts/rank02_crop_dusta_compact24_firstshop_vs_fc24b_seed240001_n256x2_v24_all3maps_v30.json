@@ -1,0 +1,351 @@
+{
+  "schema": "kaggriculture.front40_fusion.first-shop-route-map-evaluation.v1",
+  "generated_at_utc": "2026-08-23T21:44:53.952180+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank02_crop_dusta_compact24_firstshop_vs_fc24b_seed240001_n256x2_v24.npz",
+  "screen_route_ids": [
+    25,
+    12,
+    62,
+    13,
+    44,
+    43,
+    47,
+    26,
+    52,
+    51,
+    76,
+    16,
+    39,
+    34,
+    33,
+    56,
+    35,
+    71,
+    21,
+    64,
+    22,
+    67,
+    38,
+    92
+  ],
+  "oracle": {
+    "games": 512,
+    "wins": 462,
+    "win_rate": 0.90234375,
+    "mean_margin": 14456.3046875,
+    "median_margin": 12011.5,
+    "hard_counter_total": 0
+  },
+  "route_maps": [
+    {
+      "route_map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_robust_unrestricted_minimax_win_all3panels_v29.json",
+      "route_ids": [
+        25,
+        39,
+        25,
+        16,
+        22,
+        44,
+        12,
+        38
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 212,
+        "win_rate": 0.4140625,
+        "mean_margin": -4813.447265625,
+        "median_margin": -4447.5,
+        "hard_counter_total": 0
+      },
+      "by_first_shop": [
+        {
+          "games": 86,
+          "wins": 34,
+          "win_rate": 0.3953488372093023,
+          "mean_margin": -4264.441860465116,
+          "median_margin": -2555.5,
+          "hard_counter_total": 0,
+          "shop_id": 0,
+          "route_id": 25
+        },
+        {
+          "games": 71,
+          "wins": 21,
+          "win_rate": 0.29577464788732394,
+          "mean_margin": -11599.323943661971,
+          "median_margin": -6824.0,
+          "hard_counter_total": 0,
+          "shop_id": 1,
+          "route_id": 39
+        },
+        {
+          "games": 57,
+          "wins": 29,
+          "win_rate": 0.5087719298245614,
+          "mean_margin": -5175.596491228071,
+          "median_margin": 249.0,
+          "hard_counter_total": 0,
+          "shop_id": 2,
+          "route_id": 25
+        },
+        {
+          "games": 47,
+          "wins": 8,
+          "win_rate": 0.1702127659574468,
+          "mean_margin": -10620.595744680852,
+          "median_margin": -12502.0,
+          "hard_counter_total": 0,
+          "shop_id": 3,
+          "route_id": 16
+        },
+        {
+          "games": 83,
+          "wins": 39,
+          "win_rate": 0.46987951807228917,
+          "mean_margin": -1650.5421686746988,
+          "median_margin": -3078.0,
+          "hard_counter_total": 0,
+          "shop_id": 4,
+          "route_id": 22
+        },
+        {
+          "games": 49,
+          "wins": 33,
+          "win_rate": 0.673469387755102,
+          "mean_margin": 6179.102040816327,
+          "median_margin": 6332.0,
+          "hard_counter_total": 0,
+          "shop_id": 5,
+          "route_id": 44
+        },
+        {
+          "games": 56,
+          "wins": 10,
+          "win_rate": 0.17857142857142858,
+          "mean_margin": -14207.392857142857,
+          "median_margin": -16902.0,
+          "hard_counter_total": 0,
+          "shop_id": 6,
+          "route_id": 12
+        },
+        {
+          "games": 63,
+          "wins": 38,
+          "win_rate": 0.6031746031746031,
+          "mean_margin": 2378.0793650793653,
+          "median_margin": 10032.0,
+          "hard_counter_total": 0,
+          "shop_id": 7,
+          "route_id": 38
+        }
+      ]
+    },
+    {
+      "route_map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_robust_unrestricted_stable_win_all3panels_v29.json",
+      "route_ids": [
+        25,
+        39,
+        25,
+        16,
+        25,
+        44,
+        12,
+        13
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 211,
+        "win_rate": 0.412109375,
+        "mean_margin": -5200.72265625,
+        "median_margin": -4894.5,
+        "hard_counter_total": 0
+      },
+      "by_first_shop": [
+        {
+          "games": 86,
+          "wins": 34,
+          "win_rate": 0.3953488372093023,
+          "mean_margin": -4264.441860465116,
+          "median_margin": -2555.5,
+          "hard_counter_total": 0,
+          "shop_id": 0,
+          "route_id": 25
+        },
+        {
+          "games": 71,
+          "wins": 21,
+          "win_rate": 0.29577464788732394,
+          "mean_margin": -11599.323943661971,
+          "median_margin": -6824.0,
+          "hard_counter_total": 0,
+          "shop_id": 1,
+          "route_id": 39
+        },
+        {
+          "games": 57,
+          "wins": 29,
+          "win_rate": 0.5087719298245614,
+          "mean_margin": -5175.596491228071,
+          "median_margin": 249.0,
+          "hard_counter_total": 0,
+          "shop_id": 2,
+          "route_id": 25
+        },
+        {
+          "games": 47,
+          "wins": 8,
+          "win_rate": 0.1702127659574468,
+          "mean_margin": -10620.595744680852,
+          "median_margin": -12502.0,
+          "hard_counter_total": 0,
+          "shop_id": 3,
+          "route_id": 16
+        },
+        {
+          "games": 83,
+          "wins": 34,
+          "win_rate": 0.40963855421686746,
+          "mean_margin": -7155.915662650603,
+          "median_margin": -4673.0,
+          "hard_counter_total": 0,
+          "shop_id": 4,
+          "route_id": 25
+        },
+        {
+          "games": 49,
+          "wins": 33,
+          "win_rate": 0.673469387755102,
+          "mean_margin": 6179.102040816327,
+          "median_margin": 6332.0,
+          "hard_counter_total": 0,
+          "shop_id": 5,
+          "route_id": 44
+        },
+        {
+          "games": 56,
+          "wins": 10,
+          "win_rate": 0.17857142857142858,
+          "mean_margin": -14207.392857142857,
+          "median_margin": -16902.0,
+          "hard_counter_total": 0,
+          "shop_id": 6,
+          "route_id": 12
+        },
+        {
+          "games": 63,
+          "wins": 42,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": 6483.809523809524,
+          "median_margin": 8959.0,
+          "hard_counter_total": 0,
+          "shop_id": 7,
+          "route_id": 13
+        }
+      ]
+    },
+    {
+      "route_map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_robust_unrestricted_wilson_all3panels_v29.json",
+      "route_ids": [
+        25,
+        39,
+        25,
+        16,
+        25,
+        44,
+        12,
+        13
+      ],
+      "aggregate": {
+        "games": 512,
+        "wins": 211,
+        "win_rate": 0.412109375,
+        "mean_margin": -5200.72265625,
+        "median_margin": -4894.5,
+        "hard_counter_total": 0
+      },
+      "by_first_shop": [
+        {
+          "games": 86,
+          "wins": 34,
+          "win_rate": 0.3953488372093023,
+          "mean_margin": -4264.441860465116,
+          "median_margin": -2555.5,
+          "hard_counter_total": 0,
+          "shop_id": 0,
+          "route_id": 25
+        },
+        {
+          "games": 71,
+          "wins": 21,
+          "win_rate": 0.29577464788732394,
+          "mean_margin": -11599.323943661971,
+          "median_margin": -6824.0,
+          "hard_counter_total": 0,
+          "shop_id": 1,
+          "route_id": 39
+        },
+        {
+          "games": 57,
+          "wins": 29,
+          "win_rate": 0.5087719298245614,
+          "mean_margin": -5175.596491228071,
+          "median_margin": 249.0,
+          "hard_counter_total": 0,
+          "shop_id": 2,
+          "route_id": 25
+        },
+        {
+          "games": 47,
+          "wins": 8,
+          "win_rate": 0.1702127659574468,
+          "mean_margin": -10620.595744680852,
+          "median_margin": -12502.0,
+          "hard_counter_total": 0,
+          "shop_id": 3,
+          "route_id": 16
+        },
+        {
+          "games": 83,
+          "wins": 34,
+          "win_rate": 0.40963855421686746,
+          "mean_margin": -7155.915662650603,
+          "median_margin": -4673.0,
+          "hard_counter_total": 0,
+          "shop_id": 4,
+          "route_id": 25
+        },
+        {
+          "games": 49,
+          "wins": 33,
+          "win_rate": 0.673469387755102,
+          "mean_margin": 6179.102040816327,
+          "median_margin": 6332.0,
+          "hard_counter_total": 0,
+          "shop_id": 5,
+          "route_id": 44
+        },
+        {
+          "games": 56,
+          "wins": 10,
+          "win_rate": 0.17857142857142858,
+          "mean_margin": -14207.392857142857,
+          "median_margin": -16902.0,
+          "hard_counter_total": 0,
+          "shop_id": 6,
+          "route_id": 12
+        },
+        {
+          "games": 63,
+          "wins": 42,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": 6483.809523809524,
+          "median_margin": 8959.0,
+          "hard_counter_total": 0,
+          "shop_id": 7,
+          "route_id": 13
+        }
+      ]
+    }
+  ]
+}

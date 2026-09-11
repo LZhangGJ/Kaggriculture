@@ -1,0 +1,91 @@
+{
+  "schema": "kaggriculture.front40_fusion.frozen-replay-family.v1",
+  "status": "FROZEN",
+  "name": "rank17_sarthak_v15",
+  "family": "rank17_first_and_second_public_shop_routed_family",
+  "source": {
+    "leaderboard_rank": 17,
+    "team_name": "Sarthak Sharma",
+    "submission_id": 55697862,
+    "trace_bank_receipt": "experiments/front40_fusion_v1/receipts/rank17_sarthak_trace_bank_v1.json",
+    "route_count": 65,
+    "behavior_unique_routes": 65,
+    "overlap_with_previous_rank_trace_families": 0
+  },
+  "runtime": {
+    "trace_bank": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_trace_bank_v1.npz",
+    "first_shop_map": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_three_panel_pooled_firstshop_v7.json",
+    "second_shop_map": "experiments/front40_fusion_v1/artifacts/rank17_sarthak_secondshop_exactprefix_cross_v10.json",
+    "policy_source": "experiments/hasegawa_jax_v3/src/hasegawa_jax_v3/agent.py",
+    "online_runner": "experiments/front40_fusion_v1/tools/run_trace_candidates_vs_fc24b_stepwise.py",
+    "router_mode": "FIRST_AND_SECOND_PUBLIC_TOWN_SHOP_EXACT_PREFIX",
+    "public_state_only": true,
+    "identity_routing": false,
+    "future_event_access": false,
+    "replay_id_routing": false
+  },
+  "route_ids": {
+    "first_shop_order": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "first_shop_routes": [62, 62, 62, 47, 62, 2, 47, 19],
+    "runtime_routes": [2, 7, 14, 19, 25, 30, 42, 47, 49, 62]
+  },
+  "development": {
+    "all_route_screen": "experiments/front40_fusion_v1/receipts/rank17_sarthak_all65_vs_fc24b_screen_seed832001_n64x2_v1.json",
+    "candidate_screen": "experiments/front40_fusion_v1/receipts/rank17_sarthak_candidates24_vs_fc24b_screen_seed840001_n128x2_v2.json",
+    "large_counterfactual_screen": "experiments/front40_fusion_v1/receipts/rank17_sarthak_candidates24_vs_fc24b_screen_seed848001_n512x2_v6.json",
+    "best_fixed_first_panel_win_rate": 0.5546875,
+    "first_shop_map_first_panel_win_rate": 0.734375,
+    "first_shop_map_three_panel_win_rates": [0.6640625, 0.7109375, 0.6767578125],
+    "second_shop_exact_prefix_pairs": 22,
+    "second_shop_exact_prefix_checks": 86,
+    "second_shop_same_seed_confirm": {
+      "baseline_wins": 659,
+      "enhanced_wins": 717,
+      "games": 1024,
+      "win_gain": 58
+    },
+    "hard_counter_total": 0
+  },
+  "independent_validation": {
+    "arena_receipts": [
+      "experiments/front40_fusion_v1/receipts/rank17_sarthak_secondshop_online_seed856001_n512x2_v12.json",
+      "experiments/front40_fusion_v1/receipts/rank17_sarthak_final_pair_online_seed864001_n512x2_independent_v14.json"
+    ],
+    "seed_starts": [856001, 864001],
+    "games": 2048,
+    "wins": 1446,
+    "win_rate": 0.7060546875,
+    "panel_win_rates": [0.7001953125, 0.7119140625],
+    "seat0_wins": 721,
+    "seat0_games": 1024,
+    "seat0_win_rate": 0.7041015625,
+    "seat1_wins": 725,
+    "seat1_games": 1024,
+    "seat1_win_rate": 0.7080078125,
+    "mean_margin": 805.81787109375,
+    "all_719_steps": true,
+    "hard_counter_total": 0,
+    "sent_illegal_actions": 0,
+    "note": "invalid_intent_total counts Replay intents replaced by the public-state legal guard before simulator execution."
+  },
+  "known_weakness": {
+    "description": "Average margin is only modestly positive and Yarn-related branches remain high variance.",
+    "decision": "Freeze after the second-shop gain repeated on two independent panels; do not add unsupported third-shop specialization."
+  },
+  "sha256": {
+    "trace_bank": "7CF268ED4B927077A1DBC0A0B38268A4FD4C1ADB426FD0D61D2E2CBE3C0D490F",
+    "first_shop_map": "CB87B667B9EF3CCDF5DE3E0A1059FDF60991A0E5F1FCA90E4EA6733C05CADF7E",
+    "second_shop_map": "A939D0FF7096D70D514CA33C49B27867ECD9F5046673B9CD7BE73FCE6E527D22",
+    "online_runner": "F5C4570D094933A7277E748A53621139BA74410046C2DCC6CAC29B9A06C04669",
+    "policy_source": "845967F049D4F64D8BB2FFA933F084B055497EA56D8A7416F52943FDABE4CF09"
+  }
+}

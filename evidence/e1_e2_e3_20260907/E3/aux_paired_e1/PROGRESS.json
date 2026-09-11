@@ -1,0 +1,2705 @@
+{
+  "status": "RUNNING",
+  "history": [
+    {
+      "step": 1,
+      "raw_win_rate": 0.4419642857142857,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.38971343636512756,
+      "approx_kl": 8.499016775085197e-05,
+      "update_seconds": 0.8291378430003533,
+      "elapsed": 11.403696046996629
+    },
+    {
+      "step": 2,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.6785714285714286,
+      "mean_shaped_reward": -0.3026466965675354,
+      "approx_kl": 0.0030230481875192167,
+      "update_seconds": 0.8470613600002252,
+      "elapsed": 22.68714299599742
+    },
+    {
+      "step": 3,
+      "raw_win_rate": 0.4732142857142857,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.2871749699115753,
+      "approx_kl": 0.0003071473246465182,
+      "update_seconds": 0.8532246929971734,
+      "elapsed": 34.017145758996776
+    },
+    {
+      "step": 4,
+      "raw_win_rate": 0.4642857142857143,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.3862685561180115,
+      "approx_kl": 0.001209290155853217,
+      "update_seconds": 0.9473201549990335,
+      "elapsed": 45.65886847999718
+    },
+    {
+      "step": 5,
+      "raw_win_rate": 0.4419642857142857,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.4354511797428131,
+      "approx_kl": 0.0010297206929431987,
+      "update_seconds": 0.8210141489980742,
+      "elapsed": 57.045597339998494
+    },
+    {
+      "step": 6,
+      "raw_win_rate": 0.4732142857142857,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.41315245628356934,
+      "approx_kl": 0.0012152840017363143,
+      "update_seconds": 0.8908552229986526,
+      "elapsed": 68.84439587599991
+    },
+    {
+      "step": 7,
+      "raw_win_rate": 0.39285714285714285,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": -0.3866569697856903,
+      "approx_kl": 0.00423205956842621,
+      "update_seconds": 0.9240898329990159,
+      "elapsed": 80.46828412499963
+    },
+    {
+      "step": 8,
+      "raw_win_rate": 0.45089285714285715,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.36196646094322205,
+      "approx_kl": 0.0018348864750302194,
+      "update_seconds": 0.9399825769978634,
+      "elapsed": 91.2096163999995
+    },
+    {
+      "step": 9,
+      "raw_win_rate": 0.4642857142857143,
+      "keep_win_rate": 0.6651785714285714,
+      "mean_shaped_reward": -0.4138161242008209,
+      "approx_kl": 0.0009770742318610684,
+      "update_seconds": 0.879178031002084,
+      "elapsed": 101.96749584799909
+    },
+    {
+      "step": 10,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.7008928571428571,
+      "mean_shaped_reward": -0.3507138788700104,
+      "approx_kl": 0.0015418685045666461,
+      "update_seconds": 0.971565711999574,
+      "elapsed": 113.3865970889965
+    },
+    {
+      "step": 11,
+      "raw_win_rate": 0.45535714285714285,
+      "keep_win_rate": 0.7142857142857143,
+      "mean_shaped_reward": -0.5362846255302429,
+      "approx_kl": 0.0009292520105092754,
+      "update_seconds": 0.9185221789994102,
+      "elapsed": 124.1187584429972
+    },
+    {
+      "step": 12,
+      "raw_win_rate": 0.4732142857142857,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.3873778283596039,
+      "approx_kl": 0.0010498065677755233,
+      "update_seconds": 0.8388311009985046,
+      "elapsed": 134.9339962289996
+    },
+    {
+      "step": 13,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.7053571428571429,
+      "mean_shaped_reward": -0.4243413805961609,
+      "approx_kl": 0.002612234350711905,
+      "update_seconds": 0.9139910759986378,
+      "elapsed": 145.7839414989976
+    },
+    {
+      "step": 14,
+      "raw_win_rate": 0.48660714285714285,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.2500821053981781,
+      "approx_kl": 0.00037783714406817396,
+      "update_seconds": 0.9680235579980945,
+      "elapsed": 156.53850918099852
+    },
+    {
+      "step": 15,
+      "raw_win_rate": 0.42410714285714285,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": -0.2674849033355713,
+      "approx_kl": 7.178331417532848e-05,
+      "update_seconds": 0.8580850150028709,
+      "elapsed": 167.21807739299766
+    },
+    {
+      "step": 16,
+      "raw_win_rate": 0.375,
+      "keep_win_rate": 0.5446428571428571,
+      "mean_shaped_reward": -0.3514835238456726,
+      "approx_kl": 0.00024197202457039237,
+      "update_seconds": 0.9709972950004158,
+      "elapsed": 178.20590685299976
+    },
+    {
+      "step": 17,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.21388302743434906,
+      "approx_kl": 0.0007985567905193202,
+      "update_seconds": 0.9920425709970004,
+      "elapsed": 188.94134365599893
+    },
+    {
+      "step": 18,
+      "raw_win_rate": 0.4419642857142857,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": -0.23345276713371277,
+      "approx_kl": 0.0003828973545504744,
+      "update_seconds": 0.9835622270002204,
+      "elapsed": 199.70903295699827
+    },
+    {
+      "step": 19,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.28563573956489563,
+      "approx_kl": 0.0004347938080073959,
+      "update_seconds": 1.004153113000939,
+      "elapsed": 210.77994774799663
+    },
+    {
+      "step": 20,
+      "raw_win_rate": 0.46875,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.35150179266929626,
+      "approx_kl": 0.0004634122787078825,
+      "update_seconds": 0.97474850800063,
+      "elapsed": 221.56863359999988
+    },
+    {
+      "step": 21,
+      "raw_win_rate": 0.49107142857142855,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.36742469668388367,
+      "approx_kl": 0.0004678071043102932,
+      "update_seconds": 0.91942640599882,
+      "elapsed": 232.31679511499897
+    },
+    {
+      "step": 22,
+      "raw_win_rate": 0.4330357142857143,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.4052523076534271,
+      "approx_kl": 0.003037225142093581,
+      "update_seconds": 0.9134762899993802,
+      "elapsed": 243.2381849129997
+    },
+    {
+      "step": 23,
+      "raw_win_rate": 0.45535714285714285,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.3031122386455536,
+      "approx_kl": 0.0017210615185298658,
+      "update_seconds": 0.871012805000646,
+      "elapsed": 253.88160960599998
+    },
+    {
+      "step": 24,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.6830357142857143,
+      "mean_shaped_reward": -0.30261510610580444,
+      "approx_kl": 0.00022850942288514333,
+      "update_seconds": 0.8716939170008118,
+      "elapsed": 264.6358421799996
+    },
+    {
+      "step": 25,
+      "raw_win_rate": 0.5714285714285714,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.12162799388170242,
+      "approx_kl": 0.0009759139404459502,
+      "update_seconds": 0.9048935910032014,
+      "elapsed": 275.57863891599845
+    },
+    {
+      "step": 26,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.27551546692848206,
+      "approx_kl": 0.0002551984947592436,
+      "update_seconds": 0.8467928990030487,
+      "elapsed": 286.6665200619973
+    },
+    {
+      "step": 27,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.5669642857142857,
+      "mean_shaped_reward": -0.14130719006061554,
+      "approx_kl": 0.0002182662092397314,
+      "update_seconds": 0.9737334020028356,
+      "elapsed": 298.1534703819998
+    },
+    {
+      "step": 28,
+      "raw_win_rate": 0.45982142857142855,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.43875715136528015,
+      "approx_kl": 0.0005954812014966218,
+      "update_seconds": 0.9089848399999028,
+      "elapsed": 310.0027939779975
+    },
+    {
+      "step": 29,
+      "raw_win_rate": 0.4375,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.41502687335014343,
+      "approx_kl": 0.0007921965830413642,
+      "update_seconds": 0.8872331819984538,
+      "elapsed": 321.4111733949976
+    },
+    {
+      "step": 30,
+      "raw_win_rate": 0.44642857142857145,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.30591821670532227,
+      "approx_kl": 0.000807028106129204,
+      "update_seconds": 0.8319169739988865,
+      "elapsed": 332.7408259240001
+    },
+    {
+      "step": 31,
+      "raw_win_rate": 0.4955357142857143,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.29288026690483093,
+      "approx_kl": 8.794861542158016e-05,
+      "update_seconds": 0.8778853730000264,
+      "elapsed": 344.7625878859981
+    },
+    {
+      "step": 32,
+      "raw_win_rate": 0.45535714285714285,
+      "keep_win_rate": 0.5178571428571429,
+      "mean_shaped_reward": -0.13175569474697113,
+      "approx_kl": 0.00021825818889974598,
+      "update_seconds": 0.8082894649996888,
+      "elapsed": 356.3361055839996
+    },
+    {
+      "step": 33,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.6919642857142857,
+      "mean_shaped_reward": -0.3328598439693451,
+      "approx_kl": 0.0005650501131069895,
+      "update_seconds": 0.8872134320008627,
+      "elapsed": 367.71526577499753
+    },
+    {
+      "step": 34,
+      "raw_win_rate": 0.4419642857142857,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": -0.2747143805027008,
+      "approx_kl": 0.0028918042057355137,
+      "update_seconds": 0.9829163750000589,
+      "elapsed": 379.8087006299975
+    },
+    {
+      "step": 35,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.22319601476192474,
+      "approx_kl": 0.0027334741896040556,
+      "update_seconds": 0.912560229000519,
+      "elapsed": 391.24660064099953
+    },
+    {
+      "step": 36,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.25139501690864563,
+      "approx_kl": 0.0011429970554261318,
+      "update_seconds": 0.9673657940002158,
+      "elapsed": 402.715303347999
+    },
+    {
+      "step": 37,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.20644530653953552,
+      "approx_kl": 0.001679871472623515,
+      "update_seconds": 0.9285130299977027,
+      "elapsed": 414.41650594599923
+    },
+    {
+      "step": 38,
+      "raw_win_rate": 0.46875,
+      "keep_win_rate": 0.5625,
+      "mean_shaped_reward": -0.19212652742862701,
+      "approx_kl": 0.001554379338682299,
+      "update_seconds": 0.9471047289989656,
+      "elapsed": 425.54451148299995
+    },
+    {
+      "step": 39,
+      "raw_win_rate": 0.5267857142857143,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": -0.09423879534006119,
+      "approx_kl": 0.0020145888131339906,
+      "update_seconds": 0.8953216339978098,
+      "elapsed": 436.1870612249986
+    },
+    {
+      "step": 40,
+      "raw_win_rate": 0.5714285714285714,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": -0.0004780548042617738,
+      "approx_kl": 0.001015822682391369,
+      "update_seconds": 0.9373175789987727,
+      "elapsed": 447.09442134899655
+    },
+    {
+      "step": 41,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.13963866233825684,
+      "approx_kl": 0.0011922076102977585,
+      "update_seconds": 0.9943986059988674,
+      "elapsed": 457.9314501409972
+    },
+    {
+      "step": 42,
+      "raw_win_rate": 0.5714285714285714,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.10450028628110886,
+      "approx_kl": 0.0023485545730468835,
+      "update_seconds": 0.9900436549978622,
+      "elapsed": 468.6415518379981
+    },
+    {
+      "step": 43,
+      "raw_win_rate": 0.42857142857142855,
+      "keep_win_rate": 0.48214285714285715,
+      "mean_shaped_reward": -0.11160700768232346,
+      "approx_kl": 0.0023123670478569364,
+      "update_seconds": 0.9756588720010768,
+      "elapsed": 479.665167662999
+    },
+    {
+      "step": 44,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": -0.2936893105506897,
+      "approx_kl": 0.003318510324365995,
+      "update_seconds": 1.031023018000269,
+      "elapsed": 490.5365280099977
+    },
+    {
+      "step": 45,
+      "raw_win_rate": 0.44642857142857145,
+      "keep_win_rate": 0.5580357142857143,
+      "mean_shaped_reward": -0.2310493439435959,
+      "approx_kl": 0.0008912778973916866,
+      "update_seconds": 1.0069356779968075,
+      "elapsed": 501.3877456349983
+    },
+    {
+      "step": 46,
+      "raw_win_rate": 0.4732142857142857,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.1616302728652954,
+      "approx_kl": 0.0021925059344080683,
+      "update_seconds": 1.0414618569993763,
+      "elapsed": 512.4233172609966
+    },
+    {
+      "step": 47,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6830357142857143,
+      "mean_shaped_reward": -0.2936302721500397,
+      "approx_kl": 0.0008495483760130129,
+      "update_seconds": 0.9213669489981839,
+      "elapsed": 523.120809729
+    },
+    {
+      "step": 48,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.07594061642885208,
+      "approx_kl": 0.0012833788350830916,
+      "update_seconds": 0.9319041420021676,
+      "elapsed": 533.8909156169975
+    },
+    {
+      "step": 49,
+      "raw_win_rate": 0.48660714285714285,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.23431332409381866,
+      "approx_kl": 0.0010381261170606235,
+      "update_seconds": 0.9008611509998445,
+      "elapsed": 544.7932851549995
+    },
+    {
+      "step": 50,
+      "raw_win_rate": 0.49107142857142855,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.3022773265838623,
+      "approx_kl": 0.00045260553547673714,
+      "update_seconds": 0.8798611790007271,
+      "elapsed": 555.4013430399973
+    },
+    {
+      "step": 51,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": -0.248463436961174,
+      "approx_kl": 0.0007752317198434779,
+      "update_seconds": 0.7833204140006274,
+      "elapsed": 566.1753332679982
+    },
+    {
+      "step": 52,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.18369518220424652,
+      "approx_kl": 0.0012065649572799788,
+      "update_seconds": 0.9316458120010793,
+      "elapsed": 577.7012777109994
+    },
+    {
+      "step": 53,
+      "raw_win_rate": 0.5267857142857143,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.0482109896838665,
+      "approx_kl": 0.0008090128037274634,
+      "update_seconds": 0.8940344460024789,
+      "elapsed": 589.0629160429999
+    },
+    {
+      "step": 54,
+      "raw_win_rate": 0.44642857142857145,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.28410083055496216,
+      "approx_kl": 0.0024173925464378416,
+      "update_seconds": 0.926769631998468,
+      "elapsed": 601.0420379629977
+    },
+    {
+      "step": 55,
+      "raw_win_rate": 0.46875,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.3774213492870331,
+      "approx_kl": 0.0008619258596952708,
+      "update_seconds": 0.8623562669999956,
+      "elapsed": 612.6625558969972
+    },
+    {
+      "step": 56,
+      "raw_win_rate": 0.48214285714285715,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.23127222061157227,
+      "approx_kl": 0.0010203800768232732,
+      "update_seconds": 0.7766840750009578,
+      "elapsed": 623.9378891759989
+    },
+    {
+      "step": 57,
+      "raw_win_rate": 0.5714285714285714,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.16926884651184082,
+      "approx_kl": 0.0014972323632647666,
+      "update_seconds": 0.8494669430001522,
+      "elapsed": 635.4087751039988
+    },
+    {
+      "step": 58,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.15957298874855042,
+      "approx_kl": 0.0030875803806912666,
+      "update_seconds": 0.7942410590003419,
+      "elapsed": 647.0718451839966
+    },
+    {
+      "step": 59,
+      "raw_win_rate": 0.5267857142857143,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.048215221613645554,
+      "approx_kl": 0.0023162383224855287,
+      "update_seconds": 0.9421432810013357,
+      "elapsed": 658.5674053069997
+    },
+    {
+      "step": 60,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.2035379558801651,
+      "approx_kl": 0.004570410930270036,
+      "update_seconds": 0.8987019429987413,
+      "elapsed": 669.9599470679968
+    },
+    {
+      "step": 61,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": -0.29508188366889954,
+      "approx_kl": 0.0038495080209421384,
+      "update_seconds": 0.9111136430001352,
+      "elapsed": 681.7233234479972
+    },
+    {
+      "step": 62,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.19577421247959137,
+      "approx_kl": 0.0012966506986913373,
+      "update_seconds": 0.8159154439999838,
+      "elapsed": 692.9838642899995
+    },
+    {
+      "step": 63,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.18540646135807037,
+      "approx_kl": 0.0015155609204590454,
+      "update_seconds": 0.8856179750000592,
+      "elapsed": 704.5887986939997
+    },
+    {
+      "step": 64,
+      "raw_win_rate": 0.47767857142857145,
+      "keep_win_rate": 0.5446428571428571,
+      "mean_shaped_reward": -0.13953916728496552,
+      "approx_kl": 0.0024510130727527384,
+      "update_seconds": 0.8217709609998565,
+      "elapsed": 716.2335188659999
+    },
+    {
+      "step": 65,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.7232142857142857,
+      "mean_shaped_reward": -0.34023457765579224,
+      "approx_kl": 0.001855853372105577,
+      "update_seconds": 0.8953137579992472,
+      "elapsed": 727.6899259059974
+    },
+    {
+      "step": 66,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": -0.08616743981838226,
+      "approx_kl": 0.0027030174282929556,
+      "update_seconds": 0.8370465320003859,
+      "elapsed": 738.9820768399986
+    },
+    {
+      "step": 67,
+      "raw_win_rate": 0.49107142857142855,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.22910405695438385,
+      "approx_kl": 0.002251463970637655,
+      "update_seconds": 0.8958239940002386,
+      "elapsed": 750.6495442649975
+    },
+    {
+      "step": 68,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.2769322991371155,
+      "approx_kl": 0.002201427682691461,
+      "update_seconds": 0.9217348629972548,
+      "elapsed": 761.9879224219985
+    },
+    {
+      "step": 69,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.21360601484775543,
+      "approx_kl": 0.0015036151338280426,
+      "update_seconds": 0.9570448579979711,
+      "elapsed": 773.6561166139982
+    },
+    {
+      "step": 70,
+      "raw_win_rate": 0.5267857142857143,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.21306106448173523,
+      "approx_kl": 0.001148399395176945,
+      "update_seconds": 0.9307791100000031,
+      "elapsed": 785.3755655549976
+    },
+    {
+      "step": 71,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.12904278934001923,
+      "approx_kl": 0.001442294440018968,
+      "update_seconds": 0.7998153510015982,
+      "elapsed": 796.7063404059991
+    },
+    {
+      "step": 72,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.6964285714285714,
+      "mean_shaped_reward": -0.3446333706378937,
+      "approx_kl": 0.0014302435477291137,
+      "update_seconds": 0.8811006089999864,
+      "elapsed": 808.044163958999
+    },
+    {
+      "step": 73,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.19222615659236908,
+      "approx_kl": 0.001356954898857934,
+      "update_seconds": 0.9363104430012754,
+      "elapsed": 819.8239310049976
+    },
+    {
+      "step": 74,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": -0.028748366981744766,
+      "approx_kl": 0.0020799998946293813,
+      "update_seconds": 0.9862009120006405,
+      "elapsed": 831.5329526979986
+    },
+    {
+      "step": 75,
+      "raw_win_rate": 0.49107142857142855,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.258296936750412,
+      "approx_kl": 0.002197843376353333,
+      "update_seconds": 0.9301802659974783,
+      "elapsed": 843.0474089129966
+    },
+    {
+      "step": 76,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.23234011232852936,
+      "approx_kl": 0.002683282142433677,
+      "update_seconds": 0.9111806379987684,
+      "elapsed": 854.982845696999
+    },
+    {
+      "step": 77,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.7053571428571429,
+      "mean_shaped_reward": -0.18789352476596832,
+      "approx_kl": 0.0022669508009999268,
+      "update_seconds": 0.9504465169993637,
+      "elapsed": 866.3410940069989
+    },
+    {
+      "step": 78,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": -0.03833874687552452,
+      "approx_kl": 0.0023255056485173287,
+      "update_seconds": 0.8535289120009111,
+      "elapsed": 877.7292671579999
+    },
+    {
+      "step": 79,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.7098214285714286,
+      "mean_shaped_reward": -0.25950875878334045,
+      "approx_kl": 0.0015033231227773408,
+      "update_seconds": 0.8996864149994508,
+      "elapsed": 889.5995858769966
+    },
+    {
+      "step": 80,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.21577088534832,
+      "approx_kl": 0.003800981457119893,
+      "update_seconds": 0.9088868900034868,
+      "elapsed": 901.1149028709988
+    },
+    {
+      "step": 81,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.22920730710029602,
+      "approx_kl": 0.001858468800221976,
+      "update_seconds": 1.7832932279998204,
+      "elapsed": 914.5197378939993
+    },
+    {
+      "step": 82,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.12185029685497284,
+      "approx_kl": 0.003007339838294293,
+      "update_seconds": 1.328677493998839,
+      "elapsed": 929.1434627359995
+    },
+    {
+      "step": 83,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.06326181441545486,
+      "approx_kl": 0.003928015739934597,
+      "update_seconds": 0.9114012089994503,
+      "elapsed": 942.8722819929972
+    },
+    {
+      "step": 84,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": -0.12227050960063934,
+      "approx_kl": 0.004186178621611838,
+      "update_seconds": 1.1315807499995572,
+      "elapsed": 957.2435707159966
+    },
+    {
+      "step": 85,
+      "raw_win_rate": 0.4955357142857143,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": -0.11934040486812592,
+      "approx_kl": 0.00381953765653894,
+      "update_seconds": 1.031404544999532,
+      "elapsed": 971.1948265639985
+    },
+    {
+      "step": 86,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.2485404759645462,
+      "approx_kl": 0.0018786980871333353,
+      "update_seconds": 1.0187122989991622,
+      "elapsed": 984.4759915559989
+    },
+    {
+      "step": 87,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.13311178982257843,
+      "approx_kl": 0.0015631130820560474,
+      "update_seconds": 0.88424589799979,
+      "elapsed": 996.627931963998
+    },
+    {
+      "step": 88,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.0803334042429924,
+      "approx_kl": 0.0017488897149876594,
+      "update_seconds": 0.8714948929991806,
+      "elapsed": 1008.5832516829978
+    },
+    {
+      "step": 89,
+      "raw_win_rate": 0.4330357142857143,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.3161347806453705,
+      "approx_kl": 0.001739459147030348,
+      "update_seconds": 0.9306317920018046,
+      "elapsed": 1020.9984130159974
+    },
+    {
+      "step": 90,
+      "raw_win_rate": 0.48214285714285715,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": -0.1958681344985962,
+      "approx_kl": 0.004855953605130838,
+      "update_seconds": 0.9094007650019194,
+      "elapsed": 1033.1103329699981
+    },
+    {
+      "step": 91,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.6651785714285714,
+      "mean_shaped_reward": -0.3150704801082611,
+      "approx_kl": 0.003259515393481361,
+      "update_seconds": 1.0077462190020015,
+      "elapsed": 1045.491043738999
+    },
+    {
+      "step": 92,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6919642857142857,
+      "mean_shaped_reward": -0.2841182351112366,
+      "approx_kl": 0.0029831473878013113,
+      "update_seconds": 1.0524576360003266,
+      "elapsed": 1058.6276995039989
+    },
+    {
+      "step": 93,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": -0.06507397443056107,
+      "approx_kl": 0.0016921764471200212,
+      "update_seconds": 0.9505400279995229,
+      "elapsed": 1070.7246632219976
+    },
+    {
+      "step": 94,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.14719131588935852,
+      "approx_kl": 0.001986224583610389,
+      "update_seconds": 0.9728708209986507,
+      "elapsed": 1083.2665915979996
+    },
+    {
+      "step": 95,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.08396876603364944,
+      "approx_kl": 0.003560170115902327,
+      "update_seconds": 1.0343930950002687,
+      "elapsed": 1095.5861913819972
+    },
+    {
+      "step": 96,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": -0.13975025713443756,
+      "approx_kl": 0.002037690039265358,
+      "update_seconds": 0.9537483240019355,
+      "elapsed": 1107.6794170979992
+    },
+    {
+      "step": 97,
+      "raw_win_rate": 0.5267857142857143,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.16514267027378082,
+      "approx_kl": 0.0026794832699644244,
+      "update_seconds": 1.183043393000844,
+      "elapsed": 1120.460955478
+    },
+    {
+      "step": 98,
+      "raw_win_rate": 0.5446428571428571,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.15990115702152252,
+      "approx_kl": 0.00462659860067041,
+      "update_seconds": 1.0063123069994617,
+      "elapsed": 1133.4174848459988
+    },
+    {
+      "step": 99,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.013173882849514484,
+      "approx_kl": 0.00488559509637547,
+      "update_seconds": 1.3341360359991086,
+      "elapsed": 1150.4032158089976
+    },
+    {
+      "step": 100,
+      "raw_win_rate": 0.5089285714285714,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.24775370955467224,
+      "approx_kl": 0.0018316195961027729,
+      "update_seconds": 1.1039538530021673,
+      "elapsed": 1166.6672621459984
+    },
+    {
+      "step": 101,
+      "raw_win_rate": 0.4955357142857143,
+      "keep_win_rate": 0.5669642857142857,
+      "mean_shaped_reward": -0.14933155477046967,
+      "approx_kl": 0.005220666318731066,
+      "update_seconds": 1.0370675710000796,
+      "elapsed": 1182.910565725997
+    },
+    {
+      "step": 102,
+      "raw_win_rate": 0.45982142857142855,
+      "keep_win_rate": 0.7232142857142857,
+      "mean_shaped_reward": -0.5398395657539368,
+      "approx_kl": 0.0020627348455269337,
+      "update_seconds": 1.1255339439994714,
+      "elapsed": 1196.5599533949971
+    },
+    {
+      "step": 103,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.2875514626502991,
+      "approx_kl": 0.004520001836005165,
+      "update_seconds": 0.9970611710014055,
+      "elapsed": 1209.7322941979983
+    },
+    {
+      "step": 104,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.0921158418059349,
+      "approx_kl": 0.003284117877648806,
+      "update_seconds": 0.9608952210001007,
+      "elapsed": 1223.3112893909965
+    },
+    {
+      "step": 105,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": -0.0869903713464737,
+      "approx_kl": 0.0025845568975282297,
+      "update_seconds": 1.074603188000765,
+      "elapsed": 1236.7069840179975
+    },
+    {
+      "step": 106,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.6875,
+      "mean_shaped_reward": -0.35036662220954895,
+      "approx_kl": 0.0015698463971259133,
+      "update_seconds": 0.9699140599987004,
+      "elapsed": 1248.8236255969969
+    },
+    {
+      "step": 107,
+      "raw_win_rate": 0.42857142857142855,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.3845769464969635,
+      "approx_kl": 0.0033664704464670286,
+      "update_seconds": 1.065063457001088,
+      "elapsed": 1261.1982340029972
+    },
+    {
+      "step": 108,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.16772456467151642,
+      "approx_kl": 0.004199194700422162,
+      "update_seconds": 0.9384021670011862,
+      "elapsed": 1273.3932063019965
+    },
+    {
+      "step": 109,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.22809472680091858,
+      "approx_kl": 0.0032630266467473723,
+      "update_seconds": 1.0408336750006129,
+      "elapsed": 1285.721895663999
+    },
+    {
+      "step": 110,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": 0.1795365810394287,
+      "approx_kl": 0.00221557000497688,
+      "update_seconds": 0.9222935129982943,
+      "elapsed": 1297.7004211019994
+    },
+    {
+      "step": 111,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": -0.04606860503554344,
+      "approx_kl": 0.004200636368089016,
+      "update_seconds": 0.8974291230006202,
+      "elapsed": 1309.685711318998
+    },
+    {
+      "step": 112,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.14053477346897125,
+      "approx_kl": 0.003565172499358072,
+      "update_seconds": 0.9233224780000455,
+      "elapsed": 1321.6386009749986
+    },
+    {
+      "step": 113,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.13968971371650696,
+      "approx_kl": 0.003992736397638161,
+      "update_seconds": 0.9311908060008136,
+      "elapsed": 1333.7765118609968
+    },
+    {
+      "step": 114,
+      "raw_win_rate": 0.5089285714285714,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.2205483466386795,
+      "approx_kl": 0.0027306184793035614,
+      "update_seconds": 0.8868934660022205,
+      "elapsed": 1345.3136498939966
+    },
+    {
+      "step": 115,
+      "raw_win_rate": 0.47767857142857145,
+      "keep_win_rate": 0.5625,
+      "mean_shaped_reward": -0.1769598424434662,
+      "approx_kl": 0.0036735899185405935,
+      "update_seconds": 0.877444320001814,
+      "elapsed": 1356.7457351079975
+    },
+    {
+      "step": 116,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.15266907215118408,
+      "approx_kl": 0.002123716148644559,
+      "update_seconds": 0.9366097870006342,
+      "elapsed": 1368.6376233649971
+    },
+    {
+      "step": 117,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.10274330526590347,
+      "approx_kl": 0.002511403200343832,
+      "update_seconds": 0.8880075010019937,
+      "elapsed": 1380.1442436069992
+    },
+    {
+      "step": 118,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.01089121587574482,
+      "approx_kl": 0.0032413790411326437,
+      "update_seconds": 0.8398032309996779,
+      "elapsed": 1391.7799562519976
+    },
+    {
+      "step": 119,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.11136434972286224,
+      "approx_kl": 0.0027983201818653374,
+      "update_seconds": 0.880414450999524,
+      "elapsed": 1403.581764036997
+    },
+    {
+      "step": 120,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": -0.0388699509203434,
+      "approx_kl": 0.0035901035212462,
+      "update_seconds": 0.8815039100009017,
+      "elapsed": 1415.1201565019983
+    },
+    {
+      "step": 121,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.10454566776752472,
+      "approx_kl": 0.0035809907448787087,
+      "update_seconds": 0.842115700001159,
+      "elapsed": 1426.624720173997
+    },
+    {
+      "step": 122,
+      "raw_win_rate": 0.48214285714285715,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.3255782127380371,
+      "approx_kl": 0.004143511537222365,
+      "update_seconds": 0.8857181069979561,
+      "elapsed": 1438.3223681789968
+    },
+    {
+      "step": 123,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.1484002023935318,
+      "approx_kl": 0.004147999582142974,
+      "update_seconds": 0.8766366620002373,
+      "elapsed": 1449.7323700089983
+    },
+    {
+      "step": 124,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.04090788587927818,
+      "approx_kl": 0.0034454485805251018,
+      "update_seconds": 0.8339231700010714,
+      "elapsed": 1461.3663985999992
+    },
+    {
+      "step": 125,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.7276785714285714,
+      "mean_shaped_reward": -0.38294267654418945,
+      "approx_kl": 0.0032880989608686595,
+      "update_seconds": 0.8605876580004406,
+      "elapsed": 1472.9651413419997
+    },
+    {
+      "step": 126,
+      "raw_win_rate": 0.5714285714285714,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.10551522672176361,
+      "approx_kl": 0.00255749742508442,
+      "update_seconds": 0.9120667749994027,
+      "elapsed": 1485.0046856549998
+    },
+    {
+      "step": 127,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.7053571428571429,
+      "mean_shaped_reward": -0.39481422305107117,
+      "approx_kl": 0.003788296874582406,
+      "update_seconds": 0.8319990980016883,
+      "elapsed": 1496.8338287009974
+    },
+    {
+      "step": 128,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": -0.08905523270368576,
+      "approx_kl": 0.0023721794639836153,
+      "update_seconds": 0.934135168998182,
+      "elapsed": 1508.6235284839968
+    },
+    {
+      "step": 129,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.1227654367685318,
+      "approx_kl": 0.003272869189383225,
+      "update_seconds": 0.9868800069998542,
+      "elapsed": 1520.632771348999
+    },
+    {
+      "step": 130,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.2865384519100189,
+      "approx_kl": 0.004147160075392874,
+      "update_seconds": 1.1490059829993697,
+      "elapsed": 1534.087115159
+    },
+    {
+      "step": 131,
+      "raw_win_rate": 0.5,
+      "keep_win_rate": 0.5133928571428571,
+      "mean_shaped_reward": -0.029798278585076332,
+      "approx_kl": 0.0038556179562008424,
+      "update_seconds": 0.9544953459990211,
+      "elapsed": 1546.8335264769994
+    },
+    {
+      "step": 132,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.14119306206703186,
+      "approx_kl": 0.0024785786382684224,
+      "update_seconds": 0.8527203359990381,
+      "elapsed": 1558.8055724699989
+    },
+    {
+      "step": 133,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.10300388187170029,
+      "approx_kl": 0.004061744928202683,
+      "update_seconds": 0.9970902250024665,
+      "elapsed": 1571.1675102609988
+    },
+    {
+      "step": 134,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.5357142857142857,
+      "mean_shaped_reward": 0.11409581452608109,
+      "approx_kl": 0.0050109205367248055,
+      "update_seconds": 0.9045991089988092,
+      "elapsed": 1584.690096516999
+    },
+    {
+      "step": 135,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": -0.08501745760440826,
+      "approx_kl": 0.0027061228113585203,
+      "update_seconds": 0.9018408470001305,
+      "elapsed": 1597.2349337669984
+    },
+    {
+      "step": 136,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.1676764041185379,
+      "approx_kl": 0.0033686047662221034,
+      "update_seconds": 1.0901738969987491,
+      "elapsed": 1609.8982677919994
+    },
+    {
+      "step": 137,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.07755549252033234,
+      "approx_kl": 0.0037576744118312127,
+      "update_seconds": 0.8737524429998302,
+      "elapsed": 1622.1274845339976
+    },
+    {
+      "step": 138,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.3123566806316376,
+      "approx_kl": 0.004321125724492868,
+      "update_seconds": 0.9511369419997209,
+      "elapsed": 1634.832930905999
+    },
+    {
+      "step": 139,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.53125,
+      "mean_shaped_reward": -0.022064490243792534,
+      "approx_kl": 0.003047793327660503,
+      "update_seconds": 0.8669929409988981,
+      "elapsed": 1647.4894478269998
+    },
+    {
+      "step": 140,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.6964285714285714,
+      "mean_shaped_reward": -0.17582429945468903,
+      "approx_kl": 0.0026883447345155587,
+      "update_seconds": 0.9332826159989054,
+      "elapsed": 1659.6588988149997
+    },
+    {
+      "step": 141,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.6651785714285714,
+      "mean_shaped_reward": -0.1020745038986206,
+      "approx_kl": 0.0032670937360632824,
+      "update_seconds": 0.8981815790029941,
+      "elapsed": 1672.5831504279995
+    },
+    {
+      "step": 142,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": 0.050195299088954926,
+      "approx_kl": 0.002580297490164537,
+      "update_seconds": 0.8789073000007193,
+      "elapsed": 1685.5066357179967
+    },
+    {
+      "step": 143,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.0958980917930603,
+      "approx_kl": 0.003274189196224595,
+      "update_seconds": 0.9269681689984282,
+      "elapsed": 1698.1531668089992
+    },
+    {
+      "step": 144,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.6875,
+      "mean_shaped_reward": -0.2876008152961731,
+      "approx_kl": 0.002713003640802264,
+      "update_seconds": 0.9304935450018093,
+      "elapsed": 1712.1427215329968
+    },
+    {
+      "step": 145,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.03985977545380592,
+      "approx_kl": 0.005516523434633721,
+      "update_seconds": 1.0618512950022705,
+      "elapsed": 1725.3635134599972
+    },
+    {
+      "step": 146,
+      "raw_win_rate": 0.5178571428571429,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": -0.16747517883777618,
+      "approx_kl": 0.002853738384263647,
+      "update_seconds": 0.9488435880011821,
+      "elapsed": 1738.0571414009974
+    },
+    {
+      "step": 147,
+      "raw_win_rate": 0.5446428571428571,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.1321190446615219,
+      "approx_kl": 0.002408944030674406,
+      "update_seconds": 1.0493222229997627,
+      "elapsed": 1750.3995138149985
+    },
+    {
+      "step": 148,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": -0.15829552710056305,
+      "approx_kl": 0.003518606215824806,
+      "update_seconds": 1.031423004998942,
+      "elapsed": 1763.1729554549966
+    },
+    {
+      "step": 149,
+      "raw_win_rate": 0.53125,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.11257396638393402,
+      "approx_kl": 0.0023771295386766367,
+      "update_seconds": 0.9506621300024563,
+      "elapsed": 1777.1434582199981
+    },
+    {
+      "step": 150,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.003786118933930993,
+      "approx_kl": 0.002317848141399822,
+      "update_seconds": 0.9551079939992633,
+      "elapsed": 1789.8677477659985
+    },
+    {
+      "step": 151,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5491071428571429,
+      "mean_shaped_reward": 0.12226356565952301,
+      "approx_kl": 0.004503436983783277,
+      "update_seconds": 0.9403045860017301,
+      "elapsed": 1802.0484416889994
+    },
+    {
+      "step": 152,
+      "raw_win_rate": 0.5446428571428571,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.22205686569213867,
+      "approx_kl": 0.0033420917920509627,
+      "update_seconds": 1.0114416280011937,
+      "elapsed": 1814.9632620459997
+    },
+    {
+      "step": 153,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.0138431740924716,
+      "approx_kl": 0.0032778522672569565,
+      "update_seconds": 0.9733925040018221,
+      "elapsed": 1827.7493447519992
+    },
+    {
+      "step": 154,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6919642857142857,
+      "mean_shaped_reward": -0.23306068778038025,
+      "approx_kl": 0.0033747883760432656,
+      "update_seconds": 0.861581566001405,
+      "elapsed": 1839.1037431669974
+    },
+    {
+      "step": 155,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.04611847177147865,
+      "approx_kl": 0.0032611640059214885,
+      "update_seconds": 1.055105855997681,
+      "elapsed": 1851.410093429
+    },
+    {
+      "step": 156,
+      "raw_win_rate": 0.5446428571428571,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.1680670529603958,
+      "approx_kl": 0.0035614813406265856,
+      "update_seconds": 0.9938438970020798,
+      "elapsed": 1864.4219779489977
+    },
+    {
+      "step": 157,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.6919642857142857,
+      "mean_shaped_reward": -0.26767414808273315,
+      "approx_kl": 0.003143371258017526,
+      "update_seconds": 1.0718294180005614,
+      "elapsed": 1878.895136801999
+    },
+    {
+      "step": 158,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.24830222129821777,
+      "approx_kl": 0.0018974162696849817,
+      "update_seconds": 1.057036328002141,
+      "elapsed": 1892.4364147479973
+    },
+    {
+      "step": 159,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.18758535385131836,
+      "approx_kl": 0.0015951448228644861,
+      "update_seconds": 0.8972464380021847,
+      "elapsed": 1904.8968141439982
+    },
+    {
+      "step": 160,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.2027702033519745,
+      "approx_kl": 0.002655809862136762,
+      "update_seconds": 0.9359866320010042,
+      "elapsed": 1918.368205761999
+    },
+    {
+      "step": 161,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.15745948255062103,
+      "approx_kl": 0.003810578848667016,
+      "update_seconds": 0.9344014839989541,
+      "elapsed": 1932.090399695997
+    },
+    {
+      "step": 162,
+      "raw_win_rate": 0.5133928571428571,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": -0.1792522817850113,
+      "approx_kl": 0.0028869388965090136,
+      "update_seconds": 0.9513906940010202,
+      "elapsed": 1946.1457821709992
+    },
+    {
+      "step": 163,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.05051190406084061,
+      "approx_kl": 0.0033913380846418767,
+      "update_seconds": 1.126034349999827,
+      "elapsed": 1960.024726902
+    },
+    {
+      "step": 164,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": 0.007091909646987915,
+      "approx_kl": 0.0029822308361991375,
+      "update_seconds": 1.1788444320009148,
+      "elapsed": 1974.3619727719997
+    },
+    {
+      "step": 165,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.03780955821275711,
+      "approx_kl": 0.002470851131383391,
+      "update_seconds": 1.0308084349999262,
+      "elapsed": 1989.4676553459976
+    },
+    {
+      "step": 166,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.0057229334488511086,
+      "approx_kl": 0.003431221312413462,
+      "update_seconds": 1.3605513459988288,
+      "elapsed": 2003.012079027998
+    },
+    {
+      "step": 167,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.175430566072464,
+      "approx_kl": 0.002380359404178091,
+      "update_seconds": 1.1587734019994969,
+      "elapsed": 2017.2702205949972
+    },
+    {
+      "step": 168,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.12275557965040207,
+      "approx_kl": 0.0031795245395761346,
+      "update_seconds": 0.993271637998987,
+      "elapsed": 2031.5953933699966
+    },
+    {
+      "step": 169,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.07713445276021957,
+      "approx_kl": 0.0024205997419022357,
+      "update_seconds": 0.8791874229973473,
+      "elapsed": 2044.6050883709977
+    },
+    {
+      "step": 170,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.06996428966522217,
+      "approx_kl": 0.0019489788754916454,
+      "update_seconds": 0.9457902319991263,
+      "elapsed": 2057.486162866
+    },
+    {
+      "step": 171,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.7053571428571429,
+      "mean_shaped_reward": -0.11435573548078537,
+      "approx_kl": 0.003832752429177942,
+      "update_seconds": 0.9734373410028638,
+      "elapsed": 2070.542394732998
+    },
+    {
+      "step": 172,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.175526961684227,
+      "approx_kl": 0.002974245339637923,
+      "update_seconds": 1.0584371549994103,
+      "elapsed": 2083.7100557489975
+    },
+    {
+      "step": 173,
+      "raw_win_rate": 0.6071428571428571,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.021514570340514183,
+      "approx_kl": 0.00272385940523864,
+      "update_seconds": 0.9696917209985259,
+      "elapsed": 2098.154374316997
+    },
+    {
+      "step": 174,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.11197704076766968,
+      "approx_kl": 0.003347073855612898,
+      "update_seconds": 0.940740096000809,
+      "elapsed": 2111.4809248739984
+    },
+    {
+      "step": 175,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.12043093144893646,
+      "approx_kl": 0.002312664589124411,
+      "update_seconds": 0.9838260809992789,
+      "elapsed": 2124.0678397129996
+    },
+    {
+      "step": 176,
+      "raw_win_rate": 0.5669642857142857,
+      "keep_win_rate": 0.5669642857142857,
+      "mean_shaped_reward": -0.003930947743356228,
+      "approx_kl": 0.004715552865345561,
+      "update_seconds": 0.9093702270001813,
+      "elapsed": 2137.1274121999995
+    },
+    {
+      "step": 177,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.15612538158893585,
+      "approx_kl": 0.002281665055454058,
+      "update_seconds": 0.9096009530003357,
+      "elapsed": 2149.056141664998
+    },
+    {
+      "step": 178,
+      "raw_win_rate": 0.5357142857142857,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.20395943522453308,
+      "approx_kl": 0.002994618685492933,
+      "update_seconds": 0.9335290740018536,
+      "elapsed": 2161.142055160999
+    },
+    {
+      "step": 179,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.0742228552699089,
+      "approx_kl": 0.003531361768424783,
+      "update_seconds": 1.026266715998645,
+      "elapsed": 2173.301065394
+    },
+    {
+      "step": 180,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.5669642857142857,
+      "mean_shaped_reward": 0.09720972925424576,
+      "approx_kl": 0.003629514879031334,
+      "update_seconds": 0.9000176119989192,
+      "elapsed": 2185.6178135949995
+    },
+    {
+      "step": 181,
+      "raw_win_rate": 0.5401785714285714,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.18281757831573486,
+      "approx_kl": 0.0016844064165070446,
+      "update_seconds": 0.9708010489994194,
+      "elapsed": 2197.735254750998
+    },
+    {
+      "step": 182,
+      "raw_win_rate": 0.6205357142857143,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": 0.06091345101594925,
+      "approx_kl": 0.0037268391213231,
+      "update_seconds": 0.8954327959982038,
+      "elapsed": 2209.520025733
+    },
+    {
+      "step": 183,
+      "raw_win_rate": 0.6741071428571429,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": 0.11401534080505371,
+      "approx_kl": 0.0028111625160363468,
+      "update_seconds": 0.9127125199993316,
+      "elapsed": 2221.633754835999
+    },
+    {
+      "step": 184,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.0001748459617374465,
+      "approx_kl": 0.002399513019800214,
+      "update_seconds": 0.8925062570015143,
+      "elapsed": 2233.512381903998
+    },
+    {
+      "step": 185,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": 0.04171491414308548,
+      "approx_kl": 0.0030497429216547072,
+      "update_seconds": 0.9212467789984657,
+      "elapsed": 2245.2261897099997
+    },
+    {
+      "step": 186,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.1522306203842163,
+      "approx_kl": 0.0021959155746008904,
+      "update_seconds": 1.0278134280015365,
+      "elapsed": 2256.860503210999
+    },
+    {
+      "step": 187,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.03226347640156746,
+      "approx_kl": 0.003122917273832996,
+      "update_seconds": 0.9696813730006397,
+      "elapsed": 2268.006173078
+    },
+    {
+      "step": 188,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.49107142857142855,
+      "mean_shaped_reward": 0.14007745683193207,
+      "approx_kl": 0.002427130544088283,
+      "update_seconds": 1.060209744999156,
+      "elapsed": 2279.2976967239993
+    },
+    {
+      "step": 189,
+      "raw_win_rate": 0.6294642857142857,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": 0.09721272438764572,
+      "approx_kl": 0.0030866074309967334,
+      "update_seconds": 0.9492097370020929,
+      "elapsed": 2290.841586568
+    },
+    {
+      "step": 190,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": 0.10391274839639664,
+      "approx_kl": 0.0021084602812065675,
+      "update_seconds": 0.9527589240024099,
+      "elapsed": 2302.037070377999
+    },
+    {
+      "step": 191,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.1412304788827896,
+      "approx_kl": 0.0030566643313878045,
+      "update_seconds": 0.9079005180028616,
+      "elapsed": 2313.1187748919983
+    },
+    {
+      "step": 192,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.5625,
+      "mean_shaped_reward": 0.07047738134860992,
+      "approx_kl": 0.002663015351468591,
+      "update_seconds": 0.8800391699987813,
+      "elapsed": 2324.5216110399997
+    },
+    {
+      "step": 193,
+      "raw_win_rate": 0.6205357142857143,
+      "keep_win_rate": 0.7098214285714286,
+      "mean_shaped_reward": -0.18549028038978577,
+      "approx_kl": 0.0029647483535210906,
+      "update_seconds": 0.9767264839974814,
+      "elapsed": 2335.725729963997
+    },
+    {
+      "step": 194,
+      "raw_win_rate": 0.5491071428571429,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": -0.09932541847229004,
+      "approx_kl": 0.002699721914338971,
+      "update_seconds": 0.9894788950005022,
+      "elapsed": 2347.111544911997
+    },
+    {
+      "step": 195,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5580357142857143,
+      "mean_shaped_reward": 0.10775388777256012,
+      "approx_kl": 0.003831346300471306,
+      "update_seconds": 0.9457308259989077,
+      "elapsed": 2358.656887281999
+    },
+    {
+      "step": 196,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6785714285714286,
+      "mean_shaped_reward": -0.20838578045368195,
+      "approx_kl": 0.0035363467716311306,
+      "update_seconds": 1.0715958860018873,
+      "elapsed": 2369.9646087389992
+    },
+    {
+      "step": 197,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.0785231813788414,
+      "approx_kl": 0.002318797195629853,
+      "update_seconds": 1.0492655100024422,
+      "elapsed": 2381.4181341939984
+    },
+    {
+      "step": 198,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.01316109299659729,
+      "approx_kl": 0.0027657797070830903,
+      "update_seconds": 1.0206387850012106,
+      "elapsed": 2393.0520300259996
+    },
+    {
+      "step": 199,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.02222578041255474,
+      "approx_kl": 0.00309991314287193,
+      "update_seconds": 0.872286809997604,
+      "elapsed": 2404.0945184679986
+    },
+    {
+      "step": 200,
+      "raw_win_rate": 0.5535714285714286,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": -0.055191583931446075,
+      "approx_kl": 0.0031919122061643585,
+      "update_seconds": 0.8774057939990598,
+      "elapsed": 2415.6980163689987
+    },
+    {
+      "step": 201,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.06694362312555313,
+      "approx_kl": 0.002821559517642093,
+      "update_seconds": 0.9931033609973383,
+      "elapsed": 2427.3554758449973
+    },
+    {
+      "step": 202,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.020627303048968315,
+      "approx_kl": 0.0023956082730711326,
+      "update_seconds": 0.9259805340007006,
+      "elapsed": 2438.4549626399967
+    },
+    {
+      "step": 203,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": 0.043331027030944824,
+      "approx_kl": 0.0048216365131230265,
+      "update_seconds": 0.9552026339988515,
+      "elapsed": 2449.609720618999
+    },
+    {
+      "step": 204,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.17417791485786438,
+      "approx_kl": 0.003040433054989189,
+      "update_seconds": 0.9500275860009424,
+      "elapsed": 2461.1719548779984
+    },
+    {
+      "step": 205,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": -0.012854022905230522,
+      "approx_kl": 0.0021067326269758263,
+      "update_seconds": 0.9936799460010661,
+      "elapsed": 2472.753173273999
+    },
+    {
+      "step": 206,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.5580357142857143,
+      "mean_shaped_reward": 0.051372230052948,
+      "approx_kl": 0.0028665494551876774,
+      "update_seconds": 1.0246298109996133,
+      "elapsed": 2484.068601223
+    },
+    {
+      "step": 207,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.5625,
+      "mean_shaped_reward": 0.041819486767053604,
+      "approx_kl": 0.0032295617235561036,
+      "update_seconds": 1.0751826880004955,
+      "elapsed": 2495.851339771998
+    },
+    {
+      "step": 208,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": 0.052660439163446426,
+      "approx_kl": 0.0034179811689087035,
+      "update_seconds": 1.0216194589993393,
+      "elapsed": 2508.119897835997
+    },
+    {
+      "step": 209,
+      "raw_win_rate": 0.6651785714285714,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": 0.0694427639245987,
+      "approx_kl": 0.0029273739535970616,
+      "update_seconds": 1.1683529859983537,
+      "elapsed": 2520.1757353779976
+    },
+    {
+      "step": 210,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": 0.04059174656867981,
+      "approx_kl": 0.0025293441329630522,
+      "update_seconds": 1.0134969199971238,
+      "elapsed": 2532.3461848789993
+    },
+    {
+      "step": 211,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.04890165850520134,
+      "approx_kl": 0.003081616652218055,
+      "update_seconds": 1.0059860629989998,
+      "elapsed": 2543.4789220719977
+    },
+    {
+      "step": 212,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.13306598365306854,
+      "approx_kl": 0.0021807509755468546,
+      "update_seconds": 0.9098940039984882,
+      "elapsed": 2554.807597408999
+    },
+    {
+      "step": 213,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.06443453580141068,
+      "approx_kl": 0.0028211667170808135,
+      "update_seconds": 0.9233996279981511,
+      "elapsed": 2566.2883516889997
+    },
+    {
+      "step": 214,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.5446428571428571,
+      "mean_shaped_reward": 0.18082161247730255,
+      "approx_kl": 0.0039798991784209614,
+      "update_seconds": 0.971144554001512,
+      "elapsed": 2577.4190152149968
+    },
+    {
+      "step": 215,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.07513191550970078,
+      "approx_kl": 0.0025847422901755465,
+      "update_seconds": 0.9676578329999757,
+      "elapsed": 2588.730578180999
+    },
+    {
+      "step": 216,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6830357142857143,
+      "mean_shaped_reward": -0.06912777572870255,
+      "approx_kl": 0.002674172617625594,
+      "update_seconds": 0.9512932889992953,
+      "elapsed": 2600.1697874079982
+    },
+    {
+      "step": 217,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.04333850368857384,
+      "approx_kl": 0.0024639613806747155,
+      "update_seconds": 1.001257625001017,
+      "elapsed": 2611.4790721289974
+    },
+    {
+      "step": 218,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": 0.052233580499887466,
+      "approx_kl": 0.00217200791787599,
+      "update_seconds": 0.9978243209989159,
+      "elapsed": 2622.9472070539996
+    },
+    {
+      "step": 219,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": -0.016175756230950356,
+      "approx_kl": 0.0023435981023496944,
+      "update_seconds": 1.036126929000602,
+      "elapsed": 2634.406290756
+    },
+    {
+      "step": 220,
+      "raw_win_rate": 0.6294642857142857,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": 0.02288689836859703,
+      "approx_kl": 0.00243580782014089,
+      "update_seconds": 0.9683756089980307,
+      "elapsed": 2645.9941130219995
+    },
+    {
+      "step": 221,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": -0.041877586394548416,
+      "approx_kl": 0.0023798619449237174,
+      "update_seconds": 0.9500431569977081,
+      "elapsed": 2657.2292914699974
+    },
+    {
+      "step": 222,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.016824474558234215,
+      "approx_kl": 0.002887505707119653,
+      "update_seconds": 0.9657773840008304,
+      "elapsed": 2668.763942792997
+    },
+    {
+      "step": 223,
+      "raw_win_rate": 0.6696428571428571,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": 0.1056167259812355,
+      "approx_kl": 0.0035798784375315096,
+      "update_seconds": 1.0587728130012692,
+      "elapsed": 2680.346294998999
+    },
+    {
+      "step": 224,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.01571505330502987,
+      "approx_kl": 0.0021972392414032283,
+      "update_seconds": 0.9128244130006351,
+      "elapsed": 2691.5465904999983
+    },
+    {
+      "step": 225,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": -0.027929220348596573,
+      "approx_kl": 0.0032257107400672186,
+      "update_seconds": 1.0633070200019574,
+      "elapsed": 2703.012688319999
+    },
+    {
+      "step": 226,
+      "raw_win_rate": 0.6607142857142857,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": 0.003932952880859375,
+      "approx_kl": 0.003852838631806184,
+      "update_seconds": 1.0705246220022673,
+      "elapsed": 2714.2667369599985
+    },
+    {
+      "step": 227,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6383928571428571,
+      "mean_shaped_reward": 0.020030170679092407,
+      "approx_kl": 0.0024594855769031524,
+      "update_seconds": 1.010333244001231,
+      "elapsed": 2725.654652702
+    },
+    {
+      "step": 228,
+      "raw_win_rate": 0.625,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": -0.07833460718393326,
+      "approx_kl": 0.0020523628180821366,
+      "update_seconds": 1.0225478829997883,
+      "elapsed": 2737.521122195998
+    },
+    {
+      "step": 229,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.0668082907795906,
+      "approx_kl": 0.00204682002630371,
+      "update_seconds": 1.0752122499980032,
+      "elapsed": 2748.9850125649973
+    },
+    {
+      "step": 230,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": 0.05176469311118126,
+      "approx_kl": 0.002434754849026551,
+      "update_seconds": 0.8634922320015903,
+      "elapsed": 2760.270676619999
+    },
+    {
+      "step": 231,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": 0.06302106380462646,
+      "approx_kl": 0.002730098852291684,
+      "update_seconds": 0.9087185450007382,
+      "elapsed": 2771.7280273829965
+    },
+    {
+      "step": 232,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": 0.016949551180005074,
+      "approx_kl": 0.0027964699077788918,
+      "update_seconds": 1.0367643989993667,
+      "elapsed": 2782.9503781429994
+    },
+    {
+      "step": 233,
+      "raw_win_rate": 0.6205357142857143,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": -0.012349380180239677,
+      "approx_kl": 0.003695004513980123,
+      "update_seconds": 0.8438538539994624,
+      "elapsed": 2794.1469019979995
+    },
+    {
+      "step": 234,
+      "raw_win_rate": 0.6607142857142857,
+      "keep_win_rate": 0.6473214285714286,
+      "mean_shaped_reward": 0.027442211285233498,
+      "approx_kl": 0.0027871169453148803,
+      "update_seconds": 1.014703869997902,
+      "elapsed": 2805.5396690069974
+    },
+    {
+      "step": 235,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": 0.03298721835017204,
+      "approx_kl": 0.002158596465531966,
+      "update_seconds": 0.9584617500004242,
+      "elapsed": 2816.636178039
+    },
+    {
+      "step": 236,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.09041699022054672,
+      "approx_kl": 0.001763088141655359,
+      "update_seconds": 0.8921074409990979,
+      "elapsed": 2827.761912113998
+    },
+    {
+      "step": 237,
+      "raw_win_rate": 0.6205357142857143,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": -0.03152478113770485,
+      "approx_kl": 0.003119256398971023,
+      "update_seconds": 0.9780547400005162,
+      "elapsed": 2839.3084991979995
+    },
+    {
+      "step": 238,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.0111537491902709,
+      "approx_kl": 0.0028363286261126283,
+      "update_seconds": 0.8173942180001177,
+      "elapsed": 2850.7492862759973
+    },
+    {
+      "step": 239,
+      "raw_win_rate": 0.5223214285714286,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": -0.12737269699573517,
+      "approx_kl": 0.002734165710800578,
+      "update_seconds": 0.9475942449971626,
+      "elapsed": 2864.5636402359996
+    },
+    {
+      "step": 240,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.08973468840122223,
+      "approx_kl": 0.0025018203044986707,
+      "update_seconds": 0.8994776279978396,
+      "elapsed": 2876.6522939419992
+    },
+    {
+      "step": 241,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.5982142857142857,
+      "mean_shaped_reward": 0.10279581695795059,
+      "approx_kl": 0.0030033044243282345,
+      "update_seconds": 0.8441037109987519,
+      "elapsed": 2888.4126611449974
+    },
+    {
+      "step": 242,
+      "raw_win_rate": 0.625,
+      "keep_win_rate": 0.5803571428571429,
+      "mean_shaped_reward": 0.08755218237638474,
+      "approx_kl": 0.0031983631574608548,
+      "update_seconds": 0.8996086830011336,
+      "elapsed": 2900.3941432829997
+    },
+    {
+      "step": 243,
+      "raw_win_rate": 0.6294642857142857,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.0004911550204269588,
+      "approx_kl": 0.00307329751265981,
+      "update_seconds": 0.8524393840016273,
+      "elapsed": 2912.1976633259983
+    },
+    {
+      "step": 244,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.6785714285714286,
+      "mean_shaped_reward": -0.09795278310775757,
+      "approx_kl": 0.0022687120964931073,
+      "update_seconds": 0.8966530979996605,
+      "elapsed": 2924.0673027759985
+    },
+    {
+      "step": 245,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6205357142857143,
+      "mean_shaped_reward": 0.06122128292918205,
+      "approx_kl": 0.0025481427514673005,
+      "update_seconds": 0.8649849190005625,
+      "elapsed": 2936.5602365239974
+    },
+    {
+      "step": 246,
+      "raw_win_rate": 0.6607142857142857,
+      "keep_win_rate": 0.5401785714285714,
+      "mean_shaped_reward": 0.24416041374206543,
+      "approx_kl": 0.0022179922963145833,
+      "update_seconds": 0.8736484000000928,
+      "elapsed": 2948.3545623949976
+    },
+    {
+      "step": 247,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": 0.021149005740880966,
+      "approx_kl": 0.0019223381591559935,
+      "update_seconds": 0.962324117001117,
+      "elapsed": 2960.4084126169982
+    },
+    {
+      "step": 248,
+      "raw_win_rate": 0.625,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": 0.14111605286598206,
+      "approx_kl": 0.0037054092780635967,
+      "update_seconds": 0.8882076039990352,
+      "elapsed": 2972.3856606439986
+    },
+    {
+      "step": 249,
+      "raw_win_rate": 0.6294642857142857,
+      "keep_win_rate": 0.6294642857142857,
+      "mean_shaped_reward": -0.0038316461723297834,
+      "approx_kl": 0.0030292349477733832,
+      "update_seconds": 0.8839416180016997,
+      "elapsed": 2984.1480786699976
+    },
+    {
+      "step": 250,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": 0.043669555336236954,
+      "approx_kl": 0.001672472961235183,
+      "update_seconds": 0.9846575000010489,
+      "elapsed": 2996.4977104669997
+    },
+    {
+      "step": 251,
+      "raw_win_rate": 0.6651785714285714,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": 0.0034407845232635736,
+      "approx_kl": 0.0018081210206327394,
+      "update_seconds": 0.8654174080002122,
+      "elapsed": 3008.6366252279986
+    },
+    {
+      "step": 252,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.7053571428571429,
+      "mean_shaped_reward": -0.13436733186244965,
+      "approx_kl": 0.002664450452864134,
+      "update_seconds": 0.954820180999377,
+      "elapsed": 3020.582555006
+    },
+    {
+      "step": 253,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": 0.04297484830021858,
+      "approx_kl": 0.0021894776940241307,
+      "update_seconds": 0.8210717100009788,
+      "elapsed": 3032.6426577779966
+    },
+    {
+      "step": 254,
+      "raw_win_rate": 0.6339285714285714,
+      "keep_win_rate": 0.6875,
+      "mean_shaped_reward": -0.113578200340271,
+      "approx_kl": 0.0026458289423035683,
+      "update_seconds": 0.861281143999804,
+      "elapsed": 3044.6920542119988
+    },
+    {
+      "step": 255,
+      "raw_win_rate": 0.6294642857142857,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.09321229159832001,
+      "approx_kl": 0.002616414178396553,
+      "update_seconds": 0.8785994519967062,
+      "elapsed": 3056.4990906549974
+    },
+    {
+      "step": 256,
+      "raw_win_rate": 0.6696428571428571,
+      "keep_win_rate": 0.6785714285714286,
+      "mean_shaped_reward": -0.02456003427505493,
+      "approx_kl": 0.0026835152874625794,
+      "update_seconds": 0.8986949360005383,
+      "elapsed": 3068.499592827
+    },
+    {
+      "step": 257,
+      "raw_win_rate": 0.6651785714285714,
+      "keep_win_rate": 0.7008928571428571,
+      "mean_shaped_reward": -0.07554298639297485,
+      "approx_kl": 0.0020378722608273034,
+      "update_seconds": 0.9274719869972614,
+      "elapsed": 3080.349453847997
+    },
+    {
+      "step": 258,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.04234672337770462,
+      "approx_kl": 0.0033651938487981254,
+      "update_seconds": 0.7923761509991891,
+      "elapsed": 3092.1606678239987
+    },
+    {
+      "step": 259,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.5758928571428571,
+      "mean_shaped_reward": 0.001255631446838379,
+      "approx_kl": 0.0025890124553457315,
+      "update_seconds": 0.9123134000001301,
+      "elapsed": 3104.2136528849987
+    },
+    {
+      "step": 260,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.0737212523818016,
+      "approx_kl": 0.002154879750605687,
+      "update_seconds": 0.8269878270002664,
+      "elapsed": 3115.9866884589974
+    },
+    {
+      "step": 261,
+      "raw_win_rate": 0.5758928571428571,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.07584249973297119,
+      "approx_kl": 0.00173797075954315,
+      "update_seconds": 0.9421299640016514,
+      "elapsed": 3127.753625366
+    },
+    {
+      "step": 262,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.06755799800157547,
+      "approx_kl": 0.0020750580163513394,
+      "update_seconds": 0.8708043519982311,
+      "elapsed": 3139.141596046
+    },
+    {
+      "step": 263,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": 0.0896310955286026,
+      "approx_kl": 0.0033002861569576387,
+      "update_seconds": 0.9819294699991588,
+      "elapsed": 3150.2855920329966
+    },
+    {
+      "step": 264,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": -0.021794727072119713,
+      "approx_kl": 0.0031060105958507253,
+      "update_seconds": 0.9613832340000954,
+      "elapsed": 3161.4861278179997
+    },
+    {
+      "step": 265,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": -0.004147495608776808,
+      "approx_kl": 0.0028888376113032086,
+      "update_seconds": 0.976884465002513,
+      "elapsed": 3172.9423150209986
+    },
+    {
+      "step": 266,
+      "raw_win_rate": 0.6071428571428571,
+      "keep_win_rate": 0.6160714285714286,
+      "mean_shaped_reward": -0.016841057687997818,
+      "approx_kl": 0.0037720154118427917,
+      "update_seconds": 0.9463786769993021,
+      "elapsed": 3184.0655432629974
+    },
+    {
+      "step": 267,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": 0.0186851117759943,
+      "approx_kl": 0.003730002348796851,
+      "update_seconds": 1.034355059000518,
+      "elapsed": 3195.236667453999
+    },
+    {
+      "step": 268,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.6830357142857143,
+      "mean_shaped_reward": -0.13845862448215485,
+      "approx_kl": 0.002373122225931941,
+      "update_seconds": 0.983240671997919,
+      "elapsed": 3206.763656946998
+    },
+    {
+      "step": 269,
+      "raw_win_rate": 0.7053571428571429,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.22722849249839783,
+      "approx_kl": 0.0017537587256951867,
+      "update_seconds": 0.9208821420033928,
+      "elapsed": 3218.558919602998
+    },
+    {
+      "step": 270,
+      "raw_win_rate": 0.5625,
+      "keep_win_rate": 0.5669642857142857,
+      "mean_shaped_reward": -0.009692138060927391,
+      "approx_kl": 0.003031866183743031,
+      "update_seconds": 1.0957554029992025,
+      "elapsed": 3229.8159264259994
+    },
+    {
+      "step": 271,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": 0.12412096560001373,
+      "approx_kl": 0.001696779523614447,
+      "update_seconds": 1.0002784630014503,
+      "elapsed": 3241.2728397329993
+    },
+    {
+      "step": 272,
+      "raw_win_rate": 0.625,
+      "keep_win_rate": 0.5446428571428571,
+      "mean_shaped_reward": 0.16212426126003265,
+      "approx_kl": 0.0020207607627786045,
+      "update_seconds": 0.956555370001297,
+      "elapsed": 3252.316596730998
+    },
+    {
+      "step": 273,
+      "raw_win_rate": 0.5803571428571429,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": -0.058580610901117325,
+      "approx_kl": 0.0026997984422364174,
+      "update_seconds": 0.9176049710004008,
+      "elapsed": 3263.413751240998
+    },
+    {
+      "step": 274,
+      "raw_win_rate": 0.6383928571428571,
+      "keep_win_rate": 0.5848214285714286,
+      "mean_shaped_reward": 0.11004715412855148,
+      "approx_kl": 0.001961250510820328,
+      "update_seconds": 0.9184953660005704,
+      "elapsed": 3274.955249778999
+    },
+    {
+      "step": 275,
+      "raw_win_rate": 0.6607142857142857,
+      "keep_win_rate": 0.5714285714285714,
+      "mean_shaped_reward": 0.17582884430885315,
+      "approx_kl": 0.002594115109063534,
+      "update_seconds": 0.9597446709994983,
+      "elapsed": 3286.517541819998
+    },
+    {
+      "step": 276,
+      "raw_win_rate": 0.6026785714285714,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.08528484404087067,
+      "approx_kl": 0.002440887807554082,
+      "update_seconds": 0.9783529790001921,
+      "elapsed": 3297.721176871997
+    },
+    {
+      "step": 277,
+      "raw_win_rate": 0.6160714285714286,
+      "keep_win_rate": 0.6428571428571429,
+      "mean_shaped_reward": -0.058108698576688766,
+      "approx_kl": 0.0025243420281166567,
+      "update_seconds": 1.0096260930004064,
+      "elapsed": 3309.310079439998
+    },
+    {
+      "step": 278,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.1656542867422104,
+      "approx_kl": 0.0033927292148897875,
+      "update_seconds": 1.0435728110023774,
+      "elapsed": 3320.563524944999
+    },
+    {
+      "step": 279,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.005476534366607666,
+      "approx_kl": 0.001996136060527729,
+      "update_seconds": 1.059890862001339,
+      "elapsed": 3332.0559559169997
+    },
+    {
+      "step": 280,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5446428571428571,
+      "mean_shaped_reward": 0.13328292965888977,
+      "approx_kl": 0.002123694943187121,
+      "update_seconds": 0.9955680270031735,
+      "elapsed": 3343.596559439
+    },
+    {
+      "step": 281,
+      "raw_win_rate": 0.5848214285714286,
+      "keep_win_rate": 0.5892857142857143,
+      "mean_shaped_reward": -0.010641180910170078,
+      "approx_kl": 0.003022553508395464,
+      "update_seconds": 0.8934487980004633,
+      "elapsed": 3354.8125310999967
+    },
+    {
+      "step": 282,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.6116071428571429,
+      "mean_shaped_reward": 0.06431698799133301,
+      "approx_kl": 0.0025181748625722595,
+      "update_seconds": 0.8978010609971534,
+      "elapsed": 3366.6611203329994
+    },
+    {
+      "step": 283,
+      "raw_win_rate": 0.6651785714285714,
+      "keep_win_rate": 0.6607142857142857,
+      "mean_shaped_reward": 0.008606051094830036,
+      "approx_kl": 0.0024359941245907513,
+      "update_seconds": 0.9546204200014472,
+      "elapsed": 3378.810600544999
+    },
+    {
+      "step": 284,
+      "raw_win_rate": 0.6517857142857143,
+      "keep_win_rate": 0.6071428571428571,
+      "mean_shaped_reward": 0.08873444050550461,
+      "approx_kl": 0.003292975896649639,
+      "update_seconds": 0.9804449459988973,
+      "elapsed": 3390.675205501997
+    },
+    {
+      "step": 285,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": 0.11694145947694778,
+      "approx_kl": 0.002652563341637556,
+      "update_seconds": 0.9874571219988866,
+      "elapsed": 3402.644558248998
+    },
+    {
+      "step": 286,
+      "raw_win_rate": 0.625,
+      "keep_win_rate": 0.65625,
+      "mean_shaped_reward": -0.06660664826631546,
+      "approx_kl": 0.0028514803586382315,
+      "update_seconds": 0.9233217219989456,
+      "elapsed": 3415.171060206998
+    },
+    {
+      "step": 287,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.6741071428571429,
+      "mean_shaped_reward": -0.17466378211975098,
+      "approx_kl": 0.002445821079362802,
+      "update_seconds": 0.9652970040006039,
+      "elapsed": 3428.7042764379985
+    },
+    {
+      "step": 288,
+      "raw_win_rate": 0.6428571428571429,
+      "keep_win_rate": 0.6651785714285714,
+      "mean_shaped_reward": -0.04545444995164871,
+      "approx_kl": 0.0025385999345319643,
+      "update_seconds": 1.0548391260017524,
+      "elapsed": 3441.3983574429985
+    },
+    {
+      "step": 289,
+      "raw_win_rate": 0.5580357142857143,
+      "keep_win_rate": 0.5535714285714286,
+      "mean_shaped_reward": 0.008582532405853271,
+      "approx_kl": 0.0017560629100660738,
+      "update_seconds": 1.0082976649973716,
+      "elapsed": 3455.027299928999
+    },
+    {
+      "step": 290,
+      "raw_win_rate": 0.5892857142857143,
+      "keep_win_rate": 0.5178571428571429,
+      "mean_shaped_reward": 0.14436686038970947,
+      "approx_kl": 0.0029957531368641566,
+      "update_seconds": 0.9657535400001507,
+      "elapsed": 3468.5207044749986
+    },
+    {
+      "step": 291,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": 0.02091609500348568,
+      "approx_kl": 0.0016400972825673912,
+      "update_seconds": 1.0638045589985268,
+      "elapsed": 3482.251218450998
+    },
+    {
+      "step": 292,
+      "raw_win_rate": 0.6473214285714286,
+      "keep_win_rate": 0.625,
+      "mean_shaped_reward": 0.04479675740003586,
+      "approx_kl": 0.002409743148832823,
+      "update_seconds": 0.9634037840005476,
+      "elapsed": 3495.2647679109978
+    },
+    {
+      "step": 293,
+      "raw_win_rate": 0.59375,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": -0.0012392997741699219,
+      "approx_kl": 0.0033835701706266285,
+      "update_seconds": 0.984264851998887,
+      "elapsed": 3507.7384769829987
+    },
+    {
+      "step": 294,
+      "raw_win_rate": 0.6116071428571429,
+      "keep_win_rate": 0.6919642857142857,
+      "mean_shaped_reward": -0.16681396961212158,
+      "approx_kl": 0.002638056734614177,
+      "update_seconds": 0.9381016950028425,
+      "elapsed": 3520.0994835309975
+    },
+    {
+      "step": 295,
+      "raw_win_rate": 0.6741071428571429,
+      "keep_win_rate": 0.53125,
+      "mean_shaped_reward": 0.2866392731666565,
+      "approx_kl": 0.002247638753128526,
+      "update_seconds": 0.9838397810017341,
+      "elapsed": 3532.5481066369975
+    },
+    {
+      "step": 296,
+      "raw_win_rate": 0.6785714285714286,
+      "keep_win_rate": 0.59375,
+      "mean_shaped_reward": 0.17201010882854462,
+      "approx_kl": 0.002555800632550626,
+      "update_seconds": 0.9516635550025967,
+      "elapsed": 3545.1149231799973
+    },
+    {
+      "step": 297,
+      "raw_win_rate": 0.5982142857142857,
+      "keep_win_rate": 0.6696428571428571,
+      "mean_shaped_reward": -0.14997339248657227,
+      "approx_kl": 0.00219614641175992,
+      "update_seconds": 1.013266141002532,
+      "elapsed": 3557.7527109329967
+    },
+    {
+      "step": 298,
+      "raw_win_rate": 0.65625,
+      "keep_win_rate": 0.6026785714285714,
+      "mean_shaped_reward": 0.10879337787628174,
+      "approx_kl": 0.002194394159643509,
+      "update_seconds": 0.8790243129988085,
+      "elapsed": 3570.1105018749986
+    },
+    {
+      "step": 299,
+      "raw_win_rate": 0.65625,
+      "keep_win_rate": 0.6339285714285714,
+      "mean_shaped_reward": 0.03923014551401138,
+      "approx_kl": 0.002082916750170967,
+      "update_seconds": 0.9682879530009814,
+      "elapsed": 3582.998406396997
+    },
+    {
+      "step": 300,
+      "raw_win_rate": 0.65625,
+      "keep_win_rate": 0.6517857142857143,
+      "mean_shaped_reward": 0.011016675271093845,
+      "approx_kl": 0.0029555821960359804,
+      "update_seconds": 0.8717856619987288,
+      "elapsed": 3595.6942182159983
+    }
+  ]
+}

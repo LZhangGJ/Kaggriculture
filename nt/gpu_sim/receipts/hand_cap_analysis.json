@@ -1,0 +1,492 @@
+{
+  "analyzed_at": "2026-08-10T18:05:51.618055+00:00",
+  "cap_behavior": "A HIRE beyond 32 is a no-op, increments hand_cap_hits, and uses the same MAX_UNITS action/state shape in rollout, Arena, and deployment.",
+  "cash_needed_to_attempt_33_hands_from_zero_hires": 9227464,
+  "cost_of_33rd_hand": 3524578,
+  "default_fibonacci_cost_to_hire_32_hands_in_one_day": 5702886,
+  "headroom_hands": 18,
+  "observed_max_hands": 14,
+  "ok": true,
+  "rows": [
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10000.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10001.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10002.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10003.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10004.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10005.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10006.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10007.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10008.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10009.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10010.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10011.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10012.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10013.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10014.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10015.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10016.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10017.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10018.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10019.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10020.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10021.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10022.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10023.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10024.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10025.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10026.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10027.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10028.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10029.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10030.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10031.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10032.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10033.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10034.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10035.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10036.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10037.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10038.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10039.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10040.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10041.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10042.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10043.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10044.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10045.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10046.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10047.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10048.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10049.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10050.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10051.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10052.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10053.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10054.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10055.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10056.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10057.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10058.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10059.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10060.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10061.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10062.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10063.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10064.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10065.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10066.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10067.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10068.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10069.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10070.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10071.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10072.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10073.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10074.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10075.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10076.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10077.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10078.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10079.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10080.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10081.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10082.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10083.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10084.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10085.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10086.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10087.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10088.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10089.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10090.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10091.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10092.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10093.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10094.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10095.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10096.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10097.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10098.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/heldout/pass_pass_seed10099.jsonl.gz"
+    },
+    {
+      "max_hands": 5,
+      "path": "reference/random_differential/random_seed32.jsonl.gz"
+    },
+    {
+      "max_hands": 4,
+      "path": "reference/random_differential/random_seed33.jsonl.gz"
+    },
+    {
+      "max_hands": 9,
+      "path": "reference/random_differential/random_seed34.jsonl.gz"
+    },
+    {
+      "max_hands": 5,
+      "path": "reference/random_differential/random_seed35.jsonl.gz"
+    },
+    {
+      "max_hands": 10,
+      "path": "reference/random_differential/random_seed36.jsonl.gz"
+    },
+    {
+      "max_hands": 6,
+      "path": "reference/random_differential/random_seed37.jsonl.gz"
+    },
+    {
+      "max_hands": 8,
+      "path": "reference/random_differential/random_seed38.jsonl.gz"
+    },
+    {
+      "max_hands": 6,
+      "path": "reference/random_differential/random_seed39.jsonl.gz"
+    },
+    {
+      "max_hands": 5,
+      "path": "reference/random_differential/random_seed40.jsonl.gz"
+    },
+    {
+      "max_hands": 4,
+      "path": "reference/random_differential/random_seed41.jsonl.gz"
+    },
+    {
+      "max_hands": 4,
+      "path": "reference/random_differential/random_seed42.jsonl.gz"
+    },
+    {
+      "max_hands": 7,
+      "path": "reference/random_differential/random_seed43.jsonl.gz"
+    },
+    {
+      "max_hands": 5,
+      "path": "reference/random_differential/random_seed44.jsonl.gz"
+    },
+    {
+      "max_hands": 7,
+      "path": "reference/random_differential/random_seed45.jsonl.gz"
+    },
+    {
+      "max_hands": 5,
+      "path": "reference/random_differential/random_seed46.jsonl.gz"
+    },
+    {
+      "max_hands": 6,
+      "path": "reference/random_differential/random_seed47.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/traces/pass_pass_seed0.jsonl.gz"
+    },
+    {
+      "max_hands": 0,
+      "path": "reference/traces/starter_starter_seed1.jsonl.gz"
+    },
+    {
+      "max_hands": 14,
+      "path": "reference/traces/v16_v16_seed0.jsonl.gz"
+    }
+  ],
+  "schema": "kaggriculture_hand_cap_analysis_v1",
+  "static_max_hands": 32,
+  "static_max_units_including_main_farmer": 33,
+  "trace_count": 119
+}

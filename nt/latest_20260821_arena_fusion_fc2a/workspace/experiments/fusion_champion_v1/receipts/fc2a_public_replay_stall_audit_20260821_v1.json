@@ -1,0 +1,347 @@
+{
+  "schema": "kaggriculture.fc2a.public-stall-audit.v1",
+  "generated_at_utc": "2026-08-21T07:05:06.770712+00:00",
+  "submission_id": 55662157,
+  "episode_count": 10,
+  "opening_pressure_episode_count": 3,
+  "catastrophic_stall_episode_count": 2,
+  "catastrophic_stall_episode_ids": [
+    95784781,
+    95787063
+  ],
+  "finding": "The two losses share the exact sticky opening-pressure plus step-288 PRT-selector handoff and then emit all-PASS actions for frames 289 through 719.",
+  "episodes": [
+    {
+      "episode_id": 95768871,
+      "result": "WIN",
+      "own_seat": 1,
+      "own_reward": 128953.0,
+      "opponent_reward": 31455.0,
+      "opponent_submission_id": 55475723,
+      "opening_sheep_pressure": true,
+      "first_pressure_frame": 24,
+      "pressure_snapshot": {
+        "rival_cows": 0,
+        "rival_sheep": 4,
+        "rival_cash": 44
+      },
+      "step288_prt_selector": false,
+      "step288_inputs": {
+        "own_cash": 15039,
+        "yarn_store_count": 1,
+        "strawberry_market_inventory": 9952,
+        "own_cows": 9,
+        "own_sheep": 4
+      },
+      "nonpass_action_frames": 692,
+      "longest_all_pass_span": {
+        "start": 87,
+        "end": 96,
+        "length": 10
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 128953,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95771134,
+      "result": "WIN",
+      "own_seat": 0,
+      "own_reward": 182277.0,
+      "opponent_reward": 65722.0,
+      "opponent_submission_id": 55539617,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 12721,
+        "yarn_store_count": 1,
+        "strawberry_market_inventory": 9934,
+        "own_cows": 10,
+        "own_sheep": 4
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 182277,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95773410,
+      "result": "WIN",
+      "own_seat": 0,
+      "own_reward": 171704.0,
+      "opponent_reward": 107594.0,
+      "opponent_submission_id": 55492756,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": false,
+      "step288_inputs": {
+        "own_cash": 12300,
+        "yarn_store_count": 2,
+        "strawberry_market_inventory": 9898,
+        "own_cows": 6,
+        "own_sheep": 8
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 171704,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95775677,
+      "result": "WIN",
+      "own_seat": 0,
+      "own_reward": 83625.0,
+      "opponent_reward": 47504.0,
+      "opponent_submission_id": 55242413,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": false,
+      "step288_inputs": {
+        "own_cash": 12783,
+        "yarn_store_count": 1,
+        "strawberry_market_inventory": 9988,
+        "own_cows": 6,
+        "own_sheep": 8
+      },
+      "nonpass_action_frames": 689,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": 719,
+        "end": 719,
+        "length": 1
+      },
+      "final_cash": 83625,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95777941,
+      "result": "WIN",
+      "own_seat": 0,
+      "own_reward": 80596.0,
+      "opponent_reward": 66424.0,
+      "opponent_submission_id": 55258256,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 12455,
+        "yarn_store_count": 0,
+        "strawberry_market_inventory": 9880,
+        "own_cows": 8,
+        "own_sheep": 6
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 80596,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95778210,
+      "result": "WIN",
+      "own_seat": 1,
+      "own_reward": 49830.0,
+      "opponent_reward": 31725.0,
+      "opponent_submission_id": 55359146,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": false,
+      "step288_inputs": {
+        "own_cash": 12284,
+        "yarn_store_count": 0,
+        "strawberry_market_inventory": 9988,
+        "own_cows": 8,
+        "own_sheep": 6
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 49830,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95780217,
+      "result": "WIN",
+      "own_seat": 1,
+      "own_reward": 154646.0,
+      "opponent_reward": 137469.0,
+      "opponent_submission_id": 55386343,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 11746,
+        "yarn_store_count": 0,
+        "strawberry_market_inventory": 9880,
+        "own_cows": 10,
+        "own_sheep": 4
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 154646,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95782497,
+      "result": "WIN",
+      "own_seat": 0,
+      "own_reward": 141501.0,
+      "opponent_reward": 125328.0,
+      "opponent_submission_id": 55362082,
+      "opening_sheep_pressure": false,
+      "first_pressure_frame": null,
+      "pressure_snapshot": null,
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 11267,
+        "yarn_store_count": 0,
+        "strawberry_market_inventory": 9880,
+        "own_cows": 10,
+        "own_sheep": 4
+      },
+      "nonpass_action_frames": 694,
+      "longest_all_pass_span": {
+        "start": 89,
+        "end": 96,
+        "length": 8
+      },
+      "trailing_all_pass_span": {
+        "start": null,
+        "end": null,
+        "length": 0
+      },
+      "final_cash": 141501,
+      "catastrophic_handoff_stall": false
+    },
+    {
+      "episode_id": 95784781,
+      "result": "LOSS",
+      "own_seat": 0,
+      "own_reward": 13005.0,
+      "opponent_reward": 138799.0,
+      "opponent_submission_id": 55655110,
+      "opening_sheep_pressure": true,
+      "first_pressure_frame": 24,
+      "pressure_snapshot": {
+        "rival_cows": 1,
+        "rival_sheep": 4,
+        "rival_cash": 9
+      },
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 13005,
+        "yarn_store_count": 1,
+        "strawberry_market_inventory": 9970,
+        "own_cows": 6,
+        "own_sheep": 8
+      },
+      "nonpass_action_frames": 261,
+      "longest_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "trailing_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "final_cash": 13005,
+      "catastrophic_handoff_stall": true
+    },
+    {
+      "episode_id": 95787063,
+      "result": "LOSS",
+      "own_seat": 1,
+      "own_reward": 13271.0,
+      "opponent_reward": 103567.0,
+      "opponent_submission_id": 55482830,
+      "opening_sheep_pressure": true,
+      "first_pressure_frame": 24,
+      "pressure_snapshot": {
+        "rival_cows": 1,
+        "rival_sheep": 4,
+        "rival_cash": 10
+      },
+      "step288_prt_selector": true,
+      "step288_inputs": {
+        "own_cash": 13271,
+        "yarn_store_count": 0,
+        "strawberry_market_inventory": 9898,
+        "own_cows": 10,
+        "own_sheep": 4
+      },
+      "nonpass_action_frames": 261,
+      "longest_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "trailing_all_pass_span": {
+        "start": 289,
+        "end": 719,
+        "length": 431
+      },
+      "final_cash": 13271,
+      "catastrophic_handoff_stall": true
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc2b-service-effect-audit.v1",
+  "generated_at_utc": "2026-08-21T18:36:37.351003+00:00",
+  "status": "PASS",
+  "truth_boundary": "Pre-action intent/effect audit on official-parity JAX. Correlation with losses does not prove that replacing an invalid action improves terminal score.",
+  "official_package_version": "1.32.7",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "seed_start": 560001,
+  "seed_count": 256,
+  "seat_protocol": "same independent events with seats swapped",
+  "rows": [
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "games": 512,
+      "score_rate": 0.873046875,
+      "mean_cash": 82732.828125,
+      "mean_margin": 696.22265625,
+      "service": {
+        "care_already": {
+          "total": 29108,
+          "mean_per_game": 56.8515625,
+          "median_per_game": 55.0,
+          "p95_per_game": 65.0,
+          "games_positive": 512
+        },
+        "care_effective": {
+          "total": 88873,
+          "mean_per_game": 173.580078125,
+          "median_per_game": 168.0,
+          "p95_per_game": 196.0,
+          "games_positive": 512
+        },
+        "care_intent": {
+          "total": 167822,
+          "mean_per_game": 327.77734375,
+          "median_per_game": 318.0,
+          "p95_per_game": 366.0,
+          "games_positive": 512
+        },
+        "care_no_animal": {
+          "total": 49841,
+          "mean_per_game": 97.345703125,
+          "median_per_game": 95.0,
+          "p95_per_game": 106.0,
+          "games_positive": 512
+        },
+        "feed_already": {
+          "total": 29679,
+          "mean_per_game": 57.966796875,
+          "median_per_game": 56.0,
+          "p95_per_game": 67.0,
+          "games_positive": 512
+        },
+        "feed_effective": {
+          "total": 89790,
+          "mean_per_game": 175.37109375,
+          "median_per_game": 170.0,
+          "p95_per_game": 198.0,
+          "games_positive": 512
+        },
+        "feed_intent": {
+          "total": 169583,
+          "mean_per_game": 331.216796875,
+          "median_per_game": 321.0,
+          "p95_per_game": 372.0,
+          "games_positive": 512
+        },
+        "feed_no_animal": {
+          "total": 49967,
+          "mean_per_game": 97.591796875,
+          "median_per_game": 95.0,
+          "p95_per_game": 108.0,
+          "games_positive": 512
+        },
+        "feed_no_wheat": {
+          "total": 147,
+          "mean_per_game": 0.287109375,
+          "median_per_game": 0.0,
+          "p95_per_game": 2.0,
+          "games_positive": 61
+        }
+      },
+      "invalid_feed": {
+        "total": 79793,
+        "mean_per_game": 155.845703125,
+        "median_per_game": 151.0,
+        "p95_per_game": 175.0,
+        "games_positive": 512
+      },
+      "invalid_feed_mean_wins": 155.06711409395973,
+      "invalid_feed_mean_losses": 161.2
+    },
+    {
+      "opponent": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 512,
+      "score_rate": 0.83203125,
+      "mean_cash": 86943.134765625,
+      "mean_margin": 4953.833984375,
+      "service": {
+        "care_already": {
+          "total": 29124,
+          "mean_per_game": 56.8828125,
+          "median_per_game": 55.0,
+          "p95_per_game": 65.0,
+          "games_positive": 512
+        },
+        "care_effective": {
+          "total": 88861,
+          "mean_per_game": 173.556640625,
+          "median_per_game": 168.0,
+          "p95_per_game": 196.0,
+          "games_positive": 512
+        },
+        "care_intent": {
+          "total": 167827,
+          "mean_per_game": 327.787109375,
+          "median_per_game": 318.0,
+          "p95_per_game": 366.0,
+          "games_positive": 512
+        },
+        "care_no_animal": {
+          "total": 49842,
+          "mean_per_game": 97.34765625,
+          "median_per_game": 95.0,
+          "p95_per_game": 106.0,
+          "games_positive": 512
+        },
+        "feed_already": {
+          "total": 29693,
+          "mean_per_game": 57.994140625,
+          "median_per_game": 56.0,
+          "p95_per_game": 67.0,
+          "games_positive": 512
+        },
+        "feed_effective": {
+          "total": 89786,
+          "mean_per_game": 175.36328125,
+          "median_per_game": 170.0,
+          "p95_per_game": 198.0,
+          "games_positive": 512
+        },
+        "feed_intent": {
+          "total": 169583,
+          "mean_per_game": 331.216796875,
+          "median_per_game": 321.0,
+          "p95_per_game": 372.0,
+          "games_positive": 512
+        },
+        "feed_no_animal": {
+          "total": 49967,
+          "mean_per_game": 97.591796875,
+          "median_per_game": 95.0,
+          "p95_per_game": 108.0,
+          "games_positive": 512
+        },
+        "feed_no_wheat": {
+          "total": 137,
+          "mean_per_game": 0.267578125,
+          "median_per_game": 0.0,
+          "p95_per_game": 1.0,
+          "games_positive": 71
+        }
+      },
+      "invalid_feed": {
+        "total": 79797,
+        "mean_per_game": 155.853515625,
+        "median_per_game": 151.0,
+        "p95_per_game": 175.0,
+        "games_positive": 512
+      },
+      "invalid_feed_mean_wins": 154.70892018779344,
+      "invalid_feed_mean_losses": 161.52325581395348
+    },
+    {
+      "opponent": "local_prt_v6",
+      "games": 512,
+      "score_rate": 0.86328125,
+      "mean_cash": 87012.3984375,
+      "mean_margin": 4116.173828125,
+      "service": {
+        "care_already": {
+          "total": 29118,
+          "mean_per_game": 56.87109375,
+          "median_per_game": 55.0,
+          "p95_per_game": 65.0,
+          "games_positive": 512
+        },
+        "care_effective": {
+          "total": 88871,
+          "mean_per_game": 173.576171875,
+          "median_per_game": 168.0,
+          "p95_per_game": 196.0,
+          "games_positive": 512
+        },
+        "care_intent": {
+          "total": 167826,
+          "mean_per_game": 327.78515625,
+          "median_per_game": 318.0,
+          "p95_per_game": 366.0,
+          "games_positive": 512
+        },
+        "care_no_animal": {
+          "total": 49837,
+          "mean_per_game": 97.337890625,
+          "median_per_game": 95.0,
+          "p95_per_game": 106.0,
+          "games_positive": 512
+        },
+        "feed_already": {
+          "total": 29689,
+          "mean_per_game": 57.986328125,
+          "median_per_game": 56.0,
+          "p95_per_game": 67.0,
+          "games_positive": 512
+        },
+        "feed_effective": {
+          "total": 89799,
+          "mean_per_game": 175.388671875,
+          "median_per_game": 170.0,
+          "p95_per_game": 198.0,
+          "games_positive": 512
+        },
+        "feed_intent": {
+          "total": 169584,
+          "mean_per_game": 331.21875,
+          "median_per_game": 321.0,
+          "p95_per_game": 372.0,
+          "games_positive": 512
+        },
+        "feed_no_animal": {
+          "total": 49961,
+          "mean_per_game": 97.580078125,
+          "median_per_game": 95.0,
+          "p95_per_game": 108.0,
+          "games_positive": 512
+        },
+        "feed_no_wheat": {
+          "total": 135,
+          "mean_per_game": 0.263671875,
+          "median_per_game": 0.0,
+          "p95_per_game": 1.0,
+          "games_positive": 62
+        }
+      },
+      "invalid_feed": {
+        "total": 79785,
+        "mean_per_game": 155.830078125,
+        "median_per_game": 151.0,
+        "p95_per_game": 175.0,
+        "games_positive": 512
+      },
+      "invalid_feed_mean_wins": 154.51131221719456,
+      "invalid_feed_mean_losses": 164.15714285714284
+    }
+  ],
+  "elapsed_seconds": 295.04364642300004
+}

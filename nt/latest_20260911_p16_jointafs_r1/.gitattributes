@@ -1,0 +1,11 @@
+*.so binary
+*.gz binary
+*.tar.gz binary
+*.json text eol=lf
+*.jsonl text eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.md text eol=lf
+# The frozen Agent manifest hashes exact bytes, including source line endings.
+agent/** -text

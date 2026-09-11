@@ -1,0 +1,18 @@
+{
+  "done": 1100,
+  "total": 1100,
+  "elapsed_seconds_this_run": 324.621934917,
+  "summary": {
+    "games": 1100,
+    "wins": 856,
+    "losses": 240,
+    "ties": 4,
+    "errors": 0,
+    "win_rate": 0.7781818181818182,
+    "mean_cash": 106716.93363636364,
+    "median_cash": 103506.0,
+    "mean_margin": 14457.565454545454,
+    "median_margin": 4844.0,
+    "max_latency_seconds": 0.8120974370000056
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "schema": "kaggriculture.latest_public6_20260822_route_bank.v1",
+  "generated_at_utc": "2026-08-22T08:03:26.766889+00:00",
+  "status": "PASS",
+  "base_bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\latest_public8_route_bank_v1.npz",
+  "base_bank_sha256": "f0515ca9e59b3d899b89aa12ad9aacc6acdd2d7b9be85ef58eb4d48f7b9b4c20",
+  "source_manifest": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\manifest.json",
+  "source_manifest_sha256": "895dcde8b59a1b2c12c1c56b0cb93b4290e80b982afa47a617908f20492c06ad",
+  "base_routes": 15,
+  "unique_routes": 20,
+  "aliases": [
+    {
+      "alias": "prvsiyan_moon_v92_latest__10c4s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_ACTIONS_10C4S_3Q",
+      "route_id": 0,
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__8c6s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_ACTIONS_8C6S_3Q",
+      "route_id": 1,
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__6c8s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_ACTIONS_6C8S_3Q",
+      "route_id": 2,
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__6c12s_4q_first_yarn",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "route_id": 3,
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__6c12s_4q_second_yarn",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "route_id": 4,
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__legacy_10c4s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_LEGACY_ACTIONS_10C4S_3Q",
+      "route_id": 5,
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__legacy_8c6s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_LEGACY_ACTIONS_8C6S_3Q",
+      "route_id": 6,
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__legacy_6c8s_3q",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_LEGACY_ACTIONS_6C8S_3Q",
+      "route_id": 7,
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__legacy_6c12s_4q_first_yarn",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "route_id": 3,
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "prvsiyan_moon_v92_latest__legacy_6c12s_4q_second_yarn",
+      "slug": "prvsiyan_moon_v92_latest",
+      "attribute": "_LEGACY_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "route_id": 4,
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_moon_v92_latest\\main.py",
+      "source_sha256": "ca4f2c0925c38c1cacbb7756ef791f04a45f65660ce4914ad41271ad5798e09f"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__10c4s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._ACTIONS_10C4S_3Q",
+      "route_id": 0,
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__8c6s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._ACTIONS_8C6S_3Q",
+      "route_id": 1,
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__6c8s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._ACTIONS_6C8S_3Q",
+      "route_id": 2,
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__6c12s_4q_first_yarn",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._ACTIONS_6C12S_4Q_FIRST_YARN",
+      "route_id": 3,
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__6c12s_4q_second_yarn",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._ACTIONS_6C12S_4Q_SECOND_YARN",
+      "route_id": 4,
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__legacy_10c4s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._LEGACY_ACTIONS_10C4S_3Q",
+      "route_id": 5,
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__legacy_8c6s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._LEGACY_ACTIONS_8C6S_3Q",
+      "route_id": 6,
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__legacy_6c8s_3q",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._LEGACY_ACTIONS_6C8S_3Q",
+      "route_id": 7,
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__legacy_6c12s_4q_first_yarn",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._LEGACY_ACTIONS_6C12S_4Q_FIRST_YARN",
+      "route_id": 3,
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__moon__legacy_6c12s_4q_second_yarn",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MOON._LEGACY_ACTIONS_6C12S_4Q_SECOND_YARN",
+      "route_id": 4,
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__mutoy",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MUTOY._ACTIONS",
+      "route_id": 15,
+      "action_sha256": "822c6da48bd6cffeee02c6caf95fe16b9112751fd78034f442357034ad70fffe",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__munib_base",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MUNIB_BASE._ACTIONS",
+      "route_id": 16,
+      "action_sha256": "8f94fe8ff1c58b69b38f94c62d4348a7f82880c87604de87839eb471e59c2964",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "boatlee_v21_latest__munib_front",
+      "slug": "boatlee_v21_latest",
+      "attribute": "_MUNIB_FRONT._ACTIONS",
+      "route_id": 16,
+      "action_sha256": "8f94fe8ff1c58b69b38f94c62d4348a7f82880c87604de87839eb471e59c2964",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\boatlee_v21_latest\\main.py",
+      "source_sha256": "c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8"
+    },
+    {
+      "alias": "prvsiyan_soil_v26h_latest__modal",
+      "slug": "prvsiyan_soil_v26h_latest",
+      "attribute": "_MODAL_NS['_ROUTE']",
+      "route_id": 9,
+      "action_sha256": "6194ed54ea77f4f9a9c09ac5948778bb9420ef0deef2df18d6bbf0c2ef60c983",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_soil_v26h_latest\\main.py",
+      "source_sha256": "f4b8c16395382060d23f70fa65dd376fd567ab55c430d7aee41bbe0bc117a88c"
+    },
+    {
+      "alias": "prvsiyan_soil_v26h_latest__rc5",
+      "slug": "prvsiyan_soil_v26h_latest",
+      "attribute": "_RC5_NS['_ACTIONS']",
+      "route_id": 10,
+      "action_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\prvsiyan_soil_v26h_latest\\main.py",
+      "source_sha256": "f4b8c16395382060d23f70fa65dd376fd567ab55c430d7aee41bbe0bc117a88c"
+    },
+    {
+      "alias": "kaito_v39_history_gate_latest__base_v36",
+      "slug": "kaito_v39_history_gate_latest",
+      "attribute": "_V36_ROUTE",
+      "route_id": 11,
+      "action_sha256": "8ff594fc0c180392ca25945db8febc2ffca5f4548129bd15b299f1caa41adde1",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\kaito_v39_history_gate_latest\\main.py",
+      "source_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a"
+    },
+    {
+      "alias": "kaito_v39_history_gate_latest__base_v37",
+      "slug": "kaito_v39_history_gate_latest",
+      "attribute": "_V37_ROUTE",
+      "route_id": 17,
+      "action_sha256": "ed46496b22e8febf796b0ba8145fead73e640cf63bd4b152187c113804278701",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\kaito_v39_history_gate_latest\\main.py",
+      "source_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a"
+    },
+    {
+      "alias": "kaito_v39_history_gate_latest__wool_v37",
+      "slug": "kaito_v39_history_gate_latest",
+      "attribute": "_V37_ROUTE",
+      "route_id": 18,
+      "action_sha256": "d97ab621c4dc5725712d813dfa293dd0229d3ec184346778206bbe40165b5ec7",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\kaito_v39_history_gate_latest\\main.py",
+      "source_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a"
+    },
+    {
+      "alias": "kaito_v39_history_gate_latest__alt_v37",
+      "slug": "kaito_v39_history_gate_latest",
+      "attribute": "_V37_ROUTE",
+      "route_id": 19,
+      "action_sha256": "1a03692bf793ae0461d18a8b405f40414a2c8faa1b013a5c0c55d47c9864463a",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\kaito_v39_history_gate_latest\\main.py",
+      "source_sha256": "c0298c82c2a2f9b41cd48657b63b16a9c6f07ea3ee02dc85062f807e54e8c54a"
+    },
+    {
+      "alias": "steven_e284_hadouken_latest__low",
+      "slug": "steven_e284_hadouken_latest",
+      "attribute": "_E279_LOW_ACTIONS",
+      "route_id": 12,
+      "action_sha256": "392db820b586cf306d2523188d6c064ad0ac2db94a2a3dd2995379d4c06f7438",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\steven_e284_hadouken_latest\\main.py",
+      "source_sha256": "b5c2e156689b41cea5f2e1a0a1cae2e18fd70423931bbac0885bba8b2142c497"
+    },
+    {
+      "alias": "steven_e284_hadouken_latest__high",
+      "slug": "steven_e284_hadouken_latest",
+      "attribute": "_E279_HIGH_ACTIONS",
+      "route_id": 13,
+      "action_sha256": "d5a91770836e25867e5850bfab0671737ba22ee2525b24b5083a1060be76d8d4",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\steven_e284_hadouken_latest\\main.py",
+      "source_sha256": "b5c2e156689b41cea5f2e1a0a1cae2e18fd70423931bbac0885bba8b2142c497"
+    },
+    {
+      "alias": "salem_harvestforge_x_latest__low",
+      "slug": "salem_harvestforge_x_latest",
+      "attribute": "_E279_LOW_ACTIONS",
+      "route_id": 12,
+      "action_sha256": "392db820b586cf306d2523188d6c064ad0ac2db94a2a3dd2995379d4c06f7438",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\salem_harvestforge_x_latest\\main.py",
+      "source_sha256": "d39dba50793d9777c990347443bf0c481c78adaea86055f6f6b0600dcfcd9f2e"
+    },
+    {
+      "alias": "salem_harvestforge_x_latest__high",
+      "slug": "salem_harvestforge_x_latest",
+      "attribute": "_E279_HIGH_ACTIONS",
+      "route_id": 13,
+      "action_sha256": "d5a91770836e25867e5850bfab0671737ba22ee2525b24b5083a1060be76d8d4",
+      "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest6_20260822\\salem_harvestforge_x_latest\\main.py",
+      "source_sha256": "d39dba50793d9777c990347443bf0c481c78adaea86055f6f6b0600dcfcd9f2e"
+    }
+  ],
+  "routes": [
+    {
+      "route_id": 0,
+      "canonical_name": "boatlee_v20__10c4s_3q",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 1,
+      "canonical_name": "boatlee_v20__8c6s_3q",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 2,
+      "canonical_name": "boatlee_v20__6c8s_3q",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 3,
+      "canonical_name": "boatlee_v20__6c12s_4q_first_yarn",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 4,
+      "canonical_name": "boatlee_v20__6c12s_4q_second_yarn",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 5,
+      "canonical_name": "boatlee_v20__legacy_10c4s_3q",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 6,
+      "canonical_name": "boatlee_v20__legacy_8c6s_3q",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 7,
+      "canonical_name": "boatlee_v20__legacy_6c8s_3q",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 8,
+      "canonical_name": "kaito_v27__legacy",
+      "action_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 9,
+      "canonical_name": "flexonafft_v59__modal_route",
+      "action_sha256": "6194ed54ea77f4f9a9c09ac5948778bb9420ef0deef2df18d6bbf0c2ef60c983",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 10,
+      "canonical_name": "deniz_v111_8c4s_latest__route",
+      "action_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b"
+    },
+    {
+      "route_id": 11,
+      "canonical_name": "kaito_v36_latest__route",
+      "action_sha256": "8ff594fc0c180392ca25945db8febc2ffca5f4548129bd15b299f1caa41adde1"
+    },
+    {
+      "route_id": 12,
+      "canonical_name": "x562_latest__low",
+      "action_sha256": "392db820b586cf306d2523188d6c064ad0ac2db94a2a3dd2995379d4c06f7438"
+    },
+    {
+      "route_id": 13,
+      "canonical_name": "x562_latest__high",
+      "action_sha256": "d5a91770836e25867e5850bfab0671737ba22ee2525b24b5083a1060be76d8d4"
+    },
+    {
+      "route_id": 14,
+      "canonical_name": "flex_multi_route_latest__legacy",
+      "action_sha256": "f36673adfe851695e95d2be7669a4a121736ca1920aa0ff9110b97b5c7de0de9"
+    },
+    {
+      "route_id": 15,
+      "canonical_name": "boatlee_v21_latest__mutoy",
+      "action_sha256": "822c6da48bd6cffeee02c6caf95fe16b9112751fd78034f442357034ad70fffe"
+    },
+    {
+      "route_id": 16,
+      "canonical_name": "boatlee_v21_latest__munib_base",
+      "action_sha256": "8f94fe8ff1c58b69b38f94c62d4348a7f82880c87604de87839eb471e59c2964"
+    },
+    {
+      "route_id": 17,
+      "canonical_name": "kaito_v39_history_gate_latest__base_v37",
+      "action_sha256": "ed46496b22e8febf796b0ba8145fead73e640cf63bd4b152187c113804278701"
+    },
+    {
+      "route_id": 18,
+      "canonical_name": "kaito_v39_history_gate_latest__wool_v37",
+      "action_sha256": "d97ab621c4dc5725712d813dfa293dd0229d3ec184346778206bbe40165b5ec7"
+    },
+    {
+      "route_id": 19,
+      "canonical_name": "kaito_v39_history_gate_latest__alt_v37",
+      "action_sha256": "1a03692bf793ae0461d18a8b405f40414a2c8faa1b013a5c0c55d47c9864463a"
+    }
+  ],
+  "bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\latest_public6_20260822_route_bank_v1.npz",
+  "bank_sha256": "f1fa53d5f40a224e030cc9d89ae243622551ae6765ac71767c5c794a5712c324",
+  "truth_boundary": "This bank freezes raw 719-step action tapes only. Dynamic Python routing and overlays require separate controller parity acceptance."
+}

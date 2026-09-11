@@ -1,0 +1,15 @@
+{
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-ffp-contract=off",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/animal_unit.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/animal_unit_o3/probe"
+  ],
+  "returncode": 0,
+  "seconds": 1.8139442680000002,
+  "run_returncode": 0,
+  "stderr": ""
+}

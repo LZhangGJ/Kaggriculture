@@ -1,0 +1,23 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa_same_shop_route_map.v1",
+  "generated_at_utc": "2026-08-24T03:48:00+00:00",
+  "source_map": "experiments/front40_fusion_v1/artifacts/hasegawa_fc24b_optimized_shop_map_train544_v9.json",
+  "source_holdout": "experiments/front40_fusion_v1/receipts/hasegawa_v6_v9_vs_fc24b_holdout192001_n256x2_v1.json",
+  "shop_order": [
+    "BAKERY", "BRUNCH_SPOT", "FARMERS_MARKET", "ICE_CREAM_SHOP",
+    "PET_CAFE", "PIZZA_SHOP", "SMOOTHIE_SHOP", "YARN_STORE"
+  ],
+  "route_ids": [31, 6, 25, 140, 67, 84, 118, 0],
+  "routes": [
+    {"shop_id": 0, "shop": "BAKERY", "route_id": 31},
+    {"shop_id": 1, "shop": "BRUNCH_SPOT", "route_id": 6},
+    {"shop_id": 2, "shop": "FARMERS_MARKET", "route_id": 25},
+    {"shop_id": 3, "shop": "ICE_CREAM_SHOP", "route_id": 140},
+    {"shop_id": 4, "shop": "PET_CAFE", "route_id": 67},
+    {"shop_id": 5, "shop": "PIZZA_SHOP", "route_id": 84},
+    {"shop_id": 6, "shop": "SMOOTHIE_SHOP", "route_id": 118},
+    {"shop_id": 7, "shop": "YARN_STORE", "route_id": 0}
+  ],
+  "selection_rule": "V9 with independently harmful Ice route 58 reverted to V6 route 140",
+  "status": "DEVELOPMENT_ONLY"
+}

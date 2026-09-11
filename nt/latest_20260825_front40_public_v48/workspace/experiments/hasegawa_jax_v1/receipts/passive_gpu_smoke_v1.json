@@ -1,0 +1,43 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_arena.v1",
+  "generated_at_utc": "2026-08-20T06:59:14.328685+00:00",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "steps": 719,
+  "seed_start": 140001,
+  "results": [
+    {
+      "opponent": "passive",
+      "hasegawa_seat": 0,
+      "batch": 8,
+      "compile_and_first_seconds": 44.053892438000005,
+      "steady_seconds": 13.912716427999996,
+      "steady_transitions_per_second": 413.43471850140133,
+      "all_done": true,
+      "hard_error_total": 0,
+      "hasegawa_win_rate": 1.0,
+      "hasegawa_cash_mean": 100394.0,
+      "opponent_cash_mean": 3000.0,
+      "mean_margin": 97394.0,
+      "route_switch_mean": 9.0,
+      "final_unique_routes": 8
+    },
+    {
+      "opponent": "passive",
+      "hasegawa_seat": 1,
+      "batch": 8,
+      "compile_and_first_seconds": 43.389248210000005,
+      "steady_seconds": 13.471599069999996,
+      "steady_transitions_per_second": 426.9723267528924,
+      "all_done": true,
+      "hard_error_total": 0,
+      "hasegawa_win_rate": 1.0,
+      "hasegawa_cash_mean": 93949.625,
+      "opponent_cash_mean": 3000.0,
+      "mean_margin": 90949.625,
+      "route_switch_mean": 8.625,
+      "final_unique_routes": 8
+    }
+  ],
+  "status": "PASS"
+}

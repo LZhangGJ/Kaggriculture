@@ -1,0 +1,486 @@
+{
+  "status": "COMPLETE_CROSS300_NOT_PROMOTION",
+  "plan_entries": 300,
+  "semantic_unique": 300,
+  "behavior_unique_96_worlds": 299,
+  "games": 28800,
+  "new_games": 19200,
+  "reused_games": 9600,
+  "official_games": 12,
+  "matrix": [
+    {
+      "source": "R02_F001_E104469027_P0",
+      "opponent": "R02_F001_E104469027_P0",
+      "mean_winrate": 0.3996875,
+      "max_wins": 22,
+      "min_wins": 9,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R02_F001_E104469027_P0",
+      "opponent": "R03_F001_E104234696_P0",
+      "mean_winrate": 0.556875,
+      "max_wins": 24,
+      "min_wins": 8,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R02_F001_E104469027_P0",
+      "opponent": "R05_F001_E104180967_P0",
+      "mean_winrate": 0.9315625,
+      "max_wins": 32,
+      "min_wins": 18,
+      "plans_ge90": 85,
+      "plans_all_wins": 22
+    },
+    {
+      "source": "R03_F001_E104234696_P0",
+      "opponent": "R02_F001_E104469027_P0",
+      "mean_winrate": 0.415625,
+      "max_wins": 23,
+      "min_wins": 10,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R03_F001_E104234696_P0",
+      "opponent": "R03_F001_E104234696_P0",
+      "mean_winrate": 0.62625,
+      "max_wins": 27,
+      "min_wins": 13,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R03_F001_E104234696_P0",
+      "opponent": "R05_F001_E104180967_P0",
+      "mean_winrate": 0.4753125,
+      "max_wins": 26,
+      "min_wins": 10,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R05_F001_E104180967_P0",
+      "opponent": "R02_F001_E104469027_P0",
+      "mean_winrate": 0.2675,
+      "max_wins": 19,
+      "min_wins": 2,
+      "plans_ge90": 0,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R05_F001_E104180967_P0",
+      "opponent": "R03_F001_E104234696_P0",
+      "mean_winrate": 0.7340625,
+      "max_wins": 29,
+      "min_wins": 4,
+      "plans_ge90": 2,
+      "plans_all_wins": 0
+    },
+    {
+      "source": "R05_F001_E104180967_P0",
+      "opponent": "R05_F001_E104180967_P0",
+      "mean_winrate": 0.99625,
+      "max_wins": 32,
+      "min_wins": 28,
+      "plans_ge90": 99,
+      "plans_all_wins": 95
+    }
+  ],
+  "best_balanced": {
+    "uid": "R03_F001_E104234696_P0:027",
+    "source": "R03_F001_E104234696_P0",
+    "source_team": "Driz Lo",
+    "index": 27,
+    "plan_id": "a882fe77385f5e59",
+    "plan": [
+      {
+        "family": "EXPAND_NEW",
+        "kind": 0,
+        "amount": 4
+      },
+      {
+        "family": "REBUILD_NEW",
+        "kind": 0,
+        "amount": 1
+      },
+      {
+        "family": "REBUILD_NEW",
+        "kind": 0,
+        "amount": 4
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 3,
+        "amount": 4
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 11,
+        "amount": 1
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 11,
+        "amount": 1
+      },
+      {
+        "family": "DEFER_NEW",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      }
+    ],
+    "opponents": {
+      "R02_F001_E104469027_P0": {
+        "games": 32,
+        "wins": 23,
+        "ties": 0,
+        "mean_cash": 99432.5625,
+        "mean_opponent_cash": 90546.1875,
+        "mean_margin": 8886.375,
+        "missing_recipe": 40
+      },
+      "R03_F001_E104234696_P0": {
+        "games": 32,
+        "wins": 27,
+        "ties": 0,
+        "mean_cash": 108612.46875,
+        "mean_opponent_cash": 92289.3125,
+        "mean_margin": 16323.15625,
+        "missing_recipe": 20
+      },
+      "R05_F001_E104180967_P0": {
+        "games": 32,
+        "wins": 26,
+        "ties": 0,
+        "mean_cash": 103970.90625,
+        "mean_opponent_cash": 87267.75,
+        "mean_margin": 16703.15625,
+        "missing_recipe": 38
+      }
+    },
+    "min_wins": 23,
+    "total_wins": 76,
+    "mean_margin": 13970.895833333334,
+    "mean_cash": 104005.3125,
+    "missing_recipe": 98
+  },
+  "best_overall": {
+    "uid": "R03_F001_E104234696_P0:027",
+    "source": "R03_F001_E104234696_P0",
+    "source_team": "Driz Lo",
+    "index": 27,
+    "plan_id": "a882fe77385f5e59",
+    "plan": [
+      {
+        "family": "EXPAND_NEW",
+        "kind": 0,
+        "amount": 4
+      },
+      {
+        "family": "REBUILD_NEW",
+        "kind": 0,
+        "amount": 1
+      },
+      {
+        "family": "REBUILD_NEW",
+        "kind": 0,
+        "amount": 4
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 3,
+        "amount": 4
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 11,
+        "amount": 1
+      },
+      {
+        "family": "REPLACE_NEW",
+        "kind": 11,
+        "amount": 1
+      },
+      {
+        "family": "DEFER_NEW",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      },
+      {
+        "family": "KEEP",
+        "kind": -1,
+        "amount": 0
+      }
+    ],
+    "opponents": {
+      "R02_F001_E104469027_P0": {
+        "games": 32,
+        "wins": 23,
+        "ties": 0,
+        "mean_cash": 99432.5625,
+        "mean_opponent_cash": 90546.1875,
+        "mean_margin": 8886.375,
+        "missing_recipe": 40
+      },
+      "R03_F001_E104234696_P0": {
+        "games": 32,
+        "wins": 27,
+        "ties": 0,
+        "mean_cash": 108612.46875,
+        "mean_opponent_cash": 92289.3125,
+        "mean_margin": 16323.15625,
+        "missing_recipe": 20
+      },
+      "R05_F001_E104180967_P0": {
+        "games": 32,
+        "wins": 26,
+        "ties": 0,
+        "mean_cash": 103970.90625,
+        "mean_opponent_cash": 87267.75,
+        "mean_margin": 16703.15625,
+        "missing_recipe": 38
+      }
+    },
+    "min_wins": 23,
+    "total_wins": 76,
+    "mean_margin": 13970.895833333334,
+    "mean_cash": 104005.3125,
+    "missing_recipe": 98
+  },
+  "best_per_opponent": {
+    "R02_F001_E104469027_P0": "R03_F001_E104234696_P0:027",
+    "R03_F001_E104234696_P0": "R05_F001_E104180967_P0:093",
+    "R05_F001_E104180967_P0": "R05_F001_E104180967_P0:058"
+  },
+  "all_three_ge90": 0,
+  "all_three_perfect": 0,
+  "retrospective_coverage": {
+    "R02_F001_E104469027_P0": 32,
+    "R03_F001_E104234696_P0": 32,
+    "R05_F001_E104180967_P0": 32
+  },
+  "test_seed_count": 16,
+  "production_unchanged": true,
+  "online_router": false,
+  "old_goal_still_paused": true,
+  "seconds": 555.0479381549999
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "games": 1600,
+  "differences": [],
+  "binary_sha256": "13388459309550c43cdadc1f274e50b274e8d61e62d5f4e799c86bb51943c663",
+  "seconds": 170.25377863,
+  "compared_fields": [
+    "steps",
+    "cash",
+    "opponent_cash",
+    "win",
+    "margin",
+    "error",
+    "overflow",
+    "action_hash_fnv64",
+    "ops"
+  ],
+  "wins_by_panel": {
+    "seven": 1285,
+    "710": 148
+  }
+}

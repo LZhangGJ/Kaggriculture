@@ -1,0 +1,26 @@
+{
+  "schema": "kaggriculture.front40_fusion.merged-route-columns.v1",
+  "generated_at_utc": "2026-08-24T04:00:30.726038+00:00",
+  "sources": [
+    "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_secondshop_base4_subset_seed376001_n512x2_v17.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_secondshop5_vs_fc24b_screen_seed376001_n512x2_v16.json"
+  ],
+  "seed_count": 512,
+  "route_count": 9,
+  "route_ids": [
+    33,
+    42,
+    64,
+    65,
+    67,
+    77,
+    82,
+    89,
+    96
+  ],
+  "games": 9216,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank05_mimi_secondshop9_merged_seed376001_n512x2_v18.npz",
+  "status": "PASS"
+}

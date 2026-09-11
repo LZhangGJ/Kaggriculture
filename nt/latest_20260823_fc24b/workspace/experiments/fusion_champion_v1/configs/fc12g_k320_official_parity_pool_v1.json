@@ -1,0 +1,9 @@
+{
+  "schema": "kaggriculture.official_parity_pool.v1",
+  "opponents": [
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "submission/55655402_rayk_k320_adaptive_rank1/main.py"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T18:00:14.282823+00:00",
+  "device": "cuda:0",
+  "seed_start": 920001,
+  "seed_count": 128,
+  "route_count": 1,
+  "route_ids": [
+    71
+  ],
+  "route_chunk": 8,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 256,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 14,
+      "eligible_routes": 1,
+      "top_routes": [
+        {
+          "route_id": 71,
+          "source_episode_id": 95730350,
+          "source_reward": 55860,
+          "games": 28,
+          "win_rate": 0.9285714285714286,
+          "mean_margin": 2198.6428571428573,
+          "invalid_mean": 6.714285714285714
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 0,
+      "seconds": 38.41843031900001
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 0,
+      "seconds": 36.424870657000014
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank21_saikushal185_route71_vs_fc24b_seed920001_n128x2_v3.npz",
+  "status": "PASS"
+}

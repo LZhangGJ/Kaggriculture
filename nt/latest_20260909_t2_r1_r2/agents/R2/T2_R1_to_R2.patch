@@ -1,0 +1,79 @@
+--- a/policy/triad.hpp
++++ b/policy/triad.hpp
+@@ -23,6 +23,8 @@
+  // >=2 coordinates alternatives using the SAME portfolio value; >=3 adds
+  // finite-difference market externalities to maintenance candidate generation.
+  double service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0;
++ // R2: state-checked whole-cargo delivery; no economic forecast changes.
++ double batch_delivery=0;
+ };
+ constexpr int SETTINGS_COUNT=sizeof(Settings)/sizeof(double);
+ struct Commitment {
+@@ -49,7 +51,7 @@
+   auto&p=core.p;p.max_hands=int(s.max_hands);p.max_land=int(s.max_land);p.max_animals=int(s.max_animals);
+   p.max_cows=p.max_sheep=p.max_geese=int(s.max_animals);p.max_strawberry=p.max_tomato=p.max_melon=75;
+   p.frequent_harvest=true;p.frequent_threshold=std::max(1,int(s.harvest_threshold));
+-  p.early_deposit=int(s.delivery);p.sell_deposits=true;p.continuous_market_execution=true;
++  p.early_deposit=int(s.delivery);p.triad_batch_delivery=s.batch_delivery>0;p.sell_deposits=true;p.continuous_market_execution=true;
+   p.renew_ongoing=true;p.insertion_hire_estimate=true;p.reconcile_seed_drift=true;
+   p.feed_cover_days=int(s.feed_cover);p.feed_stock_cap=60;
+   p.recover_service_inputs=p.procure_service_inputs=p.finance_service_inputs=true;
+--- a/policy/agent.py
++++ b/policy/agent.py
+@@ -59,7 +59,7 @@
+     return (ctypes.c_double*len(values))(*values)
+ 
+ DEFAULTS = {'competition': 0.8, 'supply': 0.85, 'future_shop': 0.7, 'capital_power': 0.4, 'labor_hours': 15, 'work_price': 1.2, 'animal_work': 1.0, 'reserve': 120, 'max_animals': 20, 'max_hands': 14, 'max_land': 4, 'feed_cover': 2, 'rotation': 1, 'preview': 1, 'delivery': 2, 'intraday': 1, 'service': 1, 'replant': 0.7, 'land_rent': 2, 'discount': 0.015, 'tour_dp': 0, 'layout': 0, 'repeat': 1, 'animal_bias': 1, 'crop_bias': 1, 'portfolio_passes': 1, 'crop_fert': 1, 'harvest_threshold': 1, 'delay_sale': 0, 'opening_budget': 1, 'scenario': 0, 'keep_commitments': 1}
+-DEFAULTS.update(candidate_extra=0,service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0)
++DEFAULTS.update(candidate_extra=0,service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0,batch_delivery=0)
+ _ORDER = tuple(DEFAULTS)
+ 
+ class Agent:
+--- a/policy/config.json
++++ b/policy/config.json
+@@ -35,5 +35,6 @@
+   "service_reconcile": 2,
+   "live_ledger": 0,
+   "delivery_calendar": 0,
+-  "feed_finance": 0
++  "feed_finance": 0,
++  "batch_delivery": 1
+ }
+--- a/policy/executor/policy.hpp
++++ b/policy/executor/policy.hpp
+@@ -53,6 +53,7 @@
+ struct Params {
+  bool frequent_harvest=false;int frequent_threshold=1;
+  bool triad_tour_dp=false;
++ bool triad_batch_delivery=false;
+  bool compile_consequence=false,compile_replant_choices=false;
+  bool compile_bounded_rollout=false;
+  bool exact_schedule_cache=false,incremental_regret_cost=false;
+@@ -1201,7 +1202,17 @@
+   auto&inv=o.priv.inventories[u];Counts need{};for(size_t k=plan.index;k<plan.a.size();k++){if(plan.a[k].op==Op::FEED)need[W]++;if(plan.a[k].op==Op::FERTILIZE)need[F]++;}
+   int best=-1,n=0;for(int i=0;i<9;i++){int q=std::max(0,inv[i]-need[i]);if(q<=0)continue;if(best<0||q*o.market.prices[i]>n*o.market.prices[best]){best=i;n=q;}}
+   if(best<0)return std::nullopt;
+-  if(at_depot(pos))return action(Op::PLACE,best,std::min(n,room));
++  if(at_depot(pos)){
++   if(p.triad_batch_delivery){
++    // One DROP replaces several per-product PLACE actions only when every
++    // carried item is surplus. Keep feed/fertilizer reserved for this route,
++    // and never deposit an animal that still has a placement commitment.
++    bool surplus_only=true;int quantity=0;
++    for(int i=0;i<12;i++){quantity+=inv[i];if(inv[i]>0&&(i>=9||need[i]>0))surplus_only=false;}
++    if(surplus_only&&quantity>0&&quantity<=room)return action(Op::DROP);
++   }
++   return action(Op::PLACE,best,std::min(n,room));
++  }
+   if(p.early_deposit<2||remaining>0||near(pos)+2>time)return std::nullopt;
+   int dest=depot[0];for(int d:depot)if(dist(pos,d)<dist(pos,dest))dest=d;Plan route;walk(route,pos,dest);return route.a.empty()?std::nullopt:std::optional(route.a[0]);
+  }
+@@ -1297,7 +1308,7 @@
+   if(o.day!=day)new_day(o);
+   if(!resume_compiled_tick){if(auto recovery=recover(o))return *recovery;if(auto repair=reconcile_seeds(o))return *repair;intraday::complete_pending(*this,o);if(phase==3)recoordinate(o);service::recover(*this,o);exchange::apply(*this,o);dispatch_idle(o);dispatch_midroute(o);}
+   resume_compiled_tick=false;
+-  bool preparing=phase==1;Acts prep;if(preparing&&(p.preparation_work||p.preparation_pipeline_v2)){if(p.preparation_pipeline_v2){preparation_pipeline_checks++;prep=preparation_pipeline(o);}else prep=preparation_prefix(o);}PlayerAction out;if(phase==1){int n=std::min(10,int(queue.size()));out.market.assign(queue.begin(),queue.begin()+n);queue.erase(queue.begin(),queue.begin()+n);if(queue.empty())phase=2;}else if(phase==2){compile(o);out.market=market(o);}else out.market=market(o);if(out.market.size()>10)out.market.resize(10);int n=1+o.own.hands.size();out.units.resize(n);Counts pickup{},plant_used{},early_placed{};int drop_qty=0;if(phase==3)for(int u=0;u<n;u++){auto&pl=plans.at(u);if(auto early=early_deposit_action(o,u,pl,100-sum(o.priv.shed)+sum(pickup)-drop_qty)){out.units[u]=*early;if(early->op==Op::PLACE){early_placed[int(early->item)]+=early->quantity;drop_qty+=early->quantity;}continue;}while(pl.index<pl.a.size()){
++  bool preparing=phase==1;Acts prep;if(preparing&&(p.preparation_work||p.preparation_pipeline_v2)){if(p.preparation_pipeline_v2){preparation_pipeline_checks++;prep=preparation_pipeline(o);}else prep=preparation_prefix(o);}PlayerAction out;if(phase==1){int n=std::min(10,int(queue.size()));out.market.assign(queue.begin(),queue.begin()+n);queue.erase(queue.begin(),queue.begin()+n);if(queue.empty())phase=2;}else if(phase==2){compile(o);out.market=market(o);}else out.market=market(o);if(out.market.size()>10)out.market.resize(10);int n=1+o.own.hands.size();out.units.resize(n);Counts pickup{},plant_used{},early_placed{};int drop_qty=0;if(phase==3)for(int u=0;u<n;u++){auto&pl=plans.at(u);if(auto early=early_deposit_action(o,u,pl,100-sum(o.priv.shed)+sum(pickup)-drop_qty)){out.units[u]=*early;if(early->op==Op::PLACE){early_placed[int(early->item)]+=early->quantity;drop_qty+=early->quantity;}else if(early->op==Op::DROP){add(early_placed,o.priv.inventories[u]);drop_qty+=sum(o.priv.inventories[u]);}continue;}while(pl.index<pl.a.size()){
+    if(p.fix_logistics&&pl.a[pl.index].op==Op::DROP){int pos=cell(u?o.own.hands[u-1]:o.own.farmer);if(at_depot(pos)){int qty=sum(o.priv.inventories[u]);int room=100-sum(o.priv.shed)+sum(pickup)-drop_qty;if(qty>room)break;drop_qty+=qty;}}
+    size_t k=pl.index++;auto a=valid(o,u,pl.a[k],pl.target[k],pickup,plant_used);if(a){out.units[u]=*a;break;}}}
+   if(p.sell_deposits&&sum(early_placed)>0){for(int i=0;i<9;i++)if(i==W||i==F)early_placed[i]=0;auto sales=sales_sorted(o,early_placed);sales.insert(sales.end(),out.market.begin(),out.market.end());if(sales.size()>10)sales.resize(10);out.market=std::move(sales);}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "execution_contracts",
+    "output": "{\"status\":\"PASS\",\"checks\":30}"
+  },
+  {
+    "name": "takeover_contracts",
+    "output": "{\"status\":\"PASS\",\"checks\":28}"
+  },
+  {
+    "name": "test_startup_supply",
+    "output": "PASS: initial-only, private isolation, finite legal net flows, existing-crop guard, MPC proposal propagation and valuation effect, real next-day clear"
+  },
+  {
+    "name": "integration_contracts",
+    "output": "{\"status\":\"PASS\",\"checks\":38,\"feed_actions\":4,\"hire_actions\":0,\"hire_shortfalls\":0}"
+  },
+  {
+    "name": "joint_contracts",
+    "output": "{\"status\":\"PASS\",\"checks\":61,\"bundles\":3}"
+  }
+]

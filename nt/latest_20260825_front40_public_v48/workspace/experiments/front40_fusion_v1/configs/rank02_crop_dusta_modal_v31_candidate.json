@@ -1,0 +1,12 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace_candidate_manifest.v1",
+  "candidates": [
+    {
+      "name": "rank02_crop_dusta_modal_shop_prefix_v31",
+      "family": "rank02_crop_dusta_modal_shop_prefix",
+      "bank": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_modal_shop_prefix_trace_bank_v31.npz",
+      "route_map": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_modal_first_shop_map_v31.json",
+      "second_route_map": "experiments/front40_fusion_v1/artifacts/rank02_crop_dusta_modal_second_shop_map_v31.json"
+    }
+  ]
+}

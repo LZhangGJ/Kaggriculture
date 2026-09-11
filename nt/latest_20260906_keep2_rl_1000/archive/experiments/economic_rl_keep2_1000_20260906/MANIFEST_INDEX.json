@@ -1,0 +1,65 @@
+{
+  "files": {
+    "independent1000.py": {
+      "bytes": 6510,
+      "sha256": "94cd2a94c9357d8463ee884c97aad1c4beeacfa394ca9f0043c8913357ac0d11"
+    },
+    "run_to1000.py": {
+      "bytes": 3639,
+      "sha256": "95d0520b1f1f5a0e7f317a2413a4bb9f91e9336b6be33fecd36e3aa8339505b4"
+    },
+    "summarize_stage.py": {
+      "bytes": 2267,
+      "sha256": "79e8393b89ac69272cd269f2eb06dc3c171fc404802c54742f582adba034661c"
+    },
+    "PLAN_ZH.md": {
+      "bytes": 3631,
+      "sha256": "78ffaf9ef6b964d4880ef39adeeb11836158df16ef942ccc45b20752fd28c871"
+    },
+    "CURRENT_STATUS.json": {
+      "bytes": 107,
+      "sha256": "6af52cce2d1666279432f2c5af7ed8696b333deca2a48df17d0aa2e358e0ebca"
+    },
+    "MILESTONES.json": {
+      "bytes": 2276,
+      "sha256": "cedb9e66dff0c93c659a198b52b96ca88273e614c831f0562341547c54d5b333"
+    },
+    "FINAL_SUMMARY_ZH.md": {
+      "bytes": 4289,
+      "sha256": "4b1414ae59e78874fbf602cc79292c613f19682013ff81d1ebbe5514bf587cde"
+    },
+    "independent1000/MANIFEST.json": {
+      "bytes": 18693,
+      "sha256": "47ade4c91fbbd873af2c3af1f5c1b229ec21a61ba22c04ceebd0d45f00f0ea97"
+    },
+    "stages/round0400/MANIFEST.json": {
+      "bytes": 419630,
+      "sha256": "2a6a67da809b46b3aa6ee4fb101fef22fd51db9b8a6d771b410fde9e0047c529"
+    },
+    "stages/round0500/MANIFEST.json": {
+      "bytes": 419628,
+      "sha256": "16cb9319f377fa33635f0fb87cb43a2f113d3c04c1db83e6cf37834eb944a6bc"
+    },
+    "stages/round0600/MANIFEST.json": {
+      "bytes": 419628,
+      "sha256": "905be7b5187af78717c5f1f2c936b2abf13e020d57c8b41494e74b480eac862e"
+    },
+    "stages/round0700/MANIFEST.json": {
+      "bytes": 419629,
+      "sha256": "d6060a14468a24e9bf1afeda609b68bef48f25757195d918ae52cd4f6b2a3ccc"
+    },
+    "stages/round0800/MANIFEST.json": {
+      "bytes": 419628,
+      "sha256": "a8813ce220ddbe85b6ab9d785fbef48780adad1fea9a0352901de2218456dc75"
+    },
+    "stages/round0900/MANIFEST.json": {
+      "bytes": 419632,
+      "sha256": "e7863c2cf04e5f7cc9a7087ef682b4a16809856c392b0fe5e250af23636f6a6f"
+    },
+    "stages/round1000/MANIFEST.json": {
+      "bytes": 419711,
+      "sha256": "53f97b4f6bb824cf0f7c267bdaebddf659e01fa6b7258eca0af1a7e5c462a671"
+    }
+  },
+  "stage_payloads": "Recursively covered by each immutable stage MANIFEST.json"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "version": "P16 JointAFS R1",
+  "archive_sha256": "c421a416b538df4eb4ad2da2d7598504c52dedd691537ab6fc246c3dec6c8d8d",
+  "bytes": 982521,
+  "files": {
+    "afs_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "afs_runtime/agent.so": "7a8783c776ab8c01e3370685f6de6f8b6a43ea409ab710fbe9330f165560950f",
+    "afs_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "afs_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "main.py": "c34a392965f21bf62ed353d9e3b13ff2ffa2335f883aeffb0eb4fa9d81878c6e"
+  },
+  "no_replays_or_credentials": true,
+  "no_runtime_compilation": true
+}

@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "source_manifest_files_verified": {
+    "economic_rl_keep2_100_20260906": 2644,
+    "round0700": 2636
+  },
+  "models": {
+    "control_r0": {
+      "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/control_r0/step700.pt",
+      "source_sha": "4215f3c0c167305d7bd50bf5c5b5647558964832e89fc33584b553b1bdeda0c9",
+      "bin_sha": "f16e3706a4448f955c916d4fccd975412734df4d47158671bbd71875abf5fe8c",
+      "before": {
+        "parameters_with_state": 12,
+        "steps": [
+          39200
+        ],
+        "momentum_l1": 6.311620963065638,
+        "variance_l1": 0.09969206525420311
+      },
+      "after_smoke_update": {
+        "parameters_with_state": 12,
+        "steps": [
+          39204
+        ],
+        "momentum_l1": 13.207220683675184,
+        "variance_l1": 0.10001447124523118
+      },
+      "cpp_torch": {
+        "prob": 1.0728836059570312e-06,
+        "value": 1.7285346984863281e-06,
+        "logp": 2.6226043701171875e-06,
+        "ratio": 2.6226043701171875e-06
+      },
+      "restored_exact": true,
+      "next_update_exact": true,
+      "update": {
+        "loss": 0.040639396756887436,
+        "value_loss": 0.09841129183769226,
+        "entropy": 0.7557414919137955,
+        "approx_kl": 2.7141592123115788e-05,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.43291080743074417,
+        "aux_loss": 0.0,
+        "host_to_device_seconds": 0.0010304809993613162,
+        "peak_gpu_allocated_mib": 81.0439453125
+      }
+    },
+    "aux_r0": {
+      "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/aux_r0/step700.pt",
+      "source_sha": "78fdce47836e42a712ce9c961699d137b1228ffd30f7fa60962126712f73ec2a",
+      "bin_sha": "881dc0e700ea6def37ac1841871fd807ba3b988142451af4ce4fb9d989fafaf9",
+      "before": {
+        "parameters_with_state": 14,
+        "steps": [
+          39200
+        ],
+        "momentum_l1": 6.347348030419576,
+        "variance_l1": 0.12006537325243032
+      },
+      "after_smoke_update": {
+        "parameters_with_state": 14,
+        "steps": [
+          39204
+        ],
+        "momentum_l1": 16.840472453643518,
+        "variance_l1": 0.12048489344193329
+      },
+      "cpp_torch": {
+        "prob": 1.4603137969970703e-06,
+        "value": 1.4901161193847656e-06,
+        "logp": 5.245208740234375e-06,
+        "ratio": 5.245208740234375e-06
+      },
+      "restored_exact": true,
+      "next_update_exact": true,
+      "update": {
+        "loss": 0.016276618000119925,
+        "value_loss": 0.057170978747308254,
+        "entropy": 1.0562165677547455,
+        "approx_kl": 0.0001133736213974057,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.6058395281434059,
+        "aux_loss": 0.010308170691132545,
+        "host_to_device_seconds": 0.0007382920002783067,
+        "peak_gpu_allocated_mib": 82.34814453125
+      }
+    },
+    "control_r1": {
+      "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/control_r1/step700.pt",
+      "source_sha": "dea151e8527bed4ce4bccc85cc069d64338265e27392a56dd9a4c4b6dd6ca8cc",
+      "bin_sha": "137cf36e7d30971c9cc95feafd756c498ff861497373df103041b80925e4f176",
+      "before": {
+        "parameters_with_state": 12,
+        "steps": [
+          39200
+        ],
+        "momentum_l1": 5.581114007477135,
+        "variance_l1": 0.09592013888322991
+      },
+      "after_smoke_update": {
+        "parameters_with_state": 12,
+        "steps": [
+          39204
+        ],
+        "momentum_l1": 14.885184984041208,
+        "variance_l1": 0.0964453116612277
+      },
+      "cpp_torch": {
+        "prob": 1.6093254089355469e-06,
+        "value": 1.5497207641601562e-06,
+        "logp": 5.841255187988281e-06,
+        "ratio": 5.781650543212891e-06
+      },
+      "restored_exact": true,
+      "next_update_exact": true,
+      "update": {
+        "loss": 0.05143237952142954,
+        "value_loss": 0.12099101394414902,
+        "entropy": 0.673716738820076,
+        "approx_kl": 0.00013189236289171125,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.6654208078980446,
+        "aux_loss": 0.0,
+        "host_to_device_seconds": 0.0007763169996906072,
+        "peak_gpu_allocated_mib": 82.62548828125
+      }
+    },
+    "aux_r1": {
+      "source": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/economic_rl_keep2_1000_20260906/stages/round0700/training/aux_r1/step700.pt",
+      "source_sha": "a68ce8c2f54421ae6afd6d99f7d8c46242a9af7d499e88c91cf030a11996f682",
+      "bin_sha": "075d7c1b8392fd096ed6ca6794d4638373040a32cdc552bb417c97e10b402de3",
+      "before": {
+        "parameters_with_state": 14,
+        "steps": [
+          39200
+        ],
+        "momentum_l1": 6.998256076598917,
+        "variance_l1": 0.12375446819567774
+      },
+      "after_smoke_update": {
+        "parameters_with_state": 14,
+        "steps": [
+          39204
+        ],
+        "momentum_l1": 17.559596379158425,
+        "variance_l1": 0.1242586996531259
+      },
+      "cpp_torch": {
+        "prob": 1.4603137969970703e-06,
+        "value": 1.1324882507324219e-06,
+        "logp": 4.5299530029296875e-06,
+        "ratio": 4.470348358154297e-06
+      },
+      "restored_exact": true,
+      "next_update_exact": true,
+      "update": {
+        "loss": 0.04112144559621811,
+        "value_loss": 0.1091884896159172,
+        "entropy": 1.1179345548152924,
+        "approx_kl": 0.00015120566314574813,
+        "clip_fraction": 0.0,
+        "gradient_norm": 0.5526470243930817,
+        "aux_loss": 0.008015420055016875,
+        "host_to_device_seconds": 0.0007665920002182247,
+        "peak_gpu_allocated_mib": 82.62548828125
+      }
+    }
+  },
+  "preflight_games": 56,
+  "preflight_seeds": [
+    70400040,
+    70400041
+  ],
+  "native_kernel_recompiled": false
+}

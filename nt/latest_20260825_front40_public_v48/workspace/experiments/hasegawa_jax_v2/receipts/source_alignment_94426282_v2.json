@@ -1,0 +1,53 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_v2.source_alignment",
+  "replay": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis_input\\replays\\2026-08-19\\94426282.json",
+  "seed": 962543821,
+  "player": 0,
+  "source_reward": 168259,
+  "jax_final_cash": 168259,
+  "cash_exact_match": true,
+  "invalid_intents": 0,
+  "resyncs": 0,
+  "market_trims": 0,
+  "hard_counters": 0,
+  "first_cash_mismatch_action_step": null,
+  "first_invalid_action_step": null,
+  "first_market_trim_action_step": null,
+  "first_20_nonzero_invalid_steps": [],
+  "branch_at_step72": 8,
+  "milestones": {
+    "1": {
+      "source": 140,
+      "jax": 140
+    },
+    "24": {
+      "source": 139,
+      "jax": 139
+    },
+    "72": {
+      "source": 355,
+      "jax": 355
+    },
+    "144": {
+      "source": 802,
+      "jax": 802
+    },
+    "264": {
+      "source": 13553,
+      "jax": 13553
+    },
+    "384": {
+      "source": 25627,
+      "jax": 25627
+    },
+    "600": {
+      "source": 117010,
+      "jax": 117010
+    },
+    "719": {
+      "source": 168259,
+      "jax": 168259
+    }
+  },
+  "status": "PASS"
+}

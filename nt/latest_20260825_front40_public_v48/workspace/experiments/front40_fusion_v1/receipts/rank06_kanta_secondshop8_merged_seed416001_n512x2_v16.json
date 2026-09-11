@@ -1,0 +1,25 @@
+{
+  "schema": "kaggriculture.front40_fusion.merged-route-columns.v1",
+  "generated_at_utc": "2026-08-24T05:18:28.971265+00:00",
+  "sources": [
+    "experiments\\front40_fusion_v1\\receipts\\rank06_kanta_map3_vs_fc24b_screen_seed416001_n512x2_v7.json",
+    "experiments\\front40_fusion_v1\\receipts\\rank06_kanta_secondshop5_vs_fc24b_screen_seed416001_n512x2_v15.json"
+  ],
+  "seed_count": 512,
+  "route_count": 8,
+  "route_ids": [
+    2,
+    3,
+    35,
+    56,
+    64,
+    86,
+    91,
+    118
+  ],
+  "games": 8192,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank06_kanta_secondshop8_merged_seed416001_n512x2_v16.npz",
+  "status": "PASS"
+}

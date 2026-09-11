@@ -1,0 +1,99 @@
+{
+  "status": "PASS_GOAL_COMPLETE_RETAIN_PRIOR_BEST",
+  "winner": "J7_03",
+  "winner_plan_index": 1495,
+  "score": [
+    0.275,
+    0.5885714285714285,
+    6304.387142857143
+  ],
+  "selection_order": [
+    "J7_03",
+    "S9",
+    "FIXED_OPENING",
+    "DP27"
+  ],
+  "per_opponent": [
+    {
+      "opponent": "g001",
+      "wins": 107,
+      "games": 200,
+      "win_rate": 0.535,
+      "mean_cash": 102510.295,
+      "mean_margin": 2036.28
+    },
+    {
+      "opponent": "g003",
+      "wins": 200,
+      "games": 200,
+      "win_rate": 1.0,
+      "mean_cash": 116070.24,
+      "mean_margin": 19823.59
+    },
+    {
+      "opponent": "boatlee_v29",
+      "wins": 55,
+      "games": 200,
+      "win_rate": 0.275,
+      "mean_cash": 98532.79,
+      "mean_margin": -7031.495
+    },
+    {
+      "opponent": "kaito_v58",
+      "wins": 200,
+      "games": 200,
+      "win_rate": 1.0,
+      "mean_cash": 122254.31,
+      "mean_margin": 38384.5
+    },
+    {
+      "opponent": "lynn_v5",
+      "wins": 105,
+      "games": 200,
+      "win_rate": 0.525,
+      "mean_cash": 108444.465,
+      "mean_margin": 1416.365
+    },
+    {
+      "opponent": "yhay81_six_day",
+      "wins": 70,
+      "games": 200,
+      "win_rate": 0.35,
+      "mean_cash": 99701.63,
+      "mean_margin": -6471.885
+    },
+    {
+      "opponent": "yhay81_three_day",
+      "wins": 87,
+      "games": 200,
+      "win_rate": 0.435,
+      "mean_cash": 98449.155,
+      "mean_margin": -4026.645
+    }
+  ],
+  "stages": {
+    "p0": "PASS_FROZEN_HASH_DIAGNOSTIC_RESET_SWITCH_PARITY",
+    "p1": "COMPLETE_1494_83664_GAMES",
+    "p2": "PASS_REPRESENTATIVE_QUALITY_REVIEW",
+    "p3_train": "COMPLETE",
+    "p4_final": "COMPLETE_5600_GAMES_NOT_YET_DEPLOYMENT_ACCEPTED",
+    "dynamic_plan_features": "FAIL_NO_PLAN_FEATURE_PROMOTION",
+    "official": "PASS_J7_03_OFFICIAL_OBSERVATION_ENTRY"
+  },
+  "statement": "No learned switch passed unseen-seed robustness. The strongest agent inside the frozen scope is the preserved J7_03 control; Oracle results are not deployed strength.",
+  "prohibited_actions": {
+    "kaggle_submission": false,
+    "git_push": false
+  },
+  "evidence": {
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/PLAN_ZH.md": "831bfbacc33a9a6426e2e2a58aa6376404a25e6d3b0bd20f003b262913fc11d4",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/P0_ACCEPTANCE_ZH.md": "48b61479f7a9323cac97a04a2e472fa5ac1b2f000ae6044ec8b320096c84db07",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/P2_ACCEPTANCE_ZH.md": "5507b3f8ecedb3ee1b2c2d5c165d07f1374e884b0998221b651ac35cfc734bfd",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/P3A_ACCEPTANCE_ZH.md": "ecf1ea9d8db08082b467a4c06d6c0c10fc73cf3dbaa174d18eee37a89b101249",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/P3B_TRAINING_ACCEPTANCE_ZH.md": "356a439705f07a8f1901420436555d23a800a02cdafb6613d32fc824d590402f",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/P4_SELECTION_ACCEPTANCE_ZH.md": "a7155bc4a65e93a33fe555ca4ad7b1d55db29ae530fb81389191f9f2215fc5bb",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/plan_feature_v1/ACCEPTANCE_ZH.md": "226818b23be091b0a67f30f9bedcb8c809f9def979206112dcd7a6b98e31140e",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/official.json": "9858a3b1f5ae65c3d0cd30d2f3c25b6016dbd7f7c095d68a46c5f9f6e5c5a0ef",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/strategy_switch7_20260905/final_local_best_v1/build.json": "92635b0dc3cab062e8d48ee9275e9918398d63d6c5aba5449efaac7b24c1ecaa"
+  }
+}

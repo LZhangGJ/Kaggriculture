@@ -1,0 +1,77 @@
+{
+  "configuration": {
+    "base_seed": 910000,
+    "batch_size": 8,
+    "controller_steps": 5752000,
+    "episodes": 1000,
+    "player": 1,
+    "steps_per_episode": 719
+  },
+  "files": {
+    "experiments/project_route_search_v2/pyproject.toml": {
+      "bytes": 588,
+      "sha256": "275359188de14011c8d490be15f29a51c750b00d343f475858ed8f4e9b8c4956"
+    },
+    "experiments/project_route_search_v2/receipts/m0_contract_freeze_v1.json": {
+      "bytes": 6004,
+      "sha256": "74adecd74f51746feb4256d2ea09ee9b0083c91cbc0688b38a317ad5c74b2b0a"
+    },
+    "experiments/project_route_search_v2/src/project_route_search_v2/constants.py": {
+      "bytes": 4080,
+      "sha256": "5195af03696fc33357d63e508bf472091550a77fd9e98785d9e4866d83bbf26b"
+    },
+    "experiments/project_route_search_v2/src/project_route_search_v2/lifecycle.py": {
+      "bytes": 13685,
+      "sha256": "6e8d31a42b986e0c3b139edf50fb3397c3ec2f53e4c017b00fd2cfd3b314c7e3"
+    },
+    "experiments/project_route_search_v2/src/project_route_search_v2/scan_carry.py": {
+      "bytes": 4153,
+      "sha256": "6c30d82832b6b24fcf8a5eec8d4a4f940e0a34a9550126e7fee77ce8b813b953"
+    },
+    "experiments/project_route_search_v2/src/project_route_search_v2/schema.py": {
+      "bytes": 13495,
+      "sha256": "fa3f878a4b4ef0c963c9140ab8d35ff53ccfb5d944b4fe292186d35deeae52c2"
+    },
+    "experiments/project_route_search_v2/tests/test_episode_reset.py": {
+      "bytes": 7946,
+      "sha256": "c910ca8ec49fbf6daf12c06d75193a39f7f67047933dbe8644ad6ed346e0594b"
+    },
+    "experiments/project_route_search_v2/tools/run_m1_controller_reset_stress_v1.py": {
+      "bytes": 9830,
+      "sha256": "232631bb8e3a63a04f5cef2163853c6aae34a557be7cbff0f6d5b248d725010e"
+    },
+    "gpt_review/gpt/KAGGRICULTURE_E0_THREE_LAYER_PROJECT_SEARCH_DESIGN_V1_1_ZH.md": {
+      "bytes": 63063,
+      "sha256": "863c794fdfb80f92d8f051f7857993fd235bb685750e4c3c70552c03b2fdd3b2"
+    }
+  },
+  "not_claimed": [
+    "crop_project_lifecycle_complete",
+    "animal_project_lifecycle_complete",
+    "simulator_throughput_measured",
+    "route_search_run"
+  ],
+  "receipt_id": "M1_CONTROLLER_RESET_STRESS_V1_SEAT1",
+  "results": {
+    "cross_episode_contamination_count": 0,
+    "expected_poisoned_prior_lane_count": 8000,
+    "poisoned_prior_lane_count": 8000,
+    "post_full_episode_snapshot_mismatch_count": 0,
+    "post_reset_mismatch_count": 0
+  },
+  "runtime": {
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.10.1",
+    "numpy": "2.5.2",
+    "python": "3.12.3"
+  },
+  "scope": "M1_CONTROLLER_RESET_RECONCILE_AND_SCAN_CARRY",
+  "status": "PASS",
+  "timing_seconds": {
+    "jit_compile_and_first_run": 25.989120806000017,
+    "warm_run": 25.17916949900001
+  }
+}

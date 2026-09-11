@@ -1,0 +1,15 @@
+{
+  "games": 1400,
+  "wins": 800,
+  "win_rate": 0.5714285714285714,
+  "mean_margin": 7066.936428571428,
+  "opponents": [
+    "g001",
+    "g003",
+    "boatlee_v29",
+    "kaito_v58",
+    "lynn_v5",
+    "yhay81_six_day",
+    "yhay81_three_day"
+  ]
+}

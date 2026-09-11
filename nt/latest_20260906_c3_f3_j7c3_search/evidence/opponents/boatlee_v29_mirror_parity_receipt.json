@@ -1,0 +1,353 @@
+{
+  "status": "PASS",
+  "args": {
+    "configs": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/profiles/candidates.json",
+    "label": "S3C03",
+    "seeds": "20261401,20261402",
+    "seats": "0,1",
+    "mirror": true,
+    "out": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/receipts/boatlee_mirror_official_parity_v1",
+    "save_replays": true
+  },
+  "config": {
+    "opponent_supply_weight": 0.75,
+    "competitive_sell_weight": 0.5,
+    "sell_horizon_days": 1,
+    "opening_animals": [
+      "COW",
+      "COW",
+      "SHEEP",
+      "GOOSE",
+      "GOOSE"
+    ],
+    "opening_crops": [
+      4,
+      0,
+      0,
+      6,
+      0
+    ],
+    "economic_land": true,
+    "operating_reserve": 100.0,
+    "crop_harvest_age": [
+      4,
+      3,
+      8,
+      10,
+      10
+    ],
+    "finite_fertilizer": false,
+    "fix_finite_projection": true,
+    "efficient_water": true,
+    "efficient_care": true
+  },
+  "opponent_source_sha256": "c4a6964cec3c1c99207c32bb1fd91e53c3ec01e6890da5734331cbeab1cc1267",
+  "opponent_asset_sha256": "ec4d6d6a83a6f1cef9f0257c659029afa8a7c5ad540738e2896ba2dffd00ce3a",
+  "build": {
+    "seconds": 16.548764117,
+    "source_hashes": {
+      "native/vendor/simulator.cpp": "7823820ef7a563885a2dc5c7ff0499d6ed832f98bff09bf4790cf5e04c5d4928",
+      "native/module.cpp": "426202d4be494f3760c8cb8a1f7c2ac543c1e342cf68620963b561290ad4b070",
+      "native/fieldbook_adapter.cpp": "5b581da52cf63c983982007b6e6e3e27de429fcb1f8304934c7aa28d08b0221f",
+      "native/boatlee_v29.cpp": "65e33242bc227849c5e8c0b12c7333e899f6f150e576bd27e9044822d93f6bcb",
+      "native/policy.hpp": "f759504695bf3a6a43d0b1e778e10b9c9f1e8f4d095c33c8ff8c8d6bdaf7918e",
+      "native/cash_audit.hpp": "92765c73c162fd3514e14d90cc051ba914a44fc5abcd40cd54266e509dfb118e",
+      "native/production_audit.hpp": "e35fa1e2f0631be3a4ae2d19fe8a6dd787962eeb0b65a8c40303281d06cefbb6",
+      "native/vendor/simulator.hpp": "333d0332c4dffc3bed7e3c8ad1e63ccd2c9eca6c176bd47e1f0cdb62274759e1",
+      "native/vendor/native_teammate.hpp": "31c4f20627a435597562412834612e5925dfb92ff3badfabf12717422f8b1eaf",
+      "native/vendor/native_teammate.cpp": "a00b1c543eb591b87c1fbebd40e5312661e8be2c05bfc84235d149adb91df806",
+      "native/fieldbook_adapter.hpp": "ee1d232d943a1140eb298de8234477ee5b6a97f119ce0dc1135e66d8a8d5d93f",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy_plugin_abi.hpp": "67679edc55b1951deac859d1191a6eb2198868b3b7237beb2266db9788d80345",
+      "opponents/yhay81_six_day/output/sixday_r4_source/pyrandom.hpp": "3835fe39fbc74b05078022a839dea1c1aff7a9d6d21a1227d4d6cd61a3612d75",
+      "opponents/yhay81_six_day/output/sixday_r4_source/sim.hpp": "f483219c22dd9a05c00e28a200aa48d70d4a461915c09b3a0fb36c0330cc554c",
+      "opponents/yhay81_six_day/output/sixday_r4_source/six_day_budget_guard.hpp": "5cf24ed4099e5b19e9f195869881548f2145a40329fc30d11e682501c3688556",
+      "opponents/yhay81_six_day/output/sixday_r4_source/policy.cpp": "a3f04707615b7c04f3ab4a3c593081c98df2dd091be386aa80a3ffad7c00c1b4",
+      "native/boatlee_v29.hpp": "440a929ce84295cb7e1ba0f3756e877f6e5b05ae288c58e393eedf2b01a6ea7c"
+    },
+    "commands": [
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/vendor/simulator.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/module.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o"
+      ],
+      [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/fieldbook_adapter.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o"
+      ],
+      [
+        "g++",
+        "-ffp-contract=off",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=native",
+        "-fopenmp",
+        "-fPIC",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/fast_kaggriculture/.venv-bench/lib/python3.12/site-packages/pybind11/include",
+        "-I/usr/include/python3.12",
+        "-I/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native",
+        "-c",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/boatlee_v29.cpp",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o"
+      ],
+      [
+        "g++",
+        "-shared",
+        "-fopenmp",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/simulator.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/module.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/fieldbook_adapter.o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/boatlee_v29.o",
+        "-o",
+        "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so"
+      ]
+    ],
+    "binary": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/daily_dp_v7_20260903/native/build/_dp7_native.cpython-312-x86_64-linux-gnu.so",
+    "binary_sha256": "20bf072dd7e35167adc17e3e0a799fd58c1876cd73a945dcf89c05495d18635c"
+  },
+  "rows": [
+    {
+      "seed": 20261401,
+      "seat": 0,
+      "steps": 719,
+      "cash": 63142.0,
+      "opponent_cash": 63142.0,
+      "opponent_state": {
+        "last_step": 718,
+        "weed_last": 718,
+        "near_mirror": 1,
+        "pressure": {
+          "STRAWBERRY": 0.0007254625706111484,
+          "MILK": 0.7928139046851994,
+          "WOOL": 0.02695612780216128
+        },
+        "added": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "last_inventory": {
+          "STRAWBERRY": 10030,
+          "MILK": 10072,
+          "WOOL": 10060
+        },
+        "last_sold": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "active": {},
+        "last_shops": [
+          2,
+          4,
+          3,
+          0,
+          0,
+          1,
+          1,
+          5
+        ]
+      },
+      "weed_repair_frames": 0,
+      "adaptive_market_frames": 0,
+      "action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_candidate_action_seconds": 2.9943000000365316e-05,
+      "max_opponent_action_seconds": 1.3283000000363643e-05
+    },
+    {
+      "seed": 20261401,
+      "seat": 1,
+      "steps": 719,
+      "cash": 63142.0,
+      "opponent_cash": 63142.0,
+      "opponent_state": {
+        "last_step": 718,
+        "weed_last": 718,
+        "near_mirror": 1,
+        "pressure": {
+          "STRAWBERRY": 0.0007254625706111484,
+          "MILK": 0.7928139046851994,
+          "WOOL": 0.02695612780216128
+        },
+        "added": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "last_inventory": {
+          "STRAWBERRY": 10030,
+          "MILK": 10072,
+          "WOOL": 10060
+        },
+        "last_sold": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "active": {},
+        "last_shops": [
+          2,
+          4,
+          3,
+          0,
+          0,
+          1,
+          1,
+          5
+        ]
+      },
+      "weed_repair_frames": 0,
+      "adaptive_market_frames": 0,
+      "action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_candidate_action_seconds": 3.63160000009799e-05,
+      "max_opponent_action_seconds": 0.00010879300000077308
+    },
+    {
+      "seed": 20261402,
+      "seat": 0,
+      "steps": 719,
+      "cash": 91850.0,
+      "opponent_cash": 91850.0,
+      "opponent_state": {
+        "last_step": 718,
+        "weed_last": 718,
+        "near_mirror": 1,
+        "pressure": {
+          "STRAWBERRY": 0.0007254625598885012,
+          "MILK": 1.1814332979667281,
+          "WOOL": 1.1313249703662505
+        },
+        "added": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "last_inventory": {
+          "STRAWBERRY": 10030,
+          "MILK": 10070,
+          "WOOL": 9850
+        },
+        "last_sold": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "active": {},
+        "last_shops": [
+          7,
+          1,
+          3,
+          1,
+          5,
+          4,
+          3,
+          7
+        ]
+      },
+      "weed_repair_frames": 0,
+      "adaptive_market_frames": 0,
+      "action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_candidate_action_seconds": 2.225400000099853e-05,
+      "max_opponent_action_seconds": 1.6259000000573565e-05
+    },
+    {
+      "seed": 20261402,
+      "seat": 1,
+      "steps": 719,
+      "cash": 91850.0,
+      "opponent_cash": 91850.0,
+      "opponent_state": {
+        "last_step": 718,
+        "weed_last": 718,
+        "near_mirror": 1,
+        "pressure": {
+          "STRAWBERRY": 0.0007254625598885012,
+          "MILK": 1.1814332979667281,
+          "WOOL": 1.1313249703662505
+        },
+        "added": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "last_inventory": {
+          "STRAWBERRY": 10030,
+          "MILK": 10070,
+          "WOOL": 9850
+        },
+        "last_sold": {
+          "STRAWBERRY": 0,
+          "MILK": 0,
+          "WOOL": 0
+        },
+        "active": {},
+        "last_shops": [
+          7,
+          1,
+          3,
+          1,
+          5,
+          4,
+          3,
+          7
+        ]
+      },
+      "weed_repair_frames": 0,
+      "adaptive_market_frames": 0,
+      "action_mismatches": 0,
+      "memory_mismatches": 0,
+      "official_state_mismatches": 0,
+      "max_candidate_action_seconds": 3.204599999939717e-05,
+      "max_opponent_action_seconds": 2.089800000071307e-05
+    }
+  ],
+  "seconds": 7.932105673,
+  "check": "original_Boatlee_actions_and_persistent_state_plus_official_719_step_state",
+  "coverage_caveat": "Finite differential sample; not an exhaustive proof for all legal observations."
+}

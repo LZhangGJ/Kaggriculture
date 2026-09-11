@@ -1,0 +1,5487 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc7-rare-shop-scan.v1",
+  "generated_at_utc": "2026-08-21T16:32:53.004335+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "candidate": "fc2b_rank14_plus_k320_clone_aware_preempt",
+  "opponent": "rayk_k320_adaptive_rank1",
+  "public_filter": {
+    "shop": "PET_CAFE",
+    "prefix_length": 3
+  },
+  "scanned_seeds": 65536,
+  "total_games": 131072,
+  "rare_games_count": 290,
+  "rare_unique_seeds": 145,
+  "rare_score_rate": 0.993103448275862,
+  "rare_mean_margin": 728.7793103448275,
+  "elapsed_seconds": 1426.1855813,
+  "sources": [
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/jax_full37_mixed_exact_proxy_bank_v1.npz",
+      "sha256": "E02A56819D37C0A314B0FA77F9EBE558F1F8A416F283D496E6B87C0165B85AF2"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/receipts/jax_full37_mixed_exact_proxy_bank_v1.json",
+      "sha256": "0724BC89E86459453E6B34D0024F8CC05FA34B3547AEAEEE2F27C9453B0DAC16"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+      "sha256": "F0515CA9E59B3D899B89AA12AD9AACC6ACDD2D7B9BE85EF58EB4D48F7B9B4C20"
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+      "sha256": "4E2264239ED79F7FB7BC338B828E8ED0CAD6C8445B1742186F98FC91B1429E4B"
+    }
+  ],
+  "event_shards": [
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_00_seeds_1000000_1002047.npz",
+      "sha256": "2BA1DF09080BDBF13405872471A50C6E2DA7C15AF2352957B54F32977CB1AC4A",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 75.55158221599999
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_01_seeds_1002048_1004095.npz",
+      "sha256": "35313713DE7020D08530C9264F1A95F1ECD08DD0AC284047A381CD886D8C5A47",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 42.579134385
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_02_seeds_1004096_1006143.npz",
+      "sha256": "4C283A2CDDE688E769EB314ADEFA5A9D07C878EF97484D08958B4795A06E118F",
+      "seeds": 2048,
+      "rare_games": 12,
+      "elapsed_seconds": 43.29458979899999
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_03_seeds_1006144_1008191.npz",
+      "sha256": "5F4E4E6ADC00B474D20D8C0B19DBAC083A3A8B257468685A923D77DB41A46125",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 42.78417572400002
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_04_seeds_1008192_1010239.npz",
+      "sha256": "48806C4AE1765058A345BC0B5B40E8B5E87DF33C0CEDDB1D712A10F6D64AB37B",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 43.370177367999986
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_05_seeds_1010240_1012287.npz",
+      "sha256": "3D8B76BD535B291751E2A595335FEB45F3DA917659295D6DC7E5D52669075A92",
+      "seeds": 2048,
+      "rare_games": 14,
+      "elapsed_seconds": 42.56768140899999
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_06_seeds_1012288_1014335.npz",
+      "sha256": "81F7907FF45D9ADE2FBA11B2914FA3768A93F57EF8770BE4269DD95D783816CF",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 42.82217684400001
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_07_seeds_1014336_1016383.npz",
+      "sha256": "3526FE5FA1F103093F95B53C2E115FA4E8E5031F4D7A838B81E479D497FDA554",
+      "seeds": 2048,
+      "rare_games": 8,
+      "elapsed_seconds": 45.52332559600001
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_08_seeds_1016384_1018431.npz",
+      "sha256": "3F38854E3FAAE88E20A754445142939866721241D20DE783AB7DC6620EEF0218",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 43.982290067000065
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_09_seeds_1018432_1020479.npz",
+      "sha256": "D9AB7B2AE7D80C8566DF82A160705228AFC2758FEBF0DE133E3A193AC0516EB0",
+      "seeds": 2048,
+      "rare_games": 16,
+      "elapsed_seconds": 43.18412673499995
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_10_seeds_1020480_1022527.npz",
+      "sha256": "34AFF78A7CD3A3E081790F394B0CF2EB9002F2F9CC6C61B5B6112E37E2F1128A",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 43.2504444760001
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_11_seeds_1022528_1024575.npz",
+      "sha256": "AD68B3136B6B70AC21C29B46921B24BDACA239781D2E7D020AC4E991DAA2A5F9",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 42.49483635399997
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_12_seeds_1024576_1026623.npz",
+      "sha256": "7721BF020F404719EF7779C76B14662F90C91D3184FBD276F9A5B76D1B6FA685",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 42.833538522000026
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_13_seeds_1026624_1028671.npz",
+      "sha256": "6F99A843BBEC28CE219D0E2AE34AB4391E49CE40833BCF8D0D0978106F65B5FB",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 43.53849109299995
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_14_seeds_1028672_1030719.npz",
+      "sha256": "6EADFAEEE31021698CBC8B27302A63CB176716414B9AAD1077B41868B9131B32",
+      "seeds": 2048,
+      "rare_games": 8,
+      "elapsed_seconds": 42.898677317999955
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_15_seeds_1030720_1032767.npz",
+      "sha256": "98BE16DBA5C151239320AFDAAF0A4F7B77ED10187E6057E9C8F5D72BBDDDE952",
+      "seeds": 2048,
+      "rare_games": 2,
+      "elapsed_seconds": 45.17996714399999
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_16_seeds_1032768_1034815.npz",
+      "sha256": "736742879FCAF5483C439395574B2906FDA98541E87A324BEEB167572327F078",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 44.42190786000003
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_17_seeds_1034816_1036863.npz",
+      "sha256": "69AF607A55F680AACCA703DDC6D6514BBCAD1EABB133C97412D3A58A67512DC8",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 43.643684010000015
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_18_seeds_1036864_1038911.npz",
+      "sha256": "70ADEA7CCC192144CA46A1052F77150F9EDD0E176D5EB954161EBD826F46E3B4",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 43.877549047
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_19_seeds_1038912_1040959.npz",
+      "sha256": "F18DC4656D4D740CFC18B2306BA419FCF932B74036453A8D42DBEB41115D542C",
+      "seeds": 2048,
+      "rare_games": 12,
+      "elapsed_seconds": 44.07392703800008
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_20_seeds_1040960_1043007.npz",
+      "sha256": "B5A48C8CFB0B3D0EB259EB4E9315326D60ACD4678BE50DB22D3F851AE4DDF2D4",
+      "seeds": 2048,
+      "rare_games": 12,
+      "elapsed_seconds": 43.09014105699987
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_21_seeds_1043008_1045055.npz",
+      "sha256": "6270F6B75F86476E02E0AFF152730A1F9F190FD5D952D893815175F7B033A45F",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 42.85563978899995
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_22_seeds_1045056_1047103.npz",
+      "sha256": "3100182BFE5A8CB1B8D45D55D91A4BD7B2504BDBBC9F87489108E31F358551DC",
+      "seeds": 2048,
+      "rare_games": 12,
+      "elapsed_seconds": 42.38401651000004
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_23_seeds_1047104_1049151.npz",
+      "sha256": "5AC3A4F5E0BBAF30CCDD1CD9F169EC8D50CD025C2BFA1E9E592F9CA8689E0B9F",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 45.16546870399998
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_24_seeds_1049152_1051199.npz",
+      "sha256": "AD0C0C9E7F46D228F00AB26BFC7B28D7C054F76E0A2D08C0D008DC9692424A31",
+      "seeds": 2048,
+      "rare_games": 4,
+      "elapsed_seconds": 43.53123633699988
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_25_seeds_1051200_1053247.npz",
+      "sha256": "6DA477EDDC11C5B6D288887AA59B98CA85D2B6BDDB8DC5A651D02921262D10A6",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 43.56426352800008
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_26_seeds_1053248_1055295.npz",
+      "sha256": "E9C5EFE36BCE9DC04B14F6DB6C9E82E23C32242CA5C82BA925BE6E4532205379",
+      "seeds": 2048,
+      "rare_games": 6,
+      "elapsed_seconds": 43.116365604000066
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_27_seeds_1055296_1057343.npz",
+      "sha256": "D8B10249C4A68627427E99813DB58E039F3698931ACCE40B7C2F5B466F84758A",
+      "seeds": 2048,
+      "rare_games": 18,
+      "elapsed_seconds": 43.29315480300011
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_28_seeds_1057344_1059391.npz",
+      "sha256": "DD2F4603C93F44E34D90FDAB5921E6A0AA7A8ADCBAF806CC284033D5DF207818",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 42.89107831899992
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_29_seeds_1059392_1061439.npz",
+      "sha256": "F85FB4DD5FB1DC65C46D1882E4911989DB614F2FE33C4720017757FC6E09F678",
+      "seeds": 2048,
+      "rare_games": 26,
+      "elapsed_seconds": 43.120776419000094
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_30_seeds_1061440_1063487.npz",
+      "sha256": "67D8FCBFFC802FAB2D2E97C7F9523611440629057BFC5310471C856C5741E380",
+      "seeds": 2048,
+      "rare_games": 14,
+      "elapsed_seconds": 42.74421583200001
+    },
+    {
+      "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/strategic_v4/artifacts/shared_event_banks/training_events_64k_v1/events_31_seeds_1063488_1065535.npz",
+      "sha256": "DBB528E2B6B7ACA49D04D680D5906EBCF2958541066E74893BF13D2C10C39DA0",
+      "seeds": 2048,
+      "rare_games": 10,
+      "elapsed_seconds": 45.538703524000084
+    }
+  ],
+  "rare_games": [
+    {
+      "seed": 1001375,
+      "candidate_seat": 0,
+      "candidate_cash": 32624,
+      "opponent_cash": 32034,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_00_seeds_1000000_1002047.npz"
+    },
+    {
+      "seed": 1001438,
+      "candidate_seat": 0,
+      "candidate_cash": 44354,
+      "opponent_cash": 43469,
+      "margin": 885,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_00_seeds_1000000_1002047.npz"
+    },
+    {
+      "seed": 1001375,
+      "candidate_seat": 1,
+      "candidate_cash": 32493,
+      "opponent_cash": 32165,
+      "margin": 328,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_00_seeds_1000000_1002047.npz"
+    },
+    {
+      "seed": 1001438,
+      "candidate_seat": 1,
+      "candidate_cash": 44354,
+      "opponent_cash": 43469,
+      "margin": 885,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_00_seeds_1000000_1002047.npz"
+    },
+    {
+      "seed": 1002180,
+      "candidate_seat": 0,
+      "candidate_cash": 41821,
+      "opponent_cash": 40257,
+      "margin": 1564,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1002265,
+      "candidate_seat": 0,
+      "candidate_cash": 37935,
+      "opponent_cash": 37271,
+      "margin": 664,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1003416,
+      "candidate_seat": 0,
+      "candidate_cash": 38622,
+      "opponent_cash": 37289,
+      "margin": 1333,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1002180,
+      "candidate_seat": 1,
+      "candidate_cash": 41752,
+      "opponent_cash": 40326,
+      "margin": 1426,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1002265,
+      "candidate_seat": 1,
+      "candidate_cash": 37935,
+      "opponent_cash": 37271,
+      "margin": 664,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1003416,
+      "candidate_seat": 1,
+      "candidate_cash": 38622,
+      "opponent_cash": 37289,
+      "margin": 1333,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_01_seeds_1002048_1004095.npz"
+    },
+    {
+      "seed": 1004722,
+      "candidate_seat": 0,
+      "candidate_cash": 59313,
+      "opponent_cash": 59165,
+      "margin": 148,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1004728,
+      "candidate_seat": 0,
+      "candidate_cash": 34215,
+      "opponent_cash": 33783,
+      "margin": 432,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005216,
+      "candidate_seat": 0,
+      "candidate_cash": 33155,
+      "opponent_cash": 35489,
+      "margin": -2334,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005259,
+      "candidate_seat": 0,
+      "candidate_cash": 39294,
+      "opponent_cash": 38633,
+      "margin": 661,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005625,
+      "candidate_seat": 0,
+      "candidate_cash": 35181,
+      "opponent_cash": 34559,
+      "margin": 622,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1006034,
+      "candidate_seat": 0,
+      "candidate_cash": 34245,
+      "opponent_cash": 33803,
+      "margin": 442,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1004722,
+      "candidate_seat": 1,
+      "candidate_cash": 59313,
+      "opponent_cash": 59165,
+      "margin": 148,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1004728,
+      "candidate_seat": 1,
+      "candidate_cash": 34247,
+      "opponent_cash": 33751,
+      "margin": 496,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005216,
+      "candidate_seat": 1,
+      "candidate_cash": 36026,
+      "opponent_cash": 32618,
+      "margin": 3408,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005259,
+      "candidate_seat": 1,
+      "candidate_cash": 39294,
+      "opponent_cash": 38633,
+      "margin": 661,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1005625,
+      "candidate_seat": 1,
+      "candidate_cash": 35225,
+      "opponent_cash": 34515,
+      "margin": 710,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1006034,
+      "candidate_seat": 1,
+      "candidate_cash": 34245,
+      "opponent_cash": 33803,
+      "margin": 442,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_02_seeds_1004096_1006143.npz"
+    },
+    {
+      "seed": 1006231,
+      "candidate_seat": 0,
+      "candidate_cash": 34653,
+      "opponent_cash": 34074,
+      "margin": 579,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1006885,
+      "candidate_seat": 0,
+      "candidate_cash": 42633,
+      "opponent_cash": 42057,
+      "margin": 576,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1007238,
+      "candidate_seat": 0,
+      "candidate_cash": 36948,
+      "opponent_cash": 35616,
+      "margin": 1332,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1006231,
+      "candidate_seat": 1,
+      "candidate_cash": 34653,
+      "opponent_cash": 34074,
+      "margin": 579,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1006885,
+      "candidate_seat": 1,
+      "candidate_cash": 42633,
+      "opponent_cash": 42057,
+      "margin": 576,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1007238,
+      "candidate_seat": 1,
+      "candidate_cash": 36948,
+      "opponent_cash": 35616,
+      "margin": 1332,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_03_seeds_1006144_1008191.npz"
+    },
+    {
+      "seed": 1008469,
+      "candidate_seat": 0,
+      "candidate_cash": 38411,
+      "opponent_cash": 37744,
+      "margin": 667,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1008584,
+      "candidate_seat": 0,
+      "candidate_cash": 37736,
+      "opponent_cash": 36969,
+      "margin": 767,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1009453,
+      "candidate_seat": 0,
+      "candidate_cash": 40157,
+      "opponent_cash": 39508,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1009860,
+      "candidate_seat": 0,
+      "candidate_cash": 40916,
+      "opponent_cash": 40479,
+      "margin": 437,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1010232,
+      "candidate_seat": 0,
+      "candidate_cash": 39617,
+      "opponent_cash": 38136,
+      "margin": 1481,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1008469,
+      "candidate_seat": 1,
+      "candidate_cash": 38428,
+      "opponent_cash": 37727,
+      "margin": 701,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1008584,
+      "candidate_seat": 1,
+      "candidate_cash": 37636,
+      "opponent_cash": 37069,
+      "margin": 567,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1009453,
+      "candidate_seat": 1,
+      "candidate_cash": 40157,
+      "opponent_cash": 39508,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1009860,
+      "candidate_seat": 1,
+      "candidate_cash": 40916,
+      "opponent_cash": 40479,
+      "margin": 437,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1010232,
+      "candidate_seat": 1,
+      "candidate_cash": 39617,
+      "opponent_cash": 38136,
+      "margin": 1481,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_04_seeds_1008192_1010239.npz"
+    },
+    {
+      "seed": 1010329,
+      "candidate_seat": 0,
+      "candidate_cash": 32249,
+      "opponent_cash": 31785,
+      "margin": 464,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010404,
+      "candidate_seat": 0,
+      "candidate_cash": 48874,
+      "opponent_cash": 47916,
+      "margin": 958,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010725,
+      "candidate_seat": 0,
+      "candidate_cash": 39826,
+      "opponent_cash": 39177,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010911,
+      "candidate_seat": 0,
+      "candidate_cash": 58748,
+      "opponent_cash": 58625,
+      "margin": 123,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1011440,
+      "candidate_seat": 0,
+      "candidate_cash": 48629,
+      "opponent_cash": 48091,
+      "margin": 538,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1011828,
+      "candidate_seat": 0,
+      "candidate_cash": 32197,
+      "opponent_cash": 31778,
+      "margin": 419,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1012005,
+      "candidate_seat": 0,
+      "candidate_cash": 33504,
+      "opponent_cash": 33078,
+      "margin": 426,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010329,
+      "candidate_seat": 1,
+      "candidate_cash": 32249,
+      "opponent_cash": 31785,
+      "margin": 464,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010404,
+      "candidate_seat": 1,
+      "candidate_cash": 48874,
+      "opponent_cash": 47916,
+      "margin": 958,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010725,
+      "candidate_seat": 1,
+      "candidate_cash": 39826,
+      "opponent_cash": 39177,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1010911,
+      "candidate_seat": 1,
+      "candidate_cash": 58748,
+      "opponent_cash": 58625,
+      "margin": 123,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1011440,
+      "candidate_seat": 1,
+      "candidate_cash": 48629,
+      "opponent_cash": 48091,
+      "margin": 538,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1011828,
+      "candidate_seat": 1,
+      "candidate_cash": 32197,
+      "opponent_cash": 31778,
+      "margin": 419,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1012005,
+      "candidate_seat": 1,
+      "candidate_cash": 33504,
+      "opponent_cash": 33078,
+      "margin": 426,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_05_seeds_1010240_1012287.npz"
+    },
+    {
+      "seed": 1012939,
+      "candidate_seat": 0,
+      "candidate_cash": 37792,
+      "opponent_cash": 37202,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1013102,
+      "candidate_seat": 0,
+      "candidate_cash": 29502,
+      "opponent_cash": 29069,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1013230,
+      "candidate_seat": 0,
+      "candidate_cash": 38657,
+      "opponent_cash": 37757,
+      "margin": 900,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1014087,
+      "candidate_seat": 0,
+      "candidate_cash": 36306,
+      "opponent_cash": 35557,
+      "margin": 749,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1014104,
+      "candidate_seat": 0,
+      "candidate_cash": 37769,
+      "opponent_cash": 37325,
+      "margin": 444,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1012939,
+      "candidate_seat": 1,
+      "candidate_cash": 37792,
+      "opponent_cash": 37202,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1013102,
+      "candidate_seat": 1,
+      "candidate_cash": 29502,
+      "opponent_cash": 29069,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1013230,
+      "candidate_seat": 1,
+      "candidate_cash": 38657,
+      "opponent_cash": 37757,
+      "margin": 900,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1014087,
+      "candidate_seat": 1,
+      "candidate_cash": 36306,
+      "opponent_cash": 35557,
+      "margin": 749,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1014104,
+      "candidate_seat": 1,
+      "candidate_cash": 37769,
+      "opponent_cash": 37325,
+      "margin": 444,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "event_shard": "events_06_seeds_1012288_1014335.npz"
+    },
+    {
+      "seed": 1014821,
+      "candidate_seat": 0,
+      "candidate_cash": 40811,
+      "opponent_cash": 40229,
+      "margin": 582,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1015405,
+      "candidate_seat": 0,
+      "candidate_cash": 34926,
+      "opponent_cash": 34479,
+      "margin": 447,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1016139,
+      "candidate_seat": 0,
+      "candidate_cash": 37899,
+      "opponent_cash": 36540,
+      "margin": 1359,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1016369,
+      "candidate_seat": 0,
+      "candidate_cash": 49534,
+      "opponent_cash": 48928,
+      "margin": 606,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1014821,
+      "candidate_seat": 1,
+      "candidate_cash": 40811,
+      "opponent_cash": 40229,
+      "margin": 582,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1015405,
+      "candidate_seat": 1,
+      "candidate_cash": 34926,
+      "opponent_cash": 34479,
+      "margin": 447,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1016139,
+      "candidate_seat": 1,
+      "candidate_cash": 37898,
+      "opponent_cash": 36541,
+      "margin": 1357,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1016369,
+      "candidate_seat": 1,
+      "candidate_cash": 49534,
+      "opponent_cash": 48928,
+      "margin": 606,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_07_seeds_1014336_1016383.npz"
+    },
+    {
+      "seed": 1016592,
+      "candidate_seat": 0,
+      "candidate_cash": 38111,
+      "opponent_cash": 37186,
+      "margin": 925,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1016891,
+      "candidate_seat": 0,
+      "candidate_cash": 38784,
+      "opponent_cash": 38129,
+      "margin": 655,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1018025,
+      "candidate_seat": 0,
+      "candidate_cash": 58826,
+      "opponent_cash": 57976,
+      "margin": 850,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1016592,
+      "candidate_seat": 1,
+      "candidate_cash": 37797,
+      "opponent_cash": 37500,
+      "margin": 297,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1016891,
+      "candidate_seat": 1,
+      "candidate_cash": 38784,
+      "opponent_cash": 38129,
+      "margin": 655,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1018025,
+      "candidate_seat": 1,
+      "candidate_cash": 58826,
+      "opponent_cash": 57976,
+      "margin": 850,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_08_seeds_1016384_1018431.npz"
+    },
+    {
+      "seed": 1018601,
+      "candidate_seat": 0,
+      "candidate_cash": 34213,
+      "opponent_cash": 33756,
+      "margin": 457,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019161,
+      "candidate_seat": 0,
+      "candidate_cash": 34746,
+      "opponent_cash": 34170,
+      "margin": 576,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019197,
+      "candidate_seat": 0,
+      "candidate_cash": 38280,
+      "opponent_cash": 37829,
+      "margin": 451,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019253,
+      "candidate_seat": 0,
+      "candidate_cash": 35788,
+      "opponent_cash": 35133,
+      "margin": 655,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019558,
+      "candidate_seat": 0,
+      "candidate_cash": 39087,
+      "opponent_cash": 37498,
+      "margin": 1589,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019676,
+      "candidate_seat": 0,
+      "candidate_cash": 53387,
+      "opponent_cash": 52969,
+      "margin": 418,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019710,
+      "candidate_seat": 0,
+      "candidate_cash": 35548,
+      "opponent_cash": 34836,
+      "margin": 712,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1020033,
+      "candidate_seat": 0,
+      "candidate_cash": 39025,
+      "opponent_cash": 38255,
+      "margin": 770,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1018601,
+      "candidate_seat": 1,
+      "candidate_cash": 34207,
+      "opponent_cash": 33762,
+      "margin": 445,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019161,
+      "candidate_seat": 1,
+      "candidate_cash": 34746,
+      "opponent_cash": 34170,
+      "margin": 576,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019197,
+      "candidate_seat": 1,
+      "candidate_cash": 38280,
+      "opponent_cash": 37829,
+      "margin": 451,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019253,
+      "candidate_seat": 1,
+      "candidate_cash": 35788,
+      "opponent_cash": 35133,
+      "margin": 655,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019558,
+      "candidate_seat": 1,
+      "candidate_cash": 38984,
+      "opponent_cash": 37601,
+      "margin": 1383,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019676,
+      "candidate_seat": 1,
+      "candidate_cash": 53321,
+      "opponent_cash": 53035,
+      "margin": 286,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1019710,
+      "candidate_seat": 1,
+      "candidate_cash": 35548,
+      "opponent_cash": 34836,
+      "margin": 712,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1020033,
+      "candidate_seat": 1,
+      "candidate_cash": 38993,
+      "opponent_cash": 38287,
+      "margin": 706,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_09_seeds_1018432_1020479.npz"
+    },
+    {
+      "seed": 1021010,
+      "candidate_seat": 0,
+      "candidate_cash": 53114,
+      "opponent_cash": 52068,
+      "margin": 1046,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1021551,
+      "candidate_seat": 0,
+      "candidate_cash": 37684,
+      "opponent_cash": 37244,
+      "margin": 440,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1021810,
+      "candidate_seat": 0,
+      "candidate_cash": 40973,
+      "opponent_cash": 40246,
+      "margin": 727,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1022082,
+      "candidate_seat": 0,
+      "candidate_cash": 42636,
+      "opponent_cash": 41125,
+      "margin": 1511,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1022181,
+      "candidate_seat": 0,
+      "candidate_cash": 38107,
+      "opponent_cash": 37404,
+      "margin": 703,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1021010,
+      "candidate_seat": 1,
+      "candidate_cash": 53114,
+      "opponent_cash": 52068,
+      "margin": 1046,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1021551,
+      "candidate_seat": 1,
+      "candidate_cash": 37684,
+      "opponent_cash": 37244,
+      "margin": 440,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1021810,
+      "candidate_seat": 1,
+      "candidate_cash": 40973,
+      "opponent_cash": 40246,
+      "margin": 727,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1022082,
+      "candidate_seat": 1,
+      "candidate_cash": 42682,
+      "opponent_cash": 41079,
+      "margin": 1603,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1022181,
+      "candidate_seat": 1,
+      "candidate_cash": 38107,
+      "opponent_cash": 37404,
+      "margin": 703,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_10_seeds_1020480_1022527.npz"
+    },
+    {
+      "seed": 1023192,
+      "candidate_seat": 0,
+      "candidate_cash": 40654,
+      "opponent_cash": 39927,
+      "margin": 727,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1023252,
+      "candidate_seat": 0,
+      "candidate_cash": 33068,
+      "opponent_cash": 32478,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024105,
+      "candidate_seat": 0,
+      "candidate_cash": 41537,
+      "opponent_cash": 39715,
+      "margin": 1822,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024331,
+      "candidate_seat": 0,
+      "candidate_cash": 34219,
+      "opponent_cash": 33782,
+      "margin": 437,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024519,
+      "candidate_seat": 0,
+      "candidate_cash": 56944,
+      "opponent_cash": 56404,
+      "margin": 540,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1023192,
+      "candidate_seat": 1,
+      "candidate_cash": 40637,
+      "opponent_cash": 39944,
+      "margin": 693,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1023252,
+      "candidate_seat": 1,
+      "candidate_cash": 33068,
+      "opponent_cash": 32478,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024105,
+      "candidate_seat": 1,
+      "candidate_cash": 41324,
+      "opponent_cash": 39928,
+      "margin": 1396,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024331,
+      "candidate_seat": 1,
+      "candidate_cash": 34220,
+      "opponent_cash": 33781,
+      "margin": 439,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024519,
+      "candidate_seat": 1,
+      "candidate_cash": 56944,
+      "opponent_cash": 56404,
+      "margin": 540,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_11_seeds_1022528_1024575.npz"
+    },
+    {
+      "seed": 1024946,
+      "candidate_seat": 0,
+      "candidate_cash": 38922,
+      "opponent_cash": 38025,
+      "margin": 897,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1025883,
+      "candidate_seat": 0,
+      "candidate_cash": 36099,
+      "opponent_cash": 34756,
+      "margin": 1343,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1026089,
+      "candidate_seat": 0,
+      "candidate_cash": 32039,
+      "opponent_cash": 31658,
+      "margin": 381,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1024946,
+      "candidate_seat": 1,
+      "candidate_cash": 38709,
+      "opponent_cash": 38238,
+      "margin": 471,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1025883,
+      "candidate_seat": 1,
+      "candidate_cash": 36099,
+      "opponent_cash": 34756,
+      "margin": 1343,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1026089,
+      "candidate_seat": 1,
+      "candidate_cash": 32039,
+      "opponent_cash": 31658,
+      "margin": 381,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_12_seeds_1024576_1026623.npz"
+    },
+    {
+      "seed": 1026668,
+      "candidate_seat": 0,
+      "candidate_cash": 37186,
+      "opponent_cash": 36759,
+      "margin": 427,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_13_seeds_1026624_1028671.npz"
+    },
+    {
+      "seed": 1027567,
+      "candidate_seat": 0,
+      "candidate_cash": 34590,
+      "opponent_cash": 34134,
+      "margin": 456,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_13_seeds_1026624_1028671.npz"
+    },
+    {
+      "seed": 1026668,
+      "candidate_seat": 1,
+      "candidate_cash": 37186,
+      "opponent_cash": 36759,
+      "margin": 427,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_13_seeds_1026624_1028671.npz"
+    },
+    {
+      "seed": 1027567,
+      "candidate_seat": 1,
+      "candidate_cash": 34590,
+      "opponent_cash": 34134,
+      "margin": 456,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_13_seeds_1026624_1028671.npz"
+    },
+    {
+      "seed": 1029647,
+      "candidate_seat": 0,
+      "candidate_cash": 42446,
+      "opponent_cash": 40835,
+      "margin": 1611,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030195,
+      "candidate_seat": 0,
+      "candidate_cash": 53751,
+      "opponent_cash": 53359,
+      "margin": 392,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030287,
+      "candidate_seat": 0,
+      "candidate_cash": 38556,
+      "opponent_cash": 37220,
+      "margin": 1336,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030321,
+      "candidate_seat": 0,
+      "candidate_cash": 32508,
+      "opponent_cash": 31918,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1029647,
+      "candidate_seat": 1,
+      "candidate_cash": 42446,
+      "opponent_cash": 40835,
+      "margin": 1611,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030195,
+      "candidate_seat": 1,
+      "candidate_cash": 53751,
+      "opponent_cash": 53359,
+      "margin": 392,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030287,
+      "candidate_seat": 1,
+      "candidate_cash": 38556,
+      "opponent_cash": 37220,
+      "margin": 1336,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1030321,
+      "candidate_seat": 1,
+      "candidate_cash": 32508,
+      "opponent_cash": 31918,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_14_seeds_1028672_1030719.npz"
+    },
+    {
+      "seed": 1031789,
+      "candidate_seat": 0,
+      "candidate_cash": 37002,
+      "opponent_cash": 36299,
+      "margin": 703,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_15_seeds_1030720_1032767.npz"
+    },
+    {
+      "seed": 1031789,
+      "candidate_seat": 1,
+      "candidate_cash": 36959,
+      "opponent_cash": 36342,
+      "margin": 617,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_15_seeds_1030720_1032767.npz"
+    },
+    {
+      "seed": 1034305,
+      "candidate_seat": 0,
+      "candidate_cash": 46909,
+      "opponent_cash": 46319,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BAKERY",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_16_seeds_1032768_1034815.npz"
+    },
+    {
+      "seed": 1034428,
+      "candidate_seat": 0,
+      "candidate_cash": 31772,
+      "opponent_cash": 31353,
+      "margin": 419,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_16_seeds_1032768_1034815.npz"
+    },
+    {
+      "seed": 1034305,
+      "candidate_seat": 1,
+      "candidate_cash": 46909,
+      "opponent_cash": 46319,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BAKERY",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_16_seeds_1032768_1034815.npz"
+    },
+    {
+      "seed": 1034428,
+      "candidate_seat": 1,
+      "candidate_cash": 31772,
+      "opponent_cash": 31353,
+      "margin": 419,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_16_seeds_1032768_1034815.npz"
+    },
+    {
+      "seed": 1034934,
+      "candidate_seat": 0,
+      "candidate_cash": 37508,
+      "opponent_cash": 36838,
+      "margin": 670,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1035402,
+      "candidate_seat": 0,
+      "candidate_cash": 41010,
+      "opponent_cash": 40142,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1035776,
+      "candidate_seat": 0,
+      "candidate_cash": 31570,
+      "opponent_cash": 31150,
+      "margin": 420,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1034934,
+      "candidate_seat": 1,
+      "candidate_cash": 37508,
+      "opponent_cash": 36838,
+      "margin": 670,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1035402,
+      "candidate_seat": 1,
+      "candidate_cash": 41010,
+      "opponent_cash": 40142,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1035776,
+      "candidate_seat": 1,
+      "candidate_cash": 31570,
+      "opponent_cash": 31150,
+      "margin": 420,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_17_seeds_1034816_1036863.npz"
+    },
+    {
+      "seed": 1036943,
+      "candidate_seat": 0,
+      "candidate_cash": 38264,
+      "opponent_cash": 37686,
+      "margin": 578,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_18_seeds_1036864_1038911.npz"
+    },
+    {
+      "seed": 1037137,
+      "candidate_seat": 0,
+      "candidate_cash": 32234,
+      "opponent_cash": 31784,
+      "margin": 450,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_18_seeds_1036864_1038911.npz"
+    },
+    {
+      "seed": 1036943,
+      "candidate_seat": 1,
+      "candidate_cash": 38281,
+      "opponent_cash": 37669,
+      "margin": 612,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_18_seeds_1036864_1038911.npz"
+    },
+    {
+      "seed": 1037137,
+      "candidate_seat": 1,
+      "candidate_cash": 32234,
+      "opponent_cash": 31784,
+      "margin": 450,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_18_seeds_1036864_1038911.npz"
+    },
+    {
+      "seed": 1038938,
+      "candidate_seat": 0,
+      "candidate_cash": 39706,
+      "opponent_cash": 39465,
+      "margin": 241,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1039423,
+      "candidate_seat": 0,
+      "candidate_cash": 39012,
+      "opponent_cash": 38679,
+      "margin": 333,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040193,
+      "candidate_seat": 0,
+      "candidate_cash": 33057,
+      "opponent_cash": 32602,
+      "margin": 455,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040255,
+      "candidate_seat": 0,
+      "candidate_cash": 40557,
+      "opponent_cash": 39820,
+      "margin": 737,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040409,
+      "candidate_seat": 0,
+      "candidate_cash": 37348,
+      "opponent_cash": 36900,
+      "margin": 448,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040415,
+      "candidate_seat": 0,
+      "candidate_cash": 38793,
+      "opponent_cash": 38360,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1038938,
+      "candidate_seat": 1,
+      "candidate_cash": 40089,
+      "opponent_cash": 39082,
+      "margin": 1007,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1039423,
+      "candidate_seat": 1,
+      "candidate_cash": 39281,
+      "opponent_cash": 38410,
+      "margin": 871,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040193,
+      "candidate_seat": 1,
+      "candidate_cash": 33058,
+      "opponent_cash": 32601,
+      "margin": 457,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040255,
+      "candidate_seat": 1,
+      "candidate_cash": 40558,
+      "opponent_cash": 39819,
+      "margin": 739,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040409,
+      "candidate_seat": 1,
+      "candidate_cash": 37350,
+      "opponent_cash": 36898,
+      "margin": 452,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1040415,
+      "candidate_seat": 1,
+      "candidate_cash": 38793,
+      "opponent_cash": 38360,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_19_seeds_1038912_1040959.npz"
+    },
+    {
+      "seed": 1041407,
+      "candidate_seat": 0,
+      "candidate_cash": 35457,
+      "opponent_cash": 34417,
+      "margin": 1040,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1041976,
+      "candidate_seat": 0,
+      "candidate_cash": 33732,
+      "opponent_cash": 33104,
+      "margin": 628,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042155,
+      "candidate_seat": 0,
+      "candidate_cash": 59188,
+      "opponent_cash": 59115,
+      "margin": 73,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042186,
+      "candidate_seat": 0,
+      "candidate_cash": 39313,
+      "opponent_cash": 38738,
+      "margin": 575,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042545,
+      "candidate_seat": 0,
+      "candidate_cash": 42041,
+      "opponent_cash": 40717,
+      "margin": 1324,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042558,
+      "candidate_seat": 0,
+      "candidate_cash": 32590,
+      "opponent_cash": 32049,
+      "margin": 541,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1041407,
+      "candidate_seat": 1,
+      "candidate_cash": 35099,
+      "opponent_cash": 34777,
+      "margin": 322,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1041976,
+      "candidate_seat": 1,
+      "candidate_cash": 33718,
+      "opponent_cash": 33118,
+      "margin": 600,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042155,
+      "candidate_seat": 1,
+      "candidate_cash": 59244,
+      "opponent_cash": 59059,
+      "margin": 185,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042186,
+      "candidate_seat": 1,
+      "candidate_cash": 39313,
+      "opponent_cash": 38738,
+      "margin": 575,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042545,
+      "candidate_seat": 1,
+      "candidate_cash": 42041,
+      "opponent_cash": 40717,
+      "margin": 1324,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1042558,
+      "candidate_seat": 1,
+      "candidate_cash": 32590,
+      "opponent_cash": 32049,
+      "margin": 541,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_20_seeds_1040960_1043007.npz"
+    },
+    {
+      "seed": 1044071,
+      "candidate_seat": 0,
+      "candidate_cash": 38699,
+      "opponent_cash": 38135,
+      "margin": 564,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1044621,
+      "candidate_seat": 0,
+      "candidate_cash": 37538,
+      "opponent_cash": 37317,
+      "margin": 221,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1044994,
+      "candidate_seat": 0,
+      "candidate_cash": 31135,
+      "opponent_cash": 30632,
+      "margin": 503,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1044071,
+      "candidate_seat": 1,
+      "candidate_cash": 38699,
+      "opponent_cash": 38135,
+      "margin": 564,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1044621,
+      "candidate_seat": 1,
+      "candidate_cash": 37931,
+      "opponent_cash": 36924,
+      "margin": 1007,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1044994,
+      "candidate_seat": 1,
+      "candidate_cash": 31079,
+      "opponent_cash": 30688,
+      "margin": 391,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_21_seeds_1043008_1045055.npz"
+    },
+    {
+      "seed": 1046116,
+      "candidate_seat": 0,
+      "candidate_cash": 42602,
+      "opponent_cash": 41146,
+      "margin": 1456,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046398,
+      "candidate_seat": 0,
+      "candidate_cash": 32983,
+      "opponent_cash": 32550,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046487,
+      "candidate_seat": 0,
+      "candidate_cash": 38195,
+      "opponent_cash": 36871,
+      "margin": 1324,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046528,
+      "candidate_seat": 0,
+      "candidate_cash": 37081,
+      "opponent_cash": 36517,
+      "margin": 564,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046804,
+      "candidate_seat": 0,
+      "candidate_cash": 34313,
+      "opponent_cash": 33582,
+      "margin": 731,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046963,
+      "candidate_seat": 0,
+      "candidate_cash": 42845,
+      "opponent_cash": 41362,
+      "margin": 1483,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046116,
+      "candidate_seat": 1,
+      "candidate_cash": 42678,
+      "opponent_cash": 41070,
+      "margin": 1608,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046398,
+      "candidate_seat": 1,
+      "candidate_cash": 32983,
+      "opponent_cash": 32550,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046487,
+      "candidate_seat": 1,
+      "candidate_cash": 38195,
+      "opponent_cash": 36871,
+      "margin": 1324,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046528,
+      "candidate_seat": 1,
+      "candidate_cash": 37081,
+      "opponent_cash": 36517,
+      "margin": 564,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046804,
+      "candidate_seat": 1,
+      "candidate_cash": 34313,
+      "opponent_cash": 33582,
+      "margin": 731,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1046963,
+      "candidate_seat": 1,
+      "candidate_cash": 42845,
+      "opponent_cash": 41362,
+      "margin": 1483,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_22_seeds_1045056_1047103.npz"
+    },
+    {
+      "seed": 1047231,
+      "candidate_seat": 0,
+      "candidate_cash": 59952,
+      "opponent_cash": 59519,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_23_seeds_1047104_1049151.npz"
+    },
+    {
+      "seed": 1047784,
+      "candidate_seat": 0,
+      "candidate_cash": 44883,
+      "opponent_cash": 44225,
+      "margin": 658,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_23_seeds_1047104_1049151.npz"
+    },
+    {
+      "seed": 1047231,
+      "candidate_seat": 1,
+      "candidate_cash": 59952,
+      "opponent_cash": 59519,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_23_seeds_1047104_1049151.npz"
+    },
+    {
+      "seed": 1047784,
+      "candidate_seat": 1,
+      "candidate_cash": 44883,
+      "opponent_cash": 44225,
+      "margin": 658,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_23_seeds_1047104_1049151.npz"
+    },
+    {
+      "seed": 1050599,
+      "candidate_seat": 0,
+      "candidate_cash": 31346,
+      "opponent_cash": 30912,
+      "margin": 434,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_24_seeds_1049152_1051199.npz"
+    },
+    {
+      "seed": 1051089,
+      "candidate_seat": 0,
+      "candidate_cash": 34770,
+      "opponent_cash": 34271,
+      "margin": 499,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_24_seeds_1049152_1051199.npz"
+    },
+    {
+      "seed": 1050599,
+      "candidate_seat": 1,
+      "candidate_cash": 31346,
+      "opponent_cash": 30912,
+      "margin": 434,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_24_seeds_1049152_1051199.npz"
+    },
+    {
+      "seed": 1051089,
+      "candidate_seat": 1,
+      "candidate_cash": 34694,
+      "opponent_cash": 34347,
+      "margin": 347,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_24_seeds_1049152_1051199.npz"
+    },
+    {
+      "seed": 1051299,
+      "candidate_seat": 0,
+      "candidate_cash": 54354,
+      "opponent_cash": 53748,
+      "margin": 606,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1051487,
+      "candidate_seat": 0,
+      "candidate_cash": 43921,
+      "opponent_cash": 43325,
+      "margin": 596,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052099,
+      "candidate_seat": 0,
+      "candidate_cash": 40676,
+      "opponent_cash": 39306,
+      "margin": 1370,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052294,
+      "candidate_seat": 0,
+      "candidate_cash": 33166,
+      "opponent_cash": 32454,
+      "margin": 712,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052961,
+      "candidate_seat": 0,
+      "candidate_cash": 41465,
+      "opponent_cash": 40569,
+      "margin": 896,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1051299,
+      "candidate_seat": 1,
+      "candidate_cash": 54310,
+      "opponent_cash": 53792,
+      "margin": 518,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1051487,
+      "candidate_seat": 1,
+      "candidate_cash": 43943,
+      "opponent_cash": 43303,
+      "margin": 640,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052099,
+      "candidate_seat": 1,
+      "candidate_cash": 40676,
+      "opponent_cash": 39306,
+      "margin": 1370,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052294,
+      "candidate_seat": 1,
+      "candidate_cash": 33166,
+      "opponent_cash": 32454,
+      "margin": 712,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1052961,
+      "candidate_seat": 1,
+      "candidate_cash": 41465,
+      "opponent_cash": 40569,
+      "margin": 896,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "event_shard": "events_25_seeds_1051200_1053247.npz"
+    },
+    {
+      "seed": 1053517,
+      "candidate_seat": 0,
+      "candidate_cash": 51607,
+      "opponent_cash": 50561,
+      "margin": 1046,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1054772,
+      "candidate_seat": 0,
+      "candidate_cash": 40553,
+      "opponent_cash": 39884,
+      "margin": 669,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1054841,
+      "candidate_seat": 0,
+      "candidate_cash": 36501,
+      "opponent_cash": 35919,
+      "margin": 582,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1053517,
+      "candidate_seat": 1,
+      "candidate_cash": 51607,
+      "opponent_cash": 50561,
+      "margin": 1046,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1054772,
+      "candidate_seat": 1,
+      "candidate_cash": 40553,
+      "opponent_cash": 39884,
+      "margin": 669,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1054841,
+      "candidate_seat": 1,
+      "candidate_cash": 36495,
+      "opponent_cash": 35925,
+      "margin": 570,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_26_seeds_1053248_1055295.npz"
+    },
+    {
+      "seed": 1055348,
+      "candidate_seat": 0,
+      "candidate_cash": 42201,
+      "opponent_cash": 40614,
+      "margin": 1587,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055506,
+      "candidate_seat": 0,
+      "candidate_cash": 41144,
+      "opponent_cash": 40558,
+      "margin": 586,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055583,
+      "candidate_seat": 0,
+      "candidate_cash": 46972,
+      "opponent_cash": 46351,
+      "margin": 621,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055679,
+      "candidate_seat": 0,
+      "candidate_cash": 50599,
+      "opponent_cash": 49056,
+      "margin": 1543,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056499,
+      "candidate_seat": 0,
+      "candidate_cash": 38866,
+      "opponent_cash": 38433,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056883,
+      "candidate_seat": 0,
+      "candidate_cash": 38766,
+      "opponent_cash": 37929,
+      "margin": 837,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056891,
+      "candidate_seat": 0,
+      "candidate_cash": 40666,
+      "opponent_cash": 39162,
+      "margin": 1504,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1057019,
+      "candidate_seat": 0,
+      "candidate_cash": 58548,
+      "opponent_cash": 58461,
+      "margin": 87,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1057027,
+      "candidate_seat": 0,
+      "candidate_cash": 36499,
+      "opponent_cash": 35918,
+      "margin": 581,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055348,
+      "candidate_seat": 1,
+      "candidate_cash": 42200,
+      "opponent_cash": 40615,
+      "margin": 1585,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055506,
+      "candidate_seat": 1,
+      "candidate_cash": 41144,
+      "opponent_cash": 40558,
+      "margin": 586,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055583,
+      "candidate_seat": 1,
+      "candidate_cash": 46972,
+      "opponent_cash": 46351,
+      "margin": 621,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1055679,
+      "candidate_seat": 1,
+      "candidate_cash": 50599,
+      "opponent_cash": 49056,
+      "margin": 1543,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056499,
+      "candidate_seat": 1,
+      "candidate_cash": 38866,
+      "opponent_cash": 38433,
+      "margin": 433,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056883,
+      "candidate_seat": 1,
+      "candidate_cash": 38409,
+      "opponent_cash": 38298,
+      "margin": 111,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1056891,
+      "candidate_seat": 1,
+      "candidate_cash": 40666,
+      "opponent_cash": 39162,
+      "margin": 1504,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1057019,
+      "candidate_seat": 1,
+      "candidate_cash": 58548,
+      "opponent_cash": 58461,
+      "margin": 87,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1057027,
+      "candidate_seat": 1,
+      "candidate_cash": 36499,
+      "opponent_cash": 35918,
+      "margin": 581,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_27_seeds_1055296_1057343.npz"
+    },
+    {
+      "seed": 1057574,
+      "candidate_seat": 0,
+      "candidate_cash": 37082,
+      "opponent_cash": 36197,
+      "margin": 885,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058090,
+      "candidate_seat": 0,
+      "candidate_cash": 47439,
+      "opponent_cash": 46849,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058524,
+      "candidate_seat": 0,
+      "candidate_cash": 39949,
+      "opponent_cash": 39371,
+      "margin": 578,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058893,
+      "candidate_seat": 0,
+      "candidate_cash": 41198,
+      "opponent_cash": 40330,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1059035,
+      "candidate_seat": 0,
+      "candidate_cash": 43896,
+      "opponent_cash": 43692,
+      "margin": 204,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1057574,
+      "candidate_seat": 1,
+      "candidate_cash": 37082,
+      "opponent_cash": 36197,
+      "margin": 885,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058090,
+      "candidate_seat": 1,
+      "candidate_cash": 47439,
+      "opponent_cash": 46849,
+      "margin": 590,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058524,
+      "candidate_seat": 1,
+      "candidate_cash": 39949,
+      "opponent_cash": 39371,
+      "margin": 578,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1058893,
+      "candidate_seat": 1,
+      "candidate_cash": 41198,
+      "opponent_cash": 40330,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1059035,
+      "candidate_seat": 1,
+      "candidate_cash": 44399,
+      "opponent_cash": 43331,
+      "margin": 1068,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_28_seeds_1057344_1059391.npz"
+    },
+    {
+      "seed": 1059498,
+      "candidate_seat": 0,
+      "candidate_cash": 42918,
+      "opponent_cash": 41366,
+      "margin": 1552,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059590,
+      "candidate_seat": 0,
+      "candidate_cash": 39028,
+      "opponent_cash": 38160,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059667,
+      "candidate_seat": 0,
+      "candidate_cash": 37035,
+      "opponent_cash": 35693,
+      "margin": 1342,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059857,
+      "candidate_seat": 0,
+      "candidate_cash": 40410,
+      "opponent_cash": 40534,
+      "margin": -124,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059987,
+      "candidate_seat": 0,
+      "candidate_cash": 45563,
+      "opponent_cash": 44692,
+      "margin": 871,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060181,
+      "candidate_seat": 0,
+      "candidate_cash": 34323,
+      "opponent_cash": 33739,
+      "margin": 584,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060198,
+      "candidate_seat": 0,
+      "candidate_cash": 42879,
+      "opponent_cash": 41801,
+      "margin": 1078,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060234,
+      "candidate_seat": 0,
+      "candidate_cash": 40575,
+      "opponent_cash": 40276,
+      "margin": 299,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060471,
+      "candidate_seat": 0,
+      "candidate_cash": 38732,
+      "opponent_cash": 37858,
+      "margin": 874,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060770,
+      "candidate_seat": 0,
+      "candidate_cash": 35817,
+      "opponent_cash": 35367,
+      "margin": 450,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060844,
+      "candidate_seat": 0,
+      "candidate_cash": 42005,
+      "opponent_cash": 41368,
+      "margin": 637,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060872,
+      "candidate_seat": 0,
+      "candidate_cash": 49012,
+      "opponent_cash": 48196,
+      "margin": 816,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1061333,
+      "candidate_seat": 0,
+      "candidate_cash": 32769,
+      "opponent_cash": 32331,
+      "margin": 438,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059498,
+      "candidate_seat": 1,
+      "candidate_cash": 42918,
+      "opponent_cash": 41366,
+      "margin": 1552,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059590,
+      "candidate_seat": 1,
+      "candidate_cash": 39028,
+      "opponent_cash": 38160,
+      "margin": 868,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059667,
+      "candidate_seat": 1,
+      "candidate_cash": 37035,
+      "opponent_cash": 35693,
+      "margin": 1342,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059857,
+      "candidate_seat": 1,
+      "candidate_cash": 40940,
+      "opponent_cash": 39998,
+      "margin": 942,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1059987,
+      "candidate_seat": 1,
+      "candidate_cash": 45563,
+      "opponent_cash": 44692,
+      "margin": 871,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BAKERY",
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060181,
+      "candidate_seat": 1,
+      "candidate_cash": 34323,
+      "opponent_cash": 33739,
+      "margin": 584,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060198,
+      "candidate_seat": 1,
+      "candidate_cash": 43404,
+      "opponent_cash": 41270,
+      "margin": 2134,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060234,
+      "candidate_seat": 1,
+      "candidate_cash": 40890,
+      "opponent_cash": 39961,
+      "margin": 929,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060471,
+      "candidate_seat": 1,
+      "candidate_cash": 38732,
+      "opponent_cash": 37858,
+      "margin": 874,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060770,
+      "candidate_seat": 1,
+      "candidate_cash": 35817,
+      "opponent_cash": 35367,
+      "margin": 450,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060844,
+      "candidate_seat": 1,
+      "candidate_cash": 42005,
+      "opponent_cash": 41368,
+      "margin": 637,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1060872,
+      "candidate_seat": 1,
+      "candidate_cash": 49012,
+      "opponent_cash": 48196,
+      "margin": 816,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1061333,
+      "candidate_seat": 1,
+      "candidate_cash": 32769,
+      "opponent_cash": 32331,
+      "margin": 438,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_29_seeds_1059392_1061439.npz"
+    },
+    {
+      "seed": 1061979,
+      "candidate_seat": 0,
+      "candidate_cash": 42732,
+      "opponent_cash": 42099,
+      "margin": 633,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1061983,
+      "candidate_seat": 0,
+      "candidate_cash": 43905,
+      "opponent_cash": 42411,
+      "margin": 1494,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062161,
+      "candidate_seat": 0,
+      "candidate_cash": 49886,
+      "opponent_cash": 49276,
+      "margin": 610,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062191,
+      "candidate_seat": 0,
+      "candidate_cash": 39577,
+      "opponent_cash": 38097,
+      "margin": 1480,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062943,
+      "candidate_seat": 0,
+      "candidate_cash": 33107,
+      "opponent_cash": 32555,
+      "margin": 552,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1063281,
+      "candidate_seat": 0,
+      "candidate_cash": 44360,
+      "opponent_cash": 43734,
+      "margin": 626,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1063383,
+      "candidate_seat": 0,
+      "candidate_cash": 32640,
+      "opponent_cash": 32214,
+      "margin": 426,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1061979,
+      "candidate_seat": 1,
+      "candidate_cash": 42732,
+      "opponent_cash": 42099,
+      "margin": 633,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1061983,
+      "candidate_seat": 1,
+      "candidate_cash": 43905,
+      "opponent_cash": 42411,
+      "margin": 1494,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062161,
+      "candidate_seat": 1,
+      "candidate_cash": 49886,
+      "opponent_cash": 49276,
+      "margin": 610,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062191,
+      "candidate_seat": 1,
+      "candidate_cash": 39577,
+      "opponent_cash": 38097,
+      "margin": 1480,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1062943,
+      "candidate_seat": 1,
+      "candidate_cash": 33106,
+      "opponent_cash": 32556,
+      "margin": 550,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1063281,
+      "candidate_seat": 1,
+      "candidate_cash": 44360,
+      "opponent_cash": 43734,
+      "margin": 626,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1063383,
+      "candidate_seat": 1,
+      "candidate_cash": 32668,
+      "opponent_cash": 32186,
+      "margin": 482,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "event_shard": "events_30_seeds_1061440_1063487.npz"
+    },
+    {
+      "seed": 1063845,
+      "candidate_seat": 0,
+      "candidate_cash": 35938,
+      "opponent_cash": 35398,
+      "margin": 540,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064136,
+      "candidate_seat": 0,
+      "candidate_cash": 50821,
+      "opponent_cash": 50072,
+      "margin": 749,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064290,
+      "candidate_seat": 0,
+      "candidate_cash": 56301,
+      "opponent_cash": 56119,
+      "margin": 182,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064447,
+      "candidate_seat": 0,
+      "candidate_cash": 48950,
+      "opponent_cash": 48193,
+      "margin": 757,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1065312,
+      "candidate_seat": 0,
+      "candidate_cash": 38760,
+      "opponent_cash": 38111,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1063845,
+      "candidate_seat": 1,
+      "candidate_cash": 35938,
+      "opponent_cash": 35398,
+      "margin": 540,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064136,
+      "candidate_seat": 1,
+      "candidate_cash": 50821,
+      "opponent_cash": 50072,
+      "margin": 749,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064290,
+      "candidate_seat": 1,
+      "candidate_cash": 56326,
+      "opponent_cash": 56094,
+      "margin": 232,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1064447,
+      "candidate_seat": 1,
+      "candidate_cash": 48950,
+      "opponent_cash": 48193,
+      "margin": 757,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    },
+    {
+      "seed": 1065312,
+      "candidate_seat": 1,
+      "candidate_cash": 38760,
+      "opponent_cash": 38111,
+      "margin": 649,
+      "town_shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "event_shard": "events_31_seeds_1063488_1065535.npz"
+    }
+  ]
+}

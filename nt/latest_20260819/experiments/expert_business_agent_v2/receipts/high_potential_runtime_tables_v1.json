@@ -1,0 +1,17 @@
+{
+  "schema": "kaggriculture.high_potential_runtime_tables.v1",
+  "generated_at_utc": "2026-08-19T10:39:48.182047+00:00",
+  "source": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+  "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+  "output": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\high_potential_runtime_tables_v1.npz",
+  "output_sha256": "6fcc1cff78fc961e5029f8cdc7025a18a12876cd84a9a6c588c9761e8b4a5040",
+  "steps": 719,
+  "route_bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\high_potential_route_bank_v1.npz",
+  "route_bank_sha256": "d89a78f96507b6dae743ba57374dc9eb778a67e72982c5c33b32d529a9ede09a",
+  "contents": [
+    "V17_R5_MARKETS",
+    "V17_MD_MARKETS",
+    "future_plant_before_day28",
+    "agent_market_price_lut"
+  ]
+}

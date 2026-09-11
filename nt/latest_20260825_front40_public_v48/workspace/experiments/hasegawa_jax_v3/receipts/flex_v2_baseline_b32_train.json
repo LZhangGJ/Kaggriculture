@@ -1,0 +1,42 @@
+{
+  "schema": "kaggriculture.hasegawa_jax_v2.exact5_small_arena",
+  "generated_at_utc": "2026-08-20T09:31:21.493785+00:00",
+  "device": "cuda:0",
+  "seed_start": 154001,
+  "screening_only": true,
+  "results": [
+    {
+      "opponent": "flex_v59",
+      "hasegawa_seat": 0,
+      "games": 32,
+      "win_rate": 0.34375,
+      "hasegawa_cash_mean": 81116.40625,
+      "opponent_cash_mean": 85571.0,
+      "mean_margin": -4454.59375,
+      "all_done": true,
+      "hard_counter_total": 0,
+      "invalid_intent_total": 88,
+      "resync_total": 146,
+      "compile_and_first_seconds": 22.475302641999974,
+      "steady_seconds": 7.989460448999978,
+      "transitions_per_second": 2879.7939669229927
+    },
+    {
+      "opponent": "flex_v59",
+      "hasegawa_seat": 1,
+      "games": 32,
+      "win_rate": 0.34375,
+      "hasegawa_cash_mean": 80987.21875,
+      "opponent_cash_mean": 85562.15625,
+      "mean_margin": -4574.9375,
+      "all_done": true,
+      "hard_counter_total": 0,
+      "invalid_intent_total": 341,
+      "resync_total": 162,
+      "compile_and_first_seconds": 22.30088467300004,
+      "steady_seconds": 7.870341430000053,
+      "transitions_per_second": 2923.3801614118593
+    }
+  ],
+  "status": "PASS"
+}

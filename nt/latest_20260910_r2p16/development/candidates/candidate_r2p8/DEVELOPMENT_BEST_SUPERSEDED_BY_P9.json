@@ -1,0 +1,31 @@
+{
+  "name": "R2P8 public sale clock coupled market0",
+  "status": "BEST_OLD_DEVELOPMENT_SCORE_BUT_FAILED_NEW_SEED_CONFIRMATION_DO_NOT_PROMOTE",
+  "binary": "candidate_r2p8/policy/clock_coupled_market0.so",
+  "binary_sha256": "f93c388cf6199ddbb33faa0c7a96d8d14b2999b0e7bd2880fa5da6d349a0b0fc",
+  "build_receipt": "candidate_r2p8/BUILD_coupled_market0.json",
+  "config": "clock_screen100/clock_coupled_market0/clock_coupled_market0/CONFIG.json",
+  "protocol": "clock_screen100/clock_coupled_market0/PROTOCOL.json",
+  "results": "clock_screen100/clock_coupled_market0/clock_coupled_market0/RESULTS.json",
+  "games": 2200,
+  "wins": 1616,
+  "baseline_wins": 1501,
+  "rescued_losses": 269,
+  "lost_old_wins": 154,
+  "mean_margin_delta": -149.3740909090909,
+  "macro_win_rate": 0.7345454545454545,
+  "development_seeds": [2609110000, 2609110099],
+  "independent_confirmation": {
+    "receipt": "clock_validation32/RESULTS.json",
+    "seeds": [2609121000, 2609121031],
+    "games_per_version": 704,
+    "baseline_wins": 546,
+    "candidate_wins": 497,
+    "rescued_losses": 19,
+    "lost_old_wins": 68,
+    "passed": false
+  },
+  "final_holdout_used": false,
+  "goal_remains_active": true,
+  "released_original_unchanged": true
+}

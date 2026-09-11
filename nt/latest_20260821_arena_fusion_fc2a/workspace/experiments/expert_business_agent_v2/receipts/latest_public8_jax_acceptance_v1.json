@@ -1,0 +1,616 @@
+{
+  "schema": "kaggriculture.latest_public8_jax_acceptance.v1",
+  "generated_at_utc": "2026-08-20T12:06:33.922873+00:00",
+  "status": "PASS",
+  "official_package_version": "1.32.7",
+  "backend": "gpu",
+  "jax_version": "0.11.0",
+  "shared": {
+    "route_bank": "experiments/expert_business_agent_v2/artifacts/latest_public8_route_bank_v1.npz",
+    "runtime_tables": "experiments/expert_business_agent_v2/artifacts/latest_public8_runtime_tables_v1.npz",
+    "dynamic_branch_receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_dynamic_branch_coverage_v1.json",
+    "dynamic_branch_receipt_sha256": "71c6f041eb6a0365890a74c5a03759c44ccf1ad8416e4dd931bf4fb8f0e9e42c",
+    "historical_exact5_regression": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\high_potential_exact5_historical_regression_after_latest8_v1.json",
+    "historical_exact5_regression_sha256": "ac173fcfa4d8c16a12ed6cd6d59a463825e49036d00ca427386fbc18df16043e",
+    "historical_exact5_regression_status": "PASS",
+    "benchmark_batch": 2048,
+    "benchmark_unique_events": 1024,
+    "physical_gpu": "NVIDIA GeForce RTX 3090 24GB",
+    "jax_allocator_limit_bytes": 19327352832
+  },
+  "inputs": {
+    "manifest": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_latest8_20260820\\manifest.json",
+      "sha256": "6521a2cd36b073eaeb3e3f449e1ca13feced4d97712ea0fd06310b2175a6b4e7"
+    },
+    "easy6": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+      "sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+    },
+    "kaito": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\kaito_v36_latest_jax_parity_v2.json",
+      "sha256": "7a9d6a203ec5397817ccc117f7dbfc282c2f702c40c896dc72d5f3de2021670d"
+    },
+    "x562": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\x562_latest_dynamic_branches_jax_parity_v1.json",
+      "sha256": "6fa778fb031bdb7bb633ca9c3be37dde9c027a2034dee2fa59027e2d748e1f1e"
+    },
+    "coverage": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_dynamic_branch_coverage_v1.json",
+      "sha256": "71c6f041eb6a0365890a74c5a03759c44ccf1ad8416e4dd931bf4fb8f0e9e42c"
+    },
+    "benchmark_deniz": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_benchmark_deniz_v1.json",
+      "sha256": "77504eacbaba32efd6b9b4cff5c4a515e9a0b11c31670bd95fc6de82c62f871c"
+    },
+    "benchmark_rest": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_benchmark_remaining7_v1.json",
+      "sha256": "c59c49f40a153354da37e5adcaf3687d113bf6868863b849abb526bb4427a411"
+    },
+    "historical_regression": {
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\high_potential_exact5_historical_regression_after_latest8_v1.json",
+      "sha256": "ac173fcfa4d8c16a12ed6cd6d59a463825e49036d00ca427386fbc18df16043e"
+    }
+  },
+  "results": [
+    {
+      "agent": "deniz_v111_8c4s_latest",
+      "title": "V111 | 8C4S Economic Core Premium Lead",
+      "kaggle_ref": "denizeryilmaz/v111-8c4s-economic-core-premium-lead",
+      "source_main": "references/public_latest8_20260820/deniz_v111_8c4s_latest/main.py",
+      "source_sha256": "f029fa0cb66a9eb509afbe44e3f59b800332d0419db91607183410e4089c4d19",
+      "source_notebook_sha256": "92faf3269de09bdf8bcbb3d306f12cf8a8d83385e9cec94b78f6134a04d4143f",
+      "features": "固定 8C4S 路线；RC5 杂草恢复；一步高价抢卖；债务回填与原始市场顺序。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/latest_public8_gpu.py",
+          "sha256": "c9017620f68ae8847fe7fca3dbf9fce99d389d044db2c1804c6cba00910c9244"
+        },
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/public_g02_gpu.py",
+          "sha256": "4de6f04eb7122de53f57fefd315f448056b498af21011313e2b61e430aeb4894"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 102,
+        "market_overlay_steps": 280,
+        "any_overlay_steps": 382,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "deniz_v111_8c4s_latest",
+        "source_sha256": "f029fa0cb66a9eb509afbe44e3f59b800332d0419db91607183410e4089c4d19",
+        "controller_kind": "deniz",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 22.462182092000006,
+        "steady_seconds_runs": [
+          6.057972941999992,
+          6.0403990460000045
+        ],
+        "steady_seconds_median": 6.049185993999998,
+        "steady_games_per_second": 338.5579484630409,
+        "steady_transitions_per_second": 243423.16494492636,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 153557.302734375,
+        "cash_min": 67186,
+        "cash_max": 199513,
+        "device_bytes_in_use_before": 65517824,
+        "device_bytes_in_use_after": 99937536,
+        "device_peak_bytes_in_use": 156890112,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "boatlee_v20_latest",
+      "title": "V20-Adaptive-R1 | Multi-Route Agent",
+      "kaggle_ref": "boatlee/v20-adaptive-r1-multi-route-agent",
+      "source_main": "references/public_latest8_20260820/boatlee_v20_latest/main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_notebook_sha256": "959093fedd48a99580432faee5cb6f5dfd1530a61429556b4c8b7f5d965b4fa2",
+      "features": "8 路商店选择；杂草恢复；一步抢卖；销售排序、容量保护、回填与终局清仓。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/high_potential_v20_gpu.py",
+          "sha256": "cbf290b91af81a3a38ddcf1d59c63a2727f6300123c7d3b5fc4350e49fba56f6"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 15,
+        "market_overlay_steps": 210,
+        "any_overlay_steps": 237,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "boatlee_v20_latest",
+        "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+        "controller_kind": "shared",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 38.686860749999994,
+        "steady_seconds_runs": [
+          8.339663126999994,
+          8.684570074000021
+        ],
+        "steady_seconds_median": 8.512116600500008,
+        "steady_games_per_second": 240.59820795684342,
+        "steady_transitions_per_second": 172990.11152097041,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 152414.591796875,
+        "cash_min": 57867,
+        "cash_max": 201163,
+        "device_bytes_in_use_before": 65517056,
+        "device_bytes_in_use_after": 99128576,
+        "device_peak_bytes_in_use": 156072192,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "kunal_2026_v1_latest",
+      "title": "Kaggriculture 2026 V1",
+      "kaggle_ref": "kunaldesale2408/kaggriculture-2026-v1",
+      "source_main": "references/public_latest8_20260820/kunal_2026_v1_latest/main.py",
+      "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "source_notebook_sha256": "8a6b051409ddde6743d780d3ee214764b3eb0e8197cec6d7c1d9493ae6fa3588",
+      "features": "与 Boatlee V20 冻结源码逐字节相同；共享同一精确 JAX 图并保留独立页面身份。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/high_potential_v20_gpu.py",
+          "sha256": "cbf290b91af81a3a38ddcf1d59c63a2727f6300123c7d3b5fc4350e49fba56f6"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 15,
+        "market_overlay_steps": 210,
+        "any_overlay_steps": 237,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "kunal_2026_v1_latest",
+        "source_sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+        "controller_kind": "shared",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 15.410538031999977,
+        "steady_seconds_runs": [
+          8.858208389999959,
+          8.712538929000061
+        ],
+        "steady_seconds_median": 8.78537365950001,
+        "steady_games_per_second": 233.1147290229833,
+        "steady_transitions_per_second": 167609.490167525,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 152414.591796875,
+        "cash_min": 57867,
+        "cash_max": 201163,
+        "device_bytes_in_use_before": 99128576,
+        "device_bytes_in_use_after": 102858752,
+        "device_peak_bytes_in_use": 159469824,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "rayk_rank_agent_latest",
+      "title": "Kaggriculture Rank Your Agent",
+      "kaggle_ref": "raykkretzschmar/kaggriculture-rank-your-agent",
+      "source_main": "references/public_latest8_20260820/rayk_rank_agent_latest/main.py",
+      "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "source_notebook_sha256": "f326ef39b52ca868b1aabc36a8787efad03740d00bf84cd717766e2983fc281e",
+      "features": "锁定商店路线；1/2/4 步自适应抢卖；持续回填；容量保护；裁剪终局前无法兑现的种子购买。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/high_potential_v20_gpu.py",
+          "sha256": "cbf290b91af81a3a38ddcf1d59c63a2727f6300123c7d3b5fc4350e49fba56f6"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 15,
+        "market_overlay_steps": 268,
+        "any_overlay_steps": 303,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "rayk_rank_agent_latest",
+        "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+        "controller_kind": "shared",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 47.38240151899993,
+        "steady_seconds_runs": [
+          8.984312965999948,
+          8.888824001999978
+        ],
+        "steady_seconds_median": 8.936568483999963,
+        "steady_games_per_second": 229.17073859689435,
+        "steady_transitions_per_second": 164773.76105116704,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 152836.1728515625,
+        "cash_min": 58137,
+        "cash_max": 201403,
+        "device_bytes_in_use_before": 102858752,
+        "device_bytes_in_use_after": 100834816,
+        "device_peak_bytes_in_use": 159731712,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "kaito_v36_latest",
+      "title": "106/130 Multi-Generation | v36 Robust Hybrid",
+      "kaggle_ref": "kaitofukami/106-130-multi-generation-v36-robust-hybrid",
+      "source_main": "references/public_latest8_20260820/kaito_v36_latest/main.py",
+      "source_sha256": "47ebf29039463dc0eb803ccf38d5a6f0c130d2b49f3698b20c53f495c1062dc8",
+      "source_notebook_sha256": "d456d3f8723e54a82f404c7f15a78469272c9649cfdc653c9734e95c34b64934",
+      "features": "固定 V36 混合路线；对手镜像判断；一步 SELL 抢占；WHEAT 单回合做市；仓位归因/退出；现金、饲料和容量预留。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/latest_public8_gpu.py",
+          "sha256": "c9017620f68ae8847fe7fca3dbf9fce99d389d044db2c1804c6cba00910c9244"
+        },
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/public_g02_gpu.py",
+          "sha256": "4de6f04eb7122de53f57fefd315f448056b498af21011313e2b61e430aeb4894"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\kaito_v36_latest_jax_parity_v2.json",
+        "receipt_sha256": "7a9d6a203ec5397817ccc117f7dbfc282c2f702c40c896dc72d5f3de2021670d"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 10,
+        "market_overlay_steps": 898,
+        "any_overlay_steps": 908,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "kaito_v36_latest",
+        "source_sha256": "47ebf29039463dc0eb803ccf38d5a6f0c130d2b49f3698b20c53f495c1062dc8",
+        "controller_kind": "kaito",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 383.318662958,
+        "steady_seconds_runs": [
+          8.839763447999985,
+          8.960790991999943
+        ],
+        "steady_seconds_median": 8.900277219999964,
+        "steady_games_per_second": 230.10519216164462,
+        "steady_transitions_per_second": 165445.6331642225,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 152845.197265625,
+        "cash_min": 69078,
+        "cash_max": 197969,
+        "device_bytes_in_use_before": 100834816,
+        "device_bytes_in_use_after": 102345984,
+        "device_peak_bytes_in_use": 163753216,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "x562_latest",
+      "title": "Kaggriculture X544 - Nah, I'd Win.",
+      "kaggle_ref": "stevenleehans/kaggriculture-x544-nah-i-d-win",
+      "source_main": "references/public_latest8_20260820/x562_latest/main.py",
+      "source_sha256": "e4980a8548baa1f3e3ae51a92b1759fdeaaf8ff0ca517c1e8094ce5c015dc915",
+      "source_notebook_sha256": "c29247ba1fdfc86a945674b33dbb9c2cc823ff51fb1b753566a12acf28c7c653",
+      "features": "第 168 步按商店状态选择高/低路线；杂草恢复；房间腾挪；R5/MD 反制；高价抢卖；容量保护；终局种子裁剪与清仓。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/latest_public8_gpu.py",
+          "sha256": "c9017620f68ae8847fe7fca3dbf9fce99d389d044db2c1804c6cba00910c9244"
+        },
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/high_potential_v20_gpu.py",
+          "sha256": "cbf290b91af81a3a38ddcf1d59c63a2727f6300123c7d3b5fc4350e49fba56f6"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 16,
+        "seeds": [
+          208203,
+          208204,
+          208205,
+          208206,
+          208207,
+          208208,
+          208209,
+          208210
+        ],
+        "seat_swapped": true,
+        "actions_exact": 16,
+        "states_exact": 16,
+        "terminal_rewards_exact": 16,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\x562_latest_dynamic_branches_jax_parity_v1.json",
+        "receipt_sha256": "6fa778fb031bdb7bb633ca9c3be37dde9c027a2034dee2fa59027e2d748e1f1e"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 16,
+        "unit_overlay_steps": 85,
+        "market_overlay_steps": 776,
+        "any_overlay_steps": 850,
+        "x562_high_contexts": 4,
+        "x562_low_contexts": 12
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "x562_latest",
+        "source_sha256": "e4980a8548baa1f3e3ae51a92b1759fdeaaf8ff0ca517c1e8094ce5c015dc915",
+        "controller_kind": "x562",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 43.82929043399997,
+        "steady_seconds_runs": [
+          8.275531556000033,
+          8.378027427000006
+        ],
+        "steady_seconds_median": 8.32677949150002,
+        "steady_games_per_second": 245.9534327876221,
+        "steady_transitions_per_second": 176840.51817430026,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 160174.759765625,
+        "cash_min": 60746,
+        "cash_max": 203706,
+        "device_bytes_in_use_before": 102345984,
+        "device_bytes_in_use_after": 105633024,
+        "device_peak_bytes_in_use": 163993088,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "tetsutani_adaptive_latest",
+      "title": "🌾Adaptive Farming Strategy for Kaggriculture",
+      "kaggle_ref": "tetsutani/adaptive-farming-strategy-for-kaggriculture",
+      "source_main": "references/public_latest8_20260820/tetsutani_adaptive_latest/main.py",
+      "source_sha256": "c26402b67a0d04a46348353069645b1a49c3cb3df6df69d7fa35d8adbbdbeae4",
+      "source_notebook_sha256": "ba18ed4f6077168a52850c31ad1a677b07bc6d1df1a942a40b52a113b2c0c1df",
+      "features": "实时商店路由；固定一步高价队列；杂草恢复；销售排序、容量保护、回填与终局清仓。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/high_potential_v20_gpu.py",
+          "sha256": "cbf290b91af81a3a38ddcf1d59c63a2727f6300123c7d3b5fc4350e49fba56f6"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 15,
+        "market_overlay_steps": 210,
+        "any_overlay_steps": 237,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "tetsutani_adaptive_latest",
+        "source_sha256": "c26402b67a0d04a46348353069645b1a49c3cb3df6df69d7fa35d8adbbdbeae4",
+        "controller_kind": "shared",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 14.087541787000191,
+        "steady_seconds_runs": [
+          8.136400096999978,
+          8.227482151000004
+        ],
+        "steady_seconds_median": 8.18194112399999,
+        "steady_games_per_second": 250.30734992612278,
+        "steady_transitions_per_second": 179970.98459688228,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 152414.591796875,
+        "cash_min": 57867,
+        "cash_max": 201163,
+        "device_bytes_in_use_before": 105633024,
+        "device_bytes_in_use_after": 107740672,
+        "device_peak_bytes_in_use": 168491264,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    },
+    {
+      "agent": "flex_multi_route_latest",
+      "title": "Kaggriculture | Multi-Route Farming Agent",
+      "kaggle_ref": "flexonafft/kaggriculture-multi-route-farming-agent",
+      "source_main": "references/public_latest8_20260820/flex_multi_route_latest/main.py",
+      "source_sha256": "9bdfbafb6755067182d88ce594fd46fb1d712713ffd6931e83d5d50e84bc6fb2",
+      "source_notebook_sha256": "2e3e1000e7e14d3a2520b7630079800ec1739afcefc2a06e9fd967ff66cf1705",
+      "features": "公开 V25 路线工件；RC5 杂草恢复；官方 1.32.7 销售槽排序与终局处理。",
+      "implementation": [
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/public_v25_gpu.py",
+          "sha256": "f1fba24736d6476fe7b72f6a364dd387af17c4a321d2041e98057f49bc7d011d"
+        },
+        {
+          "path": "experiments/strategic_v5/src/strategic_v5/public_g02_gpu.py",
+          "sha256": "4de6f04eb7122de53f57fefd315f448056b498af21011313e2b61e430aeb4894"
+        }
+      ],
+      "official_parity": {
+        "status": "PASS",
+        "contexts": 4,
+        "seeds": [
+          208201,
+          208202
+        ],
+        "seat_swapped": true,
+        "actions_exact": 4,
+        "states_exact": 4,
+        "terminal_rewards_exact": 4,
+        "receipt": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\receipts\\latest_public8_easy6_jax_parity_v1.json",
+        "receipt_sha256": "254f14a23994cbd3611bba71f260932fb9932528bfe4aa1d2f12a867e6b3d8d1"
+      },
+      "dynamic_overlay_evidence": {
+        "contexts": 4,
+        "unit_overlay_steps": 10,
+        "market_overlay_steps": 66,
+        "any_overlay_steps": 76,
+        "x562_high_contexts": 0,
+        "x562_low_contexts": 0
+      },
+      "batch_reset_and_benchmark": {
+        "agent": "flex_multi_route_latest",
+        "source_sha256": "9bdfbafb6755067182d88ce594fd46fb1d712713ffd6931e83d5d50e84bc6fb2",
+        "controller_kind": "flex",
+        "batch": 2048,
+        "unique_events": 1024,
+        "compile_and_first_seconds": 24.49094455599993,
+        "steady_seconds_runs": [
+          6.174583743000085,
+          6.16637905399989
+        ],
+        "steady_seconds_median": 6.170481398499987,
+        "steady_games_per_second": 331.9027913280572,
+        "steady_transitions_per_second": 238638.10696487315,
+        "all_done": true,
+        "duplicated_event_lanes_exact": true,
+        "fresh_reset_reruns_exact": true,
+        "cross_game_state_pollution": false,
+        "cash_mean": 150279.8740234375,
+        "cash_min": 69463,
+        "cash_max": 195892,
+        "device_bytes_in_use_before": 107740672,
+        "device_bytes_in_use_after": 108813824,
+        "device_peak_bytes_in_use": 168524800,
+        "device_allocator_limit_bytes": 19327352832,
+        "status": "PASS"
+      },
+      "acceptance_claim": "EXACT_PARITY_ACCEPTED_ON_FROZEN_CORPUS",
+      "claim_boundary": "All action fields, public/private state fields and terminal rewards are exact on the frozen official 1.32.7 corpus. This is strong regression evidence, not a mathematical proof for every reachable state.",
+      "status": "PASS"
+    }
+  ],
+  "truth_boundary": "Passive-opponent cash is a mechanics/throughput diagnostic only. It is not a current-Meta ranking, and historical Public scores are not compared across dates."
+}

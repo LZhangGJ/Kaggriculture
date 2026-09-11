@@ -1,0 +1,5494 @@
+[
+  {
+    "step": 552,
+    "action": {
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [],
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          5
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          17
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    "farmer": [
+      4,
+      4
+    ],
+    "hands": [],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": false,
+      "fertilizer_available": true,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 8,
+        "STRAWBERRY": 18,
+        "MELON": 48,
+        "EGG": 2,
+        "MILK": 11,
+        "WOOL": 0,
+        "FERTILIZER": 11,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 553,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    "farmer": [
+      4,
+      4
+    ],
+    "hands": [
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": false,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 8,
+        "STRAWBERRY": 18,
+        "MELON": 48,
+        "EGG": 2,
+        "MILK": 11,
+        "WOOL": 0,
+        "FERTILIZER": 6,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 1
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 554,
+    "action": {
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          18
+        ],
+        [
+          "SELL",
+          "MELON",
+          48
+        ],
+        [
+          "SELL",
+          "TOMATO",
+          8
+        ],
+        [
+          "SELL",
+          "EGG",
+          2
+        ],
+        [
+          "SELL",
+          "MILK",
+          11
+        ]
+      ]
+    },
+    "farmer": [
+      4,
+      4
+    ],
+    "hands": [
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": false,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 8,
+        "STRAWBERRY": 18,
+        "MELON": 48,
+        "EGG": 2,
+        "MILK": 11,
+        "WOOL": 0,
+        "FERTILIZER": 6,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 555,
+    "action": {
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      3,
+      4
+    ],
+    "hands": [
+      [
+        6,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {
+          "FERTILIZER": 4
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 556,
+    "action": {
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      3,
+      4
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {
+          "MILK": 3
+        },
+        {
+          "WHEAT": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {
+          "FERTILIZER": 4
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 557,
+    "action": {
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "DIG"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "PLACE",
+          "MILK",
+          3
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      3,
+      4
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {
+          "WHEAT": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "MILK": 3
+        },
+        {},
+        {
+          "WHEAT": 1
+        },
+        {
+          "FERTILIZER": 4
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 558,
+    "action": {
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "DIG"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      4
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 3,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 17,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {},
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 4
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 559,
+    "action": {
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLACE",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    "farmer": [
+      1,
+      4
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 3,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 15,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {},
+        {},
+        {
+          "FERTILIZER": 3
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "WHEAT": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 3
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 560,
+    "action": {
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      4
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 3,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 14,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "MILK": 3
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "WHEAT": 1,
+          "STRAWBERRY": 2,
+          "EGG": 2
+        },
+        {
+          "FERTILIZER": 3
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 561,
+    "action": {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          3
+        ]
+      ]
+    },
+    "farmer": [
+      0,
+      4
+    ],
+    "hands": [
+      [
+        8,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 3,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 12,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "WHEAT": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "WHEAT": 1,
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 3
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 562,
+    "action": {
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "DIG"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      3
+    ],
+    "hands": [
+      [
+        8,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 12,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "WHEAT": 1
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "WHEAT": 1,
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 3
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 563,
+    "action": {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "DIG"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      3
+    ],
+    "hands": [
+      [
+        8,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 12,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "WHEAT": 1
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 564,
+    "action": {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      2
+    ],
+    "hands": [
+      [
+        8,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 11,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "WHEAT": 1
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 565,
+    "action": {
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      1
+    ],
+    "hands": [
+      [
+        8,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 10,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 566,
+    "action": {
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 7,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 1,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 567,
+    "action": {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      0,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 7,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {},
+        {
+          "WHEAT": 1,
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 568,
+    "action": {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "DIG"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      1,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "FERTILIZER": 2
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 569,
+    "action": {
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "DIG"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 570,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 571,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        3
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 572,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 573,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 574,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "STRAWBERRY": 6,
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 575,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": []
+    },
+    "farmer": [
+      2,
+      1
+    ],
+    "hands": [
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE",
+      "animal": "COW",
+      "placed_day": 0,
+      "yield_units": 0,
+      "consecutive_unfed": 1,
+      "fed_today": false,
+      "cared_today": true,
+      "fertilizer_available": false,
+      "pending_care_bonus": 1
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 4,
+          "TOMATO": 2
+        },
+        {
+          "TOMATO": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 1,
+          "STRAWBERRY": 6
+        },
+        {
+          "STRAWBERRY": 2
+        },
+        {},
+        {
+          "STRAWBERRY": 6,
+          "FERTILIZER": 1
+        },
+        {
+          "STRAWBERRY": 2,
+          "EGG": 2,
+          "FERTILIZER": 1,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 576,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [],
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          7
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          9
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    "farmer": [
+      4,
+      4
+    ],
+    "hands": [],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE"
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 10,
+        "STRAWBERRY": 38,
+        "MELON": 0,
+        "EGG": 4,
+        "MILK": 6,
+        "WOOL": 0,
+        "FERTILIZER": 8,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  },
+  {
+    "step": 577,
+    "action": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    "farmer": [
+      4,
+      4
+    ],
+    "hands": [
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "tiles_shape": [
+      10,
+      10
+    ],
+    "tile44": {
+      "kind": "PASTURE"
+    },
+    "private": {
+      "shed": {
+        "WHEAT": 7,
+        "CARROT": 0,
+        "TOMATO": 10,
+        "STRAWBERRY": 38,
+        "MELON": 0,
+        "EGG": 4,
+        "MILK": 6,
+        "WOOL": 0,
+        "FERTILIZER": 8,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 9,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "workflow": {
+      "captures": 0,
+      "fast_paths": 0,
+      "certificate_failures": 0,
+      "mismatches": 0,
+      "witness_used": 0,
+      "chain_repairs": 0,
+      "restored": 0,
+      "unresolved": 0,
+      "verify_calls": 0,
+      "repair_trials": 0,
+      "accounted": 0,
+      "deadline_misses": 0,
+      "deadline_days": 0,
+      "first_mismatch_step": -1,
+      "first_mismatch_pos": -1,
+      "first_mismatch_op": -1,
+      "first_mismatch_item": -1,
+      "first_mismatch_due": 0,
+      "first_mismatch_have": 0,
+      "first_mismatch_capture_step": -1,
+      "first_mismatch_hour": -1,
+      "first_plan_max": -1,
+      "first_witness_max": -1,
+      "first_shed_wheat": -1,
+      "first_min_worker_distance": -1,
+      "first_min_loaded_distance": -1,
+      "witness_invalid": 0,
+      "witness_not_due": 0,
+      "witness_not_keep": 0,
+      "witness_no_fit": 0,
+      "chain_unknown": 0,
+      "chain_no_fit": 0,
+      "chain_input_reject": 0,
+      "chain_verify_reject": 0,
+      "output_overrides_detected": 0,
+      "output_restores": 0,
+      "output_restore_rejected": 0
+    }
+  }
+]

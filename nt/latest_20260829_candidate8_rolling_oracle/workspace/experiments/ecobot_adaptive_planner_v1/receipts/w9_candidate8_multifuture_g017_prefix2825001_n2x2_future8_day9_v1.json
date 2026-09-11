@@ -1,0 +1,296 @@
+{
+  "schema": "kaggriculture.candidate8_multifuture_oracle.v1",
+  "created_at_utc": "2026-08-28T19:53:56.741635+00:00",
+  "parameters": {
+    "opponent": "G017",
+    "opponent_route": 16,
+    "prefix_seed_start": 2825001,
+    "prefix_seed_count": 2,
+    "future_seed_start": 9926001,
+    "future_count": 8,
+    "seats": [
+      0,
+      1
+    ],
+    "minimum_decision_day": 9,
+    "maximum_arms": 4096,
+    "threads": 16
+  },
+  "summary": {
+    "states": 4,
+    "feasible_count_range": [
+      72,
+      282
+    ],
+    "oracle_recall_at_64": 0.25,
+    "near_oracle_recall_within_500": 0.25,
+    "near_oracle_recall_within_1000": 0.25,
+    "mean_shortlist_regret": 3010.5,
+    "max_shortlist_regret": 5057.125,
+    "mean_best_gain_over_keep": 13018.5,
+    "positive_best_gain_rate": 1.0,
+    "end_overflow_events": 0,
+    "total_complete_continuations": 7712,
+    "setup_seconds": 0.9331625879999592,
+    "simulation_seconds": 17.697570592000034,
+    "complete_continuations_per_second": 435.7660256197036
+  },
+  "family_summary": {
+    "KEEP": {
+      "arms": 4,
+      "mean_expected_gain_vs_keep": 0.0,
+      "median_expected_gain_vs_keep": 0.0,
+      "positive_rate": 0.0,
+      "best_gain": 0.0,
+      "worst_gain": 0.0
+    },
+    "SCHEDULE_LAYOUT": {
+      "arms": 32,
+      "mean_expected_gain_vs_keep": -598.2578125,
+      "median_expected_gain_vs_keep": 337.0,
+      "positive_rate": 0.5,
+      "best_gain": 14619.625,
+      "worst_gain": -20864.0
+    },
+    "CONTINUOUS_SCALE": {
+      "arms": 56,
+      "mean_expected_gain_vs_keep": -1738.236607142857,
+      "median_expected_gain_vs_keep": -2541.9375,
+      "positive_rate": 0.44642857142857145,
+      "best_gain": 15952.0,
+      "worst_gain": -20346.875
+    },
+    "UNILATERAL": {
+      "arms": 56,
+      "mean_expected_gain_vs_keep": -2006.279017857143,
+      "median_expected_gain_vs_keep": -2541.9375,
+      "positive_rate": 0.44642857142857145,
+      "best_gain": 15882.625,
+      "worst_gain": -19903.75
+    },
+    "MULTI_PROJECT": {
+      "arms": 436,
+      "mean_expected_gain_vs_keep": -1485.072247706422,
+      "median_expected_gain_vs_keep": -1910.4375,
+      "positive_rate": 0.463302752293578,
+      "best_gain": 21978.625,
+      "worst_gain": -27046.0
+    },
+    "TIMING": {
+      "arms": 30,
+      "mean_expected_gain_vs_keep": -1073.675,
+      "median_expected_gain_vs_keep": -1698.8125,
+      "positive_rate": 0.3,
+      "best_gain": 10626.875,
+      "worst_gain": -12572.0
+    },
+    "MARKET_TRANSACTION": {
+      "arms": 40,
+      "mean_expected_gain_vs_keep": 830.921875,
+      "median_expected_gain_vs_keep": 0.0,
+      "positive_rate": 0.2,
+      "best_gain": 16247.375,
+      "worst_gain": -21010.125
+    },
+    "PHASE_SUFFIX": {
+      "arms": 30,
+      "mean_expected_gain_vs_keep": -1702.0375,
+      "median_expected_gain_vs_keep": -3667.625,
+      "positive_rate": 0.4,
+      "best_gain": 15952.0,
+      "worst_gain": -16564.625
+    },
+    "LOCAL_RECOVERY": {
+      "arms": 24,
+      "mean_expected_gain_vs_keep": 1699.8125,
+      "median_expected_gain_vs_keep": 0.0,
+      "positive_rate": 0.3333333333333333,
+      "best_gain": 15066.875,
+      "worst_gain": -8237.625
+    }
+  },
+  "states": [
+    {
+      "state_id": 0,
+      "prefix_seed": 2825001,
+      "seat": 0,
+      "decision_step": 216,
+      "future_seeds": [
+        9926001,
+        9926002,
+        9926003,
+        9926004,
+        9926005,
+        9926006,
+        9926007,
+        9926008
+      ],
+      "feasible_count": 72,
+      "shortlist_count": 64,
+      "keep_expected_reward": 84787.625,
+      "oracle_expected_reward": 96172.75,
+      "oracle_reward_std": 16219.029978315595,
+      "oracle_family": "LOCAL_RECOVERY",
+      "oracle_signature": 4390886205209712511,
+      "oracle_in_shortlist": true,
+      "shortlist_best_expected_reward": 96172.75,
+      "shortlist_regret": 0.0,
+      "shortlist_within_500": true,
+      "shortlist_within_1000": true,
+      "best_gain_over_keep": 11385.125,
+      "overflow_events": 0,
+      "feasible_by_family": {
+        "KEEP": 1,
+        "SCHEDULE_LAYOUT": 8,
+        "CONTINUOUS_SCALE": 4,
+        "UNILATERAL": 4,
+        "MULTI_PROJECT": 30,
+        "TIMING": 6,
+        "MARKET_TRANSACTION": 12,
+        "PHASE_SUFFIX": 1,
+        "LOCAL_RECOVERY": 6
+      }
+    },
+    {
+      "state_id": 1,
+      "prefix_seed": 2825001,
+      "seat": 1,
+      "decision_step": 216,
+      "future_seeds": [
+        9926009,
+        9926010,
+        9926011,
+        9926012,
+        9926013,
+        9926014,
+        9926015,
+        9926016
+      ],
+      "feasible_count": 72,
+      "shortlist_count": 64,
+      "keep_expected_reward": 79818.0,
+      "oracle_expected_reward": 95103.875,
+      "oracle_reward_std": 14692.554478693452,
+      "oracle_family": "MULTI_PROJECT",
+      "oracle_signature": 14942561624060615694,
+      "oracle_in_shortlist": false,
+      "shortlist_best_expected_reward": 91543.375,
+      "shortlist_regret": 3560.5,
+      "shortlist_within_500": false,
+      "shortlist_within_1000": false,
+      "best_gain_over_keep": 15285.875,
+      "overflow_events": 0,
+      "feasible_by_family": {
+        "KEEP": 1,
+        "SCHEDULE_LAYOUT": 8,
+        "CONTINUOUS_SCALE": 4,
+        "UNILATERAL": 4,
+        "MULTI_PROJECT": 30,
+        "TIMING": 6,
+        "MARKET_TRANSACTION": 12,
+        "PHASE_SUFFIX": 1,
+        "LOCAL_RECOVERY": 6
+      }
+    },
+    {
+      "state_id": 2,
+      "prefix_seed": 2825002,
+      "seat": 0,
+      "decision_step": 216,
+      "future_seeds": [
+        9926017,
+        9926018,
+        9926019,
+        9926020,
+        9926021,
+        9926022,
+        9926023,
+        9926024
+      ],
+      "feasible_count": 282,
+      "shortlist_count": 64,
+      "keep_expected_reward": 89652.25,
+      "oracle_expected_reward": 111630.875,
+      "oracle_reward_std": 9288.197678202967,
+      "oracle_family": "MULTI_PROJECT",
+      "oracle_signature": 873772630800724237,
+      "oracle_in_shortlist": false,
+      "shortlist_best_expected_reward": 106573.75,
+      "shortlist_regret": 5057.125,
+      "shortlist_within_500": false,
+      "shortlist_within_1000": false,
+      "best_gain_over_keep": 21978.625,
+      "overflow_events": 0,
+      "feasible_by_family": {
+        "KEEP": 1,
+        "SCHEDULE_LAYOUT": 8,
+        "CONTINUOUS_SCALE": 24,
+        "UNILATERAL": 24,
+        "MULTI_PROJECT": 188,
+        "TIMING": 9,
+        "MARKET_TRANSACTION": 8,
+        "PHASE_SUFFIX": 14,
+        "LOCAL_RECOVERY": 6
+      }
+    },
+    {
+      "state_id": 3,
+      "prefix_seed": 2825002,
+      "seat": 1,
+      "decision_step": 216,
+      "future_seeds": [
+        9926025,
+        9926026,
+        9926027,
+        9926028,
+        9926029,
+        9926030,
+        9926031,
+        9926032
+      ],
+      "feasible_count": 282,
+      "shortlist_count": 64,
+      "keep_expected_reward": 109455.875,
+      "oracle_expected_reward": 112880.25,
+      "oracle_reward_std": 7368.323414284962,
+      "oracle_family": "MULTI_PROJECT",
+      "oracle_signature": 5349339585559050988,
+      "oracle_in_shortlist": false,
+      "shortlist_best_expected_reward": 109455.875,
+      "shortlist_regret": 3424.375,
+      "shortlist_within_500": false,
+      "shortlist_within_1000": false,
+      "best_gain_over_keep": 3424.375,
+      "overflow_events": 0,
+      "feasible_by_family": {
+        "KEEP": 1,
+        "SCHEDULE_LAYOUT": 8,
+        "CONTINUOUS_SCALE": 24,
+        "UNILATERAL": 24,
+        "MULTI_PROJECT": 188,
+        "TIMING": 9,
+        "MARKET_TRANSACTION": 8,
+        "PHASE_SUFFIX": 14,
+        "LOCAL_RECOVERY": 6
+      }
+    }
+  ],
+  "inputs": {
+    "source": {
+      "path": "research/team_mate/Kaggriculture_main_512631c/agents/route_clustering_switch_agent/runtime/teammate_base.py",
+      "sha256": "0F884F76A73D2604EECAEB24CE8B680C83A4699211D7308E42A91C4499C9B190"
+    },
+    "actions": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_actions.json.zlib",
+      "sha256": "C42A2F25A93136208B8E6CC5D04925DE7076EBD4A9C9549FFF076BFA94504E01"
+    },
+    "metadata": {
+      "path": "experiments/ecobot_adaptive_planner_v1/artifacts/oracle/rank1_latest_55714246_ep99954642_route_library.json",
+      "sha256": "D5E001B7CBA68D202828C5DF3D9910EA54FF7C38F20E02D897FC790FAC721BF9"
+    },
+    "genomes": {
+      "path": "experiments/ecobot_adaptive_planner_v1/configs/w5_autonomous_capacity_r6_challenger_v1.json",
+      "sha256": "18D61CE860B17A7C510A9228A385964765357FB6599F10A5289AFA727BDA9694"
+    }
+  }
+}

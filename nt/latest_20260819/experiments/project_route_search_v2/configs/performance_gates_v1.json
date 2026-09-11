@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "measurement_contract": {
+    "hardware_profile": "LOCAL_RTX3090_24GB_I9_12900K",
+    "episode_steps": 719,
+    "opponent": "NULL_OPPONENT_V1",
+    "include_controller_logic": true,
+    "exclude_first_jit_compile": true,
+    "report_transitions_per_second": true,
+    "report_peak_device_memory": true,
+    "require_no_cap_or_parity_errors": true
+  },
+  "comparison_baseline": {
+    "id": "T_DYNAMIC_V2",
+    "transitions_per_second": 86600,
+    "note": "dynamic policy execution baseline; not simulator-only throughput"
+  },
+  "milestone_gates": {
+    "M2_CROP": {"minimum_transitions_per_second": 60000, "minimum_baseline_fraction": 0.70},
+    "M3_ANIMAL": {"minimum_transitions_per_second": 50000, "minimum_baseline_fraction": 0.60},
+    "M4_FULL": {"minimum_transitions_per_second": 35000, "minimum_baseline_fraction": 0.45}
+  },
+  "search_policy_by_full_speed": [
+    {"minimum": 60000, "policy": "DIRECT_FULL_SEARCH"},
+    {"minimum": 35000, "policy": "FOUR_SEED_LAYOUT_RESCUE_THEN_FULL"},
+    {"minimum": 25000, "policy": "FOUR_SEED_LAYOUT_RESCUE_AND_20K_PILOT"},
+    {"minimum": 20000, "policy": "OPTIMIZE_BEFORE_FULL_SEARCH"},
+    {"minimum": 0, "policy": "M4_FAIL"}
+  ]
+}

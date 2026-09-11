@@ -1,0 +1,394 @@
+{
+  "schema": "kaggriculture.front40_fusion.hasegawa-route-screen-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-24T23:06:49.671169+00:00",
+  "device": "cuda:0",
+  "seed_start": 1176001,
+  "seed_count": 128,
+  "route_count": 26,
+  "route_ids": [
+    154,
+    159,
+    158,
+    121,
+    130,
+    153,
+    77,
+    129,
+    106,
+    52,
+    139,
+    110,
+    70,
+    134,
+    117,
+    145,
+    80,
+    96,
+    33,
+    60,
+    89,
+    23,
+    36,
+    54,
+    1,
+    104
+  ],
+  "route_chunk": 8,
+  "route_start": "first_shop",
+  "compilation_cache": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/jax_compilation_cache",
+  "games": 6656,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "groups": [
+    {
+      "first_shop_id": 0,
+      "first_shop": "BAKERY",
+      "seed_count": 7,
+      "eligible_routes": 2,
+      "top_routes": [
+        {
+          "route_id": 60,
+          "source_episode_id": 93835193,
+          "source_reward": 44193,
+          "games": 14,
+          "win_rate": 0.14285714285714285,
+          "mean_margin": -10053.5,
+          "invalid_mean": 3.857142857142857
+        },
+        {
+          "route_id": 106,
+          "source_episode_id": 94497022,
+          "source_reward": 62190,
+          "games": 14,
+          "win_rate": 0.14285714285714285,
+          "mean_margin": -10252.714285714286,
+          "invalid_mean": 1.9285714285714286
+        }
+      ]
+    },
+    {
+      "first_shop_id": 1,
+      "first_shop": "BRUNCH_SPOT",
+      "seed_count": 13,
+      "eligible_routes": 5,
+      "top_routes": [
+        {
+          "route_id": 130,
+          "source_episode_id": 95308532,
+          "source_reward": 99227,
+          "games": 26,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -5614.2307692307695,
+          "invalid_mean": 2.576923076923077
+        },
+        {
+          "route_id": 96,
+          "source_episode_id": 94302405,
+          "source_reward": 97482,
+          "games": 26,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -5661.961538461538,
+          "invalid_mean": 2.576923076923077
+        },
+        {
+          "route_id": 80,
+          "source_episode_id": 94064862,
+          "source_reward": 68699,
+          "games": 26,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -5665.423076923077,
+          "invalid_mean": 2.576923076923077
+        },
+        {
+          "route_id": 52,
+          "source_episode_id": 93822374,
+          "source_reward": 128990,
+          "games": 26,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -5905.7692307692305,
+          "invalid_mean": 3.576923076923077
+        },
+        {
+          "route_id": 33,
+          "source_episode_id": 93810737,
+          "source_reward": 68101,
+          "games": 26,
+          "win_rate": 0.3076923076923077,
+          "mean_margin": -6144.807692307692,
+          "invalid_mean": 11.576923076923077
+        }
+      ]
+    },
+    {
+      "first_shop_id": 2,
+      "first_shop": "FARMERS_MARKET",
+      "seed_count": 15,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 154,
+          "source_episode_id": 96832155,
+          "source_reward": 55965,
+          "games": 30,
+          "win_rate": 0.4666666666666667,
+          "mean_margin": -2401.9,
+          "invalid_mean": 11.033333333333333
+        },
+        {
+          "route_id": 117,
+          "source_episode_id": 94849564,
+          "source_reward": 69170,
+          "games": 30,
+          "win_rate": 0.4,
+          "mean_margin": -3568.5333333333333,
+          "invalid_mean": 13.066666666666666
+        },
+        {
+          "route_id": 134,
+          "source_episode_id": 95504411,
+          "source_reward": 97190,
+          "games": 30,
+          "win_rate": 0.3,
+          "mean_margin": -3570.5333333333333,
+          "invalid_mean": 10.4
+        }
+      ]
+    },
+    {
+      "first_shop_id": 3,
+      "first_shop": "ICE_CREAM_SHOP",
+      "seed_count": 20,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 153,
+          "source_episode_id": 96784201,
+          "source_reward": 92144,
+          "games": 40,
+          "win_rate": 0.65,
+          "mean_margin": -1612.9,
+          "invalid_mean": 2.175
+        },
+        {
+          "route_id": 110,
+          "source_episode_id": 94569408,
+          "source_reward": 79845,
+          "games": 40,
+          "win_rate": 0.65,
+          "mean_margin": -1727.6,
+          "invalid_mean": 4.125
+        },
+        {
+          "route_id": 70,
+          "source_episode_id": 93974372,
+          "source_reward": 105143,
+          "games": 40,
+          "win_rate": 0.65,
+          "mean_margin": -1776.6,
+          "invalid_mean": 13.025
+        }
+      ]
+    },
+    {
+      "first_shop_id": 4,
+      "first_shop": "PET_CAFE",
+      "seed_count": 19,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 145,
+          "source_episode_id": 96218746,
+          "source_reward": 86944,
+          "games": 38,
+          "win_rate": 0.47368421052631576,
+          "mean_margin": -4380.289473684211,
+          "invalid_mean": 1.9736842105263157
+        },
+        {
+          "route_id": 139,
+          "source_episode_id": 95661994,
+          "source_reward": 62225,
+          "games": 38,
+          "win_rate": 0.42105263157894735,
+          "mean_margin": -4493.921052631579,
+          "invalid_mean": 2.973684210526316
+        },
+        {
+          "route_id": 23,
+          "source_episode_id": 93804940,
+          "source_reward": 69164,
+          "games": 38,
+          "win_rate": 0.0,
+          "mean_margin": -32001.157894736843,
+          "invalid_mean": 697.7894736842105
+        }
+      ]
+    },
+    {
+      "first_shop_id": 5,
+      "first_shop": "PIZZA_SHOP",
+      "seed_count": 15,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 158,
+          "source_episode_id": 97277006,
+          "source_reward": 76607,
+          "games": 30,
+          "win_rate": 0.8,
+          "mean_margin": 476.56666666666666,
+          "invalid_mean": 7.9
+        },
+        {
+          "route_id": 129,
+          "source_episode_id": 95249015,
+          "source_reward": 54719,
+          "games": 30,
+          "win_rate": 0.6666666666666666,
+          "mean_margin": 254.16666666666666,
+          "invalid_mean": 7.9
+        },
+        {
+          "route_id": 89,
+          "source_episode_id": 94214207,
+          "source_reward": 121814,
+          "games": 30,
+          "win_rate": 0.5666666666666667,
+          "mean_margin": -122.46666666666667,
+          "invalid_mean": 7.9
+        }
+      ]
+    },
+    {
+      "first_shop_id": 6,
+      "first_shop": "SMOOTHIE_SHOP",
+      "seed_count": 18,
+      "eligible_routes": 3,
+      "top_routes": [
+        {
+          "route_id": 159,
+          "source_episode_id": 97283590,
+          "source_reward": 123595,
+          "games": 36,
+          "win_rate": 0.6944444444444444,
+          "mean_margin": 1313.9722222222222,
+          "invalid_mean": 5.361111111111111
+        },
+        {
+          "route_id": 121,
+          "source_episode_id": 95013774,
+          "source_reward": 87277,
+          "games": 36,
+          "win_rate": 0.6944444444444444,
+          "mean_margin": 1312.111111111111,
+          "invalid_mean": 5.361111111111111
+        },
+        {
+          "route_id": 77,
+          "source_episode_id": 94038472,
+          "source_reward": 51352,
+          "games": 36,
+          "win_rate": 0.6944444444444444,
+          "mean_margin": 1103.4166666666667,
+          "invalid_mean": 4.361111111111111
+        }
+      ]
+    },
+    {
+      "first_shop_id": 7,
+      "first_shop": "YARN_STORE",
+      "seed_count": 21,
+      "eligible_routes": 4,
+      "top_routes": [
+        {
+          "route_id": 54,
+          "source_episode_id": 93823754,
+          "source_reward": 131807,
+          "games": 42,
+          "win_rate": 0.19047619047619047,
+          "mean_margin": -2514.214285714286,
+          "invalid_mean": 15.119047619047619
+        },
+        {
+          "route_id": 104,
+          "source_episode_id": 94472165,
+          "source_reward": 148993,
+          "games": 42,
+          "win_rate": 0.19047619047619047,
+          "mean_margin": -2581.809523809524,
+          "invalid_mean": 8.333333333333334
+        },
+        {
+          "route_id": 1,
+          "source_episode_id": 93794318,
+          "source_reward": 125143,
+          "games": 42,
+          "win_rate": 0.16666666666666666,
+          "mean_margin": -2343.404761904762,
+          "invalid_mean": 8.333333333333334
+        },
+        {
+          "route_id": 36,
+          "source_episode_id": 93812701,
+          "source_reward": 91594,
+          "games": 42,
+          "win_rate": 0.16666666666666666,
+          "mean_margin": -2569.5238095238096,
+          "invalid_mean": 9.333333333333334
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seat": 0,
+      "start": 0,
+      "end": 7,
+      "seconds": 39.21818648300001
+    },
+    {
+      "seat": 0,
+      "start": 8,
+      "end": 15,
+      "seconds": 14.771466765000014
+    },
+    {
+      "seat": 0,
+      "start": 16,
+      "end": 23,
+      "seconds": 15.020572878999985
+    },
+    {
+      "seat": 0,
+      "start": 24,
+      "end": 25,
+      "seconds": 14.690576670999974
+    },
+    {
+      "seat": 1,
+      "start": 0,
+      "end": 7,
+      "seconds": 37.24387821600004
+    },
+    {
+      "seat": 1,
+      "start": 8,
+      "end": 15,
+      "seconds": 14.908164098000043
+    },
+    {
+      "seat": 1,
+      "start": 16,
+      "end": 23,
+      "seconds": 14.849241728000038
+    },
+    {
+      "seat": 1,
+      "start": 24,
+      "end": 25,
+      "seconds": 14.93195890000004
+    }
+  ],
+  "matrix": "experiments/front40_fusion_v1/receipts/rank36_james_holland_candidate26_vs_fc24b_screen_seed1176001_n128x2_v12.npz",
+  "status": "PASS"
+}

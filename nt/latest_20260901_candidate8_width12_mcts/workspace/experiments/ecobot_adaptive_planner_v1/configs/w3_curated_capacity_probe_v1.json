@@ -1,0 +1,73 @@
+{
+  "schema": "kaggriculture.native-adaptive-genomes.v1",
+  "genomes": [
+    {
+      "label": "g001_caps_risk_1p6_reserve_250",
+      "values": {
+        "cash_reserve": 250, "action_cost": 2, "move_cost": 5,
+        "risk_multiplier": 1.6, "market_impact_weight": 1,
+        "opponent_supply_weight": 0.65, "demand_drift_weight": 0.6,
+        "sell_drop_limit": 0.3, "price_replan_fraction": 0.2,
+        "task_stickiness": 80, "deadline_weight": 160,
+        "fertilizer_value_fraction": 0.9, "max_hands": 14,
+        "max_quadrants": 3, "max_total_animals": 14, "max_cows": 10,
+        "max_sheep": 4, "max_geese": 0, "max_wheat": 45,
+        "max_carrot": 12, "max_tomato": 20, "max_strawberry": 45,
+        "max_melon": 8, "min_wheat_buffer": 2, "liquidation_day": 26,
+        "stop_new_animals_day": 14, "stop_new_crops_day": 24,
+        "replan_interval_steps": 24
+      }
+    },
+    {
+      "label": "g001_caps_risk_1p6_reserve_500",
+      "values": {
+        "cash_reserve": 500, "action_cost": 2, "move_cost": 5,
+        "risk_multiplier": 1.6, "market_impact_weight": 1,
+        "opponent_supply_weight": 0.65, "demand_drift_weight": 0.6,
+        "sell_drop_limit": 0.3, "price_replan_fraction": 0.2,
+        "task_stickiness": 80, "deadline_weight": 160,
+        "fertilizer_value_fraction": 0.9, "max_hands": 14,
+        "max_quadrants": 3, "max_total_animals": 14, "max_cows": 10,
+        "max_sheep": 4, "max_geese": 0, "max_wheat": 45,
+        "max_carrot": 12, "max_tomato": 20, "max_strawberry": 45,
+        "max_melon": 8, "min_wheat_buffer": 3, "liquidation_day": 26,
+        "stop_new_animals_day": 14, "stop_new_crops_day": 24,
+        "replan_interval_steps": 24
+      }
+    },
+    {
+      "label": "crop_heavy_risk_1p6",
+      "values": {
+        "cash_reserve": 400, "action_cost": 1, "move_cost": 4,
+        "risk_multiplier": 1.6, "market_impact_weight": 1,
+        "opponent_supply_weight": 0.65, "demand_drift_weight": 0.6,
+        "sell_drop_limit": 0.35, "price_replan_fraction": 0.2,
+        "task_stickiness": 80, "deadline_weight": 170,
+        "fertilizer_value_fraction": 0.9, "max_hands": 16,
+        "max_quadrants": 3, "max_total_animals": 10, "max_cows": 8,
+        "max_sheep": 2, "max_geese": 0, "max_wheat": 55,
+        "max_carrot": 12, "max_tomato": 24, "max_strawberry": 55,
+        "max_melon": 8, "min_wheat_buffer": 2, "liquidation_day": 26,
+        "stop_new_animals_day": 12, "stop_new_crops_day": 24,
+        "replan_interval_steps": 24
+      }
+    },
+    {
+      "label": "animal_crop_balanced_risk_1p45",
+      "values": {
+        "cash_reserve": 450, "action_cost": 4, "move_cost": 6,
+        "risk_multiplier": 1.45, "market_impact_weight": 1,
+        "opponent_supply_weight": 0.65, "demand_drift_weight": 0.6,
+        "sell_drop_limit": 0.4, "price_replan_fraction": 0.2,
+        "task_stickiness": 120, "deadline_weight": 180,
+        "fertilizer_value_fraction": 0.9, "max_hands": 16,
+        "max_quadrants": 3, "max_total_animals": 18, "max_cows": 12,
+        "max_sheep": 6, "max_geese": 0, "max_wheat": 50,
+        "max_carrot": 10, "max_tomato": 20, "max_strawberry": 45,
+        "max_melon": 8, "min_wheat_buffer": 3, "liquidation_day": 26,
+        "stop_new_animals_day": 14, "stop_new_crops_day": 23,
+        "replan_interval_steps": 24
+      }
+    }
+  ]
+}

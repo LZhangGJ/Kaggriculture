@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "archive": "E:\\ai_coding\\kaggle\\kaggriculture\\handoff\\T1_Rebuild_Divergence_GPT_Review_20260909_v1.zip",
+  "archive_bytes": 2391801,
+  "archive_sha256": "197cd9dcdab51c6c974b78573a6179fe8c040f815b2303f4703fc4fcfd073ad2",
+  "archive_files": 892,
+  "uncompressed_bytes": 9097669,
+  "crc_test": "PASS",
+  "archived_file_hashes": "PASS",
+  "step0_reproduction": "PASS",
+  "contains_full_arena": false,
+  "contains_all_match_traces": false
+}

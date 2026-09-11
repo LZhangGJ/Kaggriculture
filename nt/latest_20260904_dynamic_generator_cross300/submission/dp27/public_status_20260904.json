@@ -1,0 +1,8 @@
+{
+  "ref": 56011202,
+  "status": "SubmissionStatus.COMPLETE",
+  "publicScore": "714.9",
+  "observed_before_utc": "2026-09-04T11:12:20Z",
+  "source": "kaggle competitions submissions kaggriculture --format json --page-size 1",
+  "note": "Early post-upload snapshot only, not a stable leaderboard strength estimate. No new submission was made during Git packaging."
+}

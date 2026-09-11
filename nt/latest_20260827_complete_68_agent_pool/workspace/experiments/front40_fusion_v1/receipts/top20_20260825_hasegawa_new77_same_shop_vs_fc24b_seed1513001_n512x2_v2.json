@@ -1,0 +1,54 @@
+{
+  "schema": "kaggriculture.front40_fusion.trace-agent-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-25T11:21:52.647855+00:00",
+  "device": "cuda:0",
+  "candidate": "hasegawa_new77_same_shop_v1",
+  "trace_bank": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/hasegawa_new77_padded80_v1.npz",
+  "route_map": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/front40_fusion_v1/artifacts/top20_20260825_hasegawa_new77_same_shop_map_seed1502001_v1.json",
+  "seed_start": 1513001,
+  "batch_per_seat": 512,
+  "aggregate": {
+    "games": 1024,
+    "wins": 568,
+    "win_rate": 0.5546875,
+    "mean_margin": -1754.849609375,
+    "invalid_intent_per_game": 6.1572265625
+  },
+  "results": [
+    {
+      "candidate": "hasegawa_new77_same_shop_v1",
+      "candidate_seat": 0,
+      "games": 512,
+      "wins": 289,
+      "win_rate": 0.564453125,
+      "candidate_cash_mean": 90216.90234375,
+      "fc24b_cash_mean": 91885.44140625,
+      "mean_margin": -1668.5390625,
+      "all_done": true,
+      "route_switch_total": 512,
+      "hard_counter_total": 0,
+      "invalid_intent_total": 3426,
+      "resync_total": 1585,
+      "elapsed_seconds": 41.807172582999954,
+      "transitions_per_second": 8805.379011679252
+    },
+    {
+      "candidate": "hasegawa_new77_same_shop_v1",
+      "candidate_seat": 1,
+      "games": 512,
+      "wins": 279,
+      "win_rate": 0.544921875,
+      "candidate_cash_mean": 90153.02734375,
+      "fc24b_cash_mean": 91994.1875,
+      "mean_margin": -1841.16015625,
+      "all_done": true,
+      "route_switch_total": 512,
+      "hard_counter_total": 0,
+      "invalid_intent_total": 2879,
+      "resync_total": 1482,
+      "elapsed_seconds": 38.127888466999934,
+      "transitions_per_second": 9655.084894580996
+    }
+  ],
+  "status": "PASS"
+}

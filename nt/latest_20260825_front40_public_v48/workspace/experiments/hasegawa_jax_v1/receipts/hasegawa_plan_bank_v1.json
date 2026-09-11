@@ -1,0 +1,773 @@
+{
+  "schema": "kaggriculture.hasegawa_high_level_plan_bank.v1",
+  "generated_at_utc": "2026-08-20T06:53:23.610322+00:00",
+  "status": "PASS",
+  "source_manifest": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\replays\\hasegawa_rank1_55614463\\manifest.json",
+  "source_manifest_sha256": "b914bfdaaacaa1772c18ad6e36730986722db06674db25818e16e1b739e4c631",
+  "source_daily_states": "E:\\ai_coding\\kaggle\\kaggriculture\\replay\\hasegawa_latest_2026-08-20_150533\\analysis\\daily_start_states.csv",
+  "source_daily_states_sha256": "577ba382823928a67bd8620f92c917143a535b86e82df68fc7d7d7045af4f4af",
+  "module_version": "1.32.7",
+  "winning_replays_in_manifest": 102,
+  "compiled_route_count": 102,
+  "incomplete_episode_ids": [],
+  "raw_actions_stored": false,
+  "raw_coordinates_stored": false,
+  "selection_features": [
+    "currently_unlocked_shop_demand",
+    "current_market_price",
+    "current_money",
+    "current_crop_count",
+    "current_animal_count",
+    "current_hires",
+    "current_unlocked_land"
+  ],
+  "future_event_features_used": false,
+  "fields": {
+    "hand_target_by_day": [
+      102,
+      30
+    ],
+    "unlocked_target_by_day": [
+      102,
+      30
+    ],
+    "crop_target_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_fertilized_target_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_harvest_min_yield_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_plant_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_water_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_harvest_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_fertilize_by_day": [
+      102,
+      30,
+      5
+    ],
+    "crop_clear_by_day": [
+      102,
+      30
+    ],
+    "animal_owned_target_by_day": [
+      102,
+      30,
+      3
+    ],
+    "animal_service_target_by_day": [
+      102,
+      30,
+      3
+    ],
+    "animal_feed_by_day": [
+      102,
+      30,
+      3
+    ],
+    "animal_care_by_day": [
+      102,
+      30,
+      3
+    ],
+    "animal_product_by_day": [
+      102,
+      30,
+      3
+    ],
+    "animal_fertilizer_by_day": [
+      102,
+      30,
+      3
+    ],
+    "wheat_buffer_by_day": [
+      102,
+      30
+    ],
+    "sell_enabled_by_day": [
+      102,
+      30,
+      9
+    ],
+    "layout_policy": [
+      102
+    ],
+    "crop_repair_policy": [
+      102
+    ],
+    "episode_id": [
+      102
+    ],
+    "final_reward": [
+      102
+    ],
+    "ref_money": [
+      102,
+      30
+    ],
+    "ref_hires": [
+      102,
+      30
+    ],
+    "ref_unlocked": [
+      102,
+      30
+    ],
+    "ref_crop": [
+      102,
+      30,
+      5
+    ],
+    "ref_animal": [
+      102,
+      30,
+      3
+    ],
+    "ref_market_price": [
+      102,
+      30,
+      9
+    ],
+    "ref_shop_demand": [
+      102,
+      30,
+      9
+    ]
+  },
+  "source_replays": [
+    {
+      "episode_id": 94402491,
+      "sha256": "193BE91964B7B804CD3F7AEAE555BCCBF583EBE71B2593FBEF976BD708D8E394",
+      "seat": 1,
+      "reward": 135205
+    },
+    {
+      "episode_id": 94403351,
+      "sha256": "3F463FBF4276E29368B62373C862C59EB909CF85E49108E2AA73B4D50863B9C7",
+      "seat": 1,
+      "reward": 116888
+    },
+    {
+      "episode_id": 94404229,
+      "sha256": "1CB264F46F13343876A06E08AFAAE116ED7C40A749DE6404AB234BA495B5B08A",
+      "seat": 1,
+      "reward": 122717
+    },
+    {
+      "episode_id": 94405099,
+      "sha256": "7A08C91515F5102DBAB9443CD26511E14DFD4F512BDCF3F268180916E029B3CE",
+      "seat": 1,
+      "reward": 95176
+    },
+    {
+      "episode_id": 94405973,
+      "sha256": "241FE2A1E1757F5E253B14FC67443A66412A0598736297A06C4F0B9CF5330543",
+      "seat": 0,
+      "reward": 117747
+    },
+    {
+      "episode_id": 94406847,
+      "sha256": "BEC61598E8978E3BA482F59B03C0918FD841D50C5000E1987AE09101DAB98DBD",
+      "seat": 0,
+      "reward": 107086
+    },
+    {
+      "episode_id": 94407724,
+      "sha256": "366B9B19385A5AD702B28D21809DCFA324E79EB48D59DD6BE8A56AC16547A736",
+      "seat": 1,
+      "reward": 81740
+    },
+    {
+      "episode_id": 94408599,
+      "sha256": "3AF88EA81556CC6381BCA9509473ED79BCEB80C250FC0F74687204309FA23285",
+      "seat": 1,
+      "reward": 78108
+    },
+    {
+      "episode_id": 94409477,
+      "sha256": "1B415903E77304780A21C4F7B07A5016C6558C60C18084750538B41942208334",
+      "seat": 1,
+      "reward": 110082
+    },
+    {
+      "episode_id": 94410350,
+      "sha256": "EB93CCE047C21DC1CBC4D73969F74125042ABE2A57234450E2469E2DCDB8DEED",
+      "seat": 1,
+      "reward": 55785
+    },
+    {
+      "episode_id": 94411234,
+      "sha256": "EC821BB39A4900E81D57AB3F7F6C7C7A584A061160D8C371D985C49FA924D97E",
+      "seat": 1,
+      "reward": 89755
+    },
+    {
+      "episode_id": 94412102,
+      "sha256": "0A7378F990822BF8BD2D445A19364912790DE441F71DD8019452D52F6BEF0A07",
+      "seat": 1,
+      "reward": 154276
+    },
+    {
+      "episode_id": 94412973,
+      "sha256": "6648BDAE852BF4D01BF4F99474CAB1040740EE595ECD4AD17BF52E72B51A48AD",
+      "seat": 0,
+      "reward": 104368
+    },
+    {
+      "episode_id": 94413334,
+      "sha256": "7FCE90ACEB668A63FD8E7C68595508CCC240D7CB5EF62A12C0FA8B59CA8DB052",
+      "seat": 1,
+      "reward": 133308
+    },
+    {
+      "episode_id": 94413859,
+      "sha256": "0BD4679F909FFF0E30477C02E8B243127EE4A26438971636A4157FB3CBBC4AD4",
+      "seat": 1,
+      "reward": 76997
+    },
+    {
+      "episode_id": 94414743,
+      "sha256": "7678B7A1D685381F31D4A738195B495709338969FAB48745C2B1F2F4409234CB",
+      "seat": 0,
+      "reward": 95814
+    },
+    {
+      "episode_id": 94415637,
+      "sha256": "A3AC056D5771B88ABBBACFF472F4363C765F6D82EEC96D8207132F029CEFDB6D",
+      "seat": 0,
+      "reward": 84526
+    },
+    {
+      "episode_id": 94416521,
+      "sha256": "F719352D3DB22C9E199AA7B9936D9E37D5D133674D4AADF48F7ABCA0828072A1",
+      "seat": 0,
+      "reward": 109920
+    },
+    {
+      "episode_id": 94417414,
+      "sha256": "632D545B1C73EFAF993A7262B4E4E798E2AB7598712726047959C55459FF3048",
+      "seat": 1,
+      "reward": 83566
+    },
+    {
+      "episode_id": 94418301,
+      "sha256": "5C67E84E6810F0C5F4CB3382E21411FCC6F4DF273ABDF72FF5A23CFCD44A85AF",
+      "seat": 1,
+      "reward": 141206
+    },
+    {
+      "episode_id": 94419200,
+      "sha256": "31D2C1E67C9BEF0AA75F0E54DCBCA74E16CBB179780FC83593302E8DD0C263D3",
+      "seat": 0,
+      "reward": 94273
+    },
+    {
+      "episode_id": 94420091,
+      "sha256": "635410C1B7C65B4A775408ED0E1D2A1231394F825F70DD0B21FBDFEBC0CBFC7C",
+      "seat": 1,
+      "reward": 102940
+    },
+    {
+      "episode_id": 94420975,
+      "sha256": "B16B03B1D548270F9423C379F6ECD9B88BFD583BDB472F3E2F280B3C81B0E253",
+      "seat": 0,
+      "reward": 110575
+    },
+    {
+      "episode_id": 94421865,
+      "sha256": "C43754AA468C780977A79900E969963BA48195C6C63970AFD3C0D2636FBEF7CC",
+      "seat": 1,
+      "reward": 135089
+    },
+    {
+      "episode_id": 94422746,
+      "sha256": "C49E16C958ECA696C1DA2CA19BD8484419F9D94CC31C5B4A00849870E246F816",
+      "seat": 1,
+      "reward": 75125
+    },
+    {
+      "episode_id": 94423632,
+      "sha256": "1655B60EF2B0CC9A310561944CF2109BA62575A187EDE480F7461328710A2F06",
+      "seat": 1,
+      "reward": 104602
+    },
+    {
+      "episode_id": 94424521,
+      "sha256": "773208BD45EBB10221C57203C1EE74C63A54A997AA2B1DE2E7F2DFAEC6EFF517",
+      "seat": 0,
+      "reward": 99095
+    },
+    {
+      "episode_id": 94425398,
+      "sha256": "A61760D08B866E79998D54841C1EEC920A2BF6DEE77EAA4E2ACAF436ADB7688D",
+      "seat": 1,
+      "reward": 118487
+    },
+    {
+      "episode_id": 94426282,
+      "sha256": "5335A25682862E97A5797ED87850217319E290CEF260EEA1B403EE8DE08CD93E",
+      "seat": 0,
+      "reward": 168259
+    },
+    {
+      "episode_id": 94427176,
+      "sha256": "D4FEEC95186A729E53412365CBDC68659AB9FDFB3762D330F2A0FD7FD0F80DF7",
+      "seat": 0,
+      "reward": 137207
+    },
+    {
+      "episode_id": 94428069,
+      "sha256": "6852E13BC2B50F04C156392B3C0CBE8BB53F10947D54D4DDFE8D4ECF598464B0",
+      "seat": 0,
+      "reward": 61943
+    },
+    {
+      "episode_id": 94428958,
+      "sha256": "FC287A85D4118E3F5F0F0755378BC4B6F7DE9E248546C5289F96A39D5EA49537",
+      "seat": 0,
+      "reward": 70266
+    },
+    {
+      "episode_id": 94429849,
+      "sha256": "F0C9AC2B1994F40F12B9C05479F98812C15B0D556AAF1EC16FDE3F939D40E794",
+      "seat": 0,
+      "reward": 138025
+    },
+    {
+      "episode_id": 94430740,
+      "sha256": "0740AF3F406D3B0C5D0B4C415F96104411E24068C2B488A11170B95418B4D2A0",
+      "seat": 0,
+      "reward": 56483
+    },
+    {
+      "episode_id": 94431742,
+      "sha256": "2854F124A3E9935BFCBEF6BF83803E8319B6F7681166DBA0553397CDBE6C282C",
+      "seat": 1,
+      "reward": 117071
+    },
+    {
+      "episode_id": 94432528,
+      "sha256": "5718B1E0DAA13AC8C118440BC7A4BECC15EDEF3C59DCA29462104001F5B9374C",
+      "seat": 1,
+      "reward": 100537
+    },
+    {
+      "episode_id": 94433411,
+      "sha256": "5B43BF1E73AED0EE3388DE3DD97303798B9818277F8A9F216E17D2135AC6343C",
+      "seat": 1,
+      "reward": 74909
+    },
+    {
+      "episode_id": 94434301,
+      "sha256": "6829DC31220CC6CE23DD6AAA56EC8DB8F9C65BE5086681F86994894133EE9B35",
+      "seat": 0,
+      "reward": 100864
+    },
+    {
+      "episode_id": 94435181,
+      "sha256": "E6B441A1AE602C288C5902E7C45E3EFD2E5DC5E07582E2E278D2F268BF1AFA82",
+      "seat": 1,
+      "reward": 79038
+    },
+    {
+      "episode_id": 94436066,
+      "sha256": "C26FB0DEBD5391EF013981FE7859DA2A9E5469388C8E33A93506240D140F5CFF",
+      "seat": 1,
+      "reward": 157930
+    },
+    {
+      "episode_id": 94436914,
+      "sha256": "1DD6ED56CB06260AC8F99F6F2B19A5EB7D38F4CFBC9E7E52E9F3FA6403D299CE",
+      "seat": 1,
+      "reward": 131000
+    },
+    {
+      "episode_id": 94437841,
+      "sha256": "351DE093C9F96A66797E41640E4F76E9DFFD8098D3585A8C4B77DFE0D4C1E784",
+      "seat": 0,
+      "reward": 125180
+    },
+    {
+      "episode_id": 94438725,
+      "sha256": "DA218F0B53F367CB205851F765D1E5B6A94126017A4E3D98EF086140B8BDC28B",
+      "seat": 0,
+      "reward": 97662
+    },
+    {
+      "episode_id": 94439616,
+      "sha256": "663ED00637E9D5428A2E0892F44E33D85DBA8F6499040FC1F26112C59DAA9FCF",
+      "seat": 0,
+      "reward": 119992
+    },
+    {
+      "episode_id": 94440502,
+      "sha256": "0FB07DC3ADA6896C68B0810E5FD220C03CC20BDFF115C0BC7441222CF90A7F7A",
+      "seat": 0,
+      "reward": 120872
+    },
+    {
+      "episode_id": 94441395,
+      "sha256": "A331424769103A12173CA74C55085365BC6B9E8E89F88C6FC78C53AACDC5D6C6",
+      "seat": 1,
+      "reward": 101810
+    },
+    {
+      "episode_id": 94442273,
+      "sha256": "FDCC018B7BA8C6D833317CBE523F1C024268F6A3AD078FE5E693A5E944C71EE5",
+      "seat": 1,
+      "reward": 72957
+    },
+    {
+      "episode_id": 94443176,
+      "sha256": "B3FBE9171C55FB403F5E8B3C0404D6E30E527577AE60729EC6C09EC4C2A3A3B8",
+      "seat": 0,
+      "reward": 68239
+    },
+    {
+      "episode_id": 94444071,
+      "sha256": "E88D3032452FD245D473C939C29C53937714DAA1A8B62CAB86C4DBEE9DBEDB78",
+      "seat": 0,
+      "reward": 65712
+    },
+    {
+      "episode_id": 94444950,
+      "sha256": "4C4676BF21E2B30D6386E8512860DA4B21C5FAF50A3896E8111AB9ADE9243A92",
+      "seat": 0,
+      "reward": 74515
+    },
+    {
+      "episode_id": 94445828,
+      "sha256": "6574E3B07212A1B3D810CF778A8107311840F29ABF59C4B03E9D65F9A4F31DB3",
+      "seat": 0,
+      "reward": 57821
+    },
+    {
+      "episode_id": 94446713,
+      "sha256": "8A816646DAD3147039D837139D3901D4DE3A6719EF44AA21FD3203926CBA358B",
+      "seat": 0,
+      "reward": 91824
+    },
+    {
+      "episode_id": 94447591,
+      "sha256": "D83FC0F7C376A5AFF36890D53219F1A22446933EFA4C6A0D6FCA6D865A1664D8",
+      "seat": 1,
+      "reward": 104080
+    },
+    {
+      "episode_id": 94448474,
+      "sha256": "A85570D226E61602329FD9F4C32EE1F2008B92DF2A6DC2071898528824DF3880",
+      "seat": 1,
+      "reward": 99868
+    },
+    {
+      "episode_id": 94449352,
+      "sha256": "7EE217E4396D2F9A2788F0B8506A791A63C97E4D5C443A2B9945DEE114EFC80C",
+      "seat": 1,
+      "reward": 84587
+    },
+    {
+      "episode_id": 94450242,
+      "sha256": "63DC535A691CB5285E832B64258BA4C2488308E2BBE961D2839CD922BF7F18A7",
+      "seat": 1,
+      "reward": 59913
+    },
+    {
+      "episode_id": 94451134,
+      "sha256": "7A289CD02D030919A2624EF20B6241923A9613EDCAAC0963E8365909214BF6B3",
+      "seat": 0,
+      "reward": 80780
+    },
+    {
+      "episode_id": 94452034,
+      "sha256": "95FD0F9F2A0CDB6328F8E2A7DC34D7B7C170EFA41303478AAB7981C1A71ABDF3",
+      "seat": 1,
+      "reward": 75455
+    },
+    {
+      "episode_id": 94452915,
+      "sha256": "CE680BF443CB4ECA0D851DC1A4F3C9C30C497DCA18063025F0B0BD3D10F26F12",
+      "seat": 0,
+      "reward": 119791
+    },
+    {
+      "episode_id": 94453800,
+      "sha256": "ED5619B781FF78A3051536128594D464369EBF58CDEAE037089E1981EED8FE17",
+      "seat": 1,
+      "reward": 92961
+    },
+    {
+      "episode_id": 94454673,
+      "sha256": "502F4005B0E7B6E0D371E84691AC8D29183646CD7349CF367892081E5D0DFCA4",
+      "seat": 0,
+      "reward": 121656
+    },
+    {
+      "episode_id": 94455554,
+      "sha256": "A73B3E47BE744658A41972747FC59F267DB50AE3AA9591FCBD0BD1B41E213BE0",
+      "seat": 1,
+      "reward": 68114
+    },
+    {
+      "episode_id": 94456434,
+      "sha256": "AA37588CCF1A6F3AFD745DD77AA4709D05378F6F8AEAFD82DDC7F91A0B37C16A",
+      "seat": 1,
+      "reward": 134363
+    },
+    {
+      "episode_id": 94457314,
+      "sha256": "DB4486CD5EB4587B8CDF956ED756A2E646C21BA736E923E9671FC7E68C2BE931",
+      "seat": 1,
+      "reward": 88232
+    },
+    {
+      "episode_id": 94458182,
+      "sha256": "9C0625837661900B03FEC168786C0D8EC6615409E884566D002B4E40535F54AD",
+      "seat": 1,
+      "reward": 100863
+    },
+    {
+      "episode_id": 94458226,
+      "sha256": "14DFCBEEC74B4CF049936687652388873229EFCE75F90A783460FA3551FFA5CD",
+      "seat": 1,
+      "reward": 128375
+    },
+    {
+      "episode_id": 94459078,
+      "sha256": "DFF3C9E1730C7EAC220CD2EB8F2D0119FA855F700119F19FAA13BA27DBBAD33E",
+      "seat": 0,
+      "reward": 95899
+    },
+    {
+      "episode_id": 94459964,
+      "sha256": "94A8D295E862ECBD5912705A9EA22AC07158EA150ADDEB1A3D4DBC9476DDC70C",
+      "seat": 0,
+      "reward": 72825
+    },
+    {
+      "episode_id": 94460852,
+      "sha256": "9CB75F10312AC06FDE49A450AD3F0868C49ACFAE9A39A1EA5962B00968493228",
+      "seat": 1,
+      "reward": 84928
+    },
+    {
+      "episode_id": 94461751,
+      "sha256": "0C7BAE811C9519400E83F06A9C1C47CB70E24BA6B2870DB93B1FF131B53C2411",
+      "seat": 0,
+      "reward": 114111
+    },
+    {
+      "episode_id": 94462645,
+      "sha256": "178C7FDDAE49920BBEBDA722CD1B643360F5216F76955D6DD3403D88A0CD3048",
+      "seat": 1,
+      "reward": 80441
+    },
+    {
+      "episode_id": 94463541,
+      "sha256": "6131B8713913079C047030945B0DBA11B508D2404C60163D7FB78D86743810BB",
+      "seat": 0,
+      "reward": 69093
+    },
+    {
+      "episode_id": 94472390,
+      "sha256": "937D917555DBD79F1B7C3AC86DDF536B30109D4B234E09F2D22E4A7A65A717D4",
+      "seat": 0,
+      "reward": 76635
+    },
+    {
+      "episode_id": 94482951,
+      "sha256": "D45B227440E282260955CE16249FEDE6DAFBFEF7B5904223078671F3F0BA4E88",
+      "seat": 0,
+      "reward": 90226
+    },
+    {
+      "episode_id": 94498793,
+      "sha256": "814069763CD81D29EF7CDF6AC48D781AE35B18E5855CA9ACFD5F89464064B000",
+      "seat": 0,
+      "reward": 96736
+    },
+    {
+      "episode_id": 94507639,
+      "sha256": "4492156A3DCC825A3C76F52462A8A1D3A2A5679C01BC91BFBE8F60FC37EE4F76",
+      "seat": 1,
+      "reward": 102825
+    },
+    {
+      "episode_id": 94524399,
+      "sha256": "F44630FF717689142DFB496B8E5789F08C766FE0006073E4356BD40D95A95BD5",
+      "seat": 0,
+      "reward": 81574
+    },
+    {
+      "episode_id": 94524402,
+      "sha256": "9DB1143A2812DA38A0C3AA3A22019984A70B9BB53129CAD464BE96916D29484C",
+      "seat": 1,
+      "reward": 70296
+    },
+    {
+      "episode_id": 94541153,
+      "sha256": "D1AA27A3125511778D1EE08A020AF82363302F5ECAE97F283A0435EA15FEECA5",
+      "seat": 1,
+      "reward": 155320
+    },
+    {
+      "episode_id": 94568513,
+      "sha256": "0782E792A6AF0241E6272331A2A004603CCBFE0452555941DEF612A37A528AC4",
+      "seat": 1,
+      "reward": 59747
+    },
+    {
+      "episode_id": 94568537,
+      "sha256": "637FD7864C374140FCA13CEF958D34A004DF3F13001F72270DFD9B0C00E55E47",
+      "seat": 1,
+      "reward": 94709
+    },
+    {
+      "episode_id": 94568538,
+      "sha256": "380DF8B100F51F21DEF3EBF1155E860A763297A185B5B16765E887B41FE6EFC8",
+      "seat": 0,
+      "reward": 94209
+    },
+    {
+      "episode_id": 94601030,
+      "sha256": "884861774BAC120CF106BD5B2C28ADDA3494D884EC4CBAF882ACBAECFEF739F9",
+      "seat": 0,
+      "reward": 58108
+    },
+    {
+      "episode_id": 94636230,
+      "sha256": "A4704481C0B967186AAC58C2B352EBD7AB0C5FAF61CB65F09969A797D1831898",
+      "seat": 0,
+      "reward": 136059
+    },
+    {
+      "episode_id": 94636233,
+      "sha256": "049E7DA7A840CA28CE1962E8FDCFE151A7CBD3C8EE61F67AFCAA3DA4CFD917D0",
+      "seat": 0,
+      "reward": 87973
+    },
+    {
+      "episode_id": 94661382,
+      "sha256": "A4069C2533A5D748603E60120990BBE674A37D187448AF5A875C5E4A53D5737F",
+      "seat": 1,
+      "reward": 119305
+    },
+    {
+      "episode_id": 94661384,
+      "sha256": "3DB3CBFA982D5541FA3434A24C5FA31CBFBFF3232A761EB0C4F5E21C44AFA908",
+      "seat": 1,
+      "reward": 119110
+    },
+    {
+      "episode_id": 94679896,
+      "sha256": "E091D7EC760039C6CA05CDD03FF1FF4A2F574AFC7B448B0A3512EC32A66F05FF",
+      "seat": 0,
+      "reward": 72776
+    },
+    {
+      "episode_id": 94679898,
+      "sha256": "384F148939D420133EA8663550CE798D96C95FB6EE48A754B266FE8C201C45AB",
+      "seat": 1,
+      "reward": 79967
+    },
+    {
+      "episode_id": 94696649,
+      "sha256": "EAC5FB110B99995324B2D89CCA0C983B012369057A863CAC2877F8863FFF1797",
+      "seat": 0,
+      "reward": 60871
+    },
+    {
+      "episode_id": 94696656,
+      "sha256": "E23E8558851F344875FFC56EA9A3CF58DC1F2AD12D2B57E50949CB8746958CCB",
+      "seat": 1,
+      "reward": 108821
+    },
+    {
+      "episode_id": 94711809,
+      "sha256": "1051B42CD65CFE39077FBF8B89903F6A8EB0F332FD2A145EF02F1B67DBFBA8E8",
+      "seat": 0,
+      "reward": 123571
+    },
+    {
+      "episode_id": 94726918,
+      "sha256": "AD84555E447B07CCC36EBB6B923874152F29D3388D3F5CC4C1A7AA0D51943D9B",
+      "seat": 0,
+      "reward": 123597
+    },
+    {
+      "episode_id": 94742826,
+      "sha256": "780C8833C65C7784A6C25285B5619970B5E26C176E464ED21E0F5F6FADF56338",
+      "seat": 1,
+      "reward": 63931
+    },
+    {
+      "episode_id": 94742829,
+      "sha256": "E1F711DE2D2FCA8E1EE14C01B5403A96706285D30F21D412F3BB77FEEA1979F6",
+      "seat": 1,
+      "reward": 113902
+    },
+    {
+      "episode_id": 94794854,
+      "sha256": "D977119A4382CAF5A83472C36E96C8E8BE10BBAE711A2B55D63DAEB1341427E5",
+      "seat": 0,
+      "reward": 91569
+    },
+    {
+      "episode_id": 94794856,
+      "sha256": "B7232D9054A726F004ABA065EA56DD8D9F8F8D39096602F63D8D4E280B240E30",
+      "seat": 1,
+      "reward": 60651
+    },
+    {
+      "episode_id": 94824465,
+      "sha256": "B62452B8CE6C4F03361B76F3CCED12313B2CAA6B4B16B9DA4E18719E3582EEA7",
+      "seat": 1,
+      "reward": 92501
+    },
+    {
+      "episode_id": 94854181,
+      "sha256": "6AC3BD5DD5DEAB00C96D90874E5CE43391BE6806D8E86E8CC50FEDCF832C00CE",
+      "seat": 1,
+      "reward": 165959
+    },
+    {
+      "episode_id": 94888408,
+      "sha256": "C1A1EDD8365AC92664B99C567F6A324059F4EC672687554FA21B8A045B148171",
+      "seat": 1,
+      "reward": 89271
+    },
+    {
+      "episode_id": 94924923,
+      "sha256": "0C895AE3E5CC2445F9596E35D3B35E3151EDFA960E7AC02FE9A6AF59FC113FAB",
+      "seat": 1,
+      "reward": 54083
+    },
+    {
+      "episode_id": 94924927,
+      "sha256": "55161B18F2A488C2EC1D3727C989382B7126CFDFF23BFDCE5F084450868271B6",
+      "seat": 0,
+      "reward": 80120
+    }
+  ],
+  "output": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\hasegawa_jax_v1\\artifacts\\hasegawa_plan_bank_v1.npz",
+  "output_sha256": "e9fb3dff9fffac6bf80259c3666391bf463c065f9b67cb65cd4340391de10918"
+}

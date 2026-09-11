@@ -1,0 +1,17 @@
+{
+  "ref": 56114689,
+  "version": "T2R1",
+  "message": "NT T2R1 ServiceAligned - exact verified build - local7 92.21pct vs710 72.5pct",
+  "competition": "kaggriculture",
+  "upload_message": "Successfully submitted to Kaggriculture",
+  "upload_calls": 1,
+  "submitted_at_utc": "2026-09-09T05:38:11.085395+00:00",
+  "archive_sha256": "5c689499e360df9ec61e944457a4414b7199665846aa4fe07e22c6f6c39525bf",
+  "archive_bytes": 901170,
+  "binary_sha256": "aa7f397c4f04d20014732b5f7279281491f7bc57c96797d12e29c565ad99bb2e",
+  "reference_binary_sha256": "ead6b00d982e798fa570756859304ad40d77aa9a6a278e0ca2d3c1a9140f9b44",
+  "local_equivalence_games": 1600,
+  "local_official_file_games": 6,
+  "max_local_action_ms": 82.959,
+  "submission_url": "https://www.kaggle.com/competitions/kaggriculture/submissions?submissionId=56114689"
+}

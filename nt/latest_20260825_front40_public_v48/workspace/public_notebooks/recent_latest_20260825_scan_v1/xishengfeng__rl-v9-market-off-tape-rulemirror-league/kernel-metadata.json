@@ -1,0 +1,21 @@
+{
+  "id": "xishengfeng/rl-v9-market-off-tape-rulemirror-league",
+  "id_no": 131619091,
+  "title": "RL v9 Market Off Tape RuleMirror League",
+  "code_file": "rl-v9-market-off-tape-rulemirror-league.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "kaggriculture"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "NvidiaTeslaT4"
+}

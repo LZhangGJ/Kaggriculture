@@ -1,0 +1,80 @@
+{
+  "schema": "kaggriculture.fusion_champion.panel.v2",
+  "generated_at_utc": "2026-08-21T01:35:37.078695+00:00",
+  "status": "PASS",
+  "candidate": "fc1d_x562_any_yarn_route7_no_counters",
+  "change": "X562 prefix; step168 any visible YARN selects route7 else route12; counters disabled",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 540301,
+  "seed_count": 2,
+  "games_per_opponent": 4,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 97.418613166,
+  "rows": [
+    {
+      "opponent": "gold_proxy_rank14_recursion",
+      "games": 4,
+      "wins": 2,
+      "ties": 0,
+      "losses": 2,
+      "score_rate": 0.5,
+      "mean_candidate_cash": 86315.0,
+      "mean_opponent_cash": 82195.25,
+      "mean_margin": 4119.75,
+      "median_margin": 4142.0,
+      "candidate_seat0_wins": 1,
+      "candidate_seat1_wins": 1,
+      "terminal_assets": {
+        "mean_shed_units_all": 0.0,
+        "mean_shed_units_losses": 0.0,
+        "mean_unit_inventory_all": 0.0,
+        "mean_unit_inventory_losses": 0.0,
+        "mean_map_yield_all": 3.0,
+        "mean_map_yield_losses": 2.0
+      },
+      "per_game": [
+        {
+          "seed": 540301,
+          "candidate_seat": 0,
+          "candidate_cash": 67299,
+          "opponent_cash": 67612,
+          "margin": -313,
+          "result": "loss"
+        },
+        {
+          "seed": 540301,
+          "candidate_seat": 1,
+          "candidate_cash": 67011,
+          "opponent_cash": 68229,
+          "margin": -1218,
+          "result": "loss"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 0,
+          "candidate_cash": 105437,
+          "opponent_cash": 96024,
+          "margin": 9413,
+          "result": "win"
+        },
+        {
+          "seed": 540302,
+          "candidate_seat": 1,
+          "candidate_cash": 105513,
+          "opponent_cash": 96916,
+          "margin": 8597,
+          "result": "win"
+        }
+      ]
+    }
+  ],
+  "min_score_rate": 0.5,
+  "mean_score_rate": 0.5,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "3A7FF29DFBDCFD6DB5B1521BFF7AEC663C6CEE87A723FA7DF5D42CD18AE64378"
+  }
+}

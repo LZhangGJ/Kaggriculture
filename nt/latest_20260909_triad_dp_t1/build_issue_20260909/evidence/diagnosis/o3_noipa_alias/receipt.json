@@ -1,0 +1,24 @@
+{
+  "cmd": [
+    "g++",
+    "-std=c++20",
+    "-O3",
+    "-fno-ipa-strict-aliasing",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-Wall",
+    "-Wextra",
+    "-Wuninitialized",
+    "-Wmaybe-uninitialized",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/t1/policy/bridge.cpp",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/t1/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/triad_t1_vs_94_710_20260909_v1/diagnosis/o3_noipa_alias/agent.so"
+  ],
+  "returncode": 0,
+  "seconds": 15.444104970000012,
+  "sha256": "4cf77c41246eef38f46f33d07ca4282a0d0e38b829f01593f473a0df7444dab8"
+}

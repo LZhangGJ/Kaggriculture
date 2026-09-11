@@ -1,0 +1,127 @@
+{
+  "schema": "kaggriculture.candidate8-o1-official-spotcheck.v1",
+  "generated_at_utc": "2026-09-01T04:06:02.237192+00:00",
+  "status": "PASS",
+  "boundary": {
+    "checked": "selected arm regeneration and complete trace engine parity",
+    "not_checked": "official Python cannot inject a counterfactual RNG suffix; Bank A/B value estimates remain C++ counterfactual measurements"
+  },
+  "official_package_version": "1.32.7",
+  "games": 4,
+  "summary": {
+    "complete_games": 4,
+    "signature_exact_games": 4,
+    "reward_exact_games": 4,
+    "end_overflow_events": 0
+  },
+  "input": {
+    "trace_bundle": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\ecobot_adaptive_planner_v1\\artifacts\\mcts_beam\\candidate8_mcts_beam_official_spotcheck_traces_v1.json.gz",
+    "sha256": "9C0C05D3F147B8890E23DE75EFC8EEA307C87732D7E35D8524EF4E35606D6D5C"
+  },
+  "rows": [
+    {
+      "opponent": "G004",
+      "seed": 3101101,
+      "candidate_seat": 0,
+      "decision_day": -1,
+      "arm": -1,
+      "expected_signature": 0,
+      "actual_signature": 0,
+      "signature_exact": true,
+      "native_rewards": [
+        54745.0,
+        59259.0
+      ],
+      "end_overflow": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "official_rewards": [
+        54745.0,
+        59259.0
+      ],
+      "reward_exact": true
+    },
+    {
+      "opponent": "G004",
+      "seed": 3101101,
+      "candidate_seat": 0,
+      "decision_day": -1,
+      "arm": -1,
+      "expected_signature": 0,
+      "actual_signature": 0,
+      "signature_exact": true,
+      "native_rewards": [
+        112878.0,
+        80316.0
+      ],
+      "end_overflow": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "official_rewards": [
+        112878.0,
+        80316.0
+      ],
+      "reward_exact": true
+    },
+    {
+      "opponent": "G013",
+      "seed": 3101102,
+      "candidate_seat": 0,
+      "decision_day": -1,
+      "arm": -1,
+      "expected_signature": 0,
+      "actual_signature": 0,
+      "signature_exact": true,
+      "native_rewards": [
+        124384.0,
+        93307.0
+      ],
+      "end_overflow": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "official_rewards": [
+        124384.0,
+        93307.0
+      ],
+      "reward_exact": true
+    },
+    {
+      "opponent": "G013",
+      "seed": 3101102,
+      "candidate_seat": 0,
+      "decision_day": -1,
+      "arm": -1,
+      "expected_signature": 0,
+      "actual_signature": 0,
+      "signature_exact": true,
+      "native_rewards": [
+        111135.0,
+        98958.0
+      ],
+      "end_overflow": 0,
+      "trace_steps": 719,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "complete": true,
+      "official_rewards": [
+        111135.0,
+        98958.0
+      ],
+      "reward_exact": true
+    }
+  ]
+}

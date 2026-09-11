@@ -1,0 +1,116 @@
+{
+  "backend": "gpu",
+  "compilation_excluded_from_throughput": true,
+  "event_seed_count": 256,
+  "formal_target_env_transitions_per_s": 300000,
+  "formal_target_passed": true,
+  "gpu": "NVIDIA GeForce RTX 3090, 24576, 610.47",
+  "jax": "0.11.0",
+  "jaxlib": "0.11.0",
+  "measured_at": "2026-08-10T18:07:58.983825+00:00",
+  "minimum_gate_env_transitions_per_s": 50000,
+  "minimum_gate_passed": true,
+  "rows": [
+    {
+      "batch_size": 256,
+      "compile_and_first_s": 5.575638607999963,
+      "device_memory_stats": {
+        "bytes_in_use": 12356608,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 33554432,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 630,
+        "peak_bytes_in_use": 94886400,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 187548.2454217937,
+      "formal_target_passed": false,
+      "minimum_gate_passed": true,
+      "player_samples_per_s": 375096.4908435874,
+      "repetitions": 5,
+      "rollout_steps": 719,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 0.9906811060000109,
+      "steady_median_s": 0.9814221379999708,
+      "steady_min_s": 0.9526401210000017,
+      "terminal_step": 719,
+      "transitions_per_run": 184064
+    },
+    {
+      "batch_size": 1024,
+      "compile_and_first_s": 5.019211175999999,
+      "device_memory_stats": {
+        "bytes_in_use": 29883392,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 33554432,
+        "largest_free_block_bytes": 67108864,
+        "num_allocs": 1216,
+        "peak_bytes_in_use": 94886400,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 148897792,
+        "pool_bytes": 148897792
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 630236.7307459668,
+      "formal_target_passed": true,
+      "minimum_gate_passed": true,
+      "player_samples_per_s": 1260473.4614919336,
+      "repetitions": 5,
+      "rollout_steps": 719,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 1.1887314759999867,
+      "steady_median_s": 1.1682213430000274,
+      "steady_min_s": 1.072765511,
+      "terminal_step": 719,
+      "transitions_per_run": 736256
+    },
+    {
+      "batch_size": 4096,
+      "compile_and_first_s": 6.083913101999997,
+      "device_memory_stats": {
+        "bytes_in_use": 121828608,
+        "bytes_limit": 19327352832,
+        "bytes_reserved": 0,
+        "largest_alloc_size": 134217728,
+        "largest_free_block_bytes": 134217728,
+        "num_allocs": 1797,
+        "peak_bytes_in_use": 283112960,
+        "peak_bytes_reserved": 0,
+        "peak_pool_bytes": 283115520,
+        "pool_bytes": 283115520
+      },
+      "diagnostics": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "env_transitions_per_s": 1561634.374594314,
+      "formal_target_passed": true,
+      "minimum_gate_passed": true,
+      "player_samples_per_s": 3123268.749188628,
+      "repetitions": 5,
+      "rollout_steps": 719,
+      "state_bytes_per_environment": 5214,
+      "steady_max_s": 1.96742006300002,
+      "steady_median_s": 1.8858601270000008,
+      "steady_min_s": 1.783632706999981,
+      "terminal_step": 719,
+      "transitions_per_run": 2945024
+    }
+  ],
+  "schema": "kaggriculture_simulator_benchmark_v1",
+  "transition_definition": "one transition advances both players by one turn"
+}

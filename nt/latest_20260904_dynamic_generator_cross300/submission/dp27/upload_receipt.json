@@ -1,0 +1,19 @@
+{
+  "competition": "kaggriculture",
+  "ref": 56011202,
+  "fileName": "submission.tar.gz",
+  "submitted_at_utc": "2026-09-04T10:54:35.833000",
+  "description": "NT DP27 fixed macro dynamic C++ executor - exact 96 game parity",
+  "status_at_first_check": "SubmissionStatus.PENDING",
+  "publicScore_at_first_check": null,
+  "upload_result": "Successfully submitted to Kaggriculture",
+  "cli": "Kaggle CLI 2.2.4",
+  "archive_sha256": "ce5175e916507e86257960e5fb4d9fbf4c7616c83e170d690e4a51f4d1d6c76a",
+  "archive_bytes": 439921,
+  "plan_id": "a882fe77385f5e59",
+  "local_parity_games": 96,
+  "official_local_referee_games": 6,
+  "fixed_macro_dynamic_execution": true,
+  "online_oracle": false,
+  "raw_replay_playback": false
+}

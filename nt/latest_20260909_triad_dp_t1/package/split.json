@@ -1,0 +1,1 @@
+{"development":{"start":260908100,"max_count":128},"holdout":{"start":260909000,"count":100,"frozen_before_holdout":true},"opponents":[0,1,2,3,4,5,6],"seats":[0,1],"target":{"strict_overall_win_rate":0.90,"strict_each_opponent_win_rate":0.90},"selection":"development only; evaluate frozen candidate and same-seed frozen baselines on holdout exactly once"}

@@ -1,0 +1,2 @@
+# Preserve stored and uncompressed evidence identities.
+* -text whitespace=cr-at-eol

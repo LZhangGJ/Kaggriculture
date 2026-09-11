@@ -1,0 +1,113 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-24T06:26:41.104637+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank07_active_all84_expanded_seed472001_n512x2_v14.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_stable_win_map_dev640_v6.json",
+  "holdout_seed_index_range": [
+    0,
+    511
+  ],
+  "base": {
+    "games": 1024,
+    "wins": 926,
+    "win_rate": 0.904296875,
+    "mean_margin": 31501.0234375,
+    "median_margin": 29467.0,
+    "hard_counter_total": 0,
+    "by_seat": [
+      {
+        "seat": 0,
+        "games": 512,
+        "wins": 465,
+        "win_rate": 0.908203125,
+        "mean_margin": 31738.109375,
+        "median_margin": 29761.0,
+        "hard_counter_total": 0
+      },
+      {
+        "seat": 1,
+        "games": 512,
+        "wins": 461,
+        "win_rate": 0.900390625,
+        "mean_margin": 31263.9375,
+        "median_margin": 29375.5,
+        "hard_counter_total": 0
+      }
+    ]
+  },
+  "second_maps": [
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_secondshop_safe5_dev1152_v16.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 5,
+      "holdout": {
+        "games": 1024,
+        "wins": 933,
+        "win_rate": 0.9111328125,
+        "mean_margin": 32393.3984375,
+        "median_margin": 31106.5,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 468,
+          "win_rate": 0.9140625,
+          "mean_margin": 32665.423828125,
+          "median_margin": 31538.0,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 465,
+          "win_rate": 0.908203125,
+          "mean_margin": 32121.373046875,
+          "median_margin": 30543.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 76,
+      "net_wins_vs_base": 7,
+      "mean_margin_gain_vs_base": 892.375
+    },
+    {
+      "map": "experiments\\front40_fusion_v1\\artifacts\\rank07_active_secondshop_risk7_dev1152_v17.json",
+      "routing_index": "first_shop,second_shop",
+      "accepted_pairs": 7,
+      "holdout": {
+        "games": 1024,
+        "wins": 939,
+        "win_rate": 0.9169921875,
+        "mean_margin": 32420.5732421875,
+        "median_margin": 31163.5,
+        "hard_counter_total": 0
+      },
+      "by_seat": [
+        {
+          "seat": 0,
+          "games": 512,
+          "wins": 469,
+          "win_rate": 0.916015625,
+          "mean_margin": 32721.234375,
+          "median_margin": 31738.5,
+          "hard_counter_total": 0
+        },
+        {
+          "seat": 1,
+          "games": 512,
+          "wins": 470,
+          "win_rate": 0.91796875,
+          "mean_margin": 32119.912109375,
+          "median_margin": 30543.5,
+          "hard_counter_total": 0
+        }
+      ],
+      "changed_games": 108,
+      "net_wins_vs_base": 13,
+      "mean_margin_gain_vs_base": 919.5498046875
+    }
+  ]
+}

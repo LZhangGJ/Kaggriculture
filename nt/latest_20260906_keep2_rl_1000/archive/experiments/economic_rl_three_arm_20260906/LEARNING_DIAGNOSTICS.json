@@ -1,0 +1,632 @@
+[
+  {
+    "arm": "c3auto",
+    "run": 0,
+    "first_training": {
+      "records": 6720,
+      "effective": 2037,
+      "non_keep": 302,
+      "non_keep_among_effective": 0.1482572410407462,
+      "mean_keep_probability": 0.8413633704185486,
+      "mean_entropy": 0.7423359155654907,
+      "choice_counts": [
+        6418,
+        36,
+        25,
+        37,
+        49,
+        37,
+        30,
+        25,
+        28,
+        35
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 2082,
+      "non_keep": 707,
+      "non_keep_among_effective": 0.33957732949087416,
+      "mean_keep_probability": 0.666606605052948,
+      "mean_entropy": 1.1872574090957642,
+      "choice_counts": [
+        6013,
+        29,
+        155,
+        135,
+        106,
+        33,
+        32,
+        42,
+        86,
+        89
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 12433,
+      "non_keep": 1938,
+      "non_keep_among_effective": 0.15587549264055336,
+      "mean_keep_probability": 0.8419363498687744,
+      "mean_entropy": 0.7396262884140015,
+      "choice_counts": [
+        40062,
+        188,
+        274,
+        234,
+        229,
+        225,
+        216,
+        157,
+        159,
+        256
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 13047,
+      "non_keep": 4677,
+      "non_keep_among_effective": 0.3584732122326972,
+      "mean_keep_probability": 0.6381071209907532,
+      "mean_entropy": 1.222712516784668,
+      "choice_counts": [
+        37323,
+        154,
+        1148,
+        816,
+        678,
+        174,
+        153,
+        366,
+        531,
+        657
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 11890,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.6483436822891235,
+      "mean_entropy": 1.198050856590271,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  },
+  {
+    "arm": "c3auto",
+    "run": 1,
+    "first_training": {
+      "records": 6720,
+      "effective": 2004,
+      "non_keep": 313,
+      "non_keep_among_effective": 0.156187624750499,
+      "mean_keep_probability": 0.8412972688674927,
+      "mean_entropy": 0.7426723837852478,
+      "choice_counts": [
+        6407,
+        29,
+        45,
+        35,
+        30,
+        41,
+        35,
+        31,
+        26,
+        41
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 2012,
+      "non_keep": 381,
+      "non_keep_among_effective": 0.1893638170974155,
+      "mean_keep_probability": 0.8115637302398682,
+      "mean_entropy": 0.7996346950531006,
+      "choice_counts": [
+        6339,
+        107,
+        61,
+        19,
+        49,
+        20,
+        7,
+        17,
+        33,
+        68
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 12433,
+      "non_keep": 1938,
+      "non_keep_among_effective": 0.15587549264055336,
+      "mean_keep_probability": 0.8419363498687744,
+      "mean_entropy": 0.7396262884140015,
+      "choice_counts": [
+        40062,
+        188,
+        274,
+        234,
+        229,
+        225,
+        216,
+        157,
+        159,
+        256
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 12620,
+      "non_keep": 2375,
+      "non_keep_among_effective": 0.1881933438985737,
+      "mean_keep_probability": 0.8093381524085999,
+      "mean_entropy": 0.8129609823226929,
+      "choice_counts": [
+        39625,
+        564,
+        459,
+        147,
+        315,
+        149,
+        47,
+        146,
+        146,
+        402
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 11890,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.8078898787498474,
+      "mean_entropy": 0.8143067359924316,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  },
+  {
+    "arm": "f3",
+    "run": 0,
+    "first_training": {
+      "records": 6720,
+      "effective": 5846,
+      "non_keep": 834,
+      "non_keep_among_effective": 0.14266164899076292,
+      "mean_keep_probability": 0.8506644368171692,
+      "mean_entropy": 0.6981939673423767,
+      "choice_counts": [
+        5886,
+        76,
+        116,
+        101,
+        74,
+        93,
+        80,
+        73,
+        97,
+        124
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 5844,
+      "non_keep": 1569,
+      "non_keep_among_effective": 0.2684804928131417,
+      "mean_keep_probability": 0.728611946105957,
+      "mean_entropy": 1.0496799945831299,
+      "choice_counts": [
+        5151,
+        36,
+        207,
+        288,
+        99,
+        272,
+        136,
+        76,
+        154,
+        301
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 36525,
+      "non_keep": 5269,
+      "non_keep_among_effective": 0.14425735797399042,
+      "mean_keep_probability": 0.8509394526481628,
+      "mean_entropy": 0.6968786120414734,
+      "choice_counts": [
+        36731,
+        413,
+        773,
+        622,
+        498,
+        521,
+        621,
+        437,
+        580,
+        804
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 36462,
+      "non_keep": 10634,
+      "non_keep_among_effective": 0.29164609730678515,
+      "mean_keep_probability": 0.7075393199920654,
+      "mean_entropy": 1.0954391956329346,
+      "choice_counts": [
+        31366,
+        172,
+        1465,
+        1946,
+        678,
+        1842,
+        1047,
+        574,
+        847,
+        2063
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 36535,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.7044370770454407,
+      "mean_entropy": 1.1027034521102905,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  },
+  {
+    "arm": "f3",
+    "run": 1,
+    "first_training": {
+      "records": 6720,
+      "effective": 5880,
+      "non_keep": 874,
+      "non_keep_among_effective": 0.1486394557823129,
+      "mean_keep_probability": 0.8509227633476257,
+      "mean_entropy": 0.6969504952430725,
+      "choice_counts": [
+        5846,
+        67,
+        135,
+        119,
+        74,
+        80,
+        97,
+        74,
+        96,
+        132
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 5842,
+      "non_keep": 936,
+      "non_keep_among_effective": 0.16021910304690173,
+      "mean_keep_probability": 0.8373072147369385,
+      "mean_entropy": 0.7200428247451782,
+      "choice_counts": [
+        5784,
+        37,
+        102,
+        138,
+        68,
+        111,
+        94,
+        47,
+        59,
+        280
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 36525,
+      "non_keep": 5269,
+      "non_keep_among_effective": 0.14425735797399042,
+      "mean_keep_probability": 0.8509394526481628,
+      "mean_entropy": 0.6968786120414734,
+      "choice_counts": [
+        36731,
+        413,
+        773,
+        622,
+        498,
+        521,
+        621,
+        437,
+        580,
+        804
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 36560,
+      "non_keep": 6292,
+      "non_keep_among_effective": 0.17210065645514222,
+      "mean_keep_probability": 0.8257224559783936,
+      "mean_entropy": 0.7574177384376526,
+      "choice_counts": [
+        35708,
+        271,
+        706,
+        1035,
+        453,
+        681,
+        635,
+        377,
+        324,
+        1810
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 36535,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.824475884437561,
+      "mean_entropy": 0.7612025737762451,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  },
+  {
+    "arm": "c3j7",
+    "run": 0,
+    "first_training": {
+      "records": 6720,
+      "effective": 2632,
+      "non_keep": 377,
+      "non_keep_among_effective": 0.1432370820668693,
+      "mean_keep_probability": 0.853252112865448,
+      "mean_entropy": 0.686474621295929,
+      "choice_counts": [
+        6343,
+        42,
+        47,
+        44,
+        33,
+        41,
+        47,
+        31,
+        44,
+        48
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 2620,
+      "non_keep": 447,
+      "non_keep_among_effective": 0.17061068702290078,
+      "mean_keep_probability": 0.8264496326446533,
+      "mean_entropy": 0.7647380828857422,
+      "choice_counts": [
+        6273,
+        65,
+        40,
+        54,
+        33,
+        44,
+        19,
+        79,
+        47,
+        66
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 16531,
+      "non_keep": 2429,
+      "non_keep_among_effective": 0.14693605952452968,
+      "mean_keep_probability": 0.8530265092849731,
+      "mean_entropy": 0.6875446438789368,
+      "choice_counts": [
+        39571,
+        318,
+        356,
+        253,
+        198,
+        237,
+        289,
+        215,
+        234,
+        329
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 16555,
+      "non_keep": 2648,
+      "non_keep_among_effective": 0.159951676230746,
+      "mean_keep_probability": 0.8401793837547302,
+      "mean_entropy": 0.7140384316444397,
+      "choice_counts": [
+        39352,
+        436,
+        252,
+        283,
+        284,
+        193,
+        106,
+        434,
+        251,
+        409
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 16539,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.8425409197807312,
+      "mean_entropy": 0.7035824060440063,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  },
+  {
+    "arm": "c3j7",
+    "run": 1,
+    "first_training": {
+      "records": 6720,
+      "effective": 2628,
+      "non_keep": 383,
+      "non_keep_among_effective": 0.14573820395738205,
+      "mean_keep_probability": 0.8530718684196472,
+      "mean_entropy": 0.6873505711555481,
+      "choice_counts": [
+        6337,
+        55,
+        56,
+        31,
+        20,
+        44,
+        48,
+        40,
+        37,
+        52
+      ]
+    },
+    "last_training": {
+      "records": 6720,
+      "effective": 2612,
+      "non_keep": 468,
+      "non_keep_among_effective": 0.17917304747320062,
+      "mean_keep_probability": 0.8102114796638489,
+      "mean_entropy": 0.8187354803085327,
+      "choice_counts": [
+        6252,
+        59,
+        57,
+        45,
+        35,
+        25,
+        28,
+        46,
+        91,
+        82
+      ]
+    },
+    "initial_stochastic": {
+      "records": 42000,
+      "effective": 16531,
+      "non_keep": 2429,
+      "non_keep_among_effective": 0.14693605952452968,
+      "mean_keep_probability": 0.8530265092849731,
+      "mean_entropy": 0.6875446438789368,
+      "choice_counts": [
+        39571,
+        318,
+        356,
+        253,
+        198,
+        237,
+        289,
+        215,
+        234,
+        329
+      ]
+    },
+    "final_stochastic": {
+      "records": 42000,
+      "effective": 16418,
+      "non_keep": 3254,
+      "non_keep_among_effective": 0.19819710074308686,
+      "mean_keep_probability": 0.801148533821106,
+      "mean_entropy": 0.8421376943588257,
+      "choice_counts": [
+        38746,
+        495,
+        439,
+        303,
+        376,
+        151,
+        215,
+        259,
+        536,
+        480
+      ]
+    },
+    "final_greedy": {
+      "records": 42000,
+      "effective": 16539,
+      "non_keep": 0,
+      "non_keep_among_effective": 0.0,
+      "mean_keep_probability": 0.8051260113716125,
+      "mean_entropy": 0.8258911371231079,
+      "choice_counts": [
+        42000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected_step": 0
+  }
+]

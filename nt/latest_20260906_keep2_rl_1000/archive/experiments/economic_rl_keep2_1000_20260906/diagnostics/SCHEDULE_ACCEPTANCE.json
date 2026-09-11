@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "stages": {
+    "400": {
+      "start": 300,
+      "end": 400,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 22400,
+      "cumulative_games_per_model": 89600,
+      "training_seed_intervals": [
+        [
+          69604800,
+          69606399
+        ],
+        [
+          69704800,
+          69706399
+        ]
+      ]
+    },
+    "500": {
+      "start": 400,
+      "end": 500,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 28000,
+      "cumulative_games_per_model": 112000,
+      "training_seed_intervals": [
+        [
+          69606400,
+          69607999
+        ],
+        [
+          69706400,
+          69707999
+        ]
+      ]
+    },
+    "600": {
+      "start": 500,
+      "end": 600,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 33600,
+      "cumulative_games_per_model": 134400,
+      "training_seed_intervals": [
+        [
+          69608000,
+          69609599
+        ],
+        [
+          69708000,
+          69709599
+        ]
+      ]
+    },
+    "700": {
+      "start": 600,
+      "end": 700,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 39200,
+      "cumulative_games_per_model": 156800,
+      "training_seed_intervals": [
+        [
+          69609600,
+          69611199
+        ],
+        [
+          69709600,
+          69711199
+        ]
+      ]
+    },
+    "800": {
+      "start": 700,
+      "end": 800,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 44800,
+      "cumulative_games_per_model": 179200,
+      "training_seed_intervals": [
+        [
+          69611200,
+          69612799
+        ],
+        [
+          69711200,
+          69712799
+        ]
+      ]
+    },
+    "900": {
+      "start": 800,
+      "end": 900,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 50400,
+      "cumulative_games_per_model": 201600,
+      "training_seed_intervals": [
+        [
+          69612800,
+          69614399
+        ],
+        [
+          69712800,
+          69714399
+        ]
+      ]
+    },
+    "1000": {
+      "start": 900,
+      "end": 1000,
+      "core_calls_unchanged": true,
+      "expected_adam_updates": 56000,
+      "cumulative_games_per_model": 224000,
+      "training_seed_intervals": [
+        [
+          69614400,
+          69615999
+        ],
+        [
+          69714400,
+          69715999
+        ]
+      ]
+    }
+  },
+  "note": "Static schedule and call-equivalence checks; runtime and performance require separate stage audits."
+}

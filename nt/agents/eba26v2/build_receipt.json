@@ -1,0 +1,28 @@
+{
+  "schema": "kaggriculture-step168-yarn-route18-override-build-v1",
+  "generated_at_utc": "2026-08-17T09:29:40.080853+00:00",
+  "status": "BUILT_OFFICIAL_VALIDATION_REQUIRED",
+  "agent_version": "eba26-step168-yarn-route18-override-v2",
+  "decision_step": 168,
+  "override_route": "route18_rank06_6c_12s_100l",
+  "condition": {
+    "required_public_shop": "YARN_STORE",
+    "excluded_public_shop": "ICE_CREAM_SHOP"
+  },
+  "runtime_inputs": [
+    "public unlocked shops"
+  ],
+  "forbidden_runtime_inputs": [
+    "opponent identity",
+    "seed",
+    "future events",
+    "terminal outcome",
+    "private opponent state"
+  ],
+  "base_agent": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\agents\\eba21_route17_step168_public_margin_router_v2\\main.py",
+  "base_agent_sha256": "37F53ABF6EFC7075E68C8F431A3AE43E9A47031A41D5B2DE2E9AF901DC9441FA",
+  "output_agent": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\agents\\eba26_step168_yarn_route18_override_v2\\main.py",
+  "output_agent_sha256": "DD8CA878FB7C71195EF5CFDDCF61D9B1161F317B052B0E45104B8442B6E59072",
+  "output_bytes": 123271,
+  "truth_boundary": "Public-state candidate; independent official Python 1.32.7 holdout is mandatory."
+}

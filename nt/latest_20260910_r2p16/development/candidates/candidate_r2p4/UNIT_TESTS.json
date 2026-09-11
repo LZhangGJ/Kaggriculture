@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "early": 0,
+      "status": "PASS",
+      "flow_cases": 151,
+      "valuation_checks": 2
+    },
+    {
+      "early": 0.25,
+      "status": "PASS",
+      "flow_cases": 151,
+      "valuation_checks": 2
+    },
+    {
+      "early": 0.5,
+      "status": "PASS",
+      "flow_cases": 151,
+      "valuation_checks": 2
+    },
+    {
+      "early": 1,
+      "status": "PASS",
+      "flow_cases": 151,
+      "valuation_checks": 2
+    }
+  ]
+}

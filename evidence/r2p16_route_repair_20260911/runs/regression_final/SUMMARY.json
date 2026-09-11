@@ -1,0 +1,94 @@
+{
+  "stage": "regression",
+  "games": 14,
+  "observations": 20160,
+  "arms": {
+    "fixed": {
+      "games": 14,
+      "seeds": 7,
+      "wins": 9,
+      "draws": 0,
+      "win_rate": 64.28571428571429,
+      "mean_cash": 103900.28571428571,
+      "mean_opponent_cash": 103193.21428571429,
+      "mean_margin": 707.0714285714286,
+      "mean_wages": 4270.642857142857,
+      "mean_hires": 231.42857142857142,
+      "mean_overflow_units": 27.428571428571427,
+      "invalid_actions": 0,
+      "recorded_uncompleted": 156,
+      "unexpected_uncompleted": 0,
+      "explicit_deferrals": 156,
+      "max_seconds": 0.6558892170000377,
+      "over_one_second": 0,
+      "recovery_events": 6,
+      "recovery_kept": 0,
+      "recovery_retries": 0,
+      "recovery_joint": 4,
+      "recovery_partial": 0,
+      "budget_stops": 53
+    }
+  },
+  "opponents": {
+    "submission_56140347": {
+      "fixed": {
+        "games": 6,
+        "seeds": 3,
+        "wins": 5,
+        "draws": 0,
+        "win_rate": 83.33333333333334,
+        "mean_cash": 108862.5,
+        "mean_opponent_cash": 106859.16666666667,
+        "mean_margin": 2003.3333333333333,
+        "mean_wages": 4008.5,
+        "mean_hires": 228.33333333333334,
+        "mean_overflow_units": 14.833333333333334,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 76,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 76,
+        "max_seconds": 0.6558892170000377,
+        "over_one_second": 0,
+        "recovery_events": 2,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 0,
+        "recovery_partial": 0,
+        "budget_stops": 21
+      }
+    },
+    "submission_56146577": {
+      "fixed": {
+        "games": 8,
+        "seeds": 4,
+        "wins": 4,
+        "draws": 0,
+        "win_rate": 50.0,
+        "mean_cash": 100178.625,
+        "mean_opponent_cash": 100443.75,
+        "mean_margin": -265.125,
+        "mean_wages": 4467.25,
+        "mean_hires": 233.75,
+        "mean_overflow_units": 36.875,
+        "invalid_actions": 0,
+        "recorded_uncompleted": 80,
+        "unexpected_uncompleted": 0,
+        "explicit_deferrals": 80,
+        "max_seconds": 0.6549174949999497,
+        "over_one_second": 0,
+        "recovery_events": 4,
+        "recovery_kept": 0,
+        "recovery_retries": 0,
+        "recovery_joint": 4,
+        "recovery_partial": 0,
+        "budget_stops": 32
+      }
+    }
+  },
+  "comparisons": [],
+  "caveats": [
+    "Local terminal-cash wins; host logs but does not enforce timeout forfeits.",
+    "Task obligations are recorded when each policy intervenes. Omission counts describe their own commitments, not a common counterfactual task list.",
+    "Development seeds are excluded from fresh-seed conclusions. CPU budget can change actions near the cutoff."
+  ]
+}

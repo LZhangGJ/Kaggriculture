@@ -1,0 +1,204 @@
+{
+  "count": 16,
+  "generated_at": "2026-08-10T17:43:52.672183+00:00",
+  "max_hands": 10,
+  "ok": true,
+  "package_version": "1.32.6",
+  "rows": [
+    {
+      "bytes": 75940,
+      "frames": 720,
+      "max_hands": 5,
+      "path": "reference\\random_differential\\random_seed32.jsonl.gz",
+      "seed": 32,
+      "sha256": "763192fa6cc460128094b76bf436c481f128027204c6b348c7403cc316a9b4dc",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 76413,
+      "frames": 720,
+      "max_hands": 4,
+      "path": "reference\\random_differential\\random_seed33.jsonl.gz",
+      "seed": 33,
+      "sha256": "492fc9ad580f9da56f330aa0a8932f7c62318f4b1504e95373b40ec5a1faab1a",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 76470,
+      "frames": 720,
+      "max_hands": 9,
+      "path": "reference\\random_differential\\random_seed34.jsonl.gz",
+      "seed": 34,
+      "sha256": "4edbe5724a65718b91487f4f4d43c232a6978cde42e655d23a6a2a9d803b6b03",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75627,
+      "frames": 720,
+      "max_hands": 5,
+      "path": "reference\\random_differential\\random_seed35.jsonl.gz",
+      "seed": 35,
+      "sha256": "53c16aee5fc2d0eb71770c5962dedee90197815887eba33e8bfe628d7c564992",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75979,
+      "frames": 720,
+      "max_hands": 10,
+      "path": "reference\\random_differential\\random_seed36.jsonl.gz",
+      "seed": 36,
+      "sha256": "58cd3919f81a6f6b66fcd659a2006f89fd2257a249c0baafc14e85ecda9f8c72",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 77974,
+      "frames": 720,
+      "max_hands": 6,
+      "path": "reference\\random_differential\\random_seed37.jsonl.gz",
+      "seed": 37,
+      "sha256": "1edbcc28a70c422e33085a1598c0c4c4ea9f798d4ee819382e0d6ee9e7bd3e93",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75606,
+      "frames": 720,
+      "max_hands": 8,
+      "path": "reference\\random_differential\\random_seed38.jsonl.gz",
+      "seed": 38,
+      "sha256": "097d6e9a62de227f1512f1818a28d6739b9956b23f4c07d793f766821eb9cc29",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75960,
+      "frames": 720,
+      "max_hands": 6,
+      "path": "reference\\random_differential\\random_seed39.jsonl.gz",
+      "seed": 39,
+      "sha256": "442a2291f78ec1dfcceef80c11ea155415967d2288b955ca9a76116294f731d2",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75759,
+      "frames": 720,
+      "max_hands": 5,
+      "path": "reference\\random_differential\\random_seed40.jsonl.gz",
+      "seed": 40,
+      "sha256": "d337a32c35774be38cdd364334ed9f0b2365c865e937f22978b8bb883e956746",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 74884,
+      "frames": 720,
+      "max_hands": 4,
+      "path": "reference\\random_differential\\random_seed41.jsonl.gz",
+      "seed": 41,
+      "sha256": "80da7f35f7d8018f4fec31b08e08a2ca49e51804b65f8d8df6640a17f5a6f941",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 77368,
+      "frames": 720,
+      "max_hands": 4,
+      "path": "reference\\random_differential\\random_seed42.jsonl.gz",
+      "seed": 42,
+      "sha256": "f62ec34546f29f6c963dfd357c84c5197d3e3dcdd1c5e77f6e8ae7977de80cd1",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 76718,
+      "frames": 720,
+      "max_hands": 7,
+      "path": "reference\\random_differential\\random_seed43.jsonl.gz",
+      "seed": 43,
+      "sha256": "7ed2ca5a63d64201c70216008e478d696bfd8332cfd984737a18a97f01923510",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 77018,
+      "frames": 720,
+      "max_hands": 5,
+      "path": "reference\\random_differential\\random_seed44.jsonl.gz",
+      "seed": 44,
+      "sha256": "7d0aac40155c81df00e8389c20c8d09297ebbfba596454fbfe592be28ea3b35f",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 75632,
+      "frames": 720,
+      "max_hands": 7,
+      "path": "reference\\random_differential\\random_seed45.jsonl.gz",
+      "seed": 45,
+      "sha256": "556c50ad8c0e931062f8fb024d5668f6c83afac2cb08886b5b5f9ab6680158d4",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 77206,
+      "frames": 720,
+      "max_hands": 5,
+      "path": "reference\\random_differential\\random_seed46.jsonl.gz",
+      "seed": 46,
+      "sha256": "e9d80f89c2b405cecb09c944660cb1abc6e3f49dad2d26862317209e19ef0db0",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bytes": 76621,
+      "frames": 720,
+      "max_hands": 6,
+      "path": "reference\\random_differential\\random_seed47.jsonl.gz",
+      "seed": 47,
+      "sha256": "e3924c17071dbf322d68c654cb2d28708410c088121755412e7ddcb5f83ccc60",
+      "terminal_reward": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "scenario": "state_aware_random_with_invalid",
+  "schema": "kaggriculture_random_differential_reference_v1",
+  "total_frames": 11520
+}

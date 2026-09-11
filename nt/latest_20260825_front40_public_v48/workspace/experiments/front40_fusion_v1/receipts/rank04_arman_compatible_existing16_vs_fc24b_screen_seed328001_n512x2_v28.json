@@ -1,0 +1,30 @@
+{
+  "schema": "kaggriculture.front40_fusion.route-screen-subset.v1",
+  "generated_at_utc": "2026-08-24T02:40:25.267759+00:00",
+  "status": "PASS",
+  "source": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_weak37_vs_fc24b_screen_seed328001_n512x2_v14",
+  "seed_count": 512,
+  "route_count": 16,
+  "route_ids": [
+    19,
+    24,
+    36,
+    38,
+    41,
+    49,
+    50,
+    60,
+    67,
+    72,
+    99,
+    106,
+    108,
+    113,
+    131,
+    139
+  ],
+  "games": 16384,
+  "all_done": true,
+  "hard_counter_total": 0,
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank04_arman_compatible_existing16_vs_fc24b_screen_seed328001_n512x2_v28.npz"
+}

@@ -1,0 +1,1289 @@
+{
+  "schema": "kaggriculture.public-recent-20260825.kaito-v48-vs-fc24b.v1",
+  "generated_at_utc": "2026-08-25T01:52:43.644778+00:00",
+  "status": "PASS",
+  "device": "cuda:0",
+  "seed_start": 1304001,
+  "batch_per_seat": 512,
+  "independent_from_parity_and_small_screen": true,
+  "aggregate": {
+    "games": 1024,
+    "wins": 851,
+    "losses": 173,
+    "ties": 0,
+    "win_rate": 0.8310546875,
+    "wilson_95": [
+      0.8068767649896229,
+      0.8527580397573187
+    ],
+    "mean_margin": 6237.4697265625
+  },
+  "results": [
+    {
+      "candidate_seat": 0,
+      "games": 512,
+      "wins": 431,
+      "losses": 81,
+      "ties": 0,
+      "win_rate": 0.841796875,
+      "wilson_95": [
+        0.8076567590928229,
+        0.8708462848466129
+      ],
+      "candidate_cash_mean": 95022.513671875,
+      "fc24b_cash_mean": 88711.798828125,
+      "mean_margin": 6310.71484375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "compile_and_first_seconds": 248.526914167,
+      "steady_seconds": 17.33789278400002,
+      "transitions_per_second": 21232.56872021499,
+      "routes": [
+        {
+          "route_id": 20,
+          "route": "default",
+          "games": 311,
+          "wins": 270,
+          "ties": 0,
+          "win_rate": 0.8681672025723473,
+          "wilson_95": [
+            0.8260367271477453,
+            0.9013134790727708
+          ],
+          "candidate_cash_mean": 94503.71704180064,
+          "fc24b_cash_mean": 86858.12540192925,
+          "mean_margin": 7645.5916398713825
+        },
+        {
+          "route_id": 21,
+          "route": "yarn_fast",
+          "games": 72,
+          "wins": 70,
+          "ties": 0,
+          "win_rate": 0.9722222222222222,
+          "wilson_95": [
+            0.9042582477856177,
+            0.9923489780955054
+          ],
+          "candidate_cash_mean": 103531.70833333333,
+          "fc24b_cash_mean": 97961.15277777778,
+          "mean_margin": 5570.555555555556
+        },
+        {
+          "route_id": 22,
+          "route": "farm_fast",
+          "games": 67,
+          "wins": 57,
+          "ties": 0,
+          "win_rate": 0.8507462686567164,
+          "wilson_95": [
+            0.7465960395409149,
+            0.9168572656622017
+          ],
+          "candidate_cash_mean": 90188.29850746269,
+          "fc24b_cash_mean": 84544.25373134328,
+          "mean_margin": 5644.044776119403
+        },
+        {
+          "route_id": 23,
+          "route": "yarn_second",
+          "games": 49,
+          "wins": 33,
+          "ties": 0,
+          "win_rate": 0.673469387755102,
+          "wilson_95": [
+            0.5337920531457014,
+            0.7879250299818812
+          ],
+          "candidate_cash_mean": 100498.61224489796,
+          "fc24b_cash_mean": 97422.04081632652,
+          "mean_margin": 3076.5714285714284
+        },
+        {
+          "route_id": 24,
+          "route": "yarn_third",
+          "games": 3,
+          "wins": 0,
+          "ties": 0,
+          "win_rate": 0.0,
+          "wilson_95": [
+            5.551115123125783e-17,
+            0.5614970317550454
+          ],
+          "candidate_cash_mean": 67943.66666666667,
+          "fc24b_cash_mean": 82356.0,
+          "mean_margin": -14412.333333333334
+        },
+        {
+          "route_id": 25,
+          "route": "bakery_capital",
+          "games": 10,
+          "wins": 1,
+          "ties": 0,
+          "win_rate": 0.1,
+          "wilson_95": [
+            0.017876213095072896,
+            0.4041500267952385
+          ],
+          "candidate_cash_mean": 63570.9,
+          "fc24b_cash_mean": 66914.8,
+          "mean_margin": -3343.9
+        }
+      ],
+      "losses_sample": [
+        {
+          "seed": 1304020,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 70671,
+          "fc24b_cash": 74537,
+          "margin": -3866
+        },
+        {
+          "seed": 1304022,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 43112,
+          "fc24b_cash": 44981,
+          "margin": -1869
+        },
+        {
+          "seed": 1304025,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 94233,
+          "fc24b_cash": 97807,
+          "margin": -3574
+        },
+        {
+          "seed": 1304031,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 99004,
+          "fc24b_cash": 104322,
+          "margin": -5318
+        },
+        {
+          "seed": 1304040,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 45300,
+          "fc24b_cash": 50560,
+          "margin": -5260
+        },
+        {
+          "seed": 1304042,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 49842,
+          "fc24b_cash": 51296,
+          "margin": -1454
+        },
+        {
+          "seed": 1304051,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 65403,
+          "fc24b_cash": 72111,
+          "margin": -6708
+        },
+        {
+          "seed": 1304061,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 80150,
+          "fc24b_cash": 80540,
+          "margin": -390
+        },
+        {
+          "seed": 1304063,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 96413,
+          "fc24b_cash": 96803,
+          "margin": -390
+        },
+        {
+          "seed": 1304066,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 90431,
+          "fc24b_cash": 94838,
+          "margin": -4407
+        },
+        {
+          "seed": 1304070,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 40386,
+          "fc24b_cash": 45958,
+          "margin": -5572
+        },
+        {
+          "seed": 1304076,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64043,
+          "fc24b_cash": 65157,
+          "margin": -1114
+        },
+        {
+          "seed": 1304080,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 41248,
+          "fc24b_cash": 45961,
+          "margin": -4713
+        },
+        {
+          "seed": 1304091,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 38501,
+          "fc24b_cash": 43366,
+          "margin": -4865
+        },
+        {
+          "seed": 1304096,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 60255,
+          "fc24b_cash": 62658,
+          "margin": -2403
+        },
+        {
+          "seed": 1304097,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 65417,
+          "fc24b_cash": 68947,
+          "margin": -3530
+        },
+        {
+          "seed": 1304101,
+          "route_id": 21,
+          "route": "yarn_fast",
+          "candidate_cash": 137134,
+          "fc24b_cash": 138410,
+          "margin": -1276
+        },
+        {
+          "seed": 1304102,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 63177,
+          "fc24b_cash": 65291,
+          "margin": -2114
+        },
+        {
+          "seed": 1304108,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 43631,
+          "fc24b_cash": 44664,
+          "margin": -1033
+        },
+        {
+          "seed": 1304114,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 63899,
+          "fc24b_cash": 67694,
+          "margin": -3795
+        },
+        {
+          "seed": 1304121,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 61436,
+          "fc24b_cash": 65285,
+          "margin": -3849
+        },
+        {
+          "seed": 1304132,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 65604,
+          "fc24b_cash": 66517,
+          "margin": -913
+        },
+        {
+          "seed": 1304141,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 127848,
+          "fc24b_cash": 128636,
+          "margin": -788
+        },
+        {
+          "seed": 1304143,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 66133,
+          "fc24b_cash": 69060,
+          "margin": -2927
+        },
+        {
+          "seed": 1304144,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 78131,
+          "fc24b_cash": 92530,
+          "margin": -14399
+        },
+        {
+          "seed": 1304147,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 54953,
+          "fc24b_cash": 55610,
+          "margin": -657
+        },
+        {
+          "seed": 1304153,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 72924,
+          "fc24b_cash": 78041,
+          "margin": -5117
+        },
+        {
+          "seed": 1304156,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 82034,
+          "fc24b_cash": 96170,
+          "margin": -14136
+        },
+        {
+          "seed": 1304159,
+          "route_id": 24,
+          "route": "yarn_third",
+          "candidate_cash": 67518,
+          "fc24b_cash": 75451,
+          "margin": -7933
+        },
+        {
+          "seed": 1304161,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 78670,
+          "fc24b_cash": 81833,
+          "margin": -3163
+        },
+        {
+          "seed": 1304186,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 57529,
+          "fc24b_cash": 64425,
+          "margin": -6896
+        },
+        {
+          "seed": 1304189,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 85744,
+          "fc24b_cash": 89614,
+          "margin": -3870
+        },
+        {
+          "seed": 1304194,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 32790,
+          "fc24b_cash": 41317,
+          "margin": -8527
+        },
+        {
+          "seed": 1304208,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 26064,
+          "fc24b_cash": 36167,
+          "margin": -10103
+        },
+        {
+          "seed": 1304219,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 60419,
+          "fc24b_cash": 61253,
+          "margin": -834
+        },
+        {
+          "seed": 1304223,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 68603,
+          "fc24b_cash": 69986,
+          "margin": -1383
+        },
+        {
+          "seed": 1304226,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 97724,
+          "fc24b_cash": 98788,
+          "margin": -1064
+        },
+        {
+          "seed": 1304231,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 90735,
+          "fc24b_cash": 90976,
+          "margin": -241
+        },
+        {
+          "seed": 1304236,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 78842,
+          "fc24b_cash": 82590,
+          "margin": -3748
+        },
+        {
+          "seed": 1304244,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 64621,
+          "fc24b_cash": 65075,
+          "margin": -454
+        },
+        {
+          "seed": 1304257,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 55943,
+          "fc24b_cash": 56875,
+          "margin": -932
+        },
+        {
+          "seed": 1304283,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64178,
+          "fc24b_cash": 65338,
+          "margin": -1160
+        },
+        {
+          "seed": 1304293,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64780,
+          "fc24b_cash": 69571,
+          "margin": -4791
+        },
+        {
+          "seed": 1304310,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 72848,
+          "fc24b_cash": 89703,
+          "margin": -16855
+        },
+        {
+          "seed": 1304311,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 49261,
+          "fc24b_cash": 54162,
+          "margin": -4901
+        },
+        {
+          "seed": 1304312,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 45361,
+          "fc24b_cash": 49732,
+          "margin": -4371
+        },
+        {
+          "seed": 1304313,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 38487,
+          "fc24b_cash": 42753,
+          "margin": -4266
+        },
+        {
+          "seed": 1304320,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 72633,
+          "fc24b_cash": 73511,
+          "margin": -878
+        },
+        {
+          "seed": 1304327,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 45163,
+          "fc24b_cash": 50754,
+          "margin": -5591
+        },
+        {
+          "seed": 1304329,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 30784,
+          "fc24b_cash": 37785,
+          "margin": -7001
+        },
+        {
+          "seed": 1304330,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 43764,
+          "fc24b_cash": 50749,
+          "margin": -6985
+        },
+        {
+          "seed": 1304333,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 37753,
+          "fc24b_cash": 43432,
+          "margin": -5679
+        },
+        {
+          "seed": 1304336,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 118320,
+          "fc24b_cash": 118572,
+          "margin": -252
+        },
+        {
+          "seed": 1304338,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 30965,
+          "fc24b_cash": 41185,
+          "margin": -10220
+        },
+        {
+          "seed": 1304340,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 56205,
+          "fc24b_cash": 61786,
+          "margin": -5581
+        },
+        {
+          "seed": 1304345,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 94900,
+          "fc24b_cash": 97969,
+          "margin": -3069
+        },
+        {
+          "seed": 1304347,
+          "route_id": 24,
+          "route": "yarn_third",
+          "candidate_cash": 77085,
+          "fc24b_cash": 101306,
+          "margin": -24221
+        },
+        {
+          "seed": 1304348,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 54177,
+          "fc24b_cash": 60773,
+          "margin": -6596
+        },
+        {
+          "seed": 1304353,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 74299,
+          "fc24b_cash": 80388,
+          "margin": -6089
+        },
+        {
+          "seed": 1304355,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 45743,
+          "fc24b_cash": 47891,
+          "margin": -2148
+        },
+        {
+          "seed": 1304358,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 44495,
+          "fc24b_cash": 44812,
+          "margin": -317
+        },
+        {
+          "seed": 1304362,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 77713,
+          "fc24b_cash": 78777,
+          "margin": -1064
+        },
+        {
+          "seed": 1304374,
+          "route_id": 24,
+          "route": "yarn_third",
+          "candidate_cash": 59228,
+          "fc24b_cash": 70311,
+          "margin": -11083
+        },
+        {
+          "seed": 1304389,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 46382,
+          "fc24b_cash": 51858,
+          "margin": -5476
+        }
+      ]
+    },
+    {
+      "candidate_seat": 1,
+      "games": 512,
+      "wins": 420,
+      "losses": 92,
+      "ties": 0,
+      "win_rate": 0.8203125,
+      "wilson_95": [
+        0.7847100751881306,
+        0.8511442059893977
+      ],
+      "candidate_cash_mean": 95059.0390625,
+      "fc24b_cash_mean": 88894.814453125,
+      "mean_margin": 6164.224609375,
+      "all_done": true,
+      "hard_counts": {
+        "hand_cap_hits": 0,
+        "market_loop_cap_hits": 0,
+        "price_lut_oob": 0
+      },
+      "compile_and_first_seconds": 256.66977149200005,
+      "steady_seconds": 17.045868908999978,
+      "transitions_per_second": 21596.317674696747,
+      "routes": [
+        {
+          "route_id": 20,
+          "route": "default",
+          "games": 312,
+          "wins": 268,
+          "ties": 0,
+          "win_rate": 0.8589743589743589,
+          "wilson_95": [
+            0.8159765618378692,
+            0.8932400205461639
+          ],
+          "candidate_cash_mean": 94107.85897435897,
+          "fc24b_cash_mean": 86554.33012820513,
+          "mean_margin": 7553.528846153846
+        },
+        {
+          "route_id": 21,
+          "route": "yarn_fast",
+          "games": 69,
+          "wins": 64,
+          "ties": 0,
+          "win_rate": 0.927536231884058,
+          "wilson_95": [
+            0.8413260579060098,
+            0.9686522285700185
+          ],
+          "candidate_cash_mean": 104391.52173913043,
+          "fc24b_cash_mean": 98792.01449275362,
+          "mean_margin": 5599.507246376812
+        },
+        {
+          "route_id": 22,
+          "route": "farm_fast",
+          "games": 68,
+          "wins": 58,
+          "ties": 0,
+          "win_rate": 0.8529411764705882,
+          "wilson_95": [
+            0.7500260574669123,
+            0.9181118226365673
+          ],
+          "candidate_cash_mean": 89458.30882352941,
+          "fc24b_cash_mean": 84059.35294117648,
+          "mean_margin": 5398.955882352941
+        },
+        {
+          "route_id": 23,
+          "route": "yarn_second",
+          "games": 52,
+          "wins": 30,
+          "ties": 0,
+          "win_rate": 0.5769230769230769,
+          "wilson_95": [
+            0.4419432537390302,
+            0.7013194791649908
+          ],
+          "candidate_cash_mean": 103123.32692307692,
+          "fc24b_cash_mean": 100920.5,
+          "mean_margin": 2202.826923076923
+        },
+        {
+          "route_id": 24,
+          "route": "yarn_third",
+          "games": 2,
+          "wins": 0,
+          "ties": 0,
+          "win_rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.6576197724933469
+          ],
+          "candidate_cash_mean": 63039.0,
+          "fc24b_cash_mean": 76640.5,
+          "mean_margin": -13601.5
+        },
+        {
+          "route_id": 25,
+          "route": "bakery_capital",
+          "games": 9,
+          "wins": 0,
+          "ties": 0,
+          "win_rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.2991450484195441
+          ],
+          "candidate_cash_mean": 59322.77777777778,
+          "fc24b_cash_mean": 63929.11111111111,
+          "mean_margin": -4606.333333333333
+        }
+      ],
+      "losses_sample": [
+        {
+          "seed": 1304016,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 143801,
+          "fc24b_cash": 148684,
+          "margin": -4883
+        },
+        {
+          "seed": 1304022,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 42924,
+          "fc24b_cash": 44395,
+          "margin": -1471
+        },
+        {
+          "seed": 1304023,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 53181,
+          "fc24b_cash": 54586,
+          "margin": -1405
+        },
+        {
+          "seed": 1304025,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 92842,
+          "fc24b_cash": 107198,
+          "margin": -14356
+        },
+        {
+          "seed": 1304031,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 99004,
+          "fc24b_cash": 104322,
+          "margin": -5318
+        },
+        {
+          "seed": 1304040,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 45300,
+          "fc24b_cash": 50560,
+          "margin": -5260
+        },
+        {
+          "seed": 1304042,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 47247,
+          "fc24b_cash": 50191,
+          "margin": -2944
+        },
+        {
+          "seed": 1304051,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 65403,
+          "fc24b_cash": 72111,
+          "margin": -6708
+        },
+        {
+          "seed": 1304058,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 59520,
+          "fc24b_cash": 63484,
+          "margin": -3964
+        },
+        {
+          "seed": 1304061,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 80150,
+          "fc24b_cash": 80540,
+          "margin": -390
+        },
+        {
+          "seed": 1304063,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 96413,
+          "fc24b_cash": 96803,
+          "margin": -390
+        },
+        {
+          "seed": 1304066,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 90431,
+          "fc24b_cash": 94838,
+          "margin": -4407
+        },
+        {
+          "seed": 1304070,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 40386,
+          "fc24b_cash": 45958,
+          "margin": -5572
+        },
+        {
+          "seed": 1304076,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64043,
+          "fc24b_cash": 65157,
+          "margin": -1114
+        },
+        {
+          "seed": 1304080,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 41248,
+          "fc24b_cash": 45961,
+          "margin": -4713
+        },
+        {
+          "seed": 1304088,
+          "route_id": 21,
+          "route": "yarn_fast",
+          "candidate_cash": 116144,
+          "fc24b_cash": 116418,
+          "margin": -274
+        },
+        {
+          "seed": 1304091,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 37967,
+          "fc24b_cash": 43584,
+          "margin": -5617
+        },
+        {
+          "seed": 1304096,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 60255,
+          "fc24b_cash": 62658,
+          "margin": -2403
+        },
+        {
+          "seed": 1304097,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64021,
+          "fc24b_cash": 68613,
+          "margin": -4592
+        },
+        {
+          "seed": 1304099,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 110106,
+          "fc24b_cash": 116719,
+          "margin": -6613
+        },
+        {
+          "seed": 1304101,
+          "route_id": 21,
+          "route": "yarn_fast",
+          "candidate_cash": 138107,
+          "fc24b_cash": 139245,
+          "margin": -1138
+        },
+        {
+          "seed": 1304102,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 63177,
+          "fc24b_cash": 65291,
+          "margin": -2114
+        },
+        {
+          "seed": 1304108,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 43631,
+          "fc24b_cash": 44664,
+          "margin": -1033
+        },
+        {
+          "seed": 1304114,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 63899,
+          "fc24b_cash": 67694,
+          "margin": -3795
+        },
+        {
+          "seed": 1304120,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 62173,
+          "fc24b_cash": 64499,
+          "margin": -2326
+        },
+        {
+          "seed": 1304121,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 60848,
+          "fc24b_cash": 65127,
+          "margin": -4279
+        },
+        {
+          "seed": 1304132,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 65604,
+          "fc24b_cash": 66517,
+          "margin": -913
+        },
+        {
+          "seed": 1304141,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 127848,
+          "fc24b_cash": 128636,
+          "margin": -788
+        },
+        {
+          "seed": 1304143,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 66133,
+          "fc24b_cash": 69060,
+          "margin": -2927
+        },
+        {
+          "seed": 1304144,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 78121,
+          "fc24b_cash": 92656,
+          "margin": -14535
+        },
+        {
+          "seed": 1304147,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 54953,
+          "fc24b_cash": 55610,
+          "margin": -657
+        },
+        {
+          "seed": 1304153,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 72924,
+          "fc24b_cash": 78041,
+          "margin": -5117
+        },
+        {
+          "seed": 1304156,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 82034,
+          "fc24b_cash": 96170,
+          "margin": -14136
+        },
+        {
+          "seed": 1304161,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 90261,
+          "fc24b_cash": 94032,
+          "margin": -3771
+        },
+        {
+          "seed": 1304186,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 49263,
+          "fc24b_cash": 50576,
+          "margin": -1313
+        },
+        {
+          "seed": 1304194,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 32307,
+          "fc24b_cash": 41942,
+          "margin": -9635
+        },
+        {
+          "seed": 1304196,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 98324,
+          "fc24b_cash": 112932,
+          "margin": -14608
+        },
+        {
+          "seed": 1304208,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 26029,
+          "fc24b_cash": 36583,
+          "margin": -10554
+        },
+        {
+          "seed": 1304218,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 54443,
+          "fc24b_cash": 56736,
+          "margin": -2293
+        },
+        {
+          "seed": 1304219,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 60419,
+          "fc24b_cash": 61253,
+          "margin": -834
+        },
+        {
+          "seed": 1304222,
+          "route_id": 21,
+          "route": "yarn_fast",
+          "candidate_cash": 135060,
+          "fc24b_cash": 135413,
+          "margin": -353
+        },
+        {
+          "seed": 1304223,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 71505,
+          "fc24b_cash": 71568,
+          "margin": -63
+        },
+        {
+          "seed": 1304227,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 87533,
+          "fc24b_cash": 88959,
+          "margin": -1426
+        },
+        {
+          "seed": 1304231,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 90735,
+          "fc24b_cash": 90976,
+          "margin": -241
+        },
+        {
+          "seed": 1304236,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 78842,
+          "fc24b_cash": 82590,
+          "margin": -3748
+        },
+        {
+          "seed": 1304244,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 64621,
+          "fc24b_cash": 65075,
+          "margin": -454
+        },
+        {
+          "seed": 1304257,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 55943,
+          "fc24b_cash": 56875,
+          "margin": -932
+        },
+        {
+          "seed": 1304260,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 46835,
+          "fc24b_cash": 46868,
+          "margin": -33
+        },
+        {
+          "seed": 1304280,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 90061,
+          "fc24b_cash": 96566,
+          "margin": -6505
+        },
+        {
+          "seed": 1304283,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64178,
+          "fc24b_cash": 65338,
+          "margin": -1160
+        },
+        {
+          "seed": 1304293,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 64941,
+          "fc24b_cash": 69536,
+          "margin": -4595
+        },
+        {
+          "seed": 1304310,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 74782,
+          "fc24b_cash": 88892,
+          "margin": -14110
+        },
+        {
+          "seed": 1304313,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 38487,
+          "fc24b_cash": 42753,
+          "margin": -4266
+        },
+        {
+          "seed": 1304325,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 76227,
+          "fc24b_cash": 84962,
+          "margin": -8735
+        },
+        {
+          "seed": 1304327,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 44537,
+          "fc24b_cash": 49965,
+          "margin": -5428
+        },
+        {
+          "seed": 1304329,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 30784,
+          "fc24b_cash": 37785,
+          "margin": -7001
+        },
+        {
+          "seed": 1304330,
+          "route_id": 25,
+          "route": "bakery_capital",
+          "candidate_cash": 50932,
+          "fc24b_cash": 55825,
+          "margin": -4893
+        },
+        {
+          "seed": 1304333,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 37753,
+          "fc24b_cash": 43432,
+          "margin": -5679
+        },
+        {
+          "seed": 1304336,
+          "route_id": 23,
+          "route": "yarn_second",
+          "candidate_cash": 118320,
+          "fc24b_cash": 118572,
+          "margin": -252
+        },
+        {
+          "seed": 1304338,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 30965,
+          "fc24b_cash": 41185,
+          "margin": -10220
+        },
+        {
+          "seed": 1304340,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 56178,
+          "fc24b_cash": 62090,
+          "margin": -5912
+        },
+        {
+          "seed": 1304345,
+          "route_id": 22,
+          "route": "farm_fast",
+          "candidate_cash": 83192,
+          "fc24b_cash": 84729,
+          "margin": -1537
+        },
+        {
+          "seed": 1304347,
+          "route_id": 24,
+          "route": "yarn_third",
+          "candidate_cash": 66909,
+          "fc24b_cash": 82509,
+          "margin": -15600
+        },
+        {
+          "seed": 1304348,
+          "route_id": 20,
+          "route": "default",
+          "candidate_cash": 54291,
+          "fc24b_cash": 60723,
+          "margin": -6432
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 591.773428306,
+  "strength_gate": {
+    "threshold": 0.5,
+    "point_estimate_pass": true,
+    "wilson_lower_bound_pass": true
+  }
+}

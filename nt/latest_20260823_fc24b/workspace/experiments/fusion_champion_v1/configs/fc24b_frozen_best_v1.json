@@ -1,0 +1,99 @@
+{
+  "schema": "kaggriculture.fusion_champion.rule_config.v3",
+  "name": "fc24b_frozen_best_v1",
+  "parent": "fc22_feed_value_guard_v1",
+  "status": "FROZEN_LOCAL_CHAMPION",
+  "official_package_version": "1.32.7",
+  "policy_entrypoint": "fc24_terminal_crop_salvage_player_action_v1",
+  "carry_initializer": "initialize_fusion_champion_terminal_salvage_carry_v1",
+  "selection_basis": {
+    "latest_public_agents": 6,
+    "historical_agents": 28,
+    "games_per_opponent": 256,
+    "total_games": 8704,
+    "minimum_score_rate": 0.90234375,
+    "comparison_parent": "FC22",
+    "loss_to_win": 4,
+    "win_to_loss": 0,
+    "candidate_cash_up_games": 1313,
+    "candidate_cash_down_games": 0
+  },
+  "parameters": {
+    "fc15_base": {
+      "k320_preempt_start_step": 120,
+      "k320_clone_distance_limit": 6,
+      "k320_minimum_future_quantity": 1,
+      "k320_minimum_price_percent": 100,
+      "premium_products": [
+        "STRAWBERRY",
+        "MILK",
+        "WOOL"
+      ],
+      "x562_suffix_weed_hire_guard": {
+        "lookahead": 4,
+        "weed_threshold": 2,
+        "hire_threshold": 5,
+        "minimum_hire": 1
+      },
+      "visible_opening_sheep_pressure_route": true
+    },
+    "moon_public_market_overlay": {
+      "embedded_v21_observer": true,
+      "minimum_horizon": 4,
+      "horizon_floor_start_step": 120,
+      "horizon_floor_clone_distance": 2,
+      "maximum_action_clone_distance": 6,
+      "disabled_under_visible_sheep_pressure": true,
+      "repayment_ledger_required": true
+    },
+    "opening": {
+      "step_zero_wheat_seed_quantity": 8
+    },
+    "early_feed_cash_guard": {
+      "start_step_exclusive": 72,
+      "end_step_exclusive": 192,
+      "product": "CARROT",
+      "operation": "BUY_SEED",
+      "minimum_original_quantity": 5,
+      "quantity_decrement": 1
+    },
+    "feed_value_guard": {
+      "start_day_zero_based": 10,
+      "skip_only_first_unfed_day": true,
+      "skip_condition": "observable_animal_product_value_including_pending_care < current_wheat_price",
+      "wheat_credit_ledger": true,
+      "trim_later_wheat_buys": true
+    },
+    "terminal_crop_salvage": {
+      "start_step": 696,
+      "must_be_final_feasible_harvest_return_drop_step": true,
+      "source_action_must_move_away": true,
+      "crop_must_be_mature_with_positive_yield": true,
+      "minimum_crop_to_carried_value_ratio": 2,
+      "candidate_order": "highest_current_liquidation_value_then_lowest_actor_id",
+      "sticky_until_drop": true,
+      "merge_incremental_terminal_sale_only": true
+    }
+  },
+  "forbidden_triggers": [
+    "opponent_identity",
+    "replay_id",
+    "event_seed",
+    "fixed_map_coordinate",
+    "future_hidden_event"
+  ],
+  "acceptance_receipts": {
+    "latest6": "experiments/fusion_champion_v1/receipts/fc24b_value_guard_vs_latest6_seed839001_n128x2_v1.json",
+    "old28": "experiments/fusion_champion_v1/receipts/fc24b_value_guard_vs_old_full_roster_seed594001_n128x2_v1.json",
+    "official_jax_standard": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_jax_stepwise_parity_seed594001_n8x2_v1.json",
+    "official_jax_targeted": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_jax_stepwise_parity_seed594122_targeted_v1.json",
+    "cpu_latency": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_cpu_latency_and_action_acceptance_v1.json",
+    "cross_game_reentry": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_reentry_forward_reverse_v1.json"
+  },
+  "source_hashes": {
+    "experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py": "EE9B46453B1AB673E197AFD682C7691ECDBB1596B7C9233BAE8FBE80BCD3E843",
+    "experiments/fusion_champion_v1/tools/build_fc24b_cpu_submission.py": "952728E22EBD5226BC85D020EB53CD154FB98309BEF1BD9CF5A166A2E38B9869",
+    "experiments/fusion_champion_v1/artifacts/fc24b_cpu_v1/main.py": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B"
+  },
+  "boundary": "Frozen for the local official-1.32.7 and exact-JAX corpus. It does not claim mathematical coverage of every reachable state or future leaderboard performance."
+}

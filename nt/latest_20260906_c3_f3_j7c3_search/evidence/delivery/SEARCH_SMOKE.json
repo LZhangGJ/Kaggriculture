@@ -1,0 +1,169 @@
+{
+  "unseen_test": {
+    "status": "PASS",
+    "overall": {
+      "games": 2,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 95887.0,
+      "mean_margin": -7201.0
+    },
+    "per_opponent": {
+      "g001": {
+        "games": 2,
+        "wins": 0,
+        "ties": 0,
+        "win_rate": 0.0,
+        "mean_cash": 95887.0,
+        "mean_margin": -7201.0
+      }
+    },
+    "wall_seconds": 0.133212561,
+    "call_seconds": 0.13642594000000052,
+    "games_per_second": 14.659968624735093,
+    "decisions": 60,
+    "changed": 0,
+    "fallbacks": 0,
+    "library_sha256": "a5ca1875023a0a82d64a1f521515d47fbfd31b957dc04f91c929ca8a4eec4976",
+    "plan_sha256": "77c23f31e888d5cecde49a2af4a0149b00e5665f5aa08a6b37b3d1eea945a0b8",
+    "errors": []
+  },
+  "purpose": "Interface smoke only, not promotion",
+  "unseen_keep": {
+    "status": "PASS",
+    "overall": {
+      "games": 2,
+      "wins": 0,
+      "ties": 0,
+      "win_rate": 0.0,
+      "mean_cash": 95887.0,
+      "mean_margin": -7201.0
+    },
+    "per_opponent": {
+      "g001": {
+        "games": 2,
+        "wins": 0,
+        "ties": 0,
+        "win_rate": 0.0,
+        "mean_cash": 95887.0,
+        "mean_margin": -7201.0
+      }
+    },
+    "wall_seconds": 0.125541239,
+    "call_seconds": 0.13746835100000077,
+    "games_per_second": 14.54880330964317,
+    "decisions": 60,
+    "changed": 0,
+    "fallbacks": 0,
+    "library_sha256": "b24d93dfb2ee4cbe25f69e4d9e1dfb2e18d25b4c9afb5a3fd660e4f7623b468b",
+    "plan_sha256": null,
+    "errors": []
+  },
+  "search": {
+    "args": {
+      "arm": "f3",
+      "width": 2,
+      "last_day": 1,
+      "train_seed_start": 68000000,
+      "train_seeds": 1,
+      "test_seed_start": 69000000,
+      "test_seeds": 1,
+      "opponents": [
+        "g001"
+      ],
+      "threads": 16,
+      "out": "/mnt/e/ai_coding/kaggle/kaggriculture/.publish/LZhangGJ_Kaggriculture/nt/latest_20260906_c3_f3_j7c3_search/runs/search_delivery_smoke"
+    },
+    "unique_plans": 28,
+    "search_games": 56,
+    "best": {
+      "plan": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "plans/p000000.txt",
+      "score": [
+        1.0,
+        1.0,
+        23860.5
+      ],
+      "train_games": [
+        {
+          "seed": 68000000,
+          "seat": 0,
+          "opponent": 0,
+          "steps": 719,
+          "cash": 94059.0,
+          "opponent_cash": 69893.0,
+          "margin": 24166.0,
+          "win": true,
+          "tie": false,
+          "error": "",
+          "seconds": 0.136411009,
+          "policy_seconds": 0.12245316100000002,
+          "enemy_seconds": 0.0026407889999999993,
+          "env_seconds": 0.0010172450000000002,
+          "model_seconds": 0.002188146,
+          "max_action_ms": 6.922066,
+          "plan_calls": 30,
+          "reference_calls": 0,
+          "execute_calls": 719,
+          "opponent_name": "g001"
+        },
+        {
+          "seed": 68000000,
+          "seat": 1,
+          "opponent": 0,
+          "steps": 719,
+          "cash": 93417.0,
+          "opponent_cash": 69862.0,
+          "margin": 23555.0,
+          "win": true,
+          "tie": false,
+          "error": "",
+          "seconds": 0.137218766,
+          "policy_seconds": 0.12367890399999998,
+          "enemy_seconds": 0.002640791,
+          "env_seconds": 0.000992971,
+          "model_seconds": 0.0021886279999999998,
+          "max_action_ms": 6.926434,
+          "plan_calls": 30,
+          "reference_calls": 0,
+          "execute_calls": 719,
+          "opponent_name": "g001"
+        }
+      ],
+      "fallbacks": 0
+    },
+    "caveat": "Only 10 single-project RL overlay choices; numeric-plan dedup, not behavior clustering. Offline hindsight labels, not online decisions."
+  },
+  "status": "PASS"
+}

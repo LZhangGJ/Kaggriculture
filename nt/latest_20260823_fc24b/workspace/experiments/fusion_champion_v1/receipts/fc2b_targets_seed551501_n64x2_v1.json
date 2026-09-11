@@ -1,0 +1,3588 @@
+{
+  "schema": "kaggriculture.fusion_champion.panel.v2",
+  "generated_at_utc": "2026-08-21T14:21:45.433549+00:00",
+  "status": "PASS",
+  "candidate": "fc2b_rank14_plus_k320_clone_aware_preempt",
+  "change": "FC1S Rank14 branch plus frozen FC2 h4/d6/cap32/q4/start120 STRAWBERRY/MILK/WOOL anti-mirror",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "seed_start": 551501,
+  "seed_count": 64,
+  "games_per_opponent": 128,
+  "seat_protocol": "same seeds with seats swapped",
+  "full_roster": false,
+  "elapsed_seconds": 286.687698821,
+  "rows": [
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "games": 128,
+      "wins": 110,
+      "ties": 0,
+      "losses": 18,
+      "score_rate": 0.859375,
+      "mean_candidate_cash": 84955.4453125,
+      "mean_opponent_cash": 84346.2890625,
+      "mean_margin": 609.15625,
+      "median_margin": 591.0,
+      "candidate_seat0_wins": 55,
+      "candidate_seat1_wins": 55,
+      "weed_repair_diagnostic": {
+        "enabled": false,
+        "mean_all": 0.0,
+        "mean_wins": 0.0,
+        "mean_losses": 0.0,
+        "hist_all": {
+          "0": 128
+        },
+        "hist_losses": {
+          "0": 18
+        }
+      },
+      "terminal_assets": {
+        "mean_shed_units_all": 0.0390625,
+        "mean_shed_units_losses": 0.2777777777777778,
+        "mean_unit_inventory_all": 0.0,
+        "mean_unit_inventory_losses": 0.0,
+        "mean_map_yield_all": 3.0546875,
+        "mean_map_yield_losses": 3.888888888888889
+      },
+      "per_game": [
+        {
+          "seed": 551501,
+          "candidate_seat": 0,
+          "candidate_cash": 89038,
+          "opponent_cash": 87620,
+          "margin": 1418,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551501,
+          "candidate_seat": 1,
+          "candidate_cash": 89038,
+          "opponent_cash": 87620,
+          "margin": 1418,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 0,
+          "candidate_cash": 77949,
+          "opponent_cash": 77548,
+          "margin": 401,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 1,
+          "candidate_cash": 77949,
+          "opponent_cash": 77548,
+          "margin": 401,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 0,
+          "candidate_cash": 101549,
+          "opponent_cash": 100940,
+          "margin": 609,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 1,
+          "candidate_cash": 101549,
+          "opponent_cash": 100940,
+          "margin": 609,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 0,
+          "candidate_cash": 55869,
+          "opponent_cash": 54921,
+          "margin": 948,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 1,
+          "candidate_cash": 55869,
+          "opponent_cash": 54921,
+          "margin": 948,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 0,
+          "candidate_cash": 110675,
+          "opponent_cash": 109257,
+          "margin": 1418,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 1,
+          "candidate_cash": 110675,
+          "opponent_cash": 109257,
+          "margin": 1418,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 0,
+          "candidate_cash": 61019,
+          "opponent_cash": 60465,
+          "margin": 554,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 1,
+          "candidate_cash": 61056,
+          "opponent_cash": 60428,
+          "margin": 628,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 0,
+          "candidate_cash": 52099,
+          "opponent_cash": 51388,
+          "margin": 711,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 1,
+          "candidate_cash": 52099,
+          "opponent_cash": 51388,
+          "margin": 711,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 0,
+          "candidate_cash": 38338,
+          "opponent_cash": 37678,
+          "margin": 660,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 1,
+          "candidate_cash": 38338,
+          "opponent_cash": 37678,
+          "margin": 660,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 0,
+          "candidate_cash": 77879,
+          "opponent_cash": 77639,
+          "margin": 240,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 1,
+          "candidate_cash": 77879,
+          "opponent_cash": 77639,
+          "margin": 240,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 0,
+          "candidate_cash": 83000,
+          "opponent_cash": 83016,
+          "margin": -16,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 1,
+          "candidate_cash": 83000,
+          "opponent_cash": 83016,
+          "margin": -16,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 0,
+          "candidate_cash": 122670,
+          "opponent_cash": 122299,
+          "margin": 371,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 1,
+          "candidate_cash": 122670,
+          "opponent_cash": 122299,
+          "margin": 371,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 0,
+          "candidate_cash": 92627,
+          "opponent_cash": 92055,
+          "margin": 572,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 1,
+          "candidate_cash": 92719,
+          "opponent_cash": 91963,
+          "margin": 756,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 0,
+          "candidate_cash": 131711,
+          "opponent_cash": 131111,
+          "margin": 600,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 1,
+          "candidate_cash": 131711,
+          "opponent_cash": 131111,
+          "margin": 600,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 0,
+          "candidate_cash": 65686,
+          "opponent_cash": 64954,
+          "margin": 732,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 1,
+          "candidate_cash": 65598,
+          "opponent_cash": 65042,
+          "margin": 556,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 0,
+          "candidate_cash": 39914,
+          "opponent_cash": 39600,
+          "margin": 314,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 1,
+          "candidate_cash": 40195,
+          "opponent_cash": 39319,
+          "margin": 876,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 0,
+          "candidate_cash": 69667,
+          "opponent_cash": 69227,
+          "margin": 440,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 1,
+          "candidate_cash": 69667,
+          "opponent_cash": 69227,
+          "margin": 440,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 0,
+          "candidate_cash": 92349,
+          "opponent_cash": 96154,
+          "margin": -3805,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 1,
+          "candidate_cash": 96660,
+          "opponent_cash": 91843,
+          "margin": 4817,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 0,
+          "candidate_cash": 108365,
+          "opponent_cash": 107917,
+          "margin": 448,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 1,
+          "candidate_cash": 108365,
+          "opponent_cash": 107917,
+          "margin": 448,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 0,
+          "candidate_cash": 100992,
+          "opponent_cash": 100876,
+          "margin": 116,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 1,
+          "candidate_cash": 100992,
+          "opponent_cash": 100876,
+          "margin": 116,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 0,
+          "candidate_cash": 84228,
+          "opponent_cash": 81071,
+          "margin": 3157,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 1,
+          "candidate_cash": 81621,
+          "opponent_cash": 83705,
+          "margin": -2084,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 0,
+          "candidate_cash": 86718,
+          "opponent_cash": 86288,
+          "margin": 430,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 1,
+          "candidate_cash": 86718,
+          "opponent_cash": 86288,
+          "margin": 430,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 0,
+          "candidate_cash": 50198,
+          "opponent_cash": 49625,
+          "margin": 573,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 1,
+          "candidate_cash": 50198,
+          "opponent_cash": 49625,
+          "margin": 573,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 0,
+          "candidate_cash": 78408,
+          "opponent_cash": 76918,
+          "margin": 1490,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 1,
+          "candidate_cash": 78408,
+          "opponent_cash": 76918,
+          "margin": 1490,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 0,
+          "candidate_cash": 60843,
+          "opponent_cash": 60385,
+          "margin": 458,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 1,
+          "candidate_cash": 61944,
+          "opponent_cash": 59280,
+          "margin": 2664,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 0,
+          "candidate_cash": 96817,
+          "opponent_cash": 95855,
+          "margin": 962,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 1,
+          "candidate_cash": 96188,
+          "opponent_cash": 96460,
+          "margin": -272,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 0,
+          "candidate_cash": 65304,
+          "opponent_cash": 64642,
+          "margin": 662,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 1,
+          "candidate_cash": 65304,
+          "opponent_cash": 64642,
+          "margin": 662,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 0,
+          "candidate_cash": 92978,
+          "opponent_cash": 92357,
+          "margin": 621,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 1,
+          "candidate_cash": 92978,
+          "opponent_cash": 92357,
+          "margin": 621,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 0,
+          "candidate_cash": 70807,
+          "opponent_cash": 70035,
+          "margin": 772,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 1,
+          "candidate_cash": 70806,
+          "opponent_cash": 70036,
+          "margin": 770,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 0,
+          "candidate_cash": 139065,
+          "opponent_cash": 140101,
+          "margin": -1036,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 1,
+          "candidate_cash": 140056,
+          "opponent_cash": 139100,
+          "margin": 956,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 0,
+          "candidate_cash": 97310,
+          "opponent_cash": 96637,
+          "margin": 673,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 1,
+          "candidate_cash": 97310,
+          "opponent_cash": 96637,
+          "margin": 673,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 0,
+          "candidate_cash": 91214,
+          "opponent_cash": 89644,
+          "margin": 1570,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 1,
+          "candidate_cash": 91214,
+          "opponent_cash": 89644,
+          "margin": 1570,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 0,
+          "candidate_cash": 95062,
+          "opponent_cash": 94473,
+          "margin": 589,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 1,
+          "candidate_cash": 95062,
+          "opponent_cash": 94473,
+          "margin": 589,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 0,
+          "candidate_cash": 129394,
+          "opponent_cash": 150565,
+          "margin": -21171,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 1,
+          "candidate_cash": 150914,
+          "opponent_cash": 129014,
+          "margin": 21900,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 0,
+          "candidate_cash": 87807,
+          "opponent_cash": 87353,
+          "margin": 454,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 1,
+          "candidate_cash": 87807,
+          "opponent_cash": 87353,
+          "margin": 454,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 0,
+          "candidate_cash": 38500,
+          "opponent_cash": 36388,
+          "margin": 2112,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 1,
+          "candidate_cash": 37065,
+          "opponent_cash": 37823,
+          "margin": -758,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 0,
+          "candidate_cash": 81025,
+          "opponent_cash": 76477,
+          "margin": 4548,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 1,
+          "candidate_cash": 77097,
+          "opponent_cash": 80432,
+          "margin": -3335,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 0,
+          "candidate_cash": 74980,
+          "opponent_cash": 73254,
+          "margin": 1726,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 1,
+          "candidate_cash": 73862,
+          "opponent_cash": 74378,
+          "margin": -516,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 0,
+          "candidate_cash": 94049,
+          "opponent_cash": 93607,
+          "margin": 442,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 1,
+          "candidate_cash": 94049,
+          "opponent_cash": 93607,
+          "margin": 442,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 0,
+          "candidate_cash": 91205,
+          "opponent_cash": 91048,
+          "margin": 157,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 1,
+          "candidate_cash": 91513,
+          "opponent_cash": 90740,
+          "margin": 773,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 0,
+          "candidate_cash": 55965,
+          "opponent_cash": 55304,
+          "margin": 661,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 1,
+          "candidate_cash": 55965,
+          "opponent_cash": 55304,
+          "margin": 661,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 0,
+          "candidate_cash": 88386,
+          "opponent_cash": 88301,
+          "margin": 85,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 1,
+          "candidate_cash": 88579,
+          "opponent_cash": 88108,
+          "margin": 471,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 0,
+          "candidate_cash": 63813,
+          "opponent_cash": 63538,
+          "margin": 275,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 1,
+          "candidate_cash": 63813,
+          "opponent_cash": 63538,
+          "margin": 275,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 0,
+          "candidate_cash": 108847,
+          "opponent_cash": 118456,
+          "margin": -9609,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 1,
+          "candidate_cash": 119497,
+          "opponent_cash": 107781,
+          "margin": 11716,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 0,
+          "candidate_cash": 70169,
+          "opponent_cash": 69501,
+          "margin": 668,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 1,
+          "candidate_cash": 70169,
+          "opponent_cash": 69501,
+          "margin": 668,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 0,
+          "candidate_cash": 107016,
+          "opponent_cash": 106454,
+          "margin": 562,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 1,
+          "candidate_cash": 107016,
+          "opponent_cash": 106454,
+          "margin": 562,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 0,
+          "candidate_cash": 78410,
+          "opponent_cash": 75408,
+          "margin": 3002,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 1,
+          "candidate_cash": 76810,
+          "opponent_cash": 77030,
+          "margin": -220,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 0,
+          "candidate_cash": 60918,
+          "opponent_cash": 61416,
+          "margin": -498,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 1,
+          "candidate_cash": 62012,
+          "opponent_cash": 60322,
+          "margin": 1690,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 0,
+          "candidate_cash": 82330,
+          "opponent_cash": 82253,
+          "margin": 77,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 1,
+          "candidate_cash": 82330,
+          "opponent_cash": 82253,
+          "margin": 77,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 0,
+          "candidate_cash": 90942,
+          "opponent_cash": 90462,
+          "margin": 480,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 1,
+          "candidate_cash": 90942,
+          "opponent_cash": 90462,
+          "margin": 480,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 0,
+          "candidate_cash": 80522,
+          "opponent_cash": 76190,
+          "margin": 4332,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 1,
+          "candidate_cash": 77270,
+          "opponent_cash": 79392,
+          "margin": -2122,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 0,
+          "candidate_cash": 58885,
+          "opponent_cash": 58535,
+          "margin": 350,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 1,
+          "candidate_cash": 58885,
+          "opponent_cash": 58535,
+          "margin": 350,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 0,
+          "candidate_cash": 54011,
+          "opponent_cash": 53377,
+          "margin": 634,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 1,
+          "candidate_cash": 54011,
+          "opponent_cash": 53377,
+          "margin": 634,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 0,
+          "candidate_cash": 89108,
+          "opponent_cash": 90003,
+          "margin": -895,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 1,
+          "candidate_cash": 90538,
+          "opponent_cash": 88573,
+          "margin": 1965,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 0,
+          "candidate_cash": 91549,
+          "opponent_cash": 91143,
+          "margin": 406,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 1,
+          "candidate_cash": 91549,
+          "opponent_cash": 91143,
+          "margin": 406,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 0,
+          "candidate_cash": 138897,
+          "opponent_cash": 138967,
+          "margin": -70,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 1,
+          "candidate_cash": 138897,
+          "opponent_cash": 138967,
+          "margin": -70,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 0,
+          "candidate_cash": 98001,
+          "opponent_cash": 97405,
+          "margin": 596,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 1,
+          "candidate_cash": 98001,
+          "opponent_cash": 97405,
+          "margin": 596,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 0,
+          "candidate_cash": 72157,
+          "opponent_cash": 71461,
+          "margin": 696,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 1,
+          "candidate_cash": 72157,
+          "opponent_cash": 71461,
+          "margin": 696,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 0,
+          "candidate_cash": 73705,
+          "opponent_cash": 73112,
+          "margin": 593,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 1,
+          "candidate_cash": 73705,
+          "opponent_cash": 73112,
+          "margin": 593,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 0,
+          "candidate_cash": 150585,
+          "opponent_cash": 152661,
+          "margin": -2076,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 1,
+          "candidate_cash": 152906,
+          "opponent_cash": 150334,
+          "margin": 2572,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 0,
+          "candidate_cash": 78202,
+          "opponent_cash": 78193,
+          "margin": 9,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 1,
+          "candidate_cash": 78203,
+          "opponent_cash": 78192,
+          "margin": 11,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 0,
+          "candidate_cash": 91024,
+          "opponent_cash": 90347,
+          "margin": 677,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 1,
+          "candidate_cash": 91024,
+          "opponent_cash": 90347,
+          "margin": 677,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 0,
+          "candidate_cash": 68547,
+          "opponent_cash": 68370,
+          "margin": 177,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 1,
+          "candidate_cash": 68527,
+          "opponent_cash": 68390,
+          "margin": 137,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 0,
+          "candidate_cash": 107488,
+          "opponent_cash": 106889,
+          "margin": 599,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 1,
+          "candidate_cash": 107489,
+          "opponent_cash": 106888,
+          "margin": 601,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 0,
+          "candidate_cash": 85537,
+          "opponent_cash": 83889,
+          "margin": 1648,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 1,
+          "candidate_cash": 85537,
+          "opponent_cash": 83889,
+          "margin": 1648,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "opponent": "gold_proxy_rank12_ai_b2b67_saas",
+      "games": 128,
+      "wins": 107,
+      "ties": 0,
+      "losses": 21,
+      "score_rate": 0.8359375,
+      "mean_candidate_cash": 92105.7890625,
+      "mean_opponent_cash": 86630.53125,
+      "mean_margin": 5475.2578125,
+      "median_margin": 4475.5,
+      "candidate_seat0_wins": 53,
+      "candidate_seat1_wins": 54,
+      "weed_repair_diagnostic": {
+        "enabled": false,
+        "mean_all": 0.0,
+        "mean_wins": 0.0,
+        "mean_losses": 0.0,
+        "hist_all": {
+          "0": 128
+        },
+        "hist_losses": {
+          "0": 21
+        }
+      },
+      "terminal_assets": {
+        "mean_shed_units_all": 0.0546875,
+        "mean_shed_units_losses": 0.3333333333333333,
+        "mean_unit_inventory_all": 0.0,
+        "mean_unit_inventory_losses": 0.0,
+        "mean_map_yield_all": 3.0625,
+        "mean_map_yield_losses": 4.095238095238095
+      },
+      "per_game": [
+        {
+          "seed": 551501,
+          "candidate_seat": 0,
+          "candidate_cash": 66194,
+          "opponent_cash": 62263,
+          "margin": 3931,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551501,
+          "candidate_seat": 1,
+          "candidate_cash": 65952,
+          "opponent_cash": 62940,
+          "margin": 3012,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 0,
+          "candidate_cash": 86542,
+          "opponent_cash": 87770,
+          "margin": -1228,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 1,
+          "candidate_cash": 86542,
+          "opponent_cash": 87770,
+          "margin": -1228,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 0,
+          "candidate_cash": 76604,
+          "opponent_cash": 73440,
+          "margin": 3164,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 1,
+          "candidate_cash": 76604,
+          "opponent_cash": 73440,
+          "margin": 3164,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 0,
+          "candidate_cash": 57256,
+          "opponent_cash": 57807,
+          "margin": -551,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 1,
+          "candidate_cash": 56486,
+          "opponent_cash": 58017,
+          "margin": -1531,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 0,
+          "candidate_cash": 130603,
+          "opponent_cash": 111987,
+          "margin": 18616,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 1,
+          "candidate_cash": 130603,
+          "opponent_cash": 111987,
+          "margin": 18616,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 0,
+          "candidate_cash": 59622,
+          "opponent_cash": 63183,
+          "margin": -3561,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 1,
+          "candidate_cash": 59624,
+          "opponent_cash": 63130,
+          "margin": -3506,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 0,
+          "candidate_cash": 64780,
+          "opponent_cash": 65559,
+          "margin": -779,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 1,
+          "candidate_cash": 64780,
+          "opponent_cash": 65559,
+          "margin": -779,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 0,
+          "candidate_cash": 74544,
+          "opponent_cash": 71579,
+          "margin": 2965,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 1,
+          "candidate_cash": 74544,
+          "opponent_cash": 71579,
+          "margin": 2965,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 0,
+          "candidate_cash": 71078,
+          "opponent_cash": 66932,
+          "margin": 4146,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 1,
+          "candidate_cash": 70794,
+          "opponent_cash": 66215,
+          "margin": 4579,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 0,
+          "candidate_cash": 53145,
+          "opponent_cash": 58783,
+          "margin": -5638,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 1,
+          "candidate_cash": 53241,
+          "opponent_cash": 58695,
+          "margin": -5454,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 0,
+          "candidate_cash": 162942,
+          "opponent_cash": 152963,
+          "margin": 9979,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 1,
+          "candidate_cash": 143874,
+          "opponent_cash": 137068,
+          "margin": 6806,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 0,
+          "candidate_cash": 82813,
+          "opponent_cash": 78068,
+          "margin": 4745,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 1,
+          "candidate_cash": 99535,
+          "opponent_cash": 95655,
+          "margin": 3880,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 0,
+          "candidate_cash": 142454,
+          "opponent_cash": 135577,
+          "margin": 6877,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 1,
+          "candidate_cash": 146037,
+          "opponent_cash": 138979,
+          "margin": 7058,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 0,
+          "candidate_cash": 73100,
+          "opponent_cash": 68493,
+          "margin": 4607,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 1,
+          "candidate_cash": 73008,
+          "opponent_cash": 68493,
+          "margin": 4515,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 0,
+          "candidate_cash": 71546,
+          "opponent_cash": 54864,
+          "margin": 16682,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 1,
+          "candidate_cash": 71507,
+          "opponent_cash": 54088,
+          "margin": 17419,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 0,
+          "candidate_cash": 131553,
+          "opponent_cash": 127657,
+          "margin": 3896,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 1,
+          "candidate_cash": 131553,
+          "opponent_cash": 127657,
+          "margin": 3896,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 0,
+          "candidate_cash": 84387,
+          "opponent_cash": 88263,
+          "margin": -3876,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 1,
+          "candidate_cash": 88432,
+          "opponent_cash": 88170,
+          "margin": 262,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 0,
+          "candidate_cash": 99424,
+          "opponent_cash": 87782,
+          "margin": 11642,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 1,
+          "candidate_cash": 99424,
+          "opponent_cash": 87782,
+          "margin": 11642,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 0,
+          "candidate_cash": 86472,
+          "opponent_cash": 81819,
+          "margin": 4653,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 1,
+          "candidate_cash": 86472,
+          "opponent_cash": 81927,
+          "margin": 4545,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 0,
+          "candidate_cash": 113578,
+          "opponent_cash": 107321,
+          "margin": 6257,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 1,
+          "candidate_cash": 111670,
+          "opponent_cash": 108575,
+          "margin": 3095,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 0,
+          "candidate_cash": 80649,
+          "opponent_cash": 75691,
+          "margin": 4958,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 1,
+          "candidate_cash": 80649,
+          "opponent_cash": 75691,
+          "margin": 4958,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 0,
+          "candidate_cash": 54962,
+          "opponent_cash": 54106,
+          "margin": 856,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 1,
+          "candidate_cash": 55460,
+          "opponent_cash": 53806,
+          "margin": 1654,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 0,
+          "candidate_cash": 123484,
+          "opponent_cash": 97634,
+          "margin": 25850,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 1,
+          "candidate_cash": 123486,
+          "opponent_cash": 97552,
+          "margin": 25934,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 0,
+          "candidate_cash": 82120,
+          "opponent_cash": 77660,
+          "margin": 4460,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 1,
+          "candidate_cash": 83861,
+          "opponent_cash": 75943,
+          "margin": 7918,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 0,
+          "candidate_cash": 86361,
+          "opponent_cash": 81180,
+          "margin": 5181,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 1,
+          "candidate_cash": 86073,
+          "opponent_cash": 82309,
+          "margin": 3764,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 0,
+          "candidate_cash": 112081,
+          "opponent_cash": 106941,
+          "margin": 5140,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 1,
+          "candidate_cash": 112081,
+          "opponent_cash": 106941,
+          "margin": 5140,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 0,
+          "candidate_cash": 90204,
+          "opponent_cash": 85637,
+          "margin": 4567,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 1,
+          "candidate_cash": 91402,
+          "opponent_cash": 85845,
+          "margin": 5557,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 0,
+          "candidate_cash": 87513,
+          "opponent_cash": 83465,
+          "margin": 4048,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 1,
+          "candidate_cash": 87514,
+          "opponent_cash": 83421,
+          "margin": 4093,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 0,
+          "candidate_cash": 102472,
+          "opponent_cash": 101730,
+          "margin": 742,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 1,
+          "candidate_cash": 99902,
+          "opponent_cash": 101013,
+          "margin": -1111,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 0,
+          "candidate_cash": 105624,
+          "opponent_cash": 103804,
+          "margin": 1820,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 1,
+          "candidate_cash": 105624,
+          "opponent_cash": 103804,
+          "margin": 1820,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 0,
+          "candidate_cash": 125444,
+          "opponent_cash": 120709,
+          "margin": 4735,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 1,
+          "candidate_cash": 125444,
+          "opponent_cash": 120709,
+          "margin": 4735,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 0,
+          "candidate_cash": 124395,
+          "opponent_cash": 119993,
+          "margin": 4402,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 1,
+          "candidate_cash": 124395,
+          "opponent_cash": 119993,
+          "margin": 4402,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 0,
+          "candidate_cash": 119853,
+          "opponent_cash": 141133,
+          "margin": -21280,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 1,
+          "candidate_cash": 135214,
+          "opponent_cash": 126602,
+          "margin": 8612,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 0,
+          "candidate_cash": 62368,
+          "opponent_cash": 62545,
+          "margin": -177,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 1,
+          "candidate_cash": 70325,
+          "opponent_cash": 71418,
+          "margin": -1093,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 0,
+          "candidate_cash": 55237,
+          "opponent_cash": 53777,
+          "margin": 1460,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 1,
+          "candidate_cash": 53568,
+          "opponent_cash": 55637,
+          "margin": -2069,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 0,
+          "candidate_cash": 98903,
+          "opponent_cash": 92972,
+          "margin": 5931,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 1,
+          "candidate_cash": 97996,
+          "opponent_cash": 93505,
+          "margin": 4491,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 0,
+          "candidate_cash": 72374,
+          "opponent_cash": 66860,
+          "margin": 5514,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 1,
+          "candidate_cash": 71192,
+          "opponent_cash": 67934,
+          "margin": 3258,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 0,
+          "candidate_cash": 100143,
+          "opponent_cash": 96703,
+          "margin": 3440,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 1,
+          "candidate_cash": 100143,
+          "opponent_cash": 96703,
+          "margin": 3440,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 0,
+          "candidate_cash": 85429,
+          "opponent_cash": 86162,
+          "margin": -733,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 1,
+          "candidate_cash": 85729,
+          "opponent_cash": 86160,
+          "margin": -431,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 0,
+          "candidate_cash": 83820,
+          "opponent_cash": 66022,
+          "margin": 17798,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 1,
+          "candidate_cash": 83820,
+          "opponent_cash": 66022,
+          "margin": 17798,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 0,
+          "candidate_cash": 95417,
+          "opponent_cash": 92896,
+          "margin": 2521,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 1,
+          "candidate_cash": 80785,
+          "opponent_cash": 77448,
+          "margin": 3337,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 0,
+          "candidate_cash": 53508,
+          "opponent_cash": 48757,
+          "margin": 4751,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 1,
+          "candidate_cash": 53508,
+          "opponent_cash": 48757,
+          "margin": 4751,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 0,
+          "candidate_cash": 115116,
+          "opponent_cash": 105315,
+          "margin": 9801,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 1,
+          "candidate_cash": 118772,
+          "opponent_cash": 116249,
+          "margin": 2523,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 0,
+          "candidate_cash": 84101,
+          "opponent_cash": 88129,
+          "margin": -4028,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 1,
+          "candidate_cash": 84101,
+          "opponent_cash": 88129,
+          "margin": -4028,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 0,
+          "candidate_cash": 126442,
+          "opponent_cash": 121611,
+          "margin": 4831,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 1,
+          "candidate_cash": 126442,
+          "opponent_cash": 121611,
+          "margin": 4831,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 0,
+          "candidate_cash": 130620,
+          "opponent_cash": 96791,
+          "margin": 33829,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 1,
+          "candidate_cash": 128600,
+          "opponent_cash": 104009,
+          "margin": 24591,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 0,
+          "candidate_cash": 79627,
+          "opponent_cash": 74328,
+          "margin": 5299,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 1,
+          "candidate_cash": 80307,
+          "opponent_cash": 73487,
+          "margin": 6820,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 0,
+          "candidate_cash": 85018,
+          "opponent_cash": 63857,
+          "margin": 21161,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 1,
+          "candidate_cash": 85018,
+          "opponent_cash": 63857,
+          "margin": 21161,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 0,
+          "candidate_cash": 74260,
+          "opponent_cash": 67672,
+          "margin": 6588,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 1,
+          "candidate_cash": 74260,
+          "opponent_cash": 67672,
+          "margin": 6588,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 0,
+          "candidate_cash": 82814,
+          "opponent_cash": 70501,
+          "margin": 12313,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 1,
+          "candidate_cash": 80748,
+          "opponent_cash": 74943,
+          "margin": 5805,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 0,
+          "candidate_cash": 120674,
+          "opponent_cash": 115427,
+          "margin": 5247,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 1,
+          "candidate_cash": 120674,
+          "opponent_cash": 115427,
+          "margin": 5247,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 0,
+          "candidate_cash": 70869,
+          "opponent_cash": 68885,
+          "margin": 1984,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 1,
+          "candidate_cash": 70869,
+          "opponent_cash": 68885,
+          "margin": 1984,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 0,
+          "candidate_cash": 67613,
+          "opponent_cash": 65890,
+          "margin": 1723,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 1,
+          "candidate_cash": 67901,
+          "opponent_cash": 65876,
+          "margin": 2025,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 0,
+          "candidate_cash": 105654,
+          "opponent_cash": 91760,
+          "margin": 13894,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 1,
+          "candidate_cash": 106581,
+          "opponent_cash": 93030,
+          "margin": 13551,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 0,
+          "candidate_cash": 137355,
+          "opponent_cash": 118270,
+          "margin": 19085,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 1,
+          "candidate_cash": 137355,
+          "opponent_cash": 118270,
+          "margin": 19085,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 0,
+          "candidate_cash": 108797,
+          "opponent_cash": 106048,
+          "margin": 2749,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 1,
+          "candidate_cash": 108797,
+          "opponent_cash": 106048,
+          "margin": 2749,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 0,
+          "candidate_cash": 88117,
+          "opponent_cash": 83931,
+          "margin": 4186,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 1,
+          "candidate_cash": 88117,
+          "opponent_cash": 83931,
+          "margin": 4186,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 0,
+          "candidate_cash": 47611,
+          "opponent_cash": 44705,
+          "margin": 2906,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 1,
+          "candidate_cash": 46094,
+          "opponent_cash": 44173,
+          "margin": 1921,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 0,
+          "candidate_cash": 100258,
+          "opponent_cash": 102147,
+          "margin": -1889,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 1,
+          "candidate_cash": 112109,
+          "opponent_cash": 104813,
+          "margin": 7296,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 0,
+          "candidate_cash": 83796,
+          "opponent_cash": 75670,
+          "margin": 8126,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 1,
+          "candidate_cash": 83961,
+          "opponent_cash": 75578,
+          "margin": 8383,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 0,
+          "candidate_cash": 62510,
+          "opponent_cash": 58867,
+          "margin": 3643,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 1,
+          "candidate_cash": 62510,
+          "opponent_cash": 58867,
+          "margin": 3643,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 0,
+          "candidate_cash": 106674,
+          "opponent_cash": 96604,
+          "margin": 10070,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 1,
+          "candidate_cash": 118051,
+          "opponent_cash": 109437,
+          "margin": 8614,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 0,
+          "candidate_cash": 96070,
+          "opponent_cash": 94526,
+          "margin": 1544,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 1,
+          "candidate_cash": 96991,
+          "opponent_cash": 90200,
+          "margin": 6791,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 0,
+          "candidate_cash": 113718,
+          "opponent_cash": 104928,
+          "margin": 8790,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 1,
+          "candidate_cash": 113718,
+          "opponent_cash": 104928,
+          "margin": 8790,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "opponent": "local_prt_v6",
+      "games": 128,
+      "wins": 116,
+      "ties": 0,
+      "losses": 12,
+      "score_rate": 0.90625,
+      "mean_candidate_cash": 91209.796875,
+      "mean_opponent_cash": 87089.2890625,
+      "mean_margin": 4120.5078125,
+      "median_margin": 3601.0,
+      "candidate_seat0_wins": 57,
+      "candidate_seat1_wins": 59,
+      "weed_repair_diagnostic": {
+        "enabled": false,
+        "mean_all": 0.0,
+        "mean_wins": 0.0,
+        "mean_losses": 0.0,
+        "hist_all": {
+          "0": 128
+        },
+        "hist_losses": {
+          "0": 12
+        }
+      },
+      "terminal_assets": {
+        "mean_shed_units_all": 0.0390625,
+        "mean_shed_units_losses": 0.4166666666666667,
+        "mean_unit_inventory_all": 0.0,
+        "mean_unit_inventory_losses": 0.0,
+        "mean_map_yield_all": 2.8671875,
+        "mean_map_yield_losses": 2.0833333333333335
+      },
+      "per_game": [
+        {
+          "seed": 551501,
+          "candidate_seat": 0,
+          "candidate_cash": 55872,
+          "opponent_cash": 51812,
+          "margin": 4060,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551501,
+          "candidate_seat": 1,
+          "candidate_cash": 55917,
+          "opponent_cash": 51933,
+          "margin": 3984,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 0,
+          "candidate_cash": 80491,
+          "opponent_cash": 82911,
+          "margin": -2420,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551502,
+          "candidate_seat": 1,
+          "candidate_cash": 81713,
+          "opponent_cash": 84378,
+          "margin": -2665,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 0,
+          "candidate_cash": 66882,
+          "opponent_cash": 64132,
+          "margin": 2750,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551503,
+          "candidate_seat": 1,
+          "candidate_cash": 66882,
+          "opponent_cash": 64132,
+          "margin": 2750,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 0,
+          "candidate_cash": 43087,
+          "opponent_cash": 41170,
+          "margin": 1917,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551504,
+          "candidate_seat": 1,
+          "candidate_cash": 45195,
+          "opponent_cash": 44698,
+          "margin": 497,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 0,
+          "candidate_cash": 98272,
+          "opponent_cash": 94732,
+          "margin": 3540,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551505,
+          "candidate_seat": 1,
+          "candidate_cash": 95217,
+          "opponent_cash": 89524,
+          "margin": 5693,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 0,
+          "candidate_cash": 60147,
+          "opponent_cash": 58857,
+          "margin": 1290,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551506,
+          "candidate_seat": 1,
+          "candidate_cash": 60077,
+          "opponent_cash": 59185,
+          "margin": 892,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 0,
+          "candidate_cash": 80635,
+          "opponent_cash": 71392,
+          "margin": 9243,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551507,
+          "candidate_seat": 1,
+          "candidate_cash": 80635,
+          "opponent_cash": 71392,
+          "margin": 9243,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 0,
+          "candidate_cash": 64179,
+          "opponent_cash": 56978,
+          "margin": 7201,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551508,
+          "candidate_seat": 1,
+          "candidate_cash": 59857,
+          "opponent_cash": 53774,
+          "margin": 6083,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 0,
+          "candidate_cash": 58618,
+          "opponent_cash": 56995,
+          "margin": 1623,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551509,
+          "candidate_seat": 1,
+          "candidate_cash": 73703,
+          "opponent_cash": 72364,
+          "margin": 1339,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 0,
+          "candidate_cash": 77271,
+          "opponent_cash": 55633,
+          "margin": 21638,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551510,
+          "candidate_seat": 1,
+          "candidate_cash": 77986,
+          "opponent_cash": 56602,
+          "margin": 21384,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 0,
+          "candidate_cash": 126081,
+          "opponent_cash": 122148,
+          "margin": 3933,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551511,
+          "candidate_seat": 1,
+          "candidate_cash": 117314,
+          "opponent_cash": 114149,
+          "margin": 3165,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 0,
+          "candidate_cash": 103199,
+          "opponent_cash": 99393,
+          "margin": 3806,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551512,
+          "candidate_seat": 1,
+          "candidate_cash": 113888,
+          "opponent_cash": 110765,
+          "margin": 3123,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 0,
+          "candidate_cash": 146128,
+          "opponent_cash": 143827,
+          "margin": 2301,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551513,
+          "candidate_seat": 1,
+          "candidate_cash": 146128,
+          "opponent_cash": 143827,
+          "margin": 2301,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 0,
+          "candidate_cash": 93215,
+          "opponent_cash": 81084,
+          "margin": 12131,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551514,
+          "candidate_seat": 1,
+          "candidate_cash": 93215,
+          "opponent_cash": 81084,
+          "margin": 12131,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 0,
+          "candidate_cash": 67114,
+          "opponent_cash": 68100,
+          "margin": -986,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551515,
+          "candidate_seat": 1,
+          "candidate_cash": 68869,
+          "opponent_cash": 66757,
+          "margin": 2112,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 0,
+          "candidate_cash": 111076,
+          "opponent_cash": 106431,
+          "margin": 4645,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551516,
+          "candidate_seat": 1,
+          "candidate_cash": 111076,
+          "opponent_cash": 106431,
+          "margin": 4645,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 0,
+          "candidate_cash": 54389,
+          "opponent_cash": 56166,
+          "margin": -1777,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551517,
+          "candidate_seat": 1,
+          "candidate_cash": 55715,
+          "opponent_cash": 56141,
+          "margin": -426,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 0,
+          "candidate_cash": 125428,
+          "opponent_cash": 121822,
+          "margin": 3606,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551518,
+          "candidate_seat": 1,
+          "candidate_cash": 125428,
+          "opponent_cash": 121822,
+          "margin": 3606,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 0,
+          "candidate_cash": 125765,
+          "opponent_cash": 105861,
+          "margin": 19904,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551519,
+          "candidate_seat": 1,
+          "candidate_cash": 125764,
+          "opponent_cash": 105861,
+          "margin": 19903,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 0,
+          "candidate_cash": 111738,
+          "opponent_cash": 107370,
+          "margin": 4368,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551520,
+          "candidate_seat": 1,
+          "candidate_cash": 102686,
+          "opponent_cash": 102181,
+          "margin": 505,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 0,
+          "candidate_cash": 97522,
+          "opponent_cash": 94355,
+          "margin": 3167,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551521,
+          "candidate_seat": 1,
+          "candidate_cash": 97522,
+          "opponent_cash": 94355,
+          "margin": 3167,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 0,
+          "candidate_cash": 76385,
+          "opponent_cash": 73852,
+          "margin": 2533,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551522,
+          "candidate_seat": 1,
+          "candidate_cash": 76385,
+          "opponent_cash": 73852,
+          "margin": 2533,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 0,
+          "candidate_cash": 91116,
+          "opponent_cash": 88933,
+          "margin": 2183,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551523,
+          "candidate_seat": 1,
+          "candidate_cash": 91116,
+          "opponent_cash": 88933,
+          "margin": 2183,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 0,
+          "candidate_cash": 78824,
+          "opponent_cash": 78394,
+          "margin": 430,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551524,
+          "candidate_seat": 1,
+          "candidate_cash": 80296,
+          "opponent_cash": 76908,
+          "margin": 3388,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 0,
+          "candidate_cash": 94153,
+          "opponent_cash": 90351,
+          "margin": 3802,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551525,
+          "candidate_seat": 1,
+          "candidate_cash": 101821,
+          "opponent_cash": 100139,
+          "margin": 1682,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 0,
+          "candidate_cash": 145029,
+          "opponent_cash": 142946,
+          "margin": 2083,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551526,
+          "candidate_seat": 1,
+          "candidate_cash": 145029,
+          "opponent_cash": 142946,
+          "margin": 2083,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 0,
+          "candidate_cash": 91676,
+          "opponent_cash": 85439,
+          "margin": 6237,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551527,
+          "candidate_seat": 1,
+          "candidate_cash": 91676,
+          "opponent_cash": 85439,
+          "margin": 6237,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 0,
+          "candidate_cash": 96465,
+          "opponent_cash": 90035,
+          "margin": 6430,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551528,
+          "candidate_seat": 1,
+          "candidate_cash": 96465,
+          "opponent_cash": 90035,
+          "margin": 6430,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 0,
+          "candidate_cash": 106022,
+          "opponent_cash": 105137,
+          "margin": 885,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551529,
+          "candidate_seat": 1,
+          "candidate_cash": 110741,
+          "opponent_cash": 107307,
+          "margin": 3434,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 0,
+          "candidate_cash": 122480,
+          "opponent_cash": 120114,
+          "margin": 2366,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551530,
+          "candidate_seat": 1,
+          "candidate_cash": 123704,
+          "opponent_cash": 120611,
+          "margin": 3093,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 0,
+          "candidate_cash": 107979,
+          "opponent_cash": 103656,
+          "margin": 4323,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551531,
+          "candidate_seat": 1,
+          "candidate_cash": 107979,
+          "opponent_cash": 103656,
+          "margin": 4323,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 0,
+          "candidate_cash": 110092,
+          "opponent_cash": 105731,
+          "margin": 4361,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551532,
+          "candidate_seat": 1,
+          "candidate_cash": 110092,
+          "opponent_cash": 105731,
+          "margin": 4361,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 0,
+          "candidate_cash": 111608,
+          "opponent_cash": 122890,
+          "margin": -11282,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551533,
+          "candidate_seat": 1,
+          "candidate_cash": 126374,
+          "opponent_cash": 116147,
+          "margin": 10227,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 0,
+          "candidate_cash": 84105,
+          "opponent_cash": 78407,
+          "margin": 5698,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551534,
+          "candidate_seat": 1,
+          "candidate_cash": 82623,
+          "opponent_cash": 78967,
+          "margin": 3656,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 0,
+          "candidate_cash": 52528,
+          "opponent_cash": 50659,
+          "margin": 1869,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551535,
+          "candidate_seat": 1,
+          "candidate_cash": 55040,
+          "opponent_cash": 54368,
+          "margin": 672,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 0,
+          "candidate_cash": 89221,
+          "opponent_cash": 83692,
+          "margin": 5529,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551536,
+          "candidate_seat": 1,
+          "candidate_cash": 96873,
+          "opponent_cash": 97511,
+          "margin": -638,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 0,
+          "candidate_cash": 70260,
+          "opponent_cash": 62726,
+          "margin": 7534,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551537,
+          "candidate_seat": 1,
+          "candidate_cash": 69298,
+          "opponent_cash": 63795,
+          "margin": 5503,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 0,
+          "candidate_cash": 84883,
+          "opponent_cash": 81428,
+          "margin": 3455,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551538,
+          "candidate_seat": 1,
+          "candidate_cash": 87009,
+          "opponent_cash": 83573,
+          "margin": 3436,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 0,
+          "candidate_cash": 54915,
+          "opponent_cash": 56170,
+          "margin": -1255,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551539,
+          "candidate_seat": 1,
+          "candidate_cash": 55242,
+          "opponent_cash": 56167,
+          "margin": -925,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 0,
+          "candidate_cash": 78903,
+          "opponent_cash": 70758,
+          "margin": 8145,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551540,
+          "candidate_seat": 1,
+          "candidate_cash": 78903,
+          "opponent_cash": 70758,
+          "margin": 8145,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 0,
+          "candidate_cash": 76086,
+          "opponent_cash": 72077,
+          "margin": 4009,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551541,
+          "candidate_seat": 1,
+          "candidate_cash": 65896,
+          "opponent_cash": 64699,
+          "margin": 1197,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 0,
+          "candidate_cash": 51996,
+          "opponent_cash": 50226,
+          "margin": 1770,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551542,
+          "candidate_seat": 1,
+          "candidate_cash": 51996,
+          "opponent_cash": 50226,
+          "margin": 1770,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 0,
+          "candidate_cash": 141450,
+          "opponent_cash": 149999,
+          "margin": -8549,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551543,
+          "candidate_seat": 1,
+          "candidate_cash": 131685,
+          "opponent_cash": 127351,
+          "margin": 4334,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 0,
+          "candidate_cash": 106917,
+          "opponent_cash": 102660,
+          "margin": 4257,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551544,
+          "candidate_seat": 1,
+          "candidate_cash": 106917,
+          "opponent_cash": 102660,
+          "margin": 4257,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 0,
+          "candidate_cash": 125411,
+          "opponent_cash": 122382,
+          "margin": 3029,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551545,
+          "candidate_seat": 1,
+          "candidate_cash": 125411,
+          "opponent_cash": 122382,
+          "margin": 3029,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 0,
+          "candidate_cash": 129341,
+          "opponent_cash": 120900,
+          "margin": 8441,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551546,
+          "candidate_seat": 1,
+          "candidate_cash": 123633,
+          "opponent_cash": 111276,
+          "margin": 12357,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 0,
+          "candidate_cash": 80100,
+          "opponent_cash": 79886,
+          "margin": 214,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551547,
+          "candidate_seat": 1,
+          "candidate_cash": 81623,
+          "opponent_cash": 78488,
+          "margin": 3135,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 0,
+          "candidate_cash": 86091,
+          "opponent_cash": 69710,
+          "margin": 16381,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551548,
+          "candidate_seat": 1,
+          "candidate_cash": 86091,
+          "opponent_cash": 69710,
+          "margin": 16381,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 0,
+          "candidate_cash": 90559,
+          "opponent_cash": 88081,
+          "margin": 2478,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551549,
+          "candidate_seat": 1,
+          "candidate_cash": 90559,
+          "opponent_cash": 88081,
+          "margin": 2478,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 0,
+          "candidate_cash": 72312,
+          "opponent_cash": 68789,
+          "margin": 3523,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551550,
+          "candidate_seat": 1,
+          "candidate_cash": 74840,
+          "opponent_cash": 68919,
+          "margin": 5921,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 0,
+          "candidate_cash": 119295,
+          "opponent_cash": 114621,
+          "margin": 4674,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551551,
+          "candidate_seat": 1,
+          "candidate_cash": 119295,
+          "opponent_cash": 114621,
+          "margin": 4674,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 0,
+          "candidate_cash": 84607,
+          "opponent_cash": 75060,
+          "margin": 9547,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551552,
+          "candidate_seat": 1,
+          "candidate_cash": 84607,
+          "opponent_cash": 75060,
+          "margin": 9547,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 0,
+          "candidate_cash": 102175,
+          "opponent_cash": 106248,
+          "margin": -4073,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551553,
+          "candidate_seat": 1,
+          "candidate_cash": 88708,
+          "opponent_cash": 94663,
+          "margin": -5955,
+          "candidate_weed_repairs": 0,
+          "result": "loss"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 0,
+          "candidate_cash": 102900,
+          "opponent_cash": 100807,
+          "margin": 2093,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551554,
+          "candidate_seat": 1,
+          "candidate_cash": 102900,
+          "opponent_cash": 100807,
+          "margin": 2093,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 0,
+          "candidate_cash": 122000,
+          "opponent_cash": 118225,
+          "margin": 3775,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551555,
+          "candidate_seat": 1,
+          "candidate_cash": 122000,
+          "opponent_cash": 118225,
+          "margin": 3775,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 0,
+          "candidate_cash": 105195,
+          "opponent_cash": 101289,
+          "margin": 3906,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551556,
+          "candidate_seat": 1,
+          "candidate_cash": 105195,
+          "opponent_cash": 101289,
+          "margin": 3906,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 0,
+          "candidate_cash": 61348,
+          "opponent_cash": 58150,
+          "margin": 3198,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551557,
+          "candidate_seat": 1,
+          "candidate_cash": 75729,
+          "opponent_cash": 71475,
+          "margin": 4254,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 0,
+          "candidate_cash": 48452,
+          "opponent_cash": 43671,
+          "margin": 4781,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551558,
+          "candidate_seat": 1,
+          "candidate_cash": 48452,
+          "opponent_cash": 43671,
+          "margin": 4781,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 0,
+          "candidate_cash": 86262,
+          "opponent_cash": 84702,
+          "margin": 1560,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551559,
+          "candidate_seat": 1,
+          "candidate_cash": 122031,
+          "opponent_cash": 118435,
+          "margin": 3596,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 0,
+          "candidate_cash": 67645,
+          "opponent_cash": 63444,
+          "margin": 4201,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551560,
+          "candidate_seat": 1,
+          "candidate_cash": 67646,
+          "opponent_cash": 63444,
+          "margin": 4202,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 0,
+          "candidate_cash": 71792,
+          "opponent_cash": 67974,
+          "margin": 3818,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551561,
+          "candidate_seat": 1,
+          "candidate_cash": 71792,
+          "opponent_cash": 67974,
+          "margin": 3818,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 0,
+          "candidate_cash": 110395,
+          "opponent_cash": 105886,
+          "margin": 4509,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551562,
+          "candidate_seat": 1,
+          "candidate_cash": 126663,
+          "opponent_cash": 123729,
+          "margin": 2934,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 0,
+          "candidate_cash": 73960,
+          "opponent_cash": 67515,
+          "margin": 6445,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551563,
+          "candidate_seat": 1,
+          "candidate_cash": 73961,
+          "opponent_cash": 67417,
+          "margin": 6544,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 0,
+          "candidate_cash": 87961,
+          "opponent_cash": 84747,
+          "margin": 3214,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        },
+        {
+          "seed": 551564,
+          "candidate_seat": 1,
+          "candidate_cash": 87768,
+          "opponent_cash": 85093,
+          "margin": 2675,
+          "candidate_weed_repairs": 0,
+          "result": "win"
+        }
+      ]
+    }
+  ],
+  "min_score_rate": 0.8359375,
+  "mean_score_rate": 0.8671875,
+  "candidate_source": {
+    "path": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+    "sha256": "AC354B0504C9A0BDB20843B15E8BC6DE3AA0E78F3F35651E4C9FA013C82539D3"
+  }
+}

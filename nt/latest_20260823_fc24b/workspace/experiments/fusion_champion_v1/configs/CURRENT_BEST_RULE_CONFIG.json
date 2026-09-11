@@ -1,0 +1,8 @@
+{
+  "schema": "kaggriculture.fusion_champion.current_best_pointer.v1",
+  "current_best": "experiments/fusion_champion_v1/configs/fc24b_frozen_best_v1.json",
+  "sha256": "DE81A9F34DE7B9F64486F50A24B44AA9E314C95F84FDA7065708AD4B5E4C0ACF",
+  "status": "FROZEN_LOCAL_CHAMPION",
+  "selection_basis": "34 opponents, 256 double-seat games each, 8704 total games; every per-opponent score rate >=90%; versus FC22: 4 loss-to-win, 0 win-to-loss, 1313 cash-up, 0 cash-down; official 1.32.7 CPU/JAX strict parity accepted.",
+  "preservation_policy": "Never overwrite or delete the referenced config. New best configurations must be added as new versioned files before this pointer is updated."
+}

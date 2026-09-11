@@ -1,0 +1,81 @@
+{
+  "schema": "kaggriculture.front40_fusion.second-shop-holdout.v1",
+  "generated_at_utc": "2026-08-23T21:23:05.248899+00:00",
+  "status": "PASS",
+  "matrix": "experiments\\front40_fusion_v1\\receipts\\rank02_crop_dusta_all97_vs_fc24b_screen_seed212001_n256x2_v1.npz",
+  "base_map": "experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_fc24b_unrestricted_shop_map_train256_v3.json",
+  "holdout_seed_index_range": [
+    192,
+    255
+  ],
+  "base": {
+    "games": 128,
+    "wins": 59,
+    "win_rate": 0.4609375,
+    "mean_margin": -4158.828125,
+    "median_margin": -1316.0,
+    "hard_counter_total": 0
+  },
+  "second_maps": [
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_second_shop_crossfirst_gain0p00_train192_v21.json",
+      "accepted_pairs": 10,
+      "holdout": {
+        "games": 128,
+        "wins": 54,
+        "win_rate": 0.421875,
+        "mean_margin": -4218.7421875,
+        "median_margin": -2481.5,
+        "hard_counter_total": 0
+      },
+      "changed_games": 17,
+      "net_wins_vs_base": -5,
+      "mean_margin_gain_vs_base": -59.9140625
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_second_shop_crossfirst_gain0p10_train192_v21.json",
+      "accepted_pairs": 3,
+      "holdout": {
+        "games": 128,
+        "wins": 58,
+        "win_rate": 0.453125,
+        "mean_margin": -4186.234375,
+        "median_margin": -1950.0,
+        "hard_counter_total": 0
+      },
+      "changed_games": 3,
+      "net_wins_vs_base": -1,
+      "mean_margin_gain_vs_base": -27.40625
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_second_shop_crossfirst_gain0p20_train192_v21.json",
+      "accepted_pairs": 2,
+      "holdout": {
+        "games": 128,
+        "wins": 59,
+        "win_rate": 0.4609375,
+        "mean_margin": -4077.6171875,
+        "median_margin": -1316.0,
+        "hard_counter_total": 0
+      },
+      "changed_games": 1,
+      "net_wins_vs_base": 0,
+      "mean_margin_gain_vs_base": 81.2109375
+    },
+    {
+      "map": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\front40_fusion_v1\\artifacts\\rank02_crop_dusta_second_shop_crossfirst_gain0p30_train192_v21.json",
+      "accepted_pairs": 0,
+      "holdout": {
+        "games": 128,
+        "wins": 59,
+        "win_rate": 0.4609375,
+        "mean_margin": -4158.828125,
+        "median_margin": -1316.0,
+        "hard_counter_total": 0
+      },
+      "changed_games": 0,
+      "net_wins_vs_base": 0,
+      "mean_margin_gain_vs_base": 0.0
+    }
+  ]
+}

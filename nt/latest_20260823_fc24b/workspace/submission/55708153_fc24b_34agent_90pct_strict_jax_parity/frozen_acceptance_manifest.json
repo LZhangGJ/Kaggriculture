@@ -1,0 +1,392 @@
+{
+  "schema": "kaggriculture.fusion_champion.fc24b-frozen-acceptance.v1",
+  "generated_at_utc": "2026-08-23T06:13:19.957281+00:00",
+  "status": "PASS",
+  "candidate": "FC24B",
+  "official_package_version": "1.32.7",
+  "checks": {
+    "latest6_download_and_static_freeze_integrity": true,
+    "latest6_route_bank_integrity": true,
+    "latest6_all_strict_gpu_jax_parity": true,
+    "latest6_each_at_least_90pct": true,
+    "old28_each_at_least_90pct": true,
+    "all_34_agents_256_games_each": true,
+    "official_version_1_32_7": true,
+    "standard_32_context_strict_parity": true,
+    "targeted_4_context_strict_parity": true,
+    "critical_salvage_exercised": true,
+    "cpu_latency_and_replay_pass": true,
+    "cross_game_reentry_pass": true,
+    "frozen_best_pointer_integrity": true,
+    "frozen_config_source_hashes_match": true
+  },
+  "latest6_migration": {
+    "sources": [
+      {
+        "slug": "boatlee_v21_latest",
+        "kaggle_ref": "boatlee/v21-r1-public-state-route-portfolio",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/boatlee__v21-r1-public-state-route-portfolio/v21-r1-public-state-route-portfolio.ipynb",
+          "sha256": "0D02691E1383F24B60D03C4B0170704BDEED05A8B1FB899511840E167D45632A"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/boatlee_v21_latest/main.py",
+          "sha256": "C6F96A8521DC9AA369B6F27E5B36B9D481E5C1688F50C8CA215C3BB53F1F9EB8"
+        }
+      },
+      {
+        "slug": "prvsiyan_soil_v26h_latest",
+        "kaggle_ref": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/prvsiyan__soil-remembers-rain-latest/kaggriculture-frontier-the-soil-remembers-rain.ipynb",
+          "sha256": "D9E8CB805B12E0F9D60A59DCD21046A6ABA9F3BB1B4A237C6DFA5F66B0EB2977"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/prvsiyan_soil_v26h_latest/main.py",
+          "sha256": "F4B8C16395382060D23F70FA65DD376FD567AB55C430D7AEE41BBE0BC117A88C"
+        }
+      },
+      {
+        "slug": "prvsiyan_moon_v92_latest",
+        "kaggle_ref": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/prvsiyan__moon-counts-melons-latest/kaggriculture-frontier-the-moon-counts-melons.ipynb",
+          "sha256": "D7004D67F4264CD0446E03E701C3D8FA84A75F9B8E7C00D8CC3C28D1A406E197"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/prvsiyan_moon_v92_latest/main.py",
+          "sha256": "CA4F2C0925C38C1CACBB7756EF791F04A45F65660CE4914AD41271AD5798E09F"
+        }
+      },
+      {
+        "slug": "kaito_v39_history_gate_latest",
+        "kaggle_ref": "kaitofukami/103-126-untouched-future-top-30-v39-history-gate",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/kaitofukami__v39-history-gate/103-126-untouched-future-top-30-v39-history-gate.ipynb",
+          "sha256": "9E86EF93A93F5AF1BE8F64B7A491F9714F92DB89A8E92FC5EEDA7FDB4E09A0C5"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/kaito_v39_history_gate_latest/main.py",
+          "sha256": "C0298C82C2A2F9B41CD48657B63B16A9C6F07EA3EE02DC85062F807E54E8C54A"
+        }
+      },
+      {
+        "slug": "steven_e284_hadouken_latest",
+        "kaggle_ref": "stevenleehans/kaggriculture-e284-hadouken",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/stevenleehans__e284-hadouken/kaggriculture-e284-hadouken.ipynb",
+          "sha256": "8B775F3B47CC9DB73BBEE98E70D4331A13D35E0BD90264E1296901E9885EC538"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/steven_e284_hadouken_latest/main.py",
+          "sha256": "B5C2E156689B41CEA5F2E1A0A1CAE2E18FD70423931BBAC0885BBA8B2142C497"
+        }
+      },
+      {
+        "slug": "salem_harvestforge_x_latest",
+        "kaggle_ref": "salemali7/3094-score-kaggriculture",
+        "ok": true,
+        "notebook": {
+          "path": "public_notebooks/recent_latest_20260822_scan_v1/salemali7__3094-score-latest/3094-score-kaggriculture.ipynb",
+          "sha256": "B3EF54ACA96EF9F8822AC230BF27215F5C965A9EA6F8658E2AB022F2460F6D9E"
+        },
+        "source": {
+          "path": "references/public_latest6_20260822/salem_harvestforge_x_latest/main.py",
+          "sha256": "D39DBA50793D9777C990347443BF0C481C78ADAEA86055F6F6B0600DCFCD9F2E"
+        }
+      }
+    ],
+    "route_bank": {
+      "routes": 20,
+      "sha256": "f1fa53d5f40a224e030cc9d89ae243622551ae6765ac71767c5c794a5712c324"
+    },
+    "strict_parity": {
+      "boatlee_v21_jax_parity": {
+        "agent": "boatlee_v21_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      },
+      "soil_v26h_jax_parity": {
+        "agent": "prvsiyan_soil_v26h_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      },
+      "moon_v92_jax_parity": {
+        "agent": "prvsiyan_moon_v92_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      },
+      "kaito_v39_jax_parity": {
+        "agent": "kaito_v39_history_gate_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      },
+      "steven_e284_jax_parity": {
+        "agent": "steven_e284_hadouken_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      },
+      "salem_latest_jax_parity": {
+        "agent": "salem_harvestforge_x_latest",
+        "contexts": 4,
+        "action_exact_contexts": 4,
+        "state_exact_contexts": 4,
+        "terminal_exact_contexts": 4,
+        "backend": "gpu",
+        "jax_version": "0.10.1"
+      }
+    }
+  },
+  "arena": {
+    "agents": 34,
+    "games": 8704,
+    "latest6_min_score_rate": 0.91796875,
+    "old28_min_score_rate": 0.90234375
+  },
+  "strict_parity": {
+    "standard_contexts": 32,
+    "targeted_contexts": 4,
+    "action_exact_contexts": 36,
+    "state_exact_contexts": 36,
+    "terminal_exact_contexts": 36
+  },
+  "critical_prt_rescue": {
+    "seed": 594122,
+    "candidate_seat": 0,
+    "opponent": "local_prt_v6",
+    "candidate_terminal_cash": 154776,
+    "opponent_terminal_cash": 154609,
+    "action_step_709": {
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "HARVEST"
+        ]
+      ],
+      "market": []
+    },
+    "salvage_harvest_present": true,
+    "trace": {
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_official_parity_seed594122_targeted_v1/candidate_local_prt_v6_seat0_seed594122.jsonl.gz",
+      "sha256": "F812250BF09075744B1FB120A532106729DBEBB809CDD57A04C7102022393AA3"
+    }
+  },
+  "cpu": {
+    "action_calls": 23008,
+    "mean_action_ms": 0.523169288835523,
+    "p95_action_ms": 0.9224000386893749,
+    "max_action_ms": 5.003499973099679,
+    "reentry_action_calls": 46016
+  },
+  "files": {
+    "latest6_freeze_tool": {
+      "path": "experiments/expert_business_agent_v2/tools/freeze_latest_public6_20260822.py",
+      "sha256": "C691681DAE0868CED64A155113A2F785682BB63A22FCA2F4FB25509DFE1D98FD",
+      "bytes": 4260
+    },
+    "latest6_route_builder": {
+      "path": "experiments/expert_business_agent_v2/tools/build_latest_public6_20260822_route_bank.py",
+      "sha256": "ADE5EAA0AF985E4D8ABB973C30B642FB208BF698A520B09840BFD7172D7A834C",
+      "bytes": 7955
+    },
+    "latest6_parity_tool": {
+      "path": "experiments/expert_business_agent_v2/tools/accept_latest_public6_20260822_jax_parity.py",
+      "sha256": "93A22E4A85B5C0ED21F3210E3EA2BAF8398B1FE971D083DB7C1675B50440528D",
+      "bytes": 14459
+    },
+    "latest6_source_manifest": {
+      "path": "references/public_latest6_20260822/manifest.json",
+      "sha256": "895DCDE8B59A1B2C12C1C56B0CB93B4290E80B982AFA47A617908F20492C06AD",
+      "bytes": 4926
+    },
+    "latest6_route_bank_receipt": {
+      "path": "experiments/expert_business_agent_v2/receipts/latest_public6_20260822_route_bank_v1.json",
+      "sha256": "2963A715EF4BBC2C7BE30B26D7505EBD855F49DA69C21B8F676B6517303B9E62",
+      "bytes": 23935
+    },
+    "latest6_route_bank": {
+      "path": "experiments/expert_business_agent_v2/artifacts/latest_public6_20260822_route_bank_v1.npz",
+      "sha256": "F1FA53D5F40A224E030CC9D89AE243622551AE6765AC71767C5C794A5712C324",
+      "bytes": 110288
+    },
+    "latest6_jax_controller": {
+      "path": "experiments/strategic_v5/src/strategic_v5/latest_public6_20260822_gpu.py",
+      "sha256": "BEDE5D15C6CEEBCADD61FD655ECDFDDC13006ED2C09FB49602C4137003DC2B13",
+      "bytes": 53110
+    },
+    "boatlee_v21_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/boatlee_v21_latest_jax_parity_seed822001_n2x2_v3.json",
+      "sha256": "79848F348BDE66925A73D8D90DC3116ECA089C994546A63AF4A1795E70F9B099",
+      "bytes": 2068
+    },
+    "soil_v26h_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/prvsiyan_soil_v26h_latest_jax_parity_seed822001_n2x2_v8.json",
+      "sha256": "C329142079AB7E83FDD344DDCACA2704F7667A2B55F7372569DDC1590920E936",
+      "bytes": 2090
+    },
+    "moon_v92_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/prvsiyan_moon_v92_latest_jax_parity_seed822001_n2x2_v8.json",
+      "sha256": "B7AF6D3A806BF956677E4F7976DD7B5BE70427CB9DB2695B6D8490BE331071EF",
+      "bytes": 2089
+    },
+    "kaito_v39_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/kaito_v39_history_gate_latest_jax_parity_seed822001_n2x2_v1.json",
+      "sha256": "4A901D3160BF6393C088811AB894B2B1C427B65D63F03193A78C10D3BAE8DF93",
+      "bytes": 2085
+    },
+    "steven_e284_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/steven_e284_hadouken_latest_jax_parity_seed822001_n2x2_v3.json",
+      "sha256": "E290762062CD2F3E5C2CAB8AC32CA61F92039124B386BE4C64DE6B9115422393",
+      "bytes": 1830
+    },
+    "salem_latest_jax_parity": {
+      "path": "experiments/expert_business_agent_v2/receipts/salem_harvestforge_x_latest_jax_parity_seed822001_n2x2_v1.json",
+      "sha256": "86FB102A4BEFA4F731D71C3B185495C31020CBB5441B1B6F5682B02360EC2C49",
+      "bytes": 1826
+    },
+    "jax_policy": {
+      "path": "experiments/fusion_champion_v1/src/fusion_champion_v1/policy_gpu.py",
+      "sha256": "EE9B46453B1AB673E197AFD682C7691ECDBB1596B7C9233BAE8FBE80BCD3E843",
+      "bytes": 162597
+    },
+    "cpu_builder": {
+      "path": "experiments/fusion_champion_v1/tools/build_fc24b_cpu_submission.py",
+      "sha256": "952728E22EBD5226BC85D020EB53CD154FB98309BEF1BD9CF5A166A2E38B9869",
+      "bytes": 14443
+    },
+    "cpu_agent": {
+      "path": "experiments/fusion_champion_v1/artifacts/fc24b_cpu_v1/main.py",
+      "sha256": "E7ABC6C215CF5A2FB2CF8FEDE83157568123DDBA0E086571ECD82A24751D9E6B",
+      "bytes": 542721
+    },
+    "official_trace_tool": {
+      "path": "experiments/expert_business_agent_v2/tools/generate_official_stepwise_parity_traces.py",
+      "sha256": "679DC8333852F420CEFE2AB233610092B10F5B2A5A965BD2EA61C4E788810D21",
+      "bytes": 6253
+    },
+    "fc24b_parity_tool": {
+      "path": "experiments/fusion_champion_v1/tools/accept_fc12g_jax_stepwise_parity.py",
+      "sha256": "0176593A0AE3D483B419D25504FD7D6576EE497DD1837AD968D85D6A48D82CD2",
+      "bytes": 11630
+    },
+    "cpu_latency_tool": {
+      "path": "experiments/fusion_champion_v1/tools/benchmark_fc12g_cpu.py",
+      "sha256": "5851913D49604E9C62D2B5B416EE38F8255653685AEE8A7AC7E143892C1D17CD",
+      "bytes": 5137
+    },
+    "cpu_reentry_tool": {
+      "path": "experiments/fusion_champion_v1/tools/validate_fc24b_reentry.py",
+      "sha256": "D1F49018D906D7C613B2B20CA9EFDD7A0DBD61F654CC04EF48F43495F9473B15",
+      "bytes": 4799
+    },
+    "freeze_tool": {
+      "path": "experiments/fusion_champion_v1/tools/freeze_fc24b_acceptance.py",
+      "sha256": "60CEA84B04E1347C5852F67D7C5736AA2E608A4F6EEC71186AD4D45F36C4D167",
+      "bytes": 15195
+    },
+    "frozen_config": {
+      "path": "experiments/fusion_champion_v1/configs/fc24b_frozen_best_v1.json",
+      "sha256": "DE81A9F34DE7B9F64486F50A24B44AA9E314C95F84FDA7065708AD4B5E4C0ACF",
+      "bytes": 4063
+    },
+    "current_best_pointer": {
+      "path": "experiments/fusion_champion_v1/configs/CURRENT_BEST_RULE_CONFIG.json",
+      "sha256": "8E66515C0911804D1E0650D2CE21C3E09236D9CD7D93F4BB0BF73A901C9D0DE5",
+      "bytes": 684
+    },
+    "final_report": {
+      "path": "experiments/fusion_champion_v1/reports/FC24B_FINAL_OFFICIAL_JAX_ACCEPTANCE_20260823_ZH.md",
+      "sha256": "4290107399BB42A0C666B23C735311FEC8FF940D0003FA047C3C367B6A5C7E76",
+      "bytes": 10633
+    },
+    "latest6_panel": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_value_guard_vs_latest6_seed839001_n128x2_v1.json",
+      "sha256": "E122D528498DED472756C0034079638682FE1D84D13647EBFCBD82E41886AD14",
+      "bytes": 1712478
+    },
+    "old28_panel": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_value_guard_vs_old_full_roster_seed594001_n128x2_v1.json",
+      "sha256": "858A10D17EC931C86253AF2F38E54773290361162A5D5B921EFD3961D4FD7AE7",
+      "bytes": 6729056
+    },
+    "standard_official_traces": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_official_stepwise_traces_seed594001_n8x2_v1.json",
+      "sha256": "97CF1FC4FA490BF07A1FE3D0B5BC3FB2EF05FEB368A0EB7FF841FB6B2C6EC6F7",
+      "bytes": 15903
+    },
+    "standard_jax_parity": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_jax_stepwise_parity_seed594001_n8x2_v1.json",
+      "sha256": "A0C5A9F96477C3880100E5E95B0D2DE6122C8A1D9DC5B2F88FB90FE1AE40E617",
+      "bytes": 2050
+    },
+    "targeted_official_traces": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_official_stepwise_traces_seed594122_targeted_v1.json",
+      "sha256": "5FA30F12567F810DAEF2E0FB65F47EEA9C12584C1765566F64C81AEA3EF98964",
+      "bytes": 3007
+    },
+    "targeted_jax_parity": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_jax_stepwise_parity_seed594122_targeted_v1.json",
+      "sha256": "260B02A870C17FBB9817E240E1BD24D4CD37555B0CF4C17E7C9703160FD54F4E",
+      "bytes": 2048
+    },
+    "cpu_latency": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_cpu_latency_and_action_acceptance_v1.json",
+      "sha256": "3721C87FDAD70470CDC683E7B30B6C0B0BEBA9FD17124F46345109CEE594DB56",
+      "bytes": 10952
+    },
+    "cpu_reentry": {
+      "path": "experiments/fusion_champion_v1/receipts/fc24b_cpu_v1_reentry_forward_reverse_v1.json",
+      "sha256": "5BFFA43B35796492C587E40EADA3B1301FCFE2A1181BBACB7C891CC98305E4E5",
+      "bytes": 10794
+    }
+  },
+  "boundary": "This freezes local official-1.32.7 and JAX acceptance only. It does not claim future leaderboard performance or submit to Kaggle."
+}

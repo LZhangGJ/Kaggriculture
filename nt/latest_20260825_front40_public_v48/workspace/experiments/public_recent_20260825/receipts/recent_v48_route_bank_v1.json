@@ -1,0 +1,220 @@
+{
+  "schema": "kaggriculture.public-recent-20260825.kaito-v48-route-bank.v1",
+  "generated_at_utc": "2026-08-25T01:18:07.548733+00:00",
+  "status": "PASS",
+  "source": "E:\\ai_coding\\kaggle\\kaggriculture\\public_notebooks\\recent_latest_20260825_scan_v1\\kaitofukami__40-40-early-floor-39-46-top-10-v48-fast-routes\\output\\main.py",
+  "source_sha256": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+  "base_bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\expert_business_agent_v2\\artifacts\\latest_public6_20260822_route_bank_v1.npz",
+  "base_bank_sha256": "f1fa53d5f40a224e030cc9d89ae243622551ae6765ac71767c5c794a5712c324",
+  "base_routes": 20,
+  "unique_routes": 26,
+  "aliases": [
+    {
+      "alias": "kaito_v48__default",
+      "route_name": "default",
+      "route_id": 20,
+      "action_sha256": "ca788fddbc3ef4b9d4b5f68828f26421cf2e750788827750f6dbef1c913ea5ae",
+      "new_unique_route": true
+    },
+    {
+      "alias": "kaito_v48__yarn_fast",
+      "route_name": "yarn_fast",
+      "route_id": 21,
+      "action_sha256": "110b2d3fc0310a4e1f9ecd0e70fa8e5cbc494e4ae9f2143fafc0b7bd1fe0499a",
+      "new_unique_route": true
+    },
+    {
+      "alias": "kaito_v48__farm_fast",
+      "route_name": "farm_fast",
+      "route_id": 22,
+      "action_sha256": "bc616f5230737bf032fffdccb20e6c61dfb41145d5cb8282b51ce6b0689552a3",
+      "new_unique_route": true
+    },
+    {
+      "alias": "kaito_v48__yarn_second",
+      "route_name": "yarn_second",
+      "route_id": 23,
+      "action_sha256": "b23527929389d05c08017a2a79bfdb1e09901b0cebcda79f8553e7adda0ca742",
+      "new_unique_route": true
+    },
+    {
+      "alias": "kaito_v48__yarn_third",
+      "route_name": "yarn_third",
+      "route_id": 24,
+      "action_sha256": "8f6be874a91ce5e0921e32738bebb1e39628a627b3c409a2d85be6f7d57c594c",
+      "new_unique_route": true
+    },
+    {
+      "alias": "kaito_v48__bakery_capital",
+      "route_name": "bakery_capital",
+      "route_id": 25,
+      "action_sha256": "8d27806047501b1d3721b8cde9ceaadd191e5316996f954ee0973a13cde0b993",
+      "new_unique_route": true
+    }
+  ],
+  "routes": [
+    {
+      "route_id": 0,
+      "canonical_name": "boatlee_v20__10c4s_3q",
+      "action_sha256": "60cd665cbcafdc3186256f2aff7004968b127ecdccb1c16de1265885d422111c",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 1,
+      "canonical_name": "boatlee_v20__8c6s_3q",
+      "action_sha256": "2483809ada657c092e98e2b854ded9539a9b9a597723f1f4027a02ea97faa6aa",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 2,
+      "canonical_name": "boatlee_v20__6c8s_3q",
+      "action_sha256": "25f62869f42ce905b882b4acc66c1fb2061d89b6293ac42c24e030de60460942",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 3,
+      "canonical_name": "boatlee_v20__6c12s_4q_first_yarn",
+      "action_sha256": "64e81ecf1788855ab65e58671042c0c241dbc63accc972eb73caed8b637da5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 4,
+      "canonical_name": "boatlee_v20__6c12s_4q_second_yarn",
+      "action_sha256": "a072f831ccca5ba0e0ca4b6d38d1eec3994cc34627b8c748831f027c9e066d9d",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 5,
+      "canonical_name": "boatlee_v20__legacy_10c4s_3q",
+      "action_sha256": "25b683c5d82e120b7da51b50128ddd8c9966a933c38f53421b23f9c6785fd6de",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 6,
+      "canonical_name": "boatlee_v20__legacy_8c6s_3q",
+      "action_sha256": "96f5164bece882a2b943e843f6208e8b16377a756df0d017ea3159fa167b7199",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 7,
+      "canonical_name": "boatlee_v20__legacy_6c8s_3q",
+      "action_sha256": "3ccd016720dde7d921decf1caeebaac057390fca0f3c19906e4a94b4a20b6062",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 8,
+      "canonical_name": "kaito_v27__legacy",
+      "action_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 9,
+      "canonical_name": "flexonafft_v59__modal_route",
+      "action_sha256": "6194ed54ea77f4f9a9c09ac5948778bb9420ef0deef2df18d6bbf0c2ef60c983",
+      "jax_screen_controller": "generic_rc5_weed_sell_rank_terminal",
+      "source_agent_exact": false,
+      "source_agent_exact_reason": "the raw 719-step production tape is exact, but source-specific adaptive runtime overlays are not all applied by this screening controller"
+    },
+    {
+      "route_id": 10,
+      "canonical_name": "deniz_v111_8c4s_latest__route",
+      "action_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b"
+    },
+    {
+      "route_id": 11,
+      "canonical_name": "kaito_v36_latest__route",
+      "action_sha256": "8ff594fc0c180392ca25945db8febc2ffca5f4548129bd15b299f1caa41adde1"
+    },
+    {
+      "route_id": 12,
+      "canonical_name": "x562_latest__low",
+      "action_sha256": "392db820b586cf306d2523188d6c064ad0ac2db94a2a3dd2995379d4c06f7438"
+    },
+    {
+      "route_id": 13,
+      "canonical_name": "x562_latest__high",
+      "action_sha256": "d5a91770836e25867e5850bfab0671737ba22ee2525b24b5083a1060be76d8d4"
+    },
+    {
+      "route_id": 14,
+      "canonical_name": "flex_multi_route_latest__legacy",
+      "action_sha256": "f36673adfe851695e95d2be7669a4a121736ca1920aa0ff9110b97b5c7de0de9"
+    },
+    {
+      "route_id": 15,
+      "canonical_name": "boatlee_v21_latest__mutoy",
+      "action_sha256": "822c6da48bd6cffeee02c6caf95fe16b9112751fd78034f442357034ad70fffe"
+    },
+    {
+      "route_id": 16,
+      "canonical_name": "boatlee_v21_latest__munib_base",
+      "action_sha256": "8f94fe8ff1c58b69b38f94c62d4348a7f82880c87604de87839eb471e59c2964"
+    },
+    {
+      "route_id": 17,
+      "canonical_name": "kaito_v39_history_gate_latest__base_v37",
+      "action_sha256": "ed46496b22e8febf796b0ba8145fead73e640cf63bd4b152187c113804278701"
+    },
+    {
+      "route_id": 18,
+      "canonical_name": "kaito_v39_history_gate_latest__wool_v37",
+      "action_sha256": "d97ab621c4dc5725712d813dfa293dd0229d3ec184346778206bbe40165b5ec7"
+    },
+    {
+      "route_id": 19,
+      "canonical_name": "kaito_v39_history_gate_latest__alt_v37",
+      "action_sha256": "1a03692bf793ae0461d18a8b405f40414a2c8faa1b013a5c0c55d47c9864463a"
+    },
+    {
+      "route_id": 20,
+      "canonical_name": "kaito_v48__default",
+      "action_sha256": "ca788fddbc3ef4b9d4b5f68828f26421cf2e750788827750f6dbef1c913ea5ae"
+    },
+    {
+      "route_id": 21,
+      "canonical_name": "kaito_v48__yarn_fast",
+      "action_sha256": "110b2d3fc0310a4e1f9ecd0e70fa8e5cbc494e4ae9f2143fafc0b7bd1fe0499a"
+    },
+    {
+      "route_id": 22,
+      "canonical_name": "kaito_v48__farm_fast",
+      "action_sha256": "bc616f5230737bf032fffdccb20e6c61dfb41145d5cb8282b51ce6b0689552a3"
+    },
+    {
+      "route_id": 23,
+      "canonical_name": "kaito_v48__yarn_second",
+      "action_sha256": "b23527929389d05c08017a2a79bfdb1e09901b0cebcda79f8553e7adda0ca742"
+    },
+    {
+      "route_id": 24,
+      "canonical_name": "kaito_v48__yarn_third",
+      "action_sha256": "8f6be874a91ce5e0921e32738bebb1e39628a627b3c409a2d85be6f7d57c594c"
+    },
+    {
+      "route_id": 25,
+      "canonical_name": "kaito_v48__bakery_capital",
+      "action_sha256": "8d27806047501b1d3721b8cde9ceaadd191e5316996f954ee0973a13cde0b993"
+    }
+  ],
+  "bank": "E:\\ai_coding\\kaggle\\kaggriculture\\experiments\\public_recent_20260825\\artifacts\\recent_v48_route_bank_v1.npz",
+  "bank_sha256": "17f6c9bc1459a81e6ff5b0ed41dbea3cd97aa43c949aeba11b4a194c0e25977d",
+  "truth_boundary": "This freezes only the six public raw 719-step V48 routes. Dynamic routing and overlays require separate official/JAX stepwise parity."
+}

@@ -1,0 +1,1112 @@
+{
+  "count": 100,
+  "first_seed": 10000,
+  "generated_at": "2026-08-10T17:36:31.039547+00:00",
+  "ok": true,
+  "package_version": "1.32.6",
+  "rows": [
+    {
+      "bytes": 54562,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10000.jsonl.gz",
+      "seed": 10000,
+      "sha256": "6663f55c28ea2dbad20ae82f5b744474a7452637b699f5ae202c2d95506c7778",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53891,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10001.jsonl.gz",
+      "seed": 10001,
+      "sha256": "f443b07093987a02884362956a3ff4cdb66c6b78afe094c694497397c0011286",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53387,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10002.jsonl.gz",
+      "seed": 10002,
+      "sha256": "6005ae15acb5eaa2cafca56b7d42f24ba887e312e50f8aa014b044592283320f",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53861,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10003.jsonl.gz",
+      "seed": 10003,
+      "sha256": "89508cb36873cd313b807c43d843a061c99516e0f05ce6f4582a05d6e6434e29",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53161,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10004.jsonl.gz",
+      "seed": 10004,
+      "sha256": "be0c11cd652418624b49eadcd7fe496449226c971718bd17955e809e54fb458a",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54254,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10005.jsonl.gz",
+      "seed": 10005,
+      "sha256": "217d7a5fd8aa82ac73735730668c24d36e85da3009f711a97f2b836b7217f1d9",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54352,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10006.jsonl.gz",
+      "seed": 10006,
+      "sha256": "7d2d7a8f30c075a09aebbe398a690c8d9ed43ddd51caafedd8cd010f369b0192",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53937,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10007.jsonl.gz",
+      "seed": 10007,
+      "sha256": "82676eca3c2b3011198d529525792b71feb3ab95cfb0c8ef23c04dffdc260146",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54270,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10008.jsonl.gz",
+      "seed": 10008,
+      "sha256": "1992148038cb1a6ab0c48d58a8567c16bc98943264bfc800dffa83dabff3ef29",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54269,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10009.jsonl.gz",
+      "seed": 10009,
+      "sha256": "6b67543ed2f91d2dfc3c74d3afa5330ccbf55f9372cc1f256484edf82097850d",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53857,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10010.jsonl.gz",
+      "seed": 10010,
+      "sha256": "09d8254ce2af20c1066f6afd4eeb4e7ec21834b45d820e6a35bb32598ba3528b",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53583,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10011.jsonl.gz",
+      "seed": 10011,
+      "sha256": "8782f89e720263b49af671d4f1a8b0b56e98b3507011c700f721e086863faaa0",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53955,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10012.jsonl.gz",
+      "seed": 10012,
+      "sha256": "4c9e33ad3ca5c975b59537e4cae8a4faf178cd603a95944e8c55a6e1f27d8d78",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54219,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10013.jsonl.gz",
+      "seed": 10013,
+      "sha256": "6960e53d25959e1be1428b1cb7bb19d95e8d9f439a72c77c588dd51519fcdf3d",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53552,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10014.jsonl.gz",
+      "seed": 10014,
+      "sha256": "051809933e7add99149ecc6570eca243648e1781c4efa06c14227181af14e455",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54260,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10015.jsonl.gz",
+      "seed": 10015,
+      "sha256": "2f4a565a6545a5514d2fe8594f2e46619ddd4ff7f2e94216e2fa1136fed73db4",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53932,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10016.jsonl.gz",
+      "seed": 10016,
+      "sha256": "114fa6bc16a5059957b6cb98bc446b0881318554317150692d742f9694313f3c",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54038,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10017.jsonl.gz",
+      "seed": 10017,
+      "sha256": "2cec5e7be60b6726d31568590b582dd5ada92a30da35155c950df518db4c2e3c",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53811,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10018.jsonl.gz",
+      "seed": 10018,
+      "sha256": "ffc07c92fcb57a807b5866979273b58dcbb4a607197e1e579bbc6686a0b83398",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54139,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10019.jsonl.gz",
+      "seed": 10019,
+      "sha256": "0c1c4fade07c939f2eac97696f8ee04532489289508ea6e087c8d58516d6bac3",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54249,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10020.jsonl.gz",
+      "seed": 10020,
+      "sha256": "8fc9c7426d3379bccad256c86bcf433f8fb32bbc23a5b8b3199db4115c0374c7",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53200,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10021.jsonl.gz",
+      "seed": 10021,
+      "sha256": "40a411ec9c8910724678ef1d07e7d2eef817b04f78930ae0fb9683a6f65e0c71",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54256,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10022.jsonl.gz",
+      "seed": 10022,
+      "sha256": "ab111aa35599d68a481d99776f87d723f336f9baec6383cc6b4da81663a482fa",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53786,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10023.jsonl.gz",
+      "seed": 10023,
+      "sha256": "482851a0d9c9365e519870af4c18b1612feecee429cce14d81b82a97fec98e72",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53498,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10024.jsonl.gz",
+      "seed": 10024,
+      "sha256": "3c02d8507625d7a3edfa42435830db1693b63a9e5b4a3752002420d9f847502d",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53943,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10025.jsonl.gz",
+      "seed": 10025,
+      "sha256": "da225f0c2183b9ce9084fd6a9ca6c332b7f21aa1e963018d19428f10e93995cb",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54653,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10026.jsonl.gz",
+      "seed": 10026,
+      "sha256": "12b0a57e88934150519ba34d829656c796d3839f0b55faad4a694c36ae2238f3",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53465,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10027.jsonl.gz",
+      "seed": 10027,
+      "sha256": "33b584025031fed98f4edd71f091d4c7155b707c836f10926b4e507479401289",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53977,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10028.jsonl.gz",
+      "seed": 10028,
+      "sha256": "c00268893e7033765ec3a32f6cc7567c70feadf98b57de8d87a3eb107a5f868a",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54442,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10029.jsonl.gz",
+      "seed": 10029,
+      "sha256": "4bdf1d7395e8da530672e538bdfedda6d80b226833b595af6621b44107ee53fc",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53750,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10030.jsonl.gz",
+      "seed": 10030,
+      "sha256": "16f08d6484d32d3d878c80a420741e0b6a70b3fc4fabaa2da17d6fc505ce6646",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53460,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10031.jsonl.gz",
+      "seed": 10031,
+      "sha256": "ac52c34cd7c69b7c896cc82996a5d19a77c8e9f017973e173a2365cfd03312dd",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53808,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10032.jsonl.gz",
+      "seed": 10032,
+      "sha256": "5579f83c851c85b39685b6ec6954efa22281e7962837c3dfaf305044689ffe39",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53911,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10033.jsonl.gz",
+      "seed": 10033,
+      "sha256": "478f9c7e75ed09107527c8e67678b782af7a313f0b0cb9e7b0147ea352e6b3c2",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53814,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10034.jsonl.gz",
+      "seed": 10034,
+      "sha256": "3bf7b9c93eba32c3c351a4e1e9877d6981268c4dfac1a1134fc3be0a1bfc8727",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54645,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10035.jsonl.gz",
+      "seed": 10035,
+      "sha256": "4ce76105461e046bb156f3e1dabc2842bd9b74dde16b359fafcf57902a909caf",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 52769,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10036.jsonl.gz",
+      "seed": 10036,
+      "sha256": "de1341ffafadd1e75829643dd73313206baead7f0139e904bdacf61b43f4e6bf",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54023,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10037.jsonl.gz",
+      "seed": 10037,
+      "sha256": "f900d778244aac4e2ad2cb8ef08af5239c33b7d8d49d3012ce17bdb2e65989fa",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53978,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10038.jsonl.gz",
+      "seed": 10038,
+      "sha256": "054a1dc4b1b4b595114ce77308fe15258be9091d998f0f38d7d0dfb1ce1cf0b3",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53804,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10039.jsonl.gz",
+      "seed": 10039,
+      "sha256": "3262f44204345a904b84ac8a50feeb069d0f2bae4900c7add7067cbd16b3dd61",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54544,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10040.jsonl.gz",
+      "seed": 10040,
+      "sha256": "264d93e8b2cb8afde70b34f1b8b22759c05d57c69c0b2ffab807804bd70383ce",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54364,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10041.jsonl.gz",
+      "seed": 10041,
+      "sha256": "9839e39ffd1fa27dfb92274fd1d97c5f73260c9e3c917d66a71ab82b6dda2fa9",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53879,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10042.jsonl.gz",
+      "seed": 10042,
+      "sha256": "0922570d2dab79a79018febd0c72cc99c38f37091fdc8de08e85a8d1978a07be",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54526,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10043.jsonl.gz",
+      "seed": 10043,
+      "sha256": "657366389c83617845a6039a3edbb6c797ed5389e06965feaa5b75e7324ce4c7",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53813,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10044.jsonl.gz",
+      "seed": 10044,
+      "sha256": "49e70e19b7e8f72cf321eaed03c9539b2857bfe7b839c87f81a9eebf373c5cac",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53701,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10045.jsonl.gz",
+      "seed": 10045,
+      "sha256": "c9c94798320e41f5f5802042954a7bc5cfb3bc79c876107b0ddab622a84ad782",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53594,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10046.jsonl.gz",
+      "seed": 10046,
+      "sha256": "618c716661c74255811908d6560cfd015026b2bc9d924994c9c08961ba5b89ce",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53751,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10047.jsonl.gz",
+      "seed": 10047,
+      "sha256": "d400f64ace13eb73e45a01a62e57e11aad82ce94109f24d9e739fd7e1757d60f",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54365,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10048.jsonl.gz",
+      "seed": 10048,
+      "sha256": "26e035d8c3fe524e7bbe17aa7c7192186169239fbc332bdebbe7f4f07ecc25d1",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53494,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10049.jsonl.gz",
+      "seed": 10049,
+      "sha256": "4155e98f3a20207f78e9f2acdb384700e85096948774727e2265fbe0e00c812b",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53833,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10050.jsonl.gz",
+      "seed": 10050,
+      "sha256": "8e8fb70ad64858b2f15ad1b10c692de785af6ce16b3390ca9f699d53d5f89f6d",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54500,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10051.jsonl.gz",
+      "seed": 10051,
+      "sha256": "fc66e533b2c8e82c4dfcff7964d0c6d687c528203b9a9933d995043b8647c828",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54519,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10052.jsonl.gz",
+      "seed": 10052,
+      "sha256": "066c9ab6f77919269ebdf52b6169b6fd18cb08bfdc89909b01ee712bb56a7ae0",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54173,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10053.jsonl.gz",
+      "seed": 10053,
+      "sha256": "f6f1ca155b0f4d8405cd7d4aa9f8ee522a17db75a43eeb83dacb0982c78a46c0",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54060,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10054.jsonl.gz",
+      "seed": 10054,
+      "sha256": "01720939179e93b8df5196b942ef8536a5e09ae76d1cd98b40483659eee4b882",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53992,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10055.jsonl.gz",
+      "seed": 10055,
+      "sha256": "84cefa0d04f7da2e38a0663ce617baf54220ff9383f06c388e5bb77e453862df",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53800,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10056.jsonl.gz",
+      "seed": 10056,
+      "sha256": "4dd03c113d22435bd5172205c39bdf3bfc80870966fd5f7b888e11ebc6aebf79",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54028,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10057.jsonl.gz",
+      "seed": 10057,
+      "sha256": "54826bae6592cddb6cafb75030c999eac0e35502fcc1c5c151d62ecb0d20bcd7",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54065,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10058.jsonl.gz",
+      "seed": 10058,
+      "sha256": "f62fdb134b83cccd495394576909837b1a5cf7733799403acb240f45b0ffb5a8",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53529,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10059.jsonl.gz",
+      "seed": 10059,
+      "sha256": "be29de144b5582f670c141395d59d2b94cb6695ad147087f5f537626e03727d1",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54367,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10060.jsonl.gz",
+      "seed": 10060,
+      "sha256": "674dad369d7969c9e708c5686b458b8c309694b7da69c80cd0869d646e6226ba",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54562,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10061.jsonl.gz",
+      "seed": 10061,
+      "sha256": "bb7b02aca78b7bf93da1ee8023c7411dcc89b6ba59a794b0c6b78ce13055170a",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54132,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10062.jsonl.gz",
+      "seed": 10062,
+      "sha256": "aba9e83b82a86aaabd301400f2b72980d2dfc80d9e351b9ac94f4f24ff44e4ca",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53818,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10063.jsonl.gz",
+      "seed": 10063,
+      "sha256": "b350c3c59c819f44bdeb4d707f598ff706a5e995c43d877fc68c109b869a08dd",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54218,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10064.jsonl.gz",
+      "seed": 10064,
+      "sha256": "3b157ab3ac50fe4bc374615c94a0cee9ceede1870c49986f0a84840c94dc1598",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54138,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10065.jsonl.gz",
+      "seed": 10065,
+      "sha256": "135756b3a99e1b231c3ba15c3282c4042cafb2d0f69f409f2cc1baac2f418ac1",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53768,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10066.jsonl.gz",
+      "seed": 10066,
+      "sha256": "37440f5612d7784675bd48c3664b181ef98fa19654a900c5cacf36f2ab695555",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53730,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10067.jsonl.gz",
+      "seed": 10067,
+      "sha256": "945cb687dca6161b1c52ea15ae43a9ad17311d4b8e775a947b93eaef3b616d14",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53411,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10068.jsonl.gz",
+      "seed": 10068,
+      "sha256": "34ade739971a64302cdc81577dea3c700636b1db8422ab383a5770ec65eb8500",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53971,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10069.jsonl.gz",
+      "seed": 10069,
+      "sha256": "ecda9e5392d6352b14011d3912932e0465ee39f08f35740519e4b80ac070cf78",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54227,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10070.jsonl.gz",
+      "seed": 10070,
+      "sha256": "0acae8376e258e0b81f828211d641680de63b6acf0d89b81d86bffe804dcfa6c",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53644,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10071.jsonl.gz",
+      "seed": 10071,
+      "sha256": "513176c9788b567cc3734e09674fbd3538ed8179b76d746352cfaef73c920ca7",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53165,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10072.jsonl.gz",
+      "seed": 10072,
+      "sha256": "075778daa77b49b7dd5d7e390c79c70df354da719fe0cdc1d47af6c185c9a5a3",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53682,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10073.jsonl.gz",
+      "seed": 10073,
+      "sha256": "9f88dda75dc195f25943505543f1c1ab020db91318eb95fe5cc41c01f284dcbc",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53604,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10074.jsonl.gz",
+      "seed": 10074,
+      "sha256": "129b058a7e2f44a17ccfdd51415ccc5a68b00acb9a10ed70b636be0704a4eb48",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54191,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10075.jsonl.gz",
+      "seed": 10075,
+      "sha256": "2afa9c6c246e4ec2ecb58a4568f01070781441c2cb78be83dd60c137a37e6ec4",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54402,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10076.jsonl.gz",
+      "seed": 10076,
+      "sha256": "0def5d5c1eceed0eec849510828b2b5d49807a6d922aaf60260d50db47a84d40",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54694,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10077.jsonl.gz",
+      "seed": 10077,
+      "sha256": "453e77e9d2848f2b12d430b1379b102e687ab564a47d9c75eeff47891664e75a",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54556,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10078.jsonl.gz",
+      "seed": 10078,
+      "sha256": "3ab9bec358013ee7ed2df7bdb39823d9e927617f0984572e5ce6484332e5a13f",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53868,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10079.jsonl.gz",
+      "seed": 10079,
+      "sha256": "36d3f87c3c04ce923365571bef0bba27526bd8b740d6125076520e5a65e811e9",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54599,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10080.jsonl.gz",
+      "seed": 10080,
+      "sha256": "17a0c48e6ec2b2b5c48ae79ff32820f6c231e75b48121e5cd89ad4e62b85ce18",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54582,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10081.jsonl.gz",
+      "seed": 10081,
+      "sha256": "9120b96eb439d1dc3637eefff612dd244c6b82bf683167624824de74c993d4a0",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54328,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10082.jsonl.gz",
+      "seed": 10082,
+      "sha256": "3f1f7c4b8a084dd4c8d727e982cf7161943e340ad1987d124d2bc351a2035182",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54441,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10083.jsonl.gz",
+      "seed": 10083,
+      "sha256": "598ba3ee5244d815045ed9434565d84440ad3565094432b906abb6023b4d6566",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53789,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10084.jsonl.gz",
+      "seed": 10084,
+      "sha256": "6336447707410b1ac60fbc730cbe2d28908383a4150c5adbc50b5e6b688355b4",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53783,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10085.jsonl.gz",
+      "seed": 10085,
+      "sha256": "877c5a2de816f7432bdbe110edcf3fb1155ff76da68e871e08283c3f0eb0fa76",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53930,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10086.jsonl.gz",
+      "seed": 10086,
+      "sha256": "164d08c8d792aa1eaa5c6c07856e7045196ef3ef6a4ca35491d80ee1df33e3af",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54068,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10087.jsonl.gz",
+      "seed": 10087,
+      "sha256": "e65c7432538d3d5cacf76a8cbd6564c70dc95a29d7751d6e72f125319dd7398e",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53846,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10088.jsonl.gz",
+      "seed": 10088,
+      "sha256": "85a2ff7ea90cf9a0b4a94918acc4df8619a5a4ede89c3f9601cb9dfc5b61c1db",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53512,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10089.jsonl.gz",
+      "seed": 10089,
+      "sha256": "b7ceb9ff75fbaca4c4168ff606d9f191438851888d15e53fb223929d7f503dd8",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54147,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10090.jsonl.gz",
+      "seed": 10090,
+      "sha256": "e8f57848cd3abbf7feeb8620b00f280afead216130e877bebff933e5a23f6631",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54104,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10091.jsonl.gz",
+      "seed": 10091,
+      "sha256": "fd0abef7beee71b7dd31cbff5efa242255f731ff2faaefa310623504f84af5f2",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54070,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10092.jsonl.gz",
+      "seed": 10092,
+      "sha256": "9b1dd2b6efe9eb75cf17a46f0390fa85e7fb41260d4151bff24be60a9c79cf0d",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 52906,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10093.jsonl.gz",
+      "seed": 10093,
+      "sha256": "1f333e0cc9618b5d10b412ded3e0e39598c53ec5cec33df5a0a4850ccd17b4d3",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54361,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10094.jsonl.gz",
+      "seed": 10094,
+      "sha256": "c7b82b7ce467aa06a574b92028add8159f7027f5bd9628920a6e6ae5647d420b",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54161,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10095.jsonl.gz",
+      "seed": 10095,
+      "sha256": "de48b3f0ff2d3f1024a85b2431ddcb555e7e772fbe24d77428d33d65adf31a66",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 53884,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10096.jsonl.gz",
+      "seed": 10096,
+      "sha256": "7e19dd1e782fd67d88e287c638dee3d850028ca8fb7179148ecffcb131d31f0b",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54281,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10097.jsonl.gz",
+      "seed": 10097,
+      "sha256": "62c18ec5543a3478567d49555d1ddc2aca68d3828531adfc886bbf8c586cd758",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54379,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10098.jsonl.gz",
+      "seed": 10098,
+      "sha256": "d00c9f58af316ca8f42777e69dc1143cc78ccc8deea8de0ece489116048f5f54",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    },
+    {
+      "bytes": 54040,
+      "frames": 720,
+      "path": "reference\\heldout\\pass_pass_seed10099.jsonl.gz",
+      "seed": 10099,
+      "sha256": "2130da6c9ad6b5688ebccfa83b026c991cb5789b7d7e449204c5f2f4ba3a2475",
+      "terminal_reward": [
+        3000.0,
+        3000.0
+      ]
+    }
+  ],
+  "scenario": "pass_pass_heldout",
+  "schema": "kaggriculture_heldout_reference_traces_v1",
+  "total_frames": 72000
+}

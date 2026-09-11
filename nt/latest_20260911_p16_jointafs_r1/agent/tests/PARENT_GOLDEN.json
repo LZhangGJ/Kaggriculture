@@ -1,0 +1,14 @@
+[
+  {
+    "file": "golden/parent/none_ahmed_v27_2609178000_0.json.gz",
+    "opening": "none",
+    "sha256": "49b08b5b792437ccebd220f7b5080b48ecdfc5c099413d1437f7f06c45b24e5c",
+    "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+  },
+  {
+    "file": "golden/parent/m12_ahmed_v27_2609178000_0.json.gz",
+    "opening": "m12",
+    "sha256": "f1f9f53ab9ce89ea0899568e7ab03e3ad119852de938c8f31c73e17e45bedbf9",
+    "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c"
+  }
+]

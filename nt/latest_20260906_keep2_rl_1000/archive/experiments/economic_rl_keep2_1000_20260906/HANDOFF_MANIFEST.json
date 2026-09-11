@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "count": 15,
+  "scope": "Supplemental completion audit, milestone delivery record and human-readable handoff index. Immutable training/holdout payloads are covered recursively by MANIFEST_INDEX.json.",
+  "files": {
+    "FINAL_ACCEPTANCE_AND_INDEX_ZH.md": {
+      "bytes": 10547,
+      "sha256": "5a9cb6441fa0efcd8ff554be1185dd3b1f2abc148751e3c5a2db29b7e8f3fb2c"
+    },
+    "USER_MILESTONE_REPORTS_ZH.md": {
+      "bytes": 11285,
+      "sha256": "edb76ac6acab0a4f0ff03b5d526daacfa96af16b68b558453a9992f429201639"
+    },
+    "MANIFEST_INDEX.json": {
+      "bytes": 2280,
+      "sha256": "d57e5af89daa0f667ee811fe56e684ccf8b46a1f619f92ccaf86bfa76b1eaf4c"
+    },
+    "diagnostics/check_monitor_reproduction.py": {
+      "bytes": 1767,
+      "sha256": "b5cdb0a80d33b1941693ebf0970bb23ef085667b97baf75cea4720474c9b28fc"
+    },
+    "diagnostics/check_schedule.py": {
+      "bytes": 2333,
+      "sha256": "7575866a21a4ceb08fbbe29a34ae819777268b370ca4c424f1ea12136737eab2"
+    },
+    "diagnostics/COMPLETION_AUDIT.json": {
+      "bytes": 1434,
+      "sha256": "850a2a32d3287a76487613a580cc3170fe8169441ae2f82317686dd4721d9204"
+    },
+    "diagnostics/completion_audit.py": {
+      "bytes": 5153,
+      "sha256": "718d4f5098fbcc9358525896bc6df4d6b8d47eefd02906587d94670a1ec41e06"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0400.json": {
+      "bytes": 1300,
+      "sha256": "98226c48197f2318414a489f0eee8f4cbee6bae487f1a7445a12e2d2dc078cbf"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0500.json": {
+      "bytes": 1300,
+      "sha256": "58dad855cc9029f026827bb741365519b70f3f6c39e99858113a8170ce81c19a"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0600.json": {
+      "bytes": 1300,
+      "sha256": "15521e96deaba8568de433964f48b219c400b2c22bd0e90f3c20f1846043777f"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0700.json": {
+      "bytes": 1300,
+      "sha256": "496624983416af2f2c364ea529cb12463f723e405b9797ea116c24d6f329be9c"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0800.json": {
+      "bytes": 1300,
+      "sha256": "4f3d9433b4338c759e790c11f8d03015215c31f4369afbfb642b8d5f9b2858d8"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_0900.json": {
+      "bytes": 1300,
+      "sha256": "b201b07bb721c22d9837a7affd03328c955f00b598ce63f8f0082187b85b111a"
+    },
+    "diagnostics/MONITOR_REPRODUCTION_1000.json": {
+      "bytes": 1301,
+      "sha256": "8ed35a41e53b59768711dc17c1224fbd63b2536439c16e787cc7059cc721b6c2"
+    },
+    "diagnostics/SCHEDULE_ACCEPTANCE.json": {
+      "bytes": 2520,
+      "sha256": "64b3d76da87f504b80d96cea202e348789e07a35b0590e46e812bc85806dffaa"
+    }
+  }
+}

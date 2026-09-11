@@ -1,0 +1,84 @@
+[{"stream_name":"stderr","time":15.949472759,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":15.949581559,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":15.949586633,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":15.949589813,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":17.10654131,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":17.106618113,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":17.10662549,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":17.106630189,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.065670026,"data":"{'agent': 'V21-R1', 'main_py_sha256': 'c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8', 'archive_sha256': 'd65410a4fc8a31226055e43085131468ac8af5721aabdf3593cb8eade59cabe3', 'archive_members': ['main.py']}\n"}
+,{"stream_name":"stdout","time":19.065733826,"data":"BOOTSTRAP ONLY: submission.tar.gz has NOT been created; training must finish first.\n"}
+,{"stream_name":"stdout","time":19.120534385,"data":"{\n"}
+,{"stream_name":"stdout","time":19.120604559,"data":"  \"policy\": \"V4 real BC + DAgger\",\n"}
+,{"stream_name":"stdout","time":19.120612297,"data":"  \"teacher_sha\": \"c6f96a8521dc9aa369b6f27e5b36b9d481e5c1688f50c8ca215c3bb53f1f9eb8\",\n"}
+,{"stream_name":"stdout","time":19.120618241,"data":"  \"deep_mode\": true,\n"}
+,{"stream_name":"stdout","time":19.120622598,"data":"  \"workers\": 4,\n"}
+,{"stream_name":"stdout","time":19.12062733,"data":"  \"checkpoints\": [\n"}
+,{"stream_name":"stdout","time":19.120631627,"data":"    1,\n"}
+,{"stream_name":"stdout","time":19.120636027,"data":"    72,\n"}
+,{"stream_name":"stdout","time":19.120640287,"data":"    144,\n"}
+,{"stream_name":"stdout","time":19.120644582,"data":"    216,\n"}
+,{"stream_name":"stdout","time":19.120648574,"data":"    360\n"}
+,{"stream_name":"stdout","time":19.120652419,"data":"  ],\n"}
+,{"stream_name":"stdout","time":19.120656888,"data":"  \"time_budget_hours\": 5.25,\n"}
+,{"stream_name":"stdout","time":19.120661928,"data":"  \"accelerator\": \"CPU / None\"\n"}
+,{"stream_name":"stdout","time":19.120666139,"data":"}\n"}
+,{"stream_name":"stderr","time":55.107526155,"data":"\u001b[92m19:47:36 - LiteLLM:WARNING\u001b[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: [Errno -3] Temporary failure in name resolution. Falling back to local backup.\n"}
+,{"stream_name":"stderr","time":55.107569108,"data":"\n"}
+,{"stream_name":"stderr","time":55.107577868,"data":"\u001b[92m19:47:36 - LiteLLM:WARNING\u001b[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: [Errno -3] Temporary failure in name resolution. Falling back to local backup.\n"}
+,{"stream_name":"stdout","time":66.514575151,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: Successfully loaded OpenSpiel environments: 24.\n"}
+,{"stream_name":"stdout","time":66.518364704,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_amazons\n"}
+,{"stream_name":"stdout","time":66.518590403,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_backgammon\n"}
+,{"stream_name":"stdout","time":66.520389549,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_checkers\n"}
+,{"stream_name":"stdout","time":66.52202286,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_chess\n"}
+,{"stream_name":"stdout","time":66.524500572,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_clobber\n"}
+,{"stream_name":"stdout","time":66.527040279,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game\n"}
+,{"stream_name":"stdout","time":66.530050959,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_coin_game_arena\n"}
+,{"stream_name":"stdout","time":66.532379303,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_connect_four\n"}
+,{"stream_name":"stdout","time":66.533892702,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_dark_hex\n"}
+,{"stream_name":"stdout","time":66.535107725,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_gin_rummy\n"}
+,{"stream_name":"stdout","time":66.536569371,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_go\n"}
+,{"stream_name":"stdout","time":66.538951545,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_goofspiel\n"}
+,{"stream_name":"stdout","time":66.540304072,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hearts\n"}
+,{"stream_name":"stdout","time":66.541484688,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_hex\n"}
+,{"stream_name":"stdout","time":66.543205383,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_lines_of_action\n"}
+,{"stream_name":"stdout","time":66.544517616,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_matching_pennies_3p\n"}
+,{"stream_name":"stdout","time":66.546378995,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_oshi_zumo\n"}
+,{"stream_name":"stdout","time":66.547403331,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_othello\n"}
+,{"stream_name":"stdout","time":66.54841161,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_game\n"}
+,{"stream_name":"stdout","time":66.549555288,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_tic_tac_toe\n"}
+,{"stream_name":"stdout","time":66.550596886,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_y\n"}
+,{"stream_name":"stdout","time":66.551917542,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_universal_poker\n"}
+,{"stream_name":"stdout","time":66.552964188,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_repeated_poker\n"}
+,{"stream_name":"stdout","time":66.555470304,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    open_spiel_python_repeated_pokerkit\n"}
+,{"stream_name":"stdout","time":66.556720257,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: OpenSpiel games skipped: 1.\n"}
+,{"stream_name":"stdout","time":66.558397429,"data":"[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO:    snake\n"}
+,{"stream_name":"stderr","time":69.44766213,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":69.447700346,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":69.447725757,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":69.44788542,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":69.44789583,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":69.44839163,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":69.448417646,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":69.448423063,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":69.448434546,"data":"Exception encountered at \"In [3]\":\n"}
+,{"stream_name":"stderr","time":69.448437752,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":69.448440614,"data":"RuntimeError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":69.448443471,"data":"/tmp/ipykernel_15/4199132028.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":69.448446628,"data":"     18 \n"}
+,{"stream_name":"stderr","time":69.448449434,"data":"     19 if _vt(_ver) and _vt(_ver) \u003c (1,32,7):\n"}
+,{"stream_name":"stderr","time":69.448452304,"data":"---\u003e 20     raise RuntimeError(f'kaggle-environments {_ver} is too old; V4 requires \u003e=1.32.7 to avoid training on wrong dynamics')\n"}
+,{"stream_name":"stderr","time":69.448459467,"data":"     21 \n"}
+,{"stream_name":"stderr","time":69.448462145,"data":"     22 _probe = make('kaggriculture', configuration={'episodeSteps':720,'seed':123456,'townCenterSellInterval':24}, debug=False)\n"}
+,{"stream_name":"stderr","time":69.448465222,"data":"\n"}
+,{"stream_name":"stderr","time":69.448467827,"data":"RuntimeError: kaggle-environments 1.29.3 is too old; V4 requires \u003e=1.32.7 to avoid training on wrong dynamics\n"}
+,{"stream_name":"stderr","time":69.448471163,"data":"\n"}
+,{"stream_name":"stderr","time":72.873381358,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":72.873424719,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":73.119039979,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":73.119165752,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":74.14193337,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":74.625133059,"data":"[NbConvertApp] Writing 228748 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":78.487983893,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":79.937989989,"data":"[NbConvertApp] Writing 649385 bytes to __results__.html\n"}
+]

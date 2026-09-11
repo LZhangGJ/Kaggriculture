@@ -1,0 +1,7 @@
+build/*
+!build/revision4/
+build/revision4/*
+!build/revision4/route3.so
+!build/revision4/route3.BUILD.json
+__pycache__/
+*.pyc

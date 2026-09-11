@@ -1,0 +1,281 @@
+{
+  "schema": "kaggriculture.high_potential_exact5_mirror_traces.v1",
+  "generated_at_utc": "2026-08-19T10:59:21.520412+00:00",
+  "official_package_version": "1.32.7",
+  "seeds": [
+    98301,
+    98302
+  ],
+  "seat_swapped": true,
+  "mirror": true,
+  "opponents": [
+    {
+      "name": "boatlee_v20_multi_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\boatlee_v20_multi_route\\main.py",
+      "sha256": "8AC34ABCE129CF5C9456776C90EDF7D2233B3A280BBDCF7622628825EF3669A0"
+    },
+    {
+      "name": "rayk_k320_adaptive_rank1",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\rayk_k320_adaptive_rank1\\main.py",
+      "sha256": "6C709F6D3CE6CF221A9495DE7E716FCD1B660E3BBC8EE5679B63233D0265A812"
+    },
+    {
+      "name": "tetsutani_adaptive_premium_queue",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\tetsutani_adaptive_premium_queue\\main.py",
+      "sha256": "CFABF0431449145124DCA4F2A7487F91A5AAED1F37B8AF8C04130DDB72A9AD88"
+    },
+    {
+      "name": "kaito_v27_midgame_reset",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\kaito_v27_midgame_reset\\main.py",
+      "sha256": "F48C21166EAC68D1B05A401F04F94A2EB6154E65415AF64893672365FF33C7B8"
+    },
+    {
+      "name": "flexonafft_v59_multi_route",
+      "path": "E:\\ai_coding\\kaggle\\kaggriculture\\references\\public_high_potential_20260819\\flexonafft_v59_multi_route\\main.py",
+      "sha256": "34193F0CA7FDC77DB52CFDADF61596D42CBC2FFD3D8B7903819B0AD78A064A2A"
+    }
+  ],
+  "traces": [
+    {
+      "opponent": "boatlee_v20_multi_route",
+      "seed": 98301,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_boatlee_v20_multi_route_seat0_seed98301.jsonl.gz",
+      "file_sha256": "382EEF5C09BA1BB05431B1C01465D8D7DB67A28D8A58007911F904AFEB525643",
+      "frames": 720,
+      "terminal_reward": [
+        70371.0,
+        70371.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v20_multi_route",
+      "seed": 98302,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_boatlee_v20_multi_route_seat0_seed98302.jsonl.gz",
+      "file_sha256": "F0B802E48230F4FB856C34414FCB7B58F4F203C32449FC8F52E829202D31A887",
+      "frames": 720,
+      "terminal_reward": [
+        126439.0,
+        126439.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v20_multi_route",
+      "seed": 98301,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_boatlee_v20_multi_route_seat1_seed98301.jsonl.gz",
+      "file_sha256": "4F99A0BB462D6B0ACB13AB0D1BA66E965012152ECBC6DD7B7082F98CC5744DC6",
+      "frames": 720,
+      "terminal_reward": [
+        70371.0,
+        70371.0
+      ]
+    },
+    {
+      "opponent": "boatlee_v20_multi_route",
+      "seed": 98302,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_boatlee_v20_multi_route_seat1_seed98302.jsonl.gz",
+      "file_sha256": "B6C91CBF0C66F7F1BA83CDD7990A445D6E0070EC040C735944DA10A0CB237C48",
+      "frames": 720,
+      "terminal_reward": [
+        126439.0,
+        126439.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 98301,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed98301.jsonl.gz",
+      "file_sha256": "7C4DAA9C6BC39D249D4A17506E536E74BBC6B515A896A5317B91FF2085E89C3A",
+      "frames": 720,
+      "terminal_reward": [
+        68184.0,
+        68184.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 98302,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_rayk_k320_adaptive_rank1_seat0_seed98302.jsonl.gz",
+      "file_sha256": "160677CA0C1F8B08FD1A0C5FBF15557661BE3A2D7E840CD917A29A68EC0B929E",
+      "frames": 720,
+      "terminal_reward": [
+        126496.0,
+        126496.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 98301,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed98301.jsonl.gz",
+      "file_sha256": "A0A1573D989192F0628D010F4D99AFF2104FC89E92618A6D918EB003F96D839D",
+      "frames": 720,
+      "terminal_reward": [
+        68184.0,
+        68184.0
+      ]
+    },
+    {
+      "opponent": "rayk_k320_adaptive_rank1",
+      "seed": 98302,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_rayk_k320_adaptive_rank1_seat1_seed98302.jsonl.gz",
+      "file_sha256": "E927EC270B4CB623272D60C5A1D019F9A66491946940E983C4E7A6E38B231F5D",
+      "frames": 720,
+      "terminal_reward": [
+        126496.0,
+        126496.0
+      ]
+    },
+    {
+      "opponent": "tetsutani_adaptive_premium_queue",
+      "seed": 98301,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_tetsutani_adaptive_premium_queue_seat0_seed98301.jsonl.gz",
+      "file_sha256": "84A4C95CB0155BE4CD32462827BAAA7903AA38844DCF74D752A210638719D46A",
+      "frames": 720,
+      "terminal_reward": [
+        70371.0,
+        70371.0
+      ]
+    },
+    {
+      "opponent": "tetsutani_adaptive_premium_queue",
+      "seed": 98302,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_tetsutani_adaptive_premium_queue_seat0_seed98302.jsonl.gz",
+      "file_sha256": "AD0EBD881B83A0E1E2217BBF2BC27B38B878F47DAE51B9C9F59ADA495B576D4E",
+      "frames": 720,
+      "terminal_reward": [
+        126548.0,
+        126548.0
+      ]
+    },
+    {
+      "opponent": "tetsutani_adaptive_premium_queue",
+      "seed": 98301,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_tetsutani_adaptive_premium_queue_seat1_seed98301.jsonl.gz",
+      "file_sha256": "A890B8648FFCF7350FF65D213399CB6644BDFA1BA8EE296D63F0E07A4AC08539",
+      "frames": 720,
+      "terminal_reward": [
+        70371.0,
+        70371.0
+      ]
+    },
+    {
+      "opponent": "tetsutani_adaptive_premium_queue",
+      "seed": 98302,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_tetsutani_adaptive_premium_queue_seat1_seed98302.jsonl.gz",
+      "file_sha256": "7B134D71BA90B165F2609E67A8391AD2E80CFACF7E6C18DDDCC644472A8FE368",
+      "frames": 720,
+      "terminal_reward": [
+        126548.0,
+        126548.0
+      ]
+    },
+    {
+      "opponent": "kaito_v27_midgame_reset",
+      "seed": 98301,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_kaito_v27_midgame_reset_seat0_seed98301.jsonl.gz",
+      "file_sha256": "2F035FD94BDC58227D19F81627EE10F25A59D591AA679ED43AC62953DADC1E32",
+      "frames": 720,
+      "terminal_reward": [
+        90101.0,
+        90101.0
+      ]
+    },
+    {
+      "opponent": "kaito_v27_midgame_reset",
+      "seed": 98302,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_kaito_v27_midgame_reset_seat0_seed98302.jsonl.gz",
+      "file_sha256": "27DC860540AB3BC212E03FA8A20EE3A429B05425A92E8207ECBE272F7EB8BEA9",
+      "frames": 720,
+      "terminal_reward": [
+        132719.0,
+        132719.0
+      ]
+    },
+    {
+      "opponent": "kaito_v27_midgame_reset",
+      "seed": 98301,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_kaito_v27_midgame_reset_seat1_seed98301.jsonl.gz",
+      "file_sha256": "5990F0EA1FFE319CF39CE43E6E2A492819CC15252FD10079C8CAA8FB823072B4",
+      "frames": 720,
+      "terminal_reward": [
+        90101.0,
+        90101.0
+      ]
+    },
+    {
+      "opponent": "kaito_v27_midgame_reset",
+      "seed": 98302,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_kaito_v27_midgame_reset_seat1_seed98302.jsonl.gz",
+      "file_sha256": "5531167ECFB03102DE9045529D7E27293CEF06D2593C3E045E19A139B6CCFAD3",
+      "frames": 720,
+      "terminal_reward": [
+        132719.0,
+        132719.0
+      ]
+    },
+    {
+      "opponent": "flexonafft_v59_multi_route",
+      "seed": 98301,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_flexonafft_v59_multi_route_seat0_seed98301.jsonl.gz",
+      "file_sha256": "A03D20DF6DBEED28EA787F75CE117275C57099144BF3DDA65887A19C0765381C",
+      "frames": 720,
+      "terminal_reward": [
+        87257.0,
+        87257.0
+      ]
+    },
+    {
+      "opponent": "flexonafft_v59_multi_route",
+      "seed": 98302,
+      "candidate_seat": 0,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_flexonafft_v59_multi_route_seat0_seed98302.jsonl.gz",
+      "file_sha256": "6D70967B0994A9B6235010A7BB0CE5F0CC47C53AA9F3FB5F3BB8BA1721669750",
+      "frames": 720,
+      "terminal_reward": [
+        136970.0,
+        136970.0
+      ]
+    },
+    {
+      "opponent": "flexonafft_v59_multi_route",
+      "seed": 98301,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_flexonafft_v59_multi_route_seat1_seed98301.jsonl.gz",
+      "file_sha256": "356D92C3E3F4D67BB65C66026EA54AD58F22E6FCBD80644565C6DC5341595769",
+      "frames": 720,
+      "terminal_reward": [
+        87257.0,
+        87257.0
+      ]
+    },
+    {
+      "opponent": "flexonafft_v59_multi_route",
+      "seed": 98302,
+      "candidate_seat": 1,
+      "path": "experiments/expert_business_agent_v2/artifacts/high_potential_exact5_mirror_traces_v1/candidate_flexonafft_v59_multi_route_seat1_seed98302.jsonl.gz",
+      "file_sha256": "10269FA88A7E7DE27948B0AF2D78D0D7F4F29BBC20FF4B6BAAA1C9A26F6AEB17",
+      "frames": 720,
+      "terminal_reward": [
+        136970.0,
+        136970.0
+      ]
+    }
+  ],
+  "ok": true
+}

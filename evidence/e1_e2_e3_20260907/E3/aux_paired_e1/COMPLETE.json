@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "rounds": 300,
+  "keep_bonus": 2.0,
+  "aux_weight": 0.1,
+  "seconds": 3634.3307749349988,
+  "final_test": {
+    "games": 1400,
+    "wins": 911,
+    "win_rate": 0.6507142857142857,
+    "mean_margin": 7009.0257142857145
+  }
+}

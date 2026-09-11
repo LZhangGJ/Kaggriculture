@@ -1,0 +1,130 @@
+{
+  "schema": "kaggriculture.exact5_crossplay.v1",
+  "generated_at_utc": "2026-08-20T09:42:43.886760+00:00",
+  "device": "cuda:0",
+  "seed_start": 154001,
+  "games_per_seat": 32,
+  "results": [
+    {
+      "candidate": "boatlee_v20",
+      "opponent": "flex_v59",
+      "candidate_seat": 0,
+      "games": 32,
+      "win_rate": 0.625,
+      "mean_margin": 5920.65625,
+      "candidate_cash_mean": 96944.15625,
+      "opponent_cash_mean": 91023.5,
+      "all_done": true,
+      "compile_and_run_seconds": 44.238516128
+    },
+    {
+      "candidate": "boatlee_v20",
+      "opponent": "flex_v59",
+      "candidate_seat": 1,
+      "games": 32,
+      "win_rate": 0.53125,
+      "mean_margin": 3609.6875,
+      "candidate_cash_mean": 94786.46875,
+      "opponent_cash_mean": 91176.78125,
+      "all_done": true,
+      "compile_and_run_seconds": 49.840394343
+    },
+    {
+      "candidate": "ray_k320",
+      "opponent": "flex_v59",
+      "candidate_seat": 0,
+      "games": 32,
+      "win_rate": 0.65625,
+      "mean_margin": 6161.90625,
+      "candidate_cash_mean": 97185.40625,
+      "opponent_cash_mean": 91023.5,
+      "all_done": true,
+      "compile_and_run_seconds": 52.46301679599999
+    },
+    {
+      "candidate": "ray_k320",
+      "opponent": "flex_v59",
+      "candidate_seat": 1,
+      "games": 32,
+      "win_rate": 0.53125,
+      "mean_margin": 3855.0,
+      "candidate_cash_mean": 95031.78125,
+      "opponent_cash_mean": 91176.78125,
+      "all_done": true,
+      "compile_and_run_seconds": 51.10606740699998
+    },
+    {
+      "candidate": "tetsutani",
+      "opponent": "flex_v59",
+      "candidate_seat": 0,
+      "games": 32,
+      "win_rate": 0.625,
+      "mean_margin": 5920.65625,
+      "candidate_cash_mean": 96944.15625,
+      "opponent_cash_mean": 91023.5,
+      "all_done": true,
+      "compile_and_run_seconds": 50.47556914500001
+    },
+    {
+      "candidate": "tetsutani",
+      "opponent": "flex_v59",
+      "candidate_seat": 1,
+      "games": 32,
+      "win_rate": 0.53125,
+      "mean_margin": 3609.6875,
+      "candidate_cash_mean": 94786.46875,
+      "opponent_cash_mean": 91176.78125,
+      "all_done": true,
+      "compile_and_run_seconds": 50.42069995899999
+    },
+    {
+      "candidate": "kaito_v27",
+      "opponent": "flex_v59",
+      "candidate_seat": 0,
+      "games": 32,
+      "win_rate": 0.0,
+      "mean_margin": -18798.78125,
+      "candidate_cash_mean": 81533.65625,
+      "opponent_cash_mean": 100332.4375,
+      "all_done": true,
+      "compile_and_run_seconds": 26.73697036499999
+    },
+    {
+      "candidate": "kaito_v27",
+      "opponent": "flex_v59",
+      "candidate_seat": 1,
+      "games": 32,
+      "win_rate": 0.0,
+      "mean_margin": -18320.40625,
+      "candidate_cash_mean": 79990.625,
+      "opponent_cash_mean": 98311.03125,
+      "all_done": true,
+      "compile_and_run_seconds": 26.870236025999986
+    },
+    {
+      "candidate": "flex_v59",
+      "opponent": "flex_v59",
+      "candidate_seat": 0,
+      "games": 32,
+      "win_rate": 0.25,
+      "mean_margin": -11.34375,
+      "candidate_cash_mean": 93009.125,
+      "opponent_cash_mean": 93020.46875,
+      "all_done": true,
+      "compile_and_run_seconds": 27.62443622899997
+    },
+    {
+      "candidate": "flex_v59",
+      "opponent": "flex_v59",
+      "candidate_seat": 1,
+      "games": 32,
+      "win_rate": 0.15625,
+      "mean_margin": 11.34375,
+      "candidate_cash_mean": 93020.46875,
+      "opponent_cash_mean": 93009.125,
+      "all_done": true,
+      "compile_and_run_seconds": 26.752342319000036
+    }
+  ],
+  "status": "PASS"
+}

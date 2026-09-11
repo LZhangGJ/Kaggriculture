@@ -1,0 +1,59 @@
+{
+  "schema": "kaggriculture.fc15-public-replay-counterfactual.v1",
+  "generated_at_utc": "2026-08-22T18:29:54.484603+00:00",
+  "status": "PASS",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "official_package_version": "1.32.7",
+  "episode_id": 96596865,
+  "seed": 1101503837,
+  "team_names": [
+    "kt-Kitayama",
+    "QQ Farming"
+  ],
+  "own_seat": 1,
+  "repeated_candidate_batch": 128,
+  "recorded_replay_parity": {
+    "official_money": [
+      58492,
+      55581
+    ],
+    "jax_money": [
+      58492,
+      55581
+    ],
+    "exact": true
+  },
+  "rows": [
+    {
+      "candidate": "fc15",
+      "target_route": null,
+      "own_cash": 55581,
+      "recorded_opponent_cash_under_counterfactual": 58492,
+      "margin": -2911
+    },
+    {
+      "candidate": "fc16",
+      "target_route": null,
+      "own_cash": 55581,
+      "recorded_opponent_cash_under_counterfactual": 58492,
+      "margin": -2911
+    },
+    {
+      "candidate": "fc16_force_r0",
+      "target_route": 0,
+      "own_cash": 55783,
+      "recorded_opponent_cash_under_counterfactual": 58482,
+      "margin": -2699
+    },
+    {
+      "candidate": "boatlee_v21",
+      "target_route": null,
+      "own_cash": 55660,
+      "recorded_opponent_cash_under_counterfactual": 58393,
+      "margin": -2733
+    }
+  ],
+  "elapsed_seconds": 222.37136824300023,
+  "truth_boundary": "The opponent action requests are frozen from the public Replay. This is a same-seed local causal probe, not a responsive-opponent Arena estimate."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "kaggriculture.high_potential_exact5_gpu_benchmark.v1",
+  "generated_at_utc": "2026-08-19T11:13:28.904815+00:00",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "batch": 2048,
+  "steps": 719,
+  "all_done": true,
+  "results": [
+    {
+      "agent": "boatlee_v20_multi_route",
+      "batch": 2048,
+      "compile_and_first_seconds": 34.75772416899997,
+      "steady_seconds": 7.990509655999972,
+      "steady_games_per_second": 256.3040517024071,
+      "steady_transitions_per_second": 184282.6131740307,
+      "all_done": true,
+      "cash_mean": 154476.08203125,
+      "cash_min": 53786,
+      "cash_max": 199407
+    },
+    {
+      "agent": "rayk_k320_adaptive_rank1",
+      "batch": 2048,
+      "compile_and_first_seconds": 40.472168454999974,
+      "steady_seconds": 7.971339437999973,
+      "steady_games_per_second": 256.920435508872,
+      "steady_transitions_per_second": 184725.79313087897,
+      "all_done": true,
+      "cash_mean": 154824.26171875,
+      "cash_min": 54026,
+      "cash_max": 199647
+    },
+    {
+      "agent": "tetsutani_adaptive_premium_queue",
+      "batch": 2048,
+      "compile_and_first_seconds": 39.95223300500004,
+      "steady_seconds": 7.67812707600001,
+      "steady_games_per_second": 266.73171461326274,
+      "steady_transitions_per_second": 191780.1028069359,
+      "all_done": true,
+      "cash_mean": 154476.08203125,
+      "cash_min": 53786,
+      "cash_max": 199407
+    },
+    {
+      "agent": "kaito_v27_midgame_reset",
+      "batch": 2048,
+      "compile_and_first_seconds": 22.807787105999978,
+      "steady_seconds": 5.699422691999985,
+      "steady_games_per_second": 359.33463978284726,
+      "steady_transitions_per_second": 258361.60600386717,
+      "all_done": true,
+      "cash_mean": 153141.85693359375,
+      "cash_min": 64979,
+      "cash_max": 198695
+    },
+    {
+      "agent": "flexonafft_v59_multi_route",
+      "batch": 2048,
+      "compile_and_first_seconds": 21.96374333299991,
+      "steady_seconds": 5.8545888830000195,
+      "steady_games_per_second": 349.8110697314343,
+      "steady_transitions_per_second": 251514.1591369013,
+      "all_done": true,
+      "cash_mean": 152937.75146484375,
+      "cash_min": 69707,
+      "cash_max": 196023
+    }
+  ]
+}
