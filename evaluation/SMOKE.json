@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "platform": "Ubuntu 24.04 / CPython 3.12 / Linux x86-64",
+  "simulator": "Shipped frozen _pool_sim bridge dynamically linked to original compiled P16 engine; no rebuild",
+  "seed": 260911,
+  "opponents": 15,
+  "decisions_per_opponent": 4,
+  "independent_process_per_opponent": true,
+  "scope": "Import, required assets, action shape and four live initial steps against PASS. Not a complete match, strength comparison or timeout certification.",
+  "rows": [
+    {
+      "id": "soil_v219g",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "moon_v215",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "flexon_v5",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "market_smart_v8",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "nagatakengo_v70",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "5a7b077b08dbe67068c6dae54a6213b159b2fad88c998bd01a7fe4d3fcf14671"
+    },
+    {
+      "id": "aurax_reactive_v1",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "thomas_955_v2",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "27b42343ccd6b98457d3d284eeb0b10ed34fdc78c0f46ecc3563fb04b32f9426"
+    },
+    {
+      "id": "shop0909",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "aurax_shop_v2",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "seven_turn",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "ahmed_v27",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "ea28a070796f163f5e9563c23c8d7966652053e2c762c1b25b403038c78e8ef8"
+    },
+    {
+      "id": "submission_56140347",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "b9ae4334f0d0a99dd548887fd707aa35b97d07a081e8fff4ae62aa098a44c014"
+    },
+    {
+      "id": "submission_56140351",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "b9ae4334f0d0a99dd548887fd707aa35b97d07a081e8fff4ae62aa098a44c014"
+    },
+    {
+      "id": "submission_56146577",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "b9ae4334f0d0a99dd548887fd707aa35b97d07a081e8fff4ae62aa098a44c014"
+    },
+    {
+      "id": "submission_56149565",
+      "status": "PASS",
+      "decisions": 4,
+      "action_sha256": "b9ae4334f0d0a99dd548887fd707aa35b97d07a081e8fff4ae62aa098a44c014"
+    }
+  ]
+}

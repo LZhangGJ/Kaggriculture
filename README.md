@@ -9,6 +9,9 @@ The latter includes both original JointAFS submissions and the separately
 identified workflow-repair builds. See the [publication record](docs/agent_approaches/PUBLICATION.md)
 for provenance and validation.
 
+The [tools guide](TOOLS.md) documents the compiled match simulator, replay tools,
+and the [complete 15-agent evaluation pool](evaluation/opponents/).
+
 ## Original simulation lab
 
 This workspace contains the official Kaggriculture 1.32.6 engine, selected public

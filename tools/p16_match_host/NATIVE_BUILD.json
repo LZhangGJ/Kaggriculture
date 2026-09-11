@@ -1,0 +1,31 @@
+{
+  "command": [
+    "g++-13",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-I/home/lzhang/kag/nt/latest_20260906_c3_f3_j7c3_search/.venv/lib/python3.12/site-packages/pybind11/include",
+    "-I/usr/include/python3.12",
+    "-I/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/experiments/r2p16_route_economics_20260910/baseline/policy/executor/vendor",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/experiments/r2p16_vs_route_agent_pool_20260910/native_bridge.cpp",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/experiments/r2p16_route_economics_20260910/baseline/policy/startupsupply2.so",
+    "-o",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/experiments/r2p16_vs_route_agent_pool_20260910/_pool_sim.cpython-312-x86_64-linux-gnu.so"
+  ],
+  "engine": "Existing P16 compiled simulator, dynamically linked; no simulator rebuild",
+  "hashes": {
+    "experiments/r2p16_vs_route_agent_pool_20260910/build_native.py": "9a0ac69c83d0d460c4402f49cb20fe9c6dbc6e73024e1875f2fa22871339de7d",
+    "experiments/r2p16_vs_route_agent_pool_20260910/native_bridge.cpp": "8521f2a2f2675ea8701d592674e43fb32a5246da70995ca3b78f86a671c4882b",
+    "experiments/r2p16_vs_route_agent_pool_20260910/native_audit.inc": "96542e5068f966abb46f2f07a38040fb8838f956bbfaaf4781d41239e9b8470f",
+    "Kaggriculture/nt/latest_20260909_t2_r1_r2/arena/panel.cpp": "6e980c69979fce94137fabfd6d53b095eb2418b0b05300215bffdb86981ab9d5",
+    "experiments/r2p16_route_economics_20260910/baseline/policy/startupsupply2.so": "4d7ef55bb79e4b312445a67628dd15609421e8c9afff21e8192a9b1b055f875b",
+    "experiments/r2p16_vs_route_agent_pool_20260910/_pool_sim.cpython-312-x86_64-linux-gnu.so": "9f56f04c642212ea2a7720e95fb8c0f6f8989ad826904622488bc8ed298cc0b7",
+    "experiments/r2p16_route_economics_20260910/baseline/policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+    "experiments/r2p16_route_economics_20260910/baseline/policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da"
+  },
+  "dynamic_dependencies": "\tlinux-vdso.so.1 (0x00007ffc6b1bd000)\n\t/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/experiments/r2p16_route_economics_20260910/baseline/policy/startupsupply2.so (0x00007d63e706a000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007d63e6c00000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007d63e7037000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007d63e6800000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007d63e6f4e000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007d63e72dd000)\n",
+  "compiled_engine_step_symbol": "undefined in bridge, resolved from frozen P16 startupsupply2.so"
+}

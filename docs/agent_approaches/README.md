@@ -9,6 +9,7 @@ The two approaches solve different parts of the decision problem. **The route-cl
 1. [Route clustering and learned switching: philosophy, components, data, training, execution and reproduction](../../agents/route_clustering_switch_agent/docs/METHOD.md).
 2. [P16 planning and execution: development sequence, the two JointAFS submissions, workflow repairs and reproduction](P16_METHOD.md).
 3. [Publication provenance, exact versions and verification](PUBLICATION.md).
+4. [Tools, the compiled simulator and the exact 15-agent live opponent pool](../../TOOLS.md).
 
 ## What each agent actually contains
 

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source": "experiments/r2p16_vs_route_agent_pool_20260910",
+  "scope": "Unmodified historical tool snapshot. The bridge has an absolute dynamic dependency recorded in NATIVE_BUILD.json; this is not a portable prebuilt extension.",
+  "files": [
+    {
+      "path": "native_pool.py",
+      "bytes": 13662,
+      "sha256": "4d8ca76307fc5d424b537a51c5e79f8b4c396483f1a10768c7095bfa224b8b8a"
+    },
+    {
+      "path": "pool_test.py",
+      "bytes": 7998,
+      "sha256": "900ea8f970dc0255835ee2663f8db946c473dec6d60dd79fc2e3def052717f23"
+    },
+    {
+      "path": "build_native.py",
+      "bytes": 2666,
+      "sha256": "9a0ac69c83d0d460c4402f49cb20fe9c6dbc6e73024e1875f2fa22871339de7d"
+    },
+    {
+      "path": "native_bridge.cpp",
+      "bytes": 7107,
+      "sha256": "8521f2a2f2675ea8701d592674e43fb32a5246da70995ca3b78f86a671c4882b"
+    },
+    {
+      "path": "native_audit.inc",
+      "bytes": 2751,
+      "sha256": "96542e5068f966abb46f2f07a38040fb8838f956bbfaaf4781d41239e9b8470f"
+    },
+    {
+      "path": "_pool_sim.cpython-312-x86_64-linux-gnu.so",
+      "bytes": 269896,
+      "sha256": "9f56f04c642212ea2a7720e95fb8c0f6f8989ad826904622488bc8ed298cc0b7"
+    },
+    {
+      "path": "NATIVE_BUILD.json",
+      "bytes": 2858,
+      "sha256": "7206f6c75d00bfa1f0c13f9272f08c98aa997c5008eae6fc75ec6aa0d83f4dd3"
+    },
+    {
+      "path": "NATIVE_CALIBRATION.json",
+      "bytes": 76911,
+      "sha256": "7d7b3b58231a319660c57795c9b83ef024c7734c2250f38937018b9f6aabb320"
+    }
+  ]
+}
