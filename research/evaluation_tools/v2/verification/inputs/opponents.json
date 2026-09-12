@@ -1,0 +1,281 @@
+{
+  "opponents": [
+    {
+      "family": "unclassified:soil_v219g",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "soil_v219g",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/soil_v219g/main.py": "4f5043530e0104f4867ad7455800dc8a40d4b589e9deb84b000e105e0b077157"
+      },
+      "runtime_tree_sha256": "415c1e524bd6940eb24a04046e74972b0b795c65be4c0634935757e291d4877c",
+      "verified": true
+    },
+    {
+      "family": "shared-action-library",
+      "family_basis": "Identical actions.json hash in the pinned source manifest",
+      "group": "primary",
+      "id": "flexon_v5",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/flexon_v5/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+      },
+      "runtime_tree_sha256": "3b087ee6a91142e4cba6d06daa244055af74b54b17f1b46963981b2b571bd5c8",
+      "verified": true
+    },
+    {
+      "family": "shared-action-library",
+      "family_basis": "Identical actions.json hash in the pinned source manifest",
+      "group": "primary",
+      "id": "market_smart_v8",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/policy.py": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/router_parent.py": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/settings.json": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/terminal_planner.py": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/market_smart_v8/unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383"
+      },
+      "runtime_tree_sha256": "bf1022285e3df3e9b414ff09715123a4f4332161504c8f4366b74c8b43f7d8d6",
+      "verified": true
+    },
+    {
+      "family": "shared-action-library",
+      "family_basis": "Identical actions.json hash in the pinned source manifest",
+      "group": "primary",
+      "id": "shop0909",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/shop0909/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/shop0909/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/shop0909/kernel-metadata.json": "6b633e76da41c3d21462653cf9312016c5ccc630bffd918e09d983021755b105",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/shop0909/main.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b"
+      },
+      "runtime_tree_sha256": "8c716f262f2cdc5a9b94f8639b440f8680eb2b852192911eeb8f149d828907be",
+      "verified": true
+    },
+    {
+      "family": "shared-action-library",
+      "family_basis": "Identical actions.json hash in the pinned source manifest",
+      "group": "primary",
+      "id": "aurax_shop_v2",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/aurax_shop_v2/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/aurax_shop_v2/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/aurax_shop_v2/kernel-metadata.json": "37b3105d8f07f2950eec99aacf7c8feb4eb1502b1f4cf64d9c4f5ec7c6f0ebc6",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/aurax_shop_v2/main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+      },
+      "runtime_tree_sha256": "cf70865d9d3df50c5a014dab42c75c748ea83854cca18002cbb23e54bbf3307f",
+      "verified": true
+    },
+    {
+      "family": "shared-action-library",
+      "family_basis": "Identical actions.json hash in the pinned source manifest",
+      "group": "primary",
+      "id": "seven_turn",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/kernel-metadata.json": "80c50e0b394528b07597d7e892f7fae6cdad713386bc384533cd11aaacb7b208",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/seven_turn/unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+      },
+      "runtime_tree_sha256": "c311f0311d0c6d619626348d4073feb2fbd7e115a8ec3a5607e50c6fa4d7af16",
+      "verified": true
+    },
+    {
+      "family": "unclassified:ahmed_v27",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "ahmed_v27",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/ahmed_v27/kernel-metadata.json": "34e0da202aa34e1283513e2defd59a40910b74c89629fcc4b66652dc32f91aa0",
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/ahmed_v27/main.py": "f9db9c4e4114bc956752b90df35d0c7ceda96e5009573f4d6229cc7c95d9f8e9"
+      },
+      "runtime_tree_sha256": "14f734be584c50d62ec1598b86f1fca5339c6d1af597c10f3b909ba75f19b7d1",
+      "verified": true
+    },
+    {
+      "family": "unclassified:moon_v215",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "moon_v215",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/moon_v215/main.py": "a32d1bbbe915e1f7f370f012155548915f5f846a517b45cbe90245294255af1f"
+      },
+      "runtime_tree_sha256": "e553a3931aa52f09d352ce3b9237719428574f1d8f0caad4478eb47a6bb93160",
+      "verified": true
+    },
+    {
+      "family": "unclassified:aurax_reactive_v1",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "aurax_reactive_v1",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/aurax_reactive_v1/main.py": "53070a6adfaac7b91914a53e215bf0c521fff1d633db74abdf20bfcd13190175"
+      },
+      "runtime_tree_sha256": "483cf89614e7957fc5ad587e4e21f02895475d671db47acc7c343c31c4c6b852",
+      "verified": true
+    },
+    {
+      "family": "unclassified:thomas_955_v2",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "thomas_955_v2",
+      "runtime_files": {
+        "nt/latest_20260911_p16_jointafs_r1/agent/opponents/thomas_955_v2/main.py": "8241246765098c50223d897739cb32076b71a303284d2e5e1c5f0fb495bb5a97"
+      },
+      "runtime_tree_sha256": "b76e1fe1aae4330b452e1466ee86c08a7a187c84d7942287f2b78d0254dee970",
+      "verified": true
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "R1/R2 versions with the shared native policy wrapper",
+      "group": "primary",
+      "id": "native:r1",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/agent.so": "e285b58c4c35ea95ff522d8848a3f91afc1bb1156d1d637f585a03bb5deb1ca8",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+      },
+      "runtime_tree_sha256": "12660ebc3a51be0eff7400857dd0aa09fb1da9387d929c921e91f6397f35329c",
+      "verified": true
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "R1/R2 versions with the shared native policy wrapper",
+      "group": "primary",
+      "id": "native:r2",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09"
+      },
+      "runtime_tree_sha256": "1123be8e14e954b727236019ccdb7fd23b7b9a9c0fe3fd78bf2b7a1b40632d02",
+      "verified": true
+    },
+    {
+      "family": "unclassified:extra:apex-v7",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "extra:apex-v7",
+      "runtime_files": {
+        "research/robust90/opponents/apex-v7/agent.so": "5ebd03e011349f053577b6b7c551c91cac85f9f75da8c7c4e87bf3f816741ef7",
+        "research/robust90/opponents/apex-v7/main.py": "1f7cd5fb8a16585936d2562a3667f85bb6661688718ef58f73006de66148354a"
+      },
+      "runtime_tree_sha256": "1368074cb969b3fe641280a7f72172e338d255b30c7063f84113b1c5a036408e",
+      "verified": true
+    },
+    {
+      "family": "unclassified:extra:six-day-fieldbook",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "extra:six-day-fieldbook",
+      "runtime_files": {
+        "research/robust90/opponents/six-day-fieldbook/agent.so": "eb4117082d3927e55276358897b38d06c25d27f4262aeb2a14acb390e77f7437",
+        "research/robust90/opponents/six-day-fieldbook/main.py": "5809846fd528f00d1c01d6f58940633604adb7283d1e2f152603697967e3bb89"
+      },
+      "runtime_tree_sha256": "aed271a359e710714ce6145c64176468e90dc12099f9538c0545a9e465bdd972",
+      "verified": true
+    },
+    {
+      "family": "unclassified:extra:old-champion",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "extra:old-champion",
+      "runtime_files": {
+        "research/robust90/opponents/old-champion/main.py": "68cf7de2994e3c6330a0aeabc28061a6e58043028cefcf5780ad6d415ad6479c"
+      },
+      "runtime_tree_sha256": "cce4dccc586185bd3aaeb5745247c7c33e924c2a8cb08c9c49d2dd255740a8c7",
+      "verified": true
+    },
+    {
+      "family": "unclassified:extra:hysteresis",
+      "family_basis": "Separate report group; independent ancestry is unverified",
+      "group": "primary",
+      "id": "extra:hysteresis",
+      "runtime_files": {
+        "research/robust90/opponents/hysteresis/main.py": "1bc4a586a6e77cc5f9ad064f0884cfdd09ca172a73aeb29affbae7c9543c34d4"
+      },
+      "runtime_tree_sha256": "114811348753d18e3df2435c5e9a6af0159db0fb47ddf71d855ae38a8738dbe5",
+      "verified": true
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "AFS R2 parameter variant; not an independent policy family",
+      "group": "diagnostic",
+      "id": "stress:crop_producer",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "research/robust90/stress.py": "e6f25f3d4c4b82cb2b6d56d000c98ec55a96a245679e19b3c5da58a4aa7d3fdd"
+      },
+      "runtime_tree_sha256": "2be0cccdea3226245a6b42e9352f1468f991153e85b77adac090ced651e1d136"
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "AFS R2 parameter variant; not an independent policy family",
+      "group": "diagnostic",
+      "id": "stress:livestock_producer",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "research/robust90/stress.py": "e6f25f3d4c4b82cb2b6d56d000c98ec55a96a245679e19b3c5da58a4aa7d3fdd"
+      },
+      "runtime_tree_sha256": "2be0cccdea3226245a6b42e9352f1468f991153e85b77adac090ced651e1d136"
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "AFS R2 parameter variant; not an independent policy family",
+      "group": "diagnostic",
+      "id": "stress:cash_maximizer",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "research/robust90/stress.py": "e6f25f3d4c4b82cb2b6d56d000c98ec55a96a245679e19b3c5da58a4aa7d3fdd"
+      },
+      "runtime_tree_sha256": "2be0cccdea3226245a6b42e9352f1468f991153e85b77adac090ced651e1d136"
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "AFS R2 parameter variant; not an independent policy family",
+      "group": "diagnostic",
+      "id": "stress:delayed_seller",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "research/robust90/stress.py": "e6f25f3d4c4b82cb2b6d56d000c98ec55a96a245679e19b3c5da58a4aa7d3fdd"
+      },
+      "runtime_tree_sha256": "2be0cccdea3226245a6b42e9352f1468f991153e85b77adac090ced651e1d136"
+    },
+    {
+      "family": "native-afs",
+      "family_basis": "AFS R2 parameter variant; not an independent policy family",
+      "group": "diagnostic",
+      "id": "stress:aggressive_expander",
+      "runtime_files": {
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so": "179b204db64a32e08af3afb34ae1e6687737c71e4d506f37c4dd3ebe0ec591f2",
+        "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "nt/latest_20260911_p16_jointafs_r1/agent/policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "research/robust90/stress.py": "e6f25f3d4c4b82cb2b6d56d000c98ec55a96a245679e19b3c5da58a4aa7d3fdd"
+      },
+      "runtime_tree_sha256": "2be0cccdea3226245a6b42e9352f1468f991153e85b77adac090ced651e1d136"
+    }
+  ]
+}

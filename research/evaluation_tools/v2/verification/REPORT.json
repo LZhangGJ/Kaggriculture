@@ -1,0 +1,140 @@
+{
+  "by_candidate": {
+    "ppo-495ebc48210f14ae": {
+      "cases": 168,
+      "games": 336,
+      "latency_max_by_mode": {
+        "direct": 0.6839704340000026,
+        "parity": 0.6761290000013105
+      },
+      "observation_checks": 241920
+    },
+    "ppo-9980111aa0f1e7f6": {
+      "cases": 168,
+      "games": 504,
+      "latency_max_by_mode": {
+        "direct": 0.8005004530004953,
+        "package": 0.6482911629991577,
+        "parity": 0.6973249380007474
+      },
+      "observation_checks": 241920
+    },
+    "ppo-bf0aa03b41428d97": {
+      "cases": 168,
+      "games": 504,
+      "latency_max_by_mode": {
+        "direct": 0.7000662320006086,
+        "package": 0.7364691860002495,
+        "parity": 0.7396683850001864
+      },
+      "observation_checks": 241920
+    },
+    "ppo-c90da6b7b3ea061d": {
+      "cases": 168,
+      "games": 504,
+      "latency_max_by_mode": {
+        "direct": 0.751475216999097,
+        "package": 0.7641134509995027,
+        "parity": 0.7832804600002419
+      },
+      "observation_checks": 241920
+    },
+    "team-terminal-suffix-v1": {
+      "cases": 168,
+      "games": 504,
+      "latency_max_by_mode": {
+        "direct": 0.6789734609992593,
+        "package": 0.6815762959995482,
+        "parity": 0.6741407429999526
+      },
+      "observation_checks": 241920
+    },
+    "team-v37-feed-reserve-v1": {
+      "cases": 168,
+      "games": 336,
+      "latency_max_by_mode": {
+        "direct": 0.36604754400104866,
+        "parity": 0.19998040300015418
+      },
+      "observation_checks": 241920
+    }
+  },
+  "by_seed": {
+    "264287213": {
+      "cases": 252,
+      "distinct_actual_terminal_shop_sequences": 69
+    },
+    "475503464": {
+      "cases": 252,
+      "distinct_actual_terminal_shop_sequences": 60
+    },
+    "715576091": {
+      "cases": 252,
+      "distinct_actual_terminal_shop_sequences": 70
+    },
+    "767483553": {
+      "cases": 252,
+      "distinct_actual_terminal_shop_sequences": 67
+    }
+  },
+  "candidates": 6,
+  "cases": 1008,
+  "checked_utc": "2026-09-12T23:22:26.366862+00:00",
+  "complete_games": 2688,
+  "completed_run_resume": {
+    "exit_code": 0,
+    "unchanged_receipts": {
+      "MANIFEST.json": true,
+      "STATUS.json": true,
+      "rows.jsonl": true
+    }
+  },
+  "diagnostic_opponents": 5,
+  "freeze_sha256": "742448018ea98bcc7c0221f101b731a51e1e626b765da0010982e6701920ad0a",
+  "holdout_values_inspected": false,
+  "implementation_commit": "b5845b0ee5a7183a698b0498ed5e8eb049ac0c54",
+  "inference": "Execution verification only; not agent-strength evidence or hosted runtime certification",
+  "native_official_observation_checks": 1451520,
+  "original_bundle_commit": "b1ffc6bd7f766497be433006059701c68d846e19",
+  "original_campaign_modified": false,
+  "original_live_input_hashes": {
+    "outputs/seed_sets_v1/manifests/representative.json": "2e9b9c651f8d776bade17c68df406d15b38529fcdefdd0c533344a9a818d7651",
+    "outputs/seed_sets_v1/manifests/stress.json": "9275977ccd595498c7b31086bcc9b5ad208e3ff5b988fba88573a37a67d22e54",
+    "outputs/seed_sets_v1/opponents.json": "cd023e1b0dbe0367e4b0f08282fe8004a219921e4090c93912063f33e9ff90d2",
+    "work/ANALYSIS_PLAN.md": "49422256d0b4d1b33b2c1008c5defe7b1eea2e8f7189f005865f39af2758f84e",
+    "work/analyze_panels.py": "93febda69477f1cf61166b9a4cbf2e986270e79b34140288e9b7d23765d5b194",
+    "work/panel_runner.py": "16a95778a4dc7368d35bfb69159b55d197584b29d2c95cd1850fe512bae60561",
+    "work/roster.json": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc"
+  },
+  "original_live_runtime_hashes_verified": 102,
+  "original_published_bundle_modified": false,
+  "preflight_receipt": {
+    "MANIFEST.json": "593972044fdf4735edd5062d4b45948f2b42db2ca4481f23734fd595207284a0",
+    "STATUS.json": "3acb1961bd4eabcb460c552abaa39bc7a8c07b3b716d5901c71e2582251f9cad",
+    "rows.jsonl": "9f595698105dabcd69637c2a6e7984d8bcd91a5b70d7c6d29e1fe3cb3fdf42ea"
+  },
+  "primary_candidate_games_run": 0,
+  "primary_opponents": 16,
+  "seeds": 4,
+  "status": "PASS",
+  "superseded_attempt": {
+    "freeze_sha256": "cb9112de7aa142b3abefe12c9c1289f0c616d82a4d17f4bcf7d2612ffad1ef71",
+    "reason": "Removed the unfrozen future-holdout feature cache path; repeated full preflight under a new freeze",
+    "recorded_cases": 56,
+    "recorded_invalid": 0,
+    "source_hashes": {
+      "ANALYSIS_PLAN.md": "b671b9e69d8a6c04a79a2b1e1d358b7d054525b0e7fe63843aafa5e25c104884",
+      "analyze_panels.py": "0e3fe40ed682b5d49f3652be6617f640ed0f9cde7f678b126fed778c284e774f",
+      "contracts.py": "db66122c8e92c0702c61272ca091d186ed4c6b8db486f7c82cf092bc22d42656",
+      "holdout.py": "06f6190ee6fb272b14ae21a485de51973ad500532f588f366ec6f491adb808dc",
+      "panel_runner.py": "6b90ac4b8a69580cb1193271b22a16abf1824640a08b5a08d4bb117b50130305"
+    },
+    "status": "INTERRUPTED_FOR_REPAIR"
+  },
+  "unit_tests": {
+    "command": "python -B -m unittest discover -s research/evaluation_tools/v2/tests -v",
+    "result": "PASS",
+    "test_source_sha256": "493c46ea5d19cecb884614d4e22b4926d93d2de9e32f8b441295a7ffe6c6047a",
+    "tests": 23
+  }
+}

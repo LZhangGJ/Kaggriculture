@@ -1,4 +1,8 @@
-# Kaggriculture research notes — 2026-08-11
+# Kaggriculture research
+
+## Shared evaluation tools — 2026-09-12
+
+Use [evaluation tools v2](evaluation_tools/v2/README.md) for new comparisons with strict input checks, a four-seed parity preflight, separate economic stress opponents and paired analysis. These tools use the pinned 1.32.7 runtime in the [shared evaluation bundle](evaluation_sets/2026-09-12-v1/README.md). The original bundle and its frozen six-candidate comparison remain unchanged. The older engine notes below describe the August research state.
 
 ## Live competition survey (2026-08-11)
 
