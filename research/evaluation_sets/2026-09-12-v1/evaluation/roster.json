@@ -637,7 +637,7 @@
     "representative": 8192,
     "stress": 4096
   },
-  "runner_sha256": "41eb195bbcd3a3f1dbda2963639315759517c39a9dee3f73afddcf2ce2eba1ff",
+  "runner_sha256": "16a95778a4dc7368d35bfb69159b55d197584b29d2c95cd1850fe512bae60561",
   "runtime_files": {
     "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/agent.so": "e285b58c4c35ea95ff522d8848a3f91afc1bb1156d1d637f585a03bb5deb1ca8",
     "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
@@ -691,7 +691,7 @@
     "nt/latest_20260911_p16_jointafs_r1/agent/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
     "nt/latest_20260911_p16_jointafs_r1/agent/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
     "research/robust90/candidates/clean-selector-core/build/forecast_features.so": "894212097145c33daea8c6f4961aa1bc00b39f42efb8445f51d4c1cda311160a",
-    "research/robust90/evaluate.py": "73a7f5bf1adeadb15f63e3fa8bba9c8fcbe14eecffb82974b6bcb2b9fab70f72",
+    "research/robust90/evaluate.py": "d40eda65213c82aab4d725f4645b4dca6a05f339f9c7a5a3aabf4bb3e5b650b2",
     "research/robust90/features.py": "f1314047b5b7255b88791a342cc2737c098656f666ff07d360081903fc297f72",
     "research/robust90/market_orders.py": "8ec6f405b7bb229340d910c622f4f8c0c87cdfad5abbbea790901f00d058efe2",
     "research/robust90/models/connected-day3-v1/selector.json": "ea387f80fbcaf725a61d1752daf36316d95f4e9319b6e8aa0267c1dce2f1bdab",

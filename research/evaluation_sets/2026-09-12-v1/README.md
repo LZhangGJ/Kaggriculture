@@ -8,7 +8,7 @@ These panels give both research tasks a common comparison. Their seed manifests 
 | [Stress](manifests/stress.json) | 128 seeds | Test selected extremes and contrasting economic conditions. Report separately from representative performance. | 4,096 |
 | Holdout | 256 seeds | One final comparison after every candidate and the analysis are frozen. [Checksum commitment](holdout_receipt.json). | 8,192 |
 
-Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values and reproduction key remain local during roster preparation; this branch initially publishes only their checksums. After the frozen comparison, the released holdout seeds and complete results will be added here. Once those results guide development, this holdout is retired from fresh-confirmation use.
+Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values and reproduction key remain local until the frozen comparison finishes; the branch publishes their checksums and release receipt. After the frozen comparison, the released holdout seeds and complete results will be added here. Once those results guide development, this holdout is retired from fresh-confirmation use.
 
 ## What the stress labels mean
 
@@ -40,6 +40,6 @@ The user selected promising candidates only. The frozen six-entry [roster](evalu
 
 The [analysis plan](evaluation/ANALYSIS_PLAN.md), [freeze receipt](evaluation/FREEZE.json), complete pinned runtime and manifest-aware runner are published before preflight. The [campaign audit](campaign_audit/report.json) adds both local research trees, remote seed registries, the replay archive index and NPZ seed arrays. It finds no overlap with any new set. Prior metrics in handoffs explain candidate selection; they are not scores on these panels.
 
-The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. No primary panel is complete at this publication stage.
+The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. The [repeated preflight](evaluation/verification/preflight-v2/STATUS.json) passed all 192 cases (512 full games and 276,480 native/official observation checks). A [documented optional-debug repair](evaluation/RUNNER_REPAIRS.json) preserves the failed first preflight. Primary evaluation is running; no full panel is complete at this snapshot. Results will include a table for every opponent, separately for each panel, plus the opponent-by-seat breakdown.
 
 Repeated tuning can overfit these development panels. Sixteen opponent names do not imply sixteen independent strategy families. No fixed panel proves robustness against every opponent. These evaluations provide shared evidence; they do not automatically promote a candidate or authorize a Kaggle submission.

@@ -1,0 +1,12 @@
+{
+  "complete": false,
+  "completed": 192,
+  "elapsed_this_process": 111.82057070732117,
+  "games_per_second": 1.7170364878796787,
+  "invalid": 32,
+  "missing": 0,
+  "phase": "preflight",
+  "roster_sha256": "e919070bc18a08432639b661f114b975ea4676e6d398080f26ff785ce74c4fc6",
+  "scheduled": 192,
+  "updated_unix": 1789243635.6819153
+}

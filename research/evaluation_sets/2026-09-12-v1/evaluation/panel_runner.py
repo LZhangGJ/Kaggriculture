@@ -82,7 +82,8 @@ def play(c,seed,opponent,seat,mode='direct',adapter=True,measure=True):
         row['economy']=compact_economy(ACTIVE_ECONOMY[0])
     allowed=('opponent','seed','opponent_seat','runtime_error','engine','steps','own_cash','opponent_cash',
              'margin','win','tie','action_hash','latency_max','terminal_shops','seconds','observations_checked',
-             'selected_profile','prefix_profiles','market_order_changes','economy')
+             'selected_profile','prefix_profiles','market_order_changes','economy',
+             'diagnostic_error','diagnostic_raw_sha256','diagnostic_raw_prefix')
     result={k:row[k] for k in allowed if k in row}
     result.update(candidate_id=c['id'],candidate_name=c.get('display_name',c['name']),candidate_seat=1-seat,
                   entry_artifact_sha256=c['binary_sha256'],native_adapter=bool(adapter and 'native_adapter_config' in c))

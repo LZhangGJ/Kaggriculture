@@ -257,7 +257,17 @@ def extended_game(arena, opponent, seed, seat, binary, config, trace):
             if engine_kind in ('parity','direct_parity','direct_future_parity','direct_common_parity','direct_common_intraday_parity'):
                 env.observation(1);row['observations_checked']=env.observations_checked
             row.update(steps=env.t,own_cash=cash[1-seat],opponent_cash=cash[seat],margin=margin,win=margin>0,tie=margin==0,
-                       action_hash=arena.digest(actions),latency_max=maximum,debug=own.debug(),terminal_shops=obs['town']['unlocked_shops'])
+                       action_hash=arena.digest(actions),latency_max=maximum,terminal_shops=obs['town']['unlocked_shops'])
+            try:
+                row['debug']=own.debug()
+            except json.JSONDecodeError as error:
+                # Optional terminal diagnostics do not decide actions or cash.
+                # Preserve a malformed debug record without discarding the game.
+                row['diagnostic_error']=str(error)
+                inner=getattr(own,'inner',own)
+                raw=inner.lib.td_debug(inner.handle)
+                row['diagnostic_raw_sha256']=hashlib.sha256(raw).hexdigest()
+                row['diagnostic_raw_prefix']=raw[:512].decode('utf-8',errors='replace')
             if trace:
                 import gzip
                 Path(trace).write_bytes(gzip.compress(json.dumps(dict(result=row,days=days,actions=actions)).encode()))

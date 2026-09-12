@@ -1,7 +1,19 @@
 {
-  "holdout": "unreleased",
-  "primary_games_completed": 0,
+  "development": {
+    "complete": false,
+    "completed": 172,
+    "elapsed_this_process": 31.217291831970215,
+    "games_per_second": 5.509766860168555,
+    "invalid": 0,
+    "missing": 73556,
+    "phase": "development",
+    "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
+    "scheduled": 73728,
+    "updated_unix": 1789243985.635795
+  },
+  "holdout": "released_for_frozen_six_candidate_comparison",
+  "note": "This snapshot is not a completed result. All per-opponent rates will be published after terminal coverage validation.",
+  "primary_games_completed_at_snapshot": 172,
   "primary_games_scheduled": 122880,
-  "roster_sha256": "e919070bc18a08432639b661f114b975ea4676e6d398080f26ff785ce74c4fc6",
-  "stage": "six_promising_candidates_frozen_preflight_pending"
+  "stage": "primary_evaluation_running"
 }
