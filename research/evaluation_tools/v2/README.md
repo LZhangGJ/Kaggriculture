@@ -15,6 +15,8 @@ python3 -B research/evaluation_tools/v2/panel_runner.py run --freeze artifacts/e
 
 The freeze pins all runtime bytes, all public seed manifests including the stress pool, opponent identities, reference features, analysis thresholds, audit evidence and v2 code. To use another roster, pass `--roster path/to/roster.json` to `freeze`; its runtime must live in the selected `--bundle`. To restrict a verification run, repeat `--candidate ID` when freezing. A restricted preflight cannot authorize a larger roster.
 
+Reserve the representative seeds and the entire stress selection pool from training generation. Log every development comparison and selection decision. Repeated tuning can overfit these panels, so use a fresh holdout for confirmation.
+
 After a complete preflight, run development explicitly:
 
 ```sh
@@ -23,6 +25,8 @@ python -B research/evaluation_tools/v2/analyze_panels.py --freeze artifacts/eval
 ```
 
 Analysis may run on a different host from game execution. It verifies the recorded runner environment against preflight, and records its own Python and NumPy versions. Both primary and diagnostic games must finish before it reports a complete comparison. Diagnostic opponents never enter the primary overall score, condition comparisons or market summaries. Source groups describe known overlap; unclassified groups do not establish independent ancestry. See [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md).
+
+To test an unseen opponent population, prepare a separate bundle with a new pinned 16-entry opponent manifest and matching runtime files. Pass `--bundle PATH` before the runner's `freeze` or `run` command, complete its own preflight, and report it as a separate comparison. The five related stress controllers added here provide economic diagnostics; new opponent families still need their own evidence.
 
 ## Resume and repair
 
