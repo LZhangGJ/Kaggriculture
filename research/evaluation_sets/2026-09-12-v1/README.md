@@ -1,5 +1,7 @@
 # Shared Kaggriculture evaluation sets
 
+The **representative panel is complete**: [overall results](representative_results/RESULTS.md), [win rates by opponent](representative_results/BY_OPPONENT.md), and [opponent-by-seat tables](representative_results/BY_OPPONENT_AND_SEAT.md). All 49,152 representative games passed validation. Stress and holdout results are still pending; the frozen comparison continues unchanged.
+
 These panels give both research tasks a common comparison. Their seed manifests are fixed and reproducible. The initial seed-creation report is [REPORT.md](REPORT.md); the live publication stage is [PUBLICATION_STATUS.json](PUBLICATION_STATUS.json).
 
 | Panel | Size | Use | Games per candidate |
@@ -40,6 +42,6 @@ The user selected promising candidates only. The frozen six-entry [roster](evalu
 
 The [analysis plan](evaluation/ANALYSIS_PLAN.md), [freeze receipt](evaluation/FREEZE.json), complete pinned runtime and manifest-aware runner are published before preflight. The [campaign audit](campaign_audit/report.json) adds both local research trees, remote seed registries, the replay archive index and NPZ seed arrays. It finds no overlap with any new set. Prior metrics in handoffs explain candidate selection; they are not scores on these panels.
 
-The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. The [repeated preflight](evaluation/verification/preflight-v2/STATUS.json) passed all 192 cases (512 full games and 276,480 native/official observation checks). A [documented optional-debug repair](evaluation/RUNNER_REPAIRS.json) preserves the failed first preflight. Primary evaluation is running; no full panel is complete at this snapshot. Results will include a table for every opponent, separately for each panel, plus the opponent-by-seat breakdown.
+The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. The [repeated preflight](evaluation/verification/preflight-v2/STATUS.json) passed all 192 cases (512 full games and 276,480 native/official observation checks). A [documented optional-debug repair](evaluation/RUNNER_REPAIRS.json) preserves the failed first preflight. The representative panel is complete and published above. Stress and holdout are still running or queued. Full results will retain separate opponent and seat tables for each panel.
 
 Repeated tuning can overfit these development panels. Sixteen opponent names do not imply sixteen independent strategy families. No fixed panel proves robustness against every opponent. These evaluations provide shared evidence; they do not automatically promote a candidate or authorize a Kaggle submission.

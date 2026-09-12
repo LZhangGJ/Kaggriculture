@@ -1,19 +1,23 @@
 {
   "development": {
     "complete": false,
-    "completed": 172,
-    "elapsed_this_process": 31.217291831970215,
-    "games_per_second": 5.509766860168555,
+    "completed": 55313,
+    "elapsed_this_process": 9295.196573019028,
+    "games_per_second": 5.950707934521351,
     "invalid": 0,
-    "missing": 73556,
+    "missing": 18415,
     "phase": "development",
     "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
     "scheduled": 73728,
-    "updated_unix": 1789243985.635795
+    "updated_unix": 1789253249.6154401
   },
-  "holdout": "released_for_frozen_six_candidate_comparison",
-  "note": "This snapshot is not a completed result. All per-opponent rates will be published after terminal coverage validation.",
-  "primary_games_completed_at_snapshot": 172,
+  "holdout": "released_for_frozen_six_candidate_comparison; not yet reported",
+  "note": "Representative results are complete. This is not a completed three-panel comparison.",
+  "primary_games_completed_at_snapshot": 55313,
   "primary_games_scheduled": 122880,
-  "stage": "primary_evaluation_running"
+  "representative_duplicates": 0,
+  "representative_games_completed": 49152,
+  "representative_invalid": 0,
+  "representative_missing": 0,
+  "stage": "representative_complete_stress_and_holdout_pending"
 }
