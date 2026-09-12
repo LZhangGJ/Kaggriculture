@@ -1,0 +1,55 @@
+{
+  "archive_distinct_seeds": 480,
+  "archive_index_sha256": "a48cd2c7c5bf274cd187b9effd2ef8530313cfddfc311cb0d9af63158a1bc470",
+  "archive_members": 17280,
+  "bytes_hashed": 11127765108,
+  "completed_utc": "2026-09-12T20:04:26Z",
+  "created_utc": "2026-09-12T20:03:31Z",
+  "errors": [],
+  "excluded_directory_names": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build-linux-env",
+    "cuda-local610",
+    "evaluation_sets",
+    "gpu-benchmark",
+    "local-linux-env",
+    "node_modules",
+    "overnight-test-env",
+    "seed_sets_v1",
+    "venv"
+  ],
+  "exclusions": 156906,
+  "limitations": [
+    "No recovery of deleted or unsaved logs, Git history, or stores outside the two local roots and supplied remote index.",
+    "Binary files excluded from this text pass; initial PPO NPZ supplement retained; remote model-adjacent seed registries included.",
+    "Replay bodies with seed-bearing filenames use the retained filename/protocol index; the 27.5 GB tar uses its verified archive manifest.",
+    "The exclusion set is conservative and includes seed counts and constant ranges, not only proven played seeds."
+  ],
+  "npz_files_checked": 557,
+  "overlap_counts": {
+    "holdout": 0,
+    "representative": 0,
+    "stress": 0,
+    "stress_pool": 0
+  },
+  "remote_created_utc": "2026-09-12T19:46:21.717880+00:00",
+  "remote_registry_files": 303,
+  "remote_registry_hashes_rechecked": 303,
+  "remote_registry_sha256": "6bfc4886d344bcfda13bfe36ea263164255ac2e712dfa1e62d19b93f26c6dbe6",
+  "roots": [
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-05\\cont\\lzhang-kaggriculture",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-11\\please-go-onto-my-discord-i"
+  ],
+  "seconds": 465.0919301509857,
+  "skipped_reservations": [
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-05\\cont\\lzhang-kaggriculture\\research\\robust90\\EXTERNAL_EVALUATION_RESERVATIONS.json",
+      "reason": "New panel reservation; not prior play"
+    }
+  ],
+  "status": "PASS",
+  "supplement_errors": [],
+  "text_files": 33918
+}

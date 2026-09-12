@@ -1,0 +1,110 @@
+{
+  "method": "numpy.quantile, linear interpolation, q=.25 and q=.75",
+  "reference_feature_sha256": "ac770245b54731484b8af2d189fdfbd05e552a68e1489502d0b43b56af98945c",
+  "thresholds": {
+    "latent_weed_early_minus_late": {
+      "q25": -49.0,
+      "q75": 54.5
+    },
+    "latent_weed_hits": {
+      "q25": 25.0,
+      "q75": 32.0
+    },
+    "latent_weed_stream_half_difference": {
+      "q25": -3.0,
+      "q75": 3.0
+    },
+    "potential_adjacent_choice_agreement": {
+      "q25": 538.0,
+      "q75": 562.0
+    },
+    "potential_crop_minus_animal": {
+      "q25": 33871.5,
+      "q75": 45477.0
+    },
+    "potential_milk_minus_wool": {
+      "q25": 15723.0,
+      "q75": 23314.5
+    },
+    "potential_units_sum_CARROT": {
+      "q25": 57082.5,
+      "q75": 62527.5
+    },
+    "potential_units_sum_EGG": {
+      "q25": 38205.0,
+      "q75": 41238.0
+    },
+    "potential_units_sum_MILK": {
+      "q25": 57613.5,
+      "q75": 61420.5
+    },
+    "potential_units_sum_STRAWBERRY": {
+      "q25": 77382.0,
+      "q75": 81049.5
+    },
+    "potential_units_sum_TOMATO": {
+      "q25": 38029.5,
+      "q75": 41476.5
+    },
+    "potential_units_sum_WHEAT": {
+      "q25": 97659.0,
+      "q75": 101020.5
+    },
+    "potential_units_sum_WOOL": {
+      "q25": 37575.0,
+      "q75": 42480.0
+    },
+    "ref_crop_minus_animal": {
+      "q25": -72.0,
+      "q75": 576.0
+    },
+    "ref_early_milk_minus_wool": {
+      "q25": 0.0,
+      "q75": 36.0
+    },
+    "ref_late_milk_minus_wool": {
+      "q25": -36.0,
+      "q75": 126.0
+    },
+    "ref_max_duplicate": {
+      "q25": 2.0,
+      "q75": 3.0
+    },
+    "ref_milk_minus_wool": {
+      "q25": -108.0,
+      "q75": 288.0
+    },
+    "ref_shop_units_CARROT": {
+      "q25": 144.0,
+      "q75": 486.0
+    },
+    "ref_shop_units_EGG": {
+      "q25": 103.5,
+      "q75": 270.0
+    },
+    "ref_shop_units_MILK": {
+      "q25": 198.0,
+      "q75": 396.0
+    },
+    "ref_shop_units_STRAWBERRY": {
+      "q25": 283.5,
+      "q75": 486.0
+    },
+    "ref_shop_units_TOMATO": {
+      "q25": 121.5,
+      "q75": 306.0
+    },
+    "ref_shop_units_WHEAT": {
+      "q25": 396.0,
+      "q75": 612.0
+    },
+    "ref_shop_units_WOOL": {
+      "q25": 0.0,
+      "q75": 288.0
+    },
+    "ref_shop_variety": {
+      "q25": 5.0,
+      "q75": 6.0
+    }
+  }
+}

@@ -1,2 +1,3 @@
 * -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 source_snapshot/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+evaluation/runtime/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

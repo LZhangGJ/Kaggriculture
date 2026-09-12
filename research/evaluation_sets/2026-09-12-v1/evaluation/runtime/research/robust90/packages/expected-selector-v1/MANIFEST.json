@@ -1,0 +1,15 @@
+{
+  "status": "development package; not promoted or submitted",
+  "selectors": [
+    "selector_0.json"
+  ],
+  "files": {
+    "main.py": "f78f748b18b9763fdf597d1968ae07f727ae4d7234a6fffe76eb78ff8f9d9f46",
+    "codec.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "features.py": "f1314047b5b7255b88791a342cc2737c098656f666ff07d360081903fc297f72",
+    "selector.py": "f2d087beb3d90fc45f05614955cbb8bea562c038a472aa3643870aa656188578",
+    "agent.so": "894212097145c33daea8c6f4961aa1bc00b39f42efb8445f51d4c1cda311160a",
+    "config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "selector_0.json": "6b9147d29a4b8278e660e34efbee39751007f88c8ee66fb9a8c43ab85c05c5ca"
+  }
+}

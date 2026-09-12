@@ -1,0 +1,10 @@
+{
+  "analysis_plan_sha256": "49422256d0b4d1b33b2c1008c5defe7b1eea2e8f7189f005865f39af2758f84e",
+  "candidate_count": 6,
+  "condition_thresholds_sha256": "f127fb6af7c8bf26e8339f772cd1c8e664a8c695b5a9fe96c717e2fbe2b6a7a8",
+  "holdout_commitment_sha256": "5357fec3cf7908f468e23d7189412d10ecb371ba7a8eac730b1c5fd76b623760",
+  "primary_games": 122880,
+  "roster_sha256": "e919070bc18a08432639b661f114b975ea4676e6d398080f26ff785ce74c4fc6",
+  "runner_sha256": "41eb195bbcd3a3f1dbda2963639315759517c39a9dee3f73afddcf2ce2eba1ff",
+  "stage": "selected_roster_and_analysis_frozen_before_preflight"
+}

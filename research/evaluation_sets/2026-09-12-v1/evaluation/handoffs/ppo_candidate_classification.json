@@ -1,0 +1,2015 @@
+{
+  "source_inventory_sha256": "6284d56a0b16c5ab6e9a5bcbd26e90dec79210789d8d77276e02a9e75c49689a",
+  "classifications": [
+    {
+      "id": "ppo-fe2f4a20004fba63",
+      "name": "base9-current-v2-fresh",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-0b68d3f640766b8a",
+      "name": "base9-fresh-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-592bc1b1a1f774d0",
+      "name": "base9-plans-devscreen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-5bf350c6fdee8687",
+      "name": "base9-transfer15-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-495ebc48210f14ae",
+      "name": "baseline-dev-01",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-4be8defcf410f01e",
+      "name": "cache-benchmark",
+      "role": "runtime_build_control",
+      "reason": "Rebuild, ABI or cache control, not a new strategy. Preserve its original evidence and hashes."
+    },
+    {
+      "id": "ppo-1e89ba4881d86e99",
+      "name": "cache-control",
+      "role": "runtime_build_control",
+      "reason": "Rebuild, ABI or cache control, not a new strategy. Preserve its original evidence and hashes."
+    },
+    {
+      "id": "ppo-47a28ab26caabc06",
+      "name": "clean-core-base-parity",
+      "role": "runtime_build_control",
+      "reason": "Rebuild, ABI or cache control, not a new strategy. Preserve its original evidence and hashes."
+    },
+    {
+      "id": "ppo-41da95d72643dad9",
+      "name": "clean-day15-chain-parity",
+      "role": "runtime_rebuild_alias",
+      "reason": "Clean-core rebuild of day15-fresh-screen; the three selectors differ only in runtime provenance fields."
+    },
+    {
+      "id": "ppo-d353ae59776d3829",
+      "name": "common-day9-fresh",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-d3ddda6eeb90c4f4",
+      "name": "common-day9-matched-expected",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-4a74093b5dc4324c",
+      "name": "connected-day6-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-3c8b3c1a20fdf3b3",
+      "name": "day12-fresh-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-72b6a6fdb7566576",
+      "name": "day15-fresh-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-08ed26d90f54ffcc",
+      "name": "day3-connected-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-962ecfec0cbe221d",
+      "name": "day3-expanded-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-f12a9e36c2034a82",
+      "name": "day3-paired-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-8f6778e3afd2526a",
+      "name": "day3-selector-live-check",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-7a3e11b7b697716f",
+      "name": "day9-fresh-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-fcf890bbcf8a788d",
+      "name": "day9-package-parity",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-ad4e7ca03db5ae14",
+      "name": "day9-v2-fresh",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-c7ee09cf47d1aeb5",
+      "name": "delayed-sales-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-f41d576263d6aaa7",
+      "name": "demand-control-parity",
+      "role": "runtime_build_control",
+      "reason": "Rebuild, ABI or cache control, not a new strategy. Preserve its original evidence and hashes."
+    },
+    {
+      "id": "ppo-b6393151836a8f46",
+      "name": "demand-moments-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-04138d8d7fbc3edd",
+      "name": "demand8-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-923a0522db0dc449",
+      "name": "demand8-persistent-dev",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-5850be7c6924e322",
+      "name": "demand8-supply12",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-7fc38a8b96ccce7c",
+      "name": "dynamic-rival-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-e9931b20b5779646",
+      "name": "early-day3-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-3eb37095bcc73493",
+      "name": "early-day6-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-251d67093842fe00",
+      "name": "exact-market-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-1c3bf93e45dcb3af",
+      "name": "expanded-fresh-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-0bc77af242dbf939",
+      "name": "full-season-opening-dev",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-61eac1296114d456",
+      "name": "immediate-sales-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-d77b0cc2e355fbef",
+      "name": "market-order-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-9786d9a4c7b006a5",
+      "name": "observe1-keep-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-7b48660057504eab",
+      "name": "opening-melon2-dev",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-ef6147ebbe4bfd4c",
+      "name": "persistent-common-dev",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-408cc58b08886b7d",
+      "name": "policy-forest-dev-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-73a5354f3f81209e",
+      "name": "public-residual-active-parity",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-4a9c659a3ff845e1",
+      "name": "rebuild-parity",
+      "role": "runtime_build_control",
+      "reason": "Rebuild, ABI or cache control, not a new strategy. Preserve its original evidence and hashes."
+    },
+    {
+      "id": "ppo-89b50fcb47b0433c",
+      "name": "reference-day9-native",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-1894367c93bc7f58",
+      "name": "sale-supply2-dev-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-78a53356176cdc2d",
+      "name": "sale2-broad-screen",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-dd9e9d4322fbc61a",
+      "name": "static-supply12-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-0e482b6eb039e069",
+      "name": "union-dev-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-86cae8aba7a3fd5d",
+      "name": "union-sale-dev-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-9736434c47636a79",
+      "name": "union-sale-et-dev-broad",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-bf0aa03b41428d97",
+      "name": "connected-day3-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-9980111aa0f1e7f6",
+      "name": "connected-day3-v2",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-341f800bf67021d3",
+      "name": "connected-day6-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-1c5d78a10b9a5f03",
+      "name": "day1-keep-program-fixture",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-557b78fa2e9befa9",
+      "name": "day3-connected-keep-fixture",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-772dac65b30a56ad",
+      "name": "day6-keep-program-fixture",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-981db806031fa901",
+      "name": "day9-value-order-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-d5605b8bce1bc0c4",
+      "name": "expanded-selector-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-c90da6b7b3ea061d",
+      "name": "expected-selector-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-8339e355fdd74c05",
+      "name": "public-residual-keep-v1",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-2f53f8d62fe5cefb",
+      "name": "reference-day9-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-d957963f1085934e",
+      "name": "reference-keep-fixture",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-32ddd87f237face9",
+      "name": "reference-keep-fixture",
+      "role": "keep_control",
+      "reason": "Explicit unchanged-policy or disabled-forecast fixture; keep for regression checks, not a new agent."
+    },
+    {
+      "id": "ppo-7d6a70747815bdb4",
+      "name": "union-sale-ensemble-v1",
+      "role": "standalone_candidate",
+      "reason": "Preserve this candidate, including rejected or weak variants."
+    },
+    {
+      "id": "ppo-1c27187f47e3e08f",
+      "name": "base9-expanded-data:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4dab7c60ced0b2d6",
+      "name": "base9-expanded-data:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1a98a44cae728e05",
+      "name": "base9-expanded-data:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ea5af168ca027046",
+      "name": "base9-expanded-data:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-118e9c10e1a6b4fb",
+      "name": "base9-expanded-data:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d7d2446f3e286f77",
+      "name": "base9-expanded-data:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a1eb6ac8d09a2b5a",
+      "name": "base9-expanded-data:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c0a43bb22e1464ab",
+      "name": "base9-expanded-data:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5d5ba3c1cdcb7b1b",
+      "name": "base9-expanded-data:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6a694d0c483165df",
+      "name": "base9-expanded-data:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f544795c09ec6ff5",
+      "name": "base9-expanded-data:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b24f01d367b980fb",
+      "name": "base9-expanded-data:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b44b5aa276fe33b2",
+      "name": "base9-history-data:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-8384c07bda4025e8",
+      "name": "base9-history-data:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a3c004f85affc2d5",
+      "name": "base9-history-data:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a38bfeb3ccacf370",
+      "name": "base9-history-data:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-86387f4d59897f8c",
+      "name": "base9-history-data:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-08cf0a84eafac1da",
+      "name": "common-day3-parity:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a330195619486fad",
+      "name": "common-day3-parity:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-859cd63fdf4ce6a4",
+      "name": "common-day3-parity:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4d6f5fd59d06f126",
+      "name": "common-day3-parity:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ad26f42403f3ec7a",
+      "name": "common-day3-parity:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-e539a32873468ae6",
+      "name": "common-day3-parity:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0ea950ca9ac1232a",
+      "name": "common-day3-parity:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-8e198e5e6b16653d",
+      "name": "common-day3-parity:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d1264e62cd6a4a5c",
+      "name": "common-day3-parity:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6556224a308d4af8",
+      "name": "common-day3-parity:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d3b5d3d41d6aafc8",
+      "name": "common-day3-parity:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5be3dde02ca8dedd",
+      "name": "common-day3-parity:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-442876354d1fe02a",
+      "name": "common-day3-parity:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5a5ec9f2fce4f403",
+      "name": "common-day3-parity:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fe51beefe81341dc",
+      "name": "common-day6-parity:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0772eacc7539e931",
+      "name": "common-day6-parity:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-782193ad78b2e7b8",
+      "name": "common-day6-parity:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f4bab505e00a99d2",
+      "name": "common-day6-parity:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b1cbc4aed01f7fa4",
+      "name": "common-day6-parity:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4769fa5e631f5800",
+      "name": "common-day6-parity:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-3def27f9ccaeedb9",
+      "name": "common-day6-parity:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-504980fb8edcf612",
+      "name": "common-day6-parity:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2d7ac9800c4799db",
+      "name": "common-day6-parity:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f8dcc9b480210877",
+      "name": "common-day6-parity:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-110ccece1998892f",
+      "name": "common-day6-parity:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b5f86c509ff86d02",
+      "name": "common-day6-parity:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-975a594e75331417",
+      "name": "common-day6-parity:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-646ce6e9f61bbbde",
+      "name": "common-day6-parity:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ec80971932eb5e64",
+      "name": "common-day9-part1:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-47826947005265b6",
+      "name": "common-day9-part1:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-181cc9300e65670a",
+      "name": "common-opening-parity:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-97ce356625197fff",
+      "name": "common-opening-parity:animal_cap0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f41c7f15aed75185",
+      "name": "common-opening-parity:animal_cap2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-be87f3359d6a56c1",
+      "name": "common-opening-parity:animal_cap4",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-87e769601f3b4c82",
+      "name": "common-opening-parity:animal_bias03",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-392c41cd974e4068",
+      "name": "common-opening-parity:animal_bias06",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-e235fe83c588b0cc",
+      "name": "common-opening-parity:capital_power1",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c1088f1f1b79b44b",
+      "name": "common-opening-parity:capital_power15",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-881de2c758018432",
+      "name": "common-opening-parity:supply05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-17a59d5ed3552ddd",
+      "name": "common-opening-parity:supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-450e6d570adc15fc",
+      "name": "common-opening-parity:competition0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-e00f837a91825074",
+      "name": "common-opening-parity:competition1",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5f99a03d9cb7af15",
+      "name": "common-opening-parity:competition3",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-39f7d426fd4829f5",
+      "name": "common-opening-parity:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b09b6654ee678aa6",
+      "name": "connected-day6-extra-training:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2de292c25c82ccc7",
+      "name": "connected-day6-extra-training:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ccff8ffe010be83b",
+      "name": "connected-day6-extra-training:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-17bb3c16ed5d4213",
+      "name": "connected-day6-extra-training:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-73be13c383c97567",
+      "name": "connected-day6-extra-training:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-75c35cc1fb8b7684",
+      "name": "connected-day6-extra-training:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ebcc5db25396ea9a",
+      "name": "connected-day6-extra-training:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-00e2bdd648cd11c4",
+      "name": "connected-day6-extra-training:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-7537c8f41ff60172",
+      "name": "connected-day6-extra-training:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-29258b5eb45365f3",
+      "name": "connected-day6-extra-training:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a561cff8ddf50d56",
+      "name": "connected-day6-extra-training:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b6958089297b2f47",
+      "name": "connected-day6-extra-training:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2f890011d88cc0b9",
+      "name": "connected-day6-extra-training:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-47ddae1d4d5c35b2",
+      "name": "connected-day6-extra-training:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fdbb2050bb7db415",
+      "name": "day1-joint-headroom:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f1f845e1aa4ab0fe",
+      "name": "day1-joint-headroom:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bc5bdaf3dd529b41",
+      "name": "day1-joint-headroom:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d133bbac8cbc6123",
+      "name": "day1-joint-headroom:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-97d0190f441ea5f2",
+      "name": "day1-joint-headroom:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0269b987ee86a2b4",
+      "name": "day1-joint-headroom:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-71e3035f232c77b6",
+      "name": "day1-joint-headroom:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d2505198858680f8",
+      "name": "day1-joint-headroom:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-586513f6fcb2e029",
+      "name": "day1-joint-headroom:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-262de23b57dfd3d6",
+      "name": "day1-joint-headroom:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4267286355c4fc8f",
+      "name": "day1-joint-headroom:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fc7976fbb8199181",
+      "name": "day1-joint-headroom:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b24c64b2d865c4b6",
+      "name": "day1-joint-headroom:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1217fa0df2377cd4",
+      "name": "day1-joint-headroom:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-727d25e744070bc7",
+      "name": "day1-joint-headroom:sale05_proposals",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-7b108c0a6159152e",
+      "name": "day1-joint-headroom:sale2_supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-01c22d4cad980130",
+      "name": "day12-future-part1:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f60d269b959702f9",
+      "name": "day12-future-part1:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d654796aeb7648eb",
+      "name": "day12-future-part1:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ce357a69ef4276df",
+      "name": "day12-future-part1:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-93b7431095f9218a",
+      "name": "day12-future-part1:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6ac85f621a62a945",
+      "name": "day12-future-part1:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4a898bc1eb74a99d",
+      "name": "day12-future-part1:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f6678abe5174f61f",
+      "name": "day12-future-part1:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-cdfafa5746dbb936",
+      "name": "day12-future-part1:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-54c45be7d4e5d67a",
+      "name": "day12-future-part1:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-06554f98d1fc475e",
+      "name": "day12-future-part1:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b43a2e2f6a9d6acd",
+      "name": "day12-future-part1:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-aede931e75cae960",
+      "name": "day12-future-part1:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f0ed67add4c0b20d",
+      "name": "day12-future-part1:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c16214baa5733ae2",
+      "name": "day15-selector-data:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-9f735a18c50ab3fd",
+      "name": "day15-selector-data:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-07bfa68fd01880b6",
+      "name": "day15-selector-data:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1962e3a34c32fa10",
+      "name": "day15-selector-data:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-82f163b04ad26e9d",
+      "name": "day15-selector-data:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f77c3119d8ac8c1f",
+      "name": "day3-connected-headroom:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1b886337d420a20d",
+      "name": "day3-connected-headroom:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-26d4e2b5510807b0",
+      "name": "day3-connected-headroom:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f5ccd5c4160626b8",
+      "name": "day3-connected-headroom:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-57090c454b812f1e",
+      "name": "day3-connected-headroom:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-30d093cb8ecc385b",
+      "name": "day3-connected-headroom:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-82168b147c3be269",
+      "name": "day3-connected-headroom:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6e3ba54a92f637d3",
+      "name": "day3-connected-headroom:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-72fe5fa4743f4f29",
+      "name": "day3-connected-headroom:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c24bd617b619b25c",
+      "name": "day3-connected-headroom:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4ffa14d9d2970ef1",
+      "name": "day3-connected-headroom:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6f796a094b6d7a0e",
+      "name": "day3-connected-headroom:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b25ef4f40801ecc6",
+      "name": "day3-connected-headroom:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d3582901418da84a",
+      "name": "day3-connected-headroom:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-9ec80ef307c88ad9",
+      "name": "day3-connected-headroom:sale05_proposals",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ef27d8e88a002ad2",
+      "name": "day3-connected-headroom:sale2_supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2d7a616803be547c",
+      "name": "day3-selector-data:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a9cff4c99ee370b9",
+      "name": "day3-selector-data:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-51c3705518daca1a",
+      "name": "day3-selector-data:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-69a5d5b81354fe8a",
+      "name": "day3-selector-data:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-59ae1b4f5364168f",
+      "name": "day3-switch-headroom:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f4d747cebe51a13a",
+      "name": "day3-switch-headroom:animal_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ffa352feb0b8fb99",
+      "name": "day3-switch-headroom:longer_3",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c1d027cd17f3bd75",
+      "name": "day3-switch-headroom:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bd8871964bf6ebc5",
+      "name": "day9-combined:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-347cfe24eeed4b30",
+      "name": "day9-combined:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-77a0ab328c155bf2",
+      "name": "day9-combined:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4be14302a205ed87",
+      "name": "day9-combined:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-3962217013c8b102",
+      "name": "day9-combined:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1e8d6c561476bf24",
+      "name": "early-day3-headroom:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-80739619b4e7f15c",
+      "name": "early-day3-headroom:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-12ea18b9d33a19ac",
+      "name": "early-day3-headroom:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-23978449180f6720",
+      "name": "early-day3-headroom:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1464d973b8e27c5a",
+      "name": "early-day3-headroom:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-661988ca07475cb5",
+      "name": "early-day3-headroom:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2b0ba1ccc4863620",
+      "name": "early-day3-headroom:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a623d01eac60c98b",
+      "name": "early-day3-headroom:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b5652d1d6375bf4d",
+      "name": "early-day3-headroom:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-467c4005a3b6cabf",
+      "name": "early-day3-headroom:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2e721a46b8f712ad",
+      "name": "early-day3-headroom:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-471b85f89b10252e",
+      "name": "early-day3-headroom:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bbf79bd234c4f6f7",
+      "name": "early-day3-headroom:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-de996e219d68321a",
+      "name": "early-day3-headroom:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a52a6fa3f0d78191",
+      "name": "early-day6-headroom:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2794fef1a8e10da1",
+      "name": "early-day6-headroom:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6966afb8cdb3e12a",
+      "name": "early-day6-headroom:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-3d9bd817eb2ff318",
+      "name": "early-day6-headroom:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-debf18471fe65f9a",
+      "name": "early-day6-headroom:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d689bc05b127e252",
+      "name": "early-day6-headroom:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4ae76fb0771d1000",
+      "name": "early-day6-headroom:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-edf88d61b161d91f",
+      "name": "early-day6-headroom:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-cc216accc9a3e4c5",
+      "name": "early-day6-headroom:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-e2e91830a75acb56",
+      "name": "early-day6-headroom:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-de712c230be07da6",
+      "name": "early-day6-headroom:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2624783301166607",
+      "name": "early-day6-headroom:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-9ca66c5223284614",
+      "name": "early-day6-headroom:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fc3b146efaa98696",
+      "name": "early-day6-headroom:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-3b505661b123fa7a",
+      "name": "economic-headroom-01:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1db198626c6c8c9a",
+      "name": "economic-headroom-01:margin",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ab5b949b5e1ec548",
+      "name": "economic-headroom-01:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-71dbd8475611f2fc",
+      "name": "economic-headroom-01:cash_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-15b75594174b5ac5",
+      "name": "economic-headroom-01:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6d6c014fe7f721e7",
+      "name": "economic-headroom-01:longer_3",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ee611cc2b47fa5d0",
+      "name": "economic-headroom-01:longer_5",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a6d193a7960efb2b",
+      "name": "economic-headroom-01:margin_longer_3",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0c2236ab94950830",
+      "name": "economic-headroom-01:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-655ac74ee8d8468f",
+      "name": "economic-headroom-01:balanced_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c4503b6b1532497a",
+      "name": "economic-headroom-01:animal_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-938740f527d4ebc4",
+      "name": "economic-headroom-01:lower_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b65d7f0ecd243d3d",
+      "name": "economic-headroom-01:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bb951490c0088426",
+      "name": "economic-headroom-01:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-df3cb1e551504de6",
+      "name": "economic-headroom-01:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-e8a20ab372e77ae3",
+      "name": "economic-headroom-01:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1bfa901c5c92f279",
+      "name": "economic-headroom-01:cash_work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ae8fb47615404526",
+      "name": "expected-day18-future-parity:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-500d7baf06b97b67",
+      "name": "expected-day18-future-parity:higher_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c45d3641bace9b23",
+      "name": "expected-day18-future-parity:defensive",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-43b4de8d47a7e0a6",
+      "name": "expected-day18-future-parity:crop_expansion",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-016420f7ba31c799",
+      "name": "expected-day18-future-parity:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4f968b1291b2262f",
+      "name": "expected-day18-future-parity:margin_growth",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d98f288bb7a8cb35",
+      "name": "expected-day18-future-parity:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1cebf8d34446a308",
+      "name": "expected-day18-future-parity:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a302be2cf3b359b0",
+      "name": "expected-day18-future-parity:cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b47c723cb79d635d",
+      "name": "expected-day18-future-parity:known_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d1859eb58e1f17aa",
+      "name": "expected-day18-future-parity:full_demand",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-650175c3ef8974a2",
+      "name": "expected-day18-future-parity:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-295df9390c329d6a",
+      "name": "expected-day18-future-parity:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fe81fe22d4db79c0",
+      "name": "expected-day18-future-parity:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-48d68fb15c9c309a",
+      "name": "joint-day9-headroom:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b400ebefbfa5caa8",
+      "name": "joint-day9-headroom:sale05_supply05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-464521d06c03dfa2",
+      "name": "joint-day9-headroom:sale05_supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-8ac08cb8d457b382",
+      "name": "joint-day9-headroom:sale2_supply05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d4e7b8ae55567a70",
+      "name": "joint-day9-headroom:sale2_supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-1521ada5342291c6",
+      "name": "joint-day9-headroom:sale05_margin",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ae731e501c69a047",
+      "name": "joint-day9-headroom:sale2_margin",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-27bde80c348937bf",
+      "name": "joint-day9-headroom:sale05_crops",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-96dbccde57f30b15",
+      "name": "joint-day9-headroom:sale2_crops",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-09e93767bb83c27b",
+      "name": "joint-day9-headroom:sale05_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-2ea6d7ff4e4cc242",
+      "name": "joint-day9-headroom:sale2_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5e2c78bb432a0cad",
+      "name": "joint-day9-headroom:sale05_liquidity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c35d7233e80cffec",
+      "name": "joint-day9-headroom:sale2_liquidity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f02aba3e76485a24",
+      "name": "joint-day9-headroom:sale05_replant",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-899c29d7351fcadc",
+      "name": "joint-day9-headroom:sale2_replant",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d32956078f782b06",
+      "name": "joint-day9-headroom:sale05_proposals",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c601927b92a105d9",
+      "name": "joint-day9-headroom:sale2_proposals",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-4b0c028d481602cf",
+      "name": "observe1-headroom-part1:animal_cap0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d31a8b0db4be6bdc",
+      "name": "observe1-headroom-part1:animal_cap2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-f695254860020c3a",
+      "name": "observe1-headroom-part1:animal_cap4",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-49ca2d4bbfba009f",
+      "name": "observe1-headroom-part1:animal_bias03",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0512c15c41aaeb72",
+      "name": "observe1-headroom-part1:animal_bias06",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-3bcfb4833111ba2e",
+      "name": "observe1-headroom-part1:capital_power1",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c9180d22c616cecf",
+      "name": "observe1-headroom-part1:capital_power15",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-fd63dd2f2361d669",
+      "name": "observe1-headroom-part1:supply05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0213d6dbba436c21",
+      "name": "observe1-headroom-part1:supply12",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-85711da5e37acbe7",
+      "name": "observe1-headroom-part1:competition0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bd69752b486fb196",
+      "name": "observe1-headroom-part1:competition1",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-bc3ce18e5d5b2737",
+      "name": "observe1-headroom-part1:competition3",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-d266e872418882ff",
+      "name": "observe1-headroom-part1:work_capacity",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-27f34dce6645b569",
+      "name": "opening-capital-headroom:opening_animals0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ab836923e2012093",
+      "name": "opening-capital-headroom:opening_animals2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5049edc57f03f76e",
+      "name": "opening-capital-headroom:opening_animals4",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ee74a0bfaef56841",
+      "name": "opening-capital-headroom:opening_animals8",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0174f7f186089dc4",
+      "name": "opening-capital-headroom:opening_capital0",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-54cbce719eff12cd",
+      "name": "opening-capital-headroom:opening_cash",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-6d7453ce4522da34",
+      "name": "sale-factorial:keep",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5ba180c2b38d39e0",
+      "name": "sale-factorial:margin",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a7c762484f583f70",
+      "name": "sale-factorial:delayed_sales",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-a4ec479e77e36bfd",
+      "name": "sale-factorial:sale_supply_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-5d8c4331cbdb9c18",
+      "name": "sale-factorial:sale_supply_1",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-c9556eeba596ea43",
+      "name": "sale-factorial:sale_supply_2",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-7ced1813f49d7b57",
+      "name": "supply-headroom-02:supply_15",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-022cbfba42aa92fd",
+      "name": "supply-headroom-02:supply_20",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-69214e36b36bf360",
+      "name": "supply-headroom-02:defensive_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-b03098b0bb94e996",
+      "name": "supply-headroom-02:replant_05",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-ed01ccc1681e43c6",
+      "name": "supply-headroom-02:replant_10",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-0109f06c28265aa3",
+      "name": "supply-headroom-02:replant_supply",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    },
+    {
+      "id": "ppo-9b74df1106ace5ff",
+      "name": "supply-headroom-02:crop_cycles",
+      "role": "training_menu_only",
+      "reason": "A fixed branch used to generate training targets; do not create a new tournament candidate from it."
+    }
+  ],
+  "exact_adapter_alias_groups": [
+    {
+      "canonical": "ppo-c90da6b7b3ea061d",
+      "members": [
+        "ppo-d3ddda6eeb90c4f4",
+        "ppo-c90da6b7b3ea061d"
+      ],
+      "names": [
+        "common-day9-matched-expected",
+        "expected-selector-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-341f800bf67021d3",
+      "members": [
+        "ppo-4a74093b5dc4324c",
+        "ppo-341f800bf67021d3"
+      ],
+      "names": [
+        "connected-day6-native",
+        "connected-day6-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-bf0aa03b41428d97",
+      "members": [
+        "ppo-08ed26d90f54ffcc",
+        "ppo-bf0aa03b41428d97"
+      ],
+      "names": [
+        "day3-connected-native",
+        "connected-day3-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-9980111aa0f1e7f6",
+      "members": [
+        "ppo-962ecfec0cbe221d",
+        "ppo-9980111aa0f1e7f6"
+      ],
+      "names": [
+        "day3-expanded-native",
+        "connected-day3-v2"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-fcf890bbcf8a788d",
+      "members": [
+        "ppo-7a3e11b7b697716f",
+        "ppo-fcf890bbcf8a788d"
+      ],
+      "names": [
+        "day9-fresh-broad",
+        "day9-package-parity"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-d5605b8bce1bc0c4",
+      "members": [
+        "ppo-1c3bf93e45dcb3af",
+        "ppo-d5605b8bce1bc0c4"
+      ],
+      "names": [
+        "expanded-fresh-broad",
+        "expanded-selector-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-981db806031fa901",
+      "members": [
+        "ppo-d77b0cc2e355fbef",
+        "ppo-981db806031fa901"
+      ],
+      "names": [
+        "market-order-native",
+        "day9-value-order-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    },
+    {
+      "canonical": "ppo-2f53f8d62fe5cefb",
+      "members": [
+        "ppo-89b50fcb47b0433c",
+        "ppo-2f53f8d62fe5cefb"
+      ],
+      "names": [
+        "reference-day9-native",
+        "reference-day9-v1"
+      ],
+      "basis": "Identical native binary, base settings, ordered selector file hashes, restoration days and action wrapper rule."
+    }
+  ],
+  "canonical_standalone_ids": [
+    "ppo-fe2f4a20004fba63",
+    "ppo-0b68d3f640766b8a",
+    "ppo-592bc1b1a1f774d0",
+    "ppo-5bf350c6fdee8687",
+    "ppo-495ebc48210f14ae",
+    "ppo-d353ae59776d3829",
+    "ppo-c90da6b7b3ea061d",
+    "ppo-341f800bf67021d3",
+    "ppo-3c8b3c1a20fdf3b3",
+    "ppo-72b6a6fdb7566576",
+    "ppo-bf0aa03b41428d97",
+    "ppo-9980111aa0f1e7f6",
+    "ppo-f12a9e36c2034a82",
+    "ppo-8f6778e3afd2526a",
+    "ppo-fcf890bbcf8a788d",
+    "ppo-ad4e7ca03db5ae14",
+    "ppo-c7ee09cf47d1aeb5",
+    "ppo-b6393151836a8f46",
+    "ppo-04138d8d7fbc3edd",
+    "ppo-923a0522db0dc449",
+    "ppo-5850be7c6924e322",
+    "ppo-7fc38a8b96ccce7c",
+    "ppo-e9931b20b5779646",
+    "ppo-3eb37095bcc73493",
+    "ppo-251d67093842fe00",
+    "ppo-d5605b8bce1bc0c4",
+    "ppo-0bc77af242dbf939",
+    "ppo-61eac1296114d456",
+    "ppo-981db806031fa901",
+    "ppo-9786d9a4c7b006a5",
+    "ppo-7b48660057504eab",
+    "ppo-ef6147ebbe4bfd4c",
+    "ppo-408cc58b08886b7d",
+    "ppo-73a5354f3f81209e",
+    "ppo-2f53f8d62fe5cefb",
+    "ppo-1894367c93bc7f58",
+    "ppo-78a53356176cdc2d",
+    "ppo-dd9e9d4322fbc61a",
+    "ppo-0e482b6eb039e069",
+    "ppo-86cae8aba7a3fd5d",
+    "ppo-9736434c47636a79",
+    "ppo-7d6a70747815bdb4"
+  ],
+  "counts": {
+    "keep_control": 6,
+    "runtime_build_control": 5,
+    "runtime_rebuild_alias": 1,
+    "standalone_candidate": 50,
+    "training_menu_only": 247
+  },
+  "canonical_standalone_count": 42,
+  "cautions": [
+    "observe1-keep-native is a real changed policy: it skips the first action and must remain in the roster.",
+    "market-order-native changes action ordering despite equal wins in one test; it remains a candidate.",
+    "public-residual-active-parity has a completed strength run under an alias; retain the active forecast policy.",
+    "No candidate is excluded because its win rate was poor. Training-only models without a runtime configuration remain in model_inventory."
+  ]
+}

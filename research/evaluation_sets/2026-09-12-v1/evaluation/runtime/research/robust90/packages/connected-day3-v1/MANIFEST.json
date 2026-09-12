@@ -1,0 +1,31 @@
+{
+  "status": "Development program package; not promoted or submitted",
+  "selectors": [
+    "selector_0.json",
+    "selector_1.json"
+  ],
+  "restore_days": [
+    8
+  ],
+  "program": {
+    "version": 1,
+    "switch_day": 3,
+    "restore_base_day": 8,
+    "suffix_files": [
+      "suffix_selector_0.json"
+    ],
+    "suffix_sha256": [
+      "6b9147d29a4b8278e660e34efbee39751007f88c8ee66fb9a8c43ab85c05c5ca"
+    ]
+  },
+  "files": {
+    "main.py": "2ea5b69e513b46581c3482dee10f8c6adfa101ac28232e5e4b79a34b7bd6c075",
+    "codec.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "features.py": "f1314047b5b7255b88791a342cc2737c098656f666ff07d360081903fc297f72",
+    "selector.py": "2d613a69f3694da2cca0fb0d40596a647ea63665b6679232f395a7f05015b7f7",
+    "agent.so": "894212097145c33daea8c6f4961aa1bc00b39f42efb8445f51d4c1cda311160a",
+    "config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "selector_0.json": "ea387f80fbcaf725a61d1752daf36316d95f4e9319b6e8aa0267c1dce2f1bdab",
+    "selector_1.json": "6b9147d29a4b8278e660e34efbee39751007f88c8ee66fb9a8c43ab85c05c5ca"
+  }
+}
