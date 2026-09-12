@@ -1,0 +1,28 @@
+{
+  "characterization": "Fixed before selection: potential RNG table and PASS/PASS conditional features; no price or candidate-result inputs.",
+  "code_sha256": {
+    "economy_features.py": "bad0c1fb410090e8a916d6bfe990e169ce7615b89d1dfd3c5e4f2e1443bc4ea0",
+    "seed_sets.py": "6fa106db1790230cb5b3a63f8272e7664c822f44b842ef28e2bc957871d38736"
+  },
+  "counters": {
+    "representative": 256,
+    "stress_pool": 4096
+  },
+  "domain": [
+    0,
+    2147483648
+  ],
+  "domain_end_exclusive": true,
+  "entropy": "Independent 256-bit OS-random keys, drawn once before characterization",
+  "exclusion_sha256": "d46c06af9c102195d9602b6cddeba00cefd26e6d0cbabdb8e6d7c7b7ae2f36a8",
+  "keys": {
+    "representative": "f327ad5d8db581f907a8da5c93d699cf44ea0e1c93fb01198eccae773afaa698",
+    "stress_pool": "56878befa0ae65866ee56957a6c0b1ea7486875625b25bf517e8d3076903e7d6"
+  },
+  "release_note": "Holdout excludes the entire characterized pool, not just the 128 selected stress seeds.",
+  "sampler": "SHA256(key_bytes || NUL || ASCII_label || uint64_be(counter)), first 32 bits masked to 31; reject exclusions and duplicates",
+  "schema_version": 1,
+  "selection": "26 coordinate extrema (low/high), eight first-shop witnesses, contrasting milk/wool and early/late cells, then rank-distance farthest-first to 128.",
+  "stress_pool_size": 4096,
+  "uniformity": "Uniform pseudorandom sample without replacement over the eligible 31-bit domain; no modulo bias, screening or economic stratification for representative/holdout."
+}

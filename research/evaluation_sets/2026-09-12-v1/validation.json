@@ -1,0 +1,36 @@
+{
+  "audited_exclusions": 11320,
+  "candidate_evaluation_games_run": 0,
+  "caveat": "No policy panel ran; raw RNG/official interpreter checks do not validate native policy runtime performance.",
+  "contrast_cells_covered": 12,
+  "contrast_cells_total": 12,
+  "controller_changes_shop_sequence_in_cases": 8,
+  "counts": {
+    "holdout": 256,
+    "representative": 256,
+    "stress": 128
+  },
+  "counts_unique_valid_disjoint": true,
+  "holdout_economic_features": 0,
+  "holdout_overlap_with_all_characterized": 0,
+  "holdout_simulator_calls": 0,
+  "latest_audit_exclusions": 11412,
+  "latest_audit_utc": "2026-09-12T19:19:19Z",
+  "opponents": 16,
+  "overlap_with_audited_exclusions": 0,
+  "overlap_with_latest_audit": 0,
+  "raw_rng_values_and_shop_offsets_checked": 59264,
+  "reference_demand_and_weeds_exact_in_8_seasons": true,
+  "scheduled_games_per_candidate": {
+    "holdout": 8192,
+    "representative": 8192,
+    "stress": 4096
+  },
+  "seconds": 0.6627583503723145,
+  "simulator_only_full_seasons": 16,
+  "simulator_transitions": 11504,
+  "source_and_protocol_checksums_exact": true,
+  "status": "PASS",
+  "stress_coordinate_extrema_covered": 26,
+  "stress_pool": 4096
+}

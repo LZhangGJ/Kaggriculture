@@ -1,0 +1,10 @@
+{
+  "candidate_games": 0,
+  "count": 256,
+  "economy_inspected": false,
+  "generator_sha256": "fd28abc0d1c8246e7314ada19ba6334110c287b3b8fa8c94a706514ec2596873",
+  "manifest": "sealed/holdout.json",
+  "release": "Freeze candidate files, settings, evaluator and analysis first; re-audit exclusions; use tools/release_holdout.py.",
+  "sha256": "d91ca06fe13a20beb973dfdbccf5894409eee3ec35dd1f731a2e1af3ac3fcef9",
+  "status": "sealed_unevaluated"
+}

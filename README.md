@@ -150,3 +150,7 @@ See `research/README.md` for the recorded setup and caveats.
 The fast runner trusts agents: it skips schema validation, timeout enforcement,
 defensive observation copies, replay recording, and log capture. Always validate a
 candidate with the official runner before submission.
+
+## Shared evaluation panels
+
+[The 2026-09-12 evaluation sets](research/evaluation_sets/2026-09-12-v1/README.md) provide 256 representative seeds, 128 stress seeds and a committed 256-seed holdout for matched candidate comparisons. The documentation defines each panel's purpose, pinned opponents, audit coverage, and release rules.

@@ -1,0 +1,53 @@
+{
+  "status": "source identities frozen; one-seed behavior audit finds substantial shared production lineage",
+  "primary_opponents": [
+    "soil_v219g",
+    "flexon_v5",
+    "market_smart_v8",
+    "shop0909",
+    "aurax_shop_v2",
+    "seven_turn",
+    "ahmed_v27",
+    "moon_v215",
+    "aurax_reactive_v1",
+    "thomas_955_v2",
+    "native:r1",
+    "native:r2",
+    "extra:apex-v7",
+    "extra:six-day-fieldbook",
+    "extra:old-champion",
+    "extra:hysteresis"
+  ],
+  "groups": {
+    "current_public_production": [
+      "soil_v219g",
+      "flexon_v5",
+      "market_smart_v8",
+      "shop0909",
+      "aurax_shop_v2",
+      "seven_turn",
+      "ahmed_v27",
+      "moon_v215",
+      "aurax_reactive_v1"
+    ],
+    "multi_route": [
+      "thomas_955_v2"
+    ],
+    "dynamic_dp": [
+      "native:r1",
+      "native:r2"
+    ],
+    "earlier_native": [
+      "extra:apex-v7",
+      "extra:six-day-fieldbook"
+    ],
+    "legacy_reactive": [
+      "extra:old-champion",
+      "extra:hysteresis"
+    ]
+  },
+  "diagnostic_only": [
+    "nagatakengo_v70"
+  ],
+  "notes": "The current 16 identities do not satisfy the six distinct economic-family target alone. Nine public programs shared an identical daily asset-count trajectory in the first diagnostic seed. Require a separate legal economic-stress panel and/or genuinely distinct public opponents before declaring robustness. Do not pad primary wins with weak controls."
+}

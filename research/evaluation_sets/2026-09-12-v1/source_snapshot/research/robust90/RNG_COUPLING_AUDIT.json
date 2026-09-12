@@ -1,0 +1,523 @@
+{
+  "games": 32,
+  "initial_seeds": [
+    2612001000
+  ],
+  "distinct_terminal_shop_sequences": 9,
+  "rows": [
+    {
+      "opponent": "ahmed_v27",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-ahmed_v27-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "ahmed_v27",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-ahmed_v27-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "aurax_reactive_v1",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-aurax_reactive_v1-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "aurax_reactive_v1",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-aurax_reactive_v1-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "aurax_shop_v2",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-aurax_shop_v2-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "aurax_shop_v2",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-aurax_shop_v2-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "extra:apex-v7",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03aapex-v7-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "extra:apex-v7",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03aapex-v7-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "extra:hysteresis",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03ahysteresis-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "extra:hysteresis",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03ahysteresis-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "extra:old-champion",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03aold-champion-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "extra:old-champion",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03aold-champion-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "extra:six-day-fieldbook",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03asix-day-fieldbook-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "extra:six-day-fieldbook",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-extra\uf03asix-day-fieldbook-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "flexon_v5",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-flexon_v5-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "flexon_v5",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-flexon_v5-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "market_smart_v8",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-market_smart_v8-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "market_smart_v8",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-market_smart_v8-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "moon_v215",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-moon_v215-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "moon_v215",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-moon_v215-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "native:r1",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "YARN_STORE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-native\uf03ar1-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "native:r1",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "YARN_STORE",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-native\uf03ar1-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "native:r2",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-native\uf03ar2-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "native:r2",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-native\uf03ar2-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "seven_turn",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-seven_turn-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "seven_turn",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-seven_turn-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "shop0909",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-shop0909-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "shop0909",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-shop0909-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "soil_v219g",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-soil_v219g-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "soil_v219g",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-soil_v219g-2612001000-1.json.gz"
+    },
+    {
+      "opponent": "thomas_955_v2",
+      "seed": 2612001000,
+      "opponent_seat": 0,
+      "shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-thomas_955_v2-2612001000-0.json.gz"
+    },
+    {
+      "opponent": "thomas_955_v2",
+      "seed": 2612001000,
+      "opponent_seat": 1,
+      "shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "source": "research\\robust90\\runs\\family-traces\\trace-thomas_955_v2-2612001000-1.json.gz"
+    }
+  ],
+  "mechanic": "Official _end_of_day consumes RNG draws only for empty farm tiles before drawing the next shop. Equal episode seeds do not guarantee equal shop sequences under different policies.",
+  "scope": "Existing trace diagnostic; not a new policy-strength test"
+}

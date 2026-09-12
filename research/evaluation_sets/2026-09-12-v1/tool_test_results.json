@@ -1,0 +1,8 @@
+{
+  "details": "test_holdout_job_plan_refuses_missing_release_before_write (test_tools.ToolTests.test_holdout_job_plan_refuses_missing_release_before_write) ... ok\ntest_sampling_rejects_exclusions_without_redrawing (test_tools.ToolTests.test_sampling_rejects_exclusions_without_redrawing) ... ok\ntest_seed_recovery_from_manifest_rows_gzip_cli_and_code (test_tools.ToolTests.test_seed_recovery_from_manifest_rows_gzip_cli_and_code) ... ok\ntest_synthetic_release_checks_frozen_bytes_and_contamination (test_tools.ToolTests.test_synthetic_release_checks_frozen_bytes_and_contamination) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.073s\n\nOK\n",
+  "errors": 0,
+  "failures": 0,
+  "scope": "Synthetic fixtures only; no real holdout release",
+  "status": "PASS",
+  "tests_run": 4
+}

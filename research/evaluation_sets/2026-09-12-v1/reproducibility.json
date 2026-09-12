@@ -1,0 +1,8 @@
+{
+  "all_4352_feature_rows_exact": true,
+  "holdout_characterization_calls": 0,
+  "holdout_numeric_reproduction_only": true,
+  "representative_exact": true,
+  "stress_pool_exact": true,
+  "stress_selection_exact": true
+}

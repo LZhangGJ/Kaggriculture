@@ -1,0 +1,550 @@
+{
+  "anchors_and_reasons": {
+    "10054544": [
+      "contrast:reference_milk_wool:high:low"
+    ],
+    "1031984066": [
+      "minimum:potential_crop_minus_animal"
+    ],
+    "1050456976": [
+      "rank_distance_farthest_first"
+    ],
+    "105572555": [
+      "minimum:ref_shop_units_STRAWBERRY"
+    ],
+    "1073661404": [
+      "maximum:ref_shop_units_EGG"
+    ],
+    "11340080": [
+      "reference_first_shop:PIZZA_SHOP",
+      "contrast:reference_early_late_balance:high:high"
+    ],
+    "1151963842": [
+      "minimum:potential_units_sum_STRAWBERRY"
+    ],
+    "116798650": [
+      "minimum:latent_weed_stream_half_difference"
+    ],
+    "1174359205": [
+      "rank_distance_farthest_first"
+    ],
+    "1191732133": [
+      "rank_distance_farthest_first"
+    ],
+    "120929846": [
+      "rank_distance_farthest_first"
+    ],
+    "1246632067": [
+      "rank_distance_farthest_first"
+    ],
+    "12479200": [
+      "contrast:potential_milk_wool:high:low"
+    ],
+    "1301618514": [
+      "maximum:ref_crop_minus_animal"
+    ],
+    "1383269874": [
+      "rank_distance_farthest_first"
+    ],
+    "1386023142": [
+      "rank_distance_farthest_first"
+    ],
+    "1395450535": [
+      "rank_distance_farthest_first"
+    ],
+    "1412108008": [
+      "rank_distance_farthest_first"
+    ],
+    "1435501550": [
+      "rank_distance_farthest_first"
+    ],
+    "1442885889": [
+      "rank_distance_farthest_first"
+    ],
+    "1455372843": [
+      "rank_distance_farthest_first"
+    ],
+    "1487984600": [
+      "maximum:ref_shop_units_CARROT"
+    ],
+    "1497671613": [
+      "rank_distance_farthest_first"
+    ],
+    "1504949008": [
+      "rank_distance_farthest_first"
+    ],
+    "1515240379": [
+      "rank_distance_farthest_first"
+    ],
+    "1524307943": [
+      "rank_distance_farthest_first"
+    ],
+    "15511266": [
+      "reference_first_shop:ICE_CREAM_SHOP"
+    ],
+    "156243447": [
+      "maximum:latent_weed_stream_half_difference"
+    ],
+    "1576252746": [
+      "rank_distance_farthest_first"
+    ],
+    "15847564": [
+      "minimum:ref_shop_units_MILK"
+    ],
+    "1587974714": [
+      "rank_distance_farthest_first"
+    ],
+    "1619482607": [
+      "rank_distance_farthest_first"
+    ],
+    "1622159948": [
+      "rank_distance_farthest_first"
+    ],
+    "1637416273": [
+      "rank_distance_farthest_first"
+    ],
+    "1654081946": [
+      "rank_distance_farthest_first"
+    ],
+    "1669395364": [
+      "rank_distance_farthest_first"
+    ],
+    "169281858": [
+      "rank_distance_farthest_first"
+    ],
+    "1747328254": [
+      "rank_distance_farthest_first"
+    ],
+    "1756822747": [
+      "minimum:potential_adjacent_choice_agreement"
+    ],
+    "1770536319": [
+      "maximum:potential_units_sum_EGG"
+    ],
+    "1795619261": [
+      "rank_distance_farthest_first"
+    ],
+    "1798484643": [
+      "rank_distance_farthest_first"
+    ],
+    "1805885184": [
+      "rank_distance_farthest_first"
+    ],
+    "1815922587": [
+      "minimum:potential_units_sum_TOMATO"
+    ],
+    "1843806046": [
+      "rank_distance_farthest_first"
+    ],
+    "1849468190": [
+      "rank_distance_farthest_first"
+    ],
+    "1895864377": [
+      "maximum:potential_units_sum_MILK"
+    ],
+    "1909833729": [
+      "rank_distance_farthest_first"
+    ],
+    "1911832818": [
+      "rank_distance_farthest_first"
+    ],
+    "1935360": [
+      "minimum:ref_shop_units_WOOL"
+    ],
+    "1937476704": [
+      "minimum:potential_units_sum_WHEAT"
+    ],
+    "1940140849": [
+      "rank_distance_farthest_first"
+    ],
+    "1949112602": [
+      "rank_distance_farthest_first"
+    ],
+    "1958411793": [
+      "rank_distance_farthest_first"
+    ],
+    "195872639": [
+      "rank_distance_farthest_first"
+    ],
+    "19616217": [
+      "maximum:ref_late_milk_minus_wool"
+    ],
+    "1964113052": [
+      "rank_distance_farthest_first"
+    ],
+    "1989857903": [
+      "rank_distance_farthest_first"
+    ],
+    "1999599958": [
+      "rank_distance_farthest_first"
+    ],
+    "2022412461": [
+      "rank_distance_farthest_first"
+    ],
+    "2031091367": [
+      "rank_distance_farthest_first"
+    ],
+    "20452605": [
+      "minimum:ref_early_milk_minus_wool"
+    ],
+    "2053001748": [
+      "rank_distance_farthest_first"
+    ],
+    "2053437081": [
+      "rank_distance_farthest_first"
+    ],
+    "2075362": [
+      "reference_first_shop:YARN_STORE",
+      "contrast:reference_milk_wool:high:high"
+    ],
+    "2075412163": [
+      "rank_distance_farthest_first"
+    ],
+    "2076054573": [
+      "rank_distance_farthest_first"
+    ],
+    "20763072": [
+      "reference_first_shop:FARMERS_MARKET"
+    ],
+    "25283827": [
+      "contrast:reference_early_late_balance:high:low"
+    ],
+    "2535322": [
+      "minimum:ref_shop_units_CARROT",
+      "reference_first_shop:SMOOTHIE_SHOP",
+      "contrast:potential_milk_wool:low:high"
+    ],
+    "265135248": [
+      "rank_distance_farthest_first"
+    ],
+    "265416256": [
+      "rank_distance_farthest_first"
+    ],
+    "273744741": [
+      "maximum:ref_shop_variety",
+      "minimum:ref_max_duplicate"
+    ],
+    "304720": [
+      "minimum:ref_shop_units_EGG",
+      "reference_first_shop:PET_CAFE",
+      "contrast:reference_early_late_balance:low:high"
+    ],
+    "3057937": [
+      "maximum:ref_early_milk_minus_wool"
+    ],
+    "3327671": [
+      "contrast:reference_milk_wool:low:high"
+    ],
+    "34140261": [
+      "minimum:latent_weed_hits"
+    ],
+    "351058744": [
+      "rank_distance_farthest_first"
+    ],
+    "38306970": [
+      "maximum:ref_shop_units_STRAWBERRY"
+    ],
+    "404520939": [
+      "rank_distance_farthest_first"
+    ],
+    "429693834": [
+      "maximum:ref_max_duplicate"
+    ],
+    "434522017": [
+      "rank_distance_farthest_first"
+    ],
+    "444236184": [
+      "rank_distance_farthest_first"
+    ],
+    "48625876": [
+      "maximum:potential_units_sum_TOMATO",
+      "maximum:potential_crop_minus_animal"
+    ],
+    "492967870": [
+      "maximum:potential_units_sum_STRAWBERRY"
+    ],
+    "5037590": [
+      "reference_first_shop:BAKERY",
+      "contrast:reference_early_late_balance:low:low"
+    ],
+    "515327055": [
+      "minimum:latent_weed_early_minus_late"
+    ],
+    "52914959": [
+      "contrast:potential_milk_wool:low:low"
+    ],
+    "531422038": [
+      "minimum:potential_units_sum_EGG"
+    ],
+    "537079261": [
+      "rank_distance_farthest_first"
+    ],
+    "538256195": [
+      "rank_distance_farthest_first"
+    ],
+    "546104002": [
+      "rank_distance_farthest_first"
+    ],
+    "549518324": [
+      "minimum:ref_shop_variety"
+    ],
+    "553443946": [
+      "minimum:potential_units_sum_MILK"
+    ],
+    "557543847": [
+      "rank_distance_farthest_first"
+    ],
+    "613789291": [
+      "rank_distance_farthest_first"
+    ],
+    "623373734": [
+      "minimum:potential_units_sum_WOOL",
+      "maximum:potential_milk_minus_wool"
+    ],
+    "625673509": [
+      "rank_distance_farthest_first"
+    ],
+    "6281028": [
+      "contrast:potential_milk_wool:high:high"
+    ],
+    "633887683": [
+      "rank_distance_farthest_first"
+    ],
+    "644561517": [
+      "rank_distance_farthest_first"
+    ],
+    "657427947": [
+      "minimum:ref_shop_units_WHEAT"
+    ],
+    "6637091": [
+      "reference_first_shop:BRUNCH_SPOT",
+      "contrast:reference_milk_wool:low:low"
+    ],
+    "664121605": [
+      "rank_distance_farthest_first"
+    ],
+    "682189505": [
+      "rank_distance_farthest_first"
+    ],
+    "689974474": [
+      "maximum:ref_shop_units_TOMATO"
+    ],
+    "715576091": [
+      "maximum:ref_shop_units_MILK",
+      "maximum:ref_milk_minus_wool"
+    ],
+    "719862402": [
+      "rank_distance_farthest_first"
+    ],
+    "729662368": [
+      "rank_distance_farthest_first"
+    ],
+    "767483553": [
+      "maximum:ref_shop_units_WOOL",
+      "minimum:ref_milk_minus_wool",
+      "minimum:ref_crop_minus_animal"
+    ],
+    "772192291": [
+      "rank_distance_farthest_first"
+    ],
+    "777741250": [
+      "rank_distance_farthest_first"
+    ],
+    "813094663": [
+      "maximum:potential_units_sum_WOOL",
+      "minimum:potential_milk_minus_wool"
+    ],
+    "8443353": [
+      "maximum:ref_shop_units_WHEAT",
+      "minimum:ref_shop_units_TOMATO"
+    ],
+    "851090366": [
+      "rank_distance_farthest_first"
+    ],
+    "862747412": [
+      "maximum:latent_weed_early_minus_late"
+    ],
+    "894016699": [
+      "rank_distance_farthest_first"
+    ],
+    "911911709": [
+      "rank_distance_farthest_first"
+    ],
+    "915042141": [
+      "maximum:latent_weed_hits"
+    ],
+    "927306517": [
+      "maximum:potential_adjacent_choice_agreement"
+    ],
+    "928581693": [
+      "maximum:potential_units_sum_CARROT"
+    ],
+    "931379407": [
+      "minimum:ref_late_milk_minus_wool"
+    ],
+    "943700264": [
+      "rank_distance_farthest_first"
+    ],
+    "956691036": [
+      "rank_distance_farthest_first"
+    ],
+    "974403832": [
+      "minimum:potential_units_sum_CARROT"
+    ],
+    "987048294": [
+      "maximum:potential_units_sum_WHEAT"
+    ],
+    "994047570": [
+      "rank_distance_farthest_first"
+    ],
+    "995772184": [
+      "rank_distance_farthest_first"
+    ]
+  },
+  "contrast_cells": [
+    {
+      "name": "reference_milk_wool:low:low",
+      "pool_count": 248,
+      "witness_seed": 6637091,
+      "x": "ref_shop_units_MILK",
+      "x_cutoff": 180,
+      "y": "ref_shop_units_WOOL",
+      "y_cutoff": 0
+    },
+    {
+      "name": "reference_milk_wool:low:high",
+      "pool_count": 405,
+      "witness_seed": 3327671,
+      "x": "ref_shop_units_MILK",
+      "x_cutoff": 180,
+      "y": "ref_shop_units_WOOL",
+      "y_cutoff": 324
+    },
+    {
+      "name": "reference_milk_wool:high:low",
+      "pool_count": 523,
+      "witness_seed": 10054544,
+      "x": "ref_shop_units_MILK",
+      "x_cutoff": 414,
+      "y": "ref_shop_units_WOOL",
+      "y_cutoff": 0
+    },
+    {
+      "name": "reference_milk_wool:high:high",
+      "pool_count": 128,
+      "witness_seed": 2075362,
+      "x": "ref_shop_units_MILK",
+      "x_cutoff": 414,
+      "y": "ref_shop_units_WOOL",
+      "y_cutoff": 324
+    },
+    {
+      "name": "reference_early_late_balance:low:low",
+      "pool_count": 493,
+      "witness_seed": 5037590,
+      "x": "ref_early_milk_minus_wool",
+      "x_cutoff": 0,
+      "y": "ref_late_milk_minus_wool",
+      "y_cutoff": -54
+    },
+    {
+      "name": "reference_early_late_balance:low:high",
+      "pool_count": 536,
+      "witness_seed": 304720,
+      "x": "ref_early_milk_minus_wool",
+      "x_cutoff": 0,
+      "y": "ref_late_milk_minus_wool",
+      "y_cutoff": 126
+    },
+    {
+      "name": "reference_early_late_balance:high:low",
+      "pool_count": 332,
+      "witness_seed": 25283827,
+      "x": "ref_early_milk_minus_wool",
+      "x_cutoff": 36,
+      "y": "ref_late_milk_minus_wool",
+      "y_cutoff": -54
+    },
+    {
+      "name": "reference_early_late_balance:high:high",
+      "pool_count": 367,
+      "witness_seed": 11340080,
+      "x": "ref_early_milk_minus_wool",
+      "x_cutoff": 36,
+      "y": "ref_late_milk_minus_wool",
+      "y_cutoff": 126
+    },
+    {
+      "name": "potential_milk_wool:low:low",
+      "pool_count": 129,
+      "witness_seed": 52914959,
+      "x": "potential_units_sum_MILK",
+      "x_cutoff": 57924,
+      "y": "potential_units_sum_WOOL",
+      "y_cutoff": 37188
+    },
+    {
+      "name": "potential_milk_wool:low:high",
+      "pool_count": 391,
+      "witness_seed": 2535322,
+      "x": "potential_units_sum_MILK",
+      "x_cutoff": 57924,
+      "y": "potential_units_sum_WOOL",
+      "y_cutoff": 42084
+    },
+    {
+      "name": "potential_milk_wool:high:low",
+      "pool_count": 396,
+      "witness_seed": 12479200,
+      "x": "potential_units_sum_MILK",
+      "x_cutoff": 61488,
+      "y": "potential_units_sum_WOOL",
+      "y_cutoff": 37188
+    },
+    {
+      "name": "potential_milk_wool:high:high",
+      "pool_count": 142,
+      "witness_seed": 6281028,
+      "x": "potential_units_sum_MILK",
+      "x_cutoff": 61488,
+      "y": "potential_units_sum_WOOL",
+      "y_cutoff": 42084
+    }
+  ],
+  "coordinate_extrema_covered": true,
+  "dimensions": [
+    "potential_units_sum_WHEAT",
+    "potential_units_sum_CARROT",
+    "potential_units_sum_TOMATO",
+    "potential_units_sum_STRAWBERRY",
+    "potential_units_sum_EGG",
+    "potential_units_sum_MILK",
+    "potential_units_sum_WOOL",
+    "potential_milk_minus_wool",
+    "potential_crop_minus_animal",
+    "latent_weed_hits",
+    "latent_weed_early_minus_late",
+    "latent_weed_stream_half_difference",
+    "potential_adjacent_choice_agreement",
+    "ref_shop_units_WHEAT",
+    "ref_shop_units_CARROT",
+    "ref_shop_units_TOMATO",
+    "ref_shop_units_STRAWBERRY",
+    "ref_shop_units_EGG",
+    "ref_shop_units_MILK",
+    "ref_shop_units_WOOL",
+    "ref_milk_minus_wool",
+    "ref_crop_minus_animal",
+    "ref_early_milk_minus_wool",
+    "ref_late_milk_minus_wool",
+    "ref_shop_variety",
+    "ref_max_duplicate"
+  ],
+  "distance": "Squared Euclidean distance on integer doubled midranks over the 4096 pool; ties use numeric seed ascending.",
+  "features_constant_in_pool": [
+    "ref_shop_units_MELON",
+    "ref_early_units_MELON",
+    "ref_late_added_units_MELON",
+    "potential_units_sum_MELON"
+  ]
+}

@@ -1,0 +1,1196 @@
+{
+  "bytes_at_inventory": 8236321105,
+  "changed_files": [
+    "research/robust90/runs/day3-extra-training-v2/rows.jsonl"
+  ],
+  "completed_utc": "2026-09-12T19:02:51Z",
+  "exclusions_in_sampling_domain": 8039,
+  "exclusions_sha256": "d46c06af9c102195d9602b6cddeba00cefd26e6d0cbabdb8e6d7c7b7ae2f36a8",
+  "file_inventory_sha256": "15dbdb4ca089c7d49605c6b1f380ac8d810489a66ef0fe1c7289b4b109248c61",
+  "files_with_seed_evidence": 1607,
+  "gaps": [
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_audit.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_off.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/build/workflow_on.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r1/policy/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_audit.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_off.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/build/workflow_on.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_afs_workflow_repair_r1_r2/r2/policy/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/baselines/joint_disabled.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/baselines/merged.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/policy/joint.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/research/v1/joint_v1.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/research/v3/joint_v3.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/clean-selector-core/build/exact_market.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/clean-selector-core/build/forecast_features.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/clean-selector-core/build/immediate_sales.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/clean-selector-core/build/reconfigure_only.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/demand-uncertainty/build/control.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/demand-uncertainty/build/moments.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/demand0.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/demand8.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/demand8_persistent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/discount_cache.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/dynamic_rival.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/full_season_opening.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/opening_melon2.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/persistent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/persistent_common.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/sale2.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/market-scenarios/build/switch_base.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/candidates/public-residual-v1/build/public_residual.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/models/base9-plan-values-v1/out_of_fold.npz",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/native_common_intraday_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/opponents/apex-v7/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/opponents/six-day-fieldbook/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/connected-day3-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/connected-day6-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/day1-keep-program-fixture/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/day3-connected-keep-fixture/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/day6-keep-program-fixture/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/day9-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/day9-value-order-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/expanded-selector-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/expected-selector-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/public-residual-keep-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/public-residual-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/reference-day9-v1/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/packages/reference-keep-fixture/agent.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-current-v2-fresh/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-current-v2-fresh/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-expanded-data/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-expanded-data/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-expanded-resumed/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-expanded-resumed/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-fresh-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-fresh-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-live-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-live-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-plans-devscreen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-plans-devscreen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-transfer15-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-transfer15-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-v1-current-control/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/base9-v1-current-control/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/cache-benchmark/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/cache-benchmark/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/cache-control/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/cache-control/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/clean-core-base-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/clean-core-base-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/clean-day15-chain-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/clean-day15-chain-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day3-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day3-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day6-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day6-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-fresh/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-fresh/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-matched-expected/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-matched-expected/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part1/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part1/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part2/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part3/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-day9-part3/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-future-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-future-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-opening-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/common-opening-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-extra-training/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-extra-training/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-heldout/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-heldout/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-replication/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-day6-replication/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-matched-afs-r2/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-matched-afs-r2/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-matched-day9/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/connected-matched-day9/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day1-joint-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day1-joint-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day1-joint-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day1-joint-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-fresh-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-fresh-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-future-part1/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-future-part2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-future-part3/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-future-part4/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-matched-expected/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day12-matched-expected/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-fresh-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-fresh-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-live-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-live-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-selector-data/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day15-selector-data/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-replication/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-replication/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-third-block/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-connected-third-block/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-extra-training-v2/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-extra-training-v2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-matched-day9/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-matched-day9/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-matched-r2/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-matched-r2/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-paired-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-paired-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-v1-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day3-v1-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-data/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-data/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-final/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-final/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-resumed/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-base-selector-resumed/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-delayed-option/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-delayed-option/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-fresh-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-fresh-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-fresh-parent/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-fresh-parent/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-hard-choice-headroom/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-hard-choice-headroom/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-live-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-live-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-package-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-package-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-sale-extension/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-sale-extension/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-selector-data/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-v1-v2-control/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-v1-v2-control/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-v2-fresh/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/day9-v2-fresh/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/delayed-sales-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand-control-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand-control-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand-moments-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand-moments-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand8-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/demand8-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/direct-policy-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/direct-policy-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/dynamic-rival-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/dynamic-rival-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day3-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day3-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day3-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day3-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day6-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day6-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day6-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-day6-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-matched-afs-r2/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-matched-afs-r2/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-matched-day9-leader/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/early-matched-day9-leader/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/exact-market-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/exact-market-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expanded-fresh-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expanded-fresh-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expanded-live-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expanded-live-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day12-future-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day12-hard-block/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day12-hard-block/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day18-future-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day18-hard-block/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day18-hard-block/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day18-headroom/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-day18-headroom/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-fresh-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-fresh-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-hard-loss-traces/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-hard-loss-traces/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-matched-parent/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/expected-matched-parent/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/forecast-inspection-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/forecast-inspection-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/fork-day15-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/fork-day15-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/fork-day9-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/fork-day9-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/future-average-part1/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/future-average-part2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/future-average-part3/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/future-average-part4/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/future-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/immediate-sales-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/immediate-sales-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/joint-day9-headroom/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/joint-day9-headroom/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/joint-day9-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/joint-day9-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/market-order-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/market-order-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/market-order-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/market-order-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part1/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part1/host_source_snapshot/native_common_intraday_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part1/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part2/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part2/host_source_snapshot/native_common_intraday_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-headroom-part2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-keep-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-keep-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-opening-parity/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-opening-parity/host_source_snapshot/native_common_intraday_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/observe1-opening-parity/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/opening-headroom-part1/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/opening-headroom-part1/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/opening-headroom-part2/host_source_snapshot/native_common_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/opening-headroom-part2/host_source_snapshot/native_future_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/policy-forest-dev-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/policy-forest-dev-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-forecast-games/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-forecast-games/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-residual-active-parity/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-residual-active-parity/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-residual-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/public-residual-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-day9-native/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-day9-native/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-matched-day9/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-matched-day9/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-matched-r2/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/reference-matched-r2/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/residual-matched-day9/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/residual-matched-day9/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/residual-matched-r2/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/residual-matched-r2/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/resume-check/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/resume-check/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/resume-memory-check/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/resume-memory-check/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale-factorial/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale-factorial/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale-supply2-dev-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale-supply2-dev-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale2-broad-screen/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/sale2-broad-screen/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/static-supply12-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/static-supply12-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-dev-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-dev-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-sale-dev-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-sale-dev-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-sale-et-dev-broad/host_source_snapshot/native_direct_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    },
+    {
+      "path": "research/robust90/runs/union-sale-et-dev-broad/host_source_snapshot/native_host.so",
+      "reason": "Binary content not parsed; adjacent manifests/text scanned"
+    }
+  ],
+  "inventory_files": 4288,
+  "inventory_started_utc": "2026-09-12T18:57:14Z",
+  "limitations": [
+    "Only this supplied source tree; no Git history, sibling checkouts, remote training host, deleted logs, or external replay stores.",
+    "Read-only byte-prefix inventory, not an atomic campaign snapshot; changed and new files need a release-time re-audit.",
+    "Dynamic seeds absent from saved literals, rows, manifests or filenames cannot be recovered.",
+    "Binary arrays/models are not decoded; adjacent text is scanned. Constant ranges and seed counts over-exclude conservatively.",
+    "Seed arrays longer than 65,000 bytes or nonliteral nested expressions may be missed unless emitted as individual row seeds."
+  ],
+  "method_match_counts": {
+    "cli_seed_list_or_count": 60,
+    "cli_seed_or_start": 27,
+    "csv_seed_column": 176,
+    "filename": 302,
+    "python_constant_range_conservative": 161013,
+    "python_seed_constant": 78,
+    "python_seed_keyword": 565,
+    "seed_key_literal": 2279723
+  },
+  "new_files_after_inventory": [
+    "research/robust90/DAY3_FUTURE_STABILITY_V1.json",
+    "research/robust90/audit_future_choice_stability.py"
+  ],
+  "npz_seed_arrays_recovered": true,
+  "parsed_expanded_bytes": 9193909169,
+  "scanned_files": 4000,
+  "seconds": 337.1560010910034,
+  "source_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-05\\cont\\lzhang-kaggriculture",
+  "supplement_additional_unique": 0,
+  "supplement_sha256": "77418abefb1a6ea08f63590ef610e9a883bf86ec92ffce84da42a15be1e654cc",
+  "unique_exclusions": 11320
+}

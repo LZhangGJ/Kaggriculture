@@ -1,0 +1,400 @@
+{
+  "representative": {
+    "distinct_reference_sequences": 256,
+    "feature_ranges": {
+      "latent_weed_early_minus_late": {
+        "max": 265,
+        "min": -194
+      },
+      "latent_weed_hits": {
+        "max": 48,
+        "min": 17
+      },
+      "latent_weed_stream_half_difference": {
+        "max": 14,
+        "min": -21
+      },
+      "potential_adjacent_choice_agreement": {
+        "max": 597,
+        "min": 492
+      },
+      "potential_crop_minus_animal": {
+        "max": 62442,
+        "min": 16470
+      },
+      "potential_milk_minus_wool": {
+        "max": 31878,
+        "min": 1908
+      },
+      "potential_units_sum_CARROT": {
+        "max": 71316,
+        "min": 49068
+      },
+      "potential_units_sum_EGG": {
+        "max": 46854,
+        "min": 33786
+      },
+      "potential_units_sum_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "potential_units_sum_MILK": {
+        "max": 67500,
+        "min": 52002
+      },
+      "potential_units_sum_STRAWBERRY": {
+        "max": 86256,
+        "min": 72540
+      },
+      "potential_units_sum_TOMATO": {
+        "max": 47322,
+        "min": 32310
+      },
+      "potential_units_sum_WHEAT": {
+        "max": 106704,
+        "min": 91170
+      },
+      "potential_units_sum_WOOL": {
+        "max": 52560,
+        "min": 29988
+      },
+      "ref_crop_minus_animal": {
+        "max": 1548,
+        "min": -1134
+      },
+      "ref_early_milk_minus_wool": {
+        "max": 54,
+        "min": -108
+      },
+      "ref_early_units_CARROT": {
+        "max": 108,
+        "min": 0
+      },
+      "ref_early_units_EGG": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_early_units_MILK": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_STRAWBERRY": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_TOMATO": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_WHEAT": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_WOOL": {
+        "max": 108,
+        "min": 0
+      },
+      "ref_late_added_units_CARROT": {
+        "max": 504,
+        "min": 0
+      },
+      "ref_late_added_units_EGG": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_late_added_units_MILK": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_STRAWBERRY": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_TOMATO": {
+        "max": 216,
+        "min": 0
+      },
+      "ref_late_added_units_WHEAT": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_WOOL": {
+        "max": 396,
+        "min": 0
+      },
+      "ref_late_milk_minus_wool": {
+        "max": 252,
+        "min": -342
+      },
+      "ref_max_duplicate": {
+        "max": 5,
+        "min": 1
+      },
+      "ref_milk_minus_wool": {
+        "max": 594,
+        "min": -1116
+      },
+      "ref_shop_units_CARROT": {
+        "max": 1080,
+        "min": 0
+      },
+      "ref_shop_units_EGG": {
+        "max": 756,
+        "min": 0
+      },
+      "ref_shop_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_shop_units_MILK": {
+        "max": 630,
+        "min": 0
+      },
+      "ref_shop_units_STRAWBERRY": {
+        "max": 792,
+        "min": 0
+      },
+      "ref_shop_units_TOMATO": {
+        "max": 558,
+        "min": 0
+      },
+      "ref_shop_units_WHEAT": {
+        "max": 792,
+        "min": 90
+      },
+      "ref_shop_units_WOOL": {
+        "max": 1116,
+        "min": 0
+      },
+      "ref_shop_variety": {
+        "max": 8,
+        "min": 3
+      },
+      "ref_weeds_seat_difference": {
+        "max": 6,
+        "min": -7
+      },
+      "ref_weeds_total": {
+        "max": 13,
+        "min": 0
+      }
+    },
+    "first_reference_shop_counts": {
+      "BAKERY": 26,
+      "BRUNCH_SPOT": 26,
+      "FARMERS_MARKET": 39,
+      "ICE_CREAM_SHOP": 34,
+      "PET_CAFE": 38,
+      "PIZZA_SHOP": 35,
+      "SMOOTHIE_SHOP": 25,
+      "YARN_STORE": 33
+    }
+  },
+  "stress": {
+    "distinct_reference_sequences": 128,
+    "feature_ranges": {
+      "latent_weed_early_minus_late": {
+        "max": 305,
+        "min": -239
+      },
+      "latent_weed_hits": {
+        "max": 57,
+        "min": 11
+      },
+      "latent_weed_stream_half_difference": {
+        "max": 20,
+        "min": -19
+      },
+      "potential_adjacent_choice_agreement": {
+        "max": 622,
+        "min": 476
+      },
+      "potential_crop_minus_animal": {
+        "max": 70236,
+        "min": 10260
+      },
+      "potential_milk_minus_wool": {
+        "max": 38034,
+        "min": 1296
+      },
+      "potential_units_sum_CARROT": {
+        "max": 73656,
+        "min": 45288
+      },
+      "potential_units_sum_EGG": {
+        "max": 51264,
+        "min": 31860
+      },
+      "potential_units_sum_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "potential_units_sum_MILK": {
+        "max": 69966,
+        "min": 50526
+      },
+      "potential_units_sum_STRAWBERRY": {
+        "max": 91476,
+        "min": 65988
+      },
+      "potential_units_sum_TOMATO": {
+        "max": 50292,
+        "min": 31356
+      },
+      "potential_units_sum_WHEAT": {
+        "max": 109188,
+        "min": 90684
+      },
+      "potential_units_sum_WOOL": {
+        "max": 53676,
+        "min": 27576
+      },
+      "ref_crop_minus_animal": {
+        "max": 1746,
+        "min": -1350
+      },
+      "ref_early_milk_minus_wool": {
+        "max": 54,
+        "min": -108
+      },
+      "ref_early_units_CARROT": {
+        "max": 108,
+        "min": 0
+      },
+      "ref_early_units_EGG": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_early_units_MILK": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_STRAWBERRY": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_TOMATO": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_WHEAT": {
+        "max": 54,
+        "min": 0
+      },
+      "ref_early_units_WOOL": {
+        "max": 108,
+        "min": 0
+      },
+      "ref_late_added_units_CARROT": {
+        "max": 432,
+        "min": 0
+      },
+      "ref_late_added_units_EGG": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_late_added_units_MILK": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_STRAWBERRY": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_TOMATO": {
+        "max": 198,
+        "min": 0
+      },
+      "ref_late_added_units_WHEAT": {
+        "max": 252,
+        "min": 0
+      },
+      "ref_late_added_units_WOOL": {
+        "max": 504,
+        "min": 0
+      },
+      "ref_late_milk_minus_wool": {
+        "max": 252,
+        "min": -504
+      },
+      "ref_max_duplicate": {
+        "max": 6,
+        "min": 1
+      },
+      "ref_milk_minus_wool": {
+        "max": 792,
+        "min": -1206
+      },
+      "ref_shop_units_CARROT": {
+        "max": 1224,
+        "min": 0
+      },
+      "ref_shop_units_EGG": {
+        "max": 684,
+        "min": 0
+      },
+      "ref_shop_units_MELON": {
+        "max": 0,
+        "min": 0
+      },
+      "ref_shop_units_MILK": {
+        "max": 792,
+        "min": 0
+      },
+      "ref_shop_units_STRAWBERRY": {
+        "max": 792,
+        "min": 0
+      },
+      "ref_shop_units_TOMATO": {
+        "max": 702,
+        "min": 0
+      },
+      "ref_shop_units_WHEAT": {
+        "max": 792,
+        "min": 0
+      },
+      "ref_shop_units_WOOL": {
+        "max": 1296,
+        "min": 0
+      },
+      "ref_shop_variety": {
+        "max": 8,
+        "min": 2
+      },
+      "ref_weeds_seat_difference": {
+        "max": 6,
+        "min": -5
+      },
+      "ref_weeds_total": {
+        "max": 15,
+        "min": 1
+      }
+    },
+    "first_reference_shop_counts": {
+      "BAKERY": 14,
+      "BRUNCH_SPOT": 12,
+      "FARMERS_MARKET": 11,
+      "ICE_CREAM_SHOP": 12,
+      "PET_CAFE": 20,
+      "PIZZA_SHOP": 20,
+      "SMOOTHIE_SHOP": 21,
+      "YARN_STORE": 18
+    }
+  }
+}

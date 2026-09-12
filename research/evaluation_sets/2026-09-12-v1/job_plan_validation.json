@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "plans": [
+    {
+      "candidate": "connected-day3-v1",
+      "set": "representative",
+      "jobs": 8192,
+      "unique_complete_matrix": true
+    },
+    {
+      "candidate": "connected-day3-v1",
+      "set": "stress",
+      "jobs": 4096,
+      "unique_complete_matrix": true
+    },
+    {
+      "candidate": "expected-selector-v1",
+      "set": "representative",
+      "jobs": 8192,
+      "unique_complete_matrix": true
+    },
+    {
+      "candidate": "expected-selector-v1",
+      "set": "stress",
+      "jobs": 4096,
+      "unique_complete_matrix": true
+    },
+    {
+      "candidate": "original-afs-r2",
+      "set": "representative",
+      "jobs": 8192,
+      "unique_complete_matrix": true
+    },
+    {
+      "candidate": "original-afs-r2",
+      "set": "stress",
+      "jobs": 4096,
+      "unique_complete_matrix": true
+    }
+  ],
+  "total_planned": 36864,
+  "games_launched": 0,
+  "holdout_job_files_created": 0
+}

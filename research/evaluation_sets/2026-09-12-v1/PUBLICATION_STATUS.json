@@ -1,0 +1,7 @@
+{
+  "stage": "seed_sets_published_evaluation_not_started",
+  "candidate_scope": "All distinct runnable candidates from Continue Kaggriculture PPO analysis and Analyze Kaggriculture team repo, plus original AFS R2. Inventory is being frozen; failed or incomplete artifacts will be listed separately.",
+  "candidate_games_completed": 0,
+  "holdout_status": "Local only; unevaluated. Checksum published before candidate evaluation.",
+  "future_use": "Representative and stress sets are reusable development benchmarks. Once holdout feedback informs development, that holdout is retired."
+}

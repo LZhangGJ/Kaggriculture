@@ -1,0 +1,99 @@
+{
+  "caveat": "HEAD identifies provenance only; source checkout may contain uncommitted campaign work. No Git state changed.",
+  "default_configuration": {
+    "actTimeout": 1,
+    "boardSize": 10,
+    "episodeSteps": 720,
+    "farmHandCostMult": 1,
+    "marketParams": {},
+    "maxMarketOrdersPerTurn": 10,
+    "seed": null,
+    "shedCapacity": 100,
+    "startingMoney": 3000,
+    "townCenterSellInterval": 24,
+    "townShopSellInterval": 4,
+    "townShopUnlockInterval": 3,
+    "turnsPerDay": 24,
+    "weedSpawnChance": 0.005
+  },
+  "engine_source_claim": "Frozen Kaggriculture 1.32.7 interpreter from campaign CPU host; raw source hashes authoritative.",
+  "files": [
+    {
+      "bytes": 4135,
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/referee/cpu_runtime.py",
+      "sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726"
+    },
+    {
+      "bytes": 40356,
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/referee/official/kaggriculture.py",
+      "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "bytes": 6002,
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/referee/official/kaggriculture.json",
+      "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+    },
+    {
+      "bytes": 1585,
+      "path": "nt/latest_20260911_p16_jointafs_r1/agent/referee/official/seed_utils.py",
+      "sha256": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+    },
+    {
+      "bytes": 1470,
+      "path": "research/robust90/POOL.json",
+      "sha256": "1d4e43ace3737df6c844dd3975fef769ff7ad294668fabe0091328a8a88fae97"
+    },
+    {
+      "bytes": 8974,
+      "path": "research/robust90/PANEL_SOURCES.json",
+      "sha256": "49b3bf150d41911ae050beb58eafc60a72877721ea5181009190574ef68d755d"
+    },
+    {
+      "bytes": 1273,
+      "path": "research/robust90/BASELINE.json",
+      "sha256": "64d1357dd5f94d7e01b9c62394b5d0e845863f98c40d52f03945a20770ccb2e2"
+    },
+    {
+      "bytes": 13918,
+      "path": "research/robust90/RNG_COUPLING_AUDIT.json",
+      "sha256": "81fa4a7322462fa628a1a60813f714cfebc2bb1d862b67390724f09fb1433bb2"
+    },
+    {
+      "bytes": 539,
+      "path": "research/robust90/PERFORMANCE_LEADER.json",
+      "sha256": "116796f32d42720f2857875adb1b43d648ff3804c0d14a5c033af51ade6a92cf"
+    },
+    {
+      "bytes": 22466,
+      "path": "research/robust90/evaluate.py",
+      "sha256": "73a7f5bf1adeadb15f63e3fa8bba9c8fcbe14eecffb82974b6bcb2b9fab70f72"
+    },
+    {
+      "bytes": 7527,
+      "path": "research/robust90/native_env.py",
+      "sha256": "d859ecd93345a00cfce8c52999af2fc7eec358945915577a76eafb9158b57242"
+    },
+    {
+      "bytes": 2208,
+      "path": "research/robust90/pin_panel_sources.py",
+      "sha256": "47e312005f8b81ef66e3a30ff59dd7ff4e3318c60f70d98fc65b75b496f68aa8"
+    },
+    {
+      "bytes": 4864,
+      "path": "research/robust90/run_connected_day3.py",
+      "sha256": "983a38bf790dd1015957a88d2d5fcbf2a70d47d7e62b81695cf5dfbd1dc8f92e"
+    },
+    {
+      "bytes": 7599,
+      "path": "research/robust90/future_sweep.py",
+      "sha256": "6a7ff67b3bcddb596ad5689eb67037b6959d3031dceaa56102d6027a1f4d4fe3"
+    }
+  ],
+  "native_evaluation_host": {
+    "path": "research/robust90/native_direct_host.so",
+    "sha256": "ed931e1fa1f7c148173b5e7ae425c5a15d2dbd5cecda561c9dfd436fd6a56388"
+  },
+  "source_commit": "a94b286fa14344d25e54d316210705485d07a70e",
+  "source_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-05\\cont\\lzhang-kaggriculture",
+  "utc": "2026-09-12T18:59:00Z"
+}

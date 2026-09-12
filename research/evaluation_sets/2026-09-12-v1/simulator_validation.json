@@ -1,0 +1,277 @@
+{
+  "games": [
+    {
+      "controller": "pass_pass",
+      "seed": 264287213,
+      "shop_sequence": [
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 264287213,
+      "shop_sequence": [
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 475503464,
+      "shop_sequence": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 475503464,
+      "shop_sequence": [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 328670402,
+      "shop_sequence": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 328670402,
+      "shop_sequence": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 864428556,
+      "shop_sequence": [
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 864428556,
+      "shop_sequence": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 1937476704,
+      "shop_sequence": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 1937476704,
+      "shop_sequence": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 987048294,
+      "shop_sequence": [
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 987048294,
+      "shop_sequence": [
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 974403832,
+      "shop_sequence": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 974403832,
+      "shop_sequence": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "pass_pass",
+      "seed": 928581693,
+      "shop_sequence": [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "shops_differ_from_pass": false,
+      "terminal": true,
+      "transitions": 719
+    },
+    {
+      "controller": "buy_ne_once_then_pass",
+      "seed": 928581693,
+      "shop_sequence": [
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "shops_differ_from_pass": true,
+      "terminal": true,
+      "transitions": 719
+    }
+  ],
+  "source": "Isolated frozen official interpreter, default settings; legal scripted actions only."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "expected-selector-v1",
+  "role": "Best-supported aggregate performance leader; original AFS R2 remains the retained baseline",
+  "selector_sha256": "6b9147d29a4b8278e660e34efbee39751007f88c8ee66fb9a8c43ab85c05c5ca",
+  "package": "packages/expected-selector-v1",
+  "package_manifest_sha256": "ea1c7baaf52c24d435929ef574f5a2c091a536d419d7124187898608e558ce7d",
+  "package_check": "runs/day9-leader-package-check/RESULTS.json",
+  "aggregate": "DAY9_EIGHT_BLOCK_ASSESSMENT.json",
+  "goal_met": false,
+  "pushed": false
+}
