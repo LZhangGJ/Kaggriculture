@@ -1,17 +1,21 @@
 # Economic revision round 2
 
-C01 and C02 passed controller import verification. C04, C06 and C07 are still working; their cutoffs are around 19:54 UTC on 13 September 2026.
+All five revision authors finished research before their 45-minute cutoffs. C01 and C02 passed controller source and replay verification. Fresh controller qualification has not run.
 
-C02 reports mean terminal cash of 201,405.03125 across all 32 predeclared validation games, compared with 200,617.9375 for its supplied baseline. The difference is 787.09375, with 16 improved games and 16 worse games. This is a narrow author-panel result. Fresh controller qualification has not run.
+| Author | Author validation mean cash | Controller verification |
+|---|---:|---|
+| C01 | 209,593.875 | 290 full replays; 208,510 official transitions matched |
+| C02 | 201,405.03125 | 231 full replays; 166,089 official transitions matched |
+| C04 | 195,431.625 | Failed author panel; full archive retrieval pending |
+| C06 | 204,759.1875 claimed | Runtime checks passed; full evidence unavailable, recovery pending |
+| C07 | 197,938.94 reported | Failed author panel; full archive retrieval pending |
 
-The revision removes two rotation-forecast proposal families while retaining the no-fertilizer alternative. The controller checked all 231 new game records and replayed all 166,089 transitions through the official engine. Its GCC 11 rebuild passed 621 assertions and seven entry checks. Both used-seed games reproduced every action and terminal cash. Two non-game errors remain documented.
+C01 changes the planning horizon from four days to two. C02 removes two rotation-forecast proposal families while keeping the no-fertilizer alternative. Both local builds passed their native and entry checks; both used-seed games reproduced all actions and terminal cash.
 
-C01 changes only the planning horizon from four days to two. The controller verified all 290 new replays against 208,510 official transitions and recomputed the 32-game validation mean of 209,593.875. Its local build passed 620 native checks, three supplied entry checks and seven controller checks. Both used-seed games reproduced all actions and terminal cash.
+C04 and C07 missed the 200,000 author validation requirement. Their development gains do not count as validation passes. Their full archives did not download successfully; the controller requested unchanged archive parts and small source checkpoints.
 
-| Archive | Bytes | SHA-256 | Status |
-|---|---:|---|---|
-| C02_round2_strategy.zip | 262,780,104 | 5729f5bd617b2a4439e9fd123d5f8d208bd077950a594ec91c16c75d2fa27a75 | Import verified; fresh qualification pending |
-| C02_ROUND02_CONTROLLER_VERIFICATION.zip | 1,270,767 | 1ed573505021e925c92e101d51321337581be65fe8231f492199102664d5835f | Verification evidence |
-| C01_round2_strategy.zip | 267,981,338 | 9c5fe72e41580c9ab9ce61019169ffd8c829ad7d98de3b13b8431b04dda644af | Import verified; fresh qualification pending |
+C06's runtime ZIP downloaded and matched SHA-256 c512a03db1ad718d7102e8b1956bce02360c7da1eecdfc5082c325b38afcbfe7. Its local build passed eight fertilizer test groups and seven entry/reset/privacy checks. The author reports that the full evidence ZIP no longer exists in its current environment. The claimed 502 completed games, two interruptions and validation mean remain unverified. A recovery request seeks any surviving records and seed declarations; it permits no new research.
 
-Original round-one archives and runtimes remain unchanged. Each new revision receives a separate verification directory and receipt. The next shared controller seed panel will be drawn only after all revised sources are verified and frozen.
+All original archives, failed results and runtime versions remain preserved. C03, C05 and C08 retain their unchanged round-one strategies. The next shared controller panel will use newly drawn seeds after source verification and freezing, excluding all recoverable prior seeds. Unknown lost seed histories remain an explicit limit.
+
+No round-robin or competitive acceptance games have run. Acceptance requires at least 1,306 strict wins in 1,536 games against the fixed twelve-opponent pool, with no competitive cash threshold.
