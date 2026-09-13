@@ -1,0 +1,30 @@
+{
+  "verified_utc": "2026-09-13T20:59:22.575695+00:00",
+  "artifact_hashes_rechecked": 9,
+  "records_required_paths_present": [
+    "audit/validation_declaration.json",
+    "audit/source_freeze.json",
+    "audit/experiment_inventory.json",
+    "audit/all_attempts.csv",
+    "audit/failure_inventory.json",
+    "audit/used_seed_inventory.json",
+    "audit/replay_archive_index.json",
+    "audit/replay_verification/summary.json",
+    "REPORT.md",
+    "selected/main.py",
+    "selected/policy/a06.so",
+    "selected/policy/config.json",
+    "input/TASK.md",
+    "input/EVIDENCE.json"
+  ],
+  "actual_start_receipts": 423,
+  "actual_result_receipts": 423,
+  "actual_indexed_replays": 431,
+  "all_replays_present_in_correct_zip_and_hash_equal": true,
+  "runtime_all_frozen_source_entries_matched": 54,
+  "runtime_sha256": "994fe11f67c91cf17aca2a00922a5dd9585d0cc38b9983f0eb8d35aa6ce7ed2a",
+  "validation_summary": 212871.9375,
+  "source_frozen_utc": "2026-09-13T20:53:00.539366+00:00",
+  "no_missing_evidence_in_new_round04_delivery": true,
+  "old_round02_evidence_gap_not_repaired": true
+}

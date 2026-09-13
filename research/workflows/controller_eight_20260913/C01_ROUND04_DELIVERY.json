@@ -1,0 +1,136 @@
+{
+  "verified_utc": "2026-09-13T20:57:34.819752+00:00",
+  "hard_cutoff_utc": "2026-09-13T21:14:36.381Z",
+  "runtime": {
+    "utc": "2026-09-13T20:53:48.744882+00:00",
+    "name": "C01_ROUND04_RUNTIME.zip",
+    "path": "/mnt/data/C01_ROUND04_RUNTIME.zip",
+    "bytes": 726988,
+    "sha256": "f96c115ed06899f6dbfccb8a1667e6a626780696290be6352973d62741a28191",
+    "entries": 66,
+    "all_entry_hashes_verified": true,
+    "freeze_manifest_digest": "ab807816878960e40d9aa3670da7de923c489f3d9546d4bd157fddb0f915663d"
+  },
+  "evidence_parts": [
+    {
+      "part": 1,
+      "name": "C01_ROUND04_EVIDENCE_01.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_01.zip",
+      "bytes": 12917695,
+      "sha256": "1a70b1a956ed18abc81dabdb0afb602e9ece789482b9e8556730789ea2e7e1ef",
+      "preserved_files": 879,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 2,
+      "name": "C01_ROUND04_EVIDENCE_02.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_02.zip",
+      "bytes": 34538746,
+      "sha256": "d732b2a8d17527c87539f0a0537dccc5c1296164a4a81826c499035703f25890",
+      "preserved_files": 750,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 3,
+      "name": "C01_ROUND04_EVIDENCE_03.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_03.zip",
+      "bytes": 44514519,
+      "sha256": "446e63a6bce8c0070a2d4e78310789e56eab7f28b0e0f9cc0b31e931a179551e",
+      "preserved_files": 17,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 4,
+      "name": "C01_ROUND04_EVIDENCE_04.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_04.zip",
+      "bytes": 46456879,
+      "sha256": "993679765b26ef44501fadbad6025c2c22cd79f6fdc760321ecf73865d64c2f4",
+      "preserved_files": 41,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 5,
+      "name": "C01_ROUND04_EVIDENCE_05.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_05.zip",
+      "bytes": 46507802,
+      "sha256": "3fef8061d67f12edf671309ebd17a9aaca993a2e739dee7278556d6c90d017a2",
+      "preserved_files": 58,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 6,
+      "name": "C01_ROUND04_EVIDENCE_06.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_06.zip",
+      "bytes": 46585851,
+      "sha256": "0bf4b0552e0a1a337ab6c9a3812b28ebb3ae0a2ad35e607d2439093e58914341",
+      "preserved_files": 56,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 7,
+      "name": "C01_ROUND04_EVIDENCE_07.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_07.zip",
+      "bytes": 46579443,
+      "sha256": "e25c4b0db0b8ef00904d0e73f187f2c907225999bc7468040d7b681f0c057990",
+      "preserved_files": 58,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 8,
+      "name": "C01_ROUND04_EVIDENCE_08.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_08.zip",
+      "bytes": 46161754,
+      "sha256": "597c50e05cb0039730d15e79f1c4cd7ba0a25cf2bb2ad313f6371c0043725320",
+      "preserved_files": 58,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    },
+    {
+      "part": 9,
+      "name": "C01_ROUND04_EVIDENCE_09.zip",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_09.zip",
+      "bytes": 21029971,
+      "sha256": "99ce131ec2bfa9daf589575656adfd7ac9492a362a0247ea513314342fda75c4",
+      "preserved_files": 25,
+      "zip_integrity_passed": true,
+      "all_entry_hashes_verified": true
+    }
+  ],
+  "other_artifacts": [
+    {
+      "name": "C01_ROUND04_REPORT.md",
+      "path": "/mnt/data/C01_ROUND04_REPORT.md",
+      "bytes": 14981,
+      "sha256": "1d38d033b1eed30b5a652c40b57ac762e88bcb0e453bb6f9035d146836200417"
+    },
+    {
+      "name": "C01_ROUND04_SUMMARY.json",
+      "path": "/mnt/data/C01_ROUND04_SUMMARY.json",
+      "bytes": 7490,
+      "sha256": "d8badca5884fbffc3be7d97ed20c768b21c84f29d683f9dcaa8d74dee88f9d4f"
+    },
+    {
+      "name": "C01_ROUND04_RESULTS.csv",
+      "path": "/mnt/data/C01_ROUND04_RESULTS.csv",
+      "bytes": 92639,
+      "sha256": "20d4100a065911598744dd2ca7ac468ec7ee87aebd5a89e760c9b0b615ba9ee8"
+    },
+    {
+      "name": "C01_ROUND04_EVIDENCE_INDEX.json",
+      "path": "/mnt/data/C01_ROUND04_EVIDENCE_INDEX.json",
+      "bytes": 401494,
+      "sha256": "33e5bf3ad99994e2c52c0bfc61127471404b43d4bcabfe08404e1f9d68b24975"
+    }
+  ],
+  "all_evidence_files_accounted_for": true,
+  "preserved_file_count": 1942,
+  "runtime_under_5MB": true,
+  "each_evidence_zip_under_50MB": true
+}

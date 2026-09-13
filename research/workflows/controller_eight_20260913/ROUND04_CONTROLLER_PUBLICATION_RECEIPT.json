@@ -1,0 +1,36 @@
+{
+  "verified_utc": "2026-09-13T21:26:19.885522+00:00",
+  "assets": [
+    {
+      "name": "C01_ROUND04_CONTROLLER_VERIFICATION.zip",
+      "bytes": 1503068,
+      "sha256": "58e4cede426577e861a9109093b391005eef425ed464885e03b0d44b4b93aab3",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C01_ROUND04_CONTROLLER_VERIFICATION.zip"
+    },
+    {
+      "name": "C02_ROUND04_CONTROLLER_VERIFICATION.zip",
+      "bytes": 1291736,
+      "sha256": "755dd2fd4c4d8eac60a9b4bd467b8cf5a2ac74229ac6d34b586fdab919ac9041",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C02_ROUND04_CONTROLLER_VERIFICATION.zip"
+    },
+    {
+      "name": "C04_ROUND04_CONTROLLER_VERIFICATION.zip",
+      "bytes": 3144502,
+      "sha256": "c47a8b26d6c42ac8cc067b57c46d0b03ade5bddfe5c600c36a991b940bf7209b",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C04_ROUND04_CONTROLLER_VERIFICATION.zip"
+    },
+    {
+      "name": "C06_ROUND04_CONTROLLER_VERIFICATION.zip",
+      "bytes": 2036582,
+      "sha256": "57c1e917242aa5e7158175aa6fdeb1676dcbf247a8732750125314ca06ae75d2",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C06_ROUND04_CONTROLLER_VERIFICATION.zip"
+    },
+    {
+      "name": "C07_ROUND04_CONTROLLER_VERIFICATION.zip",
+      "bytes": 1252342,
+      "sha256": "9200a9345c6704ab87dc1884ae310948671e80f181207ed7122c35ccf10715c6",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C07_ROUND04_CONTROLLER_VERIFICATION.zip"
+    }
+  ],
+  "remote_total_assets": 119
+}

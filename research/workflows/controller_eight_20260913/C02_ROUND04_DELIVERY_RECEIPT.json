@@ -1,0 +1,191 @@
+{
+  "verified_utc": "2026-09-13T20:56:59.536269+00:00",
+  "runtime": {
+    "created_utc": "2026-09-13T20:50:55.926407+00:00",
+    "path": "/mnt/data/C02_ROUND04_runtime.zip",
+    "bytes": 662134,
+    "sha256": "ed516b13a21d8321f647df8a6ed4f6398756e925fa26355a8fb03ea0d3047e70",
+    "frozen_source_id": "6d5d002ddda9c883f307a94333f0c5ca0099423ebf53f5737f0c601082270e20",
+    "files": 52,
+    "crc_and_all_member_sha256_verified": true,
+    "max_allowed_bytes_exclusive": 5000000,
+    "source_unchanged": true
+  },
+  "evidence": [
+    {
+      "name": "C02_ROUND04_metadata.zip",
+      "path": "/mnt/data/C02_ROUND04_metadata.zip",
+      "bytes": 15179220,
+      "sha256": "d4c2878e9aaf515f31074c5eba6d30f31954c6d8e4f00762ac36c10d8a0c30aa",
+      "members": 815,
+      "verified_utc": "2026-09-13T20:56:59.534849+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "Complete original feedback, all source variants and checkpoints, measured reports, inventories, failures and build/validation receipts"
+    },
+    {
+      "name": "C02_ROUND04_evidence_01.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_01.zip",
+      "bytes": 38121126,
+      "sha256": "d607264c2f4cc42ab6d8701cb293071eeafd8b5c3e94ef2684206018e9ac9c5a",
+      "members": 320,
+      "verified_utc": "2026-09-13T20:56:57.047506+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "49 full recorded games; batches baseline_smoke, baseline_dev, work1_dev",
+      "games": 49,
+      "batches": [
+        "baseline_smoke",
+        "baseline_dev",
+        "work1_dev"
+      ]
+    },
+    {
+      "name": "C02_ROUND04_evidence_02.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_02.zip",
+      "bytes": 38570992,
+      "sha256": "66edda18e7b00c78345fd71b4c928db684899139f150564e92ae7542c0861923",
+      "members": 373,
+      "verified_utc": "2026-09-13T20:56:57.438794+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "50 full recorded games; batches work1_dev, harvest3_dev, scenario1_dev",
+      "games": 50,
+      "batches": [
+        "work1_dev",
+        "harvest3_dev",
+        "scenario1_dev"
+      ]
+    },
+    {
+      "name": "C02_ROUND04_evidence_03.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_03.zip",
+      "bytes": 37159180,
+      "sha256": "e0a01834c523357d210e95661bfe8068b146127c4e370906790d5e3e60e49fff",
+      "members": 313,
+      "verified_utc": "2026-09-13T20:56:57.768450+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "48 full recorded games; batches scenario1_dev, competition05_dev",
+      "games": 48,
+      "batches": [
+        "scenario1_dev",
+        "competition05_dev"
+      ]
+    },
+    {
+      "name": "C02_ROUND04_evidence_04.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_04.zip",
+      "bytes": 37858582,
+      "sha256": "4d48b8f1c8516758fcce7eef70553448275f1cb69175759e4006e69dcca8c0ab",
+      "members": 365,
+      "verified_utc": "2026-09-13T20:56:58.149757+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "48 full recorded games; batches competition05_dev, labor_proposal_dev, work1_harvest3_dev",
+      "games": 48,
+      "batches": [
+        "competition05_dev",
+        "labor_proposal_dev",
+        "work1_harvest3_dev"
+      ]
+    },
+    {
+      "name": "C02_ROUND04_evidence_05.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_05.zip",
+      "bytes": 38414905,
+      "sha256": "2a9a806c4cc82917af3ceb292e8ee050a69b3191acc136c46d8625cfc0c8103c",
+      "members": 323,
+      "verified_utc": "2026-09-13T20:56:58.541860+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "50 full recorded games; batches work1_harvest3_dev, final_validation",
+      "games": 50,
+      "batches": [
+        "work1_harvest3_dev",
+        "final_validation"
+      ]
+    },
+    {
+      "name": "C02_ROUND04_evidence_06.zip",
+      "path": "/mnt/data/C02_ROUND04_evidence_06.zip",
+      "bytes": 34492649,
+      "sha256": "5f9a945af6cfc0afa0eac4f6ddfd90245258d6957ad5026068ed5cdb07d6a6b9",
+      "members": 298,
+      "verified_utc": "2026-09-13T20:56:58.857035+00:00",
+      "crc_and_all_member_sha256_verified": true,
+      "description": "44 full recorded games; batches final_validation, baseline_validation",
+      "games": 44,
+      "batches": [
+        "final_validation",
+        "baseline_validation"
+      ]
+    }
+  ],
+  "source_freeze_id": "6d5d002ddda9c883f307a94333f0c5ca0099423ebf53f5737f0c601082270e20",
+  "source_frozen_utc": "2026-09-13T20:50:28.139790+00:00",
+  "final_source_unchanged": true,
+  "validation_games": 32,
+  "validation_failures": 0,
+  "validation_mean_terminal_cash": 204101.46875,
+  "matched_baseline_mean_terminal_cash": 203023.0625,
+  "all_new_game_attempts": 289,
+  "all_new_game_failures": 0,
+  "new_replayed_games": 289,
+  "new_replayed_transitions": 207791,
+  "every_game_packaged_exactly_once": true,
+  "cutoff_utc": "2026-09-13T21:14:38.819Z",
+  "no_postvalidation_fallback_or_source_change": true,
+  "postpackaging_verification": {
+    "verified_utc": "2026-09-13T20:58:30.923518+00:00",
+    "files": [
+      {
+        "name": "C02_ROUND04_runtime.zip",
+        "bytes": 662134,
+        "sha256": "ed516b13a21d8321f647df8a6ed4f6398756e925fa26355a8fb03ea0d3047e70",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_metadata.zip",
+        "bytes": 15179220,
+        "sha256": "d4c2878e9aaf515f31074c5eba6d30f31954c6d8e4f00762ac36c10d8a0c30aa",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_01.zip",
+        "bytes": 38121126,
+        "sha256": "d607264c2f4cc42ab6d8701cb293071eeafd8b5c3e94ef2684206018e9ac9c5a",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_02.zip",
+        "bytes": 38570992,
+        "sha256": "66edda18e7b00c78345fd71b4c928db684899139f150564e92ae7542c0861923",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_03.zip",
+        "bytes": 37159180,
+        "sha256": "e0a01834c523357d210e95661bfe8068b146127c4e370906790d5e3e60e49fff",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_04.zip",
+        "bytes": 37858582,
+        "sha256": "4d48b8f1c8516758fcce7eef70553448275f1cb69175759e4006e69dcca8c0ab",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_05.zip",
+        "bytes": 38414905,
+        "sha256": "2a9a806c4cc82917af3ceb292e8ee050a69b3191acc136c46d8625cfc0c8103c",
+        "exists_and_hash_matches": true
+      },
+      {
+        "name": "C02_ROUND04_evidence_06.zip",
+        "bytes": 34492649,
+        "sha256": "5f9a945af6cfc0afa0eac4f6ddfd90245258d6957ad5026068ed5cdb07d6a6b9",
+        "exists_and_hash_matches": true
+      }
+    ],
+    "full_game_parts_cover_all_289_attempts_once": true,
+    "external_report_equals_archived_report": true,
+    "source_freeze_equals_archived_freeze": true,
+    "packaging_finished_utc": "2026-09-13T20:56:59.536269+00:00",
+    "non_game_postpackaging_probe": "A ps -p query returned status1 because the successfully completed packager process no longer existed. No file, game or source was changed by that progress check."
+  }
+}
