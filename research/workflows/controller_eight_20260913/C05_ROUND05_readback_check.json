@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-09-13T22:05:42.662116+00:00",
+  "finished_utc": "2026-09-13T22:05:47.100129+00:00",
+  "returncode": 0,
+  "stdout": "{\"manifest_entries\": 257, \"included_games\": 32, \"complete_verified_games\": 32, \"whole_panel_games\": 32}\n",
+  "stderr": "",
+  "source_zip_sha256": "bf832c064a4707fdb6e061d71090b8eeaf759db9883504bce5e5d3eaf272fa6d",
+  "all_outer_artifact_hashes_verified": true
+}

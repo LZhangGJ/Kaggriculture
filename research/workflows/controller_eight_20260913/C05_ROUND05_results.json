@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-13T22:05:11.126510+00:00",
+  "selected_variant": "04_capital_dawn_consistent",
+  "frozen_utc": "2026-09-13T22:01:31.936042+00:00",
+  "declared_cells": 32,
+  "recorded_cells": 32,
+  "valid_cells": 32,
+  "failures": [],
+  "complete_fixed_panel": true,
+  "statistics": {
+    "mean": 212330.84375,
+    "median": 219331.0,
+    "minimum": 135375.0,
+    "maximum": 258683.0,
+    "seat_means": {
+      "0": 209029.25,
+      "1": 215632.4375
+    },
+    "seed_cluster_standard_error": 6926.5922054545745,
+    "seed_cluster_bootstrap95": [
+      197995.625,
+      224678.46875
+    ],
+    "bootstrap_draws": 20000,
+    "bootstrap_rng": "505005, used only for statistical resampling; not a game seed or policy input",
+    "games_at_least_200000": 23,
+    "mean_target_met": true
+  },
+  "source_unchanged": true,
+  "development": {
+    "recorded": 96,
+    "valid": 96,
+    "failures": 0,
+    "complete_panel": true,
+    "mean": 205197.8125,
+    "minimum": 143050.0,
+    "paired_delta_mean": 5612.520833333333,
+    "seed_cluster_paired_standard_error": 4468.901942265345,
+    "seed_cluster_paired_normal95": [
+      -3146.5269735067423,
+      14371.56864017341
+    ],
+    "panels": {
+      "1": {
+        "n": 32,
+        "mean": 210542.625,
+        "delta_to_own_parent": 8780.25
+      },
+      "2": {
+        "n": 32,
+        "mean": 205598.1875,
+        "delta_to_own_parent": 4140.1875
+      },
+      "3": {
+        "n": 32,
+        "mean": 199452.625,
+        "delta_to_own_parent": 3917.125
+      }
+    }
+  },
+  "audit": {
+    "all_attempts": 418,
+    "all_complete": 418,
+    "all_game_failures": 0,
+    "audit_records": 418,
+    "audits_passed": 418,
+    "audit_failures": [],
+    "validation_service": {
+      "FEED_total": 12798,
+      "FEED_observed_effect": 12673,
+      "CARE_total": 12103,
+      "CARE_observed_effect": 11987,
+      "CARE_midnight_excluded": 116,
+      "FEED_midnight_excluded": 125
+    },
+    "validation_base_capital_dawn_checks": 960,
+    "validation_scarcity_active_dawns": 414,
+    "validation_new_dawn_intentions": 4138,
+    "validation_same_day_realized_new_intentions": 4031,
+    "validation_actual_new_starts": {
+      "MELON": 832,
+      "SHEEP": 272,
+      "COW": 363,
+      "WHEAT": 1048,
+      "STRAWBERRY": 1504,
+      "GOOSE": 25,
+      "TOMATO": 203,
+      "CARROT": 377
+    }
+  },
+  "limits": "PASS economic evaluation only. No competitive round robin or1536-game competitive acceptance. No post-validation fallback or expansion. Historical control rows supplied, not all rerun. Unknown lost historical seeds remain unknown."
+}

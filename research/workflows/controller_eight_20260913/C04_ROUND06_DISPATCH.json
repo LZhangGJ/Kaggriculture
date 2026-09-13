@@ -1,0 +1,19 @@
+{
+  "author": "C04",
+  "round": 6,
+  "model": "ChatGPT 6 Pro",
+  "chat_url": "https://chatgpt.com/c/6aa6d32f-565c-83ea-abe2-a5396b10f4c8",
+  "start_utc": "2026-09-13T22:28:42.340Z",
+  "hard_cutoff_utc": "2026-09-13T23:28:42.340Z",
+  "round_minutes": 60,
+  "max_workers": 2,
+  "validation_and_packaging_minutes": 15,
+  "file": "C04_ROUND06_FEEDBACK.zip",
+  "bytes": 14545598,
+  "sha256": "5850e5a2479f88eb2ec0d3f70071727a66ea31696abca6dc7e286c1bdda926e4",
+  "known_seed_count": 1128,
+  "task_file": "C04_ROUND06_TASK.md",
+  "submitted": true,
+  "submission_method": "Enter; Stop answering observed",
+  "purpose": "Repair the independently verified Round05 economic failure using paired cash losses before another shared qualification panel."
+}

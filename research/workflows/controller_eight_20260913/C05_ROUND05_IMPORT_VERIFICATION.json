@@ -1,0 +1,4182 @@
+{
+  "candidate": "C05",
+  "round": 5,
+  "status": "ROUND05_VERIFIED",
+  "selected": "04_capital_dawn_consistent",
+  "controller_qualification": "NOT_RUN",
+  "competitive_acceptance": "NOT_RUN",
+  "source_audit": {
+    "files": 2858,
+    "manifest_counts": {
+      "C05_ROUND05_evidence_01_part1": 307,
+      "C05_ROUND05_evidence_01_part2": 307,
+      "C05_ROUND05_evidence_02_part1": 308,
+      "C05_ROUND05_evidence_02_part2": 308,
+      "C05_ROUND05_evidence_04_part1": 308,
+      "C05_ROUND05_evidence_04_part2": 308,
+      "C05_ROUND05_evidence_05_part1": 308,
+      "C05_ROUND05_evidence_05_part2": 308,
+      "C05_ROUND05_evidence_metadata": 2025,
+      "C05_ROUND05_evidence_validation_part1": 257
+    },
+    "production": {
+      "build.py": "aa5365997395c5f321d57ebdb4b9507f4af46a9e0969d8e99f7095653ec791c3",
+      "COMPILER_FLAGS.json": "a7c4ff30eb59c0749a2294ccbb80113ca2b17191304029151af76e7eae368c42",
+      "main.py": "57a2030a4ca820cf5996a2ea35961b75ca580e2b6a913970de065a04cbbd3064",
+      "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+      "policy/agent.py": "a758bc676b45fe906f316017e230b1b67edbc90e39635b8aa75ef83c5ed26134",
+      "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "policy/bridge.cpp": "51dbbe2fe7a9ed30edb6234cf001b688161bdd39a5cd07889377080b03bd046d",
+      "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "policy/config.json": "e65a0ae79ad3a525170936eac662c0517cc8926ad6510dce20f2384ba3dca37c",
+      "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+      "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+      "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "policy/observed_capital.hpp": "1dc388df2ea35dde9b9129dc6e23136c79b948879b92c495dd5edf6ad50e5dc9",
+      "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+      "policy/proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+      "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "policy/search.hpp": "09c4c93ed4c97e99965d1a6398e7bac509162c2b2dc16822c079a6fc1f9b873f",
+      "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "policy/triad.hpp": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a",
+      "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+      "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+      "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "policy/executor/policy.hpp": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0",
+      "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+    },
+    "differences_to_verified_C05": [
+      "COMPILER_FLAGS.json",
+      "main.py",
+      "policy/observed_capital.hpp",
+      "policy/search.hpp"
+    ],
+    "config": {
+      "competition": 2,
+      "supply": 0.85,
+      "future_shop": 0.7,
+      "capital_power": 0.4,
+      "labor_hours": 10,
+      "work_price": 4,
+      "animal_work": 1.0,
+      "reserve": 120,
+      "max_animals": 32,
+      "max_hands": 14,
+      "max_land": 4,
+      "feed_cover": 1,
+      "rotation": 0,
+      "preview": 1,
+      "delivery": 2,
+      "intraday": 1,
+      "service": 1,
+      "replant": 0,
+      "land_rent": 2,
+      "discount": 0.005,
+      "tour_dp": 1,
+      "layout": 0,
+      "repeat": 0,
+      "animal_bias": 1,
+      "crop_bias": 1,
+      "portfolio_passes": 6,
+      "crop_fert": 1,
+      "harvest_threshold": 1,
+      "delay_sale": 0,
+      "opening_budget": 1,
+      "scenario": 2,
+      "keep_commitments": 1,
+      "candidate_extra": 1,
+      "service_reconcile": 2,
+      "live_ledger": 0,
+      "delivery_calendar": 0,
+      "feed_finance": 0,
+      "batch_delivery": 1,
+      "a06_reinvest": 4,
+      "a06_roll_scope": 0,
+      "a06_feed_contract": 0,
+      "a06_state_contract": 0,
+      "a06_execution_candidates": 1,
+      "a06_competitive_contract": 2
+    }
+  },
+  "chronology": {
+    "freeze": {
+      "frozen_utc": "2026-09-13T22:01:31.936042+00:00",
+      "selected_variant": "04_capital_dawn_consistent",
+      "source_manifest": {
+        "COMPILER_FLAGS.json": "a7c4ff30eb59c0749a2294ccbb80113ca2b17191304029151af76e7eae368c42",
+        "build.py": "aa5365997395c5f321d57ebdb4b9507f4af46a9e0969d8e99f7095653ec791c3",
+        "evaluation/inputs/referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+        "evaluation/inputs/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "evaluation/inputs/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
+        "main.py": "57a2030a4ca820cf5996a2ea35961b75ca580e2b6a913970de065a04cbbd3064",
+        "policy/a06.so": "393e207e320e78516f436c5017d91ecd04fe1978321160aaf469bccc3ec5e9fe",
+        "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+        "policy/agent.py": "a758bc676b45fe906f316017e230b1b67edbc90e39635b8aa75ef83c5ed26134",
+        "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+        "policy/bridge.cpp": "51dbbe2fe7a9ed30edb6234cf001b688161bdd39a5cd07889377080b03bd046d",
+        "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+        "policy/config.json": "e65a0ae79ad3a525170936eac662c0517cc8926ad6510dce20f2384ba3dca37c",
+        "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+        "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+        "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+        "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+        "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+        "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+        "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+        "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+        "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+        "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+        "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+        "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+        "policy/executor/policy.hpp": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0",
+        "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+        "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+        "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+        "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+        "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+        "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+        "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+        "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+        "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+        "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+        "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+        "policy/observed_capital.hpp": "1dc388df2ea35dde9b9129dc6e23136c79b948879b92c495dd5edf6ad50e5dc9",
+        "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+        "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+        "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+        "policy/proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+        "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+        "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+        "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+        "policy/search.hpp": "09c4c93ed4c97e99965d1a6398e7bac509162c2b2dc16822c079a6fc1f9b873f",
+        "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+        "policy/triad.hpp": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a",
+        "tests/check_entry_and_parity.py": "8d4df66d5778e254c46457b604aea9b9f1118a788dc69805088f4b151f6ad470",
+        "tests/observed_capital_contract.cpp": "8c84f6ffe04b65e1683fb4a408487582dd682aef78552267888f23c2db3e5a25",
+        "tests/run_units.py": "6145870b775638d65776d5d4f550715b79081041938b62a01f6aa582f21abfa2",
+        "tests/service_oracle.cpp": "9410e67c805cd0c179b0f391c3af35f885918a3cddd4d1cdbeb5442a0f0b1d55",
+        "tests/test_offline_build.py": "5599cd4567272dbddcdc16562028096da19f468d107fbbc8789810b788cf74eb",
+        "tests/test_runtime_guards.py": "870097b329c65802d7355b24d7f24aabc2509125c8186dcb1f19ecdb2cfc3355",
+        "tests/test_service_oracle.py": "bdbb248d8e083cd5af0c28e93ef182b3bb68c805034eb6dd3d8bb478ce17f0e3"
+      },
+      "source_identity": "247093b2bb339937c5619c0c36377ded2e3ce015da32d5004628ca30810b1561",
+      "native_sha256": "393e207e320e78516f436c5017d91ecd04fe1978321160aaf469bccc3ec5e9fe",
+      "validation_declaration_sha256": "095056c359b5fa5bd26c3e63dc4f2db7d7dea3f4742c1972cc7b3acac0e55fd6",
+      "validation_cells": 32,
+      "validation_outcomes_seen": 0,
+      "no_validation_fallback": true,
+      "research_complete": true,
+      "selected_development_mean": 205197.8125,
+      "preflight_suites": {
+        "passed_suites": [
+          "official_refresh_service_oracle",
+          "atomic_failed_build_preserves_native",
+          "runtime_boundaries",
+          "full_trace_privacy_parity_reset_and_isolation",
+          "observed_capital_17_contracts"
+        ],
+        "seconds": 20.36572358500007,
+        "not_new_independent_games": true
+      },
+      "clean_rebuild_verified": true,
+      "policy_parity_with_selected_development_source": true,
+      "main_change": "Docstring only; executable Python entry body unchanged. Tests and documentation added."
+    },
+    "declaration": {
+      "declared_utc": "2026-09-13T21:36:27.763622+00:00",
+      "validation_seeds": [
+        1260184043,
+        558926474,
+        1183989484,
+        1550876656,
+        274468269,
+        1785475952,
+        1885300481,
+        214051485,
+        839400023,
+        1178333095,
+        1616543271,
+        877597850,
+        415880052,
+        272080820,
+        216928037,
+        2025508729
+      ],
+      "seats": [
+        0,
+        1
+      ],
+      "cells": 32,
+      "known_ids_excluded": 1062,
+      "known_seed_file_sha256": "c0549be4627af11f34b65909bbc23bde2ecd6a4690e7016e3fd4e18785746a6a",
+      "unknown_historical_seeds": "Cannot rule out overlap with lost author histories; all 1062 recoverable IDs excluded.",
+      "freeze_rule": "Exactly 32 games after source freeze; preserve failures; no adaptive extension or fallback selection."
+    },
+    "selection": {
+      "selected_variant": "04_capital_dawn_consistent",
+      "selected_utc": "2026-09-13T21:57:31.227922+00:00",
+      "eligible_complete_panel_means": {
+        "00_parent": 199585.29166666666,
+        "01_no_opening_prior": 199278.02083333334,
+        "04_capital_dawn_consistent": 205197.8125,
+        "05_capital_prior_dawn_consistent": 199368.22916666666
+      },
+      "rule": "Highest pooled mean over all96 disclosed seed-seat cells among corrected complete candidates, subject to pre-validation correctness checks.",
+      "excluded": {
+        "02_observed_capital": "Cadence mismatch; all96 preserved, not eligible.",
+        "03_capital_with_prior": "Unbuilt precursor; no attempted games."
+      },
+      "validation_outcomes_seen": 0,
+      "source_boundary": "Parent control is supplied independently audited panel results; two exact local full-replay smoke matches. Other variants are newly executed complete panels.",
+      "selection_biased_development": true,
+      "candidate_binary_sha256": "393e207e320e78516f436c5017d91ecd04fe1978321160aaf469bccc3ec5e9fe"
+    },
+    "panel_checks": {
+      "00_parent_smoke": {
+        "games": 2,
+        "mean_cash": 143912.0,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/variants/00_parent",
+        "source_files": 44
+      },
+      "01_no_opening_prior": {
+        "games": 96,
+        "mean_cash": 199278.02083333334,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/variants/01_no_opening_prior",
+        "source_files": 44
+      },
+      "02_observed_capital": {
+        "games": 96,
+        "mean_cash": 205296.07291666666,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/variants/02_observed_capital",
+        "source_files": 45
+      },
+      "04_capital_dawn_consistent": {
+        "games": 96,
+        "mean_cash": 205197.8125,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/variants/04_capital_dawn_consistent",
+        "source_files": 45
+      },
+      "05_capital_prior_dawn_consistent": {
+        "games": 96,
+        "mean_cash": 199368.22916666666,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/variants/05_capital_prior_dawn_consistent",
+        "source_files": 45
+      },
+      "validation": {
+        "games": 32,
+        "mean_cash": 212330.84375,
+        "source": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/original/final_source",
+        "source_files": 55
+      }
+    },
+    "referee_files": {
+      "cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+      "official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+      "official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+    },
+    "validation_games": 32,
+    "validation_mean": 212330.84375,
+    "known_seeds": 1078
+  },
+  "post_audit_integrity": {
+    "original_files_verified": 2858,
+    "unchanged": true
+  },
+  "delivery_artifacts": [
+    {
+      "filename": "C05_ROUND05_source.zip",
+      "bytes": 1068005,
+      "sha256": "bf832c064a4707fdb6e061d71090b8eeaf759db9883504bce5e5d3eaf272fa6d",
+      "role": "frozen_complete_source_runtime"
+    },
+    {
+      "filename": "C05_ROUND05_evidence_01_part1.zip",
+      "bytes": 40240283,
+      "sha256": "0a3af83c703e84382ad2a436c0f9cca5937cfaeb8c4ccf9af5d212e837159dbf",
+      "entries_verified": 307,
+      "started_utc": "2026-09-13T22:05:12.528348+00:00",
+      "finished_utc": "2026-09-13T22:05:12.751258+00:00",
+      "context": {
+        "experiment": "01_no_opening_prior",
+        "validation": false,
+        "part": 1,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            140008426,
+            0
+          ],
+          [
+            140008426,
+            1
+          ],
+          [
+            148094548,
+            0
+          ],
+          [
+            148094548,
+            1
+          ],
+          [
+            180752382,
+            0
+          ],
+          [
+            180752382,
+            1
+          ],
+          [
+            219026998,
+            0
+          ],
+          [
+            219026998,
+            1
+          ],
+          [
+            320211102,
+            0
+          ],
+          [
+            320211102,
+            1
+          ],
+          [
+            337943030,
+            0
+          ],
+          [
+            337943030,
+            1
+          ],
+          [
+            370413548,
+            0
+          ],
+          [
+            370413548,
+            1
+          ],
+          [
+            383365175,
+            0
+          ],
+          [
+            383365175,
+            1
+          ],
+          [
+            702093297,
+            0
+          ],
+          [
+            702093297,
+            1
+          ],
+          [
+            967718147,
+            0
+          ],
+          [
+            967718147,
+            1
+          ],
+          [
+            1501860085,
+            0
+          ],
+          [
+            1501860085,
+            1
+          ],
+          [
+            1658182076,
+            0
+          ],
+          [
+            1658182076,
+            1
+          ],
+          [
+            1681080428,
+            0
+          ],
+          [
+            1681080428,
+            1
+          ],
+          [
+            1781448506,
+            0
+          ],
+          [
+            1781448506,
+            1
+          ],
+          [
+            1856155813,
+            0
+          ],
+          [
+            1856155813,
+            1
+          ],
+          [
+            2027896586,
+            0
+          ],
+          [
+            2027896586,
+            1
+          ],
+          [
+            28576209,
+            0
+          ],
+          [
+            28576209,
+            1
+          ],
+          [
+            394509745,
+            0
+          ],
+          [
+            394509745,
+            1
+          ],
+          [
+            766857369,
+            0
+          ],
+          [
+            766857369,
+            1
+          ],
+          [
+            833126169,
+            0
+          ],
+          [
+            833126169,
+            1
+          ],
+          [
+            979746784,
+            0
+          ],
+          [
+            979746784,
+            1
+          ],
+          [
+            979914492,
+            0
+          ],
+          [
+            979914492,
+            1
+          ],
+          [
+            1138364143,
+            0
+          ],
+          [
+            1138364143,
+            1
+          ],
+          [
+            1175089851,
+            0
+          ],
+          [
+            1175089851,
+            1
+          ]
+        ],
+        "included_seeds": [
+          140008426,
+          148094548,
+          180752382,
+          219026998,
+          320211102,
+          337943030,
+          370413548,
+          383365175,
+          702093297,
+          967718147,
+          1501860085,
+          1658182076,
+          1681080428,
+          1781448506,
+          1856155813,
+          2027896586,
+          28576209,
+          394509745,
+          766857369,
+          833126169,
+          979746784,
+          979914492,
+          1138364143,
+          1175089851
+        ],
+        "source_identity": "ca1f0a66f88569d7947d6005b4b2f4104ac4d96508a59b23ababe23a459d887a",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_01_part2.zip",
+      "bytes": 41354637,
+      "sha256": "a7357e0c546cb67a25b4444be487df386ccb87d7913503d47b7aceb512d7be19",
+      "entries_verified": 307,
+      "started_utc": "2026-09-13T22:05:12.764670+00:00",
+      "finished_utc": "2026-09-13T22:05:12.993455+00:00",
+      "context": {
+        "experiment": "01_no_opening_prior",
+        "validation": false,
+        "part": 2,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            1387052231,
+            0
+          ],
+          [
+            1387052231,
+            1
+          ],
+          [
+            1421711696,
+            0
+          ],
+          [
+            1421711696,
+            1
+          ],
+          [
+            1459327281,
+            0
+          ],
+          [
+            1459327281,
+            1
+          ],
+          [
+            1514191294,
+            0
+          ],
+          [
+            1514191294,
+            1
+          ],
+          [
+            1652205610,
+            0
+          ],
+          [
+            1652205610,
+            1
+          ],
+          [
+            1715028217,
+            0
+          ],
+          [
+            1715028217,
+            1
+          ],
+          [
+            1722159489,
+            0
+          ],
+          [
+            1722159489,
+            1
+          ],
+          [
+            1948729637,
+            0
+          ],
+          [
+            1948729637,
+            1
+          ],
+          [
+            28846738,
+            0
+          ],
+          [
+            28846738,
+            1
+          ],
+          [
+            94002826,
+            0
+          ],
+          [
+            94002826,
+            1
+          ],
+          [
+            420997839,
+            0
+          ],
+          [
+            420997839,
+            1
+          ],
+          [
+            450201982,
+            0
+          ],
+          [
+            450201982,
+            1
+          ],
+          [
+            742425277,
+            0
+          ],
+          [
+            742425277,
+            1
+          ],
+          [
+            810644906,
+            0
+          ],
+          [
+            810644906,
+            1
+          ],
+          [
+            1021451513,
+            0
+          ],
+          [
+            1021451513,
+            1
+          ],
+          [
+            1040165653,
+            0
+          ],
+          [
+            1040165653,
+            1
+          ],
+          [
+            1047284227,
+            0
+          ],
+          [
+            1047284227,
+            1
+          ],
+          [
+            1338192299,
+            0
+          ],
+          [
+            1338192299,
+            1
+          ],
+          [
+            1662960166,
+            0
+          ],
+          [
+            1662960166,
+            1
+          ],
+          [
+            1672479867,
+            0
+          ],
+          [
+            1672479867,
+            1
+          ],
+          [
+            1674798194,
+            0
+          ],
+          [
+            1674798194,
+            1
+          ],
+          [
+            2020048658,
+            0
+          ],
+          [
+            2020048658,
+            1
+          ],
+          [
+            2052836158,
+            0
+          ],
+          [
+            2052836158,
+            1
+          ],
+          [
+            2110715130,
+            0
+          ],
+          [
+            2110715130,
+            1
+          ]
+        ],
+        "included_seeds": [
+          1387052231,
+          1421711696,
+          1459327281,
+          1514191294,
+          1652205610,
+          1715028217,
+          1722159489,
+          1948729637,
+          28846738,
+          94002826,
+          420997839,
+          450201982,
+          742425277,
+          810644906,
+          1021451513,
+          1040165653,
+          1047284227,
+          1338192299,
+          1662960166,
+          1672479867,
+          1674798194,
+          2020048658,
+          2052836158,
+          2110715130
+        ],
+        "source_identity": "ca1f0a66f88569d7947d6005b4b2f4104ac4d96508a59b23ababe23a459d887a",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_02_part1.zip",
+      "bytes": 39741159,
+      "sha256": "69b9a2835a4e9df26460f31ee4419415bed1f9d6bab4b1e612b05703b2a68e14",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:13.004202+00:00",
+      "finished_utc": "2026-09-13T22:05:13.223285+00:00",
+      "context": {
+        "experiment": "02_observed_capital",
+        "validation": false,
+        "part": 1,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            140008426,
+            0
+          ],
+          [
+            140008426,
+            1
+          ],
+          [
+            148094548,
+            0
+          ],
+          [
+            148094548,
+            1
+          ],
+          [
+            180752382,
+            0
+          ],
+          [
+            180752382,
+            1
+          ],
+          [
+            219026998,
+            0
+          ],
+          [
+            219026998,
+            1
+          ],
+          [
+            320211102,
+            0
+          ],
+          [
+            320211102,
+            1
+          ],
+          [
+            337943030,
+            0
+          ],
+          [
+            337943030,
+            1
+          ],
+          [
+            370413548,
+            0
+          ],
+          [
+            370413548,
+            1
+          ],
+          [
+            383365175,
+            0
+          ],
+          [
+            383365175,
+            1
+          ],
+          [
+            702093297,
+            0
+          ],
+          [
+            702093297,
+            1
+          ],
+          [
+            967718147,
+            0
+          ],
+          [
+            967718147,
+            1
+          ],
+          [
+            1501860085,
+            0
+          ],
+          [
+            1501860085,
+            1
+          ],
+          [
+            1658182076,
+            0
+          ],
+          [
+            1658182076,
+            1
+          ],
+          [
+            1681080428,
+            0
+          ],
+          [
+            1681080428,
+            1
+          ],
+          [
+            1781448506,
+            0
+          ],
+          [
+            1781448506,
+            1
+          ],
+          [
+            1856155813,
+            0
+          ],
+          [
+            1856155813,
+            1
+          ],
+          [
+            2027896586,
+            0
+          ],
+          [
+            2027896586,
+            1
+          ],
+          [
+            28576209,
+            0
+          ],
+          [
+            28576209,
+            1
+          ],
+          [
+            394509745,
+            0
+          ],
+          [
+            394509745,
+            1
+          ],
+          [
+            766857369,
+            0
+          ],
+          [
+            766857369,
+            1
+          ],
+          [
+            833126169,
+            0
+          ],
+          [
+            833126169,
+            1
+          ],
+          [
+            979746784,
+            0
+          ],
+          [
+            979746784,
+            1
+          ],
+          [
+            979914492,
+            0
+          ],
+          [
+            979914492,
+            1
+          ],
+          [
+            1138364143,
+            0
+          ],
+          [
+            1138364143,
+            1
+          ],
+          [
+            1175089851,
+            0
+          ],
+          [
+            1175089851,
+            1
+          ]
+        ],
+        "included_seeds": [
+          140008426,
+          148094548,
+          180752382,
+          219026998,
+          320211102,
+          337943030,
+          370413548,
+          383365175,
+          702093297,
+          967718147,
+          1501860085,
+          1658182076,
+          1681080428,
+          1781448506,
+          1856155813,
+          2027896586,
+          28576209,
+          394509745,
+          766857369,
+          833126169,
+          979746784,
+          979914492,
+          1138364143,
+          1175089851
+        ],
+        "source_identity": "201074b52b1ab4c0eeba98d4f6054c8954f3621d8ef85890211aaf07c3c23ed0",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_02_part2.zip",
+      "bytes": 39308011,
+      "sha256": "6b9f639f963039149dcb90c5427192dd1516236d5a28bd36d23c6f9244968c10",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:13.235169+00:00",
+      "finished_utc": "2026-09-13T22:05:13.456933+00:00",
+      "context": {
+        "experiment": "02_observed_capital",
+        "validation": false,
+        "part": 2,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            1387052231,
+            0
+          ],
+          [
+            1387052231,
+            1
+          ],
+          [
+            1421711696,
+            0
+          ],
+          [
+            1421711696,
+            1
+          ],
+          [
+            1459327281,
+            0
+          ],
+          [
+            1459327281,
+            1
+          ],
+          [
+            1514191294,
+            0
+          ],
+          [
+            1514191294,
+            1
+          ],
+          [
+            1652205610,
+            0
+          ],
+          [
+            1652205610,
+            1
+          ],
+          [
+            1715028217,
+            0
+          ],
+          [
+            1715028217,
+            1
+          ],
+          [
+            1722159489,
+            0
+          ],
+          [
+            1722159489,
+            1
+          ],
+          [
+            1948729637,
+            0
+          ],
+          [
+            1948729637,
+            1
+          ],
+          [
+            28846738,
+            0
+          ],
+          [
+            28846738,
+            1
+          ],
+          [
+            94002826,
+            0
+          ],
+          [
+            94002826,
+            1
+          ],
+          [
+            420997839,
+            0
+          ],
+          [
+            420997839,
+            1
+          ],
+          [
+            450201982,
+            0
+          ],
+          [
+            450201982,
+            1
+          ],
+          [
+            742425277,
+            0
+          ],
+          [
+            742425277,
+            1
+          ],
+          [
+            810644906,
+            0
+          ],
+          [
+            810644906,
+            1
+          ],
+          [
+            1021451513,
+            0
+          ],
+          [
+            1021451513,
+            1
+          ],
+          [
+            1040165653,
+            0
+          ],
+          [
+            1040165653,
+            1
+          ],
+          [
+            1047284227,
+            0
+          ],
+          [
+            1047284227,
+            1
+          ],
+          [
+            1338192299,
+            0
+          ],
+          [
+            1338192299,
+            1
+          ],
+          [
+            1662960166,
+            0
+          ],
+          [
+            1662960166,
+            1
+          ],
+          [
+            1672479867,
+            0
+          ],
+          [
+            1672479867,
+            1
+          ],
+          [
+            1674798194,
+            0
+          ],
+          [
+            1674798194,
+            1
+          ],
+          [
+            2020048658,
+            0
+          ],
+          [
+            2020048658,
+            1
+          ],
+          [
+            2052836158,
+            0
+          ],
+          [
+            2052836158,
+            1
+          ],
+          [
+            2110715130,
+            0
+          ],
+          [
+            2110715130,
+            1
+          ]
+        ],
+        "included_seeds": [
+          1387052231,
+          1421711696,
+          1459327281,
+          1514191294,
+          1652205610,
+          1715028217,
+          1722159489,
+          1948729637,
+          28846738,
+          94002826,
+          420997839,
+          450201982,
+          742425277,
+          810644906,
+          1021451513,
+          1040165653,
+          1047284227,
+          1338192299,
+          1662960166,
+          1672479867,
+          1674798194,
+          2020048658,
+          2052836158,
+          2110715130
+        ],
+        "source_identity": "201074b52b1ab4c0eeba98d4f6054c8954f3621d8ef85890211aaf07c3c23ed0",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_04_part1.zip",
+      "bytes": 39768184,
+      "sha256": "6ee87ae3ec3234db1d978a98a30c2f356d85d877b62c0ce84990521e6560faed",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:13.469410+00:00",
+      "finished_utc": "2026-09-13T22:05:13.691566+00:00",
+      "context": {
+        "experiment": "04_capital_dawn_consistent",
+        "validation": false,
+        "part": 1,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            140008426,
+            0
+          ],
+          [
+            140008426,
+            1
+          ],
+          [
+            148094548,
+            0
+          ],
+          [
+            148094548,
+            1
+          ],
+          [
+            180752382,
+            0
+          ],
+          [
+            180752382,
+            1
+          ],
+          [
+            219026998,
+            0
+          ],
+          [
+            219026998,
+            1
+          ],
+          [
+            320211102,
+            0
+          ],
+          [
+            320211102,
+            1
+          ],
+          [
+            337943030,
+            0
+          ],
+          [
+            337943030,
+            1
+          ],
+          [
+            370413548,
+            0
+          ],
+          [
+            370413548,
+            1
+          ],
+          [
+            383365175,
+            0
+          ],
+          [
+            383365175,
+            1
+          ],
+          [
+            702093297,
+            0
+          ],
+          [
+            702093297,
+            1
+          ],
+          [
+            967718147,
+            0
+          ],
+          [
+            967718147,
+            1
+          ],
+          [
+            1501860085,
+            0
+          ],
+          [
+            1501860085,
+            1
+          ],
+          [
+            1658182076,
+            0
+          ],
+          [
+            1658182076,
+            1
+          ],
+          [
+            1681080428,
+            0
+          ],
+          [
+            1681080428,
+            1
+          ],
+          [
+            1781448506,
+            0
+          ],
+          [
+            1781448506,
+            1
+          ],
+          [
+            1856155813,
+            0
+          ],
+          [
+            1856155813,
+            1
+          ],
+          [
+            2027896586,
+            0
+          ],
+          [
+            2027896586,
+            1
+          ],
+          [
+            28576209,
+            0
+          ],
+          [
+            28576209,
+            1
+          ],
+          [
+            394509745,
+            0
+          ],
+          [
+            394509745,
+            1
+          ],
+          [
+            766857369,
+            0
+          ],
+          [
+            766857369,
+            1
+          ],
+          [
+            833126169,
+            0
+          ],
+          [
+            833126169,
+            1
+          ],
+          [
+            979746784,
+            0
+          ],
+          [
+            979746784,
+            1
+          ],
+          [
+            979914492,
+            0
+          ],
+          [
+            979914492,
+            1
+          ],
+          [
+            1138364143,
+            0
+          ],
+          [
+            1138364143,
+            1
+          ],
+          [
+            1175089851,
+            0
+          ],
+          [
+            1175089851,
+            1
+          ]
+        ],
+        "included_seeds": [
+          140008426,
+          148094548,
+          180752382,
+          219026998,
+          320211102,
+          337943030,
+          370413548,
+          383365175,
+          702093297,
+          967718147,
+          1501860085,
+          1658182076,
+          1681080428,
+          1781448506,
+          1856155813,
+          2027896586,
+          28576209,
+          394509745,
+          766857369,
+          833126169,
+          979746784,
+          979914492,
+          1138364143,
+          1175089851
+        ],
+        "source_identity": "7fbbb81fd0d37ab5b02fdaee3fde5637b5266d715af081fbc90de9c736702b5b",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_04_part2.zip",
+      "bytes": 39387792,
+      "sha256": "ef6a96e9ad4e66be249efb224a2ff2d4350b37a87c68cd440257b4e352f17513",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:13.702339+00:00",
+      "finished_utc": "2026-09-13T22:05:13.924039+00:00",
+      "context": {
+        "experiment": "04_capital_dawn_consistent",
+        "validation": false,
+        "part": 2,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            1387052231,
+            0
+          ],
+          [
+            1387052231,
+            1
+          ],
+          [
+            1421711696,
+            0
+          ],
+          [
+            1421711696,
+            1
+          ],
+          [
+            1459327281,
+            0
+          ],
+          [
+            1459327281,
+            1
+          ],
+          [
+            1514191294,
+            0
+          ],
+          [
+            1514191294,
+            1
+          ],
+          [
+            1652205610,
+            0
+          ],
+          [
+            1652205610,
+            1
+          ],
+          [
+            1715028217,
+            0
+          ],
+          [
+            1715028217,
+            1
+          ],
+          [
+            1722159489,
+            0
+          ],
+          [
+            1722159489,
+            1
+          ],
+          [
+            1948729637,
+            0
+          ],
+          [
+            1948729637,
+            1
+          ],
+          [
+            28846738,
+            0
+          ],
+          [
+            28846738,
+            1
+          ],
+          [
+            94002826,
+            0
+          ],
+          [
+            94002826,
+            1
+          ],
+          [
+            420997839,
+            0
+          ],
+          [
+            420997839,
+            1
+          ],
+          [
+            450201982,
+            0
+          ],
+          [
+            450201982,
+            1
+          ],
+          [
+            742425277,
+            0
+          ],
+          [
+            742425277,
+            1
+          ],
+          [
+            810644906,
+            0
+          ],
+          [
+            810644906,
+            1
+          ],
+          [
+            1021451513,
+            0
+          ],
+          [
+            1021451513,
+            1
+          ],
+          [
+            1040165653,
+            0
+          ],
+          [
+            1040165653,
+            1
+          ],
+          [
+            1047284227,
+            0
+          ],
+          [
+            1047284227,
+            1
+          ],
+          [
+            1338192299,
+            0
+          ],
+          [
+            1338192299,
+            1
+          ],
+          [
+            1662960166,
+            0
+          ],
+          [
+            1662960166,
+            1
+          ],
+          [
+            1672479867,
+            0
+          ],
+          [
+            1672479867,
+            1
+          ],
+          [
+            1674798194,
+            0
+          ],
+          [
+            1674798194,
+            1
+          ],
+          [
+            2020048658,
+            0
+          ],
+          [
+            2020048658,
+            1
+          ],
+          [
+            2052836158,
+            0
+          ],
+          [
+            2052836158,
+            1
+          ],
+          [
+            2110715130,
+            0
+          ],
+          [
+            2110715130,
+            1
+          ]
+        ],
+        "included_seeds": [
+          1387052231,
+          1421711696,
+          1459327281,
+          1514191294,
+          1652205610,
+          1715028217,
+          1722159489,
+          1948729637,
+          28846738,
+          94002826,
+          420997839,
+          450201982,
+          742425277,
+          810644906,
+          1021451513,
+          1040165653,
+          1047284227,
+          1338192299,
+          1662960166,
+          1672479867,
+          1674798194,
+          2020048658,
+          2052836158,
+          2110715130
+        ],
+        "source_identity": "7fbbb81fd0d37ab5b02fdaee3fde5637b5266d715af081fbc90de9c736702b5b",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_05_part1.zip",
+      "bytes": 39018357,
+      "sha256": "4509425440f21e4be27122a2961927559a8ee64b7830966d33c124f5d75b8aaa",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:13.934833+00:00",
+      "finished_utc": "2026-09-13T22:05:14.152960+00:00",
+      "context": {
+        "experiment": "05_capital_prior_dawn_consistent",
+        "validation": false,
+        "part": 1,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            140008426,
+            0
+          ],
+          [
+            140008426,
+            1
+          ],
+          [
+            148094548,
+            0
+          ],
+          [
+            148094548,
+            1
+          ],
+          [
+            180752382,
+            0
+          ],
+          [
+            180752382,
+            1
+          ],
+          [
+            219026998,
+            0
+          ],
+          [
+            219026998,
+            1
+          ],
+          [
+            320211102,
+            0
+          ],
+          [
+            320211102,
+            1
+          ],
+          [
+            337943030,
+            0
+          ],
+          [
+            337943030,
+            1
+          ],
+          [
+            370413548,
+            0
+          ],
+          [
+            370413548,
+            1
+          ],
+          [
+            383365175,
+            0
+          ],
+          [
+            383365175,
+            1
+          ],
+          [
+            702093297,
+            0
+          ],
+          [
+            702093297,
+            1
+          ],
+          [
+            967718147,
+            0
+          ],
+          [
+            967718147,
+            1
+          ],
+          [
+            1501860085,
+            0
+          ],
+          [
+            1501860085,
+            1
+          ],
+          [
+            1658182076,
+            0
+          ],
+          [
+            1658182076,
+            1
+          ],
+          [
+            1681080428,
+            0
+          ],
+          [
+            1681080428,
+            1
+          ],
+          [
+            1781448506,
+            0
+          ],
+          [
+            1781448506,
+            1
+          ],
+          [
+            1856155813,
+            0
+          ],
+          [
+            1856155813,
+            1
+          ],
+          [
+            2027896586,
+            0
+          ],
+          [
+            2027896586,
+            1
+          ],
+          [
+            28576209,
+            0
+          ],
+          [
+            28576209,
+            1
+          ],
+          [
+            394509745,
+            0
+          ],
+          [
+            394509745,
+            1
+          ],
+          [
+            766857369,
+            0
+          ],
+          [
+            766857369,
+            1
+          ],
+          [
+            833126169,
+            0
+          ],
+          [
+            833126169,
+            1
+          ],
+          [
+            979746784,
+            0
+          ],
+          [
+            979746784,
+            1
+          ],
+          [
+            979914492,
+            0
+          ],
+          [
+            979914492,
+            1
+          ],
+          [
+            1138364143,
+            0
+          ],
+          [
+            1138364143,
+            1
+          ],
+          [
+            1175089851,
+            0
+          ],
+          [
+            1175089851,
+            1
+          ]
+        ],
+        "included_seeds": [
+          140008426,
+          148094548,
+          180752382,
+          219026998,
+          320211102,
+          337943030,
+          370413548,
+          383365175,
+          702093297,
+          967718147,
+          1501860085,
+          1658182076,
+          1681080428,
+          1781448506,
+          1856155813,
+          2027896586,
+          28576209,
+          394509745,
+          766857369,
+          833126169,
+          979746784,
+          979914492,
+          1138364143,
+          1175089851
+        ],
+        "source_identity": "28e7f3d53107d584a5ad4dcd465cca1caa4a99416cf08e6dae9b08b45e850e77",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_05_part2.zip",
+      "bytes": 39272713,
+      "sha256": "36589185d6b1b34eaa1b82b26b89bfcfafdf25a8224971fa4e265caa3adcc227",
+      "entries_verified": 308,
+      "started_utc": "2026-09-13T22:05:14.163783+00:00",
+      "finished_utc": "2026-09-13T22:05:14.389043+00:00",
+      "context": {
+        "experiment": "05_capital_prior_dawn_consistent",
+        "validation": false,
+        "part": 2,
+        "parts": 2,
+        "whole_panel_games": 96,
+        "included_cells": [
+          [
+            1387052231,
+            0
+          ],
+          [
+            1387052231,
+            1
+          ],
+          [
+            1421711696,
+            0
+          ],
+          [
+            1421711696,
+            1
+          ],
+          [
+            1459327281,
+            0
+          ],
+          [
+            1459327281,
+            1
+          ],
+          [
+            1514191294,
+            0
+          ],
+          [
+            1514191294,
+            1
+          ],
+          [
+            1652205610,
+            0
+          ],
+          [
+            1652205610,
+            1
+          ],
+          [
+            1715028217,
+            0
+          ],
+          [
+            1715028217,
+            1
+          ],
+          [
+            1722159489,
+            0
+          ],
+          [
+            1722159489,
+            1
+          ],
+          [
+            1948729637,
+            0
+          ],
+          [
+            1948729637,
+            1
+          ],
+          [
+            28846738,
+            0
+          ],
+          [
+            28846738,
+            1
+          ],
+          [
+            94002826,
+            0
+          ],
+          [
+            94002826,
+            1
+          ],
+          [
+            420997839,
+            0
+          ],
+          [
+            420997839,
+            1
+          ],
+          [
+            450201982,
+            0
+          ],
+          [
+            450201982,
+            1
+          ],
+          [
+            742425277,
+            0
+          ],
+          [
+            742425277,
+            1
+          ],
+          [
+            810644906,
+            0
+          ],
+          [
+            810644906,
+            1
+          ],
+          [
+            1021451513,
+            0
+          ],
+          [
+            1021451513,
+            1
+          ],
+          [
+            1040165653,
+            0
+          ],
+          [
+            1040165653,
+            1
+          ],
+          [
+            1047284227,
+            0
+          ],
+          [
+            1047284227,
+            1
+          ],
+          [
+            1338192299,
+            0
+          ],
+          [
+            1338192299,
+            1
+          ],
+          [
+            1662960166,
+            0
+          ],
+          [
+            1662960166,
+            1
+          ],
+          [
+            1672479867,
+            0
+          ],
+          [
+            1672479867,
+            1
+          ],
+          [
+            1674798194,
+            0
+          ],
+          [
+            1674798194,
+            1
+          ],
+          [
+            2020048658,
+            0
+          ],
+          [
+            2020048658,
+            1
+          ],
+          [
+            2052836158,
+            0
+          ],
+          [
+            2052836158,
+            1
+          ],
+          [
+            2110715130,
+            0
+          ],
+          [
+            2110715130,
+            1
+          ]
+        ],
+        "included_seeds": [
+          1387052231,
+          1421711696,
+          1459327281,
+          1514191294,
+          1652205610,
+          1715028217,
+          1722159489,
+          1948729637,
+          28846738,
+          94002826,
+          420997839,
+          450201982,
+          742425277,
+          810644906,
+          1021451513,
+          1040165653,
+          1047284227,
+          1338192299,
+          1662960166,
+          1672479867,
+          1674798194,
+          2020048658,
+          2052836158,
+          2110715130
+        ],
+        "source_identity": "28e7f3d53107d584a5ad4dcd465cca1caa4a99416cf08e6dae9b08b45e850e77",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_validation_part1.zip",
+      "bytes": 26968796,
+      "sha256": "58bb7d9188111b40c71d4038342af422b1a173634a517c442825849bf028e5c3",
+      "entries_verified": 257,
+      "started_utc": "2026-09-13T22:05:14.396229+00:00",
+      "finished_utc": "2026-09-13T22:05:14.575857+00:00",
+      "context": {
+        "experiment": "frozen_validation",
+        "validation": true,
+        "part": 1,
+        "parts": 1,
+        "whole_panel_games": 32,
+        "included_cells": [
+          [
+            1260184043,
+            0
+          ],
+          [
+            1260184043,
+            1
+          ],
+          [
+            558926474,
+            0
+          ],
+          [
+            558926474,
+            1
+          ],
+          [
+            1183989484,
+            0
+          ],
+          [
+            1183989484,
+            1
+          ],
+          [
+            1550876656,
+            0
+          ],
+          [
+            1550876656,
+            1
+          ],
+          [
+            274468269,
+            0
+          ],
+          [
+            274468269,
+            1
+          ],
+          [
+            1785475952,
+            0
+          ],
+          [
+            1785475952,
+            1
+          ],
+          [
+            1885300481,
+            0
+          ],
+          [
+            1885300481,
+            1
+          ],
+          [
+            214051485,
+            0
+          ],
+          [
+            214051485,
+            1
+          ],
+          [
+            839400023,
+            0
+          ],
+          [
+            839400023,
+            1
+          ],
+          [
+            1178333095,
+            0
+          ],
+          [
+            1178333095,
+            1
+          ],
+          [
+            1616543271,
+            0
+          ],
+          [
+            1616543271,
+            1
+          ],
+          [
+            877597850,
+            0
+          ],
+          [
+            877597850,
+            1
+          ],
+          [
+            415880052,
+            0
+          ],
+          [
+            415880052,
+            1
+          ],
+          [
+            272080820,
+            0
+          ],
+          [
+            272080820,
+            1
+          ],
+          [
+            216928037,
+            0
+          ],
+          [
+            216928037,
+            1
+          ],
+          [
+            2025508729,
+            0
+          ],
+          [
+            2025508729,
+            1
+          ]
+        ],
+        "included_seeds": [
+          1260184043,
+          558926474,
+          1183989484,
+          1550876656,
+          274468269,
+          1785475952,
+          1885300481,
+          214051485,
+          839400023,
+          1178333095,
+          1616543271,
+          877597850,
+          415880052,
+          272080820,
+          216928037,
+          2025508729
+        ],
+        "source_identity": "247093b2bb339937c5619c0c36377ded2e3ce015da32d5004628ca30810b1561",
+        "scope": "PLAN.json and results.jsonl preserve the complete panel; this ZIP supplies full replays and individual records only for included_cells. Each game is whole. Companion parts supply remaining replays.",
+        "selected_final_source": "04_capital_dawn_consistent",
+        "prototype_warning": "02 has a forecast/executor cadence mismatch and was excluded from selection."
+      }
+    },
+    {
+      "filename": "C05_ROUND05_evidence_metadata.zip",
+      "bytes": 23682873,
+      "sha256": "cbb3068a8a511375d1322c1c001b0b013549183b2b318e91a1b08878e034cfd7",
+      "entries_verified": 2025,
+      "started_utc": "2026-09-13T22:05:14.613931+00:00",
+      "finished_utc": "2026-09-13T22:05:15.784909+00:00",
+      "context": {
+        "role": "all_sources_metadata_failures_tests",
+        "utc": "2026-09-13T22:05:14.613913+00:00"
+      }
+    }
+  ],
+  "delivery_manifest_sha256": "bfa6b29b9ca367f7fbf462b882039a5b499180db5060457fdcb0bbe23f20f2e6",
+  "round05_evidence": {
+    "verified": true,
+    "games": 418,
+    "official_replay_transitions": 300542,
+    "validation_games": 32,
+    "validation_mean": 212330.84375,
+    "validation_passed": true,
+    "all_declared_validation_cells_verified": true,
+    "source_frozen_before_all_validation_starts": true,
+    "source_manifests_bind_all_panels": true,
+    "postvalidation_fallback": false,
+    "rejected_timing_mismatch_prototype_games": 96,
+    "unbuilt_variant03_preserved": true
+  },
+  "author_evidence": {
+    "status": "ROUND05_COMPLETE_VERIFIED",
+    "claimed_results_verified": true,
+    "missing": [],
+    "historical_limit": "Unknown lost campaign seed histories remain unknown."
+  },
+  "controller_runtime_readiness": {
+    "verified": true,
+    "runtime_main": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/main.py",
+    "runtime_files": {
+      "build.py": "aa5365997395c5f321d57ebdb4b9507f4af46a9e0969d8e99f7095653ec791c3",
+      "BUILD_VERIFICATION.json": "9ead47dadd425a1a5d7474a230e435e6aa5ac835593fa98384eb411a466366a4",
+      "COMPILER_FLAGS.json": "a7c4ff30eb59c0749a2294ccbb80113ca2b17191304029151af76e7eae368c42",
+      "FINAL_VS_OWN.patch": "aa8555f27daedf242cdbfb6ad878d8ae049fa4204b88e4869135cd83a32b35ab",
+      "main.py": "57a2030a4ca820cf5996a2ea35961b75ca580e2b6a913970de065a04cbbd3064",
+      "PROVENANCE.json": "79ac0ce189c350ab6204bd8473cd1cbf68dda9942de4d153da758d3626ffa9e8",
+      "README.md": "b5a67e43d01efc3c3b21fd27bde6473f737e084763b35caddde3102587c9787f",
+      "SHA256SUMS.txt": "f4a390ef3106341f92ae892e61d2614adfc1e034ebdb57d84a39caaf9f7a226b",
+      "SOURCE_FREEZE.json": "4f202b5b1ea19c8ee2a6dd425afd1fc7a3d1f1fb20e56c51324f5f7937209b2f",
+      "SOURCE_MANIFEST.json": "c48c32de79b8b5c060218f848dfd94266cf87a137026cbd06b81bd4f9c79e2fa",
+      "build/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "build/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evaluation/inputs/referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+      "evaluation/inputs/referee/official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+      "evaluation/inputs/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "evaluation/inputs/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
+      "policy/a06.BUILD.json": "d3e75a69a81f30dd689454efa58550cd88507d382881752b45404e5be1095213",
+      "policy/a06.so": "cd392768788630c6f981ed6e494713f7c9ffdc6a12ffeaf15b4b2d4363177c28",
+      "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+      "policy/agent.py": "a758bc676b45fe906f316017e230b1b67edbc90e39635b8aa75ef83c5ed26134",
+      "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "policy/bridge.cpp": "51dbbe2fe7a9ed30edb6234cf001b688161bdd39a5cd07889377080b03bd046d",
+      "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "policy/config.json": "e65a0ae79ad3a525170936eac662c0517cc8926ad6510dce20f2384ba3dca37c",
+      "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+      "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+      "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "policy/observed_capital.hpp": "1dc388df2ea35dde9b9129dc6e23136c79b948879b92c495dd5edf6ad50e5dc9",
+      "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+      "policy/proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+      "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "policy/search.hpp": "09c4c93ed4c97e99965d1a6398e7bac509162c2b2dc16822c079a6fc1f9b873f",
+      "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "policy/triad.hpp": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a",
+      "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+      "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+      "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "policy/executor/policy.hpp": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0",
+      "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+      "tests/check_entry_and_parity.py": "8d4df66d5778e254c46457b604aea9b9f1118a788dc69805088f4b151f6ad470",
+      "tests/observed_capital_contract.cpp": "8c84f6ffe04b65e1683fb4a408487582dd682aef78552267888f23c2db3e5a25",
+      "tests/run_units.py": "6145870b775638d65776d5d4f550715b79081041938b62a01f6aa582f21abfa2",
+      "tests/service_oracle.cpp": "9410e67c805cd0c179b0f391c3af35f885918a3cddd4d1cdbeb5442a0f0b1d55",
+      "tests/test_offline_build.py": "5599cd4567272dbddcdc16562028096da19f468d107fbbc8789810b788cf74eb",
+      "tests/test_runtime_guards.py": "870097b329c65802d7355b24d7f24aabc2509125c8186dcb1f19ecdb2cfc3355",
+      "tests/test_service_oracle.py": "bdbb248d8e083cd5af0c28e93ef182b3bb68c805034eb6dd3d8bb478ce17f0e3",
+      "tests/fixtures/trace_1338192299_0.jsonl.gz": "f00478622f60a468cbc8acf19548c0c9f08f27e02c3ece05b4adb51ce8badc41",
+      "tests/fixtures/trace_1338192299_1.jsonl.gz": "5d0e34947fb4d9b02d52cf6289f986fa8073b13fb3172828d17b748be4f7837c",
+      "test_output/atomic_build_failure_test.json": "b84f4072c4ae996dab99bf9007faf438dd3af0a47026ec41e9c1713770b4f68d",
+      "test_output/entry_parity.json": "26f2457bc78e660f0ee38f5a8873c33ae75a3ce1f843d2da38f412f6f3041fe2",
+      "test_output/observed_capital_contract": "36d61a00356ac37b07116bb4139265899948b80d2f61f81ba41a7d9615047a13",
+      "test_output/observed_capital_contract.json": "2c6363307d1a8ec0dc42b349d05d934ae92b871f8b4020a4de2c7e79bb08be0a",
+      "test_output/runtime_guards.json": "6b96431a2ad72877f876c4517f5188e258565cd0fb523bf8db465d8c7e91bfa9",
+      "test_output/unit_summary.json": "fb76be136ccce0789476da530c1a78aed8607f90b96f8b69e6b753f1dfabb1b5",
+      "test_output/service_dp_oracle/cases.json": "fb4bf3431d524af549a130a23a35b9a9df72908131f7b31478e78ef749aab357",
+      "test_output/service_dp_oracle/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test_output/service_dp_oracle/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test_output/service_dp_oracle/native_tables.txt": "cf8e65e79a6555816785e37b484486eb7d2d046d195200825b72154ae38d9aa1",
+      "test_output/service_dp_oracle/oracle": "da1708b70ade2f03b19978940f40307b34ca4a14a678050bf4a57d171db7ed9e",
+      "test_output/service_dp_oracle/report.json": "785b564ce4a98956f5e4e86787233f622ff285ec9e5b86ee4a537185249e748f"
+    },
+    "referee_files": {
+      "cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+      "official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+      "official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+    },
+    "source_audit_passed": true,
+    "build_passed": true,
+    "entry_checks_passed": true,
+    "full_game_smoke_passed": true
+  },
+  "build": {
+    "started_utc": "2026-09-13T22:23:38.663638+00:00",
+    "command": [
+      "/usr/bin/g++-11",
+      "-std=c++20",
+      "-O3",
+      "-DNDEBUG",
+      "-march=x86-64",
+      "-ffp-contract=off",
+      "-DR2_LOCAL_SALE_TIMING=1",
+      "-DR2_FINITE_FERTILIZER=1",
+      "-DR2_CROP_CLOCK_MODE=1",
+      "-DR2_OBSERVE_PUBLIC_TRADES=1",
+      "-DR2_SALE_CLOCK_MODE=0",
+      "-fPIC",
+      "-shared",
+      "-Wl,-Bsymbolic",
+      "-DR2_MARKET_INTEGRAL=0",
+      "-DR2_STARTUP_SUPPLY_MODE=0",
+      "-DA06_EXEC_MODE=2",
+      "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/policy/bridge.cpp",
+      "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/policy/executor/vendor/simulator.cpp",
+      "-o",
+      "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/policy/.c05_build_rzqv583o.so"
+    ],
+    "compiler": "g++-11 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "sources": {
+      "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+      "policy/agent.py": "a758bc676b45fe906f316017e230b1b67edbc90e39635b8aa75ef83c5ed26134",
+      "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "policy/bridge.cpp": "51dbbe2fe7a9ed30edb6234cf001b688161bdd39a5cd07889377080b03bd046d",
+      "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "policy/config.json": "e65a0ae79ad3a525170936eac662c0517cc8926ad6510dce20f2384ba3dca37c",
+      "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+      "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+      "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "policy/executor/policy.hpp": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0",
+      "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+      "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+      "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+      "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "policy/observed_capital.hpp": "1dc388df2ea35dde9b9129dc6e23136c79b948879b92c495dd5edf6ad50e5dc9",
+      "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+      "policy/proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+      "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "policy/search.hpp": "09c4c93ed4c97e99965d1a6398e7bac509162c2b2dc16822c079a6fc1f9b873f",
+      "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "policy/triad.hpp": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a",
+      "main.py": "57a2030a4ca820cf5996a2ea35961b75ca580e2b6a913970de065a04cbbd3064",
+      "build.py": "aa5365997395c5f321d57ebdb4b9507f4af46a9e0969d8e99f7095653ec791c3",
+      "COMPILER_FLAGS.json": "a7c4ff30eb59c0749a2294ccbb80113ca2b17191304029151af76e7eae368c42"
+    },
+    "exit_code": 0,
+    "seconds": 16.14663493300003,
+    "max_child_rss_kib": 604068,
+    "output": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/policy/a06.so",
+    "sha256": "cd392768788630c6f981ed6e494713f7c9ffdc6a12ffeaf15b4b2d4363177c28",
+    "configuration": {
+      "competition": 2,
+      "supply": 0.85,
+      "future_shop": 0.7,
+      "capital_power": 0.4,
+      "labor_hours": 10,
+      "work_price": 4,
+      "animal_work": 1.0,
+      "reserve": 120,
+      "max_animals": 32,
+      "max_hands": 14,
+      "max_land": 4,
+      "feed_cover": 1,
+      "rotation": 0,
+      "preview": 1,
+      "delivery": 2,
+      "intraday": 1,
+      "service": 1,
+      "replant": 0,
+      "land_rent": 2,
+      "discount": 0.005,
+      "tour_dp": 1,
+      "layout": 0,
+      "repeat": 0,
+      "animal_bias": 1,
+      "crop_bias": 1,
+      "portfolio_passes": 6,
+      "crop_fert": 1,
+      "harvest_threshold": 1,
+      "delay_sale": 0,
+      "opening_budget": 1,
+      "scenario": 2,
+      "keep_commitments": 1,
+      "candidate_extra": 1,
+      "service_reconcile": 2,
+      "live_ledger": 0,
+      "delivery_calendar": 0,
+      "feed_finance": 0,
+      "batch_delivery": 1,
+      "a06_reinvest": 4,
+      "a06_roll_scope": 0,
+      "a06_feed_contract": 0,
+      "a06_state_contract": 0,
+      "a06_execution_candidates": 1,
+      "a06_competitive_contract": 2
+    },
+    "atomic_replace": true
+  },
+  "unit_tests": {
+    "passed_suites": [
+      "official_refresh_service_oracle",
+      "atomic_failed_build_preserves_native",
+      "runtime_boundaries",
+      "full_trace_privacy_parity_reset_and_isolation",
+      "observed_capital_17_contracts"
+    ],
+    "seconds": 13.605314263000025,
+    "not_new_independent_games": true
+  },
+  "entry_checks": {
+    "explicit_module_reset": true,
+    "independent_contexts": true,
+    "module_contexts_closed": true,
+    "root_factory_equivalence": true,
+    "seed_hidden": true,
+    "step_zero_reset": true,
+    "unknown_seed_field_ignored": true
+  },
+  "local_reproduction": [
+    {
+      "action_seconds": [
+        [
+          0.040951470000038626,
+          0.0005768149999880734,
+          0.00044122799999968265,
+          0.0003898690000028182,
+          0.00037135699994905735,
+          0.00043489799998042145,
+          0.00037057599996614954,
+          0.00037578499996016035,
+          0.00037067600004547785,
+          0.0005558589999736796,
+          0.0005721370000060233,
+          0.0005785179999975298,
+          0.0005554969999934656,
+          0.0005688719999739078,
+          0.0005485759999714901,
+          0.0005735189999995782,
+          0.0006054849999941325,
+          0.000561567999966428,
+          0.0005342609999843262,
+          0.0005451899999684429,
+          0.0005529239999759739,
+          0.0005538350000051651,
+          0.0005430759999853763,
+          0.00039079000003994224,
+          0.021550779000051534,
+          0.00046215499997970255,
+          0.0008571579999738788,
+          0.0003864529999759725,
+          0.0004120269999816628,
+          0.00037514399997462533,
+          0.00039087100003598607,
+          0.0004814680000322369,
+          0.0004088820000447413,
+          0.0003738220000286674,
+          0.0003740120000088609,
+          0.00036833199999364297,
+          0.0003620510000246213,
+          0.0003645750000487169,
+          0.00035886500000970045,
+          0.00035526900001059403,
+          0.0003990750000184562,
+          0.0003548079999973197,
+          0.0003514019999784068,
+          0.00034638299996458954,
+          0.0003800619999765331,
+          0.0005529829999773028,
+          0.0005282699999611395,
+          0.000531385999977374,
+          0.029563549000044986,
+          0.0005612979999796153,
+          0.0004595709999648534,
+          0.0004518279999956576,
+          0.0004319620000501345,
+          0.0004758189999733986,
+          0.0004172270000140088,
+          0.0003988649999655536,
+          0.00039540899996381995,
+          0.00042410800000425297,
+          0.00039557899998499124,
+          0.00041523300001244934,
+          0.00040261099996996563,
+          0.0004367399999978261,
+          0.0003901500000438318,
+          0.0005091069999707543,
+          0.00043496799997910784,
+          0.0003958799999850271,
+          0.0006210319999695457,
+          0.00038482999997313527,
+          0.0003839180000113629,
+          0.00040352299998858143,
+          0.0005592039999555709,
+          0.0003936360000125205,
+          0.03113095099996599,
+          0.00041977199998655124,
+          0.00040088800000148694,
+          0.00040852199998653305,
+          0.0003844189999995251,
+          0.0004106850000198392,
+          0.0003786800000398216,
+          0.000430370000003677,
+          0.00037388200001942096,
+          0.00039062999996986036,
+          0.0003962299999784591,
+          0.00037095599998338,
+          0.0003623619999757466,
+          0.0005342199999631703,
+          0.00038942899999483416,
+          0.00036174000001665263,
+          0.00037135700000590077,
+          0.0003634930000089298,
+          0.00036135999999942214,
+          0.0006554519999895092,
+          0.00046928799997658643,
+          0.00036248100002467254,
+          0.00035580900004106297,
+          0.000377276999984133,
+          0.0284940859999665,
+          0.000907891999986532,
+          0.0005987740000250596,
+          0.0004695279999964441,
+          0.00044094899999436166,
+          0.0004359700000122757,
+          0.0004592799999727504,
+          0.00043503799997779424,
+          0.00042139399999996385,
+          0.0004203120000170202,
+          0.00044285100000251987,
+          0.00040646799999422,
+          0.00044516600001998086,
+          0.0005316659999721196,
+          0.0005132239999738886,
+          0.0005184839999969881,
+          0.00048756900002899783,
+          0.0004891819999670588,
+          0.000497956999993221,
+          0.00047942499998043786,
+          0.000486087000012958,
+          0.00047959500000160915,
+          0.0004676649999737492,
+          0.00035742300002539196,
+          0.021651333999955114,
+          0.0007278680000126769,
+          0.00043010899997852903,
+          0.0004552430000330787,
+          0.00040888199998789787,
+          0.0003925030000004881,
+          0.0004473690000281749,
+          0.00040091900001471004,
+          0.00041025399997351997,
+          0.0004164860000059889,
+          0.00037469300002612727,
+          0.0003876150000223788,
+          0.00037515299999313356,
+          0.00040081800000280055,
+          0.0003735409999876538,
+          0.00037205899997161396,
+          0.0005131940000069335,
+          0.0003635639999970408,
+          0.0005937539999649744,
+          0.00036336099998379723,
+          0.0003617719999624569,
+          0.000366729999996096,
+          0.00036836300000686606,
+          0.00038798600002110106,
+          0.02431670999999369,
+          0.000950283000008767,
+          0.0004979860000275949,
+          0.00046694200000274577,
+          0.0005017519999910292,
+          0.00043397600001071623,
+          0.0004610519999914686,
+          0.00044786900002691254,
+          0.0004622339999968972,
+          0.000519052000015563,
+          0.00042691400000194335,
+          0.00042590099997141806,
+          0.00041017399996690074,
+          0.00040243200004397295,
+          0.00041563399997812667,
+          0.0006559369999763476,
+          0.00038776600001710904,
+          0.00043060999996669125,
+          0.00039104199998973854,
+          0.00040237100000695136,
+          0.0004810259999885602,
+          0.00042881699999952616,
+          0.0003778390000093168,
+          0.0003694040000254972,
+          0.07197813199996972,
+          0.00047171099998877253,
+          0.0021180190000222865,
+          0.0004780330000357935,
+          0.0004590099999859376,
+          0.0005529509999746551,
+          0.0004454959999975472,
+          0.00045887999999649765,
+          0.0004220860000145876,
+          0.0004550730000119074,
+          0.00044426399995245447,
+          0.0004315119999773742,
+          0.00040960500001574474,
+          0.0004273959999636645,
+          0.00040960500001574474,
+          0.00040585899995448926,
+          0.00039580099996783247,
+          0.00041717799996376925,
+          0.00040132099996981196,
+          0.00041003500001579596,
+          0.0003966929999705826,
+          0.0006109609999498389,
+          0.0006185440000194831,
+          0.00037102900000718364,
+          0.09948083299997279,
+          0.0025837360000195986,
+          0.0005469810000136022,
+          0.000973074999990331,
+          0.0005271169999900849,
+          0.0005015340000227297,
+          0.00048148799999125913,
+          0.0006148580000058246,
+          0.000530251999975917,
+          0.0004757089999998243,
+          0.0004479309999965153,
+          0.00043567000000166445,
+          0.00042779599999676066,
+          0.0004656410000052347,
+          0.0004319230000078278,
+          0.0004293890000326428,
+          0.0004467789999580418,
+          0.0004526690000261624,
+          0.0005710220000310073,
+          0.0005634299999996983,
+          0.0005433649999986301,
+          0.0005373440000084884,
+          0.0005464100000267536,
+          0.00037229100001923143,
+          0.1481785610000088,
+          0.0005708720000257017,
+          0.002225319999979547,
+          0.0006152990000032332,
+          0.0005768729999999778,
+          0.0005752000000143198,
+          0.0005561870000292402,
+          0.0005245529999911014,
+          0.0005331479999881594,
+          0.0004955929999823638,
+          0.0005040080000071612,
+          0.0004708299999833798,
+          0.00047252299998490344,
+          0.0004634269999996832,
+          0.0006604060000086065,
+          0.00046507999996947547,
+          0.0004258029999846258,
+          0.000428056000032484,
+          0.0006017250000240892,
+          0.0006623389999731444,
+          0.0006042599999886988,
+          0.000760738999986188,
+          0.0006564599999592247,
+          0.0004209540000488232,
+          0.14325599500000408,
+          0.000482209999972838,
+          0.0012866139999800907,
+          0.0007928339999807577,
+          0.0005208269999457116,
+          0.0005290610000088236,
+          0.0005236609999883513,
+          0.0005021640000109073,
+          0.000493909999988773,
+          0.0005498660000284872,
+          0.0005031860000030974,
+          0.0005077529999653052,
+          0.0007053840000139644,
+          0.00048547599999437807,
+          0.0004426520000038181,
+          0.00047116100000721417,
+          0.0004419400000301721,
+          0.0004439140000158659,
+          0.0004683560000557918,
+          0.0004323740000131693,
+          0.0004118090000133634,
+          0.000466452000011941,
+          0.0004086529999653976,
+          0.0003948500000205968,
+          0.12382286000001841,
+          0.000515427000038926,
+          0.0014937699999677534,
+          0.0006108810000000631,
+          0.0006084569999984524,
+          0.000585237999985111,
+          0.0005460200000015902,
+          0.0007691029999818966,
+          0.0005292600000075254,
+          0.0004966849999732403,
+          0.0005029959999660605,
+          0.0005229700000199955,
+          0.0004939699999795266,
+          0.000499429000001328,
+          0.0004909549999752016,
+          0.0004888809999670229,
+          0.0006143470000097295,
+          0.00044840099997145444,
+          0.0004413199999930839,
+          0.000422005999951125,
+          0.00044879199998604236,
+          0.0004373119999740993,
+          0.00047585900000512993,
+          0.0004133610000280896,
+          0.08294962100001158,
+          0.0006087769999680859,
+          0.002082073999986278,
+          0.0006599750000191307,
+          0.0006361449999872093,
+          0.0006048399999940557,
+          0.0006111019999934797,
+          0.0005592320000005202,
+          0.0005682180000121662,
+          0.000546991000021535,
+          0.0005457899999896654,
+          0.0006583629999568075,
+          0.00059798900002761,
+          0.0006220309999775964,
+          0.0005420029999640974,
+          0.0004957029999559381,
+          0.0005573089999870717,
+          0.0005438460000277701,
+          0.0004827509999927315,
+          0.0004633379999745557,
+          0.00044847200001640886,
+          0.00047478699997327567,
+          0.0004298199999652752,
+          0.00041359099998317106,
+          0.16986413699999048,
+          0.0005092869999998584,
+          0.001992483000037737,
+          0.0006012960000134626,
+          0.0006140889999528554,
+          0.000572377000025881,
+          0.0005593539999608765,
+          0.0005170909999492324,
+          0.0005214189999946939,
+          0.0005321470000012596,
+          0.0005054009999980735,
+          0.0005020950000016455,
+          0.0005239530000267223,
+          0.0004849460000286854,
+          0.0007158340000046337,
+          0.0004575579999936963,
+          0.00044542799997771,
+          0.0005091980000315743,
+          0.0004225789999736662,
+          0.000750132999996822,
+          0.0008130909999977121,
+          0.0010502790000259665,
+          0.000628312999992886,
+          0.0004105079999590089,
+          0.11333711600002516,
+          0.0004866779999588289,
+          0.0014065530000380022,
+          0.0010138069999925392,
+          0.00075004299998227,
+          0.0006353750000016589,
+          0.0006166829999756374,
+          0.0006966009999587186,
+          0.0006836590000034448,
+          0.0008186400000340655,
+          0.000631548000001203,
+          0.0006264090000058786,
+          0.0005914299999858486,
+          0.0005826039999874411,
+          0.000583085000016581,
+          0.0010508510000022397,
+          0.0005444880000027297,
+          0.0005744590000062999,
+          0.0008356099999673461,
+          0.0006245060000082958,
+          0.0005471430000056898,
+          0.0005513000000405555,
+          0.0005431160000171076,
+          0.000392465999993874,
+          0.11410044699999844,
+          0.000526446999970176,
+          0.0021142630000099416,
+          0.0006244560000254751,
+          0.0012091740000528262,
+          0.0010702840000362812,
+          0.0006940860000099747,
+          0.0006459529999460756,
+          0.0006049030000099265,
+          0.0005736590000537944,
+          0.0005898059999935867,
+          0.0006168029999571445,
+          0.000536574000022938,
+          0.0006399829999850226,
+          0.0006209809999973004,
+          0.0006194570000275235,
+          0.0005423849999601771,
+          0.000548345000026984,
+          0.0005922809999674428,
+          0.0005642119999720308,
+          0.00056416199998921,
+          0.0005736189999652197,
+          0.0005624290000127985,
+          0.00041812099999560814,
+          0.12172376900002746,
+          0.0006341530000213425,
+          0.0010334410000041316,
+          0.0006638039999984358,
+          0.0006510919999982434,
+          0.000641084999983832,
+          0.0005749010000499766,
+          0.0006307769999693846,
+          0.0005730580000431473,
+          0.0005881029999841303,
+          0.0005207780000091589,
+          0.0005268980000323609,
+          0.0005312460000368446,
+          0.0005246650000003683,
+          0.0004981989999919278,
+          0.00049918100000923,
+          0.00046848699997781296,
+          0.0005079359999626831,
+          0.0004497450000258141,
+          0.001157223999996404,
+          0.0005782270000054268,
+          0.0005981510000196977,
+          0.0005919699999594741,
+          0.00040711100001544764,
+          0.10384433600000875,
+          0.0005935429999794906,
+          0.0029346169999939775,
+          0.0008005500000081156,
+          0.00080581899999288,
+          0.0007011179999949491,
+          0.0005807309999568133,
+          0.0006174740000233214,
+          0.0005877019999616095,
+          0.0005886040000291359,
+          0.0006112039999948138,
+          0.0005492570000455999,
+          0.0006542179999655673,
+          0.0006023079999977199,
+          0.000527018000013868,
+          0.0005186839999851145,
+          0.0005389890000060404,
+          0.0005010329999777241,
+          0.0005809809999846038,
+          0.0005318259999853581,
+          0.0005594950000045174,
+          0.0005297329999507383,
+          0.0006000540000172805,
+          0.000413702999992438,
+          0.09853003899996793,
+          0.0005672469999922214,
+          0.0016177379999930963,
+          0.0007055760000298505,
+          0.0007938690000059978,
+          0.0008194719999892186,
+          0.0006791010000029019,
+          0.0006348640000055639,
+          0.0006132170000228143,
+          0.0005860799999481969,
+          0.0005711039999596323,
+          0.0005317670000408725,
+          0.0005756319999932202,
+          0.0005412020000221673,
+          0.0006487980000429161,
+          0.0006023579999805406,
+          0.0005888350000304854,
+          0.0005693909999990865,
+          0.0005645730000196636,
+          0.0005572700000016084,
+          0.0005721659999835538,
+          0.0005802399999765839,
+          0.0006539170000223749,
+          0.00041541600000982726,
+          0.09664625999999998,
+          0.0006544050000343304,
+          0.0017287439999904564,
+          0.0007326200000079552,
+          0.0006375400000138143,
+          0.0007029739999779849,
+          0.0005873639999549596,
+          0.0011299699999653967,
+          0.0006031920000282298,
+          0.0005777169999987564,
+          0.0005821849999847473,
+          0.0005927230000111194,
+          0.0007141520000004675,
+          0.0005050920000257975,
+          0.0005136560000096324,
+          0.0005206179999959204,
+          0.000695260000043163,
+          0.0006246680000003835,
+          0.0004679380000425226,
+          0.00044150200000103723,
+          0.0007380540000099245,
+          0.0007226879999961966,
+          0.0006148209999992105,
+          0.00041169100001070547,
+          0.08791975499997307,
+          0.0006235060000108206,
+          0.0023403200000302604,
+          0.0006989560000079109,
+          0.0006247579999580921,
+          0.0005948969999849396,
+          0.0005876339999986158,
+          0.0005669990000001235,
+          0.0005624709999665356,
+          0.0005354439999791794,
+          0.0005353140000465828,
+          0.0005469040000321002,
+          0.0005623799999625589,
+          0.0004995120000330644,
+          0.000524846000018897,
+          0.0005079070000419961,
+          0.00047066199999790115,
+          0.0004726559999994606,
+          0.00046889899999769113,
+          0.0005296339999745214,
+          0.0005428669999787417,
+          0.0005514719999837325,
+          0.0005448910000040996,
+          0.0004419229999825802,
+          0.08616130999996585,
+          0.0005175029999691105,
+          0.0015855069999588522,
+          0.0006952900000101181,
+          0.0006471669999541518,
+          0.0006698160000269127,
+          0.0006165439999676892,
+          0.0006054649999782669,
+          0.000544829999967078,
+          0.0005727079999928719,
+          0.0005928029999608952,
+          0.0005457620000015595,
+          0.0005323789999920336,
+          0.0005217699999775505,
+          0.000515549999988707,
+          0.000529624000023432,
+          0.00048210199997811287,
+          0.0004598529999952916,
+          0.00046025400001781236,
+          0.0005653759999972863,
+          0.0005349029999592858,
+          0.0009346329999857517,
+          0.0005959779999784587,
+          0.00041172100003450396,
+          0.06614072799999349,
+          0.0005266389999860621,
+          0.0018294969999601562,
+          0.0007160659999954078,
+          0.0006991970000171932,
+          0.0006494810000390316,
+          0.0005998759999670256,
+          0.000610774000051606,
+          0.0006102940000118906,
+          0.0005834770000205936,
+          0.0006440610000026936,
+          0.0006399549999969167,
+          0.0006260999999767591,
+          0.0005597559999728219,
+          0.000546694000036041,
+          0.0005356440000241491,
+          0.0004994919999603553,
+          0.0005075159999705647,
+          0.0005233630000134326,
+          0.0005151589999741191,
+          0.000507756999979847,
+          0.0005039800000190553,
+          0.0005171729999915442,
+          0.00041698900002984374,
+          0.07279746699998668,
+          0.0005208590000052027,
+          0.0022393650000367415,
+          0.0006967229999759184,
+          0.0006576150000228154,
+          0.0006105539999907705,
+          0.0006371500000454944,
+          0.0009771260000093207,
+          0.0006185579999851143,
+          0.0006095319999985804,
+          0.0005495679999967251,
+          0.0005472550000149567,
+          0.0005483269999899676,
+          0.0005120339999962198,
+          0.0005007540000292465,
+          0.0004907770000386336,
+          0.0005814340000256379,
+          0.0005491580000125396,
+          0.00047127299995963767,
+          0.0005753230000209442,
+          0.0005284320000100706,
+          0.0005450510000173381,
+          0.0005164909999848533,
+          0.0004171499999756634,
+          0.06735060599999088,
+          0.0005815430000097876,
+          0.0024212889999830622,
+          0.0007305610000116758,
+          0.0006517950000102246,
+          0.0006530570000222724,
+          0.0009993449999683435,
+          0.0005619700000352168,
+          0.0005438289999801782,
+          0.0005589950000057797,
+          0.0005386899999848538,
+          0.0005100109999602864,
+          0.0005860210000037114,
+          0.0005102409999722113,
+          0.0005146579999859568,
+          0.0005007039999895824,
+          0.0004778549999855386,
+          0.0005059829999822796,
+          0.0004732770000259734,
+          0.0005647250000038184,
+          0.0006089209999800005,
+          0.0005416340000010678,
+          0.0005229420000318896,
+          0.0004069220000246787,
+          0.045794294000018,
+          0.000648979999994026,
+          0.0017502410000247437,
+          0.0006633549999719435,
+          0.0008294309999996585,
+          0.0007051869999941118,
+          0.0005774559999736084,
+          0.0006989169999656042,
+          0.0005374469999992471,
+          0.000567379000017354,
+          0.0005468339999765703,
+          0.0005690520000030119,
+          0.0005369970000401736,
+          0.0005286720000299283,
+          0.0005320079999933114,
+          0.0005430979999800911,
+          0.0005422560000170051,
+          0.0005198869999958333,
+          0.0005210600000395971,
+          0.0004758710000487554,
+          0.00045815099997525977,
+          0.00048356500002455505,
+          0.00048160099998995065,
+          0.0004159879999861005,
+          0.03938179700003275,
+          0.0006380610000178422,
+          0.0027756900000213136,
+          0.0006776699999591074,
+          0.0006735630000207493,
+          0.0006311799999707546,
+          0.0006259699999873192,
+          0.0006137200000466692,
+          0.0010497410000311902,
+          0.0005772160000105941,
+          0.000559014999964802,
+          0.0005711759999940114,
+          0.000785204999999678,
+          0.0007480900000018664,
+          0.0005101600000330109,
+          0.0004817509999952563,
+          0.00046936999996205486,
+          0.0004686789999936991,
+          0.00043381899996575157,
+          0.000555157999997391,
+          0.0004886429999828579,
+          0.00048744100001840707,
+          0.000505993999979637,
+          0.00041985399997201966,
+          0.0262313069999891,
+          0.00144079699998656,
+          0.0006394669999849611,
+          0.0006375640000442218,
+          0.0005960309999863966,
+          0.001153935999980149,
+          0.0005650269999932789,
+          0.0005454029999896193,
+          0.0005472459999964485,
+          0.0005201189999866074,
+          0.000564375999999811,
+          0.0005388110000126289,
+          0.0005093489999694611,
+          0.0005295249999903717,
+          0.0004766530000210878,
+          0.0004507070000272506,
+          0.00044471699999348857,
+          0.00043496000000686763,
+          0.00044725099996867357,
+          0.0004393880000179706,
+          0.0004378749999887077,
+          0.0008223259999908805,
+          0.00046886899997389264,
+          0.000405679000039072,
+          0.02107504000002791,
+          0.0013041579999821806,
+          0.000614804000008462,
+          0.0006042459999662242,
+          0.000568452999971214,
+          0.0005337230000463933,
+          0.0005577450000373574,
+          0.0004965069999798288,
+          0.0005189169999653132,
+          0.00048764199999595803,
+          0.0008629079999877831,
+          0.000507536999975855,
+          0.00048054000001229724,
+          0.00045920299999124836,
+          0.0004522199999996701,
+          0.0004778549999855386,
+          0.0004469809999818608,
+          0.000431083000023591,
+          0.0004350810000346428,
+          0.0004575399999566798,
+          0.00045297299999447205,
+          0.0004800990000148886,
+          0.0005655289999708657,
+          0.0004456799999843497,
+          0.007574197999986154,
+          0.002590512999972816,
+          0.0004919309999991128,
+          0.0004690600000003542,
+          0.0004906890000029307,
+          0.0004550759999801812,
+          0.00044031999999560867,
+          0.00042866999996249433,
+          0.00042955100002473046,
+          0.0009354360000202178,
+          0.0005118850000371822,
+          0.0004346099999565922,
+          0.00044273399998928653,
+          0.0004217579999590271,
+          0.00040837400001692004,
+          0.0004160379999689212,
+          0.000431865999985348,
+          0.000390353000000232,
+          0.00039972000001853303,
+          0.000396192999971845,
+          0.00048300500003506386,
+          0.0005037819999529347,
+          0.0003849139999942963
+        ],
+        []
+      ],
+      "actions_sha256": "ce55481549a25dffe2c28c3cdd1f92f385348c5e0212005b95f7bdbd53d65f29",
+      "candidate": "C05_R05",
+      "cash": [
+        159397.0,
+        3000.0
+      ],
+      "child_max_rss_kib": 33400,
+      "expected_actions_sha256": "ce55481549a25dffe2c28c3cdd1f92f385348c5e0212005b95f7bdbd53d65f29",
+      "expected_cash": 159397.0,
+      "margin": 156397.0,
+      "max_rss_kib": 49704,
+      "opponent": "PASS",
+      "opponent_cash": 3000.0,
+      "own_cash": 159397.0,
+      "replay_sha256": "7a4589d38c0434db550d40a2542e00c30c391a078665a967de0922b2479433c4",
+      "reproduction_matches": true,
+      "seat": 0,
+      "seconds": 3.738629807000052,
+      "seed": 1260184043,
+      "steps": 719,
+      "tie": false,
+      "valid": true,
+      "win": true
+    },
+    {
+      "action_seconds": [
+        [],
+        [
+          0.039295893000030446,
+          0.0005400850000114588,
+          0.0004198650000262205,
+          0.0004243019999989883,
+          0.00041194099998165257,
+          0.00038904100000536346,
+          0.0003838220000034198,
+          0.0005047630000376557,
+          0.0003811060000202815,
+          0.0005696169999964695,
+          0.0005826299999966977,
+          0.0005602200000112134,
+          0.0005542000000104963,
+          0.0005447629999935089,
+          0.0005574959999989915,
+          0.000611639999988256,
+          0.0005575250000333654,
+          0.0006077329999811809,
+          0.0005841120000127376,
+          0.0005446330000040689,
+          0.0006893560000094112,
+          0.0006091360000368695,
+          0.0005613319999611122,
+          0.00037265199995317744,
+          0.022741338999992422,
+          0.0004635509999957321,
+          0.00040015999996967366,
+          0.0003743249999956788,
+          0.00040253400004530704,
+          0.00038915099997893776,
+          0.0004128229999764699,
+          0.00040666099999953076,
+          0.0003917749999686748,
+          0.0003876480000144511,
+          0.0004146549999859417,
+          0.00039572200000748126,
+          0.00036983699999382225,
+          0.0003836509999928239,
+          0.00036533899998403285,
+          0.0003553320000264648,
+          0.00035595200000670957,
+          0.0003559930000278655,
+          0.00036237400001937203,
+          0.0003507140000351683,
+          0.0003495610000072702,
+          0.0005255089999991469,
+          0.0005737240000485144,
+          0.00035588299999744777,
+          0.028199707999988277,
+          0.0005134390000307576,
+          0.00046601600001849874,
+          0.00045188100000359555,
+          0.0004234410000094613,
+          0.00039522100001931904,
+          0.00040011999999478576,
+          0.00043404899997767643,
+          0.00038260899998476816,
+          0.0003790030000345723,
+          0.00038843999999471635,
+          0.0003767489999972895,
+          0.0003662809999696037,
+          0.0003662709999616709,
+          0.0003740750000247317,
+          0.0003643279999892002,
+          0.00036888500000031854,
+          0.0003658399999721951,
+          0.00037040799998067087,
+          0.000365880999993351,
+          0.0003612719999637193,
+          0.0003798040000333458,
+          0.0005677429999764172,
+          0.00037110900001380287,
+          0.03250273300000117,
+          0.00048044099997923695,
+          0.00039181599998983074,
+          0.00037412500000755244,
+          0.00037881299999753537,
+          0.0004355819999659616,
+          0.00042357099999890124,
+          0.00036913599996069024,
+          0.00036122199998089854,
+          0.0003616230000034193,
+          0.0003840919999902326,
+          0.00036153299998886723,
+          0.00039100400005054325,
+          0.00039410900001257687,
+          0.0003581770000096185,
+          0.0003598590000137847,
+          0.00038151799998331626,
+          0.00037314299999025025,
+          0.0003677830000015092,
+          0.00043394900001203496,
+          0.0003492409999807933,
+          0.00035815699999375283,
+          0.0003476680000176202,
+          0.00038517399997317625,
+          0.028475485999990724,
+          0.000919900000042162,
+          0.0006295410000234369,
+          0.0004932030000190935,
+          0.00045630800002527394,
+          0.000439238000012665,
+          0.00046186800000214134,
+          0.00045923300001504685,
+          0.00041904299996531336,
+          0.0004449990000239268,
+          0.0004533840000249256,
+          0.0004332180000119479,
+          0.00043334800000138785,
+          0.0005226650000054178,
+          0.0005061650000470763,
+          0.0004958170000008977,
+          0.0004977709999707258,
+          0.0004888759999630565,
+          0.00047952900001746457,
+          0.0004746210000234896,
+          0.0005733229999691503,
+          0.0004759329999615147,
+          0.000489387000015995,
+          0.0003561730000001262,
+          0.021625656000026083,
+          0.0007778809999763325,
+          0.0004841569999598505,
+          0.0004248230000030162,
+          0.00042395200000555633,
+          0.0004069920000233651,
+          0.00038953199998559285,
+          0.0003777609999815468,
+          0.00039389899995967426,
+          0.00038689699999849836,
+          0.00037835199998426106,
+          0.00039951899998413865,
+          0.00036909599998580234,
+          0.00036713299999746596,
+          0.00036597000001847846,
+          0.00036400699997329866,
+          0.0003658400000290385,
+          0.0003712989999939964,
+          0.0003796940000029281,
+          0.0003632859999811444,
+          0.0003479480000123658,
+          0.00035927900000842783,
+          0.00035638399998561,
+          0.00045903299997007707,
+          0.05520656500004861,
+          0.0009005080000292764,
+          0.0004955380000524201,
+          0.000470263000011073,
+          0.00044713399995544023,
+          0.0004382179999993241,
+          0.000556985999992321,
+          0.0004539059999615347,
+          0.00044962800001258074,
+          0.00040918700000247554,
+          0.0004158579999966605,
+          0.00041249299999890354,
+          0.0004140949999964505,
+          0.00042747899999540095,
+          0.0003879299999880459,
+          0.0004048189999821261,
+          0.0003847540000379013,
+          0.0003750969999600784,
+          0.00036392699996667943,
+          0.0003753169999640704,
+          0.0004111700000066776,
+          0.0003666119999934381,
+          0.00036706399998820416,
+          0.0003583879999951023,
+          0.0900190079999561,
+          0.0018174450000287834,
+          0.0004933449999953154,
+          0.00045624999995652615,
+          0.0004312560000130361,
+          0.0008260270000164383,
+          0.00044242499996016704,
+          0.00041876299997056776,
+          0.0009298090000129378,
+          0.00047632500002237066,
+          0.00042336199999226665,
+          0.00040942800001175783,
+          0.0003940899999861358,
+          0.00038908199996967596,
+          0.0003957039999704648,
+          0.00039307899999130314,
+          0.0004076540000141904,
+          0.00039449100000865656,
+          0.0003850840000154676,
+          0.00040771499999436855,
+          0.0003708090000031916,
+          0.0006450000000199907,
+          0.000580056999979206,
+          0.0003694270000096367,
+          0.11785387700001593,
+          0.0010435890000053405,
+          0.0005250899999964531,
+          0.0005041229999847019,
+          0.000493333999997958,
+          0.00047804799999084935,
+          0.0004800610000188499,
+          0.0004630909999718824,
+          0.0009671440000147413,
+          0.0005515459999969607,
+          0.00048607100001163417,
+          0.0004618090000008124,
+          0.000458083000012266,
+          0.0004414539999970657,
+          0.0004318470000157504,
+          0.000429813000039303,
+          0.0004030569999713407,
+          0.00043893900004832176,
+          0.0004001319999815678,
+          0.0006169309999677353,
+          0.0005764800000065406,
+          0.0008235930000068947,
+          0.0005431509999880291,
+          0.00041759199996249663,
+          0.15262841300000218,
+          0.0004623500000207059,
+          0.00221776600000112,
+          0.0006085859999984677,
+          0.0005745370000340699,
+          0.0006012129999817262,
+          0.0005754990000355065,
+          0.0005207730000051924,
+          0.0004968800000142437,
+          0.0006965009999930771,
+          0.00047498300000370364,
+          0.0005821999999966465,
+          0.0005796760000293943,
+          0.0006823559999702411,
+          0.0005658809999999903,
+          0.0005318109999734588,
+          0.0006587139999965075,
+          0.0006465129999924102,
+          0.0006054110000377477,
+          0.0006528340000500066,
+          0.0006193350000103237,
+          0.0006555289999710112,
+          0.0005954630000246652,
+          0.00040240499998844825,
+          0.1630670319999581,
+          0.0005784830000266084,
+          0.0009805880000044453,
+          0.0006166900000152964,
+          0.0005731740000101126,
+          0.0005527989999905003,
+          0.0005365399999845977,
+          0.0005832310000073448,
+          0.0004917509999700087,
+          0.0004968210000129147,
+          0.0005168759999492067,
+          0.00048718400000780093,
+          0.0005117170000517035,
+          0.000483486999996785,
+          0.0004551069999934043,
+          0.0004385280000178682,
+          0.0004348120000372546,
+          0.0005126479999830735,
+          0.0004455010000015136,
+          0.00042180900004495925,
+          0.00042430300004525634,
+          0.0004132839999897442,
+          0.00042400299997780166,
+          0.0003881199999682394,
+          0.10898312500000884,
+          0.000560511999992741,
+          0.0011890040000253066,
+          0.0005676339999922675,
+          0.0005689970000162248,
+          0.0005404170000247177,
+          0.0005356190000043171,
+          0.0005475090000004457,
+          0.0005165150000152607,
+          0.0005122480000068208,
+          0.0004834770000456956,
+          0.0004805620000070121,
+          0.0004751529999680315,
+          0.0004772570000000087,
+          0.00050655799998367,
+          0.0004755240000235972,
+          0.0004744820000155414,
+          0.00043992100000878054,
+          0.00042280000002392626,
+          0.00042421299997386086,
+          0.0004043980000005831,
+          0.00040680199998632816,
+          0.0003951719999690795,
+          0.0003909249999765052,
+          0.17607605900002454,
+          0.000608386999999766,
+          0.002895384999987982,
+          0.0006597679999913453,
+          0.0006417260000262104,
+          0.0006526650000182599,
+          0.0008496510000099988,
+          0.0007731260000127804,
+          0.0008055490000060672,
+          0.0007749100000182807,
+          0.0007240310000042882,
+          0.0007161760000258255,
+          0.0007014509999976326,
+          0.000712620000001607,
+          0.0006062940000219896,
+          0.0006211499999722037,
+          0.0006219809999947756,
+          0.0006238749999738502,
+          0.0006018260000359987,
+          0.000587499999994634,
+          0.0006181239999705213,
+          0.0006396219999942332,
+          0.0007903769999870747,
+          0.00041495800002167016,
+          0.15474850300000753,
+          0.0005767819999960011,
+          0.0014387340000325821,
+          0.0005656420000264006,
+          0.0005671349999829545,
+          0.0005438540000000103,
+          0.0005869800000368741,
+          0.0005267939999953342,
+          0.0005395260000113922,
+          0.0005004580000331771,
+          0.0005003179999789609,
+          0.0005232579999869813,
+          0.0004847110000127941,
+          0.00047558400001435075,
+          0.0004661380000356985,
+          0.000456831000008151,
+          0.0004549689999748807,
+          0.00044492099999615675,
+          0.0006093500000474705,
+          0.0006039790000045286,
+          0.0006052819999808889,
+          0.0006158809999874393,
+          0.0006136060000017096,
+          0.00039027499997246196,
+          0.08644064699996079,
+          0.0006131349999805025,
+          0.0015762859999881584,
+          0.0006296349999956874,
+          0.0007415709999918363,
+          0.0005892229999631127,
+          0.0009004700000332377,
+          0.000797599000009086,
+          0.0006289529999889965,
+          0.0005605929999887849,
+          0.0005303899999944406,
+          0.0005199120000156654,
+          0.0005117780000318817,
+          0.0004706159999727788,
+          0.0004648159999760537,
+          0.0008416569999667445,
+          0.0007339069999829917,
+          0.0006939179999676526,
+          0.0006523939999851791,
+          0.0006596370000124807,
+          0.0006522339999719406,
+          0.0006427469999721325,
+          0.000598760000002585,
+          0.0003919779999819184,
+          0.11801358000002438,
+          0.0005227070000159983,
+          0.0024495380000075784,
+          0.0006415060000222184,
+          0.0006908920000228136,
+          0.0006345529999975952,
+          0.0006185949999917284,
+          0.0005949039999677552,
+          0.0005434629999854224,
+          0.0005129399999646012,
+          0.0005065990000048259,
+          0.0004815849999886268,
+          0.000750060999962443,
+          0.0006644159999495969,
+          0.0007070600000247396,
+          0.0005858879999891542,
+          0.0005474209999647428,
+          0.0005873709999946186,
+          0.0005670150000014473,
+          0.0005643200000235993,
+          0.0007539329999985966,
+          0.0006223520000503413,
+          0.0006170919999703983,
+          0.00040620199996510564,
+          0.1173434379999776,
+          0.000514071999987209,
+          0.0013043779999861727,
+          0.0006491690000416384,
+          0.0006084480000367876,
+          0.0006359349999911501,
+          0.0006459740000082093,
+          0.0005472000000281696,
+          0.0005551339999669835,
+          0.0005617250000113927,
+          0.0005117879999829711,
+          0.0005125689999658789,
+          0.0004954190000034941,
+          0.00046169000000872984,
+          0.0004637139999772444,
+          0.00046525599998403777,
+          0.0004475449999858938,
+          0.00045560899997099114,
+          0.00042445499997256775,
+          0.0005509859999506261,
+          0.0005683370000042487,
+          0.0005762409999761076,
+          0.000600784000027943,
+          0.00042881199999555975,
+          0.13116420099999004,
+          0.0005203030000302533,
+          0.0028140840000219214,
+          0.0007185509999771966,
+          0.0006820770000217635,
+          0.0006740030000287334,
+          0.0006466050000426549,
+          0.0011105680000014218,
+          0.000629914999990433,
+          0.0005696199999647433,
+          0.0005521189999626586,
+          0.0005387150000046859,
+          0.0005237789999910092,
+          0.000514482000028238,
+          0.0004840690000378345,
+          0.00046566700001449135,
+          0.0005975980000130221,
+          0.0006125649999830785,
+          0.0005679369999711525,
+          0.0005709920000072088,
+          0.0005833139999822379,
+          0.0006594769999992423,
+          0.0006393320000483982,
+          0.000449358000025768,
+          0.13877471299997524,
+          0.0006135680000056709,
+          0.0019160519999559256,
+          0.000673172999995586,
+          0.0006554209999762861,
+          0.0006661909999934323,
+          0.0005859999999984211,
+          0.0006192679999799111,
+          0.0006026990000123078,
+          0.0008460969999646295,
+          0.0007510099999876729,
+          0.0006836809999981597,
+          0.0007066919999942911,
+          0.0006551210000225183,
+          0.0006346650000068621,
+          0.000606765999975778,
+          0.000517379000029905,
+          0.00047045600001638377,
+          0.0004573239999672296,
+          0.00043623599998454665,
+          0.0005222579999895061,
+          0.0006233549999592469,
+          0.000733738999997513,
+          0.0006659190000277704,
+          0.12791049499998053,
+          0.0006168639999941661,
+          0.0020861350000132006,
+          0.0007155270000112068,
+          0.0006767990000184909,
+          0.000608268999997108,
+          0.000625048000017614,
+          0.0005887250000000677,
+          0.0005639100000394137,
+          0.0005466609999871253,
+          0.0005573789999857581,
+          0.0010740470000314417,
+          0.0006446919999802958,
+          0.0005323249999946711,
+          0.0005378349999887178,
+          0.00048553300001685784,
+          0.0006888300000014169,
+          0.00048251800001253287,
+          0.00048075500001232285,
+          0.0006133979999844996,
+          0.0007173100000272825,
+          0.0006497310000099787,
+          0.0006309880000117118,
+          0.0004228529999750208,
+          0.131172835999962,
+          0.0006254090000084034,
+          0.0012390260000074704,
+          0.0006802550000202245,
+          0.0006665509999947972,
+          0.0007652250000091954,
+          0.0006508839999810334,
+          0.0005965380000247933,
+          0.0005669860000239169,
+          0.000568649000001642,
+          0.000533286000006683,
+          0.0008970159999535099,
+          0.0005125809999526609,
+          0.0005407200000036028,
+          0.0004925449999859666,
+          0.0005121089999988726,
+          0.0004587959999753366,
+          0.00045135300001675205,
+          0.00046623000002909976,
+          0.0005946550000430761,
+          0.0009009330000253613,
+          0.0006397140000444779,
+          0.0005943639999941297,
+          0.0004049810000310572,
+          0.14637371200001326,
+          0.0006774299999960931,
+          0.0018175829999904636,
+          0.0007042870000191215,
+          0.0006926070000190521,
+          0.0006810559999621546,
+          0.0006183570000075633,
+          0.0006279229999677227,
+          0.0005868609999879482,
+          0.000578786999994918,
+          0.0005566380000345816,
+          0.0005623679999757769,
+          0.0005412609999666529,
+          0.0005250430000387496,
+          0.0005167479999954594,
+          0.0004988570000250547,
+          0.0005149439999740935,
+          0.0005878830000369817,
+          0.0005816920000256687,
+          0.000550366999959806,
+          0.0005396079999968606,
+          0.0005823729999860916,
+          0.0005319839999629039,
+          0.0004145890000017971,
+          0.10891281900001104,
+          0.0005594329999780712,
+          0.0023875050000015108,
+          0.0008746059999680256,
+          0.0007531030000222927,
+          0.000685844999964047,
+          0.0006630450000102428,
+          0.0006803759999911563,
+          0.0006555119999802628,
+          0.0006570139999553248,
+          0.0006836709999902268,
+          0.0006827889999954095,
+          0.0006149000000164051,
+          0.0006184669999811376,
+          0.0005759719999787194,
+          0.0005806199999938144,
+          0.0005730970000286106,
+          0.0005888739999591053,
+          0.0005576699999778612,
+          0.0005392379999875629,
+          0.0005334370000014133,
+          0.0005658040000184883,
+          0.0005118389999552164,
+          0.0004834499999901709,
+          0.10188318000001573,
+          0.0005425950000130797,
+          0.002003784999999425,
+          0.0007499399999915113,
+          0.0008079110000380751,
+          0.0006577769999580596,
+          0.0007445699999948374,
+          0.00062258500003054,
+          0.0006042629999569726,
+          0.0006044739999992998,
+          0.00058482899999035,
+          0.0007218799999577641,
+          0.0005393690000232709,
+          0.0005344399999671623,
+          0.0009461450000003424,
+          0.0005333280000172635,
+          0.0005468020000307661,
+          0.0005079430000023422,
+          0.0005413420000195401,
+          0.000537855999994008,
+          0.0005334680000146363,
+          0.0005352310000148464,
+          0.0005305430000248634,
+          0.00040812800000367133,
+          0.08976675200000273,
+          0.0006747269999891614,
+          0.00196423599999207,
+          0.0007053609999729815,
+          0.0007147779999741033,
+          0.0006830410000020493,
+          0.0006609129999901597,
+          0.0006429310000157784,
+          0.0005917809999687051,
+          0.0006186389999811581,
+          0.0005689509999911024,
+          0.0005355319999580388,
+          0.0005408610000472436,
+          0.0005190730000208532,
+          0.0005076830000234622,
+          0.00048582499999838547,
+          0.000482067999996616,
+          0.00046961599997530357,
+          0.0005788679999909618,
+          0.0005033850000017992,
+          0.000547132999997757,
+          0.0004898109999658118,
+          0.0005197549999707007,
+          0.00039730899999312896,
+          0.09125746899997011,
+          0.000647159000038755,
+          0.0029884069999752683,
+          0.0006843639999942752,
+          0.0008612649999690802,
+          0.0007485470000005989,
+          0.0007721179999862215,
+          0.0006267519999596516,
+          0.0006177359999810506,
+          0.000594035000005988,
+          0.0005995450000000346,
+          0.0005503780000140068,
+          0.0006639780000341489,
+          0.0005455800000504496,
+          0.0005998450000106459,
+          0.0005023530000016763,
+          0.0004925360000243018,
+          0.00046502800000780553,
+          0.0005258859999912602,
+          0.0005297220000102243,
+          0.0005011220000028516,
+          0.0005120399999896108,
+          0.0005488049999939904,
+          0.0003992130000369798,
+          0.08312496800004965,
+          0.0006413579999957619,
+          0.0019302059999972698,
+          0.0006607830000007198,
+          0.0006587080000031165,
+          0.0005972509999878639,
+          0.0006535099999496197,
+          0.0005947770000034325,
+          0.0006224249999604581,
+          0.0005565490000094542,
+          0.0005635420000089653,
+          0.0005417930000248816,
+          0.0005419130000063888,
+          0.0005136940000056711,
+          0.0004949710000232699,
+          0.0004853039999943576,
+          0.0005204059999641686,
+          0.0004451830000107293,
+          0.00043165900001440605,
+          0.00048272899999801666,
+          0.00047080799998866496,
+          0.000563811999995778,
+          0.00047414399995204803,
+          0.0004428589999747601,
+          0.05526176299997587,
+          0.0005303230000208714,
+          0.00229012900001635,
+          0.0008924500000375701,
+          0.0006995500000357424,
+          0.0006416289999719993,
+          0.0006119170000147278,
+          0.0005886349999855156,
+          0.0006473079999977926,
+          0.0005610769999861986,
+          0.0005346709999685118,
+          0.0005124319999936233,
+          0.0008422810000183745,
+          0.0005712349999953403,
+          0.0004910239999844634,
+          0.0004876779999563041,
+          0.00048395200002460115,
+          0.0005672080000067581,
+          0.0004865660000064054,
+          0.0004752860000394321,
+          0.0004609310000205369,
+          0.0004458840000438613,
+          0.0004431500000237065,
+          0.00045290700001032747,
+          0.02891349399999399,
+          0.001165129000014531,
+          0.0005735389999586005,
+          0.0005655049999973016,
+          0.0005238619999659022,
+          0.000555146000010609,
+          0.0005217579999907684,
+          0.0005243019999738863,
+          0.0005108879999511373,
+          0.0005469619999871611,
+          0.0004870970000183661,
+          0.0004761580000263166,
+          0.0004614019999849006,
+          0.0004495410000231459,
+          0.0004418370000394134,
+          0.0004539079999972273,
+          0.000435867000021517,
+          0.0004380400000059126,
+          0.00041727400002855575,
+          0.00042385599999761325,
+          0.00043549600002279476,
+          0.00047815099998160804,
+          0.00042202299999871684,
+          0.00039079700002275786,
+          0.0073733099999913065,
+          0.0025256629999717006,
+          0.0004743640000128835,
+          0.0004512739999995574,
+          0.0008532109999919157,
+          0.00041563199999927747,
+          0.000457104000020081,
+          0.00047934400004123745,
+          0.0004185359999837601,
+          0.00039863200004219834,
+          0.0007111109999868859,
+          0.0004120550000266121,
+          0.0003922899999793117,
+          0.0003941630000099394,
+          0.0008248710000202664,
+          0.0003895849999935308,
+          0.00039698799997722745,
+          0.000450431999979628,
+          0.0004191679999507869,
+          0.00038566899996794746,
+          0.00036998000001631226,
+          0.00037813500000538625,
+          0.00037297599999419617
+        ]
+      ],
+      "actions_sha256": "60fc70da54995e8a1f9d8b7e2d73ba9bdbb8d53439baa6b021cfbccbb8c12618",
+      "candidate": "C05_R05",
+      "cash": [
+        3000.0,
+        248081.0
+      ],
+      "child_max_rss_kib": 33508,
+      "expected_actions_sha256": "60fc70da54995e8a1f9d8b7e2d73ba9bdbb8d53439baa6b021cfbccbb8c12618",
+      "expected_cash": 248081.0,
+      "margin": 245081.0,
+      "max_rss_kib": 56620,
+      "opponent": "PASS",
+      "opponent_cash": 3000.0,
+      "own_cash": 248081.0,
+      "replay_sha256": "e0799c8ff81136d6f847e2a59ec3ea1750727879e3e9f42c7abd2f959acff0f2",
+      "reproduction_matches": true,
+      "seat": 1,
+      "seconds": 4.296218975000045,
+      "seed": 1260184043,
+      "steps": 719,
+      "tie": false,
+      "valid": true,
+      "win": true
+    }
+  ],
+  "original_native_sha256": "393e207e320e78516f436c5017d91ecd04fe1978321160aaf469bccc3ec5e9fe",
+  "local_native_sha256": "cd392768788630c6f981ed6e494713f7c9ffdc6a12ffeaf15b4b2d4363177c28",
+  "seed_file": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/AUTHOR_USED_SEEDS.json",
+  "known_seed_count": 1078,
+  "controller_schema_repairs": [
+    "Replay step denotes pre-action index, whereas full state step denotes post-action index. Preserved failed checker before repair.",
+    "Panel jobs field is a list; preserved failed checker before repair."
+  ],
+  "limits": [
+    "Author validation does not establish controller qualification or competitive acceptance.",
+    "Compiler and unit suites completed before two-worker replay audit.",
+    "Statistical bootstrap interval was not independently recomputed; all actual game cash was verified."
+  ]
+}

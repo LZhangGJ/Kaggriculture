@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-09-13T22:03:23.244473+00:00",
+  "method": "Read actual delivered ZIP members, not staged source directories",
+  "artifacts_rehashed": 16,
+  "result_receipts": 647,
+  "start_receipts": 647,
+  "full_replay_paths": 655,
+  "all_result_replay_hash_links_pass": true,
+  "all_terminal_receipts_719_DONE_and_reward_cash": true,
+  "runtime_members_match_frozen_source_map": true,
+  "validation_means_recomputed_from_zipped_results": {
+    "validation_candidate": 207898.15625,
+    "validation_baseline": 195514.40625
+  },
+  "validation_panels_exact_declared_cells": true,
+  "known1062_excluded": true,
+  "source_frozen_before_any_validation": true,
+  "no_games_builds_or_research_run_by_this_check": true
+}

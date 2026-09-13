@@ -1,0 +1,190 @@
+{
+  "completed_utc": "2026-09-13T22:08:45.425460+00:00",
+  "runtime_frozen_utc": "2026-09-13T22:02:05.055488+00:00",
+  "runtime_source_digest": "e4dd2d34f625f2537cd888351ce599543666dd91b03b9720abd49eae38fa7be4",
+  "new_game_folders": 582,
+  "game_parts": 11,
+  "all_new_games_exactly_once": true,
+  "archives": [
+    {
+      "file": "C02_ROUND05_runtime.zip",
+      "path": "/mnt/data/C02_ROUND05_runtime.zip",
+      "bytes": 667039,
+      "sha256": "dfecc43ed0dfbefdde9dd8d9e7f85694744ea47e130d922886cf32d91b639ddc",
+      "verified_crc_and_all_members": true,
+      "kind": "runtime",
+      "same_bytes_as_accepted_checkpoint": true
+    },
+    {
+      "file": "C02_ROUND05_metadata.zip",
+      "path": "/mnt/data/C02_ROUND05_metadata.zip",
+      "bytes": 14073686,
+      "sha256": "64010de45b1645e46ed3ad0bcf4b6ce817ab6fc30eab334693bfd5de8e25a46c",
+      "members": 900,
+      "verified_crc_and_all_members": true,
+      "kind": "metadata"
+    },
+    {
+      "file": "C02_ROUND05_evidence_01.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_01.zip",
+      "bytes": 47358614,
+      "sha256": "2c541f7ed98fc7d6a4fa8acba4ec964e866b5208e815af0b6c3b023a78546f0a",
+      "members": 220,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 54,
+      "panels": [
+        "baseline_current",
+        "baseline_old1"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_02.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_02.zip",
+      "bytes": 47753025,
+      "sha256": "ad5303020b807c987e5605d7c22abeb4bc4e54e8fbe37fcf19e5ebbfdf9fa425",
+      "members": 225,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 55,
+      "panels": [
+        "baseline_old1",
+        "baseline_old2",
+        "combined_current"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_03.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_03.zip",
+      "bytes": 47309020,
+      "sha256": "3b51a730ab46d71312a6d0ac39e8775baa9f008f18fcd00eb5593e039afc04ae",
+      "members": 225,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 55,
+      "panels": [
+        "combined_current",
+        "direct_core_current",
+        "direct_core_old1"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_04.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_04.zip",
+      "bytes": 47426597,
+      "sha256": "70651cb72cf1479f426807f7b8b8970a2e0e898be0402ce97fcf7fe543f8bb2d",
+      "members": 228,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 56,
+      "panels": [
+        "direct_core_old1",
+        "direct_core_old2"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_05.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_05.zip",
+      "bytes": 46888139,
+      "sha256": "228b8c78537d3221cc73c948501958b3543e7876d3f3137d59f052afd6f9587e",
+      "members": 229,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 56,
+      "panels": [
+        "direct_core_old2",
+        "direct_receipt_current",
+        "direct_receipt_old1"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_06.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_06.zip",
+      "bytes": 47317105,
+      "sha256": "4998ccce7d244cd0bde2f98f87e2c85daf7aaebeaa9a9eb1d25ffb1e00cef8c0",
+      "members": 226,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 55,
+      "panels": [
+        "direct_receipt_old1",
+        "direct_receipt_old2",
+        "lifecycle_final",
+        "maturity_current"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_07.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_07.zip",
+      "bytes": 47592593,
+      "sha256": "0603c97788025df860c9b3909e897aa2d0441e177e90c6efbba283486de2d207",
+      "members": 220,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 54,
+      "panels": [
+        "maturity_current",
+        "no_unfertilized_current"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_08.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_08.zip",
+      "bytes": 47486228,
+      "sha256": "cf41c2f4b2213dd0774cd8efcf3b867868690a64cc77a9ad40a1b01f37ada67d",
+      "members": 221,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 54,
+      "panels": [
+        "no_unfertilized_current",
+        "prefix_current",
+        "receipt_lag_current"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_09.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_09.zip",
+      "bytes": 47717402,
+      "sha256": "f68c465814158c8f50e5857f4334101cbf5af272080f32014d3070d76f95c8b5",
+      "members": 221,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 54,
+      "panels": [
+        "receipt_lag_current",
+        "receipt_lag_old1",
+        "receipt_lag_old2"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_10.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_10.zip",
+      "bytes": 47292972,
+      "sha256": "06252e15dc4b5ef3a85c3d4517c116f43ba2e72371a1c8968b85e37da42b138e",
+      "members": 225,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 55,
+      "panels": [
+        "receipt_lag_old2",
+        "smoke_baseline",
+        "validation_baseline"
+      ]
+    },
+    {
+      "file": "C02_ROUND05_evidence_11.zip",
+      "path": "/mnt/data/C02_ROUND05_evidence_11.zip",
+      "bytes": 29093324,
+      "sha256": "59745c495916db085868cef6acbe02af72b5c35e2a9616f418c983f330d29161",
+      "members": 140,
+      "verified_crc_and_all_members": true,
+      "kind": "games",
+      "games": 34,
+      "panels": [
+        "validation_baseline",
+        "validation_final"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "author": "C04",
+  "round": 6,
+  "round_minutes": 60,
+  "known_seed_count": 1128,
+  "critical_pairs": 4,
+  "file": "C04_ROUND06_FEEDBACK.zip",
+  "bytes": 14545598,
+  "sha256": "5850e5a2479f88eb2ec0d3f70071727a66ea31696abca6dc7e286c1bdda926e4",
+  "dispatched": false
+}
