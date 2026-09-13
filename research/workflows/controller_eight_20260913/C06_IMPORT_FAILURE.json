@@ -1,0 +1,21 @@
+{
+  "author": "C06",
+  "round": 1,
+  "status": "incomplete_delivery_returned_for_repair",
+  "archive": "C06_round1_strategy.zip",
+  "bytes": 2583667,
+  "sha256": "d30e9f251449dc84a7efbd53f564efec6c2c2340ef52e45348376fccfef35bdd",
+  "crc_and_path_checks": "passed",
+  "extracted_files": 144,
+  "missing_evidence": [
+    "The report refers to research_snapshot, but the archive has no such directory.",
+    "audit/experiment_inventory.json is an empty array.",
+    "The claimed 16-game baseline cash result lacks the referenced author records."
+  ],
+  "claimed_mean_terminal_cash": 209142,
+  "claim_verified": false,
+  "fresh_controller_qualification": "not_run",
+  "action": "Asked the existing C06 ChatGPT 6 Pro author to repair delivery and run actual post-recovery tests within the original round deadline.",
+  "original_deadline_utc": "2026-09-13T18:45:58.765Z",
+  "preserve_original_archive": true
+}

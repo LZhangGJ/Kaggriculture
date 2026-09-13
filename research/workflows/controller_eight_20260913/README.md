@@ -2,11 +2,13 @@
 
 Eight independent ChatGPT 6 Pro chats began on 13 September 2026. Each received the same verified source bundle and a distinct research focus. Their first task is a complete strategy that averages at least 200,000 terminal cash against an inactive opponent across multiple seeds.
 
-This is a new campaign. C03 and C05 have delivered strategies. Both passed controller import and development reproduction checks. Fresh economic qualification, round-robin selection and competitive acceptance remain pending.
+This is a new campaign. C01, C03 and C05 passed controller import and development reproduction checks. C08 verification and C06 delivery repair are in progress; C02, C04 and C07 are still running. Fresh economic qualification, round-robin selection and competitive acceptance remain pending.
 
 - [Current deliveries, evidence and archive hashes](ROUND_01_DELIVERIES.md)
+- [C01 controller verification and recovery gaps](C01_IMPORT_VERIFICATION.json)
 - [C03 controller verification](C03_IMPORT_VERIFICATION.json)
 - [C05 controller verification](C05_IMPORT_VERIFICATION.json)
+- [C06 incomplete delivery and repair request](C06_IMPORT_FAILURE.json)
 - [Original strategy archives and controller verification packages](https://github.com/LZhangGJ/Kaggriculture/releases/tag/controller-eight-round01-20260913)
 
 - [Round plan and acceptance rules](ROUND_01_PLAN.md)
