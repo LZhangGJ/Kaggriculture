@@ -1,0 +1,53 @@
+{
+  "assets": [
+    {
+      "name": "C04_R03_candidate_v1_source_runtime.zip",
+      "sha256": "c209851332206a52d184a7fb1a5e3a888a30b75228fac5521bfa48cb76c9d0e9",
+      "bytes": 1690517,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part01.zip",
+      "sha256": "74b18c03d3a67661e3fc312c0bbfccfa474e307ca6c98dc3edf4167e3485c967",
+      "bytes": 13154151,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part02.zip",
+      "sha256": "04fb4e9851d0bcf53663cbe0d0a4d6bb65e1e6ec644f123973ad8d82866d1b8e",
+      "bytes": 43519683,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part03.zip",
+      "sha256": "84601c740967231b8683e0f8697e905fc464b7b2a10f8da7739cae899a277aa2",
+      "bytes": 43901445,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part04.zip",
+      "sha256": "b74ef0cc51f60ef21193581ef5d781f9b6604178706b3e97315cb84ec7a09957",
+      "bytes": 42376046,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part05.zip",
+      "sha256": "7412e2ee8836715259be4a84f7550a48d0fb76fa2b189a5e14bbb13461e55b77",
+      "bytes": 43518149,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_evidence.part06.zip",
+      "sha256": "923a25fa0cf857d265a49319e58ba767c0f14696368dcabc12101a796d7fed07",
+      "bytes": 30986773,
+      "remote_verified": true
+    },
+    {
+      "name": "C04_R03_final_source_runtime.zip",
+      "sha256": "a53432d39b4437466de436e2f6b89cc95fc3b999e9b19f3383f149f82f6f0f71",
+      "bytes": 1654399,
+      "remote_verified": true
+    }
+  ],
+  "total_release_assets": 45
+}
