@@ -1,0 +1,72 @@
+[
+  {
+    "author": "C01",
+    "file": "C01_ROUND02_FEEDBACK.zip",
+    "bytes": 1773817,
+    "sha256": "09d8f1b435df760b30477a7d3d39e327927228fef38e961f2875061ae241c3b6",
+    "round_minutes": 45,
+    "dispatched": true,
+    "start_utc": "2026-09-13T19:09:00.956Z",
+    "deadline_utc": "2026-09-13T19:54:00.956Z",
+    "model_observed": "ChatGPT 6 Pro",
+    "submission_observed": "Stop answering",
+    "task_file": "C01_ROUND02_TASK.md",
+    "same_author_chat": true
+  },
+  {
+    "author": "C02",
+    "file": "C02_ROUND02_FEEDBACK.zip",
+    "bytes": 1773429,
+    "sha256": "3a81219875fcd8991353336c664b50cc8cc7fef7b9777136908ed7fa6b940c6b",
+    "round_minutes": 45,
+    "dispatched": true,
+    "start_utc": "2026-09-13T19:09:33.786Z",
+    "deadline_utc": "2026-09-13T19:54:33.786Z",
+    "model_observed": "ChatGPT 6 Pro",
+    "submission_observed": "Stop answering",
+    "task_file": "C02_ROUND02_TASK.md",
+    "same_author_chat": true
+  },
+  {
+    "author": "C04",
+    "file": "C04_ROUND02_FEEDBACK.zip",
+    "bytes": 2643931,
+    "sha256": "699f2b3fa53204edce062ff45d6643fb6af9082669990d5aadf2102f6c692e59",
+    "round_minutes": 45,
+    "dispatched": true,
+    "start_utc": "2026-09-13T19:09:34.106Z",
+    "deadline_utc": "2026-09-13T19:54:34.106Z",
+    "model_observed": "ChatGPT 6 Pro",
+    "submission_observed": "Stop answering",
+    "task_file": "C04_ROUND02_TASK.md",
+    "same_author_chat": true
+  },
+  {
+    "author": "C06",
+    "file": "C06_ROUND02_FEEDBACK.zip",
+    "bytes": 1661510,
+    "sha256": "b550c2ecae5db57522b0a0c2dad587f8a852205f6c46073d0f8486097446ed68",
+    "round_minutes": 45,
+    "dispatched": true,
+    "start_utc": "2026-09-13T19:09:34.418Z",
+    "deadline_utc": "2026-09-13T19:54:34.418Z",
+    "model_observed": "ChatGPT 6 Pro",
+    "submission_observed": "Stop answering",
+    "task_file": "C06_ROUND02_TASK.md",
+    "same_author_chat": true
+  },
+  {
+    "author": "C07",
+    "file": "C07_ROUND02_FEEDBACK.zip",
+    "bytes": 1646279,
+    "sha256": "495a9817c6b8d70a8e8b84b4a714e2467e5ec69fda6cbcb0380ab52cf8ef9883",
+    "round_minutes": 45,
+    "dispatched": true,
+    "start_utc": "2026-09-13T19:09:34.752Z",
+    "deadline_utc": "2026-09-13T19:54:34.752Z",
+    "model_observed": "ChatGPT 6 Pro",
+    "submission_observed": "Stop answering",
+    "task_file": "C07_ROUND02_TASK.md",
+    "same_author_chat": true
+  }
+]

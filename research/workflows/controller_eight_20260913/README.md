@@ -2,7 +2,7 @@
 
 Eight independent ChatGPT 6 Pro chats began on 13 September 2026. Each received the same verified source bundle and a distinct research focus. Their first task is a complete strategy that averages at least 200,000 terminal cash against an inactive opponent across multiple seeds.
 
-All eight author rounds have ended. C01, C02, C03, C05, repaired C06 and C08 passed import checks. C02 missed its author economic holdout threshold. C04 recovered only the unchanged parent input archive, which the controller rebuilt and smoke-tested. C07 also passed import checks. All eight surviving entries are frozen, and the shared 256-game economic qualification is running on 16 newly generated seeds in both seats. Round-robin selection and competitive acceptance remain pending. See the delivery record for missing logs and parent fallbacks.
+All eight author rounds have ended. C01, C02, C03, C05, repaired C06 and C08 passed import checks. C02 missed its author economic holdout threshold. C04 recovered only the unchanged parent input archive, which the controller rebuilt and smoke-tested. C07 also passed import checks. All 256 shared economic qualification games completed with valid source and replay checks. C03 (209,496.65625), C05 (201,762.375) and C08 (211,787.5625) passed. C01, C02, C04, C06 and C07 started 45-minute economic revision rounds with source and replay evidence. Round-robin selection and competitive acceptance remain pending. See the delivery record for missing logs and parent fallbacks.
 
 - [Current deliveries, evidence and archive hashes](ROUND_01_DELIVERIES.md)
 - [C01 controller verification and recovery gaps](C01_IMPORT_VERIFICATION.json)
@@ -32,3 +32,7 @@ Formal competitive acceptance requires at least 1,306 strict wins from 1,536 pla
 The fixed-pool preflight completed all 24 games: one already-used seed, all 12 opponents and both seats. Four CPU workers took 24.73 seconds, with no errors and unchanged source hashes. This projects about 53 minutes for two 1,536-game panels at that measured throughput; revised strategies and other seeds may take longer. It does not establish competitive strength.
 
 The evaluator package includes all 46 pinned opponent runtime files, preserves their licenses and records exact source hashes. Original R2 retains the required native hash. Its original C++ build source is unavailable; the runtime is preserved unchanged. The package contains a reproduction note for paths that came from the original host.
+
+- [Shared qualification results and critical cases](QUALIFICATION_01_REPORT.md)
+- [Independent full-frame audit](QUALIFICATION_01_ANALYSIS.json)
+- [Revision round dispatches and deadlines](ROUND02_DISPATCHES.json)

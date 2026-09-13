@@ -1,0 +1,330 @@
+{
+  "C01": {
+    "accepted": false,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 196342.0625,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C02": {
+    "accepted": false,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 197116.4375,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C03": {
+    "accepted": true,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 209496.65625,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C04": {
+    "accepted": false,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 195548.0,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C05": {
+    "accepted": true,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 201762.375,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C06": {
+    "accepted": false,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 195548.0,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C07": {
+    "accepted": false,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 195548.0,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  },
+  "C08": {
+    "accepted": true,
+    "by_opponent": {
+      "PASS": {
+        "errors": 0,
+        "planned": 32,
+        "recorded": 32,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 32
+      }
+    },
+    "by_seat": {
+      "0": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      },
+      "1": {
+        "errors": 0,
+        "planned": 16,
+        "recorded": 16,
+        "strict_win_rate": 1.0,
+        "ties": 0,
+        "wins": 16
+      }
+    },
+    "complete": true,
+    "errors": 0,
+    "mean_terminal_cash": 211787.5625,
+    "planned": 32,
+    "ranking_eligible": true,
+    "recorded": 32,
+    "strict_win_rate": 1.0,
+    "ties": 0,
+    "valid": 32,
+    "wins": 32
+  }
+}

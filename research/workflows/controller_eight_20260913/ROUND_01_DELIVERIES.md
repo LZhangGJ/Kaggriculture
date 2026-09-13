@@ -1,19 +1,19 @@
 # Round 1 author deliveries
 
-All eight ChatGPT 6 Pro author rounds have ended. C01, C03, C05, repaired C06 and C08 passed source, record, build and development reproduction checks. C02 also passed import checks, including verification of its failed holdout. C07 also passed import checks. All eight surviving entries are ready for the shared controller panel. C04 recovered only the unchanged input archive; the controller rebuilt and smoke-tested that parent fallback. C04 has no surviving evidence of new author work.
+All eight ChatGPT 6 Pro author rounds have ended. C01, C03, C05, repaired C06 and C08 passed source, record, build and development reproduction checks. C02 also passed import checks, including verification of its failed holdout. C07 also passed import checks. All eight surviving entries completed the shared controller panel. C04 recovered only the unchanged input archive; the controller rebuilt and smoke-tested that parent fallback. C04 has no surviving evidence of new author work.
 
 | Author | Author economic panel | Mean terminal cash | Fresh controller qualification |
 |---|---:|---:|---|
-| C01 | 128 games, 64 seeds | 201,614.625 | Running |
-| C02 | 64 holdout games, 32 seeds | 191,950.71875 (below threshold) | Running |
-| C03 | 256 games, 128 seeds | 207,077.0234375 | Running |
-| C04 | No surviving current records | Unverified | Running |
-| C05 | 128 games, 64 seeds | 204,386.359375 | Running |
-| C06 | 64 recovery games, 32 seeds | 204,465.921875 | Running |
-| C07 | 16 recovery games, 8 seeds | 206,421.25 | Running |
-| C08 | 256 games, 128 seeds | 201,529.2265625 | Running |
+| C01 | 128 games, 64 seeds | 201,614.625 | 196,342.0625: Fail |
+| C02 | 64 holdout games, 32 seeds | 191,950.71875 (below threshold) | 197,116.4375: Fail |
+| C03 | 256 games, 128 seeds | 207,077.0234375 | 209,496.6562: Pass |
+| C04 | No surviving current records | Unverified | 195,548.0000: Fail |
+| C05 | 128 games, 64 seeds | 204,386.359375 | 201,762.3750: Pass |
+| C06 | 64 recovery games, 32 seeds | 204,465.921875 | 195,548.0000: Fail |
+| C07 | 16 recovery games, 8 seeds | 206,421.25 | 195,548.0000: Fail |
+| C08 | 256 games, 128 seeds | 201,529.2265625 | 211,787.5625: Pass |
 
-These author panels use different seeds and cannot rank strategies. The shared controller panel is running all eight surviving entries on 16 newly generated seeds in both seats: 256 games with four workers and full replays. All source hashes were frozen before the draw; it excludes 820 known seeds. The qualification mean must reach 200,000 across all 32 complete games per entry. No competitive acceptance result exists.
+These author panels use different seeds and cannot rank strategies. The shared controller panel completed all eight surviving entries on 16 newly generated seeds in both seats: 256 games with four workers and full replays. All source hashes were frozen before the draw; it excludes 820 known seeds. The qualification mean must reach 200,000 across all 32 complete games per entry. C03, C05 and C08 passed economic qualification. The other five authors have started 45-minute revision rounds with full low-cash replays and matched parent comparisons. All 256 games and 184,064 recorded transitions passed the independent integrity audit. No competitive acceptance result exists.
 
 C01 supplies 930 complete traces and 194 configuration errors. All complete traces reconcile; 620 checks and both-seat local reproduction pass. Its saved development mean differs from its stale final-chat figure. Pre-restart logs are missing, and inherited parent receipts remain separate from current evidence.
 
