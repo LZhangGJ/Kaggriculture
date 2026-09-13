@@ -1,0 +1,117 @@
+{
+  "scope": "Reproduced exact parent actions and official transitions against saved joint actions. All 7 are historical diagnostics, not win-rate sample.",
+  "rows": [
+    {
+      "case": "aurax_shop_v2_4145681841_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        96612.0,
+        108499.0
+      ],
+      "wall_seconds": 10.492058007000026,
+      "agent_total_seconds": 8.108589907999715,
+      "agent_max_seconds": 0.4994800209999539,
+      "trace_sha256": "5bb64dc0231fec380ff4ccb4b3cb4154e177b5de9aa6d58647492d799bf87754"
+    },
+    {
+      "case": "aurax_reactive_v1_4145681835_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        117656.0,
+        117804.0
+      ],
+      "wall_seconds": 10.26955972899998,
+      "agent_total_seconds": 7.880523543000038,
+      "agent_max_seconds": 0.44930621999998266,
+      "trace_sha256": "b1a6e8935b9cff8060eda605a06b8b5096a38b1d2c875f8baa11d9138f52bdfc"
+    },
+    {
+      "case": "submission_56149565_4145681833_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        94224.0,
+        96697.0
+      ],
+      "wall_seconds": 9.618356474999985,
+      "agent_total_seconds": 7.4030044629990925,
+      "agent_max_seconds": 0.45023682200002213,
+      "trace_sha256": "ba4105e467319cc33e5cd3608ea828ce3a6aa3ee9bec749ae9c6c855a785f7c1"
+    },
+    {
+      "case": "thomas_955_v2_4145681832_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        80700.0,
+        90539.0
+      ],
+      "wall_seconds": 10.330055967999954,
+      "agent_total_seconds": 8.087679176999302,
+      "agent_max_seconds": 0.4422228479999717,
+      "trace_sha256": "3bcad64ad3afa253c4f1f4b99f9c49e235a14d51d415fe8c9b90c30da8eea3e0"
+    },
+    {
+      "case": "soil_v219g_4145681841_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        97238.0,
+        108680.0
+      ],
+      "wall_seconds": 10.222328378999975,
+      "agent_total_seconds": 7.97572964199901,
+      "agent_max_seconds": 0.48371600699999817,
+      "trace_sha256": "912ffe999de7781072384784a1d9bdd2d909bb4e4ec06a74864b29044c193712"
+    },
+    {
+      "case": "aurax_shop_v2_4145681830_seat1",
+      "seat": 1,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        73040.0,
+        73157.0
+      ],
+      "wall_seconds": 10.628850435999993,
+      "agent_total_seconds": 8.228652124998916,
+      "agent_max_seconds": 0.46167864000000236,
+      "trace_sha256": "4dc8852e717f2c03ea6e83d07e090be422f6276a5bed654b4be4e58553dadef1"
+    },
+    {
+      "case": "submission_56149565_4145681830_seat0",
+      "seat": 0,
+      "scope": "historical reproduction; not new results",
+      "matched_actions": 719,
+      "verified_transitions": 719,
+      "reconciled_player_days": 60,
+      "final_cash": [
+        99708.0,
+        98725.0
+      ],
+      "wall_seconds": 8.974606595000012,
+      "agent_total_seconds": 6.810150717000511,
+      "agent_max_seconds": 0.36780598899997585,
+      "trace_sha256": "f663a25e92f344aabf5c76c1f049eb575c17ff4a24408c8cbe61f70e67fd3732"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "SUPPLIED HISTORICAL DEVELOPMENT DATA; not current tests",
+  "games": 480,
+  "wins": 349,
+  "by_opponent": {
+    "soil_v219g": [
+      27,
+      40
+    ],
+    "moon_v215": [
+      34,
+      40
+    ],
+    "flexon_v5": [
+      26,
+      40
+    ],
+    "market_smart_v8": [
+      26,
+      40
+    ],
+    "nagatakengo_v70": [
+      40,
+      40
+    ],
+    "aurax_reactive_v1": [
+      34,
+      40
+    ],
+    "thomas_955_v2": [
+      24,
+      40
+    ],
+    "shop0909": [
+      26,
+      40
+    ],
+    "aurax_shop_v2": [
+      26,
+      40
+    ],
+    "seven_turn": [
+      26,
+      40
+    ],
+    "ahmed_v27": [
+      26,
+      40
+    ],
+    "submission_56149565": [
+      34,
+      40
+    ]
+  }
+}

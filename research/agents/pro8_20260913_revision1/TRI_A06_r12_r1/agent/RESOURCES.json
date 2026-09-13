@@ -1,0 +1,331 @@
+{
+  "task": "TRI_A06_r12_r1",
+  "resource_record_completed_at_utc": "2026-09-13T03:00:22.721973+00:00",
+  "initial_capture_utc": "2026-09-13T02:20:34.015128349+00:00",
+  "initial_capture_seconds_after_dispatch": 95.334128349,
+  "initial_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_quota_us": 400000,
+  "cpu_period_us": 100000,
+  "effective_cpu_count": 4,
+  "worker_processes": 1,
+  "parallel_policy_games": false,
+  "memory_limit_bytes": 4294967296,
+  "memory_reserve_fraction": 0.3,
+  "planned_usage_ceiling_bytes": 3006477107,
+  "initial_memory_current_bytes": 363397120,
+  "initial_container_lifetime_peak_bytes": 1084784640,
+  "final_memory_current_bytes": 399687680,
+  "final_container_lifetime_peak_bytes": 1084784640,
+  "peak_note": "memory.peak is container-lifetime cgroup peak, already 1084784640 at the initial capture; it is not incremental task RSS. GNU time per-process peaks are listed separately.",
+  "initial_host_MemAvailable_KiB_informational_only": 5155920,
+  "initial_disk_free_bytes": 32026415104,
+  "final_disk_free_bytes": 31995232256,
+  "python_version": "3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "host_memory_was_not_used_as_quota": true,
+  "probe_then_scale": "Serial bounded short compilation and 48 legal observations preceded full compilation and the limited real-policy panel; no full1536 or PASS-match batch.",
+  "timed_commands": [
+    {
+      "log": "evidence/logs/candidate_build.time",
+      "wall_seconds": 27.33,
+      "peak_rss_kib": 607988,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/candidate_final_build.time",
+      "wall_seconds": 27.43,
+      "peak_rss_kib": 608052,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091201_seat0.time",
+      "wall_seconds": 9.64,
+      "peak_rss_kib": 116220,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091201_seat1.time",
+      "wall_seconds": 9.75,
+      "peak_rss_kib": 116196,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091202_seat0.time",
+      "wall_seconds": 9.22,
+      "peak_rss_kib": 112840,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091202_seat1.time",
+      "wall_seconds": 9.16,
+      "peak_rss_kib": 112940,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091203_seat0.time",
+      "wall_seconds": 9.91,
+      "peak_rss_kib": 115000,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091203_seat1.time",
+      "wall_seconds": 9.89,
+      "peak_rss_kib": 114984,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091204_seat0.time",
+      "wall_seconds": 9.12,
+      "peak_rss_kib": 113004,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/candidate_2613091204_seat1.time",
+      "wall_seconds": 8.83,
+      "peak_rss_kib": 112824,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/parent_2613091201_seat0.time",
+      "wall_seconds": 9.53,
+      "peak_rss_kib": 115172,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/parent_2613091202_seat0.time",
+      "wall_seconds": 9.24,
+      "peak_rss_kib": 112136,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/parent_2613091203_seat0.time",
+      "wall_seconds": 9.96,
+      "peak_rss_kib": 113844,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/closed_loop/parent_2613091204_seat0.time",
+      "wall_seconds": 8.94,
+      "peak_rss_kib": 111888,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/delivery_clean_build.time",
+      "wall_seconds": 26.85,
+      "peak_rss_kib": 608024,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/delivery_entrypoint.time",
+      "wall_seconds": 1.51,
+      "peak_rss_kib": 106844,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/delivery_terminal_unit.time",
+      "wall_seconds": 8.74,
+      "peak_rss_kib": 420852,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/entrypoint.time",
+      "wall_seconds": 1.44,
+      "peak_rss_kib": 107128,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/historical_reproduction.time",
+      "wall_seconds": 33.02,
+      "peak_rss_kib": 249200,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/parent_probe.time",
+      "wall_seconds": 1.01,
+      "peak_rss_kib": 209596,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/parent_rebuild.time",
+      "wall_seconds": 28.46,
+      "peak_rss_kib": 607812,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/aurax_reactive_v1_4145681841_seat1.time",
+      "wall_seconds": 10.74,
+      "peak_rss_kib": 213280,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/market_smart_v8_4145681829_seat0.time",
+      "wall_seconds": 10.2,
+      "peak_rss_kib": 209768,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/soil_v219g_4145681829_seat0.time",
+      "wall_seconds": 9.96,
+      "peak_rss_kib": 209744,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/submission_56149565_4145681836_seat0.time",
+      "wall_seconds": 8.56,
+      "peak_rss_kib": 204744,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/submission_56149565_4145681841_seat1.time",
+      "wall_seconds": 9.1,
+      "peak_rss_kib": 210736,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/thomas_955_v2_4145681840_seat0.time",
+      "wall_seconds": 9.96,
+      "peak_rss_kib": 212360,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/prefix_final/thomas_955_v2_4145681843_seat1.time",
+      "wall_seconds": 9.49,
+      "peak_rss_kib": 211944,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/preliminary/candidate_2613091201_seat0.time",
+      "wall_seconds": 9.56,
+      "peak_rss_kib": 116292,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/preliminary/candidate_prefix.time",
+      "wall_seconds": null,
+      "peak_rss_kib": null,
+      "exit_status": null,
+      "complete_time_measurement": false
+    },
+    {
+      "log": "evidence/logs/probe_compile.time",
+      "wall_seconds": 3.69,
+      "peak_rss_kib": 334016,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/probe_unit.time",
+      "wall_seconds": 0.02,
+      "peak_rss_kib": 2576,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/terminal_candidate_compile.time",
+      "wall_seconds": 4.25,
+      "peak_rss_kib": 368680,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/terminal_parent_compile.time",
+      "wall_seconds": 4.3,
+      "peak_rss_kib": 370288,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_a06_fleet.time",
+      "wall_seconds": 4.25,
+      "peak_rss_kib": 324860,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_final_terminal_fleet.time",
+      "wall_seconds": 12.31,
+      "peak_rss_kib": 420748,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_r11_recovery.time",
+      "wall_seconds": 21.13,
+      "peak_rss_kib": 595104,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_r12_calendar.time",
+      "wall_seconds": 5.47,
+      "peak_rss_kib": 353568,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_r3_pending.time",
+      "wall_seconds": 20.43,
+      "peak_rss_kib": 569024,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_r5_contract.time",
+      "wall_seconds": 21.95,
+      "peak_rss_kib": 596548,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    },
+    {
+      "log": "evidence/logs/unit_r6_contract.time",
+      "wall_seconds": 10.08,
+      "peak_rss_kib": 450652,
+      "exit_status": 0,
+      "complete_time_measurement": true
+    }
+  ],
+  "game_accounting": {
+    "final_panel_full_games": 12,
+    "final_candidate_games": 8,
+    "parent_parent_controls": 4,
+    "preliminary_candidate_pilot_games": 1,
+    "total_full_real_policy_games": 13,
+    "central_full1536_games": 0,
+    "history_and_prefix_checks_are_not_new_candidate_matches": true
+  }
+}

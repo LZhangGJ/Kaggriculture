@@ -1,0 +1,22 @@
+{
+  "main.py": {
+    "expected": "d1e0e98f90908dc6c10e5c1416a6b4327fe3a5c9520c1a1a8639f7ffe12f1cb0",
+    "actual": "d1e0e98f90908dc6c10e5c1416a6b4327fe3a5c9520c1a1a8639f7ffe12f1cb0",
+    "match": true
+  },
+  "policy/agent.py": {
+    "expected": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+    "actual": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+    "match": true
+  },
+  "policy/config.json": {
+    "expected": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+    "actual": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+    "match": true
+  },
+  "policy/a06.so": {
+    "expected": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+    "actual": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+    "match": true
+  }
+}

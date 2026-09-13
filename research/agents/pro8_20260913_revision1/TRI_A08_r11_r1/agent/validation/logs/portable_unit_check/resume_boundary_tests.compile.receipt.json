@@ -1,0 +1,20 @@
+{
+  "label": "resume_boundary_tests.compile",
+  "utc": "2026-09-13T03:02:23.308949+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_r11_r1_release/tests/resume_boundary_tests.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests"
+  ],
+  "returncode": 0,
+  "wall_seconds": 3.225228333999894
+}

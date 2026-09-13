@@ -1,0 +1,8 @@
+aurax_shop_v2_4145681841_seat0 floorunits {'WOOL': 18, 'FERTILIZER': 14} batches 14 bad 2
+aurax_reactive_v1_4145681835_seat0 floorunits {'WOOL': 2, 'FERTILIZER': 17} batches 12 bad 1
+submission_56149565_4145681833_seat0 floorunits {'WOOL': 7, 'MELON': 1} batches 3 bad 3
+thomas_955_v2_4145681832_seat0 floorunits {'STRAWBERRY': 48, 'FERTILIZER': 46} batches 19 bad 2
+soil_v219g_4145681841_seat0 floorunits {'WOOL': 18, 'FERTILIZER': 14} batches 14 bad 2
+aurax_shop_v2_4145681830_seat1 floorunits {'WOOL': 8, 'MILK': 15, 'STRAWBERRY': 8, 'FERTILIZER': 25} batches 21 bad 10
+submission_56149565_4145681830_seat0 floorunits {'WOOL': 4, 'STRAWBERRY': 10} batches 2 bad 1
+{"scope": "One-sided conditional primitive only, not full-game counterfactual cash. Official _commit_unit oracle; only positive floor-crossing branches changed.", "positive_official_cases": 2061, "legacy_failures_in_positive_cases": 774, "negative_identical_cases": 729, "fractional_relaxation_cases": 234}

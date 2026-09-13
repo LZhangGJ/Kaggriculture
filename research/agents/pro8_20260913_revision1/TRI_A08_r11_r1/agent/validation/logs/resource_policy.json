@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-13T02:20:00.109929+00:00",
+  "dispatch_utc": "2026-09-13T02:15:47.575Z",
+  "hard_deadline_utc": "2026-09-13T04:15:47.575Z",
+  "affinity_cpus": 5,
+  "cpu_quota_cores": 4.0,
+  "effective_cpus": 4.0,
+  "memory_limit_bytes": 4294967296,
+  "memory_current_bytes": 370413568,
+  "memory_total_budget_bytes": 3006477107,
+  "reserve_fraction": 0.3,
+  "initial_workers": 1
+}

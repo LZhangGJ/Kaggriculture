@@ -1,0 +1,7 @@
+{
+  "extracted_directory": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+  "preflight_zip_sha256": "0362b999840bd2f972980918cec47aaf2beddce8c07919e698c88ffd85b13bf7",
+  "checked_files": 283,
+  "all_passed": true,
+  "main_at_root": true
+}

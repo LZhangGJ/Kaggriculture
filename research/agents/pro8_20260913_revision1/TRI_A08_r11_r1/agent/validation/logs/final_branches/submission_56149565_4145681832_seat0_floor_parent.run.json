@@ -1,0 +1,26 @@
+{
+  "stem": "/mnt/data/TRI_A08_work/logs/final_branches/submission_56149565_4145681832_seat0_floor_parent",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_branches/submission_56149565_4145681832_seat0_floor_parent.time",
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/tests/short_sale_branches.py",
+    "--root",
+    "/mnt/data/TRI_A08_work/input/agent",
+    "--binary",
+    "/mnt/data/TRI_A08_work/input/agent/policy/a08_r11.so",
+    "--fixture",
+    "/mnt/data/TRI_A08_work/input/replays/submission_56149565_4145681832_seat0.json.gz",
+    "--case",
+    "/mnt/data/TRI_A08_work/logs/final_cases/submission_56149565_4145681832_seat0_floor.json",
+    "--referee",
+    "/mnt/data/TRI_A08_work/input/referee",
+    "--out",
+    "/mnt/data/TRI_A08_work/logs/final_branches/submission_56149565_4145681832_seat0_floor_parent.json.gz"
+  ],
+  "returncode": 0,
+  "seconds": 4.876952648162842
+}

@@ -1,0 +1,701 @@
+{
+  "scope": "unsuccessful market unit commitments in final eight real matches; not runtime exceptions or recoverable revenue estimates",
+  "counts": [
+    {
+      "op": "BUY_SEED",
+      "item": "STRAWBERRY",
+      "cash_delta": 0.0,
+      "units": 8
+    },
+    {
+      "op": "BUY_SEED",
+      "item": "WHEAT",
+      "cash_delta": 0.0,
+      "units": 8
+    },
+    {
+      "op": "BUY_SEED",
+      "item": "MELON",
+      "cash_delta": 0.0,
+      "units": 4
+    }
+  ],
+  "examples": [
+    {
+      "file": "margin_closed_loop/seed4145681844_seat1/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681844_seat1/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681844_seat1/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "WHEAT",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 10,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681844_seat1/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "WHEAT",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 10,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681832_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "WHEAT",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 10,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          8
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          9
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          4
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          5
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681832_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "WHEAT",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 10,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          8
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          9
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          4
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          5
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681843_seat0/trajectory.jsonl.gz",
+      "step": 168,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "WOOL",
+          14
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          8
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          11
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          3
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          14
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681843_seat0/trajectory.jsonl.gz",
+      "step": 168,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "WOOL",
+          14
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          8
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          11
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          3
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          14
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681843_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "MELON",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 80,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          13
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          4
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "TOMATO",
+          1
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681843_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "MELON",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 80,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          13
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          4
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "TOMATO",
+          1
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681844_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 0,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "file": "margin_closed_loop/seed4145681844_seat0/trajectory.jsonl.gz",
+      "step": 216,
+      "event": {
+        "cash_delta": 0.0,
+        "item": "STRAWBERRY",
+        "op": "BUY_SEED",
+        "player": 1,
+        "price": 100,
+        "success": false
+      },
+      "market_actions": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          11
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          7
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    }
+  ]
+}

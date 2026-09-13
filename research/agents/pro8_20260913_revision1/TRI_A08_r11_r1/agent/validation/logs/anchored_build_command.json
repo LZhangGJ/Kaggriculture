@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/anchored_build.time",
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/build.py"
+  ],
+  "pid": 1462,
+  "utc": "2026-09-13T02:36:47.921413+00:00"
+}

@@ -1,0 +1,4 @@
+test_r5_contract 0 PASS 14 economic execution candidates preserve original plan keys, paid commitments and install mode
+PASS 168 matched known-day prefix transitions: same mechanism/action/cash/fills/stock across origins
+PASS exact issued PLANT seed consumption, no sale credit, input immutability, phase-contract origin equality
+

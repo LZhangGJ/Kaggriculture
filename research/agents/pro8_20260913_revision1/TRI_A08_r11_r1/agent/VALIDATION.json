@@ -1,0 +1,430 @@
+{
+  "task": "TRI_A08_r11_r1",
+  "status": "FROZEN_NOT_ACCEPTED",
+  "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "historical_only": {
+    "wins": 393,
+    "games": 480,
+    "public_wins": 368,
+    "public_games": 440,
+    "R2_wins": 25,
+    "R2_games": 40
+  },
+  "new_final_parent_only_games": {
+    "games": 8,
+    "wins": 5,
+    "losses": 3,
+    "draws": 0,
+    "all719": true,
+    "runtime_errors": 0,
+    "acceptance_panel": false,
+    "seed_seat_margins": [
+      {
+        "seed": 4145681829,
+        "seat": 0,
+        "margin": 670.0
+      },
+      {
+        "seed": 4145681829,
+        "seat": 1,
+        "margin": 670.0
+      },
+      {
+        "seed": 4145681832,
+        "seat": 0,
+        "margin": -26.0
+      },
+      {
+        "seed": 4145681832,
+        "seat": 1,
+        "margin": -26.0
+      },
+      {
+        "seed": 4145681843,
+        "seat": 0,
+        "margin": -412.0
+      },
+      {
+        "seed": 4145681843,
+        "seat": 1,
+        "margin": 1160.0
+      },
+      {
+        "seed": 4145681844,
+        "seat": 0,
+        "margin": 128.0
+      },
+      {
+        "seed": 4145681844,
+        "seat": 1,
+        "margin": 128.0
+      }
+    ]
+  },
+  "units": {
+    "sale_dp_tests": {
+      "scope": "synthetic unit/exhaustive tests; no games",
+      "synthetic_problems": 420,
+      "exhaustive_scenario_optima": 1680,
+      "exact_path_transitions": 17108,
+      "guard_cases": 12,
+      "assertions": 26285,
+      "passed": true
+    },
+    "floor_sale_dp_tests": {
+      "scope": "synthetic exact floor DP tests; not games",
+      "passed": true,
+      "problems": 702,
+      "independent_exhaustive_optima": 2592,
+      "primitive_cases": 6174,
+      "assertions": 29512,
+      "seconds": 0.0632142,
+      "congestion_example_first_sale": 12
+    },
+    "floor_sale_dp_tests_asan_ubsan": {
+      "scope": "synthetic exact floor DP tests; not games",
+      "passed": true,
+      "problems": 702,
+      "independent_exhaustive_optima": 2592,
+      "primitive_cases": 6174,
+      "assertions": 29512,
+      "seconds": 0.536398,
+      "congestion_example_first_sale": 12
+    },
+    "resume_boundary_tests": {
+      "scope": "new resume boundary tests, no games",
+      "problems": 9,
+      "exhaustive_scenarios": 36,
+      "assertions": 129,
+      "passed": true
+    },
+    "floor_observation_guard": {
+      "scope": "real-observation authorization and physical-surplus guards; no games",
+      "assertions": 31,
+      "passed": true
+    },
+    "floor_margin_regression": {
+      "scope": "synthetic low-traffic floor batch; not a match",
+      "macro_weight3_selected_now": 7,
+      "cash_margin_selected_now": 0,
+      "old_weighted_min_actual_margin": 77,
+      "baseline_min_actual_margin": 90,
+      "new_min_actual_margin": 90,
+      "passed": true
+    }
+  },
+  "final_legal_prefixes": {
+    "scope": "final candidate saved legal common prefixes, stop at first action divergence; no new games",
+    "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+    "calls": 4341,
+    "matches": 4338,
+    "full_identical_719_paths": 4,
+    "first_divergences": 3,
+    "rows": [
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "aurax_shop_v2_4145681837_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "0b5c3171fb93c241fc52574db94574469ea55c67768b8e6f5ae128528c64ccf1",
+        "calls": 547,
+        "match_historical_actions": 546,
+        "first_historical_difference": 546,
+        "last_paid_selected": 0,
+        "last_sale_changed": 5,
+        "max_seconds": 0.33968147300015517
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "market_smart_v8_4145681829_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "902e376477a168c25abe2d189be26c4099f5bc30efc6f509a28305ef1d9d4f61",
+        "calls": 719,
+        "match_historical_actions": 719,
+        "first_historical_difference": null,
+        "last_paid_selected": 0,
+        "last_sale_changed": 2,
+        "max_seconds": 0.3492701400000442
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "soil_v219g_4145681829_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "ee1f498159bb0b9ef99ebbc7e93e2acf2511949cac980de5f124adbe8b7ff6ca",
+        "calls": 719,
+        "match_historical_actions": 719,
+        "first_historical_difference": null,
+        "last_paid_selected": 0,
+        "last_sale_changed": 2,
+        "max_seconds": 0.3977093309999873
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "submission_56149565_4145681832_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "803d71b9622efbd99efad83ff58de983000a07d13e2c6614b7d7ed81f4b5b087",
+        "calls": 483,
+        "match_historical_actions": 482,
+        "first_historical_difference": 482,
+        "last_paid_selected": 0,
+        "last_sale_changed": 14,
+        "max_seconds": 0.3881781620000311
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "submission_56149565_4145681843_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "2eea2c2029f34547709e99c5d7396f9ab6c3c33461002f3efc4b6889d383ed98",
+        "calls": 435,
+        "match_historical_actions": 434,
+        "first_historical_difference": 434,
+        "last_paid_selected": 0,
+        "last_sale_changed": 15,
+        "max_seconds": 0.45818618500015873
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "thomas_955_v2_4145681841_seat1",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "58aa786f7112aaf1cbfb27389ad8d94577c39bbda012dd9aa99407a254e12207",
+        "calls": 719,
+        "match_historical_actions": 719,
+        "first_historical_difference": null,
+        "last_paid_selected": 0,
+        "last_sale_changed": 6,
+        "max_seconds": 0.3473314190000565
+      },
+      {
+        "scope": "saved legal inputs only; after first different output the subsequent inputs remain historical, not a candidate trajectory",
+        "new_games": 0,
+        "stop_first_difference": true,
+        "requested_limit": 719,
+        "complete_requested_calls": true,
+        "id": "thomas_955_v2_4145681844_seat0",
+        "binary_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+        "fixture_sha256": "f0c0569c57d2b8079f382f0acd0d92ae25d7204fbbded5d95beda637c1370459",
+        "calls": 719,
+        "match_historical_actions": 719,
+        "first_historical_difference": null,
+        "last_paid_selected": 0,
+        "last_sale_changed": 7,
+        "max_seconds": 0.3131436000001031
+      }
+    ]
+  },
+  "conditional_branch_comparisons": {
+    "scope": "32 short official conditional branches (16 paired comparisons), not complete matches or win-rate evidence; hypothetical rival private supply explicitly injected, never taken from saved future",
+    "comparisons": [
+      {
+        "case": "aurax_shop_v2_4145681837_seat0_floor",
+        "start": 546,
+        "ticks": 4,
+        "scenario": "no_additional_sales",
+        "own_cash_delta_vs_parent": -8.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -8.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "aurax_shop_v2_4145681837_seat0_floor",
+        "start": 546,
+        "ticks": 4,
+        "scenario": "traffic_queue0",
+        "own_cash_delta_vs_parent": 12.0,
+        "rival_cash_delta_vs_parent": -20.0,
+        "actual_cash_margin_delta_vs_parent": 32.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "aurax_shop_v2_4145681837_seat0_floor",
+        "start": 546,
+        "ticks": 4,
+        "scenario": "traffic_queue3",
+        "own_cash_delta_vs_parent": -8.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -8.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "aurax_shop_v2_4145681837_seat0_floor",
+        "start": 546,
+        "ticks": 4,
+        "scenario": "traffic_queue9",
+        "own_cash_delta_vs_parent": -8.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -8.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681832_seat0_floor",
+        "start": 482,
+        "ticks": 4,
+        "scenario": "no_additional_sales",
+        "own_cash_delta_vs_parent": 0.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": 0.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681832_seat0_floor",
+        "start": 482,
+        "ticks": 4,
+        "scenario": "traffic_queue0",
+        "own_cash_delta_vs_parent": 184.0,
+        "rival_cash_delta_vs_parent": -158.0,
+        "actual_cash_margin_delta_vs_parent": 342.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681832_seat0_floor",
+        "start": 482,
+        "ticks": 4,
+        "scenario": "traffic_queue3",
+        "own_cash_delta_vs_parent": 1111.0,
+        "rival_cash_delta_vs_parent": -1111.0,
+        "actual_cash_margin_delta_vs_parent": 2222.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681832_seat0_floor",
+        "start": 482,
+        "ticks": 4,
+        "scenario": "traffic_queue9",
+        "own_cash_delta_vs_parent": 1111.0,
+        "rival_cash_delta_vs_parent": -1111.0,
+        "actual_cash_margin_delta_vs_parent": 2222.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681843_seat0_floor",
+        "start": 434,
+        "ticks": 4,
+        "scenario": "no_additional_sales",
+        "own_cash_delta_vs_parent": -19.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -19.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681843_seat0_floor",
+        "start": 434,
+        "ticks": 4,
+        "scenario": "traffic_queue0",
+        "own_cash_delta_vs_parent": 136.0,
+        "rival_cash_delta_vs_parent": -155.0,
+        "actual_cash_margin_delta_vs_parent": 291.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681843_seat0_floor",
+        "start": 434,
+        "ticks": 4,
+        "scenario": "traffic_queue3",
+        "own_cash_delta_vs_parent": -19.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -19.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "submission_56149565_4145681843_seat0_floor",
+        "start": 434,
+        "ticks": 4,
+        "scenario": "traffic_queue9",
+        "own_cash_delta_vs_parent": -19.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": -19.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "thomas_955_v2_4145681844_seat0_floor",
+        "start": 604,
+        "ticks": 2,
+        "scenario": "no_additional_sales",
+        "own_cash_delta_vs_parent": 0.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": 0.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "thomas_955_v2_4145681844_seat0_floor",
+        "start": 604,
+        "ticks": 2,
+        "scenario": "traffic_queue0",
+        "own_cash_delta_vs_parent": 0.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": 0.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "thomas_955_v2_4145681844_seat0_floor",
+        "start": 604,
+        "ticks": 2,
+        "scenario": "traffic_queue3",
+        "own_cash_delta_vs_parent": 0.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": 0.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      },
+      {
+        "case": "thomas_955_v2_4145681844_seat0_floor",
+        "start": 604,
+        "ticks": 2,
+        "scenario": "traffic_queue9",
+        "own_cash_delta_vs_parent": 0.0,
+        "rival_cash_delta_vs_parent": 0.0,
+        "actual_cash_margin_delta_vs_parent": 0.0,
+        "post_units_stock_guards": true,
+        "cash_identities_zero": true
+      }
+    ]
+  },
+  "acceptance": {
+    "games": 1536,
+    "strict_wins_required": 1306,
+    "run_here": false,
+    "updated_seed_results_available": false
+  },
+  "critical_risks": [
+    "R2 narrow +2 saved fixture first diverges at step434; three explicit four-tick conditions lose19 versus parent.",
+    "No new original R2/pool full matches.",
+    "Lagged public supply profile and multi-product execution interactions remain uncertain."
+  ]
+}

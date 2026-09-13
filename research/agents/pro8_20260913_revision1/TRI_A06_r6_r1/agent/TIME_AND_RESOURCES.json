@@ -1,0 +1,332 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "dispatch_utc": "2026-09-13T02:17:41.523000+00:00",
+  "hard_deadline_utc": "2026-09-13T04:17:41.523000+00:00",
+  "receipt_utc": "2026-09-13T02:43:46.357855+00:00",
+  "elapsed_from_original_dispatch_seconds_as_of_receipt": 1564.834855,
+  "remaining_to_hard_deadline_seconds_as_of_receipt": 5635.165145,
+  "initial_resource_receipt": {
+    "utc": "2026-09-13T02:18:23.287461+00:00",
+    "dispatch_utc": "2026-09-13T02:17:41.523Z",
+    "hard_deadline_utc": "2026-09-13T04:17:41.523Z",
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cpu_max": "400000 100000",
+    "cpuset_effective": "0-4",
+    "memory_max": "4294967296",
+    "memory_current": "362803200",
+    "memory_high": "max",
+    "cgroup": "0::/",
+    "mem_available": "MemAvailable:    5086456 kB",
+    "disk": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G  8.5M   30G   1% /\noverlay          32G  8.5M   30G   1% /",
+    "python": "3.13.5",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+    "uname": {
+      "system": "Linux",
+      "node": "localhost",
+      "release": "6.18.44",
+      "version": "#1 SMP Sat Sep 12 15:35:21 UTC 2026",
+      "machine": "x86_64",
+      "processor": ""
+    },
+    "quota_cpu": 4.0,
+    "effective_cpu": 4.0,
+    "max_workers_initial": 1,
+    "memory_usable_limit_70pct": 3006477107,
+    "input_sha256": "bbd5112684c8cb910d46d163c450b75035360c42a073bbb3975a005d984e6b12"
+  },
+  "completion_receipts": [
+    {
+      "name": "runtime_privacy",
+      "command": [
+        "python",
+        "-B",
+        "test_runtime_privacy.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:35:06.809218+00:00",
+      "timeout_seconds": 45.0,
+      "peak_tree_rss_kb_sampled": 105812,
+      "peak_cgroup_current": 645959680,
+      "timed_out": false,
+      "pid": 1254,
+      "returncode": 0,
+      "wall_seconds": 4.287260307999986,
+      "finished_utc": "2026-09-13T02:35:11.096561+00:00",
+      "ru_maxrss_children_kb": 105812
+    },
+    {
+      "name": "new_games_audit",
+      "command": [
+        "python",
+        "-B",
+        "audit_new_games.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:38:32.482972+00:00",
+      "timeout_seconds": 140.0,
+      "peak_tree_rss_kb_sampled": 98000,
+      "peak_cgroup_current": 497061888,
+      "timed_out": false,
+      "pid": 1388,
+      "returncode": 0,
+      "wall_seconds": 16.526772602999927,
+      "finished_utc": "2026-09-13T02:38:49.009829+00:00",
+      "ru_maxrss_children_kb": 98000
+    },
+    {
+      "name": "closed_loop",
+      "command": [
+        "python",
+        "-B",
+        "run_closed_loop.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:32:31.218227+00:00",
+      "timeout_seconds": 520.0,
+      "peak_tree_rss_kb_sampled": 116580,
+      "peak_cgroup_current": 1188933632,
+      "timed_out": false,
+      "pid": 1108,
+      "returncode": 0,
+      "wall_seconds": 314.621860135,
+      "finished_utc": "2026-09-13T02:37:45.840237+00:00",
+      "ru_maxrss_children_kb": 116580
+    },
+    {
+      "name": "unit_suite",
+      "command": [
+        "python",
+        "-B",
+        "candidate/tests/run_units.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:30:54.663403+00:00",
+      "timeout_seconds": 420.0,
+      "peak_tree_rss_kb_sampled": 650692,
+      "peak_cgroup_current": 1411891200,
+      "timed_out": false,
+      "pid": 983,
+      "returncode": 0,
+      "wall_seconds": 184.493904111,
+      "finished_utc": "2026-09-13T02:33:59.157519+00:00",
+      "ru_maxrss_children_kb": 557980
+    },
+    {
+      "name": "production_floor_oracle",
+      "command": [
+        "python",
+        "-B",
+        "run_floor_oracle.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:34:20.950069+00:00",
+      "timeout_seconds": 45.0,
+      "peak_tree_rss_kb_sampled": 97988,
+      "peak_cgroup_current": 649695232,
+      "timed_out": false,
+      "pid": 1221,
+      "returncode": 0,
+      "wall_seconds": 2.828872259000036,
+      "finished_utc": "2026-09-13T02:34:23.779187+00:00",
+      "ru_maxrss_children_kb": 96196
+    },
+    {
+      "name": "extracted_rebuild",
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/TRI_A06_r6_r1_zipcheck/build.py",
+        "--out",
+        "/mnt/data/TRI_A06_r6_r1_work/extracted_rebuild.so"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:41:38.260076+00:00",
+      "timeout_seconds": 150.0,
+      "peak_tree_rss_kb_sampled": 663840,
+      "peak_cgroup_current": 1265197056,
+      "timed_out": false,
+      "pid": 1536,
+      "returncode": 0,
+      "wall_seconds": 72.07939101300008,
+      "finished_utc": "2026-09-13T02:42:50.339652+00:00",
+      "ru_maxrss_children_kb": 570356
+    },
+    {
+      "name": "market_evidence",
+      "command": [
+        "python",
+        "-B",
+        "market_evidence.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:28:54.623582+00:00",
+      "timeout_seconds": 120.0,
+      "peak_tree_rss_kb_sampled": 362780,
+      "peak_cgroup_current": 731131904,
+      "timed_out": false,
+      "pid": 834,
+      "returncode": 0,
+      "wall_seconds": 16.182867536999993,
+      "finished_utc": "2026-09-13T02:29:10.806601+00:00",
+      "ru_maxrss_children_kb": 362780
+    },
+    {
+      "name": "parent_full_audit",
+      "command": [
+        "python",
+        "-B",
+        "audit_parent.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:22:38.102575+00:00",
+      "timeout_seconds": 300.0,
+      "peak_tree_rss_kb_sampled": 365084,
+      "peak_cgroup_current": 766402560,
+      "timed_out": false,
+      "pid": 661,
+      "returncode": 0,
+      "wall_seconds": 83.63648097499998,
+      "finished_utc": "2026-09-13T02:24:01.739263+00:00",
+      "ru_maxrss_children_kb": 366364
+    },
+    {
+      "name": "market_probe_compile",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-ffp-contract=off",
+        "-shared",
+        "-fPIC",
+        "-I",
+        "candidate",
+        "tests/market_primitive_probe.cpp",
+        "-o",
+        "diagnostics/market_primitive_probe.so"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:27:45.164015+00:00",
+      "timeout_seconds": 90.0,
+      "peak_tree_rss_kb_sampled": 313956,
+      "peak_cgroup_current": 682733568,
+      "timed_out": false,
+      "pid": 789,
+      "returncode": 0,
+      "wall_seconds": 8.18980724100004,
+      "finished_utc": "2026-09-13T02:27:53.354012+00:00",
+      "ru_maxrss_children_kb": 313956
+    },
+    {
+      "name": "extracted_root_entry",
+      "command": [
+        "python",
+        "-B",
+        "test_extracted_root.py",
+        "--root",
+        "/mnt/data/TRI_A06_r6_r1_zipcheck",
+        "--out",
+        "/mnt/data/TRI_A06_r6_r1_work/diagnostics/extracted_root_entry.json"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:41:38.430911+00:00",
+      "timeout_seconds": 90.0,
+      "peak_tree_rss_kb_sampled": 114684,
+      "peak_cgroup_current": 1147576320,
+      "timed_out": false,
+      "pid": 1537,
+      "returncode": 0,
+      "wall_seconds": 21.432503473999986,
+      "finished_utc": "2026-09-13T02:41:59.863634+00:00",
+      "ru_maxrss_children_kb": 114684
+    },
+    {
+      "name": "parent_probe",
+      "command": [
+        "python",
+        "-B",
+        "probe_parent.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:21:17.511675+00:00",
+      "timeout_seconds": 45.0,
+      "peak_tree_rss_kb_sampled": 323752,
+      "peak_cgroup_current": 688119808,
+      "timed_out": false,
+      "pid": 605,
+      "returncode": 0,
+      "wall_seconds": 7.6939514489999965,
+      "finished_utc": "2026-09-13T02:21:25.205707+00:00",
+      "ru_maxrss_children_kb": 326020
+    },
+    {
+      "name": "prefix_comparison",
+      "command": [
+        "python",
+        "-B",
+        "compare_prefixes.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:31:42.886797+00:00",
+      "timeout_seconds": 150.0,
+      "peak_tree_rss_kb_sampled": 361992,
+      "peak_cgroup_current": 1412153344,
+      "timed_out": false,
+      "pid": 1025,
+      "returncode": 0,
+      "wall_seconds": 30.459390751,
+      "finished_utc": "2026-09-13T02:32:13.346336+00:00",
+      "ru_maxrss_children_kb": 365832
+    },
+    {
+      "name": "candidate_compile",
+      "command": [
+        "python",
+        "-B",
+        "candidate/build.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:29:22.481013+00:00",
+      "timeout_seconds": 140.0,
+      "peak_tree_rss_kb_sampled": 663876,
+      "peak_cgroup_current": 1090166784,
+      "timed_out": false,
+      "pid": 884,
+      "returncode": 0,
+      "wall_seconds": 72.11661914799993,
+      "finished_utc": "2026-09-13T02:30:34.597776+00:00",
+      "ru_maxrss_children_kb": 570396
+    },
+    {
+      "name": "history480_rows",
+      "command": [
+        "python",
+        "-B",
+        "summarize_history.py"
+      ],
+      "cwd": null,
+      "started_utc": "2026-09-13T02:42:41.693230+00:00",
+      "timeout_seconds": 30.0,
+      "peak_tree_rss_kb_sampled": 95916,
+      "peak_cgroup_current": 1265197056,
+      "timed_out": false,
+      "pid": 1650,
+      "returncode": 0,
+      "wall_seconds": 3.000201782999966,
+      "finished_utc": "2026-09-13T02:42:44.693609+00:00",
+      "ru_maxrss_children_kb": 96044
+    }
+  ],
+  "peak_observed_cgroup_bytes": 1412153344,
+  "all_monitored_commands_completed_without_timeout": true,
+  "first_parent_compile_wrapper_exception": "See docs/TOOLING_NOTES.md; child completed and was byte-verified, but no peak-RSS claim for the initial failed outer wrapper.",
+  "final_memory_current_bytes": 470519808,
+  "final_disk_usage": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G  103M   30G   1% /\n",
+  "max_game_workers": 1,
+  "full_1536_run_here": false
+}

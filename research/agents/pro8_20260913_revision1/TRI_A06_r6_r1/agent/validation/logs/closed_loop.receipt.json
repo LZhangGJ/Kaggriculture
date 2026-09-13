@@ -1,0 +1,19 @@
+{
+  "name": "closed_loop",
+  "command": [
+    "python",
+    "-B",
+    "run_closed_loop.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:32:31.218227+00:00",
+  "timeout_seconds": 520.0,
+  "peak_tree_rss_kb_sampled": 116580,
+  "peak_cgroup_current": 1188933632,
+  "timed_out": false,
+  "pid": 1108,
+  "returncode": 0,
+  "wall_seconds": 314.621860135,
+  "finished_utc": "2026-09-13T02:37:45.840237+00:00",
+  "ru_maxrss_children_kb": 116580
+}

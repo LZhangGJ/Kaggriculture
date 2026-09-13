@@ -1,0 +1,15 @@
+{
+  "name": "market_evidence",
+  "command": [
+    "python",
+    "-B",
+    "market_evidence.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:28:54.623582+00:00",
+  "timeout_seconds": 120.0,
+  "peak_tree_rss_kb_sampled": 0,
+  "peak_cgroup_current": 0,
+  "timed_out": false,
+  "pid": 834
+}

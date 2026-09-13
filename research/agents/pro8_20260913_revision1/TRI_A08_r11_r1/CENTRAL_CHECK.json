@@ -1,0 +1,77 @@
+{
+  "checked_utc": "2026-09-13T03:32:04.195736+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "d1a043f09e3f155256aa956b4e37b418f07828ea0bdd58843ac724d051be45fd",
+  "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "source_files_verified": 44,
+  "changed_source_files": [
+    "build.py",
+    "main.py",
+    "policy/sale_schedule_dp.hpp",
+    "policy/search.hpp",
+    "policy/triad.hpp"
+  ],
+  "root_receipt": {
+    "scope": "default root main.agent import and saved legal common-prefix smoke; not matches",
+    "passed": true,
+    "utc": "2026-09-13T03:30:45.259696+00:00",
+    "root": "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/package",
+    "cwd": "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/package",
+    "explicit_binary_override": false,
+    "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+    "sources_checked": 44,
+    "manifest_files_checked": 865,
+    "calls": 96,
+    "matches": 96,
+    "rows": [
+      {
+        "seat": 0,
+        "fixture": "aurax_shop_v2_4145681837_seat0.json.gz",
+        "calls": 48,
+        "matched_saved_prefix": 48,
+        "max_call_seconds": 0.5890398860001369,
+        "fixture_sha256": "0b5c3171fb93c241fc52574db94574469ea55c67768b8e6f5ae128528c64ccf1"
+      },
+      {
+        "seat": 1,
+        "fixture": "thomas_955_v2_4145681841_seat1.json.gz",
+        "calls": 48,
+        "matched_saved_prefix": 48,
+        "max_call_seconds": 0.6992706310002177,
+        "fixture_sha256": "58aa786f7112aaf1cbfb27389ad8d94577c39bbda012dd9aa99407a254e12207"
+      }
+    ],
+    "wall_seconds": 40.772232263999285,
+    "peak_rss_kib": 340036,
+    "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]"
+  },
+  "local_commands": [
+    [
+      "/usr/bin/python3",
+      "-B",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/package/tests/verify_release.py",
+      "--out",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/central/root_receipt.json"
+    ],
+    [
+      "/usr/bin/python3",
+      "-B",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/package/tests/run_validation.py",
+      "unit",
+      "--out",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/central/unit"
+    ],
+    [
+      "/usr/bin/python3",
+      "-B",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/package/tests/run_validation.py",
+      "official-floor",
+      "--out",
+      "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r1/central/official"
+    ]
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "official_oracle_cases": 4974,
+  "new_agent_games": 0,
+  "seconds": 126.95556697400025
+}

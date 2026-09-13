@@ -1,0 +1,8 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "packaging_started_utc": "2026-09-13T02:38:32.519362+00:00",
+  "dispatch_utc": "2026-09-13T02:17:41.523Z",
+  "hard_deadline_utc": "2026-09-13T04:17:41.523Z",
+  "production_frozen_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "status": "CORRECTNESS_REPAIR_CANDIDATE_FOR_CENTRAL_EVALUATION_NOT_ACCEPTED"
+}

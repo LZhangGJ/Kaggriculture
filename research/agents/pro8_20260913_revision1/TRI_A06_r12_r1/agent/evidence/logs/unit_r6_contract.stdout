@@ -1,0 +1,3 @@
+test_r6_contract 0 PASS 2520 bounded short-sale DP certificates
+PASS cash/margin valuation identical when public rival flow is zero; observed cash/paid inventory immutable
+

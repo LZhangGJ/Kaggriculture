@@ -1,0 +1,25 @@
+{
+  "test": "resume_boundary_tests",
+  "compile_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/resume_boundary_tests.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_work/candidate/tests/resume_boundary_tests.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/test_binaries/resume_boundary_tests"
+  ],
+  "run_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/resume_boundary_tests.time",
+    "/mnt/data/TRI_A08_work/test_binaries/resume_boundary_tests"
+  ],
+  "returncode": 0
+}

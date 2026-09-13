@@ -1,0 +1,25 @@
+{
+  "test": "floor_margin_regression",
+  "compile_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/floor_margin_regression.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_work/candidate/tests/floor_margin_regression.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/test_binaries/floor_margin_regression"
+  ],
+  "run_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/floor_margin_regression.time",
+    "/mnt/data/TRI_A08_work/test_binaries/floor_margin_regression"
+  ],
+  "returncode": 0
+}

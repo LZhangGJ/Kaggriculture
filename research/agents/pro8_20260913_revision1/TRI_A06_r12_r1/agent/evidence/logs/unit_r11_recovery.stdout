@@ -1,0 +1,5 @@
+test_r11_recovery 0 PASS exhaustive DP cases=80 route enumerations=16700
+PASS idle vs hire, observed funding, failure/late cancellation, receipt commit, paid input protection, real/prediction parity
+negative_idle={"step":248,"own_cash_observed":1500,"actual_workers":1,"actual_hires_today":0,"keep_cash":2940,"keep_rival_cash":1500,"scenarios":[{"worker":0,"hire":0,"wage":0,"steps":4,"cash":2940,"rival_cash":1500,"own_gain":0,"margin_gain":0,"service_guard":1,"plots":[43]},{"worker":1,"hire":1,"wage":1,"steps":5,"cash":2939,"rival_cash":1500,"own_gain":-1,"margin_gain":-1,"service_guard":1,"plots":[43]}],"selected_worker":-1,"selected_hire":0,"scope":"same-day conditional simulation, not actual earned cash"}
+positive_hire={"step":248,"own_cash_observed":1500,"actual_workers":1,"actual_hires_today":0,"keep_cash":1500,"keep_rival_cash":1500,"scenarios":[{"worker":1,"hire":1,"wage":1,"steps":5,"cash":2939,"rival_cash":1500,"own_gain":1439,"margin_gain":1439,"service_guard":1,"plots":[43]}],"selected_worker":1,"selected_hire":1,"scope":"same-day conditional simulation, not actual earned cash"}
+

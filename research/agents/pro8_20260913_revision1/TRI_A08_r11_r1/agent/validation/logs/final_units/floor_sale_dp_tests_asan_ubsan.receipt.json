@@ -1,0 +1,26 @@
+{
+  "test": "floor_sale_dp_tests_asan_ubsan",
+  "compile_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests_asan_ubsan.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "/mnt/data/TRI_A08_work/candidate/tests/floor_sale_dp_tests.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests_asan_ubsan"
+  ],
+  "run_command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests_asan_ubsan.time",
+    "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests_asan_ubsan"
+  ],
+  "returncode": 0
+}

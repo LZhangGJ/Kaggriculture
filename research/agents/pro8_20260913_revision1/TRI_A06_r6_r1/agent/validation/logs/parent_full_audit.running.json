@@ -1,0 +1,15 @@
+{
+  "name": "parent_full_audit",
+  "command": [
+    "python",
+    "-B",
+    "audit_parent.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:22:38.102575+00:00",
+  "timeout_seconds": 300.0,
+  "peak_tree_rss_kb_sampled": 0,
+  "peak_cgroup_current": 0,
+  "timed_out": false,
+  "pid": 661
+}

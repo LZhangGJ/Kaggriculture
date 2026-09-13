@@ -1,0 +1,20 @@
+{
+  "label": "floor_margin_regression.compile",
+  "utc": "2026-09-13T03:02:29.368144+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_r11_r1_release/tests/floor_margin_regression.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression"
+  ],
+  "returncode": 0,
+  "wall_seconds": 2.574232280999695
+}

@@ -1,0 +1,15 @@
+--- A06_r6/policy/planner.hpp
++++ TRI_A06_r6_r1/policy/planner.hpp
+@@ -51,6 +51,12 @@
+ #if R2_MARKET_INTEGRAL == 2
+   return ConditionalMarket::execute(i,inv,q);
+ #else
++  // TRI_A06_r6_r1: a floor-priced sale pays cash but does not add supply.
++  // A bulk quote cannot certify how many units cross that boundary. Use the
++  // existing sequential primitive ONLY for a positive flow extending past it;
++  // preserve the parent's non-crossing approximation and all purchase paths.
++  if(q>0. && inv+q>ConditionalMarket::saturation(i))
++   return ConditionalMarket::execute(i,inv,q);
+   double p=quote(i,inv,q);
+ #if R2_MARKET_INTEGRAL == 1
+   ConditionalMarket::update(i,inv,q);

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "-DA06_EXEC_MODE=2",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_SALE_CLOCK_MODE=0",
+    "-I",
+    "/mnt/data/A06_r5_work/candidate",
+    "/mnt/data/A06_r5_work/candidate/tests/test_r5_contract.cpp",
+    "/mnt/data/A06_r5_work/candidate/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/data/A06_r5_work/candidate/build/test_r5_contract"
+  ],
+  "exit": 0,
+  "test_source_sha256": "86d186d6ba8f738d1f4683ba343a96262904d4cab1ba5bacda06fd6ef5bcbe8f",
+  "native_source_receipt": "build/joint_v2.BUILD.json"
+}

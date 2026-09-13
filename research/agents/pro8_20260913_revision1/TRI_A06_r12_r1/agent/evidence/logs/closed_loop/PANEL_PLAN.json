@@ -1,0 +1,19 @@
+{
+  "declared_at_utc": "2026-09-13T02:39:55.769221+00:00",
+  "scope": "bounded fresh development smoke panel, not central/public opponent panel",
+  "seeds": [
+    2613091201,
+    2613091202,
+    2613091203,
+    2613091204
+  ],
+  "opponent_native": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+  "candidate_native": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "candidate_games": 8,
+  "parent_parent_control_games": 4,
+  "both_candidate_seats": true,
+  "workers": 1,
+  "per_game_timeout_seconds": 25,
+  "pilot_completed_before_declaration": "parent-vs-parent seed2613091201; preliminary candidate library pilot kept separately",
+  "interpretation": "No extrapolation to 12-opponent1536 panel or saved narrow-win outcomes."
+}

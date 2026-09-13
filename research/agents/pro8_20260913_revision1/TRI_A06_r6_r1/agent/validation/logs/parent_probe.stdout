@@ -1,0 +1,3 @@
+{"case": "soil_v219g_4145681841_seat0", "count": 72, "exact_action_matches": 72, "total_seconds": 0.3515302240001006, "max_seconds": 0.13835915000001364, "mean_seconds": 0.004882364222223619}
+{"case": "thomas_955_v2_4145681832_seat0", "count": 72, "exact_action_matches": 72, "total_seconds": 0.2903270099999702, "max_seconds": 0.10273037499999305, "mean_seconds": 0.00403231958333292}
+{"case": "submission_56149565_4145681830_seat0", "count": 72, "exact_action_matches": 72, "total_seconds": 0.2890183610000747, "max_seconds": 0.09678425600000651, "mean_seconds": 0.004014143902778816}

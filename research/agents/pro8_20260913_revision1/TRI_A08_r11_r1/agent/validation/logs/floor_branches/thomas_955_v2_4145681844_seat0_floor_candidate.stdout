@@ -1,0 +1,7 @@
+{
+  "case": "thomas_955_v2_4145681844_seat0_floor",
+  "binary": "450223885af7296e9b60683a9b65d96d9829fcf02819baa205499cadd33c90fd",
+  "complete": false,
+  "branches": [],
+  "error": "AssertionError('Sale mechanism changed unit prefix at common decision')"
+}

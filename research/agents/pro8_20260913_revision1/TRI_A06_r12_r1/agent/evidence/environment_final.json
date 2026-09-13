@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-09-13T03:00:22.721973+00:00",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cgroup": {
+    "cpu.max": "400000 100000",
+    "cpu.stat": "usage_usec 594333994\nuser_usec 571699326\nsystem_usec 22634667\nnice_usec 0\nnr_periods 14995\nnr_throttled 33\nthrottled_usec 1404201\nnr_bursts 0\nburst_usec 0",
+    "cpuset.cpus.effective": "0-4",
+    "memory.max": "4294967296",
+    "memory.current": "399687680",
+    "memory.peak": "1084784640",
+    "memory.swap.max": "max"
+  },
+  "host_memory_informational_only_bytes": {
+    "MemTotal": 6236913664,
+    "MemAvailable": 5191581696
+  },
+  "disk_bytes": {
+    "total": 33770192896,
+    "used": 40198144,
+    "free": 31995232256
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "linux"
+}

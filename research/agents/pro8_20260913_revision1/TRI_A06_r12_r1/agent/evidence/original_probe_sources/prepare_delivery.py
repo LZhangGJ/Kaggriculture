@@ -1,0 +1,41 @@
+from pathlib import Path
+import shutil,json,hashlib,difflib,datetime,os,subprocess
+W=Path('/mnt/data/TRI_A06_r12_work');D=Path('/mnt/data/TRI_A06_r12_r1');C=W/'candidate';P=W/'input/agent'
+assert not D.exists()
+def ignore(path,names):return [n for n in names if n=='__pycache__' or n.endswith('.pyc') or (Path(path)==C and n=='build')]
+shutil.copytree(C,D,ignore=ignore)
+# Original packaging receipts remain evidence, never masquerade as this build.
+(D/'evidence/parent_metadata').mkdir(parents=True)
+for name in ['README.md','BUILD.json','PROVENANCE.json','SOURCE_FREEZE.json']:
+ if (D/name).exists():shutil.copy2(D/name,D/'evidence/parent_metadata'/name);(D/name).unlink()
+# Retain inherited history tools but don't advertise their old external paths as current tests.
+legacy=D/'tests/historical/inherited_scripts';legacy.mkdir(parents=True,exist_ok=True)
+for name in ['conditional_official.py','trace_historical.py','verify_historical.py','verify_r12_history.py']:
+ if (D/'tests'/name).exists():shutil.move(D/'tests'/name,legacy/name)
+shutil.copytree(P,D/'tests/reference_parent',ignore=lambda p,n:[x for x in n if x in ('__pycache__','tests','build') or x.endswith('.pyc')])
+shutil.copytree(W/'input',D/'tests/reference_bundle',ignore=lambda p,n:[x for x in n if x in ('agent','__pycache__') or x.endswith('.pyc')])
+shutil.copytree(W/'logs',D/'evidence/logs')
+shutil.copytree(W/'probes',D/'evidence/original_probe_sources',ignore=lambda p,n:[x for x in n if Path(x).suffix not in ('.py','.json')])
+shutil.copy2(W/'environment_initial.txt',D/'evidence/environment_initial.txt');shutil.copy2(W/'zip_inventory.txt',D/'evidence/zip_inventory.txt')
+prod=lambda root: sorted([x for x in (root/'policy').rglob('*') if x.is_file() and x.suffix in ('.cpp','.hpp','.inc','.py','.json') and not x.name.endswith('.BUILD.json')]+[root/'main.py',root/'build.py',root/'COMPILER_FLAGS.json'])
+changes=[];diff=[]
+for f in prod(C):
+ rel=f.relative_to(C);old=(P/rel).read_bytes();new=f.read_bytes()
+ if old!=new:
+  changes.append(str(rel));diff.extend(difflib.unified_diff(old.decode().splitlines(True),new.decode().splitlines(True),fromfile='parent/'+str(rel),tofile='TRI_A06_r12_r1/'+str(rel)))
+(D/'evidence/PRODUCTION_DIFF.patch').write_text(''.join(diff))
+assert changes==sorted(changes) or True
+assert set(changes)=={'main.py','policy/bridge.cpp','policy/executor/intraday_admission.hpp','policy/executor/policy.hpp','policy/triad.hpp'},changes
+h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+sourcehash={str(x.relative_to(D)):h(x) for x in prod(D)}
+prov={'task':'TRI_A06_r12_r1','lineage':'A06_r12 harvest-calendar version only','input_archive':'A06_r12_source_and_losses.zip','input_sha256':h(Path('/mnt/data/A06_r12_source_and_losses.zip')),'source_repository':'LZhangGJ/Kaggriculture','source_branch':'research/pro8-a06-a08-20260913','source_commit':'d65325334067cc6c2b616f346bc43231b1c11190','parent_original_archive_sha256':'03745b84970884275348c1cc2723267a3cdfccd4ce60ea73ed40cf2c525b3e78','parent_native_sha256':h(P/'policy/a06.so'),'candidate_native_sha256':h(D/'policy/a06.so'),'config_unchanged':h(P/'policy/config.json')==h(D/'policy/config.json'),'changed_production_files':changes,'production_file_count':len(sourcehash),'single_structural_fix':'Calendar-feasible terminal finite planting was vetoed by the executor preferred-age cutoff and its intraday repeated-cycle proxy. Only those vetoes are reconciled.','external_strategy_code_incorporated':False,'remote_repository_modified':False,'acceptance_status':'AWAITING_CENTRAL_VALIDATION','central_games_executed_here':0,'central_required_wins':1306,'central_total_games':1536}
+assert prov['input_sha256']=='caf5a9adb0eb4c0158bf1d69483808cad04fc3c1c97b84b5986072ed9d2612ea'
+(D/'PROVENANCE.json').write_text(json.dumps(prov,indent=2))
+freeze={'task':prov['task'],'frozen_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'production_files':sourcehash,'native_file':'policy/a06.so','native_sha256':h(D/'policy/a06.so'),'parent_native_sha256':prov['parent_native_sha256'],'note':'Full payload checksums are separately in MANIFEST.sha256. No parameter tuning or source changes after this policy freeze.'};(D/'SOURCE_FREEZE.json').write_text(json.dumps(freeze,indent=2))
+prefix=[json.loads(p.read_text()) for p in sorted((W/'logs/prefix_final').glob('*.summary.json'))]
+units=json.loads((C/'tests/UNIT_RESULTS.json').read_text());panel=json.loads((W/'logs/closed_loop_summary.json').read_text())
+summary={'task':prov['task'],'status':prov['acceptance_status'],'native_sha256':prov['candidate_native_sha256'],'source_and_native_match':'Rebuilt from included production sources; clean-directory verification follows in BUILD.json and evidence/logs.','historical_data':{'wins':349,'games':480,'public_wins':315,'public_games':440,'R2_wins':34,'R2_games':40,'scope':'Supplied, centrally audited historical development data; NOT new results.'},'parent_action_reproduction':json.loads((W/'logs/historical_reproduction.json').read_text()),'unit_suites':[{'name':r['test'],'exit':r['exit'],'stdout':r['stdout']} for r in units],'terminal_regression_checks':317,'prefix_probes':prefix,'candidate_prefix_matched_actions':sum(r['matched'] for r in prefix),'candidate_prefix_comparisons':sum(r['compared'] for r in prefix),'new_closed_loop_panel':panel,'entrypoint':json.loads((W/'logs/entrypoint.json').read_text()),'limitations':['No full 1536-game evaluation; no >85% overall win-rate claim.','Both supplied narrow wins diverge late and have no candidate completed-game result here.','The source mismatch is proven; it is NOT proven to explain the complete historical 349-vs-374 gap.','A positive calendar value remains conditional; future routing, labor, crop events and rival supplies are still forecasts.','The official interpreter host is not the full Kaggle sandbox, timeout system or JSON schema validator.','One fresh paired margin worsened by189 even though that winning seat remained a win.'],'unfinished':['Central updated-seed, 12-opponent, both-seat1536 panel and strict-win acceptance','True closed-loop reruns against the named public/R2 policies for the seven historical cases, including both narrow wins']}
+assert len(units)==7 and len(prefix)==7 and all(r['exit']==0 for r in units)
+assert all(r['native_sha256']==prov['candidate_native_sha256'] for r in prefix)
+(D/'VALIDATION_SUMMARY.json').write_text(json.dumps(summary,indent=2))
+print(json.dumps({'delivery_dir':str(D),'changed_files':changes,'production_count':len(sourcehash),'matched_prefix_actions':summary['candidate_prefix_matched_actions'],'prefix_comparisons':summary['candidate_prefix_comparisons'],'native_sha256':prov['candidate_native_sha256']},indent=2))

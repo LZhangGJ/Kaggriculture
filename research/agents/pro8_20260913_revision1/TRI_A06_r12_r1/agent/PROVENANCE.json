@@ -1,0 +1,28 @@
+{
+  "task": "TRI_A06_r12_r1",
+  "lineage": "A06_r12 harvest-calendar version only",
+  "input_archive": "A06_r12_source_and_losses.zip",
+  "input_sha256": "caf5a9adb0eb4c0158bf1d69483808cad04fc3c1c97b84b5986072ed9d2612ea",
+  "source_repository": "LZhangGJ/Kaggriculture",
+  "source_branch": "research/pro8-a06-a08-20260913",
+  "source_commit": "d65325334067cc6c2b616f346bc43231b1c11190",
+  "parent_original_archive_sha256": "03745b84970884275348c1cc2723267a3cdfccd4ce60ea73ed40cf2c525b3e78",
+  "parent_native_sha256": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+  "candidate_native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "config_unchanged": true,
+  "changed_production_files": [
+    "main.py",
+    "policy/bridge.cpp",
+    "policy/executor/intraday_admission.hpp",
+    "policy/executor/policy.hpp",
+    "policy/triad.hpp"
+  ],
+  "production_file_count": 47,
+  "single_structural_fix": "Calendar-feasible terminal finite planting was vetoed by the executor preferred-age cutoff and its intraday repeated-cycle proxy. Only those vetoes are reconciled.",
+  "external_strategy_code_incorporated": false,
+  "remote_repository_modified": false,
+  "acceptance_status": "AWAITING_CENTRAL_VALIDATION",
+  "central_games_executed_here": 0,
+  "central_required_wins": 1306,
+  "central_total_games": 1536
+}

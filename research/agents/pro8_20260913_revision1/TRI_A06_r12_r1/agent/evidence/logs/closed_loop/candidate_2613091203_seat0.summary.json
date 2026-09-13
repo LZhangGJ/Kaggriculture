@@ -1,0 +1,86 @@
+{
+  "scope": "new complete official-engine game; both policies execute against current legal observations",
+  "tag": "candidate_2613091203_seat0",
+  "started_at_utc": "2026-09-13T02:45:43.299460+00:00",
+  "finished_at_utc": "2026-09-13T02:45:52.633841+00:00",
+  "seed_driver_only": 2613091203,
+  "tested_seat": 0,
+  "variant": "candidate",
+  "opponent": "exact supplied A06_r12 native (not a named public opponent or R2)",
+  "native_sha256": [
+    "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+    "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a"
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "steps": 719,
+  "player_days": 60,
+  "strict_win": false,
+  "draw": false,
+  "cash": [
+    85505.0,
+    88288.0
+  ],
+  "margin": -2783.0,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    85505.0,
+    88288.0
+  ],
+  "seconds": 9.334509347999983,
+  "policy_seconds": [
+    3.8589659099975506,
+    3.733729921002123
+  ],
+  "max_call_seconds": [
+    0.255855696000026,
+    0.24868537599991214
+  ],
+  "peak_rss_kib": 115000,
+  "unit_action_counts": [
+    {
+      "PASS": 791,
+      "PICKUP": 264,
+      "WEST": 732,
+      "BUILD_PASTURE": 13,
+      "PLACE": 53,
+      "NORTH": 698,
+      "FEED": 348,
+      "PLANT": 153,
+      "CARE": 321,
+      "WATER": 897,
+      "EAST": 509,
+      "SOUTH": 478,
+      "COLLECT_FERTILIZER": 411,
+      "DROP": 62,
+      "HARVEST": 549,
+      "DIG": 35,
+      "BUILD_COOP": 7,
+      "FERTILIZE": 175
+    },
+    {
+      "PASS": 796,
+      "PICKUP": 241,
+      "WEST": 759,
+      "BUILD_PASTURE": 13,
+      "PLACE": 54,
+      "NORTH": 656,
+      "FEED": 343,
+      "PLANT": 144,
+      "CARE": 316,
+      "WATER": 878,
+      "EAST": 448,
+      "SOUTH": 429,
+      "COLLECT_FERTILIZER": 410,
+      "DROP": 56,
+      "DIG": 33,
+      "HARVEST": 534,
+      "BUILD_COOP": 7,
+      "FERTILIZE": 157
+    }
+  ],
+  "exception_count": 0,
+  "raw_sha256": "3d26c1affd99ba4a19d6d33f35f7131997a7e4770d371c69837a86748823b5fb"
+}

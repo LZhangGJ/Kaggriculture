@@ -1,0 +1,182 @@
+{
+  "scope": "conditional official branches; no match wins; synthetic rival supply from lawful history, after divergence no saved future used",
+  "comparisons": [
+    {
+      "case": "aurax_shop_v2_4145681837_seat0_floor",
+      "start": 546,
+      "ticks": 4,
+      "scenario": "no_additional_sales",
+      "own_delta_vs_parent": -8.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -8.0,
+      "conditional_objective_delta_competition2": -8.0,
+      "complete": true
+    },
+    {
+      "case": "aurax_shop_v2_4145681837_seat0_floor",
+      "start": 546,
+      "ticks": 4,
+      "scenario": "traffic_queue0",
+      "own_delta_vs_parent": 12.0,
+      "rival_delta_vs_parent": -20.0,
+      "strict_cash_margin_delta": 32.0,
+      "conditional_objective_delta_competition2": 52.0,
+      "complete": true
+    },
+    {
+      "case": "aurax_shop_v2_4145681837_seat0_floor",
+      "start": 546,
+      "ticks": 4,
+      "scenario": "traffic_queue3",
+      "own_delta_vs_parent": -8.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -8.0,
+      "conditional_objective_delta_competition2": -8.0,
+      "complete": true
+    },
+    {
+      "case": "aurax_shop_v2_4145681837_seat0_floor",
+      "start": 546,
+      "ticks": 4,
+      "scenario": "traffic_queue9",
+      "own_delta_vs_parent": -8.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -8.0,
+      "conditional_objective_delta_competition2": -8.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681832_seat0_floor",
+      "start": 482,
+      "ticks": 4,
+      "scenario": "no_additional_sales",
+      "own_delta_vs_parent": 0.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": 0.0,
+      "conditional_objective_delta_competition2": 0.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681832_seat0_floor",
+      "start": 482,
+      "ticks": 4,
+      "scenario": "traffic_queue0",
+      "own_delta_vs_parent": 184.0,
+      "rival_delta_vs_parent": -158.0,
+      "strict_cash_margin_delta": 342.0,
+      "conditional_objective_delta_competition2": 500.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681832_seat0_floor",
+      "start": 482,
+      "ticks": 4,
+      "scenario": "traffic_queue3",
+      "own_delta_vs_parent": 1111.0,
+      "rival_delta_vs_parent": -1111.0,
+      "strict_cash_margin_delta": 2222.0,
+      "conditional_objective_delta_competition2": 3333.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681832_seat0_floor",
+      "start": 482,
+      "ticks": 4,
+      "scenario": "traffic_queue9",
+      "own_delta_vs_parent": 1111.0,
+      "rival_delta_vs_parent": -1111.0,
+      "strict_cash_margin_delta": 2222.0,
+      "conditional_objective_delta_competition2": 3333.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681843_seat0_floor",
+      "start": 434,
+      "ticks": 4,
+      "scenario": "no_additional_sales",
+      "own_delta_vs_parent": -19.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -19.0,
+      "conditional_objective_delta_competition2": -19.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681843_seat0_floor",
+      "start": 434,
+      "ticks": 4,
+      "scenario": "traffic_queue0",
+      "own_delta_vs_parent": 136.0,
+      "rival_delta_vs_parent": -155.0,
+      "strict_cash_margin_delta": 291.0,
+      "conditional_objective_delta_competition2": 446.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681843_seat0_floor",
+      "start": 434,
+      "ticks": 4,
+      "scenario": "traffic_queue3",
+      "own_delta_vs_parent": -19.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -19.0,
+      "conditional_objective_delta_competition2": -19.0,
+      "complete": true
+    },
+    {
+      "case": "submission_56149565_4145681843_seat0_floor",
+      "start": 434,
+      "ticks": 4,
+      "scenario": "traffic_queue9",
+      "own_delta_vs_parent": -19.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -19.0,
+      "conditional_objective_delta_competition2": -19.0,
+      "complete": true
+    },
+    {
+      "case": "thomas_955_v2_4145681844_seat0_floor",
+      "start": 604,
+      "ticks": 2,
+      "scenario": "no_additional_sales",
+      "own_delta_vs_parent": -39.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -39.0,
+      "conditional_objective_delta_competition2": -39.0,
+      "complete": true
+    },
+    {
+      "case": "thomas_955_v2_4145681844_seat0_floor",
+      "start": 604,
+      "ticks": 2,
+      "scenario": "traffic_queue0",
+      "own_delta_vs_parent": -26.0,
+      "rival_delta_vs_parent": -13.0,
+      "strict_cash_margin_delta": -13.0,
+      "conditional_objective_delta_competition2": 0.0,
+      "complete": true
+    },
+    {
+      "case": "thomas_955_v2_4145681844_seat0_floor",
+      "start": 604,
+      "ticks": 2,
+      "scenario": "traffic_queue3",
+      "own_delta_vs_parent": -39.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -39.0,
+      "conditional_objective_delta_competition2": -39.0,
+      "complete": true
+    },
+    {
+      "case": "thomas_955_v2_4145681844_seat0_floor",
+      "start": 604,
+      "ticks": 2,
+      "scenario": "traffic_queue9",
+      "own_delta_vs_parent": -39.0,
+      "rival_delta_vs_parent": 0.0,
+      "strict_cash_margin_delta": -39.0,
+      "conditional_objective_delta_competition2": -39.0,
+      "complete": true
+    }
+  ],
+  "fixed_weight_diagnostic_note": "The comparison field with suffix competition2 is only arithmetic at fixed weight2, not the actual live macro objective. Actual macro proposals can use weights1,2,3. Strict cash margin is authoritative."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "prefix_comparison",
+  "command": [
+    "python",
+    "-B",
+    "compare_prefixes.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:31:42.886797+00:00",
+  "timeout_seconds": 150.0,
+  "peak_tree_rss_kb_sampled": 361992,
+  "peak_cgroup_current": 1412153344,
+  "timed_out": false,
+  "pid": 1025,
+  "returncode": 0,
+  "wall_seconds": 30.459390751,
+  "finished_utc": "2026-09-13T02:32:13.346336+00:00",
+  "ru_maxrss_children_kb": 365832
+}

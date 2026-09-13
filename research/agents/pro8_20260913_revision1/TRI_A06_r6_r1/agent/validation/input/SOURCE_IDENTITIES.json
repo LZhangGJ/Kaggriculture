@@ -1,0 +1,41 @@
+{
+  "A08_r11": {
+    "title": "A08 r11",
+    "runtime_assets": {
+      "main.py": "56d9b878d7ed93857da3251bc221764bb0c3d05273d20882560f2c469953266d",
+      "policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "policy/a08_r11.so": "3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb"
+    },
+    "native_file": "policy/a08_r11.so",
+    "native_sha256": "3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb",
+    "original_archive_sha256": "1e3ef9d4b960bcbc9fe47430a253877e68518bad18c9e4a31c6a7a5013dc8af5",
+    "production_sources_checked": 44
+  },
+  "A06_r6": {
+    "title": "A06 r6",
+    "runtime_assets": {
+      "main.py": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+      "policy/agent.py": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f",
+      "policy/config.json": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+      "policy/a06.so": "4119ae39b07c5fd2ef7f79d2f30ee3ee55f0dcd8980707d133a75b92e1140342"
+    },
+    "native_file": "policy/a06.so",
+    "native_sha256": "4119ae39b07c5fd2ef7f79d2f30ee3ee55f0dcd8980707d133a75b92e1140342",
+    "original_archive_sha256": "b1e00c91cdaafcca145dedb4ea41c1cfefc53b61bcb4b73d25f6b63468b2e2aa",
+    "production_sources_checked": 40
+  },
+  "A06_r12": {
+    "title": "A06 r12 — harvest-calendar version",
+    "runtime_assets": {
+      "main.py": "d1e0e98f90908dc6c10e5c1416a6b4327fe3a5c9520c1a1a8639f7ffe12f1cb0",
+      "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+      "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+      "policy/a06.so": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a"
+    },
+    "native_file": "policy/a06.so",
+    "native_sha256": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+    "original_archive_sha256": "03745b84970884275348c1cc2723267a3cdfccd4ce60ea73ed40cf2c525b3e78",
+    "production_sources_checked": 44
+  }
+}

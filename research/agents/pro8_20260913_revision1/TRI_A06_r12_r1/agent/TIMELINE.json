@@ -1,0 +1,16 @@
+{
+  "task": "TRI_A06_r12_r1",
+  "original_dispatch_utc": "2026-09-13T02:18:58.681000+00:00",
+  "hard_deadline_utc": "2026-09-13T04:18:58.681000+00:00",
+  "deadline_was_not_reset": true,
+  "first_resource_capture_utc": "2026-09-13T02:20:34.015128349+00:00",
+  "production_freeze_utc": "2026-09-13T02:51:59.136725+00:00",
+  "delivery_clean_build_receipt_utc": "2026-09-13T02:54:12.925215+00:00",
+  "delivery_entrypoint_and_terminal_recheck_complete_before_utc": "2026-09-13T02:59:39.776170+00:00",
+  "documentation_resource_checkpoint_utc": "2026-09-13T03:00:22.721973+00:00",
+  "elapsed_minutes_at_this_checkpoint": 41.40068288333334,
+  "remaining_minutes_at_this_checkpoint": 78.59931711666667,
+  "note": "The outer archive SHA256 and final post-extraction receipt are recorded separately to avoid a self-referential archive hash. No asynchronous work is scheduled.",
+  "archive_creation_started_at_utc": "2026-09-13T03:01:03.323150+00:00",
+  "post_extraction_record": "External TRI_A06_r12_r1_delivery_receipt.json records final archive hash, extraction/manifest verification and root entrypoint verification; it is external to avoid a self-referential archive hash."
+}

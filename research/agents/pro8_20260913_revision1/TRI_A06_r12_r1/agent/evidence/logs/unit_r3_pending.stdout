@@ -1,0 +1,9 @@
+test_r3_pending 0 mode=0 pending_wheat=1 sell_wheat=1
+mode=1 pending_wheat=1 sell_wheat=0
+mode=2 pending_wheat=1 sell_wheat=0
+mode=3 pending_wheat=1 sell_wheat=0
+mode=4 pending_wheat=1 sell_wheat=0
+mode=5 pending_wheat=1 sell_wheat=0
+PASS pending paid feed preserved through final SELL regeneration
+PASS receipt gate: opening0, purchase0, actual increase300, newday reset0
+

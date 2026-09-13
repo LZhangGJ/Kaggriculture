@@ -1,0 +1,2037 @@
+{
+  "scope": "One-sided conditional primitive only, not full-game counterfactual cash. Official _commit_unit oracle; only positive floor-crossing branches changed.",
+  "positive_official_cases": 2061,
+  "legacy_failures_in_positive_cases": 774,
+  "negative_identical_cases": 729,
+  "fractional_relaxation_cases": 234,
+  "examples": [
+    {
+      "item": "WHEAT",
+      "saturation": 1717032651333,
+      "stock": 1717032651331,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 1717032651344.0
+      },
+      "floor_safe": {
+        "cash": 15.0,
+        "stock": 1717032651333.0
+      },
+      "official": {
+        "cash": 15,
+        "stock": 1717032651333
+      }
+    },
+    {
+      "item": "CARROT",
+      "saturation": 10842,
+      "stock": 10840,
+      "quantity": 13,
+      "legacy": {
+        "cash": 13.0,
+        "stock": 10840.0
+      },
+      "floor_safe": {
+        "cash": 15.0,
+        "stock": 10842.0
+      },
+      "official": {
+        "cash": 15,
+        "stock": 10842
+      }
+    },
+    {
+      "item": "TOMATO",
+      "saturation": 10529,
+      "stock": 10527,
+      "quantity": 13,
+      "legacy": {
+        "cash": 13.0,
+        "stock": 10527.0
+      },
+      "floor_safe": {
+        "cash": 15.0,
+        "stock": 10529.0
+      },
+      "official": {
+        "cash": 15,
+        "stock": 10529
+      }
+    },
+    {
+      "item": "STRAWBERRY",
+      "saturation": 10062,
+      "stock": 10060,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 10073.0
+      },
+      "floor_safe": {
+        "cash": 19.0,
+        "stock": 10062.0
+      },
+      "official": {
+        "cash": 19,
+        "stock": 10062
+      }
+    },
+    {
+      "item": "MELON",
+      "saturation": 10158,
+      "stock": 10156,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 10169.0
+      },
+      "floor_safe": {
+        "cash": 22.0,
+        "stock": 10158.0
+      },
+      "official": {
+        "cash": 22,
+        "stock": 10158
+      }
+    },
+    {
+      "item": "EGG",
+      "saturation": 1713383321443,
+      "stock": 1713383321441,
+      "quantity": 13,
+      "legacy": {
+        "cash": 13.0,
+        "stock": 1713383321441.0
+      },
+      "floor_safe": {
+        "cash": 15.0,
+        "stock": 1713383321443.0
+      },
+      "official": {
+        "cash": 15,
+        "stock": 1713383321443
+      }
+    },
+    {
+      "item": "MILK",
+      "saturation": 10076,
+      "stock": 10074,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 10087.0
+      },
+      "floor_safe": {
+        "cash": 19.0,
+        "stock": 10076.0
+      },
+      "official": {
+        "cash": 19,
+        "stock": 10076
+      }
+    },
+    {
+      "item": "WOOL",
+      "saturation": 10059,
+      "stock": 10057,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 10070.0
+      },
+      "floor_safe": {
+        "cash": 27.0,
+        "stock": 10059.0
+      },
+      "official": {
+        "cash": 27,
+        "stock": 10059
+      }
+    },
+    {
+      "item": "FERTILIZER",
+      "saturation": 10493,
+      "stock": 10491,
+      "quantity": 13,
+      "legacy": {
+        "cash": 16.61111111111111,
+        "stock": 10504.0
+      },
+      "floor_safe": {
+        "cash": 15.0,
+        "stock": 10493.0
+      },
+      "official": {
+        "cash": 15,
+        "stock": 10493
+      }
+    }
+  ],
+  "historical_cases": [
+    {
+      "case": "aurax_shop_v2_4145681841_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 18,
+        "FERTILIZER": 14
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 458,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10056,
+          "own_successful_quantity": 10,
+          "actual_own_revenue_with_rival_lockstep": 41,
+          "conditional_legacy": {
+            "cash": 37.77777777777778,
+            "stock": 10066.0
+          },
+          "conditional_floor_safe": {
+            "cash": 41.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 41,
+            "stock": 10059
+          },
+          "legacy_stock_error": 7.0
+        },
+        {
+          "step": 462,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 530,
+          "day": 22,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10056,
+          "own_successful_quantity": 11,
+          "actual_own_revenue_with_rival_lockstep": 42,
+          "conditional_legacy": {
+            "cash": 38.5,
+            "stock": 10067.0
+          },
+          "conditional_floor_safe": {
+            "cash": 42.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 42,
+            "stock": 10059
+          },
+          "legacy_stock_error": 8.0
+        },
+        {
+          "step": 531,
+          "day": 22,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 615,
+          "day": 25,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 652,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 677,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 680,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 693,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 694,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 712,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 716,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 717,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 718,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "aurax_reactive_v1_4145681835_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 2,
+        "FERTILIZER": 17
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 386,
+          "day": 16,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10058,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 7,
+          "conditional_legacy": {
+            "cash": 3.833333333333333,
+            "stock": 10061.0
+          },
+          "conditional_floor_safe": {
+            "cash": 7.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 7,
+            "stock": 10059
+          },
+          "legacy_stock_error": 2.0
+        },
+        {
+          "step": 626,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 631,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 632,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 646,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 651,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 652,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 663,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 670,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 709,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 4,
+          "actual_own_revenue_with_rival_lockstep": 4,
+          "conditional_legacy": {
+            "cash": 4.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 4.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 4,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 715,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 717,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "submission_56149565_4145681833_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 7,
+        "MELON": 1
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 314,
+          "day": 13,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10054,
+          "own_successful_quantity": 8,
+          "actual_own_revenue_with_rival_lockstep": 92,
+          "conditional_legacy": {
+            "cash": 75.55555555555556,
+            "stock": 10062.0
+          },
+          "conditional_floor_safe": {
+            "cash": 92.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 92,
+            "stock": 10059
+          },
+          "legacy_stock_error": 3.0
+        },
+        {
+          "step": 434,
+          "day": 18,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10057,
+          "own_successful_quantity": 4,
+          "actual_own_revenue_with_rival_lockstep": 18,
+          "conditional_legacy": {
+            "cash": 11.777777777777779,
+            "stock": 10061.0
+          },
+          "conditional_floor_safe": {
+            "cash": 18.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 18,
+            "stock": 10059
+          },
+          "legacy_stock_error": 2.0
+        },
+        {
+          "step": 458,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10058,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 7,
+          "conditional_legacy": {
+            "cash": 3.833333333333333,
+            "stock": 10061.0
+          },
+          "conditional_floor_safe": {
+            "cash": 7.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 7,
+            "stock": 10059
+          },
+          "legacy_stock_error": 2.0
+        }
+      ]
+    },
+    {
+      "case": "thomas_955_v2_4145681832_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "STRAWBERRY": 48,
+        "FERTILIZER": 46
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 530,
+          "day": 22,
+          "item": "STRAWBERRY",
+          "stock_before_first_successful_unit": 10045,
+          "own_successful_quantity": 21,
+          "actual_own_revenue_with_rival_lockstep": 315,
+          "conditional_legacy": {
+            "cash": 296.3333333333333,
+            "stock": 10066.0
+          },
+          "conditional_floor_safe": {
+            "cash": 315.0,
+            "stock": 10062.0
+          },
+          "conditional_official": {
+            "cash": 315,
+            "stock": 10062
+          },
+          "legacy_stock_error": 4.0
+        },
+        {
+          "step": 578,
+          "day": 24,
+          "item": "STRAWBERRY",
+          "stock_before_first_successful_unit": 10062,
+          "own_successful_quantity": 26,
+          "actual_own_revenue_with_rival_lockstep": 26,
+          "conditional_legacy": {
+            "cash": 26.0,
+            "stock": 10062.0
+          },
+          "conditional_floor_safe": {
+            "cash": 26.0,
+            "stock": 10062.0
+          },
+          "conditional_official": {
+            "cash": 26,
+            "stock": 10062
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 623,
+          "day": 25,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 7,
+          "actual_own_revenue_with_rival_lockstep": 7,
+          "conditional_legacy": {
+            "cash": 7.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 7.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 7,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 626,
+          "day": 26,
+          "item": "STRAWBERRY",
+          "stock_before_first_successful_unit": 10062,
+          "own_successful_quantity": 18,
+          "actual_own_revenue_with_rival_lockstep": 18,
+          "conditional_legacy": {
+            "cash": 18.0,
+            "stock": 10062.0
+          },
+          "conditional_floor_safe": {
+            "cash": 18.0,
+            "stock": 10062.0
+          },
+          "conditional_official": {
+            "cash": 18,
+            "stock": 10062
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 631,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 641,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 645,
+          "day": 26,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 651,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 656,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 670,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 672,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 9,
+          "actual_own_revenue_with_rival_lockstep": 9,
+          "conditional_legacy": {
+            "cash": 9.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 9.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 9,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 692,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 693,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 697,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10484,
+          "own_successful_quantity": 12,
+          "actual_own_revenue_with_rival_lockstep": 25,
+          "conditional_legacy": {
+            "cash": 24.0,
+            "stock": 10496.0
+          },
+          "conditional_floor_safe": {
+            "cash": 25.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 25,
+            "stock": 10493
+          },
+          "legacy_stock_error": 3.0
+        },
+        {
+          "step": 704,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 710,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 713,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 717,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 718,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 6,
+          "actual_own_revenue_with_rival_lockstep": 6,
+          "conditional_legacy": {
+            "cash": 6.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 6.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 6,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "soil_v219g_4145681841_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 18,
+        "FERTILIZER": 14
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 458,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10056,
+          "own_successful_quantity": 10,
+          "actual_own_revenue_with_rival_lockstep": 41,
+          "conditional_legacy": {
+            "cash": 37.77777777777778,
+            "stock": 10066.0
+          },
+          "conditional_floor_safe": {
+            "cash": 41.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 41,
+            "stock": 10059
+          },
+          "legacy_stock_error": 7.0
+        },
+        {
+          "step": 462,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 530,
+          "day": 22,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10056,
+          "own_successful_quantity": 11,
+          "actual_own_revenue_with_rival_lockstep": 42,
+          "conditional_legacy": {
+            "cash": 38.5,
+            "stock": 10067.0
+          },
+          "conditional_floor_safe": {
+            "cash": 42.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 42,
+            "stock": 10059
+          },
+          "legacy_stock_error": 8.0
+        },
+        {
+          "step": 531,
+          "day": 22,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 615,
+          "day": 25,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 652,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 677,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 680,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 693,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 694,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 712,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 716,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 717,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 718,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "aurax_shop_v2_4145681830_seat1",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 8,
+        "MILK": 15,
+        "STRAWBERRY": 8,
+        "FERTILIZER": 25
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 314,
+          "day": 13,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10050,
+          "own_successful_quantity": 12,
+          "actual_own_revenue_with_rival_lockstep": 276,
+          "conditional_legacy": {
+            "cash": 256.0,
+            "stock": 10062.0
+          },
+          "conditional_floor_safe": {
+            "cash": 276.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 276,
+            "stock": 10059
+          },
+          "legacy_stock_error": 3.0
+        },
+        {
+          "step": 338,
+          "day": 14,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10075,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 4,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10075.0
+          },
+          "conditional_floor_safe": {
+            "cash": 4.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 4,
+            "stock": 10076
+          },
+          "legacy_stock_error": -1.0
+        },
+        {
+          "step": 362,
+          "day": 15,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10076,
+          "own_successful_quantity": 5,
+          "actual_own_revenue_with_rival_lockstep": 5,
+          "conditional_legacy": {
+            "cash": 5.0,
+            "stock": 10076.0
+          },
+          "conditional_floor_safe": {
+            "cash": 5.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 5,
+            "stock": 10076
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 386,
+          "day": 16,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10058,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 7,
+          "conditional_legacy": {
+            "cash": 3.833333333333333,
+            "stock": 10061.0
+          },
+          "conditional_floor_safe": {
+            "cash": 7.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 7,
+            "stock": 10059
+          },
+          "legacy_stock_error": 2.0
+        },
+        {
+          "step": 410,
+          "day": 17,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10074,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 9,
+          "conditional_legacy": {
+            "cash": 6.833333333333333,
+            "stock": 10077.0
+          },
+          "conditional_floor_safe": {
+            "cash": 9.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 9,
+            "stock": 10076
+          },
+          "legacy_stock_error": 1.0
+        },
+        {
+          "step": 455,
+          "day": 18,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10075,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 4,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10075.0
+          },
+          "conditional_floor_safe": {
+            "cash": 4.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 4,
+            "stock": 10076
+          },
+          "legacy_stock_error": -1.0
+        },
+        {
+          "step": 455,
+          "day": 18,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 458,
+          "day": 19,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10074,
+          "own_successful_quantity": 6,
+          "actual_own_revenue_with_rival_lockstep": 12,
+          "conditional_legacy": {
+            "cash": 9.333333333333334,
+            "stock": 10080.0
+          },
+          "conditional_floor_safe": {
+            "cash": 12.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 12,
+            "stock": 10076
+          },
+          "legacy_stock_error": 4.0
+        },
+        {
+          "step": 458,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 506,
+          "day": 21,
+          "item": "MILK",
+          "stock_before_first_successful_unit": 10074,
+          "own_successful_quantity": 5,
+          "actual_own_revenue_with_rival_lockstep": 11,
+          "conditional_legacy": {
+            "cash": 9.166666666666666,
+            "stock": 10079.0
+          },
+          "conditional_floor_safe": {
+            "cash": 11.0,
+            "stock": 10076.0
+          },
+          "conditional_official": {
+            "cash": 11,
+            "stock": 10076
+          },
+          "legacy_stock_error": 3.0
+        },
+        {
+          "step": 578,
+          "day": 24,
+          "item": "STRAWBERRY",
+          "stock_before_first_successful_unit": 10056,
+          "own_successful_quantity": 9,
+          "actual_own_revenue_with_rival_lockstep": 50,
+          "conditional_legacy": {
+            "cash": 46.0,
+            "stock": 10065.0
+          },
+          "conditional_floor_safe": {
+            "cash": 50.0,
+            "stock": 10062.0
+          },
+          "conditional_official": {
+            "cash": 50,
+            "stock": 10062
+          },
+          "legacy_stock_error": 3.0
+        },
+        {
+          "step": 602,
+          "day": 25,
+          "item": "STRAWBERRY",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 8,
+          "actual_own_revenue_with_rival_lockstep": 20,
+          "conditional_legacy": {
+            "cash": 16.88888888888889,
+            "stock": 10067.0
+          },
+          "conditional_floor_safe": {
+            "cash": 20.0,
+            "stock": 10062.0
+          },
+          "conditional_official": {
+            "cash": 20,
+            "stock": 10062
+          },
+          "legacy_stock_error": 5.0
+        },
+        {
+          "step": 669,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 670,
+          "day": 27,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 676,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 690,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 693,
+          "day": 28,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 697,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10492,
+          "own_successful_quantity": 9,
+          "actual_own_revenue_with_rival_lockstep": 11,
+          "conditional_legacy": {
+            "cash": 9.0,
+            "stock": 10492.0
+          },
+          "conditional_floor_safe": {
+            "cash": 10.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 10,
+            "stock": 10493
+          },
+          "legacy_stock_error": -1.0
+        },
+        {
+          "step": 715,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 2,
+          "actual_own_revenue_with_rival_lockstep": 2,
+          "conditional_legacy": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 2.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 2,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 716,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 1,
+          "actual_own_revenue_with_rival_lockstep": 1,
+          "conditional_legacy": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 1.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 1,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        },
+        {
+          "step": 717,
+          "day": 29,
+          "item": "FERTILIZER",
+          "stock_before_first_successful_unit": 10493,
+          "own_successful_quantity": 8,
+          "actual_own_revenue_with_rival_lockstep": 8,
+          "conditional_legacy": {
+            "cash": 8.0,
+            "stock": 10493.0
+          },
+          "conditional_floor_safe": {
+            "cash": 8.0,
+            "stock": 10493.0
+          },
+          "conditional_official": {
+            "cash": 8,
+            "stock": 10493
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "submission_56149565_4145681830_seat0",
+      "scope": "Historical state/order support. Conditional one-sided batch comparison does NOT replace actual simultaneous-order revenue or imply recoverable profit.",
+      "verified_transitions": 719,
+      "own_floor_sale_units": {
+        "WOOL": 4,
+        "STRAWBERRY": 10
+      },
+      "floor_crossing_successful_batches": [
+        {
+          "step": 314,
+          "day": 13,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10054,
+          "own_successful_quantity": 6,
+          "actual_own_revenue_with_rival_lockstep": 90,
+          "conditional_legacy": {
+            "cash": 74.33333333333334,
+            "stock": 10060.0
+          },
+          "conditional_floor_safe": {
+            "cash": 90.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 90,
+            "stock": 10059
+          },
+          "legacy_stock_error": 1.0
+        },
+        {
+          "step": 458,
+          "day": 19,
+          "item": "WOOL",
+          "stock_before_first_successful_unit": 10059,
+          "own_successful_quantity": 3,
+          "actual_own_revenue_with_rival_lockstep": 3,
+          "conditional_legacy": {
+            "cash": 3.0,
+            "stock": 10059.0
+          },
+          "conditional_floor_safe": {
+            "cash": 3.0,
+            "stock": 10059.0
+          },
+          "conditional_official": {
+            "cash": 3,
+            "stock": 10059
+          },
+          "legacy_stock_error": 0.0
+        }
+      ]
+    }
+  ]
+}

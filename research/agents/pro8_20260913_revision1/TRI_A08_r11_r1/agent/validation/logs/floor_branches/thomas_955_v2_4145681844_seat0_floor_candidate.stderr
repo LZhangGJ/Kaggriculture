@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/TRI_A08_work/candidate/tests/short_sale_branches.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/TRI_A08_work/candidate/tests/short_sale_branches.py", line 61, in main
+    assert own.get('farmer')==data['actions'][start][seat].get('farmer') and own.get('hands')==data['actions'][start][seat].get('hands'), 'Sale mechanism changed unit prefix at common decision'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Sale mechanism changed unit prefix at common decision

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "production",
+    "matched_native_load": true,
+    "sha256": "54cc18671d367ea30f008e6b11950e2493d99ff69b3b0b4589771c168a70efb5"
+  },
+  {
+    "name": "phase_v1",
+    "matched_native_load": true,
+    "sha256": "44ef1276401a4689170e20d80815087f06413f4ade194ffc23bd8221f8eae66f"
+  },
+  {
+    "name": "joint_v2",
+    "matched_native_load": true,
+    "sha256": "54cc18671d367ea30f008e6b11950e2493d99ff69b3b0b4589771c168a70efb5"
+  }
+]

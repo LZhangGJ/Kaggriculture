@@ -1,0 +1,20 @@
+{
+  "label": "floor_sale_dp_tests.compile",
+  "utc": "2026-09-13T03:02:19.866514+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_r11_r1_release/tests/floor_sale_dp_tests.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests"
+  ],
+  "returncode": 0,
+  "wall_seconds": 3.3240941280000698
+}

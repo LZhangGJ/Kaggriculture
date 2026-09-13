@@ -1,0 +1,13 @@
+{
+  "author": "A06",
+  "revision": 12,
+  "archive_sha256": "03745b84970884275348c1cc2723267a3cdfccd4ce60ea73ed40cf2c525b3e78",
+  "original_chat": "https://chatgpt.com/c/6aa4bdc4-1c94-83ee-894b-f33b183aadb3",
+  "runtime_assets": {
+    "main.py": "d1e0e98f90908dc6c10e5c1416a6b4327fe3a5c9520c1a1a8639f7ffe12f1cb0",
+    "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+    "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+    "policy/a06.so": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a"
+  },
+  "scope": "Byte-identical inspected runtime assets; full source and all experiments preserved in ../package"
+}

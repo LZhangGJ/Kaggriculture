@@ -1,0 +1,80 @@
+{
+  "TRI_A08_r11_r1": {
+    "runtime_assets": {
+      "main.py": "5e8cb8970a838ba3359192a1a7ff227cfb6bb9faf6f5fe7e70166d67e8d5572d",
+      "policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "policy/tri_a08_r11_r1.so": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c"
+    },
+    "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+    "zip_sha256": "d1a043f09e3f155256aa956b4e37b418f07828ea0bdd58843ac724d051be45fd",
+    "central_receipt_sha256": "14d147ae545af1b2fb5bb292b2839a9854f73158a129924be6456fffbeb14934",
+    "title": "A08 r11 revision 1",
+    "delivery_files_verified": 866,
+    "overall": {
+      "games": 1536,
+      "wins": 1054,
+      "draws": 0,
+      "win_rate": 0.6861979166666666,
+      "mean_own_terminal_cash": 107498.498046875,
+      "mean_opponent_terminal_cash": 93598.73893229167,
+      "mean_margin": 13899.759114583334,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  },
+  "TRI_A06_r6_r1": {
+    "runtime_assets": {
+      "main.py": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+      "policy/agent.py": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f",
+      "policy/config.json": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+      "policy/a06.so": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23"
+    },
+    "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+    "zip_sha256": "38a1fc1863ecb03535f8ea79a4fa86409913d492b8fd8181811e11871e8e7677",
+    "central_receipt_sha256": "427dc078f961c117b6b6549d739ee4b79e6b58ffc040811f752cbad0f25a466f",
+    "title": "A06 r6 revision 1",
+    "delivery_files_verified": 308,
+    "overall": {
+      "games": 1536,
+      "wins": 1196,
+      "draws": 0,
+      "win_rate": 0.7786458333333334,
+      "mean_own_terminal_cash": 105068.60546875,
+      "mean_opponent_terminal_cash": 90503.21484375,
+      "mean_margin": 14565.390625,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  },
+  "TRI_A06_r12_r1": {
+    "runtime_assets": {
+      "main.py": "348bfe7d6000c980c01e73b6b15cff17e9b9154c0f014e90c6722f296d3674b4",
+      "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+      "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+      "policy/a06.so": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b"
+    },
+    "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+    "zip_sha256": "eae4ca287d258e20fb4536a506c261bcb03f23a219c1b146e26128d5ceb24eba",
+    "central_receipt_sha256": "1db8707fb20deae948e81bcd63a6e333cc3eceb76b068abefd58401b881b110f",
+    "title": "A06 r12 calendar revision 1",
+    "delivery_files_verified": 369,
+    "overall": {
+      "games": 1536,
+      "wins": 1099,
+      "draws": 0,
+      "win_rate": 0.7154947916666666,
+      "mean_own_terminal_cash": 103808.80598958333,
+      "mean_opponent_terminal_cash": 89155.7734375,
+      "mean_margin": 14653.032552083334,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  }
+}

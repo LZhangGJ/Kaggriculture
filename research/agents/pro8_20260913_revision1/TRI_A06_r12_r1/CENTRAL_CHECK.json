@@ -1,0 +1,65 @@
+{
+  "checked_utc": "2026-09-13T03:11:17.666737+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "eae4ca287d258e20fb4536a506c261bcb03f23a219c1b146e26128d5ceb24eba",
+  "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "manifest_files_verified": 368,
+  "build_inputs_verified": 47,
+  "changed_files": [
+    "policy/bridge.cpp",
+    "policy/executor/intraday_admission.hpp",
+    "policy/executor/policy.hpp",
+    "policy/triad.hpp",
+    "main.py"
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "tests": [
+    {
+      "role": "parent",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-ffp-contract=off",
+        "-DA06_EXEC_MODE=2",
+        "-DR2_LOCAL_SALE_TIMING=1",
+        "-DR2_FINITE_FERTILIZER=1",
+        "-DR2_CROP_CLOCK_MODE=1",
+        "-DR2_OBSERVE_PUBLIC_TRADES=1",
+        "-DR2_SALE_CLOCK_MODE=0",
+        "-I",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/publish_checkout/research/agents/pro8_20260913/A06_r12",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/package/tests/test_terminal_calendar.cpp",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/publish_checkout/research/agents/pro8_20260913/A06_r12/policy/executor/vendor/simulator.cpp",
+        "-o",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/central/parent_terminal_test"
+      ],
+      "result": "day=26 crop=0 selected_finish=29 positive_output=3 compiled_plant=0\nday=27 crop=0 selected_finish=29 positive_output=2 compiled_plant=0\nday=27 crop=1 selected_finish=29 positive_output=2 compiled_plant=0\nREPRODUCED: 3 legal positive-output calendar paths rejected by original compiler\n"
+    },
+    {
+      "role": "candidate",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-ffp-contract=off",
+        "-DA06_EXEC_MODE=2",
+        "-DR2_LOCAL_SALE_TIMING=1",
+        "-DR2_FINITE_FERTILIZER=1",
+        "-DR2_CROP_CLOCK_MODE=1",
+        "-DR2_OBSERVE_PUBLIC_TRADES=1",
+        "-DR2_SALE_CLOCK_MODE=0",
+        "-I",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/package",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/package/tests/test_terminal_calendar.cpp",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/package/policy/executor/vendor/simulator.cpp",
+        "-o",
+        "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r1/central/candidate_terminal_test"
+      ],
+      "result": "day=26 crop=0 selected_finish=29 positive_output=3 compiled_plant=1\nday=27 crop=0 selected_finish=29 positive_output=2 compiled_plant=1\nday=27 crop=1 selected_finish=29 positive_output=2 compiled_plant=1\nPASS terminal calendar admission: 317 positive/negative checks; actual cash/receipt, idle labor, order cap, end time, paid successor and OFF preserved\n"
+    }
+  ],
+  "root_entry_observation_calls": 48,
+  "new_agent_games": 0,
+  "seconds": 177.67068325000037
+}

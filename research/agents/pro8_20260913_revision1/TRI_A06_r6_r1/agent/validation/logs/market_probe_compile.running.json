@@ -1,0 +1,23 @@
+{
+  "name": "market_probe_compile",
+  "command": [
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-ffp-contract=off",
+    "-shared",
+    "-fPIC",
+    "-I",
+    "candidate",
+    "tests/market_primitive_probe.cpp",
+    "-o",
+    "diagnostics/market_primitive_probe.so"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:27:45.164015+00:00",
+  "timeout_seconds": 90.0,
+  "peak_tree_rss_kb_sampled": 0,
+  "peak_cgroup_current": 0,
+  "timed_out": false,
+  "pid": 789
+}

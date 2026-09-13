@@ -1,0 +1,21 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "status": "CORRECTNESS_REPAIR_CANDIDATE_FOR_CENTRAL_EVALUATION_NOT_ACCEPTED",
+  "parent_lineage": "A06_r6 only",
+  "input_zip_sha256": "bbd5112684c8cb910d46d163c450b75035360c42a073bbb3975a005d984e6b12",
+  "parent_git_branch": "research/pro8-a06-a08-20260913",
+  "parent_git_commit": "d65325334067cc6c2b616f346bc43231b1c11190",
+  "parent_native_sha256": "4119ae39b07c5fd2ef7f79d2f30ee3ee55f0dcd8980707d133a75b92e1140342",
+  "candidate_native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "changed_production_sources": [
+    "policy/planner.hpp"
+  ],
+  "unchanged_root_codec_config_flags_builder": true,
+  "runtime": {
+    "main.py": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+    "policy/agent.py": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f",
+    "policy/config.json": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+    "policy/a06.so": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23"
+  },
+  "frozen_source_set_sha256": "b44cc609caa7462b6235a87d43e829a94c419cf17539501f999888bd7a22f328"
+}

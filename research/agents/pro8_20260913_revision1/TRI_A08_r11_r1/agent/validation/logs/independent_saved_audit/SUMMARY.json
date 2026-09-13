@@ -1,0 +1,2572 @@
+{
+  "fixtures": 7,
+  "matching_transitions": 5033,
+  "matching_player_days": 420,
+  "new_games": 0,
+  "passed": true,
+  "receipts": [
+    {
+      "fixture": "aurax_shop_v2_4145681837_seat0.json.gz",
+      "fixture_sha256": "0b5c3171fb93c241fc52574db94574469ea55c67768b8e6f5ae128528c64ccf1",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 23.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 523.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 79.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 600.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 191.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 963.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 274.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 268.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 669.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 889.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 782.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 781.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 781.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 745.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 561.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 310.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 1824.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 1061.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 2494.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 3008.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 17033.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 5780.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 18120.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 5677.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 20262.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 13030.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 24094.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 14480.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 27646.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 22755.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 35292.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 28413.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 40491.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 33942.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 44814.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 39714.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 49616.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 46607.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 53219.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 53115.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 57854.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 57494.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 62366.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 60477.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 64530.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 62440.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 66554.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 64490.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 68625.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 67689.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 70984.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 69901.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 73118.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 73745.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 76884.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 77724.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 80698.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 88489.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 88714.0
+        }
+      ],
+      "cash_final": [
+        88489.0,
+        88714.0
+      ],
+      "failed_market_units_both": [
+        0,
+        121
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 198,
+          "FERTILIZER_revenue": 11689.0,
+          "WHEAT_sold": 290,
+          "WHEAT_revenue": 13524.0,
+          "WOOL_sold": 81,
+          "WOOL_revenue": 7660.0,
+          "MILK_sold": 243,
+          "MILK_revenue": 23853.0,
+          "MELON_sold": 96,
+          "MELON_revenue": 13696.0,
+          "EGG_sold": 36,
+          "EGG_revenue": 2014.0,
+          "WOOL_floor_sold": 8,
+          "STRAWBERRY_sold": 168,
+          "STRAWBERRY_revenue": 14851.0,
+          "TOMATO_sold": 301,
+          "TOMATO_revenue": 25198.0,
+          "MILK_floor_sold": 34,
+          "STRAWBERRY_floor_sold": 22,
+          "FERTILIZER_floor_sold": 6
+        },
+        {
+          "WHEAT_sold": 305,
+          "WHEAT_revenue": 13627.0,
+          "FERTILIZER_sold": 348,
+          "FERTILIZER_revenue": 15307.0,
+          "WOOL_sold": 161,
+          "WOOL_revenue": 11082.0,
+          "MILK_sold": 245,
+          "MILK_revenue": 22509.0,
+          "MELON_sold": 72,
+          "MELON_revenue": 17440.0,
+          "WOOL_floor_sold": 47,
+          "EGG_sold": 78,
+          "EGG_revenue": 4428.0,
+          "STRAWBERRY_sold": 249,
+          "STRAWBERRY_revenue": 25270.0,
+          "MILK_floor_sold": 6,
+          "STRAWBERRY_floor_sold": 8,
+          "CARROT_sold": 84,
+          "CARROT_revenue": 3659.0
+        }
+      ],
+      "seconds": 0.37009565800008204
+    },
+    {
+      "fixture": "market_smart_v8_4145681829_seat0.json.gz",
+      "fixture_sha256": "902e376477a168c25abe2d189be26c4099f5bc30efc6f509a28305ef1d9d4f61",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 23.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 523.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 79.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 600.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 191.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 619.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 276.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 225.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 676.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 524.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 786.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 2901.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 781.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 464.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 551.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 322.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 1548.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 1041.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 2253.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 2817.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 16518.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 4695.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 16962.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 7011.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 18791.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 11067.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 21693.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 14652.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 24152.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 19735.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 29484.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 21443.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 34772.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 24456.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 38876.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 30838.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 44188.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 37277.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 47602.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 42582.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 52927.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 48596.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 57987.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 51060.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 60980.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 52921.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 63038.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 54392.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 65191.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 56107.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 67806.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 59281.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 69627.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 62362.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 75431.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 65889.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 78853.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 77942.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 91720.0
+        }
+      ],
+      "cash_final": [
+        77942.0,
+        91720.0
+      ],
+      "failed_market_units_both": [
+        0,
+        120
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 266,
+          "FERTILIZER_revenue": 12873.0,
+          "WHEAT_sold": 99,
+          "WHEAT_revenue": 3897.0,
+          "WOOL_sold": 145,
+          "WOOL_revenue": 10411.0,
+          "CARROT_sold": 244,
+          "CARROT_revenue": 14225.0,
+          "MILK_sold": 234,
+          "MILK_revenue": 19689.0,
+          "EGG_sold": 111,
+          "EGG_revenue": 4898.0,
+          "MELON_sold": 100,
+          "MELON_revenue": 13809.0,
+          "STRAWBERRY_sold": 198,
+          "STRAWBERRY_revenue": 20914.0,
+          "TOMATO_sold": 123,
+          "TOMATO_revenue": 5752.0,
+          "MILK_floor_sold": 1,
+          "WOOL_floor_sold": 19,
+          "STRAWBERRY_floor_sold": 19,
+          "FERTILIZER_floor_sold": 29
+        },
+        {
+          "WHEAT_sold": 305,
+          "WHEAT_revenue": 12071.0,
+          "FERTILIZER_sold": 349,
+          "FERTILIZER_revenue": 13991.0,
+          "WOOL_sold": 161,
+          "WOOL_revenue": 11359.0,
+          "MILK_sold": 245,
+          "MILK_revenue": 23073.0,
+          "MELON_sold": 72,
+          "MELON_revenue": 17440.0,
+          "WOOL_floor_sold": 18,
+          "EGG_sold": 78,
+          "EGG_revenue": 3331.0,
+          "STRAWBERRY_sold": 249,
+          "STRAWBERRY_revenue": 29264.0,
+          "MILK_floor_sold": 2,
+          "FERTILIZER_floor_sold": 47,
+          "CARROT_sold": 84,
+          "CARROT_revenue": 5314.0
+        }
+      ],
+      "seconds": 0.47685311700001876
+    },
+    {
+      "fixture": "soil_v219g_4145681829_seat0.json.gz",
+      "fixture_sha256": "ee1f498159bb0b9ef99ebbc7e93e2acf2511949cac980de5f124adbe8b7ff6ca",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 23.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 523.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 79.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 600.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 191.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 619.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 276.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 225.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 676.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 524.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 786.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 2901.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 781.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 464.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 551.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 322.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 1548.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 1041.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 2253.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 2817.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 16518.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 4695.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 16962.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 7011.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 18791.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 11067.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 21693.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 14652.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 24152.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 19735.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 29484.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 21443.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 34772.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 24456.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 38876.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 30838.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 44188.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 37277.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 47602.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 42582.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 52927.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 48596.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 57987.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 51060.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 60980.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 52921.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 63038.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 54392.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 65191.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 56107.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 67806.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 59281.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 69627.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 62362.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 75431.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 65889.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 78853.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 77942.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 91720.0
+        }
+      ],
+      "cash_final": [
+        77942.0,
+        91720.0
+      ],
+      "failed_market_units_both": [
+        0,
+        120
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 266,
+          "FERTILIZER_revenue": 12873.0,
+          "WHEAT_sold": 99,
+          "WHEAT_revenue": 3897.0,
+          "WOOL_sold": 145,
+          "WOOL_revenue": 10411.0,
+          "CARROT_sold": 244,
+          "CARROT_revenue": 14225.0,
+          "MILK_sold": 234,
+          "MILK_revenue": 19689.0,
+          "EGG_sold": 111,
+          "EGG_revenue": 4898.0,
+          "MELON_sold": 100,
+          "MELON_revenue": 13809.0,
+          "STRAWBERRY_sold": 198,
+          "STRAWBERRY_revenue": 20914.0,
+          "TOMATO_sold": 123,
+          "TOMATO_revenue": 5752.0,
+          "MILK_floor_sold": 1,
+          "WOOL_floor_sold": 19,
+          "STRAWBERRY_floor_sold": 19,
+          "FERTILIZER_floor_sold": 29
+        },
+        {
+          "WHEAT_sold": 305,
+          "WHEAT_revenue": 12071.0,
+          "FERTILIZER_sold": 349,
+          "FERTILIZER_revenue": 13991.0,
+          "WOOL_sold": 161,
+          "WOOL_revenue": 11359.0,
+          "MILK_sold": 245,
+          "MILK_revenue": 23073.0,
+          "MELON_sold": 72,
+          "MELON_revenue": 17440.0,
+          "WOOL_floor_sold": 18,
+          "EGG_sold": 78,
+          "EGG_revenue": 3331.0,
+          "STRAWBERRY_sold": 249,
+          "STRAWBERRY_revenue": 29264.0,
+          "MILK_floor_sold": 2,
+          "FERTILIZER_floor_sold": 47,
+          "CARROT_sold": 84,
+          "CARROT_revenue": 5314.0
+        }
+      ],
+      "seconds": 0.6151445540001532
+    },
+    {
+      "fixture": "submission_56149565_4145681832_seat0.json.gz",
+      "fixture_sha256": "803d71b9622efbd99efad83ff58de983000a07d13e2c6614b7d7ed81f4b5b087",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 104.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 522.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 518.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 598.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 314.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 622.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 479.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 137.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 344.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 405.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 785.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 923.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 674.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 939.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 1769.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 242.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 2381.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 1474.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 745.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 4183.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 1063.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 5544.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 968.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 9794.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 3946.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 15828.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 9429.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 25618.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 22725.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 35115.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 31917.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 42136.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 45060.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 49869.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 48431.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 53959.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 54312.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 58633.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 66853.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 66678.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 71054.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 71036.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 73564.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 73339.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 78691.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 74047.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 81001.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 76195.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 82776.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 77966.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 85020.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 77850.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 88098.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 78738.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 92012.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 81700.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 96716.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 87568.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 106327.0
+        }
+      ],
+      "cash_final": [
+        87568.0,
+        106327.0
+      ],
+      "failed_market_units_both": [
+        0,
+        0
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 379,
+          "FERTILIZER_revenue": 13533.0,
+          "WHEAT_sold": 235,
+          "WHEAT_revenue": 10007.0,
+          "WOOL_sold": 428,
+          "WOOL_revenue": 57158.0,
+          "MILK_sold": 104,
+          "MILK_revenue": 6144.0,
+          "MELON_sold": 84,
+          "MELON_revenue": 11047.0,
+          "TOMATO_sold": 48,
+          "TOMATO_revenue": 2445.0,
+          "STRAWBERRY_sold": 96,
+          "STRAWBERRY_revenue": 10125.0,
+          "WOOL_floor_sold": 112,
+          "FERTILIZER_floor_sold": 114,
+          "MELON_floor_sold": 12,
+          "CARROT_sold": 44,
+          "CARROT_revenue": 2921.0
+        },
+        {
+          "FERTILIZER_sold": 270,
+          "FERTILIZER_revenue": 11702.0,
+          "WHEAT_sold": 273,
+          "WHEAT_revenue": 12041.0,
+          "WOOL_sold": 406,
+          "WOOL_revenue": 60154.0,
+          "MILK_sold": 73,
+          "MILK_revenue": 5249.0,
+          "TOMATO_sold": 127,
+          "TOMATO_revenue": 5907.0,
+          "MELON_sold": 120,
+          "MELON_revenue": 20628.0,
+          "STRAWBERRY_sold": 127,
+          "STRAWBERRY_revenue": 11287.0,
+          "MELON_floor_sold": 6,
+          "WOOL_floor_sold": 21,
+          "FERTILIZER_floor_sold": 42,
+          "CARROT_sold": 88,
+          "CARROT_revenue": 5895.0
+        }
+      ],
+      "seconds": 0.40847447700002704
+    },
+    {
+      "fixture": "submission_56149565_4145681843_seat0.json.gz",
+      "fixture_sha256": "2eea2c2029f34547709e99c5d7396f9ab6c3c33461002f3efc4b6889d383ed98",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 104.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 522.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 518.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 598.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 314.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 622.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 479.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 133.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 1511.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 400.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 757.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 815.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 1656.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 698.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 941.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 1434.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 1188.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 863.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 621.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 2103.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 2080.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 4831.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 3838.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 7498.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 3665.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 12155.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 5186.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 14648.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 17734.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 23013.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 19355.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 24854.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 22037.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 25733.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 27793.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 31181.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 34871.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 37147.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 38693.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 46093.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 46009.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 49211.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 49821.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 53335.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 53510.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 54028.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 55167.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 55327.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 56847.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 57919.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 57796.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 59894.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 58975.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 62114.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 63583.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 66462.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 67478.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 75929.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 75927.0
+        }
+      ],
+      "cash_final": [
+        75929.0,
+        75927.0
+      ],
+      "failed_market_units_both": [
+        0,
+        1
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 215,
+          "FERTILIZER_revenue": 12591.0,
+          "WHEAT_sold": 356,
+          "WHEAT_revenue": 15187.0,
+          "WOOL_sold": 61,
+          "WOOL_revenue": 6369.0,
+          "MILK_sold": 155,
+          "MILK_revenue": 13289.0,
+          "CARROT_sold": 75,
+          "CARROT_revenue": 4236.0,
+          "EGG_sold": 251,
+          "EGG_revenue": 11865.0,
+          "MELON_sold": 102,
+          "MELON_revenue": 14115.0,
+          "TOMATO_sold": 70,
+          "TOMATO_revenue": 2934.0,
+          "WOOL_floor_sold": 9,
+          "STRAWBERRY_sold": 220,
+          "STRAWBERRY_revenue": 19751.0,
+          "MILK_floor_sold": 3,
+          "STRAWBERRY_floor_sold": 42,
+          "MELON_floor_sold": 9
+        },
+        {
+          "FERTILIZER_sold": 214,
+          "FERTILIZER_revenue": 12006.0,
+          "WHEAT_sold": 327,
+          "WHEAT_revenue": 13857.0,
+          "WOOL_sold": 43,
+          "WOOL_revenue": 5041.0,
+          "MILK_sold": 131,
+          "MILK_revenue": 10501.0,
+          "EGG_sold": 317,
+          "EGG_revenue": 14778.0,
+          "TOMATO_sold": 124,
+          "TOMATO_revenue": 4999.0,
+          "WOOL_floor_sold": 9,
+          "MELON_sold": 108,
+          "MELON_revenue": 17654.0,
+          "CARROT_sold": 35,
+          "CARROT_revenue": 1992.0,
+          "STRAWBERRY_sold": 212,
+          "STRAWBERRY_revenue": 21454.0,
+          "MILK_floor_sold": 6,
+          "MELON_floor_sold": 16,
+          "STRAWBERRY_floor_sold": 28
+        }
+      ],
+      "seconds": 0.3679283009998926
+    },
+    {
+      "fixture": "thomas_955_v2_4145681841_seat1.json.gz",
+      "fixture_sha256": "58aa786f7112aaf1cbfb27389ad8d94577c39bbda012dd9aa99407a254e12207",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 23.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 104.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 46.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 523.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 139.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 599.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 121.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 238.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 134.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 203.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 293.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 1470.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 778.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 932.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 480.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 680.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 665.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 532.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 1672.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 852.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 15364.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 3475.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 15634.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 3605.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 18230.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 6202.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 19654.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 11631.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 20696.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 12712.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 22593.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 16812.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 29065.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 17001.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 33950.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 19561.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 39601.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 30547.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 43577.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 37286.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 49472.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 46321.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 55565.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 50879.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 62740.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 57568.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 65569.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 61710.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 67251.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 64416.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 69542.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 65961.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 73724.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 69139.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 77754.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 71606.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 86342.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 76480.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 93608.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 87065.0
+        }
+      ],
+      "cash_final": [
+        93608.0,
+        87065.0
+      ],
+      "failed_market_units_both": [
+        94,
+        0
+      ],
+      "sales_totals_both": [
+        {
+          "WHEAT_sold": 428,
+          "WHEAT_revenue": 16105.0,
+          "FERTILIZER_sold": 333,
+          "FERTILIZER_revenue": 14713.0,
+          "WOOL_sold": 161,
+          "WOOL_revenue": 10199.0,
+          "MILK_sold": 192,
+          "MILK_revenue": 13489.0,
+          "MELON_sold": 72,
+          "MELON_revenue": 17440.0,
+          "WOOL_floor_sold": 76,
+          "EGG_sold": 143,
+          "EGG_revenue": 6007.0,
+          "STRAWBERRY_sold": 262,
+          "STRAWBERRY_revenue": 40315.0,
+          "CARROT_sold": 116,
+          "CARROT_revenue": 7491.0
+        },
+        {
+          "FERTILIZER_sold": 219,
+          "FERTILIZER_revenue": 12362.0,
+          "WHEAT_sold": 206,
+          "WHEAT_revenue": 9716.0,
+          "WOOL_sold": 54,
+          "WOOL_revenue": 5749.0,
+          "MILK_sold": 162,
+          "MILK_revenue": 10620.0,
+          "EGG_sold": 271,
+          "EGG_revenue": 11643.0,
+          "MELON_sold": 96,
+          "MELON_revenue": 13604.0,
+          "CARROT_sold": 54,
+          "CARROT_revenue": 2896.0,
+          "TOMATO_sold": 188,
+          "TOMATO_revenue": 12663.0,
+          "WOOL_floor_sold": 11,
+          "STRAWBERRY_sold": 246,
+          "STRAWBERRY_revenue": 34717.0,
+          "STRAWBERRY_floor_sold": 2,
+          "FERTILIZER_floor_sold": 7
+        }
+      ],
+      "seconds": 0.3941518169999654
+    },
+    {
+      "fixture": "thomas_955_v2_4145681844_seat0.json.gz",
+      "fixture_sha256": "f0c0569c57d2b8079f382f0acd0d92ae25d7204fbbded5d95beda637c1370459",
+      "scope": "saved-action factual audit only; zero new games",
+      "all719_transitions_match": true,
+      "cash_rows": 60,
+      "cash_rows_all_match": true,
+      "all_cash_identity_zero": true,
+      "day_cash_rows": [
+        {
+          "day": 0,
+          "player": 0,
+          "cash": 104.0
+        },
+        {
+          "day": 0,
+          "player": 1,
+          "cash": 23.0
+        },
+        {
+          "day": 1,
+          "player": 0,
+          "cash": 523.0
+        },
+        {
+          "day": 1,
+          "player": 1,
+          "cash": 46.0
+        },
+        {
+          "day": 2,
+          "player": 0,
+          "cash": 599.0
+        },
+        {
+          "day": 2,
+          "player": 1,
+          "cash": 139.0
+        },
+        {
+          "day": 3,
+          "player": 0,
+          "cash": 942.0
+        },
+        {
+          "day": 3,
+          "player": 1,
+          "cash": 119.0
+        },
+        {
+          "day": 4,
+          "player": 0,
+          "cash": 287.0
+        },
+        {
+          "day": 4,
+          "player": 1,
+          "cash": 133.0
+        },
+        {
+          "day": 5,
+          "player": 0,
+          "cash": 809.0
+        },
+        {
+          "day": 5,
+          "player": 1,
+          "cash": 293.0
+        },
+        {
+          "day": 6,
+          "player": 0,
+          "cash": 672.0
+        },
+        {
+          "day": 6,
+          "player": 1,
+          "cash": 679.0
+        },
+        {
+          "day": 7,
+          "player": 0,
+          "cash": 956.0
+        },
+        {
+          "day": 7,
+          "player": 1,
+          "cash": 380.0
+        },
+        {
+          "day": 8,
+          "player": 0,
+          "cash": 247.0
+        },
+        {
+          "day": 8,
+          "player": 1,
+          "cash": 934.0
+        },
+        {
+          "day": 9,
+          "player": 0,
+          "cash": 802.0
+        },
+        {
+          "day": 9,
+          "player": 1,
+          "cash": 1762.0
+        },
+        {
+          "day": 10,
+          "player": 0,
+          "cash": 1153.0
+        },
+        {
+          "day": 10,
+          "player": 1,
+          "cash": 16912.0
+        },
+        {
+          "day": 11,
+          "player": 0,
+          "cash": 3963.0
+        },
+        {
+          "day": 11,
+          "player": 1,
+          "cash": 17280.0
+        },
+        {
+          "day": 12,
+          "player": 0,
+          "cash": 4225.0
+        },
+        {
+          "day": 12,
+          "player": 1,
+          "cash": 20923.0
+        },
+        {
+          "day": 13,
+          "player": 0,
+          "cash": 9469.0
+        },
+        {
+          "day": 13,
+          "player": 1,
+          "cash": 23203.0
+        },
+        {
+          "day": 14,
+          "player": 0,
+          "cash": 10072.0
+        },
+        {
+          "day": 14,
+          "player": 1,
+          "cash": 28544.0
+        },
+        {
+          "day": 15,
+          "player": 0,
+          "cash": 14374.0
+        },
+        {
+          "day": 15,
+          "player": 1,
+          "cash": 33914.0
+        },
+        {
+          "day": 16,
+          "player": 0,
+          "cash": 22578.0
+        },
+        {
+          "day": 16,
+          "player": 1,
+          "cash": 41068.0
+        },
+        {
+          "day": 17,
+          "player": 0,
+          "cash": 29719.0
+        },
+        {
+          "day": 17,
+          "player": 1,
+          "cash": 48579.0
+        },
+        {
+          "day": 18,
+          "player": 0,
+          "cash": 35721.0
+        },
+        {
+          "day": 18,
+          "player": 1,
+          "cash": 56651.0
+        },
+        {
+          "day": 19,
+          "player": 0,
+          "cash": 44419.0
+        },
+        {
+          "day": 19,
+          "player": 1,
+          "cash": 62342.0
+        },
+        {
+          "day": 20,
+          "player": 0,
+          "cash": 56501.0
+        },
+        {
+          "day": 20,
+          "player": 1,
+          "cash": 67092.0
+        },
+        {
+          "day": 21,
+          "player": 0,
+          "cash": 68277.0
+        },
+        {
+          "day": 21,
+          "player": 1,
+          "cash": 73650.0
+        },
+        {
+          "day": 22,
+          "player": 0,
+          "cash": 76577.0
+        },
+        {
+          "day": 22,
+          "player": 1,
+          "cash": 79949.0
+        },
+        {
+          "day": 23,
+          "player": 0,
+          "cash": 78248.0
+        },
+        {
+          "day": 23,
+          "player": 1,
+          "cash": 80933.0
+        },
+        {
+          "day": 24,
+          "player": 0,
+          "cash": 79154.0
+        },
+        {
+          "day": 24,
+          "player": 1,
+          "cash": 83372.0
+        },
+        {
+          "day": 25,
+          "player": 0,
+          "cash": 81183.0
+        },
+        {
+          "day": 25,
+          "player": 1,
+          "cash": 85407.0
+        },
+        {
+          "day": 26,
+          "player": 0,
+          "cash": 82330.0
+        },
+        {
+          "day": 26,
+          "player": 1,
+          "cash": 87524.0
+        },
+        {
+          "day": 27,
+          "player": 0,
+          "cash": 86190.0
+        },
+        {
+          "day": 27,
+          "player": 1,
+          "cash": 89771.0
+        },
+        {
+          "day": 28,
+          "player": 0,
+          "cash": 91626.0
+        },
+        {
+          "day": 28,
+          "player": 1,
+          "cash": 93265.0
+        },
+        {
+          "day": 29,
+          "player": 0,
+          "cash": 101934.0
+        },
+        {
+          "day": 29,
+          "player": 1,
+          "cash": 101864.0
+        }
+      ],
+      "cash_final": [
+        101934.0,
+        101864.0
+      ],
+      "failed_market_units_both": [
+        0,
+        12
+      ],
+      "sales_totals_both": [
+        {
+          "FERTILIZER_sold": 235,
+          "FERTILIZER_revenue": 12859.0,
+          "WHEAT_sold": 261,
+          "WHEAT_revenue": 11111.0,
+          "WOOL_sold": 163,
+          "WOOL_revenue": 22381.0,
+          "MILK_sold": 191,
+          "MILK_revenue": 19267.0,
+          "EGG_sold": 82,
+          "EGG_revenue": 4237.0,
+          "MELON_sold": 90,
+          "MELON_revenue": 13904.0,
+          "STRAWBERRY_sold": 334,
+          "STRAWBERRY_revenue": 41585.0,
+          "MILK_floor_sold": 26,
+          "STRAWBERRY_floor_sold": 81,
+          "TOMATO_sold": 24,
+          "TOMATO_revenue": 1558.0,
+          "CARROT_sold": 86,
+          "CARROT_revenue": 5545.0,
+          "FERTILIZER_floor_sold": 8
+        },
+        {
+          "WHEAT_sold": 508,
+          "WHEAT_revenue": 19121.0,
+          "FERTILIZER_sold": 344,
+          "FERTILIZER_revenue": 14175.0,
+          "WOOL_sold": 131,
+          "WOOL_revenue": 18736.0,
+          "MILK_sold": 263,
+          "MILK_revenue": 23632.0,
+          "MELON_sold": 72,
+          "MELON_revenue": 17440.0,
+          "EGG_sold": 93,
+          "EGG_revenue": 4785.0,
+          "STRAWBERRY_sold": 244,
+          "STRAWBERRY_revenue": 30283.0,
+          "MILK_floor_sold": 11,
+          "STRAWBERRY_floor_sold": 8,
+          "CARROT_sold": 95,
+          "CARROT_revenue": 5843.0,
+          "FERTILIZER_floor_sold": 12
+        }
+      ],
+      "seconds": 0.4455273329999727
+    }
+  ]
+}

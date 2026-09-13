@@ -1,0 +1,17 @@
+{
+  "id": "aurax_shop_v2_4145681837_seat0_floor",
+  "fixture": "aurax_shop_v2_4145681837_seat0.json.gz",
+  "step": 546,
+  "ticks": 4,
+  "traffic": {
+    "MILK": [
+      0,
+      0,
+      0,
+      5
+    ]
+  },
+  "traffic_source": "trailing completed-day public observations, hypothetical NOT saved future or private rival stock",
+  "first_common_prefix_difference": true,
+  "control_role": "first changed sale at a common original prefix"
+}

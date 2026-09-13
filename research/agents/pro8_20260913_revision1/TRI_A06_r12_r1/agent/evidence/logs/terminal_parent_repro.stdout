@@ -1,0 +1,4 @@
+day=26 crop=0 selected_finish=29 positive_output=3 compiled_plant=0
+day=27 crop=0 selected_finish=29 positive_output=2 compiled_plant=0
+day=27 crop=1 selected_finish=29 positive_output=2 compiled_plant=0
+REPRODUCED: 3 legal positive-output calendar paths rejected by original compiler

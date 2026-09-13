@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/clean_rebuild.time",
+    "python",
+    "-B",
+    "/mnt/data/TRI_A08_work/clean_rebuild/build.py"
+  ],
+  "pid": 3040,
+  "source_files": 44,
+  "expected_native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "replay_reference_data_present": false,
+  "utc": "2026-09-13T02:55:35.537656+00:00"
+}

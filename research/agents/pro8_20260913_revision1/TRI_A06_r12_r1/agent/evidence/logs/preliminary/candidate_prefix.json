@@ -1,0 +1,84 @@
+{
+  "scope": "legal historical common prefixes only; zero candidate game outcomes",
+  "cases": [
+    {
+      "id": "market_smart_v8_4145681829_seat0",
+      "historical_margin": null,
+      "compared": 649,
+      "matched": 648,
+      "first_difference": 648,
+      "day": 27,
+      "hour": 0,
+      "seconds": 8.597667692000073,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "thomas_955_v2_4145681843_seat1",
+      "historical_margin": null,
+      "compared": 625,
+      "matched": 624,
+      "first_difference": 624,
+      "day": 26,
+      "hour": 0,
+      "seconds": 8.139851802999942,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "submission_56149565_4145681841_seat1",
+      "historical_margin": null,
+      "compared": 625,
+      "matched": 624,
+      "first_difference": 624,
+      "day": 26,
+      "hour": 0,
+      "seconds": 7.650300554999944,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "thomas_955_v2_4145681840_seat0",
+      "historical_margin": null,
+      "compared": 649,
+      "matched": 648,
+      "first_difference": 648,
+      "day": 27,
+      "hour": 0,
+      "seconds": 8.436368554000069,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "soil_v219g_4145681829_seat0",
+      "historical_margin": null,
+      "compared": 649,
+      "matched": 648,
+      "first_difference": 648,
+      "day": 27,
+      "hour": 0,
+      "seconds": 8.38925119999999,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "aurax_reactive_v1_4145681841_seat1",
+      "historical_margin": null,
+      "compared": 644,
+      "matched": 643,
+      "first_difference": 643,
+      "day": 26,
+      "hour": 19,
+      "seconds": 9.170166375000008,
+      "all_719_actions_identical": false
+    },
+    {
+      "id": "submission_56149565_4145681836_seat0",
+      "historical_margin": null,
+      "compared": 625,
+      "matched": 624,
+      "first_difference": 624,
+      "day": 26,
+      "hour": 0,
+      "seconds": 7.083335121000005,
+      "all_719_actions_identical": false
+    }
+  ],
+  "seconds": 59.299828553,
+  "peak_rss_kib": 243568
+}

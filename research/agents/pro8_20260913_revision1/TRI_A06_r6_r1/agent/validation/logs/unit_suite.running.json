@@ -1,0 +1,15 @@
+{
+  "name": "unit_suite",
+  "command": [
+    "python",
+    "-B",
+    "candidate/tests/run_units.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:30:54.663403+00:00",
+  "timeout_seconds": 420.0,
+  "peak_tree_rss_kb_sampled": 0,
+  "peak_cgroup_current": 0,
+  "timed_out": false,
+  "pid": 983
+}

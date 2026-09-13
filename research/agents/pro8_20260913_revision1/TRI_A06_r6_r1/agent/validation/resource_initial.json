@@ -1,0 +1,35 @@
+{
+  "utc": "2026-09-13T02:18:23.287461+00:00",
+  "dispatch_utc": "2026-09-13T02:17:41.523Z",
+  "hard_deadline_utc": "2026-09-13T04:17:41.523Z",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_max": "400000 100000",
+  "cpuset_effective": "0-4",
+  "memory_max": "4294967296",
+  "memory_current": "362803200",
+  "memory_high": "max",
+  "cgroup": "0::/",
+  "mem_available": "MemAvailable:    5086456 kB",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G  8.5M   30G   1% /\noverlay          32G  8.5M   30G   1% /",
+  "python": "3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+  "uname": {
+    "system": "Linux",
+    "node": "localhost",
+    "release": "6.18.44",
+    "version": "#1 SMP Sat Sep 12 15:35:21 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "quota_cpu": 4.0,
+  "effective_cpu": 4.0,
+  "max_workers_initial": 1,
+  "memory_usable_limit_70pct": 3006477107,
+  "input_sha256": "bbd5112684c8cb910d46d163c450b75035360c42a073bbb3975a005d984e6b12"
+}

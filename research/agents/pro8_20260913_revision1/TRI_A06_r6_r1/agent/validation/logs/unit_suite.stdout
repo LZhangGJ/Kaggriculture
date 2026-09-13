@@ -1,0 +1,20 @@
+test_a06_fleet 0 PASS: 1992 exact tour/subset comparisons; 160 warehouse subset comparisons, including >400-unit demand
+
+test_r3_pending 0 mode=0 pending_wheat=1 sell_wheat=1
+mode=1 pending_wheat=1 sell_wheat=0
+mode=2 pending_wheat=1 sell_wheat=0
+mode=3 pending_wheat=1 sell_wheat=0
+mode=4 pending_wheat=1 sell_wheat=0
+mode=5 pending_wheat=1 sell_wheat=0
+PASS pending paid feed preserved through final SELL regeneration
+PASS receipt gate: opening0, purchase0, actual increase300, newday reset0
+
+test_r5_contract 0 PASS 14 economic execution candidates preserve original plan keys, paid commitments and install mode
+PASS 168 matched known-day prefix transitions: same mechanism/action/cash/fills/stock across origins
+PASS exact issued PLANT seed consumption, no sale credit, input immutability, phase-contract origin equality
+
+test_r6_contract 0 PASS 2520 bounded short-sale DP certificates
+PASS cash/margin valuation identical when public rival flow is zero; observed cash/paid inventory immutable
+
+test_tri_market_floor 0 {"positive_cases":2061,"legacy_failures":774,"negative_bit_identical":729,"fractional_cases":234,"demand_recovery_cases":9}
+

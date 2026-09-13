@@ -1,0 +1,65 @@
+from pathlib import Path
+import datetime as dt, hashlib, json, os, shutil, subprocess, sys, time, zipfile
+ROOT=Path('/mnt/data/TRI_A08_r11_r1_release');W=Path('/mnt/data/TRI_A08_work');ZIP=Path('/mnt/data/TRI_A08_r11_r1.zip')
+CHECK=Path('/mnt/data/TRI_A08_zip_verify')
+DISPATCH=dt.datetime.fromisoformat('2026-09-13T02:15:47.575+00:00');DEADLINE=dt.datetime.fromisoformat('2026-09-13T04:15:47.575+00:00')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+now=dt.datetime.now(dt.timezone.utc);assert now<DEADLINE
+build=json.loads((ROOT/'BUILD.json').read_text());freeze=json.loads((ROOT/'SOURCE_FREEZE.json').read_text())
+assert build['sources']==freeze['production_sources']
+for name,h in build['sources'].items():assert sha(ROOT/name)==h,(name,'source mismatch')
+assert sha(ROOT/freeze['native'])==freeze['native_sha256']==build['binary_sha256']
+assert len(build['sources'])==44
+active=subprocess.check_output(['ps','-eo','pid,ppid,stat,etime,args'],text=True)
+(W/'logs/process_snapshot_before_delivery.txt').write_text(active)
+(ROOT/'validation/logs/process_snapshot_before_delivery.txt').write_text(active)
+timing={'task':'TRI_A08_r11_r1','original_dispatch_utc':DISPATCH.isoformat(),'hard_deadline_utc':DEADLINE.isoformat(),
+ 'first_resource_capture_utc':'2026-09-13T02:19:40.648323160Z','resources_within_first_five_minutes':True,
+ 'final_native_build_mtime_utc':dt.datetime.fromtimestamp((ROOT/freeze['native']).stat().st_mtime,dt.timezone.utc).isoformat(),
+ 'packaging_started_utc':now.isoformat(),'elapsed_minutes_at_packaging_start':(now-DISPATCH).total_seconds()/60,
+ 'not_a_reset_deadline':True,'full1536_games_not_launched':True,
+ 'final_state':'Compiled final source/native, all reported bounded experiments closed. Remaining original-R2/pool validation explicitly not completed.',
+ 'post_zip_validation_receipt':'Final extracted-root verification is performed after this timing snapshot; receipt provided adjacent to the downloadable ZIP.'}
+(ROOT/'DELIVERY_TIMING.json').write_text(json.dumps(timing,indent=2)+'\n')
+
+def manifest():
+ files=sorted(p for p in ROOT.rglob('*') if p.is_file() and p.name!='MANIFEST.sha256')
+ assert not any(p.is_symlink() or p.suffix=='.zip' or p.suffix=='.pyc' for p in files)
+ (ROOT/'MANIFEST.sha256').write_text(''.join(sha(p)+'  '+p.relative_to(ROOT).as_posix()+'\n' for p in files))
+ return files
+
+def archive():
+ files=manifest();started=time.perf_counter()
+ with zipfile.ZipFile(ZIP,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6,allowZip64=True) as z:
+  for p in sorted(ROOT.rglob('*')):
+   if p.is_file():z.write(p,p.relative_to(ROOT).as_posix())
+ with zipfile.ZipFile(ZIP) as z:
+  assert len(z.namelist())==len(set(z.namelist()));assert 'main.py' in z.namelist();assert z.testzip() is None
+  for name in z.namelist():
+   parts=Path(name).parts;assert not name.startswith('/') and '..' not in parts
+ if CHECK.exists():shutil.rmtree(CHECK)
+ with zipfile.ZipFile(ZIP) as z:z.extractall(CHECK)
+ return {'seconds':time.perf_counter()-started,'members':len(files)+1,'bytes':ZIP.stat().st_size}
+
+first=archive()
+pre=W/'logs/EXTRACTED_DEFAULT_ENTRY_PREDELIVERY.json'
+with (W/'logs/extracted_pre.stdout').open('w') as o,(W/'logs/extracted_pre.stderr').open('w') as e:
+ p=subprocess.run([sys.executable,'-B',str(CHECK/'tests/verify_release.py'),'--root',str(CHECK),'--out',str(pre)],cwd='/tmp',stdout=o,stderr=e,timeout=60)
+assert p.returncode==0,'Extracted default entry precheck failed'
+for name in ['EXTRACTED_DEFAULT_ENTRY_PREDELIVERY.json','extracted_pre.stdout','extracted_pre.stderr']:
+ shutil.copy2(W/'logs'/name,ROOT/'validation/logs'/name)
+# Freeze a receipt in the ZIP, then verify that final ZIP without modifying it.
+final_archive=archive()
+external=Path('/mnt/data/TRI_A08_r11_r1.verification.json')
+with (W/'logs/extracted_final.stdout').open('w') as o,(W/'logs/extracted_final.stderr').open('w') as e:
+ p=subprocess.run([sys.executable,'-B',str(CHECK/'tests/verify_release.py'),'--root',str(CHECK),'--out',str(external)],cwd='/tmp',stdout=o,stderr=e,timeout=60)
+assert p.returncode==0,'Final extracted default entry failed'
+verified=json.loads(external.read_text());end=dt.datetime.now(dt.timezone.utc);assert end<DEADLINE
+verified.update(zip_path=str(ZIP),zip_sha256=sha(ZIP),zip_bytes=ZIP.stat().st_size,zip_members=final_archive['members'],
+ zip_crc_pass=True,all_extracted_manifest_entries_match=True,
+ final_verification_complete_utc=end.isoformat(),original_dispatch_utc=DISPATCH.isoformat(),hard_deadline_utc=DEADLINE.isoformat(),
+ elapsed_minutes_from_original_dispatch=(end-DISPATCH).total_seconds()/60,before_original_hard_deadline=True,
+ final_archive_work_seconds=final_archive['seconds'],production_native_sha256=build['binary_sha256'])
+external.write_text(json.dumps(verified,indent=2)+'\n')
+Path('/mnt/data/TRI_A08_r11_r1.zip.sha256').write_text(verified['zip_sha256']+'  TRI_A08_r11_r1.zip\n')
+print(json.dumps({k:v for k,v in verified.items() if k not in ['rows','python']},indent=2))

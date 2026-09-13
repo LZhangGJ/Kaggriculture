@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/TRI_A06_r12_work/candidate/tests/replay_prefix_probe.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/TRI_A06_r12_work/candidate/tests/replay_prefix_probe.py", line 20, in main
+    file=a.bundle/'replays'/(a.case+'.json.gz');replay=json.loads(gzip.decompress(file.read_bytes()));seat=replay['result']['seat'];seed=case['seed'];host=module('reference_host',a.bundle/'referee/cpu_runtime.py');game=host.LocalGame(seed)
+                                                                                                                                         ~~~~^^^^^^^^
+KeyError: 'seed'

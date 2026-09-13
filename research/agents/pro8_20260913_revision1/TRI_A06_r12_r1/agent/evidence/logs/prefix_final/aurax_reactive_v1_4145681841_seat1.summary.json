@@ -1,0 +1,39 @@
+{
+  "id": "aurax_reactive_v1_4145681841_seat1",
+  "scope": "official common-prefix verification and one simultaneous-tick probe; NOT a candidate completed game",
+  "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "parent_sha256": "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+  "historical_replay_sha256": "f8821ae29bc21ed564a2d54e4bed8f50c34b929f82c7124e67be66a69e24220e",
+  "matched": 643,
+  "compared": 644,
+  "first_difference": 643,
+  "completed_candidate_games": 0,
+  "day": 26,
+  "hour": 19,
+  "one_step": {
+    "own_cash_parent": 62875.0,
+    "own_cash_candidate": 62885.0,
+    "parent_seeds": {
+      "WHEAT": 0,
+      "CARROT": 1,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0
+    },
+    "candidate_seeds": {
+      "WHEAT": 1,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0
+    },
+    "parent_hands": 13,
+    "candidate_hands": 13,
+    "unit_actions_identical": true,
+    "no_saved_suffix_used": true
+  },
+  "seconds": 9.86275571300007,
+  "peak_rss_kib": 213280,
+  "all_compared_prefix_frames_exact": true,
+  "raw_sha256": "d90c264929b65875b43a32cdd6a5ddd21e761db35646a7bf1762969b92030dc1"
+}

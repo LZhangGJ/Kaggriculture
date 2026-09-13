@@ -1,0 +1,21 @@
+{
+  "label": "official_floor",
+  "utc": "2026-09-13T03:02:05.032650+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_quote_check/official_floor.time",
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/TRI_A08_r11_r1_release/tests/official_floor_check.py",
+    "--referee",
+    "/mnt/data/TRI_A08_r11_r1_release/validation/source_input/referee",
+    "--probe",
+    "/mnt/data/TRI_A08_work/portable_quote_check/floor_quote_probe",
+    "--out",
+    "/mnt/data/TRI_A08_work/portable_quote_check/official_floor.json"
+  ],
+  "returncode": 0,
+  "wall_seconds": 1.7710133609998593
+}

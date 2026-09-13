@@ -1,0 +1,58 @@
+{
+  "scope": "recalculation of all 480 historical rows, not new results",
+  "games": 480,
+  "strict_wins": 393,
+  "draws": 0,
+  "source_sha256": "abc2bb0eaaf2fe33448986fba318ccc9944cb15c4e038766b36f701060beeb94",
+  "by_opponent": {
+    "ahmed_v27": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "aurax_reactive_v1": {
+      "games": 40,
+      "strict_wins": 36
+    },
+    "aurax_shop_v2": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "flexon_v5": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "market_smart_v8": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "moon_v215": {
+      "games": 40,
+      "strict_wins": 36
+    },
+    "nagatakengo_v70": {
+      "games": 40,
+      "strict_wins": 40
+    },
+    "seven_turn": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "shop0909": {
+      "games": 40,
+      "strict_wins": 32
+    },
+    "soil_v219g": {
+      "games": 40,
+      "strict_wins": 34
+    },
+    "submission_56149565": {
+      "games": 40,
+      "strict_wins": 25
+    },
+    "thomas_955_v2": {
+      "games": 40,
+      "strict_wins": 30
+    }
+  },
+  "complete_cartesian_panel": true
+}

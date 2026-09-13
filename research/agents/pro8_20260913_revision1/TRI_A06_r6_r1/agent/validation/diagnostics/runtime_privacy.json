@@ -1,0 +1,38 @@
+{
+  "scope": "Unknown-field noninterference and actual main.py:agent/reset entry tests; fabricated canaries are not real private data. No games or win-rate estimate.",
+  "cases": [
+    {
+      "environment_seed_not_passed_to_policy": 1161272086,
+      "seat": 0,
+      "packed_observation_sha256": "7105379a801b7cfd45e6dd0c0468a7d5580a11d3144907ab452ffd53bf931239",
+      "canary_invariance": true,
+      "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+      "abi_settings_count": 44
+    },
+    {
+      "environment_seed_not_passed_to_policy": 1161272086,
+      "seat": 1,
+      "packed_observation_sha256": "460f7ff4966752cba2e21616fd169dbd030055f4550665b944590053f4410c6b",
+      "canary_invariance": true,
+      "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+      "abi_settings_count": 44
+    },
+    {
+      "environment_seed_not_passed_to_policy": 4018553988,
+      "seat": 0,
+      "packed_observation_sha256": "7105379a801b7cfd45e6dd0c0468a7d5580a11d3144907ab452ffd53bf931239",
+      "canary_invariance": true,
+      "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+      "abi_settings_count": 44
+    },
+    {
+      "environment_seed_not_passed_to_policy": 4018553988,
+      "seat": 1,
+      "packed_observation_sha256": "460f7ff4966752cba2e21616fd169dbd030055f4550665b944590053f4410c6b",
+      "canary_invariance": true,
+      "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+      "abi_settings_count": 44
+    }
+  ],
+  "all_passed": true
+}

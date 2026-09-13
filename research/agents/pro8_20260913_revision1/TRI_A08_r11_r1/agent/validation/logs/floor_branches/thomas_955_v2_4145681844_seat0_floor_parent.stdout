@@ -1,0 +1,32 @@
+{
+  "case": "thomas_955_v2_4145681844_seat0_floor",
+  "binary": "3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb",
+  "complete": true,
+  "branches": [
+    {
+      "scenario": "no_additional_sales",
+      "ticks": 4,
+      "own_cash_change": 2519.0,
+      "rival_cash_change": 0.0
+    },
+    {
+      "scenario": "traffic_queue0",
+      "ticks": 4,
+      "own_cash_change": 2496.0,
+      "rival_cash_change": 24.0
+    },
+    {
+      "scenario": "traffic_queue3",
+      "ticks": 4,
+      "own_cash_change": 2519.0,
+      "rival_cash_change": 1.0
+    },
+    {
+      "scenario": "traffic_queue9",
+      "ticks": 4,
+      "own_cash_change": 2519.0,
+      "rival_cash_change": 1.0
+    }
+  ],
+  "error": null
+}

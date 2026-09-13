@@ -1,0 +1,8 @@
+{
+  "scope": "legal historical-prefix calls, not games",
+  "calls": 48,
+  "seconds": 0.14925521700000388,
+  "max_call_seconds": 0.09804672100000289,
+  "peak_rss_kib": 209596,
+  "all_equal_saved": true
+}

@@ -1,0 +1,13 @@
+{
+  "label": "floor_margin_regression",
+  "utc": "2026-09-13T03:02:31.942629+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression.time",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.0036474730000009004
+}

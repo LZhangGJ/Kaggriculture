@@ -1,0 +1,84 @@
+{
+  "scope": "new complete official-engine game; both policies execute against current legal observations",
+  "tag": "candidate_2613091201_seat0",
+  "started_at_utc": "2026-09-13T02:34:23.280878+00:00",
+  "finished_at_utc": "2026-09-13T02:34:32.220155+00:00",
+  "seed_driver_only": 2613091201,
+  "tested_seat": 0,
+  "variant": "candidate",
+  "opponent": "exact supplied A06_r12 native (not a named public opponent or R2)",
+  "native_sha256": [
+    "832a59e5ef4456c6ab16adf12ed6e90f4af025d4cde82ef489ee7fdd755e3216",
+    "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a"
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "steps": 719,
+  "player_days": 60,
+  "strict_win": false,
+  "draw": false,
+  "cash": [
+    99885.0,
+    101138.0
+  ],
+  "margin": -1253.0,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    99885.0,
+    101138.0
+  ],
+  "seconds": 8.939415660999998,
+  "policy_seconds": [
+    3.646627849000197,
+    3.626344736001215
+  ],
+  "max_call_seconds": [
+    0.2947523650000221,
+    0.2948785199999975
+  ],
+  "peak_rss_kib": 116292,
+  "unit_action_counts": [
+    {
+      "PASS": 832,
+      "PICKUP": 223,
+      "WEST": 593,
+      "BUILD_PASTURE": 20,
+      "PLACE": 59,
+      "NORTH": 650,
+      "FEED": 344,
+      "PLANT": 148,
+      "CARE": 323,
+      "WATER": 869,
+      "EAST": 568,
+      "SOUTH": 431,
+      "COLLECT_FERTILIZER": 397,
+      "DROP": 53,
+      "HARVEST": 444,
+      "FERTILIZE": 146,
+      "DIG": 32
+    },
+    {
+      "PASS": 758,
+      "PICKUP": 224,
+      "WEST": 601,
+      "BUILD_PASTURE": 20,
+      "PLACE": 61,
+      "NORTH": 662,
+      "FEED": 344,
+      "PLANT": 138,
+      "CARE": 323,
+      "WATER": 861,
+      "EAST": 573,
+      "SOUTH": 406,
+      "COLLECT_FERTILIZER": 397,
+      "DROP": 49,
+      "HARVEST": 434,
+      "FERTILIZE": 149,
+      "DIG": 28
+    }
+  ],
+  "exception_count": 0,
+  "raw_sha256": "2aca34516ff405502726f19f0a6f92cc397c64ab78f608a769832868facf2680"
+}

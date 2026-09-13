@@ -1,0 +1,3 @@
+Administrative resource-document generator, before execution; corrected and rerun.
+SyntaxError: comprehension inner loop cannot rebind assignment expression target m
+No production code, build or game was affected.

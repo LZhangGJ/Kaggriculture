@@ -1,0 +1,9 @@
+{"seed": 4145681829, "seat": 0, "complete": true, "margin": 670.0, "seconds": 7.993689394000057}
+{"seed": 4145681829, "seat": 1, "complete": true, "margin": 670.0, "seconds": 7.340666478999992}
+{"seed": 4145681832, "seat": 0, "complete": true, "margin": -26.0, "seconds": 7.76750377999997}
+{"seed": 4145681832, "seat": 1, "complete": true, "margin": -26.0, "seconds": 7.651375903999906}
+{"seed": 4145681843, "seat": 0, "complete": true, "margin": -412.0, "seconds": 7.3418046500000855}
+{"seed": 4145681843, "seat": 1, "complete": true, "margin": 1160.0, "seconds": 7.444654654000033}
+{"seed": 4145681844, "seat": 0, "complete": true, "margin": 128.0, "seconds": 7.322547765000081}
+{"seed": 4145681844, "seat": 1, "complete": true, "margin": 128.0, "seconds": 7.277032909000127}
+{"scope": "four attachment development seeds, paired seats versus attached full A08_r11; not R2/public-pool/holdout/acceptance", "candidate_native_sha256": "6e6c95e93ed02680957472d1f36f001c7f85a79a38dbc014a2051c9f9a9cb3eb", "games": 8, "strict_wins": 5, "draws": 0, "losses": 3, "all719": true, "all_zero_runtime_errors": true, "all_cash_identity_zero": true, "market_rejections_are_not_exceptions": true}

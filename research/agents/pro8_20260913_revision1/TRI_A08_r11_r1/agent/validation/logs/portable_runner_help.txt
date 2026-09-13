@@ -1,0 +1,23 @@
+usage: run_validation.py [-h] --out OUT [--input INPUT] [--binary BINARY]
+                         [--cxx CXX] [--with-sanitizers] [--allow-full-games]
+                         {unit,official-floor,prefixes,ablation-prefixes,branches,audit,parent-matches}
+
+Small, explicit, serial validation commands; never runs the 1536-game panel.
+Examples (output must be outside the release directory and must not exist):
+python -B tests/run_validation.py unit --with-sanitizers --out /tmp/tri-unit
+python -B tests/run_validation.py official-floor --out /tmp/tri-quotes python
+-B tests/run_validation.py prefixes --out /tmp/tri-prefixes python -B
+tests/run_validation.py branches --out /tmp/tri-branches Full matches are opt-
+in, limited to the predeclared eight parent-opponent games.
+
+positional arguments:
+  {unit,official-floor,prefixes,ablation-prefixes,branches,audit,parent-matches}
+
+options:
+  -h, --help            show this help message and exit
+  --out OUT
+  --input INPUT
+  --binary BINARY
+  --cxx CXX
+  --with-sanitizers
+  --allow-full-games

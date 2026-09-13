@@ -1,0 +1,14 @@
+{
+  "id": "thomas_955_v2_4145681844_seat0_floor",
+  "fixture": "thomas_955_v2_4145681844_seat0.json.gz",
+  "step": 604,
+  "ticks": 2,
+  "traffic": {
+    "STRAWBERRY": [
+      0,
+      1
+    ]
+  },
+  "traffic_source": "trailing completed-day public observations, hypothetical NOT saved future or private rival stock",
+  "first_common_prefix_difference": true
+}

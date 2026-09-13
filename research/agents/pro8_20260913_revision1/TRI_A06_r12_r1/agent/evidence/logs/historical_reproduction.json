@@ -1,0 +1,133 @@
+{
+  "scope": "supplied historical development trajectories; zero new games",
+  "cases": [
+    {
+      "id": "market_smart_v8_4145681829_seat0",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.471709504000017,
+      "crop_deaths": 28,
+      "finite_harvests": {
+        "WHEAT:3": 7,
+        "WHEAT:4": 23,
+        "WHEAT:2": 5,
+        "CARROT:3": 53,
+        "MELON:10": 14,
+        "CARROT:2": 9,
+        "MELON:11": 3
+      },
+      "r12_calls": 1599,
+      "r12_changes": 307,
+      "r12_existing_changes": 114
+    },
+    {
+      "id": "thomas_955_v2_4145681843_seat1",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.301251497999999,
+      "crop_deaths": 43,
+      "finite_harvests": {
+        "WHEAT:4": 40,
+        "MELON:10": 16,
+        "WHEAT:3": 4,
+        "CARROT:3": 9,
+        "WHEAT:2": 3
+      },
+      "r12_calls": 1441,
+      "r12_changes": 339,
+      "r12_existing_changes": 71
+    },
+    {
+      "id": "submission_56149565_4145681841_seat1",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.1687048,
+      "crop_deaths": 35,
+      "finite_harvests": {
+        "WHEAT:4": 47,
+        "MELON:10": 15,
+        "CARROT:3": 17,
+        "WHEAT:3": 11,
+        "WHEAT:2": 1
+      },
+      "r12_calls": 1505,
+      "r12_changes": 252,
+      "r12_existing_changes": 60
+    },
+    {
+      "id": "thomas_955_v2_4145681840_seat0",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.393236830999996,
+      "crop_deaths": 26,
+      "finite_harvests": {
+        "WHEAT:4": 27,
+        "CARROT:3": 23,
+        "CARROT:2": 2,
+        "MELON:11": 8,
+        "MELON:10": 8,
+        "WHEAT:3": 4
+      },
+      "r12_calls": 1360,
+      "r12_changes": 352,
+      "r12_existing_changes": 97
+    },
+    {
+      "id": "soil_v219g_4145681829_seat0",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.402312615999989,
+      "crop_deaths": 28,
+      "finite_harvests": {
+        "WHEAT:3": 7,
+        "WHEAT:4": 23,
+        "WHEAT:2": 5,
+        "CARROT:3": 53,
+        "MELON:10": 14,
+        "CARROT:2": 9,
+        "MELON:11": 3
+      },
+      "r12_calls": 1599,
+      "r12_changes": 307,
+      "r12_existing_changes": 114
+    },
+    {
+      "id": "aurax_reactive_v1_4145681841_seat1",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 4.805585133999983,
+      "crop_deaths": 24,
+      "finite_harvests": {
+        "WHEAT:4": 57,
+        "CARROT:3": 20,
+        "MELON:10": 17,
+        "WHEAT:2": 1,
+        "CARROT:2": 6,
+        "WHEAT:3": 9
+      },
+      "r12_calls": 1765,
+      "r12_changes": 388,
+      "r12_existing_changes": 81
+    },
+    {
+      "id": "submission_56149565_4145681836_seat0",
+      "scope": "exact historical action reproduction",
+      "calls": 719,
+      "seconds": 3.8364088889999834,
+      "crop_deaths": 19,
+      "finite_harvests": {
+        "WHEAT:4": 55,
+        "MELON:10": 17,
+        "WHEAT:2": 2,
+        "WHEAT:3": 12,
+        "CARROT:2": 4,
+        "CARROT:3": 2
+      },
+      "r12_calls": 1490,
+      "r12_changes": 293,
+      "r12_existing_changes": 56
+    }
+  ],
+  "seconds": 32.44515502300001,
+  "peak_rss_kib": 249200
+}

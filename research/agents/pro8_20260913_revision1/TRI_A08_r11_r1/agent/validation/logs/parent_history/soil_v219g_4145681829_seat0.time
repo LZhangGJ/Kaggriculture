@@ -1,0 +1,23 @@
+	Command being timed: "timeout -k 3s 120s python -B /mnt/data/TRI_A08_work/candidate/tests/historical_inputs.py --root /mnt/data/TRI_A08_work/input/agent --binary /mnt/data/TRI_A08_work/input/agent/policy/a08_r11.so --replay /mnt/data/TRI_A08_work/input/replays/soil_v219g_4145681829_seat0.json.gz --limit 719 --out /mnt/data/TRI_A08_work/logs/parent_history/soil_v219g_4145681829_seat0.json"
+	User time (seconds): 6.96
+	System time (seconds): 0.14
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 210344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 75083
+	Voluntary context switches: 15
+	Involuntary context switches: 74
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

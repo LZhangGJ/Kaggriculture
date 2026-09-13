@@ -1,0 +1,14 @@
+{
+  "task": "TRI_A08_r11_r1",
+  "original_dispatch_utc": "2026-09-13T02:15:47.575000+00:00",
+  "hard_deadline_utc": "2026-09-13T04:15:47.575000+00:00",
+  "first_resource_capture_utc": "2026-09-13T02:19:40.648323160Z",
+  "resources_within_first_five_minutes": true,
+  "final_native_build_mtime_utc": "2026-09-13T02:43:40.325395+00:00",
+  "packaging_started_utc": "2026-09-13T03:06:34.609917+00:00",
+  "elapsed_minutes_at_packaging_start": 50.783915283333336,
+  "not_a_reset_deadline": true,
+  "full1536_games_not_launched": true,
+  "final_state": "Compiled final source/native, all reported bounded experiments closed. Remaining original-R2/pool validation explicitly not completed.",
+  "post_zip_validation_receipt": "Final extracted-root verification is performed after this timing snapshot; receipt provided adjacent to the downloadable ZIP."
+}

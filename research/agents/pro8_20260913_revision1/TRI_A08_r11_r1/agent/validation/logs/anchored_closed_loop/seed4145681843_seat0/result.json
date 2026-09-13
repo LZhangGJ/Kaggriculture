@@ -1,0 +1,416 @@
+{
+  "scope": "new complete closed-loop games versus attached A08_r11 only; NOT original AFS R2/public-pool acceptance",
+  "seed_referee_only": 4145681843,
+  "candidate_seat": 0,
+  "complete": true,
+  "errors": [],
+  "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "steps": 719,
+  "terminal_cash_both": [
+    79398.0,
+    79810.0
+  ],
+  "candidate_margin": -412.0,
+  "candidate_strict_win": false,
+  "draw": false,
+  "day_cash_rows": [
+    {
+      "day": 0,
+      "player": 0,
+      "cash": 104.0,
+      "step_after": 24
+    },
+    {
+      "day": 0,
+      "player": 1,
+      "cash": 104.0,
+      "step_after": 24
+    },
+    {
+      "day": 1,
+      "player": 0,
+      "cash": 520.0,
+      "step_after": 48
+    },
+    {
+      "day": 1,
+      "player": 1,
+      "cash": 520.0,
+      "step_after": 48
+    },
+    {
+      "day": 2,
+      "player": 0,
+      "cash": 595.0,
+      "step_after": 72
+    },
+    {
+      "day": 2,
+      "player": 1,
+      "cash": 595.0,
+      "step_after": 72
+    },
+    {
+      "day": 3,
+      "player": 0,
+      "cash": 618.0,
+      "step_after": 96
+    },
+    {
+      "day": 3,
+      "player": 1,
+      "cash": 618.0,
+      "step_after": 96
+    },
+    {
+      "day": 4,
+      "player": 0,
+      "cash": 163.0,
+      "step_after": 120
+    },
+    {
+      "day": 4,
+      "player": 1,
+      "cash": 163.0,
+      "step_after": 120
+    },
+    {
+      "day": 5,
+      "player": 0,
+      "cash": 619.0,
+      "step_after": 144
+    },
+    {
+      "day": 5,
+      "player": 1,
+      "cash": 619.0,
+      "step_after": 144
+    },
+    {
+      "day": 6,
+      "player": 0,
+      "cash": 379.0,
+      "step_after": 168
+    },
+    {
+      "day": 6,
+      "player": 1,
+      "cash": 379.0,
+      "step_after": 168
+    },
+    {
+      "day": 7,
+      "player": 0,
+      "cash": 595.0,
+      "step_after": 192
+    },
+    {
+      "day": 7,
+      "player": 1,
+      "cash": 595.0,
+      "step_after": 192
+    },
+    {
+      "day": 8,
+      "player": 0,
+      "cash": 352.0,
+      "step_after": 216
+    },
+    {
+      "day": 8,
+      "player": 1,
+      "cash": 352.0,
+      "step_after": 216
+    },
+    {
+      "day": 9,
+      "player": 0,
+      "cash": 900.0,
+      "step_after": 240
+    },
+    {
+      "day": 9,
+      "player": 1,
+      "cash": 900.0,
+      "step_after": 240
+    },
+    {
+      "day": 10,
+      "player": 0,
+      "cash": 2461.0,
+      "step_after": 264
+    },
+    {
+      "day": 10,
+      "player": 1,
+      "cash": 2461.0,
+      "step_after": 264
+    },
+    {
+      "day": 11,
+      "player": 0,
+      "cash": 4998.0,
+      "step_after": 288
+    },
+    {
+      "day": 11,
+      "player": 1,
+      "cash": 4998.0,
+      "step_after": 288
+    },
+    {
+      "day": 12,
+      "player": 0,
+      "cash": 6463.0,
+      "step_after": 312
+    },
+    {
+      "day": 12,
+      "player": 1,
+      "cash": 6463.0,
+      "step_after": 312
+    },
+    {
+      "day": 13,
+      "player": 0,
+      "cash": 12023.0,
+      "step_after": 336
+    },
+    {
+      "day": 13,
+      "player": 1,
+      "cash": 12023.0,
+      "step_after": 336
+    },
+    {
+      "day": 14,
+      "player": 0,
+      "cash": 13797.0,
+      "step_after": 360
+    },
+    {
+      "day": 14,
+      "player": 1,
+      "cash": 13797.0,
+      "step_after": 360
+    },
+    {
+      "day": 15,
+      "player": 0,
+      "cash": 21961.0,
+      "step_after": 384
+    },
+    {
+      "day": 15,
+      "player": 1,
+      "cash": 21961.0,
+      "step_after": 384
+    },
+    {
+      "day": 16,
+      "player": 0,
+      "cash": 24505.0,
+      "step_after": 408
+    },
+    {
+      "day": 16,
+      "player": 1,
+      "cash": 24505.0,
+      "step_after": 408
+    },
+    {
+      "day": 17,
+      "player": 0,
+      "cash": 31944.0,
+      "step_after": 432
+    },
+    {
+      "day": 17,
+      "player": 1,
+      "cash": 31944.0,
+      "step_after": 432
+    },
+    {
+      "day": 18,
+      "player": 0,
+      "cash": 39054.0,
+      "step_after": 456
+    },
+    {
+      "day": 18,
+      "player": 1,
+      "cash": 39054.0,
+      "step_after": 456
+    },
+    {
+      "day": 19,
+      "player": 0,
+      "cash": 43920.0,
+      "step_after": 480
+    },
+    {
+      "day": 19,
+      "player": 1,
+      "cash": 43920.0,
+      "step_after": 480
+    },
+    {
+      "day": 20,
+      "player": 0,
+      "cash": 49159.0,
+      "step_after": 504
+    },
+    {
+      "day": 20,
+      "player": 1,
+      "cash": 49159.0,
+      "step_after": 504
+    },
+    {
+      "day": 21,
+      "player": 0,
+      "cash": 51579.0,
+      "step_after": 528
+    },
+    {
+      "day": 21,
+      "player": 1,
+      "cash": 51579.0,
+      "step_after": 528
+    },
+    {
+      "day": 22,
+      "player": 0,
+      "cash": 53771.0,
+      "step_after": 552
+    },
+    {
+      "day": 22,
+      "player": 1,
+      "cash": 53771.0,
+      "step_after": 552
+    },
+    {
+      "day": 23,
+      "player": 0,
+      "cash": 55246.0,
+      "step_after": 576
+    },
+    {
+      "day": 23,
+      "player": 1,
+      "cash": 54957.0,
+      "step_after": 576
+    },
+    {
+      "day": 24,
+      "player": 0,
+      "cash": 57088.0,
+      "step_after": 600
+    },
+    {
+      "day": 24,
+      "player": 1,
+      "cash": 56799.0,
+      "step_after": 600
+    },
+    {
+      "day": 25,
+      "player": 0,
+      "cash": 59547.0,
+      "step_after": 624
+    },
+    {
+      "day": 25,
+      "player": 1,
+      "cash": 59153.0,
+      "step_after": 624
+    },
+    {
+      "day": 26,
+      "player": 0,
+      "cash": 62714.0,
+      "step_after": 648
+    },
+    {
+      "day": 26,
+      "player": 1,
+      "cash": 62288.0,
+      "step_after": 648
+    },
+    {
+      "day": 27,
+      "player": 0,
+      "cash": 66140.0,
+      "step_after": 672
+    },
+    {
+      "day": 27,
+      "player": 1,
+      "cash": 66009.0,
+      "step_after": 672
+    },
+    {
+      "day": 28,
+      "player": 0,
+      "cash": 71054.0,
+      "step_after": 696
+    },
+    {
+      "day": 28,
+      "player": 1,
+      "cash": 71212.0,
+      "step_after": 696
+    },
+    {
+      "day": 29,
+      "player": 0,
+      "cash": 79398.0,
+      "step_after": 719
+    },
+    {
+      "day": 29,
+      "player": 1,
+      "cash": 79810.0,
+      "step_after": 719
+    }
+  ],
+  "day_cash_rows_count": 60,
+  "cash_identity_residual_all_zero": true,
+  "failed_market_units_both": [
+    2,
+    2
+  ],
+  "over_requested_post_units_sells_both": [
+    0,
+    0
+  ],
+  "max_policy_call_seconds_both": [
+    0.31479513500016765,
+    0.31842639299998154
+  ],
+  "action_sha256_both": [
+    "0d6bc917da67213c7ccac7d70a58880dfbbf6a09a816e7c5a8cc6c7f5357e6fc",
+    "f04d801450d3ff7dbe956ee3ed8f58e76bab241c735c271e1d48be8bf33d69b9"
+  ],
+  "native_sha256_both": [
+    "6e6c95e93ed02680957472d1f36f001c7f85a79a38dbc014a2051c9f9a9cb3eb",
+    "3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb"
+  ],
+  "wall_seconds": 7.3418046500000855,
+  "worker_exitcodes": [
+    0,
+    0
+  ],
+  "worker_resource_receipts": [
+    {
+      "closed": true,
+      "peak_rss_kib": 113732
+    },
+    {
+      "closed": true,
+      "peak_rss_kib": 113640
+    }
+  ],
+  "driver_peak_rss_kib": 97584
+}

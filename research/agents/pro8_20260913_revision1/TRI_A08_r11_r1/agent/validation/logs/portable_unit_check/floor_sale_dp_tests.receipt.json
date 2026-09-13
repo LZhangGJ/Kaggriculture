@@ -1,0 +1,13 @@
+{
+  "label": "floor_sale_dp_tests",
+  "utc": "2026-09-13T03:02:23.190843+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests.time",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.11774169199998141
+}

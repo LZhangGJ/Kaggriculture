@@ -1,0 +1,172 @@
+{
+  "mode": "unit",
+  "scope": "No full games",
+  "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "commands": [
+    {
+      "label": "sale_dp_tests.compile",
+      "utc": "2026-09-13T03:02:16.573744+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/sale_dp_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_r11_r1_release/tests/sale_dp_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/sale_dp_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.276466779999737
+    },
+    {
+      "label": "sale_dp_tests",
+      "utc": "2026-09-13T03:02:19.850491+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/sale_dp_tests.time",
+        "/mnt/data/TRI_A08_work/portable_unit_check/sale_dp_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.015778327000134595
+    },
+    {
+      "label": "floor_sale_dp_tests.compile",
+      "utc": "2026-09-13T03:02:19.866514+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_r11_r1_release/tests/floor_sale_dp_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.3240941280000698
+    },
+    {
+      "label": "floor_sale_dp_tests",
+      "utc": "2026-09-13T03:02:23.190843+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests.time",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_sale_dp_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.11774169199998141
+    },
+    {
+      "label": "resume_boundary_tests.compile",
+      "utc": "2026-09-13T03:02:23.308949+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_r11_r1_release/tests/resume_boundary_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.225228333999894
+    },
+    {
+      "label": "resume_boundary_tests",
+      "utc": "2026-09-13T03:02:26.534457+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests.time",
+        "/mnt/data/TRI_A08_work/portable_unit_check/resume_boundary_tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.007834567999907449
+    },
+    {
+      "label": "floor_observation_guard.compile",
+      "utc": "2026-09-13T03:02:26.542560+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_r11_r1_release/tests/floor_observation_guard.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard"
+      ],
+      "returncode": 0,
+      "wall_seconds": 2.8214840919999915
+    },
+    {
+      "label": "floor_observation_guard",
+      "utc": "2026-09-13T03:02:29.364348+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard.time",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.0035910070000682026
+    },
+    {
+      "label": "floor_margin_regression.compile",
+      "utc": "2026-09-13T03:02:29.368144+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_r11_r1_release/tests/floor_margin_regression.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression"
+      ],
+      "returncode": 0,
+      "wall_seconds": 2.574232280999695
+    },
+    {
+      "label": "floor_margin_regression",
+      "utc": "2026-09-13T03:02:31.942629+00:00",
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression.time",
+        "/mnt/data/TRI_A08_work/portable_unit_check/floor_margin_regression"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.0036474730000009004
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+--- parent/main.py
++++ TRI_A06_r12_r1/main.py
+@@ -1,4 +1,4 @@
+-"""A06 competitive r12 candidate: whole-portfolio finite harvest-calendar DP; UNACCEPTED."""
++"""TRI_A06_r12_r1: calendar-consistent terminal planting; awaiting central win-rate acceptance."""
+ from pathlib import Path
+ import importlib.util
+ import json
+--- parent/policy/bridge.cpp
++++ TRI_A06_r12_r1/policy/bridge.cpp
+@@ -110,4 +110,4 @@
+  }catch(const std::exception&e){h.text=std::string("ERROR: ")+e.what();return h.text.c_str();}
+ }
+ 
+-extern "C" int td_r12_enable(void*p,int enabled){if(!p||(enabled!=0&&enabled!=1))return -1;auto&h=*static_cast<Handle*>(p);h.policy.base.a06_r12_calendar=enabled;h.policy.live.s.a06_r12_calendar=enabled;return 0;}
++extern "C" int td_r12_enable(void*p,int enabled){if(!p||(enabled!=0&&enabled!=1))return -1;auto&h=*static_cast<Handle*>(p);h.policy.base.a06_r12_calendar=enabled;h.policy.live.s.a06_r12_calendar=enabled;h.policy.live.core.p.finite_calendar_admission=enabled&&h.policy.live.s.repeat<=0;return 0;}
+--- parent/policy/executor/intraday_admission.hpp
++++ TRI_A06_r12_r1/policy/executor/intraday_admission.hpp
+@@ -147,7 +147,15 @@
+  if(common)shared=c.admission_values(c,o,a);
+  for(auto[value,pr]:vs){int kind=pr.kind;double legacy_value=value;
+   if(common&&(c.admission_scope>=2||kind>=9))value=(1-c.admission_blend)*value+c.admission_blend*shared[kind];
+-  if(pr.out<=0||(!c.p.intraday_future_workforce&&value<=0&&legacy_value<=0)||live[kind]>=limits[kind])continue;
++  // The old repeated-cycle proxy is zero for W day 26/27 and C day 27.
++  // A positive, fully shared r12 calendar value may nevertheless describe a
++  // legal day-29 harvest. Do not veto it with that unrelated preferred age.
++  // No estimated quantity/cash is added: normal seed, cash, route and receipt
++  // checks below remain mandatory. Legacy/no-calendar paths stay unchanged.
++  const bool calendar_output=c.p.finite_calendar_admission&&kind>=0&&kind<5
++   &&!ongoing(kind)&&c.planting_window(kind)&&common&&c.admission_scope>=2
++   &&c.admission_blend==1&&std::isfinite(shared[kind])&&shared[kind]>0;
++  if((pr.out<=0&&!calendar_output)||(!c.p.intraday_future_workforce&&value<=0&&legacy_value<=0)||live[kind]>=limits[kind])continue;
+   if(kind>=9&&(o.day>c.p.latest_animal_day||animals>=c.p.max_animals))continue;
+   for(int pos=0;pos<100;pos++)if(vacant(o,pos)&&!reservations.tiles[pos]&&c.plant_not_before[pos]<=o.day){
+    auto j=project_job(c,o,pos,kind);if(j.actions.empty())continue;
+--- parent/policy/executor/policy.hpp
++++ TRI_A06_r12_r1/policy/executor/policy.hpp
+@@ -93,6 +93,9 @@
+  bool autonomous_start=false; // Same public-state investment selector on day zero.
+  bool joint_investment_portfolio=false;
+  bool portfolio_crop_calendar=false;
++ // r12: planting feasibility uses the legal finite maturity window, not a
++ // default preferred harvest age. The calendar still chooses the harvest.
++ bool finite_calendar_admission=false;
+  bool recover_service_inputs=false,procure_service_inputs=false,finance_service_inputs=false;
+  bool incremental_pickup_repair=false;
+  bool shared_service_insertions=false;
+@@ -233,6 +236,11 @@
+  int feed_insert_checks=0,feed_insert_applied=0,feed_insert_unresolved=0;
+  explicit Controller(Params pars={}):p(std::move(pars)){deferred_kind.fill(-1);}
+  int h_age(int c)const{return p.crop_harvest_age[c];}
++ bool planting_window(int k)const{
++  if(k<0||k>=5||day<0||day>=29)return false;
++  const int age=p.finite_calendar_admission&&!ongoing(k)?first[k]:h_age(k);
++  return day+age<=(p.fix_calendar?29:28);
++ }
+  int finite_yield(int c,int age,bool fertile=false)const{int maxday=c==W?4:c==C?3:12;return std::min(c==C?4:6,1+std::max(0,std::min(age,maxday)-(maxday+1)/2+1)*(fertile?2:1));}
+  Quantities demand(const View&o)const{
+   static const std::array<std::vector<int>,8>products{{{E,W},{E,W,S},{W,C,T,S},{S,MI,W},{C},{MI,T,W},{S,MI},{WO}}};
+@@ -516,7 +524,7 @@
+    if(want>=9){if(animal(t)){bool controlled=animal_service_day==day,retiring=controlled&&!service_feed[pos]&&t.consecutive_unfed>=1;int k=int(t.animal)-9;int ds=day+1-t.placed_day-afirst[k];int incoming=(ds>=0&&ds%ainterval[k]==0&&!t.fed_today)?1+t.pending_care_bonus:0;if(t.yield_units>0&&(day>=29||retiring||(p.frequent_harvest&&t.yield_units>=p.frequent_threshold)||t.yield_units+incoming>held[k]||t.yield_units>=held[k])){push(Op::HARVEST);j.out[product[k]]=t.yield_units;}if(t.fertilizer_available){push(Op::COLLECT_FERTILIZER);j.out[F]=1;}if(day<29){if(!t.fed_today&&(!controlled||service_feed[pos])){push(Op::FEED);j.needs[W]=1;}if(controlled?(service_care[pos]&&!t.cared_today):care_due(t))push(Op::CARE);}j.priority=day<29?0:-5;}
+     else if(t.kind==TileKind::EMPTY||t.kind==TileKind::WEED||t.kind==TileKind::COOP||t.kind==TileKind::PASTURE){if(t.kind==TileKind::WEED){push(Op::DIG);t=Tile{};}auto st=want==G?TileKind::COOP:TileKind::PASTURE;auto build=want==G?Op::BUILD_COOP:Op::BUILD_PASTURE;if(t.kind==TileKind::EMPTY)push(build);else if(t.kind!=st){push(Op::DIG);push(build);}push(Op::PLACE,want);push(Op::FEED);push(Op::CARE);j.needs[want]=1;j.needs[W]=1;j.priority=6;}
+    }else{if(animal(t))continue;j.crop=true;if(t.kind==TileKind::WEED||t.kind==TileKind::COOP||t.kind==TileKind::PASTURE){if(day>=29)continue;push(Op::DIG);t=Tile{};}int desired=want;if(plant(t)){int c=int(t.crop),y=t.yield_units;bool fdue=finite_fertilize_due(t,o,pos);if(fdue){push(Op::FERTILIZE);j.needs[F]=1;}bool expiry=p.fix_expiry&&t.max_lifespan_step>=0&&t.max_lifespan_step<=(day+1)*24;if(ongoing(c)){bool due=fertilize_due(t);if(y>0&&(day>=29||expiry||(p.frequent_harvest&&y>=p.frequent_threshold)||y>=4||(due&&y+2>4))){push(Op::HARVEST);j.out[c]=y;}if(day<29){if(due){push(Op::FERTILIZE);j.needs[F]=1;}if(water_due(t))push(Op::WATER);}desired=c;if(p.renew_ongoing&&day-t.planted_day>=first[c]+3*interval[c]&&want<5&&day+first[want]<=29){if(y>0&&!output(j.out)){push(Op::HARVEST);j.out[c]=y;}j.actions.erase(std::remove_if(j.actions.begin(),j.actions.end(),[](auto a){return a.op==Op::WATER||a.op==Op::FERTILIZE;}),j.actions.end());j.needs[F]=0;push(Op::DIG);t=Tile{};desired=want;}}else if(((day-t.planted_day)>=(triad_crop_age[pos]>=0?triad_crop_age[pos]:harvest_age[c])||(expiry&&y>0))&&day<=28){if(water_due(t))push(Op::WATER);push(Op::HARVEST);if(p.fix_finite_projection){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;int bonus=!t.watered_today&&age>=(maxday+1)/2&&age<=maxday?(fdue||t.fertilized_until_day>=day?2:1):0;j.out[c]=std::min(c==C?4:6,y+bonus);}else j.out[c]=std::max(y,finite_yield(c,h_age(c)));t=Tile{};}else if(day>=29){if(y>0&&(!p.fix_finite_projection||day-t.planted_day>=first[c])){int bonus=0;if(p.fix_finite_projection&&!t.watered_today){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;if(age>=(maxday+1)/2&&age<=maxday){push(Op::WATER);bonus=fdue||t.fertilized_until_day>=day?2:1;}}push(Op::HARVEST);j.out[c]=std::min(c==C?4:6,y+bonus);}}else if(water_due(t))push(Op::WATER);}
+-    if(t.kind==TileKind::EMPTY&&day<29&&day+harvest_age[desired]<=(p.fix_calendar?29:28)){push(Op::PLANT,desired);push(Op::WATER);j.seeds[desired]=1;}j.priority=plant(o.own.tiles[pos])?0:12;if(output(j.out))j.priority=-1;
++    if(t.kind==TileKind::EMPTY&&planting_window(desired)){push(Op::PLANT,desired);push(Op::WATER);j.seeds[desired]=1;}j.priority=plant(o.own.tiles[pos])?0:12;if(output(j.out))j.priority=-1;
+    }if(!j.actions.empty())js.push_back(j);
+   }
+   if(crop_service_day==day)for(auto&j:js){
+--- parent/policy/triad.hpp
++++ TRI_A06_r12_r1/policy/triad.hpp
+@@ -112,6 +112,7 @@
+   p.operating_reserve=s.reserve;p.own_feed_demand_weight=1;
+   p.finite_fertilizer=R2_FINITE_FERTILIZER&&s.crop_fert>0;
+   p.shared_task_atoms_v2=true;
++  p.finite_calendar_admission=s.a06_r12_calendar>0&&s.repeat<=0;
+  }
+  double scalar(const Asset&a,const Flow&px,int start)const{
+   double v=0;for(int d=start;d<30;d++){

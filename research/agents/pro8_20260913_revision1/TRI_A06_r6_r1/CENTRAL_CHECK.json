@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-09-13T03:06:22.590803+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "38a1fc1863ecb03535f8ea79a4fa86409913d492b8fd8181811e11871e8e7677",
+  "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "manifest_files_verified": 307,
+  "source_files_verified": 40,
+  "changed_production_files": [
+    "policy/planner.hpp"
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compile_command": [
+    "g++",
+    "-std=c++20",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_SALE_CLOCK_MODE=0",
+    "-DR2_MARKET_INTEGRAL=0",
+    "-DR2_STARTUP_SUPPLY_MODE=2",
+    "-DA06_EXEC_MODE=2",
+    "-O2",
+    "-I",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r1/package",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r1/package/tests/test_tri_market_floor.cpp",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r1/package/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r1/central/floor_test"
+  ],
+  "unit_test": {
+    "positive_cases": 2061,
+    "legacy_failures": 774,
+    "negative_bit_identical": 729,
+    "fractional_cases": 234,
+    "demand_recovery_cases": 9
+  },
+  "official_oracle_cases": 2061,
+  "official_unit_commits": 73179,
+  "root_entry_observation_calls": 48,
+  "new_agent_games": 0,
+  "seconds": 112.7407294640002
+}

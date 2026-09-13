@@ -1,0 +1,25 @@
+{
+  "verified_at_utc": "2026-09-13T02:59:39.776170+00:00",
+  "status": "PASS",
+  "root": "/mnt/data/TRI_A06_r12_r1",
+  "production_inputs": 47,
+  "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "unchanged_configuration": true,
+  "changed_production_files": [
+    "main.py",
+    "policy/bridge.cpp",
+    "policy/executor/intraday_admission.hpp",
+    "policy/executor/policy.hpp",
+    "policy/triad.hpp"
+  ],
+  "unit_suites": 7,
+  "final_panel_completed_games": 12,
+  "final_candidate_games": 8,
+  "candidate_wins": 5,
+  "candidate_draws": 0,
+  "candidate_losses": 3,
+  "prefix_matched_actions": 4459,
+  "prefix_comparisons": 4466,
+  "payload_files_verified": null,
+  "scope": "Frozen artifact, source/native identity and retained evidence verification; not a new game or acceptance run"
+}

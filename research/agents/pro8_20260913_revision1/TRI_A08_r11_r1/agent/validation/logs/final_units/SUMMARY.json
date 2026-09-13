@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "sale_dp_tests",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/sale_dp_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_work/candidate/tests/sale_dp_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/sale_dp_tests"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/sale_dp_tests.time",
+        "/mnt/data/TRI_A08_work/test_binaries/sale_dp_tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "test": "floor_sale_dp_tests",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_work/candidate/tests/floor_sale_dp_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests.time",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "test": "floor_sale_dp_tests_asan_ubsan",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests_asan_ubsan.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/TRI_A08_work/candidate/tests/floor_sale_dp_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests_asan_ubsan"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_sale_dp_tests_asan_ubsan.time",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_sale_dp_tests_asan_ubsan"
+      ],
+      "returncode": 0
+    },
+    {
+      "test": "resume_boundary_tests",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/resume_boundary_tests.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_work/candidate/tests/resume_boundary_tests.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/resume_boundary_tests"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/resume_boundary_tests.time",
+        "/mnt/data/TRI_A08_work/test_binaries/resume_boundary_tests"
+      ],
+      "returncode": 0
+    },
+    {
+      "test": "floor_observation_guard",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_observation_guard.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_work/candidate/tests/floor_observation_guard.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_observation_guard"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_observation_guard.time",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_observation_guard"
+      ],
+      "returncode": 0
+    },
+    {
+      "test": "floor_margin_regression",
+      "compile_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_margin_regression.compile.time",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "/mnt/data/TRI_A08_work/candidate/tests/floor_margin_regression.cpp",
+        "-o",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_margin_regression"
+      ],
+      "run_command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/mnt/data/TRI_A08_work/logs/final_units/floor_margin_regression.time",
+        "/mnt/data/TRI_A08_work/test_binaries/floor_margin_regression"
+      ],
+      "returncode": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "utc": "2026-09-13T02:29:20.170644+00:00",
+  "parent_source_sha256": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a",
+  "candidate_source_sha256": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+  "production_file_changed": "policy/planner.hpp",
+  "change": "Conditional cash and market stock at positive flows crossing the price floor only. No policy settings or executor source changed."
+}

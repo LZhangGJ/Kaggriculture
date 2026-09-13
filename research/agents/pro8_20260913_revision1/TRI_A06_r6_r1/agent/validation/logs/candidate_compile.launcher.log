@@ -1,0 +1,19 @@
+{
+  "name": "candidate_compile",
+  "command": [
+    "python",
+    "-B",
+    "candidate/build.py"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:29:22.481013+00:00",
+  "timeout_seconds": 140.0,
+  "peak_tree_rss_kb_sampled": 663876,
+  "peak_cgroup_current": 1090166784,
+  "timed_out": false,
+  "pid": 884,
+  "returncode": 0,
+  "wall_seconds": 72.11661914799993,
+  "finished_utc": "2026-09-13T02:30:34.597776+00:00",
+  "ru_maxrss_children_kb": 570396
+}

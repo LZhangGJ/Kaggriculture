@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/margin_build.time",
+    "python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/build.py"
+  ],
+  "pid": 2210,
+  "utc": "2026-09-13T02:43:12.934401+00:00"
+}

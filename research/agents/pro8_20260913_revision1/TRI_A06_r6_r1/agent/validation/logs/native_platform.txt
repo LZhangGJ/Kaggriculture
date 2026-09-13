@@ -1,0 +1,58 @@
+UTC
+2026-09-13T02:36:13Z
+CANDIDATE
+candidate/policy/a06.so: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=04a45170d1225606d5b37a1466d3265ee5022460, not stripped
+	linux-vdso.so.1 (0x00007fd1e1e29000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fd1e1949000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd1e1859000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fd1e182c000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd1e1638000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd1e1e2b000)
+PARENT REQUIRED VERSIONS
+  000000: Version: 1  File: ld-linux-x86-64.so.2  Cnt: 1
+  0x0010:   Name: GLIBC_2.3  Flags: none  Version: 17
+  0x0020: Version: 1  File: libgcc_s.so.1  Cnt: 2
+  0x0030:   Name: GCC_3.0  Flags: none  Version: 19
+  0x0040:   Name: GCC_3.4  Flags: none  Version: 11
+  0x0050: Version: 1  File: libc.so.6  Cnt: 3
+  0x0060:   Name: GLIBC_2.32  Flags: none  Version: 12
+  0x0070:   Name: GLIBC_2.14  Flags: none  Version: 9
+  0x0080:   Name: GLIBC_2.2.5  Flags: none  Version: 7
+  0x0090: Version: 1  File: libm.so.6  Cnt: 2
+  0x00a0:   Name: GLIBC_2.29  Flags: none  Version: 18
+  0x00b0:   Name: GLIBC_2.2.5  Flags: none  Version: 4
+  0x00c0: Version: 1  File: libstdc++.so.6  Cnt: 10
+  0x00d0:   Name: GLIBCXX_3.4.20  Flags: none  Version: 16
+  0x00e0:   Name: GLIBCXX_3.4.31  Flags: none  Version: 15
+  0x00f0:   Name: GLIBCXX_3.4.26  Flags: none  Version: 14
+  0x0100:   Name: GLIBCXX_3.4.18  Flags: none  Version: 13
+  0x0110:   Name: CXXABI_1.3.9  Flags: none  Version: 10
+  0x0120:   Name: GLIBCXX_3.4.29  Flags: none  Version: 8
+  0x0130:   Name: CXXABI_1.3  Flags: none  Version: 6
+  0x0140:   Name: GLIBCXX_3.4.9  Flags: none  Version: 5
+  0x0150:   Name: GLIBCXX_3.4.21  Flags: none  Version: 3
+  0x0160:   Name: GLIBCXX_3.4  Flags: none  Version: 2
+CANDIDATE REQUIRED VERSIONS
+  000000: Version: 1  File: ld-linux-x86-64.so.2  Cnt: 1
+  0x0010:   Name: GLIBC_2.3  Flags: none  Version: 17
+  0x0020: Version: 1  File: libgcc_s.so.1  Cnt: 2
+  0x0030:   Name: GCC_3.0  Flags: none  Version: 19
+  0x0040:   Name: GCC_3.4  Flags: none  Version: 11
+  0x0050: Version: 1  File: libc.so.6  Cnt: 3
+  0x0060:   Name: GLIBC_2.32  Flags: none  Version: 12
+  0x0070:   Name: GLIBC_2.14  Flags: none  Version: 9
+  0x0080:   Name: GLIBC_2.2.5  Flags: none  Version: 7
+  0x0090: Version: 1  File: libm.so.6  Cnt: 2
+  0x00a0:   Name: GLIBC_2.29  Flags: none  Version: 18
+  0x00b0:   Name: GLIBC_2.2.5  Flags: none  Version: 4
+  0x00c0: Version: 1  File: libstdc++.so.6  Cnt: 10
+  0x00d0:   Name: GLIBCXX_3.4.20  Flags: none  Version: 16
+  0x00e0:   Name: GLIBCXX_3.4.31  Flags: none  Version: 15
+  0x00f0:   Name: GLIBCXX_3.4.26  Flags: none  Version: 14
+  0x0100:   Name: GLIBCXX_3.4.18  Flags: none  Version: 13
+  0x0110:   Name: CXXABI_1.3.9  Flags: none  Version: 10
+  0x0120:   Name: GLIBCXX_3.4.29  Flags: none  Version: 8
+  0x0130:   Name: CXXABI_1.3  Flags: none  Version: 6
+  0x0140:   Name: GLIBCXX_3.4.9  Flags: none  Version: 5
+  0x0150:   Name: GLIBCXX_3.4.21  Flags: none  Version: 3
+  0x0160:   Name: GLIBCXX_3.4  Flags: none  Version: 2

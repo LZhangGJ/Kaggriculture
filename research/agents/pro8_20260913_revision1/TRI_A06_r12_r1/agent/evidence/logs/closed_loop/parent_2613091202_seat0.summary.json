@@ -1,0 +1,86 @@
+{
+  "scope": "new complete official-engine game; both policies execute against current legal observations",
+  "tag": "parent_2613091202_seat0",
+  "started_at_utc": "2026-09-13T02:42:23.186383+00:00",
+  "finished_at_utc": "2026-09-13T02:42:31.798065+00:00",
+  "seed_driver_only": 2613091202,
+  "tested_seat": 0,
+  "variant": "parent",
+  "opponent": "exact supplied A06_r12 native (not a named public opponent or R2)",
+  "native_sha256": [
+    "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+    "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a"
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "steps": 719,
+  "player_days": 60,
+  "strict_win": false,
+  "draw": true,
+  "cash": [
+    93827.0,
+    93827.0
+  ],
+  "margin": 0.0,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    93827.0,
+    93827.0
+  ],
+  "seconds": 8.611830779999991,
+  "policy_seconds": [
+    3.520581530000527,
+    3.496567022000818
+  ],
+  "max_call_seconds": [
+    0.2841119189999972,
+    0.2793498029998318
+  ],
+  "peak_rss_kib": 112136,
+  "unit_action_counts": [
+    {
+      "PASS": 709,
+      "PICKUP": 245,
+      "WEST": 659,
+      "BUILD_PASTURE": 20,
+      "PLACE": 37,
+      "NORTH": 702,
+      "FEED": 367,
+      "PLANT": 122,
+      "CARE": 345,
+      "WATER": 748,
+      "EAST": 471,
+      "SOUTH": 340,
+      "COLLECT_FERTILIZER": 430,
+      "DROP": 42,
+      "HARVEST": 390,
+      "FERTILIZE": 127,
+      "BUILD_COOP": 1,
+      "DIG": 27
+    },
+    {
+      "PASS": 710,
+      "PICKUP": 245,
+      "WEST": 659,
+      "BUILD_PASTURE": 20,
+      "PLACE": 37,
+      "NORTH": 702,
+      "FEED": 367,
+      "PLANT": 122,
+      "CARE": 345,
+      "WATER": 748,
+      "EAST": 471,
+      "SOUTH": 340,
+      "COLLECT_FERTILIZER": 430,
+      "DROP": 42,
+      "HARVEST": 390,
+      "FERTILIZE": 127,
+      "BUILD_COOP": 1,
+      "DIG": 26
+    }
+  ],
+  "exception_count": 0,
+  "raw_sha256": "f10f476c9878fee45767043d66425353d25a64c5efb1dd636d23581334a5d382"
+}

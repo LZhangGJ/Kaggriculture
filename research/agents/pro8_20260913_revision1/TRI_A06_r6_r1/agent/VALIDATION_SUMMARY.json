@@ -1,0 +1,182 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "status": "CORRECTNESS_REPAIR_CANDIDATE_FOR_CENTRAL_EVALUATION_NOT_ACCEPTED",
+  "parent_historical": {
+    "all_wins": 374,
+    "all_games": 480,
+    "public_wins": 339,
+    "public_games": 440,
+    "R2_wins": 35,
+    "R2_games": 40,
+    "scope": "Unchanged historical development evidence only"
+  },
+  "new_closed_loop": {
+    "scope": "Small fresh-seed, paired-seat, actual closed-loop revision vs supplied A06_r6 parent regression panel. NOT the public/R2 pool, not held-out generalization.",
+    "panel_sha256": "af188bef9bbcf7c49e8b43106555971ef7a876dae1acb95f28525005498c47b0",
+    "candidate_native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+    "parent_native_sha256": "4119ae39b07c5fd2ef7f79d2f30ee3ee55f0dcd8980707d133a75b92e1140342",
+    "planned_games": 16,
+    "completed_games": 16,
+    "wins": 8,
+    "losses": 8,
+    "ties": 0,
+    "strict_win_rate": 0.5,
+    "mean_margin": 1259.1875,
+    "public_pool_or_R2_win_rate_established": false
+  },
+  "historical_reproduction": {
+    "traces": 7,
+    "transitions_per_trace": 719,
+    "cash_player_days_per_trace": 60,
+    "not_new_games": true
+  },
+  "new_trace_audit": {
+    "games": 16,
+    "transitions": 11504,
+    "reconciled_player_days": 960
+  },
+  "unit_tests": [
+    {
+      "test": "test_a06_fleet",
+      "compile_exit": 0,
+      "exit": 0,
+      "stdout": "PASS: 1992 exact tour/subset comparisons; 160 warehouse subset comparisons, including >400-unit demand\n"
+    },
+    {
+      "test": "test_r3_pending",
+      "compile_exit": 0,
+      "exit": 0,
+      "stdout": "mode=0 pending_wheat=1 sell_wheat=1\nmode=1 pending_wheat=1 sell_wheat=0\nmode=2 pending_wheat=1 sell_wheat=0\nmode=3 pending_wheat=1 sell_wheat=0\nmode=4 pending_wheat=1 sell_wheat=0\nmode=5 pending_wheat=1 sell_wheat=0\nPASS pending paid feed preserved through final SELL regeneration\nPASS receipt gate: opening0, purchase0, actual increase300, newday reset0\n"
+    },
+    {
+      "test": "test_r5_contract",
+      "compile_exit": 0,
+      "exit": 0,
+      "stdout": "PASS 14 economic execution candidates preserve original plan keys, paid commitments and install mode\nPASS 168 matched known-day prefix transitions: same mechanism/action/cash/fills/stock across origins\nPASS exact issued PLANT seed consumption, no sale credit, input immutability, phase-contract origin equality\n"
+    },
+    {
+      "test": "test_r6_contract",
+      "compile_exit": 0,
+      "exit": 0,
+      "stdout": "PASS 2520 bounded short-sale DP certificates\nPASS cash/margin valuation identical when public rival flow is zero; observed cash/paid inventory immutable\n"
+    },
+    {
+      "test": "test_tri_market_floor",
+      "compile_exit": 0,
+      "exit": 0,
+      "stdout": "{\"positive_cases\":2061,\"legacy_failures\":774,\"negative_bit_identical\":729,\"fractional_cases\":234,\"demand_recovery_cases\":9}\n"
+    }
+  ],
+  "production_floor_oracle": {
+    "scope": "Compiled production Planner::trade, integer floor-crossing one-sided batches vs frozen official Python _commit_unit. Not games or recoverable-profit estimates.",
+    "cases": 2061,
+    "successful_official_units": 73179,
+    "all_passed": true,
+    "executable_sha256": "5f05087d42d286db7ac0ae179fb131cd8b11f5d2fe87e76168bbbc724188dac9",
+    "rows_sha256": "9f4abd8edd7ff7e00c12b32de1b294d36f96bf384ed71c4d4d01e512c9302b6b"
+  },
+  "privacy_and_root_abi_test": {
+    "scope": "Unknown-field noninterference and actual main.py:agent/reset entry tests; fabricated canaries are not real private data. No games or win-rate estimate.",
+    "cases": [
+      {
+        "environment_seed_not_passed_to_policy": 1161272086,
+        "seat": 0,
+        "packed_observation_sha256": "7105379a801b7cfd45e6dd0c0468a7d5580a11d3144907ab452ffd53bf931239",
+        "canary_invariance": true,
+        "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+        "abi_settings_count": 44
+      },
+      {
+        "environment_seed_not_passed_to_policy": 1161272086,
+        "seat": 1,
+        "packed_observation_sha256": "460f7ff4966752cba2e21616fd169dbd030055f4550665b944590053f4410c6b",
+        "canary_invariance": true,
+        "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+        "abi_settings_count": 44
+      },
+      {
+        "environment_seed_not_passed_to_policy": 4018553988,
+        "seat": 0,
+        "packed_observation_sha256": "7105379a801b7cfd45e6dd0c0468a7d5580a11d3144907ab452ffd53bf931239",
+        "canary_invariance": true,
+        "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+        "abi_settings_count": 44
+      },
+      {
+        "environment_seed_not_passed_to_policy": 4018553988,
+        "seat": 1,
+        "packed_observation_sha256": "460f7ff4966752cba2e21616fd169dbd030055f4550665b944590053f4410c6b",
+        "canary_invariance": true,
+        "root_action_sha256": "7d8fee75108e4e26d18593be87074458e8b082d663195053f81f3e7f72a85699",
+        "abi_settings_count": 44
+      }
+    ],
+    "all_passed": true
+  },
+  "central_1536": {
+    "run_here": false,
+    "result_available": false,
+    "required_strict_wins": 1306,
+    "overall_gt_85pct_established": false,
+    "R2_advantage_revalidated": false
+  },
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "quota_cpus": 4.0,
+    "effective_cpus": 4.0,
+    "memory_limit_bytes": 4294967296,
+    "operating_cap_bytes": 3006477107,
+    "max_observed_cgroup_bytes": 1412153344,
+    "max_game_workers": 1,
+    "max_concurrent_compile_plus_validation_processes": 2
+  },
+  "dispatch_utc": "2026-09-13T02:17:41.523Z",
+  "hard_deadline_utc": "2026-09-13T04:17:41.523Z",
+  "metadata_written_utc": "2026-09-13T02:43:46.357855+00:00",
+  "delivery_checks": {
+    "task": "TRI_A06_r6_r1",
+    "checked_utc": "2026-09-13T02:43:46.352432+00:00",
+    "physically_extracted_preflight": {
+      "extracted_directory": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+      "preflight_zip_sha256": "0362b999840bd2f972980918cec47aaf2beddce8c07919e698c88ffd85b13bf7",
+      "checked_files": 283,
+      "all_passed": true,
+      "main_at_root": true
+    },
+    "extracted_offline_rebuild_byte_identical": true,
+    "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+    "all_40_sources_match_both_compile_receipts": true,
+    "root_callable": {
+      "scope": "Physically extracted ZIP, actual main.py:agent callable in both seats; byte-matched production native; replay reproduction only, not extra wins.",
+      "root": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+      "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+      "rows": [
+        {
+          "seed": 1161272086,
+          "seat": 0,
+          "matching_root_agent_calls": 719,
+          "verified_transitions": 719,
+          "wall_seconds": 10.005218542000193
+        },
+        {
+          "seed": 1161272086,
+          "seat": 1,
+          "matching_root_agent_calls": 719,
+          "verified_transitions": 719,
+          "wall_seconds": 8.920854882999947
+        }
+      ],
+      "all_passed": true
+    },
+    "staged_runtime_matches_tested_extraction": true,
+    "no_nested_zip": true,
+    "status": "DELIVERABLE_COMPLETE__CENTRAL_GT85_ACCEPTANCE_NOT_VERIFIED"
+  },
+  "historical_all480_row_audit": "validation/diagnostics/historical_all480_row_audit.json"
+}

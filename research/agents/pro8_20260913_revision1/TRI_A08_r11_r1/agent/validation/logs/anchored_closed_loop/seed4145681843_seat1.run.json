@@ -1,0 +1,32 @@
+{
+  "job": {
+    "seed": 4145681843,
+    "candidate_seat": 1
+  },
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/anchored_closed_loop/seed4145681843_seat1.time",
+    "timeout",
+    "-k",
+    "3s",
+    "180s",
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/tests/closed_loop_match.py",
+    "--candidate",
+    "/mnt/data/TRI_A08_work/candidate",
+    "--parent",
+    "/mnt/data/TRI_A08_work/input/agent",
+    "--referee",
+    "/mnt/data/TRI_A08_work/input/referee",
+    "--seed",
+    "4145681843",
+    "--candidate-seat",
+    "1",
+    "--out",
+    "/mnt/data/TRI_A08_work/logs/anchored_closed_loop/seed4145681843_seat1"
+  ],
+  "returncode": 0
+}

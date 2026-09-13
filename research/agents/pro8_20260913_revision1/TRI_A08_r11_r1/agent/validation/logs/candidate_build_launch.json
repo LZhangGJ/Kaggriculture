@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-13T02:27:19.546132+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/candidate_build.time",
+    "timeout",
+    "-k",
+    "5s",
+    "150s",
+    "python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/build.py"
+  ],
+  "pid": 893
+}

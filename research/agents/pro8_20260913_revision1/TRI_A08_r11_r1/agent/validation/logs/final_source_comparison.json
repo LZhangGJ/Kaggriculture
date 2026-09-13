@@ -1,0 +1,12 @@
+{
+  "source_files": 44,
+  "changed_files": [
+    "policy/sale_schedule_dp.hpp",
+    "policy/search.hpp",
+    "policy/triad.hpp",
+    "main.py",
+    "build.py"
+  ],
+  "config_unchanged": true,
+  "all_current_source_hashes_match_build": true
+}

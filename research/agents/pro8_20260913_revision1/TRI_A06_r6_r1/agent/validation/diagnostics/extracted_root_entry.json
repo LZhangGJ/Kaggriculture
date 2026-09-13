@@ -1,0 +1,22 @@
+{
+  "scope": "Physically extracted ZIP, actual main.py:agent callable in both seats; byte-matched production native; replay reproduction only, not extra wins.",
+  "root": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+  "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "rows": [
+    {
+      "seed": 1161272086,
+      "seat": 0,
+      "matching_root_agent_calls": 719,
+      "verified_transitions": 719,
+      "wall_seconds": 10.005218542000193
+    },
+    {
+      "seed": 1161272086,
+      "seat": 1,
+      "matching_root_agent_calls": 719,
+      "verified_transitions": 719,
+      "wall_seconds": 8.920854882999947
+    }
+  ],
+  "all_passed": true
+}

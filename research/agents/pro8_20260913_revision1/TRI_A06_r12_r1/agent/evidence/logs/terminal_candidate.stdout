@@ -1,0 +1,4 @@
+day=26 crop=0 selected_finish=29 positive_output=3 compiled_plant=1
+day=27 crop=0 selected_finish=29 positive_output=2 compiled_plant=1
+day=27 crop=1 selected_finish=29 positive_output=2 compiled_plant=1
+PASS terminal calendar admission: 317 positive/negative checks; actual cash/receipt, idle labor, order cap, end time, paid successor and OFF preserved

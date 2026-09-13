@@ -1,0 +1,34 @@
+{
+  "scope": "default root main.agent import and saved legal common-prefix smoke; not matches",
+  "passed": true,
+  "utc": "2026-09-13T03:06:38.397387+00:00",
+  "root": "/mnt/data/TRI_A08_zip_verify",
+  "cwd": "/tmp",
+  "explicit_binary_override": false,
+  "native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "sources_checked": 44,
+  "manifest_files_checked": 862,
+  "calls": 96,
+  "matches": 96,
+  "rows": [
+    {
+      "seat": 0,
+      "fixture": "aurax_shop_v2_4145681837_seat0.json.gz",
+      "calls": 48,
+      "matched_saved_prefix": 48,
+      "max_call_seconds": 0.0988604670001223,
+      "fixture_sha256": "0b5c3171fb93c241fc52574db94574469ea55c67768b8e6f5ae128528c64ccf1"
+    },
+    {
+      "seat": 1,
+      "fixture": "thomas_955_v2_4145681841_seat1.json.gz",
+      "calls": 48,
+      "matched_saved_prefix": 48,
+      "max_call_seconds": 0.08918362699978388,
+      "fixture_sha256": "58aa786f7112aaf1cbfb27389ad8d94577c39bbda012dd9aa99407a254e12207"
+    }
+  ],
+  "wall_seconds": 2.175569734000419,
+  "peak_rss_kib": 415756,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

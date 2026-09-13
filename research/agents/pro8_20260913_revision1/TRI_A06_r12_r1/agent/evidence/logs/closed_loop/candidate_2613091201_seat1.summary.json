@@ -1,0 +1,84 @@
+{
+  "scope": "new complete official-engine game; both policies execute against current legal observations",
+  "tag": "candidate_2613091201_seat1",
+  "started_at_utc": "2026-09-13T02:40:31.021464+00:00",
+  "finished_at_utc": "2026-09-13T02:40:40.160563+00:00",
+  "seed_driver_only": 2613091201,
+  "tested_seat": 1,
+  "variant": "candidate",
+  "opponent": "exact supplied A06_r12 native (not a named public opponent or R2)",
+  "native_sha256": [
+    "1400cdd7ef2677dc16b9c2b46a34a7ad41419d038c6e9bf5ebf60137707add3a",
+    "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b"
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "steps": 719,
+  "player_days": 60,
+  "strict_win": true,
+  "draw": false,
+  "cash": [
+    99235.0,
+    100967.0
+  ],
+  "margin": 1732.0,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    99235.0,
+    100967.0
+  ],
+  "seconds": 9.139900534999924,
+  "policy_seconds": [
+    3.707209916002739,
+    3.7428898979994756
+  ],
+  "max_call_seconds": [
+    0.30874304500002836,
+    0.30766766200008533
+  ],
+  "peak_rss_kib": 116196,
+  "unit_action_counts": [
+    {
+      "PASS": 775,
+      "PICKUP": 221,
+      "WEST": 578,
+      "BUILD_PASTURE": 20,
+      "PLACE": 60,
+      "NORTH": 644,
+      "FEED": 344,
+      "PLANT": 130,
+      "CARE": 323,
+      "WATER": 833,
+      "EAST": 553,
+      "SOUTH": 418,
+      "COLLECT_FERTILIZER": 397,
+      "DROP": 51,
+      "HARVEST": 426,
+      "FERTILIZE": 143,
+      "DIG": 22
+    },
+    {
+      "PASS": 792,
+      "PICKUP": 227,
+      "WEST": 614,
+      "BUILD_PASTURE": 20,
+      "PLACE": 63,
+      "NORTH": 682,
+      "FEED": 344,
+      "PLANT": 156,
+      "CARE": 323,
+      "WATER": 897,
+      "EAST": 581,
+      "SOUTH": 434,
+      "COLLECT_FERTILIZER": 397,
+      "DROP": 53,
+      "HARVEST": 452,
+      "FERTILIZE": 149,
+      "DIG": 38
+    }
+  ],
+  "exception_count": 0,
+  "raw_sha256": "761840decf187ea5858dd0d365b1489406dd3ae1f995ca6bbc500fca7da759af"
+}

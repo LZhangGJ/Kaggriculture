@@ -1,0 +1,20 @@
+{
+  "label": "floor_observation_guard.compile",
+  "utc": "2026-09-13T03:02:26.542560+00:00",
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard.compile.time",
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "/mnt/data/TRI_A08_r11_r1_release/tests/floor_observation_guard.cpp",
+    "-o",
+    "/mnt/data/TRI_A08_work/portable_unit_check/floor_observation_guard"
+  ],
+  "returncode": 0,
+  "wall_seconds": 2.8214840919999915
+}

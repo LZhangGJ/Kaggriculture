@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/TRI_A08_work/logs/closed_loop/probe.time",
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/TRI_A08_work/candidate/tests/closed_loop_match.py",
+    "--candidate",
+    "/mnt/data/TRI_A08_work/candidate",
+    "--parent",
+    "/mnt/data/TRI_A08_work/input/agent",
+    "--referee",
+    "/mnt/data/TRI_A08_work/input/referee",
+    "--seed",
+    "4145681843",
+    "--candidate-seat",
+    "0",
+    "--out",
+    "/mnt/data/TRI_A08_work/logs/closed_loop/seed4145681843_seat0"
+  ],
+  "pid": 1322
+}

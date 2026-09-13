@@ -1,0 +1,9 @@
+{
+  "status": "SUPERSEDED experiment; floor branch still inherited macro opponent weighting >1",
+  "native_sha256": "6e6c95e93ed02680957472d1f36f001c7f85a79a38dbc014a2051c9f9a9cb3eb",
+  "paired_parent_panel": "logs/anchored_closed_loop/SUMMARY.json",
+  "paired_parent_games": 8,
+  "paired_parent_strict_wins": 5,
+  "reason": "At Thomas historical narrow-win step604, configured weight3 selected own-cash loss26 to suppress rival13 in a declared branch; actual cash margin was worse by13. New floor branch must use actual two-player cash difference, without changing macro/non-floor policy.",
+  "saved_utc": "2026-09-13T02:43:12.933549+00:00"
+}

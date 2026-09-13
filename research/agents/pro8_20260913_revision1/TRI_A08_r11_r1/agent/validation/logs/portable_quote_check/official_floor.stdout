@@ -1,0 +1,1 @@
+{"scope": "synthetic single-market transitions against the unmodified official engine; not matches", "passed": true, "cases": 4974, "both_seats": true, "queue_orderings": 3, "seconds": 1.1652106139999887, "official_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e", "probe_sha256": "b84159bd8ca2ed9f9b091c9d65d8b77a75d9e4ed447c916830e9516d4f523226"}

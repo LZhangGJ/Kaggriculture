@@ -1,0 +1,21 @@
+{
+  "task": "TRI_A06_r12_r1",
+  "entrypoint": "main.py:agent",
+  "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "source_freeze": "SOURCE_FREEZE.json",
+  "configuration_changed": false,
+  "status": "CANDIDATE_FOR_TESTING_NOT_ACCEPTED",
+  "central_panel_expected_games": 1536,
+  "central_strict_wins_required": 1306,
+  "central_panel_executed_here": false,
+  "test_seed_policy": "Use central updated seeds after freezing this identity; never select a seed-specific branch in policy.",
+  "provided_historical_result": "349/480 parent only; not candidate performance",
+  "small_development_panel": "5 strict wins / 8 final-candidate games against the exact parent only",
+  "historical_narrow_wins_verified_for_candidate": false,
+  "notes": [
+    "No guarantee of >85% pool win rate.",
+    "Do not substitute common-prefix probes or saved replay suffixes for closed-loop results.",
+    "Preserve all1536 games in the acceptance denominator.",
+    "One matched development margin worsened by189 while staying a win."
+  ]
+}

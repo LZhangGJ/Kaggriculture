@@ -1,0 +1,26 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "created_utc": "2026-09-13T02:30:54.714617+00:00",
+  "scope": "Small fresh-seed, paired-seat, actual closed-loop revision vs supplied A06_r6 parent regression panel. NOT the public/R2 pool, not held-out generalization.",
+  "seed_method": "Eight OS-entropy uint32 draws, fixed before first revised game; no outcomes used for sampling.",
+  "seeds": [
+    1161272086,
+    4018553988,
+    5541140,
+    630394398,
+    549767285,
+    854676198,
+    829095182,
+    574927105
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "games": 16,
+  "candidate_native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "parent_native_sha256": "4119ae39b07c5fd2ef7f79d2f30ee3ee55f0dcd8980707d133a75b92e1140342",
+  "time_cap_seconds": 480,
+  "max_game_seconds": 60,
+  "workers": 1
+}

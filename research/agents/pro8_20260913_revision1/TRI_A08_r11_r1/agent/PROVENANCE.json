@@ -1,0 +1,24 @@
+{
+  "task": "TRI_A08_r11_r1",
+  "author_lineage": "A08",
+  "sole_parent": {
+    "name": "A08_r11",
+    "input_archive": "A08_r11_source_and_losses.zip",
+    "input_zip_sha256": "d2b4dad66c24be494421cfbcb48942a10162e12d8d81ea660eae5a7aeaab40c3",
+    "original_parent_archive_sha256_recorded_in_input": "1e3ef9d4b960bcbc9fe47430a253877e68518bad18c9e4a31c6a7a5013dc8af5",
+    "native_sha256": "3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb",
+    "source_files_verified": 44,
+    "all_manifest_source_hashes_match": true
+  },
+  "repository_provenance_from_user": {
+    "repository": "github.com/LZhangGJ/Kaggriculture",
+    "branch": "research/pro8-a06-a08-20260913",
+    "commit": "d65325334067cc6c2b616f346bc43231b1c11190"
+  },
+  "verification_scope": "Attached identities and all 44 parent source hashes verified locally. Repository commit/tree read successfully. No claim of a separate remote hash audit of every source.",
+  "no_external_policy_imported": true,
+  "no_A06_or_A08_r12_code_used": true,
+  "other_agent_names_in_original_SOURCE_IDENTITIES": "Metadata supplied by user, not additional production policies.",
+  "candidate_native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "validation_restrictions": "Case IDs, seeds, saved replays, private referee states, and explicit hypothetical supply are validation-only. Production sees legal own observation and public state only."
+}

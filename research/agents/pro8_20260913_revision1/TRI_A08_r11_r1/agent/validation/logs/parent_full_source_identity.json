@@ -1,0 +1,270 @@
+{
+  "checked": 44,
+  "all_match": true,
+  "files": [
+    {
+      "path": "policy/agent.py",
+      "expected": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "actual": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "match": true
+    },
+    {
+      "path": "policy/animal_service_dp.hpp",
+      "expected": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "actual": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "match": true
+    },
+    {
+      "path": "policy/batch_calendar.hpp",
+      "expected": "eaa144f64ff53d7a1e5a9c5a66468c9b2c7483dfbbdb620ba6c8e01cc49a3405",
+      "actual": "eaa144f64ff53d7a1e5a9c5a66468c9b2c7483dfbbdb620ba6c8e01cc49a3405",
+      "match": true
+    },
+    {
+      "path": "policy/bridge.cpp",
+      "expected": "743caec8d1b51696057bf5046059cf11d0678bd0182485515dda76d45c2c4bfe",
+      "actual": "743caec8d1b51696057bf5046059cf11d0678bd0182485515dda76d45c2c4bfe",
+      "match": true
+    },
+    {
+      "path": "policy/conditional_market.hpp",
+      "expected": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "actual": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "match": true
+    },
+    {
+      "path": "policy/config.json",
+      "expected": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "actual": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "match": true
+    },
+    {
+      "path": "policy/executor/compile_choices.hpp",
+      "expected": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "actual": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "match": true
+    },
+    {
+      "path": "policy/executor/crop_delivery.hpp",
+      "expected": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "actual": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "match": true
+    },
+    {
+      "path": "policy/executor/day_consequence.hpp",
+      "expected": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "actual": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "match": true
+    },
+    {
+      "path": "policy/executor/idle_task_handoff.hpp",
+      "expected": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "actual": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "match": true
+    },
+    {
+      "path": "policy/executor/intraday_admission.hpp",
+      "expected": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+      "actual": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+      "match": true
+    },
+    {
+      "path": "policy/executor/investment_candidates.hpp",
+      "expected": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "actual": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "match": true
+    },
+    {
+      "path": "policy/executor/joint_portfolio.hpp",
+      "expected": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "actual": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "match": true
+    },
+    {
+      "path": "policy/executor/live_execution_repairs.hpp",
+      "expected": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "actual": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "match": true
+    },
+    {
+      "path": "policy/executor/observation_view.hpp",
+      "expected": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "actual": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "match": true
+    },
+    {
+      "path": "policy/executor/observed_day_scenario.hpp",
+      "expected": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "actual": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "match": true
+    },
+    {
+      "path": "policy/executor/pack_memo.hpp",
+      "expected": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "actual": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "match": true
+    },
+    {
+      "path": "policy/executor/policy.hpp",
+      "expected": "3fe10da53558ec9aff3be2bf3234f7d76c007ab5400fed867abe60154a43bfa2",
+      "actual": "3fe10da53558ec9aff3be2bf3234f7d76c007ab5400fed867abe60154a43bfa2",
+      "match": true
+    },
+    {
+      "path": "policy/executor/regret_pack_incremental.inc",
+      "expected": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "actual": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "match": true
+    },
+    {
+      "path": "policy/executor/resource_exchange.hpp",
+      "expected": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "actual": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "match": true
+    },
+    {
+      "path": "policy/executor/rotation_calendar.hpp",
+      "expected": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "actual": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "match": true
+    },
+    {
+      "path": "policy/executor/rotation_cash.hpp",
+      "expected": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "actual": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "match": true
+    },
+    {
+      "path": "policy/executor/service_recovery.hpp",
+      "expected": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "actual": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "match": true
+    },
+    {
+      "path": "policy/executor/vendor/simulator.cpp",
+      "expected": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "actual": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "match": true
+    },
+    {
+      "path": "policy/executor/vendor/simulator.hpp",
+      "expected": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+      "actual": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+      "match": true
+    },
+    {
+      "path": "policy/finite_fertilizer.hpp",
+      "expected": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "actual": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "match": true
+    },
+    {
+      "path": "policy/learned_value.hpp",
+      "expected": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+      "actual": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+      "match": true
+    },
+    {
+      "path": "policy/local_sale_timing.hpp",
+      "expected": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766",
+      "actual": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766",
+      "match": true
+    },
+    {
+      "path": "policy/observation_codec.hpp",
+      "expected": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "actual": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "match": true
+    },
+    {
+      "path": "policy/observed_crop_clock.hpp",
+      "expected": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "actual": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "match": true
+    },
+    {
+      "path": "policy/ongoing_maintenance_dp.hpp",
+      "expected": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "actual": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "match": true
+    },
+    {
+      "path": "policy/paid_continuation.hpp",
+      "expected": "e2b0fa66f8c867a41ae959d5669b452e2f714c53e6a47c4942a4649996b62b76",
+      "actual": "e2b0fa66f8c867a41ae959d5669b452e2f714c53e6a47c4942a4649996b62b76",
+      "match": true
+    },
+    {
+      "path": "policy/paid_continuation_types.hpp",
+      "expected": "b0b2087cfc7931204af774bad983822c893501f1ddba12a83eb53e05e60685f1",
+      "actual": "b0b2087cfc7931204af774bad983822c893501f1ddba12a83eb53e05e60685f1",
+      "match": true
+    },
+    {
+      "path": "policy/planner.hpp",
+      "expected": "7cdbd5aa78dc2dac881c166e279a060544651dc92252e94ac1ff5c3e78560b02",
+      "actual": "7cdbd5aa78dc2dac881c166e279a060544651dc92252e94ac1ff5c3e78560b02",
+      "match": true
+    },
+    {
+      "path": "policy/proposals.hpp",
+      "expected": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+      "actual": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+      "match": true
+    },
+    {
+      "path": "policy/public_flow_scenario.hpp",
+      "expected": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "actual": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "match": true
+    },
+    {
+      "path": "policy/public_trade_ledger.hpp",
+      "expected": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "actual": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "match": true
+    },
+    {
+      "path": "policy/sale_clock.hpp",
+      "expected": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "actual": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "match": true
+    },
+    {
+      "path": "policy/sale_schedule_dp.hpp",
+      "expected": "01bff80692447bedecdc5956672e8c7e37e9013538b4243891a2595b411d29b8",
+      "actual": "01bff80692447bedecdc5956672e8c7e37e9013538b4243891a2595b411d29b8",
+      "match": true
+    },
+    {
+      "path": "policy/search.hpp",
+      "expected": "0f6e33d13e49eaa091dcb5daae7c651660d9440cb461a79aec455754458d44e7",
+      "actual": "0f6e33d13e49eaa091dcb5daae7c651660d9440cb461a79aec455754458d44e7",
+      "match": true
+    },
+    {
+      "path": "policy/startup_supply.hpp",
+      "expected": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "actual": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "match": true
+    },
+    {
+      "path": "policy/triad.hpp",
+      "expected": "3b86971157c3eb48b3babc7665b6cabb81bb8682ce21a6bf223d80060cd9e8d3",
+      "actual": "3b86971157c3eb48b3babc7665b6cabb81bb8682ce21a6bf223d80060cd9e8d3",
+      "match": true
+    },
+    {
+      "path": "main.py",
+      "expected": "56d9b878d7ed93857da3251bc221764bb0c3d05273d20882560f2c469953266d",
+      "actual": "56d9b878d7ed93857da3251bc221764bb0c3d05273d20882560f2c469953266d",
+      "match": true
+    },
+    {
+      "path": "build.py",
+      "expected": "f318ed84d10fa9b771e7b9331754aba09254309c9d18f960d43fb04743615533",
+      "actual": "f318ed84d10fa9b771e7b9331754aba09254309c9d18f960d43fb04743615533",
+      "match": true
+    }
+  ]
+}

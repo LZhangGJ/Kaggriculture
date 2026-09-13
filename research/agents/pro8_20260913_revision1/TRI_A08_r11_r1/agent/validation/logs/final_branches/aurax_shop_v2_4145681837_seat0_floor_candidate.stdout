@@ -1,0 +1,32 @@
+{
+  "case": "aurax_shop_v2_4145681837_seat0_floor",
+  "binary": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "complete": true,
+  "branches": [
+    {
+      "scenario": "no_additional_sales",
+      "ticks": 4,
+      "own_cash_change": 96.0,
+      "rival_cash_change": 0.0
+    },
+    {
+      "scenario": "traffic_queue0",
+      "ticks": 4,
+      "own_cash_change": 96.0,
+      "rival_cash_change": 45.0
+    },
+    {
+      "scenario": "traffic_queue3",
+      "ticks": 4,
+      "own_cash_change": 96.0,
+      "rival_cash_change": 45.0
+    },
+    {
+      "scenario": "traffic_queue9",
+      "ticks": 4,
+      "own_cash_change": 96.0,
+      "rival_cash_change": 45.0
+    }
+  ],
+  "error": null
+}

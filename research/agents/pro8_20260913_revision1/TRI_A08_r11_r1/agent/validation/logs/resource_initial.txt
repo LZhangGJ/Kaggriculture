@@ -1,0 +1,46 @@
+UTC 2026-09-13T02:19:40.648323160Z
+--- affinity ---
+pid 361's current affinity list: 0-4
+Cpus_allowed_list:	0-4
+--- cgroup ---
+0::/
+/sys/fs/cgroup/cpu.max
+400000 100000
+/sys/fs/cgroup/cpuset.cpus.effective
+0-4
+/sys/fs/cgroup/memory.max
+4294967296
+/sys/fs/cgroup/memory.current
+288378880
+/sys/fs/cgroup/memory.peak
+1051168768
+/sys/fs/cgroup/cpu.stat
+usage_usec 9664910
+user_usec 4247510
+system_usec 5417399
+nice_usec 0
+nr_periods 147
+nr_throttled 2
+throttled_usec 38081
+nr_bursts 0
+burst_usec 0
+--- mem (host context only) ---
+MemTotal:        6090736 kB
+MemAvailable:    5145256 kB
+SwapCached:            0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+--- disk ---
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G  8.6M   30G   1% /
+--- versions ---
+Python 3.13.5
+g++ (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Linux localhost 6.18.44 #1 SMP Sat Sep 12 15:35:21 UTC 2026 x86_64 GNU/Linux
+--- attachment ---
+d2b4dad66c24be494421cfbcb48942a10162e12d8d81ea660eae5a7aeaab40c3  /mnt/data/A08_r11_source_and_losses.zip
+-rw-r--r-- 1 root oai_shared 3.3M Sep 13 02:19 /mnt/data/A08_r11_source_and_losses.zip

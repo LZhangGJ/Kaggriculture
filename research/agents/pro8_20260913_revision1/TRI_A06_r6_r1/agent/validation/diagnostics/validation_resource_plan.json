@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-13T02:32:28.740089+00:00",
+  "effective_cpus": 4,
+  "memory_limit_bytes": 4294967296,
+  "memory_operating_cap_bytes": 3006477107,
+  "single_compile_tree_peak_kb": 663876,
+  "single_probe_tree_peak_kb": 323752,
+  "decision": "At most one compiler plus one single-worker validation process concurrently. No multiprocessing games. Sampled combined cgroup consumption remains below the 70% memory operating cap.",
+  "closed_loop_games_predeclared": 16,
+  "closed_loop_outer_timeout_seconds": 520,
+  "no_full_1536_panel": true
+}

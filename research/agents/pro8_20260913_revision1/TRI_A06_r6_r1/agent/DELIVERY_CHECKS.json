@@ -1,0 +1,39 @@
+{
+  "task": "TRI_A06_r6_r1",
+  "checked_utc": "2026-09-13T02:43:46.352432+00:00",
+  "physically_extracted_preflight": {
+    "extracted_directory": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+    "preflight_zip_sha256": "0362b999840bd2f972980918cec47aaf2beddce8c07919e698c88ffd85b13bf7",
+    "checked_files": 283,
+    "all_passed": true,
+    "main_at_root": true
+  },
+  "extracted_offline_rebuild_byte_identical": true,
+  "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "all_40_sources_match_both_compile_receipts": true,
+  "root_callable": {
+    "scope": "Physically extracted ZIP, actual main.py:agent callable in both seats; byte-matched production native; replay reproduction only, not extra wins.",
+    "root": "/mnt/data/TRI_A06_r6_r1_zipcheck",
+    "native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+    "rows": [
+      {
+        "seed": 1161272086,
+        "seat": 0,
+        "matching_root_agent_calls": 719,
+        "verified_transitions": 719,
+        "wall_seconds": 10.005218542000193
+      },
+      {
+        "seed": 1161272086,
+        "seat": 1,
+        "matching_root_agent_calls": 719,
+        "verified_transitions": 719,
+        "wall_seconds": 8.920854882999947
+      }
+    ],
+    "all_passed": true
+  },
+  "staged_runtime_matches_tested_extraction": true,
+  "no_nested_zip": true,
+  "status": "DELIVERABLE_COMPLETE__CENTRAL_GT85_ACCEPTANCE_NOT_VERIFIED"
+}

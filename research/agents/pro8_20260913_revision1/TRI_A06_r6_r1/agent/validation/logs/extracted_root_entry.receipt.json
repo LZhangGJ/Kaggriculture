@@ -1,0 +1,23 @@
+{
+  "name": "extracted_root_entry",
+  "command": [
+    "python",
+    "-B",
+    "test_extracted_root.py",
+    "--root",
+    "/mnt/data/TRI_A06_r6_r1_zipcheck",
+    "--out",
+    "/mnt/data/TRI_A06_r6_r1_work/diagnostics/extracted_root_entry.json"
+  ],
+  "cwd": null,
+  "started_utc": "2026-09-13T02:41:38.430911+00:00",
+  "timeout_seconds": 90.0,
+  "peak_tree_rss_kb_sampled": 114684,
+  "peak_cgroup_current": 1147576320,
+  "timed_out": false,
+  "pid": 1537,
+  "returncode": 0,
+  "wall_seconds": 21.432503473999986,
+  "finished_utc": "2026-09-13T02:41:59.863634+00:00",
+  "ru_maxrss_children_kb": 114684
+}

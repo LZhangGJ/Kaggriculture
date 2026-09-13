@@ -1,0 +1,367 @@
+{
+  "fixture": "market_smart_v8_4145681829_seat0.json.gz",
+  "fixture_sha256": "902e376477a168c25abe2d189be26c4099f5bc30efc6f509a28305ef1d9d4f61",
+  "scope": "saved-action factual audit only; zero new games",
+  "all719_transitions_match": true,
+  "cash_rows": 60,
+  "cash_rows_all_match": true,
+  "all_cash_identity_zero": true,
+  "day_cash_rows": [
+    {
+      "day": 0,
+      "player": 0,
+      "cash": 104.0
+    },
+    {
+      "day": 0,
+      "player": 1,
+      "cash": 23.0
+    },
+    {
+      "day": 1,
+      "player": 0,
+      "cash": 523.0
+    },
+    {
+      "day": 1,
+      "player": 1,
+      "cash": 79.0
+    },
+    {
+      "day": 2,
+      "player": 0,
+      "cash": 600.0
+    },
+    {
+      "day": 2,
+      "player": 1,
+      "cash": 191.0
+    },
+    {
+      "day": 3,
+      "player": 0,
+      "cash": 619.0
+    },
+    {
+      "day": 3,
+      "player": 1,
+      "cash": 276.0
+    },
+    {
+      "day": 4,
+      "player": 0,
+      "cash": 225.0
+    },
+    {
+      "day": 4,
+      "player": 1,
+      "cash": 676.0
+    },
+    {
+      "day": 5,
+      "player": 0,
+      "cash": 524.0
+    },
+    {
+      "day": 5,
+      "player": 1,
+      "cash": 786.0
+    },
+    {
+      "day": 6,
+      "player": 0,
+      "cash": 2901.0
+    },
+    {
+      "day": 6,
+      "player": 1,
+      "cash": 781.0
+    },
+    {
+      "day": 7,
+      "player": 0,
+      "cash": 464.0
+    },
+    {
+      "day": 7,
+      "player": 1,
+      "cash": 551.0
+    },
+    {
+      "day": 8,
+      "player": 0,
+      "cash": 322.0
+    },
+    {
+      "day": 8,
+      "player": 1,
+      "cash": 1548.0
+    },
+    {
+      "day": 9,
+      "player": 0,
+      "cash": 1041.0
+    },
+    {
+      "day": 9,
+      "player": 1,
+      "cash": 2253.0
+    },
+    {
+      "day": 10,
+      "player": 0,
+      "cash": 2817.0
+    },
+    {
+      "day": 10,
+      "player": 1,
+      "cash": 16518.0
+    },
+    {
+      "day": 11,
+      "player": 0,
+      "cash": 4695.0
+    },
+    {
+      "day": 11,
+      "player": 1,
+      "cash": 16962.0
+    },
+    {
+      "day": 12,
+      "player": 0,
+      "cash": 7011.0
+    },
+    {
+      "day": 12,
+      "player": 1,
+      "cash": 18791.0
+    },
+    {
+      "day": 13,
+      "player": 0,
+      "cash": 11067.0
+    },
+    {
+      "day": 13,
+      "player": 1,
+      "cash": 21693.0
+    },
+    {
+      "day": 14,
+      "player": 0,
+      "cash": 14652.0
+    },
+    {
+      "day": 14,
+      "player": 1,
+      "cash": 24152.0
+    },
+    {
+      "day": 15,
+      "player": 0,
+      "cash": 19735.0
+    },
+    {
+      "day": 15,
+      "player": 1,
+      "cash": 29484.0
+    },
+    {
+      "day": 16,
+      "player": 0,
+      "cash": 21443.0
+    },
+    {
+      "day": 16,
+      "player": 1,
+      "cash": 34772.0
+    },
+    {
+      "day": 17,
+      "player": 0,
+      "cash": 24456.0
+    },
+    {
+      "day": 17,
+      "player": 1,
+      "cash": 38876.0
+    },
+    {
+      "day": 18,
+      "player": 0,
+      "cash": 30838.0
+    },
+    {
+      "day": 18,
+      "player": 1,
+      "cash": 44188.0
+    },
+    {
+      "day": 19,
+      "player": 0,
+      "cash": 37277.0
+    },
+    {
+      "day": 19,
+      "player": 1,
+      "cash": 47602.0
+    },
+    {
+      "day": 20,
+      "player": 0,
+      "cash": 42582.0
+    },
+    {
+      "day": 20,
+      "player": 1,
+      "cash": 52927.0
+    },
+    {
+      "day": 21,
+      "player": 0,
+      "cash": 48596.0
+    },
+    {
+      "day": 21,
+      "player": 1,
+      "cash": 57987.0
+    },
+    {
+      "day": 22,
+      "player": 0,
+      "cash": 51060.0
+    },
+    {
+      "day": 22,
+      "player": 1,
+      "cash": 60980.0
+    },
+    {
+      "day": 23,
+      "player": 0,
+      "cash": 52921.0
+    },
+    {
+      "day": 23,
+      "player": 1,
+      "cash": 63038.0
+    },
+    {
+      "day": 24,
+      "player": 0,
+      "cash": 54392.0
+    },
+    {
+      "day": 24,
+      "player": 1,
+      "cash": 65191.0
+    },
+    {
+      "day": 25,
+      "player": 0,
+      "cash": 56107.0
+    },
+    {
+      "day": 25,
+      "player": 1,
+      "cash": 67806.0
+    },
+    {
+      "day": 26,
+      "player": 0,
+      "cash": 59281.0
+    },
+    {
+      "day": 26,
+      "player": 1,
+      "cash": 69627.0
+    },
+    {
+      "day": 27,
+      "player": 0,
+      "cash": 62362.0
+    },
+    {
+      "day": 27,
+      "player": 1,
+      "cash": 75431.0
+    },
+    {
+      "day": 28,
+      "player": 0,
+      "cash": 65889.0
+    },
+    {
+      "day": 28,
+      "player": 1,
+      "cash": 78853.0
+    },
+    {
+      "day": 29,
+      "player": 0,
+      "cash": 77942.0
+    },
+    {
+      "day": 29,
+      "player": 1,
+      "cash": 91720.0
+    }
+  ],
+  "cash_final": [
+    77942.0,
+    91720.0
+  ],
+  "failed_market_units_both": [
+    0,
+    120
+  ],
+  "sales_totals_both": [
+    {
+      "FERTILIZER_sold": 266,
+      "FERTILIZER_revenue": 12873.0,
+      "WHEAT_sold": 99,
+      "WHEAT_revenue": 3897.0,
+      "WOOL_sold": 145,
+      "WOOL_revenue": 10411.0,
+      "CARROT_sold": 244,
+      "CARROT_revenue": 14225.0,
+      "MILK_sold": 234,
+      "MILK_revenue": 19689.0,
+      "EGG_sold": 111,
+      "EGG_revenue": 4898.0,
+      "MELON_sold": 100,
+      "MELON_revenue": 13809.0,
+      "STRAWBERRY_sold": 198,
+      "STRAWBERRY_revenue": 20914.0,
+      "TOMATO_sold": 123,
+      "TOMATO_revenue": 5752.0,
+      "MILK_floor_sold": 1,
+      "WOOL_floor_sold": 19,
+      "STRAWBERRY_floor_sold": 19,
+      "FERTILIZER_floor_sold": 29
+    },
+    {
+      "WHEAT_sold": 305,
+      "WHEAT_revenue": 12071.0,
+      "FERTILIZER_sold": 349,
+      "FERTILIZER_revenue": 13991.0,
+      "WOOL_sold": 161,
+      "WOOL_revenue": 11359.0,
+      "MILK_sold": 245,
+      "MILK_revenue": 23073.0,
+      "MELON_sold": 72,
+      "MELON_revenue": 17440.0,
+      "WOOL_floor_sold": 18,
+      "EGG_sold": 78,
+      "EGG_revenue": 3331.0,
+      "STRAWBERRY_sold": 249,
+      "STRAWBERRY_revenue": 29264.0,
+      "MILK_floor_sold": 2,
+      "FERTILIZER_floor_sold": 47,
+      "CARROT_sold": 84,
+      "CARROT_revenue": 5314.0
+    }
+  ],
+  "seconds": 0.47685311700001876
+}

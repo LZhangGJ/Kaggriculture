@@ -1,0 +1,52 @@
+{
+  "panel": {
+    "scope": "four attachment development seeds, paired seats versus attached full A08_r11; not R2/public-pool/holdout/acceptance",
+    "games": [
+      {
+        "seed": 4145681829,
+        "candidate_seat": 0
+      },
+      {
+        "seed": 4145681829,
+        "candidate_seat": 1
+      },
+      {
+        "seed": 4145681832,
+        "candidate_seat": 0
+      },
+      {
+        "seed": 4145681832,
+        "candidate_seat": 1
+      },
+      {
+        "seed": 4145681843,
+        "candidate_seat": 0
+      },
+      {
+        "seed": 4145681843,
+        "candidate_seat": 1
+      },
+      {
+        "seed": 4145681844,
+        "candidate_seat": 0
+      },
+      {
+        "seed": 4145681844,
+        "candidate_seat": 1
+      }
+    ],
+    "planned_games": 8,
+    "concurrent_games": 1,
+    "policy_processes_per_game": 2,
+    "probe_wall_seconds": 7.625058207000052,
+    "probe_worker_peak_rss_kib": [
+      113744,
+      113652
+    ],
+    "probe_driver_peak_rss_kib": 97584,
+    "selection": "explicitly chosen for diagnosis, not a randomly sampled generalization estimate",
+    "predeclared_utc": "2026-09-13T02:40:13.866485+00:00"
+  },
+  "candidate_native_sha256": "bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c",
+  "started_utc": "2026-09-13T02:46:22.349279+00:00"
+}

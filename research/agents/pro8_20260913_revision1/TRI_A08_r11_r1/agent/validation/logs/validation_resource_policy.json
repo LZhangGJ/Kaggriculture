@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-13T02:41:13.697231+00:00",
+  "effective_cpus": 4,
+  "memory_limit_bytes": 4294967296,
+  "memory_budget_bytes": 3006477107,
+  "max_concurrent_full_games": 1,
+  "max_policy_processes_full_game": 2,
+  "additional_read_only_audit_workers": 1,
+  "rationale": "one measured complete game 7.63s; two policy children about114MiB each, driver98MiB; no full-panel launch"
+}
