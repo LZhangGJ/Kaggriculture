@@ -1,0 +1,18 @@
+{
+  "round": 3,
+  "authors": [{
+    "author": "C04",
+    "chat_url": "https://chatgpt.com/c/6aa6d32f-565c-83ea-abe2-a5396b10f4c8",
+    "tab_id": "779295301",
+    "model_observed": "6 Pro",
+    "dispatched_utc": "2026-09-13T20:01:54.463Z",
+    "research_cutoff_utc": "2026-09-13T20:31:54.463Z",
+    "maximum_minutes": 30,
+    "maximum_workers": 2,
+    "reserved_validation_delivery_minutes": 8,
+    "scope": "One bounded labor/route scheduling improvement from preserved baseline; record all attempts and failures. Prior round-two source and detailed evidence are unavailable.",
+    "validation": "Declare 16 untouched seeds before observing results, exclude all known prior seeds including surviving round-two CSV; freeze source before 32 both-seat PASS games; retain full panel even on failure.",
+    "delivery": "Complete source/runtime checkpoint within five minutes, separately attached final runtime ZIP below 5 MB, each evidence archive below 50 MB, full replays and exact hashes. Do not embed large inherited archives."
+  }],
+  "other_authors": "No other round-three research dispatched. C01/C02/C06/C07 runtimes await fresh shared controller qualification with unchanged C03/C05/C08 and the pending C04 runtime."
+}
