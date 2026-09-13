@@ -19,11 +19,11 @@ All authors must deliver a complete runnable strategy. These focus areas do not 
 
 ## First qualification
 
-Average terminal cash must reach 200,000 against a legal PASS opponent that takes no active actions. The controller will freeze a shared fresh multi-seed panel before checking submitted candidates. Both seats must be represented. Report every scheduled game, errors, terminal status, cash and timing. Below-threshold authors continue in a later bounded round.
+Average terminal cash must reach 200,000 against a legal PASS opponent that takes no active actions. After freezing all submitted sources, the controller will draw 16 fresh shared seeds and test both seats: 32 games per candidate. Report every scheduled game, errors, terminal status, cash and timing. All 32 games must finish for qualification. Below-threshold authors continue in a later bounded round.
 
 ## Selection and competitive acceptance
 
-Once all eight qualify, run a shared-seed round robin in both seats. Rank by strict win rate, then head-to-head results, then worst-opponent rate. Publish all match results and select two candidates.
+Once all eight qualify, run a round robin on 16 fresh shared seeds in both seats: 896 games across 28 pairs. Rank by strict win rate, then head-to-head results, then worst-opponent rate. Publish all match results and select two candidates.
 
 For competitive rounds, freeze candidate and opponent identities before drawing 64 fresh shared seeds. Each candidate plays all 12 designated entries in both seats: 1,536 games. At least 1,306 strict wins are required. Draws do not count as wins; cash has no competitive acceptance threshold. Preserve the designated entry weights even where opponents share code.
 

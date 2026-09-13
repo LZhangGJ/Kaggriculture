@@ -9,6 +9,9 @@ This is a new campaign. No author delivery, economic qualification, round-robin 
 - [Source bundle](AUTHOR_INPUTS.zip)
 - [Imported historical record verification](IMPORT_VERIFICATION.json)
 - [Local input build and runtime smoke](INPUT_SMOKE.json)
+- [Evaluator source, fixed opponent runtimes and all preflight rows](EVALUATOR_PACKAGE.zip)
+- [Four-worker runtime preflight](RESOURCE_PREFLIGHT.json)
+- [Known seed exclusions](SEED_HISTORY.json)
 
 The source bundle contains 71 files plus a hash manifest: buildable A06 r6 revision 1 source, the frozen official referee and historical results. Bundle SHA256: `75356640e384979f504fa7393796ab3c4e8dd22b051d5284599d7e4266b2e76d`.
 
@@ -17,3 +20,7 @@ The local smoke rebuilt the parent with GCC 11.4 in 14.81 seconds. Two complete 
 The controller independently checked the published baseline and revision report hashes and all 9,216 game rows, including exact seed/opponent/seat coverage and terminal cash comparisons. It checked CRC integrity for six original ZIPs. Full historical central replay bytes were absent, so this import check does not verify those replay hashes or reproduce the games.
 
 Formal competitive acceptance requires at least 1,306 strict wins from 1,536 planned games per candidate. No cash threshold applies. Future reports will retain source identities, every game result and failures, both-seat coverage and fresh seed records.
+
+The fixed-pool preflight completed all 24 games: one already-used seed, all 12 opponents and both seats. Four CPU workers took 24.73 seconds, with no errors and unchanged source hashes. This projects about 53 minutes for two 1,536-game panels at that measured throughput; revised strategies and other seeds may take longer. It does not establish competitive strength.
+
+The evaluator package includes all 46 pinned opponent runtime files, preserves their licenses and records exact source hashes. Original R2 retains the required native hash. Its original C++ build source is unavailable; the runtime is preserved unchanged. The package contains a reproduction note for paths that came from the original host.

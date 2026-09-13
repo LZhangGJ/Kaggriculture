@@ -1,0 +1,23 @@
+{
+  "approved_workers": 4,
+  "errors": [],
+  "estimate_limit": "One already-used seed; revised candidates and other seeds can be slower. Allow author and analysis time within the round.",
+  "invocation": "wsl -d Ubuntu-22.04 --cd <harness> -- python3 pool_preflight.py",
+  "logical_cpus": 32,
+  "max_action_seconds": 0.21557379500001161,
+  "max_actor_process_rss_kib": 70140,
+  "max_game_process_rss_kib": 23804,
+  "mean_game_seconds": 3.822370976166669,
+  "measured_seconds_per_game": 1.0305272955416669,
+  "memory_note": "RSS values are individual process peaks, not simultaneous aggregate memory.",
+  "observed_games_per_second": 0.9703770141036185,
+  "planned": 24,
+  "projected_3072_games_seconds": 3165.7798519040007,
+  "python": "3.10.12",
+  "python_executable": "/usr/bin/python3",
+  "scope": "Runtime and concurrency preflight only; reused seed 291307001. Not qualification or competitive evidence.",
+  "seconds": 24.732655093000005,
+  "source_integrity_valid": true,
+  "valid": 24,
+  "workers": 4
+}
