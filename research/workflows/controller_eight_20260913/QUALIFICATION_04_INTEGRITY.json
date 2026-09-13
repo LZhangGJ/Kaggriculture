@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "planned_cells": 256,
+  "exact_cells_and_unique_rows": true,
+  "all_replays_hash_and_terminal_cash_agree": true,
+  "all719_transitions_and_both_DONE": true,
+  "source_integrity": {
+    "C01": true,
+    "C02": true,
+    "C03": true,
+    "C04": true,
+    "C05": true,
+    "C06": true,
+    "C07": true,
+    "C08": true,
+    "referee": true,
+    "harness": true,
+    "freeze": true,
+    "seeds": true
+  },
+  "seed_draw_after_freeze": true,
+  "seeds_disjoint_from_exclusions_and_prior_claims": true,
+  "exclusion_count": 1144,
+  "manifest_sha256": "69b21343a8f728de4ec675210a1041722afc924ade088e04db523584a92ad0fc",
+  "rows_sha256": "d1bdec7a61c2387adf9ed5298149b293066d0b99321e587dd24109c3ab15684a",
+  "summary_sha256": "21c376ed58e1485d2a37dba3ea9a8ef46041c3da8f24af33f99a1308335e9613",
+  "official_interpreter_rerun": false,
+  "historical_gaps": {
+    "C01": {
+      "status": "round04_verified_with_prior_historical_seed_gaps",
+      "claimed_results_verified": true,
+      "missing": [],
+      "prior_history_limit": "Earlier unrecoverable seeds remain unknown; round04 supplied evidence is complete."
+    },
+    "C02": {
+      "status": "ROUND05_COMPLETE_VERIFIED_UNCHANGED_POLICY",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Unknown lost campaign histories remain unknown."
+    },
+    "C03": {
+      "status": "UNCHANGED_PREVIOUSLY_VERIFIED_RUNTIME",
+      "claimed_results_verified": null,
+      "receipt_limits": [
+        "Author report and 757826 trace transitions reconciled, but 1054 games were not independently rerun.",
+        "Author fresh-panel chronology comes from supplied records; controller independent qualification remains pending.",
+        "Local g++11 binary differs from author binary; both 719-action hashes and terminal cash reproduced exactly on one already-used development seed in both seats.",
+        "Static source review is not a formal security proof."
+      ]
+    },
+    "C04": {
+      "status": "ROUND06_COMPLETE_AND_PARTIAL_EVIDENCE_VERIFIED",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Prior Round02 source and complete records remain unavailable; lost seed history remains unknown."
+    },
+    "C05": {
+      "status": "ROUND05_COMPLETE_VERIFIED",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Unknown lost campaign seed histories remain unknown."
+    },
+    "C06": {
+      "status": "round05_verified_round02_missing_history",
+      "claimed_results_verified": false,
+      "round05_claimed_results_verified": true,
+      "missing": [
+        "Round02 original 502 claimed games, full replays and possibly unknown seed history remain missing."
+      ]
+    },
+    "C07": {
+      "status": "ROUND04_COMPLETE_VERIFIED_WITH_PRIOR_HISTORY_GAP",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_missing": [
+        "Original Round02 archive with SHA256 167d8425023d9b1fcd6c9e66cf185fb1585adbc20123cab58087e97f3a878b87 remains unavailable.",
+        "Surviving Round02 archive SHA256 9d4f6aafb9f40ddf05916f275284ca6250d87b018994ba5e9052ab47c41f3310 differs from that original report; Round04 does not recover it."
+      ]
+    },
+    "C08": {
+      "status": "UNCHANGED_PREVIOUSLY_VERIFIED_RUNTIME",
+      "claimed_results_verified": null,
+      "receipt_limits": [
+        "Author chronology is supplied-record evidence; no independent fresh qualification has run.",
+        "Full action traces exist for 540 of 2862 attempts. All supplied full traces were replayed through the frozen referee; earlier screens provide action hashes, dawn and terminal records.",
+        "Recorded compiler interruptions are separate from the zero recorded full-game failures.",
+        "Local g++11 binary differs from the author binary; both complete action sequences and terminal cash reproduce on one used development seed."
+      ]
+    }
+  }
+}

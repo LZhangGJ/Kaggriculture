@@ -1,0 +1,23 @@
+{
+  "file": "QUALIFICATION_04_COMPLETE.zip",
+  "bytes": 67816793,
+  "sha256": "d0a0e52aef0f83600a4d6fff8b592b2ac7b16b4a7a71cefe09baa799e5afb500",
+  "files": 1357,
+  "crc_valid": true,
+  "all_member_hashes_verified": true,
+  "games": 256,
+  "recorded_transitions": 184064,
+  "status": "COMPLETE_RECORD_EVIDENCE_PACKAGE",
+  "economic_gate_results": {
+    "C01": true,
+    "C02": true,
+    "C03": false,
+    "C04": true,
+    "C05": true,
+    "C06": true,
+    "C07": true,
+    "C08": false
+  },
+  "competitive_acceptance": "NOT_EVALUATED",
+  "source_identity_rechecked_after": true
+}
