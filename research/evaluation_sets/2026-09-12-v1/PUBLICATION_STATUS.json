@@ -1,23 +1,36 @@
 {
   "development": {
-    "complete": false,
-    "completed": 55313,
-    "elapsed_this_process": 9295.196573019028,
-    "games_per_second": 5.950707934521351,
+    "complete": true,
+    "completed": 73728,
+    "elapsed_this_process": 12799.072573423386,
+    "games_per_second": 5.760417372200263,
     "invalid": 0,
-    "missing": 18415,
+    "missing": 0,
     "phase": "development",
     "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
     "scheduled": 73728,
-    "updated_unix": 1789253249.6154401
+    "updated_unix": 1789256753.4910836
   },
+  "development_invalid": 0,
+  "development_missing": 0,
   "holdout": "released_for_frozen_six_candidate_comparison; not yet reported",
-  "note": "Representative results are complete. This is not a completed three-panel comparison.",
-  "primary_games_completed_at_snapshot": 55313,
+  "holdout_status": {
+    "complete": false,
+    "completed": 5139,
+    "elapsed_this_process": 845.6832520961761,
+    "games_per_second": 6.076743257315402,
+    "invalid": 0,
+    "missing": 44013,
+    "phase": "holdout",
+    "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
+    "scheduled": 49152,
+    "updated_unix": 1789257600.4577773
+  },
+  "note": "Both development panels are complete. This is not a completed three-panel comparison.",
+  "primary_games_completed_at_snapshot": 78867,
   "primary_games_scheduled": 122880,
-  "representative_duplicates": 0,
   "representative_games_completed": 49152,
-  "representative_invalid": 0,
-  "representative_missing": 0,
-  "stage": "representative_complete_stress_and_holdout_pending"
+  "stage": "representative_and_stress_complete_holdout_running",
+  "stress_games_completed": 24576,
+  "updated_utc": "2026-09-13T00:00:07Z"
 }
