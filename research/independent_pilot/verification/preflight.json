@@ -1,0 +1,118 @@
+{
+  "boundary": {
+    "opponent_private_and_rng_invariance": true,
+    "seed_rejected": true
+  },
+  "direct": {
+    "menu_comparisons": 3065,
+    "steps": 719,
+    "verbs": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26
+    ]
+  },
+  "focused": [
+    {
+      "cash": [
+        2989.0,
+        3000.0
+      ],
+      "name": "shared_seed",
+      "steps": 719
+    },
+    {
+      "cash": [
+        73.0,
+        2996.0
+      ],
+      "name": "cash_and_partial_trade",
+      "steps": 719
+    },
+    {
+      "cash": [
+        31.0,
+        3000.0
+      ],
+      "name": "capacity_and_overnight",
+      "steps": 719
+    },
+    {
+      "cash": [
+        0.0,
+        3000.0
+      ],
+      "name": "final_action",
+      "steps": 719
+    }
+  ],
+  "passed": true,
+  "planner": [
+    {
+      "cash": [
+        7243.0,
+        7243.0
+      ],
+      "kind": 0,
+      "latency_max": 0.0005454570000438252,
+      "latency_p99": 0.00042729965029138846,
+      "steps": 719
+    },
+    {
+      "cash": [
+        16401.0,
+        16401.0
+      ],
+      "kind": 4,
+      "latency_max": 0.0005612744998870767,
+      "latency_p99": 0.0004261373696863304,
+      "steps": 719
+    },
+    {
+      "cash": [
+        10206.0,
+        10206.0
+      ],
+      "kind": 6,
+      "latency_max": 0.00044101399998908164,
+      "latency_p99": 0.0003575961005844876,
+      "steps": 719
+    }
+  ],
+  "seconds": 5.156760135998411,
+  "sources": {
+    "__init__.py": "475b5a855083ce0bc3955c414342eb4475d25d8f52b834155ab65f79c831ce30",
+    "actor.hpp": "22d1aaa6ad4f0807afad34145f6b03526e125207779abe6cba25e518b8cc96fa",
+    "analyze.py": "e5435a6e3cef94442ebc8010c74d4a4a2f72c565cb6a93f1725602e87faf47a0",
+    "build.py": "a1d0a2c636c92fbeea28194b8dd861f729f981ba2a67395784508459fdfca2ff",
+    "evaluate.py": "f060468f63a8026ccca879eb8d4e8d64f338469ea58bfbe8bc93d855afa45af1",
+    "learning_check.py": "47a447049d5a8664189ebffd8cb544ae9212c212c64b8c063d0f0d5cb20c9c89",
+    "native.cpp": "ed9e3152dacb38ba15ce57b83fad2fac115ee32674b2e76a15a594355e3fb845",
+    "native.cpython-312-x86_64-linux-gnu.so": "995086eb3a5684196a70f7131cd9b2f2c5020a28310d16c8273c1981052a6843",
+    "planner.hpp": "e39285a2db914e5dda432d5263bf9af2aa3a4d7ceb223738b0be77c975210a2a",
+    "plans.py": "f4f23cdc4b5afbd40a7167d21f2f368e575cf98076d444a655d8c6984176b581",
+    "policy.py": "300d4b3432274c87596c791dde82f49224b081c8ddda5dc34c143fc20ba8249a",
+    "ppo.py": "b15fa6946c3e70a6da4ddd5d35ac5151304425072873ff28a470775607343e43",
+    "preflight.py": "06232dba77de127f29646f3d82b3f387d626437a1447fb72317776bca4fbef4d",
+    "protocol.py": "b533d97627f25d610b3bfa090efd57084dd8f9b8c20ec5e744eed01bded2dde5",
+    "run_trials.py": "faab805bb6a689bf7c3b1c0b27ff79493210ec34ccba8117c2988c06ed148285",
+    "runtime.py": "e6d0692ce987eca053e5b3a841a40809941e500a97b9e8df0b9866ad78ba7e00",
+    "search.py": "cd3ce345918ceeda41ca7c165dd21f69a58d1236a4ae78c4aa0c90b644a802a7"
+  }
+}

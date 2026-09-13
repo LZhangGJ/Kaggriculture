@@ -1,0 +1,36 @@
+{
+  "changed_tensors": 18,
+  "collector_games": 4,
+  "collector_seconds": 2.10760280499926,
+  "deployment_cash": [
+    0.0,
+    20335.0
+  ],
+  "full_game_deployed_actor_parity": true,
+  "latency_max": 0.011002691999237868,
+  "latency_p99": 0.009326693199109287,
+  "optimizer": {
+    "epochs": [
+      {
+        "approx_kl": 0.0,
+        "gradient_norm": 0.5181475281715393,
+        "loss": 0.12070813775062561,
+        "value_loss": 0.2611265480518341
+      },
+      {
+        "approx_kl": 5.066083758720197e-06,
+        "gradient_norm": 0.41307052969932556,
+        "loss": 0.11146476864814758,
+        "value_loss": 0.242813840508461
+      }
+    ],
+    "seconds": 0.4279113430002326
+  },
+  "parameters": 147458,
+  "passed": true,
+  "player_turns": 4314,
+  "player_turns_per_second": 2046.8752412775018,
+  "replay_logp_max_error": 9.5367431640625e-07,
+  "search_game_seconds": 0.005629520562479229,
+  "search_games_per_second": 177.63502040742208
+}

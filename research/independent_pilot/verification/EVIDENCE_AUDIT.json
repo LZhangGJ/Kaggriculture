@@ -1,0 +1,692 @@
+{
+  "audit_scope": "additional check written during selection; leaves frozen decisions unchanged",
+  "compute_limit": "Trial CPU clocks exclude initialization before the timed loop; pipeline wall time includes startup. Evaluation worker wall time is summed over games and is not elapsed time or CPU time.",
+  "configuration_selection_scores": {
+    "ppo": {
+      "0.003": [
+        0.0,
+        0.0,
+        -168565.27083333334
+      ],
+      "0.01": [
+        0.0,
+        0.0,
+        -165693.88020833334
+      ]
+    },
+    "search": {
+      "beam": [
+        0.0,
+        0.0,
+        -98144.76041666667
+      ],
+      "lns": [
+        0.0,
+        0.0,
+        -97188.75520833333
+      ]
+    }
+  },
+  "freeze_sha256": "a137b86b2917d888599671eae46c4350a6e328bf0f9f4ece5f500607d3dce39e",
+  "frozen_input_files": 130,
+  "one_world_replay_descriptions": {
+    "control": {
+      "daily_cash": {
+        "0": {
+          "mean": 3000.0,
+          "median": 3000.0
+        },
+        "1": {
+          "mean": 2880.0,
+          "median": 2880.0
+        },
+        "10": {
+          "mean": 4254.5,
+          "median": 4258.5
+        },
+        "11": {
+          "mean": 4364.5,
+          "median": 4365.5
+        },
+        "12": {
+          "mean": 4688.5,
+          "median": 4687.5
+        },
+        "13": {
+          "mean": 4736.25,
+          "median": 4735.5
+        },
+        "14": {
+          "mean": 5152.5,
+          "median": 5153.5
+        },
+        "15": {
+          "mean": 5204.5,
+          "median": 5205.5
+        },
+        "16": {
+          "mean": 5636.75,
+          "median": 5636.5
+        },
+        "17": {
+          "mean": 5694.25,
+          "median": 5694.5
+        },
+        "18": {
+          "mean": 6144.25,
+          "median": 6148.0
+        },
+        "19": {
+          "mean": 6207.0,
+          "median": 6211.5
+        },
+        "2": {
+          "mean": 2860.0,
+          "median": 2860.0
+        },
+        "20": {
+          "mean": 6671.75,
+          "median": 6677.5
+        },
+        "21": {
+          "mean": 6739.75,
+          "median": 6747.5
+        },
+        "22": {
+          "mean": 7223.5,
+          "median": 7235.0
+        },
+        "23": {
+          "mean": 7296.5,
+          "median": 7307.0
+        },
+        "24": {
+          "mean": 7795.5,
+          "median": 7803.0
+        },
+        "25": {
+          "mean": 7874.5,
+          "median": 7881.0
+        },
+        "26": {
+          "mean": 8388.25,
+          "median": 8395.0
+        },
+        "27": {
+          "mean": 8471.25,
+          "median": 8479.0
+        },
+        "28": {
+          "mean": 8999.5,
+          "median": 9009.5
+        },
+        "29": {
+          "mean": 9258.0,
+          "median": 9268.5
+        },
+        "3": {
+          "mean": 2942.5,
+          "median": 2943.5
+        },
+        "4": {
+          "mean": 3192.75,
+          "median": 3198.5
+        },
+        "5": {
+          "mean": 3268.25,
+          "median": 3276.0
+        },
+        "6": {
+          "mean": 3526.0,
+          "median": 3537.0
+        },
+        "7": {
+          "mean": 3603.5,
+          "median": 3612.5
+        },
+        "8": {
+          "mean": 3869.25,
+          "median": 3873.5
+        },
+        "9": {
+          "mean": 3960.5,
+          "median": 3964.5
+        }
+      },
+      "market_commands": {
+        "BUY_SEED": 536,
+        "HIRE": 1440,
+        "SELL": 328
+      },
+      "replays": 8,
+      "worker_commands": {
+        "DROP": 264,
+        "EAST": 1168,
+        "HARVEST": 896,
+        "NORTH": 3392,
+        "PASS": 24616,
+        "PLANT": 896,
+        "SOUTH": 1608,
+        "WATER": 2688,
+        "WEST": 2624
+      }
+    },
+    "ppo": {
+      "daily_cash": {
+        "0": {
+          "mean": 3000.0,
+          "median": 3000.0
+        },
+        "1": {
+          "mean": 1.0,
+          "median": 0.0
+        },
+        "10": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "11": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "12": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "13": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "14": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "15": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "16": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "17": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "18": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "19": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "2": {
+          "mean": 0.08333333333333333,
+          "median": 0.0
+        },
+        "20": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "21": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "22": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "23": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "24": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "25": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "26": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "27": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "28": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "29": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "3": {
+          "mean": 0.5,
+          "median": 0.0
+        },
+        "4": {
+          "mean": 0.16666666666666666,
+          "median": 0.0
+        },
+        "5": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "6": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "7": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "8": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "9": {
+          "mean": 0.0,
+          "median": 0.0
+        }
+      },
+      "market_commands": {
+        "BUY_ANIMAL": 32,
+        "BUY_PRODUCT": 60,
+        "BUY_SEED": 244,
+        "HIRE": 94,
+        "SELL": 70
+      },
+      "replays": 24,
+      "worker_commands": {
+        "BUILD_PASTURE": 3,
+        "DIG": 4523,
+        "DROP": 144,
+        "EAST": 3764,
+        "FERTILIZE": 14,
+        "NORTH": 299,
+        "PASS": 6778,
+        "PICKUP": 276,
+        "PLANT": 407,
+        "SOUTH": 152,
+        "WATER": 4,
+        "WEST": 2760
+      }
+    },
+    "search": {
+      "daily_cash": {
+        "0": {
+          "mean": 3000.0,
+          "median": 3000.0
+        },
+        "1": {
+          "mean": 416.4166666666667,
+          "median": 320.0
+        },
+        "10": {
+          "mean": 87.91666666666667,
+          "median": 104.5
+        },
+        "11": {
+          "mean": 3222.4583333333335,
+          "median": 348.0
+        },
+        "12": {
+          "mean": 3465.4583333333335,
+          "median": 131.5
+        },
+        "13": {
+          "mean": 1507.6666666666667,
+          "median": 766.0
+        },
+        "14": {
+          "mean": 1672.625,
+          "median": 1083.5
+        },
+        "15": {
+          "mean": 1998.125,
+          "median": 762.0
+        },
+        "16": {
+          "mean": 2193.875,
+          "median": 815.0
+        },
+        "17": {
+          "mean": 4955.208333333333,
+          "median": 4723.5
+        },
+        "18": {
+          "mean": 8589.666666666666,
+          "median": 8083.5
+        },
+        "19": {
+          "mean": 10360.458333333334,
+          "median": 9651.5
+        },
+        "2": {
+          "mean": 406.0833333333333,
+          "median": 300.0
+        },
+        "20": {
+          "mean": 13643.791666666666,
+          "median": 13542.0
+        },
+        "21": {
+          "mean": 16208.041666666666,
+          "median": 14421.0
+        },
+        "22": {
+          "mean": 18294.458333333332,
+          "median": 15292.0
+        },
+        "23": {
+          "mean": 20668.583333333332,
+          "median": 17482.0
+        },
+        "24": {
+          "mean": 24312.041666666668,
+          "median": 20593.0
+        },
+        "25": {
+          "mean": 26734.875,
+          "median": 23674.5
+        },
+        "26": {
+          "mean": 29074.0,
+          "median": 25830.0
+        },
+        "27": {
+          "mean": 31769.125,
+          "median": 29149.5
+        },
+        "28": {
+          "mean": 34093.541666666664,
+          "median": 31835.0
+        },
+        "29": {
+          "mean": 37056.666666666664,
+          "median": 35227.0
+        },
+        "3": {
+          "mean": 463.25,
+          "median": 300.0
+        },
+        "4": {
+          "mean": 421.5416666666667,
+          "median": 304.5
+        },
+        "5": {
+          "mean": 483.7083333333333,
+          "median": 424.0
+        },
+        "6": {
+          "mean": 426.75,
+          "median": 305.0
+        },
+        "7": {
+          "mean": 96.29166666666667,
+          "median": 103.0
+        },
+        "8": {
+          "mean": 121.83333333333333,
+          "median": 100.5
+        },
+        "9": {
+          "mean": 179.41666666666666,
+          "median": 138.5
+        }
+      },
+      "market_commands": {
+        "BUY_ANIMAL": 200,
+        "BUY_LAND": 24,
+        "BUY_PRODUCT": 2074,
+        "BUY_SEED": 880,
+        "HIRE": 5626,
+        "SELL": 4783
+      },
+      "replays": 24,
+      "worker_commands": {
+        "BUILD_COOP": 82,
+        "BUILD_PASTURE": 526,
+        "CARE": 6527,
+        "COLLECT_FERTILIZER": 5956,
+        "DIG": 351,
+        "DROP": 2339,
+        "EAST": 21548,
+        "FEED": 6791,
+        "FERTILIZE": 2368,
+        "HARVEST": 5133,
+        "NORTH": 22075,
+        "PASS": 11155,
+        "PICKUP": 5959,
+        "PLACE": 351,
+        "PLANT": 1692,
+        "SOUTH": 13796,
+        "WATER": 12196,
+        "WEST": 22299
+      }
+    },
+    "untrained": {
+      "daily_cash": {
+        "0": {
+          "mean": 3000.0,
+          "median": 3000.0
+        },
+        "1": {
+          "mean": 82.66666666666667,
+          "median": 0.0
+        },
+        "10": {
+          "mean": 9.583333333333334,
+          "median": 0.0
+        },
+        "11": {
+          "mean": 2.0,
+          "median": 0.0
+        },
+        "12": {
+          "mean": 0.7083333333333334,
+          "median": 0.0
+        },
+        "13": {
+          "mean": 0.041666666666666664,
+          "median": 0.0
+        },
+        "14": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "15": {
+          "mean": 0.16666666666666666,
+          "median": 0.0
+        },
+        "16": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "17": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "18": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "19": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "2": {
+          "mean": 46.5,
+          "median": 0.0
+        },
+        "20": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "21": {
+          "mean": 0.041666666666666664,
+          "median": 0.0
+        },
+        "22": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "23": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "24": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "25": {
+          "mean": 0.08333333333333333,
+          "median": 0.0
+        },
+        "26": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "27": {
+          "mean": 0.041666666666666664,
+          "median": 0.0
+        },
+        "28": {
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "29": {
+          "mean": 0.08333333333333333,
+          "median": 0.0
+        },
+        "3": {
+          "mean": 28.25,
+          "median": 0.0
+        },
+        "4": {
+          "mean": 24.916666666666668,
+          "median": 0.0
+        },
+        "5": {
+          "mean": 20.791666666666668,
+          "median": 0.0
+        },
+        "6": {
+          "mean": 10.25,
+          "median": 0.0
+        },
+        "7": {
+          "mean": 10.166666666666666,
+          "median": 0.0
+        },
+        "8": {
+          "mean": 10.0,
+          "median": 0.0
+        },
+        "9": {
+          "mean": 9.916666666666666,
+          "median": 0.0
+        }
+      },
+      "market_commands": {
+        "BUY_ANIMAL": 40,
+        "BUY_LAND": 8,
+        "BUY_PRODUCT": 855,
+        "BUY_SEED": 118,
+        "HIRE": 384,
+        "SELL": 874
+      },
+      "replays": 24,
+      "worker_commands": {
+        "BUILD_COOP": 1860,
+        "DIG": 1844,
+        "DROP": 758,
+        "EAST": 5571,
+        "HARVEST": 9,
+        "NORTH": 6215,
+        "PASS": 629,
+        "PICKUP": 1045,
+        "PLACE": 227,
+        "PLANT": 84,
+        "SOUTH": 5232,
+        "WATER": 121,
+        "WEST": 2297
+      }
+    }
+  },
+  "passed": true,
+  "phases": {
+    "pilot_test": {
+      "full_reference_replays": 80,
+      "games": 640,
+      "observation_comparisons": 115200,
+      "rows_sha256": "4bff3383663dca1db098dfb27f0645ce3d4282a235851fe0a135cca6003b3136",
+      "total_game_worker_wall_seconds": 1457.6110477090115
+    },
+    "selection": {
+      "full_reference_replays": 128,
+      "games": 1024,
+      "observation_comparisons": 184320,
+      "rows_sha256": "a42e7308b09df47a7124475376e0c2b2a0c7b2073ad5e6d5c8f62ffa1a813f4a",
+      "total_game_worker_wall_seconds": 2334.4756951110394
+    }
+  },
+  "ppo_training_outcomes": {
+    "control_games": 852,
+    "control_ties": 0,
+    "control_wins": 0,
+    "learner_seats": 2556,
+    "learner_zero_cash": 2520,
+    "selfplay_both_zero": 828,
+    "selfplay_draws": 828,
+    "selfplay_games": 852
+  },
+  "selected_configs": {
+    "ppo": "0.01",
+    "search": "lns"
+  },
+  "source_inventory_files": 18,
+  "supplementary_analysis_limits": "Eight-world clusters; conditional on three training seeds and these four opponents. No multiplicity adjustment. If all observed win rates are zero, empirical bootstrap intervals collapse to [0,0]; this does not establish population equality. Replay descriptions use one test world only and do not establish causes.",
+  "supplementary_paired_contrasts": {
+    "ppo_minus_untrained": {
+      "delta_win_rate": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "search_minus_control": {
+      "delta_win_rate": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "search_minus_ppo": {
+      "delta_win_rate": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "training": {
+    "ppo": {
+      "eligible_player_turns": 1837764,
+      "games": 1704,
+      "timed_process_cpu_seconds": 1086.662382587,
+      "trials": 6
+    },
+    "search": {
+      "games": 100608,
+      "timed_process_cpu_seconds": 1082.185491719,
+      "trials": 6
+    }
+  },
+  "training_pipeline_wall_seconds": 1148.088054205
+}

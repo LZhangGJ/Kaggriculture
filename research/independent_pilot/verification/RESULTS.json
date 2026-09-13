@@ -1,0 +1,1237 @@
+{
+  "candidates": {
+    "control": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.0019239459998061648,
+      "mean_cash": 9324.25,
+      "mean_margin": -169952.546875,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "lns-1101": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.0027647440001601353,
+      "mean_cash": 41841.171875,
+      "mean_margin": -91825.4375,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "lns-2202": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.0012977970000065397,
+      "mean_cash": 43464.59375,
+      "mean_margin": -101625.25,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "lns-3303": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.002499562000593869,
+      "mean_cash": 39573.53125,
+      "mean_margin": -101755.578125,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "ppo-0.01-1101": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.012310221001825994,
+      "mean_cash": 0.0,
+      "mean_margin": -175230.359375,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "ppo-0.01-2202": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.24774510000133887,
+      "mean_cash": 0.0,
+      "mean_margin": -165782.546875,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "ppo-0.01-3303": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.012231859000166878,
+      "mean_cash": 0.0,
+      "mean_margin": -175231.765625,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "untrained-1101": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.45555601099840715,
+      "mean_cash": 1.84375,
+      "mean_margin": -188096.234375,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "untrained-2202": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.008473772002616897,
+      "mean_cash": 0.015625,
+      "mean_margin": -175944.078125,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "untrained-3303": {
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.5649514169999748,
+      "mean_cash": 0.0,
+      "mean_margin": -169979.390625,
+      "win_rate": 0.0,
+      "wins": 0
+    }
+  },
+  "complete": true,
+  "failures": 0,
+  "families": {
+    "control": {
+      "by_opponent": {
+        "extra:hysteresis": {
+          "draws": 0,
+          "games": 16,
+          "match_score": 0.0,
+          "max_action_seconds": 0.00042942900108755566,
+          "mean_cash": 8701.75,
+          "mean_margin": -153214.0625,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "extra:old-champion": {
+          "draws": 0,
+          "games": 16,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0009906859995680861,
+          "mean_cash": 9161.1875,
+          "mean_margin": -159029.5,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r1": {
+          "draws": 0,
+          "games": 16,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0005293020003591664,
+          "mean_cash": 9706.0,
+          "mean_margin": -185637.3125,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r2": {
+          "draws": 0,
+          "games": 16,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0019239459998061648,
+          "mean_cash": 9728.0625,
+          "mean_margin": -181929.3125,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "by_seat": {
+        "0": {
+          "draws": 0,
+          "games": 32,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0007000999994488666,
+          "mean_cash": 9305.34375,
+          "mean_margin": -168531.0,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "1": {
+          "draws": 0,
+          "games": 32,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0019239459998061648,
+          "mean_cash": 9343.15625,
+          "mean_margin": -171374.09375,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "decision": "no_supported_advance",
+      "delta_vs_control": 0.0,
+      "draws": 0,
+      "games": 64,
+      "match_score": 0.0,
+      "max_action_seconds": 0.0019239459998061648,
+      "mean_cash": 9324.25,
+      "mean_margin": -169952.546875,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ],
+      "training_seed_win_rates": {
+        "control": 0.0
+      },
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "ppo": {
+      "by_opponent": {
+        "extra:hysteresis": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.24774510000133887,
+          "mean_cash": 0.0,
+          "mean_margin": -139959.10416666666,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "extra:old-champion": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.014731275001395261,
+          "mean_cash": 0.0,
+          "mean_margin": -149268.52083333334,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r1": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.012310221001825994,
+          "mean_cash": 0.0,
+          "mean_margin": -202202.85416666666,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r2": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.007597321000503143,
+          "mean_cash": 0.0,
+          "mean_margin": -196895.75,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "by_seat": {
+        "0": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.014731275001395261,
+          "mean_cash": 0.0,
+          "mean_margin": -172119.71875,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "1": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.24774510000133887,
+          "mean_cash": 0.0,
+          "mean_margin": -172043.39583333334,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "decision": "no_supported_advance",
+      "delta_vs_control": 0.0,
+      "draws": 0,
+      "games": 192,
+      "match_score": 0.0,
+      "max_action_seconds": 0.24774510000133887,
+      "mean_cash": 0.0,
+      "mean_margin": -172081.55729166666,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ],
+      "training_seed_win_rates": {
+        "ppo-0.01-1101": 0.0,
+        "ppo-0.01-2202": 0.0,
+        "ppo-0.01-3303": 0.0
+      },
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "search": {
+      "by_opponent": {
+        "extra:hysteresis": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.002499562000593869,
+          "mean_cash": 43244.479166666664,
+          "mean_margin": -81346.125,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "extra:old-champion": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0027647440001601353,
+          "mean_cash": 42029.520833333336,
+          "mean_margin": -81554.39583333333,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r1": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0011800789998233085,
+          "mean_cash": 40988.479166666664,
+          "mean_margin": -115755.375,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r2": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.000960659001066233,
+          "mean_cash": 40243.25,
+          "mean_margin": -114952.45833333333,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "by_seat": {
+        "0": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0027647440001601353,
+          "mean_cash": 41092.802083333336,
+          "mean_margin": -98826.16666666667,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "1": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.0012977970000065397,
+          "mean_cash": 42160.0625,
+          "mean_margin": -97978.01041666667,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "decision": "no_supported_advance",
+      "delta_vs_control": 0.0,
+      "draws": 0,
+      "games": 192,
+      "match_score": 0.0,
+      "max_action_seconds": 0.0027647440001601353,
+      "mean_cash": 41626.432291666664,
+      "mean_margin": -98402.08854166667,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ],
+      "training_seed_win_rates": {
+        "lns-1101": 0.0,
+        "lns-2202": 0.0,
+        "lns-3303": 0.0
+      },
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "untrained": {
+      "by_opponent": {
+        "extra:hysteresis": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.010688659000152256,
+          "mean_cash": 0.020833333333333332,
+          "mean_margin": -153401.8125,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "extra:old-champion": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.45555601099840715,
+          "mean_cash": 0.0625,
+          "mean_margin": -157191.29166666666,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r1": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.010577315999398706,
+          "mean_cash": 0.4583333333333333,
+          "mean_margin": -201792.3125,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "native:r2": {
+          "draws": 0,
+          "games": 48,
+          "match_score": 0.0,
+          "max_action_seconds": 0.5649514169999748,
+          "mean_cash": 1.9375,
+          "mean_margin": -199640.85416666666,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "by_seat": {
+        "0": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.5649514169999748,
+          "mean_cash": 1.2083333333333333,
+          "mean_margin": -178106.76041666666,
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "1": {
+          "draws": 0,
+          "games": 96,
+          "match_score": 0.0,
+          "max_action_seconds": 0.010266476001561387,
+          "mean_cash": 0.03125,
+          "mean_margin": -177906.375,
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "decision": "no_supported_advance",
+      "delta_vs_control": 0.0,
+      "draws": 0,
+      "games": 192,
+      "match_score": 0.0,
+      "max_action_seconds": 0.5649514169999748,
+      "mean_cash": 0.6197916666666666,
+      "mean_margin": -178006.56770833334,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ],
+      "training_seed_win_rates": {
+        "untrained-1101": 0.0,
+        "untrained-2202": 0.0,
+        "untrained-3303": 0.0
+      },
+      "win_rate": 0.0,
+      "wins": 0
+    }
+  },
+  "freeze_sha256": "a137b86b2917d888599671eae46c4350a6e328bf0f9f4ece5f500607d3dce39e",
+  "games": 640,
+  "limitations": [
+    "Eight test worlds and four benchmark opponents give limited coverage and power.",
+    "Intervals are conditional on three trained seeds; individual seed results are also shown.",
+    "E1 uses a finite five-stage target grammar with a feedback executor; CP-SAT repairs allocations, not full worker schedules.",
+    "PPO and search have different learning mixtures: PPO adds current self-play.",
+    "CPU pilot budgets do not establish GPU learning efficiency or hosted execution compliance.",
+    "JAX backend has been audited from source, not benchmarked on this host."
+  ],
+  "official_comparisons": 115200,
+  "promotion": false,
+  "selection_sha256": "a90d6e06c3edf3f0b1b7226646b68df28b47e137383b564b93c34d830b1d1694",
+  "test_rows_sha256": "4bff3383663dca1db098dfb27f0645ce3d4282a235851fe0a135cca6003b3136",
+  "trials": {
+    "beam-1101": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.259221327,
+      "games": 15408,
+      "method": "beam",
+      "operator_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operator_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plan": [
+        [
+          8,
+          4,
+          0,
+          2,
+          2,
+          1,
+          0,
+          8,
+          7,
+          3,
+          0,
+          0,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          9,
+          0,
+          5,
+          2,
+          300,
+          0,
+          1,
+          27
+        ],
+        [
+          1,
+          0,
+          1,
+          12,
+          2,
+          1,
+          9,
+          0,
+          6,
+          3,
+          300,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          13,
+          1,
+          3,
+          1,
+          1,
+          0,
+          11,
+          3,
+          100,
+          16,
+          1,
+          27
+        ],
+        [
+          3,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          1,
+          300,
+          16,
+          1,
+          27
+        ]
+      ],
+      "proposals": 642,
+      "seed": 1101,
+      "selection_score": [
+        1.0,
+        1.0,
+        68007.16666666667
+      ],
+      "training_seeds": [
+        1327701002,
+        213709985,
+        829425374,
+        1695316994
+      ],
+      "wall_seconds": 183.56114876299944
+    },
+    "beam-2202": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.680159895,
+      "games": 15384,
+      "method": "beam",
+      "operator_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operator_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plan": [
+        [
+          0,
+          5,
+          1,
+          0,
+          20,
+          1,
+          0,
+          0,
+          8,
+          3,
+          0,
+          16,
+          1,
+          27
+        ],
+        [
+          0,
+          1,
+          0,
+          7,
+          2,
+          0,
+          2,
+          7,
+          6,
+          3,
+          100,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          3,
+          0,
+          1,
+          0,
+          4,
+          6,
+          7,
+          7,
+          3,
+          100,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          3,
+          4,
+          2,
+          0,
+          7,
+          3,
+          10,
+          3,
+          300,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          10,
+          2,
+          300,
+          16,
+          1,
+          27
+        ]
+      ],
+      "proposals": 641,
+      "seed": 2202,
+      "selection_score": [
+        1.0,
+        1.0,
+        73815.375
+      ],
+      "training_seeds": [
+        1214857628,
+        1453033727,
+        341272946,
+        1465904393
+      ],
+      "wall_seconds": 183.7575613980007
+    },
+    "beam-3303": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.31494081300002,
+      "games": 15528,
+      "method": "beam",
+      "operator_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operator_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plan": [
+        [
+          3,
+          3,
+          5,
+          1,
+          5,
+          8,
+          0,
+          0,
+          4,
+          3,
+          300,
+          0,
+          1,
+          27
+        ],
+        [
+          2,
+          4,
+          0,
+          1,
+          0,
+          1,
+          15,
+          1,
+          9,
+          3,
+          300,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          2,
+          1,
+          5,
+          2,
+          9,
+          1,
+          300,
+          8,
+          1,
+          27
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          2,
+          1,
+          9,
+          1,
+          0,
+          8,
+          1,
+          27
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          0,
+          8,
+          1,
+          27
+        ]
+      ],
+      "proposals": 647,
+      "seed": 3303,
+      "selection_score": [
+        1.0,
+        1.0,
+        70491.29166666667
+      ],
+      "training_seeds": [
+        2008625717,
+        512524204,
+        1144101798,
+        2103724823
+      ],
+      "wall_seconds": 183.50808309000058
+    },
+    "lns-1101": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.38178341900002,
+      "games": 18624,
+      "method": "lns",
+      "operator_counts": [
+        214.0,
+        214.0,
+        212.0,
+        219.0
+      ],
+      "operator_gains": [
+        0.16666666666666663,
+        0.08333333333333337,
+        0.0,
+        0.75
+      ],
+      "plan": [
+        [
+          3,
+          4,
+          2,
+          3,
+          0,
+          0,
+          2,
+          3,
+          3,
+          1,
+          150,
+          0,
+          1,
+          25
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          10,
+          2,
+          8,
+          4,
+          7,
+          2,
+          0,
+          8,
+          1,
+          28
+        ],
+        [
+          0,
+          0,
+          2,
+          10,
+          1,
+          0,
+          1,
+          5,
+          10,
+          1,
+          750,
+          8,
+          1,
+          21
+        ],
+        [
+          0,
+          0,
+          5,
+          6,
+          6,
+          0,
+          2,
+          6,
+          9,
+          1,
+          100,
+          16,
+          1,
+          28
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          15,
+          0,
+          0,
+          10,
+          1,
+          0,
+          8,
+          1,
+          22
+        ]
+      ],
+      "proposals": 776,
+      "seed": 1101,
+      "selection_score": [
+        1.0,
+        1.0,
+        73257.29166666667
+      ],
+      "training_seeds": [
+        1327701002,
+        213709985,
+        829425374,
+        1695316994
+      ],
+      "wall_seconds": 184.1411034520006
+    },
+    "lns-2202": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.23620631499998,
+      "games": 17952,
+      "method": "lns",
+      "operator_counts": [
+        202.0,
+        201.0,
+        200.0,
+        204.0
+      ],
+      "operator_gains": [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.6666666666666666
+      ],
+      "plan": [
+        [
+          13,
+          0,
+          3,
+          0,
+          12,
+          6,
+          0,
+          0,
+          4,
+          3,
+          750,
+          0,
+          1,
+          23
+        ],
+        [
+          4,
+          6,
+          2,
+          6,
+          1,
+          0,
+          6,
+          0,
+          6,
+          2,
+          100,
+          0,
+          1,
+          23
+        ],
+        [
+          2,
+          1,
+          0,
+          0,
+          4,
+          0,
+          9,
+          7,
+          8,
+          2,
+          750,
+          22,
+          1,
+          21
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          8,
+          0,
+          8,
+          7,
+          10,
+          1,
+          300,
+          8,
+          1,
+          27
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          9,
+          1,
+          300,
+          16,
+          1,
+          29
+        ]
+      ],
+      "proposals": 748,
+      "seed": 2202,
+      "selection_score": [
+        1.0,
+        1.0,
+        71751.79166666667
+      ],
+      "training_seeds": [
+        1214857628,
+        1453033727,
+        341272946,
+        1465904393
+      ],
+      "wall_seconds": 183.76408565199927
+    },
+    "lns-3303": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.31317994999998,
+      "games": 17712,
+      "method": "lns",
+      "operator_counts": [
+        200.0,
+        195.0,
+        195.0,
+        196.0
+      ],
+      "operator_gains": [
+        0.7916666666666666,
+        0.04166666666666674,
+        0.08333333333333326,
+        0.08333333333333337
+      ],
+      "plan": [
+        [
+          4,
+          2,
+          0,
+          0,
+          1,
+          0,
+          11,
+          11,
+          9,
+          2,
+          300,
+          22,
+          1,
+          22
+        ],
+        [
+          2,
+          0,
+          6,
+          0,
+          5,
+          0,
+          10,
+          4,
+          8,
+          2,
+          100,
+          16,
+          1,
+          28
+        ],
+        [
+          0,
+          0,
+          2,
+          11,
+          11,
+          0,
+          0,
+          1,
+          11,
+          1,
+          100,
+          0,
+          1,
+          28
+        ],
+        [
+          1,
+          0,
+          3,
+          7,
+          1,
+          0,
+          1,
+          2,
+          11,
+          2,
+          750,
+          22,
+          1,
+          20
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          2,
+          750,
+          22,
+          1,
+          22
+        ]
+      ],
+      "proposals": 738,
+      "seed": 3303,
+      "selection_score": [
+        1.0,
+        1.0,
+        74164.04166666667
+      ],
+      "training_seeds": [
+        2008625717,
+        512524204,
+        1144101798,
+        2103724823
+      ],
+      "wall_seconds": 183.91153587000008
+    },
+    "ppo-0.003-1101": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 181.314294347,
+      "entropy": 0.003,
+      "games": 292,
+      "lr": 0.0003,
+      "player_turns": 314922,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 186.5956987139998,
+      "seed": 1101,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 73
+    },
+    "ppo-0.003-2202": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.451598299,
+      "entropy": 0.003,
+      "games": 284,
+      "lr": 0.0003,
+      "player_turns": 306294,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 185.70268436700098,
+      "seed": 2202,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 71
+    },
+    "ppo-0.003-3303": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.370122275,
+      "entropy": 0.003,
+      "games": 280,
+      "lr": 0.0003,
+      "player_turns": 301980,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 185.5732117560001,
+      "seed": 3303,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 70
+    },
+    "ppo-0.01-1101": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 180.641637825,
+      "entropy": 0.01,
+      "games": 280,
+      "lr": 0.0003,
+      "player_turns": 301980,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 185.90400826199948,
+      "seed": 1101,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 70
+    },
+    "ppo-0.01-2202": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 181.959130486,
+      "entropy": 0.01,
+      "games": 280,
+      "lr": 0.0003,
+      "player_turns": 301980,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 187.2077904329999,
+      "seed": 2202,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 70
+    },
+    "ppo-0.01-3303": {
+      "budget_seconds": 180.0,
+      "complete": true,
+      "cpu_seconds": 181.925599355,
+      "entropy": 0.01,
+      "games": 288,
+      "lr": 0.0003,
+      "player_turns": 310608,
+      "reward": "terminal win=1 draw=0 loss=-1",
+      "seconds": 187.19286830799865,
+      "seed": 3303,
+      "seed_manifest_sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf",
+      "updates": 72
+    }
+  },
+  "unique_worlds": 8
+}

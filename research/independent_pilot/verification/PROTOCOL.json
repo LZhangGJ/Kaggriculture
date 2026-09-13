@@ -1,0 +1,46 @@
+{
+  "advance": "reproducible improvement over own control on fresh pilot worlds; positive paired lower bound plus no failures/runtime breaches",
+  "analysis": "seed-cluster paired bootstrap; retain all opponents/seats and average training seeds within world; also report each training seed",
+  "base_commit": "f98cda9cbb3dfc0acfd69df84777bc68055ba827",
+  "bootstrap_resamples": 4000,
+  "budget_unit": "process CPU seconds, includes all native and Torch worker threads; finish an in-flight complete rollout/update",
+  "configuration_selection": "mean strict win rate over selection worlds and three training seeds; then match score; then mean margin",
+  "cpu_seconds_per_trial": 180,
+  "jax_backend": "source audit only; GPU rates in team docs are not current host measurements",
+  "limited_power": "eight fresh pilot worlds cannot certify leaderboard gains; no adaptive repeat on this split",
+  "max_concurrent_trials": 2,
+  "name": "independent-e1-e2-cpu-pilot-v1",
+  "no_gpu": true,
+  "opponent_scope": "four fixed benchmark opponents; limited pilot coverage, no claim of independent ancestry",
+  "pilot_opponents": [
+    "native:r1",
+    "native:r2",
+    "extra:old-champion",
+    "extra:hysteresis"
+  ],
+  "ppo_entropy": [
+    0.003,
+    0.01
+  ],
+  "ppo_envs": 4,
+  "ppo_lr": 0.0003,
+  "ppo_training_mixture": "half current self-play; half the same three own-plan controls, rotated across updates",
+  "primary_metric": "strict win rate",
+  "promotion": false,
+  "search_methods": [
+    "beam",
+    "lns"
+  ],
+  "search_training_opponents": [
+    "own-wheat",
+    "own-melon",
+    "own-cow"
+  ],
+  "search_training_worlds_per_trial": 4,
+  "secondary_metric": "match score",
+  "training_seeds": [
+    1101,
+    2202,
+    3303
+  ]
+}

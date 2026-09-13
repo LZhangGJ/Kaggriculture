@@ -1,0 +1,1183 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_bytes": 12956481,
+  "archive_sha256": "a25cb4232b50aa32c9da80c131f0af7e3872c527396671160446a9c4c9be3746",
+  "base_commit": "f98cda9cbb3dfc0acfd69df84777bc68055ba827",
+  "file_count": 293,
+  "files": {
+    "artifacts/independent-pilot/eval-smoke/game-0.json.gz": {
+      "bytes": 25714,
+      "sha256": "80edd90053ea09ea51a3feb0bb229aae3a8cfea45f2f0aeaf00a35042aecb1b3"
+    },
+    "artifacts/independent-pilot/eval-smoke/game-1.json.gz": {
+      "bytes": 25019,
+      "sha256": "5acc7f92ed54ee7f16d0bfcbe5a8dc410c4de148581ac52e7baf1de69939b939"
+    },
+    "artifacts/independent-pilot/eval-smoke/game-2.json.gz": {
+      "bytes": 25877,
+      "sha256": "241794b975001d84d51cade7fb13f5da60ec887974cad8032217dc42026254e5"
+    },
+    "artifacts/independent-pilot/eval-smoke/game-3.json.gz": {
+      "bytes": 27256,
+      "sha256": "464e9b7ad53459a55992d117b55349263044d47a28e228ea5dae433b6b9e2c3e"
+    },
+    "artifacts/independent-pilot/eval-smoke/results.json": {
+      "bytes": 3510,
+      "sha256": "ce88344f8e438812c61d65513894ed528c3f14b0da1487c7ca6f75d3ebd8366f"
+    },
+    "artifacts/independent-pilot/learning-check-ubuntu24.json": {
+      "bytes": 950,
+      "sha256": "9d54109bd89105d67d18073f4386a6eff7b6946a71606303f5fdb8bf3c425edd"
+    },
+    "artifacts/independent-pilot/learning-check-v2.json": {
+      "bytes": 961,
+      "sha256": "34229f2233aee59a2d8e0ea67ba637edb7585cf4a205495e079f85dcf19a7312"
+    },
+    "artifacts/independent-pilot/learning-check-v3.json": {
+      "bytes": 962,
+      "sha256": "9b1da9d6b6751da989c39af2640e35add757f8d7736517cd37d3b76f0596e788"
+    },
+    "artifacts/independent-pilot/learning-check-v4.json": {
+      "bytes": 953,
+      "sha256": "5acc7a1608e26364422d2197033db913f46fd486fe0992b13860b0faf1983119"
+    },
+    "artifacts/independent-pilot/preflight-ubuntu24.json": {
+      "bytes": 3040,
+      "sha256": "19f5decd32e50b923e0dae5ef86304e0fe30927f57ede86a731831ec9af0a5c3"
+    },
+    "artifacts/independent-pilot/preflight-v1.json": {
+      "bytes": 2365,
+      "sha256": "92488f7df792868416f3af11a2d03a06d598db4778ede684c4e44a2706e64fb8"
+    },
+    "artifacts/independent-pilot/preflight-v2.json": {
+      "bytes": 2601,
+      "sha256": "e4e5d1cc35b19f4fba2c1da1cc28a3aa51b0dc33560634810cfb511f8d4b45db"
+    },
+    "artifacts/independent-pilot/run-v1/inputs/seeds.json": {
+      "bytes": 16378,
+      "sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf"
+    },
+    "artifacts/independent-pilot/run-v2/inputs/PROTOCOL.json": {
+      "bytes": 1735,
+      "sha256": "8bfa8fa7cf40205503532514f34fc930e2fab0b29887a70bc7b34c5f6ce8e1fb"
+    },
+    "artifacts/independent-pilot/run-v2/inputs/seeds.json": {
+      "bytes": 16378,
+      "sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf"
+    },
+    "artifacts/independent-pilot/run-v3/EVIDENCE_AUDIT.json": {
+      "bytes": 15546,
+      "sha256": "2b84b47d5fadf7fb6dd2308e4ea87325d174385dbf554232fcadbed5fb6129f9"
+    },
+    "artifacts/independent-pilot/run-v3/RESULTS.json": {
+      "bytes": 25415,
+      "sha256": "2b0f608ae387a10fb003fb428eeac90671217589b901299f5dd35dd3211b6a67"
+    },
+    "artifacts/independent-pilot/run-v3/RESULTS.md": {
+      "bytes": 1164,
+      "sha256": "84d2b7abfc4bd0b380ef7eccc47f99f93958d60e1acbae982b6736cc7def4a4a"
+    },
+    "artifacts/independent-pilot/run-v3/SELECTED.json": {
+      "bytes": 3118,
+      "sha256": "a90d6e06c3edf3f0b1b7226646b68df28b47e137383b564b93c34d830b1d1694"
+    },
+    "artifacts/independent-pilot/run-v3/TRAINING_STATUS.json": {
+      "bytes": 313,
+      "sha256": "73587883418d99fc0d6330668b29c7d01b9d2663f939254a0f16c636b47aef5a"
+    },
+    "artifacts/independent-pilot/run-v3/inputs/FREEZE.json": {
+      "bytes": 24387,
+      "sha256": "a137b86b2917d888599671eae46c4350a6e328bf0f9f4ece5f500607d3dce39e"
+    },
+    "artifacts/independent-pilot/run-v3/inputs/PROTOCOL.json": {
+      "bytes": 1735,
+      "sha256": "8bfa8fa7cf40205503532514f34fc930e2fab0b29887a70bc7b34c5f6ce8e1fb"
+    },
+    "artifacts/independent-pilot/run-v3/inputs/seeds.json": {
+      "bytes": 16378,
+      "sha256": "4e42ce9804f58c32d6fd1d4cfe93b906745de57a9619ab293b55295c3feae8cf"
+    },
+    "artifacts/independent-pilot/run-v3/logs/beam-1101.log": {
+      "bytes": 622,
+      "sha256": "d52badc00ed7bc533ed1dead99c951bbbf79ac615ee509bb26b7c9cc6c258b61"
+    },
+    "artifacts/independent-pilot/run-v3/logs/beam-2202.log": {
+      "bytes": 613,
+      "sha256": "a2fe2003cdb27da4c815e7e31fca9d04b770fed524768c35008797ef01dfcf70"
+    },
+    "artifacts/independent-pilot/run-v3/logs/beam-3303.log": {
+      "bytes": 623,
+      "sha256": "fd08ea63942b73df798fabac9331ec03aa121bd63b3892552a778baac7845863"
+    },
+    "artifacts/independent-pilot/run-v3/logs/lns-1101.log": {
+      "bytes": 664,
+      "sha256": "405c1bfb7b17f735c315cddaa7023f8524e9a4a23819d88936b79e895bf7428d"
+    },
+    "artifacts/independent-pilot/run-v3/logs/lns-2202.log": {
+      "bytes": 666,
+      "sha256": "cfd32972b2be5739a879b47566e80f5457edc64c4def55ec1069be378334efb0"
+    },
+    "artifacts/independent-pilot/run-v3/logs/lns-3303.log": {
+      "bytes": 706,
+      "sha256": "36858fabf9517d48d030903e9f53d8e6edb026826575cf6d8e6ae25593126f4e"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.003-1101.log": {
+      "bytes": 5013,
+      "sha256": "d824bc59d61d608750d8ecdec80a68f819c557cee2c21afe5c88f7070d4cd118"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.003-2202.log": {
+      "bytes": 4882,
+      "sha256": "95357f6edbc860d1bed5b398cba514999626b83d734d084dd681ab2f8524ae77"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.003-3303.log": {
+      "bytes": 4804,
+      "sha256": "840ab3ba98380e28c09b8dec9d153ed7a5dd25d26ebb65f58c5f627b43c0e4a2"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.01-1101.log": {
+      "bytes": 4808,
+      "sha256": "1139cba769d6cefc7c5fe25bab9ac70139ae4b1296123e490b004be078b172b7"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.01-2202.log": {
+      "bytes": 4799,
+      "sha256": "2657850df932ad8b1638b97e07aa4604416116a11bd39ff16b2b610f4165e5db"
+    },
+    "artifacts/independent-pilot/run-v3/logs/ppo-0.01-3303.log": {
+      "bytes": 4942,
+      "sha256": "eaa6077c511028932b955d6a7fb9795246305458ccfc92dab5b6929cd57afbe5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/MANIFEST.json": {
+      "bytes": 3254,
+      "sha256": "752eee96d369c06ff1a0922934128f64d0e1f3d7f32cee0438fa4e97d6481aa6"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/STATUS.json": {
+      "bytes": 79,
+      "sha256": "02ded7abe5b824a0c712b26ccdd771e5c651164b7bee205dff7f0aa75001af90"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-extra_hysteresis-0.json.gz": {
+      "bytes": 27205,
+      "sha256": "dd8b3e96b84fbe4de125a018e31c457974cf3c79bc3f2a42465665a916b6173d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-extra_hysteresis-1.json.gz": {
+      "bytes": 27288,
+      "sha256": "6e5f36a8baf7c43dd21fd50f76f9858255fb4607c380c44320783ad2bcdd25b4"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-extra_old-champion-0.json.gz": {
+      "bytes": 25698,
+      "sha256": "d023187318a0a8258c4be41f4bb2f3b46ca7fcebf4dcc760b3bb3b83c519ac0d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-extra_old-champion-1.json.gz": {
+      "bytes": 25663,
+      "sha256": "33fae7b0f0c74f9ab915329fc7a5c3bfea93fbf81429fb966f5070453691a425"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-native_r1-0.json.gz": {
+      "bytes": 25585,
+      "sha256": "2a6ae56a2e8972466650ec7d7e54ffdb91b1788e9422cb619c6dbffac3ad9690"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-native_r1-1.json.gz": {
+      "bytes": 24947,
+      "sha256": "0a24acc46854b0e7094932f0cc9eed372a8f8c679d430cc1de52d84c57719949"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-native_r2-0.json.gz": {
+      "bytes": 25833,
+      "sha256": "0f7aa423f0873976bd452af20febc1a83d8cfbd2b411fb4703b70649a9418e8a"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/control-native_r2-1.json.gz": {
+      "bytes": 24948,
+      "sha256": "1fc4a71ad3bca7d8e39041392088d5131d6bddb2efb0cc0b29333bab47dee4dc"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 37285,
+      "sha256": "1681c41c836a03a8e0ecdf11e29ecd1b23334ac36fbaea1ed0e00413674c61f6"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 37201,
+      "sha256": "94cf4275228006dd45e70e5b2850757ba0f4bf0122463a5aebf3055eec747b1d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-extra_old-champion-0.json.gz": {
+      "bytes": 37389,
+      "sha256": "776c934c914809ed2f36db3456a58d08a8751aec30b7ba7a21d26bd1dd6a8535"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-extra_old-champion-1.json.gz": {
+      "bytes": 37261,
+      "sha256": "74ae8f865b7bb7fa37807b3d2281c59d67eb86f0cecdf350e1f3a34b0bb582e3"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-native_r1-0.json.gz": {
+      "bytes": 36115,
+      "sha256": "32b65723013c134f072c46ffcb12f4d546658242a1ddb5250ec77048b9bee8f1"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-native_r1-1.json.gz": {
+      "bytes": 36178,
+      "sha256": "b0e8696625076af86d93e11557f4022f9882b7f5165dc47095200812f2a7688b"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-native_r2-0.json.gz": {
+      "bytes": 36106,
+      "sha256": "6a9689fee26116437f29b09c052f87f55619fe82bb64e52bdd238c42ce7b35eb"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-1101-native_r2-1.json.gz": {
+      "bytes": 36177,
+      "sha256": "c34ddb0eeb7d8acdda8d4e269dd52c89017762946d23baa613004d129c446168"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 37313,
+      "sha256": "3dd5345a6305727eba87fa4521531680935427520fa6171c28a2c8eec0fd6063"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 37268,
+      "sha256": "4a5a2383f3a4adce0b763f9232e79aa8eedcdc9dbd3565fa800c7218008eead5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-extra_old-champion-0.json.gz": {
+      "bytes": 37124,
+      "sha256": "8908c1d11f57ff7801a5d67f266604013a5e8522504988f0061b93fa202d84cb"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-extra_old-champion-1.json.gz": {
+      "bytes": 37073,
+      "sha256": "3d74933be74b460f76e484eda09f89f786ed90574f996bca38c3c5643363c7b0"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-native_r1-0.json.gz": {
+      "bytes": 35411,
+      "sha256": "bc7e27f29d1d43073ed0f5f73ef7fa823267e7a6fc6055824271183dbe226d78"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-native_r1-1.json.gz": {
+      "bytes": 36376,
+      "sha256": "e6310ffaca43aaf5503ff59be733213f97fb12e59161ae462748bef401063eef"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-native_r2-0.json.gz": {
+      "bytes": 35409,
+      "sha256": "f1cf27af8c9037d096bd8d9907223adf02654512ed8aec64f50a54dfffd44a24"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-2202-native_r2-1.json.gz": {
+      "bytes": 36374,
+      "sha256": "5879dde26b8706f014532ecdd90daa24e7bf2bac3de2f90c057bf7f8e8b3e34c"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 36297,
+      "sha256": "9b49c256941e21da0152e34fa020de88d5cdb4a862e7c0242cf69b2b5a4ea1cc"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 36249,
+      "sha256": "2f5323dfbcb051c309736de3f96e11336f37ffc5f4a410f9295331642b44c42e"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-extra_old-champion-0.json.gz": {
+      "bytes": 34707,
+      "sha256": "1777fb8a1442d935bc43d65c6928c0ac0d94c70ba23d7a097731002d05d31880"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-extra_old-champion-1.json.gz": {
+      "bytes": 34669,
+      "sha256": "e344c9009aab4987954f76faed2d41f0d9a821e5c15a05f7da1ae10dd777fb48"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-native_r1-0.json.gz": {
+      "bytes": 35147,
+      "sha256": "21a3df6e2f9f0e17ac230cb1cc156ccbe7e99daa962514c77108a5804573ff5e"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-native_r1-1.json.gz": {
+      "bytes": 35086,
+      "sha256": "b672f018a3d8a7dfccdeafed79d0c14441c81c03cb92cdeec34a5dbdec311a38"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-native_r2-0.json.gz": {
+      "bytes": 35271,
+      "sha256": "792a74c9b09b1054cbdf43354b1c36a05289083a145b1087d7cf049569def360"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/lns-3303-native_r2-1.json.gz": {
+      "bytes": 34759,
+      "sha256": "745978ebf99b76ee7b5637f6360017b3973889a78355bc95cdb5be88bc7a20d0"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 23699,
+      "sha256": "5dfdb145dbf48002dca1c50816b3f3c7b35c3d184add68c9ac785de78c538d46"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 23721,
+      "sha256": "64ced4db980359cdcfa58400ace0928e9897fe09834364997530c6ca2dbe7dc3"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-extra_old-champion-0.json.gz": {
+      "bytes": 22550,
+      "sha256": "4c8e293baf5e357a60caf4c0328c254ae7fb942335790284761cba168072f9b8"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-extra_old-champion-1.json.gz": {
+      "bytes": 22528,
+      "sha256": "537f760228e03e21df9a73f78ca82f7c012ed1c833790a10226c5e2bf04e211f"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-native_r1-0.json.gz": {
+      "bytes": 22575,
+      "sha256": "d397d034faf0d97e2c69c8aafbbf69b5cc634644b7fe5dfc2ea2da30e75a5de9"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-native_r1-1.json.gz": {
+      "bytes": 22150,
+      "sha256": "60952b80278ea007100ad85151124a3b364b501df65c1c7e9311bc2b69468df5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-native_r2-0.json.gz": {
+      "bytes": 22191,
+      "sha256": "710dceb19409774787b4ac2e25efa93fd50b73d47fc7315cef080591585935bd"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-1101-native_r2-1.json.gz": {
+      "bytes": 22764,
+      "sha256": "c500f270e76db6a9456db9c29e69d7f23a9234cce2779c11a3fb1ad4a3303909"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 24507,
+      "sha256": "2a6e7bf4292f8ddc5dbda606a5dad71379f2dd56ee01ed55ed1dcdd71998b333"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 24522,
+      "sha256": "41668fc3dea4a4c93187fa01cd5f17c4635d4944a603056227a8b871aa8adea7"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-extra_old-champion-0.json.gz": {
+      "bytes": 23357,
+      "sha256": "00f1b284b051852454a141c2c2aa012688e566b6e67f1d1e7afc0556e904b2a6"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-extra_old-champion-1.json.gz": {
+      "bytes": 23338,
+      "sha256": "3e58664ac75ddcda8783d1ab914d1eaf7c093d01fb496ad15106a48d56d4114d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-native_r1-0.json.gz": {
+      "bytes": 22199,
+      "sha256": "6bda7433b0017d1983c29ded709e0b657cb08569ebff87523246a77e0db7c7a9"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-native_r1-1.json.gz": {
+      "bytes": 22166,
+      "sha256": "6663166562a33acbf16a6d61b72f7dbc6edc938ed3c228b8a812ed06ba55a23a"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-native_r2-0.json.gz": {
+      "bytes": 22666,
+      "sha256": "c87f41ee2265670a6ca3f56f2d4274ffb6300dc7bdca0be99640f96eceeb5eb5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-2202-native_r2-1.json.gz": {
+      "bytes": 22924,
+      "sha256": "2b643281272232ab98056d00971919406d0bab0e69e733db36b2beb9ae6d9849"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 24007,
+      "sha256": "07a9865b24ee4a92029b42304dd89007130c683574b8b0ee00de4940a69ee80c"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 24042,
+      "sha256": "bcd5a813a113b88ed55009ad8b6fba22030a16471ecfba9901405f14bdfd8145"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-extra_old-champion-0.json.gz": {
+      "bytes": 22788,
+      "sha256": "1f024700863f7cb6da07157b07484a64a0a9b386037715976e530dfd2632eaeb"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-extra_old-champion-1.json.gz": {
+      "bytes": 22775,
+      "sha256": "46649e53d651dbc7e15257ac60ad66915fd22183f5a3e4bfff94d2386a0cf507"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-native_r1-0.json.gz": {
+      "bytes": 22881,
+      "sha256": "99e077fcf5268db2b5cad57c48a28758b559824694a87ce7b60be5fdc763244e"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-native_r1-1.json.gz": {
+      "bytes": 22439,
+      "sha256": "1e225d527401cb419b8682912ffd64e9c3f77a056a64650c69b47e23fd9d6884"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-native_r2-0.json.gz": {
+      "bytes": 22495,
+      "sha256": "dc8e2863bfb51eb5b5fb4fd76c3d8c3cde76c795385635b37100198ff025079d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/ppo-0.01-3303-native_r2-1.json.gz": {
+      "bytes": 23024,
+      "sha256": "abab530e9b872922e643e853469cc8f057078178094ce68b5a509f1184c71d17"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 24486,
+      "sha256": "01b5fb0a31a0527a94582d82a0023cac649e5c996cf3a092f3f579472e0745fb"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 24861,
+      "sha256": "a6d56796caeff837f9e41cdef9cc074eac90ed8e555f406cf82bd3d76b63cdf9"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-extra_old-champion-0.json.gz": {
+      "bytes": 23645,
+      "sha256": "ead4b6a437dd3e0c138c7f973e7ac5063aebcca11ef2b71708de695968029e8d"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-extra_old-champion-1.json.gz": {
+      "bytes": 24011,
+      "sha256": "c74645de22807c2e6b5b77d38afbc53bb847014a37fdb86ca6530bec2789cf56"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-native_r1-0.json.gz": {
+      "bytes": 22682,
+      "sha256": "b52722266c058cbdeb3ee8d0f42fb758448db77b62b1bcef54d795d47450a2fe"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-native_r1-1.json.gz": {
+      "bytes": 23000,
+      "sha256": "78d52d3de71d4edf5e970f27bdba4dc1e7f4eb6e49e4e80ed98940ca5707b70e"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-native_r2-0.json.gz": {
+      "bytes": 22684,
+      "sha256": "dbbf2f70cf2f8fefcebedcabc84f5c1eecbd98491b270e619ea4a8aced7bbc8b"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-1101-native_r2-1.json.gz": {
+      "bytes": 23001,
+      "sha256": "1a98f23d8f30cb7f22015ef58807209b8f347b20963a0e108d5f81abdfd1d074"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 24375,
+      "sha256": "4a5ad7bb35f30df7f4c31fff14f43686f2529310c0389433b8c72fdc4913127f"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 24410,
+      "sha256": "b42578ea9fd5de5b32b30de44993e190938687c52ec7436c17f7f99244caa23a"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-extra_old-champion-0.json.gz": {
+      "bytes": 25251,
+      "sha256": "b29cc93bf2ffaacf064707c8160e58f8c5ac899fe9fc98d77d14e39c8708ecd5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-extra_old-champion-1.json.gz": {
+      "bytes": 26183,
+      "sha256": "d1eae092c768a933150b0df07df61223959ce1897a5ab3428ae71cf9975bc293"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-native_r1-0.json.gz": {
+      "bytes": 23659,
+      "sha256": "d4f29976e609fd1e359e67e157aacf22ec7a337a82b2f1b3745d9539bda5c504"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-native_r1-1.json.gz": {
+      "bytes": 22472,
+      "sha256": "0227292f436ee0710aa2397b8e5ecc37d72f25bafb4bfffb08d6d1aa292bcc5c"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-native_r2-0.json.gz": {
+      "bytes": 22928,
+      "sha256": "083f984fa980047fe003c5754bdb5514c49ff9a18efd47adf84348b18d6aa00b"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-2202-native_r2-1.json.gz": {
+      "bytes": 22813,
+      "sha256": "c3361516aa8dc58b70f6b5520b41f8deb6ca819312738d2c8abdc8e95be172dd"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 24202,
+      "sha256": "45788bf5f4b2abf10c8247aff5e90ef4ed738e9e3e69e2036267bbc165935df5"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 24224,
+      "sha256": "e8bfff926bb16e04b7475cee977c7a6965c405a3e4c92a548120e3b47ca5ef2a"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-extra_old-champion-0.json.gz": {
+      "bytes": 24537,
+      "sha256": "986bb7bb6d0df5fe614bdc07b7743c402f6b9d381baf38c8903448b2b398fcbd"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-extra_old-champion-1.json.gz": {
+      "bytes": 24269,
+      "sha256": "f4392dc84dad385cb71b723bf2a2d1161a2e4b7344facff444c9031cfc87c8fc"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-native_r1-0.json.gz": {
+      "bytes": 22918,
+      "sha256": "fda282fd67312438d10813637a91a10581190977046f62f6495a5a2d216a51c9"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-native_r1-1.json.gz": {
+      "bytes": 22194,
+      "sha256": "9354bdc018bf9575e5a976f50a3ce05d5e9097da7ddefa0c2f004f438c5460e6"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-native_r2-0.json.gz": {
+      "bytes": 22959,
+      "sha256": "3688979963d9e62827513da5379338fa210686523782742357ab64935d39f781"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/replays/untrained-3303-native_r2-1.json.gz": {
+      "bytes": 22956,
+      "sha256": "30be01cba5da5330a71842387669dff3fe6359733676ad9c5d6b0822ff01fedd"
+    },
+    "artifacts/independent-pilot/run-v3/pilot_test/rows.jsonl": {
+      "bytes": 390944,
+      "sha256": "4bff3383663dca1db098dfb27f0645ce3d4282a235851fe0a135cca6003b3136"
+    },
+    "artifacts/independent-pilot/run-v3/selection/MANIFEST.json": {
+      "bytes": 5108,
+      "sha256": "074eea8efac2b6c5252551b8907837245bada7516cbd201d2504448c208f7f84"
+    },
+    "artifacts/independent-pilot/run-v3/selection/STATUS.json": {
+      "bytes": 81,
+      "sha256": "3e74b271d114177c70d0a51da91af8b08a6113f8bd794da64cdf3b58548eb6dd"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 37656,
+      "sha256": "4bf821c9c6bcf177e1ac1e1bc5312d348179f4548a7971268f31959fa1ded680"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 37527,
+      "sha256": "e0bcf484840772481a7ed5fddf60eaf0dfc5b95bd9376326b1b3588e4af97da8"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-extra_old-champion-0.json.gz": {
+      "bytes": 36571,
+      "sha256": "924694905c46bb33c790f1e80cbf7cdb3c42f74ed394b5b4da9cb1465ac14a37"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-extra_old-champion-1.json.gz": {
+      "bytes": 36475,
+      "sha256": "6ee5c5d0425328fe31c953a99df800ff662cc6bf9af8104e8adc5ceba5489fc8"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-native_r1-0.json.gz": {
+      "bytes": 35438,
+      "sha256": "70ff52f3424ccfbacd48c7e4027b2805826e88a093439c69df4c9f958edf22b9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-native_r1-1.json.gz": {
+      "bytes": 35803,
+      "sha256": "52d7139cc1bde89074e1be510e836d3b00afc19fe827cad2f5a6f08a013565f5"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-native_r2-0.json.gz": {
+      "bytes": 35514,
+      "sha256": "de07b2c1016b9edb57bf9c79f78cd9b936213146a1120148c043323ba350e85b"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-1101-native_r2-1.json.gz": {
+      "bytes": 35698,
+      "sha256": "48254fc9a9867c8d83b6be5d3eadca320d6c02e1430a54f7e691d5d5aa88a5d1"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 36589,
+      "sha256": "68de0de21d223ff0385ae8cc05626784676345ba9cc2844788a26bcdd4815430"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 36687,
+      "sha256": "79c9880b3588238382291402e0f93e437b2aafd0e73b0a6bcf0d77dbc6c03656"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-extra_old-champion-0.json.gz": {
+      "bytes": 35699,
+      "sha256": "970843bcb8215c7e3546824682dd4c7d9b40c00fcb2149e0fa7c2dd9f456d9ca"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-extra_old-champion-1.json.gz": {
+      "bytes": 35752,
+      "sha256": "7d93d9b1d1c6dafedcafad5833379a4b55f579ca69739e23fcadd03539f53fb2"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-native_r1-0.json.gz": {
+      "bytes": 35718,
+      "sha256": "7ec3893dd4ecb216ba0ce032271ee3e65da4a6222a56ea771d4984f82d089607"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-native_r1-1.json.gz": {
+      "bytes": 35405,
+      "sha256": "e5b1cc1ab171481a02f3e00729be3516891fb1041e3292459af9fb4a232c9071"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-native_r2-0.json.gz": {
+      "bytes": 35719,
+      "sha256": "07fe64c967047563a57d09b32ead1f6f0d32caff1f01e3955164aeac23ddccc8"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-2202-native_r2-1.json.gz": {
+      "bytes": 35405,
+      "sha256": "eac261ce5447384cf887fc7a4e4f70a82f96b060c3a5533dd13508a305ffe94a"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 36657,
+      "sha256": "fb598d166044fca295f41f3578bf70f123a028f5ce9ece5042bfb08219eb9f69"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 36653,
+      "sha256": "84aafe2786c0281efb8b8d113d09e9d82932767b09cc8615fa74154b1f59d25d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-extra_old-champion-0.json.gz": {
+      "bytes": 35509,
+      "sha256": "feff63b0e8e76341be589d82ea137296bdfa3d5d347b7337790ba6b9f7361203"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-extra_old-champion-1.json.gz": {
+      "bytes": 35374,
+      "sha256": "13a1bfa102e8b76a979508eb4d280e2008bc382e260833296b7f3ebb42c2652c"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-native_r1-0.json.gz": {
+      "bytes": 34594,
+      "sha256": "18b54606fdae989c709637d2a10b346bc55312642bf37d24e74068422fde9432"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-native_r1-1.json.gz": {
+      "bytes": 34653,
+      "sha256": "4dc2041b0b39a4bb6cdf5b273b5a8949bfa065df52e2645154cc88f9548ace1f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-native_r2-0.json.gz": {
+      "bytes": 35169,
+      "sha256": "26126210f742a760867a2871885a1fd58fb4c804eea4902d41e779bb9bf51cfd"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/beam-3303-native_r2-1.json.gz": {
+      "bytes": 35047,
+      "sha256": "3f92c67dcf8b8afdeeda98db5e0fac59086b842f868105cf54f3ba9498e72841"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-extra_hysteresis-0.json.gz": {
+      "bytes": 27289,
+      "sha256": "6b490986ad080c0ab1a0f805141505538160380c667cbd6a7d03bf789e0a0257"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-extra_hysteresis-1.json.gz": {
+      "bytes": 27369,
+      "sha256": "b3f99e46e99c19d8b272ba291092bc6c55bfee3cbbf030dee6080fbc7d115aa4"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-extra_old-champion-0.json.gz": {
+      "bytes": 26780,
+      "sha256": "19602db6107872710bf79d98eec493071073f0feee9478af601b4d15453196dd"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-extra_old-champion-1.json.gz": {
+      "bytes": 26832,
+      "sha256": "b5750a378788d7e85f6cdff360258efb0ce4bc37aa8be70e65c1aae5527d789c"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-native_r1-0.json.gz": {
+      "bytes": 25099,
+      "sha256": "ff4134f9a21fb9c598a4e6fdf27278009164cd5f3d3ddc3f5851e62c212e199c"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-native_r1-1.json.gz": {
+      "bytes": 25293,
+      "sha256": "dfb3a3372536038781fcafb1e1674fb1423c155b3d924fd382f0bbbc136ba18b"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-native_r2-0.json.gz": {
+      "bytes": 25099,
+      "sha256": "cf8070f27faddefab3573f26d52259a6f83ac5f004cfaab0133982fd73eefeb2"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/control-native_r2-1.json.gz": {
+      "bytes": 25294,
+      "sha256": "9f29cce0c209d0d4dcfbd6f80e7583f388bbbd938ddf4ad7acead7a17354670d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 37426,
+      "sha256": "312004da4c7b9b7f6f9f03475a172a71044a4162595ae26462a8fbf80ace7a2a"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 37315,
+      "sha256": "fb3d91a2db946d99bd0ce928986042d3f1d99f05db636ab6ee4afc5de2f82e45"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-extra_old-champion-0.json.gz": {
+      "bytes": 36132,
+      "sha256": "391482d7cbcfb230028841b7aa6859e65eba19343456f301776f2880e123cc7e"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-extra_old-champion-1.json.gz": {
+      "bytes": 36216,
+      "sha256": "3c5ecd58b9c056b26e6a66bff2477ff1cb1c9e8c14a6b19b38c87b82df2677e8"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-native_r1-0.json.gz": {
+      "bytes": 36370,
+      "sha256": "a79928b8ee53aff2891fbaf46a64dce0cf8a27c52716c3c496b36d231b8efdb7"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-native_r1-1.json.gz": {
+      "bytes": 36012,
+      "sha256": "801db33e732a31672cf9e90e75ebf0fd1aea1c9b53b50e604c811d75661d3ff1"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-native_r2-0.json.gz": {
+      "bytes": 36164,
+      "sha256": "abf5d423365ea231d49cc8dbffde1ace58346bfa2e70ecf0e399bfeee286b393"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-1101-native_r2-1.json.gz": {
+      "bytes": 36082,
+      "sha256": "84612f35addfde669867638f93acc782d7973bac6a04c29d51ca25eeaa94371f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 37395,
+      "sha256": "b507b341710950d4fd274ff18d73280b40b413d1043ad536944e096440547dbf"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 37395,
+      "sha256": "32b1ec704dc0cc7a22387dbe0de58feb81714771bae1b61b61e79323ba4914d9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-extra_old-champion-0.json.gz": {
+      "bytes": 36148,
+      "sha256": "b1934d66be77c67e9fb4a116d63ae8d0bbe8e14b1409876f12a0089b5e182a60"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-extra_old-champion-1.json.gz": {
+      "bytes": 36098,
+      "sha256": "8bf4ffb2acae697fadc0c303a25e07fb58ae7dfbcfeabf7f940e60413309483f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-native_r1-0.json.gz": {
+      "bytes": 35592,
+      "sha256": "2808c6f4fb81b6c970785c7eb5501ffe75b1f3fe35e6be94ae37d2ac6e8f1082"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-native_r1-1.json.gz": {
+      "bytes": 35715,
+      "sha256": "d3bde9acb71d345bb3984b05058b7bb41d58c193d7ed91e8217c9cbc07b5b7e4"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-native_r2-0.json.gz": {
+      "bytes": 35592,
+      "sha256": "77737c70e707a9e4290ccddbbd594407df1bb74a20c4760d91ed7b811d0bab36"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-2202-native_r2-1.json.gz": {
+      "bytes": 35716,
+      "sha256": "667aef29a04efe10df088f06b3593970379e3e3acd802175e225a0429105518f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 36852,
+      "sha256": "900159c92769943f2137bf645b4e245cc70d333e50424b1f8faccbd4a48b5e21"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 36800,
+      "sha256": "dba799b001ad01c6a17d165f63370f9debe0c47bde9e8b1c3ebf005c738e19f4"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-extra_old-champion-0.json.gz": {
+      "bytes": 35146,
+      "sha256": "bfe83e0dcc24f4bcdce0d49e46738959213252d9c472280a68e64005ed9450e7"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-extra_old-champion-1.json.gz": {
+      "bytes": 35022,
+      "sha256": "1b187da30a8e96db9a137ea780e46ed480b5786dc54336389f75dbb03aaa28e9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-native_r1-0.json.gz": {
+      "bytes": 35350,
+      "sha256": "a553498a36fedbb512077705894df1df716a0e28e5665dcfdc361952aca17881"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-native_r1-1.json.gz": {
+      "bytes": 35333,
+      "sha256": "dd0e39e67a5c2a1b84bbe432354168f90e8ca2e4bf1d85a06d330a686e80ba97"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-native_r2-0.json.gz": {
+      "bytes": 35824,
+      "sha256": "5223ed8ca6699c4be08b48430bea1f53166f6c4577746b333d25dfa2dfcc477b"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/lns-3303-native_r2-1.json.gz": {
+      "bytes": 35971,
+      "sha256": "c9a22f551975a07eee383022f4e68975cde5ef1246fda2efcf0bbefa0961e675"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 24554,
+      "sha256": "fb4d85bbf953d30209fe24d61a8ed58cf92b21c8f8e40e1e4591d6f277e352ac"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 24548,
+      "sha256": "e40adcf717744bdf193ba6fb079a7fc5efbd4794c8b11997d4c8a051ad50ae12"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-extra_old-champion-0.json.gz": {
+      "bytes": 23462,
+      "sha256": "40855cb069e36ae551db39530fe1d1dc335b7c8bd190849e6beee6f03766436f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-extra_old-champion-1.json.gz": {
+      "bytes": 23447,
+      "sha256": "7f1c4745b3d34f29e41b5f9d7e33403e993cff5734c7b466bc42ae9edea03df7"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-native_r1-0.json.gz": {
+      "bytes": 22754,
+      "sha256": "5f1408a010b26010622fd7db45ef6d8e591354d027ba74f733392d348560d34d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-native_r1-1.json.gz": {
+      "bytes": 22316,
+      "sha256": "061bcda72e9ab7110d9ad23235ad7747bb2e45aad5af07fb3d21e5fc9a912a6c"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-native_r2-0.json.gz": {
+      "bytes": 23138,
+      "sha256": "7be89478f8a883edbeb152a26608386dacb8460359885ed0d1b8a4046641343d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-1101-native_r2-1.json.gz": {
+      "bytes": 23256,
+      "sha256": "2d109b6a87438c07c26158280277f6b3d628bc4b1bfaff088277fbc03e2c3f77"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 24423,
+      "sha256": "eaa1862d3fd75b8ac5e5a37da9b7624f3b6ff24e782f10fe4cf1a857309609c6"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 24505,
+      "sha256": "69bf13a9faa602074370641092b96fe7b2e6363815471d193d51bd937ae15c2f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-extra_old-champion-0.json.gz": {
+      "bytes": 23549,
+      "sha256": "78032bbb2f95133f754a3fd641606a1e84d7a7db01ff5d173e0f88df3cb39c5f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-extra_old-champion-1.json.gz": {
+      "bytes": 23547,
+      "sha256": "3fd27ea070ab0192c59fefb845a27d4ddfb0efce41441f98ccbad51c2d87f81d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-native_r1-0.json.gz": {
+      "bytes": 23321,
+      "sha256": "9ab7b7867eac63ac7e84832ce0612cbb4558ae3df07cfa972cdb4773d71140b9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-native_r1-1.json.gz": {
+      "bytes": 23213,
+      "sha256": "853e6f57ec49b737a443c51053ed38b9b889010fcd8df353e8fabb1113b29999"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-native_r2-0.json.gz": {
+      "bytes": 23320,
+      "sha256": "b899dea2fbce9d286602cd44af3e78115a1530ff9474f1a40c4bd6b792f38734"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-2202-native_r2-1.json.gz": {
+      "bytes": 23213,
+      "sha256": "8b87ada61ecf189b051eb55ebd3c1f96b57c2bdc8467c4d48c600a00cc4b5989"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 24141,
+      "sha256": "c438444c29a6dd8a81a742b009105e9f5af85be4f60e3aa35a87578208294891"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 24257,
+      "sha256": "79dea2a04d19c77cf76ff5fe9fa3a648aa101514860372b3e4e8c06ad30f14ff"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-extra_old-champion-0.json.gz": {
+      "bytes": 22954,
+      "sha256": "333d64115201647f634a09e652d01954154db570ac6beaa25685182b436acefa"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-extra_old-champion-1.json.gz": {
+      "bytes": 22968,
+      "sha256": "72f78c0c472ddf4fe9a5e33343071e7a6a1d0d6028756e70184c63ddd2d9bfeb"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-native_r1-0.json.gz": {
+      "bytes": 22371,
+      "sha256": "380194763a1983e274b651a99013140d9e912b72ceda6e78b66f0f33196f7c49"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-native_r1-1.json.gz": {
+      "bytes": 22552,
+      "sha256": "e994fc743140aa01355f64d7c80454bab80dbd0f1b5558c81924faf830f744f3"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-native_r2-0.json.gz": {
+      "bytes": 22370,
+      "sha256": "a1afe3cc4ca4edc96fe767e46429d02580ba601805fc78736ea24418280cfba5"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.003-3303-native_r2-1.json.gz": {
+      "bytes": 22553,
+      "sha256": "fc6a9868935e08b128d538055c251d3356b40592a6372d49e9d175c837d979fc"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 23677,
+      "sha256": "456258d989b44ae7038d8e5bf746356f21d3b0f0c70ee9779dfa4166b9ec6ab4"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 23688,
+      "sha256": "589d4eeb1e4648c08f88a5ba14e33dab98b3e51ddb38ee027ab5a6d6de2e1466"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-extra_old-champion-0.json.gz": {
+      "bytes": 22587,
+      "sha256": "2e4ebce5b9f93017232d63cc4e5b734a02d97b48e7bd2b366f182d7265a4d040"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-extra_old-champion-1.json.gz": {
+      "bytes": 22562,
+      "sha256": "ca6e3d7509bd78abae0948e92eaa23c8d6889be1b02b0c4dfdd835ea435b056a"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-native_r1-0.json.gz": {
+      "bytes": 21947,
+      "sha256": "4ca8b12755a9dbe8d97da3898dd8320aa09c2ef3e5a7e82b7519345eb26ec435"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-native_r1-1.json.gz": {
+      "bytes": 21534,
+      "sha256": "66b55404a4b6fe0a24b2fa5a93c30ebe685024156f4984155fdff765ed306651"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-native_r2-0.json.gz": {
+      "bytes": 22291,
+      "sha256": "218bf458e912d4bd476f6fc1da7c3c19bddd4b0a283dae6bc13007e8d732472d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-1101-native_r2-1.json.gz": {
+      "bytes": 22456,
+      "sha256": "eedba4e03dd1c2c6bfba6eed0cf2539470defe08a97d9b047b8d92f6ba6dbac8"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 24591,
+      "sha256": "dcf30d58fca167a765eefd7a8b1b9d3edea92274f068c0eca13b2ad3e7c9e284"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 24594,
+      "sha256": "aea7664c9c211802faafae3ef56cc94a2664707f43524f9d6c2d960662f19309"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-extra_old-champion-0.json.gz": {
+      "bytes": 23449,
+      "sha256": "a82043e0f86d33c22ab01169a5a4ed6814297c808243faa7e2aeaa59b14e0762"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-extra_old-champion-1.json.gz": {
+      "bytes": 23355,
+      "sha256": "84c42cab1b42860b7e3ca5e6c8a9fbaa3bc4385166affe7656c84eb43ea807c0"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-native_r1-0.json.gz": {
+      "bytes": 23335,
+      "sha256": "76d7c97a07e0132b28981404cf5c433c7e4a03e10e9d41bd27ff3e5424f40313"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-native_r1-1.json.gz": {
+      "bytes": 23418,
+      "sha256": "8e9057dae89aa40d19d04151b82c5fbc9f56c98dda9cdeafcf0cfc841daeb831"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-native_r2-0.json.gz": {
+      "bytes": 22751,
+      "sha256": "38628fa13c2f14001d0783825ff855a7b3c0c54f0b3adbf4c752e04a77211eb6"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-2202-native_r2-1.json.gz": {
+      "bytes": 23094,
+      "sha256": "8dc7e0f47cac33b688bcc651e48a94e7975be9aff786320795d23be13367aff1"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 24005,
+      "sha256": "36c574771aaf454f43bb0f5412d3c98830195a374880380c38a308905fa729d9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 23963,
+      "sha256": "7770b1c753d43ed5c8d69d042fa87eeedfaca6800e38296743b23d82201064e0"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-extra_old-champion-0.json.gz": {
+      "bytes": 22847,
+      "sha256": "3be0cd9c52ac75182a91111743661188c1fcf1f02fa7ea4840c3fe856048c6b2"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-extra_old-champion-1.json.gz": {
+      "bytes": 22827,
+      "sha256": "de945babda4046c7c856cd975aa2f9960ccd306afb628c63af1103aa79e5a378"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-native_r1-0.json.gz": {
+      "bytes": 22280,
+      "sha256": "88fe4e4c031affe820bf32b7ef7a46cc2fd3245a3b4a3c9aa5fc1385d73e791d"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-native_r1-1.json.gz": {
+      "bytes": 21828,
+      "sha256": "d644e26c890e3e12966e4e8c681a56254e6eb03780d3ea4c66f6caf47aa95460"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-native_r2-0.json.gz": {
+      "bytes": 22603,
+      "sha256": "ba890c46188328556fe773674a9a766feca87676e192e011ca0e29cfce2a1ca9"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/ppo-0.01-3303-native_r2-1.json.gz": {
+      "bytes": 22694,
+      "sha256": "1713ac37f1c8f12e980f807dfa5fd24eaaf98ccd0020e56acdda6e0293bd6a45"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-extra_hysteresis-0.json.gz": {
+      "bytes": 24841,
+      "sha256": "bf883bbb8580394652cc73ffcf40dc7872da9ba7dbfddd4a6bdc1f17d52de525"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-extra_hysteresis-1.json.gz": {
+      "bytes": 24895,
+      "sha256": "6fc4f1ad2700e8399fb9a1b13307623d73181c032c6bf71f492efd4d6dd0de5e"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-extra_old-champion-0.json.gz": {
+      "bytes": 23956,
+      "sha256": "63791ce1c563bc5cb397fad92fd71f34b71d00ee7844e0585dc585c072227239"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-extra_old-champion-1.json.gz": {
+      "bytes": 24075,
+      "sha256": "99a15e98bbfa2e1dd9f3c55cac051ce69ce5d132eb80fa0843872f3fae5701d6"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-native_r1-0.json.gz": {
+      "bytes": 23502,
+      "sha256": "6f55fd0ddfb31cc0d1d7e5224d70fbc94416d9bcdf9303e64468b353026509aa"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-native_r1-1.json.gz": {
+      "bytes": 23611,
+      "sha256": "f830807c88e58fc498fb49e4d5ea4213a708f612494d733e3b9b2ca6e48fb085"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-native_r2-0.json.gz": {
+      "bytes": 23120,
+      "sha256": "2382e85f694fa25ed0adae62424f2b2c529c570e34321aa9756431378a24aee5"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-1101-native_r2-1.json.gz": {
+      "bytes": 23812,
+      "sha256": "570969fbf8d6e09524f8fd7192d7e8296a35383d187ebc5ff18745b4d7cef464"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-extra_hysteresis-0.json.gz": {
+      "bytes": 25663,
+      "sha256": "f93d4b2b330072fe5e2e9b46730f10f859331c398425cff030bf9cc8775e0574"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-extra_hysteresis-1.json.gz": {
+      "bytes": 24376,
+      "sha256": "08913df55bbaf478f58a8de4e92710883b304ce9abd4d2f181c9b09e364de71e"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-extra_old-champion-0.json.gz": {
+      "bytes": 24547,
+      "sha256": "72de6a559de7defd05fa6988dab455098a8c7b00eb2255ff921e5c8c215f7a55"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-extra_old-champion-1.json.gz": {
+      "bytes": 24051,
+      "sha256": "15f2ac2f69339ad77f64d24e39abc4faa812cbf60e65d2d29661d928d6ec116a"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-native_r1-0.json.gz": {
+      "bytes": 23034,
+      "sha256": "eb4bf3b31c1203d4c36182095791f0ad9fcba736f648e428d541a19273760045"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-native_r1-1.json.gz": {
+      "bytes": 23047,
+      "sha256": "16a5a97b3eef40aa26b56aab30700bbcf6ceb37c948ef4558ad78b8564e3faaa"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-native_r2-0.json.gz": {
+      "bytes": 23046,
+      "sha256": "7e4a79881f04f822cd1f6291a4d0398dd0d63d74bda9243ffcfb1fc17f2e9a92"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-2202-native_r2-1.json.gz": {
+      "bytes": 23077,
+      "sha256": "e4d7562b121cf95ab0a66df6dfa9f574ad8269d58b168fdd1ecbd09eb2a4bec2"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-extra_hysteresis-0.json.gz": {
+      "bytes": 24197,
+      "sha256": "69b0e879c623b8a9c9537d5aea682e2980b1ce2c480f4d58ccb2cd76d06d254f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-extra_hysteresis-1.json.gz": {
+      "bytes": 24206,
+      "sha256": "9ca81c51423b297aad4104598f24f5be454f804b1d54f99b74a883ca4fa32f3f"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-extra_old-champion-0.json.gz": {
+      "bytes": 22925,
+      "sha256": "dd488ecfe5aa7e15313782cb98b535fbd8171b6315da697292ad5d90ec7a79cd"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-extra_old-champion-1.json.gz": {
+      "bytes": 22867,
+      "sha256": "40aefa99117473c86373ee5fd549ca0d4494c07387f0475ef34440bc08463756"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-native_r1-0.json.gz": {
+      "bytes": 23334,
+      "sha256": "350f9c3f934af262aa8e0f4cc2a8890d982193f2d5f08649714acb436122d026"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-native_r1-1.json.gz": {
+      "bytes": 23403,
+      "sha256": "5ed616f622767f8d5b7a14a74ff607e143e7d5fd8e23dd89530894f39175768e"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-native_r2-0.json.gz": {
+      "bytes": 22713,
+      "sha256": "202833c1c6c153b5be20ecf98fc9a1d0a67999092cba201809011e4b8d718ce7"
+    },
+    "artifacts/independent-pilot/run-v3/selection/replays/untrained-3303-native_r2-1.json.gz": {
+      "bytes": 22978,
+      "sha256": "cca8d9e1f9d36a3ea6ab2d633fcb160cfc968289a55615e9bdae195b3abd9943"
+    },
+    "artifacts/independent-pilot/run-v3/selection/rows.jsonl": {
+      "bytes": 624587,
+      "sha256": "a42e7308b09df47a7124475376e0c2b2a0c7b2073ad5e6d5c8f62ffa1a813f4a"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-1101/STATUS.json": {
+      "bytes": 1200,
+      "sha256": "7529305e299929a3f10250f5f36aae5d845c4720b463d1ee48c42894533b23c2"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-1101/candidate.json": {
+      "bytes": 1200,
+      "sha256": "7529305e299929a3f10250f5f36aae5d845c4720b463d1ee48c42894533b23c2"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-1101/proposals.jsonl": {
+      "bytes": 288715,
+      "sha256": "ecb0ba4480adc5e939069954517b2ee31cfe64555058d148cdceb31e1b92043c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-2202/STATUS.json": {
+      "bytes": 1191,
+      "sha256": "eba3dbb528a96ae36556bd477de44c78bdfb5886854a0ee0592a332d392e70eb"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-2202/candidate.json": {
+      "bytes": 1191,
+      "sha256": "eba3dbb528a96ae36556bd477de44c78bdfb5886854a0ee0592a332d392e70eb"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-2202/proposals.jsonl": {
+      "bytes": 287913,
+      "sha256": "6f9aa7f2b72cad2ec0e565f703458fb90c5f3b2cbeff372721ed81611ce29e6c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-3303/STATUS.json": {
+      "bytes": 1201,
+      "sha256": "4b6434bd5274253e2d0a4653aba3c0aedfdcbc20a70e3d77284dffd8a47b2d41"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-3303/candidate.json": {
+      "bytes": 1201,
+      "sha256": "4b6434bd5274253e2d0a4653aba3c0aedfdcbc20a70e3d77284dffd8a47b2d41"
+    },
+    "artifacts/independent-pilot/run-v3/trials/beam-3303/proposals.jsonl": {
+      "bytes": 291253,
+      "sha256": "1938dca299e27f2145d29d597d816d672a58119bedc404cc75d1a1110325010e"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-1101/STATUS.json": {
+      "bytes": 1242,
+      "sha256": "8e3d87426d6cc75ac46064e22a1c4e01ba056cb036dbdc2a24d11b7d535515a9"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-1101/candidate.json": {
+      "bytes": 1242,
+      "sha256": "8e3d87426d6cc75ac46064e22a1c4e01ba056cb036dbdc2a24d11b7d535515a9"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-1101/proposals.jsonl": {
+      "bytes": 350296,
+      "sha256": "e7923d295ce8de8cb3fb28721b5c526ac8c9ac4a9150e49f6d52252f874b6071"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-2202/STATUS.json": {
+      "bytes": 1244,
+      "sha256": "c38ec40318412ec09a5930d6e50506916404f8e4a2fa2d6055b4653137f3435b"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-2202/candidate.json": {
+      "bytes": 1244,
+      "sha256": "c38ec40318412ec09a5930d6e50506916404f8e4a2fa2d6055b4653137f3435b"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-2202/proposals.jsonl": {
+      "bytes": 337421,
+      "sha256": "436ccb266c15914a0cf03cf8cfa97bbacaf18ca6e85cbf455cbe2bd3a02985ea"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-3303/STATUS.json": {
+      "bytes": 1284,
+      "sha256": "11664abd88e3c643cf8b29442d26fad7dffd447ecd83d4adb2141c46c49b044b"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-3303/candidate.json": {
+      "bytes": 1284,
+      "sha256": "11664abd88e3c643cf8b29442d26fad7dffd447ecd83d4adb2141c46c49b044b"
+    },
+    "artifacts/independent-pilot/run-v3/trials/lns-3303/proposals.jsonl": {
+      "bytes": 337088,
+      "sha256": "f465e534410563574d87066dcab05cd36a90ae3c850eb60a32fabb07b1bc3604"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-1101/STATUS.json": {
+      "bytes": 364,
+      "sha256": "69bb0303cf5c0204a568c73c9b7cf01b74a5231ffe39d57f937e84e64a50345e"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-1101/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "0a5b3cc0996a0d1d757cf36bc7fe4de262ba058b2f83297a11897b12f7f36e3c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-1101/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "0bbc3f213b73cf1200bf6ec1931843fda2f7472d03905b74b80facbdb626161a"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-1101/updates.jsonl": {
+      "bytes": 47799,
+      "sha256": "238d25376f4edbc709e2052e314079a71629d9094c3d8075eb4f096ab3ef4347"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-2202/STATUS.json": {
+      "bytes": 365,
+      "sha256": "6cdb0d621244dd6ad6e309329161ea540c4f5fe08ec791aa69c152d0e236378c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-2202/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "755c64a128844a9ba5e681e713c7d5b5b8c1674793889ddbf586cb6c5690d26b"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-2202/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "47e719f31bca833639d3ecda6768df5dd827a35b7b8b71da3f05bcb252ff8992"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-2202/updates.jsonl": {
+      "bytes": 46547,
+      "sha256": "607c7be77b03db0205f944156df2d9650a1ff93ab3b1bd2c0e48cd1e980f74a7"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-3303/STATUS.json": {
+      "bytes": 364,
+      "sha256": "6ac1a24b0ae3fa9dc2dda525b876939bc4fceae8c7052c4df5cf68fbedbe346c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-3303/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "bdfe7dcc4b2627542384b35319ea3bd2ddb21fba557c6f56937277b904551e25"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-3303/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "93eac49e23b4055b11ce7047691471e1f4300f06434ecd29493f0d64b8b8b989"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.003-3303/updates.jsonl": {
+      "bytes": 45899,
+      "sha256": "72965988f4486e21810dc66b36f6a9cda94f5f537dec753e3ff9330b64226aef"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-1101/STATUS.json": {
+      "bytes": 364,
+      "sha256": "b71a8afafefaab046f482dfd1d36473548d052956e3c406c35debd3271cf1ab2"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-1101/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "3935606fe6aaabbc18f864a43dba8c019546a8b69b6c4a427616f0b20d4ec973"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-1101/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "0bbc3f213b73cf1200bf6ec1931843fda2f7472d03905b74b80facbdb626161a"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-1101/updates.jsonl": {
+      "bytes": 45994,
+      "sha256": "03852947db93094091908139993931b778ab3ee1d56434d791385285319a2e32"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-2202/STATUS.json": {
+      "bytes": 363,
+      "sha256": "2474e1da096eb08cd5b0e678fdb832458c37272a071b1f907737ad11acc9e107"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-2202/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "d64afa0d13894b8a4b334f49f73eebba4e0e4f0b4e9f4a74fcdefe6bca5dd6d0"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-2202/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "47e719f31bca833639d3ecda6768df5dd827a35b7b8b71da3f05bcb252ff8992"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-2202/updates.jsonl": {
+      "bytes": 46002,
+      "sha256": "f80d4f526ed06e2e93fa1097da3c01574f97a47798dfb50a0017c7c5043eec8c"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-3303/STATUS.json": {
+      "bytes": 364,
+      "sha256": "0568180edfd5ad55b942cc78e99ddd242a2c328b84047d2be7431fc271dc3de8"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-3303/candidate.pt": {
+      "bytes": 596637,
+      "sha256": "78d58cfbaabb6ee3d7a5b737e56421436c49b8ac0e6eae757096d55b5edc1b58"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-3303/untrained.pt": {
+      "bytes": 596317,
+      "sha256": "93eac49e23b4055b11ce7047691471e1f4300f06434ecd29493f0d64b8b8b989"
+    },
+    "artifacts/independent-pilot/run-v3/trials/ppo-0.01-3303/updates.jsonl": {
+      "bytes": 47344,
+      "sha256": "19c38ce2856aeaea19632853cad30a100b2cdf7f97b053fb870d394ed803ee40"
+    },
+    "research/independent_pilot/build_receipt.json": {
+      "bytes": 1334,
+      "sha256": "a3b45aabde4f26eef88ae63e8a791604686b483ecf309d7f2fe22155469a0b25"
+    },
+    "research/independent_pilot/native.cpython-312-x86_64-linux-gnu.so": {
+      "bytes": 563328,
+      "sha256": "995086eb3a5684196a70f7131cd9b2f2c5020a28310d16c8273c1981052a6843"
+    }
+  },
+  "frozen_source_commit": "5e745a237e85baa22d1163f6b334d2f37ed1d36f",
+  "verified_contents": true
+}

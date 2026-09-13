@@ -4,6 +4,8 @@ This experiment compares independently generated economic plans with a small rec
 
 The pilot uses the official 1.32.7 reference from the merged evaluation bundle. It adds a separate runner because these agents have observation-based Python entry points rather than the existing six candidates' native ABI. It does not change the published evaluation bundle or consume its holdout outcomes.
 
+Completed pilot: [result and next experiment](verification/REPORT.md), [full evidence](verification/README.md). Neither family qualified to advance.
+
 ## Scope
 
 - E1 represents a season as five six-day stages of production, labor, land, cash-reserve and sale targets. A new feedback executor turns those targets into legal commands on each observation. Beam search constructs stages; large-neighborhood search changes allocations and uses CP-SAT for minimum-change allocation repair. The solver does not solve a full worker schedule. LNS alternates uniform and UCB operator selection; this pilot does not isolate the effect of that controller.
@@ -34,14 +36,16 @@ The external-opponent smoke calls `evaluate.worker` for the `control` candidate 
 
 The reserved-manifest input serves only a membership exclusion check. Its values and outcomes are not printed or used as features. A formal final comparison still needs a fresh custodian release and current campaign audit. The historical exclusions here are a snapshot, not a complete audit of every running campaign.
 
-The freeze pins source, native binaries, the opponent runtime, public evaluation seeds, historical exclusions, pilot seeds and analysis rules. Trials validate those files before and after running. Each trial gets 180 process CPU seconds and finishes its last complete rollout/update. Two configurations and three seeds give each family an 18 CPU-minute training/search budget. Initialization, checks, evaluation, exact elapsed cost and any overrun are separate records. A failed trial stops the runner; there is no automatic retry.
+The freeze pins source, native binaries, the opponent runtime, public evaluation seeds, historical exclusions, pilot seeds and analysis rules. Trials validate those files before and after running. Each trial gets 180 process CPU seconds and finishes its last complete rollout/update. Two configurations and three seeds give each family an 18 CPU-minute training/search budget. The timed CPU loops exclude model and optimizer initialization. The pipeline records elapsed time including startup; it does not meter initialization CPU separately. Correctness checks and evaluation have separate receipts. A failed trial stops the runner; there is no automatic retry.
 
 Configuration selection averages the three training seeds on eight selection worlds. One configuration per family then runs on eight fresh pilot worlds, alongside untrained policies and the independent rule control. Each test world retains four opponents and both seats as one resampling cluster. All games and failures remain visible. The benchmark contract keeps strict win rate primary and match score secondary.
 
-The first test world checks every observation against the official interpreter and records complete replays for every candidate/opponent/seat. The other worlds use the verified native engine. This is a local execution check, not Kaggle runtime certification. No command submits an agent or promotes a champion.
+In each evaluation phase, the first world checks every observation against the official interpreter and records complete replays for every candidate/opponent/seat. The other worlds use the verified native engine. This is a local execution check, not Kaggle runtime certification. No command submits an agent or promotes a champion.
 
 ## Provenance
 
 The starting native engine and direct decoder came from the user's earlier full-action PPO work: `full-actions-20260907/native.cpp`, SHA256 `945b60c6c2460b32ebf1920d80ee6ac2595cf13d5c75812187b646d23bb6f68f`. This copy adds an observation-only actor, conservative market bounds and independent plan execution. The new GRU/ordered PPO implementation avoids importing that campaign's legacy script, teacher and checkpoint machinery. Existing campaigns remain untouched.
+
+The CP-SAT path receives proposals that already passed deterministic feasibility repair, so this pilot cannot show a benefit from the solver. A later ablation must compare unrepaired proposals with and without solver repair.
 
 See [JAX_AUDIT.md](JAX_AUDIT.md) for the team simulator and its remaining integration work. See the frozen run's `PROTOCOL.json`, journals, replay files and `RESULTS.json` for the experiment evidence.
