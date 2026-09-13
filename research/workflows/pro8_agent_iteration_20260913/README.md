@@ -1,107 +1,94 @@
-# Kaggriculture agent iteration workflow
+# English workflow
 
-[中文版本](README.zh-CN.md)
+## 1. Use Codex as the central controller
 
-Updated: 2026-09-13. This document describes the controller-led workflow used for the ChatGPT 6 Pro agent experiments and the current three-lineage acceptance protocol. The results section is a dated snapshot, not a live status feed.
+Codex coordinates eight independent ChatGPT 6 Pro chats. It prepares the rules and source materials, assigns development tasks, collects deliverables, runs local matches, analyzes results, and schedules further iterations.
 
-## Objective and responsibilities
+Each chat develops a complete strategy independently. Authors may focus on different areas, such as economic planning, crop selection, market trading, resource allocation, or execution scheduling, while sharing the same rules, interfaces, and evaluation method.
 
-The objective is to improve competitive performance through repeated source changes, local matches, and evidence-based feedback until each of the three current agent lineages exceeds **85% overall strict wins** against the specified opponent pool.
+## 2. Establish a 200,000-cash economic baseline
 
-The initial exploration involved eight separate ChatGPT 6 Pro author conversations. The current focused loop uses three separate author conversations for **A08 r11**, **A06 r6**, and **A06 calendar r12**. Each author continues its own lineage; revisions retain an explicit parent identity.
+Each author first tests its strategy across multiple seeds without an active opponent. The target is an average terminal cash balance of 200,000 per game.
 
-| Role | Responsibility |
-| --- | --- |
-| Controller, running locally through Codex | Maintain versions and deadlines; prepare source and defeat evidence; dispatch author tasks; download and verify deliveries; freeze evaluation inputs; run and audit matches; publish artifacts and send the next feedback. |
-| ChatGPT 6 Pro author | Inspect the actual source and evidence, investigate a concrete cause, implement and compile a change, run feasible checks, and deliver a usable ZIP within the round budget. |
-| Local evaluation harness | Execute the pinned official game with isolated agent processes, save complete results and replays, and provide the evidence used for acceptance. |
+Authors can use dynamic programming and rolling planning to improve investment, production, maintenance, harvesting, and sales. Performance must come from completed games, rather than predicted returns. Strategies below the baseline continue iterating until they reach it.
 
-Current acceptance is based on competitive wins. Mean terminal cash remains a diagnostic. Earlier cash thresholds and games against a passive opponent are no longer acceptance gates.
+Each author round is limited to two hours. Tasks should account for the chat environment’s actual CPU, memory, and execution speed, leaving enough time for implementation, validation, and packaging. Deliverables include complete source code, a runnable strategy, build instructions, and actual test results.
 
-## The iteration loop
+## 3. Run local matches between the eight strategies and select the best two
 
-1. **Establish the current checkpoint.** Read the authoritative state, previous results, exact parent source/configuration/native library, and any active process or conversation. Preserve completed rounds. Do not launch duplicate work because a status observation timed out.
-2. **Diagnose losses and protect narrow wins.** Use the completed panel to find representative public-opponent losses, R2 losses, close losses, and narrow-win controls. Reconcile observed cash changes with purchases, sales, production, labor, land use, maturity, and terminal inventory. Distinguish a planning-value error from a scheduling or execution failure.
-3. **Dispatch one bounded author round.** Identify the parent and next revision, evidence, a concrete hypothesis, permitted changes, resource budget, start time, deadline, validation scope, and required files. Give each lineage its own conversation. Request actual source changes and a downloadable package.
-4. **Collect and verify the delivery.** Preserve the original ZIP and its SHA-256. Check package integrity, complete production source, configuration, matching native library, build instructions, default entry point, and relevant positive and negative checks. Record what was independently verified and what remains only an author claim.
-5. **Freeze before sampling.** Freeze candidate source/native identities, official engine, opponent files, runner, and protocol. Collect author development seeds and prior reservations. Draw the next shared 64 seeds once from the eligible source pool and save the immutable plan before running matches.
-6. **Run the complete local panel.** Execute every declared seed × opponent × seat combination. Retain every result, error, and replay. Keep one full evaluation panel active at a time. Author smoke tests and small development comparisons are recorded separately.
-7. **Audit, publish, and decide.** Verify completeness, terminal status, hashes, and metrics independently. Publish exact versions with English descriptions and reproducible evaluation evidence. If a lineage has not passed, return concrete failure evidence to its author and repeat with a new revision and fresh evaluation seeds.
+Codex downloads and verifies the eight strategies, then runs a local round-robin evaluation. Candidates share the same seeds within a round and play both seats to reduce map and seat effects.
 
-The same loop covers economic planning, rolling scheduling, and low-level execution. Dynamic programming is useful when its state, horizon, constraints, objective, and fallback are explicit; its value must ultimately be supported by closed-loop competitive results.
+The two strongest strategies are selected using the complete match results, considering overall win rate, matchup performance, and consistency. In this project, the selected lineages are A08 and A06. These lineages can produce multiple subsequent versions, including A08 r11, A06 r6, and A06 calendar r12.
 
-## Author round budget: at most two hours
+## 4. Evaluate the selected strategies against the fixed agent pool
 
-The 120-minute limit includes reading, analysis, implementation, compilation, validation, troubleshooting, and packaging. Follow-up messages do not reset the start time. The controller's full local panel is a separate workload.
+The selected strategies then compete against 11 designated public opponents plus the original R2.
 
-| Time budget | Required action |
-| --- | --- |
-| First 5 minutes | Measure current CPU affinity and cgroup CPU quota, memory limit/current usage, available memory and disk, and Python/compiler versions. A previous environment report is only historical evidence. |
-| Early in the round | Time a bounded compile and representative probe; record wall time and peak RSS. Estimate the feasible workload from measurements, including tool and packaging overhead. |
-| By 90 minutes | Finish a defensible source checkpoint and the necessary focused checks. |
-| By 100 minutes | Begin packaging and final verification. |
-| Before 120 minutes | Deliver the real checkpoint and raw evidence, including failures and incomplete work. |
+The current formal evaluation draws 64 unused seeds from the public representative-256 and stress-128 collections. All candidates in a round share the same seeds and play both seats against every opponent:
 
-If effective CPU quota is unknown, use one worker conservatively. Bound parallelism by both CPU and memory, leaving at least 30% memory headroom. A short early-game probe does not establish the cost of a full game. Every subprocess timeout must fit inside the remaining round budget.
+64 seeds × 12 opponents × 2 seats = 1,536 games per candidate.
 
-## Formal local evaluation settings
+Each strategy revision receives a fresh evaluation panel. Reports include overall and per-opponent win rates, seat differences, and mean terminal cash.
 
-| Setting | Current protocol |
-| --- | --- |
-| Candidate lineages | A08 r11, A06 r6, A06 calendar r12; each revision has a frozen identity |
-| Seed source | The published representative panel of 256 seeds and stress panel of 128 seeds |
-| Sampling | 64 total, uniformly without replacement from their remaining eligible union; one shared draw for all three candidates |
-| Exclusions | Previously reserved or tested seeds, plus all reported author development seeds |
-| Opponents | 11 fixed public entries plus the true original AFS R2, identified as `submission_56149565` |
-| Seats | Both seats, 0 and 1, for every seed/opponent pair |
-| Game length | Complete official games with 719 transitions |
-| Denominator | 64 × 12 × 2 = **1,536 games per candidate**; **4,608 games** for three candidates |
-| Win definition | Strict terminal win; a draw does not count as a win |
-| Acceptance | More than 85% overall: at least **1,306 strict wins out of 1,536** for each candidate |
-| Additional reporting | Representative/stress subsets, each opponent, public-11 aggregate, R2, seat, terminal cash, and errors |
+Competitive acceptance requires an overall win rate strictly above 85%, with no 200,000-cash threshold. On a 1,536-game panel, this requires at least 1,306 strict wins; draws do not count as wins.
 
-The exact opponent entries are:
+## 5. Analyze critical losses and return feedback to the original authors
 
-`soil_v219g`, `moon_v215`, `flexon_v5`, `market_smart_v8`, `nagatakengo_v70`, `aurax_reactive_v1`, `thomas_955_v2`, `shop0909`, `aurax_shop_v2`, `seven_turn`, `ahmed_v27`, and `submission_56149565`.
+Codex selects informative cases, including large losses, narrow losses, and recurring weaknesses against particular opponent types. It also retains narrow wins to check for regressions.
 
-Entries have equal weight under the requested protocol. Some public entries share code; the pool should not be described as 12 independent strategy families. Earlier local starter agents and other author revisions are outside this acceptance pool.
+Analysis covers economic decisions, rolling scheduling, and execution: whether investments realize their expected value, whether planned tasks are feasible, and whether the executor actually performs the intended actions.
 
-This is a **mixed development panel**, not the sealed Holdout: the sealed seed values were unavailable. Keep the representative/stress labels; their counts may differ between random draws. Do not redraw after seeing outcomes or reuse depleted seeds silently. If fewer than 64 eligible seeds remain, obtain a new seed source before another fresh panel.
+Codex sends the necessary losing-game data, analysis, and concrete improvement tasks back to the corresponding ChatGPT 6 Pro author. The author delivers a revised strategy, which Codex verifies and evaluates on fresh seeds.
 
-The current harness isolates policies in fresh processes, withholds the environment seed from policy observations, and uses a response watchdog. These local settings do not certify compliance with a separate competition platform's runtime limits.
+This cycle continues until the candidate exceeds an overall win rate of 85% against the designated pool. Formal versions are published to GitHub with source code, English descriptions, evaluation settings, and complete results.
 
-## Evidence and feedback rules
+## Main prompts
 
-- Preserve the full declared denominator. Partial games, errors, or missing rows cannot disappear from reporting or support an acceptance claim.
-- Verify source/native/engine/opponent/protocol hashes, the seed × opponent × seat Cartesian product, all terminal outcomes, and replay hashes. Independently recompute totals and subgroup metrics from raw rows.
-- For selected feedback cases, replay saved joint actions through the pinned official engine and reconcile cash ledgers. This verifies the recorded game; it does not evaluate a changed policy.
-- Use paired parent/candidate matches on identical seed/opponent/seat contexts for causal diagnosis when resources permit. Include narrow-win controls and retain all failures. Reusing feedback cases is development, not fresh acceptance.
-- After a changed action, continuing the recorded future is not a valid counterfactual. Run both policies closed-loop to measure the changed strategy.
-- Production decisions may use only current legal public observations and the agent's own private state. Do not introduce hidden-seed lookup, opponent-identity lookup, future-action scripts, or opponent-private-state access.
-- Transfer source and failure evidence only within the authorized scope. Opponent source and full private simulation states require appropriate scope coverage; own-visible feedback is a possible reduced package. A rejected upload is not a dispatched task.
+### Controller goal:
 
-The prepared second-round feedback currently contains seven selected cases per lineage: five loss categories and two narrow-win controls. The local audit verifies 719 transitions and 60 player-days of cash accounting per selected game.
+```text
+/goal
+Act as the central controller for Kaggriculture strategy iteration.
 
-## Delivery and publication
+Coordinate eight independent ChatGPT 6 Pro chats to develop complete strategies. First, require each strategy to average 200,000 terminal cash across multiple seeds without an active opponent.
 
-An author delivery contains the entry point, complete production source, fixed configuration, matching Linux x86-64 native library, offline build instructions, compiler command/flags and source/native hashes, relevant checks, raw validation/resource/timing logs, and an English README. Failures and limitations remain visible.
+Download and verify the strategies, run local matches between them, select the best two, and evaluate them against our fixed agent pool: 11 designated public opponents plus the original R2.
 
-The controller preserves each original ZIP, central verification receipt, frozen plan, machine-readable results, per-game rows, and replay identities. Publish new revisions in new directories, preserving older versions and reports. Verify the remote commit and published file bytes after pushing. Do not treat successful compilation, a favorable subset, or author-reported self-play wins as pool acceptance.
+Use fresh evaluation seeds after each strategy revision. Candidates in the same round share 64 seeds and play both seats, producing 1,536 games per candidate.
 
-## Verified snapshot on 2026-09-13
+Analyze the results and return critical losses, evidence, and improvement tasks to the corresponding authors. Continuously improve economic strategy, rolling scheduling, and execution until the overall competitive win rate strictly exceeds 85%. There is no cash threshold during competitive acceptance.
 
-The first revised panel is complete: 64 fresh shared seeds, comprising 48 representative and 16 stress seeds; 4,608 full games; zero errors and zero draws.
+Plan each author task around its actual CPU, memory, and execution speed, with a maximum of two hours per round. Preserve and publish source code, English descriptions, evaluation settings, and complete results.
+```
 
-| First revision | Strict wins | Overall win rate | Versus original R2 |
-| --- | --- | --- | --- |
-| `TRI_A08_r11_r1` | 1,054 / 1,536 | 68.62% | 66.41% |
-| `TRI_A06_r6_r1` | 1,196 / 1,536 | 77.86% | 92.19% |
-| `TRI_A06_r12_r1` | 1,099 / 1,536 | 71.55% | 89.84% |
+### Initial author task:
 
-All three remain below the overall target. Different seed panels do not establish that a revision caused an improvement or regression. The second author round had not started at this snapshot: its full feedback uploads were awaiting resolution of an upload-scope approval rejection.
+```text
+Independently develop a complete Kaggriculture strategy. Read the supplied rules, source code, and runtime materials, then implement changes, run tests, and deliver a downloadable package.
 
-- [Original agents and English descriptions](../../agents/pro8_20260913/README.md)
-- [First revised agents and English descriptions](../../agents/pro8_20260913_revision1/README.md)
-- [Original 64-seed results](../../evaluation_runs/pro8_tri64_20260913_baseline/README.md)
-- [First revised 64-seed results and protocol](../../evaluation_runs/pro8_tri64_20260913_revision1/README.md)
-- [Published seed panels](https://github.com/LZhangGJ/Kaggriculture/tree/research/evaluation-seed-panels-20260912/research/evaluation_sets/2026-09-12-v1)
+Target an average terminal cash balance of 200,000 across multiple seeds without an active opponent. Use dynamic programming and rolling planning where useful, and ensure the resulting plans are executed.
+
+Your research focus is: <research direction>.
+
+Inspect actual CPU, memory, and execution speed before choosing implementation and validation scope. This round runs from <start> to <deadline>, with a maximum duration of two hours.
+
+Deliver complete source code, a runnable strategy, build instructions, an English description, and the actual seeds, per-game results, and timings. Report cash from completed games, not predicted returns.
+```
+
+### Competitive iteration task:
+
+```text
+Continue developing <strategy>, using <parent version and file identity>.
+
+Codex has completed the local agent-pool evaluation:
+<overall win rate, matchup results, evaluation settings, and cash diagnostics>.
+
+The attachments contain critical losses and supporting evidence. This round focuses on:
+<observed problem, possible cause, and proposed improvement to investigate>.
+
+Inspect economic decisions, rolling scheduling, and execution. Identify and fix the problem, while checking that the change preserves existing strengths and narrow wins. Do not add seed-specific rules.
+
+Complete this round within two hours. Deliver the revised source code, runtime files, English change description, and actual validation records.
+
+Codex will evaluate the revision on fresh seeds against all 11 public opponents plus the original R2. The final target is an overall win rate strictly above 85%; cash is diagnostic.
+```
