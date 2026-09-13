@@ -21,3 +21,5 @@ C06's runtime ZIP downloaded and matched SHA-256 c512a03db1ad718d7102e8b1956bce0
 All original archives, failed results and runtime versions remain preserved. C03, C05 and C08 retain their unchanged round-one strategies. The next shared controller panel will use newly drawn seeds after source verification and freezing, excluding all recoverable prior seeds. Unknown lost seed histories remain an explicit limit.
 
 No round-robin or competitive acceptance games have run. Acceptance requires at least 1,306 strict wins in 1,536 games against the fixed twelve-opponent pool, with no competitive cash threshold.
+
+C07 audit update: the surviving archive contains 232 complete new game replays, all verified through 166,808 official transitions. Its actual 32-game validation mean is 187,473.125, versus 187,673.875 for its matched parent. It failed the economic gate. Its local build, seven entry checks and both-seat action reproduction passed. This evidence belongs to surviving archive SHA-256 9d4f6aafb9f40ddf05916f275284ca6250d87b018994ba5e9052ab47c41f3310; it does not verify the different original delivery. Both seed sets remain excluded from future draws.
