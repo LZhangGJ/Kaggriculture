@@ -1,0 +1,18 @@
+{
+  "campaign": "new-eight-authors-20260913",
+  "model_observed": "6 Pro",
+  "model_evidence": "Browser composer button before every dispatch; Pro thinking after submission",
+  "input_sha256": "75356640e384979f504fa7393796ab3c4e8dd22b051d5284599d7e4266b2e76d",
+  "max_round_seconds": 7200,
+  "status": "running; no candidate accepted",
+  "authors": [
+    {"id":"C01","start":"2026-09-13T16:43:46.898Z","url":"https://chatgpt.com/c/6aa6d2df-8428-83ea-b32c-9a834b0b939b","tab":"779295289","focus":"Investment timing and reinvestment payback"},
+    {"id":"C02","start":"2026-09-13T16:44:31.014Z","url":"https://chatgpt.com/c/6aa6d2f7-d428-83e9-9949-890875eb62d5","tab":"779295295","focus":"Crop rotations, maintenance and harvest calendars"},
+    {"id":"C03","start":"2026-09-13T16:44:59.025Z","url":"https://chatgpt.com/c/6aa6d318-0b10-83ea-adcb-27db220c7903","tab":"779295298","focus":"Sale scheduling, price floors and inventory costs"},
+    {"id":"C04","start":"2026-09-13T16:45:26.806Z","url":"https://chatgpt.com/c/6aa6d32f-565c-83ea-abe2-a5396b10f4c8","tab":"779295301","focus":"Labor allocation and feasible execution"},
+    {"id":"C05","start":"2026-09-13T16:45:47.277Z","url":"https://chatgpt.com/c/6aa6d33c-cc28-83ea-82aa-db597023f127","tab":"779295304","focus":"Livestock, feed and service schedules"},
+    {"id":"C06","start":"2026-09-13T16:45:58.765Z","url":"https://chatgpt.com/c/6aa6d348-660c-83ea-b225-5946c4e18e81","tab":"779295307","focus":"Resource bottlenecks, storage and fertilizer"},
+    {"id":"C07","start":"2026-09-13T16:46:13.238Z","url":"https://chatgpt.com/c/6aa6d356-dd68-83ea-848d-81854fdffb01","tab":"779295310","focus":"Rolling replanning from observed outcomes"},
+    {"id":"C08","start":"2026-09-13T16:46:24.800Z","url":"https://chatgpt.com/c/6aa6d363-ccd0-83ea-a5ce-0564fcfa9ca3","tab":"779295313","focus":"Independent economic design"}
+  ]
+}

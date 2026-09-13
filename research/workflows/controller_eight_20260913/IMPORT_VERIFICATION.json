@@ -1,0 +1,102 @@
+{
+  "results": {
+    "baseline": {
+      "checked_files": [
+        ".gitattributes",
+        "GAMES.csv",
+        "INDEPENDENT_CHECK.json",
+        "PORTABLE_PROTOCOL.json",
+        "README.md",
+        "RESULT_ROW_HASHES.json",
+        "RESULTS.json"
+      ],
+      "candidates": {
+        "A08_r11": {
+          "games": 1536,
+          "wins": 1120,
+          "win_rate": 0.7291666666666666,
+          "passed": false
+        },
+        "A06_r6": {
+          "games": 1536,
+          "wins": 1095,
+          "win_rate": 0.712890625,
+          "passed": false
+        },
+        "A06_r12": {
+          "games": 1536,
+          "wins": 1054,
+          "win_rate": 0.6861979166666666,
+          "passed": false
+        }
+      }
+    },
+    "revision1": {
+      "checked_files": [
+        ".gitattributes",
+        "GAMES.csv",
+        "INDEPENDENT_CHECK.json",
+        "PORTABLE_PROTOCOL.json",
+        "README.md",
+        "RESULT_ROW_HASHES.json",
+        "RESULTS.json"
+      ],
+      "candidates": {
+        "TRI_A08_r11_r1": {
+          "games": 1536,
+          "wins": 1054,
+          "win_rate": 0.6861979166666666,
+          "passed": false
+        },
+        "TRI_A06_r6_r1": {
+          "games": 1536,
+          "wins": 1196,
+          "win_rate": 0.7786458333333334,
+          "passed": false
+        },
+        "TRI_A06_r12_r1": {
+          "games": 1536,
+          "wins": 1099,
+          "win_rate": 0.7154947916666666,
+          "passed": false
+        }
+      }
+    }
+  },
+  "packages": [
+    {
+      "path": "research\\agents\\pro8_20260913\\A06_r12\\original_delivery.zip",
+      "bytes": 10355671,
+      "sha256": "03745b84970884275348c1cc2723267a3cdfccd4ce60ea73ed40cf2c525b3e78"
+    },
+    {
+      "path": "research\\agents\\pro8_20260913\\A06_r6\\original_delivery.zip",
+      "bytes": 98696910,
+      "sha256": "b1e00c91cdaafcca145dedb4ea41c1cfefc53b61bcb4b73d25f6b63468b2e2aa"
+    },
+    {
+      "path": "research\\agents\\pro8_20260913\\A08_r11\\original_delivery.zip",
+      "bytes": 2909205,
+      "sha256": "1e3ef9d4b960bcbc9fe47430a253877e68518bad18c9e4a31c6a7a5013dc8af5"
+    },
+    {
+      "path": "research\\agents\\pro8_20260913_revision1\\TRI_A06_r12_r1\\original_delivery.zip",
+      "bytes": 6805597,
+      "sha256": "eae4ca287d258e20fb4536a506c261bcb03f23a219c1b146e26128d5ceb24eba"
+    },
+    {
+      "path": "research\\agents\\pro8_20260913_revision1\\TRI_A06_r6_r1\\original_delivery.zip",
+      "bytes": 17317861,
+      "sha256": "38a1fc1863ecb03535f8ea79a4fa86409913d492b8fd8181811e11871e8e7677"
+    },
+    {
+      "path": "research\\agents\\pro8_20260913_revision1\\TRI_A08_r11_r1\\original_delivery.zip",
+      "bytes": 18161052,
+      "sha256": "d1a043f09e3f155256aa956b4e37b418f07828ea0bdd58843ac724d051be45fd"
+    }
+  ],
+  "limitations": [
+    "Full central replays are not included; published replay hashes have not been checked against replay bytes.",
+    "Original eight-author qualification and round-robin results are not established by these files."
+  ]
+}

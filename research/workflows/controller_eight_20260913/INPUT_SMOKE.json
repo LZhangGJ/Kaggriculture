@@ -1,0 +1,29 @@
+{
+  "scope": "One seed in both seats; runtime smoke only, not qualification",
+  "rows": [
+    {
+      "seed": 291307001,
+      "seat": 0,
+      "steps": 719,
+      "cash": [
+        188345.0,
+        3000.0
+      ],
+      "seconds": 2.3169655079999956,
+      "max_action_seconds": 0.09721015999998883,
+      "rss_kib": 29020
+    },
+    {
+      "seed": 291307001,
+      "seat": 1,
+      "steps": 719,
+      "cash": [
+        3000.0,
+        240555.0
+      ],
+      "seconds": 2.5495854629999997,
+      "max_action_seconds": 0.11947332400001187,
+      "rss_kib": 29884
+    }
+  ]
+}
