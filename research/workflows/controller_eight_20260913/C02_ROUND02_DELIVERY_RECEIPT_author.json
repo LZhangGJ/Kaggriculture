@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-09-13T19:26:00.558631+00:00",
+  "zip_path": "/mnt/data/C02_round2_strategy.zip",
+  "ended_utc": "2026-09-13T19:26:05.087112+00:00",
+  "passed": true,
+  "zip_sha256": "5729f5bd617b2a4439e9fd123d5f8d208bd077950a594ec91c16c75d2fa27a75",
+  "zip_bytes": 262780104,
+  "file_count": 1080,
+  "manifest_entries_verified": 1079,
+  "all_files_extracted_and_rehashed": true,
+  "native_load_create_close_passed": true,
+  "frozen_root_and_research_sources_identical": true,
+  "policy_games": 231,
+  "recorded_transitions": 166089,
+  "validation_means": {
+    "validation_candidate16": 201405.03125,
+    "validation_baseline16": 200617.9375
+  },
+  "wall_seconds": 5.325006686000052,
+  "extracted_path": "/mnt/data/C02_round2_verified_extract"
+}
