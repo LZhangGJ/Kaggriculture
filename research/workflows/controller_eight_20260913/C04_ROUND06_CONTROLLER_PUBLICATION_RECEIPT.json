@@ -1,0 +1,13 @@
+{
+  "remote_total_assets": 191,
+  "verified_utc": "2026-09-13T23:25:25.1554154Z",
+  "assets": [
+    {
+      "sha256": "cc7e7e5ab7aa2248db13126d4d61a9c31dc71b9d93dac3ddd935fca48a1ddb92",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C04_ROUND06_CONTROLLER_VERIFICATION.zip",
+      "name": "C04_ROUND06_CONTROLLER_VERIFICATION.zip",
+      "remote_verified": true,
+      "bytes": 4550132
+    }
+  ]
+}

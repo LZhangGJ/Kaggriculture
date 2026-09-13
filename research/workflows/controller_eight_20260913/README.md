@@ -2,7 +2,7 @@
 
 Eight independent ChatGPT 6 Pro chats began on 13 September 2026. Each received the same verified source bundle and a distinct research focus. Their first task is a complete strategy that averages at least 200,000 terminal cash against an inactive opponent across multiple seeds.
 
-Round05 deliveries passed source and replay verification. C04 failed its author economic validation and its Round06 revision is active until 23:28:42 UTC. C02 retained its prior economic policy; C05 and C06 passed their separate author samples. No new shared qualification seeds, round-robin games or competitive acceptance results exist. [Current verified results and next steps](ROUND05_VERIFIED_REPORT.md).
+C04 Round06 passed independent source and replay verification. Its author validation mean was 204,538.71875, trailing its matched baseline by 8,892.3125. The fourth shared cash-qualification panel is running: eight frozen strategies, 16 fresh shared seeds, both seats, 256 games. No round-robin or competitive acceptance results exist yet. [C04 verified report](C04_ROUND06_VERIFIED_REPORT.md). [Panel settings](QUALIFICATION_04_SETTINGS.json).
 
 - [Current deliveries, evidence and archive hashes](ROUND_01_DELIVERIES.md)
 - [C01 controller verification and recovery gaps](C01_IMPORT_VERIFICATION.json)

@@ -1,0 +1,25 @@
+{
+  "created_unix": 1789341848.0904336,
+  "seeds": [
+    966789379,
+    1615094523,
+    191617121,
+    1143579155,
+    967320405,
+    330965305,
+    1903530743,
+    1137082466,
+    1180393814,
+    621040700,
+    345348519,
+    2127328139,
+    181257102,
+    524071559,
+    840120217,
+    434379062
+  ],
+  "method": "OS secrets.randbelow(2**31), after all eight runtime freezes; reject known author/history/controller claims and duplicates",
+  "known_exclusion_count": 1144,
+  "known_history_sha256": "ad021fa27f55f447c25374980af68f31c2f0cd3a9949ef71b8f72476a96b7d29",
+  "history_limit": "All recoverable historical, declared author and controller claimed seeds. Lost author histories remain unknown; complete prior-use coverage cannot be proved."
+}
