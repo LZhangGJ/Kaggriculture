@@ -1,0 +1,2 @@
+# Keep the bytes used by the source freeze on Windows and Linux.
+* -text
