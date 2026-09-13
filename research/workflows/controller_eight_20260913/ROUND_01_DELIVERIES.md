@@ -1,14 +1,15 @@
 # Round 1 author deliveries
 
-C01, C03 and C05 passed controller import, source, record, local build and development reproduction checks. C08 has delivered and is under review. C06's first archive failed its evidence check and has returned to its author for repair. C02, C04 and C07 are still running.
+C01, C03, C05 and C08 passed controller import, source, record, local build and development reproduction checks. C06's first archive failed its evidence check and has returned to its author for repair. C02, C04 and C07 are still running.
 
 | Author | Games against PASS reported by author | Mean terminal cash verified from records | Controller fresh qualification |
 |---|---:|---:|---|
 | C01 | 128, on 64 seeds in both seats | 201,614.625 | Not run |
 | C03 | 256, on 128 seeds in both seats | 207,077.0234375 | Not run |
 | C05 | 128, on 64 seeds in both seats | 204,386.359375 | Not run |
+| C08 | 256, on 128 seeds in both seats | 201,529.2265625 | Not run |
 
-These panels use different seeds and do not rank the strategies. The controller will test all eight on a fresh shared panel. No competitive acceptance result exists for either candidate.
+These panels use different seeds and do not rank the strategies. The controller will test all eight on a fresh shared panel. No competitive acceptance result exists for any candidate.
 
 C01's saved records contain 930 complete games and 194 settings-count errors. All complete traces reconcile, and its local rebuild passed 620 checks and both-seat reproduction. Its package development mean is 209,684.0833, which differs from the final chat's earlier figure. Pre-restart logs remain missing. The archive also retains inherited parent documents; those are not current C01 evaluation evidence.
 
@@ -20,6 +21,8 @@ The controller checked all 1,897 successful C05 terminal records and replayed ev
 
 C06's report refers to a `research_snapshot` directory that is absent from its archive. Its experiment inventory is empty. The controller has not verified the claimed baseline cash result and has requested actual post-recovery records within the original two-hour deadline. The incomplete archive remains preserved.
 
+C08's 2,862 attempts and 111 declared panels reconcile with zero game errors. The controller replayed all 540 supplied full traces, covering 388,260 transitions. Its rebuild and test suites passed; both local development games reproduce all actions and terminal cash. Two compiler interruptions remain recorded separately from game outcomes.
+
 Original archives preserve each author's source, build instructions, English descriptions, evaluation settings and complete supplied records. Controller verification packages preserve the audit scripts, local runtime, build receipts and reproduction evidence. Used author seeds join the shared exclusion record before controller evaluation.
 
 ## Archive identities
@@ -30,7 +33,8 @@ Original archives preserve each author's source, build instructions, English des
 | C03_round1_strategy.zip | 33,930,565 | c5e95c87c27085af1d3c2a8fab268583af0ad29b2cd05eda34f34674f3c3cc2f |
 | C05_round1_strategy.zip | 133,606,945 | 93397be0a56b7ca8f27c4a6d4b3a1f9b70b1c6115472bda97629b18b5a43f74f |
 | C06_round1_strategy.zip, incomplete | 2,583,667 | d30e9f251449dc84a7efbd53f564efec6c2c2340ef52e45348376fccfef35bdd |
-| C08_round1_strategy.zip, under review | 54,433,128 | 098299ff6df8c921116558bc8274615bc888bf48e53f4d417c69ade848bea896 |
+| C08_round1_strategy.zip | 54,433,128 | 098299ff6df8c921116558bc8274615bc888bf48e53f4d417c69ade848bea896 |
 | C01_CONTROLLER_VERIFICATION.zip | 1,371,638 | 8ecc0d1f0f0a80ecb00fddd050a19e303fc0e50fbb93d7dbb3aa11152b17cd13 |
 | C03_CONTROLLER_VERIFICATION.zip | 1,530,545 | ea751c49b4817b0821d1ccea1da669a6dd221d347a357e56a4461af99de603e1 |
 | C05_CONTROLLER_VERIFICATION.zip | 2,315,087 | e4a73d84bbde7b214a2baebd4143c0b8e9da9be1faff2f7304a603ecba2ccdaf |
+| C08_CONTROLLER_VERIFICATION.zip | 2,370,131 | 2d8d68de9e38b1e76aaa0231b56722c113d404c5e9fd1025696524a6595aa674 |
