@@ -1,19 +1,19 @@
 # Round 1 author deliveries
 
-All eight ChatGPT 6 Pro author rounds have ended. C01, C03, C05, repaired C06 and C08 passed source, record, build and development reproduction checks. C02 also passed import checks, including verification of its failed holdout. C07 is under review. C04 recovered only the unchanged input archive; the controller rebuilt and smoke-tested that parent fallback. C04 has no surviving evidence of new author work.
+All eight ChatGPT 6 Pro author rounds have ended. C01, C03, C05, repaired C06 and C08 passed source, record, build and development reproduction checks. C02 also passed import checks, including verification of its failed holdout. C07 also passed import checks. All eight surviving entries are ready for the shared controller panel. C04 recovered only the unchanged input archive; the controller rebuilt and smoke-tested that parent fallback. C04 has no surviving evidence of new author work.
 
 | Author | Author economic panel | Mean terminal cash | Fresh controller qualification |
 |---|---:|---:|---|
-| C01 | 128 games, 64 seeds | 201,614.625 | Pending |
-| C02 | 64 holdout games, 32 seeds | 191,950.71875 (below threshold) | Pending |
-| C03 | 256 games, 128 seeds | 207,077.0234375 | Pending |
-| C04 | No surviving current records | Unverified | Pending |
-| C05 | 128 games, 64 seeds | 204,386.359375 | Pending |
-| C06 | 64 recovery games, 32 seeds | 204,465.921875 | Pending |
-| C07 | 16 recovery games, 8 seeds | 206,421.25 (author report) | Pending |
-| C08 | 256 games, 128 seeds | 201,529.2265625 | Pending |
+| C01 | 128 games, 64 seeds | 201,614.625 | Running |
+| C02 | 64 holdout games, 32 seeds | 191,950.71875 (below threshold) | Running |
+| C03 | 256 games, 128 seeds | 207,077.0234375 | Running |
+| C04 | No surviving current records | Unverified | Running |
+| C05 | 128 games, 64 seeds | 204,386.359375 | Running |
+| C06 | 64 recovery games, 32 seeds | 204,465.921875 | Running |
+| C07 | 16 recovery games, 8 seeds | 206,421.25 | Running |
+| C08 | 256 games, 128 seeds | 201,529.2265625 | Running |
 
-These author panels use different seeds and cannot rank strategies. The shared controller panel will test all eight surviving entries on 16 newly generated seeds in both seats. No competitive acceptance result exists.
+These author panels use different seeds and cannot rank strategies. The shared controller panel is running all eight surviving entries on 16 newly generated seeds in both seats: 256 games with four workers and full replays. All source hashes were frozen before the draw; it excludes 820 known seeds. The qualification mean must reach 200,000 across all 32 complete games per entry. No competitive acceptance result exists.
 
 C01 supplies 930 complete traces and 194 configuration errors. All complete traces reconcile; 620 checks and both-seat local reproduction pass. Its saved development mean differs from its stale final-chat figure. Pre-restart logs are missing, and inherited parent receipts remain separate from current evidence.
 
@@ -27,7 +27,7 @@ C05 supplies 1,897 complete records and eight configuration failures. The contro
 
 C06's first archive omitted its claimed research directory and remains preserved as a failed delivery. Its repaired archive withdraws that unsupported claim and contains 70 complete replays (50,330 transitions), including six duplicate checks, plus 16 failed launches. The mandatory 16-game recovery panel averaged 196,455.375; a predeclared 48-game expansion averaged 207,136.104167. The unchanged policy averaged 204,465.921875 across all 64 economic games. Source, replay, build, API/reset and both-seat reproduction checks pass. Earlier logs and seeds remain unknown.
 
-C07 lost its first generation and recovered no new source or earlier records. It reports an unchanged parent rebuild, 18 full replays including two smoke games, and one interrupted attempt. Controller verification is pending. C04, C06 and C07 are parent fallbacks; eight chats did not produce eight distinct strategies.
+C07 lost its first generation and recovered no new source or earlier records. It reports an unchanged parent rebuild, 18 full replays including two smoke games, and one interrupted attempt. All 18 full replays (12,942 transitions), one interrupted attempt, source identity, build, seven entry checks and both-seat full-action reproduction were verified. C04, C06 and C07 are parent fallbacks; eight chats did not produce eight distinct strategies.
 
 C08's 2,862 attempts and 111 panels reconcile with zero game errors. All 540 supplied traces (388,260 transitions) replay exactly. Local build, tests and both-seat reproduction pass. Two compiler interruptions remain recorded separately.
 
@@ -50,6 +50,7 @@ Original archives preserve all supplied source, descriptions, settings and resul
 | C06_CONTROLLER_VERIFICATION.zip | 1,094,540 | 0bce28b3aab716a214f525575d76ef318d561a29e1799e7246fb656e5caa05f9 |
 | C06_round1_repaired_evidence.zip | 71,527,816 | 762423049128ed5d7a6e1165b7fa99d70e75deb17e15d454a381011f48f0cc33 |
 | C06_round1_strategy.zip | 2,583,667 | d30e9f251449dc84a7efbd53f564efec6c2c2340ef52e45348376fccfef35bdd |
+| C07_CONTROLLER_VERIFICATION.zip | 1,090,795 | 95e52ac141d250f9ea91285f1967c78a7ae195683714447d0cd92907e6ab0626 |
 | C07_round1_strategy.zip | 19,403,675 | e2690fe5ce1cb1dcf62ad2f1407daa8a28dfe45cceed0ecd0436b7657cee8105 |
 | C08_CONTROLLER_VERIFICATION.zip | 2,370,131 | 2d8d68de9e38b1e76aaa0231b56722c113d404c5e9fd1025696524a6595aa674 |
 | C08_round1_strategy.zip | 54,433,128 | 098299ff6df8c921116558bc8274615bc888bf48e53f4d417c69ade848bea896 |

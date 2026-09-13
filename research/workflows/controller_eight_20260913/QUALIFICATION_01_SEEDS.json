@@ -1,0 +1,25 @@
+{
+  "created_unix": 1789326110.1169653,
+  "history_limit": "All recoverable imported and author seeds, plus controller smoke. C01/C04/C06/C07 lost histories remain unknown. New draws exclude every known seed; complete prior-use coverage cannot be proved.",
+  "known_exclusion_count": 820,
+  "known_history_sha256": "8e03b9d0d91a4c1add62e158479578a8a6618acf2b6f1cd3720e34b6e98f65eb",
+  "method": "OS-backed secrets.randbelow(2**31), matching the official fallback seed range; reject all known historical/author seeds and duplicates; draw after all eight source freezes",
+  "seeds": [
+    1781448506,
+    1681080428,
+    967718147,
+    1856155813,
+    148094548,
+    180752382,
+    370413548,
+    383365175,
+    337943030,
+    702093297,
+    320211102,
+    140008426,
+    219026998,
+    1501860085,
+    2027896586,
+    1658182076
+  ]
+}
