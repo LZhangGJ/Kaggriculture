@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T15:44:37.727665+00:00",
+  "finished_utc": "2026-09-13T15:45:06.532212+00:00",
+  "elapsed_seconds": 28.804554022000048,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/fixed_audit_compile.time",
+    "timeout",
+    "--kill-after=5s",
+    "120s",
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/a06_r12_r2_work/tools/compile_audit.py"
+  ],
+  "returncode": 0
+}

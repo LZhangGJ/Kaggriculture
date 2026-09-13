@@ -1,0 +1,12 @@
+{
+  "scope": "Own-visible invariant checks and 24-tick declared public-flow forecast exercises. No new games, opponents, win rate, or recovered cash.",
+  "new_games": 0,
+  "fixture_states": 35,
+  "original_candidates_checked": 193,
+  "deferred_candidates_checked": 166,
+  "funded_commitments_checked": 7818,
+  "conditional_branch_exercises": 42,
+  "conditional_steps": 1008,
+  "rss_kib": 246508,
+  "seconds": 53.23906513299994
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/a06_r6_r2_work/candidate/tests/run_units.py",
+    "--fixtures",
+    "/mnt/data/a06_r6_r2_work/input",
+    "--out",
+    "/mnt/data/a06_r6_r2_work/analysis/choice_units_final"
+  ],
+  "started_utc": "2026-09-13T15:42:27.211946+00:00",
+  "timeout_seconds": 180,
+  "parent_monitor_pid": 1000
+}

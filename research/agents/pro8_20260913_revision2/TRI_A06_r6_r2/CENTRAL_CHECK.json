@@ -1,0 +1,60 @@
+{
+  "checked_utc": "2026-09-13T16:14:14.049178+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "76bbf478998777803188074ee5cf205f9c2d519767a52c65f33e389589a1beda",
+  "native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "native_path": "policy/a06.so",
+  "manifest_files_verified": 451,
+  "source_files_verified": 40,
+  "changed_production_files": [
+    "policy/search.hpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "b91fe6ea2752e15a9cb3adb4c3f8e1a5a6314b095efff34edcc846dfdfef2a38",
+  "compiler_parity_observations": 5033,
+  "units": {
+    "scope": "Own-visible invariant checks and 24-tick declared public-flow forecast exercises. No new games, opponents, win rate, or recovered cash.",
+    "new_games": 0,
+    "official_prefix_checks": 37,
+    "official_prefix_passes": 37,
+    "fixture_states": 35,
+    "original_candidates_checked": 193,
+    "deferred_candidates_checked": 130,
+    "funded_commitments_checked": 5810,
+    "conditional_branch_exercises": 37,
+    "conditional_steps": 888,
+    "rss_kib": 175900,
+    "seconds": 67.40856692
+  },
+  "real_diagnostic_games": 4,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "market_smart_v8_2535322_seat1",
+      "parent_margin": -15328.0,
+      "revision2_margin": -15328.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_1623731725_seat1",
+      "parent_margin": -5695.0,
+      "revision2_margin": -1936.0,
+      "same_actions": false
+    },
+    {
+      "id": "thomas_955_v2_1395450535_seat1",
+      "parent_margin": 129.0,
+      "revision2_margin": 129.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_2029247155_seat0",
+      "parent_margin": 35.0,
+      "revision2_margin": 35.0,
+      "same_actions": true
+    }
+  ],
+  "seconds": 161.095339664
+}

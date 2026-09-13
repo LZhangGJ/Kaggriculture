@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T15:53:06.491200+00:00",
+  "finished_utc": "2026-09-13T15:53:34.879492+00:00",
+  "elapsed_seconds": 28.388298891999966,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/independent_rebuild.time",
+    "timeout",
+    "--kill-after=5s",
+    "120s",
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/a06_r12_r2_work/independent_build/build.py"
+  ],
+  "returncode": 0
+}

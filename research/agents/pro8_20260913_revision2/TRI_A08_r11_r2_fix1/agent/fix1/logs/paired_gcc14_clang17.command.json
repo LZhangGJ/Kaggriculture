@@ -1,0 +1,15 @@
+[
+  "python",
+  "candidate/tests/compare_saved_entries.py",
+  "--left",
+  "/mnt/data/fix1_work/candidate/main.py",
+  "--right",
+  "/mnt/data/fix1_work/candidate/main.py",
+  "--right-library",
+  "/mnt/data/fix1_work/repro/fix1_clang17.so",
+  "--traces",
+  "/mnt/data/fix1_work/candidate/evidence/own_traces",
+  "--out",
+  "/mnt/data/fix1_work/repro/paired_gcc14_clang17",
+  "--require-exact"
+]

@@ -1,0 +1,1 @@
+TEST-ONLY INJECTION, never production: corrupt the rich feed bit in the validator copy after reading native output. Expect the build transaction to reject validation and preserve the preexisting good .so. This is not a GCC13 miscompilation reproduction.

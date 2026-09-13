@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-13T15:40:39.351578+00:00",
+  "finished_utc": "2026-09-13T15:40:54.897201+00:00",
+  "elapsed_seconds": 15.545630805999963,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/prefix_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "90s",
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/a06_r12_r2_work/candidate/tests/prefix_entry.py",
+    "--parent",
+    "/mnt/data/a06_r12_r2_work/parent/main.py",
+    "--candidate",
+    "/mnt/data/a06_r12_r2_work/candidate/main.py",
+    "--feedback",
+    "/mnt/data/a06_r12_r2_work/input",
+    "--out",
+    "/mnt/data/a06_r12_r2_work/logs/prefix_v1.json"
+  ],
+  "returncode": 0
+}

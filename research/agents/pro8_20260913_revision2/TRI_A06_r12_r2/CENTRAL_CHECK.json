@@ -1,0 +1,141 @@
+{
+  "checked_utc": "2026-09-13T16:33:12.542372+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "0bffa7ee3bdcf27c8683b4ae528c92adc587109ac2fb34f4e950d110a0ce3d87",
+  "native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "native_path": "policy/a06.so",
+  "source_files_verified": 48,
+  "changed_production_files": [
+    "main.py",
+    "policy/executor/ongoing_labor_reserve.hpp",
+    "policy/executor/policy.hpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "a39a23583cc6c2551a57726d7cebe48b974ee51091c266f08a165361e6b78d0f",
+  "compiler_parity_observations": 5033,
+  "unit_assertions": 18403,
+  "staged_suite": {
+    "new_games": 0,
+    "tests": [
+      {
+        "name": "units",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/run_units.py"
+        ],
+        "returncode": 0,
+        "seconds": 3.680926784999997
+      },
+      {
+        "name": "entry",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/entry_smoke.py",
+          "--agent",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/main.py",
+          "--feedback",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/evidence/input",
+          "--out",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/entry.json"
+        ],
+        "returncode": 0,
+        "seconds": 3.9310382299999844
+      },
+      {
+        "name": "prefix",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/prefix_entry.py",
+          "--parent",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/provenance/parent_agent/main.py",
+          "--candidate",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/main.py",
+          "--feedback",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/evidence/input",
+          "--out",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/prefix.json"
+        ],
+        "returncode": 0,
+        "seconds": 19.783144858999975
+      },
+      {
+        "name": "atomic_market",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/market_reservation.py",
+          "--feedback",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/evidence/input",
+          "--unit-json",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/units.stdout",
+          "--out",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/atomic_market.json"
+        ],
+        "returncode": 0,
+        "seconds": 0.6207210579999867
+      },
+      {
+        "name": "audit_build",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/build_audit.py",
+          "--parent",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/provenance/parent_agent",
+          "--out",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/fixed_core_audit.so"
+        ],
+        "returncode": 0,
+        "seconds": 32.77476600099999
+      },
+      {
+        "name": "fixed_routes",
+        "command": [
+          "/usr/bin/python3",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/tests/fixed_execution.py",
+          "--parent",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/provenance/parent_agent/main.py",
+          "--audit-lib",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/fixed_core_audit.so",
+          "--feedback",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/work/evidence/input",
+          "--unit-json",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/units.stdout",
+          "--out",
+          "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r12_r2/central/suite/fixed_routes.json"
+        ],
+        "returncode": 0,
+        "seconds": 2.47793691199999
+      }
+    ]
+  },
+  "real_diagnostic_games": 4,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "market_smart_v8_772192291_seat1",
+      "parent_margin": -14121.0,
+      "revision2_margin": -219.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_852484341_seat0",
+      "parent_margin": -14602.0,
+      "revision2_margin": 3944.0,
+      "same_actions": false
+    },
+    {
+      "id": "aurax_reactive_v1_521596133_seat0",
+      "parent_margin": 42.0,
+      "revision2_margin": 7795.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_1123506227_seat0",
+      "parent_margin": 67.0,
+      "revision2_margin": 67.0,
+      "same_actions": false
+    }
+  ],
+  "seconds": 222.75110059799997
+}

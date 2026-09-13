@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "case": "market_smart_v8_772192291_seat1",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "ahmed_v27_120540881_seat0",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "submission_56149565_852484341_seat0",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "aurax_reactive_v1_120540881_seat0",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "soil_v219g_772192291_seat1",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "aurax_reactive_v1_521596133_seat0",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    },
+    {
+      "case": "submission_56149565_1123506227_seat0",
+      "root_module_agent_calls": 48,
+      "exact": 48
+    }
+  ],
+  "exact_calls": 336,
+  "reset_determinism": true,
+  "explicit_rejections": [
+    {
+      "case": "bad_clock",
+      "exception": "RuntimeError",
+      "text": "ERROR: clock/seat"
+    },
+    {
+      "case": "terminal_step",
+      "exception": "RuntimeError",
+      "text": "ERROR: clock/seat"
+    },
+    {
+      "case": "bad_inventory_count",
+      "exception": "RuntimeError",
+      "text": "ERROR: inventory size"
+    }
+  ],
+  "native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "seconds": 2.5336004660000526,
+  "new_games": 0
+}

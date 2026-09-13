@@ -1,0 +1,11 @@
+{
+  "name": "fix1_final_gcc14_build",
+  "command": [
+    "python",
+    "candidate/build.py"
+  ],
+  "start_utc": "2026-09-13T16:41:27.563740+00:00",
+  "end_utc": "2026-09-13T16:41:56.679835+00:00",
+  "wall_seconds": 29.116104629000006,
+  "exit_code": 0
+}

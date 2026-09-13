@@ -1,0 +1,1 @@
+Initial outer-tool call timed out at 1 second; build artifact/receipt exists but /usr/bin/time receipt was interrupted. Repeating bounded build for complete timing.

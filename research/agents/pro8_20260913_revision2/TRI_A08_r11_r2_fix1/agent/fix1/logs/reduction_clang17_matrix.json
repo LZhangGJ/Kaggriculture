@@ -1,0 +1,15 @@
+{
+  "name": "reduction_clang17_matrix",
+  "command": [
+    "python",
+    "candidate/tests/repro_matrix.py",
+    "--cxx",
+    "clang++",
+    "--out",
+    "/mnt/data/fix1_work/repro/matrix_clang17"
+  ],
+  "start_utc": "2026-09-13T16:46:53.903879+00:00",
+  "end_utc": "2026-09-13T16:47:10.871228+00:00",
+  "wall_seconds": 16.967356536999887,
+  "exit_code": 0
+}

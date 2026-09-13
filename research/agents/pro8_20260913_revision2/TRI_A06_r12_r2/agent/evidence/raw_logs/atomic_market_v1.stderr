@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/data/a06_r12_r2_work/candidate/tests/market_reservation.py", line 60, in <module>
+    assert negative['protected']['hands']<7;checks+=1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

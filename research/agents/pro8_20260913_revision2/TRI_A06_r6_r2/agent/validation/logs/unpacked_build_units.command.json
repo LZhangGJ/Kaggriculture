@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/a06_r6_r2_work/preflight_unpacked/build.py",
+    "--out",
+    "/mnt/data/a06_r6_r2_work/preflight_rebuilt.so",
+    "--unit"
+  ],
+  "started_utc": "2026-09-13T15:52:10.424560+00:00",
+  "timeout_seconds": 240,
+  "parent_monitor_pid": 1490
+}

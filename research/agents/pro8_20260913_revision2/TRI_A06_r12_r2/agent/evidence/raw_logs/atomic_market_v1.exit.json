@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-09-13T15:42:04.393486+00:00",
+  "finished_utc": "2026-09-13T15:42:05.258952+00:00",
+  "elapsed_seconds": 0.8654727919999914,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/atomic_market_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "30s",
+    "python",
+    "/mnt/data/a06_r12_r2_work/candidate/tests/market_reservation.py",
+    "--feedback",
+    "/mnt/data/a06_r12_r2_work/input",
+    "--unit-json",
+    "/mnt/data/a06_r12_r2_work/logs/units_v1.stdout",
+    "--out",
+    "/mnt/data/a06_r12_r2_work/logs/atomic_market_v1.json"
+  ],
+  "returncode": 1
+}

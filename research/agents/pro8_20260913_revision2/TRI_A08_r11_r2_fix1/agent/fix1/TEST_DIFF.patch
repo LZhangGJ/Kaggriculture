@@ -1,0 +1,366 @@
+--- r2/tests/animal_collection_test.cpp
++++ fix1/tests/animal_collection_test.cpp
+@@ -5,7 +5,7 @@
+ #include <stdexcept>
+ #include <algorithm>
+ using namespace competitive;
+-static long checks=0, brute_cases=0, legacy_value_mismatches=0, path_cases=0;
++static long checks=0, brute_cases=0, legacy_value_mismatches=0, path_cases=0, choice_states=0;
+ static void check(bool b,const char*why){++checks;if(!b)throw std::runtime_error(why);}
+ // Independent finite-horizon enumeration of allowed feed/care choices. Every
+ // next-day credited product/manure must incur its real collection action.
+@@ -21,6 +21,39 @@
+   v+=brute(k,birth,d+1,h,next_bonus,px,work);best=std::max(best,v);
+  }return best;
+ }
++// Every stored score must belong to its stored action, not merely equal an
++// independently optimal value somewhere else in the table. Read all successor
++// scores from the DP but compute action execution/reward independently here.
++static void check_choices(const AnimalServiceDP&dp,int k,int birth,int day,const Flow&px,double work){
++ const int j=k-9;
++ for(int d=day;d<=29;++d)for(int h=0;h<2;++h)for(int b=0;b<held[j];++b){
++  ++choice_states;auto q=dp.choices[d][h][b];const double got=dp.value[d][h][b];
++  check(q.value==got,"choice.value and DP value differ");
++  check((q.feed==0||q.feed==1)&&(q.care==0||q.care==1)&&q.care<=q.feed,"illegal stored service action");
++  if(d==29){check(got==0&&q.feed==0&&q.care==0,"terminal choice/value not zero");continue;}
++  const bool tick=d+1-birth>=afirst[j]&&(d+1-birth-afirst[j])%ainterval[j]==0;
++  const auto action_value=[&](int feed,int care){
++   int nh=feed?0:h+1;if(nh>=2)return 0.;
++   int count=tick?1+(feed?b:0):0;
++   int nb=std::min(held[j]-1,(tick?0:b)+care);
++   double immediate=-feed*px[d][W]-(feed+care)*work+count*px[d+1][product[j]];
++   if(A08_ANIMAL_COLLECTION_LABOR)immediate+=px[d+1][F]-work*(1+int(count>0));
++   else immediate+=std::max(0.,px[d+1][F]-work);
++   return immediate+dp.value[d+1][nh][nb];
++  };
++  check(!(q.care&&b==held[j]-1&&!tick),"stored dominated/forbidden care");
++  check(std::abs(got-action_value(q.feed,q.care))<1e-8,"stored action does not realize its value");
++  int tf=0,tc=0;double optimum=action_value(0,0);
++  for(int feed=0;feed<=1;++feed)for(int care=0;care<=feed;++care){
++   if(care&&b==held[j]-1&&!tick)continue;
++   double v=action_value(feed,care);
++   if(v>optimum+1e-9){optimum=v;tf=feed;tc=care;}
++  }
++  check(q.feed==tf&&q.care==tc,"stored action is not the tie-ordered argmax");
++  check(std::abs(got-optimum)<1e-8,"stored action/value not jointly optimal");
++  if(A08_ANIMAL_COLLECTION_LABOR)check(std::abs(got-brute(k,birth,d,h,b,px,work))<1e-8,"choice-state optimum differs from full enumeration");
++ }
++}
+ static Flow prices(int pattern){
+  Flow p{};
+  for(int d=0;d<30;d++)for(int i=0;i<9;i++){
+@@ -32,7 +65,7 @@
+ }
+ int main(){try{
+  for(int k=9;k<=11;k++)for(int horizon=1;horizon<=5;horizon++)for(int phase=0;phase<4;phase++)for(int pattern=0;pattern<8;pattern++){
+-  int day=29-horizon,birth=std::max(0,day-afirst[k-9]+phase);Flow p=prices(pattern);AnimalServiceDP dp;dp.solve(k,birth,day,p,4.);
++  int day=29-horizon,birth=std::max(0,day-afirst[k-9]+phase);Flow p=prices(pattern);AnimalServiceDP dp;dp.solve(k,birth,day,p,4.);check_choices(dp,k,birth,day,p,4.);
+   for(int h=0;h<2;h++)for(int b=0;b<held[k-9];b++){
+    double truth=brute(k,birth,day,h,b,p,4.);double got=dp.value[day][h][b];++brute_cases;
+    if(std::abs(truth-got)>1e-8)++legacy_value_mismatches;
+@@ -67,7 +100,8 @@
+  for(auto&d:p)d[E]=100;
+  AnimalServiceDP rich;rich.solve(9,21,28,p,4.);check(rich.choices[28][1][0].feed==1,"positive-return maintenance lost");
+  if(A08_ANIMAL_COLLECTION_LABOR)check(rich.value[28][1][0]==65,"profitable service exact value wrong");
++ check_choices(rich,9,21,28,p,4.);
+  check(A08_SALE_FLOOR_DP==1 && A08_SALE_SCHEDULE_DP==1 && A08_PAID_CONTINUATION==1 && A08_LAND_DP_MODE==2 && A08_CROP_PORTFOLIO_MODE==1 && A08_COMPLETE_CROP_STOPS==1,"ancestral feature flags changed");
+  if(!A08_ANIMAL_COLLECTION_LABOR)check(legacy_value_mismatches>0&&labor_mismatch>0&&cashflow_mismatch>0,"legacy defect not detected");
+- std::cout<<"{\"status\":\"PASS\",\"collection_labor_enabled\":"<<A08_ANIMAL_COLLECTION_LABOR<<",\"checks\":"<<checks<<",\"brute_force_cases\":"<<brute_cases<<",\"path_cases\":"<<path_cases<<",\"dp_value_mismatches\":"<<legacy_value_mismatches<<",\"labor_day_mismatches\":"<<labor_mismatch<<",\"stream_value_mismatches\":"<<cashflow_mismatch<<",\"new_games\":0}\n";return 0;
++ std::cout<<"{\"status\":\"PASS\",\"collection_labor_enabled\":"<<A08_ANIMAL_COLLECTION_LABOR<<",\"checks\":"<<checks<<",\"brute_force_cases\":"<<brute_cases<<",\"path_cases\":"<<path_cases<<",\"choice_states\":"<<choice_states<<",\"dp_value_mismatches\":"<<legacy_value_mismatches<<",\"labor_day_mismatches\":"<<labor_mismatch<<",\"stream_value_mismatches\":"<<cashflow_mismatch<<",\"new_games\":0}\n";return 0;
+  }catch(const std::exception&e){std::cerr<<"FAIL: "<<e.what()<<" after "<<checks<<" checks\n";return 1;}}
+--- r2/tests/compare_saved_entries.py
++++ fix1/tests/compare_saved_entries.py
+@@ -0,0 +1,35 @@
++#!/usr/bin/env python3
++"""Paired invocation on fixed own-visible observations. ZERO new matches.
++All old observations after an action divergence remain off-policy probes.
++"""
++from __future__ import annotations
++import argparse,copy,gzip,hashlib,importlib.util,json,pathlib,resource,time
++
++def load(path,name):
++    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--left',type=pathlib.Path,required=True);p.add_argument('--right',type=pathlib.Path,required=True);p.add_argument('--right-library',type=pathlib.Path);p.add_argument('--traces',type=pathlib.Path,required=True);p.add_argument('--out',type=pathlib.Path,required=True);p.add_argument('--require-exact',action='store_true');a=p.parse_args()
++    a.out.mkdir(parents=True,exist_ok=False);summaries=[];left=load(a.left.resolve(),'left_entry');right=load(a.right.resolve(),'right_entry');tick=time.perf_counter()
++    for trace_path in sorted(a.traces.glob('*.json.gz')):
++        trace=json.loads(gzip.decompress(trace_path.read_bytes()));rows=[];left.reset();right.reset()
++        alternative=right.create_agent(binary_path=a.right_library.resolve()) if a.right_library else None
++        try:
++            for i,obs in enumerate(trace['observations'][:719]):
++                t=time.perf_counter();x=left.agent(copy.deepcopy(obs),trace['configuration']);lt=time.perf_counter()-t
++                t=time.perf_counter();y=alternative(copy.deepcopy(obs),trace['configuration']) if alternative else right.agent(copy.deepcopy(obs),trace['configuration']);rt=time.perf_counter()-t
++                rows.append({'step':i,'same':x==y,'left_seconds':lt,'right_seconds':rt,'left_action':x,'right_action':y})
++        finally:
++            left.reset();right.reset()
++            if alternative:alternative.close()
++        mismatch=[r['step'] for r in rows if not r['same']]
++        raw=json.dumps(rows,separators=(',',':'),allow_nan=False).encode();name=trace_path.name.removesuffix('.json.gz')
++        (a.out/(name+'.json.gz')).write_bytes(gzip.compress(raw,mtime=0))
++        lh=hashlib.sha256(json.dumps([r['left_action'] for r in rows],sort_keys=True,separators=(',',':')).encode()).hexdigest()
++        rh=hashlib.sha256(json.dumps([r['right_action'] for r in rows],sort_keys=True,separators=(',',':')).encode()).hexdigest()
++        summary={'case':name,'calls':len(rows),'exact':len(rows)-len(mismatch),'first_difference':mismatch[0] if mismatch else None,'left_action_sha256':lh,'right_action_sha256':rh,'left_seconds':sum(r['left_seconds'] for r in rows),'right_seconds':sum(r['right_seconds'] for r in rows)}
++        summaries.append(summary);print(json.dumps(summary),flush=True)
++    result={'status':'PASS' if all(x['exact']==x['calls'] for x in summaries) else 'DIFFERENCES','left':str(a.left),'right':str(a.right),'right_library_override':str(a.right_library) if a.right_library else None,'scope':'paired saved-own-observation invocation; not closed-loop game verification','calls_per_variant':sum(x['calls'] for x in summaries),'exact':sum(x['exact'] for x in summaries),'new_games':0,'seconds':time.perf_counter()-tick,'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'cases':summaries}
++    (a.out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
++    if a.require_exact and result['status']!='PASS':raise SystemExit(1)
++if __name__=='__main__':main()
+--- r2/tests/native_choice_gate.py
++++ fix1/tests/native_choice_gate.py
+@@ -0,0 +1,111 @@
++#!/usr/bin/env python3
++"""Independent Bellman/action audit of the EXACT production .so; no games.
++
++Integer diagnostic prices retain the original 1e-8 tolerance. The central
++rich assertion remains exact. A deliberate feed-bit mutation proves that
++value-only checking is not being mistaken for action correctness.
++"""
++from __future__ import annotations
++import argparse,ctypes,functools,hashlib,json,math,pathlib,time
++FIRST=(4,8,6); INTERVAL=(1,2,3); HELD=(4,6,6); PRODUCTS=(5,6,7)
++
++def price_pattern(pattern: int)->list[list[float]]:
++    return [[float(1 if pattern==0 else (25 if i==0 else 2 if i==8 else 30) if pattern==1 else (25 if i==0 else 100 if i==8 else 200) if pattern==2 else 1+(d*37+i*71+pattern*13+pattern*d*3)%211) for i in range(9)] for d in range(30)]
++
++def audit(library: pathlib.Path, enabled: int=1)->dict:
++    start=time.perf_counter();lib=ctypes.CDLL(str(library.resolve()))
++    snapshot=lib.td_service_dp_snapshot
++    snapshot.argtypes=[ctypes.c_int,ctypes.c_int,ctypes.c_int,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t,ctypes.c_double,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t]
++    snapshot.restype=ctypes.c_int
++    checks=states=solves=0;digest=hashlib.sha256()
++    def check(ok,why):
++        nonlocal checks
++        checks+=1
++        if not ok:raise AssertionError(why)
++    def load(k,birth,day,px,work):
++        nonlocal solves
++        inp=(ctypes.c_double*270)(*(v for row in px for v in row));out=(ctypes.c_double*1440)()
++        check(snapshot(k,birth,day,inp,270,work,out,1440)==0,'native snapshot rejected valid state');solves+=1
++        return list(out)
++    def get(table,d,h,b):
++        n=((d*2+h)*6+b)*4;return table[n:n+4]
++    def transition(k,birth,d,h,b,feed,care,px,work):
++        # Action execution is independent of the production loop/lambda. A
++        # second unfed night retires the animal before any next-day reward.
++        j=k-9;nh=0 if feed else h+1
++        if nh>=2:return (0.,None)
++        production=d+1-birth>=FIRST[j] and (d+1-birth-FIRST[j])%INTERVAL[j]==0
++        quantity=(1+(b if feed else 0)) if production else 0
++        next_b=min(HELD[j]-1,(0 if production else b)+care)
++        reward=-feed*px[d][0]-(feed+care)*work+quantity*px[d+1][PRODUCTS[j]]
++        if enabled:reward+=px[d+1][8]-work*(1+int(quantity>0))
++        else:reward+=max(0.,px[d+1][8]-work)
++        return reward,(d+1,nh,next_b)
++    def validate(k,birth,day,px,work,table):
++        nonlocal states
++        j=k-9
++        @functools.lru_cache(None)
++        def oracle(d,h,b):
++            if d==29:return 0.,0,0
++            production=d+1-birth>=FIRST[j] and (d+1-birth-FIRST[j])%INTERVAL[j]==0
++            best=(-1e100,0,0)
++            for feed,care in ((0,0),(1,0),(1,1)):
++                if care and b>=HELD[j]-1 and not production:continue
++                reward,nxt=transition(k,birth,d,h,b,feed,care,px,work)
++                candidate=reward+(oracle(*nxt)[0] if nxt else 0.)
++                if candidate>best[0]+1e-9:best=candidate,feed,care
++            return best
++        for d in range(day,30):
++            for h in (0,1):
++                for b in range(HELD[j]):
++                    states+=1;v,qv,feed,care=get(table,d,h,b);truth,tf,tc=oracle(d,h,b)
++                    label=f'kind={k} placed={birth} day={d} hunger={h} bonus={b} work={work}'
++                    check(all(math.isfinite(x) for x in (v,qv,feed,care)),'nonfinite '+label)
++                    check(abs(v-qv)<1e-8,'value != Choice.value '+label)
++                    check((feed,care)==(tf,tc),'action != independently selected argmax '+label)
++                    check(abs(v-truth)<1e-8,'value != independent optimum '+label)
++                    if d<29:
++                        reward,nxt=transition(k,birth,d,h,b,int(feed),int(care),px,work)
++                        from_action=reward+(get(table,*nxt)[0] if nxt else 0.)
++                        check(abs(v-from_action)<1e-8,'stored action does not realize value '+label)
++                    # Independently roll out the whole stored policy, not just
++                    # one Bellman edge or its chosen score.
++                    total=0.;state=(d,h,b)
++                    while state is not None and state[0]<29:
++                        sd,sh,sb=state;_,_,f,c=get(table,sd,sh,sb)
++                        reward,state=transition(k,birth,sd,sh,sb,int(f),int(c),px,work)
++                        total+=reward
++                    check(abs(v-total)<1e-8,'policy rollout does not realize value '+label)
++        digest.update(json.dumps(table,separators=(',',':'),allow_nan=False).encode())
++    for k in (9,10,11):
++        for horizon in range(1,6):
++            day=29-horizon
++            for phase in range(4):
++                birth=max(0,day-FIRST[k-9]+phase)
++                for pattern in range(8):
++                    px=price_pattern(pattern);table=load(k,birth,day,px,4.);validate(k,birth,day,px,4.,table)
++        for day in (0,7,14,29):
++            for pattern in (0,1,2,7):
++                px=price_pattern(pattern);table=load(k,0,day,px,1.2);validate(k,0,day,px,1.2,table)
++    # Preserve the exact central negative and positive controls.
++    px=price_pattern(1);poor=load(9,21,28,px,4.)
++    if enabled:check(get(poor,28,1,0)==[0.,0.,0.,0.],'exact negative maintenance assertion')
++    for row in px:row[5]=100.
++    rich=load(9,21,28,px,4.);want=65. if enabled else 71.
++    check(get(rich,28,1,0)==[want,want,1.,0.],'exact positive maintenance assertion')
++    validate(9,21,28,px,4.,rich)
++    validated_states=states;validated_checks=checks
++    mutated=rich.copy();mutated[((28*2+1)*6)*4+2]=0.
++    try:validate(9,21,28,px,4.,mutated)
++    except AssertionError as error:
++        mutation_message=str(error);check('action != independently selected argmax' in mutation_message,'unexpected mutation result')
++    else:raise AssertionError('central feed-bit mutation escaped gate')
++    return {'status':'PASS','library':str(library.resolve()),'native_sha256':hashlib.sha256(library.read_bytes()).hexdigest(),'animal_collection_labor':enabled,'table_solves':solves,'states_validated':validated_states,'checks_passed_before_mutation':validated_checks,'mutation_prefix_states':states-validated_states,'checks_including_expected_mutation_failure':checks,'table_digest':digest.hexdigest(),'rich':get(rich,28,1,0),'negative':get(poor,28,1,0),'mutation_rejected':True,'mutation_message':mutation_message,'seconds':time.perf_counter()-start,'new_games':0}
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--library',type=pathlib.Path,required=True);p.add_argument('--enabled',type=int,choices=(0,1),default=1);p.add_argument('--out',type=pathlib.Path,required=True);args=p.parse_args()
++    try:result=audit(args.library,args.enabled)
++    except Exception as error:result={'status':'FAIL','error':str(error),'library':str(args.library),'new_games':0}
++    args.out.parent.mkdir(parents=True,exist_ok=True);args.out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
++    raise SystemExit(result['status']!='PASS')
++if __name__=='__main__':main()
+--- r2/tests/repro_matrix.py
++++ fix1/tests/repro_matrix.py
+@@ -0,0 +1,38 @@
++#!/usr/bin/env python3
++"""Offline reduction/optimization matrix. Original failures are diagnostic.
++
++The original standalone is a reduction candidate, not a claim that GCC13 was
++locally available or that the reduction reproduced the central failure here.
++The unmodified original full unit is also run to preserve the known trigger.
++"""
++from __future__ import annotations
++import argparse,datetime,json,os,pathlib,shutil,subprocess,time
++ROOT=pathlib.Path(__file__).resolve().parents[1]
++
++def main():
++ p=argparse.ArgumentParser();p.add_argument('--cxx',default='g++');p.add_argument('--out',type=pathlib.Path,required=True);p.add_argument('--reduced-only',action='store_true');a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False)
++ if shutil.which(a.cxx) is None:
++  result={'status':'COMPILER_UNAVAILABLE','compiler':a.cxx,'new_games':0};(a.out/'RESULT.json').write_text(json.dumps(result,indent=2));print(json.dumps(result));raise SystemExit(2)
++ rec=json.loads((ROOT/'policy/tri_a08_r11_r2_fix1.BUILD.json').read_text());base=[f for f in rec.get('flags',rec['command'][1:-5]) if f not in ('-shared','-fPIC','-Wl,-Bsymbolic')]
++ repro=ROOT/'fix1/repro' if (ROOT/'fix1/repro').exists() else ROOT.parent/'repro'
++ cases=[('original_standalone',repro/'original_standalone.cpp',None),('boundary_only',repro/'original_standalone_boundary.cpp',None),('argmax_only',repro/'fixed_standalone_no_boundary.cpp',None),('fixed_standalone',repro/'fixed_standalone.cpp',None)]
++ if not a.reduced_only:cases.append(('original_full_unit',ROOT/'history/r2/animal_collection_test.cpp',ROOT/'reference/r2'))
++ rows=[];start=time.perf_counter();env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1')
++ for name,source,include in cases:
++  for mode in ('O3','O0','O1_asan_ubsan'):
++   flags=base.copy()
++   if mode=='O0':flags=[f for f in flags if f!='-O3']+['-O0']
++   if mode=='O1_asan_ubsan':flags=[f for f in flags if f not in ('-O3','-DNDEBUG')]+['-O1','-g','-fsanitize=address,undefined','-fno-sanitize-recover=all','-fno-omit-frame-pointer']
++   target=a.out/(name+'_'+mode);extra=['-I',str(include),str(include/'policy/executor/vendor/simulator.cpp')] if include else ['-Wall','-Wextra','-Wpedantic']
++   cmd=[a.cxx,*flags,*extra,str(source),'-o',str(target)];(a.out/(target.name+'.command.json')).write_text(json.dumps(cmd,indent=2)+'\n')
++   outputs={}
++   for phase,command,limit in (('build',cmd,50),('run',[str(target)],15)):
++    if phase=='run' and outputs['build']!=0:outputs['run']=None;break
++    with (a.out/(target.name+'.'+phase+'.stdout')).open('w') as o,(a.out/(target.name+'.'+phase+'.stderr')).open('w') as e:
++     done=subprocess.run(['/usr/bin/time','-v','-o',str(a.out/(target.name+'.'+phase+'.time')),'timeout','-k','3s',str(limit)+'s',*command],stdout=o,stderr=e,env=env)
++    outputs[phase]=done.returncode
++   row={'case':name,'mode':mode,'source':str(source),'command':cmd,'results':outputs};rows.append(row);print(json.dumps(row),flush=True)
++ fixed_ok=all(row['results']=={'build':0,'run':0} for row in rows if row['case']=='fixed_standalone')
++ result={'status':'FIXED_CASES_PASS' if fixed_ok else 'FIXED_CASE_FAILURE','compiler':subprocess.check_output([a.cxx,'--version'],text=True).splitlines()[0],'rows':rows,'seconds':time.perf_counter()-start,'new_games':0,'limitation':'Original reductions are diagnostic. A compiler that does not fail on original source cannot establish root cause of central GCC13 failure.'}
++ (a.out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True);raise SystemExit(not fixed_ok)
++if __name__=='__main__':main()
+--- r2/tests/run_checks.py
++++ fix1/tests/run_checks.py
+@@ -9,11 +9,11 @@
+ ROOT=pathlib.Path(__file__).resolve().parents[1]
+ PROD=ROOT/'candidate' if (ROOT/'candidate').exists() else ROOT
+ EVIDENCE=ROOT/'input' if (ROOT/'input').exists() else ROOT/'evidence'
+-p=argparse.ArgumentParser();p.add_argument('--sanitize',action='store_true');p.add_argument('--saved-limit',type=int,choices=[48,719]);a=p.parse_args()
++p=argparse.ArgumentParser();p.add_argument('--sanitize',action='store_true');p.add_argument('--cxx',default=None);p.add_argument('--library',type=pathlib.Path);p.add_argument('--saved-limit',type=int,choices=[48,719]);a=p.parse_args()
+ stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');OUT=ROOT/'rerun'/stamp;OUT.mkdir(parents=True)
+ ENV=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1')
+-receipt=json.loads((PROD/'policy/tri_a08_r11_r2.BUILD.json').read_text())
+-base=[f for f in receipt['command'][1:-5] if f not in ('-fPIC','-shared','-Wl,-Bsymbolic') and not f.startswith('-DA08_ANIMAL_COLLECTION_LABOR=')]
++receipt=json.loads((PROD/'policy/tri_a08_r11_r2_fix1.BUILD.json').read_text())
++base=[f for f in receipt.get('flags',receipt['command'][1:-5]) if f not in ('-fPIC','-shared','-Wl,-Bsymbolic') and not f.startswith('-DA08_ANIMAL_COLLECTION_LABOR=')]
+ results=[]
+ def run(name,command,seconds=40,stdout_path=None):
+  (OUT/(name+'.command.json')).write_text(json.dumps(command,indent=2)+'\n')
+@@ -25,7 +25,7 @@
+  flags=[*base,f'-DA08_ANIMAL_COLLECTION_LABOR={enabled}','-I',str(PROD)]
+  if sanitize:flags=[x for x in flags if x not in ('-O3','-DNDEBUG')]+['-O1','-g','-fsanitize=address,undefined','-fno-sanitize-recover=all','-fno-omit-frame-pointer']
+  out=OUT/name
+- run(name+'_build',[receipt['command'][0],*flags,str(ROOT/'tests'/source),str(PROD/'policy/executor/vendor/simulator.cpp'),'-o',str(out)])
++ run(name+'_build',[a.cxx or receipt['command'][0],*flags,str(ROOT/'tests'/source),str(PROD/'policy/executor/vendor/simulator.cpp'),'-o',str(out)])
+  return out
+ try:
+  for enabled in (1,0):
+@@ -36,6 +36,7 @@
+  binary=compile_source('emit_animal_paths','emit_animal_paths.cpp')
+  scenarios=OUT/'official_scenarios.jsonl';run('emit_scenarios',[str(binary)],10,stdout_path=scenarios)
+  run('official_execution',[sys.executable,str(ROOT/'tests/check_official_execution.py'),'--scenarios',str(scenarios),'--out',str(OUT/'official_execution.json')],20)
++ run('native_choice_gate',[sys.executable,str(ROOT/'tests/native_choice_gate.py'),'--library',str(a.library or PROD/'policy/tri_a08_r11_r2_fix1.so'),'--out',str(OUT/'native_choice_gate.json')],20)
+  run('entry_contract',[sys.executable,str(ROOT/'tests/test_entry_contract.py')],20)
+  if a.saved_limit:
+   for trace in sorted((EVIDENCE/'own_traces').glob('*.gz')):
+--- r2/tests/test_build_refusal.py
++++ fix1/tests/test_build_refusal.py
+@@ -0,0 +1,35 @@
++#!/usr/bin/env python3
++"""Verify fail-closed promotion in an isolated copy; no policy modifications.
++
++A test-only copy of the Python checker injects the central feed-bit symptom
++into its returned table. This is deliberately NOT a compiler-bug reproduction.
++The real production .so and its receipt must remain unchanged after rejection.
++"""
++from __future__ import annotations
++import argparse, hashlib, json, pathlib, shutil, subprocess, sys, time
++ROOT=pathlib.Path(__file__).resolve().parents[1]
++def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--out',type=pathlib.Path,required=True);ap.add_argument('--cxx',default=None);a=ap.parse_args()
++    out=a.out.resolve();out.mkdir(parents=True,exist_ok=False);fixture=out/'fixture';fixture.mkdir()
++    receipt=json.loads((ROOT/'policy/tri_a08_r11_r2_fix1.BUILD.json').read_text())
++    inputs=list(receipt['sources'])+['policy/tri_a08_r11_r2_fix1.so','policy/tri_a08_r11_r2_fix1.BUILD.json','tests/native_choice_gate.py']
++    for rel in inputs:
++        dest=fixture/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/rel,dest)
++    gate=fixture/'tests/native_choice_gate.py';text=gate.read_text()
++    needle='rich=load(9,21,28,px,4.);want='
++    if text.count(needle)!=1:raise RuntimeError('Cannot locate unique test-injection point')
++    gate.write_text(text.replace(needle,'rich=load(9,21,28,px,4.);rich[((28*2+1)*6)*4+2]=0.;want='))
++    (out/'INJECTION.txt').write_text('TEST-ONLY CHECKER COPY: mutate rich feed to 0 before its exact assertion. Does not alter production source or native. Not a GCC13 reproduction.\n')
++    native=fixture/'policy/tri_a08_r11_r2_fix1.so';record=native.with_suffix('.BUILD.json');before=(sha(native),sha(record));start=time.perf_counter()
++    cmd=[sys.executable,str(fixture/'build.py')]
++    if a.cxx:cmd+=['--cxx',a.cxx]
++    (out/'command.json').write_text(json.dumps(cmd,indent=2)+'\n')
++    with (out/'build.stdout').open('w') as stdout,(out/'build.stderr').open('w') as stderr:
++        proc=subprocess.run(['timeout','-k','5s','100s',*cmd],stdout=stdout,stderr=stderr)
++    after=(sha(native),sha(record));gates=sorted((fixture/'build_runs').glob('*/native_choice_gate.json'));stages=list((fixture/'policy').glob('*.building-*.so'))
++    gate_result=json.loads(gates[-1].read_text()) if gates else {}
++    passed=proc.returncode==1 and before==after and gate_result.get('status')=='FAIL' and gate_result.get('error')=='exact positive maintenance assertion' and bool(stages)
++    result={'status':'PASS' if passed else 'FAIL','scope':'Isolated expected rejection; not a compiler failure reproduction','build_exit':proc.returncode,'native_and_receipt_preserved':before==after,'before_native_sha256':before[0],'after_native_sha256':after[0],'before_receipt_sha256':before[1],'after_receipt_sha256':after[1],'gate':gate_result,'staging_preserved':[str(p) for p in stages],'production_gate_sha256':sha(ROOT/'tests/native_choice_gate.py'),'test_only_mutated_gate_sha256':sha(gate),'seconds':time.perf_counter()-start,'new_games':0}
++    (out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True);raise SystemExit(not passed)
++if __name__=='__main__':main()
+--- r2/tests/test_entry_contract.py
++++ fix1/tests/test_entry_contract.py
+@@ -10,8 +10,8 @@
+  checks+=1
+  if not b:raise AssertionError(why)
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+-receipt=json.loads((PROD/'policy/tri_a08_r11_r2.BUILD.json').read_text())
+-check(sha(PROD/'policy/tri_a08_r11_r2.so')==receipt['binary_sha256'],'native receipt mismatch')
++receipt=json.loads((PROD/'policy/tri_a08_r11_r2_fix1.BUILD.json').read_text())
++check(sha(PROD/'policy/tri_a08_r11_r2_fix1.so')==receipt['binary_sha256'],'native receipt mismatch')
+ for name,value in receipt['sources'].items():check(sha(PROD/name)==value,'source receipt mismatch: '+name)
+ parent=ROOT/'parent_immutable' if (ROOT/'parent_immutable').exists() else ROOT/'reference/parent'
+ check((PROD/'policy/config.json').read_bytes()==(parent/'policy/config.json').read_bytes(),'fixed config changed')
+@@ -21,7 +21,7 @@
+  independent=[]
+  for tr in traces:
+   a=mod.create_agent();expected=[]
+-  check(pathlib.Path(a.lib._name).resolve()==(PROD/'policy/tri_a08_r11_r2.so').resolve(),'wrong native loaded')
++  check(pathlib.Path(a.lib._name).resolve()==(PROD/'policy/tri_a08_r11_r2_fix1.so').resolve(),'wrong native loaded')
+   check(a.lib.td_settings_count()==len(mod.codec._ORDER),'ABI settings mismatch')
+   for obs in tr['observations'][:48]:expected.append(a(copy.deepcopy(obs)))
+   independent.append(expected);a.close()
+@@ -46,7 +46,7 @@
+  try:mod.create_agent('/does/not/exist/missing.so')
+  except OSError:check(True,'')
+  else:check(False,'missing library silently accepted')
+- try:mod.codec.Agent(config={'not_a_setting':1},binary_path=PROD/'policy/tri_a08_r11_r2.so')
++ try:mod.codec.Agent(config={'not_a_setting':1},binary_path=PROD/'policy/tri_a08_r11_r2_fix1.so')
+  except ValueError:check(True,'')
+  else:check(False,'unknown setting accepted')
+  a=mod.create_agent()

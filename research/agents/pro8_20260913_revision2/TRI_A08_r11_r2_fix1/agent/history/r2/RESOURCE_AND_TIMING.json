@@ -1,0 +1,59 @@
+{
+  "user_start_utc": "2026-09-13T15:22:07.194000+00:00",
+  "user_deadline_utc": "2026-09-13T17:22:07.194+00:00",
+  "first_probe": {
+    "runtime_first_probe_utc": "2026-09-13T15:22:52.442688+00:00",
+    "user_start_utc": "2026-09-13T15:22:07.194000+00:00",
+    "user_deadline_utc": "2026-09-13T17:22:07.194000+00:00",
+    "seconds_until_user_deadline": 7154.751312,
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "concurrency": 1,
+    "memory_headroom_fraction": 0.3
+  },
+  "packaging_started_utc": "2026-09-13T15:54:05.165660+00:00",
+  "minutes_from_user_start_to_packaging": 31.96619433333333,
+  "parallel_workers": 1,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cgroup_cpu_max": "400000 100000",
+  "effective_cpu_quota": 4,
+  "memory_limit_bytes": 4294967296,
+  "memory_current_bytes_at_packaging": 514203648,
+  "memory_peak_cgroup_bytes_not_task_attributed": 1090273280,
+  "required_memory_reserve_fraction": 0.3,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "mem_available_kib_at_packaging": 5008292,
+  "disk_free_bytes_at_packaging": 31890829312,
+  "python": "Python 3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "primary_build_wall_seconds": 29.17,
+  "primary_build_peak_rss_kib": 595032,
+  "parent_repeat_build_wall_seconds": 30.13,
+  "parent_repeat_build_peak_rss_kib": 595104,
+  "clean_repeat_build_wall_seconds": 28.78,
+  "clean_repeat_build_peak_rss_kib": 594712,
+  "new_games": 0,
+  "incomplete_wrapper_receipts": [
+    "logs/parent_build.time",
+    "logs/audit_thomas_955_v2_616522013_seat1.time",
+    "logs/r2_clean_rebuild.time"
+  ],
+  "scope": "Original GNU-time files, stdout, stderr and exit records retained. Cgroup peak existed at first measurement and is not claimed as task peak.",
+  "prearchive_verified_utc": "2026-09-13T15:56:20.399787+00:00",
+  "elapsed_minutes_at_prearchive": 34.22009645,
+  "core_change_build_completed_utc": "2026-09-13T15:32:23.596889+00:00",
+  "freeze_utc": "2026-09-13T15:58:07.759245+00:00",
+  "elapsed_seconds_at_freeze": 2160.565245,
+  "before_deadline": true
+}

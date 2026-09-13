@@ -1,0 +1,9 @@
+[
+  "python",
+  "candidate/tests/run_checks.py",
+  "--cxx",
+  "clang++",
+  "--library",
+  "/mnt/data/fix1_work/repro/fix1_clang17.so",
+  "--sanitize"
+]

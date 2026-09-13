@@ -1,0 +1,37 @@
+[
+  {
+    "id": "aurax_reactive_v1_1816494862_seat0",
+    "original_prefix_candidates_bit_exact": 260,
+    "first_divergence": null
+  },
+  {
+    "id": "aurax_reactive_v1_852484341_seat0",
+    "original_prefix_candidates_bit_exact": 74,
+    "first_divergence": 192
+  },
+  {
+    "id": "market_smart_v8_2535322_seat1",
+    "original_prefix_candidates_bit_exact": 252,
+    "first_divergence": null
+  },
+  {
+    "id": "soil_v219g_2535322_seat1",
+    "original_prefix_candidates_bit_exact": 252,
+    "first_divergence": null
+  },
+  {
+    "id": "submission_56149565_1623731725_seat1",
+    "original_prefix_candidates_bit_exact": 182,
+    "first_divergence": 360
+  },
+  {
+    "id": "submission_56149565_2029247155_seat0",
+    "original_prefix_candidates_bit_exact": 144,
+    "first_divergence": 288
+  },
+  {
+    "id": "thomas_955_v2_1395450535_seat1",
+    "original_prefix_candidates_bit_exact": 98,
+    "first_divergence": 216
+  }
+]

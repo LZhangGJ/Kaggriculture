@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "original_zip_sha256": "2f1557875d550000ae492c3814c84c78d5402e99b3a754308dc3907aa32b2178",
+  "original_workspace_matches_every_zip_member": true,
+  "reference_r2_production_files_verified": 45,
+  "parent_native_sha256": "afca1d69fde38a0474546b70ecee38911477548dfde9aadc685c58a2a0b88a2f",
+  "new_games": 0
+}

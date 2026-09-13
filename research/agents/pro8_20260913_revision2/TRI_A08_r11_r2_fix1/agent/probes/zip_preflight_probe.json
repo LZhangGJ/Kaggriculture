@@ -1,0 +1,937 @@
+{
+  "scope": "Saved own-observation entry check, not a closed-loop game or win-rate test",
+  "new_games": 0,
+  "calls": 48,
+  "exact_parent_actions": 48,
+  "seconds": 0.1440822859999571,
+  "peak_rss_kib": 167540,
+  "rows": [
+    {
+      "step": 0,
+      "seconds": 0.09055725700000039,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "step": 1,
+      "seconds": 0.0007640009998794994,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "COW",
+          2
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "COW",
+            1
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 2,
+      "seconds": 0.0006744570000591921,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "SHEEP",
+          2
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 3,
+      "seconds": 0.0006261630001063168,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 4,
+      "seconds": 0.0006783819999327534,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 5,
+      "seconds": 0.0006401240002560371,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PLACE",
+          "COW",
+          1
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 6,
+      "seconds": 0.0006303899999693385,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 7,
+      "seconds": 0.0009091599999919708,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "COW",
+            1
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 8,
+      "seconds": 0.0009374619999107381,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 9,
+      "seconds": 0.000947768000060023,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 10,
+      "seconds": 0.0009203669997077668,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PLACE",
+          "COW",
+          1
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 11,
+      "seconds": 0.0009213180001097498,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 12,
+      "seconds": 0.0009322350001639279,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "SHEEP",
+            1
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 13,
+      "seconds": 0.0009772930002327485,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 14,
+      "seconds": 0.000987998999789852,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 15,
+      "seconds": 0.0009531959999549144,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PLACE",
+          "SHEEP",
+          1
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 16,
+      "seconds": 0.0009462560001338716,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 17,
+      "seconds": 0.0009733269998832839,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 18,
+      "seconds": 0.0009527859997433552,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 19,
+      "seconds": 0.0009566519997861178,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 20,
+      "seconds": 0.0009498509998593363,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 21,
+      "seconds": 0.0009736869997141184,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PLACE",
+          "SHEEP",
+          1
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 22,
+      "seconds": 0.0009912139998959901,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 23,
+      "seconds": 0.0007085269999151933,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 24,
+      "seconds": 0.015889341999809403,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "step": 25,
+      "seconds": 0.0007683069998165593,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "step": 26,
+      "seconds": 0.0007954890002110915,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          5
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 27,
+      "seconds": 0.0007730649999757588,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 28,
+      "seconds": 0.0007126740001694998,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 29,
+      "seconds": 0.0007600859999001841,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 30,
+      "seconds": 0.0007669260003240197,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 31,
+      "seconds": 0.0007448430001204542,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 32,
+      "seconds": 0.0007001050003054843,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 33,
+      "seconds": 0.00076422200027082,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 34,
+      "seconds": 0.000728827999864734,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 35,
+      "seconds": 0.000691662000008364,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 36,
+      "seconds": 0.0007169399996200809,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "FERTILIZER",
+            3
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "step": 37,
+      "seconds": 0.0007099800000105461,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 38,
+      "seconds": 0.0007339359999605222,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 39,
+      "seconds": 0.0006859539998913533,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 40,
+      "seconds": 0.0007075359999362263,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 41,
+      "seconds": 0.000698832999660226,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 42,
+      "seconds": 0.0006782220002605754,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 43,
+      "seconds": 0.0009446240001125261,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 44,
+      "seconds": 0.0009442629998375196,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 45,
+      "seconds": 0.0009258150003006449,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "DROP"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 46,
+      "seconds": 0.0009372319996145961,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 47,
+      "seconds": 0.0006910010001774936,
+      "same_as_parent": true,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    }
+  ]
+}

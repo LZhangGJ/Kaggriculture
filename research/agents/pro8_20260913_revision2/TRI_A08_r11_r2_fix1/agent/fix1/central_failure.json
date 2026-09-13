@@ -1,0 +1,37 @@
+{
+  "source": "User central verification in current conversation; not a local run",
+  "zip_sha256": "2f1557875d550000ae492c3814c84c78d5402e99b3a754308dc3907aa32b2178",
+  "native_sha256": "afca1d69fde38a0474546b70ecee38911477548dfde9aadc685c58a2a0b88a2f",
+  "compiler": "Ubuntu24.04 g++13.3",
+  "command": "python tests/run_checks.py --sanitize",
+  "unit_1_failure": "FAIL: positive-return maintenance lost after 25859 checks",
+  "instrumentation": "Central copied animal_collection_test.cpp outside package; inserted prints before rich assertion only; delivered production files unchanged",
+  "observed": [
+    {
+      "flags": "original production flags; -O3; A08_ANIMAL_COLLECTION_LABOR=1",
+      "feed": 0,
+      "value": 65,
+      "E": 5,
+      "product_0": 5,
+      "price": 100,
+      "terminal": 0,
+      "status": "FAIL"
+    },
+    {
+      "flags": "-O3 replaced with -O0",
+      "feed": 1,
+      "value": 65,
+      "checks": 25861,
+      "brute_force_cases": 5120,
+      "path_cases": 4608,
+      "status": "PASS"
+    },
+    {
+      "flags": "-O3 replaced with -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer",
+      "feed": 1,
+      "value": 65,
+      "status": "PASS; no reported sanitizer diagnostics"
+    }
+  ],
+  "new_games": 0
+}

@@ -1,0 +1,11 @@
+{
+  "name": "fix1_initial_build",
+  "command": [
+    "python",
+    "/mnt/data/fix1_work/candidate/build.py"
+  ],
+  "start_utc": "2026-09-13T16:32:11.434435+00:00",
+  "end_utc": "2026-09-13T16:32:40.278682+00:00",
+  "wall_seconds": 28.84425517599999,
+  "exit_code": 0
+}

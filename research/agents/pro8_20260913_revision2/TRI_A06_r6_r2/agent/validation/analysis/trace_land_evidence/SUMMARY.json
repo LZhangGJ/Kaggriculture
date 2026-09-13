@@ -1,0 +1,688 @@
+{
+  "cases": [
+    {
+      "id": "aurax_reactive_v1_1816494862_seat0",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2772,
+      "last_purchase": {
+        "step": 288,
+        "day": 12,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 5005.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 9,
+            "path_length": 0,
+            "successor": 9
+          },
+          {
+            "pos": 56,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          },
+          {
+            "pos": 57,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 65,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 66,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          }
+        ],
+        "original_candidates": 18,
+        "original_candidates_predicting_land": 18,
+        "conditional_remove_initial_bundle_model_delta": -3044.4707654179474,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 293,
+          "day": 12,
+          "unit": 7,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLACE",
+            "GOOSE",
+            1
+          ],
+          "type": "placed_animal",
+          "animal": "GOOSE"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 25,
+        "successful_plant_or_animal_placements": {
+          "GOOSE": 1,
+          "CARROT": 4,
+          "TOMATO": 15,
+          "STRAWBERRY": 2,
+          "WHEAT": 11
+        },
+        "actual_harvest_units": {
+          "CARROT": 13,
+          "EGG": 29,
+          "TOMATO": 115,
+          "STRAWBERRY": 11,
+          "WHEAT": 57
+        },
+        "actual_maintenance_effects": {
+          "FEED": 16,
+          "CARE": 15,
+          "WATER": 192,
+          "COLLECT_FERTILIZER": 17,
+          "FERTILIZE": 38
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 88264.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "FERTILIZER": 70,
+          "MILK": 68,
+          "WOOL": 10,
+          "EGG": 39,
+          "MELON": 18,
+          "STRAWBERRY": 18,
+          "WHEAT": 62,
+          "TOMATO": 16,
+          "CARROT": 8
+        }
+      }
+    },
+    {
+      "id": "aurax_reactive_v1_852484341_seat0",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2777,
+      "last_purchase": {
+        "step": 312,
+        "day": 13,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 5676.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 10,
+            "path_length": 0,
+            "successor": 10
+          },
+          {
+            "pos": 56,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 57,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 58,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 65,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 66,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 67,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 75,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          }
+        ],
+        "original_candidates": 18,
+        "original_candidates_predicting_land": 18,
+        "conditional_remove_initial_bundle_model_delta": 5962.737863775255,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 315,
+          "day": 13,
+          "unit": 7,
+          "pos": 56,
+          "quadrant": "SE",
+          "action": [
+            "PLANT",
+            "STRAWBERRY"
+          ],
+          "type": "planted",
+          "crop": "STRAWBERRY"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 17,
+        "successful_plant_or_animal_placements": {
+          "STRAWBERRY": 7,
+          "COW": 1,
+          "TOMATO": 5,
+          "WHEAT": 5,
+          "CARROT": 3
+        },
+        "actual_harvest_units": {
+          "MILK": 18,
+          "TOMATO": 30,
+          "STRAWBERRY": 46,
+          "WHEAT": 30,
+          "CARROT": 12
+        },
+        "actual_maintenance_effects": {
+          "WATER": 125,
+          "FEED": 14,
+          "CARE": 13,
+          "COLLECT_FERTILIZER": 16,
+          "FERTILIZE": 26
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 162901.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "MILK": 45,
+          "FERTILIZER": 68,
+          "STRAWBERRY": 66,
+          "WOOL": 35,
+          "MELON": 12,
+          "TOMATO": 22,
+          "WHEAT": 84,
+          "CARROT": 12
+        }
+      }
+    },
+    {
+      "id": "market_smart_v8_2535322_seat1",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2820,
+      "last_purchase": {
+        "step": 288,
+        "day": 12,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 3465.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 56,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 57,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 58,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 65,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 66,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          }
+        ],
+        "original_candidates": 12,
+        "original_candidates_predicting_land": 6,
+        "conditional_remove_initial_bundle_model_delta": -3364.350270027764,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 290,
+          "day": 12,
+          "unit": 7,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLANT",
+            "STRAWBERRY"
+          ],
+          "type": "planted",
+          "crop": "STRAWBERRY"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 14,
+        "successful_plant_or_animal_placements": {
+          "STRAWBERRY": 4,
+          "CARROT": 5,
+          "SHEEP": 5,
+          "TOMATO": 4
+        },
+        "actual_harvest_units": {
+          "CARROT": 17,
+          "WOOL": 78,
+          "STRAWBERRY": 28,
+          "TOMATO": 30
+        },
+        "actual_maintenance_effects": {
+          "WATER": 80,
+          "FEED": 63,
+          "CARE": 58,
+          "COLLECT_FERTILIZER": 78,
+          "FERTILIZE": 16
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 91977.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "FERTILIZER": 55,
+          "EGG": 18,
+          "MILK": 22,
+          "WOOL": 29,
+          "STRAWBERRY": 46,
+          "MELON": 18,
+          "TOMATO": 10,
+          "WHEAT": 66,
+          "CARROT": 44
+        }
+      }
+    },
+    {
+      "id": "soil_v219g_2535322_seat1",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2820,
+      "last_purchase": {
+        "step": 288,
+        "day": 12,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 3465.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 56,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 57,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 58,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          },
+          {
+            "pos": 65,
+            "kind": 3,
+            "path_length": 16,
+            "successor": 3
+          },
+          {
+            "pos": 66,
+            "kind": 1,
+            "path_length": 3,
+            "successor": 1
+          }
+        ],
+        "original_candidates": 12,
+        "original_candidates_predicting_land": 6,
+        "conditional_remove_initial_bundle_model_delta": -3364.350270027764,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 290,
+          "day": 12,
+          "unit": 7,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLANT",
+            "STRAWBERRY"
+          ],
+          "type": "planted",
+          "crop": "STRAWBERRY"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 14,
+        "successful_plant_or_animal_placements": {
+          "STRAWBERRY": 4,
+          "CARROT": 5,
+          "SHEEP": 5,
+          "TOMATO": 4
+        },
+        "actual_harvest_units": {
+          "CARROT": 17,
+          "WOOL": 78,
+          "STRAWBERRY": 28,
+          "TOMATO": 30
+        },
+        "actual_maintenance_effects": {
+          "WATER": 80,
+          "FEED": 63,
+          "CARE": 58,
+          "COLLECT_FERTILIZER": 78,
+          "FERTILIZE": 16
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 91977.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "FERTILIZER": 55,
+          "EGG": 18,
+          "MILK": 22,
+          "WOOL": 29,
+          "STRAWBERRY": 46,
+          "MELON": 18,
+          "TOMATO": 10,
+          "WHEAT": 66,
+          "CARROT": 44
+        }
+      }
+    },
+    {
+      "id": "submission_56149565_1623731725_seat1",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2826,
+      "last_purchase": {
+        "step": 432,
+        "day": 18,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 26099.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          },
+          {
+            "pos": 56,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          },
+          {
+            "pos": 57,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          },
+          {
+            "pos": 65,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          }
+        ],
+        "original_candidates": 6,
+        "original_candidates_predicting_land": 6,
+        "conditional_remove_initial_bundle_model_delta": -3606.1472793544162,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 435,
+          "day": 18,
+          "unit": 3,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLANT",
+            "TOMATO"
+          ],
+          "type": "planted",
+          "crop": "TOMATO"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 12,
+        "successful_plant_or_animal_placements": {
+          "TOMATO": 5,
+          "CARROT": 8,
+          "WHEAT": 7
+        },
+        "actual_harvest_units": {
+          "CARROT": 27,
+          "WHEAT": 36,
+          "TOMATO": 36
+        },
+        "actual_maintenance_effects": {
+          "WATER": 92,
+          "FERTILIZE": 13
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 58188.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "MILK": 20,
+          "WOOL": 2,
+          "FERTILIZER": 44,
+          "EGG": 51,
+          "TOMATO": 32,
+          "STRAWBERRY": 20,
+          "WHEAT": 51,
+          "CARROT": 46,
+          "MELON": 6
+        }
+      }
+    },
+    {
+      "id": "submission_56149565_2029247155_seat0",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2728,
+      "last_purchase": {
+        "step": 336,
+        "day": 14,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 10050.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          },
+          {
+            "pos": 56,
+            "kind": 2,
+            "path_length": 11,
+            "successor": 2
+          }
+        ],
+        "original_candidates": 12,
+        "original_candidates_predicting_land": 10,
+        "conditional_remove_initial_bundle_model_delta": -3669.5804523161205,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 345,
+          "day": 14,
+          "unit": 6,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLANT",
+            "TOMATO"
+          ],
+          "type": "planted",
+          "crop": "TOMATO"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 24,
+        "successful_plant_or_animal_placements": {
+          "TOMATO": 12,
+          "STRAWBERRY": 3,
+          "MELON": 1,
+          "WHEAT": 11,
+          "CARROT": 1
+        },
+        "actual_harvest_units": {
+          "TOMATO": 92,
+          "STRAWBERRY": 13,
+          "WHEAT": 51,
+          "MELON": 6,
+          "CARROT": 3
+        },
+        "actual_maintenance_effects": {
+          "WATER": 176,
+          "FERTILIZE": 30
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 90533.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "FERTILIZER": 52,
+          "MILK": 34,
+          "EGG": 47,
+          "STRAWBERRY": 23,
+          "TOMATO": 12,
+          "WHEAT": 69,
+          "MELON": 12,
+          "CARROT": 7
+        }
+      }
+    },
+    {
+      "id": "thomas_955_v2_1395450535_seat1",
+      "purchases": 3,
+      "land_spend": 7000.0,
+      "all_same_day_used": true,
+      "cash_days_checked": 30,
+      "unit_events": 2789,
+      "last_purchase": {
+        "step": 288,
+        "day": 12,
+        "quadrant": "SE",
+        "cost": 4000.0,
+        "cash_before": 3419.0,
+        "selected_initial_projects": [
+          {
+            "pos": 55,
+            "kind": 10,
+            "path_length": 0,
+            "successor": 10
+          },
+          {
+            "pos": 56,
+            "kind": 10,
+            "path_length": 0,
+            "successor": 10
+          },
+          {
+            "pos": 65,
+            "kind": 0,
+            "path_length": 4,
+            "successor": 0
+          }
+        ],
+        "original_candidates": 16,
+        "original_candidates_predicting_land": 14,
+        "conditional_remove_initial_bundle_model_delta": -682.881687053934,
+        "model_delta_scope": "Conditional diagnostic only: removing initial new plots plus refunding land. Not a cash recovery, marginal realized profit, or full future rolling policy.",
+        "first_productive_event": {
+          "step": 293,
+          "day": 12,
+          "unit": 7,
+          "pos": 55,
+          "quadrant": "SE",
+          "action": [
+            "PLACE",
+            "COW",
+            1
+          ],
+          "type": "placed_animal",
+          "animal": "COW"
+        },
+        "same_day_used": true,
+        "max_productive_occupancy": 24,
+        "successful_plant_or_animal_placements": {
+          "COW": 2,
+          "WHEAT": 5,
+          "TOMATO": 16,
+          "SHEEP": 1,
+          "MELON": 2
+        },
+        "actual_harvest_units": {
+          "WHEAT": 30,
+          "MILK": 36,
+          "WOOL": 14,
+          "TOMATO": 115,
+          "MELON": 12
+        },
+        "actual_maintenance_effects": {
+          "FEED": 40,
+          "CARE": 37,
+          "WATER": 160,
+          "COLLECT_FERTILIZER": 47,
+          "FERTILIZE": 29
+        },
+        "warehouse_delivery_scope": "Harvest origin is observed per plot. Direct warehouse arrivals and ledger sale proceeds are whole-farm only; no plot-specific realized net profit is inferred.",
+        "whole_farm_post_purchase_sell_cash": 136971.0,
+        "whole_farm_post_purchase_direct_warehouse_arrivals": {
+          "FERTILIZER": 60,
+          "MILK": 60,
+          "WHEAT": 72,
+          "WOOL": 12,
+          "STRAWBERRY": 34,
+          "MELON": 18,
+          "TOMATO": 26,
+          "CARROT": 12
+        }
+      }
+    }
+  ],
+  "total_land_purchases": 21,
+  "all_same_day_used": true,
+  "cash_days_checked": 210,
+  "seconds": 3.3612600149999707,
+  "new_games": 0
+}

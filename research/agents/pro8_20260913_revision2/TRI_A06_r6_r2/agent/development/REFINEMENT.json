@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-13T15:47:35.802442+00:00",
+  "first_implementation": "broad_matched_deferral",
+  "reason": "The broad form introduced four saved-prefix divergences, including both narrow parent wins. It added wait alternatives even when the existing candidate pool already contained no-land actions. Restrict the intervention to the actual structural omission: every original prepared queue requires BUY_LAND. This is a current-observation/action-set gate, not a seed/opponent/score-threshold rule.",
+  "decision_before_new_probe": true,
+  "new_games": 0,
+  "checkpoint_native_sha256": "9208b964a9f09b5dc8032d125c3e157385e4073fa3442470e42f9330fda34642"
+}

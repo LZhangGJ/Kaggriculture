@@ -1,0 +1,1 @@
+{"scope": "Frozen saved own observations; no new games", "trace": "flexon_v5_113649547_seat0.json.gz", "trace_sha256": "f2f326f3060bfd0e1cbc8851c150389b7abeff727acae149085ae469e1603b99", "calls": 719, "exact_parent_actions": 719, "seconds": 5.804322008999975, "max_action_seconds": 0.34370176900000615, "peak_rss_kib": 170152, "fertilizer_mismatches": []}

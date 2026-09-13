@@ -1,0 +1,115 @@
+--- parent/main.py
++++ r2/main.py
+@@ -1,16 +1,16 @@
+-"""TRI_A08_r11_r1: exact-price-floor sale-window extension (not accepted). Explicit binary/config; no replay, seed or agent ID input."""
++"""TRI_A08_r11_r2: collection-work-consistent animal service valuation (not accepted). Explicit binary/config; no replay, seed or agent ID input."""
+ import importlib.util
+ import json
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parent
+-spec = importlib.util.spec_from_file_location('_tri_a08_r11_r1_codec', ROOT/'policy/agent.py')
++spec = importlib.util.spec_from_file_location('_tri_a08_r11_r2_codec', ROOT/'policy/agent.py')
+ codec = importlib.util.module_from_spec(spec)
+ spec.loader.exec_module(codec)
+ 
+ def create_agent(binary_path=None):
+     config = json.loads((ROOT/'policy/config.json').read_text(encoding='utf-8'))
+-    return codec.Agent(config=config, binary_path=binary_path or ROOT/'policy/tri_a08_r11_r1.so')
++    return codec.Agent(config=config, binary_path=binary_path or ROOT/'policy/tri_a08_r11_r2.so')
+ 
+ _seats = {}
+ def agent(observation, configuration=None):
+--- parent/build.py
++++ r2/build.py
+@@ -1,19 +1,19 @@
+ #!/usr/bin/env python3
+-"""Portable TRI_A08_r11_r1 builder (parent: exact A08_r11). Offline candidate; formal acceptance not run."""
++"""Portable TRI_A08_r11_r2 builder (parent: exact TRI_A08_r11_r1). Offline candidate; formal acceptance not run."""
+ from pathlib import Path
+ import argparse, hashlib, json, os, shutil, subprocess, time
+ ROOT=Path(__file__).resolve().parent
+ 
+ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+ def main():
+- p=argparse.ArgumentParser();p.add_argument('--sale-floor-dp',type=int,choices=[0,1],default=1);p.add_argument('--sale-schedule-dp',type=int,choices=[0,1],default=1);p.add_argument('--paid-continuation',type=int,choices=[0,1],default=1);p.add_argument('--complete-crop-stops',type=int,choices=[0,1],default=1);p.add_argument('--market-integral',type=int,choices=[0,1,2],default=1);p.add_argument('--sale-clock',type=int,choices=[0,1,2],default=2);p.add_argument('--cxx',default=os.environ.get('CXX','g++'));p.add_argument('--mode',type=int,choices=[0,1,2],default=2);p.add_argument('--realization',type=int,choices=[0,1,2],default=0);p.add_argument('--crop-portfolio',type=int,choices=[0,1],default=1);p.add_argument('--cash-ledger',type=int,choices=[0,1],default=0);p.add_argument('--prefix-days',type=int,choices=[1,3,5],default=5);p.add_argument('--out',type=Path);a=p.parse_args()
++ p=argparse.ArgumentParser();p.add_argument('--animal-collection-labor',type=int,choices=[0,1],default=1);p.add_argument('--sale-floor-dp',type=int,choices=[0,1],default=1);p.add_argument('--sale-schedule-dp',type=int,choices=[0,1],default=1);p.add_argument('--paid-continuation',type=int,choices=[0,1],default=1);p.add_argument('--complete-crop-stops',type=int,choices=[0,1],default=1);p.add_argument('--market-integral',type=int,choices=[0,1,2],default=1);p.add_argument('--sale-clock',type=int,choices=[0,1,2],default=2);p.add_argument('--cxx',default=os.environ.get('CXX','g++'));p.add_argument('--mode',type=int,choices=[0,1,2],default=2);p.add_argument('--realization',type=int,choices=[0,1,2],default=0);p.add_argument('--crop-portfolio',type=int,choices=[0,1],default=1);p.add_argument('--cash-ledger',type=int,choices=[0,1],default=0);p.add_argument('--prefix-days',type=int,choices=[1,3,5],default=5);p.add_argument('--out',type=Path);a=p.parse_args()
+  if shutil.which(a.cxx) is None:raise SystemExit('C++20 compiler not found: '+a.cxx)
+- out=(a.out or ROOT/'policy/tri_a08_r11_r1.so').resolve();out.parent.mkdir(parents=True,exist_ok=True)
++ out=(a.out or ROOT/'policy/tri_a08_r11_r2.so').resolve();out.parent.mkdir(parents=True,exist_ok=True)
+  if out==ROOT/'reference/P16/policy/startupsupply2.so':raise SystemExit('Refusing to overwrite frozen P16')
+- flags=[f'-DA08_SALE_FLOOR_DP={a.sale_floor_dp}',f'-DA08_SALE_SCHEDULE_DP={a.sale_schedule_dp}',f'-DA08_PAID_CONTINUATION={a.paid_continuation}','-std=c++20','-O3','-DNDEBUG','-march=x86-64','-ffp-contract=off','-DR2_STARTUP_SUPPLY_MODE=2','-DR2_LOCAL_SALE_TIMING=1','-DR2_FINITE_FERTILIZER=1','-DR2_CROP_CLOCK_MODE=1','-DR2_OBSERVE_PUBLIC_TRADES=1',f'-DR2_MARKET_INTEGRAL={a.market_integral}',f'-DR2_SALE_CLOCK_MODE={a.sale_clock}',f'-DA08_COMPLETE_CROP_STOPS={a.complete_crop_stops}',f'-DA08_LAND_DP_MODE={a.mode}',f'-DA08_REALIZATION_MODE={a.realization}',f'-DA08_CROP_PORTFOLIO_MODE={a.crop_portfolio}',f'-DA08_CASH_LEDGER={a.cash_ledger}',f'-DA08_PREFIX_DAYS={a.prefix_days}','-fPIC','-shared','-Wl,-Bsymbolic']
++ flags=[f'-DA08_ANIMAL_COLLECTION_LABOR={a.animal_collection_labor}',f'-DA08_SALE_FLOOR_DP={a.sale_floor_dp}',f'-DA08_SALE_SCHEDULE_DP={a.sale_schedule_dp}',f'-DA08_PAID_CONTINUATION={a.paid_continuation}','-std=c++20','-O3','-DNDEBUG','-march=x86-64','-ffp-contract=off','-DR2_STARTUP_SUPPLY_MODE=2','-DR2_LOCAL_SALE_TIMING=1','-DR2_FINITE_FERTILIZER=1','-DR2_CROP_CLOCK_MODE=1','-DR2_OBSERVE_PUBLIC_TRADES=1',f'-DR2_MARKET_INTEGRAL={a.market_integral}',f'-DR2_SALE_CLOCK_MODE={a.sale_clock}',f'-DA08_COMPLETE_CROP_STOPS={a.complete_crop_stops}',f'-DA08_LAND_DP_MODE={a.mode}',f'-DA08_REALIZATION_MODE={a.realization}',f'-DA08_CROP_PORTFOLIO_MODE={a.crop_portfolio}',f'-DA08_CASH_LEDGER={a.cash_ledger}',f'-DA08_PREFIX_DAYS={a.prefix_days}','-fPIC','-shared','-Wl,-Bsymbolic']
+  cmd=[a.cxx,*flags,str(ROOT/'policy/bridge.cpp'),str(ROOT/'policy/executor/vendor/simulator.cpp'),'-o',str(out)]
+  tick=time.perf_counter();subprocess.run(cmd,check=True)
+  files=sorted(x for x in (ROOT/'policy').rglob('*') if x.suffix in ['.hpp','.cpp','.inc','.py','.json'] and not x.name.endswith('.BUILD.json'))
+- files += [ROOT/'main.py',ROOT/'build.py'];receipt={'author':'A08','revision':'TRI_A08_r11_r1','parent_native_sha256':'3b95f2c633242e31329adffae2438440a76b5eb6b11ece4897fe69f5710bb9cb','sale_floor_dp':a.sale_floor_dp,'sale_schedule_dp':a.sale_schedule_dp,'paid_continuation':a.paid_continuation,'recovery_base':'A08_r11_from_d2b4dad66c24be494421cfbcb48942a10162e12d8d81ea660eae5a7aeaab40c3','complete_crop_stops':a.complete_crop_stops,'market_integral':a.market_integral,'sale_clock':a.sale_clock,'cash_ledger':a.cash_ledger,'prefix_days':a.prefix_days,'land_mode':a.mode,'realization_mode':a.realization,'crop_portfolio_mode':a.crop_portfolio,'status':'COMPILED; trajectory evaluation recorded separately','compiler':subprocess.check_output([a.cxx,'--version'],text=True).splitlines()[0],'command':cmd,'seconds':time.perf_counter()-tick,'binary_sha256':sha(out),'sources':{str(f.relative_to(ROOT)):sha(f) for f in files}}
++ files += [ROOT/'main.py',ROOT/'build.py'];receipt={'author':'A08','revision':'TRI_A08_r11_r2','animal_collection_labor':a.animal_collection_labor,'parent_native_sha256':'bb2f248f689b7a75042c7bf4897700099f1f6d1980b1abc38442db0a1bbadc4c','sale_floor_dp':a.sale_floor_dp,'sale_schedule_dp':a.sale_schedule_dp,'paid_continuation':a.paid_continuation,'recovery_base':'TRI_A08_r11_r1_from_751c049fc9d765319264cddad8a5a4544059ec15101354d2fcc69e874ec670ac','complete_crop_stops':a.complete_crop_stops,'market_integral':a.market_integral,'sale_clock':a.sale_clock,'cash_ledger':a.cash_ledger,'prefix_days':a.prefix_days,'land_mode':a.mode,'realization_mode':a.realization,'crop_portfolio_mode':a.crop_portfolio,'status':'COMPILED; trajectory evaluation recorded separately','compiler':subprocess.check_output([a.cxx,'--version'],text=True).splitlines()[0],'command':cmd,'seconds':time.perf_counter()-tick,'binary_sha256':sha(out),'sources':{str(f.relative_to(ROOT)):sha(f) for f in files}}
+  out.with_suffix('.BUILD.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps({k:v for k,v in receipt.items() if k!='sources'},indent=2))
+ if __name__=='__main__':main()
+--- parent/policy/animal_service_dp.hpp
++++ r2/policy/animal_service_dp.hpp
+@@ -1,5 +1,9 @@
+ #pragma once
+ #include "planner.hpp"
++#ifndef A08_ANIMAL_COLLECTION_LABOR
++#define A08_ANIMAL_COLLECTION_LABOR 1
++#endif
++static_assert(A08_ANIMAL_COLLECTION_LABOR==0 || A08_ANIMAL_COLLECTION_LABOR==1);
+ namespace competitive {
+ // Port of our independently authored Python service Bellman recurrence.
+ // State: day, consecutive unfed days (0/1), previously banked care bonus.
+@@ -14,7 +18,15 @@
+     for(int feed=0;feed<=1;feed++){int nh=feed?0:h+1;if(nh>=2){if(0>best.value)best={0,0,0};continue;}
+      for(int care=0;care<=feed;care++){if(care&&p>=cap&&!tick)continue;
+       int quantity=tick?1+(feed?p:0):0,np=std::min(cap,(tick?0:p)+care);
+-      double v=-feed*(prices[d][W]+work)-care*work+quantity*prices[d+1][product[j]]+std::max(0.,prices[d+1][F]-work)+value[d+1][nh][np];
++      // Every credited future output must be collected. The live executor
++      // harvests positive animal yield and always collects available manure;
++      // neither is a free/optional cash credit, including on the last day.
++      const double collection = A08_ANIMAL_COLLECTION_LABOR
++        ? (quantity>0 ? work : 0.) + work : 0.;
++      const double manure = A08_ANIMAL_COLLECTION_LABOR
++        ? prices[d+1][F] : std::max(0.,prices[d+1][F]-work);
++      double v=-feed*(prices[d][W]+work)-care*work
++        +quantity*prices[d+1][product[j]]+manure-collection+value[d+1][nh][np];
+       if(v>best.value+1e-9)best={feed,care,v};
+      }
+     }
+--- parent/policy/triad.hpp
++++ r2/policy/triad.hpp
+@@ -192,7 +192,13 @@
+   if(s.service<=0){auto a=model.animal_stream(k,birth,pos,t);for(auto&w:a.labor)w*=s.animal_work;return realize(std::move(a),pos);}
+   Asset a;a.kind=k;a.end=30;int day=model.day,start=std::max(day,birth),j=k-9;
+   if(!t){a.first_cost=animal_price[j];a.fixed[start]-=a.first_cost;a.labor[start]+=3+.15*near(pos);service_work(a,start,pos,2);}
+-  else {a.f[day][product[j]]+=t->yield_units;a.f[day][F]+=t->fertilizer_available;}
++  else {
++   a.f[day][product[j]]+=t->yield_units;a.f[day][F]+=t->fertilizer_available;
++   // Already produced is not already collected. Match today's HARVEST and
++   // COLLECT_FERTILIZER atoms, even when no maintenance day remains.
++   if constexpr(A08_ANIMAL_COLLECTION_LABOR)
++    a.labor[day]+=(int(t->yield_units>0)+int(t->fertilizer_available))*s.animal_work;
++  }
+   AnimalServiceDP dp;dp.solve(k,birth,start,px,s.work_price);
+   int hunger=t?std::min(1,int(t->consecutive_unfed)):0,bonus=t?std::min(held[j]-1,int(t->pending_care_bonus)):0;
+   for(int d=start;d<29;d++){
+@@ -201,12 +207,17 @@
+    bool fed=t&&d==day&&t->fed_today,cared=t&&d==day&&t->cared_today;
+    int f=c.feed&&!fed,z=c.care&&!cared;
+    if(first_action&&d==start)*first_action={int8_t(f),int8_t(z)};
+-   a.f[d][W]-=f;a.labor[d]+=(f+z+1+.20*near(pos))*s.animal_work;service_work(a,d,pos,f+z);
++   a.f[d][W]-=f;
++   a.labor[d]+=(f+z+(A08_ANIMAL_COLLECTION_LABOR?0:1)+.20*near(pos))*s.animal_work;
++   service_work(a,d,pos,f+z);
+    bool feeding=f||fed;hunger=feeding?0:hunger+1;if(hunger>=2){a.end=d+1;break;}
+    int age=d+1-birth;bool tick=age>=afirst[j]&&(age-afirst[j])%ainterval[j]==0;
+-   if(tick){a.f[d+1][product[j]]+=1+(feeding?bonus:0);a.labor[d+1]+=1;bonus=0;}
++   if(tick){a.f[d+1][product[j]]+=1+(feeding?bonus:0);a.labor[d+1]+=A08_ANIMAL_COLLECTION_LABOR?s.animal_work:1.;bonus=0;}
+    if(feeding&&(z||cared))bonus=std::min(held[j]-1,bonus+1);
+    a.f[d+1][F]+=1;
++   // Manure produced at dawn d+1 consumes collection work on d+1, not
++   // on d. This also charges terminal-day collection instead of losing it.
++   if constexpr(A08_ANIMAL_COLLECTION_LABOR)a.labor[d+1]+=s.animal_work;
+   }return realize(std::move(a),pos);
+  }
+  struct RotationDP{

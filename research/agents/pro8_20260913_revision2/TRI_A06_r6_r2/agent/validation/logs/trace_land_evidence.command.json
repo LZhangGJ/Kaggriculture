@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/a06_r6_r2_work/tools/trace_land_evidence.py",
+    "--input",
+    "/mnt/data/a06_r6_r2_work/input",
+    "--audits",
+    "/mnt/data/a06_r6_r2_work/analysis/parent_audits",
+    "--out",
+    "/mnt/data/a06_r6_r2_work/analysis/trace_land_evidence"
+  ],
+  "started_utc": "2026-09-13T15:44:47.582087+00:00",
+  "timeout_seconds": 120,
+  "parent_monitor_pid": 1131
+}

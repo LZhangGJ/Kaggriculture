@@ -1,0 +1,8 @@
+[
+  "python",
+  "candidate/tests/repro_matrix.py",
+  "--cxx",
+  "g++",
+  "--out",
+  "/mnt/data/fix1_work/repro/matrix_gcc14"
+]

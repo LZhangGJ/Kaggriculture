@@ -1,0 +1,1 @@
+TEST-ONLY CHECKER COPY: mutate rich feed to 0 before its exact assertion. Does not alter production source or native. Not a GCC13 reproduction.

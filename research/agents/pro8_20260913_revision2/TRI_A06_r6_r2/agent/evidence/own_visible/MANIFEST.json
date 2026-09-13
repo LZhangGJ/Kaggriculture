@@ -1,0 +1,278 @@
+{
+  "agent/build.py": {
+    "bytes": 1692,
+    "sha256": "75b5831f022e1af999241b5f33f2b97bc42dbc3bc56b2d00684ec10cb9ff6f7d"
+  },
+  "agent/build_a06.py": {
+    "bytes": 116,
+    "sha256": "c427f2d632011362c828293f76ad91dd6072394619fb7c0cd92c4b10ad678df9"
+  },
+  "agent/COMPILER_FLAGS.json": {
+    "bytes": 360,
+    "sha256": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85"
+  },
+  "agent/main.py": {
+    "bytes": 1397,
+    "sha256": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7"
+  },
+  "agent/policy/a06.so": {
+    "bytes": 1146296,
+    "sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23"
+  },
+  "agent/policy/a06_live_reinvestment.inc": {
+    "bytes": 9085,
+    "sha256": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c"
+  },
+  "agent/policy/agent.py": {
+    "bytes": 8053,
+    "sha256": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f"
+  },
+  "agent/policy/animal_service_dp.hpp": {
+    "bytes": 1399,
+    "sha256": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c"
+  },
+  "agent/policy/bridge.cpp": {
+    "bytes": 9254,
+    "sha256": "3f5d57726a00081b51867f687a8ebb905fa319d4a92892f9215c68b109e25585"
+  },
+  "agent/policy/conditional_market.hpp": {
+    "bytes": 2178,
+    "sha256": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457"
+  },
+  "agent/policy/config.json": {
+    "bytes": 921,
+    "sha256": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997"
+  },
+  "agent/policy/executor/a06_fleet_dp.hpp": {
+    "bytes": 6598,
+    "sha256": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0"
+  },
+  "agent/policy/executor/compile_choices.hpp": {
+    "bytes": 5705,
+    "sha256": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea"
+  },
+  "agent/policy/executor/crop_delivery.hpp": {
+    "bytes": 5208,
+    "sha256": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e"
+  },
+  "agent/policy/executor/day_consequence.hpp": {
+    "bytes": 9097,
+    "sha256": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae"
+  },
+  "agent/policy/executor/idle_task_handoff.hpp": {
+    "bytes": 3757,
+    "sha256": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd"
+  },
+  "agent/policy/executor/intraday_admission.hpp": {
+    "bytes": 14811,
+    "sha256": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9"
+  },
+  "agent/policy/executor/investment_candidates.hpp": {
+    "bytes": 4356,
+    "sha256": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe"
+  },
+  "agent/policy/executor/joint_portfolio.hpp": {
+    "bytes": 14008,
+    "sha256": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf"
+  },
+  "agent/policy/executor/live_execution_repairs.hpp": {
+    "bytes": 4016,
+    "sha256": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637"
+  },
+  "agent/policy/executor/observation_view.hpp": {
+    "bytes": 330,
+    "sha256": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe"
+  },
+  "agent/policy/executor/observed_day_scenario.hpp": {
+    "bytes": 4273,
+    "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c"
+  },
+  "agent/policy/executor/pack_memo.hpp": {
+    "bytes": 2195,
+    "sha256": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988"
+  },
+  "agent/policy/executor/policy.hpp": {
+    "bytes": 118032,
+    "sha256": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0"
+  },
+  "agent/policy/executor/regret_pack_incremental.inc": {
+    "bytes": 2294,
+    "sha256": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98"
+  },
+  "agent/policy/executor/resource_exchange.hpp": {
+    "bytes": 5838,
+    "sha256": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e"
+  },
+  "agent/policy/executor/rotation_calendar.hpp": {
+    "bytes": 6495,
+    "sha256": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a"
+  },
+  "agent/policy/executor/rotation_cash.hpp": {
+    "bytes": 7072,
+    "sha256": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d"
+  },
+  "agent/policy/executor/service_recovery.hpp": {
+    "bytes": 8443,
+    "sha256": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c"
+  },
+  "agent/policy/executor/vendor/simulator.cpp": {
+    "bytes": 17869,
+    "sha256": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da"
+  },
+  "agent/policy/executor/vendor/simulator.hpp": {
+    "bytes": 6489,
+    "sha256": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+  },
+  "agent/policy/finite_fertilizer.hpp": {
+    "bytes": 860,
+    "sha256": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061"
+  },
+  "agent/policy/learned_value.hpp": {
+    "bytes": 2550,
+    "sha256": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2"
+  },
+  "agent/policy/local_sale_timing.hpp": {
+    "bytes": 3145,
+    "sha256": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9"
+  },
+  "agent/policy/observation_codec.hpp": {
+    "bytes": 1569,
+    "sha256": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297"
+  },
+  "agent/policy/observed_crop_clock.hpp": {
+    "bytes": 1869,
+    "sha256": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4"
+  },
+  "agent/policy/ongoing_maintenance_dp.hpp": {
+    "bytes": 2095,
+    "sha256": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd"
+  },
+  "agent/policy/planner.hpp": {
+    "bytes": 13775,
+    "sha256": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c"
+  },
+  "agent/policy/proposals.hpp": {
+    "bytes": 6894,
+    "sha256": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289"
+  },
+  "agent/policy/public_flow_scenario.hpp": {
+    "bytes": 2781,
+    "sha256": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35"
+  },
+  "agent/policy/public_trade_ledger.hpp": {
+    "bytes": 5525,
+    "sha256": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef"
+  },
+  "agent/policy/sale_clock.hpp": {
+    "bytes": 1901,
+    "sha256": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260"
+  },
+  "agent/policy/search.hpp": {
+    "bytes": 7181,
+    "sha256": "73927a05351fed17a07271806acb8deeed4e7e6446a4944bd5ff3e358f6c4c63"
+  },
+  "agent/policy/startup_supply.hpp": {
+    "bytes": 674,
+    "sha256": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d"
+  },
+  "agent/policy/triad.hpp": {
+    "bytes": 33769,
+    "sha256": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a"
+  },
+  "referee/cpu_runtime.py": {
+    "bytes": 4135,
+    "sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726"
+  },
+  "referee/official/kaggriculture.json": {
+    "bytes": 6002,
+    "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "referee/official/kaggriculture.py": {
+    "bytes": 40356,
+    "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "referee/official/seed_utils.py": {
+    "bytes": 1585,
+    "sha256": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  },
+  "PARENT_IDENTITY.json": {
+    "bytes": 685,
+    "sha256": "6e3c23ae16c2ea523d1ecf1d03dc28ce9713c0a7260b7c6059a3a80091ea9f53"
+  },
+  "FULL64_METRICS.json": {
+    "bytes": 30705,
+    "sha256": "7f1fb8ce38b3f1998bd4883a066ad3121f788f2d1fa1fef97ab062b627feb259"
+  },
+  "FULL64_ROWS.json": {
+    "bytes": 406452,
+    "sha256": "da10bca8e29ba7fb147b287962e596c5873a5f51828650542bf29ac14aa303c5"
+  },
+  "own_traces/market_smart_v8_2535322_seat1.json.gz": {
+    "bytes": 688535,
+    "sha256": "b27df3091171e1d1ee27f2a1cbaacc8e7557ef9187219fbba36712c7b6666996"
+  },
+  "own_ledgers/market_smart_v8_2535322_seat1.json": {
+    "bytes": 60653,
+    "sha256": "14a3d8e9dc3e9395997c10b913a006179aafd09f48550f600b5135897381fe4e"
+  },
+  "own_traces/aurax_reactive_v1_852484341_seat0.json.gz": {
+    "bytes": 665072,
+    "sha256": "a26466c10ff9e3776c5952c2b7eca7bc1acf69929d50fb3783be83761a6a5671"
+  },
+  "own_ledgers/aurax_reactive_v1_852484341_seat0.json": {
+    "bytes": 56566,
+    "sha256": "db419bedd2778b0c5e488c2ab942c182a0f3b20ce66ce01ad119b336cd86a3a1"
+  },
+  "own_traces/submission_56149565_1623731725_seat1.json.gz": {
+    "bytes": 628884,
+    "sha256": "6c0fd88cf058f4a31fdd69cf791686d0b99c3a17ecb5d0cd0f105bb5c4cc6f87"
+  },
+  "own_ledgers/submission_56149565_1623731725_seat1.json": {
+    "bytes": 61357,
+    "sha256": "a366097a07b4f61fd6d08c302abb64542fcca4b09535412db2080f9517b515e3"
+  },
+  "own_traces/aurax_reactive_v1_1816494862_seat0.json.gz": {
+    "bytes": 699160,
+    "sha256": "6a55803c7800dd11145585ddb2ec6eef087c91db9912598527c8d916f3e7d5f9"
+  },
+  "own_ledgers/aurax_reactive_v1_1816494862_seat0.json": {
+    "bytes": 60217,
+    "sha256": "c21c10d0f07cf88cf3d9fd222d1ae0b768db5712413b1c806a6975662a250ca7"
+  },
+  "own_traces/soil_v219g_2535322_seat1.json.gz": {
+    "bytes": 688550,
+    "sha256": "162e1120efb4a7df9b5482b044da9eb4be2439beabac9d582e57c680fd06fb1c"
+  },
+  "own_ledgers/soil_v219g_2535322_seat1.json": {
+    "bytes": 60648,
+    "sha256": "9a98e6ca4e761718317dc821073233e223ad8f6ba0772d2aa574942787daa335"
+  },
+  "own_traces/thomas_955_v2_1395450535_seat1.json.gz": {
+    "bytes": 691476,
+    "sha256": "51a1eb87c5aba29bcb512d662e8fc4d634e517b212ad2801c9099ccec7396301"
+  },
+  "own_ledgers/thomas_955_v2_1395450535_seat1.json": {
+    "bytes": 57492,
+    "sha256": "8181b82fb8b850d08c114282997069d465fcf3d357f4e249b3da782c20b9b922"
+  },
+  "own_traces/submission_56149565_2029247155_seat0.json.gz": {
+    "bytes": 651685,
+    "sha256": "90557c5823e1315f581834dd4d32f1cc52724d28389b947fb861d208b09a8999"
+  },
+  "own_ledgers/submission_56149565_2029247155_seat0.json": {
+    "bytes": 59365,
+    "sha256": "5fa3120a0ae0b89144a861e13c96c0998032c1b0f2672c22f66422022c471645"
+  },
+  "SELECTED_CASES.json": {
+    "bytes": 19590,
+    "sha256": "6ab8e1cb03c7bb70b0688dd2753349456d1b2a546a73a56d621622cef09a86d3"
+  },
+  "probe_observations.py": {
+    "bytes": 1961,
+    "sha256": "59957f972de37a2a472b8a07eaaeba1b7f6dcdff1c8ed9a0948cf5abcf5e115c"
+  },
+  "README.md": {
+    "bytes": 2798,
+    "sha256": "1146a43124fed57b96a27f1197eb1415fc083f7787372fdf721a632b57679d48"
+  }
+}

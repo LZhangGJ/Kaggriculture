@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-09-13T15:48:46.389259+00:00",
+  "finished_utc": "2026-09-13T15:48:49.606370+00:00",
+  "elapsed_seconds": 3.2171179990000383,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/entry_smoke_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "60s",
+    "python",
+    "/mnt/data/a06_r12_r2_work/candidate/tests/entry_smoke.py",
+    "--agent",
+    "/mnt/data/a06_r12_r2_work/candidate/main.py",
+    "--feedback",
+    "/mnt/data/a06_r12_r2_work/input",
+    "--out",
+    "/mnt/data/a06_r12_r2_work/logs/entry_smoke_v1.json"
+  ],
+  "returncode": 0
+}

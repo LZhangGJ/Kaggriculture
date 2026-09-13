@@ -1,0 +1,57 @@
+2026-09-13T15:21:06.695681182Z
+Cpus_allowed_list:	0-4
+Mems_allowed_list:	0
+== cgroup ==
+0::/
+== /sys/fs/cgroup/cpu.max ==
+400000 100000
+== /sys/fs/cgroup/cpu.stat ==
+usage_usec 9858164
+user_usec 4243001
+system_usec 5615163
+nice_usec 0
+nr_periods 176
+nr_throttled 2
+throttled_usec 82821
+nr_bursts 0
+burst_usec 0
+== /sys/fs/cgroup/cpuset.cpus.effective ==
+0-4
+== /sys/fs/cgroup/memory.max ==
+4294967296
+== /sys/fs/cgroup/memory.current ==
+311156736
+== /sys/fs/cgroup/memory.peak ==
+1088237568
+== /sys/fs/cgroup/memory.events ==
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+== host mem info (NOT allocation) ==
+MemTotal:        6090736 kB
+MemAvailable:    5130528 kB
+SwapCached:            0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+== disk ==
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G   30M   30G   1% /
+== versions ==
+Python 3.13.5
+g++ (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Linux localhost 6.18.44 #1 SMP Sat Sep 12 15:35:21 UTC 2026 x86_64 GNU/Linux
+== files ==
+total 25M
+drwxrwsr-x 1 oai  oai_shared 4.0K Sep 13 15:21 .
+drwxr-xr-x 1 root root       4.0K Aug  3 18:26 ..
+-rw-r--r-- 1 root oai_shared 3.3M Sep 13 15:21 A06_r6_source_and_losses.zip
+-rw-r--r-- 1 root oai_shared  17M Sep 13 15:21 TRI_A06_r6_r1.zip
+-rw-r--r-- 1 root oai_shared 4.6M Sep 13 15:21 TRI_A06_r6_r1_own_visible.zip
+drwxr-sr-x 3 root oai_shared 4.0K Sep 13 15:21 a06_r6_r2_work

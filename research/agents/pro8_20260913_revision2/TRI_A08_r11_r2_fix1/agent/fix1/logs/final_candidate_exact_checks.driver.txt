@@ -1,0 +1,4 @@
+{"name": "final_candidate_exact_checks", "command": ["python", "candidate/tests/run_checks.py", "--sanitize"], "start_utc": "2026-09-13T16:50:57.882306+00:00", "end_utc": "2026-09-13T16:51:22.476812+00:00", "wall_seconds": 24.594518826000012, "exit_code": 0}
+{"status": "PASS", "new_games": 0, "output": "/mnt/data/fix1_work/candidate/rerun/20260913T165058311690Z", "commands": [{"name": "unit_1_build", "exit_code": 0}, {"name": "unit_1", "exit_code": 0}, {"name": "unit_0_build", "exit_code": 0}, {"name": "unit_0", "exit_code": 0}, {"name": "unit_sanitize_build", "exit_code": 0}, {"name": "unit_sanitize", "exit_code": 0}, {"name": "emit_animal_paths_build", "exit_code": 0}, {"name": "emit_scenarios", "exit_code": 0}, {"name": "official_execution", "exit_code": 0}, {"name": "native_choice_gate", "exit_code": 0}, {"name": "entry_contract", "exit_code": 0}]}
+
+

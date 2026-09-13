@@ -1,0 +1,5 @@
+[
+  "python",
+  "candidate/tests/run_checks.py",
+  "--sanitize"
+]

@@ -1,0 +1,6412 @@
+{
+  "kind": "single-own-farm official atomic settlements; no elapsed game and no opponent orders",
+  "source_case": "submission_56149565_852484341_seat0",
+  "source_step": 216,
+  "assertions": 32,
+  "new_games": 0,
+  "order_source": "compiled production preparation_with_wage_reserve helper via unit executable",
+  "synthetic_scenarios": [
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 0,
+        "FERTILIZER": 0
+      },
+      "original": {
+        "cash": 68.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 99.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3182.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3182.0,
+            "cash_after": 3913.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3913.0,
+            "cash_after": 3481.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3481.0,
+            "cash_after": 1481.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1481.0,
+            "cash_after": 581.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 581.0,
+            "cash_after": 181.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 181.0,
+            "cash_after": 151.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 151.0,
+            "cash_after": 101.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 101.0,
+            "cash_after": 100.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 100.0,
+            "cash_after": 99.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 99.0,
+            "cash_after": 97.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 97.0,
+            "cash_after": 94.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 94.0,
+            "cash_after": 89.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 89.0,
+            "cash_after": 81.0,
+            "hands_after": 6
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 81.0,
+            "cash_after": 68.0,
+            "hands_after": 7
+          }
+        ]
+      },
+      "protected": {
+        "cash": 68.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3448.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3182.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3182.0,
+            "cash_after": 3913.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3913.0,
+            "cash_after": 3481.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3481.0,
+            "cash_after": 3480.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3480.0,
+            "cash_after": 3479.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3479.0,
+            "cash_after": 3477.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3477.0,
+            "cash_after": 3474.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3474.0,
+            "cash_after": 3469.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3469.0,
+            "cash_after": 3461.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3461.0,
+            "cash_after": 3448.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3448.0,
+            "cash_after": 1448.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1448.0,
+            "cash_after": 548.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 548.0,
+            "cash_after": 148.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 148.0,
+            "cash_after": 118.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 118.0,
+            "cash_after": 68.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 1,
+        "FERTILIZER": 0
+      },
+      "original": {
+        "cash": 51.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 82.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3165.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3165.0,
+            "cash_after": 3896.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3896.0,
+            "cash_after": 3464.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3464.0,
+            "cash_after": 1464.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1464.0,
+            "cash_after": 564.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 564.0,
+            "cash_after": 164.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 164.0,
+            "cash_after": 134.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 134.0,
+            "cash_after": 84.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 84.0,
+            "cash_after": 83.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 83.0,
+            "cash_after": 82.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 82.0,
+            "cash_after": 80.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 80.0,
+            "cash_after": 77.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 77.0,
+            "cash_after": 72.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 72.0,
+            "cash_after": 64.0,
+            "hands_after": 6
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 64.0,
+            "cash_after": 51.0,
+            "hands_after": 7
+          }
+        ]
+      },
+      "protected": {
+        "cash": 51.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3431.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3165.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3165.0,
+            "cash_after": 3896.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3896.0,
+            "cash_after": 3464.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3464.0,
+            "cash_after": 3463.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3463.0,
+            "cash_after": 3462.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3462.0,
+            "cash_after": 3460.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3460.0,
+            "cash_after": 3457.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3457.0,
+            "cash_after": 3452.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3452.0,
+            "cash_after": 3444.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3444.0,
+            "cash_after": 3431.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3431.0,
+            "cash_after": 1431.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1431.0,
+            "cash_after": 531.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 531.0,
+            "cash_after": 131.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 131.0,
+            "cash_after": 101.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 101.0,
+            "cash_after": 51.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 2,
+        "FERTILIZER": 1
+      },
+      "original": {
+        "cash": 31.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 62.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3147.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3147.0,
+            "cash_after": 3876.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3876.0,
+            "cash_after": 3444.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3444.0,
+            "cash_after": 1444.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1444.0,
+            "cash_after": 544.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 544.0,
+            "cash_after": 144.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 144.0,
+            "cash_after": 114.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 114.0,
+            "cash_after": 64.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 64.0,
+            "cash_after": 63.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 63.0,
+            "cash_after": 62.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 62.0,
+            "cash_after": 60.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 60.0,
+            "cash_after": 57.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 57.0,
+            "cash_after": 52.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 52.0,
+            "cash_after": 44.0,
+            "hands_after": 6
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 44.0,
+            "cash_after": 31.0,
+            "hands_after": 7
+          }
+        ]
+      },
+      "protected": {
+        "cash": 31.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3411.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3147.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3147.0,
+            "cash_after": 3876.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3876.0,
+            "cash_after": 3444.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3444.0,
+            "cash_after": 3443.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3443.0,
+            "cash_after": 3442.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3442.0,
+            "cash_after": 3440.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3440.0,
+            "cash_after": 3437.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3437.0,
+            "cash_after": 3432.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3432.0,
+            "cash_after": 3424.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3424.0,
+            "cash_after": 3411.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3411.0,
+            "cash_after": 1411.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1411.0,
+            "cash_after": 511.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 511.0,
+            "cash_after": 111.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 111.0,
+            "cash_after": 81.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 81.0,
+            "cash_after": 31.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 3,
+        "FERTILIZER": 1
+      },
+      "original": {
+        "cash": 12.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 43.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3128.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3128.0,
+            "cash_after": 3857.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3857.0,
+            "cash_after": 3425.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3425.0,
+            "cash_after": 1425.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1425.0,
+            "cash_after": 525.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 525.0,
+            "cash_after": 125.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 125.0,
+            "cash_after": 95.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 95.0,
+            "cash_after": 45.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 45.0,
+            "cash_after": 44.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 44.0,
+            "cash_after": 43.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 43.0,
+            "cash_after": 41.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 41.0,
+            "cash_after": 38.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 38.0,
+            "cash_after": 33.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 33.0,
+            "cash_after": 25.0,
+            "hands_after": 6
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 25.0,
+            "cash_after": 12.0,
+            "hands_after": 7
+          }
+        ]
+      },
+      "protected": {
+        "cash": 12.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3392.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3128.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3128.0,
+            "cash_after": 3857.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3857.0,
+            "cash_after": 3425.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3425.0,
+            "cash_after": 3424.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3424.0,
+            "cash_after": 3423.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3423.0,
+            "cash_after": 3421.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3421.0,
+            "cash_after": 3418.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3418.0,
+            "cash_after": 3413.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3413.0,
+            "cash_after": 3405.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3405.0,
+            "cash_after": 3392.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3392.0,
+            "cash_after": 1392.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1392.0,
+            "cash_after": 492.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 492.0,
+            "cash_after": 92.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 92.0,
+            "cash_after": 62.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 62.0,
+            "cash_after": 12.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 5,
+        "FERTILIZER": 2
+      },
+      "original": {
+        "cash": 0.0,
+        "hands": 2,
+        "first_batch": {
+          "cash": 0.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3087.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3087.0,
+            "cash_after": 3814.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3814.0,
+            "cash_after": 3382.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3382.0,
+            "cash_after": 1382.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1382.0,
+            "cash_after": 482.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 482.0,
+            "cash_after": 82.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 82.0,
+            "cash_after": 52.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 52.0,
+            "cash_after": 2.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2.0,
+            "cash_after": 1.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 2
+          }
+        ]
+      },
+      "protected": {
+        "cash": 19.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3349.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3087.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3087.0,
+            "cash_after": 3814.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3814.0,
+            "cash_after": 3382.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3382.0,
+            "cash_after": 3381.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3381.0,
+            "cash_after": 3380.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3380.0,
+            "cash_after": 3378.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3378.0,
+            "cash_after": 3375.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3375.0,
+            "cash_after": 3370.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3370.0,
+            "cash_after": 3362.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3362.0,
+            "cash_after": 3349.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3349.0,
+            "cash_after": 1349.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1349.0,
+            "cash_after": 449.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 449.0,
+            "cash_after": 49.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 49.0,
+            "cash_after": 19.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 19.0,
+            "cash_after": 19.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 8,
+        "FERTILIZER": 4
+      },
+      "original": {
+        "cash": 6.0,
+        "hands": 5,
+        "first_batch": {
+          "cash": 16.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 3,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3006.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3006.0,
+            "cash_after": 3730.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3730.0,
+            "cash_after": 3298.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3298.0,
+            "cash_after": 1298.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1298.0,
+            "cash_after": 398.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 3,
+            "cash_before": 398.0,
+            "cash_after": 98.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 98.0,
+            "cash_after": 68.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 68.0,
+            "cash_after": 18.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 18.0,
+            "cash_after": 17.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 17.0,
+            "cash_after": 16.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 16.0,
+            "cash_after": 14.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 14.0,
+            "cash_after": 11.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 11.0,
+            "cash_after": 6.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 6.0,
+            "cash_after": 6.0,
+            "hands_after": 5
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 6.0,
+            "cash_after": 6.0,
+            "hands_after": 5
+          }
+        ]
+      },
+      "protected": {
+        "cash": 35.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3265.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 3,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 3006.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 3006.0,
+            "cash_after": 3730.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3730.0,
+            "cash_after": 3298.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3298.0,
+            "cash_after": 3297.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3297.0,
+            "cash_after": 3296.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3296.0,
+            "cash_after": 3294.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3294.0,
+            "cash_after": 3291.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3291.0,
+            "cash_after": 3286.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3286.0,
+            "cash_after": 3278.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3278.0,
+            "cash_after": 3265.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3265.0,
+            "cash_after": 1265.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1265.0,
+            "cash_after": 365.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 3,
+            "cash_before": 365.0,
+            "cash_after": 65.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 65.0,
+            "cash_after": 35.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 35.0,
+            "cash_after": 35.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 10,
+        "FERTILIZER": 5
+      },
+      "original": {
+        "cash": 2.0,
+        "hands": 4,
+        "first_batch": {
+          "cash": 7.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 2,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 3,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2939.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2939.0,
+            "cash_after": 3661.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3661.0,
+            "cash_after": 3229.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3229.0,
+            "cash_after": 1229.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1229.0,
+            "cash_after": 329.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 3,
+            "cash_before": 329.0,
+            "cash_after": 29.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 29.0,
+            "cash_after": 9.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 9.0,
+            "cash_after": 9.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 9.0,
+            "cash_after": 8.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 8.0,
+            "cash_after": 7.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 7.0,
+            "cash_after": 5.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 5.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          }
+        ]
+      },
+      "protected": {
+        "cash": 16.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3196.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2939.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2939.0,
+            "cash_after": 3661.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3661.0,
+            "cash_after": 3229.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3229.0,
+            "cash_after": 3228.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3228.0,
+            "cash_after": 3227.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3227.0,
+            "cash_after": 3225.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3225.0,
+            "cash_after": 3222.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3222.0,
+            "cash_after": 3217.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3217.0,
+            "cash_after": 3209.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3209.0,
+            "cash_after": 3196.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3196.0,
+            "cash_after": 1196.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1196.0,
+            "cash_after": 296.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 296.0,
+            "cash_after": 96.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 96.0,
+            "cash_after": 66.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 66.0,
+            "cash_after": 16.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 13,
+        "FERTILIZER": 6
+      },
+      "original": {
+        "cash": 0.0,
+        "hands": 1,
+        "first_batch": {
+          "cash": 0.0,
+          "hands": 1
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 2,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2833.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2833.0,
+            "cash_after": 3553.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3553.0,
+            "cash_after": 3121.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3121.0,
+            "cash_after": 1121.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1121.0,
+            "cash_after": 221.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 221.0,
+            "cash_after": 21.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 21.0,
+            "cash_after": 1.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 1
+          }
+        ]
+      },
+      "protected": {
+        "cash": 8.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 3088.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 1,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2833.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2833.0,
+            "cash_after": 3553.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3553.0,
+            "cash_after": 3121.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3121.0,
+            "cash_after": 3120.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3120.0,
+            "cash_after": 3119.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3119.0,
+            "cash_after": 3117.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3117.0,
+            "cash_after": 3114.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3114.0,
+            "cash_after": 3109.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3109.0,
+            "cash_after": 3101.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3101.0,
+            "cash_after": 3088.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 3088.0,
+            "cash_after": 1088.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1088.0,
+            "cash_after": 188.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 1,
+            "cash_before": 188.0,
+            "cash_after": 88.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 88.0,
+            "cash_after": 58.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 58.0,
+            "cash_after": 8.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 20,
+        "FERTILIZER": 10
+      },
+      "original": {
+        "cash": 7.0,
+        "hands": 5,
+        "first_batch": {
+          "cash": 17.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 2,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2568.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2568.0,
+            "cash_after": 3281.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3281.0,
+            "cash_after": 2849.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 2849.0,
+            "cash_after": 849.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 849.0,
+            "cash_after": 249.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 249.0,
+            "cash_after": 49.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 49.0,
+            "cash_after": 19.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 19.0,
+            "cash_after": 19.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 19.0,
+            "cash_after": 18.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 18.0,
+            "cash_after": 17.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 17.0,
+            "cash_after": 15.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 15.0,
+            "cash_after": 12.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 12.0,
+            "cash_after": 7.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 7.0,
+            "cash_after": 7.0,
+            "hands_after": 5
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 7.0,
+            "cash_after": 7.0,
+            "hands_after": 5
+          }
+        ]
+      },
+      "protected": {
+        "cash": 6.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 2816.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 2,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2568.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2568.0,
+            "cash_after": 3281.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 3281.0,
+            "cash_after": 2849.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2849.0,
+            "cash_after": 2848.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2848.0,
+            "cash_after": 2847.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2847.0,
+            "cash_after": 2845.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2845.0,
+            "cash_after": 2842.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2842.0,
+            "cash_after": 2837.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2837.0,
+            "cash_after": 2829.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2829.0,
+            "cash_after": 2816.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 2816.0,
+            "cash_after": 816.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 816.0,
+            "cash_after": 216.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 216.0,
+            "cash_after": 16.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 1,
+            "cash_before": 16.0,
+            "cash_after": 6.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 6.0,
+            "cash_after": 6.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 30,
+        "FERTILIZER": 15
+      },
+      "original": {
+        "cash": 2.0,
+        "hands": 4,
+        "first_batch": {
+          "cash": 7.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 1,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2267.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2267.0,
+            "cash_after": 2971.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 2971.0,
+            "cash_after": 2539.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 2539.0,
+            "cash_after": 539.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 1,
+            "cash_before": 539.0,
+            "cash_after": 239.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 239.0,
+            "cash_after": 39.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 39.0,
+            "cash_after": 9.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 9.0,
+            "cash_after": 9.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 9.0,
+            "cash_after": 8.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 8.0,
+            "cash_after": 7.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 7.0,
+            "cash_after": 5.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 5.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 2.0,
+            "cash_after": 2.0,
+            "hands_after": 4
+          }
+        ]
+      },
+      "protected": {
+        "cash": 6.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 2506.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 1,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 2267.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 2267.0,
+            "cash_after": 2971.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 2971.0,
+            "cash_after": 2539.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2539.0,
+            "cash_after": 2538.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2538.0,
+            "cash_after": 2537.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2537.0,
+            "cash_after": 2535.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2535.0,
+            "cash_after": 2532.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2532.0,
+            "cash_after": 2527.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2527.0,
+            "cash_after": 2519.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 2519.0,
+            "cash_after": 2506.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 1,
+            "cash_before": 2506.0,
+            "cash_after": 506.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 1,
+            "cash_before": 506.0,
+            "cash_after": 206.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 206.0,
+            "cash_after": 6.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 0,
+            "cash_before": 6.0,
+            "cash_after": 6.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 6.0,
+            "cash_after": 6.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 50,
+        "FERTILIZER": 25
+      },
+      "original": {
+        "cash": 520.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 551.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 1679.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 1679.0,
+            "cash_after": 2365.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 2365.0,
+            "cash_after": 1933.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 1933.0,
+            "cash_after": 1933.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1933.0,
+            "cash_after": 1033.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 1033.0,
+            "cash_after": 633.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 633.0,
+            "cash_after": 603.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 603.0,
+            "cash_after": 553.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 553.0,
+            "cash_after": 552.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 552.0,
+            "cash_after": 551.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 551.0,
+            "cash_after": 549.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 549.0,
+            "cash_after": 546.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 546.0,
+            "cash_after": 541.0,
+            "hands_after": 5
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 541.0,
+            "cash_after": 533.0,
+            "hands_after": 6
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 533.0,
+            "cash_after": 520.0,
+            "hands_after": 7
+          }
+        ]
+      },
+      "protected": {
+        "cash": 520.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 1900.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 4,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 1679.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 1679.0,
+            "cash_after": 2365.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 2365.0,
+            "cash_after": 1933.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1933.0,
+            "cash_after": 1932.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1932.0,
+            "cash_after": 1931.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1931.0,
+            "cash_after": 1929.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1929.0,
+            "cash_after": 1926.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1926.0,
+            "cash_after": 1921.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1921.0,
+            "cash_after": 1913.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1913.0,
+            "cash_after": 1900.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 1900.0,
+            "cash_after": 1900.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1900.0,
+            "cash_after": 1000.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 4,
+            "cash_before": 1000.0,
+            "cash_after": 600.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 600.0,
+            "cash_after": 570.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 570.0,
+            "cash_after": 520.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 80,
+        "FERTILIZER": 40
+      },
+      "original": {
+        "cash": 1.0,
+        "hands": 3,
+        "first_batch": {
+          "cash": 3.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 2,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 1,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 798.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 798.0,
+            "cash_after": 1457.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1457.0,
+            "cash_after": 1025.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 1025.0,
+            "cash_after": 1025.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 1025.0,
+            "cash_after": 125.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 1,
+            "cash_before": 125.0,
+            "cash_after": 25.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 25.0,
+            "cash_after": 5.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 5.0,
+            "cash_after": 5.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 5.0,
+            "cash_after": 4.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 4.0,
+            "cash_after": 3.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          }
+        ]
+      },
+      "protected": {
+        "cash": 12.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 992.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 3,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 798.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 798.0,
+            "cash_after": 1457.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1457.0,
+            "cash_after": 1025.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1025.0,
+            "cash_after": 1024.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1024.0,
+            "cash_after": 1023.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1023.0,
+            "cash_after": 1021.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1021.0,
+            "cash_after": 1018.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1018.0,
+            "cash_after": 1013.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1013.0,
+            "cash_after": 1005.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 1005.0,
+            "cash_after": 992.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 992.0,
+            "cash_after": 992.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 992.0,
+            "cash_after": 92.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 0,
+            "cash_before": 92.0,
+            "cash_after": 92.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 92.0,
+            "cash_after": 62.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 62.0,
+            "cash_after": 12.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 120,
+        "FERTILIZER": 60
+      },
+      "original": {
+        "cash": 0.0,
+        "hands": 4,
+        "first_batch": {
+          "cash": 5.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 2,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 496.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 496.0,
+            "cash_after": 1119.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1119.0,
+            "cash_after": 687.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 687.0,
+            "cash_after": 687.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 687.0,
+            "cash_after": 87.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 0,
+            "cash_before": 87.0,
+            "cash_after": 87.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 87.0,
+            "cash_after": 57.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 57.0,
+            "cash_after": 7.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 7.0,
+            "cash_after": 6.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 6.0,
+            "cash_after": 5.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 5.0,
+            "cash_after": 3.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3.0,
+            "cash_after": 0.0,
+            "hands_after": 4
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 4
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 4
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 0.0,
+            "cash_after": 0.0,
+            "hands_after": 4
+          }
+        ]
+      },
+      "protected": {
+        "cash": 24.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 654.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 2,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 496.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 496.0,
+            "cash_after": 1119.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1119.0,
+            "cash_after": 687.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 687.0,
+            "cash_after": 686.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 686.0,
+            "cash_after": 685.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 685.0,
+            "cash_after": 683.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 683.0,
+            "cash_after": 680.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 680.0,
+            "cash_after": 675.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 675.0,
+            "cash_after": 667.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 667.0,
+            "cash_after": 654.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 654.0,
+            "cash_after": 654.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 654.0,
+            "cash_after": 54.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 0,
+            "cash_before": 54.0,
+            "cash_after": 54.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 54.0,
+            "cash_after": 24.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 24.0,
+            "cash_after": 24.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    },
+    {
+      "synthetic_public_inventory_additions": {
+        "MILK": 200,
+        "FERTILIZER": 100
+      },
+      "original": {
+        "cash": 1.0,
+        "hands": 3,
+        "first_batch": {
+          "cash": 3.0,
+          "hands": 2
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 2,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 496.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 496.0,
+            "cash_after": 1047.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1047.0,
+            "cash_after": 615.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 615.0,
+            "cash_after": 615.0,
+            "hands_after": 0
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 2,
+            "cash_before": 615.0,
+            "cash_after": 15.0,
+            "hands_after": 0
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 0,
+            "cash_before": 15.0,
+            "cash_after": 15.0,
+            "hands_after": 0
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 1,
+            "cash_before": 15.0,
+            "cash_after": 5.0,
+            "hands_after": 0
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 0,
+            "cash_before": 5.0,
+            "cash_after": 5.0,
+            "hands_after": 0
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 5.0,
+            "cash_after": 4.0,
+            "hands_after": 1
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 4.0,
+            "cash_after": 3.0,
+            "hands_after": 2
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 3.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 0,
+            "cash_before": 1.0,
+            "cash_after": 1.0,
+            "hands_after": 3
+          }
+        ]
+      },
+      "protected": {
+        "cash": 2.0,
+        "hands": 7,
+        "first_batch": {
+          "cash": 582.0,
+          "hands": 7
+        },
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 1,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 1,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "events": [
+          {
+            "index": 0,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "MILK",
+              14
+            ],
+            "filled": 14,
+            "cash_before": 482.0,
+            "cash_after": 496.0,
+            "hands_after": 0
+          },
+          {
+            "index": 1,
+            "batch": 0,
+            "order": [
+              "SELL",
+              "FERTILIZER",
+              9
+            ],
+            "filled": 9,
+            "cash_before": 496.0,
+            "cash_after": 1047.0,
+            "hands_after": 0
+          },
+          {
+            "index": 2,
+            "batch": 0,
+            "order": [
+              "BUY_PRODUCT",
+              "WHEAT",
+              12
+            ],
+            "filled": 12,
+            "cash_before": 1047.0,
+            "cash_after": 615.0,
+            "hands_after": 0
+          },
+          {
+            "index": 3,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 615.0,
+            "cash_after": 614.0,
+            "hands_after": 1
+          },
+          {
+            "index": 4,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 614.0,
+            "cash_after": 613.0,
+            "hands_after": 2
+          },
+          {
+            "index": 5,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 613.0,
+            "cash_after": 611.0,
+            "hands_after": 3
+          },
+          {
+            "index": 6,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 611.0,
+            "cash_after": 608.0,
+            "hands_after": 4
+          },
+          {
+            "index": 7,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 608.0,
+            "cash_after": 603.0,
+            "hands_after": 5
+          },
+          {
+            "index": 8,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 603.0,
+            "cash_after": 595.0,
+            "hands_after": 6
+          },
+          {
+            "index": 9,
+            "batch": 0,
+            "order": [
+              "HIRE"
+            ],
+            "filled": 1,
+            "cash_before": 595.0,
+            "cash_after": 582.0,
+            "hands_after": 7
+          },
+          {
+            "index": 10,
+            "batch": 1,
+            "order": [
+              "BUY_LAND"
+            ],
+            "filled": 0,
+            "cash_before": 582.0,
+            "cash_after": 582.0,
+            "hands_after": 7
+          },
+          {
+            "index": 11,
+            "batch": 1,
+            "order": [
+              "BUY_ANIMAL",
+              "GOOSE",
+              3
+            ],
+            "filled": 1,
+            "cash_before": 582.0,
+            "cash_after": 282.0,
+            "hands_after": 7
+          },
+          {
+            "index": 12,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ],
+            "filled": 2,
+            "cash_before": 282.0,
+            "cash_after": 82.0,
+            "hands_after": 7
+          },
+          {
+            "index": 13,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "WHEAT",
+              3
+            ],
+            "filled": 3,
+            "cash_before": 82.0,
+            "cash_after": 52.0,
+            "hands_after": 7
+          },
+          {
+            "index": 14,
+            "batch": 1,
+            "order": [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ],
+            "filled": 1,
+            "cash_before": 52.0,
+            "cash_after": 2.0,
+            "hands_after": 7
+          }
+        ]
+      }
+    }
+  ],
+  "insufficient_feed_and_wage_cash_negative": {
+    "shock": {
+      "MILK": 200,
+      "FERTILIZER": 600,
+      "WHEAT": -650
+    },
+    "original": {
+      "cash": 1.0,
+      "hands": 4,
+      "first_batch": {
+        "cash": 6.0,
+        "hands": 2
+      },
+      "shed": {
+        "WHEAT": 9,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 4,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 2,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "events": [
+        {
+          "index": 0,
+          "batch": 0,
+          "order": [
+            "SELL",
+            "MILK",
+            14
+          ],
+          "filled": 14,
+          "cash_before": 482.0,
+          "cash_after": 496.0,
+          "hands_after": 0
+        },
+        {
+          "index": 1,
+          "batch": 0,
+          "order": [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          "filled": 9,
+          "cash_before": 496.0,
+          "cash_after": 505.0,
+          "hands_after": 0
+        },
+        {
+          "index": 2,
+          "batch": 0,
+          "order": [
+            "BUY_PRODUCT",
+            "WHEAT",
+            12
+          ],
+          "filled": 9,
+          "cash_before": 505.0,
+          "cash_after": 28.0,
+          "hands_after": 0
+        },
+        {
+          "index": 3,
+          "batch": 0,
+          "order": [
+            "BUY_LAND"
+          ],
+          "filled": 0,
+          "cash_before": 28.0,
+          "cash_after": 28.0,
+          "hands_after": 0
+        },
+        {
+          "index": 4,
+          "batch": 0,
+          "order": [
+            "BUY_ANIMAL",
+            "GOOSE",
+            3
+          ],
+          "filled": 0,
+          "cash_before": 28.0,
+          "cash_after": 28.0,
+          "hands_after": 0
+        },
+        {
+          "index": 5,
+          "batch": 0,
+          "order": [
+            "BUY_SEED",
+            "STRAWBERRY",
+            4
+          ],
+          "filled": 0,
+          "cash_before": 28.0,
+          "cash_after": 28.0,
+          "hands_after": 0
+        },
+        {
+          "index": 6,
+          "batch": 0,
+          "order": [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          "filled": 2,
+          "cash_before": 28.0,
+          "cash_after": 8.0,
+          "hands_after": 0
+        },
+        {
+          "index": 7,
+          "batch": 0,
+          "order": [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 0
+        },
+        {
+          "index": 8,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 8.0,
+          "cash_after": 7.0,
+          "hands_after": 1
+        },
+        {
+          "index": 9,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 7.0,
+          "cash_after": 6.0,
+          "hands_after": 2
+        },
+        {
+          "index": 10,
+          "batch": 1,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 6.0,
+          "cash_after": 4.0,
+          "hands_after": 3
+        },
+        {
+          "index": 11,
+          "batch": 1,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 4.0,
+          "cash_after": 1.0,
+          "hands_after": 4
+        },
+        {
+          "index": 12,
+          "batch": 1,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 0,
+          "cash_before": 1.0,
+          "cash_after": 1.0,
+          "hands_after": 4
+        },
+        {
+          "index": 13,
+          "batch": 1,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 0,
+          "cash_before": 1.0,
+          "cash_after": 1.0,
+          "hands_after": 4
+        },
+        {
+          "index": 14,
+          "batch": 1,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 0,
+          "cash_before": 1.0,
+          "cash_after": 1.0,
+          "hands_after": 4
+        }
+      ]
+    },
+    "protected": {
+      "cash": 8.0,
+      "hands": 6,
+      "first_batch": {
+        "cash": 8.0,
+        "hands": 6
+      },
+      "shed": {
+        "WHEAT": 9,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 4,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "events": [
+        {
+          "index": 0,
+          "batch": 0,
+          "order": [
+            "SELL",
+            "MILK",
+            14
+          ],
+          "filled": 14,
+          "cash_before": 482.0,
+          "cash_after": 496.0,
+          "hands_after": 0
+        },
+        {
+          "index": 1,
+          "batch": 0,
+          "order": [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          "filled": 9,
+          "cash_before": 496.0,
+          "cash_after": 505.0,
+          "hands_after": 0
+        },
+        {
+          "index": 2,
+          "batch": 0,
+          "order": [
+            "BUY_PRODUCT",
+            "WHEAT",
+            12
+          ],
+          "filled": 9,
+          "cash_before": 505.0,
+          "cash_after": 28.0,
+          "hands_after": 0
+        },
+        {
+          "index": 3,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 28.0,
+          "cash_after": 27.0,
+          "hands_after": 1
+        },
+        {
+          "index": 4,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 27.0,
+          "cash_after": 26.0,
+          "hands_after": 2
+        },
+        {
+          "index": 5,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 26.0,
+          "cash_after": 24.0,
+          "hands_after": 3
+        },
+        {
+          "index": 6,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 24.0,
+          "cash_after": 21.0,
+          "hands_after": 4
+        },
+        {
+          "index": 7,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 21.0,
+          "cash_after": 16.0,
+          "hands_after": 5
+        },
+        {
+          "index": 8,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 1,
+          "cash_before": 16.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 9,
+          "batch": 0,
+          "order": [
+            "HIRE"
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 10,
+          "batch": 1,
+          "order": [
+            "BUY_LAND"
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 11,
+          "batch": 1,
+          "order": [
+            "BUY_ANIMAL",
+            "GOOSE",
+            3
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 12,
+          "batch": 1,
+          "order": [
+            "BUY_SEED",
+            "STRAWBERRY",
+            4
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 13,
+          "batch": 1,
+          "order": [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        },
+        {
+          "index": 14,
+          "batch": 1,
+          "order": [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ],
+          "filled": 0,
+          "cash_before": 8.0,
+          "cash_after": 8.0,
+          "hands_after": 6
+        }
+      ]
+    }
+  },
+  "hire_improvement_synthetic_milk_deltas": [
+    5,
+    8,
+    10,
+    13,
+    20,
+    30,
+    80,
+    120,
+    200
+  ]
+}

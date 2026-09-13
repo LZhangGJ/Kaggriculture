@@ -1,0 +1,21 @@
+{
+  "name": "reduced_clang17_build",
+  "command": [
+    "clang++",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "/mnt/data/fix1_work/repro/original_standalone.cpp",
+    "-o",
+    "/mnt/data/fix1_work/repro/original_clang17"
+  ],
+  "start_utc": "2026-09-13T16:31:11.063717+00:00",
+  "end_utc": "2026-09-13T16:31:11.388339+00:00",
+  "wall_seconds": 0.3246300689999657,
+  "exit_code": 0
+}

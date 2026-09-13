@@ -1,0 +1,1 @@
+/mnt/data/a06_r6_r2_work/candidate/policy/a06.so: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=2dc8ecd075b26f861077b1c9a2b868950cd30790, not stripped

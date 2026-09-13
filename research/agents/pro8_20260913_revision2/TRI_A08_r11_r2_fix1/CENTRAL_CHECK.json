@@ -1,0 +1,82 @@
+{
+  "checked_utc": "2026-09-13T17:19:21.702579+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "4094b9808a6cd07f922e199fea4d2c47349f7aa14a7154178cd90959b4d402e3",
+  "native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+  "native_path": "policy/tri_a08_r11_r2_fix1.so",
+  "manifest_files_verified": 1574,
+  "source_files_verified": 44,
+  "validation_sources": {
+    "tests/native_choice_gate.py": "1c4866667e35d9fd9d167b001fd83a89a5d10a8f391fcd2cdf15a5d83ae1c51d"
+  },
+  "changed_production_files": [
+    "build.py",
+    "main.py",
+    "policy/animal_service_dp.hpp",
+    "policy/bridge.cpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "fdd4dfefeae52ef33ce9d8ec240d81ee60da2fdeda9885bca1ba74553ff8583b",
+  "compiler_parity_observations": 5033,
+  "unit_checks": 148821,
+  "native_gate": {
+    "status": "PASS",
+    "library": "/mnt/c/Users/DHU_Z/OneDrive/\u6587\u6863/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r2_fix1/package/policy/tri_a08_r11_r2_fix1.so",
+    "native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "animal_collection_labor": 1,
+    "table_solves": 530,
+    "states_validated": 29456,
+    "checks_passed_before_mutation": 171628,
+    "mutation_prefix_states": 5,
+    "checks_including_expected_mutation_failure": 171656,
+    "table_digest": "5b7ddb3317e1466890ae9a6bb505711e2e221a506433cfb5c2927d6ac96a7f6b",
+    "rich": [
+      65.0,
+      65.0,
+      1.0,
+      0.0
+    ],
+    "negative": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mutation_rejected": true,
+    "mutation_message": "action != independently selected argmax kind=9 placed=21 day=28 hunger=1 bonus=0 work=4.0",
+    "seconds": 0.512187253999997,
+    "new_games": 0
+  },
+  "official_lifecycle_cases": 4608,
+  "real_diagnostic_games": 4,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "flexon_v5_113649547_seat0",
+      "r1_margin": -17185.0,
+      "revision2_fix1_margin": -13798.0,
+      "same_actions_as_r1": false
+    },
+    {
+      "id": "submission_56149565_521596133_seat1",
+      "r1_margin": -15877.0,
+      "revision2_fix1_margin": -7583.0,
+      "same_actions_as_r1": false
+    },
+    {
+      "id": "market_smart_v8_915042141_seat0",
+      "r1_margin": 78.0,
+      "revision2_fix1_margin": 7059.0,
+      "same_actions_as_r1": false
+    },
+    {
+      "id": "submission_56149565_915042141_seat1",
+      "r1_margin": 324.0,
+      "revision2_fix1_margin": 5137.0,
+      "same_actions_as_r1": false
+    }
+  ],
+  "seconds": 151.689607626
+}

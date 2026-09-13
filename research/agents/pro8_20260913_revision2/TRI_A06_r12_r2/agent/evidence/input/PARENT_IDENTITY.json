@@ -1,0 +1,12 @@
+{
+  "candidate": "TRI_A06_r12_r1",
+  "runtime_assets": {
+    "main.py": "348bfe7d6000c980c01e73b6b15cff17e9b9154c0f014e90c6722f296d3674b4",
+    "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+    "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+    "policy/a06.so": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b"
+  },
+  "native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "zip_sha256": "eae4ca287d258e20fb4536a506c261bcb03f23a219c1b146e26128d5ceb24eba",
+  "central_receipt_sha256": "1db8707fb20deae948e81bcd63a6e333cc3eceb76b068abefd58401b881b110f"
+}

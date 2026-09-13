@@ -1,0 +1,23 @@
+	Command being timed: "timeout --kill-after=5s 90s /opt/pyvenv/bin/python /mnt/data/a06_r12_r2_work/candidate/tests/prefix_entry.py --parent /mnt/data/a06_r12_r2_work/parent/main.py --candidate /mnt/data/a06_r12_r2_work/candidate/main.py --feedback /mnt/data/a06_r12_r2_work/input --out /mnt/data/a06_r12_r2_work/logs/prefix_v1.json"
+	User time (seconds): 15.64
+	System time (seconds): 0.30
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 250276
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 149854
+	Voluntary context switches: 13
+	Involuntary context switches: 138
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 22344
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

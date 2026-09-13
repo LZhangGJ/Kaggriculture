@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-13T15:55:18.943147+00:00",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_max": "400000 100000",
+  "cpuset_cpus_effective": "0-4",
+  "memory_max": "4294967296",
+  "memory_current": "708255744",
+  "memory_peak": "1342181376",
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "host_MemAvailable_not_allocation": "MemAvailable:    4864224 kB",
+  "disk_bytes": {
+    "total": 33770192896,
+    "used": 232050688,
+    "free": 31803379712
+  },
+  "python": "Python 3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "packaging_utc": "2026-09-13T15:58:14.546640+00:00",
+  "memory_peak_at_packaging_bytes": 1342181376,
+  "memory_current_at_packaging_bytes": 624209920,
+  "elapsed_from_original_dispatch_seconds": 2271.85764,
+  "deadline_utc": "2026-09-13T17:20:22.689000+00:00",
+  "elapsed_within_120_minutes": true
+}

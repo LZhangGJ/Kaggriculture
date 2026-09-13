@@ -1,0 +1,5 @@
+[
+  "python",
+  "/mnt/data/fix1_work/candidate/tests/run_checks.py",
+  "--sanitize"
+]

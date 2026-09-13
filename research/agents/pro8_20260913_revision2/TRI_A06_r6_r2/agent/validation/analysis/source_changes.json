@@ -1,0 +1,20 @@
+{
+  "original_files": 45,
+  "changed_existing_files": {
+    "policy/search.hpp": {
+      "parent": "73927a05351fed17a07271806acb8deeed4e7e6446a4944bd5ff3e358f6c4c63",
+      "candidate": "3a490e3f60509e515176f36221310e849d857452df4f28c2bf6f0a9698b654b7"
+    },
+    "policy/a06.so": {
+      "parent": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+      "candidate": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1"
+    }
+  },
+  "unchanged_existing_files": 43,
+  "production_source_changes": [
+    "policy/search.hpp"
+  ],
+  "fixed_config_unchanged": true,
+  "flags_unchanged": true,
+  "root_entry_unchanged": true
+}

@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T15:40:17.157653+00:00",
+  "finished_utc": "2026-09-13T15:40:20.146285+00:00",
+  "elapsed_seconds": 2.988638734999995,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/units_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "120s",
+    "python",
+    "/mnt/data/a06_r12_r2_work/candidate/tests/run_units.py"
+  ],
+  "returncode": 0
+}

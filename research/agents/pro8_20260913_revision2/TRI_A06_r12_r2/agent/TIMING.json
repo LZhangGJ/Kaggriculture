@@ -1,0 +1,71 @@
+{
+  "clock_source": "container UTC; user dispatch and deadline retained verbatim",
+  "dispatch_utc": "2026-09-13T15:24:05.645000+00:00",
+  "deadline_utc": "2026-09-13T17:24:05.645000+00:00",
+  "first_resource_utc": "2026-09-13T15:24:41.542861682Z",
+  "first_resource_within_5_minutes": true,
+  "primary_source_change_completed_before": "2026-09-13T15:38:47.474436+00:00",
+  "packaging_checkpoint_utc": "2026-09-13T15:58:46.962035+00:00",
+  "elapsed_dispatch_to_checkpoint_seconds": 2081.317035,
+  "primary_compile": {
+    "started_utc": "2026-09-13T15:38:47.474436+00:00",
+    "finished_utc": "2026-09-13T15:39:16.891168+00:00",
+    "elapsed_seconds": 29.416741546000026,
+    "command": [
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/mnt/data/a06_r12_r2_work/logs/candidate_compile_v1.time",
+      "timeout",
+      "--kill-after=5s",
+      "120s",
+      "/opt/pyvenv/bin/python",
+      "/mnt/data/a06_r12_r2_work/candidate/build.py"
+    ],
+    "returncode": 0,
+    "peak_rss_kib": 607836
+  },
+  "independent_rebuild": {
+    "started_utc": "2026-09-13T15:53:06.491200+00:00",
+    "finished_utc": "2026-09-13T15:53:34.879492+00:00",
+    "elapsed_seconds": 28.388298891999966,
+    "command": [
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/mnt/data/a06_r12_r2_work/logs/independent_rebuild.time",
+      "timeout",
+      "--kill-after=5s",
+      "120s",
+      "/opt/pyvenv/bin/python",
+      "/mnt/data/a06_r12_r2_work/independent_build/build.py"
+    ],
+    "returncode": 0,
+    "peak_rss_kib": 607968
+  },
+  "staged_offline_suite": {
+    "started_utc": "2026-09-13T15:51:40.230031+00:00",
+    "finished_utc": "2026-09-13T15:52:35.928142+00:00",
+    "elapsed_seconds": 55.698118097999895,
+    "command": [
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/mnt/data/a06_r12_r2_work/logs/staged_full_suite.time",
+      "timeout",
+      "--kill-after=5s",
+      "120s",
+      "/opt/pyvenv/bin/python",
+      "/mnt/data/TRI_A06_r12_r2/tests/run_all.py"
+    ],
+    "returncode": 0,
+    "peak_rss_kib": 608536
+  },
+  "initial_parent_compile_peak_rss_kib": 608084,
+  "initial_parent_compile_wall_seconds": 29.16,
+  "notes": [
+    "Empty initial_compile.time and parent_all_probe.time are retained but not used as timing evidence.",
+    "Final archive/extraction/delivery timestamps are in the external delivery receipt.",
+    "All phases retain the original absolute deadline."
+  ]
+}

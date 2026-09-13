@@ -1,0 +1,2351 @@
+{
+  "game_id": "aurax_reactive_v1_852484341_seat0",
+  "seat": 0,
+  "own_player": {
+    "seat": 0,
+    "role": "candidate",
+    "cash": 145611.0,
+    "days": [
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -164.0,
+          "BUY_ANIMAL:COW": -1200.0,
+          "BUY_ANIMAL:SHEEP": -1500.0,
+          "BUY_SEED:WHEAT": -40.0,
+          "_do_hire": -2.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 6,
+          "BUY_ANIMAL:COW": 3,
+          "BUY_ANIMAL:SHEEP": 3,
+          "BUY_SEED:WHEAT": 4,
+          "_do_hire": 2,
+          "FEED:WHEAT": 6
+        },
+        "attempts": {
+          "PASS": 16,
+          "PICKUP": 4,
+          "WEST": 7,
+          "BUILD_PASTURE": 6,
+          "PLACE": 6,
+          "NORTH": 7,
+          "FEED": 6,
+          "PLANT": 4,
+          "CARE": 6,
+          "WATER": 4,
+          "EAST": 3,
+          "SOUTH": 1
+        },
+        "overflow": {},
+        "day": 0,
+        "cash_start": 3000.0,
+        "cash_end": 94.0,
+        "portfolio": {},
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {},
+        "observed_shops": [],
+        "market_prices": {
+          "WHEAT": 25,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 120,
+          "MELON": 250,
+          "EGG": 50,
+          "MILK": 160,
+          "WOOL": 200,
+          "FERTILIZER": 100
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -174.0,
+          "_do_hire": -1.0,
+          "SELL:FERTILIZER": 594.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 6,
+          "_do_hire": 1,
+          "SELL:FERTILIZER": 6,
+          "FEED:WHEAT": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 6,
+          "DROP": 3,
+          "PASS": 13,
+          "PICKUP": 2,
+          "WEST": 3,
+          "NORTH": 3,
+          "FEED": 6,
+          "CARE": 6,
+          "SOUTH": 3,
+          "EAST": 2
+        },
+        "overflow": {},
+        "day": 1,
+        "cash_start": 94.0,
+        "cash_end": 513.0,
+        "portfolio": {
+          "WHEAT": 4,
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {},
+        "observed_shops": [],
+        "market_prices": {
+          "WHEAT": 28,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 128,
+          "MELON": 256,
+          "EGG": 50,
+          "MILK": 169,
+          "WOOL": 206,
+          "FERTILIZER": 100
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -307.0,
+          "_do_hire": -1.0,
+          "SELL:FERTILIZER": 581.0,
+          "SELL:WHEAT": 155.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 10,
+          "_do_hire": 1,
+          "SELL:FERTILIZER": 6,
+          "SELL:WHEAT": 5,
+          "FEED:WHEAT": 5
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 6,
+          "DROP": 3,
+          "PICKUP": 2,
+          "WEST": 5,
+          "NORTH": 4,
+          "FEED": 5,
+          "CARE": 5,
+          "WATER": 4,
+          "SOUTH": 4,
+          "EAST": 4,
+          "PASS": 5
+        },
+        "overflow": {},
+        "day": 2,
+        "cash_start": 513.0,
+        "cash_end": 941.0,
+        "portfolio": {
+          "WEED": 3,
+          "WHEAT": 4,
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {},
+        "observed_shops": [],
+        "market_prices": {
+          "WHEAT": 30,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 132,
+          "MELON": 260,
+          "EGG": 50,
+          "MILK": 172,
+          "WOOL": 209,
+          "FERTILIZER": 98
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -155.0,
+          "BUY_ANIMAL:COW": -400.0,
+          "BUY_SEED:STRAWBERRY": -200.0,
+          "_do_hire": -2.0,
+          "BUY_SEED:MELON": -80.0,
+          "SELL:FERTILIZER": 381.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 5,
+          "BUY_ANIMAL:COW": 1,
+          "BUY_SEED:STRAWBERRY": 2,
+          "_do_hire": 2,
+          "BUY_SEED:MELON": 1,
+          "SELL:FERTILIZER": 4,
+          "FEED:WHEAT": 5
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 6,
+          "PICKUP": 3,
+          "PASS": 10,
+          "PLACE": 2,
+          "WEST": 7,
+          "FEED": 5,
+          "CARE": 5,
+          "NORTH": 11,
+          "DIG": 1,
+          "WATER": 7,
+          "BUILD_PASTURE": 1,
+          "EAST": 3,
+          "PLANT": 3,
+          "SOUTH": 5,
+          "DROP": 1
+        },
+        "overflow": {},
+        "day": 3,
+        "cash_start": 941.0,
+        "cash_end": 485.0,
+        "portfolio": {
+          "WEED": 3,
+          "WHEAT": 4,
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {},
+        "observed_shops": [
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 31,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 135,
+          "MELON": 262,
+          "EGG": 50,
+          "MILK": 175,
+          "WOOL": 212,
+          "FERTILIZER": 96
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 654.0,
+          "BUY_PRODUCT:WHEAT": -220.0,
+          "BUY_SEED:STRAWBERRY": -300.0,
+          "_do_hire": -2.0,
+          "SELL:WHEAT": 510.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 7,
+          "BUY_PRODUCT:WHEAT": 7,
+          "BUY_SEED:STRAWBERRY": 3,
+          "_do_hire": 2,
+          "FEED:WHEAT": 7,
+          "HARVEST:WHEAT": 16,
+          "SELL:WHEAT": 16
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 7,
+          "DROP": 3,
+          "WEST": 6,
+          "PICKUP": 2,
+          "NORTH": 9,
+          "FEED": 7,
+          "CARE": 7,
+          "WATER": 7,
+          "EAST": 5,
+          "HARVEST": 4,
+          "PLACE": 1,
+          "PLANT": 3,
+          "SOUTH": 4,
+          "PASS": 5
+        },
+        "overflow": {},
+        "day": 4,
+        "cash_start": 485.0,
+        "cash_end": 1127.0,
+        "portfolio": {
+          "WEED": 2,
+          "COW": 4,
+          "STRAWBERRY": 2,
+          "WHEAT": 4,
+          "SHEEP": 3,
+          "MELON": 1
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {
+          "FERTILIZER": 2
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 31,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 147,
+          "MELON": 264,
+          "EGG": 50,
+          "MILK": 187,
+          "WOOL": 214,
+          "FERTILIZER": 94
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 637.0,
+          "BUY_PRODUCT:WHEAT": -222.0,
+          "BUY_ANIMAL:COW": -800.0,
+          "BUY_SEED:MELON": -80.0,
+          "_do_hire": -2.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 7,
+          "BUY_PRODUCT:WHEAT": 7,
+          "BUY_ANIMAL:COW": 2,
+          "BUY_SEED:MELON": 1,
+          "_do_hire": 2,
+          "FEED:WHEAT": 7
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 7,
+          "DROP": 3,
+          "PICKUP": 4,
+          "WEST": 9,
+          "NORTH": 7,
+          "FEED": 7,
+          "CARE": 7,
+          "WATER": 4,
+          "BUILD_PASTURE": 2,
+          "PLACE": 2,
+          "PLANT": 1,
+          "EAST": 4,
+          "SOUTH": 6,
+          "PASS": 7
+        },
+        "overflow": {},
+        "day": 5,
+        "cash_start": 1127.0,
+        "cash_end": 660.0,
+        "portfolio": {
+          "WEED": 2,
+          "COW": 4,
+          "STRAWBERRY": 5,
+          "SHEEP": 3,
+          "MELON": 1
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {
+          "FERTILIZER": 2
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 31,
+          "CARROT": 35,
+          "TOMATO": 61,
+          "STRAWBERRY": 155,
+          "MELON": 266,
+          "EGG": 50,
+          "MILK": 196,
+          "WOOL": 215,
+          "FERTILIZER": 92
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 964.0,
+          "BUY_PRODUCT:WHEAT": -524.0,
+          "_do_hire": -2.0,
+          "SELL:WHEAT": 264.0,
+          "SELL:WOOL": 3718.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 11,
+          "BUY_PRODUCT:WHEAT": 16,
+          "_do_hire": 2,
+          "SELL:WHEAT": 8,
+          "HARVEST:WOOL": 18,
+          "FEED:WHEAT": 8,
+          "SELL:WOOL": 18
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 9,
+          "DROP": 4,
+          "PICKUP": 3,
+          "WEST": 8,
+          "NORTH": 7,
+          "HARVEST": 3,
+          "FEED": 8,
+          "CARE": 8,
+          "WATER": 3,
+          "SOUTH": 6,
+          "EAST": 7,
+          "PASS": 4
+        },
+        "overflow": {},
+        "day": 6,
+        "cash_start": 660.0,
+        "cash_end": 5080.0,
+        "portfolio": {
+          "WEED": 2,
+          "MELON": 2,
+          "COW": 6,
+          "STRAWBERRY": 5,
+          "SHEEP": 3
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {
+          "FERTILIZER": 2
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 32,
+          "CARROT": 35,
+          "TOMATO": 61,
+          "STRAWBERRY": 161,
+          "MELON": 267,
+          "EGG": 50,
+          "MILK": 203,
+          "WOOL": 217,
+          "FERTILIZER": 89
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -472.0,
+          "BUY_ANIMAL:SHEEP": -3000.0,
+          "BUY_SEED:STRAWBERRY": -300.0,
+          "_do_hire": -12.0,
+          "SELL:FERTILIZER": 586.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 14,
+          "BUY_ANIMAL:SHEEP": 6,
+          "BUY_SEED:STRAWBERRY": 3,
+          "_do_hire": 5,
+          "FEED:WHEAT": 14,
+          "SELL:FERTILIZER": 7
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 9,
+          "PICKUP": 8,
+          "WEST": 23,
+          "NORTH": 18,
+          "CARE": 14,
+          "FEED": 14,
+          "BUILD_PASTURE": 6,
+          "WATER": 7,
+          "PLACE": 6,
+          "EAST": 7,
+          "PLANT": 3,
+          "SOUTH": 5,
+          "DIG": 2,
+          "PASS": 15,
+          "DROP": 2
+        },
+        "overflow": {},
+        "day": 7,
+        "cash_start": 5080.0,
+        "cash_end": 1882.0,
+        "portfolio": {
+          "WEED": 2,
+          "MELON": 2,
+          "COW": 6,
+          "STRAWBERRY": 5,
+          "SHEEP": 3
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {},
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 33,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 167,
+          "MELON": 268,
+          "EGG": 50,
+          "MILK": 208,
+          "WOOL": 195,
+          "FERTILIZER": 86
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 249.0,
+          "BUY_PRODUCT:WHEAT": -1058.0,
+          "_do_hire": -4.0,
+          "SELL:WHEAT": 536.0,
+          "SELL:MILK": 1228.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 3,
+          "BUY_PRODUCT:WHEAT": 30,
+          "_do_hire": 3,
+          "SELL:WHEAT": 15,
+          "HARVEST:MILK": 18,
+          "FEED:WHEAT": 15,
+          "SELL:MILK": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 15,
+          "DROP": 1,
+          "PICKUP": 4,
+          "WEST": 16,
+          "NORTH": 12,
+          "HARVEST": 3,
+          "PLACE": 1,
+          "FEED": 15,
+          "CARE": 15,
+          "WATER": 3,
+          "PASS": 8
+        },
+        "overflow": {},
+        "day": 8,
+        "cash_start": 1882.0,
+        "cash_end": 2833.0,
+        "portfolio": {
+          "SHEEP": 9,
+          "STRAWBERRY": 8,
+          "MELON": 2,
+          "COW": 6
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {
+          "FERTILIZER": 2
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 34,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 172,
+          "MELON": 269,
+          "EGG": 50,
+          "MILK": 214,
+          "WOOL": 209,
+          "FERTILIZER": 83
+        }
+      },
+      {
+        "flow": {
+          "SELL:MILK": 2423.0,
+          "SELL:FERTILIZER": 1102.0,
+          "BUY_PRODUCT:WHEAT": -504.0,
+          "_do_buy_land": -1000.0,
+          "BUY_ANIMAL:SHEEP": -1000.0,
+          "BUY_SEED:MELON": -480.0,
+          "BUY_SEED:STRAWBERRY": -1700.0,
+          "_do_hire": -54.0
+        },
+        "units": {
+          "SELL:MILK": 12,
+          "SELL:FERTILIZER": 14,
+          "BUY_PRODUCT:WHEAT": 14,
+          "_do_buy_land": 1,
+          "BUY_ANIMAL:SHEEP": 2,
+          "BUY_SEED:MELON": 6,
+          "BUY_SEED:STRAWBERRY": 17,
+          "_do_hire": 8,
+          "FEED:WHEAT": 14,
+          "HARVEST:WOOL": 12
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 15,
+          "PASS": 27,
+          "PICKUP": 6,
+          "NORTH": 29,
+          "EAST": 20,
+          "FEED": 14,
+          "WEST": 16,
+          "CARE": 14,
+          "PLANT": 23,
+          "HARVEST": 3,
+          "BUILD_PASTURE": 2,
+          "WATER": 30,
+          "PLACE": 2,
+          "SOUTH": 2
+        },
+        "overflow": {},
+        "day": 9,
+        "cash_start": 2833.0,
+        "cash_end": 1620.0,
+        "portfolio": {
+          "SHEEP": 9,
+          "STRAWBERRY": 8,
+          "MELON": 2,
+          "COW": 6
+        },
+        "hands": 0,
+        "quadrants": 1,
+        "stock": {
+          "MILK": 12,
+          "FERTILIZER": 14
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET"
+        ],
+        "market_prices": {
+          "WHEAT": 36,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 176,
+          "MELON": 270,
+          "EGG": 51,
+          "MILK": 205,
+          "WOOL": 224,
+          "FERTILIZER": 80
+        }
+      },
+      {
+        "flow": {
+          "SELL:WOOL": 2699.0,
+          "SELL:FERTILIZER": 1101.0,
+          "BUY_PRODUCT:WHEAT": -635.0,
+          "_do_buy_land": -2000.0,
+          "BUY_SEED:MELON": -560.0,
+          "BUY_SEED:STRAWBERRY": -300.0,
+          "BUY_SEED:WHEAT": -100.0,
+          "_do_hire": -33.0
+        },
+        "units": {
+          "SELL:WOOL": 12,
+          "SELL:FERTILIZER": 15,
+          "BUY_PRODUCT:WHEAT": 17,
+          "_do_buy_land": 1,
+          "BUY_SEED:MELON": 7,
+          "BUY_SEED:STRAWBERRY": 3,
+          "BUY_SEED:WHEAT": 10,
+          "_do_hire": 7,
+          "FEED:WHEAT": 17,
+          "HARVEST:MILK": 9
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 17,
+          "PASS": 16,
+          "PICKUP": 5,
+          "WEST": 30,
+          "PLANT": 20,
+          "FEED": 17,
+          "NORTH": 14,
+          "SOUTH": 14,
+          "CARE": 17,
+          "WATER": 24,
+          "HARVEST": 3,
+          "EAST": 4
+        },
+        "overflow": {},
+        "day": 10,
+        "cash_start": 1620.0,
+        "cash_end": 1792.0,
+        "portfolio": {
+          "SHEEP": 11,
+          "STRAWBERRY": 25,
+          "MELON": 8,
+          "COW": 6
+        },
+        "hands": 0,
+        "quadrants": 2,
+        "stock": {
+          "WOOL": 12,
+          "FERTILIZER": 15
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET"
+        ],
+        "market_prices": {
+          "WHEAT": 37,
+          "CARROT": 36,
+          "TOMATO": 62,
+          "STRAWBERRY": 184,
+          "MELON": 271,
+          "EGG": 51,
+          "MILK": 201,
+          "WOOL": 226,
+          "FERTILIZER": 75
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 1456.0,
+          "BUY_PRODUCT:WHEAT": -664.0,
+          "BUY_ANIMAL:SHEEP": -1000.0,
+          "BUY_SEED:MELON": -80.0,
+          "BUY_SEED:STRAWBERRY": -200.0,
+          "_do_hire": -54.0,
+          "SELL:MILK": 1743.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 21,
+          "BUY_PRODUCT:WHEAT": 17,
+          "BUY_ANIMAL:SHEEP": 2,
+          "BUY_SEED:MELON": 1,
+          "BUY_SEED:STRAWBERRY": 2,
+          "_do_hire": 8,
+          "SELL:MILK": 9,
+          "FEED:WHEAT": 17,
+          "HARVEST:MILK": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 17,
+          "PASS": 25,
+          "PICKUP": 9,
+          "NORTH": 23,
+          "FEED": 17,
+          "WEST": 28,
+          "CARE": 17,
+          "WATER": 33,
+          "EAST": 17,
+          "SOUTH": 10,
+          "PLANT": 3,
+          "BUILD_PASTURE": 2,
+          "PLACE": 2,
+          "HARVEST": 1,
+          "DROP": 1
+        },
+        "overflow": {},
+        "day": 11,
+        "cash_start": 1792.0,
+        "cash_end": 2993.0,
+        "portfolio": {
+          "SHEEP": 11,
+          "STRAWBERRY": 28,
+          "MELON": 15,
+          "COW": 6,
+          "WHEAT": 10
+        },
+        "hands": 0,
+        "quadrants": 3,
+        "stock": {
+          "MILK": 9,
+          "FERTILIZER": 17
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET"
+        ],
+        "market_prices": {
+          "WHEAT": 39,
+          "CARROT": 37,
+          "TOMATO": 63,
+          "STRAWBERRY": 191,
+          "MELON": 226,
+          "EGG": 51,
+          "MILK": 196,
+          "WOOL": 227,
+          "FERTILIZER": 72
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 372.0,
+          "BUY_PRODUCT:WHEAT": -779.0,
+          "_do_hire": -54.0,
+          "SELL:MILK": 2219.0,
+          "SELL:WOOL": 925.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 6,
+          "BUY_PRODUCT:WHEAT": 19,
+          "_do_hire": 8,
+          "SELL:MILK": 12,
+          "HARVEST:MILK": 9,
+          "FEED:WHEAT": 19,
+          "HARVEST:WOOL": 12,
+          "FERTILIZE:FERTILIZER": 12,
+          "SELL:WOOL": 4
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 19,
+          "DROP": 2,
+          "PICKUP": 13,
+          "WEST": 32,
+          "NORTH": 15,
+          "HARVEST": 6,
+          "WATER": 27,
+          "CARE": 19,
+          "PLACE": 3,
+          "EAST": 5,
+          "SOUTH": 18,
+          "FEED": 19,
+          "FERTILIZE": 12,
+          "PASS": 18
+        },
+        "overflow": {},
+        "day": 12,
+        "cash_start": 2993.0,
+        "cash_end": 5676.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 30,
+          "MELON": 16,
+          "COW": 6,
+          "WHEAT": 10
+        },
+        "hands": 0,
+        "quadrants": 3,
+        "stock": {
+          "MILK": 6,
+          "FERTILIZER": 13
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 40,
+          "CARROT": 37,
+          "TOMATO": 64,
+          "STRAWBERRY": 197,
+          "MELON": 214,
+          "EGG": 51,
+          "MILK": 186,
+          "WOOL": 230,
+          "FERTILIZER": 65
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 757.0,
+          "BUY_PRODUCT:WHEAT": -749.0,
+          "_do_buy_land": -4000.0,
+          "BUY_ANIMAL:COW": -400.0,
+          "BUY_SEED:STRAWBERRY": -700.0,
+          "_do_hire": -232.0,
+          "SELL:WOOL": 1844.0,
+          "SELL:MILK": 1119.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 13,
+          "BUY_PRODUCT:WHEAT": 18,
+          "_do_buy_land": 1,
+          "BUY_ANIMAL:COW": 1,
+          "BUY_SEED:STRAWBERRY": 7,
+          "_do_hire": 11,
+          "SELL:WOOL": 8,
+          "SELL:MILK": 6,
+          "FEED:WHEAT": 18,
+          "FERTILIZE:FERTILIZER": 3,
+          "HARVEST:STRAWBERRY": 4,
+          "HARVEST:WOOL": 36,
+          "HARVEST:MILK": 15
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 19,
+          "PASS": 29,
+          "PICKUP": 9,
+          "EAST": 23,
+          "WEST": 33,
+          "FEED": 18,
+          "NORTH": 33,
+          "PLANT": 7,
+          "CARE": 18,
+          "SOUTH": 14,
+          "WATER": 51,
+          "BUILD_PASTURE": 1,
+          "PLACE": 1,
+          "FERTILIZE": 3,
+          "HARVEST": 11,
+          "DROP": 1
+        },
+        "overflow": {},
+        "day": 13,
+        "cash_start": 5676.0,
+        "cash_end": 3315.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 30,
+          "MELON": 16,
+          "COW": 6,
+          "WHEAT": 10
+        },
+        "hands": 0,
+        "quadrants": 3,
+        "stock": {
+          "MILK": 3,
+          "WOOL": 8,
+          "FERTILIZER": 14
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 41,
+          "CARROT": 38,
+          "TOMATO": 64,
+          "STRAWBERRY": 205,
+          "MELON": 215,
+          "EGG": 51,
+          "MILK": 187,
+          "WOOL": 231,
+          "FERTILIZER": 61
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 1107.0,
+          "BUY_PRODUCT:WHEAT": -850.0,
+          "_do_hire": -54.0,
+          "SELL:WOOL": 8184.0,
+          "SELL:MILK": 2049.0,
+          "SELL:STRAWBERRY": 859.0,
+          "BUY_SEED:TOMATO": -200.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 21,
+          "BUY_PRODUCT:WHEAT": 20,
+          "_do_hire": 8,
+          "SELL:WOOL": 36,
+          "SELL:MILK": 12,
+          "FEED:WHEAT": 20,
+          "HARVEST:MILK": 9,
+          "HARVEST:WHEAT": 60,
+          "SELL:STRAWBERRY": 4,
+          "HARVEST:STRAWBERRY": 6,
+          "BUY_SEED:TOMATO": 4,
+          "HARVEST:MELON": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PICKUP": 6,
+          "WATER": 27,
+          "WEST": 31,
+          "SOUTH": 18,
+          "NORTH": 20,
+          "EAST": 8,
+          "CARE": 20,
+          "FEED": 20,
+          "HARVEST": 17,
+          "PLACE": 2,
+          "PASS": 13,
+          "PLANT": 4,
+          "DROP": 2
+        },
+        "overflow": {},
+        "day": 14,
+        "cash_start": 3315.0,
+        "cash_end": 14410.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 37,
+          "MELON": 16,
+          "COW": 7,
+          "WHEAT": 10,
+          "WEED": 1
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 4,
+          "MILK": 12,
+          "WOOL": 36,
+          "FERTILIZER": 17
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 42,
+          "CARROT": 38,
+          "TOMATO": 65,
+          "STRAWBERRY": 213,
+          "MELON": 216,
+          "EGG": 51,
+          "MILK": 179,
+          "WOOL": 232,
+          "FERTILIZER": 55
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 894.0,
+          "BUY_SEED:STRAWBERRY": -500.0,
+          "_do_hire": -143.0,
+          "SELL:STRAWBERRY": 1765.0,
+          "SELL:MELON": 1295.0,
+          "SELL:MILK": 1365.0,
+          "SELL:WHEAT": 1788.0,
+          "SELL:WOOL": 795.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 19,
+          "BUY_SEED:STRAWBERRY": 5,
+          "_do_hire": 10,
+          "HARVEST:WOOL": 24,
+          "SELL:STRAWBERRY": 8,
+          "SELL:MELON": 6,
+          "SELL:MILK": 9,
+          "SELL:WHEAT": 42,
+          "FEED:WHEAT": 18,
+          "HARVEST:STRAWBERRY": 4,
+          "HARVEST:MILK": 9,
+          "SELL:WOOL": 4
+        },
+        "attempts": {
+          "PASS": 31,
+          "PICKUP": 7,
+          "EAST": 18,
+          "HARVEST": 10,
+          "WEST": 34,
+          "SOUTH": 14,
+          "NORTH": 30,
+          "COLLECT_FERTILIZER": 20,
+          "FEED": 18,
+          "PLACE": 1,
+          "CARE": 18,
+          "WATER": 45,
+          "PLANT": 5,
+          "DROP": 1
+        },
+        "overflow": {},
+        "day": 15,
+        "cash_start": 14410.0,
+        "cash_end": 21669.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 37,
+          "MELON": 15,
+          "COW": 7,
+          "TOMATO": 4,
+          "WEED": 1
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "WHEAT": 60,
+          "STRAWBERRY": 6,
+          "MELON": 6,
+          "MILK": 9,
+          "FERTILIZER": 16
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 43,
+          "CARROT": 39,
+          "TOMATO": 66,
+          "STRAWBERRY": 218,
+          "MELON": 218,
+          "EGG": 51,
+          "MILK": 152,
+          "WOOL": 219,
+          "FERTILIZER": 49
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 657.0,
+          "BUY_PRODUCT:WHEAT": -599.0,
+          "_do_hire": -88.0,
+          "SELL:STRAWBERRY": 446.0,
+          "SELL:WOOL": 3749.0,
+          "SELL:MILK": 2364.0,
+          "BUY_SEED:TOMATO": -50.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 16,
+          "BUY_PRODUCT:WHEAT": 14,
+          "_do_hire": 9,
+          "SELL:STRAWBERRY": 2,
+          "SELL:WOOL": 20,
+          "SELL:MILK": 15,
+          "HARVEST:MILK": 9,
+          "FEED:WHEAT": 14,
+          "HARVEST:STRAWBERRY": 6,
+          "FERTILIZE:FERTILIZER": 5,
+          "HARVEST:WOOL": 24,
+          "BUY_SEED:TOMATO": 1
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 34,
+          "WATER": 26,
+          "DROP": 4,
+          "PICKUP": 10,
+          "WEST": 36,
+          "NORTH": 22,
+          "HARVEST": 12,
+          "EAST": 9,
+          "SOUTH": 22,
+          "PLACE": 1,
+          "CARE": 14,
+          "FEED": 14,
+          "FERTILIZE": 5,
+          "PLANT": 1
+        },
+        "overflow": {},
+        "day": 16,
+        "cash_start": 21669.0,
+        "cash_end": 28148.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 42,
+          "MELON": 15,
+          "COW": 7,
+          "TOMATO": 4,
+          "WEED": 1
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 2,
+          "MILK": 9,
+          "WOOL": 20,
+          "FERTILIZER": 17
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 42,
+          "CARROT": 40,
+          "TOMATO": 67,
+          "STRAWBERRY": 221,
+          "MELON": 212,
+          "EGG": 51,
+          "MILK": 158,
+          "WOOL": 197,
+          "FERTILIZER": 43
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 598.0,
+          "BUY_PRODUCT:WHEAT": -559.0,
+          "_do_hire": -143.0,
+          "SELL:STRAWBERRY": 1349.0,
+          "SELL:WOOL": 3264.0,
+          "SELL:MILK": 449.0,
+          "BUY_SEED:TOMATO": -50.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 17,
+          "BUY_PRODUCT:WHEAT": 13,
+          "_do_hire": 10,
+          "SELL:STRAWBERRY": 6,
+          "SELL:WOOL": 24,
+          "SELL:MILK": 3,
+          "FEED:WHEAT": 13,
+          "HARVEST:STRAWBERRY": 10,
+          "FERTILIZE:FERTILIZER": 3,
+          "HARVEST:MILK": 9,
+          "HARVEST:WOOL": 8,
+          "BUY_SEED:TOMATO": 1,
+          "HARVEST:MELON": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 36,
+          "WATER": 50,
+          "DROP": 2,
+          "PICKUP": 9,
+          "NORTH": 23,
+          "WEST": 35,
+          "CARE": 13,
+          "FEED": 13,
+          "SOUTH": 12,
+          "PLACE": 1,
+          "EAST": 23,
+          "HARVEST": 11,
+          "FERTILIZE": 3,
+          "PLANT": 1
+        },
+        "overflow": {},
+        "day": 17,
+        "cash_start": 28148.0,
+        "cash_end": 33056.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 42,
+          "MELON": 15,
+          "COW": 7,
+          "TOMATO": 5,
+          "WEED": 1
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 6,
+          "MILK": 3,
+          "WOOL": 24,
+          "FERTILIZER": 16
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP"
+        ],
+        "market_prices": {
+          "WHEAT": 43,
+          "CARROT": 40,
+          "TOMATO": 68,
+          "STRAWBERRY": 224,
+          "MELON": 213,
+          "EGG": 51,
+          "MILK": 145,
+          "WOOL": 177,
+          "FERTILIZER": 37
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -880.0,
+          "_do_hire": -232.0,
+          "SELL:STRAWBERRY": 2252.0,
+          "SELL:MELON": 1273.0,
+          "SELL:MILK": 1581.0,
+          "SELL:WOOL": 909.0,
+          "SELL:FERTILIZER": 58.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 20,
+          "_do_hire": 11,
+          "SELL:STRAWBERRY": 10,
+          "SELL:MELON": 6,
+          "SELL:MILK": 9,
+          "SELL:WOOL": 11,
+          "SELL:FERTILIZER": 2,
+          "FEED:WHEAT": 20,
+          "HARVEST:WOOL": 15,
+          "FERTILIZE:FERTILIZER": 16,
+          "HARVEST:MILK": 9,
+          "HARVEST:STRAWBERRY": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 28,
+          "DROP": 1,
+          "PICKUP": 12,
+          "EAST": 16,
+          "NORTH": 40,
+          "WEST": 32,
+          "CARE": 20,
+          "WATER": 43,
+          "FEED": 20,
+          "SOUTH": 14,
+          "HARVEST": 11,
+          "FERTILIZE": 16,
+          "PLACE": 2
+        },
+        "overflow": {},
+        "day": 18,
+        "cash_start": 33056.0,
+        "cash_end": 38017.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 42,
+          "COW": 7,
+          "MELON": 14,
+          "TOMATO": 6,
+          "WEED": 1
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 10,
+          "MELON": 6,
+          "MILK": 9,
+          "WOOL": 8,
+          "FERTILIZER": 16
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 44,
+          "CARROT": 41,
+          "TOMATO": 69,
+          "STRAWBERRY": 225,
+          "MELON": 214,
+          "EGG": 51,
+          "MILK": 183,
+          "WOOL": 77,
+          "FERTILIZER": 32
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 483.0,
+          "BUY_PRODUCT:WHEAT": -853.0,
+          "_do_hire": -376.0,
+          "SELL:STRAWBERRY": 1353.0,
+          "SELL:MILK": 1446.0,
+          "SELL:WOOL": 376.0,
+          "BUY_SEED:TOMATO": -50.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 18,
+          "BUY_PRODUCT:WHEAT": 19,
+          "_do_hire": 12,
+          "SELL:STRAWBERRY": 6,
+          "SELL:MILK": 9,
+          "SELL:WOOL": 12,
+          "HARVEST:STRAWBERRY": 43,
+          "FEED:WHEAT": 19,
+          "HARVEST:MILK": 9,
+          "FERTILIZE:FERTILIZER": 3,
+          "HARVEST:WOOL": 18,
+          "BUY_SEED:TOMATO": 1
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 41,
+          "WATER": 36,
+          "WEST": 33,
+          "PICKUP": 10,
+          "EAST": 21,
+          "NORTH": 37,
+          "CARE": 19,
+          "HARVEST": 31,
+          "SOUTH": 21,
+          "DROP": 2,
+          "FEED": 19,
+          "DIG": 2,
+          "FERTILIZE": 3,
+          "PLANT": 1
+        },
+        "overflow": {},
+        "day": 19,
+        "cash_start": 38017.0,
+        "cash_end": 40396.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 42,
+          "COW": 7,
+          "MELON": 14,
+          "TOMATO": 5,
+          "WEED": 2
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 6,
+          "MILK": 9,
+          "WOOL": 12,
+          "FERTILIZER": 18
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 44,
+          "CARROT": 41,
+          "TOMATO": 69,
+          "STRAWBERRY": 225,
+          "MELON": 208,
+          "EGG": 51,
+          "MILK": 185,
+          "WOOL": 77,
+          "FERTILIZER": 29
+        }
+      },
+      {
+        "flow": {
+          "SELL:STRAWBERRY": 9433.0,
+          "SELL:FERTILIZER": 293.0,
+          "BUY_PRODUCT:WHEAT": -1834.0,
+          "_do_hire": -143.0,
+          "SELL:MILK": 2194.0,
+          "SELL:WOOL": 1114.0,
+          "SELL:WHEAT": 920.0,
+          "BUY_SEED:TOMATO": -50.0
+        },
+        "units": {
+          "SELL:STRAWBERRY": 43,
+          "SELL:FERTILIZER": 13,
+          "BUY_PRODUCT:WHEAT": 40,
+          "_do_hire": 10,
+          "SELL:MILK": 12,
+          "SELL:WOOL": 18,
+          "SELL:WHEAT": 20,
+          "FEED:WHEAT": 20,
+          "HARVEST:MILK": 9,
+          "HARVEST:STRAWBERRY": 12,
+          "FERTILIZE:FERTILIZER": 6,
+          "HARVEST:WOOL": 7,
+          "BUY_SEED:TOMATO": 1
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 25,
+          "PICKUP": 12,
+          "CARE": 20,
+          "PLACE": 2,
+          "WEST": 38,
+          "NORTH": 30,
+          "FEED": 20,
+          "WATER": 35,
+          "DROP": 1,
+          "SOUTH": 16,
+          "HARVEST": 11,
+          "EAST": 13,
+          "FERTILIZE": 6,
+          "PLANT": 1
+        },
+        "overflow": {},
+        "day": 20,
+        "cash_start": 40396.0,
+        "cash_end": 52323.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 40,
+          "COW": 7,
+          "MELON": 14,
+          "TOMATO": 6,
+          "WEED": 2
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 43,
+          "MILK": 9,
+          "WOOL": 18,
+          "FERTILIZER": 17
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 45,
+          "CARROT": 42,
+          "TOMATO": 70,
+          "STRAWBERRY": 226,
+          "MELON": 209,
+          "EGG": 51,
+          "MILK": 186,
+          "WOOL": 82,
+          "FERTILIZER": 24
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 275.0,
+          "BUY_PRODUCT:WHEAT": -925.0,
+          "_do_hire": -232.0,
+          "SELL:STRAWBERRY": 3321.0,
+          "SELL:MILK": 1120.0,
+          "SELL:WOOL": 539.0,
+          "BUY_SEED:WHEAT": -10.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 16,
+          "BUY_PRODUCT:WHEAT": 20,
+          "_do_hire": 11,
+          "SELL:STRAWBERRY": 16,
+          "SELL:MILK": 6,
+          "SELL:WOOL": 7,
+          "HARVEST:MILK": 15,
+          "HARVEST:WOOL": 20,
+          "FEED:WHEAT": 20,
+          "HARVEST:STRAWBERRY": 44,
+          "HARVEST:MELON": 36,
+          "FERTILIZE:FERTILIZER": 3,
+          "BUY_SEED:WHEAT": 1
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 17,
+          "DROP": 2,
+          "EAST": 26,
+          "WEST": 37,
+          "PICKUP": 10,
+          "CARE": 20,
+          "SOUTH": 16,
+          "HARVEST": 37,
+          "FEED": 20,
+          "NORTH": 37,
+          "WATER": 28,
+          "FERTILIZE": 3,
+          "PLANT": 1
+        },
+        "overflow": {
+          "STRAWBERRY": 16,
+          "MELON": 6,
+          "WOOL": 4,
+          "FERTILIZER": 4
+        },
+        "day": 21,
+        "cash_start": 52323.0,
+        "cash_end": 56411.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 40,
+          "TOMATO": 7,
+          "COW": 7,
+          "MELON": 14,
+          "WEED": 2
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 12,
+          "MILK": 6,
+          "WOOL": 7,
+          "FERTILIZER": 18
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 46,
+          "CARROT": 42,
+          "TOMATO": 71,
+          "STRAWBERRY": 210,
+          "MELON": 210,
+          "EGG": 51,
+          "MILK": 187,
+          "WOOL": 55,
+          "FERTILIZER": 20
+        }
+      },
+      {
+        "flow": {
+          "SELL:MELON": 7621.0,
+          "BUY_PRODUCT:WHEAT": -940.0,
+          "_do_hire": -609.0,
+          "SELL:STRAWBERRY": 4990.0,
+          "SELL:MILK": 2647.0,
+          "SELL:WOOL": 1945.0,
+          "SELL:FERTILIZER": 13.0,
+          "SELL:TOMATO": 434.0
+        },
+        "units": {
+          "SELL:MELON": 42,
+          "BUY_PRODUCT:WHEAT": 20,
+          "_do_hire": 13,
+          "SELL:STRAWBERRY": 26,
+          "SELL:MILK": 15,
+          "SELL:WOOL": 16,
+          "HARVEST:MILK": 9,
+          "HARVEST:MELON": 48,
+          "FEED:WHEAT": 20,
+          "SELL:FERTILIZER": 1,
+          "HARVEST:TOMATO": 6,
+          "FERTILIZE:FERTILIZER": 16,
+          "HARVEST:STRAWBERRY": 6,
+          "HARVEST:WOOL": 24,
+          "SELL:TOMATO": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 53,
+          "PICKUP": 12,
+          "WATER": 41,
+          "EAST": 21,
+          "WEST": 30,
+          "HARVEST": 23,
+          "SOUTH": 19,
+          "NORTH": 39,
+          "FEED": 20,
+          "CARE": 20,
+          "DROP": 3,
+          "PLACE": 1,
+          "FERTILIZE": 16
+        },
+        "overflow": {},
+        "day": 22,
+        "cash_start": 56411.0,
+        "cash_end": 72512.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 37,
+          "TOMATO": 7,
+          "COW": 7,
+          "WHEAT": 1,
+          "WEED": 5,
+          "MELON": 8
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 24,
+          "MELON": 30,
+          "MILK": 15,
+          "WOOL": 16,
+          "FERTILIZER": 15
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 47,
+          "CARROT": 43,
+          "TOMATO": 72,
+          "STRAWBERRY": 201,
+          "MELON": 212,
+          "EGG": 51,
+          "MILK": 193,
+          "WOOL": 141,
+          "FERTILIZER": 14
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 136.0,
+          "BUY_PRODUCT:WHEAT": -960.0,
+          "BUY_SEED:WHEAT": -70.0,
+          "_do_hire": -376.0,
+          "SELL:STRAWBERRY": 2084.0,
+          "SELL:WOOL": 3965.0,
+          "SELL:MILK": 3281.0,
+          "SELL:MELON": 3821.0,
+          "SELL:TOMATO": 435.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 18,
+          "BUY_PRODUCT:WHEAT": 20,
+          "BUY_SEED:WHEAT": 7,
+          "_do_hire": 12,
+          "SELL:STRAWBERRY": 11,
+          "SELL:WOOL": 24,
+          "SELL:MILK": 18,
+          "SELL:MELON": 36,
+          "HARVEST:STRAWBERRY": 51,
+          "FEED:WHEAT": 20,
+          "HARVEST:MILK": 12,
+          "FERTILIZE:FERTILIZER": 5,
+          "HARVEST:TOMATO": 6,
+          "HARVEST:WOOL": 8,
+          "SELL:TOMATO": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 28,
+          "NORTH": 31,
+          "PICKUP": 10,
+          "EAST": 20,
+          "SOUTH": 22,
+          "CARE": 20,
+          "WEST": 45,
+          "HARVEST": 38,
+          "FEED": 20,
+          "PLANT": 7,
+          "WATER": 22,
+          "PLACE": 1,
+          "FERTILIZE": 5,
+          "DROP": 5,
+          "DIG": 1
+        },
+        "overflow": {},
+        "day": 23,
+        "cash_start": 72512.0,
+        "cash_end": 84828.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 37,
+          "TOMATO": 7,
+          "COW": 7,
+          "WHEAT": 1,
+          "WEED": 5
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 4,
+          "MELON": 36,
+          "MILK": 9,
+          "WOOL": 24,
+          "FERTILIZER": 18
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE"
+        ],
+        "market_prices": {
+          "WHEAT": 48,
+          "CARROT": 43,
+          "TOMATO": 72,
+          "STRAWBERRY": 191,
+          "MELON": 144,
+          "EGG": 51,
+          "MILK": 186,
+          "WOOL": 179,
+          "FERTILIZER": 11
+        }
+      },
+      {
+        "flow": {
+          "BUY_PRODUCT:WHEAT": -966.0,
+          "BUY_SEED:WHEAT": -100.0,
+          "_do_hire": -376.0,
+          "SELL:WOOL": 2178.0,
+          "SELL:STRAWBERRY": 7831.0,
+          "SELL:MILK": 531.0,
+          "SELL:FERTILIZER": 3.0
+        },
+        "units": {
+          "BUY_PRODUCT:WHEAT": 20,
+          "BUY_SEED:WHEAT": 10,
+          "_do_hire": 12,
+          "SELL:WOOL": 12,
+          "SELL:STRAWBERRY": 44,
+          "SELL:MILK": 3,
+          "HARVEST:WOOL": 20,
+          "FEED:WHEAT": 20,
+          "FERTILIZE:FERTILIZER": 16,
+          "HARVEST:MILK": 9,
+          "HARVEST:STRAWBERRY": 6,
+          "HARVEST:TOMATO": 8,
+          "SELL:FERTILIZER": 1
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 28,
+          "PICKUP": 15,
+          "CARE": 20,
+          "HARVEST": 15,
+          "WEST": 29,
+          "EAST": 21,
+          "NORTH": 31,
+          "SOUTH": 19,
+          "FEED": 20,
+          "DROP": 2,
+          "FERTILIZE": 16,
+          "WATER": 48,
+          "PLANT": 10,
+          "DIG": 2
+        },
+        "overflow": {},
+        "day": 24,
+        "cash_start": 84828.0,
+        "cash_end": 93929.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "STRAWBERRY": 37,
+          "TOMATO": 7,
+          "COW": 7,
+          "WHEAT": 8,
+          "WEED": 4
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "STRAWBERRY": 44,
+          "MILK": 3,
+          "WOOL": 8,
+          "FERTILIZER": 15
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 48,
+          "CARROT": 44,
+          "TOMATO": 72,
+          "STRAWBERRY": 188,
+          "MELON": 60,
+          "EGG": 51,
+          "MILK": 169,
+          "WOOL": 181,
+          "FERTILIZER": 4
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 23.0,
+          "BUY_PRODUCT:WHEAT": -980.0,
+          "BUY_SEED:WHEAT": -70.0,
+          "_do_hire": -609.0,
+          "SELL:MILK": 2298.0,
+          "SELL:WOOL": 2896.0,
+          "SELL:STRAWBERRY": 4650.0,
+          "SELL:TOMATO": 874.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 17,
+          "SELL_AT_FLOOR:FERTILIZER": 13,
+          "BUY_PRODUCT:WHEAT": 20,
+          "BUY_SEED:WHEAT": 7,
+          "_do_hire": 13,
+          "SELL:MILK": 12,
+          "SELL:WOOL": 16,
+          "SELL:STRAWBERRY": 29,
+          "SELL:TOMATO": 12,
+          "HARVEST:STRAWBERRY": 59,
+          "FEED:WHEAT": 20,
+          "FERTILIZE:FERTILIZER": 7,
+          "HARVEST:MILK": 12,
+          "HARVEST:WHEAT": 6,
+          "HARVEST:TOMATO": 10,
+          "HARVEST:WOOL": 24
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 35,
+          "DROP": 8,
+          "PICKUP": 11,
+          "WEST": 40,
+          "NORTH": 25,
+          "SOUTH": 24,
+          "EAST": 24,
+          "CARE": 20,
+          "HARVEST": 47,
+          "PLACE": 1,
+          "FEED": 20,
+          "DIG": 7,
+          "FERTILIZE": 7,
+          "PLANT": 7,
+          "WATER": 21
+        },
+        "overflow": {},
+        "day": 25,
+        "cash_start": 93929.0,
+        "cash_end": 103011.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "WEED": 5,
+          "TOMATO": 7,
+          "COW": 7,
+          "STRAWBERRY": 34,
+          "WHEAT": 18
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "TOMATO": 8,
+          "STRAWBERRY": 6,
+          "MILK": 9,
+          "WOOL": 16,
+          "FERTILIZER": 18
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 49,
+          "CARROT": 45,
+          "TOMATO": 73,
+          "STRAWBERRY": 162,
+          "MELON": 62,
+          "EGG": 52,
+          "MILK": 193,
+          "WOOL": 183,
+          "FERTILIZER": 3
+        }
+      },
+      {
+        "flow": {
+          "SELL:WOOL": 4331.0,
+          "SELL:TOMATO": 432.0,
+          "BUY_PRODUCT:WHEAT": -686.0,
+          "_do_hire": -143.0,
+          "SELL:MILK": 1607.0,
+          "SELL:STRAWBERRY": 4257.0,
+          "SELL:FERTILIZER": 2.0,
+          "BUY_SEED:CARROT": -60.0
+        },
+        "units": {
+          "SELL:WOOL": 24,
+          "SELL:TOMATO": 6,
+          "BUY_PRODUCT:WHEAT": 14,
+          "_do_hire": 10,
+          "SELL:MILK": 9,
+          "SELL:STRAWBERRY": 36,
+          "FEED:WHEAT": 20,
+          "HARVEST:MILK": 9,
+          "SELL:FERTILIZER": 2,
+          "SELL_AT_FLOOR:FERTILIZER": 2,
+          "FERTILIZE:FERTILIZER": 14,
+          "HARVEST:STRAWBERRY": 6,
+          "BUY_SEED:CARROT": 3,
+          "HARVEST:TOMATO": 4,
+          "HARVEST:WOOL": 8
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 26,
+          "PICKUP": 12,
+          "SOUTH": 19,
+          "WEST": 31,
+          "CARE": 15,
+          "EAST": 15,
+          "FEED": 20,
+          "WATER": 38,
+          "NORTH": 22,
+          "HARVEST": 10,
+          "PLACE": 1,
+          "FERTILIZE": 14,
+          "DROP": 1,
+          "DIG": 4,
+          "PLANT": 3
+        },
+        "overflow": {},
+        "day": 26,
+        "cash_start": 103011.0,
+        "cash_end": 112751.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "WEED": 4,
+          "TOMATO": 7,
+          "COW": 7,
+          "STRAWBERRY": 28,
+          "WHEAT": 24
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "WHEAT": 6,
+          "TOMATO": 6,
+          "STRAWBERRY": 36,
+          "MILK": 9,
+          "WOOL": 24,
+          "FERTILIZER": 14
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 49,
+          "CARROT": 47,
+          "TOMATO": 72,
+          "STRAWBERRY": 147,
+          "MELON": 65,
+          "EGG": 52,
+          "MILK": 179,
+          "WOOL": 192,
+          "FERTILIZER": 1
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 12.0,
+          "BUY_PRODUCT:WHEAT": -745.0,
+          "_do_hire": -232.0,
+          "SELL:WOOL": 3039.0,
+          "SELL:MILK": 2234.0,
+          "SELL:STRAWBERRY": 1368.0,
+          "SELL:TOMATO": 438.0,
+          "SELL:WHEAT": 1182.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 12,
+          "SELL_AT_FLOOR:FERTILIZER": 12,
+          "BUY_PRODUCT:WHEAT": 15,
+          "_do_hire": 11,
+          "SELL:WOOL": 16,
+          "SELL:MILK": 12,
+          "SELL:STRAWBERRY": 10,
+          "SELL:TOMATO": 6,
+          "HARVEST:STRAWBERRY": 28,
+          "HARVEST:WOOL": 20,
+          "HARVEST:WHEAT": 42,
+          "FEED:WHEAT": 15,
+          "FERTILIZE:FERTILIZER": 10,
+          "SELL:WHEAT": 24,
+          "HARVEST:MILK": 12,
+          "HARVEST:TOMATO": 6
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 20,
+          "PASS": 43,
+          "DROP": 4,
+          "PICKUP": 11,
+          "EAST": 15,
+          "WATER": 27,
+          "WEST": 34,
+          "SOUTH": 22,
+          "HARVEST": 33,
+          "NORTH": 31,
+          "FEED": 15,
+          "PLACE": 3,
+          "CARE": 6,
+          "FERTILIZE": 10
+        },
+        "overflow": {},
+        "day": 27,
+        "cash_start": 112751.0,
+        "cash_end": 120047.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "WEED": 16,
+          "TOMATO": 4,
+          "COW": 7,
+          "WHEAT": 24,
+          "STRAWBERRY": 15,
+          "CARROT": 3
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "TOMATO": 4,
+          "STRAWBERRY": 6,
+          "MILK": 9,
+          "WOOL": 8,
+          "FERTILIZER": 18
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 49,
+          "CARROT": 48,
+          "TOMATO": 73,
+          "STRAWBERRY": 118,
+          "MELON": 68,
+          "EGG": 52,
+          "MILK": 187,
+          "WOOL": 183,
+          "FERTILIZER": 1
+        }
+      },
+      {
+        "flow": {
+          "SELL:FERTILIZER": 13.0,
+          "_do_hire": -88.0,
+          "SELL:WOOL": 4345.0,
+          "SELL:MILK": 2628.0,
+          "SELL:STRAWBERRY": 1843.0,
+          "SELL:TOMATO": 292.0,
+          "SELL:WHEAT": 1468.0
+        },
+        "units": {
+          "SELL:FERTILIZER": 13,
+          "SELL_AT_FLOOR:FERTILIZER": 13,
+          "_do_hire": 9,
+          "HARVEST:MILK": 9,
+          "SELL:WOOL": 20,
+          "SELL:MILK": 15,
+          "SELL:STRAWBERRY": 24,
+          "SELL:TOMATO": 4,
+          "FERTILIZE:FERTILIZER": 12,
+          "FEED:WHEAT": 6,
+          "HARVEST:WHEAT": 60,
+          "SELL:WHEAT": 30,
+          "HARVEST:TOMATO": 6,
+          "HARVEST:WOOL": 24
+        },
+        "attempts": {
+          "PASS": 33,
+          "PICKUP": 9,
+          "EAST": 21,
+          "HARVEST": 22,
+          "WEST": 23,
+          "COLLECT_FERTILIZER": 20,
+          "NORTH": 20,
+          "SOUTH": 26,
+          "DROP": 4,
+          "FERTILIZE": 12,
+          "WATER": 34,
+          "PLACE": 1,
+          "FEED": 6
+        },
+        "overflow": {},
+        "day": 28,
+        "cash_start": 120047.0,
+        "cash_end": 130548.0,
+        "portfolio": {
+          "SHEEP": 13,
+          "WEED": 17,
+          "TOMATO": 4,
+          "COW": 7,
+          "WHEAT": 17,
+          "STRAWBERRY": 14,
+          "CARROT": 3
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "WHEAT": 18,
+          "TOMATO": 4,
+          "STRAWBERRY": 24,
+          "MILK": 9,
+          "WOOL": 12,
+          "FERTILIZER": 16
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 49,
+          "CARROT": 50,
+          "TOMATO": 73,
+          "STRAWBERRY": 97,
+          "MELON": 70,
+          "EGG": 52,
+          "MILK": 179,
+          "WOOL": 214,
+          "FERTILIZER": 1
+        }
+      },
+      {
+        "flow": {
+          "_do_hire": -54.0,
+          "SELL:WOOL": 5265.0,
+          "SELL:MILK": 2588.0,
+          "SELL:TOMATO": 730.0,
+          "SELL:WHEAT": 3936.0,
+          "SELL:FERTILIZER": 26.0,
+          "SELL:STRAWBERRY": 1997.0,
+          "SELL:CARROT": 575.0
+        },
+        "units": {
+          "_do_hire": 8,
+          "SELL:WOOL": 24,
+          "SELL:MILK": 15,
+          "SELL:TOMATO": 10,
+          "SELL:WHEAT": 84,
+          "SELL:FERTILIZER": 26,
+          "SELL_AT_FLOOR:FERTILIZER": 26,
+          "HARVEST:STRAWBERRY": 24,
+          "HARVEST:WHEAT": 42,
+          "HARVEST:MILK": 12,
+          "HARVEST:CARROT": 12,
+          "SELL:STRAWBERRY": 24,
+          "HARVEST:TOMATO": 4,
+          "HARVEST:WOOL": 8,
+          "SELL:CARROT": 12
+        },
+        "attempts": {
+          "COLLECT_FERTILIZER": 15,
+          "WEST": 23,
+          "EAST": 24,
+          "SOUTH": 26,
+          "NORTH": 25,
+          "WATER": 10,
+          "HARVEST": 30,
+          "DROP": 9,
+          "PASS": 37
+        },
+        "overflow": {},
+        "day": 29,
+        "cash_start": 130548.0,
+        "cash_end": 145611.0,
+        "portfolio": {
+          "SHEEP": 8,
+          "WEED": 20,
+          "TOMATO": 3,
+          "COW": 7,
+          "WHEAT": 7,
+          "PASTURE": 5,
+          "STRAWBERRY": 12,
+          "CARROT": 3
+        },
+        "hands": 0,
+        "quadrants": 4,
+        "stock": {
+          "WHEAT": 42,
+          "TOMATO": 6,
+          "MILK": 3,
+          "WOOL": 16,
+          "FERTILIZER": 11
+        },
+        "observed_shops": [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "ICE_CREAM_SHOP",
+          "YARN_STORE",
+          "YARN_STORE",
+          "PET_CAFE"
+        ],
+        "market_prices": {
+          "WHEAT": 48,
+          "CARROT": 50,
+          "TOMATO": 73,
+          "STRAWBERRY": 91,
+          "MELON": 73,
+          "EGG": 52,
+          "MILK": 177,
+          "WOOL": 221,
+          "FERTILIZER": 1
+        }
+      }
+    ],
+    "totals": {
+      "flow": {
+        "BUY_PRODUCT:WHEAT": -18404.0,
+        "BUY_ANIMAL:COW": -2800.0,
+        "BUY_ANIMAL:SHEEP": -6500.0,
+        "BUY_SEED:WHEAT": -390.0,
+        "_do_hire": -4353.0,
+        "SELL:FERTILIZER": 14027.0,
+        "SELL:WHEAT": 10759.0,
+        "BUY_SEED:STRAWBERRY": -4200.0,
+        "BUY_SEED:MELON": -1280.0,
+        "SELL:WOOL": 56080.0,
+        "SELL:MILK": 39114.0,
+        "_do_buy_land": -7000.0,
+        "SELL:STRAWBERRY": 49798.0,
+        "BUY_SEED:TOMATO": -400.0,
+        "SELL:MELON": 14010.0,
+        "SELL:TOMATO": 3635.0,
+        "BUY_SEED:CARROT": -60.0,
+        "SELL:CARROT": 575.0
+      },
+      "units": {
+        "BUY_PRODUCT:WHEAT": 441,
+        "BUY_ANIMAL:COW": 7,
+        "BUY_ANIMAL:SHEEP": 13,
+        "BUY_SEED:WHEAT": 39,
+        "_do_hire": 231,
+        "FEED:WHEAT": 423,
+        "SELL:FERTILIZER": 332,
+        "SELL:WHEAT": 244,
+        "BUY_SEED:STRAWBERRY": 42,
+        "BUY_SEED:MELON": 16,
+        "HARVEST:WHEAT": 226,
+        "HARVEST:WOOL": 330,
+        "SELL:WOOL": 326,
+        "HARVEST:MILK": 219,
+        "SELL:MILK": 219,
+        "_do_buy_land": 3,
+        "FERTILIZE:FERTILIZER": 131,
+        "HARVEST:STRAWBERRY": 315,
+        "SELL:STRAWBERRY": 299,
+        "BUY_SEED:TOMATO": 8,
+        "HARVEST:MELON": 96,
+        "SELL:MELON": 90,
+        "HARVEST:TOMATO": 50,
+        "SELL:TOMATO": 50,
+        "SELL_AT_FLOOR:FERTILIZER": 66,
+        "BUY_SEED:CARROT": 3,
+        "HARVEST:CARROT": 12,
+        "SELL:CARROT": 12
+      },
+      "attempts": {
+        "PASS": 706,
+        "PICKUP": 230,
+        "WEST": 754,
+        "BUILD_PASTURE": 20,
+        "PLACE": 43,
+        "NORTH": 655,
+        "FEED": 423,
+        "PLANT": 108,
+        "CARE": 403,
+        "WATER": 735,
+        "EAST": 399,
+        "SOUTH": 402,
+        "COLLECT_FERTILIZER": 467,
+        "DROP": 75,
+        "DIG": 19,
+        "HARVEST": 392,
+        "FERTILIZE": 131
+      },
+      "overflow": {
+        "STRAWBERRY": 16,
+        "MELON": 6,
+        "WOOL": 4,
+        "FERTILIZER": 4
+      }
+    },
+    "terminal_stock": {},
+    "terminal_seeds": {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0
+    },
+    "terminal_portfolio": {
+      "SHEEP": 8,
+      "WEED": 21,
+      "TOMATO": 2,
+      "COW": 7,
+      "PASTURE": 5,
+      "STRAWBERRY": 12
+    },
+    "terminal_yield_tiles": []
+  }
+}

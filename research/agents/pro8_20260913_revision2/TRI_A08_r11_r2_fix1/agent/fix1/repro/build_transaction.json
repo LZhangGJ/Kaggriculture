@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Expected validation failure injection; not a compiler reproduction",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/fix1_work/guard_fixture/build.py"
+  ],
+  "build_exit": 1,
+  "previous_native_preserved": true,
+  "before_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+  "after_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+  "rejected_staging": [
+    "/mnt/data/fix1_work/guard_fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164606425422Z.so"
+  ],
+  "gate": {
+    "status": "FAIL",
+    "error": "exact positive maintenance assertion",
+    "library": "/mnt/data/fix1_work/guard_fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164606425422Z.so",
+    "new_games": 0
+  },
+  "seconds": 28.534427565999977,
+  "new_games": 0
+}

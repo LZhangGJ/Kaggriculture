@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "stage": "production/read-only parent, root contract and focused suite verified before archive",
+  "new_games": 0,
+  "timestamp_utc": "2026-09-13T15:56:20.399787+00:00",
+  "parent_exact_original_files": 45,
+  "original_source_config_files": 44,
+  "unchanged_source_config_files": 40,
+  "changed_strategy_files": [
+    "policy/animal_service_dp.hpp",
+    "policy/triad.hpp"
+  ],
+  "identity_wiring_files": [
+    "main.py",
+    "build.py"
+  ],
+  "root_native_count": 1,
+  "candidate_native_sha256": "afca1d69fde38a0474546b70ecee38911477548dfde9aadc685c58a2a0b88a2f",
+  "sanitizer_suite": "ASan+UBSan focused suite passed in both worktree and relocated release tree",
+  "unresolved": [
+    "No new closed-loop games",
+    "Narrow-win preservation unproven",
+    "Transport/global optimization remains heuristic",
+    "Cross-environment dynamic loader compatibility is not guaranteed"
+  ],
+  "incomplete_wrapper_timing_records_preserved": 3
+}

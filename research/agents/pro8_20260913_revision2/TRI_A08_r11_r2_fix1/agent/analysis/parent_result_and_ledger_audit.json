@@ -1,0 +1,96 @@
+{
+  "scope": "Independent aggregation of supplied PARENT formal results, not new candidate games",
+  "new_games": 0,
+  "games": 1536,
+  "wins": 1054,
+  "draws": 0,
+  "all_719": true,
+  "errors": 0,
+  "public": {
+    "games": 1408,
+    "wins": 969
+  },
+  "R2": {
+    "games": 128,
+    "wins": 85
+  },
+  "cash_ledgers": [
+    {
+      "case": "aurax_reactive_v1_1742537856_seat0",
+      "verified_days": 30,
+      "terminal_cash": 96113.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 11041.0,
+      "wool_sales": 36509.0,
+      "melon_sales": 13880.0,
+      "strawberry_sales": 18296.0,
+      "failed_orders": 0
+    },
+    {
+      "case": "flexon_v5_113649547_seat0",
+      "verified_days": 30,
+      "terminal_cash": 94785.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 9491.0,
+      "wool_sales": 15843.0,
+      "melon_sales": 13807.0,
+      "strawberry_sales": 33721.0,
+      "failed_orders": 0
+    },
+    {
+      "case": "market_smart_v8_915042141_seat0",
+      "verified_days": 30,
+      "terminal_cash": 79427.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 7339.0,
+      "wool_sales": 24901.0,
+      "melon_sales": 13627.0,
+      "strawberry_sales": 12286.0,
+      "failed_orders": 0
+    },
+    {
+      "case": "soil_v219g_113649547_seat0",
+      "verified_days": 30,
+      "terminal_cash": 94786.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 9491.0,
+      "wool_sales": 15843.0,
+      "melon_sales": 13807.0,
+      "strawberry_sales": 33721.0,
+      "failed_orders": 0
+    },
+    {
+      "case": "submission_56149565_521596133_seat1",
+      "verified_days": 30,
+      "terminal_cash": 121464.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 14541.0,
+      "wool_sales": 95154.0,
+      "melon_sales": 12133.0,
+      "strawberry_sales": 12294.0,
+      "failed_orders": 0
+    },
+    {
+      "case": "submission_56149565_915042141_seat1",
+      "verified_days": 30,
+      "terminal_cash": 101775.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 12677.0,
+      "wool_sales": 4765.0,
+      "melon_sales": 16717.0,
+      "strawberry_sales": 27290.0,
+      "failed_orders": 1
+    },
+    {
+      "case": "thomas_955_v2_616522013_seat1",
+      "verified_days": 30,
+      "terminal_cash": 96083.0,
+      "all_cash_balanced": true,
+      "wheat_purchases": 9463.0,
+      "wool_sales": 7720.0,
+      "melon_sales": 13653.0,
+      "strawberry_sales": 34051.0,
+      "failed_orders": 0
+    }
+  ]
+}

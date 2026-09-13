@@ -1,0 +1,11 @@
+{
+  "name": "clean_offline_rebuild",
+  "command": [
+    "python",
+    "clean_rebuild/build.py"
+  ],
+  "start_utc": "2026-09-13T16:45:36.795034+00:00",
+  "end_utc": "2026-09-13T16:46:05.022414+00:00",
+  "wall_seconds": 28.227390112999956,
+  "exit_code": 0
+}

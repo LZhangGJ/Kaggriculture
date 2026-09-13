@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-13T15:48:45.649815+00:00",
+  "original_files": 48,
+  "original_files_changed": 0,
+  "derived_added_files": [
+    "__pycache__/main.cpython-313.pyc",
+    "policy/__pycache__/agent.cpython-313.pyc"
+  ],
+  "explanation": "Python imports created bytecode caches despite mode444/555 when run as root. They are not parent source/runtime inputs. All 48 original files still match. Remove generated cache only, preserve exact archive and disable bytecode for subsequent tests."
+}

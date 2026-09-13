@@ -1,0 +1,8 @@
+[
+  "python",
+  "candidate/build.py",
+  "--cxx",
+  "clang++",
+  "--out",
+  "/mnt/data/fix1_work/repro/fix1_clang17.so"
+]

@@ -1,0 +1,3 @@
+0000000000006530 t check_choices(competitive::AnimalServiceDP const&, int, int, int, std::array<std::array<double, 9ul>, 30ul> const&, double) [clone .constprop.0]
+000000000000224f t check_choices(competitive::AnimalServiceDP const&, int, int, int, std::array<std::array<double, 9ul>, 30ul> const&, double) [clone .constprop.0] [clone .cold]
+0000000000006f60 W competitive::AnimalServiceDP::solve(int, int, int, std::array<std::array<double, 9ul>, 30ul> const&, double)

@@ -1,0 +1,79 @@
+{
+  "agent_sha256": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+  "native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "cases": [
+    {
+      "id": "aurax_reactive_v1_1816494862_seat0",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.827123595000103,
+      "max_call_seconds": 0.2700182139997196,
+      "new_games": 0,
+      "parent_cash_margin": -10931.0
+    },
+    {
+      "id": "aurax_reactive_v1_852484341_seat0",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.651040911999644,
+      "max_call_seconds": 0.34027434700010417,
+      "new_games": 0,
+      "parent_cash_margin": -40.0
+    },
+    {
+      "id": "market_smart_v8_2535322_seat1",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.6430212789996403,
+      "max_call_seconds": 0.25854728800004523,
+      "new_games": 0,
+      "parent_cash_margin": -15328.0
+    },
+    {
+      "id": "soil_v219g_2535322_seat1",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.5362279599999056,
+      "max_call_seconds": 0.24774683799978447,
+      "new_games": 0,
+      "parent_cash_margin": -15328.0
+    },
+    {
+      "id": "submission_56149565_1623731725_seat1",
+      "calls": 719,
+      "exact_parent_actions": 696,
+      "first_divergence": 432,
+      "seconds": 3.355325289999655,
+      "max_call_seconds": 0.2521483910004463,
+      "new_games": 0,
+      "parent_cash_margin": -5695.0
+    },
+    {
+      "id": "submission_56149565_2029247155_seat0",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.468627500999901,
+      "max_call_seconds": 0.22316330900002868,
+      "new_games": 0,
+      "parent_cash_margin": 35.0
+    },
+    {
+      "id": "thomas_955_v2_1395450535_seat1",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_divergence": null,
+      "seconds": 3.7505024109996157,
+      "max_call_seconds": 0.16872225599990998,
+      "new_games": 0,
+      "parent_cash_margin": 129.0
+    }
+  ],
+  "seconds": 26.289648199000112,
+  "max_rss_kib": 248448,
+  "new_games": 0
+}

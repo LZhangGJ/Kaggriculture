@@ -1,0 +1,80 @@
+{
+  "scope": "Original candidates compared only before and at the first different action. No stale future comparison is used to claim preservation or wins.",
+  "new_games": 0,
+  "original_candidates_bit_exact": 1262,
+  "cases": [
+    {
+      "id": "aurax_reactive_v1_1816494862_seat0",
+      "first_action_divergence": null,
+      "original_candidate_scores_and_plans_exact_through_divergence": 260,
+      "first_divergence_diagnostic": null,
+      "historical_outcome_not_revalidated": false
+    },
+    {
+      "id": "aurax_reactive_v1_852484341_seat0",
+      "first_action_divergence": 192,
+      "original_candidate_scores_and_plans_exact_through_divergence": 74,
+      "first_divergence_diagnostic": {
+        "step": 192,
+        "new_best_id": 33,
+        "new_land_cap": 1,
+        "conditional_model_score_difference": 47.83225010496153,
+        "not_realized_cash": true
+      },
+      "historical_outcome_not_revalidated": true
+    },
+    {
+      "id": "market_smart_v8_2535322_seat1",
+      "first_action_divergence": null,
+      "original_candidate_scores_and_plans_exact_through_divergence": 252,
+      "first_divergence_diagnostic": null,
+      "historical_outcome_not_revalidated": false
+    },
+    {
+      "id": "soil_v219g_2535322_seat1",
+      "first_action_divergence": null,
+      "original_candidate_scores_and_plans_exact_through_divergence": 252,
+      "first_divergence_diagnostic": null,
+      "historical_outcome_not_revalidated": false
+    },
+    {
+      "id": "submission_56149565_1623731725_seat1",
+      "first_action_divergence": 360,
+      "original_candidate_scores_and_plans_exact_through_divergence": 182,
+      "first_divergence_diagnostic": {
+        "step": 360,
+        "new_best_id": 39,
+        "new_land_cap": 3,
+        "conditional_model_score_difference": 15.84987887168245,
+        "not_realized_cash": true
+      },
+      "historical_outcome_not_revalidated": true
+    },
+    {
+      "id": "submission_56149565_2029247155_seat0",
+      "first_action_divergence": 288,
+      "original_candidate_scores_and_plans_exact_through_divergence": 144,
+      "first_divergence_diagnostic": {
+        "step": 288,
+        "new_best_id": 37,
+        "new_land_cap": 3,
+        "conditional_model_score_difference": 30.58130556211836,
+        "not_realized_cash": true
+      },
+      "historical_outcome_not_revalidated": true
+    },
+    {
+      "id": "thomas_955_v2_1395450535_seat1",
+      "first_action_divergence": 216,
+      "original_candidate_scores_and_plans_exact_through_divergence": 98,
+      "first_divergence_diagnostic": {
+        "step": 216,
+        "new_best_id": 33,
+        "new_land_cap": 2,
+        "conditional_model_score_difference": 192.2592155287357,
+        "not_realized_cash": true
+      },
+      "historical_outcome_not_revalidated": true
+    }
+  ]
+}

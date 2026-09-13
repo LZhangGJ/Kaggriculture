@@ -1,0 +1,278 @@
+[
+  {
+    "path": "agent/build.py",
+    "ok": true
+  },
+  {
+    "path": "agent/build_a06.py",
+    "ok": true
+  },
+  {
+    "path": "agent/COMPILER_FLAGS.json",
+    "ok": true
+  },
+  {
+    "path": "agent/main.py",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/a06.so",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/a06_live_reinvestment.inc",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/agent.py",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/animal_service_dp.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/bridge.cpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/conditional_market.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/config.json",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/a06_fleet_dp.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/compile_choices.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/crop_delivery.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/day_consequence.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/idle_task_handoff.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/intraday_admission.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/investment_candidates.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/joint_portfolio.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/live_execution_repairs.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/observation_view.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/observed_day_scenario.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/pack_memo.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/policy.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/regret_pack_incremental.inc",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/resource_exchange.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/rotation_calendar.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/rotation_cash.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/service_recovery.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/vendor/simulator.cpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/executor/vendor/simulator.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/finite_fertilizer.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/learned_value.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/local_sale_timing.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/observation_codec.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/observed_crop_clock.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/ongoing_maintenance_dp.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/planner.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/proposals.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/public_flow_scenario.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/public_trade_ledger.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/sale_clock.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/search.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/startup_supply.hpp",
+    "ok": true
+  },
+  {
+    "path": "agent/policy/triad.hpp",
+    "ok": true
+  },
+  {
+    "path": "referee/cpu_runtime.py",
+    "ok": true
+  },
+  {
+    "path": "referee/official/kaggriculture.json",
+    "ok": true
+  },
+  {
+    "path": "referee/official/kaggriculture.py",
+    "ok": true
+  },
+  {
+    "path": "referee/official/seed_utils.py",
+    "ok": true
+  },
+  {
+    "path": "PARENT_IDENTITY.json",
+    "ok": true
+  },
+  {
+    "path": "FULL64_METRICS.json",
+    "ok": true
+  },
+  {
+    "path": "FULL64_ROWS.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/market_smart_v8_2535322_seat1.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/market_smart_v8_2535322_seat1.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/aurax_reactive_v1_852484341_seat0.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/aurax_reactive_v1_852484341_seat0.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/submission_56149565_1623731725_seat1.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/submission_56149565_1623731725_seat1.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/aurax_reactive_v1_1816494862_seat0.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/aurax_reactive_v1_1816494862_seat0.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/soil_v219g_2535322_seat1.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/soil_v219g_2535322_seat1.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/thomas_955_v2_1395450535_seat1.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/thomas_955_v2_1395450535_seat1.json",
+    "ok": true
+  },
+  {
+    "path": "own_traces/submission_56149565_2029247155_seat0.json.gz",
+    "ok": true
+  },
+  {
+    "path": "own_ledgers/submission_56149565_2029247155_seat0.json",
+    "ok": true
+  },
+  {
+    "path": "SELECTED_CASES.json",
+    "ok": true
+  },
+  {
+    "path": "probe_observations.py",
+    "ok": true
+  },
+  {
+    "path": "README.md",
+    "ok": true
+  }
+]

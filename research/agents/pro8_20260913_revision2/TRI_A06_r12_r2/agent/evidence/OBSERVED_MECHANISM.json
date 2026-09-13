@@ -1,0 +1,98 @@
+{
+  "scope": "recorded parent-only evidence and source diagnosis, not candidate outcome",
+  "all_7_own_transitions_checked": 5033,
+  "own_transition_mismatches": 0,
+  "cases": [
+    {
+      "case": "market_smart_v8_772192291_seat1",
+      "historical_margin": -14121.0,
+      "observed_strawberry_produced": 227,
+      "observed_strawberry_harvested": 227,
+      "ledger_strawberry_sold_units": 227,
+      "ledger_strawberry_sale_cash": 25235.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "ahmed_v27_120540881_seat0",
+      "historical_margin": -36.0,
+      "observed_strawberry_produced": 184,
+      "observed_strawberry_harvested": 176,
+      "ledger_strawberry_sold_units": 176,
+      "ledger_strawberry_sale_cash": 18179.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "submission_56149565_852484341_seat0",
+      "historical_margin": -14602.0,
+      "observed_strawberry_produced": 210,
+      "observed_strawberry_harvested": 210,
+      "ledger_strawberry_sold_units": 210,
+      "ledger_strawberry_sale_cash": 24313.0,
+      "strawberry_drought_deaths": 16,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "aurax_reactive_v1_120540881_seat0",
+      "historical_margin": -11422.0,
+      "observed_strawberry_produced": 190,
+      "observed_strawberry_harvested": 190,
+      "ledger_strawberry_sold_units": 185,
+      "ledger_strawberry_sale_cash": 17912.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "soil_v219g_772192291_seat1",
+      "historical_margin": -14121.0,
+      "observed_strawberry_produced": 227,
+      "observed_strawberry_harvested": 227,
+      "ledger_strawberry_sold_units": 227,
+      "ledger_strawberry_sale_cash": 25235.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "aurax_reactive_v1_521596133_seat0",
+      "historical_margin": 42.0,
+      "observed_strawberry_produced": 296,
+      "observed_strawberry_harvested": 296,
+      "ledger_strawberry_sold_units": 294,
+      "ledger_strawberry_sale_cash": 56915.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    },
+    {
+      "case": "submission_56149565_1123506227_seat0",
+      "historical_margin": 67.0,
+      "observed_strawberry_produced": 110,
+      "observed_strawberry_harvested": 110,
+      "ledger_strawberry_sold_units": 110,
+      "ledger_strawberry_sale_cash": 13163.0,
+      "strawberry_drought_deaths": 0,
+      "strawberry_full_capacity_lost_units": 0
+    }
+  ],
+  "specific_labor_shortfall": {
+    "case": "submission_56149565_852484341_seat0",
+    "step": 216,
+    "day": 9,
+    "starting_cash": 482,
+    "starting_hands": 0,
+    "planned_total_new_hires": 7,
+    "actually_filled_after_two_preparation_frames": 1,
+    "cash_after_each_preparation_frame": [
+      0,
+      0
+    ],
+    "start_at_risk_ongoing_crops": 19,
+    "strawberries_died_at_refresh_step239": 16,
+    "all_these_16_had_no_previous_production": true,
+    "current_quote_own_only_cash_after_sales_and_current_feed": 3481,
+    "actual_cash_available_for_subsequent_fixed_cost_purchases_inferred_from_visible_fills": 3321,
+    "net_price_execution_shortfall": 160,
+    "warning": "The 160 is the combined net trade-price execution difference, not an attribution to a particular rival sale. No recovered terminal profit is inferred."
+  },
+  "source_cause": "prepare_orders reserves hirecost(h) before admit(), but formerly emitted admitted capital buys before all HIRE orders. Conditional sale/input quotes cannot enforce that reservation on the actual market."
+}

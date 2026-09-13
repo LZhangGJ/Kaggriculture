@@ -1,0 +1,15 @@
+{
+  "task": "TRI_A06_r6_r2",
+  "dispatch_utc": "2026-09-13T15:20:22.689Z",
+  "hard_deadline_utc": "2026-09-13T17:20:22.689Z",
+  "first_resource_probe_utc": "2026-09-13T15:21:06.695681182Z",
+  "effective_cpu": 4,
+  "affinity_count": 5,
+  "cpu_quota": 400000,
+  "cpu_period": 100000,
+  "memory_limit_bytes": 4294967296,
+  "memory_usable_70pct_bytes": 3006477107,
+  "max_build_workers": 1,
+  "max_probe_workers": 1,
+  "notes": "Compile/probe scale selected after timeout and RSS measurement; host MemAvailable is not the allocation."
+}

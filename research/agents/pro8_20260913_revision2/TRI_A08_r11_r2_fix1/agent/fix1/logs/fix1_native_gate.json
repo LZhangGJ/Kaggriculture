@@ -1,0 +1,15 @@
+{
+  "name": "fix1_native_gate",
+  "command": [
+    "python",
+    "/mnt/data/fix1_work/candidate/tests/native_choice_gate.py",
+    "--library",
+    "/mnt/data/fix1_work/candidate/policy/tri_a08_r11_r2_fix1.so",
+    "--out",
+    "/mnt/data/fix1_work/repro/native_gate.json"
+  ],
+  "start_utc": "2026-09-13T16:34:50.423959+00:00",
+  "end_utc": "2026-09-13T16:34:51.397022+00:00",
+  "wall_seconds": 0.9730739159999757,
+  "exit_code": 0
+}

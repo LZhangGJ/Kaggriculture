@@ -1,0 +1,53 @@
+UTC=2026-09-13T15:22:51.858310323Z
+--- affinity ---
+pid 366's current affinity list: 0-4
+--- cgroup ---
+0::/
+[cpu.max]
+400000 100000
+[cpu.stat]
+usage_usec 8947023
+user_usec 3372852
+system_usec 5574170
+nice_usec 0
+nr_periods 158
+nr_throttled 1
+throttled_usec 34504
+nr_bursts 0
+burst_usec 0
+[cpuset.cpus.effective]
+0-4
+[memory.max]
+4294967296
+[memory.current]
+311709696
+[memory.peak]
+1090273280
+[memory.events]
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+--- mem ---
+MemTotal:        6090736 kB
+MemAvailable:    5135392 kB
+--- disk ---
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G   31M   30G   1% /
+--- versions ---
+Python 3.13.5
+g++ (Debian 14.2.0-19) 14.2.0
+clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)
+/usr/bin/timeout
+/usr/bin/time
+--- files ---
+total 26M
+-rw-r--r-- 1 root oai_shared 3.3M Sep 13 15:22 A08_r11_source_and_losses.zip
+-rw-r--r-- 1 root oai_shared  18M Sep 13 15:22 TRI_A08_r11_r1.zip
+-rw-r--r-- 1 root oai_shared 4.5M Sep 13 15:22 TRI_A08_r11_r1_own_visible.zip
+drwxr-sr-x 2 root oai_shared 4.0K Sep 13 15:22 TRI_A08_r11_r1_release
+drwxr-sr-x 3 root oai_shared 4.0K Sep 13 15:22 a08_r2_work
+--- attachment SHA256 ---
+751c049fc9d765319264cddad8a5a4544059ec15101354d2fcc69e874ec670ac  /mnt/data/TRI_A08_r11_r1_own_visible.zip

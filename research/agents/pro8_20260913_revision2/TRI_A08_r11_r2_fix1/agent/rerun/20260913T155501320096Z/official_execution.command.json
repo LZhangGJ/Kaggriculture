@@ -1,0 +1,8 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/TRI_A08_r11_r2_release/tests/check_official_execution.py",
+  "--scenarios",
+  "/mnt/data/TRI_A08_r11_r2_release/rerun/20260913T155501320096Z/official_scenarios.jsonl",
+  "--out",
+  "/mnt/data/TRI_A08_r11_r2_release/rerun/20260913T155501320096Z/official_execution.json"
+]

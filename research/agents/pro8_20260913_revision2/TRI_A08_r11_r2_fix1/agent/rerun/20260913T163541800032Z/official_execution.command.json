@@ -1,0 +1,8 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/fix1_work/candidate/tests/check_official_execution.py",
+  "--scenarios",
+  "/mnt/data/fix1_work/candidate/rerun/20260913T163541800032Z/official_scenarios.jsonl",
+  "--out",
+  "/mnt/data/fix1_work/candidate/rerun/20260913T163541800032Z/official_execution.json"
+]

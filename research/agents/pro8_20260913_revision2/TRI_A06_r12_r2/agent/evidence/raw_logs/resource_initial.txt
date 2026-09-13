@@ -1,0 +1,34 @@
+2026-09-13T15:24:41.542861682Z
+---affinity---
+pid 366's current affinity list: 0-4
+---cgroup---
+0::/
+cpu.max: 400000 100000
+cpuset.cpus.effective: 0-4
+memory.max: 4294967296
+memory.current: 299794432
+memory.high: max
+memory.swap.max: max
+---mem available (host context only)---
+MemTotal:        6090736 kB
+MemAvailable:    5146400 kB
+---disk---
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G   20M   30G   1% /
+---tools---
+Python 3.13.5
+g++ (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+/usr/bin/timeout
+/usr/bin/time
+---inputs---
+-rw-r--r-- 1 root oai_shared 3.4M Sep 13 15:24 /mnt/data/A06_r12_source_and_losses.zip
+-rw-r--r-- 1 root oai_shared 6.5M Sep 13 15:24 /mnt/data/TRI_A06_r12_r1.zip
+-rw-r--r-- 1 root oai_shared 4.7M Sep 13 15:24 /mnt/data/TRI_A06_r12_r1_own_visible.zip
+e30ba4fb68a4307bd1babda1a91b0483b5bbeccb416007335fda42f2486cd8ee  /mnt/data/TRI_A06_r12_r1_own_visible.zip

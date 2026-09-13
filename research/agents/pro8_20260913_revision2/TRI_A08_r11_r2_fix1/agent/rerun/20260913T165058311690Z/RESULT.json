@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "new_games": 0,
+  "output": "/mnt/data/fix1_work/candidate/rerun/20260913T165058311690Z",
+  "commands": [
+    {
+      "name": "unit_1_build",
+      "exit_code": 0
+    },
+    {
+      "name": "unit_1",
+      "exit_code": 0
+    },
+    {
+      "name": "unit_0_build",
+      "exit_code": 0
+    },
+    {
+      "name": "unit_0",
+      "exit_code": 0
+    },
+    {
+      "name": "unit_sanitize_build",
+      "exit_code": 0
+    },
+    {
+      "name": "unit_sanitize",
+      "exit_code": 0
+    },
+    {
+      "name": "emit_animal_paths_build",
+      "exit_code": 0
+    },
+    {
+      "name": "emit_scenarios",
+      "exit_code": 0
+    },
+    {
+      "name": "official_execution",
+      "exit_code": 0
+    },
+    {
+      "name": "native_choice_gate",
+      "exit_code": 0
+    },
+    {
+      "name": "entry_contract",
+      "exit_code": 0
+    }
+  ]
+}

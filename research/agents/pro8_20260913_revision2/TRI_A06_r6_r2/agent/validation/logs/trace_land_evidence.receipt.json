@@ -1,0 +1,83 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/a06_r6_r2_work/tools/trace_land_evidence.py",
+    "--input",
+    "/mnt/data/a06_r6_r2_work/input",
+    "--audits",
+    "/mnt/data/a06_r6_r2_work/analysis/parent_audits",
+    "--out",
+    "/mnt/data/a06_r6_r2_work/analysis/trace_land_evidence"
+  ],
+  "started_utc": "2026-09-13T15:44:47.582087+00:00",
+  "timeout_seconds": 120,
+  "parent_monitor_pid": 1131,
+  "finished_utc": "2026-09-13T15:44:52.085965+00:00",
+  "wall_seconds": 4.5039129939998475,
+  "exit_code": 0,
+  "cgroup_samples": [
+    {
+      "elapsed_seconds": 0.0006586699998933909,
+      "memory_current": "436215808",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 0.5009448030000385,
+      "memory_current": "562208768",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 1.0013008569999329,
+      "memory_current": "665657344",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 1.501647230999879,
+      "memory_current": "689283072",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 2.0020094639999115,
+      "memory_current": "689831936",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 2.5023638600000595,
+      "memory_current": "690356224",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 3.0027272849999918,
+      "memory_current": "626696192",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 3.503122706999875,
+      "memory_current": "660742144",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 4.00344590099985,
+      "memory_current": "650682368",
+      "memory_peak": "1098219520",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    }
+  ]
+}

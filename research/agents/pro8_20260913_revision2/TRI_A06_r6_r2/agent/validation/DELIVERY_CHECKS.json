@@ -1,0 +1,54 @@
+{
+  "production_source_files_compared_to_parent": 45,
+  "immutable_parent_all_original_files_match": true,
+  "only_changed_inherited_files": [
+    "policy/search.hpp",
+    "policy/a06.so"
+  ],
+  "input_manifest_records": 69,
+  "input_manifest_mapping_all_pass": true,
+  "unpacked_default_build_and_unit_exit": 0,
+  "unpacked_rebuild_matches_deployed_native": true,
+  "selected_native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "unpacked_actual_root_calls": 5033,
+  "unpacked_actions_match_prepack_candidate": 5033,
+  "cases": [
+    {
+      "case": "market_smart_v8_2535322_seat1",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "thomas_955_v2_1395450535_seat1",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "aurax_reactive_v1_852484341_seat0",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "soil_v219g_2535322_seat1",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "submission_56149565_1623731725_seat1",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "aurax_reactive_v1_1816494862_seat0",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    },
+    {
+      "case": "submission_56149565_2029247155_seat0",
+      "identical_actions": 719,
+      "same_first_divergence": true
+    }
+  ],
+  "new_games": 0,
+  "archive_preflight_note": "The exact deployment source/config/native and tests were extracted from production_preflight.zip, rebuilt and exercised. Final additions are documentation and the resulting raw receipts; deployment bytes are unchanged."
+}

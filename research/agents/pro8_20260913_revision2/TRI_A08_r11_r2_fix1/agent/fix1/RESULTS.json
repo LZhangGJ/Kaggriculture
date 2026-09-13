@@ -1,0 +1,284 @@
+{
+  "final_default_suite": {
+    "status": "PASS",
+    "new_games": 0,
+    "output": "/mnt/data/fix1_work/candidate/rerun/20260913T165058311690Z",
+    "commands": [
+      {
+        "name": "unit_1_build",
+        "exit_code": 0
+      },
+      {
+        "name": "unit_1",
+        "exit_code": 0
+      },
+      {
+        "name": "unit_0_build",
+        "exit_code": 0
+      },
+      {
+        "name": "unit_0",
+        "exit_code": 0
+      },
+      {
+        "name": "unit_sanitize_build",
+        "exit_code": 0
+      },
+      {
+        "name": "unit_sanitize",
+        "exit_code": 0
+      },
+      {
+        "name": "emit_animal_paths_build",
+        "exit_code": 0
+      },
+      {
+        "name": "emit_scenarios",
+        "exit_code": 0
+      },
+      {
+        "name": "official_execution",
+        "exit_code": 0
+      },
+      {
+        "name": "native_choice_gate",
+        "exit_code": 0
+      },
+      {
+        "name": "entry_contract",
+        "exit_code": 0
+      }
+    ]
+  },
+  "gcc14_vs_parent": {
+    "status": "PASS",
+    "left": "/mnt/data/fix1_work/original_r2/main.py",
+    "right": "/mnt/data/fix1_work/candidate/main.py",
+    "right_library_override": null,
+    "scope": "paired saved-own-observation invocation; not closed-loop game verification",
+    "calls_per_variant": 5033,
+    "exact": 5033,
+    "new_games": 0,
+    "seconds": 77.05076757500001,
+    "peak_rss_kib": 266256,
+    "cases": [
+      {
+        "case": "aurax_reactive_v1_1742537856_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "0da65b65967f75f3128ec7bb251bd82587b2c9723eb17854a1231f2b05c2cfff",
+        "right_action_sha256": "0da65b65967f75f3128ec7bb251bd82587b2c9723eb17854a1231f2b05c2cfff",
+        "left_seconds": 5.23719708599981,
+        "right_seconds": 5.185421720000136
+      },
+      {
+        "case": "flexon_v5_113649547_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "right_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "left_seconds": 5.664167329999827,
+        "right_seconds": 5.539356027001304
+      },
+      {
+        "case": "market_smart_v8_915042141_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "09c3db07ed54ae5d648daaacacdfc2bcfbf7e7022996f49faf9685000da49a8b",
+        "right_action_sha256": "09c3db07ed54ae5d648daaacacdfc2bcfbf7e7022996f49faf9685000da49a8b",
+        "left_seconds": 5.697160827001767,
+        "right_seconds": 5.624313862996701
+      },
+      {
+        "case": "soil_v219g_113649547_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "right_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "left_seconds": 5.46640757900127,
+        "right_seconds": 5.368403109999804
+      },
+      {
+        "case": "submission_56149565_521596133_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "4cef3f455cbc693406a0bf35283d61dcdb26afdc1796a9a1a4b0e16d6cf05a10",
+        "right_action_sha256": "4cef3f455cbc693406a0bf35283d61dcdb26afdc1796a9a1a4b0e16d6cf05a10",
+        "left_seconds": 4.942848274002017,
+        "right_seconds": 4.870781688996203
+      },
+      {
+        "case": "submission_56149565_915042141_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "df0972471b35f58f49ff62dfce11a8ef644d5d78fc86cc60d669475cb01dc7eb",
+        "right_action_sha256": "df0972471b35f58f49ff62dfce11a8ef644d5d78fc86cc60d669475cb01dc7eb",
+        "left_seconds": 5.5708208190005735,
+        "right_seconds": 5.532871150001483
+      },
+      {
+        "case": "thomas_955_v2_616522013_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "e2d15c5fed8497d3fc3f06f4003a48b914e976674d0cecad7d9714001299e742",
+        "right_action_sha256": "e2d15c5fed8497d3fc3f06f4003a48b914e976674d0cecad7d9714001299e742",
+        "left_seconds": 5.613725889001216,
+        "right_seconds": 5.561132084001429
+      }
+    ]
+  },
+  "gcc14_vs_clang17": {
+    "status": "PASS",
+    "left": "/mnt/data/fix1_work/candidate/main.py",
+    "right": "/mnt/data/fix1_work/candidate/main.py",
+    "right_library_override": "/mnt/data/fix1_work/repro/fix1_clang17.so",
+    "scope": "paired saved-own-observation invocation; not closed-loop game verification",
+    "calls_per_variant": 5033,
+    "exact": 5033,
+    "new_games": 0,
+    "seconds": 76.56896354300011,
+    "peak_rss_kib": 269648,
+    "cases": [
+      {
+        "case": "aurax_reactive_v1_1742537856_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "0da65b65967f75f3128ec7bb251bd82587b2c9723eb17854a1231f2b05c2cfff",
+        "right_action_sha256": "0da65b65967f75f3128ec7bb251bd82587b2c9723eb17854a1231f2b05c2cfff",
+        "left_seconds": 5.1770816070009005,
+        "right_seconds": 5.343265618001396
+      },
+      {
+        "case": "flexon_v5_113649547_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "right_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "left_seconds": 5.548706403996448,
+        "right_seconds": 5.650214842003152
+      },
+      {
+        "case": "market_smart_v8_915042141_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "09c3db07ed54ae5d648daaacacdfc2bcfbf7e7022996f49faf9685000da49a8b",
+        "right_action_sha256": "09c3db07ed54ae5d648daaacacdfc2bcfbf7e7022996f49faf9685000da49a8b",
+        "left_seconds": 5.426140759998361,
+        "right_seconds": 5.617372567004395
+      },
+      {
+        "case": "soil_v219g_113649547_seat0",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "right_action_sha256": "cf8b150dd818a497412bc7bc37ded9f575aa6bc2dcf4fdb5390e28715401e9ac",
+        "left_seconds": 5.292281205003064,
+        "right_seconds": 5.467189172001099
+      },
+      {
+        "case": "submission_56149565_521596133_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "4cef3f455cbc693406a0bf35283d61dcdb26afdc1796a9a1a4b0e16d6cf05a10",
+        "right_action_sha256": "4cef3f455cbc693406a0bf35283d61dcdb26afdc1796a9a1a4b0e16d6cf05a10",
+        "left_seconds": 4.618172846997368,
+        "right_seconds": 4.7314482900033
+      },
+      {
+        "case": "submission_56149565_915042141_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "df0972471b35f58f49ff62dfce11a8ef644d5d78fc86cc60d669475cb01dc7eb",
+        "right_action_sha256": "df0972471b35f58f49ff62dfce11a8ef644d5d78fc86cc60d669475cb01dc7eb",
+        "left_seconds": 5.45888342299736,
+        "right_seconds": 5.630184136002526
+      },
+      {
+        "case": "thomas_955_v2_616522013_seat1",
+        "calls": 719,
+        "exact": 719,
+        "first_difference": null,
+        "left_action_sha256": "e2d15c5fed8497d3fc3f06f4003a48b914e976674d0cecad7d9714001299e742",
+        "right_action_sha256": "e2d15c5fed8497d3fc3f06f4003a48b914e976674d0cecad7d9714001299e742",
+        "left_seconds": 5.643686653995019,
+        "right_seconds": 5.8172732860005
+      }
+    ]
+  },
+  "portable_refusal": {
+    "status": "PASS",
+    "scope": "Isolated expected rejection; not a compiler failure reproduction",
+    "build_exit": 1,
+    "native_and_receipt_preserved": true,
+    "before_native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "after_native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "before_receipt_sha256": "565c24838b367b21c1a9c5627a261f73f350496d3829d3aced603b3b99084394",
+    "after_receipt_sha256": "565c24838b367b21c1a9c5627a261f73f350496d3829d3aced603b3b99084394",
+    "gate": {
+      "status": "FAIL",
+      "error": "exact positive maintenance assertion",
+      "library": "/mnt/data/fix1_work/repro/portable_build_refusal/fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164752346981Z.so",
+      "new_games": 0
+    },
+    "staging_preserved": [
+      "/mnt/data/fix1_work/repro/portable_build_refusal/fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164752346981Z.so"
+    ],
+    "production_gate_sha256": "1c4866667e35d9fd9d167b001fd83a89a5d10a8f391fcd2cdf15a5d83ae1c51d",
+    "test_only_mutated_gate_sha256": "71a9599cce6c97b5195e7065db05dff9452d2e230acc5a0177f9a1e7e4f68be2",
+    "seconds": 29.17149356899995,
+    "new_games": 0
+  },
+  "native_gate": {
+    "status": "PASS",
+    "library": "/mnt/data/fix1_work/candidate/policy/tri_a08_r11_r2_fix1.so",
+    "native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "animal_collection_labor": 1,
+    "table_solves": 530,
+    "states_validated": 29456,
+    "checks_passed_before_mutation": 171628,
+    "mutation_prefix_states": 5,
+    "checks_including_expected_mutation_failure": 171656,
+    "table_digest": "5b7ddb3317e1466890ae9a6bb505711e2e221a506433cfb5c2927d6ac96a7f6b",
+    "rich": [
+      65.0,
+      65.0,
+      1.0,
+      0.0
+    ],
+    "negative": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mutation_rejected": true,
+    "mutation_message": "action != independently selected argmax kind=9 placed=21 day=28 hunger=1 bonus=0 work=4.0",
+    "seconds": 0.3875549509998564,
+    "new_games": 0
+  },
+  "official_execution": {
+    "scope": "Official single-own-farm unit/dawn rule checks; not games or global scheduler feasibility",
+    "new_games": 0,
+    "status": "PASS",
+    "lifecycle_cases": 4608,
+    "player_days": 16128,
+    "effective_unit_actions": 26389,
+    "checks": 90914,
+    "failures": []
+  },
+  "status": "LOCAL_GCC14_CLANG17_PASS_CENTRAL_GCC13_RECHECK_PENDING",
+  "new_games": 0
+}

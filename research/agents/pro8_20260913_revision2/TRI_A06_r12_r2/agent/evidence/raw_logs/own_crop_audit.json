@@ -1,0 +1,6246 @@
+[
+  {
+    "case": "market_smart_v8_772192291_seat1",
+    "parent_margin": -14121.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "TOMATO_planted": 19,
+      "TOMATO_water": 152,
+      "STRAWBERRY_planted": 31,
+      "STRAWBERRY_water": 276,
+      "TOMATO_fertilize": 34,
+      "TOMATO_production_ticks": 76,
+      "TOMATO_bonus_ticks": 72,
+      "TOMATO_produced": 148,
+      "TOMATO_capacity_loss": 0,
+      "TOMATO_harvest": 148,
+      "STRAWBERRY_fertilize": 54,
+      "STRAWBERRY_production_ticks": 121,
+      "STRAWBERRY_bonus_ticks": 106,
+      "STRAWBERRY_produced": 227,
+      "STRAWBERRY_capacity_loss": 0,
+      "TOMATO_dig": 7,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_harvest": 227,
+      "STRAWBERRY_dig": 13,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:TOMATO": -950.0,
+      "BUY_SEED:STRAWBERRY": -3100.0,
+      "SELL:TOMATO": 6609.0,
+      "SELL:STRAWBERRY": 25235.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 4,
+        "plant_step": 117,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 141,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 154,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          3,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 155,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 156,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 162,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 174,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 185,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 188,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 198,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 207,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 210,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 213,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 221,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 222,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 224,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 253,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 290,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 299,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 305,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 315,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          6,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 318,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 325,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          6,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 341,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 368,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 15,
+        "plant_step": 374,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 378,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 5,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          7,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 391,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 394,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 404,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          8,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 426,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          8,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          4,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 438,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 443,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      }
+    ]
+  },
+  {
+    "case": "ahmed_v27_120540881_seat0",
+    "parent_margin": -36.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "STRAWBERRY_planted": 25,
+      "STRAWBERRY_water": 218,
+      "TOMATO_planted": 33,
+      "TOMATO_water": 250,
+      "TOMATO_drought_death": 2,
+      "STRAWBERRY_fertilize": 48,
+      "TOMATO_fertilize": 61,
+      "STRAWBERRY_production_ticks": 93,
+      "STRAWBERRY_bonus_ticks": 91,
+      "STRAWBERRY_produced": 184,
+      "STRAWBERRY_capacity_loss": 0,
+      "TOMATO_production_ticks": 124,
+      "TOMATO_bonus_ticks": 123,
+      "TOMATO_produced": 247,
+      "TOMATO_capacity_loss": 0,
+      "STRAWBERRY_harvest": 176,
+      "TOMATO_harvest": 241,
+      "TOMATO_dig": 16,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_dig": 7,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:STRAWBERRY": -2500.0,
+      "BUY_SEED:TOMATO": -1650.0,
+      "SELL:STRAWBERRY": 18179.0,
+      "SELL:TOMATO": 15262.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 124,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 134,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 137,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 172,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 175,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 178,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 181,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 186,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 190,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 218,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 222,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 225,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          2,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 229,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 231,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 233,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          1,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 235,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 247,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 256,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 258,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 262,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 303,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 305,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 306,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 326,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          1,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 326,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          0,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 329,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 344,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 348,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 351,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 356,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 14,
+        "plant_step": 357,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 369,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 371,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 377,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 3,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          2,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 377,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 3,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 378,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 392,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 394,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 418,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 423,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 439,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 440,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 444,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 444,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 446,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 452,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 454,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 6
+      }
+    ]
+  },
+  {
+    "case": "submission_56149565_852484341_seat0",
+    "parent_margin": -14602.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "STRAWBERRY_planted": 49,
+      "STRAWBERRY_water": 316,
+      "STRAWBERRY_drought_death": 16,
+      "TOMATO_planted": 26,
+      "TOMATO_water": 208,
+      "STRAWBERRY_fertilize": 39,
+      "STRAWBERRY_production_ticks": 132,
+      "STRAWBERRY_bonus_ticks": 78,
+      "STRAWBERRY_produced": 210,
+      "STRAWBERRY_capacity_loss": 0,
+      "STRAWBERRY_harvest": 210,
+      "TOMATO_fertilize": 46,
+      "TOMATO_production_ticks": 104,
+      "TOMATO_bonus_ticks": 98,
+      "TOMATO_produced": 202,
+      "TOMATO_capacity_loss": 0,
+      "TOMATO_harvest": 202,
+      "TOMATO_dig": 4,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_dig": 9,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:STRAWBERRY": -4900.0,
+      "BUY_SEED:TOMATO": -1300.0,
+      "SELL:STRAWBERRY": 24313.0,
+      "SELL:TOMATO": 14911.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 125,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 128,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 131,
+        "water": 2,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          3,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 132,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 134,
+        "water": 2,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 138,
+        "water": 2,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          6,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 172,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 174,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 175,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          7,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 185,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          9,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 186,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          8,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 188,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 188,
+        "water": 1,
+        "drought_death": 1
+      },
+      {
+        "pos": [
+          6,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 198,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 201,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 204,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 207,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 244,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 245,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          6,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 245,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 246,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 249,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 249,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 249,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          9,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 253,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 254,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 254,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          8,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 257,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 257,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 269,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 272,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 274,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 275,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 11,
+        "plant_step": 275,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 11,
+        "plant_step": 278,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 279,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 11,
+        "plant_step": 279,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 280,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          1,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 282,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 283,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 284,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 285,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 11,
+        "plant_step": 286,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 11,
+        "plant_step": 286,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 297,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 303,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 306,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 319,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 326,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          9,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 330,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 344,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          8,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 350,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          9,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 354,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          6,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 357,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          9,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 358,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 395,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 401,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 405,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 406,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 406,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 436,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 451,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 454,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 454,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      }
+    ]
+  },
+  {
+    "case": "aurax_reactive_v1_120540881_seat0",
+    "parent_margin": -11422.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "STRAWBERRY_planted": 26,
+      "STRAWBERRY_water": 228,
+      "TOMATO_planted": 33,
+      "TOMATO_water": 263,
+      "STRAWBERRY_fertilize": 48,
+      "TOMATO_fertilize": 63,
+      "STRAWBERRY_production_ticks": 98,
+      "STRAWBERRY_bonus_ticks": 92,
+      "STRAWBERRY_produced": 190,
+      "STRAWBERRY_capacity_loss": 0,
+      "TOMATO_production_ticks": 131,
+      "TOMATO_bonus_ticks": 129,
+      "TOMATO_produced": 260,
+      "TOMATO_capacity_loss": 0,
+      "STRAWBERRY_harvest": 190,
+      "TOMATO_harvest": 260,
+      "TOMATO_dig": 10,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_dig": 6,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:STRAWBERRY": -2600.0,
+      "BUY_SEED:TOMATO": -1650.0,
+      "SELL:STRAWBERRY": 17912.0,
+      "SELL:TOMATO": 15957.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 124,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 134,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 137,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 172,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 175,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 178,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 181,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 186,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 190,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 8,
+        "plant_step": 213,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 220,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 229,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 231,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 233,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 235,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 238,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 247,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 298,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 12,
+        "plant_step": 300,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 303,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 304,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 305,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 12,
+        "plant_step": 306,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 308,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 325,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 334,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 344,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 357,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 368,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          2,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 371,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 5
+      },
+      {
+        "pos": [
+          3,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 373,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 376,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          0,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 377,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          0,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 398,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 399,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 399,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 416,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 418,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 421,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 426,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 434,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 438,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 442,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 446,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 452,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          9,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 19,
+        "plant_step": 477,
+        "water": 7,
+        "fertilize": 1,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      }
+    ]
+  },
+  {
+    "case": "soil_v219g_772192291_seat1",
+    "parent_margin": -14121.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "TOMATO_planted": 19,
+      "TOMATO_water": 152,
+      "STRAWBERRY_planted": 31,
+      "STRAWBERRY_water": 276,
+      "TOMATO_fertilize": 34,
+      "TOMATO_production_ticks": 76,
+      "TOMATO_bonus_ticks": 72,
+      "TOMATO_produced": 148,
+      "TOMATO_capacity_loss": 0,
+      "TOMATO_harvest": 148,
+      "STRAWBERRY_fertilize": 54,
+      "STRAWBERRY_production_ticks": 121,
+      "STRAWBERRY_bonus_ticks": 106,
+      "STRAWBERRY_produced": 227,
+      "STRAWBERRY_capacity_loss": 0,
+      "TOMATO_dig": 7,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_harvest": 227,
+      "STRAWBERRY_dig": 13,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:TOMATO": -950.0,
+      "BUY_SEED:STRAWBERRY": -3100.0,
+      "SELL:TOMATO": 6609.0,
+      "SELL:STRAWBERRY": 25235.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 4,
+        "plant_step": 117,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 141,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 154,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          3,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 155,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 156,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 162,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 174,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 185,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 188,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 198,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 207,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 210,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 8,
+        "plant_step": 213,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 221,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 222,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 224,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 253,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 290,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 299,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 12,
+        "plant_step": 305,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 315,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          6,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 318,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 325,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          6,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 341,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 368,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 15,
+        "plant_step": 374,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 378,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 5,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          7,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 391,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 394,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 404,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          8,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 426,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          8,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          4,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 438,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 443,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 453,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      }
+    ]
+  },
+  {
+    "case": "aurax_reactive_v1_521596133_seat0",
+    "parent_margin": 42.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "STRAWBERRY_planted": 47,
+      "STRAWBERRY_water": 414,
+      "TOMATO_planted": 42,
+      "TOMATO_water": 325,
+      "TOMATO_fertilize": 58,
+      "TOMATO_production_ticks": 157,
+      "TOMATO_bonus_ticks": 138,
+      "TOMATO_produced": 295,
+      "TOMATO_capacity_loss": 0,
+      "TOMATO_harvest": 295,
+      "STRAWBERRY_fertilize": 66,
+      "STRAWBERRY_production_ticks": 179,
+      "STRAWBERRY_bonus_ticks": 117,
+      "STRAWBERRY_produced": 296,
+      "STRAWBERRY_capacity_loss": 0,
+      "STRAWBERRY_harvest": 296,
+      "TOMATO_dig": 17,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_dig": 10,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:STRAWBERRY": -4700.0,
+      "BUY_SEED:TOMATO": -2100.0,
+      "SELL:TOMATO": 23120.0,
+      "SELL:STRAWBERRY": 56915.0
+    },
+    "lives": [
+      {
+        "pos": [
+          1,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 3,
+        "plant_step": 79,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 3,
+        "plant_step": 83,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 3,
+        "plant_step": 89,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 3,
+        "plant_step": 89,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 3,
+        "plant_step": 92,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          1,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 125,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 129,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 135,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 139,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 152,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 164,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 171,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          6,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 174,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 175,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          8,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 178,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          7,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          0,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          8,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 181,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 182,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          8,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 5,
+        "harvest": 5,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          9,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 186,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 187,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 226,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 229,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 229,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 232,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          5
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 9,
+        "plant_step": 234,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          4,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 247,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 251,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 253,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 257,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 257,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 260,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 12,
+        "plant_step": 299,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 12,
+        "plant_step": 305,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          5,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 314,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          5,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 315,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 318,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          6,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 318,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          6,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 321,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 329,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          0,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 333,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          5,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 339,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          6,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 342,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          5,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 346,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          7,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 346,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 350,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 14,
+        "plant_step": 353,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 14,
+        "plant_step": 357,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          5,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 369,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          6,
+          9
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 372,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          7,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 373,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 5,
+        "harvest": 5,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          0,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 375,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          6,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 375,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          8,
+          7
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 376,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          7,
+          8
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 378,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          8,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 15,
+        "plant_step": 379,
+        "water": 8,
+        "production_ticks": 3,
+        "produced": 3,
+        "harvest": 3
+      },
+      {
+        "pos": [
+          9,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 15,
+        "plant_step": 382,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 399,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 400,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 402,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          9,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 405,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          8,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 406,
+        "water": 8,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          9,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 427,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          3,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 429,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 440,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 443,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          9,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 443,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          9,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 447,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 18,
+        "plant_step": 454,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          4,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 19,
+        "plant_step": 460,
+        "water": 7,
+        "fertilize": 1,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          4,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 19,
+        "plant_step": 461,
+        "water": 7,
+        "fertilize": 1,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 19,
+        "plant_step": 462,
+        "water": 7,
+        "fertilize": 1,
+        "production_ticks": 3,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          3,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 20,
+        "plant_step": 488,
+        "water": 6,
+        "fertilize": 1,
+        "production_ticks": 2,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          1,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 20,
+        "plant_step": 498,
+        "water": 6,
+        "fertilize": 1,
+        "production_ticks": 2,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 20,
+        "plant_step": 501,
+        "water": 6,
+        "fertilize": 1,
+        "production_ticks": 2,
+        "produced": 4,
+        "harvest": 4
+      },
+      {
+        "pos": [
+          1,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 20,
+        "plant_step": 502,
+        "water": 6,
+        "fertilize": 1,
+        "production_ticks": 2,
+        "produced": 4,
+        "harvest": 4
+      }
+    ]
+  },
+  {
+    "case": "submission_56149565_1123506227_seat0",
+    "parent_margin": 67.0,
+    "scope": "historical own-player audit, zero new games",
+    "steps": 719,
+    "stats": {
+      "STRAWBERRY_planted": 15,
+      "STRAWBERRY_water": 135,
+      "TOMATO_planted": 25,
+      "TOMATO_water": 200,
+      "STRAWBERRY_fertilize": 27,
+      "TOMATO_fertilize": 47,
+      "TOMATO_production_ticks": 100,
+      "TOMATO_bonus_ticks": 96,
+      "TOMATO_produced": 196,
+      "TOMATO_capacity_loss": 0,
+      "STRAWBERRY_production_ticks": 60,
+      "STRAWBERRY_bonus_ticks": 50,
+      "STRAWBERRY_produced": 110,
+      "STRAWBERRY_capacity_loss": 0,
+      "TOMATO_harvest": 196,
+      "STRAWBERRY_harvest": 110,
+      "TOMATO_dig": 14,
+      "TOMATO_dig_yield": 0,
+      "TOMATO_dig_future_ticks": 0,
+      "STRAWBERRY_dig": 3,
+      "STRAWBERRY_dig_yield": 0,
+      "STRAWBERRY_dig_future_ticks": 0
+    },
+    "own_crop_transition_mismatch_count": 0,
+    "mismatches": [],
+    "ledger": {
+      "BUY_SEED:STRAWBERRY": -1500.0,
+      "BUY_SEED:TOMATO": -1250.0,
+      "SELL:TOMATO": 9107.0,
+      "SELL:STRAWBERRY": 13163.0
+    },
+    "lives": [
+      {
+        "pos": [
+          2,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 5,
+        "plant_step": 130,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          2,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 6,
+        "plant_step": 161,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          5,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 172,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "dig_age": 16
+      },
+      {
+        "pos": [
+          5,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 173,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 174,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          6,
+          2
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          5,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 176,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          7,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 177,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          6,
+          3
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 1,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6
+      },
+      {
+        "pos": [
+          6,
+          1
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 179,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 180,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          4
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 181,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          8,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 183,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          7,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 185,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          0
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 7,
+        "plant_step": 188,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          8,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 189,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 7,
+        "plant_step": 190,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 9,
+        "plant_step": 237,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          4
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 249,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          4,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 250,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 256,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          2,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 256,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 259,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          1,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 259,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          0,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 10,
+        "plant_step": 259,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          9,
+          2
+        ],
+        "crop": "TOMATO",
+        "birth": 11,
+        "plant_step": 282,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 320,
+        "water": 9,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 13,
+        "plant_step": 328,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          6
+        ],
+        "crop": "STRAWBERRY",
+        "birth": 13,
+        "plant_step": 334,
+        "water": 9,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 2
+      },
+      {
+        "pos": [
+          0,
+          5
+        ],
+        "crop": "TOMATO",
+        "birth": 15,
+        "plant_step": 380,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8,
+        "dig_age": 11
+      },
+      {
+        "pos": [
+          3,
+          8
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 396,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 6,
+        "harvest": 6,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          2,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 401,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          1,
+          6
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 404,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          2,
+          1
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 405,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          3,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 16,
+        "plant_step": 405,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          4,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 419,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "harvest": 7,
+        "fertilize": 1
+      },
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 425,
+        "water": 8,
+        "production_ticks": 4,
+        "produced": 7,
+        "fertilize": 1,
+        "harvest": 7
+      },
+      {
+        "pos": [
+          2,
+          0
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 429,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      },
+      {
+        "pos": [
+          0,
+          7
+        ],
+        "crop": "TOMATO",
+        "birth": 17,
+        "plant_step": 430,
+        "water": 8,
+        "fertilize": 2,
+        "production_ticks": 4,
+        "produced": 8,
+        "harvest": 8
+      }
+    ]
+  }
+]

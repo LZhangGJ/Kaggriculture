@@ -1,0 +1,8 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/fix1_work/candidate/tests/native_choice_gate.py",
+  "--library",
+  "/mnt/data/fix1_work/candidate/policy/tri_a08_r11_r2_fix1.so",
+  "--out",
+  "/mnt/data/fix1_work/candidate/rerun/20260913T163743144751Z/native_choice_gate.json"
+]

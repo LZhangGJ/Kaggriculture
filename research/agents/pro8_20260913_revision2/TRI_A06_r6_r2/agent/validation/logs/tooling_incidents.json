@@ -1,0 +1,35 @@
+{
+  "incidents": [
+    {
+      "command": "first batched parent+candidate root probe",
+      "issue": "outer container call timed out after parent completion; the candidate child completed under GNU timeout and emitted a complete summary, but shell exit receipt was not captured",
+      "candidate_result": "analysis/candidate_root_probes/SUMMARY.json",
+      "planned_resolution": "independent bounded rerun with explicit exit receipt",
+      "resolution": "Completed candidate_root_final with explicit exit 0, full SUMMARY and GNU time receipt; this is the preserved BROAD development checkpoint."
+    },
+    {
+      "command": "first unit-suite container invocation",
+      "issue": "outer tool call returned timeout; unit compile and all 35 tests completed and emitted SUMMARY.json (53.239 seconds), but shell exit receipt was not captured",
+      "result": "analysis/choice_units/SUMMARY.json",
+      "planned_resolution": "rerun after final focused-test additions; preserve originals",
+      "resolution": "Completed choice_units_final (includes official-prefix additions) with explicit exit 0 and GNU time receipt; preserved BROAD checkpoint."
+    },
+    {
+      "command": "attempted container session_name for long unit suite",
+      "issue": "container returned StreamingExecNotEnabledContainerError; no process was launched by that call",
+      "resolution": "Use a bounded subprocess supervisor with explicit receipt; keep execution within this response."
+    },
+    {
+      "command": "choice_units_official outer invocation",
+      "issue": "Outer container command timed out; all 35 fixture checks and 42 official prefixes completed in child, but shell exit status not captured.",
+      "resolution": "Independent rerun choice_units_final captured explicit exit 0. Original outputs retained."
+    },
+    {
+      "command": "one ad-hoc audit inspection",
+      "issue": "Python AttributeError from treating top-level list of audit rows as a dict; no source or test modified.",
+      "resolution": "Inspected actual list type and selected row; not a compile or runtime policy failure."
+    }
+  ],
+  "recorded_utc": "2026-09-13T15:36:32.546489+00:00",
+  "updated_utc": "2026-09-13T15:48:31.048378+00:00"
+}

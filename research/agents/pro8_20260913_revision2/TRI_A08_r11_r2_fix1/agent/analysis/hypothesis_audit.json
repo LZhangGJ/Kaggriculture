@@ -1,0 +1,72 @@
+[
+  {
+    "trace": "submission_56149565_521596133_seat1.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 525,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 131,
+    "terminal_animal_collection_actions_absent": 18
+  },
+  {
+    "trace": "flexon_v5_113649547_seat0.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 820,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 157,
+    "terminal_animal_collection_actions_absent": 19
+  },
+  {
+    "trace": "submission_56149565_915042141_seat1.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 659,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 157,
+    "terminal_animal_collection_actions_absent": 25
+  },
+  {
+    "trace": "market_smart_v8_915042141_seat0.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 553,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 194,
+    "terminal_animal_collection_actions_absent": 15
+  },
+  {
+    "trace": "aurax_reactive_v1_1742537856_seat0.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 560,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 152,
+    "terminal_animal_collection_actions_absent": 22
+  },
+  {
+    "trace": "thomas_955_v2_616522013_seat1.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 699,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 216,
+    "terminal_animal_collection_actions_absent": 24
+  },
+  {
+    "trace": "soil_v219g_113649547_seat0.json.gz",
+    "calls": 719,
+    "exact": 719,
+    "fert_mismatch": 0,
+    "eligible_cropdays": 820,
+    "water_mismatch": [],
+    "current_animal_harvest_actions_absent_in_path_labor": 157,
+    "terminal_animal_collection_actions_absent": 19
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "build_gate_refusal",
+  "command": [
+    "python",
+    "test_build_transaction.py"
+  ],
+  "start_utc": "2026-09-13T16:46:05.596403+00:00",
+  "end_utc": "2026-09-13T16:46:34.670971+00:00",
+  "wall_seconds": 29.07457700000009,
+  "exit_code": 0
+}

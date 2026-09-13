@@ -1,0 +1,16 @@
+{
+  "name": "fix1_clang17_checks",
+  "command": [
+    "python",
+    "candidate/tests/run_checks.py",
+    "--cxx",
+    "clang++",
+    "--library",
+    "/mnt/data/fix1_work/repro/fix1_clang17.so",
+    "--sanitize"
+  ],
+  "start_utc": "2026-09-13T16:41:57.324991+00:00",
+  "end_utc": "2026-09-13T16:42:19.648728+00:00",
+  "wall_seconds": 22.323746685999936,
+  "exit_code": 0
+}

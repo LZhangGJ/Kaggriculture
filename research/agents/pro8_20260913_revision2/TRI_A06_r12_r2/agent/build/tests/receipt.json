@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_SALE_CLOCK_MODE=0",
+    "-DR2_MARKET_INTEGRAL=0",
+    "-DR2_STARTUP_SUPPLY_MODE=2",
+    "-DA06_EXEC_MODE=2",
+    "-O1",
+    "/mnt/data/TRI_A06_r12_r2/tests/unit_ongoing_labor.cpp",
+    "-o",
+    "/mnt/data/TRI_A06_r12_r2/build/tests/unit_ongoing_labor"
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "returncode": 0,
+  "elapsed_seconds": 2.5337985290000233,
+  "executable_sha256": "6d7588cf58a18e945d2328f941b20cf2884483176dada1af3b1850fd531a7663"
+}

@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-09-13T20:17:27.392742+00:00",
+  "passed": true,
+  "games": 4608,
+  "complete719": 4608,
+  "errors": 0,
+  "draws": 0,
+  "results_sha256": "2f9e8e1d8397d782f9bf842ba203ae4173a5806438370fd1641551c12a0aeb68",
+  "csv_sha256": "6371104670b953a5afb6113e210f16bca521914438dcd0dc9fd2787ea145b2db",
+  "row_hashes_sha256": "693b7940b8ddc9ca5321fd459a3e708a1928071742db67c2b29b39021867aedb",
+  "full_cartesian_coverage": true,
+  "frozen_input_hashes_verified": 92,
+  "all_aggregates_reconciled": true,
+  "csv_independently_recounted": true,
+  "replay_verification": "All replay hashes verified by the completed frozen arena review; this export checks raw rows and aggregate consistency",
+  "new_agent_games": 0,
+  "summary": {
+    "TRI_A08_r11_r2_fix1": {
+      "public11_wins": 1015,
+      "public11_games": 1408,
+      "overall": {
+        "games": 1536,
+        "wins": 1097,
+        "draws": 0,
+        "win_rate": 0.7141927083333334,
+        "mean_own_terminal_cash": 102636.31380208333,
+        "mean_opponent_terminal_cash": 88008.97330729167,
+        "mean_margin": 14627.340494791666,
+        "minimum_wins": 1306,
+        "cash_above_diagnostic_reference": false,
+        "win_rate_passed": false,
+        "accepted": false
+      }
+    },
+    "TRI_A06_r6_r2": {
+      "public11_wins": 916,
+      "public11_games": 1408,
+      "overall": {
+        "games": 1536,
+        "wins": 1017,
+        "draws": 0,
+        "win_rate": 0.662109375,
+        "mean_own_terminal_cash": 97487.42122395833,
+        "mean_opponent_terminal_cash": 84435.701171875,
+        "mean_margin": 13051.720052083334,
+        "minimum_wins": 1306,
+        "cash_above_diagnostic_reference": false,
+        "win_rate_passed": false,
+        "accepted": false
+      }
+    },
+    "TRI_A06_r12_r2": {
+      "public11_wins": 969,
+      "public11_games": 1408,
+      "overall": {
+        "games": 1536,
+        "wins": 1087,
+        "draws": 0,
+        "win_rate": 0.7076822916666666,
+        "mean_own_terminal_cash": 98706.822265625,
+        "mean_opponent_terminal_cash": 84626.74088541667,
+        "mean_margin": 14080.081380208334,
+        "minimum_wins": 1306,
+        "cash_above_diagnostic_reference": false,
+        "win_rate_passed": false,
+        "accepted": false
+      }
+    }
+  }
+}

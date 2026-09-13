@@ -1,0 +1,15 @@
+{
+  "runtime_first_probe_utc": "2026-09-13T15:22:52.442688+00:00",
+  "user_start_utc": "2026-09-13T15:22:07.194000+00:00",
+  "user_deadline_utc": "2026-09-13T17:22:07.194000+00:00",
+  "seconds_until_user_deadline": 7154.751312,
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "concurrency": 1,
+  "memory_headroom_fraction": 0.3
+}

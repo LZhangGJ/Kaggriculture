@@ -1,0 +1,374 @@
+{
+  "original_start_utc": "2026-09-13T15:22:07.194Z",
+  "hard_deadline_utc": "2026-09-13T17:22:07.194Z",
+  "repair_start_utc": "2026-09-13T16:26:13Z",
+  "initial": {
+    "utc": "2026-09-13T16:26:28.264508+00:00",
+    "original_start_utc": "2026-09-13T15:22:07.194Z",
+    "hard_deadline_utc": "2026-09-13T17:22:07.194Z",
+    "received_zip_sha256": "2f1557875d550000ae492c3814c84c78d5402e99b3a754308dc3907aa32b2178",
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "host_cpu_count_not_quota": 5,
+    "cpu.max": "400000 100000",
+    "memory.max": "4294967296",
+    "memory.current": "445456384",
+    "cpuset.cpus.effective": "0-4",
+    "effective_cpu": 4,
+    "workers": 1,
+    "memory_budget_bytes": 3006477107,
+    "mem_available_info": "MemAvailable:    5040460 kB",
+    "disk": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G   80M   30G   1% /\n",
+    "python": "Python 3.13.5\n",
+    "g++": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "snapshot_utc": "2026-09-13T16:51:59.397444+00:00",
+  "cpu_max": "400000 100000",
+  "memory_max": "4294967296",
+  "memory_current": "855146496",
+  "max_observed_command_peak_rss_kib": 596048,
+  "measured_commands": [
+    {
+      "name": "baseline_gcc14",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/tests/run_checks.py",
+        "--sanitize"
+      ],
+      "start_utc": "2026-09-13T16:26:58.804046+00:00",
+      "end_utc": "2026-09-13T16:27:25.521176+00:00",
+      "wall_seconds": 26.717237697,
+      "exit_code": 0,
+      "peak_rss_kib": 420028
+    },
+    {
+      "name": "build_gate_refusal",
+      "command": [
+        "python",
+        "test_build_transaction.py"
+      ],
+      "start_utc": "2026-09-13T16:46:05.596403+00:00",
+      "end_utc": "2026-09-13T16:46:34.670971+00:00",
+      "wall_seconds": 29.07457700000009,
+      "exit_code": 0,
+      "peak_rss_kib": 595736
+    },
+    {
+      "name": "clean_offline_rebuild",
+      "command": [
+        "python",
+        "clean_rebuild/build.py"
+      ],
+      "start_utc": "2026-09-13T16:45:36.795034+00:00",
+      "end_utc": "2026-09-13T16:46:05.022414+00:00",
+      "wall_seconds": 28.227390112999956,
+      "exit_code": 0,
+      "peak_rss_kib": 595732
+    },
+    {
+      "name": "fix1_clang17_build",
+      "command": [
+        "python",
+        "candidate/build.py",
+        "--cxx",
+        "clang++",
+        "--out",
+        "/mnt/data/fix1_work/repro/fix1_clang17.so"
+      ],
+      "start_utc": "2026-09-13T16:40:03.409926+00:00",
+      "end_utc": "2026-09-13T16:40:23.619685+00:00",
+      "wall_seconds": 20.209767604000035,
+      "exit_code": 0,
+      "peak_rss_kib": 259356
+    },
+    {
+      "name": "fix1_clang17_checks",
+      "command": [
+        "python",
+        "candidate/tests/run_checks.py",
+        "--cxx",
+        "clang++",
+        "--library",
+        "/mnt/data/fix1_work/repro/fix1_clang17.so",
+        "--sanitize"
+      ],
+      "start_utc": "2026-09-13T16:41:57.324991+00:00",
+      "end_utc": "2026-09-13T16:42:19.648728+00:00",
+      "wall_seconds": 22.323746685999936,
+      "exit_code": 0,
+      "peak_rss_kib": 238520
+    },
+    {
+      "name": "fix1_expanded_checks",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/tests/run_checks.py",
+        "--sanitize"
+      ],
+      "start_utc": "2026-09-13T16:35:41.294366+00:00",
+      "end_utc": "2026-09-13T16:36:06.126200+00:00",
+      "wall_seconds": 24.83186432699995,
+      "exit_code": 0,
+      "peak_rss_kib": 424484
+    },
+    {
+      "name": "fix1_final_gcc14_build",
+      "command": [
+        "python",
+        "candidate/build.py"
+      ],
+      "start_utc": "2026-09-13T16:41:27.563740+00:00",
+      "end_utc": "2026-09-13T16:41:56.679835+00:00",
+      "wall_seconds": 29.116104629000006,
+      "exit_code": 0,
+      "peak_rss_kib": 595916
+    },
+    {
+      "name": "fix1_gated_build",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/build.py"
+      ],
+      "start_utc": "2026-09-13T16:37:13.514348+00:00",
+      "end_utc": "2026-09-13T16:37:42.080795+00:00",
+      "wall_seconds": 28.566454492000048,
+      "exit_code": 0,
+      "peak_rss_kib": 595572
+    },
+    {
+      "name": "fix1_initial_build",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/build.py"
+      ],
+      "start_utc": "2026-09-13T16:32:11.434435+00:00",
+      "end_utc": "2026-09-13T16:32:40.278682+00:00",
+      "wall_seconds": 28.84425517599999,
+      "exit_code": 0,
+      "peak_rss_kib": 595588
+    },
+    {
+      "name": "fix1_native_gate",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/tests/native_choice_gate.py",
+        "--library",
+        "/mnt/data/fix1_work/candidate/policy/tri_a08_r11_r2_fix1.so",
+        "--out",
+        "/mnt/data/fix1_work/repro/native_gate.json"
+      ],
+      "start_utc": "2026-09-13T16:34:50.423959+00:00",
+      "end_utc": "2026-09-13T16:34:51.397022+00:00",
+      "wall_seconds": 0.9730739159999757,
+      "exit_code": 0,
+      "peak_rss_kib": 96192
+    },
+    {
+      "name": "fix1_native_gate_build",
+      "command": [
+        "python",
+        "/mnt/data/fix1_work/candidate/build.py"
+      ],
+      "start_utc": "2026-09-13T16:34:21.082808+00:00",
+      "end_utc": "2026-09-13T16:34:49.814856+00:00",
+      "wall_seconds": 28.732054333999997,
+      "exit_code": 0,
+      "peak_rss_kib": 595620
+    },
+    {
+      "name": "paired_gcc14_clang17",
+      "command": [
+        "python",
+        "candidate/tests/compare_saved_entries.py",
+        "--left",
+        "/mnt/data/fix1_work/candidate/main.py",
+        "--right",
+        "/mnt/data/fix1_work/candidate/main.py",
+        "--right-library",
+        "/mnt/data/fix1_work/repro/fix1_clang17.so",
+        "--traces",
+        "/mnt/data/fix1_work/candidate/evidence/own_traces",
+        "--out",
+        "/mnt/data/fix1_work/repro/paired_gcc14_clang17",
+        "--require-exact"
+      ],
+      "start_utc": "2026-09-13T16:43:38.392881+00:00",
+      "end_utc": "2026-09-13T16:44:55.544323+00:00",
+      "wall_seconds": 77.15144748500006,
+      "exit_code": 0,
+      "peak_rss_kib": 269648
+    },
+    {
+      "name": "paired_original_fix1",
+      "command": [
+        "python",
+        "candidate/tests/compare_saved_entries.py",
+        "--left",
+        "/mnt/data/fix1_work/original_r2/main.py",
+        "--right",
+        "/mnt/data/fix1_work/candidate/main.py",
+        "--traces",
+        "/mnt/data/fix1_work/candidate/evidence/own_traces",
+        "--out",
+        "/mnt/data/fix1_work/repro/paired_original_fix1",
+        "--require-exact"
+      ],
+      "start_utc": "2026-09-13T16:42:20.203753+00:00",
+      "end_utc": "2026-09-13T16:43:37.829266+00:00",
+      "wall_seconds": 77.62550131399996,
+      "exit_code": 0,
+      "peak_rss_kib": 266256
+    },
+    {
+      "name": "portable_build_refusal",
+      "command": [
+        "python",
+        "candidate/tests/test_build_refusal.py",
+        "--out",
+        "/mnt/data/fix1_work/repro/portable_build_refusal"
+      ],
+      "start_utc": "2026-09-13T16:47:51.479694+00:00",
+      "end_utc": "2026-09-13T16:48:21.274445+00:00",
+      "wall_seconds": 29.794759749999912,
+      "exit_code": 0,
+      "peak_rss_kib": 596048
+    },
+    {
+      "name": "reduced_clang17_build",
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "/mnt/data/fix1_work/repro/original_standalone.cpp",
+        "-o",
+        "/mnt/data/fix1_work/repro/original_clang17"
+      ],
+      "start_utc": "2026-09-13T16:31:11.063717+00:00",
+      "end_utc": "2026-09-13T16:31:11.388339+00:00",
+      "wall_seconds": 0.3246300689999657,
+      "exit_code": 0,
+      "peak_rss_kib": 58240
+    },
+    {
+      "name": "reduced_clang17_run",
+      "command": [
+        "/mnt/data/fix1_work/repro/original_clang17"
+      ],
+      "start_utc": "2026-09-13T16:31:11.982096+00:00",
+      "end_utc": "2026-09-13T16:31:11.985530+00:00",
+      "wall_seconds": 0.003426200000035351,
+      "exit_code": 0,
+      "peak_rss_kib": 1536
+    },
+    {
+      "name": "reduced_gcc14_build",
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "/mnt/data/fix1_work/repro/original_standalone.cpp",
+        "-o",
+        "/mnt/data/fix1_work/repro/original_gcc14"
+      ],
+      "start_utc": "2026-09-13T16:31:09.695172+00:00",
+      "end_utc": "2026-09-13T16:31:09.914850+00:00",
+      "wall_seconds": 0.21968541600000435,
+      "exit_code": 0,
+      "peak_rss_kib": 49664
+    },
+    {
+      "name": "reduced_gcc14_run",
+      "command": [
+        "/mnt/data/fix1_work/repro/original_gcc14"
+      ],
+      "start_utc": "2026-09-13T16:31:10.484444+00:00",
+      "end_utc": "2026-09-13T16:31:10.487132+00:00",
+      "wall_seconds": 0.0026823860000035893,
+      "exit_code": 0,
+      "peak_rss_kib": 640
+    },
+    {
+      "name": "reduction_clang17_matrix",
+      "command": [
+        "python",
+        "candidate/tests/repro_matrix.py",
+        "--cxx",
+        "clang++",
+        "--out",
+        "/mnt/data/fix1_work/repro/matrix_clang17"
+      ],
+      "start_utc": "2026-09-13T16:46:53.903879+00:00",
+      "end_utc": "2026-09-13T16:47:10.871228+00:00",
+      "wall_seconds": 16.967356536999887,
+      "exit_code": 0,
+      "peak_rss_kib": 210488
+    },
+    {
+      "name": "reduction_gcc13_unavailable",
+      "command": [
+        "python",
+        "candidate/tests/repro_matrix.py",
+        "--cxx",
+        "g++-13",
+        "--out",
+        "/mnt/data/fix1_work/repro/matrix_gcc13_unavailable"
+      ],
+      "start_utc": "2026-09-13T16:47:11.406993+00:00",
+      "end_utc": "2026-09-13T16:47:11.963905+00:00",
+      "wall_seconds": 0.5569188199999644,
+      "exit_code": 2,
+      "peak_rss_kib": 92844
+    },
+    {
+      "name": "reduction_gcc14_matrix",
+      "command": [
+        "python",
+        "candidate/tests/repro_matrix.py",
+        "--cxx",
+        "g++",
+        "--out",
+        "/mnt/data/fix1_work/repro/matrix_gcc14"
+      ],
+      "start_utc": "2026-09-13T16:46:35.238670+00:00",
+      "end_utc": "2026-09-13T16:46:53.355397+00:00",
+      "wall_seconds": 18.11673442099982,
+      "exit_code": 0,
+      "peak_rss_kib": 420152
+    },
+    {
+      "name": "final_candidate_exact_checks",
+      "command": [
+        "python",
+        "candidate/tests/run_checks.py",
+        "--sanitize"
+      ],
+      "start_utc": "2026-09-13T16:50:57.882306+00:00",
+      "end_utc": "2026-09-13T16:51:22.476812+00:00",
+      "wall_seconds": 24.594518826000012,
+      "exit_code": 0,
+      "peak_rss_kib": 424468
+    }
+  ],
+  "outer_wrapper_incomplete": [
+    "apt_update",
+    "fix1_gcc14_all_checks"
+  ],
+  "new_games": 0
+}

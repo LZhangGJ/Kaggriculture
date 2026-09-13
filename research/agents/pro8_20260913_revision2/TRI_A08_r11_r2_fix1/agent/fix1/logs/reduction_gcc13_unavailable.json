@@ -1,0 +1,15 @@
+{
+  "name": "reduction_gcc13_unavailable",
+  "command": [
+    "python",
+    "candidate/tests/repro_matrix.py",
+    "--cxx",
+    "g++-13",
+    "--out",
+    "/mnt/data/fix1_work/repro/matrix_gcc13_unavailable"
+  ],
+  "start_utc": "2026-09-13T16:47:11.406993+00:00",
+  "end_utc": "2026-09-13T16:47:11.963905+00:00",
+  "wall_seconds": 0.5569188199999644,
+  "exit_code": 2
+}

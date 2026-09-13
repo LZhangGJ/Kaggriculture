@@ -1,0 +1,25 @@
+{
+  "candidate": "TRI_A06_r12_r2",
+  "entry": "main.py:agent",
+  "parent": "TRI_A06_r12_r1",
+  "native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "config_file": "policy/config.json",
+  "config_changed": false,
+  "single_change": "survival-critical ongoing crop wage reservation moved ahead of discretionary purchases",
+  "status": "freeze and test; not accepted",
+  "evaluate_games": 1536,
+  "minimum_strict_wins": 1306,
+  "fresh_seed_panel_required": true,
+  "not_holdout": true,
+  "author_new_complete_games": 0,
+  "historical_parent_record": {
+    "wins": 1099,
+    "games": 1536
+  },
+  "must_check_narrow_win_cases": [
+    "aurax_reactive_v1_521596133_seat0",
+    "submission_56149565_1123506227_seat0"
+  ],
+  "all_seen_development_seeds": "DEVELOPMENT_SEEDS.json",
+  "do_not_claim": "Conditional fixture watering/cash is not a live match improvement."
+}

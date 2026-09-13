@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Isolated expected rejection; not a compiler failure reproduction",
+  "build_exit": 1,
+  "native_and_receipt_preserved": true,
+  "before_native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+  "after_native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+  "before_receipt_sha256": "565c24838b367b21c1a9c5627a261f73f350496d3829d3aced603b3b99084394",
+  "after_receipt_sha256": "565c24838b367b21c1a9c5627a261f73f350496d3829d3aced603b3b99084394",
+  "gate": {
+    "status": "FAIL",
+    "error": "exact positive maintenance assertion",
+    "library": "/mnt/data/fix1_work/repro/portable_build_refusal/fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164752346981Z.so",
+    "new_games": 0
+  },
+  "staging_preserved": [
+    "/mnt/data/fix1_work/repro/portable_build_refusal/fixture/policy/tri_a08_r11_r2_fix1.building-20260913T164752346981Z.so"
+  ],
+  "production_gate_sha256": "1c4866667e35d9fd9d167b001fd83a89a5d10a8f391fcd2cdf15a5d83ae1c51d",
+  "test_only_mutated_gate_sha256": "71a9599cce6c97b5195e7065db05dff9452d2e230acc5a0177f9a1e7e4f68be2",
+  "seconds": 29.17149356899995,
+  "new_games": 0
+}

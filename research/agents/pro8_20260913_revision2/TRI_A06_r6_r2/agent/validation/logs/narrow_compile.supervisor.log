@@ -1,0 +1,1 @@
+{"command": ["python", "/mnt/data/a06_r6_r2_work/candidate/build.py"], "started_utc": "2026-09-13T15:47:36.861535+00:00", "timeout_seconds": 120, "parent_monitor_pid": 1275, "finished_utc": "2026-09-13T15:48:03.890487+00:00", "wall_seconds": 27.028985405999947, "exit_code": 0}

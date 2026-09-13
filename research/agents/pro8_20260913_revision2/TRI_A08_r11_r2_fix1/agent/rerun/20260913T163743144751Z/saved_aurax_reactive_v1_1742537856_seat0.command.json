@@ -1,0 +1,12 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/fix1_work/candidate/evidence/probe_observations.py",
+  "--agent",
+  "/mnt/data/fix1_work/candidate/main.py",
+  "--trace",
+  "/mnt/data/fix1_work/candidate/evidence/own_traces/aurax_reactive_v1_1742537856_seat0.json.gz",
+  "--limit",
+  "719",
+  "--out",
+  "/mnt/data/fix1_work/candidate/rerun/20260913T163743144751Z/saved_aurax_reactive_v1_1742537856_seat0.json"
+]

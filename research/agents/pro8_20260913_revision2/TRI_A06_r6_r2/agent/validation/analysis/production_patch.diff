@@ -1,0 +1,67 @@
+--- parent/policy/search.hpp
++++ candidate/policy/search.hpp
+@@ -12,7 +12,7 @@
+  PublicTradeLedger ledger;SaleClock sale_clock;
+  ObservedCropClock crop_clock;competitive::Flow removal_forecast{};
+  int searches=0,scenarios=0,changes=0,restore_day=-1;double predicted_gain=0;
+- std::array<int,32>chosen{};
++ std::array<int,64>chosen{};
+  long long prediction_gate_checks=0,prediction_gate_activations=0,prediction_receipt_events=0;
+  std::string last_search="null";
+ #ifdef A06_PREFIX_AUDIT
+@@ -21,6 +21,37 @@
+  explicit SearchController(Settings s={}):base(s),live(s){if(s.scenario<0&&!learned::available)throw std::invalid_argument("No trained value model installed");}
+  std::vector<Proposal> prepare(const View&o,bool names=false)const{
+   auto original=generate_proposals(live,base,o,names);
++  // TRI_A06_r6_r2: make BUY_LAND a choice, not a shared prerequisite of
++  // every economic candidate. A filled current quadrant is NOT evidence that
++  // buying the next one beats waiting: the post-admission project bundle can
++  // be small, and labor, delivery and land cash compete with existing work.
++  // Keep every original expansion proposal. Add its same-settings, same-input
++  // no-new-land-today alternative and let the SAME executable day rollout and
++  // common continuation compare them. Do not veto expansion on a standalone
++  // crop quote or pretend that saved observations are a counterfactual future.
++  const auto buys_land=[](const Proposal&p){return std::any_of(
++   p.policy.core.queue.begin(),p.policy.core.queue.end(),
++   [](const auto&a){return a.op==Op::BUY_LAND;});};
++  // Do not widen an already two-sided decision: preserving the established
++  // action set there reduces unnecessary changes to competitive strengths.
++  if(base.scenario>0&&!original.empty()&&
++     std::all_of(original.begin(),original.end(),buys_land)){
++   const int owned=std::popcount(unsigned(o.own.unlocked_mask));
++   const size_t original_count=original.size();
++   std::set<std::vector<int>>seen;
++   for(const auto&p:original)seen.insert(proposal_key(p.policy));
++   for(size_t i=0;i<original_count;i++){
++    const auto&p=original[i];
++    // Start from the incoming controller, NOT the expanded proposal's book:
++    // preserve already paid commitments but never inherit unfunded new plots.
++    Controller wait=live;auto settings=p.policy.s;settings.max_land=owned;
++    wait.configure(settings);wait.plan(o);
++    if(!seen.insert(proposal_key(wait)).second)continue;
++    const int id=p.id+32;
++    auto features=portfolio_features(o,wait,original[0].policy,id,names);
++    original.push_back({id,std::move(wait),std::move(features)});
++   }
++  }
+   if(base.a06_execution_candidates<=0)return original;
+   // Two finite actions in the economic decision, NOT prediction-only gates.
+   // Same prepared targets, orders, paid inventory, work/service commitments.
+@@ -68,7 +99,7 @@
+     if(!world.done()){auto v=world.view();Controller tail=live;tail.call_origin=Controller::CallOrigin::PublicPrediction;tail.configure(common);tail.book=roll.book;tail.plan(v);tail_value=tail.predicted;score+=tail_value;}
+    }
+    if(i)audit<<",";
+-   audit<<"{\"id\":"<<proposal.id<<",\"execution_mode\":"<<proposal.policy.s.a06_reinvest<<",\"execution_scope\":"<<proposal.policy.s.a06_roll_scope<<",\"score\":"<<score<<",\"roll_own_cash\":"<<own_cash<<",\"roll_rival_cash\":"<<rival_cash<<",\"tail_value\":"<<tail_value<<",\"prediction_gate_checks\":"<<checks<<",\"prediction_gate_activations\":"<<activations<<",\"prediction_receipt_events\":"<<receipts<<",\"plan_key\":[";
++   audit<<"{\"id\":"<<proposal.id<<",\"defer_land_today\":"<<((proposal.id&32)?"true":"false")<<",\"land_cap\":"<<proposal.policy.s.max_land<<",\"execution_mode\":"<<proposal.policy.s.a06_reinvest<<",\"execution_scope\":"<<proposal.policy.s.a06_roll_scope<<",\"score\":"<<score<<",\"roll_own_cash\":"<<own_cash<<",\"roll_rival_cash\":"<<rival_cash<<",\"tail_value\":"<<tail_value<<",\"prediction_gate_checks\":"<<checks<<",\"prediction_gate_activations\":"<<activations<<",\"prediction_receipt_events\":"<<receipts<<",\"plan_key\":[";
+    auto key=proposal_key(proposal.policy);for(size_t j=0;j<key.size();j++){if(j)audit<<",";audit<<key[j];}audit<<"],\"first_prediction_investment_step\":"<<first_invest_step<<",\"first_prediction_market\":[";
+    for(size_t k=0;k<first_invest_orders.size();k++){if(k)audit<<",";auto&a=first_invest_orders[k];audit<<"["<<int(a.op)<<","<<int(a.item)<<","<<a.quantity<<"]";}audit<<"]}";
+    scenarios++;if(i==0)baseline=score;
+@@ -106,7 +137,7 @@
+  }
+  std::string debug()const{
+   auto text=live.debug();text.pop_back();std::ostringstream s;s<<text<<",\"search_calls\":"<<searches<<",\"search_scenarios\":"<<scenarios<<",\"search_changes\":"<<changes<<",\"search_predicted_gain\":"<<predicted_gain<<",\"learned_value_active\":"<<(base.scenario<0?"true":"false")<<",\"learned_value_available\":"<<(learned::available?"true":"false")<<",\"search_choices\":[";
+-  for(int i=0;i<32;i++){if(i)s<<",";s<<chosen[i];}s<<"],\"prediction_gate_checks\":"<<prediction_gate_checks<<",\"prediction_gate_activations\":"<<prediction_gate_activations<<",\"prediction_receipt_events\":"<<prediction_receipt_events<<",\"execution_candidate_families\":"<<base.a06_execution_candidates<<",\"last_search\":"<<last_search<<"}";return s.str();
++  for(size_t i=0;i<chosen.size();i++){if(i)s<<",";s<<chosen[i];}s<<"],\"prediction_gate_checks\":"<<prediction_gate_checks<<",\"prediction_gate_activations\":"<<prediction_gate_activations<<",\"prediction_receipt_events\":"<<prediction_receipt_events<<",\"execution_candidate_families\":"<<base.a06_execution_candidates<<",\"last_search\":"<<last_search<<"}";return s.str();
+  }
+ };
+ }

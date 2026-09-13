@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T15:38:47.474436+00:00",
+  "finished_utc": "2026-09-13T15:39:16.891168+00:00",
+  "elapsed_seconds": 29.416741546000026,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/candidate_compile_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "120s",
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/a06_r12_r2_work/candidate/build.py"
+  ],
+  "returncode": 0
+}

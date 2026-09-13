@@ -1,0 +1,65 @@
+[
+  {
+    "case": "aurax_reactive_v1_1742537856_seat0",
+    "calls": 719,
+    "same": 433,
+    "different": 286,
+    "first_divergence": 192,
+    "max_action_seconds": 0.4028181859999904,
+    "ablation_exact": 719
+  },
+  {
+    "case": "flexon_v5_113649547_seat0",
+    "calls": 719,
+    "same": 519,
+    "different": 200,
+    "first_divergence": 144,
+    "max_action_seconds": 0.3507454629999529,
+    "ablation_exact": 719
+  },
+  {
+    "case": "market_smart_v8_915042141_seat0",
+    "calls": 719,
+    "same": 417,
+    "different": 302,
+    "first_divergence": 96,
+    "max_action_seconds": 0.43798188499999924,
+    "ablation_exact": 719
+  },
+  {
+    "case": "soil_v219g_113649547_seat0",
+    "calls": 719,
+    "same": 519,
+    "different": 200,
+    "first_divergence": 144,
+    "max_action_seconds": 0.334110193000015,
+    "ablation_exact": 719
+  },
+  {
+    "case": "submission_56149565_521596133_seat1",
+    "calls": 719,
+    "same": 559,
+    "different": 160,
+    "first_divergence": 264,
+    "max_action_seconds": 0.36331265399996937,
+    "ablation_exact": 719
+  },
+  {
+    "case": "submission_56149565_915042141_seat1",
+    "calls": 719,
+    "same": 381,
+    "different": 338,
+    "first_divergence": 192,
+    "max_action_seconds": 0.36953622600003655,
+    "ablation_exact": 719
+  },
+  {
+    "case": "thomas_955_v2_616522013_seat1",
+    "calls": 719,
+    "same": 424,
+    "different": 295,
+    "first_divergence": 144,
+    "max_action_seconds": 0.35539967800002614,
+    "ablation_exact": 719
+  }
+]

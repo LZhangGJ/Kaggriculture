@@ -1,0 +1,68 @@
+{
+  "trace": "flexon_v5_113649547_seat0",
+  "step": 144,
+  "day": 6,
+  "pos": 24,
+  "tile": {
+    "kind": "PASTURE",
+    "animal": "SHEEP",
+    "placed_day": 0,
+    "yield_units": 6,
+    "consecutive_unfed": 0,
+    "fed_today": false,
+    "cared_today": false,
+    "fertilizer_available": true,
+    "pending_care_bonus": 1
+  },
+  "first_labor": 3.4,
+  "feed": 1,
+  "care": 1,
+  "jobs": [
+    10,
+    16,
+    15,
+    17
+  ],
+  "actual_own_actions": [
+    {
+      "step": 149,
+      "unit": 2,
+      "action": [
+        "CARE"
+      ]
+    },
+    {
+      "step": 150,
+      "unit": 2,
+      "action": [
+        "FEED"
+      ]
+    },
+    {
+      "step": 159,
+      "unit": 1,
+      "action": [
+        "HARVEST"
+      ]
+    },
+    {
+      "step": 160,
+      "unit": 1,
+      "action": [
+        "COLLECT_FERTILIZER"
+      ]
+    }
+  ],
+  "own_market_prices": {
+    "WHEAT": 32,
+    "CARROT": 35,
+    "TOMATO": 61,
+    "STRAWBERRY": 161,
+    "MELON": 267,
+    "EGG": 50,
+    "MILK": 203,
+    "WOOL": 217,
+    "FERTILIZER": 90
+  },
+  "scope": "Historical actual facts; labor gap is diagnostic, not recoverable money"
+}

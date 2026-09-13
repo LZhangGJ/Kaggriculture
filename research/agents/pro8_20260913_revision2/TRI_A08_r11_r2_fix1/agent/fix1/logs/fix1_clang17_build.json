@@ -1,0 +1,15 @@
+{
+  "name": "fix1_clang17_build",
+  "command": [
+    "python",
+    "candidate/build.py",
+    "--cxx",
+    "clang++",
+    "--out",
+    "/mnt/data/fix1_work/repro/fix1_clang17.so"
+  ],
+  "start_utc": "2026-09-13T16:40:03.409926+00:00",
+  "end_utc": "2026-09-13T16:40:23.619685+00:00",
+  "wall_seconds": 20.209767604000035,
+  "exit_code": 0
+}

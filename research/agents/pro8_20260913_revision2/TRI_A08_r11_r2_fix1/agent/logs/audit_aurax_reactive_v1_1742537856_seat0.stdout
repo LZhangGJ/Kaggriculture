@@ -1,0 +1,1 @@
+{"scope": "Frozen saved own observations; no new games", "trace": "aurax_reactive_v1_1742537856_seat0.json.gz", "trace_sha256": "7ef6e3869efb9c11db5f36d49e1be8050ff43ba5ebc0977e02858070dc501a52", "calls": 719, "exact_parent_actions": 719, "seconds": 5.537393409999993, "max_action_seconds": 0.40116356099997574, "peak_rss_kib": 167956, "fertilizer_mismatches": []}

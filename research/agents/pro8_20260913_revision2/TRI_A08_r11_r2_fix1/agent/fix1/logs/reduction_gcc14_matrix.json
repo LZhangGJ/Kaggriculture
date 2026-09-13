@@ -1,0 +1,15 @@
+{
+  "name": "reduction_gcc14_matrix",
+  "command": [
+    "python",
+    "candidate/tests/repro_matrix.py",
+    "--cxx",
+    "g++",
+    "--out",
+    "/mnt/data/fix1_work/repro/matrix_gcc14"
+  ],
+  "start_utc": "2026-09-13T16:46:35.238670+00:00",
+  "end_utc": "2026-09-13T16:46:53.355397+00:00",
+  "wall_seconds": 18.11673442099982,
+  "exit_code": 0
+}

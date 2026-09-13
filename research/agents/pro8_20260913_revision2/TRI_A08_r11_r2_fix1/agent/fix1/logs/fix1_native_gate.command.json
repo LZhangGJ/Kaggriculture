@@ -1,0 +1,8 @@
+[
+  "python",
+  "/mnt/data/fix1_work/candidate/tests/native_choice_gate.py",
+  "--library",
+  "/mnt/data/fix1_work/candidate/policy/tri_a08_r11_r2_fix1.so",
+  "--out",
+  "/mnt/data/fix1_work/repro/native_gate.json"
+]

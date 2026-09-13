@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_FOR_CENTRAL_TESTING_NOT_ACCEPTED",
+  "freeze_utc": "2026-09-13T15:58:07.759245+00:00",
+  "elapsed_seconds_from_original_start": 2160.565245,
+  "before_user_deadline": true,
+  "input_sha256": "751c049fc9d765319264cddad8a5a4544059ec15101354d2fcc69e874ec670ac",
+  "native_sha256": "afca1d69fde38a0474546b70ecee38911477548dfde9aadc685c58a2a0b88a2f",
+  "preflight_archive_crc": "PASS",
+  "preflight_extracted_manifest": "PASS",
+  "preflight_extracted_actual_root_contract_checks": 183,
+  "preflight_extracted_root_saved_calls": 48,
+  "preflight_extracted_root_exact_parent_actions": 48,
+  "new_closed_loop_games": 0,
+  "narrow_win_preservation": "NOT_ESTABLISHED"
+}

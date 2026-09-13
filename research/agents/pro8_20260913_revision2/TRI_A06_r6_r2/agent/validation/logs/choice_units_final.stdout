@@ -1,0 +1,9 @@
+test native compiled
+aurax_reactive_v1_1816494862_seat0 checks 5
+aurax_reactive_v1_852484341_seat0 checks 5
+market_smart_v8_2535322_seat1 checks 5
+soil_v219g_2535322_seat1 checks 5
+submission_56149565_1623731725_seat1 checks 5
+submission_56149565_2029247155_seat0 checks 5
+thomas_955_v2_1395450535_seat1 checks 5
+{"scope": "Own-visible invariant checks and 24-tick declared public-flow forecast exercises. No new games, opponents, win rate, or recovered cash.", "new_games": 0, "official_prefix_checks": 42, "official_prefix_passes": 42, "fixture_states": 35, "original_candidates_checked": 193, "deferred_candidates_checked": 166, "funded_commitments_checked": 7818, "conditional_branch_exercises": 42, "conditional_steps": 1008, "rss_kib": 277244, "seconds": 53.15361453299988}

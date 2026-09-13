@@ -1,0 +1,87 @@
+--- parent/main.py
++++ candidate/main.py
+@@ -1,4 +1,4 @@
+-"""TRI_A06_r12_r1: calendar-consistent terminal planting; awaiting central win-rate acceptance."""
++"""TRI_A06_r12_r2: calendar-consistent terminal planting; awaiting central win-rate acceptance."""
+ from pathlib import Path
+ import importlib.util
+ import json
+--- parent/policy/executor/policy.hpp
++++ candidate/policy/executor/policy.hpp
+@@ -165,6 +165,7 @@
+ #include "a06_fleet_dp.hpp"
+ 
+ struct Order{Action a;int priority=9;};
++#include "ongoing_labor_reserve.hpp"
+ struct Plan{Acts a;std::vector<int>target;size_t index=0;};
+ struct PendingAdmission {bool active=false;int day=-1,step=-1,unit=-1,pos=-1,kind=-1;};
+ // Non-owning audit output; never a policy input and not exposed as a parameter.
+@@ -781,7 +782,11 @@
+   auto js=jobs(planning,true);for(auto&j:js)add(prepared_seed_need,j.seeds);expected=forecast(js);auto buy0=orders(o,js);Acts sell;std::vector<Order>buy;int h;
+   auto total=[&](const std::vector<Order>&xs){double c=0;for(auto&x:xs)c+=cost(o,x.a);return c;};auto slots=[](const std::vector<Order>&xs){int c=0;for(auto&x:xs)if(x.a.op==Op::BUY_PRODUCT||x.a.op==Op::BUY_ANIMAL)c+=x.a.quantity;return c;};
+   if(day>=29)h=estimate(js,0);else{h=estimate(js,buy0.size()+2);sell=funding(o,total(buy0)+hirecost(h)+8,slots(buy0));double cash=sale_cash(o,sell);buy=admit(o,buy0,std::max(0.,cash-hirecost(h)-8));h=estimate(js,sell.size()+buy.size());sell=funding(o,total(buy)+hirecost(h)+8,slots(buy0));cash=sale_cash(o,sell);buy=admit(o,buy0,std::max(0.,cash-hirecost(h)-8));while(h>0&&hirecost(h)+total(buy)>cash)h--;}
+-  queue=sell;for(auto&x:buy)queue.push_back(x.a);for(int i=0;i<h;i++)queue.push_back(action(Op::HIRE));if(queue.empty()&&!released)phase=2;
++  // r2: admit() already reserves these wages, but sale receipts are not cash.
++  // Protect survival-critical incumbent crop labor from capital spending first.
++  const bool protect=a06::reserve_ongoing_wages(o,js,sell,total(buy),h,hirecost(h));
++  queue=a06::preparation_with_wage_reserve(sell,buy,h,protect);
++  if(queue.empty()&&!released)phase=2;
+  }
+  // A conditional own-order projection, NOT the actual next state. It cannot
+  // access opponent orders/private inventory or random events. Recompile from
+--- /dev/null
++++ candidate/policy/executor/ongoing_labor_reserve.hpp
+@@ -0,0 +1,53 @@
++#pragma once
++// Included inside dp7 after Job/Order. No forecast cash or crop revenue is
++// created here: this only makes an existing wage reservation executable.
++namespace a06 {
++inline bool ongoing_survival_water(const View& o, const std::vector<Job>& jobs) {
++ for (const auto& job : jobs) {
++  if (job.pos < 0 || job.pos >= 100) continue;
++  const auto& tile = o.own.tiles[job.pos];
++  if (!plant(tile) || !ongoing(int(tile.crop)) || tile.watered_today ||
++      tile.consecutive_unwatered < 1) continue;
++  // A replacement's water is not maintenance of the incumbent plant.
++  bool water = false, replace = false;
++  for (auto a : job.actions) {
++   water |= a.op == Op::WATER;
++   replace |= a.op == Op::DIG || a.op == Op::PLANT;
++  }
++  if (!water || replace) continue;
++  const int kind = int(tile.crop);
++  for (int wave = 0; wave < 4; ++wave) {
++   const int production_day = tile.planted_day + first[kind] + wave * interval[kind];
++   if (production_day > o.day && production_day <= 29) return true;
++  }
++ }
++ return false;
++}
++inline bool reserve_ongoing_wages(const View& o, const std::vector<Job>& jobs,
++                                const Acts& sales, double admitted_cost,
++                                int hires, int wages) {
++ // A fully cash-funded plan retains the parent ordering. Unconfirmed sale
++ // receipts must not fund capital before wages already reserved by admit().
++ return hires > 0 && !sales.empty() && o.own.money < admitted_cost + wages &&
++        ongoing_survival_water(o, jobs);
++}
++inline Acts preparation_with_wage_reserve(const Acts& sales,
++                                         const std::vector<Order>& purchases,
++                                         int hires, bool protect) {
++ Acts result = sales;
++ if (!protect) {
++  for (const auto& purchase : purchases) result.push_back(purchase.a);
++  for (int i = 0; i < hires; ++i) result.push_back(action(Op::HIRE));
++  return result;
++ }
++ auto current_feed = [](const Order& x) {
++  return x.priority == 0 && x.a.op == Op::BUY_PRODUCT && int(x.a.item) == W;
++ };
++ // Do not starve existing animals to finance the maintenance workforce.
++ // Future feed buffers and fertilizer retain their original later priority.
++ for (const auto& purchase : purchases) if (current_feed(purchase)) result.push_back(purchase.a);
++ for (int i = 0; i < hires; ++i) result.push_back(action(Op::HIRE));
++ for (const auto& purchase : purchases) if (!current_feed(purchase)) result.push_back(purchase.a);
++ return result;
++}
++} // namespace a06

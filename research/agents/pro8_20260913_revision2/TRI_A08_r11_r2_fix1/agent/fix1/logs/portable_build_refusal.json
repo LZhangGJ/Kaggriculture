@@ -1,0 +1,13 @@
+{
+  "name": "portable_build_refusal",
+  "command": [
+    "python",
+    "candidate/tests/test_build_refusal.py",
+    "--out",
+    "/mnt/data/fix1_work/repro/portable_build_refusal"
+  ],
+  "start_utc": "2026-09-13T16:47:51.479694+00:00",
+  "end_utc": "2026-09-13T16:48:21.274445+00:00",
+  "wall_seconds": 29.794759749999912,
+  "exit_code": 0
+}

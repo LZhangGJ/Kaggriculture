@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_SALE_CLOCK_MODE=0",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic",
+    "-DR2_MARKET_INTEGRAL=0",
+    "-DR2_STARTUP_SUPPLY_MODE=2",
+    "-DA06_EXEC_MODE=2",
+    "-DAUDIT_PARENT_BRIDGE=\"/mnt/data/TRI_A06_r12_r2/provenance/parent_agent/policy/bridge.cpp\"",
+    "/mnt/data/TRI_A06_r12_r2/tests/fixed_core_audit.cpp",
+    "/mnt/data/TRI_A06_r12_r2/provenance/parent_agent/policy/executor/vendor/simulator.cpp",
+    "-o",
+    "/mnt/data/TRI_A06_r12_r2/build/validation/fixed_core_audit.so"
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "seconds": 29.094866495999895,
+  "returncode": 0,
+  "test_only": true,
+  "source_parent": "TRI_A06_r12_r1",
+  "native_sha256": "d2317209c5af4205a5e71f643add9128d8982b0b0fc365ca9008e46e2a896ab0"
+}

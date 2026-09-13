@@ -1,0 +1,10 @@
+{
+  "all_original_files_identical": true,
+  "files": 45,
+  "parent_native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "generated_bytecode_removed": [
+    "__pycache__/main.cpython-313.pyc",
+    "policy/__pycache__/agent.cpython-313.pyc"
+  ],
+  "note": "An initial import wrote disposable Python bytecode under root despite read-only permissions. Original source/config/native files were never edited; the preserved copy is now exactly the 45 input agent files again."
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "TRI_A06_r6_r2",
+  "status": "source-correctness-and-observation-tested candidate; new closed-loop win rate unmeasured",
+  "selected_intervention": "matched no-new-land-today alternatives ONLY when all original candidates require BUY_LAND",
+  "parent": "TRI_A06_r6_r1",
+  "input_zip_sha256": "12caf9cf20aece50cadb4331cedd76be2e3dbc5b534f27665d82322b9232a9c4",
+  "parent_native_sha256": "174ba2ad749cb3213a72a03302ef50b08a37a579848ba922bde132a19b8b6c23",
+  "native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "main_sha256": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+  "changed_production_sources": [
+    "policy/search.hpp"
+  ],
+  "config_sha256": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+  "compiler_flags_sha256": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85",
+  "new_games": 0,
+  "acceptance_target": {
+    "games": 1536,
+    "minimum_strict_wins": 1306,
+    "measured": false
+  },
+  "freeze_utc": "2026-09-13T15:52:07.893240+00:00",
+  "packaging_checkpoint_utc": "2026-09-13T15:58:14.546640+00:00",
+  "elapsed_from_dispatch_seconds": 2271.85764
+}

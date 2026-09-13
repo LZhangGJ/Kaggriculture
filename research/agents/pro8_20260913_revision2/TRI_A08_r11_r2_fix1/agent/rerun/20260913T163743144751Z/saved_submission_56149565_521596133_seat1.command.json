@@ -1,0 +1,12 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/fix1_work/candidate/evidence/probe_observations.py",
+  "--agent",
+  "/mnt/data/fix1_work/candidate/main.py",
+  "--trace",
+  "/mnt/data/fix1_work/candidate/evidence/own_traces/submission_56149565_521596133_seat1.json.gz",
+  "--limit",
+  "719",
+  "--out",
+  "/mnt/data/fix1_work/candidate/rerun/20260913T163743144751Z/saved_submission_56149565_521596133_seat1.json"
+]

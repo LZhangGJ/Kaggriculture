@@ -1,0 +1,1144 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/a06_r6_r2_work/preflight_unpacked/build.py",
+    "--out",
+    "/mnt/data/a06_r6_r2_work/preflight_rebuilt.so",
+    "--unit"
+  ],
+  "started_utc": "2026-09-13T15:52:10.424560+00:00",
+  "timeout_seconds": 240,
+  "parent_monitor_pid": 1490,
+  "finished_utc": "2026-09-13T15:53:31.002974+00:00",
+  "wall_seconds": 80.57844028800014,
+  "exit_code": 0,
+  "cgroup_samples": [
+    {
+      "elapsed_seconds": 0.0008966370000962343,
+      "memory_current": "595308544",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 0.5011500830000841,
+      "memory_current": "676454400",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 1.0015423720001309,
+      "memory_current": "777293824",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 1.5019193190000806,
+      "memory_current": "912797696",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 2.002270142000043,
+      "memory_current": "927793152",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 2.5026531220000834,
+      "memory_current": "975478784",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 3.0030424930000663,
+      "memory_current": "980975616",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 3.5034383830000024,
+      "memory_current": "1043365888",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 4.003835395000124,
+      "memory_current": "1058308096",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 4.504225071000064,
+      "memory_current": "1072984064",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 5.004687171000114,
+      "memory_current": "1085304832",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 5.505110294000133,
+      "memory_current": "1099460608",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 6.005533451000019,
+      "memory_current": "1096708096",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 6.505932281000014,
+      "memory_current": "1097494528",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 7.006375488999993,
+      "memory_current": "1104834560",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 7.506741744999999,
+      "memory_current": "1105358848",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 8.00718189700001,
+      "memory_current": "1105883136",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 8.507585264999989,
+      "memory_current": "1106145280",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 9.007977210000035,
+      "memory_current": "1106669568",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 9.508362154999986,
+      "memory_current": "1106931712",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 10.00875436299998,
+      "memory_current": "1107456000",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 10.509131281999998,
+      "memory_current": "1109815296",
+      "memory_peak": "1112039424",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 11.009518507999928,
+      "memory_current": "1116106752",
+      "memory_peak": "1116106752",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 11.509921968000072,
+      "memory_current": "1146253312",
+      "memory_peak": "1146253312",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 12.010424135999983,
+      "memory_current": "1152544768",
+      "memory_peak": "1152544768",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 12.510827285000005,
+      "memory_current": "1159622656",
+      "memory_peak": "1159622656",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 13.011330891999933,
+      "memory_current": "1167224832",
+      "memory_peak": "1167224832",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 13.511803954000015,
+      "memory_current": "1174302720",
+      "memory_peak": "1174302720",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 14.012234857000067,
+      "memory_current": "1182167040",
+      "memory_peak": "1182167040",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 14.512635816000056,
+      "memory_current": "1189244928",
+      "memory_peak": "1189244928",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 15.012999112999978,
+      "memory_current": "1196584960",
+      "memory_peak": "1196584960",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 15.513404623000042,
+      "memory_current": "1204187136",
+      "memory_peak": "1204187136",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 16.01377306800009,
+      "memory_current": "1212575744",
+      "memory_peak": "1212575744",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 16.51414898300004,
+      "memory_current": "1221488640",
+      "memory_peak": "1221488640",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 17.014549795999983,
+      "memory_current": "1229352960",
+      "memory_peak": "1229352960",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 17.514918928000043,
+      "memory_current": "1236430848",
+      "memory_peak": "1236430848",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 18.015337342000066,
+      "memory_current": "1245343744",
+      "memory_peak": "1245343744",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 18.51573317800012,
+      "memory_current": "1249271808",
+      "memory_peak": "1249271808",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 19.01613105599995,
+      "memory_current": "1239572480",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 19.516648211000074,
+      "memory_current": "1240096768",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 20.017039365000073,
+      "memory_current": "1240358912",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 20.517642401000103,
+      "memory_current": "1240621056",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 21.018079743000044,
+      "memory_current": "1240883200",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 21.518495307999956,
+      "memory_current": "1241145344",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 22.018874199000038,
+      "memory_current": "1241931776",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 22.51923808100014,
+      "memory_current": "1242193920",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 23.01962857400008,
+      "memory_current": "1242456064",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 23.520010533000004,
+      "memory_current": "1242980352",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 24.02038788599998,
+      "memory_current": "1243242496",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 24.520759360000056,
+      "memory_current": "1243766784",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 25.02114305200007,
+      "memory_current": "1244028928",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 25.521604041000046,
+      "memory_current": "1244553216",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 26.021995755000034,
+      "memory_current": "698396672",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 26.52239968799995,
+      "memory_current": "771936256",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 27.02275452599997,
+      "memory_current": "788189184",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 27.52313232000006,
+      "memory_current": "708505600",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 28.026910259000033,
+      "memory_current": "812527616",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 28.529640226000083,
+      "memory_current": "897200128",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 29.030109334000144,
+      "memory_current": "968503296",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 29.530525571999988,
+      "memory_current": "1034301440",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 30.03090806399996,
+      "memory_current": "1055535104",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 30.532689096000013,
+      "memory_current": "1093541888",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 31.03474043899996,
+      "memory_current": "1130766336",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 31.53511503499999,
+      "memory_current": "1145966592",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 32.035514177000096,
+      "memory_current": "1160646656",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 32.53589081600012,
+      "memory_current": "1174016000",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 33.03625441500003,
+      "memory_current": "1174147072",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 33.53666394300012,
+      "memory_current": "1176244224",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 34.03703228900008,
+      "memory_current": "1182535680",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 34.537476077000065,
+      "memory_current": "1184370688",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 35.037833266999996,
+      "memory_current": "1184894976",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 35.53821504300004,
+      "memory_current": "1185157120",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 36.03858881800011,
+      "memory_current": "1185419264",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 36.53895335600009,
+      "memory_current": "1185943552",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 37.03932083099994,
+      "memory_current": "1188040704",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 37.539679547000105,
+      "memory_current": "1195642880",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 38.0400745930001,
+      "memory_current": "1226051584",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 38.540475873000105,
+      "memory_current": "1234440192",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 39.040832722000005,
+      "memory_current": "1242304512",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 39.54119748200014,
+      "memory_current": "1250955264",
+      "memory_peak": "1252155392",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 40.04167443100005,
+      "memory_current": "1259606016",
+      "memory_peak": "1259606016",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 40.54214955800012,
+      "memory_current": "1267470336",
+      "memory_peak": "1267470336",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 41.04260739799997,
+      "memory_current": "1275334656",
+      "memory_peak": "1275334656",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 41.543002173000104,
+      "memory_current": "1283198976",
+      "memory_peak": "1283198976",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 42.04347387400003,
+      "memory_current": "1290801152",
+      "memory_peak": "1290801152",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 42.54383508000001,
+      "memory_current": "1299976192",
+      "memory_peak": "1299976192",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 43.04418509800007,
+      "memory_current": "1308889088",
+      "memory_peak": "1308889088",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 43.54456857100013,
+      "memory_current": "1317539840",
+      "memory_peak": "1317539840",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 44.04493181499993,
+      "memory_current": "1325666304",
+      "memory_peak": "1325666304",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 44.54532388400003,
+      "memory_current": "1331171328",
+      "memory_peak": "1331171328",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 45.04573251000011,
+      "memory_current": "1340084224",
+      "memory_peak": "1340084224",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 45.54615005599999,
+      "memory_current": "1329598464",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 46.04661441999997,
+      "memory_current": "1329860608",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 46.5470951100001,
+      "memory_current": "1330384896",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 47.04756418300008,
+      "memory_current": "1330647040",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 47.54794094800013,
+      "memory_current": "1331171328",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 48.04833727100004,
+      "memory_current": "1331171328",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 48.54877422599998,
+      "memory_current": "1331433472",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 49.04921065000008,
+      "memory_current": "1332219904",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 49.54974403899996,
+      "memory_current": "1332482048",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 50.05031290200009,
+      "memory_current": "1333006336",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 50.550817068000015,
+      "memory_current": "1333268480",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 51.051240646999986,
+      "memory_current": "1333530624",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 51.55167254999992,
+      "memory_current": "1334054912",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 52.05217590400002,
+      "memory_current": "1334317056",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 52.55269840799997,
+      "memory_current": "1334579200",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 53.053104462999954,
+      "memory_current": "768991232",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 53.553520012000035,
+      "memory_current": "847998976",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 54.05398000800005,
+      "memory_current": "867397632",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 54.55445953399999,
+      "memory_current": "801333248",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 55.05558614100005,
+      "memory_current": "821518336",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 55.55852999700005,
+      "memory_current": "823345152",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 56.058898365000005,
+      "memory_current": "823861248",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 56.55923381399998,
+      "memory_current": "826208256",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 57.059620140000106,
+      "memory_current": "826208256",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 57.55999097199992,
+      "memory_current": "826208256",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 58.060345705000145,
+      "memory_current": "826208256",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 58.56068743900005,
+      "memory_current": "875769856",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 59.06110794599999,
+      "memory_current": "875769856",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 59.5615149570001,
+      "memory_current": "874721280",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 60.061881116999984,
+      "memory_current": "874700800",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 60.562257976999945,
+      "memory_current": "874676224",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 61.062636755000085,
+      "memory_current": "874676224",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 61.56301297999994,
+      "memory_current": "874676224",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 62.06347686699996,
+      "memory_current": "874676224",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 62.5638877240001,
+      "memory_current": "877559808",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 63.06429524600003,
+      "memory_current": "877531136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 63.56474153599993,
+      "memory_current": "877498368",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 64.06516515199996,
+      "memory_current": "877481984",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 64.56556426199995,
+      "memory_current": "877481984",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 65.06593821299998,
+      "memory_current": "877481984",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 65.56634757300003,
+      "memory_current": "877481984",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 66.06670453400011,
+      "memory_current": "882135040",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 66.56706791900001,
+      "memory_current": "882094080",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 67.06745881200004,
+      "memory_current": "882315264",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 67.56791513200005,
+      "memory_current": "882290688",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 68.06831374000012,
+      "memory_current": "882290688",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 68.56867735600008,
+      "memory_current": "882290688",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 69.06907588500007,
+      "memory_current": "882290688",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 69.56947708200005,
+      "memory_current": "884797440",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 70.0698378300001,
+      "memory_current": "883716096",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 70.57018101500012,
+      "memory_current": "883662848",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 71.07057202800002,
+      "memory_current": "883662848",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 71.57095220500014,
+      "memory_current": "883662848",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 72.07136026300009,
+      "memory_current": "883605504",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 72.571723324,
+      "memory_current": "883605504",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 73.07218383000009,
+      "memory_current": "824430592",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 73.57258663099992,
+      "memory_current": "843522048",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 74.07297898499996,
+      "memory_current": "844767232",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 74.5733436380001,
+      "memory_current": "844767232",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 75.073696294,
+      "memory_current": "845520896",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 75.57410141300011,
+      "memory_current": "845520896",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 76.07447228499996,
+      "memory_current": "845520896",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 76.57482644200013,
+      "memory_current": "857968640",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 77.07517995000012,
+      "memory_current": "856899584",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 77.57580518700001,
+      "memory_current": "857088000",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 78.07618860000002,
+      "memory_current": "857051136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 78.57659372600006,
+      "memory_current": "857051136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 79.07707754000012,
+      "memory_current": "857051136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 79.57750293599997,
+      "memory_current": "857051136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    },
+    {
+      "elapsed_seconds": 80.07794346500009,
+      "memory_current": "857051136",
+      "memory_peak": "1342181376",
+      "cpu_max": "400000 100000",
+      "memory_max": "4294967296"
+    }
+  ]
+}

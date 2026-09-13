@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T15:51:40.230031+00:00",
+  "finished_utc": "2026-09-13T15:52:35.928142+00:00",
+  "elapsed_seconds": 55.698118097999895,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/staged_full_suite.time",
+    "timeout",
+    "--kill-after=5s",
+    "120s",
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/TRI_A06_r12_r2/tests/run_all.py"
+  ],
+  "returncode": 0
+}

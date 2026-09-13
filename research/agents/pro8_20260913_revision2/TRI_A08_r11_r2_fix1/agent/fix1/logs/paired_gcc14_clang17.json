@@ -1,0 +1,22 @@
+{
+  "name": "paired_gcc14_clang17",
+  "command": [
+    "python",
+    "candidate/tests/compare_saved_entries.py",
+    "--left",
+    "/mnt/data/fix1_work/candidate/main.py",
+    "--right",
+    "/mnt/data/fix1_work/candidate/main.py",
+    "--right-library",
+    "/mnt/data/fix1_work/repro/fix1_clang17.so",
+    "--traces",
+    "/mnt/data/fix1_work/candidate/evidence/own_traces",
+    "--out",
+    "/mnt/data/fix1_work/repro/paired_gcc14_clang17",
+    "--require-exact"
+  ],
+  "start_utc": "2026-09-13T16:43:38.392881+00:00",
+  "end_utc": "2026-09-13T16:44:55.544323+00:00",
+  "wall_seconds": 77.15144748500006,
+  "exit_code": 0
+}

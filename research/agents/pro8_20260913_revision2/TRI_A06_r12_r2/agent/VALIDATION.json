@@ -1,0 +1,82 @@
+{
+  "status": "COMPONENT_TESTS_PASS; FULL_POOL_UNTESTED",
+  "production_native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "source_input_count": 48,
+  "historical_parent_root_exact_actions": 5033,
+  "historical_own_crop_transitions": 5033,
+  "historical_transition_mismatches": 0,
+  "source_unit_suites": 1,
+  "source_unit_assertions": 18403,
+  "source_unit_failures": 0,
+  "official_atomic_market_scenarios": 15,
+  "official_atomic_market_assertions": 32,
+  "fixed_execution_scenarios": 8,
+  "fixed_execution_ineffective_actions": 0,
+  "root_module_smoke_exact_actions": 336,
+  "root_malformed_input_rejection_cases": 3,
+  "common_prefix_identical_actions": 1176,
+  "common_prefix_observation_calls_including_first_divergences": 1183,
+  "first_divergences": [
+    {
+      "case": "market_smart_v8_772192291_seat1",
+      "historical_margin": -14121.0,
+      "common_actions": 144,
+      "step": 144
+    },
+    {
+      "case": "ahmed_v27_120540881_seat0",
+      "historical_margin": -36.0,
+      "common_actions": 216,
+      "step": 216
+    },
+    {
+      "case": "submission_56149565_852484341_seat0",
+      "historical_margin": -14602.0,
+      "common_actions": 168,
+      "step": 168
+    },
+    {
+      "case": "aurax_reactive_v1_120540881_seat0",
+      "historical_margin": -11422.0,
+      "common_actions": 216,
+      "step": 216
+    },
+    {
+      "case": "soil_v219g_772192291_seat1",
+      "historical_margin": -14121.0,
+      "common_actions": 144,
+      "step": 144
+    },
+    {
+      "case": "aurax_reactive_v1_521596133_seat0",
+      "historical_margin": 42.0,
+      "common_actions": 120,
+      "step": 120
+    },
+    {
+      "case": "submission_56149565_1123506227_seat0",
+      "historical_margin": 67.0,
+      "common_actions": 168,
+      "step": 168
+    }
+  ],
+  "full_staged_suite_stages": 6,
+  "full_staged_suite_returncodes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_rebuild_byte_identical": true,
+  "independent_minimal_production_runtime_smoke_exact_actions": 336,
+  "new_complete_games": 0,
+  "new_win_rate": null,
+  "historical_parent_full_denominator": 1536,
+  "historical_parent_wins": 1099,
+  "acceptance_required_wins": 1306,
+  "previous_failed_development_expectations": 2,
+  "new_full_pool_acceptance_established": false,
+  "narrow_wins_preserved_established": false
+}

@@ -1,0 +1,1 @@
+{"scope": "Frozen saved own observations; no new games", "trace": "thomas_955_v2_616522013_seat1.json.gz", "trace_sha256": "5d6590dd04f8f044489d54b8771944e5d1490a449c237fca11111b1bae33b870", "calls": 719, "exact_parent_actions": 719, "seconds": 5.907903820000001, "max_action_seconds": 0.3462231459999998, "peak_rss_kib": 169356, "fertilizer_mismatches": []}

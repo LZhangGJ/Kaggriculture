@@ -1,0 +1,1 @@
+The outer tool wrapper ended after the audit + clean build batch. Native and BUILD receipt completed; GNU time and exit receipt did not. Repeating only the build for complete wall/RSS evidence.

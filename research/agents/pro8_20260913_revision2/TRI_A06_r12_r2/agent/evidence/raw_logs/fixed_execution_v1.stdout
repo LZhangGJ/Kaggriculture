@@ -1,0 +1,4 @@
+{"shock": {"MILK": 0, "FERTILIZER": 0}, "original": {"hands": 7, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 0}, "protected": {"hands": 7, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 0}}
+{"shock": {"MILK": 5, "FERTILIZER": 2}, "original": {"hands": 2, "watered_risky": 3, "surviving_risky": 3, "noop": 0, "dropped_jobs": 41}, "protected": {"hands": 7, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 0}}
+{"shock": {"MILK": 10, "FERTILIZER": 5}, "original": {"hands": 4, "watered_risky": 17, "surviving_risky": 17, "noop": 0, "dropped_jobs": 10}, "protected": {"hands": 7, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 0}}
+{"shock": {"MILK": 20, "FERTILIZER": 10}, "original": {"hands": 5, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 4}, "protected": {"hands": 7, "watered_risky": 19, "surviving_risky": 19, "noop": 0, "dropped_jobs": 0}}

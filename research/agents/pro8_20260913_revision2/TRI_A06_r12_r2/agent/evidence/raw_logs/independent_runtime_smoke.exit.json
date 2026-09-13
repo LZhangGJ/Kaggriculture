@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-09-13T15:56:41.887800+00:00",
+  "finished_utc": "2026-09-13T15:56:44.891196+00:00",
+  "elapsed_seconds": 3.0034055089997764,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/independent_runtime_smoke.time",
+    "timeout",
+    "--kill-after=5s",
+    "30s",
+    "python",
+    "/mnt/data/TRI_A06_r12_r2/tests/entry_smoke.py",
+    "--agent",
+    "/mnt/data/a06_r12_r2_work/independent_build/main.py",
+    "--feedback",
+    "/mnt/data/TRI_A06_r12_r2/evidence/input",
+    "--out",
+    "/mnt/data/a06_r12_r2_work/logs/independent_runtime_smoke.json"
+  ],
+  "returncode": 0
+}

@@ -1,0 +1,6 @@
+[
+  "python",
+  "candidate/tests/test_build_refusal.py",
+  "--out",
+  "/mnt/data/fix1_work/repro/portable_build_refusal"
+]

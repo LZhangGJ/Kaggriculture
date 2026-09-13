@@ -1,0 +1,2 @@
+91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed  candidate/policy/tri_a08_r11_r2_fix1.so
+91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed  clean_rebuild/policy/tri_a08_r11_r2_fix1.so

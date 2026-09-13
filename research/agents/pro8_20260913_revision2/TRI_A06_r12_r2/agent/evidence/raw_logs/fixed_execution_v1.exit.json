@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-09-13T15:45:34.475521+00:00",
+  "finished_utc": "2026-09-13T15:45:36.830055+00:00",
+  "elapsed_seconds": 2.354542575000096,
+  "command": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/mnt/data/a06_r12_r2_work/logs/fixed_execution_v1.time",
+    "timeout",
+    "--kill-after=5s",
+    "60s",
+    "python",
+    "/mnt/data/a06_r12_r2_work/candidate/tests/fixed_execution.py",
+    "--parent",
+    "/mnt/data/a06_r12_r2_work/parent/main.py",
+    "--audit-lib",
+    "/mnt/data/a06_r12_r2_work/candidate/build/tests/fixed_core_audit.so",
+    "--feedback",
+    "/mnt/data/a06_r12_r2_work/input",
+    "--unit-json",
+    "/mnt/data/a06_r12_r2_work/logs/units_v1.stdout",
+    "--out",
+    "/mnt/data/a06_r12_r2_work/logs/fixed_execution_v1.json"
+  ],
+  "returncode": 0
+}

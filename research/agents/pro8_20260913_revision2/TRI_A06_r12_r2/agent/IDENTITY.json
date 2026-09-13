@@ -1,0 +1,19 @@
+{
+  "candidate": "TRI_A06_r12_r2",
+  "exact_parent": "TRI_A06_r12_r1",
+  "input_package_sha256": "e30ba4fb68a4307bd1babda1a91b0483b5bbeccb416007335fda42f2486cd8ee",
+  "parent_native_sha256": "d642c5650c916365136bfc5ce5c47f82240c27dc34d9baf691a580376b56ec0b",
+  "native_path": "policy/a06.so",
+  "native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "config_sha256": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+  "main_sha256": "947120f3c8b468cdca2f5a580daf34b71600b1a02d1a1d1a61e74ec0d4d9745e",
+  "source_freeze_sha256": "fcf11ef4aacae67cafdf8f03dae557fe8fef3a5bdd45d50beb6b1abe41f3d27b",
+  "canonical_build_inputs_sha256": "b02c30be12a33c4756e172b0a39748a7d9eda81fc2c85b90db05dadc46a9921b",
+  "parent_archive_sha256": "43234d3dc5b3272fd963059c79d6095c93170632773d0129bb7a64191176cb54",
+  "status": "CANDIDATE_FOR_CONTROLLER_TESTING_NOT_ACCEPTED",
+  "new_complete_games": 0,
+  "historical_parent_wins": 1099,
+  "historical_parent_games": 1536,
+  "required_strict_wins": 1306,
+  "next_controller_games": 1536
+}
