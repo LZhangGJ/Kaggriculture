@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "completed": 384,
+  "elapsed_this_process": 170.61272716522217,
+  "freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+  "games_per_second": 2.2507113412947946,
+  "invalid": 0,
+  "missing": 0,
+  "phase": "preflight",
+  "scheduled": 384,
+  "updated_unix": 1789266510.2039208
+}

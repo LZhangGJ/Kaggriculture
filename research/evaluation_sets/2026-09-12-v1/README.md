@@ -1,6 +1,6 @@
 # Shared Kaggriculture evaluation sets
 
-All **122,880 primary games** are complete, with zero invalid or missing cases. Read [all three panels on one page](results/ALL_RESULTS.md), with each panel explained, the best observed win rates in bold, and opponent, seat and economic breakdowns. The [holdout](retired_holdout/holdout.json) is now public and retired from fresh-confirmation use.
+The master leaderboard now covers **nine agents and 184,320 valid games**, with zero invalid, missing or duplicate cells. Read [all three panels on one page](results/ALL_RESULTS.md), with panel explanations, best win rates in bold, and every opponent and seat. The [Pro8 extension](extensions/pro8_20260913/README.md) adds 61,440 games while preserving all original results. The [holdout](retired_holdout/holdout.json) is public and retired; Pro8 uses it as a known benchmark, not fresh confirmation.
 
 The **stress panel is complete**: [overall results](stress_results/RESULTS.md), [win rates by opponent](stress_results/BY_OPPONENT.md), and [opponent-by-seat tables](stress_results/BY_OPPONENT_AND_SEAT.md). All 24,576 stress games passed validation. Stress measures selected extremes and must be reported separately from representative performance. All three panels are now complete; the stress-only snapshot is retained for provenance.
 
@@ -12,9 +12,9 @@ These panels give both research tasks a common comparison. Their seed manifests 
 |---|---:|---|---:|
 | [Representative](manifests/representative.json) | 256 seeds | Estimate performance on a uniform sample from the eligible default 31-bit seed domain. Use for routine matched development comparisons. | 8,192 |
 | [Stress](manifests/stress.json) | 128 seeds | Test selected extremes and contrasting economic conditions. Report separately from representative performance. | 4,096 |
-| Holdout | 256 seeds | One final comparison after every candidate and the analysis are frozen. [Checksum commitment](holdout_receipt.json). | 8,192 |
+| [Retired holdout](retired_holdout/holdout.json) | 256 seeds | Original one-use confirmation; reused public benchmark for later cohorts. Fresh confirmation needs a new set. | 8,192 |
 
-Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values, reproduction key and release receipt are now public under `retired_holdout/`; use them only to reproduce this completed comparison. The holdout is retired. Future confirmation requires a new independent set, excluding every prior evaluation set and the full stress selection pool.
+Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values, reproduction key and release receipt are now public under `retired_holdout/`; reuse them as a known benchmark, without a fresh-confirmation claim. The holdout is retired. Future confirmation requires a new independent set, excluding every prior evaluation set and the full stress selection pool.
 
 ## What the stress labels mean
 

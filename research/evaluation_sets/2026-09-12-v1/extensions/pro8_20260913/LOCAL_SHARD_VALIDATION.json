@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-13T04:08:16Z",
+  "duplicates": 0,
+  "files": {
+    "MANIFEST.json": "dcf5ba20090dc65179e282e013a8aa69a7e7391ce2d3f238f8a46c5fe2fc53fb",
+    "STATUS.json": "efd9c93982b8ef92496fd1bb1c105543c7e51b1f501974757fa921d4aaf41897",
+    "rows.jsonl": "00295ea838cae8df852af6215f2ccaaef29dbcf124731c4d76708f289bd08c75"
+  },
+  "freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+  "games": 20544,
+  "invalid": 0,
+  "missing": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-09-13T04:55:43Z",
+  "frozen_inputs": "all reconstructed hashes match",
+  "helper_sha256": "ffe1159c53a720066381abb429240a4a947c304b385219296f4c5ef8cf5df69a",
+  "journal_receipts_checked": 14,
+  "repair": "Run git archive from the resolved repository root; a nested working directory produced an empty baseline archive in the first packaging check. Failed check preserved locally; evaluation data and frozen tools unchanged.",
+  "status": "PASS"
+}

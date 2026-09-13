@@ -1,0 +1,26 @@
+{
+  "baseline_reconciliation": "Every original count, mean, interval, paired difference, diagnostic, condition and market result matches exactly",
+  "checked_utc": "2026-09-13T04:53:50Z",
+  "duplicate_cells": 0,
+  "freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+  "invalid": 0,
+  "missing": 0,
+  "new_games": 61440,
+  "preserved_baseline_games": 122880,
+  "results_sha256": "fbe5966826f605b6c5907e6508908482d771de7b936c0bb2a2861e55bcfd1be2",
+  "scope": "Nine-candidate published benchmark; Pro8 holdout is reused evidence",
+  "source_shards": {
+    "local": {
+      "MANIFEST.json": "dcf5ba20090dc65179e282e013a8aa69a7e7391ce2d3f238f8a46c5fe2fc53fb",
+      "STATUS.json": "efd9c93982b8ef92496fd1bb1c105543c7e51b1f501974757fa921d4aaf41897",
+      "rows.jsonl": "00295ea838cae8df852af6215f2ccaaef29dbcf124731c4d76708f289bd08c75"
+    },
+    "wrx90": {
+      "MANIFEST.json": "4265e2c5c1f630e345a0a07bbfbca11c0061340db31d55863a38ece3819d3ea5",
+      "STATUS.json": "20d140c959a1e4eda45cb890847fab98c2bdb581e809feab74347a9e4bfe7630",
+      "rows.jsonl": "88a4f9ec81b50ae9e147d34f9909c891024733a9cd876bf4be21746ad8370b6e"
+    }
+  },
+  "status": "PASS",
+  "total_unique_games": 184320
+}

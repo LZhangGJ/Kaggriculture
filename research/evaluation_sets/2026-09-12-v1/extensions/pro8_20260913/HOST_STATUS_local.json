@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "finished_unix": 1789272333.4017484,
+  "freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+  "host": "local",
+  "phase": "benchmark",
+  "stage": "complete",
+  "started_unix": 1789266692.1323383,
+  "workers": 16
+}

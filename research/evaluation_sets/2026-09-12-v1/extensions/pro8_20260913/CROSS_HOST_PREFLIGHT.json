@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-09-13T02:30:56Z",
+  "fields_compared": [
+    "steps",
+    "own_cash",
+    "opponent_cash",
+    "margin",
+    "win",
+    "tie",
+    "action_hash",
+    "terminal_shops",
+    "economy"
+  ],
+  "freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+  "full_games_per_host": 768,
+  "full_games_total": 1536,
+  "matched_cases": 384,
+  "mean_direct_game_seconds_by_host_and_candidate": {
+    "local": {
+      "pro8-a06-r12": 4.325488898031251,
+      "pro8-a06-r6": 3.434057530171875,
+      "pro8-a08-r11": 4.805556804070312
+    },
+    "wrx90": {
+      "pro8-a06-r12": 3.355066462087052,
+      "pro8-a06-r6": 2.5575419246315505,
+      "pro8-a08-r11": 3.607237952770447
+    }
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "official_observation_checks_total": 1105920,
+  "qualification": "Timing comes from the full verification workload under concurrent CPU execution; primary-run throughput may differ.",
+  "source_files": {
+    "local": {
+      "MANIFEST.json": "c83ac9d3cbeb671bf680ca3a5c982a4c8e7b2307d7ab1a2226c8cc8199b10de9",
+      "STATUS.json": "0cb884acdcd4c6c4499d9846692d9b035207d6a6f1cdabb5c3676e60fee9dd94",
+      "VERIFIED.json": "4eefe0f9834e353c5d73d1a036b92d30bfb2b197573d1e62c7e4a84a63bf030c",
+      "rows.jsonl": "2960631d3fce6e76c710332d36fd98268e8732c2ca6aeeafdfd1c7cd8df83b19"
+    },
+    "wrx90": {
+      "MANIFEST.json": "e6c04bb9c852820b0f0320342d7412c25fa6003be9517bdf6bdcf8cc5edaf5c1",
+      "STATUS.json": "46e80fc896653dd1ee7e68e1f1c9789157934f0d60d14db0afd1545b17a10f10",
+      "VERIFIED.json": "152b9ee2537e3aa0d096bff7ed47087dd12eac9663e1960d4a3fda7ef23bedf5",
+      "rows.jsonl": "06035686edbcc2847e3d3423e93a17b716ec39a6b9479a6d87339d46f056dabd"
+    }
+  },
+  "status": "PASS"
+}

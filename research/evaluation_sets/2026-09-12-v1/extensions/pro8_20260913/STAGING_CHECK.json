@@ -1,0 +1,12 @@
+{
+  "authored_whitespace_check": "PASS",
+  "changed_paths": 219,
+  "checked_utc": "2026-09-13T04:57:16Z",
+  "github_renderer": "31 tables; 15 expandable sections; 727 bold rate cells",
+  "largest_changed_file_bytes": 98696910,
+  "master_relative_links": "PASS",
+  "preserved_source_whitespace": "Three supplied observation_codec.hpp files end with a blank line. Exact frozen source bytes are preserved; no policy code was normalized.",
+  "staged_delivery_files_checked": 454,
+  "staged_scope": "research/evaluation_sets/2026-09-12-v1/",
+  "status": "PASS"
+}

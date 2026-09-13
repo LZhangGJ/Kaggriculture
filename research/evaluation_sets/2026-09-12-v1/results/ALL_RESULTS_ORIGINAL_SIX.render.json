@@ -1,0 +1,15 @@
+{
+  "best_rule": "Exact wins/games within each matched comparison; all exact ties highlighted",
+  "comparison_matrix_rows": 438,
+  "games": 122880,
+  "highlighted_cells": 975,
+  "panels": [
+    "representative",
+    "stress",
+    "holdout"
+  ],
+  "partial_preview": false,
+  "rendered_bytes": 392213,
+  "rendered_sha256": "454c5b70d01e85cd5834abe2ce00c6299558ac1adad7a918b30a5fbee733bcbb",
+  "source_results_sha256": "7b8a8ea92ab72fb1d96fd085c238c4a4617d18705a352ba78e34e927a61745f9"
+}
