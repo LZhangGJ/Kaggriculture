@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "method": "Independent Decimal arithmetic from all1920 exported CSV rows; full Cartesian coverage; all12 opponent win totals; both historical reviews unchanged",
+  "counts": {
+    "A06_r12": {
+      "games": 480,
+      "wins": 349,
+      "draws": 0
+    },
+    "A06_r6": {
+      "games": 480,
+      "wins": 374,
+      "draws": 0
+    },
+    "A08_r11": {
+      "games": 480,
+      "wins": 393,
+      "draws": 0
+    },
+    "A08_r6": {
+      "games": 480,
+      "wins": 389,
+      "draws": 0
+    }
+  },
+  "results_sha256": "ad58abd114e0739a545fdf4ff48c2f67e4bcc09478a3176a8e9dd1a0dc236a5f",
+  "old_review_sha256": {
+    "A06_r12_win20_round1": "23a8f0e3865566b67b439209915683d6d1ac1244634f0d4a04684c8522e5d1af",
+    "A08_r11_win20_round1": "0059fcc418770b860fb33c45809b472ed9ddc2051cef1a40a725a2677f968c6a"
+  }
+}
