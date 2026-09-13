@@ -1,8 +1,10 @@
 # Shared Kaggriculture evaluation sets
 
-The **stress panel is complete**: [overall results](stress_results/RESULTS.md), [win rates by opponent](stress_results/BY_OPPONENT.md), and [opponent-by-seat tables](stress_results/BY_OPPONENT_AND_SEAT.md). All 24,576 stress games passed validation. Stress measures selected extremes and must be reported separately from representative performance. Holdout results are pending.
+All **122,880 primary games** are complete, with zero invalid or missing cases. Read [all three panels on one page](results/ALL_RESULTS.md), with each panel explained, the best observed win rates in bold, and opponent, seat and economic breakdowns. The [holdout](retired_holdout/holdout.json) is now public and retired from fresh-confirmation use.
 
-The **representative panel is complete**: [overall results](representative_results/RESULTS.md), [win rates by opponent](representative_results/BY_OPPONENT.md), and [opponent-by-seat tables](representative_results/BY_OPPONENT_AND_SEAT.md). All 49,152 representative games passed validation. The stress panel is also complete; holdout is still running with all six policies frozen.
+The **stress panel is complete**: [overall results](stress_results/RESULTS.md), [win rates by opponent](stress_results/BY_OPPONENT.md), and [opponent-by-seat tables](stress_results/BY_OPPONENT_AND_SEAT.md). All 24,576 stress games passed validation. Stress measures selected extremes and must be reported separately from representative performance. All three panels are now complete; the stress-only snapshot is retained for provenance.
+
+The **representative panel is complete**: [overall results](representative_results/RESULTS.md), [win rates by opponent](representative_results/BY_OPPONENT.md), and [opponent-by-seat tables](representative_results/BY_OPPONENT_AND_SEAT.md). All 49,152 representative games passed validation. All three panels are now complete; the representative-only snapshot is retained for provenance.
 
 These panels give both research tasks a common comparison. Their seed manifests are fixed and reproducible. The initial seed-creation report is [REPORT.md](REPORT.md); the live publication stage is [PUBLICATION_STATUS.json](PUBLICATION_STATUS.json).
 
@@ -12,7 +14,7 @@ These panels give both research tasks a common comparison. Their seed manifests 
 | [Stress](manifests/stress.json) | 128 seeds | Test selected extremes and contrasting economic conditions. Report separately from representative performance. | 4,096 |
 | Holdout | 256 seeds | One final comparison after every candidate and the analysis are frozen. [Checksum commitment](holdout_receipt.json). | 8,192 |
 
-Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values and reproduction key remain local until the frozen comparison finishes; the branch publishes their checksums and release receipt. After the frozen comparison, the released holdout seeds and complete results will be added here. Once those results guide development, this holdout is retired from fresh-confirmation use.
+Every panel crosses the same [16 pinned opponents](OPPONENTS.md) and both candidate seats. The separate delayed-seller diagnostic opponent is outside these counts. The holdout values, reproduction key and release receipt are now public under `retired_holdout/`; use them only to reproduce this completed comparison. The holdout is retired. Future confirmation requires a new independent set, excluding every prior evaluation set and the full stress selection pool.
 
 ## What the stress labels mean
 
@@ -44,6 +46,6 @@ The user selected promising candidates only. The frozen six-entry [roster](evalu
 
 The [analysis plan](evaluation/ANALYSIS_PLAN.md), [freeze receipt](evaluation/FREEZE.json), complete pinned runtime and manifest-aware runner are published before preflight. The [campaign audit](campaign_audit/report.json) adds both local research trees, remote seed registries, the replay archive index and NPZ seed arrays. It finds no overlap with any new set. Prior metrics in handoffs explain candidate selection; they are not scores on these panels.
 
-The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. The [repeated preflight](evaluation/verification/preflight-v2/STATUS.json) passed all 192 cases (512 full games and 276,480 native/official observation checks). A [documented optional-debug repair](evaluation/RUNNER_REPAIRS.json) preserves the failed first preflight. Representative and stress results are complete and published above. Holdout is running. Each panel retains separate opponent and seat tables.
+The original [candidates.json](candidates.json) records the seed-creation task. The native 1.32.7 source pinned in [provenance.json](provenance.json) is the evaluation engine; the repository root's older 1.32.6 tooling is not interchangeable without parity evidence. The [repeated preflight](evaluation/verification/preflight-v2/STATUS.json) passed all 192 cases (512 full games and 276,480 native/official observation checks). A [documented optional-debug repair](evaluation/RUNNER_REPAIRS.json) preserves the failed first preflight. All three panels are complete. Each panel retains separate opponent and seat tables.
 
 Repeated tuning can overfit these development panels. Sixteen opponent names do not imply sixteen independent strategy families. No fixed panel proves robustness against every opponent. These evaluations provide shared evidence; they do not automatically promote a candidate or authorize a Kaggle submission.

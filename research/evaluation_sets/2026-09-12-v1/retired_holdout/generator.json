@@ -1,0 +1,8 @@
+{
+  "counter": 256,
+  "exclusion_sha256": "d46c06af9c102195d9602b6cddeba00cefd26e6d0cbabdb8e6d7c7b7ae2f36a8",
+  "key": "e1c5377ecbb3d4a5608e7dcee39829e71174405cb47bf5081003acdc2f5893b2",
+  "label": "holdout-v1",
+  "representative_sha256": "2e9b9c651f8d776bade17c68df406d15b38529fcdefdd0c533344a9a818d7651",
+  "stress_pool_sha256": "eea6df9d1236468dbc1420fb1f9f292b1501356406818fc860a947ea6071a6bd"
+}

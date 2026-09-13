@@ -1,0 +1,8 @@
+{
+  "candidate_count": 6,
+  "completed_holdout_games": 49152,
+  "future_use": "Historical reproduction only. Obtain a new independent holdout for a fresh confirmation claim.",
+  "holdout_sha256": "d91ca06fe13a20beb973dfdbccf5894409eee3ec35dd1f731a2e1af3ac3fcef9",
+  "retired_utc": "2026-09-13T02:09:06Z",
+  "status": "retired_after_one_frozen_comparison"
+}

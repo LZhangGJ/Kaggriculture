@@ -1,36 +1,11 @@
 {
-  "development": {
-    "complete": true,
-    "completed": 73728,
-    "elapsed_this_process": 12799.072573423386,
-    "games_per_second": 5.760417372200263,
-    "invalid": 0,
-    "missing": 0,
-    "phase": "development",
-    "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
-    "scheduled": 73728,
-    "updated_unix": 1789256753.4910836
-  },
-  "development_invalid": 0,
-  "development_missing": 0,
-  "holdout": "released_for_frozen_six_candidate_comparison; not yet reported",
-  "holdout_status": {
-    "complete": false,
-    "completed": 5139,
-    "elapsed_this_process": 845.6832520961761,
-    "games_per_second": 6.076743257315402,
-    "invalid": 0,
-    "missing": 44013,
-    "phase": "holdout",
-    "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
-    "scheduled": 49152,
-    "updated_unix": 1789257600.4577773
-  },
-  "note": "Both development panels are complete. This is not a completed three-panel comparison.",
-  "primary_games_completed_at_snapshot": 78867,
+  "holdout": "retired",
+  "invalid_games": 0,
+  "missing_games": 0,
+  "note": "Local official-rule CPU evaluation; no champion change or Kaggle submission. Optional native debug errors are reported separately.",
+  "primary_games_completed": 122880,
   "primary_games_scheduled": 122880,
-  "representative_games_completed": 49152,
-  "stage": "representative_and_stress_complete_holdout_running",
-  "stress_games_completed": 24576,
-  "updated_utc": "2026-09-13T00:00:07Z"
+  "results_sha256": "7b8a8ea92ab72fb1d96fd085c238c4a4617d18705a352ba78e34e927a61745f9",
+  "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
+  "stage": "complete"
 }

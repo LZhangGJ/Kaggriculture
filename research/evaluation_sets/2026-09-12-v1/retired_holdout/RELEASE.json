@@ -1,0 +1,14 @@
+{
+  "analysis_code_sha256": "93febda69477f1cf61166b9a4cbf2e986270e79b34140288e9b7d23765d5b194",
+  "analysis_plan_sha256": "49422256d0b4d1b33b2c1008c5defe7b1eea2e8f7189f005865f39af2758f84e",
+  "audit_sha256": "be08f7871d09af77d050dd54135f173470ee70fcf5527592dfaf1e74d42417db",
+  "holdout_sha256": "d91ca06fe13a20beb973dfdbccf5894409eee3ec35dd1f731a2e1af3ac3fcef9",
+  "policy_changes_after_development_allowed": false,
+  "preflight_rows_sha256": "3f32af02a562f29e908a7c0f5f7b3bd69259d7c81f719f08f8bdd1611703971b",
+  "purpose": "One comparison of all six preselected promising policies; no development-panel selection.",
+  "released_utc": "2026-09-12T20:12:30Z",
+  "retirement": "Retire from fresh-confirmation use after this comparison; publish seeds and results.",
+  "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
+  "runner_sha256": "16a95778a4dc7368d35bfb69159b55d197584b29d2c95cd1850fe512bae60561",
+  "status": "released_for_one_frozen_comparison"
+}

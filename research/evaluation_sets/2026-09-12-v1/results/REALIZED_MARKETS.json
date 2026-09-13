@@ -1,0 +1,6005 @@
+{
+  "holdout": {
+    "ppo-495ebc48210f14ae": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.721435546875,
+              0.7779541015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.750732421875,
+            "wins": 6150
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9893.231593153212,
+        "mean_shop_demand_units": 316.56005859375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.721435546875,
+              0.7779541015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.750732421875,
+            "wins": 6150
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.619025336371,
+        "mean_shop_demand_units": 203.63818359375
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "distinct_seeds": 1,
+            "games": 1,
+            "win_rate": 0.0,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7134658332593768,
+              0.7882860423926504
+            ],
+            "distinct_seeds": 254,
+            "games": 5282,
+            "win_rate": 0.7523665278303673,
+            "wins": 3974
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7106783828164553,
+              0.7827266105398675
+            ],
+            "distinct_seeds": 255,
+            "games": 2909,
+            "win_rate": 0.7480233757304916,
+            "wins": 2176
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06246337890625,
+        "mean_sampled_market_inventory": 10238.61238878038,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.37933798629970156,
+              0.467822666195191
+            ],
+            "distinct_seeds": 254,
+            "games": 1145,
+            "win_rate": 0.422707423580786,
+            "wins": 484
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7704216624614919,
+              0.8347707760050759
+            ],
+            "distinct_seeds": 256,
+            "games": 7047,
+            "win_rate": 0.8040300837235703,
+            "wins": 5666
+          }
+        },
+        "mean_sampled_floor_fraction": 0.009372287326388888,
+        "mean_sampled_market_inventory": 10066.97199367947,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9688249400479616,
+              1.0
+            ],
+            "distinct_seeds": 73,
+            "games": 391,
+            "win_rate": 0.9872122762148338,
+            "wins": 386
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7399530634056241,
+              0.8062887915851866
+            ],
+            "distinct_seeds": 256,
+            "games": 4843,
+            "win_rate": 0.7747264092504645,
+            "wins": 3752
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6277955456222585,
+              0.7310529466299166
+            ],
+            "distinct_seeds": 239,
+            "games": 2958,
+            "win_rate": 0.6801893171061528,
+            "wins": 2012
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05059611002604167,
+        "mean_sampled_market_inventory": 10022.541263156469,
+        "mean_shop_demand_units": 283.532958984375
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 6,
+            "games": 29,
+            "win_rate": 1.0,
+            "wins": 29
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7076476194003264,
+              0.7751981204264756
+            ],
+            "distinct_seeds": 256,
+            "games": 5440,
+            "win_rate": 0.7422794117647059,
+            "wins": 4038
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7142272437625607,
+              0.8138771579822673
+            ],
+            "distinct_seeds": 231,
+            "games": 2723,
+            "win_rate": 0.7649651120088138,
+            "wins": 2083
+          }
+        },
+        "mean_sampled_floor_fraction": 0.028183322482638887,
+        "mean_sampled_market_inventory": 9971.949191623266,
+        "mean_shop_demand_units": 391.3154296875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.721435546875,
+              0.7779541015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.750732421875,
+            "wins": 6150
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9954.04953748915,
+        "mean_shop_demand_units": 195.13037109375
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.721435546875,
+              0.7779541015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.750732421875,
+            "wins": 6150
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9708.450329589843,
+        "mean_shop_demand_units": 495.709716796875
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8407885825990837,
+              0.9179367499530172
+            ],
+            "distinct_seeds": 207,
+            "games": 2660,
+            "win_rate": 0.880827067669173,
+            "wins": 2343
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6060563229467824,
+              0.6882370004759814
+            ],
+            "distinct_seeds": 254,
+            "games": 4312,
+            "win_rate": 0.6477272727272727,
+            "wins": 2793
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7642906813957102,
+              0.8893468723839397
+            ],
+            "distinct_seeds": 199,
+            "games": 1220,
+            "win_rate": 0.8311475409836065,
+            "wins": 1014
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15746256510416667,
+        "mean_sampled_market_inventory": 10020.232674831814,
+        "mean_shop_demand_units": 190.599609375
+      }
+    },
+    "ppo-9980111aa0f1e7f6": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.803466796875,
+              0.857666015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8319091796875,
+            "wins": 6815
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9892.889069959852,
+        "mean_shop_demand_units": 314.931884765625
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.803466796875,
+              0.857666015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8319091796875,
+            "wins": 6815
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9975.378428141277,
+        "mean_shop_demand_units": 204.27099609375
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7379642637873428,
+              0.8196478711582857
+            ],
+            "distinct_seeds": 251,
+            "games": 4795,
+            "win_rate": 0.7803962460896767,
+            "wins": 3742
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8770876237415282,
+              0.9302332821686119
+            ],
+            "distinct_seeds": 256,
+            "games": 3397,
+            "win_rate": 0.9046217250515161,
+            "wins": 3073
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05640597873263889,
+        "mean_sampled_market_inventory": 10234.7404296875,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8958133237276273,
+              0.9582948262243286
+            ],
+            "distinct_seeds": 252,
+            "games": 1089,
+            "win_rate": 0.9302112029384757,
+            "wins": 1013
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7842502767057002,
+              0.8461795418178362
+            ],
+            "distinct_seeds": 256,
+            "games": 7103,
+            "win_rate": 0.8168379557933267,
+            "wins": 5802
+          }
+        },
+        "mean_sampled_floor_fraction": 0.008111572265625,
+        "mean_sampled_market_inventory": 10066.975868055555,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9823008849557522,
+              1.0
+            ],
+            "distinct_seeds": 79,
+            "games": 406,
+            "win_rate": 0.9950738916256158,
+            "wins": 404
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8269229723853011,
+              0.8934894377233122
+            ],
+            "distinct_seeds": 256,
+            "games": 4485,
+            "win_rate": 0.8622073578595317,
+            "wins": 3867
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7235655054443698,
+              0.816346255514351
+            ],
+            "distinct_seeds": 250,
+            "games": 3301,
+            "win_rate": 0.7706755528627689,
+            "wins": 2544
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04911838107638889,
+        "mean_sampled_market_inventory": 10022.027609592014,
+        "mean_shop_demand_units": 283.5
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 8,
+            "games": 40,
+            "win_rate": 1.0,
+            "wins": 40
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8058868225970337,
+              0.872641612944053
+            ],
+            "distinct_seeds": 256,
+            "games": 5248,
+            "win_rate": 0.8401295731707317,
+            "wins": 4409
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7703665769519968,
+              0.8580852832055585
+            ],
+            "distinct_seeds": 248,
+            "games": 2904,
+            "win_rate": 0.8147382920110193,
+            "wins": 2366
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0265625,
+        "mean_sampled_market_inventory": 9971.662358940972,
+        "mean_shop_demand_units": 392.50634765625
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.803466796875,
+              0.857666015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8319091796875,
+            "wins": 6815
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9955.421187337239,
+        "mean_shop_demand_units": 196.63330078125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.803466796875,
+              0.857666015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8319091796875,
+            "wins": 6815
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9716.664897325305,
+        "mean_shop_demand_units": 498.02783203125
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8579596656976745,
+              0.9316961064320004
+            ],
+            "distinct_seeds": 211,
+            "games": 2644,
+            "win_rate": 0.8967473524962178,
+            "wins": 2371
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.73575605147046,
+              0.8152046568861107
+            ],
+            "distinct_seeds": 256,
+            "games": 4203,
+            "win_rate": 0.7761123007375684,
+            "wins": 3262
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8222526578073089,
+              0.9287364464509414
+            ],
+            "distinct_seeds": 209,
+            "games": 1345,
+            "win_rate": 0.8788104089219331,
+            "wins": 1182
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15682915581597223,
+        "mean_sampled_market_inventory": 10020.03016696506,
+        "mean_shop_demand_units": 189.86572265625
+      }
+    },
+    "ppo-bf0aa03b41428d97": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80810546875,
+              0.8574249267578125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8333740234375,
+            "wins": 6827
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9893.731955295138,
+        "mean_shop_demand_units": 314.808837890625
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80810546875,
+              0.8574249267578125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8333740234375,
+            "wins": 6827
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9979.473427327473,
+        "mean_shop_demand_units": 201.236572265625
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7628023072163156,
+              0.8327264164927137
+            ],
+            "distinct_seeds": 254,
+            "games": 4894,
+            "win_rate": 0.7987331426236207,
+            "wins": 3909
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8573957230852495,
+              0.9095830508957589
+            ],
+            "distinct_seeds": 256,
+            "games": 3298,
+            "win_rate": 0.884778653729533,
+            "wins": 2918
+          }
+        },
+        "mean_sampled_floor_fraction": 0.058489990234375,
+        "mean_sampled_market_inventory": 10235.085803222657,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9071959622823985,
+              0.9531108111073477
+            ],
+            "distinct_seeds": 252,
+            "games": 1036,
+            "win_rate": 0.9314671814671814,
+            "wins": 965
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7898031012194211,
+              0.8471954261923005
+            ],
+            "distinct_seeds": 256,
+            "games": 7156,
+            "win_rate": 0.8191727221911682,
+            "wins": 5862
+          }
+        },
+        "mean_sampled_floor_fraction": 0.007829454210069444,
+        "mean_sampled_market_inventory": 10066.15463256836,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.980766129032258,
+              1.0
+            ],
+            "distinct_seeds": 91,
+            "games": 355,
+            "win_rate": 0.9943661971830986,
+            "wins": 353
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8438206213898491,
+              0.8994072071147575
+            ],
+            "distinct_seeds": 255,
+            "games": 4383,
+            "win_rate": 0.8726899383983573,
+            "wins": 3825
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7267269303806342,
+              0.8062767025806742
+            ],
+            "distinct_seeds": 256,
+            "games": 3454,
+            "win_rate": 0.7669368847712796,
+            "wins": 2649
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04641927083333333,
+        "mean_sampled_market_inventory": 10020.9011461046,
+        "mean_shop_demand_units": 285.50830078125
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 11,
+            "games": 52,
+            "win_rate": 1.0,
+            "wins": 52
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.832406492966024,
+              0.8873779527181244
+            ],
+            "distinct_seeds": 256,
+            "games": 5244,
+            "win_rate": 0.8609839816933639,
+            "wins": 4515
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7386665045406111,
+              0.8214763104035688
+            ],
+            "distinct_seeds": 246,
+            "games": 2896,
+            "win_rate": 0.7803867403314917,
+            "wins": 2260
+          }
+        },
+        "mean_sampled_floor_fraction": 0.02712131076388889,
+        "mean_sampled_market_inventory": 9973.157143147786,
+        "mean_shop_demand_units": 386.158447265625
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80810546875,
+              0.8574249267578125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8333740234375,
+            "wins": 6827
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9955.239657253689,
+        "mean_shop_demand_units": 196.65966796875
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80810546875,
+              0.8574249267578125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8333740234375,
+            "wins": 6827
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9717.588220214842,
+        "mean_shop_demand_units": 494.980224609375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.848760167840017,
+              0.9208726416705433
+            ],
+            "distinct_seeds": 215,
+            "games": 2583,
+            "win_rate": 0.8857917150600078,
+            "wins": 2288
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7521194245506687,
+              0.8219244823386115
+            ],
+            "distinct_seeds": 256,
+            "games": 4232,
+            "win_rate": 0.7866257088846881,
+            "wins": 3329
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8299783497798029,
+              0.9234554144691585
+            ],
+            "distinct_seeds": 220,
+            "games": 1377,
+            "win_rate": 0.878721859114016,
+            "wins": 1210
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15377875434027777,
+        "mean_sampled_market_inventory": 10019.843658447266,
+        "mean_shop_demand_units": 194.24267578125
+      }
+    },
+    "ppo-c90da6b7b3ea061d": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8019989013671875,
+              0.856689453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8302001953125,
+            "wins": 6801
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9893.358545600044,
+        "mean_shop_demand_units": 313.380615234375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8019989013671875,
+              0.856689453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8302001953125,
+            "wins": 6801
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9975.044299316407,
+        "mean_shop_demand_units": 204.589599609375
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7370335991296327,
+              0.8187733316301473
+            ],
+            "distinct_seeds": 250,
+            "games": 4782,
+            "win_rate": 0.7793810121288164,
+            "wins": 3727
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8742298658136652,
+              0.9264295456253
+            ],
+            "distinct_seeds": 254,
+            "games": 3410,
+            "win_rate": 0.9014662756598241,
+            "wins": 3074
+          }
+        },
+        "mean_sampled_floor_fraction": 0.056477186414930554,
+        "mean_sampled_market_inventory": 10234.841693115235,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8948728380137624,
+              0.9586620180399985
+            ],
+            "distinct_seeds": 252,
+            "games": 1094,
+            "win_rate": 0.9296160877513712,
+            "wins": 1017
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7823762576159202,
+              0.844695561194989
+            ],
+            "distinct_seeds": 256,
+            "games": 7098,
+            "win_rate": 0.8148774302620456,
+            "wins": 5784
+          }
+        },
+        "mean_sampled_floor_fraction": 0.008175320095486112,
+        "mean_sampled_market_inventory": 10067.056635199653,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9825543033485644,
+              1.0
+            ],
+            "distinct_seeds": 77,
+            "games": 411,
+            "win_rate": 0.9951338199513382,
+            "wins": 409
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8243954290349049,
+              0.8917180011837686
+            ],
+            "distinct_seeds": 255,
+            "games": 4504,
+            "win_rate": 0.8601243339253997,
+            "wins": 3874
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7219235037881947,
+              0.8139788704609889
+            ],
+            "distinct_seeds": 249,
+            "games": 3277,
+            "win_rate": 0.7683857186451022,
+            "wins": 2518
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04929741753472222,
+        "mean_sampled_market_inventory": 10021.916230604384,
+        "mean_shop_demand_units": 284.40966796875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 6,
+            "games": 38,
+            "win_rate": 1.0,
+            "wins": 38
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8037247153948192,
+              0.87146385137613
+            ],
+            "distinct_seeds": 256,
+            "games": 5212,
+            "win_rate": 0.8386415963161934,
+            "wins": 4371
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.769047296682292,
+              0.8558817544680892
+            ],
+            "distinct_seeds": 240,
+            "games": 2942,
+            "win_rate": 0.8130523453433038,
+            "wins": 2392
+          }
+        },
+        "mean_sampled_floor_fraction": 0.02623630099826389,
+        "mean_sampled_market_inventory": 9971.414223225911,
+        "mean_shop_demand_units": 393.246826171875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8019989013671875,
+              0.856689453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8302001953125,
+            "wins": 6801
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9955.468575710722,
+        "mean_shop_demand_units": 196.330078125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8019989013671875,
+              0.856689453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8302001953125,
+            "wins": 6801
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9716.740281846789,
+        "mean_shop_demand_units": 498.39697265625
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8587579510245842,
+              0.9314292595141057
+            ],
+            "distinct_seeds": 209,
+            "games": 2640,
+            "win_rate": 0.896969696969697,
+            "wins": 2368
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7348220461470352,
+              0.8144407975415753
+            ],
+            "distinct_seeds": 256,
+            "games": 4210,
+            "win_rate": 0.7752969121140143,
+            "wins": 3264
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8127167271924228,
+              0.9218291165417555
+            ],
+            "distinct_seeds": 204,
+            "games": 1342,
+            "win_rate": 0.8710879284649776,
+            "wins": 1169
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15691053602430555,
+        "mean_sampled_market_inventory": 10020.080668809678,
+        "mean_shop_demand_units": 189.47900390625
+      }
+    },
+    "team-terminal-suffix-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.73291015625,
+              0.7900390625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7623291015625,
+            "wins": 6245
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9893.235736083985,
+        "mean_shop_demand_units": 316.56005859375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.73291015625,
+              0.7900390625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7623291015625,
+            "wins": 6245
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.618739149306,
+        "mean_shop_demand_units": 203.63818359375
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "distinct_seeds": 1,
+            "games": 1,
+            "win_rate": 0.0,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7102384512545398,
+              0.7858514519089839
+            ],
+            "distinct_seeds": 254,
+            "games": 5316,
+            "win_rate": 0.7490594431903687,
+            "wins": 3982
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7520776146947168,
+              0.8199472384507034
+            ],
+            "distinct_seeds": 255,
+            "games": 2875,
+            "win_rate": 0.7871304347826087,
+            "wins": 2263
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06239963107638889,
+        "mean_sampled_market_inventory": 10238.600525580512,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.45462634053855405,
+              0.543423585928446
+            ],
+            "distinct_seeds": 254,
+            "games": 1144,
+            "win_rate": 0.4982517482517482,
+            "wins": 570
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7711814664878739,
+              0.8362717079421836
+            ],
+            "distinct_seeds": 256,
+            "games": 7048,
+            "win_rate": 0.8051929625425652,
+            "wins": 5675
+          }
+        },
+        "mean_sampled_floor_fraction": 0.009389241536458334,
+        "mean_sampled_market_inventory": 10066.969715033636,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9688249400479616,
+              1.0
+            ],
+            "distinct_seeds": 73,
+            "games": 391,
+            "win_rate": 0.9872122762148338,
+            "wins": 386
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7535978659296624,
+              0.8206200799700655
+            ],
+            "distinct_seeds": 256,
+            "games": 4820,
+            "win_rate": 0.7887966804979253,
+            "wins": 3802
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6375031350626489,
+              0.740419360396001
+            ],
+            "distinct_seeds": 240,
+            "games": 2981,
+            "win_rate": 0.6900369003690037,
+            "wins": 2057
+          }
+        },
+        "mean_sampled_floor_fraction": 0.050516764322916664,
+        "mean_sampled_market_inventory": 10022.539430067274,
+        "mean_shop_demand_units": 283.532958984375
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 6,
+            "games": 29,
+            "win_rate": 1.0,
+            "wins": 29
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7166822622912847,
+              0.78463529060859
+            ],
+            "distinct_seeds": 256,
+            "games": 5428,
+            "win_rate": 0.7512896094325718,
+            "wins": 4078
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7324121734016885,
+              0.8301939772398156
+            ],
+            "distinct_seeds": 231,
+            "games": 2735,
+            "win_rate": 0.7817184643510054,
+            "wins": 2138
+          }
+        },
+        "mean_sampled_floor_fraction": 0.028156873914930554,
+        "mean_sampled_market_inventory": 9971.953544108073,
+        "mean_shop_demand_units": 391.3154296875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.73291015625,
+              0.7900390625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7623291015625,
+            "wins": 6245
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9954.04940185547,
+        "mean_shop_demand_units": 195.13037109375
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.73291015625,
+              0.7900390625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7623291015625,
+            "wins": 6245
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9708.46950208876,
+        "mean_shop_demand_units": 495.709716796875
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8527574846297781,
+              0.9262144707047107
+            ],
+            "distinct_seeds": 207,
+            "games": 2658,
+            "win_rate": 0.890895410082769,
+            "wins": 2368
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6229931613812764,
+              0.7049532828265408
+            ],
+            "distinct_seeds": 254,
+            "games": 4320,
+            "win_rate": 0.6645833333333333,
+            "wins": 2871
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7613465562008732,
+              0.8880224058977456
+            ],
+            "distinct_seeds": 197,
+            "games": 1214,
+            "win_rate": 0.828665568369028,
+            "wins": 1006
+          }
+        },
+        "mean_sampled_floor_fraction": 0.1574374728732639,
+        "mean_sampled_market_inventory": 10020.237821451823,
+        "mean_shop_demand_units": 190.599609375
+      }
+    },
+    "team-v37-feed-reserve-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9056365966796875,
+              0.9189453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.9122314453125,
+            "wins": 7473
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9888.11653374566,
+        "mean_shop_demand_units": 312.695068359375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9056365966796875,
+              0.9189453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.9122314453125,
+            "wins": 7473
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9947.00068359375,
+        "mean_shop_demand_units": 194.40966796875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.18181818181818182
+            ],
+            "distinct_seeds": 16,
+            "games": 41,
+            "win_rate": 0.04878048780487805,
+            "wins": 2
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9338265607666565,
+              0.9549463356381628
+            ],
+            "distinct_seeds": 256,
+            "games": 4038,
+            "win_rate": 0.9445269935611689,
+            "wins": 3814
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8762035612689056,
+              0.902529186623777
+            ],
+            "distinct_seeds": 254,
+            "games": 4113,
+            "win_rate": 0.8891320204230488,
+            "wins": 3657
+          }
+        },
+        "mean_sampled_floor_fraction": 0.03738810221354167,
+        "mean_sampled_market_inventory": 10208.435378689235,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "distinct_seeds": 6,
+            "games": 14,
+            "win_rate": 0.07142857142857142,
+            "wins": 1
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9070442266711047,
+              0.9202600323533856
+            ],
+            "distinct_seeds": 256,
+            "games": 8178,
+            "win_rate": 0.9136708241623869,
+            "wins": 7472
+          }
+        },
+        "mean_sampled_floor_fraction": 6.103515625e-05,
+        "mean_sampled_market_inventory": 10074.239925808375,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7955086188495358,
+              0.906392694063927
+            ],
+            "distinct_seeds": 95,
+            "games": 434,
+            "win_rate": 0.8502304147465438,
+            "wins": 369
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8576694847009091,
+              0.8886995565492373
+            ],
+            "distinct_seeds": 252,
+            "games": 3437,
+            "win_rate": 0.873145184754146,
+            "wins": 3001
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9392435208222673,
+              0.959685126886978
+            ],
+            "distinct_seeds": 250,
+            "games": 4321,
+            "win_rate": 0.9495487155750983,
+            "wins": 4103
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05537245008680555,
+        "mean_sampled_market_inventory": 10000.60258585612,
+        "mean_shop_demand_units": 294.49951171875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.8888888888888888
+            ],
+            "distinct_seeds": 6,
+            "games": 15,
+            "win_rate": 0.5333333333333333,
+            "wins": 8
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8716214456644144,
+              0.9019758012376466
+            ],
+            "distinct_seeds": 253,
+            "games": 3929,
+            "win_rate": 0.8869941460931535,
+            "wins": 3485
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9260351932695173,
+              0.9476989797230013
+            ],
+            "distinct_seeds": 248,
+            "games": 4248,
+            "win_rate": 0.9369114877589454,
+            "wins": 3980
+          }
+        },
+        "mean_sampled_floor_fraction": 0.03338216145833333,
+        "mean_sampled_market_inventory": 9959.619384765625,
+        "mean_shop_demand_units": 384.2138671875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9056365966796875,
+              0.9189453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.9122314453125,
+            "wins": 7473
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9926.77669406467,
+        "mean_shop_demand_units": 194.712890625
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9056365966796875,
+              0.9189453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.9122314453125,
+            "wins": 7473
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9805.860921223959,
+        "mean_shop_demand_units": 484.6376953125
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.871582370874718,
+              0.9044456461453134
+            ],
+            "distinct_seeds": 234,
+            "games": 2964,
+            "win_rate": 0.888663967611336,
+            "wins": 2634
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.867212176262252,
+              0.9049648208325368
+            ],
+            "distinct_seeds": 246,
+            "games": 2762,
+            "win_rate": 0.8863142650253439,
+            "wins": 2448
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9576475952212324,
+              0.9805617536961924
+            ],
+            "distinct_seeds": 215,
+            "games": 2466,
+            "win_rate": 0.9695863746958637,
+            "wins": 2391
+          }
+        },
+        "mean_sampled_floor_fraction": 0.158050537109375,
+        "mean_sampled_market_inventory": 10010.09225938585,
+        "mean_shop_demand_units": 198.3779296875
+      }
+    }
+  },
+  "representative": {
+    "ppo-495ebc48210f14ae": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.733642578125,
+              0.7863800048828125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.761474609375,
+            "wins": 6238
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9897.127978515626,
+        "mean_shop_demand_units": 299.42138671875
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.733642578125,
+              0.7863800048828125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.761474609375,
+            "wins": 6238
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9977.736718749999,
+        "mean_shop_demand_units": 194.923828125
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "distinct_seeds": 5,
+            "games": 8,
+            "win_rate": 0.0,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7278732494508703,
+              0.8001159520902866
+            ],
+            "distinct_seeds": 254,
+            "games": 5461,
+            "win_rate": 0.7657938106573887,
+            "wins": 4182
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7176090423216979,
+              0.7872695971418822
+            ],
+            "distinct_seeds": 249,
+            "games": 2723,
+            "win_rate": 0.7550495776716857,
+            "wins": 2056
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06464708116319444,
+        "mean_sampled_market_inventory": 10238.988022867838,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.34458014415155186,
+              0.42054845258999124
+            ],
+            "distinct_seeds": 253,
+            "games": 1081,
+            "win_rate": 0.3829787234042553,
+            "wins": 414
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.787849356142007,
+              0.8483179207883911
+            ],
+            "distinct_seeds": 256,
+            "games": 7111,
+            "win_rate": 0.8190127970749543,
+            "wins": 5824
+          }
+        },
+        "mean_sampled_floor_fraction": 0.009455023871527777,
+        "mean_sampled_market_inventory": 10066.862582058377,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9444396051103368,
+              1.0
+            ],
+            "distinct_seeds": 67,
+            "games": 279,
+            "win_rate": 0.978494623655914,
+            "wins": 273
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7779910632921242,
+              0.8358001626692
+            ],
+            "distinct_seeds": 256,
+            "games": 4750,
+            "win_rate": 0.8073684210526316,
+            "wins": 3835
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6208718549757785,
+              0.723230963830905
+            ],
+            "distinct_seeds": 241,
+            "games": 3163,
+            "win_rate": 0.6734113183686373,
+            "wins": 2130
+          }
+        },
+        "mean_sampled_floor_fraction": 0.044499376085069445,
+        "mean_sampled_market_inventory": 10020.837742784288,
+        "mean_shop_demand_units": 296.50341796875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7777777777777778,
+              1.0
+            ],
+            "distinct_seeds": 9,
+            "games": 14,
+            "win_rate": 0.9285714285714286,
+            "wins": 13
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7216613569252686,
+              0.7836398704208904
+            ],
+            "distinct_seeds": 256,
+            "games": 5230,
+            "win_rate": 0.7544933078393882,
+            "wins": 3946
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7246837312415475,
+              0.8184505413574671
+            ],
+            "distinct_seeds": 230,
+            "games": 2948,
+            "win_rate": 0.7730664857530529,
+            "wins": 2279
+          }
+        },
+        "mean_sampled_floor_fraction": 0.028668891059027778,
+        "mean_sampled_market_inventory": 9971.785416666668,
+        "mean_shop_demand_units": 389.8212890625
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.733642578125,
+              0.7863800048828125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.761474609375,
+            "wins": 6238
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9951.666078016493,
+        "mean_shop_demand_units": 202.6142578125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.733642578125,
+              0.7863800048828125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.761474609375,
+            "wins": 6238
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9705.665257432725,
+        "mean_shop_demand_units": 500.11083984375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8436451872327311,
+              0.9229560354100648
+            ],
+            "distinct_seeds": 211,
+            "games": 2492,
+            "win_rate": 0.8856340288924559,
+            "wins": 2207
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6216788304360228,
+              0.7013361548593654
+            ],
+            "distinct_seeds": 256,
+            "games": 4278,
+            "win_rate": 0.6626928471248247,
+            "wins": 2835
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7868210116371575,
+              0.8891734582755169
+            ],
+            "distinct_seeds": 189,
+            "games": 1422,
+            "win_rate": 0.8410689170182841,
+            "wins": 1196
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15276082356770834,
+        "mean_sampled_market_inventory": 10018.930326334636,
+        "mean_shop_demand_units": 201.69580078125
+      }
+    },
+    "ppo-9980111aa0f1e7f6": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.81103515625,
+              0.8638916015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8385009765625,
+            "wins": 6869
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9896.192508951823,
+        "mean_shop_demand_units": 300.750732421875
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.81103515625,
+              0.8638916015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8385009765625,
+            "wins": 6869
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.435444471572,
+        "mean_shop_demand_units": 195.46435546875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7549521608265326,
+              0.8326257695215465
+            ],
+            "distinct_seeds": 251,
+            "games": 4919,
+            "win_rate": 0.7954868875787762,
+            "wins": 3913
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.875964081385714,
+              0.9280155765383803
+            ],
+            "distinct_seeds": 255,
+            "games": 3273,
+            "win_rate": 0.9031469599755576,
+            "wins": 2956
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05820041232638889,
+        "mean_sampled_market_inventory": 10235.162430148655,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8911625283828191,
+              0.9594212690951821
+            ],
+            "distinct_seeds": 250,
+            "games": 1052,
+            "win_rate": 0.9306083650190115,
+            "wins": 979
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.793859279311263,
+              0.853792163283324
+            ],
+            "distinct_seeds": 256,
+            "games": 7140,
+            "win_rate": 0.8249299719887955,
+            "wins": 5890
+          }
+        },
+        "mean_sampled_floor_fraction": 0.007840304904513888,
+        "mean_sampled_market_inventory": 10066.920004611544,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.971830985915493,
+              1.0
+            ],
+            "distinct_seeds": 69,
+            "games": 257,
+            "win_rate": 0.9922178988326849,
+            "wins": 255
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.852010004026764,
+              0.9123506190047587
+            ],
+            "distinct_seeds": 255,
+            "games": 4462,
+            "win_rate": 0.8832362169430749,
+            "wins": 3941
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7216338453120512,
+              0.815224142355113
+            ],
+            "distinct_seeds": 254,
+            "games": 3473,
+            "win_rate": 0.7696515980420385,
+            "wins": 2673
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04211764865451389,
+        "mean_sampled_market_inventory": 10020.265256076389,
+        "mean_shop_demand_units": 297.03515625
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 8,
+            "games": 13,
+            "win_rate": 1.0,
+            "wins": 13
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8212519873052234,
+              0.8858523980087399
+            ],
+            "distinct_seeds": 256,
+            "games": 4987,
+            "win_rate": 0.855424102666934,
+            "wins": 4266
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7673631448962333,
+              0.8525469168900804
+            ],
+            "distinct_seeds": 243,
+            "games": 3192,
+            "win_rate": 0.8114035087719298,
+            "wins": 2590
+          }
+        },
+        "mean_sampled_floor_fraction": 0.027054850260416666,
+        "mean_sampled_market_inventory": 9971.45174018012,
+        "mean_shop_demand_units": 391.2099609375
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.81103515625,
+              0.8638916015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8385009765625,
+            "wins": 6869
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9953.199327256945,
+        "mean_shop_demand_units": 203.0712890625
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.81103515625,
+              0.8638916015625
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8385009765625,
+            "wins": 6869
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9714.535173882377,
+        "mean_shop_demand_units": 501.099609375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8767101049635295,
+              0.9516078182600828
+            ],
+            "distinct_seeds": 213,
+            "games": 2468,
+            "win_rate": 0.9161264181523501,
+            "wins": 2261
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7368014962252265,
+              0.8164061565519412
+            ],
+            "distinct_seeds": 256,
+            "games": 4331,
+            "win_rate": 0.778573077811129,
+            "wins": 3372
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8327405415150501,
+              0.9356550174098497
+            ],
+            "distinct_seeds": 203,
+            "games": 1393,
+            "win_rate": 0.8872936109117013,
+            "wins": 1236
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15117933485243057,
+        "mean_sampled_market_inventory": 10019.453767225477,
+        "mean_shop_demand_units": 197.4287109375
+      }
+    },
+    "ppo-bf0aa03b41428d97": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80859375,
+              0.8553497314453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8326416015625,
+            "wins": 6821
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9896.578295220268,
+        "mean_shop_demand_units": 302.6162109375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80859375,
+              0.8553497314453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8326416015625,
+            "wins": 6821
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9979.208552381726,
+        "mean_shop_demand_units": 196.319091796875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7587395041024634,
+              0.826174622371271
+            ],
+            "distinct_seeds": 252,
+            "games": 4990,
+            "win_rate": 0.7933867735470942,
+            "wins": 3959
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8680073384766644,
+              0.9168344276594265
+            ],
+            "distinct_seeds": 256,
+            "games": 3202,
+            "win_rate": 0.8938163647720175,
+            "wins": 2862
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06011420355902778,
+        "mean_sampled_market_inventory": 10235.382088216145,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9089989690865271,
+              0.9537856440511308
+            ],
+            "distinct_seeds": 252,
+            "games": 1014,
+            "win_rate": 0.9339250493096647,
+            "wins": 947
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7918802479129973,
+              0.8435003549409678
+            ],
+            "distinct_seeds": 256,
+            "games": 7178,
+            "win_rate": 0.8183337977152411,
+            "wins": 5874
+          }
+        },
+        "mean_sampled_floor_fraction": 0.007588704427083333,
+        "mean_sampled_market_inventory": 10065.986796061195,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9170972517370646,
+              1.0
+            ],
+            "distinct_seeds": 87,
+            "games": 316,
+            "win_rate": 0.9715189873417721,
+            "wins": 307
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.854072752295768,
+              0.9061076484197153
+            ],
+            "distinct_seeds": 256,
+            "games": 4314,
+            "win_rate": 0.8808530366249421,
+            "wins": 3800
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7236474268680871,
+              0.7983615031724312
+            ],
+            "distinct_seeds": 254,
+            "games": 3562,
+            "win_rate": 0.7619314991577766,
+            "wins": 2714
+          }
+        },
+        "mean_sampled_floor_fraction": 0.041585286458333336,
+        "mean_sampled_market_inventory": 10019.943916829427,
+        "mean_shop_demand_units": 295.059814453125
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 10,
+            "games": 25,
+            "win_rate": 1.0,
+            "wins": 25
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8190445459212264,
+              0.8733446545410132
+            ],
+            "distinct_seeds": 256,
+            "games": 5034,
+            "win_rate": 0.8470401271354787,
+            "wins": 4264
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.769909612846991,
+              0.8441043224078636
+            ],
+            "distinct_seeds": 246,
+            "games": 3133,
+            "win_rate": 0.8081710820300032,
+            "wins": 2532
+          }
+        },
+        "mean_sampled_floor_fraction": 0.026690673828125,
+        "mean_sampled_market_inventory": 9972.023131646052,
+        "mean_shop_demand_units": 390.429931640625
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80859375,
+              0.8553497314453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8326416015625,
+            "wins": 6821
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9953.807712131078,
+        "mean_shop_demand_units": 198.134033203125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.80859375,
+              0.8553497314453125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.8326416015625,
+            "wins": 6821
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9716.346159532335,
+        "mean_shop_demand_units": 497.682861328125
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8937323531168908,
+              0.9494506691565515
+            ],
+            "distinct_seeds": 220,
+            "games": 2364,
+            "win_rate": 0.9230118443316413,
+            "wins": 2182
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.733507121728262,
+              0.8015669487966732
+            ],
+            "distinct_seeds": 256,
+            "games": 4431,
+            "win_rate": 0.7691266079891672,
+            "wins": 3408
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8333217753120666,
+              0.9258265259210822
+            ],
+            "distinct_seeds": 214,
+            "games": 1397,
+            "win_rate": 0.8811739441660702,
+            "wins": 1231
+          }
+        },
+        "mean_sampled_floor_fraction": 0.14873792860243057,
+        "mean_sampled_market_inventory": 10019.189084201389,
+        "mean_shop_demand_units": 200.091796875
+      }
+    },
+    "ppo-c90da6b7b3ea061d": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8106658935546875,
+              0.8627960205078125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.83740234375,
+            "wins": 6860
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.976528591578,
+        "mean_shop_demand_units": 301.638427734375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8106658935546875,
+              0.8627960205078125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.83740234375,
+            "wins": 6860
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.613385009765,
+        "mean_shop_demand_units": 194.58544921875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7547310520397956,
+              0.831716132462624
+            ],
+            "distinct_seeds": 251,
+            "games": 4944,
+            "win_rate": 0.7949029126213593,
+            "wins": 3930
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8734655160276716,
+              0.927801513779066
+            ],
+            "distinct_seeds": 255,
+            "games": 3248,
+            "win_rate": 0.9020935960591133,
+            "wins": 2930
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05855441623263889,
+        "mean_sampled_market_inventory": 10235.231502278646,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.890395011912273,
+              0.9587026183400023
+            ],
+            "distinct_seeds": 251,
+            "games": 1056,
+            "win_rate": 0.9299242424242424,
+            "wins": 982
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7927347106860086,
+              0.8525659001682557
+            ],
+            "distinct_seeds": 256,
+            "games": 7136,
+            "win_rate": 0.8237107623318386,
+            "wins": 5878
+          }
+        },
+        "mean_sampled_floor_fraction": 0.007911512586805556,
+        "mean_sampled_market_inventory": 10066.961244032118,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9723502304147466,
+              1.0
+            ],
+            "distinct_seeds": 70,
+            "games": 264,
+            "win_rate": 0.9924242424242424,
+            "wins": 262
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8505504421189446,
+              0.9117515936415719
+            ],
+            "distinct_seeds": 255,
+            "games": 4444,
+            "win_rate": 0.8820882088208821,
+            "wins": 3920
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7200185110662836,
+              0.8148263928068867
+            ],
+            "distinct_seeds": 251,
+            "games": 3484,
+            "win_rate": 0.7686567164179104,
+            "wins": 2678
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04224175347222222,
+        "mean_sampled_market_inventory": 10020.1998304579,
+        "mean_shop_demand_units": 297.511962890625
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 9,
+            "games": 15,
+            "win_rate": 1.0,
+            "wins": 15
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8210332086472081,
+              0.8847160478577155
+            ],
+            "distinct_seeds": 256,
+            "games": 4983,
+            "win_rate": 0.854505318081477,
+            "wins": 4258
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7657398923792903,
+              0.8521153937383219
+            ],
+            "distinct_seeds": 242,
+            "games": 3194,
+            "win_rate": 0.8099561678146525,
+            "wins": 2587
+          }
+        },
+        "mean_sampled_floor_fraction": 0.02710028754340278,
+        "mean_sampled_market_inventory": 9971.397186957463,
+        "mean_shop_demand_units": 390.94189453125
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8106658935546875,
+              0.8627960205078125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.83740234375,
+            "wins": 6860
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9953.292505560981,
+        "mean_shop_demand_units": 202.9130859375
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8106658935546875,
+              0.8627960205078125
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.83740234375,
+            "wins": 6860
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9714.78425225152,
+        "mean_shop_demand_units": 500.596435546875
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8743614454585767,
+              0.9498516649272619
+            ],
+            "distinct_seeds": 211,
+            "games": 2463,
+            "win_rate": 0.9139261063743402,
+            "wins": 2251
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7365592061743453,
+              0.8157105512971281
+            ],
+            "distinct_seeds": 256,
+            "games": 4331,
+            "win_rate": 0.7783421842530593,
+            "wins": 3371
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8309498268578327,
+              0.9340082883598698
+            ],
+            "distinct_seeds": 189,
+            "games": 1398,
+            "win_rate": 0.8855507868383404,
+            "wins": 1238
+          }
+        },
+        "mean_sampled_floor_fraction": 0.1511474609375,
+        "mean_sampled_market_inventory": 10019.4325656467,
+        "mean_shop_demand_units": 197.63525390625
+      }
+    },
+    "team-terminal-suffix-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7463348388671875,
+              0.798583984375
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7730712890625,
+            "wins": 6333
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9897.128954399956,
+        "mean_shop_demand_units": 299.42138671875
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7463348388671875,
+              0.798583984375
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7730712890625,
+            "wins": 6333
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9977.741653781468,
+        "mean_shop_demand_units": 194.923828125
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "distinct_seeds": 5,
+            "games": 8,
+            "win_rate": 0.25,
+            "wins": 2
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7350807934109334,
+              0.8058401529721049
+            ],
+            "distinct_seeds": 254,
+            "games": 5462,
+            "win_rate": 0.7716953496887587,
+            "wins": 4215
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7398101295422619,
+              0.8095766348617098
+            ],
+            "distinct_seeds": 249,
+            "games": 2722,
+            "win_rate": 0.7773695811903012,
+            "wins": 2116
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06475694444444445,
+        "mean_sampled_market_inventory": 10238.987540011936,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.419659313394545,
+              0.5035090808005931
+            ],
+            "distinct_seeds": 253,
+            "games": 1081,
+            "win_rate": 0.46253469010175763,
+            "wins": 500
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7893101918785048,
+              0.8498957591078097
+            ],
+            "distinct_seeds": 256,
+            "games": 7111,
+            "win_rate": 0.8202784418506539,
+            "wins": 5833
+          }
+        },
+        "mean_sampled_floor_fraction": 0.009428575303819445,
+        "mean_sampled_market_inventory": 10066.854744466145,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9340633423180593,
+              1.0
+            ],
+            "distinct_seeds": 67,
+            "games": 279,
+            "win_rate": 0.9713261648745519,
+            "wins": 271
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7922416869012289,
+              0.8499693512802337
+            ],
+            "distinct_seeds": 256,
+            "games": 4761,
+            "win_rate": 0.8220961982776728,
+            "wins": 3914
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6307241037019794,
+              0.7289825172899792
+            ],
+            "distinct_seeds": 242,
+            "games": 3152,
+            "win_rate": 0.6814720812182741,
+            "wins": 2148
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04460923936631944,
+        "mean_sampled_market_inventory": 10020.82911376953,
+        "mean_shop_demand_units": 296.50341796875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7777777777777778,
+              1.0
+            ],
+            "distinct_seeds": 9,
+            "games": 14,
+            "win_rate": 0.9285714285714286,
+            "wins": 13
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7422756302203715,
+              0.8020408194144144
+            ],
+            "distinct_seeds": 256,
+            "games": 5218,
+            "win_rate": 0.7738597163664239,
+            "wins": 4038
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7220693647973198,
+              0.8167396266108713
+            ],
+            "distinct_seeds": 230,
+            "games": 2960,
+            "win_rate": 0.7709459459459459,
+            "wins": 2282
+          }
+        },
+        "mean_sampled_floor_fraction": 0.028701443142361113,
+        "mean_sampled_market_inventory": 9971.785850016277,
+        "mean_shop_demand_units": 389.8212890625
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7463348388671875,
+              0.798583984375
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7730712890625,
+            "wins": 6333
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9951.665920003255,
+        "mean_shop_demand_units": 202.6142578125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7463348388671875,
+              0.798583984375
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.7730712890625,
+            "wins": 6333
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9705.682231309678,
+        "mean_shop_demand_units": 500.11083984375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8414634146341463,
+              0.9209280459906126
+            ],
+            "distinct_seeds": 211,
+            "games": 2492,
+            "win_rate": 0.8832263242375602,
+            "wins": 2201
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6425156631890663,
+              0.7201735732606204
+            ],
+            "distinct_seeds": 256,
+            "games": 4273,
+            "win_rate": 0.6833606365551135,
+            "wins": 2920
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7940794906704758,
+              0.8979781188473241
+            ],
+            "distinct_seeds": 189,
+            "games": 1427,
+            "win_rate": 0.849334267694464,
+            "wins": 1212
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15278659396701388,
+        "mean_sampled_market_inventory": 10018.9351304796,
+        "mean_shop_demand_units": 201.69580078125
+      }
+    },
+    "team-v37-feed-reserve-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9019775390625,
+              0.9149169921875
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.908447265625,
+            "wins": 7442
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9891.017051188152,
+        "mean_shop_demand_units": 304.881591796875
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9019775390625,
+              0.9149169921875
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.908447265625,
+            "wins": 7442
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9946.220083957249,
+        "mean_shop_demand_units": 193.36376953125
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.030303030303030304,
+              0.4193972835314093
+            ],
+            "distinct_seeds": 15,
+            "games": 44,
+            "win_rate": 0.20454545454545456,
+            "wins": 9
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.921686353770172,
+              0.9452023675767395
+            ],
+            "distinct_seeds": 256,
+            "games": 4096,
+            "win_rate": 0.93359375,
+            "wins": 3824
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8774176370319987,
+              0.9042501859133054
+            ],
+            "distinct_seeds": 253,
+            "games": 4052,
+            "win_rate": 0.8906712734452122,
+            "wins": 3609
+          }
+        },
+        "mean_sampled_floor_fraction": 0.03623250325520833,
+        "mean_sampled_market_inventory": 10208.09994506836,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "distinct_seeds": 7,
+            "games": 12,
+            "win_rate": 0.0,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.903540825070388,
+              0.9161371755893329
+            ],
+            "distinct_seeds": 256,
+            "games": 8180,
+            "win_rate": 0.9097799511002445,
+            "wins": 7442
+          }
+        },
+        "mean_sampled_floor_fraction": 4.8828125e-05,
+        "mean_sampled_market_inventory": 10073.9536078559,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7928332437223902,
+              0.9130502086418091
+            ],
+            "distinct_seeds": 92,
+            "games": 367,
+            "win_rate": 0.8583106267029973,
+            "wins": 315
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8568852336820135,
+              0.8890882041898879
+            ],
+            "distinct_seeds": 250,
+            "games": 3370,
+            "win_rate": 0.8729970326409495,
+            "wins": 2942
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9290902370299483,
+              0.9498432398684107
+            ],
+            "distinct_seeds": 252,
+            "games": 4455,
+            "win_rate": 0.9393939393939394,
+            "wins": 4185
+          }
+        },
+        "mean_sampled_floor_fraction": 0.052393934461805555,
+        "mean_sampled_market_inventory": 9999.923226589628,
+        "mean_shop_demand_units": 302.798583984375
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.2,
+              0.8888888888888888
+            ],
+            "distinct_seeds": 10,
+            "games": 21,
+            "win_rate": 0.5238095238095238,
+            "wins": 11
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8598069092348555,
+              0.8913661126372682
+            ],
+            "distinct_seeds": 250,
+            "games": 3570,
+            "win_rate": 0.8759103641456583,
+            "wins": 3127
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9243657681989512,
+              0.946251041873877
+            ],
+            "distinct_seeds": 253,
+            "games": 4601,
+            "win_rate": 0.9354488154748968,
+            "wins": 4304
+          }
+        },
+        "mean_sampled_floor_fraction": 0.030814615885416667,
+        "mean_sampled_market_inventory": 9956.620963541667,
+        "mean_shop_demand_units": 393.554443359375
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9019775390625,
+              0.9149169921875
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.908447265625,
+            "wins": 7442
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9925.435030110677,
+        "mean_shop_demand_units": 198.9052734375
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9019775390625,
+              0.9149169921875
+            ],
+            "distinct_seeds": 256,
+            "games": 8192,
+            "win_rate": 0.908447265625,
+            "wins": 7442
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9799.875707329644,
+        "mean_shop_demand_units": 497.739990234375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8780385388555905,
+              0.9145069000336588
+            ],
+            "distinct_seeds": 239,
+            "games": 2918,
+            "win_rate": 0.8968471555860178,
+            "wins": 2617
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8574519742497536,
+              0.8943391982765443
+            ],
+            "distinct_seeds": 251,
+            "games": 2934,
+            "win_rate": 0.876278118609407,
+            "wins": 2571
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9497673022755992,
+              0.9760532908872697
+            ],
+            "distinct_seeds": 226,
+            "games": 2340,
+            "win_rate": 0.9632478632478633,
+            "wins": 2254
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15843166775173612,
+        "mean_sampled_market_inventory": 10011.982231987848,
+        "mean_shop_demand_units": 189.4658203125
+      }
+    }
+  },
+  "stress": {
+    "ppo-495ebc48210f14ae": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.759033203125,
+              0.824462890625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.79345703125,
+            "wins": 3250
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.263543023004,
+        "mean_shop_demand_units": 304.9892578125
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.759033203125,
+              0.824462890625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.79345703125,
+            "wins": 3250
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.49648030599,
+        "mean_shop_demand_units": 203.47998046875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7608239229266617,
+              0.8529371031269334
+            ],
+            "distinct_seeds": 127,
+            "games": 2710,
+            "win_rate": 0.8084870848708487,
+            "wins": 2191
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7235867486126294,
+              0.7987064254820271
+            ],
+            "distinct_seeds": 125,
+            "games": 1386,
+            "win_rate": 0.7640692640692641,
+            "wins": 1059
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06136338975694444,
+        "mean_sampled_market_inventory": 10238.593565538195,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.3,
+              0.4111716886756559
+            ],
+            "distinct_seeds": 128,
+            "games": 543,
+            "win_rate": 0.35359116022099446,
+            "wins": 192
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8223700873848275,
+              0.8952718232730609
+            ],
+            "distinct_seeds": 128,
+            "games": 3553,
+            "win_rate": 0.8606811145510835,
+            "wins": 3058
+          }
+        },
+        "mean_sampled_floor_fraction": 0.00938720703125,
+        "mean_sampled_market_inventory": 10066.899060058593,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9620223025919229,
+              1.0
+            ],
+            "distinct_seeds": 29,
+            "games": 199,
+            "win_rate": 0.9899497487437185,
+            "wins": 197
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7447336960073556,
+              0.8346972138238721
+            ],
+            "distinct_seeds": 128,
+            "games": 2365,
+            "win_rate": 0.7919661733615222,
+            "wins": 1873
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7078415555125609,
+              0.8249870517561502
+            ],
+            "distinct_seeds": 120,
+            "games": 1532,
+            "win_rate": 0.7702349869451697,
+            "wins": 1180
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05030517578125,
+        "mean_sampled_market_inventory": 10021.726535373264,
+        "mean_shop_demand_units": 286.8837890625
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "distinct_seeds": 3,
+            "games": 5,
+            "win_rate": 0.6,
+            "wins": 3
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7454814265128283,
+              0.8259418337939437
+            ],
+            "distinct_seeds": 127,
+            "games": 2694,
+            "win_rate": 0.7873051224944321,
+            "wins": 2121
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7412265542889481,
+              0.8664119728549259
+            ],
+            "distinct_seeds": 120,
+            "games": 1397,
+            "win_rate": 0.8060128847530422,
+            "wins": 1126
+          }
+        },
+        "mean_sampled_floor_fraction": 0.02611083984375,
+        "mean_sampled_market_inventory": 9969.509006076389,
+        "mean_shop_demand_units": 404.64404296875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.759033203125,
+              0.824462890625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.79345703125,
+            "wins": 3250
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9952.486638726128,
+        "mean_shop_demand_units": 194.765625
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.759033203125,
+              0.824462890625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.79345703125,
+            "wins": 3250
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9706.830811903212,
+        "mean_shop_demand_units": 499.5966796875
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.875319280918556,
+              0.9500987788610828
+            ],
+            "distinct_seeds": 109,
+            "games": 1340,
+            "win_rate": 0.9171641791044776,
+            "wins": 1229
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6400904179317736,
+              0.7463271909052864
+            ],
+            "distinct_seeds": 128,
+            "games": 2133,
+            "win_rate": 0.6947960618846695,
+            "wins": 1482
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.784278470684229,
+              0.9281055900621119
+            ],
+            "distinct_seeds": 88,
+            "games": 623,
+            "win_rate": 0.8651685393258427,
+            "wins": 539
+          }
+        },
+        "mean_sampled_floor_fraction": 0.16023220486111112,
+        "mean_sampled_market_inventory": 10019.462124294707,
+        "mean_shop_demand_units": 193.7021484375
+      }
+    },
+    "ppo-9980111aa0f1e7f6": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8349609375,
+              0.899169921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.868408203125,
+            "wins": 3557
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.392945692274,
+        "mean_shop_demand_units": 302.46240234375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8349609375,
+              0.899169921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.868408203125,
+            "wins": 3557
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9975.33950737847,
+        "mean_shop_demand_units": 202.54833984375
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7822999288977713,
+              0.8819364505444051
+            ],
+            "distinct_seeds": 126,
+            "games": 2435,
+            "win_rate": 0.8336755646817249,
+            "wins": 2030
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8894195899940793,
+              0.9436304211990002
+            ],
+            "distinct_seeds": 128,
+            "games": 1661,
+            "win_rate": 0.9193257074051776,
+            "wins": 1527
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05533989800347222,
+        "mean_sampled_market_inventory": 10234.740733506944,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8985500561527354,
+              0.9690388156331671
+            ],
+            "distinct_seeds": 125,
+            "games": 540,
+            "win_rate": 0.937037037037037,
+            "wins": 506
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.819283140294546,
+              0.8923387794564662
+            ],
+            "distinct_seeds": 128,
+            "games": 3556,
+            "win_rate": 0.8579865016872891,
+            "wins": 3051
+          }
+        },
+        "mean_sampled_floor_fraction": 0.00798611111111111,
+        "mean_sampled_market_inventory": 10066.884231228298,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 33,
+            "games": 159,
+            "win_rate": 1.0,
+            "wins": 159
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8213363368261715,
+              0.9119980710329549
+            ],
+            "distinct_seeds": 128,
+            "games": 2180,
+            "win_rate": 0.8692660550458715,
+            "wins": 1895
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8007466912141316,
+              0.9036326241639823
+            ],
+            "distinct_seeds": 124,
+            "games": 1757,
+            "win_rate": 0.8554354012521344,
+            "wins": 1503
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04613308376736111,
+        "mean_sampled_market_inventory": 10020.99073486328,
+        "mean_shop_demand_units": 289.19091796875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 4,
+            "games": 5,
+            "win_rate": 1.0,
+            "wins": 5
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8392019314530679,
+              0.9193909519172382
+            ],
+            "distinct_seeds": 127,
+            "games": 2589,
+            "win_rate": 0.880648899188876,
+            "wins": 2280
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7879165021868881,
+              0.9006591778648749
+            ],
+            "distinct_seeds": 121,
+            "games": 1502,
+            "win_rate": 0.8468708388814914,
+            "wins": 1272
+          }
+        },
+        "mean_sampled_floor_fraction": 0.023748101128472223,
+        "mean_sampled_market_inventory": 9969.024070909289,
+        "mean_shop_demand_units": 406.951171875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8349609375,
+              0.899169921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.868408203125,
+            "wins": 3557
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9953.902244737414,
+        "mean_shop_demand_units": 196.7958984375
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8349609375,
+              0.899169921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.868408203125,
+            "wins": 3557
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9715.296249728734,
+        "mean_shop_demand_units": 500.9677734375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8755046826342612,
+              0.9611735928381182
+            ],
+            "distinct_seeds": 110,
+            "games": 1329,
+            "win_rate": 0.9217456734386757,
+            "wins": 1225
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7700337369419925,
+              0.871784420559173
+            ],
+            "distinct_seeds": 128,
+            "games": 2100,
+            "win_rate": 0.8219047619047619,
+            "wins": 1726
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8373008866682762,
+              0.9638785756632577
+            ],
+            "distinct_seeds": 97,
+            "games": 667,
+            "win_rate": 0.9085457271364318,
+            "wins": 606
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15875786675347223,
+        "mean_sampled_market_inventory": 10019.250198025175,
+        "mean_shop_demand_units": 192.814453125
+      }
+    },
+    "ppo-bf0aa03b41428d97": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.838623046875,
+              0.89794921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.178823513455,
+        "mean_shop_demand_units": 303.28857421875
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.838623046875,
+              0.89794921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9980.249853515626,
+        "mean_shop_demand_units": 195.7763671875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7921431106417604,
+              0.8802223495382063
+            ],
+            "distinct_seeds": 127,
+            "games": 2506,
+            "win_rate": 0.8387869114126097,
+            "wins": 2102
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8903055226792911,
+              0.9416768354336302
+            ],
+            "distinct_seeds": 128,
+            "games": 1590,
+            "win_rate": 0.9176100628930818,
+            "wins": 1459
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05952826605902778,
+        "mean_sampled_market_inventory": 10235.245043945311,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8920976878612717,
+              0.9464285714285714
+            ],
+            "distinct_seeds": 125,
+            "games": 518,
+            "win_rate": 0.9208494208494209,
+            "wins": 477
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8268331477357089,
+              0.8942135319843667
+            ],
+            "distinct_seeds": 128,
+            "games": 3578,
+            "win_rate": 0.8619340413638904,
+            "wins": 3084
+          }
+        },
+        "mean_sampled_floor_fraction": 0.007945421006944444,
+        "mean_sampled_market_inventory": 10065.68807779948,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 43,
+            "games": 145,
+            "win_rate": 1.0,
+            "wins": 145
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8496353902328991,
+              0.9225654987373738
+            ],
+            "distinct_seeds": 128,
+            "games": 2159,
+            "win_rate": 0.887911069939787,
+            "wins": 1917
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.787314929144301,
+              0.8824580973142336
+            ],
+            "distinct_seeds": 125,
+            "games": 1792,
+            "win_rate": 0.8364955357142857,
+            "wins": 1499
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04137641059027778,
+        "mean_sampled_market_inventory": 10020.398676215278,
+        "mean_shop_demand_units": 289.25244140625
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "distinct_seeds": 4,
+            "games": 10,
+            "win_rate": 0.9,
+            "wins": 9
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8523691998106061,
+              0.9231963220158086
+            ],
+            "distinct_seeds": 127,
+            "games": 2570,
+            "win_rate": 0.8891050583657587,
+            "wins": 2285
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7843137254901961,
+              0.8850877020331143
+            ],
+            "distinct_seeds": 126,
+            "games": 1516,
+            "win_rate": 0.8357519788918206,
+            "wins": 1267
+          }
+        },
+        "mean_sampled_floor_fraction": 0.024152289496527778,
+        "mean_sampled_market_inventory": 9970.095662434896,
+        "mean_shop_demand_units": 402.767578125
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.838623046875,
+              0.89794921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9953.608437771269,
+        "mean_shop_demand_units": 195.17431640625
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.838623046875,
+              0.89794921875
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9716.795632595487,
+        "mean_shop_demand_units": 494.27490234375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9048867935932305,
+              0.9662929573757547
+            ],
+            "distinct_seeds": 113,
+            "games": 1273,
+            "win_rate": 0.9387274155538099,
+            "wins": 1195
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7657730211488565,
+              0.8573487247648195
+            ],
+            "distinct_seeds": 128,
+            "games": 2132,
+            "win_rate": 0.8123827392120075,
+            "wins": 1732
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8730962526583771,
+              0.9518080821871053
+            ],
+            "distinct_seeds": 104,
+            "games": 691,
+            "win_rate": 0.9175108538350217,
+            "wins": 634
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15213216145833333,
+        "mean_sampled_market_inventory": 10018.074810112848,
+        "mean_shop_demand_units": 205.734375
+      }
+    },
+    "ppo-c90da6b7b3ea061d": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.836669921875,
+              0.899420166015625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.046218532985,
+        "mean_shop_demand_units": 303.58740234375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.836669921875,
+              0.899420166015625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9975.387947591145,
+        "mean_shop_demand_units": 202.48681640625
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7835440186693726,
+              0.8810447079549381
+            ],
+            "distinct_seeds": 127,
+            "games": 2459,
+            "win_rate": 0.8336722244814966,
+            "wins": 2050
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8930444533040965,
+              0.9478674999664353
+            ],
+            "distinct_seeds": 126,
+            "games": 1637,
+            "win_rate": 0.9230299328039095,
+            "wins": 1511
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05543484157986111,
+        "mean_sampled_market_inventory": 10234.90329047309,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9052419504242469,
+              0.9743083910505131
+            ],
+            "distinct_seeds": 125,
+            "games": 546,
+            "win_rate": 0.9432234432234432,
+            "wins": 515
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8196942237208112,
+              0.8924683055382515
+            ],
+            "distinct_seeds": 128,
+            "games": 3550,
+            "win_rate": 0.8580281690140845,
+            "wins": 3046
+          }
+        },
+        "mean_sampled_floor_fraction": 0.00804443359375,
+        "mean_sampled_market_inventory": 10066.923886447483,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 33,
+            "games": 159,
+            "win_rate": 1.0,
+            "wins": 159
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8223952074310894,
+              0.9121311488883888
+            ],
+            "distinct_seeds": 128,
+            "games": 2205,
+            "win_rate": 0.8693877551020408,
+            "wins": 1917
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.802495005613153,
+              0.905464318173804
+            ],
+            "distinct_seeds": 123,
+            "games": 1732,
+            "win_rate": 0.8573903002309469,
+            "wins": 1485
+          }
+        },
+        "mean_sampled_floor_fraction": 0.04612358940972222,
+        "mean_sampled_market_inventory": 10021.20064154731,
+        "mean_shop_demand_units": 288.4921875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "distinct_seeds": 4,
+            "games": 5,
+            "win_rate": 1.0,
+            "wins": 5
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8422728911736848,
+              0.9216579286147853
+            ],
+            "distinct_seeds": 127,
+            "games": 2607,
+            "win_rate": 0.8833908707326429,
+            "wins": 2303
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7857116901993355,
+              0.8976235144825824
+            ],
+            "distinct_seeds": 123,
+            "games": 1484,
+            "win_rate": 0.8443396226415094,
+            "wins": 1253
+          }
+        },
+        "mean_sampled_floor_fraction": 0.023631456163194446,
+        "mean_sampled_market_inventory": 9968.947855631512,
+        "mean_shop_demand_units": 406.7578125
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.836669921875,
+              0.899420166015625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9954.008213975694,
+        "mean_shop_demand_units": 196.10595703125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.836669921875,
+              0.899420166015625
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.869384765625,
+            "wins": 3561
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9715.703988986545,
+        "mean_shop_demand_units": 499.76806640625
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8738877333385753,
+              0.96038952447353
+            ],
+            "distinct_seeds": 107,
+            "games": 1315,
+            "win_rate": 0.9209125475285171,
+            "wins": 1211
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7738760435743867,
+              0.8748815388799472
+            ],
+            "distinct_seeds": 128,
+            "games": 2105,
+            "win_rate": 0.8256532066508313,
+            "wins": 1738
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8374289665649971,
+              0.9598717129381923
+            ],
+            "distinct_seeds": 97,
+            "games": 676,
+            "win_rate": 0.9053254437869822,
+            "wins": 612
+          }
+        },
+        "mean_sampled_floor_fraction": 0.15781114366319443,
+        "mean_sampled_market_inventory": 10019.37603217231,
+        "mean_shop_demand_units": 193.060546875
+      }
+    },
+    "team-terminal-suffix-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.78125,
+              0.845703125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.81494140625,
+            "wins": 3338
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.25887315538,
+        "mean_shop_demand_units": 304.9892578125
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.78125,
+              0.845703125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.81494140625,
+            "wins": 3338
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9976.500155978732,
+        "mean_shop_demand_units": 203.47998046875
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7890227075313722,
+              0.8747300485980671
+            ],
+            "distinct_seeds": 127,
+            "games": 2690,
+            "win_rate": 0.8330855018587361,
+            "wins": 2241
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.737550664195873,
+              0.8178127574610234
+            ],
+            "distinct_seeds": 125,
+            "games": 1406,
+            "win_rate": 0.7802275960170697,
+            "wins": 1097
+          }
+        },
+        "mean_sampled_floor_fraction": 0.06132676866319445,
+        "mean_sampled_market_inventory": 10238.582969835068,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.38402746401039894,
+              0.509805681698173
+            ],
+            "distinct_seeds": 128,
+            "games": 545,
+            "win_rate": 0.44587155963302755,
+            "wins": 243
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8341713456683122,
+              0.9060764265334555
+            ],
+            "distinct_seeds": 128,
+            "games": 3551,
+            "win_rate": 0.871585468882005,
+            "wins": 3095
+          }
+        },
+        "mean_sampled_floor_fraction": 0.009429253472222222,
+        "mean_sampled_market_inventory": 10066.890266927083,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9620223025919229,
+              1.0
+            ],
+            "distinct_seeds": 29,
+            "games": 199,
+            "win_rate": 0.9899497487437185,
+            "wins": 197
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7632987038086392,
+              0.8506339144215531
+            ],
+            "distinct_seeds": 128,
+            "games": 2384,
+            "win_rate": 0.8091442953020134,
+            "wins": 1929
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7417125049874729,
+              0.8535924295476683
+            ],
+            "distinct_seeds": 120,
+            "games": 1513,
+            "win_rate": 0.8010575016523463,
+            "wins": 1212
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05032009548611111,
+        "mean_sampled_market_inventory": 10021.710439724393,
+        "mean_shop_demand_units": 286.8837890625
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "distinct_seeds": 3,
+            "games": 5,
+            "win_rate": 0.6,
+            "wins": 3
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7749223426190985,
+              0.8511335268428204
+            ],
+            "distinct_seeds": 127,
+            "games": 2698,
+            "win_rate": 0.8150481838398814,
+            "wins": 2199
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7496303548095486,
+              0.8752897919193461
+            ],
+            "distinct_seeds": 119,
+            "games": 1393,
+            "win_rate": 0.8155061019382628,
+            "wins": 1136
+          }
+        },
+        "mean_sampled_floor_fraction": 0.026200358072916666,
+        "mean_sampled_market_inventory": 9969.518615722656,
+        "mean_shop_demand_units": 404.64404296875
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.78125,
+              0.845703125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.81494140625,
+            "wins": 3338
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9952.485706922744,
+        "mean_shop_demand_units": 194.765625
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.78125,
+              0.845703125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.81494140625,
+            "wins": 3338
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9706.843417697482,
+        "mean_shop_demand_units": 499.5966796875
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8876170368053383,
+              0.9571428571428572
+            ],
+            "distinct_seeds": 109,
+            "games": 1340,
+            "win_rate": 0.9276119402985075,
+            "wins": 1243
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6736550565285389,
+              0.7778294091046654
+            ],
+            "distinct_seeds": 128,
+            "games": 2134,
+            "win_rate": 0.7268041237113402,
+            "wins": 1551
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.7964884496308645,
+              0.9373302576601671
+            ],
+            "distinct_seeds": 88,
+            "games": 622,
+            "win_rate": 0.8745980707395499,
+            "wins": 544
+          }
+        },
+        "mean_sampled_floor_fraction": 0.16015489366319444,
+        "mean_sampled_market_inventory": 10019.461465115019,
+        "mean_shop_demand_units": 193.7021484375
+      }
+    },
+    "team-v37-feed-reserve-v1": {
+      "CARROT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.89404296875,
+              0.9111328125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.902587890625,
+            "wins": 3697
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9895.149019368491,
+        "mean_shop_demand_units": 294.3193359375
+      },
+      "EGG": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.89404296875,
+              0.9111328125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.902587890625,
+            "wins": 3697
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9943.669638400606,
+        "mean_shop_demand_units": 199.705078125
+      },
+      "FERTILIZER": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.6666666666666666
+            ],
+            "distinct_seeds": 5,
+            "games": 15,
+            "win_rate": 0.13333333333333333,
+            "wins": 2
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9188191000821183,
+              0.9509062091394922
+            ],
+            "distinct_seeds": 128,
+            "games": 2087,
+            "win_rate": 0.9353138476281744,
+            "wins": 1952
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8549195416611844,
+              0.893059121308395
+            ],
+            "distinct_seeds": 125,
+            "games": 1994,
+            "win_rate": 0.8741223671013039,
+            "wins": 1743
+          }
+        },
+        "mean_sampled_floor_fraction": 0.03799235026041667,
+        "mean_sampled_market_inventory": 10208.955593532986,
+        "mean_shop_demand_units": 0.0
+      },
+      "MELON": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "distinct_seeds": 3,
+            "games": 5,
+            "win_rate": 0.0,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.89501953125,
+              0.9122678396871945
+            ],
+            "distinct_seeds": 128,
+            "games": 4091,
+            "win_rate": 0.9036910290882425,
+            "wins": 3697
+          }
+        },
+        "mean_sampled_floor_fraction": 4.0690104166666664e-05,
+        "mean_sampled_market_inventory": 10074.126466200085,
+        "mean_shop_demand_units": 0.0
+      },
+      "MILK": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.6694182338777901,
+              0.8848936779779717
+            ],
+            "distinct_seeds": 39,
+            "games": 163,
+            "win_rate": 0.7852760736196319,
+            "wins": 128
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.855226195248554,
+              0.8947368421052632
+            ],
+            "distinct_seeds": 127,
+            "games": 1851,
+            "win_rate": 0.8752025931928687,
+            "wins": 1620
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.920300568046032,
+              0.9515398954799275
+            ],
+            "distinct_seeds": 127,
+            "games": 2082,
+            "win_rate": 0.93611911623439,
+            "wins": 1949
+          }
+        },
+        "mean_sampled_floor_fraction": 0.05438639322916667,
+        "mean_sampled_market_inventory": 10002.156000434028,
+        "mean_shop_demand_units": 293.326171875
+      },
+      "STRAWBERRY": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "distinct_seeds": 5,
+            "games": 12,
+            "win_rate": 0.5,
+            "wins": 6
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.83495692881147,
+              0.8835431821717206
+            ],
+            "distinct_seeds": 126,
+            "games": 1706,
+            "win_rate": 0.8599062133645955,
+            "wins": 1467
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9198451180259549,
+              0.9507650415800338
+            ],
+            "distinct_seeds": 122,
+            "games": 2378,
+            "win_rate": 0.9352396972245585,
+            "wins": 2224
+          }
+        },
+        "mean_sampled_floor_fraction": 0.026905653211805554,
+        "mean_sampled_market_inventory": 9956.909990776909,
+        "mean_shop_demand_units": 400.3505859375
+      },
+      "TOMATO": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.89404296875,
+              0.9111328125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.902587890625,
+            "wins": 3697
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9925.075160047745,
+        "mean_shop_demand_units": 199.142578125
+      },
+      "WHEAT": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": null,
+            "distinct_seeds": 0,
+            "games": 0,
+            "win_rate": null,
+            "wins": 0
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.89404296875,
+              0.9111328125
+            ],
+            "distinct_seeds": 128,
+            "games": 4096,
+            "win_rate": 0.902587890625,
+            "wins": 3697
+          }
+        },
+        "mean_sampled_floor_fraction": 0.0,
+        "mean_sampled_market_inventory": 9799.962091742622,
+        "mean_shop_demand_units": 497.47412109375
+      },
+      "WOOL": {
+        "floor_exposure_groups": {
+          "at_least_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8527121676116551,
+              0.9025378138593394
+            ],
+            "distinct_seeds": 117,
+            "games": 1474,
+            "win_rate": 0.878561736770692,
+            "wins": 1295
+          },
+          "below_one_quarter": {
+            "causal_comparison": false,
+            "ci95": [
+              0.8689838625380619,
+              0.9208060006358636
+            ],
+            "distinct_seeds": 123,
+            "games": 1441,
+            "win_rate": 0.8965995836224844,
+            "wins": 1292
+          },
+          "zero": {
+            "causal_comparison": false,
+            "ci95": [
+              0.9156262087177847,
+              0.9617579307908023
+            ],
+            "distinct_seeds": 114,
+            "games": 1181,
+            "win_rate": 0.9398814563928873,
+            "wins": 1110
+          }
+        },
+        "mean_sampled_floor_fraction": 0.1593288845486111,
+        "mean_sampled_market_inventory": 10009.338911946616,
+        "mean_shop_demand_units": 199.5205078125
+      }
+    }
+  }
+}

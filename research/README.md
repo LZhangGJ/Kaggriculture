@@ -1,5 +1,7 @@
 # Kaggriculture research
 
+[All three evaluation panels, explained, with best win rates in bold](evaluation_sets/2026-09-12-v1/results/ALL_RESULTS.md). Includes every opponent and both seats.
+
 ## Shared evaluation tools — 2026-09-12
 
 Use [evaluation tools v2](evaluation_tools/v2/README.md) for new comparisons with strict input checks, a four-seed parity preflight, separate economic stress opponents and paired analysis. These tools use the pinned 1.32.7 runtime in the [shared evaluation bundle](evaluation_sets/2026-09-12-v1/README.md). The original bundle and its frozen six-candidate comparison remain unchanged. The older engine notes below describe the August research state.

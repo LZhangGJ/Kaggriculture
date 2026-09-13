@@ -1,0 +1,205 @@
+"""Render one GitHub page from validated statistics without changing the analysis."""
+import argparse
+from fractions import Fraction
+import hashlib
+import json
+from pathlib import Path
+
+PANEL_ORDER = ('representative', 'stress', 'holdout')
+MEANING = {
+    'representative': 'These 256 seeds were drawn uniformly from the eligible default 31-bit seed domain before their economic conditions were measured. This panel estimates typical seed performance against the fixed opponent mix. It does not estimate the live Kaggle opponent distribution. Once inspected, it becomes development evidence.',
+    'stress': 'These 128 seeds were selected from a separate 4,096-seed pool to cover extremes and contrasts in 26 economic coordinates, all eight reference first-shop types, and 12 contrasting cells. Selection used no candidate outcomes. This panel tests coverage of selected conditions; its average is not a population estimate, and extreme conditions need not make a policy lose more often. Reference shop labels use a PASS/PASS controller. Actual shops and prices depend on both players’ actions.',
+    'holdout': 'These 256 independently drawn seeds excluded known campaign history, representative seeds and the full stress selection pool. All six candidates, settings and the analysis were frozen before the comparison; every candidate received this panel regardless of development results. This provides one check of whether the frozen candidates carry their performance over to unseen seeds. The audit cannot recover deleted, unsaved or out-of-scope history. The holdout is public and retired after this comparison; future changes need a new independent holdout.'}
+
+def pct(value):
+    return '—' if value is None else f'{value:.2%}'
+
+def ci(values, points=False):
+    if values is None:
+        return '—'
+    return f'{values[0]*100:+.2f} to {values[1]*100:+.2f} pp' if points else f'{pct(values[0])}–{pct(values[1])}'
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--results', type=Path, required=True)
+    parser.add_argument('--out', type=Path, required=True)
+    parser.add_argument('--allow-partial-preview', action='store_true')
+    args = parser.parse_args()
+    data = json.loads((args.results / 'RESULTS.json').read_bytes())
+    if not args.allow_partial_preview:
+        assert data['status'] == 'complete_all_three_panels'
+        assert set(data['panels']) == set(PANEL_ORDER)
+    labels = data['candidate_labels']
+    ids = ['ppo-495ebc48210f14ae', 'ppo-c90da6b7b3ea061d', 'ppo-bf0aa03b41428d97',
+           'ppo-9980111aa0f1e7f6', 'team-terminal-suffix-v1', 'team-v37-feed-reserve-v1']
+    assert set(ids) == set(labels)
+    names = [name for name in PANEL_ORDER if name in data['panels']]
+    conditions = json.loads((args.results / 'REFERENCE_CONDITIONS.json').read_bytes())
+    markets = json.loads((args.results / 'REALIZED_MARKETS.json').read_bytes())
+    highlighted = 0
+    groups_rendered = 0
+
+    def best_ids(rows):
+        eligible = {cid: Fraction(row['wins'], row['games']) for cid, row in rows.items() if row['games']}
+        if not eligible:
+            return set()
+        best = max(eligible.values())
+        return {cid for cid, value in eligible.items() if value == best}
+
+    def rate_cell(cid, rows, counts=False, interval=False):
+        nonlocal highlighted
+        if cid not in rows or not rows[cid]['games']:
+            return '—'
+        row = rows[cid]
+        value = pct(row['win_rate'])
+        if cid in best_ids(rows):
+            value = '**' + value + '**'
+            highlighted += 1
+        if counts:
+            value += f" ({row['wins']}/{row['games']})"
+        if interval:
+            value += '; ' + ci(row['win_rate_ci95'])
+        return value
+
+    def matrix(groups, first_column, support=False):
+        nonlocal groups_rendered
+        text = '| ' + first_column + (' | Seeds | Games/candidate' if support else '') + ' | ' + ' | '.join(labels[cid] for cid in ids) + ' |\n'
+        text += '|---|' + ('---:|---:|' if support else '') + '---:|' * len(ids) + '\n'
+        for name, group in groups.items():
+            rows = group['candidates']
+            groups_rendered += 1
+            text += '| ' + name.replace('|', '\\|')
+            if support:
+                text += f" | {group['distinct_seeds']} | {group['games']}"
+            text += ' | ' + ' | '.join(rate_cell(cid, rows, counts=not support) for cid in ids) + ' |\n'
+        return text
+
+    def detail_table(groups):
+        text = 'Each group spans six candidate rows. Paired differences and bracketed 95% intervals use percentage points (pp).\n\n'
+        text += '| Group | Candidate | Games | Wins | Draws | Losses | Win rate | 95% seed interval | Mean cash | Mean margin | vs R2 (pp) [95% CI] | vs Day9 (pp) [95% CI] |\n'
+        text += '|---|---|---:|---:|---:|---:|---:|---|---:|---:|---|---|\n'
+        for name, group in groups.items():
+            rows = group['candidates']
+            for cid in ids:
+                if cid not in rows:
+                    continue
+                row = rows[cid]
+                differences = []
+                for baseline in ids[:2]:
+                    delta = row['paired_differences'][baseline]
+                    lo, hi = delta['ci95']
+                    differences.append(f"{delta['win_rate_difference']*100:+.2f} [{lo*100:+.2f}, {hi*100:+.2f}]")
+                group_label = name if cid == ids[0] else ''
+                text += f"| {group_label} | {labels[cid]} | {row['games']} | {row['wins']} | {row['draws']} | {row['losses']} | {rate_cell(cid, rows)} | {ci(row['win_rate_ci95'])} | {row['mean_cash']:,.2f} | {row['mean_margin']:+,.2f} | " + ' | '.join(differences) + ' |\n'
+        return text
+
+    def interpretation(name, panel):
+        rows = panel['overall']['candidates']
+        leaders = best_ids(rows)
+        ordered_leaders = [cid for cid in ids if cid in leaders]
+        text = 'The highest observed aggregate rate is ' + ' and '.join(f"{labels[cid]} at **{pct(rows[cid]['win_rate'])}**" for cid in ordered_leaders) + '. '
+        if name == 'representative':
+            text += 'This supports a claim about average performance on eligible random seeds against this fixed roster. '
+        elif name == 'stress':
+            text += 'This describes the selected economic conditions. A higher rate here than on representative seeds does not by itself prove greater robustness. '
+        else:
+            rep = data['panels']['representative']['overall']['candidates']
+            prior = best_ids(rep)
+            text += ('The observed leader agrees with the representative panel. ' if leaders == prior else 'The observed leader differs from the representative panel. ')
+            text += 'This is evidence for the frozen packages only; it does not validate later edits or nominate a new champion. '
+        for cid in ordered_leaders:
+            if cid == ids[1]:
+                continue
+            delta = rows[cid]['paired_differences'][ids[1]]
+            low, high = delta['ci95']
+            text += f"{labels[cid]} differs from Day9 by {delta['win_rate_difference']*100:+.2f} percentage points (95% paired interval {ci(delta['ci95'], True)}). "
+            text += 'That interval includes zero, so a lead over Day9 remains uncertain. ' if low <= 0 <= high else 'That interval excludes zero for this comparison. '
+        native = panel['by_opponent']['native:r2']['candidates']
+        text += f"Against AFS R2 directly, v37 wins {pct(native[ids[5]]['win_rate'])} and Day9 wins {pct(native[ids[1]]['win_rate'])}. "
+        text += 'An aggregate ranking can therefore differ sharply from a specific matchup. '
+        for cid in ids[2:4]:
+            delta = rows[cid]['paired_differences'][ids[1]]
+            text += f"{labels[cid]} versus Day9: {delta['win_rate_difference']*100:+.2f} pp, interval {ci(delta['ci95'], True)}. "
+        return text.rstrip() + '\n\n'
+
+    total = sum(data['panels'][name]['overall']['games'] * len(ids) for name in names)
+    if not args.allow_partial_preview:
+        assert total == 122880
+    text = '# Kaggriculture master leaderboard\n\n'
+    if args.allow_partial_preview:
+        text += '**Local layout preview only. Holdout is omitted and remains unreported.**\n\n'
+    text += f'All **{total:,} games** in the panels below passed validation, with zero invalid, missing or duplicate cells. The six packages use the frozen official 1.32.7 CPU evaluation.\n\n'
+    text += '**Bold marks the highest observed win rate among candidates in that comparison. Exact ties are all bold.** This is a numerical ranking, not a claim of statistical certainty. Draws count as zero wins. Confidence intervals resample whole seeds; repeated subgroup comparisons are exploratory. Mean cash and margin add context but do not determine the winner.\n\n'
+    text += 'Jump to: ' + ' · '.join(f'[{name.title()}](#{name})' for name in names) + ' · [Methods and evidence](#methods-and-evidence). Detailed tables expand on this same page.\n\n'
+    text += '| Candidate | ' + ' | '.join(name.title() for name in names) + ' |\n|---|' + '---:|' * len(names) + '\n'
+    for cid in ids:
+        text += '| ' + labels[cid] + ' | ' + ' | '.join(rate_cell(cid, data['panels'][name]['overall']['candidates'], interval=True) for name in names) + ' |\n'
+    text += '\nEach summary cell shows win rate and its 95% seed-cluster interval. The panels answer different questions; their games are not pooled into one score.\n\n'
+
+    for name in names:
+        panel = data['panels'][name]
+        text += '## ' + name.title() + '\n\n' + MEANING[name] + '\n\n'
+        text += f"The panel contains {panel['overall']['distinct_seeds']} seeds and {panel['overall']['games']:,} games per candidate: all 16 opponents in both seats.\n\n"
+        text += interpretation(name, panel)
+        text += '### Overall results\n\n| Candidate | Wins | Draws | Losses | Win rate | 95% seed interval |\n|---|---:|---:|---:|---:|---|\n'
+        rows = panel['overall']['candidates']
+        for cid in ids:
+            row = rows[cid]
+            text += f"| {labels[cid]} | {row['wins']:,} | {row['draws']:,} | {row['losses']:,} | {rate_cell(cid, rows)} | {ci(row['win_rate_ci95'])} |\n"
+        text += '\n'
+        text += '### Win rates by opponent\n\n' + matrix(panel['by_opponent'], 'Opponent') + '\n'
+        text += 'Opponent cells show win rate and wins/games. AFS R2’s row against itself includes draws; a strict self-play win rate below 50% can therefore be expected. Opponent names include shared strategy families.\n\n'
+        text += '### Win rates by candidate seat\n\n' + matrix(panel['by_seat'], 'Candidate seat') + '\n'
+        text += '<details>\n<summary>Opponent-by-seat win rates</summary>\n\n'
+        for seat in ('0', '1'):
+            groups = {opponent: seats[seat] for opponent, seats in panel['by_opponent_and_seat'].items()}
+            text += '#### Candidate seat ' + seat + '\n\n' + matrix(groups, 'Opponent') + '\n'
+        text += '</details>\n\n'
+        all_groups = {'All': panel['overall']}
+        all_groups.update({'opponent=' + k: v for k, v in panel['by_opponent'].items()})
+        all_groups.update({'seat=' + k: v for k, v in panel['by_seat'].items()})
+        all_groups.update({f'{opponent}; seat={seat}': value for opponent, seats in panel['by_opponent_and_seat'].items() for seat, value in seats.items()})
+        text += '<details>\n<summary>Opponent and seat counts, cash, margins, intervals and paired comparisons</summary>\n\n'
+        text += detail_table(all_groups) + '\n</details>\n\n'
+        text += '<details>\n<summary>Economic condition win rates</summary>\n\n'
+        text += 'These reference groups retain the PASS/PASS qualification. Low, middle and high cutoffs were frozen from representative quartiles. Groups with fewer than 20 seeds have limited support; zero-support cells show a dash.\n\n'
+        text += matrix(conditions[name], 'Reference condition', support=True) + '\n</details>\n\n'
+        text += '<details>\n<summary>Economic condition counts, cash, margins, intervals and paired comparisons</summary>\n\n'
+        text += detail_table(conditions[name]) + '\n</details>\n\n'
+        text += '<details>\n<summary>Realized markets and price-floor groups</summary>\n\n'
+        text += 'Markets were sampled before actions every four turns (180 samples/game). These groups depend on policy actions and are descriptive, so they do not receive a best-policy highlight. Demand counts do not measure realized sales.\n\n'
+        text += '| Candidate | Product | Mean floor exposure | Mean market inventory | Mean shop demand units |\n|---|---|---:|---:|---:|\n'
+        for cid in ids:
+            for product, row in markets[name][cid].items():
+                text += f"| {labels[cid]} | {product} | {pct(row['mean_sampled_floor_fraction'])} | {row['mean_sampled_market_inventory']:,.2f} | {row['mean_shop_demand_units']:,.2f} |\n"
+        text += '\n| Candidate | Product | Floor exposure group | Seeds | Games | Wins | Win rate | 95% seed interval |\n|---|---|---|---:|---:|---:|---:|---|\n'
+        for cid in ids:
+            for product, row in markets[name][cid].items():
+                for group, value in row['floor_exposure_groups'].items():
+                    text += f"| {labels[cid]} | {product} | {group} | {value['distinct_seeds']} | {value['games']} | {value['wins']} | {pct(value['win_rate'])} | {ci(value['ci95'])} |\n"
+        text += '\n</details>\n\n'
+        text += '<details>\n<summary>Runtime and diagnostic counts</summary>\n\n'
+        text += '| Candidate | Optional debug parse errors | Maximum measured policy latency (s) | Mean game time (s) |\n|---|---:|---:|---:|\n'
+        for cid in ids:
+            row = panel['diagnostics'][cid]
+            text += f"| {labels[cid]} | {row['optional_debug_parse_errors']} | {row['maximum_measured_policy_latency_seconds']:.6f} | {row['mean_game_seconds']:.3f} |\n"
+        text += '\nTiming reflects this local run. Optional terminal debug errors are separate from action and terminal validation.\n\n</details>\n\n'
+
+    text += '## Methods and evidence\n\n'
+    text += 'The same frozen candidate files and opponent versions ran on each panel. Each game completed 719 transitions. The analysis uses 4,000 common seed bootstrap draws per panel, preserving every opponent/seat game for a seed. Paired intervals compare matched seeds; subtracting separate interval endpoints would not produce a paired interval. Bold uses exact wins/games before rounding.\n\n'
+    text += 'The public-parent v37 policy does not establish the team’s Three-Layer architecture goal. The completed comparison does not itself change the champion or submit to Kaggle. The original optional-debug repair, failed first preflight and successful repeated preflight remain available. The newer v2 evaluation tools are separate; this comparison retains its frozen v1 runner.\n\n'
+    text += '[Exact result data](RESULTS.json) · [Reference conditions](REFERENCE_CONDITIONS.json) · [Realized markets](REALIZED_MARKETS.json) · [Raw game records](raw/) · [Run reproduction](../REPRODUCE_RESULTS.md) · [Set definitions](../README.md) · [Analysis plan](../evaluation/ANALYSIS_PLAN.md) · [Retired holdout receipt](../retired_holdout/RETIREMENT.json).\n'
+    # Compact table source to fit GitHub's renderer; displayed values are unchanged.
+    text = '\n'.join(line.replace(' |', '|').replace('| ', '|').replace(', +', ',+').replace(', -', ',-').replace('+', '')
+                     if line.startswith('|') else line for line in text.split('\n'))
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_bytes(text.encode())
+    receipt = dict(panels=names, games=total, source_results_sha256=hashlib.sha256((args.results / 'RESULTS.json').read_bytes()).hexdigest(),
+                   rendered_sha256=hashlib.sha256(args.out.read_bytes()).hexdigest(), rendered_bytes=args.out.stat().st_size,
+                   highlighted_cells=highlighted, comparison_matrix_rows=groups_rendered,
+                   best_rule='Exact wins/games within each matched comparison; all exact ties highlighted', partial_preview=args.allow_partial_preview)
+    args.out.with_suffix('.render.json').write_bytes((json.dumps(receipt, indent=2, sort_keys=True) + '\n').encode())
+    print(json.dumps(receipt))
+
+if __name__ == '__main__':
+    main()

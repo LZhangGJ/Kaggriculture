@@ -1,0 +1,14 @@
+{
+  "audit_sha256": "be08f7871d09af77d050dd54135f173470ee70fcf5527592dfaf1e74d42417db",
+  "cpu_only": true,
+  "created_unix": 1789243954.3931823,
+  "multiprocessing_start": "fork",
+  "phase": "development",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "roster_sha256": "5b467aba52004138e5e96695bc08a5e7c7000cd1c21729ebf6296c66f08da1fc",
+  "runner_sha256": "16a95778a4dc7368d35bfb69159b55d197584b29d2c95cd1850fe512bae60561",
+  "scheduled": 73728,
+  "timeout_seconds_per_game": 180,
+  "workers": 16
+}

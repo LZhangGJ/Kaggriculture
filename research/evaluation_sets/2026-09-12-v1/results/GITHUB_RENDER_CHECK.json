@@ -1,0 +1,16 @@
+{
+  "expandable_sections": 18,
+  "headings": [
+    "Representative",
+    "Stress",
+    "Holdout",
+    "Methods and evidence"
+  ],
+  "highlighted_rate_cells": 978,
+  "markdown_bytes": 392213,
+  "markdown_sha256": "454c5b70d01e85cd5834abe2ce00c6299558ac1adad7a918b30a5fbee733bcbb",
+  "rendered_html_sha256": "9cd2af4702d1d10e8a50fa877b517bc30fe487ce7fb1c447648369e7e5034fb6",
+  "renderer": "GitHub Markdown API, GFM",
+  "status": "PASS",
+  "tables": 34
+}
