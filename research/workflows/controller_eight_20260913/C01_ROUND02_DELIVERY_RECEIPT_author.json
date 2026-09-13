@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-09-13T19:25:34.439823+00:00",
+  "archive_path": "/mnt/data/C01_R2_strategy.zip",
+  "archive_bytes": 267981338,
+  "sha256": "9c5fe72e41580c9ab9ce61019169ffd8c829ad7d98de3b13b8431b04dda644af",
+  "package_and_verify_seconds": 4.871206567000058,
+  "zip_crc_passed": true,
+  "all_entry_sha256_passed": true,
+  "root_runtime_matches_frozen_source": true,
+  "entries": 1978,
+  "manifested_files": 1977,
+  "game_result_files": 290,
+  "game_start_files": 290,
+  "full_replays": 290,
+  "full_action_traces": 290,
+  "validation_full_replays": 32,
+  "all_recorded_terminal_transitions": 208510,
+  "development_mean_terminal_cash": 205292.90625,
+  "untouched_author_validation_mean_terminal_cash": 209593.875,
+  "extracted_manifest_verifier_returncode": 0,
+  "extracted_manifest_verifier_stdout": "{\n  \"checked_files\": 1977,\n  \"freeze_runtime_files\": 58,\n  \"failures\": [],\n  \"passed\": true\n}\n",
+  "completed_before_cutoff": true
+}
