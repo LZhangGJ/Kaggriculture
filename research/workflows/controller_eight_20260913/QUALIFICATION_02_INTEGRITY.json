@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "planned_cells": 256,
+  "exact_cells_and_unique_rows": true,
+  "all_replays_hash_and_terminal_cash_agree": true,
+  "all719_transitions_and_both_DONE": true,
+  "source_integrity": {
+    "C01": true,
+    "C02": true,
+    "C03": true,
+    "C04": true,
+    "C05": true,
+    "C06": true,
+    "C07": true,
+    "C08": true,
+    "referee": true,
+    "harness": true,
+    "freeze": true,
+    "seeds": true
+  },
+  "seed_draw_after_freeze": true,
+  "seeds_disjoint_from_exclusions_and_prior_claims": true,
+  "exclusion_count": 948,
+  "manifest_sha256": "01ae896e2083ba3a6df02267f88f8ab6ef68eaae8d12d4c79f2351426bda9050",
+  "rows_sha256": "447ec5dca8f8605bd0e8ae16dd0c9fc5ad58099f70a7e7e94f2c34b23841dcb0",
+  "summary_sha256": "a63314df2ec20a0a67f776bcdd27dc4a10e9915a79604ebe4221e80a67eae44c",
+  "official_interpreter_rerun": false,
+  "historical_gaps": {
+    "C04": "Selected unchanged parent; prior round02 source/evidence lost.",
+    "C06": "Runtime independently ready, author full game results remain unverified/unavailable.",
+    "C07": "Actual surviving archive verified; different original delivery identity/results remain unverified."
+  },
+  "exact_replay_file_count": 256
+}

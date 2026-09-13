@@ -1,0 +1,67 @@
+[
+  {
+    "author": "C01",
+    "file": "C01_ROUND04_FEEDBACK.zip",
+    "bytes": 3751174,
+    "sha256": "ec2182ac24ab27df7e60464af8e5c607cffdebd045dd4662f8a8769e10863564",
+    "round_minutes": 40,
+    "dispatched": false,
+    "started_utc": "2026-09-13T20:34:36.381Z",
+    "research_cutoff_utc": "2026-09-13T21:14:36.381Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "task_file": "C01_ROUND04_TASK.md"
+  },
+  {
+    "author": "C02",
+    "file": "C02_ROUND04_FEEDBACK.zip",
+    "bytes": 3746184,
+    "sha256": "9048d9731e143fb996be86ce252ab80db62c343f1feaebdf34615e910f299b01",
+    "round_minutes": 40,
+    "dispatched": false,
+    "started_utc": "2026-09-13T20:34:38.819Z",
+    "research_cutoff_utc": "2026-09-13T21:14:38.819Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "task_file": "C02_ROUND04_TASK.md"
+  },
+  {
+    "author": "C04",
+    "file": "C04_ROUND04_FEEDBACK.zip",
+    "bytes": 4720239,
+    "sha256": "83d60789ce6fe912f4b80f14385b933c9370b69e680606a7fe15e521e0dfb0a6",
+    "round_minutes": 40,
+    "dispatched": false,
+    "started_utc": "2026-09-13T20:34:40.725Z",
+    "research_cutoff_utc": "2026-09-13T21:14:40.725Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "task_file": "C04_ROUND04_TASK.md"
+  },
+  {
+    "author": "C06",
+    "file": "C06_ROUND04_FEEDBACK.zip",
+    "bytes": 3851109,
+    "sha256": "7eda9179208c47380c32a9e5006b977fa472768f19521e351d04251374894dee",
+    "round_minutes": 40,
+    "dispatched": false,
+    "started_utc": "2026-09-13T20:34:42.773Z",
+    "research_cutoff_utc": "2026-09-13T21:14:42.773Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "task_file": "C06_ROUND04_TASK.md"
+  },
+  {
+    "author": "C07",
+    "file": "C07_ROUND04_FEEDBACK.zip",
+    "bytes": 3807490,
+    "sha256": "f97150f50853859f177fe5d382d8788a474a9c8de25255d3ad3987d6b1bb1249",
+    "round_minutes": 40,
+    "dispatched": false,
+    "started_utc": "2026-09-13T20:34:44.830Z",
+    "research_cutoff_utc": "2026-09-13T21:14:44.830Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "task_file": "C07_ROUND04_TASK.md"
+  }
+]
