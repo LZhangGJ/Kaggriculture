@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "remote_verified": true,
+      "sha256": "a12473b8b5459643296a2597a664c8eec5917a18699eba47aa7c2e68b9bedb2e",
+      "bytes": 9925524,
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C03_ROUND02_FEEDBACK.zip",
+      "name": "C03_ROUND02_FEEDBACK.zip"
+    },
+    {
+      "remote_verified": true,
+      "sha256": "afccc8f1bd3866e26d9baf57a37b48b5d6b6e7a72c628b5811d241b609890dca",
+      "bytes": 9718833,
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C08_ROUND02_FEEDBACK.zip",
+      "name": "C08_ROUND02_FEEDBACK.zip"
+    }
+  ],
+  "verified_utc": "2026-09-13T23:34:02.1969458Z",
+  "remote_total_assets": 194
+}

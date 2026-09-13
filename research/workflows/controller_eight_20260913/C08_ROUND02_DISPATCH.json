@@ -1,0 +1,14 @@
+{
+  "max_workers": 2,
+  "round": 2,
+  "start_utc": "2026-09-13T23:32:48.414Z",
+  "packet": "C08_ROUND02_FEEDBACK.zip",
+  "author": "C08",
+  "model": "ChatGPT 6 Pro",
+  "deadline_utc": "2026-09-14T01:02:48.414Z",
+  "minutes": 90,
+  "chat_url": "https://chatgpt.com/c/6aa6d363-ccd0-83ea-a5ce-0564fcfa9ca3",
+  "live_stop_answering_verified": true,
+  "final_reserve_minutes": 20,
+  "sha256": "afccc8f1bd3866e26d9baf57a37b48b5d6b6e7a72c628b5811d241b609890dca"
+}
