@@ -1,0 +1,18 @@
+{
+  "status": "RECOVERY_SUBSET_VERIFIED_NOT_ROUND02_GAME_EVIDENCE",
+  "manifest_hashes_verified": 690,
+  "replay_packages": [
+    {
+      "archive": "C06_recovered_round1_replays.zip",
+      "members": 73,
+      "hash_matches_existing_preserved_replays": 70
+    },
+    {
+      "archive": "C06_recovered_controller_replays.zip",
+      "members": 7,
+      "hash_matches_existing_preserved_replays": 4
+    }
+  ],
+  "claimed_round02_results_verified": false,
+  "missing": "Original round02 full archive, local game records/replays, original seed declaration, source-freeze receipt and detailed failures remain unavailable."
+}

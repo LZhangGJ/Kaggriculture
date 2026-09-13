@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "name": "C04_ROUND02_surviving_files_ONLY.zip",
+      "bytes": 4156879,
+      "sha256": "595784404841c7128f3f33e8a42f3b4c1127f3e122793cfc9babb72be3cb2f18",
+      "remote_verified": true
+    },
+    {
+      "name": "C06_round02_recovery_records.zip",
+      "bytes": 8577899,
+      "sha256": "53db75dc37944071d88237502634dba7ca659bad8387a3ee19a702428dbb2e0a",
+      "remote_verified": true
+    },
+    {
+      "name": "C06_recovered_round1_replays.zip",
+      "bytes": 67518465,
+      "sha256": "dfc8d08801b5c6a0609a06fcfd902c0670be5d86ea17ea491446756cc6e1fdfe",
+      "remote_verified": true
+    },
+    {
+      "name": "C06_recovered_controller_replays.zip",
+      "bytes": 917432,
+      "sha256": "0fcdea5e7329e4346fdd75a02334cac085ea0febd9d7649124f8208acbd61fdc",
+      "remote_verified": true
+    },
+    {
+      "name": "C06_ROUND02_CONTROLLER_VERIFICATION.zip",
+      "bytes": 1979791,
+      "sha256": "d8fe22ec0606a5000b2da79bac56c1c7585a947962cbe892d0728473ace3576b",
+      "remote_verified": true
+    },
+    {
+      "name": "C07_round2_SURVIVING_evidence.zip",
+      "bytes": 363858523,
+      "sha256": "9d4f6aafb9f40ddf05916f275284ca6250d87b018994ba5e9052ab47c41f3310",
+      "remote_verified": true
+    },
+    {
+      "name": "C07_round2_SURVIVING_source_runtime.zip",
+      "bytes": 657313,
+      "sha256": "6d8c01a2dbd2fdee7f4802d4a6ae608f383be896d7c9df4197e885e905927d15",
+      "remote_verified": true
+    }
+  ],
+  "total_release_assets": 36
+}

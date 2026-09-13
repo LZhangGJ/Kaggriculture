@@ -6,15 +6,17 @@ All five revision authors finished research before their 45-minute cutoffs. C01 
 |---|---:|---|
 | C01 | 209,593.875 | 290 full replays; 208,510 official transitions matched |
 | C02 | 201,405.03125 | 231 full replays; 166,089 official transitions matched |
-| C04 | 195,431.625 | Failed author panel; full archive retrieval pending |
-| C06 | 204,759.1875 claimed | Runtime checks passed; full evidence unavailable, recovery pending |
-| C07 | 197,938.94 reported | Failed author panel; full archive retrieval pending |
+| C04 | 195,431.625 | Failed author panel; revised source and full archive unavailable |
+| C06 | 204,759.1875 claimed | Runtime and used-seed smoke checks passed; full author evidence unavailable |
+| C07 | 197,938.94 reported | Original archive identity unavailable; different surviving archive under audit |
 
 C01 changes the planning horizon from four days to two. C02 removes two rotation-forecast proposal families while keeping the no-fertilizer alternative. Both local builds passed their native and entry checks; both used-seed games reproduced all actions and terminal cash.
 
-C04 and C07 missed the 200,000 author validation requirement. Their development gains do not count as validation passes. Their full archives did not download successfully; the controller requested unchanged archive parts and small source checkpoints.
+C04 and C07 reported validation below 200,000. C04 recovered only its original inputs, report, validation CSV and inventory. Its revised source and full replays remain unavailable. C04 started a new 30-minute research round at 20:01:54.463 UTC, with a hard cutoff of 20:31:54.463 UTC, early source checkpoints and evidence archives below 50 MB.
 
-C06's runtime ZIP downloaded and matched SHA-256 c512a03db1ad718d7102e8b1956bce02360c7da1eecdfc5082c325b38afcbfe7. Its local build passed eight fertilizer test groups and seven entry/reset/privacy checks. The author reports that the full evidence ZIP no longer exists in its current environment. The claimed 502 completed games, two interruptions and validation mean remain unverified. A recovery request seeks any surviving records and seed declarations; it permits no new research.
+C07 recovered a different 363,858,523-byte archive, whose source and native library differ from the original receipt. The controller verified its two parts and whole SHA-256, and is auditing the actual contents. Its original archive and claims remain distinct and unverified.
+
+C06's runtime ZIP downloaded and matched SHA-256 c512a03db1ad718d7102e8b1956bce02360c7da1eecdfc5082c325b38afcbfe7. Its local build passed eight fertilizer test groups and seven entry/reset/privacy checks. The author reports that the full evidence ZIP no longer exists in its current environment. The claimed 502 completed games, two interruptions and validation mean remain unverified. Recovery finished without any round-two game records or replays. The controller verified 690 recovery-manifest hashes and matched 74 older replays to already preserved evidence. Those files do not verify the round-two claims. Two local used-seed smoke games completed 719 transitions each, with terminal cash 194,519 and 205,439.
 
 All original archives, failed results and runtime versions remain preserved. C03, C05 and C08 retain their unchanged round-one strategies. The next shared controller panel will use newly drawn seeds after source verification and freezing, excluding all recoverable prior seeds. Unknown lost seed histories remain an explicit limit.
 
