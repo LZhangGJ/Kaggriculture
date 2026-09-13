@@ -1,0 +1,54 @@
+[
+  {
+    "author": "C02",
+    "file": "C02_ROUND05_FEEDBACK.zip",
+    "bytes": 4903572,
+    "sha256": "a8890957d86999bea9752e9d38b2580c57573ed92350372ea294b315e607e2fc",
+    "started_utc": "2026-09-13T21:34:13.237Z",
+    "research_cutoff_utc": "2026-09-13T22:14:13.237Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "round_minutes": 40,
+    "known_seed_count": 1062,
+    "task_file": "C02_ROUND05_TASK.md"
+  },
+  {
+    "author": "C04",
+    "file": "C04_ROUND05_FEEDBACK.zip",
+    "bytes": 5903648,
+    "sha256": "0b2d4f22a2475d5b91c21d231a3778612ecebde0217343090572aa132a9bdad1",
+    "started_utc": "2026-09-13T21:35:12.154Z",
+    "research_cutoff_utc": "2026-09-13T22:15:12.154Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "round_minutes": 40,
+    "known_seed_count": 1062,
+    "task_file": "C04_ROUND05_TASK.md"
+  },
+  {
+    "author": "C05",
+    "file": "C05_ROUND05_FEEDBACK.zip",
+    "bytes": 5677145,
+    "sha256": "9ad1fdb1490e6e0523582598fa2697e55eec1eb8eed5e62b49aff15de709be8c",
+    "started_utc": "2026-09-13T21:35:12.629Z",
+    "research_cutoff_utc": "2026-09-13T22:15:12.629Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "round_minutes": 40,
+    "known_seed_count": 1062,
+    "task_file": "C05_ROUND05_TASK.md"
+  },
+  {
+    "author": "C06",
+    "file": "C06_ROUND05_FEEDBACK.zip",
+    "bytes": 5586540,
+    "sha256": "1bedca2d8a9f4a207e83f447977139113fbe0a4d6f773287596558699f446f52",
+    "started_utc": "2026-09-13T21:35:12.921Z",
+    "research_cutoff_utc": "2026-09-13T22:15:12.921Z",
+    "actual_dispatched": true,
+    "model_observed": "6 Pro",
+    "round_minutes": 40,
+    "known_seed_count": 1062,
+    "task_file": "C06_ROUND05_TASK.md"
+  }
+]

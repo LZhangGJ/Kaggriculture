@@ -37,3 +37,5 @@ The evaluator package includes all 46 pinned opponent runtime files, preserves t
 - [Independent full-frame audit](QUALIFICATION_01_ANALYSIS.json)
 - [Revision round dispatches and deadlines](ROUND02_DISPATCHES.json)
 
+
+[Round05 tasks and actual deadlines](ROUND05_DISPATCHES.json): C02, C04, C05 and C06 are running 40-minute revision tasks with C08 matched loss evidence. [Qualification 3 complete results](QUALIFICATION_03_REPORT.md).
