@@ -1,0 +1,1881 @@
+{
+  "candidates": {
+    "ppo-495ebc48210f14ae": {
+      "all_panels_all_opponents_over_50": false,
+      "label": "AFS R2",
+      "minimum_across_panels": 0.208984375,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.208984375,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 298,
+              "games": 512,
+              "losses": 107,
+              "mean_cash": 97589.54296875,
+              "mean_margin": 0.0,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.787109375,
+                    -0.71484375
+                  ],
+                  "win_rate_difference": -0.751953125
+                }
+              },
+              "win_rate": 0.208984375,
+              "win_rate_ci95": [
+                0.1796875,
+                0.23828125
+              ],
+              "wins": 107
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.234375,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 272,
+              "games": 512,
+              "losses": 120,
+              "mean_cash": 97550.8359375,
+              "mean_margin": 0.0,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.750048828125,
+                    -0.673828125
+                  ],
+                  "win_rate_difference": -0.712890625
+                }
+              },
+              "win_rate": 0.234375,
+              "win_rate_ci95": [
+                0.205078125,
+                0.2637207031250002
+              ],
+              "wins": 120
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.2109375,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 148,
+              "games": 256,
+              "losses": 54,
+              "mean_cash": 98207.65234375,
+              "mean_margin": 0.0,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.7890625,
+                    -0.6875
+                  ],
+                  "win_rate_difference": -0.73828125
+                }
+              },
+              "win_rate": 0.2109375,
+              "win_rate_ci95": [
+                0.16796875,
+                0.25390625
+              ],
+              "wins": 54
+            }
+          }
+        }
+      }
+    },
+    "ppo-9980111aa0f1e7f6": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "Day3 v2",
+      "minimum_across_panels": 0.74609375,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.74609375,
+          "worst_opponents": {
+            "ahmed_v27": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99548.89453125,
+              "mean_margin": 6375.271484375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.001953125,
+                    0.02734375
+                  ],
+                  "win_rate_difference": 0.01171875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.693359375,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99218.689453125,
+              "mean_margin": 6475.212890625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "flexon_v5": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99288.875,
+              "mean_margin": 6390.068359375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "market_smart_v8": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99288.8828125,
+              "mean_margin": 6386.84765625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "seven_turn": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99288.875,
+              "mean_margin": 6390.068359375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "shop0909": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99289.833984375,
+              "mean_margin": 6401.197265625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.7578125,
+          "worst_opponents": {
+            "aurax_reactive_v1": {
+              "draws": 0,
+              "games": 512,
+              "losses": 124,
+              "mean_cash": 103343.9609375,
+              "mean_margin": 8798.087890625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.013671875,
+                    0.009765625
+                  ],
+                  "win_rate_difference": -0.001953125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.005859375,
+                    0.0
+                  ],
+                  "win_rate_difference": -0.001953125
+                }
+              },
+              "win_rate": 0.7578125,
+              "win_rate_ci95": [
+                0.703125,
+                0.80859375
+              ],
+              "wins": 388
+            },
+            "moon_v215": {
+              "draws": 0,
+              "games": 512,
+              "losses": 124,
+              "mean_cash": 103409.609375,
+              "mean_margin": 8803.13671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.01171875,
+                    0.01171875
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.005859375,
+                    0.0
+                  ],
+                  "win_rate_difference": -0.001953125
+                }
+              },
+              "win_rate": 0.7578125,
+              "win_rate_ci95": [
+                0.703125,
+                0.80859375
+              ],
+              "wins": 388
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.7890625,
+          "worst_opponents": {
+            "thomas_955_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 54,
+              "mean_cash": 101916.546875,
+              "mean_margin": 7021.859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.015625,
+                    0.14453125
+                  ],
+                  "win_rate_difference": 0.06640625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.7890625,
+              "win_rate_ci95": [
+                0.71484375,
+                0.85546875
+              ],
+              "wins": 202
+            }
+          }
+        }
+      }
+    },
+    "ppo-bf0aa03b41428d97": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "Day3 v1",
+      "minimum_across_panels": 0.75,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.75,
+          "worst_opponents": {
+            "ahmed_v27": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 101034.603515625,
+              "mean_margin": 7119.0,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.025390625,
+                    0.056640625
+                  ],
+                  "win_rate_difference": 0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.033203125,
+                    0.041015625
+                  ],
+                  "win_rate_difference": 0.00390625
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.703125,
+                0.794921875
+              ],
+              "wins": 384
+            },
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 100682.828125,
+              "mean_margin": 7123.654296875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.02734375,
+                    0.0546875
+                  ],
+                  "win_rate_difference": 0.013671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.03125,
+                    0.041015625
+                  ],
+                  "win_rate_difference": 0.00390625
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.703125,
+                0.794921875
+              ],
+              "wins": 384
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.75,
+          "worst_opponents": {
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 103630.88671875,
+              "mean_margin": 7244.6953125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.0546875,
+                    0.025390625
+                  ],
+                  "win_rate_difference": -0.013671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.0546875,
+                    0.017626953125000178
+                  ],
+                  "win_rate_difference": -0.017578125
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.705078125,
+                0.79296875
+              ],
+              "wins": 384
+            },
+            "flexon_v5": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 103703.931640625,
+              "mean_margin": 7198.283203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.056640625,
+                    0.0234375
+                  ],
+                  "win_rate_difference": -0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.05859375,
+                    0.017578125
+                  ],
+                  "win_rate_difference": -0.01953125
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.705078125,
+                0.79296875
+              ],
+              "wins": 384
+            },
+            "market_smart_v8": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 103703.984375,
+              "mean_margin": 7195.060546875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.056640625,
+                    0.0234375
+                  ],
+                  "win_rate_difference": -0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.05859375,
+                    0.017578125
+                  ],
+                  "win_rate_difference": -0.01953125
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.705078125,
+                0.79296875
+              ],
+              "wins": 384
+            },
+            "seven_turn": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 103703.931640625,
+              "mean_margin": 7198.283203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.056640625,
+                    0.0234375
+                  ],
+                  "win_rate_difference": -0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.05859375,
+                    0.017578125
+                  ],
+                  "win_rate_difference": -0.01953125
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.705078125,
+                0.79296875
+              ],
+              "wins": 384
+            },
+            "shop0909": {
+              "draws": 0,
+              "games": 512,
+              "losses": 128,
+              "mean_cash": 103704.751953125,
+              "mean_margin": 7209.28125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.056640625,
+                    0.0234375
+                  ],
+                  "win_rate_difference": -0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.05859375,
+                    0.017578125
+                  ],
+                  "win_rate_difference": -0.01953125
+                }
+              },
+              "win_rate": 0.75,
+              "win_rate_ci95": [
+                0.705078125,
+                0.79296875
+              ],
+              "wins": 384
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.80859375,
+          "worst_opponents": {
+            "thomas_955_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 49,
+              "mean_cash": 103643.12109375,
+              "mean_margin": 6721.3359375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.171875
+                  ],
+                  "win_rate_difference": 0.0859375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.05859375,
+                    0.09765625
+                  ],
+                  "win_rate_difference": 0.01953125
+                }
+              },
+              "win_rate": 0.80859375,
+              "win_rate_ci95": [
+                0.7421875,
+                0.87109375
+              ],
+              "wins": 207
+            }
+          }
+        }
+      }
+    },
+    "ppo-c90da6b7b3ea061d": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "Day9",
+      "minimum_across_panels": 0.74609375,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.74609375,
+          "worst_opponents": {
+            "ahmed_v27": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99562.5625,
+              "mean_margin": 6334.92578125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.001953125,
+                    0.02734375
+                  ],
+                  "win_rate_difference": 0.01171875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.693359375,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99232.96875,
+              "mean_margin": 6436.11328125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "flexon_v5": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99302.544921875,
+              "mean_margin": 6349.775390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "market_smart_v8": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99302.552734375,
+              "mean_margin": 6346.57421875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "seven_turn": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99302.544921875,
+              "mean_margin": 6349.775390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            },
+            "shop0909": {
+              "draws": 0,
+              "games": 512,
+              "losses": 130,
+              "mean_cash": 99303.501953125,
+              "mean_margin": 6360.8515625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.025390625
+                  ],
+                  "win_rate_difference": 0.009765625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.74609375,
+              "win_rate_ci95": [
+                0.69140625,
+                0.794921875
+              ],
+              "wins": 382
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.759765625,
+          "worst_opponents": {
+            "aurax_reactive_v1": {
+              "draws": 0,
+              "games": 512,
+              "losses": 123,
+              "mean_cash": 103390.244140625,
+              "mean_margin": 8828.33203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.01171875,
+                    0.01171875
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.759765625,
+              "win_rate_ci95": [
+                0.705078125,
+                0.810546875
+              ],
+              "wins": 389
+            },
+            "moon_v215": {
+              "draws": 0,
+              "games": 512,
+              "losses": 123,
+              "mean_cash": 103455.892578125,
+              "mean_margin": 8833.380859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.009765625,
+                    0.013671875
+                  ],
+                  "win_rate_difference": 0.001953125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.759765625,
+              "win_rate_ci95": [
+                0.705078125,
+                0.810546875
+              ],
+              "wins": 389
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.7890625,
+          "worst_opponents": {
+            "thomas_955_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 54,
+              "mean_cash": 101916.546875,
+              "mean_margin": 7021.859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.015625,
+                    0.14453125
+                  ],
+                  "win_rate_difference": 0.06640625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 0.7890625,
+              "win_rate_ci95": [
+                0.71484375,
+                0.85546875
+              ],
+              "wins": 202
+            }
+          }
+        }
+      }
+    },
+    "pro8-a06-r12": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "A06 r12 calendar",
+      "minimum_across_panels": 0.640625,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.640625,
+          "worst_opponents": {
+            "flexon_v5": {
+              "draws": 0,
+              "games": 512,
+              "losses": 184,
+              "mean_cash": 98647.876953125,
+              "mean_margin": 4519.390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.1640625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.095703125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.173828125,
+                    -0.037109375
+                  ],
+                  "win_rate_difference": -0.10546875
+                }
+              },
+              "win_rate": 0.640625,
+              "win_rate_ci95": [
+                0.583935546875,
+                0.697265625
+              ],
+              "wins": 328
+            },
+            "market_smart_v8": {
+              "draws": 0,
+              "games": 512,
+              "losses": 184,
+              "mean_cash": 98647.966796875,
+              "mean_margin": 4517.044921875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.1640625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.095703125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.173828125,
+                    -0.037109375
+                  ],
+                  "win_rate_difference": -0.10546875
+                }
+              },
+              "win_rate": 0.640625,
+              "win_rate_ci95": [
+                0.583935546875,
+                0.697265625
+              ],
+              "wins": 328
+            },
+            "seven_turn": {
+              "draws": 0,
+              "games": 512,
+              "losses": 184,
+              "mean_cash": 98647.876953125,
+              "mean_margin": 4519.390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.1640625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.095703125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.173828125,
+                    -0.037109375
+                  ],
+                  "win_rate_difference": -0.10546875
+                }
+              },
+              "win_rate": 0.640625,
+              "win_rate_ci95": [
+                0.583935546875,
+                0.697265625
+              ],
+              "wins": 328
+            },
+            "shop0909": {
+              "draws": 0,
+              "games": 512,
+              "losses": 184,
+              "mean_cash": 98648.26171875,
+              "mean_margin": 4527.26953125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.1640625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.095703125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.173828125,
+                    -0.037109375
+                  ],
+                  "win_rate_difference": -0.10546875
+                }
+              },
+              "win_rate": 0.640625,
+              "win_rate_ci95": [
+                0.583935546875,
+                0.697265625
+              ],
+              "wins": 328
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.671875,
+          "worst_opponents": {
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 168,
+              "mean_cash": 97966.474609375,
+              "mean_margin": 5130.8515625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.162109375,
+                    -0.021484375
+                  ],
+                  "win_rate_difference": -0.091796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.166015625,
+                    -0.025390625
+                  ],
+                  "win_rate_difference": -0.095703125
+                }
+              },
+              "win_rate": 0.671875,
+              "win_rate_ci95": [
+                0.61328125,
+                0.724609375
+              ],
+              "wins": 344
+            },
+            "flexon_v5": {
+              "draws": 0,
+              "games": 512,
+              "losses": 168,
+              "mean_cash": 98046.3125,
+              "mean_margin": 5079.427734375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.162109375,
+                    -0.023388671874999822
+                  ],
+                  "win_rate_difference": -0.09375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.166015625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.09765625
+                }
+              },
+              "win_rate": 0.671875,
+              "win_rate_ci95": [
+                0.615234375,
+                0.7265625
+              ],
+              "wins": 344
+            },
+            "market_smart_v8": {
+              "draws": 0,
+              "games": 512,
+              "losses": 168,
+              "mean_cash": 98046.380859375,
+              "mean_margin": 5076.8125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.162109375,
+                    -0.023388671874999822
+                  ],
+                  "win_rate_difference": -0.09375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.166015625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.09765625
+                }
+              },
+              "win_rate": 0.671875,
+              "win_rate_ci95": [
+                0.615234375,
+                0.7265625
+              ],
+              "wins": 344
+            },
+            "seven_turn": {
+              "draws": 0,
+              "games": 512,
+              "losses": 168,
+              "mean_cash": 98046.3125,
+              "mean_margin": 5079.427734375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.162109375,
+                    -0.023388671874999822
+                  ],
+                  "win_rate_difference": -0.09375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.166015625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.09765625
+                }
+              },
+              "win_rate": 0.671875,
+              "win_rate_ci95": [
+                0.615234375,
+                0.7265625
+              ],
+              "wins": 344
+            },
+            "shop0909": {
+              "draws": 0,
+              "games": 512,
+              "losses": 168,
+              "mean_cash": 98046.568359375,
+              "mean_margin": 5087.54296875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.162109375,
+                    -0.023388671874999822
+                  ],
+                  "win_rate_difference": -0.09375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.166015625,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.09765625
+                }
+              },
+              "win_rate": 0.671875,
+              "win_rate_ci95": [
+                0.615234375,
+                0.7265625
+              ],
+              "wins": 344
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.65625,
+          "worst_opponents": {
+            "thomas_955_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 88,
+              "mean_cash": 95451.546875,
+              "mean_margin": 4835.71875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.1640625,
+                    0.02734375
+                  ],
+                  "win_rate_difference": -0.06640625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.22265625,
+                    -0.04296875
+                  ],
+                  "win_rate_difference": -0.1328125
+                }
+              },
+              "win_rate": 0.65625,
+              "win_rate_ci95": [
+                0.57421875,
+                0.734375
+              ],
+              "wins": 168
+            }
+          }
+        }
+      }
+    },
+    "pro8-a06-r6": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "A06 r6",
+      "minimum_across_panels": 0.634765625,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.634765625,
+          "worst_opponents": {
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 187,
+              "mean_cash": 97052.541015625,
+              "mean_margin": 4294.8671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.171875,
+                    -0.03125
+                  ],
+                  "win_rate_difference": -0.1015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.181640625,
+                    -0.041015625
+                  ],
+                  "win_rate_difference": -0.111328125
+                }
+              },
+              "win_rate": 0.634765625,
+              "win_rate_ci95": [
+                0.57421875,
+                0.693359375
+              ],
+              "wins": 325
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.712890625,
+          "worst_opponents": {
+            "moon_v215": {
+              "draws": 0,
+              "games": 512,
+              "losses": 147,
+              "mean_cash": 99092.71484375,
+              "mean_margin": 6753.833984375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.10546875,
+                    0.015625
+                  ],
+                  "win_rate_difference": -0.044921875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.10546875,
+                    0.013671875
+                  ],
+                  "win_rate_difference": -0.046875
+                }
+              },
+              "win_rate": 0.712890625,
+              "win_rate_ci95": [
+                0.65625,
+                0.767578125
+              ],
+              "wins": 365
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.69921875,
+          "worst_opponents": {
+            "aurax_shop_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 77,
+              "mean_cash": 99136.36328125,
+              "mean_margin": 5488.0546875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.20703125,
+                    -0.031152343749999645
+                  ],
+                  "win_rate_difference": -0.1171875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.20703125,
+                    -0.02734375
+                  ],
+                  "win_rate_difference": -0.11328125
+                }
+              },
+              "win_rate": 0.69921875,
+              "win_rate_ci95": [
+                0.625,
+                0.7734375
+              ],
+              "wins": 179
+            },
+            "thomas_955_v2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 77,
+              "mean_cash": 96192.94921875,
+              "mean_margin": 5549.23046875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.11328125,
+                    0.0625
+                  ],
+                  "win_rate_difference": -0.0234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.171875,
+                    -0.01171875
+                  ],
+                  "win_rate_difference": -0.08984375
+                }
+              },
+              "win_rate": 0.69921875,
+              "win_rate_ci95": [
+                0.62109375,
+                0.7734375
+              ],
+              "wins": 179
+            }
+          }
+        }
+      }
+    },
+    "pro8-a08-r11": {
+      "all_panels_all_opponents_over_50": true,
+      "label": "A08 r11",
+      "minimum_across_panels": 0.609375,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.609375,
+          "worst_opponents": {
+            "native:r1": {
+              "draws": 0,
+              "games": 512,
+              "losses": 200,
+              "mean_cash": 99381.830078125,
+              "mean_margin": 3424.388671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.037109375,
+                    0.185546875
+                  ],
+                  "win_rate_difference": 0.111328125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.3671875,
+                    -0.2421875
+                  ],
+                  "win_rate_difference": -0.3046875
+                }
+              },
+              "win_rate": 0.609375,
+              "win_rate_ci95": [
+                0.556640625,
+                0.662109375
+              ],
+              "wins": 312
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.609375,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 200,
+              "mean_cash": 98018.888671875,
+              "mean_margin": 3116.30859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.30859375,
+                    0.439453125
+                  ],
+                  "win_rate_difference": 0.375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.400390625,
+                    -0.27734375
+                  ],
+                  "win_rate_difference": -0.337890625
+                }
+              },
+              "win_rate": 0.609375,
+              "win_rate_ci95": [
+                0.5546875,
+                0.662109375
+              ],
+              "wins": 312
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": true,
+          "all_individual_ci_lower_bounds_over_50": true,
+          "minimum_win_rate": 0.609375,
+          "worst_opponents": {
+            "native:r1": {
+              "draws": 0,
+              "games": 256,
+              "losses": 100,
+              "mean_cash": 99911.7890625,
+              "mean_margin": 3345.5546875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0625,
+                    0.28515625
+                  ],
+                  "win_rate_difference": 0.17578125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.4296875,
+                    -0.24990234374999964
+                  ],
+                  "win_rate_difference": -0.33984375
+                }
+              },
+              "win_rate": 0.609375,
+              "win_rate_ci95": [
+                0.53125,
+                0.6875
+              ],
+              "wins": 156
+            }
+          }
+        }
+      }
+    },
+    "public-ahmed-v37-original": {
+      "all_panels_all_opponents_over_50": false,
+      "label": "v37 unchanged",
+      "minimum_across_panels": 0.2265625,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.30078125,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 358,
+              "mean_cash": 92742.615234375,
+              "mean_margin": -4615.55859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.025390625,
+                    0.158203125
+                  ],
+                  "win_rate_difference": 0.091796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.720703125,
+                    -0.599609375
+                  ],
+                  "win_rate_difference": -0.66015625
+                }
+              },
+              "win_rate": 0.30078125,
+              "win_rate_ci95": [
+                0.244140625,
+                0.357421875
+              ],
+              "wins": 154
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.27734375,
+          "worst_opponents": {
+            "native:r1": {
+              "draws": 0,
+              "games": 512,
+              "losses": 370,
+              "mean_cash": 95444.150390625,
+              "mean_margin": -5235.431640625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.23828125,
+                    -0.08984375
+                  ],
+                  "win_rate_difference": -0.166015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.70703125,
+                    -0.587890625
+                  ],
+                  "win_rate_difference": -0.6484375
+                }
+              },
+              "win_rate": 0.27734375,
+              "win_rate_ci95": [
+                0.224609375,
+                0.33203125
+              ],
+              "wins": 142
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.2265625,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 198,
+              "mean_cash": 96403.27734375,
+              "mean_margin": -5676.9140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.06259765624999997,
+                    0.09765625
+                  ],
+                  "win_rate_difference": 0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.80078125,
+                    -0.640625
+                  ],
+                  "win_rate_difference": -0.72265625
+                }
+              },
+              "win_rate": 0.2265625,
+              "win_rate_ci95": [
+                0.15625,
+                0.296875
+              ],
+              "wins": 58
+            }
+          }
+        }
+      }
+    },
+    "team-terminal-suffix-v1": {
+      "all_panels_all_opponents_over_50": false,
+      "label": "Terminal suffix",
+      "minimum_across_panels": 0.373046875,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.373046875,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 158,
+              "games": 512,
+              "losses": 163,
+              "mean_cash": 97644.3828125,
+              "mean_margin": 77.75390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12104492187500002,
+                    0.2109375
+                  ],
+                  "win_rate_difference": 0.1640625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.638671875,
+                    -0.537109375
+                  ],
+                  "win_rate_difference": -0.587890625
+                }
+              },
+              "win_rate": 0.373046875,
+              "win_rate_ci95": [
+                0.326171875,
+                0.419921875
+              ],
+              "wins": 191
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.392578125,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 134,
+              "games": 512,
+              "losses": 177,
+              "mean_cash": 97610.703125,
+              "mean_margin": 78.38671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.11328125,
+                    0.205078125
+                  ],
+                  "win_rate_difference": 0.158203125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.60546875,
+                    -0.501953125
+                  ],
+                  "win_rate_difference": -0.5546875
+                }
+              },
+              "win_rate": 0.392578125,
+              "win_rate_ci95": [
+                0.34765625,
+                0.4375
+              ],
+              "wins": 201
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.3828125,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 76,
+              "games": 256,
+              "losses": 82,
+              "mean_cash": 98226.6640625,
+              "mean_margin": 15.23828125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.109375,
+                    0.2421875
+                  ],
+                  "win_rate_difference": 0.171875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.63671875,
+                    -0.49609375
+                  ],
+                  "win_rate_difference": -0.56640625
+                }
+              },
+              "win_rate": 0.3828125,
+              "win_rate_ci95": [
+                0.3203125,
+                0.4453125
+              ],
+              "wins": 98
+            }
+          }
+        }
+      }
+    },
+    "team-v37-feed-reserve-v1": {
+      "all_panels_all_opponents_over_50": false,
+      "label": "v37 feed reserve",
+      "minimum_across_panels": 0.2265625,
+      "panels": {
+        "holdout": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.30078125,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 0,
+              "games": 512,
+              "losses": 358,
+              "mean_cash": 92742.615234375,
+              "mean_margin": -4615.55859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.025390625,
+                    0.158203125
+                  ],
+                  "win_rate_difference": 0.091796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.720703125,
+                    -0.599609375
+                  ],
+                  "win_rate_difference": -0.66015625
+                }
+              },
+              "win_rate": 0.30078125,
+              "win_rate_ci95": [
+                0.244140625,
+                0.357421875
+              ],
+              "wins": 154
+            }
+          }
+        },
+        "representative": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.27734375,
+          "worst_opponents": {
+            "native:r1": {
+              "draws": 0,
+              "games": 512,
+              "losses": 370,
+              "mean_cash": 95444.150390625,
+              "mean_margin": -5235.431640625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.23828125,
+                    -0.08984375
+                  ],
+                  "win_rate_difference": -0.166015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.70703125,
+                    -0.587890625
+                  ],
+                  "win_rate_difference": -0.6484375
+                }
+              },
+              "win_rate": 0.27734375,
+              "win_rate_ci95": [
+                0.224609375,
+                0.33203125
+              ],
+              "wins": 142
+            }
+          }
+        },
+        "stress": {
+          "all_16_over_50": false,
+          "all_individual_ci_lower_bounds_over_50": false,
+          "minimum_win_rate": 0.2265625,
+          "worst_opponents": {
+            "native:r2": {
+              "draws": 0,
+              "games": 256,
+              "losses": 198,
+              "mean_cash": 96403.27734375,
+              "mean_margin": -5676.9140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.06259765624999997,
+                    0.09765625
+                  ],
+                  "win_rate_difference": 0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.80078125,
+                    -0.640625
+                  ],
+                  "win_rate_difference": -0.72265625
+                }
+              },
+              "win_rate": 0.2265625,
+              "win_rate_ci95": [
+                0.15625,
+                0.296875
+              ],
+              "wins": 58
+            }
+          }
+        }
+      }
+    }
+  },
+  "definition": "Minimum strict win rate across 16 opponents, combining both seats, separately for each panel.",
+  "scope": "Fixed opponent roster; not a round robin among leaderboard candidates. Observed rates do not guarantee future wins."
+}

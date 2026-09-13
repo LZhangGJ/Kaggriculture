@@ -1,5 +1,5 @@
 {
-  "analysis_sha256": "0fc54a654b56250c08fea547d3242a8d6fe9c0ad9fd7f29f17972ded06c01c15",
+  "analysis_sha256": "55ef267cec8a2aded83b2fc07686623b537c0aad1c61911429b156cdca5103c7",
   "candidate_labels": {
     "ppo-495ebc48210f14ae": "AFS R2",
     "ppo-9980111aa0f1e7f6": "Day3 v2",
@@ -8,10 +8,11 @@
     "pro8-a06-r12": "A06 r12 calendar",
     "pro8-a06-r6": "A06 r6",
     "pro8-a08-r11": "A08 r11",
+    "public-ahmed-v37-original": "v37 unchanged",
     "team-terminal-suffix-v1": "Terminal suffix",
     "team-v37-feed-reserve-v1": "v37 feed reserve"
   },
-  "created_unix": 1789275230.4951873,
+  "created_unix": 1789277881.7500927,
   "numpy_version": "2.4.4",
   "panels": {
     "holdout": {
@@ -226,6 +227,35 @@
                 0.767578125
               ],
               "wins": 366
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140762.580078125,
+              "mean_margin": 81071.650390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.21484375,
+                    0.3203125
+                  ],
+                  "win_rate_difference": 0.265625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.306640625
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -495,6 +525,35 @@
               ],
               "wins": 381
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 138554.6953125,
+              "mean_margin": 74996.482421875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.169921875,
+                    0.267578125
+                  ],
+                  "win_rate_difference": 0.216796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.1640625,
+                    0.26171875
+                  ],
+                  "win_rate_difference": 0.2109375
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -762,6 +821,35 @@
                 0.7578125
               ],
               "wins": 360
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 137657.998046875,
+              "mean_margin": 69279.6484375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.212890625,
+                    0.318359375
+                  ],
+                  "win_rate_difference": 0.263671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.30859375
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -1031,6 +1119,35 @@
               ],
               "wins": 498
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 4,
+              "mean_cash": 96503.150390625,
+              "mean_margin": 16067.568359375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.03515625,
+                    0.099609375
+                  ],
+                  "win_rate_difference": 0.06640625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.01171875,
+                    0.064453125
+                  ],
+                  "win_rate_difference": 0.037109375
+                }
+              },
+              "win_rate": 0.9921875,
+              "win_rate_ci95": [
+                0.98046875,
+                1.0
+              ],
+              "wins": 508
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -1299,6 +1416,35 @@
               ],
               "wins": 474
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 105208.873046875,
+              "mean_margin": 24086.703125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.052734375,
+                    0.119140625
+                  ],
+                  "win_rate_difference": 0.083984375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.1171875,
+                    0.205078125
+                  ],
+                  "win_rate_difference": 0.16015625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -1544,6 +1690,35 @@
               "losses": 0,
               "mean_cash": 102911.70703125,
               "mean_margin": 26011.1953125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 105399.5234375,
+              "mean_margin": 31994.0390625,
               "paired_differences": {
                 "ppo-495ebc48210f14ae": {
                   "ci95": [
@@ -1835,6 +2010,35 @@
               ],
               "wins": 492
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 97886.72265625,
+              "mean_margin": 17476.173828125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0078125,
+                    0.041015625
+                  ],
+                  "win_rate_difference": 0.0234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.009765625,
+                    0.044921875
+                  ],
+                  "win_rate_difference": 0.025390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -2102,6 +2306,35 @@
                 0.7578125
               ],
               "wins": 360
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140643.80078125,
+              "mean_margin": 80930.203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.212890625,
+                    0.318359375
+                  ],
+                  "win_rate_difference": 0.263671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.30859375
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -2371,6 +2604,35 @@
               ],
               "wins": 360
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140643.79296875,
+              "mean_margin": 80930.1875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.212890625,
+                    0.318359375
+                  ],
+                  "win_rate_difference": 0.263671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.30859375
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -2638,6 +2900,35 @@
                 0.794921875
               ],
               "wins": 381
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 2,
+              "mean_cash": 100034.48046875,
+              "mean_margin": 9314.732421875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.162109375,
+                    0.263671875
+                  ],
+                  "win_rate_difference": 0.2109375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.158203125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.205078125
+                }
+              },
+              "win_rate": 0.99609375,
+              "win_rate_ci95": [
+                0.990234375,
+                1.0
+              ],
+              "wins": 510
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -2907,6 +3198,35 @@
               ],
               "wins": 312
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 342,
+              "mean_cash": 93628.431640625,
+              "mean_margin": -4095.1328125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.24609375,
+                    -0.087890625
+                  ],
+                  "win_rate_difference": -0.166015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.6484375,
+                    -0.515625
+                  ],
+                  "win_rate_difference": -0.58203125
+                }
+              },
+              "win_rate": 0.33203125,
+              "win_rate_ci95": [
+                0.275390625,
+                0.388671875
+              ],
+              "wins": 170
+            },
             "team-terminal-suffix-v1": {
               "draws": 2,
               "games": 512,
@@ -3174,6 +3494,35 @@
                 0.69140625
               ],
               "wins": 328
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 358,
+              "mean_cash": 92742.615234375,
+              "mean_margin": -4615.55859375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.025390625,
+                    0.158203125
+                  ],
+                  "win_rate_difference": 0.091796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.720703125,
+                    -0.599609375
+                  ],
+                  "win_rate_difference": -0.66015625
+                }
+              },
+              "win_rate": 0.30078125,
+              "win_rate_ci95": [
+                0.244140625,
+                0.357421875
+              ],
+              "wins": 154
             },
             "team-terminal-suffix-v1": {
               "draws": 158,
@@ -3443,6 +3792,35 @@
               ],
               "wins": 360
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140643.80078125,
+              "mean_margin": 80930.203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.212890625,
+                    0.318359375
+                  ],
+                  "win_rate_difference": 0.263671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.30859375
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -3710,6 +4088,35 @@
                 0.7578125
               ],
               "wins": 360
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140643.998046875,
+              "mean_margin": 81003.33984375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.212890625,
+                    0.318359375
+                  ],
+                  "win_rate_difference": 0.263671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.205078125,
+                    0.30859375
+                  ],
+                  "win_rate_difference": 0.25390625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -3979,6 +4386,35 @@
               ],
               "wins": 361
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 4,
+              "mean_cash": 98211.94921875,
+              "mean_margin": 6429.140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.197265625,
+                    0.302734375
+                  ],
+                  "win_rate_difference": 0.248046875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.1875,
+                    0.2910644531250002
+                  ],
+                  "win_rate_difference": 0.23828125
+                }
+              },
+              "win_rate": 0.9921875,
+              "win_rate_ci95": [
+                0.984375,
+                0.998046875
+              ],
+              "wins": 508
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -4246,6 +4682,35 @@
                 0.794921875
               ],
               "wins": 380
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 9,
+              "mean_cash": 97497.123046875,
+              "mean_margin": 8153.654296875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.173828125,
+                    0.279296875
+                  ],
+                  "win_rate_difference": 0.224609375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.10546875,
+                    0.201171875
+                  ],
+                  "win_rate_difference": 0.154296875
+                }
+              },
+              "win_rate": 0.982421875,
+              "win_rate_ci95": [
+                0.966796875,
+                0.994140625
+              ],
+              "wins": 503
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -4518,6 +4983,35 @@
                 ],
                 "wins": 181
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140661.65234375,
+                "mean_margin": 81010.82421875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -4785,6 +5279,35 @@
                   0.77734375
                 ],
                 "wins": 185
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140863.5078125,
+                "mean_margin": 81132.4765625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -5056,6 +5579,35 @@
                 ],
                 "wins": 190
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 138386.37109375,
+                "mean_margin": 74922.203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.16015625,
+                      0.26171875
+                    ],
+                    "win_rate_difference": 0.2109375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.15625,
+                      0.25390625
+                    ],
+                    "win_rate_difference": 0.203125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -5323,6 +5875,35 @@
                   0.80078125
                 ],
                 "wins": 191
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 138723.01953125,
+                "mean_margin": 75070.76171875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.171875,
+                      0.2734375
+                    ],
+                    "win_rate_difference": 0.22265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.16796875,
+                      0.26953125
+                    ],
+                    "win_rate_difference": 0.21875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -5594,6 +6175,35 @@
                 ],
                 "wins": 178
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 137964.1015625,
+                "mean_margin": 69407.109375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -5861,6 +6471,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 137351.89453125,
+                "mean_margin": 69152.1875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -6132,6 +6771,35 @@
                 ],
                 "wins": 249
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 2,
+                "mean_cash": 96639.98046875,
+                "mean_margin": 16141.58203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.03515625,
+                      0.10546875
+                    ],
+                    "win_rate_difference": 0.0703125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.015625,
+                      0.07421875
+                    ],
+                    "win_rate_difference": 0.04296875
+                  }
+                },
+                "win_rate": 0.9921875,
+                "win_rate_ci95": [
+                  0.98046875,
+                  1.0
+                ],
+                "wins": 254
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -6399,6 +7067,35 @@
                   0.9921875
                 ],
                 "wins": 249
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 2,
+                "mean_cash": 96366.3203125,
+                "mean_margin": 15993.5546875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.03125,
+                      0.09765625
+                    ],
+                    "win_rate_difference": 0.0625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.00390625,
+                      0.05859375
+                    ],
+                    "win_rate_difference": 0.03125
+                  }
+                },
+                "win_rate": 0.9921875,
+                "win_rate_ci95": [
+                  0.98046875,
+                  1.0
+                ],
+                "wins": 254
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -6670,6 +7367,35 @@
                 ],
                 "wins": 238
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 105261.59765625,
+                "mean_margin": 24089.03125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.046875,
+                      0.11328125
+                    ],
+                    "win_rate_difference": 0.078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.109375,
+                      0.19921875
+                    ],
+                    "win_rate_difference": 0.15234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -6937,6 +7663,35 @@
                   0.953125
                 ],
                 "wins": 236
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 105156.1484375,
+                "mean_margin": 24084.375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0546875,
+                      0.12890625
+                    ],
+                    "win_rate_difference": 0.08984375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.125,
+                      0.21484375
+                    ],
+                    "win_rate_difference": 0.16796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -7208,6 +7963,35 @@
                 ],
                 "wins": 256
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 105328.03125,
+                "mean_margin": 32095.3828125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -7453,6 +8237,35 @@
                 "losses": 0,
                 "mean_cash": 102937.53125,
                 "mean_margin": 25882.0390625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 105471.015625,
+                "mean_margin": 31892.6953125,
                 "paired_differences": {
                   "ppo-495ebc48210f14ae": {
                     "ci95": [
@@ -7746,6 +8559,35 @@
                 ],
                 "wins": 246
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 98038.95703125,
+                "mean_margin": 17517.05078125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0078125,
+                      0.04296875
+                    ],
+                    "win_rate_difference": 0.0234375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0078125,
+                      0.04296875
+                    ],
+                    "win_rate_difference": 0.0234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -8013,6 +8855,35 @@
                   0.984375
                 ],
                 "wins": 246
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 97734.48828125,
+                "mean_margin": 17435.296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0078125,
+                      0.04296875
+                    ],
+                    "win_rate_difference": 0.0234375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0078125,
+                      0.046972656250000355
+                    ],
+                    "win_rate_difference": 0.02734375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -8284,6 +9155,35 @@
                 ],
                 "wins": 178
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140935.4921875,
+                "mean_margin": 81068.5859375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -8551,6 +9451,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140352.109375,
+                "mean_margin": 80791.8203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -8822,6 +9751,35 @@
                 ],
                 "wins": 178
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140935.484375,
+                "mean_margin": 81068.5703125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -9089,6 +10047,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140352.1015625,
+                "mean_margin": 80791.8046875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -9360,6 +10347,35 @@
                 ],
                 "wins": 190
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 100195.98828125,
+                "mean_margin": 9395.25,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.16015625,
+                      0.25791015625000036
+                    ],
+                    "win_rate_difference": 0.20703125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.15234375,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.19921875
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -9627,6 +10643,35 @@
                   0.80078125
                 ],
                 "wins": 191
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 99872.97265625,
+                "mean_margin": 9234.21484375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1640625,
+                      0.26572265625000036
+                    ],
+                    "win_rate_difference": 0.21484375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.16015625,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.2109375
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -9898,6 +10943,35 @@
                 ],
                 "wins": 153
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 170,
+                "mean_cash": 93751.03125,
+                "mean_margin": -4104.12109375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.23046875,
+                      -0.06640625
+                    ],
+                    "win_rate_difference": -0.1484375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.64453125,
+                      -0.5078125
+                    ],
+                    "win_rate_difference": -0.578125
+                  }
+                },
+                "win_rate": 0.3359375,
+                "win_rate_ci95": [
+                  0.27734375,
+                  0.39453125
+                ],
+                "wins": 86
+              },
               "team-terminal-suffix-v1": {
                 "draws": 1,
                 "games": 256,
@@ -10165,6 +11239,35 @@
                   0.67578125
                 ],
                 "wins": 159
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 172,
+                "mean_cash": 93505.83203125,
+                "mean_margin": -4086.14453125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.26953125,
+                      -0.09765625
+                    ],
+                    "win_rate_difference": -0.18359375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.65625,
+                      -0.515625
+                    ],
+                    "win_rate_difference": -0.5859375
+                  }
+                },
+                "win_rate": 0.328125,
+                "win_rate_ci95": [
+                  0.26953125,
+                  0.38671875
+                ],
+                "wins": 84
               },
               "team-terminal-suffix-v1": {
                 "draws": 1,
@@ -10436,6 +11539,35 @@
                 ],
                 "wins": 171
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 180,
+                "mean_cash": 92777.86328125,
+                "mean_margin": -4629.69140625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.01953125,
+                      0.171875
+                    ],
+                    "win_rate_difference": 0.09765625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.7265625,
+                      -0.6015625
+                    ],
+                    "win_rate_difference": -0.6640625
+                  }
+                },
+                "win_rate": 0.296875,
+                "win_rate_ci95": [
+                  0.23828125,
+                  0.35546875
+                ],
+                "wins": 76
+              },
               "team-terminal-suffix-v1": {
                 "draws": 79,
                 "games": 256,
@@ -10703,6 +11835,35 @@
                   0.671875
                 ],
                 "wins": 157
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 178,
+                "mean_cash": 92707.3671875,
+                "mean_margin": -4601.42578125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0078125,
+                      0.1640625
+                    ],
+                    "win_rate_difference": 0.0859375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.71875,
+                      -0.59375
+                    ],
+                    "win_rate_difference": -0.65625
+                  }
+                },
+                "win_rate": 0.3046875,
+                "win_rate_ci95": [
+                  0.24609375,
+                  0.36328125
+                ],
+                "wins": 78
               },
               "team-terminal-suffix-v1": {
                 "draws": 79,
@@ -10974,6 +12135,35 @@
                 ],
                 "wins": 178
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140935.4921875,
+                "mean_margin": 81068.5859375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -11241,6 +12431,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140352.109375,
+                "mean_margin": 80791.8203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -11512,6 +12731,35 @@
                 ],
                 "wins": 178
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140935.671875,
+                "mean_margin": 81141.7265625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -11779,6 +13027,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140352.32421875,
+                "mean_margin": 80864.953125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.21484375,
+                      0.3203125
+                    ],
+                    "win_rate_difference": 0.265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.2109375,
+                      0.31640625
+                    ],
+                    "win_rate_difference": 0.26171875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -12050,6 +13327,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 98233.78515625,
+                "mean_margin": 6492.04296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.19921875,
+                      0.3046875
+                    ],
+                    "win_rate_difference": 0.25
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -12317,6 +13623,35 @@
                   0.765625
                 ],
                 "wins": 182
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 3,
+                "mean_cash": 98190.11328125,
+                "mean_margin": 6366.23828125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.19140625,
+                      0.30087890625000036
+                    ],
+                    "win_rate_difference": 0.24609375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1875,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.2421875
+                  }
+                },
+                "win_rate": 0.98828125,
+                "win_rate_ci95": [
+                  0.97265625,
+                  1.0
+                ],
+                "wins": 253
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -12588,6 +13923,35 @@
                 ],
                 "wins": 190
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 5,
+                "mean_cash": 97523.0703125,
+                "mean_margin": 8257.46484375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.15625,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.2109375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.09765625,
+                      0.19921875
+                    ],
+                    "win_rate_difference": 0.1484375
+                  }
+                },
+                "win_rate": 0.98046875,
+                "win_rate_ci95": [
+                  0.9609375,
+                  0.99609375
+                ],
+                "wins": 251
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -12855,6 +14219,35 @@
                   0.796875
                 ],
                 "wins": 190
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 4,
+                "mean_cash": 97471.17578125,
+                "mean_margin": 8049.84375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.18359375,
+                      0.296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.109375,
+                      0.2109375
+                    ],
+                    "win_rate_difference": 0.16015625
+                  }
+                },
+                "win_rate": 0.984375,
+                "win_rate_ci95": [
+                  0.96875,
+                  0.99609375
+                ],
+                "wins": 252
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -13127,6 +14520,35 @@
               ],
               "wins": 3133
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 4096,
+              "losses": 359,
+              "mean_cash": 116781.53564453125,
+              "mean_margin": 40933.849853515625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.129638671875,
+                    0.1943359375
+                  ],
+                  "win_rate_difference": 0.160888671875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.046630859375,
+                    0.110595703125
+                  ],
+                  "win_rate_difference": 0.077392578125
+                }
+              },
+              "win_rate": 0.912353515625,
+              "win_rate_ci95": [
+                0.905517578125,
+                0.919189453125
+              ],
+              "wins": 3737
+            },
             "team-terminal-suffix-v1": {
               "draws": 80,
               "games": 4096,
@@ -13395,6 +14817,35 @@
               ],
               "wins": 3152
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 4096,
+              "losses": 360,
+              "mean_cash": 116551.40625,
+              "mean_margin": 40810.279541015625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.130126953125,
+                    0.1962890625
+                  ],
+                  "win_rate_difference": 0.162109375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.05517578125,
+                    0.12012329101562502
+                  ],
+                  "win_rate_difference": 0.086669921875
+                }
+              },
+              "win_rate": 0.912109375,
+              "win_rate_ci95": [
+                0.9052734375,
+                0.9189453125
+              ],
+              "wins": 3736
+            },
             "team-terminal-suffix-v1": {
               "draws": 80,
               "games": 4096,
@@ -13493,6 +14944,11 @@
         "pro8-a08-r11": {
           "maximum_measured_policy_latency_seconds": 0.4577189610572532,
           "mean_game_seconds": 4.257139251550075,
+          "optional_debug_parse_errors": 0
+        },
+        "public-ahmed-v37-original": {
+          "maximum_measured_policy_latency_seconds": 0.6536991469329223,
+          "mean_game_seconds": 0.9675425970752799,
           "optional_debug_parse_errors": 0
         },
         "team-terminal-suffix-v1": {
@@ -13710,6 +15166,35 @@
               0.7972442626953125
             ],
             "wins": 6285
+          },
+          "public-ahmed-v37-original": {
+            "draws": 0,
+            "games": 8192,
+            "losses": 719,
+            "mean_cash": 116666.47094726562,
+            "mean_margin": 40872.064697265625,
+            "paired_differences": {
+              "ppo-495ebc48210f14ae": {
+                "ci95": [
+                  0.1307342529296875,
+                  0.19446411132812502
+                ],
+                "win_rate_difference": 0.1614990234375
+              },
+              "ppo-c90da6b7b3ea061d": {
+                "ci95": [
+                  0.0513916015625,
+                  0.11450500488281251
+                ],
+                "win_rate_difference": 0.08203125
+              }
+            },
+            "win_rate": 0.9122314453125,
+            "win_rate_ci95": [
+              0.9056365966796875,
+              0.9189453125
+            ],
+            "wins": 7473
           },
           "team-terminal-suffix-v1": {
             "draws": 160,
@@ -13988,6 +15473,35 @@
               ],
               "wins": 359
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 143634.458984375,
+              "mean_margin": 83488.458984375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.18359375,
+                    0.28515625
+                  ],
+                  "win_rate_difference": 0.232421875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.1796875,
+                    0.279296875
+                  ],
+                  "win_rate_difference": 0.228515625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -14255,6 +15769,35 @@
                 0.810546875
               ],
               "wins": 389
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140213.220703125,
+              "mean_margin": 76040.564453125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.189453125,
+                    0.294921875
+                  ],
+                  "win_rate_difference": 0.240234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.189453125,
+                    0.294921875
+                  ],
+                  "win_rate_difference": 0.240234375
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -14524,6 +16067,35 @@
               ],
               "wins": 355
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 140194.67578125,
+              "mean_margin": 71208.990234375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.1875,
+                    0.2890625
+                  ],
+                  "win_rate_difference": 0.236328125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.18359375,
+                    0.283203125
+                  ],
+                  "win_rate_difference": 0.232421875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -14791,6 +16363,35 @@
                 0.994140625
               ],
               "wins": 501
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 2,
+              "mean_cash": 95972.17578125,
+              "mean_margin": 15944.998046875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.01953125,
+                    0.072265625
+                  ],
+                  "win_rate_difference": 0.044921875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0234375,
+                    0.076171875
+                  ],
+                  "win_rate_difference": 0.048828125
+                }
+              },
+              "win_rate": 0.99609375,
+              "win_rate_ci95": [
+                0.990234375,
+                1.0
+              ],
+              "wins": 510
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -15060,6 +16661,35 @@
               ],
               "wins": 478
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 105814.73828125,
+              "mean_margin": 23784.69140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.052734375,
+                    0.11723632812500018
+                  ],
+                  "win_rate_difference": 0.083984375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.11323242187500002,
+                    0.19921875
+                  ],
+                  "win_rate_difference": 0.154296875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -15305,6 +16935,35 @@
               "losses": 0,
               "mean_cash": 106426.2421875,
               "mean_margin": 26656.712890625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.005859375
+                  ],
+                  "win_rate_difference": 0.001953125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 107186.328125,
+              "mean_margin": 31476.47265625,
               "paired_differences": {
                 "ppo-495ebc48210f14ae": {
                   "ci95": [
@@ -15596,6 +17255,35 @@
               ],
               "wins": 487
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 3,
+              "mean_cash": 98141.21484375,
+              "mean_margin": 17104.072265625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.00390625,
+                    0.021484375
+                  ],
+                  "win_rate_difference": 0.0078125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.00390625,
+                    0.021484375
+                  ],
+                  "win_rate_difference": 0.0078125
+                }
+              },
+              "win_rate": 0.994140625,
+              "win_rate_ci95": [
+                0.984375,
+                1.0
+              ],
+              "wins": 509
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -15863,6 +17551,35 @@
                 0.748046875
               ],
               "wins": 355
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 143262.087890625,
+              "mean_margin": 83326.150390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.185546875,
+                    0.287109375
+                  ],
+                  "win_rate_difference": 0.234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.181640625,
+                    0.283203125
+                  ],
+                  "win_rate_difference": 0.23046875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -16132,6 +17849,35 @@
               ],
               "wins": 355
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 143262.083984375,
+              "mean_margin": 83326.134765625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.185546875,
+                    0.287109375
+                  ],
+                  "win_rate_difference": 0.234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.181640625,
+                    0.283203125
+                  ],
+                  "win_rate_difference": 0.23046875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -16399,6 +18145,35 @@
                 0.80859375
               ],
               "wins": 388
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 99636.5,
+              "mean_margin": 9491.61328125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.19140625,
+                    0.296875
+                  ],
+                  "win_rate_difference": 0.2421875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.189453125,
+                    0.294921875
+                  ],
+                  "win_rate_difference": 0.240234375
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -16668,6 +18443,35 @@
               ],
               "wins": 322
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 370,
+              "mean_cash": 95444.150390625,
+              "mean_margin": -5235.431640625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.23828125,
+                    -0.08984375
+                  ],
+                  "win_rate_difference": -0.166015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.70703125,
+                    -0.587890625
+                  ],
+                  "win_rate_difference": -0.6484375
+                }
+              },
+              "win_rate": 0.27734375,
+              "win_rate_ci95": [
+                0.224609375,
+                0.33203125
+              ],
+              "wins": 142
+            },
             "team-terminal-suffix-v1": {
               "draws": 10,
               "games": 512,
@@ -16935,6 +18739,35 @@
                 0.662109375
               ],
               "wins": 312
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 365,
+              "mean_cash": 95475.50390625,
+              "mean_margin": -4971.244140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.005908203124999983,
+                    0.11328125
+                  ],
+                  "win_rate_difference": 0.052734375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.716845703125,
+                    -0.599609375
+                  ],
+                  "win_rate_difference": -0.66015625
+                }
+              },
+              "win_rate": 0.287109375,
+              "win_rate_ci95": [
+                0.234375,
+                0.341796875
+              ],
+              "wins": 147
             },
             "team-terminal-suffix-v1": {
               "draws": 134,
@@ -17204,6 +19037,35 @@
               ],
               "wins": 355
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 143262.087890625,
+              "mean_margin": 83326.150390625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.185546875,
+                    0.287109375
+                  ],
+                  "win_rate_difference": 0.234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.181640625,
+                    0.283203125
+                  ],
+                  "win_rate_difference": 0.23046875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -17471,6 +19333,35 @@
                 0.748046875
               ],
               "wins": 355
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 0,
+              "mean_cash": 143262.2578125,
+              "mean_margin": 83402.56640625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.185546875,
+                    0.287109375
+                  ],
+                  "win_rate_difference": 0.234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.181640625,
+                    0.283203125
+                  ],
+                  "win_rate_difference": 0.23046875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 512
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -17740,6 +19631,35 @@
               ],
               "wins": 363
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 2,
+              "mean_cash": 97674.095703125,
+              "mean_margin": 6373.048828125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.158203125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.20703125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.154296875,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.203125
+                }
+              },
+              "win_rate": 0.99609375,
+              "win_rate_ci95": [
+                0.98828125,
+                1.0
+              ],
+              "wins": 510
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 512,
@@ -18007,6 +19927,35 @@
                 0.8046875
               ],
               "wins": 386
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 512,
+              "losses": 8,
+              "mean_cash": 96273.755859375,
+              "mean_margin": 8330.640625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.177734375,
+                    0.28515625
+                  ],
+                  "win_rate_difference": 0.23046875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.12109375,
+                    0.216796875
+                  ],
+                  "win_rate_difference": 0.16796875
+                }
+              },
+              "win_rate": 0.984375,
+              "win_rate_ci95": [
+                0.96875,
+                0.99609375
+              ],
+              "wins": 504
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -18279,6 +20228,35 @@
                 ],
                 "wins": 182
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143339.86328125,
+                "mean_margin": 83233.44921875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.17578125,
+                      0.27734375
+                    ],
+                    "win_rate_difference": 0.2265625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.17578125,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.2265625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -18546,6 +20524,35 @@
                   0.75
                 ],
                 "wins": 177
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143929.0546875,
+                "mean_margin": 83743.46875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1796875,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.23046875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -18817,6 +20824,35 @@
                 ],
                 "wins": 196
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 139745.06640625,
+                "mean_margin": 75707.30859375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.19140625,
+                      0.296875
+                    ],
+                    "win_rate_difference": 0.2421875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1875,
+                      0.296875
+                    ],
+                    "win_rate_difference": 0.2421875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -19084,6 +21120,35 @@
                   0.8046875
                 ],
                 "wins": 193
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140681.375,
+                "mean_margin": 76373.8203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -19355,6 +21420,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140153.67578125,
+                "mean_margin": 71181.05078125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1796875,
+                      0.28515625
+                    ],
+                    "win_rate_difference": 0.23046875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -19622,6 +21716,35 @@
                   0.74609375
                 ],
                 "wins": 176
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 140235.67578125,
+                "mean_margin": 71236.9296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -19893,6 +22016,35 @@
                 ],
                 "wins": 251
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 96168.52734375,
+                "mean_margin": 15981.28515625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.02734375,
+                      0.0859375
+                    ],
+                    "win_rate_difference": 0.0546875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.03125,
+                      0.0859375
+                    ],
+                    "win_rate_difference": 0.05859375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -20160,6 +22312,35 @@
                   0.9921875
                 ],
                 "wins": 250
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 2,
+                "mean_cash": 95775.82421875,
+                "mean_margin": 15908.7109375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0078125,
+                      0.0625
+                    ],
+                    "win_rate_difference": 0.03515625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.01171875,
+                      0.06640625
+                    ],
+                    "win_rate_difference": 0.0390625
+                  }
+                },
+                "win_rate": 0.9921875,
+                "win_rate_ci95": [
+                  0.98046875,
+                  1.0
+                ],
+                "wins": 254
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -20431,6 +22612,35 @@
                 ],
                 "wins": 238
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 105583.1640625,
+                "mean_margin": 23791.5625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.046875,
+                      0.11328125
+                    ],
+                    "win_rate_difference": 0.078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.109375,
+                      0.19921875
+                    ],
+                    "win_rate_difference": 0.15234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -20698,6 +22908,35 @@
                   0.96484375
                 ],
                 "wins": 240
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 106046.3125,
+                "mean_margin": 23777.8203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.05859375,
+                      0.125
+                    ],
+                    "win_rate_difference": 0.08984375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.11328125,
+                      0.19921875
+                    ],
+                    "win_rate_difference": 0.15625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -20969,6 +23208,35 @@
                 ],
                 "wins": 256
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 107298.23828125,
+                "mean_margin": 31472.41015625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -21214,6 +23482,35 @@
                 "losses": 0,
                 "mean_cash": 106811.203125,
                 "mean_margin": 26889.31640625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.01171875
+                    ],
+                    "win_rate_difference": 0.00390625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 107074.41796875,
+                "mean_margin": 31480.53515625,
                 "paired_differences": {
                   "ppo-495ebc48210f14ae": {
                     "ci95": [
@@ -21507,6 +23804,35 @@
                 ],
                 "wins": 244
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 2,
+                "mean_cash": 98061.83984375,
+                "mean_margin": 17106.34765625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0078125,
+                      0.0234375
+                    ],
+                    "win_rate_difference": 0.0078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.0078125,
+                      0.0234375
+                    ],
+                    "win_rate_difference": 0.0078125
+                  }
+                },
+                "win_rate": 0.9921875,
+                "win_rate_ci95": [
+                  0.98046875,
+                  1.0
+                ],
+                "wins": 254
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -21774,6 +24100,35 @@
                   0.97265625
                 ],
                 "wins": 243
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 98220.58984375,
+                "mean_margin": 17101.796875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0078125,
+                      0.0234375
+                    ],
+                    "win_rate_difference": 0.0078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.0078125,
+                      0.0234375
+                    ],
+                    "win_rate_difference": 0.0078125
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -22045,6 +24400,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143227.94140625,
+                "mean_margin": 83277.87109375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1796875,
+                      0.28515625
+                    ],
+                    "win_rate_difference": 0.23046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.17578125,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.2265625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -22312,6 +24696,35 @@
                   0.74609375
                 ],
                 "wins": 176
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143296.234375,
+                "mean_margin": 83374.4296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -22583,6 +24996,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143227.9375,
+                "mean_margin": 83277.85546875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1796875,
+                      0.28515625
+                    ],
+                    "win_rate_difference": 0.23046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.17578125,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.2265625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -22850,6 +25292,35 @@
                   0.74609375
                 ],
                 "wins": 176
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143296.23046875,
+                "mean_margin": 83374.4140625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -23121,6 +25592,35 @@
                 ],
                 "wins": 195
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 99698.43359375,
+                "mean_margin": 9476.8984375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1953125,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.24609375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1875,
+                      0.296875
+                    ],
+                    "win_rate_difference": 0.2421875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -23388,6 +25888,35 @@
                   0.8046875
                 ],
                 "wins": 193
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 99574.56640625,
+                "mean_margin": 9506.328125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -23659,6 +26188,35 @@
                 ],
                 "wins": 162
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 186,
+                "mean_cash": 95569.60546875,
+                "mean_margin": -5249.04296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.234375,
+                      -0.08203125
+                    ],
+                    "win_rate_difference": -0.16015625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.70703125,
+                      -0.58203125
+                    ],
+                    "win_rate_difference": -0.64453125
+                  }
+                },
+                "win_rate": 0.2734375,
+                "win_rate_ci95": [
+                  0.21875,
+                  0.328125
+                ],
+                "wins": 70
+              },
               "team-terminal-suffix-v1": {
                 "draws": 5,
                 "games": 256,
@@ -23926,6 +26484,35 @@
                   0.68359375
                 ],
                 "wins": 160
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 184,
+                "mean_cash": 95318.6953125,
+                "mean_margin": -5221.8203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.25390625,
+                      -0.0859375
+                    ],
+                    "win_rate_difference": -0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.7109375,
+                      -0.5936523437499996
+                    ],
+                    "win_rate_difference": -0.65234375
+                  }
+                },
+                "win_rate": 0.28125,
+                "win_rate_ci95": [
+                  0.2265625,
+                  0.3359375
+                ],
+                "wins": 72
               },
               "team-terminal-suffix-v1": {
                 "draws": 5,
@@ -24197,6 +26784,35 @@
                 ],
                 "wins": 154
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 183,
+                "mean_cash": 95454.62109375,
+                "mean_margin": -4900.01953125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.01171875,
+                      0.13671875
+                    ],
+                    "win_rate_difference": 0.0625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.71484375,
+                      -0.59375
+                    ],
+                    "win_rate_difference": -0.65625
+                  }
+                },
+                "win_rate": 0.28515625,
+                "win_rate_ci95": [
+                  0.23046875,
+                  0.33984375
+                ],
+                "wins": 73
+              },
               "team-terminal-suffix-v1": {
                 "draws": 67,
                 "games": 256,
@@ -24464,6 +27080,35 @@
                   0.67578125
                 ],
                 "wins": 158
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 182,
+                "mean_cash": 95496.38671875,
+                "mean_margin": -5042.46875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.03125,
+                      0.1171875
+                    ],
+                    "win_rate_difference": 0.04296875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.72265625,
+                      -0.6015625
+                    ],
+                    "win_rate_difference": -0.6640625
+                  }
+                },
+                "win_rate": 0.2890625,
+                "win_rate_ci95": [
+                  0.234375,
+                  0.34375
+                ],
+                "wins": 74
               },
               "team-terminal-suffix-v1": {
                 "draws": 67,
@@ -24735,6 +27380,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143227.94140625,
+                "mean_margin": 83277.87109375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1796875,
+                      0.28515625
+                    ],
+                    "win_rate_difference": 0.23046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.17578125,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.2265625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -25002,6 +27676,35 @@
                   0.74609375
                 ],
                 "wins": 176
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143296.234375,
+                "mean_margin": 83374.4296875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -25273,6 +27976,35 @@
                 ],
                 "wins": 179
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143228.11328125,
+                "mean_margin": 83354.3046875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1796875,
+                      0.28515625
+                    ],
+                    "win_rate_difference": 0.23046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.17578125,
+                      0.28125
+                    ],
+                    "win_rate_difference": 0.2265625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -25540,6 +28272,35 @@
                   0.74609375
                 ],
                 "wins": 176
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 0,
+                "mean_cash": 143296.40234375,
+                "mean_margin": 83450.828125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.29296875
+                    ],
+                    "win_rate_difference": 0.23828125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.18359375,
+                      0.2890625
+                    ],
+                    "win_rate_difference": 0.234375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 256
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -25811,6 +28572,35 @@
                 ],
                 "wins": 183
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 97784.13671875,
+                "mean_margin": 6357.25390625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.15625,
+                      0.2578125
+                    ],
+                    "win_rate_difference": 0.20703125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.15234375,
+                      0.25390625
+                    ],
+                    "win_rate_difference": 0.203125
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -26078,6 +28868,35 @@
                   0.7578125
                 ],
                 "wins": 180
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 1,
+                "mean_cash": 97564.0546875,
+                "mean_margin": 6388.84375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.15625,
+                      0.2578125
+                    ],
+                    "win_rate_difference": 0.20703125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.15234375,
+                      0.25390625
+                    ],
+                    "win_rate_difference": 0.203125
+                  }
+                },
+                "win_rate": 0.99609375,
+                "win_rate_ci95": [
+                  0.98828125,
+                  1.0
+                ],
+                "wins": 255
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -26349,6 +29168,35 @@
                 ],
                 "wins": 194
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 4,
+                "mean_cash": 96388.875,
+                "mean_margin": 8304.05078125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1875,
+                      0.30078125
+                    ],
+                    "win_rate_difference": 0.2421875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.125,
+                      0.22265625
+                    ],
+                    "win_rate_difference": 0.171875
+                  }
+                },
+                "win_rate": 0.984375,
+                "win_rate_ci95": [
+                  0.96875,
+                  0.99609375
+                ],
+                "wins": 252
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 256,
@@ -26616,6 +29464,35 @@
                   0.8008789062500004
                 ],
                 "wins": 192
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 256,
+                "losses": 4,
+                "mean_cash": 96158.63671875,
+                "mean_margin": 8357.23046875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1640625,
+                      0.27734375
+                    ],
+                    "win_rate_difference": 0.21875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.21875
+                    ],
+                    "win_rate_difference": 0.1640625
+                  }
+                },
+                "win_rate": 0.984375,
+                "win_rate_ci95": [
+                  0.96875,
+                  0.99609375
+                ],
+                "wins": 252
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -26888,6 +29765,35 @@
               ],
               "wins": 3150
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 4096,
+              "losses": 376,
+              "mean_cash": 118009.87377929688,
+              "mean_margin": 41603.153564453125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.116943359375,
+                    0.179443359375
+                  ],
+                  "win_rate_difference": 0.147705078125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.04150390625,
+                    0.1025390625
+                  ],
+                  "win_rate_difference": 0.0712890625
+                }
+              },
+              "win_rate": 0.908203125,
+              "win_rate_ci95": [
+                0.901611328125,
+                0.914801025390625
+              ],
+              "wins": 3720
+            },
             "team-terminal-suffix-v1": {
               "draws": 72,
               "games": 4096,
@@ -27156,6 +30062,35 @@
               ],
               "wins": 3122
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 4096,
+              "losses": 374,
+              "mean_cash": 118078.79321289062,
+              "mean_margin": 41699.0810546875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.11572265625,
+                    0.17871704101562502
+                  ],
+                  "win_rate_difference": 0.146240234375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.04052734375,
+                    0.10181274414062502
+                  ],
+                  "win_rate_difference": 0.07080078125
+                }
+              },
+              "win_rate": 0.90869140625,
+              "win_rate_ci95": [
+                0.90234375,
+                0.915283203125
+              ],
+              "wins": 3722
+            },
             "team-terminal-suffix-v1": {
               "draws": 72,
               "games": 4096,
@@ -27254,6 +30189,11 @@
         "pro8-a08-r11": {
           "maximum_measured_policy_latency_seconds": 0.44210515392478555,
           "mean_game_seconds": 4.236682824521002,
+          "optional_debug_parse_errors": 0
+        },
+        "public-ahmed-v37-original": {
+          "maximum_measured_policy_latency_seconds": 0.6026112309191376,
+          "mean_game_seconds": 0.9390001136364396,
           "optional_debug_parse_errors": 0
         },
         "team-terminal-suffix-v1": {
@@ -27471,6 +30411,35 @@
               0.795416259765625
             ],
             "wins": 6272
+          },
+          "public-ahmed-v37-original": {
+            "draws": 0,
+            "games": 8192,
+            "losses": 750,
+            "mean_cash": 118044.33349609375,
+            "mean_margin": 41651.11730957031,
+            "paired_differences": {
+              "ppo-495ebc48210f14ae": {
+                "ci95": [
+                  0.116943359375,
+                  0.1788330078125
+                ],
+                "win_rate_difference": 0.14697265625
+              },
+              "ppo-c90da6b7b3ea061d": {
+                "ci95": [
+                  0.0416259765625,
+                  0.10242004394531251
+                ],
+                "win_rate_difference": 0.071044921875
+              }
+            },
+            "win_rate": 0.908447265625,
+            "win_rate_ci95": [
+              0.9019775390625,
+              0.9149169921875
+            ],
+            "wins": 7442
           },
           "team-terminal-suffix-v1": {
             "draws": 144,
@@ -27749,6 +30718,35 @@
               ],
               "wins": 186
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 140508.19140625,
+              "mean_margin": 80972.58203125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -28016,6 +31014,35 @@
                 0.85546875
               ],
               "wins": 202
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 138383.80859375,
+              "mean_margin": 74861.16015625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0859375,
+                    0.203125
+                  ],
+                  "win_rate_difference": 0.14453125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.08203125,
+                    0.19921875
+                  ],
+                  "win_rate_difference": 0.140625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -28285,6 +31312,35 @@
               ],
               "wins": 186
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 138709.84375,
+              "mean_margin": 69483.8671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -28552,6 +31608,35 @@
                 0.9921875
               ],
               "wins": 248
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 96314.82421875,
+              "mean_margin": 16002.76953125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.00390625,
+                    0.05859375
+                  ],
+                  "win_rate_difference": 0.02734375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0234375,
+                    0.09765625
+                  ],
+                  "win_rate_difference": 0.05859375
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -28821,6 +31906,35 @@
               ],
               "wins": 236
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 105244.19140625,
+              "mean_margin": 23895.625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.015625,
+                    0.0859375
+                  ],
+                  "win_rate_difference": 0.046875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.05078125,
+                    0.1484375
+                  ],
+                  "win_rate_difference": 0.09765625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -29066,6 +32180,35 @@
               "losses": 0,
               "mean_cash": 109085.015625,
               "mean_margin": 26202.2578125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "win_rate_difference": 0.0
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 105712.79296875,
+              "mean_margin": 31835.97265625,
               "paired_differences": {
                 "ppo-495ebc48210f14ae": {
                   "ci95": [
@@ -29357,6 +32500,35 @@
               ],
               "wins": 252
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 4,
+              "mean_cash": 98736.1171875,
+              "mean_margin": 17620.03125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.0234375,
+                    0.04296875
+                  ],
+                  "win_rate_difference": 0.0078125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.0234375,
+                    0.046875
+                  ],
+                  "win_rate_difference": 0.01171875
+                }
+              },
+              "win_rate": 0.984375,
+              "win_rate_ci95": [
+                0.9609375,
+                1.0
+              ],
+              "wins": 252
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -29624,6 +32796,35 @@
                 0.80078125
               ],
               "wins": 186
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 141716.34765625,
+              "mean_margin": 81561.12109375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -29893,6 +33094,35 @@
               ],
               "wins": 186
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 141716.34765625,
+              "mean_margin": 81561.12109375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -30160,6 +33390,35 @@
                 0.85546875
               ],
               "wins": 202
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 100299.00390625,
+              "mean_margin": 9531.796875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0859375,
+                    0.203125
+                  ],
+                  "win_rate_difference": 0.14453125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.08203125,
+                    0.19921875
+                  ],
+                  "win_rate_difference": 0.140625
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -30429,6 +33688,35 @@
               ],
               "wins": 156
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 191,
+              "mean_cash": 95115.9765625,
+              "mean_margin": -5189.890625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.28125,
+                    -0.078125
+                  ],
+                  "win_rate_difference": -0.1796875
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.77734375,
+                    -0.609375
+                  ],
+                  "win_rate_difference": -0.6953125
+                }
+              },
+              "win_rate": 0.25390625,
+              "win_rate_ci95": [
+                0.18359375,
+                0.328125
+              ],
+              "wins": 65
+            },
             "team-terminal-suffix-v1": {
               "draws": 10,
               "games": 256,
@@ -30696,6 +33984,35 @@
                 0.71875
               ],
               "wins": 165
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 198,
+              "mean_cash": 96403.27734375,
+              "mean_margin": -5676.9140625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    -0.06259765624999997,
+                    0.09765625
+                  ],
+                  "win_rate_difference": 0.015625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.80078125,
+                    -0.640625
+                  ],
+                  "win_rate_difference": -0.72265625
+                }
+              },
+              "win_rate": 0.2265625,
+              "win_rate_ci95": [
+                0.15625,
+                0.296875
+              ],
+              "wins": 58
             },
             "team-terminal-suffix-v1": {
               "draws": 76,
@@ -30965,6 +34282,35 @@
               ],
               "wins": 186
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 141716.34765625,
+              "mean_margin": 81561.12109375,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -31232,6 +34578,35 @@
                 0.80078125
               ],
               "wins": 186
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 141716.640625,
+              "mean_margin": 81635.15625,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12490234375000003,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -31501,6 +34876,35 @@
               ],
               "wins": 192
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 0,
+              "mean_cash": 98798.74609375,
+              "mean_margin": 6656.45703125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.12109375,
+                    0.25390625
+                  ],
+                  "win_rate_difference": 0.18359375
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.125,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 1.0,
+              "win_rate_ci95": [
+                1.0,
+                1.0
+              ],
+              "wins": 256
+            },
             "team-terminal-suffix-v1": {
               "draws": 0,
               "games": 256,
@@ -31768,6 +35172,35 @@
                 0.8125976562500004
               ],
               "wins": 190
+            },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 256,
+              "losses": 6,
+              "mean_cash": 98395.7578125,
+              "mean_margin": 8165.80078125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.1796875,
+                    0.3359375
+                  ],
+                  "win_rate_difference": 0.25390625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.12109375,
+                    0.2578125
+                  ],
+                  "win_rate_difference": 0.1875
+                }
+              },
+              "win_rate": 0.9765625,
+              "win_rate_ci95": [
+                0.9453125,
+                1.0
+              ],
+              "wins": 250
             },
             "team-terminal-suffix-v1": {
               "draws": 0,
@@ -32040,6 +35473,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 140326.734375,
+                "mean_margin": 80793.671875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -32307,6 +35769,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 140689.6484375,
+                "mean_margin": 81151.4921875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -32578,6 +36069,35 @@
                 ],
                 "wins": 102
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 138399.109375,
+                "mean_margin": 74850.0703125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0859375,
+                      0.203125
+                    ],
+                    "win_rate_difference": 0.140625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.078125,
+                      0.1875
+                    ],
+                    "win_rate_difference": 0.1328125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -32845,6 +36365,35 @@
                   0.8515625
                 ],
                 "wins": 100
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 138368.5078125,
+                "mean_margin": 74872.25,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0859375,
+                      0.2109375
+                    ],
+                    "win_rate_difference": 0.1484375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.09355468750000007,
+                      0.2109375
+                    ],
+                    "win_rate_difference": 0.1484375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -33116,6 +36665,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 138629.7421875,
+                "mean_margin": 69404.53125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -33383,6 +36961,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 138789.9453125,
+                "mean_margin": 69563.203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -33654,6 +37261,35 @@
                 ],
                 "wins": 125
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 96421.984375,
+                "mean_margin": 15973.2890625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0546875
+                    ],
+                    "win_rate_difference": 0.0234375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0234375,
+                      0.109375
+                    ],
+                    "win_rate_difference": 0.0625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -33921,6 +37557,35 @@
                   0.9921875
                 ],
                 "wins": 123
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 96207.6640625,
+                "mean_margin": 16032.25,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0078125,
+                      0.0625
+                    ],
+                    "win_rate_difference": 0.03125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.015625,
+                      0.09375
+                    ],
+                    "win_rate_difference": 0.0546875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -34192,6 +37857,35 @@
                 ],
                 "wins": 118
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 105556.9296875,
+                "mean_margin": 23862.171875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.015625,
+                      0.0859375
+                    ],
+                    "win_rate_difference": 0.046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0546875,
+                      0.15625
+                    ],
+                    "win_rate_difference": 0.1015625
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -34459,6 +38153,35 @@
                   0.96875
                 ],
                 "wins": 118
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 104931.453125,
+                "mean_margin": 23929.078125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.015625,
+                      0.0859375
+                    ],
+                    "win_rate_difference": 0.046875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.046875,
+                      0.1484375
+                    ],
+                    "win_rate_difference": 0.09375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -34730,6 +38453,35 @@
                 ],
                 "wins": 128
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 105425.4453125,
+                "mean_margin": 31781.0859375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -34975,6 +38727,35 @@
                 "losses": 0,
                 "mean_cash": 109815.75,
                 "mean_margin": 26959.3515625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.0,
+                      0.0
+                    ],
+                    "win_rate_difference": 0.0
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 106000.140625,
+                "mean_margin": 31890.859375,
                 "paired_differences": {
                   "ppo-495ebc48210f14ae": {
                     "ci95": [
@@ -35268,6 +39049,35 @@
                 ],
                 "wins": 127
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 2,
+                "mean_cash": 98169.171875,
+                "mean_margin": 17431.203125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0234375,
+                      0.03925781250000071
+                    ],
+                    "win_rate_difference": 0.0078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.0234375,
+                      0.03925781250000071
+                    ],
+                    "win_rate_difference": 0.0078125
+                  }
+                },
+                "win_rate": 0.984375,
+                "win_rate_ci95": [
+                  0.9609375,
+                  1.0
+                ],
+                "wins": 126
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -35535,6 +39345,35 @@
                   1.0
                 ],
                 "wins": 125
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 2,
+                "mean_cash": 99303.0625,
+                "mean_margin": 17808.859375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0234375,
+                      0.046875
+                    ],
+                    "win_rate_difference": 0.0078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.0234375,
+                      0.0546875
+                    ],
+                    "win_rate_difference": 0.015625
+                  }
+                },
+                "win_rate": 0.984375,
+                "win_rate_ci95": [
+                  0.9609375,
+                  1.0
+                ],
+                "wins": 126
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -35806,6 +39645,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141684.9296875,
+                "mean_margin": 81493.21875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -36073,6 +39941,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141747.765625,
+                "mean_margin": 81629.0234375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -36344,6 +40241,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141684.9296875,
+                "mean_margin": 81493.21875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -36611,6 +40537,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141747.765625,
+                "mean_margin": 81629.0234375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -36882,6 +40837,35 @@
                 ],
                 "wins": 102
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 100391.6953125,
+                "mean_margin": 9559.046875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0859375,
+                      0.203125
+                    ],
+                    "win_rate_difference": 0.140625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.078125,
+                      0.1875
+                    ],
+                    "win_rate_difference": 0.1328125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -37149,6 +41133,35 @@
                   0.8515625
                 ],
                 "wins": 100
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 100206.3125,
+                "mean_margin": 9504.546875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.0859375,
+                      0.2109375
+                    ],
+                    "win_rate_difference": 0.1484375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.09355468750000007,
+                      0.2109375
+                    ],
+                    "win_rate_difference": 0.1484375
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -37420,6 +41433,35 @@
                 ],
                 "wins": 80
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 96,
+                "mean_cash": 95071.921875,
+                "mean_margin": -5231.40625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.265625,
+                      -0.046875
+                    ],
+                    "win_rate_difference": -0.15625
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.796875,
+                      -0.625
+                    ],
+                    "win_rate_difference": -0.7109375
+                  }
+                },
+                "win_rate": 0.25,
+                "win_rate_ci95": [
+                  0.1796875,
+                  0.328125
+                ],
+                "wins": 32
+              },
               "team-terminal-suffix-v1": {
                 "draws": 5,
                 "games": 128,
@@ -37687,6 +41729,35 @@
                   0.6796875
                 ],
                 "wins": 76
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 95,
+                "mean_cash": 95160.03125,
+                "mean_margin": -5148.375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.3125,
+                      -0.09375
+                    ],
+                    "win_rate_difference": -0.203125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.765625,
+                      -0.5859375
+                    ],
+                    "win_rate_difference": -0.6796875
+                  }
+                },
+                "win_rate": 0.2578125,
+                "win_rate_ci95": [
+                  0.1875,
+                  0.3359375
+                ],
+                "wins": 33
               },
               "team-terminal-suffix-v1": {
                 "draws": 5,
@@ -37958,6 +42029,35 @@
                 ],
                 "wins": 84
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 99,
+                "mean_cash": 96259.5390625,
+                "mean_margin": -5612.9921875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0859375,
+                      0.09375
+                    ],
+                    "win_rate_difference": 0.0078125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.8046875,
+                      -0.6482421874999993
+                    ],
+                    "win_rate_difference": -0.7265625
+                  }
+                },
+                "win_rate": 0.2265625,
+                "win_rate_ci95": [
+                  0.15625,
+                  0.296875
+                ],
+                "wins": 29
+              },
               "team-terminal-suffix-v1": {
                 "draws": 38,
                 "games": 128,
@@ -38225,6 +42325,35 @@
                   0.71875
                 ],
                 "wins": 81
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 99,
+                "mean_cash": 96547.015625,
+                "mean_margin": -5740.8359375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      -0.0859375,
+                      0.1328125
+                    ],
+                    "win_rate_difference": 0.0234375
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      -0.796875,
+                      -0.640625
+                    ],
+                    "win_rate_difference": -0.71875
+                  }
+                },
+                "win_rate": 0.2265625,
+                "win_rate_ci95": [
+                  0.15625,
+                  0.296875
+                ],
+                "wins": 29
               },
               "team-terminal-suffix-v1": {
                 "draws": 38,
@@ -38496,6 +42625,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141684.9296875,
+                "mean_margin": 81493.21875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -38763,6 +42921,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141747.765625,
+                "mean_margin": 81629.0234375,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -39034,6 +43221,35 @@
                 ],
                 "wins": 94
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141685.234375,
+                "mean_margin": 81567.5546875,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -39301,6 +43517,35 @@
                   0.796875
                 ],
                 "wins": 92
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 141748.046875,
+                "mean_margin": 81702.7578125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1328125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -39572,6 +43817,35 @@
                 ],
                 "wins": 97
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 98933.34375,
+                "mean_margin": 6663.4140625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.109375,
+                      0.2421875
+                    ],
+                    "win_rate_difference": 0.171875
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.25
+                    ],
+                    "win_rate_difference": 0.1796875
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -39839,6 +44113,35 @@
                   0.8125
                 ],
                 "wins": 95
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 0,
+                "mean_cash": 98664.1484375,
+                "mean_margin": 6649.5,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.125,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.13261718750000007,
+                      0.265625
+                    ],
+                    "win_rate_difference": 0.1953125
+                  }
+                },
+                "win_rate": 1.0,
+                "win_rate_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "wins": 128
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -40110,6 +44413,35 @@
                 ],
                 "wins": 95
               },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 3,
+                "mean_cash": 98084.15625,
+                "mean_margin": 8117.4453125,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.171875,
+                      0.3359375
+                    ],
+                    "win_rate_difference": 0.25
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.2578125
+                    ],
+                    "win_rate_difference": 0.1875
+                  }
+                },
+                "win_rate": 0.9765625,
+                "win_rate_ci95": [
+                  0.9453125,
+                  1.0
+                ],
+                "wins": 125
+              },
               "team-terminal-suffix-v1": {
                 "draws": 0,
                 "games": 128,
@@ -40377,6 +44709,35 @@
                   0.8126953125000007
                 ],
                 "wins": 95
+              },
+              "public-ahmed-v37-original": {
+                "draws": 0,
+                "games": 128,
+                "losses": 3,
+                "mean_cash": 98707.359375,
+                "mean_margin": 8214.15625,
+                "paired_differences": {
+                  "ppo-495ebc48210f14ae": {
+                    "ci95": [
+                      0.1796875,
+                      0.34375
+                    ],
+                    "win_rate_difference": 0.2578125
+                  },
+                  "ppo-c90da6b7b3ea061d": {
+                    "ci95": [
+                      0.1171875,
+                      0.2578125
+                    ],
+                    "win_rate_difference": 0.1875
+                  }
+                },
+                "win_rate": 0.9765625,
+                "win_rate_ci95": [
+                  0.9453125,
+                  1.0
+                ],
+                "wins": 125
               },
               "team-terminal-suffix-v1": {
                 "draws": 0,
@@ -40649,6 +45010,35 @@
               ],
               "wins": 1622
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 2048,
+              "losses": 200,
+              "mean_cash": 117400.6123046875,
+              "mean_margin": 40852.42138671875,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.06982421875,
+                    0.1416015625
+                  ],
+                  "win_rate_difference": 0.10400390625
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    -0.0078125,
+                    0.06641845703125004
+                  ],
+                  "win_rate_difference": 0.02783203125
+                }
+              },
+              "win_rate": 0.90234375,
+              "win_rate_ci95": [
+                0.89403076171875,
+                0.91064453125
+              ],
+              "wins": 1848
+            },
             "team-terminal-suffix-v1": {
               "draws": 43,
               "games": 2048,
@@ -40917,6 +45307,35 @@
               ],
               "wins": 1593
             },
+            "public-ahmed-v37-original": {
+              "draws": 0,
+              "games": 2048,
+              "losses": 199,
+              "mean_cash": 117535.41455078125,
+              "mean_margin": 40957.30078125,
+              "paired_differences": {
+                "ppo-495ebc48210f14ae": {
+                  "ci95": [
+                    0.0751953125,
+                    0.1572265625
+                  ],
+                  "win_rate_difference": 0.1142578125
+                },
+                "ppo-c90da6b7b3ea061d": {
+                  "ci95": [
+                    0.001953125,
+                    0.07764892578125004
+                  ],
+                  "win_rate_difference": 0.03857421875
+                }
+              },
+              "win_rate": 0.90283203125,
+              "win_rate_ci95": [
+                0.89453125,
+                0.91114501953125
+              ],
+              "wins": 1849
+            },
             "team-terminal-suffix-v1": {
               "draws": 43,
               "games": 2048,
@@ -41015,6 +45434,11 @@
         "pro8-a08-r11": {
           "maximum_measured_policy_latency_seconds": 0.4253683510000883,
           "mean_game_seconds": 4.20176098090618,
+          "optional_debug_parse_errors": 0
+        },
+        "public-ahmed-v37-original": {
+          "maximum_measured_policy_latency_seconds": 0.6169802739750594,
+          "mean_game_seconds": 0.9504786556739628,
           "optional_debug_parse_errors": 0
         },
         "team-terminal-suffix-v1": {
@@ -41233,6 +45657,35 @@
             ],
             "wins": 3215
           },
+          "public-ahmed-v37-original": {
+            "draws": 0,
+            "games": 4096,
+            "losses": 399,
+            "mean_cash": 117468.01342773438,
+            "mean_margin": 40904.861083984375,
+            "paired_differences": {
+              "ppo-495ebc48210f14ae": {
+                "ci95": [
+                  0.07373046875,
+                  0.148193359375
+                ],
+                "win_rate_difference": 0.109130859375
+              },
+              "ppo-c90da6b7b3ea061d": {
+                "ci95": [
+                  -0.001959228515624998,
+                  0.07154541015625004
+                ],
+                "win_rate_difference": 0.033203125
+              }
+            },
+            "win_rate": 0.902587890625,
+            "win_rate_ci95": [
+              0.89404296875,
+              0.9111328125
+            ],
+            "wins": 3697
+          },
           "team-terminal-suffix-v1": {
             "draws": 86,
             "games": 4096,
@@ -41298,74 +45751,74 @@
       }
     }
   },
-  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
-  "roster_sha256": "b7df57ce761bf3a9e9971d002d03a9dcb038dbf6e812d5363e6b6169ad6a9ad7",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "roster_sha256": "6b02c6653a6a3443c9c796fe1cd2b5346d69c9b32516de08c3daf6fc4747203b",
   "run_receipts": {
     "development": {
       "manifest": {
-        "baseline_commit": "86cf19cd528cb071a1fed019e3bc84e45a007e62",
-        "cross_host_preflight_sha256": "cca4fe2617a76eaf4984b1ce6b4822b6c3f6ce4dcdc9a25a5b150f1056f2ac68",
-        "holdout_use": "Original six had one-use confirmation; Pro8 cohort reuses the published benchmark",
-        "new_freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+        "baseline_commit": "981ac6db456155de1b7fbbbd9f54fbfda8c19cd5",
+        "cross_host_preflight_sha256": "c2355dba450f66b7446695e0e515a48079626031bba324228e0b4bbac717a10f",
+        "holdout_use": "Original six had one-use confirmation; later cohorts reuse the published benchmark",
+        "new_freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d",
         "phase": "development",
-        "roster_sha256": "b7df57ce761bf3a9e9971d002d03a9dcb038dbf6e812d5363e6b6169ad6a9ad7",
+        "roster_sha256": "6b02c6653a6a3443c9c796fe1cd2b5346d69c9b32516de08c3daf6fc4747203b",
         "source_shards": {
           "local": {
-            "MANIFEST.json": "dcf5ba20090dc65179e282e013a8aa69a7e7391ce2d3f238f8a46c5fe2fc53fb",
-            "STATUS.json": "efd9c93982b8ef92496fd1bb1c105543c7e51b1f501974757fa921d4aaf41897",
-            "rows.jsonl": "00295ea838cae8df852af6215f2ccaaef29dbcf124731c4d76708f289bd08c75"
+            "MANIFEST.json": "6166aae8680a95fc596058460d7468739f30ae15ce10de2d164fa17cb7eb47fe",
+            "STATUS.json": "cf63feedcc4edca4880fde73ba95abf8365d21623746f39a5f734974e8965ed4",
+            "rows.jsonl": "daa13a10472db5e6406d5c9842a42af5067d351aeae6fec56d8c30dc788c0213"
           },
           "wrx90": {
-            "MANIFEST.json": "4265e2c5c1f630e345a0a07bbfbca11c0061340db31d55863a38ece3819d3ea5",
-            "STATUS.json": "20d140c959a1e4eda45cb890847fab98c2bdb581e809feab74347a9e4bfe7630",
-            "rows.jsonl": "88a4f9ec81b50ae9e147d34f9909c891024733a9cd876bf4be21746ad8370b6e"
+            "MANIFEST.json": "c45725101a8ac6cfcc9f2fc50fad67b4edbee10d96514ae08d96cd83273ae0c9",
+            "STATUS.json": "9052198ebd9acb10925cdae46d6743242b22252365b71991bc635f3d5c980b74",
+            "rows.jsonl": "6fca4340129d5664146fd6e1d2546039073dd37a5c345fef170f62e25d5c10c3"
           }
         }
       },
-      "rows_sha256": "f9883502685885722b5f50a97184e0151ac9e65bed1d25071715d0a5891896ea",
+      "rows_sha256": "4785132ac816021dda26951f3284d033172a2d361b0e3b549b3f9a6b390026fb",
       "status": {
         "complete": true,
-        "completed": 110592,
+        "completed": 122880,
         "duplicate_cells": 0,
         "invalid": 0,
         "missing": 0,
         "phase": "development",
-        "roster_sha256": "b7df57ce761bf3a9e9971d002d03a9dcb038dbf6e812d5363e6b6169ad6a9ad7",
-        "scheduled": 110592,
+        "roster_sha256": "6b02c6653a6a3443c9c796fe1cd2b5346d69c9b32516de08c3daf6fc4747203b",
+        "scheduled": 122880,
         "scope": "Validated join; original baseline games were not rerun"
       }
     },
     "holdout": {
       "manifest": {
-        "baseline_commit": "86cf19cd528cb071a1fed019e3bc84e45a007e62",
-        "cross_host_preflight_sha256": "cca4fe2617a76eaf4984b1ce6b4822b6c3f6ce4dcdc9a25a5b150f1056f2ac68",
-        "holdout_use": "Original six had one-use confirmation; Pro8 cohort reuses the published benchmark",
-        "new_freeze_sha256": "3f1ed4df3895c2e068d96a6a5055b5dc5772352668a55071c7a6e384f0520a11",
+        "baseline_commit": "981ac6db456155de1b7fbbbd9f54fbfda8c19cd5",
+        "cross_host_preflight_sha256": "c2355dba450f66b7446695e0e515a48079626031bba324228e0b4bbac717a10f",
+        "holdout_use": "Original six had one-use confirmation; later cohorts reuse the published benchmark",
+        "new_freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d",
         "phase": "holdout",
-        "roster_sha256": "b7df57ce761bf3a9e9971d002d03a9dcb038dbf6e812d5363e6b6169ad6a9ad7",
+        "roster_sha256": "6b02c6653a6a3443c9c796fe1cd2b5346d69c9b32516de08c3daf6fc4747203b",
         "source_shards": {
           "local": {
-            "MANIFEST.json": "dcf5ba20090dc65179e282e013a8aa69a7e7391ce2d3f238f8a46c5fe2fc53fb",
-            "STATUS.json": "efd9c93982b8ef92496fd1bb1c105543c7e51b1f501974757fa921d4aaf41897",
-            "rows.jsonl": "00295ea838cae8df852af6215f2ccaaef29dbcf124731c4d76708f289bd08c75"
+            "MANIFEST.json": "6166aae8680a95fc596058460d7468739f30ae15ce10de2d164fa17cb7eb47fe",
+            "STATUS.json": "cf63feedcc4edca4880fde73ba95abf8365d21623746f39a5f734974e8965ed4",
+            "rows.jsonl": "daa13a10472db5e6406d5c9842a42af5067d351aeae6fec56d8c30dc788c0213"
           },
           "wrx90": {
-            "MANIFEST.json": "4265e2c5c1f630e345a0a07bbfbca11c0061340db31d55863a38ece3819d3ea5",
-            "STATUS.json": "20d140c959a1e4eda45cb890847fab98c2bdb581e809feab74347a9e4bfe7630",
-            "rows.jsonl": "88a4f9ec81b50ae9e147d34f9909c891024733a9cd876bf4be21746ad8370b6e"
+            "MANIFEST.json": "c45725101a8ac6cfcc9f2fc50fad67b4edbee10d96514ae08d96cd83273ae0c9",
+            "STATUS.json": "9052198ebd9acb10925cdae46d6743242b22252365b71991bc635f3d5c980b74",
+            "rows.jsonl": "6fca4340129d5664146fd6e1d2546039073dd37a5c345fef170f62e25d5c10c3"
           }
         }
       },
-      "rows_sha256": "80cfe2d296a2be54372b0f59a92339a50c0e75065deac5c56c6fc15b85ff4923",
+      "rows_sha256": "5b98f5b03dd1385ebb50082188f68c7af89d78174d70e53749134a93fc2b411b",
       "status": {
         "complete": true,
-        "completed": 73728,
+        "completed": 81920,
         "duplicate_cells": 0,
         "invalid": 0,
         "missing": 0,
         "phase": "holdout",
-        "roster_sha256": "b7df57ce761bf3a9e9971d002d03a9dcb038dbf6e812d5363e6b6169ad6a9ad7",
-        "scheduled": 73728,
+        "roster_sha256": "6b02c6653a6a3443c9c796fe1cd2b5346d69c9b32516de08c3daf6fc4747203b",
+        "scheduled": 81920,
         "scope": "Validated join; original baseline games were not rerun"
       }
     }

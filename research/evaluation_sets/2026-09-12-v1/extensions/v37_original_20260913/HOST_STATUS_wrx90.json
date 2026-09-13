@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "finished_unix": 1789277746.65367,
+  "freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d",
+  "host": "wrx90",
+  "phase": "benchmark",
+  "stage": "complete",
+  "started_unix": 1789276995.024869,
+  "workers": 16
+}

@@ -13,6 +13,7 @@ Strict win rates count draws as zero wins. Each seed uses all 16 pinned opponent
 | A08 r11 | 76.56% (6,272/8,192); 95% CI 73.56%–79.54% | 78.49% (3,215/4,096); 95% CI 74.34%–82.37% | 76.72% (6,285/8,192); 95% CI 73.73%–79.72% |
 | A06 r6 | 80.75% (6,615/8,192); 95% CI 77.97%–83.37% | 79.98% (3,276/4,096); 95% CI 76.32%–83.64% | 75.88% (6,216/8,192); 95% CI 72.92%–78.78% |
 | A06 r12 calendar | 77.84% (6,377/8,192); 95% CI 75.01%–80.60% | 77.47% (3,173/4,096); 95% CI 73.19%–81.49% | 76.23% (6,245/8,192); 95% CI 73.35%–79.03% |
+| v37 unchanged | 90.84% (7,442/8,192); 95% CI 90.20%–91.49% | 90.26% (3,697/4,096); 95% CI 89.40%–91.11% | 91.22% (7,473/8,192); 95% CI 90.56%–91.89% |
 
 [Win rates by opponent](BY_OPPONENT.md) · [Opponent and seat breakdown](BY_OPPONENT_AND_SEAT.md) · [Exact counts, intervals and paired differences](RESULTS.json).
 

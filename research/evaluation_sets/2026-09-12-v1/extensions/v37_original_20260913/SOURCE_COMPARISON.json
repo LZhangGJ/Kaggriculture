@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "parent_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+  "guard_sha256": "2ef9acfe8605cb71487b363d752b453efadc56908d2daefc2b4a4c01e35cdaa9",
+  "source_changes": "One inserted 77-line feed-reserve block; no other source-line changes",
+  "identical_lifecycle_adapter": true
+}

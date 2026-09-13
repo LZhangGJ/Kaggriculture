@@ -2,14 +2,14 @@
   "baseline_layout_preview": false,
   "best_rule": "Exact wins/games within each matched comparison; all exact ties highlighted",
   "comparison_matrix_rows": 438,
-  "games": 184320,
-  "highlighted_cells": 724,
+  "games": 204800,
+  "highlighted_cells": 1261,
   "panels": [
     "representative",
     "stress",
     "holdout"
   ],
-  "rendered_bytes": 284459,
-  "rendered_sha256": "9a8e5c28875c3d7da6d1807c58d0bb5f0f04d2853ad3b806a42911ef9eea56bf",
-  "source_results_sha256": "fbe5966826f605b6c5907e6508908482d771de7b936c0bb2a2861e55bcfd1be2"
+  "rendered_bytes": 320052,
+  "rendered_sha256": "cc2b950921a04a01ac4b42abc6e66925968fcaf43b70470dc317f7d790a4189a",
+  "source_results_sha256": "4b09663975fe6a3fb0cb6113cc3d2a3f8b09ebc935746b690f560279ad3486bb"
 }

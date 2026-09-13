@@ -1,16 +1,18 @@
 {
   "expandable_sections": 15,
   "headings": [
+    "Weakest opponent matchups",
+    "Effect of the feed-reserve change",
     "Representative",
     "Stress",
     "Holdout",
     "Methods and evidence"
   ],
-  "highlighted_rate_cells": 727,
-  "markdown_bytes": 284459,
-  "markdown_sha256": "9a8e5c28875c3d7da6d1807c58d0bb5f0f04d2853ad3b806a42911ef9eea56bf",
-  "rendered_html_sha256": "f4681c537bd5490d01eb353c334dec5e7924a493e210528e67f80c8421f5b2f0",
+  "highlighted_rate_cells": 1277,
+  "markdown_bytes": 320052,
+  "markdown_sha256": "cc2b950921a04a01ac4b42abc6e66925968fcaf43b70470dc317f7d790a4189a",
+  "rendered_html_sha256": "ca5856ee6a5af26a43f42b9448c3b2c52771d901df9243d9878609bbf0e9748c",
   "renderer": "GitHub Markdown API, GFM",
   "status": "PASS",
-  "tables": 31
+  "tables": 33
 }

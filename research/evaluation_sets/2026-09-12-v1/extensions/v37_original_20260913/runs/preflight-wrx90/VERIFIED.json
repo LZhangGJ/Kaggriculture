@@ -1,0 +1,8 @@
+{
+  "files": {
+    "MANIFEST.json": "c11f3cfa1f464d91dea93ac4934ad181b0686f5c3d694ad254966c77abf36a86",
+    "STATUS.json": "8dade700cd36eea938ef32757ffda34d7a4b0ad773d49784af0396e1d15d4436",
+    "rows.jsonl": "20e1ce4a063137413b65d46f9f65a89d93efee50d650973a27567722dd7081e1"
+  },
+  "freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d"
+}

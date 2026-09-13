@@ -1,0 +1,61 @@
+{
+  "definition": "Feed reserve minus unchanged v37 strict win rate on the same seed, opponent and seat cells.",
+  "interval": "95 percent percentile interval from the existing 4000 common whole-seed bootstrap draws.",
+  "panels": {
+    "holdout": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "difference": 0.0,
+      "feed_reserve_win_rate": 0.9122314453125,
+      "games_per_candidate": 8192,
+      "matched_game_differences": {
+        "action_hash": 28,
+        "opponent_cash": 28,
+        "own_cash": 28,
+        "tie": 0,
+        "win": 0
+      },
+      "seeds": 256,
+      "unchanged_win_rate": 0.9122314453125
+    },
+    "representative": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "difference": 0.0,
+      "feed_reserve_win_rate": 0.908447265625,
+      "games_per_candidate": 8192,
+      "matched_game_differences": {
+        "action_hash": 12,
+        "opponent_cash": 12,
+        "own_cash": 10,
+        "tie": 0,
+        "win": 0
+      },
+      "seeds": 256,
+      "unchanged_win_rate": 0.908447265625
+    },
+    "stress": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "difference": 0.0,
+      "feed_reserve_win_rate": 0.902587890625,
+      "games_per_candidate": 4096,
+      "matched_game_differences": {
+        "action_hash": 8,
+        "opponent_cash": 8,
+        "own_cash": 8,
+        "tie": 0,
+        "win": 0
+      },
+      "seeds": 128,
+      "unchanged_win_rate": 0.902587890625
+    }
+  },
+  "source_results_sha256": "4b09663975fe6a3fb0cb6113cc3d2a3f8b09ebc935746b690f560279ad3486bb"
+}

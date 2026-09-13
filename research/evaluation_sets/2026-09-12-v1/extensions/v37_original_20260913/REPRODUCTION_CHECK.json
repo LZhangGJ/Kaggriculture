@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "restored_file_hashes": {
+    "runs/preflight-local/MANIFEST.json": "1c7b43a515ca29bcda2708e3e1bf9bac590f6afc48ee9d7a79e0b05b13eda2fc",
+    "runs/preflight-local/STATUS.json": "4a4b2a65430ad96cacd4279876b0e1e953a0f2f17d9807ad95264888cccf75bc",
+    "runs/preflight-local/rows.jsonl": "534c80641b94eb22babfcc9d10124b7ebe6a49cd5b6af534fa43fc911c68dad1",
+    "runs/benchmark-local/MANIFEST.json": "6166aae8680a95fc596058460d7468739f30ae15ce10de2d164fa17cb7eb47fe",
+    "runs/benchmark-local/STATUS.json": "cf63feedcc4edca4880fde73ba95abf8365d21623746f39a5f734974e8965ed4",
+    "runs/benchmark-local/rows.jsonl": "daa13a10472db5e6406d5c9842a42af5067d351aeae6fec56d8c30dc788c0213",
+    "runs/preflight-wrx90/MANIFEST.json": "c11f3cfa1f464d91dea93ac4934ad181b0686f5c3d694ad254966c77abf36a86",
+    "runs/preflight-wrx90/STATUS.json": "8dade700cd36eea938ef32757ffda34d7a4b0ad773d49784af0396e1d15d4436",
+    "runs/preflight-wrx90/rows.jsonl": "20e1ce4a063137413b65d46f9f65a89d93efee50d650973a27567722dd7081e1",
+    "runs/benchmark-wrx90/MANIFEST.json": "c45725101a8ac6cfcc9f2fc50fad67b4edbee10d96514ae08d96cd83273ae0c9",
+    "runs/benchmark-wrx90/STATUS.json": "9052198ebd9acb10925cdae46d6743242b22252365b71991bc635f3d5c980b74",
+    "runs/benchmark-wrx90/rows.jsonl": "6fca4340129d5664146fd6e1d2546039073dd37a5c345fef170f62e25d5c10c3"
+  },
+  "frozen_inputs": "PASS",
+  "games_replayed": 0,
+  "method": "Restore published inputs and journals, verify every freeze hash and exact journal/manifest/status bytes"
+}

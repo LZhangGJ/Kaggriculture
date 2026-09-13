@@ -1,0 +1,23 @@
+{
+  "environment": {
+    "cpu_only": true,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "start_method": "fork",
+    "threads_per_worker": 1,
+    "timeout_seconds_per_game": 180,
+    "worker_recycle_games": 64
+  },
+  "freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d",
+  "jobs_sha256": "4a6c517d601a6d6b2823847f48e0256266708f41fd41e424bbf847ab76c46858",
+  "phase": "benchmark",
+  "preflight": {
+    "MANIFEST.json": "1c7b43a515ca29bcda2708e3e1bf9bac590f6afc48ee9d7a79e0b05b13eda2fc",
+    "STATUS.json": "4a4b2a65430ad96cacd4279876b0e1e953a0f2f17d9807ad95264888cccf75bc",
+    "rows.jsonl": "534c80641b94eb22babfcc9d10124b7ebe6a49cd5b6af534fa43fc911c68dad1"
+  },
+  "scheduled": 6848,
+  "schema": "kaggriculture-run-v2",
+  "shard": "local",
+  "workers": 16
+}

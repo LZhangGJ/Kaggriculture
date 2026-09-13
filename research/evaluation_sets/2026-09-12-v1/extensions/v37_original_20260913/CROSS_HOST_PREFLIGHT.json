@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-13T05:22:53Z",
+  "fields_compared": [
+    "steps",
+    "own_cash",
+    "opponent_cash",
+    "margin",
+    "win",
+    "tie",
+    "action_hash",
+    "terminal_shops",
+    "economy"
+  ],
+  "freeze_sha256": "59c76d25fceeeb366d30ec15416ed260469029e9b72415c2000629e335309d9d",
+  "full_games_per_host": 256,
+  "full_games_total": 512,
+  "matched_cases": 128,
+  "mean_direct_game_seconds_by_host_and_candidate": {
+    "local": {
+      "public-ahmed-v37-original": 1.0008944183437503
+    },
+    "wrx90": {
+      "public-ahmed-v37-original": 0.7333397450502162
+    }
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "official_observation_checks_total": 368640,
+  "qualification": "Timing comes from the full verification workload under concurrent CPU execution; primary-run throughput may differ.",
+  "source_files": {
+    "local": {
+      "MANIFEST.json": "1c7b43a515ca29bcda2708e3e1bf9bac590f6afc48ee9d7a79e0b05b13eda2fc",
+      "STATUS.json": "4a4b2a65430ad96cacd4279876b0e1e953a0f2f17d9807ad95264888cccf75bc",
+      "VERIFIED.json": "8c2cca0e7bd78dbc2bc3b241ae9f976b6b62482e1cce3a3df1140e2774be2961",
+      "rows.jsonl": "534c80641b94eb22babfcc9d10124b7ebe6a49cd5b6af534fa43fc911c68dad1"
+    },
+    "wrx90": {
+      "MANIFEST.json": "c11f3cfa1f464d91dea93ac4934ad181b0686f5c3d694ad254966c77abf36a86",
+      "STATUS.json": "8dade700cd36eea938ef32757ffda34d7a4b0ad773d49784af0396e1d15d4436",
+      "VERIFIED.json": "a030e6a8f32da349c62bbf973bae307414d808043fd71f6cd7be0963df059cec",
+      "rows.jsonl": "20e1ce4a063137413b65d46f9f65a89d93efee50d650973a27567722dd7081e1"
+    }
+  },
+  "status": "PASS"
+}

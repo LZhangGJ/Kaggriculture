@@ -1,0 +1,40 @@
+{
+  "candidate": {
+    "benchmark_cohort": "v37_original_20260913",
+    "binary": "public/ahmed-v37-original/main.py",
+    "binary_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+    "comparison": "Exact public parent of v37 feed reserve; no source edits",
+    "config": {
+      "__engine": "direct",
+      "__package": {
+        "runtime_path": "public/ahmed-v37-original/adapter"
+      },
+      "__sparse_observations": true
+    },
+    "display_name": "v37 unchanged",
+    "holdout_use": "Reused public benchmark; not fresh confirmation",
+    "id": "public-ahmed-v37-original",
+    "name": "v37 unchanged",
+    "role": "unchanged_public_reference",
+    "runtime_files": {
+      "public/ahmed-v37-original/SOURCE.json": "a6c759d167dac10627f2d270d94599163921f4fcdc42bfd99ca2f89f9910cd37",
+      "public/ahmed-v37-original/adapter/main.py": "81e0fdbb7fd4e2f805b9cc6808707d8264b408bdc4b899770b33465eaa210c3e",
+      "public/ahmed-v37-original/main.py": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c"
+    },
+    "source": {
+      "entry_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+      "extraction": "Literal contents of writefile cell; no source edits or notebook execution.",
+      "identical_republication": "https://www.kaggle.com/code/reyhanksatria/kaggriculture-dynamic-route-agent",
+      "kind": "Unmodified public Ahmed v37; all original Apache-2.0 notices retained in main.py",
+      "primary_notebook": "https://www.kaggle.com/code/ahmedberatozer/more-yield-smarter-labor",
+      "source_notebook_sha256": "5895410a9b3d62973ff94e8d2631f04b57489088566dfbcec1c798d6ad7c5466"
+    }
+  },
+  "new_games": 20480,
+  "previous_games": 184320,
+  "previous_publication_commit": "981ac6db456155de1b7fbbbd9f54fbfda8c19cd5",
+  "previous_results_sha256": "fbe5966826f605b6c5907e6508908482d771de7b936c0bb2a2861e55bcfd1be2",
+  "source_notebook_sha256": "5895410a9b3d62973ff94e8d2631f04b57489088566dfbcec1c798d6ad7c5466",
+  "status": "prepared_before_freeze",
+  "total_games": 204800
+}

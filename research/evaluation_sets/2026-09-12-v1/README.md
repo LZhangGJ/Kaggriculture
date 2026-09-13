@@ -1,6 +1,6 @@
 # Shared Kaggriculture evaluation sets
 
-The master leaderboard now covers **nine agents and 184,320 valid games**, with zero invalid, missing or duplicate cells. Read [all three panels on one page](results/ALL_RESULTS.md), with panel explanations, best win rates in bold, and every opponent and seat. The [Pro8 extension](extensions/pro8_20260913/README.md) adds 61,440 games while preserving all original results. The [holdout](retired_holdout/holdout.json) is public and retired; Pro8 uses it as a known benchmark, not fresh confirmation.
+The master leaderboard now covers **ten agents and 204,800 valid games**, with zero invalid, missing or duplicate cells. Read [all three panels on one page](results/ALL_RESULTS.md), including best rates in bold, every opponent and seat, weakest matchups, and the paired feed-reserve comparison. The [unchanged-v37 extension](extensions/v37_original_20260913/README.md) adds 20,480 games and preserves all previous results. The holdout is public and retired; later additions use it as a known benchmark, with no fresh confirmation claim.
 
 The **stress panel is complete**: [overall results](stress_results/RESULTS.md), [win rates by opponent](stress_results/BY_OPPONENT.md), and [opponent-by-seat tables](stress_results/BY_OPPONENT_AND_SEAT.md). All 24,576 stress games passed validation. Stress measures selected extremes and must be reported separately from representative performance. All three panels are now complete; the stress-only snapshot is retained for provenance.
 
