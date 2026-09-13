@@ -1,0 +1,18 @@
+{
+  "author": "C03",
+  "round": 1,
+  "chat_url": "https://chatgpt.com/c/6aa6d318-0b10-83ea-adcb-27db220c7903",
+  "observed_complete_utc": "2026-09-13T17:49:07.184Z",
+  "archive": "C03_round1_strategy.zip",
+  "bytes": 33930565,
+  "sha256": "c5e95c87c27085af1d3c2a8fab268583af0ad29b2cd05eda34f34674f3c3cc2f",
+  "archive_hash_matches_author": true,
+  "author_report": "C03_RESULTS_author.md",
+  "author_claimed_pass_games": 256,
+  "author_claimed_distinct_seeds": 128,
+  "author_claimed_mean_terminal_cash": 207077.0234375,
+  "controller_qualification": "not_run",
+  "competitive_acceptance": "not_run",
+  "verification": "verified_import_and_development_reproduction",
+  "delivery_note": "Initial inline link navigated to a blocked page. A delivery-only follow-up preserved existing bytes. Registering waitForEvent('download') before clicking the file button succeeded. No browser security setting changed."
+}
