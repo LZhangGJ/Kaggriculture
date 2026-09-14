@@ -100,14 +100,15 @@ def advance(root):
     public=[e['agent'] for e in roster if e['category']=='public']
     if not public:return
     incumbent=min(public,key=lambda a:stats[a]['win_rate'])
-    attempted={m['public_challenge']['candidate'] for m in trials}
+    attempted={m['public_challenge']['candidate'] for m in trials
+               if not read(root/'runs'/m['id']/'public-decision.json',{}).get('roster_changed')}
     candidates=[a for a in records(root,'agents') if a['id'] not in ids|attempted and a.get('build_verified')
                 and a['manifest'].get('origin',{}).get('kind')=='public']
     # Earlier retired versions must not re-enter the challenge queue.
     candidates=[a for a in candidates if a['status']!='archived']
     if not candidates:return
     candidate=min(candidates,key=lambda a:a['created'])['id'];panel=sorted(ids-{incumbent})
-    rid='public-'+candidate[:16]
+    rid='public-'+candidate[:16]+'-'+digest(roster)[:8]
     m=schedule.plan(root,rid,'confirmation',128,candidate,panel)
     extra=[]
     for g in m['games']:
