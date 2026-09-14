@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-14T00:52:51.2403503Z",
+  "asset_count": 210,
+  "verified_assets": [
+    {
+      "apiUrl": "https://api.github.com/repos/LZhangGJ/Kaggriculture/releases/assets/562237270",
+      "contentType": "application/zip",
+      "createdAt": "2026-09-14T00:52:32Z",
+      "digest": "sha256:32249de1049e41587b1279bdfa22d1db44c7ba84e8e89164a68863c7404764b5",
+      "downloadCount": 0,
+      "id": "RA_kwDOT09eU84hgw9W",
+      "label": "",
+      "name": "C03_ROUND03_FEEDBACK.zip",
+      "size": 14657009,
+      "state": "uploaded",
+      "updatedAt": "2026-09-14T00:52:33Z",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C03_ROUND03_FEEDBACK.zip"
+    }
+  ]
+}

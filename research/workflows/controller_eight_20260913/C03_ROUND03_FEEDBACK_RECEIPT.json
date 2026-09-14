@@ -1,0 +1,45 @@
+{
+  "author": "C03",
+  "round": 3,
+  "file": "C03_ROUND03_FEEDBACK.zip",
+  "bytes": 14657009,
+  "sha256": "32249de1049e41587b1279bdfa22d1db44c7ba84e8e89164a68863c7404764b5",
+  "manifest_entries_verified": 286,
+  "critical_cells": [
+    {
+      "seed": 1797399852,
+      "seat": 0,
+      "selected_cash": 125377.0,
+      "baseline_cash": 252029.0,
+      "delta": -126652.0
+    },
+    {
+      "seed": 1480222841,
+      "seat": 0,
+      "selected_cash": 182863.0,
+      "baseline_cash": 262800.0,
+      "delta": -79937.0
+    },
+    {
+      "seed": 2110661693,
+      "seat": 1,
+      "selected_cash": 132903.0,
+      "baseline_cash": 211812.0,
+      "delta": -78909.0
+    },
+    {
+      "seed": 1797399852,
+      "seat": 1,
+      "selected_cash": 185615.0,
+      "baseline_cash": 252029.0,
+      "delta": -66414.0
+    }
+  ],
+  "known_seed_count": 1176,
+  "C08_round02_inventory_available_at_packaging": false,
+  "root_must_merge_new_seed_declarations_before_dispatch": true,
+  "round_minutes": 60,
+  "reserve_minutes": 15,
+  "dispatched": false,
+  "audit_receipt_sha256": "387cae8153a0571416da16ab90df0290b8273e041efa85dbca3fc67edaa76fe5"
+}

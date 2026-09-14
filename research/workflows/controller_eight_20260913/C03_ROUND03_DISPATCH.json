@@ -1,0 +1,17 @@
+{
+  "candidate": "C03",
+  "round": 3,
+  "start_utc": "2026-09-14T00:52:18.498Z",
+  "deadline_utc": "2026-09-14T01:52:18.498Z",
+  "minutes": 60,
+  "max_workers": 2,
+  "validation_packaging_reserve_minutes": 15,
+  "model": "ChatGPT 6 Pro",
+  "chat_url": "https://chatgpt.com/c/6aa6d318-0b10-83ea-adcb-27db220c7903",
+  "packet": "C03_ROUND03_FEEDBACK.zip",
+  "bytes": 14657009,
+  "sha256": "32249de1049e41587b1279bdfa22d1db44c7ba84e8e89164a68863c7404764b5",
+  "known_seed_count": 1176,
+  "c08_round02_seeds_available": false,
+  "actual_user_turn_and_stop_answering_verified": true
+}
