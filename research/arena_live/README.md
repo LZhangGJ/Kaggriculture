@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 14, 2026 at 3:01 PM UTC
+Updated: Sep 14, 2026 at 3:05 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -8,7 +8,7 @@ CPU evaluation on WRX90 and the mini PC. Results below are local; they are not K
 
 Best team agent: Day 9 planner selector (daily-2026-09-14)
 
-Live Elo leader: kaggriculture-v41-review-candidate [PUBLIC] — 1775.5 Elo, 4088 games
+Live Elo leader: Day 9 planner selector [Team] — 1798.2 Elo, 4172 games
 
 Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.
 
@@ -41,26 +41,26 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Internal Elo, not Kaggle’s unpublished live formula. CPU workers run a round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.
 
-Last updated: Sep 14, 2026 at 2:58 PM UTC
+Last updated: Sep 14, 2026 at 3:02 PM UTC
 
-Status: running Â· Last sync: Sep 14, 2026 at 2:58 PM UTC
+Status: running Â· Last sync: Sep 14, 2026 at 3:02 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
-| kaggriculture-v41-review-candidate **PUBLIC** | 1775.5 | 4088 | 71.5% | ffc8942965 |
-| Day 9 planner selector | 1747.2 | 4066 | 73.2% | ffc8942965 |
-| TRI_A06_r12_r3_fix1 | 1692.9 | 4090 | 70.1% | ffc8942965 |
-| TRI_A08_r11_r3 | 1654.1 | 4088 | 51.9% | ffc8942965 |
-| kaggriculture-utils-v1 **PUBLIC** | 1644.9 | 4082 | 64.5% | ffc8942965 |
-| TRI_A06_r6_r3_bundle_fix1 | 1617.8 | 4076 | 66.6% | ffc8942965 |
-| AFS R1 | 1572.3 | 4076 | 48.9% | ffc8942965 |
-| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1546.4 | 4082 | 55.2% | ffc8942965 |
-| kaggriculture-best-agent **PUBLIC** | 1495.0 | 4092 | 41.6% | ffc8942965 |
-| kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1463.8 | 4074 | 30.9% | ffc8942965 |
-| kaggriculture **PUBLIC** | 1463.7 | 4088 | 41.7% | ffc8942965 |
-| AFS R2 | 1435.0 | 4080 | 47.8% | ffc8942965 |
-| shop-router-0913 **PUBLIC** | 1401.5 | 4104 | 36.2% | ffc8942965 |
-| kaggriculture-adaptive-land-allocator **PUBLIC** | 489.8 | 4090 | 0.0% | ffc8942965 |
+| Day 9 planner selector | 1798.2 | 4172 | 73.3% | ffc8942965 |
+| kaggriculture-v41-review-candidate **PUBLIC** | 1724.0 | 4188 | 71.4% | ffc8942965 |
+| TRI_A06_r12_r3_fix1 | 1708.0 | 4182 | 70.1% | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1701.1 | 4180 | 66.6% | ffc8942965 |
+| kaggriculture-utils-v1 **PUBLIC** | 1618.8 | 4172 | 64.4% | ffc8942965 |
+| AFS R2 | 1590.5 | 4180 | 48.1% | ffc8942965 |
+| AFS R1 | 1587.2 | 4160 | 48.9% | ffc8942965 |
+| TRI_A08_r11_r3 | 1546.6 | 4180 | 51.8% | ffc8942965 |
+| kaggriculture **PUBLIC** | 1512.1 | 4172 | 41.8% | ffc8942965 |
+| shop-router-0913 **PUBLIC** | 1477.1 | 4180 | 36.3% | ffc8942965 |
+| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1464.3 | 4174 | 54.9% | ffc8942965 |
+| kaggriculture-best-agent **PUBLIC** | 1429.4 | 4182 | 41.5% | ffc8942965 |
+| kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1355.9 | 4170 | 30.8% | ffc8942965 |
+| kaggriculture-adaptive-land-allocator **PUBLIC** | 486.9 | 4176 | 0.0% | ffc8942965 |
 
 ## Public refresh
 
@@ -112,7 +112,7 @@ Each challenger and the proposed replacement face the same other agents on 128 f
 | placement-45924f495e302bd90060 | Complete | 384/384 |
 | placement-972925e664128e56a78c | Complete | 384/384 |
 | placement-cfe725def642ac5d1afa | Complete | 384/384 |
-| public-45924f495e302bd9-7931ef66 | Provisional | 2304/6656 |
+| public-45924f495e302bd9-7931ef66 | Provisional | 2432/6656 |
 | verified-126bc3e142fa | Complete | 2/2 |
 | verified-1906a69871a3 | Complete | 2/2 |
 | verified-235bd66241b9 | Complete | 2/2 |
@@ -126,215 +126,215 @@ Each challenger and the proposed replacement face the same other agents on 128 f
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 52273/52273 |
+| cumulative-active-ffc8942965b1 | Provisional | 52871/52871 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 3:01 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 3:05 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
-| kaggriculture-v41-review-candidate | 1.47 | 5363 / 2104 / 0 | 71.8% | 71.8% | 16,093 |
-| Day 9 planner selector | 1.47 | 5349 / 2109 / 0 | 71.7% | 71.7% | 13,549 |
-| TRI_A06_r12_r3_fix1 | 1.35 | 5182 / 2295 / 0 | 69.3% | 69.3% | 13,383 |
-| TRI_A06_r6_r3_bundle_fix1 | 1.25 | 5006 / 2456 / 0 | 67.1% | 67.1% | 12,831 |
-| kaggriculture-utils-v1 | 1.17 | 4891 / 2575 / 0 | 65.5% | 65.5% | 15,722 |
-| kaggriculture-metacounter-r1-scored-agent | 0.78 | 4107 / 3091 / 267 | 55.0% | 56.8% | 4,338 |
-| TRI_A08_r11_r3 | 0.51 | 3766 / 3704 / 0 | 50.4% | 50.4% | 9,084 |
-| AFS R1 | 0.39 | 3563 / 3879 / 16 | 47.8% | 47.9% | 8,294 |
-| AFS R2 | 0.33 | 3457 / 3993 / 16 | 46.3% | 46.4% | 8,162 |
-| kaggriculture | 0.14 | 2823 / 3979 / 666 | 37.8% | 42.3% | 2,841 |
-| kaggriculture-best-agent | 0.14 | 2823 / 3988 / 665 | 37.8% | 42.2% | 2,877 |
-| shop-router-0913 | -0.12 | 2761 / 4725 / 0 | 36.9% | 36.9% | 1,391 |
-| kaggriculture-shop-router-reactive-v4 | -0.38 | 2367 / 5091 / 0 | 31.7% | 31.7% | 2,511 |
-| kaggriculture-adaptive-land-allocator | -8.50 | 0 / 7469 / 0 | 0.0% | 0.0% | -111,033 |
+| Day 9 planner selector | 1.47 | 5423 / 2133 / 0 | 71.8% | 71.8% | 13,530 |
+| kaggriculture-v41-review-candidate | 1.47 | 5429 / 2134 / 0 | 71.8% | 71.8% | 16,108 |
+| TRI_A06_r12_r3_fix1 | 1.35 | 5237 / 2323 / 0 | 69.3% | 69.3% | 13,394 |
+| TRI_A06_r6_r3_bundle_fix1 | 1.24 | 5062 / 2487 / 0 | 67.1% | 67.1% | 12,858 |
+| kaggriculture-utils-v1 | 1.17 | 4942 / 2609 / 0 | 65.4% | 65.4% | 15,676 |
+| kaggriculture-metacounter-r1-scored-agent | 0.77 | 4135 / 3145 / 273 | 54.7% | 56.6% | 4,255 |
+| TRI_A08_r11_r3 | 0.51 | 3814 / 3746 / 0 | 50.4% | 50.4% | 9,112 |
+| AFS R1 | 0.40 | 3607 / 3916 / 16 | 47.8% | 48.0% | 8,319 |
+| AFS R2 | 0.33 | 3506 / 4032 / 16 | 46.4% | 46.5% | 8,175 |
+| kaggriculture | 0.14 | 2852 / 4026 / 675 | 37.8% | 42.2% | 2,819 |
+| kaggriculture-best-agent | 0.14 | 2850 / 4030 / 674 | 37.7% | 42.2% | 2,811 |
+| shop-router-0913 | -0.11 | 2791 / 4765 / 0 | 36.9% | 36.9% | 1,386 |
+| kaggriculture-shop-router-reactive-v4 | -0.37 | 2396 / 5147 / 0 | 31.8% | 31.8% | 2,447 |
+| kaggriculture-adaptive-land-allocator | -8.51 | 0 / 7551 / 0 | 0.0% | 0.0% | -110,940 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
 | Agent | Opponent | Wins / games | Win rate | Seat 0 W/G | Seat 1 W/G |
 |---|---|---:|---:|---:|---:|
-| kaggriculture-shop-router-reactive-v4 | TRI_A06_r12_r3_fix1 | 227/576 | 39.4% | 110/288 | 117/288 |
-| kaggriculture-shop-router-reactive-v4 | Day 9 planner selector | 219/570 | 38.4% | 105/283 | 114/287 |
-| kaggriculture-shop-router-reactive-v4 | AFS R1 | 228/573 | 39.8% | 114/285 | 114/288 |
-| kaggriculture-shop-router-reactive-v4 | TRI_A08_r11_r3 | 266/576 | 46.2% | 131/289 | 135/287 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-v41-review-candidate | 0/577 | 0.0% | 0/289 | 0/288 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture | 59/572 | 10.3% | 32/287 | 27/285 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-metacounter-r1-scored-agent | 32/572 | 5.6% | 17/287 | 15/285 |
-| kaggriculture-shop-router-reactive-v4 | AFS R2 | 216/574 | 37.6% | 107/286 | 109/288 |
-| kaggriculture-shop-router-reactive-v4 | TRI_A06_r6_r3_bundle_fix1 | 207/569 | 36.4% | 101/284 | 106/285 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-adaptive-land-allocator | 572/572 | 100.0% | 285/285 | 287/287 |
-| kaggriculture-shop-router-reactive-v4 | shop-router-0913 | 282/576 | 49.0% | 141/287 | 141/289 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-best-agent | 59/576 | 10.2% | 33/287 | 26/289 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-utils-v1 | 0/575 | 0.0% | 0/289 | 0/286 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-shop-router-reactive-v4 | 349/576 | 60.6% | 171/288 | 178/288 |
-| TRI_A06_r12_r3_fix1 | Day 9 planner selector | 148/576 | 25.7% | 72/289 | 76/287 |
-| TRI_A06_r12_r3_fix1 | AFS R1 | 543/575 | 94.4% | 274/288 | 269/287 |
-| TRI_A06_r12_r3_fix1 | TRI_A08_r11_r3 | 538/575 | 93.6% | 272/290 | 266/285 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-v41-review-candidate | 334/575 | 58.1% | 167/287 | 167/288 |
-| TRI_A06_r12_r3_fix1 | kaggriculture | 349/573 | 60.9% | 172/286 | 177/287 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-metacounter-r1-scored-agent | 333/575 | 57.9% | 163/287 | 170/288 |
-| TRI_A06_r12_r3_fix1 | AFS R2 | 544/575 | 94.6% | 275/288 | 269/287 |
-| TRI_A06_r12_r3_fix1 | TRI_A06_r6_r3_bundle_fix1 | 392/576 | 68.1% | 196/288 | 196/288 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-adaptive-land-allocator | 574/574 | 100.0% | 288/288 | 286/286 |
-| TRI_A06_r12_r3_fix1 | shop-router-0913 | 401/578 | 69.4% | 198/287 | 203/291 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-best-agent | 353/577 | 61.2% | 175/289 | 178/288 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-utils-v1 | 324/572 | 56.6% | 165/288 | 159/284 |
-| Day 9 planner selector | kaggriculture-shop-router-reactive-v4 | 351/570 | 61.6% | 173/287 | 178/283 |
-| Day 9 planner selector | TRI_A06_r12_r3_fix1 | 428/576 | 74.3% | 211/287 | 217/289 |
-| Day 9 planner selector | AFS R1 | 531/574 | 92.5% | 264/289 | 267/285 |
-| Day 9 planner selector | TRI_A08_r11_r3 | 512/576 | 88.9% | 262/289 | 250/287 |
-| Day 9 planner selector | kaggriculture-v41-review-candidate | 291/572 | 50.9% | 145/284 | 146/288 |
-| Day 9 planner selector | kaggriculture | 340/572 | 59.4% | 167/286 | 173/286 |
-| Day 9 planner selector | kaggriculture-metacounter-r1-scored-agent | 287/574 | 50.0% | 142/288 | 145/286 |
-| Day 9 planner selector | AFS R2 | 551/578 | 95.3% | 278/291 | 273/287 |
-| Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 450/570 | 78.9% | 219/285 | 231/285 |
-| Day 9 planner selector | kaggriculture-adaptive-land-allocator | 575/575 | 100.0% | 287/287 | 288/288 |
-| Day 9 planner selector | shop-router-0913 | 403/576 | 70.0% | 203/287 | 200/289 |
-| Day 9 planner selector | kaggriculture-best-agent | 341/573 | 59.5% | 167/286 | 174/287 |
-| Day 9 planner selector | kaggriculture-utils-v1 | 289/572 | 50.5% | 144/286 | 145/286 |
-| AFS R1 | kaggriculture-shop-router-reactive-v4 | 345/573 | 60.2% | 174/288 | 171/285 |
-| AFS R1 | TRI_A06_r12_r3_fix1 | 32/575 | 5.6% | 18/287 | 14/288 |
-| AFS R1 | Day 9 planner selector | 43/574 | 7.5% | 18/285 | 25/289 |
-| AFS R1 | TRI_A08_r11_r3 | 192/574 | 33.4% | 102/287 | 90/287 |
-| AFS R1 | kaggriculture-v41-review-candidate | 315/574 | 54.9% | 157/287 | 158/287 |
-| AFS R1 | kaggriculture | 342/576 | 59.4% | 170/287 | 172/289 |
-| AFS R1 | kaggriculture-metacounter-r1-scored-agent | 300/573 | 52.4% | 149/287 | 151/286 |
-| AFS R1 | AFS R2 | 298/574 | 51.9% | 149/288 | 149/286 |
-| AFS R1 | TRI_A06_r6_r3_bundle_fix1 | 51/571 | 8.9% | 24/285 | 27/286 |
-| AFS R1 | kaggriculture-adaptive-land-allocator | 571/571 | 100.0% | 286/286 | 285/285 |
-| AFS R1 | shop-router-0913 | 424/578 | 73.4% | 214/290 | 210/288 |
-| AFS R1 | kaggriculture-best-agent | 340/572 | 59.4% | 170/286 | 170/286 |
-| AFS R1 | kaggriculture-utils-v1 | 310/573 | 54.1% | 156/285 | 154/288 |
-| TRI_A08_r11_r3 | kaggriculture-shop-router-reactive-v4 | 310/576 | 53.8% | 152/287 | 158/289 |
-| TRI_A08_r11_r3 | TRI_A06_r12_r3_fix1 | 37/575 | 6.4% | 19/285 | 18/290 |
-| TRI_A08_r11_r3 | Day 9 planner selector | 64/576 | 11.1% | 37/287 | 27/289 |
-| TRI_A08_r11_r3 | AFS R1 | 382/574 | 66.6% | 197/287 | 185/287 |
-| TRI_A08_r11_r3 | kaggriculture-v41-review-candidate | 312/573 | 54.5% | 156/288 | 156/285 |
-| TRI_A08_r11_r3 | kaggriculture | 323/575 | 56.2% | 161/288 | 162/287 |
-| TRI_A08_r11_r3 | kaggriculture-metacounter-r1-scored-agent | 286/579 | 49.4% | 141/288 | 145/291 |
-| TRI_A08_r11_r3 | AFS R2 | 382/571 | 66.9% | 186/285 | 196/286 |
-| TRI_A08_r11_r3 | TRI_A06_r6_r3_bundle_fix1 | 69/574 | 12.0% | 36/288 | 33/286 |
-| TRI_A08_r11_r3 | kaggriculture-adaptive-land-allocator | 572/572 | 100.0% | 287/287 | 285/285 |
-| TRI_A08_r11_r3 | shop-router-0913 | 415/572 | 72.6% | 207/287 | 208/285 |
-| TRI_A08_r11_r3 | kaggriculture-best-agent | 327/579 | 56.5% | 162/288 | 165/291 |
-| TRI_A08_r11_r3 | kaggriculture-utils-v1 | 287/574 | 50.0% | 140/288 | 147/286 |
-| kaggriculture-v41-review-candidate | kaggriculture-shop-router-reactive-v4 | 577/577 | 100.0% | 288/288 | 289/289 |
-| kaggriculture-v41-review-candidate | TRI_A06_r12_r3_fix1 | 241/575 | 41.9% | 121/288 | 120/287 |
-| kaggriculture-v41-review-candidate | Day 9 planner selector | 281/572 | 49.1% | 142/288 | 139/284 |
-| kaggriculture-v41-review-candidate | AFS R1 | 259/574 | 45.1% | 129/287 | 130/287 |
-| kaggriculture-v41-review-candidate | TRI_A08_r11_r3 | 261/573 | 45.5% | 129/285 | 132/288 |
-| kaggriculture-v41-review-candidate | kaggriculture | 575/575 | 100.0% | 288/288 | 287/287 |
-| kaggriculture-v41-review-candidate | kaggriculture-metacounter-r1-scored-agent | 571/571 | 100.0% | 284/284 | 287/287 |
-| kaggriculture-v41-review-candidate | AFS R2 | 277/572 | 48.4% | 140/284 | 137/288 |
-| kaggriculture-v41-review-candidate | TRI_A06_r6_r3_bundle_fix1 | 222/577 | 38.5% | 111/290 | 111/287 |
-| kaggriculture-v41-review-candidate | kaggriculture-adaptive-land-allocator | 576/576 | 100.0% | 287/287 | 289/289 |
-| kaggriculture-v41-review-candidate | shop-router-0913 | 427/572 | 74.7% | 217/287 | 210/285 |
-| kaggriculture-v41-review-candidate | kaggriculture-best-agent | 576/576 | 100.0% | 288/288 | 288/288 |
-| kaggriculture-v41-review-candidate | kaggriculture-utils-v1 | 520/577 | 90.1% | 264/289 | 256/288 |
-| kaggriculture | kaggriculture-shop-router-reactive-v4 | 513/572 | 89.7% | 258/285 | 255/287 |
-| kaggriculture | TRI_A06_r12_r3_fix1 | 224/573 | 39.1% | 110/287 | 114/286 |
-| kaggriculture | Day 9 planner selector | 232/572 | 40.6% | 113/286 | 119/286 |
-| kaggriculture | AFS R1 | 234/576 | 40.6% | 117/289 | 117/287 |
-| kaggriculture | TRI_A08_r11_r3 | 252/575 | 43.8% | 125/287 | 127/288 |
-| kaggriculture | kaggriculture-v41-review-candidate | 0/575 | 0.0% | 0/287 | 0/288 |
-| kaggriculture | kaggriculture-metacounter-r1-scored-agent | 25/575 | 4.3% | 14/288 | 11/287 |
-| kaggriculture | AFS R2 | 229/573 | 40.0% | 112/285 | 117/288 |
-| kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 229/577 | 39.7% | 112/289 | 117/288 |
-| kaggriculture | kaggriculture-adaptive-land-allocator | 574/574 | 100.0% | 289/289 | 285/285 |
-| kaggriculture | shop-router-0913 | 290/577 | 50.3% | 144/287 | 146/290 |
-| kaggriculture | kaggriculture-best-agent | 21/574 | 3.7% | 13/287 | 8/287 |
-| kaggriculture | kaggriculture-utils-v1 | 0/575 | 0.0% | 0/287 | 0/288 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v4 | 540/572 | 94.4% | 270/285 | 270/287 |
-| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r12_r3_fix1 | 242/575 | 42.1% | 118/288 | 124/287 |
-| kaggriculture-metacounter-r1-scored-agent | Day 9 planner selector | 287/574 | 50.0% | 141/286 | 146/288 |
-| kaggriculture-metacounter-r1-scored-agent | AFS R1 | 273/573 | 47.6% | 135/286 | 138/287 |
-| kaggriculture-metacounter-r1-scored-agent | TRI_A08_r11_r3 | 293/579 | 50.6% | 146/291 | 147/288 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/571 | 0.0% | 0/287 | 0/284 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture | 416/575 | 72.3% | 209/287 | 207/288 |
-| kaggriculture-metacounter-r1-scored-agent | AFS R2 | 276/575 | 48.0% | 135/287 | 141/288 |
-| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r6_r3_bundle_fix1 | 251/574 | 43.7% | 124/288 | 127/286 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-adaptive-land-allocator | 574/574 | 100.0% | 287/287 | 287/287 |
-| kaggriculture-metacounter-r1-scored-agent | shop-router-0913 | 538/576 | 93.4% | 268/287 | 270/289 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-best-agent | 417/575 | 72.5% | 210/287 | 207/288 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-utils-v1 | 0/572 | 0.0% | 0/287 | 0/285 |
-| AFS R2 | kaggriculture-shop-router-reactive-v4 | 358/574 | 62.4% | 179/288 | 179/286 |
-| AFS R2 | TRI_A06_r12_r3_fix1 | 31/575 | 5.4% | 18/287 | 13/288 |
-| AFS R2 | Day 9 planner selector | 27/578 | 4.7% | 14/287 | 13/291 |
-| AFS R2 | AFS R1 | 260/574 | 45.3% | 129/286 | 131/288 |
-| AFS R2 | TRI_A08_r11_r3 | 189/571 | 33.1% | 90/286 | 99/285 |
-| AFS R2 | kaggriculture-v41-review-candidate | 295/572 | 51.6% | 151/288 | 144/284 |
-| AFS R2 | kaggriculture | 344/573 | 60.0% | 171/288 | 173/285 |
-| AFS R2 | kaggriculture-metacounter-r1-scored-agent | 299/575 | 52.0% | 147/288 | 152/287 |
-| AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 43/577 | 7.5% | 21/291 | 22/286 |
-| AFS R2 | kaggriculture-adaptive-land-allocator | 574/574 | 100.0% | 285/285 | 289/289 |
-| AFS R2 | shop-router-0913 | 406/577 | 70.4% | 204/289 | 202/288 |
-| AFS R2 | kaggriculture-best-agent | 344/572 | 60.1% | 170/285 | 174/287 |
-| AFS R2 | kaggriculture-utils-v1 | 287/574 | 50.0% | 145/288 | 142/286 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-shop-router-reactive-v4 | 362/569 | 63.6% | 179/285 | 183/284 |
-| TRI_A06_r6_r3_bundle_fix1 | TRI_A06_r12_r3_fix1 | 184/576 | 31.9% | 92/288 | 92/288 |
-| TRI_A06_r6_r3_bundle_fix1 | Day 9 planner selector | 120/570 | 21.1% | 54/285 | 66/285 |
-| TRI_A06_r6_r3_bundle_fix1 | AFS R1 | 520/571 | 91.1% | 259/286 | 261/285 |
-| TRI_A06_r6_r3_bundle_fix1 | TRI_A08_r11_r3 | 505/574 | 88.0% | 253/286 | 252/288 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v41-review-candidate | 355/577 | 61.5% | 176/287 | 179/290 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture | 348/577 | 60.3% | 171/288 | 177/289 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-metacounter-r1-scored-agent | 323/574 | 56.3% | 159/286 | 164/288 |
-| TRI_A06_r6_r3_bundle_fix1 | AFS R2 | 534/577 | 92.5% | 264/286 | 270/291 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-adaptive-land-allocator | 572/572 | 100.0% | 286/286 | 286/286 |
-| TRI_A06_r6_r3_bundle_fix1 | shop-router-0913 | 451/575 | 78.4% | 223/287 | 228/288 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-best-agent | 348/573 | 60.7% | 173/287 | 175/286 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-utils-v1 | 384/577 | 66.6% | 190/288 | 194/289 |
-| kaggriculture-adaptive-land-allocator | kaggriculture-shop-router-reactive-v4 | 0/572 | 0.0% | 0/287 | 0/285 |
-| kaggriculture-adaptive-land-allocator | TRI_A06_r12_r3_fix1 | 0/574 | 0.0% | 0/286 | 0/288 |
-| kaggriculture-adaptive-land-allocator | Day 9 planner selector | 0/575 | 0.0% | 0/288 | 0/287 |
-| kaggriculture-adaptive-land-allocator | AFS R1 | 0/571 | 0.0% | 0/285 | 0/286 |
-| kaggriculture-adaptive-land-allocator | TRI_A08_r11_r3 | 0/572 | 0.0% | 0/285 | 0/287 |
-| kaggriculture-adaptive-land-allocator | kaggriculture-v41-review-candidate | 0/576 | 0.0% | 0/289 | 0/287 |
-| kaggriculture-adaptive-land-allocator | kaggriculture | 0/574 | 0.0% | 0/285 | 0/289 |
-| kaggriculture-adaptive-land-allocator | kaggriculture-metacounter-r1-scored-agent | 0/574 | 0.0% | 0/287 | 0/287 |
-| kaggriculture-adaptive-land-allocator | AFS R2 | 0/574 | 0.0% | 0/289 | 0/285 |
-| kaggriculture-adaptive-land-allocator | TRI_A06_r6_r3_bundle_fix1 | 0/572 | 0.0% | 0/286 | 0/286 |
-| kaggriculture-adaptive-land-allocator | shop-router-0913 | 0/578 | 0.0% | 0/288 | 0/290 |
-| kaggriculture-adaptive-land-allocator | kaggriculture-best-agent | 0/578 | 0.0% | 0/290 | 0/288 |
-| kaggriculture-adaptive-land-allocator | kaggriculture-utils-v1 | 0/579 | 0.0% | 0/291 | 0/288 |
-| shop-router-0913 | kaggriculture-shop-router-reactive-v4 | 294/576 | 51.0% | 148/289 | 146/287 |
-| shop-router-0913 | TRI_A06_r12_r3_fix1 | 177/578 | 30.6% | 88/291 | 89/287 |
-| shop-router-0913 | Day 9 planner selector | 173/576 | 30.0% | 89/289 | 84/287 |
-| shop-router-0913 | AFS R1 | 154/578 | 26.6% | 78/288 | 76/290 |
-| shop-router-0913 | TRI_A08_r11_r3 | 157/572 | 27.4% | 77/285 | 80/287 |
-| shop-router-0913 | kaggriculture-v41-review-candidate | 145/572 | 25.3% | 75/285 | 70/287 |
-| shop-router-0913 | kaggriculture | 287/577 | 49.7% | 144/290 | 143/287 |
-| shop-router-0913 | kaggriculture-metacounter-r1-scored-agent | 38/576 | 6.6% | 19/289 | 19/287 |
-| shop-router-0913 | AFS R2 | 171/577 | 29.6% | 86/288 | 85/289 |
-| shop-router-0913 | TRI_A06_r6_r3_bundle_fix1 | 124/575 | 21.6% | 60/288 | 64/287 |
-| shop-router-0913 | kaggriculture-adaptive-land-allocator | 578/578 | 100.0% | 290/290 | 288/288 |
-| shop-router-0913 | kaggriculture-best-agent | 289/578 | 50.0% | 144/290 | 145/288 |
-| shop-router-0913 | kaggriculture-utils-v1 | 174/573 | 30.4% | 90/287 | 84/286 |
-| kaggriculture-best-agent | kaggriculture-shop-router-reactive-v4 | 517/576 | 89.8% | 263/289 | 254/287 |
-| kaggriculture-best-agent | TRI_A06_r12_r3_fix1 | 224/577 | 38.8% | 110/288 | 114/289 |
-| kaggriculture-best-agent | Day 9 planner selector | 232/573 | 40.5% | 113/287 | 119/286 |
-| kaggriculture-best-agent | AFS R1 | 232/572 | 40.6% | 116/286 | 116/286 |
-| kaggriculture-best-agent | TRI_A08_r11_r3 | 252/579 | 43.5% | 126/291 | 126/288 |
-| kaggriculture-best-agent | kaggriculture-v41-review-candidate | 0/576 | 0.0% | 0/288 | 0/288 |
-| kaggriculture-best-agent | kaggriculture | 21/574 | 3.7% | 13/287 | 8/287 |
-| kaggriculture-best-agent | kaggriculture-metacounter-r1-scored-agent | 25/575 | 4.3% | 14/288 | 11/287 |
-| kaggriculture-best-agent | AFS R2 | 228/572 | 39.9% | 113/287 | 115/285 |
-| kaggriculture-best-agent | TRI_A06_r6_r3_bundle_fix1 | 225/573 | 39.3% | 111/286 | 114/287 |
-| kaggriculture-best-agent | kaggriculture-adaptive-land-allocator | 578/578 | 100.0% | 288/288 | 290/290 |
-| kaggriculture-best-agent | shop-router-0913 | 289/578 | 50.0% | 143/288 | 146/290 |
-| kaggriculture-best-agent | kaggriculture-utils-v1 | 0/573 | 0.0% | 0/286 | 0/287 |
-| kaggriculture-utils-v1 | kaggriculture-shop-router-reactive-v4 | 575/575 | 100.0% | 286/286 | 289/289 |
-| kaggriculture-utils-v1 | TRI_A06_r12_r3_fix1 | 248/572 | 43.4% | 125/284 | 123/288 |
-| kaggriculture-utils-v1 | Day 9 planner selector | 283/572 | 49.5% | 141/286 | 142/286 |
-| kaggriculture-utils-v1 | AFS R1 | 263/573 | 45.9% | 134/288 | 129/285 |
-| kaggriculture-utils-v1 | TRI_A08_r11_r3 | 287/574 | 50.0% | 139/286 | 148/288 |
-| kaggriculture-utils-v1 | kaggriculture-v41-review-candidate | 57/577 | 9.9% | 32/288 | 25/289 |
-| kaggriculture-utils-v1 | kaggriculture | 575/575 | 100.0% | 288/288 | 287/287 |
-| kaggriculture-utils-v1 | kaggriculture-metacounter-r1-scored-agent | 572/572 | 100.0% | 285/285 | 287/287 |
-| kaggriculture-utils-v1 | AFS R2 | 287/574 | 50.0% | 144/286 | 143/288 |
-| kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 193/577 | 33.4% | 95/289 | 98/288 |
-| kaggriculture-utils-v1 | kaggriculture-adaptive-land-allocator | 579/579 | 100.0% | 288/288 | 291/291 |
-| kaggriculture-utils-v1 | shop-router-0913 | 399/573 | 69.6% | 202/286 | 197/287 |
-| kaggriculture-utils-v1 | kaggriculture-best-agent | 573/573 | 100.0% | 287/287 | 286/286 |
+| kaggriculture-shop-router-reactive-v4 | TRI_A06_r12_r3_fix1 | 229/582 | 39.3% | 110/290 | 119/292 |
+| kaggriculture-shop-router-reactive-v4 | Day 9 planner selector | 224/581 | 38.6% | 109/291 | 115/290 |
+| kaggriculture-shop-router-reactive-v4 | AFS R1 | 229/578 | 39.6% | 115/289 | 114/289 |
+| kaggriculture-shop-router-reactive-v4 | TRI_A08_r11_r3 | 270/581 | 46.5% | 133/291 | 137/290 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-v41-review-candidate | 0/582 | 0.0% | 0/292 | 0/290 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture | 60/582 | 10.3% | 33/291 | 27/291 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-metacounter-r1-scored-agent | 33/575 | 5.7% | 18/288 | 15/287 |
+| kaggriculture-shop-router-reactive-v4 | AFS R2 | 218/582 | 37.5% | 108/290 | 110/292 |
+| kaggriculture-shop-router-reactive-v4 | TRI_A06_r6_r3_bundle_fix1 | 210/575 | 36.5% | 103/288 | 107/287 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-adaptive-land-allocator | 576/576 | 100.0% | 288/288 | 288/288 |
+| kaggriculture-shop-router-reactive-v4 | shop-router-0913 | 285/582 | 49.0% | 143/291 | 142/291 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-best-agent | 62/584 | 10.6% | 34/292 | 28/292 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-utils-v1 | 0/583 | 0.0% | 0/293 | 0/290 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-shop-router-reactive-v4 | 353/582 | 60.7% | 173/292 | 180/290 |
+| TRI_A06_r12_r3_fix1 | Day 9 planner selector | 150/585 | 25.6% | 73/293 | 77/292 |
+| TRI_A06_r12_r3_fix1 | AFS R1 | 547/580 | 94.3% | 276/290 | 271/290 |
+| TRI_A06_r12_r3_fix1 | TRI_A08_r11_r3 | 545/582 | 93.6% | 275/293 | 270/289 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-v41-review-candidate | 339/583 | 58.1% | 168/289 | 171/294 |
+| TRI_A06_r12_r3_fix1 | kaggriculture | 355/580 | 61.2% | 175/290 | 180/290 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-metacounter-r1-scored-agent | 338/583 | 58.0% | 166/292 | 172/291 |
+| TRI_A06_r12_r3_fix1 | AFS R2 | 547/579 | 94.5% | 276/290 | 271/289 |
+| TRI_A06_r12_r3_fix1 | TRI_A06_r6_r3_bundle_fix1 | 396/582 | 68.0% | 198/292 | 198/290 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-adaptive-land-allocator | 582/582 | 100.0% | 291/291 | 291/291 |
+| TRI_A06_r12_r3_fix1 | shop-router-0913 | 402/581 | 69.2% | 199/290 | 203/291 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-best-agent | 356/582 | 61.2% | 177/293 | 179/289 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-utils-v1 | 327/579 | 56.5% | 167/291 | 160/288 |
+| Day 9 planner selector | kaggriculture-shop-router-reactive-v4 | 357/581 | 61.4% | 175/290 | 182/291 |
+| Day 9 planner selector | TRI_A06_r12_r3_fix1 | 435/585 | 74.4% | 215/292 | 220/293 |
+| Day 9 planner selector | AFS R1 | 539/582 | 92.6% | 267/292 | 272/290 |
+| Day 9 planner selector | TRI_A08_r11_r3 | 518/584 | 88.7% | 263/291 | 255/293 |
+| Day 9 planner selector | kaggriculture-v41-review-candidate | 297/578 | 51.4% | 150/289 | 147/289 |
+| Day 9 planner selector | kaggriculture | 344/580 | 59.3% | 170/291 | 174/289 |
+| Day 9 planner selector | kaggriculture-metacounter-r1-scored-agent | 294/582 | 50.5% | 146/292 | 148/290 |
+| Day 9 planner selector | AFS R2 | 556/583 | 95.4% | 279/292 | 277/291 |
+| Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 459/582 | 78.9% | 222/290 | 237/292 |
+| Day 9 planner selector | kaggriculture-adaptive-land-allocator | 581/581 | 100.0% | 291/291 | 290/290 |
+| Day 9 planner selector | shop-router-0913 | 405/582 | 69.6% | 204/291 | 201/291 |
+| Day 9 planner selector | kaggriculture-best-agent | 345/578 | 59.7% | 170/289 | 175/289 |
+| Day 9 planner selector | kaggriculture-utils-v1 | 293/578 | 50.7% | 146/288 | 147/290 |
+| AFS R1 | kaggriculture-shop-router-reactive-v4 | 349/578 | 60.4% | 175/289 | 174/289 |
+| AFS R1 | TRI_A06_r12_r3_fix1 | 33/580 | 5.7% | 19/290 | 14/290 |
+| AFS R1 | Day 9 planner selector | 43/582 | 7.4% | 18/290 | 25/292 |
+| AFS R1 | TRI_A08_r11_r3 | 194/582 | 33.3% | 103/291 | 91/291 |
+| AFS R1 | kaggriculture-v41-review-candidate | 319/582 | 54.8% | 159/291 | 160/291 |
+| AFS R1 | kaggriculture | 346/580 | 59.7% | 172/289 | 174/291 |
+| AFS R1 | kaggriculture-metacounter-r1-scored-agent | 307/580 | 52.9% | 152/290 | 155/290 |
+| AFS R1 | AFS R2 | 300/579 | 51.8% | 149/290 | 151/289 |
+| AFS R1 | TRI_A06_r6_r3_bundle_fix1 | 51/578 | 8.8% | 24/290 | 27/288 |
+| AFS R1 | kaggriculture-adaptive-land-allocator | 579/579 | 100.0% | 291/291 | 288/288 |
+| AFS R1 | shop-router-0913 | 428/582 | 73.5% | 217/293 | 211/289 |
+| AFS R1 | kaggriculture-best-agent | 343/577 | 59.4% | 172/289 | 171/288 |
+| AFS R1 | kaggriculture-utils-v1 | 315/580 | 54.3% | 159/290 | 156/290 |
+| TRI_A08_r11_r3 | kaggriculture-shop-router-reactive-v4 | 311/581 | 53.5% | 153/290 | 158/291 |
+| TRI_A08_r11_r3 | TRI_A06_r12_r3_fix1 | 37/582 | 6.4% | 19/289 | 18/293 |
+| TRI_A08_r11_r3 | Day 9 planner selector | 66/584 | 11.3% | 38/293 | 28/291 |
+| TRI_A08_r11_r3 | AFS R1 | 388/582 | 66.7% | 200/291 | 188/291 |
+| TRI_A08_r11_r3 | kaggriculture-v41-review-candidate | 317/581 | 54.6% | 159/293 | 158/288 |
+| TRI_A08_r11_r3 | kaggriculture | 328/582 | 56.4% | 164/292 | 164/290 |
+| TRI_A08_r11_r3 | kaggriculture-metacounter-r1-scored-agent | 289/582 | 49.7% | 144/291 | 145/291 |
+| TRI_A08_r11_r3 | AFS R2 | 388/580 | 66.9% | 188/288 | 200/292 |
+| TRI_A08_r11_r3 | TRI_A06_r6_r3_bundle_fix1 | 69/581 | 11.9% | 36/291 | 33/290 |
+| TRI_A08_r11_r3 | kaggriculture-adaptive-land-allocator | 581/581 | 100.0% | 291/291 | 290/290 |
+| TRI_A08_r11_r3 | shop-router-0913 | 422/579 | 72.9% | 210/290 | 212/289 |
+| TRI_A08_r11_r3 | kaggriculture-best-agent | 330/584 | 56.5% | 164/292 | 166/292 |
+| TRI_A08_r11_r3 | kaggriculture-utils-v1 | 288/581 | 49.6% | 140/290 | 148/291 |
+| kaggriculture-v41-review-candidate | kaggriculture-shop-router-reactive-v4 | 582/582 | 100.0% | 290/290 | 292/292 |
+| kaggriculture-v41-review-candidate | TRI_A06_r12_r3_fix1 | 244/583 | 41.9% | 123/294 | 121/289 |
+| kaggriculture-v41-review-candidate | Day 9 planner selector | 281/578 | 48.6% | 142/289 | 139/289 |
+| kaggriculture-v41-review-candidate | AFS R1 | 263/582 | 45.2% | 131/291 | 132/291 |
+| kaggriculture-v41-review-candidate | TRI_A08_r11_r3 | 264/581 | 45.4% | 130/288 | 134/293 |
+| kaggriculture-v41-review-candidate | kaggriculture | 584/584 | 100.0% | 292/292 | 292/292 |
+| kaggriculture-v41-review-candidate | kaggriculture-metacounter-r1-scored-agent | 581/581 | 100.0% | 290/290 | 291/291 |
+| kaggriculture-v41-review-candidate | AFS R2 | 282/582 | 48.5% | 144/292 | 138/290 |
+| kaggriculture-v41-review-candidate | TRI_A06_r6_r3_bundle_fix1 | 224/580 | 38.6% | 111/290 | 113/290 |
+| kaggriculture-v41-review-candidate | kaggriculture-adaptive-land-allocator | 582/582 | 100.0% | 291/291 | 291/291 |
+| kaggriculture-v41-review-candidate | shop-router-0913 | 433/582 | 74.4% | 218/290 | 215/292 |
+| kaggriculture-v41-review-candidate | kaggriculture-best-agent | 584/584 | 100.0% | 292/292 | 292/292 |
+| kaggriculture-v41-review-candidate | kaggriculture-utils-v1 | 525/582 | 90.2% | 264/289 | 261/293 |
+| kaggriculture | kaggriculture-shop-router-reactive-v4 | 522/582 | 89.7% | 264/291 | 258/291 |
+| kaggriculture | TRI_A06_r12_r3_fix1 | 225/580 | 38.8% | 110/290 | 115/290 |
+| kaggriculture | Day 9 planner selector | 236/580 | 40.7% | 115/289 | 121/291 |
+| kaggriculture | AFS R1 | 234/580 | 40.3% | 117/291 | 117/289 |
+| kaggriculture | TRI_A08_r11_r3 | 254/582 | 43.6% | 126/290 | 128/292 |
+| kaggriculture | kaggriculture-v41-review-candidate | 0/584 | 0.0% | 0/292 | 0/292 |
+| kaggriculture | kaggriculture-metacounter-r1-scored-agent | 25/584 | 4.3% | 14/292 | 11/292 |
+| kaggriculture | AFS R2 | 231/579 | 39.9% | 114/289 | 117/290 |
+| kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 230/581 | 39.6% | 113/291 | 117/290 |
+| kaggriculture | kaggriculture-adaptive-land-allocator | 582/582 | 100.0% | 291/291 | 291/291 |
+| kaggriculture | shop-router-0913 | 292/580 | 50.3% | 145/288 | 147/292 |
+| kaggriculture | kaggriculture-best-agent | 21/580 | 3.6% | 13/289 | 8/291 |
+| kaggriculture | kaggriculture-utils-v1 | 0/579 | 0.0% | 0/289 | 0/290 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v4 | 542/575 | 94.3% | 272/287 | 270/288 |
+| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r12_r3_fix1 | 245/583 | 42.0% | 119/291 | 126/292 |
+| kaggriculture-metacounter-r1-scored-agent | Day 9 planner selector | 288/582 | 49.5% | 142/290 | 146/292 |
+| kaggriculture-metacounter-r1-scored-agent | AFS R1 | 273/580 | 47.1% | 135/290 | 138/290 |
+| kaggriculture-metacounter-r1-scored-agent | TRI_A08_r11_r3 | 293/582 | 50.3% | 146/291 | 147/291 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/581 | 0.0% | 0/291 | 0/290 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture | 422/584 | 72.3% | 212/292 | 210/292 |
+| kaggriculture-metacounter-r1-scored-agent | AFS R2 | 277/582 | 47.6% | 136/290 | 141/292 |
+| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r6_r3_bundle_fix1 | 253/580 | 43.6% | 124/288 | 129/292 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-adaptive-land-allocator | 580/580 | 100.0% | 289/289 | 291/291 |
+| kaggriculture-metacounter-r1-scored-agent | shop-router-0913 | 542/580 | 93.4% | 271/290 | 271/290 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-best-agent | 420/581 | 72.3% | 212/291 | 208/290 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-utils-v1 | 0/583 | 0.0% | 0/292 | 0/291 |
+| AFS R2 | kaggriculture-shop-router-reactive-v4 | 364/582 | 62.5% | 182/292 | 182/290 |
+| AFS R2 | TRI_A06_r12_r3_fix1 | 32/579 | 5.5% | 18/289 | 14/290 |
+| AFS R2 | Day 9 planner selector | 27/583 | 4.6% | 14/291 | 13/292 |
+| AFS R2 | AFS R1 | 263/579 | 45.4% | 130/289 | 133/290 |
+| AFS R2 | TRI_A08_r11_r3 | 192/580 | 33.1% | 92/292 | 100/288 |
+| AFS R2 | kaggriculture-v41-review-candidate | 300/582 | 51.5% | 152/290 | 148/292 |
+| AFS R2 | kaggriculture | 348/579 | 60.1% | 173/290 | 175/289 |
+| AFS R2 | kaggriculture-metacounter-r1-scored-agent | 305/582 | 52.4% | 151/292 | 154/290 |
+| AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 43/581 | 7.4% | 21/291 | 22/290 |
+| AFS R2 | kaggriculture-adaptive-land-allocator | 581/581 | 100.0% | 290/290 | 291/291 |
+| AFS R2 | shop-router-0913 | 408/583 | 70.0% | 205/291 | 203/292 |
+| AFS R2 | kaggriculture-best-agent | 350/580 | 60.3% | 174/290 | 176/290 |
+| AFS R2 | kaggriculture-utils-v1 | 293/583 | 50.3% | 147/291 | 146/292 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-shop-router-reactive-v4 | 365/575 | 63.5% | 180/287 | 185/288 |
+| TRI_A06_r6_r3_bundle_fix1 | TRI_A06_r12_r3_fix1 | 186/582 | 32.0% | 92/290 | 94/292 |
+| TRI_A06_r6_r3_bundle_fix1 | Day 9 planner selector | 123/582 | 21.1% | 55/292 | 68/290 |
+| TRI_A06_r6_r3_bundle_fix1 | AFS R1 | 527/578 | 91.2% | 261/288 | 266/290 |
+| TRI_A06_r6_r3_bundle_fix1 | TRI_A08_r11_r3 | 512/581 | 88.1% | 257/290 | 255/291 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v41-review-candidate | 356/580 | 61.4% | 177/290 | 179/290 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture | 351/581 | 60.4% | 173/290 | 178/291 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-metacounter-r1-scored-agent | 327/580 | 56.4% | 163/292 | 164/288 |
+| TRI_A06_r6_r3_bundle_fix1 | AFS R2 | 538/581 | 92.6% | 268/290 | 270/291 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-adaptive-land-allocator | 582/582 | 100.0% | 291/291 | 291/291 |
+| TRI_A06_r6_r3_bundle_fix1 | shop-router-0913 | 456/582 | 78.4% | 225/289 | 231/293 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-best-agent | 349/582 | 60.0% | 174/292 | 175/290 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-utils-v1 | 390/583 | 66.9% | 194/292 | 196/291 |
+| kaggriculture-adaptive-land-allocator | kaggriculture-shop-router-reactive-v4 | 0/576 | 0.0% | 0/288 | 0/288 |
+| kaggriculture-adaptive-land-allocator | TRI_A06_r12_r3_fix1 | 0/582 | 0.0% | 0/291 | 0/291 |
+| kaggriculture-adaptive-land-allocator | Day 9 planner selector | 0/581 | 0.0% | 0/290 | 0/291 |
+| kaggriculture-adaptive-land-allocator | AFS R1 | 0/579 | 0.0% | 0/288 | 0/291 |
+| kaggriculture-adaptive-land-allocator | TRI_A08_r11_r3 | 0/581 | 0.0% | 0/290 | 0/291 |
+| kaggriculture-adaptive-land-allocator | kaggriculture-v41-review-candidate | 0/582 | 0.0% | 0/291 | 0/291 |
+| kaggriculture-adaptive-land-allocator | kaggriculture | 0/582 | 0.0% | 0/291 | 0/291 |
+| kaggriculture-adaptive-land-allocator | kaggriculture-metacounter-r1-scored-agent | 0/580 | 0.0% | 0/291 | 0/289 |
+| kaggriculture-adaptive-land-allocator | AFS R2 | 0/581 | 0.0% | 0/291 | 0/290 |
+| kaggriculture-adaptive-land-allocator | TRI_A06_r6_r3_bundle_fix1 | 0/582 | 0.0% | 0/291 | 0/291 |
+| kaggriculture-adaptive-land-allocator | shop-router-0913 | 0/583 | 0.0% | 0/292 | 0/291 |
+| kaggriculture-adaptive-land-allocator | kaggriculture-best-agent | 0/581 | 0.0% | 0/291 | 0/290 |
+| kaggriculture-adaptive-land-allocator | kaggriculture-utils-v1 | 0/581 | 0.0% | 0/291 | 0/290 |
+| shop-router-0913 | kaggriculture-shop-router-reactive-v4 | 297/582 | 51.0% | 149/291 | 148/291 |
+| shop-router-0913 | TRI_A06_r12_r3_fix1 | 179/581 | 30.8% | 88/291 | 91/290 |
+| shop-router-0913 | Day 9 planner selector | 177/582 | 30.4% | 90/291 | 87/291 |
+| shop-router-0913 | AFS R1 | 154/582 | 26.5% | 78/289 | 76/293 |
+| shop-router-0913 | TRI_A08_r11_r3 | 157/579 | 27.1% | 77/289 | 80/290 |
+| shop-router-0913 | kaggriculture-v41-review-candidate | 149/582 | 25.6% | 77/292 | 72/290 |
+| shop-router-0913 | kaggriculture | 288/580 | 49.7% | 145/292 | 143/288 |
+| shop-router-0913 | kaggriculture-metacounter-r1-scored-agent | 38/580 | 6.6% | 19/290 | 19/290 |
+| shop-router-0913 | AFS R2 | 175/583 | 30.0% | 89/292 | 86/291 |
+| shop-router-0913 | TRI_A06_r6_r3_bundle_fix1 | 126/582 | 21.6% | 62/293 | 64/289 |
+| shop-router-0913 | kaggriculture-adaptive-land-allocator | 583/583 | 100.0% | 291/291 | 292/292 |
+| shop-router-0913 | kaggriculture-best-agent | 290/581 | 49.9% | 145/291 | 145/290 |
+| shop-router-0913 | kaggriculture-utils-v1 | 178/579 | 30.7% | 92/289 | 86/290 |
+| kaggriculture-best-agent | kaggriculture-shop-router-reactive-v4 | 522/584 | 89.4% | 264/292 | 258/292 |
+| kaggriculture-best-agent | TRI_A06_r12_r3_fix1 | 226/582 | 38.8% | 110/289 | 116/293 |
+| kaggriculture-best-agent | Day 9 planner selector | 233/578 | 40.3% | 114/289 | 119/289 |
+| kaggriculture-best-agent | AFS R1 | 234/577 | 40.6% | 117/288 | 117/289 |
+| kaggriculture-best-agent | TRI_A08_r11_r3 | 254/584 | 43.5% | 126/292 | 128/292 |
+| kaggriculture-best-agent | kaggriculture-v41-review-candidate | 0/584 | 0.0% | 0/292 | 0/292 |
+| kaggriculture-best-agent | kaggriculture | 21/580 | 3.6% | 13/291 | 8/289 |
+| kaggriculture-best-agent | kaggriculture-metacounter-r1-scored-agent | 25/581 | 4.3% | 14/290 | 11/291 |
+| kaggriculture-best-agent | AFS R2 | 230/580 | 39.7% | 114/290 | 116/290 |
+| kaggriculture-best-agent | TRI_A06_r6_r3_bundle_fix1 | 233/582 | 40.0% | 115/290 | 118/292 |
+| kaggriculture-best-agent | kaggriculture-adaptive-land-allocator | 581/581 | 100.0% | 290/290 | 291/291 |
+| kaggriculture-best-agent | shop-router-0913 | 291/581 | 50.1% | 145/290 | 146/291 |
+| kaggriculture-best-agent | kaggriculture-utils-v1 | 0/580 | 0.0% | 0/289 | 0/291 |
+| kaggriculture-utils-v1 | kaggriculture-shop-router-reactive-v4 | 583/583 | 100.0% | 290/290 | 293/293 |
+| kaggriculture-utils-v1 | TRI_A06_r12_r3_fix1 | 252/579 | 43.5% | 128/288 | 124/291 |
+| kaggriculture-utils-v1 | Day 9 planner selector | 285/578 | 49.3% | 143/290 | 142/288 |
+| kaggriculture-utils-v1 | AFS R1 | 265/580 | 45.7% | 134/290 | 131/290 |
+| kaggriculture-utils-v1 | TRI_A08_r11_r3 | 293/581 | 50.4% | 143/291 | 150/290 |
+| kaggriculture-utils-v1 | kaggriculture-v41-review-candidate | 57/582 | 9.8% | 32/293 | 25/289 |
+| kaggriculture-utils-v1 | kaggriculture | 579/579 | 100.0% | 290/290 | 289/289 |
+| kaggriculture-utils-v1 | kaggriculture-metacounter-r1-scored-agent | 583/583 | 100.0% | 291/291 | 292/292 |
+| kaggriculture-utils-v1 | AFS R2 | 290/583 | 49.7% | 146/292 | 144/291 |
+| kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 193/583 | 33.1% | 95/291 | 98/292 |
+| kaggriculture-utils-v1 | kaggriculture-adaptive-land-allocator | 581/581 | 100.0% | 290/290 | 291/291 |
+| kaggriculture-utils-v1 | shop-router-0913 | 401/579 | 69.3% | 204/290 | 197/289 |
+| kaggriculture-utils-v1 | kaggriculture-best-agent | 580/580 | 100.0% | 291/291 | 289/289 |
 
 </details>
 
