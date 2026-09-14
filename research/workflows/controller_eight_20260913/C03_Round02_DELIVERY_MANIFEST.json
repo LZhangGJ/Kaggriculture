@@ -1,0 +1,190 @@
+{
+  "finished_utc": "2026-09-14T00:27:08.410214+00:00",
+  "seconds": 6.201000610999927,
+  "source": {
+    "name": "C03_Round02_strategy.zip",
+    "bytes": 1017291,
+    "sha256": "03bf86946bad2428891d17dd8befcc0c9f9823bd0b5d19c3663785b8d1b58d9a",
+    "manifest": "MANIFEST.json",
+    "verified_members": 111,
+    "all_members_verified": true
+  },
+  "evidence_parts": [
+    {
+      "name": "C03_Round02_evidence_01.zip",
+      "bytes": 17997774,
+      "sha256": "5a2f1b28e5d0b4f2a7a7131aca4a1edc7e9953ff43477ede9a22e6a52c330eb7",
+      "manifest": "EVIDENCE_MANIFEST_01.json",
+      "verified_members": 341,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_02.zip",
+      "bytes": 29490105,
+      "sha256": "582e0c41539fcc615bd90584509315a2f7842bf03105237cdad938666fb734c4",
+      "manifest": "EVIDENCE_MANIFEST_02.json",
+      "verified_members": 88,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_03.zip",
+      "bytes": 29275128,
+      "sha256": "b098ffbf8b299dc4c9f1df28f911ac72ec3ed95062e0112986339a0b0d78ebfc",
+      "manifest": "EVIDENCE_MANIFEST_03.json",
+      "verified_members": 82,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_04.zip",
+      "bytes": 28773803,
+      "sha256": "f50d838b87b9a52c73a4dcf16ca84b593e7bd4955040f172bad32e60ac72f017",
+      "manifest": "EVIDENCE_MANIFEST_04.json",
+      "verified_members": 90,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_05.zip",
+      "bytes": 28722473,
+      "sha256": "4743d08d388ef2a0222b6e8417a830814f8581b753857bece95d2c56c63d0df8",
+      "manifest": "EVIDENCE_MANIFEST_05.json",
+      "verified_members": 80,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_06.zip",
+      "bytes": 29122848,
+      "sha256": "5ec4c203a2388d70268eccf57a412e3725cb95131e6a7cb423d794a5baa2a34a",
+      "manifest": "EVIDENCE_MANIFEST_06.json",
+      "verified_members": 80,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_07.zip",
+      "bytes": 29521171,
+      "sha256": "b514a55d021dad7539e3a632f8c34ca1600ceee1a014b6ccfa54237e30aa81ca",
+      "manifest": "EVIDENCE_MANIFEST_07.json",
+      "verified_members": 83,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_08.zip",
+      "bytes": 28581124,
+      "sha256": "2edc7f776fd37f32b409083096d7bbe4e2bcd3adaf82e65e5d8c167dbefb1ca4",
+      "manifest": "EVIDENCE_MANIFEST_08.json",
+      "verified_members": 81,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_09.zip",
+      "bytes": 28796119,
+      "sha256": "9f4cd3e39aeae14982ffb2747073713a3e3c0bd74854166ba30461220eec41fe",
+      "manifest": "EVIDENCE_MANIFEST_09.json",
+      "verified_members": 80,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_10.zip",
+      "bytes": 29477085,
+      "sha256": "190cbf73bf622f01ed9731fd2687c9137fc2940859cf13dcb54b85b2432a221e",
+      "manifest": "EVIDENCE_MANIFEST_10.json",
+      "verified_members": 80,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_11.zip",
+      "bytes": 28863988,
+      "sha256": "6ac1781d29bde86b598d4a0bc0522469b6aa9adf53d9f6432d02221d86e6631b",
+      "manifest": "EVIDENCE_MANIFEST_11.json",
+      "verified_members": 87,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_12.zip",
+      "bytes": 26553218,
+      "sha256": "680423ab63b346e16919f30a1e3abe76b26d9f51268e444e50f38362af4c4ed2",
+      "manifest": "EVIDENCE_MANIFEST_12.json",
+      "verified_members": 315,
+      "all_members_verified": true
+    },
+    {
+      "name": "C03_Round02_evidence_13.zip",
+      "bytes": 4155735,
+      "sha256": "99c14e97bb6d59c07b9ea7c61e7d86b9527e46e1c394bbaf61347b37a131e536",
+      "manifest": "EVIDENCE_MANIFEST_13.json",
+      "verified_members": 307,
+      "all_members_verified": true
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "C03_Round02_checkpoint00.zip",
+      "bytes": 957387,
+      "sha256": "c45f88fbacd2aa155b79b9ab6f361655da751b27279fbdbac43b447a57cd7338",
+      "previously_manifest_verified": true,
+      "unchanged_original_checkpoint_bytes": true
+    },
+    {
+      "name": "C03_Round02_checkpoint01.zip",
+      "bytes": 710283,
+      "sha256": "d401d42b08208e59f5581e4861011ef0b1b4f206944ab4926ca68e5eb1ec1f5e",
+      "previously_manifest_verified": true,
+      "unchanged_original_checkpoint_bytes": true
+    },
+    {
+      "name": "C03_Round02_checkpoint02.zip",
+      "bytes": 712356,
+      "sha256": "ad0b7d0371b75332543b1f2b82d2958b246c404ee0fbe1f224a2e72d96e511b3",
+      "previously_manifest_verified": true,
+      "unchanged_original_checkpoint_bytes": true
+    },
+    {
+      "name": "C03_Round02_checkpoint03.zip",
+      "bytes": 785980,
+      "sha256": "b3d3c622180e183856ad2059ab5e4bb0d5d7f2bd9d6160b00162b50aa9d95cc1",
+      "previously_manifest_verified": true,
+      "unchanged_original_checkpoint_bytes": true
+    }
+  ],
+  "extras": [
+    {
+      "name": "C03_Round02_REPORT.md",
+      "bytes": 23579,
+      "sha256": "bd1784ac107d8d1363b7332e8c4ce35361fed49be5935727b7458f05bb1dd7e4"
+    },
+    {
+      "name": "C03_Round02_EVIDENCE_INDEX.json",
+      "bytes": 400545,
+      "sha256": "3bb1a4867532802211efa07c86d572df7bf0816e15d6524dc63ed37c338fb455"
+    },
+    {
+      "name": "C03_Round02_all_results.csv",
+      "bytes": 175897,
+      "sha256": "6954869ae4ed55649faf9c553ab7ae6bde3b283a95f9b57342a8a805b2303ce6"
+    },
+    {
+      "name": "C03_Round02_seed_inventory.json",
+      "bytes": 28550,
+      "sha256": "de3be1d3ac3601f3e0dc8a3530fe50afe941a6f7dc577d9f1b25ad9f74bcbed8"
+    }
+  ],
+  "evidence_files": 1794,
+  "all_zip_members_verified": true,
+  "ordinary_zip_parts": true,
+  "evidence_zip_limit_bytes": 50000000,
+  "frozen_source_unchanged": true,
+  "source_runtime_bundle_sha256": "bd22c0329a3aaf4d06090803d4065459b62dd6e96e3c8570789d8044c535e127",
+  "native_sha256": "b7ed90e60a2b18ed42bbffc2738d695dafe0fd460f2c26fac0fc8e4b5204d374",
+  "candidate_validation_mean": 195097.75,
+  "baseline_validation_mean": 195448.09375,
+  "validation_cells_per_strategy": 32,
+  "new_strategy_games_during_packaging": 0,
+  "excluded_volatile_file": "audit/packaging.log only; no gameplay evidence excluded",
+  "final_independent_verification": {
+    "name": "C03_Round02_FINAL_VERIFICATION.json",
+    "bytes": 3255,
+    "sha256": "5c7d4f3cbe0d43fb9349ad8a8cceec61e620d2c056078b7abbf33b14a1dbaecf",
+    "source_extraction_check_passed": true,
+    "evidence_files_reverified": 1794,
+    "all_archive_members_reverified": true
+  }
+}

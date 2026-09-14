@@ -2,7 +2,7 @@
 
 Eight independent ChatGPT 6 Pro chats began on 13 September 2026. Each received the same verified source bundle and a distinct research focus. Their first task is a complete strategy that averages at least 200,000 terminal cash against an inactive opponent across multiple seeds.
 
-The fourth shared cash-qualification panel is complete: all 256 games and source checks passed. Six strategies met the 200,000 mean-cash gate. C03 averaged 198,392.78125 and C08 196,898.5; their 90-minute Round02 revisions are active until about 01:02 UTC on 14 September. [C03 task](C03_ROUND02_TASK.md). [C08 task](C08_ROUND02_TASK.md). C01 led this panel at 219,845.21875. No round-robin or competitive acceptance results exist yet. [Complete results](QUALIFICATION_04_REPORT.md). [Published archive receipt](QUALIFICATION_04_PUBLICATION_RECEIPT.json).
+The fourth shared cash-qualification panel is complete: all 256 games and source checks passed. Six strategies met the 200,000 mean-cash gate. C03 averaged 198,392.78125 and C08 196,898.5; C03 completed Round02 and reports 195,097.75 mean cash on 32 fresh games, below the gate. Its source and all 13 evidence ZIPs are preserved and published; the controller audit is in progress. [Archive publication receipt](C03_ROUND02_AUTHOR_PUBLICATION_RECEIPT.json). C08 remains active until 01:02:48 UTC on 14 September. [C03 task](C03_ROUND02_TASK.md). [C08 task](C08_ROUND02_TASK.md). C01 led this panel at 219,845.21875. No round-robin or competitive acceptance results exist yet. [Complete results](QUALIFICATION_04_REPORT.md). [Published archive receipt](QUALIFICATION_04_PUBLICATION_RECEIPT.json).
 
 - [Current deliveries, evidence and archive hashes](ROUND_01_DELIVERIES.md)
 - [C01 controller verification and recovery gaps](C01_IMPORT_VERIFICATION.json)
@@ -38,4 +38,4 @@ The evaluator package includes all 46 pinned opponent runtime files, preserves t
 - [Revision round dispatches and deadlines](ROUND02_DISPATCHES.json)
 
 
-[Round05 tasks and actual deadlines](ROUND05_DISPATCHES.json): C02, C04, C05 and C06 are running 40-minute revision tasks with C08 matched loss evidence. [Qualification 3 complete results](QUALIFICATION_03_REPORT.md).
+[Round05 tasks and actual deadlines](ROUND05_DISPATCHES.json): C02, C04, C05 and C06 completed these revision tasks. Their later verified sources and results are recorded in qualification 4. [Qualification 3 complete results](QUALIFICATION_03_REPORT.md).
