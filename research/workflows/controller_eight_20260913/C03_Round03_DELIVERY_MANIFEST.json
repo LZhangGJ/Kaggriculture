@@ -1,0 +1,108 @@
+{
+  "utc": "2026-09-14T01:19:32.027428+00:00",
+  "cutoff_utc": "2026-09-14T01:52:18.498Z",
+  "selected_source_runtime": "C03_Round03_strategy.zip",
+  "selected_policy": "verified original, not successful economic revision",
+  "candidate_status": "rejected by predeclared full-panel selection, full code in evidence and checkpoint01",
+  "validation": {
+    "selected_mean": 205368.0,
+    "matched_baseline_mean": 205368.0,
+    "seeds": 16,
+    "selected_cells": 32,
+    "matched_baseline_cells": 32,
+    "source_unchanged": true,
+    "no_extension_or_fallback": true
+  },
+  "artifacts": {
+    "C03_Round03_strategy.zip": {
+      "bytes": 1162472,
+      "sha256": "3d8c2c36f7d25b5908788f2f7564f603822bdefd61b04a08ac9823f790225ba1"
+    },
+    "C03_Round03_checkpoint00.zip": {
+      "bytes": 956755,
+      "sha256": "95ddf1c3f68c747583b3b5980f2e221a95c2604bb903540631eed0f79d7d288f"
+    },
+    "C03_Round03_checkpoint01.zip": {
+      "bytes": 1005741,
+      "sha256": "382da86cc827b675fed0080a0929e47c57b5f5fcac96a3bec324b7d416b6399e"
+    },
+    "C03_Round03_checkpoint02.zip": {
+      "bytes": 1045322,
+      "sha256": "cb856d1d808ca4730240683e0ad74545f78e76caeebef6beb7dae7209074500a"
+    },
+    "C03_Round03_REPORT.md": {
+      "bytes": 25147,
+      "sha256": "34d82fbeb8c8ff4a47f4664b2a30213fd4435b29887bbe812c85a762678a6de1"
+    },
+    "C03_Round03_all_results.csv": {
+      "bytes": 363448,
+      "sha256": "2a0af4980d671f52b8f27309bfe6a821f04a0784dce71649a3645b5c8d7ed5d1"
+    },
+    "C03_Round03_seed_inventory.json": {
+      "bytes": 65280,
+      "sha256": "ffaae5a2342484882d0a5d8428ff7188236c3920c7c5dc65742d4d4f7292c3a6"
+    },
+    "C03_Round03_settings.json": {
+      "bytes": 80549,
+      "sha256": "1ce7a820fa2a869d43183ae48105c203399448677db24b007108614eeea36bec"
+    },
+    "C03_Round03_resource_report.json": {
+      "bytes": 30693,
+      "sha256": "7865b19936d16dc7d7953346c5d8949f1c3634f3e5ac759b3d75981188ef0328"
+    },
+    "C03_Round03_attempt_audit.json": {
+      "bytes": 1923,
+      "sha256": "cfb13233e24b2ac11b0dc9da4f379934722164c3bc33aac8ffb30149f4c93ebb"
+    },
+    "C03_Round03_EVIDENCE_INDEX.json": {
+      "bytes": 330209,
+      "sha256": "545231911d5645b56a358a6044b82a6c3e23c74060ca56dc3e760488655d42f9"
+    },
+    "C03_Round03_evidence_01.zip": {
+      "bytes": 16479434,
+      "sha256": "50ae0489b0f533eca2a37daef54092cbbc7285d8218c4cbb579df07beeaa6038"
+    },
+    "C03_Round03_evidence_02.zip": {
+      "bytes": 3171266,
+      "sha256": "8c42b63c1669419b6fccb1a0955cc4fab5e5b1b4cd259f04d847c5a37f1383e7"
+    },
+    "C03_Round03_evidence_03.zip": {
+      "bytes": 30523078,
+      "sha256": "97594c1b8c299777238997cb6e23d8abb2487dfd3273aacac0707b82a75c0325"
+    },
+    "C03_Round03_evidence_04.zip": {
+      "bytes": 30614663,
+      "sha256": "c62651670e003f92994d0a536687a1a5e13e6a4c0abdae29b59c1d4d61c6271c"
+    },
+    "C03_Round03_evidence_05.zip": {
+      "bytes": 31264818,
+      "sha256": "ca4c4937cc506cf5eecf108cc08f379ab531b7c0f051fa7e448a85feecaa6392"
+    },
+    "C03_Round03_evidence_06.zip": {
+      "bytes": 31054924,
+      "sha256": "5e8f2e671cc18037c6e84997361d8c4ba5ea4ec754c40c5335e7350cfecc4e32"
+    },
+    "C03_Round03_evidence_07.zip": {
+      "bytes": 31128111,
+      "sha256": "d92f56c5881267d09b0e3a19949ba2f6566e6aa304acce566ad78e7b30fbbe1b"
+    },
+    "C03_Round03_evidence_08.zip": {
+      "bytes": 30814724,
+      "sha256": "b49065c6f084ad55c3e38f4b21f1977dfffc0aba51401304097a807262f82be3"
+    },
+    "C03_Round03_evidence_09.zip": {
+      "bytes": 30839007,
+      "sha256": "499f11cc798e3b31fb8ccdfc3c67aca8c27e6ec3158ed7b71ef34c7cbf083087"
+    },
+    "C03_Round03_evidence_10.zip": {
+      "bytes": 29245127,
+      "sha256": "2c4ff1e3cd38ec82d0fd2032b2dfe7f9cad6e2ae00c74a7d52bbe8d625908642"
+    }
+  },
+  "archives_are_ordinary_independent_and_below_50MB": true,
+  "new_game_attempts": 326,
+  "new_official_transitions": 234394,
+  "independent_final_receipt": "C03_Round03_FINAL_VERIFICATION.json",
+  "closing_checksums": "C03_Round03_SHA256SUMS.txt",
+  "closure_note": "The final receipt and checksum file are written after this manifest to avoid self-referential hashes. The closing checksum file includes this manifest and final receipt, but not its own hash."
+}
