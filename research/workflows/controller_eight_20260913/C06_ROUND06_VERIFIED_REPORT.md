@@ -1,0 +1,11 @@
+# C06 Round06 verification
+
+The delivered cash-cycle policy passes the author economic sample: **203,546.0625** terminal cash across 16 predeclared seeds and both seats. It regresses **2,000.59375** against the matched baseline, **205,546.65625**. Controller qualification and competitive acceptance remain unrun.
+
+All 15 ZIP identities match the downloaded and external delivery receipts. Safe extraction, CRC checks, and 5,302 manifest entries passed; the merged evidence has 5,240 files. The official referee reproduced all 714 new games and 513,366 transitions, plus eight supplied games and 5,752 transitions. All declared suite cells and source manifests match. Three proposed variants and the rejected variants remain preserved.
+
+The predeclared rule allowed a proposal with gains on at least three of five development panels and no latest-panel regression over 3,000, then chose the highest eligible pooled mean. Cash-cycle met that rule despite a pooled loss of 1,159.44375. The author selected it at 02:10:48 and froze it at 02:11:38, before validation began at 02:11:39. The declaration at 01:53:04 excluded 1,224 known seeds. The preserved inventory now contains 1,240 recoverable seeds; missing Round02 evidence and unknown historical seeds remain unresolved.
+
+The final archive is 709,587 bytes, SHA256 d15f40e92633486d61620aa88fc9a363c48320d33fc8bab13fe952ae8644c03a. Its archived checkpoint describes the changed policy. Earlier live claims of an unchanged policy, a 703,593-byte archive, and mean 216,051.8125 are unsupported and conflict with this delivery. The controller never downloaded an early checkpoint. The external receipt records final verification at 02:26:51; the controller observed the final response around 02:33, before the 02:50:50 cutoff. No evidence supports a post-validation source fallback.
+
+GCC 11 rebuilt the native runtime from source. Fertilizer, cash-cycle, and inherited contract tests passed, as did seven entry/reset/seed-privacy checks. Full action traces on one already-used validation seed matched in both seats. The current round is verified; the receipt keeps the general historical verification flag false because the original Round02 502-game evidence remains missing. No new evaluation seeds were used.
