@@ -63,6 +63,11 @@ function render(){
       const rows=elo.filter(r=>r.contract===contract).sort((a,b)=>b.elo-a.elo).map((r,i)=>({r,i})).filter(({r})=>match(r.agent)).map(({r,i})=>[String(i+1),nameCell(r.agent),fmt(r.elo),fmt(r.games),pct(r.score)]);
       $('table').append(table(['Rank','Agent / version','Elo','Games','Win + ½ draw'],rows));
     }
+    const ratedIds=new Set(elo.map(r=>r.agent));
+    const waiting=[...active].filter(id=>!ratedIds.has(id)&&match(id));
+    if(waiting.length){
+      $('table').append(element('h3','Awaiting first rated games'),table(['Agent / version','State'],waiting.map(id=>[nameCell(id),'Queued for the next round'])));
+    }
     const retired=data.agents.filter(a=>a.retired&&match(a.id));
     if(retired.length){
       $('table').append(element('h3','Retired public agents'),element('p','No new matches or notebook updates. Ratings below are frozen at retirement. Previously scheduled games may still finish in their original tournament.'));
