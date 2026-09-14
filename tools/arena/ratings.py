@@ -36,8 +36,10 @@ def fit(rows, ids):
         return loss, grad
 
     result = minimize(objective, np.zeros(n), jac=True, method="L-BFGS-B",
-                      options={"gtol": 1e-8, "ftol": 1e-12})
-    if not result.success:
+                      options={"gtol": 1e-6, "ftol": 1e-10, "maxls": 100})
+    # Line search can exhaust floating-point precision at the optimum. Check
+    # stationarity rather than turning a valid bootstrap fit into a report error.
+    if not result.success and np.max(np.abs(objective(result.x)[1])) > 1e-5:
         raise RuntimeError("Rating fit failed: " + result.message)
     strengths = result.x - result.x.mean()
     return dict(zip(ids, strengths.tolist())), None
