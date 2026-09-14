@@ -1,0 +1,23 @@
+name: Arena intake
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  metadata:
+    if: startsWith(github.event.issue.title, '[Arena]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check metadata without executing submitted code
+        run: python tools/arena/check_issue.py
+      - name: Update receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/arena/post_receipt.py

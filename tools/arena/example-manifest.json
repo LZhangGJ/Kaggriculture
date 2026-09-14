@@ -1,0 +1,9 @@
+{
+  "name": "My agent",
+  "author": "teammate",
+  "version": "v1",
+  "build": [],
+  "run": ["python", "main.py"],
+  "resources": {"cpus": 1, "memory_mb": 512, "scratch_mb": 512},
+  "seed_exposure": "unknown"
+}

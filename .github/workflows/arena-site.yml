@@ -1,0 +1,35 @@
+name: Arena page
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate approved export
+        run: python tools/arena/check_export.py arena-export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arena-private-preview
+          path: arena-export
+          retention-days: 7
+  publish:
+    if: vars.ARENA_PAGES_APPROVED == 'true'
+    needs: preview
+    environment:
+      name: github-pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/arena/check_export.py arena-export
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: arena-export
+      - uses: actions/deploy-pages@v4

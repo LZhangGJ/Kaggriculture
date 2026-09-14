@@ -1,0 +1,4 @@
+numpy>=2.0,<3
+scipy>=1.14,<2
+tzdata>=2024.1
+kaggle-environments==1.32.7

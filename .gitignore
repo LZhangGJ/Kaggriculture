@@ -1,4 +1,7 @@
 .venv/
+.venv-arena/
+.arena/
+arena-export/
 .uv-cache/
 __pycache__/
 .pytest_cache/

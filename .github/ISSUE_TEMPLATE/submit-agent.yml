@@ -1,0 +1,20 @@
+name: Submit agent
+description: Submit an independently built agent for arena placement. Research enrollment is not required.
+title: "[Arena] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Upload the ZIP to an authorized private GitHub release or give it to the coordinator.
+        Use JSON arrays for build/run commands. Do not paste credentials or reserved seeds.
+        Valid submissions receive placement evaluation even when the daily roster is full.
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Agent manifest
+      description: Add sha256 and optional archive_asset (a release asset ID in this repository).
+      render: json
+      value: |
+        {"name":"My agent","author":"name","version":"v1","sha256":"REPLACE","archive_asset":0,"build":[],"run":["python","main.py"],"resources":{"cpus":1,"memory_mb":512,"scratch_mb":512}}
+    validations:
+      required: true
