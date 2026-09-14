@@ -269,115 +269,115 @@
       {
         "agent": "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1759.7575997982883,
-        "games": 1988,
-        "score": 0.7379275653923542
+        "elo": 1803.8332177741781,
+        "games": 2046,
+        "score": 0.7394916911045943
       },
       {
         "agent": "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1748.377835056111,
-        "games": 1990,
-        "score": 0.7276381909547739
+        "elo": 1708.2543892843928,
+        "games": 2040,
+        "score": 0.7264705882352941
       },
       {
         "agent": "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1694.1300728832446,
-        "games": 1982,
-        "score": 0.7043390514631686
-      },
-      {
-        "agent": "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1650.541808331857,
-        "games": 1986,
-        "score": 0.6520644511581067
-      },
-      {
-        "agent": "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1644.2040371139808,
-        "games": 1988,
-        "score": 0.5080482897384306
+        "elo": 1699.2187275984895,
+        "games": 2060,
+        "score": 0.7038834951456311
       },
       {
         "agent": "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1606.9309289649018,
-        "games": 1986,
-        "score": 0.6626384692849949
+        "elo": 1649.4726222431075,
+        "games": 2060,
+        "score": 0.6631067961165048
+      },
+      {
+        "agent": "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1645.999704744569,
+        "games": 2038,
+        "score": 0.6521099116781158
+      },
+      {
+        "agent": "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1613.8131002978091,
+        "games": 2060,
+        "score": 0.5135922330097087
       },
       {
         "agent": "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1584.1923668824245,
-        "games": 1976,
-        "score": 0.548582995951417
+        "elo": 1575.7358743696454,
+        "games": 2058,
+        "score": 0.5456754130223518
       },
       {
         "agent": "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1534.1809181567235,
-        "games": 1984,
-        "score": 0.4783266129032258
-      },
-      {
-        "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1496.029054387652,
-        "games": 1988,
-        "score": 0.4154929577464789
-      },
-      {
-        "agent": "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1493.9817182498477,
-        "games": 1986,
-        "score": 0.3690835850956697
-      },
-      {
-        "agent": "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1416.9541111763792,
-        "games": 1982,
-        "score": 0.41321897073662966
+        "elo": 1523.6443080849422,
+        "games": 2056,
+        "score": 0.4795719844357977
       },
       {
         "agent": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1413.892303793534,
-        "games": 1982,
-        "score": 0.4803229061553986
+        "elo": 1510.8610113181842,
+        "games": 2056,
+        "score": 0.4790856031128405
+      },
+      {
+        "agent": "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1479.265061061737,
+        "games": 2050,
+        "score": 0.3721951219512195
+      },
+      {
+        "agent": "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1463.7410345445246,
+        "games": 2060,
+        "score": 0.4140776699029126
+      },
+      {
+        "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1424.8283884083035,
+        "games": 2070,
+        "score": 0.41545893719806765
       },
       {
         "agent": "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1346.6988558049502,
-        "games": 1982,
-        "score": 0.3002018163471241
+        "elo": 1296.5348519396443,
+        "games": 2070,
+        "score": 0.2975845410628019
       },
       {
         "agent": "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 610.1283894001056,
-        "games": 1980,
+        "elo": 604.7977083304725,
+        "games": 2044,
         "score": 0.0
       }
     ],
-    "updated": "2026-09-14T12:21:05.337819+00:00"
+    "updated": "2026-09-14T12:25:23.218382+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-14T12:21:05.338520+00:00",
+    "at": "2026-09-14T12:25:23.219118+00:00",
     "status": "running",
     "workers": {
       "mini": {
-        "at": "2026-09-14T12:21:01.511201+00:00",
+        "at": "2026-09-14T12:25:21.218048+00:00",
         "pending_rounds": 2,
         "status": "running"
       },
       "vast": {
-        "at": "2026-09-14T12:21:05.338302+00:00",
+        "at": "2026-09-14T12:25:23.218844+00:00",
         "pending_rounds": 2,
         "status": "running"
       }
@@ -578,7 +578,7 @@
   "runs": [
     {
       "complete": false,
-      "completed": 11920,
+      "completed": 12048,
       "components": [
         [
           "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f",
@@ -599,7 +599,7 @@
       ],
       "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
       "created": "2026-09-14T04:43:15.360617+00:00",
-      "fingerprint": "53db8db55631772e63c037cf84e2e302a92271e88db7ceafe515b087aad0fe6e",
+      "fingerprint": "9707d62e6b94962e0e812507356033779fc11b0922310cf54c1ce6787931a1ed",
       "intervals": {
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": null,
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": null,
@@ -619,38 +619,38 @@
       "kind": "daily",
       "matrix": {
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 131,
-          "cash_margin": -3259.8320610687024,
+          "cash_games": 133,
+          "cash_margin": -3493.3609022556393,
           "draws": 0,
-          "games": 131,
-          "losses": 73,
-          "score": 0.44274809160305345,
+          "games": 133,
+          "losses": 75,
+          "score": 0.43609022556390975,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 28
             },
             "1": {
               "draws": 0,
-              "games": 65,
+              "games": 66,
               "wins": 30
             }
           },
-          "win_rate": 0.44274809160305345,
+          "win_rate": 0.43609022556390975,
           "wins": 58
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 131,
-          "cash_margin": -3803.0152671755727,
+          "cash_games": 132,
+          "cash_margin": -3797.2954545454545,
           "draws": 0,
-          "games": 131,
-          "losses": 84,
-          "score": 0.35877862595419846,
+          "games": 132,
+          "losses": 85,
+          "score": 0.3560606060606061,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 26
             },
             "1": {
@@ -659,7 +659,7 @@
               "wins": 21
             }
           },
-          "win_rate": 0.35877862595419846,
+          "win_rate": 0.3560606060606061,
           "wins": 47
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
@@ -685,17 +685,17 @@
           "wins": 66
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 140,
-          "cash_margin": -302.27142857142854,
+          "cash_games": 141,
+          "cash_margin": -273.01418439716315,
           "draws": 0,
-          "games": 140,
+          "games": 141,
           "losses": 71,
-          "score": 0.4928571428571429,
+          "score": 0.49645390070921985,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
-              "wins": 35
+              "games": 67,
+              "wins": 36
             },
             "1": {
               "draws": 0,
@@ -703,20 +703,20 @@
               "wins": 34
             }
           },
-          "win_rate": 0.4928571428571429,
-          "wins": 69
+          "win_rate": 0.49645390070921985,
+          "wins": 70
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 140,
-          "cash_margin": -26481.621428571427,
+          "cash_games": 141,
+          "cash_margin": -26563.59574468085,
           "draws": 0,
-          "games": 140,
-          "losses": 140,
+          "games": 141,
+          "losses": 141,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 70,
+              "games": 71,
               "wins": 0
             },
             "1": {
@@ -751,12 +751,12 @@
           "wins": 16
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 143,
-          "cash_margin": -2002.6293706293707,
+          "cash_games": 146,
+          "cash_margin": -1997.8835616438357,
           "draws": 0,
-          "games": 143,
-          "losses": 136,
-          "score": 0.04895104895104895,
+          "games": 146,
+          "losses": 139,
+          "score": 0.04794520547945205,
           "seats": {
             "0": {
               "draws": 0,
@@ -765,78 +765,78 @@
             },
             "1": {
               "draws": 0,
-              "games": 74,
+              "games": 77,
               "wins": 4
             }
           },
-          "win_rate": 0.04895104895104895,
+          "win_rate": 0.04794520547945205,
           "wins": 7
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 129,
-          "cash_margin": -3827.9612403100773,
+          "cash_games": 131,
+          "cash_margin": -3834.763358778626,
           "draws": 0,
-          "games": 129,
-          "losses": 84,
-          "score": 0.3488372093023256,
+          "games": 131,
+          "losses": 85,
+          "score": 0.3511450381679389,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 69,
+              "games": 70,
               "wins": 24
             },
             "1": {
               "draws": 0,
-              "games": 60,
-              "wins": 21
+              "games": 61,
+              "wins": 22
             }
           },
-          "win_rate": 0.3488372093023256,
-          "wins": 45
+          "win_rate": 0.3511450381679389,
+          "wins": 46
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 134,
-          "cash_margin": -4189.037313432836,
+          "cash_games": 138,
+          "cash_margin": -4298.775362318841,
           "draws": 0,
-          "games": 134,
-          "losses": 79,
-          "score": 0.41044776119402987,
+          "games": 138,
+          "losses": 81,
+          "score": 0.41304347826086957,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 62,
-              "wins": 25
+              "games": 65,
+              "wins": 27
             },
             "1": {
               "draws": 0,
-              "games": 72,
+              "games": 73,
               "wins": 30
             }
           },
-          "win_rate": 0.41044776119402987,
-          "wins": 55
+          "win_rate": 0.41304347826086957,
+          "wins": 57
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 123,
-          "cash_margin": 104458.09756097561,
+          "cash_games": 125,
+          "cash_margin": 104188.944,
           "draws": 0,
-          "games": 123,
+          "games": 125,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 58,
-              "wins": 58
+              "games": 59,
+              "wins": 59
             },
             "1": {
               "draws": 0,
-              "games": 65,
-              "wins": 65
+              "games": 66,
+              "wins": 66
             }
           },
           "win_rate": 1.0,
-          "wins": 123
+          "wins": 125
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
           "cash_games": 118,
@@ -883,16 +883,16 @@
           "wins": 15
         },
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 133,
-          "cash_margin": -26357.61654135338,
+          "cash_games": 134,
+          "cash_margin": -26413.082089552237,
           "draws": 0,
-          "games": 133,
-          "losses": 133,
+          "games": 134,
+          "losses": 134,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 0
             },
             "1": {
@@ -905,34 +905,34 @@
           "wins": 0
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 131,
-          "cash_margin": 3259.8320610687024,
+          "cash_games": 133,
+          "cash_margin": 3493.3609022556393,
           "draws": 0,
-          "games": 131,
+          "games": 133,
           "losses": 58,
-          "score": 0.5572519083969466,
+          "score": 0.5639097744360902,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 65,
-              "wins": 35
+              "games": 66,
+              "wins": 36
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 38
+              "games": 67,
+              "wins": 39
             }
           },
-          "win_rate": 0.5572519083969466,
-          "wins": 73
+          "win_rate": 0.5639097744360902,
+          "wins": 75
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 134,
-          "cash_margin": -3826.783582089552,
+          "cash_games": 135,
+          "cash_margin": -3806.6666666666665,
           "draws": 0,
-          "games": 134,
-          "losses": 100,
-          "score": 0.2537313432835821,
+          "games": 135,
+          "losses": 101,
+          "score": 0.2518518518518518,
           "seats": {
             "0": {
               "draws": 0,
@@ -941,20 +941,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 59,
+              "games": 60,
               "wins": 14
             }
           },
-          "win_rate": 0.2537313432835821,
+          "win_rate": 0.2518518518518518,
           "wins": 34
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 134,
-          "cash_margin": 8698.455223880597,
+          "cash_games": 135,
+          "cash_margin": 8635.14074074074,
           "draws": 0,
-          "games": 134,
+          "games": 135,
           "losses": 9,
-          "score": 0.9328358208955224,
+          "score": 0.9333333333333333,
           "seats": {
             "0": {
               "draws": 0,
@@ -963,25 +963,25 @@
             },
             "1": {
               "draws": 0,
-              "games": 59,
-              "wins": 54
+              "games": 60,
+              "wins": 55
             }
           },
-          "win_rate": 0.9328358208955224,
-          "wins": 125
+          "win_rate": 0.9333333333333333,
+          "wins": 126
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 126,
-          "cash_margin": 8416.055555555555,
+          "cash_games": 127,
+          "cash_margin": 8351.023622047243,
           "draws": 0,
-          "games": 126,
+          "games": 127,
           "losses": 7,
-          "score": 0.9444444444444444,
+          "score": 0.9448818897637795,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
-              "wins": 60
+              "games": 64,
+              "wins": 61
             },
             "1": {
               "draws": 0,
@@ -989,16 +989,16 @@
               "wins": 59
             }
           },
-          "win_rate": 0.9444444444444444,
-          "wins": 119
+          "win_rate": 0.9448818897637795,
+          "wins": 120
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 134,
-          "cash_margin": 4143.828358208955,
+          "cash_games": 135,
+          "cash_margin": 4124.392592592592,
           "draws": 0,
-          "games": 134,
+          "games": 135,
           "losses": 49,
-          "score": 0.6343283582089553,
+          "score": 0.6370370370370371,
           "seats": {
             "0": {
               "draws": 0,
@@ -1007,12 +1007,12 @@
             },
             "1": {
               "draws": 0,
-              "games": 69,
-              "wins": 44
+              "games": 70,
+              "wins": 45
             }
           },
-          "win_rate": 0.6343283582089553,
-          "wins": 85
+          "win_rate": 0.6370370370370371,
+          "wins": 86
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
           "cash_games": 108,
@@ -1037,48 +1037,48 @@
           "wins": 67
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 130,
-          "cash_margin": 1764.2615384615385,
+          "cash_games": 132,
+          "cash_margin": 1647.090909090909,
           "draws": 0,
-          "games": 130,
-          "losses": 64,
-          "score": 0.5076923076923077,
+          "games": 132,
+          "losses": 65,
+          "score": 0.5075757575757576,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
-              "wins": 28
+              "games": 64,
+              "wins": 29
+            },
+            "1": {
+              "draws": 0,
+              "games": 68,
+              "wins": 38
+            }
+          },
+          "win_rate": 0.5075757575757576,
+          "wins": 67
+        },
+        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 137,
+          "cash_margin": 8869.233576642337,
+          "draws": 0,
+          "games": 137,
+          "losses": 9,
+          "score": 0.9343065693430657,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 70,
+              "wins": 68
             },
             "1": {
               "draws": 0,
               "games": 67,
-              "wins": 38
+              "wins": 60
             }
           },
-          "win_rate": 0.5076923076923077,
-          "wins": 66
-        },
-        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 135,
-          "cash_margin": 8911.02962962963,
-          "draws": 0,
-          "games": 135,
-          "losses": 9,
-          "score": 0.9333333333333333,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 69,
-              "wins": 67
-            },
-            "1": {
-              "draws": 0,
-              "games": 66,
-              "wins": 59
-            }
-          },
-          "win_rate": 0.9333333333333333,
-          "wins": 126
+          "win_rate": 0.9343065693430657,
+          "wins": 128
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
           "cash_games": 136,
@@ -1103,60 +1103,60 @@
           "wins": 90
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 133,
-          "cash_margin": 117835.83458646617,
+          "cash_games": 135,
+          "cash_margin": 117940.98518518519,
           "draws": 0,
-          "games": 133,
+          "games": 135,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
-              "wins": 67
+              "games": 68,
+              "wins": 68
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 66
+              "games": 67,
+              "wins": 67
             }
           },
           "win_rate": 1.0,
-          "wins": 133
+          "wins": 135
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 121,
-          "cash_margin": 6677.429752066116,
+          "cash_games": 124,
+          "cash_margin": 6649.322580645161,
           "draws": 0,
-          "games": 121,
+          "games": 124,
           "losses": 44,
-          "score": 0.6363636363636364,
+          "score": 0.6451612903225806,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
-              "wins": 42
+              "games": 68,
+              "wins": 43
             },
             "1": {
               "draws": 0,
-              "games": 54,
-              "wins": 35
+              "games": 56,
+              "wins": 37
             }
           },
-          "win_rate": 0.6363636363636364,
-          "wins": 77
+          "win_rate": 0.6451612903225806,
+          "wins": 80
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 134,
-          "cash_margin": 3644.402985074627,
+          "cash_games": 135,
+          "cash_margin": 3550.5703703703703,
           "draws": 0,
-          "games": 134,
-          "losses": 60,
-          "score": 0.5522388059701493,
+          "games": 135,
+          "losses": 61,
+          "score": 0.5481481481481482,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
+              "games": 65,
               "wins": 34
             },
             "1": {
@@ -1165,21 +1165,21 @@
               "wins": 40
             }
           },
-          "win_rate": 0.5522388059701493,
+          "win_rate": 0.5481481481481482,
           "wins": 74
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 139,
-          "cash_margin": 4814.805755395683,
+          "cash_games": 141,
+          "cash_margin": 4937.7163120567375,
           "draws": 0,
-          "games": 139,
+          "games": 141,
           "losses": 55,
-          "score": 0.60431654676259,
+          "score": 0.6099290780141844,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 76,
-              "wins": 46
+              "games": 78,
+              "wins": 48
             },
             "1": {
               "draws": 0,
@@ -1187,16 +1187,16 @@
               "wins": 38
             }
           },
-          "win_rate": 0.60431654676259,
-          "wins": 84
+          "win_rate": 0.6099290780141844,
+          "wins": 86
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 131,
-          "cash_margin": 3803.0152671755727,
+          "cash_games": 132,
+          "cash_margin": 3797.2954545454545,
           "draws": 0,
-          "games": 131,
+          "games": 132,
           "losses": 47,
-          "score": 0.6412213740458015,
+          "score": 0.6439393939393939,
           "seats": {
             "0": {
               "draws": 0,
@@ -1205,25 +1205,25 @@
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 40
+              "games": 67,
+              "wins": 41
             }
           },
-          "win_rate": 0.6412213740458015,
-          "wins": 84
+          "win_rate": 0.6439393939393939,
+          "wins": 85
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 134,
-          "cash_margin": 3826.783582089552,
+          "cash_games": 135,
+          "cash_margin": 3806.6666666666665,
           "draws": 0,
-          "games": 134,
+          "games": 135,
           "losses": 34,
-          "score": 0.746268656716418,
+          "score": 0.7481481481481481,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 59,
-              "wins": 45
+              "games": 60,
+              "wins": 46
             },
             "1": {
               "draws": 0,
@@ -1231,43 +1231,43 @@
               "wins": 55
             }
           },
-          "win_rate": 0.746268656716418,
-          "wins": 100
+          "win_rate": 0.7481481481481481,
+          "wins": 101
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 116,
-          "cash_margin": 8686.646551724138,
+          "cash_games": 120,
+          "cash_margin": 8642.566666666668,
           "draws": 0,
-          "games": 116,
-          "losses": 9,
-          "score": 0.9224137931034483,
+          "games": 120,
+          "losses": 10,
+          "score": 0.9166666666666666,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 52,
-              "wins": 47
+              "games": 54,
+              "wins": 48
             },
             "1": {
               "draws": 0,
-              "games": 64,
-              "wins": 60
+              "games": 66,
+              "wins": 62
             }
           },
-          "win_rate": 0.9224137931034483,
-          "wins": 107
+          "win_rate": 0.9166666666666666,
+          "wins": 110
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 133,
-          "cash_margin": 7189.315789473684,
+          "cash_games": 135,
+          "cash_margin": 7238.733333333334,
           "draws": 0,
-          "games": 133,
+          "games": 135,
           "losses": 17,
-          "score": 0.8721804511278195,
+          "score": 0.8740740740740741,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 65,
-              "wins": 59
+              "games": 67,
+              "wins": 61
             },
             "1": {
               "draws": 0,
@@ -1275,64 +1275,64 @@
               "wins": 57
             }
           },
-          "win_rate": 0.8721804511278195,
-          "wins": 116
+          "win_rate": 0.8740740740740741,
+          "wins": 118
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 137,
-          "cash_margin": 934.3795620437957,
+          "cash_games": 141,
+          "cash_margin": 1073.3475177304965,
           "draws": 0,
-          "games": 137,
-          "losses": 66,
-          "score": 0.5182481751824818,
+          "games": 141,
+          "losses": 67,
+          "score": 0.524822695035461,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 70,
-              "wins": 39
+              "games": 72,
+              "wins": 40
+            },
+            "1": {
+              "draws": 0,
+              "games": 69,
+              "wins": 34
+            }
+          },
+          "win_rate": 0.524822695035461,
+          "wins": 74
+        },
+        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
+          "cash_games": 128,
+          "cash_margin": 2054.1875,
+          "draws": 0,
+          "games": 128,
+          "losses": 53,
+          "score": 0.5859375,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 61,
+              "wins": 33
             },
             "1": {
               "draws": 0,
               "games": 67,
-              "wins": 32
-            }
-          },
-          "win_rate": 0.5182481751824818,
-          "wins": 71
-        },
-        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 126,
-          "cash_margin": 1994.9920634920634,
-          "draws": 0,
-          "games": 126,
-          "losses": 52,
-          "score": 0.5873015873015873,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 60,
-              "wins": 32
-            },
-            "1": {
-              "draws": 0,
-              "games": 66,
               "wins": 42
             }
           },
-          "win_rate": 0.5873015873015873,
-          "wins": 74
+          "win_rate": 0.5859375,
+          "wins": 75
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 123,
-          "cash_margin": 764.2276422764228,
+          "cash_games": 124,
+          "cash_margin": 715.9516129032259,
           "draws": 0,
-          "games": 123,
-          "losses": 71,
-          "score": 0.42276422764227645,
+          "games": 124,
+          "losses": 72,
+          "score": 0.41935483870967744,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 65,
+              "games": 66,
               "wins": 27
             },
             "1": {
@@ -1341,21 +1341,21 @@
               "wins": 25
             }
           },
-          "win_rate": 0.42276422764227645,
+          "win_rate": 0.41935483870967744,
           "wins": 52
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 130,
-          "cash_margin": 8947.761538461538,
+          "cash_games": 131,
+          "cash_margin": 8972.717557251908,
           "draws": 0,
-          "games": 130,
+          "games": 131,
           "losses": 11,
-          "score": 0.9153846153846154,
+          "score": 0.916030534351145,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 68,
-              "wins": 65
+              "games": 69,
+              "wins": 66
             },
             "1": {
               "draws": 0,
@@ -1363,8 +1363,8 @@
               "wins": 54
             }
           },
-          "win_rate": 0.9153846153846154,
-          "wins": 119
+          "win_rate": 0.916030534351145,
+          "wins": 120
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
           "cash_games": 129,
@@ -1411,12 +1411,12 @@
           "wins": 145
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 125,
-          "cash_margin": 5714.928,
+          "cash_games": 126,
+          "cash_margin": 5587.888888888889,
           "draws": 0,
-          "games": 125,
-          "losses": 42,
-          "score": 0.664,
+          "games": 126,
+          "losses": 43,
+          "score": 0.6587301587301587,
           "seats": {
             "0": {
               "draws": 0,
@@ -1425,24 +1425,24 @@
             },
             "1": {
               "draws": 0,
-              "games": 57,
+              "games": 58,
               "wins": 39
             }
           },
-          "win_rate": 0.664,
+          "win_rate": 0.6587301587301587,
           "wins": 83
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 144,
-          "cash_margin": 2091.8055555555557,
+          "cash_games": 145,
+          "cash_margin": 2004.2758620689656,
           "draws": 0,
-          "games": 144,
-          "losses": 60,
-          "score": 0.5833333333333334,
+          "games": 145,
+          "losses": 61,
+          "score": 0.5793103448275863,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 68,
+              "games": 69,
               "wins": 43
             },
             "1": {
@@ -1451,21 +1451,21 @@
               "wins": 41
             }
           },
-          "win_rate": 0.5833333333333334,
+          "win_rate": 0.5793103448275863,
           "wins": 84
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 130,
-          "cash_margin": -254.01538461538462,
+          "cash_games": 131,
+          "cash_margin": -228.96946564885496,
           "draws": 0,
-          "games": 130,
+          "games": 131,
           "losses": 74,
-          "score": 0.4307692307692308,
+          "score": 0.4351145038167939,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 70,
-              "wins": 29
+              "games": 71,
+              "wins": 30
             },
             "1": {
               "draws": 0,
@@ -1473,8 +1473,8 @@
               "wins": 27
             }
           },
-          "win_rate": 0.4307692307692308,
-          "wins": 56
+          "win_rate": 0.4351145038167939,
+          "wins": 57
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
           "cash_games": 139,
@@ -1499,16 +1499,16 @@
           "wins": 73
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 134,
-          "cash_margin": -8698.455223880597,
+          "cash_games": 135,
+          "cash_margin": -8635.14074074074,
           "draws": 0,
-          "games": 134,
-          "losses": 125,
-          "score": 0.06716417910447761,
+          "games": 135,
+          "losses": 126,
+          "score": 0.06666666666666667,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 59,
+              "games": 60,
               "wins": 5
             },
             "1": {
@@ -1517,42 +1517,42 @@
               "wins": 4
             }
           },
-          "win_rate": 0.06716417910447761,
+          "win_rate": 0.06666666666666667,
           "wins": 9
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 116,
-          "cash_margin": -8686.646551724138,
+          "cash_games": 120,
+          "cash_margin": -8642.566666666668,
           "draws": 0,
-          "games": 116,
-          "losses": 107,
-          "score": 0.07758620689655173,
+          "games": 120,
+          "losses": 110,
+          "score": 0.08333333333333333,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
+              "games": 66,
               "wins": 4
             },
             "1": {
               "draws": 0,
-              "games": 52,
-              "wins": 5
+              "games": 54,
+              "wins": 6
             }
           },
-          "win_rate": 0.07758620689655173,
-          "wins": 9
+          "win_rate": 0.08333333333333333,
+          "wins": 10
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 122,
-          "cash_margin": -4130.7786885245905,
+          "cash_games": 124,
+          "cash_margin": -4252.362903225807,
           "draws": 0,
-          "games": 122,
-          "losses": 85,
-          "score": 0.30327868852459017,
+          "games": 124,
+          "losses": 87,
+          "score": 0.29838709677419356,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
+              "games": 65,
               "wins": 20
             },
             "1": {
@@ -1561,20 +1561,20 @@
               "wins": 17
             }
           },
-          "win_rate": 0.30327868852459017,
+          "win_rate": 0.29838709677419356,
           "wins": 37
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 140,
-          "cash_margin": 1477.3785714285714,
+          "cash_games": 142,
+          "cash_margin": 1431.119718309859,
           "draws": 0,
-          "games": 140,
-          "losses": 62,
-          "score": 0.5571428571428572,
+          "games": 142,
+          "losses": 64,
+          "score": 0.5492957746478874,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 68,
               "wins": 36
             },
             "1": {
@@ -1583,16 +1583,16 @@
               "wins": 42
             }
           },
-          "win_rate": 0.5571428571428572,
+          "win_rate": 0.5492957746478874,
           "wins": 78
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 132,
-          "cash_margin": 2198.560606060606,
+          "cash_games": 133,
+          "cash_margin": 2163.1654135338345,
           "draws": 0,
-          "games": 132,
-          "losses": 54,
-          "score": 0.5909090909090909,
+          "games": 133,
+          "losses": 55,
+          "score": 0.5864661654135338,
           "seats": {
             "0": {
               "draws": 0,
@@ -1601,24 +1601,24 @@
             },
             "1": {
               "draws": 0,
-              "games": 61,
+              "games": 62,
               "wins": 39
             }
           },
-          "win_rate": 0.5909090909090909,
+          "win_rate": 0.5864661654135338,
           "wins": 78
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 130,
-          "cash_margin": 715.223076923077,
+          "cash_games": 131,
+          "cash_margin": 678.9618320610687,
           "draws": 0,
-          "games": 130,
-          "losses": 67,
-          "score": 0.4846153846153846,
+          "games": 131,
+          "losses": 68,
+          "score": 0.48091603053435117,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
+              "games": 65,
               "wins": 30
             },
             "1": {
@@ -1627,7 +1627,7 @@
               "wins": 33
             }
           },
-          "win_rate": 0.4846153846153846,
+          "win_rate": 0.48091603053435117,
           "wins": 63
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
@@ -1653,39 +1653,39 @@
           "wins": 75
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 130,
-          "cash_margin": -7362.592307692307,
+          "cash_games": 133,
+          "cash_margin": -7307.466165413533,
           "draws": 0,
-          "games": 130,
-          "losses": 117,
-          "score": 0.1,
+          "games": 133,
+          "losses": 120,
+          "score": 0.09774436090225563,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 70,
+              "games": 71,
               "wins": 6
             },
             "1": {
               "draws": 0,
-              "games": 60,
+              "games": 62,
               "wins": 7
             }
           },
-          "win_rate": 0.1,
+          "win_rate": 0.09774436090225563,
           "wins": 13
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 124,
-          "cash_margin": 116075.40322580645,
+          "cash_games": 125,
+          "cash_margin": 115984.072,
           "draws": 0,
-          "games": 124,
+          "games": 125,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 57,
-              "wins": 57
+              "games": 58,
+              "wins": 58
             },
             "1": {
               "draws": 0,
@@ -1694,51 +1694,51 @@
             }
           },
           "win_rate": 1.0,
-          "wins": 124
+          "wins": 125
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 123,
-          "cash_margin": 7701.40650406504,
+          "cash_games": 126,
+          "cash_margin": 7546.555555555556,
           "draws": 0,
-          "games": 123,
-          "losses": 31,
-          "score": 0.7479674796747967,
+          "games": 126,
+          "losses": 32,
+          "score": 0.746031746031746,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 65,
-              "wins": 49
+              "games": 66,
+              "wins": 50
             },
             "1": {
               "draws": 0,
-              "games": 58,
-              "wins": 43
+              "games": 60,
+              "wins": 44
             }
           },
-          "win_rate": 0.7479674796747967,
-          "wins": 92
+          "win_rate": 0.746031746031746,
+          "wins": 94
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 132,
-          "cash_margin": 2198.7272727272725,
+          "cash_games": 134,
+          "cash_margin": 2257.276119402985,
           "draws": 0,
-          "games": 132,
+          "games": 134,
           "losses": 53,
-          "score": 0.5984848484848485,
+          "score": 0.6044776119402985,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 56,
-              "wins": 32
+              "games": 57,
+              "wins": 33
             },
             "1": {
               "draws": 0,
-              "games": 76,
-              "wins": 47
+              "games": 77,
+              "wins": 48
             }
           },
-          "win_rate": 0.5984848484848485,
-          "wins": 79
+          "win_rate": 0.6044776119402985,
+          "wins": 81
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
           "cash_games": 128,
@@ -1763,12 +1763,12 @@
           "wins": 67
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 140,
-          "cash_margin": 302.27142857142854,
+          "cash_games": 141,
+          "cash_margin": 273.01418439716315,
           "draws": 0,
-          "games": 140,
-          "losses": 69,
-          "score": 0.5071428571428571,
+          "games": 141,
+          "losses": 70,
+          "score": 0.5035460992907801,
           "seats": {
             "0": {
               "draws": 0,
@@ -1777,20 +1777,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 31
             }
           },
-          "win_rate": 0.5071428571428571,
+          "win_rate": 0.5035460992907801,
           "wins": 71
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 126,
-          "cash_margin": -8416.055555555555,
+          "cash_games": 127,
+          "cash_margin": -8351.023622047243,
           "draws": 0,
-          "games": 126,
-          "losses": 119,
-          "score": 0.05555555555555555,
+          "games": 127,
+          "losses": 120,
+          "score": 0.05511811023622047,
           "seats": {
             "0": {
               "draws": 0,
@@ -1799,20 +1799,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 63,
+              "games": 64,
               "wins": 3
             }
           },
-          "win_rate": 0.05555555555555555,
+          "win_rate": 0.05511811023622047,
           "wins": 7
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 133,
-          "cash_margin": -7189.315789473684,
+          "cash_games": 135,
+          "cash_margin": -7238.733333333334,
           "draws": 0,
-          "games": 133,
-          "losses": 116,
-          "score": 0.12781954887218044,
+          "games": 135,
+          "losses": 118,
+          "score": 0.1259259259259259,
           "seats": {
             "0": {
               "draws": 0,
@@ -1821,20 +1821,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 65,
+              "games": 67,
               "wins": 6
             }
           },
-          "win_rate": 0.12781954887218044,
+          "win_rate": 0.1259259259259259,
           "wins": 17
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 122,
-          "cash_margin": 4130.7786885245905,
+          "cash_games": 124,
+          "cash_margin": 4252.362903225807,
           "draws": 0,
-          "games": 122,
+          "games": 124,
           "losses": 37,
-          "score": 0.6967213114754098,
+          "score": 0.7016129032258065,
           "seats": {
             "0": {
               "draws": 0,
@@ -1843,42 +1843,42 @@
             },
             "1": {
               "draws": 0,
-              "games": 63,
-              "wins": 43
+              "games": 65,
+              "wins": 45
             }
           },
-          "win_rate": 0.6967213114754098,
-          "wins": 85
+          "win_rate": 0.7016129032258065,
+          "wins": 87
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 138,
-          "cash_margin": 1033.144927536232,
+          "cash_games": 141,
+          "cash_margin": 1016.063829787234,
           "draws": 0,
-          "games": 138,
-          "losses": 66,
-          "score": 0.5217391304347826,
+          "games": 141,
+          "losses": 68,
+          "score": 0.5177304964539007,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 72,
+              "games": 73,
               "wins": 39
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 33
+              "games": 68,
+              "wins": 34
             }
           },
-          "win_rate": 0.5217391304347826,
-          "wins": 72
+          "win_rate": 0.5177304964539007,
+          "wins": 73
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 130,
-          "cash_margin": 1238.8,
+          "cash_games": 132,
+          "cash_margin": 1082.0530303030303,
           "draws": 0,
-          "games": 130,
-          "losses": 55,
-          "score": 0.5769230769230769,
+          "games": 132,
+          "losses": 57,
+          "score": 0.5681818181818182,
           "seats": {
             "0": {
               "draws": 0,
@@ -1887,20 +1887,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 60,
+              "games": 62,
               "wins": 34
             }
           },
-          "win_rate": 0.5769230769230769,
+          "win_rate": 0.5681818181818182,
           "wins": 75
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 144,
-          "cash_margin": -280.1666666666667,
+          "cash_games": 145,
+          "cash_margin": -250.4758620689655,
           "draws": 0,
-          "games": 144,
+          "games": 145,
           "losses": 75,
-          "score": 0.4791666666666667,
+          "score": 0.4827586206896552,
           "seats": {
             "0": {
               "draws": 0,
@@ -1909,25 +1909,25 @@
             },
             "1": {
               "draws": 0,
-              "games": 70,
-              "wins": 36
+              "games": 71,
+              "wins": 37
             }
           },
-          "win_rate": 0.4791666666666667,
-          "wins": 69
+          "win_rate": 0.4827586206896552,
+          "wins": 70
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 125,
-          "cash_margin": 4544.208,
+          "cash_games": 126,
+          "cash_margin": 4535.039682539683,
           "draws": 0,
-          "games": 125,
+          "games": 126,
           "losses": 45,
-          "score": 0.64,
+          "score": 0.6428571428571429,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 58,
-              "wins": 38
+              "games": 59,
+              "wins": 39
             },
             "1": {
               "draws": 0,
@@ -1935,20 +1935,20 @@
               "wins": 42
             }
           },
-          "win_rate": 0.64,
-          "wins": 80
+          "win_rate": 0.6428571428571429,
+          "wins": 81
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 114,
-          "cash_margin": -6538.175438596491,
+          "cash_games": 115,
+          "cash_margin": -6632.365217391304,
           "draws": 0,
-          "games": 114,
-          "losses": 103,
-          "score": 0.09649122807017543,
+          "games": 115,
+          "losses": 104,
+          "score": 0.09565217391304348,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 56,
+              "games": 57,
               "wins": 7
             },
             "1": {
@@ -1957,7 +1957,7 @@
               "wins": 4
             }
           },
-          "win_rate": 0.09649122807017543,
+          "win_rate": 0.09565217391304348,
           "wins": 11
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
@@ -1983,12 +1983,12 @@
           "wins": 143
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 126,
-          "cash_margin": 6378.896825396825,
+          "cash_games": 127,
+          "cash_margin": 6342.157480314961,
           "draws": 0,
-          "games": 126,
+          "games": 127,
           "losses": 43,
-          "score": 0.6587301587301587,
+          "score": 0.6614173228346457,
           "seats": {
             "0": {
               "draws": 0,
@@ -1997,20 +1997,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 64,
-              "wins": 43
+              "games": 65,
+              "wins": 44
             }
           },
-          "win_rate": 0.6587301587301587,
-          "wins": 83
+          "win_rate": 0.6614173228346457,
+          "wins": 84
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 126,
-          "cash_margin": 735.6825396825396,
+          "cash_games": 127,
+          "cash_margin": 732.7795275590552,
           "draws": 0,
-          "games": 126,
+          "games": 127,
           "losses": 58,
-          "score": 0.5396825396825397,
+          "score": 0.5433070866141733,
           "seats": {
             "0": {
               "draws": 0,
@@ -2019,40 +2019,40 @@
             },
             "1": {
               "draws": 0,
-              "games": 60,
-              "wins": 36
+              "games": 61,
+              "wins": 37
             }
           },
-          "win_rate": 0.5396825396825397,
-          "wins": 68
+          "win_rate": 0.5433070866141733,
+          "wins": 69
         },
         "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 142,
-          "cash_margin": 1680.1971830985915,
+          "cash_games": 144,
+          "cash_margin": 1746.1041666666667,
           "draws": 0,
-          "games": 142,
+          "games": 144,
           "losses": 72,
-          "score": 0.49295774647887325,
+          "score": 0.5,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 71,
-              "wins": 36
+              "games": 72,
+              "wins": 37
             },
             "1": {
               "draws": 0,
-              "games": 71,
-              "wins": 34
+              "games": 72,
+              "wins": 35
             }
           },
-          "win_rate": 0.49295774647887325,
-          "wins": 70
+          "win_rate": 0.5,
+          "wins": 72
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 140,
-          "cash_margin": 26481.621428571427,
+          "cash_games": 141,
+          "cash_margin": 26563.59574468085,
           "draws": 0,
-          "games": 140,
+          "games": 141,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -2063,24 +2063,24 @@
             },
             "1": {
               "draws": 0,
-              "games": 70,
-              "wins": 70
+              "games": 71,
+              "wins": 71
             }
           },
           "win_rate": 1.0,
-          "wins": 140
+          "wins": 141
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 134,
-          "cash_margin": -4143.828358208955,
+          "cash_games": 135,
+          "cash_margin": -4124.392592592592,
           "draws": 0,
-          "games": 134,
-          "losses": 85,
-          "score": 0.3656716417910448,
+          "games": 135,
+          "losses": 86,
+          "score": 0.362962962962963,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 69,
+              "games": 70,
               "wins": 25
             },
             "1": {
@@ -2089,38 +2089,38 @@
               "wins": 24
             }
           },
-          "win_rate": 0.3656716417910448,
+          "win_rate": 0.362962962962963,
           "wins": 49
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 137,
-          "cash_margin": -934.3795620437957,
+          "cash_games": 141,
+          "cash_margin": -1073.3475177304965,
           "draws": 0,
-          "games": 137,
-          "losses": 71,
-          "score": 0.48175182481751827,
+          "games": 141,
+          "losses": 74,
+          "score": 0.475177304964539,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
+              "games": 69,
               "wins": 35
             },
             "1": {
               "draws": 0,
-              "games": 70,
-              "wins": 31
+              "games": 72,
+              "wins": 32
             }
           },
-          "win_rate": 0.48175182481751827,
-          "wins": 66
+          "win_rate": 0.475177304964539,
+          "wins": 67
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 140,
-          "cash_margin": -1477.3785714285714,
+          "cash_games": 142,
+          "cash_margin": -1431.119718309859,
           "draws": 0,
-          "games": 140,
+          "games": 142,
           "losses": 78,
-          "score": 0.44285714285714284,
+          "score": 0.4507042253521127,
           "seats": {
             "0": {
               "draws": 0,
@@ -2129,47 +2129,47 @@
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 30
+              "games": 68,
+              "wins": 32
             }
           },
-          "win_rate": 0.44285714285714284,
-          "wins": 62
+          "win_rate": 0.4507042253521127,
+          "wins": 64
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 138,
-          "cash_margin": -1033.144927536232,
+          "cash_games": 141,
+          "cash_margin": -1016.063829787234,
           "draws": 0,
-          "games": 138,
-          "losses": 72,
-          "score": 0.4782608695652174,
+          "games": 141,
+          "losses": 73,
+          "score": 0.48226950354609927,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
-              "wins": 33
+              "games": 68,
+              "wins": 34
             },
             "1": {
               "draws": 0,
-              "games": 72,
-              "wins": 33
+              "games": 73,
+              "wins": 34
             }
           },
-          "win_rate": 0.4782608695652174,
-          "wins": 66
+          "win_rate": 0.48226950354609927,
+          "wins": 68
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 129,
-          "cash_margin": 25797.271317829458,
+          "cash_games": 131,
+          "cash_margin": 25797.65648854962,
           "draws": 0,
-          "games": 129,
+          "games": 131,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 61,
-              "wins": 61
+              "games": 63,
+              "wins": 63
             },
             "1": {
               "draws": 0,
@@ -2178,13 +2178,13 @@
             }
           },
           "win_rate": 1.0,
-          "wins": 129
+          "wins": 131
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 144,
-          "cash_margin": 24451.819444444445,
+          "cash_games": 145,
+          "cash_margin": 24493.048275862067,
           "draws": 0,
-          "games": 144,
+          "games": 145,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -2195,12 +2195,12 @@
             },
             "1": {
               "draws": 0,
-              "games": 63,
-              "wins": 63
+              "games": 64,
+              "wins": 64
             }
           },
           "win_rate": 1.0,
-          "wins": 144
+          "wins": 145
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
           "cash_games": 137,
@@ -2225,17 +2225,17 @@
           "wins": 70
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 107,
-          "cash_margin": -5329.92523364486,
+          "cash_games": 109,
+          "cash_margin": -5230.733944954129,
           "draws": 0,
-          "games": 107,
-          "losses": 80,
-          "score": 0.2523364485981308,
+          "games": 109,
+          "losses": 81,
+          "score": 0.25688073394495414,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 58,
-              "wins": 16
+              "games": 60,
+              "wins": 17
             },
             "1": {
               "draws": 0,
@@ -2243,14 +2243,14 @@
               "wins": 11
             }
           },
-          "win_rate": 0.2523364485981308,
-          "wins": 27
+          "win_rate": 0.25688073394495414,
+          "wins": 28
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 123,
-          "cash_margin": 109478.87804878049,
+          "cash_games": 124,
+          "cash_margin": 109368.8870967742,
           "draws": 0,
-          "games": 123,
+          "games": 124,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -2261,40 +2261,40 @@
             },
             "1": {
               "draws": 0,
-              "games": 60,
-              "wins": 60
+              "games": 61,
+              "wins": 61
             }
           },
           "win_rate": 1.0,
-          "wins": 123
+          "wins": 124
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 135,
-          "cash_margin": 6599.8074074074075,
+          "cash_games": 138,
+          "cash_margin": 6641.623188405797,
           "draws": 0,
-          "games": 135,
+          "games": 138,
           "losses": 33,
-          "score": 0.7555555555555555,
+          "score": 0.7608695652173914,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
-              "wins": 50
+              "games": 69,
+              "wins": 52
             },
             "1": {
               "draws": 0,
-              "games": 68,
-              "wins": 52
+              "games": 69,
+              "wins": 53
             }
           },
-          "win_rate": 0.7555555555555555,
-          "wins": 102
+          "win_rate": 0.7608695652173914,
+          "wins": 105
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 135,
-          "cash_margin": 26530.266666666666,
+          "cash_games": 137,
+          "cash_margin": 26549.649635036498,
           "draws": 0,
-          "games": 135,
+          "games": 137,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -2305,34 +2305,34 @@
             },
             "1": {
               "draws": 0,
-              "games": 74,
-              "wins": 74
+              "games": 76,
+              "wins": 76
             }
           },
           "win_rate": 1.0,
-          "wins": 135
+          "wins": 137
         },
         "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 126,
-          "cash_margin": 360.92063492063494,
+          "cash_games": 129,
+          "cash_margin": 358.3410852713178,
           "draws": 0,
-          "games": 126,
+          "games": 129,
           "losses": 18,
-          "score": 0.8571428571428571,
+          "score": 0.8604651162790697,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
-              "wins": 55
+              "games": 65,
+              "wins": 56
             },
             "1": {
               "draws": 0,
-              "games": 62,
-              "wins": 53
+              "games": 64,
+              "wins": 55
             }
           },
-          "win_rate": 0.8571428571428571,
-          "wins": 108
+          "win_rate": 0.8604651162790697,
+          "wins": 111
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
           "cash_games": 142,
@@ -2379,39 +2379,39 @@
           "wins": 41
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 126,
-          "cash_margin": -1994.9920634920634,
+          "cash_games": 128,
+          "cash_margin": -2054.1875,
           "draws": 0,
-          "games": 126,
-          "losses": 74,
-          "score": 0.4126984126984127,
+          "games": 128,
+          "losses": 75,
+          "score": 0.4140625,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
-              "wins": 24
+              "games": 67,
+              "wins": 25
             },
             "1": {
               "draws": 0,
-              "games": 60,
+              "games": 61,
               "wins": 28
             }
           },
-          "win_rate": 0.4126984126984127,
-          "wins": 52
+          "win_rate": 0.4140625,
+          "wins": 53
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 132,
-          "cash_margin": -2198.560606060606,
+          "cash_games": 133,
+          "cash_margin": -2163.1654135338345,
           "draws": 0,
-          "games": 132,
+          "games": 133,
           "losses": 78,
-          "score": 0.4090909090909091,
+          "score": 0.41353383458646614,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 61,
-              "wins": 22
+              "games": 62,
+              "wins": 23
             },
             "1": {
               "draws": 0,
@@ -2419,21 +2419,21 @@
               "wins": 32
             }
           },
-          "win_rate": 0.4090909090909091,
-          "wins": 54
+          "win_rate": 0.41353383458646614,
+          "wins": 55
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 130,
-          "cash_margin": -1238.8,
+          "cash_games": 132,
+          "cash_margin": -1082.0530303030303,
           "draws": 0,
-          "games": 130,
+          "games": 132,
           "losses": 75,
-          "score": 0.4230769230769231,
+          "score": 0.4318181818181818,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 60,
-              "wins": 26
+              "games": 62,
+              "wins": 28
             },
             "1": {
               "draws": 0,
@@ -2441,15 +2441,15 @@
               "wins": 29
             }
           },
-          "win_rate": 0.4230769230769231,
-          "wins": 55
+          "win_rate": 0.4318181818181818,
+          "wins": 57
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 129,
-          "cash_margin": -25797.271317829458,
+          "cash_games": 131,
+          "cash_margin": -25797.65648854962,
           "draws": 0,
-          "games": 129,
-          "losses": 129,
+          "games": 131,
+          "losses": 131,
           "score": 0.0,
           "seats": {
             "0": {
@@ -2459,7 +2459,7 @@
             },
             "1": {
               "draws": 0,
-              "games": 61,
+              "games": 63,
               "wins": 0
             }
           },
@@ -2511,39 +2511,39 @@
           "wins": 52
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 126,
-          "cash_margin": -2997.3174603174602,
+          "cash_games": 129,
+          "cash_margin": -3134.31007751938,
           "draws": 0,
-          "games": 126,
-          "losses": 72,
-          "score": 0.42857142857142855,
+          "games": 129,
+          "losses": 75,
+          "score": 0.4186046511627907,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 55,
+              "games": 56,
               "wins": 22
             },
             "1": {
               "draws": 0,
-              "games": 71,
+              "games": 73,
               "wins": 32
             }
           },
-          "win_rate": 0.42857142857142855,
+          "win_rate": 0.4186046511627907,
           "wins": 54
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 128,
-          "cash_margin": 106821.0078125,
+          "cash_games": 129,
+          "cash_margin": 106810.72093023256,
           "draws": 0,
-          "games": 128,
+          "games": 129,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 69,
-              "wins": 69
+              "games": 70,
+              "wins": 70
             },
             "1": {
               "draws": 0,
@@ -2552,50 +2552,50 @@
             }
           },
           "win_rate": 1.0,
-          "wins": 128
+          "wins": 129
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 123,
-          "cash_margin": 3474.0731707317073,
+          "cash_games": 125,
+          "cash_margin": 3372.08,
           "draws": 0,
-          "games": 123,
-          "losses": 60,
-          "score": 0.5121951219512195,
+          "games": 125,
+          "losses": 62,
+          "score": 0.504,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 61,
+              "games": 62,
               "wins": 30
             },
             "1": {
               "draws": 0,
-              "games": 62,
+              "games": 63,
               "wins": 33
             }
           },
-          "win_rate": 0.5121951219512195,
+          "win_rate": 0.504,
           "wins": 63
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 126,
-          "cash_margin": 99.5952380952381,
-          "draws": 121,
-          "games": 126,
+          "cash_games": 129,
+          "cash_margin": 97.27906976744185,
+          "draws": 124,
+          "games": 129,
           "losses": 1,
-          "score": 0.5119047619047619,
+          "score": 0.5116279069767442,
           "seats": {
             "0": {
-              "draws": 61,
-              "games": 65,
+              "draws": 63,
+              "games": 67,
               "wins": 3
             },
             "1": {
-              "draws": 60,
-              "games": 61,
+              "draws": 61,
+              "games": 62,
               "wins": 1
             }
           },
-          "win_rate": 0.031746031746031744,
+          "win_rate": 0.031007751937984496,
           "wins": 4
         },
         "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
@@ -2621,17 +2621,17 @@
           "wins": 0
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 143,
-          "cash_margin": 2002.6293706293707,
+          "cash_games": 146,
+          "cash_margin": 1997.8835616438357,
           "draws": 0,
-          "games": 143,
+          "games": 146,
           "losses": 7,
-          "score": 0.951048951048951,
+          "score": 0.952054794520548,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 74,
-              "wins": 70
+              "games": 77,
+              "wins": 73
             },
             "1": {
               "draws": 0,
@@ -2639,38 +2639,38 @@
               "wins": 66
             }
           },
-          "win_rate": 0.951048951048951,
-          "wins": 136
+          "win_rate": 0.952054794520548,
+          "wins": 139
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 130,
-          "cash_margin": -1764.2615384615385,
+          "cash_games": 132,
+          "cash_margin": -1647.090909090909,
           "draws": 0,
-          "games": 130,
-          "losses": 66,
-          "score": 0.49230769230769234,
+          "games": 132,
+          "losses": 67,
+          "score": 0.49242424242424243,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
-              "wins": 29
+              "games": 68,
+              "wins": 30
             },
             "1": {
               "draws": 0,
-              "games": 63,
+              "games": 64,
               "wins": 35
             }
           },
-          "win_rate": 0.49230769230769234,
-          "wins": 64
+          "win_rate": 0.49242424242424243,
+          "wins": 65
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 123,
-          "cash_margin": -764.2276422764228,
+          "cash_games": 124,
+          "cash_margin": -715.9516129032259,
           "draws": 0,
-          "games": 123,
+          "games": 124,
           "losses": 52,
-          "score": 0.5772357723577236,
+          "score": 0.5806451612903226,
           "seats": {
             "0": {
               "draws": 0,
@@ -2679,20 +2679,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 65,
-              "wins": 38
+              "games": 66,
+              "wins": 39
             }
           },
-          "win_rate": 0.5772357723577236,
-          "wins": 71
+          "win_rate": 0.5806451612903226,
+          "wins": 72
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 130,
-          "cash_margin": -715.223076923077,
+          "cash_games": 131,
+          "cash_margin": -678.9618320610687,
           "draws": 0,
-          "games": 130,
+          "games": 131,
           "losses": 63,
-          "score": 0.5153846153846153,
+          "score": 0.5190839694656488,
           "seats": {
             "0": {
               "draws": 0,
@@ -2701,24 +2701,24 @@
             },
             "1": {
               "draws": 0,
-              "games": 64,
-              "wins": 34
+              "games": 65,
+              "wins": 35
             }
           },
-          "win_rate": 0.5153846153846153,
-          "wins": 67
+          "win_rate": 0.5190839694656488,
+          "wins": 68
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 144,
-          "cash_margin": 280.1666666666667,
+          "cash_games": 145,
+          "cash_margin": 250.4758620689655,
           "draws": 0,
-          "games": 144,
-          "losses": 69,
-          "score": 0.5208333333333334,
+          "games": 145,
+          "losses": 70,
+          "score": 0.5172413793103449,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 70,
+              "games": 71,
               "wins": 34
             },
             "1": {
@@ -2727,20 +2727,20 @@
               "wins": 41
             }
           },
-          "win_rate": 0.5208333333333334,
+          "win_rate": 0.5172413793103449,
           "wins": 75
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 144,
-          "cash_margin": -24451.819444444445,
+          "cash_games": 145,
+          "cash_margin": -24493.048275862067,
           "draws": 0,
-          "games": 144,
-          "losses": 144,
+          "games": 145,
+          "losses": 145,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
+              "games": 64,
               "wins": 0
             },
             "1": {
@@ -2775,12 +2775,12 @@
           "wins": 107
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 123,
-          "cash_margin": -645.2764227642276,
+          "cash_games": 124,
+          "cash_margin": -590.991935483871,
           "draws": 0,
-          "games": 123,
+          "games": 124,
           "losses": 62,
-          "score": 0.4959349593495935,
+          "score": 0.5,
           "seats": {
             "0": {
               "draws": 0,
@@ -2789,12 +2789,12 @@
             },
             "1": {
               "draws": 0,
-              "games": 55,
-              "wins": 31
+              "games": 56,
+              "wins": 32
             }
           },
-          "win_rate": 0.4959349593495935,
-          "wins": 61
+          "win_rate": 0.5,
+          "wins": 62
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
           "cash_games": 125,
@@ -2819,10 +2819,10 @@
           "wins": 54
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 134,
-          "cash_margin": 104674.72388059701,
+          "cash_games": 136,
+          "cash_margin": 104734.97794117648,
           "draws": 0,
-          "games": 134,
+          "games": 136,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -2833,68 +2833,68 @@
             },
             "1": {
               "draws": 0,
-              "games": 69,
-              "wins": 69
+              "games": 71,
+              "wins": 71
             }
           },
           "win_rate": 1.0,
-          "wins": 134
+          "wins": 136
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 133,
-          "cash_margin": 5385.18045112782,
+          "cash_games": 136,
+          "cash_margin": 5406.933823529412,
           "draws": 0,
-          "games": 133,
+          "games": 136,
           "losses": 8,
-          "score": 0.9398496240601504,
+          "score": 0.9411764705882353,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 71,
-              "wins": 65
+              "games": 72,
+              "wins": 66
             },
             "1": {
               "draws": 0,
-              "games": 62,
-              "wins": 60
+              "games": 64,
+              "wins": 62
             }
           },
-          "win_rate": 0.9398496240601504,
-          "wins": 125
+          "win_rate": 0.9411764705882353,
+          "wins": 128
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 124,
-          "cash_margin": 1888.508064516129,
-          "draws": 28,
-          "games": 124,
+          "cash_games": 127,
+          "cash_margin": 1886.4488188976377,
+          "draws": 29,
+          "games": 127,
           "losses": 3,
-          "score": 0.8629032258064516,
+          "score": 0.8622047244094488,
           "seats": {
             "0": {
-              "draws": 15,
-              "games": 65,
-              "wins": 48
+              "draws": 16,
+              "games": 67,
+              "wins": 49
             },
             "1": {
               "draws": 13,
-              "games": 59,
-              "wins": 45
+              "games": 60,
+              "wins": 46
             }
           },
-          "win_rate": 0.75,
-          "wins": 93
+          "win_rate": 0.7480314960629921,
+          "wins": 95
         },
         "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 117,
-          "cash_margin": -25317.358974358973,
+          "cash_games": 118,
+          "cash_margin": -25443.669491525423,
           "draws": 0,
-          "games": 117,
-          "losses": 117,
+          "games": 118,
+          "losses": 118,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 61,
+              "games": 62,
               "wins": 0
             },
             "1": {
@@ -2907,56 +2907,56 @@
           "wins": 0
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 129,
-          "cash_margin": 3827.9612403100773,
+          "cash_games": 131,
+          "cash_margin": 3834.763358778626,
           "draws": 0,
-          "games": 129,
-          "losses": 45,
-          "score": 0.6511627906976745,
+          "games": 131,
+          "losses": 46,
+          "score": 0.648854961832061,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 60,
+              "games": 61,
               "wins": 39
             },
             "1": {
               "draws": 0,
-              "games": 69,
-              "wins": 45
+              "games": 70,
+              "wins": 46
             }
           },
-          "win_rate": 0.6511627906976745,
-          "wins": 84
+          "win_rate": 0.648854961832061,
+          "wins": 85
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 135,
-          "cash_margin": -8911.02962962963,
+          "cash_games": 137,
+          "cash_margin": -8869.233576642337,
           "draws": 0,
-          "games": 135,
-          "losses": 126,
-          "score": 0.06666666666666667,
+          "games": 137,
+          "losses": 128,
+          "score": 0.06569343065693431,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 7
             },
             "1": {
               "draws": 0,
-              "games": 69,
+              "games": 70,
               "wins": 2
             }
           },
-          "win_rate": 0.06666666666666667,
+          "win_rate": 0.06569343065693431,
           "wins": 9
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 130,
-          "cash_margin": -8947.761538461538,
+          "cash_games": 131,
+          "cash_margin": -8972.717557251908,
           "draws": 0,
-          "games": 130,
-          "losses": 119,
-          "score": 0.08461538461538462,
+          "games": 131,
+          "losses": 120,
+          "score": 0.08396946564885496,
           "seats": {
             "0": {
               "draws": 0,
@@ -2965,11 +2965,11 @@
             },
             "1": {
               "draws": 0,
-              "games": 68,
+              "games": 69,
               "wins": 3
             }
           },
-          "win_rate": 0.08461538461538462,
+          "win_rate": 0.08396946564885496,
           "wins": 11
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
@@ -2995,12 +2995,12 @@
           "wins": 54
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 125,
-          "cash_margin": -4544.208,
+          "cash_games": 126,
+          "cash_margin": -4535.039682539683,
           "draws": 0,
-          "games": 125,
-          "losses": 80,
-          "score": 0.36,
+          "games": 126,
+          "losses": 81,
+          "score": 0.35714285714285715,
           "seats": {
             "0": {
               "draws": 0,
@@ -3009,11 +3009,11 @@
             },
             "1": {
               "draws": 0,
-              "games": 58,
+              "games": 59,
               "wins": 20
             }
           },
-          "win_rate": 0.36,
+          "win_rate": 0.35714285714285715,
           "wins": 45
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
@@ -3061,16 +3061,16 @@
           "wins": 70
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 123,
-          "cash_margin": 645.2764227642276,
+          "cash_games": 124,
+          "cash_margin": 590.991935483871,
           "draws": 0,
-          "games": 123,
-          "losses": 61,
-          "score": 0.5040650406504065,
+          "games": 124,
+          "losses": 62,
+          "score": 0.5,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 55,
+              "games": 56,
               "wins": 24
             },
             "1": {
@@ -3079,16 +3079,16 @@
               "wins": 38
             }
           },
-          "win_rate": 0.5040650406504065,
+          "win_rate": 0.5,
           "wins": 62
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 143,
-          "cash_margin": -8176.475524475524,
+          "cash_games": 144,
+          "cash_margin": -8078.965277777777,
           "draws": 0,
-          "games": 143,
+          "games": 144,
           "losses": 136,
-          "score": 0.04895104895104895,
+          "score": 0.05555555555555555,
           "seats": {
             "0": {
               "draws": 0,
@@ -3097,25 +3097,25 @@
             },
             "1": {
               "draws": 0,
-              "games": 67,
-              "wins": 3
+              "games": 68,
+              "wins": 4
             }
           },
-          "win_rate": 0.04895104895104895,
-          "wins": 7
+          "win_rate": 0.05555555555555555,
+          "wins": 8
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 142,
-          "cash_margin": 112754.5,
+          "cash_games": 144,
+          "cash_margin": 112482.125,
           "draws": 0,
-          "games": 142,
+          "games": 144,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 75,
-              "wins": 75
+              "games": 77,
+              "wins": 77
             },
             "1": {
               "draws": 0,
@@ -3124,20 +3124,20 @@
             }
           },
           "win_rate": 1.0,
-          "wins": 142
+          "wins": 144
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 124,
-          "cash_margin": 5705.241935483871,
+          "cash_games": 125,
+          "cash_margin": 5904.72,
           "draws": 0,
-          "games": 124,
+          "games": 125,
           "losses": 39,
-          "score": 0.6854838709677419,
+          "score": 0.688,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
-              "wins": 42
+              "games": 64,
+              "wins": 43
             },
             "1": {
               "draws": 0,
@@ -3145,74 +3145,74 @@
               "wins": 43
             }
           },
-          "win_rate": 0.6854838709677419,
-          "wins": 85
+          "win_rate": 0.688,
+          "wins": 86
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 115,
-          "cash_margin": 1835.4695652173914,
+          "cash_games": 118,
+          "cash_margin": 1878.9406779661017,
           "draws": 0,
-          "games": 115,
-          "losses": 51,
-          "score": 0.5565217391304348,
+          "games": 118,
+          "losses": 53,
+          "score": 0.5508474576271186,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 53,
+              "games": 54,
               "wins": 28
             },
             "1": {
               "draws": 0,
-              "games": 62,
-              "wins": 36
+              "games": 64,
+              "wins": 37
             }
           },
-          "win_rate": 0.5565217391304348,
-          "wins": 64
+          "win_rate": 0.5508474576271186,
+          "wins": 65
         },
         "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 128,
-          "cash_margin": 949.015625,
+          "cash_games": 130,
+          "cash_margin": 731.2384615384616,
           "draws": 0,
-          "games": 128,
-          "losses": 69,
-          "score": 0.4609375,
+          "games": 130,
+          "losses": 71,
+          "score": 0.45384615384615384,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
+              "games": 65,
               "wins": 30
             },
             "1": {
               "draws": 0,
-              "games": 64,
+              "games": 65,
               "wins": 29
             }
           },
-          "win_rate": 0.4609375,
+          "win_rate": 0.45384615384615384,
           "wins": 59
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 134,
-          "cash_margin": 4189.037313432836,
+          "cash_games": 138,
+          "cash_margin": 4298.775362318841,
           "draws": 0,
-          "games": 134,
-          "losses": 55,
-          "score": 0.5895522388059702,
+          "games": 138,
+          "losses": 57,
+          "score": 0.5869565217391305,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 72,
-              "wins": 42
+              "games": 73,
+              "wins": 43
             },
             "1": {
               "draws": 0,
-              "games": 62,
-              "wins": 37
+              "games": 65,
+              "wins": 38
             }
           },
-          "win_rate": 0.5895522388059702,
-          "wins": 79
+          "win_rate": 0.5869565217391305,
+          "wins": 81
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
           "cash_games": 136,
@@ -3259,34 +3259,34 @@
           "wins": 31
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 130,
-          "cash_margin": 7362.592307692307,
+          "cash_games": 133,
+          "cash_margin": 7307.466165413533,
           "draws": 0,
-          "games": 130,
+          "games": 133,
           "losses": 13,
-          "score": 0.9,
+          "score": 0.9022556390977443,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 60,
-              "wins": 53
+              "games": 62,
+              "wins": 55
             },
             "1": {
               "draws": 0,
-              "games": 70,
-              "wins": 64
+              "games": 71,
+              "wins": 65
             }
           },
-          "win_rate": 0.9,
-          "wins": 117
+          "win_rate": 0.9022556390977443,
+          "wins": 120
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 114,
-          "cash_margin": 6538.175438596491,
+          "cash_games": 115,
+          "cash_margin": 6632.365217391304,
           "draws": 0,
-          "games": 114,
+          "games": 115,
           "losses": 11,
-          "score": 0.9035087719298246,
+          "score": 0.9043478260869565,
           "seats": {
             "0": {
               "draws": 0,
@@ -3295,20 +3295,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 56,
-              "wins": 49
+              "games": 57,
+              "wins": 50
             }
           },
-          "win_rate": 0.9035087719298246,
-          "wins": 103
+          "win_rate": 0.9043478260869565,
+          "wins": 104
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 107,
-          "cash_margin": 5329.92523364486,
+          "cash_games": 109,
+          "cash_margin": 5230.733944954129,
           "draws": 0,
-          "games": 107,
-          "losses": 27,
-          "score": 0.7476635514018691,
+          "games": 109,
+          "losses": 28,
+          "score": 0.7431192660550459,
           "seats": {
             "0": {
               "draws": 0,
@@ -3317,34 +3317,34 @@
             },
             "1": {
               "draws": 0,
-              "games": 58,
-              "wins": 42
+              "games": 60,
+              "wins": 43
             }
           },
-          "win_rate": 0.7476635514018691,
-          "wins": 80
+          "win_rate": 0.7431192660550459,
+          "wins": 81
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 126,
-          "cash_margin": 2997.3174603174602,
+          "cash_games": 129,
+          "cash_margin": 3134.31007751938,
           "draws": 0,
-          "games": 126,
+          "games": 129,
           "losses": 54,
-          "score": 0.5714285714285714,
+          "score": 0.5813953488372093,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 71,
-              "wins": 39
+              "games": 73,
+              "wins": 41
             },
             "1": {
               "draws": 0,
-              "games": 55,
-              "wins": 33
+              "games": 56,
+              "wins": 34
             }
           },
-          "win_rate": 0.5714285714285714,
-          "wins": 72
+          "win_rate": 0.5813953488372093,
+          "wins": 75
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
           "cash_games": 125,
@@ -3369,16 +3369,16 @@
           "wins": 71
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 143,
-          "cash_margin": 8176.475524475524,
+          "cash_games": 144,
+          "cash_margin": 8078.965277777777,
           "draws": 0,
-          "games": 143,
-          "losses": 7,
-          "score": 0.951048951048951,
+          "games": 144,
+          "losses": 8,
+          "score": 0.9444444444444444,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
+              "games": 68,
               "wins": 64
             },
             "1": {
@@ -3387,21 +3387,21 @@
               "wins": 72
             }
           },
-          "win_rate": 0.951048951048951,
+          "win_rate": 0.9444444444444444,
           "wins": 136
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 139,
-          "cash_margin": 118778.82014388489,
+          "cash_games": 140,
+          "cash_margin": 118925.85714285714,
           "draws": 0,
-          "games": 139,
+          "games": 140,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 63,
-              "wins": 63
+              "games": 64,
+              "wins": 64
             },
             "1": {
               "draws": 0,
@@ -3410,41 +3410,41 @@
             }
           },
           "win_rate": 1.0,
-          "wins": 139
+          "wins": 140
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 132,
-          "cash_margin": 8006.068181818182,
+          "cash_games": 136,
+          "cash_margin": 8389.463235294117,
           "draws": 0,
-          "games": 132,
+          "games": 136,
           "losses": 30,
-          "score": 0.7727272727272727,
+          "score": 0.7794117647058824,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
-              "wins": 49
+              "games": 68,
+              "wins": 51
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 53
+              "games": 68,
+              "wins": 55
             }
           },
-          "win_rate": 0.7727272727272727,
-          "wins": 102
+          "win_rate": 0.7794117647058824,
+          "wins": 106
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 137,
-          "cash_margin": 4011.394160583942,
+          "cash_games": 138,
+          "cash_margin": 3927.5434782608695,
           "draws": 0,
-          "games": 137,
-          "losses": 55,
-          "score": 0.5985401459854015,
+          "games": 138,
+          "losses": 56,
+          "score": 0.5942028985507246,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 67,
               "wins": 39
             },
             "1": {
@@ -3453,7 +3453,7 @@
               "wins": 43
             }
           },
-          "win_rate": 0.5985401459854015,
+          "win_rate": 0.5942028985507246,
           "wins": 82
         },
         "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
@@ -3479,33 +3479,11 @@
           "wins": 97
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 123,
-          "cash_margin": -104458.09756097561,
+          "cash_games": 125,
+          "cash_margin": -104188.944,
           "draws": 0,
-          "games": 123,
-          "losses": 123,
-          "score": 0.0,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 65,
-              "wins": 0
-            },
-            "1": {
-              "draws": 0,
-              "games": 58,
-              "wins": 0
-            }
-          },
-          "win_rate": 0.0,
-          "wins": 0
-        },
-        "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 133,
-          "cash_margin": -117835.83458646617,
-          "draws": 0,
-          "games": 133,
-          "losses": 133,
+          "games": 125,
+          "losses": 125,
           "score": 0.0,
           "seats": {
             "0": {
@@ -3515,7 +3493,29 @@
             },
             "1": {
               "draws": 0,
+              "games": 59,
+              "wins": 0
+            }
+          },
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
+          "cash_games": 135,
+          "cash_margin": -117940.98518518519,
+          "draws": 0,
+          "games": 135,
+          "losses": 135,
+          "score": 0.0,
+          "seats": {
+            "0": {
+              "draws": 0,
               "games": 67,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 68,
               "wins": 0
             }
           },
@@ -3545,11 +3545,11 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 124,
-          "cash_margin": -116075.40322580645,
+          "cash_games": 125,
+          "cash_margin": -115984.072,
           "draws": 0,
-          "games": 124,
-          "losses": 124,
+          "games": 125,
+          "losses": 125,
           "score": 0.0,
           "seats": {
             "0": {
@@ -3559,7 +3559,7 @@
             },
             "1": {
               "draws": 0,
-              "games": 57,
+              "games": 58,
               "wins": 0
             }
           },
@@ -3589,16 +3589,16 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 123,
-          "cash_margin": -109478.87804878049,
+          "cash_games": 124,
+          "cash_margin": -109368.8870967742,
           "draws": 0,
-          "games": 123,
-          "losses": 123,
+          "games": 124,
+          "losses": 124,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 60,
+              "games": 61,
               "wins": 0
             },
             "1": {
@@ -3611,11 +3611,11 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 128,
-          "cash_margin": -106821.0078125,
+          "cash_games": 129,
+          "cash_margin": -106810.72093023256,
           "draws": 0,
-          "games": 128,
-          "losses": 128,
+          "games": 129,
+          "losses": 129,
           "score": 0.0,
           "seats": {
             "0": {
@@ -3625,7 +3625,7 @@
             },
             "1": {
               "draws": 0,
-              "games": 69,
+              "games": 70,
               "wins": 0
             }
           },
@@ -3633,16 +3633,16 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 134,
-          "cash_margin": -104674.72388059701,
+          "cash_games": 136,
+          "cash_margin": -104734.97794117648,
           "draws": 0,
-          "games": 134,
-          "losses": 134,
+          "games": 136,
+          "losses": 136,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 69,
+              "games": 71,
               "wins": 0
             },
             "1": {
@@ -3655,11 +3655,11 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 142,
-          "cash_margin": -112754.5,
+          "cash_games": 144,
+          "cash_margin": -112482.125,
           "draws": 0,
-          "games": 142,
-          "losses": 142,
+          "games": 144,
+          "losses": 144,
           "score": 0.0,
           "seats": {
             "0": {
@@ -3669,7 +3669,7 @@
             },
             "1": {
               "draws": 0,
-              "games": 75,
+              "games": 77,
               "wins": 0
             }
           },
@@ -3677,11 +3677,11 @@
           "wins": 0
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 139,
-          "cash_margin": -118778.82014388489,
+          "cash_games": 140,
+          "cash_margin": -118925.85714285714,
           "draws": 0,
-          "games": 139,
-          "losses": 139,
+          "games": 140,
+          "losses": 140,
           "score": 0.0,
           "seats": {
             "0": {
@@ -3691,7 +3691,7 @@
             },
             "1": {
               "draws": 0,
-              "games": 63,
+              "games": 64,
               "wins": 0
             }
           },
@@ -3787,74 +3787,30 @@
           "wins": 68
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 121,
-          "cash_margin": -6677.429752066116,
+          "cash_games": 124,
+          "cash_margin": -6649.322580645161,
           "draws": 0,
-          "games": 121,
-          "losses": 77,
-          "score": 0.36363636363636365,
+          "games": 124,
+          "losses": 80,
+          "score": 0.3548387096774194,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 54,
+              "games": 56,
               "wins": 19
             },
             "1": {
               "draws": 0,
-              "games": 67,
+              "games": 68,
               "wins": 25
             }
           },
-          "win_rate": 0.36363636363636365,
+          "win_rate": 0.3548387096774194,
           "wins": 44
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 125,
-          "cash_margin": -5714.928,
-          "draws": 0,
-          "games": 125,
-          "losses": 83,
-          "score": 0.336,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 57,
-              "wins": 18
-            },
-            "1": {
-              "draws": 0,
-              "games": 68,
-              "wins": 24
-            }
-          },
-          "win_rate": 0.336,
-          "wins": 42
-        },
-        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 123,
-          "cash_margin": -7701.40650406504,
-          "draws": 0,
-          "games": 123,
-          "losses": 92,
-          "score": 0.25203252032520324,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 58,
-              "wins": 15
-            },
-            "1": {
-              "draws": 0,
-              "games": 65,
-              "wins": 16
-            }
-          },
-          "win_rate": 0.25203252032520324,
-          "wins": 31
-        },
-        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
           "cash_games": 126,
-          "cash_margin": -6378.896825396825,
+          "cash_margin": -5587.888888888889,
           "draws": 0,
           "games": 126,
           "losses": 83,
@@ -3862,7 +3818,51 @@
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
+              "games": 58,
+              "wins": 19
+            },
+            "1": {
+              "draws": 0,
+              "games": 68,
+              "wins": 24
+            }
+          },
+          "win_rate": 0.3412698412698413,
+          "wins": 43
+        },
+        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
+          "cash_games": 126,
+          "cash_margin": -7546.555555555556,
+          "draws": 0,
+          "games": 126,
+          "losses": 94,
+          "score": 0.25396825396825395,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 60,
+              "wins": 16
+            },
+            "1": {
+              "draws": 0,
+              "games": 66,
+              "wins": 16
+            }
+          },
+          "win_rate": 0.25396825396825395,
+          "wins": 32
+        },
+        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
+          "cash_games": 127,
+          "cash_margin": -6342.157480314961,
+          "draws": 0,
+          "games": 127,
+          "losses": 84,
+          "score": 0.33858267716535434,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 65,
               "wins": 21
             },
             "1": {
@@ -3871,82 +3871,82 @@
               "wins": 22
             }
           },
-          "win_rate": 0.3412698412698413,
+          "win_rate": 0.33858267716535434,
           "wins": 43
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 135,
-          "cash_margin": -6599.8074074074075,
+          "cash_games": 138,
+          "cash_margin": -6641.623188405797,
           "draws": 0,
-          "games": 135,
-          "losses": 102,
-          "score": 0.24444444444444444,
+          "games": 138,
+          "losses": 105,
+          "score": 0.2391304347826087,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 68,
+              "games": 69,
               "wins": 16
             },
             "1": {
               "draws": 0,
-              "games": 67,
+              "games": 69,
               "wins": 17
             }
           },
-          "win_rate": 0.24444444444444444,
+          "win_rate": 0.2391304347826087,
           "wins": 33
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 123,
-          "cash_margin": -3474.0731707317073,
+          "cash_games": 125,
+          "cash_margin": -3372.08,
           "draws": 0,
-          "games": 123,
+          "games": 125,
           "losses": 63,
-          "score": 0.4878048780487805,
+          "score": 0.496,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 62,
-              "wins": 29
+              "games": 63,
+              "wins": 30
             },
             "1": {
               "draws": 0,
-              "games": 61,
-              "wins": 31
+              "games": 62,
+              "wins": 32
             }
           },
-          "win_rate": 0.4878048780487805,
-          "wins": 60
+          "win_rate": 0.496,
+          "wins": 62
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 133,
-          "cash_margin": -5385.18045112782,
+          "cash_games": 136,
+          "cash_margin": -5406.933823529412,
           "draws": 0,
-          "games": 133,
-          "losses": 125,
-          "score": 0.06015037593984962,
+          "games": 136,
+          "losses": 128,
+          "score": 0.058823529411764705,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 62,
+              "games": 64,
               "wins": 2
             },
             "1": {
               "draws": 0,
-              "games": 71,
+              "games": 72,
               "wins": 6
             }
           },
-          "win_rate": 0.06015037593984962,
+          "win_rate": 0.058823529411764705,
           "wins": 8
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 124,
-          "cash_margin": -5705.241935483871,
+          "cash_games": 125,
+          "cash_margin": -5904.72,
           "draws": 0,
-          "games": 124,
-          "losses": 85,
-          "score": 0.31451612903225806,
+          "games": 125,
+          "losses": 86,
+          "score": 0.312,
           "seats": {
             "0": {
               "draws": 0,
@@ -3955,33 +3955,33 @@
             },
             "1": {
               "draws": 0,
-              "games": 63,
+              "games": 64,
               "wins": 21
             }
           },
-          "win_rate": 0.31451612903225806,
+          "win_rate": 0.312,
           "wins": 39
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 132,
-          "cash_margin": -8006.068181818182,
+          "cash_games": 136,
+          "cash_margin": -8389.463235294117,
           "draws": 0,
-          "games": 132,
-          "losses": 102,
-          "score": 0.22727272727272727,
+          "games": 136,
+          "losses": 106,
+          "score": 0.22058823529411764,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 66,
+              "games": 68,
               "wins": 13
             },
             "1": {
               "draws": 0,
-              "games": 66,
+              "games": 68,
               "wins": 17
             }
           },
-          "win_rate": 0.22727272727272727,
+          "win_rate": 0.22058823529411764,
           "wins": 30
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
@@ -4029,16 +4029,16 @@
           "wins": 64
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 130,
-          "cash_margin": -6726.2,
+          "cash_games": 131,
+          "cash_margin": -6679.656488549618,
           "draws": 0,
-          "games": 130,
-          "losses": 88,
-          "score": 0.3230769230769231,
+          "games": 131,
+          "losses": 89,
+          "score": 0.32061068702290074,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 67,
+              "games": 68,
               "wins": 23
             },
             "1": {
@@ -4047,7 +4047,7 @@
               "wins": 19
             }
           },
-          "win_rate": 0.3230769230769231,
+          "win_rate": 0.32061068702290074,
           "wins": 42
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
@@ -4073,12 +4073,12 @@
           "wins": 125
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 134,
-          "cash_margin": -3644.402985074627,
+          "cash_games": 135,
+          "cash_margin": -3550.5703703703703,
           "draws": 0,
-          "games": 134,
+          "games": 135,
           "losses": 74,
-          "score": 0.44776119402985076,
+          "score": 0.45185185185185184,
           "seats": {
             "0": {
               "draws": 0,
@@ -4087,20 +4087,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 64,
-              "wins": 30
+              "games": 65,
+              "wins": 31
             }
           },
-          "win_rate": 0.44776119402985076,
-          "wins": 60
+          "win_rate": 0.45185185185185184,
+          "wins": 61
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 144,
-          "cash_margin": -2091.8055555555557,
+          "cash_games": 145,
+          "cash_margin": -2004.2758620689656,
           "draws": 0,
-          "games": 144,
+          "games": 145,
           "losses": 84,
-          "score": 0.4166666666666667,
+          "score": 0.4206896551724138,
           "seats": {
             "0": {
               "draws": 0,
@@ -4109,46 +4109,46 @@
             },
             "1": {
               "draws": 0,
-              "games": 68,
-              "wins": 25
+              "games": 69,
+              "wins": 26
             }
           },
-          "win_rate": 0.4166666666666667,
-          "wins": 60
+          "win_rate": 0.4206896551724138,
+          "wins": 61
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 132,
-          "cash_margin": -2198.7272727272725,
+          "cash_games": 134,
+          "cash_margin": -2257.276119402985,
           "draws": 0,
-          "games": 132,
-          "losses": 79,
-          "score": 0.4015151515151515,
+          "games": 134,
+          "losses": 81,
+          "score": 0.39552238805970147,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 76,
+              "games": 77,
               "wins": 29
             },
             "1": {
               "draws": 0,
-              "games": 56,
+              "games": 57,
               "wins": 24
             }
           },
-          "win_rate": 0.4015151515151515,
+          "win_rate": 0.39552238805970147,
           "wins": 53
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 126,
-          "cash_margin": -735.6825396825396,
+          "cash_games": 127,
+          "cash_margin": -732.7795275590552,
           "draws": 0,
-          "games": 126,
-          "losses": 68,
-          "score": 0.4603174603174603,
+          "games": 127,
+          "losses": 69,
+          "score": 0.4566929133858268,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 60,
+              "games": 61,
               "wins": 24
             },
             "1": {
@@ -4157,20 +4157,20 @@
               "wins": 34
             }
           },
-          "win_rate": 0.4603174603174603,
+          "win_rate": 0.4566929133858268,
           "wins": 58
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 135,
-          "cash_margin": -26530.266666666666,
+          "cash_games": 137,
+          "cash_margin": -26549.649635036498,
           "draws": 0,
-          "games": 135,
-          "losses": 135,
+          "games": 137,
+          "losses": 137,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 74,
+              "games": 76,
               "wins": 0
             },
             "1": {
@@ -4183,78 +4183,78 @@
           "wins": 0
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 126,
-          "cash_margin": -99.5952380952381,
-          "draws": 121,
-          "games": 126,
+          "cash_games": 129,
+          "cash_margin": -97.27906976744185,
+          "draws": 124,
+          "games": 129,
           "losses": 4,
-          "score": 0.4880952380952381,
+          "score": 0.4883720930232558,
           "seats": {
             "0": {
-              "draws": 60,
-              "games": 61,
+              "draws": 61,
+              "games": 62,
               "wins": 0
             },
             "1": {
-              "draws": 61,
-              "games": 65,
+              "draws": 63,
+              "games": 67,
               "wins": 1
             }
           },
-          "win_rate": 0.007936507936507936,
+          "win_rate": 0.007751937984496124,
           "wins": 1
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 124,
-          "cash_margin": -1888.508064516129,
-          "draws": 28,
-          "games": 124,
-          "losses": 93,
-          "score": 0.13709677419354838,
+          "cash_games": 127,
+          "cash_margin": -1886.4488188976377,
+          "draws": 29,
+          "games": 127,
+          "losses": 95,
+          "score": 0.1377952755905512,
           "seats": {
             "0": {
               "draws": 13,
-              "games": 59,
+              "games": 60,
               "wins": 1
             },
             "1": {
-              "draws": 15,
-              "games": 65,
+              "draws": 16,
+              "games": 67,
               "wins": 2
             }
           },
-          "win_rate": 0.024193548387096774,
+          "win_rate": 0.023622047244094488,
           "wins": 3
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 115,
-          "cash_margin": -1835.4695652173914,
+          "cash_games": 118,
+          "cash_margin": -1878.9406779661017,
           "draws": 0,
-          "games": 115,
-          "losses": 64,
-          "score": 0.4434782608695652,
+          "games": 118,
+          "losses": 65,
+          "score": 0.4491525423728814,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 62,
-              "wins": 26
+              "games": 64,
+              "wins": 27
             },
             "1": {
               "draws": 0,
-              "games": 53,
-              "wins": 25
+              "games": 54,
+              "wins": 26
             }
           },
-          "win_rate": 0.4434782608695652,
-          "wins": 51
+          "win_rate": 0.4491525423728814,
+          "wins": 53
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 137,
-          "cash_margin": -4011.394160583942,
+          "cash_games": 138,
+          "cash_margin": -3927.5434782608695,
           "draws": 0,
-          "games": 137,
+          "games": 138,
           "losses": 82,
-          "score": 0.40145985401459855,
+          "score": 0.4057971014492754,
           "seats": {
             "0": {
               "draws": 0,
@@ -4263,12 +4263,12 @@
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 27
+              "games": 67,
+              "wins": 28
             }
           },
-          "win_rate": 0.40145985401459855,
-          "wins": 55
+          "win_rate": 0.4057971014492754,
+          "wins": 56
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
           "cash_games": 134,
@@ -4315,21 +4315,21 @@
           "wins": 77
         },
         "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7:ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 136,
-          "cash_margin": -26437.257352941175,
+          "cash_games": 138,
+          "cash_margin": -26407.094202898552,
           "draws": 0,
-          "games": 136,
-          "losses": 136,
+          "games": 138,
+          "losses": 138,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 78,
+              "games": 79,
               "wins": 0
             },
             "1": {
               "draws": 0,
-              "games": 58,
+              "games": 59,
               "wins": 0
             }
           },
@@ -4337,10 +4337,10 @@
           "wins": 0
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 133,
-          "cash_margin": 26357.61654135338,
+          "cash_games": 134,
+          "cash_margin": 26413.082089552237,
           "draws": 0,
-          "games": 133,
+          "games": 134,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -4351,20 +4351,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 66,
-              "wins": 66
+              "games": 67,
+              "wins": 67
             }
           },
           "win_rate": 1.0,
-          "wins": 133
+          "wins": 134
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 139,
-          "cash_margin": -4814.805755395683,
+          "cash_games": 141,
+          "cash_margin": -4937.7163120567375,
           "draws": 0,
-          "games": 139,
-          "losses": 84,
-          "score": 0.39568345323741005,
+          "games": 141,
+          "losses": 86,
+          "score": 0.3900709219858156,
           "seats": {
             "0": {
               "draws": 0,
@@ -4373,20 +4373,20 @@
             },
             "1": {
               "draws": 0,
-              "games": 76,
+              "games": 78,
               "wins": 30
             }
           },
-          "win_rate": 0.39568345323741005,
+          "win_rate": 0.3900709219858156,
           "wins": 55
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 130,
-          "cash_margin": 254.01538461538462,
+          "cash_games": 131,
+          "cash_margin": 228.96946564885496,
           "draws": 0,
-          "games": 130,
-          "losses": 56,
-          "score": 0.5692307692307692,
+          "games": 131,
+          "losses": 57,
+          "score": 0.5648854961832062,
           "seats": {
             "0": {
               "draws": 0,
@@ -4395,11 +4395,11 @@
             },
             "1": {
               "draws": 0,
-              "games": 70,
+              "games": 71,
               "wins": 41
             }
           },
-          "win_rate": 0.5692307692307692,
+          "win_rate": 0.5648854961832062,
           "wins": 74
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
@@ -4425,47 +4425,47 @@
           "wins": 61
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 142,
-          "cash_margin": -1680.1971830985915,
+          "cash_games": 144,
+          "cash_margin": -1746.1041666666667,
           "draws": 0,
-          "games": 142,
-          "losses": 70,
-          "score": 0.5070422535211268,
+          "games": 144,
+          "losses": 72,
+          "score": 0.5,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 71,
+              "games": 72,
               "wins": 37
             },
             "1": {
               "draws": 0,
-              "games": 71,
+              "games": 72,
               "wins": 35
             }
           },
-          "win_rate": 0.5070422535211268,
+          "win_rate": 0.5,
           "wins": 72
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 126,
-          "cash_margin": -360.92063492063494,
+          "cash_games": 129,
+          "cash_margin": -358.3410852713178,
           "draws": 0,
-          "games": 126,
-          "losses": 108,
-          "score": 0.14285714285714285,
+          "games": 129,
+          "losses": 111,
+          "score": 0.13953488372093023,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 62,
+              "games": 64,
               "wins": 9
             },
             "1": {
               "draws": 0,
-              "games": 64,
+              "games": 65,
               "wins": 9
             }
           },
-          "win_rate": 0.14285714285714285,
+          "win_rate": 0.13953488372093023,
           "wins": 18
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
@@ -4491,10 +4491,10 @@
           "wins": 123
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 117,
-          "cash_margin": 25317.358974358973,
+          "cash_games": 118,
+          "cash_margin": 25443.669491525423,
           "draws": 0,
-          "games": 117,
+          "games": 118,
           "losses": 0,
           "score": 1.0,
           "seats": {
@@ -4505,34 +4505,34 @@
             },
             "1": {
               "draws": 0,
-              "games": 61,
-              "wins": 61
+              "games": 62,
+              "wins": 62
             }
           },
           "win_rate": 1.0,
-          "wins": 117
+          "wins": 118
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 128,
-          "cash_margin": -949.015625,
+          "cash_games": 130,
+          "cash_margin": -731.2384615384616,
           "draws": 0,
-          "games": 128,
+          "games": 130,
           "losses": 59,
-          "score": 0.5390625,
+          "score": 0.5461538461538461,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 64,
-              "wins": 35
+              "games": 65,
+              "wins": 36
             },
             "1": {
               "draws": 0,
-              "games": 64,
-              "wins": 34
+              "games": 65,
+              "wins": 35
             }
           },
-          "win_rate": 0.5390625,
-          "wins": 69
+          "win_rate": 0.5461538461538461,
+          "wins": 71
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
           "cash_games": 134,
@@ -4579,12 +4579,12 @@
           "wins": 140
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 130,
-          "cash_margin": 6726.2,
+          "cash_games": 131,
+          "cash_margin": 6679.656488549618,
           "draws": 0,
-          "games": 130,
+          "games": 131,
           "losses": 42,
-          "score": 0.676923076923077,
+          "score": 0.6793893129770993,
           "seats": {
             "0": {
               "draws": 0,
@@ -4593,291 +4593,291 @@
             },
             "1": {
               "draws": 0,
-              "games": 67,
-              "wins": 44
+              "games": 68,
+              "wins": 45
             }
           },
-          "win_rate": 0.676923076923077,
-          "wins": 88
+          "win_rate": 0.6793893129770993,
+          "wins": 89
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11:b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 136,
-          "cash_margin": 26437.257352941175,
+          "cash_games": 138,
+          "cash_margin": 26407.094202898552,
           "draws": 0,
-          "games": 136,
+          "games": 138,
           "losses": 0,
           "score": 1.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 58,
-              "wins": 58
+              "games": 59,
+              "wins": 59
             },
             "1": {
               "draws": 0,
-              "games": 78,
-              "wins": 78
+              "games": 79,
+              "wins": 79
             }
           },
           "win_rate": 1.0,
-          "wins": 136
+          "wins": 138
         }
       },
       "planned": 23296,
       "ratings": {
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": 0.0,
-        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": 1.6797861043299829,
-        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": 1.7435406534211957,
-        "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": 0.7423653602125778,
-        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": 0.8280956004222041,
-        "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": 1.7925478547531264,
-        "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": 0.509707044971566,
-        "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": 1.2506850163870236,
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": 0.6314329556725313,
-        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": 1.6650045877309863,
-        "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": -7.612312815406704,
-        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": 0.30976759372460044,
-        "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": 0.5662864419052694,
-        "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": 1.5518790133840121
+        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": 1.684084573794745,
+        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": 1.7431505650246044,
+        "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": 0.7334781080876824,
+        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": 0.8293086833176937,
+        "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": 1.796930784237855,
+        "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": 0.5074717607198245,
+        "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": 1.2547453460039741,
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": 0.6240876949943372,
+        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": 1.6631915632608298,
+        "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": -7.63075238627465,
+        "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": 0.30098653190751723,
+        "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": 0.5636500116288328,
+        "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": 1.5444989638341553
       },
       "run": "daily-2026-09-14",
       "stats": {
         "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f": {
-          "cash_games": 1743,
-          "cash_margin": 1993.0527825588067,
+          "cash_games": 1760,
+          "cash_margin": 1985.6630681818183,
           "draws": 0,
-          "games": 1743,
-          "losses": 1192,
-          "score": 0.31612162937464144,
+          "games": 1760,
+          "losses": 1203,
+          "score": 0.3164772727272727,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 855,
-              "wins": 273
+              "games": 865,
+              "wins": 277
             },
             "1": {
               "draws": 0,
-              "games": 888,
-              "wins": 278
+              "games": 895,
+              "wins": 280
             }
           },
-          "win_rate": 0.31612162937464144,
-          "wins": 551
+          "win_rate": 0.3164772727272727,
+          "wins": 557
         },
         "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": {
-          "cash_games": 1695,
-          "cash_margin": 13396.356342182891,
+          "cash_games": 1713,
+          "cash_margin": 13444.033274956217,
           "draws": 0,
-          "games": 1695,
-          "losses": 542,
-          "score": 0.68023598820059,
+          "games": 1713,
+          "losses": 545,
+          "score": 0.6818447168709866,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 869,
-              "wins": 584
+              "games": 878,
+              "wins": 592
             },
             "1": {
               "draws": 0,
-              "games": 826,
-              "wins": 569
+              "games": 835,
+              "wins": 576
             }
           },
-          "win_rate": 0.68023598820059,
-          "wins": 1153
+          "win_rate": 0.6818447168709866,
+          "wins": 1168
         },
         "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": {
-          "cash_games": 1703,
-          "cash_margin": 13475.314738696417,
+          "cash_games": 1722,
+          "cash_margin": 13372.332171893147,
           "draws": 0,
-          "games": 1703,
-          "losses": 514,
-          "score": 0.6981796829125073,
+          "games": 1722,
+          "losses": 520,
+          "score": 0.6980255516840883,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 849,
-              "wins": 594
+              "games": 861,
+              "wins": 602
             },
             "1": {
               "draws": 0,
-              "games": 854,
-              "wins": 595
+              "games": 861,
+              "wins": 600
             }
           },
-          "win_rate": 0.6981796829125073,
-          "wins": 1189
+          "win_rate": 0.6980255516840883,
+          "wins": 1202
         },
         "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa": {
-          "cash_games": 1681,
-          "cash_margin": 7808.9946460440215,
+          "cash_games": 1701,
+          "cash_margin": 7742.242798353909,
           "draws": 2,
-          "games": 1681,
-          "losses": 882,
-          "score": 0.47471743010113027,
-          "seats": {
-            "0": {
-              "draws": 1,
-              "games": 831,
-              "wins": 385
-            },
-            "1": {
-              "draws": 1,
-              "games": 850,
-              "wins": 412
-            }
-          },
-          "win_rate": 0.4741225461035098,
-          "wins": 797
-        },
-        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
-          "cash_games": 1709,
-          "cash_margin": 9899.07606787595,
-          "draws": 0,
-          "games": 1709,
-          "losses": 858,
-          "score": 0.49795201872440026,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 869,
-              "wins": 439
-            },
-            "1": {
-              "draws": 0,
-              "games": 840,
-              "wins": 412
-            }
-          },
-          "win_rate": 0.49795201872440026,
-          "wins": 851
-        },
-        "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
-          "cash_games": 1725,
-          "cash_margin": 15526.630724637682,
-          "draws": 0,
-          "games": 1725,
-          "losses": 504,
-          "score": 0.7078260869565217,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 867,
-              "wins": 616
-            },
-            "1": {
-              "draws": 0,
-              "games": 858,
-              "wins": 605
-            }
-          },
-          "win_rate": 0.7078260869565217,
-          "wins": 1221
-        },
-        "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
-          "cash_games": 1658,
-          "cash_margin": 3243.068757539204,
-          "draws": 153,
-          "games": 1658,
-          "losses": 872,
-          "score": 0.4279252110977081,
-          "seats": {
-            "0": {
-              "draws": 78,
-              "games": 832,
-              "wins": 317
-            },
-            "1": {
-              "draws": 75,
-              "games": 826,
-              "wins": 316
-            }
-          },
-          "win_rate": 0.38178528347406515,
-          "wins": 633
-        },
-        "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
-          "cash_games": 1713,
-          "cash_margin": 4735.004086398132,
-          "draws": 60,
-          "games": 1713,
-          "losses": 666,
-          "score": 0.5936952714535902,
-          "seats": {
-            "0": {
-              "draws": 30,
-              "games": 862,
-              "wins": 493
-            },
-            "1": {
-              "draws": 30,
-              "games": 851,
-              "wins": 494
-            }
-          },
-          "win_rate": 0.5761821366024519,
-          "wins": 987
-        },
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 1684,
-          "cash_margin": 8253.590261282661,
-          "draws": 2,
-          "games": 1684,
-          "losses": 923,
-          "score": 0.4513064133016627,
+          "games": 1701,
+          "losses": 896,
+          "score": 0.47266313932980597,
           "seats": {
             "0": {
               "draws": 1,
               "games": 843,
-              "wins": 382
+              "wins": 388
             },
             "1": {
               "draws": 1,
-              "games": 841,
-              "wins": 377
+              "games": 858,
+              "wins": 415
             }
           },
-          "win_rate": 0.4507125890736342,
-          "wins": 759
+          "win_rate": 0.4720752498530276,
+          "wins": 803
         },
-        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
-          "cash_games": 1686,
-          "cash_margin": 13554.875444839858,
+        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": {
+          "cash_games": 1727,
+          "cash_margin": 9787.656050955415,
           "draws": 0,
-          "games": 1686,
-          "losses": 531,
-          "score": 0.6850533807829181,
+          "games": 1727,
+          "losses": 867,
+          "score": 0.49797336421540245,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 828,
-              "wins": 558
+              "games": 873,
+              "wins": 441
             },
             "1": {
               "draws": 0,
-              "games": 858,
-              "wins": 597
+              "games": 854,
+              "wins": 419
             }
           },
-          "win_rate": 0.6850533807829181,
-          "wins": 1155
+          "win_rate": 0.49797336421540245,
+          "wins": 860
+        },
+        "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110": {
+          "cash_games": 1750,
+          "cash_margin": 15462.658285714286,
+          "draws": 0,
+          "games": 1750,
+          "losses": 510,
+          "score": 0.7085714285714285,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 879,
+              "wins": 623
+            },
+            "1": {
+              "draws": 0,
+              "games": 871,
+              "wins": 617
+            }
+          },
+          "win_rate": 0.7085714285714285,
+          "wins": 1240
+        },
+        "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221": {
+          "cash_games": 1674,
+          "cash_margin": 3230.314814814815,
+          "draws": 156,
+          "games": 1674,
+          "losses": 880,
+          "score": 0.42771804062126645,
+          "seats": {
+            "0": {
+              "draws": 80,
+              "games": 841,
+              "wins": 322
+            },
+            "1": {
+              "draws": 76,
+              "games": 833,
+              "wins": 316
+            }
+          },
+          "win_rate": 0.3811230585424134,
+          "wins": 638
+        },
+        "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d": {
+          "cash_games": 1732,
+          "cash_margin": 4798.523672055428,
+          "draws": 61,
+          "games": 1732,
+          "losses": 670,
+          "score": 0.5955542725173211,
+          "seats": {
+            "0": {
+              "draws": 31,
+              "games": 872,
+              "wins": 499
+            },
+            "1": {
+              "draws": 30,
+              "games": 860,
+              "wins": 502
+            }
+          },
+          "win_rate": 0.5779445727482679,
+          "wins": 1001
+        },
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 1700,
+          "cash_margin": 8282.835294117647,
+          "draws": 2,
+          "games": 1700,
+          "losses": 933,
+          "score": 0.4505882352941176,
+          "seats": {
+            "0": {
+              "draws": 1,
+              "games": 851,
+              "wins": 385
+            },
+            "1": {
+              "draws": 1,
+              "games": 849,
+              "wins": 380
+            }
+          },
+          "win_rate": 0.45,
+          "wins": 765
+        },
+        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": {
+          "cash_games": 1706,
+          "cash_margin": 13572.194021101994,
+          "draws": 0,
+          "games": 1706,
+          "losses": 536,
+          "score": 0.6858147713950762,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 838,
+              "wins": 566
+            },
+            "1": {
+              "draws": 0,
+              "games": 868,
+              "wins": 604
+            }
+          },
+          "win_rate": 0.6858147713950762,
+          "wins": 1170
         },
         "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b": {
-          "cash_games": 1745,
-          "cash_margin": -110684.58739255014,
+          "cash_games": 1757,
+          "cash_margin": -110653.91690381331,
           "draws": 0,
-          "games": 1745,
-          "losses": 1745,
+          "games": 1757,
+          "losses": 1757,
           "score": 0.0,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 876,
+              "games": 881,
               "wins": 0
             },
             "1": {
               "draws": 0,
-              "games": 869,
+              "games": 876,
               "wins": 0
             }
           },
@@ -4885,73 +4885,73 @@
           "wins": 0
         },
         "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6": {
-          "cash_games": 1668,
-          "cash_margin": 2451.5923261390885,
+          "cash_games": 1690,
+          "cash_margin": 2321.524852071006,
           "draws": 0,
-          "games": 1668,
-          "losses": 1027,
-          "score": 0.3842925659472422,
+          "games": 1690,
+          "losses": 1045,
+          "score": 0.3816568047337278,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 818,
-              "wins": 309
+              "games": 831,
+              "wins": 312
             },
             "1": {
               "draws": 0,
-              "games": 850,
-              "wins": 332
-            }
-          },
-          "win_rate": 0.3842925659472422,
-          "wins": 641
-        },
-        "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
-          "cash_games": 1724,
-          "cash_margin": 3138.691415313225,
-          "draws": 149,
-          "games": 1724,
-          "losses": 898,
-          "score": 0.4359048723897912,
-          "seats": {
-            "0": {
-              "draws": 73,
-              "games": 898,
-              "wins": 344
-            },
-            "1": {
-              "draws": 76,
-              "games": 826,
+              "games": 859,
               "wins": 333
             }
           },
-          "win_rate": 0.39269141531322505,
-          "wins": 677
+          "win_rate": 0.3816568047337278,
+          "wins": 645
+        },
+        "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7": {
+          "cash_games": 1743,
+          "cash_margin": 3043.722891566265,
+          "draws": 153,
+          "games": 1743,
+          "losses": 908,
+          "score": 0.43516924842226046,
+          "seats": {
+            "0": {
+              "draws": 74,
+              "games": 907,
+              "wins": 345
+            },
+            "1": {
+              "draws": 79,
+              "games": 836,
+              "wins": 337
+            }
+          },
+          "win_rate": 0.3912794033275961,
+          "wins": 682
         },
         "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11": {
-          "cash_games": 1706,
-          "cash_margin": 16088.249706916764,
+          "cash_games": 1721,
+          "cash_margin": 16009.722254503196,
           "draws": 0,
-          "games": 1706,
-          "losses": 583,
-          "score": 0.6582649472450176,
+          "games": 1721,
+          "losses": 591,
+          "score": 0.6565950029052876,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 823,
-              "wins": 541
+              "games": 828,
+              "wins": 543
             },
             "1": {
               "draws": 0,
-              "games": 883,
-              "wins": 582
+              "games": 893,
+              "wins": 587
             }
           },
-          "win_rate": 0.6582649472450176,
-          "wins": 1123
+          "win_rate": 0.6565950029052876,
+          "wins": 1130
         }
       },
-      "updated": "2026-09-14T12:24:45.688794+00:00"
+      "updated": "2026-09-14T12:28:58.933878+00:00"
     },
     {
       "complete": true,
@@ -14857,5 +14857,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-14T12:24:45.803958+00:00"
+  "updated": "2026-09-14T12:28:59.043865+00:00"
 }
