@@ -123,13 +123,14 @@ def set_roster(root, entries):
         a = read(root / "agents" / (ident(e["agent"]) + ".json"))
         if not a or not a["build_verified"]:
             raise ValueError("Roster agent has not passed sandbox build/protocol checks")
-    unique, seen, aliases = [], {}, {}
+    unique, seen, aliases, duplicates = [], {}, {}, {}
     for e in entries:
         a = read(root/'agents'/(e['agent']+'.json'))
         if e['category'] == 'public':
             fingerprint = executable_identity(root, a)
             if fingerprint in seen:
                 aliases.setdefault(seen[fingerprint], []).append(a['manifest'].get('origin', {}).get('notebook', a['manifest']['name']))
+                duplicates[e['agent']] = seen[fingerprint]
                 continue
             seen[fingerprint] = e['agent']
         unique.append(e)
@@ -140,6 +141,14 @@ def set_roster(root, entries):
         path = root/'agents'/(aid+'.json')
         a = read(path)
         a['public_aliases'] = sorted(set(a.get('public_aliases', []) + refs))
+        write(path, a)
+
+    for aid, canonical in duplicates.items():
+        path = root/'agents'/(aid+'.json')
+        a = read(path)
+        a['duplicate_of'] = canonical
+        if a['status'] != 'archived':
+            a['status'] = 'duplicate'
         write(path, a)
     old = read(root / "roster.json", [])
     write(root / "snapshots" / (digest([now(), old, entries]) + ".json"), {"created": now(), "before": old, "after": entries})

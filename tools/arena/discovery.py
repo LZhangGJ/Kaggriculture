@@ -122,7 +122,7 @@ def advance(root):
     candidates=[a for a in records(root,'agents') if a['id'] not in ids|attempted and a.get('build_verified')
                 and a['manifest'].get('origin',{}).get('kind')=='public']
     # Earlier retired versions must not re-enter the challenge queue.
-    candidates=[a for a in candidates if a['status']!='archived']
+    candidates=[a for a in candidates if a['status'] not in ('archived','duplicate')]
     if not candidates:return
     catalog=read(root/'private/discovery.json',{}).get('catalog',{})
     candidate=min(candidates,key=lambda a:(catalog.get(a['manifest']['origin']['notebook'],{}).get('score_rank',10**9),a['created']))['id']
