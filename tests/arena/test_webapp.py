@@ -107,6 +107,13 @@ class WebSecurityTest(unittest.TestCase):
         self.members(ids=[7,8]);self.login(8)
         self.assertEqual(self.get('/api/uploads').json['uploads'],[])
 
+    def test_upload_larger_than_form_parser_buffer(self):
+        import io
+        self.login()
+        r=self.client.post('/api/uploads',base_url=self.cfg['origin'],headers={'Origin':self.cfg['origin']},
+            data={'name':'Large file','file':(io.BytesIO(b'#'+b'x'*200000),'agent.py')})
+        self.assertEqual(r.status_code,202)
+
     def test_package_traversal_and_execution(self):
         import zipfile
         from tools.arena.web_uploads import package
@@ -121,3 +128,19 @@ class WebSecurityTest(unittest.TestCase):
         with zipfile.ZipFile(p,'w') as z:z.writestr('../escape.py','bad')
         m.update(sha256=file_hash(p),format='zip')
         with self.assertRaises(ValueError):package(p,m,dest)
+
+    def test_upload_enters_intake_once_and_bad_tar_is_rejected(self):
+        from tools.arena import store
+        from tools.arena.web_uploads import import_pending,statuses
+        arena=self.root/'arena';store.init(arena)
+        inbox=arena/'private/web-uploads';inbox.mkdir()
+        rid='a'*32;source=inbox/(rid+'.bin');source.write_text('def agent(obs): return {}')
+        meta=dict(id=rid,user_id=7,name='Valid upload',version='1',format='py',interface='kaggle',sha256=store.file_hash(source))
+        store.write(inbox/(rid+'.json'),meta)
+        import_pending(arena);import_pending(arena)
+        self.assertEqual(len(list((arena/'agents').glob('*.json'))),1)
+        self.assertEqual(statuses(arena)[0]['status'],'registered')
+        rid='b'*32;source=inbox/(rid+'.bin');source.write_bytes(b'invalid tar data')
+        meta.update(id=rid,format='tar.gz',sha256=store.file_hash(source));store.write(inbox/(rid+'.json'),meta)
+        import_pending(arena)
+        self.assertEqual(statuses(arena)[1]['status'],'rejected')

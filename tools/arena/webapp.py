@@ -25,7 +25,7 @@ def create_app(config):
     root = Path(config['data_dir'])
     assets = Path(__file__).with_name('web_assets')
     app = Flask(__name__, static_folder=None)
-    app.config.update(MAX_CONTENT_LENGTH=65*1024*1024, MAX_FORM_MEMORY_SIZE=32768, MAX_FORM_PARTS=8,
+    app.config.update(MAX_CONTENT_LENGTH=65*1024*1024, MAX_FORM_MEMORY_SIZE=512*1024, MAX_FORM_PARTS=8,
                       TRUSTED_HOSTS=[parsed.netloc])
     sessions, states, starts = {}, {}, []
     lock = threading.Lock()
