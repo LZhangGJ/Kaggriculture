@@ -8,6 +8,8 @@ from .publish import publish
 def main(root):
     root=Path(root)
     with store.locked(root):
+        from .continuous import sync
+        sync(root)
         print(controller.tick(root),flush=True)
         publish(root)
 

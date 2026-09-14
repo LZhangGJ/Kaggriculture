@@ -61,11 +61,13 @@ def run_one(root, manifest, game, cfg):
         write(attempts / (attempt + ".json"), record)
 
 
-def work(root, cfg):
+def work(root, cfg, remote_only=False):
     root = Path(root)
     pending, placement_by_author = [], {}
     for path in sorted((root / "runs").glob("*/manifest.json")):
         m = read(path)
+        if (m['kind']=='continuous') != remote_only:
+            continue
         jobs = [(m, g) for g in m["games"] if not read(path.parent / "games" / (g["id"] + ".json"), {}).get("resolved")
                 and len(list((path.parent / "attempts" / g["id"]).glob("*.json"))) < 3]
         if m["kind"] == "placement":

@@ -42,7 +42,8 @@ def pct(value):
 def build(root, bootstrap=500):
     root = Path(root)
     agents = {a["id"]: a for a in records(root, "agents")}
-    runs = [run_report(root, read(p), bootstrap) for p in sorted((root / "runs").glob("*/manifest.json"))]
+    runs = [run_report(root, m, bootstrap) for p in sorted((root / "runs").glob("*/manifest.json"))
+            if (m:=read(p))['kind']!='continuous']
     public_ids = {e["agent"] for e in read(root / "roster.json", []) if e["category"] == "public"}
     refreshes = [read(p) for p in sorted((root / "private/public-refresh").glob("*.json"))]
     today = datetime.now(ZoneInfo(read(root / "config.json")["timezone"])).date().isoformat()
@@ -64,6 +65,8 @@ def build(root, bootstrap=500):
     discovery = read(root/'private/discovery.json',{})
     public_decisions = [read(p) for p in sorted((root/'runs').glob('public-*/public-decision.json'))]
     data = {"schema": 1, "updated": now(), "agents": public_agents, "runs": runs,
+            "continuous_elo":read(root/'continuous-elo.json',{'ratings':[]}),
+            "continuous_status":read(root/'continuous-status.json',{'status':'not started'}),
             "champion": champion.get("agent"), "champion_evidence": champion.get("evidence"),
             "roster": [{"agent": r["agent"], "category": r["category"]} for r in read(root / "roster.json", [])],
             "public_refresh": [{k:r.get(k) for k in ("id","notebook","date","status","version","attempted","successful")} for r in refreshes],
@@ -82,6 +85,14 @@ def build(root, bootstrap=500):
     sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview · Updated " + escape(data["updated"]) + "</p>",
                 "<h2>Verified champion</h2><p>" + (name(data["champion"]) if data["champion"] else "Not nominated") + "</p>",
                 '<p>Daily, placement and fixed-benchmark results are separate. Ratings from different rosters are not directly comparable.</p>']
+    active={e['agent'] for e in data['roster']}
+    elo_rows=[r for r in data['continuous_elo']['ratings'] if r['agent'] in active]
+    sections += ['<h2>Continuous Elo</h2><p>Mini PC round robin. Daily tournament results do not enter Elo. New versions start at 1500. K=32 per completed seat-swapped pair; draws count half.</p>',
+                 '<p>Status: '+escape(data['continuous_status']['status'])+'</p>',
+                 '<table><tr><th>Agent</th><th>Elo</th><th>Games</th><th>Score</th><th>Contract</th></tr>']
+    for r in elo_rows:
+        sections.append(f"<tr><td>{name(r['agent'])}</td><td>{r['elo']:.1f}</td><td>{r['games']}</td><td>{pct(r['score'])}</td><td>{r['contract'][:10]}</td></tr>")
+    sections.append('</table>')
     sections += ["<h2>Public notebook refresh</h2><p>Checked daily before the next roster freeze. Failed refreshes retain the last validated version.</p>"]
     sections.append(f"<p>Discovery last checked: {escape(str(discovery.get('checked','not yet')))}. Found {discovery.get('found',0)} notebooks. Newcomers need a completed paired comparison before replacing a public agent.</p>")
     if not refreshes:
@@ -148,6 +159,13 @@ def build(root, bootstrap=500):
           "## Roster", "", "| Agent | Type | Version | Status |", "|---|---|---|---|"]
     for a in public_agents:
         md.append(f"| {label(a['id'])} | {'**PUBLIC**' if a['agent_type']=='public' else 'Team'} | {a['version']} | {a['status']} |")
+    md += ['', '## Continuous Elo', '',
+           'Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.', '',
+           'Status: '+data['continuous_status']['status']+' · Last sync: '+data['continuous_status'].get('at','Never'), '',
+           '| Agent | Elo | Games | Score | Contract |','|---|---:|---:|---:|---|']
+    for r in elo_rows:
+        badge=' **PUBLIC**' if metadata[r['agent']]['agent_type']=='public' else ''
+        md.append(f"| {label(r['agent'])}{badge} | {r['elo']:.1f} | {r['games']} | {pct(r['score'])} | {r['contract'][:10]} |")
     md += ["", "## Public refresh", "", "| Notebook | Status | Last successful check |", "|---|---|---|"]
     for r in refreshes:
         md.append(f"| {r['notebook']} | {r['status']} | {r.get('successful','Never')} |")

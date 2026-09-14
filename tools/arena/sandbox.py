@@ -7,14 +7,24 @@ import uuid
 import threading
 from pathlib import Path
 
-from .store import file_hash, now, read, write
+from .store import digest, file_hash, now, read, write
+
+
+def image_fingerprint(info):
+    return digest({'layers':info['RootFS']['Layers'],'architecture':info['Architecture'],'os':info['Os'],
+        'config':{k:info['Config'].get(k) for k in ('Env','Entrypoint','Cmd','User','WorkingDir','Volumes','StopSignal','Shell')}})
 
 
 def preflight(cfg):
     image = cfg.get("image") or ""
     if "@sha256:" not in image and not image.startswith("sha256:"):
         raise RuntimeError("Configure an immutable Docker image digest first")
-    subprocess.run(["docker", "image", "inspect", image], check=True, capture_output=True, timeout=15)
+    runtime=cfg.get('image_runtime',image)
+    if not runtime.startswith('sha256:') and '@sha256:' not in runtime:
+        raise RuntimeError('Runtime image must be immutable')
+    result=subprocess.run(["docker", "image", "inspect", runtime], check=True, capture_output=True, timeout=15)
+    if runtime!=image and image_fingerprint(json.loads(result.stdout)[0])!=cfg.get('image_fingerprint'):
+        raise RuntimeError('Transported image content differs from the validated image')
 
 
 def docker_args(cfg, name, mounts, command, scratch_mb=512):
@@ -27,7 +37,7 @@ def docker_args(cfg, name, mounts, command, scratch_mb=512):
             "--log-driver=none"]
     for source, target in mounts:
         args += ["--mount", f"type=bind,source={Path(source).resolve()},target={target},readonly"]
-    return [*args, cfg["image"], *command]
+    return [*args, cfg.get('image_runtime',cfg["image"]), *command]
 
 
 def cleanup(name):

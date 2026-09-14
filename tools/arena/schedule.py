@@ -46,10 +46,10 @@ def plan(root, run_id, kind="daily", count=None, candidate=None, references=None
         return existing
     cfg = read(root / "config.json")
     roster = read(root / "roster.json", [])
-    if kind == "daily":
+    if kind in ("daily", "continuous"):
         for p in (root / "runs").glob("*/manifest.json"):
             old = read(p)
-            if old["kind"] == "daily" and not complete(root, old):
+            if kind == "daily" and old["kind"] == "daily" and not complete(root, old):
                 raise ValueError("Previous daily tournament incomplete; resume it")
         ids = [e["agent"] for e in roster]
         pairs = list(itertools.combinations(sorted(ids), 2))

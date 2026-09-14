@@ -75,7 +75,15 @@ Use up to eight GPT-6 Pro chats: four independent agents, two phase/component ta
 
 `events` returns compact pending decisions; `ack EVENT_HASH` marks handling. No model runs inside tick. A Codex task reads events when resuming. Automatic model waking requires a supported host integration; this repository does not invent a model API or control ChatGPT tabs from background shell scripts.
 
-## Daily arena
+## Continuous round robin
+
+The mini PC runs a separate endless queue. WRX90 reserves all seeds, freezes the current roster into each round, sends two rounds ahead, and collects results at each controller batch. Each round uses four new seeds per pairing in both seats. Roster changes affect newly queued rounds. Daily tournament and placement jobs continue on WRX90.
+
+The results page has a separate Elo table. Each exact agent version starts at 1500. A completed seat-swapped pair applies one K=32 update using its average score, with draws worth half. A database makes repeated result transfers idempotent. Ratings from different execution contracts stay separate; daily games do not enter this table. Treat ratings with few games as provisional.
+
+The mini PC needs Docker, the same pinned image and referee, and the trusted `tools/arena` runtime. It does not need GitHub or Kaggle credentials. Put connection settings only in `.arena/private/continuous-host.json` and the host's SSH configuration. Never commit these files, keys, access URLs, private seeds, or agent bundles. The mini PC runs `python -m tools.arena.continuous execute .arena`; WRX90 performs synchronization and remains the sole publisher.
+
+## Daily discovery and tournament
 
 The shared host discovers public notebooks daily in Kaggle public-score order, highest first, and selects only notebooks updated in the preceding 24 hours. The API update timestamp is `lastRunTime` in UTC. It checks up to 1,000 entries and marks scans that hit this limit. It downloads up to four untracked outputs in that order per day, without running notebooks on the host. Accepted sources also receive daily version checks.
 
