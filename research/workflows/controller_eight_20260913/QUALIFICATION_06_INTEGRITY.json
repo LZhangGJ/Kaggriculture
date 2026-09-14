@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "planned_cells": 256,
+  "exact_cells_and_unique_rows": true,
+  "all_replays_hash_and_terminal_cash_agree": true,
+  "all719_transitions_and_both_DONE": true,
+  "source_integrity": {
+    "C01": true,
+    "C02": true,
+    "C03": true,
+    "C04": true,
+    "C05": true,
+    "C06": true,
+    "C07": true,
+    "C08": true,
+    "referee": true,
+    "harness": true,
+    "freeze": true,
+    "seeds": true
+  },
+  "seed_draw_after_freeze": true,
+  "seeds_disjoint_from_exclusions_and_prior_claims": true,
+  "exclusion_count": 1240,
+  "manifest_sha256": "b7652a4f8110ee65ba06ecfbbe33f487bab0851fcfca24e197e181c6b3daf7dd",
+  "rows_sha256": "8299715805ad36a5f0f5edaf76b939e11a9f1c4a973808e8a966db2c8fac7598",
+  "summary_sha256": "d53fdac88692c5f8b91ed7514f708c99ef9180d582335b1c99119358af143bd1",
+  "official_interpreter_rerun": false,
+  "historical_gaps": {
+    "C01": {
+      "status": "round04_verified_with_prior_historical_seed_gaps",
+      "claimed_results_verified": true,
+      "missing": [],
+      "prior_history_limit": "Earlier unrecoverable seeds remain unknown; round04 supplied evidence is complete."
+    },
+    "C02": {
+      "status": "ROUND05_COMPLETE_VERIFIED_UNCHANGED_POLICY",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Unknown lost campaign histories remain unknown."
+    },
+    "C03": {
+      "status": "ROUND03_COMPLETE_VERIFIED_ORIGINAL_RETAINED",
+      "claimed_results_verified": true,
+      "round03_claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Failed Round02 source and results remain preserved. Unknown lost historical seed usage remains unknown."
+    },
+    "C04": {
+      "status": "ROUND06_COMPLETE_AND_PARTIAL_EVIDENCE_VERIFIED",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Prior Round02 source and complete records remain unavailable; lost seed history remains unknown."
+    },
+    "C05": {
+      "status": "ROUND05_COMPLETE_VERIFIED",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Unknown lost campaign seed histories remain unknown."
+    },
+    "C06": {
+      "status": "round06_verified_round02_missing_history",
+      "claimed_results_verified": false,
+      "round05_claimed_results_verified": true,
+      "missing": [
+        "Round02 original 502 claimed games, full replays and possibly unknown seed history remain missing."
+      ],
+      "round06_claimed_results_verified": true
+    },
+    "C07": {
+      "status": "ROUND04_COMPLETE_VERIFIED_WITH_PRIOR_HISTORY_GAP",
+      "claimed_results_verified": true,
+      "missing": [],
+      "historical_missing": [
+        "Original Round02 archive with SHA256 167d8425023d9b1fcd6c9e66cf185fb1585adbc20123cab58087e97f3a878b87 remains unavailable.",
+        "Surviving Round02 archive SHA256 9d4f6aafb9f40ddf05916f275284ca6250d87b018994ba5e9052ab47c41f3310 differs from that original report; Round04 does not recover it."
+      ]
+    },
+    "C08": {
+      "status": "ROUND02_COMPLETE_VERIFIED",
+      "claimed_results_verified": true,
+      "round02_claimed_results_verified": true,
+      "missing": [],
+      "historical_limit": "Unknown prior campaign seed histories remain unknown. Early checkpoint was not retrieved live by controller."
+    }
+  }
+}
