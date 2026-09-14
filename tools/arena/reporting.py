@@ -42,6 +42,20 @@ def pct(value):
     return "—" if value is None else f"{value*100:.1f}%"
 
 
+def readable_time(value):
+    """Render report timestamps without fractional seconds or numeric offsets."""
+    if not value:
+        return "Not yet"
+    try:
+        moment = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return value
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    moment = moment.astimezone(timezone.utc)
+    return f"{moment:%b} {moment.day}, {moment.year} at {moment.hour % 12 or 12}:{moment:%M} {moment:%p} UTC"
+
+
 def build(root, bootstrap=500):
     root = Path(root)
     agents = {a["id"]: a for a in records(root, "agents")}
@@ -85,25 +99,25 @@ def build(root, bootstrap=500):
                 notebook = escape(meta["notebook"], quote=True)
                 label += f' <small><a href="https://www.kaggle.com/code/{notebook}">{notebook}</a> · v{escape(meta["notebook_version"])}</small>'
         return label
-    sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview · Updated " + escape(data["updated"]) + "</p>",
+    sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview · Updated " + escape(readable_time(data["updated"])) + "</p>",
                 "<h2>Verified champion</h2><p>" + (name(data["champion"]) if data["champion"] else "Not nominated") + "</p>",
                 '<p>Daily, placement and fixed-benchmark results are separate. Ratings from different rosters are not directly comparable.</p>']
     active={e['agent'] for e in data['roster']}
     elo_rows=[r for r in data['continuous_elo']['ratings'] if r['agent'] in active]
     sections += ['<h2>Continuous Elo</h2><p>Mini PC round robin. Daily tournament results do not enter Elo. New versions start at 1500. K=32 per completed seat-swapped pair; draws count half.</p>',
-                 '<p>Last updated: '+escape(data['continuous_elo'].get('updated', 'Not yet'))+' (UTC)</p>',
+                 '<p>Last updated: '+escape(readable_time(data['continuous_elo'].get('updated')))+'</p>',
                  '<p>Status: '+escape(data['continuous_status']['status'])+'</p>',
                  '<table><tr><th>Agent</th><th>Elo</th><th>Games</th><th>Score</th><th>Contract</th></tr>']
     for r in elo_rows:
         sections.append(f"<tr><td>{name(r['agent'])}</td><td>{r['elo']:.1f}</td><td>{r['games']}</td><td>{pct(r['score'])}</td><td>{r['contract'][:10]}</td></tr>")
     sections.append('</table>')
     sections += ["<h2>Public notebook refresh</h2><p>Checked daily before the next roster freeze. Failed refreshes retain the last validated version.</p>"]
-    sections.append(f"<p>Discovery last checked: {escape(str(discovery.get('checked','not yet')))}. Found {discovery.get('found',0)} notebooks. Newcomers need a completed paired comparison before replacing a public agent.</p>")
+    sections.append(f"<p>Discovery last checked: {escape(readable_time(discovery.get('checked')))}. Found {discovery.get('found',0)} notebooks. Newcomers need a completed paired comparison before replacing a public agent.</p>")
     if not refreshes:
         sections.append("<p>No public notebook refresh sources configured.</p>")
     for r in refreshes:
         status = "stale (" + r["status"] + ")" if r.get("date") != today else r["status"]
-        sections.append(f"<p>{escape(r['notebook'])}: {escape(status)} · checked {escape(r['attempted'])} · last success {escape(r.get('successful', 'never'))}</p>")
+        sections.append(f"<p>{escape(r['notebook'])}: {escape(status)} · checked {escape(readable_time(r['attempted']))} · last success {escape(readable_time(r.get('successful')))}</p>")
     sections += ["<h2>Submissions</h2><table><tr><th>Agent / source</th><th>Author</th><th>Status</th></tr>"]
     for a in public_agents:
         sections.append(f"<tr><td>{name(a['id'])} ({escape(a['version'])})</td><td>{escape(a['author'])}</td><td>{'Validation failed' if a['validation_failed'] else escape(a['status'])}</td></tr>")
@@ -131,7 +145,7 @@ def build(root, bootstrap=500):
         order = sorted(run["ratings"], key=lambda a: -(run["ratings"][a] or 0))
         title = "Completed" if run["complete"] else "Provisional"
         body = [f"<h2>{escape(run['run'])} — {title}</h2><p>{run['completed']:,}/{run['planned']:,} games · {escape(run['kind'])}</p>"]
-        body.append('<p>Bradley–Terry leaderboard · Last updated: '+escape(run['updated'])+' (UTC)</p>')
+        body.append('<p>Bradley–Terry leaderboard · Last updated: '+escape(readable_time(run['updated']))+'</p>')
         if not connected:
             body.append("<p>Disconnected comparisons: ratings are only comparable within each component.</p>")
         if connected and run["complete"] and order:
@@ -156,7 +170,7 @@ def build(root, bootstrap=500):
     (root / "site/index.html").write_text(document("".join(sections)), encoding="utf-8")
     def label(aid):
         return agents[aid]['manifest']['name'].replace('|', '/').replace('\n',' ')
-    md = ["# Kaggriculture arena", "", "Updated: " + data["updated"], "",
+    md = ["# Kaggriculture arena", "", "Updated: " + readable_time(data["updated"]), "",
           "CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.", "",
           "[Submit an agent or join the workflow](../workflows/pro8_arena/START.md)", "",
           "Arena-certified champion: " + (label(data['champion']) if data['champion'] else "None yet. AFS R2 remains a historical reference, not a new certification."), "",
@@ -166,17 +180,17 @@ def build(root, bootstrap=500):
         md.append(f"| {label(a['id'])} | {'**PUBLIC**' if a['agent_type']=='public' else 'Team'} | {a['version']} | {a['status']} |")
     md += ['', '## Continuous Elo', '',
            'Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.', '',
-           'Last updated: '+data['continuous_elo'].get('updated', 'Not yet')+' (UTC)', '',
-           'Status: '+data['continuous_status']['status']+' · Last sync: '+data['continuous_status'].get('at','Never'), '',
+           'Last updated: '+readable_time(data['continuous_elo'].get('updated')), '',
+           'Status: '+data['continuous_status']['status']+' · Last sync: '+readable_time(data['continuous_status'].get('at')), '',
            '| Agent | Elo | Games | Score | Contract |','|---|---:|---:|---:|---|']
     for r in elo_rows:
         badge=' **PUBLIC**' if metadata[r['agent']]['agent_type']=='public' else ''
         md.append(f"| {label(r['agent'])}{badge} | {r['elo']:.1f} | {r['games']} | {pct(r['score'])} | {r['contract'][:10]} |")
     md += ["", "## Public refresh", "", "| Notebook | Status | Last successful check |", "|---|---|---|"]
     for r in refreshes:
-        md.append(f"| {r['notebook']} | {r['status']} | {r.get('successful','Never')} |")
+        md.append(f"| {r['notebook']} | {r['status']} | {readable_time(r.get('successful'))} |")
     md += ['', '## Public discovery and replacements', '',
-           f"Last scan: {discovery.get('checked','Not yet')}. Found {discovery.get('found',0)} notebooks; {discovery.get('eligible',0)} updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. A completed daily panel is required to select the weakest public agent.", '',
+           f"Last scan: {readable_time(discovery.get('checked'))}. Found {discovery.get('found',0)} notebooks; {discovery.get('eligible',0)} updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. A completed daily panel is required to select the weakest public agent.", '',
            'Each challenger and the proposed replacement face the same other agents on 128 fresh seeds in both seats. Replacement requires at least a two-point win-rate gain and a positive approximate 95% lower bound. This is a roster decision, not a 90% strength certificate.', '']
     if discovery.get('truncated'):md.append('Discovery reached its page limit; the scan was not exhaustive.')
     for d in public_decisions:
@@ -185,7 +199,7 @@ def build(root, bootstrap=500):
     md += [f"| {r['run']} | {'Complete' if r['complete'] else 'Provisional'} | {r['completed']}/{r['planned']} |" for r in runs]
     for run in reversed([r for r in runs if r['kind']=='daily'][-2:]):
         md += ["", '## '+run['run']+(' — complete' if run['complete'] else ' — provisional'), "",
-               "Bradley–Terry leaderboard · Last updated: "+run["updated"]+" (UTC)", "",
+               "Bradley–Terry leaderboard · Last updated: "+readable_time(run["updated"]), "",
                "| Agent | BT rating | W / L / D | Strict win rate | Cash margin |", "|---|---:|---:|---:|---:|"]
         for aid in sorted(run['ratings'],key=lambda a:-(run['ratings'][a] or 0)):
             s=run['stats'][aid];v=run['ratings'][aid];ci=run['intervals'][aid]
