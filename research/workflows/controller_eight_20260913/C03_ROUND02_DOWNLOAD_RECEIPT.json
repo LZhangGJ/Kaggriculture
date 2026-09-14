@@ -70,11 +70,6 @@
       "sha256": "99c14e97bb6d59c07b9ea7c61e7d86b9527e46e1c394bbaf61347b37a131e536"
     },
     {
-      "name": "C03_ROUND02_FEEDBACK.zip",
-      "bytes": 9925524,
-      "sha256": "a12473b8b5459643296a2597a664c8eec5917a18699eba47aa7c2e68b9bedb2e"
-    },
-    {
       "name": "C03_Round02_strategy.zip",
       "bytes": 1017291,
       "sha256": "03bf86946bad2428891d17dd8befcc0c9f9823bd0b5d19c3663785b8d1b58d9a"
