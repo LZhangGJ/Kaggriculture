@@ -1,0 +1,57 @@
+{
+  "games": 704,
+  "new_strength_games": 0,
+  "seconds": 155.11903009563684,
+  "workers": 64,
+  "behavior_pass": true,
+  "candidate_budget_pass": true,
+  "maxima_ms": {
+    "full_python_call": 1819.5387832820415,
+    "native_decision": 1380.721874
+  },
+  "mismatches": [],
+  "candidate_overruns": [],
+  "opponent_overruns": [
+    {
+      "task": [
+        "direct",
+        "combined",
+        2609173002,
+        0
+      ],
+      "old_ms": 2103.6192113533616,
+      "replay_ms": 2110.3522116318345
+    },
+    {
+      "task": [
+        "direct",
+        "combined",
+        2609173002,
+        1
+      ],
+      "old_ms": 2109.466403722763,
+      "replay_ms": 2115.805239416659
+    },
+    {
+      "task": [
+        "direct",
+        "combined",
+        2609173015,
+        0
+      ],
+      "old_ms": 2013.994955457747,
+      "replay_ms": 2019.1657803952694
+    },
+    {
+      "task": [
+        "direct",
+        "combined",
+        2609173015,
+        1
+      ],
+      "old_ms": 2013.8826156035066,
+      "replay_ms": 2028.5121379420161
+    }
+  ],
+  "original_confirmation_gate": false
+}

@@ -1,0 +1,21 @@
+{
+  "games": 256,
+  "wins": 210,
+  "losses": 46,
+  "ties": 0,
+  "win_rate": 0.8203125,
+  "seed_cluster95": [
+    0.7578125,
+    0.87890625
+  ],
+  "seat_wins": {
+    "0": 102,
+    "1": 108
+  },
+  "mean_margin": 5755.71875,
+  "latest_max_call_seconds": 1.77223146148026,
+  "latest_max_overage_seconds": 0.8435996528714895,
+  "latest_budget_exhausted_games": 0,
+  "r2_qemu_max_call_seconds": 12.666532095521688,
+  "r2_timing_is_emulated_not_platform": true
+}

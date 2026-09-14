@@ -1,0 +1,15 @@
+{
+  "ref": "56225552",
+  "fileName": "submission.tar.gz",
+  "date": "2026-09-14 07:50:39.747000",
+  "description": "NT JointAFS Completion - immediate sale + exact memo (portable x86)",
+  "status": "SubmissionStatus.COMPLETE",
+  "publicScore": "600.0",
+  "privateScore": "",
+  "tar_sha256": "27b8d46f3c8ae4e161dfc1e9123f753120b1bcdfe964996363f94c046531ec31",
+  "x86_binary_sha256": "bb019aab881db6f1210068528f5fe53ae93c92f9a930fa80979eb7f3fcbc457d",
+  "platform_error_description": "",
+  "matched_cross_arch_actions": 2876,
+  "architecture": "x86-64",
+  "max_required_glibc": "2.34"
+}
