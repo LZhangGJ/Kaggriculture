@@ -7,6 +7,20 @@ from . import schedule
 from .store import digest, read, write, now
 
 
+def chart_points(series, buckets=150):
+    """Keep endpoints and both curves' extrema; compute averages before sampling."""
+    if len(series)<=buckets*6:return series
+    width=(len(series)+buckets-1)//buckets
+    selected=[]
+    for start in range(0,len(series),width):
+        block=series[start:start+width];indices={0,len(block)-1}
+        for field in (2,3):
+            valid=[i for i,p in enumerate(block) if p[field] is not None]
+            if valid:indices.update((min(valid,key=lambda i:block[i][field]),max(valid,key=lambda i:block[i][field])))
+        selected.extend(block[i] for i in sorted(indices))
+    return selected
+
+
 def update(root):
     root=Path(root)
     with closing(sqlite3.connect(root/'private/elo.sqlite')) as db, db:
@@ -56,8 +70,8 @@ def update(root):
                 else:window=[]
                 mean=sum(window)/50 if len(window)==50 else None
                 series.append([games,at,round(value,3),round(mean,3) if mean is not None else None])
-            history.append(dict(agent=r['agent'],contract=r['contract'],points=series[-5000:]))
+            history.append(dict(agent=r['agent'],contract=r['contract'],points=chart_points(series[-5000:])))
     result=dict(updated=now(),method='Internal Elo, not a replica of Kaggle live ratings. Start 1500; K=32 per completed seat-swapped pair; draws half a point; separate table per execution contract',ratings=rows,
-                history=history,history_note='Latest 5,000 recorded points per version and contract. Older points are saved dashboard snapshots, not per-game history. New points record each seat-pair update; time is processing time, so batches share a timestamp. The average requires 50 consecutive paired updates / 100 games. Full history stays stored on the server.')
+                history=history,history_note='Latest 5,000 recorded updates per version and contract; long traces are thinned while keeping local highs and lows. Older points are saved dashboard snapshots, not per-game history. New points record each seat-pair update; time is processing time, so batches share a timestamp. The average requires 50 consecutive paired updates / 100 games. Full history stays stored on the server.')
     write(root/'continuous-elo.json',result)
     return result
