@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: 2026-09-14T05:13:31.917941+00:00
+Updated: 2026-09-14T05:19:12.519834+00:00
 
 CPU evaluation on WRX90. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -34,6 +34,29 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-best-agent | **PUBLIC** | 1-output-155aa170625f | active |
 | kaggriculture-utils-v1 | **PUBLIC** | 7-output-617136c14fd3 | active |
 | kaggriculture-dynamic-route-agent | **PUBLIC** | 6-output-67cbfe1ab2d1 | pending |
+
+## Continuous Elo
+
+Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.
+
+Status: running · Last sync: 2026-09-14T05:19:12.050035+00:00
+
+| Agent | Elo | Games | Score | Contract |
+|---|---:|---:|---:|---|
+| TRI_A06_r12_r3_fix1 | 1516.0 | 2 | 100.0% | ffc8942965 |
+| kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| Day 9 planner selector | 1500.0 | 0 | — | ffc8942965 |
+| AFS R1 | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-v41-review-candidate **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| AFS R2 | 1500.0 | 0 | — | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-adaptive-land-allocator **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| shop-router-0913 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-best-agent **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-utils-v1 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| TRI_A08_r11_r3 | 1484.0 | 2 | 0.0% | ffc8942965 |
 
 ## Public refresh
 
