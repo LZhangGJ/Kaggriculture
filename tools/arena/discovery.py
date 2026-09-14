@@ -1,5 +1,5 @@
 """Discover public outputs daily and admit stronger notebooks on fresh paired games."""
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import subprocess
@@ -9,28 +9,44 @@ import numpy as np
 from . import intake, schedule
 from .store import digest, event, now, read, records, write
 
+POLICY = 'scoreDescending-last24h-v1'
+
+
+def recently_updated(value, at):
+    if not value:
+        return False
+    if isinstance(value,str):
+        try:value=datetime.fromisoformat(value.replace('Z','+00:00'))
+        except ValueError:return False
+    # Kaggle's SDK drops the timezone from UTC lastRunTime values.
+    if value.tzinfo is None:value=value.replace(tzinfo=timezone.utc)
+    return at-timedelta(hours=24) <= value <= at
+
 
 def scan(root):
     from kaggle.api.kaggle_api_extended import KaggleApi
     root=Path(root);cfg=read(root/'config.json')
     date=datetime.now(ZoneInfo(cfg['timezone'])).date().isoformat()
     path=root/'private/discovery.json';state=read(path,{'catalog':{}})
-    if state.get('date')==date:
+    if state.get('date')==date and state.get('policy')==POLICY:
         return
     api=KaggleApi();api.authenticate()
-    catalog=state['catalog'];seen=[];truncated=[]
-    for order in ('dateCreated','hotness'):
+    catalog=state['catalog'];seen=[];truncated=[];eligible=[]
+    at=datetime.now(timezone.utc)
+    for order in ('scoreDescending',):
         for page in range(1,11):
             rows=api.kernels_list(competition='kaggriculture',page=page,page_size=100,sort_by=order) or []
             for row in rows:
                 ref=row.ref
                 if ref not in catalog:catalog[ref]={'first_seen':now(),'status':'discovered'}
                 if ref not in seen:seen.append(ref)
+                catalog[ref]['score_rank']=len(seen)
+                catalog[ref]['last_run_time']=str(row.last_run_time)
+                if recently_updated(row.last_run_time,at) and ref not in eligible:eligible.append(ref)
             if len(rows)<100:break
         else:truncated.append(order)
     tracked={s['notebook'] for s in cfg['public_sources']}
-    pending=[ref for ref in seen if ref not in tracked]
-    pending.sort(key=lambda ref:(catalog[ref].get('attempted',''),seen.index(ref)))
+    pending=[ref for ref in eligible if ref not in tracked]
     for ref in pending[:cfg.get('discovery_downloads_per_day',4)]:
         sid='found-'+digest(ref)[:16];dest=(root/'exports'/f'{sid}.json').absolute()
         command=[sys.executable,'-m','tools.arena.kaggle_export',ref,str(dest)]
@@ -42,7 +58,8 @@ def scan(root):
             catalog[ref].update(status='downloaded',agent=accepted['agent'])
         except (OSError,ValueError,KeyError,subprocess.SubprocessError) as e:
             catalog[ref].update(status='download_failed',error=type(e).__name__)
-    state.update(date=date,checked=now(),found=len(seen),truncated=truncated)
+    state.update(date=date,checked=now(),found=len(seen),truncated=truncated,policy=POLICY,
+                 eligible=len(eligible),selected=pending[:cfg.get('discovery_downloads_per_day',4)])
     write(path,state);write(root/'config.json',cfg)
 
 
@@ -107,7 +124,9 @@ def advance(root):
     # Earlier retired versions must not re-enter the challenge queue.
     candidates=[a for a in candidates if a['status']!='archived']
     if not candidates:return
-    candidate=min(candidates,key=lambda a:a['created'])['id'];panel=sorted(ids-{incumbent})
+    catalog=read(root/'private/discovery.json',{}).get('catalog',{})
+    candidate=min(candidates,key=lambda a:(catalog.get(a['manifest']['origin']['notebook'],{}).get('score_rank',10**9),a['created']))['id']
+    panel=sorted(ids-{incumbent})
     rid='public-'+candidate[:16]+'-'+digest(roster)[:8]
     m=schedule.plan(root,rid,'confirmation',128,candidate,panel)
     extra=[]

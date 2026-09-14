@@ -152,7 +152,7 @@ def build(root, bootstrap=500):
     for r in refreshes:
         md.append(f"| {r['notebook']} | {r['status']} | {r.get('successful','Never')} |")
     md += ['', '## Public discovery and replacements', '',
-           f"Last scan: {discovery.get('checked','Not yet')}. Found {discovery.get('found',0)} notebooks. Four new outputs can enter evaluation per day. A completed daily panel is required to select the weakest public agent.", '',
+           f"Last scan: {discovery.get('checked','Not yet')}. Found {discovery.get('found',0)} notebooks; {discovery.get('eligible',0)} updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. A completed daily panel is required to select the weakest public agent.", '',
            'Each challenger and the proposed replacement face the same other agents on 128 fresh seeds in both seats. Replacement requires at least a two-point win-rate gain and a positive approximate 95% lower bound. This is a roster decision, not a 90% strength certificate.', '']
     if discovery.get('truncated'):md.append('Discovery reached its page limit; the scan was not exhaustive.')
     for d in public_decisions:

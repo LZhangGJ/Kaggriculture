@@ -1,12 +1,20 @@
 import tempfile
 import unittest
 import zipfile
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from unittest.mock import patch
 from tools.arena import discovery, intake, store
 
 
 class DiscoveryTest(unittest.TestCase):
+    def test_recent_update_window(self):
+        at=datetime(2026,9,14,12,tzinfo=timezone.utc)
+        self.assertTrue(discovery.recently_updated(at-timedelta(hours=24),at))
+        self.assertTrue(discovery.recently_updated(datetime(2026,9,14,11),at))
+        self.assertFalse(discovery.recently_updated(at-timedelta(hours=24,seconds=1),at))
+        self.assertFalse(discovery.recently_updated(at+timedelta(seconds=1),at))
+        self.assertFalse(discovery.recently_updated(None,at))
     def test_paired_gate_rejects_tie_and_accepts_gain(self):
         games=[]
         for seed in range(128):

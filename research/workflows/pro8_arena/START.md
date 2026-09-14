@@ -77,7 +77,7 @@ Use up to eight GPT-6 Pro chats: four independent agents, two phase/component ta
 
 ## Daily arena
 
-The shared host discovers public notebooks daily through Kaggle's newest and hot lists, with up to 1,000 entries per list. The report marks scans that hit this limit. It downloads up to four new outputs per day, without running notebooks on the host. Failed downloads remain in the queue. Accepted sources also receive daily version checks.
+The shared host discovers public notebooks daily in Kaggle public-score order, highest first, and selects only notebooks updated in the preceding 24 hours. The API update timestamp is `lastRunTime` in UTC. It checks up to 1,000 entries and marks scans that hit this limit. It downloads up to four untracked outputs in that order per day, without running notebooks on the host. Accepted sources also receive daily version checks.
 
 After a complete daily tournament, the controller selects its weakest public agent by strict win rate. One new public challenger at a time faces the same remaining roster as that agent, on 128 fresh seeds in both seats. It replaces the incumbent only if its mean win rate improves by at least two percentage points and the approximate one-sided 95% paired bootstrap lower bound exceeds zero, with no nonterminal challenger games. A changed roster invalidates that replacement decision. These are operational roster decisions, not a statistical guarantee across repeated trials. Current tournament manifests stay frozen, and retired agents keep their records.
 
