@@ -63,13 +63,21 @@ def run_one(root, manifest, game, cfg):
 
 def work(root, cfg, remote_only=False):
     root = Path(root)
-    pending, placement_by_author = [], {}
+    pending, placement_by_author, daily = [], {}, []
     for path in sorted((root / "runs").glob("*/manifest.json")):
         m = read(path)
-        if (m['kind']=='continuous') != remote_only:
+        is_remote = m['kind']=='continuous' or bool(m.get('parent_daily'))
+        if is_remote != remote_only:
             continue
         jobs = [(m, g) for g in m["games"] if not read(path.parent / "games" / (g["id"] + ".json"), {}).get("resolved")
                 and len(list((path.parent / "attempts" / g["id"]).glob("*.json"))) < 3]
+        if m['kind'] == 'daily':
+            if not remote_only:
+                from .daily_dispatch import assignments
+                owners = assignments(root, m)
+                jobs = [(mm, g) for mm, g in jobs if owners.get(g['id'], 'coordinator') == 'coordinator']
+            daily.extend(jobs)
+            continue
         if m["kind"] == "placement":
             author = m["agents"][m["candidate"]]["manifest"]["author"]
             placement_by_author.setdefault(author, []).extend(jobs)
@@ -91,6 +99,8 @@ def work(root, cfg, remote_only=False):
     quota = max(1, round(cap * cfg["placement_fraction"]))
     selected = p[:quota] + other[:cap-quota]
     selected += (p[quota:] + other[cap-quota:])[:cap-len(selected)]
+    if daily:
+        selected = daily[:cap]  # Finish tournament work before any ordinary queue.
     chosen_placement = [m for m, _ in selected if m["kind"] == "placement"]
     if chosen_placement:
         last = chosen_placement[-1]
@@ -155,6 +165,8 @@ def tick(root):
                 plan(root, "daily-" + today)
             except ValueError as e:
                 event(root, "daily_pending", today, {"reason": str(e)})
+            from .continuous import sync as sync_executors
+            sync_executors(root)
         jobs = work(root, cfg)
     from .reporting import build
     build(root, bootstrap=cfg["bootstrap"])

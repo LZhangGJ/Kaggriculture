@@ -14,7 +14,7 @@ def accept(root,bundle):
     root=Path(root);intake.inspect_zip(bundle)
     with zipfile.ZipFile(bundle) as z:
         m=json.loads(z.read('manifest.json'));rid=ident(m['id'])
-        if m['kind']!='continuous' or digest(m['contract'])!=m['contract_hash']:raise ValueError('Invalid continuous contract')
+        if (m['kind']!='continuous' and not (m['kind']=='daily' and m.get('parent_daily'))) or digest(m['contract'])!=m['contract_hash']:raise ValueError('Invalid executor contract')
         cfg=read(root/'config.json')
         if cfg['image']!=m['contract']['image']:raise ValueError('Executor image differs')
         old=read(root/'runs'/rid/'manifest.json')
@@ -42,6 +42,8 @@ def sync(root):
     root=Path(root)
     hosts=[('mini',read(root/'private/continuous-host.json',{}))]
     hosts += [(ident(name),cfg) for name,cfg in read(root/'private/continuous-extra-hosts.json',{}).items()]
+    from .daily_dispatch import prepare
+    prepare(root, hosts)
     statuses={}
     for name,cfg in hosts:
         if not cfg.get('enabled'):continue
@@ -64,6 +66,34 @@ def sync_host(root,name,cfg):
     def scp(source,destination):
         subprocess.run(['scp','-q','-o','BatchMode=yes','-o','ConnectTimeout=10',source,destination],check=True,timeout=180,capture_output=True)
     try:
+        from .daily_dispatch import shard
+        daily_pending = 0
+        for path in sorted((root/'runs').glob('daily-*/manifest.json')):
+            parent = read(path)
+            if parent['kind'] != 'daily' or schedule.complete(root, parent):continue
+            m = shard(root, parent, name)
+            if not m:continue
+            sent = root/'private/daily-sent'/f"{m['id']}.json"
+            if sent.exists():
+                ssh('export',remote_root,m['id'])
+                local=root/'private'/f"received-{m['id']}.json"
+                scp(host+':'+remote_root+'/outbox/'+m['id']+'.json',str(local))
+                packet=read(local)
+                if packet['run']!=m['id']:raise ValueError('Wrong daily result batch')
+                allowed={g['id']:g for g in m['games']}
+                for result in packet['results']:
+                    if result['game'] not in allowed:raise ValueError('Unexpected daily game')
+                    schedule.save_result(root,parent,allowed[result['game']],result)
+            else:
+                bundle=root/'private'/f"{m['id']}.zip"
+                with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_STORED) as z:
+                    z.writestr('manifest.json',json.dumps(m))
+                    for sha in sorted({a['archive'] for a in m['agents'].values()}):z.write(root/'artifacts'/f'{sha}.zip',sha+'.zip')
+                target=remote_root+'/incoming/'+m['id']+'.zip'
+                scp(str(bundle),host+':'+target)
+                ssh('accept',remote_root,target)
+                write(sent,dict(at=now()))
+            daily_pending += sum(not read(path.parent/'games'/f"{g['id']}.json",{}).get('resolved') for g in m['games'])
         pending=[]
         for p in sorted((root/'runs').glob('continuous-*/manifest.json')):
             m=read(p)
@@ -101,7 +131,8 @@ def sync_host(root,name,cfg):
             write(sent,dict(at=now()))
         from .elo import update
         update(root)
-        return dict(at=now(),status='running',pending_rounds=len(pending))
+        return dict(at=now(),status='running',pending_rounds=len(pending),daily_games_pending=daily_pending,
+                    scheduling='daily tournament first; continuous resumes when assigned daily games finish')
     except (OSError,ValueError,KeyError,subprocess.SubprocessError) as e:
         event(root,'continuous_failed',name+'-'+now()[:13],{'reason':type(e).__name__})
         return dict(at=now(),status='connection_or_job_error')
