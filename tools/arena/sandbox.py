@@ -81,6 +81,7 @@ def validate_agent(root, aid):
         raise ValueError("Agent exceeds configured worker limits")
     mp = root / "private" / f"manifest-{aid}.json"
     write(mp, m)
+    mp.chmod(0o644)  # Read-only container runs as nobody; this file contains no credentials.
     name = "arena-check-" + uuid.uuid4().hex
     args = docker_args(cfg, name, [(archive, "/input.zip"), (mp, "/manifest.json")],
                        ["python", "/opt/arena/inside.py", "check"], r.get("scratch_mb", 512))

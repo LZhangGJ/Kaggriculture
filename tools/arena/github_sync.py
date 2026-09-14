@@ -23,6 +23,8 @@ def sync(root):
     if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
         raise ValueError("Invalid approved repository")
     allowed = set(config.get("allowed_authors", []))
+    if config.get('allow_collaborators'):
+        allowed.update(p['login'] for p in api(f'repos/{repo}/collaborators?per_page=100'))
     if not allowed:
         raise ValueError("Configure authorized submission authors")
     imported = []
@@ -52,7 +54,7 @@ def sync(root):
                     result = submit(root, archive, m, receipt=key)
                 write(root / "private/github-receipts" / (key + ".json"), {"submission":result["id"], "at":now()})
                 imported.append(result["id"])
-            except (ValueError, KeyError, subprocess.SubprocessError) as e:
+            except (ValueError, KeyError, IndexError, TypeError, subprocess.SubprocessError) as e:
                 event(root, "github_intake_failure", key, {"issue":issue["number"], "reason":str(e)[:300]})
         if len(issues) < 100:
             break

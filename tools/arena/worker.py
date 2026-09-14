@@ -84,7 +84,10 @@ class AgentProcess:
         self.proc.kill()
         self.proc.wait(timeout=10)
         for stream in (self.proc.stdin, self.proc.stdout, self.proc.stderr):
-            stream.close()
+            try:
+                stream.close()
+            except (OSError, ValueError):
+                pass  # Preserve the game result when an agent exits before stdin flushes.
 
 
 def official_game(agents, game, contract):
@@ -133,8 +136,9 @@ def play(root, manifest, game, cfg):
             archive = root / "artifacts" / (a["archive"] + ".zip")
             if file_hash(archive) != a["archive"] or a["image"] != cfg["image"]:
                 raise RuntimeError("Artifact/image changed since validation")
-            mpath = root / "private" / ("manifest-" + aid + ".json")
+            mpath = root / "private" / ("manifest-" + game["id"] + "-" + str(seat) + ".json")
             write(mpath, a["manifest"])
+            mpath.chmod(0o644)
             name = "arena-" + game["id"][:24] + "-" + str(seat)
             cleanup(name)  # Recover a container left by an interrupted attempt.
             names.append(name)

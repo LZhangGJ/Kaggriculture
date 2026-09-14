@@ -1,5 +1,24 @@
 # Pro8 arena
 
+## Shared arena
+
+[Open the live results page](../../arena_live/README.md). The coordinator runs on WRX90 using CPU only. It publishes checked summaries to `feature/pro8-arena`; it does not merge into main or submit to Kaggle.
+
+You can submit an agent without running Pro8. Package your JSONL agent in a ZIP, upload it as a release asset in this private repository, then open an issue titled `[Arena] Your agent name`. Include this section, with your real asset ID and archive SHA-256:
+
+````text
+### Agent manifest
+```json
+{"name":"My agent","author":"your-github-login","version":"1","run":["python","main.py"],"archive_asset":123456,"sha256":"YOUR_ARCHIVE_SHA256"}
+```
+````
+
+Repository collaborators can submit. The coordinator reads issues directly, so this works while the workflow remains on a feature branch. The issue form and Actions triggers need a separate merge into the default branch. ZIPs must be at most 256 MiB and contain no links. The agent reads one JSON object with `observation` and `configuration` per stdin line and writes one action object per stdout line; send logs to stderr. Use `tools.arena.kaggle_export.pack` to wrap an existing Python `agent` entry point.
+
+New agents get placement games even when the active roster is full. Placement does not automatically replace the champion. Watch the results page for intake and evaluation status.
+
+To join research, read existing experiment records before claiming a scope. If you only submit agents, no research setup is needed.
+
 The controller, independent intake, evaluation scheduler, ratings, gates and reports run locally. Installation does not launch a campaign or publish anything. Preserve the existing Pro8 run.
 
 ## Setup
@@ -82,7 +101,7 @@ For final public targets, `plan RUN --kind confirmation --candidate ID --referen
 
 Actions perform metadata receipts, code tests and approved report exports. arena-site.yml first produces a private workflow artifact. Pages deployment requires ARENA_PAGES_APPROVED=true and verified access policy. Private repo status does not establish Pages privacy. Review generated exports before copying them to tracked arena-export for approved publication. Never put reserved seeds, private archives or credentials there. Large packages stay outside Git.
 
-No pushes, purchases, publication, Kaggle submissions, model fallback or GPU use are enabled. All current output is local.
+New installations default to execution and publication off. The shared host has explicit approval for CPU evaluation and private summary publication. Kaggle submissions and GPU use remain off.
 
 ## Tests
 

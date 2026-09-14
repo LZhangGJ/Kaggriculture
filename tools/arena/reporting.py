@@ -22,13 +22,14 @@ def run_report(root, m, bootstrap):
             if r["resolved"]:
                 rows.append({**r, "seed": g["seed"]})
     cache = root / "runs" / m["id"] / "summary.json"
-    key = digest([fingerprint, bootstrap, 1])
+    effective_bootstrap = bootstrap if len(rows) == len(m['games']) else 0
+    key = digest([fingerprint, effective_bootstrap, 1])
     old = read(cache)
     if old and old.get("fingerprint") == key:
         return old
     result = {"run": m["id"], "kind": m["kind"], "created": m["created"], "fingerprint": key,
               "planned": len(m["games"]), "completed": len(rows), "complete": len(rows) == len(m["games"]),
-              "contract": m["contract_hash"], **summary(rows, sorted(m["agents"]), bootstrap)}
+              "contract": m["contract_hash"], **summary(rows, sorted(m["agents"]), effective_bootstrap)}
     # No seed values or local paths go into summary JSON.
     write(cache, result)
     return result
@@ -132,8 +133,39 @@ def build(root, bootstrap=500):
     events = [e for e in records(root, "events") if not e["acknowledged"]]
     sections.append(f"<h2>Controller attention</h2><p>{len(events)} pending events. Private details remain in the local event queue.</p>")
     (root / "site/index.html").write_text(document("".join(sections)), encoding="utf-8")
-    md = ["# Kaggriculture arena", "", "Updated: " + data["updated"], "", "Full local page: index.html", "", "| Run | Status | Games |", "|---|---|---|"]
+    def label(aid):
+        return agents[aid]['manifest']['name'].replace('|', '/').replace('\n',' ')
+    md = ["# Kaggriculture arena", "", "Updated: " + data["updated"], "",
+          "CPU evaluation on WRX90. Results below are local; they are not Kaggle leaderboard scores.", "",
+          "[Submit an agent or join the workflow](../workflows/pro8_arena/START.md)", "",
+          "Arena-certified champion: " + (label(data['champion']) if data['champion'] else "None yet. AFS R2 remains a historical reference, not a new certification."), "",
+          "Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.", "",
+          "## Roster", "", "| Agent | Type | Version | Status |", "|---|---|---|---|"]
+    for a in public_agents:
+        md.append(f"| {label(a['id'])} | {'**PUBLIC**' if a['agent_type']=='public' else 'Team'} | {a['version']} | {a['status']} |")
+    md += ["", "## Public refresh", "", "| Notebook | Status | Last successful check |", "|---|---|---|"]
+    for r in refreshes:
+        md.append(f"| {r['notebook']} | {r['status']} | {r.get('successful','Never')} |")
+    md += ["", "## Run coverage", "", "| Run | Status | Games |", "|---|---|---|"]
     md += [f"| {r['run']} | {'Complete' if r['complete'] else 'Provisional'} | {r['completed']}/{r['planned']} |" for r in runs]
+    for run in reversed([r for r in runs if r['kind']=='daily'][-2:]):
+        md += ["", '## '+run['run']+(' — complete' if run['complete'] else ' — provisional'), "",
+               "| Agent | BT rating | W / L / D | Strict win rate | Cash margin |", "|---|---:|---:|---:|---:|"]
+        for aid in sorted(run['ratings'],key=lambda a:-(run['ratings'][a] or 0)):
+            s=run['stats'][aid];v=run['ratings'][aid];ci=run['intervals'][aid]
+            rating='—' if v is None else f'{v:.2f}'+(f' [{ci[0]:.2f}, {ci[1]:.2f}]' if ci else '')
+            margin='—' if s['cash_margin'] is None else f"{s['cash_margin']:,.0f}"
+            md.append(f"| {label(aid)} | {rating} | {s['wins']} / {s['losses']} / {s['draws']} | {pct(s['win_rate'])} | {margin} |")
+        md += ["", "<details><summary>Win rate by opponent and seat</summary>", "",
+               "| Agent | Opponent | Wins / games | Win rate | Seat 0 W/G | Seat 1 W/G |", "|---|---|---:|---:|---:|---:|"]
+        for key,s in run['matrix'].items():
+            a,b=key.split(':');seats=s['seats']
+            md.append(f"| {label(a)} | {label(b)} | {s['wins']}/{s['games']} | {pct(s['win_rate'])} | {seats['0']['wins']}/{seats['0']['games']} | {seats['1']['wins']}/{seats['1']['games']} |")
+        md += ["", "</details>", ""]
+    if len(daily)>=2:
+        md += ["", "## Largest daily matchup changes", "", "Same versions only; descriptive changes, not significance tests.", ""]
+        for change,key in sorted(changes,key=lambda v:-abs(v[0]))[:6]:
+            a,b=key.split(':');md.append(f"- {label(a)} vs {label(b)}: {change*100:+.1f} percentage points.")
     (root / "site/README.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     return data
 

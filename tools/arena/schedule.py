@@ -132,6 +132,8 @@ def placement_queue(root):
     root = Path(root)
     grouped = {}
     for a in sorted(records(root, "agents"), key=lambda x: x["created"]):
+        if a['status'] in ('active', 'archived'):
+            continue
         if a["build_verified"] and not (root / "runs" / ("placement-" + a["id"][:20]) / "manifest.json").exists():
             grouped.setdefault(a["manifest"]["author"], []).append(a)
     authors = sorted(grouped)
