@@ -1,0 +1,50 @@
+[
+  {
+    "attempted": 384,
+    "changed_results": 0,
+    "games": 384,
+    "games_per_hour": 5776.088418586836,
+    "reasons": {
+      "terminal": 384
+    },
+    "seconds": 239.33151638599998,
+    "valid": true,
+    "workers": 48
+  },
+  {
+    "attempted": 384,
+    "changed_results": 0,
+    "games": 384,
+    "games_per_hour": 6394.31049835028,
+    "reasons": {
+      "terminal": 384
+    },
+    "seconds": 216.1921915360001,
+    "valid": true,
+    "workers": 64
+  },
+  {
+    "attempted": 384,
+    "changed_results": 0,
+    "games": 384,
+    "games_per_hour": 6889.953990122049,
+    "reasons": {
+      "terminal": 384
+    },
+    "seconds": 200.63994650500013,
+    "valid": true,
+    "workers": 80
+  },
+  {
+    "attempted": 384,
+    "changed_results": 0,
+    "games": 384,
+    "games_per_hour": 7027.274343559131,
+    "reasons": {
+      "terminal": 384
+    },
+    "seconds": 196.71923030400012,
+    "valid": true,
+    "workers": 96
+  }
+]
