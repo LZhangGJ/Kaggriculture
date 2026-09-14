@@ -17,7 +17,7 @@ units.mkdir(parents=True,exist_ok=True)
 Description=Kaggriculture CPU arena
 [Service]
 Type=oneshot
-WorkingDirectory="{repo}"
+WorkingDirectory={repo}
 ExecStart="{python}" -m tools.arena.service "{root}"
 Environment=OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
 Nice=10
