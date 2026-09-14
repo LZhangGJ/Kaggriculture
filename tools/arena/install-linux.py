@@ -8,7 +8,7 @@ parser.add_argument('--root',required=True,type=Path)
 parser.add_argument('--python',required=True,type=Path)
 args=parser.parse_args()
 repo=Path(__file__).resolve().parents[2]
-root=args.root.resolve();python=args.python.resolve()
+root=args.root.resolve();python=args.python.absolute()  # Preserve the venv symlink path.
 if any('\n' in str(p) or '%' in str(p) or '"' in str(p) for p in (repo,root,python)):
     raise ValueError('Unsupported unit path')
 units=Path.home()/'.config/systemd/user'
