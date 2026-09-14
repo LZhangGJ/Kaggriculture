@@ -1,0 +1,84 @@
+{
+  "observed_utc": "2026-09-14T02:35:32.7585210Z",
+  "candidate": "C06",
+  "round": 6,
+  "archives": [
+    {
+      "name": "C06_ROUND06_delivery_audit.zip",
+      "bytes": 279410,
+      "sha256": "08d0d89006940c3b3014aecf037c4bbf0b42f43c5be9bacc4140eeddc6bc41f4"
+    },
+    {
+      "name": "C06_ROUND06_records01.zip",
+      "bytes": 43167535,
+      "sha256": "863e24c799a579b9c043c84bea6559aa71a0a8f3f5ada96da477cd75314fc8e1"
+    },
+    {
+      "name": "C06_ROUND06_records02.zip",
+      "bytes": 699061,
+      "sha256": "0fcfd096773608cda003a4d9607b40de7c80e49e7e53d50e625d708796732024"
+    },
+    {
+      "name": "C06_ROUND06_replays01.zip",
+      "bytes": 46886780,
+      "sha256": "ba155e115227e0f34e73428110420ad6bf3fd0626daa8f2d75d2d0ec689540cf"
+    },
+    {
+      "name": "C06_ROUND06_replays02.zip",
+      "bytes": 46766299,
+      "sha256": "803c4650c6b8c2663ac176abb739030f03e909a74ffbc4529d0b57e205c19a18"
+    },
+    {
+      "name": "C06_ROUND06_replays03.zip",
+      "bytes": 47275580,
+      "sha256": "e8d75deafdf8448fcaa42ce50aa558eb1505d25db4018c5f111c6ed8d7a5bbb4"
+    },
+    {
+      "name": "C06_ROUND06_replays04.zip",
+      "bytes": 47244865,
+      "sha256": "20c2b5c584c1ec8307be4bceec4eca7b8bda2f3b8ad012c9be8208f70290ad42"
+    },
+    {
+      "name": "C06_ROUND06_replays05.zip",
+      "bytes": 46969863,
+      "sha256": "0f68c36a2c358acdc8bb685516f7a7f6a85571b776c9d4d04aa506400b7bd31a"
+    },
+    {
+      "name": "C06_ROUND06_replays06.zip",
+      "bytes": 47012350,
+      "sha256": "865df38110f23fb39fb85b7b7c5843f4f3c30bf9d3bfeb9efaa9991a8eef6301"
+    },
+    {
+      "name": "C06_ROUND06_replays07.zip",
+      "bytes": 47392924,
+      "sha256": "a4c490c0c6cf9ec5dd8cfd380d462821180b069a7080bdf38ccad1a8549ee883"
+    },
+    {
+      "name": "C06_ROUND06_replays08.zip",
+      "bytes": 47157159,
+      "sha256": "2fcf06f9b6088cd400137b789290f8b6054b422538f3856f48b9e4b0ec68514a"
+    },
+    {
+      "name": "C06_ROUND06_replays09.zip",
+      "bytes": 46888460,
+      "sha256": "9a2005dda57845c95163747af838591e5daee9dfe5d2cec8d7e4ec2b10848684"
+    },
+    {
+      "name": "C06_ROUND06_replays10.zip",
+      "bytes": 3571564,
+      "sha256": "3428fa033eed016eb1dfc78c81aa87234de6f04c962c35c8266e9710251f9a3d"
+    },
+    {
+      "name": "C06_ROUND06_runtime.zip",
+      "bytes": 709587,
+      "sha256": "d15f40e92633486d61620aa88fc9a363c48320d33fc8bab13fe952ae8644c03a"
+    },
+    {
+      "name": "C06_ROUND06_validation_replays.zip",
+      "bytes": 41319049,
+      "sha256": "70674bd8bcae94d6cdf559394ac7a4815de65e3166e7023162311200463387c5"
+    }
+  ],
+  "early_checkpoint_downloaded": false,
+  "claim_conflict": "Earlier live commentary claimed unchanged source703593bytes176a7e...216051.8125; final claims changed cash_cycle source709587bytesd15f40...203546.0625; requires audit"
+}

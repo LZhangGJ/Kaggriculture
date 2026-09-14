@@ -1,0 +1,209 @@
+{
+  "verified_utc": "2026-09-14T02:26:51.928678+00:00",
+  "dispatch_utc": "2026-09-14T01:50:50.162Z",
+  "research_stop_utc": "2026-09-14T02:30:50.162Z",
+  "hard_cutoff_utc": "2026-09-14T02:50:50.162Z",
+  "completed_before_cutoff": true,
+  "research_frozen_utc": "2026-09-14T02:11:38.806522+00:00",
+  "artifacts": [
+    {
+      "name": "C06_ROUND06_runtime.zip",
+      "path": "/mnt/data/C06_ROUND06_runtime.zip",
+      "bytes": 709587,
+      "sha256": "d15f40e92633486d61620aa88fc9a363c48320d33fc8bab13fe952ae8644c03a",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_records01.zip",
+      "path": "/mnt/data/C06_ROUND06_records01.zip",
+      "bytes": 43167535,
+      "sha256": "863e24c799a579b9c043c84bea6559aa71a0a8f3f5ada96da477cd75314fc8e1",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_records02.zip",
+      "path": "/mnt/data/C06_ROUND06_records02.zip",
+      "bytes": 699061,
+      "sha256": "0fcfd096773608cda003a4d9607b40de7c80e49e7e53d50e625d708796732024",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_validation_replays.zip",
+      "path": "/mnt/data/C06_ROUND06_validation_replays.zip",
+      "bytes": 41319049,
+      "sha256": "70674bd8bcae94d6cdf559394ac7a4815de65e3166e7023162311200463387c5",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays01.zip",
+      "path": "/mnt/data/C06_ROUND06_replays01.zip",
+      "bytes": 46886780,
+      "sha256": "ba155e115227e0f34e73428110420ad6bf3fd0626daa8f2d75d2d0ec689540cf",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays02.zip",
+      "path": "/mnt/data/C06_ROUND06_replays02.zip",
+      "bytes": 46766299,
+      "sha256": "803c4650c6b8c2663ac176abb739030f03e909a74ffbc4529d0b57e205c19a18",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays03.zip",
+      "path": "/mnt/data/C06_ROUND06_replays03.zip",
+      "bytes": 47275580,
+      "sha256": "e8d75deafdf8448fcaa42ce50aa558eb1505d25db4018c5f111c6ed8d7a5bbb4",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays04.zip",
+      "path": "/mnt/data/C06_ROUND06_replays04.zip",
+      "bytes": 47244865,
+      "sha256": "20c2b5c584c1ec8307be4bceec4eca7b8bda2f3b8ad012c9be8208f70290ad42",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays05.zip",
+      "path": "/mnt/data/C06_ROUND06_replays05.zip",
+      "bytes": 46969863,
+      "sha256": "0f68c36a2c358acdc8bb685516f7a7f6a85571b776c9d4d04aa506400b7bd31a",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays06.zip",
+      "path": "/mnt/data/C06_ROUND06_replays06.zip",
+      "bytes": 47012350,
+      "sha256": "865df38110f23fb39fb85b7b7c5843f4f3c30bf9d3bfeb9efaa9991a8eef6301",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays07.zip",
+      "path": "/mnt/data/C06_ROUND06_replays07.zip",
+      "bytes": 47392924,
+      "sha256": "a4c490c0c6cf9ec5dd8cfd380d462821180b069a7080bdf38ccad1a8549ee883",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays08.zip",
+      "path": "/mnt/data/C06_ROUND06_replays08.zip",
+      "bytes": 47157159,
+      "sha256": "2fcf06f9b6088cd400137b789290f8b6054b422538f3856f48b9e4b0ec68514a",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays09.zip",
+      "path": "/mnt/data/C06_ROUND06_replays09.zip",
+      "bytes": 46888460,
+      "sha256": "9a2005dda57845c95163747af838591e5daee9dfe5d2cec8d7e4ec2b10848684",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_replays10.zip",
+      "path": "/mnt/data/C06_ROUND06_replays10.zip",
+      "bytes": 3571564,
+      "sha256": "3428fa033eed016eb1dfc78c81aa87234de6f04c962c35c8266e9710251f9a3d",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_delivery_audit.zip",
+      "path": "/mnt/data/C06_ROUND06_delivery_audit.zip",
+      "bytes": 279410,
+      "sha256": "08d0d89006940c3b3014aecf037c4bbf0b42f43c5be9bacc4140eeddc6bc41f4",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_report.md",
+      "path": "/mnt/data/C06_ROUND06_report.md",
+      "bytes": 25997,
+      "sha256": "21ccf3fcf7339b0c75642a8cba4a27653143b663f3c5ff79c430b912c96816bc",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_final_content_inspection.json",
+      "path": "/mnt/data/C06_ROUND06_final_content_inspection.json",
+      "bytes": 7352,
+      "sha256": "53e9c6a5f6b6369cb0b95852889a3dda3226899384f53c11ae75de80fb43bf41",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_independent_archive_audit.json",
+      "path": "/mnt/data/C06_ROUND06_independent_archive_audit.json",
+      "bytes": 7264,
+      "sha256": "9172f7c7b331b49a6f272eaa66fcb78a22df9fb901ec72ff25f462066ce5700d",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_evidence_file_index.json",
+      "path": "/mnt/data/C06_ROUND06_evidence_file_index.json",
+      "bytes": 1198911,
+      "sha256": "43458b459ea5907ad46f7c16cc6382cfda5a11720a4565a94e0add7f2caec30d",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_all_attempts.csv",
+      "path": "/mnt/data/C06_ROUND06_all_attempts.csv",
+      "bytes": 541260,
+      "sha256": "609671024750706a690a4d567b00f301f2836389c323b177b8c28772abb01df2",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_validation_results.csv",
+      "path": "/mnt/data/C06_ROUND06_validation_results.csv",
+      "bytes": 9734,
+      "sha256": "c7b850432b728ba4c1a46c3c14f06eb9780d0c7b9e6f8e27f36264ff8c835f5c",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_seed_inventory.json",
+      "path": "/mnt/data/C06_ROUND06_seed_inventory.json",
+      "bytes": 55290,
+      "sha256": "65465e065fe7059a3547fe28d59d162365d79d66718bbc015a52cc268c6e5d6d",
+      "exists": true
+    },
+    {
+      "name": "C06_ROUND06_source_freeze.json",
+      "path": "/mnt/data/C06_ROUND06_source_freeze.json",
+      "bytes": 9651,
+      "sha256": "67f2c86aaff5b68e5fc51e640d54c5874dfbbad10e458181302e9b2eeac828e7",
+      "exists": true
+    }
+  ],
+  "source_runtime_zip_bytes": 709587,
+  "source_runtime_zip_sha256": "d15f40e92633486d61620aa88fc9a363c48320d33fc8bab13fe952ae8644c03a",
+  "frozen_source_sha256": "fd587823304fe8c7fbecde40d6b659f2596dee0fc7bbb001bef708542fec9950",
+  "native_sha256": "1640990bf519c2c7df278b18e305e97433aa260f56b542b1c6ae01ad1d9a5b16",
+  "runtime_zip_unchanged_since_initial_selected_checkpoint": true,
+  "game_attempts": 714,
+  "game_failures": 0,
+  "partial_games": 0,
+  "undeclared_or_unstarted_cells": 0,
+  "local_replays": 714,
+  "supplied_replays": 8,
+  "local_transitions": 513366,
+  "all_replay_transitions": 519118,
+  "local_state_frames": 514080,
+  "all_replay_state_frames": 519840,
+  "fixed_author_validation_candidate_mean": 203546.0625,
+  "paired_validation_baseline_mean": 205546.65625,
+  "paired_validation_delta": -2000.59375,
+  "fixed_author_cash_gate_passed": true,
+  "pooled_development_candidate_mean": 206454.93125,
+  "pooled_development_baseline_mean": 207614.375,
+  "robust_improvement_established": false,
+  "selection_rule_followed": true,
+  "no_source_change_or_fallback_or_added_validation_seeds_after_freeze": true,
+  "all_1224_known_seed_exclusions_checked": true,
+  "actual_task_seed_count": 96,
+  "recoverable_used_id_union_after_task": 1240,
+  "unknown_historical_seed_ids_and_count": "remain unknown",
+  "missing_Round02_502_game_claim": "unverified and not included",
+  "archive_audit_failure_preserved_in": "C06_ROUND06_delivery_audit.zip",
+  "corrected_final_archive_audit_passed": true,
+  "source_and_evidence_zip_count": 15,
+  "evidence_zip_count": 14,
+  "evidence_payload_files": 5240,
+  "every_evidence_zip_below_50000000_bytes": true,
+  "source_zip_below_5000000_bytes": true,
+  "controller_fresh_qualification_claimed": false,
+  "competitive_result_claimed": false
+}
