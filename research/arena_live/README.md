@@ -6,7 +6,9 @@ CPU evaluation on WRX90 and the mini PC. Results below are local; they are not K
 
 [Submit an agent or join the workflow](../workflows/pro8_arena/START.md)
 
-Arena-certified champion: None yet. AFS R2 remains a historical reference, not a new certification.
+Best team agent: First tournament in progress
+
+Live Elo leader: kaggriculture-v41-review-candidate [PUBLIC] — 1720.3 Elo, 208 games
 
 Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.
 
