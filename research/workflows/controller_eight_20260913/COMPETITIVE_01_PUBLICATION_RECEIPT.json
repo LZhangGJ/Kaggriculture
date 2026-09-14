@@ -1,0 +1,53 @@
+{
+  "status": "REMOTE_ASSET_VERIFIED",
+  "repository": "LZhangGJ/Kaggriculture",
+  "release_tag": "controller-eight-round01-20260913",
+  "remote_asset": {
+    "url": "https://api.github.com/repos/LZhangGJ/Kaggriculture/releases/assets/562630766",
+    "id": 562630766,
+    "node_id": "RA_kwDOT09eU84hiRBu",
+    "name": "COMPETITIVE_01_COMPLETE.zip",
+    "label": "",
+    "uploader": {
+      "login": "keithtyser",
+      "id": 34146295,
+      "node_id": "MDQ6VXNlcjM0MTQ2Mjk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34146295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keithtyser",
+      "html_url": "https://github.com/keithtyser",
+      "followers_url": "https://api.github.com/users/keithtyser/followers",
+      "following_url": "https://api.github.com/users/keithtyser/following{/other_user}",
+      "gists_url": "https://api.github.com/users/keithtyser/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/keithtyser/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/keithtyser/subscriptions",
+      "organizations_url": "https://api.github.com/users/keithtyser/orgs",
+      "repos_url": "https://api.github.com/users/keithtyser/repos",
+      "events_url": "https://api.github.com/users/keithtyser/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/keithtyser/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "content_type": "application/zip",
+    "state": "uploaded",
+    "size": 1275795335,
+    "digest": "sha256:e321e5a2054977e76c14ed72e544e55d2f0ea8674096db46d4aa3d82ff4a6cf2",
+    "download_count": 0,
+    "created_at": "2026-09-14T05:06:25Z",
+    "updated_at": "2026-09-14T05:07:27Z",
+    "browser_download_url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/COMPETITIVE_01_COMPLETE.zip"
+  },
+  "file": "COMPETITIVE_01_COMPLETE.zip",
+  "bytes": 1275795335,
+  "sha256": "e321e5a2054977e76c14ed72e544e55d2f0ea8674096db46d4aa3d82ff4a6cf2",
+  "candidate_acceptance": {
+    "C05": false,
+    "C03": false
+  },
+  "accepted_candidates": [],
+  "review_plan_sha256": "b44c6beb3d8bfedd9f5437b80495fe43a2428d9b80f75942ae0abda552485689",
+  "source_hashes_unchanged_after_upload": true,
+  "prior_assets_preserved": true,
+  "git_commit_and_push_performed": false
+}

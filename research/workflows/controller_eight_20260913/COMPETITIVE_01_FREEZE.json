@@ -1,0 +1,320 @@
+{
+  "candidates": [
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime/main.py",
+      "files": {
+        "BUILD_VERIFICATION.json": "9ead47dadd425a1a5d7474a230e435e6aa5ac835593fa98384eb411a466366a4",
+        "COMPILER_FLAGS.json": "a7c4ff30eb59c0749a2294ccbb80113ca2b17191304029151af76e7eae368c42",
+        "FINAL_VS_OWN.patch": "aa8555f27daedf242cdbfb6ad878d8ae049fa4204b88e4869135cd83a32b35ab",
+        "PROVENANCE.json": "79ac0ce189c350ab6204bd8473cd1cbf68dda9942de4d153da758d3626ffa9e8",
+        "README.md": "b5a67e43d01efc3c3b21fd27bde6473f737e084763b35caddde3102587c9787f",
+        "SHA256SUMS.txt": "f4a390ef3106341f92ae892e61d2614adfc1e034ebdb57d84a39caaf9f7a226b",
+        "SOURCE_FREEZE.json": "4f202b5b1ea19c8ee2a6dd425afd1fc7a3d1f1fb20e56c51324f5f7937209b2f",
+        "SOURCE_MANIFEST.json": "c48c32de79b8b5c060218f848dfd94266cf87a137026cbd06b81bd4f9c79e2fa",
+        "build.py": "aa5365997395c5f321d57ebdb4b9507f4af46a9e0969d8e99f7095653ec791c3",
+        "build/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "evaluation/inputs/referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+        "evaluation/inputs/referee/official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+        "evaluation/inputs/referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "evaluation/inputs/referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
+        "main.py": "57a2030a4ca820cf5996a2ea35961b75ca580e2b6a913970de065a04cbbd3064",
+        "policy/a06.BUILD.json": "d3e75a69a81f30dd689454efa58550cd88507d382881752b45404e5be1095213",
+        "policy/a06.so": "cd392768788630c6f981ed6e494713f7c9ffdc6a12ffeaf15b4b2d4363177c28",
+        "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+        "policy/agent.py": "a758bc676b45fe906f316017e230b1b67edbc90e39635b8aa75ef83c5ed26134",
+        "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+        "policy/bridge.cpp": "51dbbe2fe7a9ed30edb6234cf001b688161bdd39a5cd07889377080b03bd046d",
+        "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+        "policy/config.json": "e65a0ae79ad3a525170936eac662c0517cc8926ad6510dce20f2384ba3dca37c",
+        "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+        "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+        "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+        "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+        "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+        "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+        "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+        "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+        "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+        "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+        "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+        "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+        "policy/executor/policy.hpp": "91a4bd6e4b2ca9151a2c71696db38f7e71a6e28a1f2e172b4037aa73b8ab94e0",
+        "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+        "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+        "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+        "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+        "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+        "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+        "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+        "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+        "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+        "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+        "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+        "policy/observed_capital.hpp": "1dc388df2ea35dde9b9129dc6e23136c79b948879b92c495dd5edf6ad50e5dc9",
+        "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+        "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+        "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+        "policy/proposals.hpp": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+        "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+        "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+        "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+        "policy/search.hpp": "09c4c93ed4c97e99965d1a6398e7bac509162c2b2dc16822c079a6fc1f9b873f",
+        "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+        "policy/triad.hpp": "517e6281c19433e20a88f1163f7280f6e803f58645c61f18740c2c2427a13e9a",
+        "test_output/atomic_build_failure_test.json": "b84f4072c4ae996dab99bf9007faf438dd3af0a47026ec41e9c1713770b4f68d",
+        "test_output/entry_parity.json": "26f2457bc78e660f0ee38f5a8873c33ae75a3ce1f843d2da38f412f6f3041fe2",
+        "test_output/observed_capital_contract": "36d61a00356ac37b07116bb4139265899948b80d2f61f81ba41a7d9615047a13",
+        "test_output/observed_capital_contract.json": "2c6363307d1a8ec0dc42b349d05d934ae92b871f8b4020a4de2c7e79bb08be0a",
+        "test_output/runtime_guards.json": "6b96431a2ad72877f876c4517f5188e258565cd0fb523bf8db465d8c7e91bfa9",
+        "test_output/service_dp_oracle/cases.json": "fb4bf3431d524af549a130a23a35b9a9df72908131f7b31478e78ef749aab357",
+        "test_output/service_dp_oracle/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "test_output/service_dp_oracle/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "test_output/service_dp_oracle/native_tables.txt": "cf8e65e79a6555816785e37b484486eb7d2d046d195200825b72154ae38d9aa1",
+        "test_output/service_dp_oracle/oracle": "da1708b70ade2f03b19978940f40307b34ca4a14a678050bf4a57d171db7ed9e",
+        "test_output/service_dp_oracle/report.json": "785b564ce4a98956f5e4e86787233f622ff285ec9e5b86ee4a537185249e748f",
+        "test_output/unit_summary.json": "fb76be136ccce0789476da530c1a78aed8607f90b96f8b69e6b753f1dfabb1b5",
+        "tests/check_entry_and_parity.py": "8d4df66d5778e254c46457b604aea9b9f1118a788dc69805088f4b151f6ad470",
+        "tests/fixtures/trace_1338192299_0.jsonl.gz": "f00478622f60a468cbc8acf19548c0c9f08f27e02c3ece05b4adb51ce8badc41",
+        "tests/fixtures/trace_1338192299_1.jsonl.gz": "5d0e34947fb4d9b02d52cf6289f986fa8073b13fb3172828d17b748be4f7837c",
+        "tests/observed_capital_contract.cpp": "8c84f6ffe04b65e1683fb4a408487582dd682aef78552267888f23c2db3e5a25",
+        "tests/run_units.py": "6145870b775638d65776d5d4f550715b79081041938b62a01f6aa582f21abfa2",
+        "tests/service_oracle.cpp": "9410e67c805cd0c179b0f391c3af35f885918a3cddd4d1cdbeb5442a0f0b1d55",
+        "tests/test_offline_build.py": "5599cd4567272dbddcdc16562028096da19f468d107fbbc8789810b788cf74eb",
+        "tests/test_runtime_guards.py": "870097b329c65802d7355b24d7f24aabc2509125c8186dcb1f19ecdb2cfc3355",
+        "tests/test_service_oracle.py": "bdbb248d8e083cd5af0c28e93ef182b3bb68c805034eb6dd3d8bb478ce17f0e3"
+      },
+      "id": "C05",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_round05_verification/runtime"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c03_round03_verification/runtime/main.py",
+      "files": {
+        "COMPILER_FLAGS.json": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85",
+        "FROZEN_SOURCE.json": "794b1749acc17bac2b24e606e7a24f3164fd7be738c6d2af78cabcfa2f8380d5",
+        "MANIFEST.json": "cf27e78b65b71f26e07d33ad5d56e1ee6e310044ccdba1d9babfed3fba0fbf51",
+        "PROVENANCE_ROUND03.md": "a785a21d34bab593f2779d03a16513e013d2ab923c9c1c867108777b357da523",
+        "README.md": "ed14586bb34b1383e8dadd05def18912afe5b9f5c4eb3b672d311436da106c0f",
+        "REPORT.md": "34d82fbeb8c8ff4a47f4664b2a30213fd4435b29887bbe812c85a762678a6de1",
+        "build.py": "134849f5cf9fd760488a2ad9125eeb953f158589b4495c9dbb6c2b16aaa6aec5",
+        "build/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build/entry_tests.json": "6c377b00149e579ebb1294f1eea5520b5c8b4de098319fad1938763461546acf",
+        "build/unit_tests/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build/unit_tests/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build/unit_tests/price_cases.txt": "47144168c09c566a8d70852fb6ec882584da34db2a728e3c92076e212dbf5958",
+        "build/unit_tests/result.json": "0afac19562a174bec3d6bc0b4ff7f50e4aad26b070ed9cc338d4ebed38917198",
+        "build/unit_tests/test_c03": "8e4f47860f2870b00876c510e4a143e65f1723f6a16d08256c853a92a65bc3f9",
+        "main.py": "72c2cfdfc3e9cfd358aa78c6c136efd89c2a388f39f01d592eceac6e3624f977",
+        "policy/a06.BUILD.json": "47203aa98a943dab86e64ac3a3da3c3c9248ddae16db5952858d931e7f61155d",
+        "policy/a06.so": "b7e5d7eec3e24b1ee31f90ec22d4d79a82014b12b632f6fda640d8e650c8cd65",
+        "policy/a06_live_reinvestment.inc": "2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c",
+        "policy/agent.py": "d21c9be2f246342347bfe0c4a29b1ca8e700809c6d36104a53dd01d956824de2",
+        "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+        "policy/bridge.cpp": "effd080e4e44c2956689be3d7fe17d4dc315139fa67929a695c3b70ef8c9ff5b",
+        "policy/c03_inventory_sale.hpp": "dfd8d665d849e2349e991dfc23ce2198cd365e9e3ff2bafb379249e93b2d77f8",
+        "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+        "policy/config.json": "d629b52138d27c9f0662bef2b13b72ec8943343ccfe7a66325e425a73fe5ae33",
+        "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+        "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+        "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+        "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+        "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+        "policy/executor/intraday_admission.hpp": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+        "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+        "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+        "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+        "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+        "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+        "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+        "policy/executor/policy.hpp": "6e347f363458fe3b211a38f439adbf48622af6de62c0f9d2be11031ce93cd07e",
+        "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+        "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+        "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+        "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+        "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+        "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+        "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+        "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+        "policy/learned_value.hpp": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+        "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+        "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+        "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+        "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+        "policy/planner.hpp": "19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c",
+        "policy/proposals.hpp": "191d0db6c70ae46a501b36e2ecb486331e85f37d805c55ef2095dadbc7ec87f1",
+        "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+        "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+        "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+        "policy/search.hpp": "73927a05351fed17a07271806acb8deeed4e7e6446a4944bd5ff3e358f6c4c63",
+        "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+        "policy/triad.hpp": "678c684a28337c765b56dbd3ac8101a8ab2cbf50b32b692ce1481361d3c3bcab",
+        "referee/cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+        "referee/official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+        "referee/official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "referee/official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698",
+        "results/ADDITIONAL_C08_EXCLUSIONS.json": "771ab78fc766bff11274067cf6538dc44338ca78d53fb738fabc636cab2e4d51",
+        "results/ALL_ATTEMPTS_AUDIT.json": "cfb13233e24b2ac11b0dc9da4f379934722164c3bc33aac8ffb30149f4c93ebb",
+        "results/ALL_SETTINGS.json": "1ce7a820fa2a869d43183ae48105c203399448677db24b007108614eeea36bec",
+        "results/CLEAN_BUILD_REPRODUCTION.json": "82e17f46382e220fecb5567187e4244b9d1036abc3e4f676ea3bc5175d3f700f",
+        "results/DEVELOPMENT_SELECTION_RESULT.json": "c92ce80f24cd7893231fafe59b69b614fc18a8657a908bd005c3542218af13a3",
+        "results/DEVELOPMENT_SELECTION_RULE.json": "b6dff5730362a3641602fdfd8cae5757820fe22456496d088e2c9b56fe85c80a",
+        "results/FINAL_SOURCE_BINDINGS.json": "59a2ee27c5a833fdc8a9ed64734e5a8f86a1e7b7a9c7caf6e5aced6b22e9f02d",
+        "results/RECEIPT_TIMESTAMP_NOTE.json": "7132b3f33204f907eddc078ed39d53629c345a2c5f6d2046240fb9eef617d5ba",
+        "results/RESOURCE_TIMING_REPORT.json": "7865b19936d16dc7d7953346c5d8949f1c3634f3e5ac759b3d75981188ef0328",
+        "results/SEED_INVENTORY.json": "ffaae5a2342484882d0a5d8428ff7188236c3920c7c5dc65742d4d4f7292c3a6",
+        "results/VALIDATION_DECLARATION.json": "fdda1905d2bc04aefd2f1c2b5248499b08f6d2b19f2bbf467b0cb07019f132dd",
+        "results/VALIDATION_RESULT.json": "b7c5b3114737b4827177eb679e93ef136c9ee4cdeaa9e8b94a8379556dc176cf",
+        "results/all_results.csv": "2a0af4980d671f52b8f27309bfe6a821f04a0784dce71649a3645b5c8d7ed5d1",
+        "tests/run_units.py": "c60b5ebccfacca0c03e127f8770a0bdd3b61ab655fbb38ad2eb4e3747f3688c7",
+        "tests/test_c03.cpp": "8511407849371fd1ba51b1980e6221372402f5a9ef4c4728d41ea6831e2949cb",
+        "tests/test_entry.py": "d933457b6cf083b34a7ba8aa0154c5138df5faeee0885d397f95d438348fe12a",
+        "tools/evaluate.py": "e3f02b31f222d73b9ccc2090d35df7ab68d762c434e37195d887c7d22dba6641",
+        "verify_delivery.py": "6e1c088fb48dbf9f8fae81dcb12aeebb32d4fe69edeb3ed6b33883d654576622"
+      },
+      "id": "C03",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c03_round03_verification/runtime"
+    }
+  ],
+  "frozen_unix": 1789356620.926553,
+  "harness_sha256": "94c2b77b39d21491f3fc5e336d7aba6c764ffe96572fec3c348eb230ee84e99b",
+  "opponents": [
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/soil_v219g/main.py",
+      "files": {
+        "main.py": "4f5043530e0104f4867ad7455800dc8a40d4b589e9deb84b000e105e0b077157"
+      },
+      "id": "soil_v219g",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/soil_v219g"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/moon_v215/main.py",
+      "files": {
+        "main.py": "a32d1bbbe915e1f7f370f012155548915f5f846a517b45cbe90245294255af1f"
+      },
+      "id": "moon_v215",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/moon_v215"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/flexon_v5/main.py",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+        "router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+        "settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+        "terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+        "unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+      },
+      "id": "flexon_v5",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/flexon_v5"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/market_smart_v8/main.py",
+      "files": {
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "policy.py": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+        "router_parent.py": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+        "settings.json": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8",
+        "terminal_planner.py": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+        "unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383"
+      },
+      "id": "market_smart_v8",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/market_smart_v8"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/nagatakengo_v70/main.py",
+      "files": {
+        "main.py": "ad981d06799c983eb499eb24da0db00598a04ba21a856f1e1558ab35b6e90989"
+      },
+      "id": "nagatakengo_v70",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/nagatakengo_v70"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/aurax_reactive_v1/main.py",
+      "files": {
+        "main.py": "53070a6adfaac7b91914a53e215bf0c521fff1d633db74abdf20bfcd13190175"
+      },
+      "id": "aurax_reactive_v1",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/aurax_reactive_v1"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/thomas_955_v2/main.py",
+      "files": {
+        "main.py": "8241246765098c50223d897739cb32076b71a303284d2e5e1c5f0fb495bb5a97"
+      },
+      "id": "thomas_955_v2",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/thomas_955_v2"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/shop0909/main.py",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "kernel-metadata.json": "f57282a3106f044daecd34ce2e7f1a172e4316f92609acdd0cc5e4ee0111e7ff",
+        "main.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b"
+      },
+      "id": "shop0909",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/shop0909"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/aurax_shop_v2/main.py",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "kernel-metadata.json": "62f38964606e58bfe57c45fdfb653ecf4e868a837a32bee73dec09c386081424",
+        "main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+      },
+      "id": "aurax_shop_v2",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/aurax_shop_v2"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/seven_turn/main.py",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "kernel-metadata.json": "4e171c33bae7a3cd75fba706e091fa66c60bd57483f454c814dc212a0f4619d7",
+        "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+        "policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+        "router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+        "settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+        "terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+        "unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+      },
+      "id": "seven_turn",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/seven_turn"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/ahmed_v27/main.py",
+      "files": {
+        "kernel-metadata.json": "8ee2a4d90ee536541958bc445822142eeee39123580e455fc45fa526aa6f0401",
+        "main.py": "f9db9c4e4114bc956752b90df35d0c7ceda96e5009573f4d6229cc7c95d9f8e9"
+      },
+      "id": "ahmed_v27",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/ahmed_v27"
+    },
+    {
+      "entry": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/submission_56149565/main.py",
+      "files": {
+        "afs_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "afs_runtime/agent.so": "1ead09a9bd48b20b512fb8fe57bbbbd87c86bb12fc9b1b42553e5c5b5bec121c",
+        "afs_runtime/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+        "afs_runtime/policy.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+        "main.py": "7d4055bfce85ac9374e172c2f190abb84f978172c33f9115e1010a08269c3a1b"
+      },
+      "id": "submission_56149565",
+      "root": "/mnt/c/Users/Owner/Documents/Codex/2026-09-11/please-go-onto-my-discord-i/work/portable-repo/evaluation/opponents/submission_56149565"
+    }
+  ],
+  "referee": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/author_input_smoke/referee",
+  "referee_files": {
+    "cpu_runtime.py": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726",
+    "official/kaggriculture.json": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+    "official/kaggriculture.py": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "official/seed_utils.py": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  }
+}

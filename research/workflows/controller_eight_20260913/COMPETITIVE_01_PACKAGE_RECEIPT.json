@@ -1,0 +1,23 @@
+{
+  "file": "COMPETITIVE_01_COMPLETE.zip",
+  "bytes": 1275795335,
+  "sha256": "e321e5a2054977e76c14ed72e544e55d2f0ea8674096db46d4aa3d82ff4a6cf2",
+  "files": 9462,
+  "payload_members_hashed": 9461,
+  "package_manifest_sha256": "22b739430760021e9474cd3de8d586fd8211b6b5f0ae014b136eec006560983f",
+  "crc_valid": true,
+  "all_member_hashes_verified": true,
+  "planned_games": 3072,
+  "valid_games": 3072,
+  "failed_games": 0,
+  "candidate_acceptance": {
+    "C05": false,
+    "C03": false
+  },
+  "accepted_candidates": [],
+  "cash_gate": null,
+  "minimum_strict_wins_per_1536": 1306,
+  "source_and_input_identity_rechecked_after": true,
+  "original_r2_cpp_source_available": false,
+  "audit_receipt_sha256": "01d9c21e7b63dcf3b5694a02482e675b9972e8c977fb1d61fdaab81d874fc6dc"
+}

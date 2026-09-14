@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "scope": "Independent saved-record/hash audit; no interpreter or agent reruns.",
+  "planned_games": 3072,
+  "games_per_candidate": 1536,
+  "valid_games": 3072,
+  "full_recorded_transitions": 2208768,
+  "expected_transitions_if_all_valid": 2208768,
+  "failed_games": 0,
+  "partial_recorded_transitions": 0,
+  "source_integrity": {
+    "C05": true,
+    "C03": true,
+    "soil_v219g": true,
+    "moon_v215": true,
+    "flexon_v5": true,
+    "market_smart_v8": true,
+    "nagatakengo_v70": true,
+    "aurax_reactive_v1": true,
+    "thomas_955_v2": true,
+    "shop0909": true,
+    "aurax_shop_v2": true,
+    "seven_turn": true,
+    "ahmed_v27": true,
+    "submission_56149565": true,
+    "referee": true,
+    "harness": true
+  },
+  "seed_count": 64,
+  "known_exclusion_count": 1272,
+  "acceptance_rule": {
+    "games_per_candidate": 1536,
+    "strict_win_rate_threshold": 0.85,
+    "comparison": "strictly greater than",
+    "minimum_strict_wins": 1306,
+    "denominator": "All 1536 planned cells, including ties and errors.",
+    "cash_gate": null,
+    "complete_valid_coverage_and_source_integrity_required": true
+  },
+  "accepted_candidates": [],
+  "candidate_acceptance": {
+    "C05": false,
+    "C03": false
+  },
+  "common_losing_opponents": [
+    {
+      "opponent": "thomas_955_v2",
+      "losses_by_candidate": {
+        "C05": 77,
+        "C03": 76
+      },
+      "total_losses": 153
+    },
+    {
+      "opponent": "aurax_shop_v2",
+      "losses_by_candidate": {
+        "C05": 71,
+        "C03": 72
+      },
+      "total_losses": 143
+    },
+    {
+      "opponent": "flexon_v5",
+      "losses_by_candidate": {
+        "C05": 67,
+        "C03": 72
+      },
+      "total_losses": 139
+    },
+    {
+      "opponent": "market_smart_v8",
+      "losses_by_candidate": {
+        "C05": 67,
+        "C03": 72
+      },
+      "total_losses": 139
+    },
+    {
+      "opponent": "seven_turn",
+      "losses_by_candidate": {
+        "C05": 67,
+        "C03": 72
+      },
+      "total_losses": 139
+    },
+    {
+      "opponent": "shop0909",
+      "losses_by_candidate": {
+        "C05": 67,
+        "C03": 72
+      },
+      "total_losses": 139
+    },
+    {
+      "opponent": "ahmed_v27",
+      "losses_by_candidate": {
+        "C05": 63,
+        "C03": 75
+      },
+      "total_losses": 138
+    },
+    {
+      "opponent": "soil_v219g",
+      "losses_by_candidate": {
+        "C05": 65,
+        "C03": 69
+      },
+      "total_losses": 134
+    },
+    {
+      "opponent": "aurax_reactive_v1",
+      "losses_by_candidate": {
+        "C05": 60,
+        "C03": 72
+      },
+      "total_losses": 132
+    },
+    {
+      "opponent": "moon_v215",
+      "losses_by_candidate": {
+        "C05": 60,
+        "C03": 72
+      },
+      "total_losses": 132
+    },
+    {
+      "opponent": "submission_56149565",
+      "losses_by_candidate": {
+        "C05": 29,
+        "C03": 69
+      },
+      "total_losses": 98
+    }
+  ],
+  "manifest_sha256": "1f74b2641a55c37b44502ca2ff906eab84feb90e72da6c65a2f0e1fd5b84cacc",
+  "rows_sha256": "ccb245e6da827d50d7e2013ab71abe77b2e4a15727242786b18046e70a1f667f",
+  "summary_sha256": "c95027e3bbed9e03941edee72efbfd031eecc8d8ce27ae42e6b4ee2e6a9d07ee",
+  "settings_sha256": "337de71137463aee94183a3c7f16c6154e523292b5619e305f7013979976b693",
+  "seeds_sha256": "6c7c9c16389a12ee862f488b245d88f1d1c0c2f5cfe56916f3969c463dca21a0",
+  "seconds": 622.0318171380004,
+  "limits": [
+    "Errors and draws remain in each full 1,536-game denominator. Complete valid coverage is also required.",
+    "Cash is descriptive; acceptance has no cash threshold.",
+    "Daily cash and action context are observations, not proved causes or quantified improvement promises."
+  ]
+}

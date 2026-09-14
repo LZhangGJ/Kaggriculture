@@ -1,0 +1,15 @@
+{
+  "action_seconds": 5.0,
+  "command": "run",
+  "freeze": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/central_competitive_01/freeze.json",
+  "game_seconds": 120.0,
+  "mode": "competitive",
+  "output": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/central_competitive_01/results",
+  "replays": true,
+  "resource_preflight": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/controller_harness/pool_preflight_results/RESOURCE_PREFLIGHT.json",
+  "round_seconds": 7200,
+  "seed_ledger": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/outputs/CAMPAIGN_SEED_CLAIMS.jsonl",
+  "seeds": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/central_competitive_01/seeds.json",
+  "startup_seconds": 30.0,
+  "workers": 4
+}
