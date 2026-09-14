@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: 2026-09-14T06:08:14.001456+00:00
+Updated: Sep 14, 2026 at 6:08 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -39,9 +39,9 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.
 
-Last updated: 2026-09-14T06:00:20.135338+00:00 (UTC)
+Last updated: Sep 14, 2026 at 6:00 AM UTC
 
-Status: connection_or_job_error · Last sync: 2026-09-14T06:04:15.677262+00:00
+Status: connection_or_job_error · Last sync: Sep 14, 2026 at 6:04 AM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
@@ -64,24 +64,24 @@ Status: connection_or_job_error · Last sync: 2026-09-14T06:04:15.677262+00:00
 
 | Notebook | Status | Last successful check |
 |---|---|---|
-| raykkretzschmar/kaggriculture-rank-your-agent | updated | 2026-09-14T05:05:05.607822+00:00 |
-| reyhanksatria/kaggriculture-dynamic-route-agent | updated | 2026-09-14T05:05:07.029171+00:00 |
-| aurax7/kaggriculture-shop-router-reactive-v5 | updated | 2026-09-14T04:55:55.166514+00:00 |
-| nathanjacob/no-cow-left-behind-v40-autopsy-fix | updated | 2026-09-14T04:55:56.387541+00:00 |
-| lime0001/t23-kaggriculture-smart-adaptive-harvest | updated | 2026-09-14T04:55:57.708329+00:00 |
-| xuantianfengwu/kaggriculture-adaptive-land-allocator-r10 | updated | 2026-09-14T04:55:53.651283+00:00 |
-| degnonguidi/kaggriculture-utils-v1 | updated | 2026-09-14T04:44:03.589007+00:00 |
-| alperen5252525/kaggriculture-metacounter-r1-scored-agent | updated | 2026-09-14T04:44:05.010287+00:00 |
-| ahmedberatozer/kaggriculture-v41-review-candidate | updated | 2026-09-14T04:44:06.381516+00:00 |
-| aurax7/kaggriculture-shop-router-reactive-v4 | updated | 2026-09-14T04:44:07.752595+00:00 |
-| renjistarfall/kaggriculture-best-agent | updated | 2026-09-14T04:44:09.073683+00:00 |
-| evgendvorkin/kaggriculture | updated | 2026-09-14T04:44:10.544793+00:00 |
-| xuantianfengwu/kaggriculture-adaptive-land-allocator | updated | 2026-09-14T04:44:11.714337+00:00 |
-| yhay81/shop-router-0913 | updated | 2026-09-14T04:44:13.136021+00:00 |
+| raykkretzschmar/kaggriculture-rank-your-agent | updated | Sep 14, 2026 at 5:05 AM UTC |
+| reyhanksatria/kaggriculture-dynamic-route-agent | updated | Sep 14, 2026 at 5:05 AM UTC |
+| aurax7/kaggriculture-shop-router-reactive-v5 | updated | Sep 14, 2026 at 4:55 AM UTC |
+| nathanjacob/no-cow-left-behind-v40-autopsy-fix | updated | Sep 14, 2026 at 4:55 AM UTC |
+| lime0001/t23-kaggriculture-smart-adaptive-harvest | updated | Sep 14, 2026 at 4:55 AM UTC |
+| xuantianfengwu/kaggriculture-adaptive-land-allocator-r10 | updated | Sep 14, 2026 at 4:55 AM UTC |
+| degnonguidi/kaggriculture-utils-v1 | updated | Sep 14, 2026 at 4:44 AM UTC |
+| alperen5252525/kaggriculture-metacounter-r1-scored-agent | updated | Sep 14, 2026 at 4:44 AM UTC |
+| ahmedberatozer/kaggriculture-v41-review-candidate | updated | Sep 14, 2026 at 4:44 AM UTC |
+| aurax7/kaggriculture-shop-router-reactive-v4 | updated | Sep 14, 2026 at 4:44 AM UTC |
+| renjistarfall/kaggriculture-best-agent | updated | Sep 14, 2026 at 4:44 AM UTC |
+| evgendvorkin/kaggriculture | updated | Sep 14, 2026 at 4:44 AM UTC |
+| xuantianfengwu/kaggriculture-adaptive-land-allocator | updated | Sep 14, 2026 at 4:44 AM UTC |
+| yhay81/shop-router-0913 | updated | Sep 14, 2026 at 4:44 AM UTC |
 
 ## Public discovery and replacements
 
-Last scan: 2026-09-14T05:05:03.284394+00:00. Found 497 notebooks; 23 updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. A completed daily panel is required to select the weakest public agent.
+Last scan: Sep 14, 2026 at 5:05 AM UTC. Found 497 notebooks; 23 updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. A completed daily panel is required to select the weakest public agent.
 
 Each challenger and the proposed replacement face the same other agents on 128 fresh seeds in both seats. Replacement requires at least a two-point win-rate gain and a positive approximate 95% lower bound. This is a roster decision, not a 90% strength certificate.
 
@@ -126,7 +126,7 @@ Each challenger and the proposed replacement face the same other agents on 128 f
 
 ## daily-2026-09-14 — provisional
 
-Bradley–Terry leaderboard · Last updated: 2026-09-14T06:08:13.942788+00:00 (UTC)
+Bradley–Terry leaderboard · Last updated: Sep 14, 2026 at 6:08 AM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Cash margin |
 |---|---:|---:|---:|---:|
