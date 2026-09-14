@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-14T01:09:07.7643056Z",
+  "asset_count": 227,
+  "verified_assets": [
+    {
+      "apiUrl": "https://api.github.com/repos/LZhangGJ/Kaggriculture/releases/assets/562261621",
+      "contentType": "application/zip",
+      "createdAt": "2026-09-14T01:08:53Z",
+      "digest": "sha256:811c41ab531910308f8996bb9c60509b912064cd5557c370ba54279c67e82a71",
+      "downloadCount": 0,
+      "id": "RA_kwDOT09eU84hg251",
+      "label": "",
+      "name": "C08_ROUND02_CONTROLLER_VERIFICATION.zip",
+      "size": 1852585,
+      "state": "uploaded",
+      "updatedAt": "2026-09-14T01:08:54Z",
+      "url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C08_ROUND02_CONTROLLER_VERIFICATION.zip"
+    }
+  ]
+}
