@@ -39,7 +39,7 @@ def run_report(root, m, bootstrap):
 
 
 def pct(value):
-    return "—" if value is None else f"{value*100:.1f}%"
+    return "â€”" if value is None else f"{value*100:.1f}%"
 
 
 def readable_time(value):
@@ -54,6 +54,20 @@ def readable_time(value):
         moment = moment.replace(tzinfo=timezone.utc)
     moment = moment.astimezone(timezone.utc)
     return f"{moment:%b} {moment.day}, {moment.year} at {moment.hour % 12 or 12}:{moment:%M} {moment:%p} UTC"
+
+
+def leaders(data):
+    agents = {a['id']: a for a in data['agents']}
+    completed = sorted((r for r in data['runs'] if r['kind'] == 'daily' and r['complete']), key=lambda r: r['created'])
+    latest = completed[-1] if completed else None
+    team = [a for a, rating in latest['ratings'].items() if rating is not None and agents[a]['agent_type'] == 'team'] if latest and len(latest['components']) == 1 else []
+    best = max(team, key=lambda a: latest['ratings'][a]) if team else None
+    active = {r['agent'] for r in data['roster']}
+    rated = [r for r in data['continuous_elo']['ratings'] if r['agent'] in active and r['games'] > 0]
+    live = max(rated, key=lambda r: r['elo']) if rated and len({r['contract'] for r in rated}) == 1 else None
+    best_text = agents[best]['name'] + ' (' + latest['run'] + ')' if best else ('No comparable team result' if latest else 'First tournament in progress' if any(r['kind'] == 'daily' for r in data['runs']) else 'First tournament not started')
+    live_text = agents[live['agent']]['name'] + (' [PUBLIC]' if agents[live['agent']]['agent_type'] == 'public' else ' [Team]') + f" — {live['elo']:.1f} Elo, {live['games']} games" if live else 'No comparable rated result'
+    return best_text, live_text
 
 
 def build(root, bootstrap=500):
@@ -97,10 +111,11 @@ def build(root, bootstrap=500):
             label += ' <strong class="public-badge">Public notebook</strong>'
             if meta.get("notebook"):
                 notebook = escape(meta["notebook"], quote=True)
-                label += f' <small><a href="https://www.kaggle.com/code/{notebook}">{notebook}</a> · v{escape(meta["notebook_version"])}</small>'
+                label += f' <small><a href="https://www.kaggle.com/code/{notebook}">{notebook}</a> Â· v{escape(meta["notebook_version"])}</small>'
         return label
-    sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview · Updated " + escape(readable_time(data["updated"])) + "</p>",
-                "<h2>Verified champion</h2><p>" + (name(data["champion"]) if data["champion"] else "Not nominated") + "</p>",
+    best_text, live_text = leaders(data)
+    sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview Â· Updated " + escape(readable_time(data["updated"])) + "</p>",
+                "<h2>Best team agent</h2><p>" + escape(best_text) + "</p><h2>Live Elo leader</h2><p>" + escape(live_text) + "</p>",
                 '<p>Daily, placement and fixed-benchmark results are separate. Ratings from different rosters are not directly comparable.</p>']
     active={e['agent'] for e in data['roster']}
     elo_rows=[r for r in data['continuous_elo']['ratings'] if r['agent'] in active]
@@ -117,7 +132,7 @@ def build(root, bootstrap=500):
         sections.append("<p>No public notebook refresh sources configured.</p>")
     for r in refreshes:
         status = "stale (" + r["status"] + ")" if r.get("date") != today else r["status"]
-        sections.append(f"<p>{escape(r['notebook'])}: {escape(status)} · checked {escape(readable_time(r['attempted']))} · last success {escape(readable_time(r.get('successful')))}</p>")
+        sections.append(f"<p>{escape(r['notebook'])}: {escape(status)} Â· checked {escape(readable_time(r['attempted']))} Â· last success {escape(readable_time(r.get('successful')))}</p>")
     sections += ["<h2>Submissions</h2><table><tr><th>Agent / source</th><th>Author</th><th>Status</th></tr>"]
     for a in public_agents:
         sections.append(f"<tr><td>{name(a['id'])} ({escape(a['version'])})</td><td>{escape(a['author'])}</td><td>{'Validation failed' if a['validation_failed'] else escape(a['status'])}</td></tr>")
@@ -131,7 +146,7 @@ def build(root, bootstrap=500):
         sections.append("<h2>Largest daily matchup changes</h2><p>Same versions only. Descriptive changes, not significance tests.</p><ul>")
         for change, key in sorted(changes, key=lambda v: -abs(v[0]))[:6]:
             a, b = key.split(":")
-            sections.append(f"<li>{name(a)} vs {name(b)}: {change*100:+.1f} points ({previous['matrix'][key]['games']} → {latest['matrix'][key]['games']} games)</li>")
+            sections.append(f"<li>{name(a)} vs {name(b)}: {change*100:+.1f} points ({previous['matrix'][key]['games']} â†’ {latest['matrix'][key]['games']} games)</li>")
         sections.append("</ul>")
     for aid in agents:
         contracts = {r["contract"] for r in runs}
@@ -139,13 +154,13 @@ def build(root, bootstrap=500):
             for contract in contracts:
                 series = [(r["run"], r["stats"][aid]["win_rate"]) for r in runs if r["complete"] and r["kind"] == kind and r["contract"] == contract and aid in r["stats"]]
                 if len(series) >= 2:
-                    sections.append("<h3>" + name(aid) + " — " + kind + " strict win rate</h3><p>Changes in opponents can affect daily results.</p>" + sparkline(series))
+                    sections.append("<h3>" + name(aid) + " â€” " + kind + " strict win rate</h3><p>Changes in opponents can affect daily results.</p>" + sparkline(series))
     for run in reversed(runs):
         connected = len(run["components"]) == 1
         order = sorted(run["ratings"], key=lambda a: -(run["ratings"][a] or 0))
         title = "Completed" if run["complete"] else "Provisional"
-        body = [f"<h2>{escape(run['run'])} — {title}</h2><p>{run['completed']:,}/{run['planned']:,} games · {escape(run['kind'])}</p>"]
-        body.append('<p>Bradley–Terry leaderboard · Last updated: '+escape(readable_time(run['updated']))+'</p>')
+        body = [f"<h2>{escape(run['run'])} â€” {title}</h2><p>{run['completed']:,}/{run['planned']:,} games Â· {escape(run['kind'])}</p>"]
+        body.append('<p>Bradleyâ€“Terry leaderboard Â· Last updated: '+escape(readable_time(run['updated']))+'</p>')
         if not connected:
             body.append("<p>Disconnected comparisons: ratings are only comparable within each component.</p>")
         if connected and run["complete"] and order:
@@ -154,8 +169,8 @@ def build(root, bootstrap=500):
         for aid in order:
             st = run["stats"][aid]
             val, ci = run["ratings"][aid], run["intervals"][aid]
-            rating = "—" if val is None else f"{val:.2f}" + (f" [{ci[0]:.2f}, {ci[1]:.2f}]" if ci else " [insufficient data]")
-            margin = "—" if st["cash_margin"] is None else f"{st['cash_margin']:,.0f}"
+            rating = "â€”" if val is None else f"{val:.2f}" + (f" [{ci[0]:.2f}, {ci[1]:.2f}]" if ci else " [insufficient data]")
+            margin = "â€”" if st["cash_margin"] is None else f"{st['cash_margin']:,.0f}"
             body.append(f"<tr><td>{name(aid)}</td><td>{rating}</td><td>{st['wins']}/{st['losses']}/{st['draws']}</td><td>{pct(st['win_rate'])}</td><td>{pct(st['score'])}</td><td>{margin}</td></tr>")
         body.append("</table><details><summary>Matchups and seats</summary><table><tr><th>Agent</th><th>Opponent</th><th>Win rate (games)</th><th>Seat 0 W/G</th><th>Seat 1 W/G</th></tr>")
         for key, st in run["matrix"].items():
@@ -173,7 +188,7 @@ def build(root, bootstrap=500):
     md = ["# Kaggriculture arena", "", "Updated: " + readable_time(data["updated"]), "",
           "CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.", "",
           "[Submit an agent or join the workflow](../workflows/pro8_arena/START.md)", "",
-          "Arena-certified champion: " + (label(data['champion']) if data['champion'] else "None yet. AFS R2 remains a historical reference, not a new certification."), "",
+          "Best team agent: " + best_text, "", "Live Elo leader: " + live_text, "",
           "Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.", "",
           "## Roster", "", "| Agent | Type | Version | Status |", "|---|---|---|---|"]
     for a in public_agents:
@@ -181,7 +196,7 @@ def build(root, bootstrap=500):
     md += ['', '## Continuous Elo', '',
            'Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.', '',
            'Last updated: '+readable_time(data['continuous_elo'].get('updated')), '',
-           'Status: '+data['continuous_status']['status']+' · Last sync: '+readable_time(data['continuous_status'].get('at')), '',
+           'Status: '+data['continuous_status']['status']+' Â· Last sync: '+readable_time(data['continuous_status'].get('at')), '',
            '| Agent | Elo | Games | Score | Contract |','|---|---:|---:|---:|---|']
     for r in elo_rows:
         badge=' **PUBLIC**' if metadata[r['agent']]['agent_type']=='public' else ''
@@ -198,13 +213,13 @@ def build(root, bootstrap=500):
     md += ["", "## Run coverage", "", "| Run | Status | Games |", "|---|---|---|"]
     md += [f"| {r['run']} | {'Complete' if r['complete'] else 'Provisional'} | {r['completed']}/{r['planned']} |" for r in runs]
     for run in reversed([r for r in runs if r['kind']=='daily'][-2:]):
-        md += ["", '## '+run['run']+(' — complete' if run['complete'] else ' — provisional'), "",
-               "Bradley–Terry leaderboard · Last updated: "+readable_time(run["updated"]), "",
+        md += ["", '## '+run['run']+(' â€” complete' if run['complete'] else ' â€” provisional'), "",
+               "Bradleyâ€“Terry leaderboard Â· Last updated: "+readable_time(run["updated"]), "",
                "| Agent | BT rating | W / L / D | Strict win rate | Cash margin |", "|---|---:|---:|---:|---:|"]
         for aid in sorted(run['ratings'],key=lambda a:-(run['ratings'][a] or 0)):
             s=run['stats'][aid];v=run['ratings'][aid];ci=run['intervals'][aid]
-            rating='—' if v is None else f'{v:.2f}'+(f' [{ci[0]:.2f}, {ci[1]:.2f}]' if ci else '')
-            margin='—' if s['cash_margin'] is None else f"{s['cash_margin']:,.0f}"
+            rating='â€”' if v is None else f'{v:.2f}'+(f' [{ci[0]:.2f}, {ci[1]:.2f}]' if ci else '')
+            margin='â€”' if s['cash_margin'] is None else f"{s['cash_margin']:,.0f}"
             md.append(f"| {label(aid)} | {rating} | {s['wins']} / {s['losses']} / {s['draws']} | {pct(s['win_rate'])} | {margin} |")
         md += ["", "<details><summary>Win rate by opponent and seat</summary>", "",
                "| Agent | Opponent | Wins / games | Win rate | Seat 0 W/G | Seat 1 W/G |", "|---|---|---:|---:|---:|---:|"]

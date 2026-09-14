@@ -40,8 +40,12 @@ function render(){
   $('cards').replaceChildren();
   const daily=data.runs.filter(r=>r.kind==='daily');
   const latest=daily.at(-1);
-  const cards=[['Active agents',data.roster.length,'Public and team versions'],['Rated games',fmt(data.continuous_elo.ratings.reduce((s,r)=>s+r.games,0)/2),'Completed games across all versions'],['Daily coverage',latest?`${fmt(latest.completed)} / ${fmt(latest.planned)}`:'Not started',latest?.complete?'Completed tournament':'Provisional tournament'],['Certified champion',data.champion?agent(data.champion).name:'None yet','AFS R2 remains a reference']];
-  for(const [label,value,note]of cards){const card=element('div',null,'card');card.append(element('small',label),element('strong',String(value),label==='Certified champion'?'champ':''),element('small',note));$('cards').append(card);}
+  const completed=[...daily].filter(r=>r.complete).sort((a,b)=>a.created.localeCompare(b.created)).at(-1);
+  const team=completed?.components.length===1?Object.keys(completed.ratings).filter(id=>agent(id).agent_type==='team'&&Number.isFinite(completed.ratings[id])).sort((a,b)=>completed.ratings[b]-completed.ratings[a]):[];
+  const leaders=new Set(elo.filter(r=>r.games>0).map(r=>r.contract)).size===1?elo.filter(r=>r.games>0).sort((a,b)=>b.elo-a.elo):[];
+  const best=team[0], live=leaders[0];
+  const cards=[['Active agents',data.roster.length,'Public and team versions'],['Rated games',fmt(data.continuous_elo.ratings.reduce((s,r)=>s+r.games,0)/2),'Completed games across all versions'],['Daily coverage',latest?`${fmt(latest.completed)} / ${fmt(latest.planned)}`:'Not started',latest?.complete?'Completed tournament':'Provisional tournament'],['Best team agent',best?agent(best).name:completed?'No comparable team result':daily.length?'First tournament in progress':'First tournament not started',best?completed.run+' · '+agent(best).version:'Selected from a completed tournament'],['Live Elo leader',live?agent(live.agent).name:'No comparable rated result',live?(agent(live.agent).agent_type==='public'?'PUBLIC':'Team')+' · '+fmt(live.elo)+' Elo · '+fmt(live.games)+' games':'Uses active agents under one evaluation contract']];
+  for(const [label,value,note]of cards){const card=element('div',null,'card');card.append(element('small',label),element('strong',String(value),['Best team agent','Live Elo leader'].includes(label)?'champ':''),element('small',note));$('cards').append(card);}
   document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('selected',b.dataset.view===view));
   $('results-panel').hidden=view==='upload';$('upload-panel').hidden=view!=='upload';
   if(view==='upload'){loadUploads();return;}
