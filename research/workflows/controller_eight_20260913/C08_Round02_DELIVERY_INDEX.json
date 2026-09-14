@@ -1,0 +1,237 @@
+{
+  "actual_policy_game_attempts": 644,
+  "actual_policy_game_transitions": 463036,
+  "deadline_utc": "2026-09-14T01:02:48.414Z",
+  "evidence_file_count": 4313,
+  "evidence_parts": [
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 33683364,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_01.zip",
+      "manifest": "MANIFEST_PART_01.json",
+      "members_verified": 2381,
+      "sha256": "004e27af70dff38e97c163fd2ed63599c727df101299fcb7689e58f2749e93bf",
+      "verified_utc": "2026-09-14T00:37:41.332211+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45141956,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_02.zip",
+      "manifest": "MANIFEST_PART_02.json",
+      "members_verified": 138,
+      "sha256": "61bbdba6445b0168a67e60dd175e3117e44ea3848f7a4236dcb9614f5b2e2f73",
+      "verified_utc": "2026-09-14T00:37:43.367722+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45329738,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_03.zip",
+      "manifest": "MANIFEST_PART_03.json",
+      "members_verified": 144,
+      "sha256": "c7cbaab7e8516babfc249f1ca97bc9c15a8108497ad4a14397a26657cc560fa5",
+      "verified_utc": "2026-09-14T00:37:45.456249+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45611766,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_04.zip",
+      "manifest": "MANIFEST_PART_04.json",
+      "members_verified": 144,
+      "sha256": "16c79ebd9029d0ece4a705486f05428cabd47a4e2ad68f88443ded975ab1f43b",
+      "verified_utc": "2026-09-14T00:37:47.744401+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45537639,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_05.zip",
+      "manifest": "MANIFEST_PART_05.json",
+      "members_verified": 147,
+      "sha256": "56de8e68ccf4bb25065c28453e9c97bce827fbe09155706e66712e46d3b32aa5",
+      "verified_utc": "2026-09-14T00:37:50.210476+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45383622,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_06.zip",
+      "manifest": "MANIFEST_PART_06.json",
+      "members_verified": 144,
+      "sha256": "a54c1128840ecede9e85d9bf376e3d09633c4756b99915bd187d1451641d4acf",
+      "verified_utc": "2026-09-14T00:37:52.289007+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45137956,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_07.zip",
+      "manifest": "MANIFEST_PART_07.json",
+      "members_verified": 141,
+      "sha256": "edd3443a5bec35e6a8be7e304ae1b3f1e618f82e7becb0a64e7aa58aecc03bb5",
+      "verified_utc": "2026-09-14T00:37:54.388263+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45285639,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_08.zip",
+      "manifest": "MANIFEST_PART_08.json",
+      "members_verified": 147,
+      "sha256": "db5a447f9a77cc176a0744185153fffb0aae347694cd5bdc8a921902cc00fd94",
+      "verified_utc": "2026-09-14T00:37:56.599768+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45133276,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_09.zip",
+      "manifest": "MANIFEST_PART_09.json",
+      "members_verified": 156,
+      "sha256": "4279c968979b7c00a6e00e489096fa0e169e7ea8f7b3ce043d204c36758d680f",
+      "verified_utc": "2026-09-14T00:37:58.828755+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45689907,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_10.zip",
+      "manifest": "MANIFEST_PART_10.json",
+      "members_verified": 153,
+      "sha256": "404240d9c65f01764ab04712e46308a8245baa6a62af6254589ec087f98bab0e",
+      "verified_utc": "2026-09-14T00:38:00.918159+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45651589,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_11.zip",
+      "manifest": "MANIFEST_PART_11.json",
+      "members_verified": 141,
+      "sha256": "d472450f03634dfa3a18194172f22302d4fe68bf7fc066b5dce18f576020aca1",
+      "verified_utc": "2026-09-14T00:38:02.992722+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45543748,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_12.zip",
+      "manifest": "MANIFEST_PART_12.json",
+      "members_verified": 138,
+      "sha256": "7991c610aff1cdd5a822e6349d33e46f35c22e0fac291fee9b7e1b6fa9fc490c",
+      "verified_utc": "2026-09-14T00:38:05.196812+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45783731,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_13.zip",
+      "manifest": "MANIFEST_PART_13.json",
+      "members_verified": 141,
+      "sha256": "a68e7c6abf3eb841b5a4655eaa50ec65107eead97eb007fb8e028869d7cfe429",
+      "verified_utc": "2026-09-14T00:38:07.446070+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 45824310,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_14.zip",
+      "manifest": "MANIFEST_PART_14.json",
+      "members_verified": 138,
+      "sha256": "67d54df1f8e9c2f409934f2a2586ea52e1d4a7c3af209e1bb94bdda11a4cec2c",
+      "verified_utc": "2026-09-14T00:38:09.634159+00:00"
+    },
+    {
+      "all_manifest_members_sha256_verified": true,
+      "bytes": 18898306,
+      "crc_verified": true,
+      "filename": "C08_Round02_evidence_15.zip",
+      "manifest": "MANIFEST_PART_15.json",
+      "members_verified": 60,
+      "sha256": "3eab5c5a6584c99942db871e33281e24a86dc826704fdd68b9da55dcd77ced8b",
+      "verified_utc": "2026-09-14T00:38:10.565134+00:00"
+    }
+  ],
+  "frozen_acting_directory_unchanged_after_validation_and_packaging": true,
+  "generated_utc": "2026-09-14T00:38:10.774631+00:00",
+  "instructions": "Extract all evidence parts into one directory. Each ZIP is independently readable and has an individual SHA256 member manifest. The runtime ZIP is separate and self-contained.",
+  "native_sha256": "69426d6c2aea369767941f1993195c4dd14995142e423025e1a35b700920113f",
+  "packaging_started_utc": "2026-09-14T00:37:33.474587+00:00",
+  "previously_delivered_checkpoints": [
+    {
+      "already_delivered_checkpoint": true,
+      "bytes": 643159,
+      "crc_rechecked": true,
+      "filename": "C08_Round02_checkpoint_00.zip",
+      "sha256": "cd4b25108ea024505af36f3bc499242665ad47fb531e78901a462e1310771e5a"
+    },
+    {
+      "already_delivered_checkpoint": true,
+      "bytes": 693774,
+      "crc_rechecked": true,
+      "filename": "C08_Round02_checkpoint_01.zip",
+      "sha256": "638d7f2a69c4e298fa1b3ccbee3958df336e615c8a788fcc2ae369cbc1584f9a"
+    },
+    {
+      "already_delivered_checkpoint": true,
+      "bytes": 698943,
+      "crc_rechecked": true,
+      "filename": "C08_Round02_checkpoint_02.zip",
+      "sha256": "b0a96949b21da6192bfba991e6ad0b51bab738b6fcc71348b26ede8066d99146"
+    },
+    {
+      "already_delivered_checkpoint": true,
+      "bytes": 706040,
+      "crc_rechecked": true,
+      "filename": "C08_Round02_checkpoint_03.zip",
+      "sha256": "fbd027b8f26c6c5a70cef3e334479297bded17f055c5f331869dd8c74cae96db"
+    }
+  ],
+  "sidecars": [
+    {
+      "bytes": 22764,
+      "filename": "C08_Round02_REPORT.md",
+      "sha256": "bd34a1bc4ffb9aa09bffdb86572707a48246861c98462c033e33fb4aa3cd1ebd"
+    },
+    {
+      "bytes": 378018,
+      "filename": "C08_Round02_RESULTS.csv",
+      "sha256": "d9c35d11ffe1bfea63d435d8a262a1d7f12e3416acec9d89cf97a5a0b6395c20"
+    },
+    {
+      "bytes": 742155,
+      "filename": "C08_Round02_RESULTS.jsonl",
+      "sha256": "31d8948b27064b01243bf6cba048c6ec69b6194032d848654e68284c02709938"
+    },
+    {
+      "bytes": 38844,
+      "filename": "C08_Round02_SEED_INVENTORY.json",
+      "sha256": "a3499f980174fcfc0e920e94151f820d250e64b0514c13eaf99f0e714369a062"
+    },
+    {
+      "bytes": 6975,
+      "filename": "C08_Round02_SOURCE_HASHES.json",
+      "sha256": "6be2c06fb96434beeaa7b89656aa85ce0b1b35a424e96aac223ff7c13a77033b"
+    },
+    {
+      "bytes": 20855,
+      "filename": "C08_Round02_SUMMARY.json",
+      "sha256": "9b0b9c59cbc8038151744791622ca37ea210a1d7bce34887894d45c1fd25b8c5"
+    }
+  ],
+  "source_frozen_utc": "2026-09-14T00:24:28.712237+00:00",
+  "source_runtime": {
+    "all_manifest_members_sha256_verified": true,
+    "bytes": 714790,
+    "crc_verified": true,
+    "filename": "C08_Round02_strategy.zip",
+    "manifest": "PACKAGE_MANIFEST.json",
+    "members_verified": 72,
+    "sha256": "d0f061d2beefe305574146daa5acf4a20af76745ce815fc81ec44a847e78814c",
+    "verified_utc": "2026-09-14T00:37:33.615903+00:00"
+  },
+  "source_sha256": "e49b05c8d98eb6107f3cf9478c00e78d6c10ce55e69158e3060b3dc7ff7129cd"
+}
