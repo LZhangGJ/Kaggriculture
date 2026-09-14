@@ -2,7 +2,7 @@
 from collections import defaultdict
 from html import escape
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from .ratings import summary
@@ -26,8 +26,11 @@ def run_report(root, m, bootstrap):
     key = digest([fingerprint, effective_bootstrap, 1])
     old = read(cache)
     if old and old.get("fingerprint") == key:
+        if "updated" not in old:
+            old["updated"] = datetime.fromtimestamp(cache.stat().st_mtime, timezone.utc).isoformat()
+            write(cache, old)
         return old
-    result = {"run": m["id"], "kind": m["kind"], "created": m["created"], "fingerprint": key,
+    result = {"run": m["id"], "kind": m["kind"], "created": m["created"], "fingerprint": key, "updated": now(),
               "planned": len(m["games"]), "completed": len(rows), "complete": len(rows) == len(m["games"]),
               "contract": m["contract_hash"], **summary(rows, sorted(m["agents"]), effective_bootstrap)}
     # No seed values or local paths go into summary JSON.
@@ -88,6 +91,7 @@ def build(root, bootstrap=500):
     active={e['agent'] for e in data['roster']}
     elo_rows=[r for r in data['continuous_elo']['ratings'] if r['agent'] in active]
     sections += ['<h2>Continuous Elo</h2><p>Mini PC round robin. Daily tournament results do not enter Elo. New versions start at 1500. K=32 per completed seat-swapped pair; draws count half.</p>',
+                 '<p>Last updated: '+escape(data['continuous_elo'].get('updated', 'Not yet'))+' (UTC)</p>',
                  '<p>Status: '+escape(data['continuous_status']['status'])+'</p>',
                  '<table><tr><th>Agent</th><th>Elo</th><th>Games</th><th>Score</th><th>Contract</th></tr>']
     for r in elo_rows:
@@ -127,6 +131,7 @@ def build(root, bootstrap=500):
         order = sorted(run["ratings"], key=lambda a: -(run["ratings"][a] or 0))
         title = "Completed" if run["complete"] else "Provisional"
         body = [f"<h2>{escape(run['run'])} — {title}</h2><p>{run['completed']:,}/{run['planned']:,} games · {escape(run['kind'])}</p>"]
+        body.append('<p>Bradley–Terry leaderboard · Last updated: '+escape(run['updated'])+' (UTC)</p>')
         if not connected:
             body.append("<p>Disconnected comparisons: ratings are only comparable within each component.</p>")
         if connected and run["complete"] and order:
@@ -152,7 +157,7 @@ def build(root, bootstrap=500):
     def label(aid):
         return agents[aid]['manifest']['name'].replace('|', '/').replace('\n',' ')
     md = ["# Kaggriculture arena", "", "Updated: " + data["updated"], "",
-          "CPU evaluation on WRX90. Results below are local; they are not Kaggle leaderboard scores.", "",
+          "CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.", "",
           "[Submit an agent or join the workflow](../workflows/pro8_arena/START.md)", "",
           "Arena-certified champion: " + (label(data['champion']) if data['champion'] else "None yet. AFS R2 remains a historical reference, not a new certification."), "",
           "Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.", "",
@@ -161,6 +166,7 @@ def build(root, bootstrap=500):
         md.append(f"| {label(a['id'])} | {'**PUBLIC**' if a['agent_type']=='public' else 'Team'} | {a['version']} | {a['status']} |")
     md += ['', '## Continuous Elo', '',
            'Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.', '',
+           'Last updated: '+data['continuous_elo'].get('updated', 'Not yet')+' (UTC)', '',
            'Status: '+data['continuous_status']['status']+' · Last sync: '+data['continuous_status'].get('at','Never'), '',
            '| Agent | Elo | Games | Score | Contract |','|---|---:|---:|---:|---|']
     for r in elo_rows:
@@ -179,6 +185,7 @@ def build(root, bootstrap=500):
     md += [f"| {r['run']} | {'Complete' if r['complete'] else 'Provisional'} | {r['completed']}/{r['planned']} |" for r in runs]
     for run in reversed([r for r in runs if r['kind']=='daily'][-2:]):
         md += ["", '## '+run['run']+(' — complete' if run['complete'] else ' — provisional'), "",
+               "Bradley–Terry leaderboard · Last updated: "+run["updated"]+" (UTC)", "",
                "| Agent | BT rating | W / L / D | Strict win rate | Cash margin |", "|---|---:|---:|---:|---:|"]
         for aid in sorted(run['ratings'],key=lambda a:-(run['ratings'][a] or 0)):
             s=run['stats'][aid];v=run['ratings'][aid];ci=run['intervals'][aid]
