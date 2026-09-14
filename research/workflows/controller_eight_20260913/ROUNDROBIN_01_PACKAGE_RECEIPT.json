@@ -1,0 +1,17 @@
+{
+  "file": "ROUNDROBIN_01_COMPLETE.zip",
+  "bytes": 408833715,
+  "sha256": "2c6e74c71ae40a30f319acb4148dac5e00be4585af257193b68d66014b86996d",
+  "files": 3304,
+  "crc_valid": true,
+  "all_member_hashes_verified": true,
+  "planned_games": 896,
+  "valid_games": 896,
+  "failed_games": 0,
+  "selected_top_two": [
+    "C05",
+    "C03"
+  ],
+  "competitive_acceptance": "NOT_EVALUATED",
+  "source_identity_rechecked_after": true
+}

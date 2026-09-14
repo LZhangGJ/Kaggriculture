@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": "Independent recorded-frame, hash, settings, coverage and ranking audit. No interpreter or agent reruns.",
+  "planned_games": 896,
+  "valid_games": 896,
+  "full_recorded_transitions": 644224,
+  "failed_games": 0,
+  "partial_recorded_transitions": 0,
+  "source_integrity": {
+    "C01": true,
+    "C02": true,
+    "C03": true,
+    "C04": true,
+    "C05": true,
+    "C06": true,
+    "C07": true,
+    "C08": true,
+    "referee": true,
+    "harness": true
+  },
+  "seed_count": 16,
+  "known_exclusion_count": 1256,
+  "ranking_spec": {
+    "precedence": [
+      "strict_win_rate_desc",
+      "head_to_head_strict_win_rate_within_primary_tie_group_desc",
+      "worst_opponent_strict_win_rate_desc",
+      "candidate_id_ascending"
+    ],
+    "primary_denominator": 224,
+    "games_per_opponent": 32,
+    "head_to_head_rule": "For every group tied on overall strict wins, compare strict wins divided by all planned games against the other members of that original tie group. Two-way ties use their direct 32 games. Do not recompute smaller tie groups recursively.",
+    "worst_opponent_rule": "Minimum strict win rate across all seven opponents, using each full 32-game denominator.",
+    "draws": "Not wins.",
+    "errors": "Not wins; do not reduce denominators. The unchanged harness marks candidates with incomplete valid coverage ineligible for ranking.",
+    "eligibility": "Require the independent round-robin audit to pass; only candidates with all 224 valid completed games and intact source identities are eligible. Require at least two eligible candidates before selection.",
+    "selection": "Take the first two eligible candidates in the total order.",
+    "cash": "No cash tie-break or cash acceptance gate in this round robin.",
+    "source": "ROUND_01_PLAN.md: strict win rate, then head-to-head results, then worst-opponent rate. Candidate ID only resolves otherwise exact equality."
+  },
+  "ranking_order": [
+    "C05",
+    "C03",
+    "C07",
+    "C06",
+    "C01",
+    "C02",
+    "C08",
+    "C04"
+  ],
+  "eligible_order": [
+    "C05",
+    "C03",
+    "C07",
+    "C06",
+    "C01",
+    "C02",
+    "C08",
+    "C04"
+  ],
+  "selected_top_two": [
+    "C05",
+    "C03"
+  ],
+  "selection_blocked": false,
+  "selection_block_reason": null,
+  "manifest_sha256": "f622b392b4b3a67c9b9cc039b63920bef922e6ef2e1eca8cef13d89ea4c431d4",
+  "rows_sha256": "c93443344acd3985b1aea6481df8cf153bfa4f0be0ed7a79fae79822091a6e96",
+  "summary_sha256": "ddce8c57f98de83bd0bc8551c0381f02ee73bc4ec4b418ab368ac7ff93cba87a",
+  "ranking_sha256": "b13558d26d0e667163d768512726aa5f0b81e5304ddea68f1d630645eb40fbda",
+  "seconds": 187.60350367,
+  "limits": [
+    "All planned games remain in strict-win denominators; draws and errors are not wins.",
+    "Cash is descriptive and is not a ranking criterion.",
+    "This round robin selects candidates; it does not establish fixed-pool competitive acceptance."
+  ]
+}
