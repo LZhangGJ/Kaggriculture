@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: 2026-09-14T04:53:21.402859+00:00
+Updated: 2026-09-14T04:56:16.617468+00:00
 
 CPU evaluation on WRX90. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -14,6 +14,9 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 | Agent | Type | Version | Status |
 |---|---|---|---|
+| t23-kaggriculture-smart-adaptive-harvest | **PUBLIC** | 1-output-acc6eb3fcfe5 | pending |
+| kaggriculture-shop-router-reactive-v5 | **PUBLIC** | 1-output-0bc86bff40f7 | pending |
+| no-cow-left-behind-v40-autopsy-fix | **PUBLIC** | 3-output-b261c6f8eb2e | pending |
 | kaggriculture-shop-router-reactive-v4 | **PUBLIC** | 3-output-9bf89743ffb0 | active |
 | TRI_A06_r12_r3_fix1 | Team | 819df830076c | active |
 | Day 9 planner selector | Team | historical-cbef5780feef | active |
@@ -23,6 +26,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture | **PUBLIC** | 18-output-155aa170625f | active |
 | kaggriculture-metacounter-r1-scored-agent | **PUBLIC** | 2-output-fa3a8046fdb1 | active |
 | AFS R2 | Team | historical-95249cb14247 | active |
+| kaggriculture-adaptive-land-allocator-r10 | **PUBLIC** | 1-output-e9d563acb28c | pending |
 | TRI_A06_r6_r3_bundle_fix1 | Team | 721a0355c794 | active |
 | kaggriculture-adaptive-land-allocator | **PUBLIC** | 2-output-6884e2814adc | active |
 | shop-router-0913 | **PUBLIC** | 1-output-a330d07bcaa7 | active |
@@ -33,6 +37,10 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 | Notebook | Status | Last successful check |
 |---|---|---|
+| aurax7/kaggriculture-shop-router-reactive-v5 | updated | 2026-09-14T04:55:55.166514+00:00 |
+| nathanjacob/no-cow-left-behind-v40-autopsy-fix | updated | 2026-09-14T04:55:56.387541+00:00 |
+| lime0001/t23-kaggriculture-smart-adaptive-harvest | updated | 2026-09-14T04:55:57.708329+00:00 |
+| xuantianfengwu/kaggriculture-adaptive-land-allocator-r10 | updated | 2026-09-14T04:55:53.651283+00:00 |
 | degnonguidi/kaggriculture-utils-v1 | updated | 2026-09-14T04:44:03.589007+00:00 |
 | alperen5252525/kaggriculture-metacounter-r1-scored-agent | updated | 2026-09-14T04:44:05.010287+00:00 |
 | ahmedberatozer/kaggriculture-v41-review-candidate | updated | 2026-09-14T04:44:06.381516+00:00 |
@@ -42,11 +50,18 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | xuantianfengwu/kaggriculture-adaptive-land-allocator | updated | 2026-09-14T04:44:11.714337+00:00 |
 | yhay81/shop-router-0913 | updated | 2026-09-14T04:44:13.136021+00:00 |
 
+## Public discovery and replacements
+
+Last scan: 2026-09-14T04:55:11.020225+00:00. Found 497 notebooks. Four new outputs can enter evaluation per day. A completed daily panel is required to select the weakest public agent.
+
+Each challenger and the proposed replacement face the same other agents on 128 fresh seeds in both seats. Replacement requires at least a two-point win-rate gain and a positive approximate 95% lower bound. This is a roster decision, not a 90% strength certificate.
+
+
 ## Run coverage
 
 | Run | Status | Games |
 |---|---|---|
-| daily-2026-09-14 | Provisional | 264/23296 |
+| daily-2026-09-14 | Provisional | 270/23296 |
 | launch-126bc3e142fa | Complete | 2/2 |
 | launch-1906a69871a3 | Complete | 2/2 |
 | launch-235bd66241b9 | Complete | 2/2 |
@@ -60,6 +75,10 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | launch-b35fdc439b3b | Complete | 2/2 |
 | launch-b3f5d4cf662f | Complete | 2/2 |
 | launch-ce29ce8721a5 | Complete | 2/2 |
+| placement-0478c3cda8c1197c6029 | Provisional | 1/384 |
+| placement-04d3aa4becda2007a793 | Provisional | 1/384 |
+| placement-06a74bde72fad354f5b6 | Provisional | 0/384 |
+| placement-972925e664128e56a78c | Provisional | 0/384 |
 | verified-126bc3e142fa | Complete | 2/2 |
 | verified-1906a69871a3 | Complete | 2/2 |
 | verified-235bd66241b9 | Complete | 2/2 |
@@ -78,20 +97,20 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 | Agent | BT rating | W / L / D | Strict win rate | Cash margin |
 |---|---:|---:|---:|---:|
-| TRI_A06_r6_r3_bundle_fix1 | 2.01 | 27 / 9 / 0 | 75.0% | 14,886 |
-| kaggriculture-v41-review-candidate | 1.92 | 25 / 9 / 0 | 73.5% | 16,060 |
+| TRI_A06_r6_r3_bundle_fix1 | 2.02 | 27 / 9 / 0 | 75.0% | 14,886 |
+| kaggriculture-v41-review-candidate | 1.94 | 25 / 9 / 0 | 73.5% | 16,060 |
 | Day 9 planner selector | 1.83 | 25 / 9 / 0 | 73.5% | 17,887 |
-| kaggriculture-utils-v1 | 1.74 | 27 / 11 / 0 | 71.1% | 19,780 |
-| kaggriculture-metacounter-r1-scored-agent | 1.32 | 22 / 13 / 1 | 61.1% | 10,890 |
+| kaggriculture-utils-v1 | 1.82 | 29 / 11 / 0 | 72.5% | 20,161 |
+| kaggriculture-metacounter-r1-scored-agent | 1.32 | 23 / 14 / 1 | 60.5% | 9,570 |
 | TRI_A06_r12_r3_fix1 | 1.27 | 20 / 10 / 0 | 66.7% | 24,101 |
-| kaggriculture | 0.86 | 18 / 18 / 1 | 48.6% | 1,660 |
-| AFS R1 | 0.79 | 15 / 20 / 0 | 42.9% | 2,896 |
-| AFS R2 | 0.70 | 18 / 22 / 0 | 45.0% | 2,030 |
+| AFS R1 | 0.80 | 16 / 21 / 0 | 43.2% | 2,659 |
+| kaggriculture | 0.75 | 18 / 20 / 2 | 45.0% | 820 |
+| AFS R2 | 0.70 | 19 / 23 / 0 | 45.2% | 2,056 |
 | shop-router-0913 | 0.51 | 21 / 25 / 0 | 45.7% | 4,024 |
-| TRI_A08_r11_r3 | 0.38 | 16 / 21 / 0 | 43.2% | 4,866 |
+| TRI_A08_r11_r3 | 0.37 | 16 / 21 / 0 | 43.2% | 4,866 |
 | kaggriculture-shop-router-reactive-v4 | 0.00 | 13 / 28 / 0 | 31.7% | 2,075 |
-| kaggriculture-best-agent | -0.09 | 16 / 23 / 0 | 41.0% | 15,699 |
-| kaggriculture-adaptive-land-allocator | -4.01 | 0 / 45 / 0 | 0.0% | -108,072 |
+| kaggriculture-best-agent | -0.06 | 16 / 23 / 1 | 40.0% | 15,306 |
+| kaggriculture-adaptive-land-allocator | -4.04 | 0 / 45 / 0 | 0.0% | -108,072 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
@@ -142,8 +161,8 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | AFS R1 | TRI_A08_r11_r3 | 2/2 | 100.0% | 2/2 | 0/0 |
 | AFS R1 | kaggriculture-v41-review-candidate | 1/3 | 33.3% | 1/2 | 0/1 |
 | AFS R1 | kaggriculture | 1/4 | 25.0% | 1/2 | 0/2 |
-| AFS R1 | kaggriculture-metacounter-r1-scored-agent | 0/2 | 0.0% | 0/1 | 0/1 |
-| AFS R1 | AFS R2 | 0/0 | — | 0/0 | 0/0 |
+| AFS R1 | kaggriculture-metacounter-r1-scored-agent | 0/3 | 0.0% | 0/1 | 0/2 |
+| AFS R1 | AFS R2 | 1/1 | 100.0% | 0/0 | 1/1 |
 | AFS R1 | TRI_A06_r6_r3_bundle_fix1 | 1/7 | 14.3% | 1/4 | 0/3 |
 | AFS R1 | kaggriculture-adaptive-land-allocator | 1/1 | 100.0% | 1/1 | 0/0 |
 | AFS R1 | shop-router-0913 | 3/4 | 75.0% | 1/1 | 2/3 |
@@ -182,16 +201,16 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture | TRI_A08_r11_r3 | 1/4 | 25.0% | 0/0 | 1/4 |
 | kaggriculture | kaggriculture-v41-review-candidate | 0/1 | 0.0% | 0/1 | 0/0 |
 | kaggriculture | kaggriculture-metacounter-r1-scored-agent | 1/3 | 33.3% | 1/3 | 0/0 |
-| kaggriculture | AFS R2 | 3/4 | 75.0% | 3/4 | 0/0 |
+| kaggriculture | AFS R2 | 3/5 | 60.0% | 3/4 | 0/1 |
 | kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 0/1 | 0.0% | 0/1 | 0/0 |
 | kaggriculture | kaggriculture-adaptive-land-allocator | 3/3 | 100.0% | 1/1 | 2/2 |
 | kaggriculture | shop-router-0913 | 3/4 | 75.0% | 1/1 | 2/3 |
-| kaggriculture | kaggriculture-best-agent | 0/0 | — | 0/0 | 0/0 |
-| kaggriculture | kaggriculture-utils-v1 | 0/6 | 0.0% | 0/2 | 0/4 |
+| kaggriculture | kaggriculture-best-agent | 0/1 | 0.0% | 0/0 | 0/1 |
+| kaggriculture | kaggriculture-utils-v1 | 0/7 | 0.0% | 0/3 | 0/4 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v4 | 2/2 | 100.0% | 1/1 | 1/1 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A06_r12_r3_fix1 | 0/0 | — | 0/0 | 0/0 |
 | kaggriculture-metacounter-r1-scored-agent | Day 9 planner selector | 3/4 | 75.0% | 2/2 | 1/2 |
-| kaggriculture-metacounter-r1-scored-agent | AFS R1 | 2/2 | 100.0% | 1/1 | 1/1 |
+| kaggriculture-metacounter-r1-scored-agent | AFS R1 | 3/3 | 100.0% | 2/2 | 1/1 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A08_r11_r3 | 2/3 | 66.7% | 2/3 | 0/0 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/2 | 0.0% | 0/0 | 0/2 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture | 1/3 | 33.3% | 0/0 | 1/3 |
@@ -200,14 +219,14 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-adaptive-land-allocator | 5/5 | 100.0% | 4/4 | 1/1 |
 | kaggriculture-metacounter-r1-scored-agent | shop-router-0913 | 3/4 | 75.0% | 3/4 | 0/0 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-best-agent | 1/1 | 100.0% | 0/0 | 1/1 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-utils-v1 | 0/3 | 0.0% | 0/1 | 0/2 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-utils-v1 | 0/4 | 0.0% | 0/2 | 0/2 |
 | AFS R2 | kaggriculture-shop-router-reactive-v4 | 2/3 | 66.7% | 1/1 | 1/2 |
 | AFS R2 | TRI_A06_r12_r3_fix1 | 0/3 | 0.0% | 0/2 | 0/1 |
 | AFS R2 | Day 9 planner selector | 0/4 | 0.0% | 0/4 | 0/0 |
-| AFS R2 | AFS R1 | 0/0 | — | 0/0 | 0/0 |
+| AFS R2 | AFS R1 | 0/1 | 0.0% | 0/1 | 0/0 |
 | AFS R2 | TRI_A08_r11_r3 | 1/4 | 25.0% | 1/3 | 0/1 |
 | AFS R2 | kaggriculture-v41-review-candidate | 1/1 | 100.0% | 0/0 | 1/1 |
-| AFS R2 | kaggriculture | 1/4 | 25.0% | 0/0 | 1/4 |
+| AFS R2 | kaggriculture | 2/5 | 40.0% | 1/1 | 1/4 |
 | AFS R2 | kaggriculture-metacounter-r1-scored-agent | 2/4 | 50.0% | 0/2 | 2/2 |
 | AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 0/3 | 0.0% | 0/0 | 0/3 |
 | AFS R2 | kaggriculture-adaptive-land-allocator | 1/1 | 100.0% | 1/1 | 0/0 |
@@ -259,7 +278,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-best-agent | AFS R1 | 0/2 | 0.0% | 0/2 | 0/0 |
 | kaggriculture-best-agent | TRI_A08_r11_r3 | 3/5 | 60.0% | 1/2 | 2/3 |
 | kaggriculture-best-agent | kaggriculture-v41-review-candidate | 0/4 | 0.0% | 0/2 | 0/2 |
-| kaggriculture-best-agent | kaggriculture | 0/0 | — | 0/0 | 0/0 |
+| kaggriculture-best-agent | kaggriculture | 0/1 | 0.0% | 0/1 | 0/0 |
 | kaggriculture-best-agent | kaggriculture-metacounter-r1-scored-agent | 0/1 | 0.0% | 0/1 | 0/0 |
 | kaggriculture-best-agent | AFS R2 | 0/3 | 0.0% | 0/1 | 0/2 |
 | kaggriculture-best-agent | TRI_A06_r6_r3_bundle_fix1 | 3/4 | 75.0% | 2/2 | 1/2 |
@@ -272,8 +291,8 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-utils-v1 | AFS R1 | 1/3 | 33.3% | 0/1 | 1/2 |
 | kaggriculture-utils-v1 | TRI_A08_r11_r3 | 1/1 | 100.0% | 1/1 | 0/0 |
 | kaggriculture-utils-v1 | kaggriculture-v41-review-candidate | 0/4 | 0.0% | 0/3 | 0/1 |
-| kaggriculture-utils-v1 | kaggriculture | 6/6 | 100.0% | 4/4 | 2/2 |
-| kaggriculture-utils-v1 | kaggriculture-metacounter-r1-scored-agent | 3/3 | 100.0% | 2/2 | 1/1 |
+| kaggriculture-utils-v1 | kaggriculture | 7/7 | 100.0% | 4/4 | 3/3 |
+| kaggriculture-utils-v1 | kaggriculture-metacounter-r1-scored-agent | 4/4 | 100.0% | 2/2 | 2/2 |
 | kaggriculture-utils-v1 | AFS R2 | 2/4 | 50.0% | 1/2 | 1/2 |
 | kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 0/1 | 0.0% | 0/1 | 0/0 |
 | kaggriculture-utils-v1 | kaggriculture-adaptive-land-allocator | 3/3 | 100.0% | 1/1 | 2/2 |
