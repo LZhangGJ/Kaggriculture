@@ -54,7 +54,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Internal Elo, not Kaggle’s unpublished live formula. CPU workers run a round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.
 
-Last updated: Sep 14, 2026 at 4:34 PM UTC
+Last updated: Sep 14, 2026 at 4:37 PM UTC
 
 Status: running Â· Last sync: Sep 14, 2026 at 4:34 PM UTC
 
