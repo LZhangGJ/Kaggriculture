@@ -77,6 +77,10 @@ Use up to eight GPT-6 Pro chats: four independent agents, two phase/component ta
 
 ## Daily arena
 
+The shared host discovers public notebooks daily through Kaggle's newest and hot lists, with up to 1,000 entries per list. The report marks scans that hit this limit. It downloads up to four new outputs per day, without running notebooks on the host. Failed downloads remain in the queue. Accepted sources also receive daily version checks.
+
+After a complete daily tournament, the controller selects its weakest public agent by strict win rate. One new public challenger at a time faces the same remaining roster as that agent, on 128 fresh seeds in both seats. It replaces the incumbent only if its mean win rate improves by at least two percentage points and the approximate one-sided 95% paired bootstrap lower bound exceeds zero, with no nonterminal challenger games. A changed roster invalidates that replacement decision. These are operational roster decisions, not a statistical guarantee across repeated trials. Current tournament manifests stay frozen, and retired agents keep their records.
+
 Validate agents with `validate ID`. Set six placement_references. Apply a JSON roster using `roster FILE`: entries contain agent, category, reason. Default slots: 1 champion, 3 established, 8 public, 4 counters, 4 candidates. Keep weaker counters when they expose weaknesses. Review established retirement weekly and candidates daily; archive evidence rather than delete it. The registry is uncapped.
 
 `plan daily-DATE --seeds 128` freezes a balanced round robin. Twenty agents produce 48,640 games. daily_enabled=true permits tick to start the next local-calendar day after the prior run finishes. No overlapping/catch-up tournaments. Predeclare fewer seeds when capacity requires it; incomplete reports stay provisional.

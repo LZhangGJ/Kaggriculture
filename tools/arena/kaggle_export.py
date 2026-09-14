@@ -84,7 +84,10 @@ def export(notebook, destination):
     with api.build_kaggle_client() as client:
         kernel = client.kernels.kernels_api_client
         query = ApiGetKernelRequest(); query.user_name = owner; query.kernel_slug = slug
-        before = kernel.get_kernel(query).metadata.current_version_number
+        metadata = kernel.get_kernel(query).metadata
+        if getattr(metadata, 'is_private', False):
+            raise ValueError('Discovery only imports public notebooks')
+        before = metadata.current_version_number
         request = ApiListKernelSessionOutputRequest(); request.user_name = owner; request.kernel_slug = slug; request.page_size = 100
         outputs = kernel.list_kernel_session_output(request)
         if outputs.next_page_token:

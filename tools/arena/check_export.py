@@ -14,7 +14,7 @@ def check(root):
         if p.is_file() and (p.suffix not in (".html", ".json", ".md") or p.parent != root):
             raise ValueError("Unexpected export file")
     data = json.loads((root / "data.json").read_text())
-    if set(data) != {"schema", "updated", "agents", "runs", "champion", "champion_evidence", "roster", "public_refresh"}:
+    if set(data) != {"schema", "updated", "agents", "runs", "champion", "champion_evidence", "roster", "public_refresh", "public_discovery"}:
         raise ValueError("Unexpected export schema")
     def visit(value):
         if isinstance(value, dict):

@@ -111,6 +111,11 @@ def tick(root):
     cfg = read(root / "config.json")
     from .github_sync import sync
     from .public_pool import refresh_daily, apply_ready_versions
+    if cfg.get('public_discovery_enabled'):
+        try:
+            subprocess.run([sys.executable,'-m','tools.arena.discovery',str(root.absolute())],check=True,timeout=600)
+        except (OSError,subprocess.SubprocessError) as e:
+            event(root,'public_discovery_failed',now()[:10],{'reason':str(e)[:300]})
     imported = sync(root) + refresh(root) + refresh_daily(root)
     today = datetime.now(ZoneInfo(cfg["timezone"])).date().isoformat()
     refresh_marker = root / "private" / ("refresh-" + today + ".json")
@@ -137,6 +142,8 @@ def tick(root):
                     event(root, "validation_failure", a["id"], {"reason": a["validation_failure"]})
         create_placements(root)
         apply_ready_versions(root)
+        from .discovery import advance
+        advance(root)
         if cfg["daily_enabled"]:
             try:
                 plan(root, "daily-" + today)

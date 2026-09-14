@@ -61,10 +61,14 @@ def build(root, bootstrap=500):
                    refresh_status=("stale" if ref and ref.get("date") != today else ref.get("status", "not configured")))
     metadata = {a["id"]: a for a in public_agents}
     champion = read(root / "champion.json", {})
+    discovery = read(root/'private/discovery.json',{})
+    public_decisions = [read(p) for p in sorted((root/'runs').glob('public-*/public-decision.json'))]
     data = {"schema": 1, "updated": now(), "agents": public_agents, "runs": runs,
             "champion": champion.get("agent"), "champion_evidence": champion.get("evidence"),
             "roster": [{"agent": r["agent"], "category": r["category"]} for r in read(root / "roster.json", [])],
-            "public_refresh": [{k:r.get(k) for k in ("id","notebook","date","status","version","attempted","successful")} for r in refreshes]}
+            "public_refresh": [{k:r.get(k) for k in ("id","notebook","date","status","version","attempted","successful")} for r in refreshes],
+            "public_discovery": {"checked":discovery.get('checked'),"found":discovery.get('found',0),
+                "truncated":discovery.get('truncated',[]),"decisions":public_decisions}}
     write(root / "site/data.json", data)
     def name(aid):
         label = escape(agents.get(aid, {}).get("manifest", {}).get("name", aid[:12]))
@@ -79,6 +83,7 @@ def build(root, bootstrap=500):
                 "<h2>Verified champion</h2><p>" + (name(data["champion"]) if data["champion"] else "Not nominated") + "</p>",
                 '<p>Daily, placement and fixed-benchmark results are separate. Ratings from different rosters are not directly comparable.</p>']
     sections += ["<h2>Public notebook refresh</h2><p>Checked daily before the next roster freeze. Failed refreshes retain the last validated version.</p>"]
+    sections.append(f"<p>Discovery last checked: {escape(str(discovery.get('checked','not yet')))}. Found {discovery.get('found',0)} notebooks. Newcomers need a completed paired comparison before replacing a public agent.</p>")
     if not refreshes:
         sections.append("<p>No public notebook refresh sources configured.</p>")
     for r in refreshes:
@@ -146,6 +151,12 @@ def build(root, bootstrap=500):
     md += ["", "## Public refresh", "", "| Notebook | Status | Last successful check |", "|---|---|---|"]
     for r in refreshes:
         md.append(f"| {r['notebook']} | {r['status']} | {r.get('successful','Never')} |")
+    md += ['', '## Public discovery and replacements', '',
+           f"Last scan: {discovery.get('checked','Not yet')}. Found {discovery.get('found',0)} notebooks. Four new outputs can enter evaluation per day. A completed daily panel is required to select the weakest public agent.", '',
+           'Each challenger and the proposed replacement face the same other agents on 128 fresh seeds in both seats. Replacement requires at least a two-point win-rate gain and a positive approximate 95% lower bound. This is a roster decision, not a 90% strength certificate.', '']
+    if discovery.get('truncated'):md.append('Discovery reached its page limit; the scan was not exhaustive.')
+    for d in public_decisions:
+        md.append(f"- {label(d['candidate'])} vs {label(d['incumbent'])}: {'replaced' if d['replaced'] else 'retained incumbent'}; gain {d['gain']*100:+.1f} points, lower bound {d['lower']*100:+.1f} points.")
     md += ["", "## Run coverage", "", "| Run | Status | Games |", "|---|---|---|"]
     md += [f"| {r['run']} | {'Complete' if r['complete'] else 'Provisional'} | {r['completed']}/{r['planned']} |" for r in runs]
     for run in reversed([r for r in runs if r['kind']=='daily'][-2:]):
