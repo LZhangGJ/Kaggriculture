@@ -39,6 +39,6 @@ def update(root):
                 db.execute('INSERT INTO pairs VALUES (?)',(pid,))
             if fully_scored:db.execute('INSERT OR IGNORE INTO rounds VALUES (?)',(m['id'],))
         rows=[dict(contract=c,agent=a,elo=e,games=g,score=p/g if g else None) for c,a,e,g,p in db.execute('SELECT * FROM ratings ORDER BY contract,elo DESC')]
-    result=dict(updated=now(),method='Start 1500; K=32 per completed seat-swapped pair; draws half a point; separate table per execution contract',ratings=rows)
+    result=dict(updated=now(),method='Internal Elo, not a replica of Kaggle live ratings. Start 1500; K=32 per completed seat-swapped pair; draws half a point; separate table per execution contract',ratings=rows)
     write(root/'continuous-elo.json',result)
     return result

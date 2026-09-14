@@ -4,7 +4,11 @@ from collections import defaultdict
 
 import numpy as np
 from scipy.optimize import minimize
-from scipy.special import logsumexp
+from scipy.special import expit
+
+
+METHOD = "half-win-bt-v2"
+DESCRIPTION = "Bradley-Terry; draws half wins; centered strengths; Gaussian SD=3 regularization; no seat adjustment"
 
 
 def fit(rows, ids):
@@ -14,29 +18,29 @@ def fit(rows, ids):
         return {a: None for a in ids}, None
     a = np.array([index[r["agents"][0]] for r in rows])
     b = np.array([index[r["agents"][1]] for r in rows])
-    y = np.array([{"win0": 0, "win1": 1, "draw": 2}[r["outcome"]] for r in rows])
-    counts = np.zeros((n, n, 3))
-    np.add.at(counts, (a, b, y), 1)
-    a, b = np.nonzero(counts.sum(axis=2))
-    counts = counts[a, b]
-    totals = counts.sum(axis=1)
+    points = np.array([{"win0": 1., "win1": 0., "draw": .5}[r["outcome"]] for r in rows])
+    totals = np.zeros((n, n))
+    wins = np.zeros((n, n))
+    np.add.at(totals, (a, b), 1)
+    np.add.at(wins, (a, b), points)
+    a, b = np.nonzero(totals)
+    totals, wins = totals[a, b], wins[a, b]
+
     def objective(x):
-        strengths = np.r_[0., x[:n-1]]
-        d = strengths[a] - strengths[b] + x[n-1]
-        logits = np.stack((d/2, -d/2, np.full(len(a), x[n])), axis=1)
-        lse = logsumexp(logits, axis=1)
-        loss = np.sum(totals * lse - (counts * logits).sum(axis=1)) + np.sum(x*x)/18
-        residual = np.exp(logits-lse[:, None]) * totals[:, None] - counts
-        grad_d = (residual[:, 0]-residual[:, 1])/2
-        strength_grad = np.zeros(n)
-        np.add.at(strength_grad, a, grad_d)
-        np.add.at(strength_grad, b, -grad_d)
-        grad = np.r_[strength_grad[1:], grad_d.sum(), residual[:, 2].sum()] + x/9
+        d = x[a] - x[b]
+        loss = np.sum(totals * np.logaddexp(0, d) - wins * d) + np.sum(x*x)/18
+        residual = totals * expit(d) - wins
+        grad = x/9
+        np.add.at(grad, a, residual)
+        np.add.at(grad, b, -residual)
         return loss, grad
-    result = minimize(objective, np.zeros(n+1), jac=True, method="L-BFGS-B")
+
+    result = minimize(objective, np.zeros(n), jac=True, method="L-BFGS-B",
+                      options={"gtol": 1e-8, "ftol": 1e-12})
     if not result.success:
         raise RuntimeError("Rating fit failed: " + result.message)
-    return dict(zip(ids, np.r_[0., result.x[:n-1]].tolist())), float(result.x[n-1])
+    strengths = result.x - result.x.mean()
+    return dict(zip(ids, strengths.tolist())), None
 
 
 def components(rows, ids):
@@ -87,7 +91,7 @@ def summary(rows, ids, bootstrap=0):
         for other in ids:
             if other != aid:
                 matrix[aid + ":" + other] = tally([r for r in rr if other in r["agents"]], aid)
-    return {"ratings": ratings, "intervals": intervals, "components": groups, "stats": stats, "matrix": matrix}
+    return {"method": METHOD, "method_description": DESCRIPTION, "ratings": ratings, "intervals": intervals, "components": groups, "stats": stats, "matrix": matrix}
 
 
 def tally(rows, aid):

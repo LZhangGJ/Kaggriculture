@@ -46,6 +46,21 @@ class ContinuousTest(unittest.TestCase):
         m=schedule.plan(self.root,'continuous-1','continuous',2);self.fill(m,draw=True)
         self.assertTrue(all(r['elo']==1500 for r in elo.update(self.root)['ratings']))
 
+    def test_draws_pull_unequal_ratings_together(self):
+        m=schedule.plan(self.root,'continuous-1','continuous',2);self.fill(m)
+        before=elo.update(self.root)['ratings']
+        m=schedule.plan(self.root,'continuous-2','continuous',2);self.fill(m,draw=True)
+        after=elo.update(self.root)['ratings']
+        self.assertLess(max(r['elo'] for r in after)-min(r['elo'] for r in after),
+                        max(r['elo'] for r in before)-min(r['elo'] for r in before))
+
+    def test_unfinished_pair_not_scored(self):
+        m=schedule.plan(self.root,'continuous-1','continuous',1)
+        g=m['games'][0]
+        schedule.save_result(self.root,m,g,dict(game=g['id'],agents=g['agents'],resolved=True,
+            terminal=True,reason='terminal',outcome='draw',cash=[1,1]))
+        self.assertTrue(all(r['games']==0 for r in elo.update(self.root)['ratings']))
+
     def test_transported_image_requires_matching_content(self):
         info={'RootFS':{'Layers':['layer-a']},'Architecture':'amd64','Os':'linux','Config':{'User':'65534'}}
         cfg={'image':'sha256:original','image_runtime':'sha256:transport','image_fingerprint':sandbox.image_fingerprint(info)}
