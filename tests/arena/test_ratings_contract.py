@@ -1,4 +1,7 @@
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
+import numpy as np
 from tools.arena.ratings import fit, tally
 from tests.arena import test_arena
 from tools.arena import cumulative, schedule, store
@@ -32,6 +35,13 @@ class RatingMathTest(unittest.TestCase):
         self.assertEqual(a, dict(a=0., b=0.))
         self.assertEqual(tally(rows, 'a')['score'], .5)
         self.assertEqual(tally(rows, 'a')['win_rate'], 0)
+
+    def test_line_search_failure_requires_stationarity(self):
+        result = SimpleNamespace(success=False, x=np.zeros(2), message='precision')
+        with patch('tools.arena.ratings.minimize', return_value=result):
+            self.assertEqual(fit(self.rows(['draw']), ['a', 'b'])[0], dict(a=0., b=0.))
+            with self.assertRaises(RuntimeError):
+                fit(self.rows(['win0']), ['a', 'b'])
 
 
 class CumulativeTest(unittest.TestCase):
