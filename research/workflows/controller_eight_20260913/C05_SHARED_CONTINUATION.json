@@ -1,0 +1,127 @@
+{
+  "parent_stopped": true,
+  "reason": "controller_process_handle_exhaustion",
+  "parent_rows_sha256": "6dfc4e8da3640de30aadca0a378e92d28ef4d43a29044cfd18ed9363656d0a5a",
+  "parent_freeze_sha256": "24bba395c10c3ffb5f04ed880bb1fa7acdd8e542477f6ccb86b55a7a9d7985b4",
+  "completed_valid_cells": 5113,
+  "possible_started_unreturned_cells": [
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:apex-v7",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:six-day-fieldbook",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:six-day-fieldbook",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:old-champion",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:old-champion",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:hysteresis",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1447655676,
+      "extra:hysteresis",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "soil_v219g",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "soil_v219g",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "flexon_v5",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "flexon_v5",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "market_smart_v8",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "market_smart_v8",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "shop0909",
+      0
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "shop0909",
+      1
+    ],
+    [
+      "controller-c05-round05",
+      "representative",
+      1524475185,
+      "aurax_shop_v2",
+      0
+    ]
+  ],
+  "unstarted_cells_after_prefix": 15351,
+  "inference": "Ordered dispatch with at most16 pending cells bounds possible prior submissions by completed count plus16. No start journal existed; these16 are uncertain attempts, not scored losses. All completed cells fit that prefix.",
+  "termination_receipt_sha256": "b01d463962d8a7d8327c2cfef8d02f03f0ef4c95293f287028694601dda83387",
+  "fd_observation_sha256": "d7877c1ea8c16fa7e86d9f37e011c72f7e9524575ce22343f25d3f26618c16ad",
+  "reviewed_v3_runner_sha256": "3d372a5d8a4ea0914547b251d188d419bfd76e31224886ffcd7365013c14905e",
+  "created_unix": 1789365295.0368607
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-14T05:10:09.208415+00:00",
+  "LD_LIBRARY_PATH": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/usr/lib/x86_64-linux-gnu:/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/lib/x86_64-linux-gnu",
+  "python_executable": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_venv/bin/python",
+  "native_library": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/evaluation/runtime/research/robust90/native_direct_host.so",
+  "native_sha256_before": "ed931e1fa1f7c148173b5e7ae425c5a15d2dbd5cecda561c9dfd436fd6a56388",
+  "native_sha256_after": "ed931e1fa1f7c148173b5e7ae425c5a15d2dbd5cecda561c9dfd436fd6a56388",
+  "ctypes_load_passed": true,
+  "libraries": [
+    {
+      "path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "resolved_path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "sha256": "334f871dfe528301a82186d0ba5c07c2a92dcadaacf3dceda792373b0c1c433d"
+    },
+    {
+      "path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+      "resolved_path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+      "sha256": "7d03c9686574bad9ee3590450fc441481b2ee01c97ee13647a72cad0637143c8"
+    },
+    {
+      "path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/evaluation/runtime/research/robust90/native_direct_host.so",
+      "resolved_path": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/evaluation/runtime/research/robust90/native_direct_host.so",
+      "sha256": "ed931e1fa1f7c148173b5e7ae425c5a15d2dbd5cecda561c9dfd436fd6a56388"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "sha256": "8d06f393f4a93bcf9b81145a259524d66a95522a646bf8d7e05b6ffdf2e63dcc"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "sha256": "e01b1ce7be2987f3b8560e26d0df2623f9dd5cec17be923ae28a785bc0d32d50"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libdl.so.2",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libdl.so.2",
+      "sha256": "d255ba9c9e3a7c35115e578c898147edaba1a2bcf742cc3a76995ceed9d5ac4f"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "sha256": "df621c68dbfed7e843434ef2faedb9f4d4b0543ad161e9a55eaf4d4ce2443176"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libpthread.so.0",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libpthread.so.0",
+      "sha256": "fbed9505adacada2abb37c6b43be2df6de81e742712c6025694ba48de62c7e78"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/librt.so.1",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/librt.so.1",
+      "sha256": "83eda8758c8697323bedf48bc0186c006cca2205441a988cb0f5072b96262100"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libutil.so.1",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libutil.so.1",
+      "sha256": "1f97fc5838872f3e1f59df530c25e319dda300ba174a7ec24973bb3df7d95ad0"
+    }
+  ],
+  "runtime_package_version": "16-20260315-1ubuntu1~22~ppa1",
+  "source": "Ubuntu Toolchain Uploads team test PPA, Jammy amd64, HTTPS index and SHA256-verified packages. This is a PPA, not Ubuntu main.",
+  "package_provenance": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/TOOLCHAIN_PACKAGE_PROVENANCE.json",
+  "license": "GCC libstdc++/libgcc: GPLv3 with GCC Runtime Library Exception; complete package copyright text retained.",
+  "license_files": [
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_eval_environment/toolchain_runtime/usr/share/doc/gcc-16-base/copyright"
+  ],
+  "scope": "Locally extracted runtime only; no global config or package install. ctypes load only; no game, native action or runner execution. Prior failed preflight preserved.",
+  "initial_extraction_shell_error": "First empty loop argument failed before extracting files; corrected with explicit subprocess arguments."
+}

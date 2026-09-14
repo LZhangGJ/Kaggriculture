@@ -1,0 +1,38 @@
+{
+  "command_exit_code": 0,
+  "games_rerun": 0,
+  "seed_privacy_checks": 146916,
+  "source_loader_integrity": true,
+  "native_sha256": "cd392768788630c6f981ed6e494713f7c9ffdc6a12ffeaf15b4b2d4363177c28",
+  "audit_script_saved": false,
+  "mean_direct_seconds": 3.946418743749991,
+  "max_direct_seconds": 5.760267659000078,
+  "prior_v1_failure": "Preserved separately: missing GLIBCXX_3.4.31 before gameplay; v2 uses isolated reviewed loader libraries.",
+  "command": "PowerShell here-string piped to wsl -d Ubuntu-22.04 -- /usr/bin/python3 -",
+  "artifact_hashes": {
+    "preflight/POST_RUN_INTEGRITY.json": "ed00a4c071d56ab9c94cee2cc2d2277adb8ecb949428ae0e5a020fd254e0d5de",
+    "preflight/RESOURCE_PREFLIGHT.json": "0078a307859431a95bda13ee50348a5e556081028a34bd58c7685e6ecf497371",
+    "preflight/MANIFEST.json": "b46abeda3bc80c085526024f20ab1c2c9ad803f59737689389ee358d5b67aed8",
+    "FREEZE.json": "24bba395c10c3ffb5f04ed880bb1fa7acdd8e542477f6ccb86b55a7a9d7985b4",
+    "preflight/STATUS.json": "617d6b91d8a5cdb0038c64818d01ab9af116ad73a7dbbfd9146abff659e56273",
+    "shared.py": "853565ac45a7dc516ab0da3120a643ec4bfb2c436eeaafaa488fb5db5ee9e149",
+    "PLAN.json": "e10a9da61c7b30d630c1b25d13decb0b779d1bfb518fe30d6d1e90321b903377",
+    "preflight/rows.jsonl": "160f0e9a80a5fb6b810cb1af05d5ecfe35a506cb4790e7f52abd5b6a51fc6ae6"
+  },
+  "official_observation_checks": 46080,
+  "status": "PASS",
+  "command_output_chunk": "d16075",
+  "all_actions_cash_rewards_shops_market_summaries_match": true,
+  "games": 64,
+  "audit_kind": "Independent read-only receipt, row, parity, source and actual loader checks",
+  "max_direct_action_seconds": 0.3448001589999876,
+  "transitions": 46016,
+  "recommendation": {
+    "limit": "Estimate from one shared representative preflight seed; startup, contention and seed variation may change throughput.",
+    "available_memory_kib": 7455924,
+    "estimated_peak_worker_rss_kib": 2151104,
+    "workers": 16,
+    "nominal_primary_seconds": 5051.415991999988
+  },
+  "cases": 32
+}

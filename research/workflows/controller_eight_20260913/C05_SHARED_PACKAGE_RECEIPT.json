@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "archive": "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/outputs/C05_SHARED_COMPLETE.zip",
+  "bytes": 264539194,
+  "sha256": "ad7e54660378b81524aa449309da3b6b2554eab1a423d68077025dde436cf291",
+  "members": 697,
+  "member_manifest_sha256": "29cfa5cfc689171e4fb9554c6cb41e08478dfcc8d52039cef9df258531d05ca2",
+  "all_member_hashes_and_crc_verified": true,
+  "source_hashes_unchanged": true,
+  "new_games": 20480,
+  "baseline_games_preserved": 204800,
+  "panels": {
+    "representative": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 5017,
+      "games": 8192,
+      "strict_win_rate": 0.6124267578125,
+      "win_rate_ci95": [
+        0.5811767578125,
+        0.6423370361328125
+      ]
+    },
+    "stress": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 2695,
+      "games": 4096,
+      "strict_win_rate": 0.657958984375,
+      "win_rate_ci95": [
+        0.616937255859375,
+        0.7001953125
+      ]
+    },
+    "holdout": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 4934,
+      "games": 8192,
+      "strict_win_rate": 0.602294921875,
+      "win_rate_ci95": [
+        0.5725067138671875,
+        0.631842041015625
+      ]
+    }
+  },
+  "final_audit_sha256": "d9cbeb034fb690cc43eb827e54a644dcd472ef75a13dc0fcd59a8e8222d72062",
+  "packager_sha256": "ecbfccb64a75ba96c69e174abbc341f04bd3fb1b19db306923def24e76c2d23e",
+  "completed_cells_rerun": 0,
+  "retained_v2_cells": 5113,
+  "submitted_v3_cells": 15367,
+  "possible_prior_unreturned_attempts": 16,
+  "published": false,
+  "scope": "Separate public benchmark panels; no fresh holdout claim"
+}

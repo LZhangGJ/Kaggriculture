@@ -58,3 +58,8 @@ The evaluator package includes all 46 pinned opponent runtime files, preserves t
 
 
 [Round05 tasks and actual deadlines](ROUND05_DISPATCHES.json): C02, C04, C05 and C06 completed these revision tasks. Their later verified sources and results are recorded in qualification 4. [Qualification 3 complete results](QUALIFICATION_03_REPORT.md).
+
+
+## C05 shared benchmark: final result
+
+[Verified shared benchmark results](C05_SHARED_REPORT.md) rank C05 separately on the representative, stress and retired-holdout panels. All 20,480 cells and the 204,800 unchanged baseline records passed audit. These are reused public benchmark results, not fresh competitive acceptance.

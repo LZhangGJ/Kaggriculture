@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "scope": "Independent recorded-results, source/hash, preserved baseline, exact rank and C05 bootstrap audit. No games rerun.",
+  "new_games": 20480,
+  "continuation": {
+    "retained_parent_rows": 5113,
+    "new_attempts": 15367,
+    "uncertain_prior_attempts": 16,
+    "unstarted_prior_cells": 15351,
+    "parent_rows_byte_exact": true,
+    "completed_cells_replayed": 0,
+    "game_execute_function_unchanged": true,
+    "failure_receipts_preserved": true,
+    "parent_rows_sha256": "6dfc4e8da3640de30aadca0a378e92d28ef4d43a29044cfd18ed9363656d0a5a",
+    "peak_parent_fds": 49,
+    "peak_tracked_process_objects": 16,
+    "closed_process_objects": 15367
+  },
+  "new_transitions": 14725120,
+  "baseline_games_unchanged": 204800,
+  "total_games": 225280,
+  "invalid": 0,
+  "missing": 0,
+  "duplicate_cells": 0,
+  "panels": {
+    "representative": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 5017,
+      "games": 8192,
+      "strict_win_rate": 0.6124267578125,
+      "win_rate_ci95": [
+        0.5811767578125,
+        0.6423370361328125
+      ]
+    },
+    "stress": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 2695,
+      "games": 4096,
+      "strict_win_rate": 0.657958984375,
+      "win_rate_ci95": [
+        0.616937255859375,
+        0.7001953125
+      ]
+    },
+    "holdout": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 4934,
+      "games": 8192,
+      "strict_win_rate": 0.602294921875,
+      "win_rate_ci95": [
+        0.5725067138671875,
+        0.631842041015625
+      ]
+    }
+  },
+  "rank_rule": "1 + number with strictly higher exact wins/games, equal rates share rank. Do not pool panels.",
+  "baseline_numeric_results_reconciled": true,
+  "source_and_loader_integrity": true,
+  "source_hashes": {
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/FREEZE.json": "bbb1e796cd0578a5ed01714c999f29de00c4667dbeab57331fbdc9367686778f",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/PLAN.json": "e10a9da61c7b30d630c1b25d13decb0b779d1bfb518fe30d6d1e90321b903377",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/shared.py": "3d372a5d8a4ea0914547b251d188d419bfd76e31224886ffcd7365013c14905e",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/STATUS.json": "1eeca8546b20e29021fde622228f1b49d74ea4f4b58dabfb7f2d4ecba9a6f2ba",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/MANIFEST.json": "e6cff7bc8233630ba6cb7a216310b3ccdb7d3c9808eca30a08bdd0dea82133eb",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/POST_RUN_INTEGRITY.json": "cabd39a6ab91574c6ba5f88115eae8eae96931d21e839ebdefbf53f7d3cb6b60",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/rows.jsonl": "f4d010c10ed134429d3e1e091789d028f21eaf1e6c1964d8d75997abac40af7e",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/PLACEMENT.json": "2d5a9d635940a2921b010d78eabf3bf7dd59d22b5001b23fa2ce8a50e2c0cdf4",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/roster.json": "b299fcc1d0cff468e53361b153999ca232815170fd4211f83a74623a0552caa6",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/results/RESULTS.json": "0835bd392bbdc58cc65e767beaac95a38cd25b755294fe078d4d26db486b84e0",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/results/REFERENCE_CONDITIONS.json": "df5e4c2c75024cbc1ef496ebad3e73bedbaf39491126585cba861e08960928bb",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/results/REALIZED_MARKETS.json": "61138886f665a3ce83b764473dcb344baecf1a031e5cc8f8da51e4c7b3505060",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/results/raw/development-v1.jsonl.gz": "b12536d7d02cc94e478314d8ff98ca4f48976b3f000001bdae9fafe2976b6937",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/results/raw/holdout-v1.jsonl.gz": "635068060363fa9a085bfcbc0576f63507c23a772c8145b3a783f8384069071b",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/extensions/pro8_20260913/runs/benchmark-local/rows.jsonl.gz": "529e3e10528ca50feec715a311068f1288089288d1e29c40d1c0dea6d9efe402",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/extensions/pro8_20260913/runs/benchmark-wrx90/rows.jsonl.gz": "ba689bf917b972d58ca6563c8d139c1b39736d9ebd6f67aed0b4276de511d18b",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/extensions/v37_original_20260913/runs/benchmark-local/rows.jsonl.gz": "1dcec3b06df525a8bfe80e5c04577a2bc470f23a24f05c18242462b352eeadb4",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/shared_evaluation_snapshot/research/evaluation_sets/2026-09-12-v1/extensions/v37_original_20260913/runs/benchmark-wrx90/rows.jsonl.gz": "bd5a45e0c0a12d6be93d0d70fa397d073dd3d8d75632b63dd8ae8f16c05ded09",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/development/rows.jsonl": "c45584af51dc27abafab03395d4f2ba4876763ab805654ba1f6bde92ad0de1f1",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/development/STATUS.json": "eb7b0c1ef68274413b88078d6be855ed254eae5648407a3086f0d995b27e82b4",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/development/MANIFEST.json": "ff66616112b3927b287bb43977ce1c5840707cdc7196df954270abd79d3dd4b2",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/holdout/rows.jsonl": "3ce5162830f14f58d530cd16a1c9a12ed3b66a127d9ab679317669bbafa55b1a",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/holdout/STATUS.json": "eb7b0c1ef68274413b88078d6be855ed254eae5648407a3086f0d995b27e82b4",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/analysis/holdout/MANIFEST.json": "3f9d83840baf58ebe3dc0a96bda5fb22c3de79f684208ee6b2431a0a71470125",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/CONTINUATION.json": "6f0cd8b28aec399e925d88fddc11c0b66521739226f247162d2642728932a591",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/C05_SHARED_CONTINUATION_AUTHORIZATION.json": "7ecc8ce101d13e0770c3d05f58574948f0e115c3d3c19b17947b2bd174dccaf9",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/FREEZE.json": "24bba395c10c3ffb5f04ed880bb1fa7acdd8e542477f6ccb86b55a7a9d7985b4",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/PLAN.json": "e10a9da61c7b30d630c1b25d13decb0b779d1bfb518fe30d6d1e90321b903377",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/shared.py": "853565ac45a7dc516ab0da3120a643ec4bfb2c436eeaafaa488fb5db5ee9e149",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/benchmark/rows.jsonl": "6dfc4e8da3640de30aadca0a378e92d28ef4d43a29044cfd18ed9363656d0a5a",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/benchmark/CONTROLLER_TERMINATION.json": "b01d463962d8a7d8327c2cfef8d02f03f0ef4c95293f287028694601dda83387",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v2/benchmark/FD_EXHAUSTION_OBSERVATION.json": "d7877c1ea8c16fa7e86d9f37e011c72f7e9524575ce22343f25d3f26618c16ad",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/attempt_starts.jsonl": "63f31275b7b5b6037999506cdf6c623c4065e9346fa02e02542b1795622a23ea",
+    "/mnt/c/Users/Owner/Documents/Codex/2026-09-13/https-github-com-lzhanggj-kaggriculture-blob/work/c05_shared_evaluation_v3/benchmark/PRIOR_ATTEMPTS.json": "d6c6e4ebbc87ada813089598b608c6ec7a72eb3d851c8c367f0d860b64f33836"
+  },
+  "seconds": 37.349602546,
+  "limits": [
+    "The published retired holdout is reused benchmark evidence, not fresh confirmation.",
+    "Shared opponent pool and simulator identity differ from campaign competitive01; scores are not interchangeable."
+  ]
+}

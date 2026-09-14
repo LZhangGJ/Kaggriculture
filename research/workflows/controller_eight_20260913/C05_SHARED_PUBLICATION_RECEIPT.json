@@ -1,0 +1,87 @@
+{
+  "status": "REMOTE_ASSET_VERIFIED",
+  "repository": "LZhangGJ/Kaggriculture",
+  "release_tag": "controller-eight-round01-20260913",
+  "remote_asset": {
+    "url": "https://api.github.com/repos/LZhangGJ/Kaggriculture/releases/assets/562850567",
+    "id": 562850567,
+    "node_id": "RA_kwDOT09eU84hjGsH",
+    "name": "C05_SHARED_COMPLETE.zip",
+    "label": "",
+    "uploader": {
+      "login": "keithtyser",
+      "id": 34146295,
+      "node_id": "MDQ6VXNlcjM0MTQ2Mjk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34146295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/keithtyser",
+      "html_url": "https://github.com/keithtyser",
+      "followers_url": "https://api.github.com/users/keithtyser/followers",
+      "following_url": "https://api.github.com/users/keithtyser/following{/other_user}",
+      "gists_url": "https://api.github.com/users/keithtyser/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/keithtyser/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/keithtyser/subscriptions",
+      "organizations_url": "https://api.github.com/users/keithtyser/orgs",
+      "repos_url": "https://api.github.com/users/keithtyser/repos",
+      "events_url": "https://api.github.com/users/keithtyser/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/keithtyser/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "content_type": "application/zip",
+    "state": "uploaded",
+    "size": 264539194,
+    "digest": "sha256:ad7e54660378b81524aa449309da3b6b2554eab1a423d68077025dde436cf291",
+    "download_count": 0,
+    "created_at": "2026-09-14T07:29:38Z",
+    "updated_at": "2026-09-14T07:29:49Z",
+    "browser_download_url": "https://github.com/LZhangGJ/Kaggriculture/releases/download/controller-eight-round01-20260913/C05_SHARED_COMPLETE.zip"
+  },
+  "file": "C05_SHARED_COMPLETE.zip",
+  "bytes": 264539194,
+  "sha256": "ad7e54660378b81524aa449309da3b6b2554eab1a423d68077025dde436cf291",
+  "panels": {
+    "representative": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 5017,
+      "games": 8192,
+      "strict_win_rate": 0.6124267578125,
+      "win_rate_ci95": [
+        0.5811767578125,
+        0.6423370361328125
+      ]
+    },
+    "stress": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 2695,
+      "games": 4096,
+      "strict_win_rate": 0.657958984375,
+      "win_rate_ci95": [
+        0.616937255859375,
+        0.7001953125
+      ]
+    },
+    "holdout": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "wins": 4934,
+      "games": 8192,
+      "strict_win_rate": 0.602294921875,
+      "win_rate_ci95": [
+        0.5725067138671875,
+        0.631842041015625
+      ]
+    }
+  },
+  "scope": "Separate reused public benchmark panels; no fresh holdout claim",
+  "review_plan_sha256": "8b8295d3ad5c8cbd60d3366c606b3b86467c88adbc385c17f9113ed2f3d659a1",
+  "source_hashes_unchanged_after_upload": true,
+  "prior_assets_preserved": true,
+  "git_commit_and_push_performed": false
+}

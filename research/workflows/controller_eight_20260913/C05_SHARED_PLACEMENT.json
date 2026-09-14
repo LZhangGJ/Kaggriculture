@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "panels": {
+    "representative": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "draws": 0,
+      "games": 8192,
+      "losses": 3175,
+      "mean_cash": 97312.98828125,
+      "mean_margin": 5997.854736328125,
+      "paired_differences": {
+        "ppo-495ebc48210f14ae": {
+          "ci95": [
+            -0.190673828125,
+            -0.107177734375
+          ],
+          "win_rate_difference": -0.1490478515625
+        },
+        "ppo-c90da6b7b3ea061d": {
+          "ci95": [
+            -0.2662353515625,
+            -0.1839599609375
+          ],
+          "win_rate_difference": -0.2249755859375
+        }
+      },
+      "win_rate": 0.6124267578125,
+      "win_rate_ci95": [
+        0.5811767578125,
+        0.6423370361328125
+      ],
+      "wins": 5017
+    },
+    "stress": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "draws": 0,
+      "games": 4096,
+      "losses": 1401,
+      "mean_cash": 101322.93701171875,
+      "mean_margin": 7589.160400390625,
+      "paired_differences": {
+        "ppo-495ebc48210f14ae": {
+          "ci95": [
+            -0.186767578125,
+            -0.07861328125
+          ],
+          "win_rate_difference": -0.135498046875
+        },
+        "ppo-c90da6b7b3ea061d": {
+          "ci95": [
+            -0.261962890625,
+            -0.15673828125
+          ],
+          "win_rate_difference": -0.21142578125
+        }
+      },
+      "win_rate": 0.657958984375,
+      "win_rate_ci95": [
+        0.616937255859375,
+        0.7001953125
+      ],
+      "wins": 2695
+    },
+    "holdout": {
+      "rank": 11,
+      "out_of": 11,
+      "ties_with": [],
+      "draws": 0,
+      "games": 8192,
+      "losses": 3258,
+      "mean_cash": 98735.53735351562,
+      "mean_margin": 6453.601806640625,
+      "paired_differences": {
+        "ppo-495ebc48210f14ae": {
+          "ci95": [
+            -0.1859222412109375,
+            -0.10912780761718749
+          ],
+          "win_rate_difference": -0.1484375
+        },
+        "ppo-c90da6b7b3ea061d": {
+          "ci95": [
+            -0.2657470703125,
+            -0.1890869140625
+          ],
+          "win_rate_difference": -0.2279052734375
+        }
+      },
+      "win_rate": 0.602294921875,
+      "win_rate_ci95": [
+        0.5725067138671875,
+        0.631842041015625
+      ],
+      "wins": 4934
+    }
+  },
+  "rank_rule": "One plus count strictly above exact wins/games; shared ranks for ties. Panels not pooled.",
+  "baseline_games_preserved": 204800,
+  "new_games": 20480,
+  "results_sha256": "0835bd392bbdc58cc65e767beaac95a38cd25b755294fe078d4d26db486b84e0",
+  "scope": "Published retired benchmark, not fresh competitive acceptance"
+}
