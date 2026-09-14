@@ -54,6 +54,7 @@ function render(){
   if(view==='upload'){loadUploads();return;}
   $('controls').replaceChildren();$('detail').replaceChildren();
   if(view==='elo'){
+    renderEloHistory();
     $('title').textContent='Continuous Elo';$('description').textContent='Internal Elo, not Kaggle’s unpublished live formula. Fresh seeds, both seats. New versions start at 1500. K = 32 per completed seat pair. Early ratings can move sharply; check game counts.';
     $('timestamp').textContent='Last updated: '+date(data.continuous_elo.updated)+' · Last sync: '+date(data.continuous_status.at);
     const contracts=[...new Set(elo.map(r=>r.contract))];
@@ -108,3 +109,47 @@ $('upload-form').onsubmit=async e=>{
     form.elements.file.value='';await loadUploads();
   }catch(error){$('upload-message').textContent=error.message;}finally{$('upload-button').disabled=false;}
 };
+
+// Exact rating history is separate from tournament results and agent versions.
+let historyAgents=null, historyMode='both', historyAxis='time', historyContract=null;
+function renderEloHistory(){
+  const host=element('section',null,'elo-history');$('controls').append(host);
+  const histories=data.continuous_elo.history||[];
+  host.append(element('h3','Elo over time'));
+  host.append(element('p',data.continuous_elo.history_note||'Rating history has not been recorded yet.'));
+  const active=new Set(data.roster.map(r=>r.agent));
+  const available=histories.filter(h=>active.has(h.agent)&&h.points.length);
+  if(!available.length){host.append(element('p','Waiting for the first recorded rating update.'));return;}
+  const contracts=[...new Set(available.map(h=>h.contract))];
+  if(!contracts.includes(historyContract))historyContract=contracts[0];
+  const redraw=()=>{host.remove();renderEloHistory();};
+  if(contracts.length>1){const sel=element('select');sel.setAttribute('aria-label','Evaluation contract');for(const c of contracts){const o=element('option','Contract '+c.slice(0,10));o.value=c;sel.append(o);}sel.value=historyContract;sel.onchange=()=>{historyContract=sel.value;historyAgents=null;redraw();};host.append(sel);}
+  const pool=available.filter(h=>h.contract===historyContract).sort((a,b)=>b.points.at(-1)[2]-a.points.at(-1)[2]);
+  if(historyAgents===null)historyAgents=new Set(pool.slice(0,3).map(h=>h.agent));
+  const choices=element('details');choices.append(element('summary','Choose agents (up to six)'));
+  for(const h of pool){const label=element('label'),cb=element('input');cb.type='checkbox';cb.checked=historyAgents.has(h.agent);cb.onchange=()=>{if(cb.checked&&historyAgents.size>=6){cb.checked=false;return;}if(cb.checked)historyAgents.add(h.agent);else historyAgents.delete(h.agent);redraw();};label.style.display='block';label.append(cb,document.createTextNode(' '+agent(h.agent).name+' · '+agent(h.agent).version));choices.append(label);}host.append(choices);
+  const buttons=element('div');buttons.style.margin='12px 0';
+  for(const [key,title]of [['both','Both'],['raw','Actual'],['average','100-game average']]){const b=element('button',title);b.setAttribute('aria-pressed',historyMode===key);b.onclick=()=>{historyMode=key;redraw();};buttons.append(b);}
+  const axis=element('select');axis.setAttribute('aria-label','Chart horizontal axis');for(const [key,title]of [['time','Time (UTC)'],['games','Games per agent']]){const o=element('option',title);o.value=key;axis.append(o);}axis.value=historyAxis;axis.onchange=()=>{historyAxis=axis.value;redraw();};buttons.append(axis);host.append(buttons);
+  const selected=pool.filter(h=>historyAgents.has(h.agent));if(!selected.length){host.append(element('p','Select an agent to show its history.'));return;}
+  const colors=['#2166ac','#b65b08','#8a3f8c','#287650','#ba3545','#655ac7'];
+  const xval=p=>historyAxis==='time'?Date.parse(p[1]):p[0];
+  const all=selected.flatMap(h=>h.points);let lo=Math.min(...all.map(xval)),hi=Math.max(...all.map(xval));if(hi===lo)hi=lo+(historyAxis==='time'?60000:2);
+  const values=all.flatMap(p=>historyMode==='raw'?[p[2]]:historyMode==='average'?(p[3]===null?[]:[p[3]]):[p[2],...(p[3]===null?[]:[p[3]])]);
+  if(!values.length){host.append(element('p','The 100-game average appears after 50 recorded seat-pair updates. Switch to Actual to see the current ratings.'));return;}
+  let ymin=Math.min(...values),ymax=Math.max(...values);const pad=Math.max(10,(ymax-ymin)*.1);ymin-=pad;ymax+=pad;
+  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 900 360');svg.setAttribute('role','img');svg.setAttribute('aria-label','Actual Elo and 100-game rolling average for selected agent versions');svg.style.cssText='width:100%;min-width:580px;background:white';
+  const add=(tag,attrs,text)=>{const n=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text!=null)n.textContent=text;svg.append(n);return n;};
+  const x=v=>65+(v-lo)/(hi-lo)*805,y=v=>305-(v-ymin)/(ymax-ymin)*275;
+  for(let i=0;i<=5;i++){const v=ymin+(ymax-ymin)*i/5;add('line',{x1:65,x2:870,y1:y(v),y2:y(v),stroke:'#e4e8eb'});add('text',{x:55,y:y(v)+5,'text-anchor':'end','font-size':14,fill:'#374151'},Math.round(v));}
+  for(let i=0;i<=4;i++){const v=lo+(hi-lo)*i/4;const label=historyAxis==='time'?new Date(v).toLocaleString('en-US',{timeZone:'UTC',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}):Math.round(v).toLocaleString();add('text',{x:x(v),y:332,'text-anchor':i===0?'start':i===4?'end':'middle','font-size':13,fill:'#374151'},label);}
+  add('text',{x:16,y:180,transform:'rotate(-90 16 180)','font-size':15,fill:'#374151'},'Elo');
+  const legend=element('p');
+  selected.forEach((h,i)=>{const color=colors[i];const label=element('span',agent(h.agent).name+'  ');label.style.cssText='color:'+color+';margin-right:14px';legend.append(label);
+    for(const [field,width,opacity]of [[2,1,historyMode==='both'?.4:1],[3,2.5,1]]){if((field===2&&historyMode==='average')||(field===3&&historyMode==='raw'))continue;let path='',started=false;for(const p of h.points){if(p[field]===null){started=false;continue;}path+=(started?'L':'M')+x(xval(p)).toFixed(2)+','+y(p[field]).toFixed(2);started=true;}add('path',{d:path,fill:'none',stroke:color,'stroke-width':width,opacity});const last=h.points.at(-1);if(last[field]!==null)add('circle',{cx:x(xval(last)),cy:y(last[field]),r:3,fill:color});}
+  });
+  host.append(legend);const scroll=element('div',null,'scroll');scroll.append(svg);host.append(scroll);
+  const inspect=element('input');inspect.type='range';inspect.min=0;inspect.max=1000;inspect.value=1000;inspect.setAttribute('aria-label','Inspect chart position');inspect.style.width='100%';const detail=element('p');detail.setAttribute('aria-live','polite');
+  const show=f=>{const target=lo+f*(hi-lo);detail.textContent=selected.map(h=>{const p=h.points.reduce((best,p)=>Math.abs(xval(p)-target)<Math.abs(xval(best)-target)?p:best,h.points[0]);return agent(h.agent).name+': '+fmt(p[2])+' Elo; average '+fmt(p[3])+'; '+fmt(p[0])+' games; '+date(p[1]);}).join(' | ');};inspect.oninput=()=>show(Number(inspect.value)/1000);svg.onpointermove=e=>{const rect=svg.getBoundingClientRect();const f=Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*900-65)/805));inspect.value=Math.round(f*1000);show(f);};host.append(inspect,detail);show(1);
+  host.append(element('small','Faint lines: actual ratings. Bold lines: rolling average. A fixed K keeps ratings responsive. Changes in opponent mix can also move ratings; use tournament results and game counts alongside this chart.'));
+}

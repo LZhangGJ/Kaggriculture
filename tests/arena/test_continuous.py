@@ -46,6 +46,19 @@ class ContinuousTest(unittest.TestCase):
         m=schedule.plan(self.root,'continuous-1','continuous',2);self.fill(m,draw=True)
         self.assertTrue(all(r['elo']==1500 for r in elo.update(self.root)['ratings']))
 
+    def test_history_is_exact_and_idempotent(self):
+        m=schedule.plan(self.root,'continuous-history','continuous',30);self.fill(m)
+        first=elo.update(self.root);second=elo.update(self.root)
+        self.assertEqual(first['history'],second['history'])
+        ratings={r['agent']:r for r in first['ratings']}
+        for h in first['history']:
+            points=h['points']
+            self.assertEqual(len(points),60)
+            self.assertEqual(points[-1][0],ratings[h['agent']]['games'])
+            self.assertAlmostEqual(points[-1][2],ratings[h['agent']]['elo'],places=2)
+            self.assertIsNone(points[48][3])
+            self.assertAlmostEqual(points[-1][3],sum(p[2] for p in points[-50:])/50,places=2)
+
     def test_draws_pull_unequal_ratings_together(self):
         m=schedule.plan(self.root,'continuous-1','continuous',2);self.fill(m)
         before=elo.update(self.root)['ratings']
