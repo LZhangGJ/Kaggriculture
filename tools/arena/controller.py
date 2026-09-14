@@ -85,6 +85,8 @@ def work(root, cfg, remote_only=False):
     cursor = read(root / "worker_cursor.json", {}).get("author", "")
     authors = [a for a in authors if a > cursor] + [a for a in authors if a <= cursor]
     p, other = interleave([placement_by_author[a] for a in authors]), interleave(pending)
+    if remote_only:
+        other=[job for group in pending for job in group]  # Drain the first round while its successor stays queued.
     cap = cfg["max_games_per_tick"]
     quota = max(1, round(cap * cfg["placement_fraction"]))
     selected = p[:quota] + other[:cap-quota]
