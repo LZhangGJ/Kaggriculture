@@ -1,0 +1,6 @@
+{
+  "id": "shop-router",
+  "notebook": "OWNER/NOTEBOOK",
+  "command": ["python", "/absolute/path/to/trusted_notebook_exporter.py"],
+  "export": "/absolute/path/to/latest-export.json"
+}

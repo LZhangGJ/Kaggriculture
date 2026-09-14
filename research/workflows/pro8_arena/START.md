@@ -44,6 +44,10 @@ Build/run commands are argv arrays. The build executes inside `/work`; dependenc
 
 Python-callable Kaggle agents need a thin JSONL wrapper. Public notebooks need a trusted format-specific exporter; do not execute downloaded notebooks on the controller. Daily public_refresh_commands are explicit administrator-configured download/conversion argv commands. They write inbox JSON containing archive_path and manifest. The importer detects changed artifact hashes and preserves every version; roster replacement remains a reviewed decision.
 
+For daily leaderboard refresh, prefer `public_sources` in config; see `tools/arena/example-public-source.json`. Each entry names a notebook, trusted exporter command, and output receipt path. The exporter must replace that receipt on every successful check, even when the notebook is unchanged. The receipt contains archive_path and manifest, whose origin is `{ "kind": "public", "notebook": "owner/slug", "version": "exact-version" }`. The exporter must check the current upstream version; a cached package alone does not establish freshness.
+
+Each configured notebook is checked once per local calendar day. One failed source does not stop others or evaluation. Failures and last successful checks appear on the page. Changed versions get separate identities and await sandbox validation. Once validated, they replace the matching public entry in the next roster; existing frozen tournaments retain their old versions. Every public entry carries a Public notebook badge and source/version details, including when serving as a counter rather than occupying a public slot. Sources still need configuration and the timer must be running for live daily refresh.
+
 ## Research loop
 
 Commands: `experiment ID --brief brief.json`, `search QUERY`, `finish ID --result result.json`. Brief fields are hypothesis, owner, parent, scope. Results require variants, evidence, conclusion and limitations. Duplicate active scopes are rejected. New attempts use new IDs.

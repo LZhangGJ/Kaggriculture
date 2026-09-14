@@ -110,10 +110,11 @@ def tick(root):
     root = Path(root)
     cfg = read(root / "config.json")
     from .github_sync import sync
-    imported = sync(root) + refresh(root)
+    from .public_pool import refresh_daily, apply_ready_versions
+    imported = sync(root) + refresh(root) + refresh_daily(root)
     today = datetime.now(ZoneInfo(cfg["timezone"])).date().isoformat()
     refresh_marker = root / "private" / ("refresh-" + today + ".json")
-    if cfg.get("public_refresh_commands") and not refresh_marker.exists():
+    if not cfg.get("public_sources") and cfg.get("public_refresh_commands") and not refresh_marker.exists():
         # Administrator-configured download/conversion tools, never issue-provided code.
         for command in cfg["public_refresh_commands"]:
             if not isinstance(command, list) or not all(isinstance(s, str) for s in command):
@@ -135,6 +136,7 @@ def tick(root):
                     write(root / "agents" / (a["id"] + ".json"), a)
                     event(root, "validation_failure", a["id"], {"reason": a["validation_failure"]})
         create_placements(root)
+        apply_ready_versions(root)
         if cfg["daily_enabled"]:
             try:
                 plan(root, "daily-" + today)

@@ -5,12 +5,21 @@ import json
 import shutil
 import stat
 import zipfile
+import re
 from pathlib import Path, PurePosixPath
 
 from .store import digest, event, file_hash, ident, now, read, write
 
 
 def manifest_check(m):
+    origin = m.get("origin", {"kind": "team"})
+    if not isinstance(origin, dict) or origin.get("kind") not in ("team", "public"):
+        raise ValueError("origin.kind must be team or public")
+    if origin["kind"] == "public":
+        if not re.fullmatch(r"[A-Za-z0-9_-]+/[A-Za-z0-9_-]+", origin.get("notebook", "")):
+            raise ValueError("Public origin requires owner/notebook")
+        if not isinstance(origin.get("version"), str) or not origin["version"].strip():
+            raise ValueError("Public origin requires an exact notebook version")
     for field in ("name", "author", "version"):
         if not isinstance(m.get(field), str) or not 1 <= len(m[field]) <= 120:
             raise ValueError(f"Missing/invalid {field}")
@@ -65,7 +74,10 @@ def submit(root, archive, manifest, receipt=None):
         raise ValueError("Archive SHA-256 mismatch")
     inspect_zip(archive)
     # Author/display metadata do not change executable identity.
-    aid = digest({"archive": sha, "run": m["run"], "build": m.get("build", []), "resources": m.get("resources", {})})
+    identity = {"archive": sha, "run": m["run"], "build": m.get("build", []), "resources": m.get("resources", {})}
+    if m.get("origin", {}).get("kind") == "public":
+        identity["public_version"] = m["origin"]
+    aid = digest(identity)
     sid = ident(receipt) if receipt else digest([aid, m["author"], m["name"], m["version"]])
     existing = read(root / "submissions" / f"{sid}.json")
     if existing:
@@ -110,6 +122,8 @@ def set_roster(root, entries):
         path = root / "agents" / (aid + ".json")
         a = read(path)
         a["status"] = "active" if aid in new_ids else "archived"
+        if any(e["agent"] == aid and e["category"] == "public" for e in entries):
+            a["public_notebook"] = True
         write(path, a)
 
 

@@ -96,6 +96,7 @@ DEFAULT_CONFIG = {
     "bootstrap": 500, "publication_enabled": False,
     "github": {"intake_enabled": False, "repository": "", "allowed_authors": []},
     "public_refresh_commands": [],
+    "public_sources": [],
     "contract": {"engine": "kaggle-environments", "version": "1.32.7",
                  "game": "kaggriculture", "episode_steps": 720,
                  "protocol": "jsonl-observation-configuration-v1",

@@ -3,8 +3,9 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest.mock import patch
 
-from tools.arena import intake, schedule, store, reporting, gates
+from tools.arena import intake, schedule, store, reporting, gates, public_pool
 from tools.arena.check_export import check
 from tools.arena.check_issue import parse
 from tools.arena.ratings import summary
@@ -202,6 +203,64 @@ class ArenaTest(unittest.TestCase):
         g = m["games"][0]
         saved = store.read(self.root / "runs/one/games" / (g["id"]+".json"))
         self.assertFalse(schedule.save_result(self.root,m,g,saved))
+
+    def public_source(self):
+        self.agent("source")
+        receipt = self.root / "export.json"
+        cfg = store.read(self.root / "config.json")
+        cfg["public_sources"] = [{"id":"public-one","notebook":"owner/notebook","command":["exporter"],"export":str(receipt)}]
+        store.write(self.root / "config.json", cfg)
+        def export(*args, **kwargs):
+            store.write(receipt, {"archive_path":str(self.root / "source.zip"), "manifest": {
+                "name":"Notebook", "author":"owner", "version":"1", "run":["python","main.py"],
+                "origin":{"kind":"public","notebook":"owner/notebook","version":"42"}}})
+        return export
+
+    def test_public_refresh_once_daily(self):
+        exporter = self.public_source()
+        with patch("tools.arena.public_pool.subprocess.run", side_effect=exporter) as command:
+            public_pool.refresh_daily(self.root)
+            public_pool.refresh_daily(self.root)
+            self.assertEqual(command.call_count, 1)
+        state = store.read(self.root / "private/public-refresh/public-one.json")
+        self.assertEqual(state["status"], "updated")
+        self.assertEqual(state["version"], "42")
+        data = reporting.build(self.root, bootstrap=0)
+        row = next(a for a in data["agents"] if a["agent_type"] == "public")
+        self.assertEqual(row["notebook"], "owner/notebook")
+        self.assertIn("Public notebook</strong>", (self.root / "site/index.html").read_text())
+        check(self.root / "site")
+
+    def test_public_refresh_failure_is_visible(self):
+        self.public_source()
+        with patch("tools.arena.public_pool.subprocess.run", side_effect=OSError("offline")):
+            public_pool.refresh_daily(self.root)
+        state = store.read(self.root / "private/public-refresh/public-one.json")
+        self.assertEqual(state["status"], "failed")
+        reporting.build(self.root, bootstrap=0)
+        self.assertIn("owner/notebook: failed", (self.root / "site/index.html").read_text())
+
+    def test_public_version_gets_distinct_identity(self):
+        self.agent("source")
+        m = {"name":"Notebook","author":"owner","version":"1","run":["python","main.py"],
+             "origin":{"kind":"public","notebook":"owner/notebook","version":"1"}}
+        old = intake.submit(self.root,self.root/"source.zip",m)
+        m["origin"]["version"] = "2"
+        new = intake.submit(self.root,self.root/"source.zip",m)
+        self.assertNotEqual(old["agent"], new["agent"])
+
+    def test_public_rollover_preserves_frozen_run(self):
+        old, other = self.roster(2)
+        path = self.root / "agents" / (old+".json")
+        a = store.read(path)
+        a["manifest"]["origin"] = {"kind":"public","notebook":"owner/notebook","version":"1"}
+        store.write(path,a)
+        frozen = schedule.plan(self.root,"frozen",count=1)
+        replacement = self.agent("replacement")
+        store.write(self.root/"private/public-refresh/source.json", {"status":"updated","agent":replacement,"notebook":"owner/notebook","version":"2"})
+        self.assertTrue(public_pool.apply_ready_versions(self.root))
+        self.assertIn(replacement, {e["agent"] for e in store.read(self.root/"roster.json")})
+        self.assertEqual(frozen, store.read(self.root/"runs/frozen/manifest.json"))
 
 
 if __name__ == "__main__":

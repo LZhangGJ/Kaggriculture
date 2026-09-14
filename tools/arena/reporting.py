@@ -2,6 +2,8 @@
 from collections import defaultdict
 from html import escape
 from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from .ratings import summary
 from .schedule import validate_result
@@ -40,23 +42,50 @@ def build(root, bootstrap=500):
     root = Path(root)
     agents = {a["id"]: a for a in records(root, "agents")}
     runs = [run_report(root, read(p), bootstrap) for p in sorted((root / "runs").glob("*/manifest.json"))]
+    public_ids = {e["agent"] for e in read(root / "roster.json", []) if e["category"] == "public"}
+    refreshes = [read(p) for p in sorted((root / "private/public-refresh").glob("*.json"))]
+    today = datetime.now(ZoneInfo(read(root / "config.json")["timezone"])).date().isoformat()
+    refresh_by_notebook = {r["notebook"]:r for r in refreshes}
     # Explicit public-safe data schema; no recursive dump of private objects.
     public_agents = [{"id": aid, "name": a["manifest"]["name"], "author": a["manifest"]["author"],
                       "version": a["manifest"]["version"], "status": a["status"],
                       "validation_failed": bool(a.get("validation_failure"))} for aid, a in agents.items()]
+    for row in public_agents:
+        a = agents[row["id"]]
+        origin = a["manifest"].get("origin", {})
+        is_public = origin.get("kind") == "public" or a.get("public_notebook", False) or row["id"] in public_ids
+        ref = refresh_by_notebook.get(origin.get("notebook"), {})
+        row.update(agent_type="public" if is_public else "team", notebook=origin.get("notebook"),
+                   notebook_version=origin.get("version"), last_checked=ref.get("attempted"),
+                   refresh_status=("stale" if ref and ref.get("date") != today else ref.get("status", "not configured")))
+    metadata = {a["id"]: a for a in public_agents}
     champion = read(root / "champion.json", {})
     data = {"schema": 1, "updated": now(), "agents": public_agents, "runs": runs,
             "champion": champion.get("agent"), "champion_evidence": champion.get("evidence"),
-            "roster": [{"agent": r["agent"], "category": r["category"]} for r in read(root / "roster.json", [])]}
+            "roster": [{"agent": r["agent"], "category": r["category"]} for r in read(root / "roster.json", [])],
+            "public_refresh": [{k:r.get(k) for k in ("id","notebook","date","status","version","attempted","successful")} for r in refreshes]}
     write(root / "site/data.json", data)
     def name(aid):
-        return escape(agents.get(aid, {}).get("manifest", {}).get("name", aid[:12]))
+        label = escape(agents.get(aid, {}).get("manifest", {}).get("name", aid[:12]))
+        meta = metadata.get(aid, {})
+        if meta.get("agent_type") == "public":
+            label += ' <strong class="public-badge">Public notebook</strong>'
+            if meta.get("notebook"):
+                notebook = escape(meta["notebook"], quote=True)
+                label += f' <small><a href="https://www.kaggle.com/code/{notebook}">{notebook}</a> · v{escape(meta["notebook_version"])}</small>'
+        return label
     sections = ["<h1>Kaggriculture arena</h1>", "<p>Private preview · Updated " + escape(data["updated"]) + "</p>",
                 "<h2>Verified champion</h2><p>" + (name(data["champion"]) if data["champion"] else "Not nominated") + "</p>",
                 '<p>Daily, placement and fixed-benchmark results are separate. Ratings from different rosters are not directly comparable.</p>']
-    sections += ["<h2>Submissions</h2><table><tr><th>Agent</th><th>Author</th><th>Status</th></tr>"]
+    sections += ["<h2>Public notebook refresh</h2><p>Checked daily before the next roster freeze. Failed refreshes retain the last validated version.</p>"]
+    if not refreshes:
+        sections.append("<p>No public notebook refresh sources configured.</p>")
+    for r in refreshes:
+        status = "stale (" + r["status"] + ")" if r.get("date") != today else r["status"]
+        sections.append(f"<p>{escape(r['notebook'])}: {escape(status)} · checked {escape(r['attempted'])} · last success {escape(r.get('successful', 'never'))}</p>")
+    sections += ["<h2>Submissions</h2><table><tr><th>Agent / source</th><th>Author</th><th>Status</th></tr>"]
     for a in public_agents:
-        sections.append(f"<tr><td>{escape(a['name'])} ({escape(a['version'])})</td><td>{escape(a['author'])}</td><td>{'Validation failed' if a['validation_failed'] else escape(a['status'])}</td></tr>")
+        sections.append(f"<tr><td>{name(a['id'])} ({escape(a['version'])})</td><td>{escape(a['author'])}</td><td>{'Validation failed' if a['validation_failed'] else escape(a['status'])}</td></tr>")
     sections.append("</table>")
     daily = [r for r in runs if r["kind"] == "daily" and r["complete"]]
     if len(daily) >= 2:
