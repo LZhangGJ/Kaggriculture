@@ -267,81 +267,53 @@
     "method": "Start 1500; K=32 per completed seat-swapped pair; draws half a point; separate table per execution contract",
     "ratings": [
       {
+        "agent": "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1544.4630212293034,
+        "games": 10,
+        "score": 0.8
+      },
+      {
         "agent": "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1544.3627353057173,
+        "games": 8,
+        "score": 0.875
+      },
+      {
+        "agent": "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1518.10598372613,
+        "games": 8,
+        "score": 0.625
+      },
+      {
+        "agent": "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1516.6951703850957,
+        "games": 20,
+        "score": 0.55
+      },
+      {
+        "agent": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
         "elo": 1516.0,
         "games": 2,
         "score": 1.0
       },
       {
-        "agent": "41e4922ec02c3fb6ddef5f3281cca2d8d9e402a2ef6f89ef99add346a802f110",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1516.0,
-        "games": 4,
-        "score": 0.75
-      },
-      {
-        "agent": "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.736306793522,
-        "games": 4,
-        "score": 0.5
-      },
-      {
-        "agent": "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
-        "agent": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
         "agent": "816a29fa2a8b03112a1a568bd664ba43342c943b34abbf228ea61932ac6a581d",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
-        "agent": "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
+        "elo": 1516.0,
         "games": 2,
-        "score": 0.5
+        "score": 1.0
       },
       {
-        "agent": "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472",
+        "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
-        "agent": "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
-        "agent": "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
-      },
-      {
-        "agent": "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7",
-        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1500.0,
-        "games": 0,
-        "score": null
+        "elo": 1514.6953728667902,
+        "games": 6,
+        "score": 0.6666666666666666
       },
       {
         "agent": "ce29ce8721a52c33abbdfbc94f8a2c1a0c5c6604f90f6c81c247ad5411e91c11",
@@ -351,24 +323,52 @@
         "score": null
       },
       {
-        "agent": "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a",
+        "agent": "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1484.0,
+        "elo": 1485.967225537283,
+        "games": 6,
+        "score": 0.3333333333333333
+      },
+      {
+        "agent": "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1484.7040225341211,
         "games": 2,
         "score": 0.0
       },
       {
-        "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
+        "agent": "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-        "elo": 1483.263693206478,
+        "elo": 1484.0335591878159,
         "games": 2,
+        "score": 0.0
+      },
+      {
+        "agent": "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1468.0351792444146,
+        "games": 6,
+        "score": 0.16666666666666666
+      },
+      {
+        "agent": "126bc3e142fa3ca434d4fbdd7e1369cec0c5f0d032c5c0b3bc55c448330d085f",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1456.2399172801747,
+        "games": 10,
+        "score": 0.2
+      },
+      {
+        "agent": "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1450.697812703154,
+        "games": 6,
         "score": 0.0
       }
     ],
-    "updated": "2026-09-14T05:23:51.063189+00:00"
+    "updated": "2026-09-14T05:28:07.910031+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-14T05:23:51.063649+00:00",
+    "at": "2026-09-14T05:28:07.910450+00:00",
     "pending_rounds": 2,
     "status": "running"
   },
@@ -4939,7 +4939,8 @@
           "win_rate": 0.7007299270072993,
           "wins": 96
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.176402+00:00"
     },
     {
       "complete": true,
@@ -5055,7 +5056,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.699292+00:00"
     },
     {
       "complete": true,
@@ -5171,7 +5173,8 @@
           "win_rate": 0.5,
           "wins": 1
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.702759+00:00"
     },
     {
       "complete": true,
@@ -5287,7 +5290,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.708053+00:00"
     },
     {
       "complete": true,
@@ -5403,7 +5407,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.712321+00:00"
     },
     {
       "complete": true,
@@ -5519,7 +5524,8 @@
           "win_rate": 0.5,
           "wins": 1
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.716865+00:00"
     },
     {
       "complete": true,
@@ -5635,7 +5641,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.721691+00:00"
     },
     {
       "complete": true,
@@ -5751,7 +5758,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.725759+00:00"
     },
     {
       "complete": true,
@@ -5867,7 +5875,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.731021+00:00"
     },
     {
       "complete": true,
@@ -5983,7 +5992,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.735748+00:00"
     },
     {
       "complete": false,
@@ -6101,7 +6111,8 @@
           "win_rate": null,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.739498+00:00"
     },
     {
       "complete": true,
@@ -6217,7 +6228,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.743755+00:00"
     },
     {
       "complete": true,
@@ -6333,7 +6345,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.748639+00:00"
     },
     {
       "complete": true,
@@ -6449,7 +6462,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.753020+00:00"
     },
     {
       "complete": false,
@@ -7570,7 +7584,8 @@
           "win_rate": 1.0,
           "wins": 4
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.186506+00:00"
     },
     {
       "complete": false,
@@ -8691,7 +8706,8 @@
           "win_rate": 0.16666666666666666,
           "wins": 1
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.191263+00:00"
     },
     {
       "complete": false,
@@ -9812,7 +9828,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.195402+00:00"
     },
     {
       "complete": false,
@@ -10933,7 +10950,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.200253+00:00"
     },
     {
       "complete": false,
@@ -12054,7 +12072,8 @@
           "win_rate": 1.0,
           "wins": 3
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.204402+00:00"
     },
     {
       "complete": false,
@@ -13175,7 +13194,8 @@
           "win_rate": 0.6470588235294118,
           "wins": 11
         }
-      }
+      },
+      "updated": "2026-09-14T05:27:15.209303+00:00"
     },
     {
       "complete": true,
@@ -13291,7 +13311,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.757856+00:00"
     },
     {
       "complete": true,
@@ -13407,7 +13428,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.762677+00:00"
     },
     {
       "complete": true,
@@ -13523,7 +13545,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.767045+00:00"
     },
     {
       "complete": true,
@@ -13639,7 +13662,8 @@
           "win_rate": 0.5,
           "wins": 1
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.771849+00:00"
     },
     {
       "complete": true,
@@ -13755,7 +13779,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.775759+00:00"
     },
     {
       "complete": true,
@@ -13871,7 +13896,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.780837+00:00"
     },
     {
       "complete": true,
@@ -13987,7 +14013,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.785128+00:00"
     },
     {
       "complete": true,
@@ -14103,7 +14130,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.789373+00:00"
     },
     {
       "complete": true,
@@ -14219,7 +14247,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.792759+00:00"
     },
     {
       "complete": true,
@@ -14335,7 +14364,8 @@
           "win_rate": 0.0,
           "wins": 0
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.797779+00:00"
     },
     {
       "complete": true,
@@ -14451,7 +14481,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.802805+00:00"
     },
     {
       "complete": true,
@@ -14567,7 +14598,8 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.807542+00:00"
     },
     {
       "complete": true,
@@ -14683,9 +14715,10 @@
           "win_rate": 1.0,
           "wins": 2
         }
-      }
+      },
+      "updated": "2026-09-14T04:43:35.812243+00:00"
     }
   ],
   "schema": 1,
-  "updated": "2026-09-14T05:27:15.211081+00:00"
+  "updated": "2026-09-14T05:28:08.072633+00:00"
 }

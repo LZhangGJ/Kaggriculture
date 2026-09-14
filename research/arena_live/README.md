@@ -1,8 +1,8 @@
 # Kaggriculture arena
 
-Updated: 2026-09-14T05:27:15.211081+00:00
+Updated: 2026-09-14T05:28:08.072633+00:00
 
-CPU evaluation on WRX90. Results below are local; they are not Kaggle leaderboard scores.
+CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
 [Submit an agent or join the workflow](../workflows/pro8_arena/START.md)
 
@@ -39,24 +39,26 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Mini PC round robin. Daily tournaments stay separate. New versions start at 1500; K=32 per completed seat-swapped pair. Draws count half. Compare ratings only within the same contract.
 
-Status: running · Last sync: 2026-09-14T05:23:51.063649+00:00
+Last updated: 2026-09-14T05:28:07.910031+00:00 (UTC)
+
+Status: running · Last sync: 2026-09-14T05:28:07.910450+00:00
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
-| TRI_A06_r12_r3_fix1 | 1516.0 | 2 | 100.0% | ffc8942965 |
-| kaggriculture-v41-review-candidate **PUBLIC** | 1516.0 | 4 | 75.0% | ffc8942965 |
-| TRI_A08_r11_r3 | 1500.7 | 4 | 50.0% | ffc8942965 |
-| kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
-| AFS R1 | 1500.0 | 0 | — | ffc8942965 |
-| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
-| AFS R2 | 1500.0 | 2 | 50.0% | ffc8942965 |
-| TRI_A06_r6_r3_bundle_fix1 | 1500.0 | 0 | — | ffc8942965 |
-| kaggriculture-adaptive-land-allocator **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
-| shop-router-0913 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
-| kaggriculture-best-agent **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
+| kaggriculture-v41-review-candidate **PUBLIC** | 1544.5 | 10 | 80.0% | ffc8942965 |
+| TRI_A06_r12_r3_fix1 | 1544.4 | 8 | 87.5% | ffc8942965 |
+| Day 9 planner selector | 1518.1 | 8 | 62.5% | ffc8942965 |
+| TRI_A08_r11_r3 | 1516.7 | 20 | 55.0% | ffc8942965 |
+| AFS R1 | 1516.0 | 2 | 100.0% | ffc8942965 |
+| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1516.0 | 2 | 100.0% | ffc8942965 |
+| kaggriculture **PUBLIC** | 1514.7 | 6 | 66.7% | ffc8942965 |
 | kaggriculture-utils-v1 **PUBLIC** | 1500.0 | 0 | — | ffc8942965 |
-| Day 9 planner selector | 1484.0 | 2 | 0.0% | ffc8942965 |
-| kaggriculture **PUBLIC** | 1483.3 | 2 | 0.0% | ffc8942965 |
+| shop-router-0913 **PUBLIC** | 1486.0 | 6 | 33.3% | ffc8942965 |
+| kaggriculture-best-agent **PUBLIC** | 1484.7 | 2 | 0.0% | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1484.0 | 2 | 0.0% | ffc8942965 |
+| AFS R2 | 1468.0 | 6 | 16.7% | ffc8942965 |
+| kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1456.2 | 10 | 20.0% | ffc8942965 |
+| kaggriculture-adaptive-land-allocator **PUBLIC** | 1450.7 | 6 | 0.0% | ffc8942965 |
 
 ## Public refresh
 
@@ -123,6 +125,8 @@ Each challenger and the proposed replacement face the same other agents on 128 f
 | verified-ce29ce8721a5 | Complete | 2/2 |
 
 ## daily-2026-09-14 — provisional
+
+Bradley–Terry leaderboard · Last updated: 2026-09-14T05:27:15.176402+00:00 (UTC)
 
 | Agent | BT rating | W / L / D | Strict win rate | Cash margin |
 |---|---:|---:|---:|---:|
