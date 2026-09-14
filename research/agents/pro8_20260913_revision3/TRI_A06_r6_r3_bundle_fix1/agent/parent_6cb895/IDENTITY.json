@@ -1,0 +1,35 @@
+{
+  "name": "TRI_A06_r6_r3",
+  "status": "candidate_for_fresh_central_1536_panel_not_accepted",
+  "parent_name": "TRI_A06_r6_r2_b10d_search_version",
+  "parent_native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "parent_delivery_zip_sha256": "76bbf478998777803188074ee5cf205f9c2d519767a52c65f33e389589a1beda",
+  "source_input_zip_sha256": "47a919d5a6cc68098cb8799dc3579b0a3680203c1a07ff585b016483994ed9e2",
+  "feedback_input_zip_sha256": "d25135597396b5c35e50f379e7308e29cfdeefeaf364cd48bee6e056470df4ad",
+  "native_sha256": "6cb895db1484045699e8b81f11ed1d753507e02d9d57af81d037845dbf73441e",
+  "main_sha256": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+  "config_sha256": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+  "compiler_flags_sha256": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85",
+  "existing_build_inputs": 40,
+  "unchanged_build_inputs": 38,
+  "modified_build_inputs": [
+    "policy/executor/policy.hpp",
+    "policy/triad.hpp"
+  ],
+  "added_build_inputs": [
+    "policy/executor/labor_funding.hpp"
+  ],
+  "alternate_port": {
+    "zip_sha256": "9576d0a6824a65c19297ebcc41faf7c191fcb4963de92c5eef7fa1156d980aaa",
+    "native_sha256": "79a769f34ee405a7ab3f6542c22eb6af59f62a76bff76b32074b0573d77cab73",
+    "source": "evidence/alternate_bundle_source/triad_79a769.hpp",
+    "source_sha256": "f3b8fec24365dec920c4c88b84c95e77971a475480978808bd78231a081d01ac",
+    "scope": "Only whole-land-bundle comparison ported; alternate native is NOT the parent and its diagnostics are NOT r3 results."
+  },
+  "new_closed_loop_games": 0,
+  "acceptance": {
+    "planned_games": 1536,
+    "strict_wins_required": 1306,
+    "verified": false
+  }
+}

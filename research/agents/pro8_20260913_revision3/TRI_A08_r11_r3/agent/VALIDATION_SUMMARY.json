@@ -1,0 +1,561 @@
+{
+  "revision": "TRI_A08_r11_r3",
+  "production_native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+  "formal_new_games": 0,
+  "acceptance_passed": false,
+  "acceptance_tested": false,
+  "parent_progress": {
+    "snapshot_utc": "2026-09-13T19:00:11.675396+00:00",
+    "candidate": "TRI_A08_r11_r2_fix1",
+    "native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "scope": "Incomplete frozen-panel snapshot: mathematical failure bound only, not final overall win rate",
+    "completed": 902,
+    "strict_wins": 649,
+    "nonwins": 253,
+    "maximum_possible_final_wins": 1283,
+    "required_strict_wins": 1306,
+    "formal_games_planned": 1536,
+    "formal_panel_continues": true,
+    "cash_acceptance_gate": false,
+    "opponents": [
+      "soil_v219g",
+      "moon_v215",
+      "flexon_v5",
+      "market_smart_v8",
+      "nagatakengo_v70",
+      "aurax_reactive_v1",
+      "thomas_955_v2",
+      "shop0909",
+      "aurax_shop_v2",
+      "seven_turn",
+      "ahmed_v27",
+      "submission_56149565"
+    ],
+    "by_opponent": {
+      "soil_v219g": {
+        "completed": 76,
+        "wins": 54
+      },
+      "moon_v215": {
+        "completed": 76,
+        "wins": 51
+      },
+      "flexon_v5": {
+        "completed": 76,
+        "wins": 53
+      },
+      "market_smart_v8": {
+        "completed": 76,
+        "wins": 53
+      },
+      "nagatakengo_v70": {
+        "completed": 76,
+        "wins": 76
+      },
+      "aurax_reactive_v1": {
+        "completed": 76,
+        "wins": 51
+      },
+      "thomas_955_v2": {
+        "completed": 75,
+        "wins": 54
+      },
+      "shop0909": {
+        "completed": 75,
+        "wins": 52
+      },
+      "aurax_shop_v2": {
+        "completed": 74,
+        "wins": 51
+      },
+      "seven_turn": {
+        "completed": 74,
+        "wins": 51
+      },
+      "ahmed_v27": {
+        "completed": 74,
+        "wins": 53
+      },
+      "submission_56149565": {
+        "completed": 74,
+        "wins": 50
+      }
+    }
+  },
+  "actual_native_gate": {
+    "status": "PASS",
+    "library": "/mnt/data/r3_work/candidate/policy/tri_a08_r11_r3.so",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+    "animal_collection_labor": 1,
+    "table_solves": 530,
+    "states_validated": 29456,
+    "checks_passed_before_mutation": 171628,
+    "mutation_prefix_states": 5,
+    "checks_including_expected_mutation_failure": 171656,
+    "table_digest": "5b7ddb3317e1466890ae9a6bb505711e2e221a506433cfb5c2927d6ac96a7f6b",
+    "rich": [
+      65.0,
+      65.0,
+      1.0,
+      0.0
+    ],
+    "negative": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mutation_rejected": true,
+    "mutation_message": "action != independently selected argmax kind=9 placed=21 day=28 hunger=1 bonus=0 work=4.0",
+    "seconds": 0.3736702249998416,
+    "new_games": 0
+  },
+  "official_proposal_summary": {
+    "status": "PASS",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+    "checks": 1427,
+    "atomic_plant_unit_phase_cases": 10,
+    "positive_proposals": 63,
+    "historical_saved_snapshot_calls": 249,
+    "synthetic_positive_cases": 49,
+    "negative_controls": [
+      "no_overflow",
+      "not_real_observation",
+      "negative_opportunity_return",
+      "no_free_warehouse_capacity",
+      "held_animal_commitment",
+      "donor_reserved_input_15",
+      "donor_reserved_input_11",
+      "delayed_harvest_expiry",
+      "floor_price_unprofitable_detour",
+      "final_day_unchanged",
+      "unfunded_shared_seed_budget"
+    ],
+    "new_games": 0,
+    "scope": "official own-unit prefixes; no market clearing and no competitor rollout; snapshots not counterfactual trajectories"
+  },
+  "saved_observation_probes": [
+    {
+      "case": "aurax_reactive_v1_1801029924_seat0",
+      "calls": 719,
+      "exact_parent_actions": 699,
+      "first_action_divergence": 460,
+      "insertions": [
+        {
+          "step": 460,
+          "enabled": 1,
+          "observation_step": 460,
+          "checks": 460,
+          "insertions": 1,
+          "quantity": 3,
+          "last_step": 460,
+          "donor": 5,
+          "receiver": 0
+        },
+        {
+          "step": 461,
+          "enabled": 1,
+          "observation_step": 461,
+          "checks": 461,
+          "insertions": 2,
+          "quantity": 5,
+          "last_step": 461,
+          "donor": 1,
+          "receiver": 9
+        }
+      ],
+      "seconds": 5.395518747999631,
+      "peak_rss_kib": 167700,
+      "new_games": 0
+    },
+    {
+      "case": "submission_56149565_1782098909_seat1",
+      "calls": 719,
+      "exact_parent_actions": 709,
+      "first_action_divergence": 614,
+      "insertions": [
+        {
+          "step": 613,
+          "enabled": 1,
+          "observation_step": 613,
+          "checks": 613,
+          "insertions": 1,
+          "quantity": 8,
+          "last_step": 613,
+          "donor": 0,
+          "receiver": 4
+        }
+      ],
+      "seconds": 5.53453780100017,
+      "peak_rss_kib": 249672,
+      "new_games": 0
+    },
+    {
+      "case": "market_smart_v8_290316560_seat0",
+      "calls": 719,
+      "exact_parent_actions": 699,
+      "first_action_divergence": 508,
+      "insertions": [
+        {
+          "step": 508,
+          "enabled": 1,
+          "observation_step": 508,
+          "checks": 508,
+          "insertions": 1,
+          "quantity": 6,
+          "last_step": 508,
+          "donor": 6,
+          "receiver": 7
+        },
+        {
+          "step": 510,
+          "enabled": 1,
+          "observation_step": 510,
+          "checks": 510,
+          "insertions": 2,
+          "quantity": 8,
+          "last_step": 510,
+          "donor": 2,
+          "receiver": 12
+        }
+      ],
+      "seconds": 5.616167394000058,
+      "peak_rss_kib": 250208,
+      "new_games": 0
+    },
+    {
+      "case": "submission_56149565_447907448_seat0",
+      "calls": 719,
+      "exact_parent_actions": 719,
+      "first_action_divergence": null,
+      "insertions": [],
+      "seconds": 4.576567823000005,
+      "peak_rss_kib": 250652,
+      "new_games": 0
+    }
+  ],
+  "conditional_own_execution": {
+    "normal": [
+      {
+        "case": "aurax_reactive_v1_1801029924_seat0",
+        "start": 460,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 7746.0,
+        "candidate_cash_delta": 8376.0,
+        "cash_delta_difference": 630.0,
+        "parent_night_loss": 15,
+        "candidate_night_loss": 10,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 0
+      },
+      {
+        "case": "submission_56149565_1782098909_seat1",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 86.0,
+        "cash_delta_difference": 86.0,
+        "parent_night_loss": 9,
+        "candidate_night_loss": 1,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 0
+      },
+      {
+        "case": "market_smart_v8_290316560_seat0",
+        "start": 508,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 3873.0,
+        "candidate_cash_delta": 4193.0,
+        "cash_delta_difference": 320.0,
+        "parent_night_loss": 3,
+        "candidate_night_loss": 0,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 0
+      },
+      {
+        "case": "submission_56149565_447907448_seat0",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 396.0,
+        "candidate_cash_delta": 396.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 0,
+        "candidate_night_loss": 0,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 0
+      }
+    ],
+    "no_clearance": [
+      {
+        "case": "aurax_reactive_v1_1801029924_seat0",
+        "start": 460,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 0.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 76,
+        "candidate_night_loss": 76,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": false,
+        "supply": 0
+      },
+      {
+        "case": "submission_56149565_1782098909_seat1",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 0.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 9,
+        "candidate_night_loss": 9,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": false,
+        "supply": 0
+      },
+      {
+        "case": "market_smart_v8_290316560_seat0",
+        "start": 508,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 0.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 51,
+        "candidate_night_loss": 51,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": false,
+        "supply": 0
+      },
+      {
+        "case": "submission_56149565_447907448_seat0",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 0.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 0,
+        "candidate_night_loss": 0,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": false,
+        "supply": 0
+      }
+    ],
+    "synthetic_pressure": [
+      {
+        "case": "aurax_reactive_v1_1801029924_seat0",
+        "start": 460,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 7008.0,
+        "candidate_cash_delta": 7575.0,
+        "cash_delta_difference": 567.0,
+        "parent_night_loss": 15,
+        "candidate_night_loss": 10,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 3
+      },
+      {
+        "case": "submission_56149565_1782098909_seat1",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 0.0,
+        "candidate_cash_delta": 8.0,
+        "cash_delta_difference": 8.0,
+        "parent_night_loss": 9,
+        "candidate_night_loss": 1,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 3
+      },
+      {
+        "case": "market_smart_v8_290316560_seat0",
+        "start": 508,
+        "ticks_per_branch": 20,
+        "parent_cash_delta": 2978.0,
+        "candidate_cash_delta": 3198.0,
+        "cash_delta_difference": 220.0,
+        "parent_night_loss": 3,
+        "candidate_night_loss": 4,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 3
+      },
+      {
+        "case": "submission_56149565_447907448_seat0",
+        "start": 613,
+        "ticks_per_branch": 11,
+        "parent_cash_delta": 194.0,
+        "candidate_cash_delta": 194.0,
+        "cash_delta_difference": 0.0,
+        "parent_night_loss": 0,
+        "candidate_night_loss": 0,
+        "same_endpoint_tiles": true,
+        "same_endpoint_seeds": true,
+        "new_games": 0,
+        "clearance": true,
+        "supply": 3
+      }
+    ],
+    "unique_branches": 24,
+    "generated_own_ticks": 372,
+    "competitive_games": 0
+  },
+  "default_root_check": {
+    "status": "PASS",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+    "calls": 2876,
+    "new_games": 0,
+    "rows": [
+      {
+        "case": "aurax_reactive_v1_1801029924_seat0",
+        "calls": 719,
+        "matches_create_agent": 719,
+        "matches_parent": 699,
+        "new_games": 0,
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/r3_work/feedback/probe_observations.py",
+          "--agent",
+          "/mnt/data/r3_work/candidate/main.py",
+          "--trace",
+          "/mnt/data/r3_work/feedback/own_traces/aurax_reactive_v1_1801029924_seat0.json.gz",
+          "--limit",
+          "719",
+          "--out",
+          "/mnt/data/r3_work/logs/root_default_aurax_reactive_v1_1801029924_seat0.json"
+        ],
+        "result_sha256": "08ac3cdef5cd036415bacd345c68f1d26c37356930dd372851decb5de0e5005e"
+      },
+      {
+        "case": "submission_56149565_1782098909_seat1",
+        "calls": 719,
+        "matches_create_agent": 719,
+        "matches_parent": 709,
+        "new_games": 0,
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/r3_work/feedback/probe_observations.py",
+          "--agent",
+          "/mnt/data/r3_work/candidate/main.py",
+          "--trace",
+          "/mnt/data/r3_work/feedback/own_traces/submission_56149565_1782098909_seat1.json.gz",
+          "--limit",
+          "719",
+          "--out",
+          "/mnt/data/r3_work/logs/root_default_submission_56149565_1782098909_seat1.json"
+        ],
+        "result_sha256": "37b5d312639afa993174fce12e5df92fad44e6127fc78a6eae806aa3c38836e2"
+      },
+      {
+        "case": "market_smart_v8_290316560_seat0",
+        "calls": 719,
+        "matches_create_agent": 719,
+        "matches_parent": 699,
+        "new_games": 0,
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/r3_work/feedback/probe_observations.py",
+          "--agent",
+          "/mnt/data/r3_work/candidate/main.py",
+          "--trace",
+          "/mnt/data/r3_work/feedback/own_traces/market_smart_v8_290316560_seat0.json.gz",
+          "--limit",
+          "719",
+          "--out",
+          "/mnt/data/r3_work/logs/root_default_market_smart_v8_290316560_seat0.json"
+        ],
+        "result_sha256": "2ee0bd0db9379b2081ed761577cd1c2c5a3ffd408ccac1aa7f85191f373be22d"
+      },
+      {
+        "case": "submission_56149565_447907448_seat0",
+        "calls": 719,
+        "matches_create_agent": 719,
+        "matches_parent": 719,
+        "new_games": 0,
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/r3_work/feedback/probe_observations.py",
+          "--agent",
+          "/mnt/data/r3_work/candidate/main.py",
+          "--trace",
+          "/mnt/data/r3_work/feedback/own_traces/submission_56149565_447907448_seat0.json.gz",
+          "--limit",
+          "719",
+          "--out",
+          "/mnt/data/r3_work/logs/root_default_submission_56149565_447907448_seat0.json"
+        ],
+        "result_sha256": "b6a4aa7bdd2b95f56240cd9b265d44df75af184f10c01a2d6209b3d6cb75a32e"
+      }
+    ]
+  },
+  "cross_compiler_and_ablation": {
+    "status": "PASS",
+    "new_games": 0,
+    "GCC_native": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+    "Clang_native": "f1bba1154a0e8257072936e3bc81d9a53a1cd9e1afac49af10a968208cec2be3",
+    "ablation_native": "23499cf7a5cde525577458c57112f84c1827ef5f3e7cb5b2e9ee6b39d4770e79",
+    "rows": [
+      {
+        "case": "aurax_reactive_v1_1801029924_seat0",
+        "gcc_clang_action_matches": 719,
+        "ablation_parent_action_matches": 719
+      },
+      {
+        "case": "submission_56149565_1782098909_seat1",
+        "gcc_clang_action_matches": 719,
+        "ablation_parent_action_matches": 719
+      },
+      {
+        "case": "market_smart_v8_290316560_seat0",
+        "gcc_clang_action_matches": 719,
+        "ablation_parent_action_matches": 719
+      },
+      {
+        "case": "submission_56149565_447907448_seat0",
+        "gcc_clang_action_matches": 719,
+        "ablation_parent_action_matches": 719
+      }
+    ]
+  },
+  "clean_rebuild": {
+    "status": "PASS",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+    "matches_production_bytes": true,
+    "independent_directory": "/mnt/data/r3_work/clean_rebuild",
+    "build_receipt_sha256": "2d10e1f64a66424bbe205e1033b09608dcb8e763fa31e6ff23da18cacbd8f428"
+  },
+  "expected_build_failure": {
+    "status": "PASS_EXPECTED_REJECTION",
+    "build_returncode": 1,
+    "prior_native_unchanged": true,
+    "prior_receipt_unchanged": true,
+    "rejected_stage_retained": "/mnt/data/r3_work/atomic_gate_negative/policy/tri_a08_r11_r3.building-20260913T194453237774Z.so",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64"
+  },
+  "scope": "Saved-observation probes and conditional own-state prefixes only; no new competitive results."
+}

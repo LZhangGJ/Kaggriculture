@@ -1,0 +1,13 @@
+g++ -std=c++20 -O3 -DNDEBUG -march=x86-64 -ffp-contract=off -DR2_LOCAL_SALE_TIMING=1 -DR2_FINITE_FERTILIZER=1 -DR2_CROP_CLOCK_MODE=1 -DR2_OBSERVE_PUBLIC_TRADES=1 -DR2_SALE_CLOCK_MODE=0 -fPIC -shared -Wl,-Bsymbolic -DR2_MARKET_INTEGRAL=0 -DR2_STARTUP_SUPPLY_MODE=2 -DA06_EXEC_MODE=2 /tmp/r6_fix1_focused_ijltov0p/tests/fix1_checks.cpp /tmp/r6_fix1_focused_ijltov0p/policy/executor/vendor/simulator.cpp -o /tmp/r6_fix1_focused_ijltov0p/validation_fix1/checks.so
+In file included from /tmp/r6_fix1_focused_ijltov0p/tests/r3/r3_checks.cpp:2,
+                 from /tmp/r6_fix1_focused_ijltov0p/tests/fix1_checks.cpp:1:
+/tmp/r6_fix1_focused_ijltov0p/tests/r3/../land_choice_checks.cpp:2:10: fatal error: bridge.cpp: No such file or directory
+    2 | #include "bridge.cpp"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+Traceback (most recent call last):
+  File "/tmp/r6_fix1_focused_ijltov0p/tests/build_fix1.py", line 12, in <module>
+    subprocess.run(cmd,check=True,timeout=90)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['g++', '-std=c++20', '-O3', '-DNDEBUG', '-march=x86-64', '-ffp-contract=off', '-DR2_LOCAL_SALE_TIMING=1', '-DR2_FINITE_FERTILIZER=1', '-DR2_CROP_CLOCK_MODE=1', '-DR2_OBSERVE_PUBLIC_TRADES=1', '-DR2_SALE_CLOCK_MODE=0', '-fPIC', '-shared', '-Wl,-Bsymbolic', '-DR2_MARKET_INTEGRAL=0', '-DR2_STARTUP_SUPPLY_MODE=2', '-DA06_EXEC_MODE=2', '/tmp/r6_fix1_focused_ijltov0p/tests/fix1_checks.cpp', '/tmp/r6_fix1_focused_ijltov0p/policy/executor/vendor/simulator.cpp', '-o', '/tmp/r6_fix1_focused_ijltov0p/validation_fix1/checks.so']' returned non-zero exit status 1.

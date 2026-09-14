@@ -1,0 +1,198 @@
+{
+  "agent/policy/agent.py": {
+    "sha256": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "bytes": 7892
+  },
+  "agent/policy/animal_service_dp.hpp": {
+    "sha256": "50f0392a75fd531ac1564bf0367b4a2ad8f284a24cbb70394eb11754e60986f4",
+    "bytes": 2798
+  },
+  "agent/policy/batch_calendar.hpp": {
+    "sha256": "eaa144f64ff53d7a1e5a9c5a66468c9b2c7483dfbbdb620ba6c8e01cc49a3405",
+    "bytes": 6192
+  },
+  "agent/policy/bridge.cpp": {
+    "sha256": "095ad02252d4aed741e3429e0fe1008c9103d5986af2f8d4e355f4346c75674c",
+    "bytes": 8960
+  },
+  "agent/policy/conditional_market.hpp": {
+    "sha256": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+    "bytes": 2178
+  },
+  "agent/policy/config.json": {
+    "sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "bytes": 758
+  },
+  "agent/policy/executor/compile_choices.hpp": {
+    "sha256": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+    "bytes": 5705
+  },
+  "agent/policy/executor/crop_delivery.hpp": {
+    "sha256": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+    "bytes": 5208
+  },
+  "agent/policy/executor/day_consequence.hpp": {
+    "sha256": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+    "bytes": 9097
+  },
+  "agent/policy/executor/idle_task_handoff.hpp": {
+    "sha256": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+    "bytes": 3757
+  },
+  "agent/policy/executor/intraday_admission.hpp": {
+    "sha256": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9",
+    "bytes": 14811
+  },
+  "agent/policy/executor/investment_candidates.hpp": {
+    "sha256": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+    "bytes": 4356
+  },
+  "agent/policy/executor/joint_portfolio.hpp": {
+    "sha256": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+    "bytes": 14008
+  },
+  "agent/policy/executor/live_execution_repairs.hpp": {
+    "sha256": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+    "bytes": 4016
+  },
+  "agent/policy/executor/observation_view.hpp": {
+    "sha256": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+    "bytes": 330
+  },
+  "agent/policy/executor/observed_day_scenario.hpp": {
+    "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+    "bytes": 4273
+  },
+  "agent/policy/executor/pack_memo.hpp": {
+    "sha256": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+    "bytes": 2195
+  },
+  "agent/policy/executor/policy.hpp": {
+    "sha256": "3fe10da53558ec9aff3be2bf3234f7d76c007ab5400fed867abe60154a43bfa2",
+    "bytes": 117243
+  },
+  "agent/policy/executor/regret_pack_incremental.inc": {
+    "sha256": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+    "bytes": 2294
+  },
+  "agent/policy/executor/resource_exchange.hpp": {
+    "sha256": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+    "bytes": 5838
+  },
+  "agent/policy/executor/rotation_calendar.hpp": {
+    "sha256": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+    "bytes": 6495
+  },
+  "agent/policy/executor/rotation_cash.hpp": {
+    "sha256": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+    "bytes": 7072
+  },
+  "agent/policy/executor/service_recovery.hpp": {
+    "sha256": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+    "bytes": 8443
+  },
+  "agent/policy/executor/vendor/simulator.cpp": {
+    "sha256": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+    "bytes": 17869
+  },
+  "agent/policy/executor/vendor/simulator.hpp": {
+    "sha256": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+    "bytes": 6489
+  },
+  "agent/policy/finite_fertilizer.hpp": {
+    "sha256": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+    "bytes": 860
+  },
+  "agent/policy/learned_value.hpp": {
+    "sha256": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2",
+    "bytes": 2550
+  },
+  "agent/policy/local_sale_timing.hpp": {
+    "sha256": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766",
+    "bytes": 3107
+  },
+  "agent/policy/observation_codec.hpp": {
+    "sha256": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+    "bytes": 1569
+  },
+  "agent/policy/observed_crop_clock.hpp": {
+    "sha256": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+    "bytes": 1869
+  },
+  "agent/policy/ongoing_maintenance_dp.hpp": {
+    "sha256": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+    "bytes": 2095
+  },
+  "agent/policy/paid_continuation.hpp": {
+    "sha256": "e2b0fa66f8c867a41ae959d5669b452e2f714c53e6a47c4942a4649996b62b76",
+    "bytes": 14099
+  },
+  "agent/policy/paid_continuation_types.hpp": {
+    "sha256": "b0b2087cfc7931204af774bad983822c893501f1ddba12a83eb53e05e60685f1",
+    "bytes": 837
+  },
+  "agent/policy/planner.hpp": {
+    "sha256": "7cdbd5aa78dc2dac881c166e279a060544651dc92252e94ac1ff5c3e78560b02",
+    "bytes": 15374
+  },
+  "agent/policy/proposals.hpp": {
+    "sha256": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289",
+    "bytes": 6894
+  },
+  "agent/policy/public_flow_scenario.hpp": {
+    "sha256": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+    "bytes": 2781
+  },
+  "agent/policy/public_trade_ledger.hpp": {
+    "sha256": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+    "bytes": 5525
+  },
+  "agent/policy/sale_clock.hpp": {
+    "sha256": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+    "bytes": 1901
+  },
+  "agent/policy/sale_schedule_dp.hpp": {
+    "sha256": "d50283b7d46a9d148a7fe33c8bfa8ef563bae2c4018dc233b313006d994caea6",
+    "bytes": 15442
+  },
+  "agent/policy/search.hpp": {
+    "sha256": "eb016e7933e046af1f5c3805cee7c1144db569e4049f53924f6a6ca15c813e87",
+    "bytes": 7224
+  },
+  "agent/policy/startup_supply.hpp": {
+    "sha256": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+    "bytes": 674
+  },
+  "agent/policy/triad.hpp": {
+    "sha256": "06a0e9b71d22ba89aeab57d87873105de9e3dca4c6e5ebadca95d6470de9ba7c",
+    "bytes": 40838
+  },
+  "agent/main.py": {
+    "sha256": "f3e5e3ead6a554e99d11e58146c272d298845161212bedb82e8abb0682a32d93",
+    "bytes": 973
+  },
+  "agent/build.py": {
+    "sha256": "ca4fd39a68cbb49b42fe7a91ac14cd212386853a749aa966e66418251ee7bb34",
+    "bytes": 5789
+  },
+  "agent/tests/native_choice_gate.py": {
+    "sha256": "1c4866667e35d9fd9d167b001fd83a89a5d10a8f391fcd2cdf15a5d83ae1c51d",
+    "bytes": 7033
+  },
+  "agent/policy/tri_a08_r11_r2_fix1.so": {
+    "sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed",
+    "bytes": 1252800
+  },
+  "ORIGINAL_BUILD_RECEIPT.json": {
+    "sha256": "565c24838b367b21c1a9c5627a261f73f350496d3829d3aced603b3b99084394",
+    "bytes": 8575
+  },
+  "PARENT_IDENTITY.json": {
+    "sha256": "6e44c5e03257483b1d1471a9d6ea7b0f5d9362c0edab0da3e53c76fbf754d497",
+    "bytes": 707
+  },
+  "README.md": {
+    "sha256": "68c0ba0106142df57c103b8b94e6702597c8527460843af48e5974bbb4cf2823",
+    "bytes": 1311
+  }
+}

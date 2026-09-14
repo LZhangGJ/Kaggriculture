@@ -1,0 +1,7 @@
+{
+  "returncode": 1,
+  "failure": "FAIL after 16423 checks: material commitment unprotected\n",
+  "prototype_native_sha256": "54804677bb01b6cae251e345ffe300fc1cd5bb4873dbd9f4692189b21be73907",
+  "test_source_sha256": "a814b6c0b78eb4afd79526ff8db50104c93a2e1b6899562499d2cfac46606834",
+  "scope": "new direct donor material guard property: pending PLANT uses shared seeds and must not be retimed by this transport-only repair; not an observed lost game"
+}

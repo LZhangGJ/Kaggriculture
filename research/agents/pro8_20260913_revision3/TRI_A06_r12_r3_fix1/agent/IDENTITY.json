@@ -1,0 +1,13 @@
+{
+  "name": "TRI_A06_r12_r3_fix1",
+  "native_sha256": "ed0d275ca9caf13fdaaf2c833e164c5b8c1ccf313dbf96296fb9f7896254ab90",
+  "native_bytes": 1251456,
+  "parent_name": "TRI_A06_r12_r3",
+  "parent_zip_sha256": "2e577b72aa047a7c9c36197d32f7730c87dcfca98daaf6a3bf95d82b98ef6e1b",
+  "parent_native_sha256": "7d7fd9540328b4d87df7b9970c03d63837831713efd781b86359a33de76836f5",
+  "r2_ancestor_native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "excluded_alternate_r2_native": "bd0c7dd9170b2f70781a7e2bd211b367fc625aa66154a99f5855641f08aefd62",
+  "feedback_zip_sha256": "6560bda6b5ddd20ef5629539e1887be71e4e81f1a763810e990d63474b51694e",
+  "production_configuration_unchanged": true,
+  "status": "bounded-tested candidate; no new full opponent-pool result"
+}

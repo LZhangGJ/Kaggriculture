@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-13T19:37:57.655636+00:00",
+  "scope": "INCOMPLETE FROZEN PARENT INPUT; not a new panel or final win rate",
+  "rows": 902,
+  "strict_wins": 649,
+  "ties": 0,
+  "errors": 0,
+  "planned_full_denominator": 1536,
+  "maximum_possible_final_wins": 1283,
+  "required_wins": 1306,
+  "by_opponent": {
+    "ahmed_v27": {
+      "completed": 74,
+      "wins": 53
+    },
+    "aurax_reactive_v1": {
+      "completed": 76,
+      "wins": 51
+    },
+    "aurax_shop_v2": {
+      "completed": 74,
+      "wins": 51
+    },
+    "flexon_v5": {
+      "completed": 76,
+      "wins": 53
+    },
+    "market_smart_v8": {
+      "completed": 76,
+      "wins": 53
+    },
+    "moon_v215": {
+      "completed": 76,
+      "wins": 51
+    },
+    "nagatakengo_v70": {
+      "completed": 76,
+      "wins": 76
+    },
+    "seven_turn": {
+      "completed": 74,
+      "wins": 51
+    },
+    "shop0909": {
+      "completed": 75,
+      "wins": 52
+    },
+    "soil_v219g": {
+      "completed": 76,
+      "wins": 54
+    },
+    "submission_56149565": {
+      "completed": 74,
+      "wins": 50
+    },
+    "thomas_955_v2": {
+      "completed": 75,
+      "wins": 54
+    }
+  },
+  "own_day_cash_checks": 120,
+  "own_ledgers": [
+    {
+      "case": "aurax_reactive_v1_1801029924_seat0",
+      "own_days_reconciled": 30,
+      "observations": 720,
+      "actions": 719,
+      "final_cash": 108319.0
+    },
+    {
+      "case": "submission_56149565_1782098909_seat1",
+      "own_days_reconciled": 30,
+      "observations": 720,
+      "actions": 719,
+      "final_cash": 74359.0
+    },
+    {
+      "case": "market_smart_v8_290316560_seat0",
+      "own_days_reconciled": 30,
+      "observations": 720,
+      "actions": 719,
+      "final_cash": 90814.0
+    },
+    {
+      "case": "submission_56149565_447907448_seat0",
+      "own_days_reconciled": 30,
+      "observations": 720,
+      "actions": 719,
+      "final_cash": 78312.0
+    }
+  ],
+  "new_games": 0
+}

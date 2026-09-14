@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-09-13T19:51:04.881235+00:00",
+  "task_start_utc": "2026-09-13T19:00:45+00:00",
+  "hard_deadline_utc": "2026-09-13T21:00:45Z",
+  "elapsed_seconds": 3019.881235,
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_quota": "400000 100000",
+  "effective_cpu": 4,
+  "memory_limit_bytes": 4294967296,
+  "memory_current_bytes": 557936640,
+  "memory_cgroup_lifetime_peak_bytes": 1677123584,
+  "memory_cgroup_peak_at_first_probe_bytes": 1087463424,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 1296250276\nuser_usec 1254195554\nsystem_usec 42054721\nnice_usec 0\nnr_periods 21068\nnr_throttled 90\nthrottled_usec 4376890\nnr_bursts 0\nburst_usec 0\n",
+  "host_MemAvailable_not_allocation": "MemAvailable:    4997772 kB",
+  "disk_usage": {
+    "total": 33770192896,
+    "used": 191025152,
+    "free": 31844405248
+  },
+  "resource_policy": "Compile queues serial, at most two bounded jobs briefly overlapping; no full match jobs. Peak cgroup memory remains below 70% of the 4-GiB limit; host memory never treated as allowance."
+}

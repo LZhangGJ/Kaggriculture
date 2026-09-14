@@ -1,0 +1,751 @@
+{
+  "scope": "Actual own-visible state/action changes, no new game",
+  "deaths": [
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        0,
+        0
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        1,
+        0
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        5,
+        0
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        6,
+        0
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        0,
+        1
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        5,
+        1
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        6,
+        1
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        7,
+        1
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        5,
+        2
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        6,
+        2
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        7,
+        2
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        6,
+        3
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        7,
+        3
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        1,
+        4
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 5,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        6,
+        4
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 239,
+      "day": 9,
+      "pos": [
+        7,
+        4
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 7,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        0,
+        7
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        1,
+        8
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        2,
+        8
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        4,
+        8
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        3,
+        9
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    },
+    {
+      "case": "submission_56149565_389573676_seat0",
+      "step": 335,
+      "day": 13,
+      "pos": [
+        4,
+        9
+      ],
+      "crop": "STRAWBERRY",
+      "birth": 11,
+      "event": "drought_death",
+      "yield_lost": 0,
+      "dry": 1
+    }
+  ],
+  "rows": [
+    {
+      "step": 192,
+      "day": 8,
+      "hour": 0,
+      "cash_before": 422.0,
+      "cash_after": 363.0,
+      "hands_before": 0,
+      "hands_after": 4,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          7
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          6
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 193,
+      "day": 8,
+      "hour": 1,
+      "cash_before": 363.0,
+      "cash_after": 363.0,
+      "hands_before": 4,
+      "hands_after": 4,
+      "market": []
+    },
+    {
+      "step": 194,
+      "day": 8,
+      "hour": 2,
+      "cash_before": 363.0,
+      "cash_after": 363.0,
+      "hands_before": 4,
+      "hands_after": 4,
+      "market": []
+    },
+    {
+      "step": 195,
+      "day": 8,
+      "hour": 3,
+      "cash_before": 363.0,
+      "cash_after": 445.0,
+      "hands_before": 4,
+      "hands_after": 4,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 196,
+      "day": 8,
+      "hour": 4,
+      "cash_before": 445.0,
+      "cash_after": 445.0,
+      "hands_before": 4,
+      "hands_after": 4,
+      "market": []
+    },
+    {
+      "step": 216,
+      "day": 9,
+      "hour": 0,
+      "cash_before": 445.0,
+      "cash_after": 1.0,
+      "hands_before": 0,
+      "hands_after": 2,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          14
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          13
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          3
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          1
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 217,
+      "day": 9,
+      "hour": 1,
+      "cash_before": 1.0,
+      "cash_after": 1.0,
+      "hands_before": 2,
+      "hands_after": 2,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 218,
+      "day": 9,
+      "hour": 2,
+      "cash_before": 1.0,
+      "cash_after": 644.0,
+      "hands_before": 2,
+      "hands_after": 2,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          4
+        ]
+      ]
+    },
+    {
+      "step": 219,
+      "day": 9,
+      "hour": 3,
+      "cash_before": 644.0,
+      "cash_after": 644.0,
+      "hands_before": 2,
+      "hands_after": 2,
+      "market": []
+    },
+    {
+      "step": 220,
+      "day": 9,
+      "hour": 4,
+      "cash_before": 644.0,
+      "cash_after": 644.0,
+      "hands_before": 2,
+      "hands_after": 2,
+      "market": []
+    },
+    {
+      "step": 288,
+      "day": 12,
+      "hour": 0,
+      "cash_before": 705.0,
+      "cash_after": 483.0,
+      "hands_before": 0,
+      "hands_after": 6,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          15
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          5
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 289,
+      "day": 12,
+      "hour": 1,
+      "cash_before": 483.0,
+      "cash_after": 415.0,
+      "hands_before": 6,
+      "hands_after": 9,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 290,
+      "day": 12,
+      "hour": 2,
+      "cash_before": 415.0,
+      "cash_after": 962.0,
+      "hands_before": 9,
+      "hands_after": 9,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "SELL",
+          "EGG",
+          9
+        ]
+      ]
+    },
+    {
+      "step": 291,
+      "day": 12,
+      "hour": 3,
+      "cash_before": 962.0,
+      "cash_after": 962.0,
+      "hands_before": 9,
+      "hands_after": 9,
+      "market": []
+    },
+    {
+      "step": 292,
+      "day": 12,
+      "hour": 4,
+      "cash_before": 962.0,
+      "cash_after": 962.0,
+      "hands_before": 9,
+      "hands_after": 9,
+      "market": []
+    },
+    {
+      "step": 312,
+      "day": 13,
+      "hour": 0,
+      "cash_before": 1149.0,
+      "cash_after": 16.0,
+      "hands_before": 0,
+      "hands_after": 4,
+      "market": [
+        [
+          "SELL",
+          "MELON",
+          11
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          15
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          1
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 313,
+      "day": 13,
+      "hour": 1,
+      "cash_before": 16.0,
+      "cash_after": 3.0,
+      "hands_before": 4,
+      "hands_after": 6,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "step": 314,
+      "day": 13,
+      "hour": 2,
+      "cash_before": 3.0,
+      "cash_after": 2490.0,
+      "hands_before": 6,
+      "hands_after": 6,
+      "market": [
+        [
+          "SELL",
+          "MELON",
+          1
+        ],
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "SELL",
+          "EGG",
+          6
+        ],
+        [
+          "SELL",
+          "WOOL",
+          7
+        ]
+      ]
+    },
+    {
+      "step": 315,
+      "day": 13,
+      "hour": 3,
+      "cash_before": 2490.0,
+      "cash_after": 2490.0,
+      "hands_before": 6,
+      "hands_after": 6,
+      "market": []
+    },
+    {
+      "step": 316,
+      "day": 13,
+      "hour": 4,
+      "cash_before": 2490.0,
+      "cash_after": 2490.0,
+      "hands_before": 6,
+      "hands_after": 6,
+      "market": []
+    }
+  ]
+}

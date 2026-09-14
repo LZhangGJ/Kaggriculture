@@ -1,0 +1,32 @@
+market_smart_v8_568422814_seat0 719 5.441508258999988
+moon_v215_31485687_seat0 719 7.552970355000014
+ step 384 q 8 cover 16 23 dcash -181 dwork 16
+ step 480 q 12 cover 17 23 dcash -365 dwork -8
+  smaller 10 samecover cash_vs_full 64 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, -2]
+  smaller 11 samecover cash_vs_full 42 yield [-1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, -1]
+submission_56149565_1827852203_seat0 719 7.9648661169999855
+ step 480 q 9 cover 16 22 dcash -956 dwork -2
+  smaller 6 samecover cash_vs_full 200 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, -2, 0, 0, 0, 0, 0, -2]
+  smaller 7 samecover cash_vs_full 714 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, -2, 0, -6, 0, 0, 0, -1]
+  smaller 8 samecover cash_vs_full 0 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+ step 528 q 5 cover 10 13 dcash -140 dwork 2
+  smaller 2 samecover cash_vs_full 132 yield [-1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, -2, 2, 0, -2]
+  smaller 3 samecover cash_vs_full 10 yield [-1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  smaller 4 samecover cash_vs_full 10 yield [-1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+ step 576 q 4 cover 14 17 dcash -562 dwork 9
+  smaller 2 samecover cash_vs_full 112 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, -3]
+  smaller 3 samecover cash_vs_full 157 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, -2, 0, 0, -2]
+ step 600 q 3 cover 10 12 dcash -459 dwork 1
+  smaller 2 samecover cash_vs_full 183 yield [-1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 2, 0, -4, 0, 0, -3]
+ step 672 q 9 cover 11 15 dcash -519 dwork 13
+  smaller 7 samecover cash_vs_full 66 yield [0, -2, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  smaller 8 samecover cash_vs_full 33 yield [0, -1, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+submission_56149565_805057947_seat0 719 6.670259907999991
+ step 384 q 4 cover 15 17 dcash -129 dwork -3
+  smaller 3 samecover cash_vs_full 45 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, -1]
+ step 480 q 9 cover 11 17 dcash -128 dwork 5
+  smaller 7 samecover cash_vs_full -10 yield [1, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  smaller 8 samecover cash_vs_full -29 yield [0, 0, 0, 0, 0, 0, 0, 0, 0] stock [0, 0, 0, 0, 0, 0, 0, 0, 1]
+ step 600 q 3 cover 10 13 dcash -95 dwork 2
+ step 624 q 1 cover 3 4 dcash -17 dwork 1
+ step 672 q 1 cover 8 9 dcash -1236 dwork 1

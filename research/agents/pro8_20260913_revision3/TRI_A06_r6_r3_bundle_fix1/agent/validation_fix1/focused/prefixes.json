@@ -1,0 +1,56 @@
+[
+  {
+    "case": "market_smart_v8_2535322_seat1",
+    "calls": 386,
+    "same": 385,
+    "first_difference": 385
+  },
+  {
+    "case": "market_smart_v8_389573676_seat0",
+    "calls": 481,
+    "same": 480,
+    "first_difference": 480
+  },
+  {
+    "case": "moon_v215_290316560_seat0",
+    "calls": 719,
+    "same": 719,
+    "first_difference": null
+  },
+  {
+    "case": "submission_56149565_1623731725_seat1",
+    "calls": 386,
+    "same": 385,
+    "first_difference": 385
+  },
+  {
+    "case": "submission_56149565_201542742_seat0",
+    "calls": 601,
+    "same": 600,
+    "first_difference": 600
+  },
+  {
+    "case": "submission_56149565_2029247155_seat0",
+    "calls": 385,
+    "same": 384,
+    "first_difference": 384
+  },
+  {
+    "case": "submission_56149565_389573676_seat0",
+    "calls": 386,
+    "same": 385,
+    "first_difference": 385
+  },
+  {
+    "case": "thomas_955_v2_1395450535_seat1",
+    "calls": 386,
+    "same": 385,
+    "first_difference": 385
+  },
+  {
+    "case": "thomas_955_v2_1612180274_seat0",
+    "calls": 409,
+    "same": 408,
+    "first_difference": 408
+  }
+]

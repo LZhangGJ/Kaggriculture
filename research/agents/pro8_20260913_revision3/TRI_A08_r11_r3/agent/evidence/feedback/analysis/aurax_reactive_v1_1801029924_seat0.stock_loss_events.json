@@ -1,0 +1,319 @@
+{
+  "candidate": "TRI_A08_r11_r2_fix1",
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "source_replay_sha256": "e2fbefeb74ce885303e14bc9bab7d5d400a3b18616f97ad5b67de29fdd92768b",
+  "new_games": 0,
+  "verified_transitions": 96,
+  "selected_loss_days": [
+    19,
+    21,
+    27,
+    28
+  ],
+  "events": [
+    {
+      "step": 479,
+      "day": 19,
+      "hour": 23,
+      "kind": "end_of_day_deposit",
+      "unit": null,
+      "capacity": 100,
+      "shed_before": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "carried_before": [
+        {
+          "FERTILIZER": 3,
+          "MELON": 6,
+          "STRAWBERRY": 2
+        },
+        {
+          "STRAWBERRY": 8,
+          "MELON": 18
+        },
+        {},
+        {
+          "STRAWBERRY": 2,
+          "TOMATO": 2
+        },
+        {},
+        {
+          "MILK": 9,
+          "FERTILIZER": 3,
+          "STRAWBERRY": 8
+        },
+        {
+          "MILK": 3,
+          "FERTILIZER": 2,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 4,
+          "MELON": 12,
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 1,
+          "STRAWBERRY": 4
+        },
+        {
+          "FERTILIZER": 2,
+          "MILK": 3,
+          "STRAWBERRY": 2
+        },
+        {
+          "FERTILIZER": 3,
+          "STRAWBERRY": 6,
+          "WOOL": 4,
+          "MILK": 3
+        },
+        {}
+      ],
+      "discarded": {
+        "STRAWBERRY": 6,
+        "MILK": 3,
+        "WOOL": 4,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "step": 527,
+      "day": 21,
+      "hour": 23,
+      "kind": "end_of_day_deposit",
+      "unit": null,
+      "capacity": 100,
+      "shed_before": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "carried_before": [
+        {
+          "FERTILIZER": 1,
+          "STRAWBERRY": 8
+        },
+        {
+          "STRAWBERRY": 16
+        },
+        {
+          "STRAWBERRY": 10,
+          "TOMATO": 2,
+          "MELON": 6
+        },
+        {
+          "MILK": 8,
+          "FERTILIZER": 4
+        },
+        {
+          "FERTILIZER": 1,
+          "WOOL": 3
+        },
+        {
+          "STRAWBERRY": 4,
+          "MELON": 6
+        },
+        {
+          "STRAWBERRY": 6,
+          "TOMATO": 4,
+          "FERTILIZER": 1
+        },
+        {
+          "MILK": 2,
+          "FERTILIZER": 2,
+          "EGG": 2
+        },
+        {
+          "FERTILIZER": 4,
+          "WOOL": 6
+        },
+        {},
+        {
+          "FERTILIZER": 2,
+          "MILK": 2
+        },
+        {
+          "FERTILIZER": 2,
+          "WOOL": 5
+        }
+      ],
+      "discarded": {
+        "WOOL": 5,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "step": 671,
+      "day": 27,
+      "hour": 23,
+      "kind": "end_of_day_deposit",
+      "unit": null,
+      "capacity": 100,
+      "shed_before": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "carried_before": [
+        {
+          "FERTILIZER": 2,
+          "WOOL": 3,
+          "WHEAT": 6,
+          "TOMATO": 2,
+          "STRAWBERRY": 2
+        },
+        {
+          "WHEAT": 42
+        },
+        {
+          "FERTILIZER": 2,
+          "MILK": 3,
+          "WOOL": 3,
+          "TOMATO": 6
+        },
+        {
+          "EGG": 2,
+          "FERTILIZER": 1
+        },
+        {
+          "FERTILIZER": 3,
+          "WOOL": 6
+        },
+        {
+          "MILK": 5,
+          "FERTILIZER": 2,
+          "STRAWBERRY": 2,
+          "TOMATO": 4
+        },
+        {
+          "FERTILIZER": 3,
+          "MILK": 6,
+          "EGG": 2
+        },
+        {},
+        {
+          "FERTILIZER": 3,
+          "WOOL": 3
+        },
+        {
+          "FERTILIZER": 3,
+          "MILK": 4
+        }
+      ],
+      "discarded": {
+        "EGG": 2,
+        "MILK": 9,
+        "WOOL": 3,
+        "FERTILIZER": 6
+      }
+    },
+    {
+      "step": 695,
+      "day": 28,
+      "hour": 23,
+      "kind": "end_of_day_deposit",
+      "unit": null,
+      "capacity": 100,
+      "shed_before": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "carried_before": [
+        {
+          "FERTILIZER": 1,
+          "WHEAT": 30
+        },
+        {
+          "WHEAT": 24,
+          "TOMATO": 2
+        },
+        {
+          "STRAWBERRY": 4,
+          "WHEAT": 12,
+          "TOMATO": 4
+        },
+        {
+          "FERTILIZER": 4,
+          "TOMATO": 2,
+          "EGG": 2
+        },
+        {
+          "MILK": 4,
+          "FERTILIZER": 4
+        },
+        {
+          "FERTILIZER": 1,
+          "TOMATO": 2,
+          "STRAWBERRY": 2,
+          "WHEAT": 18
+        },
+        {
+          "FERTILIZER": 4,
+          "EGG": 2,
+          "WOOL": 4
+        },
+        {},
+        {
+          "FERTILIZER": 3,
+          "MILK": 4
+        }
+      ],
+      "discarded": {
+        "WHEAT": 16,
+        "EGG": 2,
+        "MILK": 4,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      }
+    }
+  ],
+  "discarded": {
+    "STRAWBERRY": 6,
+    "MILK": 16,
+    "WOOL": 16,
+    "FERTILIZER": 17,
+    "EGG": 4,
+    "WHEAT": 16
+  },
+  "scope": "Exact saved official loss-day transitions; no counterfactual cash estimate"
+}

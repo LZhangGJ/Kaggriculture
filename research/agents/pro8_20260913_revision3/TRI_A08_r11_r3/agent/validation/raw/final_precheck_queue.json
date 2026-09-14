@@ -1,0 +1,32 @@
+[
+  {
+    "job": [
+      "root_and_cross_precheck",
+      "100",
+      "python",
+      "/mnt/data/r3_work/tests/final_prechecks.py",
+      "entry"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "clean_build_precheck",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/final_prechecks.py",
+      "clean"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "atomic_build_negative",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/final_prechecks.py",
+      "fault"
+    ],
+    "returncode": 0
+  }
+]

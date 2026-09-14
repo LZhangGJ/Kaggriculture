@@ -1,0 +1,54 @@
+{
+  "checked_utc": "2026-09-13T21:06:35.759583+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "0c15b55c7cf7c29e57ad632432586a18f089df8a6f642d07d354d19c6a24f7c4",
+  "native_sha256": "ed0d275ca9caf13fdaaf2c833e164c5b8c1ccf313dbf96296fb9f7896254ab90",
+  "native_path": "policy/a06.so",
+  "manifest_files_verified": 338,
+  "source_files_verified": 50,
+  "changed_production_files": [
+    "main.py",
+    "policy/ongoing_supply_admission.inc",
+    "policy/triad.hpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "5d0473be87ac05938fde11efa4058e79aad5a74197a813296e83b8a8f93ccbd3",
+  "default_build_and_unit_suite_passed": true,
+  "real_diagnostic_games": 8,
+  "cross_compiler_complete_pairs": 4,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "market_smart_v8_568422814_seat0",
+      "parent_margin": -9718.0,
+      "revision3_margin": -9718.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_1827852203_seat0",
+      "parent_margin": 2664.0,
+      "revision3_margin": 2664.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "moon_v215_31485687_seat0",
+      "parent_margin": 1705.0,
+      "revision3_margin": 1705.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_805057947_seat0",
+      "parent_margin": -1405.0,
+      "revision3_margin": -777.0,
+      "margin_delta": 628.0,
+      "same_actions": false
+    }
+  ],
+  "full_package_linux": "/tmp/TRI_A06_r12_r3_fix1_xmknk2j7/delivered_archive",
+  "author_delivery_status": "CANDIDATE_NOT_FORMALLY_ACCEPTED"
+}

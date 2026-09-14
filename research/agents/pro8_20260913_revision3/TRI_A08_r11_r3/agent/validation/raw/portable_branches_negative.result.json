@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-13T19:48:00.055528+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "-B",
+    "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/portable_branches_negative",
+    "--no-clearance"
+  ],
+  "cwd": "/",
+  "memory_current_start": "633643008",
+  "returncode": 0,
+  "wall_seconds": 38.9319965839386,
+  "ended_utc": "2026-09-13T19:48:38.987529+00:00",
+  "memory_current_end": "634806272"
+}

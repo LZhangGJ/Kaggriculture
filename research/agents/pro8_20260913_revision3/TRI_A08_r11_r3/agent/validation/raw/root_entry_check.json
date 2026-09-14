@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+  "calls": 2876,
+  "new_games": 0,
+  "rows": [
+    {
+      "case": "aurax_reactive_v1_1801029924_seat0",
+      "calls": 719,
+      "matches_create_agent": 719,
+      "matches_parent": 699,
+      "new_games": 0,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/feedback/probe_observations.py",
+        "--agent",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--trace",
+        "/mnt/data/r3_work/feedback/own_traces/aurax_reactive_v1_1801029924_seat0.json.gz",
+        "--limit",
+        "719",
+        "--out",
+        "/mnt/data/r3_work/logs/root_default_aurax_reactive_v1_1801029924_seat0.json"
+      ],
+      "result_sha256": "08ac3cdef5cd036415bacd345c68f1d26c37356930dd372851decb5de0e5005e"
+    },
+    {
+      "case": "submission_56149565_1782098909_seat1",
+      "calls": 719,
+      "matches_create_agent": 719,
+      "matches_parent": 709,
+      "new_games": 0,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/feedback/probe_observations.py",
+        "--agent",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--trace",
+        "/mnt/data/r3_work/feedback/own_traces/submission_56149565_1782098909_seat1.json.gz",
+        "--limit",
+        "719",
+        "--out",
+        "/mnt/data/r3_work/logs/root_default_submission_56149565_1782098909_seat1.json"
+      ],
+      "result_sha256": "37b5d312639afa993174fce12e5df92fad44e6127fc78a6eae806aa3c38836e2"
+    },
+    {
+      "case": "market_smart_v8_290316560_seat0",
+      "calls": 719,
+      "matches_create_agent": 719,
+      "matches_parent": 699,
+      "new_games": 0,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/feedback/probe_observations.py",
+        "--agent",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--trace",
+        "/mnt/data/r3_work/feedback/own_traces/market_smart_v8_290316560_seat0.json.gz",
+        "--limit",
+        "719",
+        "--out",
+        "/mnt/data/r3_work/logs/root_default_market_smart_v8_290316560_seat0.json"
+      ],
+      "result_sha256": "2ee0bd0db9379b2081ed761577cd1c2c5a3ffd408ccac1aa7f85191f373be22d"
+    },
+    {
+      "case": "submission_56149565_447907448_seat0",
+      "calls": 719,
+      "matches_create_agent": 719,
+      "matches_parent": 719,
+      "new_games": 0,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/feedback/probe_observations.py",
+        "--agent",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--trace",
+        "/mnt/data/r3_work/feedback/own_traces/submission_56149565_447907448_seat0.json.gz",
+        "--limit",
+        "719",
+        "--out",
+        "/mnt/data/r3_work/logs/root_default_submission_56149565_447907448_seat0.json"
+      ],
+      "result_sha256": "b6a4aa7bdd2b95f56240cd9b265d44df75af184f10c01a2d6209b3d6cb75a32e"
+    }
+  ]
+}

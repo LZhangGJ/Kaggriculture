@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-13T19:29:36.421294+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/full_checks_gcc"
+  ],
+  "cwd": "/",
+  "memory_current_start": "535236608",
+  "returncode": 0,
+  "wall_seconds": 17.787011861801147,
+  "ended_utc": "2026-09-13T19:29:54.208309+00:00",
+  "memory_current_end": "541454336"
+}

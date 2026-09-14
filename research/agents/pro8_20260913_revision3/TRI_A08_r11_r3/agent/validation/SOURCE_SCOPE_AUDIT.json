@@ -1,0 +1,7 @@
+{
+  "status": "PASS_LITERAL_CHECK_ONLY_NOT_FORMAL_INFORMATION_FLOW_PROOF",
+  "case_identifiers_in_production": [],
+  "case_seed_literals_in_production": [],
+  "fixed_config_matches_parent": true,
+  "required_gate_matches_parent": true
+}

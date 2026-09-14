@@ -1,0 +1,575 @@
+{
+  "warning": "Public development feedback; not a sealed holdout. No production seed/opponent lookup. No new full match generated.",
+  "inherited_r3_development_seeds": {
+    "scope": "All exposed and used seeds are development/engineering inputs, not sealed holdout. Production receives no match seed and has no seed/opponent table. Script constants belong to test schedules only.",
+    "parent_partial_rows_retained": 917,
+    "parent_partial_unique_seeds": [
+      3057937,
+      6637091,
+      15847564,
+      31485687,
+      85070840,
+      110567951,
+      133950429,
+      201542742,
+      238529737,
+      259081078,
+      273786740,
+      290316560,
+      389573676,
+      447261614,
+      447907448,
+      492967870,
+      506886093,
+      568422814,
+      805057947,
+      931379407,
+      993693256,
+      1118572802,
+      1188616860,
+      1315078350,
+      1442885889,
+      1455372843,
+      1524475185,
+      1576252746,
+      1612180274,
+      1770536319,
+      1779397387,
+      1782098909,
+      1801029924,
+      1827852203,
+      1849468190,
+      1880757113,
+      1999599958,
+      2034838109,
+      2121773032
+    ],
+    "actual_candidate_full_game_seeds": [
+      2026091391,
+      2026091392
+    ],
+    "final_bounded_synthetic_seeds": [
+      2026091340,
+      2026091341,
+      2026091342,
+      2026091343,
+      2026091344,
+      2026091345
+    ],
+    "all_observed_seed_references": [
+      {
+        "seed": 3057937,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 6637091,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 15847564,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 31485687,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json",
+          "feedback/SELECTED_CASES.json"
+        ]
+      },
+      {
+        "seed": 85070840,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 110567951,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 133950429,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 201542742,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 238529737,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 259081078,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 273786740,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 290316560,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 389573676,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 447261614,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 447907448,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 492967870,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 506886093,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 568422814,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json",
+          "feedback/SELECTED_CASES.json"
+        ]
+      },
+      {
+        "seed": 805057947,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json",
+          "feedback/SELECTED_CASES.json"
+        ]
+      },
+      {
+        "seed": 931379407,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 993693256,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1118572802,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1188616860,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1315078350,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1442885889,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1455372843,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1524475185,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1576252746,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1612180274,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1770536319,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1779397387,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1782098909,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1801029924,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1827852203,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json",
+          "feedback/SELECTED_CASES.json"
+        ]
+      },
+      {
+        "seed": 1849468190,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1880757113,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 1999599958,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 2026091300,
+        "sources": [
+          "logs/bounded/market_smart_v8_568422814_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded/market_smart_v8_568422814_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded/market_smart_v8_568422814_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded/market_smart_v8_568422814_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_extended/market_smart_v8_568422814_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_extended/market_smart_v8_568422814_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_extended/market_smart_v8_568422814_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_extended/market_smart_v8_568422814_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_extended_0.json",
+          "logs/bounded_extended_0.resource.json",
+          "logs/bounded_summary_v1.json"
+        ]
+      },
+      {
+        "seed": 2026091301,
+        "sources": [
+          "logs/bounded/moon_v215_31485687_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded/moon_v215_31485687_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded/moon_v215_31485687_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded/moon_v215_31485687_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_extended/moon_v215_31485687_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_extended/moon_v215_31485687_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_extended/moon_v215_31485687_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_extended/moon_v215_31485687_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_extended_1.json",
+          "logs/bounded_extended_1.resource.json",
+          "logs/bounded_summary_v1.json"
+        ]
+      },
+      {
+        "seed": 2026091302,
+        "sources": [
+          "logs/bounded/submission_56149565_1827852203_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded/submission_56149565_1827852203_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded/submission_56149565_1827852203_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded/submission_56149565_1827852203_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_summary_v1.json"
+        ]
+      },
+      {
+        "seed": 2026091303,
+        "sources": [
+          "logs/bounded/submission_56149565_805057947_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded/submission_56149565_805057947_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded/submission_56149565_805057947_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded/submission_56149565_805057947_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_summary_v1.json"
+        ]
+      },
+      {
+        "seed": 2026091310,
+        "sources": [
+          "logs/bounded/submission_56149565_1827852203_seat0_candidate_no_finance.json.gz",
+          "logs/bounded/submission_56149565_1827852203_seat0_parent_no_finance.json.gz",
+          "logs/bounded_summary_v1.json"
+        ]
+      },
+      {
+        "seed": 2026091320,
+        "sources": [
+          "logs/bounded_day20/submission_56149565_1827852203_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_day20/submission_56149565_1827852203_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_day20_0.json",
+          "logs/bounded_day20_0.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091321,
+        "sources": [
+          "logs/bounded_day20/submission_56149565_1827852203_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_day20/submission_56149565_1827852203_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_day20_1.json",
+          "logs/bounded_day20_1.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091340,
+        "sources": [
+          "logs/bounded_v2/market_smart_v8_568422814_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/market_smart_v8_568422814_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v2/market_smart_v8_568422814_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/market_smart_v8_568422814_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v2_0.json",
+          "logs/bounded_v2_0.resource.json",
+          "logs/bounded_v3/market_smart_v8_568422814_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/market_smart_v8_568422814_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v3/market_smart_v8_568422814_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/market_smart_v8_568422814_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v3_0.json",
+          "logs/bounded_v3_0.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091341,
+        "sources": [
+          "logs/bounded_v2/moon_v215_31485687_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/moon_v215_31485687_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v2/moon_v215_31485687_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/moon_v215_31485687_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v2_1.json",
+          "logs/bounded_v2_1.resource.json",
+          "logs/bounded_v3/moon_v215_31485687_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/moon_v215_31485687_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v3/moon_v215_31485687_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/moon_v215_31485687_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v3_1.json",
+          "logs/bounded_v3_1.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091342,
+        "sources": [
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v2_2.json",
+          "logs/bounded_v2_2.resource.json",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v3_2.json",
+          "logs/bounded_v3_2.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091343,
+        "sources": [
+          "logs/bounded_v2/submission_56149565_805057947_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/submission_56149565_805057947_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v2/submission_56149565_805057947_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v2/submission_56149565_805057947_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v2_3.json",
+          "logs/bounded_v2_3.resource.json",
+          "logs/bounded_v3/submission_56149565_805057947_seat0_candidate_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/submission_56149565_805057947_seat0_candidate_supply_input_pressure.json.gz",
+          "logs/bounded_v3/submission_56149565_805057947_seat0_parent_observed_market_idle_rival.json.gz",
+          "logs/bounded_v3/submission_56149565_805057947_seat0_parent_supply_input_pressure.json.gz",
+          "logs/bounded_v3_3.json",
+          "logs/bounded_v3_3.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091344,
+        "sources": [
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_candidate_no_finance.json.gz",
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_parent_no_finance.json.gz",
+          "logs/bounded_v2_4.json",
+          "logs/bounded_v2_4.resource.json",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_candidate_no_finance.json.gz",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_parent_no_finance.json.gz",
+          "logs/bounded_v3_4.json",
+          "logs/bounded_v3_4.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091345,
+        "sources": [
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_candidate_expensive_fertilizer.json.gz",
+          "logs/bounded_v2/submission_56149565_1827852203_seat0_parent_expensive_fertilizer.json.gz",
+          "logs/bounded_v2_5.json",
+          "logs/bounded_v2_5.resource.json",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_candidate_expensive_fertilizer.json.gz",
+          "logs/bounded_v3/submission_56149565_1827852203_seat0_parent_expensive_fertilizer.json.gz",
+          "logs/bounded_v3_5.json",
+          "logs/bounded_v3_5.resource.json"
+        ]
+      },
+      {
+        "seed": 2026091391,
+        "sources": [
+          "logs/parent_duel_plan.json",
+          "logs/parent_duel_summary.json",
+          "logs/parent_duels/2026091391_candidate_seat0.json",
+          "logs/parent_duels/2026091391_candidate_seat0_probe96.json",
+          "logs/parent_duels/2026091391_candidate_seat1.json",
+          "logs/parent_duels/2026091391_parent_control.json"
+        ]
+      },
+      {
+        "seed": 2026091392,
+        "sources": [
+          "logs/parent_duel_plan.json",
+          "logs/parent_duel_summary.json",
+          "logs/parent_duels/2026091392_candidate_seat0.json",
+          "logs/parent_duels/2026091392_candidate_seat1.json",
+          "logs/parent_duels/2026091392_parent_control.json"
+        ]
+      },
+      {
+        "seed": 2034838109,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      },
+      {
+        "seed": 2121773032,
+        "sources": [
+          "feedback/PARTIAL_ROWS.json"
+        ]
+      }
+    ],
+    "additional_internal_scenario_constructor_seed": 0,
+    "additional_official_schema_initialization_seed": 1
+  },
+  "feedback_r2_panel_seeds": [
+    501102,
+    3057937,
+    6637091,
+    15847564,
+    31485687,
+    48625876,
+    52914959,
+    66920753,
+    85070840,
+    110567951,
+    133950429,
+    201542742,
+    227856485,
+    238529737,
+    259081078,
+    273786740,
+    290316560,
+    328670402,
+    389573676,
+    447261614,
+    447907448,
+    492967870,
+    506886093,
+    537079261,
+    568422814,
+    682189505,
+    685848095,
+    724084127,
+    734247856,
+    784604136,
+    805057947,
+    867131091,
+    894016699,
+    931379407,
+    973279713,
+    993693256,
+    1087393348,
+    1118572802,
+    1151963842,
+    1188616860,
+    1246632067,
+    1315078350,
+    1380055166,
+    1412108008,
+    1442885889,
+    1455372843,
+    1524475185,
+    1576252746,
+    1612180274,
+    1738708062,
+    1753529372,
+    1757072901,
+    1770536319,
+    1779397387,
+    1782098909,
+    1801029924,
+    1827852203,
+    1842800671,
+    1849468190,
+    1880757113,
+    1999599958,
+    2034838109,
+    2076488123,
+    2121773032
+  ],
+  "current_case_seeds": [
+    568422814,
+    1827852203,
+    31485687,
+    805057947
+  ],
+  "synthetic_conditional_seed": [
+    2609134201
+  ],
+  "unit_simulator_seed": [
+    0
+  ],
+  "conditional_scope": "Synthetic fork after current observation672; no saved future is consumed",
+  "full_parent_rows": "feedback/PARENT_FULL64_ROWS.json"
+}

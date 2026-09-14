@@ -1,0 +1,8 @@
+{
+  "status": "PASS_EXPECTED_REJECTION",
+  "build_returncode": 1,
+  "prior_native_unchanged": true,
+  "prior_receipt_unchanged": true,
+  "rejected_stage_retained": "/mnt/data/r3_work/atomic_gate_negative/policy/tri_a08_r11_r3.building-20260913T194453237774Z.so",
+  "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64"
+}

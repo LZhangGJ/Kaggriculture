@@ -1,0 +1,196 @@
+{
+  "started_utc": "2026-09-13T19:35:14.130465+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "552165376",
+  "returncode": 0,
+  "wall_seconds": 28.91504669189453,
+  "ended_utc": "2026-09-13T19:35:43.045514+00:00",
+  "memory_current_end": "553234432"
+}
+{
+  "started_utc": "2026-09-13T19:35:43.601906+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/seedguard_checks_gcc"
+  ],
+  "cwd": "/",
+  "memory_current_start": "552751104",
+  "returncode": 0,
+  "wall_seconds": 17.78178572654724,
+  "ended_utc": "2026-09-13T19:36:01.383694+00:00",
+  "memory_current_end": "559558656"
+}
+{
+  "started_utc": "2026-09-13T19:36:01.957394+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--name",
+    "seedguard_final"
+  ],
+  "cwd": "/",
+  "memory_current_start": "558608384",
+  "returncode": 0,
+  "wall_seconds": 22.339280605316162,
+  "ended_utc": "2026-09-13T19:36:24.296676+00:00",
+  "memory_current_end": "559767552"
+}
+{
+  "started_utc": "2026-09-13T19:36:24.928266+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py",
+    "--delivery-handoff",
+    "0",
+    "--out",
+    "/mnt/data/r3_work/ablation.so"
+  ],
+  "cwd": "/",
+  "memory_current_start": "559099904",
+  "returncode": 0,
+  "wall_seconds": 28.79902958869934,
+  "ended_utc": "2026-09-13T19:36:53.727298+00:00",
+  "memory_current_end": "559849472"
+}
+{
+  "started_utc": "2026-09-13T19:36:54.311548+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/ablation.so",
+    "--name",
+    "seedguard_ablation",
+    "--exact"
+  ],
+  "cwd": "/",
+  "memory_current_start": "558796800",
+  "returncode": 0,
+  "wall_seconds": 22.440385341644287,
+  "ended_utc": "2026-09-13T19:37:16.751937+00:00",
+  "memory_current_end": "559681536"
+}
+{
+  "started_utc": "2026-09-13T19:37:17.305143+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py",
+    "--cxx",
+    "clang++",
+    "--out",
+    "/mnt/data/r3_work/clang.so"
+  ],
+  "cwd": "/",
+  "memory_current_start": "559341568",
+  "returncode": 0,
+  "wall_seconds": 20.6203396320343,
+  "ended_utc": "2026-09-13T19:37:37.925484+00:00",
+  "memory_current_end": "559828992"
+}
+{
+  "started_utc": "2026-09-13T19:37:38.487292+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--cxx",
+    "clang++",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/seedguard_checks_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "559276032",
+  "returncode": 0,
+  "wall_seconds": 12.155184030532837,
+  "ended_utc": "2026-09-13T19:37:50.642480+00:00",
+  "memory_current_end": "564740096"
+}
+{
+  "started_utc": "2026-09-13T19:37:51.204067+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--name",
+    "seedguard_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564277248",
+  "returncode": 0,
+  "wall_seconds": 23.01828145980835,
+  "ended_utc": "2026-09-13T19:38:14.222350+00:00",
+  "memory_current_end": "565473280"
+}
+{
+  "started_utc": "2026-09-13T19:38:14.785459+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564891648",
+  "returncode": 0,
+  "wall_seconds": 39.32101893424988,
+  "ended_utc": "2026-09-13T19:38:54.106481+00:00",
+  "memory_current_end": "565637120"
+}
+{
+  "started_utc": "2026-09-13T19:38:54.704907+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--no-clearance"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564961280",
+  "returncode": 0,
+  "wall_seconds": 38.438761711120605,
+  "ended_utc": "2026-09-13T19:39:33.143747+00:00",
+  "memory_current_end": "565563392"
+}
+{
+  "started_utc": "2026-09-13T19:39:33.703132+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--supply",
+    "3"
+  ],
+  "cwd": "/",
+  "memory_current_start": "565035008",
+  "returncode": 0,
+  "wall_seconds": 38.33910942077637,
+  "ended_utc": "2026-09-13T19:40:12.042384+00:00",
+  "memory_current_end": "565977088"
+}

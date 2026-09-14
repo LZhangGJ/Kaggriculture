@@ -1,0 +1,11 @@
+{'case': 'market_smart_v8_2535322_seat1', 'calls': 386, 'same': 385, 'first_difference': 385}
+{'case': 'market_smart_v8_389573676_seat0', 'calls': 481, 'same': 480, 'first_difference': 480}
+{'case': 'moon_v215_290316560_seat0', 'calls': 719, 'same': 719, 'first_difference': None}
+{'case': 'submission_56149565_1623731725_seat1', 'calls': 386, 'same': 385, 'first_difference': 385}
+{'case': 'submission_56149565_201542742_seat0', 'calls': 601, 'same': 600, 'first_difference': 600}
+{'case': 'submission_56149565_2029247155_seat0', 'calls': 385, 'same': 384, 'first_difference': 384}
+{'case': 'submission_56149565_389573676_seat0', 'calls': 386, 'same': 385, 'first_difference': 385}
+{'case': 'thomas_955_v2_1395450535_seat1', 'calls': 386, 'same': 385, 'first_difference': 385}
+{'case': 'thomas_955_v2_1612180274_seat0', 'calls': 409, 'same': 408, 'first_difference': 408}
+{'case': 'submission_56149565_201542742_seat0', 'start': 600, 'steps': 23, 'fertilized': 20, 'hired': 12, 'root_matches': 23, 'official_matches': 23, 'market': [['SELL', 'WHEAT', 9], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE']]}
+{'case': 'submission_56149565_389573676_seat0', 'start': 216, 'steps': 23, 'fertilized': 0, 'hired': 7, 'root_matches': 23, 'official_matches': 23, 'market': [['SELL', 'MILK', 14], ['SELL', 'FERTILIZER', 12], ['BUY_PRODUCT', 'WHEAT', 13], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE'], ['HIRE']]}

@@ -1,0 +1,41 @@
+[
+  {
+    "job": [
+      "portable_branches",
+      "120",
+      "python",
+      "-B",
+      "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/portable_branches"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "portable_branches_negative",
+      "120",
+      "python",
+      "-B",
+      "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/portable_branches_negative",
+      "--no-clearance"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "portable_branches_stress",
+      "120",
+      "python",
+      "-B",
+      "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/portable_branches_stress",
+      "--supply",
+      "3"
+    ],
+    "returncode": 0
+  }
+]

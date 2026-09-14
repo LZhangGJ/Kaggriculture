@@ -1,0 +1,100 @@
+[
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "calls": 719,
+    "exact_parent_actions": 699,
+    "first_action_divergence": 460,
+    "insertions": [
+      {
+        "step": 460,
+        "enabled": 1,
+        "observation_step": 460,
+        "checks": 460,
+        "insertions": 1,
+        "quantity": 3,
+        "last_step": 460,
+        "donor": 5,
+        "receiver": 0
+      },
+      {
+        "step": 461,
+        "enabled": 1,
+        "observation_step": 461,
+        "checks": 461,
+        "insertions": 2,
+        "quantity": 5,
+        "last_step": 461,
+        "donor": 1,
+        "receiver": 9
+      }
+    ],
+    "seconds": 5.592920470000081,
+    "peak_rss_kib": 167752,
+    "new_games": 0
+  },
+  {
+    "case": "submission_56149565_1782098909_seat1",
+    "calls": 719,
+    "exact_parent_actions": 709,
+    "first_action_divergence": 614,
+    "insertions": [
+      {
+        "step": 613,
+        "enabled": 1,
+        "observation_step": 613,
+        "checks": 613,
+        "insertions": 1,
+        "quantity": 8,
+        "last_step": 613,
+        "donor": 0,
+        "receiver": 4
+      }
+    ],
+    "seconds": 5.812686811000276,
+    "peak_rss_kib": 249632,
+    "new_games": 0
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "calls": 719,
+    "exact_parent_actions": 699,
+    "first_action_divergence": 508,
+    "insertions": [
+      {
+        "step": 508,
+        "enabled": 1,
+        "observation_step": 508,
+        "checks": 508,
+        "insertions": 1,
+        "quantity": 6,
+        "last_step": 508,
+        "donor": 6,
+        "receiver": 7
+      },
+      {
+        "step": 510,
+        "enabled": 1,
+        "observation_step": 510,
+        "checks": 510,
+        "insertions": 2,
+        "quantity": 8,
+        "last_step": 510,
+        "donor": 2,
+        "receiver": 12
+      }
+    ],
+    "seconds": 5.738121138999759,
+    "peak_rss_kib": 250056,
+    "new_games": 0
+  },
+  {
+    "case": "submission_56149565_447907448_seat0",
+    "calls": 719,
+    "exact_parent_actions": 719,
+    "first_action_divergence": null,
+    "insertions": [],
+    "seconds": 4.677472782000223,
+    "peak_rss_kib": 250572,
+    "new_games": 0
+  }
+]

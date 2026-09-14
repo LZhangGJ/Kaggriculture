@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "native_sha256": "5c15932584f095778ef245d4f6d34bcd9160ca8743a8b75d8372504bc903bad0",
+  "checks": 1080,
+  "positive_proposals": 62,
+  "historical_saved_snapshot_calls": 249,
+  "synthetic_positive_cases": 48,
+  "negative_controls": [
+    "no_overflow",
+    "not_real_observation",
+    "negative_opportunity_return",
+    "no_free_warehouse_capacity",
+    "held_animal_commitment",
+    "donor_material_or_drop_15",
+    "donor_material_or_drop_11",
+    "donor_material_or_drop_6",
+    "donor_material_or_drop_7",
+    "donor_material_or_drop_5",
+    "floor_price_unprofitable_detour",
+    "final_day_unchanged"
+  ],
+  "new_games": 0,
+  "scope": "official own-unit prefixes; no market clearing and no competitor rollout; snapshots not counterfactual trajectories"
+}

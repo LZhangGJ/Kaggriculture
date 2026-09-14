@@ -1,0 +1,334 @@
+--- parent/policy/bridge.cpp
++++ r3/policy/bridge.cpp
+@@ -87,3 +87,18 @@
+  }
+  return 0;
+ }
++
++// Read-only execution receipt, not a policy input. Tests use the real linked
++// native entry to distinguish a proposed route from an installed route.
++extern "C" const char*td_delivery_handoff_json(void*p){
++ auto&h=*static_cast<Handle*>(p);const auto&c=h.policy.live.core;std::ostringstream s;
++ s<<"{\"enabled\":"<<A08_DELIVERY_HANDOFF<<",\"observation_step\":"<<c.delivery_observation_step
++  <<",\"checks\":"<<c.delivery_handoff_checks<<",\"insertions\":"<<c.delivery_handoff_insertions
++  <<",\"quantity\":"<<c.delivery_handoff_quantity<<",\"last_step\":"<<c.delivery_handoff_last_step
++  <<",\"donor\":"<<c.delivery_handoff_donor<<",\"receiver\":"<<c.delivery_handoff_receiver<<",\"plans\":[";
++ for(size_t u=0;u<c.plans.size();u++){if(u)s<<",";const auto&pl=c.plans[u];s<<"[";
++  for(size_t k=pl.index;k<pl.a.size();k++){if(k!=pl.index)s<<",";auto a=pl.a[k];s<<"["<<int(a.op)<<","<<int(a.item)<<","<<a.quantity<<","<<pl.target[k]<<"]";}
++  s<<"]";}s<<"]}";h.text=s.str();return h.text.c_str();
++}
++
++#include "delivery_probe.inc"
+--- /dev/null
++++ r3/policy/delivery_probe.inc
+@@ -0,0 +1,41 @@
++// Read-only test object: verifies the EXACT linked proposal, no agent mutation.
++extern "C" const char*td_delivery_proposal_snapshot(const double*input,size_t count,
++ const int32_t*raw,size_t raw_count,double shadow,int authorize){
++ static thread_local std::string result;
++ try{
++  if(!input||!raw||!std::isfinite(shadow)||shadow<0)throw std::runtime_error("invalid argument");
++  Cursor r{input,count};int step=r.integer(),day=r.integer(),hour=r.integer(),seat=r.integer();
++  if(step<0||step>=719||day!=step/24||hour!=step%24||seat<0||seat>1)throw std::runtime_error("clock/seat");
++  auto fa=r.farm(),fb=r.farm();auto priv=r.priv();Market market;
++  for(auto&x:market.inventory)x=r.integer();for(auto&x:market.prices)x=r.integer();
++  std::vector<int8_t>shops;int n=r.count();if(n>8)throw std::runtime_error("shops");
++  for(int j=0;j<n;j++){int i=r.integer();if(i<0||i>7)throw std::runtime_error("shop id");shops.push_back(i);}
++  if(r.i!=count)throw std::runtime_error("trailing observation");
++  const auto&own=seat?fb:fa;const auto&opponent=seat?fa:fb;
++  if(priv.inventories.size()!=own.hands.size()+1||priv.inventories.size()>16)throw std::runtime_error("units");
++  dp7::View v{step,day,hour,own,opponent,priv,market,shops};
++  dp7::Controller ctl;ctl.day=day;ctl.phase=3;ctl.p.midroute_delivery=true;ctl.p.action_shadow=shadow;
++  ctl.delivery_observation_step=authorize?step:-1;
++  size_t k=0;auto next=[&](){if(k>=raw_count)throw std::runtime_error("truncated plan");return raw[k++];};
++  int units=next();if(units!=int(priv.inventories.size()))throw std::runtime_error("plan units");
++  ctl.plans.resize(units);
++  for(auto&p:ctl.plans){int size=next();if(size<0||size>128)throw std::runtime_error("plan length");
++   for(int j=0;j<size;j++){int op=next(),i=next(),q=next(),t=next();
++    if(op<0||op>17||i< -1||i>11||q<0||q>10000||t< -1||t>99)throw std::runtime_error("plan atom");
++    p.a.push_back(dp7::action(Op(op),i,q));p.target.push_back(t);
++   }
++  }if(k!=raw_count)throw std::runtime_error("trailing plan");
++  auto c=dp7::deliveryhandoff::propose(ctl,v);std::ostringstream s;s.precision(17);
++  s<<"{\"selected\":"<<(c.selected?"true":"false")<<",\"donor\":"<<c.donor<<",\"receiver\":"<<c.receiver
++   <<",\"plot\":"<<c.plot<<",\"depot\":"<<c.depot<<",\"quantity\":"<<c.quantity<<",\"extra_actions\":"<<c.extra_actions
++   <<",\"arrival\":"<<c.arrival<<",\"overflow_before\":"<<c.overflow_before<<",\"overflow_after\":"<<c.overflow_after
++   <<",\"candidates\":"<<c.candidates<<",\"deadline_rejects\":"<<c.deadline_rejects<<",\"order_rejects\":"<<c.order_rejects
++   <<",\"capacity_rejects\":"<<c.capacity_rejects<<",\"economy_rejects\":"<<c.economy_rejects
++   <<",\"conditional_quote\":"<<c.conditional_quote<<",\"score\":"<<c.score;
++  auto dump=[&](const char*name,const std::vector<dp7::Plan>&ps){s<<",\""<<name<<"\":[";
++   for(size_t u=0;u<ps.size();u++){if(u)s<<",";s<<"[";const auto&p=ps[u];
++    for(size_t j=0;j<p.a.size();j++){if(j)s<<",";auto a=p.a[j];s<<"["<<int(a.op)<<","<<int(a.item)<<","<<a.quantity<<","<<p.target[j]<<"]";}s<<"]";}s<<"]";};
++  dump("base",c.base);dump("best",c.best);s<<"}";result=s.str();
++ }catch(const std::exception&e){result=std::string("{\"error\":\"")+e.what()+"\"}";}
++ return result.c_str();
++}
+--- /dev/null
++++ r3/policy/executor/delivery_handoff.hpp
+@@ -0,0 +1,163 @@
++#pragma once
++// A single transport repair: transfer one resource-free, same-plot job group
++// so an otherwise deadline-blocked cargo worker can visit the warehouse.
++// The job multiset and whole-fleet same-plot order must remain identical.
++// No future prices, rival inventory, episode seed, or opponent identity.
++#include "policy.hpp"
++#include "resource_exchange.hpp"
++#ifndef A08_DELIVERY_HANDOFF
++#define A08_DELIVERY_HANDOFF 0
++#endif
++static_assert(A08_DELIVERY_HANDOFF==0||A08_DELIVERY_HANDOFF==1);
++namespace dp7::deliveryhandoff {
++using exchange::Groups;
++struct Choice {
++ bool selected=false;
++ int donor=-1,receiver=-1,plot=-1,depot=-1,quantity=0,extra_actions=0,arrival=-1;
++ int overflow_before=0,overflow_after=0,candidates=0,deadline_rejects=0;
++ int order_rejects=0,capacity_rejects=0,economy_rejects=0;
++ double conditional_quote=0,score=0;
++ std::vector<Plan> base,best;
++};
++inline Plan remaining(const Plan&p){
++ Plan out;
++ if(p.index>p.a.size()||p.target.size()!=p.a.size())return out;
++ out.a.assign(p.a.begin()+p.index,p.a.end());
++ out.target.assign(p.target.begin()+p.index,p.target.end());return out;
++}
++inline bool free_group(const exchange::Group&g){
++ if(g.actions.empty())return false;
++ for(auto a:g.actions)if(a.op!=Op::WATER&&a.op!=Op::HARVEST&&
++    a.op!=Op::CARE&&a.op!=Op::COLLECT_FERTILIZER)return false;
++ return true;
++}
++inline bool donor_safe(const Plan&p,const Counts&cargo,bool funded_seeds=false){
++ for(int i=9;i<12;i++)if(cargo[i])return false;
++ for(size_t k=0;k<p.a.size();k++){
++  auto a=p.a[k];if(!Controller::movement(a.op)&&p.target[k]<0)return false;
++  // Stronger than merely subtracting current inputs. A moved harvest may not
++  // be the later source of this worker's wheat/fertilizer/animal commitment.
++  if((a.op==Op::PLANT&&!funded_seeds)||a.op==Op::DROP||a.op==Op::PICKUP||a.op==Op::FEED||
++     a.op==Op::FERTILIZE||a.op==Op::PLACE)return false;
++ }return true;
++}
++// All currently planned seed consumption must already be funded. Retiming
++// a HARVEST/PLANT/WATER group is safe when current seeds cover the WHOLE fleet,
++// regardless of the atomic same-tick PLANT order. No future purchase is credited.
++inline bool seeds_funded(const View&o,const std::vector<Plan>&ps){
++ std::array<int,5>need{};for(const auto&p:ps)for(auto a:p.a)if(a.op==Op::PLANT){
++  int i=int(a.item);if(i<0||i>=5)return false;need[i]++;
++ }for(int i=0;i<5;i++)if(need[i]>o.priv.seeds[i])return false;return true;
++}
++inline bool pickup_prefix_preserved(const Plan&before,const Plan&after){
++ int last=-1;for(size_t k=0;k<before.a.size();k++)if(before.a[k].op==Op::PICKUP)last=int(k);
++ if(last>=int(after.a.size()))return false;
++ for(int k=0;k<=last;k++)if(!Controller::same_action(before.a[k],after.a[k])||before.target[k]!=after.target[k])return false;
++ return true;
++}
++// Rebuild only the two changed routes. Material operations keep their original
++// destination and relative order, including pickups at the existing depot.
++inline Plan route(const View&o,int u,const Groups&gs,int first_depot=-1){
++ Plan out;int pos=cell(u?o.own.hands.at(u-1):o.own.farmer);
++ if(first_depot>=0){Controller::walk(out,pos,first_depot);out.a.push_back(action(Op::DROP));out.target.push_back(first_depot);}
++ for(auto&g:gs){Controller::walk(out,pos,g.pos);for(auto a:g.actions){out.a.push_back(a);out.target.push_back(g.pos);}}
++ return out;
++}
++inline int cargo_upper(const View&o,int u,const Plan&p,int through){
++ // No speculative market clearance is credited. Count all current cargo and
++ // all visible scheduled harvests up to arrival, even those already consumed.
++ int q=sum(o.priv.inventories[u]);std::set<int>harvested,collected;
++ for(int k=0;k<int(p.a.size())&&k<=through;k++){
++  auto a=p.a[k];int pos=p.target[k];
++  if(a.op==Op::PICKUP)q+=std::max(0,a.quantity);
++  if(pos<0)continue;const auto&t=o.own.tiles[pos];
++  if(a.op==Op::HARVEST&&harvested.insert(pos).second){
++   int visible=std::max(0,int(t.yield_units));
++   // One finite-crop WATER can add at most two units today. Parent forecasts
++   // omit this increment; capacity safety must not rely on that omission.
++   if(plant(t)&&!ongoing(int(t.crop))&&!t.watered_today)visible+=2;
++   q+=visible;
++  }else if(a.op==Op::COLLECT_FERTILIZER&&animal(t)&&t.fertilizer_available&&collected.insert(pos).second)q++;
++ }return q;
++}
++inline bool capacity_safe(const View&o,const std::vector<Plan>&ps,int donor,int arrival,int qty){
++ int upper=sum(o.priv.shed)+qty;
++ for(size_t u=0;u<ps.size();u++)if(int(u)!=donor){
++  // Other units that can possibly reach ANY depot during this prefix may
++  // preempt the new DROP. Bound their whole visible load, without assuming a
++  // sale order succeeds. Existing runtime DROP capacity protection also stays.
++  int start=cell(u?o.own.hands[u-1]:o.own.farmer);
++  if(near(start)<=arrival)upper+=cargo_upper(o,int(u),ps[u],arrival);
++ }return upper<=100;
++}
++inline Choice propose(const Controller&ctl,const View&o){
++ Choice out;
++ if(!A08_DELIVERY_HANDOFF||ctl.delivery_observation_step!=o.step||!ctl.p.midroute_delivery||
++    ctl.phase!=3||ctl.day!=o.day||o.day>=29||o.hour>=22||ctl.plans.size()!=o.priv.inventories.size())return out;
++ out.overflow_before=ctl.expected_auto_deposit(o)-(100-ctl.p.shed_safety);
++ if(out.overflow_before<=0)return out;
++ std::vector<Groups>groups;for(auto&p:ctl.plans){out.base.push_back(remaining(p));groups.push_back(exchange::groups(out.base.back()));}
++ out.best=out.base;
++ if(!exchange::deadlines(o,out.base)||!seeds_funded(o,out.base))return out;
++ const auto causal_order=exchange::order(out.base);
++ for(size_t u=0;u<groups.size();u++){
++  auto&cargo=o.priv.inventories[u];int qty=sum(cargo);
++  if(qty<=0||qty>100||groups[u].empty()||!donor_safe(out.base[u],cargo,true))continue;
++  int start=cell(u?o.own.hands[u-1]:o.own.farmer);
++  for(int depot_pos:dp7::depot){
++   const int arrival=dist(start,depot_pos);if(o.hour+arrival+1>22)continue;
++   const auto single=route(o,int(u),groups[u],depot_pos);
++   // The existing single-worker midroute policy already handles these. This
++   // repair addresses its remaining-route deadline rejection, not a new sale
++   // timing policy or a broad replacement of the old dispatch priorities.
++   if(o.hour+int(single.a.size())+1<=24)continue;
++   for(size_t g=0;g<groups[u].size();g++)if(free_group(groups[u][g])){
++    auto dg=groups[u];auto transfer=dg[g];dg.erase(dg.begin()+g);
++    auto dp=route(o,int(u),dg,depot_pos);
++    if(o.hour+int(dp.a.size())>24)continue;
++    for(size_t v=0;v<groups.size();v++)if(v!=u){
++     // Do not insert before a scheduled input pickup: preserve the recipient's
++     // warehouse allocation ordering rather than funding it from new cargo.
++     size_t first=0;bool unsupported=false;
++     for(size_t j=0;j<groups[v].size();j++)for(auto a:groups[v][j].actions)
++      {if(a.op==Op::PICKUP)first=j+1;if(a.op==Op::DROP)unsupported=true;}
++     for(size_t k=0;k<out.base[v].a.size();k++)if(!Controller::movement(out.base[v].a[k].op)&&out.base[v].target[k]<0)unsupported=true;
++     if(unsupported)continue;
++     for(size_t at=first;at<=groups[v].size();at++){
++      auto rg=groups[v];rg.insert(rg.begin()+at,transfer);auto rp=route(o,int(v),rg);
++      if(o.hour+int(rp.a.size())>24||!pickup_prefix_preserved(out.base[v],rp))continue;
++      out.candidates++;auto trial=out.base;trial[u]=dp;trial[v]=std::move(rp);
++      if(!exchange::deadlines(o,trial)){out.deadline_rejects++;continue;}
++      if(exchange::order(trial)!=causal_order){out.order_rejects++;continue;}
++      if(!capacity_safe(o,trial,int(u),arrival,qty)){out.capacity_rejects++;continue;}
++      const int extra=std::max(1,int(trial[u].a.size()+trial[v].a.size())-int(out.base[u].a.size()+out.base[v].a.size()));
++      // Quote only sale products, never wheat/fertilizer reserved elsewhere.
++      // This is a conservative opportunity ranking, NOT recovered terminal
++      // cash. The unchanged market DP still decides actual sale quantities.
++      double quote=0;for(int i=1;i<=WO;i++)quote+=revenue(i,o.market.inventory[i],cargo[i]);
++      quote*=double(std::min(qty,out.overflow_before))/qty;
++      if(quote<=ctl.p.action_shadow*extra+1e-6){out.economy_rejects++;continue;}
++      double score=(quote-ctl.p.action_shadow*extra)/extra;
++      if(!out.selected||score>out.score+1e-6){
++       out.selected=true;out.score=score;out.conditional_quote=quote;out.donor=int(u);out.receiver=int(v);
++       out.plot=transfer.pos;out.depot=depot_pos;out.quantity=qty;out.extra_actions=extra;out.arrival=arrival;
++       out.overflow_after=out.overflow_before-qty;out.best=std::move(trial);
++      }
++     }
++    }
++   }
++  }
++ }
++ return out;
++}
++inline bool apply(Controller&ctl,const View&o){
++ if(!A08_DELIVERY_HANDOFF||ctl.delivery_observation_step!=o.step)return false;
++ ctl.delivery_handoff_checks++;auto c=propose(ctl,o);if(!c.selected)return false;
++ // Only these two plans are replaced. All other workers and the original
++ // investment, maintenance, market DP and input-recovery machinery are intact.
++ ctl.plans[c.donor]=std::move(c.best[c.donor]);ctl.plans[c.receiver]=std::move(c.best[c.receiver]);
++ ctl.delivery_handoff_insertions++;ctl.delivery_handoff_quantity+=c.quantity;
++ ctl.delivery_handoff_last_step=o.step;ctl.delivery_handoff_donor=c.donor;ctl.delivery_handoff_receiver=c.receiver;
++ return true;
++}
++}
+--- parent/policy/executor/policy.hpp
++++ r3/policy/executor/policy.hpp
+@@ -172,6 +172,7 @@
+ };
+ class Controller;
+ namespace exchange {void apply(Controller&,const View&);}
++namespace deliveryhandoff {bool apply(Controller&,const View&);}
+ namespace intraday {void complete_pending(Controller&,const View&);void consider(Controller&,const View&,PlayerAction&);}
+ namespace service {void recover(Controller&,const View&);void procure(Controller&,const View&,PlayerAction&);void protect(const Controller&,const View&,PlayerAction&);}
+ namespace dayvalue {bool accept(Controller&,const View&,const std::vector<Plan>&,const std::vector<Plan>&);}
+@@ -180,6 +181,11 @@
+ namespace compilechoice {void compare(Controller&,const View&);}
+ class Controller {
+  public:
++ // Only the latest real observation may authorize the new fleet delivery.
++ // Later MPC states must not pretend the observable cargo is already cash.
++ int delivery_observation_step=-1;
++ int delivery_handoff_checks=0,delivery_handoff_insertions=0,delivery_handoff_quantity=0;
++ int delivery_handoff_last_step=-1,delivery_handoff_donor=-1,delivery_handoff_receiver=-1;
+  bool resume_compiled_tick=false; // Scenario continuation after this tick's compile, never a policy choice.
+  // Optional shared C3 valuation. It sees only this controller and the public View.
+  std::function<std::array<double,12>(const Controller&,const View&,const PlayerAction&)> admission_values;
+@@ -1355,7 +1361,7 @@
+   auto cache_lifetime=schedule_cache;
+   packmemo::Scope cache_scope(p.exact_schedule_cache?(packmemo::active?packmemo::active:cache_lifetime.get()):nullptr);
+   if(o.day!=day)new_day(o);
+-  if(!resume_compiled_tick){if(auto recovery=recover(o))return *recovery;if(auto repair=reconcile_seeds(o))return *repair;intraday::complete_pending(*this,o);if(phase==3)recoordinate(o);service::recover(*this,o);exchange::apply(*this,o);dispatch_idle(o);dispatch_midroute(o);}
++  if(!resume_compiled_tick){if(auto recovery=recover(o))return *recovery;if(auto repair=reconcile_seeds(o))return *repair;intraday::complete_pending(*this,o);if(phase==3)recoordinate(o);service::recover(*this,o);exchange::apply(*this,o);dispatch_idle(o);int old_deliveries=midroute_delivery_insertions;dispatch_midroute(o);if(midroute_delivery_insertions==old_deliveries)deliveryhandoff::apply(*this,o);}
+   resume_compiled_tick=false;
+   bool preparing=phase==1;Acts prep;if(preparing&&(p.preparation_work||p.preparation_pipeline_v2)){if(p.preparation_pipeline_v2){preparation_pipeline_checks++;prep=preparation_pipeline(o);}else prep=preparation_prefix(o);}PlayerAction out;if(phase==1){int n=std::min(10,int(queue.size()));out.market.assign(queue.begin(),queue.begin()+n);queue.erase(queue.begin(),queue.begin()+n);if(queue.empty())phase=2;}else if(phase==2){compile(o);out.market=market(o);}else out.market=market(o);if(out.market.size()>10)out.market.resize(10);int n=1+o.own.hands.size();out.units.resize(n);Counts pickup{},plant_used{},early_placed{};int drop_qty=0;if(phase==3)for(int u=0;u<n;u++){auto&pl=plans.at(u);if(auto early=early_deposit_action(o,u,pl,100-sum(o.priv.shed)+sum(pickup)-drop_qty)){out.units[u]=*early;if(early->op==Op::PLACE){early_placed[int(early->item)]+=early->quantity;drop_qty+=early->quantity;}else if(early->op==Op::DROP){add(early_placed,o.priv.inventories[u]);drop_qty+=sum(o.priv.inventories[u]);}continue;}while(pl.index<pl.a.size()){
+    if(p.fix_logistics&&pl.a[pl.index].op==Op::DROP){int pos=cell(u?o.own.hands[u-1]:o.own.farmer);if(at_depot(pos)){int qty=sum(o.priv.inventories[u]);int room=100-sum(o.priv.shed)+sum(pickup)-drop_qty;if(qty>room)break;drop_qty+=qty;}}
+@@ -1367,6 +1373,7 @@
+ };
+ }
+ #include "resource_exchange.hpp"
++#include "delivery_handoff.hpp"
+ #include "intraday_admission.hpp"
+ #include "service_recovery.hpp"
+ #include "joint_portfolio.hpp"
+--- parent/policy/search.hpp
++++ r3/policy/search.hpp
+@@ -117,6 +117,7 @@
+ #endif
+   if(restore_day>=0&&o.day>=restore_day){live.configure(base);restore_day=-1;}
+   if(base.scenario!=0&&o.day!=live.core.day)choose(o);
++  live.core.delivery_observation_step=o.step;
+   auto out=live.act(o);
+ #if R2_CROP_CLOCK_MODE >= 1
+   if(o.hour==0){auto model=live.model;model.rival_harvest_weights=crop_clock.weights();model.public_rival(o);removal_forecast=model.rival;}
+--- parent/main.py
++++ r3/main.py
+@@ -1,16 +1,16 @@
+-"""TRI_A08_r11_r2_fix1: collection-work-consistent animal service valuation (not accepted). Explicit binary/config; no replay, seed or agent ID input."""
++"""TRI_A08_r11_r3: resource-preserving fleet delivery handoff (not accepted). Explicit binary/config; no replay, seed or agent ID input."""
+ import importlib.util
+ import json
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parent
+-spec = importlib.util.spec_from_file_location('_tri_a08_r11_r2_fix1_codec', ROOT/'policy/agent.py')
++spec = importlib.util.spec_from_file_location('_tri_a08_r11_r3_codec', ROOT/'policy/agent.py')
+ codec = importlib.util.module_from_spec(spec)
+ spec.loader.exec_module(codec)
+ 
+ def create_agent(binary_path=None):
+     config = json.loads((ROOT/'policy/config.json').read_text(encoding='utf-8'))
+-    return codec.Agent(config=config, binary_path=binary_path or ROOT/'policy/tri_a08_r11_r2_fix1.so')
++    return codec.Agent(config=config, binary_path=binary_path or ROOT/'policy/tri_a08_r11_r3.so')
+ 
+ _seats = {}
+ def agent(observation, configuration=None):
+--- parent/build.py
++++ r3/build.py
+@@ -1,16 +1,16 @@
+ #!/usr/bin/env python3
+-"""Portable TRI_A08_r11_r2_fix1 builder (parent: exact TRI_A08_r11_r2). Offline candidate; formal acceptance not run."""
++"""Portable TRI_A08_r11_r3 builder (parent: exact TRI_A08_r11_r2_fix1). Offline candidate; formal acceptance not run."""
+ from pathlib import Path
+ import argparse, datetime, hashlib, json, os, shutil, subprocess, sys, time
+ ROOT=Path(__file__).resolve().parent
+ 
+ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+ def main():
+- p=argparse.ArgumentParser();p.add_argument('--animal-collection-labor',type=int,choices=[0,1],default=1);p.add_argument('--sale-floor-dp',type=int,choices=[0,1],default=1);p.add_argument('--sale-schedule-dp',type=int,choices=[0,1],default=1);p.add_argument('--paid-continuation',type=int,choices=[0,1],default=1);p.add_argument('--complete-crop-stops',type=int,choices=[0,1],default=1);p.add_argument('--market-integral',type=int,choices=[0,1,2],default=1);p.add_argument('--sale-clock',type=int,choices=[0,1,2],default=2);p.add_argument('--cxx',default=os.environ.get('CXX','g++'));p.add_argument('--mode',type=int,choices=[0,1,2],default=2);p.add_argument('--realization',type=int,choices=[0,1,2],default=0);p.add_argument('--crop-portfolio',type=int,choices=[0,1],default=1);p.add_argument('--cash-ledger',type=int,choices=[0,1],default=0);p.add_argument('--prefix-days',type=int,choices=[1,3,5],default=5);p.add_argument('--out',type=Path);a=p.parse_args()
++ p=argparse.ArgumentParser();p.add_argument('--delivery-handoff',type=int,choices=[0,1],default=1);p.add_argument('--animal-collection-labor',type=int,choices=[0,1],default=1);p.add_argument('--sale-floor-dp',type=int,choices=[0,1],default=1);p.add_argument('--sale-schedule-dp',type=int,choices=[0,1],default=1);p.add_argument('--paid-continuation',type=int,choices=[0,1],default=1);p.add_argument('--complete-crop-stops',type=int,choices=[0,1],default=1);p.add_argument('--market-integral',type=int,choices=[0,1,2],default=1);p.add_argument('--sale-clock',type=int,choices=[0,1,2],default=2);p.add_argument('--cxx',default=os.environ.get('CXX','g++'));p.add_argument('--mode',type=int,choices=[0,1,2],default=2);p.add_argument('--realization',type=int,choices=[0,1,2],default=0);p.add_argument('--crop-portfolio',type=int,choices=[0,1],default=1);p.add_argument('--cash-ledger',type=int,choices=[0,1],default=0);p.add_argument('--prefix-days',type=int,choices=[1,3,5],default=5);p.add_argument('--out',type=Path);a=p.parse_args()
+  if shutil.which(a.cxx) is None:raise SystemExit('C++20 compiler not found: '+a.cxx)
+- out=(a.out or ROOT/'policy/tri_a08_r11_r2_fix1.so').resolve();out.parent.mkdir(parents=True,exist_ok=True)
+- if out.is_relative_to(ROOT/'reference'):raise SystemExit('Refusing to overwrite an immutable ancestor')
+- flags=[f'-DA08_ANIMAL_COLLECTION_LABOR={a.animal_collection_labor}',f'-DA08_SALE_FLOOR_DP={a.sale_floor_dp}',f'-DA08_SALE_SCHEDULE_DP={a.sale_schedule_dp}',f'-DA08_PAID_CONTINUATION={a.paid_continuation}','-std=c++20','-O3','-DNDEBUG','-march=x86-64','-ffp-contract=off','-DR2_STARTUP_SUPPLY_MODE=2','-DR2_LOCAL_SALE_TIMING=1','-DR2_FINITE_FERTILIZER=1','-DR2_CROP_CLOCK_MODE=1','-DR2_OBSERVE_PUBLIC_TRADES=1',f'-DR2_MARKET_INTEGRAL={a.market_integral}',f'-DR2_SALE_CLOCK_MODE={a.sale_clock}',f'-DA08_COMPLETE_CROP_STOPS={a.complete_crop_stops}',f'-DA08_LAND_DP_MODE={a.mode}',f'-DA08_REALIZATION_MODE={a.realization}',f'-DA08_CROP_PORTFOLIO_MODE={a.crop_portfolio}',f'-DA08_CASH_LEDGER={a.cash_ledger}',f'-DA08_PREFIX_DAYS={a.prefix_days}','-fPIC','-shared','-Wl,-Bsymbolic']
++ out=(a.out or ROOT/'policy/tri_a08_r11_r3.so').resolve();out.parent.mkdir(parents=True,exist_ok=True)
++ if out.is_relative_to(ROOT/'reference') or out.is_relative_to(ROOT/'parent'):raise SystemExit('Refusing to overwrite an immutable ancestor')
++ flags=[f'-DA08_DELIVERY_HANDOFF={a.delivery_handoff}',f'-DA08_ANIMAL_COLLECTION_LABOR={a.animal_collection_labor}',f'-DA08_SALE_FLOOR_DP={a.sale_floor_dp}',f'-DA08_SALE_SCHEDULE_DP={a.sale_schedule_dp}',f'-DA08_PAID_CONTINUATION={a.paid_continuation}','-std=c++20','-O3','-DNDEBUG','-march=x86-64','-ffp-contract=off','-DR2_STARTUP_SUPPLY_MODE=2','-DR2_LOCAL_SALE_TIMING=1','-DR2_FINITE_FERTILIZER=1','-DR2_CROP_CLOCK_MODE=1','-DR2_OBSERVE_PUBLIC_TRADES=1',f'-DR2_MARKET_INTEGRAL={a.market_integral}',f'-DR2_SALE_CLOCK_MODE={a.sale_clock}',f'-DA08_COMPLETE_CROP_STOPS={a.complete_crop_stops}',f'-DA08_LAND_DP_MODE={a.mode}',f'-DA08_REALIZATION_MODE={a.realization}',f'-DA08_CROP_PORTFOLIO_MODE={a.crop_portfolio}',f'-DA08_CASH_LEDGER={a.cash_ledger}',f'-DA08_PREFIX_DAYS={a.prefix_days}','-fPIC','-shared','-Wl,-Bsymbolic']
+  # Compile to a staging file. Never replace a known-good native if compilation
+  # OR the exact-native action/value gate fails; rejected artifacts are retained.
+  stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+@@ -35,6 +35,6 @@
+  os.replace(stage,out)
+ 
+  files=sorted(x for x in (ROOT/'policy').rglob('*') if x.suffix in ['.hpp','.cpp','.inc','.py','.json'] and not x.name.endswith(('.BUILD.json','.CHECK.json')))
+- files += [ROOT/'main.py',ROOT/'build.py'];receipt={'author':'A08','revision':'TRI_A08_r11_r2_fix1','animal_collection_labor':a.animal_collection_labor,'parent_native_sha256':'afca1d69fde38a0474546b70ecee38911477548dfde9aadc685c58a2a0b88a2f','sale_floor_dp':a.sale_floor_dp,'sale_schedule_dp':a.sale_schedule_dp,'paid_continuation':a.paid_continuation,'recovery_base':'TRI_A08_r11_r2_from_2f1557875d550000ae492c3814c84c78d5402e99b3a754308dc3907aa32b2178','complete_crop_stops':a.complete_crop_stops,'market_integral':a.market_integral,'sale_clock':a.sale_clock,'cash_ledger':a.cash_ledger,'prefix_days':a.prefix_days,'land_mode':a.mode,'realization_mode':a.realization,'crop_portfolio_mode':a.crop_portfolio,'status':'COMPILED; trajectory evaluation recorded separately','compiler':subprocess.check_output([a.cxx,'--version'],text=True).splitlines()[0],'command':cmd,'flags':flags,'build_log_directory':str(logdir),'native_choice_gate':gate,'native_choice_gate_command':check_command,'validation_sources':{'tests/native_choice_gate.py':sha(ROOT/'tests/native_choice_gate.py')},'seconds':time.perf_counter()-tick,'binary_sha256':sha(out),'sources':{str(f.relative_to(ROOT)):sha(f) for f in files}}
++ files += [ROOT/'main.py',ROOT/'build.py'];receipt={'author':'A08','revision':'TRI_A08_r11_r3','delivery_handoff':a.delivery_handoff,'animal_collection_labor':a.animal_collection_labor,'parent_native_sha256':'91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed','sale_floor_dp':a.sale_floor_dp,'sale_schedule_dp':a.sale_schedule_dp,'paid_continuation':a.paid_continuation,'recovery_base':'TRI_A08_r11_r2_fix1_source_inputs_759b6a9992dfcb1d0dd9d7718561eb586fb04e57cafbc532e6ba7755584e58b2','complete_crop_stops':a.complete_crop_stops,'market_integral':a.market_integral,'sale_clock':a.sale_clock,'cash_ledger':a.cash_ledger,'prefix_days':a.prefix_days,'land_mode':a.mode,'realization_mode':a.realization,'crop_portfolio_mode':a.crop_portfolio,'status':'COMPILED; trajectory evaluation recorded separately','compiler':subprocess.check_output([a.cxx,'--version'],text=True).splitlines()[0],'command':cmd,'flags':flags,'build_log_directory':str(logdir),'native_choice_gate':gate,'native_choice_gate_command':check_command,'validation_sources':{'tests/native_choice_gate.py':sha(ROOT/'tests/native_choice_gate.py')},'seconds':time.perf_counter()-tick,'binary_sha256':sha(out),'sources':{str(f.relative_to(ROOT)):sha(f) for f in files}}
+  out.with_suffix('.BUILD.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps({k:v for k,v in receipt.items() if k!='sources'},indent=2))
+ if __name__=='__main__':main()

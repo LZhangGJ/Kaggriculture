@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-13T20:33:55.805580+00:00",
+  "original_start": "2026-09-13T19:00:45Z",
+  "deadline": "2026-09-13T21:00:45Z",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu.max": "400000 100000",
+  "memory.max": "4294967296",
+  "memory.current": "493756416",
+  "meminfo": "MemTotal:        6090736 kB\nMemFree:         5058692 kB\nMemAvailable:    5015620 kB\nBuffers:            5220 kB\nCached:           164016 kB\nSwapCached:            0 kB\nActive:            27896 kB\nInactive:         424520 kB\nActive(anon):        140 kB\nInactive(anon):   312812 kB\nActive(file):      27756 kB\nInactive(file):   111708 kB\nUnevictable:       29872 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nDirty:             74416 kB\nWriteback:             0 kB\nAnonPages:        313140 kB\nMapped:            52136 kB\nShmem:                20 kB\nKReclaimable:      31012 kB\nSlab:              63960 kB\nSReclaimable:      31012 kB\nSUnreclaim:        32948 kB\nKernelStack:        2816 kB\nPageTables:         2672 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3045368 kB\nCommitted_AS:     881176 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        5068 kB\nVmallocChunk:          0 kB\nPercpu:             1224 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:      2048 kB\nFilePmdMapped:         0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       18432 kB\nDirectMap2M:     3330048 kB\nDirectMap1G:    31457280 kB\n",
+  "disk": "usage(total=33770192896, used=128708608, free=31906721792)",
+  "python": "Python 3.13.5",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+  "effective_cpus": 4,
+  "selected_workers": 1,
+  "memory_headroom_fraction": 0.3
+}

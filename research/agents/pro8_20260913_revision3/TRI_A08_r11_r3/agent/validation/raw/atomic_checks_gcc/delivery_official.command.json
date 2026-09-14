@@ -1,0 +1,10 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+  "--library",
+  "/mnt/data/r3_work/candidate/policy/tri_a08_r11_r3.so",
+  "--referee",
+  "/mnt/data/r3_work/feedback/referee",
+  "--out",
+  "/mnt/data/r3_work/logs/atomic_checks_gcc/delivery_official.json"
+]

@@ -1,0 +1,106 @@
+{
+  "SELECTED_CASES.json": {
+    "bytes": 11692,
+    "sha256": "b8593569a7fd28c514cec148467ad925cbabc32aad0306792e8ae41598bd51dc"
+  },
+  "referee/cpu_runtime.py": {
+    "bytes": 4135,
+    "sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726"
+  },
+  "referee/official/kaggriculture.json": {
+    "bytes": 6002,
+    "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "referee/official/kaggriculture.py": {
+    "bytes": 40356,
+    "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "referee/official/seed_utils.py": {
+    "bytes": 1585,
+    "sha256": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  },
+  "own_traces/aurax_reactive_v1_1801029924_seat0.json.gz": {
+    "bytes": 658871,
+    "sha256": "89c630c1b5337187ec7491e1d95d0944956ff679478bdca9e101483eff428e41"
+  },
+  "own_ledgers/aurax_reactive_v1_1801029924_seat0.json": {
+    "bytes": 59205,
+    "sha256": "213b25e0bee38a9f0b47509a8c4ecab6ac110318ca74111ad07daada059226c4"
+  },
+  "own_traces/submission_56149565_1782098909_seat1.json.gz": {
+    "bytes": 604661,
+    "sha256": "1670d76a6b5faafaf55c952338049dd0261ff49f8b0feba2f86ae9fe30357152"
+  },
+  "own_ledgers/submission_56149565_1782098909_seat1.json": {
+    "bytes": 59716,
+    "sha256": "ae1fe61df5648fb583083f0c8542b351030ab20d1a23a1e4fc52f7d9521e915e"
+  },
+  "own_traces/market_smart_v8_290316560_seat0.json.gz": {
+    "bytes": 652282,
+    "sha256": "06c0686d43187fff1a56c7ec71995b7ea59538ec1e889bdca9e0b0102360fdb3"
+  },
+  "own_ledgers/market_smart_v8_290316560_seat0.json": {
+    "bytes": 60393,
+    "sha256": "06d13edacd401ec7874e29a1d53f34bd41fa0f55f78ac870be1eb76666baf0bb"
+  },
+  "own_traces/submission_56149565_447907448_seat0.json.gz": {
+    "bytes": 609667,
+    "sha256": "2bb4d145159911be2bfe01a98ec5e7ce9d55c5c6e0320033cf7ec6a24cf57565"
+  },
+  "own_ledgers/submission_56149565_447907448_seat0.json": {
+    "bytes": 59825,
+    "sha256": "0e4ee6e02692ad9cd038123b62ccf0534d3a4ca38c3631141a7c129a984fe273"
+  },
+  "DIAGNOSTIC_NOTES.md": {
+    "bytes": 3881,
+    "sha256": "a752e8fc4e7b274ebfe72f0ce97813e5681318df36c5a14fdb7fb7faee9f4059"
+  },
+  "analysis/own_crop_audit.json": {
+    "bytes": 57580,
+    "sha256": "bb49bde4d859db56bc25faa71fc3514e090f86e28533930126f032dec7aef7c0"
+  },
+  "analysis/own_crop_events.jsonl.gz": {
+    "bytes": 9588,
+    "sha256": "f017c7e39009578aad0fd2ea13fb8a8d418ff63d276f13cf6b1623a32e4b3bed"
+  },
+  "analysis/aurax_reactive_v1_1801029924_seat0.delivery_telemetry.json": {
+    "bytes": 334867,
+    "sha256": "23f2512ba1aba5bcdbe9bf301a3fdb6d4f9cb609257ddf0d9c3d39bad537acef"
+  },
+  "analysis/submission_56149565_1782098909_seat1.delivery_telemetry.json": {
+    "bytes": 335116,
+    "sha256": "910fbfad38a3e779b567a1e1589b50ee18c04035976f14ce580e84e7dafc0605"
+  },
+  "analysis/aurax_reactive_v1_1801029924_seat0.delivery_diagnosis.json": {
+    "bytes": 1306,
+    "sha256": "81246627a08011bfc01623fa5d6aebe0bc271cc36203ab03563a2cb9ea07bdb9"
+  },
+  "analysis/submission_56149565_1782098909_seat1.delivery_diagnosis.json": {
+    "bytes": 1028,
+    "sha256": "32dd95a26de08aadd72f87a4f6d5282f232b1996bbe3ea343cf9e04ba9192b2c"
+  },
+  "analysis/aurax_reactive_v1_1801029924_seat0.stock_loss_events.json": {
+    "bytes": 6241,
+    "sha256": "0951ac8f014a2868a89a1ed0a64511238d7c4449a80ab46dcfd1de733f9767c5"
+  },
+  "analysis/submission_56149565_1782098909_seat1.stock_loss_events.json": {
+    "bytes": 4765,
+    "sha256": "78a33ec8ebe808bc3c8719081a501548aa7bca796c533645c2cbb9ef763b292e"
+  },
+  "PROGRESS.json": {
+    "bytes": 1638,
+    "sha256": "235dbf4ccdef1d28b3e88471e58f7583da4b479f4acd99d44072f536c5fe1720"
+  },
+  "PARTIAL_ROWS.json": {
+    "bytes": 238566,
+    "sha256": "8d86b724922714acf92a7d963a506a90e4ae2d78d9ae9182d3990b6e53a1095f"
+  },
+  "probe_observations.py": {
+    "bytes": 1961,
+    "sha256": "59957f972de37a2a472b8a07eaaeba1b7f6dcdff1c8ed9a0948cf5abcf5e115c"
+  },
+  "README.md": {
+    "bytes": 818,
+    "sha256": "0b9c0f428b1f3560b949192269af098863b984dcaae7fff152f16abe29ee5d6c"
+  }
+}

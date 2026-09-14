@@ -1,0 +1,15 @@
+{
+  "name": "TRI_A06_r6_r3_bundle_fix1",
+  "parent_zip_sha256": "a6737f9f0f4a1d4963a70e5c4beafbf3d02d5d15238f3e2e5bdbd6c0c832f021",
+  "parent_native_sha256": "6cb895db1484045699e8b81f11ed1d753507e02d9d57af81d037845dbf73441e",
+  "native_sha256": "6f1ea0c50035b5c33a313cf7e61e2f98f7da826fda52863d67d7c086301250de",
+  "changed_production_files": [
+    "policy/executor/policy.hpp"
+  ],
+  "unchanged_inherited_build_inputs": 40,
+  "inherited_build_inputs": 41,
+  "new_closed_loop_games": 0,
+  "status": "Focused execution repair candidate; principal regression NOT established as reversed",
+  "feedback_sha256": "fc289803cc8473451165cdf0f285f56d2a5d2ff6201ddba3c494b31f08b21c38",
+  "created_utc": "2026-09-13T20:42:30.916649+00:00"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "start": 460,
+    "ticks_per_branch": 20,
+    "parent_cash_delta": 7746.0,
+    "candidate_cash_delta": 8376.0,
+    "cash_delta_difference": 630.0,
+    "parent_night_loss": 15,
+    "candidate_night_loss": 10,
+    "same_endpoint_tiles": true,
+    "same_endpoint_seeds": true,
+    "new_games": 0,
+    "clearance": true,
+    "supply": 0
+  },
+  {
+    "case": "submission_56149565_1782098909_seat1",
+    "start": 613,
+    "ticks_per_branch": 11,
+    "parent_cash_delta": 0.0,
+    "candidate_cash_delta": 86.0,
+    "cash_delta_difference": 86.0,
+    "parent_night_loss": 9,
+    "candidate_night_loss": 1,
+    "same_endpoint_tiles": true,
+    "same_endpoint_seeds": true,
+    "new_games": 0,
+    "clearance": true,
+    "supply": 0
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "start": 508,
+    "ticks_per_branch": 20,
+    "parent_cash_delta": 3873.0,
+    "candidate_cash_delta": 4193.0,
+    "cash_delta_difference": 320.0,
+    "parent_night_loss": 3,
+    "candidate_night_loss": 0,
+    "same_endpoint_tiles": true,
+    "same_endpoint_seeds": true,
+    "new_games": 0,
+    "clearance": true,
+    "supply": 0
+  },
+  {
+    "case": "submission_56149565_447907448_seat0",
+    "start": 613,
+    "ticks_per_branch": 11,
+    "parent_cash_delta": 396.0,
+    "candidate_cash_delta": 396.0,
+    "cash_delta_difference": 0.0,
+    "parent_night_loss": 0,
+    "candidate_night_loss": 0,
+    "same_endpoint_tiles": true,
+    "same_endpoint_seeds": true,
+    "new_games": 0,
+    "clearance": true,
+    "supply": 0
+  }
+]

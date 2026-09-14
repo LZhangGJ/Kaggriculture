@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-13T19:04:00.058210+00:00",
+  "timeout_seconds": 60,
+  "command": [
+    "python",
+    "-B",
+    "/mnt/data/r3_work/feedback/probe_observations.py",
+    "--agent",
+    "/mnt/data/r3_work/parent/main.py",
+    "--trace",
+    "/mnt/data/r3_work/feedback/own_traces/aurax_reactive_v1_1801029924_seat0.json.gz",
+    "--limit",
+    "48",
+    "--require-exact",
+    "--out",
+    "/mnt/data/r3_work/logs/parent_probe48.json"
+  ],
+  "cwd": "/",
+  "memory_current_start": "447328256",
+  "returncode": 0,
+  "wall_seconds": 0.9191429615020752,
+  "ended_utc": "2026-09-13T19:04:00.977354+00:00",
+  "memory_current_end": "447979520"
+}

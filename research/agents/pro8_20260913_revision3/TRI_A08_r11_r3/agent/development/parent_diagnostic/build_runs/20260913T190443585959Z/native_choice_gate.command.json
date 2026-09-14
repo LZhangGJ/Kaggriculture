@@ -1,0 +1,10 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/r3_work/diagnostic/tests/native_choice_gate.py",
+  "--library",
+  "/mnt/data/r3_work/diagnostic.building-20260913T190443585959Z.so",
+  "--enabled",
+  "1",
+  "--out",
+  "/mnt/data/r3_work/diagnostic/build_runs/20260913T190443585959Z/native_choice_gate.json"
+]

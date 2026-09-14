@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "portable_directory": "portable_branches",
+      "summary": "own_branch_summary_clear1_supply0.json",
+      "identical": true
+    },
+    {
+      "portable_directory": "portable_branches_negative",
+      "summary": "own_branch_summary_clear0_supply0.json",
+      "identical": true
+    },
+    {
+      "portable_directory": "portable_branches_stress",
+      "summary": "own_branch_summary_clear1_supply3.json",
+      "identical": true
+    }
+  ],
+  "unique_conditions": 3,
+  "new_games": 0
+}

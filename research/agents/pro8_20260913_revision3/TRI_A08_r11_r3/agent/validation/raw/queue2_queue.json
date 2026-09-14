@@ -1,0 +1,56 @@
+[
+  {
+    "job": [
+      "final_candidate_build",
+      "120",
+      "python",
+      "/mnt/data/r3_work/candidate/build.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "candidate_full_checks",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/full_checks_gcc"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "candidate_final_probe",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/probe_versions.py",
+      "--main",
+      "/mnt/data/r3_work/candidate/main.py",
+      "--name",
+      "candidate_final"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "clang_full_checks",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--cxx",
+      "clang++",
+      "--library",
+      "/mnt/data/r3_work/clang.so",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/full_checks_clang"
+    ],
+    "returncode": 0
+  }
+]

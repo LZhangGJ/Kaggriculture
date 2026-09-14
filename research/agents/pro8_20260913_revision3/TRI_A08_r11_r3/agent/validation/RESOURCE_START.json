@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-09-13T19:02:24.486021+00:00",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "os_cpu_count_not_quota": 5,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "disk": {
+    "total": 33770192896,
+    "used": 77844480,
+    "free": 31957585920
+  },
+  "/proc/self/cgroup": "0::/",
+  "/sys/fs/cgroup/cpu.max": "400000 100000",
+  "/sys/fs/cgroup/cpu.stat": "usage_usec 10209400\nuser_usec 4266544\nsystem_usec 5942856\nnice_usec 0\nnr_periods 352\nnr_throttled 2\nthrottled_usec 54490\nnr_bursts 0\nburst_usec 0",
+  "/sys/fs/cgroup/cpuset.cpus.effective": "0-4",
+  "/sys/fs/cgroup/memory.max": "4294967296",
+  "/sys/fs/cgroup/memory.current": "433946624",
+  "/sys/fs/cgroup/memory.peak": "1087463424",
+  "/sys/fs/cgroup/memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "/sys/fs/cgroup/cpu/cpu.cfs_quota_us": null,
+  "/sys/fs/cgroup/cpu/cpu.cfs_period_us": null,
+  "/sys/fs/cgroup/memory/memory.limit_in_bytes": null,
+  "/sys/fs/cgroup/memory/memory.usage_in_bytes": null,
+  "MemAvailable_kB": "MemAvailable:    5056252 kB",
+  "g++": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "g++-13": null,
+  "g++-14": "g++-14 (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "clang++": "clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /usr/local/swift/usr/bin\n",
+  "effective_cpu_known": 4.0,
+  "worker_processes": 1
+}

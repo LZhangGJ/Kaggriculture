@@ -1,0 +1,142 @@
+[
+  {
+    "id": "market_smart_v8_568422814_seat0",
+    "reason": "Selected completed public loss in first16 seeds; provisional diagnostic",
+    "rows": {
+      "parent_r2": {
+        "id": "market_smart_v8_568422814_seat0",
+        "opponent": "market_smart_v8",
+        "seed": 568422814,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 82218.0,
+        "opponent_cash": 91936.0,
+        "margin": -9718.0
+      },
+      "candidate_r3": {
+        "id": "market_smart_v8_568422814_seat0",
+        "opponent": "market_smart_v8",
+        "seed": 568422814,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 82218.0,
+        "opponent_cash": 91936.0,
+        "margin": -9718.0
+      }
+    },
+    "first_own_action_difference": null,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/market_smart_v8_568422814_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/market_smart_v8_568422814_seat0.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_1827852203_seat0",
+    "reason": "Selected completed R2 loss in first16 seeds; provisional diagnostic",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_1827852203_seat0",
+        "opponent": "submission_56149565",
+        "seed": 1827852203,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 95229.0,
+        "opponent_cash": 96194.0,
+        "margin": -965.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_1827852203_seat0",
+        "opponent": "submission_56149565",
+        "seed": 1827852203,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 97074.0,
+        "opponent_cash": 94410.0,
+        "margin": 2664.0
+      }
+    },
+    "first_own_action_difference": 480,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_1827852203_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_1827852203_seat0.json.gz"
+    }
+  },
+  {
+    "id": "moon_v215_31485687_seat0",
+    "reason": "Narrow public win from first16 seeds retained for regression checks",
+    "rows": {
+      "parent_r2": {
+        "id": "moon_v215_31485687_seat0",
+        "opponent": "moon_v215",
+        "seed": 31485687,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 80579.0,
+        "opponent_cash": 80259.0,
+        "margin": 320.0
+      },
+      "candidate_r3": {
+        "id": "moon_v215_31485687_seat0",
+        "opponent": "moon_v215",
+        "seed": 31485687,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 92806.0,
+        "opponent_cash": 91101.0,
+        "margin": 1705.0
+      }
+    },
+    "first_own_action_difference": 384,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/moon_v215_31485687_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/moon_v215_31485687_seat0.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_805057947_seat0",
+    "reason": "Narrow R2 win from first16 seeds retained for regression checks",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_805057947_seat0",
+        "opponent": "submission_56149565",
+        "seed": 805057947,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 94240.0,
+        "opponent_cash": 93932.0,
+        "margin": 308.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_805057947_seat0",
+        "opponent": "submission_56149565",
+        "seed": 805057947,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 100669.0,
+        "opponent_cash": 102074.0,
+        "margin": -1405.0
+      }
+    },
+    "first_own_action_difference": 384,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_805057947_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_805057947_seat0.json.gz"
+    }
+  }
+]

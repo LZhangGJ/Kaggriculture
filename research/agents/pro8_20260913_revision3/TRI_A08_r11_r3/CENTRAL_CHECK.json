@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-09-13T20:22:33.813053+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "00d0afa3cc2f9c34acdaec50c313ca3acd36e22a82da1d8010c573c88c223e27",
+  "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+  "native_path": "policy/tri_a08_r11_r3.so",
+  "manifest_files_verified": 1070,
+  "source_files_verified": 46,
+  "changed_production_files": [
+    "build.py",
+    "main.py",
+    "policy/bridge.cpp",
+    "policy/delivery_probe.inc",
+    "policy/executor/delivery_handoff.hpp",
+    "policy/executor/policy.hpp",
+    "policy/search.hpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "958e7536be4e6639f1896f585a7b8d7de3122cc551d7c5df7076a3399eb9f3cb",
+  "default_build_and_unit_suite_passed": true,
+  "real_diagnostic_games": 8,
+  "cross_compiler_complete_pairs": 4,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "aurax_reactive_v1_1801029924_seat0",
+      "parent_margin": -10695.0,
+      "revision3_margin": -9082.0,
+      "margin_delta": 1613.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_1782098909_seat1",
+      "parent_margin": -7910.0,
+      "revision3_margin": -7163.0,
+      "margin_delta": 747.0,
+      "same_actions": false
+    },
+    {
+      "id": "market_smart_v8_290316560_seat0",
+      "parent_margin": 118.0,
+      "revision3_margin": -266.0,
+      "margin_delta": -384.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_447907448_seat0",
+      "parent_margin": 289.0,
+      "revision3_margin": 289.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    }
+  ]
+}

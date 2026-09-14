@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-13T19:09:34.347112+00:00",
+  "timeout_seconds": 100,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/find_handoff.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "452481024",
+  "returncode": 0,
+  "wall_seconds": 0.9675838947296143,
+  "ended_utc": "2026-09-13T19:09:35.314699+00:00",
+  "memory_current_end": "453033984"
+}

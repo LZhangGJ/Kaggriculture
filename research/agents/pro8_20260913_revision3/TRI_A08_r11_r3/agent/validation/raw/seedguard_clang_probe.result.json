@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-09-13T19:37:51.204067+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--name",
+    "seedguard_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564277248",
+  "returncode": 0,
+  "wall_seconds": 23.01828145980835,
+  "ended_utc": "2026-09-13T19:38:14.222350+00:00",
+  "memory_current_end": "565473280"
+}

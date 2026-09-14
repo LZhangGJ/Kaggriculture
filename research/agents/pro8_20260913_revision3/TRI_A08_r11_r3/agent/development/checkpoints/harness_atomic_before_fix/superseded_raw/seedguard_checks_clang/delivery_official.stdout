@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "native_sha256": "f1bba1154a0e8257072936e3bc81d9a53a1cd9e1afac49af10a968208cec2be3",
+  "checks": 1407,
+  "positive_proposals": 63,
+  "historical_saved_snapshot_calls": 249,
+  "synthetic_positive_cases": 49,
+  "negative_controls": [
+    "no_overflow",
+    "not_real_observation",
+    "negative_opportunity_return",
+    "no_free_warehouse_capacity",
+    "held_animal_commitment",
+    "donor_reserved_input_15",
+    "donor_reserved_input_11",
+    "delayed_harvest_expiry",
+    "floor_price_unprofitable_detour",
+    "final_day_unchanged",
+    "unfunded_shared_seed_budget"
+  ],
+  "new_games": 0,
+  "scope": "official own-unit prefixes; no market clearing and no competitor rollout; snapshots not counterfactual trajectories"
+}

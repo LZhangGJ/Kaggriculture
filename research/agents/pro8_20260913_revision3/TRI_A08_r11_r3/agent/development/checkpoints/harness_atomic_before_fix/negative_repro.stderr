@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/tests/atomic_plant_negative_repro.py", line 12, in <module>
+    assert planted==2,'Atomic admission must be frozen before any seed consumption'
+           ^^^^^^^^^^
+AssertionError: Atomic admission must be frozen before any seed consumption

@@ -1,0 +1,78 @@
+{
+  "snapshot_utc": "2026-09-13T18:43:19.714343+00:00",
+  "candidate": "TRI_A06_r6_r2",
+  "native_sha256": "b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1",
+  "scope": "Incomplete frozen-panel snapshot; mathematical failure bound only, not final win-rate report",
+  "completed": 789,
+  "strict_wins": 537,
+  "nonwins": 252,
+  "maximum_possible_final_wins": 1284,
+  "required_strict_wins": 1306,
+  "formal_games_planned": 1536,
+  "formal_panel_continues": true,
+  "cash_acceptance_gate": false,
+  "opponents": [
+    "soil_v219g",
+    "moon_v215",
+    "flexon_v5",
+    "market_smart_v8",
+    "nagatakengo_v70",
+    "aurax_reactive_v1",
+    "thomas_955_v2",
+    "shop0909",
+    "aurax_shop_v2",
+    "seven_turn",
+    "ahmed_v27",
+    "submission_56149565"
+  ],
+  "by_opponent": {
+    "soil_v219g": {
+      "completed": 66,
+      "wins": 41
+    },
+    "moon_v215": {
+      "completed": 66,
+      "wins": 49
+    },
+    "flexon_v5": {
+      "completed": 66,
+      "wins": 40
+    },
+    "market_smart_v8": {
+      "completed": 66,
+      "wins": 40
+    },
+    "nagatakengo_v70": {
+      "completed": 66,
+      "wins": 66
+    },
+    "aurax_reactive_v1": {
+      "completed": 66,
+      "wins": 49
+    },
+    "thomas_955_v2": {
+      "completed": 66,
+      "wins": 45
+    },
+    "shop0909": {
+      "completed": 66,
+      "wins": 40
+    },
+    "aurax_shop_v2": {
+      "completed": 66,
+      "wins": 40
+    },
+    "seven_turn": {
+      "completed": 66,
+      "wins": 40
+    },
+    "ahmed_v27": {
+      "completed": 65,
+      "wins": 37
+    },
+    "submission_56149565": {
+      "completed": 64,
+      "wins": 50
+    }
+  }
+}

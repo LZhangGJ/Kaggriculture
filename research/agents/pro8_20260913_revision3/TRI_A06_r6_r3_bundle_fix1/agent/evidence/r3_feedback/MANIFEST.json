@@ -1,0 +1,94 @@
+{
+  "SELECTED_CASES.json": {
+    "bytes": 14270,
+    "sha256": "8cdb1572e82570e57cd95362402d6af2635f322124664edbea2bce855313f3b7"
+  },
+  "DIAGNOSTIC_NOTES.md": {
+    "bytes": 5269,
+    "sha256": "338e59d455610b781629cd047e6bd437e4e11df1420d8a6d7c8cb9495025a64f"
+  },
+  "referee/cpu_runtime.py": {
+    "bytes": 4135,
+    "sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726"
+  },
+  "referee/official/kaggriculture.json": {
+    "bytes": 6002,
+    "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "referee/official/kaggriculture.py": {
+    "bytes": 40356,
+    "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "referee/official/seed_utils.py": {
+    "bytes": 1585,
+    "sha256": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  },
+  "own_traces/thomas_955_v2_1612180274_seat0.json.gz": {
+    "bytes": 695650,
+    "sha256": "4ecd2ac4fc2c61688806eb09c09c0cefbc318cbc9ad8821ef47a4d125e7e304d"
+  },
+  "own_ledgers/thomas_955_v2_1612180274_seat0.json": {
+    "bytes": 58460,
+    "sha256": "09beffd8f5f22bc2ba91b4ea9e5c1251b159f588f5ac3f4524ae3410415820ab"
+  },
+  "own_traces/market_smart_v8_389573676_seat0.json.gz": {
+    "bytes": 696150,
+    "sha256": "e6f75038ed91aaf8ff1a9bf181c9f3c3935fd0484927e8c1960cbcb4dc97241c"
+  },
+  "own_ledgers/market_smart_v8_389573676_seat0.json": {
+    "bytes": 61173,
+    "sha256": "710198d265dc4c3133851bce9b13a199af71d58fb62da51dd695cb3f384918ee"
+  },
+  "own_traces/submission_56149565_389573676_seat0.json.gz": {
+    "bytes": 642272,
+    "sha256": "01d332a4756c6002ac8e550e3d1dde9bf258bd227a7ffec21d7f1c489c783645"
+  },
+  "own_ledgers/submission_56149565_389573676_seat0.json": {
+    "bytes": 58542,
+    "sha256": "814199a41608b038e36abc5a5f2abfc2c3a4c601f0918be3c4ab1719ad57c9db"
+  },
+  "own_traces/moon_v215_290316560_seat0.json.gz": {
+    "bytes": 656077,
+    "sha256": "0390e13494da6e8c5cc846ddf02966dfba8d34b9f12b2ba20db39569dfcfe322"
+  },
+  "own_ledgers/moon_v215_290316560_seat0.json": {
+    "bytes": 61464,
+    "sha256": "1b335b2a102ad1ca0735e9c5bb0a8f097a9db042181a1ce2d914b02beafc3e4e"
+  },
+  "own_traces/submission_56149565_201542742_seat0.json.gz": {
+    "bytes": 587946,
+    "sha256": "8eff4a8c851760db16e336b4f886512293694722f485bc9389512f208f419545"
+  },
+  "own_ledgers/submission_56149565_201542742_seat0.json": {
+    "bytes": 59672,
+    "sha256": "35a15d8cfc818910bb80d1550f88329dca842bab3e3533e4270b076bbb45d2c5"
+  },
+  "analysis/own_crop_audit.json": {
+    "bytes": 79183,
+    "sha256": "0cc91fd572abe17d12271510a53a345e317cb6916afc2a24578cdba1433b75ee"
+  },
+  "analysis/own_crop_events.jsonl.gz": {
+    "bytes": 12434,
+    "sha256": "f68289342daae99f95b864f93fd0dedffa4365590795d62857b5f9fae5c4b5cc"
+  },
+  "analysis/death_preparation.json": {
+    "bytes": 13606,
+    "sha256": "babc26eebeded011d30cc528252d4ddf1b778f8e61d6f42a6dc2361d66f628f8"
+  },
+  "PROGRESS.json": {
+    "bytes": 1631,
+    "sha256": "087bd1ae92c8f475b65176da670e2030c1ff88f85f30bdd65b10447d1ca93cd9"
+  },
+  "PARTIAL_ROWS.json": {
+    "bytes": 208386,
+    "sha256": "f78d432f897b2e7c7f66e82d32163c1ead66d298691506be4782284558b5a5a8"
+  },
+  "probe_observations.py": {
+    "bytes": 1961,
+    "sha256": "59957f972de37a2a472b8a07eaaeba1b7f6dcdff1c8ed9a0948cf5abcf5e115c"
+  },
+  "README.md": {
+    "bytes": 704,
+    "sha256": "083c2d7074f7a2cf63cdf012b108bbe7fae76329eef1a6f54dfc3b3b10037e0c"
+  }
+}

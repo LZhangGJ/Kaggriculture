@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-09-13T19:37:38.487292+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--cxx",
+    "clang++",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/seedguard_checks_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "559276032",
+  "returncode": 0,
+  "wall_seconds": 12.155184030532837,
+  "ended_utc": "2026-09-13T19:37:50.642480+00:00",
+  "memory_current_end": "564740096"
+}

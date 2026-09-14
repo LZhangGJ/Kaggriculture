@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-13T19:25:56.658884+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py",
+    "--cxx",
+    "clang++",
+    "--out",
+    "/mnt/data/r3_work/clang.so"
+  ],
+  "cwd": "/",
+  "memory_current_start": "532189184",
+  "returncode": 0,
+  "wall_seconds": 20.74418330192566,
+  "ended_utc": "2026-09-13T19:26:17.403070+00:00",
+  "memory_current_end": "534728704"
+}

@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-13T19:15:11.332605+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "452235264",
+  "returncode": 0,
+  "wall_seconds": 29.921878814697266,
+  "ended_utc": "2026-09-13T19:15:41.254485+00:00",
+  "memory_current_end": "454230016"
+}

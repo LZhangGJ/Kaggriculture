@@ -1,0 +1,289 @@
+{
+  "status": "NOT central acceptance; engineering validation complete",
+  "unit_suites": 3,
+  "unit_assertions": 21478,
+  "unit_failures": 0,
+  "parent_exact_history_actions": 2876,
+  "feature_disabled_exact_parent_history_actions": 2876,
+  "new_complete_candidate_games": 4,
+  "new_complete_parent_controls": 2,
+  "candidate_full_game_wins": 2,
+  "candidate_full_game_losses": 2,
+  "candidate_full_game_draws": 0,
+  "new_complete_games_total": 6,
+  "full_games_each_steps": 719,
+  "true_opponent": "immutable exact own parent only, not fixed 12-opponent pool",
+  "full_player_days_reconciled": 360,
+  "final_bounded_trajectories": 20,
+  "final_bounded_transitions": 1344,
+  "official_exact_replay_transitions": 5658,
+  "official_action_schema_checks": 11316,
+  "replays_add_games": false,
+  "central_1536_candidate_games": 0,
+  "central_acceptance_proven": false,
+  "parent_snapshot": {
+    "snapshot_utc": "2026-09-13T19:00:13.834606+00:00",
+    "candidate": "TRI_A06_r12_r2",
+    "native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+    "scope": "Incomplete frozen-panel snapshot: mathematical failure bound only, not final overall win rate",
+    "completed": 917,
+    "strict_wins": 647,
+    "nonwins": 270,
+    "maximum_possible_final_wins": 1266,
+    "required_strict_wins": 1306,
+    "formal_games_planned": 1536,
+    "formal_panel_continues": true,
+    "cash_acceptance_gate": false,
+    "opponents": [
+      "soil_v219g",
+      "moon_v215",
+      "flexon_v5",
+      "market_smart_v8",
+      "nagatakengo_v70",
+      "aurax_reactive_v1",
+      "thomas_955_v2",
+      "shop0909",
+      "aurax_shop_v2",
+      "seven_turn",
+      "ahmed_v27",
+      "submission_56149565"
+    ],
+    "by_opponent": {
+      "soil_v219g": {
+        "completed": 78,
+        "wins": 51
+      },
+      "moon_v215": {
+        "completed": 78,
+        "wins": 54
+      },
+      "flexon_v5": {
+        "completed": 77,
+        "wins": 49
+      },
+      "market_smart_v8": {
+        "completed": 76,
+        "wins": 48
+      },
+      "nagatakengo_v70": {
+        "completed": 76,
+        "wins": 76
+      },
+      "aurax_reactive_v1": {
+        "completed": 76,
+        "wins": 53
+      },
+      "thomas_955_v2": {
+        "completed": 76,
+        "wins": 51
+      },
+      "shop0909": {
+        "completed": 76,
+        "wins": 48
+      },
+      "aurax_shop_v2": {
+        "completed": 76,
+        "wins": 48
+      },
+      "seven_turn": {
+        "completed": 76,
+        "wins": 48
+      },
+      "ahmed_v27": {
+        "completed": 76,
+        "wins": 51
+      },
+      "submission_56149565": {
+        "completed": 76,
+        "wins": 70
+      }
+    }
+  },
+  "prefixes": [
+    {
+      "case": "market_smart_v8_568422814_seat0",
+      "first_divergence": null,
+      "matched_candidate_prefix": 719,
+      "candidate_calls": 719,
+      "parent_exact": 719,
+      "seconds": 10.022809689000042,
+      "new_games": 0,
+      "scope": "Root entry saved observations. Candidate stops at FIRST divergence; no historical suffix passed thereafter."
+    },
+    {
+      "case": "moon_v215_31485687_seat0",
+      "first_divergence": 384,
+      "matched_candidate_prefix": 384,
+      "candidate_calls": 385,
+      "parent_exact": 719,
+      "seconds": 8.25958325900001,
+      "new_games": 0,
+      "scope": "Root entry saved observations. Candidate stops at FIRST divergence; no historical suffix passed thereafter."
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "first_divergence": 480,
+      "matched_candidate_prefix": 480,
+      "candidate_calls": 481,
+      "parent_exact": 719,
+      "seconds": 8.594748641000024,
+      "new_games": 0,
+      "scope": "Root entry saved observations. Candidate stops at FIRST divergence; no historical suffix passed thereafter."
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "first_divergence": 384,
+      "matched_candidate_prefix": 384,
+      "candidate_calls": 385,
+      "parent_exact": 719,
+      "seconds": 7.005868940000028,
+      "new_games": 0,
+      "scope": "Root entry saved observations. Candidate stops at FIRST divergence; no historical suffix passed thereafter."
+    }
+  ],
+  "bounded_cash_diagnostics": [
+    {
+      "case": "market_smart_v8_568422814_seat0",
+      "scenario": "observed_market_idle_rival",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 0.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 0.0,
+      "parent_endpoint": 55733.0,
+      "candidate_endpoint": 55733.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "market_smart_v8_568422814_seat0",
+      "scenario": "supply_input_pressure",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 0.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 0.0,
+      "parent_endpoint": 54169.0,
+      "candidate_endpoint": 54169.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "moon_v215_31485687_seat0",
+      "scenario": "observed_market_idle_rival",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": -872.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": -872.0,
+      "parent_endpoint": 23874.0,
+      "candidate_endpoint": 23002.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "moon_v215_31485687_seat0",
+      "scenario": "supply_input_pressure",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": -66.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": -66.0,
+      "parent_endpoint": 22356.0,
+      "candidate_endpoint": 22290.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "expensive_fertilizer",
+      "transitions_per_variant": 48,
+      "candidate_own_cash_minus_parent": 0.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 0.0,
+      "parent_endpoint": 119386.0,
+      "candidate_endpoint": 119386.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "no_finance",
+      "transitions_per_variant": 48,
+      "candidate_own_cash_minus_parent": 200,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 200.0,
+      "parent_endpoint": 1771,
+      "candidate_endpoint": 1971,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "observed_market_idle_rival",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 1095.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 1095.0,
+      "parent_endpoint": 59853.0,
+      "candidate_endpoint": 60948.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "supply_input_pressure",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 978.0,
+      "synthetic_rival_cash_difference": -3.0,
+      "relative_cash_margin_difference": 981.0,
+      "parent_endpoint": 58913.0,
+      "candidate_endpoint": 59891.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "scenario": "observed_market_idle_rival",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 495.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 495.0,
+      "parent_endpoint": 40287.0,
+      "candidate_endpoint": 40782.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "scenario": "supply_input_pressure",
+      "transitions_per_variant": 72,
+      "candidate_own_cash_minus_parent": 1348.0,
+      "synthetic_rival_cash_difference": 0.0,
+      "relative_cash_margin_difference": 1348.0,
+      "parent_endpoint": 40140.0,
+      "candidate_endpoint": 41488.0,
+      "scope": "Conditional synthetic counterpart, NOT actual opponent/new win/recovered historical cash"
+    }
+  ],
+  "root_entry_test": {
+    "scope": "Entry and matching-build checks; zero games; 48-step saved prefixes before divergence, and synthetic seat relabeling only",
+    "native_sha256": "7d7fd9540328b4d87df7b9970c03d63837831713efd781b86359a33de76836f5",
+    "build_inputs_checked": 50,
+    "prefix_and_relabel_calls": 384,
+    "step_zero_resets": 8,
+    "negative_checks": 3,
+    "cases": [
+      {
+        "case": "market_smart_v8_568422814_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "moon_v215_31485687_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "submission_56149565_1827852203_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "submission_56149565_805057947_seat0",
+        "prefix_and_relabel_calls": 96
+      }
+    ],
+    "seconds": 2.8733502189998035,
+    "peak_rss_kib": 247484,
+    "max_call_seconds": 0.10173494599985133,
+    "all_passed": true
+  },
+  "source_frozen_before_true_matches": true,
+  "known_negative": "Moon bounded cash -872/-66; one own-parent full-game margin -2 vs control; protection of both historical narrow wins not established",
+  "authoritative_cash_breakdown": "logs/reconciled_ledgers; original bounded_v3 flow maps omitted BUY_LAND in four R2-narrow trajectories and are preserved unchanged"
+}

@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-09-13T19:25:33.520335+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/ablation.so",
+    "--name",
+    "ablation",
+    "--exact"
+  ],
+  "cwd": "/",
+  "memory_current_start": "532185088",
+  "returncode": 0,
+  "wall_seconds": 22.515299797058105,
+  "ended_utc": "2026-09-13T19:25:56.035639+00:00",
+  "memory_current_end": "533307392"
+}

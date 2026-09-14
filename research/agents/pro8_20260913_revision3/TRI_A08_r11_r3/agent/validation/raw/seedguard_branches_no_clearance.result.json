@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-13T19:38:54.704907+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--no-clearance"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564961280",
+  "returncode": 0,
+  "wall_seconds": 38.438761711120605,
+  "ended_utc": "2026-09-13T19:39:33.143747+00:00",
+  "memory_current_end": "565563392"
+}

@@ -1,0 +1,74 @@
+{
+  "started_utc": "2026-09-13T19:29:06.300314+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534548480",
+  "returncode": 0,
+  "wall_seconds": 29.534547805786133,
+  "ended_utc": "2026-09-13T19:29:35.834886+00:00",
+  "memory_current_end": "535642112"
+}
+{
+  "started_utc": "2026-09-13T19:29:36.421294+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/full_checks_gcc"
+  ],
+  "cwd": "/",
+  "memory_current_start": "535236608",
+  "returncode": 0,
+  "wall_seconds": 17.787011861801147,
+  "ended_utc": "2026-09-13T19:29:54.208309+00:00",
+  "memory_current_end": "541454336"
+}
+{
+  "started_utc": "2026-09-13T19:29:54.748365+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--name",
+    "candidate_final"
+  ],
+  "cwd": "/",
+  "memory_current_start": "540798976",
+  "returncode": 0,
+  "wall_seconds": 22.52834463119507,
+  "ended_utc": "2026-09-13T19:30:17.276711+00:00",
+  "memory_current_end": "541786112"
+}
+{
+  "started_utc": "2026-09-13T19:30:17.835659+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--cxx",
+    "clang++",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/full_checks_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "541118464",
+  "returncode": 0,
+  "wall_seconds": 12.002874612808228,
+  "ended_utc": "2026-09-13T19:30:29.838535+00:00",
+  "memory_current_end": "546856960"
+}

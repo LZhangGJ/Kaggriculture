@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-09-13T19:26:18.017535+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out",
+    "/mnt/data/r3_work/logs/clang_delivery.json"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534069248",
+  "returncode": 0,
+  "wall_seconds": 0.9498860836029053,
+  "ended_utc": "2026-09-13T19:26:18.967422+00:00",
+  "memory_current_end": "535023616"
+}

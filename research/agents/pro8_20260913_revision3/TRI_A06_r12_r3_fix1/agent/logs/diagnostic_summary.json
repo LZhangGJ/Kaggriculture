@@ -1,0 +1,26 @@
+[
+  {
+    "case": "market_smart_v8_568422814_seat0",
+    "exact": 719,
+    "seconds": 5.441508258999988,
+    "scope": "Unchanged r3 entry replay; alternative quantity outcomes are conditional current-day projections, not counterfactual real futures."
+  },
+  {
+    "case": "moon_v215_31485687_seat0",
+    "exact": 719,
+    "seconds": 7.552970355000014,
+    "scope": "Unchanged r3 entry replay; alternative quantity outcomes are conditional current-day projections, not counterfactual real futures."
+  },
+  {
+    "case": "submission_56149565_1827852203_seat0",
+    "exact": 719,
+    "seconds": 7.9648661169999855,
+    "scope": "Unchanged r3 entry replay; alternative quantity outcomes are conditional current-day projections, not counterfactual real futures."
+  },
+  {
+    "case": "submission_56149565_805057947_seat0",
+    "exact": 719,
+    "seconds": 6.670259907999991,
+    "scope": "Unchanged r3 entry replay; alternative quantity outcomes are conditional current-day projections, not counterfactual real futures."
+  }
+]

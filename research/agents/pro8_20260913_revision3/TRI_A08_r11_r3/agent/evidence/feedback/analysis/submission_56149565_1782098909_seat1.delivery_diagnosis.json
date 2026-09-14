@@ -1,0 +1,42 @@
+{
+  "case": "submission_56149565_1782098909_seat1",
+  "scope": "Exact parent native telemetry paired with official saved loss events; no counterfactual validation",
+  "days": [
+    {
+      "day": 15,
+      "first_observed_carried_above_100": {
+        "step": 380,
+        "hour": 20,
+        "shed_units": 0,
+        "carried_units": 103
+      },
+      "midroute_checks": 19,
+      "midroute_insertions": 0,
+      "midroute_quantity": 0
+    },
+    {
+      "day": 25,
+      "first_observed_carried_above_100": {
+        "step": 622,
+        "hour": 22,
+        "shed_units": 0,
+        "carried_units": 103
+      },
+      "midroute_checks": 19,
+      "midroute_insertions": 0,
+      "midroute_quantity": 0
+    },
+    {
+      "day": 28,
+      "first_observed_carried_above_100": {
+        "step": 692,
+        "hour": 20,
+        "shed_units": 0,
+        "carried_units": 106
+      },
+      "midroute_checks": 20,
+      "midroute_insertions": 0,
+      "midroute_quantity": 0
+    }
+  ]
+}

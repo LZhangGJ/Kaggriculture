@@ -1,0 +1,346 @@
+aurax_reactive_v1_1801029924_seat0 feasible_options 11 steps 8
+day 19 options 5
+[
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 461,
+  "hour": 5,
+  "forecast": 125,
+  "owner": 5,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 46,
+  "depot": 44,
+  "transfer_to": 0,
+  "tasks": [
+   [
+    10,
+    -1,
+    1,
+    2
+   ]
+  ],
+  "insert_at": 7,
+  "old_length": 17,
+  "new_length": 18,
+  "recipient_new_length": 17,
+  "extra_actions": 3,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ },
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 461,
+  "hour": 5,
+  "forecast": 125,
+  "owner": 5,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 46,
+  "depot": 45,
+  "transfer_to": 0,
+  "tasks": [
+   [
+    10,
+    -1,
+    1,
+    2
+   ]
+  ],
+  "insert_at": 7,
+  "old_length": 17,
+  "new_length": 16,
+  "recipient_new_length": 17,
+  "extra_actions": 1,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ }
+]
+day 21 options 0
+[]
+day 27 options 2
+[
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 652,
+  "hour": 4,
+  "forecast": 113,
+  "owner": 5,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 46,
+  "depot": 45,
+  "transfer_to": 9,
+  "tasks": [
+   [
+    10,
+    -1,
+    1,
+    17
+   ]
+  ],
+  "insert_at": 4,
+  "old_length": 19,
+  "new_length": 19,
+  "recipient_new_length": 20,
+  "extra_actions": 1,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ },
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 655,
+  "hour": 7,
+  "forecast": 114,
+  "owner": 9,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   2,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 35,
+  "depot": 45,
+  "transfer_to": 3,
+  "tasks": [
+   [
+    9,
+    -1,
+    1,
+    8
+   ]
+  ],
+  "insert_at": 3,
+  "old_length": 16,
+  "new_length": 16,
+  "recipient_new_length": 11,
+  "extra_actions": 1,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ }
+]
+day 28 options 4
+[
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 677,
+  "hour": 5,
+  "forecast": 122,
+  "owner": 4,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 34,
+  "depot": 44,
+  "transfer_to": 8,
+  "tasks": [
+   [
+    9,
+    -1,
+    1,
+    14
+   ]
+  ],
+  "insert_at": 6,
+  "old_length": 19,
+  "new_length": 19,
+  "recipient_new_length": 19,
+  "extra_actions": 5,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ },
+ {
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "step": 678,
+  "hour": 6,
+  "forecast": 122,
+  "owner": 4,
+  "cargo": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   2,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 34,
+  "depot": 44,
+  "transfer_to": 8,
+  "tasks": [
+   [
+    9,
+    -1,
+    1,
+    14
+   ]
+  ],
+  "insert_at": 6,
+  "old_length": 18,
+  "new_length": 18,
+  "recipient_new_length": 18,
+  "extra_actions": 5,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ }
+]
+submission_56149565_1782098909_seat1 feasible_options 3 steps 3
+day 15 options 0
+[]
+day 25 options 3
+[
+ {
+  "case": "submission_56149565_1782098909_seat1",
+  "step": 613,
+  "hour": 13,
+  "forecast": 103,
+  "owner": 0,
+  "cargo": [
+   0,
+   0,
+   0,
+   2,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 32,
+  "depot": 44,
+  "transfer_to": 4,
+  "tasks": [
+   [
+    9,
+    -1,
+    1,
+    20
+   ],
+   [
+    10,
+    -1,
+    1,
+    20
+   ]
+  ],
+  "insert_at": 5,
+  "old_length": 10,
+  "new_length": 10,
+  "recipient_new_length": 11,
+  "extra_actions": 4,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ },
+ {
+  "case": "submission_56149565_1782098909_seat1",
+  "step": 614,
+  "hour": 14,
+  "forecast": 103,
+  "owner": 0,
+  "cargo": [
+   0,
+   0,
+   0,
+   2,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "from_pos": 33,
+  "depot": 44,
+  "transfer_to": 4,
+  "tasks": [
+   [
+    9,
+    -1,
+    1,
+    20
+   ],
+   [
+    10,
+    -1,
+    1,
+    20
+   ]
+  ],
+  "insert_at": 4,
+  "old_length": 9,
+  "new_length": 9,
+  "recipient_new_length": 10,
+  "extra_actions": 4,
+  "old_reject": "remaining-route-completion",
+  "task_counts_preserved": true
+ }
+]
+day 28 options 0
+[]
+market_smart_v8_290316560_seat0 feasible_options 36 steps 13
+submission_56149565_447907448_seat0 feasible_options 0 steps 0

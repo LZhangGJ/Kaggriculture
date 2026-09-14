@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-09-13T20:42:30.916649+00:00",
+  "cpu_max": "400000 100000",
+  "memory_max": "4294967296",
+  "memory_current": "539672576",
+  "memory_peak": "1125765120",
+  "original_start_utc": "2026-09-13T18:44:08Z",
+  "hard_deadline_utc": "2026-09-13T20:44:08Z",
+  "followup_first_probe_utc": "2026-09-13T20:32:06.406639420Z",
+  "note": "Original deadline not reset. Serial compilation and focused tests; no full suite rerun."
+}

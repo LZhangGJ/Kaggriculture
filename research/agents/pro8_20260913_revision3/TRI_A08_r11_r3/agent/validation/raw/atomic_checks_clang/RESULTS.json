@@ -1,0 +1,152 @@
+{
+  "native_sha256": "f1bba1154a0e8257072936e3bc81d9a53a1cd9e1afac49af10a968208cec2be3",
+  "build_flags": [
+    "-DA08_DELIVERY_HANDOFF=1",
+    "-DA08_ANIMAL_COLLECTION_LABOR=1",
+    "-DA08_SALE_FLOOR_DP=1",
+    "-DA08_SALE_SCHEDULE_DP=1",
+    "-DA08_PAID_CONTINUATION=1",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=x86-64",
+    "-ffp-contract=off",
+    "-DR2_STARTUP_SUPPLY_MODE=2",
+    "-DR2_LOCAL_SALE_TIMING=1",
+    "-DR2_FINITE_FERTILIZER=1",
+    "-DR2_CROP_CLOCK_MODE=1",
+    "-DR2_OBSERVE_PUBLIC_TRADES=1",
+    "-DR2_MARKET_INTEGRAL=1",
+    "-DR2_SALE_CLOCK_MODE=2",
+    "-DA08_COMPLETE_CROP_STOPS=1",
+    "-DA08_LAND_DP_MODE=2",
+    "-DA08_REALIZATION_MODE=0",
+    "-DA08_CROP_PORTFOLIO_MODE=1",
+    "-DA08_CASH_LEDGER=0",
+    "-DA08_PREFIX_DAYS=5",
+    "-fPIC",
+    "-shared",
+    "-Wl,-Bsymbolic"
+  ],
+  "compiler": "clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)",
+  "new_games": 0,
+  "checks": [
+    {
+      "name": "native_choice_gate",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/candidate/tests/native_choice_gate.py",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--enabled",
+        "1",
+        "--out",
+        "/mnt/data/r3_work/logs/atomic_checks_clang/native_choice_gate.json"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.0194888830001219
+    },
+    {
+      "name": "delivery_official",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out",
+        "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_official.json"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.1721286689999033
+    },
+    {
+      "name": "compile_O3",
+      "command": [
+        "clang++",
+        "-DA08_DELIVERY_HANDOFF=1",
+        "-DA08_ANIMAL_COLLECTION_LABOR=1",
+        "-DA08_SALE_FLOOR_DP=1",
+        "-DA08_SALE_SCHEDULE_DP=1",
+        "-DA08_PAID_CONTINUATION=1",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "-DR2_STARTUP_SUPPLY_MODE=2",
+        "-DR2_LOCAL_SALE_TIMING=1",
+        "-DR2_FINITE_FERTILIZER=1",
+        "-DR2_CROP_CLOCK_MODE=1",
+        "-DR2_OBSERVE_PUBLIC_TRADES=1",
+        "-DR2_MARKET_INTEGRAL=1",
+        "-DR2_SALE_CLOCK_MODE=2",
+        "-DA08_COMPLETE_CROP_STOPS=1",
+        "-DA08_LAND_DP_MODE=2",
+        "-DA08_REALIZATION_MODE=0",
+        "-DA08_CROP_PORTFOLIO_MODE=1",
+        "-DA08_CASH_LEDGER=0",
+        "-DA08_PREFIX_DAYS=5",
+        "/mnt/data/r3_work/candidate/tests/delivery_unit.cpp",
+        "-o",
+        "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_unit_O3"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.574972846000037
+    },
+    {
+      "name": "unit_O3",
+      "command": [
+        "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_unit_O3"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.03197266799998033
+    },
+    {
+      "name": "compile_sanitize",
+      "command": [
+        "clang++",
+        "-DA08_DELIVERY_HANDOFF=1",
+        "-DA08_ANIMAL_COLLECTION_LABOR=1",
+        "-DA08_SALE_FLOOR_DP=1",
+        "-DA08_SALE_SCHEDULE_DP=1",
+        "-DA08_PAID_CONTINUATION=1",
+        "-std=c++20",
+        "-march=x86-64",
+        "-ffp-contract=off",
+        "-DR2_STARTUP_SUPPLY_MODE=2",
+        "-DR2_LOCAL_SALE_TIMING=1",
+        "-DR2_FINITE_FERTILIZER=1",
+        "-DR2_CROP_CLOCK_MODE=1",
+        "-DR2_OBSERVE_PUBLIC_TRADES=1",
+        "-DR2_MARKET_INTEGRAL=1",
+        "-DR2_SALE_CLOCK_MODE=2",
+        "-DA08_COMPLETE_CROP_STOPS=1",
+        "-DA08_LAND_DP_MODE=2",
+        "-DA08_REALIZATION_MODE=0",
+        "-DA08_CROP_PORTFOLIO_MODE=1",
+        "-DA08_CASH_LEDGER=0",
+        "-DA08_PREFIX_DAYS=5",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/mnt/data/r3_work/candidate/tests/delivery_unit.cpp",
+        "-o",
+        "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_unit_ASan_UBSan"
+      ],
+      "returncode": 0,
+      "wall_seconds": 5.930764476000149
+    },
+    {
+      "name": "unit_sanitize",
+      "command": [
+        "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_unit_ASan_UBSan"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.2646214440001131
+    }
+  ],
+  "status": "PASS"
+}

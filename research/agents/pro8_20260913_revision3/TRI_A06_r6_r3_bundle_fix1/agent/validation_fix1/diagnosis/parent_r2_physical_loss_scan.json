@@ -1,0 +1,56 @@
+{
+  "unfunded_services": [],
+  "disappeared_on_midnight": [
+    {
+      "step": 527,
+      "pos": [
+        9,
+        0
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "TOMATO",
+        "planted_day": 10,
+        "watered_today": false,
+        "consecutive_unwatered": 0,
+        "yield_units": 0,
+        "max_lifespan_step": 528,
+        "fertilized_until_day": 22
+      }
+    },
+    {
+      "step": 599,
+      "pos": [
+        0,
+        6
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "WHEAT",
+        "planted_day": 20,
+        "watered_today": true,
+        "consecutive_unwatered": 0,
+        "yield_units": 6,
+        "max_lifespan_step": 600,
+        "fertilized_until_day": 24
+      }
+    },
+    {
+      "step": 599,
+      "pos": [
+        0,
+        8
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "WHEAT",
+        "planted_day": 20,
+        "watered_today": true,
+        "consecutive_unwatered": 0,
+        "yield_units": 6,
+        "max_lifespan_step": 600,
+        "fertilized_until_day": 24
+      }
+    }
+  ]
+}

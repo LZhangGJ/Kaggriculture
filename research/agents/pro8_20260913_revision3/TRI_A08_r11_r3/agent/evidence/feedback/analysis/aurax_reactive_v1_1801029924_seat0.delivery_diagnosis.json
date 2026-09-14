@@ -1,0 +1,54 @@
+{
+  "case": "aurax_reactive_v1_1801029924_seat0",
+  "scope": "Exact parent native telemetry paired with official saved loss events; no counterfactual validation",
+  "days": [
+    {
+      "day": 19,
+      "first_observed_carried_above_100": {
+        "step": 474,
+        "hour": 18,
+        "shed_units": 0,
+        "carried_units": 112
+      },
+      "midroute_checks": 19,
+      "midroute_insertions": 1,
+      "midroute_quantity": 1
+    },
+    {
+      "day": 21,
+      "first_observed_carried_above_100": {
+        "step": 524,
+        "hour": 20,
+        "shed_units": 2,
+        "carried_units": 101
+      },
+      "midroute_checks": 19,
+      "midroute_insertions": 0,
+      "midroute_quantity": 0
+    },
+    {
+      "day": 27,
+      "first_observed_carried_above_100": {
+        "step": 668,
+        "hour": 20,
+        "shed_units": 0,
+        "carried_units": 102
+      },
+      "midroute_checks": 20,
+      "midroute_insertions": 1,
+      "midroute_quantity": 2
+    },
+    {
+      "day": 28,
+      "first_observed_carried_above_100": {
+        "step": 693,
+        "hour": 21,
+        "shed_units": 0,
+        "carried_units": 112
+      },
+      "midroute_checks": 20,
+      "midroute_insertions": 0,
+      "midroute_quantity": 0
+    }
+  ]
+}

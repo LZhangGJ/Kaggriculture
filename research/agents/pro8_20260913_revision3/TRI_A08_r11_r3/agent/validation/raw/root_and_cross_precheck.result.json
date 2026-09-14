@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-13T19:43:56.050725+00:00",
+  "timeout_seconds": 100,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/final_prechecks.py",
+    "entry"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564600832",
+  "returncode": 0,
+  "wall_seconds": 25.46433734893799,
+  "ended_utc": "2026-09-13T19:44:21.515065+00:00",
+  "memory_current_end": "567377920"
+}

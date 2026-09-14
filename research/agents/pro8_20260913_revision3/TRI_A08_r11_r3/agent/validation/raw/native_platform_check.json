@@ -1,0 +1,54 @@
+{
+  "parent": {
+    "version_requirements": [
+      "CXXABI_1.3",
+      "CXXABI_1.3.9",
+      "GCC_3.0",
+      "GCC_3.4",
+      "GLIBCXX_3.4",
+      "GLIBCXX_3.4.14",
+      "GLIBCXX_3.4.18",
+      "GLIBCXX_3.4.20",
+      "GLIBCXX_3.4.21",
+      "GLIBCXX_3.4.26",
+      "GLIBCXX_3.4.29",
+      "GLIBCXX_3.4.31",
+      "GLIBCXX_3.4.9",
+      "GLIBC_2.14",
+      "GLIBC_2.2.5",
+      "GLIBC_2.29",
+      "GLIBC_2.3",
+      "GLIBC_2.32"
+    ],
+    "file": "/mnt/data/r3_work/parent/policy/tri_a08_r11_r2_fix1.so: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=b0a85cd57f0204c7359c016f2a14373b4ac319eb, not stripped",
+    "native_sha256": "91828b8a9f6882030ba5247a8e40f15d788a9219fe64667502ebd6a5d211beed"
+  },
+  "candidate": {
+    "version_requirements": [
+      "CXXABI_1.3",
+      "CXXABI_1.3.7",
+      "CXXABI_1.3.9",
+      "GCC_3.0",
+      "GCC_3.4",
+      "GLIBCXX_3.4",
+      "GLIBCXX_3.4.14",
+      "GLIBCXX_3.4.18",
+      "GLIBCXX_3.4.20",
+      "GLIBCXX_3.4.21",
+      "GLIBCXX_3.4.26",
+      "GLIBCXX_3.4.29",
+      "GLIBCXX_3.4.31",
+      "GLIBCXX_3.4.9",
+      "GLIBC_2.14",
+      "GLIBC_2.2.5",
+      "GLIBC_2.29",
+      "GLIBC_2.3",
+      "GLIBC_2.32"
+    ],
+    "file": "/mnt/data/r3_work/candidate/policy/tri_a08_r11_r3.so: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=8246f28b3225f8693c4d4eabdec74f1c2fa02e1e, not stripped",
+    "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64"
+  },
+  "new_runtime_version_requirements": [
+    "CXXABI_1.3.7"
+  ]
+}

@@ -1,0 +1,4 @@
+{"case": "aurax_reactive_v1_1801029924_seat0", "calls": 719, "exact_parent_actions": 719, "seconds": 5.462763125999999, "peak_rss_kib": 170868, "new_games": 0}
+{"case": "submission_56149565_1782098909_seat1", "calls": 719, "exact_parent_actions": 719, "seconds": 5.939211061999998, "peak_rss_kib": 258420, "new_games": 0}
+{"case": "market_smart_v8_290316560_seat0", "calls": 719, "exact_parent_actions": 719, "seconds": 5.861626947000019, "peak_rss_kib": 259068, "new_games": 0}
+{"case": "submission_56149565_447907448_seat0", "calls": 719, "exact_parent_actions": 719, "seconds": 4.800947508000007, "peak_rss_kib": 259324, "new_games": 0}

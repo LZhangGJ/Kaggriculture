@@ -1,0 +1,78 @@
+{
+  "referee/cpu_runtime.py": {
+    "bytes": 4135,
+    "sha256": "9d601268672ceb713918ad04db1804f05fe43dbd70f5e03a93ce6109f7a54726"
+  },
+  "referee/official/kaggriculture.py": {
+    "bytes": 40356,
+    "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "referee/official/kaggriculture.json": {
+    "bytes": 6002,
+    "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "referee/official/seed_utils.py": {
+    "bytes": 1585,
+    "sha256": "b55e1b128387ceb4f4345a3ef875e74a4dae6a025f28fa4328ba23954491b698"
+  },
+  "probe_observations.py": {
+    "bytes": 1961,
+    "sha256": "59957f972de37a2a472b8a07eaaeba1b7f6dcdff1c8ed9a0948cf5abcf5e115c"
+  },
+  "own_traces/parent_r2/market_smart_v8_568422814_seat0.json.gz": {
+    "bytes": 674245,
+    "sha256": "8d165022585b4c930cb8abdb0c7e9a159f06d076cc76f9801c9b1a2bc1e132eb"
+  },
+  "own_traces/candidate_r3/market_smart_v8_568422814_seat0.json.gz": {
+    "bytes": 674247,
+    "sha256": "0bd6c08091e8cd3c3bea5fd05d2566d430f5ed92e0edca3e505c643ec1d70350"
+  },
+  "own_traces/parent_r2/submission_56149565_1827852203_seat0.json.gz": {
+    "bytes": 670979,
+    "sha256": "81e9319151a0c0230f55155f0beaef4dd93826649c64cc13fc0e6848179f938a"
+  },
+  "own_traces/candidate_r3/submission_56149565_1827852203_seat0.json.gz": {
+    "bytes": 674973,
+    "sha256": "d2ac3becf461f2b73990d8a7dcdaaebb5929c6f09dfeb3dc3a4a1c01f2742a35"
+  },
+  "own_traces/parent_r2/moon_v215_31485687_seat0.json.gz": {
+    "bytes": 703347,
+    "sha256": "e2626ea348f2231e913dddfb2a901bec096d51503a8dbbe057acfa5d8f772e59"
+  },
+  "own_traces/candidate_r3/moon_v215_31485687_seat0.json.gz": {
+    "bytes": 703924,
+    "sha256": "a6c6cdf057b1645a80f3b5dc1ee518f9e6eddc0d7c0e0e206cb1101a2536a415"
+  },
+  "own_traces/parent_r2/submission_56149565_805057947_seat0.json.gz": {
+    "bytes": 649016,
+    "sha256": "38daaab7dd5d455968c54c2b9d8ea2f31f27f1fbe6e73925b5eb9600b9f1852c"
+  },
+  "own_traces/candidate_r3/submission_56149565_805057947_seat0.json.gz": {
+    "bytes": 647487,
+    "sha256": "f97a759b0aa1c64ba9bc5fe10c71e663d5d22042d08b63ba27db8eba4546f4f4"
+  },
+  "CASES.json": {
+    "bytes": 4233,
+    "sha256": "1d157ac3c8d5c593860b5bdfb1cf7b70a1560fc8878b77766df48e6f7c81f0c6"
+  },
+  "DELIVERY_IDENTITY.json": {
+    "bytes": 301,
+    "sha256": "28c8415d6093cfd95bc0a4d16d437c53638a48ed65fdbdc1e9c30746c792902a"
+  },
+  "PARENT_FULL64_ROWS.json": {
+    "bytes": 405749,
+    "sha256": "0710122353aa3e13e9d516da86a348dc5eefc886ea6056e486c008a297b3b0b0"
+  },
+  "PARENT_FULL64_METRICS.json": {
+    "bytes": 30660,
+    "sha256": "fe5dee320f81d96e20fa1a142d38dcaec92d46a103c60058b3bda4522a7540cf"
+  },
+  "DIAGNOSTIC_NOTES.md": {
+    "bytes": 1348,
+    "sha256": "cb12186c468e61a99bbe304a7476b93875c5bc52805cc7bf52434630ec17b23e"
+  },
+  "README.md": {
+    "bytes": 292,
+    "sha256": "075c02cf5d20db4472ec4b8ef9c658d0555e833fa9bebee239e158b6abb6b611"
+  }
+}

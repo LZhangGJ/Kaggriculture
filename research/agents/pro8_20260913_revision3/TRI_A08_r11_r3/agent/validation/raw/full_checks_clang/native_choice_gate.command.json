@@ -1,0 +1,10 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/r3_work/candidate/tests/native_choice_gate.py",
+  "--library",
+  "/mnt/data/r3_work/clang.so",
+  "--enabled",
+  "1",
+  "--out",
+  "/mnt/data/r3_work/logs/full_checks_clang/native_choice_gate.json"
+]

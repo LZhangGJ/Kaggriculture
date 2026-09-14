@@ -1,0 +1,973 @@
+[
+  {
+    "time_file": "ablation_build.time",
+    "peak_rss_kib": 597536,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:25:03.247456+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py",
+        "--delivery-handoff",
+        "0",
+        "--out",
+        "/mnt/data/r3_work/ablation.so"
+      ],
+      "cwd": "/",
+      "memory_current_start": "530984960",
+      "returncode": 0,
+      "wall_seconds": 29.706005573272705,
+      "ended_utc": "2026-09-13T19:25:32.953464+00:00",
+      "memory_current_end": "533008384"
+    }
+  },
+  {
+    "time_file": "ablation_probe.time",
+    "peak_rss_kib": 250568,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:25:33.520335+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--library",
+        "/mnt/data/r3_work/ablation.so",
+        "--name",
+        "ablation",
+        "--exact"
+      ],
+      "cwd": "/",
+      "memory_current_start": "532185088",
+      "returncode": 0,
+      "wall_seconds": 22.515299797058105,
+      "ended_utc": "2026-09-13T19:25:56.035639+00:00",
+      "memory_current_end": "533307392"
+    }
+  },
+  {
+    "time_file": "atomic_branches.time",
+    "peak_rss_kib": 206644,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:45:49.272710+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "594849792",
+      "returncode": 0,
+      "wall_seconds": 39.156837940216064,
+      "ended_utc": "2026-09-13T19:46:28.429552+00:00",
+      "memory_current_end": "633970688"
+    }
+  },
+  {
+    "time_file": "atomic_branches_no_clearance.time",
+    "peak_rss_kib": 206788,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:46:29.033593+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--no-clearance"
+      ],
+      "cwd": "/",
+      "memory_current_start": "633053184",
+      "returncode": 0,
+      "wall_seconds": 38.789844274520874,
+      "ended_utc": "2026-09-13T19:47:07.823439+00:00",
+      "memory_current_end": "633831424"
+    }
+  },
+  {
+    "time_file": "atomic_branches_stress.time",
+    "peak_rss_kib": 206808,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:47:08.399703+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--supply",
+        "3"
+      ],
+      "cwd": "/",
+      "memory_current_start": "633348096",
+      "returncode": 0,
+      "wall_seconds": 39.98458933830261,
+      "ended_utc": "2026-09-13T19:47:48.384296+00:00",
+      "memory_current_end": "978644992"
+    }
+  },
+  {
+    "time_file": "atomic_build_negative.time",
+    "peak_rss_kib": 603144,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:44:52.330501+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/final_prechecks.py",
+        "fault"
+      ],
+      "cwd": "/",
+      "memory_current_start": "569163776",
+      "returncode": 0,
+      "wall_seconds": 29.850500106811523,
+      "ended_utc": "2026-09-13T19:45:22.181002+00:00",
+      "memory_current_end": "1132662784"
+    }
+  },
+  {
+    "time_file": "atomic_checks_clang.time",
+    "peak_rss_kib": 231500,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:45:36.019384+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--cxx",
+        "clang++",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/atomic_checks_clang"
+      ],
+      "cwd": "/",
+      "memory_current_start": "589828096",
+      "returncode": 0,
+      "wall_seconds": 12.620877265930176,
+      "ended_utc": "2026-09-13T19:45:48.640263+00:00",
+      "memory_current_end": "595496960"
+    }
+  },
+  {
+    "time_file": "atomic_checks_gcc.time",
+    "peak_rss_kib": 480216,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:45:16.522879+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/atomic_checks_gcc"
+      ],
+      "cwd": "/",
+      "memory_current_start": "1488023552",
+      "returncode": 0,
+      "wall_seconds": 18.897350788116455,
+      "ended_utc": "2026-09-13T19:45:35.420231+00:00",
+      "memory_current_end": "590405632"
+    }
+  },
+  {
+    "time_file": "candidate_build.time",
+    "peak_rss_kib": 598940,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:15:11.332605+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "452235264",
+      "returncode": 0,
+      "wall_seconds": 29.921878814697266,
+      "ended_utc": "2026-09-13T19:15:41.254485+00:00",
+      "memory_current_end": "454230016"
+    }
+  },
+  {
+    "time_file": "candidate_build2.time",
+    "peak_rss_kib": 599592,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:16:19.509141+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "454135808",
+      "returncode": 0,
+      "wall_seconds": 30.7092387676239,
+      "ended_utc": "2026-09-13T19:16:50.218383+00:00",
+      "memory_current_end": "454750208"
+    }
+  },
+  {
+    "time_file": "candidate_build3.time",
+    "peak_rss_kib": 602304,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:18:25.293609+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "453447680",
+      "returncode": 0,
+      "wall_seconds": 30.368521451950073,
+      "ended_utc": "2026-09-13T19:18:55.662133+00:00",
+      "memory_current_end": "454463488"
+    }
+  },
+  {
+    "time_file": "candidate_final_probe.time",
+    "peak_rss_kib": 250516,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:29:54.748365+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--name",
+        "candidate_final"
+      ],
+      "cwd": "/",
+      "memory_current_start": "540798976",
+      "returncode": 0,
+      "wall_seconds": 22.52834463119507,
+      "ended_utc": "2026-09-13T19:30:17.276711+00:00",
+      "memory_current_end": "541786112"
+    }
+  },
+  {
+    "time_file": "candidate_full_checks.time",
+    "peak_rss_kib": 480488,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:29:36.421294+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/full_checks_gcc"
+      ],
+      "cwd": "/",
+      "memory_current_start": "535236608",
+      "returncode": 0,
+      "wall_seconds": 17.787011861801147,
+      "ended_utc": "2026-09-13T19:29:54.208309+00:00",
+      "memory_current_end": "541454336"
+    }
+  },
+  {
+    "time_file": "candidate_probe_v1.time",
+    "peak_rss_kib": null,
+    "complete_outer_result": false
+  },
+  {
+    "time_file": "clang_build.time",
+    "peak_rss_kib": 261064,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:25:56.658884+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py",
+        "--cxx",
+        "clang++",
+        "--out",
+        "/mnt/data/r3_work/clang.so"
+      ],
+      "cwd": "/",
+      "memory_current_start": "532189184",
+      "returncode": 0,
+      "wall_seconds": 20.74418330192566,
+      "ended_utc": "2026-09-13T19:26:17.403070+00:00",
+      "memory_current_end": "534728704"
+    }
+  },
+  {
+    "time_file": "clang_delivery.time",
+    "peak_rss_kib": 123252,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:26:18.017535+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out",
+        "/mnt/data/r3_work/logs/clang_delivery.json"
+      ],
+      "cwd": "/",
+      "memory_current_start": "534069248",
+      "returncode": 0,
+      "wall_seconds": 0.9498860836029053,
+      "ended_utc": "2026-09-13T19:26:18.967422+00:00",
+      "memory_current_end": "535023616"
+    }
+  },
+  {
+    "time_file": "clang_full_checks.time",
+    "peak_rss_kib": 231128,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:30:17.835659+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--cxx",
+        "clang++",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/full_checks_clang"
+      ],
+      "cwd": "/",
+      "memory_current_start": "541118464",
+      "returncode": 0,
+      "wall_seconds": 12.002874612808228,
+      "ended_utc": "2026-09-13T19:30:29.838535+00:00",
+      "memory_current_end": "546856960"
+    }
+  },
+  {
+    "time_file": "clang_probe.time",
+    "peak_rss_kib": 250492,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:26:19.559129+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--name",
+        "clang"
+      ],
+      "cwd": "/",
+      "memory_current_start": "534405120",
+      "returncode": 0,
+      "wall_seconds": 23.36461639404297,
+      "ended_utc": "2026-09-13T19:26:42.923746+00:00",
+      "memory_current_end": "535396352"
+    }
+  },
+  {
+    "time_file": "clean_build_precheck.time",
+    "peak_rss_kib": 603112,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:44:22.106368+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/final_prechecks.py",
+        "clean"
+      ],
+      "cwd": "/",
+      "memory_current_start": "567025664",
+      "returncode": 0,
+      "wall_seconds": 29.63832116127014,
+      "ended_utc": "2026-09-13T19:44:51.744691+00:00",
+      "memory_current_end": "569864192"
+    }
+  },
+  {
+    "time_file": "delivery_checks_v1.time",
+    "peak_rss_kib": 123048,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:20:55.317665+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out",
+        "/mnt/data/r3_work/logs/delivery_checks_v1.json"
+      ],
+      "cwd": "/",
+      "memory_current_start": "453869568",
+      "returncode": 0,
+      "wall_seconds": 1.0007672309875488,
+      "ended_utc": "2026-09-13T19:20:56.318433+00:00",
+      "memory_current_end": "454828032"
+    }
+  },
+  {
+    "time_file": "delivery_checks_v2.time",
+    "peak_rss_kib": 123220,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:27:24.278689+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out",
+        "/mnt/data/r3_work/logs/delivery_checks_v2.json"
+      ],
+      "cwd": "/",
+      "memory_current_start": "753541120",
+      "returncode": 0,
+      "wall_seconds": 0.9459855556488037,
+      "ended_utc": "2026-09-13T19:27:25.224676+00:00",
+      "memory_current_end": "754552832"
+    }
+  },
+  {
+    "time_file": "diagnostic_build.time",
+    "peak_rss_kib": 595320,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:04:43.139553+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/r3_work/diagnostic/build.py",
+        "--out",
+        "/mnt/data/r3_work/diagnostic.so"
+      ],
+      "cwd": "/",
+      "memory_current_start": "449617920",
+      "returncode": 0,
+      "wall_seconds": 30.318870544433594,
+      "ended_utc": "2026-09-13T19:05:13.458425+00:00",
+      "memory_current_end": "451399680"
+    }
+  },
+  {
+    "time_file": "diagnostic_traces.time",
+    "peak_rss_kib": 259324,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:05:30.404747+00:00",
+      "timeout_seconds": 150,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/r3_work/tests/diagnose_traces.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "450768896",
+      "returncode": 0,
+      "wall_seconds": 23.27078080177307,
+      "ended_utc": "2026-09-13T19:05:53.675530+00:00",
+      "memory_current_end": "452009984"
+    }
+  },
+  {
+    "time_file": "final_candidate_build.time",
+    "peak_rss_kib": 602380,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:29:06.300314+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "534548480",
+      "returncode": 0,
+      "wall_seconds": 29.534547805786133,
+      "ended_utc": "2026-09-13T19:29:35.834886+00:00",
+      "memory_current_end": "535642112"
+    }
+  },
+  {
+    "time_file": "handoff_options.time",
+    "peak_rss_kib": 131240,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:09:34.347112+00:00",
+      "timeout_seconds": 100,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/find_handoff.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "452481024",
+      "returncode": 0,
+      "wall_seconds": 0.9675838947296143,
+      "ended_utc": "2026-09-13T19:09:35.314699+00:00",
+      "memory_current_end": "453033984"
+    }
+  },
+  {
+    "time_file": "own_branches_no_clearance.time",
+    "peak_rss_kib": 206700,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:26:43.502795+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--no-clearance"
+      ],
+      "cwd": "/",
+      "memory_current_start": "534835200",
+      "returncode": 0,
+      "wall_seconds": 38.493722677230835,
+      "ended_utc": "2026-09-13T19:27:21.996520+00:00",
+      "memory_current_end": "535576576"
+    }
+  },
+  {
+    "time_file": "own_branches_stress.time",
+    "peak_rss_kib": 206720,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:27:22.601486+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--supply",
+        "3"
+      ],
+      "cwd": "/",
+      "memory_current_start": "534773760",
+      "returncode": 0,
+      "wall_seconds": 39.112733602523804,
+      "ended_utc": "2026-09-13T19:28:01.714221+00:00",
+      "memory_current_end": "535490560"
+    }
+  },
+  {
+    "time_file": "own_branches_v1.time",
+    "peak_rss_kib": 206880,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:22:43.193736+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "454029312",
+      "returncode": 0,
+      "wall_seconds": 38.54615521430969,
+      "ended_utc": "2026-09-13T19:23:21.739892+00:00",
+      "memory_current_end": "454742016"
+    }
+  },
+  {
+    "time_file": "parent_build.time",
+    "peak_rss_kib": null,
+    "complete_outer_result": false
+  },
+  {
+    "time_file": "parent_probe48.time",
+    "peak_rss_kib": 167632,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:04:00.058210+00:00",
+      "timeout_seconds": 60,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/r3_work/feedback/probe_observations.py",
+        "--agent",
+        "/mnt/data/r3_work/parent/main.py",
+        "--trace",
+        "/mnt/data/r3_work/feedback/own_traces/aurax_reactive_v1_1801029924_seat0.json.gz",
+        "--limit",
+        "48",
+        "--require-exact",
+        "--out",
+        "/mnt/data/r3_work/logs/parent_probe48.json"
+      ],
+      "cwd": "/",
+      "memory_current_start": "447328256",
+      "returncode": 0,
+      "wall_seconds": 0.9191429615020752,
+      "ended_utc": "2026-09-13T19:04:00.977354+00:00",
+      "memory_current_end": "447979520"
+    }
+  },
+  {
+    "time_file": "portable_branches.time",
+    "peak_rss_kib": 206712,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:47:19.425682+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/portable_branches"
+      ],
+      "cwd": "/",
+      "memory_current_start": "976179200",
+      "returncode": 0,
+      "wall_seconds": 40.07886505126953,
+      "ended_utc": "2026-09-13T19:47:59.504760+00:00",
+      "memory_current_end": "634327040"
+    }
+  },
+  {
+    "time_file": "portable_branches_negative.time",
+    "peak_rss_kib": 207148,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:48:00.055528+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/portable_branches_negative",
+        "--no-clearance"
+      ],
+      "cwd": "/",
+      "memory_current_start": "633643008",
+      "returncode": 0,
+      "wall_seconds": 38.9319965839386,
+      "ended_utc": "2026-09-13T19:48:38.987529+00:00",
+      "memory_current_end": "634806272"
+    }
+  },
+  {
+    "time_file": "portable_branches_stress.time",
+    "peak_rss_kib": 206696,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:48:39.587185+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "-B",
+        "/mnt/data/TRI_A08_r11_r3_release/tests/own_branch_checks.py",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/portable_branches_stress",
+        "--supply",
+        "3"
+      ],
+      "cwd": "/",
+      "memory_current_start": "633835520",
+      "returncode": 0,
+      "wall_seconds": 38.936922550201416,
+      "ended_utc": "2026-09-13T19:49:18.524112+00:00",
+      "memory_current_end": "634548224"
+    }
+  },
+  {
+    "time_file": "root_and_cross_precheck.time",
+    "peak_rss_kib": 167628,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:43:56.050725+00:00",
+      "timeout_seconds": 100,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/final_prechecks.py",
+        "entry"
+      ],
+      "cwd": "/",
+      "memory_current_start": "564600832",
+      "returncode": 0,
+      "wall_seconds": 25.46433734893799,
+      "ended_utc": "2026-09-13T19:44:21.515065+00:00",
+      "memory_current_end": "567377920"
+    }
+  },
+  {
+    "time_file": "seedguard_ablation_build.time",
+    "peak_rss_kib": 597828,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:36:24.928266+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py",
+        "--delivery-handoff",
+        "0",
+        "--out",
+        "/mnt/data/r3_work/ablation.so"
+      ],
+      "cwd": "/",
+      "memory_current_start": "559099904",
+      "returncode": 0,
+      "wall_seconds": 28.79902958869934,
+      "ended_utc": "2026-09-13T19:36:53.727298+00:00",
+      "memory_current_end": "559849472"
+    }
+  },
+  {
+    "time_file": "seedguard_ablation_probe.time",
+    "peak_rss_kib": 250500,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:36:54.311548+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--library",
+        "/mnt/data/r3_work/ablation.so",
+        "--name",
+        "seedguard_ablation",
+        "--exact"
+      ],
+      "cwd": "/",
+      "memory_current_start": "558796800",
+      "returncode": 0,
+      "wall_seconds": 22.440385341644287,
+      "ended_utc": "2026-09-13T19:37:16.751937+00:00",
+      "memory_current_end": "559681536"
+    }
+  },
+  {
+    "time_file": "seedguard_branches.time",
+    "peak_rss_kib": 206864,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:38:14.785459+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "564891648",
+      "returncode": 0,
+      "wall_seconds": 39.32101893424988,
+      "ended_utc": "2026-09-13T19:38:54.106481+00:00",
+      "memory_current_end": "565637120"
+    }
+  },
+  {
+    "time_file": "seedguard_branches_no_clearance.time",
+    "peak_rss_kib": 206796,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:38:54.704907+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--no-clearance"
+      ],
+      "cwd": "/",
+      "memory_current_start": "564961280",
+      "returncode": 0,
+      "wall_seconds": 38.438761711120605,
+      "ended_utc": "2026-09-13T19:39:33.143747+00:00",
+      "memory_current_end": "565563392"
+    }
+  },
+  {
+    "time_file": "seedguard_branches_stress.time",
+    "peak_rss_kib": 206608,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:39:33.703132+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/own_branch_checks.py",
+        "--supply",
+        "3"
+      ],
+      "cwd": "/",
+      "memory_current_start": "565035008",
+      "returncode": 0,
+      "wall_seconds": 38.33910942077637,
+      "ended_utc": "2026-09-13T19:40:12.042384+00:00",
+      "memory_current_end": "565977088"
+    }
+  },
+  {
+    "time_file": "seedguard_build.time",
+    "peak_rss_kib": 603124,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:35:14.130465+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py"
+      ],
+      "cwd": "/",
+      "memory_current_start": "552165376",
+      "returncode": 0,
+      "wall_seconds": 28.91504669189453,
+      "ended_utc": "2026-09-13T19:35:43.045514+00:00",
+      "memory_current_end": "553234432"
+    }
+  },
+  {
+    "time_file": "seedguard_checks.time",
+    "peak_rss_kib": 480224,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:35:43.601906+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/seedguard_checks_gcc"
+      ],
+      "cwd": "/",
+      "memory_current_start": "552751104",
+      "returncode": 0,
+      "wall_seconds": 17.78178572654724,
+      "ended_utc": "2026-09-13T19:36:01.383694+00:00",
+      "memory_current_end": "559558656"
+    }
+  },
+  {
+    "time_file": "seedguard_clang_build.time",
+    "peak_rss_kib": 261188,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:37:17.305143+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/build.py",
+        "--cxx",
+        "clang++",
+        "--out",
+        "/mnt/data/r3_work/clang.so"
+      ],
+      "cwd": "/",
+      "memory_current_start": "559341568",
+      "returncode": 0,
+      "wall_seconds": 20.6203396320343,
+      "ended_utc": "2026-09-13T19:37:37.925484+00:00",
+      "memory_current_end": "559828992"
+    }
+  },
+  {
+    "time_file": "seedguard_clang_checks.time",
+    "peak_rss_kib": 231504,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:37:38.487292+00:00",
+      "timeout_seconds": 240,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/candidate/tests/run_checks.py",
+        "--cxx",
+        "clang++",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--sanitize",
+        "--referee",
+        "/mnt/data/r3_work/feedback/referee",
+        "--out-dir",
+        "/mnt/data/r3_work/logs/seedguard_checks_clang"
+      ],
+      "cwd": "/",
+      "memory_current_start": "559276032",
+      "returncode": 0,
+      "wall_seconds": 12.155184030532837,
+      "ended_utc": "2026-09-13T19:37:50.642480+00:00",
+      "memory_current_end": "564740096"
+    }
+  },
+  {
+    "time_file": "seedguard_clang_probe.time",
+    "peak_rss_kib": 250572,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:37:51.204067+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--library",
+        "/mnt/data/r3_work/clang.so",
+        "--name",
+        "seedguard_clang"
+      ],
+      "cwd": "/",
+      "memory_current_start": "564277248",
+      "returncode": 0,
+      "wall_seconds": 23.01828145980835,
+      "ended_utc": "2026-09-13T19:38:14.222350+00:00",
+      "memory_current_end": "565473280"
+    }
+  },
+  {
+    "time_file": "seedguard_probe.time",
+    "peak_rss_kib": 250652,
+    "complete_outer_result": true,
+    "run": {
+      "started_utc": "2026-09-13T19:36:01.957394+00:00",
+      "timeout_seconds": 120,
+      "command": [
+        "python",
+        "/mnt/data/r3_work/tests/probe_versions.py",
+        "--main",
+        "/mnt/data/r3_work/candidate/main.py",
+        "--name",
+        "seedguard_final"
+      ],
+      "cwd": "/",
+      "memory_current_start": "558608384",
+      "returncode": 0,
+      "wall_seconds": 22.339280605316162,
+      "ended_utc": "2026-09-13T19:36:24.296676+00:00",
+      "memory_current_end": "559767552"
+    }
+  }
+]

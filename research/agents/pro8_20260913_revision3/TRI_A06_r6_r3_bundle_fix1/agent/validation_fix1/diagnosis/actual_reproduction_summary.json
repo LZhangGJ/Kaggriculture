@@ -1,0 +1,12 @@
+{
+  "candidate_r3": {
+    "calls": 719,
+    "exact": 719,
+    "seconds": 3.32753778899999
+  },
+  "parent_r2": {
+    "calls": 719,
+    "exact": 719,
+    "seconds": 3.29745128899998
+  }
+}

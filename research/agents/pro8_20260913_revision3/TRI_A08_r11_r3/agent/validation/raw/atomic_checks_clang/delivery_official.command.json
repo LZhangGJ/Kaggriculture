@@ -1,0 +1,10 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+  "--library",
+  "/mnt/data/r3_work/clang.so",
+  "--referee",
+  "/mnt/data/r3_work/feedback/referee",
+  "--out",
+  "/mnt/data/r3_work/logs/atomic_checks_clang/delivery_official.json"
+]

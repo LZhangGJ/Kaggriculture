@@ -1,0 +1,98 @@
+{
+  "checked_utc": "2026-09-13T20:54:25.195753+00:00",
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "zip_sha256": "ed0723c90fba40808b597b042800e90dbf6e45a6b5d2b7918412267b1d479dd5",
+  "native_sha256": "6f1ea0c50035b5c33a313cf7e61e2f98f7da826fda52863d67d7c086301250de",
+  "native_path": "policy/a06.so",
+  "manifest_files_verified": 242,
+  "source_files_verified": 41,
+  "changed_production_files": [
+    "policy/executor/policy.hpp"
+  ],
+  "source_rebuild_byte_identical": false,
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "local_native_sha256": "55098f93f31efa72a680ec024fc07c9d6f394376422115aac087046b5ba2dbb4",
+  "default_build_and_unit_suite_passed": true,
+  "real_diagnostic_games": 18,
+  "cross_compiler_complete_pairs": 9,
+  "acceptance_games": 0,
+  "diagnostic_pairs": [
+    {
+      "id": "thomas_955_v2_1612180274_seat0",
+      "parent_margin": -5067.0,
+      "revision3_margin": -3065.0,
+      "margin_delta": 2002.0,
+      "same_actions": false
+    },
+    {
+      "id": "market_smart_v8_389573676_seat0",
+      "parent_margin": 917.0,
+      "revision3_margin": 371.0,
+      "margin_delta": -546.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_389573676_seat0",
+      "parent_margin": 8393.0,
+      "revision3_margin": 6382.0,
+      "margin_delta": -2011.0,
+      "same_actions": false
+    },
+    {
+      "id": "moon_v215_290316560_seat0",
+      "parent_margin": 24.0,
+      "revision3_margin": 24.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_201542742_seat0",
+      "parent_margin": -5211.0,
+      "revision3_margin": -4351.0,
+      "margin_delta": 860.0,
+      "same_actions": false
+    },
+    {
+      "id": "market_smart_v8_2535322_seat1",
+      "parent_margin": -9127.0,
+      "revision3_margin": -8017.0,
+      "margin_delta": 1110.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_1623731725_seat1",
+      "parent_margin": 4077.0,
+      "revision3_margin": 5140.0,
+      "margin_delta": 1063.0,
+      "same_actions": false
+    },
+    {
+      "id": "thomas_955_v2_1395450535_seat1",
+      "parent_margin": 18706.0,
+      "revision3_margin": 22143.0,
+      "margin_delta": 3437.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_2029247155_seat0",
+      "parent_margin": 7760.0,
+      "revision3_margin": 10052.0,
+      "margin_delta": 2292.0,
+      "same_actions": false
+    }
+  ],
+  "full_land_bundle_comparison_present": true,
+  "full_package_linux": "/tmp/kaggriculture_r6r3_bundle_3l1rmits/delivered_archive",
+  "local_identity": "TRI_A06_r6_r3_bundle_fix1",
+  "focused_tests": {
+    "status": "PASS_WITH_EXPLICIT_POLICY_INCLUDE",
+    "default_launcher_passed": false,
+    "default_launcher_failure": "Missing -I policy in tests/build_fix1.py",
+    "original_failure_receipt": "central/FOCUSED_RESULT.json",
+    "central_command_receipt": "central/FOCUSED_INCLUDE_RESULT.json",
+    "synthetic_cases": 40,
+    "official_prefix_checks": 46,
+    "production_modified_by_controller": false
+  }
+}

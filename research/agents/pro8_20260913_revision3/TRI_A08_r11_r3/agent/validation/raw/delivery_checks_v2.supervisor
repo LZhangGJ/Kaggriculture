@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-13T19:27:24.278689+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out",
+    "/mnt/data/r3_work/logs/delivery_checks_v2.json"
+  ],
+  "cwd": "/",
+  "memory_current_start": "753541120",
+  "returncode": 0,
+  "wall_seconds": 0.9459855556488037,
+  "ended_utc": "2026-09-13T19:27:25.224676+00:00",
+  "memory_current_end": "754552832"
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "job": [
+      "seedguard_build",
+      "120",
+      "python",
+      "/mnt/data/r3_work/candidate/build.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_checks",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/seedguard_checks_gcc"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_probe",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/probe_versions.py",
+      "--main",
+      "/mnt/data/r3_work/candidate/main.py",
+      "--name",
+      "seedguard_final"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_ablation_build",
+      "120",
+      "python",
+      "/mnt/data/r3_work/candidate/build.py",
+      "--delivery-handoff",
+      "0",
+      "--out",
+      "/mnt/data/r3_work/ablation.so"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_ablation_probe",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/probe_versions.py",
+      "--main",
+      "/mnt/data/r3_work/candidate/main.py",
+      "--library",
+      "/mnt/data/r3_work/ablation.so",
+      "--name",
+      "seedguard_ablation",
+      "--exact"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_clang_build",
+      "120",
+      "python",
+      "/mnt/data/r3_work/candidate/build.py",
+      "--cxx",
+      "clang++",
+      "--out",
+      "/mnt/data/r3_work/clang.so"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_clang_checks",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--cxx",
+      "clang++",
+      "--library",
+      "/mnt/data/r3_work/clang.so",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/seedguard_checks_clang"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_clang_probe",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/probe_versions.py",
+      "--main",
+      "/mnt/data/r3_work/candidate/main.py",
+      "--library",
+      "/mnt/data/r3_work/clang.so",
+      "--name",
+      "seedguard_clang"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_branches",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_branches_no_clearance",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py",
+      "--no-clearance"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "seedguard_branches_stress",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py",
+      "--supply",
+      "3"
+    ],
+    "returncode": 0
+  }
+]

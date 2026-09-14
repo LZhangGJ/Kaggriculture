@@ -1,0 +1,128 @@
+{
+  "started_utc": "2026-09-13T19:25:03.247456+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py",
+    "--delivery-handoff",
+    "0",
+    "--out",
+    "/mnt/data/r3_work/ablation.so"
+  ],
+  "cwd": "/",
+  "memory_current_start": "530984960",
+  "returncode": 0,
+  "wall_seconds": 29.706005573272705,
+  "ended_utc": "2026-09-13T19:25:32.953464+00:00",
+  "memory_current_end": "533008384"
+}
+{
+  "started_utc": "2026-09-13T19:25:33.520335+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/ablation.so",
+    "--name",
+    "ablation",
+    "--exact"
+  ],
+  "cwd": "/",
+  "memory_current_start": "532185088",
+  "returncode": 0,
+  "wall_seconds": 22.515299797058105,
+  "ended_utc": "2026-09-13T19:25:56.035639+00:00",
+  "memory_current_end": "533307392"
+}
+{
+  "started_utc": "2026-09-13T19:25:56.658884+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/build.py",
+    "--cxx",
+    "clang++",
+    "--out",
+    "/mnt/data/r3_work/clang.so"
+  ],
+  "cwd": "/",
+  "memory_current_start": "532189184",
+  "returncode": 0,
+  "wall_seconds": 20.74418330192566,
+  "ended_utc": "2026-09-13T19:26:17.403070+00:00",
+  "memory_current_end": "534728704"
+}
+{
+  "started_utc": "2026-09-13T19:26:18.017535+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/delivery_checks.py",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out",
+    "/mnt/data/r3_work/logs/clang_delivery.json"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534069248",
+  "returncode": 0,
+  "wall_seconds": 0.9498860836029053,
+  "ended_utc": "2026-09-13T19:26:18.967422+00:00",
+  "memory_current_end": "535023616"
+}
+{
+  "started_utc": "2026-09-13T19:26:19.559129+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/probe_versions.py",
+    "--main",
+    "/mnt/data/r3_work/candidate/main.py",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--name",
+    "clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534405120",
+  "returncode": 0,
+  "wall_seconds": 23.36461639404297,
+  "ended_utc": "2026-09-13T19:26:42.923746+00:00",
+  "memory_current_end": "535396352"
+}
+{
+  "started_utc": "2026-09-13T19:26:43.502795+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--no-clearance"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534835200",
+  "returncode": 0,
+  "wall_seconds": 38.493722677230835,
+  "ended_utc": "2026-09-13T19:27:21.996520+00:00",
+  "memory_current_end": "535576576"
+}
+{
+  "started_utc": "2026-09-13T19:27:22.601486+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--supply",
+    "3"
+  ],
+  "cwd": "/",
+  "memory_current_start": "534773760",
+  "returncode": 0,
+  "wall_seconds": 39.112733602523804,
+  "ended_utc": "2026-09-13T19:28:01.714221+00:00",
+  "memory_current_end": "535490560"
+}

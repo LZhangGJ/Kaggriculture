@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-09-13T19:43:56.050725+00:00",
+  "timeout_seconds": 100,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/final_prechecks.py",
+    "entry"
+  ],
+  "cwd": "/",
+  "memory_current_start": "564600832",
+  "returncode": 0,
+  "wall_seconds": 25.46433734893799,
+  "ended_utc": "2026-09-13T19:44:21.515065+00:00",
+  "memory_current_end": "567377920"
+}
+{
+  "started_utc": "2026-09-13T19:44:22.106368+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/final_prechecks.py",
+    "clean"
+  ],
+  "cwd": "/",
+  "memory_current_start": "567025664",
+  "returncode": 0,
+  "wall_seconds": 29.63832116127014,
+  "ended_utc": "2026-09-13T19:44:51.744691+00:00",
+  "memory_current_end": "569864192"
+}
+{
+  "started_utc": "2026-09-13T19:44:52.330501+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/final_prechecks.py",
+    "fault"
+  ],
+  "cwd": "/",
+  "memory_current_start": "569163776",
+  "returncode": 0,
+  "wall_seconds": 29.850500106811523,
+  "ended_utc": "2026-09-13T19:45:22.181002+00:00",
+  "memory_current_end": "1132662784"
+}

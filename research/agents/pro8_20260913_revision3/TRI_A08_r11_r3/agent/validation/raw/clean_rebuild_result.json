@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+  "matches_production_bytes": true,
+  "independent_directory": "/mnt/data/r3_work/clean_rebuild",
+  "build_receipt_sha256": "2d10e1f64a66424bbe205e1033b09608dcb8e763fa31e6ff23da18cacbd8f428"
+}

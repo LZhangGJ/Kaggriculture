@@ -1,0 +1,32 @@
+{
+  "candidate": "TRI_A06_r12_r3",
+  "status": "source-complete engineering candidate, central acceptance NOT established",
+  "native_sha256": "7d7fd9540328b4d87df7b9970c03d63837831713efd781b86359a33de76836f5",
+  "parent_candidate": "TRI_A06_r12_r2",
+  "parent_native_sha256": "638626de9398f0aed45e98394742ee22df875dd805f2647dee6d5666eb1c7755",
+  "parent_original_delivery_zip_sha256": "0bffa7ee3bdcf27c8683b4ae528c92adc587109ac2fb34f4e950d110a0ce3d87",
+  "excluded_other_r2_native_sha256": "bd0c7dd9170b2f70781a7e2bd211b367fc625aa66154a99f5855641f08aefd62",
+  "excluded_other_r2_zip_sha256": "d94d9480465f2aba3c493441a1f3a82c7c916514d20cb457af64c1aae38d0a03",
+  "borrowed_from_excluded_other_r2": false,
+  "source_archives": {
+    "TRI_A06_r12_r2_source_inputs.zip": {
+      "sha256": "0fc35846a0eb1f842ddacb24588a5b8c939fc83a1371ebe13bd0f5ea26e29590",
+      "bytes": 720432
+    },
+    "TRI_A06_r12_r2_own_feedback.zip": {
+      "sha256": "7a179153ebdf8a548663a48f936ad150e5b49382b6ed2ecc6e711d4590bd1482",
+      "bytes": 2344782
+    }
+  },
+  "config_sha256": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+  "compiler_flags_sha256": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85",
+  "fixed_configuration_unchanged": true,
+  "parent_files": 51,
+  "production_entry": "main.py:agent",
+  "runtime_native": "policy/a06.so",
+  "original_dispatch_utc": "2026-09-13T19:00:45Z",
+  "hard_deadline_utc": "2026-09-13T21:00:45Z",
+  "release_staging_started_utc": "2026-09-13T19:59:53.690805+00:00",
+  "true_duel_schedule_frozen_utc": "2026-09-13T19:48:30.624916+00:00",
+  "production_changes_after_true_duel_results": false
+}

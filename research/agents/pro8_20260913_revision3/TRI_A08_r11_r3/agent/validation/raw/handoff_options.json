@@ -1,0 +1,2066 @@
+[
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 461,
+    "hour": 5,
+    "forecast": 125,
+    "owner": 5,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 44,
+    "transfer_to": 0,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        2
+      ]
+    ],
+    "insert_at": 7,
+    "old_length": 17,
+    "new_length": 18,
+    "recipient_new_length": 17,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 461,
+    "hour": 5,
+    "forecast": 125,
+    "owner": 5,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 45,
+    "transfer_to": 0,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        2
+      ]
+    ],
+    "insert_at": 7,
+    "old_length": 17,
+    "new_length": 16,
+    "recipient_new_length": 17,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 461,
+    "hour": 5,
+    "forecast": 125,
+    "owner": 5,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 55,
+    "transfer_to": 0,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        2
+      ]
+    ],
+    "insert_at": 7,
+    "old_length": 17,
+    "new_length": 18,
+    "recipient_new_length": 17,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 463,
+    "hour": 7,
+    "forecast": 124,
+    "owner": 1,
+    "cargo": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 48,
+    "depot": 45,
+    "transfer_to": 9,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        25
+      ],
+      [
+        16,
+        -1,
+        1,
+        25
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 15,
+    "new_length": 16,
+    "recipient_new_length": 17,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 464,
+    "hour": 8,
+    "forecast": 123,
+    "owner": 1,
+    "cargo": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 47,
+    "depot": 45,
+    "transfer_to": 9,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        25
+      ],
+      [
+        16,
+        -1,
+        1,
+        25
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 14,
+    "new_length": 15,
+    "recipient_new_length": 16,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 652,
+    "hour": 4,
+    "forecast": 113,
+    "owner": 5,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 45,
+    "transfer_to": 9,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        17
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 19,
+    "new_length": 19,
+    "recipient_new_length": 20,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 655,
+    "hour": 7,
+    "forecast": 114,
+    "owner": 9,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 35,
+    "depot": 45,
+    "transfer_to": 3,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        8
+      ]
+    ],
+    "insert_at": 3,
+    "old_length": 16,
+    "new_length": 16,
+    "recipient_new_length": 11,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 677,
+    "hour": 5,
+    "forecast": 122,
+    "owner": 4,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 34,
+    "depot": 44,
+    "transfer_to": 8,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        14
+      ]
+    ],
+    "insert_at": 6,
+    "old_length": 19,
+    "new_length": 19,
+    "recipient_new_length": 19,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 678,
+    "hour": 6,
+    "forecast": 122,
+    "owner": 4,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 34,
+    "depot": 44,
+    "transfer_to": 8,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        14
+      ]
+    ],
+    "insert_at": 6,
+    "old_length": 18,
+    "new_length": 18,
+    "recipient_new_length": 18,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 681,
+    "hour": 9,
+    "forecast": 124,
+    "owner": 4,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 14,
+    "depot": 44,
+    "transfer_to": 8,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        23
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 15,
+    "new_length": 15,
+    "recipient_new_length": 15,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "aurax_reactive_v1_1801029924_seat0",
+    "step": 681,
+    "hour": 9,
+    "forecast": 124,
+    "owner": 4,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 14,
+    "depot": 54,
+    "transfer_to": 8,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        23
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 15,
+    "new_length": 15,
+    "recipient_new_length": 15,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "submission_56149565_1782098909_seat1",
+    "step": 613,
+    "hour": 13,
+    "forecast": 103,
+    "owner": 0,
+    "cargo": [
+      0,
+      0,
+      0,
+      2,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 32,
+    "depot": 44,
+    "transfer_to": 4,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        20
+      ],
+      [
+        10,
+        -1,
+        1,
+        20
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 10,
+    "new_length": 10,
+    "recipient_new_length": 11,
+    "extra_actions": 4,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "submission_56149565_1782098909_seat1",
+    "step": 614,
+    "hour": 14,
+    "forecast": 103,
+    "owner": 0,
+    "cargo": [
+      0,
+      0,
+      0,
+      2,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 33,
+    "depot": 44,
+    "transfer_to": 4,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        20
+      ],
+      [
+        10,
+        -1,
+        1,
+        20
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 9,
+    "new_length": 9,
+    "recipient_new_length": 10,
+    "extra_actions": 4,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "submission_56149565_1782098909_seat1",
+    "step": 618,
+    "hour": 18,
+    "forecast": 104,
+    "owner": 0,
+    "cargo": [
+      0,
+      0,
+      0,
+      2,
+      12,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 23,
+    "depot": 44,
+    "transfer_to": 4,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        20
+      ],
+      [
+        10,
+        -1,
+        1,
+        20
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 5,
+    "new_length": 4,
+    "recipient_new_length": 6,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 508,
+    "hour": 4,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 64,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 18,
+    "new_length": 15,
+    "recipient_new_length": 18,
+    "extra_actions": -2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 508,
+    "hour": 4,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 64,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 18,
+    "new_length": 17,
+    "recipient_new_length": 18,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 508,
+    "hour": 4,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 64,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 18,
+    "new_length": 13,
+    "recipient_new_length": 18,
+    "extra_actions": -4,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 508,
+    "hour": 4,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 64,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 18,
+    "new_length": 15,
+    "recipient_new_length": 18,
+    "extra_actions": -2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 509,
+    "hour": 5,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 17,
+    "new_length": 16,
+    "recipient_new_length": 17,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 509,
+    "hour": 5,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 17,
+    "new_length": 18,
+    "recipient_new_length": 17,
+    "extra_actions": 2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 509,
+    "hour": 5,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 17,
+    "new_length": 14,
+    "recipient_new_length": 17,
+    "extra_actions": -2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 509,
+    "hour": 5,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 17,
+    "new_length": 16,
+    "recipient_new_length": 17,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 510,
+    "hour": 6,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 16,
+    "new_length": 15,
+    "recipient_new_length": 16,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 510,
+    "hour": 6,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 16,
+    "new_length": 17,
+    "recipient_new_length": 16,
+    "extra_actions": 2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 510,
+    "hour": 6,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 16,
+    "new_length": 13,
+    "recipient_new_length": 16,
+    "extra_actions": -2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 510,
+    "hour": 6,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 5,
+    "old_length": 16,
+    "new_length": 15,
+    "recipient_new_length": 16,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 511,
+    "hour": 7,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 15,
+    "new_length": 14,
+    "recipient_new_length": 15,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 511,
+    "hour": 7,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 15,
+    "new_length": 16,
+    "recipient_new_length": 15,
+    "extra_actions": 2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 511,
+    "hour": 7,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 15,
+    "new_length": 12,
+    "recipient_new_length": 15,
+    "extra_actions": -2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 511,
+    "hour": 7,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 74,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 15,
+    "new_length": 14,
+    "recipient_new_length": 15,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 512,
+    "hour": 8,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 84,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 14,
+    "new_length": 15,
+    "recipient_new_length": 14,
+    "extra_actions": 2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 512,
+    "hour": 8,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 84,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 14,
+    "new_length": 13,
+    "recipient_new_length": 14,
+    "extra_actions": 0,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 512,
+    "hour": 8,
+    "forecast": 116,
+    "owner": 6,
+    "cargo": [
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 84,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        17,
+        -1,
+        1,
+        35
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 14,
+    "new_length": 15,
+    "recipient_new_length": 14,
+    "extra_actions": 2,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 513,
+    "hour": 9,
+    "forecast": 115,
+    "owner": 2,
+    "cargo": [
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 51,
+    "depot": 54,
+    "transfer_to": 6,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        60
+      ]
+    ],
+    "insert_at": 6,
+    "old_length": 10,
+    "new_length": 14,
+    "recipient_new_length": 15,
+    "extra_actions": 6,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 514,
+    "hour": 10,
+    "forecast": 115,
+    "owner": 2,
+    "cargo": [
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 51,
+    "depot": 54,
+    "transfer_to": 6,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        60
+      ]
+    ],
+    "insert_at": 6,
+    "old_length": 9,
+    "new_length": 13,
+    "recipient_new_length": 14,
+    "extra_actions": 6,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 675,
+    "hour": 3,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 45,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 20,
+    "new_length": 19,
+    "recipient_new_length": 18,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 675,
+    "hour": 3,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 45,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 20,
+    "new_length": 17,
+    "recipient_new_length": 18,
+    "extra_actions": -1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 675,
+    "hour": 3,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 45,
+    "depot": 54,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 20,
+    "new_length": 21,
+    "recipient_new_length": 18,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 675,
+    "hour": 3,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 45,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 20,
+    "new_length": 19,
+    "recipient_new_length": 18,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 679,
+    "hour": 7,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 16,
+    "new_length": 17,
+    "recipient_new_length": 16,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 679,
+    "hour": 7,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        9,
+        -1,
+        1,
+        27
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 16,
+    "new_length": 16,
+    "recipient_new_length": 13,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 679,
+    "hour": 7,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 0,
+    "old_length": 16,
+    "new_length": 17,
+    "recipient_new_length": 16,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 680,
+    "hour": 8,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 47,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        47
+      ],
+      [
+        16,
+        -1,
+        1,
+        47
+      ]
+    ],
+    "insert_at": 4,
+    "old_length": 15,
+    "new_length": 16,
+    "recipient_new_length": 15,
+    "extra_actions": 5,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 682,
+    "hour": 10,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 47,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 3,
+    "old_length": 13,
+    "new_length": 14,
+    "recipient_new_length": 11,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 682,
+    "hour": 10,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 47,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 3,
+    "old_length": 13,
+    "new_length": 12,
+    "recipient_new_length": 11,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 682,
+    "hour": 10,
+    "forecast": 101,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 47,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 3,
+    "old_length": 13,
+    "new_length": 14,
+    "recipient_new_length": 11,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 683,
+    "hour": 11,
+    "forecast": 102,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 44,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 12,
+    "new_length": 13,
+    "recipient_new_length": 10,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 683,
+    "hour": 11,
+    "forecast": 102,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 12,
+    "new_length": 11,
+    "recipient_new_length": 10,
+    "extra_actions": 1,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 683,
+    "hour": 11,
+    "forecast": 102,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 46,
+    "depot": 55,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 12,
+    "new_length": 13,
+    "recipient_new_length": 10,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  },
+  {
+    "case": "market_smart_v8_290316560_seat0",
+    "step": 684,
+    "hour": 12,
+    "forecast": 102,
+    "owner": 3,
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      3,
+      0,
+      0,
+      0
+    ],
+    "from_pos": 36,
+    "depot": 45,
+    "transfer_to": 7,
+    "tasks": [
+      [
+        10,
+        -1,
+        1,
+        36
+      ],
+      [
+        16,
+        -1,
+        1,
+        36
+      ]
+    ],
+    "insert_at": 2,
+    "old_length": 11,
+    "new_length": 12,
+    "recipient_new_length": 9,
+    "extra_actions": 3,
+    "old_reject": "remaining-route-completion",
+    "task_counts_preserved": true
+  }
+]

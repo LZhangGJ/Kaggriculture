@@ -1,0 +1,87 @@
+{
+  "started_utc": "2026-09-13T19:45:16.522879+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/atomic_checks_gcc"
+  ],
+  "cwd": "/",
+  "memory_current_start": "1488023552",
+  "returncode": 0,
+  "wall_seconds": 18.897350788116455,
+  "ended_utc": "2026-09-13T19:45:35.420231+00:00",
+  "memory_current_end": "590405632"
+}
+{
+  "started_utc": "2026-09-13T19:45:36.019384+00:00",
+  "timeout_seconds": 240,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/candidate/tests/run_checks.py",
+    "--cxx",
+    "clang++",
+    "--library",
+    "/mnt/data/r3_work/clang.so",
+    "--sanitize",
+    "--referee",
+    "/mnt/data/r3_work/feedback/referee",
+    "--out-dir",
+    "/mnt/data/r3_work/logs/atomic_checks_clang"
+  ],
+  "cwd": "/",
+  "memory_current_start": "589828096",
+  "returncode": 0,
+  "wall_seconds": 12.620877265930176,
+  "ended_utc": "2026-09-13T19:45:48.640263+00:00",
+  "memory_current_end": "595496960"
+}
+{
+  "started_utc": "2026-09-13T19:45:49.272710+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py"
+  ],
+  "cwd": "/",
+  "memory_current_start": "594849792",
+  "returncode": 0,
+  "wall_seconds": 39.156837940216064,
+  "ended_utc": "2026-09-13T19:46:28.429552+00:00",
+  "memory_current_end": "633970688"
+}
+{
+  "started_utc": "2026-09-13T19:46:29.033593+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--no-clearance"
+  ],
+  "cwd": "/",
+  "memory_current_start": "633053184",
+  "returncode": 0,
+  "wall_seconds": 38.789844274520874,
+  "ended_utc": "2026-09-13T19:47:07.823439+00:00",
+  "memory_current_end": "633831424"
+}
+{
+  "started_utc": "2026-09-13T19:47:08.399703+00:00",
+  "timeout_seconds": 120,
+  "command": [
+    "python",
+    "/mnt/data/r3_work/tests/own_branch_checks.py",
+    "--supply",
+    "3"
+  ],
+  "cwd": "/",
+  "memory_current_start": "633348096",
+  "returncode": 0,
+  "wall_seconds": 39.98458933830261,
+  "ended_utc": "2026-09-13T19:47:48.384296+00:00",
+  "memory_current_end": "978644992"
+}

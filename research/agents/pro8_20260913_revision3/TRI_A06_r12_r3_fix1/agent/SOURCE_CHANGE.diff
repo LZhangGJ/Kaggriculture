@@ -1,0 +1,88 @@
+--- r3/policy/ongoing_supply_admission.inc
++++ r3_fix1/policy/ongoing_supply_admission.inc
+@@ -4,6 +4,19 @@
+ // No economic score, future cash credit, rival private inventory or random tape.
+ bool ongoing_supply_previewing=false;
+ int ongoing_supply_previews=0,ongoing_supply_skips=0,ongoing_supply_preview_errors=0;
++// Fix1: a reachable production bonus is not a terminal cash profit. Only when
++// the real terminal is within a bounded horizon, compare both complete routes
++// through liquidation. No residual stock, standing yield or fertilizer is
++// credited at terminal. Earlier profitable r3 maintenance is left unchanged.
++int ongoing_terminal_checks=0,ongoing_terminal_rejected=0,ongoing_terminal_errors=0;
++std::array<double,2> ongoing_terminal_own_gain{},ongoing_terminal_margin_gain{};
++std::string ongoing_terminal_last="null";
++static bool terminal_supply_profitable(const std::array<double,2>&own,
++                                       const std::array<double,2>&margin){
++ for(int k=0;k<2;k++)if(!std::isfinite(own[k])||!std::isfinite(margin[k])||
++                       own[k]<=1e-6||margin[k]<=1e-6)return false;
++ return true;
++}
+ void prepare_with_ongoing_supply(const View&planning,const View&actual,int released){
+  core.prepare_orders(planning,actual,released);
+ #if TRI_A06_R12_R3_FERT_SUPPLY
+@@ -71,11 +84,44 @@
+   for(int p=0;p<100;p++)if(wanted[p]){
+    extra|=supplied[p]&&!baseline[p];preserves&=!baseline[p]||supplied[p];
+   }
+-  if(!extra||!preserves)use_fallback();
++  if(!extra||!preserves){use_fallback();return;}
++  // 48 is a computation bound, NOT a crop/seed/opponent rule. We require an
++  // actual terminal endpoint so there is no arbitrary liquidation valuation.
++  if(actual.step>=0 && 719-actual.step<=48){
++   ongoing_terminal_checks++;
++   auto terminal=[&](const Controller&policy,double rival_scale){
++    auto roll=policy;roll.ongoing_supply_previewing=true;
++    roll.r11_evaluating=true; // same bounded labor-search setting as r3 profile
++    roll.previous_step=actual.step-1;roll.core.last_step=actual.step-1;
++    roll.call_origin=CallOrigin::PublicPrediction;
++    // PublicFlowScenario uses only visible rival plants/animals and the public
++    // flow forecast already computed by this policy. Opponent private storage
++    // is not accessed. Scale zero is a separate no-new-supply stress scenario.
++    fastkag::PublicFlowScenario world(actual,model.rival,rival_scale);
++    int ticks=0;
++    while(!world.done() && ticks<48){auto v=world.view();world.advance(roll.act(v));++ticks;}
++    if(!world.done())throw std::runtime_error("terminal supply horizon");
++    return std::array<double,2>{world.own_cash(),world.rival_cash()};
++   };
++   std::ostringstream audit;audit.precision(17);
++   audit<<"{\"step\":"<<actual.step<<",\"scenarios\":[";
++   for(int k=0;k<2;k++){
++    double scale=k?s.supply:0.;auto a=terminal(fallback,scale),b=terminal(*this,scale);
++    ongoing_terminal_own_gain[k]=b[0]-a[0];
++    ongoing_terminal_margin_gain[k]=b[0]-a[0]-s.competition*(b[1]-a[1]);
++    if(k)audit<<",";
++    audit<<"{\"public_supply_scale\":"<<scale<<",\"keep_own_cash\":"<<a[0]<<",\"keep_rival_cash\":"<<a[1]
++         <<",\"supply_own_cash\":"<<b[0]<<",\"supply_rival_cash\":"<<b[1]
++         <<",\"own_gain\":"<<ongoing_terminal_own_gain[k]<<",\"margin_gain\":"<<ongoing_terminal_margin_gain[k]<<"}";
++   }
++   const bool profitable=terminal_supply_profitable(ongoing_terminal_own_gain,ongoing_terminal_margin_gain);
++   audit<<"],\"accepted\":"<<(profitable?"true":"false")<<"}";ongoing_terminal_last=audit.str();
++   if(!profitable){ongoing_terminal_rejected++;use_fallback();return;}
++  }
+  }catch(const std::exception&){
+   // Fail closed to parent preparation. An uncertain projection must not spend
+   // additional money. Normal resource recovery remains enabled in live play.
+-  ongoing_supply_preview_errors++;use_fallback();
++  ongoing_supply_preview_errors++;if(actual.step>=671)ongoing_terminal_errors++;use_fallback();
+  }
+ #endif
+ }
+--- r3/policy/triad.hpp
++++ r3_fix1/policy/triad.hpp
+@@ -558,7 +558,7 @@
+   bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);r11_consider(o,out);return out;
+  }
+  std::string debug()const{
+-  std::ostringstream o;o<<"{\"r3_supply_previews\":"<<ongoing_supply_previews<<",\"r3_supply_skips\":"<<ongoing_supply_skips<<",\"r3_supply_preview_errors\":"<<ongoing_supply_preview_errors<<",\"r12_calendar_enabled\":"<<s.a06_r12_calendar<<",\"r12_calls\":"<<calendar12.calls<<",\"r12_changes\":"<<calendar12.changes<<",\"r12_existing_changes\":"<<calendar12.existing_changes<<",\"r12_last\":"<<calendar12.last<<",\"r12_last_change\":"<<calendar12.last_change<<",\"r11_checks\":"<<labor11.checks<<",\"r11_rollouts\":"<<labor11.rollouts<<",\"r11_offered\":"<<labor11.offered<<",\"r11_committed\":"<<labor11.committed<<",\"r11_hire_requests\":"<<labor11.hire_requests<<",\"r11_hire_confirmed\":"<<labor11.hire_confirmed<<",\"r11_cancelled\":"<<labor11.cancelled<<",\"r11_pending\":"<<labor11.active<<",\"r11_last\":"<<labor11.last<<",\"a06_state_contract\":"<<s.a06_state_contract<<",\"a06_contract_calls\":"<<a06_contract_calls<<",\"a06_contract_last\":"<<a06_contract_last<<",\"feed_stock_target\":"<<core.feed_stock_target<<",\"daily_need_wheat\":"<<core.daily_need[W]<<",\"a06_feed_contract\":"<<s.a06_feed_contract<<",\"a06_buffer_hold_events\":"<<a06_buffer_hold_events<<",\"a06_buffer_hold_units\":"<<a06_buffer_hold_units<<",\"a06_roll_scope\":"<<s.a06_roll_scope<<",\"a06_origin_prediction\":"<<prediction()<<",\"a06_gate_checks\":"<<a06_gate_checks<<",\"a06_gate_activations\":"<<a06_gate_activations<<",\"a06_receipt_events\":"<<a06_receipt_events<<",\"a06_mode\":"<<s.a06_reinvest<<",\"a06_received_today\":"<<a06_received_today<<",\"a06_live_checks\":"<<a06_live_checks<<",\"a06_wait_rejections\":"<<a06_wait_rejections<<",\"a06_pending_conflicts\":"<<a06_pending_conflicts<<",\"a06_last_wait\":"<<a06_last_wait<<",\"a06_last_best_now\":"<<a06_last_best_now<<",\"intraday_checks\":"<<core.intraday_checks<<",\"intraday_proposals\":"<<core.intraday_proposals<<",\"intraday_cancelled\":"<<core.intraday_cancelled<<",\"intraday_unfilled\":"<<core.intraday_unfilled<<",\"intraday_pending\":"<<core.pending_admission.active<<",\"intraday_pending_kind\":"<<core.pending_admission.kind<<",\"intraday_pending_pos\":"<<core.pending_admission.pos<<",\"a06_fleet_solves\":"<<core.a06_stats.solves<<",\"a06_fleet_changes\":"<<core.a06_stats.changes<<",\"a06_added_jobs\":"<<core.a06_stats.added<<",\"a06_route_steps_saved\":"<<core.a06_stats.saved<<",\"plan_calls\":"<<plan_calls<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
++  std::ostringstream o;o<<"{\"r3_fix1_terminal_checks\":"<<ongoing_terminal_checks<<",\"r3_fix1_terminal_rejected\":"<<ongoing_terminal_rejected<<",\"r3_fix1_terminal_errors\":"<<ongoing_terminal_errors<<",\"r3_fix1_terminal_last\":"<<ongoing_terminal_last<<",\"r3_supply_previews\":"<<ongoing_supply_previews<<",\"r3_supply_skips\":"<<ongoing_supply_skips<<",\"r3_supply_preview_errors\":"<<ongoing_supply_preview_errors<<",\"r12_calendar_enabled\":"<<s.a06_r12_calendar<<",\"r12_calls\":"<<calendar12.calls<<",\"r12_changes\":"<<calendar12.changes<<",\"r12_existing_changes\":"<<calendar12.existing_changes<<",\"r12_last\":"<<calendar12.last<<",\"r12_last_change\":"<<calendar12.last_change<<",\"r11_checks\":"<<labor11.checks<<",\"r11_rollouts\":"<<labor11.rollouts<<",\"r11_offered\":"<<labor11.offered<<",\"r11_committed\":"<<labor11.committed<<",\"r11_hire_requests\":"<<labor11.hire_requests<<",\"r11_hire_confirmed\":"<<labor11.hire_confirmed<<",\"r11_cancelled\":"<<labor11.cancelled<<",\"r11_pending\":"<<labor11.active<<",\"r11_last\":"<<labor11.last<<",\"a06_state_contract\":"<<s.a06_state_contract<<",\"a06_contract_calls\":"<<a06_contract_calls<<",\"a06_contract_last\":"<<a06_contract_last<<",\"feed_stock_target\":"<<core.feed_stock_target<<",\"daily_need_wheat\":"<<core.daily_need[W]<<",\"a06_feed_contract\":"<<s.a06_feed_contract<<",\"a06_buffer_hold_events\":"<<a06_buffer_hold_events<<",\"a06_buffer_hold_units\":"<<a06_buffer_hold_units<<",\"a06_roll_scope\":"<<s.a06_roll_scope<<",\"a06_origin_prediction\":"<<prediction()<<",\"a06_gate_checks\":"<<a06_gate_checks<<",\"a06_gate_activations\":"<<a06_gate_activations<<",\"a06_receipt_events\":"<<a06_receipt_events<<",\"a06_mode\":"<<s.a06_reinvest<<",\"a06_received_today\":"<<a06_received_today<<",\"a06_live_checks\":"<<a06_live_checks<<",\"a06_wait_rejections\":"<<a06_wait_rejections<<",\"a06_pending_conflicts\":"<<a06_pending_conflicts<<",\"a06_last_wait\":"<<a06_last_wait<<",\"a06_last_best_now\":"<<a06_last_best_now<<",\"intraday_checks\":"<<core.intraday_checks<<",\"intraday_proposals\":"<<core.intraday_proposals<<",\"intraday_cancelled\":"<<core.intraday_cancelled<<",\"intraday_unfilled\":"<<core.intraday_unfilled<<",\"intraday_pending\":"<<core.pending_admission.active<<",\"intraday_pending_kind\":"<<core.pending_admission.kind<<",\"intraday_pending_pos\":"<<core.pending_admission.pos<<",\"a06_fleet_solves\":"<<core.a06_stats.solves<<",\"a06_fleet_changes\":"<<core.a06_stats.changes<<",\"a06_added_jobs\":"<<core.a06_stats.added<<",\"a06_route_steps_saved\":"<<core.a06_stats.saved<<",\"plan_calls\":"<<plan_calls<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
+   bool sep=false;for(auto[p,k]:core.target){if(sep)o<<",";sep=true;o<<"["<<p<<","<<k<<"]";}o<<"],\"preparation_finance_checks\":"<<preparation_finance_checks<<",\"preparation_finance_repairs\":"<<preparation_finance_repairs<<",\"midroute_delivery_checks\":"<<core.midroute_delivery_checks<<",\"midroute_delivery_insertions\":"<<core.midroute_delivery_insertions<<",\"midroute_delivery_quantity\":"<<core.midroute_delivery_quantity<<",\"local_sale_checks\":"<<local_sale.checks<<",\"local_sale_holds\":"<<local_sale.holds<<",\"local_sale_quantity\":"<<local_sale.held_quantity<<",\"local_sale_forced\":"<<local_sale.forced<<",\"local_sale_expected_gain\":"<<local_sale.projected_gain<<"}";return o.str();
+  }
+ };
+--- r3/main.py
++++ r3_fix1/main.py
+@@ -1,4 +1,4 @@
+-"""TRI_A06_r12_r3: approved ongoing maintenance supply; awaiting central win-rate acceptance."""
++"""TRI_A06_r12_r3_fix1: terminal net-cash admission for r3 maintenance supply."""
+ from pathlib import Path
+ import importlib.util
+ import json

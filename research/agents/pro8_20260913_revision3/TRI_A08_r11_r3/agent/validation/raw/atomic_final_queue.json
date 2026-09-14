@@ -1,0 +1,64 @@
+[
+  {
+    "job": [
+      "atomic_checks_gcc",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/atomic_checks_gcc"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "atomic_checks_clang",
+      "240",
+      "python",
+      "/mnt/data/r3_work/candidate/tests/run_checks.py",
+      "--cxx",
+      "clang++",
+      "--library",
+      "/mnt/data/r3_work/clang.so",
+      "--sanitize",
+      "--referee",
+      "/mnt/data/r3_work/feedback/referee",
+      "--out-dir",
+      "/mnt/data/r3_work/logs/atomic_checks_clang"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "atomic_branches",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "atomic_branches_no_clearance",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py",
+      "--no-clearance"
+    ],
+    "returncode": 0
+  },
+  {
+    "job": [
+      "atomic_branches_stress",
+      "120",
+      "python",
+      "/mnt/data/r3_work/tests/own_branch_checks.py",
+      "--supply",
+      "3"
+    ],
+    "returncode": 0
+  }
+]

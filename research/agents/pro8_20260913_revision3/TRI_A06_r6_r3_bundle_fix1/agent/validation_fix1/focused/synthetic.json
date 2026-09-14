@@ -1,0 +1,286 @@
+{
+  "cases": [
+    {
+      "day": 0,
+      "stock": 0,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 0,
+      "selected": 20,
+      "bought": 20,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 11,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 11,
+      "selected": 20,
+      "bought": 9,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 20,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 20,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 25,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 0,
+      "stock": 25,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 0,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 0,
+      "selected": 20,
+      "bought": 20,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 11,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 11,
+      "selected": 20,
+      "bought": 9,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 20,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 20,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 25,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 14,
+      "stock": 25,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 0,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 0,
+      "selected": 20,
+      "bought": 20,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 11,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 11,
+      "selected": 20,
+      "bought": 9,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 20,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 20,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 25,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 15,
+      "stock": 25,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 0,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 0,
+      "selected": 20,
+      "bought": 20,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 11,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 11,
+      "selected": 20,
+      "bought": 9,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 20,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 20,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 25,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 25,
+      "stock": 25,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 0,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 0,
+      "selected": 20,
+      "bought": 20,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 11,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 11,
+      "selected": 20,
+      "bought": 9,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 20,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 20,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 25,
+      "selected": 0,
+      "bought": 0,
+      "pass": true
+    },
+    {
+      "day": 28,
+      "stock": 25,
+      "selected": 20,
+      "bought": 0,
+      "pass": true
+    }
+  ],
+  "case_count": 40,
+  "new_games": 0
+}
