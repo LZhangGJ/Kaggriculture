@@ -43,6 +43,8 @@ function render(){
   const cards=[['Active agents',data.roster.length,'Public and team versions'],['Rated games',fmt(data.continuous_elo.ratings.reduce((s,r)=>s+r.games,0)/2),'Completed games across all versions'],['Daily coverage',latest?`${fmt(latest.completed)} / ${fmt(latest.planned)}`:'Not started',latest?.complete?'Completed tournament':'Provisional tournament'],['Certified champion',data.champion?agent(data.champion).name:'None yet','AFS R2 remains a reference']];
   for(const [label,value,note]of cards){const card=element('div',null,'card');card.append(element('small',label),element('strong',String(value),label==='Certified champion'?'champ':''),element('small',note));$('cards').append(card);}
   document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('selected',b.dataset.view===view));
+  $('results-panel').hidden=view==='upload';$('upload-panel').hidden=view!=='upload';
+  if(view==='upload'){loadUploads();return;}
   $('controls').replaceChildren();$('detail').replaceChildren();
   if(view==='elo'){
     $('title').textContent='Continuous Elo';$('description').textContent='All active agents, fresh seeds, both seats. New versions start at 1500. K = 32 per completed seat pair. Early ratings can move sharply; check game counts.';
@@ -72,3 +74,19 @@ function render(){
 }
 async function refresh(){try{const r=await fetch('/api/data',{cache:'no-store'});if(r.status===401){location.replace('/');return;}if(!r.ok)throw Error();data=await r.json();render();}catch{$('notice').replaceChildren(element('p','Could not refresh. Showing the last received results; check their timestamps.','warning'));}}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{view=b.dataset.view;render();});$('search').oninput=render;refresh();setInterval(refresh,60000);
+
+async function loadUploads(){
+  try{const r=await fetch('/api/uploads',{cache:'no-store'});if(r.status===401){location.replace('/');return;}if(!r.ok)throw Error();
+  const {uploads}=await r.json();$('upload-list').replaceChildren(uploads.length?table(['Agent','Version','Status','Details'],uploads.map(u=>[element('td',u.name),u.version,u.status,element('td',u.message||'')])):element('p','No uploads yet.'));
+  }catch{$('upload-list').textContent='Could not refresh submission status. Please try again.';}
+}
+$('upload-form').onsubmit=async e=>{
+  e.preventDefault();const form=e.currentTarget,f=form.elements.file.files[0];
+  if(!f||f.size>64*1024*1024){$('upload-message').textContent='Choose a file up to 64 MiB.';return;}
+  $('upload-button').disabled=true;$('upload-message').textContent='Uploading… Keep this page open.';
+  try{const r=await fetch('/api/uploads',{method:'POST',body:new FormData(form)});if(r.status===401){location.replace('/');return;}
+    const result=await r.json();if(!r.ok)throw Error(result.error||'Upload failed. Please try again.');
+    $('upload-message').textContent='Received. Your agent is queued for validation. Status will update here automatically.';
+    form.elements.file.value='';await loadUploads();
+  }catch(error){$('upload-message').textContent=error.message;}finally{$('upload-button').disabled=false;}
+};

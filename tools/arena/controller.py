@@ -112,6 +112,8 @@ def work(root, cfg, remote_only=False):
 
 def tick(root):
     root = Path(root)
+    from .web_uploads import import_pending
+    import_pending(root)
     cfg = read(root / "config.json")
     from .github_sync import sync
     from .public_pool import refresh_daily, apply_ready_versions

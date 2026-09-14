@@ -5,6 +5,8 @@ import json
 import secrets
 import threading
 import time
+import os
+import uuid
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit
 
@@ -23,7 +25,8 @@ def create_app(config):
     root = Path(config['data_dir'])
     assets = Path(__file__).with_name('web_assets')
     app = Flask(__name__, static_folder=None)
-    app.config.update(MAX_CONTENT_LENGTH=4096, TRUSTED_HOSTS=[parsed.netloc])
+    app.config.update(MAX_CONTENT_LENGTH=65*1024*1024, MAX_FORM_MEMORY_SIZE=32768, MAX_FORM_PARTS=8,
+                      TRUSTED_HOSTS=[parsed.netloc])
     sessions, states, starts = {}, {}, []
     lock = threading.Lock()
 
@@ -84,6 +87,65 @@ def create_app(config):
         if not identity(): abort(401)
         # Explicit single-file allowlist: never serve an arena directory.
         return send_file(root / 'data.json', mimetype='application/json', conditional=False)
+
+    @app.get('/api/uploads')
+    def uploads():
+        user=identity()
+        if not user: abort(401)
+        spool=Path(config['upload_dir'])
+        known={}
+        try:
+            known={r['id']:r for r in json.loads((root/'upload-status.json').read_text()) if r['user_id']==user['id']}
+        except (OSError,ValueError): pass
+        for p in spool.glob('*.json'):
+            m=json.loads(p.read_text())
+            if m['user_id']==user['id'] and p.stem not in known:
+                known[p.stem]={k:m[k] for k in ('id','name','version')} | {'status':'queued'}
+        return {'uploads':list(known.values())}
+
+    @app.post('/api/uploads')
+    def upload():
+        user=identity()
+        if not user: abort(401)
+        if request.headers.get('Origin') != origin: abort(403)
+        spool=Path(config['upload_dir'])
+        # Serialize bounded writes; never execute or unpack user files here.
+        with lock:
+            previous=[json.loads(p.read_text()) for p in spool.glob('*.json')]
+            if sum(m['user_id']==user['id'] and time.time()-m['created']<3600 for m in previous)>=10:
+                return {'error':'Please wait: the limit is 10 uploads per hour.'},429
+            if sum(p.stat().st_size for p in spool.glob('*.bin'))>960*1024*1024:
+                return {'error':'The upload queue is full. Please try again shortly.'},503
+            f=request.files.get('file')
+            if not f: return {'error':'Choose an agent file.'},400
+            filename=f.filename or ''
+            suffix=next((s for s in ('tar.gz','zip','py') if filename.lower().endswith('.'+s)),None)
+            if not suffix:return {'error':'Use a .py, .zip, or .tar.gz file.'},400
+            name=request.form.get('name','').strip()
+            version=request.form.get('version','').strip()
+            interface=request.form.get('interface','kaggle')
+            if not 1<=len(name)<=120 or len(version)>120 or interface not in ('kaggle','jsonl'):
+                return {'error':'Enter an agent name (up to 120 characters).'},400
+            rid=uuid.uuid4().hex;p=spool/(rid+'.bin');h=hashlib.sha256();size=0
+            try:
+                with p.open('xb') as out:
+                    os.chmod(p,0o640)
+                    while block:=f.stream.read(1024*1024):
+                        size+=len(block)
+                        if size>64*1024*1024:raise ValueError('File exceeds 64 MiB.')
+                        h.update(block);out.write(block)
+                if not size:raise ValueError('File is empty.')
+                meta=dict(id=rid,user_id=user['id'],name=name,version=version or h.hexdigest()[:12],
+                          format=suffix,interface=interface,sha256=h.hexdigest(),created=time.time())
+                for old in previous:
+                    if all(old.get(k)==meta[k] for k in ('user_id','name','version','format','interface','sha256')):
+                        p.unlink();return {'id':old['id'],'status':'already uploaded'},200
+                tmp=spool/(rid+'.pending');tmp.write_text(json.dumps(meta));os.chmod(tmp,0o640)
+                tmp.replace(spool/(rid+'.json'))
+            except (ValueError,OSError) as e:
+                p.unlink(missing_ok=True)
+                return {'error':str(e) if isinstance(e,ValueError) else 'Could not save the upload.'},400
+        return {'id':rid,'status':'queued'},202
 
     @app.get('/auth/login')
     def login():
@@ -151,5 +213,5 @@ if __name__ == '__main__':
     from waitress import serve
     cfg = json.loads(Path(sys.argv[1]).read_text())
     serve(create_app(cfg), host='127.0.0.1', port=cfg.get('port', 8766), threads=4,
-          connection_limit=64, channel_timeout=20, max_request_body_size=4096,
+          connection_limit=16, channel_timeout=20, max_request_body_size=65*1024*1024,
           max_request_header_size=8192, ident='Arena')

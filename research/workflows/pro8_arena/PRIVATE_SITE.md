@@ -1,6 +1,6 @@
 # Private arena website
 
-Live site: https://openclaw-gui.tail0d430d.ts.net/
+Live site: https://kaggriculture-arena.tail0d430d.ts.net/
 
 Use **Continue with GitHub**. The app requests public identity only. Current repository members can view the results without joining Tailscale. The sign-in page is public; results are protected.
 
@@ -15,7 +15,7 @@ Use **Continue with GitHub**. The app requests public identity only. Current rep
 
 ## Services
 
-The mini PC runs `arena-web.service` as a dedicated `arena-web` system user. Code lives in `/opt/arena-web`; root-owned configuration is in `/etc/arena-web/config.json`; read-only exports are in `/var/lib/arena-web`. The service has no Docker membership, no home-directory access, and no write access to those paths. Its limits are one CPU and 256 MiB RAM.
+The mini PC runs `arena-web.service` as a dedicated `arena-web` system user. Code lives in `/opt/arena-web`; root-owned configuration is in `/etc/arena-web/config.json`; read-only exports are in `/var/lib/arena-web`. The service has no Docker membership, no home-directory access, and no write access to those paths. It can write only to the upload spool at `/var/spool/arena-web`. Uploaded code never runs in the web service. Its limits are one CPU and 256 MiB RAM.
 
 Waitress binds only to `127.0.0.1:8766`. Tailscale Funnel terminates HTTPS on port 443 and proxies to it. Do not expose port 8766 or serve the data directory directly. Funnel publishes the login endpoint; the application enforces repository membership.
 
@@ -32,3 +32,11 @@ Inspect `systemctl status arena-web.service` on the mini PC and `systemctl --use
 To take the website offline, run `sudo tailscale funnel --https=443 off` on the mini PC, then stop `arena-web.service`. This does not stop the continuous arena or daily tournaments.
 
 The security checks are targeted tests, not an independent security audit. Host administrators remain trusted, and any result already downloaded by an authorized user cannot be recalled.
+
+## Upload an agent
+
+Sign in and choose **Submit agent**. Enter a name and upload a Python file, ZIP, or Kaggle `.tar.gz` package, up to 64 MiB. Version defaults to a file hash. The default interface is `agent(observation, configuration)` or `agent(observation)` in `main.py`. Choose JSONL under Optional settings for stdin/stdout agents. A ZIP may include `arena.json` containing `run`, optional `build`, and optional `resources` for a custom entry point; commands run only inside the sandbox.
+
+**Your submissions** shows queued, registered, pending, placement-rated, active, or validation failure. Intake runs at the next coordinator tick; placement games receive the existing fair-share allocation. Passing validation does not automatically replace a champion. No GitHub issue, release, or commit is needed.
+
+The upload endpoint requires login and the correct Origin header. Each member can upload ten files per hour. Pending files share a 1 GiB queue limit. The mini PC stores uploads as inert bytes; WRX90 copies them, verifies their hash, checks archive safety, and submits them through the existing sandbox pipeline. Successful transfers allow the mini PC to discard its binary copy; receipts stay visible. Raw uploaded files and private receipts never go to GitHub. The member list and leaderboard exports remain read-only to the web service.

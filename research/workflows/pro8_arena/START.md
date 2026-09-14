@@ -4,7 +4,9 @@
 
 [Open the live results page](../../arena_live/README.md). The coordinator runs on WRX90 using CPU only. It publishes checked summaries to `feature/pro8-arena`; it does not merge into main or submit to Kaggle.
 
-You can submit an agent without running Pro8. Package your JSONL agent in a ZIP, upload it as a release asset in this private repository, then open an issue titled `[Arena] Your agent name`. Include this section, with your real asset ID and archive SHA-256:
+You can submit an agent without running Pro8. The easiest route is **Submit agent** on the [private website](https://kaggriculture-arena.tail0d430d.ts.net/): sign in, name your agent, and upload its file. [Formats and status guide](PRIVATE_SITE.md#upload-an-agent).
+
+The GitHub route remains available. Package your JSONL agent in a ZIP, upload it as a release asset in this private repository, then open an issue titled `[Arena] Your agent name`. Include this section, with your real asset ID and archive SHA-256:
 
 ````text
 ### Agent manifest
