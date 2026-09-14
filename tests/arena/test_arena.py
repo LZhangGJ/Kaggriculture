@@ -48,6 +48,32 @@ class ArenaTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             intake.inspect_zip(p)
 
+    def test_retirement_freezes_rating_and_reactivation_clears_it(self):
+        ids = self.roster()
+        frozen = dict(agent=ids[0], elo=1600, games=10, score=.6, contract='test')
+        store.write(self.root/'continuous-elo.json', dict(updated=store.now(), ratings=[frozen]))
+        old = store.read(self.root/'roster.json')
+        intake.set_roster(self.root, old[1:])
+        store.write(self.root/'continuous-elo.json', dict(updated=store.now(), ratings=[]))
+        intake.set_roster(self.root, old[1:])
+        a = store.read(self.root/'agents'/(ids[0]+'.json'))
+        self.assertEqual(a['retired_elo'], [frozen])
+        intake.set_roster(self.root, old)
+        self.assertNotIn('retired_elo', store.read(self.root/'agents'/(ids[0]+'.json')))
+
+    def test_identical_public_packages_share_one_roster_slot(self):
+        ids = self.roster()
+        original = store.read(self.root/'agents'/(ids[0]+'.json'))
+        m = dict(original['manifest'], origin=dict(kind='public', notebook='other/copy', version='2'))
+        duplicate = intake.submit(self.root, self.root/'artifacts'/(original['archive']+'.zip'), m)['agent']
+        a = store.read(self.root/'agents'/(duplicate+'.json'))
+        a['build_verified'] = True
+        store.write(self.root/'agents'/(duplicate+'.json'), a)
+        entries = store.read(self.root/'roster.json') + [dict(agent=duplicate, category='public', reason='test')]
+        intake.set_roster(self.root, entries)
+        self.assertEqual(len(store.read(self.root/'roster.json')), 3)
+        self.assertEqual(store.read(self.root/'agents'/(ids[0]+'.json'))['public_aliases'], ['other/copy'])
+
     def test_zip_symlink(self):
         p = self.root / "bad.zip"
         i = zipfile.ZipInfo("link")

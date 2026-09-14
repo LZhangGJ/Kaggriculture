@@ -91,9 +91,12 @@ def build(root, bootstrap=500):
         origin = a["manifest"].get("origin", {})
         is_public = origin.get("kind") == "public" or a.get("public_notebook", False) or row["id"] in public_ids
         ref = refresh_by_notebook.get(origin.get("notebook"), {})
-        row.update(agent_type="public" if is_public else "team", notebook=origin.get("notebook"),
+        row.update(aliases=a.get('public_aliases',[]), agent_type="public" if is_public else "team", notebook=origin.get("notebook"),
                    notebook_version=origin.get("version"), last_checked=ref.get("attempted"),
                    refresh_status=("stale" if ref and ref.get("date") != today else ref.get("status", "not configured")))
+        if is_public and a['status']=='archived':
+            row.update(retired=True,retired_at=a.get('retired_at'),refresh_status='retired - no longer updating',
+                       frozen_elo=a.get('retired_elo',[]),rating_updated=a.get('retired_rating_updated'))
     metadata = {a["id"]: a for a in public_agents}
     champion = read(root / "champion.json", {})
     discovery = read(root/'private/discovery.json',{})
@@ -128,6 +131,12 @@ def build(root, bootstrap=500):
                  '<table><tr><th>Agent</th><th>Elo</th><th>Games</th><th>Score</th><th>Contract</th></tr>']
     for r in elo_rows:
         sections.append(f"<tr><td>{name(r['agent'])}</td><td>{r['elo']:.1f}</td><td>{r['games']}</td><td>{pct(r['score'])}</td><td>{r['contract'][:10]}</td></tr>")
+    sections.append('</table>')
+    retired = [a for a in public_agents if a.get('retired')]
+    sections.append('<h2>Retired public agents</h2><p>Ratings frozen at retirement. No new matches or notebook updates; already scheduled games may finish.</p><table><tr><th>Agent</th><th>Frozen Elo</th><th>Games</th><th>Retired</th></tr>')
+    for a in retired:
+        for r in a.get('frozen_elo') or [{}]:
+            sections.append(f"<tr><td>{name(a['id'])} — RETIRED</td><td>{r.get('elo','—')}</td><td>{r.get('games','—')}</td><td>{escape(readable_time(a.get('retired_at')))}</td></tr>")
     sections.append('</table>')
     sections += ["<h2>Public notebook refresh</h2><p>Checked daily before the next roster freeze. Failed refreshes retain the last validated version.</p>"]
     sections.append(f"<p>Discovery last checked: {escape(readable_time(discovery.get('checked')))}. Found {discovery.get('found',0)} notebooks. Newcomers need a completed paired comparison before replacing a public agent.</p>")
@@ -204,6 +213,10 @@ def build(root, bootstrap=500):
     for r in elo_rows:
         badge=' **PUBLIC**' if metadata[r['agent']]['agent_type']=='public' else ''
         md.append(f"| {label(r['agent'])}{badge} | {r['elo']:.1f} | {r['games']} | {pct(r['score'])} | {r['contract'][:10]} |")
+    md += ['', '## Retired public agents', '', 'Frozen at retirement. No new matches or notebook updates; already scheduled games may finish.', '', '| Agent | Frozen Elo | Games | Retired |', '|---|---:|---:|---|']
+    for a in retired:
+        for r in a.get('frozen_elo') or [{}]:
+            md.append(f"| {label(a['id'])} **PUBLIC · RETIRED** | {r.get('elo','—')} | {r.get('games','—')} | {readable_time(a.get('retired_at'))} |")
     md += ["", "## Public refresh", "", "| Notebook | Status | Last successful check |", "|---|---|---|"]
     for r in refreshes:
         md.append(f"| {r['notebook']} | {r['status']} | {readable_time(r.get('successful'))} |")

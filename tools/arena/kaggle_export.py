@@ -99,7 +99,17 @@ def export(notebook, destination):
         if chosen is None:
             chosen = next((f for f in outputs.files if f.file_name in ('main.py', 'submission.py')), None)
         if chosen is None:
-            raise ValueError('No supported agent output')
+            from .notebook_source import extract
+            files=extract(api,notebook,kernel)
+            if before != kernel.get_kernel(query).metadata.current_version_number:
+                raise ValueError('Notebook changed during source extraction')
+            destination=Path(destination).resolve();destination.parent.mkdir(parents=True,exist_ok=True)
+            archive=destination.with_suffix('.zip');pack(files,archive);sha=file_hash(archive)
+            version=f'{before}-source-{sha[:12]}'
+            manifest=dict(name=slug,author=owner,version=version,run=['python','_arena_bridge.py'],sha256=sha,
+                          origin=dict(kind='public',notebook=notebook,version=version))
+            write(destination,dict(archive_path=str(archive),manifest=manifest))
+            return manifest
         blocks = bytearray()
         with requests.get(chosen.url, stream=True, timeout=45) as response:
             response.raise_for_status()

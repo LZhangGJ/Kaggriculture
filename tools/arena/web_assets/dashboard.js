@@ -11,6 +11,8 @@ function nameCell(id, clickable=false) {
   const label=element(clickable?'button':'span', a.name, clickable?'agent-link':'');
   if(clickable) label.onclick=()=>{detailId=id;renderDetail();};td.append(label);
   if(a.agent_type==='public')td.append(element('span','PUBLIC','badge'));
+  if(a.retired)td.append(element('span','RETIRED','badge'));
+  if(a.aliases?.length)td.append(element('small','Also published as: '+a.aliases.join(', '),'version'));
   td.append(element('small',a.version,'version'));return td;
 }
 function table(headers, rows) {
@@ -61,6 +63,12 @@ function render(){
       const rows=elo.filter(r=>r.contract===contract).sort((a,b)=>b.elo-a.elo).map((r,i)=>({r,i})).filter(({r})=>match(r.agent)).map(({r,i})=>[String(i+1),nameCell(r.agent),fmt(r.elo),fmt(r.games),pct(r.score)]);
       $('table').append(table(['Rank','Agent / version','Elo','Games','Win + ½ draw'],rows));
     }
+    const retired=data.agents.filter(a=>a.retired&&match(a.id));
+    if(retired.length){
+      $('table').append(element('h3','Retired public agents'),element('p','No new matches or notebook updates. Ratings below are frozen at retirement. Previously scheduled games may still finish in their original tournament.'));
+      const rows=retired.flatMap(a=>(a.frozen_elo?.length?a.frozen_elo:[{}]).map(r=>[nameCell(a.id),fmt(r.elo),fmt(r.games),pct(r.score),date(a.retired_at)]));
+      $('table').append(table(['Agent / version','Frozen Elo','Games','Win + ½ draw','Retired'],rows));
+    }
   }else if(view==='bt'){
     $('title').textContent='Bradley–Terry tournaments';$('description').textContent='Draws count as half wins. No seat adjustment; weak regularization keeps estimates finite. Completed daily runs include 95% seed-bootstrap intervals. Cumulative views use resolved daily and continuous games between active versions within one contract; no intervals yet. Select an agent for opponent and seat results. Ratings across disconnected groups are not comparable.';
     if(!tournaments.length){$('table').textContent='No daily tournament yet.';$('timestamp').textContent='Last updated: Not yet';return;}
@@ -74,7 +82,7 @@ function render(){
   }else{
     $('title').textContent='Agent roster';$('description').textContent='Exact versions keep separate results. Public notebooks are labeled. Pending versions must pass evaluation before joining the active pool.';
     $('timestamp').textContent='Last updated: '+date(data.updated);
-    $('table').replaceChildren(table(['Agent / version','Source','State','In arena'],data.agents.filter(a=>match(a.id)).map(a=>[nameCell(a.id),a.agent_type==='public'?'Public notebook':'Team',a.status,active.has(a.id)?'Yes':'No'])));
+    $('table').replaceChildren(table(['Agent / version','Source','State','In arena'],data.agents.filter(a=>match(a.id)).map(a=>[nameCell(a.id),a.agent_type==='public'?'Public notebook':'Team',a.retired?'Retired — no longer updating':a.status,active.has(a.id)?'Yes':'No'])));
   }
 }
 async function refresh(){try{const r=await fetch('/api/data',{cache:'no-store'});if(r.status===401){location.replace('/');return;}if(!r.ok)throw Error();data=await r.json();render();}catch{$('notice').replaceChildren(element('p','Could not refresh. Showing the last received results; check their timestamps.','warning'));}}

@@ -14,6 +14,8 @@ def refresh_daily(root):
     date = datetime.now(ZoneInfo(cfg["timezone"])).date().isoformat()
     result = []
     for source in cfg.get("public_sources", []):
+        if source.get('enabled') is False:
+            continue
         sid = ident(source["id"])
         path = root / "private/public-refresh" / (sid + ".json")
         old = read(path, {})

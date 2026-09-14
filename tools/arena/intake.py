@@ -6,6 +6,7 @@ import shutil
 import stat
 import zipfile
 import re
+import hashlib
 from pathlib import Path, PurePosixPath
 
 from .store import digest, event, file_hash, ident, now, read, write
@@ -100,6 +101,14 @@ def submit(root, archive, manifest, receipt=None):
     return record
 
 
+def executable_identity(root, agent):
+    """Compare full package contents and execution settings, ignoring ZIP timestamps."""
+    with zipfile.ZipFile(Path(root)/'artifacts'/(agent['archive']+'.zip')) as z:
+        files = sorted((i.filename, hashlib.sha256(z.read(i)).hexdigest()) for i in z.infolist() if not i.is_dir())
+    m = agent['manifest']
+    return digest([files, m['run'], m.get('build', []), m.get('resources', {})])
+
+
 def set_roster(root, entries):
     root = Path(root)
     cfg = read(root / "config.json")
@@ -114,6 +123,24 @@ def set_roster(root, entries):
         a = read(root / "agents" / (ident(e["agent"]) + ".json"))
         if not a or not a["build_verified"]:
             raise ValueError("Roster agent has not passed sandbox build/protocol checks")
+    unique, seen, aliases = [], {}, {}
+    for e in entries:
+        a = read(root/'agents'/(e['agent']+'.json'))
+        if e['category'] == 'public':
+            fingerprint = executable_identity(root, a)
+            if fingerprint in seen:
+                aliases.setdefault(seen[fingerprint], []).append(a['manifest'].get('origin', {}).get('notebook', a['manifest']['name']))
+                continue
+            seen[fingerprint] = e['agent']
+        unique.append(e)
+    entries = unique
+    if len(entries) < 2:
+        raise ValueError('Roster needs at least two distinct agents')
+    for aid, refs in aliases.items():
+        path = root/'agents'/(aid+'.json')
+        a = read(path)
+        a['public_aliases'] = sorted(set(a.get('public_aliases', []) + refs))
+        write(path, a)
     old = read(root / "roster.json", [])
     write(root / "snapshots" / (digest([now(), old, entries]) + ".json"), {"created": now(), "before": old, "after": entries})
     write(root / "roster.json", entries)
@@ -121,7 +148,15 @@ def set_roster(root, entries):
     for aid in new_ids | {e["agent"] for e in old}:
         path = root / "agents" / (aid + ".json")
         a = read(path)
+        if aid not in new_ids and a.get('status') != 'archived':
+            elo = read(root/'continuous-elo.json', {})
+            a['retired_at'] = now()
+            a['retired_elo'] = [r for r in elo.get('ratings',[]) if r['agent']==aid]
+            a['retired_rating_updated'] = elo.get('updated')
         a["status"] = "active" if aid in new_ids else "archived"
+        if aid in new_ids:
+            for key in ('retired_at','retired_elo','retired_rating_updated'):
+                a.pop(key,None)
         if any(e["agent"] == aid and e["category"] == "public" for e in entries):
             a["public_notebook"] = True
         write(path, a)
