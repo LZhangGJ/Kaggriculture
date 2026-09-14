@@ -116,7 +116,8 @@ function renderEloHistory(){
   const host=element('section',null,'elo-history');$('controls').append(host);
   const histories=data.continuous_elo.history||[];
   host.append(element('h3','Elo over time'));
-  host.append(element('p',data.continuous_elo.history_note||'Rating history has not been recorded yet.'));
+  host.append(element('p','Actual ratings and a 100-game rolling average. Refreshes with the leaderboard.'));
+  const method=element('details');method.append(element('summary','How to read this chart'),element('p',data.continuous_elo.history_note||'Rating history has not been recorded yet.'));host.append(method);
   const active=new Set(data.roster.map(r=>r.agent));
   const available=histories.filter(h=>active.has(h.agent)&&h.points.length);
   if(!available.length){host.append(element('p','Waiting for the first recorded rating update.'));return;}
@@ -129,7 +130,7 @@ function renderEloHistory(){
   const choices=element('details');choices.append(element('summary','Choose agents (up to six)'));
   for(const h of pool){const label=element('label'),cb=element('input');cb.type='checkbox';cb.checked=historyAgents.has(h.agent);cb.onchange=()=>{if(cb.checked&&historyAgents.size>=6){cb.checked=false;return;}if(cb.checked)historyAgents.add(h.agent);else historyAgents.delete(h.agent);redraw();};label.style.display='block';label.append(cb,document.createTextNode(' '+agent(h.agent).name+' · '+agent(h.agent).version));choices.append(label);}host.append(choices);
   const buttons=element('div');buttons.style.margin='12px 0';
-  for(const [key,title]of [['both','Both'],['raw','Actual'],['average','100-game average']]){const b=element('button',title);b.setAttribute('aria-pressed',historyMode===key);b.onclick=()=>{historyMode=key;redraw();};buttons.append(b);}
+  for(const [key,title]of [['both','Both'],['raw','Actual'],['average','100-game average']]){const b=element('button',title);b.setAttribute('aria-pressed',historyMode===key);if(historyMode===key)b.style.cssText='background:#284d38;color:white';b.onclick=()=>{historyMode=key;redraw();};buttons.append(b);}
   const axis=element('select');axis.setAttribute('aria-label','Chart horizontal axis');for(const [key,title]of [['time','Time (UTC)'],['games','Games per agent']]){const o=element('option',title);o.value=key;axis.append(o);}axis.value=historyAxis;axis.onchange=()=>{historyAxis=axis.value;redraw();};buttons.append(axis);host.append(buttons);
   const selected=pool.filter(h=>historyAgents.has(h.agent));if(!selected.length){host.append(element('p','Select an agent to show its history.'));return;}
   const colors=['#2166ac','#b65b08','#8a3f8c','#287650','#ba3545','#655ac7'];
