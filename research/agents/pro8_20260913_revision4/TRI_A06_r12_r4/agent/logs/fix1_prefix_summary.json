@@ -1,0 +1,1171 @@
+[
+  {
+    "case": "market_smart_v8_568422814_seat0",
+    "matched": 719,
+    "calls": 719,
+    "first_divergence": null,
+    "seconds": 5.341310540999984,
+    "last_debug": {
+      "r3_fix1_terminal_checks": 0,
+      "r3_fix1_terminal_rejected": 0,
+      "r3_fix1_terminal_errors": 0,
+      "r3_fix1_terminal_last": null
+    },
+    "rows": [
+      {
+        "step": 648,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              8
+            ],
+            [
+              "BUY_SEED",
+              "CARROT",
+              11
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              8
+            ],
+            [
+              "BUY_SEED",
+              "CARROT",
+              11
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 672,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              3
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              3
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 696,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      }
+    ],
+    "new_games": 0,
+    "scope": "Candidate compared to its actual r3 source trajectory only until first divergence."
+  },
+  {
+    "case": "moon_v215_31485687_seat0",
+    "matched": 719,
+    "calls": 719,
+    "first_divergence": null,
+    "seconds": 5.848086661000025,
+    "last_debug": {
+      "r3_fix1_terminal_checks": 0,
+      "r3_fix1_terminal_rejected": 0,
+      "r3_fix1_terminal_errors": 0,
+      "r3_fix1_terminal_last": null
+    },
+    "rows": [
+      {
+        "step": 648,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              8
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              8
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 672,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 696,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      }
+    ],
+    "new_games": 0,
+    "scope": "Candidate compared to its actual r3 source trajectory only until first divergence."
+  },
+  {
+    "case": "submission_56149565_1827852203_seat0",
+    "matched": 719,
+    "calls": 719,
+    "first_divergence": null,
+    "seconds": 6.654272154000068,
+    "last_debug": {
+      "r3_fix1_terminal_checks": 1,
+      "r3_fix1_terminal_rejected": 0,
+      "r3_fix1_terminal_errors": 0,
+      "r3_fix1_terminal_last": {
+        "step": 672,
+        "scenarios": [
+          {
+            "public_supply_scale": 0,
+            "keep_own_cash": 99296,
+            "keep_rival_cash": 76166,
+            "supply_own_cash": 100108,
+            "supply_rival_cash": 76166,
+            "own_gain": 812,
+            "margin_gain": 812
+          },
+          {
+            "public_supply_scale": 0.85,
+            "keep_own_cash": 97539,
+            "keep_rival_cash": 85446,
+            "supply_own_cash": 98166,
+            "supply_rival_cash": 85494,
+            "own_gain": 627,
+            "margin_gain": 531
+          }
+        ],
+        "accepted": true
+      }
+    },
+    "rows": [
+      {
+        "step": 648,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              7
+            ],
+            [
+              "BUY_SEED",
+              "CARROT",
+              7
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              7
+            ],
+            [
+              "BUY_SEED",
+              "CARROT",
+              7
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 672,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "WHEAT",
+              1
+            ],
+            [
+              "SELL",
+              "EGG",
+              8
+            ],
+            [
+              "BUY_PRODUCT",
+              "FERTILIZER",
+              9
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "SELL",
+              "WHEAT",
+              1
+            ],
+            [
+              "SELL",
+              "EGG",
+              8
+            ],
+            [
+              "BUY_PRODUCT",
+              "FERTILIZER",
+              9
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 1,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": {
+            "step": 672,
+            "scenarios": [
+              {
+                "public_supply_scale": 0,
+                "keep_own_cash": 99296,
+                "keep_rival_cash": 76166,
+                "supply_own_cash": 100108,
+                "supply_rival_cash": 76166,
+                "own_gain": 812,
+                "margin_gain": 812
+              },
+              {
+                "public_supply_scale": 0.85,
+                "keep_own_cash": 97539,
+                "keep_rival_cash": 85446,
+                "supply_own_cash": 98166,
+                "supply_rival_cash": 85494,
+                "own_gain": 627,
+                "margin_gain": 531
+              }
+            ],
+            "accepted": true
+          }
+        }
+      },
+      {
+        "step": 696,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 1,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": {
+            "step": 672,
+            "scenarios": [
+              {
+                "public_supply_scale": 0,
+                "keep_own_cash": 99296,
+                "keep_rival_cash": 76166,
+                "supply_own_cash": 100108,
+                "supply_rival_cash": 76166,
+                "own_gain": 812,
+                "margin_gain": 812
+              },
+              {
+                "public_supply_scale": 0.85,
+                "keep_own_cash": 97539,
+                "keep_rival_cash": 85446,
+                "supply_own_cash": 98166,
+                "supply_rival_cash": 85494,
+                "own_gain": 627,
+                "margin_gain": 531
+              }
+            ],
+            "accepted": true
+          }
+        }
+      }
+    ],
+    "new_games": 0,
+    "scope": "Candidate compared to its actual r3 source trajectory only until first divergence."
+  },
+  {
+    "case": "submission_56149565_805057947_seat0",
+    "matched": 672,
+    "calls": 673,
+    "first_divergence": 672,
+    "seconds": 5.954012847000058,
+    "last_debug": {
+      "r3_fix1_terminal_checks": 1,
+      "r3_fix1_terminal_rejected": 1,
+      "r3_fix1_terminal_errors": 0,
+      "r3_fix1_terminal_last": {
+        "step": 672,
+        "scenarios": [
+          {
+            "public_supply_scale": 0,
+            "keep_own_cash": 103667,
+            "keep_rival_cash": 82101,
+            "supply_own_cash": 103134,
+            "supply_rival_cash": 82101,
+            "own_gain": -533,
+            "margin_gain": -533
+          },
+          {
+            "public_supply_scale": 0.85,
+            "keep_own_cash": 101843,
+            "keep_rival_cash": 94001,
+            "supply_own_cash": 101234,
+            "supply_rival_cash": 94093,
+            "own_gain": -609,
+            "margin_gain": -793
+          }
+        ],
+        "accepted": false
+      }
+    },
+    "rows": [
+      {
+        "step": 648,
+        "same": true,
+        "fix1": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              8
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "PASS"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              8
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 0,
+          "r3_fix1_terminal_rejected": 0,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": null
+        }
+      },
+      {
+        "step": 672,
+        "same": false,
+        "fix1": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              5
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "r3": {
+          "farmer": [
+            "COLLECT_FERTILIZER"
+          ],
+          "hands": [],
+          "market": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              5
+            ],
+            [
+              "BUY_PRODUCT",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        },
+        "audit": {
+          "r3_fix1_terminal_checks": 1,
+          "r3_fix1_terminal_rejected": 1,
+          "r3_fix1_terminal_errors": 0,
+          "r3_fix1_terminal_last": {
+            "step": 672,
+            "scenarios": [
+              {
+                "public_supply_scale": 0,
+                "keep_own_cash": 103667,
+                "keep_rival_cash": 82101,
+                "supply_own_cash": 103134,
+                "supply_rival_cash": 82101,
+                "own_gain": -533,
+                "margin_gain": -533
+              },
+              {
+                "public_supply_scale": 0.85,
+                "keep_own_cash": 101843,
+                "keep_rival_cash": 94001,
+                "supply_own_cash": 101234,
+                "supply_rival_cash": 94093,
+                "own_gain": -609,
+                "margin_gain": -793
+              }
+            ],
+            "accepted": false
+          }
+        }
+      }
+    ],
+    "new_games": 0,
+    "scope": "Candidate compared to its actual r3 source trajectory only until first divergence."
+  }
+]

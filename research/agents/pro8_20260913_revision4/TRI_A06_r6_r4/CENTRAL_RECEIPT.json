@@ -1,0 +1,93 @@
+{
+  "status": "CENTRALLY_REBUILT_SOURCE_VERIFIED_DIAGNOSTICS_COMPLETE_NOT_ACCEPTED",
+  "utc": "2026-09-13T23:53:30.335390+00:00",
+  "native_sha256": "09d000103cbdfda138f38f99d0a9f9bdb8c061b4dae7dde22ae54f15a5c84065",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "delivery_native_received": false,
+  "source_inputs_verified": 104,
+  "production_inputs": 42,
+  "source_delta_sha256": "1d77bc4ec012cd043ac198a0d63ae9c21becbefe0e2aefa9a6d102e8a1bcb9d1",
+  "default_build_units_passed": true,
+  "real_diagnostic_games": 4,
+  "acceptance_games": 0,
+  "pairs": [
+    {
+      "id": "thomas_955_v2_20452605_seat1",
+      "parent_margin": -9510.0,
+      "new_margin": -7506.0,
+      "margin_delta": 2004.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_563140739_seat1",
+      "parent_margin": -86.0,
+      "new_margin": 1021.0,
+      "margin_delta": 1107.0,
+      "same_actions": false
+    },
+    {
+      "id": "aurax_reactive_v1_395620922_seat0",
+      "parent_margin": 497.0,
+      "new_margin": 1240.0,
+      "margin_delta": 743.0,
+      "same_actions": false
+    },
+    {
+      "id": "submission_56149565_1075824552_seat0",
+      "parent_margin": 1459.0,
+      "new_margin": 1459.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    }
+  ],
+  "rows": [
+    {
+      "name": "TRI_A06_r6_r4",
+      "version": "central_rebuilt",
+      "reason": "loss",
+      "id": "thomas_955_v2_20452605_seat1",
+      "candidate_cash": 97670.0,
+      "opponent_cash": 105176.0,
+      "margin": -7506.0,
+      "action_sha256": "4d9178e3f059387890180d03bcff517a7e17b7f2a40285d4c2375be2d672e3a7",
+      "seconds": 13.846924344001309,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r4/central/diagnostics/central_rebuilt/thomas_955_v2_20452605_seat1/RESULT.json"
+    },
+    {
+      "name": "TRI_A06_r6_r4",
+      "version": "central_rebuilt",
+      "reason": "loss",
+      "id": "submission_56149565_563140739_seat1",
+      "candidate_cash": 139978.0,
+      "opponent_cash": 138957.0,
+      "margin": 1021.0,
+      "action_sha256": "67a4a496b7b49e3990af80a085df6a5f76aa9783278c18ddf362d6cb52700446",
+      "seconds": 16.60464813499857,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r4/central/diagnostics/central_rebuilt/submission_56149565_563140739_seat1/RESULT.json"
+    },
+    {
+      "name": "TRI_A06_r6_r4",
+      "version": "central_rebuilt",
+      "reason": "narrow_win",
+      "id": "aurax_reactive_v1_395620922_seat0",
+      "candidate_cash": 84614.0,
+      "opponent_cash": 83374.0,
+      "margin": 1240.0,
+      "action_sha256": "de12aa19193bf825d0ac03887d5bf56157edf0d09a7c39937f66b9994e530cdb",
+      "seconds": 12.235894301000371,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r4/central/diagnostics/central_rebuilt/aurax_reactive_v1_395620922_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A06_r6_r4",
+      "version": "central_rebuilt",
+      "reason": "narrow_win",
+      "id": "submission_56149565_1075824552_seat0",
+      "candidate_cash": 89896.0,
+      "opponent_cash": 88437.0,
+      "margin": 1459.0,
+      "action_sha256": "b53d8107a67010e334823bf1f398f4c14619611adc446208c30f9062444e1230",
+      "seconds": 15.109758840999348,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A06_r6_r4/central/diagnostics/central_rebuilt/submission_56149565_1075824552_seat0/RESULT.json"
+    }
+  ]
+}

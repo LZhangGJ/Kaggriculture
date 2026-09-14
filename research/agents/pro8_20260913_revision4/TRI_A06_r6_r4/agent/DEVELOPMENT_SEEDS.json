@@ -1,0 +1,59 @@
+{
+  "new_sampled_match_seeds": [],
+  "new_competitive_games": 0,
+  "current_round_feedback_cases": [
+    "thomas_955_v2_20452605_seat1",
+    "submission_56149565_563140739_seat1",
+    "aurax_reactive_v1_395620922_seat0",
+    "submission_56149565_1075824552_seat0"
+  ],
+  "current_round_feedback_seeds": [
+    20452605,
+    395620922,
+    563140739,
+    1075824552
+  ],
+  "reused_historical_regression_cases": [
+    "aurax_reactive_v1_1816494862_seat0",
+    "aurax_reactive_v1_852484341_seat0",
+    "market_smart_v8_2535322_seat1",
+    "market_smart_v8_389573676_seat0",
+    "moon_v215_290316560_seat0",
+    "soil_v219g_2535322_seat1",
+    "submission_56149565_1623731725_seat1",
+    "submission_56149565_201542742_seat0",
+    "submission_56149565_2029247155_seat0",
+    "submission_56149565_389573676_seat0",
+    "thomas_955_v2_1395450535_seat1",
+    "thomas_955_v2_1612180274_seat0"
+  ],
+  "reused_historical_regression_seeds": [
+    2535322,
+    201542742,
+    290316560,
+    389573676,
+    852484341,
+    1395450535,
+    1612180274,
+    1623731725,
+    1816494862,
+    2029247155
+  ],
+  "all_seeds_used_in_tests": [
+    2535322,
+    20452605,
+    201542742,
+    290316560,
+    389573676,
+    395620922,
+    563140739,
+    852484341,
+    1075824552,
+    1395450535,
+    1612180274,
+    1623731725,
+    1816494862,
+    2029247155
+  ],
+  "synthetic_note": "Artificial fixtures have no match seed. The inherited ObservedDayScenario constructs its simulator with initializer seed 0 then overwrites the entire visible start state; it is not a new seed-0 game and no unknown future shops/weeds are used."
+}

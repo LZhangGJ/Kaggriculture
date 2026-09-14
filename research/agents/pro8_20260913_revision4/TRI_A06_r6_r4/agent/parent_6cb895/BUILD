@@ -1,0 +1,72 @@
+TRI_A06_r6_r3 — ACTUAL PRODUCTION BUILD RECEIPT
+
+Compiler: g++ (Debian 14.2.0-19) 14.2.0
+Architecture: Linux x86-64; tested via file/ldd in validation/linux_native.txt
+Python: 3.13.5
+Actual command: /usr/bin/g++ -std=c++20 -O3 -DNDEBUG -march=x86-64 -ffp-contract=off -DR2_LOCAL_SALE_TIMING=1 -DR2_FINITE_FERTILIZER=1 -DR2_CROP_CLOCK_MODE=1 -DR2_OBSERVE_PUBLIC_TRADES=1 -DR2_SALE_CLOCK_MODE=0 -fPIC -shared -Wl,-Bsymbolic -DR2_MARKET_INTEGRAL=0 -DR2_STARTUP_SUPPLY_MODE=2 -DA06_EXEC_MODE=2 /mnt/data/TRI_A06_r6_r3/policy/bridge.cpp /mnt/data/TRI_A06_r6_r3/policy/executor/vendor/simulator.cpp -o /mnt/data/TRI_A06_r6_r3/policy/a06.so
+Flags: -std=c++20 -O3 -DNDEBUG -march=x86-64 -ffp-contract=off -DR2_LOCAL_SALE_TIMING=1 -DR2_FINITE_FERTILIZER=1 -DR2_CROP_CLOCK_MODE=1 -DR2_OBSERVE_PUBLIC_TRADES=1 -DR2_SALE_CLOCK_MODE=0 -fPIC -shared -Wl,-Bsymbolic -DR2_MARKET_INTEGRAL=0 -DR2_STARTUP_SUPPLY_MODE=2 -DA06_EXEC_MODE=2
+Compile seconds (builder receipt): 25.332733851000057
+Native SHA256: 6cb895db1484045699e8b81f11ed1d753507e02d9d57af81d037845dbf73441e
+Parent native SHA256: b10d86c102f68e5863559e6c049369571cbc123aa4db71db908a10c1ab14eab1
+
+PRODUCTION SOURCE / CONFIG SHA256 (actual builder inputs):
+2c82a835191ba21065b32f810b60467c830610309226f4b77ac0cf37e14b528c  policy/a06_live_reinvestment.inc
+6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f  policy/agent.py
+9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c  policy/animal_service_dp.hpp
+3f5d57726a00081b51867f687a8ebb905fa319d4a92892f9215c68b109e25585  policy/bridge.cpp
+850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457  policy/conditional_market.hpp
+b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997  policy/config.json
+ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0  policy/executor/a06_fleet_dp.hpp
+2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea  policy/executor/compile_choices.hpp
+f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e  policy/executor/crop_delivery.hpp
+70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae  policy/executor/day_consequence.hpp
+de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd  policy/executor/idle_task_handoff.hpp
+698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9  policy/executor/intraday_admission.hpp
+2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe  policy/executor/investment_candidates.hpp
+37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf  policy/executor/joint_portfolio.hpp
+ee8637483968ae441cdb6c9a86f4b4e99fa157a1fe484cd4013bd0f54fc0ffda  policy/executor/labor_funding.hpp
+b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637  policy/executor/live_execution_repairs.hpp
+f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe  policy/executor/observation_view.hpp
+2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c  policy/executor/observed_day_scenario.hpp
+2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988  policy/executor/pack_memo.hpp
+c32cbb6734e9f18c6c3484cbbcd1efe46382801b84f8657de03096aca3bb5953  policy/executor/policy.hpp
+e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98  policy/executor/regret_pack_incremental.inc
+a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e  policy/executor/resource_exchange.hpp
+15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a  policy/executor/rotation_calendar.hpp
+9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d  policy/executor/rotation_cash.hpp
+f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c  policy/executor/service_recovery.hpp
+fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da  policy/executor/vendor/simulator.cpp
+19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae  policy/executor/vendor/simulator.hpp
+94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061  policy/finite_fertilizer.hpp
+fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2  policy/learned_value.hpp
+3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9  policy/local_sale_timing.hpp
+871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297  policy/observation_codec.hpp
+7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4  policy/observed_crop_clock.hpp
+a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd  policy/ongoing_maintenance_dp.hpp
+19e9c39dee13e22d84f1e91cd84df046f0d5e27b756b6176546b13c87653df5c  policy/planner.hpp
+16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289  policy/proposals.hpp
+2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35  policy/public_flow_scenario.hpp
+7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef  policy/public_trade_ledger.hpp
+6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260  policy/sale_clock.hpp
+3a490e3f60509e515176f36221310e849d857452df4f28c2bf6f0a9698b654b7  policy/search.hpp
+4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d  policy/startup_supply.hpp
+ed4730a7e468428d0ef99aa72ee95126a41294baf51ebe8d9016a426673ffa7c  policy/triad.hpp
+
+ENTRY / BUILD FRONTEND SHA256:
+694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7  main.py
+75b5831f022e1af999241b5f33f2b97bc42dbc3bc56b2d00684ec10cb9ff6f7d  build.py
+c427f2d632011362c828293f76ad91dd6072394619fb7c0cd92c4b10ad678df9  build_a06.py
+4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85  COMPILER_FLAGS.json
+
+Actual optimized build and --unit command: python -B /mnt/data/TRI_A06_r6_r3/build.py --unit
+Raw logs: validation/final_build_and_units.stdout, .stderr, .time
+Final focused optimized tests: validation/final_optimized_units.* and build/r3_units_final/
+Undefined-behavior instrumentation is TEST-ONLY; shipped native is the O3 library above.
+No network/build downloads or external source dependencies. System C++ compiler/standard library and Python standard library are prerequisites.
+
+CLEAN-EXTRACTION FINAL VERIFICATION (source/native unchanged):
+Command: python -B /mnt/data/a06r3_work/clean_release_check/build.py --unit
+Actual exit status: 0
+Whole build + test wall time: 71.41560276100017 seconds
+All 41 source input hashes and native match the shipped identity.
+Raw actual command/compiler/time/RSS/results: validation/clean_rebuild/

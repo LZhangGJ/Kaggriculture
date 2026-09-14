@@ -1,0 +1,317 @@
+[
+  {
+    "id": "thomas_955_v2_1612180274_seat0",
+    "reason": "Severe public loss with zero physical stock loss; realized price and portfolio diagnosis",
+    "rows": {
+      "parent_r2": {
+        "id": "thomas_955_v2_1612180274_seat0",
+        "opponent": "thomas_955_v2",
+        "seed": 1612180274,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 100622.0,
+        "opponent_cash": 111839.0,
+        "margin": -11217.0
+      },
+      "candidate_r3": {
+        "id": "thomas_955_v2_1612180274_seat0",
+        "opponent": "thomas_955_v2",
+        "seed": 1612180274,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 110324.0,
+        "opponent_cash": 115391.0,
+        "margin": -5067.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/thomas_955_v2_1612180274_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/thomas_955_v2_1612180274_seat0.json.gz"
+    }
+  },
+  {
+    "id": "market_smart_v8_389573676_seat0",
+    "reason": "Severe public loss with zero physical stock loss; realized price and portfolio diagnosis",
+    "rows": {
+      "parent_r2": {
+        "id": "market_smart_v8_389573676_seat0",
+        "opponent": "market_smart_v8",
+        "seed": 389573676,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 81631.0,
+        "opponent_cash": 90213.0,
+        "margin": -8582.0
+      },
+      "candidate_r3": {
+        "id": "market_smart_v8_389573676_seat0",
+        "opponent": "market_smart_v8",
+        "seed": 389573676,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 104061.0,
+        "opponent_cash": 103144.0,
+        "margin": 917.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/market_smart_v8_389573676_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/market_smart_v8_389573676_seat0.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_389573676_seat0",
+    "reason": "Worst R2 loss among first16 complete seeds",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_389573676_seat0",
+        "opponent": "submission_56149565",
+        "seed": 389573676,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 84305.0,
+        "opponent_cash": 102277.0,
+        "margin": -17972.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_389573676_seat0",
+        "opponent": "submission_56149565",
+        "seed": 389573676,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 94215.0,
+        "opponent_cash": 85822.0,
+        "margin": 8393.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_389573676_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_389573676_seat0.json.gz"
+    }
+  },
+  {
+    "id": "moon_v215_290316560_seat0",
+    "reason": "Narrow public win retained for regression checks",
+    "rows": {
+      "parent_r2": {
+        "id": "moon_v215_290316560_seat0",
+        "opponent": "moon_v215",
+        "seed": 290316560,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 99807.0,
+        "opponent_cash": 99791.0,
+        "margin": 16.0
+      },
+      "candidate_r3": {
+        "id": "moon_v215_290316560_seat0",
+        "opponent": "moon_v215",
+        "seed": 290316560,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 99811.0,
+        "opponent_cash": 99787.0,
+        "margin": 24.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/moon_v215_290316560_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/moon_v215_290316560_seat0.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_201542742_seat0",
+    "reason": "Narrow R2 win retained for regression checks",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_201542742_seat0",
+        "opponent": "submission_56149565",
+        "seed": 201542742,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 134258.0,
+        "opponent_cash": 133255.0,
+        "margin": 1003.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_201542742_seat0",
+        "opponent": "submission_56149565",
+        "seed": 201542742,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 86905.0,
+        "opponent_cash": 92116.0,
+        "margin": -5211.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_201542742_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_201542742_seat0.json.gz"
+    }
+  },
+  {
+    "id": "market_smart_v8_2535322_seat1",
+    "reason": "Historical land-bundle case: Worst public loss",
+    "rows": {
+      "parent_r2": {
+        "id": "market_smart_v8_2535322_seat1",
+        "opponent": "market_smart_v8",
+        "seed": 2535322,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 73446.0,
+        "opponent_cash": 88774.0,
+        "margin": -15328.0
+      },
+      "candidate_r3": {
+        "id": "market_smart_v8_2535322_seat1",
+        "opponent": "market_smart_v8",
+        "seed": 2535322,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 85676.0,
+        "opponent_cash": 94803.0,
+        "margin": -9127.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/market_smart_v8_2535322_seat1.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/market_smart_v8_2535322_seat1.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_1623731725_seat1",
+    "reason": "Historical land-bundle case: Worst R2 loss",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_1623731725_seat1",
+        "opponent": "submission_56149565",
+        "seed": 1623731725,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 79733.0,
+        "opponent_cash": 81669.0,
+        "margin": -1936.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_1623731725_seat1",
+        "opponent": "submission_56149565",
+        "seed": 1623731725,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 75340.0,
+        "opponent_cash": 71263.0,
+        "margin": 4077.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_1623731725_seat1.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_1623731725_seat1.json.gz"
+    }
+  },
+  {
+    "id": "thomas_955_v2_1395450535_seat1",
+    "reason": "Historical land-bundle case: Narrow public win to protect",
+    "rows": {
+      "parent_r2": {
+        "id": "thomas_955_v2_1395450535_seat1",
+        "opponent": "thomas_955_v2",
+        "seed": 1395450535,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 116473.0,
+        "opponent_cash": 116344.0,
+        "margin": 129.0
+      },
+      "candidate_r3": {
+        "id": "thomas_955_v2_1395450535_seat1",
+        "opponent": "thomas_955_v2",
+        "seed": 1395450535,
+        "seat": 1,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 147314.0,
+        "opponent_cash": 128608.0,
+        "margin": 18706.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/thomas_955_v2_1395450535_seat1.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/thomas_955_v2_1395450535_seat1.json.gz"
+    }
+  },
+  {
+    "id": "submission_56149565_2029247155_seat0",
+    "reason": "Historical land-bundle case: Narrow R2 win to protect",
+    "rows": {
+      "parent_r2": {
+        "id": "submission_56149565_2029247155_seat0",
+        "opponent": "submission_56149565",
+        "seed": 2029247155,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 83584.0,
+        "opponent_cash": 83549.0,
+        "margin": 35.0
+      },
+      "candidate_r3": {
+        "id": "submission_56149565_2029247155_seat0",
+        "opponent": "submission_56149565",
+        "seed": 2029247155,
+        "seat": 0,
+        "terminal": true,
+        "error": null,
+        "steps": 719,
+        "candidate_cash": 90888.0,
+        "opponent_cash": 83128.0,
+        "margin": 7760.0
+      }
+    },
+    "first_own_action_difference": 0,
+    "traces": {
+      "parent_r2": "own_traces/parent_r2/submission_56149565_2029247155_seat0.json.gz",
+      "candidate_r3": "own_traces/candidate_r3/submission_56149565_2029247155_seat0.json.gz"
+    }
+  }
+]

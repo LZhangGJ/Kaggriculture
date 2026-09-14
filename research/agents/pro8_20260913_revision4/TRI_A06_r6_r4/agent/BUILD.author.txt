@@ -1,0 +1,10 @@
+TRI_A06_r6_r3_bundle_fix1
+Actual production compiler: g++ (Debian 14.2.0-19) 14.2.0
+Actual command:
+/usr/bin/g++ -std=c++20 -O3 -DNDEBUG -march=x86-64 -ffp-contract=off -DR2_LOCAL_SALE_TIMING=1 -DR2_FINITE_FERTILIZER=1 -DR2_CROP_CLOCK_MODE=1 -DR2_OBSERVE_PUBLIC_TRADES=1 -DR2_SALE_CLOCK_MODE=0 -fPIC -shared -Wl,-Bsymbolic -DR2_MARKET_INTEGRAL=0 -DR2_STARTUP_SUPPLY_MODE=2 -DA06_EXEC_MODE=2 /mnt/data/TRI_A06_r6_r3_bundle_fix1/policy/bridge.cpp /mnt/data/TRI_A06_r6_r3_bundle_fix1/policy/executor/vendor/simulator.cpp -o /mnt/data/TRI_A06_r6_r3_bundle_fix1/policy/a06.so
+Native SHA256: 6f1ea0c50035b5c33a313cf7e61e2f98f7da826fda52863d67d7c086301250de
+Source SHA256s: SOURCE_HASHES.json and policy/a06.BUILD.json
+Offline production rebuild: python build.py
+Focused new tests: python tests/build_fix1.py
+The inherited --unit suite is preserved but not rerun in this supplement; its earlier parent results are not fix1 results.
+Actual build wall time/RSS: validation_fix1/compile.*. Parent byte-identical rebuild: validation_fix1/diagnosis/baseline_compile.*

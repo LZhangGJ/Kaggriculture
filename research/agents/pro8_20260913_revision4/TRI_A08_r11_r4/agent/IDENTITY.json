@@ -1,0 +1,41 @@
+{
+  "revision": "TRI_A08_r11_r4",
+  "status": "SOURCE_FIXED_AND_LOCALLY_VALIDATED_CANDIDATE; CENTRAL_COMPETITIVE_ACCEPTANCE_PENDING",
+  "frozen_utc": "2026-09-13T22:33:57.772838+00:00",
+  "dispatch_start_utc": "2026-09-13T21:44:00Z",
+  "hard_deadline_utc": "2026-09-13T23:44:00Z",
+  "root_entry": "main.py",
+  "production_native": "policy/tri_a08_r11_r4.so",
+  "native_sha256": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f",
+  "source_manifest_sha256": "803f0e3b4c92f43f2f5a44b5b549716b94f753710c6620a6729921ea70802063",
+  "source_and_build_input_count": 50,
+  "parent_revision": "TRI_A08_r11_r3",
+  "parent_zip_sha256": "00d0afa3cc2f9c34acdaec50c313ca3acd36e22a82da1d8010c573c88c223e27",
+  "parent_native_sha256": "49c98f2c1930cf741bdd9e2eb7da9af398117bb64f903f9375c7da9350e8fa64",
+  "feedback_zip_sha256": "5071f41ccd191e76976ac77ac8d1685ab74607c5dcfda955a26033a447bcd3c0",
+  "source_diff_counts": {
+    "unchanged": 43,
+    "modified": 4,
+    "added": 3,
+    "removed": 0
+  },
+  "config_sha256": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+  "complete_rolling_routes": 1,
+  "delivery_handoff": 1,
+  "new_full_competitive_games": 0,
+  "current_feedback_only": {
+    "completed": 401,
+    "wins": 244,
+    "incomplete": true,
+    "is_candidate_result": false,
+    "is_holdout": false
+  },
+  "central_acceptance": {
+    "strict_wins_required": 1306,
+    "total_games": 1536,
+    "draws_count_as_wins": false
+  },
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "clang_native_sha256": "b68c12b9a3b44b43d296a1294f83d51aacafa4d83c7dfb89617414888614cd3b",
+  "gcc13_3_tested_locally": false
+}

@@ -1,0 +1,89 @@
+{
+  "TRI_A08_r11_r4": {
+    "archive_sha256": "12eff50cc55a4f5dfa31ad0789503b478ae6f11898b57b0a1f62c578da860cee",
+    "native_sha256": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f",
+    "native_path": "policy/tri_a08_r11_r4.so",
+    "artifact_origin": "author-delivered native and complete light production archive",
+    "runtime_assets": {
+      "main.py": "f0d99a3e48ce2433c7c756b178c24ad435a9b0ef996e1a64b0be429911d4db53",
+      "policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+      "policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+      "policy/tri_a08_r11_r4.so": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f"
+    },
+    "title": "A08 r11 revision 4",
+    "archive": "author_delivery.zip",
+    "files": 141,
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "overall": {
+      "games": 1536,
+      "wins": 1190,
+      "draws": 0,
+      "win_rate": 0.7747395833333334,
+      "mean_own_terminal_cash": 105827.86783854167,
+      "mean_opponent_terminal_cash": 91285.93359375,
+      "mean_margin": 14541.934244791666,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  },
+  "TRI_A06_r6_r4": {
+    "archive_sha256": "3c35737c7fe7abf34f9a7285c4c15f17d76e7ddf25eaed059d2622d4b6ef3d18",
+    "native_sha256": "09d000103cbdfda138f38f99d0a9f9bdb8c061b4dae7dde22ae54f15a5c84065",
+    "native_path": "policy/a06.so",
+    "artifact_origin": "author source delta applied to exact parent; centrally rebuilt native, not original author binary",
+    "runtime_assets": {
+      "main.py": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+      "policy/agent.py": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f",
+      "policy/config.json": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+      "policy/a06.so": "09d000103cbdfda138f38f99d0a9f9bdb8c061b4dae7dde22ae54f15a5c84065"
+    },
+    "title": "A06 r6 revision 4",
+    "archive": "reconstructed_from_source.zip",
+    "files": 254,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "overall": {
+      "games": 1536,
+      "wins": 1280,
+      "draws": 0,
+      "win_rate": 0.8333333333333334,
+      "mean_own_terminal_cash": 107692.169921875,
+      "mean_opponent_terminal_cash": 90443.95703125,
+      "mean_margin": 17248.212890625,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  },
+  "TRI_A06_r12_r4": {
+    "archive_sha256": "c1f561501c87679054566bf6c4e8be1774341ec53375d80259b255547c1d8b8a",
+    "native_sha256": "19d08db512ef7b08bec9a2789201b3dd64a27c845d0df1024e2f2adc69213ceb",
+    "native_path": "policy/a06.so",
+    "artifact_origin": "author source delta applied to exact parent; centrally rebuilt native, not original author binary",
+    "runtime_assets": {
+      "main.py": "3abfea2d5b4f3b380eb6054d924665ea2dfedc095b8dfe1f6282cd40495d0cda",
+      "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+      "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+      "policy/a06.so": "19d08db512ef7b08bec9a2789201b3dd64a27c845d0df1024e2f2adc69213ceb"
+    },
+    "title": "A06 r12 calendar revision 4",
+    "archive": "reconstructed_from_source.zip",
+    "files": 342,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "overall": {
+      "games": 1536,
+      "wins": 1238,
+      "draws": 0,
+      "win_rate": 0.8059895833333334,
+      "mean_own_terminal_cash": 108247.580078125,
+      "mean_opponent_terminal_cash": 91659.15755208333,
+      "mean_margin": 16588.422526041668,
+      "minimum_wins": 1306,
+      "cash_above_diagnostic_reference": false,
+      "win_rate_passed": false,
+      "accepted": false
+    }
+  }
+}

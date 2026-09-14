@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runtime_assets": {
+    "main.py": "694e92607a1b96cff6488f89187234ff6900b7ab72d77a2e4abfb20518f682e7",
+    "policy/agent.py": "6d3bc3ddd6cb453ba2c66342d1be7100c740d2067d42b62dea326025f97e428f",
+    "policy/config.json": "b3ce29ea056ca564a66edc30f46c98fef36df6b468d580043c51cc55ee23e997",
+    "policy/a06.so": "09d000103cbdfda138f38f99d0a9f9bdb8c061b4dae7dde22ae54f15a5c84065"
+  },
+  "cases": [
+    {
+      "seat": 0,
+      "case": "aurax_reactive_v1_395620922_seat0",
+      "matched_calls": 48
+    },
+    {
+      "seat": 1,
+      "case": "thomas_955_v2_20452605_seat1",
+      "matched_calls": 48
+    }
+  ],
+  "source_root": "/tmp/TRI_A06_r6_r4_source_ft8pvh80/work",
+  "calls_per_entry": 96,
+  "new_games": 0,
+  "acceptance_games": 0
+}

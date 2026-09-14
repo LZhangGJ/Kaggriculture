@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runtime_assets": {
+    "main.py": "f0d99a3e48ce2433c7c756b178c24ad435a9b0ef996e1a64b0be429911d4db53",
+    "policy/agent.py": "5c2bfb1264e41a3edfb8f0646e09ee589311f874db62dfffb48db48c71f0dc09",
+    "policy/config.json": "65efd0f5822d40a86440f1837640a54ee1ea60b8f8b61e3be99da2d97591f72c",
+    "policy/tri_a08_r11_r4.so": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f"
+  },
+  "cases": [
+    {
+      "seat": 0,
+      "case": "market_smart_v8_563140739_seat0",
+      "matched_calls": 48
+    },
+    {
+      "seat": 1,
+      "case": "submission_56149565_1075824552_seat1",
+      "matched_calls": 48
+    }
+  ],
+  "source_root": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/package",
+  "calls_per_entry": 96,
+  "new_games": 0,
+  "acceptance_games": 0
+}

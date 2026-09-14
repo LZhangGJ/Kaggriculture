@@ -1,0 +1,1 @@
+Exact delivered candidate identity is in DELIVERY_IDENTITY.json. Read DIAGNOSTIC_NOTES.md and CASES.json. Source code is already in the original author chat. Full parent results retain all1536 outcomes. No opponent source, private observations or joint-action sequences are in this feedback.

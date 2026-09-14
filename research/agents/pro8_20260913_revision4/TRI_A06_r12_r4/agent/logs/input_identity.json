@@ -1,0 +1,14 @@
+[
+  {
+    "name": "TRI_A06_r12_r3.zip",
+    "sha256": "2e577b72aa047a7c9c36197d32f7730c87dcfca98daaf6a3bf95d82b98ef6e1b",
+    "files": 745,
+    "bytes": 14581004
+  },
+  {
+    "name": "TRI_A06_r12_r3_closed_loop_feedback.zip",
+    "sha256": "6560bda6b5ddd20ef5629539e1887be71e4e81f1a763810e990d63474b51694e",
+    "files": 20,
+    "bytes": 4572726
+  }
+]

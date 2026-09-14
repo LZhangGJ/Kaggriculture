@@ -1,0 +1,13 @@
+{
+  "changed_production_inputs": {
+    "policy/executor/policy.hpp": {
+      "parent": "f5e9afc57a25dc0f21cc28467b48dab65b0a8fa437ad84859471a5fe8f754e01",
+      "candidate": "f42f552e30e2bc6aab673390dad252d4fb4b154f346918885846dc3bead9a266"
+    }
+  },
+  "new_production_inputs": {
+    "policy/executor/delivery_commitment.hpp": "ef2b3bd009d235a22b8a83d3753019175c202273998e5b39c0dbe3dc88bcc10b"
+  },
+  "root_main_unchanged": true,
+  "flags_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "name": "TRI_A06_r6_r4",
+  "status": "source-built candidate; NOT competitively accepted",
+  "sole_parent_zip_name": "TRI_A06_r6_r3_bundle_fix1_parent.zip",
+  "sole_parent_zip_sha256": "ed0723c90fba40808b597b042800e90dbf6e45a6b5d2b7918412267b1d479dd5",
+  "sole_parent_native_sha256": "6f1ea0c50035b5c33a313cf7e61e2f98f7da826fda52863d67d7c086301250de",
+  "native_path": "policy/a06.so",
+  "native_sha256": "9c37d066f024d9f385390808552783246db22001f555102db9bb0e323756994c",
+  "source_count": 42,
+  "unchanged_parent_source_count": 40,
+  "modified_parent_source_count": 1,
+  "added_source_count": 1,
+  "production_frozen_utc": "2026-09-13T22:22:05.144964+00:00",
+  "budget_start_utc": "2026-09-13T21:44:00Z",
+  "deadline_utc": "2026-09-13T23:44:00Z",
+  "new_competitive_games": 0,
+  "fresh_1536_acceptance_status": "not run here; central evaluator required"
+}

@@ -1,0 +1,7 @@
+#include "bridge.cpp"
+extern "C" const char*td_fixture(void*ptr){auto&h=*static_cast<Handle*>(ptr);auto&c=h.policy.live.core;std::ostringstream j;j<<"{\"day\":"<<c.day<<",\"phase\":"<<c.phase<<",\"step\":"<<c.last_step<<",\"planned_land\":"<<c.planned_land<<",\"feed_stock_target\":"<<c.feed_stock_target<<",\"crop_service_day\":"<<c.crop_service_day<<",\"animal_service_day\":"<<c.animal_service_day;
+ auto array=[&](const char*name,auto a){j<<",\""<<name<<"\":[";for(size_t k=0;k<a.size();k++){if(k)j<<",";j<<int(a[k]);}j<<"]";};
+ array("daily_need",c.daily_need);array("prepared_seed_need",c.prepared_seed_need);array("crop_birth",c.crop_birth);array("crop_kind",c.crop_kind);array("crop_water",c.crop_water);array("crop_fertilize",c.crop_fertilize);array("triad_crop_age",c.triad_crop_age);array("plant_not_before",c.plant_not_before);array("service_feed",c.service_feed);array("service_care",c.service_care);
+ j<<",\"target\":[";bool b=false;for(auto[p,k]:c.target){if(b)j<<",";b=true;j<<"["<<p<<","<<k<<"]";}j<<"],\"remaining_plans\":[";
+ for(size_t u=0;u<c.plans.size();u++){if(u)j<<",";j<<"[";const auto&p=c.plans[u];for(size_t k=p.index;k<p.a.size();k++){if(k!=p.index)j<<",";auto a=p.a[k];j<<"["<<int(a.op)<<","<<int(a.item)<<","<<a.quantity<<","<<p.target[k]<<"]";}j<<"]";}
+ j<<"],\"settings\":[";const double*s=reinterpret_cast<const double*>(&h.policy.live.s);for(int k=0;k<triad::SETTINGS_COUNT;k++){if(k)j<<",";j<<s[k];}j<<"]}";h.text=j.str();return h.text.c_str();}

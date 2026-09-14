@@ -1,0 +1,280 @@
+[
+  {
+    "version": "parent_r2",
+    "step": 387,
+    "requested": 1,
+    "observed_arrived": 1,
+    "post_own_unit_shed_fertilizer": 0,
+    "next_observed_shed_fertilizer": 1,
+    "actual_whole_step_cash_delta": -45.0,
+    "other_orders": [
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "parent_r2",
+    "step": 485,
+    "requested": 1,
+    "observed_arrived": 1,
+    "post_own_unit_shed_fertilizer": 0,
+    "next_observed_shed_fertilizer": 1,
+    "actual_whole_step_cash_delta": -28.0,
+    "other_orders": [
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "candidate_r3",
+    "step": 384,
+    "requested": 4,
+    "observed_arrived": 4,
+    "post_own_unit_shed_fertilizer": 13,
+    "next_observed_shed_fertilizer": 17,
+    "actual_whole_step_cash_delta": -1714.0,
+    "other_orders": [
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        15
+      ],
+      [
+        "BUY_SEED",
+        "TOMATO",
+        3
+      ],
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        15
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        4
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "candidate_r3",
+    "step": 480,
+    "requested": 9,
+    "observed_arrived": 9,
+    "post_own_unit_shed_fertilizer": 8,
+    "next_observed_shed_fertilizer": 17,
+    "actual_whole_step_cash_delta": 2653.0,
+    "other_orders": [
+      [
+        "SELL",
+        "STRAWBERRY",
+        9
+      ],
+      [
+        "SELL",
+        "MELON",
+        24
+      ],
+      [
+        "SELL",
+        "EGG",
+        8
+      ],
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        16
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ],
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        16
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        9
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "candidate_r3",
+    "step": 600,
+    "requested": 3,
+    "observed_arrived": 3,
+    "post_own_unit_shed_fertilizer": 15,
+    "next_observed_shed_fertilizer": 18,
+    "actual_whole_step_cash_delta": -198.0,
+    "other_orders": [
+      [
+        "BUY_SEED",
+        "WHEAT",
+        9
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        3
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "candidate_r3",
+    "step": 624,
+    "requested": 1,
+    "observed_arrived": 1,
+    "post_own_unit_shed_fertilizer": 15,
+    "next_observed_shed_fertilizer": 16,
+    "actual_whole_step_cash_delta": -132.0,
+    "other_orders": [
+      [
+        "BUY_SEED",
+        "WHEAT",
+        6
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  },
+  {
+    "version": "candidate_r3",
+    "step": 672,
+    "requested": 1,
+    "observed_arrived": 1,
+    "post_own_unit_shed_fertilizer": 14,
+    "next_observed_shed_fertilizer": 15,
+    "actual_whole_step_cash_delta": -359.0,
+    "other_orders": [
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        5
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "price_scope": "All inputs are actual own-visible. Quantity is observed net fertilizer arrival; individual monetary attribution still requires separating simultaneous other orders."
+  }
+]

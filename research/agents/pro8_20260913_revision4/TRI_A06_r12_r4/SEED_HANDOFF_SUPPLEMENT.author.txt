@@ -1,0 +1,310 @@
+{
+  "document_type": "Seed handoff supplement; administrative extraction/recovery, NOT an original execution log",
+  "candidate_to_keep": "TRI_A06_r12_r4",
+  "original_candidate_zip_sha256": "ad7b2da0244254dd9be24365fe33880053995275702b4dd32b2e32beaea3aef4",
+  "original_candidate_native_sha256": "70f1fd2f8cc5957ea3b57091a81f8c868e2725ec1a7aabb3d0e425d08386ac84",
+  "source_or_configuration_changes": false,
+  "new_tests_or_games_executed_for_this_handoff": 0,
+  "new_seed_values_generated_for_this_handoff": 0,
+  "original_manifest": {
+    "archive": "TRI_A06_r12_r4.zip",
+    "member": "DEVELOPMENT_SEEDS.json",
+    "copy": "TRI_A06_r12_r4_DEVELOPMENT_SEEDS.json.txt",
+    "bytes": 19998,
+    "sha256": "f808384f46a5bb7a786f1ad4d92e7f37add6b63c26db6352d8a7cd46f60be146",
+    "byte_identical_to_archive_member": true,
+    "also_byte_identical_in": "TRI_A06_r12_r4_production.zip",
+    "note_zh": "原清单直接按字节复制，未重排或补写。它包含早先轮次的继承清单；不能把这些都标为第四轮新运行。"
+  },
+  "preserved_file_evidence": {
+    "round4_full_games": {
+      "unique_seeds": [
+        2609134411,
+        2609134412
+      ],
+      "completed_records": [
+        {
+          "seed": 2609134411,
+          "candidate_seat": 0,
+          "control": false,
+          "completed_steps": 719,
+          "member": "logs/full_duels/candidate_2609134411_seat0.summary.json",
+          "member_sha256": "4d06699f9df77551bd7004c3ddd13924c3d8f3329478059ed7d83b385bbdefb3"
+        },
+        {
+          "seed": 2609134411,
+          "candidate_seat": 1,
+          "control": false,
+          "completed_steps": 719,
+          "member": "logs/full_duels/candidate_2609134411_seat1.summary.json",
+          "member_sha256": "1e6ec0cdaca0ebb06aa02fc8e63d3c25a57e42ae18fcbbdb6f8fc04c9fbef687"
+        },
+        {
+          "seed": 2609134412,
+          "candidate_seat": 0,
+          "control": false,
+          "completed_steps": 719,
+          "member": "logs/full_duels/candidate_2609134412_seat0.summary.json",
+          "member_sha256": "99d639d65dd581dfefd669e1aa4e038b38b33b1d7bfa170b7a8161b769d3ef94"
+        },
+        {
+          "seed": 2609134412,
+          "candidate_seat": 1,
+          "control": false,
+          "completed_steps": 719,
+          "member": "logs/full_duels/candidate_2609134412_seat1.summary.json",
+          "member_sha256": "0e32bf47ba8e94e8b4204d212f5b16452622a9007cdd6f83e2cc9b90d8908b80"
+        },
+        {
+          "seed": 2609134411,
+          "candidate_seat": null,
+          "control": true,
+          "completed_steps": 719,
+          "member": "logs/full_duels/control_2609134411_seat0.summary.json",
+          "member_sha256": "447baf6317dcf4a5b5dd79e98f4b0ed2960351145e005143f5ed68d620bd8155"
+        },
+        {
+          "seed": 2609134412,
+          "candidate_seat": null,
+          "control": true,
+          "completed_steps": 719,
+          "member": "logs/full_duels/control_2609134412_seat0.summary.json",
+          "member_sha256": "1a41e71d367bb8e813cfc634fbc7b868e40b102d909b95ec7d82be429d2a482e"
+        }
+      ],
+      "scope": "Four candidate-versus-exact-parent games and two parent controls, as preserved. No new games now."
+    },
+    "saved_trace_cases": [
+      {
+        "seed": 20452605,
+        "seat": 0,
+        "case": "market_smart_v8_20452605_seat0",
+        "retained_member": "feedback/own_traces/market_smart_v8_20452605_seat0.json.gz",
+        "use": "saved own-visible trace and pre-divergence probes; not a new full match"
+      },
+      {
+        "seed": 2053437081,
+        "seat": 0,
+        "case": "aurax_reactive_v1_2053437081_seat0",
+        "retained_member": "feedback/own_traces/aurax_reactive_v1_2053437081_seat0.json.gz",
+        "use": "saved own-visible trace and pre-divergence probes; not a new full match"
+      },
+      {
+        "seed": 20276875,
+        "seat": 0,
+        "case": "submission_56149565_20276875_seat0",
+        "retained_member": "feedback/own_traces/submission_56149565_20276875_seat0.json.gz",
+        "use": "saved own-visible trace and pre-divergence probes; not a new full match"
+      },
+      {
+        "seed": 20276875,
+        "seat": 1,
+        "case": "submission_56149565_20276875_seat1",
+        "retained_member": "feedback/own_traces/submission_56149565_20276875_seat1.json.gz",
+        "use": "saved own-visible trace and pre-divergence probes; not a new full match"
+      }
+    ],
+    "conditional_official_initialization": {
+      "seed": 2609134401,
+      "use": "Regenerated official bounded continuations and no-finance cases; not the seed of the historical observation",
+      "source_member": "research/official_terminal_forks.py",
+      "source_sha256": "7d843d7ba1460bb6693de677b385fa6da9043203ede0d9d157b3643a0ec8c04f",
+      "result_members": [
+        "logs/official_forks_final/SUMMARY.json",
+        "logs/official_no_finance_final/SUMMARY.json"
+      ],
+      "includes_development_reuse": true
+    },
+    "fixed_route_official_initialization": {
+      "seed": 2609134402,
+      "use": "Fixed-route official/native execution comparison",
+      "source_member": "research/check_fixed_oracle.py",
+      "source_sha256": "c156aad6a204e3d0253243541c7b92675c12cb853c4236b673401247dbe150e9",
+      "result_members": [
+        "logs/fixed_oracle_official/SUMMARY.json",
+        "logs/oracle_v3_saved/fixed_oracle_official/SUMMARY.json"
+      ]
+    },
+    "internal_deterministic_scenario_initialization": {
+      "seed": 0,
+      "scope": "Fixed Simulator constructor value in current-state projections; not an independently sampled match seed",
+      "source_members": [
+        {
+          "member": "policy/public_flow_scenario.hpp",
+          "sha256": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+          "literal": "env_(Config{},0)"
+        },
+        {
+          "member": "policy/executor/observed_day_scenario.hpp",
+          "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+          "literal": "env_(Config{},0)"
+        }
+      ],
+      "note_zh": "固定构造值0单独登记。原文件中继承的其他初始化值不因此成为第四轮新用seed。"
+    },
+    "economic_supplied_diagnostic": {
+      "seed": 20452605,
+      "seat": 0,
+      "case": "market_smart_v8_20452605_seat0",
+      "new_games": 0,
+      "source_archive": "TRI_A06_r12_r4_economic_recovery.zip",
+      "source_member": "supplied_economic_evidence/RESULT.json",
+      "scope": "Already-supplied frozen-parent saved-trace forecast diagnostic; no new full match"
+    },
+    "public_snapshot_exposure_only": {
+      "seeds": [
+        20276875,
+        20452605,
+        120929846,
+        346363238,
+        395620922,
+        546104002,
+        563140739,
+        792353078,
+        813094663,
+        987048294,
+        994047570,
+        1075824552,
+        1290183652,
+        1559161139,
+        1704556772,
+        2053437081
+      ],
+      "rows": 371,
+      "source_member": "feedback/PARTIAL_ROWS.json",
+      "scope": "Exposed public/mixed development rows, NOT all locally executed. Do not use this list as a local match count."
+    },
+    "inherited_history": {
+      "source": "TRI_A06_r12_r4_DEVELOPMENT_SEEDS.json.txt#/inherited_parent_reference",
+      "scope": "Complete inherited seed lists retained verbatim in original attachment; historical/exposed references, not newly executed round4 trials."
+    }
+  },
+  "economic_supplement_conversation_recovery_only": {
+    "evidence_level": "Prior recorded tool outputs / script contents in this conversation; original temporary economic files are not present in the current runtime",
+    "note_zh": "以下值从已有会话中的实际完成回执和脚本记录恢复；不是从当前保留的经济原始日志读取，也不因此晋级任何经济候选。",
+    "completed_full_games": {
+      "unique_seeds": [
+        2609134441
+      ],
+      "candidate_seats": [
+        0,
+        1
+      ],
+      "completed_steps_each": 719,
+      "use": "Unpromoted economic prototype versus exact frozen r4, one seed both seats",
+      "prototype_native_sha256": "fad904b14030d16ce85a1a149e3a6315ef8744b3a302eda0e42bb891e9d49ade",
+      "opponent_native_sha256": "70f1fd2f8cc5957ea3b57091a81f8c868e2725ec1a7aabb3d0e425d08386ac84",
+      "recorded_completion_window_utc": "2026-09-13T23:12:11Z to 2026-09-13T23:13:52Z",
+      "historical_result_paths": [
+        "candidate/logs/full_parent_final/candidate_2609134441_seat0.summary.json",
+        "candidate/logs/full_parent_final/candidate_2609134441_seat1.summary.json"
+      ],
+      "original_work_root_not_recovered": "/mnt/data/a06_r4_fix1_work",
+      "correction_zh": "登记这两场已在会话回执中出现的经济试验，不将它们并入冻结r4的四场候选对局，也不维持“经济阶段完全没有运行新整局”的错误遗漏。"
+    },
+    "official_conditional_initialization": {
+      "seed": 2609134421,
+      "use": "Economic pending-stock conditional official continuations, fresh synthetic world with declared stock/supply assumptions",
+      "source_evidence": "Historical research/official_pending_forks.py explicitly replaced SEED=2609134401 with SEED=2609134421; completed parent/candidate result outputs explicitly report seed2609134421.",
+      "example_completed_output_utc": "2026-09-13T22:52:44Z",
+      "example_case": "market_smart_v8_20452605_seat0",
+      "example_start_step": 408,
+      "example_steps": 24,
+      "historical_seed_registration": "prepare_delivery_metadata.py set conditional_official_engine_seed=2609134421 and full_game_attempts seed2609134441 for seats0/1",
+      "scope_limit": "This confirms the named pending-stock experiment family. It does not establish the seed of every counterexample described in the separate economic recovery status."
+    },
+    "saved_trace_seed_values": [
+      20276875,
+      20452605,
+      2053437081
+    ],
+    "saved_trace_case_names": [
+      "market_smart_v8_20452605_seat0",
+      "aurax_reactive_v1_2053437081_seat0",
+      "submission_56149565_20276875_seat0",
+      "submission_56149565_20276875_seat1"
+    ],
+    "internal_synthetic_constructor_seed": 0,
+    "performance_results_not_reissued_as_validated_candidate": true
+  },
+  "unrecovered_or_unrecorded": {
+    "economic_recovery_archive": "TRI_A06_r12_r4_economic_recovery.zip",
+    "archive_sha256": "88537dbc127b4bd35da367c02b2b521dc6bba8d0c4fcabb2f27533f4c719031e",
+    "status_member": "ECONOMIC_RECOVERY_STATUS.json",
+    "status_member_sha256": "c73afd00853d89b689e0f5ee7535c8abc23463cd4b620538d8afc227e933ce7f",
+    "status_has_seed_fields": false,
+    "counterexample_seed_mappings": [
+      {
+        "development_stage": "early one-day filter",
+        "official_conditional_horizon": 72,
+        "condition": "early hypothetical pending sales",
+        "seed": null,
+        "reason": "No numerical seed is recorded in preserved recovery status; original raw economic logs are missing. Not assigned by inference."
+      },
+      {
+        "development_stage": "three-day filter",
+        "official_conditional_horizon": 143,
+        "condition": "no extra pending stock beside synthetic visible liquidator",
+        "seed": null,
+        "reason": "No numerical seed is recorded in preserved recovery status; original raw economic logs are missing. Not assigned by inference."
+      },
+      {
+        "development_stage": "broader portfolio prototype",
+        "official_conditional_horizon": 267,
+        "condition": "early hypothetical pending sales",
+        "seed": null,
+        "reason": "No numerical seed is recorded in preserved recovery status; original raw economic logs are missing. Not assigned by inference."
+      },
+      {
+        "development_stage": "broader portfolio prototype",
+        "official_conditional_horizon": 267,
+        "condition": "late hypothetical pending sales",
+        "seed": null,
+        "reason": "No numerical seed is recorded in preserved recovery status; original raw economic logs are missing. Not assigned by inference."
+      }
+    ],
+    "note_zh": "72、143及两条267步经济反例的具体初始化seed，在保留状态文件中未记录；本次取回的会话证据也未建立与2609134421的逐项对应。不推测这些数值，不以空数组表示它们未使用seed。",
+    "all_economic_attempts_exhaustively_recovered": false
+  },
+  "registry_summary": {
+    "confirmed_round4_full_match_seed_values": [
+      2609134411,
+      2609134412,
+      2609134441
+    ],
+    "confirmed_saved_trace_seed_values": [
+      20276875,
+      20452605,
+      2053437081
+    ],
+    "confirmed_official_synthetic_initialization_values": [
+      2609134401,
+      2609134402,
+      2609134421
+    ],
+    "internal_fixed_scenario_constructor_values": [
+      0
+    ],
+    "public_snapshot_exposed_seed_values": [
+      20276875,
+      20452605,
+      120929846,
+      346363238,
+      395620922,
+      546104002,
+      563140739,
+      792353078,
+      813094663,
+      987048294,
+      994047570,
+      1075824552,
+      1290183652,
+      1559161139,
+      1704556772,
+      2053437081
+    ],
+    "inherited_lists_location": "Original attachment, inherited_parent_reference",
+    "next_panel_seeds_selected_here": false,
+    "note_zh": "完整对局、已见公开开发样本、合成初始化及继承历史分开登记。下一轮排除已见公开样本时同时保留原清单内的继承历史；不把合成初始化当作真实公开对局。不声称已恢复全部丢失经济尝试的seed。"
+  }
+}

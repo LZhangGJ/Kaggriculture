@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-13T20:37:03.551894+00:00",
+  "parent_zip_sha256": "a6737f9f0f4a1d4963a70e5c4beafbf3d02d5d15238f3e2e5bdbd6c0c832f021",
+  "parent_native_sha256": "6cb895db1484045699e8b81f11ed1d753507e02d9d57af81d037845dbf73441e",
+  "changed_file": "policy/executor/policy.hpp",
+  "parent_sha256": "c32cbb6734e9f18c6c3484cbbcd1efe46382801b84f8657de03096aca3bb5953",
+  "candidate_sha256": "f5e9afc57a25dc0f21cc28467b48dab65b0a8fa437ad84859471a5fe8f754e01"
+}

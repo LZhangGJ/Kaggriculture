@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runtime_assets": {
+    "main.py": "3abfea2d5b4f3b380eb6054d924665ea2dfedc095b8dfe1f6282cd40495d0cda",
+    "policy/agent.py": "54e6ac778d75247837a78cbbee15f3e522b2ab96659c36435410f7b1f31826dc",
+    "policy/config.json": "ae611b3a052fae69ef971335583c5bacf9a9b6d08efd5bf43eed33262e2c5016",
+    "policy/a06.so": "19d08db512ef7b08bec9a2789201b3dd64a27c845d0df1024e2f2adc69213ceb"
+  },
+  "cases": [
+    {
+      "seat": 0,
+      "case": "market_smart_v8_20452605_seat0",
+      "matched_calls": 48
+    },
+    {
+      "seat": 1,
+      "case": "submission_56149565_20276875_seat1",
+      "matched_calls": 48
+    }
+  ],
+  "source_root": "/tmp/TRI_A06_r12_r4_source_dvj1brl3/work",
+  "calls_per_entry": 96,
+  "new_games": 0,
+  "acceptance_games": 0
+}

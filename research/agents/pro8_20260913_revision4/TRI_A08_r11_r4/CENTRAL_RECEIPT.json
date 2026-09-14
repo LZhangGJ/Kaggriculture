@@ -1,0 +1,144 @@
+{
+  "status": "READY_FOR_CENTRAL_PANEL_NOT_ACCEPTED",
+  "utc": "2026-09-14T00:09:42.945580+00:00",
+  "zip_sha256": "12eff50cc55a4f5dfa31ad0789503b478ae6f11898b57b0a1f62c578da860cee",
+  "native_sha256": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f",
+  "native_path": "policy/tri_a08_r11_r4.so",
+  "manifest_files_verified": 140,
+  "source_files_verified": 50,
+  "local_native_sha256": "8e59396dcc0ec1cc32c48f78143e5c4ecf9e80093accb5b15425f8cc62fa30fa",
+  "author_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "local_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "default_build_and_unit_suite_passed": true,
+  "real_diagnostic_games": 8,
+  "cross_compiler_complete_pairs": 4,
+  "acceptance_games": 0,
+  "pairs": [
+    {
+      "id": "market_smart_v8_563140739_seat0",
+      "parent_margin": -9991.0,
+      "new_margin": -9991.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_1704556772_seat0",
+      "parent_margin": -1732.0,
+      "new_margin": -1732.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "thomas_955_v2_813094663_seat0",
+      "parent_margin": 265.0,
+      "new_margin": 265.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    },
+    {
+      "id": "submission_56149565_1075824552_seat1",
+      "parent_margin": 22.0,
+      "new_margin": 22.0,
+      "margin_delta": 0.0,
+      "same_actions": true
+    }
+  ],
+  "rows": [
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "delivered",
+      "reason": "loss",
+      "id": "market_smart_v8_563140739_seat0",
+      "candidate_cash": 103802.0,
+      "opponent_cash": 113793.0,
+      "margin": -9991.0,
+      "action_sha256": "0e7335ee5d0e8d15b98b161fd9d4da6f723b5e6bfe71ebb4c9f5187b5b8e5e9f",
+      "seconds": 13.218028874000083,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/delivered/market_smart_v8_563140739_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "rebuilt",
+      "reason": "loss",
+      "id": "market_smart_v8_563140739_seat0",
+      "candidate_cash": 103802.0,
+      "opponent_cash": 113793.0,
+      "margin": -9991.0,
+      "action_sha256": "0e7335ee5d0e8d15b98b161fd9d4da6f723b5e6bfe71ebb4c9f5187b5b8e5e9f",
+      "seconds": 14.092530142999749,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/rebuilt/market_smart_v8_563140739_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "delivered",
+      "reason": "loss",
+      "id": "submission_56149565_1704556772_seat0",
+      "candidate_cash": 102750.0,
+      "opponent_cash": 104482.0,
+      "margin": -1732.0,
+      "action_sha256": "a45d963db5372a9a9d808c2363c4ff89588776024a4a2127a5349069a582fda8",
+      "seconds": 20.44500119299846,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/delivered/submission_56149565_1704556772_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "rebuilt",
+      "reason": "loss",
+      "id": "submission_56149565_1704556772_seat0",
+      "candidate_cash": 102750.0,
+      "opponent_cash": 104482.0,
+      "margin": -1732.0,
+      "action_sha256": "a45d963db5372a9a9d808c2363c4ff89588776024a4a2127a5349069a582fda8",
+      "seconds": 21.191030580999723,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/rebuilt/submission_56149565_1704556772_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "delivered",
+      "reason": "narrow_win",
+      "id": "thomas_955_v2_813094663_seat0",
+      "candidate_cash": 109466.0,
+      "opponent_cash": 109201.0,
+      "margin": 265.0,
+      "action_sha256": "30d5e748fe147ceca7d77d1a6c586ceb2410c0de8917ae90a0787694514e3002",
+      "seconds": 13.46820881900021,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/delivered/thomas_955_v2_813094663_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "rebuilt",
+      "reason": "narrow_win",
+      "id": "thomas_955_v2_813094663_seat0",
+      "candidate_cash": 109466.0,
+      "opponent_cash": 109201.0,
+      "margin": 265.0,
+      "action_sha256": "30d5e748fe147ceca7d77d1a6c586ceb2410c0de8917ae90a0787694514e3002",
+      "seconds": 13.497610132000773,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/rebuilt/thomas_955_v2_813094663_seat0/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "delivered",
+      "reason": "narrow_win",
+      "id": "submission_56149565_1075824552_seat1",
+      "candidate_cash": 79468.0,
+      "opponent_cash": 79446.0,
+      "margin": 22.0,
+      "action_sha256": "dccd7bf7a434b35eeea9106f05e6fea4470134e75f2a056f88cab30b80112c90",
+      "seconds": 17.624612725998304,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/delivered/submission_56149565_1075824552_seat1/RESULT.json"
+    },
+    {
+      "name": "TRI_A08_r11_r4",
+      "version": "rebuilt",
+      "reason": "narrow_win",
+      "id": "submission_56149565_1075824552_seat1",
+      "candidate_cash": 79468.0,
+      "opponent_cash": 79446.0,
+      "margin": 22.0,
+      "action_sha256": "dccd7bf7a434b35eeea9106f05e6fea4470134e75f2a056f88cab30b80112c90",
+      "seconds": 17.79016382899863,
+      "result": "/mnt/c/Users/DHU_Z/OneDrive/文档/ChatGPT/kaggleculture/pro8_control_20260912/tri_agent_20260913/candidates/TRI_A08_r11_r4/central/diagnostics/rebuilt/submission_56149565_1075824552_seat1/RESULT.json"
+    }
+  ]
+}

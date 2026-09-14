@@ -1,0 +1,91 @@
+{
+  "parent_source_inputs": 47,
+  "selected_source_and_build_inputs": 50,
+  "unchanged": [
+    "policy/agent.py",
+    "policy/animal_service_dp.hpp",
+    "policy/batch_calendar.hpp",
+    "policy/conditional_market.hpp",
+    "policy/config.json",
+    "policy/delivery_probe.inc",
+    "policy/executor/compile_choices.hpp",
+    "policy/executor/crop_delivery.hpp",
+    "policy/executor/day_consequence.hpp",
+    "policy/executor/delivery_handoff.hpp",
+    "policy/executor/idle_task_handoff.hpp",
+    "policy/executor/intraday_admission.hpp",
+    "policy/executor/investment_candidates.hpp",
+    "policy/executor/joint_portfolio.hpp",
+    "policy/executor/live_execution_repairs.hpp",
+    "policy/executor/observation_view.hpp",
+    "policy/executor/observed_day_scenario.hpp",
+    "policy/executor/pack_memo.hpp",
+    "policy/executor/regret_pack_incremental.inc",
+    "policy/executor/resource_exchange.hpp",
+    "policy/executor/rotation_calendar.hpp",
+    "policy/executor/rotation_cash.hpp",
+    "policy/executor/service_recovery.hpp",
+    "policy/executor/vendor/simulator.cpp",
+    "policy/executor/vendor/simulator.hpp",
+    "policy/finite_fertilizer.hpp",
+    "policy/learned_value.hpp",
+    "policy/local_sale_timing.hpp",
+    "policy/observation_codec.hpp",
+    "policy/observed_crop_clock.hpp",
+    "policy/ongoing_maintenance_dp.hpp",
+    "policy/paid_continuation.hpp",
+    "policy/paid_continuation_types.hpp",
+    "policy/planner.hpp",
+    "policy/proposals.hpp",
+    "policy/public_flow_scenario.hpp",
+    "policy/public_trade_ledger.hpp",
+    "policy/sale_clock.hpp",
+    "policy/sale_schedule_dp.hpp",
+    "policy/search.hpp",
+    "policy/startup_supply.hpp",
+    "policy/triad.hpp",
+    "tests/native_choice_gate.py"
+  ],
+  "modified": [
+    "build.py",
+    "main.py",
+    "policy/bridge.cpp",
+    "policy/executor/policy.hpp"
+  ],
+  "added": [
+    "policy/completion_probe.inc",
+    "policy/executor/rolling_completion.hpp",
+    "tests/native_completion_gate.py"
+  ],
+  "removed": [],
+  "hashes": {
+    "build.py": {
+      "parent": "ba62fd34a348f143bac7bb5725a7d006550b337bad2a9c321c3b9174dac6593a",
+      "candidate": "d42c44fa9c5e4fe5fba5a99da2cdaeef0b8b0a383ac4ada86b93de1a81a1c7e6"
+    },
+    "main.py": {
+      "parent": "d69b3232f4c8b1d1124202348b81b30ad4e1dbc06e544982fe3e4df863a9b925",
+      "candidate": "f0d99a3e48ce2433c7c756b178c24ad435a9b0ef996e1a64b0be429911d4db53"
+    },
+    "policy/bridge.cpp": {
+      "parent": "ff0d2309ed00561a08f9a93eaa1ae9a49aa86e8fe49c2a0e1aca4987092076c5",
+      "candidate": "d3cca0fe6785d5367285626bdfa540edb3b8f2cf0531db279aceb0ea1f831c25"
+    },
+    "policy/executor/policy.hpp": {
+      "parent": "ede0ab9a1094c2c6df72c5f4c47e44ff2d33f391651118a918ba994b8505d017",
+      "candidate": "d8b722d3c1aacea5436bde48a6339f13be1b8ffae314ae342476d8cc7a0598a9"
+    },
+    "policy/completion_probe.inc": {
+      "parent": null,
+      "candidate": "dad07e48d1e80ad9482db2f489f5921f972f7470c8c0f9e76aca43c21080ba6a"
+    },
+    "policy/executor/rolling_completion.hpp": {
+      "parent": null,
+      "candidate": "32f5fd156d9b7f075a6619a47e185c3e684c23c6fa422211dfa43481ab38fc97"
+    },
+    "tests/native_completion_gate.py": {
+      "parent": null,
+      "candidate": "0667f787157363377d3eb460cd4430ef71e65f1cd685112f333e048ce8c60ed4"
+    }
+  }
+}

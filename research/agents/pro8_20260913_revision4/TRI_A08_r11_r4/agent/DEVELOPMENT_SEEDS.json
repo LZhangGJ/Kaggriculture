@@ -1,0 +1,82 @@
+{
+  "full_games_run": 0,
+  "fixture_traces": [
+    {
+      "path": "evidence/round4_feedback/own_traces/market_smart_v8_563140739_seat0.json.gz",
+      "seed": 563140739,
+      "seat": 0,
+      "sha256": "4d1ee49f6a1ce4d0e5bb13f3bba27f70972ec6ccd7ae0d63ff3a369025984a1a",
+      "role": "current own-observation diagnostic"
+    },
+    {
+      "path": "evidence/round4_feedback/own_traces/submission_56149565_1075824552_seat1.json.gz",
+      "seed": 1075824552,
+      "seat": 1,
+      "sha256": "6002a1ababca0886c6f4e79f1e198df68c2b2f55eb8d1e5b29912c33be51cad2",
+      "role": "current own-observation diagnostic"
+    },
+    {
+      "path": "evidence/round4_feedback/own_traces/submission_56149565_1704556772_seat0.json.gz",
+      "seed": 1704556772,
+      "seat": 0,
+      "sha256": "d4b750310d0b3bbb8f86a427b3c5e72d41d2d1026a61e308b5dccbca13749fb1",
+      "role": "current own-observation diagnostic"
+    },
+    {
+      "path": "evidence/round4_feedback/own_traces/thomas_955_v2_813094663_seat0.json.gz",
+      "seed": 813094663,
+      "seat": 0,
+      "sha256": "2714995c42d71e901e1f9555d57bdcd1ed2bba6b9410b82fc43df70839e295e1",
+      "role": "current own-observation diagnostic"
+    },
+    {
+      "path": "evidence/feedback/own_traces/aurax_reactive_v1_1801029924_seat0.json.gz",
+      "seed": 1801029924,
+      "seat": 0,
+      "sha256": "89c630c1b5337187ec7491e1d95d0944956ff679478bdca9e101483eff428e41",
+      "role": "historical r3 regression fixture; not current candidate panel"
+    },
+    {
+      "path": "evidence/feedback/own_traces/market_smart_v8_290316560_seat0.json.gz",
+      "seed": 290316560,
+      "seat": 0,
+      "sha256": "06c0686d43187fff1a56c7ec71995b7ea59538ec1e889bdca9e0b0102360fdb3",
+      "role": "historical r3 regression fixture; not current candidate panel"
+    },
+    {
+      "path": "evidence/feedback/own_traces/submission_56149565_1782098909_seat1.json.gz",
+      "seed": 1782098909,
+      "seat": 1,
+      "sha256": "1670d76a6b5faafaf55c952338049dd0261ff49f8b0feba2f86ae9fe30357152",
+      "role": "historical r3 regression fixture; not current candidate panel"
+    },
+    {
+      "path": "evidence/feedback/own_traces/submission_56149565_447907448_seat0.json.gz",
+      "seed": 447907448,
+      "seat": 0,
+      "sha256": "2bb4d145159911be2bfe01a98ec5e7ce9d55c5c6e0320033cf7ec6a24cf57565",
+      "role": "historical r3 regression fixture; not current candidate panel"
+    }
+  ],
+  "synthetic_root_terminal_generators": [
+    2609134400,
+    2609134401,
+    2609134402,
+    2609134403,
+    2609134404,
+    2609134405,
+    2609134406,
+    2609134407
+  ],
+  "synthetic_dense_runtime_generators": [
+    2609134500,
+    2609134501,
+    2609134502,
+    2609134503
+  ],
+  "synthetic_conditions": "Only bounded final-day branches regenerated from declared synthetic current states; frozen public rival, zero opposing orders/exogenous supply; no overnight/random refresh. Not episodes or wins.",
+  "deterministic_unit_matrices": "Axes and all records in tests/completion_unit.cpp, tests/completion_official.py and raw results; no secret holdout.",
+  "retained_partial_result_rows": "evidence/round4_feedback/PARTIAL_ROWS.json",
+  "retained_partial_result_sha256": "71589451f042ed7b5f49cf00d7e53927e8da7445a767acb6d5ae1a2a7a6aedd1",
+  "partial_snapshot_final": false
+}

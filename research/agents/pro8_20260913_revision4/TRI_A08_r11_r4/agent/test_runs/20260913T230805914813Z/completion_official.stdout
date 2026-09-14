@@ -1,0 +1,1 @@
+{"status": "PASS", "scope": "conditional terminal-only official execution; no rival market orders; zero exogenous supply; no new games", "native_sha256": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f", "cases": 450, "checks": 8045, "selected": 219, "not_selected": 231, "wall_seconds": 0.6721187050000026, "new_games": 0}

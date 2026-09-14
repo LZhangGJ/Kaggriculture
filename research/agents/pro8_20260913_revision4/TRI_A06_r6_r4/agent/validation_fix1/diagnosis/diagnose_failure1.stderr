@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/data/fix1_work/diagnose.py", line 11, in <module>
+    debug=json.loads(ag.debug());contract=json.loads(ag.lib.td_contract_json(ag.handle))
+  File "/usr/lib/python3.13/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+                    f'not {s.__class__.__name__}')
+TypeError: the JSON object must be str, bytes or bytearray, not dict

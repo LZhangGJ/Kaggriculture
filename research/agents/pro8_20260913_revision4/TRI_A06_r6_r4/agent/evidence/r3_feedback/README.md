@@ -1,0 +1,3 @@
+# Round-three author feedback for A06 r6
+
+Use with TRI_A06_r6_r2_source_inputs.zip. That archive contains the exact tested parent under agent/. Read DIAGNOSTIC_NOTES.md and PROGRESS.json first. This feedback contains five complete own-visible examples and an explicitly incomplete public-results snapshot. The parent cannot pass the frozen panel even if it wins every remaining game; the full panel continues. No opponent source, opponent-private state, joint action replay, credentials or full conversations are included. New competitive revision: TRI_A06_r6_r3. Use the actual start/deadline in the dispatch, maximum120 minutes including all followups. Do not infer a deadline from file creation time.

@@ -1,0 +1,881 @@
+[
+  {
+    "trace": "feedback/own_traces/candidate_r3/market_smart_v8_568422814_seat0.json.gz",
+    "case": "market_smart_v8_568422814_seat0",
+    "version": "TRI_A06_r12_r3",
+    "actual_terminal_cash": 82218.0,
+    "actual_rival_cash": 91936.0,
+    "counts": {
+      "harvest_WHEAT": 92,
+      "harvest_WOOL": 46,
+      "harvest_EGG": 356,
+      "harvest_MILK": 180,
+      "harvest_CARROT": 373,
+      "produced_TOMATO": 111,
+      "harvest_TOMATO": 111,
+      "fertilizer_success": 158,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 102,
+      "produced_STRAWBERRY": 180,
+      "harvest_STRAWBERRY": 180
+    },
+    "fertilizer_buys": [
+      {
+        "step": 483,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 23,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -33.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/candidate_r3/moon_v215_31485687_seat0.json.gz",
+    "case": "moon_v215_31485687_seat0",
+    "version": "TRI_A06_r12_r3",
+    "actual_terminal_cash": 92806.0,
+    "actual_rival_cash": 91101.0,
+    "counts": {
+      "harvest_WHEAT": 375,
+      "harvest_WOOL": 145,
+      "harvest_MILK": 84,
+      "harvest_EGG": 306,
+      "fertilizer_success": 169,
+      "fertilizer_failed": 0,
+      "produced_TOMATO": 127,
+      "harvest_TOMATO": 119,
+      "harvest_CARROT": 36,
+      "harvest_MELON": 102,
+      "produced_STRAWBERRY": 295,
+      "harvest_STRAWBERRY": 291
+    },
+    "fertilizer_buys": [
+      {
+        "step": 384,
+        "requested": 8,
+        "quoted_filled": 8,
+        "quoted_fertilizer_cost": 383,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -2018.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            14
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            8
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 480,
+        "requested": 12,
+        "quoted_filled": 12,
+        "quoted_fertilizer_cost": 371,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": 2217.0,
+        "other_orders": [
+          [
+            "SELL",
+            "MELON",
+            18
+          ],
+          [
+            "SELL",
+            "EGG",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/candidate_r3/submission_56149565_1827852203_seat0.json.gz",
+    "case": "submission_56149565_1827852203_seat0",
+    "version": "TRI_A06_r12_r3",
+    "actual_terminal_cash": 97074.0,
+    "actual_rival_cash": 94410.0,
+    "counts": {
+      "harvest_WHEAT": 164,
+      "harvest_WOOL": 59,
+      "harvest_MILK": 165,
+      "harvest_EGG": 155,
+      "fertilizer_success": 197,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 114,
+      "produced_TOMATO": 286,
+      "produced_STRAWBERRY": 292,
+      "harvest_STRAWBERRY": 292,
+      "harvest_TOMATO": 286,
+      "harvest_CARROT": 128
+    },
+    "fertilizer_buys": [
+      {
+        "step": 480,
+        "requested": 9,
+        "quoted_filled": 9,
+        "quoted_fertilizer_cost": 367,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": -1224.0,
+        "other_orders": [
+          [
+            "SELL",
+            "EGG",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 528,
+        "requested": 5,
+        "quoted_filled": 5,
+        "quoted_fertilizer_cost": 190,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -641.0,
+        "other_orders": [
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 576,
+        "requested": 4,
+        "quoted_filled": 4,
+        "quoted_fertilizer_cost": 149,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": 616.0,
+        "other_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            8
+          ],
+          [
+            "SELL",
+            "EGG",
+            8
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            12
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            5
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 600,
+        "requested": 3,
+        "quoted_filled": 3,
+        "quoted_fertilizer_cost": 108,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -728.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 672,
+        "requested": 9,
+        "quoted_filled": 9,
+        "quoted_fertilizer_cost": 295,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": 47.0,
+        "other_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "EGG",
+            8
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/candidate_r3/submission_56149565_805057947_seat0.json.gz",
+    "case": "submission_56149565_805057947_seat0",
+    "version": "TRI_A06_r12_r3",
+    "actual_terminal_cash": 100669.0,
+    "actual_rival_cash": 102074.0,
+    "counts": {
+      "harvest_WHEAT": 381,
+      "harvest_WOOL": 46,
+      "harvest_MILK": 252,
+      "fertilizer_success": 172,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 114,
+      "harvest_EGG": 239,
+      "harvest_CARROT": 3,
+      "produced_STRAWBERRY": 309,
+      "harvest_STRAWBERRY": 309,
+      "produced_TOMATO": 134,
+      "harvest_TOMATO": 130
+    },
+    "fertilizer_buys": [
+      {
+        "step": 384,
+        "requested": 4,
+        "quoted_filled": 4,
+        "quoted_fertilizer_cost": 182,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": -1714.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 480,
+        "requested": 9,
+        "quoted_filled": 9,
+        "quoted_fertilizer_cost": 257,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": 2653.0,
+        "other_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            9
+          ],
+          [
+            "SELL",
+            "MELON",
+            24
+          ],
+          [
+            "SELL",
+            "EGG",
+            8
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 600,
+        "requested": 3,
+        "quoted_filled": 3,
+        "quoted_fertilizer_cost": 56,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": -198.0,
+        "other_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            9
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 624,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 18,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -132.0,
+        "other_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      {
+        "step": 672,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 15,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -359.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/parent_r2/market_smart_v8_568422814_seat0.json.gz",
+    "case": "market_smart_v8_568422814_seat0",
+    "version": "TRI_A06_r12_r2",
+    "actual_terminal_cash": 82218.0,
+    "actual_rival_cash": 91936.0,
+    "counts": {
+      "harvest_WHEAT": 92,
+      "harvest_WOOL": 46,
+      "harvest_EGG": 356,
+      "harvest_MILK": 180,
+      "harvest_CARROT": 373,
+      "produced_TOMATO": 111,
+      "harvest_TOMATO": 111,
+      "fertilizer_success": 158,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 102,
+      "produced_STRAWBERRY": 180,
+      "harvest_STRAWBERRY": 180
+    },
+    "fertilizer_buys": [
+      {
+        "step": 483,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 23,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -33.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/parent_r2/moon_v215_31485687_seat0.json.gz",
+    "case": "moon_v215_31485687_seat0",
+    "version": "TRI_A06_r12_r2",
+    "actual_terminal_cash": 80579.0,
+    "actual_rival_cash": 80259.0,
+    "counts": {
+      "harvest_WHEAT": 348,
+      "harvest_WOOL": 122,
+      "harvest_MILK": 87,
+      "harvest_EGG": 306,
+      "fertilizer_success": 157,
+      "fertilizer_failed": 0,
+      "produced_TOMATO": 120,
+      "harvest_TOMATO": 118,
+      "harvest_CARROT": 69,
+      "harvest_MELON": 96,
+      "produced_STRAWBERRY": 290,
+      "harvest_STRAWBERRY": 284
+    },
+    "fertilizer_buys": []
+  },
+  {
+    "trace": "feedback/own_traces/parent_r2/submission_56149565_1827852203_seat0.json.gz",
+    "case": "submission_56149565_1827852203_seat0",
+    "version": "TRI_A06_r12_r2",
+    "actual_terminal_cash": 95229.0,
+    "actual_rival_cash": 96194.0,
+    "counts": {
+      "harvest_WHEAT": 173,
+      "harvest_WOOL": 49,
+      "harvest_MILK": 165,
+      "harvest_EGG": 155,
+      "fertilizer_success": 160,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 114,
+      "produced_TOMATO": 274,
+      "produced_STRAWBERRY": 269,
+      "harvest_STRAWBERRY": 269,
+      "harvest_TOMATO": 274,
+      "harvest_CARROT": 94
+    },
+    "fertilizer_buys": [
+      {
+        "step": 530,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 37,
+        "whole_step_cash_reconciles": false,
+        "actual_whole_step_cash_delta": 7939.0,
+        "other_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            41
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            13
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "WOOL",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 604,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 33,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -43.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "trace": "feedback/own_traces/parent_r2/submission_56149565_805057947_seat0.json.gz",
+    "case": "submission_56149565_805057947_seat0",
+    "version": "TRI_A06_r12_r2",
+    "actual_terminal_cash": 94240.0,
+    "actual_rival_cash": 93932.0,
+    "counts": {
+      "harvest_WHEAT": 330,
+      "harvest_WOOL": 47,
+      "harvest_MILK": 219,
+      "fertilizer_success": 159,
+      "fertilizer_failed": 0,
+      "harvest_MELON": 114,
+      "harvest_EGG": 239,
+      "harvest_CARROT": 3,
+      "produced_STRAWBERRY": 306,
+      "harvest_STRAWBERRY": 306,
+      "produced_TOMATO": 147,
+      "harvest_TOMATO": 145
+    },
+    "fertilizer_buys": [
+      {
+        "step": 387,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 45,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -45.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 485,
+        "requested": 1,
+        "quoted_filled": 1,
+        "quoted_fertilizer_cost": 28,
+        "whole_step_cash_reconciles": true,
+        "actual_whole_step_cash_delta": -28.0,
+        "other_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    ]
+  }
+]

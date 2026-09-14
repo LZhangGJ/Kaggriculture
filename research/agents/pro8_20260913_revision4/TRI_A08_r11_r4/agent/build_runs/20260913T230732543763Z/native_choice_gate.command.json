@@ -1,0 +1,10 @@
+[
+  "/opt/pyvenv/bin/python",
+  "/mnt/data/TRI_A08_r11_r4_production/tests/native_choice_gate.py",
+  "--library",
+  "/mnt/data/TRI_A08_r11_r4_production/policy/tri_a08_r11_r4.building-20260913T230732543763Z.so",
+  "--enabled",
+  "1",
+  "--out",
+  "/mnt/data/TRI_A08_r11_r4_production/build_runs/20260913T230732543763Z/native_choice_gate.json"
+]

@@ -1,0 +1,56 @@
+{
+  "unfunded_services": [],
+  "disappeared_on_midnight": [
+    {
+      "step": 407,
+      "pos": [
+        0,
+        4
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "MELON",
+        "planted_day": 6,
+        "watered_today": true,
+        "consecutive_unwatered": 0,
+        "yield_units": 6,
+        "max_lifespan_step": 456,
+        "fertilized_until_day": -1
+      }
+    },
+    {
+      "step": 671,
+      "pos": [
+        0,
+        5
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "WHEAT",
+        "planted_day": 23,
+        "watered_today": true,
+        "consecutive_unwatered": 0,
+        "yield_units": 6,
+        "max_lifespan_step": 672,
+        "fertilized_until_day": 28
+      }
+    },
+    {
+      "step": 695,
+      "pos": [
+        0,
+        7
+      ],
+      "tile": {
+        "kind": "PLANT",
+        "crop": "WHEAT",
+        "planted_day": 24,
+        "watered_today": true,
+        "consecutive_unwatered": 0,
+        "yield_units": 6,
+        "max_lifespan_step": 696,
+        "fertilized_until_day": 28
+      }
+    }
+  ]
+}

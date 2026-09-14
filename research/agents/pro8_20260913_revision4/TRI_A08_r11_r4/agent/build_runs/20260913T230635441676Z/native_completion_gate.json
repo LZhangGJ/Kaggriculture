@@ -1,0 +1,777 @@
+{
+  "status": "PASS",
+  "enabled": 1,
+  "checks": 10,
+  "native_sha256": "acf904cb79039a80612d69437f26b358cec471e74400f1ac1275369466e9c27f",
+  "new_games": 0,
+  "cases": [
+    {
+      "name": "before_existing_final_DROP",
+      "result": {
+        "enabled": 1,
+        "selected": true,
+        "before": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 167,
+          "work": 4,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "base": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "best": [
+          [
+            [
+              3,
+              -1,
+              1,
+              -1
+            ],
+            [
+              10,
+              -1,
+              1,
+              46
+            ],
+            [
+              4,
+              -1,
+              1,
+              -1
+            ],
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "candidates": 2,
+        "evaluations": 2,
+        "horizon_rejects": 1,
+        "resource_rejects": 0,
+        "precedence_rejects": 0,
+        "execution_rejects": 0,
+        "value_rejects": 0,
+        "bounded_skips": 0
+      }
+    },
+    {
+      "name": "one_tick_short",
+      "result": {
+        "enabled": 1,
+        "selected": false,
+        "before": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 3,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 3,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "base": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "best": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "candidates": 2,
+        "evaluations": 0,
+        "horizon_rejects": 2,
+        "resource_rejects": 0,
+        "precedence_rejects": 0,
+        "execution_rejects": 0,
+        "value_rejects": 0,
+        "bounded_skips": 0
+      }
+    },
+    {
+      "name": "negative_net",
+      "result": {
+        "enabled": 1,
+        "selected": false,
+        "before": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "base": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "best": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "candidates": 2,
+        "evaluations": 2,
+        "horizon_rejects": 1,
+        "resource_rejects": 0,
+        "precedence_rejects": 0,
+        "execution_rejects": 0,
+        "value_rejects": 1,
+        "bounded_skips": 0
+      }
+    },
+    {
+      "name": "repair_existing_unclosed_tail",
+      "result": {
+        "enabled": 1,
+        "selected": true,
+        "before": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 3,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 5,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 167,
+          "work": 5,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 5,
+          "sold": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "base": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ],
+            [
+              3,
+              -1,
+              1,
+              -1
+            ],
+            [
+              10,
+              -1,
+              1,
+              46
+            ]
+          ]
+        ],
+        "best": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ],
+            [
+              3,
+              -1,
+              1,
+              -1
+            ],
+            [
+              10,
+              -1,
+              1,
+              46
+            ],
+            [
+              4,
+              -1,
+              1,
+              -1
+            ],
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "candidates": 0,
+        "evaluations": 3,
+        "horizon_rejects": 0,
+        "resource_rejects": 0,
+        "precedence_rejects": 0,
+        "execution_rejects": 0,
+        "value_rejects": 0,
+        "bounded_skips": 0
+      }
+    },
+    {
+      "name": "actual_recoordinate",
+      "result": {
+        "enabled": 1,
+        "selected": true,
+        "before": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 50,
+          "work": 1,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "known": 1,
+          "shape": 1,
+          "executed": 1,
+          "cash": 167,
+          "work": 4,
+          "waits": 0,
+          "failed": 0,
+          "ticks": 4,
+          "sold": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stranded": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deposited": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "base": [
+          [
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "best": [
+          [
+            [
+              3,
+              -1,
+              1,
+              -1
+            ],
+            [
+              10,
+              -1,
+              1,
+              46
+            ],
+            [
+              4,
+              -1,
+              1,
+              -1
+            ],
+            [
+              5,
+              -1,
+              1,
+              45
+            ]
+          ]
+        ],
+        "candidates": 2,
+        "evaluations": 2,
+        "horizon_rejects": 1,
+        "resource_rejects": 0,
+        "precedence_rejects": 0,
+        "execution_rejects": 0,
+        "value_rejects": 0,
+        "bounded_skips": 0
+      }
+    }
+  ],
+  "seconds": 0.004885497000003625
+}

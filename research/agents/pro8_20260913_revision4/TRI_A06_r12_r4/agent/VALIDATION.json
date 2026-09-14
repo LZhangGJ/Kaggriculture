@@ -1,0 +1,193 @@
+{
+  "new_complete_matches": 0,
+  "unit_suites": 4,
+  "unit_assertions": 23892,
+  "unit_breakdown": [
+    18403,
+    3029,
+    46,
+    2414
+  ],
+  "r3_research_identity_probe": {
+    "matched": 2876,
+    "total": 2876,
+    "scope": "research-only diagnostic library against actual supplied r3 observations, not games"
+  },
+  "fix1_history_probe": [
+    {
+      "case": "market_smart_v8_568422814_seat0",
+      "matched": 719,
+      "calls": 719,
+      "first_divergence": null,
+      "scope": "stop immediately at first divergence; not games"
+    },
+    {
+      "case": "moon_v215_31485687_seat0",
+      "matched": 719,
+      "calls": 719,
+      "first_divergence": null,
+      "scope": "stop immediately at first divergence; not games"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "matched": 719,
+      "calls": 719,
+      "first_divergence": null,
+      "scope": "stop immediately at first divergence; not games"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "matched": 672,
+      "calls": 673,
+      "first_divergence": 672,
+      "scope": "stop immediately at first divergence; not games"
+    }
+  ],
+  "official_conditional_trajectories": 10,
+  "official_conditional_steps": 470,
+  "conditional_pairs": [
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "observed_market_idle_rival",
+      "steps_each": 47,
+      "own_cash_parent": 100108.0,
+      "own_cash_fix1": 100108.0,
+      "own_gain": 0.0,
+      "raw_cash_margin_gain": 0.0,
+      "own_actions_identical": true,
+      "fertilizer_bought_parent": 9,
+      "fertilizer_bought_fix1": 9,
+      "fertilizer_paid_parent": 295.0,
+      "fertilizer_paid_fix1": 295.0,
+      "service_parent": 35,
+      "service_fix1": 35,
+      "production_bonus_parent": 16,
+      "production_bonus_fix1": 16,
+      "max_fix1_call_seconds": 0.5739520350000475,
+      "ledger_ok": true,
+      "raw_receipt": "logs/terminal_submission_56149565_1827852203_seat0_observed_market_idle_rival.json"
+    },
+    {
+      "case": "submission_56149565_1827852203_seat0",
+      "scenario": "supply_input_pressure",
+      "steps_each": 47,
+      "own_cash_parent": 98536.0,
+      "own_cash_fix1": 98536.0,
+      "own_gain": 0.0,
+      "raw_cash_margin_gain": 0.0,
+      "own_actions_identical": true,
+      "fertilizer_bought_parent": 9,
+      "fertilizer_bought_fix1": 9,
+      "fertilizer_paid_parent": 331.0,
+      "fertilizer_paid_fix1": 331.0,
+      "service_parent": 35,
+      "service_fix1": 35,
+      "production_bonus_parent": 16,
+      "production_bonus_fix1": 16,
+      "max_fix1_call_seconds": 0.5920307000000093,
+      "ledger_ok": true,
+      "raw_receipt": "logs/terminal_submission_56149565_1827852203_seat0_supply_input_pressure.json"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "scenario": "no_finance",
+      "steps_each": 47,
+      "own_cash_parent": 4789,
+      "own_cash_fix1": 4789,
+      "own_gain": 0,
+      "raw_cash_margin_gain": 0.0,
+      "own_actions_identical": true,
+      "fertilizer_bought_parent": 0,
+      "fertilizer_bought_fix1": 0,
+      "fertilizer_paid_parent": 0,
+      "fertilizer_paid_fix1": 0,
+      "service_parent": 0,
+      "service_fix1": 0,
+      "production_bonus_parent": 0,
+      "production_bonus_fix1": 0,
+      "max_fix1_call_seconds": 0.04250049099982789,
+      "ledger_ok": true,
+      "raw_receipt": "logs/terminal_submission_56149565_805057947_seat0_no_finance.json"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "scenario": "observed_market_idle_rival",
+      "steps_each": 47,
+      "own_cash_parent": 103132.0,
+      "own_cash_fix1": 103667.0,
+      "own_gain": 535.0,
+      "raw_cash_margin_gain": 535.0,
+      "own_actions_identical": false,
+      "fertilizer_bought_parent": 1,
+      "fertilizer_bought_fix1": 0,
+      "fertilizer_paid_parent": 15.0,
+      "fertilizer_paid_fix1": 0,
+      "service_parent": 23,
+      "service_fix1": 19,
+      "production_bonus_parent": 10,
+      "production_bonus_fix1": 9,
+      "max_fix1_call_seconds": 0.5816272399999889,
+      "ledger_ok": true,
+      "raw_receipt": "logs/terminal_submission_56149565_805057947_seat0_observed_market_idle_rival.json"
+    },
+    {
+      "case": "submission_56149565_805057947_seat0",
+      "scenario": "supply_input_pressure",
+      "steps_each": 47,
+      "own_cash_parent": 102661.0,
+      "own_cash_fix1": 103136.0,
+      "own_gain": 475.0,
+      "raw_cash_margin_gain": 542.0,
+      "own_actions_identical": false,
+      "fertilizer_bought_parent": 1,
+      "fertilizer_bought_fix1": 0,
+      "fertilizer_paid_parent": 19.0,
+      "fertilizer_paid_fix1": 0,
+      "service_parent": 23,
+      "service_fix1": 19,
+      "production_bonus_parent": 10,
+      "production_bonus_fix1": 9,
+      "max_fix1_call_seconds": 0.5875436459999719,
+      "ledger_ok": true,
+      "raw_receipt": "logs/terminal_submission_56149565_805057947_seat0_supply_input_pressure.json"
+    }
+  ],
+  "production_rebuild_byte_equal": true,
+  "native_sha256": "ed0d275ca9caf13fdaaf2c833e164c5b8c1ccf313dbf96296fb9f7896254ab90",
+  "entry": {
+    "scope": "Entry and matching-build checks; zero games; 48-step saved prefixes before divergence, and synthetic seat relabeling only",
+    "native_sha256": "ed0d275ca9caf13fdaaf2c833e164c5b8c1ccf313dbf96296fb9f7896254ab90",
+    "build_inputs_checked": 50,
+    "prefix_and_relabel_calls": 384,
+    "step_zero_resets": 8,
+    "negative_checks": 3,
+    "cases": [
+      {
+        "case": "market_smart_v8_568422814_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "moon_v215_31485687_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "submission_56149565_1827852203_seat0",
+        "prefix_and_relabel_calls": 96
+      },
+      {
+        "case": "submission_56149565_805057947_seat0",
+        "prefix_and_relabel_calls": 96
+      }
+    ],
+    "seconds": 3.100302696999961,
+    "peak_rss_kib": 247580,
+    "max_call_seconds": 0.11455674500007262,
+    "all_passed": true
+  },
+  "unverified": [
+    "No actual R2 805057947 fix1 full rematch",
+    "No new 12-opponent pool or >85% claim",
+    "Earlier-than-terminal quantity/economics gap remains",
+    "Public scenario forecast and hidden responses can be wrong"
+  ]
+}
