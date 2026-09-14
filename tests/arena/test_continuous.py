@@ -54,3 +54,10 @@ class ContinuousTest(unittest.TestCase):
         changed={**info,'RootFS':{'Layers':['different-layer']}}
         with patch.object(sandbox.subprocess,'run',return_value=SimpleNamespace(stdout=json.dumps([changed]))):
             with self.assertRaises(RuntimeError):sandbox.preflight(cfg)
+
+    def test_workers_do_not_claim_each_others_rounds(self):
+        from tools.arena.continuous import owns_round
+        self.assertTrue(owns_round({}, 'mini'))
+        self.assertFalse(owns_round({}, 'vast'))
+        self.assertTrue(owns_round({'executor':'vast'}, 'vast'))
+        self.assertFalse(owns_round({'executor':'vast'}, 'mini'))

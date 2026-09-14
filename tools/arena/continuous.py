@@ -40,8 +40,22 @@ def export_results(root,rid):
 
 def sync(root):
     root=Path(root)
-    cfg=read(root/'private/continuous-host.json',{})
-    if not cfg.get('enabled'):return
+    hosts=[('mini',read(root/'private/continuous-host.json',{}))]
+    hosts += [(ident(name),cfg) for name,cfg in read(root/'private/continuous-extra-hosts.json',{}).items()]
+    statuses={}
+    for name,cfg in hosts:
+        if not cfg.get('enabled'):continue
+        if name in statuses:raise ValueError('Duplicate executor name')
+        statuses[name]=sync_host(root,name,cfg)
+    if statuses:
+        write(root/'continuous-status.json',dict(at=now(),status='running' if all(v['status']=='running' for v in statuses.values()) else 'connection_or_job_error',workers=statuses))
+
+
+def owns_round(manifest,name):
+    return manifest.get('executor','mini')==name
+
+
+def sync_host(root,name,cfg):
     # Connection details and authentication remain solely in this private file / SSH config.
     host=cfg['ssh_host'];remote_root=cfg['root'];python=cfg['python'];repo=cfg['repository_path']
     def ssh(*args):
@@ -53,6 +67,7 @@ def sync(root):
         pending=[]
         for p in sorted((root/'runs').glob('continuous-*/manifest.json')):
             m=read(p)
+            if not owns_round(m,name):continue
             if schedule.complete(root,m):continue
             if (p.parent/'sent.json').exists():
                 ssh('export',remote_root,m['id'])
@@ -68,7 +83,11 @@ def sync(root):
         # Keep two finite rounds queued so the executor need not await each sync.
         while len(pending)<2:
             sequence=len(list((root/'runs').glob('continuous-*/manifest.json')))+1
-            pending.append(schedule.plan(root,f'continuous-{sequence:08d}','continuous',cfg.get('seeds_per_round',4)))
+            rid=f'continuous-{sequence:08d}' if name=='mini' else f'continuous-{name}-{sequence:08d}'
+            m=schedule.plan(root,rid,'continuous',cfg.get('seeds_per_round',4))
+            m['executor']=name
+            write(root/'runs'/rid/'manifest.json',m)
+            pending.append(m)
         for m in pending:
             sent=root/'runs'/m['id']/'sent.json'
             if sent.exists():continue
@@ -82,10 +101,10 @@ def sync(root):
             write(sent,dict(at=now()))
         from .elo import update
         update(root)
-        write(root/'continuous-status.json',dict(at=now(),status='running',pending_rounds=len(pending)))
+        return dict(at=now(),status='running',pending_rounds=len(pending))
     except (OSError,ValueError,KeyError,subprocess.SubprocessError) as e:
-        write(root/'continuous-status.json',dict(at=now(),status='connection_or_job_error'))
-        event(root,'continuous_failed',now()[:13],{'reason':type(e).__name__})
+        event(root,'continuous_failed',name+'-'+now()[:13],{'reason':type(e).__name__})
+        return dict(at=now(),status='connection_or_job_error')
 
 
 def execute(root):
