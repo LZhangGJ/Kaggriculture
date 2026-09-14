@@ -1,0 +1,14 @@
+{
+  "candidate": "C06",
+  "round": 6,
+  "chat_url": "https://chatgpt.com/c/6aa6d348-660c-83ea-b225-5946c4e18e81",
+  "tab_id": "779295307",
+  "model": "ChatGPT 6 Pro",
+  "start_utc": "2026-09-14T01:50:50.162Z",
+  "deadline_utc": "2026-09-14T02:50:50.162Z",
+  "round_minutes": 60,
+  "reserve_minutes": 20,
+  "max_workers": 2,
+  "feedback_sha256": "19b51270f4e908f2bd9a0805102f1a05a658eb5575155b61da49173cac269411",
+  "actual_user_turn_and_stop_answering_verified": true
+}

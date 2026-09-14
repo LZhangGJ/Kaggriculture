@@ -1,0 +1,16 @@
+{
+  "author": "C06",
+  "round": 6,
+  "file": "C06_ROUND06_FEEDBACK.zip",
+  "bytes": 12793929,
+  "sha256": "19b51270f4e908f2bd9a0805102f1a05a658eb5575155b61da49173cac269411",
+  "manifest_entries_verified": 267,
+  "known_seed_count": 1224,
+  "critical_reference_pairs": 4,
+  "unique_own_critical_cells": 4,
+  "round_minutes": 60,
+  "reserve_minutes": 20,
+  "dispatched": false,
+  "start_and_cutoff": "Root sets on actual dispatch",
+  "qualification_integrity_sha256": "b0672d15e1d28945cc50365b1f371de9294e3b0308697529e9ae135e9dfbe4e1"
+}
