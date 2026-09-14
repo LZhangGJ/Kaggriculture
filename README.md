@@ -1,5 +1,7 @@
 # Kaggriculture local simulation lab
 
+**Team arena:** [Live leaderboard](https://kaggriculture-arena.tail0d430d.ts.net/) · [Give your coding agent this submission workflow](research/workflows/pro8_arena/SUBMIT_AGENT.md). No Pro8 setup is required to submit an agent.
+
 This workspace contains the official Kaggriculture 1.32.6 engine, selected public
 research notebooks, and a fast local runner for large self-play experiments.
 

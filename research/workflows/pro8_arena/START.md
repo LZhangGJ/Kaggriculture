@@ -2,6 +2,8 @@
 
 ## Shared arena
 
+**Submitting an agent?** Give your coding agent the [copy-and-paste submission workflow](SUBMIT_AGENT.md). It works without Pro8 and covers website upload, GitHub CLI submission and status checks.
+
 [Open the live results page](../../arena_live/README.md). The coordinator runs on WRX90 using CPU only. It publishes checked summaries to `feature/pro8-arena`; it does not merge into main or submit to Kaggle.
 
 You can submit an agent without running Pro8. The easiest route is **Submit agent** on the [private website](https://kaggriculture-arena.tail0d430d.ts.net/): sign in, name your agent, and upload its file. [Formats and status guide](PRIVATE_SITE.md#upload-an-agent).
@@ -57,7 +59,7 @@ Or use the private repository's **Submit agent** issue form once published. Atta
 
 For automated issue intake, configure github.repository, github.allowed_authors and github.intake_enabled. The local host needs existing `gh` authentication. Assets are fetched only from the approved repository. No GitHub writes occur in the local synchronizer. If release access is unavailable, supply the archive to the coordinator and use `import-issue --event event.json --archive agent.zip`.
 
-Statuses are registered, pending, placement-rated, active and archived. Validation failures show a reason in local records. Every accepted valid agent gets placement outside the active cap: 32 seeds, both seats, six configured references, 384 games. Reference agents skip self-play. Twenty percent of evaluation slots go to placement with round-robin author scheduling and FIFO within each author. Idle allocation is lent to other jobs. Backlog is retained; there is no guaranteed deadline when arrivals exceed capacity.
+Statuses are registered, pending, placement-rated, active and archived. Validation failures show a reason in local records. Every accepted valid agent gets placement outside the active cap: 32 seeds, both seats, six configured references, 384 games. Reference agents skip self-play. Daily tournaments take priority. Outside that priority work, twenty percent of coordinator evaluation slots go to placement with round-robin author scheduling and FIFO within each author. Idle allocation is lent to other jobs. Backlog is retained; there is no guaranteed deadline when arrivals exceed capacity.
 
 ## Agent interface
 
