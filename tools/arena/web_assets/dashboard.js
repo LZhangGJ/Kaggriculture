@@ -132,7 +132,7 @@ function renderEloHistory(){
   const buttons=element('div');buttons.style.margin='12px 0';
   for(const [key,title]of [['both','Both'],['raw','Actual'],['average','100-game average']]){const b=element('button',title);b.setAttribute('aria-pressed',historyMode===key);if(historyMode===key)b.style.cssText='background:#284d38;color:white';b.onclick=()=>{historyMode=key;redraw();};buttons.append(b);}
   const axis=element('select');axis.setAttribute('aria-label','Chart horizontal axis');for(const [key,title]of [['time','Time (UTC)'],['games','Games per agent']]){const o=element('option',title);o.value=key;axis.append(o);}axis.value=historyAxis;axis.onchange=()=>{historyAxis=axis.value;redraw();};buttons.append(axis);host.append(buttons);
-  const selected=pool.filter(h=>historyAgents.has(h.agent));if(!selected.length){host.append(element('p','Select an agent to show its history.'));return;}
+  const selected=[...historyAgents].map(id=>pool.find(h=>h.agent===id)).filter(Boolean);if(!selected.length){host.append(element('p','Select an agent to show its history.'));return;}
   const colors=['#2166ac','#b65b08','#8a3f8c','#287650','#ba3545','#655ac7'];
   const xval=p=>historyAxis==='time'?Date.parse(p[1]):p[0];
   const all=selected.flatMap(h=>h.points);let lo=Math.min(...all.map(xval)),hi=Math.max(...all.map(xval));if(hi===lo)hi=lo+(historyAxis==='time'?60000:2);
