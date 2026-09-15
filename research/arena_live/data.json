@@ -118,6 +118,7 @@
       "agent_type": "team",
       "aliases": [],
       "author": "team",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
@@ -216,6 +217,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "kunaldesale2408",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "50df74fa94512eb685b90ad2ee8fdaf3a57f28f8fda4ba09dcc89b1768558dad",
@@ -242,6 +244,7 @@
       "agent_type": "team",
       "aliases": [],
       "author": "github-18412759",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "55823b317bd135554253de04190c9234ff6f43e38ef3da83b7e1a30eb6c9b76f",
@@ -282,6 +285,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "evgendvorkin",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
@@ -350,6 +354,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "flexonafft",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "804eba4f71a0acd628eedda0b3282bb249f6cadf290f46e6a511b550a6aab60b",
@@ -432,6 +437,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "ahmedberatozer",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "98c1f361f1b0626cc2b5e370323e345da3fc0e6c53427bbb95443dd0e6c4f144",
@@ -458,6 +464,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "ahmedberatozer",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "99f6751e4d77db0c72f009b7d44df449529c5f6aab8ad6ec72fece70a7dbb2e2",
@@ -498,6 +505,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "xuantianfengwu",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "9fe86e7284d6cbfb7dcd60d91965d4a2cbce7a1dd12e611dbc67671fd5a44d5b",
@@ -552,6 +560,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "yhay81",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "b35fdc439b3b8fd0c8a92ccfa5118b4000c94534de16342633c244a55e9361a6",
@@ -578,6 +587,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "renjistarfall",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "b3f5d4cf662f290d58bcca449d72e4b6c1293443ecdd1b82252a740a67c055f7",
@@ -604,6 +614,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "lynnsakurai",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "c41ec651c070c09548129bb293d2ecaeebc70807f0dcb4ffc982406b5d36f747",
@@ -644,6 +655,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "premaananda108",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "cdadb9a18ad217183bae8ff5d17f45c63b12f5314f37182053d81f1c84558f74",
@@ -698,6 +710,7 @@
       "agent_type": "public",
       "aliases": [],
       "author": "pilkwang",
+      "automatically_retired": false,
       "frozen_elo": [
         {
           "agent": "d8481e0bc43df9f9b75c657327d3b8b20e5537d6bc0ad788c5f4dd1b27a83d5f",
@@ -777,6 +790,11 @@
       "version": "v4"
     }
   ],
+  "automatic_retirement": {
+    "enabled": true,
+    "min_games": 1000,
+    "score_below": 0.2
+  },
   "champion": null,
   "champion_evidence": null,
   "continuous_elo": {
@@ -166364,5 +166382,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-15T15:09:23.132373+00:00"
+  "updated": "2026-09-15T15:09:29.642236+00:00"
 }
