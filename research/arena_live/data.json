@@ -638,7 +638,9 @@
     },
     {
       "agent_type": "public",
-      "aliases": [],
+      "aliases": [
+        "lynnsakurai/farming-score-v5-timing-optimized (active entry; identical agent)"
+      ],
       "author": "lynnsakurai",
       "automatically_retired": false,
       "frozen_elo": [
@@ -789,7 +791,9 @@
     },
     {
       "agent_type": "public",
-      "aliases": [],
+      "aliases": [
+        "Lynn V5 (3-bundle-224993039c37)"
+      ],
       "author": "lynnsakurai",
       "id": "ed37ad5ec0810ec5771376699f568ee340896295dcb568421ea2d31605adb88a",
       "last_checked": "2026-09-15T15:07:31.562024+00:00",
@@ -189653,5 +189657,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-15T16:00:08.247024+00:00"
+  "updated": "2026-09-15T16:00:15.210402+00:00"
 }
