@@ -118,12 +118,24 @@
       "agent_type": "team",
       "aliases": [],
       "author": "team",
+      "frozen_elo": [
+        {
+          "agent": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
+          "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+          "elo": 1707.5825015895198,
+          "games": 15528,
+          "score": 0.5424716640906749
+        }
+      ],
       "id": "272c21f7b6649fb653c64e785069ac160f8501dd8703dbae1b61b2cf73ea0dfa",
       "last_checked": null,
       "name": "AFS R1",
       "notebook": null,
       "notebook_version": null,
-      "refresh_status": "not configured",
+      "rating_updated": "2026-09-15T14:10:58.093324+00:00",
+      "refresh_status": "retired - no longer updating",
+      "retired": true,
+      "retired_at": "2026-09-15T14:28:32.245641+00:00",
       "status": "archived",
       "validation_failed": false,
       "version": "historical-3ca540b67e4f"
@@ -155618,5 +155630,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-15T14:40:35.401775+00:00"
+  "updated": "2026-09-15T14:41:05.123251+00:00"
 }

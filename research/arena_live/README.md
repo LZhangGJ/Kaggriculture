@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 15, 2026 at 2:40 PM UTC
+Updated: Sep 15, 2026 at 2:41 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -92,12 +92,13 @@ Status: running Â· Last sync: Sep 15, 2026 at 2:37 PM UTC
 | rule-agent-ecobot-v7-arena-analytics **PUBLIC** | 679.4 | 11258 | 5.4% | ffc8942965 |
 | kaggriculture-2026-v1 **PUBLIC** | 363.2 | 11264 | 0.7% | ffc8942965 |
 
-## Retired public agents
+## Retired agents
 
-Frozen at retirement. No new matches or notebook updates; already scheduled games may finish.
+Ratings stay frozen at retirement. These versions receive no new matches; games already scheduled may finish.
 
 | Agent | Frozen Elo | Games | Retired |
 |---|---:|---:|---|
+| AFS R1 **TEAM · RETIRED** | 1707.5825015895198 | 15528 | Sep 15, 2026 at 2:28 PM UTC |
 | kaggriculture **PUBLIC · RETIRED** | 1567.0391920806164 | 5886 | Sep 14, 2026 at 4:27 PM UTC |
 | kaggriculture-adaptive-land-allocator **PUBLIC · RETIRED** | 431.3550888144124 | 5896 | Sep 14, 2026 at 4:27 PM UTC |
 | shop-router-0913 **PUBLIC · RETIRED** | 1403.9597023232584 | 5890 | Sep 14, 2026 at 4:27 PM UTC |
@@ -1548,7 +1549,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
 - kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
