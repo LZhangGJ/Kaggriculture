@@ -64,25 +64,25 @@ Status: running Â· Last sync: Sep 15, 2026 at 1:24 AM UTC
 | farming-score-v4-a-better-shop **PUBLIC** | 2027.6 | 5460 | 83.2% | ffc8942965 |
 | kaggriculture-v41-review-candidate **PUBLIC** | 1978.1 | 11910 | 74.0% | ffc8942965 |
 | kaggriculture-shop-router-reactive-v5 **PUBLIC** | 1946.3 | 5460 | 79.4% | ffc8942965 |
-| TRI_A06_r6_r3_bundle_fix1 | 1816.4 | 11896 | 68.4% | ffc8942965 |
+| kaggriculture-utils-v1 **PUBLIC** | 1830.3 | 11924 | 67.2% | ffc8942965 |
 | TRI_A06_r12_r3_fix1 | 1803.0 | 11920 | 70.4% | ffc8942965 |
-| kaggriculture-utils-v1 **PUBLIC** | 1799.7 | 11920 | 67.2% | ffc8942965 |
-| Day 9 planner selector | 1775.7 | 11918 | 72.8% | ffc8942965 |
-| kaggriculture-v40-challenger **PUBLIC** | 1758.0 | 5490 | 62.0% | ffc8942965 |
-| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1688.6 | 11908 | 58.3% | ffc8942965 |
-| AFS R2 | 1641.1 | 11920 | 51.3% | ffc8942965 |
+| Day 9 planner selector | 1775.7 | 11920 | 72.8% | ffc8942965 |
+| kaggriculture-v40-challenger **PUBLIC** | 1759.1 | 5492 | 62.0% | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1754.7 | 11902 | 68.3% | ffc8942965 |
+| kaggriculture-metacounter-r1-scored-agent **PUBLIC** | 1702.4 | 11910 | 58.3% | ffc8942965 |
 | AFS R1 | 1635.8 | 11910 | 52.0% | ffc8942965 |
 | kaggriculture-v38-smarter-feed-stronger-margins **PUBLIC** | 1630.6 | 5470 | 49.7% | ffc8942965 |
+| AFS R2 | 1627.3 | 11924 | 51.3% | ffc8942965 |
 | kaggriculture-shop-router-reactive-v4 **PUBLIC** | 1625.0 | 11918 | 41.4% | ffc8942965 |
 | more-yield-smarter-labor **PUBLIC** | 1574.3 | 5476 | 44.2% | ffc8942965 |
 | TRI_A08_r11_r3 | 1539.1 | 11906 | 53.3% | ffc8942965 |
 | kaggriculture-structured-economic-policy **PUBLIC** | 1442.6 | 5462 | 31.9% | ffc8942965 |
 | kaggriculture-v36-guarded-four-turn-sales **PUBLIC** | 1429.0 | 5462 | 33.7% | ffc8942965 |
 | kaggriculture-most-powerfull-route **PUBLIC** | 1250.5 | 5468 | 25.9% | ffc8942965 |
-| kaggriculture-v23-adaptive-routes-smart-sales **PUBLIC** | 1173.9 | 5470 | 18.2% | ffc8942965 |
+| kaggriculture-v23-adaptive-routes-smart-sales **PUBLIC** | 1204.0 | 5474 | 18.3% | ffc8942965 |
 | kaggriculture-v25-new-production-routes-with-rea **PUBLIC** | 1111.9 | 5482 | 19.2% | ffc8942965 |
 | rule-agent-ecobot-v7-arena-analytics **PUBLIC** | 698.9 | 5464 | 6.0% | ffc8942965 |
-| kaggriculture-2026-v1 **PUBLIC** | 406.1 | 5474 | 0.6% | ffc8942965 |
+| kaggriculture-2026-v1 **PUBLIC** | 406.0 | 5478 | 0.6% | ffc8942965 |
 
 ## Retired public agents
 
@@ -174,7 +174,7 @@ Each challenger and the proposed replacement face the same other agents on 128 f
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 95246/95246 |
+| cumulative-active-ffc8942965b1 | Provisional | 95276/95276 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
@@ -182,34 +182,34 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
-| farming-score-v4-a-better-shop | 2.35 | 4570 / 868 / 134 | 82.0% | 83.2% | 13,418 |
-| kaggriculture-shop-router-reactive-v5 | 2.07 | 4362 / 1076 / 143 | 78.2% | 79.4% | 13,176 |
-| Day 9 planner selector | 1.92 | 8932 / 3417 / 4 | 72.3% | 72.3% | 5,551 |
+| farming-score-v4-a-better-shop | 2.35 | 4572 / 868 / 134 | 82.0% | 83.2% | 13,420 |
+| kaggriculture-shop-router-reactive-v5 | 2.07 | 4364 / 1076 / 143 | 78.2% | 79.4% | 13,183 |
+| Day 9 planner selector | 1.92 | 8934 / 3418 / 4 | 72.3% | 72.3% | 5,552 |
 | TRI_A06_r12_r3_fix1 | 1.77 | 8554 / 3790 / 2 | 69.3% | 69.3% | 5,455 |
-| kaggriculture-v41-review-candidate | 1.75 | 8420 / 3752 / 173 | 68.2% | 68.9% | 8,433 |
-| TRI_A06_r6_r3_bundle_fix1 | 1.64 | 8221 / 4122 / 0 | 66.6% | 66.6% | 4,633 |
-| kaggriculture-utils-v1 | 1.39 | 7546 / 4814 / 2 | 61.0% | 61.0% | 7,993 |
-| kaggriculture-v40-challenger | 1.03 | 3353 / 2007 / 246 | 59.8% | 62.0% | 2,714 |
-| kaggriculture-metacounter-r1-scored-agent | 0.92 | 6131 / 5966 / 246 | 49.7% | 50.7% | -2,347 |
-| TRI_A08_r11_r3 | 0.80 | 5931 / 6410 / 0 | 48.1% | 48.1% | 821 |
-| AFS R1 | 0.69 | 5627 / 6685 / 27 | 45.6% | 45.7% | 150 |
-| AFS R2 | 0.63 | 5480 / 6846 / 25 | 44.4% | 44.5% | 7 |
-| kaggriculture-shop-router-reactive-v4 | 0.37 | 4789 / 7500 / 66 | 38.8% | 39.0% | -3,965 |
+| kaggriculture-v41-review-candidate | 1.75 | 8426 / 3752 / 173 | 68.2% | 68.9% | 8,434 |
+| TRI_A06_r6_r3_bundle_fix1 | 1.64 | 8223 / 4125 / 0 | 66.6% | 66.6% | 4,634 |
+| kaggriculture-utils-v1 | 1.39 | 7548 / 4815 / 2 | 61.0% | 61.1% | 7,991 |
+| kaggriculture-v40-challenger | 1.03 | 3356 / 2008 / 246 | 59.8% | 62.0% | 2,712 |
+| kaggriculture-metacounter-r1-scored-agent | 0.92 | 6133 / 5968 / 246 | 49.7% | 50.7% | -2,349 |
+| TRI_A08_r11_r3 | 0.80 | 5931 / 6411 / 0 | 48.1% | 48.1% | 821 |
+| AFS R1 | 0.69 | 5629 / 6686 / 27 | 45.6% | 45.7% | 150 |
+| AFS R2 | 0.63 | 5481 / 6849 / 25 | 44.4% | 44.5% | 8 |
+| kaggriculture-shop-router-reactive-v4 | 0.37 | 4789 / 7502 / 66 | 38.8% | 39.0% | -3,965 |
 | kaggriculture-v38-smarter-feed-stronger-margins | 0.34 | 2739 / 2774 / 66 | 49.1% | 49.7% | 1,166 |
-| more-yield-smarter-labor | 0.01 | 2467 / 3118 / 10 | 44.1% | 44.2% | 111 |
+| more-yield-smarter-labor | 0.01 | 2468 / 3120 / 10 | 44.1% | 44.2% | 104 |
 | kaggriculture-v36-guarded-four-turn-sales | -0.68 | 1757 / 3595 / 231 | 31.5% | 33.5% | -1,449 |
-| kaggriculture-structured-economic-policy | -0.81 | 1661 / 3690 / 221 | 29.8% | 31.8% | -2,243 |
-| kaggriculture-most-powerfull-route | -1.29 | 1445 / 4142 / 2 | 25.9% | 25.9% | -2,295 |
-| kaggriculture-v25-new-production-routes-with-rea | -1.93 | 1070 / 4521 / 2 | 19.1% | 19.1% | -30,512 |
-| kaggriculture-v23-adaptive-routes-smart-sales | -2.03 | 1024 / 4559 / 0 | 18.3% | 18.3% | -5,112 |
-| rule-agent-ecobot-v7-arena-analytics | -4.32 | 334 / 5233 / 0 | 6.0% | 6.0% | -17,910 |
-| kaggriculture-2026-v1 | -6.63 | 33 / 5561 / 0 | 0.6% | 0.6% | -30,111 |
+| kaggriculture-structured-economic-policy | -0.81 | 1661 / 3693 / 221 | 29.8% | 31.8% | -2,246 |
+| kaggriculture-most-powerfull-route | -1.29 | 1445 / 4143 / 2 | 25.8% | 25.9% | -2,298 |
+| kaggriculture-v25-new-production-routes-with-rea | -1.93 | 1072 / 4522 / 2 | 19.2% | 19.2% | -30,490 |
+| kaggriculture-v23-adaptive-routes-smart-sales | -2.02 | 1027 / 4561 / 0 | 18.4% | 18.4% | -5,103 |
+| rule-agent-ecobot-v7-arena-analytics | -4.32 | 334 / 5235 / 0 | 6.0% | 6.0% | -17,913 |
+| kaggriculture-2026-v1 | -6.63 | 33 / 5565 / 0 | 0.6% | 0.6% | -30,110 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
 | Agent | Opponent | Wins / games | Win rate | Seat 0 W/G | Seat 1 W/G |
 |---|---|---:|---:|---:|---:|
-| more-yield-smarter-labor | kaggriculture-shop-router-reactive-v5 | 0/263 | 0.0% | 0/130 | 0/133 |
+| more-yield-smarter-labor | kaggriculture-shop-router-reactive-v5 | 0/264 | 0.0% | 0/130 | 0/134 |
 | more-yield-smarter-labor | kaggriculture-shop-router-reactive-v4 | 53/271 | 19.6% | 26/135 | 27/136 |
 | more-yield-smarter-labor | TRI_A06_r12_r3_fix1 | 75/264 | 28.4% | 37/132 | 38/132 |
 | more-yield-smarter-labor | kaggriculture-v36-guarded-four-turn-sales | 249/266 | 93.6% | 126/134 | 123/132 |
@@ -217,7 +217,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | more-yield-smarter-labor | AFS R1 | 89/266 | 33.5% | 45/134 | 44/132 |
 | more-yield-smarter-labor | kaggriculture-v38-smarter-feed-stronger-margins | 52/268 | 19.4% | 26/132 | 26/136 |
 | more-yield-smarter-labor | TRI_A08_r11_r3 | 101/267 | 37.8% | 48/132 | 53/135 |
-| more-yield-smarter-labor | kaggriculture-v41-review-candidate | 0/264 | 0.0% | 0/133 | 0/131 |
+| more-yield-smarter-labor | kaggriculture-v41-review-candidate | 0/265 | 0.0% | 0/133 | 0/132 |
 | more-yield-smarter-labor | kaggriculture-2026-v1 | 267/267 | 100.0% | 135/135 | 132/132 |
 | more-yield-smarter-labor | farming-score-v4-a-better-shop | 0/264 | 0.0% | 0/133 | 0/131 |
 | more-yield-smarter-labor | kaggriculture-most-powerfull-route | 266/267 | 99.6% | 132/132 | 134/135 |
@@ -229,8 +229,8 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | more-yield-smarter-labor | kaggriculture-v40-challenger | 11/269 | 4.1% | 6/132 | 5/137 |
 | more-yield-smarter-labor | rule-agent-ecobot-v7-arena-analytics | 263/266 | 98.9% | 133/134 | 130/132 |
 | more-yield-smarter-labor | kaggriculture-utils-v1 | 0/264 | 0.0% | 0/134 | 0/130 |
-| more-yield-smarter-labor | kaggriculture-structured-economic-policy | 260/266 | 97.7% | 133/136 | 127/130 |
-| kaggriculture-shop-router-reactive-v5 | more-yield-smarter-labor | 263/263 | 100.0% | 133/133 | 130/130 |
+| more-yield-smarter-labor | kaggriculture-structured-economic-policy | 261/267 | 97.8% | 134/137 | 127/130 |
+| kaggriculture-shop-router-reactive-v5 | more-yield-smarter-labor | 264/264 | 100.0% | 134/134 | 130/130 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-shop-router-reactive-v4 | 264/264 | 100.0% | 133/133 | 131/131 |
 | kaggriculture-shop-router-reactive-v5 | TRI_A06_r12_r3_fix1 | 120/267 | 44.9% | 62/132 | 58/135 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v36-guarded-four-turn-sales | 269/269 | 100.0% | 135/135 | 134/134 |
@@ -239,7 +239,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v38-smarter-feed-stronger-margins | 266/266 | 100.0% | 134/134 | 132/132 |
 | kaggriculture-shop-router-reactive-v5 | TRI_A08_r11_r3 | 131/265 | 49.4% | 65/131 | 66/134 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v41-review-candidate | 148/267 | 55.4% | 73/133 | 75/134 |
-| kaggriculture-shop-router-reactive-v5 | kaggriculture-2026-v1 | 265/265 | 100.0% | 132/132 | 133/133 |
+| kaggriculture-shop-router-reactive-v5 | kaggriculture-2026-v1 | 266/266 | 100.0% | 132/132 | 134/134 |
 | kaggriculture-shop-router-reactive-v5 | farming-score-v4-a-better-shop | 30/265 | 11.3% | 14/130 | 16/135 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-most-powerfull-route | 263/263 | 100.0% | 131/131 | 132/132 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-metacounter-r1-scored-agent | 264/264 | 100.0% | 133/133 | 131/131 |
@@ -261,9 +261,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-shop-router-reactive-v4 | TRI_A08_r11_r3 | 487/1016 | 47.9% | 241/510 | 246/506 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v41-review-candidate | 0/1019 | 0.0% | 0/508 | 0/511 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-2026-v1 | 263/263 | 100.0% | 132/132 | 131/131 |
-| kaggriculture-shop-router-reactive-v4 | farming-score-v4-a-better-shop | 0/269 | 0.0% | 0/134 | 0/135 |
+| kaggriculture-shop-router-reactive-v4 | farming-score-v4-a-better-shop | 0/270 | 0.0% | 0/134 | 0/136 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-most-powerfull-route | 268/269 | 99.6% | 134/134 | 134/135 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-metacounter-r1-scored-agent | 58/1018 | 5.7% | 31/508 | 27/510 |
+| kaggriculture-shop-router-reactive-v4 | kaggriculture-metacounter-r1-scored-agent | 58/1019 | 5.7% | 31/509 | 27/510 |
 | kaggriculture-shop-router-reactive-v4 | AFS R2 | 384/1016 | 37.8% | 191/510 | 193/506 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v23-adaptive-routes-smart-sales | 268/271 | 98.9% | 135/136 | 133/135 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v25-new-production-routes-with-rea | 262/262 | 100.0% | 131/131 | 131/131 |
@@ -319,11 +319,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | Day 9 planner selector | kaggriculture-shop-router-reactive-v4 | 627/1020 | 61.5% | 309/510 | 318/510 |
 | Day 9 planner selector | TRI_A06_r12_r3_fix1 | 759/1017 | 74.6% | 373/508 | 386/509 |
 | Day 9 planner selector | kaggriculture-v36-guarded-four-turn-sales | 208/266 | 78.2% | 105/133 | 103/133 |
-| Day 9 planner selector | AFS R1 | 946/1015 | 93.2% | 469/508 | 477/507 |
+| Day 9 planner selector | AFS R1 | 947/1016 | 93.2% | 469/508 | 478/508 |
 | Day 9 planner selector | kaggriculture-v38-smarter-feed-stronger-margins | 180/267 | 67.4% | 91/133 | 89/134 |
 | Day 9 planner selector | TRI_A08_r11_r3 | 887/1016 | 87.3% | 445/507 | 442/509 |
 | Day 9 planner selector | kaggriculture-v41-review-candidate | 514/1020 | 50.4% | 258/512 | 256/508 |
-| Day 9 planner selector | kaggriculture-2026-v1 | 267/267 | 100.0% | 132/132 | 135/135 |
+| Day 9 planner selector | kaggriculture-2026-v1 | 268/268 | 100.0% | 133/133 | 135/135 |
 | Day 9 planner selector | farming-score-v4-a-better-shop | 130/269 | 48.3% | 63/133 | 67/136 |
 | Day 9 planner selector | kaggriculture-most-powerfull-route | 210/266 | 78.9% | 106/132 | 104/134 |
 | Day 9 planner selector | kaggriculture-metacounter-r1-scored-agent | 540/1014 | 53.3% | 270/507 | 270/507 |
@@ -331,7 +331,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | Day 9 planner selector | kaggriculture-v23-adaptive-routes-smart-sales | 226/265 | 85.3% | 113/132 | 113/133 |
 | Day 9 planner selector | kaggriculture-v25-new-production-routes-with-rea | 211/265 | 79.6% | 105/132 | 106/133 |
 | Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 828/1020 | 81.2% | 404/509 | 424/511 |
-| Day 9 planner selector | kaggriculture-v40-challenger | 150/265 | 56.6% | 74/130 | 76/135 |
+| Day 9 planner selector | kaggriculture-v40-challenger | 150/266 | 56.4% | 74/131 | 76/135 |
 | Day 9 planner selector | rule-agent-ecobot-v7-arena-analytics | 247/266 | 92.9% | 124/134 | 123/132 |
 | Day 9 planner selector | kaggriculture-utils-v1 | 510/1019 | 50.0% | 251/508 | 259/511 |
 | Day 9 planner selector | kaggriculture-structured-economic-policy | 207/265 | 78.1% | 104/132 | 103/133 |
@@ -340,7 +340,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | AFS R1 | kaggriculture-shop-router-reactive-v4 | 587/1014 | 57.9% | 295/508 | 292/506 |
 | AFS R1 | TRI_A06_r12_r3_fix1 | 50/1019 | 4.9% | 27/508 | 23/511 |
 | AFS R1 | kaggriculture-v36-guarded-four-turn-sales | 208/264 | 78.8% | 105/134 | 103/130 |
-| AFS R1 | Day 9 planner selector | 69/1015 | 6.8% | 30/507 | 39/508 |
+| AFS R1 | Day 9 planner selector | 69/1016 | 6.8% | 30/508 | 39/508 |
 | AFS R1 | kaggriculture-v38-smarter-feed-stronger-margins | 148/264 | 56.1% | 75/134 | 73/130 |
 | AFS R1 | TRI_A08_r11_r3 | 343/1020 | 33.6% | 172/508 | 171/512 |
 | AFS R1 | kaggriculture-v41-review-candidate | 542/1018 | 53.2% | 272/512 | 270/506 |
@@ -348,13 +348,13 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | AFS R1 | farming-score-v4-a-better-shop | 130/264 | 49.2% | 64/131 | 66/133 |
 | AFS R1 | kaggriculture-most-powerfull-route | 206/267 | 77.2% | 102/133 | 104/134 |
 | AFS R1 | kaggriculture-metacounter-r1-scored-agent | 541/1015 | 53.3% | 268/506 | 273/509 |
-| AFS R1 | AFS R2 | 544/1017 | 53.5% | 271/508 | 273/509 |
+| AFS R1 | AFS R2 | 545/1018 | 53.5% | 271/508 | 274/510 |
 | AFS R1 | kaggriculture-v23-adaptive-routes-smart-sales | 195/263 | 74.1% | 98/130 | 97/133 |
 | AFS R1 | kaggriculture-v25-new-production-routes-with-rea | 221/267 | 82.8% | 111/134 | 110/133 |
 | AFS R1 | TRI_A06_r6_r3_bundle_fix1 | 99/1018 | 9.7% | 46/510 | 53/508 |
 | AFS R1 | kaggriculture-v40-challenger | 144/266 | 54.1% | 74/134 | 70/132 |
 | AFS R1 | rule-agent-ecobot-v7-arena-analytics | 248/261 | 95.0% | 124/131 | 124/130 |
-| AFS R1 | kaggriculture-utils-v1 | 564/1019 | 55.3% | 284/509 | 280/510 |
+| AFS R1 | kaggriculture-utils-v1 | 565/1020 | 55.4% | 284/509 | 281/511 |
 | AFS R1 | kaggriculture-structured-economic-policy | 208/268 | 77.6% | 106/136 | 102/132 |
 | kaggriculture-v38-smarter-feed-stronger-margins | more-yield-smarter-labor | 216/268 | 80.6% | 110/136 | 106/132 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-shop-router-reactive-v5 | 0/266 | 0.0% | 0/132 | 0/134 |
@@ -391,14 +391,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | TRI_A08_r11_r3 | kaggriculture-most-powerfull-route | 193/263 | 73.4% | 94/130 | 99/133 |
 | TRI_A08_r11_r3 | kaggriculture-metacounter-r1-scored-agent | 490/1017 | 48.2% | 244/508 | 246/509 |
 | TRI_A08_r11_r3 | AFS R2 | 697/1017 | 68.5% | 342/509 | 355/508 |
-| TRI_A08_r11_r3 | kaggriculture-v23-adaptive-routes-smart-sales | 193/260 | 74.2% | 96/129 | 97/131 |
+| TRI_A08_r11_r3 | kaggriculture-v23-adaptive-routes-smart-sales | 193/261 | 73.9% | 96/130 | 97/131 |
 | TRI_A08_r11_r3 | kaggriculture-v25-new-production-routes-with-rea | 205/269 | 76.2% | 101/132 | 104/137 |
 | TRI_A08_r11_r3 | TRI_A06_r6_r3_bundle_fix1 | 111/1017 | 10.9% | 60/508 | 51/509 |
 | TRI_A08_r11_r3 | kaggriculture-v40-challenger | 126/267 | 47.2% | 63/134 | 63/133 |
 | TRI_A08_r11_r3 | rule-agent-ecobot-v7-arena-analytics | 266/269 | 98.9% | 132/134 | 134/135 |
 | TRI_A08_r11_r3 | kaggriculture-utils-v1 | 521/1019 | 51.1% | 256/509 | 265/510 |
 | TRI_A08_r11_r3 | kaggriculture-structured-economic-policy | 186/261 | 71.3% | 93/132 | 93/129 |
-| kaggriculture-v41-review-candidate | more-yield-smarter-labor | 264/264 | 100.0% | 131/131 | 133/133 |
+| kaggriculture-v41-review-candidate | more-yield-smarter-labor | 265/265 | 100.0% | 132/132 | 133/133 |
 | kaggriculture-v41-review-candidate | kaggriculture-shop-router-reactive-v5 | 29/267 | 10.9% | 14/134 | 15/133 |
 | kaggriculture-v41-review-candidate | kaggriculture-shop-router-reactive-v4 | 1019/1019 | 100.0% | 511/511 | 508/508 |
 | kaggriculture-v41-review-candidate | TRI_A06_r12_r3_fix1 | 441/1021 | 43.2% | 224/512 | 217/509 |
@@ -409,22 +409,22 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-v41-review-candidate | TRI_A08_r11_r3 | 476/1017 | 46.8% | 236/506 | 240/511 |
 | kaggriculture-v41-review-candidate | kaggriculture-2026-v1 | 266/266 | 100.0% | 134/134 | 132/132 |
 | kaggriculture-v41-review-candidate | farming-score-v4-a-better-shop | 3/265 | 1.1% | 1/134 | 2/131 |
-| kaggriculture-v41-review-candidate | kaggriculture-most-powerfull-route | 267/267 | 100.0% | 133/133 | 134/134 |
-| kaggriculture-v41-review-candidate | kaggriculture-metacounter-r1-scored-agent | 1020/1020 | 100.0% | 509/509 | 511/511 |
+| kaggriculture-v41-review-candidate | kaggriculture-most-powerfull-route | 268/268 | 100.0% | 133/133 | 135/135 |
+| kaggriculture-v41-review-candidate | kaggriculture-metacounter-r1-scored-agent | 1021/1021 | 100.0% | 510/510 | 511/511 |
 | kaggriculture-v41-review-candidate | AFS R2 | 500/1016 | 49.2% | 248/506 | 252/510 |
-| kaggriculture-v41-review-candidate | kaggriculture-v23-adaptive-routes-smart-sales | 262/263 | 99.6% | 131/131 | 131/132 |
-| kaggriculture-v41-review-candidate | kaggriculture-v25-new-production-routes-with-rea | 265/266 | 99.6% | 133/133 | 132/133 |
+| kaggriculture-v41-review-candidate | kaggriculture-v23-adaptive-routes-smart-sales | 263/264 | 99.6% | 131/131 | 132/133 |
+| kaggriculture-v41-review-candidate | kaggriculture-v25-new-production-routes-with-rea | 266/267 | 99.6% | 133/133 | 133/134 |
 | kaggriculture-v41-review-candidate | TRI_A06_r6_r3_bundle_fix1 | 383/1016 | 37.7% | 195/510 | 188/506 |
-| kaggriculture-v41-review-candidate | kaggriculture-v40-challenger | 264/264 | 100.0% | 132/132 | 132/132 |
+| kaggriculture-v41-review-candidate | kaggriculture-v40-challenger | 265/265 | 100.0% | 132/132 | 133/133 |
 | kaggriculture-v41-review-candidate | rule-agent-ecobot-v7-arena-analytics | 264/264 | 100.0% | 132/132 | 132/132 |
 | kaggriculture-v41-review-candidate | kaggriculture-utils-v1 | 920/1017 | 90.5% | 462/509 | 458/508 |
 | kaggriculture-v41-review-candidate | kaggriculture-structured-economic-policy | 266/266 | 100.0% | 134/134 | 132/132 |
 | kaggriculture-2026-v1 | more-yield-smarter-labor | 0/267 | 0.0% | 0/132 | 0/135 |
-| kaggriculture-2026-v1 | kaggriculture-shop-router-reactive-v5 | 0/265 | 0.0% | 0/133 | 0/132 |
+| kaggriculture-2026-v1 | kaggriculture-shop-router-reactive-v5 | 0/266 | 0.0% | 0/134 | 0/132 |
 | kaggriculture-2026-v1 | kaggriculture-shop-router-reactive-v4 | 0/263 | 0.0% | 0/131 | 0/132 |
 | kaggriculture-2026-v1 | TRI_A06_r12_r3_fix1 | 0/269 | 0.0% | 0/135 | 0/134 |
 | kaggriculture-2026-v1 | kaggriculture-v36-guarded-four-turn-sales | 0/266 | 0.0% | 0/133 | 0/133 |
-| kaggriculture-2026-v1 | Day 9 planner selector | 0/267 | 0.0% | 0/135 | 0/132 |
+| kaggriculture-2026-v1 | Day 9 planner selector | 0/268 | 0.0% | 0/135 | 0/133 |
 | kaggriculture-2026-v1 | AFS R1 | 0/269 | 0.0% | 0/135 | 0/134 |
 | kaggriculture-2026-v1 | kaggriculture-v38-smarter-feed-stronger-margins | 0/264 | 0.0% | 0/130 | 0/134 |
 | kaggriculture-2026-v1 | TRI_A08_r11_r3 | 0/265 | 0.0% | 0/135 | 0/130 |
@@ -432,8 +432,8 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-2026-v1 | farming-score-v4-a-better-shop | 0/267 | 0.0% | 0/133 | 0/134 |
 | kaggriculture-2026-v1 | kaggriculture-most-powerfull-route | 0/272 | 0.0% | 0/133 | 0/139 |
 | kaggriculture-2026-v1 | kaggriculture-metacounter-r1-scored-agent | 0/266 | 0.0% | 0/133 | 0/133 |
-| kaggriculture-2026-v1 | AFS R2 | 0/267 | 0.0% | 0/133 | 0/134 |
-| kaggriculture-2026-v1 | kaggriculture-v23-adaptive-routes-smart-sales | 0/268 | 0.0% | 0/132 | 0/136 |
+| kaggriculture-2026-v1 | AFS R2 | 0/268 | 0.0% | 0/134 | 0/134 |
+| kaggriculture-2026-v1 | kaggriculture-v23-adaptive-routes-smart-sales | 0/269 | 0.0% | 0/133 | 0/136 |
 | kaggriculture-2026-v1 | kaggriculture-v25-new-production-routes-with-rea | 0/267 | 0.0% | 0/133 | 0/134 |
 | kaggriculture-2026-v1 | TRI_A06_r6_r3_bundle_fix1 | 0/265 | 0.0% | 0/133 | 0/132 |
 | kaggriculture-2026-v1 | kaggriculture-v40-challenger | 0/265 | 0.0% | 0/133 | 0/132 |
@@ -442,7 +442,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-2026-v1 | kaggriculture-structured-economic-policy | 0/268 | 0.0% | 0/133 | 0/135 |
 | farming-score-v4-a-better-shop | more-yield-smarter-labor | 264/264 | 100.0% | 131/131 | 133/133 |
 | farming-score-v4-a-better-shop | kaggriculture-shop-router-reactive-v5 | 184/265 | 69.4% | 93/135 | 91/130 |
-| farming-score-v4-a-better-shop | kaggriculture-shop-router-reactive-v4 | 269/269 | 100.0% | 135/135 | 134/134 |
+| farming-score-v4-a-better-shop | kaggriculture-shop-router-reactive-v4 | 270/270 | 100.0% | 136/136 | 134/134 |
 | farming-score-v4-a-better-shop | TRI_A06_r12_r3_fix1 | 118/265 | 44.5% | 60/131 | 58/134 |
 | farming-score-v4-a-better-shop | kaggriculture-v36-guarded-four-turn-sales | 262/262 | 100.0% | 132/132 | 130/130 |
 | farming-score-v4-a-better-shop | Day 9 planner selector | 139/269 | 51.7% | 69/136 | 70/133 |
@@ -460,7 +460,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | farming-score-v4-a-better-shop | kaggriculture-v40-challenger | 264/264 | 100.0% | 132/132 | 132/132 |
 | farming-score-v4-a-better-shop | rule-agent-ecobot-v7-arena-analytics | 263/263 | 100.0% | 133/133 | 130/130 |
 | farming-score-v4-a-better-shop | kaggriculture-utils-v1 | 257/266 | 96.6% | 129/133 | 128/133 |
-| farming-score-v4-a-better-shop | kaggriculture-structured-economic-policy | 267/267 | 100.0% | 134/134 | 133/133 |
+| farming-score-v4-a-better-shop | kaggriculture-structured-economic-policy | 268/268 | 100.0% | 134/134 | 134/134 |
 | kaggriculture-most-powerfull-route | more-yield-smarter-labor | 1/267 | 0.4% | 1/135 | 0/132 |
 | kaggriculture-most-powerfull-route | kaggriculture-shop-router-reactive-v5 | 0/263 | 0.0% | 0/132 | 0/131 |
 | kaggriculture-most-powerfull-route | kaggriculture-shop-router-reactive-v4 | 1/269 | 0.4% | 1/135 | 0/134 |
@@ -470,7 +470,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-most-powerfull-route | AFS R1 | 61/267 | 22.8% | 30/134 | 31/133 |
 | kaggriculture-most-powerfull-route | kaggriculture-v38-smarter-feed-stronger-margins | 1/266 | 0.4% | 1/133 | 0/133 |
 | kaggriculture-most-powerfull-route | TRI_A08_r11_r3 | 70/263 | 26.6% | 34/133 | 36/130 |
-| kaggriculture-most-powerfull-route | kaggriculture-v41-review-candidate | 0/267 | 0.0% | 0/134 | 0/133 |
+| kaggriculture-most-powerfull-route | kaggriculture-v41-review-candidate | 0/268 | 0.0% | 0/135 | 0/133 |
 | kaggriculture-most-powerfull-route | kaggriculture-2026-v1 | 272/272 | 100.0% | 139/139 | 133/133 |
 | kaggriculture-most-powerfull-route | farming-score-v4-a-better-shop | 0/262 | 0.0% | 0/131 | 0/131 |
 | kaggriculture-most-powerfull-route | kaggriculture-metacounter-r1-scored-agent | 3/266 | 1.1% | 2/135 | 1/131 |
@@ -484,21 +484,21 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-most-powerfull-route | kaggriculture-structured-economic-policy | 23/265 | 8.7% | 12/131 | 11/134 |
 | kaggriculture-metacounter-r1-scored-agent | more-yield-smarter-labor | 260/271 | 95.9% | 129/134 | 131/137 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v5 | 0/264 | 0.0% | 0/131 | 0/133 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v4 | 960/1018 | 94.3% | 483/510 | 477/508 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-shop-router-reactive-v4 | 961/1019 | 94.3% | 483/510 | 478/509 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A06_r12_r3_fix1 | 424/1017 | 41.7% | 210/510 | 214/507 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v36-guarded-four-turn-sales | 257/268 | 95.9% | 128/133 | 129/135 |
 | kaggriculture-metacounter-r1-scored-agent | Day 9 planner selector | 472/1014 | 46.5% | 236/507 | 236/507 |
 | kaggriculture-metacounter-r1-scored-agent | AFS R1 | 472/1015 | 46.5% | 235/509 | 237/506 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v38-smarter-feed-stronger-margins | 253/263 | 96.2% | 128/132 | 125/131 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A08_r11_r3 | 527/1017 | 51.8% | 263/509 | 264/508 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/1020 | 0.0% | 0/511 | 0/509 |
+| kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/1021 | 0.0% | 0/511 | 0/510 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-2026-v1 | 266/266 | 100.0% | 133/133 | 133/133 |
 | kaggriculture-metacounter-r1-scored-agent | farming-score-v4-a-better-shop | 0/266 | 0.0% | 0/134 | 0/132 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-most-powerfull-route | 263/266 | 98.9% | 130/131 | 133/135 |
-| kaggriculture-metacounter-r1-scored-agent | AFS R2 | 466/1021 | 45.6% | 233/510 | 233/511 |
+| kaggriculture-metacounter-r1-scored-agent | AFS R2 | 467/1022 | 45.7% | 234/511 | 233/511 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v23-adaptive-routes-smart-sales | 263/266 | 98.9% | 131/132 | 132/134 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v25-new-production-routes-with-rea | 266/266 | 100.0% | 135/135 | 131/131 |
-| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r6_r3_bundle_fix1 | 450/1017 | 44.2% | 224/506 | 226/511 |
+| kaggriculture-metacounter-r1-scored-agent | TRI_A06_r6_r3_bundle_fix1 | 450/1018 | 44.2% | 224/506 | 226/512 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v40-challenger | 11/262 | 4.2% | 4/131 | 7/131 |
 | kaggriculture-metacounter-r1-scored-agent | rule-agent-ecobot-v7-arena-analytics | 263/265 | 99.2% | 131/132 | 132/133 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-utils-v1 | 0/1018 | 0.0% | 0/510 | 0/508 |
@@ -509,16 +509,16 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | AFS R2 | TRI_A06_r12_r3_fix1 | 45/1018 | 4.4% | 23/509 | 22/509 |
 | AFS R2 | kaggriculture-v36-guarded-four-turn-sales | 206/262 | 78.6% | 103/130 | 103/132 |
 | AFS R2 | Day 9 planner selector | 49/1021 | 4.8% | 23/510 | 26/511 |
-| AFS R2 | AFS R1 | 452/1017 | 44.4% | 225/509 | 227/508 |
+| AFS R2 | AFS R1 | 452/1018 | 44.4% | 225/510 | 227/508 |
 | AFS R2 | kaggriculture-v38-smarter-feed-stronger-margins | 177/264 | 67.0% | 89/131 | 88/133 |
 | AFS R2 | TRI_A08_r11_r3 | 320/1017 | 31.5% | 153/508 | 167/509 |
 | AFS R2 | kaggriculture-v41-review-candidate | 516/1016 | 50.8% | 258/510 | 258/506 |
-| AFS R2 | kaggriculture-2026-v1 | 267/267 | 100.0% | 134/134 | 133/133 |
+| AFS R2 | kaggriculture-2026-v1 | 268/268 | 100.0% | 134/134 | 134/134 |
 | AFS R2 | farming-score-v4-a-better-shop | 130/267 | 48.7% | 65/133 | 65/134 |
 | AFS R2 | kaggriculture-most-powerfull-route | 210/267 | 78.7% | 106/134 | 104/133 |
-| AFS R2 | kaggriculture-metacounter-r1-scored-agent | 553/1021 | 54.2% | 277/511 | 276/510 |
+| AFS R2 | kaggriculture-metacounter-r1-scored-agent | 553/1022 | 54.1% | 277/511 | 276/511 |
 | AFS R2 | kaggriculture-v23-adaptive-routes-smart-sales | 198/268 | 73.9% | 100/135 | 98/133 |
-| AFS R2 | kaggriculture-v25-new-production-routes-with-rea | 212/267 | 79.4% | 108/134 | 104/133 |
+| AFS R2 | kaggriculture-v25-new-production-routes-with-rea | 212/268 | 79.1% | 108/134 | 104/134 |
 | AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 86/1016 | 8.5% | 41/508 | 45/508 |
 | AFS R2 | kaggriculture-v40-challenger | 154/269 | 57.2% | 78/134 | 76/135 |
 | AFS R2 | rule-agent-ecobot-v7-arena-analytics | 239/261 | 91.6% | 119/130 | 120/131 |
@@ -532,16 +532,16 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-v23-adaptive-routes-smart-sales | Day 9 planner selector | 39/265 | 14.7% | 20/133 | 19/132 |
 | kaggriculture-v23-adaptive-routes-smart-sales | AFS R1 | 68/263 | 25.9% | 36/133 | 32/130 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v38-smarter-feed-stronger-margins | 3/267 | 1.1% | 2/133 | 1/134 |
-| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A08_r11_r3 | 67/260 | 25.8% | 34/131 | 33/129 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v41-review-candidate | 1/263 | 0.4% | 1/132 | 0/131 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-2026-v1 | 268/268 | 100.0% | 136/136 | 132/132 |
+| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A08_r11_r3 | 68/261 | 26.1% | 34/131 | 34/130 |
+| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v41-review-candidate | 1/264 | 0.4% | 1/133 | 0/131 |
+| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-2026-v1 | 269/269 | 100.0% | 136/136 | 133/133 |
 | kaggriculture-v23-adaptive-routes-smart-sales | farming-score-v4-a-better-shop | 1/265 | 0.4% | 1/134 | 0/131 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-most-powerfull-route | 14/268 | 5.2% | 8/134 | 6/134 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-metacounter-r1-scored-agent | 3/266 | 1.1% | 2/134 | 1/132 |
 | kaggriculture-v23-adaptive-routes-smart-sales | AFS R2 | 70/268 | 26.1% | 35/133 | 35/135 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v25-new-production-routes-with-rea | 59/267 | 22.1% | 30/133 | 29/134 |
-| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A06_r6_r3_bundle_fix1 | 57/266 | 21.4% | 31/134 | 26/132 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v40-challenger | 3/267 | 1.1% | 2/132 | 1/135 |
+| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A06_r6_r3_bundle_fix1 | 58/267 | 21.7% | 31/134 | 27/133 |
+| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v40-challenger | 3/268 | 1.1% | 2/133 | 1/135 |
 | kaggriculture-v23-adaptive-routes-smart-sales | rule-agent-ecobot-v7-arena-analytics | 262/266 | 98.5% | 133/135 | 129/131 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-utils-v1 | 1/270 | 0.4% | 1/135 | 0/135 |
 | kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-structured-economic-policy | 22/262 | 8.4% | 13/132 | 9/130 |
@@ -554,16 +554,16 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-v25-new-production-routes-with-rea | AFS R1 | 44/267 | 16.5% | 22/133 | 22/134 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v38-smarter-feed-stronger-margins | 0/265 | 0.0% | 0/132 | 0/133 |
 | kaggriculture-v25-new-production-routes-with-rea | TRI_A08_r11_r3 | 64/269 | 23.8% | 33/137 | 31/132 |
-| kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v41-review-candidate | 1/266 | 0.4% | 1/133 | 0/133 |
+| kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v41-review-candidate | 1/267 | 0.4% | 1/134 | 0/133 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-2026-v1 | 267/267 | 100.0% | 134/134 | 133/133 |
 | kaggriculture-v25-new-production-routes-with-rea | farming-score-v4-a-better-shop | 1/267 | 0.4% | 1/135 | 0/132 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-most-powerfull-route | 0/269 | 0.0% | 0/136 | 0/133 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-metacounter-r1-scored-agent | 0/266 | 0.0% | 0/131 | 0/135 |
-| kaggriculture-v25-new-production-routes-with-rea | AFS R2 | 55/267 | 20.6% | 29/133 | 26/134 |
+| kaggriculture-v25-new-production-routes-with-rea | AFS R2 | 56/268 | 20.9% | 30/134 | 26/134 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v23-adaptive-routes-smart-sales | 208/267 | 77.9% | 105/134 | 103/133 |
 | kaggriculture-v25-new-production-routes-with-rea | TRI_A06_r6_r3_bundle_fix1 | 55/261 | 21.1% | 29/129 | 26/132 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v40-challenger | 0/269 | 0.0% | 0/132 | 0/137 |
-| kaggriculture-v25-new-production-routes-with-rea | rule-agent-ecobot-v7-arena-analytics | 261/264 | 98.9% | 131/132 | 130/132 |
+| kaggriculture-v25-new-production-routes-with-rea | rule-agent-ecobot-v7-arena-analytics | 262/265 | 98.9% | 131/132 | 131/133 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-utils-v1 | 1/264 | 0.4% | 1/133 | 0/131 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-structured-economic-policy | 0/264 | 0.0% | 0/130 | 0/134 |
 | TRI_A06_r6_r3_bundle_fix1 | more-yield-smarter-labor | 195/268 | 72.8% | 98/134 | 97/134 |
@@ -579,35 +579,35 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-2026-v1 | 265/265 | 100.0% | 132/132 | 133/133 |
 | TRI_A06_r6_r3_bundle_fix1 | farming-score-v4-a-better-shop | 158/268 | 59.0% | 81/135 | 77/133 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-most-powerfull-route | 214/264 | 81.1% | 109/133 | 105/131 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-metacounter-r1-scored-agent | 567/1017 | 55.8% | 285/511 | 282/506 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-metacounter-r1-scored-agent | 568/1018 | 55.8% | 286/512 | 282/506 |
 | TRI_A06_r6_r3_bundle_fix1 | AFS R2 | 930/1016 | 91.5% | 463/508 | 467/508 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v23-adaptive-routes-smart-sales | 209/266 | 78.6% | 106/132 | 103/134 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v23-adaptive-routes-smart-sales | 209/267 | 78.3% | 106/133 | 103/134 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v25-new-production-routes-with-rea | 206/261 | 78.9% | 106/132 | 100/129 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v40-challenger | 151/270 | 55.9% | 76/135 | 75/135 |
-| TRI_A06_r6_r3_bundle_fix1 | rule-agent-ecobot-v7-arena-analytics | 261/267 | 97.8% | 131/134 | 130/133 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-utils-v1 | 689/1021 | 67.5% | 345/509 | 344/512 |
+| TRI_A06_r6_r3_bundle_fix1 | rule-agent-ecobot-v7-arena-analytics | 262/268 | 97.8% | 131/134 | 131/134 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-utils-v1 | 689/1023 | 67.4% | 345/510 | 344/513 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-structured-economic-policy | 216/261 | 82.8% | 109/130 | 107/131 |
 | kaggriculture-v40-challenger | more-yield-smarter-labor | 258/269 | 95.9% | 132/137 | 126/132 |
 | kaggriculture-v40-challenger | kaggriculture-shop-router-reactive-v5 | 0/268 | 0.0% | 0/135 | 0/133 |
 | kaggriculture-v40-challenger | kaggriculture-shop-router-reactive-v4 | 260/270 | 96.3% | 133/137 | 127/133 |
 | kaggriculture-v40-challenger | TRI_A06_r12_r3_fix1 | 115/269 | 42.8% | 59/134 | 56/135 |
 | kaggriculture-v40-challenger | kaggriculture-v36-guarded-four-turn-sales | 255/266 | 95.9% | 126/131 | 129/135 |
-| kaggriculture-v40-challenger | Day 9 planner selector | 113/265 | 42.6% | 58/135 | 55/130 |
+| kaggriculture-v40-challenger | Day 9 planner selector | 114/266 | 42.9% | 58/135 | 56/131 |
 | kaggriculture-v40-challenger | AFS R1 | 120/266 | 45.1% | 61/132 | 59/134 |
 | kaggriculture-v40-challenger | kaggriculture-v38-smarter-feed-stronger-margins | 260/270 | 96.3% | 131/135 | 129/135 |
 | kaggriculture-v40-challenger | TRI_A08_r11_r3 | 141/267 | 52.8% | 70/133 | 71/134 |
-| kaggriculture-v40-challenger | kaggriculture-v41-review-candidate | 0/264 | 0.0% | 0/132 | 0/132 |
+| kaggriculture-v40-challenger | kaggriculture-v41-review-candidate | 0/265 | 0.0% | 0/133 | 0/132 |
 | kaggriculture-v40-challenger | kaggriculture-2026-v1 | 265/265 | 100.0% | 132/132 | 133/133 |
 | kaggriculture-v40-challenger | farming-score-v4-a-better-shop | 0/264 | 0.0% | 0/132 | 0/132 |
 | kaggriculture-v40-challenger | kaggriculture-most-powerfull-route | 265/268 | 98.9% | 135/136 | 130/132 |
 | kaggriculture-v40-challenger | kaggriculture-metacounter-r1-scored-agent | 11/262 | 4.2% | 4/131 | 7/131 |
 | kaggriculture-v40-challenger | AFS R2 | 113/269 | 42.0% | 58/135 | 55/134 |
-| kaggriculture-v40-challenger | kaggriculture-v23-adaptive-routes-smart-sales | 264/267 | 98.9% | 134/135 | 130/132 |
+| kaggriculture-v40-challenger | kaggriculture-v23-adaptive-routes-smart-sales | 265/268 | 98.9% | 134/135 | 131/133 |
 | kaggriculture-v40-challenger | kaggriculture-v25-new-production-routes-with-rea | 269/269 | 100.0% | 137/137 | 132/132 |
 | kaggriculture-v40-challenger | TRI_A06_r6_r3_bundle_fix1 | 119/270 | 44.1% | 60/135 | 59/135 |
 | kaggriculture-v40-challenger | rule-agent-ecobot-v7-arena-analytics | 264/266 | 99.2% | 133/134 | 131/132 |
 | kaggriculture-v40-challenger | kaggriculture-utils-v1 | 0/266 | 0.0% | 0/134 | 0/132 |
-| kaggriculture-v40-challenger | kaggriculture-structured-economic-policy | 261/266 | 98.1% | 132/134 | 129/132 |
+| kaggriculture-v40-challenger | kaggriculture-structured-economic-policy | 262/267 | 98.1% | 132/134 | 130/133 |
 | rule-agent-ecobot-v7-arena-analytics | more-yield-smarter-labor | 3/266 | 1.1% | 2/132 | 1/134 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-shop-router-reactive-v5 | 0/265 | 0.0% | 0/131 | 0/134 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-shop-router-reactive-v4 | 3/267 | 1.1% | 2/136 | 1/131 |
@@ -624,8 +624,8 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-metacounter-r1-scored-agent | 2/265 | 0.8% | 1/133 | 1/132 |
 | rule-agent-ecobot-v7-arena-analytics | AFS R2 | 22/261 | 8.4% | 11/131 | 11/130 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-v23-adaptive-routes-smart-sales | 4/266 | 1.5% | 2/131 | 2/135 |
-| rule-agent-ecobot-v7-arena-analytics | kaggriculture-v25-new-production-routes-with-rea | 3/264 | 1.1% | 2/132 | 1/132 |
-| rule-agent-ecobot-v7-arena-analytics | TRI_A06_r6_r3_bundle_fix1 | 6/267 | 2.2% | 3/133 | 3/134 |
+| rule-agent-ecobot-v7-arena-analytics | kaggriculture-v25-new-production-routes-with-rea | 3/265 | 1.1% | 2/133 | 1/132 |
+| rule-agent-ecobot-v7-arena-analytics | TRI_A06_r6_r3_bundle_fix1 | 6/268 | 2.2% | 3/134 | 3/134 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-v40-challenger | 2/266 | 0.8% | 1/132 | 1/134 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-utils-v1 | 0/266 | 0.0% | 0/135 | 0/131 |
 | rule-agent-ecobot-v7-arena-analytics | kaggriculture-structured-economic-policy | 3/268 | 1.1% | 2/134 | 1/134 |
@@ -635,7 +635,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-utils-v1 | TRI_A06_r12_r3_fix1 | 423/1018 | 41.6% | 215/507 | 208/511 |
 | kaggriculture-utils-v1 | kaggriculture-v36-guarded-four-turn-sales | 268/268 | 100.0% | 135/135 | 133/133 |
 | kaggriculture-utils-v1 | Day 9 planner selector | 509/1019 | 50.0% | 252/511 | 257/508 |
-| kaggriculture-utils-v1 | AFS R1 | 455/1019 | 44.7% | 230/510 | 225/509 |
+| kaggriculture-utils-v1 | AFS R1 | 455/1020 | 44.6% | 230/511 | 225/509 |
 | kaggriculture-utils-v1 | kaggriculture-v38-smarter-feed-stronger-margins | 266/266 | 100.0% | 133/133 | 133/133 |
 | kaggriculture-utils-v1 | TRI_A08_r11_r3 | 498/1019 | 48.9% | 245/510 | 253/509 |
 | kaggriculture-utils-v1 | kaggriculture-v41-review-candidate | 97/1017 | 9.5% | 50/508 | 47/509 |
@@ -646,11 +646,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-utils-v1 | AFS R2 | 513/1019 | 50.3% | 257/510 | 256/509 |
 | kaggriculture-utils-v1 | kaggriculture-v23-adaptive-routes-smart-sales | 269/270 | 99.6% | 135/135 | 134/135 |
 | kaggriculture-utils-v1 | kaggriculture-v25-new-production-routes-with-rea | 263/264 | 99.6% | 131/131 | 132/133 |
-| kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 332/1021 | 32.5% | 168/512 | 164/509 |
+| kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 334/1023 | 32.6% | 169/513 | 165/510 |
 | kaggriculture-utils-v1 | kaggriculture-v40-challenger | 266/266 | 100.0% | 132/132 | 134/134 |
 | kaggriculture-utils-v1 | rule-agent-ecobot-v7-arena-analytics | 266/266 | 100.0% | 131/131 | 135/135 |
 | kaggriculture-utils-v1 | kaggriculture-structured-economic-policy | 267/267 | 100.0% | 133/133 | 134/134 |
-| kaggriculture-structured-economic-policy | more-yield-smarter-labor | 6/266 | 2.3% | 3/130 | 3/136 |
+| kaggriculture-structured-economic-policy | more-yield-smarter-labor | 6/267 | 2.2% | 3/130 | 3/137 |
 | kaggriculture-structured-economic-policy | kaggriculture-shop-router-reactive-v5 | 0/269 | 0.0% | 0/133 | 0/136 |
 | kaggriculture-structured-economic-policy | kaggriculture-shop-router-reactive-v4 | 1/264 | 0.4% | 1/129 | 0/135 |
 | kaggriculture-structured-economic-policy | TRI_A06_r12_r3_fix1 | 58/262 | 22.1% | 28/131 | 30/131 |
@@ -661,14 +661,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 1:24 AM UTC
 | kaggriculture-structured-economic-policy | TRI_A08_r11_r3 | 75/261 | 28.7% | 36/129 | 39/132 |
 | kaggriculture-structured-economic-policy | kaggriculture-v41-review-candidate | 0/266 | 0.0% | 0/132 | 0/134 |
 | kaggriculture-structured-economic-policy | kaggriculture-2026-v1 | 268/268 | 100.0% | 135/135 | 133/133 |
-| kaggriculture-structured-economic-policy | farming-score-v4-a-better-shop | 0/267 | 0.0% | 0/133 | 0/134 |
+| kaggriculture-structured-economic-policy | farming-score-v4-a-better-shop | 0/268 | 0.0% | 0/134 | 0/134 |
 | kaggriculture-structured-economic-policy | kaggriculture-most-powerfull-route | 242/265 | 91.3% | 123/134 | 119/131 |
 | kaggriculture-structured-economic-policy | kaggriculture-metacounter-r1-scored-agent | 5/263 | 1.9% | 3/132 | 2/131 |
 | kaggriculture-structured-economic-policy | AFS R2 | 58/267 | 21.7% | 30/135 | 28/132 |
 | kaggriculture-structured-economic-policy | kaggriculture-v23-adaptive-routes-smart-sales | 240/262 | 91.6% | 121/130 | 119/132 |
 | kaggriculture-structured-economic-policy | kaggriculture-v25-new-production-routes-with-rea | 264/264 | 100.0% | 134/134 | 130/130 |
 | kaggriculture-structured-economic-policy | TRI_A06_r6_r3_bundle_fix1 | 45/261 | 17.2% | 24/131 | 21/130 |
-| kaggriculture-structured-economic-policy | kaggriculture-v40-challenger | 5/266 | 1.9% | 3/132 | 2/134 |
+| kaggriculture-structured-economic-policy | kaggriculture-v40-challenger | 5/267 | 1.9% | 3/133 | 2/134 |
 | kaggriculture-structured-economic-policy | rule-agent-ecobot-v7-arena-analytics | 265/268 | 98.9% | 133/134 | 132/134 |
 | kaggriculture-structured-economic-policy | kaggriculture-utils-v1 | 0/267 | 0.0% | 0/134 | 0/133 |
 
