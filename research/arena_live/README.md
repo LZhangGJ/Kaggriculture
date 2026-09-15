@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 15, 2026 at 3:01 PM UTC
+Updated: Sep 15, 2026 at 3:02 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -25,7 +25,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-v36-guarded-four-turn-sales | **PUBLIC** | 1-output-854cd1d0ab40 | active |
 | Day 9 planner selector | Team | historical-cbef5780feef | active |
 | AFS R1 | Team | historical-3ca540b67e4f | archived |
-| The Moon Counts Melons | **PUBLIC** | 44-bundle-4379d691704a | pending |
+| The Moon Counts Melons | **PUBLIC** | 44-bundle-4379d691704a | active |
 | kaggriculture-v38-smarter-feed-stronger-margins | **PUBLIC** | 2-source-023c8856eaae | active |
 | TRI_A08_r11_r3 | Team | 9862e2f01fc9 | active |
 | kaggriculture-v41-review-candidate | **PUBLIC** | 1-output-67cbfe1ab2d1 | active |
@@ -42,7 +42,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | AFS R2 | Team | historical-95249cb14247 | active |
 | kaggriculture-v43-recovering-lost-harvests | **PUBLIC** | 2-output-b5d7f70671d8 | active |
 | kaggriculture-adaptive-land-allocator-r10 | **PUBLIC** | 1-output-e9d563acb28c | placement-rated |
-| kaggriculture-v23-adaptive-routes-smart-sales | **PUBLIC** | 4-source-5c2f11a65919 | active |
+| kaggriculture-v23-adaptive-routes-smart-sales | **PUBLIC** | 4-source-5c2f11a65919 | archived |
 | kaggriculture-v25-new-production-routes-with-rea | **PUBLIC** | 2-source-b1a3bc4bad1c | active |
 | TRI_A06_r6_r3_bundle_fix1 | Team | 721a0355c794 | active |
 | kaggriculture-adaptive-land-allocator | **PUBLIC** | 2-output-6884e2814adc | archived |
@@ -90,7 +90,6 @@ Status: running Â· Last sync: Sep 15, 2026 at 2:53 PM UTC
 | kaggriculture-structured-economic-policy **PUBLIC** | 1339.3 | 11332 | 31.3% | ffc8942965 |
 | kaggriculture-most-powerfull-route **PUBLIC** | 1303.0 | 11482 | 25.4% | ffc8942965 |
 | kaggriculture-v25-new-production-routes-with-rea **PUBLIC** | 1261.1 | 11382 | 19.2% | ffc8942965 |
-| kaggriculture-v23-adaptive-routes-smart-sales **PUBLIC** | 1061.8 | 11336 | 18.1% | ffc8942965 |
 
 ## Retired agents
 
@@ -102,6 +101,7 @@ Ratings stay frozen at retirement. These versions receive no new matches; games 
 | kaggriculture-2026-v1 **PUBLIC · RETIRED** | 362.71071740135386 | 11354 | Sep 15, 2026 at 2:58 PM UTC |
 | Market_DP_R3 **TEAM · RETIRED** | 1881.0856041663822 | 1260 | Sep 15, 2026 at 2:56 PM UTC |
 | kaggriculture **PUBLIC · RETIRED** | 1567.0391920806164 | 5886 | Sep 14, 2026 at 4:27 PM UTC |
+| kaggriculture-v23-adaptive-routes-smart-sales **PUBLIC · RETIRED** | 1061.7729153041128 | 11336 | Sep 15, 2026 at 3:02 PM UTC |
 | kaggriculture-adaptive-land-allocator **PUBLIC · RETIRED** | 431.3550888144124 | 5896 | Sep 14, 2026 at 4:27 PM UTC |
 | shop-router-0913 **PUBLIC · RETIRED** | 1403.9597023232584 | 5890 | Sep 14, 2026 at 4:27 PM UTC |
 | kaggriculture-best-agent **PUBLIC · RETIRED** | 1525.1093598814332 | 5866 | Sep 14, 2026 at 4:27 PM UTC |
@@ -149,6 +149,7 @@ Last scan: Sep 15, 2026 at 4:00 AM UTC. Found 512 notebooks; 29 updated in the l
 
 New challengers face the proposed replacement on 32 fresh seeds in both seats (64 games). Replacement requires a one-sided 95% Hoeffding lower bound above 50%, using each seed pair as one observation, and no failed games. Each decision describes its evidence; older full-panel comparisons retain their original method.
 
+- The Moon Counts Melons vs kaggriculture-v23-adaptive-routes-smart-sales: replaced; gain +34.4 points, lower bound +12.7 points.
 - kaggriculture-rank-your-agent vs kaggriculture-adaptive-land-allocator: retained incumbent; gain +57.4 points, lower bound +55.3 points.
 - kaggriculture-v43-recovering-lost-harvests vs kaggriculture-2026-v1: superseded; partial game results retained.
 - kaggriculture-v43-recovering-lost-harvests vs rule-agent-ecobot-v7-arena-analytics: replaced; gain +50.0 points, lower bound +28.4 points.
@@ -189,11 +190,12 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-d8f9229d205e4c7cb68c | Complete | 384/384 |
 | placement-e824c1cc03f9fb3dede2 | Provisional | 366/384 |
 | placement-ef07d0f404e09e386ee5 | Provisional | 241/384 |
-| public-2d40cead6548ceb0-direct-98c1f361f1b0 | Provisional | 0/64 |
+| public-2d40cead6548ceb0-direct-98c1f361f1b0 | Complete | 64/64 |
 | public-45924f495e302bd9-7931ef66 | Complete | 6656/6656 |
 | public-96c4c72974b2f70b-6bc907f2 | Provisional | 4182/11264 |
 | public-96c4c72974b2f70b-direct-cdadb9a18ad2 | Complete | 64/64 |
 | public-c41ec651c070c095-direct-50df74fa9451 | Complete | 64/64 |
+| public-c943304fc8a22559-direct-99f6751e4d77 | Provisional | 0/64 |
 | verified-126bc3e142fa | Complete | 2/2 |
 | verified-1906a69871a3 | Complete | 2/2 |
 | verified-235bd66241b9 | Complete | 2/2 |
@@ -207,38 +209,38 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 167507/167507 |
+| cumulative-active-ffc8942965b1 | Provisional | 152802/152802 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:02 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
-| DP Melon Cyborg V4  gooseoverflow | 2.29 | 966 / 140 / 0 | 87.3% | 87.3% | 4,300 |
-| farming-score-v4-a-better-shop | 1.61 | 11713 / 2744 / 381 | 78.9% | 80.2% | 11,836 |
-| kaggriculture-shop-router-reactive-v5 | 1.36 | 11055 / 3287 / 428 | 74.8% | 76.3% | 11,684 |
-| kaggriculture-v41-review-candidate | 1.14 | 13300 / 5234 / 525 | 69.8% | 71.2% | 10,173 |
-| Day 9 planner selector | 1.05 | 13181 / 5859 / 5 | 69.2% | 69.2% | 4,517 |
-| A06 R6 | 0.98 | 10301 / 4527 / 0 | 69.5% | 69.5% | 5,097 |
-| TRI_A06_r12_r3_fix1 | 0.84 | 12390 / 6670 / 2 | 65.0% | 65.0% | 4,213 |
-| kaggriculture-utils-v1 | 0.77 | 12103 / 6927 / 6 | 63.6% | 63.6% | 9,740 |
-| TRI_A06_r6_r3_bundle_fix1 | 0.73 | 11967 / 7077 / 0 | 62.8% | 62.8% | 3,562 |
-| kaggriculture-v40-challenger | 0.42 | 8301 / 5737 / 718 | 56.3% | 58.7% | 73 |
-| kaggriculture-metacounter-r1-scored-agent | 0.33 | 9998 / 8340 / 718 | 52.5% | 54.4% | -1,653 |
+| DP Melon Cyborg V4  gooseoverflow | 2.19 | 912 / 138 / 0 | 86.9% | 86.9% | 3,992 |
+| farming-score-v4-a-better-shop | 1.50 | 10936 / 2741 / 381 | 77.8% | 79.1% | 11,985 |
+| kaggriculture-shop-router-reactive-v5 | 1.25 | 10281 / 3284 / 428 | 73.5% | 75.0% | 11,836 |
+| kaggriculture-v41-review-candidate | 1.04 | 12534 / 5231 / 525 | 68.5% | 70.0% | 10,225 |
+| Day 9 planner selector | 0.97 | 12553 / 5724 / 4 | 68.7% | 68.7% | 4,383 |
+| A06 R6 | 0.89 | 9627 / 4427 / 0 | 68.5% | 68.5% | 4,811 |
+| TRI_A06_r12_r3_fix1 | 0.77 | 11800 / 6493 / 2 | 64.5% | 64.5% | 4,082 |
+| TRI_A06_r6_r3_bundle_fix1 | 0.66 | 11348 / 6927 / 0 | 62.1% | 62.1% | 3,402 |
+| kaggriculture-utils-v1 | 0.66 | 11340 / 6924 / 6 | 62.1% | 62.1% | 9,782 |
+| kaggriculture-v40-challenger | 0.29 | 7534 / 5730 / 718 | 53.9% | 56.5% | -489 |
+| kaggriculture-metacounter-r1-scored-agent | 0.22 | 9239 / 8333 / 718 | 50.5% | 52.5% | -2,151 |
+| The Moon Counts Melons | â€” | 0 / 0 / 0 | â€” | â€” | â€” |
 | DP Melon Cyborg R4  invincible | â€” | 0 / 0 / 0 | â€” | â€” | â€” |
 | kaggriculture-v43-recovering-lost-harvests | â€” | 0 / 0 / 0 | â€” | â€” | â€” |
 | Lynn V5 | â€” | 0 / 0 / 0 | â€” | â€” | â€” |
-| AFS R2 | -0.07 | 8732 / 10319 / 5 | 45.8% | 45.8% | -141 |
-| TRI_A08_r11_r3 | -0.09 | 8657 / 10389 / 0 | 45.5% | 45.5% | -142 |
-| kaggriculture-shop-router-reactive-v4 | -0.23 | 8023 / 10837 / 195 | 42.1% | 42.6% | -3,393 |
-| kaggriculture-v38-smarter-feed-stronger-margins | -0.30 | 6487 / 8083 / 195 | 43.9% | 44.6% | -1,664 |
-| more-yield-smarter-labor | -0.66 | 5551 / 9159 / 26 | 37.7% | 37.8% | -2,990 |
-| kaggriculture-v36-guarded-four-turn-sales | -1.37 | 3501 / 10582 / 692 | 23.7% | 26.0% | -4,628 |
-| kaggriculture-structured-economic-policy | -1.46 | 3302 / 10751 / 666 | 22.4% | 24.7% | -5,091 |
-| kaggriculture-most-powerfull-route | -1.96 | 2665 / 12160 / 2 | 18.0% | 18.0% | -5,441 |
-| kaggriculture-v25-new-production-routes-with-rea | -2.58 | 1659 / 13071 / 0 | 11.3% | 11.3% | -35,977 |
-| kaggriculture-v23-adaptive-routes-smart-sales | -2.80 | 1372 / 13331 / 2 | 9.3% | 9.3% | -8,090 |
+| AFS R2 | -0.15 | 8169 / 10116 / 4 | 44.7% | 44.7% | -419 |
+| TRI_A08_r11_r3 | -0.16 | 8111 / 10170 / 0 | 44.4% | 44.4% | -362 |
+| kaggriculture-shop-router-reactive-v4 | -0.36 | 7262 / 10829 / 195 | 39.7% | 40.2% | -3,937 |
+| kaggriculture-v38-smarter-feed-stronger-margins | -0.45 | 5721 / 8075 / 195 | 40.9% | 41.6% | -2,284 |
+| more-yield-smarter-labor | -0.83 | 4791 / 9145 / 26 | 34.3% | 34.4% | -3,628 |
+| kaggriculture-v36-guarded-four-turn-sales | -1.59 | 2771 / 10535 / 692 | 19.8% | 22.3% | -5,278 |
+| kaggriculture-structured-economic-policy | -1.68 | 2602 / 10682 / 666 | 18.7% | 21.0% | -5,730 |
+| kaggriculture-most-powerfull-route | -2.28 | 1928 / 12119 / 2 | 13.7% | 13.7% | -6,147 |
+| kaggriculture-v25-new-production-routes-with-rea | -2.94 | 1062 / 12898 / 0 | 7.6% | 7.6% | -38,204 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
@@ -249,6 +251,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | more-yield-smarter-labor | TRI_A06_r12_r3_fix1 | 222/770 | 28.8% | 113/385 | 109/385 |
 | more-yield-smarter-labor | kaggriculture-v36-guarded-four-turn-sales | 733/773 | 94.8% | 366/385 | 367/388 |
 | more-yield-smarter-labor | Day 9 planner selector | 225/764 | 29.5% | 113/381 | 112/383 |
+| more-yield-smarter-labor | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | more-yield-smarter-labor | kaggriculture-v38-smarter-feed-stronger-margins | 135/780 | 17.3% | 68/390 | 67/390 |
 | more-yield-smarter-labor | TRI_A08_r11_r3 | 325/769 | 42.3% | 164/385 | 161/384 |
 | more-yield-smarter-labor | kaggriculture-v41-review-candidate | 0/768 | 0.0% | 0/382 | 0/386 |
@@ -258,7 +261,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | more-yield-smarter-labor | kaggriculture-metacounter-r1-scored-agent | 31/764 | 4.1% | 16/382 | 15/382 |
 | more-yield-smarter-labor | AFS R2 | 229/766 | 29.9% | 115/383 | 114/383 |
 | more-yield-smarter-labor | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| more-yield-smarter-labor | kaggriculture-v23-adaptive-routes-smart-sales | 760/774 | 98.2% | 381/387 | 379/387 |
 | more-yield-smarter-labor | kaggriculture-v25-new-production-routes-with-rea | 772/772 | 100.0% | 385/385 | 387/387 |
 | more-yield-smarter-labor | TRI_A06_r6_r3_bundle_fix1 | 227/771 | 29.4% | 114/385 | 113/386 |
 | more-yield-smarter-labor | kaggriculture-v40-challenger | 31/781 | 4.0% | 16/391 | 15/390 |
@@ -272,6 +274,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-shop-router-reactive-v5 | TRI_A06_r12_r3_fix1 | 337/773 | 43.6% | 171/387 | 166/386 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v36-guarded-four-turn-sales | 781/781 | 100.0% | 389/389 | 392/392 |
 | kaggriculture-shop-router-reactive-v5 | Day 9 planner selector | 388/770 | 50.4% | 196/383 | 192/387 |
+| kaggriculture-shop-router-reactive-v5 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v38-smarter-feed-stronger-margins | 770/770 | 100.0% | 387/387 | 383/383 |
 | kaggriculture-shop-router-reactive-v5 | TRI_A08_r11_r3 | 380/770 | 49.4% | 191/384 | 189/386 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v41-review-candidate | 428/776 | 55.2% | 211/386 | 217/390 |
@@ -281,7 +284,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-metacounter-r1-scored-agent | 774/776 | 99.7% | 388/389 | 386/387 |
 | kaggriculture-shop-router-reactive-v5 | AFS R2 | 391/770 | 50.8% | 199/386 | 192/384 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-shop-router-reactive-v5 | kaggriculture-v23-adaptive-routes-smart-sales | 774/777 | 99.6% | 387/388 | 387/389 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v25-new-production-routes-with-rea | 775/777 | 99.7% | 387/388 | 388/389 |
 | kaggriculture-shop-router-reactive-v5 | TRI_A06_r6_r3_bundle_fix1 | 321/769 | 41.7% | 162/384 | 159/385 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v40-challenger | 768/770 | 99.7% | 385/386 | 383/384 |
@@ -295,6 +297,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-shop-router-reactive-v4 | TRI_A06_r12_r3_fix1 | 517/1307 | 39.6% | 255/655 | 262/652 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v36-guarded-four-turn-sales | 757/774 | 97.8% | 379/387 | 378/387 |
 | kaggriculture-shop-router-reactive-v4 | Day 9 planner selector | 504/1314 | 38.4% | 251/657 | 253/657 |
+| kaggriculture-shop-router-reactive-v4 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v38-smarter-feed-stronger-margins | 519/769 | 67.5% | 257/386 | 262/383 |
 | kaggriculture-shop-router-reactive-v4 | TRI_A08_r11_r3 | 650/1311 | 49.6% | 320/655 | 330/656 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v41-review-candidate | 0/1315 | 0.0% | 0/659 | 0/656 |
@@ -304,7 +307,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-metacounter-r1-scored-agent | 69/1312 | 5.3% | 36/656 | 33/656 |
 | kaggriculture-shop-router-reactive-v4 | AFS R2 | 497/1319 | 37.7% | 249/660 | 248/659 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-shop-router-reactive-v4 | kaggriculture-v23-adaptive-routes-smart-sales | 761/769 | 99.0% | 380/383 | 381/386 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v25-new-production-routes-with-rea | 770/770 | 100.0% | 385/385 | 385/385 |
 | kaggriculture-shop-router-reactive-v4 | TRI_A06_r6_r3_bundle_fix1 | 504/1312 | 38.4% | 252/654 | 252/658 |
 | kaggriculture-shop-router-reactive-v4 | kaggriculture-v40-challenger | 30/773 | 3.9% | 16/386 | 14/387 |
@@ -318,6 +320,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A06_r12_r3_fix1 | kaggriculture-shop-router-reactive-v4 | 790/1307 | 60.4% | 390/652 | 400/655 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v36-guarded-four-turn-sales | 607/773 | 78.5% | 307/387 | 300/386 |
 | TRI_A06_r12_r3_fix1 | Day 9 planner selector | 333/1316 | 25.3% | 159/658 | 174/658 |
+| TRI_A06_r12_r3_fix1 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v38-smarter-feed-stronger-margins | 449/776 | 57.9% | 227/389 | 222/387 |
 | TRI_A06_r12_r3_fix1 | TRI_A08_r11_r3 | 1230/1312 | 93.8% | 619/657 | 611/655 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v41-review-candidate | 752/1314 | 57.2% | 380/658 | 372/656 |
@@ -327,7 +330,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A06_r12_r3_fix1 | kaggriculture-metacounter-r1-scored-agent | 736/1313 | 56.1% | 369/658 | 367/655 |
 | TRI_A06_r12_r3_fix1 | AFS R2 | 1257/1312 | 95.8% | 630/656 | 627/656 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-v23-adaptive-routes-smart-sales | 590/767 | 76.9% | 297/384 | 293/383 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v25-new-production-routes-with-rea | 571/771 | 74.1% | 288/386 | 283/385 |
 | TRI_A06_r12_r3_fix1 | TRI_A06_r6_r3_bundle_fix1 | 897/1315 | 68.2% | 449/657 | 448/658 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v40-challenger | 406/777 | 52.3% | 205/387 | 201/390 |
@@ -341,6 +343,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-shop-router-reactive-v4 | 17/774 | 2.2% | 9/387 | 8/387 |
 | kaggriculture-v36-guarded-four-turn-sales | TRI_A06_r12_r3_fix1 | 166/773 | 21.5% | 86/386 | 80/387 |
 | kaggriculture-v36-guarded-four-turn-sales | Day 9 planner selector | 178/773 | 23.0% | 93/387 | 85/386 |
+| kaggriculture-v36-guarded-four-turn-sales | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v38-smarter-feed-stronger-margins | 17/780 | 2.2% | 9/390 | 8/390 |
 | kaggriculture-v36-guarded-four-turn-sales | TRI_A08_r11_r3 | 265/773 | 34.3% | 132/386 | 133/387 |
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v41-review-candidate | 0/776 | 0.0% | 0/388 | 0/388 |
@@ -350,7 +353,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-metacounter-r1-scored-agent | 17/772 | 2.2% | 9/385 | 8/387 |
 | kaggriculture-v36-guarded-four-turn-sales | AFS R2 | 184/772 | 23.8% | 93/385 | 91/387 |
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v23-adaptive-routes-smart-sales | 730/777 | 94.0% | 368/390 | 362/387 |
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v25-new-production-routes-with-rea | 773/773 | 100.0% | 387/387 | 386/386 |
 | kaggriculture-v36-guarded-four-turn-sales | TRI_A06_r6_r3_bundle_fix1 | 147/771 | 19.1% | 75/385 | 72/386 |
 | kaggriculture-v36-guarded-four-turn-sales | kaggriculture-v40-challenger | 17/778 | 2.2% | 9/388 | 8/390 |
@@ -364,6 +366,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | Day 9 planner selector | kaggriculture-shop-router-reactive-v4 | 810/1314 | 61.6% | 404/657 | 406/657 |
 | Day 9 planner selector | TRI_A06_r12_r3_fix1 | 983/1316 | 74.7% | 484/658 | 499/658 |
 | Day 9 planner selector | kaggriculture-v36-guarded-four-turn-sales | 595/773 | 77.0% | 301/386 | 294/387 |
+| Day 9 planner selector | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | Day 9 planner selector | kaggriculture-v38-smarter-feed-stronger-margins | 479/774 | 61.9% | 243/388 | 236/386 |
 | Day 9 planner selector | TRI_A08_r11_r3 | 1164/1313 | 88.7% | 585/656 | 579/657 |
 | Day 9 planner selector | kaggriculture-v41-review-candidate | 659/1313 | 50.2% | 333/657 | 326/656 |
@@ -373,7 +376,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | Day 9 planner selector | kaggriculture-metacounter-r1-scored-agent | 696/1316 | 52.9% | 348/658 | 348/658 |
 | Day 9 planner selector | AFS R2 | 1251/1310 | 95.5% | 625/656 | 626/654 |
 | Day 9 planner selector | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| Day 9 planner selector | kaggriculture-v23-adaptive-routes-smart-sales | 628/764 | 82.2% | 316/383 | 312/381 |
 | Day 9 planner selector | kaggriculture-v25-new-production-routes-with-rea | 585/769 | 76.1% | 295/385 | 290/384 |
 | Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 1064/1310 | 81.2% | 523/654 | 541/656 |
 | Day 9 planner selector | kaggriculture-v40-challenger | 412/771 | 53.4% | 211/389 | 201/382 |
@@ -382,12 +384,36 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | Day 9 planner selector | kaggriculture-structured-economic-policy | 592/769 | 77.0% | 299/384 | 293/385 |
 | Day 9 planner selector | A06 R6 | 674/779 | 86.5% | 325/389 | 349/390 |
 | Day 9 planner selector | DP Melon Cyborg V4  gooseoverflow | 24/57 | 42.1% | 13/29 | 11/28 |
+| The Moon Counts Melons | more-yield-smarter-labor | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-shop-router-reactive-v5 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-shop-router-reactive-v4 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | TRI_A06_r12_r3_fix1 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v36-guarded-four-turn-sales | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | Day 9 planner selector | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v38-smarter-feed-stronger-margins | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | TRI_A08_r11_r3 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v41-review-candidate | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | farming-score-v4-a-better-shop | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | DP Melon Cyborg R4  invincible | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-most-powerfull-route | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-metacounter-r1-scored-agent | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | AFS R2 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v25-new-production-routes-with-rea | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | TRI_A06_r6_r3_bundle_fix1 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-v40-challenger | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | Lynn V5 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-utils-v1 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | kaggriculture-structured-economic-policy | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | A06 R6 | 0/0 | â€” | 0/0 | 0/0 |
+| The Moon Counts Melons | DP Melon Cyborg V4  gooseoverflow | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v38-smarter-feed-stronger-margins | more-yield-smarter-labor | 645/780 | 82.7% | 323/390 | 322/390 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-shop-router-reactive-v5 | 0/770 | 0.0% | 0/383 | 0/387 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-shop-router-reactive-v4 | 55/769 | 7.2% | 24/383 | 31/386 |
 | kaggriculture-v38-smarter-feed-stronger-margins | TRI_A06_r12_r3_fix1 | 327/776 | 42.1% | 165/387 | 162/389 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v36-guarded-four-turn-sales | 763/780 | 97.8% | 382/390 | 381/390 |
 | kaggriculture-v38-smarter-feed-stronger-margins | Day 9 planner selector | 295/774 | 38.1% | 150/386 | 145/388 |
+| kaggriculture-v38-smarter-feed-stronger-margins | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v38-smarter-feed-stronger-margins | TRI_A08_r11_r3 | 399/768 | 52.0% | 201/386 | 198/382 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v41-review-candidate | 0/772 | 0.0% | 0/389 | 0/383 |
 | kaggriculture-v38-smarter-feed-stronger-margins | farming-score-v4-a-better-shop | 0/779 | 0.0% | 0/390 | 0/389 |
@@ -396,7 +422,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-metacounter-r1-scored-agent | 30/775 | 3.9% | 16/389 | 14/386 |
 | kaggriculture-v38-smarter-feed-stronger-margins | AFS R2 | 283/771 | 36.7% | 145/386 | 138/385 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v23-adaptive-routes-smart-sales | 766/774 | 99.0% | 383/386 | 383/388 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v25-new-production-routes-with-rea | 780/780 | 100.0% | 390/390 | 390/390 |
 | kaggriculture-v38-smarter-feed-stronger-margins | TRI_A06_r6_r3_bundle_fix1 | 299/770 | 38.8% | 150/386 | 149/384 |
 | kaggriculture-v38-smarter-feed-stronger-margins | kaggriculture-v40-challenger | 30/770 | 3.9% | 16/386 | 14/384 |
@@ -411,6 +436,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A08_r11_r3 | TRI_A06_r12_r3_fix1 | 82/1312 | 6.2% | 44/655 | 38/657 |
 | TRI_A08_r11_r3 | kaggriculture-v36-guarded-four-turn-sales | 508/773 | 65.7% | 254/387 | 254/386 |
 | TRI_A08_r11_r3 | Day 9 planner selector | 149/1313 | 11.3% | 78/657 | 71/656 |
+| TRI_A08_r11_r3 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A08_r11_r3 | kaggriculture-v38-smarter-feed-stronger-margins | 369/768 | 48.0% | 184/382 | 185/386 |
 | TRI_A08_r11_r3 | kaggriculture-v41-review-candidate | 682/1311 | 52.0% | 342/655 | 340/656 |
 | TRI_A08_r11_r3 | farming-score-v4-a-better-shop | 388/781 | 49.7% | 195/390 | 193/391 |
@@ -419,7 +445,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A08_r11_r3 | kaggriculture-metacounter-r1-scored-agent | 595/1313 | 45.3% | 296/656 | 299/657 |
 | TRI_A08_r11_r3 | AFS R2 | 888/1313 | 67.6% | 434/655 | 454/658 |
 | TRI_A08_r11_r3 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| TRI_A08_r11_r3 | kaggriculture-v23-adaptive-routes-smart-sales | 546/765 | 71.4% | 273/381 | 273/384 |
 | TRI_A08_r11_r3 | kaggriculture-v25-new-production-routes-with-rea | 578/767 | 75.4% | 293/384 | 285/383 |
 | TRI_A08_r11_r3 | TRI_A06_r6_r3_bundle_fix1 | 152/1309 | 11.6% | 81/653 | 71/656 |
 | TRI_A08_r11_r3 | kaggriculture-v40-challenger | 331/773 | 42.8% | 166/388 | 165/385 |
@@ -434,6 +459,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v41-review-candidate | TRI_A06_r12_r3_fix1 | 562/1314 | 42.8% | 284/656 | 278/658 |
 | kaggriculture-v41-review-candidate | kaggriculture-v36-guarded-four-turn-sales | 776/776 | 100.0% | 388/388 | 388/388 |
 | kaggriculture-v41-review-candidate | Day 9 planner selector | 654/1313 | 49.8% | 330/656 | 324/657 |
+| kaggriculture-v41-review-candidate | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v41-review-candidate | kaggriculture-v38-smarter-feed-stronger-margins | 772/772 | 100.0% | 383/383 | 389/389 |
 | kaggriculture-v41-review-candidate | TRI_A08_r11_r3 | 629/1311 | 48.0% | 316/656 | 313/655 |
 | kaggriculture-v41-review-candidate | farming-score-v4-a-better-shop | 13/779 | 1.7% | 7/389 | 6/390 |
@@ -442,7 +468,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v41-review-candidate | kaggriculture-metacounter-r1-scored-agent | 1316/1316 | 100.0% | 657/657 | 659/659 |
 | kaggriculture-v41-review-candidate | AFS R2 | 652/1312 | 49.7% | 328/657 | 324/655 |
 | kaggriculture-v41-review-candidate | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v41-review-candidate | kaggriculture-v23-adaptive-routes-smart-sales | 766/769 | 99.6% | 383/384 | 383/385 |
 | kaggriculture-v41-review-candidate | kaggriculture-v25-new-production-routes-with-rea | 771/773 | 99.7% | 386/387 | 385/386 |
 | kaggriculture-v41-review-candidate | TRI_A06_r6_r3_bundle_fix1 | 496/1309 | 37.9% | 251/653 | 245/656 |
 | kaggriculture-v41-review-candidate | kaggriculture-v40-challenger | 769/771 | 99.7% | 386/387 | 383/384 |
@@ -457,6 +482,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | farming-score-v4-a-better-shop | TRI_A06_r12_r3_fix1 | 357/778 | 45.9% | 180/389 | 177/389 |
 | farming-score-v4-a-better-shop | kaggriculture-v36-guarded-four-turn-sales | 777/777 | 100.0% | 386/386 | 391/391 |
 | farming-score-v4-a-better-shop | Day 9 planner selector | 396/776 | 51.0% | 200/387 | 196/389 |
+| farming-score-v4-a-better-shop | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | farming-score-v4-a-better-shop | kaggriculture-v38-smarter-feed-stronger-margins | 779/779 | 100.0% | 389/389 | 390/390 |
 | farming-score-v4-a-better-shop | TRI_A08_r11_r3 | 393/781 | 50.3% | 198/391 | 195/390 |
 | farming-score-v4-a-better-shop | kaggriculture-v41-review-candidate | 528/779 | 67.8% | 265/390 | 263/389 |
@@ -465,7 +491,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | farming-score-v4-a-better-shop | kaggriculture-metacounter-r1-scored-agent | 772/774 | 99.7% | 386/387 | 386/387 |
 | farming-score-v4-a-better-shop | AFS R2 | 400/778 | 51.4% | 202/388 | 198/390 |
 | farming-score-v4-a-better-shop | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| farming-score-v4-a-better-shop | kaggriculture-v23-adaptive-routes-smart-sales | 777/780 | 99.6% | 390/391 | 387/389 |
 | farming-score-v4-a-better-shop | kaggriculture-v25-new-production-routes-with-rea | 772/774 | 99.7% | 387/388 | 385/386 |
 | farming-score-v4-a-better-shop | TRI_A06_r6_r3_bundle_fix1 | 327/777 | 42.1% | 166/388 | 161/389 |
 | farming-score-v4-a-better-shop | kaggriculture-v40-challenger | 778/780 | 99.7% | 390/391 | 388/389 |
@@ -480,6 +505,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | DP Melon Cyborg R4  invincible | TRI_A06_r12_r3_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v36-guarded-four-turn-sales | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | Day 9 planner selector | 0/0 | â€” | 0/0 | 0/0 |
+| DP Melon Cyborg R4  invincible | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v38-smarter-feed-stronger-margins | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | TRI_A08_r11_r3 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v41-review-candidate | 0/0 | â€” | 0/0 | 0/0 |
@@ -488,7 +514,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | DP Melon Cyborg R4  invincible | kaggriculture-metacounter-r1-scored-agent | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | AFS R2 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| DP Melon Cyborg R4  invincible | kaggriculture-v23-adaptive-routes-smart-sales | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v25-new-production-routes-with-rea | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | TRI_A06_r6_r3_bundle_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v40-challenger | 0/0 | â€” | 0/0 | 0/0 |
@@ -503,6 +528,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-most-powerfull-route | TRI_A06_r12_r3_fix1 | 176/778 | 22.6% | 90/388 | 86/390 |
 | kaggriculture-most-powerfull-route | kaggriculture-v36-guarded-four-turn-sales | 5/773 | 0.6% | 3/386 | 2/387 |
 | kaggriculture-most-powerfull-route | Day 9 planner selector | 177/779 | 22.7% | 90/388 | 87/391 |
+| kaggriculture-most-powerfull-route | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-most-powerfull-route | kaggriculture-v38-smarter-feed-stronger-margins | 5/780 | 0.6% | 3/390 | 2/390 |
 | kaggriculture-most-powerfull-route | TRI_A08_r11_r3 | 248/777 | 31.9% | 123/388 | 125/389 |
 | kaggriculture-most-powerfull-route | kaggriculture-v41-review-candidate | 0/775 | 0.0% | 0/388 | 0/387 |
@@ -511,7 +537,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-most-powerfull-route | kaggriculture-metacounter-r1-scored-agent | 5/778 | 0.6% | 3/389 | 2/389 |
 | kaggriculture-most-powerfull-route | AFS R2 | 182/777 | 23.4% | 92/390 | 90/387 |
 | kaggriculture-most-powerfull-route | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-most-powerfull-route | kaggriculture-v23-adaptive-routes-smart-sales | 737/778 | 94.7% | 369/388 | 368/390 |
 | kaggriculture-most-powerfull-route | kaggriculture-v25-new-production-routes-with-rea | 777/777 | 100.0% | 389/389 | 388/388 |
 | kaggriculture-most-powerfull-route | TRI_A06_r6_r3_bundle_fix1 | 149/776 | 19.2% | 76/389 | 73/387 |
 | kaggriculture-most-powerfull-route | kaggriculture-v40-challenger | 5/779 | 0.6% | 3/389 | 2/390 |
@@ -526,6 +551,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-metacounter-r1-scored-agent | TRI_A06_r12_r3_fix1 | 577/1313 | 43.9% | 288/655 | 289/658 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v36-guarded-four-turn-sales | 755/772 | 97.8% | 379/387 | 376/385 |
 | kaggriculture-metacounter-r1-scored-agent | Day 9 planner selector | 618/1316 | 47.0% | 309/658 | 309/658 |
+| kaggriculture-metacounter-r1-scored-agent | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v38-smarter-feed-stronger-margins | 745/775 | 96.1% | 372/386 | 373/389 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A08_r11_r3 | 718/1313 | 54.7% | 358/657 | 360/656 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v41-review-candidate | 0/1316 | 0.0% | 0/659 | 0/657 |
@@ -534,7 +560,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-most-powerfull-route | 773/778 | 99.4% | 387/389 | 386/389 |
 | kaggriculture-metacounter-r1-scored-agent | AFS R2 | 604/1313 | 46.0% | 303/657 | 301/656 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-metacounter-r1-scored-agent | kaggriculture-v23-adaptive-routes-smart-sales | 759/766 | 99.1% | 379/382 | 380/384 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v25-new-production-routes-with-rea | 771/771 | 100.0% | 386/386 | 385/385 |
 | kaggriculture-metacounter-r1-scored-agent | TRI_A06_r6_r3_bundle_fix1 | 596/1315 | 45.3% | 299/658 | 297/657 |
 | kaggriculture-metacounter-r1-scored-agent | kaggriculture-v40-challenger | 31/776 | 4.0% | 13/388 | 18/388 |
@@ -549,6 +574,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | AFS R2 | TRI_A06_r12_r3_fix1 | 55/1312 | 4.2% | 29/656 | 26/656 |
 | AFS R2 | kaggriculture-v36-guarded-four-turn-sales | 588/772 | 76.2% | 296/387 | 292/385 |
 | AFS R2 | Day 9 planner selector | 59/1310 | 4.5% | 28/654 | 31/656 |
+| AFS R2 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | AFS R2 | kaggriculture-v38-smarter-feed-stronger-margins | 488/771 | 63.3% | 247/385 | 241/386 |
 | AFS R2 | TRI_A08_r11_r3 | 425/1313 | 32.4% | 204/658 | 221/655 |
 | AFS R2 | kaggriculture-v41-review-candidate | 660/1312 | 50.3% | 331/655 | 329/657 |
@@ -557,7 +583,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | AFS R2 | kaggriculture-most-powerfull-route | 595/777 | 76.6% | 297/387 | 298/390 |
 | AFS R2 | kaggriculture-metacounter-r1-scored-agent | 707/1313 | 53.8% | 354/656 | 353/657 |
 | AFS R2 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| AFS R2 | kaggriculture-v23-adaptive-routes-smart-sales | 563/767 | 73.4% | 281/384 | 282/383 |
 | AFS R2 | kaggriculture-v25-new-production-routes-with-rea | 584/771 | 75.7% | 294/385 | 290/386 |
 | AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 101/1314 | 7.7% | 49/656 | 52/658 |
 | AFS R2 | kaggriculture-v40-challenger | 416/770 | 54.0% | 210/385 | 206/385 |
@@ -572,6 +597,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v43-recovering-lost-harvests | TRI_A06_r12_r3_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-v36-guarded-four-turn-sales | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | Day 9 planner selector | 0/0 | â€” | 0/0 | 0/0 |
+| kaggriculture-v43-recovering-lost-harvests | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-v38-smarter-feed-stronger-margins | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | TRI_A08_r11_r3 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-v41-review-candidate | 0/0 | â€” | 0/0 | 0/0 |
@@ -580,7 +606,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-most-powerfull-route | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-metacounter-r1-scored-agent | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | AFS R2 | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v43-recovering-lost-harvests | kaggriculture-v23-adaptive-routes-smart-sales | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-v25-new-production-routes-with-rea | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | TRI_A06_r6_r3_bundle_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-v40-challenger | 0/0 | â€” | 0/0 | 0/0 |
@@ -589,35 +614,13 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-structured-economic-policy | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | A06 R6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | DP Melon Cyborg V4  gooseoverflow | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v23-adaptive-routes-smart-sales | more-yield-smarter-labor | 14/774 | 1.8% | 8/387 | 6/387 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-shop-router-reactive-v5 | 3/777 | 0.4% | 2/389 | 1/388 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-shop-router-reactive-v4 | 8/769 | 1.0% | 5/386 | 3/383 |
-| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A06_r12_r3_fix1 | 177/767 | 23.1% | 90/383 | 87/384 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v36-guarded-four-turn-sales | 47/777 | 6.0% | 25/387 | 22/390 |
-| kaggriculture-v23-adaptive-routes-smart-sales | Day 9 planner selector | 135/764 | 17.7% | 69/381 | 66/383 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v38-smarter-feed-stronger-margins | 8/774 | 1.0% | 5/388 | 3/386 |
-| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A08_r11_r3 | 219/765 | 28.6% | 111/384 | 108/381 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v41-review-candidate | 3/769 | 0.4% | 2/385 | 1/384 |
-| kaggriculture-v23-adaptive-routes-smart-sales | farming-score-v4-a-better-shop | 3/780 | 0.4% | 2/389 | 1/391 |
-| kaggriculture-v23-adaptive-routes-smart-sales | DP Melon Cyborg R4  invincible | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-most-powerfull-route | 41/778 | 5.3% | 22/390 | 19/388 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-metacounter-r1-scored-agent | 7/766 | 0.9% | 4/384 | 3/382 |
-| kaggriculture-v23-adaptive-routes-smart-sales | AFS R2 | 203/767 | 26.5% | 101/383 | 102/384 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v25-new-production-routes-with-rea | 173/770 | 22.5% | 86/384 | 87/386 |
-| kaggriculture-v23-adaptive-routes-smart-sales | TRI_A06_r6_r3_bundle_fix1 | 150/769 | 19.5% | 79/384 | 71/385 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-v40-challenger | 7/774 | 0.9% | 4/387 | 3/387 |
-| kaggriculture-v23-adaptive-routes-smart-sales | Lynn V5 | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-utils-v1 | 3/766 | 0.4% | 2/381 | 1/385 |
-| kaggriculture-v23-adaptive-routes-smart-sales | kaggriculture-structured-economic-policy | 69/769 | 9.0% | 36/385 | 33/384 |
-| kaggriculture-v23-adaptive-routes-smart-sales | A06 R6 | 100/774 | 12.9% | 51/387 | 49/387 |
-| kaggriculture-v23-adaptive-routes-smart-sales | DP Melon Cyborg V4  gooseoverflow | 2/56 | 3.6% | 1/28 | 1/28 |
 | kaggriculture-v25-new-production-routes-with-rea | more-yield-smarter-labor | 0/772 | 0.0% | 0/387 | 0/385 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-shop-router-reactive-v5 | 2/777 | 0.3% | 1/389 | 1/388 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-shop-router-reactive-v4 | 0/770 | 0.0% | 0/385 | 0/385 |
 | kaggriculture-v25-new-production-routes-with-rea | TRI_A06_r12_r3_fix1 | 200/771 | 25.9% | 102/385 | 98/386 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v36-guarded-four-turn-sales | 0/773 | 0.0% | 0/386 | 0/387 |
 | kaggriculture-v25-new-production-routes-with-rea | Day 9 planner selector | 184/769 | 23.9% | 94/384 | 90/385 |
+| kaggriculture-v25-new-production-routes-with-rea | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v38-smarter-feed-stronger-margins | 0/780 | 0.0% | 0/390 | 0/390 |
 | kaggriculture-v25-new-production-routes-with-rea | TRI_A08_r11_r3 | 189/767 | 24.6% | 98/383 | 91/384 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v41-review-candidate | 2/773 | 0.3% | 1/386 | 1/387 |
@@ -627,7 +630,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-metacounter-r1-scored-agent | 0/771 | 0.0% | 0/385 | 0/386 |
 | kaggriculture-v25-new-production-routes-with-rea | AFS R2 | 187/771 | 24.3% | 96/386 | 91/385 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v23-adaptive-routes-smart-sales | 597/770 | 77.5% | 299/386 | 298/384 |
 | kaggriculture-v25-new-production-routes-with-rea | TRI_A06_r6_r3_bundle_fix1 | 161/769 | 20.9% | 85/383 | 76/386 |
 | kaggriculture-v25-new-production-routes-with-rea | kaggriculture-v40-challenger | 0/773 | 0.0% | 0/388 | 0/385 |
 | kaggriculture-v25-new-production-routes-with-rea | Lynn V5 | 0/0 | â€” | 0/0 | 0/0 |
@@ -641,6 +643,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A06_r6_r3_bundle_fix1 | TRI_A06_r12_r3_fix1 | 418/1315 | 31.8% | 210/658 | 208/657 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v36-guarded-four-turn-sales | 624/771 | 80.9% | 314/386 | 310/385 |
 | TRI_A06_r6_r3_bundle_fix1 | Day 9 planner selector | 246/1310 | 18.8% | 115/656 | 131/654 |
+| TRI_A06_r6_r3_bundle_fix1 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v38-smarter-feed-stronger-margins | 471/770 | 61.2% | 235/384 | 236/386 |
 | TRI_A06_r6_r3_bundle_fix1 | TRI_A08_r11_r3 | 1157/1309 | 88.4% | 585/656 | 572/653 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v41-review-candidate | 813/1309 | 62.1% | 411/656 | 402/653 |
@@ -650,7 +653,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-metacounter-r1-scored-agent | 719/1315 | 54.7% | 360/657 | 359/658 |
 | TRI_A06_r6_r3_bundle_fix1 | AFS R2 | 1213/1314 | 92.3% | 606/658 | 607/656 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v23-adaptive-routes-smart-sales | 619/769 | 80.5% | 314/385 | 305/384 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v25-new-production-routes-with-rea | 608/769 | 79.1% | 310/386 | 298/383 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v40-challenger | 409/773 | 52.9% | 206/385 | 203/388 |
 | TRI_A06_r6_r3_bundle_fix1 | Lynn V5 | 0/0 | â€” | 0/0 | 0/0 |
@@ -664,6 +666,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v40-challenger | TRI_A06_r12_r3_fix1 | 371/777 | 47.7% | 189/390 | 182/387 |
 | kaggriculture-v40-challenger | kaggriculture-v36-guarded-four-turn-sales | 761/778 | 97.8% | 382/390 | 379/388 |
 | kaggriculture-v40-challenger | Day 9 planner selector | 357/771 | 46.3% | 180/382 | 177/389 |
+| kaggriculture-v40-challenger | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v40-challenger | kaggriculture-v38-smarter-feed-stronger-margins | 740/770 | 96.1% | 370/384 | 370/386 |
 | kaggriculture-v40-challenger | TRI_A08_r11_r3 | 442/773 | 57.2% | 220/385 | 222/388 |
 | kaggriculture-v40-challenger | kaggriculture-v41-review-candidate | 2/771 | 0.3% | 1/384 | 1/387 |
@@ -673,7 +676,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-v40-challenger | kaggriculture-metacounter-r1-scored-agent | 31/776 | 4.0% | 13/388 | 18/388 |
 | kaggriculture-v40-challenger | AFS R2 | 352/770 | 45.7% | 178/385 | 174/385 |
 | kaggriculture-v40-challenger | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-v40-challenger | kaggriculture-v23-adaptive-routes-smart-sales | 767/774 | 99.1% | 384/387 | 383/387 |
 | kaggriculture-v40-challenger | kaggriculture-v25-new-production-routes-with-rea | 773/773 | 100.0% | 385/385 | 388/388 |
 | kaggriculture-v40-challenger | TRI_A06_r6_r3_bundle_fix1 | 364/773 | 47.1% | 185/388 | 179/385 |
 | kaggriculture-v40-challenger | Lynn V5 | 0/0 | â€” | 0/0 | 0/0 |
@@ -687,6 +689,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | Lynn V5 | TRI_A06_r12_r3_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v36-guarded-four-turn-sales | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | Day 9 planner selector | 0/0 | â€” | 0/0 | 0/0 |
+| Lynn V5 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v38-smarter-feed-stronger-margins | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | TRI_A08_r11_r3 | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v41-review-candidate | 0/0 | â€” | 0/0 | 0/0 |
@@ -696,7 +699,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | Lynn V5 | kaggriculture-metacounter-r1-scored-agent | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | AFS R2 | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| Lynn V5 | kaggriculture-v23-adaptive-routes-smart-sales | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v25-new-production-routes-with-rea | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | TRI_A06_r6_r3_bundle_fix1 | 0/0 | â€” | 0/0 | 0/0 |
 | Lynn V5 | kaggriculture-v40-challenger | 0/0 | â€” | 0/0 | 0/0 |
@@ -710,6 +712,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-utils-v1 | TRI_A06_r12_r3_fix1 | 541/1309 | 41.3% | 274/654 | 267/655 |
 | kaggriculture-utils-v1 | kaggriculture-v36-guarded-four-turn-sales | 772/772 | 100.0% | 386/386 | 386/386 |
 | kaggriculture-utils-v1 | Day 9 planner selector | 646/1308 | 49.4% | 320/656 | 326/652 |
+| kaggriculture-utils-v1 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-utils-v1 | kaggriculture-v38-smarter-feed-stronger-margins | 772/772 | 100.0% | 386/386 | 386/386 |
 | kaggriculture-utils-v1 | TRI_A08_r11_r3 | 645/1313 | 49.1% | 319/657 | 326/656 |
 | kaggriculture-utils-v1 | kaggriculture-v41-review-candidate | 115/1311 | 8.8% | 58/654 | 57/657 |
@@ -719,7 +722,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-utils-v1 | kaggriculture-metacounter-r1-scored-agent | 1304/1304 | 100.0% | 654/654 | 650/650 |
 | kaggriculture-utils-v1 | AFS R2 | 655/1318 | 49.7% | 327/660 | 328/658 |
 | kaggriculture-utils-v1 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-utils-v1 | kaggriculture-v23-adaptive-routes-smart-sales | 763/766 | 99.6% | 384/385 | 379/381 |
 | kaggriculture-utils-v1 | kaggriculture-v25-new-production-routes-with-rea | 766/768 | 99.7% | 383/384 | 383/384 |
 | kaggriculture-utils-v1 | TRI_A06_r6_r3_bundle_fix1 | 434/1313 | 33.1% | 219/656 | 215/657 |
 | kaggriculture-utils-v1 | kaggriculture-v40-challenger | 767/769 | 99.7% | 384/385 | 383/384 |
@@ -733,6 +735,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-structured-economic-policy | TRI_A06_r12_r3_fix1 | 165/767 | 21.5% | 85/383 | 80/384 |
 | kaggriculture-structured-economic-policy | kaggriculture-v36-guarded-four-turn-sales | 29/776 | 3.7% | 11/387 | 18/389 |
 | kaggriculture-structured-economic-policy | Day 9 planner selector | 177/769 | 23.0% | 92/385 | 85/384 |
+| kaggriculture-structured-economic-policy | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-structured-economic-policy | kaggriculture-v38-smarter-feed-stronger-margins | 4/772 | 0.5% | 2/385 | 2/387 |
 | kaggriculture-structured-economic-policy | TRI_A08_r11_r3 | 250/771 | 32.4% | 125/388 | 125/383 |
 | kaggriculture-structured-economic-policy | kaggriculture-v41-review-candidate | 0/767 | 0.0% | 0/382 | 0/385 |
@@ -742,7 +745,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | kaggriculture-structured-economic-policy | kaggriculture-metacounter-r1-scored-agent | 7/769 | 0.9% | 4/385 | 3/384 |
 | kaggriculture-structured-economic-policy | AFS R2 | 180/770 | 23.4% | 92/386 | 88/384 |
 | kaggriculture-structured-economic-policy | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| kaggriculture-structured-economic-policy | kaggriculture-v23-adaptive-routes-smart-sales | 700/769 | 91.0% | 351/384 | 349/385 |
 | kaggriculture-structured-economic-policy | kaggriculture-v25-new-production-routes-with-rea | 771/771 | 100.0% | 384/384 | 387/387 |
 | kaggriculture-structured-economic-policy | TRI_A06_r6_r3_bundle_fix1 | 145/766 | 18.9% | 74/384 | 71/382 |
 | kaggriculture-structured-economic-policy | kaggriculture-v40-challenger | 7/766 | 0.9% | 4/383 | 3/383 |
@@ -756,6 +758,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | A06 R6 | TRI_A06_r12_r3_fix1 | 395/777 | 50.8% | 194/388 | 201/389 |
 | A06 R6 | kaggriculture-v36-guarded-four-turn-sales | 651/778 | 83.7% | 325/390 | 326/388 |
 | A06 R6 | Day 9 planner selector | 105/779 | 13.5% | 41/390 | 64/389 |
+| A06 R6 | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | A06 R6 | kaggriculture-v38-smarter-feed-stronger-margins | 506/778 | 65.0% | 250/388 | 256/390 |
 | A06 R6 | TRI_A08_r11_r3 | 621/780 | 79.6% | 316/390 | 305/390 |
 | A06 R6 | kaggriculture-v41-review-candidate | 533/775 | 68.8% | 268/388 | 265/387 |
@@ -765,7 +768,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | A06 R6 | kaggriculture-metacounter-r1-scored-agent | 468/777 | 60.2% | 232/388 | 236/389 |
 | A06 R6 | AFS R2 | 678/776 | 87.4% | 335/387 | 343/389 |
 | A06 R6 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| A06 R6 | kaggriculture-v23-adaptive-routes-smart-sales | 674/774 | 87.1% | 338/387 | 336/387 |
 | A06 R6 | kaggriculture-v25-new-production-routes-with-rea | 647/778 | 83.2% | 320/389 | 327/389 |
 | A06 R6 | TRI_A06_r6_r3_bundle_fix1 | 507/781 | 64.9% | 248/390 | 259/391 |
 | A06 R6 | kaggriculture-v40-challenger | 469/778 | 60.3% | 232/390 | 237/388 |
@@ -779,6 +781,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | DP Melon Cyborg V4  gooseoverflow | TRI_A06_r12_r3_fix1 | 42/57 | 73.7% | 22/30 | 20/27 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v36-guarded-four-turn-sales | 53/53 | 100.0% | 29/29 | 24/24 |
 | DP Melon Cyborg V4  gooseoverflow | Day 9 planner selector | 33/57 | 57.9% | 17/28 | 16/29 |
+| DP Melon Cyborg V4  gooseoverflow | The Moon Counts Melons | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v38-smarter-feed-stronger-margins | 55/55 | 100.0% | 28/28 | 27/27 |
 | DP Melon Cyborg V4  gooseoverflow | TRI_A08_r11_r3 | 40/57 | 70.2% | 19/28 | 21/29 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v41-review-candidate | 57/57 | 100.0% | 28/28 | 29/29 |
@@ -788,7 +791,6 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 15, 2026 at 3:00 PM UTC
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-metacounter-r1-scored-agent | 56/56 | 100.0% | 28/28 | 28/28 |
 | DP Melon Cyborg V4  gooseoverflow | AFS R2 | 33/57 | 57.9% | 16/28 | 17/29 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
-| DP Melon Cyborg V4  gooseoverflow | kaggriculture-v23-adaptive-routes-smart-sales | 54/56 | 96.4% | 27/28 | 27/28 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v25-new-production-routes-with-rea | 54/56 | 96.4% | 26/27 | 28/29 |
 | DP Melon Cyborg V4  gooseoverflow | TRI_A06_r6_r3_bundle_fix1 | 36/55 | 65.5% | 19/29 | 17/26 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v40-challenger | 54/54 | 100.0% | 26/26 | 28/28 |
