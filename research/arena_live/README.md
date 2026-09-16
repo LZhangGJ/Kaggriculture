@@ -40,6 +40,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-most-powerfull-route | **PUBLIC** | 7-output-bde3628aace6 | archived |
 | kaggriculture-metacounter-r1-scored-agent | **PUBLIC** | 2-output-fa3a8046fdb1 | archived |
 | AFS R2 | Team | historical-95249cb14247 | active |
+| A06 R9C6 | Team | r9c6-53a9ad4096c7 | active |
 | kaggriculture-v43-recovering-lost-harvests | **PUBLIC** | 2-output-b5d7f70671d8 | active |
 | kaggriculture-adaptive-land-allocator-r10 | **PUBLIC** | 1-output-e9d563acb28c | placement-rated |
 | kaggriculture-v23-adaptive-routes-smart-sales | **PUBLIC** | 4-source-5c2f11a65919 | archived |
@@ -204,6 +205,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-55823b317bd135554253 | Complete | 384/384 |
 | placement-79d5c88570fd9263413b | Complete | 1/1 |
 | placement-79e10b8acab9339b5c12 | Provisional | 366/384 |
+| placement-92376f2c47a8702f7e27 | Complete | 1/1 |
 | placement-96c4c72974b2f70b1dd6 | Provisional | 366/384 |
 | placement-972925e664128e56a78c | Complete | 384/384 |
 | placement-c41ec651c070c0954812 | Provisional | 0/384 |
@@ -243,7 +245,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:52 AM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
@@ -257,6 +259,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | TRI_A06_r12_r3_fix1 | 0.22 | 9648 / 7338 / 0 | 56.8% | 56.8% | 2,285 |
 | TRI_A06_r6_r3_bundle_fix1 | 0.12 | 9190 / 7730 / 0 | 54.3% | 54.3% | 1,743 |
 | no-cow-left-behind-v40-autopsy-fix | 0.03 | 5103 / 4435 / 2 | 53.5% | 53.5% | -240 |
+| A06 R9C6 | â€” | 0 / 0 / 0 | â€” | â€” | â€” |
 | farming-score-v5-timing-optimized | -0.19 | 3855 / 4396 / 879 | 42.2% | 47.0% | -1,089 |
 | kaggriculture-fully-dynamic-autonomous-agent | -0.21 | 4026 / 4523 / 805 | 43.0% | 47.3% | -1,374 |
 | farming-score-v4-a-better-shop | -0.30 | 4684 / 5735 / 1335 | 39.9% | 45.5% | -1,283 |
@@ -279,6 +282,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-shop-router-reactive-v5 | DP Melon Cyborg R4  invincible | 1/126 | 0.8% | 0/63 | 1/63 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-route-replay-agent | 38/794 | 4.8% | 20/397 | 18/397 |
 | kaggriculture-shop-router-reactive-v5 | AFS R2 | 532/1048 | 50.8% | 269/524 | 263/524 |
+| kaggriculture-shop-router-reactive-v5 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-v43-recovering-lost-harvests | 13/320 | 4.1% | 8/160 | 5/160 |
 | kaggriculture-shop-router-reactive-v5 | TRI_A06_r6_r3_bundle_fix1 | 422/1026 | 41.1% | 214/513 | 208/513 |
 | kaggriculture-shop-router-reactive-v5 | kaggriculture-fully-dynamic-autonomous-agent | 78/528 | 14.8% | 39/264 | 39/264 |
@@ -296,6 +300,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | no-cow-left-behind-v40-autopsy-fix | DP Melon Cyborg R4  invincible | 0/256 | 0.0% | 0/128 | 0/128 |
 | no-cow-left-behind-v40-autopsy-fix | kaggriculture-route-replay-agent | 457/624 | 73.2% | 230/312 | 227/312 |
 | no-cow-left-behind-v40-autopsy-fix | AFS R2 | 395/794 | 49.7% | 194/397 | 201/397 |
+| no-cow-left-behind-v40-autopsy-fix | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | no-cow-left-behind-v40-autopsy-fix | kaggriculture-v43-recovering-lost-harvests | 1/144 | 0.7% | 0/72 | 1/72 |
 | no-cow-left-behind-v40-autopsy-fix | TRI_A06_r6_r3_bundle_fix1 | 377/790 | 47.7% | 186/395 | 191/395 |
 | no-cow-left-behind-v40-autopsy-fix | kaggriculture-fully-dynamic-autonomous-agent | 449/598 | 75.1% | 224/299 | 225/299 |
@@ -313,6 +318,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | TRI_A06_r12_r3_fix1 | DP Melon Cyborg R4  invincible | 381/792 | 48.1% | 189/396 | 192/396 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-route-replay-agent | 421/792 | 53.2% | 210/396 | 211/396 |
 | TRI_A06_r12_r3_fix1 | AFS R2 | 1309/1366 | 95.8% | 656/683 | 653/683 |
+| TRI_A06_r12_r3_fix1 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v43-recovering-lost-harvests | 377/792 | 47.6% | 187/396 | 190/396 |
 | TRI_A06_r12_r3_fix1 | TRI_A06_r6_r3_bundle_fix1 | 927/1360 | 68.2% | 465/680 | 462/680 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-fully-dynamic-autonomous-agent | 427/790 | 54.1% | 213/395 | 214/395 |
@@ -330,6 +336,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | Day 9 planner selector | DP Melon Cyborg R4  invincible | 430/896 | 48.0% | 215/448 | 215/448 |
 | Day 9 planner selector | kaggriculture-route-replay-agent | 397/794 | 50.0% | 199/397 | 198/397 |
 | Day 9 planner selector | AFS R2 | 1294/1358 | 95.3% | 645/679 | 649/679 |
+| Day 9 planner selector | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | Day 9 planner selector | kaggriculture-v43-recovering-lost-harvests | 692/1714 | 40.4% | 353/857 | 339/857 |
 | Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 1089/1348 | 80.8% | 535/674 | 554/674 |
 | Day 9 planner selector | kaggriculture-fully-dynamic-autonomous-agent | 391/794 | 49.2% | 197/397 | 194/397 |
@@ -347,6 +354,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | TRI_A08_r11_r3 | DP Melon Cyborg R4  invincible | 259/728 | 35.6% | 129/364 | 130/364 |
 | TRI_A08_r11_r3 | kaggriculture-route-replay-agent | 387/794 | 48.7% | 191/397 | 196/397 |
 | TRI_A08_r11_r3 | AFS R2 | 926/1368 | 67.7% | 454/684 | 472/684 |
+| TRI_A08_r11_r3 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A08_r11_r3 | kaggriculture-v43-recovering-lost-harvests | 327/774 | 42.2% | 163/387 | 164/387 |
 | TRI_A08_r11_r3 | TRI_A06_r6_r3_bundle_fix1 | 159/1360 | 11.7% | 85/680 | 74/680 |
 | TRI_A08_r11_r3 | kaggriculture-fully-dynamic-autonomous-agent | 406/794 | 51.1% | 204/397 | 202/397 |
@@ -364,6 +372,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-v41-review-candidate | DP Melon Cyborg R4  invincible | 0/104 | 0.0% | 0/52 | 0/52 |
 | kaggriculture-v41-review-candidate | kaggriculture-route-replay-agent | 61/656 | 9.3% | 32/328 | 29/328 |
 | kaggriculture-v41-review-candidate | AFS R2 | 682/1368 | 49.9% | 343/684 | 339/684 |
+| kaggriculture-v41-review-candidate | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v41-review-candidate | kaggriculture-v43-recovering-lost-harvests | 17/314 | 5.4% | 10/157 | 7/157 |
 | kaggriculture-v41-review-candidate | TRI_A06_r6_r3_bundle_fix1 | 526/1362 | 38.6% | 266/681 | 260/681 |
 | kaggriculture-v41-review-candidate | kaggriculture-fully-dynamic-autonomous-agent | 12/382 | 3.1% | 7/191 | 5/191 |
@@ -381,6 +390,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | farming-score-v4-a-better-shop | DP Melon Cyborg R4  invincible | 0/180 | 0.0% | 0/90 | 0/90 |
 | farming-score-v4-a-better-shop | kaggriculture-route-replay-agent | 379/564 | 67.2% | 189/282 | 190/282 |
 | farming-score-v4-a-better-shop | AFS R2 | 527/1048 | 50.3% | 266/524 | 261/524 |
+| farming-score-v4-a-better-shop | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | farming-score-v4-a-better-shop | kaggriculture-v43-recovering-lost-harvests | 14/302 | 4.6% | 7/151 | 7/151 |
 | farming-score-v4-a-better-shop | TRI_A06_r6_r3_bundle_fix1 | 431/1032 | 41.8% | 215/516 | 216/516 |
 | farming-score-v4-a-better-shop | kaggriculture-fully-dynamic-autonomous-agent | 102/712 | 14.3% | 52/356 | 50/356 |
@@ -398,6 +408,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | DP Melon Cyborg R4  invincible | farming-score-v4-a-better-shop | 180/180 | 100.0% | 90/90 | 90/90 |
 | DP Melon Cyborg R4  invincible | kaggriculture-route-replay-agent | 86/86 | 100.0% | 43/43 | 43/43 |
 | DP Melon Cyborg R4  invincible | AFS R2 | 393/794 | 49.5% | 195/397 | 198/397 |
+| DP Melon Cyborg R4  invincible | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v43-recovering-lost-harvests | 586/620 | 94.5% | 292/310 | 294/310 |
 | DP Melon Cyborg R4  invincible | TRI_A06_r6_r3_bundle_fix1 | 321/770 | 41.7% | 161/385 | 160/385 |
 | DP Melon Cyborg R4  invincible | kaggriculture-fully-dynamic-autonomous-agent | 151/154 | 98.1% | 75/77 | 76/77 |
@@ -415,6 +426,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-route-replay-agent | farming-score-v4-a-better-shop | 74/564 | 13.1% | 38/282 | 36/282 |
 | kaggriculture-route-replay-agent | DP Melon Cyborg R4  invincible | 0/86 | 0.0% | 0/43 | 0/43 |
 | kaggriculture-route-replay-agent | AFS R2 | 414/794 | 52.1% | 207/397 | 207/397 |
+| kaggriculture-route-replay-agent | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-route-replay-agent | kaggriculture-v43-recovering-lost-harvests | 35/424 | 8.3% | 20/212 | 15/212 |
 | kaggriculture-route-replay-agent | TRI_A06_r6_r3_bundle_fix1 | 365/790 | 46.2% | 184/395 | 181/395 |
 | kaggriculture-route-replay-agent | kaggriculture-fully-dynamic-autonomous-agent | 66/516 | 12.8% | 34/258 | 32/258 |
@@ -432,6 +444,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | AFS R2 | farming-score-v4-a-better-shop | 521/1048 | 49.7% | 263/524 | 258/524 |
 | AFS R2 | DP Melon Cyborg R4  invincible | 401/794 | 50.5% | 199/397 | 202/397 |
 | AFS R2 | kaggriculture-route-replay-agent | 380/794 | 47.9% | 190/397 | 190/397 |
+| AFS R2 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | AFS R2 | kaggriculture-v43-recovering-lost-harvests | 361/788 | 45.8% | 178/394 | 183/394 |
 | AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 104/1358 | 7.7% | 51/679 | 53/679 |
 | AFS R2 | kaggriculture-fully-dynamic-autonomous-agent | 420/792 | 53.0% | 208/396 | 212/396 |
@@ -440,6 +453,24 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | AFS R2 | kaggriculture-pipe-2-agent | 339/780 | 43.5% | 168/390 | 171/390 |
 | AFS R2 | farming-score-v5-timing-optimized | 373/792 | 47.1% | 189/396 | 184/396 |
 | AFS R2 | DP Melon Cyborg V4  gooseoverflow | 302/760 | 39.7% | 150/380 | 152/380 |
+| A06 R9C6 | kaggriculture-shop-router-reactive-v5 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | no-cow-left-behind-v40-autopsy-fix | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | TRI_A06_r12_r3_fix1 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | Day 9 planner selector | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | TRI_A08_r11_r3 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | kaggriculture-v41-review-candidate | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | farming-score-v4-a-better-shop | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | DP Melon Cyborg R4  invincible | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | kaggriculture-route-replay-agent | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | AFS R2 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | kaggriculture-v43-recovering-lost-harvests | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | TRI_A06_r6_r3_bundle_fix1 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | kaggriculture-fully-dynamic-autonomous-agent | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | A06 R6 | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | R03goosefix | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | kaggriculture-pipe-2-agent | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | farming-score-v5-timing-optimized | 0/0 | â€” | 0/0 | 0/0 |
+| A06 R9C6 | DP Melon Cyborg V4  gooseoverflow | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-shop-router-reactive-v5 | 263/320 | 82.2% | 133/160 | 130/160 |
 | kaggriculture-v43-recovering-lost-harvests | no-cow-left-behind-v40-autopsy-fix | 143/144 | 99.3% | 71/72 | 72/72 |
 | kaggriculture-v43-recovering-lost-harvests | TRI_A06_r12_r3_fix1 | 415/792 | 52.4% | 206/396 | 209/396 |
@@ -450,6 +481,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-v43-recovering-lost-harvests | DP Melon Cyborg R4  invincible | 34/620 | 5.5% | 16/310 | 18/310 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-route-replay-agent | 327/424 | 77.1% | 166/212 | 161/212 |
 | kaggriculture-v43-recovering-lost-harvests | AFS R2 | 427/788 | 54.2% | 211/394 | 216/394 |
+| kaggriculture-v43-recovering-lost-harvests | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-v43-recovering-lost-harvests | TRI_A06_r6_r3_bundle_fix1 | 414/794 | 52.1% | 207/397 | 207/397 |
 | kaggriculture-v43-recovering-lost-harvests | kaggriculture-fully-dynamic-autonomous-agent | 317/404 | 78.5% | 160/202 | 157/202 |
 | kaggriculture-v43-recovering-lost-harvests | A06 R6 | 331/776 | 42.7% | 163/388 | 168/388 |
@@ -467,6 +499,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | TRI_A06_r6_r3_bundle_fix1 | DP Melon Cyborg R4  invincible | 449/770 | 58.3% | 225/385 | 224/385 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-route-replay-agent | 425/790 | 53.8% | 214/395 | 211/395 |
 | TRI_A06_r6_r3_bundle_fix1 | AFS R2 | 1254/1358 | 92.3% | 626/679 | 628/679 |
+| TRI_A06_r6_r3_bundle_fix1 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v43-recovering-lost-harvests | 380/794 | 47.9% | 190/397 | 190/397 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-fully-dynamic-autonomous-agent | 443/780 | 56.8% | 217/390 | 226/390 |
 | TRI_A06_r6_r3_bundle_fix1 | A06 R6 | 353/994 | 35.5% | 170/497 | 183/497 |
@@ -484,6 +517,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-fully-dynamic-autonomous-agent | DP Melon Cyborg R4  invincible | 3/154 | 1.9% | 1/77 | 2/77 |
 | kaggriculture-fully-dynamic-autonomous-agent | kaggriculture-route-replay-agent | 374/516 | 72.5% | 188/258 | 186/258 |
 | kaggriculture-fully-dynamic-autonomous-agent | AFS R2 | 372/792 | 47.0% | 184/396 | 188/396 |
+| kaggriculture-fully-dynamic-autonomous-agent | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-fully-dynamic-autonomous-agent | kaggriculture-v43-recovering-lost-harvests | 33/404 | 8.2% | 18/202 | 15/202 |
 | kaggriculture-fully-dynamic-autonomous-agent | TRI_A06_r6_r3_bundle_fix1 | 337/780 | 43.2% | 164/390 | 173/390 |
 | kaggriculture-fully-dynamic-autonomous-agent | A06 R6 | 184/646 | 28.5% | 94/323 | 90/323 |
@@ -501,6 +535,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | A06 R6 | DP Melon Cyborg R4  invincible | 483/792 | 61.0% | 242/396 | 241/396 |
 | A06 R6 | kaggriculture-route-replay-agent | 470/710 | 66.2% | 236/355 | 234/355 |
 | A06 R6 | AFS R2 | 725/834 | 86.9% | 359/417 | 366/417 |
+| A06 R6 | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | A06 R6 | kaggriculture-v43-recovering-lost-harvests | 445/776 | 57.3% | 220/388 | 225/388 |
 | A06 R6 | TRI_A06_r6_r3_bundle_fix1 | 641/994 | 64.5% | 314/497 | 327/497 |
 | A06 R6 | kaggriculture-fully-dynamic-autonomous-agent | 462/646 | 71.5% | 233/323 | 229/323 |
@@ -518,6 +553,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | R03goosefix | DP Melon Cyborg R4  invincible | 392/480 | 81.7% | 193/240 | 199/240 |
 | R03goosefix | kaggriculture-route-replay-agent | 128/132 | 97.0% | 64/66 | 64/66 |
 | R03goosefix | AFS R2 | 465/746 | 62.3% | 231/373 | 234/373 |
+| R03goosefix | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | R03goosefix | kaggriculture-v43-recovering-lost-harvests | 334/388 | 86.1% | 166/194 | 168/194 |
 | R03goosefix | TRI_A06_r6_r3_bundle_fix1 | 431/788 | 54.7% | 216/394 | 215/394 |
 | R03goosefix | kaggriculture-fully-dynamic-autonomous-agent | 86/86 | 100.0% | 43/43 | 43/43 |
@@ -535,6 +571,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | kaggriculture-pipe-2-agent | DP Melon Cyborg R4  invincible | 22/436 | 5.0% | 12/218 | 10/218 |
 | kaggriculture-pipe-2-agent | kaggriculture-route-replay-agent | 314/414 | 75.8% | 158/207 | 156/207 |
 | kaggriculture-pipe-2-agent | AFS R2 | 441/780 | 56.5% | 219/390 | 222/390 |
+| kaggriculture-pipe-2-agent | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | kaggriculture-pipe-2-agent | kaggriculture-v43-recovering-lost-harvests | 16/554 | 2.9% | 6/277 | 10/277 |
 | kaggriculture-pipe-2-agent | TRI_A06_r6_r3_bundle_fix1 | 395/794 | 49.7% | 198/397 | 197/397 |
 | kaggriculture-pipe-2-agent | kaggriculture-fully-dynamic-autonomous-agent | 357/460 | 77.6% | 180/230 | 177/230 |
@@ -552,6 +589,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | farming-score-v5-timing-optimized | DP Melon Cyborg R4  invincible | 1/158 | 0.6% | 1/79 | 0/79 |
 | farming-score-v5-timing-optimized | kaggriculture-route-replay-agent | 308/384 | 80.2% | 155/192 | 153/192 |
 | farming-score-v5-timing-optimized | AFS R2 | 419/792 | 52.9% | 212/396 | 207/396 |
+| farming-score-v5-timing-optimized | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | farming-score-v5-timing-optimized | kaggriculture-v43-recovering-lost-harvests | 18/362 | 5.0% | 10/181 | 8/181 |
 | farming-score-v5-timing-optimized | TRI_A06_r6_r3_bundle_fix1 | 360/788 | 45.7% | 177/394 | 183/394 |
 | farming-score-v5-timing-optimized | kaggriculture-fully-dynamic-autonomous-agent | 202/762 | 26.5% | 102/381 | 100/381 |
@@ -569,6 +607,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 16, 2026 at 1:51 AM UTC
 | DP Melon Cyborg V4  gooseoverflow | DP Melon Cyborg R4  invincible | 1208/2616 | 46.2% | 609/1308 | 599/1308 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-route-replay-agent | 134/138 | 97.1% | 67/69 | 67/69 |
 | DP Melon Cyborg V4  gooseoverflow | AFS R2 | 458/760 | 60.3% | 228/380 | 230/380 |
+| DP Melon Cyborg V4  gooseoverflow | A06 R9C6 | 0/0 | â€” | 0/0 | 0/0 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v43-recovering-lost-harvests | 540/636 | 84.9% | 267/318 | 273/318 |
 | DP Melon Cyborg V4  gooseoverflow | TRI_A06_r6_r3_bundle_fix1 | 431/786 | 54.8% | 215/393 | 216/393 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-fully-dynamic-autonomous-agent | 154/156 | 98.7% | 76/78 | 78/78 |
@@ -1342,6 +1381,6 @@ Same versions only; descriptive changes, not significance tests.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
