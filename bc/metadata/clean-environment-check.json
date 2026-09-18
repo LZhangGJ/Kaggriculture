@@ -1,0 +1,46 @@
+{
+  "python": "3.14.4",
+  "torch": "2.11.0+cpu",
+  "engine": {
+    "engine_sha": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "spec_sha": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
+    "version": "1.32.7",
+    "configuration": {
+      "episodeSteps": 720,
+      "actTimeout": 1,
+      "boardSize": 10,
+      "startingMoney": 3000,
+      "maxMarketOrdersPerTurn": 10,
+      "turnsPerDay": 24,
+      "shedCapacity": 100,
+      "weedSpawnChance": 0.005,
+      "townShopUnlockInterval": 3,
+      "townShopSellInterval": 4,
+      "townCenterSellInterval": 24,
+      "farmHandCostMult": 1,
+      "marketParams": {}
+    }
+  },
+  "sources": {
+    "exact_actions.py": "fec0214a20274caac8d1d73eed8265ac38c081cff2d5f5bc74c4223a1ba537dd",
+    "exact_decoder.py": "e607838688abdff5e7f4216753c9a5e19014546662a01c8fa48c0d9504a41620",
+    "exact_features.py": "b6aaaf78cef134d4089dc670340b574abc6439f1c03e906370ae875ca67b023b",
+    "exact_records.py": "364af4aae71de7cf7631db3153de4322813f0de40b4fff47255860ced3d039ff",
+    "worker_phase.py": "52bebe246c3745b0d91726bba102e61af29da134271821935a9abad14ff40dfd",
+    "exact_training.py": "4fe1ab1573b9f175a099678c0e9b6ced00e1ed6f35966542250324ee295c1bc5",
+    "features_v2.py": "87b8a2e513631ba29be3225df90ec8db06e8b59f340b34891585bca55c7347a1",
+    "bc_runtime.py": "8eb01248b5e5588c7a28f74790b20fbc224a46e5520644ff5f31d0cd94a33c8a",
+    "bc_policy.py": "f267513a7a145f60f308255ff9f04db41af9edd50c1598bd3bd8de595f61ca4b",
+    "exact_model.py": "2a259a800db1585df90412434d8e04c88f3f3ce52a4d9679d7684ab704d53d72",
+    "model_v2.py": "e43f2a01b72986489b527eb5b13799500830c9cec5fcc4fa49fb79256a675bb2",
+    "cache_exact.py": "3cfb65547c37b820e2ed0d06f1aef8c02a260e25787d83ae67a48c561d7d9902",
+    "exact_identity.py": "5691d6cd1d89d514da0cedcf014d8d02be5cbcf3895abfb2501e3ffeb638ef5e",
+    "cache_identity.py": "ee6a10ae5806c416c4c0bfd15eb74601c90d9387b0112413a5420759f569dff9",
+    "worker_mechanics": "dc42c8fdea347e6c2b9ea695a2c0a39b825aa4aeb8c6f2236a5eaa9635991222",
+    "worker_contracts": "d4e6c67b235ed855baaa1c8da964bb1d049c20a731abb2a186c5bb6a8c81040d"
+  },
+  "cuda": false,
+  "parameters": 5310025,
+  "worker_quantities": 34,
+  "market_quantities": 233
+}

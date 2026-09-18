@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+data/
+runs/
+checkpoints/
+*.pt
+*.zip
+*.zst
+*.jsonl.gz

@@ -1,0 +1,2 @@
+# Checkpoints pin these byte hashes, including existing CRLF files.
+*.py -text

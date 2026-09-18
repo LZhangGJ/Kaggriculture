@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="2220" viewBox="0 0 1760 2220">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#54677d" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#15283f}.title{font-size:32px;font-weight:700}.section{font-size:23px;font-weight:700}.head{font-size:20px;font-weight:650}.body{font-size:17px}.small{font-size:15px}.wire{fill:none;stroke:#54677d;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1760" height="2220" fill="#f5f7fb"/>
+<text x="40" y="52" class="title">Kaggriculture · ExactWorkerMarketPolicyV1</text>
+<text x="40" y="85" class="body">Implemented model · 5,310,025 parameters · one policy across 719 player turns · September 18, 2026</text>
+<text x="40" y="115" class="small">B = batch of player observations; W = padded count of both farms’ workers. Shapes omit B unless shown.</text>
+<text x="40" y="161" class="section">1   Observable state and engineered features</text>
+<rect x="40" y="184" width="540" height="208" rx="12" fill="#e8f3ef" stroke="#bac7d8"/>
+<text x="58" y="215" class="head">Spatial state  [2, 36, 10, 10]</text>
+<text x="58" y="245" class="body">Own + opponent farm; shared channel meanings</text>
+<text x="58" y="270" class="body">Tiles, crops, animals, maturity, care, occupancy</text>
+<text x="58" y="295" class="body">Ready yield × current price; lifecycle-known flags</text>
+<text x="58" y="320" class="body">No future action labels or hidden opponent stock</text>
+<text x="58" y="345" class="body">Legacy plan channels 25–29 are zero</text>
+<rect x="610" y="184" width="540" height="208" rx="12" fill="#e8f3ef" stroke="#bac7d8"/>
+<text x="628" y="215" class="head">Economic state and history</text>
+<text x="628" y="245" class="body">Global [64] · farms [2, 96] · market [12, 64]</text>
+<text x="628" y="270" class="body">Cash, land, own stock, seeds, capacity, shops</text>
+<text x="628" y="295" class="body">Maturity / care / labor horizons: 24, 72, 168, 720</text>
+<text x="628" y="320" class="body">History [8, 48]: prices, inventory deltas, requests</text>
+<text x="628" y="345" class="body">Price statistics and known / estimate flags</text>
+<rect x="1180" y="184" width="540" height="208" rx="12" fill="#e8f3ef" stroke="#bac7d8"/>
+<text x="1198" y="215" class="head">Worker state  [W, 64]</text>
+<text x="1198" y="245" class="body">Position, role, own inventory, shed distance</text>
+<text x="1198" y="270" class="body">11 opportunity distances + existence flags</text>
+<text x="1198" y="295" class="body">Own carried-resource compatibility</text>
+<text x="1198" y="320" class="body">Candidate-local geometry: [5, 11, 3]</text>
+<text x="1198" y="345" class="body">Missing / private information explicitly marked</text>
+<path class="wire" d="M550,392 L550,446"/>
+<path class="wire" d="M880,392 L880,446"/>
+<path class="wire" d="M1450,392 L1450,412 L1080,412 L1080,446"/>
+<text x="40" y="432" class="section">2   Shared spatial and entity encoder</text>
+<rect x="40" y="452" width="540" height="212" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="58" y="483" class="head">Spatial encoder</text>
+<text x="58" y="513" class="body">3×3 CNN: 36 → 64 → 128 → 192; pad = 1</text>
+<text x="58" y="538" class="body">SiLU after first two convolutions</text>
+<text x="58" y="563" class="body">100 cells/farm + learned position [100, 192]</text>
+<text x="58" y="588" class="body">4 learned queries/farm; 4-head attention pool</text>
+<text x="58" y="613" class="body">Output: 8 summary tokens + 200 cell vectors</text>
+<rect x="610" y="452" width="540" height="212" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="628" y="483" class="head">Entity projections → width 192</text>
+<text x="628" y="513" class="body">Global 64 → 192; farm 96 → 192</text>
+<text x="628" y="538" class="body">Workers / market: 64 → 192 → 192, SiLU</text>
+<text x="628" y="563" class="body">History: 48 → 128 → 192, SiLU</text>
+<text x="628" y="588" class="body">7 type embeddings + 2 farm-role embeddings</text>
+<text x="628" y="613" class="body">16 legacy program tokens: zero, masked, inactive</text>
+<rect x="1180" y="452" width="540" height="212" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="1198" y="483" class="head">Token sequence  [B, 47 + W, 192]</text>
+<text x="1198" y="513" class="body">1 global + 2 farm + 8 spatial summaries</text>
+<text x="1198" y="538" class="body">+ W workers + 12 market + 8 history</text>
+<text x="1198" y="563" class="body">+ 16 inactive program slots</text>
+<text x="1198" y="588" class="body">Mask padded workers / missing history / programs</text>
+<text x="1198" y="613" class="body">200 detailed cells bypass this token sequence</text>
+<path class="wire" d="M305,664 L305,705"/>
+<path class="wire" d="M1150,561 L1180,561"/>
+<path class="wire" d="M1450,664 L1450,705"/>
+<rect x="40" y="705" width="1680" height="127" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="58" y="736" class="head">3× pre-norm TransformerEncoderLayer</text>
+<text x="58" y="766" class="body">d_model = 192 · 4 attention heads · feed-forward 192 → 768 → 192 · GELU · dropout = 0</text>
+<text x="58" y="791" class="body">Global token [B,192] feeds memory. Contextual worker [B,W,192] and market [B,12,192] tokens feed action heads.</text>
+<text x="58" y="816" class="body">Cell references use CNN + position vectors [B,200,192], not full-Transformer cell outputs.</text>
+<path class="wire" d="M485,832 L485,899"/>
+<path class="wire" d="M1290,832 L1290,899"/>
+<text x="40" y="882" class="section">3   Memory across the season</text>
+<rect x="40" y="899" width="810" height="145" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="58" y="930" class="head">Actor memory: GRUCell 192 → 256</text>
+<text x="58" y="960" class="body">h_actor persists across turns; reset at new season</text>
+<text x="58" y="985" class="body">Shared by worker and market decoders</text>
+<text x="58" y="1010" class="body">Training: carry state, detach gradient every 16 turns</text>
+<rect x="880" y="899" width="840" height="145" rx="12" fill="#f0ecfa" stroke="#bac7d8"/>
+<text x="898" y="930" class="head">Outcome memory: GRUCell 192 → 256</text>
+<text x="898" y="960" class="body">Separate h_critic → MLP 256 → 128 → 3</text>
+<text x="898" y="985" class="body">Auxiliary outcome classification during behavior cloning</text>
+<text x="898" y="1010" class="body">Training signal only; does not pick actions</text>
+<path class="wire" d="M825,1044 L825,1115"/>
+<text x="40" y="1094" class="section">4   Ordered action generation within each turn</text>
+<rect x="40" y="1115" width="810" height="262" rx="12" fill="#e6f2f5" stroke="#bac7d8"/>
+<text x="58" y="1146" class="head">Worker decoder · local control + production choices</text>
+<text x="58" y="1176" class="body">Process own farmer, then own hands in engine order</text>
+<text x="58" y="1201" class="body">44 templates: PASS / move / work / PLANT / PLACE / PICKUP</text>
+<text x="58" y="1226" class="body">Raw candidate [44,128] + cell / item / worker references</text>
+<text x="58" y="1251" class="body">Query [768] = actor256 + prefix256 + ledger64 + worker192</text>
+<text x="58" y="1276" class="body">PASS vs ACT gate → command → quantity when meaningful</text>
+<text x="58" y="1301" class="body">Prefix GRU256 advances after each worker request</text>
+<text x="58" y="1326" class="body">Prefix resets each turn; candidate geometry updates</text>
+<rect x="910" y="1115" width="810" height="262" rx="12" fill="#fff1dd" stroke="#bac7d8"/>
+<text x="928" y="1146" class="head">Market decoder · economic requests</text>
+<text x="928" y="1176" class="body">Begins after the entire worker phase is resolved</text>
+<text x="928" y="1201" class="body">23 catalogue slots: END + 21 requests + masked NOOP</text>
+<text x="928" y="1226" class="body">Raw candidate [23,128] + shared context references</text>
+<text x="928" y="1251" class="body">Query [832] = actor256 + prefix256 + ledger64 + post256</text>
+<text x="928" y="1276" class="body">END vs REQUEST gate → request → positive quantity</text>
+<text x="928" y="1301" class="body">Fresh prefix GRU256; stop at END or 10 request slots</text>
+<text x="928" y="1326" class="body">Tracks requests and estimates, never assumes market fills</text>
+<path class="wire" d="M850,1238 L910,1238"/>
+<text x="862" y="1214" class="small">resolve</text>
+<rect x="40" y="1400" width="810" height="133" rx="12" fill="#e6f2f5" stroke="#bac7d8"/>
+<text x="58" y="1431" class="head">Worker phase semantics</text>
+<text x="58" y="1461" class="body">Re-resolve from original observation as the prefix grows</text>
+<text x="58" y="1486" class="body">Seed overdraw can cancel earlier planting requests</text>
+<text x="58" y="1511" class="body">No cash / stock / effect pruning beyond request grammar</text>
+<rect x="910" y="1400" width="810" height="133" rx="12" fill="#fff1dd" stroke="#bac7d8"/>
+<text x="928" y="1431" class="head">Resolved economic context</text>
+<text x="928" y="1461" class="body">Post-worker ledger112 + own farm96 → MLP208 → 256 → 256</text>
+<text x="928" y="1486" class="body">Market prefix is separate from the worker request prefix</text>
+<text x="928" y="1511" class="body">Market ledger112 records the ordered request history</text>
+<path class="wire" d="M445,1377 L445,1400"/>
+<path class="wire" d="M1315,1377 L1315,1400"/>
+<text x="40" y="1580" class="section">5   ActionHead internals · separate weights for workers and market</text>
+<rect x="40" y="1600" width="540" height="220" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="58" y="1631" class="head">Candidate grounding  [B, K, 256]</text>
+<text x="58" y="1661" class="body">Raw128 → 192 → 256, SiLU</text>
+<text x="58" y="1686" class="body">+ source cell192 → 256</text>
+<text x="58" y="1711" class="body">+ target cell192 → 256</text>
+<text x="58" y="1736" class="body">+ item192 → 256 + worker192 → 256</text>
+<text x="58" y="1761" class="body">Sum → LayerNorm256; missing reference = 0</text>
+<text x="58" y="1786" class="body">Score = dot(candidate, query) / 16 + raw bias</text>
+<rect x="610" y="1600" width="540" height="220" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="628" y="1631" class="head">Factorized command and quantity</text>
+<text x="628" y="1661" class="body">Query MLP: 768 / 832 → 256 → 256</text>
+<text x="628" y="1686" class="body">Gate MLP: 768 / 832 → 128 → 2</text>
+<text x="628" y="1711" class="body">P(action) = P(ACT) × P(command | ACT)</text>
+<text x="628" y="1736" class="body">Quantity context832 → 128 → 64</text>
+<text x="628" y="1761" class="body">Quantity features [Q,12] → 64 → 64</text>
+<text x="628" y="1786" class="body">Quantity score = dot(context, embedding) / 8</text>
+<rect x="1180" y="1600" width="540" height="220" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="1198" y="1631" class="head">Autoregressive feedback</text>
+<text x="1198" y="1661" class="body">chosen256 + amount1→256 + ledger delta→256</text>
+<text x="1198" y="1686" class="body">→ GRUCell256 with previous prefix state</text>
+<text x="1198" y="1711" class="body">Worker quantity vocabulary: 34 values</text>
+<text x="1198" y="1736" class="body">Market vocabulary: 233; only positive allowed</text>
+<text x="1198" y="1761" class="body">Greedy: gate first, then conditional argmax</text>
+<text x="1198" y="1786" class="body">Sampling: factorized joint probabilities</text>
+<text x="40" y="1867" class="section">6   Behavior cloning and execution</text>
+<rect x="40" y="1888" width="810" height="222" rx="12" fill="#e9f0fc" stroke="#bac7d8"/>
+<text x="58" y="1919" class="head">Training path</text>
+<text x="58" y="1949" class="body">Observed replay → exact labels + compact numeric cache</text>
+<text x="58" y="1974" class="body">Encode B×T together; recurrent sequence T = 16</text>
+<text x="58" y="1999" class="body">Teacher-force worker / market prefixes in recorded order</text>
+<text x="58" y="2024" class="body">6 per-turn loss terms: gate, command, quantity × 2 phases</text>
+<text x="58" y="2049" class="body">+ 0.05 × outcome cross-entropy; normalize across turns</text>
+<text x="58" y="2074" class="body">Configured: 2-GPU DDP · BF16 · global batch64 · AdamW</text>
+<rect x="910" y="1888" width="810" height="222" rx="12" fill="#f0ecfa" stroke="#bac7d8"/>
+<text x="928" y="1919" class="head">Live path and scope</text>
+<text x="928" y="1949" class="body">Observation → same features → memory → worker requests</text>
+<text x="928" y="1974" class="body">Resolved worker state → market requests → environment</text>
+<text x="928" y="1999" class="body">BC learns the joint worker / economic action distribution</text>
+<text x="928" y="2024" class="body">No separate macro goals, commitment queue, or micro model</text>
+<text x="928" y="2049" class="body">PPO and opponent-league training are later stages</text>
+<text x="928" y="2074" class="body">Low cloning loss is not evidence of strong full-game play</text>
+<text x="40" y="2152" class="small">Source: exact_features.py · model_v2.py · exact_model.py · exact_actions.py · exact_decoder.py · exact_training.py</text>
+<text x="40" y="2180" class="small">MODEL_ARCHITECTURE.md contains feature slices, decoder equations, engine alignment, supervision masks, and code links.</text>
+</svg>

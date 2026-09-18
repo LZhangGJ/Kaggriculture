@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "b0b16c6284b8042a7265c422919b1e92f98ee4c6ed196565e0c6af31c23b9ebb",
+  "opponent": "starter",
+  "opponent_sha256": null,
+  "games": 2,
+  "terminal_games": 2,
+  "wins": 2,
+  "draws": 0,
+  "losses": 0,
+  "mean_cash": 124304.5,
+  "mean_opponent_cash": 3667.0
+}

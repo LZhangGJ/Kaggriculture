@@ -1,0 +1,6 @@
+numpy==2.4.4
+# Install the pinned game wheel with --no-deps (see README).
+requests==2.34.2
+jsonschema==4.19.2
+# Install torch==2.11.0 separately from the CPU/CUDA wheel index in README.md.
+# Kaggle CLI is a download-only dependency: pip install kaggle==2.2.2

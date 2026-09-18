@@ -1,0 +1,206 @@
+{
+  "archives": [
+    {
+      "date": "2026-08-15",
+      "sha256": "d2d43639eef19e0f760d798a98c13ce630560e9fc5926406c771401b67d5ca90",
+      "bytes": 527445609,
+      "episode_files": 697
+    },
+    {
+      "date": "2026-08-16",
+      "sha256": "ae868069707171164694145279fec78b0f5a3b03404f0f05aab91a2f5d9e141a",
+      "bytes": 531648693,
+      "episode_files": 699
+    },
+    {
+      "date": "2026-08-17",
+      "sha256": "f899c11f6a48f55bd8c28644e0ca520479a63b0529b71edccc3f7fa378873ea5",
+      "bytes": 539757327,
+      "episode_files": 699
+    },
+    {
+      "date": "2026-08-18",
+      "sha256": "9f25e5466fb863334b50d7228b5a4791477d9616dc23284f7b099ec872e18ffe",
+      "bytes": 534158005,
+      "episode_files": 697
+    },
+    {
+      "date": "2026-08-19",
+      "sha256": "955e0dd29a3579613faf2fba3432e32d193f873d3299424c0a355b43b564dbc5",
+      "bytes": 542480980,
+      "episode_files": 695
+    },
+    {
+      "date": "2026-08-20",
+      "sha256": "51d6ab8b9a1ef4bfc5d7e2db0c7f5cf9dde003b056dce1b88964b69be2cdfef1",
+      "bytes": 538950180,
+      "episode_files": 698
+    },
+    {
+      "date": "2026-08-21",
+      "sha256": "e5a7cb05d15241cb6c774bb83a4f271a00a63f01c8ab5179ccd1db31ffa54b04",
+      "bytes": 553951935,
+      "episode_files": 697
+    },
+    {
+      "date": "2026-08-22",
+      "sha256": "a6946847cd9cb193e0f59b64c7aece894f5338a3f17eb3f587aae943ad7ecac9",
+      "bytes": 565639054,
+      "episode_files": 695
+    },
+    {
+      "date": "2026-08-23",
+      "sha256": "318ac18bf78ab5e5c86c38b3a156706f6e8e187cbdf9b6bfab0bca9a079e214a",
+      "bytes": 574336104,
+      "episode_files": 692
+    },
+    {
+      "date": "2026-08-24",
+      "sha256": "36cad3d8ebf351c7438ced45c77d4da256b26f1b67c67ce7de97c417d41fb7fd",
+      "bytes": 534263361,
+      "episode_files": 692
+    },
+    {
+      "date": "2026-08-25",
+      "sha256": "b9e1ed36eda058655e22622bdaba69608c3db7a3a4094db2ec6ed57b1447b558",
+      "bytes": 522405001,
+      "episode_files": 688
+    },
+    {
+      "date": "2026-08-26",
+      "sha256": "d1e0b6b5d5c5097857f0b3c7c0ddf10e8ba4141ffe5d19743b2ab010f941b480",
+      "bytes": 530618038,
+      "episode_files": 687
+    },
+    {
+      "date": "2026-08-27",
+      "sha256": "aecf55a00b2f78d632d4676569fbeb13e0fd635663474df517955d3c9c5931a6",
+      "bytes": 544720769,
+      "episode_files": 696
+    },
+    {
+      "date": "2026-08-28",
+      "sha256": "37eba087f6c03692bcf9f987d857d5f5c186cfd357034db96854569e4be0db4d",
+      "bytes": 558148893,
+      "episode_files": 676
+    },
+    {
+      "date": "2026-08-29",
+      "sha256": "7e0a59b32ab556adba95fab57c4fda67ff115cd7451249a63554f8523e3b37e6",
+      "bytes": 540983634,
+      "episode_files": 667
+    },
+    {
+      "date": "2026-08-30",
+      "sha256": "53f87e772daa5b8b1f23eaa0292e27194de8f1d73f6c56f2375017c506aa66fe",
+      "bytes": 529863466,
+      "episode_files": 664
+    },
+    {
+      "date": "2026-08-31",
+      "sha256": "fb43a888b5e0dc2b91aa31b79b1a1ef2af23dd1b28b328c8fc9e70c771d52045",
+      "bytes": 527396026,
+      "episode_files": 665
+    },
+    {
+      "date": "2026-09-01",
+      "sha256": "4c91f0422a920a64a8797159878c64a05d55e08f447e87d861992302c40ad484",
+      "bytes": 539419869,
+      "episode_files": 664
+    },
+    {
+      "date": "2026-09-02",
+      "sha256": "cf4e8e4c880a51f0b65dadf7e98eb44aed3878beaef4619879669b67961fd659",
+      "bytes": 552737739,
+      "episode_files": 660
+    },
+    {
+      "date": "2026-09-03",
+      "sha256": "3dfd17bffd67bb8a026705b6ac48f242277d2cb7c5f706dea4adcb456a8ad8ff",
+      "bytes": 538048136,
+      "episode_files": 669
+    },
+    {
+      "date": "2026-09-04",
+      "sha256": "fe986b01057c06f6be3ef1dc3e04fc285c77a70e84d70bff72715985a88cb121",
+      "bytes": 548533251,
+      "episode_files": 668
+    },
+    {
+      "date": "2026-09-05",
+      "sha256": "e57448887bcd84e049a2558a676abffd7b1e1d1b61d36991f9da0833a420e473",
+      "bytes": 549366207,
+      "episode_files": 664
+    },
+    {
+      "date": "2026-09-06",
+      "sha256": "8ab6f7da8b19c211361d7a8b769e41339f3e6f94f79f52b701fd7bf0dbdd556e",
+      "bytes": 595249654,
+      "episode_files": 662
+    },
+    {
+      "date": "2026-09-07",
+      "sha256": "08e49bd2bf0c975bc2a1fa92249f0cfe6ecbdff7436e49d7bb0b398b5decc50d",
+      "bytes": 588306669,
+      "episode_files": 663
+    },
+    {
+      "date": "2026-09-08",
+      "sha256": "e24aa237bbecff0dd63e55b024b9645dbcfde08d822924e0ea865ecb806765da",
+      "bytes": 587628915,
+      "episode_files": 663
+    },
+    {
+      "date": "2026-09-09",
+      "sha256": "e853036d0e5067ab1b8da32df81b1ba09a5dcb3c46ca9488151b8f493d96e4a8",
+      "bytes": 549750612,
+      "episode_files": 662
+    },
+    {
+      "date": "2026-09-10",
+      "sha256": "54990628ff158b62119cd777bf92c132fe2c18300ae7b0dfc0ff332cea3b7e8c",
+      "bytes": 580769167,
+      "episode_files": 657
+    },
+    {
+      "date": "2026-09-11",
+      "sha256": "6f90a3e82f2eb0cece56579efaac9c89a2d88769b589ab29812ebf8d86d5ef49",
+      "bytes": 611712353,
+      "episode_files": 657
+    },
+    {
+      "date": "2026-09-12",
+      "sha256": "41d1c096f1860addd9aa7dd9d0b426b84ebac47fc6fd24ed3ee4b7237a750039",
+      "bytes": 625877484,
+      "episode_files": 655
+    },
+    {
+      "date": "2026-09-13",
+      "sha256": "5f008215bf4fa18d525fce1fff96f95c0d95b5d1932b7f82b95dc48693685bb3",
+      "bytes": 618428439,
+      "episode_files": 654
+    },
+    {
+      "date": "2026-09-14",
+      "sha256": "1935855b7ad010bdd02d05db0fae16fa3d9078a74f64221e68de2ca514303cfb",
+      "bytes": 619689216,
+      "episode_files": 654
+    },
+    {
+      "date": "2026-09-15",
+      "sha256": "155baac0e0920f848489d965ff483e816e91b50b332f8f45eeef7bc8e6d7160c",
+      "bytes": 634136421,
+      "episode_files": 652
+    },
+    {
+      "date": "2026-09-16",
+      "sha256": "a6bbce74a92492a876548d1f4f14ea5498d7896d1f54bac69930892188181d55",
+      "bytes": 663089100,
+      "episode_files": 639
+    }
+  ],
+  "games": 22185,
+  "seat_trajectories": 44370,
+  "turns": 31902030,
+  "engine": "1.32.7"
+}

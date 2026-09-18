@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "episode": 93162490,
+  "seats": 2,
+  "turns": 1438,
+  "raw_sha256": "81f799f3f3f9455571aa08d28117828046b024bfb8704a26075176adb7e85637",
+  "check": "All exact_records inputs equal production canonical inputs"
+}
