@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 18, 2026 at 3:13 PM UTC
+Updated: Sep 18, 2026 at 3:14 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -8,7 +8,7 @@ CPU evaluation on WRX90 and the mini PC. Results below are local; they are not K
 
 Best team agent: Day 9 planner selector (cumulative-active-ffc8942965b1)
 
-Live Elo leader: 2842-two-identical-agents-90-points-apart [PUBLIC] — 1776.3 Elo, 20764 games
+Live Elo leader: 2842-two-identical-agents-90-points-apart [PUBLIC] — 1776.2 Elo, 20772 games
 
 Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.
 
@@ -86,36 +86,36 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 18, 2026 at 3:12 PM UTC
+Last updated: Sep 18, 2026 at 3:14 PM UTC
 
-Status: running Â· Last sync: Sep 18, 2026 at 3:12 PM UTC
+Status: running Â· Last sync: Sep 18, 2026 at 3:14 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
-| 2842-two-identical-agents-90-points-apart **PUBLIC** | 1776.3 | 20764 | 62.2% | ffc8942965 |
-| R03goosefix | 1763.1 | 41498 | 59.8% | ffc8942965 |
-| kaggriculture-ready-stock-earlier-sales **PUBLIC** | 1756.5 | 13342 | 58.0% | ffc8942965 |
-| A06 R9C6 | 1751.5 | 38180 | 58.1% | ffc8942965 |
-| A06 R9C7 five-day | 1750.0 | 50832 | 58.5% | ffc8942965 |
-| shop-aware-farming-kaggriculture **PUBLIC** | 1749.3 | 12994 | 57.0% | ffc8942965 |
-| kaggriculture-v46-first-turn-microstructure-and-s **PUBLIC** | 1742.5 | 28394 | 56.5% | ffc8942965 |
-| market-smart-farming-kaggriculture **PUBLIC** | 1741.3 | 12486 | 56.3% | ffc8942965 |
-| A06 R6 | 1727.4 | 54986 | 60.5% | ffc8942965 |
+| 2842-two-identical-agents-90-points-apart **PUBLIC** | 1776.2 | 20772 | 62.2% | ffc8942965 |
+| R03goosefix | 1763.1 | 41510 | 59.8% | ffc8942965 |
+| kaggriculture-ready-stock-earlier-sales **PUBLIC** | 1756.5 | 13406 | 58.0% | ffc8942965 |
+| A06 R9C6 | 1751.5 | 38192 | 58.1% | ffc8942965 |
+| A06 R9C7 five-day | 1750.1 | 50846 | 58.5% | ffc8942965 |
+| shop-aware-farming-kaggriculture **PUBLIC** | 1749.7 | 13064 | 57.0% | ffc8942965 |
+| kaggriculture-v46-first-turn-microstructure-and-s **PUBLIC** | 1742.4 | 28402 | 56.5% | ffc8942965 |
+| market-smart-farming-kaggriculture **PUBLIC** | 1741.4 | 12514 | 56.3% | ffc8942965 |
+| A06 R6 | 1727.5 | 54994 | 60.5% | ffc8942965 |
 | kaggriculture-v47-reactive-market-coordination **PUBLIC** | 1720.1 | 12254 | 53.8% | ffc8942965 |
 | kaggriculture-v48-clear-the-queue **PUBLIC** | 1714.2 | 11962 | 52.9% | ffc8942965 |
-| Day 9 planner selector | 1707.7 | 63062 | 57.8% | ffc8942965 |
-| kaggriculture-pipe-7-wheat-microstructure **PUBLIC** | 1707.7 | 21588 | 52.8% | ffc8942965 |
-| DP Melon Cyborg V4  gooseoverflow | 1701.4 | 38086 | 53.6% | ffc8942965 |
-| DP Melon Cyborg R4  invincible | 1695.4 | 37356 | 51.7% | ffc8942965 |
+| Day 9 planner selector | 1707.7 | 63080 | 57.8% | ffc8942965 |
+| kaggriculture-pipe-7-wheat-microstructure **PUBLIC** | 1707.6 | 21596 | 52.8% | ffc8942965 |
+| DP Melon Cyborg V4  gooseoverflow | 1701.4 | 38100 | 53.6% | ffc8942965 |
+| DP Melon Cyborg R4  invincible | 1695.3 | 37364 | 51.6% | ffc8942965 |
 | kaggriculture-v45-first-turn-wheat-round-trip **PUBLIC** | 1686.1 | 27728 | 50.4% | ffc8942965 |
-| TRI_A06_r12_r3_fix1 | 1671.0 | 56662 | 54.7% | ffc8942965 |
-| TRI_A06_r6_r3_bundle_fix1 | 1671.0 | 55822 | 54.8% | ffc8942965 |
-| market-smart-farming-kaggriculture **PUBLIC** | 1669.4 | 32758 | 47.9% | ffc8942965 |
-| kaggriculture-master-engine-v3 **PUBLIC** | 1668.9 | 27912 | 49.0% | ffc8942965 |
-| AFS R1 | 1598.0 | 41808 | 46.8% | ffc8942965 |
-| TRI_A08_r11_r3 | 1589.7 | 53738 | 45.1% | ffc8942965 |
-| AFS R2 | 1589.3 | 53652 | 45.1% | ffc8942965 |
-| Market_DP_R3 | 1557.3 | 21308 | 36.1% | ffc8942965 |
+| TRI_A06_r12_r3_fix1 | 1671.0 | 56672 | 54.7% | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1671.0 | 55834 | 54.8% | ffc8942965 |
+| market-smart-farming-kaggriculture **PUBLIC** | 1669.3 | 32764 | 47.9% | ffc8942965 |
+| kaggriculture-master-engine-v3 **PUBLIC** | 1668.9 | 27914 | 49.0% | ffc8942965 |
+| AFS R1 | 1597.9 | 41822 | 46.8% | ffc8942965 |
+| TRI_A08_r11_r3 | 1589.7 | 53746 | 45.1% | ffc8942965 |
+| AFS R2 | 1589.3 | 53664 | 45.1% | ffc8942965 |
+| Market_DP_R3 | 1557.3 | 21312 | 36.0% | ffc8942965 |
 
 ## Retired agents
 
@@ -331,38 +331,38 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 310682/310682 |
+| cumulative-active-ffc8942965b1 | Provisional | 310852/310852 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:14 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
-| Day 9 planner selector | 0.49 | 24833 / 15797 / 3 | 61.1% | 61.1% | 2,645 |
-| 2842-two-identical-agents-90-points-apart | 0.40 | 11184 / 7662 / 2 | 59.3% | 59.3% | 889 |
-| kaggriculture-ready-stock-earlier-sales | 0.37 | 7730 / 5602 / 0 | 58.0% | 58.0% | -697 |
-| A06 R9C7 five-day | 0.36 | 21990 / 16782 / 0 | 56.7% | 56.7% | 2,292 |
-| R03goosefix | 0.36 | 20342 / 15218 / 8 | 57.2% | 57.2% | 193 |
-| A06 R9C6 | 0.33 | 16073 / 12755 / 684 | 54.5% | 55.6% | 1,951 |
-| shop-aware-farming-kaggriculture | 0.33 | 7182 / 5369 / 443 | 55.3% | 57.0% | -575 |
-| market-smart-farming-kaggriculture | 0.28 | 6781 / 5237 / 440 | 54.4% | 56.2% | -613 |
-| A06 R6 | 0.27 | 19396 / 15090 / 682 | 55.2% | 56.1% | 1,893 |
-| kaggriculture-v46-first-turn-microstructure-and-s | 0.23 | 13562 / 11452 / 1328 | 51.5% | 54.0% | -468 |
+| Day 9 planner selector | 0.49 | 24841 / 15807 / 3 | 61.1% | 61.1% | 2,643 |
+| 2842-two-identical-agents-90-points-apart | 0.40 | 11186 / 7668 / 2 | 59.3% | 59.3% | 888 |
+| kaggriculture-ready-stock-earlier-sales | 0.37 | 7766 / 5630 / 0 | 58.0% | 58.0% | -697 |
+| A06 R9C7 five-day | 0.36 | 22000 / 16786 / 0 | 56.7% | 56.7% | 2,294 |
+| R03goosefix | 0.36 | 20348 / 15224 / 8 | 57.2% | 57.2% | 194 |
+| A06 R9C6 | 0.33 | 16079 / 12761 / 684 | 54.5% | 55.6% | 1,954 |
+| shop-aware-farming-kaggriculture | 0.33 | 7230 / 5389 / 445 | 55.3% | 57.0% | -575 |
+| market-smart-farming-kaggriculture | 0.28 | 6797 / 5247 / 442 | 54.4% | 56.2% | -614 |
+| A06 R6 | 0.27 | 19402 / 15092 / 682 | 55.2% | 56.1% | 1,894 |
+| kaggriculture-v46-first-turn-microstructure-and-s | 0.22 | 13563 / 11459 / 1328 | 51.5% | 54.0% | -468 |
 | kaggriculture-v47-reactive-market-coordination | 0.16 | 5922 / 4999 / 1315 | 48.4% | 53.8% | -294 |
 | kaggriculture-v48-clear-the-queue | 0.12 | 5645 / 4987 / 1302 | 47.3% | 52.8% | -610 |
-| TRI_A06_r12_r3_fix1 | 0.12 | 18264 / 15902 / 4 | 53.5% | 53.5% | 1,513 |
-| kaggriculture-pipe-7-wheat-microstructure | 0.01 | 9889 / 9667 / 0 | 50.6% | 50.6% | -722 |
-| TRI_A06_r6_r3_bundle_fix1 | 0.00 | 16876 / 16548 / 2 | 50.5% | 50.5% | 951 |
-| DP Melon Cyborg V4  gooseoverflow | -0.07 | 15142 / 15591 / 5 | 49.3% | 49.3% | -599 |
+| TRI_A06_r12_r3_fix1 | 0.12 | 18268 / 15908 / 4 | 53.4% | 53.5% | 1,513 |
+| kaggriculture-pipe-7-wheat-microstructure | 0.01 | 9891 / 9673 / 0 | 50.6% | 50.6% | -722 |
+| TRI_A06_r6_r3_bundle_fix1 | 0.00 | 16880 / 16556 / 2 | 50.5% | 50.5% | 949 |
+| DP Melon Cyborg V4  gooseoverflow | -0.07 | 15150 / 15597 / 5 | 49.3% | 49.3% | -599 |
 | kaggriculture-v45-first-turn-wheat-round-trip | -0.10 | 12136 / 13112 / 0 | 48.1% | 48.1% | -1,166 |
-| DP Melon Cyborg R4  invincible | -0.15 | 14373 / 16585 / 4 | 46.4% | 46.4% | -908 |
-| kaggriculture-master-engine-v3 | -0.29 | 11105 / 13839 / 2 | 44.5% | 44.5% | -892 |
-| market-smart-farming-kaggriculture | -0.29 | 12364 / 16316 / 4 | 43.1% | 43.1% | -813 |
-| TRI_A08_r11_r3 | -0.59 | 11692 / 19734 / 4 | 37.2% | 37.2% | -1,967 |
-| AFS R1 | -0.66 | 9570 / 17427 / 37 | 35.4% | 35.5% | -2,209 |
-| AFS R2 | -0.71 | 10715 / 20544 / 36 | 34.2% | 34.3% | -2,439 |
-| Market_DP_R3 | -0.96 | 4760 / 11311 / 7 | 29.6% | 29.6% | -2,891 |
+| DP Melon Cyborg R4  invincible | -0.15 | 14373 / 16593 / 4 | 46.4% | 46.4% | -909 |
+| kaggriculture-master-engine-v3 | -0.29 | 11107 / 13839 / 2 | 44.5% | 44.5% | -891 |
+| market-smart-farming-kaggriculture | -0.29 | 12364 / 16322 / 4 | 43.1% | 43.1% | -813 |
+| TRI_A08_r11_r3 | -0.59 | 11692 / 19742 / 4 | 37.2% | 37.2% | -1,968 |
+| AFS R1 | -0.66 | 9574 / 17437 / 37 | 35.4% | 35.5% | -2,206 |
+| AFS R2 | -0.71 | 10720 / 20551 / 36 | 34.2% | 34.3% | -2,439 |
+| Market_DP_R3 | -0.96 | 4760 / 11315 / 7 | 29.6% | 29.6% | -2,891 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
@@ -386,11 +386,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | 2842-two-identical-agents-90-points-apart | market-smart-farming-kaggriculture | 71/410 | 17.3% | 38/205 | 33/205 |
 | 2842-two-identical-agents-90-points-apart | A06 R9C7 five-day | 705/1372 | 51.4% | 351/686 | 354/686 |
 | 2842-two-identical-agents-90-points-apart | A06 R6 | 703/1372 | 51.2% | 348/686 | 355/686 |
-| 2842-two-identical-agents-90-points-apart | shop-aware-farming-kaggriculture | 51/352 | 14.5% | 26/176 | 25/176 |
+| 2842-two-identical-agents-90-points-apart | shop-aware-farming-kaggriculture | 53/356 | 14.9% | 27/178 | 26/178 |
 | 2842-two-identical-agents-90-points-apart | kaggriculture-master-engine-v3 | 143/148 | 96.6% | 72/74 | 71/74 |
 | 2842-two-identical-agents-90-points-apart | R03goosefix | 1026/1272 | 80.7% | 515/636 | 511/636 |
 | 2842-two-identical-agents-90-points-apart | DP Melon Cyborg V4  gooseoverflow | 301/318 | 94.7% | 149/159 | 152/159 |
-| 2842-two-identical-agents-90-points-apart | kaggriculture-ready-stock-earlier-sales | 58/372 | 15.6% | 28/186 | 30/186 |
+| 2842-two-identical-agents-90-points-apart | kaggriculture-ready-stock-earlier-sales | 58/376 | 15.4% | 28/188 | 30/188 |
 | TRI_A06_r12_r3_fix1 | 2842-two-identical-agents-90-points-apart | 495/1294 | 38.3% | 247/647 | 248/647 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-pipe-7-wheat-microstructure | 693/1378 | 50.3% | 348/689 | 345/689 |
 | TRI_A06_r12_r3_fix1 | Day 9 planner selector | 506/1980 | 25.6% | 245/990 | 261/990 |
@@ -406,18 +406,18 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | TRI_A06_r12_r3_fix1 | kaggriculture-v48-clear-the-queue | 340/706 | 48.2% | 166/353 | 174/353 |
 | TRI_A06_r12_r3_fix1 | TRI_A06_r6_r3_bundle_fix1 | 1467/2182 | 67.2% | 738/1091 | 729/1091 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-v47-reactive-market-coordination | 343/706 | 48.6% | 173/353 | 170/353 |
-| TRI_A06_r12_r3_fix1 | market-smart-farming-kaggriculture | 330/702 | 47.0% | 162/351 | 168/351 |
+| TRI_A06_r12_r3_fix1 | market-smart-farming-kaggriculture | 330/704 | 46.9% | 162/352 | 168/352 |
 | TRI_A06_r12_r3_fix1 | A06 R9C7 five-day | 915/1900 | 48.2% | 457/950 | 458/950 |
 | TRI_A06_r12_r3_fix1 | A06 R6 | 1092/2148 | 50.8% | 546/1074 | 546/1074 |
-| TRI_A06_r12_r3_fix1 | shop-aware-farming-kaggriculture | 322/696 | 46.3% | 166/348 | 156/348 |
+| TRI_A06_r12_r3_fix1 | shop-aware-farming-kaggriculture | 324/700 | 46.3% | 167/350 | 157/350 |
 | TRI_A06_r12_r3_fix1 | kaggriculture-master-engine-v3 | 913/1884 | 48.5% | 456/942 | 457/942 |
 | TRI_A06_r12_r3_fix1 | R03goosefix | 685/1796 | 38.1% | 344/898 | 341/898 |
 | TRI_A06_r12_r3_fix1 | DP Melon Cyborg V4  gooseoverflow | 719/1804 | 39.9% | 360/902 | 359/902 |
-| TRI_A06_r12_r3_fix1 | kaggriculture-ready-stock-earlier-sales | 347/702 | 49.4% | 174/351 | 173/351 |
+| TRI_A06_r12_r3_fix1 | kaggriculture-ready-stock-earlier-sales | 349/706 | 49.4% | 175/353 | 174/353 |
 | kaggriculture-pipe-7-wheat-microstructure | 2842-two-identical-agents-90-points-apart | 49/526 | 9.3% | 26/263 | 23/263 |
 | kaggriculture-pipe-7-wheat-microstructure | TRI_A06_r12_r3_fix1 | 685/1378 | 49.7% | 344/689 | 341/689 |
-| kaggriculture-pipe-7-wheat-microstructure | Day 9 planner selector | 791/1300 | 60.8% | 392/650 | 399/650 |
-| kaggriculture-pipe-7-wheat-microstructure | AFS R1 | 752/1360 | 55.3% | 378/680 | 374/680 |
+| kaggriculture-pipe-7-wheat-microstructure | Day 9 planner selector | 791/1302 | 60.8% | 392/651 | 399/651 |
+| kaggriculture-pipe-7-wheat-microstructure | AFS R1 | 754/1362 | 55.4% | 379/681 | 375/681 |
 | kaggriculture-pipe-7-wheat-microstructure | kaggriculture-v45-first-turn-wheat-round-trip | 344/354 | 97.2% | 171/177 | 173/177 |
 | kaggriculture-pipe-7-wheat-microstructure | TRI_A08_r11_r3 | 772/1332 | 58.0% | 386/666 | 386/666 |
 | kaggriculture-pipe-7-wheat-microstructure | Market_DP_R3 | 385/416 | 92.5% | 192/208 | 193/208 |
@@ -432,14 +432,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | kaggriculture-pipe-7-wheat-microstructure | market-smart-farming-kaggriculture | 26/262 | 9.9% | 13/131 | 13/131 |
 | kaggriculture-pipe-7-wheat-microstructure | A06 R9C7 five-day | 581/1350 | 43.0% | 294/675 | 287/675 |
 | kaggriculture-pipe-7-wheat-microstructure | A06 R6 | 517/1304 | 39.6% | 257/652 | 260/652 |
-| kaggriculture-pipe-7-wheat-microstructure | shop-aware-farming-kaggriculture | 36/304 | 11.8% | 18/152 | 18/152 |
+| kaggriculture-pipe-7-wheat-microstructure | shop-aware-farming-kaggriculture | 36/306 | 11.8% | 18/153 | 18/153 |
 | kaggriculture-pipe-7-wheat-microstructure | kaggriculture-master-engine-v3 | 273/286 | 95.5% | 139/143 | 134/143 |
 | kaggriculture-pipe-7-wheat-microstructure | R03goosefix | 784/1308 | 59.9% | 392/654 | 392/654 |
 | kaggriculture-pipe-7-wheat-microstructure | DP Melon Cyborg V4  gooseoverflow | 807/1276 | 63.2% | 400/638 | 407/638 |
-| kaggriculture-pipe-7-wheat-microstructure | kaggriculture-ready-stock-earlier-sales | 15/206 | 7.3% | 7/103 | 8/103 |
+| kaggriculture-pipe-7-wheat-microstructure | kaggriculture-ready-stock-earlier-sales | 15/208 | 7.2% | 7/104 | 8/104 |
 | Day 9 planner selector | 2842-two-identical-agents-90-points-apart | 477/1282 | 37.2% | 236/641 | 241/641 |
 | Day 9 planner selector | TRI_A06_r12_r3_fix1 | 1474/1980 | 74.4% | 729/990 | 745/990 |
-| Day 9 planner selector | kaggriculture-pipe-7-wheat-microstructure | 509/1300 | 39.2% | 251/650 | 258/650 |
+| Day 9 planner selector | kaggriculture-pipe-7-wheat-microstructure | 511/1302 | 39.2% | 252/651 | 259/651 |
 | Day 9 planner selector | AFS R1 | 1291/1385 | 93.2% | 638/691 | 653/694 |
 | Day 9 planner selector | kaggriculture-v45-first-turn-wheat-round-trip | 845/1954 | 43.2% | 420/977 | 425/977 |
 | Day 9 planner selector | TRI_A08_r11_r3 | 1368/1546 | 88.5% | 688/773 | 680/773 |
@@ -452,17 +452,17 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | Day 9 planner selector | kaggriculture-v48-clear-the-queue | 309/698 | 44.3% | 154/349 | 155/349 |
 | Day 9 planner selector | TRI_A06_r6_r3_bundle_fix1 | 1355/1672 | 81.0% | 669/836 | 686/836 |
 | Day 9 planner selector | kaggriculture-v47-reactive-market-coordination | 291/690 | 42.2% | 145/345 | 146/345 |
-| Day 9 planner selector | market-smart-farming-kaggriculture | 287/686 | 41.8% | 143/343 | 144/343 |
+| Day 9 planner selector | market-smart-farming-kaggriculture | 287/688 | 41.7% | 143/344 | 144/344 |
 | Day 9 planner selector | A06 R9C7 five-day | 3403/3874 | 87.8% | 1706/1937 | 1697/1937 |
 | Day 9 planner selector | A06 R6 | 2063/2392 | 86.2% | 1025/1196 | 1038/1196 |
-| Day 9 planner selector | shop-aware-farming-kaggriculture | 286/684 | 41.8% | 145/342 | 141/342 |
+| Day 9 planner selector | shop-aware-farming-kaggriculture | 286/688 | 41.6% | 145/344 | 141/344 |
 | Day 9 planner selector | kaggriculture-master-engine-v3 | 725/1814 | 40.0% | 359/907 | 366/907 |
 | Day 9 planner selector | R03goosefix | 1455/3444 | 42.2% | 727/1722 | 728/1722 |
 | Day 9 planner selector | DP Melon Cyborg V4  gooseoverflow | 765/1842 | 41.5% | 384/921 | 381/921 |
-| Day 9 planner selector | kaggriculture-ready-stock-earlier-sales | 366/794 | 46.1% | 183/397 | 183/397 |
+| Day 9 planner selector | kaggriculture-ready-stock-earlier-sales | 372/804 | 46.3% | 186/402 | 186/402 |
 | AFS R1 | 2842-two-identical-agents-90-points-apart | 401/1218 | 32.9% | 201/609 | 200/609 |
 | AFS R1 | TRI_A06_r12_r3_fix1 | 69/1406 | 4.9% | 35/703 | 34/703 |
-| AFS R1 | kaggriculture-pipe-7-wheat-microstructure | 608/1360 | 44.7% | 306/680 | 302/680 |
+| AFS R1 | kaggriculture-pipe-7-wheat-microstructure | 608/1362 | 44.6% | 306/681 | 302/681 |
 | AFS R1 | Day 9 planner selector | 94/1385 | 6.8% | 41/694 | 53/691 |
 | AFS R1 | kaggriculture-v45-first-turn-wheat-round-trip | 638/1372 | 46.5% | 319/686 | 319/686 |
 | AFS R1 | TRI_A08_r11_r3 | 605/1770 | 34.2% | 304/887 | 301/883 |
@@ -478,11 +478,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | AFS R1 | market-smart-farming-kaggriculture | 300/692 | 43.4% | 149/346 | 151/346 |
 | AFS R1 | A06 R9C7 five-day | 114/734 | 15.5% | 53/367 | 61/367 |
 | AFS R1 | A06 R6 | 173/1016 | 17.0% | 85/508 | 88/508 |
-| AFS R1 | shop-aware-farming-kaggriculture | 276/676 | 40.8% | 141/338 | 135/338 |
+| AFS R1 | shop-aware-farming-kaggriculture | 276/682 | 40.5% | 141/341 | 135/341 |
 | AFS R1 | kaggriculture-master-engine-v3 | 574/1336 | 43.0% | 288/668 | 286/668 |
 | AFS R1 | R03goosefix | 535/1330 | 40.2% | 269/665 | 266/665 |
 | AFS R1 | DP Melon Cyborg V4  gooseoverflow | 558/1334 | 41.8% | 279/667 | 279/667 |
-| AFS R1 | kaggriculture-ready-stock-earlier-sales | 299/688 | 43.5% | 148/344 | 151/344 |
+| AFS R1 | kaggriculture-ready-stock-earlier-sales | 303/694 | 43.7% | 150/347 | 153/347 |
 | kaggriculture-v45-first-turn-wheat-round-trip | 2842-two-identical-agents-90-points-apart | 1/158 | 0.6% | 0/79 | 1/79 |
 | kaggriculture-v45-first-turn-wheat-round-trip | TRI_A06_r12_r3_fix1 | 1006/1882 | 53.5% | 505/941 | 501/941 |
 | kaggriculture-v45-first-turn-wheat-round-trip | kaggriculture-pipe-7-wheat-microstructure | 10/354 | 2.8% | 4/177 | 6/177 |
@@ -524,11 +524,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | TRI_A08_r11_r3 | market-smart-farming-kaggriculture | 292/690 | 42.3% | 147/345 | 145/345 |
 | TRI_A08_r11_r3 | A06 R9C7 five-day | 168/1070 | 15.7% | 84/535 | 84/535 |
 | TRI_A08_r11_r3 | A06 R6 | 291/1468 | 19.8% | 150/734 | 141/734 |
-| TRI_A08_r11_r3 | shop-aware-farming-kaggriculture | 273/674 | 40.5% | 136/337 | 137/337 |
+| TRI_A08_r11_r3 | shop-aware-farming-kaggriculture | 273/678 | 40.3% | 136/339 | 137/339 |
 | TRI_A08_r11_r3 | kaggriculture-master-engine-v3 | 792/1854 | 42.7% | 396/927 | 396/927 |
 | TRI_A08_r11_r3 | R03goosefix | 568/1700 | 33.4% | 283/850 | 285/850 |
 | TRI_A08_r11_r3 | DP Melon Cyborg V4  gooseoverflow | 578/1702 | 34.0% | 289/851 | 289/851 |
-| TRI_A08_r11_r3 | kaggriculture-ready-stock-earlier-sales | 285/682 | 41.8% | 142/341 | 143/341 |
+| TRI_A08_r11_r3 | kaggriculture-ready-stock-earlier-sales | 285/686 | 41.5% | 142/343 | 143/343 |
 | Market_DP_R3 | 2842-two-identical-agents-90-points-apart | 6/222 | 2.7% | 2/111 | 4/111 |
 | Market_DP_R3 | TRI_A06_r12_r3_fix1 | 604/1358 | 44.5% | 298/679 | 306/679 |
 | Market_DP_R3 | kaggriculture-pipe-7-wheat-microstructure | 31/416 | 7.5% | 15/208 | 16/208 |
@@ -547,11 +547,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | Market_DP_R3 | market-smart-farming-kaggriculture | 18/224 | 8.0% | 9/112 | 9/112 |
 | Market_DP_R3 | A06 R9C7 five-day | 50/504 | 9.9% | 24/252 | 26/252 |
 | Market_DP_R3 | A06 R6 | 424/1234 | 34.4% | 213/617 | 211/617 |
-| Market_DP_R3 | shop-aware-farming-kaggriculture | 23/248 | 9.3% | 11/124 | 12/124 |
+| Market_DP_R3 | shop-aware-farming-kaggriculture | 23/250 | 9.2% | 11/125 | 12/125 |
 | Market_DP_R3 | kaggriculture-master-engine-v3 | 372/1192 | 31.2% | 186/596 | 186/596 |
 | Market_DP_R3 | R03goosefix | 7/238 | 2.9% | 3/119 | 4/119 |
 | Market_DP_R3 | DP Melon Cyborg V4  gooseoverflow | 127/762 | 16.7% | 64/381 | 63/381 |
-| Market_DP_R3 | kaggriculture-ready-stock-earlier-sales | 52/356 | 14.6% | 26/178 | 26/178 |
+| Market_DP_R3 | kaggriculture-ready-stock-earlier-sales | 52/358 | 14.5% | 26/179 | 26/179 |
 | market-smart-farming-kaggriculture | 2842-two-identical-agents-90-points-apart | 217/966 | 22.5% | 111/483 | 106/483 |
 | market-smart-farming-kaggriculture | TRI_A06_r12_r3_fix1 | 981/1892 | 51.8% | 489/946 | 492/946 |
 | market-smart-farming-kaggriculture | kaggriculture-pipe-7-wheat-microstructure | 12/284 | 4.2% | 7/142 | 5/142 |
@@ -570,11 +570,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | market-smart-farming-kaggriculture | market-smart-farming-kaggriculture | 140/542 | 25.8% | 67/271 | 73/271 |
 | market-smart-farming-kaggriculture | A06 R9C7 five-day | 804/1866 | 43.1% | 400/933 | 404/933 |
 | market-smart-farming-kaggriculture | A06 R6 | 747/1838 | 40.6% | 373/919 | 374/919 |
-| market-smart-farming-kaggriculture | shop-aware-farming-kaggriculture | 86/442 | 19.5% | 40/221 | 46/221 |
-| market-smart-farming-kaggriculture | kaggriculture-master-engine-v3 | 124/1674 | 7.4% | 58/837 | 66/837 |
+| market-smart-farming-kaggriculture | shop-aware-farming-kaggriculture | 86/444 | 19.4% | 40/222 | 46/222 |
+| market-smart-farming-kaggriculture | kaggriculture-master-engine-v3 | 124/1676 | 7.4% | 58/838 | 66/838 |
 | market-smart-farming-kaggriculture | R03goosefix | 1062/1866 | 56.9% | 536/933 | 526/933 |
 | market-smart-farming-kaggriculture | DP Melon Cyborg V4  gooseoverflow | 1075/1848 | 58.2% | 536/924 | 539/924 |
-| market-smart-farming-kaggriculture | kaggriculture-ready-stock-earlier-sales | 66/396 | 16.7% | 30/198 | 36/198 |
+| market-smart-farming-kaggriculture | kaggriculture-ready-stock-earlier-sales | 66/398 | 16.6% | 30/199 | 36/199 |
 | kaggriculture-v46-first-turn-microstructure-and-s | 2842-two-identical-agents-90-points-apart | 617/728 | 84.8% | 308/364 | 309/364 |
 | kaggriculture-v46-first-turn-microstructure-and-s | TRI_A06_r12_r3_fix1 | 718/1370 | 52.4% | 364/685 | 354/685 |
 | kaggriculture-v46-first-turn-microstructure-and-s | kaggriculture-pipe-7-wheat-microstructure | 386/418 | 92.3% | 191/209 | 195/209 |
@@ -590,10 +590,10 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | kaggriculture-v46-first-turn-microstructure-and-s | kaggriculture-v48-clear-the-queue | 23/706 | 3.3% | 13/353 | 10/353 |
 | kaggriculture-v46-first-turn-microstructure-and-s | TRI_A06_r6_r3_bundle_fix1 | 671/1364 | 49.2% | 334/682 | 337/682 |
 | kaggriculture-v46-first-turn-microstructure-and-s | kaggriculture-v47-reactive-market-coordination | 20/706 | 2.8% | 7/353 | 13/353 |
-| kaggriculture-v46-first-turn-microstructure-and-s | market-smart-farming-kaggriculture | 17/302 | 5.6% | 6/151 | 11/151 |
+| kaggriculture-v46-first-turn-microstructure-and-s | market-smart-farming-kaggriculture | 17/304 | 5.6% | 6/152 | 11/152 |
 | kaggriculture-v46-first-turn-microstructure-and-s | A06 R9C7 five-day | 570/1336 | 42.7% | 286/668 | 284/668 |
 | kaggriculture-v46-first-turn-microstructure-and-s | A06 R6 | 496/1292 | 38.4% | 247/646 | 249/646 |
-| kaggriculture-v46-first-turn-microstructure-and-s | shop-aware-farming-kaggriculture | 5/212 | 2.4% | 2/106 | 3/106 |
+| kaggriculture-v46-first-turn-microstructure-and-s | shop-aware-farming-kaggriculture | 6/218 | 2.8% | 2/109 | 4/109 |
 | kaggriculture-v46-first-turn-microstructure-and-s | kaggriculture-master-engine-v3 | 383/414 | 92.5% | 191/207 | 192/207 |
 | kaggriculture-v46-first-turn-microstructure-and-s | R03goosefix | 1362/2930 | 46.5% | 683/1465 | 679/1465 |
 | kaggriculture-v46-first-turn-microstructure-and-s | DP Melon Cyborg V4  gooseoverflow | 658/1366 | 48.2% | 327/683 | 331/683 |
@@ -613,14 +613,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | DP Melon Cyborg R4  invincible | kaggriculture-v48-clear-the-queue | 335/704 | 47.6% | 167/352 | 168/352 |
 | DP Melon Cyborg R4  invincible | TRI_A06_r6_r3_bundle_fix1 | 847/1882 | 45.0% | 423/941 | 424/941 |
 | DP Melon Cyborg R4  invincible | kaggriculture-v47-reactive-market-coordination | 331/704 | 47.0% | 165/352 | 166/352 |
-| DP Melon Cyborg R4  invincible | market-smart-farming-kaggriculture | 301/692 | 43.5% | 151/346 | 150/346 |
+| DP Melon Cyborg R4  invincible | market-smart-farming-kaggriculture | 301/694 | 43.4% | 151/347 | 150/347 |
 | DP Melon Cyborg R4  invincible | A06 R9C7 five-day | 233/1772 | 13.1% | 109/886 | 124/886 |
-| DP Melon Cyborg R4  invincible | A06 R6 | 749/1836 | 40.8% | 377/918 | 372/918 |
-| DP Melon Cyborg R4  invincible | shop-aware-farming-kaggriculture | 285/684 | 41.7% | 144/342 | 141/342 |
+| DP Melon Cyborg R4  invincible | A06 R6 | 749/1838 | 40.8% | 377/919 | 372/919 |
+| DP Melon Cyborg R4  invincible | shop-aware-farming-kaggriculture | 285/686 | 41.5% | 144/343 | 141/343 |
 | DP Melon Cyborg R4  invincible | kaggriculture-master-engine-v3 | 1015/1216 | 83.5% | 508/608 | 507/608 |
 | DP Melon Cyborg R4  invincible | R03goosefix | 171/1050 | 16.3% | 83/525 | 88/525 |
 | DP Melon Cyborg R4  invincible | DP Melon Cyborg V4  gooseoverflow | 1535/2856 | 53.7% | 772/1428 | 763/1428 |
-| DP Melon Cyborg R4  invincible | kaggriculture-ready-stock-earlier-sales | 256/664 | 38.6% | 129/332 | 127/332 |
+| DP Melon Cyborg R4  invincible | kaggriculture-ready-stock-earlier-sales | 256/666 | 38.4% | 129/333 | 127/333 |
 | AFS R2 | 2842-two-identical-agents-90-points-apart | 430/1248 | 34.5% | 214/624 | 216/624 |
 | AFS R2 | TRI_A06_r12_r3_fix1 | 60/1550 | 3.9% | 32/775 | 28/775 |
 | AFS R2 | kaggriculture-pipe-7-wheat-microstructure | 572/1346 | 42.5% | 285/673 | 287/673 |
@@ -636,14 +636,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | AFS R2 | kaggriculture-v48-clear-the-queue | 248/662 | 37.5% | 124/331 | 124/331 |
 | AFS R2 | TRI_A06_r6_r3_bundle_fix1 | 111/1526 | 7.3% | 53/763 | 58/763 |
 | AFS R2 | kaggriculture-v47-reactive-market-coordination | 281/684 | 41.1% | 140/342 | 141/342 |
-| AFS R2 | market-smart-farming-kaggriculture | 273/678 | 40.3% | 137/339 | 136/339 |
+| AFS R2 | market-smart-farming-kaggriculture | 273/680 | 40.1% | 137/340 | 136/340 |
 | AFS R2 | A06 R9C7 five-day | 156/1038 | 15.0% | 80/519 | 76/519 |
 | AFS R2 | A06 R6 | 148/1166 | 12.7% | 72/583 | 76/583 |
-| AFS R2 | shop-aware-farming-kaggriculture | 299/686 | 43.6% | 148/343 | 151/343 |
+| AFS R2 | shop-aware-farming-kaggriculture | 304/694 | 43.8% | 150/347 | 154/347 |
 | AFS R2 | kaggriculture-master-engine-v3 | 830/1880 | 44.1% | 409/940 | 421/940 |
 | AFS R2 | R03goosefix | 705/1796 | 39.3% | 351/898 | 354/898 |
 | AFS R2 | DP Melon Cyborg V4  gooseoverflow | 714/1810 | 39.4% | 358/905 | 356/905 |
-| AFS R2 | kaggriculture-ready-stock-earlier-sales | 279/680 | 41.0% | 139/340 | 140/340 |
+| AFS R2 | kaggriculture-ready-stock-earlier-sales | 279/682 | 40.9% | 139/341 | 140/341 |
 | A06 R9C6 | 2842-two-identical-agents-90-points-apart | 585/1348 | 43.4% | 292/674 | 293/674 |
 | A06 R9C6 | TRI_A06_r12_r3_fix1 | 704/1372 | 51.3% | 359/686 | 345/686 |
 | A06 R9C6 | kaggriculture-pipe-7-wheat-microstructure | 851/1426 | 59.7% | 425/713 | 426/713 |
@@ -659,14 +659,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | A06 R9C6 | kaggriculture-v48-clear-the-queue | 399/688 | 58.0% | 198/344 | 201/344 |
 | A06 R9C6 | TRI_A06_r6_r3_bundle_fix1 | 818/1270 | 64.4% | 416/635 | 402/635 |
 | A06 R9C6 | kaggriculture-v47-reactive-market-coordination | 365/706 | 51.7% | 185/353 | 180/353 |
-| A06 R9C6 | market-smart-farming-kaggriculture | 405/680 | 59.6% | 204/340 | 201/340 |
+| A06 R9C6 | market-smart-farming-kaggriculture | 407/682 | 59.7% | 205/341 | 202/341 |
 | A06 R9C6 | A06 R9C7 five-day | 1509/3034 | 49.7% | 748/1517 | 761/1517 |
 | A06 R9C6 | A06 R6 | 593/1860 | 31.9% | 285/930 | 308/930 |
-| A06 R9C6 | shop-aware-farming-kaggriculture | 378/696 | 54.3% | 190/348 | 188/348 |
+| A06 R9C6 | shop-aware-farming-kaggriculture | 380/700 | 54.3% | 191/350 | 189/350 |
 | A06 R9C6 | kaggriculture-master-engine-v3 | 799/1302 | 61.4% | 400/651 | 399/651 |
 | A06 R9C6 | R03goosefix | 1170/2182 | 53.6% | 585/1091 | 585/1091 |
-| A06 R9C6 | DP Melon Cyborg V4  gooseoverflow | 718/904 | 79.4% | 361/452 | 357/452 |
-| A06 R9C6 | kaggriculture-ready-stock-earlier-sales | 397/682 | 58.2% | 198/341 | 199/341 |
+| A06 R9C6 | DP Melon Cyborg V4  gooseoverflow | 718/906 | 79.2% | 361/453 | 357/453 |
+| A06 R9C6 | kaggriculture-ready-stock-earlier-sales | 399/686 | 58.2% | 199/343 | 200/343 |
 | kaggriculture-v48-clear-the-queue | 2842-two-identical-agents-90-points-apart | 339/410 | 82.7% | 173/205 | 166/205 |
 | kaggriculture-v48-clear-the-queue | TRI_A06_r12_r3_fix1 | 366/706 | 51.8% | 179/353 | 187/353 |
 | kaggriculture-v48-clear-the-queue | kaggriculture-pipe-7-wheat-microstructure | 197/210 | 93.8% | 100/105 | 97/105 |
@@ -705,14 +705,14 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | TRI_A06_r6_r3_bundle_fix1 | A06 R9C6 | 452/1270 | 35.6% | 233/635 | 219/635 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v48-clear-the-queue | 327/702 | 46.6% | 162/351 | 165/351 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-v47-reactive-market-coordination | 355/706 | 50.3% | 179/353 | 176/353 |
-| TRI_A06_r6_r3_bundle_fix1 | market-smart-farming-kaggriculture | 341/704 | 48.4% | 172/352 | 169/352 |
+| TRI_A06_r6_r3_bundle_fix1 | market-smart-farming-kaggriculture | 343/706 | 48.6% | 173/353 | 170/353 |
 | TRI_A06_r6_r3_bundle_fix1 | A06 R9C7 five-day | 550/1692 | 32.5% | 271/846 | 279/846 |
 | TRI_A06_r6_r3_bundle_fix1 | A06 R6 | 733/2020 | 36.3% | 357/1010 | 376/1010 |
-| TRI_A06_r6_r3_bundle_fix1 | shop-aware-farming-kaggriculture | 376/696 | 54.0% | 189/348 | 187/348 |
+| TRI_A06_r6_r3_bundle_fix1 | shop-aware-farming-kaggriculture | 378/702 | 53.8% | 190/351 | 188/351 |
 | TRI_A06_r6_r3_bundle_fix1 | kaggriculture-master-engine-v3 | 976/1882 | 51.9% | 489/941 | 487/941 |
 | TRI_A06_r6_r3_bundle_fix1 | R03goosefix | 851/1890 | 45.0% | 426/945 | 425/945 |
 | TRI_A06_r6_r3_bundle_fix1 | DP Melon Cyborg V4  gooseoverflow | 874/1892 | 46.2% | 439/946 | 435/946 |
-| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-ready-stock-earlier-sales | 343/702 | 48.9% | 169/351 | 174/351 |
+| TRI_A06_r6_r3_bundle_fix1 | kaggriculture-ready-stock-earlier-sales | 343/706 | 48.6% | 169/353 | 174/353 |
 | kaggriculture-v47-reactive-market-coordination | 2842-two-identical-agents-90-points-apart | 342/416 | 82.2% | 172/208 | 170/208 |
 | kaggriculture-v47-reactive-market-coordination | TRI_A06_r12_r3_fix1 | 363/706 | 51.4% | 183/353 | 180/353 |
 | kaggriculture-v47-reactive-market-coordination | kaggriculture-pipe-7-wheat-microstructure | 165/174 | 94.8% | 82/87 | 83/87 |
@@ -737,27 +737,27 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | kaggriculture-v47-reactive-market-coordination | DP Melon Cyborg V4  gooseoverflow | 315/698 | 45.1% | 156/349 | 159/349 |
 | kaggriculture-v47-reactive-market-coordination | kaggriculture-ready-stock-earlier-sales | 23/250 | 9.2% | 11/125 | 12/125 |
 | market-smart-farming-kaggriculture | 2842-two-identical-agents-90-points-apart | 338/410 | 82.4% | 172/205 | 166/205 |
-| market-smart-farming-kaggriculture | TRI_A06_r12_r3_fix1 | 372/702 | 53.0% | 183/351 | 189/351 |
+| market-smart-farming-kaggriculture | TRI_A06_r12_r3_fix1 | 374/704 | 53.1% | 184/352 | 190/352 |
 | market-smart-farming-kaggriculture | kaggriculture-pipe-7-wheat-microstructure | 236/262 | 90.1% | 118/131 | 118/131 |
-| market-smart-farming-kaggriculture | Day 9 planner selector | 399/686 | 58.2% | 199/343 | 200/343 |
+| market-smart-farming-kaggriculture | Day 9 planner selector | 401/688 | 58.3% | 200/344 | 201/344 |
 | market-smart-farming-kaggriculture | AFS R1 | 392/692 | 56.6% | 195/346 | 197/346 |
 | market-smart-farming-kaggriculture | kaggriculture-v45-first-turn-wheat-round-trip | 181/194 | 93.3% | 89/97 | 92/97 |
 | market-smart-farming-kaggriculture | TRI_A08_r11_r3 | 398/690 | 57.7% | 200/345 | 198/345 |
 | market-smart-farming-kaggriculture | Market_DP_R3 | 206/224 | 92.0% | 103/112 | 103/112 |
 | market-smart-farming-kaggriculture | market-smart-farming-kaggriculture | 402/542 | 74.2% | 198/271 | 204/271 |
-| market-smart-farming-kaggriculture | kaggriculture-v46-first-turn-microstructure-and-s | 285/302 | 94.4% | 140/151 | 145/151 |
-| market-smart-farming-kaggriculture | DP Melon Cyborg R4  invincible | 391/692 | 56.5% | 196/346 | 195/346 |
-| market-smart-farming-kaggriculture | AFS R2 | 405/678 | 59.7% | 203/339 | 202/339 |
-| market-smart-farming-kaggriculture | A06 R9C6 | 275/680 | 40.4% | 139/340 | 136/340 |
+| market-smart-farming-kaggriculture | kaggriculture-v46-first-turn-microstructure-and-s | 287/304 | 94.4% | 141/152 | 146/152 |
+| market-smart-farming-kaggriculture | DP Melon Cyborg R4  invincible | 393/694 | 56.6% | 197/347 | 196/347 |
+| market-smart-farming-kaggriculture | AFS R2 | 407/680 | 59.9% | 204/340 | 203/340 |
+| market-smart-farming-kaggriculture | A06 R9C6 | 275/682 | 40.3% | 139/341 | 136/341 |
 | market-smart-farming-kaggriculture | kaggriculture-v48-clear-the-queue | 159/168 | 94.6% | 80/84 | 79/84 |
-| market-smart-farming-kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 363/704 | 51.6% | 183/352 | 180/352 |
+| market-smart-farming-kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 363/706 | 51.4% | 183/353 | 180/353 |
 | market-smart-farming-kaggriculture | kaggriculture-v47-reactive-market-coordination | 224/246 | 91.1% | 115/123 | 109/123 |
-| market-smart-farming-kaggriculture | A06 R9C7 five-day | 410/978 | 41.9% | 209/489 | 201/489 |
+| market-smart-farming-kaggriculture | A06 R9C7 five-day | 412/984 | 41.9% | 210/492 | 202/492 |
 | market-smart-farming-kaggriculture | A06 R6 | 276/680 | 40.6% | 140/340 | 136/340 |
-| market-smart-farming-kaggriculture | shop-aware-farming-kaggriculture | 54/678 | 8.0% | 28/339 | 26/339 |
+| market-smart-farming-kaggriculture | shop-aware-farming-kaggriculture | 54/680 | 7.9% | 28/340 | 26/340 |
 | market-smart-farming-kaggriculture | kaggriculture-master-engine-v3 | 241/268 | 89.9% | 120/134 | 121/134 |
-| market-smart-farming-kaggriculture | R03goosefix | 427/986 | 43.3% | 211/493 | 216/493 |
-| market-smart-farming-kaggriculture | DP Melon Cyborg V4  gooseoverflow | 312/696 | 44.8% | 156/348 | 156/348 |
+| market-smart-farming-kaggriculture | R03goosefix | 429/990 | 43.3% | 212/495 | 217/495 |
+| market-smart-farming-kaggriculture | DP Melon Cyborg V4  gooseoverflow | 314/698 | 45.0% | 157/349 | 157/349 |
 | market-smart-farming-kaggriculture | kaggriculture-ready-stock-earlier-sales | 35/300 | 11.7% | 16/150 | 19/150 |
 | A06 R9C7 five-day | 2842-two-identical-agents-90-points-apart | 667/1372 | 48.6% | 332/686 | 335/686 |
 | A06 R9C7 five-day | TRI_A06_r12_r3_fix1 | 985/1900 | 51.8% | 492/950 | 493/950 |
@@ -775,13 +775,13 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | A06 R9C7 five-day | kaggriculture-v48-clear-the-queue | 411/672 | 61.2% | 207/336 | 204/336 |
 | A06 R9C7 five-day | TRI_A06_r6_r3_bundle_fix1 | 1142/1692 | 67.5% | 567/846 | 575/846 |
 | A06 R9C7 five-day | kaggriculture-v47-reactive-market-coordination | 380/702 | 54.1% | 188/351 | 192/351 |
-| A06 R9C7 five-day | market-smart-farming-kaggriculture | 568/978 | 58.1% | 288/489 | 280/489 |
+| A06 R9C7 five-day | market-smart-farming-kaggriculture | 572/984 | 58.1% | 290/492 | 282/492 |
 | A06 R9C7 five-day | A06 R6 | 1751/3398 | 51.5% | 884/1699 | 867/1699 |
 | A06 R9C7 five-day | shop-aware-farming-kaggriculture | 784/1362 | 57.6% | 392/681 | 392/681 |
 | A06 R9C7 five-day | kaggriculture-master-engine-v3 | 1066/1880 | 56.7% | 531/940 | 535/940 |
 | A06 R9C7 five-day | R03goosefix | 1107/2188 | 50.6% | 557/1094 | 550/1094 |
 | A06 R9C7 five-day | DP Melon Cyborg V4  gooseoverflow | 1313/1650 | 79.6% | 657/825 | 656/825 |
-| A06 R9C7 five-day | kaggriculture-ready-stock-earlier-sales | 912/1576 | 57.9% | 457/788 | 455/788 |
+| A06 R9C7 five-day | kaggriculture-ready-stock-earlier-sales | 918/1584 | 58.0% | 460/792 | 458/792 |
 | A06 R6 | 2842-two-identical-agents-90-points-apart | 669/1372 | 48.8% | 331/686 | 338/686 |
 | A06 R6 | TRI_A06_r12_r3_fix1 | 1056/2148 | 49.2% | 528/1074 | 528/1074 |
 | A06 R6 | kaggriculture-pipe-7-wheat-microstructure | 787/1304 | 60.4% | 392/652 | 395/652 |
@@ -792,7 +792,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | A06 R6 | Market_DP_R3 | 810/1234 | 65.6% | 406/617 | 404/617 |
 | A06 R6 | market-smart-farming-kaggriculture | 1091/1838 | 59.4% | 545/919 | 546/919 |
 | A06 R6 | kaggriculture-v46-first-turn-microstructure-and-s | 796/1292 | 61.6% | 397/646 | 399/646 |
-| A06 R6 | DP Melon Cyborg R4  invincible | 1087/1836 | 59.2% | 546/918 | 541/918 |
+| A06 R6 | DP Melon Cyborg R4  invincible | 1089/1838 | 59.2% | 547/919 | 542/919 |
 | A06 R6 | AFS R2 | 1018/1166 | 87.3% | 507/583 | 511/583 |
 | A06 R6 | A06 R9C6 | 585/1860 | 31.5% | 281/930 | 304/930 |
 | A06 R6 | kaggriculture-v48-clear-the-queue | 405/680 | 59.6% | 204/340 | 201/340 |
@@ -800,33 +800,33 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | A06 R6 | kaggriculture-v47-reactive-market-coordination | 406/676 | 60.1% | 203/338 | 203/338 |
 | A06 R6 | market-smart-farming-kaggriculture | 404/680 | 59.4% | 204/340 | 200/340 |
 | A06 R6 | A06 R9C7 five-day | 1647/3398 | 48.5% | 832/1699 | 815/1699 |
-| A06 R6 | shop-aware-farming-kaggriculture | 401/676 | 59.3% | 203/338 | 198/338 |
+| A06 R6 | shop-aware-farming-kaggriculture | 403/680 | 59.3% | 204/340 | 199/340 |
 | A06 R6 | kaggriculture-master-engine-v3 | 1129/1844 | 61.2% | 565/922 | 564/922 |
 | A06 R6 | R03goosefix | 977/1892 | 51.6% | 492/946 | 485/946 |
 | A06 R6 | DP Melon Cyborg V4  gooseoverflow | 1027/1868 | 55.0% | 507/934 | 520/934 |
-| A06 R6 | kaggriculture-ready-stock-earlier-sales | 411/666 | 61.7% | 205/333 | 206/333 |
-| shop-aware-farming-kaggriculture | 2842-two-identical-agents-90-points-apart | 301/352 | 85.5% | 151/176 | 150/176 |
-| shop-aware-farming-kaggriculture | TRI_A06_r12_r3_fix1 | 374/696 | 53.7% | 192/348 | 182/348 |
-| shop-aware-farming-kaggriculture | kaggriculture-pipe-7-wheat-microstructure | 268/304 | 88.2% | 134/152 | 134/152 |
-| shop-aware-farming-kaggriculture | Day 9 planner selector | 398/684 | 58.2% | 201/342 | 197/342 |
-| shop-aware-farming-kaggriculture | AFS R1 | 400/676 | 59.2% | 203/338 | 197/338 |
+| A06 R6 | kaggriculture-ready-stock-earlier-sales | 413/668 | 61.8% | 206/334 | 207/334 |
+| shop-aware-farming-kaggriculture | 2842-two-identical-agents-90-points-apart | 303/356 | 85.1% | 152/178 | 151/178 |
+| shop-aware-farming-kaggriculture | TRI_A06_r12_r3_fix1 | 376/700 | 53.7% | 193/350 | 183/350 |
+| shop-aware-farming-kaggriculture | kaggriculture-pipe-7-wheat-microstructure | 270/306 | 88.2% | 135/153 | 135/153 |
+| shop-aware-farming-kaggriculture | Day 9 planner selector | 402/688 | 58.4% | 203/344 | 199/344 |
+| shop-aware-farming-kaggriculture | AFS R1 | 406/682 | 59.5% | 206/341 | 200/341 |
 | shop-aware-farming-kaggriculture | kaggriculture-v45-first-turn-wheat-round-trip | 191/206 | 92.7% | 97/103 | 94/103 |
-| shop-aware-farming-kaggriculture | TRI_A08_r11_r3 | 401/674 | 59.5% | 200/337 | 201/337 |
-| shop-aware-farming-kaggriculture | Market_DP_R3 | 225/248 | 90.7% | 112/124 | 113/124 |
-| shop-aware-farming-kaggriculture | market-smart-farming-kaggriculture | 356/442 | 80.5% | 175/221 | 181/221 |
-| shop-aware-farming-kaggriculture | kaggriculture-v46-first-turn-microstructure-and-s | 207/212 | 97.6% | 103/106 | 104/106 |
-| shop-aware-farming-kaggriculture | DP Melon Cyborg R4  invincible | 399/684 | 58.3% | 201/342 | 198/342 |
-| shop-aware-farming-kaggriculture | AFS R2 | 387/686 | 56.4% | 192/343 | 195/343 |
-| shop-aware-farming-kaggriculture | A06 R9C6 | 318/696 | 45.7% | 160/348 | 158/348 |
+| shop-aware-farming-kaggriculture | TRI_A08_r11_r3 | 405/678 | 59.7% | 202/339 | 203/339 |
+| shop-aware-farming-kaggriculture | Market_DP_R3 | 227/250 | 90.8% | 113/125 | 114/125 |
+| shop-aware-farming-kaggriculture | market-smart-farming-kaggriculture | 358/444 | 80.6% | 176/222 | 182/222 |
+| shop-aware-farming-kaggriculture | kaggriculture-v46-first-turn-microstructure-and-s | 212/218 | 97.2% | 105/109 | 107/109 |
+| shop-aware-farming-kaggriculture | DP Melon Cyborg R4  invincible | 401/686 | 58.5% | 202/343 | 199/343 |
+| shop-aware-farming-kaggriculture | AFS R2 | 390/694 | 56.2% | 193/347 | 197/347 |
+| shop-aware-farming-kaggriculture | A06 R9C6 | 320/700 | 45.7% | 161/350 | 159/350 |
 | shop-aware-farming-kaggriculture | kaggriculture-v48-clear-the-queue | 159/168 | 94.6% | 80/84 | 79/84 |
-| shop-aware-farming-kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 320/696 | 46.0% | 161/348 | 159/348 |
+| shop-aware-farming-kaggriculture | TRI_A06_r6_r3_bundle_fix1 | 324/702 | 46.2% | 163/351 | 161/351 |
 | shop-aware-farming-kaggriculture | kaggriculture-v47-reactive-market-coordination | 177/188 | 94.1% | 91/94 | 86/94 |
-| shop-aware-farming-kaggriculture | market-smart-farming-kaggriculture | 185/678 | 27.3% | 94/339 | 91/339 |
+| shop-aware-farming-kaggriculture | market-smart-farming-kaggriculture | 185/680 | 27.2% | 94/340 | 91/340 |
 | shop-aware-farming-kaggriculture | A06 R9C7 five-day | 578/1362 | 42.4% | 289/681 | 289/681 |
-| shop-aware-farming-kaggriculture | A06 R6 | 275/676 | 40.7% | 140/338 | 135/338 |
+| shop-aware-farming-kaggriculture | A06 R6 | 277/680 | 40.7% | 141/340 | 136/340 |
 | shop-aware-farming-kaggriculture | kaggriculture-master-engine-v3 | 244/272 | 89.7% | 122/136 | 122/136 |
-| shop-aware-farming-kaggriculture | R03goosefix | 639/1374 | 46.5% | 323/687 | 316/687 |
-| shop-aware-farming-kaggriculture | DP Melon Cyborg V4  gooseoverflow | 339/698 | 48.6% | 171/349 | 168/349 |
+| shop-aware-farming-kaggriculture | R03goosefix | 641/1376 | 46.6% | 324/688 | 317/688 |
+| shop-aware-farming-kaggriculture | DP Melon Cyborg V4  gooseoverflow | 343/706 | 48.6% | 173/353 | 170/353 |
 | shop-aware-farming-kaggriculture | kaggriculture-ready-stock-earlier-sales | 41/322 | 12.7% | 20/161 | 21/161 |
 | kaggriculture-master-engine-v3 | 2842-two-identical-agents-90-points-apart | 5/148 | 3.4% | 3/74 | 2/74 |
 | kaggriculture-master-engine-v3 | TRI_A06_r12_r3_fix1 | 971/1884 | 51.5% | 485/942 | 486/942 |
@@ -836,7 +836,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | kaggriculture-master-engine-v3 | kaggriculture-v45-first-turn-wheat-round-trip | 12/702 | 1.7% | 8/351 | 4/351 |
 | kaggriculture-master-engine-v3 | TRI_A08_r11_r3 | 1062/1854 | 57.3% | 531/927 | 531/927 |
 | kaggriculture-master-engine-v3 | Market_DP_R3 | 818/1192 | 68.6% | 409/596 | 409/596 |
-| kaggriculture-master-engine-v3 | market-smart-farming-kaggriculture | 1550/1674 | 92.6% | 771/837 | 779/837 |
+| kaggriculture-master-engine-v3 | market-smart-farming-kaggriculture | 1552/1676 | 92.6% | 772/838 | 780/838 |
 | kaggriculture-master-engine-v3 | kaggriculture-v46-first-turn-microstructure-and-s | 31/414 | 7.5% | 15/207 | 16/207 |
 | kaggriculture-master-engine-v3 | DP Melon Cyborg R4  invincible | 201/1216 | 16.5% | 101/608 | 100/608 |
 | kaggriculture-master-engine-v3 | AFS R2 | 1050/1880 | 55.9% | 519/940 | 531/940 |
@@ -867,13 +867,13 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | R03goosefix | kaggriculture-v48-clear-the-queue | 377/702 | 53.7% | 189/351 | 188/351 |
 | R03goosefix | TRI_A06_r6_r3_bundle_fix1 | 1039/1890 | 55.0% | 520/945 | 519/945 |
 | R03goosefix | kaggriculture-v47-reactive-market-coordination | 375/704 | 53.3% | 185/352 | 190/352 |
-| R03goosefix | market-smart-farming-kaggriculture | 559/986 | 56.7% | 277/493 | 282/493 |
+| R03goosefix | market-smart-farming-kaggriculture | 561/990 | 56.7% | 278/495 | 283/495 |
 | R03goosefix | A06 R9C7 five-day | 1081/2188 | 49.4% | 544/1094 | 537/1094 |
 | R03goosefix | A06 R6 | 915/1892 | 48.4% | 461/946 | 454/946 |
-| R03goosefix | shop-aware-farming-kaggriculture | 733/1374 | 53.3% | 370/687 | 363/687 |
+| R03goosefix | shop-aware-farming-kaggriculture | 733/1376 | 53.3% | 370/688 | 363/688 |
 | R03goosefix | kaggriculture-master-engine-v3 | 962/1180 | 81.5% | 479/590 | 483/590 |
 | R03goosefix | DP Melon Cyborg V4  gooseoverflow | 869/876 | 99.2% | 432/438 | 437/438 |
-| R03goosefix | kaggriculture-ready-stock-earlier-sales | 919/1562 | 58.8% | 459/781 | 460/781 |
+| R03goosefix | kaggriculture-ready-stock-earlier-sales | 923/1568 | 58.9% | 461/784 | 462/784 |
 | DP Melon Cyborg V4  gooseoverflow | 2842-two-identical-agents-90-points-apart | 17/318 | 5.3% | 7/159 | 10/159 |
 | DP Melon Cyborg V4  gooseoverflow | TRI_A06_r12_r3_fix1 | 1085/1804 | 60.1% | 543/902 | 542/902 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-pipe-7-wheat-microstructure | 469/1276 | 36.8% | 231/638 | 238/638 |
@@ -886,40 +886,40 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 18, 2026 at 3:12 PM UTC
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v46-first-turn-microstructure-and-s | 708/1366 | 51.8% | 352/683 | 356/683 |
 | DP Melon Cyborg V4  gooseoverflow | DP Melon Cyborg R4  invincible | 1319/2856 | 46.2% | 664/1428 | 655/1428 |
 | DP Melon Cyborg V4  gooseoverflow | AFS R2 | 1096/1810 | 60.6% | 549/905 | 547/905 |
-| DP Melon Cyborg V4  gooseoverflow | A06 R9C6 | 186/904 | 20.6% | 95/452 | 91/452 |
+| DP Melon Cyborg V4  gooseoverflow | A06 R9C6 | 188/906 | 20.8% | 96/453 | 92/453 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v48-clear-the-queue | 401/686 | 58.5% | 199/343 | 202/343 |
 | DP Melon Cyborg V4  gooseoverflow | TRI_A06_r6_r3_bundle_fix1 | 1018/1892 | 53.8% | 511/946 | 507/946 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-v47-reactive-market-coordination | 382/698 | 54.7% | 190/349 | 192/349 |
-| DP Melon Cyborg V4  gooseoverflow | market-smart-farming-kaggriculture | 384/696 | 55.2% | 192/348 | 192/348 |
+| DP Melon Cyborg V4  gooseoverflow | market-smart-farming-kaggriculture | 384/698 | 55.0% | 192/349 | 192/349 |
 | DP Melon Cyborg V4  gooseoverflow | A06 R9C7 five-day | 337/1650 | 20.4% | 169/825 | 168/825 |
 | DP Melon Cyborg V4  gooseoverflow | A06 R6 | 841/1868 | 45.0% | 414/934 | 427/934 |
-| DP Melon Cyborg V4  gooseoverflow | shop-aware-farming-kaggriculture | 357/698 | 51.1% | 180/349 | 177/349 |
+| DP Melon Cyborg V4  gooseoverflow | shop-aware-farming-kaggriculture | 361/706 | 51.1% | 182/353 | 179/353 |
 | DP Melon Cyborg V4  gooseoverflow | kaggriculture-master-engine-v3 | 1080/1364 | 79.2% | 536/682 | 544/682 |
 | DP Melon Cyborg V4  gooseoverflow | R03goosefix | 7/876 | 0.8% | 1/438 | 6/438 |
-| DP Melon Cyborg V4  gooseoverflow | kaggriculture-ready-stock-earlier-sales | 391/690 | 56.7% | 196/345 | 195/345 |
-| kaggriculture-ready-stock-earlier-sales | 2842-two-identical-agents-90-points-apart | 314/372 | 84.4% | 156/186 | 158/186 |
-| kaggriculture-ready-stock-earlier-sales | TRI_A06_r12_r3_fix1 | 355/702 | 50.6% | 178/351 | 177/351 |
-| kaggriculture-ready-stock-earlier-sales | kaggriculture-pipe-7-wheat-microstructure | 191/206 | 92.7% | 95/103 | 96/103 |
-| kaggriculture-ready-stock-earlier-sales | Day 9 planner selector | 428/794 | 53.9% | 214/397 | 214/397 |
-| kaggriculture-ready-stock-earlier-sales | AFS R1 | 389/688 | 56.5% | 193/344 | 196/344 |
+| DP Melon Cyborg V4  gooseoverflow | kaggriculture-ready-stock-earlier-sales | 393/692 | 56.8% | 197/346 | 196/346 |
+| kaggriculture-ready-stock-earlier-sales | 2842-two-identical-agents-90-points-apart | 318/376 | 84.6% | 158/188 | 160/188 |
+| kaggriculture-ready-stock-earlier-sales | TRI_A06_r12_r3_fix1 | 357/706 | 50.6% | 179/353 | 178/353 |
+| kaggriculture-ready-stock-earlier-sales | kaggriculture-pipe-7-wheat-microstructure | 193/208 | 92.8% | 96/104 | 97/104 |
+| kaggriculture-ready-stock-earlier-sales | Day 9 planner selector | 432/804 | 53.7% | 216/402 | 216/402 |
+| kaggriculture-ready-stock-earlier-sales | AFS R1 | 391/694 | 56.3% | 194/347 | 197/347 |
 | kaggriculture-ready-stock-earlier-sales | kaggriculture-v45-first-turn-wheat-round-trip | 164/174 | 94.3% | 82/87 | 82/87 |
-| kaggriculture-ready-stock-earlier-sales | TRI_A08_r11_r3 | 397/682 | 58.2% | 198/341 | 199/341 |
-| kaggriculture-ready-stock-earlier-sales | Market_DP_R3 | 304/356 | 85.4% | 152/178 | 152/178 |
-| kaggriculture-ready-stock-earlier-sales | market-smart-farming-kaggriculture | 330/396 | 83.3% | 162/198 | 168/198 |
+| kaggriculture-ready-stock-earlier-sales | TRI_A08_r11_r3 | 401/686 | 58.5% | 200/343 | 201/343 |
+| kaggriculture-ready-stock-earlier-sales | Market_DP_R3 | 306/358 | 85.5% | 153/179 | 153/179 |
+| kaggriculture-ready-stock-earlier-sales | market-smart-farming-kaggriculture | 332/398 | 83.4% | 163/199 | 169/199 |
 | kaggriculture-ready-stock-earlier-sales | kaggriculture-v46-first-turn-microstructure-and-s | 256/288 | 88.9% | 128/144 | 128/144 |
-| kaggriculture-ready-stock-earlier-sales | DP Melon Cyborg R4  invincible | 408/664 | 61.4% | 205/332 | 203/332 |
-| kaggriculture-ready-stock-earlier-sales | AFS R2 | 401/680 | 59.0% | 200/340 | 201/340 |
-| kaggriculture-ready-stock-earlier-sales | A06 R9C6 | 285/682 | 41.8% | 142/341 | 143/341 |
+| kaggriculture-ready-stock-earlier-sales | DP Melon Cyborg R4  invincible | 410/666 | 61.6% | 206/333 | 204/333 |
+| kaggriculture-ready-stock-earlier-sales | AFS R2 | 403/682 | 59.1% | 201/341 | 202/341 |
+| kaggriculture-ready-stock-earlier-sales | A06 R9C6 | 287/686 | 41.8% | 143/343 | 144/343 |
 | kaggriculture-ready-stock-earlier-sales | kaggriculture-v48-clear-the-queue | 241/268 | 89.9% | 122/134 | 119/134 |
-| kaggriculture-ready-stock-earlier-sales | TRI_A06_r6_r3_bundle_fix1 | 359/702 | 51.1% | 177/351 | 182/351 |
+| kaggriculture-ready-stock-earlier-sales | TRI_A06_r6_r3_bundle_fix1 | 363/706 | 51.4% | 179/353 | 184/353 |
 | kaggriculture-ready-stock-earlier-sales | kaggriculture-v47-reactive-market-coordination | 227/250 | 90.8% | 113/125 | 114/125 |
 | kaggriculture-ready-stock-earlier-sales | market-smart-farming-kaggriculture | 265/300 | 88.3% | 131/150 | 134/150 |
-| kaggriculture-ready-stock-earlier-sales | A06 R9C7 five-day | 664/1576 | 42.1% | 333/788 | 331/788 |
-| kaggriculture-ready-stock-earlier-sales | A06 R6 | 255/666 | 38.3% | 127/333 | 128/333 |
+| kaggriculture-ready-stock-earlier-sales | A06 R9C7 five-day | 666/1584 | 42.0% | 334/792 | 332/792 |
+| kaggriculture-ready-stock-earlier-sales | A06 R6 | 255/668 | 38.2% | 127/334 | 128/334 |
 | kaggriculture-ready-stock-earlier-sales | shop-aware-farming-kaggriculture | 281/322 | 87.3% | 140/161 | 141/161 |
 | kaggriculture-ready-stock-earlier-sales | kaggriculture-master-engine-v3 | 274/312 | 87.8% | 139/156 | 135/156 |
-| kaggriculture-ready-stock-earlier-sales | R03goosefix | 643/1562 | 41.2% | 321/781 | 322/781 |
-| kaggriculture-ready-stock-earlier-sales | DP Melon Cyborg V4  gooseoverflow | 299/690 | 43.3% | 150/345 | 149/345 |
+| kaggriculture-ready-stock-earlier-sales | R03goosefix | 645/1568 | 41.1% | 322/784 | 323/784 |
+| kaggriculture-ready-stock-earlier-sales | DP Melon Cyborg V4  gooseoverflow | 299/692 | 43.2% | 150/346 | 149/346 |
 
 </details>
 
@@ -1685,7 +1685,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
