@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 19, 2026 at 7:39 PM UTC
+Updated: Sep 19, 2026 at 7:41 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -20,6 +20,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | t23-kaggriculture-smart-adaptive-harvest | **PUBLIC** | 1-output-acc6eb3fcfe5 | archived |
 | kaggriculture-shop-router-reactive-v5 | **PUBLIC** | 1-output-0bc86bff40f7 | archived |
 | no-cow-left-behind-v40-autopsy-fix | **PUBLIC** | 3-output-b261c6f8eb2e | archived |
+| PPO league v2 update 148 | Team | update148-379edb08e913 | placement-rated |
 | 2842-two-identical-agents-90-points-apart | **PUBLIC** | 5-output-64b021b7a51e | active |
 | kaggriculture-shop-router-reactive-v4 | **PUBLIC** | 3-output-9bf89743ffb0 | archived |
 | TRI_A06_r12_r3_fix1 | Team | 819df830076c | active |
@@ -284,6 +285,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-0478c3cda8c1197c6029 | Complete | 384/384 |
 | placement-04d3aa4becda2007a793 | Complete | 384/384 |
 | placement-06a74bde72fad354f5b6 | Complete | 384/384 |
+| placement-095552b8d11f9e950130 | Complete | 1/1 |
 | placement-0af437c2cdce945e16ab | Provisional | 12/384 |
 | placement-1a265b2a1ce0a2fc8039 | Complete | 384/384 |
 | placement-1f8c404afcc08f9ae801 | Provisional | 70/384 |
@@ -1723,7 +1725,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
 - Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
