@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 19, 2026 at 8:14 PM UTC
+Updated: Sep 19, 2026 at 8:15 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -95,20 +95,20 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 19, 2026 at 8:14 PM UTC
+Last updated: Sep 19, 2026 at 8:15 PM UTC
 
-Status: running Â· Last sync: Sep 19, 2026 at 8:14 PM UTC
+Status: running Â· Last sync: Sep 19, 2026 at 8:15 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
 | the-2945-farm-96-vs-the-top-10-public-bots **PUBLIC** | 1911.0 | 3296 | 73.9% | ffc8942965 |
+| demand-preserving-turn-sale-timing **PUBLIC** | 1790.8 | 4496 | 57.5% | ffc8942965 |
 | R03goosefix | 1790.5 | 46686 | 58.9% | ffc8942965 |
-| demand-preserving-turn-sale-timing **PUBLIC** | 1790.4 | 4488 | 57.5% | ffc8942965 |
 | 2842-two-identical-agents-90-points-apart **PUBLIC** | 1789.4 | 26662 | 58.4% | ffc8942965 |
 | A06 R9C6 | 1789.3 | 47734 | 57.9% | ffc8942965 |
 | kaggriculture-ready-stock-earlier-sales **PUBLIC** | 1789.0 | 26464 | 58.4% | ffc8942965 |
-| A06 R9C7 five-day | 1785.3 | 57352 | 58.3% | ffc8942965 |
-| shop-aware-farming-kaggriculture **PUBLIC** | 1776.2 | 25686 | 56.6% | ffc8942965 |
+| A06 R9C7 five-day | 1785.3 | 57360 | 58.3% | ffc8942965 |
+| shop-aware-farming-kaggriculture **PUBLIC** | 1776.1 | 25686 | 56.6% | ffc8942965 |
 | kaggriculture-first-in-line-stock-into-income **PUBLIC** | 1775.7 | 4574 | 55.6% | ffc8942965 |
 | market-smart-farming-kaggriculture **PUBLIC** | 1767.2 | 24070 | 55.9% | ffc8942965 |
 | A06 R6 | 1765.7 | 60684 | 60.3% | ffc8942965 |
@@ -124,7 +124,7 @@ Status: running Â· Last sync: Sep 19, 2026 at 8:14 PM UTC
 | AFS R1 | 1638.8 | 47316 | 46.4% | ffc8942965 |
 | TRI_A08_r11_r3 | 1629.9 | 59036 | 45.0% | ffc8942965 |
 | AFS R2 | 1628.4 | 59012 | 44.8% | ffc8942965 |
-| PPO league v2 update 148 | 903.4 | 96 | 0.0% | ffc8942965 |
+| PPO league v2 update 148 | 904.2 | 96 | 0.0% | ffc8942965 |
 
 ## Retired agents
 
@@ -372,18 +372,18 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 276601/276601 |
+| cumulative-active-ffc8942965b1 | Provisional | 276609/276609 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 19, 2026 at 8:14 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 19, 2026 at 8:15 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
 | the-2945-farm-96-vs-the-top-10-public-bots | 1.21 | 2367 / 859 / 0 | 73.4% | 73.4% | 2,384 |
 | Day 9 planner selector | 0.71 | 23598 / 14236 / 1 | 62.4% | 62.4% | 2,870 |
-| demand-preserving-turn-sale-timing | 0.51 | 2512 / 1909 / 0 | 56.8% | 56.8% | -253 |
-| A06 R9C7 five-day | 0.48 | 20203 / 16360 / 0 | 55.3% | 55.3% | 1,870 |
+| demand-preserving-turn-sale-timing | 0.51 | 2518 / 1911 / 0 | 56.9% | 56.9% | -258 |
+| A06 R9C7 five-day | 0.48 | 20205 / 16366 / 0 | 55.2% | 55.2% | 1,871 |
 | A06 R9C6 | 0.45 | 17440 / 14642 / 842 | 53.0% | 54.2% | 1,603 |
 | A06 R6 | 0.43 | 17554 / 14114 / 840 | 54.0% | 55.3% | 1,627 |
 | R03goosefix | 0.42 | 19072 / 15442 / 10 | 55.2% | 55.3% | 50 |
@@ -495,7 +495,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 19, 2026 at 8:14 PM UTC
 | demand-preserving-turn-sale-timing | kaggriculture-master-engine-v3 | 42/42 | 100.0% | 21/21 | 21/21 |
 | demand-preserving-turn-sale-timing | kaggriculture-v47-reactive-market-coordination | 51/52 | 98.1% | 25/26 | 26/26 |
 | demand-preserving-turn-sale-timing | market-smart-farming-kaggriculture | 42/42 | 100.0% | 21/21 | 21/21 |
-| demand-preserving-turn-sale-timing | A06 R9C7 five-day | 296/627 | 47.2% | 147/314 | 149/313 |
+| demand-preserving-turn-sale-timing | A06 R9C7 five-day | 302/635 | 47.6% | 150/318 | 152/317 |
 | demand-preserving-turn-sale-timing | A06 R6 | 97/254 | 38.2% | 48/127 | 49/127 |
 | demand-preserving-turn-sale-timing | shop-aware-farming-kaggriculture | 53/54 | 98.1% | 26/27 | 27/27 |
 | demand-preserving-turn-sale-timing | R03goosefix | 116/266 | 43.6% | 58/133 | 58/133 |
@@ -826,7 +826,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 19, 2026 at 8:14 PM UTC
 | A06 R9C7 five-day | PPO league v2 update 148 | 4/4 | 100.0% | 2/2 | 2/2 |
 | A06 R9C7 five-day | 2842-two-identical-agents-90-points-apart | 1094/2244 | 48.8% | 549/1122 | 545/1122 |
 | A06 R9C7 five-day | TRI_A06_r12_r3_fix1 | 997/1930 | 51.7% | 498/965 | 499/965 |
-| A06 R9C7 five-day | demand-preserving-turn-sale-timing | 331/627 | 52.8% | 164/313 | 167/314 |
+| A06 R9C7 five-day | demand-preserving-turn-sale-timing | 333/635 | 52.4% | 165/317 | 168/318 |
 | A06 R9C7 five-day | Day 9 planner selector | 476/3890 | 12.2% | 242/1945 | 234/1945 |
 | A06 R9C7 five-day | AFS R1 | 638/752 | 84.8% | 315/376 | 323/376 |
 | A06 R9C7 five-day | the-2945-farm-96-vs-the-top-10-public-bots | 90/248 | 36.3% | 46/124 | 44/124 |
@@ -1724,9 +1724,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 1:56 PM UTC
 
 Same versions only; descriptive changes, not significance tests.
 
-- TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
+- AFS R1 vs AFS R2: -8.2 percentage points.
 - kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
