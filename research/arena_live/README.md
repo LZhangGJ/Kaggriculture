@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 19, 2026 at 7:49 PM UTC
+Updated: Sep 19, 2026 at 7:50 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -95,34 +95,34 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 19, 2026 at 7:48 PM UTC
+Last updated: Sep 19, 2026 at 7:50 PM UTC
 
-Status: running Â· Last sync: Sep 19, 2026 at 7:48 PM UTC
+Status: running Â· Last sync: Sep 19, 2026 at 7:50 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
 | the-2945-farm-96-vs-the-top-10-public-bots **PUBLIC** | 1900.6 | 3278 | 73.8% | ffc8942965 |
 | demand-preserving-turn-sale-timing **PUBLIC** | 1781.0 | 4464 | 57.5% | ffc8942965 |
-| R03goosefix | 1780.9 | 46682 | 58.9% | ffc8942965 |
+| R03goosefix | 1781.0 | 46682 | 58.9% | ffc8942965 |
 | 2842-two-identical-agents-90-points-apart **PUBLIC** | 1779.8 | 26656 | 58.4% | ffc8942965 |
 | A06 R9C6 | 1779.6 | 47704 | 57.9% | ffc8942965 |
-| kaggriculture-ready-stock-earlier-sales **PUBLIC** | 1779.5 | 26450 | 58.4% | ffc8942965 |
+| kaggriculture-ready-stock-earlier-sales **PUBLIC** | 1779.5 | 26452 | 58.4% | ffc8942965 |
 | A06 R9C7 five-day | 1775.7 | 57308 | 58.3% | ffc8942965 |
-| shop-aware-farming-kaggriculture **PUBLIC** | 1766.6 | 25674 | 56.6% | ffc8942965 |
-| kaggriculture-first-in-line-stock-into-income **PUBLIC** | 1765.4 | 4504 | 55.6% | ffc8942965 |
-| market-smart-farming-kaggriculture **PUBLIC** | 1757.7 | 24058 | 55.9% | ffc8942965 |
+| shop-aware-farming-kaggriculture **PUBLIC** | 1766.6 | 25676 | 56.6% | ffc8942965 |
+| kaggriculture-first-in-line-stock-into-income **PUBLIC** | 1765.5 | 4504 | 55.6% | ffc8942965 |
+| market-smart-farming-kaggriculture **PUBLIC** | 1757.8 | 24058 | 55.9% | ffc8942965 |
 | A06 R6 | 1756.1 | 60674 | 60.3% | ffc8942965 |
 | kaggriculture-v46-first-turn-microstructure-and-s **PUBLIC** | 1755.4 | 31862 | 55.1% | ffc8942965 |
-| kaggriculture-v47-reactive-market-coordination **PUBLIC** | 1735.5 | 24612 | 52.9% | ffc8942965 |
-| Day 9 planner selector | 1729.1 | 68834 | 56.8% | ffc8942965 |
-| DP Melon Cyborg V4  gooseoverflow | 1729.0 | 43296 | 53.7% | ffc8942965 |
-| kaggriculture-v48-clear-the-queue **PUBLIC** | 1728.3 | 24658 | 51.8% | ffc8942965 |
+| kaggriculture-v47-reactive-market-coordination **PUBLIC** | 1735.6 | 24612 | 52.9% | ffc8942965 |
+| Day 9 planner selector | 1729.1 | 68836 | 56.8% | ffc8942965 |
+| DP Melon Cyborg V4  gooseoverflow | 1729.1 | 43298 | 53.7% | ffc8942965 |
+| kaggriculture-v48-clear-the-queue **PUBLIC** | 1728.3 | 24660 | 51.8% | ffc8942965 |
 | DP Melon Cyborg R4  invincible | 1715.9 | 42388 | 50.9% | ffc8942965 |
 | kaggriculture-master-engine-v3 **PUBLIC** | 1710.1 | 4580 | 48.5% | ffc8942965 |
-| TRI_A06_r6_r3_bundle_fix1 | 1699.2 | 61224 | 54.5% | ffc8942965 |
+| TRI_A06_r6_r3_bundle_fix1 | 1699.2 | 61226 | 54.5% | ffc8942965 |
 | TRI_A06_r12_r3_fix1 | 1697.6 | 62118 | 54.2% | ffc8942965 |
 | AFS R1 | 1629.2 | 47312 | 46.4% | ffc8942965 |
-| TRI_A08_r11_r3 | 1620.2 | 59024 | 45.0% | ffc8942965 |
+| TRI_A08_r11_r3 | 1620.3 | 59024 | 45.0% | ffc8942965 |
 | AFS R2 | 1618.8 | 59006 | 44.8% | ffc8942965 |
 | PPO league v2 update 148 | 1500.0 | 0 | â€” | ffc8942965 |
 
@@ -1724,9 +1724,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 1:56 PM UTC
 
 Same versions only; descriptive changes, not significance tests.
 
-- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
+- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
