@@ -1,0 +1,6 @@
+{"step": 500, "improved": true, "loss": 0.24286988157700762, "full_action_exact": 0.94671630859375, "unit_exact": 0.9990422904380261, "market_exact": 0.9612866642610444}
+{"step": 1000, "improved": true, "loss": 0.24206531369577533, "full_action_exact": 0.9461669921875, "unit_exact": 0.9990422904380261, "market_exact": 0.9614413114078045}
+{"step": 1500, "improved": false, "loss": 0.24285766979573964, "full_action_exact": 0.94610595703125, "unit_exact": 0.9990422904380261, "market_exact": 0.9610804680653642}
+{"step": 2000, "improved": false, "loss": 0.24216387473734358, "full_action_exact": 0.94683837890625, "unit_exact": 0.9990422904380261, "market_exact": 0.9611577916387443}
+{"step": 2500, "improved": false, "loss": 0.24394796143405983, "full_action_exact": 0.94671630859375, "unit_exact": 0.9990422904380261, "market_exact": 0.9603072323315635}
+{"step": 3000, "improved": false, "loss": 0.24228521501777323, "full_action_exact": 0.9462890625, "unit_exact": 0.9990422904380261, "market_exact": 0.9606165266250838}

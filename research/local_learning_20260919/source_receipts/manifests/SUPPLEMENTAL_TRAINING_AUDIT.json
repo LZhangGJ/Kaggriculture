@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "teacher_sha256": "b1f9f2b47bc1d48b248017429fb5a17e8fec9abeb691b9d1be32076506a4bf05",
+  "groups": {
+    "public20": {
+      "games": 40,
+      "seeds": 20,
+      "samples": 28760,
+      "samples_per_seed": [
+        1438
+      ],
+      "unique_market_skeletons": 531,
+      "new_market_skeletons": 21,
+      "samples_with_new_market_skeleton": 40,
+      "ready_file": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_public20_packed\\READY.json"
+    },
+    "local20": {
+      "games": 80,
+      "seeds": 20,
+      "samples": 57520,
+      "samples_per_seed": [
+        2876
+      ],
+      "unique_market_skeletons": 570,
+      "new_market_skeletons": 31,
+      "samples_with_new_market_skeleton": 76,
+      "ready_file": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_local20_packed\\READY.json"
+    }
+  },
+  "supplemental_games": 120,
+  "supplemental_samples": 86280,
+  "expanded_training_seeds": 92,
+  "expanded_training_games": 1680,
+  "expanded_training_samples": 1207920,
+  "original_market_skeleton_classes": 1349,
+  "expanded_market_skeleton_classes": 1395,
+  "new_classes_require_expansion_before_full_label_training": true,
+  "seed_groups_disjoint": true,
+  "heldout_splits_disjoint": true,
+  "current_candidate_unchanged_and_not_trained_on_supplements": true,
+  "final_evaluation_pool": "Original15opponents, unchanged; local20supplement is teacher training data against2otherlocalreferencepolicies",
+  "created_unix": 1789585324.8310094
+}

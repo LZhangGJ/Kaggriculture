@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "a642906d6b8737869efc55dbb52512c633285ef8a2138cafadc248c865bc7120",
+  "initial_sha256": "2a31a9aa7aca82f22363f89c955c9a524875adfde5258ce2195efd4ac0823cb2",
+  "reference_patterns": 1349,
+  "initial_patterns": 1470,
+  "patterns": 1514,
+  "step": 6000,
+  "scope": "Training-only rare patterns. Before/after use identical teacher observations. Conditional quantity accuracy uses target types; this is not held-out performance or win rate.",
+  "new_match_seeds_used": 0,
+  "groups": [
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_public20_packed",
+      "cohort": "new_this_round",
+      "examples": 0,
+      "before": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      },
+      "after": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_public20_packed",
+      "cohort": "previously_expanded",
+      "examples": 40,
+      "before": {
+        "exact_pattern": 40,
+        "exact_market_action": 16,
+        "conditional_quantities_correct": 125,
+        "quantity_labels": 162
+      },
+      "after": {
+        "exact_pattern": 9,
+        "exact_market_action": 3,
+        "conditional_quantities_correct": 123,
+        "quantity_labels": 162
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_local20_packed",
+      "cohort": "new_this_round",
+      "examples": 0,
+      "before": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      },
+      "after": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\data\\supplemental_local20_packed",
+      "cohort": "previously_expanded",
+      "examples": 76,
+      "before": {
+        "exact_pattern": 75,
+        "exact_market_action": 38,
+        "conditional_quantities_correct": 247,
+        "quantity_labels": 294
+      },
+      "after": {
+        "exact_pattern": 22,
+        "exact_market_action": 12,
+        "conditional_quantities_correct": 244,
+        "quantity_labels": 294
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\learned_expand75_20260918\\data\\fresh_packed",
+      "cohort": "new_this_round",
+      "examples": 0,
+      "before": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      },
+      "after": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 0,
+        "quantity_labels": 0
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\learned_expand75_20260918\\data\\fresh_packed",
+      "cohort": "previously_expanded",
+      "examples": 83,
+      "before": {
+        "exact_pattern": 83,
+        "exact_market_action": 42,
+        "conditional_quantities_correct": 323,
+        "quantity_labels": 378
+      },
+      "after": {
+        "exact_pattern": 10,
+        "exact_market_action": 8,
+        "conditional_quantities_correct": 329,
+        "quantity_labels": 378
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\market_quantity75_20260918\\data\\fresh_packed",
+      "cohort": "new_this_round",
+      "examples": 44,
+      "before": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 152,
+        "quantity_labels": 181
+      },
+      "after": {
+        "exact_pattern": 44,
+        "exact_market_action": 44,
+        "conditional_quantities_correct": 181,
+        "quantity_labels": 181
+      }
+    },
+    {
+      "folder": "F:\\Kaggriculture\\experiments\\market_quantity75_20260918\\data\\fresh_packed",
+      "cohort": "previously_expanded",
+      "examples": 19,
+      "before": {
+        "exact_pattern": 11,
+        "exact_market_action": 3,
+        "conditional_quantities_correct": 47,
+        "quantity_labels": 62
+      },
+      "after": {
+        "exact_pattern": 3,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 47,
+        "quantity_labels": 62
+      }
+    }
+  ],
+  "observed_at_unix": 1789782026.1405299,
+  "totals": {
+    "new_this_round": {
+      "examples": 44,
+      "before": {
+        "exact_pattern": 0,
+        "exact_market_action": 0,
+        "conditional_quantities_correct": 152,
+        "quantity_labels": 181
+      },
+      "after": {
+        "exact_pattern": 44,
+        "exact_market_action": 44,
+        "conditional_quantities_correct": 181,
+        "quantity_labels": 181
+      }
+    },
+    "previously_expanded": {
+      "examples": 218,
+      "before": {
+        "exact_pattern": 209,
+        "exact_market_action": 99,
+        "conditional_quantities_correct": 742,
+        "quantity_labels": 896
+      },
+      "after": {
+        "exact_pattern": 44,
+        "exact_market_action": 23,
+        "conditional_quantities_correct": 743,
+        "quantity_labels": 896
+      }
+    }
+  }
+}

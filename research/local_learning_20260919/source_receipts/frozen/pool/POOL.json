@@ -1,0 +1,434 @@
+[
+  {
+    "id": "n01_premaananda108",
+    "ref": "premaananda108/rule-agent-ecobot-v7-arena-analytics",
+    "order": 1,
+    "version": 34,
+    "kernel_id": 131369359,
+    "status": "EXTRACTED",
+    "working": "opponents/n01_premaananda108",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "80fa8d4d240c9f05f337bc768f35f41eef52d0656eef0f687eb411aa67735d9b"
+    },
+    "runtime_sha256": "395e271328f1788d88d1786fcb7f54446cecf1a087ebd965c2f1b3abd68a56f7",
+    "main_sha256": "80fa8d4d240c9f05f337bc768f35f41eef52d0656eef0f687eb411aa67735d9b",
+    "votes": 41,
+    "score_evidence": {
+      "ref": "premaananda108/rule-agent-ecobot-v7-arena-analytics",
+      "title": "Rule Agent (EcoBot v7) + Arena + Analytics",
+      "score": 962.0,
+      "votes": 41,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-14T08:58:00.433Z",
+    "aliases": [
+      "premaananda108/rule-agent-ecobot-v7-arena-analytics"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n03_guruprasaathas111",
+    "ref": "guruprasaathas111/kaggriculture-master-engine-v3",
+    "order": 3,
+    "version": 13,
+    "kernel_id": 133017305,
+    "status": "EXTRACTED",
+    "working": "opponents/n03_guruprasaathas111",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "8951ff93742015cba535b125223cf2e541bb7b602080fc4584f30c2613d210f3"
+    },
+    "runtime_sha256": "786866173c3ff5b91b131e8244ab47d27b08407d718539c56e0253c0241c02f6",
+    "main_sha256": "8951ff93742015cba535b125223cf2e541bb7b602080fc4584f30c2613d210f3",
+    "votes": 74,
+    "score_evidence": {
+      "ref": "guruprasaathas111/kaggriculture-master-engine-v3",
+      "title": "Kaggriculture Master Engine V3",
+      "score": 2511.7,
+      "votes": 74,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-14T05:44:31.187Z",
+    "aliases": [
+      "guruprasaathas111/kaggriculture-master-engine-v3",
+      "reyhanksatria/kaggriculture-dynamic-route-agent",
+      "ahmedberatozer/kaggriculture-v41-review-candidate"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n05_aurax7",
+    "ref": "aurax7/kaggriculture-shop-router-reactive-v5",
+    "order": 5,
+    "version": 1,
+    "kernel_id": 134288201,
+    "status": "EXTRACTED",
+    "working": "opponents/n05_aurax7",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "ea4c28e64d77ddcdd5f08cb150b408de3c10f4bc9a18c6e681758b7da2e8f022"
+    },
+    "runtime_sha256": "326d0c8ee5b44ec16f113bffcde352137e516521958c51318f7a34d9bac62a39",
+    "main_sha256": "ea4c28e64d77ddcdd5f08cb150b408de3c10f4bc9a18c6e681758b7da2e8f022",
+    "votes": 12,
+    "score_evidence": {
+      "ref": "aurax7/kaggriculture-shop-router-reactive-v5",
+      "title": "Kaggriculture_shop_router_reactive_v5",
+      "score": 2743.6,
+      "votes": 12,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-14T04:31:10.073Z",
+    "aliases": [
+      "aurax7/kaggriculture-shop-router-reactive-v5"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n08_arsgorynich",
+    "ref": "arsgorynich/kaggriculture-v40-challenger",
+    "order": 8,
+    "version": 1,
+    "kernel_id": 134279236,
+    "status": "EXTRACTED",
+    "working": "opponents/n08_arsgorynich",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "546c42248996ea4bf9d13bbe713440f7428770b85fba92a886a20af4f3ce25d5"
+    },
+    "runtime_sha256": "9c9fa97ab2ddccf9fc4c0fc10f79c03eaec7eadc8742fef205db050ed62da010",
+    "main_sha256": "546c42248996ea4bf9d13bbe713440f7428770b85fba92a886a20af4f3ce25d5",
+    "votes": 4,
+    "score_evidence": {
+      "ref": "arsgorynich/kaggriculture-v40-challenger",
+      "title": "Kaggriculture V40 Challenger",
+      "score": 2611.2,
+      "votes": 4,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-14T02:50:39.207Z",
+    "aliases": [
+      "arsgorynich/kaggriculture-v40-challenger"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n14_alperen5252525",
+    "ref": "alperen5252525/kaggriculture-metacounter-r1-scored-agent",
+    "order": 14,
+    "version": 2,
+    "kernel_id": 134246361,
+    "status": "EXTRACTED",
+    "working": "opponents/n14_alperen5252525",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "85c8b53208a311e9101cf27ce02918e90b925e5b108d572a306d3b08a83dbdc3"
+    },
+    "runtime_sha256": "e5b9d995988ededb93bc6c31726d588981348889015c95c9a865f950819da6e0",
+    "main_sha256": "85c8b53208a311e9101cf27ce02918e90b925e5b108d572a306d3b08a83dbdc3",
+    "votes": 22,
+    "score_evidence": {
+      "ref": "alperen5252525/kaggriculture-metacounter-r1-scored-agent",
+      "title": "Kaggriculture Adaptive Harvest | Market-Aware Agent",
+      "score": 2648.2,
+      "votes": 22,
+      "has_linked_submission": true
+    },
+    "lastRunTime": "2026-09-13T22:03:43.617Z",
+    "aliases": [
+      "alperen5252525/kaggriculture-metacounter-r1-scored-agent"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n17_tetsutani",
+    "ref": "tetsutani/market-smart-farming-kaggriculture",
+    "order": 17,
+    "version": 14,
+    "kernel_id": 133536947,
+    "status": "EXTRACTED",
+    "working": "opponents/n17_tetsutani",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "708c7485fa964853b193f175dcd83020602c005e159ce82e38dc350b22e970c8"
+    },
+    "runtime_sha256": "abfacda001a17b4be3ac927fcf50c3707b218416fe8b49c4c6aa2dda4f035d96",
+    "main_sha256": "708c7485fa964853b193f175dcd83020602c005e159ce82e38dc350b22e970c8",
+    "votes": 80,
+    "score_evidence": {
+      "ref": "tetsutani/market-smart-farming-kaggriculture",
+      "title": "🌾 Market-Smart Farming | Kaggriculture",
+      "score": 2534.5,
+      "votes": 80,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-13T16:30:01.383Z",
+    "aliases": [
+      "tetsutani/market-smart-farming-kaggriculture",
+      "evgendvorkin/kaggriculture",
+      "ahmedberatozer/kaggriculture-v39-ready-before-the-rush"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n26_aurax7",
+    "ref": "aurax7/kaggriculture-shop-router-reactive-v4",
+    "order": 26,
+    "version": 3,
+    "kernel_id": 134144951,
+    "status": "EXTRACTED",
+    "working": "opponents/n26_aurax7",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "3dd123c5b484b533eb5b6d50a4d549433d715c92efb79a7dbe8e1e324c3c32e8"
+    },
+    "runtime_sha256": "4fdd672e3f5770214044ae4e5b2dc631a53f0bd7e6be9d2fef2625c0777fe220",
+    "main_sha256": "3dd123c5b484b533eb5b6d50a4d549433d715c92efb79a7dbe8e1e324c3c32e8",
+    "votes": 32,
+    "score_evidence": {
+      "ref": "aurax7/kaggriculture-shop-router-reactive-v4",
+      "title": "Kaggriculture_shop_router_reactive_v4",
+      "score": null,
+      "votes": 32,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-13T04:30:42.083Z",
+    "aliases": [
+      "aurax7/kaggriculture-shop-router-reactive-v4"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n30_ahmedberatozer",
+    "ref": "ahmedberatozer/kaggriculture-v38-smarter-feed-stronger-margins",
+    "order": 30,
+    "version": 2,
+    "kernel_id": 134101304,
+    "status": "EXTRACTED",
+    "working": "opponents/n30_ahmedberatozer",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "a2047ebd8ca5720221e1421529655d9c67a7b2fedb74e874c7d3c55a8970ac7e"
+    },
+    "runtime_sha256": "24d85f097da4b1fc9c5f73bff5f42d377d565b79396a4137874fbbb031917e9b",
+    "main_sha256": "a2047ebd8ca5720221e1421529655d9c67a7b2fedb74e874c7d3c55a8970ac7e",
+    "votes": 91,
+    "score_evidence": {
+      "ref": "ahmedberatozer/kaggriculture-v38-smarter-feed-stronger-margins",
+      "title": "Kaggriculture V38 Smarter Feed, Stronger Margins",
+      "score": 2625.2,
+      "votes": 91,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-12T20:04:38.597Z",
+    "aliases": [
+      "ahmedberatozer/kaggriculture-v38-smarter-feed-stronger-margins"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n32_pilkwang",
+    "ref": "pilkwang/kaggriculture-structured-economic-policy",
+    "order": 32,
+    "version": 44,
+    "kernel_id": 129273466,
+    "status": "EXTRACTED",
+    "working": "opponents/n32_pilkwang",
+    "pool": "recent_20260914",
+    "files": {
+      "candidate_config.json": "9e6ed4e18fa28cf51a63475b084baba7cdf3aee69757a457266bb903a162a04c",
+      "main.py": "21e4b79bbc7bca97ad1af6337322303987d73d95b963b08ebe80a67900bd5360",
+      "market_primitives.py": "dcfade4643811388ee0264046de23a1f69e44e72cb421e9fcac0930e6a48e67c",
+      "NOTICE.txt": "bdf3ce2bb14da2c07cba307966b984ea570f5e47a357ac2195ae599982504223",
+      "README.md": "b2710352de4b7bc3e677c06f49079d805dd7f5501f5d89bba78ed1fd4c16daa0",
+      "sheep_admission.py": "16b34ffd055dcfdab0ff728c0ac5524c1a83aacfae2f291eba56573ee4e4e4a4",
+      "upstream.py": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd"
+    },
+    "runtime_sha256": "93e25ece84198d51119fa9914fc91687c21d8bddb5a3beb597631307f463ed90",
+    "main_sha256": "21e4b79bbc7bca97ad1af6337322303987d73d95b963b08ebe80a67900bd5360",
+    "votes": 106,
+    "score_evidence": {
+      "ref": "pilkwang/kaggriculture-structured-economic-policy",
+      "title": "Kaggriculture: Structured Economic Policy",
+      "score": null,
+      "votes": 106,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-12T12:52:11.92Z",
+    "aliases": [
+      "pilkwang/kaggriculture-structured-economic-policy"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n41_lynnsakurai",
+    "ref": "lynnsakurai/farming-score-v4-a-better-shop",
+    "order": 41,
+    "version": 6,
+    "kernel_id": 132681375,
+    "status": "EXTRACTED",
+    "working": "opponents/n41_lynnsakurai",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "110134e6eb14e60e26e5967d5ac955a0c4e6a6748946ea450df6d9fa6be170d6"
+    },
+    "runtime_sha256": "4bd9607c5fd1c8e0ed35c096b008cd0ee40377e595234027bb75f37859ad917f",
+    "main_sha256": "110134e6eb14e60e26e5967d5ac955a0c4e6a6748946ea450df6d9fa6be170d6",
+    "votes": 28,
+    "score_evidence": {
+      "ref": "lynnsakurai/farming-score-v4-a-better-shop",
+      "title": "Farming Score V4: A Better Shop",
+      "score": 2341.3,
+      "votes": 28,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-12T08:31:48.037Z",
+    "aliases": [
+      "lynnsakurai/farming-score-v4-a-better-shop"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n44_ahmedberatozer",
+    "ref": "ahmedberatozer/more-yield-smarter-labor",
+    "order": 44,
+    "version": 1,
+    "kernel_id": 134015635,
+    "status": "EXTRACTED",
+    "working": "opponents/n44_ahmedberatozer",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c"
+    },
+    "runtime_sha256": "f2291b97f3ebde0aba6fed7942817009419d70bef85fc070a24522aa577fc525",
+    "main_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+    "votes": 104,
+    "score_evidence": {
+      "ref": "ahmedberatozer/more-yield-smarter-labor",
+      "title": "More Yield, Smarter Labor",
+      "score": 2205.5,
+      "votes": 104,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-12T00:09:07.387Z",
+    "aliases": [
+      "ahmedberatozer/more-yield-smarter-labor"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n46_ahmedberatozer",
+    "ref": "ahmedberatozer/kaggriculture-v25-new-production-routes-with-rea",
+    "order": 46,
+    "version": 2,
+    "kernel_id": 133560858,
+    "status": "EXTRACTED",
+    "working": "opponents/n46_ahmedberatozer",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "bb3109331d4087d5e5890515f9b1d1e0d4f9ea6015ee3d1b172a93b8b1d8dbb4"
+    },
+    "runtime_sha256": "990bdf49a70ef6fc4e083a5ae9cfff4f5194393cad6c821eab6dba9062b1fefb",
+    "main_sha256": "bb3109331d4087d5e5890515f9b1d1e0d4f9ea6015ee3d1b172a93b8b1d8dbb4",
+    "votes": 22,
+    "score_evidence": {
+      "ref": "ahmedberatozer/kaggriculture-v25-new-production-routes-with-rea",
+      "title": "Kaggriculture v25 — New Production Routes with Rea",
+      "score": 2195.2,
+      "votes": 22,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-11T19:07:50.4Z",
+    "aliases": [
+      "ahmedberatozer/kaggriculture-v25-new-production-routes-with-rea"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n49_ahmedberatozer",
+    "ref": "ahmedberatozer/kaggriculture-v23-adaptive-routes-smart-sales",
+    "order": 49,
+    "version": 4,
+    "kernel_id": 133479714,
+    "status": "EXTRACTED",
+    "working": "opponents/n49_ahmedberatozer",
+    "pool": "recent_20260914",
+    "files": {
+      "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "main.py": "6eb728a40cc55f7e497add6ea2946ce38b0389c24531a208219d48587435838e"
+    },
+    "runtime_sha256": "22166053016a5467f22c874896a3b7c0ecdf1b0f251d614f65e9d64047fda401",
+    "main_sha256": "6eb728a40cc55f7e497add6ea2946ce38b0389c24531a208219d48587435838e",
+    "votes": 46,
+    "score_evidence": {
+      "ref": "ahmedberatozer/kaggriculture-v23-adaptive-routes-smart-sales",
+      "title": "Kaggriculture V23 — Adaptive Routes & Smart Sales",
+      "score": null,
+      "votes": 46,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-11T19:05:04.713Z",
+    "aliases": [
+      "ahmedberatozer/kaggriculture-v23-adaptive-routes-smart-sales"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n51_ahmedberatozer",
+    "ref": "ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales",
+    "order": 51,
+    "version": 1,
+    "kernel_id": 133982869,
+    "status": "EXTRACTED",
+    "working": "opponents/n51_ahmedberatozer",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd"
+    },
+    "runtime_sha256": "9ef006a0777385f72bfb2f7edcba7f056db86daae78c346ae6ac05976561840e",
+    "main_sha256": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd",
+    "votes": 24,
+    "score_evidence": {
+      "ref": "ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales",
+      "title": "notebook34b6ce0685",
+      "score": 2450.4,
+      "votes": 24,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-11T17:08:21.753Z",
+    "aliases": [
+      "ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales"
+    ],
+    "classification": "new_or_updated_runtime"
+  },
+  {
+    "id": "n53_flexonafft",
+    "ref": "flexonafft/kaggriculture-most-powerfull-route",
+    "order": 53,
+    "version": 7,
+    "kernel_id": 133514404,
+    "status": "EXTRACTED",
+    "working": "opponents/n53_flexonafft",
+    "pool": "recent_20260914",
+    "files": {
+      "main.py": "294e7e4d9d4b97413646960d318043e0f9116ce58f42fe02afd4716614a4e96d"
+    },
+    "runtime_sha256": "1cf3b2ecb0dad666e5d4acc06b75842446346e53c9394278f474f0e3a5816f24",
+    "main_sha256": "294e7e4d9d4b97413646960d318043e0f9116ce58f42fe02afd4716614a4e96d",
+    "votes": 75,
+    "score_evidence": {
+      "ref": "flexonafft/kaggriculture-most-powerfull-route",
+      "title": "🌾 Kaggriculture | Most Powerfull Route",
+      "score": 2218.7,
+      "votes": 75,
+      "has_linked_submission": false
+    },
+    "lastRunTime": "2026-09-11T15:34:48.46Z",
+    "aliases": [
+      "flexonafft/kaggriculture-most-powerfull-route",
+      "ahmedberatozer/kaggriculture-v35-reactive-sales-sheep-expansi"
+    ],
+    "classification": "new_or_updated_runtime"
+  }
+]

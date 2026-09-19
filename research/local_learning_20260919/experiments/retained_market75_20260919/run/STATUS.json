@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "steps": 3000,
+  "best_step": 1000,
+  "patterns": 1554,
+  "old_patterns": 1514,
+  "baseline": {
+    "loss": 0.2460886071985442,
+    "full_action_exact": 0.94720458984375,
+    "unit_exact": 0.9990422904380261,
+    "market_exact": 0.9621887726171452
+  },
+  "selection": {
+    "best_step": 1000,
+    "best_metric": {
+      "loss": 0.24206531369577533,
+      "full_action_exact": 0.9461669921875,
+      "unit_exact": 0.9990422904380261,
+      "market_exact": 0.9614413114078045
+    },
+    "bad_checks": 4
+  },
+  "passes_regression_guard": true,
+  "frozen_unit_and_backbone_unchanged": true,
+  "heartbeat_unix": 1789784503.4232605
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "initial_logit_max_error": 1.1444091796875e-05,
+  "initial_action_parity": 8,
+  "prediction_independent_of_labels": true,
+  "new_class_gradient": 25.00160789489746,
+  "rare_training_loss_before": 9.514460563659668,
+  "rare_training_loss_after": 0.00014007081335876137,
+  "new_class_learning_steps": 30,
+  "market_quantity_gradient": 1.72187340259552,
+  "frozen_unit_and_backbone_unchanged": true,
+  "seed_splits_disjoint": true
+}

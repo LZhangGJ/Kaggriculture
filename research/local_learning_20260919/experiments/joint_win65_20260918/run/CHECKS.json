@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "label_leak": false,
+  "history_codec_parity": 8,
+  "jointly_trainable_gradients": {
+    "encoder.layers.0.linear1.weight": 0.46631836891174316,
+    "unit_head.weight": 0.0011398940114304423,
+    "pattern_head.2.weight": 1.2015966176986694,
+    "quantity_head.2.weight": 0.7395092844963074
+  }
+}

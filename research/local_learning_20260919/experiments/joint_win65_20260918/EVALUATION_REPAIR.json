@@ -1,0 +1,28 @@
+{
+  "reason": "Referee AttrDict could not be unpickled by the model process. No model action or completed match existed before failure.",
+  "repair": "Serialize observations as plain JSON values at the worker boundary",
+  "failed_evaluation": "evaluation/development_step500",
+  "aborted_jobs": [
+    [
+      581492441,
+      "n08_arsgorynich",
+      0
+    ],
+    [
+      558544443,
+      "n51_ahmedberatozer",
+      0
+    ]
+  ],
+  "replacement_seeds": {
+    "581492441": 575564559,
+    "558544443": 472032654
+  },
+  "previously_started_seeds_retired": true,
+  "source_metadata_files": 183,
+  "excluded_positive_integers": 13010,
+  "original_plan_sha256": "0989982b9442a8b411661ecca321270d480b37e5759036a01578ee6383e927e3",
+  "checkpoints_unchanged": true,
+  "final_panel_unchanged_and_unopened": true,
+  "time_unix": 1789720608.9830503
+}

@@ -1,0 +1,12 @@
+{"step": 500, "improved": true, "loss": 0.25793057158330157, "full_action_exact": 0.94671630859375, "unit_exact": 0.9990422904380261, "market_exact": 0.959765967317903}
+{"step": 1000, "improved": true, "loss": 0.25432356859960237, "full_action_exact": 0.9468994140625, "unit_exact": 0.9990422904380261, "market_exact": 0.960822722820764}
+{"step": 1500, "improved": true, "loss": 0.25155522235240824, "full_action_exact": 0.94659423828125, "unit_exact": 0.9990422904380261, "market_exact": 0.9608484973452239}
+{"step": 2000, "improved": true, "loss": 0.2507634777915655, "full_action_exact": 0.9459228515625, "unit_exact": 0.9990422904380261, "market_exact": 0.9599721635135832}
+{"step": 2500, "improved": true, "loss": 0.248906852462369, "full_action_exact": 0.94683837890625, "unit_exact": 0.9990422904380261, "market_exact": 0.9612351152121243}
+{"step": 3000, "improved": true, "loss": 0.24776996456694178, "full_action_exact": 0.94732666015625, "unit_exact": 0.9990422904380261, "market_exact": 0.9614928604567246}
+{"step": 3500, "improved": true, "loss": 0.24670640234762686, "full_action_exact": 0.946533203125, "unit_exact": 0.9990422904380261, "market_exact": 0.9611062425898242}
+{"step": 4000, "improved": true, "loss": 0.24500366132213003, "full_action_exact": 0.9471435546875, "unit_exact": 0.9990422904380261, "market_exact": 0.9618279292747048}
+{"step": 4500, "improved": true, "loss": 0.24443468214758468, "full_action_exact": 0.94708251953125, "unit_exact": 0.9990422904380261, "market_exact": 0.9620598999948451}
+{"step": 5000, "improved": true, "loss": 0.24415510761923542, "full_action_exact": 0.94708251953125, "unit_exact": 0.9990422904380261, "market_exact": 0.9618537037991649}
+{"step": 5500, "improved": true, "loss": 0.24397907871434654, "full_action_exact": 0.94696044921875, "unit_exact": 0.9990422904380261, "market_exact": 0.9618537037991649}
+{"step": 6000, "improved": true, "loss": 0.2435655656572635, "full_action_exact": 0.94720458984375, "unit_exact": 0.9990422904380261, "market_exact": 0.9621887726171452}

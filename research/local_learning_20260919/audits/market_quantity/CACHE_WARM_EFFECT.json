@@ -1,0 +1,21 @@
+{
+  "status": "OBSERVED",
+  "measured_unix": 1789781570.7898355,
+  "bytes_read": 10803637888,
+  "warm_seconds": 125.03986719999989,
+  "before_steps": [
+    25,
+    75
+  ],
+  "after_steps": [
+    125,
+    1825
+  ],
+  "before_seconds_per_step": 2.316789577999998,
+  "after_seconds_per_step": 0.06401195947058821,
+  "observed_speed_ratio": 36.19307387496083,
+  "trainer_code_hashes_unchanged": true,
+  "trainer_restarted": false,
+  "new_match_seeds_used": 0,
+  "scope": "Observed wall-clock intervals on the same training process; includes scheduled validation and is not a controlled hardware benchmark"
+}

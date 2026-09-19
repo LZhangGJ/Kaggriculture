@@ -1,0 +1,89 @@
+{
+  "status": "COMPLETE",
+  "completed": 480,
+  "games": 480,
+  "wins": 358,
+  "ties": 0,
+  "errors": 0,
+  "strict_win_rate": 0.7458333333333333,
+  "score_rate": 0.7458333333333333,
+  "meets_65": true,
+  "checkpoint_sha256": "cff21b96c0c41b4dadedd23cafbba91d9b5780d4280d644dee3b107f24d57914",
+  "opponents": {
+    "n01_premaananda108": {
+      "games": 32,
+      "wins": 24,
+      "ties": 0
+    },
+    "n03_guruprasaathas111": {
+      "games": 32,
+      "wins": 23,
+      "ties": 0
+    },
+    "n05_aurax7": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n08_arsgorynich": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n14_alperen5252525": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n17_tetsutani": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n26_aurax7": {
+      "games": 32,
+      "wins": 20,
+      "ties": 0
+    },
+    "n30_ahmedberatozer": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n32_pilkwang": {
+      "games": 32,
+      "wins": 22,
+      "ties": 0
+    },
+    "n41_lynnsakurai": {
+      "games": 32,
+      "wins": 27,
+      "ties": 0
+    },
+    "n44_ahmedberatozer": {
+      "games": 32,
+      "wins": 24,
+      "ties": 0
+    },
+    "n46_ahmedberatozer": {
+      "games": 32,
+      "wins": 21,
+      "ties": 0
+    },
+    "n49_ahmedberatozer": {
+      "games": 32,
+      "wins": 30,
+      "ties": 0
+    },
+    "n51_ahmedberatozer": {
+      "games": 32,
+      "wins": 27,
+      "ties": 0
+    },
+    "n53_flexonafft": {
+      "games": 32,
+      "wins": 30,
+      "ties": 0
+    }
+  }
+}

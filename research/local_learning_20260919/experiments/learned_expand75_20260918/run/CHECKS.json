@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "initial_logit_max_error": 1.1444091796875e-05,
+  "initial_action_parity": 8,
+  "prediction_independent_of_labels": true,
+  "new_class_gradient": 24.274818420410156,
+  "rare_training_loss_before": 9.51993179321289,
+  "rare_training_loss_after": 1.8574138879776,
+  "new_class_learning_steps": 30,
+  "frozen_unit_and_backbone_unchanged": true,
+  "seed_splits_disjoint": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "2a31a9aa7aca82f22363f89c955c9a524875adfde5258ce2195efd4ac0823cb2",
+  "original_forward_logit_max_error": 0.0,
+  "initial_action_parity": 8,
+  "probe_training_samples": 16,
+  "market_quantity_labels": 78,
+  "learning_check_steps": 30,
+  "quantity_loss_before": 0.9767111539840698,
+  "quantity_loss_after": 0.0007744504837319255,
+  "positive_gradients": {
+    "market_quantity_head.0.weight": 1.6821763515472412,
+    "market_quantity_head.0.bias": 0.08281136304140091,
+    "market_quantity_head.2.weight": 1.82675039768219,
+    "market_quantity_head.2.bias": 0.058037169277668
+  },
+  "unit_actions_unchanged": true,
+  "market_types_unchanged": true,
+  "all_frozen_tensors_unchanged": true,
+  "parameters": 2704095,
+  "trainable_parameters": 290538,
+  "model_family": "Separate market quantity MLP copied from shared quantity head",
+  "new_match_seeds_used": 0,
+  "inference_uses_teacher": false,
+  "scope": "Architecture and small training-sample learnability check only; no candidate acceptance or win-rate claim",
+  "checked_at_unix": 1789731249.1776814
+}

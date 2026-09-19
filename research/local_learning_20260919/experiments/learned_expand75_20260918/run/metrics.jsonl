@@ -1,0 +1,12 @@
+{"step": 500, "improved": true, "loss": 0.25300696434533165, "full_action_exact": 0.946044921875, "unit_exact": 0.9990422904380261, "market_exact": 0.9591989277797824}
+{"step": 1000, "improved": true, "loss": 0.2500589221708651, "full_action_exact": 0.9451904296875, "unit_exact": 0.9990422904380261, "market_exact": 0.9596370946956029}
+{"step": 1500, "improved": false, "loss": 0.25090129384398097, "full_action_exact": 0.944580078125, "unit_exact": 0.9990422904380261, "market_exact": 0.9566214753337801}
+{"step": 2000, "improved": true, "loss": 0.24437880382811272, "full_action_exact": 0.9453125, "unit_exact": 0.9990422904380261, "market_exact": 0.9586318882416619}
+{"step": 2500, "improved": true, "loss": 0.24237814827392867, "full_action_exact": 0.94580078125, "unit_exact": 0.9990422904380261, "market_exact": 0.9603845559049435}
+{"step": 3000, "improved": false, "loss": 0.2432208765562791, "full_action_exact": 0.9461669921875, "unit_exact": 0.9990422904380261, "market_exact": 0.9602041342337234}
+{"step": 3500, "improved": true, "loss": 0.24012909418399886, "full_action_exact": 0.94696044921875, "unit_exact": 0.9990422904380261, "market_exact": 0.9615444095056446}
+{"step": 4000, "improved": true, "loss": 0.23920421965658534, "full_action_exact": 0.946533203125, "unit_exact": 0.9990422904380261, "market_exact": 0.9600752616114233}
+{"step": 4500, "improved": true, "loss": 0.23874987446333762, "full_action_exact": 0.94622802734375, "unit_exact": 0.9990422904380261, "market_exact": 0.9604361049538636}
+{"step": 5000, "improved": true, "loss": 0.23775521462357574, "full_action_exact": 0.94622802734375, "unit_exact": 0.9990422904380261, "market_exact": 0.9603072323315635}
+{"step": 5500, "improved": true, "loss": 0.2365656555680289, "full_action_exact": 0.94732666015625, "unit_exact": 0.9990422904380261, "market_exact": 0.9610546935409042}
+{"step": 6000, "improved": true, "loss": 0.23597336345710573, "full_action_exact": 0.94732666015625, "unit_exact": 0.9990422904380261, "market_exact": 0.9612608897365844}

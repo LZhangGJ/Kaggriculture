@@ -1,0 +1,119 @@
+{
+  "heartbeat_unix": 1789783845.3456511,
+  "status": "DEVELOPMENT_BELOW_TARGET",
+  "development": {
+    "status": "COMPLETE",
+    "completed": 240,
+    "games": 240,
+    "wins": 169,
+    "ties": 0,
+    "errors": 0,
+    "strict_win_rate": 0.7041666666666667,
+    "score_rate": 0.7041666666666667,
+    "meets_target": false,
+    "checkpoint_sha256": "a642906d6b8737869efc55dbb52512c633285ef8a2138cafadc248c865bc7120",
+    "opponents": {
+      "n01_premaananda108": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0
+      },
+      "n03_guruprasaathas111": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0
+      },
+      "n05_aurax7": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0
+      },
+      "n08_arsgorynich": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0
+      },
+      "n14_alperen5252525": {
+        "games": 16,
+        "wins": 6,
+        "ties": 0
+      },
+      "n17_tetsutani": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0
+      },
+      "n26_aurax7": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0
+      },
+      "n30_ahmedberatozer": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0
+      },
+      "n32_pilkwang": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0
+      },
+      "n41_lynnsakurai": {
+        "games": 16,
+        "wins": 9,
+        "ties": 0
+      },
+      "n44_ahmedberatozer": {
+        "games": 16,
+        "wins": 11,
+        "ties": 0
+      },
+      "n46_ahmedberatozer": {
+        "games": 16,
+        "wins": 8,
+        "ties": 0
+      },
+      "n49_ahmedberatozer": {
+        "games": 16,
+        "wins": 14,
+        "ties": 0
+      },
+      "n51_ahmedberatozer": {
+        "games": 16,
+        "wins": 13,
+        "ties": 0
+      },
+      "n53_flexonafft": {
+        "games": 16,
+        "wins": 12,
+        "ties": 0
+      }
+    }
+  },
+  "training": {
+    "status": "COMPLETE",
+    "steps": 6000,
+    "best_step": 6000,
+    "patterns": 1514,
+    "old_patterns": 1470,
+    "baseline": {
+      "loss": 0.24867875234349412,
+      "full_action_exact": 0.94732666015625,
+      "unit_exact": 0.9990422904380261,
+      "market_exact": 0.9612351152121243
+    },
+    "selection": {
+      "best_step": 6000,
+      "best_metric": {
+        "loss": 0.2435655656572635,
+        "full_action_exact": 0.94720458984375,
+        "unit_exact": 0.9990422904380261,
+        "market_exact": 0.9621887726171452
+      },
+      "bad_checks": 0
+    },
+    "passes_regression_guard": true,
+    "frozen_unit_and_backbone_unchanged": true,
+    "heartbeat_unix": 1789781849.518593
+  }
+}

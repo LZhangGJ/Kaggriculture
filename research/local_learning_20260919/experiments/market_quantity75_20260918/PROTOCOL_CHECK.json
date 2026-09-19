@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unique_seeds": 1260,
+  "seed_overlap": 0,
+  "balanced_all_15_opponents_and_both_seats": true,
+  "strictly_more_than_75_boundary": true,
+  "draws_never_wins": true,
+  "runtime_errors_reject": true,
+  "incomplete_results_never_accept": true,
+  "previous_pipeline_gate": true,
+  "python_syntax": true
+}
