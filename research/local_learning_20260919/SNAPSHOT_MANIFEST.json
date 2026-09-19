@@ -4,8 +4,8 @@
   "no_weights_or_replay_arrays": true,
   "no_private_credentials": true,
   "reference_commit": "3741085070b4347f0737d3b8e7948baa87be4d0b",
-  "file_count": 141,
-  "bytes": 2811347,
+  "file_count": 143,
+  "bytes": 2819551,
   "files": [
     {
       "path": "experiments/joint_win65_20260918/check_protocol.py",
@@ -852,6 +852,19 @@
       "source": "F:\\Kaggriculture\\experiments\\local_teacher_bc_20260917\\manifests\\SUPPLEMENTAL_TRAINING_AUDIT.json",
       "bytes": 1576,
       "sha256": "d2e8ea477eb64aeaffe986975221a5d0ba2f38ae17688ec881b3ab2ac798aa97"
+    },
+    {
+      "path": "audits/retained_market/CANDIDATE_AUDIT.json",
+      "source": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\retained_market75_20260919\\CANDIDATE_AUDIT.json",
+      "bytes": 1568,
+      "sha256": "ca89ac2bf7da07e91428f9ae63459bb78f4b85fad42107a4d9258dfc611861af"
+    },
+    {
+      "path": "audits/retained_market/LEARNED_MARKET_COMPARISON.json",
+      "source": "C:\\Users\\DHU_Z\\OneDrive\\文档\\ChatGPT\\kaggleculture\\retained_market75_20260919\\LEARNED_MARKET_COMPARISON.json",
+      "bytes": 6636,
+      "sha256": "b915626f45cba74659f8cc6a1878d23b52f41a5277563b83e5dc7c80bc7c2cf3"
     }
-  ]
+  ],
+  "supplemented_utc": "2026-09-19T02:28:58.177658+00:00"
 }

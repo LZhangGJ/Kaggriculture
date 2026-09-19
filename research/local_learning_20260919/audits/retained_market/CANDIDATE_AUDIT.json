@@ -1,0 +1,48 @@
+{
+  "status": "PASS_PRECONDITIONS_RESULTS_PENDING",
+  "goal_complete": false,
+  "observed_at_unix": 1789784849.7906842,
+  "candidate_sha256": "57e36a6526a8ec38927c9d5302a267a7dbbaa02ca458ed26ae78ae3e9eb56970",
+  "trained_step": 1000,
+  "old_patterns": 1514,
+  "patterns": 1554,
+  "changed_tensors": [
+    "patterns",
+    "pattern_codes",
+    "pattern_head.0.weight",
+    "pattern_head.0.bias",
+    "pattern_head.2.weight",
+    "pattern_head.2.bias",
+    "pattern_embedding.weight",
+    "market_quantity_head.0.weight",
+    "market_quantity_head.0.bias",
+    "market_quantity_head.2.weight",
+    "market_quantity_head.2.bias"
+  ],
+  "trained_market_quantity_tensors": [
+    "market_quantity_head.0.bias",
+    "market_quantity_head.0.weight",
+    "market_quantity_head.2.bias",
+    "market_quantity_head.2.weight"
+  ],
+  "code_and_pool_hashes_match": true,
+  "frozen_unit_and_backbone_unchanged": true,
+  "training_seeds": 272,
+  "unique_new_seeds": 1260,
+  "evaluation_seed_overlap": 0,
+  "teacher_runtime_fallback": false,
+  "result_source": "Runner SUMMARY.json only; no replay win-rate recheck",
+  "development_summary_at_audit": {
+    "status": "RUNNING",
+    "completed": 44,
+    "games": 240,
+    "wins": 25,
+    "ties": 0,
+    "errors": 0,
+    "strict_win_rate": null,
+    "score_rate": null,
+    "meets_target": false,
+    "checkpoint_sha256": "57e36a6526a8ec38927c9d5302a267a7dbbaa02ca458ed26ae78ae3e9eb56970"
+  },
+  "final_acceptance": "Pending: complete 960 games, at least 721 pure wins, zero runtime errors"
+}
