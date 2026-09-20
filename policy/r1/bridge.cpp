@@ -2,7 +2,7 @@
 #include "observation_codec.hpp"
 #include <cstring>
 struct Handle {triad::SearchController policy;std::vector<triad::Proposal>prepared;std::vector<double>prepared_scores;std::vector<std::array<double,5>>prepared_horizons;std::vector<std::string>prepared_names;std::vector<bool>prepared_key_unique;int prepared_day=-1;std::string text;explicit Handle(triad::Settings s):policy(s){}};
-extern "C" void*td_new(const double*x,size_t n){try{triad::Settings s;if(n){if(n!=triad::SETTINGS_COUNT)return nullptr;for(size_t i=0;i<n;i++)if(!std::isfinite(x[i]))return nullptr;std::memcpy(&s,x,sizeof(s));}if(s.max_hands<0||s.max_hands>15||s.max_land<1||s.max_land>4||s.max_animals<0||s.max_animals>75||s.labor_hours<1||s.labor_hours>24||s.portfolio_swaps<0||s.portfolio_swaps>2||s.portfolio_swaps!=std::floor(s.portfolio_swaps)||s.portfolio_swap_min_gain<0)return nullptr;return new Handle(s);}catch(...){return nullptr;}}
+extern "C" void*td_new(const double*x,size_t n){try{triad::Settings s;if(n){if(n!=triad::SETTINGS_COUNT&&n!=triad::SETTINGS_COUNT-1)return nullptr;for(size_t i=0;i<n;i++)if(!std::isfinite(x[i]))return nullptr;std::memcpy(&s,x,n*sizeof(double));}if((s.marginal_value!=0&&s.marginal_value!=1)||s.max_hands<0||s.max_hands>15||s.max_land<1||s.max_land>4||s.max_animals<0||s.max_animals>75||s.labor_hours<1||s.labor_hours>24||s.portfolio_swaps<0||s.portfolio_swaps>2||s.portfolio_swaps!=std::floor(s.portfolio_swaps)||s.portfolio_swap_min_gain<0)return nullptr;return new Handle(s);}catch(...){return nullptr;}}
 extern "C" void td_delete(void*p){delete static_cast<Handle*>(p);}
 extern "C" const char*td_debug(void*p){auto&h=*static_cast<Handle*>(p);if(h.text.rfind("ERROR",0)!=0)h.text=h.policy.debug();return h.text.c_str();}
 extern "C" int td_act(void*p,const dp7::View*v,fastkag::PlayerAction*out){auto&h=*static_cast<Handle*>(p);try{*out=h.policy.act(*v);return 0;}catch(const std::exception&e){h.text=std::string("ERROR: ")+e.what();return -1;}}
@@ -98,3 +98,4 @@ extern "C" const char* td_obligations_json(void*p,const double*input,size_t coun
   h.text=s.str();return h.text.c_str();
  }catch(const std::exception&e){h.text=std::string("ERROR: ")+e.what();return h.text.c_str();}
 }
+

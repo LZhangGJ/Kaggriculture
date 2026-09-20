@@ -27,7 +27,7 @@ class RawAgent:
         self.lib = ctypes.CDLL(str(binary))
         self.lib.td_settings_count.restype = ctypes.c_size_t
         count = self.lib.td_settings_count()
-        if count not in (len(module._ORDER), len(module._ORDER) - 2):
+        if count not in (len(module._ORDER), len(module._ORDER) - 1, len(module._ORDER) - 3):
             raise RuntimeError("unexpected settings ABI")
         values = [float(config[key]) for key in module._ORDER[:count]]
         self.lib.td_new.argtypes = [ctypes.POINTER(ctypes.c_double), ctypes.c_size_t]
@@ -142,3 +142,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

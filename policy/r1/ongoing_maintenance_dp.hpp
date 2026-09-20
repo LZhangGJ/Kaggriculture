@@ -7,7 +7,7 @@ namespace competitive {
 struct OngoingMaintenanceDP {
  struct Choice {double value=-1e100;bool water=false,fertilize=false;};
  int kind=2,birth=0,begin=0,end=29,mode=2;
- double work=3.;std::array<double,30> price{},fert{};
+ double work=3.,discount=1.;std::array<double,30> price{},fert{};
  double memo[30][2][4]{};bool seen[30][2][4]{};
  bool production(int next)const{int ds=next-birth-dp7::first[kind];return ds>=0&&ds%dp7::interval[kind]==0&&ds/dp7::interval[kind]<4;}
  bool legacy_water(int d,int dry)const{return dry>=1||production(d+1);}
@@ -22,9 +22,9 @@ struct OngoingMaintenanceDP {
   double v=-work*(int(w)+int(z))-(z?fert[d]:0.);
   if(!w&&dry>=1)return v; // death before next dawn's production
   int active=z?3:f;bool event=production(d+1);
-  if(event)v+=(1+(w&&active>0))*price[d+1];
+  if(event)v+=discount*(1+(w&&active>0))*price[d+1];
   int last=birth+dp7::first[kind]+3*dp7::interval[kind];
-  if(d+1<std::min(end,last))v+=solve(d+1,w?0:dry+1,std::max(0,active-1));
+  if(d+1<std::min(end,last))v+=discount*solve(d+1,w?0:dry+1,std::max(0,active-1));
   return v;
  }
  double solve(int d,int dry,int f){
@@ -41,3 +41,4 @@ struct OngoingMaintenanceDP {
  }
 };
 }
+

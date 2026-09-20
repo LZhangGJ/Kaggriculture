@@ -9,6 +9,7 @@ import json
 import multiprocessing as mp
 import os
 import sys
+import time
 from pathlib import Path
 
 os.environ["TORCH_DEVICE_BACKEND_AUTOLOAD"] = "0"
@@ -56,6 +57,8 @@ def play(task):
     policy = policy_module.create_agent() if hasattr(policy_module, "create_agent") else policy_module.agent
     opponent = load(bot_path, f"opponent_{bot}_{seed}_{seat}").agent
     opponent_takes_configuration = len(inspect.signature(opponent).parameters) > 1
+    start = time.perf_counter()
+    decision_seconds = 0.0
     env = make("kaggriculture", configuration={"seed": seed}, debug=True)
     state = env.reset()
     try:
@@ -66,14 +69,19 @@ def play(task):
                 if observation.get("step") is None:
                     observation["step"] = observation.get("day", 0) * 24 + observation.get("hour", 0)
                 observation["player"] = player
-                actions.append(policy(observation, env.configuration) if player == seat else
-                               opponent(observation, env.configuration) if opponent_takes_configuration else
-                               opponent(observation))
+                if player == seat:
+                    decision_start = time.perf_counter()
+                    actions.append(policy(observation, env.configuration))
+                    decision_seconds += time.perf_counter() - decision_start
+                else:
+                    actions.append(opponent(observation, env.configuration) if opponent_takes_configuration else
+                                   opponent(observation))
             state = env.step(actions)
         farms = json.loads(json.dumps(state[0].observation))["farms"]
         own, rival = farms[seat]["money"], farms[1 - seat]["money"]
         return {"label": label, "bot": bot, "seed": seed, "seat": seat,
-                "cash": own, "opponent_cash": rival, "margin": own - rival, "error": None}
+                "cash": own, "opponent_cash": rival, "margin": own - rival, "error": None,
+                "wall_seconds": time.perf_counter() - start, "decision_seconds": decision_seconds}
     except Exception as exc:
         return {"label": label, "bot": bot, "seed": seed, "seat": seat, "error": repr(exc)}
     finally:
@@ -203,3 +211,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
