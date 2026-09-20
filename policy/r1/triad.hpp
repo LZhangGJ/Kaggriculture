@@ -2,6 +2,7 @@
 // Triad DP: autonomous economic intent -> conditional calendar -> live executor.
 // No J7 macros, opponent identities, tape library, live Simulator or RNG access.
 #include "planner.hpp"
+#include "marginal_value.hpp"
 #include "animal_service_dp.hpp"
 #include "ongoing_maintenance_dp.hpp"
 #include "finite_fertilizer.hpp"
@@ -34,6 +35,8 @@ struct Settings {
  // Opt-in bounded coordinate improvement of today's new, cash-funded projects.
  // Zero preserves the released greedy portfolio exactly.
  double portfolio_swaps=0,portfolio_swap_min_gain=0;
+ // Opt-in: all nine product signals are derivatives of the portfolio objective.
+ double marginal_value=0;
 };
 constexpr int SETTINGS_COUNT=sizeof(Settings)/sizeof(double);
 struct Commitment {
@@ -49,10 +52,10 @@ struct Controller {
  int portfolio_swap_trials=0,portfolio_swap_accepts=0,portfolio_pair_trials=0,portfolio_pair_accepts=0;
  double portfolio_swap_gain=0,portfolio_pair_gain=0;
  int previous_step=-1;std::array<int,12>previous_stock{};
- Flow prices{};Asset portfolio{};std::array<Asset,100>paths{};
+ Flow prices{},generation_values{};int marginal_value_updates=0;Asset portfolio{};std::array<Asset,100>paths{};
  std::array<int,100>release{},successor{},length{};
  double predicted=0;
- std::array<std::array<int8_t,2>,100>forecast_service{};
+ std::array<std::array<int8_t,2>,100>forecast_service{},forecast_crop_service{};
 #if R2_FINITE_FERTILIZER
  std::array<int8_t,100>finite_first_fertilizer{};
 #endif
@@ -87,6 +90,12 @@ struct Controller {
   p.finite_fertilizer=R2_FINITE_FERTILIZER&&s.crop_fert>0;
   p.shared_task_atoms_v2=true;
  }
+ const Flow& path_prices()const{return s.marginal_value>0?generation_values:prices;}
+ double update_value(const View&o){
+  double result=model.value(o,portfolio,&prices);
+  if(s.marginal_value>0){generation_values=MarginalValue::compute(model,o,portfolio,s.discount);marginal_value_updates++;}
+  return result;
+ }
  double scalar(const Asset&a,const Flow&px,int start)const{
   double v=0;for(int d=start;d<30;d++){
    double x=a.fixed[d]-s.work_price*a.labor[d];for(int i=0;i<9;i++)x+=a.f[d][i]*px[d][i];
@@ -95,7 +104,7 @@ struct Controller {
  }
  // Exact crop-state recurrence under the declared maintenance/harvest policy.
  // Resource and route feasibility is a separate admission stage, never assumed.
- Asset crop(int k,int birth,int pos,int finish,const Flow&px,const Tile*existing=nullptr,bool*first_fertilizer=nullptr,int committed_water=-1,int committed_fertilizer=-1)const{
+ Asset crop(int k,int birth,int pos,int finish,const Flow&px,const Tile*existing=nullptr,bool*first_fertilizer=nullptr,int committed_water=-1,int committed_fertilizer=-1,std::array<int8_t,2>*first_service=nullptr)const{
   if(first_fertilizer)*first_fertilizer=false;
   int begin=model.day;Asset a;a.kind=k;
   if(birth>=30||finish>29||finish<begin){a.end=30;return a;}
@@ -105,7 +114,7 @@ struct Controller {
   int fert=existing?existing->fertilized_until_day:-1;
   int yield=existing?existing->yield_units:(ongoing(k)?0:1);
   const double travel=.06*near(pos)+.10;
-  OngoingMaintenanceDP md;md.kind=k;md.birth=birth;md.begin=start;md.mode=2;md.work=s.work_price+travel;
+  OngoingMaintenanceDP md;md.kind=k;md.birth=birth;md.begin=start;md.mode=2;md.work=s.work_price+travel;md.discount=s.marginal_value>0?1/(1+s.discount):1.;
   for(int d=0;d<30;d++){md.price[d]=px[d][k];md.fert[d]=px[d][F];}
   for(int d=start;d<=finish;d++){
    bool visit=false,watered=existing&&d==begin&&existing->watered_today;
@@ -124,7 +133,7 @@ struct Controller {
     int last=k==W?4:k==C?3:12;bool window=age>=(last+1)/2&&age<=last;
     w=!watered&&(dry>=1||(window&&yield<(k==C?4:6)));
 #if R2_FINITE_FERTILIZER
-    z=s.crop_fert>0&&finite_fertilizer_choice(k,age,finish-birth,yield,w,watered,fert-d+1,px[finish][k],px[d][F],s.work_price+travel);
+    z=s.crop_fert>0&&finite_fertilizer_choice(k,age,finish-birth,yield,w,watered,fert-d+1,px[finish][k]/(s.marginal_value>0?std::pow(1+s.discount,finish-d):1.),px[d][F],s.work_price+travel);
     if(d==begin&&committed_fertilizer>=0)z=committed_fertilizer&&fert<d;
     if(z)fert=d+2;
 #endif
@@ -133,6 +142,7 @@ struct Controller {
    }
    if(z){a.f[d][F]-=1;a.labor[d]+=1;fert=d+2;visit=true;}
    if(d==begin&&first_fertilizer)*first_fertilizer=z;
+   if(d==begin&&first_service)*first_service={int8_t(w),int8_t(z)};
    if(w){a.labor[d]+=1;visit=true;}
    if(visit)a.labor[d]+=travel;
    bool wet=w||watered;dry=wet?0:dry+1;
@@ -155,7 +165,7 @@ struct Controller {
   Asset a;a.kind=k;a.end=30;int day=model.day,start=std::max(day,birth),j=k-9;
   if(!t){a.first_cost=animal_price[j];a.fixed[start]-=a.first_cost;a.labor[start]+=3+.15*near(pos);}
   else {a.f[day][product[j]]+=t->yield_units;a.f[day][F]+=t->fertilizer_available;}
-  AnimalServiceDP dp;dp.solve(k,birth,start,px,s.work_price);
+  AnimalServiceDP dp;dp.solve(k,birth,start,px,s.work_price,s.marginal_value>0?1/(1+s.discount):1.);
   int hunger=t?std::min(1,int(t->consecutive_unfed)):0,bonus=t?std::min(held[j]-1,int(t->pending_care_bonus)):0;
   for(int d=start;d<29;d++){
    auto c=dp.choices[d][hunger][bonus];
@@ -247,20 +257,20 @@ struct Controller {
  // a different price table after the forecast has been committed.
  void reconcile_service(const View&o){
   if(o.day>=29||s.service<=0)return;
-  Flow marginal{};if(s.service_reconcile>=3)marginal=marginal_prices(o,portfolio);
+  Flow marginal{};if(s.marginal_value<=0&&s.service_reconcile>=3)marginal=marginal_prices(o,portfolio);
   double score=model.value(o,portfolio);
   for(int pos=0;pos<100;pos++){
    const auto&t=o.own.tiles[pos];if(!animal(t))continue;
-   int alternatives=s.service_reconcile>=3?2:1;
+   int alternatives=s.marginal_value<=0&&s.service_reconcile>=3?2:1;
    for(int which=0;which<alternatives;which++){
     std::array<int8_t,2>action{};
-    auto trial=animal_path(int(t.animal),t.placed_day,pos,which?marginal:prices,&t,&action);
+    auto trial=animal_path(int(t.animal),t.placed_day,pos,which?marginal:path_prices(),&t,&action);
     auto candidate=portfolio;add(candidate,paths[pos],-1);add(candidate,trial);
     double value=model.value(o,candidate);service_trials++;
     if(value>score+1e-6){
      service_switches++;service_objective_gain+=value-score;score=value;
      portfolio=std::move(candidate);paths[pos]=std::move(trial);forecast_service[pos]=action;
-     model.value(o,portfolio,&prices);
+     update_value(o);
     }
    }
   }
@@ -270,15 +280,16 @@ struct Controller {
   for(int pos=0;pos<100;pos++){
    const auto&t=o.own.tiles[pos];
    if(animal(t)){
-    AnimalServiceDP d;d.solve(int(t.animal),t.placed_day,o.day,prices,s.work_price);auto c=d.first(o.day,t);
+    AnimalServiceDP d;d.solve(int(t.animal),t.placed_day,o.day,path_prices(),s.work_price,s.marginal_value>0?1/(1+s.discount):1.);auto c=d.first(o.day,t);
     if(s.service_reconcile>0){c.feed=forecast_service[pos][0];c.care=forecast_service[pos][1];}
     core.service_feed[pos]=s.service<=0?1:c.feed;core.service_care[pos]=s.service<=0?core.care_due(t):c.care;
    }
    if(plant(t)&&ongoing(int(t.crop))){
-    int k=int(t.crop);OngoingMaintenanceDP md;md.kind=k;md.birth=t.planted_day;md.mode=2;md.work=s.work_price;
-    for(int d=0;d<30;d++){md.price[d]=prices[d][k];md.fert[d]=prices[d][F];}
+    int k=int(t.crop);OngoingMaintenanceDP md;md.kind=k;md.birth=t.planted_day;md.mode=2;md.work=s.work_price;md.discount=s.marginal_value>0?1/(1+s.discount):1.;
+    for(int d=0;d<30;d++){md.price[d]=path_prices()[d][k];md.fert[d]=path_prices()[d][F];}
     auto c=md.first(o.day,std::min(1,int(t.consecutive_unwatered)),std::clamp(int(t.fertilized_until_day)-o.day+1,0,3),core.water_due(t),core.fertilize_due(t));
     core.crop_birth[pos]=t.planted_day;core.crop_kind[pos]=k;
+    if(s.marginal_value>0){c.water=forecast_crop_service[pos][0];c.fertilize=forecast_crop_service[pos][1];}
     core.crop_water[pos]=c.water;core.crop_fertilize[pos]=c.fertilize&&s.crop_fert>0;
    }
 #if R2_FINITE_FERTILIZER
@@ -298,25 +309,25 @@ struct Controller {
   Farm farm=o.own;int expiry=dp7::Controller::project_zero_expiry(farm,o.step);
   View v{o.step,o.day,o.hour,farm,o.opponent,o.priv,o.market,o.shops};
   core.target.clear();core.plant_not_before.fill(0);core.triad_crop_age.fill(-1);
-  portfolio={};paths={};forecast_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
+  portfolio={};paths={};forecast_service={};forecast_crop_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
 #if R2_FINITE_FERTILIZER
   finite_first_fertilizer.fill(0);
 #endif
   for(int i=0;i<9;i++){portfolio.f[o.day][i]+=o.priv.shed[i];for(auto&b:o.priv.inventories)portfolio.f[o.day][i]+=b[i];}
-  model.value(o,portfolio,&prices);std::vector<int>free;int animals=0;
+  update_value(o);std::vector<int>free;int animals=0;
   int owned=std::popcount(unsigned(o.own.unlocked_mask));core.planned_land=owned;
   // Resolve existing projects from facts. Successor intention is separate from
   // the current tile and never replaces maintenance of the incumbent crop.
   for(int pos=0;pos<100;pos++){
    auto&t=farm.tiles[pos];if(t.kind==TileKind::LOCKED)continue;
-   if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,prices,&t,&forecast_service[pos]);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
+   if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,path_prices(),&t,&forecast_service[pos]);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
    if(plant(t)){
     int k=int(t.crop),finish=std::max(o.day,t.planted_day+(ongoing(k)?first[k]+3*interval[k]:core.h_age(k)));
     if(!ongoing(k)){
-     auto dp=rotations_dp(pos,prices,o.day);double best=-1e100;
+     auto dp=rotations_dp(pos,path_prices(),o.day);double best=-1e100;
      int earliest=std::max(o.day,int(t.planted_day)+first[k]);int last=std::min(29,int(t.planted_day)+(k==W?4:k==C?3:12));
      for(int d=earliest;d<=last;d++){
-      auto a=crop(k,t.planted_day,pos,d,prices,&t);double val=scalar(a,prices,o.day)+(s.rotation>0?dp.v[d]:0);
+      auto a=crop(k,t.planted_day,pos,d,path_prices(),&t);double val=scalar(a,path_prices(),o.day)+(s.rotation>0?dp.v[d]:0);
       if(val>best){best=val;finish=d;}
      }
     }
@@ -324,7 +335,7 @@ struct Controller {
     finish=std::min(29,finish);
     int retained=(book[pos].birth==t.planted_day&&book[pos].kind==k)?book[pos].successor:-1;
     if(retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k]&&joint.index(pos)<0)finish=o.day;
-    paths[pos]=crop(k,t.planted_day,pos,finish,prices,&t);add(portfolio,paths[pos]);
+    paths[pos]=crop(k,t.planted_day,pos,finish,path_prices(),&t,nullptr,-1,-1,s.marginal_value>0?&forecast_crop_service[pos]:nullptr);add(portfolio,paths[pos]);
 #if R2_FINITE_FERTILIZER
     if(!ongoing(k))finite_first_fertilizer[pos]=paths[pos].f[o.day][F]<0;
 #endif
@@ -335,7 +346,7 @@ struct Controller {
    }
    core.target.emplace_back(pos,-1);free.push_back(pos);
   }
-  model.value(o,portfolio,&prices);
+  update_value(o);
   // Near-depot high-maintenance slots are selected first; no fixed day/plot tape.
   std::stable_sort(free.begin(),free.end(),[&](int a,int b){return std::tuple(near(a),a)<std::tuple(near(b),b);});
   double stock=0;for(int i=0;i<9;i++)stock+=revenue(i,o.market.inventory[i],o.priv.shed[i]);
@@ -356,12 +367,12 @@ struct Controller {
     b.kind=b.successor;b.birth=-1;b.successor=-1;b.funded=true;
    }
    if(s.keep_commitments>0&&plant(t)&&b.successor>=0&&stock_left[b.successor]>0){
-    int k=b.successor;auto dp=rotations_dp(pos,prices,o.day);auto candidate=choose_crop(k,o.day,pos,prices,dp);
+    int k=b.successor;auto dp=rotations_dp(pos,path_prices(),o.day);auto candidate=choose_crop(k,o.day,pos,path_prices(),dp);
     if(candidate.kind>=0){auto a=candidate.a;a.fixed[o.day]+=seed_price[k];a.first_cost=0;
      stock_left[k]--;paths[pos]=a;add(portfolio,a);settarget(pos,k);successor[pos]=k;length[pos]=candidate.length;kept++;continue;}
    }
    if(s.keep_commitments<=0||plant(t)||animal(t)||b.kind<0||stock_left[b.kind]<=0)continue;
-   int k=b.kind;auto dp=rotations_dp(pos,prices,o.day);Asset a=k>=9?animal_path(k,o.day,pos,prices):choose_crop(k,o.day,pos,prices,dp).a;
+   int k=b.kind;auto dp=rotations_dp(pos,path_prices(),o.day);Asset a=k>=9?animal_path(k,o.day,pos,path_prices()):choose_crop(k,o.day,pos,path_prices(),dp).a;
    if(a.first_cost<=0)continue;a.fixed[o.day]+=a.first_cost;a.first_cost=0;stock_left[k]--;b.funded=true;
    paths[pos]=a;add(portfolio,a);settarget(pos,k);successor[pos]=k;animals+=k>=9;kept++;
   }
@@ -376,10 +387,10 @@ struct Controller {
     if(successor[pos]>=0){ // Paid incumbent is protected, not overwritten.
      if(successor[pos]!=k){joint.cancel(5);break;}continue;
     }
-    auto dp=rotations_dp(pos,prices,o.day);auto selected=choose_crop(k,o.day,pos,prices,dp);
+    auto dp=rotations_dp(pos,path_prices(),o.day);auto selected=choose_crop(k,o.day,pos,path_prices(),dp);
     if(selected.kind<0){core.plant_not_before[pos]=30;continue;}
     int len=b.stage==0?b.source_age:selected.length;
-    auto a=crop(k,o.day,pos,std::min(29,o.day+len),prices);
+    auto a=crop(k,o.day,pos,std::min(29,o.day+len),path_prices());
     double cost=stock_left[k]>0?0:a.first_cost;
     if(b.stage==2){double released=std::min(joint_earmark,double(seed_price[k]));budget+=released;joint_earmark-=released;}
     if(cost>budget||a.first_cost<=0){core.plant_not_before[pos]=30;continue;}
@@ -389,21 +400,21 @@ struct Controller {
    }
   }
   free.erase(std::remove_if(free.begin(),free.end(),[&](int p){return successor[p]>=0||joint.index(p)>=0;}),free.end());
-  double current=model.value(o,portfolio,&prices);
+  double current=update_value(o);
   int used=0;
   while(o.day<29){
    if(used>=int(free.size())){
     if(owned>=int(s.max_land)||o.day>20||budget<next_land_cost(owned)+300)break;
     double cost=next_land_cost(owned);owned++;core.planned_land=owned;budget-=cost;portfolio.fixed[o.day]-=cost;
     for(int p=0;p<100;p++)if(quad(p)==owned-1){free.push_back(p);settarget(p,-1);}
-    std::stable_sort(free.begin()+used,free.end(),[](int a,int b){return std::tuple(near(a),a)<std::tuple(near(b),b);});current=model.value(o,portfolio,&prices);
+    std::stable_sort(free.begin()+used,free.end(),[](int a,int b){return std::tuple(near(a),a)<std::tuple(near(b),b);});current=update_value(o);
    }
-   int pos=free[used++];auto&t=farm.tiles[pos];auto dp=rotations_dp(pos,prices,o.day);
+   int pos=free[used++];auto&t=farm.tiles[pos];auto dp=rotations_dp(pos,path_prices(),o.day);
    double best=0,bestval=current;int bestkind=-1,bestlen=0;Asset bestpath;double bestcost=0;
    for(int k:{0,1,2,3,4,9,10,11}){
     if(k>=9&&(plant(t)||animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
     Asset a;int len=0;
-    if(k>=9)a=animal_path(k,o.day,pos,prices);else{auto c=choose_crop(k,o.day,pos,prices,dp);if(c.kind<0)continue;a=c.a;len=c.length;}
+    if(k>=9)a=animal_path(k,o.day,pos,path_prices());else{auto c=choose_crop(k,o.day,pos,path_prices(),dp);if(c.kind<0)continue;a=c.a;len=c.length;}
     double cost=a.first_cost;
     if(cost<=0)continue;if(stock_left[k]>0){a.fixed[o.day]+=cost;cost=0;}
     double immediate=cost+(k>=9?o.market.prices[W]*s.feed_cover:0);
@@ -420,7 +431,7 @@ struct Controller {
    book[pos].successor=plant(t)?bestkind:-1;
    if(!plant(t))book[pos]={bestkind,-1,o.day,bestlen,-1,bestcost==0};
    else rotations+=int(t.crop)!=bestkind;
-   new_positions.push_back(pos);model.value(o,portfolio,&prices);
+   new_positions.push_back(pos);update_value(o);
   }
   // Optional portfolio coordinate search.  Only replace projects created on
   // truly empty plots in this plan: never touch live assets, inventory-funded
@@ -432,13 +443,13 @@ struct Controller {
     if(plant(t)||animal(t)||joint.index(pos)>=0||old<0||book[pos].funded||paths[pos].fixed[o.day]>=-1e-9)continue;
     double oldcost=paths[pos].first_cost+(old>=9?o.market.prices[W]*s.feed_cover:0);
     double available=budget+oldcost;int after_remove=animals-(old>=9);auto without=portfolio;add(without,paths[pos],-1);
-    auto dp=rotations_dp(pos,prices,o.day);
+    auto dp=rotations_dp(pos,path_prices(),o.day);
     for(int k:{0,1,2,3,4,9,10,11}){
      if(k==old||stock_left[k]>0)continue;
      if(k>=9&&(after_remove>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
      Asset a;int len=0;std::array<int8_t,2>service{};
-     if(k>=9)a=animal_path(k,o.day,pos,prices,nullptr,&service);
-     else{auto c=choose_crop(k,o.day,pos,prices,dp);if(c.kind<0)continue;a=c.a;len=c.length;}
+     if(k>=9)a=animal_path(k,o.day,pos,path_prices(),nullptr,&service);
+     else{auto c=choose_crop(k,o.day,pos,path_prices(),dp);if(c.kind<0)continue;a=c.a;len=c.length;}
      double immediate=a.first_cost+(k>=9?o.market.prices[W]*s.feed_cover:0);
      if(a.first_cost<=0||immediate>available)continue;
      auto next=without;add(next,a);double val=model.value(o,next);portfolio_swap_trials++;
@@ -456,7 +467,7 @@ struct Controller {
 #if R2_FINITE_FERTILIZER
    finite_first_fertilizer[toppos]=topkind<5&&!ongoing(topkind)&&paths[toppos].f[o.day][F]<0;
 #endif
-   current=topval;portfolio_swap_accepts++;portfolio_swap_gain+=top;model.value(o,portfolio,&prices);
+   current=topval;portfolio_swap_accepts++;portfolio_swap_gain+=top;update_value(o);
   }
   // Mode 2 is a bounded two-site neighbourhood.  It can cross a budget or
   // market-price valley that no profitable one-site replacement can cross.
@@ -467,12 +478,12 @@ struct Controller {
    for(int pos:new_positions){
     const auto&t=farm.tiles[pos];int old=successor[pos];
     if(plant(t)||animal(t)||joint.index(pos)>=0||old<0||book[pos].funded||paths[pos].fixed[o.day]>=-1e-9)continue;
-    auto without=portfolio;add(without,paths[pos],-1);auto dp=rotations_dp(pos,prices,o.day);Site site;site.pos=pos;site.old=old;
+    auto without=portfolio;add(without,paths[pos],-1);auto dp=rotations_dp(pos,path_prices(),o.day);Site site;site.pos=pos;site.old=old;
     for(int k:{0,1,2,3,4,9,10,11}){
      if(k==old||stock_left[k]>0)continue;
      Asset a;int len=0;std::array<int8_t,2>service{};
-     if(k>=9)a=animal_path(k,o.day,pos,prices,nullptr,&service);
-     else{auto c=choose_crop(k,o.day,pos,prices,dp);if(c.kind<0)continue;a=c.a;len=c.length;}
+     if(k>=9)a=animal_path(k,o.day,pos,path_prices(),nullptr,&service);
+     else{auto c=choose_crop(k,o.day,pos,path_prices(),dp);if(c.kind<0)continue;a=c.a;len=c.length;}
      double cost=a.first_cost+(k>=9?o.market.prices[W]*s.feed_cover:0);if(a.first_cost<=0)continue;
      auto trial=without;add(trial,a);double val=model.value(o,trial);
      int oldspan=old>=9?29-o.day:length[pos],newspan=k>=9?29-o.day:len;
@@ -513,7 +524,7 @@ struct Controller {
 #endif
     };
     install(sites[bi],sites[bi].options[ba]);install(sites[bj],sites[bj].options[bb]);
-    current=topval;portfolio_pair_accepts++;portfolio_pair_gain+=top;model.value(o,portfolio,&prices);
+    current=topval;portfolio_pair_accepts++;portfolio_pair_gain+=top;update_value(o);
    }
   }
   // No automatic same-crop continuation when a slot was offered but declined.
@@ -529,7 +540,7 @@ struct Controller {
      if(plant(farm.tiles[pos])||book[pos].funded||successor[pos]<0||admitted.count(pos))continue;
      add(portfolio,paths[pos],-1);paths[pos]={};successor[pos]=-1;settarget(pos,-1);book[pos]={};deferred++;changed=true;
     }
-    if(!changed)break;model.value(o,portfolio,&prices);if(s.service_reconcile>=2)reconcile_service(v);set_service(v);core.prepare_orders(v,o,expiry);
+    if(!changed)break;update_value(o);if(s.service_reconcile>=2)reconcile_service(v);set_service(v);core.prepare_orders(v,o,expiry);
    }
   }
   predicted=model.value(o,portfolio);model.shadow=prices;
@@ -543,6 +554,7 @@ struct Controller {
   Asset total;
   for(int i=0;i<9;i++){total.f[o.day][i]+=o.priv.shed[i];for(const auto&iv:o.priv.inventories)total.f[o.day][i]+=iv[i];}
   fresh.value(o,total,&px);
+  if(s.marginal_value>0)px=MarginalValue::compute(fresh,o,total,s.discount);
   // Only remaining work/production from real assets. Morning delivered goods
   // are not added for a second time, and paid setup costs are never repaid.
   for(int pos=0;pos<100;pos++){
@@ -559,13 +571,15 @@ struct Controller {
    }else continue;
    add(total,a);
   }
-  fresh.value(o,total,&px);return total;
+  fresh.value(o,total,&px);
+  if(s.marginal_value>0)px=MarginalValue::compute(fresh,o,total,s.discount);
+  return total;
  }
  std::array<double,12>intraday_values(const dp7::Controller&c,const View&o,const PlayerAction&out){
   std::array<double,12>v;v.fill(-1e90);int pos=-1;for(auto[p,k]:c.target)if(!plant(o.own.tiles[p])&&!animal(o.own.tiles[p])){pos=p;break;}if(pos<0)return v;
   // Compare only incremental project streams; the admission compiler checks
   // actual cash, inputs, free workers and PLANT+WATER completion time.
-  Planner fresh;Flow current_prices=prices;Asset current=portfolio;
+  Planner fresh;Flow current_prices=path_prices();Asset current=portfolio;
   if constexpr(P16_LIVE_REMAINING_VALUE>0)current=remaining_portfolio(o,fresh,current_prices);
   const Planner&eval=P16_LIVE_REMAINING_VALUE?fresh:model;
   auto dp=rotations_dp(pos,current_prices,o.day);
@@ -701,8 +715,9 @@ struct Controller {
   bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);joint.record(o,out);return out;
  }
  std::string debug()const{
-  std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"capital_collects\":"<<capital_collects<<",\"capital_financings\":"<<capital_financings<<",\"input_rejected_atoms\":"<<core.input_rejected_atoms<<",\"input_rejected_feed\":"<<core.input_rejected_feed<<",\"input_rejected_fertilize\":"<<core.input_rejected_fertilize<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"portfolio_swap_trials\":"<<portfolio_swap_trials<<",\"portfolio_swap_accepts\":"<<portfolio_swap_accepts<<",\"portfolio_swap_gain\":"<<portfolio_swap_gain<<",\"portfolio_pair_trials\":"<<portfolio_pair_trials<<",\"portfolio_pair_accepts\":"<<portfolio_pair_accepts<<",\"portfolio_pair_gain\":"<<portfolio_pair_gain<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
+  std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"capital_collects\":"<<capital_collects<<",\"capital_financings\":"<<capital_financings<<",\"input_rejected_atoms\":"<<core.input_rejected_atoms<<",\"input_rejected_feed\":"<<core.input_rejected_feed<<",\"input_rejected_fertilize\":"<<core.input_rejected_fertilize<<",\"marginal_value_updates\":"<<marginal_value_updates<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"portfolio_swap_trials\":"<<portfolio_swap_trials<<",\"portfolio_swap_accepts\":"<<portfolio_swap_accepts<<",\"portfolio_swap_gain\":"<<portfolio_swap_gain<<",\"portfolio_pair_trials\":"<<portfolio_pair_trials<<",\"portfolio_pair_accepts\":"<<portfolio_pair_accepts<<",\"portfolio_pair_gain\":"<<portfolio_pair_gain<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
   bool sep=false;for(auto[p,k]:core.target){if(sep)o<<",";sep=true;o<<"["<<p<<","<<k<<"]";}o<<"],\"preparation_finance_checks\":"<<preparation_finance_checks<<",\"preparation_finance_repairs\":"<<preparation_finance_repairs<<",\"midroute_delivery_checks\":"<<core.midroute_delivery_checks<<",\"midroute_delivery_insertions\":"<<core.midroute_delivery_insertions<<",\"midroute_delivery_quantity\":"<<core.midroute_delivery_quantity<<",\"local_sale_checks\":"<<local_sale.checks<<",\"local_sale_holds\":"<<local_sale.holds<<",\"local_sale_quantity\":"<<local_sale.held_quantity<<",\"local_sale_forced\":"<<local_sale.forced<<",\"local_sale_expected_gain\":"<<local_sale.projected_gain<<"}";return o.str();
  }
 };
 }
+

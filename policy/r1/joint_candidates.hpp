@@ -41,11 +41,11 @@ inline std::vector<JointCandidate> joint_candidates(const Controller&live,const 
    auto portfolio=keep.portfolio;for(int i=0;i<remove;i++)add(portfolio,keep.paths[removable[i]],-1);
    bool okay=true;
    for(int pos:positions){
-    auto first=keep.crop(W,o.day,pos,o.day+age,keep.prices);
+    auto first=keep.crop(W,o.day,pos,o.day+age,keep.path_prices());
     // For the hint only: feeder receipts cannot fund an earlier purchase.
     first.f[o.day+age+1][W]+=first.f[o.day+age][W];first.f[o.day+age][W]=0;
     add(portfolio,first);
-    auto path=keep.choose_crop(k,next,pos,keep.prices,keep.rotations_dp(pos,keep.prices,next));
+    auto path=keep.choose_crop(k,next,pos,keep.path_prices(),keep.rotations_dp(pos,keep.path_prices(),next));
     if(path.kind<0){okay=false;break;}
     add(portfolio,path.a);
    }
@@ -70,3 +70,4 @@ inline std::vector<JointCandidate> joint_candidates(const Controller&live,const 
  return out;
 }
 }
+

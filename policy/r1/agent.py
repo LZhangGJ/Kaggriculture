@@ -96,6 +96,7 @@ def _pack(obs):
 DEFAULTS = {'competition': 0.8, 'supply': 0.85, 'future_shop': 0.7, 'capital_power': 0.4, 'labor_hours': 15, 'work_price': 1.2, 'animal_work': 1.0, 'reserve': 120, 'max_animals': 20, 'max_hands': 14, 'max_land': 4, 'feed_cover': 2, 'rotation': 1, 'preview': 1, 'delivery': 2, 'intraday': 1, 'service': 1, 'replant': 0.7, 'land_rent': 2, 'discount': 0.015, 'tour_dp': 0, 'layout': 0, 'repeat': 1, 'animal_bias': 1, 'crop_bias': 1, 'portfolio_passes': 1, 'crop_fert': 1, 'harvest_threshold': 1, 'delay_sale': 0, 'opening_budget': 1, 'scenario': 0, 'keep_commitments': 1}
 DEFAULTS.update(candidate_extra=0,service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0,batch_delivery=0)
 DEFAULTS.update(portfolio_swaps=0,portfolio_swap_min_gain=0)
+DEFAULTS.update(marginal_value=0)
 _ORDER = tuple(DEFAULTS)
 
 class Agent:
@@ -124,13 +125,16 @@ class Agent:
         self.lib.td_install.argtypes=[ctypes.c_void_p,ctypes.c_int];self.lib.td_install.restype=ctypes.c_int
         self.lib.td_obligations_json.argtypes=[ctypes.c_void_p,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t];self.lib.td_obligations_json.restype=ctypes.c_char_p
         self.lib.td_settings_count.argtypes=[];self.lib.td_settings_count.restype=ctypes.c_size_t
-        if self.lib.td_settings_count()!=len(_ORDER):
-            raise RuntimeError('Native/Python settings count mismatch; use matching source and binary')
+        self.settings_count=int(self.lib.td_settings_count())
+        if self.settings_count not in (len(_ORDER),len(_ORDER)-1):
+            raise RuntimeError('Native/Python settings count mismatch; rebuild policy/r1/agent.so')
+        if self.settings_count!=len(_ORDER) and self.config['marginal_value']!=0:
+            raise RuntimeError('marginal_value requires rebuilding policy/r1/agent.so')
         self.handle=None;self.last=-1;self.seat=None
         self.reset()
     def reset(self):
         self.close()
-        params=(ctypes.c_double*len(_ORDER))(*(float(self.config[k]) for k in _ORDER))
+        params=(ctypes.c_double*self.settings_count)(*(float(self.config[k]) for k in _ORDER[:self.settings_count]))
         self.handle=self.lib.td_new(params,len(params))
         if not self.handle:raise ValueError('C++ settings validation failed')
         self.last=-1;self.seat=None;self.external=False
@@ -206,3 +210,4 @@ def agent(observation,configuration=None):
     seat=int(_get(observation,'player',0))
     if seat not in _instances:_instances[seat]=Agent()
     return _instances[seat](observation,configuration)
+
