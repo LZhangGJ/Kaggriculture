@@ -17,6 +17,9 @@ TRADE_ITEMS = (
     "WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON",
     "EGG", "MILK", "WOOL", "FERTILIZER",
 )
+OPPONENT_SALE_ITEMS = (
+    "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL",
+)
 
 
 def observation_step(observation: Mapping[str, Any], default: int = 0) -> int:
@@ -186,6 +189,85 @@ class RouteSwitchHistory:
 
 def math_isfinite(value: float) -> bool:
     return value != float("inf") and value != float("-inf") and value == value
+
+
+@dataclass
+class OpponentSaleHistory:
+    """Exact public-flow ledger for products neither player can buy."""
+
+    cumulative: list[int] = field(default_factory=lambda: [0] * len(OPPONENT_SALE_ITEMS))
+    previous_step: int | None = None
+    previous_inventory: list[int] = field(default_factory=list)
+    previous_shops: tuple[str, ...] = ()
+    own_sales: list[int] = field(default_factory=lambda: [0] * len(OPPONENT_SALE_ITEMS))
+    invalid_ticks: int = 0
+
+    def update(self, observation: Mapping[str, Any], configuration: Any = None) -> None:
+        from .market_manager import SHOP_PRODUCTS, _get, _market_price, _resolved_market_params
+
+        step = observation_step(observation)
+        market = dict(observation.get("market", {}) or {})
+        inventory = dict(market.get("inventory", {}) or {})
+        current = [int(inventory.get(item, 10_000) or 0) for item in OPPONENT_SALE_ITEMS]
+        if self.previous_step is not None:
+            if step != self.previous_step + 1:
+                raise ValueError(f"non-contiguous market observations: {self.previous_step} -> {step}")
+            shop_interval = max(1, int(_get(configuration, "townShopSellInterval", 4)))
+            center_interval = max(1, int(_get(configuration, "townCenterSellInterval", 24)))
+            demand = [0] * len(OPPONENT_SALE_ITEMS)
+            if self.previous_step % shop_interval == 0:
+                for shop in self.previous_shops:
+                    products = SHOP_PRODUCTS.get(shop, ())
+                    quantity = 2 if len(products) == 1 else 1
+                    for item in products:
+                        if item in OPPONENT_SALE_ITEMS:
+                            demand[OPPONENT_SALE_ITEMS.index(item)] += quantity
+            if self.previous_step % center_interval == 0:
+                demand = [value + 1 for value in demand]
+            params = _resolved_market_params({"params": market.get("params", {})})
+            inferred = []
+            exact = True
+            for index, item in enumerate(OPPONENT_SALE_ITEMS):
+                exact &= (
+                    _market_price(item, self.previous_inventory[index], params) > 1
+                    and _market_price(item, current[index] + demand[index], params) > 1
+                )
+                inferred.append(
+                    current[index] - self.previous_inventory[index]
+                    + demand[index] - self.own_sales[index]
+                )
+            if not exact or any(value < 0 for value in inferred):
+                self.invalid_ticks += 1
+            else:
+                self.cumulative[:] = [a + b for a, b in zip(self.cumulative, inferred)]
+        self.previous_step = step
+        self.previous_inventory = current
+        self.previous_shops = tuple(
+            str(value) for value in (observation.get("town", {}) or {}).get("unlocked_shops", []) or []
+        )
+        self.own_sales[:] = [0] * len(OPPONENT_SALE_ITEMS)
+
+    def record_action(
+        self, observation: Mapping[str, Any], action: Mapping[str, Any], configuration: Any = None
+    ) -> None:
+        from .market_manager import _get, executable_sell_labels
+
+        if observation_step(observation) != self.previous_step:
+            raise ValueError("record_action must follow update for the same observation")
+        capacity = max(1, int(_get(configuration, "shedCapacity", 100)))
+        _, sold, _, _ = executable_sell_labels(
+            observation, action, OPPONENT_SALE_ITEMS, capacity
+        )
+        self.own_sales[:] = [int(sold[item]) for item in OPPONENT_SALE_ITEMS]
+
+    def vector(self) -> np.ndarray:
+        if self.invalid_ticks:
+            raise ValueError(f"opponent-sale ledger has {self.invalid_ticks} inexact ticks")
+        return np.asarray(self.cumulative, dtype=np.float32)
+
+
+def opponent_sale_feature_names() -> list[str]:
+    return [f"opponent_cumulative_sell_{item.lower()}" for item in OPPONENT_SALE_ITEMS]
 
 
 def _fib(index: int) -> int:

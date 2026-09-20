@@ -106,6 +106,7 @@ struct SearchController {
   if(o.day!=live.core.day)live.model.rival_early_share=sale_clock.early_shares();
 #endif
   if(restore_day>=0&&o.day>=restore_day){live.configure(base);restore_day=-1;}
+  if(o.day>0)ledger.apply(live.model,o.day,base.supply);
   if(base.scenario!=0&&o.day!=live.core.day)choose(o);
   auto out=live.act(o);
 #if R2_CROP_CLOCK_MODE >= 1

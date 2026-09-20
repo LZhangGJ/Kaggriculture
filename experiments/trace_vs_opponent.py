@@ -25,6 +25,14 @@ def snapshot(observation, player, sold):
     shed = private.get("shed", {}) or {}
     inventories = private.get("inventories", []) or []
     prices = (observation.get("market", {}) or {}).get("prices", {}) or {}
+    inventory = (observation.get("market", {}) or {}).get("inventory", {}) or {}
+    def kinds(field):
+        result = {}
+        for tile in tiles:
+            if isinstance(tile, dict) and tile.get(field):
+                kind = tile[field]
+                result[kind] = result.get(kind, 0) + 1
+        return result
     return {
         "money": float(farm["money"]),
         "land": len(farm["unlocked_quadrants"]),
@@ -43,6 +51,11 @@ def snapshot(observation, player, sold):
         "unfed": sum(1 for t in tiles if isinstance(t, dict) and int(t.get("consecutive_unfed", 0) or 0) > 0),
         "unwatered": sum(1 for t in tiles if isinstance(t, dict) and int(t.get("consecutive_unwatered", 0) or 0) > 0),
         "crop_yield": int(sum(float(t.get("yield_units", 0) or 0) for t in tiles if isinstance(t, dict) and t.get("crop"))),
+        "crops_by_kind": kinds("crop"),
+        "animals_by_kind": kinds("animal"),
+        "market_inventory": {k: int(v or 0) for k, v in inventory.items()},
+        "market_prices": {k: int(v or 0) for k, v in prices.items()},
+        "shops": list((observation.get("town", {}) or {}).get("unlocked_shops", []) or []),
     }
 
 
@@ -102,7 +115,10 @@ def play(task):
                 "own": own, "rival": other,
                 "margin": own - other, "daily": daily,
                 "handoff_step": debug.get("dynamic_handoff_step"),
-                "handoff_land": debug.get("dynamic_handoff_land"), "error": None}
+                "handoff_land": debug.get("dynamic_handoff_land"),
+                "replay_opening": debug.get("replay_opening"),
+                "replay_current": debug.get("replay_current"),
+                "replay_switched": debug.get("replay_switched"), "error": None}
     except Exception as exc:  # noqa: BLE001 - reported, not swallowed
         return {"opponent": opponent, "seed": seed, "seat": seat, "opening_override": opening,
                 "daily": daily, "error": repr(exc)}

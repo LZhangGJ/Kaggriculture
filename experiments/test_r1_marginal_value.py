@@ -24,6 +24,7 @@ def main():
     parser.add_argument('--baseline-binary', type=Path, required=True)
     parser.add_argument('--candidate-binary', type=Path, default=ROOT / 'policy/r1/agent.so')
     parser.add_argument('--seed', type=int, default=2610500000)
+    parser.add_argument('--baseline-supports-marginal', action='store_true')
     args = parser.parse_args()
     os.environ.pop('R1_CONFIG_OVERRIDES', None)
     module = load(ROOT / 'policy/r1/agent.py', 'marginal_agent')
@@ -70,13 +71,14 @@ def main():
         else:
             invalid.close()
             raise AssertionError(f'invalid switch accepted: {value}')
-    try:
-        invalid = module.Agent(config={'marginal_value': 1}, binary_path=args.baseline_binary)
-    except RuntimeError as exc:
-        assert 'rebuild' in str(exc)
-    else:
-        invalid.close()
-        raise AssertionError('old binary silently accepted the new switch')
+    if not args.baseline_supports_marginal:
+        try:
+            invalid = module.Agent(config={'marginal_value': 1}, binary_path=args.baseline_binary)
+        except RuntimeError as exc:
+            assert 'rebuild' in str(exc)
+        else:
+            invalid.close()
+            raise AssertionError('old binary silently accepted the new switch')
     print(json.dumps({'status': 'PASS', 'equal_frames': frames, 'seats': 2,
                       'seed': args.seed, 'switch': 'marginal_value'}))
 

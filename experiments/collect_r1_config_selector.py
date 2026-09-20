@@ -15,15 +15,20 @@ from run_strong_ab import BOTS
 CLASSES = ("default", "competitive_sale", "crop_succession")
 
 
-def choose(proposals):
+def choose(proposals, include_base=False):
+    classes = CLASSES + (("base_plan",) if include_base else ())
     bases = [row for row in proposals if not row.get("diagnostic")]
     selected = {"default": max(bases, key=lambda row: row["score"])} if bases else {}
+    if include_base:
+        base_plan = [row for row in bases if row.get("id") == 0]
+        if len(base_plan) == 1:
+            selected["base_plan"] = base_plan[0]
     for row in proposals:
         name = row.get("diagnostic") or ""
         if name in CLASSES and name not in selected:
             selected[name] = row
-    if set(selected) != set(CLASSES):
-        raise ValueError(f"missing selector classes: {sorted(set(CLASSES) - set(selected))}")
+    if set(selected) != set(classes):
+        raise ValueError(f"missing selector classes: {sorted(set(classes) - set(selected))}")
     if any(len(row.get("features", ())) != 356 for row in selected.values()):
         raise ValueError("selector candidates require 356 features")
     return selected
@@ -39,7 +44,11 @@ def self_check():
     selected = choose(rows)
     matrix = np.asarray([selected[name]["features"] for name in CLASSES], dtype=np.float32)
     assert matrix.shape == (3, 356) and [selected[name]["index"] for name in CLASSES] == [2, 4, 3]
-    print(json.dumps({"status": "PASS", "classes": CLASSES, "shape": matrix.shape}))
+    extended = choose(rows, include_base=True)
+    classes = CLASSES + ("base_plan",)
+    matrix = np.asarray([extended[name]["features"] for name in classes], dtype=np.float32)
+    assert matrix.shape == (4, 356) and [extended[name]["index"] for name in classes] == [2, 4, 3, 0]
+    print(json.dumps({"status": "PASS", "classes": classes, "shape": matrix.shape}))
 
 
 def main():
@@ -51,6 +60,7 @@ def main():
     parser.add_argument("--workers", type=int, default=96)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--self-check", action="store_true")
+    parser.add_argument("--include-base", action="store_true")
     args = parser.parse_args()
     if args.self_check:
         self_check(); return
@@ -73,9 +83,12 @@ def main():
     discovery_seconds = time.perf_counter() - started
     print(json.dumps({"stage": "discovery", "games": len(discovered),
                       "seconds": discovery_seconds}), flush=True)
-    selected = [choose(row["proposals"]) if not row["error"] else None for row in discovered]
+    classes = CLASSES + (("base_plan",) if args.include_base else ())
+    selected = [choose(row["proposals"], args.include_base) if not row["error"] else None
+                for row in discovered]
+    variant = lambda name: "auto" if name == "default" else "" if name == "base_plan" else name
     tasks = [(*group, "auto" if name == "default" else selected[index][name]["index"])
-             for index, group in enumerate(groups) if selected[index] is not None for name in CLASSES]
+             for index, group in enumerate(groups) if selected[index] is not None for name in classes]
     started = time.perf_counter()
     with cf.ProcessPoolExecutor(max_workers=args.workers, mp_context=context) as pool:
         suffixes = list(pool.map(run, tasks, chunksize=1))
@@ -88,20 +101,20 @@ def main():
     for index, group in enumerate(groups):
         if selected[index] is None:
             continue
-        rows = [outcomes.get((*group, "auto" if name == "default" else name)) for name in CLASSES]
+        rows = [outcomes.get((*group, variant(name))) for name in classes]
         if all(rows) and len({row["day"] for row in rows}) == 1:
             keep.append((group, selected[index], rows))
     errors = sum(bool(row["error"]) for row in discovered + suffixes)
     if errors or len(keep) != len(groups):
         raise RuntimeError(f"incomplete collection: errors={errors}, groups={len(keep)}/{len(groups)}")
-    features = np.asarray([[entry[name]["features"] for name in CLASSES]
+    features = np.asarray([[entry[name]["features"] for name in classes]
                            for _, entry, _ in keep], dtype=np.float32)
     margins = np.asarray([[row["margin"] for row in rows] for _, _, rows in keep], dtype=np.float32)
-    labels = np.asarray([max(range(len(CLASSES)), key=lambda i: (margins[j, i] > 0, margins[j, i]))
+    labels = np.asarray([max(range(len(classes)), key=lambda i: (margins[j, i] > 0, margins[j, i]))
                          for j in range(len(keep))], dtype=np.int8)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(args.output, features=features, margins=margins, labels=labels,
-                        classes=np.asarray(CLASSES), bots=np.asarray([g[0] for g, _, _ in keep]),
+                        classes=np.asarray(classes), bots=np.asarray([g[0] for g, _, _ in keep]),
                         seeds=np.asarray([g[1] for g, _, _ in keep], dtype=np.int64),
                         seats=np.asarray([g[2] for g, _, _ in keep], dtype=np.int8),
                         days=np.asarray([rows[0]["day"] for _, _, rows in keep], dtype=np.int8),
@@ -114,7 +127,7 @@ def main():
     handoff_distribution = {str(day): handoff_days.count(day) for day in sorted(set(handoff_days))}
     joint_switches = [rows[0]["auto_debug"].get("joint_switches", 0) for _, _, rows in keep]
     summary = {"groups": len(keep), "requested_groups": len(groups), "suffix_games": len(suffixes),
-               "errors": errors, "feature_shape": list(features.shape), "classes": CLASSES,
+               "errors": errors, "feature_shape": list(features.shape), "classes": classes,
                "discovery_seconds": discovery_seconds, "suffix_seconds": suffix_seconds,
                "handoff_day_distribution": handoff_distribution,
                "auto_joint_switch_groups": sum(value > 0 for value in joint_switches)}

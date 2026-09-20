@@ -13,8 +13,8 @@ from typing import Any
 
 import numpy as np
 from scipy.stats import t as student_t
-from sklearn.model_selection import GroupKFold
-from sklearn.tree import DecisionTreeClassifier, export_text
+from sklearn.model_selection import GroupKFold, LeaveOneGroupOut
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor, export_text
 
 from meta_agent.src.fingerprints import ITEMS
 from meta_agent.src.recurrent_meta import (
@@ -213,6 +213,51 @@ def _scores(predictions: np.ndarray, outcomes: list[dict[str, tuple[float, float
     return np.asarray([outcome[str(prediction)][0] for prediction, outcome in zip(predictions, outcomes)])
 
 
+def _payoffs(
+    outcomes: list[dict[str, tuple[float, float]]], targets: list[str]
+) -> tuple[np.ndarray, np.ndarray]:
+    return (
+        np.asarray([[row[target][0] for target in targets] for row in outcomes]),
+        np.asarray([[row[target][1] for target in targets] for row in outcomes]),
+    )
+
+
+def _direct_node_classes(
+    model: DecisionTreeRegressor, matrix: np.ndarray,
+    wins: np.ndarray, margins: np.ndarray,
+    opponents: np.ndarray | None = None,
+) -> np.ndarray:
+    """Best route at every node; optionally maximize worst-opponent win rate."""
+    path = model.decision_path(matrix).tocsc()
+    result = np.zeros(model.tree_.node_count, dtype=np.int32)
+    for node in range(model.tree_.node_count):
+        rows = path.indices[path.indptr[node]:path.indptr[node + 1]]
+        if len(rows):
+            mean_wins = np.mean(wins[rows], axis=0)
+            mean_margins = np.mean(margins[rows], axis=0)
+            worst_wins = (
+                np.min([
+                    np.mean(wins[rows][opponents[rows] == opponent], axis=0)
+                    for opponent in np.unique(opponents[rows])
+                ], axis=0)
+                if opponents is not None else mean_wins
+            )
+            result[node] = max(
+                range(wins.shape[1]),
+                key=lambda route: (
+                    worst_wins[route], mean_wins[route], mean_margins[route], -route
+                ),
+            )
+    return result
+
+
+def _predict_direct(
+    model: DecisionTreeRegressor, matrix: np.ndarray,
+    node_classes: np.ndarray, targets: list[str],
+) -> np.ndarray:
+    return np.asarray(targets)[node_classes[model.apply(matrix)]]
+
+
 def _confidence(diff: np.ndarray, seeds: np.ndarray) -> dict[str, Any]:
     per_seed = np.asarray([np.mean(diff[seeds == seed]) for seed in np.unique(seeds)])
     mean = float(np.mean(per_seed))
@@ -287,8 +332,99 @@ def _cross_validate(
     }
 
 
-def _combined_validation(seed_cv: dict[str, Any], opponent_cv: dict[str, Any]) -> dict[str, Any]:
+def _cross_validate_direct(
+    matrix: np.ndarray,
+    seeds: np.ndarray,
+    cv_groups: np.ndarray,
+    outcomes: list[dict[str, tuple[float, float]]],
+    targets: list[str],
+    stay: str,
+    depth: int,
+    leaf: int,
+    leave_one_group_out: bool = False,
+    opponents: np.ndarray | None = None,
+    maximin: bool = False,
+) -> dict[str, Any]:
+    wins, margins = _payoffs(outcomes, targets)
+    splitter = (
+        LeaveOneGroupOut()
+        if leave_one_group_out
+        else GroupKFold(n_splits=min(5, len(np.unique(cv_groups))))
+    )
+    nominal = np.empty(len(matrix), dtype=np.asarray(targets).dtype)
+    variants = [np.empty_like(nominal) for _ in range(10)]
+    from fast_kaggriculture import native_threshold_variants
+
+    for fold, (train, valid) in enumerate(splitter.split(matrix, groups=cv_groups)):
+        model = DecisionTreeRegressor(
+            max_depth=depth, min_samples_leaf=leaf, random_state=20260824 + fold
+        ).fit(matrix[train], wins[train])
+        node_classes = _direct_node_classes(
+            model, matrix[train], wins[train], margins[train],
+            opponents[train] if maximin else None,
+        )
+        nominal[valid] = _predict_direct(model, matrix[valid], node_classes, targets)
+        shifted = np.asarray(native_threshold_variants(
+            model.tree_.children_left.astype(np.int32),
+            model.tree_.children_right.astype(np.int32),
+            model.tree_.feature.astype(np.int32),
+            model.tree_.threshold.astype(np.float64),
+            node_classes,
+            np.ascontiguousarray(matrix[valid], dtype=np.float32),
+            np.ascontiguousarray(matrix[train], dtype=np.float32),
+            20260824 + fold * 100,
+        ))
+        for index in range(len(variants)):
+            variants[index][valid] = np.asarray(targets)[shifted[index]]
+
+    route_index = {target: index for index, target in enumerate(targets)}
+    chosen = np.asarray([route_index[str(value)] for value in nominal])
+    stay_index = targets.index(stay)
+    row = np.arange(len(matrix))
+    nominal_scores, nominal_margins = wins[row, chosen], margins[row, chosen]
+    stay_scores, stay_margins = wins[:, stay_index], margins[:, stay_index]
+    variant_scores = [
+        wins[row, np.asarray([route_index[str(value)] for value in prediction])]
+        for prediction in variants
+    ]
+    variant_means = [float(np.mean(value)) for value in variant_scores]
+    threshold_worst = min(variant_means)
+    confidence = _confidence(nominal_scores - stay_scores, seeds)
+    robust_improvement = min(
+        threshold_worst - float(np.mean(stay_scores)),
+        confidence["one_sided_95pct_lower"],
+    )
+    opponent_min_improvement = (
+        min(
+            float(np.mean(nominal_scores[opponents == opponent]
+                          - stay_scores[opponents == opponent]))
+            for opponent in np.unique(opponents)
+        )
+        if opponents is not None else float(np.mean(nominal_scores - stay_scores))
+    )
+    if maximin:
+        robust_improvement = min(robust_improvement, opponent_min_improvement)
     return {
+        "depth": depth,
+        "min_leaf": leaf,
+        "score": float(np.mean(nominal_scores)),
+        "stay_score": float(np.mean(stay_scores)),
+        "improvement": float(np.mean(nominal_scores - stay_scores)),
+        "margin": float(np.mean(nominal_margins)),
+        "stay_margin": float(np.mean(stay_margins)),
+        "margin_improvement": float(np.mean(nominal_margins - stay_margins)),
+        "threshold_worst_score": threshold_worst,
+        "threshold_worst_improvement": threshold_worst - float(np.mean(stay_scores)),
+        "threshold_max_flip_rate": max(float(np.mean(value != nominal)) for value in variants),
+        "threshold_variant_scores": variant_means,
+        "confidence": confidence,
+        "robust_improvement": robust_improvement,
+        "opponent_min_improvement": opponent_min_improvement,
+    }
+
+
+def _combined_validation(seed_cv: dict[str, Any], opponent_cv: dict[str, Any]) -> dict[str, Any]:
+    result = {
         "depth": seed_cv["depth"],
         "min_leaf": seed_cv["min_leaf"],
         "score": min(seed_cv["score"], opponent_cv["score"]),
@@ -310,6 +446,10 @@ def _combined_validation(seed_cv: dict[str, Any], opponent_cv: dict[str, Any]) -
         "seed_group_cv": seed_cv,
         "opponent_family_group_cv": opponent_cv,
     }
+    for key in ("margin", "stay_margin", "margin_improvement"):
+        if key in seed_cv:
+            result[key] = min(seed_cv[key], opponent_cv[key])
+    return result
 
 
 def _tree_payload(model: DecisionTreeClassifier) -> dict[str, Any]:
@@ -322,6 +462,23 @@ def _tree_payload(model: DecisionTreeClassifier) -> dict[str, Any]:
         "feature": tree.feature.astype(int).tolist(),
         "threshold": tree.threshold.astype(float).tolist(),
         "value": tree.value[:, 0, :].astype(float).tolist(),
+    }
+
+
+def _direct_tree_payload(
+    model: DecisionTreeRegressor, node_classes: np.ndarray, targets: list[str]
+) -> dict[str, Any]:
+    tree = model.tree_
+    values = np.zeros((tree.node_count, len(targets)), dtype=np.float64)
+    values[np.arange(tree.node_count), node_classes] = 1.0
+    return {
+        "class_kind": "family",
+        "classes": targets,
+        "left": tree.children_left.astype(int).tolist(),
+        "right": tree.children_right.astype(int).tolist(),
+        "feature": tree.feature.astype(int).tolist(),
+        "threshold": tree.threshold.astype(float).tolist(),
+        "value": values.tolist(),
     }
 
 
@@ -353,6 +510,38 @@ def _threshold_audit(model: DecisionTreeClassifier, matrix: np.ndarray, names: l
     return rows
 
 
+def _threshold_audit_direct(
+    model: DecisionTreeRegressor, matrix: np.ndarray, names: list[str],
+    node_classes: np.ndarray, targets: list[str],
+) -> list[dict[str, Any]]:
+    tree = model.tree_
+    nominal = _predict_direct(model, matrix, node_classes, targets)
+    rows = []
+    for node in np.flatnonzero(tree.children_left >= 0):
+        feature = int(tree.feature[node])
+        values = matrix[:, feature]
+        span = float(np.quantile(values, 0.95) - np.quantile(values, 0.05))
+        delta = max(1e-6, 0.05 * span)
+        threshold = float(tree.threshold[node])
+        changed = []
+        for sign in (-1, 1):
+            tree.threshold[node] = threshold + sign * delta
+            changed.append(float(np.mean(
+                _predict_direct(model, matrix, node_classes, targets) != nominal
+            )))
+        tree.threshold[node] = threshold
+        rows.append({
+            "node": int(node), "feature_index": feature, "feature": names[feature],
+            "threshold": threshold, "perturbation": delta,
+            "threshold_interval": [threshold - delta, threshold + delta],
+            "samples": int(tree.n_node_samples[node]),
+            "fraction_near_threshold": float(np.mean(np.abs(values - threshold) <= delta)),
+            "prediction_flip_rate_minus": changed[0],
+            "prediction_flip_rate_plus": changed[1],
+        })
+    return rows
+
+
 def _bootstrap_stability(
     matrix: np.ndarray,
     labels: np.ndarray,
@@ -362,6 +551,7 @@ def _bootstrap_stability(
     names: list[str],
     repetitions: int = 64,
     workers: int = 1,
+    direct_wins: np.ndarray | None = None,
 ) -> dict[str, Any]:
     unique_seeds = np.unique(seeds)
     rng = np.random.default_rng(20260824)
@@ -371,10 +561,12 @@ def _bootstrap_stability(
     def fit(iteration: int) -> tuple[set[int], dict[int, list[float]], int | None]:
         sampled = sampled_seeds[iteration]
         indices = np.concatenate([np.flatnonzero(seeds == seed) for seed in sampled])
-        model = DecisionTreeClassifier(
+        model_class = DecisionTreeRegressor if direct_wins is not None else DecisionTreeClassifier
+        fit_targets = direct_wins[indices] if direct_wins is not None else labels[indices]
+        model = model_class(
             max_depth=depth, min_samples_leaf=leaf,
             random_state=20260824 + iteration,
-        ).fit(matrix[indices], labels[indices])
+        ).fit(matrix[indices], fit_targets)
         internal = np.flatnonzero(model.tree_.children_left >= 0)
         used = set(int(model.tree_.feature[node]) for node in internal)
         thresholds = defaultdict(list)
@@ -441,14 +633,29 @@ def _bootstrap_stability(
 def _train_node(task: tuple) -> dict[str, Any]:
     (
         opening, checkpoint, compact, raw_group, names, depths, leaves,
-        min_robust_improvement, simplicity_tolerance, trial_workers,
+        min_robust_improvement, simplicity_tolerance, trial_workers, direct_payoff,
+        direct_payoff_maximin,
     ) = task
     if compact:
         matrix, labels, seeds, opponents, outcomes = raw_group
     else:
         matrix, labels, seeds, opponents, outcomes = _samples(raw_group)
+    targets = list(dict.fromkeys(target for row in outcomes for target in row))
+    direct_wins, direct_margins = _payoffs(outcomes, targets)
     def evaluate(parameters: tuple[int, int]) -> dict[str, Any]:
         depth, leaf = parameters
+        if direct_payoff:
+            return _combined_validation(
+                _cross_validate_direct(
+                    matrix, seeds, seeds, outcomes, targets, opening, depth, leaf,
+                    opponents=opponents, maximin=direct_payoff_maximin,
+                ),
+                _cross_validate_direct(
+                    matrix, seeds, opponents, outcomes, targets, opening, depth, leaf,
+                    leave_one_group_out=True,
+                    opponents=opponents, maximin=direct_payoff_maximin,
+                ),
+            )
         return _combined_validation(
             _cross_validate(
                 matrix, labels, seeds, seeds, outcomes, opening, depth, leaf
@@ -479,13 +686,15 @@ def _train_node(task: tuple) -> dict[str, Any]:
         near_best,
         key=lambda row: (row["depth"], -row["min_leaf"], -row["robust_improvement"]),
     )
-    model = DecisionTreeClassifier(
+    model_class = DecisionTreeRegressor if direct_payoff else DecisionTreeClassifier
+    fit_targets = direct_wins if direct_payoff else labels
+    model = model_class(
         max_depth=selected["depth"], min_samples_leaf=selected["min_leaf"],
         random_state=20260824,
-    ).fit(matrix, labels)
+    ).fit(matrix, fit_targets)
     stability = _bootstrap_stability(
         matrix, labels, seeds, selected["depth"], selected["min_leaf"], names,
-        workers=trial_workers,
+        workers=trial_workers, direct_wins=direct_wins if direct_payoff else None,
     )
     root_frequency = max(
         stability["root_feature_group_frequencies"].values(), default=0.0
@@ -494,6 +703,13 @@ def _train_node(task: tuple) -> dict[str, Any]:
         selected["robust_improvement"] >= min_robust_improvement
         and root_frequency >= 0.35
     )
+    node_classes = (
+        _direct_node_classes(
+            model, matrix, direct_wins, direct_margins,
+            opponents if direct_payoff_maximin else None,
+        )
+        if direct_payoff else None
+    )
     return {
         "selected": {
             "opening": opening, "checkpoint": checkpoint,
@@ -501,9 +717,15 @@ def _train_node(task: tuple) -> dict[str, Any]:
             "seed_count": len(np.unique(seeds)),
             "enabled": enabled,
             "metrics": selected,
-            "tree": _tree_payload(model),
+            "tree": (
+                _direct_tree_payload(model, node_classes, targets)
+                if direct_payoff else _tree_payload(model)
+            ),
             "rules": export_text(model, feature_names=names, decimals=3),
-            "threshold_audit": _threshold_audit(model, matrix, names),
+            "threshold_audit": (
+                _threshold_audit_direct(model, matrix, names, node_classes, targets)
+                if direct_payoff else _threshold_audit(model, matrix, names)
+            ),
             "bootstrap_stability": stability,
         },
         "hyperparameter_trials": trials,
@@ -522,7 +744,20 @@ def main() -> None:
         help="Prefer the shallowest tree within this robust-score distance of the best.",
     )
     parser.add_argument("--node-workers", type=int, default=1)
+    parser.add_argument(
+        "--direct-payoff", action="store_true",
+        help=(
+            "Opt in to regression-tree splits over every route's win outcome; "
+            "each leaf selects the route with best empirical mean (win, margin)."
+        ),
+    )
+    parser.add_argument(
+        "--direct-payoff-maximin", action="store_true",
+        help="Choose each direct-payoff leaf by worst-opponent mean win rate.",
+    )
     args = parser.parse_args()
+    if args.direct_payoff_maximin:
+        args.direct_payoff = True
     if args.node_workers < 1:
         parser.error("--node-workers must be positive")
     depths = [int(value) for value in args.depths.split(",")]
@@ -542,7 +777,10 @@ def main() -> None:
             ))
     outer_workers = min(args.node_workers, max(1, len(node_tasks)))
     trial_workers = max(1, args.node_workers // outer_workers)
-    node_tasks = [(*task, trial_workers) for task in node_tasks]
+    node_tasks = [
+        (*task, trial_workers, args.direct_payoff, args.direct_payoff_maximin)
+        for task in node_tasks
+    ]
     with ThreadPoolExecutor(max_workers=outer_workers) as pool:
         nodes = list(pool.map(_train_node, node_tasks))
     payload = {
@@ -567,6 +805,11 @@ def main() -> None:
             "parallel_per_node_trials": trial_workers,
         },
     }
+    if args.direct_payoff:
+        payload["training_objective"] = "direct_leaf_mean_win_then_margin"
+    if args.direct_payoff_maximin:
+        payload["training_objective"] = "direct_leaf_worst_opponent_win_then_mean"
+        payload["robustness"]["leave_one_opponent_out"] = True
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
         "output": str(args.output),
@@ -580,6 +823,10 @@ def main() -> None:
                     "threshold_worst_improvement", "threshold_max_flip_rate",
                     "robust_improvement",
                 )},
+                **({
+                    key: row["selected"]["metrics"][key]
+                    for key in ("margin", "stay_margin", "margin_improvement")
+                } if args.direct_payoff else {}),
             }
             for row in nodes
         ],

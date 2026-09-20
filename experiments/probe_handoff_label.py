@@ -21,6 +21,8 @@ assumed one.
 """
 import argparse
 import concurrent.futures as cf
+import copy
+import hashlib
 import inspect
 import json
 import multiprocessing as mp
@@ -34,6 +36,14 @@ import sys  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments"))
+
+from meta_agent.src.route_switch_features import (  # noqa: E402
+    OpponentSaleHistory,
+    opponent_sale_feature_names,
+    route_switch_feature_names,
+    route_switch_vector,
+)
+from run_strong_ab import BOTS  # noqa: E402
 
 
 def load(path, name):
@@ -59,45 +69,78 @@ def board_shape(observation, seat):
 def play(task):
     """One real hybrid game with a forced switch at `checkpoint` to `target`."""
     (opening, target, opponent, seed, seat, checkpoint,
-     opening_index, target_index, opponent_index, seed_index) = task
+     opening_index, target_index, opponent_index, seed_index, deployed_prefix) = task
     os.environ["TORCH_DEVICE_BACKEND_AUTOLOAD"] = "0"
     os.environ["REPLAY_FORCED_OPENING"] = opening
-    os.environ.pop("REPLAY_HANDOFF_LAND", None)
+    os.environ["REPLAY_HANDOFF_LAND"] = "3"
+    os.environ["REPLAY_HANDOFF_LAND_DELAY"] = "1"
     os.environ.pop("REPLAY_HANDOFF_MIN_STEP", None)
+    os.environ.pop("REPLAY_HANDOFF_SELECTOR", None)
+    os.environ.pop("R1_CONFIG_OVERRIDES", None)
     os.environ["REPLAY_HANDOFF_STEP"] = "288"
     from kaggle_environments import make
 
     hybrid = load(ROOT / "agent/main.py", f"probe_{opening}_{target}_{seed}_{seat}")
     policy = hybrid.create_agent(seat)
     route = policy.replay
-    route.controller.nodes = {}  # the forced schedule below is the intervention
-    route.expanded_agent.select_schedule(
-        ((0, route.controller.route_by_family[opening]),
-         (checkpoint, route.controller.route_by_family[target]))
-    )
+    if not deployed_prefix:
+        route.controller.nodes = {}  # the forced schedule below is the intervention
     rival = load(ROOT / "opponents" / f"{opponent}" / "main.py", f"rival_{seed}_{seat}").agent
     with_config = len(inspect.signature(rival).parameters) > 1
     env = make("kaggriculture", configuration={"seed": seed}, debug=True)
     state = env.reset()
     board = None
+    features = None
+    sale_features = None
+    prefix_hash = None
+    sale_history = OpponentSaleHistory()
     error = None
     try:
         while not env.done:
             actions = []
             for player in (0, 1):
                 obs = json.loads(json.dumps(state[player].observation))
-                obs["step"] = obs.get("step", obs.get("day", 0) * 24 + obs.get("hour", 0))
+                obs["step"] = int(obs.get("day", 0)) * 24 + int(obs.get("hour", 0))
                 obs["player"] = player
+                if player == seat:
+                    sale_history.update(obs, env.configuration)
                 if player == seat and obs["step"] == checkpoint:
+                    prefix_current = route.controller.current
+                    if deployed_prefix:
+                        route.controller.nodes = {}
                     board = board_shape(obs, seat)
-                actions.append(policy(obs, env.configuration) if player == seat else
-                               (rival(obs, env.configuration) if with_config else rival(obs)))
+                    history = copy.deepcopy(route.controller.history)
+                    history.update(obs)
+                    route_id = route.controller.route_by_family[route.controller.current]
+                    features = route_switch_vector(
+                        obs, history, route.expanded_agent.action_tapes[route_id]
+                    ).tolist()
+                    sale_features = sale_history.vector().tolist()
+                    prefix_hash = hashlib.sha256(json.dumps(
+                        {"observation": obs, "history": vars(history)},
+                        sort_keys=True, separators=(",", ":"),
+                    ).encode()).hexdigest()
+                    route.expanded_agent.select_schedule((
+                        *route.expanded_agent.schedule,
+                        (checkpoint, route.controller.route_by_family[target]),
+                    ))
+                action = (policy(obs, env.configuration) if player == seat else
+                          (rival(obs, env.configuration) if with_config else rival(obs)))
+                if player == seat:
+                    sale_history.record_action(obs, action, env.configuration)
+                actions.append(action)
             state = env.step(actions)
         farms = json.loads(json.dumps(state[0].observation))["farms"]
         own, other = farms[seat]["money"], farms[1 - seat]["money"]
         return {"opening": opening, "target": target, "opponent": opponent, "seed": seed,
                 "seat": seat, "checkpoint": checkpoint, "true_margin": own - other,
                 "own": own, "rival": other, "board": board,
+                "features": features,
+                "sale_features": sale_features,
+                "prefix_hash": prefix_hash,
+                "prefix_current": prefix_current,
+                "installed_correct": route.expanded_agent.schedule[-1][1] ==
+                                     route.controller.route_by_family[target],
                 "opening_index": opening_index, "target_index": target_index,
                 "opponent_index": opponent_index, "seed_index": seed_index, "error": None}
     except Exception as exc:  # noqa: BLE001 - reported, not swallowed
@@ -114,16 +157,18 @@ def play(task):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--openings", default="G001,G275,G379")
-    parser.add_argument("--targets", default="G001,G210,G275,G379")
-    parser.add_argument("--opponents", default="thomas_2945,melon_2749,demand_preserving,ahmed_v47")
-    parser.add_argument("--checkpoints", default="240,264")
-    parser.add_argument("--seeds", default="2609600000:2609600004")
-    parser.add_argument("--label-npz", type=Path,
-                        default=ROOT / "data/artifacts/switch-fine-late-240-264-26x128.npz")
+    parser.add_argument("--openings", default="G275")
+    parser.add_argument("--targets", default="G275,G114,G019,G113,G001,G024,G316,G267,G195")
+    parser.add_argument("--opponents", default=",".join(BOTS))
+    parser.add_argument("--checkpoints", default="144,168")
+    parser.add_argument("--seeds", default="2610800000:2610800032")
+    parser.add_argument("--seats", default="0,1")
+    parser.add_argument("--label-npz", type=Path)
     parser.add_argument("--start-seed", type=int, default=2609220000,
                         help="first seed of the label npz grid")
     parser.add_argument("--workers", type=int, default=96)
+    parser.add_argument("--deployed-prefix", action="store_true",
+                        help="run the shipped route tree before the forced checkpoint switch")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -133,40 +178,110 @@ def main():
     targets = args.targets.split(",")
     opponents = args.opponents.split(",")
     checkpoints = [int(x) for x in args.checkpoints.split(",")]
+    seats = [int(x) for x in args.seats.split(",")]
+    grids = (openings, targets, opponents, checkpoints, seed_values, seats)
+    if any(not values or len(values) != len(set(values)) for values in grids) or \
+            any(seat not in (0, 1) for seat in seats):
+        parser.error("all grids must be non-empty and unique; seats must be 0 and/or 1")
 
-    with np.load(args.label_npz, mmap_mode="r") as saved:
-        npz_openings = saved["openings"].astype(str).tolist()
-        npz_targets = saved["targets"].astype(str).tolist()
-        npz_opponents = saved["opponents"].astype(str).tolist()
-        npz_checkpoints = saved["checkpoints"].astype(int).tolist()
-        npz_seeds = saved["seeds"].astype(np.int64).tolist()
-        outcome = np.asarray(saved["outcome"], dtype=np.float32) * 0.5
-        margin = np.asarray(saved["margin"], dtype=np.float32)
+    labels = None
+    if args.label_npz:
+        with np.load(args.label_npz, mmap_mode="r") as saved:
+            labels = {
+                "openings": saved["openings"].astype(str).tolist(),
+                "targets": saved["targets"].astype(str).tolist(),
+                "opponents": saved["opponents"].astype(str).tolist(),
+                "checkpoints": saved["checkpoints"].astype(int).tolist(),
+                "seeds": saved["seeds"].astype(np.int64).tolist(),
+                "outcome": np.asarray(saved["outcome"], dtype=np.float32) * 0.5,
+                "margin": np.asarray(saved["margin"], dtype=np.float32),
+            }
 
     tasks, keys = [], []
     for opening in openings:
         for target in targets:
             for opponent in opponents:
                 for seed in seed_values:
-                    if seed not in npz_seeds:
-                        continue
-                    for seat in (0, 1):
+                    for seat in seats:
                         for checkpoint in checkpoints:
                             tasks.append((opening, target, opponent, seed, seat, checkpoint,
-                                          npz_openings.index(opening), npz_targets.index(target),
-                                          npz_opponents.index(opponent), npz_seeds.index(seed)))
-                            keys.append((npz_openings.index(opening), npz_checkpoints.index(checkpoint),
-                                         npz_targets.index(target), npz_opponents.index(opponent),
-                                         npz_seeds.index(seed), seat))
+                                          openings.index(opening), targets.index(target),
+                                          opponents.index(opponent), seed_values.index(seed),
+                                          args.deployed_prefix))
+                            if labels and all(value in labels[name] for name, value in (
+                                ("openings", opening), ("targets", target),
+                                ("opponents", opponent), ("checkpoints", checkpoint),
+                                ("seeds", seed),
+                            )):
+                                keys.append((labels["openings"].index(opening),
+                                             labels["checkpoints"].index(checkpoint),
+                                             labels["targets"].index(target),
+                                             labels["opponents"].index(opponent),
+                                             labels["seeds"].index(seed), seat))
+                            else:
+                                keys.append(None)
     with cf.ProcessPoolExecutor(max_workers=args.workers, mp_context=mp.get_context("spawn"),
                                 max_tasks_per_child=1) as pool:
         rows = list(pool.map(play, tasks))
     for row, key in zip(rows, keys):
         if row["error"]:
             continue
-        row["tape_label_win"] = float(outcome[key])
-        row["tape_label_margin"] = float(margin[key])
-    rows = [r for r in rows if not r["error"] and "tape_label_win" in r]
+        if key is not None:
+            row["tape_label_win"] = float(labels["outcome"][key])
+            row["tape_label_margin"] = float(labels["margin"][key])
+    rows = [r for r in rows if not r["error"]]
+    if (len(rows) != len(tasks) or any(r["features"] is None for r in rows) or
+            any(r["sale_features"] is None for r in rows) or
+            any(not r["installed_correct"] for r in rows)):
+        raise RuntimeError("missing warm-label rows or checkpoint features")
+    paired = {}
+    target_sets = {}
+    for row in rows:
+        key = (row["opening"], row["opponent"], row["seed"], row["seat"], row["checkpoint"])
+        vector = np.asarray(row["features"], dtype=np.float32)
+        if vector.shape != (147,) or not np.isfinite(vector).all():
+            raise RuntimeError(f"invalid route features for {key}")
+        sales = np.asarray(row["sale_features"], dtype=np.float32)
+        if sales.shape != (7,) or not np.isfinite(sales).all():
+            raise RuntimeError(f"invalid opponent-sale features for {key}")
+        signature = (vector, sales, row["prefix_hash"])
+        if key in paired and (not np.array_equal(paired[key][0], vector) or
+                              not np.array_equal(paired[key][1], sales) or
+                              paired[key][2] != row["prefix_hash"]):
+            raise RuntimeError(f"counterfactual states differ for {key}")
+        paired[key] = signature
+        target_sets.setdefault(key, []).append(row["target"])
+    expected_targets = sorted(targets)
+    if any(sorted(values) != expected_targets for values in target_sets.values()):
+        raise RuntimeError("counterfactual target grid is incomplete or duplicated")
+
+    if args.output.suffix == ".npz":
+        games = np.zeros((len(rows), 12), dtype=np.float64)
+        states = np.asarray([row.pop("features") for row in rows], dtype=np.float32)
+        sale_states = np.asarray([row.pop("sale_features") for row in rows], dtype=np.float32)
+        for index, row in enumerate(rows):
+            games[index] = (
+                index, row["opening_index"], row["target_index"], row["opponent_index"],
+                row["checkpoint"], row["seed"], row["seat"], row["own"], row["rival"],
+                row["true_margin"], float(row["true_margin"] > 0) +
+                .5 * float(row["true_margin"] == 0), 0,
+            )
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(
+            args.output, games=games, states=states,
+            opponent_sale_states=sale_states,
+            prefix_routes=np.asarray([row["prefix_current"] for row in rows]),
+            openings=np.asarray(openings), targets=np.asarray(targets),
+            opponents=np.asarray(opponents), checkpoints=np.asarray(checkpoints, dtype=np.int16),
+            seeds=np.asarray(seed_values, dtype=np.int64),
+            seats=np.asarray(seats, dtype=np.int8),
+            feature_names=np.asarray(route_switch_feature_names()),
+            opponent_sale_feature_names=np.asarray(opponent_sale_feature_names()),
+            engine=np.asarray("official warm replay-to-R1 suffix"),
+        )
+        print(json.dumps({"output": str(args.output), "games": len(rows),
+                          "states": list(states.shape), "errors": 0}))
+        return
 
     def correlate(field):
         values = np.asarray([row[field] for row in rows], dtype=np.float64)
@@ -194,8 +309,9 @@ def main():
         "cells": len(rows), "true_wins": true_wins,
         "true_win_rate": true_wins / len(rows) if rows else None,
         "correlation_with_true_margin": {
-            "tape_label_margin": correlate("tape_label_margin"),
-            "tape_label_win": correlate("tape_label_win"),
+            **({"tape_label_margin": correlate("tape_label_margin"),
+                "tape_label_win": correlate("tape_label_win")}
+               if rows and "tape_label_win" in rows[0] else {}),
             **{name: correlate_field(name) for name in board_fields},
         },
         "rows": rows,

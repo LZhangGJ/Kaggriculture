@@ -2,6 +2,112 @@
 
 更新时间：2026-09-21。
 
+## 当前唯一性能研究对象：前期路线切换 + 温接管
+
+按用户最新决定，后续只优化真实部署链：固定 G275 起步，147 维浅树在前期切换 replay 路线，
+随后 delay=1 温接管无模板 JointAFS R1。纯 R1、冷接管不再做性能探索，至多保留默认行为兼容检查。
+候选最终只以未参与训练/筛选的七强同 seed 双座多 seed warm 结果准入，并要求逐对手均严格高于 80%。
+
+### 2026-09-21 阶段归因与成交顺序证伪
+
+当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
+正式 warm 64-seed 中五个未达标对手分别为 Thomas `93/128`、Melon `86/128`、Demand
+`96/128`、Ahmed `94/128`、Pipe `98/128`；严格超过 80% 还各差 10/17/7/9/5 胜。
+day10 的现金下降对应第三块地和约 20.5 株新增作物；day11 我方仍多约 17.1 株作物、约 39.8
+日产，因此 replay 前缀完成了资本形成。Thomas 却在 day11→12 的相对现金差继续恶化约 862，
+而另外四手改善约 596–1459。Thomas/Melon 的 day12 胜败现金差已分离约 2530/2109，到 day15
+才扩大到约 3003/3894，符合“接管首错、后期复利放大”。
+
+审计随后撤回了对 seed `2610100049` 的 sale-timing 归因。旧 `td_prepare_observation()` 从
+`h.policy.base` 生成 diagnostic，而 Python 所称 default 是已评分 proposal 的 argmax。该局实际
+default 为 id1（`discount=.08, capital_power=.5`），旧 `competitive_sale` 却是
+（`.005,.4,delay_sale=1`）；所以“默认卖 EGG/WHEAT、买 STRAWBERRY，而 candidate 卖 MELON、
+取消采购并翻盘”混入了资本估值变化，不是单变量证据。旧 formal selector 的胜负仍是有效的组合
+策略 A/B，但其中的 `competitive_sale` 类名不能再解释为纯卖出时机。
+
+根因已在 `policy/r1/bridge.cpp` 修复：两个 diagnostic 都从当局最高分 nondiagnostic proposal 的
+settings 派生，再只改各自命名的设置；测试固定复现 seed49 的 default=id1，并核对 discount 与
+capital_power 完全一致。修正后的新 warm A8：Thomas `8/16→8/16`、均分差 `+181`，Melon
+`8/16→8/16`、均分差 `+178`，无救败/致败。seed49 双座定点复核也仅为 Thomas
+`-2565→-2391`、Melon `-12009→-11841`，原来的翻盘消失。因此不再测试从旧污染样本后验得到的
+`买草莓 && 对手现金>=17000` 门控。
+
+为了分离污染中真正起作用的资本方案，又在全新 seeds `2615000000..7`、Thomas/Melon、双座 warm
+比较 auto 与原始 base proposal。32/32 个 handoff 状态的 auto 都选 id1。base 在 Thomas 上
+胜数 `10/16→10/16`（救 2、伤 2，均分差 `+921`），在 Melon 上 `12/16→10/16`、均分差
+`-597`。所以不能把修正简化成“handoff 首日统一保守投资”，也不继续扫 discount/capital_power。
+产物为 `work/warm-base-plan-vs-auto-A8-2615000000.npz`；纯化 diagnostic 产物为
+`work/pure-diagnostic-warm-A8-2614900000.npz` 与 `work/pure-diagnostic-warm-seed49.npz`。
+
+已完成三个只看 warm 的 DP 时序实验，均停止扩大：
+
+- 对手日产全部放在我方成交前：新 A8 Thomas 净 `+2/16`、均分差 `+1019`，但 Melon 净
+  `-2/16`，虽均分差 `+1170` 仍不满足逐手不退。
+- 同时把城镇需求全部放到成交后：两手净胜均为 0，均分差分别 `-1753/-2761`。
+- 把公开资产当前待售上界加入当日对手供给：weight=1 的 A8 曾为 Thomas `+2/16`、Melon
+  `+4/16`，但全新 B16 反向为 Thomas `-1/32`、Melon `-4/32`，均分差也为负。
+
+默认宏的双座 1,438 帧动作一致性通过；供给顺序实验宏随后已从正式源码删除。结论不是 50/50
+假设“精确”，而是统一顺序无法同时解释 Thomas 与 Melon，且公开资产上界会把不可见库存当成待售量。
+下一步只研究 handoff 首次重规划的评分误差；任何公开状态门控都必须在独立 seed 上先复现，
+不扫连续参数、不扩大已失败候选。
+
+### 最新因果定位：Thomas 的优势在共享价格冲击，但路线后验不可在线预测
+
+- 禁用 Thomas 的 RACE/RACEPX/RACEGATE（生产路线不变）后，同 8 seeds 双座我方从
+  `12/16` 到 `16/16`，平均分差 `+2769`。终局现金分解为我方 `+2100`、Thomas `-668`。
+- 分阶段差分在 day12 只有我方 `+92`、Thomas `-1171`，我方收益主要在后续价格传导中形成；
+  因而不能把 no-race 诊断误读为“R1 没有提前卖”。`settle_market()` 本来就逐帧清算全部非保留库存。
+- 关闭 R1 local-sale hold：Thomas B16 `+1/32` 但平均分差 `-910`；只在价高于 base 时释放：
+  `0/32`、`-144`。`delay_sale=1` 和两日 horizon 分别 `0/32,-420`、`-4/32,-2102`。
+- replay 侧复用已有 `CausalLeadSaleManager` 提前 5 步，以及扫描未来 40 步并做 base-price/debt
+  门控，Thomas B16 均 `Δwin=0`（分差 `-4.5/-89`）。不是已有库存卖慢，而是对手先卖自己的
+  未来批次，改变了我方后续产出的价格。
+- 147 维历史没有累计市场成交流。主切换在 step144/168，早于 Thomas step192 开始的 race。
+  真实部署树前缀跑到 step216 后做 12 路、Thomas+Melon、A32 双座 warm 反事实：前缀分布为
+  `G114=80,G275=32,G024=12,G316=4`；G114/G275 的 direct-payoff seed-CV 都不如 stay。
+  训练内 `G275→G190` 为 `26/32→28/32`，但全新 B16 对 Thomas/Melon 都 `Δwin=0`，拒绝。
+
+该公开成交流账本已完成：对七种不可购买商品逐 tick 做库存守恒，并在报价可能触底 1 时拒绝
+不精确样本。Thomas/Melon 的 A32 双座在 step216 前却全部是同一个累计向量
+`MILK=12,WOOL=12`，其余为 0，因此没有任何可学习信息，不扩入 147 维线上状态。
+
+warm direct-payoff 树曾在 B16 净 `+14/224`，加公开状态的 Herd 保守门控后 E16 净 `+18/224`
+且七手均过 80%，但独立 F32 对五弱手反向净 `-10/320`，Thomas 仅 59.4%，拒绝。混合 seat
+训练和逐对手 maximin 叶目标也在独立 8-seed pilot 中伤 Thomas/Herd。step192 的
+`G114→G190` 训练内 `14/24→18/24`，全新 B16 却使 Thomas/Melon 分别 `-6/-4` 胜。
+结论是 warm 反事实 oracle 主要包含 checkpoint 后不可观测的商店/RNG 后验；继续加树、换时间点
+或扩大同类标签不会解决可识别性。纯 R1/冷接管仍不做性能实验，默认部署未改。
+
+进一步只保留 8 个商店位和 2 个历史现金特征训练 maximin 树：I8 对五弱手净 `+10/80`，加
+Herd/Salem 保守门控后的独立 J16 仅净 `+3/160`，Melon `-1`、Thomas `0`，Thomas 胜率仍
+62.5%。低方差特征只能降低回撤，不能创造 Thomas 增益。下一机制实验应校准 DP 对公开对手资产
+未来供给的成交时序（Thomas 的 step192 race），不再扩 replay 树标签域。
+
+2026-09-21 的正式 64-seed 路线追踪已把主要失败定位到错误标签域：当前树的训练目标是另一条
+replay 路线一直跑到 day29 的胜负，但部署只让它运行到约 day12。五个弱对手各有 62/128 局
+被选为 `G114`，对应胜率仅 51.6%–61.3%；hard15 的 150 局中 120 局落到该路线。该条件统计
+不能单独证明禁用 G114（存在选择偏差），但足以把下一实验限定为：复用 147 维特征和成熟鲁棒树
+训练器，用真实 replay-prefix → delay1 warm-R1-suffix 终局结果重标当前活跃路线。
+
+该实验现已完成。候选固定为旧树活跃叶子的 9 条路线，检查点 144/168；A32 暴露并修复了旧
+`probe_handoff_label.py` 的阻断 bug（step0 会覆盖预装 schedule），随后以完整 observation+history
+哈希保证反事实前缀一致。扩至 128 个独立训练 seed 后，warm oracle 对五个弱手均为 95% 以上，
+训练内新树相对旧树逐手全正。冻结树的 B32 盲测净增 53/448；但再独立 C64 只从 767/896
+到 779/896（+12），逐手 Thomas -1、Melon -1、Demand +6、Ahmed -3、Pipe +6、Herd +5、
+Salem 0，平均分差 +214。按“弱手逐个不退”门槛，**不部署**。
+
+失败归因：成熟训练器先把每局 `(win, margin)` 的 oracle target 压成分类标签，再拟合分类树；
+这会丢掉各路线收益差，并把 checkpoint 后不可观测的未来商店/RNG噪声当作可预测类别。下一步若
+继续路线树，应复用同一完整反事实矩阵，直接按叶节点的配对期望胜负、再按分差选择 route，并用
+seed-group/leave-bot-out 评估策略收益；不要继续扩样、加深树或根据 B/C 重选阈值。
+
+产物：`work/warm-route-labels-g275-32seed-2610800000.npz`、
+`work/warm-route-labels-g275-96seed-seat0-2611000000.npz`、
+`work/warm-route-tree-ab-public7-32seed-2610900000.json`、
+`work/warm-route-tree128-ab-public7-32seed-2611100000.json`、
+`work/warm-route-tree128-confirm-public7-64seed-2611200000.json`。
+
 ## 统一边际价值实验：保留开关，不部署
 
 新增 `R1_CONFIG_OVERRIDES={"marginal_value":1}`，把 9 商品未来各日的完整组合价值中心差分
