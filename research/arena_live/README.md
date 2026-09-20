@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 20, 2026 at 2:10 PM UTC
+Updated: Sep 20, 2026 at 2:12 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -25,6 +25,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-shop-router-reactive-v4 | **PUBLIC** | 3-output-9bf89743ffb0 | archived |
 | TRI_A06_r12_r3_fix1 | Team | 819df830076c | active |
 | kaggriculture-cloning-agent | **PUBLIC** | 4-output-15e07f56740d | placement-rated |
+| Broad PPO CP120 | Team | broad-cp120-844b4e09a4c0 | placement-rated |
 | demand-preserving-turn-sale-timing | **PUBLIC** | 2-output-c47e316589ea | active |
 | kaggriculture-pipe-7-wheat-microstructure | **PUBLIC** | 1-output-4909de76ffa0 | archived |
 | kaggriculture-v36-guarded-four-turn-sales | **PUBLIC** | 1-output-854cd1d0ab40 | archived |
@@ -302,6 +303,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-095552b8d11f9e950130 | Complete | 1/1 |
 | placement-0af437c2cdce945e16ab | Provisional | 12/384 |
 | placement-1a265b2a1ce0a2fc8039 | Complete | 384/384 |
+| placement-1aac2704ba94715a5f7e | Complete | 1/1 |
 | placement-1f8c404afcc08f9ae801 | Provisional | 70/384 |
 | placement-21a75b8772e565d34823 | Provisional | 51/384 |
 | placement-2d40cead6548ceb0d282 | Provisional | 0/384 |
@@ -1745,7 +1747,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- AFS R1 vs AFS R2: -8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.

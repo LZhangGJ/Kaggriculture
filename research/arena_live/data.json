@@ -194,6 +194,20 @@
       "version": "4-output-15e07f56740d"
     },
     {
+      "agent_type": "team",
+      "aliases": [],
+      "author": "keithtyser",
+      "id": "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c",
+      "last_checked": null,
+      "name": "Broad PPO CP120",
+      "notebook": null,
+      "notebook_version": null,
+      "refresh_status": "not configured",
+      "status": "placement-rated",
+      "validation_failed": false,
+      "version": "broad-cp120-844b4e09a4c0"
+    },
+    {
       "agent_type": "public",
       "aliases": [],
       "author": "tetsutani",
@@ -202631,6 +202645,125 @@
       "updated": "2026-09-16T04:41:19.055197+00:00"
     },
     {
+      "complete": true,
+      "completed": 1,
+      "components": [
+        [
+          "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c",
+          "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8"
+        ]
+      ],
+      "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+      "created": "2026-09-20T14:12:07.436937+00:00",
+      "fingerprint": "f61cc35b18e388c8b95988fa1e68c32fb764fb993ef7c34c6e9c6f45a0688eeb",
+      "intervals": {
+        "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c": null,
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": null
+      },
+      "kind": "placement",
+      "matrix": {
+        "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 1,
+          "cash_margin": -10158.0,
+          "draws": 0,
+          "games": 1,
+          "losses": 1,
+          "score": 0.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 1,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            }
+          },
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c": {
+          "cash_games": 1,
+          "cash_margin": 10158.0,
+          "draws": 0,
+          "games": 1,
+          "losses": 0,
+          "score": 1.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 1,
+              "wins": 1
+            }
+          },
+          "win_rate": 1.0,
+          "wins": 1
+        }
+      },
+      "method": "half-win-bt-v2",
+      "method_description": "Bradley-Terry; draws half wins; centered strengths; Gaussian SD=3 regularization; no seat adjustment",
+      "planned": 1,
+      "ratings": {
+        "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c": -1.0255221401275127,
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": 1.0255221401275127
+      },
+      "run": "placement-1aac2704ba94715a5f7e",
+      "stats": {
+        "1aac2704ba94715a5f7e3cefdee3c1c2104717692c848d9fd90fa7a1bd0e3d6c": {
+          "cash_games": 1,
+          "cash_margin": -10158.0,
+          "draws": 0,
+          "games": 1,
+          "losses": 1,
+          "score": 0.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 1,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            }
+          },
+          "win_rate": 0.0,
+          "wins": 0
+        },
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 1,
+          "cash_margin": 10158.0,
+          "draws": 0,
+          "games": 1,
+          "losses": 0,
+          "score": 1.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 1,
+              "wins": 1
+            }
+          },
+          "win_rate": 1.0,
+          "wins": 1
+        }
+      },
+      "updated": "2026-09-20T14:12:46.140654+00:00"
+    },
+    {
       "complete": false,
       "completed": 70,
       "components": [
@@ -278236,5 +278369,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-20T14:10:56.383607+00:00"
+  "updated": "2026-09-20T14:12:48.210225+00:00"
 }
