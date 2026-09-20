@@ -1,0 +1,13 @@
+{
+  "schema": "replay-route-to-dynamic-v1",
+  "opening": "G275",
+  "handoff_step": 288,
+  "handoff_land": 3,
+  "sha256": {
+    "teammate_base.py": "3e5fcb4b908a0f3bc8e8be6f7545473ab376ab3b22f672222b395ce25f9fe0cc",
+    "route_actions.json.zlib": "46eb5291d5880106363b4cb9abdcee2ff61caaa75c9c8403106c249e002e9379",
+    "route_library.json": "664c088d2518a12a1ad9c6b03bf3cc62630cc5e9ba0a970b59636a9462a92d65",
+    "route_policy.json": "2a0bc65ac1b6a6351494b425c5e1b9df0471b1dcc4d3e1ff4146e9cc29578be4"
+  },
+  "handoff_land_delay_days": 1
+}

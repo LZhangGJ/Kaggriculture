@@ -1,0 +1,155 @@
+{
+  "candidate": "/root/kaggriculture-t2-ideas-v1/experiments/public-bot-85-v1/template-decoder-v1/main.py",
+  "seed": 2609500000,
+  "both_seats": true,
+  "summary": {
+    "thomas_2945": {
+      "games": 0,
+      "wins": 0,
+      "mean_margin": null,
+      "errors": 2
+    },
+    "melon_2749": {
+      "games": 0,
+      "wins": 0,
+      "mean_margin": null,
+      "errors": 2
+    },
+    "demand_preserving": {
+      "games": 0,
+      "wins": 0,
+      "mean_margin": null,
+      "errors": 2
+    },
+    "ahmed_v47": {
+      "games": 1,
+      "wins": 1,
+      "mean_margin": 2553.0,
+      "errors": 1
+    },
+    "pipe8": {
+      "games": 0,
+      "wins": 0,
+      "mean_margin": null,
+      "errors": 2
+    },
+    "herd_safe_2700": {
+      "games": 0,
+      "wins": 0,
+      "mean_margin": null,
+      "errors": 2
+    },
+    "salemali7_2900": {
+      "games": 1,
+      "wins": 1,
+      "mean_margin": 44463.0,
+      "errors": 1
+    }
+  },
+  "rows": [
+    {
+      "label": "candidate",
+      "bot": "thomas_2945",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "thomas_2945",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "melon_2749",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "melon_2749",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "demand_preserving",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "demand_preserving",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "ahmed_v47",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "ahmed_v47",
+      "seed": 2609500000,
+      "seat": 1,
+      "cash": 92046.0,
+      "opponent_cash": 89493.0,
+      "margin": 2553.0,
+      "error": null
+    },
+    {
+      "label": "candidate",
+      "bot": "pipe8",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "pipe8",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "herd_safe_2700",
+      "seed": 2609500000,
+      "seat": 0,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "herd_safe_2700",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    },
+    {
+      "label": "candidate",
+      "bot": "salemali7_2900",
+      "seed": 2609500000,
+      "seat": 0,
+      "cash": 101274.0,
+      "opponent_cash": 56811.0,
+      "margin": 44463.0,
+      "error": null
+    },
+    {
+      "label": "candidate",
+      "bot": "salemali7_2900",
+      "seed": 2609500000,
+      "seat": 1,
+      "error": "IndexError('list index out of range')"
+    }
+  ]
+}

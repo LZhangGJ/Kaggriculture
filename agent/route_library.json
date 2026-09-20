@@ -1,0 +1,4911 @@
+{
+  "schema_version": 1,
+  "taxonomy": "unified failure-independent intent families",
+  "carrier_role": "movement and maintenance skeleton only; intent specs are authoritative",
+  "opponent_routes": [
+    {
+      "family": "G001",
+      "alias": "胡萝卜31麦19-牛8羊6-3地-早畜",
+      "route_id": "110808388:1",
+      "team": "Bruce",
+      "support": 242,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G002",
+      "alias": "胡萝卜28麦22-羊11牛6-3地-早畜",
+      "route_id": "110833941:1",
+      "team": "JOSHNA ACSHA S 21CS",
+      "support": 70,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G003",
+      "alias": "胡萝卜36麦14-羊11牛6-4地-早畜",
+      "route_id": "110847935:1",
+      "team": "JezzLynn",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G004",
+      "alias": "胡萝卜32麦24-牛9鹅3-3地-早畜",
+      "route_id": "110780180:1",
+      "team": "アルモンド",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G005",
+      "alias": "胡萝卜40麦10-鹅7羊6-3地-早畜",
+      "route_id": "110847165:1",
+      "team": "JOSHNA ACSHA S 21CS",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G006",
+      "alias": "胡萝卜31麦19-牛6羊6-3地-早畜",
+      "route_id": "110815366:1",
+      "team": "Hamed Vakili",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G007",
+      "alias": "麦44胡萝卜6-牛11羊3-4地-早畜",
+      "route_id": "110817471:1",
+      "team": "Orbital Terraformer",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G008",
+      "alias": "胡萝卜31麦19-牛9羊5-3地-早畜",
+      "route_id": "110845727:0",
+      "team": "Driz Lo",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G009",
+      "alias": "胡萝卜40麦13-牛6羊6-3地-早畜",
+      "route_id": "110788920:1",
+      "team": "アルモンド",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G010",
+      "alias": "胡萝卜37麦13-牛8羊6-3地-早畜",
+      "route_id": "110806977:0",
+      "team": "mikelou1",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G011",
+      "alias": "胡萝卜31麦19-羊11牛6-3地-早畜",
+      "route_id": "110812803:0",
+      "team": "mikelou1",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G012",
+      "alias": "麦30胡萝卜17-牛11鹅3-3地-早畜",
+      "route_id": "110804134:0",
+      "team": "ymg_aq",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G013",
+      "alias": "胡萝卜46草莓16-鹅5牛4-3地-早畜",
+      "route_id": "110825079:0",
+      "team": "carbonapi",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G014",
+      "alias": "胡萝卜34麦20-牛7羊3-4地-早畜",
+      "route_id": "110774688:0",
+      "team": "Majkel1337",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G015",
+      "alias": "胡萝卜43草莓15-鹅9牛4-3地-早畜",
+      "route_id": "110788531:0",
+      "team": "feel the agi",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G016",
+      "alias": "胡萝卜32麦18-羊6鹅3-3地-早畜",
+      "route_id": "110810615:1",
+      "team": "アルモンド",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G018",
+      "alias": "胡萝卜41麦9-羊17牛6-4地-早畜",
+      "route_id": "110848986:1",
+      "team": "Roxy",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G019",
+      "alias": "麦43草莓12-牛15鹅2-3地-早畜",
+      "route_id": "110807613:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G020",
+      "alias": "麦43胡萝卜5-牛14羊4-3地-早畜",
+      "route_id": "110793078:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 55
+    },
+    {
+      "family": "G021",
+      "alias": "麦43草莓6-牛15羊7-3地-早畜",
+      "route_id": "110797624:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G023",
+      "alias": "麦52草莓23-牛11鹅5-4地-早畜",
+      "route_id": "110833700:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G024",
+      "alias": "麦38番茄14-羊15牛6-4地-早畜",
+      "route_id": "110827368:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 23
+    },
+    {
+      "family": "G026",
+      "alias": "麦30草莓11-牛14羊7-3地-早畜",
+      "route_id": "110853718:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G027",
+      "alias": "麦43草莓10-牛13羊3-3地-早畜",
+      "route_id": "110827120:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G029",
+      "alias": "麦41胡萝卜5-牛11羊8-4地-早畜",
+      "route_id": "110787897:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 44
+    },
+    {
+      "family": "G030",
+      "alias": "麦33胡萝卜9-羊15牛9-3地-早畜",
+      "route_id": "110840552:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G031",
+      "alias": "麦46草莓14-牛8鹅4-3地-早畜",
+      "route_id": "110828450:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G032",
+      "alias": "麦35胡萝卜9-牛7羊5-3地-早畜",
+      "route_id": "110837263:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G033",
+      "alias": "麦38草莓11-羊11牛10-3地-早畜",
+      "route_id": "110846061:0",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 17
+    },
+    {
+      "family": "G034",
+      "alias": "麦34草莓14-牛12鹅9-3地-早畜",
+      "route_id": "110841640:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G038",
+      "alias": "胡萝卜27麦26-牛14羊8-3地-早畜",
+      "route_id": "110800993:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G040",
+      "alias": "麦45草莓11-羊10牛8-3地-早畜",
+      "route_id": "110821847:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G041",
+      "alias": "麦22胡萝卜22-羊13牛10-3地-早畜",
+      "route_id": "110845975:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G042",
+      "alias": "麦44草莓10-牛14羊3-4地-早畜",
+      "route_id": "110808765:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 33
+    },
+    {
+      "family": "G043",
+      "alias": "麦37番茄23-牛9羊4-3地-早畜",
+      "route_id": "110832616:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G044",
+      "alias": "麦69草莓12-鹅8牛8-4地-早畜",
+      "route_id": "110819703:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G046",
+      "alias": "麦40番茄5-羊16牛9-3地-早畜",
+      "route_id": "110816612:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G047",
+      "alias": "麦31胡萝卜12-牛14羊3-4地-早畜",
+      "route_id": "110853714:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 29
+    },
+    {
+      "family": "G048",
+      "alias": "麦40番茄4-羊26鹅2-3地-早畜",
+      "route_id": "110795481:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G049",
+      "alias": "麦38番茄10-牛11羊6-3地-早畜",
+      "route_id": "110791074:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G050",
+      "alias": "麦28胡萝卜15-牛9羊8-4地-早畜",
+      "route_id": "110860277:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G051",
+      "alias": "麦35胡萝卜8-羊20牛5-3地-早畜",
+      "route_id": "110833942:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G052",
+      "alias": "麦40草莓8-牛11羊4-3地-早畜",
+      "route_id": "110789018:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G053",
+      "alias": "麦37草莓14-牛11羊4-3地-早畜",
+      "route_id": "110832600:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G056",
+      "alias": "麦42草莓12-牛11羊4-3地-早畜",
+      "route_id": "110843922:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G057",
+      "alias": "麦42胡萝卜7-羊10牛7-3地-早畜",
+      "route_id": "110837226:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G059",
+      "alias": "麦28草莓13-羊13牛8-4地-早畜",
+      "route_id": "110838077:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G061",
+      "alias": "胡萝卜39番茄13-羊7牛4-4地-早畜",
+      "route_id": "110834761:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G062",
+      "alias": "麦31胡萝卜20-羊10牛5-3地-早畜",
+      "route_id": "110836053:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G065",
+      "alias": "麦31胡萝卜10-牛9羊4-3地-早畜",
+      "route_id": "110827390:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G066",
+      "alias": "麦47番茄17-牛8鹅7-4地-早畜",
+      "route_id": "110831293:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G069",
+      "alias": "胡萝卜27麦18-牛9羊8-3地-早畜",
+      "route_id": "110814279:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 19
+    },
+    {
+      "family": "G070",
+      "alias": "麦43草莓15-羊9牛8-4地-早畜",
+      "route_id": "110814298:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 699
+    },
+    {
+      "family": "G072",
+      "alias": "胡萝卜27麦26-羊12牛5-4地-早畜",
+      "route_id": "110827343:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 363
+    },
+    {
+      "family": "G073",
+      "alias": "胡萝卜42番茄13-牛6羊5-3地-早畜",
+      "route_id": "110804132:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G076",
+      "alias": "麦36胡萝卜12-牛10羊5-3地-早畜",
+      "route_id": "110791085:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G078",
+      "alias": "麦35草莓10-羊19牛11-3地-早畜",
+      "route_id": "110826011:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 21
+    },
+    {
+      "family": "G079",
+      "alias": "胡萝卜36麦13-牛16羊3-3地-早畜",
+      "route_id": "110844953:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G080",
+      "alias": "麦42草莓19-羊9鹅2-3地-早畜",
+      "route_id": "110847972:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G081",
+      "alias": "胡萝卜24麦21-牛11羊3-4地-早畜",
+      "route_id": "110768104:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G082",
+      "alias": "胡萝卜25麦20-牛10羊8-4地-早畜",
+      "route_id": "110807592:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 41
+    },
+    {
+      "family": "G083",
+      "alias": "麦38番茄5-羊14牛10-3地-早畜",
+      "route_id": "110841445:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G085",
+      "alias": "麦31胡萝卜15-羊11牛8-4地-早畜",
+      "route_id": "110824032:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 61
+    },
+    {
+      "family": "G086",
+      "alias": "麦55草莓2-牛9羊8-4地-早畜",
+      "route_id": "110840547:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 645
+    },
+    {
+      "family": "G087",
+      "alias": "胡萝卜31草莓22-牛9羊5-4地-早畜",
+      "route_id": "110828367:1",
+      "team": "mikelou1",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G088",
+      "alias": "麦34草莓12-羊20牛8-4地-早畜",
+      "route_id": "110842887:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G089",
+      "alias": "麦29胡萝卜25-牛8鹅7-3地-早畜",
+      "route_id": "110836977:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G090",
+      "alias": "麦42胡萝卜5-羊17牛4-3地-早畜",
+      "route_id": "110830653:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G092",
+      "alias": "麦38草莓12-牛8羊4-3地-早畜",
+      "route_id": "110802034:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G094",
+      "alias": "麦34草莓4-羊25牛7-3地-早畜",
+      "route_id": "110842538:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G095",
+      "alias": "草莓26麦24-鹅4牛4-3地-早畜",
+      "route_id": "110815349:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 53
+    },
+    {
+      "family": "G097",
+      "alias": "麦22番茄16-牛7羊6-3地-早畜",
+      "route_id": "110847167:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G099",
+      "alias": "麦43草莓10-牛11鹅2-3地-早畜",
+      "route_id": "110802013:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G101",
+      "alias": "胡萝卜32麦23-牛11羊3-3地-早畜",
+      "route_id": "110847925:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G103",
+      "alias": "麦33胡萝卜14-羊12牛8-3地-早畜",
+      "route_id": "110814296:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G104",
+      "alias": "麦25胡萝卜23-羊20鹅4-3地-早畜",
+      "route_id": "110820769:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G105",
+      "alias": "麦28胡萝卜17-羊14牛11-3地-早畜",
+      "route_id": "110827372:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G106",
+      "alias": "胡萝卜33麦15-牛5鹅4-4地-早畜",
+      "route_id": "110866886:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G111",
+      "alias": "麦25胡萝卜20-牛14鹅3-3地-早畜",
+      "route_id": "110821843:0",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G113",
+      "alias": "麦20胡萝卜18-牛14羊7-4地-早畜",
+      "route_id": "110797607:1",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G114",
+      "alias": "胡萝卜28麦15-牛11羊3-4地-早畜",
+      "route_id": "110820756:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G116",
+      "alias": "麦39胡萝卜12-羊11牛8-3地-早畜",
+      "route_id": "110840540:1",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G117",
+      "alias": "麦30草莓16-羊27牛2-3地-早畜",
+      "route_id": "110799754:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 56
+    },
+    {
+      "family": "G118",
+      "alias": "胡萝卜30麦17-牛10鹅3-3地-早畜",
+      "route_id": "110815369:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G122",
+      "alias": "胡萝卜29麦27-牛13羊2-4地-早畜",
+      "route_id": "110789016:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 366
+    },
+    {
+      "family": "G123",
+      "alias": "麦24草莓18-鹅4牛4-3地-早畜",
+      "route_id": "110827344:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G125",
+      "alias": "麦43胡萝卜1-羊22鹅4-3地-早畜",
+      "route_id": "110800985:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G126",
+      "alias": "麦40胡萝卜9-羊16牛2-3地-早畜",
+      "route_id": "110814423:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 149
+    },
+    {
+      "family": "G129",
+      "alias": "麦31胡萝卜18-牛10羊7-3地-早畜",
+      "route_id": "110831437:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G130",
+      "alias": "胡萝卜36麦25-鹅7牛4-3地-早畜",
+      "route_id": "110852541:1",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G131",
+      "alias": "麦34胡萝卜16-牛11羊3-3地-早畜",
+      "route_id": "110865604:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G132",
+      "alias": "麦32胡萝卜20-羊8牛5-3地-早畜",
+      "route_id": "110830657:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G136",
+      "alias": "麦30胡萝卜23-羊14牛4-4地-早畜",
+      "route_id": "110833943:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 357
+    },
+    {
+      "family": "G141",
+      "alias": "麦49草莓8-羊6牛5-3地-早畜",
+      "route_id": "110827341:1",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G142",
+      "alias": "麦26胡萝卜26-牛9羊3-4地-早畜",
+      "route_id": "110847160:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G143",
+      "alias": "麦39草莓11-牛11羊8-3地-早畜",
+      "route_id": "110841248:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G149",
+      "alias": "麦25胡萝卜18-羊11牛8-3地-早畜",
+      "route_id": "110810938:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G151",
+      "alias": "麦47胡萝卜7-羊9牛6-3地-早畜",
+      "route_id": "110843895:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G152",
+      "alias": "胡萝卜33麦21-牛8羊4-3地-早畜",
+      "route_id": "110820766:1",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G155",
+      "alias": "麦38胡萝卜15-羊18牛4-4地-早畜",
+      "route_id": "110826241:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G157",
+      "alias": "麦27胡萝卜22-牛11羊3-4地-早畜",
+      "route_id": "110814159:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G159",
+      "alias": "麦36胡萝卜13-羊9牛6-3地-早畜",
+      "route_id": "110823792:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G160",
+      "alias": "麦24胡萝卜21-羊9牛2-3地-早畜",
+      "route_id": "110826188:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 41
+    },
+    {
+      "family": "G163",
+      "alias": "麦40胡萝卜12-羊11牛3-3地-早畜",
+      "route_id": "110820829:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 147
+    },
+    {
+      "family": "G164",
+      "alias": "麦29胡萝卜18-羊7鹅6-4地-早畜",
+      "route_id": "110820768:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G167",
+      "alias": "麦28胡萝卜11-羊14牛6-4地-早畜",
+      "route_id": "110847164:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G168",
+      "alias": "麦37番茄8-牛9羊9-3地-早畜",
+      "route_id": "110807611:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G169",
+      "alias": "胡萝卜27麦20-牛10羊8-3地-早畜",
+      "route_id": "110836104:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G170",
+      "alias": "麦47草莓4-羊9牛8-3地-早畜",
+      "route_id": "110835049:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G171",
+      "alias": "麦35胡萝卜12-牛8鹅4-3地-早畜",
+      "route_id": "110847168:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G172",
+      "alias": "麦28胡萝卜24-羊13鹅3-3地-早畜",
+      "route_id": "110853719:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G175",
+      "alias": "麦41番茄10-牛9羊9-3地-早畜",
+      "route_id": "110790656:0",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G176",
+      "alias": "麦25胡萝卜19-羊8鹅2-3地-早畜",
+      "route_id": "110795528:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G178",
+      "alias": "麦68草莓17-牛7鹅6-4地-早畜",
+      "route_id": "110844535:0",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G179",
+      "alias": "麦41胡萝卜11-牛10鹅3-3地-早畜",
+      "route_id": "110817677:0",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G180",
+      "alias": "麦15番茄15-羊9鹅8-3地-早畜",
+      "route_id": "110860286:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G185",
+      "alias": "麦42胡萝卜4-羊17牛1-3地-早畜",
+      "route_id": "110827375:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 146
+    },
+    {
+      "family": "G188",
+      "alias": "麦36胡萝卜21-羊12牛5-4地-早畜",
+      "route_id": "110800979:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 331
+    },
+    {
+      "family": "G189",
+      "alias": "胡萝卜28麦13-羊17牛6-3地-早畜",
+      "route_id": "110799341:0",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G190",
+      "alias": "麦25胡萝卜20-牛6鹅5-3地-早畜",
+      "route_id": "110825070:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G191",
+      "alias": "麦44草莓11-羊8鹅6-3地-早畜",
+      "route_id": "110833935:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G195",
+      "alias": "胡萝卜27麦23-牛12羊3-4地-早畜",
+      "route_id": "110761433:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 17
+    },
+    {
+      "family": "G196",
+      "alias": "麦32胡萝卜15-羊12牛5-4地-早畜",
+      "route_id": "110826266:0",
+      "team": "Agricola",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G197",
+      "alias": "胡萝卜30麦27-牛7羊2-3地-早畜",
+      "route_id": "110824889:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G198",
+      "alias": "麦32胡萝卜21-羊13牛7-3地-早畜",
+      "route_id": "110832834:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 59
+    },
+    {
+      "family": "G200",
+      "alias": "胡萝卜23麦19-牛11羊3-3地-早畜",
+      "route_id": "110846071:0",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G201",
+      "alias": "胡萝卜44草莓2-羊15牛10-3地-早畜",
+      "route_id": "110789001:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G203",
+      "alias": "麦33草莓12-牛10羊3-3地-早畜",
+      "route_id": "110808760:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G204",
+      "alias": "麦46草莓8-牛9鹅5-3地-早畜",
+      "route_id": "110835051:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G207",
+      "alias": "麦38番茄10-羊5牛4-3地-早畜",
+      "route_id": "110821834:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G209",
+      "alias": "胡萝卜28麦15-牛11鹅3-3地-早畜",
+      "route_id": "110796044:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G210",
+      "alias": "胡萝卜33麦21-牛8羊8-3地-早畜",
+      "route_id": "110814406:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G213",
+      "alias": "麦31胡萝卜27-羊13牛1-3地-早畜",
+      "route_id": "110785740:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G214",
+      "alias": "麦39胡萝卜13-羊10牛5-4地-早畜",
+      "route_id": "110828206:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 34
+    },
+    {
+      "family": "G215",
+      "alias": "麦28胡萝卜27-牛8羊5-3地-早畜",
+      "route_id": "110848152:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G217",
+      "alias": "草莓22胡萝卜20-牛8羊3-3地-早畜",
+      "route_id": "110819891:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G219",
+      "alias": "麦30草莓21-鹅3羊3-3地-早畜",
+      "route_id": "110842697:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 144
+    },
+    {
+      "family": "G220",
+      "alias": "麦38胡萝卜10-牛11羊10-4地-早畜",
+      "route_id": "110835907:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 22
+    },
+    {
+      "family": "G223",
+      "alias": "胡萝卜35麦14-牛12鹅8-3地-早畜",
+      "route_id": "110802006:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G224",
+      "alias": "麦41胡萝卜8-羊17牛4-3地-早畜",
+      "route_id": "110831674:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G225",
+      "alias": "麦40胡萝卜15-牛7羊4-3地-早畜",
+      "route_id": "110813149:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 76
+    },
+    {
+      "family": "G226",
+      "alias": "麦26胡萝卜13-牛9鹅8-3地-早畜",
+      "route_id": "110840553:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 44
+    },
+    {
+      "family": "G228",
+      "alias": "麦57草莓14-鹅10牛7-4地-早畜",
+      "route_id": "110836755:0",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G230",
+      "alias": "麦47草莓4-牛15羊9-3地-早畜",
+      "route_id": "110823066:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G235",
+      "alias": "麦32番茄15-牛12羊3-3地-早畜",
+      "route_id": "110817473:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G237",
+      "alias": "胡萝卜37麦24-牛8鹅3-3地-早畜",
+      "route_id": "110797500:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G239",
+      "alias": "胡萝卜46麦6-羊14牛4-3地-早畜",
+      "route_id": "110819318:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G244",
+      "alias": "胡萝卜29麦21-牛6羊5-3地-早畜",
+      "route_id": "110814293:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G246",
+      "alias": "麦37番茄11-牛10鹅3-3地-早畜",
+      "route_id": "110833933:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G247",
+      "alias": "麦39番茄8-鹅10羊7-3地-早畜",
+      "route_id": "110824143:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G248",
+      "alias": "麦51胡萝卜5-牛14羊2-4地-早畜",
+      "route_id": "110847169:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 646
+    },
+    {
+      "family": "G249",
+      "alias": "胡萝卜39麦16-牛5鹅4-3地-早畜",
+      "route_id": "110840539:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 18
+    },
+    {
+      "family": "G252",
+      "alias": "麦45胡萝卜11-牛12羊3-4地-早畜",
+      "route_id": "110795559:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 364
+    },
+    {
+      "family": "G253",
+      "alias": "麦59番茄1-牛7鹅6-3地-早畜",
+      "route_id": "110807609:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G254",
+      "alias": "麦47番茄12-牛10羊5-3地-早畜",
+      "route_id": "110829272:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G257",
+      "alias": "麦27胡萝卜24-牛9羊5-3地-早畜",
+      "route_id": "110821002:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G260",
+      "alias": "麦45胡萝卜8-羊8牛5-3地-早畜",
+      "route_id": "110834954:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G261",
+      "alias": "麦28胡萝卜23-羊10牛3-4地-早畜",
+      "route_id": "110847163:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 664
+    },
+    {
+      "family": "G262",
+      "alias": "胡萝卜45麦10-牛9羊2-3地-早畜",
+      "route_id": "110808158:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 6
+    },
+    {
+      "family": "G263",
+      "alias": "麦42胡萝卜13-鹅8牛5-4地-早畜",
+      "route_id": "110833954:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G264",
+      "alias": "麦25胡萝卜20-牛12羊7-3地-早畜",
+      "route_id": "110808777:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G265",
+      "alias": "麦33胡萝卜18-牛9羊8-3地-早畜",
+      "route_id": "110824840:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G266",
+      "alias": "胡萝卜38麦21-牛8羊2-3地-早畜",
+      "route_id": "110821610:0",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G267",
+      "alias": "胡萝卜30麦20-羊11牛6-3地-早畜",
+      "route_id": "110788970:0",
+      "team": "mikelou1",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G268",
+      "alias": "麦28胡萝卜19-牛6鹅4-3地-早畜",
+      "route_id": "110860289:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G269",
+      "alias": "麦39番茄12-羊9牛6-4地-早畜",
+      "route_id": "110781289:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 23
+    },
+    {
+      "family": "G270",
+      "alias": "胡萝卜28麦16-牛5鹅4-3地-早畜",
+      "route_id": "110847165:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G272",
+      "alias": "麦28胡萝卜18-牛10羊7-3地-早畜",
+      "route_id": "110774740:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G274",
+      "alias": "麦27番茄13-鹅9牛6-3地-早畜",
+      "route_id": "110800989:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G275",
+      "alias": "麦33胡萝卜20-牛6鹅4-4地-早畜",
+      "route_id": "110808783:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G277",
+      "alias": "胡萝卜34麦22-牛6羊4-3地-早畜",
+      "route_id": "110802032:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G282",
+      "alias": "麦34胡萝卜24-鹅6羊4-3地-早畜",
+      "route_id": "110789020:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G283",
+      "alias": "胡萝卜36麦14-羊9鹅6-4地-早畜",
+      "route_id": "110833648:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G284",
+      "alias": "麦46胡萝卜8-鹅7牛4-4地-早畜",
+      "route_id": "110851524:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 6
+    },
+    {
+      "family": "G287",
+      "alias": "胡萝卜31麦17-牛12羊5-3地-早畜",
+      "route_id": "110823724:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G288",
+      "alias": "胡萝卜31麦22-牛6羊6-4地-早畜",
+      "route_id": "110800960:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 25
+    },
+    {
+      "family": "G289",
+      "alias": "麦25胡萝卜23-鹅7羊7-3地-早畜",
+      "route_id": "110814297:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 32
+    },
+    {
+      "family": "G291",
+      "alias": "麦33胡萝卜13-牛6鹅4-4地-早畜",
+      "route_id": "110840544:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 67
+    },
+    {
+      "family": "G292",
+      "alias": "胡萝卜40麦17-牛7羊3-3地-早畜",
+      "route_id": "110801845:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G297",
+      "alias": "麦30胡萝卜14-牛8羊7-3地-早畜",
+      "route_id": "110782386:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G300",
+      "alias": "胡萝卜48番茄9-牛8羊2-3地-早畜",
+      "route_id": "110844860:0",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G301",
+      "alias": "胡萝卜44麦26-鹅11牛2-4地-早畜",
+      "route_id": "110832494:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G302",
+      "alias": "麦32胡萝卜16-羊8鹅4-4地-早畜",
+      "route_id": "110827346:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 32
+    },
+    {
+      "family": "G304",
+      "alias": "胡萝卜32麦21-鹅5牛5-3地-早畜",
+      "route_id": "110844907:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G305",
+      "alias": "胡萝卜40麦13-鹅4牛4-3地-早畜",
+      "route_id": "110804062:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G309",
+      "alias": "胡萝卜34麦22-牛6鹅2-3地-早畜",
+      "route_id": "110845655:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 145
+    },
+    {
+      "family": "G310",
+      "alias": "麦35草莓11-鹅10羊4-3地-早畜",
+      "route_id": "110827345:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G311",
+      "alias": "麦36胡萝卜11-鹅6羊5-3地-早畜",
+      "route_id": "110833940:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G312",
+      "alias": "胡萝卜42麦15-牛7鹅6-3地-早畜",
+      "route_id": "110832814:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G314",
+      "alias": "胡萝卜54麦7-羊8鹅1-3地-早畜",
+      "route_id": "110810894:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G316",
+      "alias": "麦26胡萝卜15-羊13牛6-4地-早畜",
+      "route_id": "110827342:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G317",
+      "alias": "麦42番茄5-牛9鹅6-3地-早畜",
+      "route_id": "110789011:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G318",
+      "alias": "胡萝卜40麦17-羊7牛5-4地-早畜",
+      "route_id": "110847157:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 37
+    },
+    {
+      "family": "G319",
+      "alias": "麦30胡萝卜21-羊10鹅1-3地-早畜",
+      "route_id": "110808774:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G320",
+      "alias": "麦39胡萝卜16-羊6牛5-3地-早畜",
+      "route_id": "110843814:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G321",
+      "alias": "胡萝卜21麦17-牛11羊5-4地-早畜",
+      "route_id": "110828441:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G322",
+      "alias": "麦41番茄8-羊10牛6-4地-早畜",
+      "route_id": "110808745:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 36
+    },
+    {
+      "family": "G323",
+      "alias": "胡萝卜33麦17-羊9牛6-3地-早畜",
+      "route_id": "110802059:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G324",
+      "alias": "胡萝卜37麦14-牛6羊5-3地-早畜",
+      "route_id": "110847041:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G325",
+      "alias": "麦28胡萝卜21-牛8羊7-3地-早畜",
+      "route_id": "110794464:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G329",
+      "alias": "麦37胡萝卜10-鹅7牛7-3地-早畜",
+      "route_id": "110808755:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G332",
+      "alias": "胡萝卜42番茄11-牛7鹅4-3地-早畜",
+      "route_id": "110799712:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G333",
+      "alias": "胡萝卜33麦12-牛6羊3-3地-早畜",
+      "route_id": "110815367:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G334",
+      "alias": "麦59胡萝卜4-牛6鹅2-3地-早畜",
+      "route_id": "110835045:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G335",
+      "alias": "麦32胡萝卜19-羊9牛7-3地-早畜",
+      "route_id": "110823050:1",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G336",
+      "alias": "胡萝卜31麦18-牛8鹅5-3地-早畜",
+      "route_id": "110839403:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 22
+    },
+    {
+      "family": "G337",
+      "alias": "麦56-羊16牛3-3地-早畜",
+      "route_id": "110827107:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 28
+    },
+    {
+      "family": "G338",
+      "alias": "麦31胡萝卜18-牛7鹅4-3地-早畜",
+      "route_id": "110828191:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G341",
+      "alias": "胡萝卜35草莓12-牛7羊3-3地-早畜",
+      "route_id": "110810513:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G343",
+      "alias": "胡萝卜29麦21-羊6鹅4-3地-早畜",
+      "route_id": "110828358:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G344",
+      "alias": "胡萝卜47麦10-牛8鹅4-3地-早畜",
+      "route_id": "110840283:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G345",
+      "alias": "胡萝卜35麦15-羊10牛5-3地-早畜",
+      "route_id": "110795496:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G347",
+      "alias": "麦40胡萝卜10-鹅10牛4-3地-早畜",
+      "route_id": "110795508:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G348",
+      "alias": "胡萝卜43麦11-牛7羊7-3地-早畜",
+      "route_id": "110830614:0",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G349",
+      "alias": "麦45番茄8-牛8鹅3-3地-早畜",
+      "route_id": "110813930:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G352",
+      "alias": "麦36胡萝卜17-牛8羊2-3地-早畜",
+      "route_id": "110788997:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G354",
+      "alias": "胡萝卜48番茄7-鹅9牛4-3地-早畜",
+      "route_id": "110818273:0",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G359",
+      "alias": "麦45胡萝卜8-羊13牛6-3地-早畜",
+      "route_id": "110807610:0",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G360",
+      "alias": "麦37胡萝卜4-鹅10牛9-3地-早畜",
+      "route_id": "110782404:0",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G363",
+      "alias": "麦54胡萝卜10-鹅12羊7-4地-早畜",
+      "route_id": "110843771:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G365",
+      "alias": "胡萝卜37麦22-羊6鹅5-3地-早畜",
+      "route_id": "110785292:1",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G367",
+      "alias": "麦51胡萝卜7-牛7鹅4-3地-早畜",
+      "route_id": "110808775:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G368",
+      "alias": "麦35番茄17-鹅5羊5-3地-早畜",
+      "route_id": "110788999:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G369",
+      "alias": "麦30胡萝卜26-羊6鹅5-3地-早畜",
+      "route_id": "110845621:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G372",
+      "alias": "麦24番茄18-牛9羊3-4地-早畜",
+      "route_id": "110820819:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 28
+    },
+    {
+      "family": "G373",
+      "alias": "麦33胡萝卜25-牛7羊3-4地-早畜",
+      "route_id": "110754532:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 18
+    },
+    {
+      "family": "G375",
+      "alias": "麦28胡萝卜28-鹅8羊7-3地-早畜",
+      "route_id": "110824033:1",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G376",
+      "alias": "胡萝卜33麦26-牛5鹅4-3地-早畜",
+      "route_id": "110821837:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G377",
+      "alias": "麦27胡萝卜25-鹅3羊3-3地-早畜",
+      "route_id": "110833957:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 144
+    },
+    {
+      "family": "G378",
+      "alias": "胡萝卜30麦23-牛9鹅3-4地-早畜",
+      "route_id": "110815357:1",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 83
+    },
+    {
+      "family": "G379",
+      "alias": "胡萝卜26麦24-羊6鹅4-4地-早畜",
+      "route_id": "110802031:1",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 45
+    },
+    {
+      "family": "G380",
+      "alias": "麦30胡萝卜20-牛9羊4-3地-早畜",
+      "route_id": "110829614:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 25
+    },
+    {
+      "family": "G382",
+      "alias": "麦47胡萝卜14-牛6鹅4-3地-早畜",
+      "route_id": "110846063:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 57
+    },
+    {
+      "family": "G384",
+      "alias": "麦43胡萝卜10-羊13牛8-3地-早畜",
+      "route_id": "110817740:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G387",
+      "alias": "胡萝卜43番茄11-羊9牛3-3地-早畜",
+      "route_id": "110840596:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G390",
+      "alias": "麦44胡萝卜5-牛7鹅6-3地-早畜",
+      "route_id": "110833702:0",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G396",
+      "alias": "麦35胡萝卜15-牛8羊3-4地-早畜",
+      "route_id": "110833955:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G397",
+      "alias": "胡萝卜28麦22-牛9羊2-3地-早畜",
+      "route_id": "110795524:1",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G400",
+      "alias": "胡萝卜30麦29-鹅9牛4-3地-早畜",
+      "route_id": "110817474:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G402",
+      "alias": "麦43胡萝卜13-鹅8牛8-3地-早畜",
+      "route_id": "110824820:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G403",
+      "alias": "麦38番茄11-羊8鹅6-3地-早畜",
+      "route_id": "110801998:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G406",
+      "alias": "麦49胡萝卜11-羊6牛4-4地-早畜",
+      "route_id": "110807614:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 360
+    },
+    {
+      "family": "G407",
+      "alias": "胡萝卜29麦28-鹅8牛3-3地-早畜",
+      "route_id": "110782412:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G409",
+      "alias": "胡萝卜37麦20-鹅5羊5-3地-早畜",
+      "route_id": "110840543:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G411",
+      "alias": "胡萝卜46麦10-牛6羊6-3地-早畜",
+      "route_id": "110846062:1",
+      "team": "carbonapi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    }
+  ],
+  "selected": [
+    {
+      "family": "G001",
+      "alias": "胡萝卜31麦19-牛8羊6-3地-早畜",
+      "route_id": "110808388:1",
+      "team": "Bruce",
+      "support": 242,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G002",
+      "alias": "胡萝卜28麦22-羊11牛6-3地-早畜",
+      "route_id": "110833941:1",
+      "team": "JOSHNA ACSHA S 21CS",
+      "support": 70,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G003",
+      "alias": "胡萝卜36麦14-羊11牛6-4地-早畜",
+      "route_id": "110847935:1",
+      "team": "JezzLynn",
+      "support": 7,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G004",
+      "alias": "胡萝卜32麦24-牛9鹅3-3地-早畜",
+      "route_id": "110780180:1",
+      "team": "アルモンド",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G005",
+      "alias": "胡萝卜40麦10-鹅7羊6-3地-早畜",
+      "route_id": "110847165:1",
+      "team": "JOSHNA ACSHA S 21CS",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G006",
+      "alias": "胡萝卜31麦19-牛6羊6-3地-早畜",
+      "route_id": "110815366:1",
+      "team": "Hamed Vakili",
+      "support": 4,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G007",
+      "alias": "麦44胡萝卜6-牛11羊3-4地-早畜",
+      "route_id": "110817471:1",
+      "team": "Orbital Terraformer",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G008",
+      "alias": "胡萝卜31麦19-牛9羊5-3地-早畜",
+      "route_id": "110845727:0",
+      "team": "Driz Lo",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G009",
+      "alias": "胡萝卜40麦13-牛6羊6-3地-早畜",
+      "route_id": "110788920:1",
+      "team": "アルモンド",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G010",
+      "alias": "胡萝卜37麦13-牛8羊6-3地-早畜",
+      "route_id": "110806977:0",
+      "team": "mikelou1",
+      "support": 3,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G011",
+      "alias": "胡萝卜31麦19-羊11牛6-3地-早畜",
+      "route_id": "110812803:0",
+      "team": "mikelou1",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G012",
+      "alias": "麦30胡萝卜17-牛11鹅3-3地-早畜",
+      "route_id": "110804134:0",
+      "team": "ymg_aq",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G013",
+      "alias": "胡萝卜46草莓16-鹅5牛4-3地-早畜",
+      "route_id": "110825079:0",
+      "team": "carbonapi",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G014",
+      "alias": "胡萝卜34麦20-牛7羊3-4地-早畜",
+      "route_id": "110774688:0",
+      "team": "Majkel1337",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G015",
+      "alias": "胡萝卜43草莓15-鹅9牛4-3地-早畜",
+      "route_id": "110788531:0",
+      "team": "feel the agi",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G016",
+      "alias": "胡萝卜32麦18-羊6鹅3-3地-早畜",
+      "route_id": "110810615:1",
+      "team": "アルモンド",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G018",
+      "alias": "胡萝卜41麦9-羊17牛6-4地-早畜",
+      "route_id": "110848986:1",
+      "team": "Roxy",
+      "support": 2,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G019",
+      "alias": "麦43草莓12-牛15鹅2-3地-早畜",
+      "route_id": "110807613:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G020",
+      "alias": "麦43胡萝卜5-牛14羊4-3地-早畜",
+      "route_id": "110793078:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 55
+    },
+    {
+      "family": "G021",
+      "alias": "麦43草莓6-牛15羊7-3地-早畜",
+      "route_id": "110797624:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G023",
+      "alias": "麦52草莓23-牛11鹅5-4地-早畜",
+      "route_id": "110833700:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G024",
+      "alias": "麦38番茄14-羊15牛6-4地-早畜",
+      "route_id": "110827368:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 23
+    },
+    {
+      "family": "G026",
+      "alias": "麦30草莓11-牛14羊7-3地-早畜",
+      "route_id": "110853718:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G027",
+      "alias": "麦43草莓10-牛13羊3-3地-早畜",
+      "route_id": "110827120:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G029",
+      "alias": "麦41胡萝卜5-牛11羊8-4地-早畜",
+      "route_id": "110787897:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 44
+    },
+    {
+      "family": "G030",
+      "alias": "麦33胡萝卜9-羊15牛9-3地-早畜",
+      "route_id": "110840552:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G031",
+      "alias": "麦46草莓14-牛8鹅4-3地-早畜",
+      "route_id": "110828450:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G032",
+      "alias": "麦35胡萝卜9-牛7羊5-3地-早畜",
+      "route_id": "110837263:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G033",
+      "alias": "麦38草莓11-羊11牛10-3地-早畜",
+      "route_id": "110846061:0",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 17
+    },
+    {
+      "family": "G034",
+      "alias": "麦34草莓14-牛12鹅9-3地-早畜",
+      "route_id": "110841640:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G038",
+      "alias": "胡萝卜27麦26-牛14羊8-3地-早畜",
+      "route_id": "110800993:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G040",
+      "alias": "麦45草莓11-羊10牛8-3地-早畜",
+      "route_id": "110821847:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G041",
+      "alias": "麦22胡萝卜22-羊13牛10-3地-早畜",
+      "route_id": "110845975:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G042",
+      "alias": "麦44草莓10-牛14羊3-4地-早畜",
+      "route_id": "110808765:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 33
+    },
+    {
+      "family": "G043",
+      "alias": "麦37番茄23-牛9羊4-3地-早畜",
+      "route_id": "110832616:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G044",
+      "alias": "麦69草莓12-鹅8牛8-4地-早畜",
+      "route_id": "110819703:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G046",
+      "alias": "麦40番茄5-羊16牛9-3地-早畜",
+      "route_id": "110816612:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G047",
+      "alias": "麦31胡萝卜12-牛14羊3-4地-早畜",
+      "route_id": "110853714:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 29
+    },
+    {
+      "family": "G048",
+      "alias": "麦40番茄4-羊26鹅2-3地-早畜",
+      "route_id": "110795481:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G049",
+      "alias": "麦38番茄10-牛11羊6-3地-早畜",
+      "route_id": "110791074:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G050",
+      "alias": "麦28胡萝卜15-牛9羊8-4地-早畜",
+      "route_id": "110860277:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G051",
+      "alias": "麦35胡萝卜8-羊20牛5-3地-早畜",
+      "route_id": "110833942:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G052",
+      "alias": "麦40草莓8-牛11羊4-3地-早畜",
+      "route_id": "110789018:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G053",
+      "alias": "麦37草莓14-牛11羊4-3地-早畜",
+      "route_id": "110832600:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G056",
+      "alias": "麦42草莓12-牛11羊4-3地-早畜",
+      "route_id": "110843922:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G057",
+      "alias": "麦42胡萝卜7-羊10牛7-3地-早畜",
+      "route_id": "110837226:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G059",
+      "alias": "麦28草莓13-羊13牛8-4地-早畜",
+      "route_id": "110838077:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G061",
+      "alias": "胡萝卜39番茄13-羊7牛4-4地-早畜",
+      "route_id": "110834761:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G062",
+      "alias": "麦31胡萝卜20-羊10牛5-3地-早畜",
+      "route_id": "110836053:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G065",
+      "alias": "麦31胡萝卜10-牛9羊4-3地-早畜",
+      "route_id": "110827390:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G066",
+      "alias": "麦47番茄17-牛8鹅7-4地-早畜",
+      "route_id": "110831293:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G069",
+      "alias": "胡萝卜27麦18-牛9羊8-3地-早畜",
+      "route_id": "110814279:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 19
+    },
+    {
+      "family": "G070",
+      "alias": "麦43草莓15-羊9牛8-4地-早畜",
+      "route_id": "110814298:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 699
+    },
+    {
+      "family": "G072",
+      "alias": "胡萝卜27麦26-羊12牛5-4地-早畜",
+      "route_id": "110827343:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 363
+    },
+    {
+      "family": "G073",
+      "alias": "胡萝卜42番茄13-牛6羊5-3地-早畜",
+      "route_id": "110804132:0",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G076",
+      "alias": "麦36胡萝卜12-牛10羊5-3地-早畜",
+      "route_id": "110791085:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G078",
+      "alias": "麦35草莓10-羊19牛11-3地-早畜",
+      "route_id": "110826011:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 21
+    },
+    {
+      "family": "G079",
+      "alias": "胡萝卜36麦13-牛16羊3-3地-早畜",
+      "route_id": "110844953:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G080",
+      "alias": "麦42草莓19-羊9鹅2-3地-早畜",
+      "route_id": "110847972:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G081",
+      "alias": "胡萝卜24麦21-牛11羊3-4地-早畜",
+      "route_id": "110768104:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G082",
+      "alias": "胡萝卜25麦20-牛10羊8-4地-早畜",
+      "route_id": "110807592:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 41
+    },
+    {
+      "family": "G083",
+      "alias": "麦38番茄5-羊14牛10-3地-早畜",
+      "route_id": "110841445:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 9
+    },
+    {
+      "family": "G085",
+      "alias": "麦31胡萝卜15-羊11牛8-4地-早畜",
+      "route_id": "110824032:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 61
+    },
+    {
+      "family": "G086",
+      "alias": "麦55草莓2-牛9羊8-4地-早畜",
+      "route_id": "110840547:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 645
+    },
+    {
+      "family": "G087",
+      "alias": "胡萝卜31草莓22-牛9羊5-4地-早畜",
+      "route_id": "110828367:1",
+      "team": "mikelou1",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G088",
+      "alias": "麦34草莓12-羊20牛8-4地-早畜",
+      "route_id": "110842887:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G089",
+      "alias": "麦29胡萝卜25-牛8鹅7-3地-早畜",
+      "route_id": "110836977:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G090",
+      "alias": "麦42胡萝卜5-羊17牛4-3地-早畜",
+      "route_id": "110830653:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G092",
+      "alias": "麦38草莓12-牛8羊4-3地-早畜",
+      "route_id": "110802034:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G094",
+      "alias": "麦34草莓4-羊25牛7-3地-早畜",
+      "route_id": "110842538:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G095",
+      "alias": "草莓26麦24-鹅4牛4-3地-早畜",
+      "route_id": "110815349:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 53
+    },
+    {
+      "family": "G097",
+      "alias": "麦22番茄16-牛7羊6-3地-早畜",
+      "route_id": "110847167:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G099",
+      "alias": "麦43草莓10-牛11鹅2-3地-早畜",
+      "route_id": "110802013:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G101",
+      "alias": "胡萝卜32麦23-牛11羊3-3地-早畜",
+      "route_id": "110847925:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G103",
+      "alias": "麦33胡萝卜14-羊12牛8-3地-早畜",
+      "route_id": "110814296:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G104",
+      "alias": "麦25胡萝卜23-羊20鹅4-3地-早畜",
+      "route_id": "110820769:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G105",
+      "alias": "麦28胡萝卜17-羊14牛11-3地-早畜",
+      "route_id": "110827372:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G106",
+      "alias": "胡萝卜33麦15-牛5鹅4-4地-早畜",
+      "route_id": "110866886:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G111",
+      "alias": "麦25胡萝卜20-牛14鹅3-3地-早畜",
+      "route_id": "110821843:0",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G113",
+      "alias": "麦20胡萝卜18-牛14羊7-4地-早畜",
+      "route_id": "110797607:1",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G114",
+      "alias": "胡萝卜28麦15-牛11羊3-4地-早畜",
+      "route_id": "110820756:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G116",
+      "alias": "麦39胡萝卜12-羊11牛8-3地-早畜",
+      "route_id": "110840540:1",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G117",
+      "alias": "麦30草莓16-羊27牛2-3地-早畜",
+      "route_id": "110799754:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 56
+    },
+    {
+      "family": "G118",
+      "alias": "胡萝卜30麦17-牛10鹅3-3地-早畜",
+      "route_id": "110815369:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G122",
+      "alias": "胡萝卜29麦27-牛13羊2-4地-早畜",
+      "route_id": "110789016:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 366
+    },
+    {
+      "family": "G123",
+      "alias": "麦24草莓18-鹅4牛4-3地-早畜",
+      "route_id": "110827344:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G125",
+      "alias": "麦43胡萝卜1-羊22鹅4-3地-早畜",
+      "route_id": "110800985:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G126",
+      "alias": "麦40胡萝卜9-羊16牛2-3地-早畜",
+      "route_id": "110814423:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 149
+    },
+    {
+      "family": "G129",
+      "alias": "麦31胡萝卜18-牛10羊7-3地-早畜",
+      "route_id": "110831437:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G130",
+      "alias": "胡萝卜36麦25-鹅7牛4-3地-早畜",
+      "route_id": "110852541:1",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G131",
+      "alias": "麦34胡萝卜16-牛11羊3-3地-早畜",
+      "route_id": "110865604:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G132",
+      "alias": "麦32胡萝卜20-羊8牛5-3地-早畜",
+      "route_id": "110830657:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G136",
+      "alias": "麦30胡萝卜23-羊14牛4-4地-早畜",
+      "route_id": "110833943:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 357
+    },
+    {
+      "family": "G141",
+      "alias": "麦49草莓8-羊6牛5-3地-早畜",
+      "route_id": "110827341:1",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G142",
+      "alias": "麦26胡萝卜26-牛9羊3-4地-早畜",
+      "route_id": "110847160:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G143",
+      "alias": "麦39草莓11-牛11羊8-3地-早畜",
+      "route_id": "110841248:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G149",
+      "alias": "麦25胡萝卜18-羊11牛8-3地-早畜",
+      "route_id": "110810938:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G151",
+      "alias": "麦47胡萝卜7-羊9牛6-3地-早畜",
+      "route_id": "110843895:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G152",
+      "alias": "胡萝卜33麦21-牛8羊4-3地-早畜",
+      "route_id": "110820766:1",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G155",
+      "alias": "麦38胡萝卜15-羊18牛4-4地-早畜",
+      "route_id": "110826241:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G157",
+      "alias": "麦27胡萝卜22-牛11羊3-4地-早畜",
+      "route_id": "110814159:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G159",
+      "alias": "麦36胡萝卜13-羊9牛6-3地-早畜",
+      "route_id": "110823792:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G160",
+      "alias": "麦24胡萝卜21-羊9牛2-3地-早畜",
+      "route_id": "110826188:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 41
+    },
+    {
+      "family": "G163",
+      "alias": "麦40胡萝卜12-羊11牛3-3地-早畜",
+      "route_id": "110820829:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 147
+    },
+    {
+      "family": "G164",
+      "alias": "麦29胡萝卜18-羊7鹅6-4地-早畜",
+      "route_id": "110820768:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G167",
+      "alias": "麦28胡萝卜11-羊14牛6-4地-早畜",
+      "route_id": "110847164:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G168",
+      "alias": "麦37番茄8-牛9羊9-3地-早畜",
+      "route_id": "110807611:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G169",
+      "alias": "胡萝卜27麦20-牛10羊8-3地-早畜",
+      "route_id": "110836104:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G170",
+      "alias": "麦47草莓4-羊9牛8-3地-早畜",
+      "route_id": "110835049:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G171",
+      "alias": "麦35胡萝卜12-牛8鹅4-3地-早畜",
+      "route_id": "110847168:0",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G172",
+      "alias": "麦28胡萝卜24-羊13鹅3-3地-早畜",
+      "route_id": "110853719:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G175",
+      "alias": "麦41番茄10-牛9羊9-3地-早畜",
+      "route_id": "110790656:0",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G176",
+      "alias": "麦25胡萝卜19-羊8鹅2-3地-早畜",
+      "route_id": "110795528:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G178",
+      "alias": "麦68草莓17-牛7鹅6-4地-早畜",
+      "route_id": "110844535:0",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G179",
+      "alias": "麦41胡萝卜11-牛10鹅3-3地-早畜",
+      "route_id": "110817677:0",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G180",
+      "alias": "麦15番茄15-羊9鹅8-3地-早畜",
+      "route_id": "110860286:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G185",
+      "alias": "麦42胡萝卜4-羊17牛1-3地-早畜",
+      "route_id": "110827375:1",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 146
+    },
+    {
+      "family": "G188",
+      "alias": "麦36胡萝卜21-羊12牛5-4地-早畜",
+      "route_id": "110800979:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 331
+    },
+    {
+      "family": "G189",
+      "alias": "胡萝卜28麦13-羊17牛6-3地-早畜",
+      "route_id": "110799341:0",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G190",
+      "alias": "麦25胡萝卜20-牛6鹅5-3地-早畜",
+      "route_id": "110825070:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G191",
+      "alias": "麦44草莓11-羊8鹅6-3地-早畜",
+      "route_id": "110833935:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G195",
+      "alias": "胡萝卜27麦23-牛12羊3-4地-早畜",
+      "route_id": "110761433:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 17
+    },
+    {
+      "family": "G196",
+      "alias": "麦32胡萝卜15-羊12牛5-4地-早畜",
+      "route_id": "110826266:0",
+      "team": "Agricola",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G197",
+      "alias": "胡萝卜30麦27-牛7羊2-3地-早畜",
+      "route_id": "110824889:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G198",
+      "alias": "麦32胡萝卜21-羊13牛7-3地-早畜",
+      "route_id": "110832834:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 59
+    },
+    {
+      "family": "G200",
+      "alias": "胡萝卜23麦19-牛11羊3-3地-早畜",
+      "route_id": "110846071:0",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G201",
+      "alias": "胡萝卜44草莓2-羊15牛10-3地-早畜",
+      "route_id": "110789001:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G203",
+      "alias": "麦33草莓12-牛10羊3-3地-早畜",
+      "route_id": "110808760:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G204",
+      "alias": "麦46草莓8-牛9鹅5-3地-早畜",
+      "route_id": "110835051:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G207",
+      "alias": "麦38番茄10-羊5牛4-3地-早畜",
+      "route_id": "110821834:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G209",
+      "alias": "胡萝卜28麦15-牛11鹅3-3地-早畜",
+      "route_id": "110796044:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G210",
+      "alias": "胡萝卜33麦21-牛8羊8-3地-早畜",
+      "route_id": "110814406:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 15
+    },
+    {
+      "family": "G213",
+      "alias": "麦31胡萝卜27-羊13牛1-3地-早畜",
+      "route_id": "110785740:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 52
+    },
+    {
+      "family": "G214",
+      "alias": "麦39胡萝卜13-羊10牛5-4地-早畜",
+      "route_id": "110828206:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 34
+    },
+    {
+      "family": "G215",
+      "alias": "麦28胡萝卜27-牛8羊5-3地-早畜",
+      "route_id": "110848152:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G217",
+      "alias": "草莓22胡萝卜20-牛8羊3-3地-早畜",
+      "route_id": "110819891:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G219",
+      "alias": "麦30草莓21-鹅3羊3-3地-早畜",
+      "route_id": "110842697:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 144
+    },
+    {
+      "family": "G220",
+      "alias": "麦38胡萝卜10-牛11羊10-4地-早畜",
+      "route_id": "110835907:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 22
+    },
+    {
+      "family": "G223",
+      "alias": "胡萝卜35麦14-牛12鹅8-3地-早畜",
+      "route_id": "110802006:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G224",
+      "alias": "麦41胡萝卜8-羊17牛4-3地-早畜",
+      "route_id": "110831674:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G225",
+      "alias": "麦40胡萝卜15-牛7羊4-3地-早畜",
+      "route_id": "110813149:1",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 76
+    },
+    {
+      "family": "G226",
+      "alias": "麦26胡萝卜13-牛9鹅8-3地-早畜",
+      "route_id": "110840553:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 44
+    },
+    {
+      "family": "G228",
+      "alias": "麦57草莓14-鹅10牛7-4地-早畜",
+      "route_id": "110836755:0",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G230",
+      "alias": "麦47草莓4-牛15羊9-3地-早畜",
+      "route_id": "110823066:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 13
+    },
+    {
+      "family": "G235",
+      "alias": "麦32番茄15-牛12羊3-3地-早畜",
+      "route_id": "110817473:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G237",
+      "alias": "胡萝卜37麦24-牛8鹅3-3地-早畜",
+      "route_id": "110797500:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G239",
+      "alias": "胡萝卜46麦6-羊14牛4-3地-早畜",
+      "route_id": "110819318:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G244",
+      "alias": "胡萝卜29麦21-牛6羊5-3地-早畜",
+      "route_id": "110814293:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G246",
+      "alias": "麦37番茄11-牛10鹅3-3地-早畜",
+      "route_id": "110833933:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G247",
+      "alias": "麦39番茄8-鹅10羊7-3地-早畜",
+      "route_id": "110824143:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G248",
+      "alias": "麦51胡萝卜5-牛14羊2-4地-早畜",
+      "route_id": "110847169:0",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 646
+    },
+    {
+      "family": "G249",
+      "alias": "胡萝卜39麦16-牛5鹅4-3地-早畜",
+      "route_id": "110840539:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 18
+    },
+    {
+      "family": "G252",
+      "alias": "麦45胡萝卜11-牛12羊3-4地-早畜",
+      "route_id": "110795559:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 364
+    },
+    {
+      "family": "G253",
+      "alias": "麦59番茄1-牛7鹅6-3地-早畜",
+      "route_id": "110807609:0",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G254",
+      "alias": "麦47番茄12-牛10羊5-3地-早畜",
+      "route_id": "110829272:1",
+      "team": "lingxiaojun",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G257",
+      "alias": "麦27胡萝卜24-牛9羊5-3地-早畜",
+      "route_id": "110821002:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G260",
+      "alias": "麦45胡萝卜8-羊8牛5-3地-早畜",
+      "route_id": "110834954:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G261",
+      "alias": "麦28胡萝卜23-羊10牛3-4地-早畜",
+      "route_id": "110847163:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 664
+    },
+    {
+      "family": "G262",
+      "alias": "胡萝卜45麦10-牛9羊2-3地-早畜",
+      "route_id": "110808158:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 6
+    },
+    {
+      "family": "G263",
+      "alias": "麦42胡萝卜13-鹅8牛5-4地-早畜",
+      "route_id": "110833954:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G264",
+      "alias": "麦25胡萝卜20-牛12羊7-3地-早畜",
+      "route_id": "110808777:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G265",
+      "alias": "麦33胡萝卜18-牛9羊8-3地-早畜",
+      "route_id": "110824840:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 38
+    },
+    {
+      "family": "G266",
+      "alias": "胡萝卜38麦21-牛8羊2-3地-早畜",
+      "route_id": "110821610:0",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G267",
+      "alias": "胡萝卜30麦20-羊11牛6-3地-早畜",
+      "route_id": "110788970:0",
+      "team": "mikelou1",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G268",
+      "alias": "麦28胡萝卜19-牛6鹅4-3地-早畜",
+      "route_id": "110860289:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G269",
+      "alias": "麦39番茄12-羊9牛6-4地-早畜",
+      "route_id": "110781289:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 23
+    },
+    {
+      "family": "G270",
+      "alias": "胡萝卜28麦16-牛5鹅4-3地-早畜",
+      "route_id": "110847165:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G272",
+      "alias": "麦28胡萝卜18-牛10羊7-3地-早畜",
+      "route_id": "110774740:1",
+      "team": "ymg_aq",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 8
+    },
+    {
+      "family": "G274",
+      "alias": "麦27番茄13-鹅9牛6-3地-早畜",
+      "route_id": "110800989:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G275",
+      "alias": "麦33胡萝卜20-牛6鹅4-4地-早畜",
+      "route_id": "110808783:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G277",
+      "alias": "胡萝卜34麦22-牛6羊4-3地-早畜",
+      "route_id": "110802032:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G282",
+      "alias": "麦34胡萝卜24-鹅6羊4-3地-早畜",
+      "route_id": "110789020:1",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G283",
+      "alias": "胡萝卜36麦14-羊9鹅6-4地-早畜",
+      "route_id": "110833648:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G284",
+      "alias": "麦46胡萝卜8-鹅7牛4-4地-早畜",
+      "route_id": "110851524:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 6
+    },
+    {
+      "family": "G287",
+      "alias": "胡萝卜31麦17-牛12羊5-3地-早畜",
+      "route_id": "110823724:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G288",
+      "alias": "胡萝卜31麦22-牛6羊6-4地-早畜",
+      "route_id": "110800960:1",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 25
+    },
+    {
+      "family": "G289",
+      "alias": "麦25胡萝卜23-鹅7羊7-3地-早畜",
+      "route_id": "110814297:1",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 32
+    },
+    {
+      "family": "G291",
+      "alias": "麦33胡萝卜13-牛6鹅4-4地-早畜",
+      "route_id": "110840544:0",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 67
+    },
+    {
+      "family": "G292",
+      "alias": "胡萝卜40麦17-牛7羊3-3地-早畜",
+      "route_id": "110801845:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G297",
+      "alias": "麦30胡萝卜14-牛8羊7-3地-早畜",
+      "route_id": "110782386:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 3
+    },
+    {
+      "family": "G300",
+      "alias": "胡萝卜48番茄9-牛8羊2-3地-早畜",
+      "route_id": "110844860:0",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G301",
+      "alias": "胡萝卜44麦26-鹅11牛2-4地-早畜",
+      "route_id": "110832494:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G302",
+      "alias": "麦32胡萝卜16-羊8鹅4-4地-早畜",
+      "route_id": "110827346:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 32
+    },
+    {
+      "family": "G304",
+      "alias": "胡萝卜32麦21-鹅5牛5-3地-早畜",
+      "route_id": "110844907:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G305",
+      "alias": "胡萝卜40麦13-鹅4牛4-3地-早畜",
+      "route_id": "110804062:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G309",
+      "alias": "胡萝卜34麦22-牛6鹅2-3地-早畜",
+      "route_id": "110845655:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 145
+    },
+    {
+      "family": "G310",
+      "alias": "麦35草莓11-鹅10羊4-3地-早畜",
+      "route_id": "110827345:0",
+      "team": "THIRD FARM CLUB",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G311",
+      "alias": "麦36胡萝卜11-鹅6羊5-3地-早畜",
+      "route_id": "110833940:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G312",
+      "alias": "胡萝卜42麦15-牛7鹅6-3地-早畜",
+      "route_id": "110832814:1",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 5
+    },
+    {
+      "family": "G314",
+      "alias": "胡萝卜54麦7-羊8鹅1-3地-早畜",
+      "route_id": "110810894:1",
+      "team": "Ad Space Available",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G316",
+      "alias": "麦26胡萝卜15-羊13牛6-4地-早畜",
+      "route_id": "110827342:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 26
+    },
+    {
+      "family": "G317",
+      "alias": "麦42番茄5-牛9鹅6-3地-早畜",
+      "route_id": "110789011:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G318",
+      "alias": "胡萝卜40麦17-羊7牛5-4地-早畜",
+      "route_id": "110847157:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 37
+    },
+    {
+      "family": "G319",
+      "alias": "麦30胡萝卜21-羊10鹅1-3地-早畜",
+      "route_id": "110808774:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 148
+    },
+    {
+      "family": "G320",
+      "alias": "麦39胡萝卜16-羊6牛5-3地-早畜",
+      "route_id": "110843814:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 24
+    },
+    {
+      "family": "G321",
+      "alias": "胡萝卜21麦17-牛11羊5-4地-早畜",
+      "route_id": "110828441:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G322",
+      "alias": "麦41番茄8-羊10牛6-4地-早畜",
+      "route_id": "110808745:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 36
+    },
+    {
+      "family": "G323",
+      "alias": "胡萝卜33麦17-羊9牛6-3地-早畜",
+      "route_id": "110802059:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G324",
+      "alias": "胡萝卜37麦14-牛6羊5-3地-早畜",
+      "route_id": "110847041:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 20
+    },
+    {
+      "family": "G325",
+      "alias": "麦28胡萝卜21-牛8羊7-3地-早畜",
+      "route_id": "110794464:1",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 10
+    },
+    {
+      "family": "G329",
+      "alias": "麦37胡萝卜10-鹅7牛7-3地-早畜",
+      "route_id": "110808755:1",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G332",
+      "alias": "胡萝卜42番茄11-牛7鹅4-3地-早畜",
+      "route_id": "110799712:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G333",
+      "alias": "胡萝卜33麦12-牛6羊3-3地-早畜",
+      "route_id": "110815367:1",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G334",
+      "alias": "麦59胡萝卜4-牛6鹅2-3地-早畜",
+      "route_id": "110835045:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G335",
+      "alias": "麦32胡萝卜19-羊9牛7-3地-早畜",
+      "route_id": "110823050:1",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G336",
+      "alias": "胡萝卜31麦18-牛8鹅5-3地-早畜",
+      "route_id": "110839403:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 22
+    },
+    {
+      "family": "G337",
+      "alias": "麦56-羊16牛3-3地-早畜",
+      "route_id": "110827107:1",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 28
+    },
+    {
+      "family": "G338",
+      "alias": "麦31胡萝卜18-牛7鹅4-3地-早畜",
+      "route_id": "110828191:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G341",
+      "alias": "胡萝卜35草莓12-牛7羊3-3地-早畜",
+      "route_id": "110810513:0",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G343",
+      "alias": "胡萝卜29麦21-羊6鹅4-3地-早畜",
+      "route_id": "110828358:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G344",
+      "alias": "胡萝卜47麦10-牛8鹅4-3地-早畜",
+      "route_id": "110840283:0",
+      "team": "Excluding",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G345",
+      "alias": "胡萝卜35麦15-羊10牛5-3地-早畜",
+      "route_id": "110795496:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G347",
+      "alias": "麦40胡萝卜10-鹅10牛4-3地-早畜",
+      "route_id": "110795508:1",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G348",
+      "alias": "胡萝卜43麦11-牛7羊7-3地-早畜",
+      "route_id": "110830614:0",
+      "team": "HowardLeeTW",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G349",
+      "alias": "麦45番茄8-牛8鹅3-3地-早畜",
+      "route_id": "110813930:1",
+      "team": "kwa",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 12
+    },
+    {
+      "family": "G352",
+      "alias": "麦36胡萝卜17-牛8羊2-3地-早畜",
+      "route_id": "110788997:0",
+      "team": "Artem The Farmer 🍅",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    },
+    {
+      "family": "G354",
+      "alias": "胡萝卜48番茄7-鹅9牛4-3地-早畜",
+      "route_id": "110818273:0",
+      "team": "feel the agi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G359",
+      "alias": "麦45胡萝卜8-羊13牛6-3地-早畜",
+      "route_id": "110807610:0",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G360",
+      "alias": "麦37胡萝卜4-鹅10牛9-3地-早畜",
+      "route_id": "110782404:0",
+      "team": "Ebi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G363",
+      "alias": "麦54胡萝卜10-鹅12羊7-4地-早畜",
+      "route_id": "110843771:1",
+      "team": "Kaggledew Valley 🏆",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G365",
+      "alias": "胡萝卜37麦22-羊6鹅5-3地-早畜",
+      "route_id": "110785292:1",
+      "team": "アルモンド",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 7
+    },
+    {
+      "family": "G367",
+      "alias": "麦51胡萝卜7-牛7鹅4-3地-早畜",
+      "route_id": "110808775:1",
+      "team": "Sida Zuo",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G368",
+      "alias": "麦35番茄17-鹅5羊5-3地-早畜",
+      "route_id": "110788999:1",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G369",
+      "alias": "麦30胡萝卜26-羊6鹅5-3地-早畜",
+      "route_id": "110845621:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 16
+    },
+    {
+      "family": "G372",
+      "alias": "麦24番茄18-牛9羊3-4地-早畜",
+      "route_id": "110820819:1",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 28
+    },
+    {
+      "family": "G373",
+      "alias": "麦33胡萝卜25-牛7羊3-4地-早畜",
+      "route_id": "110754532:0",
+      "team": "Majkel1337",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 18
+    },
+    {
+      "family": "G375",
+      "alias": "麦28胡萝卜28-鹅8羊7-3地-早畜",
+      "route_id": "110824033:1",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G376",
+      "alias": "胡萝卜33麦26-牛5鹅4-3地-早畜",
+      "route_id": "110821837:0",
+      "team": "THUNDER THUNDER",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G377",
+      "alias": "麦27胡萝卜25-鹅3羊3-3地-早畜",
+      "route_id": "110833957:0",
+      "team": "keiz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 144
+    },
+    {
+      "family": "G378",
+      "alias": "胡萝卜30麦23-牛9鹅3-4地-早畜",
+      "route_id": "110815357:1",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 83
+    },
+    {
+      "family": "G379",
+      "alias": "胡萝卜26麦24-羊6鹅4-4地-早畜",
+      "route_id": "110802031:1",
+      "team": "Orbital Terraformer",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 45
+    },
+    {
+      "family": "G380",
+      "alias": "麦30胡萝卜20-牛9羊4-3地-早畜",
+      "route_id": "110829614:0",
+      "team": "SpaTaro",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 25
+    },
+    {
+      "family": "G382",
+      "alias": "麦47胡萝卜14-牛6鹅4-3地-早畜",
+      "route_id": "110846063:0",
+      "team": "istinetz",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 57
+    },
+    {
+      "family": "G384",
+      "alias": "麦43胡萝卜10-羊13牛8-3地-早畜",
+      "route_id": "110817740:1",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G387",
+      "alias": "胡萝卜43番茄11-羊9牛3-3地-早畜",
+      "route_id": "110840596:1",
+      "team": "Snorlax",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G390",
+      "alias": "麦44胡萝卜5-牛7鹅6-3地-早畜",
+      "route_id": "110833702:0",
+      "team": "Xiangyu Liu",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G396",
+      "alias": "麦35胡萝卜15-牛8羊3-4地-早畜",
+      "route_id": "110833955:0",
+      "team": "Arda Ceylan",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 27
+    },
+    {
+      "family": "G397",
+      "alias": "胡萝卜28麦22-牛9羊2-3地-早畜",
+      "route_id": "110795524:1",
+      "team": "DeeperNet",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G400",
+      "alias": "胡萝卜30麦29-鹅9牛4-3地-早畜",
+      "route_id": "110817474:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 1
+    },
+    {
+      "family": "G402",
+      "alias": "麦43胡萝卜13-鹅8牛8-3地-早畜",
+      "route_id": "110824820:0",
+      "team": "Otter Vibe",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G403",
+      "alias": "麦38番茄11-羊8鹅6-3地-早畜",
+      "route_id": "110801998:0",
+      "team": "Planned Economy",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 2
+    },
+    {
+      "family": "G406",
+      "alias": "麦49胡萝卜11-羊6牛4-4地-早畜",
+      "route_id": "110807614:1",
+      "team": "tetsuya & yuanzhe & guoqi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 360
+    },
+    {
+      "family": "G407",
+      "alias": "胡萝卜29麦28-鹅8牛3-3地-早畜",
+      "route_id": "110782412:0",
+      "team": "QQ",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 14
+    },
+    {
+      "family": "G409",
+      "alias": "胡萝卜37麦20-鹅5羊5-3地-早畜",
+      "route_id": "110840543:0",
+      "team": "binghua",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 0
+    },
+    {
+      "family": "G411",
+      "alias": "胡萝卜46麦10-牛6羊6-3地-早畜",
+      "route_id": "110846062:1",
+      "team": "carbonapi",
+      "support": 1,
+      "selected": true,
+      "drop_reason": null,
+      "source_execution_hard_failures": 4
+    }
+  ],
+  "actions_file": "route-actions.json.zlib",
+  "actions_sha256": "46eb5291d5880106363b4cb9abdcee2ff61caaa75c9c8403106c249e002e9379"
+}

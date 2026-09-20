@@ -1,0 +1,6855 @@
+{
+  "schema_version": 1,
+  "manifest": "/root/kaggriculture-research-20260920/formal-609-switch-v1/replay-manifest-609.json",
+  "target_sides": 752,
+  "teams": 56,
+  "distance": "0.38 production + 0.38 layout + 0.18 schedule + 0.06 land/labor",
+  "selected_threshold": 0.12,
+  "cluster_count_distribution": {
+    "13": 4,
+    "5": 3,
+    "16": 4,
+    "15": 11,
+    "3": 10,
+    "2": 8,
+    "4": 4,
+    "14": 4,
+    "10": 2,
+    "19": 1,
+    "11": 1,
+    "12": 1,
+    "1": 1,
+    "7": 1,
+    "6": 1
+  },
+  "teams_report": [
+    {
+      "team": "Ad Space Available",
+      "samples": 13,
+      "clusters": 13,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 13,
+        "0.08": 13,
+        "0.12": 13,
+        "0.16": 13,
+        "0.2": 13
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110814914:0",
+          "median_reward": 143003.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110814914
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840552:0",
+          "median_reward": 134644.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110840552
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820967:1",
+          "median_reward": 130808.0,
+          "median_min_money": 33.0,
+          "median_worst_slack72": 38.0,
+          "episode_ids": [
+            110820967
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843774:1",
+          "median_reward": 113636.0,
+          "median_min_money": 30.0,
+          "median_worst_slack72": 38.0,
+          "episode_ids": [
+            110843774
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110790656:0",
+          "median_reward": 106185.0,
+          "median_min_money": 34.0,
+          "median_worst_slack72": 38.0,
+          "episode_ids": [
+            110790656
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827449:1",
+          "median_reward": 100952.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110827449
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110797500:1",
+          "median_reward": 97917.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110797500
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110834954:1",
+          "median_reward": 95002.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110834954
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827340:1",
+          "median_reward": 92607.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110827340
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804062:1",
+          "median_reward": 88773.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110804062
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810894:1",
+          "median_reward": 87320.0,
+          "median_min_money": 26.0,
+          "median_worst_slack72": 34.0,
+          "episode_ids": [
+            110810894
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110837433:0",
+          "median_reward": 81388.0,
+          "median_min_money": 35.0,
+          "median_worst_slack72": 38.0,
+          "episode_ids": [
+            110837433
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828120:0",
+          "median_reward": 79621.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110828120
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.5162570476531982,
+        "p10": 0.4261852979660034,
+        "p90": 0.6509007155895233
+      }
+    },
+    {
+      "team": "Agricola",
+      "samples": 15,
+      "clusters": 5,
+      "cluster_sizes": [
+        9,
+        2,
+        2,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 10,
+        "0.12": 5,
+        "0.16": 3,
+        "0.2": 2
+      },
+      "plans": [
+        {
+          "size": 9,
+          "representative": "110808268:0",
+          "median_reward": 88980.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 13.0,
+          "episode_ids": [
+            110808268,
+            110812877,
+            110813881,
+            110817163,
+            110818737,
+            110832864,
+            110832920,
+            110841641,
+            110845635
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110825217:1",
+          "median_reward": 92237.5,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110809803,
+            110825217
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110833847:1",
+          "median_reward": 86733.0,
+          "median_min_money": 14.0,
+          "median_worst_slack72": 6.5,
+          "episode_ids": [
+            110833847,
+            110842313
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835046:0",
+          "median_reward": 124031.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 13.0,
+          "episode_ids": [
+            110835046
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826266:0",
+          "median_reward": 103008.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110826266
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13687865436077118,
+        "p10": 0.08440950810909272,
+        "p90": 0.2504069685935974
+      }
+    },
+    {
+      "team": "Arda Ceylan",
+      "samples": 16,
+      "clusters": 16,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 16,
+        "0.08": 16,
+        "0.12": 16,
+        "0.16": 14,
+        "0.2": 11
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110827368:0",
+          "median_reward": 150077.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -2721.0,
+          "episode_ids": [
+            110827368
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840554:0",
+          "median_reward": 131834.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3009.0,
+          "episode_ids": [
+            110840554
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833942:1",
+          "median_reward": 131259.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2729.0,
+          "episode_ids": [
+            110833942
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847172:1",
+          "median_reward": 111803.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -2724.0,
+          "episode_ids": [
+            110847172
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833943:1",
+          "median_reward": 110444.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2604.0,
+          "episode_ids": [
+            110833943
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847164:1",
+          "median_reward": 107736.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3081.0,
+          "episode_ids": [
+            110847164
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847168:1",
+          "median_reward": 103832.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2397.0,
+          "episode_ids": [
+            110847168
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814406:0",
+          "median_reward": 99513.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2205.0,
+          "episode_ids": [
+            110814406
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808783:0",
+          "median_reward": 92703.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2700.0,
+          "episode_ids": [
+            110808783
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110851524:0",
+          "median_reward": 89703.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4593.0,
+          "episode_ids": [
+            110851524
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827346:1",
+          "median_reward": 89173.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3479.0,
+          "episode_ids": [
+            110827346
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827342:0",
+          "median_reward": 86765.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3873.0,
+          "episode_ids": [
+            110827342
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808745:1",
+          "median_reward": 86150.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3137.0,
+          "episode_ids": [
+            110808745
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820819:1",
+          "median_reward": 78270.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3360.0,
+          "episode_ids": [
+            110820819
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808771:0",
+          "median_reward": 76886.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -4739.0,
+          "episode_ids": [
+            110808771
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833955:0",
+          "median_reward": 73190.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -4754.0,
+          "episode_ids": [
+            110833955
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.31836968660354614,
+        "p10": 0.2082018181681633,
+        "p90": 0.41405288875102997
+      }
+    },
+    {
+      "team": "Artem The Farmer 🍅",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 14,
+        "0.2": 13
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110800993:1",
+          "median_reward": 142036.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -447.0,
+          "episode_ids": [
+            110800993
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841640:0",
+          "median_reward": 123565.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -295.0,
+          "episode_ids": [
+            110841640
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827334:0",
+          "median_reward": 110511.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -999.0,
+          "episode_ids": [
+            110827334
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110836104:0",
+          "median_reward": 107230.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": 17.0,
+          "episode_ids": [
+            110836104
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110813807:1",
+          "median_reward": 103246.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -521.0,
+          "episode_ids": [
+            110813807
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824889:0",
+          "median_reward": 102979.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -561.0,
+          "episode_ids": [
+            110824889
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807615:1",
+          "median_reward": 100887.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -416.0,
+          "episode_ids": [
+            110807615
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814406:1",
+          "median_reward": 100717.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -679.0,
+          "episode_ids": [
+            110814406
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110819318:1",
+          "median_reward": 97538.0,
+          "median_min_money": 14.0,
+          "median_worst_slack72": -333.0,
+          "episode_ids": [
+            110819318
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808158:0",
+          "median_reward": 94490.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -157.0,
+          "episode_ids": [
+            110808158
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110782386:0",
+          "median_reward": 89617.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -106.0,
+          "episode_ids": [
+            110782386
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110794464:1",
+          "median_reward": 85842.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -247.0,
+          "episode_ids": [
+            110794464
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110788997:0",
+          "median_reward": 81336.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -85.0,
+          "episode_ids": [
+            110788997
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833934:1",
+          "median_reward": 80751.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -343.0,
+          "episode_ids": [
+            110833934
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110775824:0",
+          "median_reward": 71848.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -190.0,
+          "episode_ids": [
+            110775824
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.33685293793678284,
+        "p10": 0.2377766489982605,
+        "p90": 0.4926092267036439
+      }
+    },
+    {
+      "team": "Artyom Lyan",
+      "samples": 15,
+      "clusters": 3,
+      "cluster_sizes": [
+        11,
+        3,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 9,
+        "0.08": 5,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 11,
+          "representative": "110811821:1",
+          "median_reward": 99928.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110800440,
+            110807507,
+            110804127,
+            110811088,
+            110811821,
+            110820852,
+            110821845,
+            110820433,
+            110839076,
+            110837263,
+            110842428
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110814460:1",
+          "median_reward": 83563.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110800798,
+            110814460,
+            110826012
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830704:0",
+          "median_reward": 120933.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110830704
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.10260232537984848,
+        "p10": 0.03870050609111786,
+        "p90": 0.19188174605369573
+      }
+    },
+    {
+      "team": "Bruce",
+      "samples": 14,
+      "clusters": 2,
+      "cluster_sizes": [
+        12,
+        2
+      ],
+      "sensitivity": {
+        "0.05": 5,
+        "0.08": 3,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 12,
+          "representative": "110811821:0",
+          "median_reward": 84572.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110808388,
+            110809561,
+            110810653,
+            110811821,
+            110814065,
+            110812913,
+            110818303,
+            110816354,
+            110829172,
+            110833957,
+            110838290,
+            110844973
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110809741:1",
+          "median_reward": 108576.5,
+          "median_min_money": 12.5,
+          "median_worst_slack72": 10.5,
+          "episode_ids": [
+            110809741,
+            110825059
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.07462023943662643,
+        "p10": 0.026525627821683884,
+        "p90": 0.17580145597457886
+      }
+    },
+    {
+      "team": "DeeperNet",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 14
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110816612:0",
+          "median_reward": 138708.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -1215.0,
+          "episode_ids": [
+            110816612
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843890:0",
+          "median_reward": 129542.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": -877.0,
+          "episode_ids": [
+            110843890
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807605:0",
+          "median_reward": 119550.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": -449.0,
+          "episode_ids": [
+            110807605
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804067:1",
+          "median_reward": 108654.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -1588.0,
+          "episode_ids": [
+            110804067
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110829607:0",
+          "median_reward": 98848.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -194.0,
+          "episode_ids": [
+            110829607
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110852541:0",
+          "median_reward": 98351.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": -265.0,
+          "episode_ids": [
+            110852541
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833938:1",
+          "median_reward": 98071.0,
+          "median_min_money": 20.0,
+          "median_worst_slack72": -174.0,
+          "episode_ids": [
+            110833938
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795569:1",
+          "median_reward": 97469.0,
+          "median_min_money": 15.0,
+          "median_worst_slack72": -114.0,
+          "episode_ids": [
+            110795569
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847165:0",
+          "median_reward": 93536.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -204.0,
+          "episode_ids": [
+            110847165
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802032:0",
+          "median_reward": 92591.0,
+          "median_min_money": 20.0,
+          "median_worst_slack72": -147.0,
+          "episode_ids": [
+            110802032
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802059:0",
+          "median_reward": 86122.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": -947.0,
+          "episode_ids": [
+            110802059
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110823050:1",
+          "median_reward": 83732.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -83.0,
+          "episode_ids": [
+            110823050
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810513:0",
+          "median_reward": 82694.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -201.0,
+          "episode_ids": [
+            110810513
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795524:1",
+          "median_reward": 72590.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110795524
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840543:1",
+          "median_reward": 63883.0,
+          "median_min_money": 15.0,
+          "median_worst_slack72": -74.0,
+          "episode_ids": [
+            110840543
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.3846234679222107,
+        "p10": 0.303001469373703,
+        "p90": 0.48474588990211487
+      }
+    },
+    {
+      "team": "Driz Lo",
+      "samples": 9,
+      "clusters": 3,
+      "cluster_sizes": [
+        5,
+        2,
+        2
+      ],
+      "sensitivity": {
+        "0.05": 7,
+        "0.08": 5,
+        "0.12": 3,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 5,
+          "representative": "110847925:0",
+          "median_reward": 100161.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110842428,
+            110843514,
+            110844625,
+            110846818,
+            110847925
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110849041:1",
+          "median_reward": 111788.0,
+          "median_min_money": 9.5,
+          "median_worst_slack72": 8.5,
+          "episode_ids": [
+            110845727,
+            110849041
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110841248:1",
+          "median_reward": 87539.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 6.5,
+          "episode_ids": [
+            110840140,
+            110841248
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.10985346883535385,
+        "p10": 0.05556447245180607,
+        "p90": 0.16074566543102264
+      }
+    },
+    {
+      "team": "Ebi",
+      "samples": 13,
+      "clusters": 13,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 13,
+        "0.08": 13,
+        "0.12": 13,
+        "0.16": 13,
+        "0.2": 13
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110802013:1",
+          "median_reward": 119162.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -134.0,
+          "episode_ids": [
+            110802013
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821843:0",
+          "median_reward": 117505.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -134.0,
+          "episode_ids": [
+            110821843
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835773:1",
+          "median_reward": 109262.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -132.0,
+          "episode_ids": [
+            110835773
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830653:0",
+          "median_reward": 103363.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -127.0,
+          "episode_ids": [
+            110830653
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808760:1",
+          "median_reward": 101590.0,
+          "median_min_money": 12.0,
+          "median_worst_slack72": -133.0,
+          "episode_ids": [
+            110808760
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824143:1",
+          "median_reward": 97238.0,
+          "median_min_money": 27.0,
+          "median_worst_slack72": -141.0,
+          "episode_ids": [
+            110824143
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110842697:1",
+          "median_reward": 89702.0,
+          "median_min_money": 12.0,
+          "median_worst_slack72": -147.0,
+          "episode_ids": [
+            110842697
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110834954:0",
+          "median_reward": 88273.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -133.0,
+          "episode_ids": [
+            110834954
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789011:1",
+          "median_reward": 86739.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -134.0,
+          "episode_ids": [
+            110789011
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795508:1",
+          "median_reward": 81729.0,
+          "median_min_money": 12.0,
+          "median_worst_slack72": -127.0,
+          "episode_ids": [
+            110795508
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110782404:0",
+          "median_reward": 80050.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -134.0,
+          "episode_ids": [
+            110782404
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815357:0",
+          "median_reward": 76351.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -134.0,
+          "episode_ids": [
+            110815357
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833648:0",
+          "median_reward": 74218.0,
+          "median_min_money": 13.0,
+          "median_worst_slack72": -150.0,
+          "episode_ids": [
+            110833648
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.49291884899139404,
+        "p10": 0.41334722340106966,
+        "p90": 0.5796415388584137
+      }
+    },
+    {
+      "team": "EthanL67",
+      "samples": 13,
+      "clusters": 5,
+      "cluster_sizes": [
+        8,
+        2,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 7,
+        "0.12": 5,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 8,
+          "representative": "110846070:0",
+          "median_reward": 98723.5,
+          "median_min_money": 17.5,
+          "median_worst_slack72": -172.5,
+          "episode_ids": [
+            110802926,
+            110802014,
+            110795508,
+            110815370,
+            110819703,
+            110832863,
+            110839418,
+            110846070
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110812907:1",
+          "median_reward": 98696.0,
+          "median_min_money": 6.5,
+          "median_worst_slack72": -771.0,
+          "episode_ids": [
+            110809803,
+            110812907
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110809335:0",
+          "median_reward": 118789.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -187.0,
+          "episode_ids": [
+            110809335
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826266:1",
+          "median_reward": 99358.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": -284.0,
+          "episode_ids": [
+            110826266
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826234:1",
+          "median_reward": 84224.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -195.0,
+          "episode_ids": [
+            110826234
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13191956281661987,
+        "p10": 0.046539129316806795,
+        "p90": 0.22955968677997587
+      }
+    },
+    {
+      "team": "Excluding",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110838077:1",
+          "median_reward": 131946.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1841.0,
+          "episode_ids": [
+            110838077
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110834761:0",
+          "median_reward": 131787.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -1935.0,
+          "episode_ids": [
+            110834761
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844953:0",
+          "median_reward": 125374.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -437.0,
+          "episode_ids": [
+            110844953
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841445:0",
+          "median_reward": 123671.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -433.0,
+          "episode_ids": [
+            110841445
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110836977:0",
+          "median_reward": 121500.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -440.0,
+          "episode_ids": [
+            110836977
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832533:1",
+          "median_reward": 104917.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -1827.0,
+          "episode_ids": [
+            110832533
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110839175:0",
+          "median_reward": 99810.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2384.0,
+          "episode_ids": [
+            110839175
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835907:0",
+          "median_reward": 99738.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -3514.0,
+          "episode_ids": [
+            110835907
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833648:1",
+          "median_reward": 91665.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -1526.0,
+          "episode_ids": [
+            110833648
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110851524:1",
+          "median_reward": 91505.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2189.0,
+          "episode_ids": [
+            110851524
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860286:1",
+          "median_reward": 89556.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3162.0,
+          "episode_ids": [
+            110860286
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832814:1",
+          "median_reward": 87973.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -433.0,
+          "episode_ids": [
+            110832814
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840283:0",
+          "median_reward": 82350.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -433.0,
+          "episode_ids": [
+            110840283
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835777:1",
+          "median_reward": 74374.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -4030.0,
+          "episode_ids": [
+            110835777
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110866894:0",
+          "median_reward": 71825.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -1457.0,
+          "episode_ids": [
+            110866894
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.41739410161972046,
+        "p10": 0.3273440957069397,
+        "p90": 0.5075082182884216
+      }
+    },
+    {
+      "team": "Hamed Vakili",
+      "samples": 12,
+      "clusters": 4,
+      "cluster_sizes": [
+        9,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 5,
+        "0.12": 4,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 9,
+          "representative": "110838207:0",
+          "median_reward": 94632.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110795524,
+            110789023,
+            110808770,
+            110802027,
+            110831399,
+            110828449,
+            110838207,
+            110840537,
+            110844625
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821845:1",
+          "median_reward": 109750.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110821845
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846713:1",
+          "median_reward": 82132.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110846713
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815366:1",
+          "median_reward": 59117.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110815366
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.10216337442398071,
+        "p10": 0.04808816313743591,
+        "p90": 0.17659223079681396
+      }
+    },
+    {
+      "team": "Hire me! 🤗 [Viktor Cikojevic]",
+      "samples": 14,
+      "clusters": 2,
+      "cluster_sizes": [
+        11,
+        3
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 4,
+        "0.12": 2,
+        "0.16": 2,
+        "0.2": 2
+      },
+      "plans": [
+        {
+          "size": 11,
+          "representative": "110839364:0",
+          "median_reward": 91251.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -8.0,
+          "episode_ids": [
+            110799834,
+            110809716,
+            110805800,
+            110815049,
+            110821002,
+            110823180,
+            110833634,
+            110829673,
+            110839364,
+            110841578,
+            110848232
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110811754:0",
+          "median_reward": 98913.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -8.0,
+          "episode_ids": [
+            110802050,
+            110811754,
+            110841330
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.12546581029891968,
+        "p10": 0.04249279573559761,
+        "p90": 0.2422708123922348
+      }
+    },
+    {
+      "team": "HowardLeeTW",
+      "samples": 14,
+      "clusters": 14,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 14,
+        "0.12": 14,
+        "0.16": 14,
+        "0.2": 14
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110845975:1",
+          "median_reward": 141017.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110845975
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827372:1",
+          "median_reward": 118329.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110827372
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110838097:1",
+          "median_reward": 118200.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110838097
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821851:0",
+          "median_reward": 113162.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110821851
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795517:1",
+          "median_reward": 106796.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110795517
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832483:0",
+          "median_reward": 98613.0,
+          "median_min_money": 34.0,
+          "median_worst_slack72": 34.0,
+          "episode_ids": [
+            110832483
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815060:1",
+          "median_reward": 96566.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110815060
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802025:1",
+          "median_reward": 95151.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110802025
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110818233:0",
+          "median_reward": 91724.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110818233
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110801845:1",
+          "median_reward": 90823.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110801845
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844907:1",
+          "median_reward": 89060.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110844907
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815367:1",
+          "median_reward": 84214.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110815367
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830614:0",
+          "median_reward": 81700.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110830614
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808772:1",
+          "median_reward": 81116.0,
+          "median_min_money": 32.0,
+          "median_worst_slack72": 32.0,
+          "episode_ids": [
+            110808772
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.4232655167579651,
+        "p10": 0.34397226572036743,
+        "p90": 0.4882264733314514
+      }
+    },
+    {
+      "team": "JOSHNA ACSHA S 21CS",
+      "samples": 14,
+      "clusters": 4,
+      "cluster_sizes": [
+        7,
+        4,
+        2,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 10,
+        "0.08": 8,
+        "0.12": 4,
+        "0.16": 2,
+        "0.2": 2
+      },
+      "plans": [
+        {
+          "size": 7,
+          "representative": "110833941:1",
+          "median_reward": 81713.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110799540,
+            110810976,
+            110796213,
+            110798408,
+            110817383,
+            110827342,
+            110833941
+          ]
+        },
+        {
+          "size": 4,
+          "representative": "110816330:1",
+          "median_reward": 100587.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110797284,
+            110804234,
+            110820764,
+            110816330
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110795110:0",
+          "median_reward": 95213.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110795110,
+            110840546
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847165:1",
+          "median_reward": 85695.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110847165
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13347125053405762,
+        "p10": 0.06512525677680969,
+        "p90": 0.20662721991539001
+      }
+    },
+    {
+      "team": "Jayden Y",
+      "samples": 14,
+      "clusters": 3,
+      "cluster_sizes": [
+        9,
+        3,
+        2
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 7,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 9,
+          "representative": "110795517:0",
+          "median_reward": 100320.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110795511,
+            110795517,
+            110802023,
+            110803623,
+            110823972,
+            110831310,
+            110832863,
+            110839419,
+            110846071
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110810795:1",
+          "median_reward": 75464.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110810795,
+            110830614,
+            110846873
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110817180:1",
+          "median_reward": 67578.5,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110817383,
+            110817180
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.12095431238412857,
+        "p10": 0.04483870416879654,
+        "p90": 0.1976514756679535
+      }
+    },
+    {
+      "team": "JezzLynn",
+      "samples": 8,
+      "clusters": 3,
+      "cluster_sizes": [
+        4,
+        2,
+        2
+      ],
+      "sensitivity": {
+        "0.05": 5,
+        "0.08": 4,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 4,
+          "representative": "110846833:0",
+          "median_reward": 93322.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110843540,
+            110844637,
+            110845734,
+            110846833
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110847935:1",
+          "median_reward": 98966.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110841264,
+            110847935
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110840160:0",
+          "median_reward": 78924.0,
+          "median_min_money": 3.5,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110840160,
+            110842449
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13202278316020966,
+        "p10": 0.039192022010684016,
+        "p90": 0.1892655432224274
+      }
+    },
+    {
+      "team": "Justin Yang",
+      "samples": 14,
+      "clusters": 2,
+      "cluster_sizes": [
+        11,
+        3
+      ],
+      "sensitivity": {
+        "0.05": 5,
+        "0.08": 4,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 11,
+          "representative": "110792089:0",
+          "median_reward": 95832.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -8.0,
+          "episode_ids": [
+            110791095,
+            110792089,
+            110798699,
+            110805226,
+            110808777,
+            110817128,
+            110815370,
+            110823180,
+            110829674,
+            110836238,
+            110836752
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110784444:1",
+          "median_reward": 99879.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -8.0,
+          "episode_ids": [
+            110784444,
+            110777595,
+            110843768
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.08986756205558777,
+        "p10": 0.0057316613383591175,
+        "p90": 0.15639743208885193
+      }
+    },
+    {
+      "team": "Kaggledew Valley 🏆",
+      "samples": 10,
+      "clusters": 10,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 10,
+        "0.08": 10,
+        "0.12": 10,
+        "0.16": 10,
+        "0.2": 10
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110833700:1",
+          "median_reward": 153978.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110833700
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110819703:1",
+          "median_reward": 139742.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110819703
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110831293:1",
+          "median_reward": 130481.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110831293
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826272:1",
+          "median_reward": 110304.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110826272
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844535:0",
+          "median_reward": 105245.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110844535
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110829227:1",
+          "median_reward": 104178.0,
+          "median_min_money": 44.0,
+          "median_worst_slack72": 46.0,
+          "episode_ids": [
+            110829227
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110829293:0",
+          "median_reward": 100595.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110829293
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110836755:0",
+          "median_reward": 99026.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110836755
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832494:1",
+          "median_reward": 89253.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110832494
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843771:1",
+          "median_reward": 79670.0,
+          "median_min_money": 129.0,
+          "median_worst_slack72": 130.0,
+          "episode_ids": [
+            110843771
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.528057336807251,
+        "p10": 0.4064579069614411,
+        "p90": 0.581759262084961
+      }
+    },
+    {
+      "team": "Kenjo1209",
+      "samples": 10,
+      "clusters": 2,
+      "cluster_sizes": [
+        7,
+        3
+      ],
+      "sensitivity": {
+        "0.05": 7,
+        "0.08": 5,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 7,
+          "representative": "110847961:1",
+          "median_reward": 80992.0,
+          "median_min_money": 14.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110840194,
+            110841259,
+            110842437,
+            110843551,
+            110844657,
+            110847961,
+            110845755
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110844905:1",
+          "median_reward": 79438.0,
+          "median_min_money": 14.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110844905,
+            110842449,
+            110846861
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.11296737194061279,
+        "p10": 0.05692845210433006,
+        "p90": 0.17829905450344086
+      }
+    },
+    {
+      "team": "Majkel1337",
+      "samples": 19,
+      "clusters": 19,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 19,
+        "0.08": 19,
+        "0.12": 19,
+        "0.16": 18,
+        "0.2": 14
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110787897:0",
+          "median_reward": 146603.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3302.0,
+          "episode_ids": [
+            110787897
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110853714:1",
+          "median_reward": 138278.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -3762.0,
+          "episode_ids": [
+            110853714
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860277:1",
+          "median_reward": 137781.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3241.0,
+          "episode_ids": [
+            110860277
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814279:1",
+          "median_reward": 129574.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -2195.0,
+          "episode_ids": [
+            110814279
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110768104:1",
+          "median_reward": 124864.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -3619.0,
+          "episode_ids": [
+            110768104
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807592:1",
+          "median_reward": 124331.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -7261.0,
+          "episode_ids": [
+            110807592
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110866886:1",
+          "median_reward": 118257.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3066.0,
+          "episode_ids": [
+            110866886
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110748260:0",
+          "median_reward": 117141.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -5861.0,
+          "episode_ids": [
+            110748260
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820756:1",
+          "median_reward": 115739.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4217.0,
+          "episode_ids": [
+            110820756
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827336:1",
+          "median_reward": 104955.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3260.0,
+          "episode_ids": [
+            110827336
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110761433:1",
+          "median_reward": 103216.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -1673.0,
+          "episode_ids": [
+            110761433
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833935:1",
+          "median_reward": 101819.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -8249.0,
+          "episode_ids": [
+            110833935
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840539:1",
+          "median_reward": 97154.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -1699.0,
+          "episode_ids": [
+            110840539
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110781289:1",
+          "median_reward": 93538.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -2814.0,
+          "episode_ids": [
+            110781289
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110774688:0",
+          "median_reward": 92422.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3270.0,
+          "episode_ids": [
+            110774688
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800960:1",
+          "median_reward": 91098.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3153.0,
+          "episode_ids": [
+            110800960
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847157:0",
+          "median_reward": 86662.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -10014.0,
+          "episode_ids": [
+            110847157
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110754532:0",
+          "median_reward": 78135.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3396.0,
+          "episode_ids": [
+            110754532
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110794443:0",
+          "median_reward": 75007.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -2521.0,
+          "episode_ids": [
+            110794443
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.3257562220096588,
+        "p10": 0.21697422862052917,
+        "p90": 0.44651979207992554
+      }
+    },
+    {
+      "team": "OceanMix",
+      "samples": 13,
+      "clusters": 4,
+      "cluster_sizes": [
+        10,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 6,
+        "0.08": 5,
+        "0.12": 4,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 10,
+          "representative": "110832600:1",
+          "median_reward": 88870.0,
+          "median_min_money": 4.5,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110827084,
+            110828179,
+            110829272,
+            110832413,
+            110832600,
+            110832865,
+            110833702,
+            110834815,
+            110839131,
+            110845984
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110831494:0",
+          "median_reward": 81080.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110831494
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830385:1",
+          "median_reward": 76092.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110830385
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110825978:1",
+          "median_reward": 71581.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110825978
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.09133847057819366,
+        "p10": 0.022567959502339363,
+        "p90": 0.16113184094429017
+      }
+    },
+    {
+      "team": "Omar Althobaiti",
+      "samples": 14,
+      "clusters": 3,
+      "cluster_sizes": [
+        7,
+        6,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 8,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 7,
+          "representative": "110835046:1",
+          "median_reward": 111414.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110818351,
+            110817255,
+            110822808,
+            110823902,
+            110821645,
+            110835046,
+            110846871
+          ]
+        },
+        {
+          "size": 6,
+          "representative": "110828450:0",
+          "median_reward": 99447.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 4.5,
+          "episode_ids": [
+            110819459,
+            110820557,
+            110828450,
+            110827019,
+            110836906,
+            110841141
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846016:0",
+          "median_reward": 104535.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": -117.0,
+          "episode_ids": [
+            110846016
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.1184237152338028,
+        "p10": 0.0344507172703743,
+        "p90": 0.18948887288570404
+      }
+    },
+    {
+      "team": "Orbital Terraformer",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 14,
+        "0.2": 10
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110808765:0",
+          "median_reward": 140723.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -5382.0,
+          "episode_ids": [
+            110808765
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833937:1",
+          "median_reward": 129843.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3275.0,
+          "episode_ids": [
+            110833937
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824032:0",
+          "median_reward": 123214.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -10248.0,
+          "episode_ids": [
+            110824032
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817471:1",
+          "median_reward": 116125.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -3175.0,
+          "episode_ids": [
+            110817471
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830657:1",
+          "median_reward": 112393.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3689.0,
+          "episode_ids": [
+            110830657
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847160:0",
+          "median_reward": 111565.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3628.0,
+          "episode_ids": [
+            110847160
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814159:0",
+          "median_reward": 108741.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2295.0,
+          "episode_ids": [
+            110814159
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832533:0",
+          "median_reward": 107604.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -2980.0,
+          "episode_ids": [
+            110832533
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795528:1",
+          "median_reward": 98266.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -5269.0,
+          "episode_ids": [
+            110795528
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840544:0",
+          "median_reward": 90848.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -2682.0,
+          "episode_ids": [
+            110840544
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814295:1",
+          "median_reward": 88360.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -3438.0,
+          "episode_ids": [
+            110814295
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815357:1",
+          "median_reward": 77454.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -11680.0,
+          "episode_ids": [
+            110815357
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802031:1",
+          "median_reward": 77396.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4625.0,
+          "episode_ids": [
+            110802031
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110842487:1",
+          "median_reward": 76299.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -2933.0,
+          "episode_ids": [
+            110842487
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807614:0",
+          "median_reward": 65727.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -3595.0,
+          "episode_ids": [
+            110807614
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.33884140849113464,
+        "p10": 0.20013367533683776,
+        "p90": 0.4448355317115784
+      }
+    },
+    {
+      "team": "Otter Vibe",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110807612:0",
+          "median_reward": 142355.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110807612
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110853714:0",
+          "median_reward": 121267.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110853714
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814296:0",
+          "median_reward": 115469.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110814296
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807592:0",
+          "median_reward": 114303.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110807592
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110852541:1",
+          "median_reward": 112766.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110852541
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815369:1",
+          "median_reward": 111827.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110815369
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835049:0",
+          "median_reward": 107155.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110835049
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802026:1",
+          "median_reward": 103885.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110802026
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802018:0",
+          "median_reward": 101173.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110802018
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110845771:1",
+          "median_reward": 97381.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110845771
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841642:1",
+          "median_reward": 96921.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110841642
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110831674:1",
+          "median_reward": 88265.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110831674
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824033:1",
+          "median_reward": 77767.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110824033
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817474:0",
+          "median_reward": 71021.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110817474
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824820:0",
+          "median_reward": 69343.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110824820
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.40174663066864014,
+        "p10": 0.3203576922416687,
+        "p90": 0.48514615893363955
+      }
+    },
+    {
+      "team": "Planned Economy",
+      "samples": 16,
+      "clusters": 16,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 16,
+        "0.08": 16,
+        "0.12": 16,
+        "0.16": 16,
+        "0.2": 16
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110795481:1",
+          "median_reward": 138011.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 13.0,
+          "episode_ids": [
+            110795481
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833942:0",
+          "median_reward": 137695.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110833942
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847972:1",
+          "median_reward": 125355.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110847972
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815349:0",
+          "median_reward": 119772.0,
+          "median_min_money": 19.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110815349
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827344:1",
+          "median_reward": 113691.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110827344
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840548:0",
+          "median_reward": 111918.0,
+          "median_min_money": 20.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110840548
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821834:1",
+          "median_reward": 100928.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": 17.0,
+          "episode_ids": [
+            110821834
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847164:0",
+          "median_reward": 99056.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110847164
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860289:1",
+          "median_reward": 93788.0,
+          "median_min_money": 16.0,
+          "median_worst_slack72": 19.0,
+          "episode_ids": [
+            110860289
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860284:1",
+          "median_reward": 91234.0,
+          "median_min_money": 20.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110860284
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833940:0",
+          "median_reward": 88064.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110833940
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808745:0",
+          "median_reward": 84369.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110808745
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110788999:1",
+          "median_reward": 79269.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110788999
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840542:0",
+          "median_reward": 70441.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110840542
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110801998:0",
+          "median_reward": 68765.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110801998
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824033:0",
+          "median_reward": 68228.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110824033
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.3942152261734009,
+        "p10": 0.30849763453006745,
+        "p90": 0.4818595230579376
+      }
+    },
+    {
+      "team": "QQ",
+      "samples": 16,
+      "clusters": 16,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 16,
+        "0.08": 16,
+        "0.12": 16,
+        "0.16": 16,
+        "0.2": 16
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110797624:0",
+          "median_reward": 157447.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -47.0,
+          "episode_ids": [
+            110797624
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110837226:0",
+          "median_reward": 133333.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -521.0,
+          "episode_ids": [
+            110837226
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827343:1",
+          "median_reward": 128229.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -443.0,
+          "episode_ids": [
+            110827343
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110791085:1",
+          "median_reward": 126288.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -507.0,
+          "episode_ids": [
+            110791085
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802034:1",
+          "median_reward": 120989.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -509.0,
+          "episode_ids": [
+            110802034
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814296:1",
+          "median_reward": 118409.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -449.0,
+          "episode_ids": [
+            110814296
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820769:1",
+          "median_reward": 118363.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -445.0,
+          "episode_ids": [
+            110820769
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110831437:0",
+          "median_reward": 112894.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -450.0,
+          "episode_ids": [
+            110831437
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843895:0",
+          "median_reward": 109422.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -510.0,
+          "episode_ids": [
+            110843895
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110853719:0",
+          "median_reward": 106811.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -519.0,
+          "episode_ids": [
+            110853719
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808776:1",
+          "median_reward": 104956.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -446.0,
+          "episode_ids": [
+            110808776
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789021:0",
+          "median_reward": 98556.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -446.0,
+          "episode_ids": [
+            110789021
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789020:1",
+          "median_reward": 91669.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -509.0,
+          "episode_ids": [
+            110789020
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847159:0",
+          "median_reward": 90264.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -507.0,
+          "episode_ids": [
+            110847159
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110845621:0",
+          "median_reward": 78841.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -448.0,
+          "episode_ids": [
+            110845621
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110782412:0",
+          "median_reward": 66560.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -441.0,
+          "episode_ids": [
+            110782412
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.4220030903816223,
+        "p10": 0.35125392079353335,
+        "p90": 0.5113730788230897
+      }
+    },
+    {
+      "team": "Roxy",
+      "samples": 5,
+      "clusters": 3,
+      "cluster_sizes": [
+        3,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 4,
+        "0.08": 4,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 2
+      },
+      "plans": [
+        {
+          "size": 3,
+          "representative": "110847875:1",
+          "median_reward": 98007.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110846774,
+            110847875,
+            110845669
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110848946:1",
+          "median_reward": 88719.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110848946
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110848986:1",
+          "median_reward": 73115.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110848986
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13898511230945587,
+        "p10": 0.08391977846622467,
+        "p90": 0.2235199049115181
+      }
+    },
+    {
+      "team": "Ryo Takaki",
+      "samples": 14,
+      "clusters": 3,
+      "cluster_sizes": [
+        5,
+        5,
+        4
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 8,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 5,
+          "representative": "110818502:1",
+          "median_reward": 107348.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110811957,
+            110818502,
+            110823649,
+            110825217,
+            110828096
+          ]
+        },
+        {
+          "size": 5,
+          "representative": "110804948:1",
+          "median_reward": 82880.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110804948,
+            110800976,
+            110804058,
+            110818515,
+            110841579
+          ]
+        },
+        {
+          "size": 4,
+          "representative": "110789595:1",
+          "median_reward": 119315.5,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110794459,
+            110789595,
+            110819233,
+            110834944
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13478706777095795,
+        "p10": 0.06233517825603485,
+        "p90": 0.19407781958580017
+      }
+    },
+    {
+      "team": "Sakthei",
+      "samples": 14,
+      "clusters": 3,
+      "cluster_sizes": [
+        11,
+        2,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 4,
+        "0.12": 3,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 11,
+          "representative": "110808789:1",
+          "median_reward": 103833.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110806206,
+            110808789,
+            110821846,
+            110818737,
+            110812641,
+            110821843,
+            110820829,
+            110827084,
+            110833598,
+            110840471,
+            110847066
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110842430:1",
+          "median_reward": 90577.5,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110808792,
+            110842430
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833847:0",
+          "median_reward": 90581.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": -3.0,
+          "episode_ids": [
+            110833847
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.09472524374723434,
+        "p10": 0.017424704506993294,
+        "p90": 0.14802607893943787
+      }
+    },
+    {
+      "team": "Sida Zuo",
+      "samples": 11,
+      "clusters": 11,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 11,
+        "0.08": 11,
+        "0.12": 11,
+        "0.16": 11,
+        "0.2": 11
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110828450:1",
+          "median_reward": 146184.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110828450
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821847:0",
+          "median_reward": 141700.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110821847
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815369:0",
+          "median_reward": 115202.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110815369
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840547:1",
+          "median_reward": 111836.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110840547
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800985:0",
+          "median_reward": 109178.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110800985
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807609:0",
+          "median_reward": 96212.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110807609
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847169:1",
+          "median_reward": 90953.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110847169
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110853719:1",
+          "median_reward": 88419.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110853719
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847163:0",
+          "median_reward": 84966.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110847163
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835045:1",
+          "median_reward": 83894.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110835045
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808775:1",
+          "median_reward": 79323.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110808775
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.4011152982711792,
+        "p10": 0.32111610770225524,
+        "p90": 0.5065008759498596
+      }
+    },
+    {
+      "team": "Snorlax",
+      "samples": 12,
+      "clusters": 12,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 12,
+        "0.08": 12,
+        "0.12": 12,
+        "0.16": 12,
+        "0.2": 12
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110833939:0",
+          "median_reward": 118426.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110833939
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807072:0",
+          "median_reward": 110630.0,
+          "median_min_money": 13.0,
+          "median_worst_slack72": 14.0,
+          "episode_ids": [
+            110807072
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802007:0",
+          "median_reward": 110059.0,
+          "median_min_money": 24.0,
+          "median_worst_slack72": 24.0,
+          "episode_ids": [
+            110802007
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814105:0",
+          "median_reward": 106451.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110814105
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846071:0",
+          "median_reward": 102034.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110846071
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110819891:1",
+          "median_reward": 99862.0,
+          "median_min_money": 13.0,
+          "median_worst_slack72": 13.0,
+          "episode_ids": [
+            110819891
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821002:1",
+          "median_reward": 95274.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110821002
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827466:1",
+          "median_reward": 95270.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110827466
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844860:0",
+          "median_reward": 89492.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110844860
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795496:1",
+          "median_reward": 81973.0,
+          "median_min_money": 18.0,
+          "median_worst_slack72": 28.0,
+          "episode_ids": [
+            110795496
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110834024:0",
+          "median_reward": 81933.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110834024
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840596:1",
+          "median_reward": 75040.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110840596
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.4515172243118286,
+        "p10": 0.33644983172416687,
+        "p90": 0.5868861079216003
+      }
+    },
+    {
+      "team": "SpaTaro",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110826011:0",
+          "median_reward": 125747.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -68592.0,
+          "episode_ids": [
+            110826011
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110842887:1",
+          "median_reward": 121836.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -60301.0,
+          "episode_ids": [
+            110842887
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841248:0",
+          "median_reward": 110952.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -63500.0,
+          "episode_ids": [
+            110841248
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826241:0",
+          "median_reward": 109160.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -111728.0,
+          "episode_ids": [
+            110826241
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110823792:0",
+          "median_reward": 108732.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -63643.0,
+          "episode_ids": [
+            110823792
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826188:0",
+          "median_reward": 108717.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -76579.0,
+          "episode_ids": [
+            110826188
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828206:1",
+          "median_reward": 100031.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -67728.0,
+          "episode_ids": [
+            110828206
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110823066:1",
+          "median_reward": 98843.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -76448.0,
+          "episode_ids": [
+            110823066
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824882:1",
+          "median_reward": 97885.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -88870.0,
+          "episode_ids": [
+            110824882
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824840:0",
+          "median_reward": 94033.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -68204.0,
+          "episode_ids": [
+            110824840
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110836201:1",
+          "median_reward": 87075.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -72254.0,
+          "episode_ids": [
+            110836201
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843814:0",
+          "median_reward": 86565.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -74459.0,
+          "episode_ids": [
+            110843814
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847041:0",
+          "median_reward": 85907.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -70833.0,
+          "episode_ids": [
+            110847041
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827107:1",
+          "median_reward": 83524.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -86708.0,
+          "episode_ids": [
+            110827107
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110829614:0",
+          "median_reward": 77382.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -68089.0,
+          "episode_ids": [
+            110829614
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.42499446868896484,
+        "p10": 0.3484517991542816,
+        "p90": 0.5680882811546326
+      }
+    },
+    {
+      "team": "Suyash Verma",
+      "samples": 13,
+      "clusters": 2,
+      "cluster_sizes": [
+        12,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 6,
+        "0.08": 4,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 12,
+          "representative": "110814291:1",
+          "median_reward": 102044.0,
+          "median_min_money": 2.5,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110775768,
+            110782345,
+            110788970,
+            110795538,
+            110807609,
+            110803839,
+            110814291,
+            110820764,
+            110827341,
+            110833939,
+            110840545,
+            110844660
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802039:1",
+          "median_reward": 66921.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110802039
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.09794819355010986,
+        "p10": 0.01350416596978903,
+        "p90": 0.13638110011816024
+      }
+    },
+    {
+      "team": "THIRD FARM CLUB",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110807613:1",
+          "median_reward": 162510.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -310.0,
+          "episode_ids": [
+            110807613
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110794462:0",
+          "median_reward": 149570.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -1938.0,
+          "episode_ids": [
+            110794462
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110853718:1",
+          "median_reward": 148538.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1207.0,
+          "episode_ids": [
+            110853718
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827368:1",
+          "median_reward": 147731.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -66.0,
+          "episode_ids": [
+            110827368
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847167:0",
+          "median_reward": 119532.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -282.0,
+          "episode_ids": [
+            110847167
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110787923:0",
+          "median_reward": 117817.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -1930.0,
+          "episode_ids": [
+            110787923
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820768:0",
+          "median_reward": 108214.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1913.0,
+          "episode_ids": [
+            110820768
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807611:1",
+          "median_reward": 107653.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110807611
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860286:0",
+          "median_reward": 105048.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -42.0,
+          "episode_ids": [
+            110860286
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840553:1",
+          "median_reward": 99109.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -4000.0,
+          "episode_ids": [
+            110840553
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833954:1",
+          "median_reward": 94449.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1924.0,
+          "episode_ids": [
+            110833954
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800989:1",
+          "median_reward": 92765.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -299.0,
+          "episode_ids": [
+            110800989
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814297:1",
+          "median_reward": 91085.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -2729.0,
+          "episode_ids": [
+            110814297
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827345:0",
+          "median_reward": 88113.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110827345
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847157:1",
+          "median_reward": 73379.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4332.0,
+          "episode_ids": [
+            110847157
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.35767707228660583,
+        "p10": 0.29951592087745665,
+        "p90": 0.4507238507270813
+      }
+    },
+    {
+      "team": "THUNDER THUNDER",
+      "samples": 16,
+      "clusters": 16,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 16,
+        "0.08": 16,
+        "0.12": 16,
+        "0.16": 16,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110859066:0",
+          "median_reward": 132314.0,
+          "median_min_money": 13.0,
+          "median_worst_slack72": 14.0,
+          "episode_ids": [
+            110859066
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844953:1",
+          "median_reward": 118085.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110844953
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110865604:0",
+          "median_reward": 112714.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110865604
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110830657:0",
+          "median_reward": 112551.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110830657
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802034:0",
+          "median_reward": 112441.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110802034
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827341:1",
+          "median_reward": 111653.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110827341
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815349:1",
+          "median_reward": 107767.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110815349
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110831674:0",
+          "median_reward": 99251.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110831674
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808777:0",
+          "median_reward": 94263.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110808777
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110823724:0",
+          "median_reward": 91135.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110823724
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795523:1",
+          "median_reward": 90191.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110795523
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795531:1",
+          "median_reward": 89523.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110795531
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814297:0",
+          "median_reward": 82759.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110814297
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828358:1",
+          "median_reward": 78772.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": -14.0,
+          "episode_ids": [
+            110828358
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821837:0",
+          "median_reward": 77475.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 13.0,
+          "episode_ids": [
+            110821837
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110838262:1",
+          "median_reward": 67814.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110838262
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.36120450496673584,
+        "p10": 0.27755625545978546,
+        "p90": 0.46143026053905495
+      }
+    },
+    {
+      "team": "Xiangyu Liu",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 14
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110830653:1",
+          "median_reward": 121383.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110830653
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110842538:1",
+          "median_reward": 120430.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110842538
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800985:1",
+          "median_reward": 113428.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110800985
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110848275:1",
+          "median_reward": 104646.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110848275
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814292:1",
+          "median_reward": 97506.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110814292
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110818790:1",
+          "median_reward": 89150.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110818790
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110822620:1",
+          "median_reward": 84535.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110822620
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110799712:1",
+          "median_reward": 84226.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110799712
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828191:1",
+          "median_reward": 83274.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110828191
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110839328:0",
+          "median_reward": 83155.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110839328
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110823050:0",
+          "median_reward": 80154.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110823050
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807610:0",
+          "median_reward": 80125.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 2.0,
+          "episode_ids": [
+            110807610
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817740:1",
+          "median_reward": 76796.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 0.0,
+          "episode_ids": [
+            110817740
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833702:0",
+          "median_reward": 74515.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110833702
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807162:0",
+          "median_reward": 73432.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110807162
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.463022381067276,
+        "p10": 0.35571293234825135,
+        "p90": 0.5795233130455018
+      }
+    },
+    {
+      "team": "Yannik Schiffner",
+      "samples": 1,
+      "clusters": 1,
+      "cluster_sizes": [
+        1
+      ],
+      "sensitivity": {
+        "0.05": 1,
+        "0.08": 1,
+        "0.12": 1,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110865604:1",
+          "median_reward": 107866.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -131.0,
+          "episode_ids": [
+            110865604
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.0,
+        "p10": 0.0,
+        "p90": 0.0
+      }
+    },
+    {
+      "team": "alex chilton",
+      "samples": 16,
+      "clusters": 3,
+      "cluster_sizes": [
+        9,
+        6,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 9,
+        "0.08": 5,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 9,
+          "representative": "110844696:0",
+          "median_reward": 107859.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110791752,
+            110798569,
+            110805148,
+            110814423,
+            110825898,
+            110832760,
+            110839359,
+            110844696,
+            110848986
+          ]
+        },
+        {
+          "size": 6,
+          "representative": "110791647:1",
+          "median_reward": 79560.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110791647,
+            110808244,
+            110820830,
+            110825942,
+            110840230,
+            110846774
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110798558:1",
+          "median_reward": 100810.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -5.0,
+          "episode_ids": [
+            110798558
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.1321558654308319,
+        "p10": 0.04189450144767762,
+        "p90": 0.21682682633399966
+      }
+    },
+    {
+      "team": "binghua",
+      "samples": 14,
+      "clusters": 14,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 14,
+        "0.12": 14,
+        "0.16": 14,
+        "0.2": 14
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110821508:1",
+          "median_reward": 139522.0,
+          "median_min_money": 111.0,
+          "median_worst_slack72": 113.0,
+          "episode_ids": [
+            110821508
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860277:0",
+          "median_reward": 126207.0,
+          "median_min_money": 100.0,
+          "median_worst_slack72": 100.0,
+          "episode_ids": [
+            110860277
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841445:1",
+          "median_reward": 119185.0,
+          "median_min_money": 111.0,
+          "median_worst_slack72": 112.0,
+          "episode_ids": [
+            110841445
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840540:1",
+          "median_reward": 115413.0,
+          "median_min_money": 104.0,
+          "median_worst_slack72": 105.0,
+          "episode_ids": [
+            110840540
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110849510:1",
+          "median_reward": 109868.0,
+          "median_min_money": 142.0,
+          "median_worst_slack72": 142.0,
+          "episode_ids": [
+            110849510
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820766:1",
+          "median_reward": 109287.0,
+          "median_min_money": 113.0,
+          "median_worst_slack72": 119.0,
+          "episode_ids": [
+            110820766
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833935:0",
+          "median_reward": 103385.0,
+          "median_min_money": 103.0,
+          "median_worst_slack72": 105.0,
+          "episode_ids": [
+            110833935
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807611:0",
+          "median_reward": 102857.0,
+          "median_min_money": 110.0,
+          "median_worst_slack72": 111.0,
+          "episode_ids": [
+            110807611
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110848152:0",
+          "median_reward": 99942.0,
+          "median_min_money": 111.0,
+          "median_worst_slack72": 111.0,
+          "episode_ids": [
+            110848152
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814293:0",
+          "median_reward": 97379.0,
+          "median_min_money": 25.0,
+          "median_worst_slack72": 33.0,
+          "episode_ids": [
+            110814293
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110860289:0",
+          "median_reward": 91778.0,
+          "median_min_money": 84.0,
+          "median_worst_slack72": 98.0,
+          "episode_ids": [
+            110860289
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828358:0",
+          "median_reward": 82411.0,
+          "median_min_money": 107.0,
+          "median_worst_slack72": 122.0,
+          "episode_ids": [
+            110828358
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840283:1",
+          "median_reward": 77046.0,
+          "median_min_money": 106.0,
+          "median_worst_slack72": 109.0,
+          "episode_ids": [
+            110840283
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840543:0",
+          "median_reward": 64151.0,
+          "median_min_money": 105.0,
+          "median_worst_slack72": 108.0,
+          "episode_ids": [
+            110840543
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.4623366892337799,
+        "p10": 0.38104870915412903,
+        "p90": 0.532941460609436
+      }
+    },
+    {
+      "team": "carbonapi",
+      "samples": 12,
+      "clusters": 7,
+      "cluster_sizes": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 11,
+        "0.08": 10,
+        "0.12": 7,
+        "0.16": 6,
+        "0.2": 3
+      },
+      "plans": [
+        {
+          "size": 4,
+          "representative": "110838958:0",
+          "median_reward": 88059.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -406.0,
+          "episode_ids": [
+            110811952,
+            110801995,
+            110831713,
+            110838958
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110839404:1",
+          "median_reward": 99614.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -406.0,
+          "episode_ids": [
+            110804925,
+            110818494,
+            110839404
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795481:0",
+          "median_reward": 118097.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -398.0,
+          "episode_ids": [
+            110795481
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110839058:0",
+          "median_reward": 116226.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -406.0,
+          "episode_ids": [
+            110839058
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832834:0",
+          "median_reward": 100089.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -417.0,
+          "episode_ids": [
+            110832834
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110825079:0",
+          "median_reward": 91301.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -406.0,
+          "episode_ids": [
+            110825079
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846062:1",
+          "median_reward": 60174.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -398.0,
+          "episode_ids": [
+            110846062
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.20293928682804108,
+        "p10": 0.09636999666690826,
+        "p90": 0.26503852009773254
+      }
+    },
+    {
+      "team": "feel the agi",
+      "samples": 14,
+      "clusters": 13,
+      "cluster_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 13,
+        "0.12": 13,
+        "0.16": 13,
+        "0.2": 10
+      },
+      "plans": [
+        {
+          "size": 2,
+          "representative": "110835043:1",
+          "median_reward": 92906.0,
+          "median_min_money": 3.5,
+          "median_worst_slack72": -65.0,
+          "episode_ids": [
+            110788531,
+            110835043
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110841640:1",
+          "median_reward": 143310.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -39.0,
+          "episode_ids": [
+            110841640
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843922:0",
+          "median_reward": 130327.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -430.0,
+          "episode_ids": [
+            110843922
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817677:0",
+          "median_reward": 105197.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": -11.0,
+          "episode_ids": [
+            110817677
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110811681:1",
+          "median_reward": 103247.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110811681
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789001:1",
+          "median_reward": 101839.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110789001
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802006:1",
+          "median_reward": 99323.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110802006
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821834:0",
+          "median_reward": 97382.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110821834
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808755:1",
+          "median_reward": 84579.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -13.0,
+          "episode_ids": [
+            110808755
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110818273:0",
+          "median_reward": 81077.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110818273
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828441:0",
+          "median_reward": 80718.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -317.0,
+          "episode_ids": [
+            110828441
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795496:0",
+          "median_reward": 79330.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -918.0,
+          "episode_ids": [
+            110795496
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110844581:1",
+          "median_reward": 77917.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110844581
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.3143247961997986,
+        "p10": 0.2124972641468048,
+        "p90": 0.42040035128593445
+      }
+    },
+    {
+      "team": "istinetz",
+      "samples": 13,
+      "clusters": 13,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 13,
+        "0.08": 13,
+        "0.12": 13,
+        "0.16": 13,
+        "0.2": 12
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110793078:1",
+          "median_reward": 159794.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4307.0,
+          "episode_ids": [
+            110793078
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832491:1",
+          "median_reward": 142626.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110832491
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110806352:0",
+          "median_reward": 141714.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110806352
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110799754:0",
+          "median_reward": 115283.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -4307.0,
+          "episode_ids": [
+            110799754
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832834:1",
+          "median_reward": 102913.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4552.0,
+          "episode_ids": [
+            110832834
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110785740:0",
+          "median_reward": 100037.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -4068.0,
+          "episode_ids": [
+            110785740
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110813149:1",
+          "median_reward": 99143.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -5986.0,
+          "episode_ids": [
+            110813149
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110784452:1",
+          "median_reward": 92499.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110784452
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110819639:1",
+          "median_reward": 80456.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110819639
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110826234:0",
+          "median_reward": 79688.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -4065.0,
+          "episode_ids": [
+            110826234
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110798131:1",
+          "median_reward": 78635.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110798131
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846063:0",
+          "median_reward": 76912.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -4309.0,
+          "episode_ids": [
+            110846063
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110839403:0",
+          "median_reward": 73921.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -4308.0,
+          "episode_ids": [
+            110839403
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.428075909614563,
+        "p10": 0.31343190371990204,
+        "p90": 0.5393849670886993
+      }
+    },
+    {
+      "team": "jojo",
+      "samples": 14,
+      "clusters": 2,
+      "cluster_sizes": [
+        11,
+        3
+      ],
+      "sensitivity": {
+        "0.05": 8,
+        "0.08": 5,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 11,
+          "representative": "110834947:1",
+          "median_reward": 107902.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110795520,
+            110807409,
+            110795440,
+            110800530,
+            110811699,
+            110821644,
+            110823791,
+            110817698,
+            110834947,
+            110840215,
+            110845734
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110811769:0",
+          "median_reward": 86803.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110798568,
+            110811769,
+            110828095
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.11782196909189224,
+        "p10": 0.0591023787856102,
+        "p90": 0.1676957607269287
+      }
+    },
+    {
+      "team": "keiz",
+      "samples": 14,
+      "clusters": 14,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 14,
+        "0.12": 14,
+        "0.16": 14,
+        "0.2": 12
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110836053:0",
+          "median_reward": 131566.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110836053
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840540:0",
+          "median_reward": 115016.0,
+          "median_min_money": 20.0,
+          "median_worst_slack72": 20.0,
+          "episode_ids": [
+            110840540
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814423:1",
+          "median_reward": 113354.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 15.0,
+          "episode_ids": [
+            110814423
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820829:1",
+          "median_reward": 108401.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110820829
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795528:0",
+          "median_reward": 105897.0,
+          "median_min_money": 29.0,
+          "median_worst_slack72": 29.0,
+          "episode_ids": [
+            110795528
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827375:1",
+          "median_reward": 103942.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 26.0,
+          "episode_ids": [
+            110827375
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110842697:0",
+          "median_reward": 99766.0,
+          "median_min_money": 15.0,
+          "median_worst_slack72": 33.0,
+          "episode_ids": [
+            110842697
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110802032:1",
+          "median_reward": 91792.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110802032
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110845655:0",
+          "median_reward": 88257.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110845655
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110808774:0",
+          "median_reward": 86662.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110808774
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827345:1",
+          "median_reward": 81439.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 17.0,
+          "episode_ids": [
+            110827345
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820765:1",
+          "median_reward": 79983.0,
+          "median_min_money": 29.0,
+          "median_worst_slack72": 29.0,
+          "episode_ids": [
+            110820765
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833957:0",
+          "median_reward": 77457.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": 6.0,
+          "episode_ids": [
+            110833957
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840596:0",
+          "median_reward": 74924.0,
+          "median_min_money": 25.0,
+          "median_worst_slack72": 25.0,
+          "episode_ids": [
+            110840596
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.32879436016082764,
+        "p10": 0.27170711755752563,
+        "p90": 0.42725369334220886
+      }
+    },
+    {
+      "team": "kuroko1t",
+      "samples": 15,
+      "clusters": 2,
+      "cluster_sizes": [
+        10,
+        5
+      ],
+      "sensitivity": {
+        "0.05": 7,
+        "0.08": 5,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 10,
+          "representative": "110831265:0",
+          "median_reward": 101018.5,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 7.5,
+          "episode_ids": [
+            110810824,
+            110797374,
+            110803809,
+            110825751,
+            110825070,
+            110825953,
+            110831265,
+            110837433,
+            110844014,
+            110846063
+          ]
+        },
+        {
+          "size": 5,
+          "representative": "110829468:0",
+          "median_reward": 92107.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110810894,
+            110799456,
+            110818351,
+            110817438,
+            110829468
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.11356647312641144,
+        "p10": 0.04266539365053177,
+        "p90": 0.17627132833004
+      }
+    },
+    {
+      "team": "kwa",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 11
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110827120:1",
+          "median_reward": 148333.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -636.0,
+          "episode_ids": [
+            110827120
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110846061:0",
+          "median_reward": 145437.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1144.0,
+          "episode_ids": [
+            110846061
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110791074:0",
+          "median_reward": 133696.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1376.0,
+          "episode_ids": [
+            110791074
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110838077:0",
+          "median_reward": 128445.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -789.0,
+          "episode_ids": [
+            110838077
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110819917:0",
+          "median_reward": 118647.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -151.0,
+          "episode_ids": [
+            110819917
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847925:1",
+          "median_reward": 118532.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -453.0,
+          "episode_ids": [
+            110847925
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810938:1",
+          "median_reward": 108461.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -386.0,
+          "episode_ids": [
+            110810938
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110799341:0",
+          "median_reward": 103662.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -116.0,
+          "episode_ids": [
+            110799341
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110825070:1",
+          "median_reward": 103464.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1278.0,
+          "episode_ids": [
+            110825070
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835051:1",
+          "median_reward": 101571.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -549.0,
+          "episode_ids": [
+            110835051
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110796044:1",
+          "median_reward": 100802.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -540.0,
+          "episode_ids": [
+            110796044
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110806228:1",
+          "median_reward": 95635.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -591.0,
+          "episode_ids": [
+            110806228
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828441:1",
+          "median_reward": 86193.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -1416.0,
+          "episode_ids": [
+            110828441
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110839403:1",
+          "median_reward": 83570.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -3436.0,
+          "episode_ids": [
+            110839403
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110813930:1",
+          "median_reward": 81631.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -413.0,
+          "episode_ids": [
+            110813930
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.33887147903442383,
+        "p10": 0.2572896897792816,
+        "p90": 0.4391183257102967
+      }
+    },
+    {
+      "team": "lihaoruolhr",
+      "samples": 11,
+      "clusters": 3,
+      "cluster_sizes": [
+        6,
+        3,
+        2
+      ],
+      "sensitivity": {
+        "0.05": 7,
+        "0.08": 4,
+        "0.12": 3,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 6,
+          "representative": "110827071:0",
+          "median_reward": 105044.5,
+          "median_min_money": 3.5,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110827088,
+            110827071,
+            110828191,
+            110829304,
+            110832616,
+            110833785
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110845975:0",
+          "median_reward": 101339.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110825987,
+            110830407,
+            110845975
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110831516:1",
+          "median_reward": 78556.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110831516,
+            110839095
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.13828636705875397,
+        "p10": 0.04138758629560471,
+        "p90": 0.18274759352207184
+      }
+    },
+    {
+      "team": "lingxiaojun",
+      "samples": 14,
+      "clusters": 14,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 14,
+        "0.08": 14,
+        "0.12": 14,
+        "0.16": 14,
+        "0.2": 12
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110837263:0",
+          "median_reward": 145651.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110837263
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832616:0",
+          "median_reward": 140340.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110832616
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110791074:1",
+          "median_reward": 137798.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110791074
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832600:0",
+          "median_reward": 135542.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110832600
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843922:1",
+          "median_reward": 133564.0,
+          "median_min_money": 22.0,
+          "median_worst_slack72": 22.0,
+          "episode_ids": [
+            110843922
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827390:0",
+          "median_reward": 130571.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110827390
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804132:0",
+          "median_reward": 128649.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110804132
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110836977:1",
+          "median_reward": 114602.0,
+          "median_min_money": 97.0,
+          "median_worst_slack72": 98.0,
+          "episode_ids": [
+            110836977
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110797620:0",
+          "median_reward": 99917.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": 11.0,
+          "episode_ids": [
+            110797620
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817473:1",
+          "median_reward": 98238.0,
+          "median_min_money": 22.0,
+          "median_worst_slack72": 22.0,
+          "episode_ids": [
+            110817473
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810940:0",
+          "median_reward": 97333.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110810940
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110829272:1",
+          "median_reward": 96206.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110829272
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843895:1",
+          "median_reward": 95928.0,
+          "median_min_money": 15.0,
+          "median_worst_slack72": 19.0,
+          "episode_ids": [
+            110843895
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820852:0",
+          "median_reward": 85016.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110820852
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.3664890229701996,
+        "p10": 0.28177565336227417,
+        "p90": 0.4563348591327667
+      }
+    },
+    {
+      "team": "mikelou1",
+      "samples": 14,
+      "clusters": 6,
+      "cluster_sizes": [
+        7,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 9,
+        "0.08": 9,
+        "0.12": 6,
+        "0.16": 4,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 7,
+          "representative": "110837219:1",
+          "median_reward": 91239.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110790646,
+            110806977,
+            110818790,
+            110820406,
+            110821568,
+            110833675,
+            110837219
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110812803:0",
+          "median_reward": 103280.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110797501,
+            110812018,
+            110812803
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110843890:1",
+          "median_reward": 138016.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 4.0,
+          "episode_ids": [
+            110843890
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110828367:1",
+          "median_reward": 122256.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": 10.0,
+          "episode_ids": [
+            110828367
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110788970:0",
+          "median_reward": 93964.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110788970
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804058:1",
+          "median_reward": 71227.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 8.0,
+          "episode_ids": [
+            110804058
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.14164219796657562,
+        "p10": 0.07122696936130524,
+        "p90": 0.20051205158233643
+      }
+    },
+    {
+      "team": "tetsuya & yuanzhe & guoqi",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 15,
+        "0.2": 15
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110814298:1",
+          "median_reward": 129553.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -154842.0,
+          "episode_ids": [
+            110814298
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827343:0",
+          "median_reward": 129091.0,
+          "median_min_money": 15.0,
+          "median_worst_slack72": -90089.0,
+          "episode_ids": [
+            110827343
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840547:0",
+          "median_reward": 122527.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": -178251.0,
+          "episode_ids": [
+            110840547
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110824032:1",
+          "median_reward": 120621.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -90015.0,
+          "episode_ids": [
+            110824032
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789016:1",
+          "median_reward": 114204.0,
+          "median_min_money": 7.0,
+          "median_worst_slack72": -90015.0,
+          "episode_ids": [
+            110789016
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833943:0",
+          "median_reward": 111975.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -90465.0,
+          "episode_ids": [
+            110833943
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110814294:0",
+          "median_reward": 105477.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -380328.0,
+          "episode_ids": [
+            110814294
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800979:1",
+          "median_reward": 103786.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -80801.0,
+          "episode_ids": [
+            110800979
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820771:0",
+          "median_reward": 99496.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -90020.0,
+          "episode_ids": [
+            110820771
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847169:0",
+          "median_reward": 97192.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -178251.0,
+          "episode_ids": [
+            110847169
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110795559:1",
+          "median_reward": 96242.0,
+          "median_min_money": 23.0,
+          "median_worst_slack72": -90098.0,
+          "episode_ids": [
+            110795559
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847163:1",
+          "median_reward": 94613.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": -178251.0,
+          "episode_ids": [
+            110847163
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840553:0",
+          "median_reward": 93424.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -167077.0,
+          "episode_ids": [
+            110840553
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800989:0",
+          "median_reward": 91384.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -167077.0,
+          "episode_ids": [
+            110800989
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110807614:1",
+          "median_reward": 67156.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -90460.0,
+          "episode_ids": [
+            110807614
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.42472144961357117,
+        "p10": 0.33493030071258545,
+        "p90": 0.5189783573150635
+      }
+    },
+    {
+      "team": "wangkxu",
+      "samples": 13,
+      "clusters": 2,
+      "cluster_sizes": [
+        8,
+        5
+      ],
+      "sensitivity": {
+        "0.05": 6,
+        "0.08": 3,
+        "0.12": 2,
+        "0.16": 1,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 8,
+          "representative": "110827071:1",
+          "median_reward": 101853.0,
+          "median_min_money": 6.5,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110827071,
+            110825953,
+            110829263,
+            110830360,
+            110831477,
+            110832581,
+            110834786,
+            110833675
+          ]
+        },
+        {
+          "size": 5,
+          "representative": "110835888:1",
+          "median_reward": 98252.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110828159,
+            110835888,
+            110837003,
+            110838097,
+            110844905
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.10225202143192291,
+        "p10": 0.007117046508938074,
+        "p90": 0.14733485579490654
+      }
+    },
+    {
+      "team": "yjshyfy",
+      "samples": 12,
+      "clusters": 5,
+      "cluster_sizes": [
+        5,
+        3,
+        2,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 9,
+        "0.08": 6,
+        "0.12": 5,
+        "0.16": 3,
+        "0.2": 2
+      },
+      "plans": [
+        {
+          "size": 5,
+          "representative": "110832944:1",
+          "median_reward": 117249.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110802013,
+            110825047,
+            110832944,
+            110840259,
+            110847066
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110816096:0",
+          "median_reward": 91670.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110808761,
+            110816096,
+            110830385
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110818206:1",
+          "median_reward": 96948.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -304.5,
+          "episode_ids": [
+            110818206,
+            110839474
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110800964:1",
+          "median_reward": 130676.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110800964
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110815361:1",
+          "median_reward": 103018.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110815361
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.15929344296455383,
+        "p10": 0.05184841342270374,
+        "p90": 0.25174956023693085
+      }
+    },
+    {
+      "team": "ymg_aq",
+      "samples": 15,
+      "clusters": 15,
+      "cluster_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 15,
+        "0.12": 15,
+        "0.16": 14,
+        "0.2": 10
+      },
+      "plans": [
+        {
+          "size": 1,
+          "representative": "110797624:1",
+          "median_reward": 154600.0,
+          "median_min_money": 10.0,
+          "median_worst_slack72": -390.0,
+          "episode_ids": [
+            110797624
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110840552:1",
+          "median_reward": 146528.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -400.0,
+          "episode_ids": [
+            110840552
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110789018:0",
+          "median_reward": 137200.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": -400.0,
+          "episode_ids": [
+            110789018
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110827334:1",
+          "median_reward": 113359.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -392.0,
+          "episode_ids": [
+            110827334
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817471:0",
+          "median_reward": 113253.0,
+          "median_min_money": 8.0,
+          "median_worst_slack72": -389.0,
+          "episode_ids": [
+            110817471
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110794460:0",
+          "median_reward": 112014.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -399.0,
+          "episode_ids": [
+            110794460
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810938:0",
+          "median_reward": 109877.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": -400.0,
+          "episode_ids": [
+            110810938
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110782411:0",
+          "median_reward": 109155.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -397.0,
+          "episode_ids": [
+            110782411
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110781325:1",
+          "median_reward": 108740.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -387.0,
+          "episode_ids": [
+            110781325
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110847168:0",
+          "median_reward": 107043.0,
+          "median_min_money": 5.0,
+          "median_worst_slack72": -399.0,
+          "episode_ids": [
+            110847168
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804134:0",
+          "median_reward": 103118.0,
+          "median_min_money": 11.0,
+          "median_worst_slack72": -389.0,
+          "episode_ids": [
+            110804134
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833933:1",
+          "median_reward": 97331.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": -392.0,
+          "episode_ids": [
+            110833933
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110774740:1",
+          "median_reward": 93239.0,
+          "median_min_money": 6.0,
+          "median_worst_slack72": -387.0,
+          "episode_ids": [
+            110774740
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110820755:1",
+          "median_reward": 92902.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -390.0,
+          "episode_ids": [
+            110820755
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110833954:0",
+          "median_reward": 85576.0,
+          "median_min_money": 3.0,
+          "median_worst_slack72": -401.0,
+          "episode_ids": [
+            110833954
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.27153122425079346,
+        "p10": 0.20256255865097045,
+        "p90": 0.3496929943561554
+      }
+    },
+    {
+      "team": "アルモンド",
+      "samples": 15,
+      "clusters": 10,
+      "cluster_sizes": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 15,
+        "0.08": 13,
+        "0.12": 10,
+        "0.16": 7,
+        "0.2": 4
+      },
+      "plans": [
+        {
+          "size": 4,
+          "representative": "110859066:1",
+          "median_reward": 120577.0,
+          "median_min_money": 5.5,
+          "median_worst_slack72": 7.0,
+          "episode_ids": [
+            110780180,
+            110828381,
+            110841615,
+            110859066
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110788920:1",
+          "median_reward": 91355.5,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 3.5,
+          "episode_ids": [
+            110788920,
+            110810935
+          ]
+        },
+        {
+          "size": 2,
+          "representative": "110814293:1",
+          "median_reward": 84665.5,
+          "median_min_money": 5.5,
+          "median_worst_slack72": 8.5,
+          "episode_ids": [
+            110791055,
+            110814293
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110797607:1",
+          "median_reward": 116575.0,
+          "median_min_money": 9.0,
+          "median_worst_slack72": 9.0,
+          "episode_ids": [
+            110797607
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110835000:0",
+          "median_reward": 101566.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110835000
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110821610:0",
+          "median_reward": 94022.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110821610
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110817228:1",
+          "median_reward": 94006.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110817228
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110804127:0",
+          "median_reward": 87398.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110804127
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110785292:1",
+          "median_reward": 79350.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110785292
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110810615:1",
+          "median_reward": 74480.0,
+          "median_min_money": 1.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110810615
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.2088674157857895,
+        "p10": 0.13010987341403962,
+        "p90": 0.3055487751960755
+      }
+    },
+    {
+      "team": "福原 大知",
+      "samples": 14,
+      "clusters": 4,
+      "cluster_sizes": [
+        9,
+        3,
+        1,
+        1
+      ],
+      "sensitivity": {
+        "0.05": 7,
+        "0.08": 5,
+        "0.12": 4,
+        "0.16": 2,
+        "0.2": 1
+      },
+      "plans": [
+        {
+          "size": 9,
+          "representative": "110820544:1",
+          "median_reward": 98265.0,
+          "median_min_money": 4.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110797501,
+            110806248,
+            110819582,
+            110820544,
+            110824053,
+            110824918,
+            110831683,
+            110835000,
+            110841630
+          ]
+        },
+        {
+          "size": 3,
+          "representative": "110799459:0",
+          "median_reward": 80620.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 1.0,
+          "episode_ids": [
+            110799459,
+            110822559,
+            110835020
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110832760:0",
+          "median_reward": 114118.0,
+          "median_min_money": 2.0,
+          "median_worst_slack72": 5.0,
+          "episode_ids": [
+            110832760
+          ]
+        },
+        {
+          "size": 1,
+          "representative": "110813079:0",
+          "median_reward": 90610.0,
+          "median_min_money": 0.0,
+          "median_worst_slack72": 3.0,
+          "episode_ids": [
+            110813079
+          ]
+        }
+      ],
+      "pair_distance": {
+        "median": 0.10890237241983414,
+        "p10": 0.020014995709061623,
+        "p90": 0.17204801738262177
+      }
+    }
+  ]
+}

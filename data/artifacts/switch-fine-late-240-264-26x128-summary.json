@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "engine": "C++ NativeTeammateExecutor.switch_search",
+  "layout": "opening, checkpoint, target, opponent, seed, seat",
+  "openings": [
+    "G001",
+    "G210",
+    "G275",
+    "G379",
+    "G411"
+  ],
+  "target_count": 26,
+  "opponent_count": 245,
+  "checkpoints": [
+    240,
+    264
+  ],
+  "seed_count": 128,
+  "pairing": "identical seeds and both seats",
+  "games": 16307200,
+  "state_vectors": 627200,
+  "feature_count": 147,
+  "setup_seconds": 5.273202404379845,
+  "simulation_seconds": 575.7356158895418,
+  "games_per_second": 28324.11188389747,
+  "output": "data/artifacts/switch-fine-late-240-264-26x128.npz"
+}

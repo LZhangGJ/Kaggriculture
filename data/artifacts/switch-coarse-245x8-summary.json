@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "engine": "C++ NativeTeammateExecutor.switch_search",
+  "layout": "opening, checkpoint, target, opponent, seed, seat",
+  "openings": [
+    "G001",
+    "G210",
+    "G275",
+    "G379",
+    "G411"
+  ],
+  "target_count": 245,
+  "opponent_count": 245,
+  "checkpoints": [
+    144,
+    168,
+    216
+  ],
+  "seed_count": 8,
+  "pairing": "identical seeds and both seats",
+  "games": 14406000,
+  "state_vectors": 58800,
+  "feature_count": 147,
+  "setup_seconds": 4.798951314762235,
+  "simulation_seconds": 383.4835118772462,
+  "games_per_second": 37566.15226943939,
+  "output": "/root/kaggriculture-research-20260920/formal-609-switch-v1/switch-coarse-245x8.npz"
+}

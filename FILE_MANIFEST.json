@@ -1,0 +1,2787 @@
+{
+  "schema": "clean-project-file-manifest-v1",
+  "generated": "2026-09-21",
+  "entries": 556,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 294,
+      "sha256": "c0ea887601f26a06a2b0c764cb2fe04a1b1bc38642e88e5c7e7a13b474050efc"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 869,
+      "sha256": "d71b98aefd3c87405a99fbe40e76bffb2d848c6b3a64ef2c64d3e2f92be3ad6d"
+    },
+    {
+      "path": "HANDOFF_ZH.md",
+      "bytes": 19435,
+      "sha256": "bb3b9ae0aa7b4ded7c407f138054b56707539a9e01f2686dcd7b63d9f0cc88c4"
+    },
+    {
+      "path": "PROJECT_MANIFEST.json",
+      "bytes": 2544,
+      "sha256": "835860fd3712ae5c4532a09bb2914d1d322c51d70d50f358f3990d66d7ea1e17"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5123,
+      "sha256": "1d7f8e20c0cb99f714b2147c3fdf1b16b02b1ce91cbd36b0e285cb4c8165160f"
+    },
+    {
+      "path": "SOURCE_SHA256.txt",
+      "bytes": 709,
+      "sha256": "b50873f0a4cced4d90486a3de450eebaf773c996c4bc972818e25100fd7b00c8"
+    },
+    {
+      "path": "agent/main.py",
+      "bytes": 12692,
+      "sha256": "0579b9caa31407d13755dbd7cebbbe4d8d24d4370fc5f81029bf4cbce42e74ba"
+    },
+    {
+      "path": "agent/replay_deployment.json",
+      "bytes": 538,
+      "sha256": "5ddbc15cca6870bff13f33604a46b99a1a7e196e04ba1a6c141342c2c56ff348"
+    },
+    {
+      "path": "agent/route_actions.json.zlib",
+      "bytes": 2277028,
+      "sha256": "46eb5291d5880106363b4cb9abdcee2ff61caaa75c9c8403106c249e002e9379"
+    },
+    {
+      "path": "agent/route_library.json",
+      "bytes": 131721,
+      "sha256": "664c088d2518a12a1ad9c6b03bf3cc62630cc5e9ba0a970b59636a9462a92d65"
+    },
+    {
+      "path": "agent/route_policy.json",
+      "bytes": 4321351,
+      "sha256": "2a0bc65ac1b6a6351494b425c5e1b9df0471b1dcc4d3e1ff4146e9cc29578be4"
+    },
+    {
+      "path": "agent/teammate_base.py",
+      "bytes": 554323,
+      "sha256": "3e5fcb4b908a0f3bc8e8be6f7545473ab376ab3b22f672222b395ce25f9fe0cc"
+    },
+    {
+      "path": "data/artifacts/execution-audit-609-summary.json",
+      "bytes": 2126,
+      "sha256": "ec554ce4615710f088573131b2058618916ca51bfea12debcfd32f782cec5a3b"
+    },
+    {
+      "path": "data/artifacts/execution-audit-609.npz",
+      "bytes": 88794,
+      "sha256": "c3517e7db2b8203ae31949ce276b2b7bfd16cd123de5e958a66620ce17f0681f"
+    },
+    {
+      "path": "data/artifacts/features-609.npz",
+      "bytes": 460234,
+      "sha256": "a11da36ac7593b11ea27998b3178426a33f396b2f27f22ca1f3644a3c1b836f4"
+    },
+    {
+      "path": "data/artifacts/input_manifest.json",
+      "bytes": 143787,
+      "sha256": "dcc0a473ea0433be8b47f9bf43c47054262ac4a038726e3cd89d8cb51cc8144a"
+    },
+    {
+      "path": "data/artifacts/intent-clusters-609-summary.json",
+      "bytes": 3881,
+      "sha256": "aa0561e7c900dbd17e05ab5c49530b8533a1d7daf50cb2254492f552ab695d52"
+    },
+    {
+      "path": "data/artifacts/intent-clusters-609.npz",
+      "bytes": 3690,
+      "sha256": "06fbee87f33deba86b73cb8bb1d2ece02592efc5cbcb3d5ec3b09c65d4f19792"
+    },
+    {
+      "path": "data/artifacts/intent-distance-input-v1.bin",
+      "bytes": 556484,
+      "sha256": "843167ced58b7f36f1b684c42088baf559b23cc33d934420b903ab890c3b6c92"
+    },
+    {
+      "path": "data/artifacts/intent-distance-v1.f32",
+      "bytes": 2262016,
+      "sha256": "c5a1c0d3d1cadd9a7162010fdbd2a62db70fe6ae403d9acd68a044bb5999118b"
+    },
+    {
+      "path": "data/artifacts/macro-intent-routes-609.json",
+      "bytes": 8141023,
+      "sha256": "abf80941146f88c71485b86cb6989fed7b060b20b7f991bb0badb37a19bcc8a6"
+    },
+    {
+      "path": "data/artifacts/macro-library-report.json",
+      "bytes": 161719,
+      "sha256": "6c60e9e0bd9457ee9fdeefe7b9c8e7e3cd108e319b41bd466ff7a74f3ed3ef51"
+    },
+    {
+      "path": "data/artifacts/nash-245x64.json",
+      "bytes": 8345,
+      "sha256": "537578715b5c99eb4644ab6bce014b64ced1c625413704553fa080370b6879c8"
+    },
+    {
+      "path": "data/artifacts/replay-manifest-609.json",
+      "bytes": 602060,
+      "sha256": "d09a5686fe6185740b5140859c7162434f2ca89d84fd16804101d446b90c330c"
+    },
+    {
+      "path": "data/artifacts/round-robin-245x64-summary.json",
+      "bytes": 64921,
+      "sha256": "e837b3b312f63d2e66a9b324b8fca78effd17aa046f3704fb464feba599077ee"
+    },
+    {
+      "path": "data/artifacts/round-robin-245x64.npz",
+      "bytes": 557897,
+      "sha256": "04076de5d2f74d1ff503e0a8185f60a1a3518b93ffe1a59c3174424d2de3c56a"
+    },
+    {
+      "path": "data/artifacts/route-actions-609.json.zlib",
+      "bytes": 2277028,
+      "sha256": "46eb5291d5880106363b4cb9abdcee2ff61caaa75c9c8403106c249e002e9379"
+    },
+    {
+      "path": "data/artifacts/route-library-609.json",
+      "bytes": 131784,
+      "sha256": "65ca970ebbab8fb8fc276c5057a43d61c5c48ebbbd6923ae2d17cbf051e8b8db"
+    },
+    {
+      "path": "data/artifacts/switch-coarse-245x8-summary.json",
+      "bytes": 682,
+      "sha256": "f2525ef527a1a3ec2d012cd655f1b726343082177cc01dd33b82bd86b8338ddd"
+    },
+    {
+      "path": "data/artifacts/switch-coarse-245x8.npz",
+      "bytes": 106614790,
+      "sha256": "7995a61aae50c91ffda6ee87ccdb8de7fee14652b1420d60b4e986b8e995da33"
+    },
+    {
+      "path": "data/artifacts/switch-coarse-analysis.json",
+      "bytes": 67906,
+      "sha256": "2f7bd8b4b18a890d7368c030dfe81bd8b5adf37480557b451820203e08ab6572"
+    },
+    {
+      "path": "data/artifacts/switch-fine-26x128-summary.json",
+      "bytes": 683,
+      "sha256": "55450b9d5acc5363542be1df5231ffcd79921c6124df7a38176875ed3c1a372b"
+    },
+    {
+      "path": "data/artifacts/switch-fine-26x128.npz",
+      "bytes": 675502246,
+      "sha256": "8e05c95bb27003e137648439655e4015da79c452b7aacbb344006e361d6a5686"
+    },
+    {
+      "path": "data/artifacts/switch-fine-late-240-264-26x128-summary.json",
+      "bytes": 643,
+      "sha256": "2fec88e13b713ba861895308812ea0c5507c5fe7d20673aa7b65072b5121373b"
+    },
+    {
+      "path": "data/artifacts/switch-fine-late-240-264-26x128.npz",
+      "bytes": 450337444,
+      "sha256": "7774881db79334d4073346b99bd8b0d262a364e8d3ad0ab9cb94813b5193b7f4"
+    },
+    {
+      "path": "data/artifacts/trees-deep-d8-16.json",
+      "bytes": 8503941,
+      "sha256": "ae32b55ea2ee14ce31d7d35d9d95a039b33d4f19e061eb1a84295445cd35a4b0"
+    },
+    {
+      "path": "data/artifacts/trees-deep-d8-16.log",
+      "bytes": 6161,
+      "sha256": "3ebbcc77ddc30a847815922ee9ef7d8f2c7c8831cc9b619df7adbcce513f72af"
+    },
+    {
+      "path": "data/artifacts/trees-deep-d8-16.pid",
+      "bytes": 8,
+      "sha256": "46843d0507a19dafe2e51cfdd488f75d222b025212490064f9e79400bb760258"
+    },
+    {
+      "path": "data/artifacts/trees-shallow-d2-6.json",
+      "bytes": 4321392,
+      "sha256": "4b753c5ab1db8ea42ab7a42b87a499f35f66e349b171aa0f8fee22aff3c6a9d8"
+    },
+    {
+      "path": "data/replays/corpus-selection-609.json",
+      "bytes": 1638691,
+      "sha256": "d50fe5975486f14d9b93398edeff9c5950127c3bf75b0baaa408ec421255629d"
+    },
+    {
+      "path": "docs/ARCHITECTURE_ZH.md",
+      "bytes": 4065,
+      "sha256": "67742913e0d30c94b57d8ad9d2fb062b40b503b54794ded16a0c8046328ef064"
+    },
+    {
+      "path": "docs/DATA_AND_PROVENANCE_ZH.md",
+      "bytes": 3041,
+      "sha256": "b953831bb66c043d49262d9ce713d84cd2c2cb747b8f189ead5a88d8a56bc70f"
+    },
+    {
+      "path": "docs/FILE_INDEX_ZH.md",
+      "bytes": 4186,
+      "sha256": "e99ec941be6b5f940b3f6b129bc5412e64f9d69a8618e757a788cfded8219d9f"
+    },
+    {
+      "path": "docs/REPRODUCTION_ZH.md",
+      "bytes": 3736,
+      "sha256": "82cc8bb06bcda78ed3f2b0feb1a9e981506960e101b9f8c83988f2d4a20bc285"
+    },
+    {
+      "path": "docs/SESSION_20260920_ZH.md",
+      "bytes": 15536,
+      "sha256": "074cdbb0685852692b6f253c7e88b4b4fe04c73bdea06f4083aaa3fae7c2f812"
+    },
+    {
+      "path": "experiments/collect_r1_config_selector.py",
+      "bytes": 6978,
+      "sha256": "e6633017413c1472ae22cec01b05c6cec1532bee6faaf8181f477bb1af41256b"
+    },
+    {
+      "path": "experiments/collect_r1_selector_route_features.py",
+      "bytes": 6519,
+      "sha256": "8ce59b14d0bcb225e1b251c9f3cbbb69b4de7580f6d817f7c4a2a5f6162689f3"
+    },
+    {
+      "path": "experiments/extend_r1_candidate_oracle.py",
+      "bytes": 4599,
+      "sha256": "8cee29475daf15b9b49617e39319342051001671864b0504d2e6686225e8eb58"
+    },
+    {
+      "path": "experiments/probe_handoff_label.py",
+      "bytes": 9466,
+      "sha256": "25b8d2e309f4019137d9c22ed7d61fccee63e5ab0ba4527fd2b5e993fd88cbad"
+    },
+    {
+      "path": "experiments/replay_cold_handoff.py",
+      "bytes": 473,
+      "sha256": "9c6452a8ac329b3286401b60c3a3c670109216ccbb6def9e8544b6cd1b73cc3e"
+    },
+    {
+      "path": "experiments/replay_stable_cold_handoff12.py",
+      "bytes": 1209,
+      "sha256": "dd3e1bd8dde4e43b0110348a529d661d1a11e23995388e73dc33201bb119c6c5"
+    },
+    {
+      "path": "experiments/results/ab-4seed-v1.json",
+      "bytes": 27504,
+      "sha256": "0300e5b511f0e5d6283ca1fb5b79d180ac40c5b0818e7740b45c3a5a80f4d38e"
+    },
+    {
+      "path": "experiments/results/ab-seed2609400000-v1.json",
+      "bytes": 9643,
+      "sha256": "5d366641272e7847455a8a53d99d62c7447148bd29f5ee65add3b9ed056c7ac7"
+    },
+    {
+      "path": "experiments/results/ab-template27137-4seed-v1.json",
+      "bytes": 27481,
+      "sha256": "07b3b043f39f5eca0e30d72d27b3c85c874e49969beff045b75effe19f7fa948"
+    },
+    {
+      "path": "experiments/results/all59-staged-switch-day6-seed1-v1.json",
+      "bytes": 230277,
+      "sha256": "9fccabdc069bd2974c8d4d465425ef24e3d0002f19b1a4184b66665f03b32007"
+    },
+    {
+      "path": "experiments/results/all59-structure-switch-day6-seed0-v1.json",
+      "bytes": 229931,
+      "sha256": "fe993b2dd4d273c6d75f7f9b1353faa3bce34ba4167ebac55b35ed75f71c86ea"
+    },
+    {
+      "path": "experiments/results/cleanscan-r1-handoff-days-public7-16seed-v1.json",
+      "bytes": 369970,
+      "sha256": "7a2b0533ed76e461625608d7cef51e49b4fa7d36331df7eba7a3551fc676103a"
+    },
+    {
+      "path": "experiments/results/full-opening-screen-56x1-seed0-v1.json",
+      "bytes": 218324,
+      "sha256": "09a80f45578440b1432d36f7b4367f1b65245cd93ee2db08d01c9d6acede811d"
+    },
+    {
+      "path": "experiments/results/full-opening-template11313-switch2-4seed-v1.json",
+      "bytes": 14022,
+      "sha256": "069613213ebffbe424e6cf6e228adff1cb87ef5abe83909c58a91a80b8acacda"
+    },
+    {
+      "path": "experiments/results/full-opening-template27121-switch2-4seed-v1.json",
+      "bytes": 14004,
+      "sha256": "efa0cc5ec8c0171171d4cbe95e2de59dca9c84ecf9793cde0ca11a31b5771da7"
+    },
+    {
+      "path": "experiments/results/g275-landtrigger-64seed-v1.json",
+      "bytes": 190063,
+      "sha256": "1d29d7bf16d9e219087d7f745fbea69ea835d378a0c38f47044ee88805a53753"
+    },
+    {
+      "path": "experiments/results/opening-handoff12-64seed-confirm-v1.json",
+      "bytes": 757443,
+      "sha256": "e4ea974b2930d7e324fb7c7b5484747e6097b287857cc85d831495603d4486a8"
+    },
+    {
+      "path": "experiments/results/opening-screen-12x1-v1.json",
+      "bytes": 46841,
+      "sha256": "fe08129eea6c1ea553647da2e7aec7ac5278724bdb2ba27fecccfa4afb59a285"
+    },
+    {
+      "path": "experiments/results/opening-screen-56x1-seed1-v1.json",
+      "bytes": 217470,
+      "sha256": "dd89fcf4bf7c493bd971b6b68c124afd93c3d5241939853905bc98072a9d54c0"
+    },
+    {
+      "path": "experiments/results/opening-screen-56x1-v1.json",
+      "bytes": 217527,
+      "sha256": "d3da6e7e34af2a6ce036be3269eebd2358a39e482eea01121644efba0344f548"
+    },
+    {
+      "path": "experiments/results/r1-vs-deployed-state-trigger-floor0-64seed-v1.json",
+      "bytes": 385099,
+      "sha256": "06bdc8c99945b27c0704f481f59f0cff4420abcdd65cf9fce8db88a6d5de27c7"
+    },
+    {
+      "path": "experiments/results/r1-vs-g275-handoff12-64seed-v1.json",
+      "bytes": 385119,
+      "sha256": "2c96779db35c01b43916c6b34dfa2b06c8dd70ec354a7a2b808252711bc5055d"
+    },
+    {
+      "path": "experiments/results/r1-vs-hybrid-16seed-v1.json",
+      "bytes": 99333,
+      "sha256": "c97808270e6e2837ef1c129900d2f421b654e764538c627f996735419833d791"
+    },
+    {
+      "path": "experiments/results/r1-vs-replay-tree-warm-handoff12-public7-4seed-v1.json",
+      "bytes": 27782,
+      "sha256": "2620ca8832878b9227dd965f2837e5f0396d114907667cac1544448ee61a55ed"
+    },
+    {
+      "path": "experiments/results/replay609-G001-shallow-handoff-boundary-scan-public7-16seed-v3.json",
+      "bytes": 185688,
+      "sha256": "d2f6d8c7b7d2e05ce8ed232ffa0736a870f648bbe81d470a6b90e6e0325231c1"
+    },
+    {
+      "path": "experiments/results/replay609-G001-shallow-handoff-day-scan-public7-16seed-v1.json",
+      "bytes": 495534,
+      "sha256": "09db06151e69c1cf932c5f727fff1816aec766cc33d78eb5b787edf2fa4d32e8"
+    },
+    {
+      "path": "experiments/results/replay609-G001-shallow-handoff-day-scan-public7-1seed-v1.json",
+      "bytes": 33113,
+      "sha256": "af5290ce84a3af324685c570ad9d787e96471a0f1a99935d15ecc57dd1f90d97"
+    },
+    {
+      "path": "experiments/results/replay609-G001-shallow-handoff-late-scan-public7-16seed-v2.json",
+      "bytes": 324501,
+      "sha256": "0f41489213cbf1486b79ee68468654f80c30ac5a3389c72cdc217521c2812e4c"
+    },
+    {
+      "path": "experiments/results/replay609-G001-shallow-handoff-public7-1seed-v1.json",
+      "bytes": 3959,
+      "sha256": "0d7bb7ae61a2139b17af9d422124ec380597956c63edff66ffc6d98d5f4408ea"
+    },
+    {
+      "path": "experiments/results/replay609-handoff-trace-demand-seat0-v1.json",
+      "bytes": 441869,
+      "sha256": "14edf139f784fc3205b5b64b58c7e7e1752b318938abedcef1afa8efa08c536c"
+    },
+    {
+      "path": "experiments/results/replay609-mainstream-raw-openings-public7-4seed-v1.json",
+      "bytes": 217057,
+      "sha256": "ee6417cd366699107d8c139586675d9473a06efbedc6e74130810b57727e35c0"
+    },
+    {
+      "path": "experiments/results/replay609-route-tree-openings-public7-16seed-v1.json",
+      "bytes": 241247,
+      "sha256": "0324b35943abbd028e8fd084afa9911350e6cf5cc2d43ae06c51811a2d7ed8ab"
+    },
+    {
+      "path": "experiments/results/replay609-shallow-fullgame-vs-statefix-handoff240-public7-1seed-v1.json",
+      "bytes": 10089,
+      "sha256": "65effba20b2ae94e3ae397b354a01ae323b90304fd70a1f88a911905a6214f26"
+    },
+    {
+      "path": "experiments/results/replay609-shallow-fullgame-vs-statefix-handoff240-public7-1seed-v2.json",
+      "bytes": 10083,
+      "sha256": "519f40f98c8f17b5c44f7a9f27d6a2bb6f33b8a754b3207e5b642602a359455f"
+    },
+    {
+      "path": "experiments/results/replay609-shallow-handoff-public7-1seed-v1.json",
+      "bytes": 3387,
+      "sha256": "ac642cd87985fa33a366c067bfdcde26a5a96413b094cc0782a4e211d2a6f5a4"
+    },
+    {
+      "path": "experiments/results/replay609-stable-dynamic-vs-G001-cold-handoff12-public7-4seed-v1.json",
+      "bytes": 27813,
+      "sha256": "3a55ab69db7f0e75d812be1bf425e02323715dc667321821d44d05e837167f70"
+    },
+    {
+      "path": "experiments/results/strong-structure-switch-day2-seed0-v1.json",
+      "bytes": 5095,
+      "sha256": "c471ac51c95c5b61943454b4d2a7c643941a70ea850823e2dc95e1442bd4a5a5"
+    },
+    {
+      "path": "experiments/results/strong-structure-switch-day3-seed0-v1.json",
+      "bytes": 5121,
+      "sha256": "c93246cc79961ae16394c025d360eda32b2ce937752cb31334dae4b97c5ad7b3"
+    },
+    {
+      "path": "experiments/results/strong-structure-switch-day4-seed0-v1.json",
+      "bytes": 5115,
+      "sha256": "a88e78d3aa6f9abb5c30cdb52c441b2ad2843061618b157596610a98f9fce84d"
+    },
+    {
+      "path": "experiments/results/strong-structure-switch-day5-seed0-v1.json",
+      "bytes": 5112,
+      "sha256": "d4277a1929a2bf9f211184ec9ff8ffc5a3868d8bf5f0b08e8eaff71dfb1073da"
+    },
+    {
+      "path": "experiments/results/strong-structure-switch-day6-seed0-v1.json",
+      "bytes": 5114,
+      "sha256": "c4a267b291637a8938759ec90df20e90b56e0a870818dc8f5ae10e1116e7253d"
+    },
+    {
+      "path": "experiments/results/strong-teacher-openings-2x4seed-v1.json",
+      "bytes": 26986,
+      "sha256": "4ce99aecb25d4be1560205ccb3783ac1ef9b9bc1b6984d696dc61cf035cc4317"
+    },
+    {
+      "path": "experiments/results/strong15-stages-switch-day10-seed0-v1.json",
+      "bytes": 12944,
+      "sha256": "1a4cd6e460b6666ac7b242f32f97cfda2710f244adcb1f99e3f087a00e74167f"
+    },
+    {
+      "path": "experiments/results/strong15-stages-switch-day6-seed0-v1.json",
+      "bytes": 12859,
+      "sha256": "c20e6e9730cf8c3fc51a370a0d6f00df84dc7fc27a64573766267b5ed21b5e18"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day10-seed0-v1.json",
+      "bytes": 12892,
+      "sha256": "93409263863eac626bf30c6dda4674a3437328df9a700c1a552fba6ff8888ce5"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day12-seed0-v1.json",
+      "bytes": 12936,
+      "sha256": "47c1bdf3034aa59c06035affcb9bf01ec97fa4d18689cd54d7e0308caf884628"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day15-seed0-v1.json",
+      "bytes": 12970,
+      "sha256": "1c9b026be1f42bf99957040f733b7e37b5edafbdac053d2c39e1b7306d099e05"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day2-seed0-v1.json",
+      "bytes": 12852,
+      "sha256": "f3529f3a10cf5f4871d30a7d26bf8b1ebac58a21aa06f9a1b414f6eac77e134b"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day4-seed0-v1.json",
+      "bytes": 12869,
+      "sha256": "78e9f945e7845cf2112f6734000c24f069899dd5850843411c900e75dac30598"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day6-seed0-v1.json",
+      "bytes": 12881,
+      "sha256": "9d6573968bcfa9b5d2696e5b4990f37c609d3cb76b68a56ec1d10783cccb4a19"
+    },
+    {
+      "path": "experiments/results/strong15-switch-day8-seed0-v1.json",
+      "bytes": 12911,
+      "sha256": "41d3ecab327e03b7344ed9d40e16543860b316e836ce57e1b7c1ce7fd2e42c7a"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day2-seed0-v1.json",
+      "bytes": 8945,
+      "sha256": "acc1954a8793964e7a391228a66c4e4a83d50e40c947cfa604aa41b420846ade"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day3-seed0-v1.json",
+      "bytes": 8948,
+      "sha256": "53ba5cd993ef71a3bb7b8b10ea39cecc1f8c3d50dc1a19a701dd5d7542fd17c2"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day4-seed0-v1.json",
+      "bytes": 8956,
+      "sha256": "2f64c2a59a9a03b33465c9801e85d70957eb04fcde2ab879f7c146eaa0c39325"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day5-seed0-v1.json",
+      "bytes": 8942,
+      "sha256": "2c0f4a640f803d8fc64ca82bf9ed191962c8c582a64826c65dfe6ff114719046"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day6-seed0-v1.json",
+      "bytes": 8968,
+      "sha256": "8b1e388c1cd17c2d061c96763568ae4455acffb7ee9cfc886e4553099780725f"
+    },
+    {
+      "path": "experiments/results/switch-screen-top2-day7-seed0-v1.json",
+      "bytes": 8932,
+      "sha256": "462fa963f80098abd8af222be34e2ed1f1a99ac04866b5e946337138b32baabe"
+    },
+    {
+      "path": "experiments/results/switch-tree-choice32-policy-train32-v1.json",
+      "bytes": 207714,
+      "sha256": "60f536d62e90380e7553d7b1dbb5f038a0522da25d0934050330213884acbc8e"
+    },
+    {
+      "path": "experiments/results/switch-tree-choice32-smoke-v1.npz",
+      "bytes": 3415,
+      "sha256": "70772bde056625cba758a24966b5ac232b6a3c68dca655e0de07694365bc6412"
+    },
+    {
+      "path": "experiments/results/switch-tree-choice32-smoke-v2.npz",
+      "bytes": 3421,
+      "sha256": "79ebbfaf99b774b0ae00ec79c9c5ddd36ee763ad894be901313fe43d80eebe43"
+    },
+    {
+      "path": "experiments/results/switch-tree-choice32-staged-smoke-v1.npz",
+      "bytes": 3603,
+      "sha256": "6574e877bd7d425620cffbb8be0a8a0c671cc037b2a444726def12b22ffa5c3d"
+    },
+    {
+      "path": "experiments/results/switch-tree-choice32-train32-v1.npz",
+      "bytes": 26305,
+      "sha256": "7ddda07fa8c01f22b9295ad696aa8eed7a46f2295c1066c2ad8b5fb310ec6c14"
+    },
+    {
+      "path": "experiments/results/switch2-screen-56x1-seed0-v1.json",
+      "bytes": 217661,
+      "sha256": "8535c23e989414aa79024c2f1db213e0dd508265e0ab663cc91e52ccbc046811"
+    },
+    {
+      "path": "experiments/results/switch2-template32862-4seed-v1.json",
+      "bytes": 14004,
+      "sha256": "49221ee40e71696b7f1276afd5db2b18ad4231bf568bbbc887dc3f3938d14a29"
+    },
+    {
+      "path": "experiments/results/switch2-thomas-56x3-v1.json",
+      "bytes": 80572,
+      "sha256": "6f0fce8a23307b95d40f2e65af77b0b33fb5ca139513c20ebbe128b0db5f8cbb"
+    },
+    {
+      "path": "experiments/results/switch2-top2-4seed-v1.json",
+      "bytes": 26826,
+      "sha256": "e358840d553fa39b9841ab537a424ce0c614e6f7052f8738299758c00ce3b46b"
+    },
+    {
+      "path": "experiments/results/top4-15day-switch-day6-4seed-v1.json",
+      "bytes": 52566,
+      "sha256": "4275c08940c36d538a1c0ed06f4c26c846df668ee32fc11a9c1a33507cc4b87a"
+    },
+    {
+      "path": "experiments/results/top5-staged-switch-day6-4seed-v1.json",
+      "bytes": 65430,
+      "sha256": "a5764f7031edea4b8202870fe3993c6cfa21c17ba31134f1a08701a239eb545d"
+    },
+    {
+      "path": "experiments/run_handoff_scan.py",
+      "bytes": 4174,
+      "sha256": "dab0923c44f27980a07ffe157fc19fb5130c0129a011cd7b4046747cd91c89f1"
+    },
+    {
+      "path": "experiments/run_r1_candidate_oracle.py",
+      "bytes": 7611,
+      "sha256": "e0040ad77f0e3f4be6ae8545282261691419226acc5ca6ad4d158d08dc7e8f96"
+    },
+    {
+      "path": "experiments/run_route_opening_scan.py",
+      "bytes": 4920,
+      "sha256": "c5c59216742756b19522a9cd8b4e96b07f83b990ca1abd9fca386f871074a0c6"
+    },
+    {
+      "path": "experiments/run_strong_ab.py",
+      "bytes": 9314,
+      "sha256": "57f2575e90107a7f90f950f0fff3464814c59ae4752fbb14654ea39b15c1ef62"
+    },
+    {
+      "path": "experiments/smoke_official.py",
+      "bytes": 289,
+      "sha256": "5dd8e4a226058dabdcd1494cf74bc36d2dcd4ed747b23ba756c2b782d87e6970"
+    },
+    {
+      "path": "experiments/test_feature_parity.py",
+      "bytes": 7485,
+      "sha256": "c8c3707159db6e22f23a58df484ff27f584c348e332af6a1364c975bb3d9a02b"
+    },
+    {
+      "path": "experiments/test_handoff_selector.py",
+      "bytes": 9488,
+      "sha256": "92b624385d53178ed890725b2adc1a92c16c8307462244898d7f615146630214"
+    },
+    {
+      "path": "experiments/test_r1_candidate_oracle.py",
+      "bytes": 1991,
+      "sha256": "9368662fd3d3c0776b93a9805c680873af2719e04bd73a410a8914e465053a9e"
+    },
+    {
+      "path": "experiments/test_r1_config_override.py",
+      "bytes": 1577,
+      "sha256": "2fb1cbf888a1cb92498bc6baa2b128f81d22067456a363cea9df37517eb9f240"
+    },
+    {
+      "path": "experiments/test_r1_portfolio_swaps.py",
+      "bytes": 6187,
+      "sha256": "14320dea5e64e7dd332718bd8b07ff6c51b4a1c9d4732426fe97a647fea7aef4"
+    },
+    {
+      "path": "experiments/test_submission_contract.py",
+      "bytes": 5530,
+      "sha256": "6106d3add9128c65100bcd5293912e579b243870b9e420a590d7201c9c321e10"
+    },
+    {
+      "path": "experiments/trace_vs_opponent.py",
+      "bytes": 9004,
+      "sha256": "d6f739cfb4ae53940aaa52a91ecd470b32d83bb9edd4e9455b4f485cb001b300"
+    },
+    {
+      "path": "experiments/train_r1_handoff_selector.py",
+      "bytes": 9914,
+      "sha256": "32b550b0032b113e29dfdf0c911639997d301a4784fb2d866b5b9ba8e7adfd86"
+    },
+    {
+      "path": "fast_kaggriculture/CMakeLists.txt",
+      "bytes": 16709,
+      "sha256": "db9bf80a2970610db8d6c5fcc4ff5c056863dcb75752d2d572f37cb5849cbb1a"
+    },
+    {
+      "path": "fast_kaggriculture/COMPONENT_SHADOW_EVAL.md",
+      "bytes": 6389,
+      "sha256": "afe873f99103a0cc409eccabb34a4cae472261c6371d1417075082565ea8ca7d"
+    },
+    {
+      "path": "fast_kaggriculture/LICENSE",
+      "bytes": 658,
+      "sha256": "24b794b05f801711514f3e626f1c62a0ac56c5a1e76bbd82b60bb2f2a49c4f9c"
+    },
+    {
+      "path": "fast_kaggriculture/README.md",
+      "bytes": 4177,
+      "sha256": "70b61e5035ba16894e478406c5cd4d0748ed2ecccd664f8285ea33bca5ee86ec"
+    },
+    {
+      "path": "fast_kaggriculture/RULE_AUDIT.md",
+      "bytes": 2646,
+      "sha256": "948f20b950367f8610e2e27e24de4daccd86970e264d26b2fab04e97b1b57ac6"
+    },
+    {
+      "path": "fast_kaggriculture/__init__.py",
+      "bytes": 839,
+      "sha256": "739af389d4b01eb5ab7b8148cf3235b3a27d4c73e6bf0e093274376f7f978abf"
+    },
+    {
+      "path": "fast_kaggriculture/benchmarks/benchmark.py",
+      "bytes": 2838,
+      "sha256": "b272d7c972d8cfed6fc37108c6320605ce6c2728e35963be64f5678f03b4e89d"
+    },
+    {
+      "path": "fast_kaggriculture/docs/G001_FORCED_TRIGGER_IDENTITY_GATE.md",
+      "bytes": 6275,
+      "sha256": "e69ec5b06b09ff5e22f4ed8afaa212a8427a6b4068b4a907987b76aee9d6df38"
+    },
+    {
+      "path": "fast_kaggriculture/python/fast_kaggriculture/__init__.py",
+      "bytes": 624,
+      "sha256": "b75ea06090623084f5d1f2efaf4eb0e774ebc9e66a09783f4fb48fd51aa25812"
+    },
+    {
+      "path": "fast_kaggriculture/python/fast_kaggriculture/_fast_kaggriculture.cpython-311-aarch64-linux-gnu.so",
+      "bytes": 2095840,
+      "sha256": "78c048a4bd9186308c7f71a5b1b51b3cb1d93d07d4cbe4ec69864a5d288f6843"
+    },
+    {
+      "path": "fast_kaggriculture/route-cursor-online-dev.json",
+      "bytes": 5371,
+      "sha256": "5251ad14c45157aed2f578df54c37424cfe76b47f87ecfa63d63e12f85025106"
+    },
+    {
+      "path": "fast_kaggriculture/setup.py",
+      "bytes": 5503,
+      "sha256": "18474139112b831275ff4048d69c441390c5ab1307efcbddf9a34acedcdf5a94"
+    },
+    {
+      "path": "fast_kaggriculture/src/bindings.cpp",
+      "bytes": 56481,
+      "sha256": "2ab2e81928be9ac2f9792a747ccc16d12d194d0623c26d313c098a69e6222d3f"
+    },
+    {
+      "path": "fast_kaggriculture/src/component_shadow_eval.cpp",
+      "bytes": 43527,
+      "sha256": "720a58d787c0aa5ce919c1b7cd78febf6af9bfb4aaac0dc77771529786338821"
+    },
+    {
+      "path": "fast_kaggriculture/src/component_shadow_mapper.cpp",
+      "bytes": 23874,
+      "sha256": "36d27d3a3b9bc19e33e84283bc4577042d39545715d583c6bb6e3daf67524961"
+    },
+    {
+      "path": "fast_kaggriculture/src/component_shadow_mapper.hpp",
+      "bytes": 2551,
+      "sha256": "24f8843b76f6b8bb449429ef0fa8e56ddf8f94710e662e33905bb142b1134fd6"
+    },
+    {
+      "path": "fast_kaggriculture/src/component_shadow_mapper_tests.cpp",
+      "bytes": 9739,
+      "sha256": "7b74eca3b25ff33d8631aa73908e5d5bf21d596b2534eef718f7b78f29ba0572"
+    },
+    {
+      "path": "fast_kaggriculture/src/current_unit_soft_sanitation.cpp",
+      "bytes": 11177,
+      "sha256": "3b160713e8cf571d4e2a7527085869a211254faf5ba39c52269684f9eb069afc"
+    },
+    {
+      "path": "fast_kaggriculture/src/current_unit_soft_sanitation.hpp",
+      "bytes": 2387,
+      "sha256": "28c0b9b5a4fda12de3f217bbd8abcde0c5bc8865d64b9e2801392e711e1fcc2c"
+    },
+    {
+      "path": "fast_kaggriculture/src/current_unit_soft_sanitation_tests.cpp",
+      "bytes": 8142,
+      "sha256": "bec6c2c417cf9e6082601868c494d33839a19e57a00238ebdaaf0d296ebe305a"
+    },
+    {
+      "path": "fast_kaggriculture/src/macro_distance.cpp",
+      "bytes": 5459,
+      "sha256": "33f57028f1e93205b242e77b8976f9a42374bb2a5326b28d98284b98115d3f0c"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_event_local_repair_tests.cpp",
+      "bytes": 48888,
+      "sha256": "5a537847a7c4bf8fba84d56138ba5a17058434d30337c99d8bcc2da074db5f4f"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_g001_bit8_normal_eval.cpp",
+      "bytes": 56503,
+      "sha256": "1616b58ca84a910f669255a48ff574ad7922d81792634a9c4b95d9567146b7d9"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_g001_cash_divergence_audit.cpp",
+      "bytes": 3992,
+      "sha256": "4c3bf243843afc6e67cf84ccd31dfa71df432ee9d60e5910243c8eac4c7e6df9"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_g001_forced_regression.cpp",
+      "bytes": 54046,
+      "sha256": "eea12fa26de5c8b9f0840714c7f179c4fdb7a0a65a0a9b2eeb89d296fd849873"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_general_market.cpp",
+      "bytes": 16112,
+      "sha256": "75b9addfaaee93f8b1e5921a11a4cff90aa52a4716667b29f556ce75404c5efe"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_general_market.hpp",
+      "bytes": 3232,
+      "sha256": "94372ca94a5195e5d54e7c5e2af810c9f9b793cd520a66e5e141b862dc7218e7"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_general_market_tests.cpp",
+      "bytes": 10350,
+      "sha256": "fbfc5f6b3174f27bc65d3b2c4fb39869df0090b80be448388657f8050d5bf4dd"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_phased_market.cpp",
+      "bytes": 25507,
+      "sha256": "0f29da8b7568fb0a173295bd3054d1ac8613860a64c943e7ec078fefe1a35ebe"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_phased_market.hpp",
+      "bytes": 7903,
+      "sha256": "63f02107cd7bc3478b0828a798faf2718e2b06bed2756dc1c42acf86b61c7af7"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_phased_market_tests.cpp",
+      "bytes": 4822,
+      "sha256": "a2effc4c15249a832d44d8a7e8fb293f9ee1beb34cb877a1e907e74b337baac5"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_route_cursor_eval.cpp",
+      "bytes": 50457,
+      "sha256": "828e3d6ecfb0143b3a89722f74cfe2709d7e5fcc55c6752ca660a6e5cc8eeda2"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_route_skeleton_v3_adversarial_audit.cpp",
+      "bytes": 11718,
+      "sha256": "8abbf8d747d7776cac1644e92dc777d05c81a46472c38285f2589b7c9c58ad87"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_route_skeleton_v3_forced_audit.cpp",
+      "bytes": 7537,
+      "sha256": "ee552c53c26422d821bc9f5e5bf14a547d7057b1caea8558ac8ec39bb467c22f"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_teammate.cpp",
+      "bytes": 255399,
+      "sha256": "78bee76b201cc86f619135d1d5c88b06afab82bcb84ed32d43ad0077ad4e52ee"
+    },
+    {
+      "path": "fast_kaggriculture/src/native_teammate.hpp",
+      "bytes": 24464,
+      "sha256": "8e90b301304055e19a8b74705e1b38b72f50c7083408933f8607c9f975dd9534"
+    },
+    {
+      "path": "fast_kaggriculture/src/purchase_recovery_ledger.hpp",
+      "bytes": 360,
+      "sha256": "b11af7627d53657d3f26e880d7b69d33473fc490c3ccdeb353d3a2799957bc22"
+    },
+    {
+      "path": "fast_kaggriculture/src/reactive_production.hpp",
+      "bytes": 336,
+      "sha256": "41b84cd2e54469baf1caa60c8435f5f45d2489c9b7ec43e0a90bdec1594d8459"
+    },
+    {
+      "path": "fast_kaggriculture/src/simulator.cpp",
+      "bytes": 16884,
+      "sha256": "15f5139d81fa52023493c801f7ed7d5701482558d8fa5b1a5c87535f5a579d4f"
+    },
+    {
+      "path": "fast_kaggriculture/src/simulator.hpp",
+      "bytes": 5155,
+      "sha256": "9734474bad4658475daf08334d8275aa4aafce3ded50943c5286d50b4bdd76b6"
+    },
+    {
+      "path": "fast_kaggriculture/tests/test_differential.py",
+      "bytes": 8425,
+      "sha256": "16fdcf15438d939017b54ae9789ab226fcdc98f9fc633a9738e135bd1c798c15"
+    },
+    {
+      "path": "fast_kaggriculture/tests/test_rng.py",
+      "bytes": 519,
+      "sha256": "3d4e25e083ce71ad5a03f46a2b568e9d814f533cb00ed5adf83a1b6739dd03b5"
+    },
+    {
+      "path": "fast_kaggriculture/tools/intent_distance.cpp",
+      "bytes": 4696,
+      "sha256": "e65760180dd976e48243f614c684b08b7a43a8addcfd666dc7a9c31a983289b6"
+    },
+    {
+      "path": "meta_agent/__init__.py",
+      "bytes": 55,
+      "sha256": "8f7e6c6a7d4db74718ce4278c443c8e91b2db90cf62788fddfd395d3784657e9"
+    },
+    {
+      "path": "meta_agent/src/__init__.py",
+      "bytes": 73,
+      "sha256": "abd17075f5e0167ffa75ef26c9393a15fbff83c5c659039fa9afc6d2ffd6a5a9"
+    },
+    {
+      "path": "meta_agent/src/benchmark_community_round_robin.py",
+      "bytes": 9313,
+      "sha256": "d5109e1c68f5ad8e0d8a74c0ec0a8df8b822cbecd89d342bb25a1ea466704422"
+    },
+    {
+      "path": "meta_agent/src/deviation_repair.py",
+      "bytes": 5928,
+      "sha256": "08dc35a5676ad061eca97c8154259bbb4d11206f8cb9fe0656b75d19f972575c"
+    },
+    {
+      "path": "meta_agent/src/equilibrium_selector.py",
+      "bytes": 6289,
+      "sha256": "e60e929e4bf08c0b33de9deec800062ceb253fc572dc968a59622deea25a982d"
+    },
+    {
+      "path": "meta_agent/src/fingerprints.py",
+      "bytes": 12618,
+      "sha256": "23b44341d5c98e4930b07559919fd7103088ea198f0030462f8cec10cd242f73"
+    },
+    {
+      "path": "meta_agent/src/market_manager.py",
+      "bytes": 32101,
+      "sha256": "8f8227187026442f1c9e0980b545c5edffcc0a988dcc2a3ce15b379b51bfe359"
+    },
+    {
+      "path": "meta_agent/src/native_teammate_executor.py",
+      "bytes": 3843,
+      "sha256": "183dcf176a90423028b1c13742002226e2024b404e9e3a0df7c161f4ac71e276"
+    },
+    {
+      "path": "meta_agent/src/nt_front40_routes.py",
+      "bytes": 10186,
+      "sha256": "97b16d94c79872cd9e7aa2bb1c3efb5c2f66591a77f3748c69e6b9b3111b49b9"
+    },
+    {
+      "path": "meta_agent/src/opponent_route_belief.py",
+      "bytes": 7217,
+      "sha256": "d4b59be097bfde4503dfbb882cf5ebaee9a26773a2e9d11a7d86676201b9e7e0"
+    },
+    {
+      "path": "meta_agent/src/opponent_sell_ranker.py",
+      "bytes": 10850,
+      "sha256": "4d0c1e02555ea6acdc8f595891c5eac2d3197c0cff63d0d5727d4bea4f768e03"
+    },
+    {
+      "path": "meta_agent/src/recurrent_meta.py",
+      "bytes": 61696,
+      "sha256": "5786dd5f964463f1a99b2958071efa582335dc7f3606e1212eb00d39525e64c9"
+    },
+    {
+      "path": "meta_agent/src/replay_trie_agent.py",
+      "bytes": 6977,
+      "sha256": "cb8606c3875aa5d47f651967436d035647fd2834a86ce885647c52c11eaae041"
+    },
+    {
+      "path": "meta_agent/src/route_library.py",
+      "bytes": 11104,
+      "sha256": "01f8025e8a6cb93a1cd2276d280cec7b7d03014886d6d2504f14a177c36b3e54"
+    },
+    {
+      "path": "meta_agent/src/route_switch_features.py",
+      "bytes": 14297,
+      "sha256": "176a946bf1a4a3d98b38dae35cc31bb2c22bdf97d7db5c15b2c38649dcf6b09e"
+    },
+    {
+      "path": "meta_agent/src/search_route_policy.py",
+      "bytes": 7553,
+      "sha256": "98b1f09e4e4fb9d03225009c1be771d2272e11c0fa4c37dd102a88e0713f92d3"
+    },
+    {
+      "path": "meta_agent/src/selector.py",
+      "bytes": 11884,
+      "sha256": "4261f503a7a5b0fca6f715a9b4955808a289b74953226434d07b6bd984b8da60"
+    },
+    {
+      "path": "meta_agent/src/simple_route_tree.py",
+      "bytes": 9162,
+      "sha256": "d175d47daa82a947b6a507418b5a9322aded51fa93a8e108c8e83a8a4e31dd76"
+    },
+    {
+      "path": "meta_agent/src/teammate_expanded_routes.py",
+      "bytes": 3944,
+      "sha256": "0498069eeb166c9ed7319a02bedb5ea7eb370519015f0c5f5e4b0ccc14efb746"
+    },
+    {
+      "path": "meta_agent/src/train_recurrent_rl.py",
+      "bytes": 54042,
+      "sha256": "e54db6f5623f6d57a491730f7031cdcac03dec198fcde96b3e53c8d59aba4e07"
+    },
+    {
+      "path": "meta_agent/src/tree_q.py",
+      "bytes": 16163,
+      "sha256": "86c1a1defd7d223a418ffebf894d9e72b4d7b9add0d9e6b1bca25d46ac9757ae"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/include/clairvoyant_economic_oracle.hpp",
+      "bytes": 2196,
+      "sha256": "fc75b4883e34e0aa00ccde66875954d393797885e34404d2df9dce422dfcbe94"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/include/joint_fixed_move_oracle.hpp",
+      "bytes": 2732,
+      "sha256": "a23513d7ddd342d9cbebc10acb2cb2e831db46d5bb548b0d32f3de9b940b5789"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/include/reactive_production.hpp",
+      "bytes": 6168,
+      "sha256": "bb255b8ad7a3cc3fd8e9fe221d49a8e796707defc2b2e42bfaabe3342139299d"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/src/clairvoyant_economic_oracle.cpp",
+      "bytes": 4578,
+      "sha256": "406ff519f4753bca987916107f035b1b2c085029bc9a61aabb41efe3f8a9379f"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/src/joint_fixed_move_oracle.cpp",
+      "bytes": 9432,
+      "sha256": "d4d0164b32c15dcfc55c21e42f3d2e106ab6e859ee84fb61e54e73cc670f92aa"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/src/reactive_production.cpp",
+      "bytes": 26265,
+      "sha256": "3c8a7b3e87e547ccb3c6a0bd00bcbd303392f052830bf200771564f093692492"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/tests/oracle_tests.cpp",
+      "bytes": 16067,
+      "sha256": "e6c31c1de11aa5ea156f3137a27ed69159e8c1fb085835c7df7a1312821de5e1"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/tools/evaluate.cpp",
+      "bytes": 36037,
+      "sha256": "a8b4a475141bf00b2c830e31f3fb468778f6a5ca0745ba02bcf3b8e6e55ad228"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/tools/evaluate_clairvoyant.cpp",
+      "bytes": 44687,
+      "sha256": "72f850adc3c79271df1c94dbbe1fb7ccdec0da366998719c2e7333bc61ab0a26"
+    },
+    {
+      "path": "native_deps/findNewRoad/jointFixedMoveOracleCpp/tools/evaluate_weed_reactive.cpp",
+      "bytes": 25087,
+      "sha256": "db9a584f11b6806e88be89f4b22887f07bfdbe2838e55380b56873d8d470c87a"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/economicIntentBridgeCpp/include/economic_intent_bridge.hpp",
+      "bytes": 4368,
+      "sha256": "edbf3754971ec83fdcbae4f2f39202c57e24f20a3e45e7437ab2acddb65aafce"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/economicIntentBridgeCpp/src/economic_intent_bridge.cpp",
+      "bytes": 15308,
+      "sha256": "16155201791ffe0e6ec4d741bda5f1a4da4af2d37af879ddb379b14b80608767"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/include/adaptive_execution.hpp",
+      "bytes": 9062,
+      "sha256": "7e0a60d6acb67b87184b54c7af5f0135f0f0086800e38f7d0927a3041ed4d038"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/include/full_market_takeover.hpp",
+      "bytes": 3270,
+      "sha256": "d08a2a0ecabc6f2a0b009bca05cbbaa1a986360a366f45591b0f9bf22a413548"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/src/adaptive_execution.cpp",
+      "bytes": 18810,
+      "sha256": "f386790a53464cade5518494e5411635fe03eecc34717025d9812522246d9cbd"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/src/benchmark.cpp",
+      "bytes": 2958,
+      "sha256": "f27f1aeb37956751556f7a06628f5198139e96964830c884aaef1cb89dbb7e7f"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/src/full_market_takeover.cpp",
+      "bytes": 8383,
+      "sha256": "d69d5d0f1071ff588dd23131a1fd72030b6233c4390ff3df5734e557bddf1ba9"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/belief.hpp",
+      "bytes": 6265,
+      "sha256": "e4942f1af428ef0486285d4a1863ffbea47912bf83f74f64840b5b0f37bf91b2"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/causal_mfqi.hpp",
+      "bytes": 3018,
+      "sha256": "16c3d5d25cd1dab0ffd6cba53e4fe5ea0dd376aa2f45b354c14b43e569806f60"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/dump_scenarios.hpp",
+      "bytes": 4646,
+      "sha256": "455a60ec5774fe8c650e8373442a63fe9522c84b41a73239a935da1bd74ae472"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/fqi_teacher.hpp",
+      "bytes": 4370,
+      "sha256": "893397d111b93dcae2c48c6f583c85cb5b1a437e31fc94e885eb332ba99349cc"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/general_planner.hpp",
+      "bytes": 3055,
+      "sha256": "d1f1b7ccde3b31b180a8a3004e84b79ab054239a6982cc7b4ad85de33f725bb5"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/market.hpp",
+      "bytes": 2900,
+      "sha256": "a1cd2655f94aaa73c371d2534e85b07d9f671b6f6fdc9095c7086ba8135bfd78"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/mechanism_tree.hpp",
+      "bytes": 4669,
+      "sha256": "fc9668161b7f926b6389987e6037b0f44b6941ac9839d6ed7e109cfbd371ccea"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/persistent_options.hpp",
+      "bytes": 2424,
+      "sha256": "981077647fb3aaebbc0d5ea04dca4f04cf52c876808830a13094c171511972a1"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/planner.hpp",
+      "bytes": 3125,
+      "sha256": "6bd43f1e0eaed1ab30fd942cbeab5d0d40c2e959330e298d8170c59ef3289bfc"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/receding_horizon.hpp",
+      "bytes": 1085,
+      "sha256": "b4d1876504f93d9b25ee368c9954303e794756e2ce469c96d23db673bca0850c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/replay_format.hpp",
+      "bytes": 1406,
+      "sha256": "1b2ad8dee4245a49e1b89a15d7707f23b6fd0cc37a00a6416b0fdf124670f4b5"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/rolling_optimizer.hpp",
+      "bytes": 7484,
+      "sha256": "82411c235f103214706925b95e5d18c23c46c1f8375b820a3c14517f8f2cfbe9"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/search.hpp",
+      "bytes": 1371,
+      "sha256": "602d64b8aea7d8fed5157f20f5bad48d8fcdb56d597892273f2552125c384932"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/include/tape_runner.hpp",
+      "bytes": 1979,
+      "sha256": "346de6eaa6a476b6ffb685a5c954bfba26af99de59d4d87a807725d4c33e364a"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/legacyBaselineForecastCpp/include/legacy_baseline_forecast.hpp",
+      "bytes": 1946,
+      "sha256": "a6ae68e5638bf8a7faabec68acbf390077090d76edb4e86b8a8ee391eb626fa4"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/legacyBaselineForecastCpp/src/legacy_baseline_forecast.cpp",
+      "bytes": 6763,
+      "sha256": "51591d5449d265a55ac4d9350eeedbc07ab3c4b2bd508286188299e4a10904f0"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/nativeObservationAdapterCpp/include/native_observation_adapter.hpp",
+      "bytes": 1910,
+      "sha256": "8a8f9f7dd27aad0a002abe6a54941e71dd4f540139b1ccfeb784e4f7eae0f49d"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/nativeObservationAdapterCpp/src/native_observation_adapter.cpp",
+      "bytes": 16251,
+      "sha256": "0eb74f2d1ad864692be0c7cb125a152e917127e0bc516eecef17f610b529f688"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/nativeSelectiveInputCpp/include/native_selective_input.hpp",
+      "bytes": 2489,
+      "sha256": "93f16e4e78bf6e46da2902aa4a53cb65121af10988a5d6fe0a7410a7b91089b5"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/nativeSelectiveInputCpp/src/native_selective_input.cpp",
+      "bytes": 26472,
+      "sha256": "27b862bb95124e638e2fdb8f7fe78155c7a5b791326810a5f9f47ae41eaeec4b"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/phaseInputCpp/include/phase_input.hpp",
+      "bytes": 2103,
+      "sha256": "4bdfb1915e98c0c6fa3f0219f9f521750fab967bdde479a8483c87f73b84a029"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/phaseInputCpp/src/phase_input.cpp",
+      "bytes": 9716,
+      "sha256": "8d68ecae7e4670bccae6291951c746d213432416e06079b67d2d73fda68d063c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/phasedTakeoverCpp/include/phased_takeover.hpp",
+      "bytes": 1993,
+      "sha256": "e43b3dd9fdc5eaf7922adf406f965c4512698d5c066b3622b3873043dabcfdb5"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/phasedTakeoverCpp/src/phased_takeover.cpp",
+      "bytes": 4480,
+      "sha256": "60ba91dd01a2163005bce3965dbf7c880e67c06a29e3911bcc01ba02e0d46cbc"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/plannerInputCpp/include/planner_input.hpp",
+      "bytes": 5171,
+      "sha256": "e5ea5b496a7d82de3a7bb1badad2e5e4987b261be2a9d658830011b6fe0d0618"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/plannerInputCpp/src/planner_input.cpp",
+      "bytes": 19128,
+      "sha256": "1e564daf23928dd434b10ab6f3a74570b93c29e9f4a2aae9d2ca3052a0f1fdae"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/productionForecastCpp/include/production_forecast.hpp",
+      "bytes": 2838,
+      "sha256": "74e2fb9b6dbadc75f7b4dceaadbb7705e8d3f23daef2cf83518ea172cf379a74"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/productionForecastCpp/src/production_forecast.cpp",
+      "bytes": 29836,
+      "sha256": "1e4aa07d7d4c389d8f716fbf3f72c6cd43cce6cd6c15aad6750b47c3bbd50fd3"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/productionObligationCpp/include/production_obligation.hpp",
+      "bytes": 5645,
+      "sha256": "b85a67c84c434a5e085ed822ceef9fcb2c064adbefa8169d49f9e6815e8ea68e"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/productionObligationCpp/src/bench_production_obligation.cpp",
+      "bytes": 2392,
+      "sha256": "9c292ccbf22a6ff2c96bd963f586957af8e6b7c5fa0c275eb79b52761b7f812c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/productionObligationCpp/src/production_obligation.cpp",
+      "bytes": 67680,
+      "sha256": "54cb2466adbe27f24737ae9ae8deff23ac4b2d9bb90af153293b750e13df676c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/protectedQueueCpp/include/protected_queue.hpp",
+      "bytes": 4967,
+      "sha256": "1323f8af1876863161f29dd74b4f1c9c9d4efd9c2d0afc9d6b0e3dae1ae39a59"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/protectedQueueCpp/src/benchmark.cpp",
+      "bytes": 1663,
+      "sha256": "1ac04512de2082c72bf62f442cb17feecd407efc254b791a9be6ffae6551c081"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/protectedQueueCpp/src/protected_queue.cpp",
+      "bytes": 28582,
+      "sha256": "495eddb6095fbd79a472d80d226c1f4a026d356db34245166374abf4b8314f80"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/publicBeliefRuntimeCpp/include/public_belief_runtime.hpp",
+      "bytes": 5501,
+      "sha256": "90a1d7ae3a9be9363e9115f01f25d857887e9522339717a6bf11178701c1393c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/publicBeliefRuntimeCpp/src/public_belief_runtime.cpp",
+      "bytes": 22355,
+      "sha256": "800b15bc51a163fe08fa980959f03c3b17389dbc35994cc0ccae7a3785edaa76"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/queueInvariantProofCpp/include/queue_invariant_proof.hpp",
+      "bytes": 1849,
+      "sha256": "d7d903eba0d879c8fd3e815f5778df165a09b1b8e83d9358f0e52ed7efed4458"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/queueInvariantProofCpp/src/queue_invariant_proof.cpp",
+      "bytes": 15576,
+      "sha256": "d2e6e1dddd2f729f445f5c7a91e5cc8bffb88e06dc1aa72c118c350116bce9a0"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/robustCertificateCpp/include/robust_certificate.hpp",
+      "bytes": 2962,
+      "sha256": "c3054820078a60feeba58e3f2f21c61707fe6fe56f1a4df05d0baf584bbc0ed2"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/robustCertificateCpp/src/robust_certificate.cpp",
+      "bytes": 11054,
+      "sha256": "5e0659ef190bf33f54c076fee2629c7deed6776710c4209be15e40d3fb7af6ef"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/selectiveRuntimeCpp/include/selective_runtime.hpp",
+      "bytes": 8186,
+      "sha256": "065223d1e143cbd7d0e6845d7a467640b1058c48034c4db7f7842b72455dc4ad"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/selectiveRuntimeCpp/src/selective_runtime.cpp",
+      "bytes": 54530,
+      "sha256": "5cad763044dfd290f974904bb852ea1c9c584193d561c5022b7fd2a58fb1a146"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/belief.cpp",
+      "bytes": 31570,
+      "sha256": "73951b14ff45a80b7a98ba59830645b46288e2164d0b9a3e2076a95acfa12a54"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/bench_general_planner.cpp",
+      "bytes": 3641,
+      "sha256": "8b344fa69e194e4ad3289e191cddec1b2c712b624455438900f462561926842c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/bench_rolling_optimizer.cpp",
+      "bytes": 2919,
+      "sha256": "ef065fae8e09cc06a0e5ed7a713ba05988e384914e6c44fec2c3f7d6b20c604e"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/causal_mfqi.cpp",
+      "bytes": 9400,
+      "sha256": "a547d898d71eeab7621ef16f825f14e011ec0ac19d4fba82f5e0c7c3c214e5c5"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/dump_scenarios.cpp",
+      "bytes": 18552,
+      "sha256": "1d15d725fb4b006ef24e26772dd35b7ac80a3a2cff14326637e8e84b6ffd69cd"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/fixed_tape_labels.cpp",
+      "bytes": 55432,
+      "sha256": "dad38874b12e3e4303cd6611e4ce9a0a3d35d694eaa5ae0e8c06602443a31b0f"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/fixed_tape_mfqi.cpp",
+      "bytes": 42983,
+      "sha256": "288b60d2745301757f6108a9b64591ddaa50738adca288797ffecedd2a90a7ab"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/fqi_teacher.cpp",
+      "bytes": 23623,
+      "sha256": "8987342b8bedb89be0d8f825bf18b8b36bd6bc2dff2dbff536879c788f881d27"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/general_planner.cpp",
+      "bytes": 16411,
+      "sha256": "89ff04c552065a9c565737097015cf5d41327d802599b9ce4576d8e01e3b7e50"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/market.cpp",
+      "bytes": 12560,
+      "sha256": "055075cb591fcfc80f9ed93f4679e50f37b7b962f83f3b82eb295f9b8e69b0a1"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/market_replay_audit.cpp",
+      "bytes": 23864,
+      "sha256": "3acf8ed83a405fb2dcf13656245f3bc379a35f3d9cb79481fb43383991f8d962"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/mechanism_tree.cpp",
+      "bytes": 31236,
+      "sha256": "8152c14cad6a60581353483f78b62b81dbb97a3d72dcb73f935651b7433fe8bf"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/persistent_options.cpp",
+      "bytes": 1503,
+      "sha256": "8cfe7e9c2e5ea06572a31b5ae53a6671c8551d400f048b272f6c38dc6a81acc0"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/planner.cpp",
+      "bytes": 12174,
+      "sha256": "994921a99ae49eec060e767f51800c87dec3d3c9148c4a060676669187783e0c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/price_information_audit.cpp",
+      "bytes": 29222,
+      "sha256": "ffdd786cf085a6ee4d64b16f1bc71e1ecaea180099a73a8e482bed6554479d8c"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/receding_horizon.cpp",
+      "bytes": 3249,
+      "sha256": "c9d291ac55aae757afaf06676beaa276983d1484cd37fac1a0176e334f8103c6"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/rolling_optimizer.cpp",
+      "bytes": 43056,
+      "sha256": "c09b871c29d544c19b546e4805743a4f753140278e4a83c11f7cc9c20336f67b"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/search.cpp",
+      "bytes": 9650,
+      "sha256": "aab800b07d3c99d692f8cfbadda9ac55fa8ded9b38389384239e81ea4c13bfd9"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/tape_market_cli.cpp",
+      "bytes": 2634,
+      "sha256": "09b0f2fd05b1b931e89d5d7b05ecb5b94f70263c1ecaa768b5b5c0ff8047834d"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/tape_runner.cpp",
+      "bytes": 28693,
+      "sha256": "f4a1472da46cf1b08d901253806cd3665b0451297ccc7f55b3e2b94145706790"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/train_fqi_teacher.cpp",
+      "bytes": 2808,
+      "sha256": "e106a07de4b6dd169d3210edf9675075b61a74e46f4d516de82d9eebf60c9fe8"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/src/train_mechanism_tree.cpp",
+      "bytes": 3656,
+      "sha256": "519557c77823033ddc9205a6422192b394cfd989043e0cfc8c12d9d1eac5cac6"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/unifiedMarketAllocatorCpp/include/unified_market_allocator.hpp",
+      "bytes": 2270,
+      "sha256": "b032590a547e965b28a37ab259d53f6271ba6b46e03b12bfa193d0d5adde6fc6"
+    },
+    {
+      "path": "native_deps/findNewRoad/marketMechanismCpp/unifiedMarketAllocatorCpp/src/unified_market_allocator.cpp",
+      "bytes": 17360,
+      "sha256": "a6685e895a1d3ed45ef5eaa896ad803e0332e88a1de8786259487e70181e4121"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/animalLifecycleRepairCpp/include/animal_lifecycle_repair.hpp",
+      "bytes": 8921,
+      "sha256": "0fe077be90c08e7a01834829c08453c1cdbea4a67cd53d31679424f7510300fd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/animalLifecycleRepairCpp/src/animal_lifecycle_repair.cpp",
+      "bytes": 24170,
+      "sha256": "d8034411da896c15a390545a46adc09f0a781a1dc0a7a726441f2d972068e7e6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/animalLifecycleRepairCpp/tests/animal_lifecycle_repair_tests.cpp",
+      "bytes": 19313,
+      "sha256": "4ae23bf57c1c4ffb79af97b8af0d9f63d36d6a1a1e767aa371eb1ce6214212ec"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/certifiedMoveForkAuditCpp/include/certified_move_fork_audit.hpp",
+      "bytes": 2522,
+      "sha256": "49ff1b4d84c6ea55bc8aeba66ea236b7fd31883073511a631349bab77dd28a30"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/certifiedMoveForkAuditCpp/src/certified_move_fork_audit.cpp",
+      "bytes": 8557,
+      "sha256": "3d615f4ce21c6e52a462f552be26296c745ff5bb701e312a24e9719bda32ec28"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/certifiedMoveForkAuditCpp/tests/certified_move_fork_audit_tests.cpp",
+      "bytes": 10988,
+      "sha256": "ef77fc240be230fc55895108ab93977610ac6ae8e74c8a772657c0547c3324bc"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/constraintRelaxationDropPlannerCpp/include/constraint_relaxation_drop_planner.hpp",
+      "bytes": 4997,
+      "sha256": "27b3f964703dce59bf9535fe3bbdd75cf21ec818642389e0046346b8a047bde5"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/constraintRelaxationDropPlannerCpp/src/constraint_relaxation_drop_planner.cpp",
+      "bytes": 47795,
+      "sha256": "c0e7dd7b6ece2aeb569dee5dc7b53008dd3871291f5477bda258742cfc7e4afd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/constraintRelaxationDropPlannerCpp/tests/constraint_relaxation_drop_planner_tests.cpp",
+      "bytes": 19362,
+      "sha256": "2dfaeb334deb6a72a2906e4a72080d73782f9aee8ad739a1f130fbe40ba2695c"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/crossDayDebtCarryCpp/include/cross_day_debt_carry.hpp",
+      "bytes": 5187,
+      "sha256": "212a1209f112a0af3d22681c288922cf03973f80e2fb8a4553f4d855d50c8f4f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/crossDayDebtCarryCpp/src/audit_main.cpp",
+      "bytes": 5923,
+      "sha256": "8cff32bc72d02916a9acb097e57e69738d573e2a354635f66f7ce99d9d6fe33f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/crossDayDebtCarryCpp/src/cross_day_debt_carry.cpp",
+      "bytes": 49984,
+      "sha256": "e42177db40661aa063099bf5871ac4360c67e18ab65e3f1a93bfa20da4465a66"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/dayScheduleRuntimeReceiptCpp/include/day_schedule_runtime_receipt.hpp",
+      "bytes": 3391,
+      "sha256": "ab0c8c61d0b5a0d2c0e7ada9fed99372821ccb05df55d69a53940ab75b440fbb"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/dayScheduleRuntimeReceiptCpp/src/day_schedule_runtime_receipt.cpp",
+      "bytes": 11415,
+      "sha256": "d7094a7b0d2752b4692034d60c21bc99ec86b28a97542814a57b5a7e86d48bd0"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/dayScheduleRuntimeReceiptCpp/tests/day_schedule_runtime_receipt_tests.cpp",
+      "bytes": 15470,
+      "sha256": "7032723d23bc75dd09ea66a4b8b2493cc30472f8a1131cd37a4372adb65f3b3e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/daySchedulerTransactionalComposerBridgeCpp/include/day_scheduler_transactional_composer_bridge.hpp",
+      "bytes": 3692,
+      "sha256": "d6b91b6426af0205ea889014a23e3de560a56f36407ada8e7c78f31156b6d402"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/daySchedulerTransactionalComposerBridgeCpp/src/day_scheduler_transactional_composer_bridge.cpp",
+      "bytes": 15986,
+      "sha256": "4cbcf2590ba73d087a798dd9b3d1539c40c6b13a44b1e021a66f5b7b2282ab9f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/daySchedulerTransactionalComposerBridgeCpp/tests/day_scheduler_transactional_composer_bridge_tests.cpp",
+      "bytes": 29212,
+      "sha256": "11a4717041a6b39a16d8fb53b3dfac8137b91c0afc1133f77e25de22267c0ffc"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/effectCertificateSemanticsCpp/include/effect_certificate_semantics.hpp",
+      "bytes": 1803,
+      "sha256": "248795339483bfcb09c31b666e7dcaee4d7d57b230f52ed46882845fc05ce56f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/effectCertificateSemanticsCpp/src/effect_certificate_semantics.cpp",
+      "bytes": 15651,
+      "sha256": "c4ccc36270ff0ac3dd11ed081b379a26f3e384fac2093bbd746ba5729736ab11"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/effectCertificateSemanticsCpp/tests/effect_certificate_semantics_tests.cpp",
+      "bytes": 11799,
+      "sha256": "ca56e779af1d6b178574e3231e5ba628c6bb723d8125162b9b3456d119fd247e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/include/component_scoped_route_planner.hpp",
+      "bytes": 5683,
+      "sha256": "13467d0c8b74bae623177c3cf519c7e4678471294657e5406f7866550c5b6ffd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/include/day_horizon_planner.hpp",
+      "bytes": 6113,
+      "sha256": "b0d51e3527a9b7015089794a69ae9096d15c991c30964b26bbc90cbd2fae68f5"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/include/event_local_elastic_day.hpp",
+      "bytes": 2103,
+      "sha256": "b25bc190aca73291c935a2321d7b6499f3d8d6473d7f44134ab823d7a81d3b6b"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/include/event_triggered_local_repair.hpp",
+      "bytes": 10521,
+      "sha256": "d0b995185c23953bfdc721b5a49e3896599cd5a7b4c35f3fc9975c42cadfb386"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/include/exact_move_slot_planner.hpp",
+      "bytes": 2472,
+      "sha256": "9282a37d088d86d7b2b894b40266f9b2dd920feca1b664d3438a08285e138966"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/src/component_scoped_route_planner.cpp",
+      "bytes": 24509,
+      "sha256": "4e5c621274d1bcec9cf0a0b46d2bdba0034c6f5e58f9a600373eba11a3b17355"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/src/day_horizon_planner.cpp",
+      "bytes": 54972,
+      "sha256": "ea80da4763ac348f7b451297d17164df0fb4b7379e99873db848fa49da3dbc93"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/src/event_local_elastic_day.cpp",
+      "bytes": 6751,
+      "sha256": "c0810af4e1e6cd4480da96bd4b03d4f0f4fb3b38e9b3db58bb52ae6987389d35"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/src/event_triggered_local_repair.cpp",
+      "bytes": 26962,
+      "sha256": "99db34d11fd8c7d3fae8e970d62700d7a9e070819414f16db7710de37c5f34d9"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/src/exact_move_slot_planner.cpp",
+      "bytes": 13105,
+      "sha256": "9c1ce053d3b3e6dac07ff7c29be91486a6dd5bf9158cd128cbec038f90a26cf5"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/component_scoped_route_planner_adversarial_audit.cpp",
+      "bytes": 17158,
+      "sha256": "bae9df04b883a0ed92cda39469ba258a4297f44c91b1879e9c6881366d7427a3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/component_scoped_route_planner_tests.cpp",
+      "bytes": 8508,
+      "sha256": "139e8d90c402801877b475223c127d3bdc64d3772882ce86e2637e166ebb7c16"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/day_horizon_planner_adversarial_audit.cpp",
+      "bytes": 19578,
+      "sha256": "940323db4dcf4365094f29da66ee9ce3e0b3c39304602ce1d2bd2510ff884a12"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/day_horizon_planner_tests.cpp",
+      "bytes": 14078,
+      "sha256": "49b8829e97f52989ef825106068b90be0c8e6f679c6ac2fbfa7dda663e6c73bb"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/event_local_elastic_day_tests.cpp",
+      "bytes": 3522,
+      "sha256": "cc13c3be36c99c85d52003f8f2b2c00a4e7bee4846ef703bb032401f9e60a54c"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/event_triggered_local_repair_tests.cpp",
+      "bytes": 37378,
+      "sha256": "71ce1517a9afd10bf1e724e3adfc5512642c989abe03a5f8772b77b5c20213bd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/exact_move_slot_planner_tests.cpp",
+      "bytes": 7803,
+      "sha256": "748d0a37a0efc1a3fb5bb83851602dbab9398dcf6e09ec5ef63776c743c924b2"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/eventTriggeredLocalRepairCpp/tests/repair_integration_adversarial_audit.cpp",
+      "bytes": 4935,
+      "sha256": "7be18ef6d7d974887f80f4b106a231cfc0fa79be4dfbcddd7b1ca94eb76b67f3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/include/deferred_crop_scheduler.hpp",
+      "bytes": 5922,
+      "sha256": "bbad3b6967a826ac64583134d585481450e9f4300109bfa524c45e1ec3f24826"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/include/failure_debt_scheduler.hpp",
+      "bytes": 10111,
+      "sha256": "9cc4d8b58adf3e819171f0621cfef14523a1a3ebe311006cc6523d546bde19ad"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/include/modular_repair_adapter.hpp",
+      "bytes": 3056,
+      "sha256": "25f172374db01d5f855d2882a5db852404e5d3791bc181e230b4adc72c7dc9a0"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/include/static_dependencies.hpp",
+      "bytes": 786,
+      "sha256": "8a7fcb116debc6ab04b87f789b5ce1a322df3067686521b73a0e293f99d9538e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/src/deferred_crop_scheduler.cpp",
+      "bytes": 19019,
+      "sha256": "0e6919515802d6b71e931a8b379162cb290b6dca652c24589c6f04121ccbe567"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/src/modular_repair_adapter.cpp",
+      "bytes": 18595,
+      "sha256": "651fc6014ed62b4c4abf5f6acc8ea93dce8f002c88e9b5b199c67c550817035f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/src/scheduler.cpp",
+      "bytes": 65760,
+      "sha256": "34d43d5152e0247302b3f96b39b95283082aede8dad11dd9ced6622908ce5e2e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/src/static_dependencies.cpp",
+      "bytes": 4106,
+      "sha256": "058e882d0837ea502cfa4312bf111afb88fdfa6c2722869b5e6597031161d296"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/tests/deferred_crop_scheduler_tests.cpp",
+      "bytes": 11801,
+      "sha256": "ea74837a18da5656416fd9e54736e3fd163b511fffa5eccc377ac8a461170d47"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/tests/modular_repair_adapter_tests.cpp",
+      "bytes": 12570,
+      "sha256": "c30b47a3699161622901fb55ea9e2d18e0baffd57fcc065a6a70ce3b974085f8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/tests/scheduler_tests.cpp",
+      "bytes": 47772,
+      "sha256": "e62a1bbc234e9008dab8ff364536681bcd12f3264e60b455110f3532bfa4ba42"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/tools/benchmark.cpp",
+      "bytes": 2461,
+      "sha256": "567151845972981984ca2fee5b1e495b043168f676fd154ca0a8cfe8c115fbb3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/failureDebtSchedulerCpp/tools/g001_dependency_audit.cpp",
+      "bytes": 2850,
+      "sha256": "93b36b2eaa55527adc15801a8bb6d598528fd2df384baf7943d981d1d5a031db"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001ContinuousOwnerAuditCpp/include/g001_continuous_rolling_runtime_receipt_adapter.hpp",
+      "bytes": 3167,
+      "sha256": "68d5159627201f967e01d651fbf40e294f9c6d38c040627252efe73ea15d43cd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001ContinuousOwnerAuditCpp/include/g001_continuous_runtime_receipt_adapter.hpp",
+      "bytes": 3506,
+      "sha256": "3b917a93c9b0978edb971b3cbda3b3af53a88b664c55ba874765a9b099f7dfdf"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001ContinuousOwnerAuditCpp/src/audit_main.cpp",
+      "bytes": 58093,
+      "sha256": "3174918f3a1bec9b00b5d478581d7b21bced0b6a1d1ed57140eecefac071ef1a"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001ContinuousOwnerAuditCpp/src/g001_continuous_rolling_runtime_receipt_adapter.cpp",
+      "bytes": 18186,
+      "sha256": "8d74495ea3d24fd1cb97097daa6779a70a582b908e7818c057bfbe41103c548a"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001ContinuousOwnerAuditCpp/src/g001_continuous_runtime_receipt_adapter.cpp",
+      "bytes": 13926,
+      "sha256": "66244fbaf5c803cbb6f139e646115c35c89c56e7350652a62401bd95475b30a6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001DayStartObligationIssuerCpp/include/g001_day_start_obligation_issuer.hpp",
+      "bytes": 5999,
+      "sha256": "ccc168444a2bf02a57c33cfed3cd49d535078149d1950cca5cd54c6ec0543ef1"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001DayStartObligationIssuerCpp/src/g001_day_start_obligation_issuer.cpp",
+      "bytes": 26845,
+      "sha256": "d2125d3191101b370f1cf391751f3e63ff1eb8a8b2251a6ec8b341b0c930b711"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001DayStartObligationIssuerCpp/tests/g001_day_start_obligation_issuer_tests.cpp",
+      "bytes": 20804,
+      "sha256": "3283910f2947e61df282fdc87b9c45e659eae073467e3284dd7859b542272423"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RealWeedMoveOwnerCpp/include/g001_real_weed_move_owner.hpp",
+      "bytes": 7149,
+      "sha256": "dc70b7fc030946017780d75af0a7377f635ecd1aa8b2dfca17165665d90a95e0"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RealWeedMoveOwnerCpp/src/audit_main.cpp",
+      "bytes": 33872,
+      "sha256": "87cbeda56279e85a7b04aab0a462de579f3ff00418809509aeb2a8b425350bb0"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RealWeedMoveOwnerCpp/src/g001_real_weed_move_owner.cpp",
+      "bytes": 33901,
+      "sha256": "810a072b745fd948906553b0c279b9b22dd90975caebf6eede93db4b98e1d190"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/include/g001_repair_pipeline_shadow.hpp",
+      "bytes": 4868,
+      "sha256": "0b4473c39deddde67dfb50ce30d5e9625f981f7c78640e0aee170bf80bee46c8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/include/movement_plan_owner.hpp",
+      "bytes": 609,
+      "sha256": "5b8f71bf0b01baa6c233b2e12fe38958dc4555b8f60831828abebf31b1c0c93e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/src/audit_main.cpp",
+      "bytes": 49933,
+      "sha256": "72441595041c6ceaf7608069f5916ee22c4abc996c9089b4a43c58aabb344450"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/src/g001_repair_pipeline_shadow.cpp",
+      "bytes": 17988,
+      "sha256": "5e1bf6ca54dc2c283cce6c9bead398c100d3d72e64cff635a14546bb8568f884"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/src/movement_plan_owner.cpp",
+      "bytes": 1164,
+      "sha256": "fa5b0d755a3c82f3eb4fa663212adfcb404f92cc705eb62a7862e98ec526cd4f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001RepairPipelineShadowCpp/tests/g001_repair_pipeline_shadow_tests.cpp",
+      "bytes": 14047,
+      "sha256": "fae5649535260e1aa297eea20806a9a57eca6900ec1dfefcdd44e31f1cede435"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001TypedIntentIssuerAuditCpp/include/g001_typed_intent_issuer.hpp",
+      "bytes": 1646,
+      "sha256": "83087e8b1f81c069e0401a47cc6e31ba6b14e7b87de3c8549aca07b752828f8c"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001TypedIntentIssuerAuditCpp/src/audit_main.cpp",
+      "bytes": 15384,
+      "sha256": "af9b139fa9ae3bd40d5b611ece4acafadaab50505aebdccb5af1372b00e3079f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001TypedIntentIssuerAuditCpp/src/g001_typed_intent_issuer.cpp",
+      "bytes": 7187,
+      "sha256": "b2104348d1f866eb8b6fcc9ae1c22af4c9389e4abe4aa7fab5adb9ca76ac7ffb"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/g001TypedIntentIssuerAuditCpp/tests/g001_typed_intent_issuer_tests.cpp",
+      "bytes": 2998,
+      "sha256": "b627842bd9612e708febdb82c5427d615ad67b07b1e23f5ec1ba6216d292909d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/include/repair.hpp",
+      "bytes": 5370,
+      "sha256": "13d57515d356703d3d1c70af1fed9875ad8dbdd35f57e30ab359d1fb4f18ad36"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/include/route_loader.hpp",
+      "bytes": 328,
+      "sha256": "223c2a4d3a61aa00acc5c2eb8461b3be070f018a0c6855f5ac77ef3a32643689"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageRemainingDayAuditAdapterCpp/include/minimum_damage_remaining_day_audit_adapter.hpp",
+      "bytes": 3484,
+      "sha256": "34c52f4aceca9efac359ed6e5cad3c1a15a9adfb5aa1798faa69450725487998"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageRemainingDayAuditAdapterCpp/src/minimum_damage_remaining_day_audit_adapter.cpp",
+      "bytes": 22283,
+      "sha256": "95f793187cf0457f661d1a0832ead8b5a8b267259f1f86c4de062646820ec8ec"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageRemainingDayAuditAdapterCpp/tests/minimum_damage_remaining_day_audit_adapter_tests.cpp",
+      "bytes": 7491,
+      "sha256": "991281655e2a161e5e9724eb4846363de675079a677cb0bff47984f36ef7cf9f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageSchedulerBridgeCpp/include/minimum_damage_scheduler_bridge.hpp",
+      "bytes": 3902,
+      "sha256": "eafe339a7c3224fd13c6db85b8085a2ed899e70121266487f8a7c2de4330dc45"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageSchedulerBridgeCpp/src/minimum_damage_scheduler_bridge.cpp",
+      "bytes": 48816,
+      "sha256": "cc2a3a605528f8de8049642b93bf6f3f6da3903c4ca5259c8383fd03946794ea"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/minimumDamageSchedulerBridgeCpp/tests/minimum_damage_scheduler_bridge_tests.cpp",
+      "bytes": 19377,
+      "sha256": "ec0f9514cab336f714dad23ae0335f8a108d9392ae1e6ffa4ab82fba7b5902e3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/nativeFinalActionCommitAuditCpp/include/native_final_action_commit.hpp",
+      "bytes": 4214,
+      "sha256": "8e72ae6779c33cf78b6580764123d0b8003306069daf05381e1be59de1d98c71"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/nativeFinalActionCommitAuditCpp/src/audit_main.cpp",
+      "bytes": 16762,
+      "sha256": "ee7e19886c494f9aadf590eae46c2002843da5ac1d58a6de709756aa681ec3e7"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/nativeFinalActionCommitAuditCpp/src/native_final_action_commit.cpp",
+      "bytes": 13674,
+      "sha256": "914feacebdb8d5a79738ef98f0387927494900eebbc7f76c326059663e6917af"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineAnimalRepairOwnerCpp/include/online_animal_repair_owner.hpp",
+      "bytes": 3183,
+      "sha256": "bdfabb37d5ca36b3be76b4d2610746346aaaad88d65a9f497755a4a3246c2581"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineAnimalRepairOwnerCpp/src/online_animal_repair_owner.cpp",
+      "bytes": 20813,
+      "sha256": "c0d01f372d4c59fc96f7961506efae501c768f5857fcb39958acb54d439ef4f3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineAnimalRepairOwnerCpp/tests/online_animal_repair_owner_tests.cpp",
+      "bytes": 20388,
+      "sha256": "9f0e66f3d8f5a5d41081eedf4283460f10a1028a052d9feef4f603c3c068a844"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineElasticRepairOwnerCpp/include/online_elastic_repair_owner.hpp",
+      "bytes": 3044,
+      "sha256": "6ed261734e84bfbc6d63db7afab3860e0676417b44ee7a0cbd48f7ba4905b0d5"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineElasticRepairOwnerCpp/src/online_elastic_repair_owner.cpp",
+      "bytes": 34080,
+      "sha256": "aa6f311dd41748fc906ab65862b6a43eae655fa9e7fe0214210b755e6c3eb6b7"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/onlineElasticRepairOwnerCpp/tests/online_elastic_repair_owner_tests.cpp",
+      "bytes": 17531,
+      "sha256": "49f08e6789b6a85be7127738304646d73a705e4aaabaac1b4bfc4edea9796b3d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/persistentProductionIntentLedgerCpp/include/persistent_production_intent_ledger.hpp",
+      "bytes": 11398,
+      "sha256": "92279dcbfef738dac479fa5d28cb209367caf0678152da2d67b31b34df079149"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/persistentProductionIntentLedgerCpp/src/persistent_production_intent_ledger.cpp",
+      "bytes": 39627,
+      "sha256": "b9b8826bb58762f3cc66b1664f74ffb104ff46d9ce05a5319d91fb6f6966f21b"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/persistentProductionIntentLedgerCpp/tests/persistent_production_integration_adversarial_audit.cpp",
+      "bytes": 10386,
+      "sha256": "99b793986bf89c1e1a61e8e9e01794c6d3bbb7efae27aaa33f47efa953b02ea9"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/persistentProductionIntentLedgerCpp/tests/persistent_production_intent_ledger_tests.cpp",
+      "bytes": 23907,
+      "sha256": "102b8021dbb88c5c6af19bfe7c24103952dff4a6e75a377146ace931452d4f54"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/include/atomic_day_admission.hpp",
+      "bytes": 1842,
+      "sha256": "61aeef091ee05ab78f1fb58154f881561bd01dd3489de7186e7ed12c7a1cd9dd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/include/production_obligation_day_scheduler.hpp",
+      "bytes": 5912,
+      "sha256": "9fbc504733a9db71c7edf8512cbf57b8d639cc0369a9e95373595ad4cae3b779"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/include/state_target_compiler.hpp",
+      "bytes": 3152,
+      "sha256": "acb28337fa903426360c93f06121671aaf791ef83540433ab8699ed68210a01d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/src/atomic_day_admission.cpp",
+      "bytes": 8578,
+      "sha256": "49c0f1c3fcc36f67595ec04bf481097ed408bc5eb7c68c175ed4e072b6e05797"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/src/production_obligation_day_scheduler.cpp",
+      "bytes": 47174,
+      "sha256": "c8f4c08e0b29fd3b6541b84a6f3b6cb601638aaf8fe25a44ab3a653cd2ea3e70"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/src/state_target_compiler.cpp",
+      "bytes": 21422,
+      "sha256": "270ce5b1803393a0e104d989295f03b124713360a6cf91a6836abefc8f5804ee"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/tests/atomic_day_admission_tests.cpp",
+      "bytes": 11782,
+      "sha256": "6e078304f4d2106018473b2730e151ad87a738980a98f912d992c585172270eb"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/tests/production_obligation_day_scheduler_tests.cpp",
+      "bytes": 30266,
+      "sha256": "23ea41e4a90bfb8c11724bf9e914616026c122f12e40e4d907b751cbcbd5eeeb"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionObligationDaySchedulerCpp/tests/state_target_compiler_tests.cpp",
+      "bytes": 20380,
+      "sha256": "f92335e78542d7e691f8152c8280ffe93bef2d55f5d4dfb43c4ca7d6f94d3ce6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionSuffixSchedulerCpp/include/production_suffix_scheduler.hpp",
+      "bytes": 6403,
+      "sha256": "0d9df09b0371b2d0e175cd14312a3daa8ace4c7f016255614235eb109aa3e3e8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionSuffixSchedulerCpp/src/production_suffix_scheduler.cpp",
+      "bytes": 37601,
+      "sha256": "7cc4072658e48542253ef9269e7007ad5519afef170bd011be64fd1f86259249"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/productionSuffixSchedulerCpp/tests/production_suffix_scheduler_tests.cpp",
+      "bytes": 12739,
+      "sha256": "3ef10d6347835805963d13786663d662e6c428b57371f4a692cb71b1951d8663"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseFailureDayRollingOwnerCpp/include/purchase_failure_day_rolling_owner.hpp",
+      "bytes": 6100,
+      "sha256": "d4eb7c2ce9487b6261a5e209f780529aa1585ce777014d8f951e1cc42154d7b2"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseFailureDayRollingOwnerCpp/src/purchase_failure_day_rolling_owner.cpp",
+      "bytes": 43115,
+      "sha256": "402b6cc593e707380c8347821fc8d23dc496bab6a8059c5aff249df208807ef0"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseFailureDayRollingOwnerCpp/tests/purchase_failure_day_rolling_owner_tests.cpp",
+      "bytes": 11535,
+      "sha256": "f0549244c85c2227f3bfe3171d5ac560d52fedfd409263b854ac8317cd0e3761"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseFailureDayRollingOwnerCpp/tools/paired_evaluate.cpp",
+      "bytes": 14590,
+      "sha256": "920aa33fc40119f9c4deb3cc894fde82b66b7960faed6af75b29917ff1c96530"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseFailureDayRollingOwnerCpp/tools/real_trigger_audit.cpp",
+      "bytes": 8821,
+      "sha256": "108aff52b628dae8dcb4ce16d34e2d6698d5321eb5a98407c77d8057281d274a"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseRecoveryLedgerCpp/include/purchase_recovery_ledger.hpp",
+      "bytes": 7608,
+      "sha256": "697fe39ad21aa77cdcae539f88f2adb4a9c1fb815942d3cc4b25ed7b87e83545"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseRecoveryLedgerCpp/src/purchase_recovery_ledger.cpp",
+      "bytes": 13827,
+      "sha256": "843a7587fa1bec2b2789cd6b4e29d87132ac0ab4b9c341dffe58968d53adf759"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/purchaseRecoveryLedgerCpp/tests/purchase_recovery_ledger_tests.cpp",
+      "bytes": 12597,
+      "sha256": "f8b40eb6bd093d2af36cb6b16f73f7ffe1c936bdf0aacb62ec654942f4239f96"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairComposerArbiterCpp/include/repair_composer_arbiter.hpp",
+      "bytes": 5082,
+      "sha256": "89985903e7f9287ea97f67e2fde1afdc9f270aa5d420df7679100c79d65e836a"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairComposerArbiterCpp/src/repair_composer_arbiter.cpp",
+      "bytes": 21195,
+      "sha256": "41512c31719bb783db76d352e8c217be454058e5931416189742a19fcaf681a3"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairComposerArbiterCpp/tests/repair_composer_arbiter_tests.cpp",
+      "bytes": 31658,
+      "sha256": "d5a8a90ce9cbe6b297417c9d24b22723923766f6ac5cb25a3fde91d1fdbcec51"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairDebtSchedulerCpp/include/repair_debt_scheduler.hpp",
+      "bytes": 7397,
+      "sha256": "adabdf9de166f30c651c8499d8bd229144588fc51486117fbf71180e3b78bc58"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairDebtSchedulerCpp/src/audit_main.cpp",
+      "bytes": 1110,
+      "sha256": "18ac4b9c96f219a6805656aefa94fecdc8431df0267d49f48174a1e3d03ce5a4"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairDebtSchedulerCpp/src/repair_debt_scheduler.cpp",
+      "bytes": 31037,
+      "sha256": "7fbc36157e69835113518ccce961b144d9b1109b1ccce1143c8a8e36cd163979"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairDebtSchedulerCpp/tests/repair_debt_scheduler_tests.cpp",
+      "bytes": 18825,
+      "sha256": "1c9cd5e180f14bd17158f3cd6c129ae0f98cfaaf036c201dd0256e986f51a83e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairEnabledPanelAdapterCpp/include/repair_enabled_panel_adapter.hpp",
+      "bytes": 7731,
+      "sha256": "1fcd5a6e6c69d7bd54e781cf8ec2759402c80a171a4a8739f0ad0188c5b0017f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairEnabledPanelAdapterCpp/src/animal_recovery_paired.cpp",
+      "bytes": 26124,
+      "sha256": "c82ea46a05eb089d9225c0d94a87ac4f85052e7865ec4a6c78df03822ce08ebd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairEnabledPanelAdapterCpp/src/animal_recovery_smoke.cpp",
+      "bytes": 15354,
+      "sha256": "1ba232422dacefddde2be87c75c886530ff276a53efeeef3351267a08f0fb044"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairEnabledPanelAdapterCpp/src/audit_main.cpp",
+      "bytes": 19406,
+      "sha256": "5ccf9159fbc86a8c52b4022881558a69b3e2d28205b846d8d6765d19c4264035"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairEnabledPanelAdapterCpp/src/repair_enabled_panel_adapter.cpp",
+      "bytes": 88959,
+      "sha256": "d3c7a18307514ba7f305610c94cf1e053b9e8a910c52602f0bb9f40c6ed1bb51"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairForkEvaluatorCpp/include/repair_fork_evaluator.hpp",
+      "bytes": 6782,
+      "sha256": "7be42a2f76832b4a0f78b9e2772db24a52085cf851194c95200f57b9d8aae43e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairForkEvaluatorCpp/src/main.cpp",
+      "bytes": 3259,
+      "sha256": "6a38bef6c45724d15baf398168cb6225415a4f5c31ef6f2d10a587b1024d1449"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairForkEvaluatorCpp/src/repair_fork_evaluator.cpp",
+      "bytes": 39310,
+      "sha256": "07925d3dea09cdcef0acca82072741923cc1e34c5bccc66304d231d19137b84d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairForkEvaluatorCpp/tests/repair_fork_evaluator_tests.cpp",
+      "bytes": 12871,
+      "sha256": "8d10928f11c67cf224d934b7e6a71f74e6dae126ec160d684de8b1085e38f932"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairMinimumDamageSelectorCpp/include/repair_minimum_damage_selector.hpp",
+      "bytes": 6531,
+      "sha256": "8ca1301ab3683f7fb3cae301e53a460bc957ccb699018088dadd3c3b6ab9000d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairMinimumDamageSelectorCpp/src/repair_minimum_damage_selector.cpp",
+      "bytes": 45446,
+      "sha256": "2c9e7d6fd4782236d3438415e23cedb27f12cf84c0404cb6e77a7fcd6d27978c"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairMinimumDamageSelectorCpp/tests/repair_minimum_damage_selector_tests.cpp",
+      "bytes": 16268,
+      "sha256": "86a2ffd0f70c8755ee10318b3f86999f3604cccf9370796587b8da78cdd317a6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/include/repair_owner_composer.hpp",
+      "bytes": 1946,
+      "sha256": "57a184ab19af4b9b44085864251feb406d46994838bf86bbbd514fb94f78c2c1"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/include/transactional_owner_composer.hpp",
+      "bytes": 3825,
+      "sha256": "7c0b68a6ec4e7c6c09ba0ddee77392b576c5fc70b8e83d9c23a6dca90e1dce9f"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/include/transactional_repair_owner.hpp",
+      "bytes": 4547,
+      "sha256": "98cabf8fd98cdaa279f77bf3fdacbfd22e53485bbb3206366a425abdbb07b9e1"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/src/repair_owner_composer.cpp",
+      "bytes": 19412,
+      "sha256": "91c06e0ed8db32aed131de9b0674ef0ef5e0335e31dc0a8ef66a4469ca1bd794"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/src/transactional_owner_composer.cpp",
+      "bytes": 26018,
+      "sha256": "f0285fa76ca16175cd8f2c5401bf79443dd7fa9b2d9d511c31bc0feaa3804830"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairOwnerComposerCpp/tests/repair_owner_composer_tests.cpp",
+      "bytes": 44831,
+      "sha256": "4fbc069fcb1ebd6a419e311deab52cbb70d9844293aa06d2a8a7c9eecf450c8d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairWholeGamePanelCpp/include/repair_whole_game_panel.hpp",
+      "bytes": 4537,
+      "sha256": "ff79445ab6a7ebd2a4d34edb35d0dbeda17d44c0bf0f2e583b203109b26fae00"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairWholeGamePanelCpp/src/main.cpp",
+      "bytes": 1205,
+      "sha256": "56aa11ccfeb256c98d79e5377ae4c98ec422b0face163807955c8b7522f6b2cd"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairWholeGamePanelCpp/src/repair_whole_game_panel.cpp",
+      "bytes": 19750,
+      "sha256": "61eea5887768bb97fca2ceed31122e4ce755d5df133ddc7b5fe96239b1af7a19"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/repairWholeGamePanelCpp/tests/repair_whole_game_panel_tests.cpp",
+      "bytes": 4855,
+      "sha256": "0a456cee82a2f4f7f566337e5cc76c52afac7fc1591cede4a611adc4d7db5e5d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/src/repair.cpp",
+      "bytes": 16372,
+      "sha256": "8b028de076ee3aa236a9eb4f574d2cff20a3188d7a3680f1c24eecb2eff47d9d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/src/route_loader.cpp",
+      "bytes": 9265,
+      "sha256": "6f9a6c8a262de587e549be2675ea3ef0f0d1b6d510f3c7743d5128be5df202e8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/tests/repair_tests.cpp",
+      "bytes": 11177,
+      "sha256": "e1dfca66187d859d4d8dec23ca62ca7f2276c7f6348f6ce4913a897c2c5ce11a"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/tools/fixture_trace.cpp",
+      "bytes": 11846,
+      "sha256": "f2c6ca1d09adcdd58ea6bbda55dd7727247c51a490ddb34b619169764bbd3a77"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/tools/g001_market_structure_audit.cpp",
+      "bytes": 3241,
+      "sha256": "f2f2b20948385cfd0c1817efd6285ea02c12331f7cc1cf3e6e9b2363331618ba"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/tools/g001_route_audit.cpp",
+      "bytes": 15449,
+      "sha256": "5cea658c619f2b3f9a5a46a7be42e1768bfeb146c69f24970358395eb901a06b"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/tools/g001_seed_dependency_audit.cpp",
+      "bytes": 4554,
+      "sha256": "4a15582020e2e819082206b16e976316f0cf23568b4576773d0cb87810e50c6c"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionSemanticAuditCpp/include/two_phase_route_cursor.hpp",
+      "bytes": 3346,
+      "sha256": "43a4d7105a3468cf2e0bd18ee929480c84fbedf3be26153bb7cb3a672b92a46e"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionSemanticAuditCpp/src/main.cpp",
+      "bytes": 8496,
+      "sha256": "99e41352e2ade24e203dc70da524b96caa31617e3e4ab470f0c450b2dd119ac6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionSemanticAuditCpp/src/two_phase_route_cursor.cpp",
+      "bytes": 9632,
+      "sha256": "132577656451d42c8b9545bafe929aff0fca0c0b1882504fde0e197f40632828"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionSemanticAuditCpp/tests/two_phase_route_cursor_tests.cpp",
+      "bytes": 14755,
+      "sha256": "3024f2889e744e2565a79a5b838ce610543922bd0db2f319cf92e7c3ed4197de"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalAnimalRepairOwnerCpp/include/transactional_animal_repair_owner.hpp",
+      "bytes": 3434,
+      "sha256": "71a1ee4ca2cc9f9aedac1f64ca862f53291dfa8d521a841360cc425e24efa1f8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalAnimalRepairOwnerCpp/src/transactional_animal_repair_owner.cpp",
+      "bytes": 35152,
+      "sha256": "0f60a86b3c24a2fb071fffc5f4569da97ddcabc45976810be9bd4059f0a8b3d7"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalAnimalRepairOwnerCpp/tests/transactional_animal_repair_owner_tests.cpp",
+      "bytes": 30253,
+      "sha256": "6aa94a0e8af0536b4f479a1eae0e87ca246da7435c6bd28724f11107025d1dd6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalCropRepairOwnerCpp/include/transactional_crop_repair_owner.hpp",
+      "bytes": 4079,
+      "sha256": "af14277b25825f74ed6ea0e3f01ba468461748248331cae3d30fe06f9d7aab0d"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalCropRepairOwnerCpp/src/transactional_crop_repair_owner.cpp",
+      "bytes": 43204,
+      "sha256": "0482029a6fb17378fad7da63d80f9759f8527a5301c920b7399e0d261ad281c6"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/transactionalCropRepairOwnerCpp/tests/transactional_crop_repair_owner_tests.cpp",
+      "bytes": 35286,
+      "sha256": "151a0b23fd1c56822ecd3f279dae71b2ab0e5cdfa7270a4462c89f8f21b108a1"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedAbsorptionSearchCpp/include/weed_absorption.hpp",
+      "bytes": 2942,
+      "sha256": "4dfbee6d0ed0dcde93fcbd1e1d588287d92fc5b66ad68521798af354bd7a92c4"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedAbsorptionSearchCpp/src/weed_absorption.cpp",
+      "bytes": 23249,
+      "sha256": "cfb453df8601194a54ffd631c9b66b72de7690d730d258e6c13b3ac6176f1aa8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedAbsorptionSearchCpp/tests/weed_absorption_tests.cpp",
+      "bytes": 5623,
+      "sha256": "97bdad11ec7fb31a3996a8c0412a46d0980ac30dfbec5d415026d21663650e24"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedAbsorptionSearchCpp/tools/evaluate.cpp",
+      "bytes": 24593,
+      "sha256": "82277f0d8d89ff2acb4614977b06178e9bcb90440872c2467aee7e8069b51b71"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedRouteInvariantAudit/include/scheduler.hpp",
+      "bytes": 1997,
+      "sha256": "438eff12a3e1fabd6149674a5ad84395133be138369bba70e0a0db62f3604cb8"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedRouteInvariantAudit/src/main.cpp",
+      "bytes": 48365,
+      "sha256": "04d0e1e9d8f5556affecb1745b7a3e193dde6588d7b8f977a4a6ac85980809d4"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedRouteInvariantAudit/src/scheduler.cpp",
+      "bytes": 5756,
+      "sha256": "19db8edec92af3676c0235ed5f12195b3175898fa846a80f5f3905af3cfd6e4b"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedRouteInvariantAudit/tests/scheduler_tests.cpp",
+      "bytes": 2360,
+      "sha256": "01e4bbb76caf3e833c0bb811ec97155b8785b2d1afa1c0deb482f307f244e82b"
+    },
+    {
+      "path": "native_deps/findNewRoad/repairMechanismCpp/weedSingleTriggerForkCpp/src/main.cpp",
+      "bytes": 23552,
+      "sha256": "91b916fb5f9435aa25a5eb682ca7991b5609a37b1998cfd957c71a725106d5c8"
+    },
+    {
+      "path": "opponents/ahmed_v47/main.py",
+      "bytes": 354288,
+      "sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842"
+    },
+    {
+      "path": "opponents/demand_preserving/main.py",
+      "bytes": 358258,
+      "sha256": "95b02b9b7ca124c92844b7c2907b4ceacf2cce7773890cdf32aba84f20eababe"
+    },
+    {
+      "path": "opponents/herd_safe_2700/LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "opponents/herd_safe_2700/NOTICE.txt",
+      "bytes": 1058,
+      "sha256": "266ef3ce6949038d19f778cf13f952a1f8fba4e1f3188b1c2b42e5a1e2933d3a"
+    },
+    {
+      "path": "opponents/herd_safe_2700/actions.json",
+      "bytes": 5099830,
+      "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef"
+    },
+    {
+      "path": "opponents/herd_safe_2700/main.py",
+      "bytes": 1083,
+      "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc"
+    },
+    {
+      "path": "opponents/herd_safe_2700/policy.py",
+      "bytes": 835,
+      "sha256": "5bc8d5635d90462e813569123de17b012762c30f3817b20457365a1155d6b908"
+    },
+    {
+      "path": "opponents/herd_safe_2700/router.py",
+      "bytes": 44013,
+      "sha256": "3a444a70ea9dd89f3cb857676fcc0180ebf1dfb7ede89f7f0cc82a2ef384e380"
+    },
+    {
+      "path": "opponents/herd_safe_2700/settings.json",
+      "bytes": 19,
+      "sha256": "179eda4e322a111de2a6b8a2a92851cea09fa4c044b052ba1a43f6b7bdeecc6b"
+    },
+    {
+      "path": "opponents/manifest.json",
+      "bytes": 3839,
+      "sha256": "31003f68dda07dd13517e120b4a149840df5822092267e80f872af49c3af4621"
+    },
+    {
+      "path": "opponents/melon_2749/main.py",
+      "bytes": 338273,
+      "sha256": "1f5c7a18035e522ee91f10674e0007ceaebe8e523f2fe9440324d27d6525fd49"
+    },
+    {
+      "path": "opponents/pipe8/main.py",
+      "bytes": 329047,
+      "sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+    },
+    {
+      "path": "opponents/salemali7_2900/main.py",
+      "bytes": 18498,
+      "sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9"
+    },
+    {
+      "path": "opponents/thomas_2945/main.py",
+      "bytes": 856427,
+      "sha256": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd"
+    },
+    {
+      "path": "policy/r1/agent.py",
+      "bytes": 13466,
+      "sha256": "27f36ce17b179c56f46f91531f6bc4efcca1a9a0c1dd7a046cc9d4cc5bb7b008"
+    },
+    {
+      "path": "policy/r1/agent.so",
+      "bytes": 1118336,
+      "sha256": "2cea69383e7bdec59dbd0f4ba2757a34c15260eacebe47d032344a09c0f81681"
+    },
+    {
+      "path": "policy/r1/animal_service_dp.hpp",
+      "bytes": 1399,
+      "sha256": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c"
+    },
+    {
+      "path": "policy/r1/bridge.cpp",
+      "bytes": 13870,
+      "sha256": "05410182d6a3df9a387a8d822bd38ea1c7e37b2dd674bdb40454cdc23628b0bf"
+    },
+    {
+      "path": "policy/r1/build.sh",
+      "bytes": 560,
+      "sha256": "44100ccce8913c687d29c6a49c705007df13f1ff2c3c234728aeefbcd1ccf2c3"
+    },
+    {
+      "path": "policy/r1/conditional_market.hpp",
+      "bytes": 2178,
+      "sha256": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457"
+    },
+    {
+      "path": "policy/r1/config.json",
+      "bytes": 757,
+      "sha256": "6c8a705604f2642f49d881c2b5ee0a3152a48882ec462ae7332d586911117afc"
+    },
+    {
+      "path": "policy/r1/executor/compile_choices.hpp",
+      "bytes": 5705,
+      "sha256": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea"
+    },
+    {
+      "path": "policy/r1/executor/crop_delivery.hpp",
+      "bytes": 5208,
+      "sha256": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e"
+    },
+    {
+      "path": "policy/r1/executor/day_consequence.hpp",
+      "bytes": 9097,
+      "sha256": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae"
+    },
+    {
+      "path": "policy/r1/executor/idle_task_handoff.hpp",
+      "bytes": 3757,
+      "sha256": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd"
+    },
+    {
+      "path": "policy/r1/executor/intraday_admission.hpp",
+      "bytes": 14811,
+      "sha256": "698beca5ac69e1252599bb4061f427370859e5957be8cd3d10dfd9a4ac72f1e9"
+    },
+    {
+      "path": "policy/r1/executor/investment_candidates.hpp",
+      "bytes": 4356,
+      "sha256": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe"
+    },
+    {
+      "path": "policy/r1/executor/joint_portfolio.hpp",
+      "bytes": 14008,
+      "sha256": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf"
+    },
+    {
+      "path": "policy/r1/executor/live_execution_repairs.hpp",
+      "bytes": 4016,
+      "sha256": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637"
+    },
+    {
+      "path": "policy/r1/executor/observation_view.hpp",
+      "bytes": 330,
+      "sha256": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe"
+    },
+    {
+      "path": "policy/r1/executor/observed_day_scenario.hpp",
+      "bytes": 4273,
+      "sha256": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c"
+    },
+    {
+      "path": "policy/r1/executor/pack_memo.hpp",
+      "bytes": 2195,
+      "sha256": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988"
+    },
+    {
+      "path": "policy/r1/executor/policy.hpp",
+      "bytes": 118372,
+      "sha256": "2b72916f5fb40c260b09a775485ae6870a0a9708081b39416190bc1f0488a4c7"
+    },
+    {
+      "path": "policy/r1/executor/regret_pack_incremental.inc",
+      "bytes": 2918,
+      "sha256": "9923b3facfd174cb9b5aacf6650210ce5628b5ca02f32586f6965d8c1ecabb60"
+    },
+    {
+      "path": "policy/r1/executor/resource_exchange.hpp",
+      "bytes": 5838,
+      "sha256": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e"
+    },
+    {
+      "path": "policy/r1/executor/rotation_calendar.hpp",
+      "bytes": 6495,
+      "sha256": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a"
+    },
+    {
+      "path": "policy/r1/executor/rotation_cash.hpp",
+      "bytes": 7072,
+      "sha256": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d"
+    },
+    {
+      "path": "policy/r1/executor/service_recovery.hpp",
+      "bytes": 8443,
+      "sha256": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c"
+    },
+    {
+      "path": "policy/r1/executor/t3_execution_repair.hpp",
+      "bytes": 15558,
+      "sha256": "b6aa93ff8067c6f1258fb97049ba264b3005000631c2e2b5ea09ab1d66efaf54"
+    },
+    {
+      "path": "policy/r1/executor/t3_repair_state.hpp",
+      "bytes": 967,
+      "sha256": "783d2f05d87eced7e91e8f8b32f084dfb508f21682388deb1f847aad6e934fe8"
+    },
+    {
+      "path": "policy/r1/executor/vendor/simulator.cpp",
+      "bytes": 17869,
+      "sha256": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da"
+    },
+    {
+      "path": "policy/r1/executor/vendor/simulator.hpp",
+      "bytes": 6489,
+      "sha256": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae"
+    },
+    {
+      "path": "policy/r1/finite_fertilizer.hpp",
+      "bytes": 860,
+      "sha256": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061"
+    },
+    {
+      "path": "policy/r1/joint_bundle_state.hpp",
+      "bytes": 3299,
+      "sha256": "87e642d676f379d7f068ff6ae24d0b1e5e8e56bd854f7c9393886573c005e9c7"
+    },
+    {
+      "path": "policy/r1/joint_candidates.hpp",
+      "bytes": 4140,
+      "sha256": "ce2c0e7769ef8bc6b76bba71b28d926e1c12c6dcb386d76d6112698dc4099800"
+    },
+    {
+      "path": "policy/r1/learned_value.hpp",
+      "bytes": 2550,
+      "sha256": "fe89da0f0410956bf725090ce617fd55a370de37487a64e81f07a42bc9ffacd2"
+    },
+    {
+      "path": "policy/r1/local_sale_timing.hpp",
+      "bytes": 3107,
+      "sha256": "68f96a02d51c6a9968b79f68a1845c96f1985d204240496a1c89026f08dbc766"
+    },
+    {
+      "path": "policy/r1/observation_codec.hpp",
+      "bytes": 1569,
+      "sha256": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297"
+    },
+    {
+      "path": "policy/r1/observed_crop_clock.hpp",
+      "bytes": 1869,
+      "sha256": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4"
+    },
+    {
+      "path": "policy/r1/ongoing_maintenance_dp.hpp",
+      "bytes": 2095,
+      "sha256": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd"
+    },
+    {
+      "path": "policy/r1/planner.hpp",
+      "bytes": 13366,
+      "sha256": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a"
+    },
+    {
+      "path": "policy/r1/proposals.hpp",
+      "bytes": 6894,
+      "sha256": "16d062c142e5a7d89039606b49a1247274bb9f58398b6908c7ce33837ed03289"
+    },
+    {
+      "path": "policy/r1/public_flow_scenario.hpp",
+      "bytes": 2781,
+      "sha256": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35"
+    },
+    {
+      "path": "policy/r1/public_trade_ledger.hpp",
+      "bytes": 5525,
+      "sha256": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef"
+    },
+    {
+      "path": "policy/r1/sale_clock.hpp",
+      "bytes": 1901,
+      "sha256": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260"
+    },
+    {
+      "path": "policy/r1/search.hpp",
+      "bytes": 7375,
+      "sha256": "d1bce1f7a75ced5392145e813c878ba7fa4a5192e561b1381f5d007707a2814b"
+    },
+    {
+      "path": "policy/r1/startup_supply.hpp",
+      "bytes": 674,
+      "sha256": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d"
+    },
+    {
+      "path": "policy/r1/triad.hpp",
+      "bytes": 44120,
+      "sha256": "b61132848496f6d27d16c6dd18bfec3fab615fafaaf58b80b047d40c2c6e8ba7"
+    },
+    {
+      "path": "scripts/analyze_compact_switch_search.py",
+      "bytes": 6021,
+      "sha256": "1f2627f93a393c8d823134de8c00b0f83a19d9db351565e4454c7d51cc2a5e76"
+    },
+    {
+      "path": "scripts/analyze_macro_route_library.py",
+      "bytes": 13695,
+      "sha256": "fbb1300b9f1d448e60e91112ede005636e90af73c45ae9f67a6744d2283716f2"
+    },
+    {
+      "path": "scripts/analyze_public_meta_selectors.py",
+      "bytes": 11326,
+      "sha256": "424556d5c2e55487299a01bce79aeb66ed94476d1b1a57b906b140d3f877c0fd"
+    },
+    {
+      "path": "scripts/audit_macro_execution_quality.py",
+      "bytes": 10825,
+      "sha256": "764666376cfb4fbd1c994ac4788ba51eafb576293f3af70f554ec7855670255f"
+    },
+    {
+      "path": "scripts/audit_macro_thresholds.py",
+      "bytes": 1454,
+      "sha256": "06f178043d96782ef96d66d3ca841e9fe6be0b40f03eac52d82d7b953b0d8bd6"
+    },
+    {
+      "path": "scripts/build_complete_core_route_families.py",
+      "bytes": 4709,
+      "sha256": "b12ecc16ea20858d8f73761b6939fd45fbe1cc859e2d3cbdb9e7be19519399ea"
+    },
+    {
+      "path": "scripts/build_global_route_lattice.py",
+      "bytes": 6286,
+      "sha256": "846ce715a1a173643ad1debd4972f778453e05a32ebf8060c6a13df7680a0ed7"
+    },
+    {
+      "path": "scripts/build_nt_front40_manifest.py",
+      "bytes": 5754,
+      "sha256": "3d26bfee150bdb17f845266872d38fe2de59453742af565454654c1c49156917"
+    },
+    {
+      "path": "scripts/check_thomas_native_prefix.py",
+      "bytes": 11783,
+      "sha256": "fa83ecba55b07584ac10f690c49fcf2d9d71a608312530ec20e1abad5707f028"
+    },
+    {
+      "path": "scripts/cluster_global_macro_routes.py",
+      "bytes": 3259,
+      "sha256": "d8bd6d0d8341024191f6a886450813364968e7d2c68303acef28e3d722ad6a8a"
+    },
+    {
+      "path": "scripts/cluster_intended_macro_routes.py",
+      "bytes": 3956,
+      "sha256": "2fb472f9e349dc8865120ef823ee21d54106d677e8afb4fd442a2c9e67012218"
+    },
+    {
+      "path": "scripts/collapse_global_route_families.py",
+      "bytes": 3308,
+      "sha256": "33b187988ec3a1add1b11e1865a0a4e0f56d1c15ad12e6f2d19f17543ae700a3"
+    },
+    {
+      "path": "scripts/collect_latest_top_routes.py",
+      "bytes": 13451,
+      "sha256": "61b37fb05b892dc17baafd2c2cdb735361fe733c0a54eb36614279428b8f537c"
+    },
+    {
+      "path": "scripts/evaluate_agent_pair.py",
+      "bytes": 7177,
+      "sha256": "e05aa26f8842c20a3a907db5be27f613736c396b0264b7beec51e38f03944401"
+    },
+    {
+      "path": "scripts/evaluate_intent_route_round_robin.py",
+      "bytes": 5067,
+      "sha256": "af761b53e45409ce38c7786d5df21cd279f7aaf99448254ee1bbddbd195c6aec"
+    },
+    {
+      "path": "scripts/evaluate_native_route_trees_holdout.py",
+      "bytes": 6709,
+      "sha256": "67c1bbee554aed39a3cfd7eb0026948fed1c55d8db88723244f1cc117b5b7bc0"
+    },
+    {
+      "path": "scripts/evaluate_packed_vs_nt_front40.py",
+      "bytes": 12677,
+      "sha256": "96fc0c73a77dad1986613d519c6c3ed4e0a0d3aa2656acb56d98b22d8cebf889"
+    },
+    {
+      "path": "scripts/evaluate_packed_vs_zip_opponents.py",
+      "bytes": 10438,
+      "sha256": "803b902f7b719b26d2b8f5fd2e588c19e8848e0b28e3527e0b902cdac5dd3702"
+    },
+    {
+      "path": "scripts/evaluate_route_checkpoints.py",
+      "bytes": 10548,
+      "sha256": "c0d21ac692d0efd0a338882c137d76d667d1e81706d7000d52b41a94927b6be5"
+    },
+    {
+      "path": "scripts/evaluate_route_vs_archive.py",
+      "bytes": 13542,
+      "sha256": "63d24944baa837192eb9750953ac9d6ca2ce6e4ed62d5a0152fa99a90c27f05c"
+    },
+    {
+      "path": "scripts/evaluate_search_route_policy.py",
+      "bytes": 6838,
+      "sha256": "397c3852f0cd16469da5175fe36fbd2ba696e3537ed2fce8f9bb5922c44cf0f6"
+    },
+    {
+      "path": "scripts/evaluate_sell_rankers.py",
+      "bytes": 9575,
+      "sha256": "0849250e1bfdccdf5dd506350a736ea267a3da0adf7d5c5353e801c23b6090fe"
+    },
+    {
+      "path": "scripts/evaluate_single_vs_teammate.py",
+      "bytes": 7867,
+      "sha256": "baff064b3e1f7bb4e2a6b3cc60efcab91fe9b6523d5b86733d3adb1a2b41b465"
+    },
+    {
+      "path": "scripts/evaluate_submission_vs_community.py",
+      "bytes": 7636,
+      "sha256": "cc759748c697c1a6c6226aacc42ba6f6d10a419fec57694630ce0580274cbd4e"
+    },
+    {
+      "path": "scripts/experiment_simple_route_trees.py",
+      "bytes": 17267,
+      "sha256": "3cd0a7dcd9016fdc0e15820b3e982b8e7bc918a030a2d38fa8ece442d3f6b225"
+    },
+    {
+      "path": "scripts/export_family_tournament_candidates.py",
+      "bytes": 6778,
+      "sha256": "88d1260b9cbba2a53b5b2531cf55408ee2961ce175181ea12563d6fc1b26a0ea"
+    },
+    {
+      "path": "scripts/export_intent_route_carriers.py",
+      "bytes": 3073,
+      "sha256": "37b4f327427e9447171b09ba434ddfeabadcd136b2af42e22077fb15994c56da"
+    },
+    {
+      "path": "scripts/export_macro_intent_route_specs.py",
+      "bytes": 8380,
+      "sha256": "13cb9b26966b2839a46facfa91bbc82462dc5705d02c5a0150b44957039279ea"
+    },
+    {
+      "path": "scripts/export_macro_route_dashboard.py",
+      "bytes": 14248,
+      "sha256": "ef4d39876e46cb8ea403be4b6f806a55756fd7b161ebd5f9a14f8cff3cf2b75e"
+    },
+    {
+      "path": "scripts/export_single_file_submission.py",
+      "bytes": 4344,
+      "sha256": "4506ad9ae4fde9d736ddb556a96865ebf173deff7a7b2e66f52309f434e516de"
+    },
+    {
+      "path": "scripts/export_teammate_meta_submission.py",
+      "bytes": 5973,
+      "sha256": "eca45a301a889fade622fafafc0c71e52393516f4fadfc962e51472e3923ead1"
+    },
+    {
+      "path": "scripts/export_teammate_route_library.py",
+      "bytes": 6061,
+      "sha256": "d4d3c95754cca08b0293ce162b402f454f93fd2a1b22ba3ea17b466479b2c21f"
+    },
+    {
+      "path": "scripts/extract_global_route_states.py",
+      "bytes": 5005,
+      "sha256": "382a3f6249d733cbd27100e28248c11d10ea49322b239eb9995e26ba9c7f64da"
+    },
+    {
+      "path": "scripts/extract_kaggriculture_zip_opponents.py",
+      "bytes": 4870,
+      "sha256": "a5af0a15bf245b2413d9698255dab7b6a8c777601becffc73cfa345ee9391129"
+    },
+    {
+      "path": "scripts/finalize_route_manifest.py",
+      "bytes": 4447,
+      "sha256": "02ffe2adf972f316f305bc3275b76d78896601a0fe6875d61db0306ef4619c0f"
+    },
+    {
+      "path": "scripts/map_latest_to_global_families.py",
+      "bytes": 6390,
+      "sha256": "9a446ee932618b263d2c09ca30dc9e2ab0bde93d279170077f01db82d41be09d"
+    },
+    {
+      "path": "scripts/merge_macro_route_caches.py",
+      "bytes": 1795,
+      "sha256": "624e8b2a39bff397dc17e033f3db34e793bf19cda85f8be43c2772f68b097a9a"
+    },
+    {
+      "path": "scripts/merge_route_payoff_columns.py",
+      "bytes": 2290,
+      "sha256": "51e557dbb6be80f0deff3162e6b28e2ca995667ac0d972d9f08ab917d9114ace"
+    },
+    {
+      "path": "scripts/mine_route_failure_states.py",
+      "bytes": 6092,
+      "sha256": "54cceac9d95eb8a975af77090f93b301bd2bfcf65e05c103e5f4e023a4325af3"
+    },
+    {
+      "path": "scripts/recompute_opening_maximin.py",
+      "bytes": 8972,
+      "sha256": "74e385dda2bf1adc5ac2b876934357d125aec0fa577e6cab9acde8395775d870"
+    },
+    {
+      "path": "scripts/render_macro_route_method_charts.py",
+      "bytes": 12477,
+      "sha256": "e016487eeec189cfd7bbbc772c681a6de79534cab5141c1df71bc2ea630bc7c5"
+    },
+    {
+      "path": "scripts/render_macro_route_pdf.py",
+      "bytes": 4177,
+      "sha256": "9447d5546525cc0d983aee17c0af9792d408652121c67007d869aa5613bffe13"
+    },
+    {
+      "path": "scripts/run_native_intent_round_robin.py",
+      "bytes": 3620,
+      "sha256": "308166fb650734e53b920230b57a8dc72758dec45044f67b84b20f16a9352a3a"
+    },
+    {
+      "path": "scripts/run_native_intent_switch_search.py",
+      "bytes": 3587,
+      "sha256": "b6521d81e7f56de2de7958229d81038bbeae47494647f2b1526993e8ebf00875"
+    },
+    {
+      "path": "scripts/search_major_route_agents.py",
+      "bytes": 12787,
+      "sha256": "0bd8c3a34a9517a4680f7b65cf332b7444418d8cabffc0e6e8ec5a32daa64218"
+    },
+    {
+      "path": "scripts/search_native_route_tree_sequences.py",
+      "bytes": 8608,
+      "sha256": "1389f907f99d6d1dcce6e8b5e8991c333cee4bb81864bf4941502fbf93e3aa12"
+    },
+    {
+      "path": "scripts/search_teammate_expanded_routes.py",
+      "bytes": 8874,
+      "sha256": "797e3f61cb59ebc4bd64fde32dbee1a302969d12877f2c4797a8cfb4d1fa7cbd"
+    },
+    {
+      "path": "scripts/search_teammate_route_switches.py",
+      "bytes": 8076,
+      "sha256": "97f4e3c112b3f647a546bf76e557a0d23d77393f5ab89acfa55dd7b97ab17084"
+    },
+    {
+      "path": "scripts/search_teammate_route_switches_native.py",
+      "bytes": 6956,
+      "sha256": "8a170cdef2c0e853dfcc24e3771b1e94e3fde94bf8d75240247e3de2ae1782ff"
+    },
+    {
+      "path": "scripts/select_major_route_representatives.py",
+      "bytes": 9030,
+      "sha256": "0ee0e9963d442df353ac830b2579b2bd02e4fe79dcd019eb4daa8335f62a8a0a"
+    },
+    {
+      "path": "scripts/solve_route_nash.py",
+      "bytes": 3439,
+      "sha256": "55071735befeb4002f9c37b44b5ee2cc40465f1c56b0838560667fbfc123c7c2"
+    },
+    {
+      "path": "scripts/train_direct_route_tree.py",
+      "bytes": 32406,
+      "sha256": "2e1c8a3f1219f33cc11ffa27a55d4cce0d2a173df16e734196352ff6e99d8639"
+    },
+    {
+      "path": "scripts/train_global_opponent_belief.py",
+      "bytes": 11838,
+      "sha256": "d8fb5df4fb65a3de4267b36b58ccdd3df10d2248cb335941ad3429750875e26d"
+    },
+    {
+      "path": "scripts/train_robust_search_route_trees.py",
+      "bytes": 24775,
+      "sha256": "ed8ad4879cd2c715ed0d106f49999573d717268e61c9b16ab3e7710fad62dee0"
+    },
+    {
+      "path": "scripts/train_search_route_trees.py",
+      "bytes": 8831,
+      "sha256": "8944b66dab6292c5d5cb8f5829bbf4c7c499ca79d0985a7668784aeac0463d69"
+    },
+    {
+      "path": "verify_project.py",
+      "bytes": 3208,
+      "sha256": "bc20846ea8cb20d728e042c070a3822c6f7f26e05e3d8ed48630fdf5fb8d8dd9"
+    }
+  ]
+}

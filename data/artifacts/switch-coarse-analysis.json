@@ -1,0 +1,2620 @@
+{
+  "schema_version": 1,
+  "source": "/root/kaggriculture-research-20260920/formal-609-switch-v1/switch-coarse-245x8.npz",
+  "search_dimensions": {
+    "openings": [
+      "G001",
+      "G210",
+      "G275",
+      "G379",
+      "G411"
+    ],
+    "targets": 245,
+    "opponents": 245,
+    "checkpoints": [
+      144,
+      168,
+      216
+    ],
+    "seeds": 8,
+    "seats": 2
+  },
+  "screening": {
+    "method": "paired greedy oracle compression over all 175 candidates",
+    "min_marginal_gain": 0.0005,
+    "initial_nash_routes": [
+      "G001",
+      "G210",
+      "G275",
+      "G379",
+      "G411"
+    ],
+    "selected_families": [
+      "G001",
+      "G210",
+      "G275",
+      "G379",
+      "G411",
+      "G009",
+      "G114",
+      "G267",
+      "G024",
+      "G087",
+      "G062",
+      "G157",
+      "G169",
+      "G113",
+      "G195",
+      "G302",
+      "G038",
+      "G316",
+      "G018",
+      "G262",
+      "G019",
+      "G163",
+      "G008",
+      "G047",
+      "G106",
+      "G197"
+    ],
+    "added": [
+      {
+        "family": "G009",
+        "marginal_paired_score_gain": 0.02190476655960083,
+        "cumulative_oracle_score": 0.8978231549263,
+        "oracle_frequency": 1224
+      },
+      {
+        "family": "G114",
+        "marginal_paired_score_gain": 0.01642853021621704,
+        "cumulative_oracle_score": 0.9142516851425171,
+        "oracle_frequency": 2880
+      },
+      {
+        "family": "G267",
+        "marginal_paired_score_gain": 0.008775532245635986,
+        "cumulative_oracle_score": 0.9230272173881531,
+        "oracle_frequency": 952
+      },
+      {
+        "family": "G024",
+        "marginal_paired_score_gain": 0.005986392498016357,
+        "cumulative_oracle_score": 0.9290136098861694,
+        "oracle_frequency": 1551
+      },
+      {
+        "family": "G087",
+        "marginal_paired_score_gain": 0.004591822624206543,
+        "cumulative_oracle_score": 0.933605432510376,
+        "oracle_frequency": 4089
+      },
+      {
+        "family": "G062",
+        "marginal_paired_score_gain": 0.0034183859825134277,
+        "cumulative_oracle_score": 0.9370238184928894,
+        "oracle_frequency": 1309
+      },
+      {
+        "family": "G157",
+        "marginal_paired_score_gain": 0.0027976036071777344,
+        "cumulative_oracle_score": 0.9398214221000671,
+        "oracle_frequency": 1151
+      },
+      {
+        "family": "G169",
+        "marginal_paired_score_gain": 0.0019813179969787598,
+        "cumulative_oracle_score": 0.9418027400970459,
+        "oracle_frequency": 892
+      },
+      {
+        "family": "G113",
+        "marginal_paired_score_gain": 0.0017516613006591797,
+        "cumulative_oracle_score": 0.9435544013977051,
+        "oracle_frequency": 2180
+      },
+      {
+        "family": "G195",
+        "marginal_paired_score_gain": 0.0014286041259765625,
+        "cumulative_oracle_score": 0.9449830055236816,
+        "oracle_frequency": 713
+      },
+      {
+        "family": "G302",
+        "marginal_paired_score_gain": 0.0013945698738098145,
+        "cumulative_oracle_score": 0.9463775753974915,
+        "oracle_frequency": 1201
+      },
+      {
+        "family": "G038",
+        "marginal_paired_score_gain": 0.001275479793548584,
+        "cumulative_oracle_score": 0.94765305519104,
+        "oracle_frequency": 1192
+      },
+      {
+        "family": "G316",
+        "marginal_paired_score_gain": 0.0011394619941711426,
+        "cumulative_oracle_score": 0.9487925171852112,
+        "oracle_frequency": 363
+      },
+      {
+        "family": "G018",
+        "marginal_paired_score_gain": 0.0010544061660766602,
+        "cumulative_oracle_score": 0.9498469233512878,
+        "oracle_frequency": 1364
+      },
+      {
+        "family": "G262",
+        "marginal_paired_score_gain": 0.0010034441947937012,
+        "cumulative_oracle_score": 0.9508503675460815,
+        "oracle_frequency": 679
+      },
+      {
+        "family": "G019",
+        "marginal_paired_score_gain": 0.0007737874984741211,
+        "cumulative_oracle_score": 0.9516241550445557,
+        "oracle_frequency": 2138
+      },
+      {
+        "family": "G163",
+        "marginal_paired_score_gain": 0.0007312893867492676,
+        "cumulative_oracle_score": 0.9523554444313049,
+        "oracle_frequency": 503
+      },
+      {
+        "family": "G008",
+        "marginal_paired_score_gain": 0.0006632804870605469,
+        "cumulative_oracle_score": 0.9530187249183655,
+        "oracle_frequency": 800
+      },
+      {
+        "family": "G047",
+        "marginal_paired_score_gain": 0.000620722770690918,
+        "cumulative_oracle_score": 0.9536394476890564,
+        "oracle_frequency": 540
+      },
+      {
+        "family": "G106",
+        "marginal_paired_score_gain": 0.0005527138710021973,
+        "cumulative_oracle_score": 0.9541921615600586,
+        "oracle_frequency": 1026
+      },
+      {
+        "family": "G197",
+        "marginal_paired_score_gain": 0.0005272030830383301,
+        "cumulative_oracle_score": 0.9547193646430969,
+        "oracle_frequency": 461
+      }
+    ],
+    "baseline_score": null,
+    "compressed_oracle_score": 0.9547193646430969
+  },
+  "nodes": [
+    {
+      "opening": "G001",
+      "checkpoint": 144,
+      "samples": 3920,
+      "stay_score": 0.8872448801994324,
+      "oracle_score": 0.9987244606018066,
+      "oracle_improvement": 0.11147959530353546,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9145408272743225,
+          "improvement": 0.027295947074890137,
+          "mean_margin": 36184.30078125,
+          "oracle_frequency": 137
+        },
+        {
+          "family": "G001",
+          "score": 0.8872448801994324,
+          "improvement": 0.0,
+          "mean_margin": 33025.28515625,
+          "oracle_frequency": 85
+        },
+        {
+          "family": "G004",
+          "score": 0.8826530575752258,
+          "improvement": -0.004591822624206543,
+          "mean_margin": 33495.7890625,
+          "oracle_frequency": 235
+        },
+        {
+          "family": "G266",
+          "score": 0.863265335559845,
+          "improvement": -0.023979544639587402,
+          "mean_margin": 32769.46484375,
+          "oracle_frequency": 210
+        },
+        {
+          "family": "G002",
+          "score": 0.8609693646430969,
+          "improvement": -0.02627551555633545,
+          "mean_margin": 34569.8984375,
+          "oracle_frequency": 72
+        },
+        {
+          "family": "G008",
+          "score": 0.8311224579811096,
+          "improvement": -0.056122422218322754,
+          "mean_margin": 30295.673828125,
+          "oracle_frequency": 103
+        },
+        {
+          "family": "G011",
+          "score": 0.8285714387893677,
+          "improvement": -0.0586734414100647,
+          "mean_margin": 32132.037109375,
+          "oracle_frequency": 63
+        },
+        {
+          "family": "G010",
+          "score": 0.8229591846466064,
+          "improvement": -0.06428569555282593,
+          "mean_margin": 28270.29296875,
+          "oracle_frequency": 6
+        },
+        {
+          "family": "G267",
+          "score": 0.8020408153533936,
+          "improvement": -0.08520406484603882,
+          "mean_margin": 31889.1328125,
+          "oracle_frequency": 126
+        },
+        {
+          "family": "G006",
+          "score": 0.7979592084884644,
+          "improvement": -0.08928567171096802,
+          "mean_margin": 27071.8125,
+          "oracle_frequency": 12
+        }
+      ]
+    },
+    {
+      "opening": "G001",
+      "checkpoint": 168,
+      "samples": 3920,
+      "stay_score": 0.8872448801994324,
+      "oracle_score": 0.9979591965675354,
+      "oracle_improvement": 0.11071428656578064,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9221938848495483,
+          "improvement": 0.03494900465011597,
+          "mean_margin": 37040.2734375,
+          "oracle_frequency": 112
+        },
+        {
+          "family": "G002",
+          "score": 0.8923469185829163,
+          "improvement": 0.005102038383483887,
+          "mean_margin": 35977.54296875,
+          "oracle_frequency": 100
+        },
+        {
+          "family": "G001",
+          "score": 0.8872448801994324,
+          "improvement": 0.0,
+          "mean_margin": 33025.28515625,
+          "oracle_frequency": 44
+        },
+        {
+          "family": "G006",
+          "score": 0.8698979616165161,
+          "improvement": -0.01734691858291626,
+          "mean_margin": 31674.541015625,
+          "oracle_frequency": 10
+        },
+        {
+          "family": "G267",
+          "score": 0.8586734533309937,
+          "improvement": -0.02857142686843872,
+          "mean_margin": 34188.66015625,
+          "oracle_frequency": 102
+        },
+        {
+          "family": "G266",
+          "score": 0.8535714149475098,
+          "improvement": -0.03367346525192261,
+          "mean_margin": 32277.380859375,
+          "oracle_frequency": 184
+        },
+        {
+          "family": "G004",
+          "score": 0.8471938967704773,
+          "improvement": -0.04005098342895508,
+          "mean_margin": 31264.34375,
+          "oracle_frequency": 135
+        },
+        {
+          "family": "G003",
+          "score": 0.8415816426277161,
+          "improvement": -0.04566323757171631,
+          "mean_margin": 31844.767578125,
+          "oracle_frequency": 73
+        },
+        {
+          "family": "G011",
+          "score": 0.8385204076766968,
+          "improvement": -0.048724472522735596,
+          "mean_margin": 32263.033203125,
+          "oracle_frequency": 104
+        },
+        {
+          "family": "G008",
+          "score": 0.8364796042442322,
+          "improvement": -0.050765275955200195,
+          "mean_margin": 30418.541015625,
+          "oracle_frequency": 98
+        }
+      ]
+    },
+    {
+      "opening": "G001",
+      "checkpoint": 216,
+      "samples": 3920,
+      "stay_score": 0.8872448801994324,
+      "oracle_score": 0.9943877458572388,
+      "oracle_improvement": 0.1071428582072258,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9349489808082581,
+          "improvement": 0.047704100608825684,
+          "mean_margin": 37877.08203125,
+          "oracle_frequency": 215
+        },
+        {
+          "family": "G002",
+          "score": 0.9017857313156128,
+          "improvement": 0.01454085111618042,
+          "mean_margin": 36376.9609375,
+          "oracle_frequency": 98
+        },
+        {
+          "family": "G001",
+          "score": 0.8872448801994324,
+          "improvement": 0.0,
+          "mean_margin": 33025.28515625,
+          "oracle_frequency": 75
+        },
+        {
+          "family": "G011",
+          "score": 0.8798469305038452,
+          "improvement": -0.007397949695587158,
+          "mean_margin": 34123.77734375,
+          "oracle_frequency": 43
+        },
+        {
+          "family": "G006",
+          "score": 0.8724489808082581,
+          "improvement": -0.014795899391174316,
+          "mean_margin": 31757.693359375,
+          "oracle_frequency": 41
+        },
+        {
+          "family": "G267",
+          "score": 0.8622449040412903,
+          "improvement": -0.02499997615814209,
+          "mean_margin": 34363.015625,
+          "oracle_frequency": 118
+        },
+        {
+          "family": "G176",
+          "score": 0.8619897961616516,
+          "improvement": -0.02525508403778076,
+          "mean_margin": 30997.388671875,
+          "oracle_frequency": 34
+        },
+        {
+          "family": "G266",
+          "score": 0.8533163070678711,
+          "improvement": -0.03392857313156128,
+          "mean_margin": 32406.04296875,
+          "oracle_frequency": 194
+        },
+        {
+          "family": "G003",
+          "score": 0.8456632494926453,
+          "improvement": -0.04158163070678711,
+          "mean_margin": 31961.5078125,
+          "oracle_frequency": 67
+        },
+        {
+          "family": "G004",
+          "score": 0.843367338180542,
+          "improvement": -0.04387754201889038,
+          "mean_margin": 30976.626953125,
+          "oracle_frequency": 54
+        }
+      ]
+    },
+    {
+      "opening": "G210",
+      "checkpoint": 144,
+      "samples": 3920,
+      "stay_score": 0.7875000238418579,
+      "oracle_score": 0.9969387650489807,
+      "oracle_improvement": 0.2094387710094452,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.8872448801994324,
+          "improvement": 0.09974485635757446,
+          "mean_margin": 32818.8359375,
+          "oracle_frequency": 87
+        },
+        {
+          "family": "G001",
+          "score": 0.8543367385864258,
+          "improvement": 0.06683671474456787,
+          "mean_margin": 29883.78125,
+          "oracle_frequency": 37
+        },
+        {
+          "family": "G266",
+          "score": 0.8137755393981934,
+          "improvement": 0.02627551555633545,
+          "mean_margin": 29212.27734375,
+          "oracle_frequency": 115
+        },
+        {
+          "family": "G004",
+          "score": 0.8109694123268127,
+          "improvement": 0.023469388484954834,
+          "mean_margin": 27583.607421875,
+          "oracle_frequency": 111
+        },
+        {
+          "family": "G002",
+          "score": 0.8102040886878967,
+          "improvement": 0.02270406484603882,
+          "mean_margin": 30064.611328125,
+          "oracle_frequency": 39
+        },
+        {
+          "family": "G008",
+          "score": 0.8043367266654968,
+          "improvement": 0.016836702823638916,
+          "mean_margin": 27742.046875,
+          "oracle_frequency": 92
+        },
+        {
+          "family": "G011",
+          "score": 0.8025510311126709,
+          "improvement": 0.015051007270812988,
+          "mean_margin": 28264.873046875,
+          "oracle_frequency": 35
+        },
+        {
+          "family": "G210",
+          "score": 0.7875000238418579,
+          "improvement": 0.0,
+          "mean_margin": 25543.33203125,
+          "oracle_frequency": 117
+        },
+        {
+          "family": "G095",
+          "score": 0.7864795923233032,
+          "improvement": -0.0010204315185546875,
+          "mean_margin": 30170.75390625,
+          "oracle_frequency": 341
+        },
+        {
+          "family": "G010",
+          "score": 0.7821428775787354,
+          "improvement": -0.005357146263122559,
+          "mean_margin": 25013.330078125,
+          "oracle_frequency": 2
+        }
+      ]
+    },
+    {
+      "opening": "G210",
+      "checkpoint": 168,
+      "samples": 3920,
+      "stay_score": 0.7875000238418579,
+      "oracle_score": 0.9951530694961548,
+      "oracle_improvement": 0.20765306055545807,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.891581654548645,
+          "improvement": 0.10408163070678711,
+          "mean_margin": 33754.16015625,
+          "oracle_frequency": 79
+        },
+        {
+          "family": "G002",
+          "score": 0.8533163070678711,
+          "improvement": 0.06581628322601318,
+          "mean_margin": 31796.759765625,
+          "oracle_frequency": 40
+        },
+        {
+          "family": "G006",
+          "score": 0.8387755155563354,
+          "improvement": 0.05127549171447754,
+          "mean_margin": 28456.07421875,
+          "oracle_frequency": 2
+        },
+        {
+          "family": "G266",
+          "score": 0.8227040767669678,
+          "improvement": 0.03520405292510986,
+          "mean_margin": 29845.890625,
+          "oracle_frequency": 132
+        },
+        {
+          "family": "G001",
+          "score": 0.8173469305038452,
+          "improvement": 0.029846906661987305,
+          "mean_margin": 27891.310546875,
+          "oracle_frequency": 13
+        },
+        {
+          "family": "G004",
+          "score": 0.8163265585899353,
+          "improvement": 0.028826534748077393,
+          "mean_margin": 28863.43359375,
+          "oracle_frequency": 104
+        },
+        {
+          "family": "G267",
+          "score": 0.8109694123268127,
+          "improvement": 0.023469388484954834,
+          "mean_margin": 29479.115234375,
+          "oracle_frequency": 48
+        },
+        {
+          "family": "G008",
+          "score": 0.8043367266654968,
+          "improvement": 0.016836702823638916,
+          "mean_margin": 27343.90625,
+          "oracle_frequency": 90
+        },
+        {
+          "family": "G003",
+          "score": 0.7938775420188904,
+          "improvement": 0.006377518177032471,
+          "mean_margin": 27650.603515625,
+          "oracle_frequency": 35
+        },
+        {
+          "family": "G210",
+          "score": 0.7875000238418579,
+          "improvement": 0.0,
+          "mean_margin": 25543.33203125,
+          "oracle_frequency": 130
+        }
+      ]
+    },
+    {
+      "opening": "G210",
+      "checkpoint": 216,
+      "samples": 3920,
+      "stay_score": 0.7875000238418579,
+      "oracle_score": 0.9265305995941162,
+      "oracle_improvement": 0.1390306055545807,
+      "top_static_targets": [
+        {
+          "family": "G210",
+          "score": 0.7875000238418579,
+          "improvement": 0.0,
+          "mean_margin": 25543.33203125,
+          "oracle_frequency": 1022
+        },
+        {
+          "family": "G325",
+          "score": 0.730867326259613,
+          "improvement": -0.05663269758224487,
+          "mean_margin": 21936.92578125,
+          "oracle_frequency": 379
+        },
+        {
+          "family": "G262",
+          "score": 0.6660714149475098,
+          "improvement": -0.12142860889434814,
+          "mean_margin": 18099.498046875,
+          "oracle_frequency": 262
+        },
+        {
+          "family": "G197",
+          "score": 0.6474489569664001,
+          "improvement": -0.14005106687545776,
+          "mean_margin": 17012.4453125,
+          "oracle_frequency": 299
+        },
+        {
+          "family": "G038",
+          "score": 0.6464285850524902,
+          "improvement": -0.14107143878936768,
+          "mean_margin": 18970.1484375,
+          "oracle_frequency": 482
+        },
+        {
+          "family": "G352",
+          "score": 0.641581654548645,
+          "improvement": -0.1459183692932129,
+          "mean_margin": 17195.7578125,
+          "oracle_frequency": 99
+        },
+        {
+          "family": "G169",
+          "score": 0.6349489688873291,
+          "improvement": -0.1525510549545288,
+          "mean_margin": 16130.4580078125,
+          "oracle_frequency": 389
+        },
+        {
+          "family": "G297",
+          "score": 0.5739796161651611,
+          "improvement": -0.21352040767669678,
+          "mean_margin": 12633.0302734375,
+          "oracle_frequency": 40
+        },
+        {
+          "family": "G323",
+          "score": 0.5247448682785034,
+          "improvement": -0.2627551555633545,
+          "mean_margin": 9590.3095703125,
+          "oracle_frequency": 45
+        },
+        {
+          "family": "G009",
+          "score": 0.5219388008117676,
+          "improvement": -0.26556122303009033,
+          "mean_margin": 10595.150390625,
+          "oracle_frequency": 19
+        }
+      ]
+    },
+    {
+      "opening": "G275",
+      "checkpoint": 144,
+      "samples": 3920,
+      "stay_score": 0.8295918107032776,
+      "oracle_score": 0.953316330909729,
+      "oracle_improvement": 0.12372449040412903,
+      "top_static_targets": [
+        {
+          "family": "G114",
+          "score": 0.8344388008117676,
+          "improvement": 0.00484699010848999,
+          "mean_margin": 32269.28125,
+          "oracle_frequency": 452
+        },
+        {
+          "family": "G275",
+          "score": 0.8295918107032776,
+          "improvement": 0.0,
+          "mean_margin": 29114.0703125,
+          "oracle_frequency": 155
+        },
+        {
+          "family": "G157",
+          "score": 0.8239796161651611,
+          "improvement": -0.005612194538116455,
+          "mean_margin": 29816.1640625,
+          "oracle_frequency": 192
+        },
+        {
+          "family": "G047",
+          "score": 0.7948979735374451,
+          "improvement": -0.03469383716583252,
+          "mean_margin": 27712.482421875,
+          "oracle_frequency": 179
+        },
+        {
+          "family": "G373",
+          "score": 0.7711734771728516,
+          "improvement": -0.058418333530426025,
+          "mean_margin": 23993.53125,
+          "oracle_frequency": 20
+        },
+        {
+          "family": "G052",
+          "score": 0.7436224222183228,
+          "improvement": -0.08596938848495483,
+          "mean_margin": 23584.701171875,
+          "oracle_frequency": 313
+        },
+        {
+          "family": "G129",
+          "score": 0.7262755036354065,
+          "improvement": -0.1033163070678711,
+          "mean_margin": 24071.119140625,
+          "oracle_frequency": 51
+        },
+        {
+          "family": "G106",
+          "score": 0.7193877696990967,
+          "improvement": -0.11020404100418091,
+          "mean_margin": 22521.759765625,
+          "oracle_frequency": 168
+        },
+        {
+          "family": "G081",
+          "score": 0.7181122303009033,
+          "improvement": -0.11147958040237427,
+          "mean_margin": 21989.126953125,
+          "oracle_frequency": 146
+        },
+        {
+          "family": "G050",
+          "score": 0.7160714268684387,
+          "improvement": -0.11352038383483887,
+          "mean_margin": 23567.03515625,
+          "oracle_frequency": 78
+        }
+      ]
+    },
+    {
+      "opening": "G275",
+      "checkpoint": 168,
+      "samples": 3920,
+      "stay_score": 0.8295918107032776,
+      "oracle_score": 0.9362244606018066,
+      "oracle_improvement": 0.10663264989852905,
+      "top_static_targets": [
+        {
+          "family": "G275",
+          "score": 0.8295918107032776,
+          "improvement": 0.0,
+          "mean_margin": 29114.0703125,
+          "oracle_frequency": 241
+        },
+        {
+          "family": "G114",
+          "score": 0.829081654548645,
+          "improvement": -0.0005101561546325684,
+          "mean_margin": 30541.41015625,
+          "oracle_frequency": 673
+        },
+        {
+          "family": "G157",
+          "score": 0.8187500238418579,
+          "improvement": -0.010841786861419678,
+          "mean_margin": 28705.681640625,
+          "oracle_frequency": 328
+        },
+        {
+          "family": "G081",
+          "score": 0.7247449159622192,
+          "improvement": -0.10484689474105835,
+          "mean_margin": 22253.142578125,
+          "oracle_frequency": 261
+        },
+        {
+          "family": "G047",
+          "score": 0.7242347002029419,
+          "improvement": -0.1053571105003357,
+          "mean_margin": 23188.984375,
+          "oracle_frequency": 90
+        },
+        {
+          "family": "G302",
+          "score": 0.704081654548645,
+          "improvement": -0.12551015615463257,
+          "mean_margin": 19819.345703125,
+          "oracle_frequency": 209
+        },
+        {
+          "family": "G373",
+          "score": 0.6984694004058838,
+          "improvement": -0.1311224102973938,
+          "mean_margin": 18769.01171875,
+          "oracle_frequency": 23
+        },
+        {
+          "family": "G106",
+          "score": 0.6910714507102966,
+          "improvement": -0.13852035999298096,
+          "mean_margin": 20759.455078125,
+          "oracle_frequency": 191
+        },
+        {
+          "family": "G249",
+          "score": 0.6798469424247742,
+          "improvement": -0.14974486827850342,
+          "mean_margin": 18358.5859375,
+          "oracle_frequency": 56
+        },
+        {
+          "family": "G291",
+          "score": 0.6688775420188904,
+          "improvement": -0.1607142686843872,
+          "mean_margin": 16987.552734375,
+          "oracle_frequency": 14
+        }
+      ]
+    },
+    {
+      "opening": "G275",
+      "checkpoint": 216,
+      "samples": 3920,
+      "stay_score": 0.8295918107032776,
+      "oracle_score": 0.9229592084884644,
+      "oracle_improvement": 0.09336734563112259,
+      "top_static_targets": [
+        {
+          "family": "G275",
+          "score": 0.8295918107032776,
+          "improvement": 0.0,
+          "mean_margin": 29114.0703125,
+          "oracle_frequency": 255
+        },
+        {
+          "family": "G114",
+          "score": 0.8145408034324646,
+          "improvement": -0.015051007270812988,
+          "mean_margin": 30163.578125,
+          "oracle_frequency": 605
+        },
+        {
+          "family": "G157",
+          "score": 0.8061224222183228,
+          "improvement": -0.023469388484954834,
+          "mean_margin": 27185.208984375,
+          "oracle_frequency": 162
+        },
+        {
+          "family": "G047",
+          "score": 0.7852040529251099,
+          "improvement": -0.044387757778167725,
+          "mean_margin": 27258.62109375,
+          "oracle_frequency": 109
+        },
+        {
+          "family": "G029",
+          "score": 0.7405612468719482,
+          "improvement": -0.08903056383132935,
+          "mean_margin": 24910.173828125,
+          "oracle_frequency": 112
+        },
+        {
+          "family": "G007",
+          "score": 0.7387754917144775,
+          "improvement": -0.09081631898880005,
+          "mean_margin": 23475.626953125,
+          "oracle_frequency": 69
+        },
+        {
+          "family": "G195",
+          "score": 0.7209183573722839,
+          "improvement": -0.10867345333099365,
+          "mean_margin": 19662.7890625,
+          "oracle_frequency": 110
+        },
+        {
+          "family": "G322",
+          "score": 0.7096938490867615,
+          "improvement": -0.11989796161651611,
+          "mean_margin": 21322.666015625,
+          "oracle_frequency": 66
+        },
+        {
+          "family": "G302",
+          "score": 0.704081654548645,
+          "improvement": -0.12551015615463257,
+          "mean_margin": 19818.57421875,
+          "oracle_frequency": 276
+        },
+        {
+          "family": "G042",
+          "score": 0.7035714387893677,
+          "improvement": -0.1260203719139099,
+          "mean_margin": 21437.228515625,
+          "oracle_frequency": 110
+        }
+      ]
+    },
+    {
+      "opening": "G379",
+      "checkpoint": 144,
+      "samples": 3920,
+      "stay_score": 0.6844387650489807,
+      "oracle_score": 0.9464285969734192,
+      "oracle_improvement": 0.2619898021221161,
+      "top_static_targets": [
+        {
+          "family": "G275",
+          "score": 0.8010203838348389,
+          "improvement": 0.11658161878585815,
+          "mean_margin": 25880.490234375,
+          "oracle_frequency": 135
+        },
+        {
+          "family": "G302",
+          "score": 0.6979591846466064,
+          "improvement": 0.013520419597625732,
+          "mean_margin": 18779.208984375,
+          "oracle_frequency": 41
+        },
+        {
+          "family": "G114",
+          "score": 0.6961734890937805,
+          "improvement": 0.011734724044799805,
+          "mean_margin": 22348.2578125,
+          "oracle_frequency": 252
+        },
+        {
+          "family": "G157",
+          "score": 0.6862244606018066,
+          "improvement": 0.0017856955528259277,
+          "mean_margin": 20582.0859375,
+          "oracle_frequency": 112
+        },
+        {
+          "family": "G379",
+          "score": 0.6844387650489807,
+          "improvement": 0.0,
+          "mean_margin": 17588.16015625,
+          "oracle_frequency": 43
+        },
+        {
+          "family": "G373",
+          "score": 0.684183657169342,
+          "improvement": -0.0002551078796386719,
+          "mean_margin": 16738.6640625,
+          "oracle_frequency": 63
+        },
+        {
+          "family": "G291",
+          "score": 0.6744897961616516,
+          "improvement": -0.009948968887329102,
+          "mean_margin": 18287.169921875,
+          "oracle_frequency": 44
+        },
+        {
+          "family": "G103",
+          "score": 0.6678571701049805,
+          "improvement": -0.016581594944000244,
+          "mean_margin": 21750.46484375,
+          "oracle_frequency": 94
+        },
+        {
+          "family": "G050",
+          "score": 0.659949004650116,
+          "improvement": -0.024489760398864746,
+          "mean_margin": 20761.111328125,
+          "oracle_frequency": 93
+        },
+        {
+          "family": "G129",
+          "score": 0.6377550959587097,
+          "improvement": -0.046683669090270996,
+          "mean_margin": 17386.95703125,
+          "oracle_frequency": 52
+        }
+      ]
+    },
+    {
+      "opening": "G379",
+      "checkpoint": 168,
+      "samples": 3920,
+      "stay_score": 0.6844387650489807,
+      "oracle_score": 0.9071428775787354,
+      "oracle_improvement": 0.22270408272743225,
+      "top_static_targets": [
+        {
+          "family": "G275",
+          "score": 0.7989795804023743,
+          "improvement": 0.11454081535339355,
+          "mean_margin": 25465.89453125,
+          "oracle_frequency": 263
+        },
+        {
+          "family": "G114",
+          "score": 0.7104591727256775,
+          "improvement": 0.026020407676696777,
+          "mean_margin": 22228.5625,
+          "oracle_frequency": 462
+        },
+        {
+          "family": "G302",
+          "score": 0.699999988079071,
+          "improvement": 0.015561223030090332,
+          "mean_margin": 18730.947265625,
+          "oracle_frequency": 287
+        },
+        {
+          "family": "G157",
+          "score": 0.6872448921203613,
+          "improvement": 0.0028061270713806152,
+          "mean_margin": 20468.142578125,
+          "oracle_frequency": 219
+        },
+        {
+          "family": "G379",
+          "score": 0.6844387650489807,
+          "improvement": 0.0,
+          "mean_margin": 17588.16015625,
+          "oracle_frequency": 211
+        },
+        {
+          "family": "G291",
+          "score": 0.6395407915115356,
+          "improvement": -0.04489797353744507,
+          "mean_margin": 15926.1083984375,
+          "oracle_frequency": 54
+        },
+        {
+          "family": "G373",
+          "score": 0.6239795684814453,
+          "improvement": -0.0604591965675354,
+          "mean_margin": 13593.0498046875,
+          "oracle_frequency": 40
+        },
+        {
+          "family": "G047",
+          "score": 0.6071428656578064,
+          "improvement": -0.07729589939117432,
+          "mean_margin": 15557.74609375,
+          "oracle_frequency": 30
+        },
+        {
+          "family": "G142",
+          "score": 0.6071428656578064,
+          "improvement": -0.07729589939117432,
+          "mean_margin": 14027.1689453125,
+          "oracle_frequency": 107
+        },
+        {
+          "family": "G106",
+          "score": 0.6015306115150452,
+          "improvement": -0.08290815353393555,
+          "mean_margin": 15612.55859375,
+          "oracle_frequency": 214
+        }
+      ]
+    },
+    {
+      "opening": "G379",
+      "checkpoint": 216,
+      "samples": 3920,
+      "stay_score": 0.6844387650489807,
+      "oracle_score": 0.890816330909729,
+      "oracle_improvement": 0.2063775509595871,
+      "top_static_targets": [
+        {
+          "family": "G275",
+          "score": 0.8010203838348389,
+          "improvement": 0.11658161878585815,
+          "mean_margin": 25746.22265625,
+          "oracle_frequency": 369
+        },
+        {
+          "family": "G114",
+          "score": 0.7091836929321289,
+          "improvement": 0.024744927883148193,
+          "mean_margin": 23042.177734375,
+          "oracle_frequency": 430
+        },
+        {
+          "family": "G302",
+          "score": 0.699234664440155,
+          "improvement": 0.014795899391174316,
+          "mean_margin": 18920.7421875,
+          "oracle_frequency": 339
+        },
+        {
+          "family": "G157",
+          "score": 0.6926020383834839,
+          "improvement": 0.008163273334503174,
+          "mean_margin": 20184.0390625,
+          "oracle_frequency": 136
+        },
+        {
+          "family": "G379",
+          "score": 0.6844387650489807,
+          "improvement": 0.0,
+          "mean_margin": 17588.16015625,
+          "oracle_frequency": 213
+        },
+        {
+          "family": "G047",
+          "score": 0.6775510311126709,
+          "improvement": -0.0068877339363098145,
+          "mean_margin": 19847.064453125,
+          "oracle_frequency": 37
+        },
+        {
+          "family": "G322",
+          "score": 0.6772959232330322,
+          "improvement": -0.007142841815948486,
+          "mean_margin": 18289.29296875,
+          "oracle_frequency": 54
+        },
+        {
+          "family": "G007",
+          "score": 0.6548469662666321,
+          "improvement": -0.029591798782348633,
+          "mean_margin": 16701.408203125,
+          "oracle_frequency": 139
+        },
+        {
+          "family": "G291",
+          "score": 0.6482142806053162,
+          "improvement": -0.03622448444366455,
+          "mean_margin": 16188.3544921875,
+          "oracle_frequency": 26
+        },
+        {
+          "family": "G029",
+          "score": 0.637499988079071,
+          "improvement": -0.04693877696990967,
+          "mean_margin": 17724.12890625,
+          "oracle_frequency": 84
+        }
+      ]
+    },
+    {
+      "opening": "G411",
+      "checkpoint": 144,
+      "samples": 3920,
+      "stay_score": 0.6336734890937805,
+      "oracle_score": 0.9989795684814453,
+      "oracle_improvement": 0.3653061091899872,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9285714030265808,
+          "improvement": 0.2948979139328003,
+          "mean_margin": 42385.30859375,
+          "oracle_frequency": 127
+        },
+        {
+          "family": "G001",
+          "score": 0.8974489569664001,
+          "improvement": 0.26377546787261963,
+          "mean_margin": 38530.34375,
+          "oracle_frequency": 86
+        },
+        {
+          "family": "G002",
+          "score": 0.894132673740387,
+          "improvement": 0.26045918464660645,
+          "mean_margin": 41235.78125,
+          "oracle_frequency": 87
+        },
+        {
+          "family": "G004",
+          "score": 0.887499988079071,
+          "improvement": 0.2538264989852905,
+          "mean_margin": 38611.25,
+          "oracle_frequency": 185
+        },
+        {
+          "family": "G266",
+          "score": 0.871683657169342,
+          "improvement": 0.23801016807556152,
+          "mean_margin": 38215.8046875,
+          "oracle_frequency": 136
+        },
+        {
+          "family": "G011",
+          "score": 0.8568877577781677,
+          "improvement": 0.2232142686843872,
+          "mean_margin": 38522.72265625,
+          "oracle_frequency": 74
+        },
+        {
+          "family": "G010",
+          "score": 0.8517857193946838,
+          "improvement": 0.21811223030090332,
+          "mean_margin": 33787.4453125,
+          "oracle_frequency": 4
+        },
+        {
+          "family": "G267",
+          "score": 0.8502551317214966,
+          "improvement": 0.21658164262771606,
+          "mean_margin": 38961.0859375,
+          "oracle_frequency": 99
+        },
+        {
+          "family": "G008",
+          "score": 0.8492347002029419,
+          "improvement": 0.21556121110916138,
+          "mean_margin": 35037.96875,
+          "oracle_frequency": 78
+        },
+        {
+          "family": "G003",
+          "score": 0.8303571343421936,
+          "improvement": 0.19668364524841309,
+          "mean_margin": 35917.51953125,
+          "oracle_frequency": 43
+        }
+      ]
+    },
+    {
+      "opening": "G411",
+      "checkpoint": 168,
+      "samples": 3920,
+      "stay_score": 0.6336734890937805,
+      "oracle_score": 0.9946428537368774,
+      "oracle_improvement": 0.3609693944454193,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9135203957557678,
+          "improvement": 0.2798469066619873,
+          "mean_margin": 41661.55078125,
+          "oracle_frequency": 127
+        },
+        {
+          "family": "G002",
+          "score": 0.8946428298950195,
+          "improvement": 0.260969340801239,
+          "mean_margin": 40432.265625,
+          "oracle_frequency": 88
+        },
+        {
+          "family": "G266",
+          "score": 0.8681122660636902,
+          "improvement": 0.23443877696990967,
+          "mean_margin": 36688.48828125,
+          "oracle_frequency": 147
+        },
+        {
+          "family": "G001",
+          "score": 0.8594387769699097,
+          "improvement": 0.22576528787612915,
+          "mean_margin": 35677.51953125,
+          "oracle_frequency": 33
+        },
+        {
+          "family": "G267",
+          "score": 0.859183669090271,
+          "improvement": 0.22551017999649048,
+          "mean_margin": 38245.234375,
+          "oracle_frequency": 70
+        },
+        {
+          "family": "G004",
+          "score": 0.8540816307067871,
+          "improvement": 0.2204081416130066,
+          "mean_margin": 35731.76171875,
+          "oracle_frequency": 83
+        },
+        {
+          "family": "G113",
+          "score": 0.8336734771728516,
+          "improvement": 0.19999998807907104,
+          "mean_margin": 36661.91015625,
+          "oracle_frequency": 236
+        },
+        {
+          "family": "G003",
+          "score": 0.8214285969734192,
+          "improvement": 0.18775510787963867,
+          "mean_margin": 34973.69140625,
+          "oracle_frequency": 39
+        },
+        {
+          "family": "G006",
+          "score": 0.8198979496955872,
+          "improvement": 0.18622446060180664,
+          "mean_margin": 33426.33203125,
+          "oracle_frequency": 7
+        },
+        {
+          "family": "G008",
+          "score": 0.811734676361084,
+          "improvement": 0.17806118726730347,
+          "mean_margin": 32867.921875,
+          "oracle_frequency": 66
+        }
+      ]
+    },
+    {
+      "opening": "G411",
+      "checkpoint": 216,
+      "samples": 3920,
+      "stay_score": 0.6336734890937805,
+      "oracle_score": 0.9880102276802063,
+      "oracle_improvement": 0.3543367385864258,
+      "top_static_targets": [
+        {
+          "family": "G009",
+          "score": 0.9142857193946838,
+          "improvement": 0.2806122303009033,
+          "mean_margin": 41378.75,
+          "oracle_frequency": 311
+        },
+        {
+          "family": "G002",
+          "score": 0.8892857432365417,
+          "improvement": 0.25561225414276123,
+          "mean_margin": 39770.18359375,
+          "oracle_frequency": 124
+        },
+        {
+          "family": "G266",
+          "score": 0.8617346882820129,
+          "improvement": 0.22806119918823242,
+          "mean_margin": 36218.328125,
+          "oracle_frequency": 222
+        },
+        {
+          "family": "G267",
+          "score": 0.8505101799964905,
+          "improvement": 0.21683669090270996,
+          "mean_margin": 37455.87890625,
+          "oracle_frequency": 131
+        },
+        {
+          "family": "G011",
+          "score": 0.8413265347480774,
+          "improvement": 0.20765304565429688,
+          "mean_margin": 36338.3203125,
+          "oracle_frequency": 25
+        },
+        {
+          "family": "G176",
+          "score": 0.8306122422218323,
+          "improvement": 0.19693875312805176,
+          "mean_margin": 33350.609375,
+          "oracle_frequency": 26
+        },
+        {
+          "family": "G004",
+          "score": 0.8288265466690063,
+          "improvement": 0.19515305757522583,
+          "mean_margin": 33673.84375,
+          "oracle_frequency": 40
+        },
+        {
+          "family": "G001",
+          "score": 0.824234664440155,
+          "improvement": 0.1905611753463745,
+          "mean_margin": 33218.28125,
+          "oracle_frequency": 36
+        },
+        {
+          "family": "G005",
+          "score": 0.8232142925262451,
+          "improvement": 0.1895408034324646,
+          "mean_margin": 32732.9140625,
+          "oracle_frequency": 35
+        },
+        {
+          "family": "G003",
+          "score": 0.8163265585899353,
+          "improvement": 0.18265306949615479,
+          "mean_margin": 34388.2734375,
+          "oracle_frequency": 55
+        }
+      ]
+    }
+  ],
+  "route_oracle_frequency": [
+    {
+      "family": "G087",
+      "oracle_frequency": 4089,
+      "global_mean_score": 0.5683843493461609
+    },
+    {
+      "family": "G114",
+      "oracle_frequency": 2880,
+      "global_mean_score": 0.4172108769416809
+    },
+    {
+      "family": "G113",
+      "oracle_frequency": 2180,
+      "global_mean_score": 0.581462562084198
+    },
+    {
+      "family": "G019",
+      "oracle_frequency": 2138,
+      "global_mean_score": 0.2975510060787201
+    },
+    {
+      "family": "G095",
+      "oracle_frequency": 1911,
+      "global_mean_score": 0.500799298286438
+    },
+    {
+      "family": "G024",
+      "oracle_frequency": 1551,
+      "global_mean_score": 0.3562585115432739
+    },
+    {
+      "family": "G048",
+      "oracle_frequency": 1547,
+      "global_mean_score": 0.31074830889701843
+    },
+    {
+      "family": "G210",
+      "oracle_frequency": 1420,
+      "global_mean_score": 0.4396173357963562
+    },
+    {
+      "family": "G275",
+      "oracle_frequency": 1418,
+      "global_mean_score": 0.45204082131385803
+    },
+    {
+      "family": "G266",
+      "oracle_frequency": 1376,
+      "global_mean_score": 0.6276190280914307
+    },
+    {
+      "family": "G018",
+      "oracle_frequency": 1364,
+      "global_mean_score": 0.4711224436759949
+    },
+    {
+      "family": "G062",
+      "oracle_frequency": 1309,
+      "global_mean_score": 0.5075510144233704
+    },
+    {
+      "family": "G009",
+      "oracle_frequency": 1224,
+      "global_mean_score": 0.6411734819412231
+    },
+    {
+      "family": "G302",
+      "oracle_frequency": 1201,
+      "global_mean_score": 0.4035033881664276
+    },
+    {
+      "family": "G038",
+      "oracle_frequency": 1192,
+      "global_mean_score": 0.41559523344039917
+    },
+    {
+      "family": "G157",
+      "oracle_frequency": 1151,
+      "global_mean_score": 0.42674320936203003
+    },
+    {
+      "family": "G185",
+      "oracle_frequency": 1141,
+      "global_mean_score": 0.34292516112327576
+    },
+    {
+      "family": "G106",
+      "oracle_frequency": 1026,
+      "global_mean_score": 0.3969387710094452
+    },
+    {
+      "family": "G004",
+      "oracle_frequency": 973,
+      "global_mean_score": 0.6027891039848328
+    },
+    {
+      "family": "G267",
+      "oracle_frequency": 952,
+      "global_mean_score": 0.586326539516449
+    },
+    {
+      "family": "G126",
+      "oracle_frequency": 945,
+      "global_mean_score": 0.4623129367828369
+    },
+    {
+      "family": "G080",
+      "oracle_frequency": 905,
+      "global_mean_score": 0.5202211141586304
+    },
+    {
+      "family": "G169",
+      "oracle_frequency": 892,
+      "global_mean_score": 0.41356292366981506
+    },
+    {
+      "family": "G030",
+      "oracle_frequency": 891,
+      "global_mean_score": 0.30341836810112
+    },
+    {
+      "family": "G008",
+      "oracle_frequency": 800,
+      "global_mean_score": 0.5569897890090942
+    },
+    {
+      "family": "G081",
+      "oracle_frequency": 756,
+      "global_mean_score": 0.3679421842098236
+    },
+    {
+      "family": "G034",
+      "oracle_frequency": 729,
+      "global_mean_score": 0.4491156339645386
+    },
+    {
+      "family": "G195",
+      "oracle_frequency": 713,
+      "global_mean_score": 0.33312925696372986
+    },
+    {
+      "family": "G262",
+      "oracle_frequency": 679,
+      "global_mean_score": 0.4432823061943054
+    },
+    {
+      "family": "G046",
+      "oracle_frequency": 674,
+      "global_mean_score": 0.3355952501296997
+    },
+    {
+      "family": "G002",
+      "oracle_frequency": 655,
+      "global_mean_score": 0.6151870489120483
+    },
+    {
+      "family": "G270",
+      "oracle_frequency": 611,
+      "global_mean_score": 0.4162755012512207
+    },
+    {
+      "family": "G325",
+      "oracle_frequency": 607,
+      "global_mean_score": 0.43824830651283264
+    },
+    {
+      "family": "G011",
+      "oracle_frequency": 605,
+      "global_mean_score": 0.6250340342521667
+    },
+    {
+      "family": "G052",
+      "oracle_frequency": 549,
+      "global_mean_score": 0.26814624667167664
+    },
+    {
+      "family": "G047",
+      "oracle_frequency": 540,
+      "global_mean_score": 0.3945068120956421
+    },
+    {
+      "family": "G379",
+      "oracle_frequency": 538,
+      "global_mean_score": 0.3613945543766022
+    },
+    {
+      "family": "G123",
+      "oracle_frequency": 519,
+      "global_mean_score": 0.4095578193664551
+    },
+    {
+      "family": "G029",
+      "oracle_frequency": 518,
+      "global_mean_score": 0.3392006754875183
+    },
+    {
+      "family": "G163",
+      "oracle_frequency": 503,
+      "global_mean_score": 0.4303061366081238
+    },
+    {
+      "family": "G051",
+      "oracle_frequency": 490,
+      "global_mean_score": 0.3643367290496826
+    },
+    {
+      "family": "G104",
+      "oracle_frequency": 483,
+      "global_mean_score": 0.24132652580738068
+    },
+    {
+      "family": "G026",
+      "oracle_frequency": 472,
+      "global_mean_score": 0.31027209758758545
+    },
+    {
+      "family": "G197",
+      "oracle_frequency": 461,
+      "global_mean_score": 0.37950679659843445
+    },
+    {
+      "family": "G176",
+      "oracle_frequency": 445,
+      "global_mean_score": 0.5504761934280396
+    },
+    {
+      "family": "G003",
+      "oracle_frequency": 438,
+      "global_mean_score": 0.569506824016571
+    },
+    {
+      "family": "G001",
+      "oracle_frequency": 431,
+      "global_mean_score": 0.6143707633018494
+    },
+    {
+      "family": "G042",
+      "oracle_frequency": 431,
+      "global_mean_score": 0.3273809552192688
+    },
+    {
+      "family": "G319",
+      "oracle_frequency": 417,
+      "global_mean_score": 0.46870747208595276
+    },
+    {
+      "family": "G167",
+      "oracle_frequency": 387,
+      "global_mean_score": 0.3377210795879364
+    },
+    {
+      "family": "G316",
+      "oracle_frequency": 363,
+      "global_mean_score": 0.35154762864112854
+    },
+    {
+      "family": "G007",
+      "oracle_frequency": 352,
+      "global_mean_score": 0.35256803035736084
+    },
+    {
+      "family": "G322",
+      "oracle_frequency": 305,
+      "global_mean_score": 0.3719217777252197
+    },
+    {
+      "family": "G142",
+      "oracle_frequency": 287,
+      "global_mean_score": 0.33743196725845337
+    },
+    {
+      "family": "G050",
+      "oracle_frequency": 269,
+      "global_mean_score": 0.3670068085193634
+    },
+    {
+      "family": "G289",
+      "oracle_frequency": 269,
+      "global_mean_score": 0.24899660050868988
+    },
+    {
+      "family": "G335",
+      "oracle_frequency": 238,
+      "global_mean_score": 0.3816496729850769
+    },
+    {
+      "family": "G085",
+      "oracle_frequency": 237,
+      "global_mean_score": 0.32802721858024597
+    },
+    {
+      "family": "G012",
+      "oracle_frequency": 230,
+      "global_mean_score": 0.24986395239830017
+    },
+    {
+      "family": "G103",
+      "oracle_frequency": 229,
+      "global_mean_score": 0.25003400444984436
+    },
+    {
+      "family": "G239",
+      "oracle_frequency": 224,
+      "global_mean_score": 0.3253231346607208
+    },
+    {
+      "family": "G196",
+      "oracle_frequency": 217,
+      "global_mean_score": 0.5322533845901489
+    },
+    {
+      "family": "G219",
+      "oracle_frequency": 217,
+      "global_mean_score": 0.4797278940677643
+    },
+    {
+      "family": "G352",
+      "oracle_frequency": 215,
+      "global_mean_score": 0.3987414836883545
+    },
+    {
+      "family": "G249",
+      "oracle_frequency": 195,
+      "global_mean_score": 0.3028061091899872
+    },
+    {
+      "family": "G373",
+      "oracle_frequency": 190,
+      "global_mean_score": 0.35294216871261597
+    },
+    {
+      "family": "G069",
+      "oracle_frequency": 158,
+      "global_mean_score": 0.22795918583869934
+    },
+    {
+      "family": "G226",
+      "oracle_frequency": 157,
+      "global_mean_score": 0.292789101600647
+    },
+    {
+      "family": "G297",
+      "oracle_frequency": 156,
+      "global_mean_score": 0.4399489760398865
+    },
+    {
+      "family": "G291",
+      "oracle_frequency": 155,
+      "global_mean_score": 0.36431974172592163
+    },
+    {
+      "family": "G268",
+      "oracle_frequency": 152,
+      "global_mean_score": 0.3432823121547699
+    },
+    {
+      "family": "G323",
+      "oracle_frequency": 149,
+      "global_mean_score": 0.36438775062561035
+    },
+    {
+      "family": "G057",
+      "oracle_frequency": 140,
+      "global_mean_score": 0.32280611991882324
+    },
+    {
+      "family": "G311",
+      "oracle_frequency": 138,
+      "global_mean_score": 0.4541836678981781
+    },
+    {
+      "family": "G168",
+      "oracle_frequency": 138,
+      "global_mean_score": 0.2713095247745514
+    },
+    {
+      "family": "G006",
+      "oracle_frequency": 122,
+      "global_mean_score": 0.587687075138092
+    },
+    {
+      "family": "G013",
+      "oracle_frequency": 117,
+      "global_mean_score": 0.4181632697582245
+    },
+    {
+      "family": "G016",
+      "oracle_frequency": 113,
+      "global_mean_score": 0.5306462645530701
+    },
+    {
+      "family": "G005",
+      "oracle_frequency": 113,
+      "global_mean_score": 0.529115617275238
+    },
+    {
+      "family": "G411",
+      "oracle_frequency": 110,
+      "global_mean_score": 0.40236395597457886
+    },
+    {
+      "family": "G396",
+      "oracle_frequency": 110,
+      "global_mean_score": 0.30590134859085083
+    },
+    {
+      "family": "G171",
+      "oracle_frequency": 109,
+      "global_mean_score": 0.2660714387893677
+    },
+    {
+      "family": "G015",
+      "oracle_frequency": 108,
+      "global_mean_score": 0.44465136528015137
+    },
+    {
+      "family": "G372",
+      "oracle_frequency": 107,
+      "global_mean_score": 0.32889455556869507
+    },
+    {
+      "family": "G129",
+      "oracle_frequency": 104,
+      "global_mean_score": 0.2540816366672516
+    },
+    {
+      "family": "G033",
+      "oracle_frequency": 99,
+      "global_mean_score": 0.31738096475601196
+    },
+    {
+      "family": "G014",
+      "oracle_frequency": 95,
+      "global_mean_score": 0.3149319589138031
+    },
+    {
+      "family": "G207",
+      "oracle_frequency": 89,
+      "global_mean_score": 0.4869047701358795
+    },
+    {
+      "family": "G201",
+      "oracle_frequency": 85,
+      "global_mean_score": 0.39539116621017456
+    },
+    {
+      "family": "G321",
+      "oracle_frequency": 85,
+      "global_mean_score": 0.3108503520488739
+    },
+    {
+      "family": "G204",
+      "oracle_frequency": 84,
+      "global_mean_score": 0.2931462526321411
+    },
+    {
+      "family": "G377",
+      "oracle_frequency": 83,
+      "global_mean_score": 0.46290814876556396
+    },
+    {
+      "family": "G354",
+      "oracle_frequency": 81,
+      "global_mean_score": 0.3954166769981384
+    },
+    {
+      "family": "G149",
+      "oracle_frequency": 81,
+      "global_mean_score": 0.2970068156719208
+    },
+    {
+      "family": "G341",
+      "oracle_frequency": 78,
+      "global_mean_score": 0.33540815114974976
+    },
+    {
+      "family": "G365",
+      "oracle_frequency": 73,
+      "global_mean_score": 0.43818026781082153
+    },
+    {
+      "family": "G309",
+      "oracle_frequency": 72,
+      "global_mean_score": 0.4423639476299286
+    },
+    {
+      "family": "G097",
+      "oracle_frequency": 60,
+      "global_mean_score": 0.189693883061409
+    },
+    {
+      "family": "G336",
+      "oracle_frequency": 58,
+      "global_mean_score": 0.3363095223903656
+    },
+    {
+      "family": "G027",
+      "oracle_frequency": 52,
+      "global_mean_score": 0.2966666519641876
+    },
+    {
+      "family": "G164",
+      "oracle_frequency": 52,
+      "global_mean_score": 0.29420068860054016
+    },
+    {
+      "family": "G189",
+      "oracle_frequency": 52,
+      "global_mean_score": 0.2496938705444336
+    },
+    {
+      "family": "G010",
+      "oracle_frequency": 50,
+      "global_mean_score": 0.5757483243942261
+    },
+    {
+      "family": "G310",
+      "oracle_frequency": 49,
+      "global_mean_score": 0.27542516589164734
+    },
+    {
+      "family": "G397",
+      "oracle_frequency": 47,
+      "global_mean_score": 0.3080442249774933
+    },
+    {
+      "family": "G209",
+      "oracle_frequency": 45,
+      "global_mean_score": 0.28020408749580383
+    },
+    {
+      "family": "G223",
+      "oracle_frequency": 42,
+      "global_mean_score": 0.394328236579895
+    },
+    {
+      "family": "G269",
+      "oracle_frequency": 42,
+      "global_mean_score": 0.3012755215167999
+    },
+    {
+      "family": "G246",
+      "oracle_frequency": 42,
+      "global_mean_score": 0.20374149084091187
+    },
+    {
+      "family": "G369",
+      "oracle_frequency": 36,
+      "global_mean_score": 0.3343367278575897
+    },
+    {
+      "family": "G040",
+      "oracle_frequency": 36,
+      "global_mean_score": 0.24955782294273376
+    },
+    {
+      "family": "G349",
+      "oracle_frequency": 35,
+      "global_mean_score": 0.27496597170829773
+    },
+    {
+      "family": "G083",
+      "oracle_frequency": 26,
+      "global_mean_score": 0.2487500011920929
+    },
+    {
+      "family": "G300",
+      "oracle_frequency": 25,
+      "global_mean_score": 0.14751701056957245
+    },
+    {
+      "family": "G368",
+      "oracle_frequency": 22,
+      "global_mean_score": 0.4048469364643097
+    },
+    {
+      "family": "G079",
+      "oracle_frequency": 22,
+      "global_mean_score": 0.29766157269477844
+    },
+    {
+      "family": "G263",
+      "oracle_frequency": 22,
+      "global_mean_score": 0.2466326504945755
+    },
+    {
+      "family": "G274",
+      "oracle_frequency": 19,
+      "global_mean_score": 0.2360714226961136
+    },
+    {
+      "family": "G277",
+      "oracle_frequency": 18,
+      "global_mean_score": 0.29829931259155273
+    },
+    {
+      "family": "G257",
+      "oracle_frequency": 17,
+      "global_mean_score": 0.19702380895614624
+    },
+    {
+      "family": "G288",
+      "oracle_frequency": 15,
+      "global_mean_score": 0.2740476131439209
+    },
+    {
+      "family": "G318",
+      "oracle_frequency": 15,
+      "global_mean_score": 0.24637755751609802
+    },
+    {
+      "family": "G118",
+      "oracle_frequency": 15,
+      "global_mean_score": 0.21353740990161896
+    },
+    {
+      "family": "G082",
+      "oracle_frequency": 14,
+      "global_mean_score": 0.2858673334121704
+    },
+    {
+      "family": "G329",
+      "oracle_frequency": 13,
+      "global_mean_score": 0.4467346966266632
+    },
+    {
+      "family": "G272",
+      "oracle_frequency": 13,
+      "global_mean_score": 0.19244897365570068
+    },
+    {
+      "family": "G179",
+      "oracle_frequency": 12,
+      "global_mean_score": 0.36181122064590454
+    },
+    {
+      "family": "G403",
+      "oracle_frequency": 12,
+      "global_mean_score": 0.3556377589702606
+    },
+    {
+      "family": "G125",
+      "oracle_frequency": 12,
+      "global_mean_score": 0.15414966642856598
+    },
+    {
+      "family": "G344",
+      "oracle_frequency": 10,
+      "global_mean_score": 0.21457482874393463
+    },
+    {
+      "family": "G155",
+      "oracle_frequency": 9,
+      "global_mean_score": 0.1976020336151123
+    },
+    {
+      "family": "G032",
+      "oracle_frequency": 9,
+      "global_mean_score": 0.19656462967395782
+    },
+    {
+      "family": "G312",
+      "oracle_frequency": 8,
+      "global_mean_score": 0.22653061151504517
+    },
+    {
+      "family": "G053",
+      "oracle_frequency": 8,
+      "global_mean_score": 0.15122449398040771
+    },
+    {
+      "family": "G073",
+      "oracle_frequency": 8,
+      "global_mean_score": 0.1488095223903656
+    },
+    {
+      "family": "G094",
+      "oracle_frequency": 8,
+      "global_mean_score": 0.14386054873466492
+    },
+    {
+      "family": "G101",
+      "oracle_frequency": 7,
+      "global_mean_score": 0.3045237958431244
+    },
+    {
+      "family": "G089",
+      "oracle_frequency": 7,
+      "global_mean_score": 0.1792687028646469
+    },
+    {
+      "family": "G049",
+      "oracle_frequency": 7,
+      "global_mean_score": 0.17821428179740906
+    },
+    {
+      "family": "G217",
+      "oracle_frequency": 7,
+      "global_mean_score": 0.10294217616319656
+    },
+    {
+      "family": "G076",
+      "oracle_frequency": 6,
+      "global_mean_score": 0.22096939384937286
+    },
+    {
+      "family": "G092",
+      "oracle_frequency": 6,
+      "global_mean_score": 0.2087925225496292
+    },
+    {
+      "family": "G387",
+      "oracle_frequency": 6,
+      "global_mean_score": 0.17972789704799652
+    },
+    {
+      "family": "G190",
+      "oracle_frequency": 5,
+      "global_mean_score": 0.28630951046943665
+    },
+    {
+      "family": "G283",
+      "oracle_frequency": 5,
+      "global_mean_score": 0.26336735486984253
+    },
+    {
+      "family": "G378",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.25130951404571533
+    },
+    {
+      "family": "G061",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.21603740751743317
+    },
+    {
+      "family": "G031",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.20125851035118103
+    },
+    {
+      "family": "G072",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.18088434636592865
+    },
+    {
+      "family": "G200",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.16993197798728943
+    },
+    {
+      "family": "G056",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.146139457821846
+    },
+    {
+      "family": "G043",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.11008503288030624
+    },
+    {
+      "family": "G305",
+      "oracle_frequency": 4,
+      "global_mean_score": 0.07700680196285248
+    },
+    {
+      "family": "G059",
+      "oracle_frequency": 3,
+      "global_mean_score": 0.2218027263879776
+    },
+    {
+      "family": "G130",
+      "oracle_frequency": 3,
+      "global_mean_score": 0.14627550542354584
+    },
+    {
+      "family": "G345",
+      "oracle_frequency": 3,
+      "global_mean_score": 0.1453741490840912
+    },
+    {
+      "family": "G314",
+      "oracle_frequency": 3,
+      "global_mean_score": 0.07545918226242065
+    },
+    {
+      "family": "G375",
+      "oracle_frequency": 3,
+      "global_mean_score": 0.06479591876268387
+    },
+    {
+      "family": "G086",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.17234693467617035
+    },
+    {
+      "family": "G136",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.15869897603988647
+    },
+    {
+      "family": "G070",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.13663265109062195
+    },
+    {
+      "family": "G214",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.12918367981910706
+    },
+    {
+      "family": "G254",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.12770408391952515
+    },
+    {
+      "family": "G235",
+      "oracle_frequency": 2,
+      "global_mean_score": 0.08307822793722153
+    },
+    {
+      "family": "G180",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.21258503198623657
+    },
+    {
+      "family": "G261",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.1800680309534073
+    },
+    {
+      "family": "G090",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.16624149680137634
+    },
+    {
+      "family": "G172",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.11768707633018494
+    },
+    {
+      "family": "G021",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.11195578426122665
+    },
+    {
+      "family": "G264",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.10227891057729721
+    },
+    {
+      "family": "G407",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.09772108495235443
+    },
+    {
+      "family": "G252",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.07886054366827011
+    },
+    {
+      "family": "G400",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.07045918703079224
+    },
+    {
+      "family": "G348",
+      "oracle_frequency": 1,
+      "global_mean_score": 0.05241496488451958
+    },
+    {
+      "family": "G143",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.20955781638622284
+    },
+    {
+      "family": "G284",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.20727890729904175
+    },
+    {
+      "family": "G367",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.18136054277420044
+    },
+    {
+      "family": "G253",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.17200680077075958
+    },
+    {
+      "family": "G088",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.1513945609331131
+    },
+    {
+      "family": "G334",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.1495238095521927
+    },
+    {
+      "family": "G132",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.14307823777198792
+    },
+    {
+      "family": "G220",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.13889455795288086
+    },
+    {
+      "family": "G332",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.13826531171798706
+    },
+    {
+      "family": "G122",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.13234694302082062
+    },
+    {
+      "family": "G065",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.13096939027309418
+    },
+    {
+      "family": "G282",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.1299319714307785
+    },
+    {
+      "family": "G384",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.12833333015441895
+    },
+    {
+      "family": "G324",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.12164966017007828
+    },
+    {
+      "family": "G151",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.12066326290369034
+    },
+    {
+      "family": "G338",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.12013605237007141
+    },
+    {
+      "family": "G188",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.1200680285692215
+    },
+    {
+      "family": "G203",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.11940476298332214
+    },
+    {
+      "family": "G160",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.11549320071935654
+    },
+    {
+      "family": "G131",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.11028911918401718
+    },
+    {
+      "family": "G376",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10639455914497375
+    },
+    {
+      "family": "G247",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10232993215322495
+    },
+    {
+      "family": "G117",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10224489867687225
+    },
+    {
+      "family": "G406",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10204081982374191
+    },
+    {
+      "family": "G078",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10190476477146149
+    },
+    {
+      "family": "G287",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.10171768814325333
+    },
+    {
+      "family": "G390",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.0953911542892456
+    },
+    {
+      "family": "G347",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.0950850322842598
+    },
+    {
+      "family": "G141",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09459183365106583
+    },
+    {
+      "family": "G360",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09414965659379959
+    },
+    {
+      "family": "G099",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09373299032449722
+    },
+    {
+      "family": "G111",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09229591488838196
+    },
+    {
+      "family": "G020",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09125850349664688
+    },
+    {
+      "family": "G191",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09102040529251099
+    },
+    {
+      "family": "G265",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.0908503383398056
+    },
+    {
+      "family": "G359",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.09008503705263138
+    },
+    {
+      "family": "G320",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08836735039949417
+    },
+    {
+      "family": "G224",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.0855272114276886
+    },
+    {
+      "family": "G159",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08544217795133591
+    },
+    {
+      "family": "G304",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08503401279449463
+    },
+    {
+      "family": "G248",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08479592204093933
+    },
+    {
+      "family": "G244",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08391156792640686
+    },
+    {
+      "family": "G333",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08386054635047913
+    },
+    {
+      "family": "G116",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08380952477455139
+    },
+    {
+      "family": "G343",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08346939086914062
+    },
+    {
+      "family": "G215",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08214285969734192
+    },
+    {
+      "family": "G213",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.08159863948822021
+    },
+    {
+      "family": "G337",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07908163219690323
+    },
+    {
+      "family": "G317",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.078639455139637
+    },
+    {
+      "family": "G198",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07700680196285248
+    },
+    {
+      "family": "G225",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07360544055700302
+    },
+    {
+      "family": "G409",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07232993096113205
+    },
+    {
+      "family": "G170",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07187925279140472
+    },
+    {
+      "family": "G260",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07161564379930496
+    },
+    {
+      "family": "G380",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.07146258652210236
+    },
+    {
+      "family": "G382",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.0704931989312172
+    },
+    {
+      "family": "G402",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.06363945454359055
+    },
+    {
+      "family": "G230",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.06314625591039658
+    },
+    {
+      "family": "G237",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.06241496652364731
+    },
+    {
+      "family": "G044",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.061649661511182785
+    },
+    {
+      "family": "G152",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.06051020324230194
+    },
+    {
+      "family": "G066",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.06013605371117592
+    },
+    {
+      "family": "G105",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.057108841836452484
+    },
+    {
+      "family": "G175",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.05666666850447655
+    },
+    {
+      "family": "G041",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.056496597826480865
+    },
+    {
+      "family": "G292",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.053724490106105804
+    },
+    {
+      "family": "G023",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.050935372710227966
+    },
+    {
+      "family": "G178",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.045493196696043015
+    },
+    {
+      "family": "G301",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.043690476566553116
+    },
+    {
+      "family": "G363",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.03967687115073204
+    },
+    {
+      "family": "G228",
+      "oracle_frequency": 0,
+      "global_mean_score": 0.02986394613981247
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+work/
+
+# Kept locally and verified by manifests; avoid accidental multi-GB commits.
+data/replays/raw/
+data/replays/daily/
+data/artifacts/*.npz
+data/artifacts/*.bin
+data/artifacts/*.f32
+
+# Generated logs and process markers.
+*.log
+*.pid

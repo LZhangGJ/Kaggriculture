@@ -1,0 +1,447 @@
+{
+  "engine": "kaggle_environments:kaggriculture",
+  "both_seats": true,
+  "seed_range": [
+    2609400000,
+    2609400001
+  ],
+  "opponents": {
+    "thomas_2945": "/tmp/botmain/thomas_2945.py",
+    "melon_2749": "/tmp/botmain/melon_2749/main.py",
+    "demand_preserving": "/tmp/botmain/demand_preserving.py",
+    "ahmed_v47": "/tmp/botmain/ahmed_v47.py",
+    "pipe8": "/tmp/botmain/pipe8.py",
+    "herd_safe_2700": "/tmp/botmain/herd_safe_2700/main.py",
+    "salemali7_2900": "/tmp/botmain/salemali7_2900/main.py"
+  },
+  "candidate_template_indices": [
+    30147,
+    29783,
+    27355,
+    27150,
+    27151,
+    33097,
+    27353,
+    27120,
+    30096,
+    11718,
+    11716,
+    11313,
+    3693,
+    11719,
+    27137,
+    1773,
+    27149,
+    1774,
+    32918,
+    32076,
+    32399,
+    32395,
+    32862,
+    32400,
+    32397,
+    32396,
+    32658,
+    27123,
+    27124,
+    27121,
+    32627,
+    4469,
+    27122,
+    9865,
+    9866,
+    9863,
+    32765,
+    2679,
+    27327,
+    27325,
+    28753,
+    27329,
+    27328,
+    29213,
+    27356,
+    3595,
+    32472,
+    32562,
+    32563,
+    32780,
+    32473,
+    32574,
+    32779,
+    32575,
+    28752,
+    28503
+  ],
+  "summary": {
+    "14": {
+      "thomas_2945": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -18410.0,
+        "errors": 0
+      },
+      "melon_2749": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -11324.0,
+        "errors": 0
+      },
+      "demand_preserving": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -10513.0,
+        "errors": 0
+      },
+      "ahmed_v47": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -10042.0,
+        "errors": 0
+      },
+      "pipe8": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -8342.0,
+        "errors": 0
+      },
+      "herd_safe_2700": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -3050.0,
+        "errors": 0
+      },
+      "salemali7_2900": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -8669.0,
+        "errors": 0
+      }
+    },
+    "11": {
+      "thomas_2945": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -5533.0,
+        "errors": 0
+      },
+      "melon_2749": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -11169.0,
+        "errors": 0
+      },
+      "demand_preserving": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -3212.0,
+        "errors": 0
+      },
+      "ahmed_v47": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -1003.0,
+        "errors": 0
+      },
+      "pipe8": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -11024.0,
+        "errors": 0
+      },
+      "herd_safe_2700": {
+        "games": 2,
+        "wins": 0,
+        "mean_margin": -2759.0,
+        "errors": 0
+      },
+      "salemali7_2900": {
+        "games": 2,
+        "wins": 2,
+        "mean_margin": 12206.0,
+        "errors": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "label": "choice-14",
+      "bot": "thomas_2945",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 95742.0,
+      "opponent_cash": 114152.0,
+      "margin": -18410.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "thomas_2945",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 95742.0,
+      "opponent_cash": 114152.0,
+      "margin": -18410.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "melon_2749",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 106238.0,
+      "opponent_cash": 117562.0,
+      "margin": -11324.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "melon_2749",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 106238.0,
+      "opponent_cash": 117562.0,
+      "margin": -11324.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "demand_preserving",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 91733.0,
+      "opponent_cash": 102246.0,
+      "margin": -10513.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "demand_preserving",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 91733.0,
+      "opponent_cash": 102246.0,
+      "margin": -10513.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "ahmed_v47",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 92389.0,
+      "opponent_cash": 102431.0,
+      "margin": -10042.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "ahmed_v47",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 92389.0,
+      "opponent_cash": 102431.0,
+      "margin": -10042.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "pipe8",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 108022.0,
+      "opponent_cash": 116364.0,
+      "margin": -8342.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "pipe8",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 108022.0,
+      "opponent_cash": 116364.0,
+      "margin": -8342.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "herd_safe_2700",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 99112.0,
+      "opponent_cash": 102162.0,
+      "margin": -3050.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "herd_safe_2700",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 99112.0,
+      "opponent_cash": 102162.0,
+      "margin": -3050.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "salemali7_2900",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 101112.0,
+      "opponent_cash": 109781.0,
+      "margin": -8669.0,
+      "error": null
+    },
+    {
+      "label": "choice-14",
+      "bot": "salemali7_2900",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 101112.0,
+      "opponent_cash": 109781.0,
+      "margin": -8669.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "thomas_2945",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 103445.0,
+      "opponent_cash": 108978.0,
+      "margin": -5533.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "thomas_2945",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 103445.0,
+      "opponent_cash": 108978.0,
+      "margin": -5533.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "melon_2749",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 82928.0,
+      "opponent_cash": 94097.0,
+      "margin": -11169.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "melon_2749",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 82928.0,
+      "opponent_cash": 94097.0,
+      "margin": -11169.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "demand_preserving",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 121325.0,
+      "opponent_cash": 124537.0,
+      "margin": -3212.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "demand_preserving",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 121325.0,
+      "opponent_cash": 124537.0,
+      "margin": -3212.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "ahmed_v47",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 123697.0,
+      "opponent_cash": 124700.0,
+      "margin": -1003.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "ahmed_v47",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 123697.0,
+      "opponent_cash": 124700.0,
+      "margin": -1003.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "pipe8",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 79677.0,
+      "opponent_cash": 90701.0,
+      "margin": -11024.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "pipe8",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 79677.0,
+      "opponent_cash": 90701.0,
+      "margin": -11024.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "herd_safe_2700",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 102056.0,
+      "opponent_cash": 104815.0,
+      "margin": -2759.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "herd_safe_2700",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 102056.0,
+      "opponent_cash": 104815.0,
+      "margin": -2759.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "salemali7_2900",
+      "seed": 2609400000,
+      "seat": 0,
+      "cash": 103862.0,
+      "opponent_cash": 91656.0,
+      "margin": 12206.0,
+      "error": null
+    },
+    {
+      "label": "choice-11",
+      "bot": "salemali7_2900",
+      "seed": 2609400000,
+      "seat": 1,
+      "cash": 103862.0,
+      "opponent_cash": 91656.0,
+      "margin": 12206.0,
+      "error": null
+    }
+  ]
+}
