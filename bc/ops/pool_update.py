@@ -14,7 +14,7 @@ indefinitely. Every step writes receipts under arena-mix/pool-updates/<UTC date>
 import copy,hashlib,json,os,shutil,subprocess,sys,time
 from pathlib import Path
 R=Path('/home/keith/kaggriculture-ppo-production-20260919/broad-ppo-20260920');A=R/'arena-mix';ARENA=Path('/home/keith/kaggriculture-arena/.arena')
-SOURCE=A/'source-v9';PY='/home/keith/kaggriculture-rl-20260915/venv/bin/python-guarded'
+SOURCE=A/'source-v10';PY='/home/keith/kaggriculture-rl-20260915/venv/bin/python-guarded'
 DRY='--dry-run' in sys.argv
 SIM=sys.argv[sys.argv.index('--simulate-remove')+1] if '--simulate-remove' in sys.argv else None
 if SIM and not DRY:raise SystemExit('--simulate-remove requires --dry-run')
@@ -100,7 +100,7 @@ try:
     seen=set();[seen.update(r.get('arena_families',{}).keys()) for r in ranks]
     ck=torch.load(vl['path'],map_location='cpu',weights_only=True)
     checks=dict(rc=rc==0,update=vl['update']==latest['update']+1,valid_games=row['valid_games']==512,full_seasons=all(r['full_seasons']==len(r['games']) for r in ranks),
-        mix=all(r['families']=={'selfplay':128,'champion_slot':64,'arena':64} for r in ranks),families_union=seen==set(families),families_per_rank=all(len(r.get('arena_families',{}))>=len(families)-1 for r in ranks),
+        mix=all(r['families']=={'selfplay':128,'champion_slot':32,'arena':96} for r in ranks),families_union=seen==set(families),families_per_rank=all(len(r.get('arena_families',{}))>=len(families)-1 for r in ranks),
         steps=t['optimizer_steps']>0,league_error=row['league_error'] is None,density=max(x['max_density_error'] for rk in t['audit_before'] for x in rk)<=.002,
         contract_pool=ck['ppo_contract']['arena_pool_sha256']==h(new_path) and ck['ppo_contract']['config']['arena_pool']==str(new_path),code=ck['ppo_contract']['code_sha256']==code.hexdigest(),
         adam_finite=all(torch.isfinite(v).all() for st in ck['optimizer']['state'].values() for v in st.values() if torch.is_tensor(v)),migration_receipt=(V/'migration-provenance.json').exists())

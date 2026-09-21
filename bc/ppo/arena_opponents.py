@@ -36,18 +36,23 @@ def load_pool(path):
     return pool
 
 
-def assign(jobs, pool, seed, iteration):
-    """Replace exactly the final quarter, without touching game or seed IDs."""
+def assign(jobs, pool, seed, iteration, family_weights=None):
+    """Replace every history_slot job with a real arena program, without touching game or seed IDs.
+
+    family_weights: optional {family: weight}; families absent from the map get weight 1. None -> uniform."""
     families = {}
     for row in pool['opponents']:
         families.setdefault(row['family'], []).append(row)
     names = sorted(families)
+    weights = [float(family_weights.get(n, 1.0)) for n in names] if family_weights else None
+    if weights is not None and (min(weights) <= 0 or sum(weights) <= 0):
+        raise ValueError('Arena family weights must be positive')
     result = []
     for original in jobs:
         row = dict(original)
         if row['family'] == 'history_slot':
             rng = random.Random(f'arena-v1:{seed}:{iteration}:{row["game"]}')
-            family = rng.choice(names)
+            family = rng.choices(names, weights=weights, k=1)[0] if weights is not None else rng.choice(names)
             opponent = rng.choice(sorted(families[family], key=lambda x: x['id']))
             seat = row['learner_seats'][0]
             row['policies'] = ['learner', 'learner']
@@ -103,3 +108,43 @@ class SandboxOpponent:
             cleanup(self.name)
             if self.manifest is not None:
                 self.manifest.unlink(missing_ok=True)
+
+
+FLOOR = .5
+EMA = .9
+
+
+def family_weights_from_margins(ema):
+    """weight = FLOOR + deficit/mean(deficit), normalised to mean 1; deficit = max(0, -EMA margin)."""
+    names = sorted(ema)
+    if not names:
+        return {}
+    deficit = {n: max(0., -float(ema[n])) for n in names}
+    mean = sum(deficit.values()) / len(names)
+    raw = {n: (FLOOR + deficit[n] / mean) if mean > 0 else 1. for n in names}
+    scale = len(names) / sum(raw.values())
+    return {n: round(raw[n] * scale, 6) for n in names}
+
+
+def update_family_weights(path, games, iteration):
+    """Rank 0 only, after every update: fold this update's per-family mean margins into the EMA and write weights."""
+    margins = {}
+    for g in games:
+        if g.get('family') != 'arena' or len(g.get('learner_seats', [])) != 1 or not g.get('cash') or any(g.get('faults', [])):
+            continue
+        seat = g['learner_seats'][0]
+        margins.setdefault(g['arena_family'], []).append(g['cash'][seat] - g['cash'][1 - seat])
+    path = Path(path)
+    previous = json.loads(path.read_text()) if path.exists() else {}
+    ema = dict(previous.get('ema', {}))
+    for family, rows in margins.items():
+        mean = sum(rows) / len(rows)
+        ema[family] = mean if family not in ema else EMA * ema[family] + (1 - EMA) * mean
+    weights = family_weights_from_margins(ema)
+    record = dict(update=iteration, ema={k: round(v, 1) for k, v in ema.items()}, weights=weights,
+                  observed={k: dict(games=len(v), mean_margin=round(sum(v) / len(v), 1)) for k, v in margins.items()},
+                  rule=dict(floor=FLOOR, ema=EMA, formula='weight=floor+deficit/mean(deficit), mean-normalised'))
+    tmp = path.with_suffix('.tmp')
+    tmp.write_text(json.dumps(record, indent=2))
+    tmp.replace(path)
+    return record

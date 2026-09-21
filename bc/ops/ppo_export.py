@@ -74,7 +74,7 @@ if rets:
     retention=dict(update=int(Path(rets[-1]).name.split('-')[1]),read_only_verified=d.get('read_only_verified'),prefix_max=max((x.get('recurrent_reconstruction',{}).get('full_prefix_vs_recorded_max',0) for x in rows),default=None),
         bank_drift={f"{x.get('family')}@{x.get('retained_bank',{}).get('recorded_update')}":round(x.get('retained_bank',{}).get('mean_abs_logp_change',0),3) for x in rows})
 # ---- epochs (objective/speed changes) ----
-epochs=[dict(update=117,label='Broad branch begins (CP117, lambda 1)'),dict(update=307,label='Real-arena 50/25/25 mix'),dict(update=336,label='Shaped reward v4 (utility+residual baseline, 2 warm-up updates)'),dict(update=396,label='24 official actor processes per rank')]
+epochs=[dict(update=117,label='Broad branch begins (CP117, lambda 1)'),dict(update=307,label='Real-arena 50/25/25 mix'),dict(update=336,label='Shaped reward v4 (utility+residual baseline, 2 warm-up updates)'),dict(update=396,label='24 official actor processes per rank'),dict(update=458,label='Arena mix 256/64/192, deficit-weighted families')]
 # ---- arena Elo for team agents ----
 team=[]
 elo=rj(ARENA/'continuous-elo.json',{});ratings={r['agent']:r for r in elo.get('ratings',[])}

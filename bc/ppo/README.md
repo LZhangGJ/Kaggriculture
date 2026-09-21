@@ -83,7 +83,8 @@ References checked: [PyTorch 2.11 DDP](https://docs.pytorch.org/docs/2.11/genera
 ## Production run (2026-09-20/21, `broad-ppo-20260920`)
 
 Indefinite continuation from CP117 with lambda 1, LR 1e-5 actor / 5e-5 critic, 512 full 719-turn games per update on 2 GPUs.
-Per update: 256 self-play games, 128 against retained older policies, 128 against the real public arena programs
+Per update: 256 self-play games, 64 against retained older policies, 192 against the real public arena programs
+(`arena-mix-v2`: arena families are sampled with weights that rank 0 recomputes after every update from an EMA of the learner cash margin per family, `arena_opponents.update_family_weights`)
 (`arena_opponents.py`, `hybrid.py`; pool hash-pinned, sandboxed native code, no proxies).
 
 Objective (`shaped-reward-v4`, `replay.py` / `rollout.py` / `gpu_replay.py` / `shaped_reward.py`): terminal return

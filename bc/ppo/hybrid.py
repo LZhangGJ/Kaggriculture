@@ -16,11 +16,15 @@ from ppo.rollout import collect
 
 def collect_hybrid(jobs, pool, gpu_backend, models, reference, base, device, args, world, sampler):
     started = time.perf_counter()
-    jobs = assign(jobs, pool, args.seed, args.update_number)
+    weights_path = Path(args.output)/'arena-family-weights.json'
+    family_weights = None
+    if weights_path.exists():
+        family_weights = json.loads(weights_path.read_text()).get('weights') or None
+    jobs = assign(jobs, pool, args.seed, args.update_number, family_weights)
     arena = [j for j in jobs if j['family'] == 'arena']
     neural = [j for j in jobs if j['family'] != 'arena']
-    if len(arena)*4 != len(jobs) or len(neural)*4 != len(jobs)*3:
-        raise ValueError('Hybrid game allocation is not 50/25/25')
+    if len(arena)*8 != len(jobs)*3 or len(neural)*8 != len(jobs)*5:
+        raise ValueError('Hybrid game allocation is not 4/8 self-play, 1/8 older, 3/8 arena')
     # collection-overlap-v1: the official sampler draws from its own generator, seeded per update and
     # rank, so official trajectories are reproducible and independent of the GPU collector's RNG.
     rank = int(os.environ.get('RANK', 0))
@@ -106,4 +110,5 @@ def collect_hybrid(jobs, pool, gpu_backend, models, reference, base, device, arg
         official_actor_startup_seconds=official_metrics['actor_startup_seconds'],
         official_actor_timings=official_metrics['actor_timings'],
         gpu_peak_allocated_gib=gpu_metrics.get('peak_allocated_gib'),
-        protocol='real-arena-training-v1')
+        arena_family_weights=family_weights,
+        protocol='real-arena-training-v2')

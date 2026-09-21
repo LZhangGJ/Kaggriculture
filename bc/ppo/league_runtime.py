@@ -131,7 +131,8 @@ class LiveLeague:
         if games%(8*world):raise ValueError('Fixed league requires games divisible by 8*world')
         if seed<190000000 or seed+iteration*games+games>=2**31:raise ValueError('Training seed namespace exhausted/invalid')
         rows=[];offset=0
-        for family,count in [('selfplay',games//2),('champion_slot',games//4),('history_slot',games//4)]:
+        # arena-mix-v2: 4/8 self-play, 1/8 older policy, 3/8 history_slot (replaced by real arena programs in hybrid.assign)
+        for family,count in [('selfplay',games*4//8),('champion_slot',games*1//8),('history_slot',games*3//8)]:
             for j in range(count):
                 owner=j%world;seat=(j//world+iteration)%2
                 policies=['learner','learner']

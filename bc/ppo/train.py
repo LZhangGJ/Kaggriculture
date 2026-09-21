@@ -365,7 +365,7 @@ def main():
             from ppo.arena_opponents import load_pool
             arena_pool=load_pool(args.arena_pool)
             contract['arena_pool_sha256']=sha(args.arena_pool)
-            contract['hybrid_collection']=dict(protocol='real-arena-training-v1',game_allocation=[.5,.25,.25],
+            contract['hybrid_collection']=dict(protocol='real-arena-training-v2',game_allocation=[.5,.125,.375],family_sampling='deficit-weighted: weight=.5+deficit/mean(deficit), EMA .9 of per-family mean cash margin, uniform when no history',
                 backends=['pinned GPU simulator','official kaggle-environments 1.32.7 stream adapter'],
                 minibatches='homogeneous format; deterministic shuffle of five GPU plus one official per temporal window',
                 opponents='uniform author then uniform member; source-native sandbox',failure='reject entire update')
@@ -384,6 +384,7 @@ def main():
                     or migration['new_contract']!=contract):raise ValueError('Migration does not match exact contracts')
                 for key in contract:
                     if key not in ('code_sha256','league') and contract[key]!=saved['ppo_contract'].get(key):
+                        if migration.get('kind')=='arena-mix-v2' and key=='hybrid_collection' and migration.get('hybrid_collection')==contract[key]:continue
                         if migration.get('kind')=='arena-pool-update-v1':
                             if key=='arena_pool_sha256' and migration.get('arena_pool_sha256')==contract[key]:continue
                             if key=='config':
@@ -523,6 +524,8 @@ def main():
                 save_checkpoint(ckpt,model,optimizer,base,contract,iteration,rngs,matchups,live.state if live else None)
                 previous=dict(path=str(ckpt.resolve()),sha256=sha(ckpt),update=iteration)
                 atomic_json(args.output/'latest.json',previous)
+                from ppo.arena_opponents import update_family_weights
+                update_family_weights(args.output/'arena-family-weights.json',[g for r in collected for g in r['games']],iteration)
                 if live:
                     finalize_checkpoint(ckpt,args.output,iteration,live.state['reference'])
                 seconds=time.perf_counter()-tick
