@@ -86,6 +86,12 @@ class SearchRouteController:
             else dict(policy)
         )
         self.route_by_family = {str(key): str(value) for key, value in route_by_family.items()}
+        self.target_fallbacks = {
+            str(source): str(target) for source, target in payload.get("target_fallbacks", {}).items()
+        }
+        if any(source not in self.route_by_family or target not in self.route_by_family
+               for source, target in self.target_fallbacks.items()):
+            raise ValueError("route fallback is not in the route library")
         self.feature_schema = str(payload.get("feature_schema", "recurrent_meta_v1"))
         total = sum(max(0.0, float(weight)) for _, weight in opening_weights)
         if total <= 0:
@@ -160,6 +166,7 @@ class SearchRouteController:
                 # Schema v1 stored the target-array index as its class.
                 target_index = int(prediction)
                 target = str(targets[target_index]) if 0 <= target_index < len(targets) else ""
+            target = self.target_fallbacks.get(target, target)
             if target in self.route_by_family and target != self.current:
                 self.current = target
                 changed = True

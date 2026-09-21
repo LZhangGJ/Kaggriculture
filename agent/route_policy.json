@@ -3,6 +3,9 @@
   "kind": "robust_counterfactual_search_route_trees",
   "feature_schema": "semantic_route_switch_v1",
   "compact_native_search": true,
+  "target_fallbacks": {
+    "G114": "G396"
+  },
   "sources": [
     "../data/artifacts/switch-fine-26x128.npz"
   ],

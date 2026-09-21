@@ -109,11 +109,16 @@ def main():
         raise RuntimeError(f"incomplete collection: errors={errors}, groups={len(keep)}/{len(groups)}")
     features = np.asarray([[entry[name]["features"] for name in classes]
                            for _, entry, _ in keep], dtype=np.float32)
+    scores = np.asarray([[entry[name]["score"] for name in classes]
+                         for _, entry, _ in keep], dtype=np.float64)
+    horizon_scores = np.asarray([[entry[name]["scores_horizon"] for name in classes]
+                                 for _, entry, _ in keep], dtype=np.float64)
     margins = np.asarray([[row["margin"] for row in rows] for _, _, rows in keep], dtype=np.float32)
     labels = np.asarray([max(range(len(classes)), key=lambda i: (margins[j, i] > 0, margins[j, i]))
                          for j in range(len(keep))], dtype=np.int8)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(args.output, features=features, margins=margins, labels=labels,
+    np.savez_compressed(args.output, features=features, scores=scores,
+                        horizon_scores=horizon_scores, margins=margins, labels=labels,
                         classes=np.asarray(classes), bots=np.asarray([g[0] for g, _, _ in keep]),
                         seeds=np.asarray([g[1] for g, _, _ in keep], dtype=np.int64),
                         seats=np.asarray([g[2] for g, _, _ in keep], dtype=np.int8),

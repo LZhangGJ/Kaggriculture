@@ -20,6 +20,7 @@ def main():
     assert fine["games"] == 24_460_800 and fine["feature_count"] == 147
     deployed = json.loads((ROOT / "agent/route_policy.json").read_text())
     shallow = json.loads((ROOT / "data/artifacts/trees-shallow-d2-6.json").read_text())
+    assert deployed.pop("target_fallbacks", None) == {"G114": "G396"}
     deployed["sources"] = shallow["sources"]
     assert deployed == shallow
     result = json.loads((ROOT / "experiments/results/r1-vs-replay-tree-warm-handoff12-public7-4seed-v1.json").read_text())

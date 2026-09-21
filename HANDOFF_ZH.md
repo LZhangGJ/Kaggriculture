@@ -8,6 +8,21 @@
 随后 delay=1 温接管无模板 JointAFS R1。纯 R1、冷接管不再做性能探索，至多保留默认行为兼容检查。
 候选最终只以未参与训练/筛选的七强同 seed 双座多 seed warm 结果准入，并要求逐对手均严格高于 80%。
 
+### 当前已部署：G114 叶回退 G396，保留其余浅树分支
+
+新 A8 消融中，默认树 `98/112`，固定 stay G275 仅 `84/112`。G024/G316 共 41 局全胜并相对
+G275 净救 28 胜；G114 的 46 局包含全部 14 败局并相对 G275 净损 14 胜。因此不可禁用整棵树。
+G114→G275 在独立 B16 七强逐手 `Δwin=+2/+4/+8/+6/+4/+2/0`；原生 stop288 proxy 的
+Top-5 再经真实 warm 筛选后只保留 G396。全新 E16 上 G114→G396 相对旧部署为
+`+2/+6/+8/+8/+8/+4/0`，胜率 `71.9%/78.1%/84.4%/90.6%/90.6%/100%/100%`。
+`agent/route_policy.json` 已显式加入 `target_fallbacks: {G114: G396}`，控制器验证 fallback 目标
+必须存在；默认其余行为不变。Thomas/Melon 尚未超过 80%，不得把这项提升写成最终完成。
+
+进一步的 G396/G275/G249 G16 warm 标签在 G114 条件域只有 7 个独立 seeds。去除双座重复并做
+leave-one-seed-out 后，depth1 从静态 G396 的 67.9% 降到 60.7%，depth2/3 胜率持平但分差分别
+下降 1524/1228；BRUNCH stump 的表内增益完全不能外推，故不做新门控。阶段 trace 显示败局到
+day12 已多落后约 1.1k–1.4k，day15 后才持续放大，下一轮继续研究温前缀状态支配，不回到纯 R1。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
@@ -51,6 +66,27 @@ capital_power 完全一致。修正后的新 warm A8：Thomas `8/16→8/16`、�
 假设“精确”，而是统一顺序无法同时解释 Thomas 与 Melon，且公开资产上界会把不可见库存当成待售量。
 下一步只研究 handoff 首次重规划的评分误差；任何公开状态门控都必须在独立 seed 上先复现，
 不扫连续参数、不扩大已失败候选。
+
+后续评分审计没有发现 `SearchController::score()` 的实现 bug：候选使用同一 horizon、同一竞争口径和
+base tail；当前现金与 `tail.predicted` 不重叠，跨日恢复 base 也是“一日干预”的定义。B8 中 h1/h2
+从不选 base；h3–h5 虽开始换选，却让 Thomas 胜数 `10→8`，不能靠延长 rollout 修复。h1 对激进
+方案的 terminal predicted 优势平均约 6.7k，跑完一天后仍约 1.8k，而真实终局方向接近随机，缺口是
+尾值商品/资本估值误差，不是 horizon 边界。
+
+动作级归因也已更正：seed49 auto/base 在 step264 的卖货完全相同，auto 只多买 1–2 份草莓；
+随后形成更多 STRAWBERRY/TOMATO、更少 MELON，day12 工人数无差。拆分 id1 后，discount-only
+在 28/32 个 fresh handoff 计划中完全复现 id1，capital_power 只是少数 tie-break；但独立 D8 上
+discount-only 对 Melon 32/32 与 auto 相同，对 Thomas 仅一个 joint seed 不同且分差更差。
+
+`id3→id0` guard 在 seeds `2615100000`、`2615200006` 曾对 Melon 共救 4 局、Thomas 救 2 局且
+不伤胜局，但 fresh 七强 A16 (`2615400000..15`) 对五个未达标对手 160 对局全部无动作差，只影响
+本已全胜的 Salemali 分差，因此发生率不足以作为抓手，实验开关已删除。对应产物：
+`work/warm-score-horizons-B8-2615100000.npz`、`work/warm-id3-guard-C16-2615200000.npz`、
+`work/warm-animal-heavy-guard-public7-A16-2615400000.json`、
+`work/warm-discount-only-D8-2615500000.npz`。
+
+未来商店的精确 Jensen 探针只得到单地块 Tomato `+$4.15`、Strawberry `-$6.28`、Melon `$0`；
+`feed_cover=2` 的七强 A8 全部 `Δwin=0` 且多数分差下降。这两条均已停止，不进入正式源码。
 
 ### 最新因果定位：Thomas 的优势在共享价格冲击，但路线后验不可在线预测
 
