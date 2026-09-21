@@ -24,6 +24,19 @@ day12 已多落后约 1.1k–1.4k，day15 后才持续放大，下一轮继续�
 H32 的六路线 oracle 上限也只有 Thomas `53/64`、Melon `54/64`。表内对 Thomas 最强的 G249
 在全新七强 I16 上相对 G275 为 `-4/-2/-2/-4/-6/-4/0`，七手平均分差全负，故停止全局路线替代。
 
+### 最新首错定位：step264 proposal 评分，而非接管早晚
+
+H32 中 purchase step 为 `218×2/220×12/222×50`，delay1 全部在 step264 接管。delay0 对
+Thomas/Melon `-21/-8` 胜；delay2 为 `-5/+1` 且均分下降。G195-only delay2 的局部救胜在
+fresh 七强块稀疏且分差为负，不部署。
+
+对 hard seeds `2616600001/3/7` 枚举现有 proposal：6 个 Thomas/Melon cell 都由 auto 选择 id1，
+其模拟分比 id0 高 `1666–1910`，但 id0 的官方终局 6/6 更好，平均 +1313。step264 首差分别是
+追加羊/牛、瓜和番茄种子、肥料及更多雇工；单动作反事实对 Thomas/Melon 会反号，因此不能做
+animal/seed/sale guard。统一 id0 也不成立：O8 七强救14伤0，fresh P16 却 Thomas `-6`、Ahmed
+`-4`。candidate-diff 宽 veto 在 M16 伤三手，四块后验窄 band 在 Q16 七手胜数全不变且多数分差
+下降。后续只研究共同尾值/风险评价，不再扩大 route、timing 或阈值门控。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
