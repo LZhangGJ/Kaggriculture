@@ -1,0 +1,7 @@
+{
+  "name": "example-only-replace-with-pinned-milestone-opponents",
+  "opponents": [
+    {"id": "starter", "kind": "script", "path": "starter", "seeds": [9381001, 9381002]},
+    {"id": "pass", "kind": "script", "path": "pass", "seeds": [9381001, 9381002]}
+  ]
+}

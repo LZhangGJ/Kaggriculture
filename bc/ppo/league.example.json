@@ -1,0 +1,7 @@
+{
+  "opponents": [
+    {"id": "current", "kind": "self", "weight": 0.5},
+    {"id": "frozen-bc", "kind": "bc", "weight": 0.4},
+    {"id": "starter", "kind": "script", "path": "starter", "weight": 0.1}
+  ]
+}
