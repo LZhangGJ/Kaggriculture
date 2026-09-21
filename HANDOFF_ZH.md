@@ -89,6 +89,22 @@ crop 对 Thomas 为 `+0.5` 等价胜，但 Melon/Demand/Pipe 分别为 `-1.5/-1.
 `+3 WHEAT/-3 TOMATO/少花300` 对 Thomas 为 `+1.0` 等价胜，却使 Melon/Demand/Pipe 各
 `-1.0`；同一公开动作直接反号，故也封死其 target/flow 子动作门控。
 
+接管前对手响应又做了两层核验。G275 的 step252 `SELL MELON 12` 并不为后续扩地融资；抑制一次后
+repair 会在 step255 补卖，Thomas/Melon 的对手成交序列与 handoff 市场库存完全不变，fresh A4
+两手胜数均不变且分差下降，故这不是 RACE 诱因。另一方面，公开市场守恒 trace 发现一个真实但
+只覆盖局部路线的指纹：对手在 step257 净卖 3 WHEAT。训练外 A8 中它命中 Thomas `6/8` seeds、
+其余六手 `0/48` 误报；fresh A16 中命中 Thomas `9/16`、其余六手 `0/96`，双座一致。它只覆盖
+G195/G275；G024/G316 不触发，而且 fresh 3 个 seed 上 Thomas 与五弱手在 step253..263 的全商品
+逐 tick 公开流完全相同，所以不能扩写成全局对手分类器。
+
+最后先做了不需要门控实现的 oracle 上界：在 fresh A8 Thomas 双座中，即使完美知道对手身份并
+强制首次 handoff-day `crop_succession`，仍从 `16/16` 降到 `14/16`，平均分差 `-696.75`；此前
+的 `+3 WHEAT/-3 TOMATO/-300` 窄动作签名在这 16 cells 中一次也未复现。因此“公开麦流 →
+crop_succession”组合直接拒绝，不增加线上账本或门控代码。只读产物：
+`work/post252-public-response-A8-2619000000.json`、
+`work/post252-public-response-held-A16-2619100000.json`、
+`work/warm-crop-oracle-thomas-A8-2619200000.json`。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
