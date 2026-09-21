@@ -51,6 +51,16 @@ fresh S8 使 Melon `-4/16`；当前价作物流惩罚虽修正 hard `6/6`，却�
 `work/warm-one-day-proposal-book-thomas-melon-T8-2617700000.json`、
 `work/warm-one-day-proposal-book-public7-U8-2617800000.json`。
 
+接管前公共动作同样没有稳定抓手。保留 G275 step263 最后一笔 12 wheat 销售的反事实在 fresh V8
+为 Thomas `-1/16`、Melon `+1/16`，不扩大。H32 中 Thomas/Melon 的同 seed/seat 前缀几乎
+一致，胜局反而少约 650 现金、少 1.4 个资产；买地时机和牛/羊/麦结构绑定路线而非胜负。跨
+h1–h5 全部同意的 robust 排序也在 L16 净 `-2`，并在 M16 伤 Demand/Ahmed/Pipe 各 2 胜。
+
+对手 C++ 化不是当前算力抓手：官方 warm 单局我方 R1 决策约 6.8–7.0 秒，Thomas/Melon 仅约
+1.75/0.99 秒，因此把对手成本降为零也只可能提速约 `1.12×/1.07×`。现有 Thomas native
+prefix 最新也只有 `51/64` 动作轨迹精确，Melon 没有 native 入口；完整 warm 原生联跑远超
+“改写两个对手”的范围。本轮不做该工程。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
