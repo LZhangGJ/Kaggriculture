@@ -100,6 +100,8 @@ class Simulator {
   int hour() const { return step_%cfg_.turns_per_day; }
   bool done() const { return done_; }
   uint64_t seed() const { return seed_; }
+  // Offline counterfactuals: keep the current state and resample later days.
+  void reseed_future(uint64_t seed) { seed_ = seed; }
   const std::array<Farm,2>& farms() const { return farms_; }
   const std::array<PrivateState,2>& privates() const { return privates_; }
   const Market& market() const { return market_; }

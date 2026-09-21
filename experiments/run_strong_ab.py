@@ -3,6 +3,7 @@
 
 import argparse
 import concurrent.futures as cf
+import hashlib
 import importlib.util
 import inspect
 import json
@@ -49,7 +50,10 @@ def child_environment(config_override, handoff_selector):
 
 
 def play(task):
-    label, policy_path, config_override, handoff_selector, bot, bot_path, seed, seat, engine = task
+    label, policy_path, config_override, handoff_selector, bot, bot_path, seed, seat, engine, *future = task
+    if len(future) > 1 or future and engine != "fast":
+        raise ValueError("future reseeding accepts one seed and requires FastEnv")
+    future_seed = future[0] if future else None
     child_environment(config_override, handoff_selector)
     policy_module = load(policy_path, f"policy_{label}_{seed}_{seat}")
     policy = policy_module.create_agent() if hasattr(policy_module, "create_agent") else policy_module.agent
@@ -57,6 +61,8 @@ def play(task):
     opponent_takes_configuration = len(inspect.signature(opponent).parameters) > 1
     start = time.perf_counter()
     decision_seconds = 0.0
+    handoff_hash = None
+    prefix_digest = hashlib.sha256()
     if engine == "fast":
         from fast_kaggriculture import Config, FastEnv
         env = FastEnv(Config(), seed)
@@ -69,6 +75,8 @@ def play(task):
         configuration = env.configuration
     try:
         while not env.done:
+            if future_seed is not None and handoff_hash is None:
+                prefix_digest.update(json.dumps(state, sort_keys=True, separators=(",", ":")).encode())
             actions = []
             for player in (0, 1):
                 raw = state[player] if engine == "fast" else state[player].observation
@@ -77,12 +85,21 @@ def play(task):
                     observation["step"] = observation.get("day", 0) * 24 + observation.get("hour", 0)
                 observation["player"] = player
                 if player == seat:
+                    if future_seed is not None and handoff_hash is None:
+                        ready = getattr(policy, "ready", None)
+                        if ready is None:
+                            raise ValueError("future reseeding requires a warm-handoff policy")
+                        if ready(observation):
+                            handoff_hash = prefix_digest.hexdigest()
+                            env.reseed_future(future_seed)
                     decision_start = time.perf_counter()
                     actions.append(policy(observation, configuration))
                     decision_seconds += time.perf_counter() - decision_start
                 else:
                     actions.append(opponent(observation, configuration) if opponent_takes_configuration else
                                    opponent(observation))
+            if future_seed is not None and handoff_hash is None:
+                prefix_digest.update(json.dumps(actions, sort_keys=True, separators=(",", ":")).encode())
             state = env.step(actions)
         if engine == "fast":
             own, rival = map(float, (env.rewards[seat], env.rewards[1 - seat]))
@@ -90,10 +107,13 @@ def play(task):
             farms = json.loads(json.dumps(state[0].observation))["farms"]
             own, rival = farms[seat]["money"], farms[1 - seat]["money"]
         return {"label": label, "bot": bot, "seed": seed, "seat": seat,
+                "future_seed": future_seed, "handoff_hash": handoff_hash,
+                "future_shops": list(state[seat]["town"]["unlocked_shops"]) if engine == "fast" else None,
                 "cash": own, "opponent_cash": rival, "margin": own - rival, "error": None,
                 "wall_seconds": time.perf_counter() - start, "decision_seconds": decision_seconds}
     except Exception as exc:
-        return {"label": label, "bot": bot, "seed": seed, "seat": seat, "error": repr(exc)}
+        return {"label": label, "bot": bot, "seed": seed, "seat": seat,
+                "future_seed": future_seed, "handoff_hash": handoff_hash, "error": repr(exc)}
     finally:
         close = getattr(policy, "close", None)
         if close:

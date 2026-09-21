@@ -79,6 +79,16 @@ Ahmed/Pipe 各 `+2/16`，同时 Thomas `-4/16`。147 维公开状态无法稳定
 bot-style gate，实验宏已撤除。direct-payoff default/base 浅树在 L/O/P leave-one-block-out 中也
 持续伤 Thomas，W8 盲测集保持未用于规则选择。
 
+后续 AA16 将 harvest 锚定再次判负（Thomas `-2/32`、Melon `-3/32`）。首次接管日启用
+crop succession 的 W8/AB8/AC8 固定策略总 `Δwin=+14/+9/-6`；exact stump 与 depth-2 三块
+LOBO 合计都为 0，并在 hold-AC 伤 Demand/Ahmed/Pipe 各 2 胜。为判断是否只是 suffix RNG，
+FastEnv 新增离线 `reseed_future()`：固定同一 warm handoff 状态后只重采未来 shop/weed；原 seed
+parity 完全一致。fresh A4×4 条件续局仍为 Thomas `+0.5` 等价胜、Melon `-1.5`、Demand `-1.5`、
+Ahmed `0`、Pipe `-1.0`，五弱手合计 `-3.5/40`。因此该机制的对手依赖是真实的，拒绝且不跑 A8；
+工具保留用于以后对 warm 候选做条件期望归因，不能把 RNG replicas 当独立样本。
+唯一跨两个 seed 复现的动作签名是 `+3 WHEAT/-3 TOMATO/少花300`：Thomas `+1.0` 等价胜，
+Melon/Demand/Pipe 各 `-1.0`。同一公开动作直接反号，因此不再拆 target/flow 阈值门控。
+
 ### 2026-09-21 最新抓手：接管首日交易，而不是再训路线树
 
 正式 warm 64-seed 的阶段归因把优先级收敛为：接管首日交易/资本选择 > 中后期 DP 的价格冲击

@@ -73,6 +73,22 @@ handoff-only 的独立 Z8 为 Thomas `-4/16`、Melon `+4/16`、Ahmed/Pipe 各 `+
 状态的 seed-CV 不能可靠区分 Thomas/Melon，故不做对手门控，宏已撤除。default/base direct-payoff
 树的 L/O/P leave-one-block-out 同样持续伤 Thomas；新 W8 四策略数据未用于调规则。
 
+后续 AA16 将 incumbent-harvest 锚定再次判负（Thomas `-2/32`、Melon `-3/32`），已经拒绝。
+`crop_succession` 只在首次 warm 接管日启用 rotation/repeat，次日恢复 base；固定策略在
+W8/AB8/AC8 的七强总 `Δwin` 分别为 `+14/+9/-6`。用任意两块训练 exact stump 或 depth-2、
+留一块验证时，三折 held 总和都恰为 0，且 hold-AC 都使 Demand/Ahmed/Pipe 各 `-2`。
+
+为区分机制与 suffix RNG，FastEnv 新增仅离线使用的 `reseed_future()`；
+`experiments/run_warm_future_ab.py` 固定真实 warm handoff 状态、校验 A/B canonical hash 后，只重采
+接管后的 shop/weed。重设为原 seed 与普通 FastEnv 的终局逐项一致。fresh A4×4 条件续局中，
+crop 对 Thomas 为 `+0.5` 等价胜，但 Melon/Demand/Pipe 分别为 `-1.5/-1.5/-1.0`，五弱手合计
+`-3.5/40`。因此反号不只是未来 RNG；该机制拒绝，不跑 A8、不部署。产物：
+`work/tmp/crop-threeblock-lobo.json`、`work/warm-future-crop-public5-A4x4-2618900000.json`。
+双座在这批条件续局中完全重复，统计有效块只有 4 个原始 seed；future replicas 只用于块内求期望，
+不能当独立样本。进一步按公开 action signature 分解，唯一跨两个 seed 复现的
+`+3 WHEAT/-3 TOMATO/少花300` 对 Thomas 为 `+1.0` 等价胜，却使 Melon/Demand/Pipe 各
+`-1.0`；同一公开动作直接反号，故也封死其 target/flow 子动作门控。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。
