@@ -225,7 +225,25 @@ PYTHONPATH=. /root/miniforge3/envs/torch-npu/bin/python experiments/test_submiss
 - 开局：固定 `G275`，不使用 Nash 混合。
 - 前期：成熟 `TeammateExpandedRouteAgent` 执行 replay 路线；它含杂草修补、市场/现金保护和喂养保护，不是盲目动作磁带。
 - replay 内切换：使用 `route_policy.json` 的浅树；现有树只覆盖五个 opening，检查点为 step 144/168/216（day6/day7/day9），当前控制器最多切换一次。
-- 动态接管：达到 3 块地后延迟 1 天转交无开局模板 R1，step288 是最晚截止。R1 在此前持续接收公开观察及实际动作，用于公开交易、作物时钟与联合项目账本。
+  - **G275 的 cp144 节点已换成用真实对手重训的 depth-3 树**（896 个「状态 / 5 候选目标 / 结局」单元；原树是在自对弈矩阵上训练的）。配对 A/B：**+14 / +4 胜（两段），14/14 对手-段均分差为正**。
+  - `target_fallbacks` 除原有的 `G114 → G275` 外，新增 **`G019 → G195`**（G019 是按叶归因找出的坏叶，条件胜率 69.7%）。配对 A/B：**+10 / +14 胜，14/14 对手-段均分差为正**。
+- 动态接管：达到 3 块地后延迟 **2** 天转交无开局模板 R1（即固定到 step 288；实测 288 为单峰最优点，264 差 52 胜、312 差 29 胜）。配对 A/B：**+52 胜，z=2.20，3 段 6 手全正**。
 - 可用 `REPLAY_FORCED_OPENING` 和 `REPLAY_HANDOFF_STEP` 做离线实验覆盖；正式结论必须同 seed 双座、多 seed。
+
+### 验收口径（重要）
+
+`run_strong_ab.py` 的 `both_seats` 几乎不提供独立信息：本对局对称且双方确定，**约 87% 的 (对手, seed) 配对中 seat0 与 seat1 的 margin 逐元相同**。因此所有历史「N/896」的有效样本约为名义值的 57%。
+验收请用 `experiments/eval_seed_paired.py`（按 (对手, seed) 配对 + Wilson 区间），并按 seed 段互斥取数。
+
+### 当前水平（512 个全新 seed，seed 配对，Wilson 95%）
+
+| 对手 | 胜率 | 95% CI |
+|---|---|---|
+| thomas_2945 | 76.2% | [72.3, 79.7] |
+| melon_2749 | 79.9% | [76.2, 83.1] |
+| demand_preserving | 80.3% | [76.6, 83.5] |
+
+其余四手（salemali / herd / pipe8 / ahmed）已在 89.6%–100% 区间。**「每个对手 ≥80%」尚未达成。**
+
 
 详见 [架构](docs/ARCHITECTURE_ZH.md)、[数据](docs/DATA_AND_PROVENANCE_ZH.md)、[复现命令](docs/REPRODUCTION_ZH.md)、[文件索引](docs/FILE_INDEX_ZH.md) 、[交接](HANDOFF_ZH.md) 与 [本轮会话记录](docs/SESSION_20260920_ZH.md)。
