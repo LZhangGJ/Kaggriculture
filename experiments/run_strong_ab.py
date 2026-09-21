@@ -49,36 +49,46 @@ def child_environment(config_override, handoff_selector):
 
 
 def play(task):
-    label, policy_path, config_override, handoff_selector, bot, bot_path, seed, seat = task
+    label, policy_path, config_override, handoff_selector, bot, bot_path, seed, seat, engine = task
     child_environment(config_override, handoff_selector)
-    from kaggle_environments import make
-
     policy_module = load(policy_path, f"policy_{label}_{seed}_{seat}")
     policy = policy_module.create_agent() if hasattr(policy_module, "create_agent") else policy_module.agent
     opponent = load(bot_path, f"opponent_{bot}_{seed}_{seat}").agent
     opponent_takes_configuration = len(inspect.signature(opponent).parameters) > 1
     start = time.perf_counter()
     decision_seconds = 0.0
-    env = make("kaggriculture", configuration={"seed": seed}, debug=True)
-    state = env.reset()
+    if engine == "fast":
+        from fast_kaggriculture import Config, FastEnv
+        env = FastEnv(Config(), seed)
+        state = list(env.reset(seed))
+        configuration = {}
+    else:
+        from kaggle_environments import make
+        env = make("kaggriculture", configuration={"seed": seed}, debug=True)
+        state = env.reset()
+        configuration = env.configuration
     try:
         while not env.done:
             actions = []
             for player in (0, 1):
-                observation = json.loads(json.dumps(state[player].observation))
+                raw = state[player] if engine == "fast" else state[player].observation
+                observation = json.loads(json.dumps(raw))
                 if observation.get("step") is None:
                     observation["step"] = observation.get("day", 0) * 24 + observation.get("hour", 0)
                 observation["player"] = player
                 if player == seat:
                     decision_start = time.perf_counter()
-                    actions.append(policy(observation, env.configuration))
+                    actions.append(policy(observation, configuration))
                     decision_seconds += time.perf_counter() - decision_start
                 else:
-                    actions.append(opponent(observation, env.configuration) if opponent_takes_configuration else
+                    actions.append(opponent(observation, configuration) if opponent_takes_configuration else
                                    opponent(observation))
             state = env.step(actions)
-        farms = json.loads(json.dumps(state[0].observation))["farms"]
-        own, rival = farms[seat]["money"], farms[1 - seat]["money"]
+        if engine == "fast":
+            own, rival = map(float, (env.rewards[seat], env.rewards[1 - seat]))
+        else:
+            farms = json.loads(json.dumps(state[0].observation))["farms"]
+            own, rival = farms[seat]["money"], farms[1 - seat]["money"]
         return {"label": label, "bot": bot, "seed": seed, "seat": seat,
                 "cash": own, "opponent_cash": rival, "margin": own - rival, "error": None,
                 "wall_seconds": time.perf_counter() - start, "decision_seconds": decision_seconds}
@@ -151,6 +161,7 @@ def main():
     parser.add_argument("--seeds", type=int, default=8)
     parser.add_argument("--start", type=int, default=2609400000)
     parser.add_argument("--workers", type=int, default=192)
+    parser.add_argument("--engine", choices=("official", "fast"), default="official")
     parser.add_argument("--self-check", action="store_true")
     args = parser.parse_args()
     if args.self_check:
@@ -189,7 +200,8 @@ def main():
             if not path.is_file():
                 parser.error(f"--{label}-handoff-selector must be an existing file or 0")
             selectors[label] = str(path)
-    tasks = [(label, str(path), overrides[label], selectors[label], bot, bot_path, seed, seat)
+    tasks = [(label, str(path), overrides[label], selectors[label], bot, bot_path, seed, seat,
+              args.engine)
              for label, path in policies.items() for bot, bot_path in bots.items()
              for seed in range(args.start, args.start + args.seeds) for seat in (0, 1)]
     with cf.ProcessPoolExecutor(max_workers=args.workers, mp_context=mp.get_context("spawn"),
@@ -197,7 +209,9 @@ def main():
         rows = list(pool.map(play, tasks))
     summary, paired = summarize(rows, bots)
     result = {
-        "engine": "kaggle_environments:kaggriculture", "seed_range": [args.start, args.start + args.seeds],
+        "engine": ("fast_kaggriculture:FastEnv" if args.engine == "fast" else
+                   "kaggle_environments:kaggriculture"),
+        "seed_range": [args.start, args.start + args.seeds],
         "both_seats": True, "process_isolation": "spawn; one game per child",
         "policies": {label: str(path) for label, path in policies.items()},
         "r1_config_overrides": overrides,
@@ -211,4 +225,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

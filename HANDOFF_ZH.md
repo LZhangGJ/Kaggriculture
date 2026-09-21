@@ -61,6 +61,18 @@ h1–h5 全部同意的 robust 排序也在 L16 净 `-2`，并在 M16 伤 Demand
 prefix 最新也只有 `51/64` 动作轨迹精确，Melon 没有 native 入口；完整 warm 原生联跑远超
 “改写两个对手”的范围。本轮不做该工程。
 
+已落地更小且有效的吞吐改进：`experiments/run_strong_ab.py` 新增 opt-in `--engine fast`，完整
+`agent/main.py` 仍执行 G275、147D 树、fallback、delay1 和 R1。七强一 seed 双座、两臂共 28 行
+与官方引擎的 cash/opponent_cash/margin/error 完全一致，平均单局 `14.29s→8.00s`，约 `1.79×`。
+默认和最终准入仍使用 official。
+
+hard 作物分解显示 id1 的 `flow_difference_1_MELON=+24` 只是 day13→day12 的收获时移，整局
+MELON 数量不增。空地数又影响 weed RNG 消耗，导致后续 shop RNG 随策略分叉，因此逐 seed 标签
+带有不可观测方差。共用 incumbent harvest date 的机制候选在 X4 对五弱手均 `+2/8`，但首次
+handoff-only 的独立 Z8 为 Thomas `-4/16`、Melon `+4/16`、Ahmed/Pipe 各 `+2/16`。公开 147D
+状态的 seed-CV 不能可靠区分 Thomas/Melon，故不做对手门控，宏已撤除。default/base direct-payoff
+树的 L/O/P leave-one-block-out 同样持续伤 Thomas；新 W8 四策略数据未用于调规则。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。

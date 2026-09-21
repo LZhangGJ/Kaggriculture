@@ -66,6 +66,19 @@ T8 曾让 Thomas `+2/16`，但 fresh 七强 U8 使 Melon/Demand/Ahmed/Pipe 各 `
 仅约 `1.12×`、Melon 约 `1.07×`，因为单局主要耗时是我方已为 C++ 的 R1 决策而非对手 Python；
 Thomas 现有 native prefix 也只有 `51/64` 轨迹精确，故不投入对手重写。
 
+现已改用更小的算力抓手：`experiments/run_strong_ab.py --engine fast` 让完整真实部署 agent 原样运行
+在已有 C++ `FastEnv`，默认仍是官方引擎。全七强、同 seed 双座的 28 行 parity 中，终局 cash、
+对手 cash、margin 和 error 逐项完全一致；平均单局由 `14.29s` 降到 `8.00s`（`1.79×`）。它只
+用于候选筛查，最终准入仍回官方引擎。
+
+作物尾值又定位到一个精确机制：hard id1 的 `+24 MELON` 是 day13 收获提前到 day12，整局数量
+差为零，并非新增产量。策略改变空地数还会改变 weed 抽样消耗的 RNG，进而让后续商店分叉，所以
+同 seed proposal 反事实也含不可观测方差。让 proposals 共用 base 的 incumbent harvest date，
+X4 曾使五个弱手全部 `+2/8`；但仅首次 handoff 的严格版本在独立 Z8 为 Melon `+4/16`、
+Ahmed/Pipe 各 `+2/16`，同时 Thomas `-4/16`。147 维公开状态无法稳定区分 Thomas/Melon，故不做
+bot-style gate，实验宏已撤除。direct-payoff default/base 浅树在 L/O/P leave-one-block-out 中也
+持续伤 Thomas，W8 盲测集保持未用于规则选择。
+
 ### 2026-09-21 最新抓手：接管首日交易，而不是再训路线树
 
 正式 warm 64-seed 的阶段归因把优先级收敛为：接管首日交易/资本选择 > 中后期 DP 的价格冲击
