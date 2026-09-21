@@ -37,6 +37,20 @@ animal/seed/sale guard。统一 id0 也不成立：O8 七强救14伤0，fresh P1
 `-4`。candidate-diff 宽 veto 在 M16 伤三手，四块后验窄 band 在 Q16 七手胜数全不变且多数分差
 下降。后续只研究共同尾值/风险评价，不再扩大 route、timing 或阈值门控。
 
+最新 score 分解显示，hard 6 cells 的 id1-id0 h1 优势平均 `+1774`，当天自身现金仅 `+5`、竞争
+项约 `-0.3`；优势几乎全部来自共同 base tail 对未来作物交易的 `+2170` 估值。真实 suffix 中
+id1 自身现金反而平均少 `3845`、margin 少 `1313`。所以主误差是候选诱发作物流和后续重规划未被
+固定 public-flow 模型兑现，不是 competition 系数。
+
+四个最小机制检查都未准入：`tail=roll` 在 fresh A8 全部候选数据 bit-exact；终局 rollout 在
+fresh S8 使 Melon `-4/16`；当前价作物流惩罚虽修正 hard `6/6`，却在 fresh P16 使 Thomas
+`rescue2/hurt6` 并伤 Ahmed/Demand/Pipe；次日恢复候选前 `book` 在 T8 给 Thomas `+2/16`，
+但 fresh 七强 U8 使 Melon/Demand/Ahmed/Pipe 各 `-1/16`。实验宏均已撤除，生产动作未改变。
+产物：`work/warm-common-tail-roll-public7-R8-2617500000.json`、
+`work/warm-full-score-rollout-thomas-melon-S8-2617600000.json`、
+`work/warm-one-day-proposal-book-thomas-melon-T8-2617700000.json`、
+`work/warm-one-day-proposal-book-public7-U8-2617800000.json`。
+
 ### 2026-09-21 阶段归因与成交顺序证伪
 
 当前抓手排序是：**接管首日交易与资本配置 > 中后期 DP 的商品结构/价格冲击放大 > 前期路线切换**。

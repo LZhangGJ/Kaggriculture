@@ -45,6 +45,20 @@ Ahmed `-4`；两层 candidate-diff veto 在 M16 伤 Demand/Ahmed/Pipe；由四�
 band 在 Q16 七强 `Δwin` 全 0 且多数分差下降。结论是可复现根因已到 **共同尾值/风险评分不能
 可靠区分首日资本计划**，下一步应修正统一评价目标，不再堆 route、timing 或后验阈值。
 
+进一步的数值分解把根因缩小到作物尾值：hard 6 cells 中 id1 相对 id0 的 h1 预测优势平均
+`+1774`，intervention-day 自身现金只贡献 `+5`，竞争项约 `-0.3`；共同 base tail 的未来作物
+交易却贡献 `+2170`，扣除工资、动作和对手收益后仍把符号判反。真实官方 suffix 中 id1 的自身
+现金平均少 `3845`，最终 margin 少 `1313`。因此 competition、discount 或 sale timing 都不是
+这一批错排的主因，而是候选诱发的未来作物流及后续重规划没有被固定 public-flow 模型兑现。
+
+三个机制候选均只在 warm 链上快速证伪并已从正式源码撤除。把共同 tail 从 `live` 改为完整
+rollout controller，在 fresh A8 的候选分数、1–5 日 horizon、features 和 suffix 全部 bit-exact；
+View 加 `book/joint` 的状态传递没有 bug。把公开情景滚到终局，在 fresh S8 上 Thomas 胜数不变、
+Melon `-4/16`。按当前价格扣除正向未来作物流能修正 hard `6/6`，但 fresh P16 让 Thomas
+`rescue2/hurt6`，并伤 Ahmed/Demand/Pipe。最后严格落实“一日干预”，次日恢复干预前 `book`，
+T8 曾让 Thomas `+2/16`，但 fresh 七强 U8 使 Melon/Demand/Ahmed/Pipe 各 `-1/16`。这些结果
+说明当前可解释的统一修正仍在优化平均现金代理，而不能稳定优化胜负；生产 R1 保持不变。
+
 ### 2026-09-21 最新抓手：接管首日交易，而不是再训路线树
 
 正式 warm 64-seed 的阶段归因把优先级收敛为：接管首日交易/资本选择 > 中后期 DP 的价格冲击
