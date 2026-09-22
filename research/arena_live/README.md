@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 22, 2026 at 11:19 AM UTC
+Updated: Sep 22, 2026 at 11:21 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -114,35 +114,35 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 22, 2026 at 11:19 AM UTC
+Last updated: Sep 22, 2026 at 11:20 AM UTC
 
-Status: running Â· Last sync: Sep 22, 2026 at 11:19 AM UTC
+Status: running Â· Last sync: Sep 22, 2026 at 11:20 AM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
 | kaggriculture-pipe18-six-layers **PUBLIC** | 1967.3 | 1808 | 77.3% | ffc8942965 |
 | your-market-list-is-an-order-book **PUBLIC** | 1933.0 | 2536 | 69.6% | ffc8942965 |
-| kaggriculture-master-engine-v3 **PUBLIC** | 1910.9 | 2120 | 70.1% | ffc8942965 |
-| kaggriculture-one-more-wheat **PUBLIC** | 1892.4 | 8142 | 71.3% | ffc8942965 |
+| kaggriculture-master-engine-v3 **PUBLIC** | 1910.8 | 2120 | 70.1% | ffc8942965 |
+| kaggriculture-one-more-wheat **PUBLIC** | 1892.3 | 8142 | 71.3% | ffc8942965 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer **PUBLIC** | 1890.3 | 2274 | 65.9% | ffc8942965 |
-| kaggriculture-v55-one-turn-market-race-edge **PUBLIC** | 1867.9 | 2198 | 64.0% | ffc8942965 |
-| notebookdb6965aa8e **PUBLIC** | 1859.8 | 8838 | 66.3% | ffc8942965 |
+| kaggriculture-v55-one-turn-market-race-edge **PUBLIC** | 1867.8 | 2198 | 64.0% | ffc8942965 |
+| notebookdb6965aa8e **PUBLIC** | 1859.7 | 8838 | 66.3% | ffc8942965 |
 | kaggriculture-pipe16-idle-workers **PUBLIC** | 1854.4 | 8844 | 65.9% | ffc8942965 |
 | kaggriculture-a-smaller-market-shock **PUBLIC** | 1821.4 | 9960 | 62.8% | ffc8942965 |
 | the-metav4-farm-submission-v13 **PUBLIC** | 1788.3 | 2970 | 56.9% | ffc8942965 |
 | A06 R9C6 | 1747.9 | 56490 | 56.3% | ffc8942965 |
-| A06 R9C7 five-day | 1744.2 | 66044 | 56.9% | ffc8942965 |
-| 2842-two-identical-agents-90-points-apart **PUBLIC** | 1743.6 | 30572 | 57.8% | ffc8942965 |
-| R03goosefix | 1737.7 | 50776 | 57.4% | ffc8942965 |
-| A06 R6 | 1727.9 | 69052 | 58.9% | ffc8942965 |
+| A06 R9C7 five-day | 1744.1 | 66044 | 56.9% | ffc8942965 |
+| 2842-two-identical-agents-90-points-apart **PUBLIC** | 1743.5 | 30572 | 57.8% | ffc8942965 |
+| R03goosefix | 1737.6 | 50776 | 57.4% | ffc8942965 |
+| A06 R6 | 1727.8 | 69054 | 58.9% | ffc8942965 |
 | Day 9 planner selector | 1690.6 | 78558 | 54.1% | ffc8942965 |
 | DP Melon Cyborg V4  gooseoverflow | 1689.0 | 46476 | 53.2% | ffc8942965 |
-| DP Melon Cyborg R4  invincible | 1673.6 | 45062 | 49.8% | ffc8942965 |
+| DP Melon Cyborg R4  invincible | 1673.5 | 45062 | 49.8% | ffc8942965 |
 | TRI_A06_r6_r3_bundle_fix1 | 1669.6 | 69150 | 53.0% | ffc8942965 |
 | TRI_A06_r12_r3_fix1 | 1668.3 | 70000 | 52.7% | ffc8942965 |
-| TRI_A08_r11_r3 | 1589.9 | 65988 | 43.8% | ffc8942965 |
-| Broad PPO CP800 | 1299.1 | 592 | 14.0% | ffc8942965 |
-| Broad PPO CP559 | 1265.9 | 4276 | 21.3% | ffc8942965 |
+| TRI_A08_r11_r3 | 1589.8 | 65988 | 43.8% | ffc8942965 |
+| Broad PPO CP800 | 1304.1 | 600 | 14.7% | ffc8942965 |
+| Broad PPO CP559 | 1265.1 | 4282 | 21.3% | ffc8942965 |
 | Broad PPO CP650 | 1164.6 | 2202 | 10.3% | ffc8942965 |
 
 ## Retired agents
@@ -462,11 +462,11 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 144204/144204 |
+| cumulative-active-ffc8942965b1 | Provisional | 144212/144212 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:20 AM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
@@ -474,25 +474,25 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
 | your-market-list-is-an-order-book | 1.28 | 1707 / 762 / 12 | 68.8% | 69.0% | 1,977 |
 | kaggriculture-master-engine-v3 | 1.16 | 1427 / 633 / 2 | 69.2% | 69.3% | 2,026 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | 1.03 | 1351 / 675 / 202 | 60.6% | 65.2% | 2,052 |
-| kaggriculture-v55-one-turn-market-race-edge | 0.92 | 1271 / 694 / 196 | 58.8% | 63.4% | 1,897 |
+| kaggriculture-v55-one-turn-market-race-edge | 0.91 | 1271 / 694 / 196 | 58.8% | 63.4% | 1,897 |
 | kaggriculture-one-more-wheat | 0.86 | 4584 / 2230 / 78 | 66.5% | 67.1% | 2,346 |
 | notebookdb6965aa8e | 0.63 | 4175 / 2535 / 760 | 55.9% | 61.0% | 1,794 |
 | 2842-two-identical-agents-90-points-apart | 0.62 | 10822 / 6223 / 1 | 63.5% | 63.5% | 1,428 |
 | the-metav4-farm-submission-v13 | 0.61 | 1659 / 1279 / 0 | 56.5% | 56.5% | 2,468 |
-| Day 9 planner selector | 0.61 | 17503 / 10642 / 1 | 62.2% | 62.2% | 2,669 |
+| Day 9 planner selector | 0.60 | 17503 / 10642 / 1 | 62.2% | 62.2% | 2,669 |
 | kaggriculture-pipe16-idle-workers | 0.60 | 4176 / 2576 / 760 | 55.6% | 60.6% | 1,958 |
 | kaggriculture-a-smaller-market-shock | 0.48 | 4230 / 2950 / 0 | 58.9% | 58.9% | 2,047 |
 | R03goosefix | 0.21 | 11273 / 9883 / 4 | 53.3% | 53.3% | -186 |
 | A06 R9C6 | 0.19 | 10961 / 11371 / 860 | 47.3% | 49.1% | 427 |
-| A06 R9C7 five-day | 0.19 | 13976 / 13762 / 0 | 50.4% | 50.4% | 739 |
-| A06 R6 | 0.08 | 12146 / 12485 / 858 | 47.7% | 49.3% | 388 |
+| A06 R9C7 five-day | 0.18 | 13976 / 13762 / 0 | 50.4% | 50.4% | 739 |
+| A06 R6 | 0.08 | 12148 / 12485 / 858 | 47.7% | 49.3% | 389 |
 | TRI_A06_r12_r3_fix1 | -0.02 | 10738 / 11745 / 4 | 47.8% | 47.8% | 135 |
 | TRI_A06_r6_r3_bundle_fix1 | -0.26 | 9207 / 12711 / 0 | 42.0% | 42.0% | -762 |
 | DP Melon Cyborg V4  gooseoverflow | -0.38 | 7542 / 9789 / 2 | 43.5% | 43.5% | -1,273 |
 | DP Melon Cyborg R4  invincible | -0.46 | 7360 / 10722 / 2 | 40.7% | 40.7% | -1,905 |
 | TRI_A08_r11_r3 | -1.05 | 4458 / 13936 / 2 | 24.2% | 24.2% | -4,637 |
-| Broad PPO CP800 | -2.51 | 83 / 515 / 0 | 13.9% | 13.9% | -11,068 |
-| Broad PPO CP559 | -2.95 | 211 / 2325 / 0 | 8.3% | 8.3% | -15,493 |
+| Broad PPO CP800 | -2.49 | 88 / 518 / 0 | 14.5% | 14.5% | -10,922 |
+| Broad PPO CP559 | -2.96 | 212 / 2330 / 0 | 8.3% | 8.3% | -15,468 |
 | Broad PPO CP650 | -3.33 | 117 / 1479 / 0 | 7.3% | 7.3% | -14,805 |
 
 <details><summary>Win rate by opponent and seat</summary>
@@ -619,7 +619,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
 | Broad PPO CP800 | TRI_A06_r12_r3_fix1 | 2/25 | 8.0% | 1/12 | 1/13 |
 | Broad PPO CP800 | Day 9 planner selector | 1/30 | 3.3% | 1/15 | 0/15 |
 | Broad PPO CP800 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/20 | 0.0% | 0/10 | 0/10 |
-| Broad PPO CP800 | Broad PPO CP559 | 26/38 | 68.4% | 14/19 | 12/19 |
+| Broad PPO CP800 | Broad PPO CP559 | 31/44 | 70.5% | 16/22 | 15/22 |
 | Broad PPO CP800 | TRI_A08_r11_r3 | 4/32 | 12.5% | 2/16 | 2/16 |
 | Broad PPO CP800 | kaggriculture-a-smaller-market-shock | 0/22 | 0.0% | 0/11 | 0/11 |
 | Broad PPO CP800 | DP Melon Cyborg R4  invincible | 2/22 | 9.1% | 1/11 | 1/11 |
@@ -632,7 +632,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
 | Broad PPO CP800 | Broad PPO CP650 | 35/40 | 87.5% | 18/20 | 17/20 |
 | Broad PPO CP800 | kaggriculture-pipe16-idle-workers | 2/32 | 6.2% | 1/16 | 1/16 |
 | Broad PPO CP800 | A06 R9C7 five-day | 0/20 | 0.0% | 0/10 | 0/10 |
-| Broad PPO CP800 | A06 R6 | 2/23 | 8.7% | 1/11 | 1/12 |
+| Broad PPO CP800 | A06 R6 | 2/25 | 8.0% | 1/12 | 1/13 |
 | Broad PPO CP800 | kaggriculture-master-engine-v3 | 0/22 | 0.0% | 0/11 | 0/11 |
 | Broad PPO CP800 | R03goosefix | 1/30 | 3.3% | 0/15 | 1/15 |
 | Broad PPO CP800 | kaggriculture-one-more-wheat | 0/22 | 0.0% | 0/11 | 0/11 |
@@ -642,7 +642,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
 | Broad PPO CP559 | TRI_A06_r12_r3_fix1 | 4/136 | 2.9% | 1/68 | 3/68 |
 | Broad PPO CP559 | Day 9 planner selector | 1/94 | 1.1% | 1/47 | 0/47 |
 | Broad PPO CP559 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/32 | 0.0% | 0/16 | 0/16 |
-| Broad PPO CP559 | Broad PPO CP800 | 12/38 | 31.6% | 7/19 | 5/19 |
+| Broad PPO CP559 | Broad PPO CP800 | 13/44 | 29.5% | 7/22 | 6/22 |
 | Broad PPO CP559 | TRI_A08_r11_r3 | 0/80 | 0.0% | 0/40 | 0/40 |
 | Broad PPO CP559 | kaggriculture-a-smaller-market-shock | 0/80 | 0.0% | 0/40 | 0/40 |
 | Broad PPO CP559 | DP Melon Cyborg R4  invincible | 4/134 | 3.0% | 2/67 | 2/67 |
@@ -941,7 +941,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 22, 2026 at 11:19 AM UTC
 | A06 R6 | TRI_A06_r12_r3_fix1 | 1093/2222 | 49.2% | 547/1111 | 546/1111 |
 | A06 R6 | Day 9 planner selector | 341/2454 | 13.9% | 164/1227 | 177/1227 |
 | A06 R6 | kaggriculture-v56-smarter-seeds-and-fertilizer | 47/152 | 30.9% | 25/76 | 22/76 |
-| A06 R6 | Broad PPO CP800 | 21/23 | 91.3% | 11/12 | 10/11 |
+| A06 R6 | Broad PPO CP800 | 23/25 | 92.0% | 12/13 | 11/12 |
 | A06 R6 | Broad PPO CP559 | 153/160 | 95.6% | 77/80 | 76/80 |
 | A06 R6 | TRI_A08_r11_r3 | 1224/1526 | 80.2% | 614/763 | 610/763 |
 | A06 R6 | kaggriculture-a-smaller-market-shock | 316/746 | 42.4% | 155/373 | 161/373 |
@@ -1816,7 +1816,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
-- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
 - kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- AFS R1 vs AFS R2: -8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
