@@ -196612,21 +196612,21 @@
         "score": 0.0
       }
     ],
-    "updated": "2026-09-22T01:15:57.870033+00:00"
+    "updated": "2026-09-22T01:17:25.153006+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-22T01:15:58.000107+00:00",
+    "at": "2026-09-22T01:17:25.272454+00:00",
     "status": "running",
     "workers": {
       "mini": {
-        "at": "2026-09-22T01:15:39.796980+00:00",
+        "at": "2026-09-22T01:17:05.946610+00:00",
         "daily_games_pending": 0,
         "pending_rounds": 3,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
         "status": "running"
       },
       "vast": {
-        "at": "2026-09-22T01:15:57.986072+00:00",
+        "at": "2026-09-22T01:17:25.260308+00:00",
         "daily_games_pending": 0,
         "pending_rounds": 2,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
@@ -303563,5 +303563,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-22T01:16:20.632527+00:00"
+  "updated": "2026-09-22T01:17:52.244304+00:00"
 }
