@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 23, 2026 at 8:32 AM UTC
+Updated: Sep 23, 2026 at 8:35 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -119,9 +119,9 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 23, 2026 at 8:31 AM UTC
+Last updated: Sep 23, 2026 at 8:34 AM UTC
 
-Status: running Â· Last sync: Sep 23, 2026 at 8:31 AM UTC
+Status: running Â· Last sync: Sep 23, 2026 at 8:34 AM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
@@ -146,6 +146,7 @@ Status: running Â· Last sync: Sep 23, 2026 at 8:31 AM UTC
 | TRI_A06_r6_r3_bundle_fix1 | 1658.4 | 70402 | 52.7% | ffc8942965 |
 | TRI_A06_r12_r3_fix1 | 1657.8 | 71416 | 52.5% | ffc8942965 |
 | TRI_A08_r11_r3 | 1579.5 | 67208 | 43.6% | ffc8942965 |
+| Broad PPO CP1020 | 1500.0 | 0 | â€” | ffc8942965 |
 | Broad PPO CP800 | 1319.6 | 2198 | 19.4% | ffc8942965 |
 | Broad PPO CP559 | 1234.5 | 4934 | 21.5% | ffc8942965 |
 
@@ -1835,9 +1836,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 1:56 PM UTC
 
 Same versions only; descriptive changes, not significance tests.
 
-- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
+- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.

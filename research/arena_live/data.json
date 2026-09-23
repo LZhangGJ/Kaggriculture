@@ -177198,6 +177198,11 @@
         ]
       },
       {
+        "agent": "db24d323532f656304cc13eb354556ade38d6b4d441a5dc20007b80953dabd07",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "points": []
+      },
+      {
         "agent": "ddec33c3c779aa16dce402cd3212e841fa83c0ad90ce1c7e02ad736f403ae38d",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
         "points": [
@@ -206794,6 +206799,13 @@
         "score": 0.3538122099899918
       },
       {
+        "agent": "db24d323532f656304cc13eb354556ade38d6b4d441a5dc20007b80953dabd07",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1500.0,
+        "games": 0,
+        "score": null
+      },
+      {
         "agent": "6549cbc36dc3950eee8e4cbcbb33ee2ad0a542eaf1c2b81d0d09c9c861d86221",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
         "elo": 1482.9559575144142,
@@ -206969,23 +206981,23 @@
         "score": 0.0
       }
     ],
-    "updated": "2026-09-23T08:31:25.875866+00:00"
+    "updated": "2026-09-23T08:34:49.819676+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-23T08:31:26.028060+00:00",
+    "at": "2026-09-23T08:34:49.979512+00:00",
     "status": "running",
     "workers": {
       "mini": {
-        "at": "2026-09-23T08:31:07.500371+00:00",
+        "at": "2026-09-23T08:33:45.107559+00:00",
         "daily_games_pending": 0,
-        "pending_rounds": 2,
+        "pending_rounds": 3,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
         "status": "running"
       },
       "vast": {
-        "at": "2026-09-23T08:31:26.013302+00:00",
+        "at": "2026-09-23T08:34:49.964881+00:00",
         "daily_games_pending": 0,
-        "pending_rounds": 2,
+        "pending_rounds": 3,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
         "status": "running"
       }
@@ -325653,5 +325665,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-23T08:32:57.583628+00:00"
+  "updated": "2026-09-23T08:35:10.374975+00:00"
 }
