@@ -503,7 +503,8 @@ def _collect_native_job_batch(
               for name, value in batch.ppo_arrays().items()}
     _validate_native_job_routes(arrays, len(jobs), jobs)
     results = ppo_games(
-        arrays, margin_weight=args.margin_weight, margin_scale=args.margin_scale)
+        arrays, margin_weight=args.margin_weight, margin_scale=args.margin_scale,
+        materialize_events=False)
     total_seconds = time.perf_counter() - started
     if len(results) != len(jobs):
         raise RuntimeError("native JobBatch result count mismatch")
@@ -551,15 +552,24 @@ def _batch_terms(model, games: list[dict], device: torch.device,
             for day in game["days"]]
     if not days:
         raise RuntimeError("empty PPO trajectory batch")
+    native = "native_index" in days[0][1]
+    if native:
+        values = days[0][1]["native_arrays"]
+        day_ids = np.asarray([day["native_index"] for _game, day in days],
+                             dtype=np.int64)
+        offsets = values["day_event_offsets"]
 
     def state(name, dtype):
-        return torch.from_numpy(np.concatenate(
-            [day["state"][name] for _game, day in days], axis=0)).to(
+        rows = (values[name][day_ids] if native else np.concatenate(
+            [day["state"][name] for _game, day in days], axis=0))
+        return torch.from_numpy(np.ascontiguousarray(rows)).to(
                 device=device, dtype=dtype)
 
-    categories = [torch.from_numpy(np.concatenate(
-        [day["state"]["token_categories"][index] for _game, day in days],
-        axis=0)).to(device=device, dtype=torch.long)
+    categories = [torch.from_numpy(np.ascontiguousarray(
+        values["token_categories"][day_ids, index] if native else
+        np.concatenate([
+            day["state"]["token_categories"][index] for _game, day in days],
+            axis=0))).to(device=device, dtype=torch.long)
                   for index in range(7)]
     hidden = model.initial_hidden(
         state("context", torch.float32),
@@ -569,24 +579,32 @@ def _batch_terms(model, games: list[dict], device: torch.device,
         state("token_count", torch.long))
     previous = torch.full(
         (len(days),), len(EVENT_CLASSES), device=device, dtype=torch.long)
-    lengths = np.asarray([len(day["events"]) for _game, day in days])
+    lengths = (offsets[day_ids + 1] - offsets[day_ids] if native else
+               np.asarray([len(day["events"]) for _game, day in days]))
     logprobs, old_logprobs, entropies = [], [], []
     actionable, event_games, event_days = [], [], []
     for event_index in range(int(lengths.max())):
         active_np = np.flatnonzero(event_index < lengths)
         active = torch.as_tensor(active_np, device=device, dtype=torch.long)
-        rows = [days[index][1]["events"][event_index] for index in active_np]
-        resources = torch.from_numpy(np.concatenate(
-            [row["resources"] for row in rows], axis=0)).to(
+        event_ids = offsets[day_ids[active_np]] + event_index if native else None
+        rows = ([] if native else
+                [days[index][1]["events"][event_index] for index in active_np])
+        resources_np = (values["event_resources"][event_ids] if native else
+                        np.concatenate([row["resources"] for row in rows], axis=0))
+        resources = torch.from_numpy(np.ascontiguousarray(resources_np)).to(
                 device=device, dtype=torch.float32)
-        cells = torch.tensor(
+        cells = torch.as_tensor(
+            values["event_cell"][event_ids] if native else
             [row["cell"] for row in rows], device=device, dtype=torch.long)
-        stages = torch.tensor(
+        stages = torch.as_tensor(
+            values["event_stage"][event_ids] if native else
             [row["stage"] for row in rows], device=device, dtype=torch.long)
-        legal = torch.from_numpy(np.concatenate(
-            [row["legal"] for row in rows], axis=0)).to(
+        legal_np = (values["event_legal"][event_ids] if native else
+                    np.concatenate([row["legal"] for row in rows], axis=0))
+        legal = torch.from_numpy(np.ascontiguousarray(legal_np)).to(
                 device=device, dtype=torch.bool)
-        actions = torch.tensor(
+        actions = torch.as_tensor(
+            values["event_action"][event_ids] if native else
             [row["action"] for row in rows], device=device, dtype=torch.long)
         logits, next_hidden = model.step(
             hidden.index_select(0, active), resources, cells, stages,
@@ -594,12 +612,14 @@ def _batch_terms(model, games: list[dict], device: torch.device,
         distribution = torch.distributions.Categorical(
             logits=logits.float() / temperature)
         logprobs.append(distribution.log_prob(actions))
-        old_logprobs.append(torch.tensor(
+        old_logprobs.append(torch.as_tensor(
+            values["old_logprob"][event_ids] if native else
             [row["old_logprob"] for row in rows],
             device=device, dtype=torch.float32))
         entropies.append(distribution.entropy())
         actionable.extend(
-            int(row["legal_mask"]).bit_count() > 1 for row in rows)
+            (np.count_nonzero(legal_np, axis=1) > 1).tolist() if native else
+            (int(row["legal_mask"]).bit_count() > 1 for row in rows))
         event_games.extend(days[index][0] for index in active_np)
         event_days.extend(map(int, active_np))
         hidden = hidden.index_copy(0, active, next_hidden)
@@ -965,7 +985,8 @@ def _restore_native_games(arrays: dict[str, np.ndarray], game_metadata: list[dic
     from experiments.native_student_actor.native_job_batch import ppo_games
 
     games = ppo_games(
-        arrays, margin_weight=margin_weight, margin_scale=margin_scale)
+        arrays, margin_weight=margin_weight, margin_scale=margin_scale,
+        materialize_events=False)
     _validate_native_job_routes(arrays, len(games))
     if len(games) != len(game_metadata):
         raise RuntimeError("native rollout game metadata count mismatch")

@@ -15,7 +15,8 @@ OPPONENT_NAMES = {
 
 
 def ppo_games(arrays: dict, margin_weight: float = 0.1,
-              margin_scale: float = 10_000.0) -> list[dict]:
+              margin_scale: float = 10_000.0,
+              materialize_events: bool = True) -> list[dict]:
     """Expose native contiguous arrays through the current PPO list contract.
 
     Array slices are views; this deliberately does not duplicate the large
@@ -29,6 +30,13 @@ def ppo_games(arrays: dict, margin_weight: float = 0.1,
     for session in range(session_count):
         days = []
         for day in np.flatnonzero(day_sessions == session):
+            if not materialize_events:
+                days.append({
+                    "step": int(values["day_step"][day]),
+                    "native_index": int(day),
+                    "native_arrays": values,
+                })
+                continue
             events = []
             for event in range(int(offsets[day]), int(offsets[day + 1])):
                 events.append({
