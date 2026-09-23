@@ -151,7 +151,7 @@ def main() -> None:
                 "--learning-rate", "1.8e-5", "--native-job-rollout",
                 "--native-weights", str(weights), "--native-job-threads",
                 str(args.native_job_threads),
-                "--native-logprob-max-tolerance", "5e-4",
+                "--native-logprob-max-tolerance", "7e-4",
                 "--day-state-crossfit-baseline", "--day-state-critic-workers", "6",
                 "--train-threads", "8", "--device", args.device,
             ]

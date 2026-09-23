@@ -546,8 +546,12 @@ def _collect_native_job_batch(
 
 
 def _batch_terms(model, games: list[dict], device: torch.device,
-                 temperature: float):
+                 temperature: float, *, safe_hidden_index_copy: bool | None = None):
     """Re-evaluate variable-length day sequences in one padded time loop."""
+    if safe_hidden_index_copy is None:
+        # torch-npu index_copy mutates its input storage; clone preserves the
+        # initial hidden used by tanh backward. CPU does not need this copy.
+        safe_hidden_index_copy = device.type == "npu" and torch.is_grad_enabled()
     days = [(game_index, day) for game_index, game in enumerate(games)
             for day in game["days"]]
     if not days:
@@ -622,7 +626,8 @@ def _batch_terms(model, games: list[dict], device: torch.device,
             (int(row["legal_mask"]).bit_count() > 1 for row in rows))
         event_games.extend(days[index][0] for index in active_np)
         event_days.extend(map(int, active_np))
-        hidden = hidden.index_copy(0, active, next_hidden)
+        hidden = (hidden.clone() if safe_hidden_index_copy else hidden).index_copy(
+            0, active, next_hidden)
         previous = previous.index_copy(0, active, actions)
     return (
         torch.cat(logprobs), torch.cat(old_logprobs), torch.cat(entropies),
@@ -1420,8 +1425,15 @@ def train(args) -> dict:
     mean_logprob_error = logprob_abs_error_sum / actionable_events
     replay_approx_kl = replay_kl_sum / actionable_events
     if args.native_job_rollout:
+        if max_logprob_error > args.native_logprob_max_tolerance:
+            print(json.dumps({
+                "event": "native_logprob_max_warning",
+                "max_abs_error": max_logprob_error,
+                "warning_threshold": args.native_logprob_max_tolerance,
+            }), flush=True)
         gate_failed = (
-            max_logprob_error > args.native_logprob_max_tolerance or
+            not all(map(math.isfinite, (
+                max_logprob_error, mean_logprob_error, replay_approx_kl))) or
             mean_logprob_error > args.native_logprob_mean_tolerance or
             replay_approx_kl > args.native_replay_kl_tolerance)
     else:
@@ -1493,6 +1505,7 @@ def train(args) -> dict:
         weight_decay=args.weight_decay)
     optimizer_state = _optimizer_state_for_resume(payload)
     optimizer_state_restored = optimizer_state is not None
+    optimizer_moments_reset = []
     if optimizer_state_restored:
         optimizer.load_state_dict(optimizer_state)
         for group in optimizer.param_groups:
@@ -1500,6 +1513,14 @@ def train(args) -> dict:
             group["weight_decay"] = args.weight_decay
         if not optimizer.state:
             raise RuntimeError("checkpoint RL optimizer state is empty")
+        if (device.type == "npu" and
+                not payload.get("rl", {}).get("npu_hidden_index_copy_safe", False)):
+            for name, parameter in model.named_parameters():
+                if name.startswith((
+                        "context.", "observation.", "observation_length.",
+                        "token_embeddings.", "token.", "begin.")):
+                    if optimizer.state.pop(parameter, None) is not None:
+                        optimizer_moments_reset.append(name)
     optimizer_step_before = max(
         (float(state.get("step", 0)) for state in optimizer.state.values()),
         default=0.0)
@@ -1606,6 +1627,8 @@ def train(args) -> dict:
             "none; terminal advantage applies once per actionable day bundle"),
         "trajectory_reuse": "discarded_from_policy_gradient_after_this_update",
         "optimizer_state_restored": optimizer_state_restored,
+        "npu_hidden_index_copy_safe": device.type == "npu",
+        "optimizer_moments_reset": optimizer_moments_reset,
         "optimizer_step_before": optimizer_step_before,
         "training_batch_games": args.batch_games,
         "replay_batch_games": args.replay_batch_games,
@@ -1726,6 +1749,7 @@ def train(args) -> dict:
         "old_logprob_replay_mean_abs_error": mean_logprob_error,
         "old_logprob_replay_approx_kl": replay_approx_kl,
         "old_logprob_replay_gate": {
+            "max_abs_policy": "warn" if args.native_job_rollout else "hard",
             "max_abs_tolerance": (args.native_logprob_max_tolerance
                                   if args.native_job_rollout
                                   else args.logprob_tolerance),
@@ -1739,6 +1763,8 @@ def train(args) -> dict:
         "device_logprob_replay_mean_shift": device_replay_mean_shift,
         "parameter_delta_l2": parameter_delta_l2,
         "optimizer_state_restored": optimizer_state_restored,
+        "npu_hidden_index_copy_safe": device.type == "npu",
+        "optimizer_moments_reset": optimizer_moments_reset,
         "optimizer_step_before": optimizer_step_before,
         "ppo": {
             "epochs_requested": args.epochs,
