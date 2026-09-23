@@ -209496,21 +209496,21 @@
         "score": 0.0
       }
     ],
-    "updated": "2026-09-23T20:29:40.193213+00:00"
+    "updated": "2026-09-23T20:30:42.655592+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-23T20:29:40.409330+00:00",
+    "at": "2026-09-23T20:30:42.789545+00:00",
     "status": "running",
     "workers": {
       "mini": {
-        "at": "2026-09-23T20:29:20.006769+00:00",
+        "at": "2026-09-23T20:30:21.858939+00:00",
         "daily_games_pending": 0,
         "pending_rounds": 2,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
         "status": "running"
       },
       "vast": {
-        "at": "2026-09-23T20:29:40.395301+00:00",
+        "at": "2026-09-23T20:30:42.775437+00:00",
         "daily_games_pending": 0,
         "pending_rounds": 3,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
@@ -315408,7 +315408,7 @@
     },
     {
       "complete": false,
-      "completed": 152510,
+      "completed": 152511,
       "components": [
         [
           "0af437c2cdce945e16abb690df5c79d6fb618576f7b0c18b280cad672165de28",
@@ -315438,8 +315438,8 @@
         ]
       ],
       "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
-      "created": "2026-09-23T20:29:42.986747+00:00",
-      "fingerprint": "2e13bd602bcdea52ed30b68690a2714dc5ef0ebae6e95973eea8b6aa9fefa051",
+      "created": "2026-09-23T20:30:45.247840+00:00",
+      "fingerprint": "4b340a6a0749d618996b0818cb9be51409a3e2f78aaa67766de2b690598e30b5",
       "intervals": {
         "0af437c2cdce945e16abb690df5c79d6fb618576f7b0c18b280cad672165de28": null,
         "0b5eb9560f4e1ab35244b77b936fd1e8023a7937aa20dbe7a95de98002f3205f": null,
@@ -323964,14 +323964,14 @@
           "cash_games": 123,
           "cash_margin": 11998.772357723577,
           "draws": 0,
-          "games": 123,
+          "games": 124,
           "losses": 15,
-          "score": 0.8780487804878049,
+          "score": 0.8790322580645161,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 61,
-              "wins": 54
+              "games": 62,
+              "wins": 55
             },
             "1": {
               "draws": 0,
@@ -323979,8 +323979,8 @@
               "wins": 54
             }
           },
-          "win_rate": 0.8780487804878049,
-          "wins": 108
+          "win_rate": 0.8790322580645161,
+          "wins": 109
         },
         "c39c5fa58520f866e7fbeab5a67d21391b68ba7d9b004ed801cb1e431e0026a7:e0bb8ef97093800179b68927f168ff208b2d5c5d04c16cc54e20edfe0a0c709b": {
           "cash_games": 52,
@@ -325438,9 +325438,9 @@
           "cash_games": 123,
           "cash_margin": -11998.772357723577,
           "draws": 0,
-          "games": 123,
-          "losses": 108,
-          "score": 0.12195121951219512,
+          "games": 124,
+          "losses": 109,
+          "score": 0.12096774193548387,
           "seats": {
             "0": {
               "draws": 0,
@@ -325449,11 +325449,11 @@
             },
             "1": {
               "draws": 0,
-              "games": 61,
+              "games": 62,
               "wins": 7
             }
           },
-          "win_rate": 0.12195121951219512,
+          "win_rate": 0.12096774193548387,
           "wins": 15
         },
         "db24d323532f656304cc13eb354556ade38d6b4d441a5dc20007b80953dabd07:d5f2a7c1771712580ea45af1e8ec4218aea3cdcacd76d803a1abc0039f885485": {
@@ -327615,32 +327615,32 @@
       },
       "method": "half-win-bt-v2",
       "method_description": "Bradley-Terry; draws half wins; centered strengths; Gaussian SD=3 regularization; no seat adjustment",
-      "planned": 152510,
+      "planned": 152511,
       "ratings": {
-        "0af437c2cdce945e16abb690df5c79d6fb618576f7b0c18b280cad672165de28": 0.7362113922996343,
-        "0b5eb9560f4e1ab35244b77b936fd1e8023a7937aa20dbe7a95de98002f3205f": 0.41410917601389474,
-        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": -0.03843112912820585,
-        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": 0.5454734125830865,
-        "27dfff16b561e1a3c4f48e0a2801cf74b37b7755f4186e87d72e4d72d5870a50": 0.6646276533619784,
-        "3850bd7370d83a99e8935b619d2a12bf33066e4d5094885d19321bd9e3395a4e": -2.5691514350145312,
-        "3a67e0e0a3d9d43d11cc0022495efa548b31d31421d045cdf8fe52379dfcc1d4": -3.1693948890061403,
-        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": -1.0667258139548588,
-        "5e27e1475b76eb91caac1f64b0be7c53ef60cd61d68bd7e86b2e4ed8c4df8367": 1.125599049852832,
-        "79d5c88570fd9263413b6e980dd92816fcb6e0a40ab89a614a0aef3263a80a77": -0.4811472666959659,
-        "92376f2c47a8702f7e270848544d0aca046d6e70c3dab64cd49a8eebd2411b7b": 0.1576795427682965,
-        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": -0.2906584770940163,
-        "a93964afb01cc1d707f73d6cae1da8265cd7f23515f33a09bce48d14fb8f49e1": 0.9505873749384649,
-        "b0517d490657335452559dbbeedbe05e512cb981873eaf7a41376b9d7def8ed6": 0.6648777336477938,
-        "b1ea30ce8ca65e42e658ec5c18e34bcc322ae59eb1ba7db65afd4aa375aaa988": 0.9016062205647855,
-        "c2d3f5b73506a31560961b2434ed01fb99fff58bf1ac2f14e67c765873fba6a8": 0.4029586185295039,
-        "c39c5fa58520f866e7fbeab5a67d21391b68ba7d9b004ed801cb1e431e0026a7": 1.1547566919424967,
-        "d5f2a7c1771712580ea45af1e8ec4218aea3cdcacd76d803a1abc0039f885485": 0.15672998517049191,
-        "d8f9229d205e4c7cb68c9cc7c76e42617ba68669b704e6477ae01770671b79a4": 0.05062085642250966,
-        "db24d323532f656304cc13eb354556ade38d6b4d441a5dc20007b80953dabd07": -2.0434754322551556,
-        "e0bb8ef97093800179b68927f168ff208b2d5c5d04c16cc54e20edfe0a0c709b": 0.1532830468180683,
-        "e2dd3e9c6e5a9321e048d8ac9ddf9910375b8dfdce4dec8798080442ef1ebe1e": 0.6329472873579092,
-        "ef07d0f404e09e386ee5a088498788c971ac823baf3633a7af6374fad488f769": -0.40121331455179354,
-        "f10acda7d2001872d2ed29a965b473c7fc5c45a36e3bdd8d34cd8f043b354b41": 1.3481297154289216
+        "0af437c2cdce945e16abb690df5c79d6fb618576f7b0c18b280cad672165de28": 0.7362204959725936,
+        "0b5eb9560f4e1ab35244b77b936fd1e8023a7937aa20dbe7a95de98002f3205f": 0.41411881874163614,
+        "1906a69871a303f7d22fac725359b7753d1977855001204c9504a6b886450461": -0.03842195463518024,
+        "235bd66241b98bcbf5e3ed454a7cef5baacde82dca3a5480a531d0955352034a": 0.5454828091686955,
+        "27dfff16b561e1a3c4f48e0a2801cf74b37b7755f4186e87d72e4d72d5870a50": 0.6646371762342478,
+        "3850bd7370d83a99e8935b619d2a12bf33066e4d5094885d19321bd9e3395a4e": -2.569201084325056,
+        "3a67e0e0a3d9d43d11cc0022495efa548b31d31421d045cdf8fe52379dfcc1d4": -3.16944236819774,
+        "3e5c42bb8ed6e739246b6fdb17761ef2c2ea9d05ca7d783d4284dbc234aee1cc": -1.0667178980265017,
+        "5e27e1475b76eb91caac1f64b0be7c53ef60cd61d68bd7e86b2e4ed8c4df8367": 1.1256137216682025,
+        "79d5c88570fd9263413b6e980dd92816fcb6e0a40ab89a614a0aef3263a80a77": -0.4811395287647551,
+        "92376f2c47a8702f7e270848544d0aca046d6e70c3dab64cd49a8eebd2411b7b": 0.15768894455535046,
+        "9a380bdc884acad6875cfc776a80a2f3d0de543f8950426710dc190d250b4472": -0.29064943661400233,
+        "a93964afb01cc1d707f73d6cae1da8265cd7f23515f33a09bce48d14fb8f49e1": 0.9505989220362033,
+        "b0517d490657335452559dbbeedbe05e512cb981873eaf7a41376b9d7def8ed6": 0.6648880147871592,
+        "b1ea30ce8ca65e42e658ec5c18e34bcc322ae59eb1ba7db65afd4aa375aaa988": 0.9016163837786548,
+        "c2d3f5b73506a31560961b2434ed01fb99fff58bf1ac2f14e67c765873fba6a8": 0.40296829846738713,
+        "c39c5fa58520f866e7fbeab5a67d21391b68ba7d9b004ed801cb1e431e0026a7": 1.1548246810674185,
+        "d5f2a7c1771712580ea45af1e8ec4218aea3cdcacd76d803a1abc0039f885485": 0.15673931294968865,
+        "d8f9229d205e4c7cb68c9cc7c76e42617ba68669b704e6477ae01770671b79a4": 0.05063014910875646,
+        "db24d323532f656304cc13eb354556ade38d6b4d441a5dc20007b80953dabd07": -2.0436436953555326,
+        "e0bb8ef97093800179b68927f168ff208b2d5c5d04c16cc54e20edfe0a0c709b": 0.15329170551479554,
+        "e2dd3e9c6e5a9321e048d8ac9ddf9910375b8dfdce4dec8798080442ef1ebe1e": 0.632957177653052,
+        "ef07d0f404e09e386ee5a088498788c971ac823baf3633a7af6374fad488f769": -0.40120560657072435,
+        "f10acda7d2001872d2ed29a965b473c7fc5c45a36e3bdd8d34cd8f043b354b41": 1.3481449607856508
       },
       "run": "cumulative-active-ffc8942965b1",
       "scope": "All resolved daily and continuous games; both versions active; no bootstrap intervals",
@@ -328001,14 +328001,14 @@
           "cash_games": 3513,
           "cash_margin": 2141.2775405636207,
           "draws": 0,
-          "games": 3513,
+          "games": 3514,
           "losses": 1043,
-          "score": 0.7031027611727868,
+          "score": 0.703187250996016,
           "seats": {
             "0": {
               "draws": 0,
-              "games": 1756,
-              "wins": 1231
+              "games": 1757,
+              "wins": 1232
             },
             "1": {
               "draws": 0,
@@ -328016,8 +328016,8 @@
               "wins": 1239
             }
           },
-          "win_rate": 0.7031027611727868,
-          "wins": 2470
+          "win_rate": 0.703187250996016,
+          "wins": 2471
         },
         "d5f2a7c1771712580ea45af1e8ec4218aea3cdcacd76d803a1abc0039f885485": {
           "cash_games": 28157,
@@ -328067,9 +328067,9 @@
           "cash_games": 2311,
           "cash_margin": -8934.604932929467,
           "draws": 0,
-          "games": 2331,
-          "losses": 1836,
-          "score": 0.21235521235521235,
+          "games": 2332,
+          "losses": 1837,
+          "score": 0.21226415094339623,
           "seats": {
             "0": {
               "draws": 0,
@@ -328078,11 +328078,11 @@
             },
             "1": {
               "draws": 0,
-              "games": 1160,
+              "games": 1161,
               "wins": 244
             }
           },
-          "win_rate": 0.21235521235521235,
+          "win_rate": 0.21226415094339623,
           "wins": 495
         },
         "e0bb8ef97093800179b68927f168ff208b2d5c5d04c16cc54e20edfe0a0c709b": {
@@ -328174,9 +328174,9 @@
           "wins": 2355
         }
       },
-      "updated": "2026-09-23T20:29:42.986763+00:00"
+      "updated": "2026-09-23T20:30:45.247861+00:00"
     }
   ],
   "schema": 1,
-  "updated": "2026-09-23T20:30:02.908105+00:00"
+  "updated": "2026-09-23T20:31:04.910835+00:00"
 }
