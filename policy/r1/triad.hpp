@@ -1,4 +1,5 @@
 #pragma once
+#include <algorithm>
 // Triad DP: autonomous economic intent -> conditional calendar -> live executor.
 // No J7 macros, opponent identities, tape library, live Simulator or RNG access.
 #include "planner.hpp"
@@ -7,11 +8,29 @@
 #include "ongoing_maintenance_dp.hpp"
 #include "finite_fertilizer.hpp"
 #include <sstream>
+#include <cstdio>
+#include <cstdlib>
 #include "executor/observed_day_scenario.hpp"
 #include "local_sale_timing.hpp"
 #include "joint_bundle_state.hpp"
+#include <functional>
 #ifndef P16_WORKING_CAPITAL_GATE
 #define P16_WORKING_CAPITAL_GATE 1
+#endif
+#ifndef R2_OPTIMIZER_AUDIT
+#define R2_OPTIMIZER_AUDIT 0
+#endif
+#ifndef R2_STUDENT_SLOT_AUDIT
+#define R2_STUDENT_SLOT_AUDIT 0
+#endif
+#ifndef R2_GREEDY_VALUE_ORDER
+#define R2_GREEDY_VALUE_ORDER 0
+#endif
+#ifndef R2_OUTER_NEIGHBOR_AUDIT
+#define R2_OUTER_NEIGHBOR_AUDIT 0
+#endif
+#ifndef R2_OUTER_BEAM_WIDTH
+#define R2_OUTER_BEAM_WIDTH 0
 #endif
 namespace triad {
 using namespace competitive;
@@ -24,6 +43,23 @@ struct Settings {
  double layout=0,repeat=1,animal_bias=1,crop_bias=1,portfolio_passes=1;
  double crop_fert=1,harvest_threshold=1,delay_sale=0,opening_budget=1;
  double scenario=0,keep_commitments=1;
+ // Runtime switch for the optimal-selling DP in Planner::value(). A compile-time macro was used
+ // before, which forced build.sh to compile the same source twice (base and dp) -- doubling every
+ // build. As a setting it toggles from R1_CONFIG_OVERRIDES with a single binary.
+ double sale_dp=0;
+ // Shared overnight-holding budget for the sale DP. Must leave room for the goods that will
+ // still come in through the workers' hands: the shed has to absorb those at end_of_day, and
+ // anything that does not fit is destroyed. Measured with 90: the DP arm destroyed 30 units
+ // against the base's 1.
+ double sale_hold_cap=90;
+ // Do not let the sale plan bind before this day. Holding defers cash, and early cash hires
+ // workers and buys seed and animals; measured, the DP ran -1,073 behind over days 12-20 alone,
+ // the stretch where cash is tightest. 0 = bind from takeover.
+ double sale_dp_start_day=12;
+ // Weight on value()'s ONLY risk term: -risk * sum_d max(0, -cumulative_balance).
+ // value() is a deterministic own-c*forecast-rival surrogate, not E[margin]. This penalty only
+ // prices forecast insolvency; it does not model the distribution of terminal margin.
+ double risk=1;
  // Recovered candidate expansion; unrelated inactive experiments omitted.
  double candidate_extra=0;
  // T3 switches: 0 is exact legacy behavior; >=1 couples service to forecast;
@@ -44,13 +80,50 @@ struct Commitment {
  bool funded=false;
 };
 struct CropPath {Asset a;int kind=-1,length=0;double value=-1e100;};
+struct GreedySlotAudit {
+ int pos=-1,picked_kind=-1,raw_kind=-1,value_kind=-1,candidates=0;
+ double budget=0,picked_gain=0,raw_gain=-1e100,picked_value_gain=0,raw_value_gain=-1e100,picked_rank=0,raw_rank=0;
+};
+#if R2_STUDENT_SLOT_AUDIT
+struct StudentSlotAudit {
+ int pos=-1,label=-1,legal_mask=1,terminal=0,animals=0,owned=0,slot_index=0,slot_count=0;
+ double budget=0;
+ std::array<int,12>stock_left{};
+ Asset prefix{};
+};
+struct StudentReleaseAudit {
+ int pos=-1,label=0,legal_mask=0;
+ StudentSlotAudit state{};
+};
+struct StudentV3SlotAudit {StudentSlotAudit slot{};int label_class=0,legal_mask=0;};
+#endif
 struct Controller {
+
  Settings s;Planner model;dp7::Controller core;
  JointBundleState joint;
  std::array<Commitment,100>book{};
  int plan_calls=0,candidates=0,deferred=0,kept=0,rotations=0,started=0;
  int portfolio_swap_trials=0,portfolio_swap_accepts=0,portfolio_pair_trials=0,portfolio_pair_accepts=0;
  double portfolio_swap_gain=0,portfolio_pair_gain=0;
+ std::vector<GreedySlotAudit>greedy_audit;
+#if R2_STUDENT_SLOT_AUDIT
+ std::vector<StudentSlotAudit>student_slot_audit;
+ // Offline-only direct actor seam.  It is empty in every production build and
+ // lets a diagnostic caller choose from the exact mask while this one plan is
+ // being constructed, so resources advance in place rather than by replanning
+ // the whole prefix once per slot.
+ std::function<int(const StudentSlotAudit&)>student_selector;
+ std::vector<StudentReleaseAudit>student_release_audit;
+ std::vector<StudentV3SlotAudit>student_v3_slot_audit;
+ std::function<int(const StudentReleaseAudit&)>student_release_selector;
+ std::function<int(const StudentSlotAudit&,int)>student_v3_selector;
+#endif
+#if R2_OUTER_NEIGHBOR_AUDIT
+ std::array<int8_t,100>forced_kind{};
+#endif
+ double greedy_budget_initial=0,greedy_budget_final=0;
+ int greedy_preview_proposed=0,greedy_preview_started=0,greedy_preview_removed=0;
+ bool greedy_preview_checked=false;
  int previous_step=-1;std::array<int,12>previous_stock{};
  Flow prices{},generation_values{};int marginal_value_updates=0;Asset portfolio{};std::array<Asset,100>paths{};
  std::array<int,100>release{},successor{},length{};
@@ -63,12 +136,16 @@ struct Controller {
  int preparation_finance_checks=0,preparation_finance_repairs=0;
  int capital_collects=0,capital_financings=0,capital_refills=0;bool capital_pending=false;
  LocalSaleTiming local_sale;SaleClock sale_memory;
- Controller(Settings settings={}):s(settings),model(),core(model.core.p){configure(settings);}
+ Controller(Settings settings={}):s(settings),model(),core(model.core.p){configure(settings);
+#if R2_OUTER_NEIGHBOR_AUDIT
+  forced_kind.fill(-2);
+#endif
+ }
  void configure(Settings settings){s=settings;
   auto&c=model.cfg;c.competition=s.competition;c.supply=s.supply;c.future_shop=s.future_shop;
   c.capital_power=s.capital_power;c.labor_hours=s.labor_hours;c.action_cost=s.work_price;
   c.reserve=s.reserve;c.max_animals=s.max_animals;c.replant=s.replant;c.discount=s.discount;
-  c.risk=1;c.land_rent=s.land_rent;
+  c.risk=s.risk;c.land_rent=s.land_rent;c.sale_dp=s.sale_dp;c.sale_hold_cap=s.sale_hold_cap;
   auto&p=core.p;p.max_hands=int(s.max_hands);p.max_land=int(s.max_land);p.max_animals=int(s.max_animals);
   p.max_cows=p.max_sheep=p.max_geese=int(s.max_animals);p.max_strawberry=p.max_tomato=p.max_melon=75;
   p.frequent_harvest=true;p.frequent_threshold=std::max(1,int(s.harvest_threshold));
@@ -310,31 +387,71 @@ struct Controller {
   View v{o.step,o.day,o.hour,farm,o.opponent,o.priv,o.market,o.shops};
   core.target.clear();core.plant_not_before.fill(0);core.triad_crop_age.fill(-1);
   portfolio={};paths={};forecast_service={};forecast_crop_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
+  if constexpr(R2_OPTIMIZER_AUDIT){greedy_audit.clear();greedy_budget_initial=greedy_budget_final=0;
+   greedy_preview_proposed=greedy_preview_started=greedy_preview_removed=0;greedy_preview_checked=false;}
+#if R2_STUDENT_SLOT_AUDIT
+  student_slot_audit.clear();
+  student_release_audit.clear();student_v3_slot_audit.clear();
+#endif
 #if R2_FINITE_FERTILIZER
   finite_first_fertilizer.fill(0);
 #endif
   for(int i=0;i<9;i++){portfolio.f[o.day][i]+=o.priv.shed[i];for(auto&b:o.priv.inventories)portfolio.f[o.day][i]+=b[i];}
   update_value(o);std::vector<int>free;int animals=0;
   int owned=std::popcount(unsigned(o.own.unlocked_mask));core.planned_land=owned;
+#if R2_STUDENT_SLOT_AUDIT
+  int student_release_count=0,student_existing_animals=0;
+  std::array<int,12>student_initial_stock{};
+  for(const auto&t:farm.tiles){
+   student_release_count+=plant(t)&&!ongoing(int(t.crop));
+   student_existing_animals+=animal(t);
+  }
+  for(int k=0;k<5;k++)student_initial_stock[k]=o.priv.seeds[k];
+  for(int k=9;k<12;k++){student_initial_stock[k]=o.priv.shed[k];for(const auto&iv:o.priv.inventories)student_initial_stock[k]+=iv[k];}
+#endif
   // Resolve existing projects from facts. Successor intention is separate from
   // the current tile and never replaces maintenance of the incumbent crop.
   for(int pos=0;pos<100;pos++){
    auto&t=farm.tiles[pos];if(t.kind==TileKind::LOCKED)continue;
    if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,path_prices(),&t,&forecast_service[pos]);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
    if(plant(t)){
-    int k=int(t.crop),finish=std::max(o.day,t.planted_day+(ongoing(k)?first[k]+3*interval[k]:core.h_age(k)));
+   int k=int(t.crop),finish=std::max(o.day,t.planted_day+(ongoing(k)?first[k]+3*interval[k]:core.h_age(k)));
+#if R2_STUDENT_SLOT_AUDIT
+    int student_keep_finish=-1;double student_keep_value=-1e100;
+#endif
     if(!ongoing(k)){
      auto dp=rotations_dp(pos,path_prices(),o.day);double best=-1e100;
      int earliest=std::max(o.day,int(t.planted_day)+first[k]);int last=std::min(29,int(t.planted_day)+(k==W?4:k==C?3:12));
      for(int d=earliest;d<=last;d++){
       auto a=crop(k,t.planted_day,pos,d,path_prices(),&t);double val=scalar(a,path_prices(),o.day)+(s.rotation>0?dp.v[d]:0);
       if(val>best){best=val;finish=d;}
+#if R2_STUDENT_SLOT_AUDIT
+      if(d>o.day&&val>student_keep_value){student_keep_value=val;student_keep_finish=d;}
+#endif
      }
     }
     if constexpr(P16_JOINT_BUNDLES>0){int j=joint.index(pos);if(j>=0&&joint.slots[j].stage==1&&k==W)finish=std::max(o.day,int(t.planted_day)+joint.slots[j].source_age);}
     finish=std::min(29,finish);
     int retained=(book[pos].birth==t.planted_day&&book[pos].kind==k)?book[pos].successor:-1;
     if(retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k]&&joint.index(pos)<0)finish=o.day;
+#if R2_STUDENT_SLOT_AUDIT
+    if(!ongoing(k)&&student_release_selector){
+     int earliest=std::max(o.day,int(t.planted_day)+first[k]);
+     int last=std::min(29,int(t.planted_day)+(k==W?4:k==C?3:12));
+     bool joint_later=false;if constexpr(P16_JOINT_BUNDLES>0){int j=joint.index(pos);joint_later=j>=0&&joint.slots[j].stage==1&&k==W&&int(t.planted_day)+joint.slots[j].source_age>o.day;}
+     bool retained_now=retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k]&&joint.index(pos)<0;
+     int mask=0;if(student_keep_finish>=0&&!retained_now)mask|=1<<1;if(earliest<=o.day&&o.day<=last&&!joint_later)mask|=1<<2;
+     if(!mask)mask=1<<(finish==o.day?2:1);
+     StudentReleaseAudit release_audit;release_audit.pos=pos;release_audit.label=finish==o.day?2:1;release_audit.legal_mask=mask;
+     auto&state=release_audit.state;state.pos=pos;state.animals=student_existing_animals;state.owned=owned;
+     state.slot_index=student_release_audit.size();state.slot_count=student_release_count;
+     state.stock_left=student_initial_stock;state.prefix=portfolio;
+     int selected=student_release_selector(release_audit);
+     if((selected!=1&&selected!=2)||!(mask&(1<<selected)))throw std::runtime_error("student release selector returned illegal choice");
+     if(selected==2)finish=o.day;else if(student_keep_finish>=0)finish=student_keep_finish;
+     release_audit.label=selected;student_release_audit.push_back(release_audit);
+    }
+#endif
     paths[pos]=crop(k,t.planted_day,pos,finish,path_prices(),&t,nullptr,-1,-1,s.marginal_value>0?&forecast_crop_service[pos]:nullptr);add(portfolio,paths[pos]);
 #if R2_FINITE_FERTILIZER
     if(!ongoing(k))finite_first_fertilizer[pos]=paths[pos].f[o.day][F]<0;
@@ -354,6 +471,7 @@ struct Controller {
   if(o.day==0)budget*=s.opening_budget;
   double joint_earmark=P16_JOINT_BUNDLES?joint.seed_reserve(o):0.;
   if constexpr(P16_JOINT_BUNDLES>0)budget-=joint_earmark;
+  if constexpr(R2_OPTIMIZER_AUDIT)greedy_budget_initial=budget;
   auto settarget=[&](int pos,int k){for(auto&[p,c]:core.target)if(p==pos){c=k;return;}core.target.emplace_back(pos,k);};
   std::array<int,12>stock_left{};for(int k=0;k<5;k++)stock_left[k]=o.priv.seeds[k];
   for(int k=9;k<12;k++){stock_left[k]=o.priv.shed[k];for(auto&iv:o.priv.inventories)stock_left[k]+=iv[k];}
@@ -410,8 +528,19 @@ struct Controller {
     std::stable_sort(free.begin()+used,free.end(),[](int a,int b){return std::tuple(near(a),a)<std::tuple(near(b),b);});current=update_value(o);
    }
    int pos=free[used++];auto&t=farm.tiles[pos];auto dp=rotations_dp(pos,path_prices(),o.day);
-   double best=0,bestval=current;int bestkind=-1,bestlen=0;Asset bestpath;double bestcost=0;
-   for(int k:{0,1,2,3,4,9,10,11}){
+   double best=0,bestval=current,bestgain=0;int bestkind=-1,bestlen=0;Asset bestpath;double bestcost=0;
+   GreedySlotAudit audit;if constexpr(R2_OPTIMIZER_AUDIT){audit.pos=pos;audit.budget=budget;}
+#if R2_STUDENT_SLOT_AUDIT
+   StudentSlotAudit student;student.pos=pos;student.budget=budget;student.animals=animals;
+   student.owned=owned;student.slot_index=used-1;student.slot_count=free.size();
+   student.stock_left=stock_left;student.prefix=portfolio;
+#endif
+#if R2_STUDENT_SLOT_AUDIT
+   struct StudentAlternative{bool legal=false;Asset path{};int len=0;double val=0,gain=0,rank=0,cost=0;};
+   std::array<StudentAlternative,12>student_alternatives{};
+#endif
+   int student_kind_index=0;for(int k:{0,1,2,3,4,9,10,11}){
+    ++student_kind_index;
     if(k>=9&&(plant(t)||animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
     Asset a;int len=0;
     if(k>=9)a=animal_path(k,o.day,pos,path_prices());else{auto c=choose_crop(k,o.day,pos,path_prices(),dp);if(c.kind<0)continue;a=c.a;len=c.length;}
@@ -419,12 +548,73 @@ struct Controller {
     if(cost<=0)continue;if(stock_left[k]>0){a.fixed[o.day]+=cost;cost=0;}
     double immediate=cost+(k>=9?o.market.prices[W]*s.feed_cover:0);
     if(immediate>budget)continue;
+#if R2_STUDENT_SLOT_AUDIT
+    student.legal_mask|=1<<student_kind_index;
+#endif
+#if R2_OUTER_NEIGHBOR_AUDIT
+    // -2 means unconstrained.  -1 deliberately leaves this slot empty and
+    // therefore terminates the greedy suffix; non-negative values force one
+    // of the eight production kinds.  Keep this after legality accounting so
+    // an external actor receives the full mask, not a one-hot forced mask.
+    if(forced_kind[pos]!=-2&&k!=forced_kind[pos])continue;
+#endif
     auto next=portfolio;add(next,a);double val=model.value(o,next);candidates++;
-    double gain=val-current-s.land_rent*(k>=9?29-o.day:len);
-    double rank=gain/std::pow(std::max(10.,cost)+(k>=9?100:0),s.capital_power*std::max(0.,1-o.own.money/16000.));
-    rank*=k>=9?s.animal_bias:s.crop_bias;
-    if(rank>best){best=rank;bestval=val;bestkind=k;bestlen=len;bestpath=a;bestcost=immediate;}
+    double value_gain=val-current,gain=value_gain-s.land_rent*(k>=9?29-o.day:len);
+    double rank=value_gain;
+    if constexpr(!R2_GREEDY_VALUE_ORDER){
+     rank=gain/std::pow(std::max(10.,cost)+(k>=9?100:0),s.capital_power*std::max(0.,1-o.own.money/16000.));
+     rank*=k>=9?s.animal_bias:s.crop_bias;
+    }
+#if R2_STUDENT_SLOT_AUDIT
+    student_alternatives[k]={true,a,len,val,gain,rank,immediate};
+#endif
+    if constexpr(R2_OPTIMIZER_AUDIT){audit.candidates++;if(value_gain>audit.raw_value_gain){audit.raw_value_gain=value_gain;audit.value_kind=k;}if(gain>audit.raw_gain){audit.raw_gain=gain;audit.raw_kind=k;audit.raw_rank=rank;}}
+    // The production optimizer only admits positive marginal projects.  In a
+    // diagnostic student build, however, every feasibility-mask bit is an
+    // executable action: once the external actor forces that kind, preserve
+    // it even when R1's own marginal score is non-positive.
+    bool take=rank>best;
+#if R2_OUTER_NEIGHBOR_AUDIT
+    take=take||forced_kind[pos]==k;
+#endif
+    if(take){best=rank;bestval=val;bestgain=gain;bestkind=k;bestlen=len;bestpath=a;bestcost=immediate;if constexpr(R2_OPTIMIZER_AUDIT)audit.picked_value_gain=value_gain;}
    }
+#if R2_STUDENT_SLOT_AUDIT
+   if(student_selector){
+    // Expose the native proposal as a diagnostic only; the callback's return
+    // is the actual action.  SKIP is -1 and is always represented by bit 0.
+    student.label=bestkind;
+    int selected=student_selector(student);
+    int bit=selected==-1?0:selected>=0&&selected<5?selected+1:selected>=9&&selected<12?selected-3:-1;
+    if(bit<0||!(student.legal_mask&(1<<bit)))throw std::runtime_error("student selector returned illegal kind");
+    if(selected<0){best=bestval=bestgain=bestcost=0;bestkind=-1;bestlen=0;bestpath={};}
+    else{const auto&a=student_alternatives[selected];if(!a.legal)throw std::runtime_error("student selector missing alternative");
+     best=a.rank;bestval=a.val;bestgain=a.gain;bestkind=selected;bestlen=a.len;bestpath=a.path;bestcost=a.cost;}
+   }
+   bool student_v3_none=false,student_v3_stop=false;
+   if(student_v3_selector){
+    // Unified v3 classes: STOP, NONE_OR_KEEP, RELEASE, then the eight
+    // production kinds.  RELEASE is masked here; KEEP is the same class as
+    // placement NONE so one recurrent actor serves both event stages.
+    int mask=3|(student.legal_mask&~1)<<2;
+    student.label=bestkind;int selected=student_v3_selector(student,mask);
+    if(selected<0||selected>=11||!(mask&(1<<selected)))throw std::runtime_error("student v3 selector returned illegal class");
+    student_v3_stop=selected==0;student_v3_none=selected==1;
+    if(selected>=3){static constexpr std::array<int,8>kinds{0,1,2,3,4,9,10,11};int chosen=kinds[selected-3];
+     const auto&a=student_alternatives[chosen];if(!a.legal)throw std::runtime_error("student v3 selector missing alternative");
+     best=a.rank;bestval=a.val;bestgain=a.gain;bestkind=chosen;bestlen=a.len;bestpath=a.path;bestcost=a.cost;}
+    else{best=bestval=bestgain=bestcost=0;bestkind=-1;bestlen=0;bestpath={};}
+    student_v3_slot_audit.push_back({student,selected,mask});
+   }
+#endif
+   if constexpr(R2_OPTIMIZER_AUDIT){audit.picked_kind=bestkind;audit.picked_gain=bestgain;audit.picked_rank=best;if(audit.candidates)greedy_audit.push_back(audit);}
+#if R2_STUDENT_SLOT_AUDIT
+   student.label=bestkind;student.terminal=bestkind<0;
+   student_slot_audit.push_back(std::move(student));
+#endif
+#if R2_STUDENT_SLOT_AUDIT
+   if(student_v3_none)continue;if(student_v3_stop)break;
+#endif
    if(bestkind<0)break;
    settarget(pos,bestkind);successor[pos]=bestkind;length[pos]=bestlen;paths[pos]=bestpath;add(portfolio,bestpath);
    current=bestval;budget-=bestcost;animals+=bestkind>=9;if(stock_left[bestkind]>0)stock_left[bestkind]--;
@@ -535,15 +725,44 @@ struct Controller {
   if(s.preview>0&&!new_positions.empty()){
    for(int pass=0;pass<3;pass++){
     auto preview=core.preview_bundle(v,false);std::set<int>admitted;for(auto[p,k]:preview.started_targets)admitted.insert(p);
+    if constexpr(R2_OPTIMIZER_AUDIT)if(!greedy_preview_checked){greedy_preview_checked=true;greedy_preview_proposed=preview.proposed;greedy_preview_started=int(preview.started_targets.size());}
     bool changed=false;
     for(int pos:new_positions){
      if(plant(farm.tiles[pos])||book[pos].funded||successor[pos]<0||admitted.count(pos))continue;
-     add(portfolio,paths[pos],-1);paths[pos]={};successor[pos]=-1;settarget(pos,-1);book[pos]={};deferred++;changed=true;
+     add(portfolio,paths[pos],-1);paths[pos]={};successor[pos]=-1;settarget(pos,-1);book[pos]={};deferred++;if constexpr(R2_OPTIMIZER_AUDIT)greedy_preview_removed++;changed=true;
     }
     if(!changed)break;update_value(o);if(s.service_reconcile>=2)reconcile_service(v);set_service(v);core.prepare_orders(v,o,expiry);
    }
   }
+  if constexpr(R2_OPTIMIZER_AUDIT)greedy_budget_final=budget;
   predicted=model.value(o,portfolio);model.shadow=prices;
+  // Controller::plan builds the committed portfolio itself -- Planner::plan is not on this path --
+  // so the executor's sale schedule has to be produced here, at the point where the portfolio is
+  // final. act() then hands model.exec_plan to the filter copy it captures by value.
+  // The DP is open-loop: it optimises against the production trajectory it is handed. The
+  // committed portfolio's projection can drift from what the farm will actually produce, and a
+  // plan that is optimal for a game we are not playing is worse than the reactive local rule it
+  // replaces -- which is exactly what was measured (DP 71.9% vs the rule's 75.0% on thomas).
+  // remaining_portfolio() rebuilds the flow from the REAL tiles at their actual ages and yields.
+  // NOTE: the sale plan is NOT built here. See SearchController::act in search.hpp -- choose()/
+  // install() replace `live` with a proposal copy, so this function never runs on the controller
+  // whose plan is executed, and building it here only paid that cost on every evaluated proposal.
+ }
+
+ std::string optimizer_json()const{
+  std::ostringstream o;o.precision(17);o<<"{\"budget_initial\":"<<greedy_budget_initial<<",\"budget_final\":"<<greedy_budget_final
+   <<",\"preview_checked\":"<<(greedy_preview_checked?"true":"false")<<",\"preview_proposed\":"<<greedy_preview_proposed
+   <<",\"preview_started\":"<<greedy_preview_started<<",\"preview_removed\":"<<greedy_preview_removed
+   <<",\"swap_trials\":"<<portfolio_swap_trials<<",\"swap_accepts\":"<<portfolio_swap_accepts<<",\"swap_gain\":"<<portfolio_swap_gain
+   <<",\"pair_trials\":"<<portfolio_pair_trials<<",\"pair_accepts\":"<<portfolio_pair_accepts<<",\"pair_gain\":"<<portfolio_pair_gain<<",\"slots\":[";
+  for(size_t i=0;i<greedy_audit.size();i++){if(i)o<<",";const auto&a=greedy_audit[i];
+   o<<"{\"pos\":"<<a.pos<<",\"budget\":"<<a.budget<<",\"candidates\":"<<a.candidates<<",\"picked_kind\":"<<a.picked_kind
+    <<",\"raw_kind\":"<<a.raw_kind<<",\"value_kind\":"<<a.value_kind<<",\"picked_gain\":"<<a.picked_gain<<",\"raw_gain\":"<<a.raw_gain
+    <<",\"local_regret\":"<<(a.picked_kind<0?std::max(0.,a.raw_gain):a.raw_gain-a.picked_gain)
+    <<",\"picked_value_gain\":"<<a.picked_value_gain<<",\"raw_value_gain\":"<<a.raw_value_gain
+    <<",\"value_regret\":"<<(a.picked_kind<0?std::max(0.,a.raw_value_gain):a.raw_value_gain-a.picked_value_gain)
+    <<",\"picked_rank\":"<<a.picked_rank<<",\"raw_rank\":"<<a.raw_rank<<"}";
+  }o<<"]}";return o.str();
  }
 
 #ifndef P16_LIVE_REMAINING_VALUE
@@ -592,18 +811,15 @@ struct Controller {
  // It only confirms which holdings would reach the shed in OUR unit phase;
  // sale quantities are recalculated from the next actual observation.
  void settle_market(const View&o,PlayerAction&out,bool preparing){
+  // ORIGINAL bail-out, restored. An earlier revision let this run whenever a sale plan was active,
+  // which did far more than apply the plan: it also reached the `preparing` FINANCING branch below,
+  // a path the original NEVER executes because this line always returns first. That branch adds and
+  // rewrites SELL orders on the day's first step, so `sale_dp=1` differed from `sale_dp=0` by two
+  // couplings, not one -- and only one of them was the DP. With the bail-out restored, enabling the
+  // DP changes exactly the sell QUANTITIES on non-preparing steps and nothing else.
   if(s.delay_sale<0||(preparing&&s.feed_finance<=0))return;
   fastkag::ObservedDayScenario scenario(o);
   auto post=scenario.project_units(out.units,-1);
-  if(preparing){
-   // R2P1: only intervene in an already-issued preparation transaction with
-   // demonstrable own-cash shortfall. This projection does not know rival
-   // orders; real fills are still learned from the next observation.
-   preparation_finance_checks++;
-   auto before=post.project_own_market(0,out.market);
-   bool shortfall=false;for(double x:before.last_market_cash_shortfalls()[0])shortfall|=x>0;
-   if(!shortfall||out.market.size()>=10)return;
-  }
   auto &priv=post.privates()[0];Counts reserve{},sell{};
   if(o.day<29){
    reserve=dp7::intraday::reserved(core).shed;
@@ -619,29 +835,77 @@ struct Controller {
   }
   if constexpr(P16_JOINT_BUNDLES>0){int bag=0;for(const auto&iv:priv.inventories)bag+=iv[W];reserve[W]=std::max(reserve[W],std::max(0,joint.feed_cover(o)-bag));}
   for(int i=0;i<9;i++)sell[i]=std::max(0,priv.shed[i]-reserve[i]);
+  // FINANCING sells must not be capped by the plan. The `preparing` branch below sells to fund
+  // purchases the agent has already committed to (seeds, animals, hires); if the plan has already
+  // shrunk sell[] to what it wants to release, that branch finds nothing to sell and the purchase
+  // fails. Measured on seed 2780000035 (cash 10,652 at takeover): the DP arm beat the base by
+  // +4,479 over days 12-20 and then lost 11,726 and 21,587 in the two following stretches -- the
+  // compounding signature of an early failure to buy. Keep the unfiltered budget for that path.
+  // The financing branch below needs the FULL sellable budget (it sells to fund purchases the
+  // agent has already committed to), so keep an unfiltered copy before anything touches sell[].
+  Counts sell_unfiltered=sell;
+  // The plan is deliberately NOT applied on this step. It looks like the natural place to bind --
+  // it is the day's main market decision -- but shrinking the sells here starves the purchases the
+  // same step issues (seeds, animals, hires, feed), and the projection cannot see it because
+  // project_own_market does not model the rival. Measured, same-segment paired: binding gave thomas
+  // -5.2pp / melon +3.2pp / demand -2.1pp win rate (seed 2780000035: animals 21 -> 13); without it,
+  // +0.0 / +8.4 / +4.2pp with no arm regressing. settle_market's own path below already applies the
+  // plan on every OTHER step.
+
   if(preparing){
+   // R2P1: only intervene in an already-issued preparation transaction with
+   // demonstrable own-cash shortfall. This projection does not know rival
+   // orders; real fills are still learned from the next observation.
+   preparation_finance_checks++;
+   auto before=post.project_own_market(0,out.market);
+   bool shortfall=false;for(double x:before.last_market_cash_shortfalls()[0])shortfall|=x>0;
+   // Do NOT give up when every slot is taken: financing works by GROWING the plan's own SELL order,
+   // which needs no new slot. Returning here is what let the plan starve the day's purchases (feed
+   // wheat, seeds, hires) -- measured on seed 2780000035 the DP arm's animals fell 21 -> 13 and it
+   // gave up 28,178 of growth purely because this line fired.
+   if(!shortfall)return;
    // Preserve every original order and its relative order. Sell only surplus
    // not already promised to an existing SELL, and never remove an order to
    // make room. Require the whole proposed purchase/hire sequence to fill in
    // the own-side projection, not merely a higher projected cash balance.
+   sell=sell_unfiltered;
    for(auto a:out.market)if(a.op==Op::SELL&&int(a.item)>=0&&int(a.item)<9)
     sell[int(a.item)]=std::max(0,sell[int(a.item)]-std::max(0,a.quantity));
-   auto choices=core.sales_sorted(o,sell);Acts prefix;
-   for(auto sale:choices){
-    if(prefix.size()+out.market.size()>=10)break;
-    int limit=sale.quantity; sale.quantity=0; prefix.push_back(sale);
-    for(int q=1;q<=limit;q++){
-     prefix.back().quantity=q;Acts candidate=prefix;
-     candidate.insert(candidate.end(),out.market.begin(),out.market.end());
-     auto funded=post.project_own_market(0,candidate);auto&fills=funded.last_market_fills()[0];
-     bool full=true;
-     for(size_t i=0;i<out.market.size();i++){
-      auto a=out.market[i];if(a.op==Op::SELL||a.op==Op::PASS)continue;
-      int wanted=(a.op==Op::HIRE||a.op==Op::BUY_LAND)?1:std::max(0,a.quantity);
-      full&=fills[prefix.size()+i]>=wanted;
-     }
-     if(full){out.market=std::move(candidate);preparation_finance_repairs++;return;}
+   // Financing sells are an INCREMENT on the plan's own order for that product, never a second
+   // order: a duplicate would burn another of the ten market slots and split the quantity across
+   // two quotes. `sell[i]` here is already what is left AFTER the plan's order, so the two are
+   // never added together -- the existing order is grown by exactly the extra the purchase needs.
+   for(int i=0;i<9&&sell[i]>0;i++){
+    // Never finance a purchase out of the very product being purchased. WHEAT and FERTILIZER can be
+    // BUY_PRODUCT, and growing a SELL for the same item would have us selling wheat to raise the
+    // cash to buy wheat -- the engine would net the two against each other and the shed would not
+    // gain the feed it was funded for.
+    bool also_buying=false;
+    for(const auto&a:out.market)
+     if((a.op==Op::BUY_PRODUCT||a.op==Op::BUY_SEED||a.op==Op::BUY_ANIMAL)&&int(a.item)==i){also_buying=true;break;}
+    if(also_buying)continue;
+    int slot=-1;
+    for(size_t k=0;k<out.market.size();k++)
+     if(out.market[k].op==Op::SELL&&int(out.market[k].item)==i){slot=int(k);break;}
+    if(slot<0){
+     if(out.market.size()>=10)continue;    // no order to grow and no free slot to add one
+     out.market.push_back(action(Op::SELL,i,0));slot=int(out.market.size())-1;
     }
+    int was=out.market[slot].quantity;
+    int extra=0;
+    for(int q=1;q<=sell[i];q++){
+     out.market[slot].quantity=was+q;
+     auto funded=post.project_own_market(0,out.market);auto&fills=funded.last_market_fills()[0];
+     bool full=true;
+     for(size_t k=0;k<out.market.size();k++){
+      auto a=out.market[k];if(a.op==Op::SELL||a.op==Op::PASS)continue;
+      int wanted=(a.op==Op::HIRE||a.op==Op::BUY_LAND)?1:std::max(0,a.quantity);
+      full&=fills[k]>=wanted;
+     }
+     if(full){extra=q;break;}
+    }
+    if(extra>0){preparation_finance_repairs++;return;}
+    out.market[slot].quantity=was;
    }
    return;
   }
@@ -697,6 +961,11 @@ struct Controller {
   if(o.step<=previous_step)throw std::runtime_error("non-monotone policy observation");previous_step=o.step;
   joint.observe(o);
   if(o.day!=core.day)plan(o);
+  // Hand the planner's committed sale schedule to the executor. This MUST happen before the
+  // project_sales lambda below captures `local_sale` BY VALUE -- the filter that actually runs is
+  // the captured copy, so setting it at any other call site leaves the executor on its local rule.
+  local_sale.carry=(s.sale_dp>0&&model.exec_plan_ready&&o.day>=int(s.sale_dp_start_day))?&model.exec_carry:nullptr;
+  local_sale.plan_step0=model.exec_plan_step;
   if constexpr(P16_JOINT_BUNDLES>0){
    core.p.max_animals=(joint.active&&o.day==joint.created_day)?std::min(int(s.max_animals),joint.animal_limit):int(s.max_animals);
    core.p.operating_reserve=s.reserve+joint.seed_reserve(o);
@@ -712,7 +981,8 @@ struct Controller {
     };
   if(auto rescue=working_capital_gate(o)){joint.record(o,*rescue);return *rescue;}
   core.admission_values=[this](const dp7::Controller&c,const View&v,const PlayerAction&a){return intraday_values(c,v,a);};core.admission_blend=1;core.admission_scope=2;
-  bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);joint.record(o,out);return out;
+  bool preparing=core.phase==1;auto out=core.act(o);settle_market(o,out,preparing);
+  joint.record(o,out);return out;
  }
  std::string debug()const{
   std::ostringstream o;o<<"{\"plan_calls\":"<<plan_calls<<",\"capital_collects\":"<<capital_collects<<",\"capital_financings\":"<<capital_financings<<",\"input_rejected_atoms\":"<<core.input_rejected_atoms<<",\"input_rejected_feed\":"<<core.input_rejected_feed<<",\"input_rejected_fertilize\":"<<core.input_rejected_fertilize<<",\"marginal_value_updates\":"<<marginal_value_updates<<",\"candidates\":"<<candidates<<",\"deferred\":"<<deferred<<",\"kept_commitments\":"<<kept<<",\"rotations\":"<<rotations<<",\"portfolio_swap_trials\":"<<portfolio_swap_trials<<",\"portfolio_swap_accepts\":"<<portfolio_swap_accepts<<",\"portfolio_swap_gain\":"<<portfolio_swap_gain<<",\"portfolio_pair_trials\":"<<portfolio_pair_trials<<",\"portfolio_pair_accepts\":"<<portfolio_pair_accepts<<",\"portfolio_pair_gain\":"<<portfolio_pair_gain<<",\"intraday_started\":"<<core.intraday_activated<<",\"reference_calls\":0,\"predicted\":"<<predicted<<",\"service_trials\":"<<service_trials<<",\"service_switches\":"<<service_switches<<",\"service_value_gain\":"<<service_objective_gain<<",\"targets\":[";
@@ -720,4 +990,3 @@ struct Controller {
  }
 };
 }
-

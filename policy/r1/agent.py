@@ -4,6 +4,7 @@ Errors are explicit, not silently converted to replay or PASS fallbacks.
 """
 import ctypes
 import json
+import math
 import os
 from pathlib import Path
 _ITEMS=('WHEAT','CARROT','TOMATO','STRAWBERRY','MELON','EGG','MILK','WOOL','FERTILIZER','GOOSE','COW','SHEEP')
@@ -93,7 +94,7 @@ def _pack(obs):
     values.append(len(shops));values.extend(_SHOP_IDS[x] for x in shops)
     return (ctypes.c_double*len(values))(*values)
 
-DEFAULTS = {'competition': 0.8, 'supply': 0.85, 'future_shop': 0.7, 'capital_power': 0.4, 'labor_hours': 15, 'work_price': 1.2, 'animal_work': 1.0, 'reserve': 120, 'max_animals': 20, 'max_hands': 14, 'max_land': 4, 'feed_cover': 2, 'rotation': 1, 'preview': 1, 'delivery': 2, 'intraday': 1, 'service': 1, 'replant': 0.7, 'land_rent': 2, 'discount': 0.015, 'tour_dp': 0, 'layout': 0, 'repeat': 1, 'animal_bias': 1, 'crop_bias': 1, 'portfolio_passes': 1, 'crop_fert': 1, 'harvest_threshold': 1, 'delay_sale': 0, 'opening_budget': 1, 'scenario': 0, 'keep_commitments': 1}
+DEFAULTS = {'competition': 0.8, 'supply': 0.85, 'future_shop': 0.7, 'capital_power': 0.4, 'labor_hours': 15, 'work_price': 1.2, 'animal_work': 1.0, 'reserve': 120, 'max_animals': 20, 'max_hands': 14, 'max_land': 4, 'feed_cover': 2, 'rotation': 1, 'preview': 1, 'delivery': 2, 'intraday': 1, 'service': 1, 'replant': 0.7, 'land_rent': 2, 'discount': 0.015, 'tour_dp': 0, 'layout': 0, 'repeat': 1, 'animal_bias': 1, 'crop_bias': 1, 'portfolio_passes': 1, 'crop_fert': 1, 'harvest_threshold': 1, 'delay_sale': 0, 'opening_budget': 1, 'scenario': 0, 'keep_commitments': 1, 'sale_dp': 0, 'sale_hold_cap': 90, 'sale_dp_start_day': 12, 'risk': 1}
 DEFAULTS.update(candidate_extra=0,service_reconcile=0,live_ledger=0,delivery_calendar=0,feed_finance=0,batch_delivery=0)
 DEFAULTS.update(portfolio_swaps=0,portfolio_swap_min_gain=0)
 DEFAULTS.update(marginal_value=0)
@@ -116,6 +117,15 @@ class Agent:
         self.lib.td_new.argtypes=[ctypes.POINTER(ctypes.c_double),ctypes.c_size_t];self.lib.td_new.restype=ctypes.c_void_p
         self.lib.td_delete.argtypes=[ctypes.c_void_p];self.lib.td_delete.restype=None
         self.lib.td_debug.argtypes=[ctypes.c_void_p];self.lib.td_debug.restype=ctypes.c_char_p
+        self._has_clock_debug=hasattr(self.lib,'td_clock_json')
+        if self._has_clock_debug:
+            self.lib.td_clock_json.argtypes=[ctypes.c_void_p];self.lib.td_clock_json.restype=ctypes.c_char_p
+        self._has_candidate_clock_debug=hasattr(self.lib,'td_candidate_clock_json')
+        if self._has_candidate_clock_debug:
+            self.lib.td_candidate_clock_json.argtypes=[ctypes.c_void_p,ctypes.c_int];self.lib.td_candidate_clock_json.restype=ctypes.c_char_p
+        self._has_extended_horizon=hasattr(self.lib,'td_candidate_score_horizon_observation')
+        if self._has_extended_horizon:
+            self.lib.td_candidate_score_horizon_observation.argtypes=[ctypes.c_void_p,ctypes.c_int,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t,ctypes.c_int];self.lib.td_candidate_score_horizon_observation.restype=ctypes.c_double
         self.lib.td_observe.argtypes=[ctypes.c_void_p,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t,ctypes.POINTER(ctypes.c_int32),ctypes.c_size_t];self.lib.td_observe.restype=ctypes.c_int
         self.lib.td_observe_external.argtypes=[ctypes.c_void_p,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t,ctypes.POINTER(ctypes.c_int32),ctypes.c_size_t];self.lib.td_observe_external.restype=ctypes.c_int
         self.lib.td_activate_external.argtypes=[ctypes.c_void_p,ctypes.POINTER(ctypes.c_double),ctypes.c_size_t];self.lib.td_activate_external.restype=ctypes.c_int
@@ -147,6 +157,20 @@ class Agent:
         if not self.handle:return {}
         text=self.lib.td_debug(self.handle).decode('utf-8')
         return json.loads(text) if not text.startswith('ERROR') else {'error':text}
+    def clock_debug(self):
+        if not self._has_clock_debug:raise RuntimeError('clock diagnostic requires a rebuilt binary')
+        return json.loads(self.lib.td_clock_json(self.handle).decode('utf-8'))
+    def candidate_clock_debug(self,index):
+        if not self._has_candidate_clock_debug:raise RuntimeError('candidate clock diagnostic requires a rebuilt binary')
+        value=self.lib.td_candidate_clock_json(self.handle,int(index))
+        if not value:raise ValueError('invalid candidate index')
+        return json.loads(value.decode('utf-8'))
+    def candidate_score_horizon(self,observation,index,horizon):
+        if not self._has_extended_horizon:raise RuntimeError('candidate horizon diagnostic requires a rebuilt binary')
+        packed=_pack(observation)
+        value=self.lib.td_candidate_score_horizon_observation(self.handle,int(index),packed,len(packed),int(horizon))
+        if not math.isfinite(value):raise ValueError('invalid candidate horizon request')
+        return value
     def prepare_candidates(self,observation,with_features=False):
         packed=_pack(observation);count=self.lib.td_prepare_observation(self.handle,packed,len(packed))
         if count<0:raise RuntimeError(self.lib.td_debug(self.handle).decode())
@@ -210,4 +234,3 @@ def agent(observation,configuration=None):
     seat=int(_get(observation,'player',0))
     if seat not in _instances:_instances[seat]=Agent()
     return _instances[seat](observation,configuration)
-

@@ -9,6 +9,14 @@ class PublicFlowScenario {
  std::array<double,9>fraction_{};int start_day_;double scale_;
  const triad::SaleClock*clock_=nullptr;
  public:
+ struct FlowAudit {
+  std::array<double,9>requested{};
+  std::array<int,9>rounded{},filled{},market_delta{};
+  std::array<double,9>cash_delta{};
+ };
+ private:
+ FlowAudit audit_{};
+ public:
  PublicFlowScenario(const dp7::View&v,const competitive::Flow&flows,double scale,const triad::SaleClock*clock=nullptr):env_(Config{},0),known_(v.shops),flows_(flows),start_day_(v.day),scale_(scale),clock_(clock){
   if(v.day!=v.step/24||v.hour!=v.step%24)throw std::invalid_argument("public scenario clock");
   env_.step_=v.step;env_.farms_[0]=v.own;env_.farms_[1]=v.opponent;env_.privates_[0]=v.priv;
@@ -19,16 +27,37 @@ class PublicFlowScenario {
  bool done()const{return env_.done_;}
  void advance(const PlayerAction&own){
   int s=env_.step_,d=env_.day(),h=env_.hour();PlayerAction rival;
+#if R2_FLOW_AUDIT
+  std::array<int,9>order,sign{};order.fill(-1);
+#endif
   // Two deterministic arrival windows: a scenario assumption, not observed orders.
   if(clock_||h==1||h==17){for(int i=0;i<9;i++){
    double x=flows_[d][i]*scale_;int q=clock_?clock_->quantity(i,x,h):h==1?int(std::floor(x*.5)):int(std::round(x))-int(std::floor(x*.5));
-   if(q>0){env_.privates_[1].shed[i]+=q;rival.market.push_back({Op::SELL,Item(i),q});}
-   else if(q<0&&(i==0||i==8))rival.market.push_back({Op::BUY_PRODUCT,Item(i),-q});
+#if R2_FLOW_AUDIT
+   audit_.requested[i]+=clock_?q:x*.5;audit_.rounded[i]+=q;
+#endif
+   if(q>0){env_.privates_[1].shed[i]+=q;
+#if R2_FLOW_AUDIT
+    order[i]=rival.market.size();sign[i]=1;
+#endif
+    rival.market.push_back({Op::SELL,Item(i),q});}
+   else if(q<0&&(i==0||i==8)){
+#if R2_FLOW_AUDIT
+    order[i]=rival.market.size();sign[i]=-1;
+#endif
+    rival.market.push_back({Op::BUY_PRODUCT,Item(i),-q});}
   }}
   // Public visible service is projected, never recovered from rival inventory.
   for(auto&t:env_.farms_[1].tiles){if(t.kind==TileKind::ANIMAL){t.fed_today=true;t.cared_today=true;t.yield_units=0;t.fertilizer_available=false;}
    if(t.kind==TileKind::PLANT){t.watered_today=true;t.yield_units=0;t.max_lifespan_step=-1;}}
   env_.step({own,rival});
+#if R2_FLOW_AUDIT
+  for(int i=0;i<9;i++)if(order[i]>=0){int k=order[i];
+   audit_.filled[i]+=sign[i]*env_.last_market_fills()[1][k];
+   audit_.cash_delta[i]+=env_.last_market_cash_deltas()[1][k];
+   audit_.market_delta[i]+=env_.last_market_inventory_deltas()[1][k];
+  }
+#endif
   if(s%4==0){
    // Unknown shops are IID with replacement. Add their EXPECTED demand only.
    static const double average[9]={5./8,3./8,2./8,4./8,0,2./8,3./8,2./8,0};
@@ -40,5 +69,7 @@ class PublicFlowScenario {
  }
  double own_cash()const{return env_.farms_[0].money;}
  double rival_cash()const{return env_.farms_[1].money;}
+ const FlowAudit&audit()const{return audit_;}
+ std::array<int,9>rival_shed()const{std::array<int,9>x{};for(int i=0;i<9;i++)x[i]=env_.privates_[1].shed[i];return x;}
 };
 }

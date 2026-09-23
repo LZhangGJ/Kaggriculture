@@ -15,6 +15,62 @@ spec.loader.exec_module(policy)
 
 MATURE = ROOT.parent
 HANDOFF_CLASSES = frozenset(("default", "competitive_sale", "crop_succession"))
+LAND_PRICES = (1000, 2000, 4000)
+
+
+def sell_before_unfunded_land(observation, action, configuration=None, minimum_step=168):
+    """Move already-planned, executable sales ahead of an otherwise failed land buy."""
+    step = policy.observed_step(observation)
+    market = list((action or {}).get("market", ()))
+    if step < minimum_step or not market or not market[0] or market[0][0] != "BUY_LAND":
+        return action
+    seat = int(policy._get(observation, "player", 0) or 0)
+    farms = list(policy._get(observation, "farms", ()) or ())
+    farm = farms[seat] if seat < len(farms) else {}
+    unlocked = len(policy._get(farm, "unlocked_quadrants", ()) or ())
+    extra = unlocked - 1
+    money = float(policy._get(farm, "money", 0.0) or 0.0)
+    if not 0 <= extra < len(LAND_PRICES) or money >= LAND_PRICES[extra]:
+        return action
+
+    from meta_agent.src.market_manager import (
+        MARKET_PARAMS, _market_price, _project_unit_storage, _resolved_market_params,
+    )
+    capacity = int(policy._get(configuration, "shedCapacity", 100) or 100)
+    shed, _, _ = _project_unit_storage(observation, action, capacity)
+    market_state = policy._get(observation, "market", {}) or {}
+    params = _resolved_market_params(market_state)
+    inventory = {
+        item: int(policy._get(policy._get(market_state, "inventory", {}) or {}, item,
+                             row["I0"]) or row["I0"])
+        for item, row in params.items()
+    }
+    moved, revenue = [], 0
+    for index, order in enumerate(market[1:], 1):
+        if not order or order[0] != "SELL" or len(order) < 3 or order[1] not in MARKET_PARAMS:
+            continue
+        item = str(order[1])
+        quantity = min(max(0, int(order[2])), max(0, int(shed.get(item, 0))))
+        if quantity <= 0:
+            continue
+        moved.append(index)
+        # In one market slot the rival can commit at most one unit before each
+        # following quote of ours.  Price against that worst same-item sale,
+        # and never rely on a later slot whose opening quote is unbounded by us.
+        for unit in range(quantity):
+            price = _market_price(item, inventory[item] + unit, params)
+            revenue += price
+            shed[item] -= 1
+            if price > 1:
+                inventory[item] += 1
+        break
+    if money + revenue < LAND_PRICES[extra]:
+        return action
+    result = copy.deepcopy(action)
+    result["market"] = [market[index] for index in moved] + [
+        order for index, order in enumerate(market) if index not in moved
+    ]
+    return result
 
 
 def handoff_selector(value=None):
@@ -101,6 +157,8 @@ class ReplayThenDynamicAgent:
         self.selector_installed_index = None
         self.selector_eligible = None if selector is None else selector.eligible
         self.selector_skip_reason = "off" if selector is None else None
+        self.capital_sell_first = os.environ.get("REPLAY_CAPITAL_SELL_FIRST", "1") != "0"
+        self.capital_sell_first_actions = 0
 
     def select_handoff(self, observation):
         self.handoff_selector_done = True
@@ -173,6 +231,10 @@ class ReplayThenDynamicAgent:
                 self.select_handoff(observation)
             return self.dynamic(observation, configuration)
         action = self.replay(observation, configuration)
+        if self.capital_sell_first:
+            reordered = sell_before_unfunded_land(observation, action, configuration)
+            self.capital_sell_first_actions += reordered is not action
+            action = reordered
         self.dynamic.observe_external(observation, action)
         return action
 
@@ -194,8 +256,9 @@ class ReplayThenDynamicAgent:
             "selector_installed_index": self.selector_installed_index,
             "selector_eligible": self.selector_eligible,
             "selector_skip_reason": self.selector_skip_reason,
+            "capital_sell_first_actions": self.capital_sell_first_actions,
             "replay_opening": controller.opening, "replay_current": controller.current,
-            "replay_switched": controller.switched,
+            "replay_switched": controller.switched, "replay_switch_step": controller.switch_step,
         }
 
 
@@ -222,11 +285,17 @@ def create_replay_agent(value, instance_name):
     return SearchRoutedTeammateAgent(expanded, controller, route_policy.get("targets", ()))
 
 
+def _r1_binary_path():
+    """Environment override so offline A/B can compare two builds of agent.so side by side."""
+    override = os.environ.get("R1_BINARY_PATH")
+    return Path(override) if override else ROOT.parent / "policy/r1/agent.so"
+
+
 def create_agent(seat=0):
     config = json.loads((ROOT.parent / "policy/r1/config.json").read_text())
     replay = replay_deployment()
     if replay:
-        dynamic = policy.Agent(config=config, binary_path=ROOT.parent / "policy/r1/agent.so")
+        dynamic = policy.Agent(config=config, binary_path=_r1_binary_path())
         route = create_replay_agent(replay, f"searched_replay_seat_{seat}")
         # Environment overrides win, so offline scans can still force a step.
         handoff = int(os.environ.get("REPLAY_HANDOFF_STEP", replay.get("handoff_step", 288)))
@@ -240,7 +309,7 @@ def create_agent(seat=0):
             handoff_delay_days=0 if delay in (None, "") else int(delay),
             selector=handoff_selector(),
         )
-    return policy.Agent(config=config, binary_path=ROOT.parent / "policy/r1/agent.so")
+    return policy.Agent(config=config, binary_path=_r1_binary_path())
 
 
 _instances = {}

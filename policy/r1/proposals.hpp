@@ -78,7 +78,7 @@ struct Proposal {int id=0;Controller policy;Features features;};
 inline std::vector<Proposal> generate_proposals(const Controller&live,const Settings&base,const View&o,bool naming=false){
  std::vector<Proposal>out;std::set<std::vector<int>>seen;auto settings=alternative_settings(base);
  for(int i=0;i<int(settings.size());i++){
-  Controller p=live;p.configure(settings[i]);p.plan(o);
+  Controller p=live;p;p.configure(settings[i]);p.plan(o);
   if(!seen.insert(proposal_key(p)).second)continue;
   out.push_back({i,std::move(p),{}});
  }

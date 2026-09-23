@@ -5,6 +5,9 @@
 #include <cstdint>
 #include <string>
 #include <vector>
+#ifndef R2_FLOW_AUDIT
+#define R2_FLOW_AUDIT 0
+#endif
 
 namespace fastkag {
 
@@ -129,6 +132,12 @@ class Simulator {
   const std::array<std::vector<double>,2>& last_market_cash_shortfalls() const {
     return last_market_cash_shortfalls_;
   }
+  const std::array<std::vector<double>,2>& last_market_cash_deltas() const {
+    return last_market_cash_deltas_;
+  }
+  const std::array<std::vector<int32_t>,2>& last_market_inventory_deltas() const {
+    return last_market_inventory_deltas_;
+  }
   const std::array<int32_t,2>& last_end_of_day_overflow() const {
     return last_end_of_day_overflow_;
   }
@@ -144,6 +153,8 @@ class Simulator {
   std::vector<int8_t> shops_;
   std::array<std::vector<int32_t>,2> last_market_fills_;
   std::array<std::vector<double>,2> last_market_cash_shortfalls_;
+  std::array<std::vector<double>,2> last_market_cash_deltas_;
+  std::array<std::vector<int32_t>,2> last_market_inventory_deltas_;
   std::array<int32_t,2> last_end_of_day_overflow_{};
 
   int tile_index(int x,int y) const { return y*cfg_.board_size+x; }

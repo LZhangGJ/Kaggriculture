@@ -505,6 +505,52 @@ py::dict phased_market_audit_dict(const NativePhasedMarketAudit& a) {
 NativeRepairOptions repair_options_from_mask(int mask) {
   return native_repair_options_from_mask(mask);
 }
+
+class NativeReplayOpponent {
+ public:
+  NativeReplayOpponent(const NativeTeammateExecutor& executor, int route,
+                       bool neutral_special_economy, int repair_mask)
+      : executor_(&executor),
+        neutral_special_economy_(neutral_special_economy) {
+    if (repair_mask < 0 || repair_mask > 127)
+      throw std::invalid_argument("repair_mask must be in [0,127]");
+    repair_options_ = repair_options_from_mask(repair_mask);
+    reset(route);
+  }
+
+  void reset(int route) {
+    if (route < 0 || route >= executor_->route_count())
+      throw std::out_of_range("native replay route is outside library");
+    route_ = route;
+    state_.reset();
+    last_action_step_ = -1;
+  }
+
+  PlayerAction action(const Simulator& env, int player, int step) {
+    if (player < 0 || player > 1)
+      throw std::invalid_argument("player must be 0 or 1");
+    if (step != env.step_count())
+      throw std::invalid_argument("action step does not match FastEnv");
+    if (step != last_action_step_ + 1)
+      throw std::logic_error(
+          "native replay opponent must be reset and called once per step");
+    auto result = executor_->action_external(
+        env, player, route_, state_, NativeMarketArm::LegacyDefault, nullptr,
+        nullptr, neutral_special_economy_, repair_options_, nullptr);
+    last_action_step_ = step;
+    return result;
+  }
+
+  int route() const { return route_; }
+
+ private:
+  const NativeTeammateExecutor* executor_;
+  NativeAgentState state_;
+  bool neutral_special_economy_;
+  NativeRepairOptions repair_options_;
+  int route_{-1};
+  int last_action_step_{-1};
+};
 }
 
 PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulator, compatible with kaggle-environments 1.32.7";
@@ -583,23 +629,23 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
      for(ssize_t i=0;i<in.shape(0);i++){auto row=x.features_at((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5));for(int j=0;j<147;j++)out(i,j)=row[j];}}
     return features;
   },py::arg("tasks"))
-  .def("play_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks){
+  .def("play_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks,bool neutral_special_economy,int repair_mask){
     auto in=tasks.unchecked<2>();if(in.shape(1)!=7)throw std::invalid_argument("tasks must have columns route0,route1,seed,switch_step0,switch_route0,switch_step1,switch_route1");
     py::array_t<double> rewards({in.shape(0),(ssize_t)2});auto out=rewards.mutable_unchecked<2>();
     {py::gil_scoped_release release;
      #pragma omp parallel for schedule(dynamic,1)
-     for(ssize_t i=0;i<in.shape(0);i++){auto r=x.play((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5),(int)in(i,6),false,false);out(i,0)=r.rewards[0];out(i,1)=r.rewards[1];}}
+     for(ssize_t i=0;i<in.shape(0);i++){auto r=x.play((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5),(int)in(i,6),false,false,neutral_special_economy,native_repair_options_from_mask(repair_mask),-1);out(i,0)=r.rewards[0];out(i,1)=r.rewards[1];}}
     return rewards;
-  },py::arg("tasks"))
-  .def("play_audit_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks){
+  },py::arg("tasks"),py::arg("neutral_special_economy")=false,py::arg("repair_mask")=0)
+  .def("play_audit_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks,bool neutral_special_economy,int repair_mask){
     auto in=tasks.unchecked<2>();if(in.shape(1)!=7)throw std::invalid_argument("tasks must have columns route0,route1,seed,switch_step0,switch_route0,switch_step1,switch_route1");
     py::array_t<double> rewards({in.shape(0),(ssize_t)2});auto rw=rewards.mutable_unchecked<2>();
     py::array_t<int32_t> audit({in.shape(0),(ssize_t)2,(ssize_t)3});auto au=audit.mutable_unchecked<3>();
     {py::gil_scoped_release release;
      #pragma omp parallel for schedule(dynamic,1)
-     for(ssize_t i=0;i<in.shape(0);i++){auto r=x.play((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5),(int)in(i,6),false);for(int p=0;p<2;p++){rw(i,p)=r.rewards[p];au(i,p,0)=r.macro_unit_failures[p];au(i,p,1)=r.macro_market_failures[p];au(i,p,2)=r.first_macro_failure_step[p];}}}
+     for(ssize_t i=0;i<in.shape(0);i++){auto r=x.play((int)in(i,0),(int)in(i,1),(uint64_t)in(i,2),(int)in(i,3),(int)in(i,4),(int)in(i,5),(int)in(i,6),false,true,neutral_special_economy,native_repair_options_from_mask(repair_mask),-1);for(int p=0;p<2;p++){rw(i,p)=r.rewards[p];au(i,p,0)=r.macro_unit_failures[p];au(i,p,1)=r.macro_market_failures[p];au(i,p,2)=r.first_macro_failure_step[p];}}}
     return py::make_tuple(rewards,audit);
-  },py::arg("tasks"))
+  },py::arg("tasks"),py::arg("neutral_special_economy")=false,py::arg("repair_mask")=0)
   .def("play_repair_audit_batch",[](const NativeTeammateExecutor&x,py::array_t<int64_t,py::array::c_style|py::array::forcecast> tasks){
     auto in=tasks.unchecked<2>();if(in.shape(1)!=9)throw std::invalid_argument("tasks must have columns route0,route1,seed,switch_step0,switch_route0,switch_step1,switch_route1,repair_player,repair_mask");
     py::array_t<double> rewards({in.shape(0),(ssize_t)2});auto rw=rewards.mutable_unchecked<2>();
@@ -676,6 +722,15 @@ PYBIND11_MODULE(_fast_kaggriculture,m){m.doc()="Typed C++ Kaggriculture simulato
      }}
     py::dict out;out["outcome"]=outcome;out["margin"]=margin;out["states"]=states;return out;
   },py::arg("openings"),py::arg("targets"),py::arg("checkpoints"),py::arg("seeds"),py::arg("stop_after_steps")=-1);
+ py::class_<NativeReplayOpponent>(m,"NativeReplayOpponent")
+  .def(py::init<const NativeTeammateExecutor&,int,bool,int>(),
+       py::keep_alive<1,2>(),py::arg("executor"),py::arg("route"),
+       py::arg("neutral_special_economy")=true,py::arg("repair_mask")=0)
+  .def("reset",&NativeReplayOpponent::reset,py::arg("route"))
+  .def("action",[](NativeReplayOpponent&x,const Simulator&env,int player,int step){
+    return player_action_dict(x.action(env,player,step));
+  },py::arg("env"),py::arg("player"),py::arg("step"))
+  .def_property_readonly("route",&NativeReplayOpponent::route);
  m.def("native_threshold_variants",[](py::array_t<int32_t,py::array::c_style|py::array::forcecast> left,
       py::array_t<int32_t,py::array::c_style|py::array::forcecast> right,
       py::array_t<int32_t,py::array::c_style|py::array::forcecast> feature,

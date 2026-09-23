@@ -4,13 +4,31 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
-## 队友主机交接（`handoff/student-v45-20260923`）
+## 队友主机续训（`handoff/rl-student-v45-20260923`）
 
 - 仓库：`https://github.com/LZhangGJ/Kaggriculture`；请从本交接分支检出，不要把它当成 `main` 的状态。
 - 已训练到 v45 的逐格 actor 快照放在 `models/student-v45/`：`actor.pt`（模型和 AdamW 状态，7.3 MB）、`actor.bin`（同一轮的 C++ 前向权重，2.5 MB）及 `manifest.json`（checkpoint 的固定数据契约，约 10 MB）。v45 是训练链快照，不代表盲测最优，也尚未替换线上 R1。
-- 不上传原始/日级 replay、历史逐局 rollout、BC mmap shards、实验缓存或构建目录。续训从 `actor.pt` 的模型与优化器状态出发，每轮只采新的 on-policy 对局；无需重做此前轮次或读取旧 BC shards。仍需同步尚未提交到本分支的实验性 RL 源码并在目标主机重建原生环境；仅克隆此分支暂不能直接续训。
+- 本分支包含 v45 续训所需的 Python/C++ 源码及 Thomas、Meta、Fieldcraft 的小型原生对手资产。无需下载原始/日级 replay、历史逐局 rollout、BC mmap shards、实验缓存或生成资产时用过的公开脚本；`manifest.json` 在原生 PPO 中用于校验 checkpoint 身份，不读取其中指向本机的旧 BC 文件路径。
 - 本机现成的 Python/C++ `.so` 是 aarch64 构建物。队友若用 x86_64，必须在自己的 Python 环境重建原生扩展和 R1，不能直接复用这些 `.so`；`actor.pt` 与 `actor.bin` 本身是跨主机的数据文件。
-- 当前正在后台训练，v45 是刻意冻结的交接点。后续轮次不会自动覆盖仓库里的快照；需要更新时再单独选定完整轮次。
+- 在仓库根目录，以 Python 3.11、PyTorch、NumPy、scikit-learn、pybind11、GCC/C++20 和 OpenSSL 开发库准备环境；Ascend 主机可装匹配版本的 `torch-npu`，其他主机用 `--device cpu`。各 `build.sh` 用 `PYTHON_BIN` 指向当前 Python，不依赖 `/root/miniforge3`。
+
+```bash
+(cd fast_kaggriculture && python setup.py build_ext --inplace)
+bash experiments/native_student_rollout/build_student_bridge.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/thomas_2945_cpp/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/metav4_2965/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/fieldcraft_2887/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/salemali7_2900/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_student_rollout/build.sh
+PYTHONPATH=. python -u experiments/run_student_rl_continuous.py \
+  --start-round 46 --checkpoint models/student-v45/actor.pt \
+  --weights models/student-v45/actor.bin \
+  --manifest models/student-v45/manifest.json \
+  --binary work/agent-student-actor-owned-v3.so \
+  --seed-start 2640000000 --native-job-threads 32 --device cpu
+```
+
+续训会保留 v45 的 AdamW 状态；每轮新采 1,536 局 on-policy 对局并自动导出下一轮 C++ 权重。`--native-job-threads` 取主机实际可用核心数；有 Ascend NPU 时把 `--device` 改为本机设备号。上面的新 seed 段与本机训练段及保留盲测段分离。训练输出只写本机 `work/`，不会覆盖仓库里的 v45 快照。本机仍在后台继续训练，后续轮次不会自动推送到该分支。
 
 ## 硬约束
 

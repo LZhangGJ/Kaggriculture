@@ -54,7 +54,7 @@ inline std::vector<JointCandidate> joint_candidates(const Controller&live,const 
    if(value>best.value+1e-6)best={value,age,k};
   }
   if(best.kind<0||!seen.insert({remove,nfeed,best.age,best.kind}).second)continue;
-  Controller p=live;p.configure(keep.s);
+  Controller p=live;p;p.configure(keep.s);
   auto history=live.joint;p.joint=JointBundleState{};
   p.joint.source_started=history.source_started;p.joint.source_harvested=history.source_harvested;
   p.joint.successor_started=history.successor_started;p.joint.cancelled=history.cancelled;p.joint.completed=history.completed;

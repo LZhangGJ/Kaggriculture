@@ -139,7 +139,11 @@ bool Simulator::commit_unit(Op op,int item,int price,int p){auto&f=farms_[p];aut
 
 void Simulator::process_market(const std::array<PlayerAction,2>& aa){
  size_t ml=std::min<size_t>(cfg_.max_market_orders,std::max(aa[0].market.size(),aa[1].market.size()));
- for(int p=0;p<2;p++){last_market_fills_[p].assign(aa[p].market.size(),0);last_market_cash_shortfalls_[p].assign(aa[p].market.size(),0.);}
+ for(int p=0;p<2;p++){last_market_fills_[p].assign(aa[p].market.size(),0);last_market_cash_shortfalls_[p].assign(aa[p].market.size(),0.);
+#if R2_FLOW_AUDIT
+  last_market_cash_deltas_[p].assign(aa[p].market.size(),0.);last_market_inventory_deltas_[p].assign(aa[p].market.size(),0);
+#endif
+ }
  for(size_t oi=0;oi<ml;oi++){
   Action os[2];bool active[2]={false,false};for(int p=0;p<2;p++)if(oi<aa[p].market.size()){os[p]=aa[p].market[oi];active[p]=os[p].quantity>0;}
   for(int p=0;p<2;p++)if(active[p]&&(os[p].op==Op::HIRE||os[p].op==Op::BUY_LAND)){
@@ -151,7 +155,15 @@ void Simulator::process_market(const std::array<PlayerAction,2>& aa){
   while(active[0]||active[1]){
    int price[2]={};bool quoted[2]={};
    for(int p=0;p<2;p++)if(active[p]&&remaining[p]>0){int i=(int)os[p].item;if(os[p].op==Op::SELL&&i>=0&&i<N_PRODUCTS){price[p]=market_price(i,market_.inventory[i]);quoted[p]=true;}else if(os[p].op==Op::BUY_PRODUCT&&(i==0||i==8)){price[p]=market_price(i,market_.inventory[i]-1);quoted[p]=true;}else if(os[p].op==Op::BUY_SEED&&i>=0&&i<N_CROPS){price[p]=CROPS[i].seed;quoted[p]=true;}else if(os[p].op==Op::BUY_ANIMAL&&i>=9&&i<12){price[p]=ANIMALS[i-9].cost;quoted[p]=true;}else active[p]=false;}
-   if(!quoted[0]&&!quoted[1])break;bool any=false;for(int p=0;p<2;p++)if(quoted[p]){if(commit_unit(os[p].op,(int)os[p].item,price[p],p)){remaining[p]--;last_market_fills_[p][oi]++;any=true;if(remaining[p]<=0)active[p]=false;}else{auto&f=farms_[p];auto&pr=privates_[p];bool cash_limited=(os[p].op==Op::BUY_SEED&&f.money<price[p])||(os[p].op==Op::BUY_ANIMAL&&shed_sum(pr)<cfg_.shed_capacity&&f.money<price[p]);if(cash_limited)last_market_cash_shortfalls_[p][oi]=std::max(0.,remaining[p]*double(price[p])-f.money);active[p]=false;}}if(!any)break;
+   if(!quoted[0]&&!quoted[1])break;bool any=false;for(int p=0;p<2;p++)if(quoted[p]){int item=(int)os[p].item;
+#if R2_FLOW_AUDIT
+    double cash0=farms_[p].money;int inv0=item>=0&&item<N_PRODUCTS?market_.inventory[item]:0;
+#endif
+    if(commit_unit(os[p].op,item,price[p],p)){remaining[p]--;last_market_fills_[p][oi]++;
+#if R2_FLOW_AUDIT
+     last_market_cash_deltas_[p][oi]+=farms_[p].money-cash0;if(item>=0&&item<N_PRODUCTS)last_market_inventory_deltas_[p][oi]+=market_.inventory[item]-inv0;
+#endif
+     any=true;if(remaining[p]<=0)active[p]=false;}else{auto&f=farms_[p];auto&pr=privates_[p];bool cash_limited=(os[p].op==Op::BUY_SEED&&f.money<price[p])||(os[p].op==Op::BUY_ANIMAL&&shed_sum(pr)<cfg_.shed_capacity&&f.money<price[p]);if(cash_limited)last_market_cash_shortfalls_[p][oi]=std::max(0.,remaining[p]*double(price[p])-f.money);active[p]=false;}}if(!any)break;
   }
   refresh_prices();
  }

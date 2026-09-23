@@ -4,6 +4,7 @@ from ._fast_kaggriculture import (
     FastEnv,
     FastBatchEnv,
     NativeTeammateExecutor,
+    NativeReplayOpponent,
     native_threshold_variants,
     native_tree_predict,
     audit_raw_tapes,
@@ -16,6 +17,7 @@ from ._fast_kaggriculture import (
 
 __all__ = [
     "Config", "FastEnv", "FastBatchEnv", "NativeTeammateExecutor",
+    "NativeReplayOpponent",
     "native_threshold_variants", "native_tree_predict",
     "audit_raw_tapes", "raw_tape_audit_metric_names", "Op", "Item",
     "audit_raw_tapes_detailed", "raw_tape_first_failure_names",

@@ -3,7 +3,15 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 build/
-work/
+work/*
+!work/new_public_opponents/
+work/new_public_opponents/*
+!work/new_public_opponents/eval/
+work/new_public_opponents/eval/*
+!work/new_public_opponents/eval/explore_new_public.py
+!work/new_public_opponents/eval/manifest_all10_training.json
+!work/new_public_opponents/eval/manifest_public7_training.json
+!work/new_public_opponents/eval/manifest_public3_families_training.json
 
 # Kept locally and verified by manifests; avoid accidental multi-GB commits.
 data/replays/raw/
@@ -15,3 +23,10 @@ data/artifacts/*.f32
 # Generated logs and process markers.
 *.log
 *.pid
+
+# Native modules must be rebuilt for the teammate's Python ABI and CPU architecture.
+policy/r1/agent.so
+fast_kaggriculture/python/fast_kaggriculture/_fast_kaggriculture*.so
+experiments/native_student_rollout/build/
+experiments/native_student_rollout/build_asset_shared/
+experiments/native_opponents/*/build/

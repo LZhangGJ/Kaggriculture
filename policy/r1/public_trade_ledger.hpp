@@ -19,7 +19,7 @@ struct PublicTradeLedger {
   int step=-1;dp7::Farm rival{};fastkag::Market market{};
   std::array<int,9> own_after_units{};std::vector<int8_t> shops;
  } previous;
- std::array<double,9> upper{},added{};
+ std::array<double,9> lower{},upper{},added{},certain_added{};
  std::array<int,9> rival_net{},valid{};
  std::array<int,9> own_sales{},own_valid{};
  int observation_step=-1,source_step=-1,accepted=0,skipped_floor=0,skipped_boundary=0,invalid_market=0;
@@ -50,7 +50,7 @@ struct PublicTradeLedger {
  }
  void observe(const dp7::View&o){
   if constexpr(!enabled)return;
-  observation_step=o.step;source_step=previous.step;added={};rival_net={};valid={};own_sales={};own_valid={};
+  observation_step=o.step;source_step=previous.step;added={};certain_added={};rival_net={};valid={};own_sales={};own_valid={};
   if(previous.step<0)return;
   if(o.step!=previous.step+1)throw std::runtime_error("nonconsecutive public trade ledger");
   const bool boundary=previous.step%24==23;
@@ -58,7 +58,7 @@ struct PublicTradeLedger {
    const auto&a=previous.rival.tiles[pos];const auto&b=o.opponent.tiles[pos];
    int item=dp7::animal(a)?dp7::product[int(a.animal)-9]:dp7::plant(a)?int(a.crop):-1;
    if(!tracked(item))continue;
-   int gain=0;
+   int gain=0,certain=0;
    if(boundary){
     // Refresh can hide a harvest; any previously available output might have
     // been taken. Never claim this is an observed successful harvest.
@@ -66,30 +66,32 @@ struct PublicTradeLedger {
    }else if(dp7::animal(a)){
     bool same=dp7::animal(b)&&a.animal==b.animal&&a.placed_day==b.placed_day;
     gain=same?std::max(0,int(a.yield_units)-int(b.yield_units)):int(a.yield_units);
+    certain=same?gain:0;
    }else{
     bool same=dp7::plant(b)&&a.crop==b.crop&&a.planted_day==b.planted_day;
     gain=same?std::max(0,int(a.yield_units)-int(b.yield_units)):available_upper(a,previous.step/24);
+    certain=same?gain:0;
     // DIG and decay are indistinguishable from some disappearance signals;
     // adding them is safe only as an upper bound, not as certain stock.
    }
-   added[item]+=gain;upper[item]+=gain;
+   added[item]+=gain;certain_added[item]+=certain;lower[item]+=certain;upper[item]+=gain;
   }
   auto now=total(o.priv),consume=consumption(previous.step,previous.shops);
   for(int i=1;i<=7;++i){
-   if(boundary){++skipped_boundary;upper[i]=std::min(upper[i],100.0);continue;}
+   if(boundary){++skipped_boundary;lower[i]=0;upper[i]=std::min(upper[i],100.0);continue;}
    own_sales[i]=previous.own_after_units[i]-now[i];own_valid[i]=own_sales[i]>=0;
    // Before consumption this is the largest inventory in a sell-only market.
    // Equality at $1 is rejected conservatively, including a possible last
    // quote of $2 that reaches the saturation boundary after that sale.
    const int maximum_inventory=o.market.inventory[i]+consume[i];
-   if(dp7::price(i,previous.market.inventory[i])<=1||dp7::price(i,maximum_inventory)<=1){++skipped_floor;continue;}
+   if(dp7::price(i,previous.market.inventory[i])<=1||dp7::price(i,maximum_inventory)<=1){++skipped_floor;lower[i]=0;continue;}
    int own_net=previous.own_after_units[i]-now[i];
    int all_net=o.market.inventory[i]-previous.market.inventory[i]+consume[i];
    int rival=all_net-own_net;
    // A diagnostic failure must not stop a live farm. Audits require this
    // counter to remain zero; production falls back to an uncertain bound.
-   if(rival<0){++invalid_market;continue;}
-   rival_net[i]=rival;valid[i]=1;++accepted;upper[i]=std::max(0.0,upper[i]-rival);
+   if(rival<0){++invalid_market;lower[i]=0;continue;}
+   rival_net[i]=rival;valid[i]=1;++accepted;lower[i]=std::max(0.0,lower[i]-rival);upper[i]=std::max(0.0,upper[i]-rival);
   }
  }
  void record(const dp7::View&o,const fastkag::PlayerAction&action){

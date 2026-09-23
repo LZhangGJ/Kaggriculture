@@ -3403,7 +3403,8 @@ int thomas_town_draw(const std::vector<int8_t>& shops, int step, int item) {
   for (int shop : shops) {
     if (item == int(Item::MILK) && (shop == 3 || shop == 5 || shop == 6)) ++draw;
     else if (item == int(Item::WOOL) && shop == 7) draw += 2;
-    else if (item == int(Item::STRAWBERRY) && (shop == 1 || shop == 3 || shop == 6)) ++draw;
+    else if (item == int(Item::STRAWBERRY) &&
+             (shop == 1 || shop == 2 || shop == 3 || shop == 6)) ++draw;
     else if (item == int(Item::EGG) && (shop == 0 || shop == 1)) ++draw;
   }
   return draw;

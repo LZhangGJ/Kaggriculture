@@ -71,7 +71,7 @@ class NumpySearchTree:
 
 
 class SearchRouteController:
-    """Choose a searched Nash opening and at most one learned route switch."""
+    """Choose the configured opening and at most one learned route switch."""
 
     def __init__(
         self,
@@ -119,6 +119,7 @@ class SearchRouteController:
         self.opening = ""
         self.current = ""
         self.switched = False
+        self.switch_step: int | None = None
         self.history = RouteSwitchHistory()
 
     def _choose_opening(self, observation: Mapping[str, Any]) -> str:
@@ -144,6 +145,7 @@ class SearchRouteController:
             self.opening = self._choose_opening(observation)
             self.current = self.opening
             self.switched = False
+            self.switch_step = None
             self.history.reset()
         self.history.update(observation)
         changed = False
@@ -158,6 +160,11 @@ class SearchRouteController:
                 vector = route_switch_vector(observation, self.history, route_actions)
             else:
                 vector = route_state_vector(observation)
+            import os as _os
+            if _os.environ.get("CAPTURE_VECTOR"):
+                if not hasattr(self, "vectors_by_cp"):
+                    self.vectors_by_cp = {}
+                self.vectors_by_cp[int(step)] = [float(v) for v in vector]
             prediction = node[1].predict(vector)
             targets = getattr(self, "targets", ())
             if prediction in self.route_by_family:
@@ -167,10 +174,14 @@ class SearchRouteController:
                 target_index = int(prediction)
                 target = str(targets[target_index]) if 0 <= target_index < len(targets) else ""
             target = self.target_fallbacks.get(target, target)
+            import os as _os2
+            if _os2.environ.get("FORCE_TARGET"):
+                target = _os2.environ["FORCE_TARGET"]
             if target in self.route_by_family and target != self.current:
                 self.current = target
                 changed = True
                 self.switched = True
+                self.switch_step = step
         self.last_step = step
         return self.route_by_family[self.current], changed
 
