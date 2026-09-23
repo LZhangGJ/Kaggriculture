@@ -692,6 +692,34 @@ def _native_session_rewards(arrays: dict[str, np.ndarray],
     return np.sign(margin) + margin_weight * np.tanh(margin / margin_scale)
 
 
+def _native_policy_support_by_step(arrays: dict[str, np.ndarray]) -> dict:
+    """Report where sampled actions still have meaningful policy support."""
+    steps = arrays["day_step"][arrays["event_day_index"]]
+    stages = arrays["event_stage"]
+    masks = arrays["event_legal_mask"].astype(np.uint64)
+    actionable = (masks & (masks - 1)) != 0
+    logprob = arrays["old_logprob"]
+    def summary(selected):
+        return {
+            "actionable_events": int(selected.sum()),
+            "mean_chosen_surprisal": float(-logprob[selected].mean()),
+            "chosen_probability_ge_0_99": float(
+                np.mean(logprob[selected] >= math.log(0.99))),
+        }
+    return {
+        str(step): {
+            **summary(selected),
+            "by_stage": {
+                str(stage): summary(stage_selected)
+                for stage in (0, 1)
+                if (stage_selected := selected & (stages == stage)).any()
+            },
+        }
+        for step in STUDENT_STEPS
+        if (selected := (steps == step) & actionable).any()
+    }
+
+
 def _attach_native_day_advantages(
         results: list[dict], arrays: dict[str, np.ndarray],
         day_advantages: np.ndarray) -> None:
@@ -1722,6 +1750,9 @@ def train(args) -> dict:
         "game_advantage_mean": float(advantages.mean()),
         "game_advantage_std": float(advantages.std()),
         "day_state_control_variate": day_state_baseline_metrics,
+        "policy_support_by_step": (
+            _native_policy_support_by_step(native_rollout_arrays)
+            if native_rollout_arrays is not None else None),
         "by_opponent": by_opponent,
         "by_opponent_variant": by_opponent_variant,
         "by_seat": by_seat,

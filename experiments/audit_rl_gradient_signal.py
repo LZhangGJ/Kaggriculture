@@ -47,6 +47,8 @@ def audit(args: argparse.Namespace) -> dict:
             margin_weight=float(reward["margin_weight"]),
             margin_scale=float(reward["margin_scale"]),
             day_state_critic_workers=args.critic_workers))
+    if args.opponent is not None:
+        games = [game for game in games if game["opponent"] == args.opponent]
 
     by_seed: dict[int, list[dict]] = {}
     for game in games:
@@ -137,6 +139,11 @@ def audit(args: argparse.Namespace) -> dict:
             raise RuntimeError("non-finite policy gradient")
         gradients.append(gradient)
     values = np.stack(gradients).astype(np.float64)
+    if args.block_gradients is not None:
+        if args.block_gradients.exists():
+            raise FileExistsError(args.block_gradients)
+        np.savez_compressed(args.block_gradients,
+                            gradients=values.astype(np.float32))
     norms = np.linalg.norm(values, axis=1)
     mean = values.mean(axis=0)
     noise = float(np.sqrt(np.mean(np.sum((values - mean) ** 2, axis=1))))
@@ -149,6 +156,7 @@ def audit(args: argparse.Namespace) -> dict:
         "step": args.step,
         "grouping": args.grouping,
         "component": args.component,
+        "opponent": args.opponent,
         "device": args.device,
         "safe_hidden_index_copy": (args.safe_hidden_index_copy
                                    if args.safe_hidden_index_copy is not None
@@ -185,6 +193,8 @@ def main() -> None:
     parser.add_argument("--policy-seed", type=int, default=0)
     parser.add_argument("--component", choices=("policy", "entropy", "full"),
                         default="policy")
+    parser.add_argument("--opponent")
+    parser.add_argument("--block-gradients", type=Path)
     parser.add_argument("--threads", type=int, default=4)
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--safe-hidden-index-copy", action="store_true",
