@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 23, 2026 at 11:51 PM UTC
+Updated: Sep 23, 2026 at 11:52 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -120,9 +120,9 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 23, 2026 at 11:51 PM UTC
+Last updated: Sep 23, 2026 at 11:52 PM UTC
 
-Status: running Â· Last sync: Sep 23, 2026 at 11:51 PM UTC
+Status: running Â· Last sync: Sep 23, 2026 at 11:52 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
@@ -487,11 +487,11 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b35fdc439b3b | Complete | 2/2 |
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
-| cumulative-active-ffc8942965b1 | Provisional | 151055/151055 |
+| cumulative-active-ffc8942965b1 | Provisional | 151056/151056 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 23, 2026 at 11:51 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 23, 2026 at 11:52 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
@@ -516,9 +516,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 23, 2026 at 11:51 PM UTC
 | DP Melon Cyborg V4  gooseoverflow | -0.45 | 7599 / 9883 / 2 | 43.5% | 43.5% | -1,415 |
 | DP Melon Cyborg R4  invincible | -0.53 | 7399 / 10785 / 2 | 40.7% | 40.7% | -2,005 |
 | TRI_A08_r11_r3 | -1.12 | 4585 / 14187 / 2 | 24.4% | 24.4% | -4,605 |
-| Broad PPO CP1069 | -1.76 | 212 / 895 / 0 | 19.2% | 19.2% | -8,430 |
+| Broad PPO CP1069 | -1.76 | 212 / 896 / 0 | 19.1% | 19.1% | -8,430 |
 | Broad PPO CP1020 | -2.16 | 357 / 1854 / 0 | 16.1% | 16.1% | -9,999 |
-| Broad PPO CP800 | -2.78 | 195 / 1895 / 0 | 9.3% | 9.3% | -11,758 |
+| Broad PPO CP800 | -2.77 | 196 / 1895 / 0 | 9.4% | 9.4% | -11,758 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
@@ -645,7 +645,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 23, 2026 at 11:51 PM UTC
 | Broad PPO CP800 | Day 9 planner selector | 5/94 | 5.3% | 4/47 | 1/47 |
 | Broad PPO CP800 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/50 | 0.0% | 0/25 | 0/25 |
 | Broad PPO CP800 | TRI_A08_r11_r3 | 6/86 | 7.0% | 3/43 | 3/43 |
-| Broad PPO CP800 | Broad PPO CP1069 | 6/46 | 13.0% | 3/23 | 3/23 |
+| Broad PPO CP800 | Broad PPO CP1069 | 7/47 | 14.9% | 4/24 | 3/23 |
 | Broad PPO CP800 | kaggriculture-more-wheat-smarter-sales | 4/74 | 5.4% | 2/37 | 2/37 |
 | Broad PPO CP800 | DP Melon Cyborg R4  invincible | 14/116 | 12.1% | 6/58 | 8/58 |
 | Broad PPO CP800 | A06 R9C6 | 0/56 | 0.0% | 0/28 | 0/28 |
@@ -690,7 +690,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 23, 2026 at 11:51 PM UTC
 | Broad PPO CP1069 | TRI_A06_r12_r3_fix1 | 4/50 | 8.0% | 1/25 | 3/25 |
 | Broad PPO CP1069 | Day 9 planner selector | 5/56 | 8.9% | 3/28 | 2/28 |
 | Broad PPO CP1069 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/26 | 0.0% | 0/13 | 0/13 |
-| Broad PPO CP1069 | Broad PPO CP800 | 40/46 | 87.0% | 20/23 | 20/23 |
+| Broad PPO CP1069 | Broad PPO CP800 | 40/47 | 85.1% | 20/23 | 20/24 |
 | Broad PPO CP1069 | TRI_A08_r11_r3 | 1/34 | 2.9% | 0/17 | 1/17 |
 | Broad PPO CP1069 | kaggriculture-more-wheat-smarter-sales | 0/28 | 0.0% | 0/14 | 0/14 |
 | Broad PPO CP1069 | DP Melon Cyborg R4  invincible | 16/76 | 21.1% | 8/38 | 8/38 |
@@ -1842,6 +1842,6 @@ Same versions only; descriptive changes, not significance tests.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
-- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
