@@ -1,6 +1,8 @@
 # 交接
 
-> **2026-09-24 最新：v463 Kaggle 提交**。三地 G275/旧浅树 + funded replay，step288 后逐格采样、`intraday=0`。最近 100 轮同一三手训练池中最高的已记录胜数是 v464 rollout 的 `1377/1536`；它实际由输入 checkpoint **v463** 产生，不是 v464 更新后权重，也不是独立盲测。原样提交包 `submissions/student-v463-funded-kaggle.tar.gz`，SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`；Kaggle ID `56517329` 已 COMPLETE，初始公开分 `600.0` 尚不能代表匹配强度。按用户要求未另跑胜率测试。三地连续训练仍运行，四地隔离链暂停。
+> **2026-09-24 最终三地续训点**：本机在完整 v682 轮后暂停三地训练；GitHub 分支 `handoff/rl-student-economic-v682-20260924` 提供可续训 `models/student-v682/`（模型、AdamW、C++ 权重与 manifest）。队友从 v683、新互斥 seed 段开始，使用逐格**采样**、`intraday=0`；构建和完整命令见 `AGENTS.md` 首节。重建 JobBatch 与本机训练二进制在 80 局状态/终局一致，但前缀动作不严格一致（step20 多一笔未成交购种单），因此这是可续训分叉而非逐步 exact 复刻。它不是先前单独评测的 v619，也不是 v463 Kaggle 包，**不含交易 DP**；未获新的 Kaggle 上传许可。
+
+> **历史 v463 Kaggle 提交**。三地 G275/旧浅树 + funded replay，step288 后逐格采样、`intraday=0`。当时最近 100 轮同池最高的已记录胜数是 v464 rollout 的 `1377/1536`；它实际由输入 checkpoint **v463** 产生，不是 v464 更新后权重，也不是独立盲测。原样提交包 `submissions/student-v463-funded-kaggle.tar.gz`，SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`；Kaggle ID `56517329` 已 COMPLETE，初始公开分 `600.0` 尚不能代表匹配强度。按用户要求当时未另跑胜率测试；本轮训练后来在 v682 完整结束后暂停。
 
 > **2026-09-24 v306 新交接分支**：`handoff/rl-student-v306-kaggle-20260924`。
 > 可续训权重在 `models/student-v306/`，已提交 Kaggle 的原包在

@@ -4,6 +4,34 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
+## 当前三地 RL 续训快照 v682（`handoff/rl-student-economic-v682-20260924`）
+
+- 这是本机三地连续训练**完整 v682 轮后停止点**的隔离 GitHub 分支；下轮从 v683 开始，不是 v678 或先前 Kaggle v463。冻结 `models/student-v682/{actor.pt,actor.bin,manifest.json,metrics.json}`，不含 rollout NPZ/BC mmap/原始 replay/本机 aarch64 `.so`。v682 `.pt` 含模型与 `rl_optimizer` 28 个 AdamW 状态，维度 `2233/3145/374`、scale=3；`.bin` 是同 checkpoint 的 C++ 权重。SHA-256：`.pt` `2c7fd47490de9b4b8d6fc0cc1a47e7a2b4b95f1c8851cb8e923c9164ec7f9c4b`、`.bin` `8979d2f529a2ec1db43a49139a7459806a36fe89826b6cf71a88e70dfa66cf0d`、manifest `25e12c5bafc1f2aca509dfc8dfd1d6d6678042b94d06d8294cc8724c0591dc87`。v682 metrics `PASS`，`1370/1536` 是**v681 输入策略**的同池 rollout，不是 v682 独立评测；其 `checkpoint_out_sha256` 验证 v682 `.pt`，`.bin` 已从该 `.pt` 独立重新导出并匹配 SHA。
+- 行为契约：G275/旧浅树 + funded replay 到 step288，之后 17 个日初逐格**采样**，`student_intraday=0`；训练池 Thomas/Meta/Fieldcraft 各 1/3。原生训练所用 student bridge SHA `ae666af83c9639ca54160e35019e8823365dfc807ebe40025d1ef0d5d6c182de`，funded JobBatch SHA `019d24a32b157b4f63e07fabb1f11b00ed8a1f82b48148eb0d9f6dac31e4c79e`。本分支源码含小型对手资产；换架构必须重建全部 `.so`，并核对首次 fresh rollout 的 `native_job_inputs_sha256`、old-policy replay、非法/fallback，而不能复制本机二进制或仅凭 checkpoint 可加载就称逐步 exact。不要启用四地 lifecycle/shop gate/旧 `sale_dp=1`；交易博弈 DP 未接入本快照，也未获 Kaggle 上传许可。
+- **源码复建边界**：由本分支干净源码重新编译 funded JobBatch 的 SHA 不等于上述本机训练二进制；在 v678、五手 × 8 seed × 双座的 80 局中，重建版与本机版的每局终局现金、actor hash、719 帧状态一致，但 `prefix_action_hash` 80/80 不同。逐步对拍定位到 step20 重建版多发一笔未成交的 `BUY_SEED WHEAT 1`，故**不能声称前缀动作严格复现**；更早 d897 源码复建也未消除该差异。v682 `.pt`/`.bin` 本身精确同轮、可从 v683 新 seed 做 on-policy 续训，但这属于有明确前缀实现差异的续训分叉，不能把新主机的训练轨迹冒称原二进制逐步 exact。首次训练先看前缀订单是否在新 seed 变成真实成交，并保留独立评测。
+- 评测独立于训练：先前 v619 在五个 C++ 强手 ×128 seed×双座的 dev 采样评测为 `1123/1280`，不可冒充 v682 的成绩。下例 seed `3300200000` 须与队友自己的训练/保留盲测段再次核对互斥；本机停止后的训练不会自动同步。
+
+```bash
+(cd fast_kaggriculture && python setup.py build_ext --inplace)
+bash experiments/native_student_rollout/build_student_bridge.sh work/agent-student-actor-owned-v3.so
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/thomas_2945_cpp/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/metav4_2965/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/fieldcraft_2887/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/salemali7_2900/build.sh
+PYTHON_BIN="$(command -v python)" BUILD_DIR=experiments/native_student_rollout/build-economic-funded bash experiments/native_student_rollout/build.sh
+PYTHONPATH=. python -u experiments/run_student_rl_continuous.py \
+  --start-round 683 --checkpoint models/student-v682/actor.pt \
+  --weights models/student-v682/actor.bin --manifest models/student-v682/manifest.json \
+  --binary work/agent-student-actor-owned-v3.so \
+  --native-job-module-dir experiments/native_student_rollout/build-economic-funded \
+  --economic-input-v1 --no-day-state-baseline --student-intraday 0 \
+  --opponents thomas_2945_cpp,metav4_2965,fieldcraft_2887 \
+  --seed-start 3300200000 --native-job-threads 32 --device cpu \
+  --runtime-dir work/continuous-rl-economic-v682-handoff --tag economic-v1-v682
+```
+
+CPU 主机用 `--device cpu`；有 Ascend NPU 时改本机设备号和线程数。Python 3.11、PyTorch、NumPy、scikit-learn、pybind11、GCC/C++20、OpenSSL 开发库为必要环境。原 manifest 中旧 BC 路径不被原生 PPO 读取。
+
 ## 2026-09-24 当前研究与 Kaggle 提交
 
 - 已按用户要求从近期同池 RL rollout 的已记录胜数直接选模型、未追加胜率测试：v464 rollout `1377/1536` 由 **v463 `checkpoint_in`** 产生。打包三地 G275/旧浅树 + funded replay、step288 后 17 天逐格采样、`intraday=0`；原样包 `submissions/student-v463-funded-kaggle.tar.gz`（SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`）已上传 Kaggle，submission `56517329` 已 COMPLETE。初始公开分 `600.0` 不能代表匹配强度。训练胜数不是独立盲测；此包也没有替换普通 `agent/main.py`。
