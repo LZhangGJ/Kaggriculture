@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 24, 2026 at 5:45 AM UTC
+Updated: Sep 24, 2026 at 5:47 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -8,7 +8,7 @@ CPU evaluation on WRX90 and the mini PC. Results below are local; they are not K
 
 Best team agent: No comparable cumulative team result
 
-Live Elo leader: No comparable rated result
+Live Elo leader: the-shepherds-ledger-herd-safe-sovereign [PUBLIC] — 2045.0 Elo, 176 games
 
 Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.
 
@@ -131,36 +131,12 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 24, 2026 at 5:24 AM UTC
+Last updated: Sep 24, 2026 at 5:47 AM UTC
 
-Status: connection_or_job_error Â· Last sync: Sep 24, 2026 at 5:44 AM UTC
+Status: running Â· Last sync: Sep 24, 2026 at 5:47 AM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
-| TRI_A06_r12_r3_fix1 | 1835.8 | 14 | 78.6% | e0e671e578 |
-| 2842-two-identical-agents-90-points-apart **PUBLIC** | 1825.8 | 10 | 80.0% | e0e671e578 |
-| kaggriculture-v40-challenger **PUBLIC** | 1779.0 | 2 | 100.0% | e0e671e578 |
-| teammate-lzhang-student-v306 | 1753.7 | 28 | 78.6% | e0e671e578 |
-| the-2965-master-hybrid-engine **PUBLIC** | 1718.1 | 14 | 71.4% | e0e671e578 |
-| kaggriculture-v15stack-submit **PUBLIC** | 1605.6 | 16 | 56.2% | e0e671e578 |
-| TRI_A08_r11_r3 | 1587.8 | 12 | 50.0% | e0e671e578 |
-| kaggriculture-v56-smarter-seeds-and-fertilizer **PUBLIC** | 1559.0 | 12 | 66.7% | e0e671e578 |
-| A06 R9C6 | 1555.5 | 12 | 50.0% | e0e671e578 |
-| Broad PPO CP1069 | 1540.2 | 4 | 50.0% | e0e671e578 |
-| kaggriculture-pipe18-six-layers **PUBLIC** | 1513.8 | 18 | 55.6% | e0e671e578 |
-| the-shepherds-ledger-herd-safe-sovereign **PUBLIC** | 1508.7 | 18 | 55.6% | e0e671e578 |
-| teammate-lzhang-r1planner | 1500.0 | 0 | â€” | e0e671e578 |
-| Day 9 planner selector | 1494.8 | 8 | 50.0% | e0e671e578 |
-| kaggriculture-more-wheat-smarter-sales **PUBLIC** | 1467.2 | 8 | 50.0% | e0e671e578 |
-| A06 R9C7 five-day | 1428.9 | 14 | 64.3% | e0e671e578 |
-| R03goosefix | 1400.8 | 18 | 33.3% | e0e671e578 |
-| herd-safe-v3-experimental-risk-aware-feed **PUBLIC** | 1387.1 | 6 | 33.3% | e0e671e578 |
-| A06 R6 | 1380.1 | 16 | 31.2% | e0e671e578 |
-| kaggriculture-master-engine-v3 **PUBLIC** | 1351.2 | 16 | 25.0% | e0e671e578 |
-| your-market-list-is-an-order-book **PUBLIC** | 1344.8 | 14 | 35.7% | e0e671e578 |
-| DP Melon Cyborg V4  gooseoverflow | 1292.8 | 16 | 25.0% | e0e671e578 |
-| TRI_A06_r6_r3_bundle_fix1 | 1138.5 | 8 | 25.0% | e0e671e578 |
-| DP Melon Cyborg R4  invincible | 1030.6 | 16 | 6.2% | e0e671e578 |
 | the-shepherds-ledger-herd-safe-sovereign **PUBLIC** | 2045.0 | 176 | 83.0% | ffc8942965 |
 | teammate-lzhang-r1planner | 1981.4 | 120 | 74.2% | ffc8942965 |
 | the-2965-master-hybrid-engine **PUBLIC** | 1949.8 | 178 | 73.0% | ffc8942965 |
@@ -183,6 +159,7 @@ Status: connection_or_job_error Â· Last sync: Sep 24, 2026 at 5:44 AM UTC
 | TRI_A06_r6_r3_bundle_fix1 | 1633.3 | 70966 | 52.6% | ffc8942965 |
 | TRI_A06_r12_r3_fix1 | 1632.4 | 72010 | 52.4% | ffc8942965 |
 | TRI_A08_r11_r3 | 1554.4 | 67748 | 43.6% | ffc8942965 |
+| teammate-lzhang-student-v306 | 1500.0 | 0 | â€” | ffc8942965 |
 | Broad PPO CP1069 | 1409.0 | 2404 | 21.8% | ffc8942965 |
 
 ## Retired agents
@@ -2498,6 +2475,6 @@ Same versions only; descriptive changes, not significance tests.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
