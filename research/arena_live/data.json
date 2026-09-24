@@ -211181,22 +211181,16 @@
     "updated": "2026-09-24T05:24:58.011181+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-24T05:24:58.174924+00:00",
-    "status": "running",
+    "at": "2026-09-24T05:27:25.284742+00:00",
+    "status": "connection_or_job_error",
     "workers": {
       "mini": {
-        "at": "2026-09-24T05:24:26.411260+00:00",
-        "daily_games_pending": 0,
-        "pending_rounds": 3,
-        "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
-        "status": "running"
+        "at": "2026-09-24T05:26:26.860341+00:00",
+        "status": "connection_or_job_error"
       },
       "vast": {
-        "at": "2026-09-24T05:24:58.160023+00:00",
-        "daily_games_pending": 0,
-        "pending_rounds": 7,
-        "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
-        "status": "running"
+        "at": "2026-09-24T05:27:25.260681+00:00",
+        "status": "connection_or_job_error"
       }
     }
   },
@@ -244506,125 +244500,6 @@
         }
       },
       "updated": "2026-09-19T17:53:01.504957+00:00"
-    },
-    {
-      "complete": true,
-      "completed": 1,
-      "components": [
-        [
-          "342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a",
-          "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8"
-        ]
-      ],
-      "contract": "e0e671e5786e6929b638cff0977efd4f3614c33c03e416131a3f87a18b6db1c8",
-      "created": "2026-09-24T05:03:09.512860+00:00",
-      "fingerprint": "7519375a721529d214f20d8dcbea5c3d4324964354460ae2ba20739d7cc5dfa7",
-      "intervals": {
-        "342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a": null,
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": null
-      },
-      "kind": "placement",
-      "matrix": {
-        "342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 1,
-          "cash_margin": 2119.0,
-          "draws": 0,
-          "games": 1,
-          "losses": 0,
-          "score": 1.0,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 1,
-              "wins": 1
-            },
-            "1": {
-              "draws": 0,
-              "games": 0,
-              "wins": 0
-            }
-          },
-          "win_rate": 1.0,
-          "wins": 1
-        },
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a": {
-          "cash_games": 1,
-          "cash_margin": -2119.0,
-          "draws": 0,
-          "games": 1,
-          "losses": 1,
-          "score": 0.0,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 0,
-              "wins": 0
-            },
-            "1": {
-              "draws": 0,
-              "games": 1,
-              "wins": 0
-            }
-          },
-          "win_rate": 0.0,
-          "wins": 0
-        }
-      },
-      "method": "half-win-bt-v2",
-      "method_description": "Bradley-Terry; draws half wins; centered strengths; Gaussian SD=3 regularization; no seat adjustment",
-      "planned": 1,
-      "ratings": {
-        "342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a": 1.0255221401275127,
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": -1.0255221401275127
-      },
-      "run": "placement-342386efd6ee6a8a1587",
-      "stats": {
-        "342386efd6ee6a8a1587f7ebaecf978cc73b1b762730149f96c404392d125c5a": {
-          "cash_games": 1,
-          "cash_margin": 2119.0,
-          "draws": 0,
-          "games": 1,
-          "losses": 0,
-          "score": 1.0,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 1,
-              "wins": 1
-            },
-            "1": {
-              "draws": 0,
-              "games": 0,
-              "wins": 0
-            }
-          },
-          "win_rate": 1.0,
-          "wins": 1
-        },
-        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
-          "cash_games": 1,
-          "cash_margin": -2119.0,
-          "draws": 0,
-          "games": 1,
-          "losses": 1,
-          "score": 0.0,
-          "seats": {
-            "0": {
-              "draws": 0,
-              "games": 0,
-              "wins": 0
-            },
-            "1": {
-              "draws": 0,
-              "games": 1,
-              "wins": 0
-            }
-          },
-          "win_rate": 0.0,
-          "wins": 0
-        }
-      },
-      "updated": "2026-09-24T05:03:39.692709+00:00"
     },
     {
       "complete": true,
@@ -350752,5 +350627,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-24T05:25:20.941826+00:00"
+  "updated": "2026-09-24T05:27:55.227851+00:00"
 }
