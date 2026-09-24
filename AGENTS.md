@@ -4,7 +4,15 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
-## 队友主机：v285 采样对手与续训（`handoff/rl-student-v285-20260924`）
+## 当前交接：v306 采样 RL 与 Kaggle 提交（`handoff/rl-student-v306-kaggle-20260924`）
+
+- 仓库 `https://github.com/LZhangGJ/Kaggriculture` 的本分支保留 v285 不动，新增 `models/student-v306/{actor.pt,actor.bin,manifest.json,metrics.json}`。v306 的 `.pt` 是可续训的模型与 AdamW 状态，`.bin` 是同轮 C++ 前向权重；两者 SHA-256 分别为 `14ff8eeced3fb1fe9414de70909ddba82271ce5fc73fa1e46676bc89a931d31f`、`ea877102df5342ec70de5c54dbe90b541566657749b4c4f87a6ab5b59e48ed08`。manifest 与 v285/v45 内容相同，不要求下载旧 BC 文件。
+- `submissions/student-v306-kaggle.tar.gz`（SHA-256 `908235e386d73252505a7b3879079d07e835d1c0ec78533f13a69ea1f2c2bdaa`）是已提交 Kaggle 的**原包**：前 288 步 replay/浅树，后 17 个日初由逐格 v306 **采样**，`intraday=0`。内含 Jammy x86_64 R1 bridge、权重和冻结 tokenizer，可直接作为提交物；普通 `agent/main.py` 仍是非 NN replay→R1，不要误用旧 `scripts/pack_kaggle_submission.py` 来声称提交 v306。只上传这份 10.6 MB 原包和小模型，未上传 rollout NPZ、replay、缓存、本机 aarch64 `.so`。
+- Kaggle 提交 `56511458` 已 `COMPLETE`：验证自我对战两侧均跑满 719 步，17 个 NN 决策日无 fallback/非法/日志错误；日初耗时约 `0.07–0.23s`，首步加载约 `19.4s` 从 60s overage 扣除。页面初值 `600.0` 时只有一局 validation、没有公开匹配局，**不是可比较的强度分**。后续看胜率必须等 public episodes。
+- 提交端 2233/3145/374 输入与原生训练端已做定点 parity：token 数、连续值、类别与经济观察一致；Jammy x86_64 和本机 aarch64 对同一 warm 接管后 17 步 `td_observe` 输出逐项一致。源码重打包用 `PYTHONPATH=. python scripts/pack_student_v306_kaggle.py --so <Jammy x86_64 student bridge> --output build/student-v306-kaggle.tar.gz`；`experiments/student_v306_vendor/kaggrl/` 是随分支冻结、仅供 v306 提交入口使用的 tokenizer，不需要本机 starter 仓库，也不遮蔽其他项目的 `kaggrl`。重打包产物未必与已提交原包字节相同，不应冒充提交 ID 对应文件。
+- 队友续训先按下方 v285 交接命令重建各原生扩展，再把训练命令中的 `--start-round` 改成 `307`、三个模型/manifest 路径改成 `models/student-v306/`、seed 段换成新的互斥段（例如 `3300000000`），保留 `--economic-input-v1 --no-day-state-baseline --student-intraday 0` 与采样三手池。不要从 Kaggle 的 tarball 解出 `.pt` 当作唯一训练入口；本目录中的 `.pt` 含 AdamW 续训状态。
+
+## 历史交接：v285 采样对手与续训（`handoff/rl-student-v285-20260924`）
 
 - 从 `https://github.com/LZhangGJ/Kaggriculture` 的**本分支**检出。冻结的正式 economic RL v285 在 `models/student-v285/`：`actor.pt`（模型与 AdamW 状态，SHA-256 `77db07d754fd3d79000e37b7742bb5a19199c7f2c55f51b21ea741968841e2a0`）、`actor.bin`（同轮 C++ 前向权重，SHA-256 `800227b1f399bdfe78d436dc75c422c4156e1c2991aa39edb813c0722ff54e04`）、`manifest.json`（固定训练契约，SHA-256 `25e12c5bafc1f2aca509dfc8dfd1d6d6678042b94d06d8294cc8724c0591dc87`）。manifest 与 v45 相同，旧本机 BC 路径不是原生 PPO 续训的数据依赖。v285 是训练链快照，不是盲测最优或 Kaggle 提交包；本机后续训练不会自动更新此分支。
 - 运行行为必须是**前 288 步 replay/浅树，之后逐格 actor 采样，`student_intraday=0`**。不传 `--sample` 就是 argmax，不能拿来代表交给队友的对手。`agent/main.py` 目前仍运行非 NN 的 replay→R1；它不会自动加载 `actor.bin`。本分支提供可复现的原生 JobBatch 对局入口与续训入口，尚未提供可直接塞进任意外部 RL 框架或 Kaggle 的独立 bot 回调；那种接入仍需适配此执行/特征/随机数契约并核对动作。

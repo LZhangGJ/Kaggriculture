@@ -1,5 +1,10 @@
 # Kaggriculture Replay Route Switch（干净工程）
 
+> 2026-09-24 RL 交接：`handoff/rl-student-v306-kaggle-20260924` 提供可续训的
+> `models/student-v306/` 和实际提交过的 `submissions/student-v306-kaggle.tar.gz`。
+> 这份提交使用 replay/浅树开局 + 17 天逐格采样 NN；普通 `agent/main.py`
+> 仍是非 NN 的 replay→R1。构建与验证详情见 `AGENTS.md` 首节。
+
 ## 2026-09-23：逐格 BC 契约勘误（v2 已拒绝）
 
 中盘学习主线仍是自回归逐格 actor，但旧 slot ABI v2 **不是有效教师契约**。它把 preview 前的 greedy

@@ -25,13 +25,15 @@ os.environ.setdefault("TORCH_DEVICE_BACKEND_AUTOLOAD", "0")
 import numpy as np
 import torch
 
-from experiments.build_midgame_action_events_v3 import (
-    PACKED_OBSERVATION_CAPACITY, validate_day_boundary_pack,
+from experiments.student_economic_features_v1 import (
+    economic_features, prefix_flow_features,
 )
+from experiments.student_v3_runtime_model import build_model
 
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKENIZER_ROOT = Path("/root/kaggriculture_transformer_ppo_starter")
+PACKED_OBSERVATION_CAPACITY = 3074
 DEFAULT_CHECKPOINT = (
     ROOT / "work/student-v1/action-event-v3-first-handoff-128-student.pt")
 DEFAULT_BINARY = ROOT / "work/agent-student-contract-v3.so"
@@ -41,6 +43,19 @@ EVENT_CLASSES = (
     "STRAWBERRY", "MELON", "GOOSE", "COW", "SHEEP",
 )
 MAX_TOKENS = 320
+
+
+def validate_day_boundary_pack(observation: dict, packed_length: int) -> None:
+    step = int(observation["day"]) * 24 + int(observation["hour"])
+    farms = observation["farms"]
+    inventories = observation["private"]["inventories"]
+    shops = observation["town"]["unlocked_shops"]
+    if (step % 24 or len(farms) != 2 or
+            any(farm.get("hands") or int(farm.get("hires_today", 0))
+                for farm in farms) or inventories != [{}] or len(shops) > 8 or
+            packed_length != 3066 + len(shops) or
+            packed_length > PACKED_OBSERVATION_CAPACITY):
+        raise ValueError("observation violates hour-zero packed ABI")
 
 
 def _load_module(name: str, path: Path):
@@ -106,18 +121,23 @@ class StudentActionEventAgent(policy.Agent):
                     for step in self.student_steps)):
             raise ValueError("requested student days are not attested by the checkpoint")
         dimensions = checkpoint["model_dimensions"]
-        from experiments.train_midgame_autofill_v3 import build_model
         self.model = build_model(
             dimensions["causal_context"], dimensions["packed_observation"],
             dimensions["event_resources"], checkpoint.get("model_scale", 1))
         self.model.load_state_dict(checkpoint["model"])
         self.model.eval()
         self.dimensions = dict(dimensions)
+        self.economic_v1 = dimensions == {
+            "causal_context": 2233, "packed_observation": 3145,
+            "event_resources": 374,
+        }
         self.normalization = {
             name: torch.as_tensor(value, dtype=torch.float32)
             for name, value in checkpoint["normalization"].items()
         }
-        sys.path.insert(0, str(TOKENIZER_ROOT))
+        sys.path.insert(0, str(
+            ROOT / "experiments/student_v306_vendor" if self.economic_v1
+            else TOKENIZER_ROOT))
         from kaggrl.tokenizer import ObservationTokenizer
         self.tokenizer = ObservationTokenizer()
         self.student_days: list[dict] = []
@@ -128,6 +148,16 @@ class StudentActionEventAgent(policy.Agent):
         manifest = json.loads(self.manifest_path.read_text())
         validation = manifest.get("validation", {})
         dimensions = checkpoint.get("model_dimensions", {})
+        if dimensions == {"causal_context": 2233,
+                          "packed_observation": 3145,
+                          "event_resources": 374}:
+            if (checkpoint.get("shard_manifest_sha256") !=
+                    _sha256(self.manifest_path) or
+                    manifest.get("validation_status") != "accepted" or
+                    tuple(checkpoint.get("training_state_steps", ())) !=
+                    tuple(range(288, 673, 24))):
+                raise ValueError("v306 checkpoint contract mismatch")
+            return
         if (manifest.get("validation_status") != "accepted" or
                 manifest.get("schema", {}).get("schema_name") !=
                 "autoregressive-action-event-bc-v3" or
@@ -194,9 +224,22 @@ class StudentActionEventAgent(policy.Agent):
                 f"packed observation {exact.size}>{observation_width}")
         padded = np.zeros(observation_width, dtype=np.float32)
         padded[:exact.size] = exact
+        if self.economic_v1:
+            padded[PACKED_OBSERVATION_CAPACITY:] = economic_features(exact)
         encoded = self.tokenizer.encode(canonical)
         if encoded.num_tokens > MAX_TOKENS:
             raise ValueError(f"token count {encoded.num_tokens}>{MAX_TOKENS}")
+        if self.economic_v1:
+            # Starter tokenizer order differs from the native rollout ABI.
+            # Keep the whole town-token block in native order and IDs.
+            if not bool((encoded.token_type[-8:] == 6).all()):
+                raise ValueError("missing eight public shop tokens")
+            order = [0, 2, 7, 4, 5, 1, 6, 3]
+            for name in ("continuous", "token_type", "category_a", "category_b",
+                         "category_c", "x", "y", "owner"):
+                values = getattr(encoded, name)
+                values[-8:] = values[-8:][order].clone()
+            encoded.category_a[-8:] = torch.arange(1, 9)
         continuous = torch.zeros((1, MAX_TOKENS, 24), dtype=torch.float32)
         continuous[0, :encoded.num_tokens] = encoded.continuous
         categories = []
@@ -249,7 +292,7 @@ class StudentActionEventAgent(policy.Agent):
                     width = int(width)
                     if (not 0 <= cell < 100 or not mask_bits or
                             mask_bits >> len(EVENT_CLASSES) or
-                            width != int(self.dimensions["event_resources"])):
+                            width != 347):
                         raise RuntimeError("invalid native v3 callback event")
                     if stage == 0:
                         if mask_bits & ~0b110 or not mask_bits & 0b110:
@@ -257,6 +300,9 @@ class StudentActionEventAgent(policy.Agent):
                     elif mask_bits & (1 << 2) or not mask_bits & (1 << 1):
                         raise RuntimeError("invalid placement legal mask")
                     resource = np.ctypeslib.as_array(values, shape=(width,)).copy()
+                    if self.economic_v1:
+                        resource = np.concatenate((
+                            resource, prefix_flow_features(resource, step // 24)))
                     resource = torch.from_numpy(resource.astype(np.float32)).unsqueeze(0)
                     resource = ((resource - self.normalization["resource_mean"]) /
                                 self.normalization["resource_std"])
@@ -367,14 +413,23 @@ class StudentActionEventAgent(policy.Agent):
 
 def create_agent(seat=0):
     config = json.loads((ROOT / "policy/r1/config.json").read_text())
+    checkpoint_path = Path(os.environ.get("STUDENT_CHECKPOINT", DEFAULT_CHECKPOINT))
+    if (checkpoint_path.parent.name == "student-v306" or
+            checkpoint_path.name.startswith("v3-ppo-native-job-economic-v1-v306-")):
+        config["intraday"] = 0
+        student_steps = tuple(range(288, 673, 24))
+        sample = True
+    else:
+        student_steps = (288,)
+        sample = os.environ.get("STUDENT_SAMPLE", "0") == "1"
     dynamic = StudentActionEventAgent(
         config,
         binary_path=Path(os.environ.get("STUDENT_R1_BINARY", DEFAULT_BINARY)),
-        checkpoint_path=Path(os.environ.get(
-            "STUDENT_CHECKPOINT", DEFAULT_CHECKPOINT)),
+        checkpoint_path=checkpoint_path,
         manifest_path=Path(os.environ.get("STUDENT_V3_MANIFEST", DEFAULT_MANIFEST)),
-        sample=os.environ.get("STUDENT_SAMPLE", "0") == "1",
+        sample=sample,
         temperature=float(os.environ.get("STUDENT_TEMPERATURE", "1")),
+        student_steps=student_steps,
     )
     replay = production.replay_deployment()
     if not replay:

@@ -1,0 +1,523 @@
+{
+  "status": "PASS",
+  "deployment_eligible": false,
+  "scope": "native_cpp_job_batch",
+  "rollout_engine": "pure_cpp_job_batch",
+  "opponent_backend": "native_cpp",
+  "native_opponent_artifacts": {
+    "thomas_2945_cpp": {
+      "module_sha256": "40a1d5baec1b523fd934be8d1e42c642dd46496837ec17c6c9f0888426c063f4",
+      "asset_sha256": "3f3a8dd2d51959dbbb25f749e8742dee0595f3604b77c813e3fedf7ccd7949fd"
+    },
+    "metav4_2965": {
+      "module_sha256": "c693e767a2a70690aa9b3de2a2a4ad6a7b574968f882eaaa032c88d006b53c8d",
+      "asset_sha256": "93b24cf7905e585314a6a61018d12a000f14bd27a5c196dd342fffc8c173814c"
+    },
+    "fieldcraft_2887": {
+      "module_sha256": "3b66493eb6ec709540dac732400e996dc2d4b60eaea2d520a54529cc58867a0c",
+      "asset_sha256": "58fafe70c03c398c850951a684a0cc6d53d57416e6aeec723c6ec1f884a8aa25"
+    }
+  },
+  "algorithm": "on_policy_clipped_ppo_day_bundle_paired_seed_loo_unscaled_advantage",
+  "action_unit": "day_bundle",
+  "checkpoint_in": "/root/kaggriculture-replay-switch-clean-v1/work/student-v1/v3-ppo-native-job-economic-v1-v305-1536g.pt",
+  "checkpoint_in_sha256": "d0775c817bfb001454f05c65e6418bd9fbd4d02478a14d0b88d63d0ca0c791db",
+  "checkpoint_out": "/root/kaggriculture-replay-switch-clean-v1/work/student-v1/v3-ppo-native-job-economic-v1-v306-1536g.pt",
+  "checkpoint_out_sha256": "14ff8eeced3fb1fe9414de70909ddba82271ce5fc73fa1e46676bc89a931d31f",
+  "rollout": "/root/kaggriculture-replay-switch-clean-v1/work/student-v1/v3-ppo-native-job-economic-v1-v306-1536g.rollout.npz",
+  "rollout_sha256": "56ce25d10c053235b48f0cbe80704f69633b240d6e992f1c88f60e7e7939738f",
+  "binary_sha256": "ae666af83c9639ca54160e35019e8823365dfc807ebe40025d1ef0d5d6c182de",
+  "native_weights_sha256": "75f0162c1fc067b57aa1d8f41536a9b849fad2453226ba071206a18ed9b20565",
+  "native_job_module_sha256": "9c724cabcf83f4a21fe4fb91889e404aa8ea0554dbabcdf6042fa6ccd9b76e0c",
+  "native_job_inputs_sha256": {
+    "fast_env": "ab9bf3b4eb9fd5e8bf245ec84368fed33bf768695e0425e5fc90394f34c0473d",
+    "r1_config": "2f083a72c3d0d7f6bc782e2a0ef7703914e30b0b51e56816f36a22690c5bbc2c",
+    "teammate_source": "3e5fcb4b908a0f3bc8e8be6f7545473ab376ab3b22f672222b395ce25f9fe0cc",
+    "route_actions": "46eb5291d5880106363b4cb9abdcee2ff61caaa75c9c8403106c249e002e9379",
+    "route_library": "664c088d2518a12a1ad9c6b03bf3cc62630cc5e9ba0a970b59636a9462a92d65",
+    "student_scaffold_settings": "39854d8e78b3ee2f045682627f30cd532c86df94a90d776a92243aaae5396cef"
+  },
+  "student_intraday": 0,
+  "native_job_metrics": {
+    "engine": "pure_cpp_job_batch",
+    "games": 1536,
+    "events": 778557,
+    "prefix_seconds": 0.6599070057272911,
+    "actor_plan_seconds": 8.079684093000001,
+    "environment_seconds": 12.795846724,
+    "suffix_seconds": 20.883963957,
+    "array_export_seconds": 4.948963865637779,
+    "wall_seconds": 26.610223506577313,
+    "games_per_second": 57.72217582540572,
+    "threads": 192,
+    "module_sha256": "9c724cabcf83f4a21fe4fb91889e404aa8ea0554dbabcdf6042fa6ccd9b76e0c"
+  },
+  "games": 1536,
+  "events": 778557,
+  "actionable_events": 455173,
+  "wins": 1339,
+  "draws": 0,
+  "mean_margin": 6791.317708333333,
+  "mean_reward": 0.7916536927223206,
+  "reward_min": -1.081933856010437,
+  "reward_max": 1.0995240211486816,
+  "advantage_mean": 4.6566128730773926e-09,
+  "advantage_std": 0.44586560130119324,
+  "advantage_min": -2.120647668838501,
+  "advantage_max": 2.0787301063537598,
+  "advantage_baseline": "same_environment_seed_leave_one_out",
+  "game_advantage_mean": 4.6566128730773926e-09,
+  "game_advantage_std": 0.44586560130119324,
+  "day_state_control_variate": null,
+  "policy_support_by_step": {
+    "288": {
+      "actionable_events": 38107,
+      "mean_chosen_surprisal": 0.02599416673183441,
+      "chosen_probability_ge_0_99": 0.9387776523998216,
+      "by_stage": {
+        "0": {
+          "actionable_events": 30654,
+          "mean_chosen_surprisal": 0.002774659777060151,
+          "chosen_probability_ge_0_99": 0.9906374372023227
+        },
+        "1": {
+          "actionable_events": 7453,
+          "mean_chosen_surprisal": 0.12149541079998016,
+          "chosen_probability_ge_0_99": 0.7254796726150543
+        }
+      }
+    },
+    "312": {
+      "actionable_events": 36029,
+      "mean_chosen_surprisal": 0.1460951417684555,
+      "chosen_probability_ge_0_99": 0.7543922950956174,
+      "by_stage": {
+        "0": {
+          "actionable_events": 24942,
+          "mean_chosen_surprisal": 0.0015536260325461626,
+          "chosen_probability_ge_0_99": 0.9989174885734905
+        },
+        "1": {
+          "actionable_events": 11087,
+          "mean_chosen_surprisal": 0.47126466035842896,
+          "chosen_probability_ge_0_99": 0.20429331649679805
+        }
+      }
+    },
+    "336": {
+      "actionable_events": 31944,
+      "mean_chosen_surprisal": 0.3918611407279968,
+      "chosen_probability_ge_0_99": 0.4628725269221137,
+      "by_stage": {
+        "0": {
+          "actionable_events": 13479,
+          "mean_chosen_surprisal": 0.0004658846592064947,
+          "chosen_probability_ge_0_99": 0.9961421470435492
+        },
+        "1": {
+          "actionable_events": 18465,
+          "mean_chosen_surprisal": 0.677570104598999,
+          "chosen_probability_ge_0_99": 0.07359870024370431
+        }
+      }
+    },
+    "360": {
+      "actionable_events": 13300,
+      "mean_chosen_surprisal": 0.2063148021697998,
+      "chosen_probability_ge_0_99": 0.5743609022556391,
+      "by_stage": {
+        "0": {
+          "actionable_events": 560,
+          "mean_chosen_surprisal": 0.001844866550527513,
+          "chosen_probability_ge_0_99": 0.9982142857142857
+        },
+        "1": {
+          "actionable_events": 12740,
+          "mean_chosen_surprisal": 0.2153024822473526,
+          "chosen_probability_ge_0_99": 0.5557299843014128
+        }
+      }
+    },
+    "384": {
+      "actionable_events": 8838,
+      "mean_chosen_surprisal": 0.10589481145143509,
+      "chosen_probability_ge_0_99": 0.8744059742023083,
+      "by_stage": {
+        "0": {
+          "actionable_events": 7514,
+          "mean_chosen_surprisal": 4.959341822541319e-06,
+          "chosen_probability_ge_0_99": 1.0
+        },
+        "1": {
+          "actionable_events": 1324,
+          "mean_chosen_surprisal": 0.7068437933921814,
+          "chosen_probability_ge_0_99": 0.16163141993957703
+        }
+      }
+    },
+    "408": {
+      "actionable_events": 18997,
+      "mean_chosen_surprisal": 0.09736523777246475,
+      "chosen_probability_ge_0_99": 0.7882297204821814,
+      "by_stage": {
+        "0": {
+          "actionable_events": 13219,
+          "mean_chosen_surprisal": 0.0006773898494429886,
+          "chosen_probability_ge_0_99": 0.9993948105000379
+        },
+        "1": {
+          "actionable_events": 5778,
+          "mean_chosen_surprisal": 0.31856924295425415,
+          "chosen_probability_ge_0_99": 0.30512287988923503
+        }
+      }
+    },
+    "432": {
+      "actionable_events": 17118,
+      "mean_chosen_surprisal": 0.11175781488418579,
+      "chosen_probability_ge_0_99": 0.7690734898936792,
+      "by_stage": {
+        "0": {
+          "actionable_events": 11695,
+          "mean_chosen_surprisal": 0.0008062779088504612,
+          "chosen_probability_ge_0_99": 0.9996579734929457
+        },
+        "1": {
+          "actionable_events": 5423,
+          "mean_chosen_surprisal": 0.35103097558021545,
+          "chosen_probability_ge_0_99": 0.2718052738336714
+        }
+      }
+    },
+    "456": {
+      "actionable_events": 20263,
+      "mean_chosen_surprisal": 0.4041001796722412,
+      "chosen_probability_ge_0_99": 0.3789665893500469,
+      "by_stage": {
+        "0": {
+          "actionable_events": 4646,
+          "mean_chosen_surprisal": 0.00023693538969382644,
+          "chosen_probability_ge_0_99": 0.996771416272062
+        },
+        "1": {
+          "actionable_events": 15617,
+          "mean_chosen_surprisal": 0.5242480039596558,
+          "chosen_probability_ge_0_99": 0.1951719280271499
+        }
+      }
+    },
+    "480": {
+      "actionable_events": 14509,
+      "mean_chosen_surprisal": 0.13406212627887726,
+      "chosen_probability_ge_0_99": 0.6888138396857123,
+      "by_stage": {
+        "0": {
+          "actionable_events": 7164,
+          "mean_chosen_surprisal": 8.139813144225627e-05,
+          "chosen_probability_ge_0_99": 0.9994416527079844
+        },
+        "1": {
+          "actionable_events": 7345,
+          "mean_chosen_surprisal": 0.2647412121295929,
+          "chosen_probability_ge_0_99": 0.3858407079646018
+        }
+      }
+    },
+    "504": {
+      "actionable_events": 13941,
+      "mean_chosen_surprisal": 0.0685499906539917,
+      "chosen_probability_ge_0_99": 0.8145757119288429,
+      "by_stage": {
+        "0": {
+          "actionable_events": 8342,
+          "mean_chosen_surprisal": 8.353474186151288e-06,
+          "chosen_probability_ge_0_99": 0.9997602493406856
+        },
+        "1": {
+          "actionable_events": 5599,
+          "mean_chosen_surprisal": 0.17067080736160278,
+          "chosen_probability_ge_0_99": 0.5386676192177174
+        }
+      }
+    },
+    "528": {
+      "actionable_events": 29949,
+      "mean_chosen_surprisal": 0.14113834500312805,
+      "chosen_probability_ge_0_99": 0.6713078900798023,
+      "by_stage": {
+        "0": {
+          "actionable_events": 12875,
+          "mean_chosen_surprisal": 0.0004309616924729198,
+          "chosen_probability_ge_0_99": 0.9996893203883496
+        },
+        "1": {
+          "actionable_events": 17074,
+          "mean_chosen_surprisal": 0.24724161624908447,
+          "chosen_probability_ge_0_99": 0.4236851352934286
+        }
+      }
+    },
+    "552": {
+      "actionable_events": 27035,
+      "mean_chosen_surprisal": 0.10513973981142044,
+      "chosen_probability_ge_0_99": 0.7492139818753468,
+      "by_stage": {
+        "0": {
+          "actionable_events": 13950,
+          "mean_chosen_surprisal": 8.46539933263557e-07,
+          "chosen_probability_ge_0_99": 1.0
+        },
+        "1": {
+          "actionable_events": 13085,
+          "mean_chosen_surprisal": 0.2172289788722992,
+          "chosen_probability_ge_0_99": 0.4818494459304547
+        }
+      }
+    },
+    "576": {
+      "actionable_events": 36443,
+      "mean_chosen_surprisal": 0.09963136166334152,
+      "chosen_probability_ge_0_99": 0.7584995746782647,
+      "by_stage": {
+        "0": {
+          "actionable_events": 22817,
+          "mean_chosen_surprisal": 2.2865824576001614e-05,
+          "chosen_probability_ge_0_99": 0.9996932112021738
+        },
+        "1": {
+          "actionable_events": 13626,
+          "mean_chosen_surprisal": 0.2664277255535126,
+          "chosen_probability_ge_0_99": 0.354616174959636
+        }
+      }
+    },
+    "600": {
+      "actionable_events": 45428,
+      "mean_chosen_surprisal": 0.1249753013253212,
+      "chosen_probability_ge_0_99": 0.6909174958175575,
+      "by_stage": {
+        "0": {
+          "actionable_events": 22687,
+          "mean_chosen_surprisal": 0.0023703083861619234,
+          "chosen_probability_ge_0_99": 0.9905672852294265
+        },
+        "1": {
+          "actionable_events": 22741,
+          "mean_chosen_surprisal": 0.24728915095329285,
+          "chosen_probability_ge_0_99": 0.39197924453630006
+        }
+      }
+    },
+    "624": {
+      "actionable_events": 40985,
+      "mean_chosen_surprisal": 0.05572314187884331,
+      "chosen_probability_ge_0_99": 0.8556057094058802,
+      "by_stage": {
+        "0": {
+          "actionable_events": 22202,
+          "mean_chosen_surprisal": 0.000919586862437427,
+          "chosen_probability_ge_0_99": 0.9985136474191514
+        },
+        "1": {
+          "actionable_events": 18783,
+          "mean_chosen_surprisal": 0.12050239741802216,
+          "chosen_probability_ge_0_99": 0.6866847681414044
+        }
+      }
+    },
+    "648": {
+      "actionable_events": 32057,
+      "mean_chosen_surprisal": 0.006450329441577196,
+      "chosen_probability_ge_0_99": 0.9797236173066725,
+      "by_stage": {
+        "0": {
+          "actionable_events": 30391,
+          "mean_chosen_surprisal": 2.185363155149389e-05,
+          "chosen_probability_ge_0_99": 0.999802573130203
+        },
+        "1": {
+          "actionable_events": 1666,
+          "mean_chosen_surprisal": 0.12371792644262314,
+          "chosen_probability_ge_0_99": 0.6134453781512605
+        }
+      }
+    },
+    "672": {
+      "actionable_events": 30230,
+      "mean_chosen_surprisal": 0.0038952380418777466,
+      "chosen_probability_ge_0_99": 0.9884882566986437,
+      "by_stage": {
+        "0": {
+          "actionable_events": 28683,
+          "mean_chosen_surprisal": 0.003485022811219096,
+          "chosen_probability_ge_0_99": 0.9903775755674092
+        },
+        "1": {
+          "actionable_events": 1547,
+          "mean_chosen_surprisal": 0.011501056142151356,
+          "chosen_probability_ge_0_99": 0.9534583063994829
+        }
+      }
+    }
+  },
+  "by_opponent": {
+    "fieldcraft_2887": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 456,
+      "draws": 0,
+      "mean_margin": 7698.330078125,
+      "mean_reward": 0.8341478928849397
+    },
+    "metav4_2965": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 442,
+      "draws": 0,
+      "mean_margin": 6201.4140625,
+      "mean_reward": 0.7720151645810391
+    },
+    "thomas_2945_cpp": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 441,
+      "draws": 0,
+      "mean_margin": 6474.208984375,
+      "mean_reward": 0.7687982294169207
+    }
+  },
+  "by_opponent_variant": {
+    "fieldcraft_2887": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 456,
+      "mean_margin": 7698.330078125,
+      "mean_reward": 0.8341478928849397
+    },
+    "metav4_2965": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 442,
+      "mean_margin": 6201.4140625,
+      "mean_reward": 0.7720151645810391
+    },
+    "thomas_2945_cpp": {
+      "games": 512,
+      "ratio": 0.3333333333333333,
+      "wins": 441,
+      "mean_margin": 6474.208984375,
+      "mean_reward": 0.7687982294169207
+    }
+  },
+  "by_seat": {
+    "0": {
+      "games": 768,
+      "wins": 665,
+      "draws": 0,
+      "mean_margin": 6729.161458333333,
+      "mean_reward": 0.7795109230535434
+    },
+    "1": {
+      "games": 768,
+      "wins": 674,
+      "draws": 0,
+      "mean_margin": 6853.473958333333,
+      "mean_reward": 0.8037966015350563
+    }
+  },
+  "unique_environment_seeds": 256,
+  "unique_policy_seeds": 1536,
+  "environment_seed_min": 2742500000,
+  "environment_seed_max": 2742500255,
+  "illegal": 0,
+  "fallbacks": 0,
+  "hyperparameters": {
+    "learning_rate": 1.8e-05,
+    "weight_decay": 0.0001,
+    "temperature": 1.0,
+    "entropy_coef": 0.01,
+    "clip_ratio": 0.2,
+    "target_kl": 0.02,
+    "training_batch_games": 32,
+    "replay_batch_games": 256,
+    "day_state_crossfit_baseline": false,
+    "day_state_critic_workers": null
+  },
+  "old_logprob_replay_max_abs_error": 0.00014257431030273438,
+  "old_logprob_replay_mean_abs_error": 1.6356534578459484e-07,
+  "old_logprob_replay_approx_kl": 4.4521119871718324e-13,
+  "old_logprob_replay_gate": {
+    "max_abs_policy": "warn",
+    "max_abs_tolerance": 0.0007,
+    "mean_abs_tolerance": 5e-07,
+    "approx_kl_tolerance": 1e-08
+  },
+  "device_logprob_replay_max_abs_error": 0.0003981590270996094,
+  "device_logprob_replay_approx_kl": 5.181262255353491e-12,
+  "device_logprob_replay_mean_shift": 1.894275063242414e-09,
+  "parameter_delta_l2": 0.06849920702731638,
+  "optimizer_state_restored": true,
+  "npu_hidden_index_copy_safe": true,
+  "optimizer_moments_reset": [],
+  "optimizer_step_before": 32748.0,
+  "ppo": {
+    "epochs_requested": 1,
+    "epochs_completed": 1,
+    "gradient_steps": 48,
+    "early_stopped": false,
+    "kl_gate": "soft full-rollout post-epoch early-stop on chain-rule day approximate KL; not a hard checkpoint limit",
+    "kl_hard_limit": false,
+    "gradient_norm_clipped_fraction": 1.0,
+    "gradient_norm_p50": 4.215955972671509,
+    "gradient_norm_p95": 8.562402296066283,
+    "gradient_norm_max": 16.349945068359375,
+    "epoch_drift": [
+      {
+        "epoch": 1,
+        "event_forward_kl": 0.0009006567851759798,
+        "event_approx_kl": 0.0009650230602567595,
+        "event_clip_fraction": 0.007245596729155728,
+        "day_forward_kl": 0.015776588450217673,
+        "day_chain_approx_kl": 0.016904077021599,
+        "day_bundle_approx_kl": 0.016719332047785983,
+        "day_clip_fraction": 0.10221281508562632,
+        "actionable_events": 455173,
+        "actionable_days": 25985,
+        "total_days": 26112
+      }
+    ],
+    "epoch": 1,
+    "event_forward_kl": 0.0009006567851759798,
+    "event_approx_kl": 0.0009650230602567595,
+    "event_clip_fraction": 0.007245596729155728,
+    "day_forward_kl": 0.015776588450217673,
+    "day_chain_approx_kl": 0.016904077021599,
+    "day_bundle_approx_kl": 0.016719332047785983,
+    "day_clip_fraction": 0.10221281508562632,
+    "actionable_events": 455173,
+    "actionable_days": 25985,
+    "total_days": 26112,
+    "loss": 0.00018045838320783028,
+    "policy_loss": 0.0015183250846651692,
+    "entropy": 0.13378665021931133,
+    "gradient_norm": 5.0114196464419365
+  },
+  "timing": {
+    "rollout_seconds": 26.610223506577313,
+    "rollout_save_seconds": 4.966026064939797,
+    "rollout_save_wait_seconds": 4.891808521002531,
+    "cpu_replay_seconds": 32.7079566558823,
+    "cpu_replay_wait_seconds": 4.6370550990104675e-05,
+    "device_replay_seconds": 5.247723743319511,
+    "npu_init_seconds": 18.332811740227044,
+    "npu_init_wait_seconds": 1.6920268535614014e-05,
+    "day_state_baseline_seconds": 0.0,
+    "day_state_baseline_wait_seconds": 0.0,
+    "rollout_games_per_second": 57.72217582540572,
+    "rollout_events_per_second": 29257.815132877866,
+    "rollout_and_update_seconds": 83.4937255633995,
+    "total_wall_seconds": 83.4937255633995,
+    "update_seconds": 36.00516000017524,
+    "drift_audit_seconds": 4.0438417457044125
+  }
+}
