@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 24, 2026 at 8:02 PM UTC
+Updated: Sep 24, 2026 at 8:04 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -8,7 +8,7 @@ CPU evaluation on WRX90 and the mini PC. Results below are local; they are not K
 
 Best team agent: No comparable cumulative team result
 
-Live Elo leader: teammate-lzhang-r1planner [Team] — 1971.3 Elo, 1128 games
+Live Elo leader: teammate-lzhang-r1planner [Team] — 1970.7 Elo, 1130 games
 
 Public notebooks refresh daily. Exact versions keep separate results. Incomplete tournaments are provisional; small launch checks do not establish strength.
 
@@ -141,37 +141,37 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 24, 2026 at 8:02 PM UTC
+Last updated: Sep 24, 2026 at 8:03 PM UTC
 
-Status: running Â· Last sync: Sep 24, 2026 at 8:02 PM UTC
+Status: running Â· Last sync: Sep 24, 2026 at 8:03 PM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
-| teammate-lzhang-r1planner | 1971.3 | 1128 | 75.4% | ffc8942965 |
-| teammate-lzhang-student-v463 | 1948.3 | 826 | 69.0% | ffc8942965 |
-| teammate-lzhang-student-v306 | 1916.5 | 1274 | 66.1% | ffc8942965 |
-| the-shepherds-ledger-herd-safe-sovereign **PUBLIC** | 1908.9 | 1136 | 67.3% | ffc8942965 |
-| herd-safe-v3-experimental-risk-aware-feed **PUBLIC** | 1898.3 | 1100 | 68.2% | ffc8942965 |
-| kaggriculture-master-engine-v3 **PUBLIC** | 1883.8 | 1032 | 66.8% | ffc8942965 |
-| teammate-a06-fusion-v1 | 1870.2 | 860 | 63.7% | ffc8942965 |
+| teammate-lzhang-r1planner | 1970.7 | 1130 | 75.2% | ffc8942965 |
+| teammate-lzhang-student-v463 | 1956.4 | 848 | 69.8% | ffc8942965 |
+| teammate-lzhang-student-v306 | 1917.0 | 1274 | 66.1% | ffc8942965 |
+| the-shepherds-ledger-herd-safe-sovereign **PUBLIC** | 1907.3 | 1142 | 66.9% | ffc8942965 |
+| herd-safe-v3-experimental-risk-aware-feed **PUBLIC** | 1897.2 | 1104 | 67.9% | ffc8942965 |
+| kaggriculture-master-engine-v3 **PUBLIC** | 1882.2 | 1036 | 66.5% | ffc8942965 |
+| teammate-a06-fusion-v1 | 1870.4 | 860 | 63.7% | ffc8942965 |
 | kaggriculture-v15stack-submit **PUBLIC** | 1864.0 | 4012 | 69.7% | ffc8942965 |
-| teammate-a06-fusion-v2 | 1848.1 | 882 | 59.9% | ffc8942965 |
+| teammate-a06-fusion-v2 | 1848.3 | 882 | 59.9% | ffc8942965 |
 | teammate-opp-melon_2749 | 1835.8 | 1448 | 60.2% | ffc8942965 |
 | kaggriculture-more-wheat-smarter-sales **PUBLIC** | 1830.3 | 4314 | 64.0% | ffc8942965 |
 | kaggriculture-pipe18-six-layers **PUBLIC** | 1825.5 | 4544 | 65.5% | ffc8942965 |
 | your-market-list-is-an-order-book **PUBLIC** | 1818.4 | 5744 | 63.8% | ffc8942965 |
-| the-2965-master-hybrid-engine **PUBLIC** | 1797.9 | 1094 | 56.2% | ffc8942965 |
+| the-2965-master-hybrid-engine **PUBLIC** | 1798.6 | 1098 | 56.2% | ffc8942965 |
 | kaggriculture-v40-challenger **PUBLIC** | 1792.2 | 1084 | 56.4% | ffc8942965 |
-| kaggriculture-v56-smarter-seeds-and-fertilizer **PUBLIC** | 1769.1 | 5892 | 59.0% | ffc8942965 |
-| teammate-opp-thomas_2945 | 1723.2 | 962 | 50.0% | ffc8942965 |
+| kaggriculture-v56-smarter-seeds-and-fertilizer **PUBLIC** | 1769.1 | 5894 | 59.0% | ffc8942965 |
+| teammate-opp-thomas_2945 | 1722.9 | 964 | 49.9% | ffc8942965 |
 | 2842-two-identical-agents-90-points-apart **PUBLIC** | 1707.8 | 32566 | 59.1% | ffc8942965 |
-| A06 R9C6 | 1698.3 | 59012 | 55.8% | ffc8942965 |
+| A06 R9C6 | 1698.2 | 59014 | 55.8% | ffc8942965 |
 | Day 9 planner selector | 1639.6 | 82738 | 53.1% | ffc8942965 |
-| DP Melon Cyborg V4  gooseoverflow | 1637.4 | 47884 | 52.9% | ffc8942965 |
-| teammate-opp-pipe8 | 1605.6 | 968 | 36.5% | ffc8942965 |
+| DP Melon Cyborg V4  gooseoverflow | 1637.3 | 47884 | 52.9% | ffc8942965 |
+| teammate-opp-pipe8 | 1605.4 | 970 | 36.4% | ffc8942965 |
 | Broad PPO CP1430 | 1587.8 | 790 | 29.2% | ffc8942965 |
-| teammate-opp-herd_safe_2700 | 1428.5 | 832 | 19.4% | ffc8942965 |
-| teammate-opp-salemali7_2900 | 809.6 | 702 | 0.6% | ffc8942965 |
+| teammate-opp-herd_safe_2700 | 1428.1 | 834 | 19.3% | ffc8942965 |
+| teammate-opp-salemali7_2900 | 809.4 | 702 | 0.6% | ffc8942965 |
 
 ## Retired agents
 
@@ -559,38 +559,38 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
 | cumulative-active-e0e671e5786e | Provisional | 69/69 |
-| cumulative-active-ffc8942965b1 | Provisional | 25398/25398 |
+| cumulative-active-ffc8942965b1 | Provisional | 25424/25424 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:03 PM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
-| teammate-lzhang-r1planner | 1.71 | 670 / 191 / 0 | 77.8% | 77.8% | 6,295 |
+| teammate-lzhang-r1planner | 1.71 | 670 / 193 / 0 | 77.6% | 77.6% | 6,269 |
 | teammate-lzhang-student-v306 | 1.39 | 721 / 331 / 0 | 68.5% | 68.5% | 4,493 |
-| teammate-lzhang-student-v463 | 1.30 | 591 / 260 / 0 | 69.4% | 69.4% | 3,954 |
-| the-shepherds-ledger-herd-safe-sovereign | 1.07 | 559 / 331 / 0 | 62.8% | 62.8% | 746 |
-| herd-safe-v3-experimental-risk-aware-feed | 0.97 | 537 / 298 / 0 | 64.3% | 64.3% | 1,971 |
-| kaggriculture-master-engine-v3 | 0.94 | 494 / 279 / 0 | 63.9% | 63.9% | 2,182 |
+| teammate-lzhang-student-v463 | 1.35 | 613 / 260 / 0 | 70.2% | 70.2% | 4,017 |
+| the-shepherds-ledger-herd-safe-sovereign | 1.06 | 559 / 337 / 0 | 62.4% | 62.4% | 693 |
+| herd-safe-v3-experimental-risk-aware-feed | 0.96 | 537 / 302 / 0 | 64.0% | 64.0% | 1,924 |
+| kaggriculture-master-engine-v3 | 0.93 | 494 / 283 / 0 | 63.6% | 63.6% | 2,159 |
 | teammate-a06-fusion-v1 | 0.79 | 513 / 307 / 0 | 62.6% | 62.6% | 4,752 |
 | teammate-opp-melon_2749 | 0.78 | 686 / 440 / 0 | 60.9% | 60.9% | 4,449 |
 | teammate-a06-fusion-v2 | 0.66 | 490 / 348 / 0 | 58.5% | 58.5% | 4,544 |
 | kaggriculture-v15stack-submit | 0.57 | 1126 / 679 / 0 | 62.4% | 62.4% | -291 |
 | 2842-two-identical-agents-90-points-apart | 0.34 | 4050 / 2128 / 1 | 65.5% | 65.6% | 2,465 |
-| the-2965-master-hybrid-engine | 0.27 | 407 / 424 / 0 | 49.0% | 49.0% | -1,675 |
+| the-2965-master-hybrid-engine | 0.27 | 409 / 426 / 0 | 49.0% | 49.0% | -1,679 |
 | kaggriculture-v40-challenger | 0.27 | 428 / 418 / 0 | 50.6% | 50.6% | -1,701 |
 | kaggriculture-more-wheat-smarter-sales | 0.19 | 1014 / 893 / 38 | 52.1% | 53.1% | 22 |
 | kaggriculture-pipe18-six-layers | 0.09 | 1037 / 960 / 0 | 51.9% | 51.9% | -187 |
 | your-market-list-is-an-order-book | -0.18 | 961 / 1121 / 38 | 45.3% | 46.2% | -487 |
 | Day 9 planner selector | -0.20 | 4602 / 4405 / 1 | 51.1% | 51.1% | 664 |
-| teammate-opp-thomas_2945 | -0.22 | 296 / 393 / 0 | 43.0% | 43.0% | 935 |
-| kaggriculture-v56-smarter-seeds-and-fertilizer | -0.24 | 1026 / 1250 / 4 | 45.0% | 45.1% | 167 |
-| A06 R9C6 | -0.56 | 3139 / 5291 / 0 | 37.2% | 37.2% | -1,475 |
+| teammate-opp-thomas_2945 | -0.22 | 296 / 395 / 0 | 42.8% | 42.8% | 908 |
+| kaggriculture-v56-smarter-seeds-and-fertilizer | -0.24 | 1028 / 1250 / 4 | 45.0% | 45.1% | 176 |
+| A06 R9C6 | -0.56 | 3139 / 5293 / 0 | 37.2% | 37.2% | -1,476 |
 | DP Melon Cyborg V4  gooseoverflow | -0.73 | 1496 / 2537 / 0 | 37.1% | 37.1% | -2,517 |
 | Broad PPO CP1430 | -0.93 | 234 / 567 / 0 | 29.2% | 29.2% | -4,126 |
-| teammate-opp-pipe8 | -0.97 | 185 / 474 / 0 | 28.1% | 28.1% | -1,654 |
-| teammate-opp-herd_safe_2700 | -1.86 | 93 / 508 / 0 | 15.5% | 15.5% | -6,920 |
+| teammate-opp-pipe8 | -0.97 | 185 / 476 / 0 | 28.0% | 28.0% | -1,667 |
+| teammate-opp-herd_safe_2700 | -1.86 | 93 / 510 / 0 | 15.4% | 15.4% | -6,930 |
 | teammate-opp-salemali7_2900 | -5.45 | 2 / 524 / 0 | 0.4% | 0.4% | -31,550 |
 
 <details><summary>Win rate by opponent and seat</summary>
@@ -707,7 +707,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | kaggriculture-v56-smarter-seeds-and-fertilizer | A06 R9C6 | 188/294 | 63.9% | 94/147 | 94/147 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | teammate-opp-pipe8 | 20/22 | 90.9% | 10/11 | 10/11 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | kaggriculture-v40-challenger | 0/24 | 0.0% | 0/12 | 0/12 |
-| kaggriculture-v56-smarter-seeds-and-fertilizer | teammate-opp-herd_safe_2700 | 22/22 | 100.0% | 11/11 | 11/11 |
+| kaggriculture-v56-smarter-seeds-and-fertilizer | teammate-opp-herd_safe_2700 | 24/24 | 100.0% | 12/12 | 12/12 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | kaggriculture-pipe18-six-layers | 3/90 | 3.3% | 2/45 | 1/45 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | teammate-a06-fusion-v2 | 2/24 | 8.3% | 1/12 | 1/12 |
 | kaggriculture-v56-smarter-seeds-and-fertilizer | your-market-list-is-an-order-book | 75/262 | 28.6% | 37/131 | 38/131 |
@@ -763,7 +763,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | teammate-lzhang-r1planner | the-2965-master-hybrid-engine | 28/40 | 70.0% | 14/20 | 14/20 |
 | teammate-lzhang-r1planner | teammate-opp-thomas_2945 | 26/32 | 81.2% | 13/16 | 13/16 |
 | teammate-lzhang-r1planner | DP Melon Cyborg V4  gooseoverflow | 25/30 | 83.3% | 13/15 | 12/15 |
-| teammate-lzhang-r1planner | teammate-lzhang-student-v463 | 28/43 | 65.1% | 14/21 | 14/22 |
+| teammate-lzhang-r1planner | teammate-lzhang-student-v463 | 28/45 | 62.2% | 14/22 | 14/23 |
 | teammate-lzhang-r1planner | kaggriculture-v15stack-submit | 28/40 | 70.0% | 14/20 | 14/20 |
 | teammate-opp-melon_2749 | teammate-opp-salemali7_2900 | 22/22 | 100.0% | 11/11 | 11/11 |
 | teammate-opp-melon_2749 | 2842-two-identical-agents-90-points-apart | 27/30 | 90.0% | 13/15 | 14/15 |
@@ -811,7 +811,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | the-shepherds-ledger-herd-safe-sovereign | the-2965-master-hybrid-engine | 19/20 | 95.0% | 10/10 | 9/10 |
 | the-shepherds-ledger-herd-safe-sovereign | teammate-opp-thomas_2945 | 22/22 | 100.0% | 11/11 | 11/11 |
 | the-shepherds-ledger-herd-safe-sovereign | DP Melon Cyborg V4  gooseoverflow | 25/26 | 96.2% | 12/13 | 13/13 |
-| the-shepherds-ledger-herd-safe-sovereign | teammate-lzhang-student-v463 | 5/53 | 9.4% | 3/25 | 2/28 |
+| the-shepherds-ledger-herd-safe-sovereign | teammate-lzhang-student-v463 | 5/59 | 8.5% | 3/28 | 2/31 |
 | the-shepherds-ledger-herd-safe-sovereign | kaggriculture-v15stack-submit | 26/44 | 59.1% | 13/22 | 13/22 |
 | teammate-a06-fusion-v1 | teammate-opp-salemali7_2900 | 22/22 | 100.0% | 11/11 | 11/11 |
 | teammate-a06-fusion-v1 | 2842-two-identical-agents-90-points-apart | 24/48 | 50.0% | 12/24 | 12/24 |
@@ -880,10 +880,10 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | kaggriculture-master-engine-v3 | teammate-a06-fusion-v2 | 30/42 | 71.4% | 15/21 | 15/21 |
 | kaggriculture-master-engine-v3 | your-market-list-is-an-order-book | 22/24 | 91.7% | 11/12 | 11/12 |
 | kaggriculture-master-engine-v3 | herd-safe-v3-experimental-risk-aware-feed | 8/42 | 19.0% | 5/21 | 3/21 |
-| kaggriculture-master-engine-v3 | the-2965-master-hybrid-engine | 7/30 | 23.3% | 4/15 | 3/15 |
+| kaggriculture-master-engine-v3 | the-2965-master-hybrid-engine | 7/32 | 21.9% | 4/16 | 3/16 |
 | kaggriculture-master-engine-v3 | teammate-opp-thomas_2945 | 21/22 | 95.5% | 10/11 | 11/11 |
 | kaggriculture-master-engine-v3 | DP Melon Cyborg V4  gooseoverflow | 24/24 | 100.0% | 12/12 | 12/12 |
-| kaggriculture-master-engine-v3 | teammate-lzhang-student-v463 | 7/32 | 21.9% | 4/15 | 3/17 |
+| kaggriculture-master-engine-v3 | teammate-lzhang-student-v463 | 7/34 | 20.6% | 4/16 | 3/18 |
 | kaggriculture-master-engine-v3 | kaggriculture-v15stack-submit | 2/22 | 9.1% | 1/11 | 1/11 |
 | A06 R9C6 | teammate-opp-salemali7_2900 | 20/20 | 100.0% | 10/10 | 10/10 |
 | A06 R9C6 | 2842-two-identical-agents-90-points-apart | 1121/2572 | 43.6% | 565/1286 | 556/1286 |
@@ -907,7 +907,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | A06 R9C6 | the-2965-master-hybrid-engine | 22/46 | 47.8% | 11/23 | 11/23 |
 | A06 R9C6 | teammate-opp-thomas_2945 | 12/38 | 31.6% | 6/19 | 6/19 |
 | A06 R9C6 | DP Melon Cyborg V4  gooseoverflow | 785/992 | 79.1% | 395/496 | 390/496 |
-| A06 R9C6 | teammate-lzhang-student-v463 | 26/43 | 60.5% | 14/21 | 12/22 |
+| A06 R9C6 | teammate-lzhang-student-v463 | 26/45 | 57.8% | 14/22 | 12/23 |
 | A06 R9C6 | kaggriculture-v15stack-submit | 100/264 | 37.9% | 49/132 | 51/132 |
 | teammate-opp-pipe8 | teammate-opp-salemali7_2900 | 20/20 | 100.0% | 10/10 | 10/10 |
 | teammate-opp-pipe8 | 2842-two-identical-agents-90-points-apart | 4/28 | 14.3% | 2/14 | 2/14 |
@@ -931,7 +931,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | teammate-opp-pipe8 | the-2965-master-hybrid-engine | 0/20 | 0.0% | 0/10 | 0/10 |
 | teammate-opp-pipe8 | teammate-opp-thomas_2945 | 1/24 | 4.2% | 1/12 | 0/12 |
 | teammate-opp-pipe8 | DP Melon Cyborg V4  gooseoverflow | 27/38 | 71.1% | 14/19 | 13/19 |
-| teammate-opp-pipe8 | teammate-lzhang-student-v463 | 4/27 | 14.8% | 1/13 | 3/14 |
+| teammate-opp-pipe8 | teammate-lzhang-student-v463 | 4/29 | 13.8% | 1/14 | 3/15 |
 | teammate-opp-pipe8 | kaggriculture-v15stack-submit | 0/20 | 0.0% | 0/10 | 0/10 |
 | kaggriculture-v40-challenger | teammate-opp-salemali7_2900 | 22/22 | 100.0% | 11/11 | 11/11 |
 | kaggriculture-v40-challenger | 2842-two-identical-agents-90-points-apart | 0/44 | 0.0% | 0/22 | 0/22 |
@@ -961,7 +961,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | teammate-opp-herd_safe_2700 | 2842-two-identical-agents-90-points-apart | 4/28 | 14.3% | 2/14 | 2/14 |
 | teammate-opp-herd_safe_2700 | Broad PPO CP1430 | 28/44 | 63.6% | 14/22 | 14/22 |
 | teammate-opp-herd_safe_2700 | Day 9 planner selector | 2/24 | 8.3% | 1/12 | 1/12 |
-| teammate-opp-herd_safe_2700 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/22 | 0.0% | 0/11 | 0/11 |
+| teammate-opp-herd_safe_2700 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/24 | 0.0% | 0/12 | 0/12 |
 | teammate-opp-herd_safe_2700 | teammate-lzhang-student-v306 | 1/22 | 4.5% | 1/11 | 0/11 |
 | teammate-opp-herd_safe_2700 | teammate-lzhang-r1planner | 0/22 | 0.0% | 0/11 | 0/11 |
 | teammate-opp-herd_safe_2700 | teammate-opp-melon_2749 | 0/20 | 0.0% | 0/10 | 0/10 |
@@ -1075,7 +1075,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | herd-safe-v3-experimental-risk-aware-feed | the-2965-master-hybrid-engine | 20/46 | 43.5% | 11/23 | 9/23 |
 | herd-safe-v3-experimental-risk-aware-feed | teammate-opp-thomas_2945 | 20/22 | 90.9% | 11/11 | 9/11 |
 | herd-safe-v3-experimental-risk-aware-feed | DP Melon Cyborg V4  gooseoverflow | 20/20 | 100.0% | 10/10 | 10/10 |
-| herd-safe-v3-experimental-risk-aware-feed | teammate-lzhang-student-v463 | 8/37 | 21.6% | 3/17 | 5/20 |
+| herd-safe-v3-experimental-risk-aware-feed | teammate-lzhang-student-v463 | 8/41 | 19.5% | 3/19 | 5/22 |
 | herd-safe-v3-experimental-risk-aware-feed | kaggriculture-v15stack-submit | 19/44 | 43.2% | 10/22 | 9/22 |
 | the-2965-master-hybrid-engine | teammate-opp-salemali7_2900 | 20/20 | 100.0% | 10/10 | 10/10 |
 | the-2965-master-hybrid-engine | 2842-two-identical-agents-90-points-apart | 1/40 | 2.5% | 1/20 | 0/20 |
@@ -1088,7 +1088,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | the-2965-master-hybrid-engine | the-shepherds-ledger-herd-safe-sovereign | 1/20 | 5.0% | 1/10 | 0/10 |
 | the-2965-master-hybrid-engine | teammate-a06-fusion-v1 | 2/22 | 9.1% | 1/11 | 1/11 |
 | the-2965-master-hybrid-engine | kaggriculture-more-wheat-smarter-sales | 28/36 | 77.8% | 14/18 | 14/18 |
-| the-2965-master-hybrid-engine | kaggriculture-master-engine-v3 | 23/30 | 76.7% | 12/15 | 11/15 |
+| the-2965-master-hybrid-engine | kaggriculture-master-engine-v3 | 25/32 | 78.1% | 13/16 | 12/16 |
 | the-2965-master-hybrid-engine | A06 R9C6 | 24/46 | 52.2% | 12/23 | 12/23 |
 | the-2965-master-hybrid-engine | teammate-opp-pipe8 | 20/20 | 100.0% | 10/10 | 10/10 |
 | the-2965-master-hybrid-engine | kaggriculture-v40-challenger | 21/54 | 38.9% | 10/27 | 11/27 |
@@ -1099,7 +1099,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | the-2965-master-hybrid-engine | herd-safe-v3-experimental-risk-aware-feed | 26/46 | 56.5% | 14/23 | 12/23 |
 | the-2965-master-hybrid-engine | teammate-opp-thomas_2945 | 22/24 | 91.7% | 11/12 | 11/12 |
 | the-2965-master-hybrid-engine | DP Melon Cyborg V4  gooseoverflow | 22/22 | 100.0% | 11/11 | 11/11 |
-| the-2965-master-hybrid-engine | teammate-lzhang-student-v463 | 13/41 | 31.7% | 8/20 | 5/21 |
+| the-2965-master-hybrid-engine | teammate-lzhang-student-v463 | 13/43 | 30.2% | 8/21 | 5/22 |
 | the-2965-master-hybrid-engine | kaggriculture-v15stack-submit | 14/44 | 31.8% | 7/22 | 7/22 |
 | teammate-opp-thomas_2945 | teammate-opp-salemali7_2900 | 22/22 | 100.0% | 11/11 | 11/11 |
 | teammate-opp-thomas_2945 | 2842-two-identical-agents-90-points-apart | 20/20 | 100.0% | 10/10 | 10/10 |
@@ -1123,7 +1123,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | teammate-opp-thomas_2945 | herd-safe-v3-experimental-risk-aware-feed | 2/22 | 9.1% | 2/11 | 0/11 |
 | teammate-opp-thomas_2945 | the-2965-master-hybrid-engine | 2/24 | 8.3% | 1/12 | 1/12 |
 | teammate-opp-thomas_2945 | DP Melon Cyborg V4  gooseoverflow | 22/22 | 100.0% | 11/11 | 11/11 |
-| teammate-opp-thomas_2945 | teammate-lzhang-student-v463 | 7/29 | 24.1% | 3/14 | 4/15 |
+| teammate-opp-thomas_2945 | teammate-lzhang-student-v463 | 7/31 | 22.6% | 3/15 | 4/16 |
 | teammate-opp-thomas_2945 | kaggriculture-v15stack-submit | 2/22 | 9.1% | 1/11 | 1/11 |
 | DP Melon Cyborg V4  gooseoverflow | teammate-opp-salemali7_2900 | 24/24 | 100.0% | 12/12 | 12/12 |
 | DP Melon Cyborg V4  gooseoverflow | 2842-two-identical-agents-90-points-apart | 17/406 | 4.2% | 7/203 | 10/203 |
@@ -1155,22 +1155,22 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 24, 2026 at 8:02 PM UTC
 | teammate-lzhang-student-v463 | Day 9 planner selector | 29/40 | 72.5% | 14/20 | 15/20 |
 | teammate-lzhang-student-v463 | kaggriculture-v56-smarter-seeds-and-fertilizer | 24/27 | 88.9% | 13/14 | 11/13 |
 | teammate-lzhang-student-v463 | teammate-lzhang-student-v306 | 61/118 | 51.7% | 29/59 | 32/59 |
-| teammate-lzhang-student-v463 | teammate-lzhang-r1planner | 15/43 | 34.9% | 8/22 | 7/21 |
+| teammate-lzhang-student-v463 | teammate-lzhang-r1planner | 17/45 | 37.8% | 9/23 | 8/22 |
 | teammate-lzhang-student-v463 | teammate-opp-melon_2749 | 19/20 | 95.0% | 10/11 | 9/9 |
-| teammate-lzhang-student-v463 | the-shepherds-ledger-herd-safe-sovereign | 48/53 | 90.6% | 26/28 | 22/25 |
+| teammate-lzhang-student-v463 | the-shepherds-ledger-herd-safe-sovereign | 54/59 | 91.5% | 29/31 | 25/28 |
 | teammate-lzhang-student-v463 | teammate-a06-fusion-v1 | 9/39 | 23.1% | 5/20 | 4/19 |
 | teammate-lzhang-student-v463 | kaggriculture-more-wheat-smarter-sales | 24/28 | 85.7% | 13/15 | 11/13 |
-| teammate-lzhang-student-v463 | kaggriculture-master-engine-v3 | 25/32 | 78.1% | 14/17 | 11/15 |
-| teammate-lzhang-student-v463 | A06 R9C6 | 17/43 | 39.5% | 10/22 | 7/21 |
-| teammate-lzhang-student-v463 | teammate-opp-pipe8 | 23/27 | 85.2% | 11/14 | 12/13 |
+| teammate-lzhang-student-v463 | kaggriculture-master-engine-v3 | 27/34 | 79.4% | 15/18 | 12/16 |
+| teammate-lzhang-student-v463 | A06 R9C6 | 19/45 | 42.2% | 11/23 | 8/22 |
+| teammate-lzhang-student-v463 | teammate-opp-pipe8 | 25/29 | 86.2% | 12/15 | 13/14 |
 | teammate-lzhang-student-v463 | kaggriculture-v40-challenger | 24/28 | 85.7% | 13/15 | 11/13 |
 | teammate-lzhang-student-v463 | teammate-opp-herd_safe_2700 | 21/23 | 91.3% | 11/12 | 10/11 |
 | teammate-lzhang-student-v463 | kaggriculture-pipe18-six-layers | 27/32 | 84.4% | 13/16 | 14/16 |
 | teammate-lzhang-student-v463 | teammate-a06-fusion-v2 | 18/46 | 39.1% | 8/24 | 10/22 |
 | teammate-lzhang-student-v463 | your-market-list-is-an-order-book | 18/19 | 94.7% | 9/10 | 9/9 |
-| teammate-lzhang-student-v463 | herd-safe-v3-experimental-risk-aware-feed | 29/37 | 78.4% | 15/20 | 14/17 |
-| teammate-lzhang-student-v463 | the-2965-master-hybrid-engine | 28/41 | 68.3% | 16/21 | 12/20 |
-| teammate-lzhang-student-v463 | teammate-opp-thomas_2945 | 22/29 | 75.9% | 11/15 | 11/14 |
+| teammate-lzhang-student-v463 | herd-safe-v3-experimental-risk-aware-feed | 33/41 | 80.5% | 17/22 | 16/19 |
+| teammate-lzhang-student-v463 | the-2965-master-hybrid-engine | 30/43 | 69.8% | 17/22 | 13/21 |
+| teammate-lzhang-student-v463 | teammate-opp-thomas_2945 | 24/31 | 77.4% | 12/16 | 12/15 |
 | teammate-lzhang-student-v463 | DP Melon Cyborg V4  gooseoverflow | 20/22 | 90.9% | 11/12 | 9/10 |
 | teammate-lzhang-student-v463 | kaggriculture-v15stack-submit | 18/18 | 100.0% | 10/10 | 8/8 |
 | kaggriculture-v15stack-submit | teammate-opp-salemali7_2900 | 22/22 | 100.0% | 11/11 | 11/11 |
@@ -2602,7 +2602,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
