@@ -1,0 +1,5579 @@
+{
+  "candidate": "v2_animal06",
+  "opponent": "external/n69_hosen42",
+  "seed": 2093390652,
+  "seat": 0,
+  "steps": 719,
+  "own_cash": 104910.0,
+  "rival_cash": 110967.0,
+  "daily": [
+    {
+      "step": 0,
+      "own": {
+        "cash": 3000.0,
+        "crops": {},
+        "animals": {},
+        "yield_units": {},
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 3000.0,
+        "crops": {},
+        "animals": {},
+        "yield_units": {},
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 10000,
+          "CARROT": 10000,
+          "TOMATO": 10000,
+          "STRAWBERRY": 10000,
+          "MELON": 10000,
+          "EGG": 10000,
+          "MILK": 10000,
+          "WOOL": 10000,
+          "FERTILIZER": 10000
+        },
+        "prices": {
+          "WHEAT": 25,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 120,
+          "MELON": 250,
+          "EGG": 50,
+          "MILK": 160,
+          "WOOL": 200,
+          "FERTILIZER": 100
+        }
+      }
+    },
+    {
+      "step": 24,
+      "own": {
+        "cash": 115.0,
+        "crops": {
+          "WHEAT": 3
+        },
+        "animals": {
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "WHEAT": 3,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 11.0,
+        "crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "animals": {
+          "SHEEP": 2,
+          "COW": 2
+        },
+        "yield_units": {
+          "WHEAT": 7,
+          "MELON": 12,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 3,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9988,
+          "CARROT": 9999,
+          "TOMATO": 9999,
+          "STRAWBERRY": 9999,
+          "MELON": 9999,
+          "EGG": 9999,
+          "MILK": 9999,
+          "WOOL": 9999,
+          "FERTILIZER": 10000
+        },
+        "prices": {
+          "WHEAT": 28,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 128,
+          "MELON": 256,
+          "EGG": 50,
+          "MILK": 169,
+          "WOOL": 206,
+          "FERTILIZER": 100
+        }
+      }
+    },
+    {
+      "step": 48,
+      "own": {
+        "cash": 534.0,
+        "crops": {
+          "WHEAT": 3
+        },
+        "animals": {
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "WHEAT": 3,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 97.0,
+        "crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "animals": {
+          "SHEEP": 2,
+          "COW": 2
+        },
+        "yield_units": {
+          "WHEAT": 7,
+          "MELON": 12,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 6,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9974,
+          "CARROT": 9998,
+          "TOMATO": 9998,
+          "STRAWBERRY": 9998,
+          "MELON": 9998,
+          "EGG": 9998,
+          "MILK": 9998,
+          "WOOL": 9998,
+          "FERTILIZER": 10009
+        },
+        "prices": {
+          "WHEAT": 30,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 132,
+          "MELON": 260,
+          "EGG": 50,
+          "MILK": 172,
+          "WOOL": 209,
+          "FERTILIZER": 98
+        }
+      }
+    },
+    {
+      "step": 72,
+      "own": {
+        "cash": 1024.0,
+        "crops": {
+          "WHEAT": 3
+        },
+        "animals": {
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "WHEAT": 6,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 209.0,
+        "crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 3,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "WHEAT": 11,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 6,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9972,
+          "CARROT": 9997,
+          "TOMATO": 9997,
+          "STRAWBERRY": 9997,
+          "MELON": 9997,
+          "EGG": 9997,
+          "MILK": 9997,
+          "WOOL": 9997,
+          "FERTILIZER": 10020
+        },
+        "prices": {
+          "WHEAT": 30,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 135,
+          "MELON": 262,
+          "EGG": 50,
+          "MILK": 175,
+          "WOOL": 212,
+          "FERTILIZER": 96
+        }
+      }
+    },
+    {
+      "step": 96,
+      "own": {
+        "cash": 684.0,
+        "crops": {
+          "WHEAT": 8,
+          "MELON": 3
+        },
+        "animals": {
+          "SHEEP": 3,
+          "COW": 4
+        },
+        "yield_units": {
+          "WHEAT": 14,
+          "MELON": 3,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 263.0,
+        "crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "WHEAT": 7,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 11,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9968,
+          "CARROT": 9996,
+          "TOMATO": 9996,
+          "STRAWBERRY": 9990,
+          "MELON": 9996,
+          "EGG": 9996,
+          "MILK": 9990,
+          "WOOL": 9996,
+          "FERTILIZER": 10030
+        },
+        "prices": {
+          "WHEAT": 31,
+          "CARROT": 35,
+          "TOMATO": 60,
+          "STRAWBERRY": 147,
+          "MELON": 264,
+          "EGG": 50,
+          "MILK": 187,
+          "WOOL": 214,
+          "FERTILIZER": 94
+        }
+      }
+    },
+    {
+      "step": 120,
+      "own": {
+        "cash": 1580.0,
+        "crops": {
+          "WHEAT": 5,
+          "MELON": 3
+        },
+        "animals": {
+          "SHEEP": 3,
+          "COW": 4
+        },
+        "yield_units": {
+          "WHEAT": 5,
+          "MELON": 3,
+          "SHEEP": 0,
+          "COW": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 659.0,
+        "crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "WHEAT": 7,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 16,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9971,
+          "CARROT": 9995,
+          "TOMATO": 9995,
+          "STRAWBERRY": 9983,
+          "MELON": 9995,
+          "EGG": 9995,
+          "MILK": 9983,
+          "WOOL": 9995,
+          "FERTILIZER": 10043
+        },
+        "prices": {
+          "WHEAT": 30,
+          "CARROT": 35,
+          "TOMATO": 61,
+          "STRAWBERRY": 155,
+          "MELON": 266,
+          "EGG": 50,
+          "MILK": 196,
+          "WOOL": 215,
+          "FERTILIZER": 91
+        }
+      }
+    },
+    {
+      "step": 144,
+      "own": {
+        "cash": 679.0,
+        "crops": {
+          "STRAWBERRY": 3,
+          "WHEAT": 6,
+          "MELON": 4
+        },
+        "animals": {
+          "COW": 6,
+          "SHEEP": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "WHEAT": 11,
+          "MELON": 4,
+          "COW": 0,
+          "SHEEP": 18
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 768.0,
+        "crops": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "WHEAT": 3,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 12
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 16,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9964,
+          "CARROT": 9994,
+          "TOMATO": 9994,
+          "STRAWBERRY": 9976,
+          "MELON": 9994,
+          "EGG": 9994,
+          "MILK": 9976,
+          "WOOL": 9994,
+          "FERTILIZER": 10054
+        },
+        "prices": {
+          "WHEAT": 31,
+          "CARROT": 35,
+          "TOMATO": 61,
+          "STRAWBERRY": 161,
+          "MELON": 267,
+          "EGG": 50,
+          "MILK": 203,
+          "WOOL": 217,
+          "FERTILIZER": 89
+        }
+      }
+    },
+    {
+      "step": 168,
+      "own": {
+        "cash": 4213.0,
+        "crops": {
+          "STRAWBERRY": 4,
+          "MELON": 6,
+          "WHEAT": 6
+        },
+        "animals": {
+          "COW": 6,
+          "SHEEP": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 6,
+          "WHEAT": 16,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 1162.0,
+        "crops": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "animals": {
+          "COW": 6,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 24,
+          "WHEAT": 5,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 15,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9947,
+          "CARROT": 9993,
+          "TOMATO": 9993,
+          "STRAWBERRY": 9969,
+          "MELON": 9993,
+          "EGG": 9987,
+          "MILK": 9969,
+          "WOOL": 10023,
+          "FERTILIZER": 10069
+        },
+        "prices": {
+          "WHEAT": 32,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 167,
+          "MELON": 268,
+          "EGG": 51,
+          "MILK": 208,
+          "WOOL": 169,
+          "FERTILIZER": 86
+        }
+      }
+    },
+    {
+      "step": 192,
+      "own": {
+        "cash": 444.0,
+        "crops": {
+          "STRAWBERRY": 18,
+          "MELON": 6,
+          "WHEAT": 3
+        },
+        "animals": {
+          "COW": 8,
+          "SHEEP": 3,
+          "GOOSE": 2
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 6,
+          "COW": 18,
+          "WHEAT": 4,
+          "SHEEP": 0,
+          "GOOSE": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 20,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 5,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 568.0,
+        "crops": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 8,
+          "SHEEP": 2
+        },
+        "yield_units": {
+          "WHEAT": 9,
+          "STRAWBERRY": 0,
+          "MELON": 36,
+          "COW": 12,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 8,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9927,
+          "CARROT": 9992,
+          "TOMATO": 9992,
+          "STRAWBERRY": 9962,
+          "MELON": 9992,
+          "EGG": 9980,
+          "MILK": 9962,
+          "WOOL": 10022,
+          "FERTILIZER": 10083
+        },
+        "prices": {
+          "WHEAT": 34,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 172,
+          "MELON": 269,
+          "EGG": 51,
+          "MILK": 214,
+          "WOOL": 172,
+          "FERTILIZER": 83
+        }
+      }
+    },
+    {
+      "step": 216,
+      "own": {
+        "cash": 3137.0,
+        "crops": {
+          "STRAWBERRY": 19,
+          "MELON": 10,
+          "CARROT": 1,
+          "WHEAT": 5
+        },
+        "animals": {
+          "COW": 8,
+          "SHEEP": 3,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 10,
+          "CARROT": 1,
+          "COW": 0,
+          "WHEAT": 7,
+          "SHEEP": 12,
+          "GOOSE": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 8,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 1794.0,
+        "crops": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 8,
+          "SHEEP": 4
+        },
+        "yield_units": {
+          "WHEAT": 5,
+          "STRAWBERRY": 0,
+          "MELON": 48,
+          "COW": 0,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 24,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9909,
+          "CARROT": 9991,
+          "TOMATO": 9991,
+          "STRAWBERRY": 9955,
+          "MELON": 9991,
+          "EGG": 9973,
+          "MILK": 9979,
+          "WOOL": 10021,
+          "FERTILIZER": 10102
+        },
+        "prices": {
+          "WHEAT": 35,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 176,
+          "MELON": 270,
+          "EGG": 52,
+          "MILK": 200,
+          "WOOL": 174,
+          "FERTILIZER": 80
+        }
+      }
+    },
+    {
+      "step": 240,
+      "own": {
+        "cash": 525.0,
+        "crops": {
+          "STRAWBERRY": 27,
+          "MELON": 15,
+          "CARROT": 1,
+          "WHEAT": 4
+        },
+        "animals": {
+          "COW": 10,
+          "SHEEP": 3,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 18,
+          "CARROT": 1,
+          "COW": 9,
+          "WHEAT": 6,
+          "SHEEP": 0,
+          "GOOSE": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 4,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 12,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 2640.0,
+        "crops": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "animals": {
+          "COW": 9,
+          "SHEEP": 4
+        },
+        "yield_units": {
+          "WHEAT": 5,
+          "STRAWBERRY": 0,
+          "MELON": 60,
+          "COW": 12,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 33,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 1,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 1
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9869,
+          "CARROT": 9990,
+          "TOMATO": 9990,
+          "STRAWBERRY": 9942,
+          "MELON": 9990,
+          "EGG": 9966,
+          "MILK": 9972,
+          "WOOL": 10028,
+          "FERTILIZER": 10124
+        },
+        "prices": {
+          "WHEAT": 36,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 184,
+          "MELON": 271,
+          "EGG": 52,
+          "MILK": 206,
+          "WOOL": 154,
+          "FERTILIZER": 75
+        }
+      }
+    },
+    {
+      "step": 264,
+      "own": {
+        "cash": 1997.0,
+        "crops": {
+          "STRAWBERRY": 33,
+          "MELON": 16,
+          "CARROT": 1,
+          "WHEAT": 3
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 3,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 22,
+          "CARROT": 2,
+          "COW": 6,
+          "SHEEP": 0,
+          "GOOSE": 8,
+          "WHEAT": 3
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 10,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 11,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 18164.0,
+        "crops": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "animals": {
+          "GOOSE": 2,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 13,
+          "STRAWBERRY": 0,
+          "GOOSE": 0,
+          "COW": 6,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 42,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9817,
+          "CARROT": 9989,
+          "TOMATO": 9989,
+          "STRAWBERRY": 9929,
+          "MELON": 10049,
+          "EGG": 9959,
+          "MILK": 9974,
+          "WOOL": 10039,
+          "FERTILIZER": 10143
+        },
+        "prices": {
+          "WHEAT": 39,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 191,
+          "MELON": 226,
+          "EGG": 52,
+          "MILK": 204,
+          "WOOL": 112,
+          "FERTILIZER": 71
+        }
+      }
+    },
+    {
+      "step": 288,
+      "own": {
+        "cash": 3806.0,
+        "crops": {
+          "STRAWBERRY": 33,
+          "MELON": 16,
+          "WHEAT": 8
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 3,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 26,
+          "WHEAT": 8,
+          "COW": 9,
+          "SHEEP": 12,
+          "GOOSE": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 3,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 18931.0,
+        "crops": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "WHEAT": 22,
+          "GOOSE": 0,
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 39,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9797,
+          "CARROT": 9988,
+          "TOMATO": 9988,
+          "STRAWBERRY": 9916,
+          "MELON": 10060,
+          "EGG": 9952,
+          "MILK": 9973,
+          "WOOL": 10038,
+          "FERTILIZER": 10168
+        },
+        "prices": {
+          "WHEAT": 39,
+          "CARROT": 36,
+          "TOMATO": 61,
+          "STRAWBERRY": 197,
+          "MELON": 214,
+          "EGG": 53,
+          "MILK": 205,
+          "WOOL": 116,
+          "FERTILIZER": 66
+        }
+      }
+    },
+    {
+      "step": 312,
+      "own": {
+        "cash": 917.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "MELON": 16,
+          "WHEAT": 9
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 32,
+          "WHEAT": 15,
+          "COW": 15,
+          "SHEEP": 0,
+          "GOOSE": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 9,
+          "WOOL": 12,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 22724.0,
+        "crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 29,
+          "STRAWBERRY": 0,
+          "GOOSE": 0,
+          "COW": 6,
+          "SHEEP": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 14,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9784,
+          "CARROT": 9990,
+          "TOMATO": 9987,
+          "STRAWBERRY": 9903,
+          "MELON": 10059,
+          "EGG": 9955,
+          "MILK": 9972,
+          "WOOL": 10033,
+          "FERTILIZER": 10203
+        },
+        "prices": {
+          "WHEAT": 40,
+          "CARROT": 36,
+          "TOMATO": 62,
+          "STRAWBERRY": 203,
+          "MELON": 215,
+          "EGG": 53,
+          "MILK": 206,
+          "WOOL": 137,
+          "FERTILIZER": 59
+        }
+      }
+    },
+    {
+      "step": 336,
+      "own": {
+        "cash": 4809.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "MELON": 13,
+          "WHEAT": 4
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 0,
+          "MELON": 20,
+          "COW": 9,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "WHEAT": 16
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 10,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 18,
+          "EGG": 6,
+          "MILK": 15,
+          "WOOL": 0,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 24656.0,
+        "crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 34,
+          "STRAWBERRY": 0,
+          "GOOSE": 8,
+          "COW": 21,
+          "SHEEP": 12
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 16,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9753,
+          "CARROT": 9989,
+          "TOMATO": 9986,
+          "STRAWBERRY": 9890,
+          "MELON": 10058,
+          "EGG": 9954,
+          "MILK": 9974,
+          "WOOL": 10032,
+          "FERTILIZER": 10236
+        },
+        "prices": {
+          "WHEAT": 41,
+          "CARROT": 36,
+          "TOMATO": 62,
+          "STRAWBERRY": 208,
+          "MELON": 216,
+          "EGG": 53,
+          "MILK": 204,
+          "WOOL": 141,
+          "FERTILIZER": 53
+        }
+      }
+    },
+    {
+      "step": 360,
+      "own": {
+        "cash": 14401.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "MELON": 13
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 6,
+          "MELON": 27,
+          "COW": 21,
+          "SHEEP": 10,
+          "GOOSE": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 8,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 29510.0,
+        "crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 40,
+          "STRAWBERRY": 8,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 21,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9741,
+          "CARROT": 9988,
+          "TOMATO": 9985,
+          "STRAWBERRY": 9877,
+          "MELON": 10075,
+          "EGG": 9953,
+          "MILK": 10000,
+          "WOOL": 10031,
+          "FERTILIZER": 10267
+        },
+        "prices": {
+          "WHEAT": 41,
+          "CARROT": 36,
+          "TOMATO": 62,
+          "STRAWBERRY": 213,
+          "MELON": 194,
+          "EGG": 53,
+          "MILK": 160,
+          "WOOL": 144,
+          "FERTILIZER": 47
+        }
+      }
+    },
+    {
+      "step": 384,
+      "own": {
+        "cash": 17613.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "MELON": 12,
+          "TOMATO": 6
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 2,
+          "MELON": 33,
+          "COW": 9,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "TOMATO": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 6,
+          "MELON": 6,
+          "EGG": 4,
+          "MILK": 6,
+          "WOOL": 6,
+          "FERTILIZER": 12,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 35148.0,
+        "crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 42,
+          "STRAWBERRY": 16,
+          "GOOSE": 7,
+          "COW": 15,
+          "SHEEP": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 23,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 0,
+          "WOOL": 8,
+          "FERTILIZER": 11,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9718,
+          "CARROT": 9981,
+          "TOMATO": 9978,
+          "STRAWBERRY": 9866,
+          "MELON": 10074,
+          "EGG": 9962,
+          "MILK": 10023,
+          "WOOL": 10022,
+          "FERTILIZER": 10301
+        },
+        "prices": {
+          "WHEAT": 42,
+          "CARROT": 36,
+          "TOMATO": 63,
+          "STRAWBERRY": 217,
+          "MELON": 195,
+          "EGG": 52,
+          "MILK": 112,
+          "WOOL": 172,
+          "FERTILIZER": 40
+        }
+      }
+    },
+    {
+      "step": 408,
+      "own": {
+        "cash": 21621.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "MELON": 10,
+          "TOMATO": 7
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 34,
+          "MELON": 33,
+          "COW": 27,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "TOMATO": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 2,
+          "MELON": 12,
+          "EGG": 6,
+          "MILK": 3,
+          "WOOL": 0,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 42625.0,
+        "crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 38,
+          "STRAWBERRY": 16,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 30,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 5,
+          "MILK": 3,
+          "WOOL": 0,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9689,
+          "CARROT": 9974,
+          "TOMATO": 9971,
+          "STRAWBERRY": 9869,
+          "MELON": 10079,
+          "EGG": 9965,
+          "MILK": 10034,
+          "WOOL": 10029,
+          "FERTILIZER": 10312
+        },
+        "prices": {
+          "WHEAT": 43,
+          "CARROT": 37,
+          "TOMATO": 63,
+          "STRAWBERRY": 216,
+          "MELON": 188,
+          "EGG": 52,
+          "MILK": 89,
+          "WOOL": 151,
+          "FERTILIZER": 38
+        }
+      }
+    },
+    {
+      "step": 432,
+      "own": {
+        "cash": 25028.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "TOMATO": 12,
+          "MELON": 10
+        },
+        "animals": {
+          "COW": 12,
+          "SHEEP": 5,
+          "GOOSE": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 4,
+          "TOMATO": 0,
+          "MELON": 43,
+          "COW": 18,
+          "SHEEP": 24,
+          "GOOSE": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 34,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 18,
+          "WOOL": 0,
+          "FERTILIZER": 19,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 47037.0,
+        "crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 38,
+          "STRAWBERRY": 24,
+          "GOOSE": 8,
+          "COW": 21,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 30,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 5,
+          "MILK": 9,
+          "WOOL": 8,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9662,
+          "CARROT": 9967,
+          "TOMATO": 9964,
+          "STRAWBERRY": 9868,
+          "MELON": 10090,
+          "EGG": 9970,
+          "MILK": 10036,
+          "WOOL": 10016,
+          "FERTILIZER": 10339
+        },
+        "prices": {
+          "WHEAT": 43,
+          "CARROT": 38,
+          "TOMATO": 64,
+          "STRAWBERRY": 217,
+          "MELON": 169,
+          "EGG": 52,
+          "MILK": 84,
+          "WOOL": 185,
+          "FERTILIZER": 32
+        }
+      }
+    },
+    {
+      "step": 456,
+      "own": {
+        "cash": 36885.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "TOMATO": 16,
+          "MELON": 6
+        },
+        "animals": {
+          "SHEEP": 5,
+          "GOOSE": 3,
+          "COW": 7
+        },
+        "yield_units": {
+          "STRAWBERRY": 50,
+          "TOMATO": 0,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "COW": 5,
+          "MELON": 29
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 4,
+          "MELON": 24,
+          "EGG": 6,
+          "MILK": 16,
+          "WOOL": 4,
+          "FERTILIZER": 12,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 54325.0,
+        "crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 40,
+          "STRAWBERRY": 16,
+          "GOOSE": 10,
+          "COW": 12,
+          "SHEEP": 4
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 25,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 8,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 15,
+          "WOOL": 4,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9644,
+          "CARROT": 9960,
+          "TOMATO": 9957,
+          "STRAWBERRY": 9899,
+          "MELON": 10089,
+          "EGG": 9974,
+          "MILK": 10058,
+          "WOOL": 10023,
+          "FERTILIZER": 10368
+        },
+        "prices": {
+          "WHEAT": 44,
+          "CARROT": 38,
+          "TOMATO": 65,
+          "STRAWBERRY": 204,
+          "MELON": 171,
+          "EGG": 52,
+          "MILK": 38,
+          "WOOL": 169,
+          "FERTILIZER": 26
+        }
+      }
+    },
+    {
+      "step": 480,
+      "own": {
+        "cash": 39225.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "TOMATO": 17,
+          "MELON": 5
+        },
+        "animals": {
+          "SHEEP": 10,
+          "GOOSE": 3,
+          "COW": 4
+        },
+        "yield_units": {
+          "STRAWBERRY": 16,
+          "TOMATO": 0,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "COW": 4,
+          "MELON": 29
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 50,
+          "MELON": 6,
+          "EGG": 6,
+          "MILK": 5,
+          "WOOL": 0,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 59394.0,
+        "crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 46,
+          "STRAWBERRY": 24,
+          "GOOSE": 6,
+          "COW": 10,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 32,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 6,
+          "MELON": 0,
+          "EGG": 10,
+          "MILK": 6,
+          "WOOL": 4,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9616,
+          "CARROT": 9953,
+          "TOMATO": 9950,
+          "STRAWBERRY": 9902,
+          "MELON": 10112,
+          "EGG": 9977,
+          "MILK": 10069,
+          "WOOL": 10006,
+          "FERTILIZER": 10377
+        },
+        "prices": {
+          "WHEAT": 45,
+          "CARROT": 39,
+          "TOMATO": 66,
+          "STRAWBERRY": 203,
+          "MELON": 125,
+          "EGG": 51,
+          "MILK": 15,
+          "WOOL": 198,
+          "FERTILIZER": 25
+        }
+      }
+    },
+    {
+      "step": 504,
+      "own": {
+        "cash": 48040.0,
+        "crops": {
+          "STRAWBERRY": 34,
+          "TOMATO": 17,
+          "WHEAT": 1,
+          "MELON": 1
+        },
+        "animals": {
+          "SHEEP": 12,
+          "GOOSE": 3,
+          "COW": 4
+        },
+        "yield_units": {
+          "STRAWBERRY": 50,
+          "TOMATO": 0,
+          "SHEEP": 20,
+          "GOOSE": 6,
+          "COW": 4,
+          "WHEAT": 1,
+          "MELON": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 16,
+          "MELON": 24,
+          "EGG": 6,
+          "MILK": 2,
+          "WOOL": 0,
+          "FERTILIZER": 11,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 65352.0,
+        "crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 56,
+          "STRAWBERRY": 38,
+          "GOOSE": 8,
+          "COW": 12,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 35,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 4,
+          "MELON": 0,
+          "EGG": 7,
+          "MILK": 4,
+          "WOOL": 8,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9586,
+          "CARROT": 9946,
+          "TOMATO": 9943,
+          "STRAWBERRY": 9959,
+          "MELON": 10117,
+          "EGG": 9983,
+          "MILK": 10071,
+          "WOOL": 9985,
+          "FERTILIZER": 10383
+        },
+        "prices": {
+          "WHEAT": 45,
+          "CARROT": 39,
+          "TOMATO": 67,
+          "STRAWBERRY": 174,
+          "MELON": 113,
+          "EGG": 51,
+          "MILK": 11,
+          "WOOL": 224,
+          "FERTILIZER": 23
+        }
+      }
+    },
+    {
+      "step": 528,
+      "own": {
+        "cash": 55263.0,
+        "crops": {
+          "STRAWBERRY": 33,
+          "TOMATO": 17,
+          "WHEAT": 4
+        },
+        "animals": {
+          "SHEEP": 12,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 18,
+          "TOMATO": 0,
+          "SHEEP": 0,
+          "GOOSE": 6,
+          "WHEAT": 4,
+          "COW": 2
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 46,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 2,
+          "WOOL": 12,
+          "FERTILIZER": 12,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 72545.0,
+        "crops": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 57,
+          "STRAWBERRY": 19,
+          "GOOSE": 10,
+          "COW": 11,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 45,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 14,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 7,
+          "WOOL": 4,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9568,
+          "CARROT": 9927,
+          "TOMATO": 9936,
+          "STRAWBERRY": 9988,
+          "MELON": 10146,
+          "EGG": 9989,
+          "MILK": 10066,
+          "WOOL": 9976,
+          "FERTILIZER": 10406
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 41,
+          "TOMATO": 68,
+          "STRAWBERRY": 149,
+          "MELON": 37,
+          "EGG": 51,
+          "MILK": 22,
+          "WOOL": 228,
+          "FERTILIZER": 19
+        }
+      }
+    },
+    {
+      "step": 552,
+      "own": {
+        "cash": 60719.0,
+        "crops": {
+          "STRAWBERRY": 31,
+          "TOMATO": 17,
+          "WHEAT": 6
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 36,
+          "TOMATO": 12,
+          "SHEEP": 0,
+          "WHEAT": 8,
+          "GOOSE": 6,
+          "COW": 4
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 18,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 2,
+          "WOOL": 0,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 77489.0,
+        "crops": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 59,
+          "STRAWBERRY": 30,
+          "GOOSE": 6,
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 42,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 12,
+          "MELON": 0,
+          "EGG": 10,
+          "MILK": 8,
+          "WOOL": 4,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9553,
+          "CARROT": 9908,
+          "TOMATO": 9929,
+          "STRAWBERRY": 10036,
+          "MELON": 10145,
+          "EGG": 9992,
+          "MILK": 10064,
+          "WOOL": 9971,
+          "FERTILIZER": 10416
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 42,
+          "TOMATO": 69,
+          "STRAWBERRY": 51,
+          "MELON": 40,
+          "EGG": 50,
+          "MILK": 26,
+          "WOOL": 229,
+          "FERTILIZER": 17
+        }
+      }
+    },
+    {
+      "step": 576,
+      "own": {
+        "cash": 60533.0,
+        "crops": {
+          "STRAWBERRY": 27,
+          "TOMATO": 17,
+          "WHEAT": 8
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "STRAWBERRY": 10,
+          "TOMATO": 14,
+          "SHEEP": 20,
+          "WHEAT": 14,
+          "GOOSE": 6,
+          "COW": 2
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 12,
+          "STRAWBERRY": 36,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 4,
+          "WOOL": 0,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 80548.0,
+        "crops": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 77,
+          "STRAWBERRY": 5,
+          "GOOSE": 8,
+          "COW": 13,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 42,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 22,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 6,
+          "WOOL": 8,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9539,
+          "CARROT": 9889,
+          "TOMATO": 9922,
+          "STRAWBERRY": 10054,
+          "MELON": 10144,
+          "EGG": 10001,
+          "MILK": 10061,
+          "WOOL": 9950,
+          "FERTILIZER": 10438
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 44,
+          "TOMATO": 69,
+          "STRAWBERRY": 16,
+          "MELON": 43,
+          "EGG": 49,
+          "MILK": 32,
+          "WOOL": 234,
+          "FERTILIZER": 12
+        }
+      }
+    },
+    {
+      "step": 600,
+      "own": {
+        "cash": 62817.0,
+        "crops": {
+          "TOMATO": 17,
+          "WHEAT": 14,
+          "STRAWBERRY": 16
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "TOMATO": 24,
+          "WHEAT": 18,
+          "STRAWBERRY": 8,
+          "SHEEP": 30,
+          "GOOSE": 6,
+          "COW": 6
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 15,
+          "CARROT": 0,
+          "TOMATO": 14,
+          "STRAWBERRY": 10,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 2,
+          "WOOL": 12,
+          "FERTILIZER": 14,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 85733.0,
+        "crops": {
+          "WHEAT": 37,
+          "CARROT": 4,
+          "STRAWBERRY": 17
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "WHEAT": 72,
+          "CARROT": 4,
+          "STRAWBERRY": 25,
+          "GOOSE": 5,
+          "COW": 9,
+          "SHEEP": 4
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 58,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 5,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 13,
+          "WOOL": 0,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9527,
+          "CARROT": 9864,
+          "TOMATO": 9921,
+          "STRAWBERRY": 10052,
+          "MELON": 10143,
+          "EGG": 10004,
+          "MILK": 10058,
+          "WOOL": 9949,
+          "FERTILIZER": 10452
+        },
+        "prices": {
+          "WHEAT": 47,
+          "CARROT": 46,
+          "TOMATO": 69,
+          "STRAWBERRY": 20,
+          "MELON": 46,
+          "EGG": 47,
+          "MILK": 38,
+          "WOOL": 234,
+          "FERTILIZER": 10
+        }
+      }
+    },
+    {
+      "step": 624,
+      "own": {
+        "cash": 66882.0,
+        "crops": {
+          "TOMATO": 17,
+          "WHEAT": 21,
+          "STRAWBERRY": 9
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "TOMATO": 32,
+          "WHEAT": 35,
+          "STRAWBERRY": 14,
+          "SHEEP": 12,
+          "GOOSE": 6,
+          "COW": 2
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 20,
+          "STRAWBERRY": 7,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 6,
+          "WOOL": 30,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 88319.0,
+        "crops": {
+          "CARROT": 18,
+          "WHEAT": 27,
+          "STRAWBERRY": 13
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "CARROT": 18,
+          "WHEAT": 65,
+          "GOOSE": 5,
+          "COW": 14,
+          "SHEEP": 7,
+          "STRAWBERRY": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 51,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 21,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 7,
+          "WOOL": 4,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9541,
+          "CARROT": 9839,
+          "TOMATO": 9926,
+          "STRAWBERRY": 10047,
+          "MELON": 10142,
+          "EGG": 10011,
+          "MILK": 10060,
+          "WOOL": 9936,
+          "FERTILIZER": 10458
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 48,
+          "TOMATO": 69,
+          "STRAWBERRY": 30,
+          "MELON": 48,
+          "EGG": 46,
+          "MILK": 34,
+          "WOOL": 236,
+          "FERTILIZER": 8
+        }
+      }
+    },
+    {
+      "step": 648,
+      "own": {
+        "cash": 74753.0,
+        "crops": {
+          "TOMATO": 11,
+          "WHEAT": 31,
+          "STRAWBERRY": 4
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "TOMATO": 22,
+          "WHEAT": 61,
+          "SHEEP": 20,
+          "GOOSE": 6,
+          "COW": 4,
+          "STRAWBERRY": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 12,
+          "CARROT": 0,
+          "TOMATO": 32,
+          "STRAWBERRY": 14,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 2,
+          "WOOL": 12,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 91757.0,
+        "crops": {
+          "CARROT": 29,
+          "WHEAT": 16,
+          "STRAWBERRY": 13
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "CARROT": 35,
+          "WHEAT": 48,
+          "GOOSE": 8,
+          "COW": 17,
+          "SHEEP": 7,
+          "STRAWBERRY": 26
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 58,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 2,
+          "MILK": 8,
+          "WOOL": 7,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9533,
+          "CARROT": 9814,
+          "TOMATO": 9933,
+          "STRAWBERRY": 10050,
+          "MELON": 10141,
+          "EGG": 10014,
+          "MILK": 10060,
+          "WOOL": 9945,
+          "FERTILIZER": 10472
+        },
+        "prices": {
+          "WHEAT": 47,
+          "CARROT": 49,
+          "TOMATO": 68,
+          "STRAWBERRY": 24,
+          "MELON": 51,
+          "EGG": 45,
+          "MILK": 34,
+          "WOOL": 235,
+          "FERTILIZER": 6
+        }
+      }
+    },
+    {
+      "step": 672,
+      "own": {
+        "cash": 81068.0,
+        "crops": {
+          "CARROT": 14,
+          "TOMATO": 10,
+          "WHEAT": 27,
+          "STRAWBERRY": 1
+        },
+        "animals": {
+          "SHEEP": 13,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "CARROT": 14,
+          "TOMATO": 20,
+          "SHEEP": 26,
+          "WHEAT": 73,
+          "GOOSE": 6,
+          "COW": 2,
+          "STRAWBERRY": 2
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 23,
+          "CARROT": 0,
+          "TOMATO": 18,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 2,
+          "WOOL": 16,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 95573.0,
+        "crops": {
+          "CARROT": 24,
+          "WHEAT": 18,
+          "STRAWBERRY": 4
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "CARROT": 38,
+          "WHEAT": 43,
+          "GOOSE": 12,
+          "COW": 14,
+          "SHEEP": 3,
+          "STRAWBERRY": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 38,
+          "CARROT": 18,
+          "TOMATO": 0,
+          "STRAWBERRY": 20,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 10,
+          "WOOL": 7,
+          "FERTILIZER": 7,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9544,
+          "CARROT": 9789,
+          "TOMATO": 9956,
+          "STRAWBERRY": 10045,
+          "MELON": 10140,
+          "EGG": 10017,
+          "MILK": 10064,
+          "WOOL": 9943,
+          "FERTILIZER": 10493
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 51,
+          "TOMATO": 65,
+          "STRAWBERRY": 34,
+          "MELON": 54,
+          "EGG": 45,
+          "MILK": 26,
+          "WOOL": 235,
+          "FERTILIZER": 1
+        }
+      }
+    },
+    {
+      "step": 696,
+      "own": {
+        "cash": 90849.0,
+        "crops": {
+          "CARROT": 14,
+          "TOMATO": 10,
+          "WHEAT": 19,
+          "STRAWBERRY": 1
+        },
+        "animals": {
+          "SHEEP": 8,
+          "GOOSE": 3,
+          "COW": 3
+        },
+        "yield_units": {
+          "CARROT": 14,
+          "TOMATO": 10,
+          "SHEEP": 8,
+          "GOOSE": 3,
+          "WHEAT": 68,
+          "COW": 4,
+          "STRAWBERRY": 0
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW",
+          "SE"
+        ],
+        "shed": {
+          "WHEAT": 48,
+          "CARROT": 0,
+          "TOMATO": 20,
+          "STRAWBERRY": 2,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 2,
+          "WOOL": 10,
+          "FERTILIZER": 7,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "rival": {
+        "cash": 101982.0,
+        "crops": {
+          "CARROT": 12,
+          "WHEAT": 9
+        },
+        "animals": {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5
+        },
+        "yield_units": {
+          "CARROT": 27,
+          "GOOSE": 4,
+          "WHEAT": 11,
+          "COW": 14,
+          "SHEEP": 8
+        },
+        "hands": 0,
+        "land": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 43,
+          "CARROT": 37,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 6,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "seeds": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      "market": {
+        "inventory": {
+          "WHEAT": 9573,
+          "CARROT": 9785,
+          "TOMATO": 9961,
+          "STRAWBERRY": 10040,
+          "MELON": 10139,
+          "EGG": 10020,
+          "MILK": 10071,
+          "WOOL": 9960,
+          "FERTILIZER": 10493
+        },
+        "prices": {
+          "WHEAT": 46,
+          "CARROT": 52,
+          "TOMATO": 65,
+          "STRAWBERRY": 43,
+          "MELON": 57,
+          "EGG": 45,
+          "MILK": 11,
+          "WOOL": 232,
+          "FERTILIZER": 1
+        }
+      }
+    }
+  ],
+  "opening": [
+    {
+      "step": 0,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "step": 1,
+      "own": {
+        "farmer": [
+          "PICKUP",
+          "SHEEP",
+          2
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "COW",
+            2
+          ],
+          [
+            "PICKUP",
+            "COW",
+            1
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "own": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "COW"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PICKUP",
+            "COW"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 3,
+      "own": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "WHEAT",
+            3
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PICKUP",
+          "SHEEP"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "BUILD_PASTURE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 4,
+      "own": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PLACE",
+            "COW"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 5,
+      "own": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "BUILD_PASTURE"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "COW"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 6,
+      "own": {
+        "farmer": [
+          "PLACE",
+          "SHEEP",
+          1
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "COW",
+            1
+          ],
+          [
+            "PLACE",
+            "COW",
+            1
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "SHEEP"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "own": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "FEED"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PICKUP",
+            "WHEAT"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 8,
+      "own": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PLACE",
+          "SHEEP"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 9,
+      "own": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "BUILD_PASTURE"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 10,
+      "own": {
+        "farmer": [
+          "PLANT",
+          "WHEAT"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PLACE",
+            "SHEEP"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 11,
+      "own": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "COW",
+            1
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "FEED"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 12,
+      "own": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PLANT",
+          "MELON"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "CARE"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 13,
+      "own": {
+        "farmer": [
+          "BUILD_PASTURE"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 14,
+      "own": {
+        "farmer": [
+          "PLACE",
+          "SHEEP",
+          1
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "step": 15,
+      "own": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PLANT",
+          "MELON"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 16,
+      "own": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "SHEEP",
+            1
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 17,
+      "own": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 18,
+      "own": {
+        "farmer": [
+          "PLANT",
+          "WHEAT"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "MELON"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "MELON"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 19,
+      "own": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 20,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 21,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 22,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 23,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 24,
+      "own": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "rival": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "step": 25,
+      "own": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      },
+      "rival": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 26,
+      "own": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "WHEAT",
+            3
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "WHEAT"
+          ],
+          [
+            "PICKUP",
+            "WHEAT"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 27,
+      "own": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 28,
+      "own": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 29,
+      "own": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "BUILD_PASTURE"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 30,
+      "own": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "PLACE",
+            "FERTILIZER"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "step": 31,
+      "own": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 32,
+      "own": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PLACE",
+          "FERTILIZER"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "FERTILIZER"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 33,
+      "own": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "BUILD_PASTURE"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 34,
+      "own": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 35,
+      "own": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 36,
+      "own": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PICKUP",
+            "WHEAT"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 37,
+      "own": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 38,
+      "own": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 39,
+      "own": {
+        "farmer": [
+          "CARE"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 40,
+      "own": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "DROP"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 41,
+      "own": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 42,
+      "own": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ]
+        ]
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 43,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 44,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 45,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 46,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "step": 47,
+      "own": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "rival": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    }
+  ],
+  "market_intents_own": {
+    "BUY_PRODUCT WHEAT": 329,
+    "SELL WHEAT": 223,
+    "BUY_ANIMAL COW": 12,
+    "BUY_ANIMAL SHEEP": 13,
+    "BUY_SEED WHEAT": 59,
+    "HIRE": 242,
+    "SELL FERTILIZER": 315,
+    "BUY_SEED MELON": 16,
+    "BUY_SEED STRAWBERRY": 34,
+    "SELL WOOL": 212,
+    "BUY_LAND": 3,
+    "BUY_ANIMAL GOOSE": 3,
+    "BUY_SEED CARROT": 15,
+    "SELL MILK": 180,
+    "SELL EGG": 115,
+    "SELL CARROT": 38,
+    "SELL MELON": 96,
+    "BUY_SEED TOMATO": 17,
+    "SELL STRAWBERRY": 250,
+    "SELL TOMATO": 134,
+    "BUY_PRODUCT FERTILIZER": 6
+  },
+  "market_intents_rival": {
+    "BUY_PRODUCT WHEAT": 138,
+    "SELL WHEAT": 466,
+    "HIRE": 269,
+    "BUY_ANIMAL COW": 9,
+    "BUY_ANIMAL SHEEP": 5,
+    "BUY_SEED MELON": 12,
+    "BUY_SEED WHEAT": 163,
+    "SELL FERTILIZER": 361,
+    "": 115,
+    "BUY_SEED STRAWBERRY": 33,
+    "SELL WOOL": 156,
+    "BUY_LAND": 2,
+    "BUY_PRODUCT FERTILIZER": 103,
+    "SELL MILK": 275,
+    "BUY_ANIMAL GOOSE": 3,
+    "SELL MELON": 72,
+    "SELL EGG": 95,
+    "SELL STRAWBERRY": 271,
+    "BUY_SEED CARROT": 31,
+    "SELL CARROT": 97
+  }
+}

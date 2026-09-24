@@ -1,0 +1,628 @@
+{
+  "status": "NOT_MET",
+  "candidate": "v2_animal06",
+  "definition": "Each frozen panel average strict win rate >=90%; draws are not wins. This is not a per-opponent or statistical lower-bound guarantee.",
+  "groups": {
+    "internal": {
+      "games": 1300,
+      "wins": 1242,
+      "ties": 0,
+      "losses": 58,
+      "strict_win_rate": 0.9553846153846154,
+      "point_rate": 0.9553846153846154,
+      "mean_margin": 11464.771538461539,
+      "mean_cash": 101556.88384615384,
+      "seed_bootstrap_95": [
+        0.9415384615384615,
+        0.9684615384615385
+      ],
+      "seat_win_rates": {
+        "0": 0.9553846153846154,
+        "1": 0.9553846153846154
+      }
+    },
+    "external": {
+      "games": 1000,
+      "wins": 832,
+      "ties": 0,
+      "losses": 168,
+      "strict_win_rate": 0.832,
+      "point_rate": 0.832,
+      "mean_margin": 9740.926,
+      "mean_cash": 103416.667,
+      "seed_bootstrap_95": [
+        0.788,
+        0.865
+      ],
+      "seat_win_rates": {
+        "0": 0.842,
+        "1": 0.822
+      }
+    }
+  },
+  "per_opponent": {
+    "internal/r15c_rules": {
+      "games": 100,
+      "wins": 99,
+      "ties": 0,
+      "losses": 1,
+      "strict_win_rate": 0.99,
+      "point_rate": 0.99,
+      "mean_margin": 13176.35,
+      "mean_cash": 103040.67,
+      "seed_bootstrap_95": [
+        0.97,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 1.0,
+        "1": 0.98
+      }
+    },
+    "internal/r14_cashflow": {
+      "games": 100,
+      "wins": 66,
+      "ties": 0,
+      "losses": 34,
+      "strict_win_rate": 0.66,
+      "point_rate": 0.66,
+      "mean_margin": 1880.4,
+      "mean_cash": 93044.93,
+      "seed_bootstrap_95": [
+        0.55,
+        0.77
+      ],
+      "seat_win_rates": {
+        "0": 0.64,
+        "1": 0.68
+      }
+    },
+    "internal/r14_daily_staff": {
+      "games": 100,
+      "wins": 99,
+      "ties": 0,
+      "losses": 1,
+      "strict_win_rate": 0.99,
+      "point_rate": 0.99,
+      "mean_margin": 11260.19,
+      "mean_cash": 100530.19,
+      "seed_bootstrap_95": [
+        0.97,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 1.0
+      }
+    },
+    "internal/r14_f5l3": {
+      "games": 100,
+      "wins": 99,
+      "ties": 0,
+      "losses": 1,
+      "strict_win_rate": 0.99,
+      "point_rate": 0.99,
+      "mean_margin": 10762.05,
+      "mean_cash": 101401.29,
+      "seed_bootstrap_95": [
+        0.97,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 1.0
+      }
+    },
+    "internal/r14_asset_tail": {
+      "games": 100,
+      "wins": 94,
+      "ties": 0,
+      "losses": 6,
+      "strict_win_rate": 0.94,
+      "point_rate": 0.94,
+      "mean_margin": 9103.09,
+      "mean_cash": 100358.32,
+      "seed_bootstrap_95": [
+        0.87,
+        0.99
+      ],
+      "seat_win_rates": {
+        "0": 0.94,
+        "1": 0.94
+      }
+    },
+    "internal/r14_frozen": {
+      "games": 100,
+      "wins": 98,
+      "ties": 0,
+      "losses": 2,
+      "strict_win_rate": 0.98,
+      "point_rate": 0.98,
+      "mean_margin": 9061.69,
+      "mean_cash": 100704.66,
+      "seed_bootstrap_95": [
+        0.94,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.98
+      }
+    },
+    "internal/r14_terminal_switch": {
+      "games": 100,
+      "wins": 99,
+      "ties": 0,
+      "losses": 1,
+      "strict_win_rate": 0.99,
+      "point_rate": 0.99,
+      "mean_margin": 10769.81,
+      "mean_cash": 101177.33,
+      "seed_bootstrap_95": [
+        0.97,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 1.0
+      }
+    },
+    "internal/rule_future65": {
+      "games": 100,
+      "wins": 100,
+      "ties": 0,
+      "losses": 0,
+      "strict_win_rate": 1.0,
+      "point_rate": 1.0,
+      "mean_margin": 20871.87,
+      "mean_cash": 102805.52,
+      "seed_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 1.0,
+        "1": 1.0
+      }
+    },
+    "internal/r13_nml": {
+      "games": 100,
+      "wins": 93,
+      "ties": 0,
+      "losses": 7,
+      "strict_win_rate": 0.93,
+      "point_rate": 0.93,
+      "mean_margin": 10832.93,
+      "mean_cash": 101594.46,
+      "seed_bootstrap_95": [
+        0.86,
+        0.98
+      ],
+      "seat_win_rates": {
+        "0": 0.96,
+        "1": 0.9
+      }
+    },
+    "internal/rule_r18": {
+      "games": 100,
+      "wins": 99,
+      "ties": 0,
+      "losses": 1,
+      "strict_win_rate": 0.99,
+      "point_rate": 0.99,
+      "mean_margin": 13723.8,
+      "mean_cash": 104568.32,
+      "seed_bootstrap_95": [
+        0.97,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 1.0,
+        "1": 0.98
+      }
+    },
+    "internal/r14_liquidity": {
+      "games": 100,
+      "wins": 100,
+      "ties": 0,
+      "losses": 0,
+      "strict_win_rate": 1.0,
+      "point_rate": 1.0,
+      "mean_margin": 13626.61,
+      "mean_cash": 103007.08,
+      "seed_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 1.0,
+        "1": 1.0
+      }
+    },
+    "internal/r14_tl5": {
+      "games": 100,
+      "wins": 98,
+      "ties": 0,
+      "losses": 2,
+      "strict_win_rate": 0.98,
+      "point_rate": 0.98,
+      "mean_margin": 11521.28,
+      "mean_cash": 102472.21,
+      "seed_bootstrap_95": [
+        0.94,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.98
+      }
+    },
+    "internal/r22_continuation": {
+      "games": 100,
+      "wins": 98,
+      "ties": 0,
+      "losses": 2,
+      "strict_win_rate": 0.98,
+      "point_rate": 0.98,
+      "mean_margin": 12451.96,
+      "mean_cash": 105534.51,
+      "seed_bootstrap_95": [
+        0.94,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.98
+      }
+    },
+    "external/n14_prvsiyan": {
+      "games": 100,
+      "wins": 95,
+      "ties": 0,
+      "losses": 5,
+      "strict_win_rate": 0.95,
+      "point_rate": 0.95,
+      "mean_margin": 12732.28,
+      "mean_cash": 106228.27,
+      "seed_bootstrap_95": [
+        0.89,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.96,
+        "1": 0.94
+      }
+    },
+    "external/n20_wzhengbiao": {
+      "games": 100,
+      "wins": 97,
+      "ties": 0,
+      "losses": 3,
+      "strict_win_rate": 0.97,
+      "point_rate": 0.97,
+      "mean_margin": 11333.69,
+      "mean_cash": 102104.04,
+      "seed_bootstrap_95": [
+        0.92,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.96,
+        "1": 0.98
+      }
+    },
+    "external/d24_20_haideptry": {
+      "games": 100,
+      "wins": 97,
+      "ties": 0,
+      "losses": 3,
+      "strict_win_rate": 0.97,
+      "point_rate": 0.97,
+      "mean_margin": 13691.06,
+      "mean_cash": 106217.16,
+      "seed_bootstrap_95": [
+        0.92,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.96
+      }
+    },
+    "external/n28_ahmedberatozer": {
+      "games": 100,
+      "wins": 97,
+      "ties": 0,
+      "losses": 3,
+      "strict_win_rate": 0.97,
+      "point_rate": 0.97,
+      "mean_margin": 13566.89,
+      "mean_cash": 106694.08,
+      "seed_bootstrap_95": [
+        0.92,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.96
+      }
+    },
+    "external/n69_hosen42": {
+      "games": 100,
+      "wins": 32,
+      "ties": 0,
+      "losses": 68,
+      "strict_win_rate": 0.32,
+      "point_rate": 0.32,
+      "mean_margin": -2085.75,
+      "mean_cash": 93615.4,
+      "seed_bootstrap_95": [
+        0.2,
+        0.45
+      ],
+      "seat_win_rates": {
+        "0": 0.34,
+        "1": 0.3
+      }
+    },
+    "external/d24_05_tetsutani": {
+      "games": 100,
+      "wins": 95,
+      "ties": 0,
+      "losses": 5,
+      "strict_win_rate": 0.95,
+      "point_rate": 0.95,
+      "mean_margin": 12732.28,
+      "mean_cash": 106228.27,
+      "seed_bootstrap_95": [
+        0.89,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.96,
+        "1": 0.94
+      }
+    },
+    "external/d24_02_guruprasaathas111": {
+      "games": 100,
+      "wins": 27,
+      "ties": 0,
+      "losses": 73,
+      "strict_win_rate": 0.27,
+      "point_rate": 0.27,
+      "mean_margin": -3704.29,
+      "mean_cash": 95408.96,
+      "seed_bootstrap_95": [
+        0.16,
+        0.39
+      ],
+      "seat_win_rates": {
+        "0": 0.3,
+        "1": 0.24
+      }
+    },
+    "external/n24_dmitriigluzdov": {
+      "games": 100,
+      "wins": 98,
+      "ties": 0,
+      "losses": 2,
+      "strict_win_rate": 0.98,
+      "point_rate": 0.98,
+      "mean_margin": 11989.08,
+      "mean_cash": 104282.69,
+      "seed_bootstrap_95": [
+        0.94,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.98
+      }
+    },
+    "external/n40_lynnsakurai": {
+      "games": 100,
+      "wins": 97,
+      "ties": 0,
+      "losses": 3,
+      "strict_win_rate": 0.97,
+      "point_rate": 0.97,
+      "mean_margin": 13577.49,
+      "mean_cash": 106694.08,
+      "seed_bootstrap_95": [
+        0.92,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.96
+      }
+    },
+    "external/n42_nathanjacob": {
+      "games": 100,
+      "wins": 97,
+      "ties": 0,
+      "losses": 3,
+      "strict_win_rate": 0.97,
+      "point_rate": 0.97,
+      "mean_margin": 13576.53,
+      "mean_cash": 106693.72,
+      "seed_bootstrap_95": [
+        0.92,
+        1.0
+      ],
+      "seat_win_rates": {
+        "0": 0.98,
+        "1": 0.96
+      }
+    }
+  },
+  "display_names": {
+    "external/n14_prvsiyan": "Soil Remembers Rain",
+    "external/n20_wzhengbiao": "V15Stack",
+    "external/d24_20_haideptry": "2965 Master Hybrid Engine",
+    "external/n28_ahmedberatozer": "V57 Funding Order Invariant",
+    "external/n69_hosen42": "M4A MetaV4",
+    "external/d24_05_tetsutani": "Demand Preserving Sale Timing (Soil identical source)",
+    "external/d24_02_guruprasaathas111": "Master Engine V3",
+    "external/n24_dmitriigluzdov": "More Wheat Smarter Sales",
+    "external/n40_lynnsakurai": "Farmer John",
+    "external/n42_nathanjacob": "Pipe18"
+  },
+  "configuration": {
+    "competition": 2,
+    "supply": 0.85,
+    "future_shop": 0.7,
+    "capital_power": 0.4,
+    "labor_hours": 10,
+    "work_price": 4,
+    "animal_work": 1.0,
+    "reserve": 120,
+    "max_animals": 20,
+    "max_hands": 12,
+    "max_land": 4,
+    "feed_cover": 1,
+    "rotation": 0,
+    "preview": 1,
+    "delivery": 2,
+    "intraday": 0,
+    "service": 1,
+    "replant": 0,
+    "land_rent": 2,
+    "discount": 0.005,
+    "tour_dp": 1,
+    "layout": 0,
+    "repeat": 0,
+    "animal_bias": 0.6,
+    "crop_bias": 1,
+    "portfolio_passes": 6,
+    "crop_fert": 1,
+    "harvest_threshold": 1,
+    "delay_sale": 0,
+    "opening_budget": 1,
+    "scenario": 1,
+    "keep_commitments": 1,
+    "candidate_extra": 1,
+    "service_reconcile": 2,
+    "live_ledger": 0,
+    "delivery_calendar": 0.5,
+    "feed_finance": 0,
+    "batch_delivery": 1,
+    "a06_reinvest": 4,
+    "a06_roll_scope": 0,
+    "a06_feed_contract": 0,
+    "a06_state_contract": 0,
+    "a06_execution_candidates": 1,
+    "a06_competitive_contract": 2,
+    "a06_r11_recovery": 1,
+    "a06_r12_calendar": 1,
+    "r14_fert_floor": 0
+  },
+  "opening_overlay": {
+    "opening_liquidity": 10
+  },
+  "external_unique_source_count": 9,
+  "external_unique_source_metrics": {
+    "games": 900,
+    "wins": 737,
+    "ties": 0,
+    "losses": 163,
+    "strict_win_rate": 0.8188888888888889,
+    "point_rate": 0.8188888888888889,
+    "mean_margin": 9408.553333333333,
+    "mean_cash": 103104.26666666666,
+    "seed_bootstrap_95": [
+      0.7744444444444445,
+      0.8522222222222222
+    ],
+    "seat_win_rates": {
+      "0": 0.8288888888888889,
+      "1": 0.8088888888888889
+    }
+  },
+  "files_frozen": true,
+  "schedule_complete": true,
+  "errors": 0,
+  "paired_external_comparison": {
+    "v1_candidate": "cf_liq_h12_nointraday",
+    "v2_candidate": "v2_animal06",
+    "games_per_version": 1000,
+    "seeds": 50,
+    "both_seats": true,
+    "opponent_sources_identical": true,
+    "v1_wins": 863,
+    "v2_wins": 832,
+    "v1_ties": 0,
+    "v2_ties": 0,
+    "v2_minus_v1_win_rate": -0.031,
+    "seed_bootstrap_delta_95": [
+      -0.07800000000000001,
+      0.009000000000000001
+    ],
+    "v1_win_to_v2_loss": 66,
+    "v1_loss_to_v2_win": 35,
+    "mean_margin_change": -451.341,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "v1_wins": 46,
+        "v2_wins": 27,
+        "games": 100,
+        "mean_margin_change": -3207.87
+      },
+      "external/d24_05_tetsutani": {
+        "v1_wins": 99,
+        "v2_wins": 95,
+        "games": 100,
+        "mean_margin_change": -379.95
+      },
+      "external/d24_20_haideptry": {
+        "v1_wins": 98,
+        "v2_wins": 97,
+        "games": 100,
+        "mean_margin_change": -49.41
+      },
+      "external/n14_prvsiyan": {
+        "v1_wins": 99,
+        "v2_wins": 95,
+        "games": 100,
+        "mean_margin_change": -379.95
+      },
+      "external/n20_wzhengbiao": {
+        "v1_wins": 97,
+        "v2_wins": 97,
+        "games": 100,
+        "mean_margin_change": 114.19
+      },
+      "external/n24_dmitriigluzdov": {
+        "v1_wins": 98,
+        "v2_wins": 98,
+        "games": 100,
+        "mean_margin_change": 84.84
+      },
+      "external/n28_ahmedberatozer": {
+        "v1_wins": 98,
+        "v2_wins": 97,
+        "games": 100,
+        "mean_margin_change": -573.28
+      },
+      "external/n40_lynnsakurai": {
+        "v1_wins": 98,
+        "v2_wins": 97,
+        "games": 100,
+        "mean_margin_change": -572.98
+      },
+      "external/n42_nathanjacob": {
+        "v1_wins": 98,
+        "v2_wins": 97,
+        "games": 100,
+        "mean_margin_change": -573.6
+      },
+      "external/n69_hosen42": {
+        "v1_wins": 32,
+        "v2_wins": 32,
+        "games": 100,
+        "mean_margin_change": 1024.6
+      }
+    },
+    "interpretation": "Post-acceptance diagnosis with both source versions frozen. Same seeds and seats, live opposing policies; no retuning or new unseen-performance claim."
+  }
+}

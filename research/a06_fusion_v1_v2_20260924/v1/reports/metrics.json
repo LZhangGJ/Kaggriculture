@@ -1,0 +1,38 @@
+{
+  "r12_wins": 68,
+  "r13_wins": 82,
+  "r14_wins": 87,
+  "r13_mean_margin": -1128.6875,
+  "r14_mean_margin": -435.7125,
+  "r13_mean_cash": 91773.21875,
+  "r14_mean_cash": 92621.3125,
+  "loss_to_win": 35,
+  "win_to_loss": 30,
+  "all_completed_records_this_round": 764,
+  "all_game_errors": 0,
+  "release_parity_passed": true,
+  "flow_assertions": 21,
+  "overlay_tests": 10,
+  "fresh_holdout_seed_overlap": false,
+  "holdout": [
+    {
+      "variant": "R13_HOLDOUT",
+      "games": 16,
+      "wins": 6,
+      "errors": 0,
+      "mean_margin": -2177.875
+    },
+    {
+      "variant": "R14_LAG05_HOLDOUT",
+      "games": 16,
+      "wins": 4,
+      "errors": 0,
+      "mean_margin": -2618.3125
+    }
+  ],
+  "accepted_as_robust_upgrade": false,
+  "opponents_at_80_percent": 0,
+  "opponents_at_90_percent": 0,
+  "candidate_max_call_max": 1.2784616930000539,
+  "candidate_seconds_mean": 5.577895599150272
+}

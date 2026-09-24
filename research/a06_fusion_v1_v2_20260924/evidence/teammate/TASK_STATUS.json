@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "completed_opponents": [
+    "student_v306",
+    "student_v463"
+  ],
+  "completed_main_games": 800,
+  "games_per_candidate_per_opponent": 200,
+  "common_environment_seeds": 100,
+  "both_seats": true,
+  "errors": 0,
+  "complete_719_steps": 800,
+  "successful_student_days": 13600,
+  "opponent_fallbacks": 0,
+  "opponent_illegal_choices": 0,
+  "source_hashes_verified_after_run": true,
+  "exact_reproductions": 14,
+  "reproductions_excluded_from_main_game_count": true,
+  "whole_request_complete": true
+}

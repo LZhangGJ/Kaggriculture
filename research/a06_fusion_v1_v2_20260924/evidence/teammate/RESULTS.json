@@ -1,0 +1,275 @@
+{
+  "status": "ALL_REQUESTED_MATCHUPS_COMPLETE",
+  "opponents": {
+    "student_v306": {
+      "by_candidate": {
+        "V1": {
+          "games": 200,
+          "wins": 119,
+          "ties": 0,
+          "losses": 81,
+          "win_rate": 0.595,
+          "mean_cash": 100329.45,
+          "mean_opponent_cash": 96805.97,
+          "mean_margin": 3523.48,
+          "seed_cluster_ci95": [
+            0.51,
+            0.675
+          ],
+          "seat_wins": {
+            "0": 63,
+            "1": 56
+          }
+        },
+        "V2": {
+          "games": 200,
+          "wins": 123,
+          "ties": 0,
+          "losses": 77,
+          "win_rate": 0.615,
+          "mean_cash": 99252.985,
+          "mean_opponent_cash": 95499.705,
+          "mean_margin": 3753.28,
+          "seed_cluster_ci95": [
+            0.54,
+            0.69
+          ],
+          "seat_wins": {
+            "0": 63,
+            "1": 60
+          }
+        }
+      },
+      "paired": {
+        "v2_minus_v1_win_rate": 0.02,
+        "seed_cluster_ci95": [
+          -0.075,
+          0.115
+        ],
+        "v1_win_to_v2_loss": 36,
+        "v1_loss_to_v2_win": 40,
+        "mean_margin_change": 229.80000000000018
+      },
+      "reproduction_checks": [
+        {
+          "run": "serial_0_student_v306",
+          "candidate": "V1",
+          "seed": 525657136,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.8081428080000137,
+          "max_opponent_noninitial_s": 0.029657834000033745
+        },
+        {
+          "run": "serial_1_student_v306",
+          "candidate": "V2",
+          "seed": 116918932,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 1.5573217419999992,
+          "max_opponent_noninitial_s": 0.058653706999962196
+        },
+        {
+          "run": "serial_2_student_v306",
+          "candidate": "V2",
+          "seed": 847012661,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.19624551999999085,
+          "max_opponent_noninitial_s": 0.037930070999948384
+        },
+        {
+          "run": "smoke_student_v306",
+          "candidate": "V1",
+          "seed": 881291130,
+          "seat": 1,
+          "exact": true,
+          "max_own_noninitial_s": 0.34438580300000154,
+          "max_opponent_noninitial_s": 0.025285005000000638
+        },
+        {
+          "run": "smoke_student_v306",
+          "candidate": "V2",
+          "seed": 881291130,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.23669189100000132,
+          "max_opponent_noninitial_s": 0.039289521000000605
+        },
+        {
+          "run": "smoke_student_v306",
+          "candidate": "V1",
+          "seed": 881291130,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.24974427300000102,
+          "max_opponent_noninitial_s": 0.035704331999999894
+        },
+        {
+          "run": "smoke_student_v306",
+          "candidate": "V2",
+          "seed": 881291130,
+          "seat": 1,
+          "exact": true,
+          "max_own_noninitial_s": 0.670618717,
+          "max_opponent_noninitial_s": 0.6405564430000013
+        }
+      ],
+      "games": 400,
+      "complete": 400,
+      "model_days": 6800,
+      "fallbacks": 0,
+      "illegal": 0
+    },
+    "student_v463": {
+      "by_candidate": {
+        "V1": {
+          "games": 200,
+          "wins": 110,
+          "ties": 0,
+          "losses": 90,
+          "win_rate": 0.55,
+          "mean_cash": 98533.605,
+          "mean_opponent_cash": 96440.705,
+          "mean_margin": 2092.9,
+          "seed_cluster_ci95": [
+            0.46,
+            0.635
+          ],
+          "seat_wins": {
+            "0": 56,
+            "1": 54
+          }
+        },
+        "V2": {
+          "games": 200,
+          "wins": 123,
+          "ties": 0,
+          "losses": 77,
+          "win_rate": 0.615,
+          "mean_cash": 99220.185,
+          "mean_opponent_cash": 95644.405,
+          "mean_margin": 3575.78,
+          "seed_cluster_ci95": [
+            0.53,
+            0.695
+          ],
+          "seat_wins": {
+            "0": 64,
+            "1": 59
+          }
+        }
+      },
+      "paired": {
+        "v2_minus_v1_win_rate": 0.065,
+        "seed_cluster_ci95": [
+          -0.035,
+          0.16
+        ],
+        "v1_win_to_v2_loss": 30,
+        "v1_loss_to_v2_win": 43,
+        "mean_margin_change": 1482.88
+      },
+      "reproduction_checks": [
+        {
+          "run": "serial_0_student_v463",
+          "candidate": "V1",
+          "seed": 181248539,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 1.1081709250000245,
+          "max_opponent_noninitial_s": 0.04018849499999533
+        },
+        {
+          "run": "serial_1_student_v463",
+          "candidate": "V2",
+          "seed": 636664131,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 1.2144659749999391,
+          "max_opponent_noninitial_s": 0.02846545900001729
+        },
+        {
+          "run": "serial_2_student_v463",
+          "candidate": "V1",
+          "seed": 670839010,
+          "seat": 1,
+          "exact": true,
+          "max_own_noninitial_s": 0.1377991329999304,
+          "max_opponent_noninitial_s": 0.028240012999958708
+        },
+        {
+          "run": "smoke_student_v463",
+          "candidate": "V2",
+          "seed": 881291130,
+          "seat": 1,
+          "exact": true,
+          "max_own_noninitial_s": 0.23624786599999936,
+          "max_opponent_noninitial_s": 0.04089015799999984
+        },
+        {
+          "run": "smoke_student_v463",
+          "candidate": "V2",
+          "seed": 881291130,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.2052763570000007,
+          "max_opponent_noninitial_s": 0.03529013500000033
+        },
+        {
+          "run": "smoke_student_v463",
+          "candidate": "V1",
+          "seed": 881291130,
+          "seat": 1,
+          "exact": true,
+          "max_own_noninitial_s": 0.4480908339999985,
+          "max_opponent_noninitial_s": 0.027816382999999334
+        },
+        {
+          "run": "smoke_student_v463",
+          "candidate": "V1",
+          "seed": 881291130,
+          "seat": 0,
+          "exact": true,
+          "max_own_noninitial_s": 0.5279308409999999,
+          "max_opponent_noninitial_s": 0.027664670000000058
+        }
+      ],
+      "games": 400,
+      "complete": 400,
+      "model_days": 6800,
+      "fallbacks": 0,
+      "illegal": 0
+    }
+  },
+  "boundaries": [
+    "Unmodified V1/V2 and teammate submission packages; no training or tuning.",
+    "Official 1.32.7 local Python interpreter, not hosted sandbox or strict timeout enforcement.",
+    "100 shared environment seeds, both seats, 200 games per candidate per opponent.",
+    "Original sampled opponent inference retained; independent recorded policy RNG shared across V1/V2.",
+    "Confidence intervals resample the 100 seed clusters, not the 200 seats independently."
+  ],
+  "opponent_upgrade_comparison": {
+    "V1": {
+      "our_win_rate_vs_v463_minus_vs_v306": -0.045,
+      "seed_cluster_ci95": [
+        -0.115,
+        0.02
+      ],
+      "our_win_to_loss": 27,
+      "our_loss_to_win": 18,
+      "mean_margin_change": -1430.58
+    },
+    "V2": {
+      "our_win_rate_vs_v463_minus_vs_v306": 0.0,
+      "seed_cluster_ci95": [
+        -0.065,
+        0.065
+      ],
+      "our_win_to_loss": 25,
+      "our_loss_to_win": 25,
+      "mean_margin_change": -177.5
+    }
+  },
+  "total_main_games": 800
+}

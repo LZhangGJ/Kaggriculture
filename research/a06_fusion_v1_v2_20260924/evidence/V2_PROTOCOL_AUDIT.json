@@ -1,0 +1,9 @@
+{
+  "candidate": "v2_animal06",
+  "new_seed_count": 50,
+  "overlap_with_v1_holdout_or_development": [],
+  "opponent_pool_identical_to_v1": true,
+  "official_engine_identical": true,
+  "candidate_files_frozen": 67,
+  "planned_games": 2300
+}

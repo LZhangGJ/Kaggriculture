@@ -1,0 +1,497 @@
+[
+  {
+    "opponent": "internal/r14_cashflow",
+    "seed": 2093917177,
+    "seat": 1,
+    "selection": "median cash margin among losing holdout games",
+    "own_terminal_cash": 100825.0,
+    "rival_terminal_cash": 103814.0,
+    "final_margin": -2989.0,
+    "exact_reproduction": true,
+    "checkpoints": [
+      {
+        "day_zero_based": 5,
+        "own_cash": 1074.0,
+        "rival_cash": 1176.0,
+        "margin": -102.0,
+        "own_crops": {
+          "WHEAT": 6,
+          "MELON": 5,
+          "TOMATO": 1,
+          "STRAWBERRY": 1
+        },
+        "rival_crops": {
+          "MELON": 6,
+          "TOMATO": 1,
+          "STRAWBERRY": 1
+        },
+        "own_animals": {
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "rival_animals": {
+          "SHEEP": 3,
+          "COW": 4
+        }
+      },
+      {
+        "day_zero_based": 10,
+        "own_cash": 703.0,
+        "rival_cash": 2154.0,
+        "margin": -1451.0,
+        "own_crops": {
+          "STRAWBERRY": 29,
+          "MELON": 11,
+          "WHEAT": 2,
+          "TOMATO": 1
+        },
+        "rival_crops": {
+          "STRAWBERRY": 27,
+          "MELON": 11,
+          "TOMATO": 2,
+          "WHEAT": 1
+        },
+        "own_animals": {
+          "COW": 12,
+          "SHEEP": 3
+        },
+        "rival_animals": {
+          "COW": 11,
+          "SHEEP": 3
+        }
+      },
+      {
+        "day_zero_based": 15,
+        "own_cash": 10168.0,
+        "rival_cash": 9429.0,
+        "margin": 739.0,
+        "own_crops": {
+          "STRAWBERRY": 38,
+          "MELON": 12,
+          "WHEAT": 3,
+          "TOMATO": 4,
+          "CARROT": 1
+        },
+        "rival_crops": {
+          "STRAWBERRY": 36,
+          "MELON": 11,
+          "TOMATO": 12,
+          "WHEAT": 12
+        },
+        "own_animals": {
+          "COW": 12,
+          "SHEEP": 3,
+          "GOOSE": 2
+        },
+        "rival_animals": {
+          "COW": 11,
+          "SHEEP": 3,
+          "GOOSE": 1
+        }
+      },
+      {
+        "day_zero_based": 20,
+        "own_cash": 46612.0,
+        "rival_cash": 47516.0,
+        "margin": -904.0,
+        "own_crops": {
+          "STRAWBERRY": 38,
+          "TOMATO": 21,
+          "MELON": 6
+        },
+        "rival_crops": {
+          "STRAWBERRY": 36,
+          "TOMATO": 35,
+          "MELON": 6
+        },
+        "own_animals": {
+          "COW": 12,
+          "SHEEP": 3,
+          "GOOSE": 2
+        },
+        "rival_animals": {
+          "COW": 11,
+          "SHEEP": 3,
+          "GOOSE": 1
+        }
+      },
+      {
+        "day_zero_based": 25,
+        "own_cash": 75878.0,
+        "rival_cash": 78294.0,
+        "margin": -2416.0,
+        "own_crops": {
+          "STRAWBERRY": 18,
+          "TOMATO": 17,
+          "WHEAT": 22
+        },
+        "rival_crops": {
+          "WHEAT": 19,
+          "STRAWBERRY": 17,
+          "TOMATO": 30
+        },
+        "own_animals": {
+          "COW": 12,
+          "GOOSE": 2
+        },
+        "rival_animals": {
+          "COW": 11,
+          "SHEEP": 1,
+          "GOOSE": 1
+        }
+      },
+      {
+        "day_zero_based": 29,
+        "own_cash": 87550.0,
+        "rival_cash": 92676.0,
+        "margin": -5126.0,
+        "own_crops": {
+          "TOMATO": 10,
+          "CARROT": 18,
+          "WHEAT": 14,
+          "STRAWBERRY": 2
+        },
+        "rival_crops": {
+          "WHEAT": 10,
+          "STRAWBERRY": 3,
+          "CARROT": 22,
+          "TOMATO": 12
+        },
+        "own_animals": {
+          "COW": 12,
+          "GOOSE": 2
+        },
+        "rival_animals": {
+          "COW": 11,
+          "GOOSE": 1
+        }
+      }
+    ],
+    "trace": "heldout_r14_cashflow_median_loss.json"
+  },
+  {
+    "opponent": "external/n69_hosen42",
+    "seed": 2080253056,
+    "seat": 1,
+    "selection": "median cash margin among losing holdout games",
+    "own_terminal_cash": 85714.0,
+    "rival_terminal_cash": 95493.0,
+    "final_margin": -9779.0,
+    "exact_reproduction": true,
+    "checkpoints": [
+      {
+        "day_zero_based": 5,
+        "own_cash": 998.0,
+        "rival_cash": 656.0,
+        "margin": 342.0,
+        "own_crops": {
+          "WHEAT": 4,
+          "MELON": 1,
+          "STRAWBERRY": 6
+        },
+        "rival_crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "own_animals": {
+          "SHEEP": 3,
+          "COW": 3
+        },
+        "rival_animals": {
+          "COW": 4,
+          "SHEEP": 2
+        }
+      },
+      {
+        "day_zero_based": 10,
+        "own_cash": 2686.0,
+        "rival_cash": 3606.0,
+        "margin": -920.0,
+        "own_crops": {
+          "STRAWBERRY": 23,
+          "MELON": 10,
+          "WHEAT": 2
+        },
+        "rival_crops": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "own_animals": {
+          "SHEEP": 10,
+          "COW": 4,
+          "GOOSE": 1
+        },
+        "rival_animals": {
+          "COW": 6,
+          "SHEEP": 7
+        }
+      },
+      {
+        "day_zero_based": 15,
+        "own_cash": 11050.0,
+        "rival_cash": 17466.0,
+        "margin": -6416.0,
+        "own_crops": {
+          "STRAWBERRY": 30,
+          "MELON": 15,
+          "TOMATO": 15,
+          "CARROT": 3
+        },
+        "rival_crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "own_animals": {
+          "SHEEP": 15,
+          "COW": 4,
+          "GOOSE": 1
+        },
+        "rival_animals": {
+          "SHEEP": 17,
+          "COW": 6
+        }
+      },
+      {
+        "day_zero_based": 20,
+        "own_cash": 40847.0,
+        "rival_cash": 57180.0,
+        "margin": -16333.0,
+        "own_crops": {
+          "STRAWBERRY": 24,
+          "TOMATO": 25,
+          "MELON": 7
+        },
+        "rival_crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "own_animals": {
+          "SHEEP": 15,
+          "GOOSE": 1
+        },
+        "rival_animals": {
+          "SHEEP": 17,
+          "COW": 6
+        }
+      },
+      {
+        "day_zero_based": 25,
+        "own_cash": 61332.0,
+        "rival_cash": 71512.0,
+        "margin": -10180.0,
+        "own_crops": {
+          "STRAWBERRY": 16,
+          "TOMATO": 21,
+          "WHEAT": 19,
+          "CARROT": 1
+        },
+        "rival_crops": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "own_animals": {
+          "SHEEP": 14,
+          "GOOSE": 1
+        },
+        "rival_animals": {
+          "SHEEP": 17,
+          "COW": 6
+        }
+      },
+      {
+        "day_zero_based": 29,
+        "own_cash": 73826.0,
+        "rival_cash": 84615.0,
+        "margin": -10789.0,
+        "own_crops": {
+          "CARROT": 32,
+          "TOMATO": 12,
+          "WHEAT": 4
+        },
+        "rival_crops": {
+          "CARROT": 21
+        },
+        "own_animals": {
+          "GOOSE": 1,
+          "SHEEP": 8
+        },
+        "rival_animals": {
+          "SHEEP": 17,
+          "COW": 6
+        }
+      }
+    ],
+    "trace": "heldout_n69_hosen42_median_loss.json"
+  },
+  {
+    "opponent": "external/d24_02_guruprasaathas111",
+    "seed": 2081404687,
+    "seat": 0,
+    "selection": "median cash margin among losing holdout games",
+    "own_terminal_cash": 66465.0,
+    "rival_terminal_cash": 72717.0,
+    "final_margin": -6252.0,
+    "exact_reproduction": true,
+    "checkpoints": [
+      {
+        "day_zero_based": 5,
+        "own_cash": 335.0,
+        "rival_cash": 700.0,
+        "margin": -365.0,
+        "own_crops": {
+          "WHEAT": 7,
+          "MELON": 4,
+          "STRAWBERRY": 2,
+          "TOMATO": 1
+        },
+        "rival_crops": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "own_animals": {
+          "COW": 4,
+          "SHEEP": 3
+        },
+        "rival_animals": {
+          "COW": 4,
+          "SHEEP": 2
+        }
+      },
+      {
+        "day_zero_based": 10,
+        "own_cash": 714.0,
+        "rival_cash": 1999.0,
+        "margin": -1285.0,
+        "own_crops": {
+          "MELON": 16,
+          "STRAWBERRY": 14,
+          "WHEAT": 3,
+          "CARROT": 2,
+          "TOMATO": 2
+        },
+        "rival_crops": {
+          "CARROT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "own_animals": {
+          "COW": 5,
+          "GOOSE": 9,
+          "SHEEP": 3
+        },
+        "rival_animals": {
+          "COW": 6,
+          "SHEEP": 5,
+          "GOOSE": 2
+        }
+      },
+      {
+        "day_zero_based": 15,
+        "own_cash": 14009.0,
+        "rival_cash": 22239.0,
+        "margin": -8230.0,
+        "own_crops": {
+          "MELON": 12,
+          "STRAWBERRY": 16,
+          "TOMATO": 18,
+          "CARROT": 3,
+          "WHEAT": 1
+        },
+        "rival_crops": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "own_animals": {
+          "COW": 5,
+          "GOOSE": 9,
+          "SHEEP": 3
+        },
+        "rival_animals": {
+          "GOOSE": 5,
+          "COW": 6,
+          "SHEEP": 6
+        }
+      },
+      {
+        "day_zero_based": 20,
+        "own_cash": 35530.0,
+        "rival_cash": 36634.0,
+        "margin": -1104.0,
+        "own_crops": {
+          "STRAWBERRY": 16,
+          "TOMATO": 29,
+          "WHEAT": 6,
+          "MELON": 1,
+          "CARROT": 3
+        },
+        "rival_crops": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "own_animals": {
+          "COW": 5,
+          "GOOSE": 9
+        },
+        "rival_animals": {
+          "GOOSE": 5,
+          "COW": 6,
+          "SHEEP": 6
+        }
+      },
+      {
+        "day_zero_based": 25,
+        "own_cash": 45616.0,
+        "rival_cash": 46251.0,
+        "margin": -635.0,
+        "own_crops": {
+          "TOMATO": 16,
+          "STRAWBERRY": 2,
+          "WHEAT": 19,
+          "MELON": 1,
+          "CARROT": 8
+        },
+        "rival_crops": {
+          "CARROT": 17,
+          "WHEAT": 24,
+          "STRAWBERRY": 17
+        },
+        "own_animals": {
+          "COW": 5,
+          "GOOSE": 9
+        },
+        "rival_animals": {
+          "GOOSE": 5,
+          "COW": 6,
+          "SHEEP": 6
+        }
+      },
+      {
+        "day_zero_based": 29,
+        "own_cash": 58075.0,
+        "rival_cash": 62583.0,
+        "margin": -4508.0,
+        "own_crops": {
+          "TOMATO": 6,
+          "STRAWBERRY": 2,
+          "CARROT": 20,
+          "MELON": 1
+        },
+        "rival_crops": {
+          "CARROT": 20,
+          "WHEAT": 1
+        },
+        "own_animals": {
+          "COW": 5,
+          "GOOSE": 9
+        },
+        "rival_animals": {
+          "GOOSE": 4,
+          "COW": 6,
+          "SHEEP": 6
+        }
+      }
+    ],
+    "trace": "heldout_d24_02_guruprasaathas111_median_loss.json"
+  }
+]

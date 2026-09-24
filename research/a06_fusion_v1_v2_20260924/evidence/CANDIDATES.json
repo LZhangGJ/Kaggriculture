@@ -1,0 +1,226 @@
+[
+  {
+    "id": "cf_control",
+    "parent": "r14_cashflow",
+    "config_changes": {},
+    "opening_overlay": false,
+    "sale_overlay": false
+  },
+  {
+    "id": "liq_control",
+    "parent": "r14_liquidity",
+    "config_changes": {},
+    "opening_overlay": false,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq",
+    "parent": "r14_cashflow",
+    "config_changes": {},
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_direct",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "scenario": 0
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_conservative",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "scenario": 0,
+      "intraday": 0,
+      "max_hands": 12
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_nointraday",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "intraday": 0
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_h12",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "max_hands": 12
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_nodelay",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "delivery_calendar": 0
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "liq_sale",
+    "parent": "r14_liquidity",
+    "config_changes": {},
+    "opening_overlay": false,
+    "sale_overlay": true
+  },
+  {
+    "id": "liq_search_sale",
+    "parent": "r14_liquidity",
+    "config_changes": {
+      "scenario": 1,
+      "intraday": 1,
+      "max_hands": 14
+    },
+    "opening_overlay": false,
+    "sale_overlay": true
+  },
+  {
+    "id": "cf_liq_h12_nointraday",
+    "parent": "r14_cashflow",
+    "config_changes": {
+      "max_hands": 12,
+      "intraday": 0
+    },
+    "opening_overlay": true,
+    "sale_overlay": false
+  },
+  {
+    "id": "cf_liq_terminal6",
+    "parent": "cf_liq_nointraday",
+    "ported_module": "r14_frozen/policy/r14_terminal.inc",
+    "changes": "Day24+ seven terminal-cash rule alternatives; public-flow assumptions; daily state feedback retained."
+  },
+  {
+    "id": "v2_q5",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {},
+    "opening_quantity": 5,
+    "reason": "Smaller opening market order; same transparent liquidity guards."
+  },
+  {
+    "id": "v2_q8",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {},
+    "opening_quantity": 8,
+    "reason": "Smaller opening market order; same transparent liquidity guards."
+  },
+  {
+    "id": "v2_q15",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {},
+    "opening_quantity": 15,
+    "reason": "Larger opening order, still subject to available cash and warehouse capacity."
+  },
+  {
+    "id": "v2_animal08",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.8
+    },
+    "opening_quantity": 10,
+    "reason": "Discount marginal animal acquisition ranking; keep all crop choices and live planning."
+  },
+  {
+    "id": "v2_pressure",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "batch_delivery": 2
+    },
+    "opening_quantity": 10,
+    "reason": "Enable existing public-price-pressure mid-route delivery trigger."
+  },
+  {
+    "id": "v2_h10",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "max_hands": 10
+    },
+    "opening_quantity": 10,
+    "reason": "Lower labor cap to test whether marginal hiring costs exceed realized returns."
+  },
+  {
+    "id": "v2_animal06",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.6
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal08_pressure",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.8,
+      "batch_delivery": 2
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal06_pressure",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.6,
+      "batch_delivery": 2
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal04",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.4
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal05",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.5
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal055",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.55
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal065",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.65
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  },
+  {
+    "id": "v2_animal07",
+    "parent": "cf_liq_h12_nointraday",
+    "config_changes": {
+      "animal_bias": 0.7
+    },
+    "opening_quantity": 10,
+    "reason": "Followup to improved animal08: one stronger discount and interaction with public-price-pressure delivery."
+  }
+]

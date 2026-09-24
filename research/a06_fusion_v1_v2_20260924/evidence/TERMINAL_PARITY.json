@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "opponent": "external/n14_prvsiyan",
+      "seed": 2060117109,
+      "full_matches": 719,
+      "full_expected": 719,
+      "prefix_matches": 576,
+      "prefix_expected": 576,
+      "mismatches": []
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "seed": 2041861382,
+      "full_matches": 719,
+      "full_expected": 719,
+      "prefix_matches": 576,
+      "prefix_expected": 576,
+      "mismatches": []
+    }
+  ]
+}

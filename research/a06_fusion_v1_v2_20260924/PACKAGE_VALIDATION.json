@@ -1,0 +1,41 @@
+{
+  "validated_utc": "2026-09-24T12:05:55.983129+00:00",
+  "evaluated_candidate_files_unchanged": {
+    "v1": 67,
+    "v2": 67
+  },
+  "portable_reproduction_checks": [
+    {
+      "candidate": "v1",
+      "opponent": "student_v463",
+      "seed": 881291130,
+      "seat": 0,
+      "own_cash": 130061,
+      "opponent_cash": 115721,
+      "steps": 719,
+      "cash_and_full_action_hashes_match": true
+    },
+    {
+      "candidate": "v2",
+      "opponent": "student_v463",
+      "seed": 881291130,
+      "seat": 0,
+      "own_cash": 140696,
+      "opponent_cash": 118530,
+      "steps": 719,
+      "cash_and_full_action_hashes_match": true
+    },
+    {
+      "candidate": "v1",
+      "opponent": "internal/r14_cashflow",
+      "seed": 2048140595,
+      "seat": 0,
+      "own_cash": 78412,
+      "opponent_cash": 71589,
+      "steps": 719,
+      "cash_matches": true
+    }
+  ],
+  "benchmark_game_counts_unchanged": true,
+  "changes_to_policies": false
+}

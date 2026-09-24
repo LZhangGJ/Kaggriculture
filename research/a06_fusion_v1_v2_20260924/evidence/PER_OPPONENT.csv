@@ -1,0 +1,24 @@
+﻿id,display_name,games,wins,ties,losses,strict_win_rate,mean_cash_margin,seat0_win_rate,seat1_win_rate
+internal/r15c_rules,r15c_rules,100,99,0,1,0.99,13176.35,1.0,0.98
+internal/r14_cashflow,r14_cashflow,100,66,0,34,0.66,1880.4,0.64,0.68
+internal/r14_daily_staff,r14_daily_staff,100,99,0,1,0.99,11260.19,0.98,1.0
+internal/r14_f5l3,r14_f5l3,100,99,0,1,0.99,10762.05,0.98,1.0
+internal/r14_asset_tail,r14_asset_tail,100,94,0,6,0.94,9103.09,0.94,0.94
+internal/r14_frozen,r14_frozen,100,98,0,2,0.98,9061.69,0.98,0.98
+internal/r14_terminal_switch,r14_terminal_switch,100,99,0,1,0.99,10769.81,0.98,1.0
+internal/rule_future65,rule_future65,100,100,0,0,1.0,20871.87,1.0,1.0
+internal/r13_nml,r13_nml,100,93,0,7,0.93,10832.93,0.96,0.9
+internal/rule_r18,rule_r18,100,99,0,1,0.99,13723.8,1.0,0.98
+internal/r14_liquidity,r14_liquidity,100,100,0,0,1.0,13626.61,1.0,1.0
+internal/r14_tl5,r14_tl5,100,98,0,2,0.98,11521.28,0.98,0.98
+internal/r22_continuation,r22_continuation,100,98,0,2,0.98,12451.96,0.98,0.98
+external/n14_prvsiyan,Soil Remembers Rain,100,95,0,5,0.95,12732.28,0.96,0.94
+external/n20_wzhengbiao,V15Stack,100,97,0,3,0.97,11333.69,0.96,0.98
+external/d24_20_haideptry,2965 Master Hybrid Engine,100,97,0,3,0.97,13691.06,0.98,0.96
+external/n28_ahmedberatozer,V57 Funding Order Invariant,100,97,0,3,0.97,13566.89,0.98,0.96
+external/n69_hosen42,M4A MetaV4,100,32,0,68,0.32,-2085.75,0.34,0.3
+external/d24_05_tetsutani,Demand Preserving Sale Timing (Soil identical source),100,95,0,5,0.95,12732.28,0.96,0.94
+external/d24_02_guruprasaathas111,Master Engine V3,100,27,0,73,0.27,-3704.29,0.3,0.24
+external/n24_dmitriigluzdov,More Wheat Smarter Sales,100,98,0,2,0.98,11989.08,0.98,0.98
+external/n40_lynnsakurai,Farmer John,100,97,0,3,0.97,13577.49,0.98,0.96
+external/n42_nathanjacob,Pipe18,100,97,0,3,0.97,13576.53,0.98,0.96

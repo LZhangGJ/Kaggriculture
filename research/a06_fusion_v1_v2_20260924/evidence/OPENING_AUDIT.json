@@ -1,0 +1,4515 @@
+{
+  "seed": 2060117109,
+  "seat": 0,
+  "scope": "one official step; no terminal strength claim",
+  "rows": [
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r15c_rules",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_daily_staff",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_f5l3",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_frozen",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_terminal_switch",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_future65",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r13_nml",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/rule_r18",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 5,
+      "cash": 110.0,
+      "rival_cash": 100.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 15,
+      "cash": 97.0,
+      "rival_cash": 114.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 20,
+      "cash": 90.0,
+      "rival_cash": 118.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 30,
+      "cash": 79.0,
+      "rival_cash": 129.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_liquidity",
+      "quantity": 40,
+      "cash": 70.0,
+      "rival_cash": 138.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r14_tl5",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 5,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 10,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 15,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 30,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "internal/r22_continuation",
+      "quantity": 40,
+      "cash": 104.0,
+      "rival_cash": 104.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n20_wzhengbiao",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_20_haideptry",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n28_ahmedberatozer",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2864.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2856.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2853.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2858.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2864.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2879.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2891.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_05_tetsutani",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n24_dmitriigluzdov",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n40_lynnsakurai",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 0,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 5,
+      "cash": 113.0,
+      "rival_cash": 2846.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 10,
+      "cash": 115.0,
+      "rival_cash": 2843.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 15,
+      "cash": 114.0,
+      "rival_cash": 2848.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 20,
+      "cash": 104.0,
+      "rival_cash": 2854.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 30,
+      "cash": 89.0,
+      "rival_cash": 2869.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    },
+    {
+      "opponent": "external/n42_nathanjacob",
+      "quantity": 40,
+      "cash": 77.0,
+      "rival_cash": 2881.0,
+      "own_shed": {
+        "WHEAT": 6,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 3,
+        "SHEEP": 3
+      },
+      "own_seeds": {
+        "WHEAT": 3,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "own_hands": 2
+    }
+  ]
+}

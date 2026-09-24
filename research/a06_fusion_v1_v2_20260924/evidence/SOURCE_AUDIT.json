@@ -1,0 +1,30 @@
+{
+  "candidate": "v2_animal06",
+  "frozen_files": 67,
+  "identical_parent_files": 64,
+  "changed_config": {
+    "animal_bias": [
+      1,
+      0.6
+    ],
+    "intraday": [
+      1,
+      0
+    ],
+    "max_hands": [
+      14,
+      12
+    ]
+  },
+  "opening_quantity": 10,
+  "new_files": [
+    "main.py",
+    "overlay.json"
+  ],
+  "renamed_unchanged": {
+    "main.py": "base_entry.py"
+  },
+  "native_binary_unchanged": true,
+  "native_sha256": "831f6bba4e8212c38d1b53341d5a5faeae129a168325934118b3289cb36b7469",
+  "note": "The Python opening wrapper is new. All native planning/execution code, the native binary and the Cashflow sale wrapper are byte-identical to the frozen parent. No retraining or learned weights were introduced."
+}

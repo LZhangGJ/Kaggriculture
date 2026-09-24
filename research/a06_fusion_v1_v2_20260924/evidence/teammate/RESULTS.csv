@@ -1,0 +1,5 @@
+﻿opponent,candidate,games,wins,ties,losses,win_rate,mean_cash,mean_opponent_cash,mean_margin
+student_v306,V1,200,119,0,81,0.595,100329.45,96805.97,3523.48
+student_v306,V2,200,123,0,77,0.615,99252.985,95499.705,3753.28
+student_v463,V1,200,110,0,90,0.55,98533.605,96440.705,2092.9
+student_v463,V2,200,123,0,77,0.615,99220.185,95644.405,3575.78

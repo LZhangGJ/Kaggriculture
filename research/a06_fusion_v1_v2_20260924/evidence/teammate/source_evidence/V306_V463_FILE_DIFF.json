@@ -1,0 +1,41 @@
+{
+  "same": [
+    "agent/main.py",
+    "agent/replay_deployment.json",
+    "agent/route_actions.json.zlib",
+    "agent/route_library.json",
+    "agent/route_policy.json",
+    "agent/teammate_base.py",
+    "experiments/student_economic_features_v1.py",
+    "meta_agent/__init__.py",
+    "meta_agent/src/__init__.py",
+    "meta_agent/src/market_manager.py",
+    "meta_agent/src/route_switch_features.py",
+    "meta_agent/src/search_route_policy.py",
+    "meta_agent/src/teammate_expanded_routes.py",
+    "policy/r1/agent.py",
+    "policy/r1/agent.so",
+    "policy/r1/config.json"
+  ],
+  "changed": [
+    "experiments/student_action_event_agent.py",
+    "experiments/student_v3_runtime_model.py",
+    "main.py"
+  ],
+  "added": [
+    "experiments/student_v306_vendor/kaggrl/__init__.py",
+    "experiments/student_v306_vendor/kaggrl/constants.py",
+    "experiments/student_v306_vendor/kaggrl/structures.py",
+    "experiments/student_v306_vendor/kaggrl/tokenizer.py",
+    "models/student-v463/actor.pt",
+    "models/student-v463/manifest.json"
+  ],
+  "removed": [
+    "kaggrl/__init__.py",
+    "kaggrl/constants.py",
+    "kaggrl/structures.py",
+    "kaggrl/tokenizer.py",
+    "models/student-v306/manifest.json",
+    "models/student-v306/v3-ppo-native-job-economic-v1-v306-1536g.pt"
+  ]
+}

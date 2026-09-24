@@ -1,0 +1,107 @@
+{
+  "games": 9,
+  "exact_cash_and_result_matches": 9,
+  "max_serial_action_s": 1.1078215389999997,
+  "boundary": "Single-process local checks; not Kaggle sandbox certification.",
+  "rows": [
+    {
+      "opponent": "internal/r14_cashflow",
+      "seed": 2065426640,
+      "seat": 0,
+      "exact": true,
+      "parallel_max_action_s": 0.33552299399980257,
+      "serial_max_action_s": 0.21356599299999957,
+      "local_cash": 102458.0,
+      "public_cash": 94771.0,
+      "error": null
+    },
+    {
+      "opponent": "internal/r14_cashflow",
+      "seed": 2065426640,
+      "seat": 1,
+      "exact": true,
+      "parallel_max_action_s": 0.31039606100057426,
+      "serial_max_action_s": 0.2104584230000004,
+      "local_cash": 102458.0,
+      "public_cash": 94771.0,
+      "error": null
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "seed": 2065426640,
+      "seat": 0,
+      "exact": true,
+      "parallel_max_action_s": 0.30375115999959235,
+      "serial_max_action_s": 0.211787944000001,
+      "local_cash": 96173.0,
+      "public_cash": 87005.0,
+      "error": null
+    },
+    {
+      "opponent": "external/n14_prvsiyan",
+      "seed": 2065426640,
+      "seat": 1,
+      "exact": true,
+      "parallel_max_action_s": 0.30048438099947816,
+      "serial_max_action_s": 0.19462007699999972,
+      "local_cash": 96173.0,
+      "public_cash": 87005.0,
+      "error": null
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "seed": 2065426640,
+      "seat": 1,
+      "exact": true,
+      "parallel_max_action_s": 0.23614892200021131,
+      "serial_max_action_s": 0.15707052600000182,
+      "local_cash": 112512.0,
+      "public_cash": 118834.0,
+      "error": null
+    },
+    {
+      "opponent": "external/n69_hosen42",
+      "seed": 2065426640,
+      "seat": 0,
+      "exact": true,
+      "parallel_max_action_s": 0.23956334400008927,
+      "serial_max_action_s": 0.156851936999999,
+      "local_cash": 112512.0,
+      "public_cash": 118834.0,
+      "error": null
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "seed": 2065426640,
+      "seat": 0,
+      "exact": true,
+      "parallel_max_action_s": 0.26827545600008307,
+      "serial_max_action_s": 0.17000307099999645,
+      "local_cash": 69799.0,
+      "public_cash": 67204.0,
+      "error": null
+    },
+    {
+      "opponent": "external/d24_02_guruprasaathas111",
+      "seed": 2065426640,
+      "seat": 1,
+      "exact": true,
+      "parallel_max_action_s": 0.2571480540000266,
+      "serial_max_action_s": 0.1718709390000015,
+      "local_cash": 69799.0,
+      "public_cash": 67204.0,
+      "error": null
+    },
+    {
+      "opponent": "internal/r14_asset_tail",
+      "seed": 2077751783,
+      "seat": 0,
+      "exact": true,
+      "parallel_max_action_s": 1.7372981059997983,
+      "serial_max_action_s": 1.1078215389999997,
+      "local_cash": 137198.0,
+      "public_cash": 124740.0,
+      "error": null
+    }
+  ]
+}

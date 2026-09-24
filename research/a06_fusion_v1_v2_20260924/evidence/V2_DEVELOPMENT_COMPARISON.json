@@ -1,0 +1,530 @@
+[
+  {
+    "candidate": "v2_animal06",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 53,
+    "external_wins": 62,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4513.5625,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 14,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 16,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 32,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 21,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal06_pressure",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 51,
+    "external_wins": 60,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4560.4875,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 14,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 14,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 32,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 19,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal055",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 55,
+    "external_wins": 58,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4875.8125,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 14,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 12,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 30,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 25,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal08",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 50,
+    "external_wins": 56,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4703.58125,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 12,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 12,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 21,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal08_pressure",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 50,
+    "external_wins": 56,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4553.1375,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 12,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 12,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 28,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 22,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal065",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 50,
+    "external_wins": 55,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4248.65625,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 12,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 11,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 28,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 22,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal05",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 52,
+    "external_wins": 53,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 4153.725,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 9,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 30,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 14,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "cf_liq_h12_nointraday",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 52,
+    "external_wins": 50,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 3522.96875,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 8,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_q8",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 52,
+    "external_wins": 50,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 3522.96875,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 8,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal07",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 41,
+    "external_wins": 50,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 3290.2875,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 8,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 30,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 12,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 24,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 17,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "cf_liq_nointraday",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 48,
+    "external_wins": 49,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 3020.30625,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 7,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 19,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_pressure",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 51,
+    "external_wins": 48,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 3346.99375,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 32,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 6,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 31,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 20,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_h10",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 50,
+    "external_wins": 48,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 2736.3875,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 30,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 8,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 27,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_q15",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 52,
+    "external_wins": 32,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": 704.69375,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 6,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 12,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 14,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_q5",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 52,
+    "external_wins": 32,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": -183.15,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 12,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 10,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 29,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 23,
+        "games": 32
+      }
+    }
+  },
+  {
+    "candidate": "v2_animal04",
+    "games": 160,
+    "complete": true,
+    "internal_wins": 10,
+    "external_wins": 10,
+    "internal_games": 64,
+    "external_games": 96,
+    "errors": 0,
+    "mean_margin": -17061.4,
+    "per_opponent": {
+      "external/d24_02_guruprasaathas111": {
+        "wins": 0,
+        "games": 32
+      },
+      "external/n14_prvsiyan": {
+        "wins": 10,
+        "games": 32
+      },
+      "external/n69_hosen42": {
+        "wins": 0,
+        "games": 32
+      },
+      "internal/r14_asset_tail": {
+        "wins": 6,
+        "games": 32
+      },
+      "internal/r14_cashflow": {
+        "wins": 4,
+        "games": 32
+      }
+    }
+  }
+]

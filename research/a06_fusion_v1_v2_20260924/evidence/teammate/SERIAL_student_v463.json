@@ -1,0 +1,32 @@
+[
+  {
+    "candidate": "V1",
+    "seed": 181248539,
+    "seat": 0,
+    "exact": true,
+    "parallel_own_s": 1.6504167470000084,
+    "serial_own_s": 1.1081709250000245,
+    "parallel_opponent_s": 0.05151774800000908,
+    "serial_opponent_s": 0.04018849499999533
+  },
+  {
+    "candidate": "V2",
+    "seed": 636664131,
+    "seat": 0,
+    "exact": true,
+    "parallel_own_s": 1.85686757900001,
+    "serial_own_s": 1.2144659749999391,
+    "parallel_opponent_s": 0.052106242000007796,
+    "serial_opponent_s": 0.02846545900001729
+  },
+  {
+    "candidate": "V1",
+    "seed": 670839010,
+    "seat": 1,
+    "exact": true,
+    "parallel_own_s": 0.22782811199999742,
+    "serial_own_s": 0.1377991329999304,
+    "parallel_opponent_s": 0.09141387700000791,
+    "serial_opponent_s": 0.028240012999958708
+  }
+]
